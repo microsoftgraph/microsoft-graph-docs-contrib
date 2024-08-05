@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance access-reviews definitions create --body '{\
   "displayName": "Review inactive guests on teams",\
   "descriptionForAdmins": "Control guest user access to our teams.",\

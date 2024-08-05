@@ -21,6 +21,7 @@ Describes an attribute of an object.
 |:--------------|:----------|:---------------|
 |anchor         |Boolean    | `true` if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is `false`. One, and only one, of the object's attributes must be designated as the anchor to support synchronization. |
 |caseExact      |Boolean    |`true` if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.|
+|defaultValue   |String     |The default value of the attribute.|
 |flowNullValues |Boolean    |'true' to allow null values for attributes.|
 |metadata       |[attributeDefinitionMetadataEntry](../resources/synchronization-attributedefinitionmetadataentry.md) collection   |Metadata for the given object.|
 |multivalued    |Boolean    |`true` if an attribute can have multiple values. Default is `false`.|
@@ -32,7 +33,7 @@ Describes an attribute of an object.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

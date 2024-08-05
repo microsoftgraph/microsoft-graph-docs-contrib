@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AddCopyPostRequestBody;
+use Microsoft\Graph\Generated\Sites\Item\Lists\Item\ContentTypes\AddCopy\AddCopyPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

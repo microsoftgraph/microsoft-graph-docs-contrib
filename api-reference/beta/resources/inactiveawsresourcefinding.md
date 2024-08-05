@@ -21,9 +21,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveAwsResourceFinding objects](../api/inactiveawsresourcefinding-list.md)|[inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) collection|Get a list of the [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects and their properties.|
-|[Get inactiveAwsResourceFinding](../api/inactiveawsresourcefinding-get.md)|[inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md)|Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object.|
-|[aggregatedSummary](../api/inactiveawsresourcefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/inactiveawsresourcefinding-list.md)|[inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) collection|Get a list of the [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects and their properties.|
+|[Get](../api/inactiveawsresourcefinding-get.md)|[inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md)|Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object.|
+|[Aggregated summary](../api/inactiveawsresourcefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 
 ## Properties

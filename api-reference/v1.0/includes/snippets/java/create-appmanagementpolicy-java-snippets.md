@@ -12,7 +12,7 @@ AppManagementPolicy appManagementPolicy = new AppManagementPolicy();
 appManagementPolicy.setDisplayName("Credential management policy");
 appManagementPolicy.setDescription("Cred policy sample");
 appManagementPolicy.setIsEnabled(true);
-AppManagementConfiguration restrictions = new AppManagementConfiguration();
+CustomAppManagementConfiguration restrictions = new CustomAppManagementConfiguration();
 LinkedList<PasswordCredentialConfiguration> passwordCredentials = new LinkedList<PasswordCredentialConfiguration>();
 PasswordCredentialConfiguration passwordCredentialConfiguration = new PasswordCredentialConfiguration();
 passwordCredentialConfiguration.setRestrictionType(AppCredentialRestrictionType.PasswordAddition);

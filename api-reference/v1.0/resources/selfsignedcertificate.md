@@ -16,10 +16,10 @@ Contains the public part of a signing certificate.
 This resource type is the return type of the [addSelfSignedSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md) action. Service providers use the public part of the signing certificate to validate the issuer of the token.
 
 ## Properties
-Property|Type|Description
-----|--|---
+|Property|Type|Description
+|:---|:---|:---|
 |customKeyIdentifier|Binary| Custom key identifier. |
-| displayName | String | The friendly name for the key. |
+|displayName | String | The friendly name for the key. |
 |endDateTime|DateTimeOffset|The date and time at which the credential expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`.|
 |key|Binary| The value for the key credential. Should be a Base-64 encoded value. |
 |keyId|Guid|The unique identifier (GUID) for the key.|
@@ -30,7 +30,7 @@ Property|Type|Description
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

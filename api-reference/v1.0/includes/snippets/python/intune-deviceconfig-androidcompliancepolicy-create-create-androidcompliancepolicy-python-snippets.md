@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.android_compliance_policy import AndroidCompliancePolicy
+from msgraph.generated.models.android_required_password_type import AndroidRequiredPasswordType
+from msgraph.generated.models.device_threat_protection_level import DeviceThreatProtectionLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -19,11 +19,11 @@ An abstract base class that contains the media configuration used to connect to 
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | Boolean |Remove media from the default audio group.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

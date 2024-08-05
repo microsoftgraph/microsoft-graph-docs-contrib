@@ -16,8 +16,8 @@ Contains the set of custom questions associated with a particular service.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isRequired|Boolean|The ID of the custom question.|
-|questionId|String|Indicates whether it's mandatory to answer the custom question.|
+|isRequired|Boolean|Indicates whether it's mandatory to answer the custom question.|
+|questionId|String|The ID of the custom question.|
 
 ## Relationships
 None.

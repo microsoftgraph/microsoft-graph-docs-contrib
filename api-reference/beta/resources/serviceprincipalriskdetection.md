@@ -24,8 +24,8 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List servicePrincipalRiskDetections](../api/identityprotectionroot-list-serviceprincipalriskdetections.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) collection|List service principal risk detections and their properties.|
-|[Get servicePrincipalRiskDetection](../api/serviceprincipalriskdetection-get.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)|Get a specific service principal risk detection and its properties.|
+|[List](../api/identityprotectionroot-list-serviceprincipalriskdetections.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) collection|List service principal risk detections and their properties.|
+|[Get](../api/serviceprincipalriskdetection-get.md)|[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)|Get a specific service principal risk detection and its properties.|
 
 
 ## Properties
@@ -57,7 +57,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

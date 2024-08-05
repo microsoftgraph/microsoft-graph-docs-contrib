@@ -11,16 +11,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents information about a service SKU that a company is subscribed to.
+Represents information about a service SKU that a company is subscribed to. Use the values of **skuId** and **servicePlans** > **servicePlanId** to assign licenses to unassigned users and groups through the [user: assignLicense](../api/user-assignlicense.md) and [group: assignLicense](../api/group-assignlicense.md) APIs respectively.
 
-Only the read operation is supported on subscribed SKUs; create, update, and delete aren't supported. Query filter expressions aren't supported. Inherits from [directoryObject](directoryobject.md).
+For more information about subscriptions and licenses, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
+
+Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
 | Method                                             | Return Type                                  | Description                                                                 |
 | :------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------------- |
-| [Get subscribedSku](../api/subscribedsku-get.md)   | [subscribedSku](subscribedsku.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [Get](../api/subscribedsku-get.md)   | [subscribedSku](subscribedsku.md)            | Get a specific commercial subscription that an organization has acquired.   |
+| [List](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
@@ -28,15 +30,15 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | :--------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | accountId        | String                                           | The unique ID of the account this SKU belongs to.                                                                                                                                                                                                         |
 | accountName      | String                                           | The name of the account this SKU belongs to.                                                                                                                                                                                                              |
-| appliesTo        | String                                           | The target class for this SKU. Only SKUs with target class `User` are assignable. Possible values are: "User", "Company".                                                                                                                                          |
+| appliesTo        | String                                           | The target class for this SKU. Only SKUs with target class `User` are assignable. Possible values are: `User`, `Company`.                                                                                                                                          |
 | capabilityStatus | String                                           | `Enabled` indicates that the **prepaidUnits** property has at least one unit that is enabled. `LockedOut` indicates that the customer canceled their subscription. Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 | consumedUnits    | Int32                                            | The number of licenses that have been assigned.                                                                                                                                                                                                           |
 | id               | String                                           | The unique identifier for the subscribed sku object. Key, not nullable.                                                                                                                                                                                   |
 | prepaidUnits     | [licenseUnitsDetail](licenseunitsdetail.md)      | Information about the number and status of prepaid licenses.                                                                                                                                                                                              |
 | servicePlans     | [servicePlanInfo](serviceplaninfo.md) collection | Information about the service plans that are available with the SKU. Not nullable.                                                                                                                                                                         |
 | skuId            | Guid                                             | The unique identifier (GUID) for the service SKU.                                                                                                                                                                                                         |
-| skuPartNumber    | String                                           | The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).                                                      |
-| subscriptionsIds | String collection                                    | A list of all subscription IDs associated with this SKU.                                                                                                                                                                                                  |
+| skuPartNumber    | String                                           | The SKU part number; for example: `AAD_PREMIUM` or `RMSBASIC`. To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).                                                      |
+| subscriptionIds | String collection                                    | A list of all subscription IDs associated with this SKU.                                                                                                                                                                                                  |
 
 ## Relationships
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.education.classes.item.assignments.item.submissions.item.education_submission_item_request_builder import EducationSubmissionItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = EducationSubmissionItemRequestBuilder.EducationSubmissionItemRequ
 		expand = ["*"],
 )
 
-request_configuration = EducationSubmissionItemRequestBuilder.EducationSubmissionItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.solutions.bookingbusinesses.item.appointments.item.cancel.cancel_post_request_body import CancelPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.solutions.bookingbusinesses.item.appointments.item.cancel.cancel_post_request_body import CancelPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

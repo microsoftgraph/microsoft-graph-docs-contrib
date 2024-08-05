@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.team import Team
-from msgraph.generated.models.channel import Channel
-from msgraph.generated.models.team_member_settings import TeamMemberSettings
-from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.team import Team
+from msgraph_beta.generated.models.channel import Channel
+from msgraph_beta.generated.models.team_member_settings import TeamMemberSettings
+from msgraph_beta.generated.models.teams_app_installation import TeamsAppInstallation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

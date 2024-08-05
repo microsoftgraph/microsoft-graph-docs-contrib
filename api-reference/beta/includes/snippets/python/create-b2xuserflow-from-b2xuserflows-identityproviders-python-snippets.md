@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.b2x_identity_user_flow import B2xIdentityUserFlow
-from msgraph.generated.models.identity_provider import IdentityProvider
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.b2x_identity_user_flow import B2xIdentityUserFlow
+from msgraph_beta.generated.models.user_flow_type import UserFlowType
+from msgraph_beta.generated.models.identity_provider import IdentityProvider
 
 graph_client = GraphServiceClient(credentials, scopes)
 

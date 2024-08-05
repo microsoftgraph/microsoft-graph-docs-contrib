@@ -23,7 +23,7 @@ The **searchEntity** resource serves as an anchor to the [query](../api/search-q
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[query](../api/search-query.md) |[searchResponse](searchresponse.md) collection | Run a specified search query.   |
+|[Query data](../api/search-query.md) |[searchResponse](searchresponse.md) collection | Run a specified search query.   |
 
 ## Properties
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_compliance_action_item import DeviceComplianceActionItem
+from msgraph.generated.models.device_compliance_action_type import DeviceComplianceActionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

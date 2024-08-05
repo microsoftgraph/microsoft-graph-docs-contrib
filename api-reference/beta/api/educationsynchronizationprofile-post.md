@@ -1,5 +1,5 @@
 ---
-title: "Create an educationSynchronizationProfile"
+title: "Create an educationSynchronizationProfile (deprecated)"
 description: "Create a request for a new school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Create an educationSynchronizationProfile
+# Create an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus-get.md) to get the status of the profile. 
 
@@ -32,7 +34,7 @@ POST /education/synchronizationProfiles
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | Application/json. Required. |
 
 ## Request body

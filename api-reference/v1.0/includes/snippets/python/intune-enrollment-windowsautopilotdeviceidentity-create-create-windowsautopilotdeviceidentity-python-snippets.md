@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_autopilot_device_identity import WindowsAutopilotDeviceIdentity
+from msgraph.generated.models.enrollment_state import EnrollmentState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

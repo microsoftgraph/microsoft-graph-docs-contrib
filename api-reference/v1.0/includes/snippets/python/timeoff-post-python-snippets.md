@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.time_off import TimeOff
 from msgraph.generated.models.time_off_item import TimeOffItem
+from msgraph.generated.models.schedule_entity_theme import ScheduleEntityTheme
 
 graph_client = GraphServiceClient(credentials, scopes)
 

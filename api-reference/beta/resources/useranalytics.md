@@ -35,7 +35,7 @@ The user's settings and activity statistics.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +43,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "activityStatistics"
   ],
-  "@odata.type": "microsoft.graph.userAnalytics"
+  "@odata.type": "microsoft.graph.userAnalytics",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

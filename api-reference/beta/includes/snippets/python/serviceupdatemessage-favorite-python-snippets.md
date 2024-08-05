@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.admin.serviceannouncement.messages.favorite.favorite_post_request_body import FavoritePostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.admin.serviceannouncement.messages.favorite.favorite_post_request_body import FavoritePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

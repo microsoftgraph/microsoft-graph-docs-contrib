@@ -25,7 +25,7 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 - Customers can collect access review controls into programs that are relevant for your organization to track reviews for compliance or risk-sensitive applications.
 
-There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Microsoft Entra roles such as Global Administrator or Azure subscription roles.  This capability is included in [Microsoft Entra Privileged Identity Management](privilegedidentitymanagement-root.md).
+There's also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Microsoft Entra roles such as Global Administrator or Azure subscription roles.  This capability is included in [Microsoft Entra Privileged Identity Management](privilegedidentitymanagement-root.md).
 
 The tenant where an access review is being created or managed via the API must have sufficient purchased or trial licenses. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
@@ -67,14 +67,14 @@ The following table lists the methods that you can use to interact with access r
 
 The following directory roles are required for a calling user to manage access reviews, programs, and controls.
 
-| Target resource | Operation | Application permissions | Required directory role of the calling user |
+| Target resource | Operation | Application permissions | Least privileged directory roles of the calling user |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) of a Microsoft Entra role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or Privileged Role Administrator |
-|[accessReview](accessreview.md) of a Microsoft Entra role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
-|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
-|[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator or User Administrator |
-| [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
-| [program](program.md) and [programControl](programcontrol.md) | Create, Update or Delete | ProgramControl.ReadWrite.All | Global Administrator or User Administrator |
+|[accessReview](accessreview.md) of a Microsoft Entra role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All |  Global Reader, Security Administrator, Security Reader or Privileged Role Administrator |
+|[accessReview](accessreview.md) of a Microsoft Entra role | Create, Update, or Delete | AccessReview.ReadWrite.All | Privileged Role Administrator |
+|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership, or AccessReview.ReadWrite.All |  Global Reader, Security Administrator, Security Reader, or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Create, Update, or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | User Administrator |
+| [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |   Global Reader, Security Administrator, Security Reader or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md) | Create, Update, or Delete | ProgramControl.ReadWrite.All | User Administrator |
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 

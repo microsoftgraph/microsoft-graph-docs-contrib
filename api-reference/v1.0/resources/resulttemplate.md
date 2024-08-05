@@ -23,7 +23,7 @@ Represents a dictionary of **resultTemplateIds** and associated values, which in
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,12 +37,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "resultTemplateId": {
-      "displayName": "String",
-      "body":{
+    "displayName": "String",
+     "body":{
          "@odata.type":"microsoft.graph.Json"
       }
-   }
 }
 ```
 

@@ -19,7 +19,7 @@ Contains the set of custom questions associated with a particular service.
 |Property|Type|Description|
 |:---|:---|:---|
 |isRequired|Boolean|Indicates whether it's mandatory to answer the custom question. |
-|questionId|String|If it's mandatory to answer the custom question. |
+|questionId|String|The ID of the custom question. |
 
 ## Relationships
 None.

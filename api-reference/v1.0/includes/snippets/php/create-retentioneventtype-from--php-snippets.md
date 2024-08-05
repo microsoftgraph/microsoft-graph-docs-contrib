@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RetentionEventType;
+use Microsoft\Graph\Generated\Models\Security\RetentionEventType;
 use Microsoft\Graph\Generated\Models\IdentitySet;
 
 

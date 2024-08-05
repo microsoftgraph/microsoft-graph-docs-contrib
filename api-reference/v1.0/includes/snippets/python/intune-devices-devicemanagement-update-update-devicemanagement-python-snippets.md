@@ -6,12 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_management import DeviceManagement
+from msgraph.generated.models.device_management_subscription_state import DeviceManagementSubscriptionState
 from msgraph.generated.models.device_protection_overview import DeviceProtectionOverview
 from msgraph.generated.models.windows_malware_overview import WindowsMalwareOverview
 from msgraph.generated.models.windows_malware_state_count import WindowsMalwareStateCount
+from msgraph.generated.models.windows_malware_threat_state import WindowsMalwareThreatState
 from msgraph.generated.models.windows_malware_severity_count import WindowsMalwareSeverityCount
+from msgraph.generated.models.windows_malware_severity import WindowsMalwareSeverity
 from msgraph.generated.models.windows_malware_execution_state_count import WindowsMalwareExecutionStateCount
+from msgraph.generated.models.windows_malware_execution_state import WindowsMalwareExecutionState
 from msgraph.generated.models.windows_malware_category_count import WindowsMalwareCategoryCount
+from msgraph.generated.models.windows_malware_category import WindowsMalwareCategory
 from msgraph.generated.models.windows_malware_name_count import WindowsMalwareNameCount
 from msgraph.generated.models.os_version_count import OsVersionCount
 

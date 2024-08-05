@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ManagedIOSLobApp;
 use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\ManagedAppAvailability;
 use Microsoft\Graph\Generated\Models\IosDeviceType;
 use Microsoft\Graph\Generated\Models\IosMinimumOperatingSystem;
 

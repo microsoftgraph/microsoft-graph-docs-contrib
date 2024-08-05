@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
+await client.api('/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=')
 	.version('beta')
 	.delete();
 

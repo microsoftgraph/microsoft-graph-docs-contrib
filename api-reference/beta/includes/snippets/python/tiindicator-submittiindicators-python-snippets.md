@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.tiindicators.submit_ti_indicators.submit_ti_indicators_post_request_body import SubmitTiIndicatorsPostRequestBody
-from msgraph.generated.models.ti_indicator import TiIndicator
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.tiindicators.submit_ti_indicators.submit_ti_indicators_post_request_body import SubmitTiIndicatorsPostRequestBody
+from msgraph_beta.generated.models.ti_indicator import TiIndicator
+from msgraph_beta.generated.models.file_hash_type import FileHashType
+from msgraph_beta.generated.models.tlp_level import TlpLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -54,9 +54,10 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|The state of the method in the policy. The possible values are: `enabled`, `disabled`. |
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. |
 |appId|String|**appId** for the app registration in Microsoft Entra ID representing the integration with the external provider.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. |
+|includeTargets|[authenticationMethodTarget](../resources/authenticationMethodTarget.md) collection|Groups representing the users that are included in the policy and that can use the external authentication method. |
+|state|authenticationMethodState|The state of the method in the policy. The possible values are: `enabled`, `disabled`. |
 |openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Object representing the required settings for the OIDC request to the external provider.|
 
 
@@ -127,7 +128,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

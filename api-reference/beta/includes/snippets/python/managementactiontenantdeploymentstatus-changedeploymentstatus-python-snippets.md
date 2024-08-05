@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.tenantrelationships.managedtenants.managementactiontenantdeploymentstatuses.microsoft_graph_managed_tenants_change_deployment_status.change_deployment_status_post_request_body import ChangeDeploymentStatusPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.tenantrelationships.managedtenants.managementactiontenantdeploymentstatuses.microsoft_graph_managed_tenants_change_deployment_status.change_deployment_status_post_request_body import ChangeDeploymentStatusPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

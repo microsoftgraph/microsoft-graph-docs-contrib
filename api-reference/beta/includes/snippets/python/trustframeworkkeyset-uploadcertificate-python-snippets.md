@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.trustframework.keysets.item.upload_certificate.upload_certificate_post_request_body import UploadCertificatePostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.trustframework.keysets.item.upload_certificate.upload_certificate_post_request_body import UploadCertificatePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

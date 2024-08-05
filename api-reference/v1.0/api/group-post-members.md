@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a member to a security or Microsoft 365 group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group. When using the API to add multiple members in one request, you can add up to only 20 members. 
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
@@ -30,8 +30,20 @@ The following table shows the least privileged permission that's required by eac
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
-> [!IMPORTANT]
-> To add members to a role-assignable group, the caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following least privileged roles are supported for this operation, except for role-assignable groups:
+
+- Group owners
+- Directory Writers
+- Groups Administrator
+- Identity Governance Administrator
+- User Administrator
+- Exchange Administrator - only for Microsoft 365 groups
+- SharePoint Administrator - only for Microsoft 365 groups
+- Teams Administrator - only for Microsoft 365 groups
+- Yammer Administrator - only for Microsoft 365 groups
+- Intune Administrator - only for security groups
+
+To add members to a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
 ## HTTP request
 
@@ -39,6 +51,7 @@ The following table shows the least privileged permission that's required by eac
 
 ```http
 POST /groups/{group-id}/members/$ref
+POST /groups/{group-id}/members/
 ```
 
 ## Request headers
@@ -50,11 +63,15 @@ POST /groups/{group-id}/members/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.
+When using the `/groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
+
+When using the `/groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type.
+
+If using the **directoryObjects** reference, that is, `https://graph.microsoft.com/v1.0/directoryObjects/{id}`, the object type must still be a supported group member object type.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Examples
 
@@ -62,7 +79,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 #### Request
 
-The following example shows a request.
+The following example shows a request that uses the **directoryObjects** reference to add a member to a group.
 
 # [HTTP](#tab/http)
 
@@ -130,7 +147,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Add multiple members to a group in a single request
 
-This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Up to 20 members can be added in a single request. The POST operation isn't supported. If an error condition exists in the request body, no members are added and the appropriate response code is returned.
 
 #### Request
 

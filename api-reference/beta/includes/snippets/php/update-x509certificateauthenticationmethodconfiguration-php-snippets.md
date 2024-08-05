@@ -5,13 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationMethodConfiguration;
-use Microsoft\Graph\Generated\Models\X509CertificateUserBinding;
-use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationModeConfiguration;
-use Microsoft\Graph\Generated\Models\X509CertificateRule;
-use Microsoft\Graph\Generated\Models\X509CertificateIssuerHintsConfiguration;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodTarget;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateAuthenticationMethodConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodState;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateUserBinding;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateAuthenticationModeConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateAuthenticationMode;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateRule;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateRuleType;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateIssuerHintsConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateIssuerHintsState;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTarget;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

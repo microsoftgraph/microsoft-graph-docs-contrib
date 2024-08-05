@@ -20,8 +20,8 @@ Inherits from [entity](entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List impactedResources](../api/recommendation-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get the [impactedResource](../resources/impactedresource.md) resources from the impactedResources navigation property.|
-|[Get impactedResource](../api/impactedresource-get.md)|[impactedResource](../resources/impactedresource.md)|Read the properties and relationships of an [impactedResource](../resources/impactedresource.md) object.|
+|[List](../api/recommendation-list-impactedresources.md)|[impactedResource](../resources/impactedresource.md) collection|Get the [impactedResource](../resources/impactedresource.md) resources from the impactedResources navigation property.|
+|[Get](../api/impactedresource-get.md)|[impactedResource](../resources/impactedresource.md)|Read the properties and relationships of an [impactedResource](../resources/impactedresource.md) object.|
 |[Postpone](../api/impactedresource-postpone.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `postponed` to a specified date and time.|
 |[Dismiss](../api/impactedresource-dismiss.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `dismissed`.|
 |[Complete](../api/impactedresource-complete.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `completedByUser`.|
@@ -50,7 +50,7 @@ Inherits from [entity](entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

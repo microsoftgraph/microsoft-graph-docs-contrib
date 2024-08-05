@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.schema_extension import SchemaExtension
-from msgraph.generated.models.extension_schema_property import ExtensionSchemaProperty
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.schema_extension import SchemaExtension
+from msgraph_beta.generated.models.extension_schema_property import ExtensionSchemaProperty
 
 graph_client = GraphServiceClient(credentials, scopes)
 

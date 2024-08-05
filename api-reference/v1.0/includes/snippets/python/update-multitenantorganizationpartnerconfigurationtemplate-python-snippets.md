@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.multi_tenant_organization_partner_configuration_template import MultiTenantOrganizationPartnerConfigurationTemplate
 from msgraph.generated.models.cross_tenant_access_policy_inbound_trust import CrossTenantAccessPolicyInboundTrust
 from msgraph.generated.models.inbound_outbound_policy_configuration import InboundOutboundPolicyConfiguration
+from msgraph.generated.models.template_application_level import TemplateApplicationLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

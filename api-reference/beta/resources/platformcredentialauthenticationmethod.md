@@ -5,6 +5,7 @@ author: "Veena11"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Platform Credential
 ---
 
 # platformCredentialAuthenticationMethod resource type
@@ -20,9 +21,9 @@ This derived type inherits from the [authenticationMethod](authenticationmethod.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List platformCredentialAuthenticationMethods](../api/platformcredentialauthenticationmethod-list.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) collection|Get a list of the [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) objects and their properties.|
-|[Get platformCredentialAuthenticationMethod](../api/platformcredentialauthenticationmethod-get.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md)|Read the properties and relationships of a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
-|[Delete platformCredentialAuthenticationMethod](../api/platformcredentialauthenticationmethod-delete.md)|None|Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
+|[List](../api/platformcredentialauthenticationmethod-list.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) collection|Get a list of the [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) objects and their properties.|
+|[Get](../api/platformcredentialauthenticationmethod-get.md)|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md)|Read the properties and relationships of a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
+|[Delete](../api/platformcredentialauthenticationmethod-delete.md)|None|Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.|
 
 ## Properties
 |Property|Type|Description|

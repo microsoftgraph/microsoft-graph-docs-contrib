@@ -19,7 +19,7 @@ Provides access to Planner resources for a [user](user.md). It doesn't contain a
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List plans](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Get tasks for user](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|

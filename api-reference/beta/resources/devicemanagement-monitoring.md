@@ -1,10 +1,11 @@
 ---
-title: "monitoring resource type"
+title: monitoring resource type
 description: "Represents the entry point entity type to access all resources related to alerts in the Microsoft Endpoint Manager admin center."
 author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+toc.keywords: [ Microsoft Endpoint Manager admin center alerts ]
 ---
 
 # monitoring resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the entry point to access all resources related to alerts in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
-The alert monitoring API provide a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more. 
+The alert monitoring API provides a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more.
 
 The roles of global admin, Intune admin, and Windows 365 admin have full access to the alert monitoring API.
 
@@ -36,7 +37,7 @@ The roles of global admin, Intune admin, and Windows 365 admin have full access 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

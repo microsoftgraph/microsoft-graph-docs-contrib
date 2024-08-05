@@ -20,12 +20,12 @@ Represents a print job that has been queued for a printer.
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get](../api/printjob-get.md) | [printJob](printjob.md) | Read properties and relationships of printJob object. |
-| [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job object. |
+| [Create print job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job object. |
 | [Update](../api/printjob-update.md) | [printJob](printjob.md) | Update a print job object. |
 | [Start](../api/printjob-start.md)|None|Start the print job.|
 | [Cancel](../api/printjob-cancel.md)|None|Cancel the print job.|
 | [Abort](../api/printjob-abort.md)|None|Abort the print job.|
-| [Redirect (to another printer)](../api/printjob-redirect.md) | [printJob](printjob.md) | A print job that is queued for the destination printer. |
+| [Redirect](../api/printjob-redirect.md) | [printJob](printjob.md) | A print job that is queued for the destination printer. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -48,7 +48,7 @@ Represents a print job that has been queued for a printer.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "List bookingCurrencies"
 description: "Get a list of bookingCurrency objects available to a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 

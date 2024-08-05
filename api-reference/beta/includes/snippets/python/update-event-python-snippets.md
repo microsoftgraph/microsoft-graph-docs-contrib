@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.event import Event
-from msgraph.generated.models.response_status import ResponseStatus
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.event import Event
+from msgraph_beta.generated.models.response_status import ResponseStatus
+from msgraph_beta.generated.models.response_type import ResponseType
+from msgraph_beta.generated.models.online_meeting_provider_type import OnlineMeetingProviderType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

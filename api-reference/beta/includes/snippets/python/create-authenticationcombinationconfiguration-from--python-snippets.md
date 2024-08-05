@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.fido2_combination_configuration import Fido2CombinationConfiguration
-from msgraph.generated.models.authentication_method_modes import AuthenticationMethodModes
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.fido2_combination_configuration import Fido2CombinationConfiguration
+from msgraph_beta.generated.models.authentication_method_modes import AuthenticationMethodModes
 
 graph_client = GraphServiceClient(credentials, scopes)
 

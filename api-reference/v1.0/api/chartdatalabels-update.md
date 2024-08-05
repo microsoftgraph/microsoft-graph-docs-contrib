@@ -43,16 +43,16 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|String representing the separator used for the data labels on a chart.|
-|showBubbleSize|boolean|Boolean value representing if the data label bubble size is visible or not.|
-|showCategoryName|boolean|Boolean value representing if the data label category name is visible or not.|
-|showLegendKey|boolean|Boolean value representing if the data label legend key is visible or not.|
-|showPercentage|boolean|Boolean value representing if the data label percentage is visible or not.|
-|showSeriesName|boolean|Boolean value representing if the data label series name is visible or not.|
-|showValue|boolean|Boolean value representing if the data label value is visible or not.|
+|showBubbleSize|Boolean|Boolean value representing if the data label bubble size is visible or not.|
+|showCategoryName|Boolean|Boolean value representing if the data label category name is visible or not.|
+|showLegendKey|Boolean|Boolean value representing if the data label legend key is visible or not.|
+|showPercentage|Boolean|Boolean value representing if the data label percentage is visible or not.|
+|showSeriesName|Boolean|Boolean value representing if the data label series name is visible or not.|
+|showValue|Boolean|Boolean value representing if the data label value is visible or not.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartDataLabels](../resources/chartdatalabels.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartDataLabels](../resources/workbookchartdatalabels.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

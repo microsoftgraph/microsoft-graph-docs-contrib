@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AdministrativeUnitProvisioningFlow;
-use Microsoft\Graph\Generated\Models\AdminUnitCreationOptions;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdministrativeUnitProvisioningFlow;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdminUnitCreationOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

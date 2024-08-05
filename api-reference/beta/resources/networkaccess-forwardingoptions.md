@@ -20,8 +20,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get forwardingOptions](../api/networkaccess-forwardingoptions-get.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
-|[Update forwardingOptions](../api/networkaccess-forwardingoptions-update.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
+|[Get](../api/networkaccess-forwardingoptions-get.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
+|[Update](../api/networkaccess-forwardingoptions-update.md)|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md)|Update the properties of a [microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingoptions.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +33,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

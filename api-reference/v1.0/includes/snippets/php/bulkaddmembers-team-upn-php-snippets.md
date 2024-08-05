@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AddPostRequestBody;
+use Microsoft\Graph\Generated\Teams\Item\Members\Add\AddPostRequestBody;
 use Microsoft\Graph\Generated\Models\ConversationMember;
 use Microsoft\Graph\Generated\Models\AadUserConversationMember;
 

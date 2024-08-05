@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.class_group_provisioning_flow import ClassGroupProvisioningFlow
-from msgraph.generated.models.class_group_configuration import ClassGroupConfiguration
-from msgraph.generated.models.additional_class_group_attributes import AdditionalClassGroupAttributes
-from msgraph.generated.models.additional_class_group_options import AdditionalClassGroupOptions
-from msgraph.generated.models.enrollment_mappings import EnrollmentMappings
-from msgraph.generated.models.section_role_reference_value import SectionRoleReferenceValue
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.industry_data.class_group_provisioning_flow import ClassGroupProvisioningFlow
+from msgraph_beta.generated.models.industry_data.class_group_configuration import ClassGroupConfiguration
+from msgraph_beta.generated.models.industry_data.additional_class_group_attributes import AdditionalClassGroupAttributes
+from msgraph_beta.generated.models.additional_class_group_attributes import AdditionalClassGroupAttributes
+from msgraph_beta.generated.models.industry_data.additional_class_group_options import AdditionalClassGroupOptions
+from msgraph_beta.generated.models.industry_data.enrollment_mappings import EnrollmentMappings
+from msgraph_beta.generated.models.industry_data.section_role_reference_value import SectionRoleReferenceValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

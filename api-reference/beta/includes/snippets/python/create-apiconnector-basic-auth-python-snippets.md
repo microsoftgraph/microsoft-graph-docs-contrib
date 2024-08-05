@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.identity_api_connector import IdentityApiConnector
-from msgraph.generated.models.basic_authentication import BasicAuthentication
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.identity_api_connector import IdentityApiConnector
+from msgraph_beta.generated.models.basic_authentication import BasicAuthentication
 
 graph_client = GraphServiceClient(credentials, scopes)
 

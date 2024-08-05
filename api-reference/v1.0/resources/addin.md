@@ -1,6 +1,6 @@
 ---
 title: "addIn resource type"
-description: "The following JSON representation shows the resource type."
+description: "Defines custom behavior that a consuming service can use to call an app in specific contexts."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
@@ -16,9 +16,9 @@ Defines custom behavior that a consuming service can use to call an app in speci
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ID|guid||
-|properties|[keyValue](keyvalue.md) collection||
-|type|string||
+|id|GUID|The unique identifier for the **addIn** object.|
+|properties|[keyValue](keyvalue.md) collection|The collection of key-value pairs that define parameters that the consuming service can use or call. You must specify this property when performing a POST or a PATCH operation on the **addIns** collection. Required.|
+|type|string|The unique name for the functionality exposed by the app. |
 
 ## JSON representation
 

@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.unified_group_source import UnifiedGroupSource
+from msgraph.generated.models.security.unified_group_source import UnifiedGroupSource
 from msgraph.generated.models.group import Group
+from msgraph.generated.models.source_type import SourceType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.teams_app_installation import TeamsAppInstallation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

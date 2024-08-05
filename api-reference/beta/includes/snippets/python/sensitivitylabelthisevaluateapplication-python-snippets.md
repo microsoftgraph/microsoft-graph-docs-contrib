@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.security.information_protection.sensitivity_labels.microsoft.graph.security.evaluate_application.evaluate_application_request_builder import EvaluateApplicationRequestBuilder
-from msgraph.generated.users.item.security.informationprotection.sensitivitylabels.microsoft_graph_security_evaluate_application.evaluate_application_post_request_body import EvaluateApplicationPostRequestBody
-from msgraph.generated.models.content_info import ContentInfo
-from msgraph.generated.models.key_value_pair import KeyValuePair
-from msgraph.generated.models.labeling_options import LabelingOptions
-from msgraph.generated.models.downgrade_justification import DowngradeJustification
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.security.information_protection.sensitivity_labels.microsoft.graph.security.evaluate_application.evaluate_application_request_builder import EvaluateApplicationRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.users.item.security.informationprotection.sensitivitylabels.microsoft_graph_security_evaluate_application.evaluate_application_post_request_body import EvaluateApplicationPostRequestBody
+from msgraph_beta.generated.models.security.content_info import ContentInfo
+from msgraph_beta.generated.models.content_state import ContentState
+from msgraph_beta.generated.models.security.key_value_pair import KeyValuePair
+from msgraph_beta.generated.models.security.labeling_options import LabelingOptions
+from msgraph_beta.generated.models.assignment_method import AssignmentMethod
+from msgraph_beta.generated.models.security.downgrade_justification import DowngradeJustification
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -82,7 +85,7 @@ request_body = EvaluateApplicationPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("User-Agent", "ContosoLobApp/1.0")
 
 

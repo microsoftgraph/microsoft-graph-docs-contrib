@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.on_premises_publishing_profiles.item.agent_groups.item.on_premises_agent_group_item_request_builder import OnPremisesAgentGroupItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.on_premises_publishing_profiles.item.agent_groups.item.on_premises_agent_group_item_request_builder import OnPremisesAgentGroupItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = OnPremisesAgentGroupItemRequestBuilder.OnPremisesAgentGroupItemRe
 		expand = ["publishedResources","agents"],
 )
 
-request_configuration = OnPremisesAgentGroupItemRequestBuilder.OnPremisesAgentGroupItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

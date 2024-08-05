@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.groups(unique_name='{unique_name}').groups_with_unique_name_request_builder import GroupsWithUniqueNameRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.group import Group
 
 graph_client = GraphServiceClient(credentials, scopes)
@@ -21,7 +22,7 @@ request_body = Group(
 	security_enabled = False,
 )
 
-request_configuration = GroupsWithUniqueNameRequestBuilder.GroupsWithUniqueNameRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "create-if-missing")
 
 

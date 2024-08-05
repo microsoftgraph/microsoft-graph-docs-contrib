@@ -3,7 +3,7 @@ title: "sitePage resource type"
 description: Represents a site page in the sitePages list.
 author: Sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -22,13 +22,13 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 | Method                                                                                           | Return type                                     | Description                                                                                                                         |
 | :----------------------------------------------------------------------------------------------- | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| [List sitePages](../api/sitepage-list.md)                                                        | [sitePage](../resources/sitepage.md) collection | Get a list of the [sitePage](../resources/sitepage.md) objects and their properties.                                                |
-| [Create sitePage](../api/sitepage-create.md)                                                     | [sitePage](../resources/sitepage.md)            | Create a new [sitePage](../resources/sitepage.md) object.                                                                           |
-| [Get sitePage](../api/sitepage-get.md)                                                           | [sitePage](../resources/sitepage.md)            | Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.                                             |
-| [Update sitePage](../api/sitepage-update.md)                                                     | [sitePage](../resources/sitepage.md)            | Update the properties of a [sitePage](../resources/sitepage.md) object.                                                             |
-| [Delete sitePage](../api/basesitepage-delete.md)                                                     | None                                            | Deletes a [sitePage](../resources/sitepage.md) object.                                                                              |
-| [Publish sitePage](../api/sitepage-publish.md)                                                   | None                                            | Publish a [sitePage](../resources/sitepage.md) object.                                                                              |
-| [Get a collection of WebParts by position information](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection   | Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information. |
+| [List](../api/sitepage-list.md)                                                        | [sitePage](../resources/sitepage.md) collection | Get a list of the [sitePage](../resources/sitepage.md) objects and their properties.                                                |
+| [Create](../api/sitepage-create.md)                                                     | [sitePage](../resources/sitepage.md)            | Create a new [sitePage](../resources/sitepage.md) object.                                                                           |
+| [Get](../api/sitepage-get.md)                                                           | [sitePage](../resources/sitepage.md)            | Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.                                             |
+| [Update](../api/sitepage-update.md)                                                     | [sitePage](../resources/sitepage.md)            | Update the properties of a [sitePage](../resources/sitepage.md) object.                                                             |
+| [Delete](../api/basesitepage-delete.md)                                                     | None                                            | Deletes a [sitePage](../resources/sitepage.md) object.                                                                              |
+| [Publish](../api/sitepage-publish.md)                                                   | None                                            | Publish a [sitePage](../resources/sitepage.md) object.                                                                              |
+| [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection   | Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information. |
 
 ## Properties
 
@@ -75,7 +75,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

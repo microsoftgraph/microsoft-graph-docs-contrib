@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.file_assessment_request import FileAssessmentRequest
+from msgraph.generated.models.threat_expected_assessment import ThreatExpectedAssessment
+from msgraph.generated.models.threat_category import ThreatCategory
 
 graph_client = GraphServiceClient(credentials, scopes)
 

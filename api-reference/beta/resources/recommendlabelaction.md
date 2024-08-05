@@ -28,7 +28,7 @@ Represents a label that should be recommended to the user for application to the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.planner.tasks.item.bucket_task_board_format.bucket_task_board_format_request_builder import BucketTaskBoardFormatRequestBuilder
-from msgraph.generated.models.planner_bucket_task_board_task_format import PlannerBucketTaskBoardTaskFormat
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.planner.tasks.item.bucket_task_board_format.bucket_task_board_format_request_builder import BucketTaskBoardFormatRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.planner_bucket_task_board_task_format import PlannerBucketTaskBoardTaskFormat
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ request_body = PlannerBucketTaskBoardTaskFormat(
 	order_hint = "A6673H Ejkl!",
 )
 
-request_configuration = BucketTaskBoardFormatRequestBuilder.BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "return=representation")
 request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 

@@ -19,8 +19,8 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminReportSettings](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 Reports.|
-|[Update adminReportSettings](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 Reports.|
+|[Get](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 Reports.|
+|[Update](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 Reports.|
 
 ## Properties
 
@@ -30,7 +30,7 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.adminReportSettings",

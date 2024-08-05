@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.audit_log_query import AuditLogQuery
-from msgraph.generated.models.audit_log_record_type import AuditLogRecordType
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.audit_log_query import AuditLogQuery
+from msgraph_beta.generated.models.security.audit_log_record_type import AuditLogRecordType
+from msgraph_beta.generated.models.audit_log_record_type import AuditLogRecordType
+from msgraph_beta.generated.models.audit_log_query_status import AuditLogQueryStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

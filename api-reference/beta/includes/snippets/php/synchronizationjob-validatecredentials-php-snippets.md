@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ValidateCredentialsPostRequestBody;
-use Microsoft\Graph\Generated\Models\SynchronizationSecretKeyStringValuePair;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\ServicePrincipals\Item\Synchronization\Jobs\Item\ValidateCredentials\ValidateCredentialsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\SynchronizationSecretKeyStringValuePair;
+use Microsoft\Graph\Beta\Generated\Models\SynchronizationSecret;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

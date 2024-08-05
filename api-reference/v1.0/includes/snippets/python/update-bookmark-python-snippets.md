@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.bookmark import Bookmark
+from msgraph.generated.models.search.bookmark import Bookmark
 
 graph_client = GraphServiceClient(credentials, scopes)
 

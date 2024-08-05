@@ -26,7 +26,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List associatedTeamInfo](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
+|[List your associated teams](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +37,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

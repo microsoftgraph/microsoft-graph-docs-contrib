@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.skill_proficiency import SkillProficiency
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.skill_proficiency import SkillProficiency
+from msgraph_beta.generated.models.skill_proficiency_level import SkillProficiencyLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\EducationUser;
+use Microsoft\Graph\Generated\Models\EducationUserRole;
+use Microsoft\Graph\Generated\Models\EducationExternalSource;
 use Microsoft\Graph\Generated\Models\PhysicalAddress;
 use Microsoft\Graph\Generated\Models\EducationStudent;
 use Microsoft\Graph\Generated\Models\EducationTeacher;

@@ -4,10 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.external.connections.item.items.item.microsoft_graph_external_connectors_add_activities.add_activities_post_request_body import AddActivitiesPostRequestBody
-from msgraph.generated.models.external_activity import ExternalActivity
-from msgraph.generated.models.identity import Identity
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.external.connections.item.items.item.microsoft_graph_external_connectors_add_activities.add_activities_post_request_body import AddActivitiesPostRequestBody
+from msgraph_beta.generated.models.external_connectors.external_activity import ExternalActivity
+from msgraph_beta.generated.models.external_activity_type import ExternalActivityType
+from msgraph_beta.generated.models.external_connectors.identity import Identity
+from msgraph_beta.generated.models.identity_type import IdentityType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

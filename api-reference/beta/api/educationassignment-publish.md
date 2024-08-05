@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: publish"
-description: "Change the state of an educationAssignment from its original draft status to the published status."
+description: "Change the status of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
+Change the status of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
-You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
+You can change the status from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
 
 Only a teacher in the class can make this call. When an **assignment** is in draft status, students will not see the **assignment**, nor will there be any submission objects. When you call this API, [educationSubmission](../resources/educationsubmission.md) objects are created and the assignment appears in the student's list.
 
-The state of the **assignment** goes back to `draft` if there is any backend failure during publish process.
+The status of the **assignment** goes back to `draft` if there is any backend failure during publish process.
 
 To update the properties of a published **assignment**, see [update an assignment](../api/educationassignment-update.md).
 
@@ -162,7 +162,7 @@ HTTP/1.1 200 Ok
 
 ## Related content
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+* [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

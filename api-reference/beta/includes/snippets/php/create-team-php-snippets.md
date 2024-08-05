@@ -5,12 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Team;
-use Microsoft\Graph\Generated\Models\TeamMemberSettings;
-use Microsoft\Graph\Generated\Models\TeamMessagingSettings;
-use Microsoft\Graph\Generated\Models\TeamFunSettings;
-use Microsoft\Graph\Generated\Models\TeamDiscoverySettings;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Team;
+use Microsoft\Graph\Beta\Generated\Models\TeamMemberSettings;
+use Microsoft\Graph\Beta\Generated\Models\TeamMessagingSettings;
+use Microsoft\Graph\Beta\Generated\Models\TeamFunSettings;
+use Microsoft\Graph\Beta\Generated\Models\GiphyRatingType;
+use Microsoft\Graph\Beta\Generated\Models\TeamDiscoverySettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

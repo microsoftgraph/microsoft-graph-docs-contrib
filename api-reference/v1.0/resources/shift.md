@@ -19,11 +19,11 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shifts](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of **shifts** in this schedule.|
-|[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new **shift**.|
-|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
-|[Replace shift](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
-|[Delete shift](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
+|[List](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of **shifts** in this schedule.|
+|[Create](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new **shift**.|
+|[Get](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
+|[Replace](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
+|[Delete](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |

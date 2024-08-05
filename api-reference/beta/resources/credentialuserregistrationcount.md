@@ -19,7 +19,7 @@ Represents the current state of how many users in your organization are register
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount collection | Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities. |
+| [Get](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount collection | Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities. |
 
 ## Properties
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

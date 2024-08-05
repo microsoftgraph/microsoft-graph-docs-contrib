@@ -85,6 +85,13 @@ Enum values for the industry data API in Microsoft Graph.
 | classCode                 |
 | unknownFutureValue        |
 
+### apiFormat values 
+
+|Member              |
+|:-------------------|
+| oneRoster          |
+| unknownFutureValue |
+
 <!--
 {
   "type": "#page.annotation",

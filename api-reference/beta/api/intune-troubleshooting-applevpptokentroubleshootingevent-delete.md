@@ -2,7 +2,7 @@
 title: "Delete appleVppTokenTroubleshootingEvent"
 description: "Deletes a appleVppTokenTroubleshootingEvent."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

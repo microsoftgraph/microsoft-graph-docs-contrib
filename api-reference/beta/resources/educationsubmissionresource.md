@@ -5,6 +5,7 @@ author: "dipakboyed"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Submission resource
 ---
 
 # educationSubmissionResource resource type
@@ -20,9 +21,9 @@ A wrapper around a resource for use on a submission. The wrapper adds a pointer 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
-|[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
-|[Delete](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
+|[List submission resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
+|[Get submission resource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
+|[Delete submission resource](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|

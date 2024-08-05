@@ -18,8 +18,8 @@ Represents a user's override for how incoming messages from a specific sender sh
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
+|[Update Override](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
+|[Delete Override](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
 
 ## Properties
 | Property	   | Type	|Description|

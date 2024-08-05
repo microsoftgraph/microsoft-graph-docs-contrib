@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.admin.service_announcement.health_overviews.health_overviews_request_builder import HealthOverviewsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = HealthOverviewsRequestBuilder.HealthOverviewsRequestBuilderGetQue
 		expand = ["issues"],
 )
 
-request_configuration = HealthOverviewsRequestBuilder.HealthOverviewsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

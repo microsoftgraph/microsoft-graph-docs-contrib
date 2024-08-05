@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\SourceSystemDefinition;
-use Microsoft\Graph\Generated\Models\UserMatchingSetting;
-use Microsoft\Graph\Generated\Models\UserMatchTargetReferenceValue;
-use Microsoft\Graph\Generated\Models\IdentifierTypeReferenceValue;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\SourceSystemDefinition;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserMatchingSetting;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserMatchTargetReferenceValue;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\IdentifierTypeReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

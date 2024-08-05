@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.identity_user_flow_attribute import IdentityUserFlowAttribute
+from msgraph.generated.models.identity_user_flow_attribute_data_type import IdentityUserFlowAttributeDataType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

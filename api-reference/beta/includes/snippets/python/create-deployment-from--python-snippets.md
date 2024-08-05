@@ -4,15 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.deployment import Deployment
-from msgraph.generated.models.catalog_content import CatalogContent
-from msgraph.generated.models.feature_update_catalog_entry import FeatureUpdateCatalogEntry
-from msgraph.generated.models.deployment_settings import DeploymentSettings
-from msgraph.generated.models.schedule_settings import ScheduleSettings
-from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
-from msgraph.generated.models.monitoring_settings import MonitoringSettings
-from msgraph.generated.models.monitoring_rule import MonitoringRule
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.windows_updates.deployment import Deployment
+from msgraph_beta.generated.models.windows_updates.catalog_content import CatalogContent
+from msgraph_beta.generated.models.windows_updates.feature_update_catalog_entry import FeatureUpdateCatalogEntry
+from msgraph_beta.generated.models.windows_updates.deployment_settings import DeploymentSettings
+from msgraph_beta.generated.models.windows_updates.schedule_settings import ScheduleSettings
+from msgraph_beta.generated.models.windows_updates.rate_driven_rollout_settings import RateDrivenRolloutSettings
+from msgraph_beta.generated.models.windows_updates.monitoring_settings import MonitoringSettings
+from msgraph_beta.generated.models.windows_updates.monitoring_rule import MonitoringRule
+from msgraph_beta.generated.models.monitoring_signal import MonitoringSignal
+from msgraph_beta.generated.models.monitoring_action import MonitoringAction
 
 graph_client = GraphServiceClient(credentials, scopes)
 

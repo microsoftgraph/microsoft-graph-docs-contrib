@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta admin windows updates update-policies create --body '{\
   "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",\
   "audience": {\

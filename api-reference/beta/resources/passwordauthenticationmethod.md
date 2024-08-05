@@ -6,6 +6,7 @@ author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: Password
 ---
 
 # passwordAuthenticationMethod resource type
@@ -22,9 +23,10 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of all of this user's **passwordAuthenticationMethod** objects. |
-|[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a **passwordAuthenticationMethod** object. |
-|[Reset password](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
+|[List](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read the properties and relationships of all of this user's **passwordAuthenticationMethod** objects. |
+|[Get](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read the properties and relationships of a **passwordAuthenticationMethod** object. |
+|[Reset](../api/authenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
+|[Get long running operation](../api/longrunningoperation-get.md)|None|Get the status of the password reset long running operation if the reset operation returned a **Location** object.|
 
 ## Properties
 
@@ -38,9 +40,9 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 None.
 
-## JSON representation
+The following JSON representation shows the resource type.
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -53,6 +55,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.passwordAuthenticationMethod",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "password": "String"

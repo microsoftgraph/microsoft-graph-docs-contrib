@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint provisioning-policies patch --cloud-pc-provisioning-policy-id {cloudPcProvisioningPolicy-id} --body '{\
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",\
   "displayName": "HR provisioning policy",\
@@ -17,7 +17,14 @@ mgc-beta device-management virtual-endpoint provisioning-policies patch --cloud-
     "language": "en-US"\
   },\
   "windowsSetting": {\
-      "locale": "en-US"\
+    "locale": "en-US"\
+  },\
+  "microsoftManagedDesktop": {\
+    "managedType": "starterManaged",\
+    "profile": null\
+  },\
+  "autopatch": {\
+    "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"\
   }\
 }\
 '

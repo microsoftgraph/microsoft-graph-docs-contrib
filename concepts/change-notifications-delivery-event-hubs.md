@@ -178,7 +178,7 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 
 If you're using role-based access control, the **notificationUrl** property looks like this:
 
-`EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
+`EventHub:https://<eventhubnamespace>.servicebus.windows.net/eventhubname/<eventhubname>?tenantId=<domainname>`
 
 - `eventhubnamespace` is the name you give to the Event Hub namespace. Can be found in the Event Hubs Overview page under Host name.
 - `eventhubname` is the name you give to the Event Hub. Can be found in the Event Hubs -> Overview -> Event Hubs.
@@ -229,7 +229,7 @@ The maximum message size for Event Hubs is 1 MB. When you use [rich notification
 ### Set up storage and create a subscription
 
 1.  [Create a storage account](/azure/storage/common/storage-account-create).
-2.  [Create a container in the storage account](/azure/storage/blobs/blob-containers-portal) and assign it a name.
+2.  [Create a container in the storage account](/azure/storage/blobs/blob-containers-portal). The container name must be set to `microsoft-graph-change-notifications`.
 3.  [Retrieve the storage account access keys or connection string](/azure/storage/common/storage-account-keys-manage#view-account-access-keys).
 4.  Add the connection string to the key vault and give it a name. This value is the secret name.
 5.  Create or recreate your subscription, now including the **blobStoreUrl** property in the following syntax: `blobStoreUrl: "https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>"`

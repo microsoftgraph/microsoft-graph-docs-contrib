@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.communications.calls.item.update_recording_status.update_recording_status_post_request_body import UpdateRecordingStatusPostRequestBody
+from msgraph.generated.models.recording_status import RecordingStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

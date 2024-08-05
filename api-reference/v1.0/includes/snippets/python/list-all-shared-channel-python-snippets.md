@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.all_channels.all_channels_request_builder import AllChannelsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = AllChannelsRequestBuilder.AllChannelsRequestBuilderGetQueryParame
 		filter = "membershipType eq 'shared'",
 )
 
-request_configuration = AllChannelsRequestBuilder.AllChannelsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

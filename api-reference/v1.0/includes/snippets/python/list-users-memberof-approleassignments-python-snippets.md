@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.member_of.graph.group.group_request_builder import GroupRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
 		select = ["id","displayName"],
 )
 
-request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

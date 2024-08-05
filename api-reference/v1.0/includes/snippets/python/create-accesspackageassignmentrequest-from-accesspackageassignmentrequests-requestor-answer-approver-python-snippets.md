@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph.generated.models.access_package_request_type import AccessPackageRequestType
 from msgraph.generated.models.access_package_answer import AccessPackageAnswer
 from msgraph.generated.models.access_package_answer_string import AccessPackageAnswerString
 from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.cases.ediscoverycases.item.custodians.microsoft_graph_security_update_index.update_index_post_request_body import UpdateIndexPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.cases.ediscoverycases.item.custodians.microsoft_graph_security_update_index.update_index_post_request_body import UpdateIndexPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

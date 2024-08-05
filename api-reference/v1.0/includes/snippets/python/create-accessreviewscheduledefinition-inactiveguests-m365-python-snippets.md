@@ -12,7 +12,9 @@ from msgraph.generated.models.access_review_reviewer_scope import AccessReviewRe
 from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
 from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
 from msgraph.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph.generated.models.recurrence_pattern_type import RecurrencePatternType
 from msgraph.generated.models.recurrence_range import RecurrenceRange
+from msgraph.generated.models.recurrence_range_type import RecurrenceRangeType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

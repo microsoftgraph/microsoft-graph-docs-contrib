@@ -5,10 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\IdentityUserFlowAttributeAssignment;
-use Microsoft\Graph\Generated\Models\UserAttributeValuesItem;
-use Microsoft\Graph\Generated\Models\IdentityUserFlowAttribute;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeAssignment;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeInputType;
+use Microsoft\Graph\Beta\Generated\Models\UserAttributeValuesItem;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttribute;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

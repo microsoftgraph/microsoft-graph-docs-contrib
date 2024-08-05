@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.chats.item.tabs.tabs_request_builder import TabsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = TabsRequestBuilder.TabsRequestBuilderGetQueryParameters(
 		expand = ["teamsApp"],
 )
 
-request_configuration = TabsRequestBuilder.TabsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

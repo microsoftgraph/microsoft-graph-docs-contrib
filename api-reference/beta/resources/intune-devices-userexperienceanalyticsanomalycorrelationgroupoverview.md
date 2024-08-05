@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAnomalyCorrelationGroupOverview resource type"
 description: "The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # userExperienceAnalyticsAnomalyCorrelationGroupOverview resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
 

@@ -3,7 +3,7 @@ title: "List profileCardProperties"
 description: "Get a collection of profileCardProperty resources for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

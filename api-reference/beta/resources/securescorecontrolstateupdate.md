@@ -1,5 +1,5 @@
 ---
-title: " secureScoreControlStateUpdate resource type"
+title: secureScoreControlStateUpdate resource type
 description: "This resource contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -7,9 +7,11 @@ ms.subservice: security
 author: "preetikr"
 ---
 
- #  secureScoreControlStateUpdate resource type
- 
+# secureScoreControlStateUpdate resource type
+
 Contains the history of the control states updated by the user (control states include Default, Ignored, ThirdParty, Reviewed).
+
+## Properties
 
 |Property |Type |Description |
 |:--|:--|:--|
@@ -20,7 +22,7 @@ Contains the history of the control states updated by the user (control states i
 |updatedDateTime | DateTimeOffset |Time at which control state was updated |
 
  ## JSON representation
- The following is a JSON representation of the resource.
+ The following JSON representation shows the resource type.
  <!-- {
   "blockType": "resource",
   "optionalProperties": [

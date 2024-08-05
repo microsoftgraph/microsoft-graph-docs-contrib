@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\WorkplaceSensorDevice;
-use Microsoft\Graph\Generated\Models\WorkplaceSensor;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WorkplaceSensorDevice;
+use Microsoft\Graph\Beta\Generated\Models\WorkplaceSensor;
+use Microsoft\Graph\Beta\Generated\Models\WorkplaceSensorType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

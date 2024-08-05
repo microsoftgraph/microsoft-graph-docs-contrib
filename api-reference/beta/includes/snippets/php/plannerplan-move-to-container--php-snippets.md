@@ -5,10 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Planner\Plans\Item\MoveToContainer\MoveToContainerRequestBuilderPostRequestConfiguration;
-use Microsoft\Graph\Generated\Models\MoveToContainerPostRequestBody;
-use Microsoft\Graph\Generated\Models\PlannerPlanContainer;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Plans\Item\MoveToContainer\MoveToContainerRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Planner\Plans\Item\MoveToContainer\MoveToContainerPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\PlannerPlanContainer;
+use Microsoft\Graph\Beta\Generated\Models\PlannerContainerType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

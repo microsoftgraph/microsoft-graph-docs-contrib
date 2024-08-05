@@ -3,7 +3,7 @@ title: "subjectRightsRequest resource type"
 description: "Represents the properties of a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a subject rights request, which is a formal request by a data subject to a controller to take an action on their personal data. 
+Represents the properties of a subject rights request, which is a formal request by a data subject to a controller to take an action on their personal data.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List subjectRightsRequests](../api/subjectRightsRequest-list.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md) collection|Get a list of the [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.|
-|[Create subjectRightsRequest](../api/subjectRightsRequest-post.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[Get subjectRightsRequest](../api/subjectRightsRequest-get.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[Update subjectRightsRequest](../api/subjectRightsRequest-update.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[getFinalAttachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.|
-|[getFinalReport](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that were included by the privacy administrator.|
-|[List notes](../api/subjectRightsRequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
-|[Create authoredNote](../api/subjectRightsRequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
+|[List](../api/subjectrightsrequest-list.md)|subjectRightsRequest collection|Get a list of the subjectRightsRequest objects and their properties.|
+|[Create](../api/subjectrightsrequest-post.md)|subjectRightsRequest|Create a new subjectRightsRequest object.|
+|[Get](../api/subjectrightsrequest-get.md)|subjectRightsRequest|Read the properties and relationships of a subjectRightsRequest object.|
+|[Update](../api/subjectrightsrequest-update.md)|subjectRightsRequest|Update the properties of a subjectRightsRequest object.|
+|[Get final attachment](../api/subjectrightsrequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.|
+|[Get final report](../api/subjectrightsrequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that were included by the privacy administrator.|
+|[List notes](../api/subjectrightsrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
+|[Create note](../api/subjectrightsrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
 ## Properties
 |Property|Type|Description|
@@ -111,7 +111,7 @@ The following JSON representation shows the resource type.
     "mailboxLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
-    "pauseAfterDownload": "Boolean",
+    "pauseAfterEstimate": "Boolean",
     "regulations": [
         "String"
     ],

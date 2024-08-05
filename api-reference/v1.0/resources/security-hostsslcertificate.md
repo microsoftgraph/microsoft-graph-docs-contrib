@@ -21,8 +21,8 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostSslCertificates](../api/security-host-list-sslcertificates.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
-|[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md)|Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
+|[List](../api/security-host-list-sslcertificates.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
+|[Get](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md)|Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
 
 ## Properties
 
@@ -42,7 +42,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

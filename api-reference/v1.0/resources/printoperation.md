@@ -16,7 +16,7 @@ Represents a long-running Universal Print operation. Base class for operation ty
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get operation](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
+| [Get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Retrieve a long-running operation within current user or app's tenant. |
 
 ## Properties
 |Property|Type|Description|
@@ -29,7 +29,7 @@ Represents a long-running Universal Print operation. Base class for operation ty
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.security.indicator](../resources/security-indicat
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get intelligenceProfileIndicator](../api/security-intelligenceprofileindicator-get.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md)|Read the properties and relationships of a [microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) object.|
+|[Get intelligence profile indicator](../api/security-intelligenceprofileindicator-get.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md)|Read the properties and relationships of a [microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) object.|
 
 ## Properties
 
@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.security.indicator](../resources/security-indicat
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

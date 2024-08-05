@@ -19,9 +19,9 @@ The [connection](externalconnectors-externalconnection.md) schema determines how
 
 | Method                                                    | Return Type                   | Description |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/externalconnectors-externalconnection-patch-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
-| [Get schema](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
-| [Update schema](../api/externalconnectors-schema-update.md) | None *or* [schema](externalconnectors-schema.md) | Update properties of a schema object. |
+| [Create](../api/externalconnectors-externalconnection-patch-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
+| [Get](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
+| [Update](../api/externalconnectors-schema-update.md) | None *or* [schema](externalconnectors-schema.md) | Update properties of a schema object. |
 
 ## Properties
 
@@ -36,14 +36,15 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
   ],
   "@odata.type": "microsoft.graph.externalConnectors.schema",
-  "keyProperty": "id"
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

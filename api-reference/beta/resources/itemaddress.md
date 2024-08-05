@@ -3,7 +3,7 @@ title: "itemAddress resource type"
 description: "itemAddress resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List addresses](../api/profile-list-addresses.md)|[itemAddress](../resources/itemaddress.md) collection|Get the itemAddress resources from the addresses navigation property.|
-|[Create itemAddress](../api/profile-post-addresses.md)|[itemAddress](../resources/itemaddress.md)|Create a new itemAddress object.|
-|[Get itemAddress](../api/itemaddress-get.md)|[itemAddress](../resources/itemaddress.md)|Read the properties and relationships of an [itemAddress](../resources/itemaddress.md) object.|
-|[Update itemAddress](../api/itemaddress-update.md)|[itemAddress](../resources/itemaddress.md)|Update the properties of an [itemAddress](../resources/itemaddress.md) object.|
-|[Delete itemAddress](../api/itemaddress-delete.md)|None|Deletes an [itemAddress](../resources/itemaddress.md) object.|
+|[List](../api/profile-list-addresses.md)|[itemAddress](../resources/itemaddress.md) collection|Get the itemAddress resources from the addresses navigation property.|
+|[Create](../api/profile-post-addresses.md)|[itemAddress](../resources/itemaddress.md)|Create a new itemAddress object.|
+|[Get](../api/itemaddress-get.md)|[itemAddress](../resources/itemaddress.md)|Read the properties and relationships of an [itemAddress](../resources/itemaddress.md) object.|
+|[Update](../api/itemaddress-update.md)|[itemAddress](../resources/itemaddress.md)|Update the properties of an [itemAddress](../resources/itemaddress.md) object.|
+|[Delete](../api/itemaddress-delete.md)|None|Deletes an [itemAddress](../resources/itemaddress.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,7 +43,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

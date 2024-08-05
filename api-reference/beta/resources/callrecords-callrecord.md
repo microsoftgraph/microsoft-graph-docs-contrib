@@ -19,13 +19,13 @@ Represents a single peer-to-peer call or a group call between multiple participa
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List callRecords](../api/callrecords-cloudcommunications-list-callrecords.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
-| [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
-| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
-| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
-| [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection| Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of **pstnBlockedUsersLogRow** entries. |
-| [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) collection| Get aggregated report of the usage and money spent for the audio conferencing dial-out service as a collection of **pstnOnlineMeetingDialoutReport** entries. |
-| [getSmsLog](../api/callrecords-callrecord-getsmslog.md) | [microsoft.graph.callRecords.smsLogRow](callrecords-smslogrow.md) collection| Get the log of a sent/received SMS as a collection of **smsLogRow** entries. |
+| [List](../api/callrecords-cloudcommunications-list-callrecords.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
+| [Get](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
+| [Get PSTN calls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
+| [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
+| [Get PSTN blocked users log](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection| Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of **pstnBlockedUsersLogRow** entries. |
+| [Get PSTN online meeting dial-out report](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md) | [microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) collection| Get aggregated report of the usage and money spent for the audio conferencing dial-out service as a collection of **pstnOnlineMeetingDialoutReport** entries. |
+| [Get SMS log](../api/callrecords-callrecord-getsmslog.md) | [microsoft.graph.callRecords.smsLogRow](callrecords-smslogrow.md) collection| Get the log of a sent/received SMS as a collection of **smsLogRow** entries. |
 
 ## Properties
 

@@ -5,11 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AppManagementPolicy;
-use Microsoft\Graph\Generated\Models\AppManagementConfiguration;
-use Microsoft\Graph\Generated\Models\PasswordCredentialConfiguration;
-use Microsoft\Graph\Generated\Models\KeyCredentialConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AppManagementPolicy;
+use Microsoft\Graph\Beta\Generated\Models\CustomAppManagementConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -18,7 +20,7 @@ $requestBody = new AppManagementPolicy();
 $requestBody->setDisplayName('Credential management policy');
 $requestBody->setDescription('Cred policy sample');
 $requestBody->setIsEnabled(true);
-$restrictions = new AppManagementConfiguration();
+$restrictions = new CustomAppManagementConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictionType(new AppCredentialRestrictionType('passwordAddition'));
 $passwordCredentialsPasswordCredentialConfiguration1->setMaxLifetime(null);

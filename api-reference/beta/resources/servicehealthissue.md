@@ -25,7 +25,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. |
+|[Get issue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. |
 |[Get post-incident review report](../api/servicehealthissue-incidentreport.md)|Stream|Get the post incident report (PIR) document of a specified service issue for tenant. |
 
 ## Properties
@@ -73,7 +73,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

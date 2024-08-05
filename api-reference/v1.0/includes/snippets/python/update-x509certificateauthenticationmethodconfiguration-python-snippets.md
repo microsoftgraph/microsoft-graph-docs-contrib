@@ -6,10 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.x509_certificate_authentication_method_configuration import X509CertificateAuthenticationMethodConfiguration
+from msgraph.generated.models.authentication_method_state import AuthenticationMethodState
 from msgraph.generated.models.x509_certificate_user_binding import X509CertificateUserBinding
 from msgraph.generated.models.x509_certificate_authentication_mode_configuration import X509CertificateAuthenticationModeConfiguration
+from msgraph.generated.models.x509_certificate_authentication_mode import X509CertificateAuthenticationMode
 from msgraph.generated.models.x509_certificate_rule import X509CertificateRule
+from msgraph.generated.models.x509_certificate_rule_type import X509CertificateRuleType
 from msgraph.generated.models.authentication_method_target import AuthenticationMethodTarget
+from msgraph.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

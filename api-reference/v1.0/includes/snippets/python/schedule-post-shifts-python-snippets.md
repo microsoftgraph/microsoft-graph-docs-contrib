@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.shift import Shift
 from msgraph.generated.models.shift_item import ShiftItem
+from msgraph.generated.models.schedule_entity_theme import ScheduleEntityTheme
 from msgraph.generated.models.shift_activity import ShiftActivity
 
 graph_client = GraphServiceClient(credentials, scopes)

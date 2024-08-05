@@ -6,11 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.service_principals.item.synchronization.jobs.jobs_request_builder import JobsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = JobsRequestBuilder.JobsRequestBuilderGetRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Authorization", "Bearer {Token}")
 
 

@@ -21,10 +21,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningContents](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties. This list represents the metadata of the specified provider's content in Viva Learning.|
-|[Get learningContent](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified learningContent resource, which represents the metadata of the specified provider's ingested content.|
-|[Update learningContent](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the specified [learningContent](../resources/learningcontent.md) resource. Used by a [learning provider](learningprovider.md) to ingest or update the metadata for their content in Viva Learning.|
-|[Delete learningContent](../api/learningprovider-delete-learningcontents.md)|None|Delete the specified learningContent resource which represents the metadata of the specified provider's ingested content.|
+|[List](../api/learningprovider-list-learningcontents.md)|[learningContent](../resources/learningcontent.md) collection|Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties. This list represents the metadata of the specified provider's content in Viva Learning.|
+|[Get](../api/learningcontent-get.md)|[learningContent](../resources/learningcontent.md)|Get the specified learningContent resource, which represents the metadata of the specified provider's ingested content.|
+|[Update](../api/learningcontent-update.md)|[learningContent](../resources/learningcontent.md)|Update the specified [learningContent](../resources/learningcontent.md) resource. Used by a [learning provider](learningprovider.md) to ingest or update the metadata for their content in Viva Learning.|
+|[Delete](../api/learningprovider-delete-learningcontents.md)|None|Delete the specified learningContent resource which represents the metadata of the specified provider's ingested content.|
 
 ## Properties
 
@@ -65,7 +65,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

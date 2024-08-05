@@ -27,7 +27,7 @@ The following JSON representation shows the resource type.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.feedbackTokenSet",
-  "baseType": null
+  "openType": true
 }-->
 
 ```json

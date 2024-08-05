@@ -56,13 +56,12 @@ From the app registration, save the following values:
 
 Microsoft Graph exposes [application permissions](./permissions-overview.md#application-permissions) for apps that call Microsoft Graph under their own identity. These permissions always require administrator consent.
 
-You pre-configure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Microsoft Entra ID records the administrator consent, the app can request tokens without having to request consent again.
+You preconfigure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Microsoft Entra ID records the administrator consent, the app can request tokens without having to request consent again.
 
-To configure application permissions for the app in the [Azure app registrations portal](https://go.microsoft.com/fwlink/?linkid=2083908), follow these steps:
+To configure application permissions for the app in the app registrations experience on the Microsoft Entra admin center, follow these steps:
 
 - Under the application's **API permissions** page, choose **Add a permission**.
-- Select **Microsoft Graph**.
-- Select **Application permissions**.
+- Select **Microsoft Graph** > select **Application permissions**.
 - In the **Select Permissions** dialog, choose the permissions to configure to the app.
 
 The following screenshot shows the **Select Permissions** dialog box for Microsoft Graph application permissions.
@@ -79,7 +78,7 @@ Administrators can grant the permissions your app needs at the [Microsoft Entra 
 
 > [!IMPORTANT]
 > 
-> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal will not be reflected until an authorized administrator such as a global administrator reconsents to the app.
+> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal aren't reflected until an authorized administrator such as a privileged role administrator reconsents to the app.
 
 ### Request
 
@@ -109,7 +108,7 @@ curl --location --request GET 'https://login.microsoftonline.com/{tenant}/adminc
 
 ### Administrator consent experience
 
-With requests to the `/adminconsent` endpoint, Microsoft Entra ID enforces that only an authorized administrator can sign in to complete the request. The administrator is asked to approve all the application permissions that you've requested for your app in the app registration portal.
+With requests to the `/adminconsent` endpoint, Microsoft Entra ID enforces that only an authorized administrator can sign in to complete the request. The administrator is asked to approve all the application permissions that you requested for your app in the app registration portal.
 
 The following screenshot is an example of the consent dialog that Microsoft Entra ID presents to the administrator:
 
@@ -135,7 +134,7 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 
 In the OAuth 2.0 client credentials grant flow, you use the application ID and client secret values that you saved when you registered your app to request an access token directly from the Microsoft identity platform `/token` endpoint.
 
-You specify the pre-configured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request.
+You specify the preconfigured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request.
 
 ### Token request
 
@@ -151,7 +150,7 @@ Content-Type: application/x-www-form-urlencoded
 
 client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 &scope=https%3A%2F%2Fgraph.microsoft.com%2F.default
-&client_secret=qWgdYAmab0YSkuL1qKv5bPX
+&client_secret=qWgdYA....L1qKv5bPX
 &grant_type=client_credentials
 ```
 
@@ -161,7 +160,7 @@ curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
 --data-urlencode 'scope=https://graph.microsoft.com/.default' \
---data-urlencode 'client_secret=qWgdYAmab0YSkuL1qKv5bPX' \
+--data-urlencode 'client_secret=qWgdYA....L1qKv5bPX' \
 --data-urlencode 'grant_type=client_credentials'
 ```
 
@@ -274,7 +273,7 @@ For more information about apps that call Microsoft Graph under their own identi
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details usually required only when manually crafting and issuing raw HTTP requests to execute the client credentials flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you walked through the low-level protocol details required only when manually crafting and issuing raw HTTP requests to execute the client credentials flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 

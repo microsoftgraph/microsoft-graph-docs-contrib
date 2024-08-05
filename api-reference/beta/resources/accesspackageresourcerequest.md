@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceRequest resource type"
-description: "An access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
+description: "An access package resource request is a request to add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -19,8 +19,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
+| [List](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
+| [Create](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
 
 ## Properties
 
@@ -29,9 +29,9 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |catalogId|String|The unique ID of the access package catalog.|
 |expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
-|isValidationOnly|Boolean|If set, does not add the resource.|
+|isValidationOnly|Boolean|If set, doesn't add the resource.|
 |justification|String|The requestor's justification for adding or removing the resource.|
-|requestState|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added or removed. Read-Only.|
+|requestState|String| The outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added or removed. Read-Only.|
 |requestStatus|String|Read-only.|
 |requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, `AdminUpdate` to update a resource, or `AdminRemove` to remove a resource. |
 
@@ -44,7 +44,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resources type.
 
 <!-- {
   "blockType": "resource",

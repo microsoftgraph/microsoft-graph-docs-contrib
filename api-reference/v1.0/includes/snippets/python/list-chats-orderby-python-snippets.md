@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.chats.chats_request_builder import ChatsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = ChatsRequestBuilder.ChatsRequestBuilderGetQueryParameters(
 		orderby = ["lastMessagePreview/createdDateTime desc"],
 )
 
-request_configuration = ChatsRequestBuilder.ChatsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

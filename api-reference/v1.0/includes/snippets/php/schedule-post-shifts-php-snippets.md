@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Shift;
 use Microsoft\Graph\Generated\Models\ShiftItem;
+use Microsoft\Graph\Generated\Models\ScheduleEntityTheme;
 use Microsoft\Graph\Generated\Models\ShiftActivity;
 
 

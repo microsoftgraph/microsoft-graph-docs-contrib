@@ -3,8 +3,9 @@ title: "trainingCampaign resource type"
 description: "Represents a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
+toc.title: Training campaign (preview)
 ---
 
 # trainingCampaign resource type
@@ -17,17 +18,16 @@ Represents a training campaign. In Attack simulation training in Microsoft 365 E
 
 A training campaign contains one or more built-in training modules that you select. Currently, there are over 70 training modules to select from. For more information about training modules, see training modules for Training campaigns in Attack simulation training.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List trainingCampaigns](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
-|[Create trainingCampaign](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Get trainingCampaign](../api/trainingcampaign-get.md)|[trainingCampaign](../resources/trainingcampaign.md)|Read the properties and relationships of a [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Update trainingCampaign](../api/trainingcampaign-update.md)|[trainingCampaign](../resources/trainingcampaign.md)|Update the properties of a [trainingCampaign](../resources/trainingcampaign.md) object.|
-|[Delete trainingCampaign](../api/attacksimulationroot-delete-trainingcampaigns.md)|None|Delete a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[List](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
+|[Create](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Get](../api/trainingcampaign-get.md)|[trainingCampaign](../resources/trainingcampaign.md)|Read the properties and relationships of a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Update](../api/trainingcampaign-update.md)|[trainingCampaign](../resources/trainingcampaign.md)|Update the properties of a [trainingCampaign](../resources/trainingcampaign.md) object.|
+|[Delete](../api/attacksimulationroot-delete-trainingcampaigns.md)|None|Delete a [trainingCampaign](../resources/trainingcampaign.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |report|[trainingCampaignReport](../resources/trainingcampaignreport.md)|Report of the training campaign.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a training campaign.|
 
-### campaignStatus values 
+### campaignStatus values
 
 |Member|Description |
 |:---|:---|

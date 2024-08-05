@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Operation
 ---
 
 # workbookOperation resource type
@@ -16,18 +17,17 @@ Represents the status of a long-running workbook operation.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get the operation with `{operation-id}`. |
-
+| [Get](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get a workbookOperation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
-|id|String| The operation ID. Read-only.|
+|id|String| The identifier for the operation. Read-only.|
 |resourceLocation|String| The resource URI for the result.|
 |status|String| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|StatusCode| integer| Status code of the operation. | 
+|statusCode| integer| Status code of the operation. | 
 
 ## Relationships
 

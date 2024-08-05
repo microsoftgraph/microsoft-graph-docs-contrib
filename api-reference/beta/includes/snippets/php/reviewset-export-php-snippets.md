@@ -5,8 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ExportPostRequestBody;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Compliance\Ediscovery\Cases\Item\ReviewSets\Item\MicrosoftGraphEdiscoveryExport\ExportPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\Ediscovery\ExportOptions;
+use Microsoft\Graph\Beta\Generated\Models\Ediscovery\ExportFileStructure;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

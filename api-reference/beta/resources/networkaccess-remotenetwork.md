@@ -20,11 +20,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteNetworks](../api/networkaccess-connectivity-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) objects and their properties.|
-|[Create remoteNetwork](../api/networkaccess-connectivity-post-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Create a new [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
-|[Get remoteNetwork](../api/networkaccess-remotenetwork-get.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
-|[Update remoteNetwork](../api/networkaccess-remotenetwork-update.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
-|[Delete remoteNetwork](../api/networkaccess-connectivity-delete-remotenetworks.md)|None|Delete a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
+|[List](../api/networkaccess-connectivity-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) objects and their properties.|
+|[Create](../api/networkaccess-connectivity-post-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Create a new [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
+|[Get](../api/networkaccess-remotenetwork-get.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
+|[Update](../api/networkaccess-remotenetwork-update.md)|[microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
+|[Delete](../api/networkaccess-connectivity-delete-remotenetworks.md)|None|Delete a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object.|
 
 ## Properties
 |Property|Type|Description|

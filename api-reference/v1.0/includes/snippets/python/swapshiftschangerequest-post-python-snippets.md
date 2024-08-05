@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.schedule.swap_shifts_change_requests.swap_shifts_change_requests_request_builder import SwapShiftsChangeRequestsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.swap_shifts_change_request import SwapShiftsChangeRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
@@ -17,7 +18,7 @@ request_body = SwapShiftsChangeRequest(
 	recipient_shift_id = "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
 )
 
-request_configuration = SwapShiftsChangeRequestsRequestBuilder.SwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Authorization", "Bearer {token}")
 
 

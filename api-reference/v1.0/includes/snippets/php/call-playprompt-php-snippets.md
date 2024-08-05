@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\PlayPromptPostRequestBody;
+use Microsoft\Graph\Generated\Communications\Calls\Item\PlayPrompt\PlayPromptPostRequestBody;
 use Microsoft\Graph\Generated\Models\Prompt;
 use Microsoft\Graph\Generated\Models\MediaPrompt;
 use Microsoft\Graph\Generated\Models\MediaInfo;

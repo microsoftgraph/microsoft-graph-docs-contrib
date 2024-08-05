@@ -1,10 +1,11 @@
 ---
-title: "branch resource type (deprecated)"
+title: "branchSite resource type (deprecated)"
 description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+toc.title: Branch site (deprecated)
 ---
 
 # branchSite resource type (deprecated)
@@ -23,11 +24,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List branchSites](../api/networkaccess-connectivity-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get a list of the [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) objects and their properties.|
-|[Create branchSite](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
-|[Get branchSite](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
-|[Update branchSite](../api/networkaccess-branchsite-update.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
-|[Delete branchSite](../api/networkaccess-branchsite-delete.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[List](../api/networkaccess-connectivity-list-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Get a list of the [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) objects and their properties.|
+|[Create](../api/networkaccess-connectivity-post-branches.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Create a new [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Get](../api/networkaccess-branchsite-get.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Update](../api/networkaccess-branchsite-update.md)|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md)|Update the properties of a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
+|[Delete](../api/networkaccess-branchsite-delete.md)|None|Delete a [microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,18 +1,20 @@
 ---
-title: "Get presenter"
+title: "Get virtualEventPresenter"
 description: "Read the properties and relationships of a virtualEventPresenter object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get presenter
+# Get virtualEventPresenter
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
+
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,15 +35,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
+GET /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,15 +59,17 @@ If successful, this method returns a `200 OK` response code and a [virtualEventP
 
 ### Request
 
-The following example shows a request.
+The following example shows how to get a presenter on a **virtualEventTownhall**.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventpresenter"
+  "name": "get_virtualeventpresenter",
+  "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33", "831affc2-4c8a-9929-50e7-02964563b6e4"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
 ```
 
 # [C#](#tab/csharp)

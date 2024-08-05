@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.print.printers.create.create_post_request_body import CreatePostRequestBody
-from msgraph.generated.models.print_certificate_signing_request import PrintCertificateSigningRequest
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.print.printers.create.create_post_request_body import CreatePostRequestBody
+from msgraph_beta.generated.models.print_certificate_signing_request import PrintCertificateSigningRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
 

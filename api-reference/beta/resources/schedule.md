@@ -19,8 +19,8 @@ Represents a collection of [schedulingGroup](schedulinggroup.md) objects, [shift
 
 | Method                                                    | Return Type             | Description                                        |
 | :-------------------------------------------------------- | :---------------------- | :------------------------------------------------- |
-| [Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.                      |
-| [Get schedule](../api/schedule-get.md)                    | [schedule](schedule.md) | Get a schedule.                                    |
+| [Create or replace](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.                      |
+| [Get](../api/schedule-get.md)                    | [schedule](schedule.md) | Get a schedule.                                    |
 | [Share](../api/schedule-share.md)                         | None                    | Share a schedule time range with schedule members. |
 
 ## Properties

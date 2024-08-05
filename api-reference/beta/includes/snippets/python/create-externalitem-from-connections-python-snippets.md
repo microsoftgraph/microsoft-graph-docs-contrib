@@ -4,11 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.external_item import ExternalItem
-from msgraph.generated.models.acl import Acl
-from msgraph.generated.models.properties import Properties
-from msgraph.generated.models.external_item_content import ExternalItemContent
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.external_connectors.external_item import ExternalItem
+from msgraph_beta.generated.models.external_connectors.acl import Acl
+from msgraph_beta.generated.models.acl_type import AclType
+from msgraph_beta.generated.models.access_type import AccessType
+from msgraph_beta.generated.models.identity_source_type import IdentitySourceType
+from msgraph_beta.generated.models.external_connectors.properties import Properties
+from msgraph_beta.generated.models.external_connectors.external_item_content import ExternalItemContent
+from msgraph_beta.generated.models.external_item_content_type import ExternalItemContentType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

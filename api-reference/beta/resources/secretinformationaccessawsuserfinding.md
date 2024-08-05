@@ -22,8 +22,8 @@ Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List secretInformationAccessAwsUserFinding objects](../api/secretinformationaccessawsuserfinding-list.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) collection|Get a list of the [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) objects and their properties.|
-|[Get secretInformationAccessAwsUserFinding](../api/secretinformationaccessawsuserfinding-get.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md)|Read the properties and relationships of a [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) object.|
+|[List](../api/secretinformationaccessawsuserfinding-list.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) collection|Get a list of the [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) objects and their properties.|
+|[Get](../api/secretinformationaccessawsuserfinding-get.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md)|Read the properties and relationships of a [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

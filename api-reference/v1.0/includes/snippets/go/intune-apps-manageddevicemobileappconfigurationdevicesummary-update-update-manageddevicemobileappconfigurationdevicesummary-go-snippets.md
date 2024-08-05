@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewManagedDeviceMobileAppConfigurationDeviceSummary()
 pendingCount := int32(12)
@@ -32,6 +32,7 @@ requestBody.SetLastUpdateDateTime(&lastUpdateDateTime)
 configurationVersion := int32(4)
 requestBody.SetConfigurationVersion(&configurationVersion) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 deviceStatusSummary, err := graphClient.DeviceAppManagement().MobileAppConfigurations().ByManagedDeviceMobileAppConfigurationId("managedDeviceMobileAppConfiguration-id").DeviceStatusSummary().Patch(context.Background(), requestBody, nil)
 
 

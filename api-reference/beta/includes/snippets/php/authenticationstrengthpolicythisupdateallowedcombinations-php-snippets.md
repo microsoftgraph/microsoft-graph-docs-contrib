@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UpdateAllowedCombinationsPostRequestBody;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodModes;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Policies\AuthenticationStrengthPolicies\Item\UpdateAllowedCombinations\UpdateAllowedCombinationsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodModes;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.find_meeting_times.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
-from msgraph.generated.users.item.find_meeting_times.find_meeting_times_post_request_body import FindMeetingTimesPostRequestBody
-from msgraph.generated.models.attendee_base import AttendeeBase
-from msgraph.generated.models.email_address import EmailAddress
-from msgraph.generated.models.location_constraint import LocationConstraint
-from msgraph.generated.models.location_constraint_item import LocationConstraintItem
-from msgraph.generated.models.time_constraint import TimeConstraint
-from msgraph.generated.models.time_slot import TimeSlot
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.find_meeting_times.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.users.item.find_meeting_times.find_meeting_times_post_request_body import FindMeetingTimesPostRequestBody
+from msgraph_beta.generated.models.attendee_base import AttendeeBase
+from msgraph_beta.generated.models.attendee_type import AttendeeType
+from msgraph_beta.generated.models.email_address import EmailAddress
+from msgraph_beta.generated.models.location_constraint import LocationConstraint
+from msgraph_beta.generated.models.location_constraint_item import LocationConstraintItem
+from msgraph_beta.generated.models.time_constraint import TimeConstraint
+from msgraph_beta.generated.models.activity_domain import ActivityDomain
+from msgraph_beta.generated.models.time_slot import TimeSlot
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -58,7 +61,7 @@ request_body = FindMeetingTimesPostRequestBody(
 	minimum_attendee_percentage = 100,
 )
 
-request_configuration = FindMeetingTimesRequestBuilder.FindMeetingTimesRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
 

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.events.item.instances.instances_request_builder import InstancesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.events.item.instances.instances_request_builder import InstancesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +16,7 @@ query_params = InstancesRequestBuilder.InstancesRequestBuilderGetQueryParameters
 		select = ["subject","bodyPreview","seriesMasterId","type","recurrence","start","end"],
 )
 
-request_configuration = InstancesRequestBuilder.InstancesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

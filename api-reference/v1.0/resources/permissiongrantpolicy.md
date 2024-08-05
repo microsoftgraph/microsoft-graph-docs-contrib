@@ -21,18 +21,18 @@ For more information, see [Manage app consent policies](/entra/identity/enterpri
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List permission grant policies](../api/permissiongrantpolicy-list.md) | [permissionGrantPolicy](permissiongrantpolicy.md) collection | Retrieve a list of permissionGrantPolicy objects. |
-|[Create permission grant policy](../api/permissiongrantpolicy-post-permissiongrantpolicies.md)| [permissionGrantPolicy](permissiongrantpolicy.md) | Creates a new permissionGrantPolicy object. |
-|[Get permission grant policy](../api/permissiongrantpolicy-get.md) | [permissionGrantPolicy](permissiongrantpolicy.md) |Read properties and relationships of permissionGrantPolicy object.|
-|[Update permission grant policy](../api/permissiongrantpolicy-update.md) | [permissionGrantPolicy](permissiongrantpolicy.md)  |Update permissionGrantPolicy object. |
+|[List](../api/permissiongrantpolicy-list.md) | [permissionGrantPolicy](permissiongrantpolicy.md) collection | Retrieve a list of permissionGrantPolicy objects. |
+|[Create](../api/permissiongrantpolicy-post-permissiongrantpolicies.md)| [permissionGrantPolicy](permissiongrantpolicy.md) | Creates a new permissionGrantPolicy object. |
+|[Get](../api/permissiongrantpolicy-get.md) | [permissionGrantPolicy](permissiongrantpolicy.md) |Read properties and relationships of permissionGrantPolicy object.|
+|[Update](../api/permissiongrantpolicy-update.md) | [permissionGrantPolicy](permissiongrantpolicy.md)  |Update permissionGrantPolicy object. |
 |**Include condition sets**| | |
-|[List include condition sets](../api/permissiongrantpolicy-list-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *included* in this permission grant policy.|
-|[Add include condition set](../api/permissiongrantpolicy-post-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *included* from this permission grant policy. |
-|[Remove include condition set](../api/permissiongrantpolicy-delete-includes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
+|[List includes](../api/permissiongrantpolicy-list-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *included* in this permission grant policy.|
+|[Create in includes](../api/permissiongrantpolicy-post-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *included* from this permission grant policy. |
+|[Delete from includes](../api/permissiongrantpolicy-delete-includes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
 |**Exclude condition sets**| | |
-|[List exclude condition sets](../api/permissiongrantpolicy-list-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *excluded* in this permission grant policy.|
-|[Add exclude condition set](../api/permissiongrantpolicy-post-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *excluded* from this permission grant policy. |
-|[Remove exclude condition set](../api/permissiongrantpolicy-delete-excludes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
+|[List excludes](../api/permissiongrantpolicy-list-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *excluded* in this permission grant policy.|
+|[Create in excludes](../api/permissiongrantpolicy-post-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *excluded* from this permission grant policy. |
+|[Delete from excludes](../api/permissiongrantpolicy-delete-excludes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
 
 ## Properties
 

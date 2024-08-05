@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: Azure actions
 ---
 
 # azureAuthorizationSystemTypeAction resource type
@@ -21,8 +22,8 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureAuthorizationSystemTypeActions](../api/azureauthorizationsystem-list-actions.md)|[azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) collection|Get a list of the [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) objects and their properties.|
-|[Get azureAuthorizationSystemTypeAction](../api/azureauthorizationsystemtypeaction-get.md)|[azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md)|Read the properties and relationships of an [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) object.|
+|[List](../api/azureauthorizationsystem-list-actions.md)|[azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) collection|Get a list of the [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) objects and their properties.|
+|[Get](../api/azureauthorizationsystemtypeaction-get.md)|[azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md)|Read the properties and relationships of an [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|

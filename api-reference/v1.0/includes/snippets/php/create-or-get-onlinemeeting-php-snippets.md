@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CreateOrGetPostRequestBody;
+use Microsoft\Graph\Generated\Users\Item\OnlineMeetings\CreateOrGet\CreateOrGetPostRequestBody;
 use Microsoft\Graph\Generated\Models\MeetingParticipants;
 use Microsoft\Graph\Generated\Models\MeetingParticipantInfo;
 use Microsoft\Graph\Generated\Models\IdentitySet;

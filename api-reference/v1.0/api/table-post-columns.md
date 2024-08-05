@@ -37,11 +37,11 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.
+In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 ##### Request
@@ -94,7 +94,7 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.
+In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {

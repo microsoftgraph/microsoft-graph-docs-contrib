@@ -21,11 +21,11 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List plannerPlanConfigurationLocalizations](../api/plannerplanconfiguration-list-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Get a list of the [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) objects and their properties.|
-|[Create plannerPlanConfigurationLocalization](../api/plannerplanconfiguration-post-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Create a new [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Get plannerPlanConfigurationLocalization](../api/plannerplanconfigurationlocalization-get.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Read the properties and relationships of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Update plannerPlanConfigurationLocalization](../api/plannerplanconfigurationlocalization-update.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Update the properties of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
-|[Delete plannerPlanConfigurationLocalization](../api/plannerplanconfiguration-delete-localizations.md)|None|Delete a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
+|[List](../api/plannerplanconfiguration-list-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Get a list of the [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) objects and their properties.|
+|[Create](../api/plannerplanconfiguration-post-localizations.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Create a new [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
+|[Get](../api/plannerplanconfigurationlocalization-get.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Read the properties and relationships of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
+|[Update](../api/plannerplanconfigurationlocalization-update.md)|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md)|Update the properties of a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
+|[Delete](../api/plannerplanconfiguration-delete-localizations.md)|None|Delete a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

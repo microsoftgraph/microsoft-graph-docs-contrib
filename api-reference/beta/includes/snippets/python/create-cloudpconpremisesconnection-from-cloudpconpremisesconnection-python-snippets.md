@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.cloud_pc_on_premises_connection import CloudPcOnPremisesConnection
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.cloud_pc_on_premises_connection import CloudPcOnPremisesConnection
+from msgraph_beta.generated.models.cloud_pc_on_premises_connection_type import CloudPcOnPremisesConnectionType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

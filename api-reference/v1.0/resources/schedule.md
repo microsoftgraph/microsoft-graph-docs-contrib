@@ -17,8 +17,8 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.|
-|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Get a schedule.|
+|[Create or replace](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.|
+|[Get](../api/schedule-get.md) | [schedule](schedule.md) | Get a schedule.|
 |[Share](../api/schedule-share.md) | None | Share a schedule time range with schedule members.|
 
 ## Properties
@@ -52,7 +52,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

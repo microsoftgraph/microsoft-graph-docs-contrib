@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta communications calls create --body '{\
   "@odata.type": "#microsoft.graph.call",\
   "callbackUri": "https://bot.contoso.com/callback",\

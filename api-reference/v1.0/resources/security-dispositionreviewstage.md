@@ -3,7 +3,7 @@ title: "dispositionReviewStage resource type"
 description: "Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item.."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -17,8 +17,8 @@ For details, see [Disposition of content](/microsoft-365/compliance/disposition)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create retentionLabel](../api/security-labelsroot-post-retentionlabel.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object. |
-|[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the [retentionLabel](../resources/security-retentionlabel.md) object. |
+|[Create](../api/security-labelsroot-post-retentionlabel.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object. |
+|[Update](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the [retentionLabel](../resources/security-retentionlabel.md) object. |
 
 
 ## Properties

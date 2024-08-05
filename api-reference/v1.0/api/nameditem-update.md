@@ -3,7 +3,7 @@ title: "Update nameditem"
 description: "Update the properties of nameditem object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbook-and-charts 
+ms.subservice: "excel" 
 doc_type: apiPageType
 ---
 
@@ -41,12 +41,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Specifies whether the object is visible or not.|
+|visible|Boolean|Specifies whether the object is visible or not.|
 |comment|    string    |Represents the comment associated with this name.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookNamedItem](../resources/workbooknameditem.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

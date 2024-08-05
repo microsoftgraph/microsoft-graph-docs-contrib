@@ -3,7 +3,7 @@ title: "ediscoveryReviewSetQuery: export"
 description: "Initiate an export from a reviewSet query."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

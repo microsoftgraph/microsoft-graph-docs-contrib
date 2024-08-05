@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\MultiTenantOrganizationPartnerConfigurationTemplate;
 use Microsoft\Graph\Generated\Models\CrossTenantAccessPolicyInboundTrust;
 use Microsoft\Graph\Generated\Models\InboundOutboundPolicyConfiguration;
+use Microsoft\Graph\Generated\Models\TemplateApplicationLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

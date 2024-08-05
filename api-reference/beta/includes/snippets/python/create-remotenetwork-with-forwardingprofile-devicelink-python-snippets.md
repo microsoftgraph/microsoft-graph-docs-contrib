@@ -4,13 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.remote_network import RemoteNetwork
-from msgraph.generated.models.forwarding_profile import ForwardingProfile
-from msgraph.generated.models.device_link import DeviceLink
-from msgraph.generated.models.bgp_configuration import BgpConfiguration
-from msgraph.generated.models.redundancy_configuration import RedundancyConfiguration
-from msgraph.generated.models.tunnel_configuration_i_k_ev2_default import TunnelConfigurationIKEv2Default
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.remote_network import RemoteNetwork
+from msgraph_beta.generated.models.region import Region
+from msgraph_beta.generated.models.networkaccess.forwarding_profile import ForwardingProfile
+from msgraph_beta.generated.models.networkaccess.device_link import DeviceLink
+from msgraph_beta.generated.models.bandwidth_capacity_in_mbps import BandwidthCapacityInMbps
+from msgraph_beta.generated.models.device_vendor import DeviceVendor
+from msgraph_beta.generated.models.networkaccess.bgp_configuration import BgpConfiguration
+from msgraph_beta.generated.models.networkaccess.redundancy_configuration import RedundancyConfiguration
+from msgraph_beta.generated.models.redundancy_tier import RedundancyTier
+from msgraph_beta.generated.models.networkaccess.tunnel_configuration_i_k_ev2_default import TunnelConfigurationIKEv2Default
 
 graph_client = GraphServiceClient(credentials, scopes)
 

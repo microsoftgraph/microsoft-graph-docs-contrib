@@ -21,9 +21,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveUserFinding objects](../api/inactiveuserfinding-list.md)|[inactiveUserFinding](../resources/inactiveuserfinding.md) collection|Get a list of the [inactiveUserFinding](../resources/inactiveuserfinding.md) objects and their properties.|
-|[Get inactiveUserFinding](../api/inactiveuserfinding-get.md)|[inactiveUserFinding](../resources/inactiveuserfinding.md)|Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object.|
-|[aggregatedSummary](../api/inactiveuserfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/inactiveuserfinding-list.md)|[inactiveUserFinding](../resources/inactiveuserfinding.md) collection|Get a list of the [inactiveUserFinding](../resources/inactiveuserfinding.md) objects and their properties.|
+|[Get](../api/inactiveuserfinding-get.md)|[inactiveUserFinding](../resources/inactiveuserfinding.md)|Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object.|
+|[Aggregated summary](../api/inactiveuserfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 ## Properties
 |Property|Type|Description|

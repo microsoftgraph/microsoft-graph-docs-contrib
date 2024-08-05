@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.delegated_admin_access_assignment import DelegatedAdminAccessAssignment
 from msgraph.generated.models.delegated_admin_access_container import DelegatedAdminAccessContainer
+from msgraph.generated.models.delegated_admin_access_container_type import DelegatedAdminAccessContainerType
 from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
 from msgraph.generated.models.unified_role import UnifiedRole
 

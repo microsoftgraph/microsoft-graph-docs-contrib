@@ -1,5 +1,5 @@
 ---
-title: "applicationSignInDetailedSummary resource type"
+title: "applicationSignInSummary resource type"
 description: "Represents an application sign-in summary."
 ms.localizationpriority: medium
 author: "egreenberg14"
@@ -19,7 +19,7 @@ Represents an application sign-in summary.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
+| [Get](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -38,7 +38,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "appDisplayName": "String",
-  "appId": "String (identifier)",
   "failedSignInCount": 1024,
   "successPercentage": 1024,
   "successfulSignInCount": 1024

@@ -25,8 +25,12 @@ Retrieve the list of [callTranscript](../resources/calltranscript.md) objects as
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_list_transcripts" } -->
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
+<!-- { "blockType": "ignored", "name": "onlinemeeting_list_transcripts" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingTranscript.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
 > **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -131,8 +135,10 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
-            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+            "endDateTime": "2021-09-17T06:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh')/content",
             "meetingOrganizer": {
                 "application": null,
@@ -149,8 +155,10 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
-            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-16T18:58:58.6760692Z",
+            "endDateTime": "2021-09-16T19:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw')/content",
             "meetingOrganizer": {
                 "application": null,
@@ -167,8 +175,10 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
             "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
-            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
+            "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
             "createdDateTime": "2021-09-16T18:56:00.9038309Z",
+            "endDateTime": "2021-09-16T19:27:25.2346000Z",
+            "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
             "meetingOrganizer": {
                 "application": null,

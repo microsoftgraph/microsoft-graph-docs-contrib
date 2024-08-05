@@ -1,17 +1,17 @@
 ---
-title: "Update chartaxis"
-description: "Update the properties of chartaxis object."
+title: "Update chartAxis"
+description: "Update the properties of chartAxis object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartaxis
+# Update chartAxis
 
 Namespace: microsoft.graph
 
-Update the properties of chartaxis object.
+Update the properties of chartAxis object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxis](../resources/chartaxis.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartAxis](../resources/workbookchartaxis.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

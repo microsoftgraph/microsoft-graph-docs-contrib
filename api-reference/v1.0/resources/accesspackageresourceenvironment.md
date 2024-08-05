@@ -17,7 +17,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageResourceEnvironments](../api/entitlementmanagement-list-resourceenvironments.md)|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection|Retrieve a list of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) objects.|
+|[List](../api/entitlementmanagement-list-resourceenvironments.md)|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection|Retrieve a list of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -38,7 +38,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |resources|[accessPackageResource](../resources/accesspackageresource.md) collection|Read-only. Required.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

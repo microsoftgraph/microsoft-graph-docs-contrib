@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.calls.item.subscribe_to_tone.subscribe_to_tone_post_request_body import SubscribeToTonePostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.calls.item.subscribe_to_tone.subscribe_to_tone_post_request_body import SubscribeToTonePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -12,6 +12,7 @@ from msgraph.generated.models.ios_home_screen_folder_page import IosHomeScreenFo
 from msgraph.generated.models.ios_home_screen_app import IosHomeScreenApp
 from msgraph.generated.models.ios_home_screen_page import IosHomeScreenPage
 from msgraph.generated.models.ios_notification_settings import IosNotificationSettings
+from msgraph.generated.models.ios_notification_alert_type import IosNotificationAlertType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

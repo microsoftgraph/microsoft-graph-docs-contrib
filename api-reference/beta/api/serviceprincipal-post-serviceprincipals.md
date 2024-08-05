@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 For multitenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 + Application Administrator
-+ Cloud Application Administrator roles
++ Cloud Application Administrator
 
 For single-tenant apps where the calling user is a nonadmin user but is the owner of the backing application, the user must have the *Application Developer* role.
 

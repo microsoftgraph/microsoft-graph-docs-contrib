@@ -3,7 +3,7 @@ title: "ediscoveryIndexOperation resource type"
 description: "Represents the process of indexing data sources, including custodians and noncustodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

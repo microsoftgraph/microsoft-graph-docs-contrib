@@ -6,10 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ApplyPostRequestBody;
+use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Columns\Item\Filter\Apply\ApplyPostRequestBody;
 use Microsoft\Graph\Generated\Models\WorkbookFilterCriteria;
 use Microsoft\Graph\Generated\Models\WorkbookIcon;
-use Microsoft\Graph\Generated\Models\Json;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -26,7 +25,7 @@ $criteriaIcon->setSet('set-value');
 $criteriaIcon->setIndex(99);
 $criteria->setIcon($criteriaIcon);
 $criteria->setDynamicCriteria('dynamicCriteria-value');
-$criteriaValues = new Json();
+$criteriaValues = new Values();
 $criteria->setValues($criteriaValues);
 $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);

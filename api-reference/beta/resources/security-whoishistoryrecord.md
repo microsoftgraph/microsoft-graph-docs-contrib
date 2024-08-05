@@ -23,8 +23,8 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List whoisHistoryRecords](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
-|[Get whoisHistoryRecord](../api/security-whoishistoryrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoishistoryrecord.md)|Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
+|[List](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
+|[Get](../api/security-whoishistoryrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoishistoryrecord.md)|Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
 
 ## Properties
 
@@ -57,7 +57,7 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

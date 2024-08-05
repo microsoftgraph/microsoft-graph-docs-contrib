@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphappcatalogs "github.com/microsoftgraph/msgraph-sdk-go/appcatalogs"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestFilter := "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'"
@@ -26,6 +26,7 @@ configuration := &graphappcatalogs.AppCatalogsTeamsAppsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 teamsApps, err := graphClient.AppCatalogs().TeamsApps().Get(context.Background(), configuration)
 
 

@@ -7,11 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.win32_lob_app import Win32LobApp
 from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
+from msgraph.generated.models.windows_architecture import WindowsArchitecture
 from msgraph.generated.models.win32_lob_app_rule import Win32LobAppRule
 from msgraph.generated.models.win32_lob_app_registry_rule import Win32LobAppRegistryRule
+from msgraph.generated.models.win32_lob_app_rule_type import Win32LobAppRuleType
+from msgraph.generated.models.win32_lob_app_registry_rule_operation_type import Win32LobAppRegistryRuleOperationType
+from msgraph.generated.models.win32_lob_app_rule_operator import Win32LobAppRuleOperator
 from msgraph.generated.models.win32_lob_app_install_experience import Win32LobAppInstallExperience
+from msgraph.generated.models.run_as_account_type import RunAsAccountType
+from msgraph.generated.models.win32_lob_app_restart_behavior import Win32LobAppRestartBehavior
 from msgraph.generated.models.win32_lob_app_return_code import Win32LobAppReturnCode
+from msgraph.generated.models.win32_lob_app_return_code_type import Win32LobAppReturnCodeType
 from msgraph.generated.models.win32_lob_app_msi_information import Win32LobAppMsiInformation
+from msgraph.generated.models.win32_lob_app_msi_package_type import Win32LobAppMsiPackageType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

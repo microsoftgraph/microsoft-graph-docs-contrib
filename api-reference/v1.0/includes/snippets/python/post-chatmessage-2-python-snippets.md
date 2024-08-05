@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.chat_message import ChatMessage
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.chat_message_mention import ChatMessageMention
 from msgraph.generated.models.chat_message_mentioned_identity_set import ChatMessageMentionedIdentitySet
 from msgraph.generated.models.identity import Identity

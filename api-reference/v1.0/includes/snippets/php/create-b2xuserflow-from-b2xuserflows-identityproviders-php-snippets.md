@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\B2xIdentityUserFlow;
+use Microsoft\Graph\Generated\Models\UserFlowType;
 use Microsoft\Graph\Generated\Models\IdentityProvider;
 
 

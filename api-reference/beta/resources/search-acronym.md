@@ -21,11 +21,11 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List acronyms](../api/search-searchentity-list-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md) collection|Get a list of the [acronym](../resources/search-acronym.md) objects and their properties.|
-|[Create acronym](../api/search-searchentity-post-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Create a new [acronym](../resources/search-acronym.md) object.|
-|[Get acronym](../api/search-acronym-get.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Read the properties and relationships of an [acronym](../resources/search-acronym.md) object.|
-|[Update acronym](../api/search-acronym-update.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Update the properties of an [acronym](../resources/search-acronym.md) object.|
-|[Delete acronym](../api/search-acronym-delete.md)|None|Delete an [acronym](../resources/search-acronym.md) object.|
+|[List](../api/search-searchentity-list-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md) collection|Get a list of the [acronym](../resources/search-acronym.md) objects and their properties.|
+|[Create](../api/search-searchentity-post-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Create a new [acronym](../resources/search-acronym.md) object.|
+|[Get](../api/search-acronym-get.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Read the properties and relationships of an [acronym](../resources/search-acronym.md) object.|
+|[Update](../api/search-acronym-update.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Update the properties of an [acronym](../resources/search-acronym.md) object.|
+|[Delete](../api/search-acronym-delete.md)|None|Delete an [acronym](../resources/search-acronym.md) object.|
 
 ## Properties
 

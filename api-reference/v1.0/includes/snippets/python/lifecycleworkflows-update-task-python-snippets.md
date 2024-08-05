@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.task import Task
+from msgraph.generated.models.identity_governance.task import Task
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.sharepoint_settings import SharepointSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.sharepoint_settings import SharepointSettings
+from msgraph_beta.generated.models.image_tagging_choice import ImageTaggingChoice
 
 graph_client = GraphServiceClient(credentials, scopes)
 

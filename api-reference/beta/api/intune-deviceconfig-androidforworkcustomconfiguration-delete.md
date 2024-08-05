@@ -2,7 +2,7 @@
 title: "Delete androidForWorkCustomConfiguration"
 description: "Deletes a androidForWorkCustomConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

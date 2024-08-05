@@ -22,8 +22,8 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedAwsResourceFinding objects](../api/overprovisionedawsresourcefinding-list.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) collection|Get a list of the [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) objects and their properties.|
-|[Get overprovisionedAwsResourceFinding](../api/overprovisionedawsresourcefinding-get.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md)|Read the properties and relationships of an [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) object.|
+|[List](../api/overprovisionedawsresourcefinding-list.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) collection|Get a list of the [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) objects and their properties.|
+|[Get](../api/overprovisionedawsresourcefinding-get.md)|[overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md)|Read the properties and relationships of an [overprovisionedAwsResourceFinding](../resources/overprovisionedawsresourcefinding.md) object.|
 
 ## Properties
 

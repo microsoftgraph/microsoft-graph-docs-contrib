@@ -19,7 +19,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
+|[List](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
 
 ## Properties
 
@@ -29,12 +29,15 @@ Contains information associated with an attendance record in a [meetingAttendanc
 | emailAddress | String | Email address of the user associated with this attendance record. |
 | identity | [identity](identity.md) | Identity of the user associated with this attendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
-| registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. |
+| registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. (deprecated) |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
+
+> [!TIP]
+> The **registrantId** property is deprecated and will stop returning data on **December 31, 2024**. There will be a new property replacing this by the end of 2024. For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

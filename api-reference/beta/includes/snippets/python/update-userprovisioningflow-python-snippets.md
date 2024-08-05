@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.user_provisioning_flow import UserProvisioningFlow
-from msgraph.generated.models.user_management_options import UserManagementOptions
-from msgraph.generated.models.additional_user_attributes import AdditionalUserAttributes
-from msgraph.generated.models.additional_user_options import AdditionalUserOptions
-from msgraph.generated.models.user_creation_options import UserCreationOptions
-from msgraph.generated.models.user_configuration import UserConfiguration
-from msgraph.generated.models.simple_password_settings import SimplePasswordSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.industry_data.user_provisioning_flow import UserProvisioningFlow
+from msgraph_beta.generated.models.industry_data.user_management_options import UserManagementOptions
+from msgraph_beta.generated.models.industry_data.additional_user_attributes import AdditionalUserAttributes
+from msgraph_beta.generated.models.additional_user_attributes import AdditionalUserAttributes
+from msgraph_beta.generated.models.industry_data.additional_user_options import AdditionalUserOptions
+from msgraph_beta.generated.models.industry_data.user_creation_options import UserCreationOptions
+from msgraph_beta.generated.models.industry_data.user_configuration import UserConfiguration
+from msgraph_beta.generated.models.industry_data.simple_password_settings import SimplePasswordSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

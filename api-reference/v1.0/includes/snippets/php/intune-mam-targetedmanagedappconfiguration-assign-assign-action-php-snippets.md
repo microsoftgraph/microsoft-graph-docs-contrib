@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AssignPostRequestBody;
+use Microsoft\Graph\Generated\DeviceAppManagement\TargetedManagedAppConfigurations\Item\Assign\AssignPostRequestBody;
 use Microsoft\Graph\Generated\Models\TargetedManagedAppPolicyAssignment;
 use Microsoft\Graph\Generated\Models\ConfigurationManagerCollectionAssignmentTarget;
 

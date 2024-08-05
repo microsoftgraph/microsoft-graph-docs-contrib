@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.education_school import EducationSchool
-from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.education_school import EducationSchool
+from msgraph_beta.generated.models.education_external_source import EducationExternalSource
+from msgraph_beta.generated.models.physical_address import PhysicalAddress
 
 graph_client = GraphServiceClient(credentials, scopes)
 

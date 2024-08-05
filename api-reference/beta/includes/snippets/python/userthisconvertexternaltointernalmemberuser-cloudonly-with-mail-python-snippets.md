@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.convert_external_to_internal_member_user.convert_external_to_internal_member_user_post_request_body import ConvertExternalToInternalMemberUserPostRequestBody
-from msgraph.generated.models.password_profile import PasswordProfile
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.convert_external_to_internal_member_user.convert_external_to_internal_member_user_post_request_body import ConvertExternalToInternalMemberUserPostRequestBody
+from msgraph_beta.generated.models.password_profile import PasswordProfile
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -21,6 +21,11 @@ assignment should be assigned to when the assignment is published.
 The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) and [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) resources are subclasses of this superclass.
 
 ## Properties
+
+None.
+
+## Relationships
+
 None.
 
 <!-- {

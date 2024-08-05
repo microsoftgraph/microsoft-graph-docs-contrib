@@ -5,20 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
-use Microsoft\Graph\Generated\Models\RequestorSettings;
-use Microsoft\Graph\Generated\Models\UserSet;
-use Microsoft\Graph\Generated\Models\ApprovalSettings;
-use Microsoft\Graph\Generated\Models\ApprovalStage;
-use Microsoft\Graph\Generated\Models\GroupMembers;
-use Microsoft\Graph\Generated\Models\ExternalSponsors;
-use Microsoft\Graph\Generated\Models\AccessPackageQuestion;
-use Microsoft\Graph\Generated\Models\AccessPackageMultipleChoiceQuestion;
-use Microsoft\Graph\Generated\Models\AccessPackageLocalizedContent;
-use Microsoft\Graph\Generated\Models\AccessPackageLocalizedText;
-use Microsoft\Graph\Generated\Models\AccessPackageAnswerChoice;
-use Microsoft\Graph\Generated\Models\AccessPackageTextInputQuestion;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Beta\Generated\Models\RequestorSettings;
+use Microsoft\Graph\Beta\Generated\Models\UserSet;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Beta\Generated\Models\ApprovalStage;
+use Microsoft\Graph\Beta\Generated\Models\GroupMembers;
+use Microsoft\Graph\Beta\Generated\Models\ExternalSponsors;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageQuestion;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageMultipleChoiceQuestion;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageLocalizedContent;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageLocalizedText;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAnswerChoice;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageTextInputQuestion;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

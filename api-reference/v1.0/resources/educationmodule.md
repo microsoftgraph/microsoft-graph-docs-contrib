@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "v-rmanda"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Module
 ---
 
 # educationModule resource type
@@ -24,13 +25,13 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                                           | Return Type                                      | Description                                                                                  |
 | :------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | [List modules](../api/educationclass-list-modules.md)                            | [educationModule](educationmodule.md) collection | Get an **educationModule** object collection.                                                |
-| [Create](../api/educationclass-post-module.md)                                   | [educationModule](educationmodule.md)            | Create an **educationModule** object.                                                        |
+| [Create module](../api/educationclass-post-module.md)                                   | [educationModule](educationmodule.md)            | Create an **educationModule** object.                                                        |
 | [Get module](../api/educationmodule-get.md)                                      | [educationModule](educationmodule.md)            | Read properties and relationships of an **educationModule** object.                          |
-| [Update](../api/educationmodule-update.md)                                       | [educationModule](educationmodule.md)            | Update an **educationModule** object.                                                        |
-| [Delete](../api/educationmodule-delete.md)                                       | None                                             | Delete an **educationModule** object.                                                        |
-| [Pin](../api/educationmodule-pin.md)                                             | [educationModule](educationmodule.md)            | Pin an **educationModule** object.                                                           |
-| [Unpin](../api/educationmodule-unpin.md)                                         | [educationModule](educationmodule.md)            | Unpin an **educationModule** object.                                                         |
-| [Publish](../api/educationmodule-publish.md)                                     | [educationModule](educationmodule.md)            | Change the state of an **educationModule** object from draft to published.                   |
+| [Update module](../api/educationmodule-update.md)                                       | [educationModule](educationmodule.md)            | Update an **educationModule** object.                                                        |
+| [Delete module](../api/educationmodule-delete.md)                                       | None                                             | Delete an **educationModule** object.                                                        |
+| [Pin module](../api/educationmodule-pin.md)                                             | [educationModule](educationmodule.md)            | Pin an **educationModule** object.                                                           |
+| [Unpin module](../api/educationmodule-unpin.md)                                         | [educationModule](educationmodule.md)            | Unpin an **educationModule** object.                                                         |
+| [Publish module](../api/educationmodule-publish.md)                                     | [educationModule](educationmodule.md)            | Change the state of an **educationModule** object from draft to published.                   |
 | [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md) | [educationModule](educationmodule.md)            | Create a SharePoint folder (under predefined location) to upload files as module resources. |
 
 ## Properties

@@ -23,7 +23,7 @@ This resource isn't called. Any request that calls the resource results in an HT
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) collection| Run a specified search query. |
+| [Query data](../api/search-query.md) | [searchResponse](searchresponse.md) collection| Run a specified search query. |
 
 ## Properties
 

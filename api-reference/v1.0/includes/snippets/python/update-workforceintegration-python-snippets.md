@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.workforce_integration import WorkforceIntegration
 from msgraph.generated.models.workforce_integration_encryption import WorkforceIntegrationEncryption
+from msgraph.generated.models.workforce_integration_encryption_protocol import WorkforceIntegrationEncryptionProtocol
+from msgraph.generated.models.workforce_integration_supported_entities import WorkforceIntegrationSupportedEntities
 
 graph_client = GraphServiceClient(credentials, scopes)
 

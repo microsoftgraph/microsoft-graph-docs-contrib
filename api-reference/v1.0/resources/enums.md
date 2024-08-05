@@ -11,1051 +11,1088 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### binaryOperator values
+### virtualEventRegistrationPredefinedQuestionLabel values
 
 |Member|
 |:---|
-|or|
-|and|
-
-### entityType values
-|Member|
-|:---|
-|event|
-|message|
-|driveItem|
-|externalItem|
-|site|
-|list|
-|listItem|
-|drive|
+|street|
+|city|
+|state|
+|postalCode|
+|countryOrRegion|
+|industry|
+|jobTitle|
+|organization|
 |unknownFutureValue|
-|chatMessage|
-|person|
-|acronym|
-|bookmark|
 
-### conditionalAccessExternalTenantsMembershipKind values
+### virtualEventRegistrationQuestionAnswerInputType values
 
-| Member             |
-|:-------------------|
-| all                |
-| enumerated         |
+|Member|
+|:---|
+|text|
+|multilineText|
+|singleChoice|
+|multiChoice|
+|boolean|
+|unknownFutureValue|
+
+## fileStorageContainerStatus values
+
+| Member |
+| -------------------- |
+| inactive |
+| active |
+| unknownfuturevalue |
+
+## binaryOperator values
+
+| Member |
+| ---- |
+| or |
+| and |
+
+## entityType values
+
+| Member |
+| ---- |
+| event |
+| message |
+| driveItem |
+| externalItem |
+| site |
+| list |
+| listItem |
+| drive |
+| unknownFutureValue |
+| chatMessage |
+| person |
+| acronym |
+| bookmark |
+
+## conditionalAccessExternalTenantsMembershipKind values
+
+| Member |
+| -------------------- |
+| all |
+| enumerated |
 | unknownFutureValue |
 
-### conditionalAccessGuestOrExternalUserTypes values
+## conditionalAccessGuestOrExternalUserTypes values
 
-| Member                 |
-|:-----------------------|
-| none                   |
-| internalGuest          |
-| b2bCollaborationGuest  |
+| Member |
+| ------------------------ |
+| none |
+| internalGuest |
+| b2bCollaborationGuest |
 | b2bCollaborationMember |
-| b2bDirectConnectUser   |
-| otherExternalUser      |
-| serviceProvider        |
-| unknownFutureValue     |
+| b2bDirectConnectUser |
+| otherExternalUser |
+| serviceProvider |
+| unknownFutureValue |
 
-### migrationStatus values 
+## migrationStatus values
 
-|Member|
-|:---|
-|ready|
-|needsReview|
-|additionalStepsRequired|
-|unknownFutureValue|
+| Member |
+| ---- |
+| ready |
+| needsReview |
+| additionalStepsRequired |
+| unknownFutureValue |
 
-### appCredentialRestrictionType values
+## appCredentialRestrictionType values
 
-| Member               |
-| :------------------- |
-| passwordAddition     |
-| passwordLifetime     |
+| Member |
+| -------------------- |
+| passwordAddition |
+| passwordLifetime |
 | symmetricKeyAddition |
 | symmetricKeyLifetime |
-| unknownFutureValue   |
+| unknownFutureValue |
 
-### appKeyCredentialRestrictionType values
+## appKeyCredentialRestrictionType values
 
-| Member                |
-| :-------------------- |
+| Member |
+| --------------------- |
 | asymmetricKeyLifetime |
-| unknownFutureValue    |
-
-### assignmentType values
-
-| Member              |
-| :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
-
-### courseStatus values
-
-| Member             |
-| :----------------- |
-| notStarted         |
-| inProgress         |
-| completed          |
-### userPurpose values
-| Member             |
-| :----------------- |
-| user               |
-| linked             |
-| shared             |
-| room               |
-| equipment          |
-| others             |
 | unknownFutureValue |
 
-### bookingsAvailabilityStatus values
-| Member             |
-| :----------------- |
-| available          |
-| busy               |
-| slotsAvailable     |
-| outOfOffice        |
+## assignmentType values
+
+| Member |
+| -------------------- |
+| required |
+| recommeded |
+| unknownFutureValue |
+| peerRecommeded |
+
+## courseStatus values
+
+| Member |
+| ------------------ |
+| notStarted |
+| inProgress |
+| completed |
+
+## userPurpose values
+
+| Member |
+| ------------------ |
+| user |
+| linked |
+| shared |
+| room |
+| equipment |
+| others |
 | unknownFutureValue |
 
-### signInFrequencyAuthenticationType values
+## bookingsAvailabilityStatus values
 
-| Member                            |
-| :-------------------------------- |
+| Member |
+| ------------------ |
+| available |
+| busy |
+| slotsAvailable |
+| outOfOffice |
+| unknownFutureValue |
+
+## signInFrequencyAuthenticationType values
+
+| Member |
+| --------------------------------- |
 | primaryAndSecondaryAuthentication |
-| secondaryAuthentication           |
-| unknownFutureValue                |
+| secondaryAuthentication |
+| unknownFutureValue |
 
-### signInFrequencyInterval values
+## signInFrequencyInterval values
 
-| Member    |
-| :-------- |
+| Member |
+| --------- |
 | timeBased |
 | everyTime |
 
-### crossTenantAccessPolicyTargetConfigurationAccessType values
-
-| Member             |
-| :----------------- |
-| allowed            |
-| blocked            |
-| unknownFutureValue |
-
-### crossTenantAccessPolicyTargetType values
+## crossTenantAccessPolicyTargetConfigurationAccessType values
 
 | Member |
-| :----- |
-| user   |
-| group  |
+| ------------------ |
+| allowed |
+| blocked |
+| unknownFutureValue |
 
-### multiTenantOrganizationMemberProcessingStatus values
+## crossTenantAccessPolicyTargetType values
 
-|Member|
-|:---|
-|notStarted|
-|running|
-|succeeded|
-|failed|
-|unknownFutureValue|
+| Member |
+| ------ |
+| user |
+| group |
+| application |
+| unknownFutureValue |
 
-### multiTenantOrganizationMemberRole values
+## multiTenantOrganizationMemberProcessingStatus values
 
-|Member|
-|:---|
-|owner|
-|member|
-|unknownFutureValue|
+| Member |
+| ---- |
+| notStarted |
+| running |
+| succeeded |
+| failed |
+| unknownFutureValue |
 
-### multiTenantOrganizationMemberState values
+## multiTenantOrganizationMemberRole values
 
-|Member|
-|:---|
-|pending|
-|active|
-|removed|
-|unknownFutureValue|
+| Member |
+| ---- |
+| owner |
+| member |
+| unknownFutureValue |
 
-### multiTenantOrganizationState values
+## multiTenantOrganizationMemberState values
 
-|Member|
-|:---|
-|active|
-|inactive|
-|unknownFutureValue|
+| Member |
+| ---- |
+| pending |
+| active |
+| removed |
+| unknownFutureValue |
 
-### templateApplicationLevel values
+## multiTenantOrganizationState values
 
-|Member|
-|:---|
-|none|
-|newPartners|
-|existingPartners|
-|unknownFutureValue|
+| Member |
+| ---- |
+| active |
+| inactive |
+| unknownFutureValue |
 
-### federatedIdpMfaBehavior values
-| Member                        |
-| :---------------------------- |
+## templateApplicationLevel values
+
+| Member |
+| ---- |
+| none |
+| newPartners |
+| existingPartners |
+| unknownFutureValue |
+
+## federatedIdpMfaBehavior values
+
+| Member |
+| ----------------------------- |
 | acceptIfMfaDoneByFederatedIdp |
-| enforceMfaByFederatedIdp      |
-| rejectMfaByFederatedIdp       |
-| unknownFutureValue            |
+| enforceMfaByFederatedIdp |
+| rejectMfaByFederatedIdp |
+| unknownFutureValue |
 
-#### promptLoginBehavior values
-| Member                                 |
-| :------------------------------------- |
+## promptLoginBehavior values
+
+| Member |
+| -------------------------------------- |
 | translateToFreshPasswordAuthentication |
-| nativeSupport                          |
-| disabled                               |
-| unknownFutureValue                     |
+| nativeSupport |
+| disabled |
+| unknownFutureValue |
 
-### expirationPatternType values
+## expirationPatternType values
 
-| Member        |
-| :------------ |
-| notSpecified  |
-| noExpiration  |
+| Member |
+| ------------- |
+| notSpecified |
+| noExpiration |
 | afterDateTime |
 | afterDuration |
 
-### recurrencePatternType values
+## recurrencePatternType values
 
-| Member          |
-| :-------------- |
-| daily           |
-| weekly          |
+| Member |
+| --------------- |
+| daily |
+| weekly |
 | absoluteMonthly |
 | relativeMonthly |
-| absoluteYearly  |
-| relativeYearly  |
+| absoluteYearly |
+| relativeYearly |
 
-### assignmentScheduleFilterByCurrentUserOptions values
+## assignmentScheduleFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### assignmentScheduleInstanceFilterByCurrentUserOptions values
+## assignmentScheduleInstanceFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### assignmentScheduleRequestFilterByCurrentUserOptions values
+## assignmentScheduleRequestFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| principal |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
+## eligibilityScheduleFilterByCurrentUserOptions values
 
-### eligibilityScheduleFilterByCurrentUserOptions values
-
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+## eligibilityScheduleInstanceFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### eligibilityScheduleRequestFilterByCurrentUserOptions values
+## eligibilityScheduleRequestFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| principal |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
+## privilegedAccessGroupAssignmentType values
 
-### privilegedAccessGroupAssignmentType values
-
-| Member             |
-| :----------------- |
-| assigned           |
-| activated          |
+| Member |
+| ------------------ |
+| assigned |
+| activated |
 | unknownFutureValue |
 
-### privilegedAccessGroupMemberType values
+## privilegedAccessGroupMemberType values
 
-| Member             |
-| :----------------- |
-| direct             |
-| group              |
+| Member |
+| ------------------ |
+| direct |
+| group |
 | unknownFutureValue |
 
-### privilegedAccessGroupRelationships values
+## privilegedAccessGroupRelationships values
 
-| Member             |
-| :----------------- |
-| owner              |
-| member             |
+| Member |
+| ------------------ |
+| owner |
+| member |
 | unknownFutureValue |
 
-### scheduleRequestActions values
+## scheduleRequestActions values
 
-| Member             |
-| :----------------- |
-| adminAssign        |
-| adminUpdate        |
-| adminRemove        |
-| selfActivate       |
-| selfDeactivate     |
-| adminExtend        |
-| adminRenew         |
-| selfExtend         |
-| selfRenew          |
+| Member |
+| ------------------ |
+| adminAssign |
+| adminUpdate |
+| adminRemove |
+| selfActivate |
+| selfDeactivate |
+| adminExtend |
+| adminRenew |
+| selfExtend |
+| selfRenew |
 | unknownFutureValue |
 
-### roleAssignmentScheduleFilterByCurrentUserOptions values
+## roleAssignmentScheduleFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
+## roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
+## roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| principal |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
-### roleEligibilityScheduleFilterByCurrentUserOptions values
+## roleEligibilityScheduleFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
+## roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
+| Member |
+| ------------------ |
+| principal |
 | unknownFutureValue |
 
-### roleEligibilityScheduleRequestFilterByCurrentUserOptions values
+## roleEligibilityScheduleRequestFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| principal          |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| principal |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
-### unifiedRoleManagementPolicyRuleTargetOperations values
+## unifiedRoleManagementPolicyRuleTargetOperations values
 
-| Member             |
-| :----------------- |
-| all                |
-| activate           |
-| deactivate         |
-| assign             |
-| update             |
-| remove             |
-| extend             |
-| renew              |
+| Member |
+| ------------------ |
+| all |
+| activate |
+| deactivate |
+| assign |
+| update |
+| remove |
+| extend |
+| renew |
 | unknownFutureValue |
 
-### userSignInRecommendationScope values
+## userSignInRecommendationScope values
 
-| Member             |
-| :----------------- |
-| tenant             |
-| application        |
+| Member |
+| ------------------ |
+| tenant |
+| application |
 | unknownFutureValue |
 
-### unifiedRoleScheduleRequestActions values
+## unifiedRoleScheduleRequestActions values
 
-| Member             |
-| :----------------- |
-| adminAssign        |
-| adminUpdate        |
-| adminRemove        |
-| selfActivate       |
-| selfDeactivate     |
-| adminExtend        |
-| adminRenew         |
-| selfExtend         |
-| selfRenew          |
+| Member |
+| ------------------ |
+| adminAssign |
+| adminUpdate |
+| adminRemove |
+| selfActivate |
+| selfDeactivate |
+| adminExtend |
+| adminRenew |
+| selfExtend |
+| selfRenew |
 | unknownFutureValue |
 
-### approvalFilterByCurrentUserOptions values
+## approvalFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| target             |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| target |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
-### accessReviewExpirationBehavior values
+## accessReviewExpirationBehavior values
 
-| Member                     |
-| :------------------------- |
-| keepAccess                 |
-| removeAccess               |
+| Member |
+| -------------------------- |
+| keepAccess |
+| removeAccess |
 | acceptAccessRecommendation |
-| unknownFutureValue         |
+| unknownFutureValue |
 
-### allowedTargetScope values
+## allowedTargetScope values
 
-| Member                                  |
-| :-------------------------------------- |
-| notSpecified                            |
-| specificDirectoryUsers                  |
-| specificConnectedOrganizationUsers      |
-| specificDirectoryServicePrincipals      |
-| allMemberUsers                          |
-| allDirectoryUsers                       |
-| allDirectoryServicePrincipals           |
+| Member |
+| --------------------------------------- |
+| notSpecified |
+| specificDirectoryUsers |
+| specificConnectedOrganizationUsers |
+| specificDirectoryServicePrincipals |
+| allMemberUsers |
+| allDirectoryUsers |
+| allDirectoryServicePrincipals |
 | allConfiguredConnectedOrganizationUsers |
-| allExternalUsers                        |
-| unknownFutureValue                      |
-
-### approvalFilterByCurrentUserOptions values
-
-| Member             |
-| :----------------- |
-| target             |
-| createdBy          |
-| approver           |
+| allExternalUsers |
 | unknownFutureValue |
 
-### accessPackageAssignmentFilterByCurrentUserOptions values
+## accessPackageAssignmentFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| target             |
-| createdBy          |
+| Member |
+| ------------------ |
+| target |
+| createdBy |
 | unknownFutureValue |
 
-### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+## accessPackageAssignmentRequestFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| target             |
-| createdBy          |
-| approver           |
+| Member |
+| ------------------ |
+| target |
+| createdBy |
+| approver |
 | unknownFutureValue |
 
-### accessPackageAssignmentState values
+## accessPackageAssignmentState values
 
-| Member             |
-| :----------------- |
-| delivering         |
+| Member |
+| ------------------ |
+| delivering |
 | partiallyDelivered |
-| delivered          |
-| expired            |
-| deliveryFailed     |
+| delivered |
+| expired |
+| deliveryFailed |
 | unknownFutureValue |
 
-### accessPackageCatalogState values
+## accessPackageCatalogState values
 
-| Member             |
-| :----------------- |
-| unpublished        |
-| published          |
+| Member |
+| ------------------ |
+| unpublished |
+| published |
 | unknownFutureValue |
 
-### accessPackageCatalogType values
+## accessPackageCatalogType values
 
-| Member             |
-| :----------------- |
-| userManaged        |
-| serviceDefault     |
-| serviceManaged     |
+| Member |
+| ------------------ |
+| userManaged |
+| serviceDefault |
+| serviceManaged |
 | unknownFutureValue |
 
-### accessPackageExternalUserLifecycleAction values
+## accessPackageExternalUserLifecycleAction values
 
-| Member               |
-| :------------------- |
-| none                 |
-| blockSignIn          |
+| Member |
+| -------------------- |
+| none |
+| blockSignIn |
 | blockSignInAndDelete |
-| unknownFutureValue   |
-
-### accessPackageFilterByCurrentUserOptions values
-
-| Member             |
-| :----------------- |
-| allowedRequestor   |
 | unknownFutureValue |
 
-### accessPackageRequestState values
+## accessPackageFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| submitted          |
-| pendingApproval    |
-| delivering         |
-| delivered          |
-| deliveryFailed     |
-| denied             |
-| scheduled          |
-| canceled           |
+| Member |
+| ------------------ |
+| allowedRequestor |
+| unknownFutureValue |
+
+## accessPackageRequestState values
+
+| Member |
+| ------------------ |
+| submitted |
+| pendingApproval |
+| delivering |
+| delivered |
+| deliveryFailed |
+| denied |
+| scheduled |
+| canceled |
 | partiallyDelivered |
 | unknownFutureValue |
 
-### accessPackageRequestType values
+## accessPackageRequestType values
 
-| Member             |
-| :----------------- |
-| notSpecified       |
-| userAdd            |
-| userUpdate         |
-| userRemove         |
-| adminAdd           |
-| adminUpdate        |
-| adminRemove        |
-| systemAdd          |
-| systemUpdate       |
-| systemRemove       |
-| onBehalfAdd        |
+| Member |
+| ------------------ |
+| notSpecified |
+| userAdd |
+| userUpdate |
+| userRemove |
+| adminAdd |
+| adminUpdate |
+| adminRemove |
+| systemAdd |
+| systemUpdate |
+| systemRemove |
+| onBehalfAdd |
 | unknownFutureValue |
 
-### accessPackageSubjectType values
+## accessPackageSubjectType values
 
-| Member             |
-| :----------------- |
-| notSpecified       |
-| user               |
-| servicePrincipal   |
+| Member |
+| ------------------ |
+| notSpecified |
+| user |
+| servicePrincipal |
 | unknownFutureValue |
 
-### connectedOrganizationState values
+## connectedOrganizationState values
 
-| Member     |
-| :--------- |
+| Member |
+| ---------- |
 | configured |
-| proposed   |
+| proposed |
 
-### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
+## accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| reviewer           |
+| Member |
+| ------------------ |
+| reviewer |
 | unknownFutureValue |
 
-### accessReviewStageFilterByCurrentUserOptions values
+## accessReviewStageFilterByCurrentUserOptions values
 
-| Member             |
-| :----------------- |
-| reviewer           |
+| Member |
+| ------------------ |
+| reviewer |
 | unknownFutureValue |
 
-### accessPackageCustomExtensionStage values
+## accessPackageCustomExtensionStage values
 
-|Member|
-|:---|
-|assignmentRequestCreated|
-|assignmentRequestApproved|
-|assignmentRequestGranted|
-|assignmentRequestRemoved|
-|assignmentFourteenDaysBeforeExpiration|
-|assignmentOneDayBeforeExpiration|
-|unknownFutureValue|
+| Member |
+| ---- |
+| assignmentRequestCreated |
+| assignmentRequestApproved |
+| assignmentRequestGranted |
+| assignmentRequestRemoved |
+| assignmentFourteenDaysBeforeExpiration |
+| assignmentOneDayBeforeExpiration |
+| unknownFutureValue |
 
-### customExtensionCalloutInstanceStatus values
+## customExtensionCalloutInstanceStatus values
 
-|Member|
-|:---|
-|calloutSent|
-|callbackReceived|
-|calloutFailed|
-|callbackTimedOut|
-|waitingForCallback|
-|unknownFutureValue|
+| Member |
+| ---- |
+| calloutSent |
+| callbackReceived |
+| calloutFailed |
+| callbackTimedOut |
+| waitingForCallback |
+| unknownFutureValue |
 
-### volumeType values
+## volumeType values
 
-| Member                |
-| :-------------------- |
+| Member |
+| --------------------- |
 | operatingSystemVolume |
-| fixedDataVolume       |
-| removableDataVolume   |
-| unknownFutureValue    |
+| fixedDataVolume |
+| removableDataVolume |
+| unknownFutureValue |
 
-### filterMode values
+## filterMode values
 
-| Member  |
-| :------ |
+| Member |
+| ------- |
 | include |
 | exclude |
 
-### lifecycleEventType values
+## lifecycleEventType values
 
-| Member                  |
-| :---------------------- |
-| missed                  |
-| subscriptionRemoved     |
+| Member |
+| ----------------------- |
+| missed |
+| subscriptionRemoved |
 | reauthorizationRequired |
 
-### changeType values
-
-| Member              |
-| :------------------ |
-| clientIpAddress     |
-| authenticatorAppGps |
-
-### countryLookupMethodType values
-
-| Member              |
-| :------------------ |
-| clientIpAddress     |
-| authenticatorAppGps |
-
-### consentRequestFilterByCurrentUserOptions values
-
-| Member             |
-| :----------------- |
-| reviewer           |
-| unknownFutureValue |
-
-### educationFeedbackResourceOutcomeStatus values
-
-| Member             |
-| :----------------- |
-| notPublished       |
-| pendingPublish     |
-| published          |
-| failedPublish      |
-| unknownFutureValue |
-
-### externalEmailOtpState values
-
-| Member             |
-| :----------------- |
-| default            |
-| enabled            |
-| disabled           |
-| unknownFutureValue |
-
-### educationAddedStudentAction values
-
-| Member             |
-| :----------------- |
-| none               |
-| assignIfOpen       |
-| unknownFutureValue |
-
-### educationModuleStatus values
-
-| Member             |
-| :----------------- |
-| draft              |
-| published          |
-
-### fido2RestrictionEnforcementType values
+## changeType values
 
 | Member |
-| :----- |
-| allow  |
-| block  |
+| ------------------- |
+| clientIpAddress |
+| authenticatorAppGps |
 
-### x509CertificateAuthenticationMode values
-| Member                      |
-| :-------------------------- |
-| x509CertificateSingleFactor |
-| x509CertificateMultiFactor  |
-| unknownFutureValue          |
+## countryLookupMethodType values
 
-### x509CertificateRuleType values
-| Member             |
-| :----------------- |
-| issuerSubject      |
-| policyOID          |
+| Member |
+| ------------------- |
+| clientIpAddress |
+| authenticatorAppGps |
+
+## consentRequestFilterByCurrentUserOptions values
+
+| Member |
+| ------------------ |
+| reviewer |
 | unknownFutureValue |
 
-### attestationLevel values
+## educationFeedbackResourceOutcomeStatus values
 
-| Member      |
-| :---------- |
-| attested    |
+| Member |
+| ------------------ |
+| notPublished |
+| pendingPublish |
+| published |
+| failedPublish |
+| unknownFutureValue |
+
+## externalEmailOtpState values
+
+| Member |
+| ------------------ |
+| default |
+| enabled |
+| disabled |
+| unknownFutureValue |
+
+## educationAddedStudentAction values
+
+| Member |
+| ------------------ |
+| none |
+| assignIfOpen |
+| unknownFutureValue |
+
+## educationModuleStatus values
+
+| Member |
+| ------------------ |
+| draft |
+| published |
+
+## fido2RestrictionEnforcementType values
+
+| Member |
+| ------ |
+| allow |
+| block |
+
+## x509CertificateAuthenticationMode values
+
+| Member |
+| --------------------------- |
+| x509CertificateSingleFactor |
+| x509CertificateMultiFactor |
+| unknownFutureValue |
+
+## x509CertificateRuleType values
+
+| Member |
+| ------------------ |
+| issuerSubject |
+| policyOID |
+| unknownFutureValue |
+
+## attestationLevel values
+
+| Member |
+| ----------- |
+| attested |
 | notAttested |
 
-### authenticationMethodTargetType values
+## authenticationMethodTargetType values
 
 | Member |
-| :----- |
-| user   |
-| group  |
+| ------ |
+| user |
+| group |
 
-### authenticationMethodState values
+## authenticationMethodState values
 
-| Member   |
-| :------- |
-| enabled  |
+| Member |
+| -------- |
+| enabled |
 | disabled |
 
-### microsoftAuthenticatorAuthenticationMode values
+## microsoftAuthenticatorAuthenticationMode values
 
-| Member          |
-| :-------------- |
-| any             |
-| push            |
+| Member |
+| --------------- |
+| any |
+| push |
 | deviceBasedPush |
 
-### keyStrength values
+## keyStrength values
 
-| Member  |
-| :------ |
-| normal  |
-| weak    |
+| Member |
+| ------- |
+| normal |
+| weak |
 | unknown |
 
-### authenticationMethodKeyStrength values
+## authenticationMethodKeyStrength values
 
-| Member  |
-| :------ |
-| normal  |
-| weak    |
+| Member |
+| ------- |
+| normal |
+| weak |
 | unknown |
 
-### allowInvitesFrom values
+## allowInvitesFrom values
 
-| Member                           |
-| :------------------------------- |
-| none                             |
-| adminsAndGuestInviters           |
+| Member |
+| -------------------------------- |
+| none |
+| adminsAndGuestInviters |
 | adminsGuestInvitersAndAllMembers |
-| everyone                         |
-| unknownFutureValue               |
-
-### dataPolicyOperationStatus values
-
-| Member             |
-| :----------------- |
-| notStarted         |
-| running            |
-| complete           |
-| failed             |
+| everyone |
 | unknownFutureValue |
 
-### conditionalAccessDevicePlatform values
+## dataPolicyOperationStatus values
 
-| Member             |
-| :----------------- |
-| android            |
-| iOS                |
-| windows            |
-| windowsPhone       |
-| macOS              |
-| all                |
+| Member |
+| ------------------ |
+| notStarted |
+| running |
+| complete |
+| failed |
 | unknownFutureValue |
 
-### signinFrequencyType values
+## conditionalAccessDevicePlatform values
 
 | Member |
-| :----- |
-| days   |
-| hours  |
+| ------------------ |
+| android |
+| iOS |
+| windows |
+| windowsPhone |
+| macOS |
+| all |
+| unknownFutureValue |
 
-### persistentBrowserSessionMode values
+## signinFrequencyType values
 
 | Member |
-| :----- |
+| ------ |
+| days |
+| hours |
+
+## persistentBrowserSessionMode values
+
+| Member |
+| ------ |
 | always |
-| never  |
+| never |
 
-### cloudAppSecuritySessionControlType values
+## cloudAppSecuritySessionControlType values
 
-| Member             |
-| :----------------- |
-| mcasConfigured     |
-| monitorOnly        |
-| blockDownloads     |
+| Member |
+| ------------------ |
+| mcasConfigured |
+| monitorOnly |
+| blockDownloads |
 | unknownFutureValue |
 
-### conditionalAccessGrantControl values
+## conditionalAccessGrantControl values
 
-| Member               |
-| :------------------- |
-| block                |
-| mfa                  |
-| compliantDevice      |
-| domainJoinedDevice   |
-| approvedApplication  |
+| Member |
+| -------------------- |
+| block |
+| mfa |
+| compliantDevice |
+| domainJoinedDevice |
+| approvedApplication |
 | compliantApplication |
-| passwordChange       |
-| unknownFutureValue   |
+| passwordChange |
+| unknownFutureValue |
 
-### conditionalAccessClientApp values
+## conditionalAccessClientApp values
 
-| Member                      |
-| :-------------------------- |
-| all                         |
-| browser                     |
+| Member |
+| --------------------------- |
+| all |
+| browser |
 | mobileAppsAndDesktopClients |
-| exchangeActiveSync          |
-| easSupported                |
-| other                       |
-| unknownFutureValue          |
+| exchangeActiveSync |
+| easSupported |
+| other |
+| unknownFutureValue |
 
-### conditionalAccessPolicyState values
+## conditionalAccessPolicyState values
 
-| Member                            |
-| :-------------------------------- |
-| enabled                           |
-| disabled                          |
+| Member |
+| --------------------------------- |
+| enabled |
+| disabled |
 | enabledForReportingButNotEnforced |
 
-#### deviceProfileType values
-| Member           |
-| :--------------- |
-| RegisteredDevice |
-| SecureVM         |
-| Printer          |
-| Shared           |
-| IoT              |
-
-### appliedConditionalAccessPolicyResult values
-
-| Member             |
-| :----------------- |
-| success            |
-| failure            |
-| notApplied         |
-| notEnabled         |
-| unknown            |
-| unknownFutureValue |
-
-### groupType values
-
-| Member             |
-| :----------------- |
-| unifiedGroups      |
-| azureAD            |
-| unknownFutureValue |
-
-### conditionalAccessStatus values
-
-| Member             |
-| :----------------- |
-| success            |
-| failure            |
-| notApplied         |
-| unknownFutureValue |
-
-### templateScenarios values
-| Member             |
-| :----------------- |
-| new                |
-| secureFoundation   |
-| zeroTrust          |
-| remoteWork         |
-| protectAdmins      |
-| emergingThreats    |
-| unknownFutureValue |
-
-### operationResult values
-
-| Member             |
-| :----------------- |
-| success            |
-| failure            |
-| timeout            |
-| unknownFutureValue |
-
-### tone values
+## deviceProfileType values
 
 | Member |
-| :----- |
-| tone0  |
-| tone1  |
-| tone2  |
-| tone3  |
-| tone4  |
-| tone5  |
-| tone6  |
-| tone7  |
-| tone8  |
-| tone9  |
-| star   |
-| pound  |
-| a      |
-| b      |
-| c      |
-| d      |
-| flash  |
+| ---------------- |
+| RegisteredDevice |
+| SecureVM |
+| Printer |
+| Shared |
+| IoT |
 
-### mediaState values
+## appliedConditionalAccessPolicyResult values
 
-| Member             |
-| :----------------- |
-| active             |
-| inactive           |
+| Member |
+| ------------------ |
+| success |
+| failure |
+| notApplied |
+| notEnabled |
+| unknown |
 | unknownFutureValue |
 
-### basicStatus values
+## groupType values
 
-| Member   |
-| :------- |
-| active   |
+| Member |
+| ------------------ |
+| unifiedGroups |
+| azureAD |
+| unknownFutureValue |
+
+## conditionalAccessStatus values
+
+| Member |
+| ------------------ |
+| success |
+| failure |
+| notApplied |
+| unknownFutureValue |
+
+## templateScenarios values
+
+| Member |
+| ------------------ |
+| new |
+| secureFoundation |
+| zeroTrust |
+| remoteWork |
+| protectAdmins |
+| emergingThreats |
+| unknownFutureValue |
+
+## operationResult values
+
+| Member |
+| ------------------ |
+| success |
+| failure |
+| timeout |
+| unknownFutureValue |
+
+## tone values
+
+| Member |
+| ------ |
+| tone0 |
+| tone1 |
+| tone2 |
+| tone3 |
+| tone4 |
+| tone5 |
+| tone6 |
+| tone7 |
+| tone8 |
+| tone9 |
+| star |
+| pound |
+| a |
+| b |
+| c |
+| d |
+| flash |
+
+## mediaState values
+
+| Member |
+| ------------------ |
+| active |
+| inactive |
+| unknownFutureValue |
+
+## basicStatus values
+
+| Member |
+| -------- |
+| active |
 | inactive |
 
-### callState values
+## callState values
 
-| Member           |
-| :--------------- |
-| incoming         |
-| establishing     |
-| ringing          |
-| established      |
-| hold             |
-| transferring     |
+| Member |
+| ---------------- |
+| incoming |
+| establishing |
+| ringing |
+| established |
+| hold |
+| transferring |
 | transferAccepted |
-| redirecting      |
-| terminating      |
-| terminated       |
+| redirecting |
+| terminating |
+| terminated |
 
-### callType values
+## callType values
 
-| Member             |
-| :----------------- |
-| unknown            |
-| groupCall          |
-| peerToPeer         |
+| Member |
+| ------------------ |
+| unknown |
+| groupCall |
+| peerToPeer |
 | unknownFutureValue |
 
-### educationAddToCalendarOptions values
-| Member                |
-| :-------------------- |
-| none                  |
-| studentsAndPublisher  |
+## educationAddToCalendarOptions values
+
+| Member |
+| --------------------- |
+| none |
+| studentsAndPublisher |
 | studentsAndTeamOwners |
-| unknownFutureValue    |
-| studentsOnly          |
-
-### educationSubmissionStatus values
-| Member             |
-| :----------------- |
-| working            |
-| submitted          |
-| returned           |
 | unknownFutureValue |
-| reassigned         |
+| studentsOnly |
 
-### onlineMeetingRole values
+## educationSubmissionStatus values
 
-| Member             |
-| :----------------- |
-| attendee           |
-| presenter          |
+| Member |
+| ------------------ |
+| working |
+| submitted |
+| returned |
+| unknownFutureValue |
+| reassigned |
+
+## onlineMeetingRole values
+
+| Member |
+| ------------------ |
+| attendee |
+| presenter |
 | unknownFutureValue |
 
-### modality values
+## modality values
 
-| Member                  |
-| :---------------------- |
-| audio                   |
-| video                   |
+| Member |
+| ----------------------- |
+| audio |
+| video |
 | videoBasedScreenSharing |
-| data                    |
-| screenSharing           |
-| unknownFutureValue      |
+| data |
+| screenSharing |
+| unknownFutureValue |
 
-### endpointType values
+## endpointType values
 
-| Member                    |
-| :------------------------ |
-| default                   |
-| voicemail                 |
-| skypeForBusiness          |
+| Member |
+| ------------------------- |
+| default |
+| voicemail |
+| skypeForBusiness |
 | skypeForBusinessVoipPhone |
-| unknownFutureValue        |
+| unknownFutureValue |
 
-### callDirection values
+## callDirection values
 
-| Member   |
-| :------- |
+| Member |
+| -------- |
 | incoming |
 | outgoing |
 
-### signInAudience values
+## signInAudience values
 
-| Member                             |
-| :--------------------------------- |
-| AzureADMyOrg                       |
-| AzureADMultipleOrgs                |
+| Member |
+| ---------------------------------- |
+| AzureADMyOrg |
+| AzureADMultipleOrgs |
 | AzureADandPersonalMicrosoftAccount |
-| PersonalMicrosoftAccount           |
+| PersonalMicrosoftAccount |
 
-### groupMembershipClaims values
+## groupMembershipClaims values
 
-| Member        |
-| :------------ |
-| None          |
+| Member |
+| ------------- |
+| None |
 | SecurityGroup |
-| All           |
+| All |
 
-### recipientScopeType values
+## recipientScopeType values
 
-| Member             |
-| :----------------- |
-| none               |
-| internal           |
-| external           |
-| externalPartner    |
+| Member |
+| ------------------ |
+| none |
+| internal |
+| external |
+| externalPartner |
 | externalNonPartner |
 
-### activityType values
+## activityType values
 
-| Member             |
-| :----------------- |
-| signin             |
-| user               |
+| Member |
+| ------------------ |
+| signin |
+| user |
 | unknownFutureValue |
-| servicePrincipal   |
+| servicePrincipal |
 
-### riskDetectionTimingType values
+## riskDetectionTimingType values
 
-| Member             |
-| :----------------- |
-| notDefined         |
-| realtime           |
-| nearRealtime       |
-| offline            |
+| Member |
+| ------------------ |
+| notDefined |
+| realtime |
+| nearRealtime |
+| offline |
 | unknownFutureValue |
 
-### tokenIssuerType values
+## tokenIssuerType values
 
-| Member               |
-| :------------------- |
-| AzureAD              |
+| Member |
+| -------------------- |
+| AzureAD |
 | ADFederationServices |
-| UnknownFutureValue   |
+| UnknownFutureValue |
 
-### attachmentType values
+## attachmentType values
 
-| Member
-|:--------------
-| file
-| item
-| reference
+| Member |
+| --------------- |
+| file |
+| item |
+| reference |
 
-### contactRelationship values
+## contactRelationship values
 
 | Member             | Value | Description                              |
-| :----------------- | :---- | :--------------------------------------- |
+| ------------------ | ----- | ---------------------------------------- |
 | parent             | 0     | The user's parent.                       |
 | relative           | 1     | The user's relative.                     |
 | aide               | 2     | The user's aide.                         |
@@ -1065,94 +1102,92 @@ Namespace: microsoft.graph
 | other              | 6     | An unspecified relationship to the user. |
 | unknownFutureValue | 7     | Marker value for future compatibility.   |
 
-### scheduleEntityTheme values
+## scheduleEntityTheme values
 
-| Member
-|:-------------------------
-| white
-| blue
-| green
-| purple
-| pink
-| yellow
-| gray
-| darkBlue
-| darkGreen
-| darkPurple
-| darkPink
-| darkYellow
-| unknownFutureValue
-
-
-### timeOffReasonIconType values
-
-| Member             |
-| :----------------- |
-| none               |
-| car                |
-| calendar           |
-| running            |
-| plane              |
-| firstAid           |
-| doctor             |
-| notWorking         |
-| clock              |
-| juryDuty           |
-| globe              |
-| cup                |
-| phone              |
-| weather            |
-| umbrella           |
-| piggyBank          |
-| dog                |
-| cake               |
-| trafficCone        |
-| pin                |
-| sunny              |
+| Member |
+| -------------------------- |
+| white |
+| blue |
+| green |
+| purple |
+| pink |
+| yellow |
+| gray |
+| darkBlue |
+| darkGreen |
+| darkPurple |
+| darkPink |
+| darkYellow |
 | unknownFutureValue |
 
-### windowsSettingType values 
+## timeOffReasonIconType values
+
+| Member |
+| ------------------ |
+| none |
+| car |
+| calendar |
+| running |
+| plane |
+| firstAid |
+| doctor |
+| notWorking |
+| clock |
+| juryDuty |
+| globe |
+| cup |
+| phone |
+| weather |
+| umbrella |
+| piggyBank |
+| dog |
+| cake |
+| trafficCone |
+| pin |
+| sunny |
+| unknownFutureValue |
+
+## windowsSettingType values
 
 Possible types of Windows settings.
 
-| Member             |
-| :----------------- |
-| roaming            |
-| backup             |
+| Member |
+| ------------------ |
+| roaming |
+| backup |
 | unknownFutureValue |
 
-### workforceIntegrationEncryptionProtocol values
+## workforceIntegrationEncryptionProtocol values
 
-| Member
-|:----------------------------
-|sharedSecret
-|unknownFutureValue
+| Member |
+| ----------------------------- |
+| sharedSecret |
+| unknownFutureValue |
 
-### workforceIntegrationSupportedEntities values
+## workforceIntegrationSupportedEntities values
 
-| Member               |
-| :------------------- |
-| none                 |
-| shift                |
-| swapRequest          |
+| Member |
+| -------------------- |
+| none |
+| shift |
+| swapRequest |
 | userShiftPreferences |
-| openShift            |
-| openShiftRequest     |
-| offerShiftRequest    |
-| unknownFutureValue   |
+| openShift |
+| openShiftRequest |
+| offerShiftRequest |
+| unknownFutureValue |
 
-### timeZoneStandard values
+## timeZoneStandard values
 
-| Member
-|:-----------------
-| windows
-| iana
+| Member |
+| ------------------ |
+| windows |
+| iana |
 
-
-### freeBusyStatus values
+## freeBusyStatus values
 
 | Member           | Value |
-| :--------------- | :---- |
+| ---------------- | ----- |
 | free             | 0     |
 | tentative        | 1     |
 | busy             | 2     |
@@ -1160,38 +1195,34 @@ Possible types of Windows settings.
 | workingElsewhere | 4     |
 | unknown          | -1    |
 
+## attendeeType values
 
-### attendeeType values
+| Member |
+| -------------------------- |
+| required |
+| optional |
+| resource |
 
-| Member
-|:-------------------------
-| required
-| optional
-| resource
+## externalAudienceScope values
 
+| Member |
+| -------------------------- |
+| none |
+| contactsOnly |
+| all |
 
-### externalAudienceScope values
+## automaticRepliesStatus values
 
-| Member
-|:-------------------------
-| none
-| contactsOnly
-| all
+| Member |
+| -------------------------- |
+| disabled |
+| alwaysEnabled |
+| scheduled |
 
-
-### automaticRepliesStatus values
-
-| Member
-|:-------------------------
-| disabled
-| alwaysEnabled
-| scheduled
-
-
-### calendarColor values
+## calendarColor values
 
 | Member      | Value |
-| :---------- | :---- |
+| ----------- | ----- |
 | auto        | -1    |
 | lightBlue   | 0     |
 | lightGreen  | 1     |
@@ -1204,341 +1235,308 @@ Possible types of Windows settings.
 | lightRed    | 8     |
 | maxColor    | 9     |
 
-### educationExternalSource values
+## educationExternalSource values
 
-| Member             |
-| :----------------- |
-| sis                |
-| manual             |
+| Member |
+| ------------------ |
+| sis |
+| manual |
 | unknownFutureValue |
 
-### educationGender values
+## educationGender values
 
-| Member
-|:-------------------------
-| female
-| male
-| other
-| unknownFutureValue
-
-
-### eventType values
-
-| Member
-|:-------------------------
-| singleInstance
-| occurrence
-| exception
-| seriesMaster
-
-
-### sensitivity values
-
-| Member
-|:-------------------------
-| normal
-| personal
-| private
-| confidential
-
-
-### importance values
-
-| Member
-|:-------------------------
-| low
-| normal
-| high
-
-### educationUserRole values
-
-| Member             |
-| :----------------- |
-| student            |
-| teacher            |
-| none               |
+| Member |
+| -------------------------- |
+| female |
+| male |
+| other |
 | unknownFutureValue |
 
-### meetingMessageType values
+## eventType values
 
-| Member
-|:-----------------
-| none
-| meetingRequest
-| meetingCancelled
-| meetingAccepted
-| meetingTenativelyAccepted
-| meetingDeclined
+| Member |
+| -------------------------- |
+| singleInstance |
+| occurrence |
+| exception |
+| seriesMaster |
 
+## sensitivity values
 
-### followupFlagStatus values
+| Member |
+| -------------------------- |
+| normal |
+| personal |
+| private |
+| confidential |
 
-| Member
-|:-------------------------
-| notFlagged
-| complete
-| flagged
+## importance values
 
+| Member |
+| -------------------------- |
+| low |
+| normal |
+| high |
 
-### inferenceClassificationType values
+## educationUserRole values
 
-| Member
-|:-----------------
-| focused
-| other
+| Member |
+| ------------------ |
+| student |
+| teacher |
+| none |
+| unknownFutureValue |
 
+## meetingMessageType values
 
-### iosNotificationAlertType values
+| Member |
+| ------------------ |
+| none |
+| meetingRequest |
+| meetingCancelled |
+| meetingAccepted |
+| meetingTenativelyAccepted |
+| meetingDeclined |
 
-| Member
-|:-------------------------
-| deviceDefault
-| banner
-| modal
-| none
+## followupFlagStatus values
 
-### deviceEnrollmentFailureReason values
+| Member |
+| -------------------------- |
+| notFlagged |
+| complete |
+| flagged |
 
-| Member
-|:-------------
-| unknown
-| authentication
-| authorization
-| accountValidation
-| userValidation
-| deviceNotSupported
-| inMaintenance
-| badRequest
-| featureNotSupported
-| enrollmentRestrictionsEnforced
-| clientDisconnected
+## inferenceClassificationType values
 
+| Member |
+| ------------------ |
+| focused |
+| other |
 
-### bodyType values
-| Member
-|:---------
-| text
-| html
+## iosNotificationAlertType values
 
+| Member |
+| -------------------------- |
+| deviceDefault |
+| banner |
+| modal |
+| none |
 
-### locationType values
+## deviceEnrollmentFailureReason values
 
-| Member
-|:-------------------------
-| default
-| conferenceRoom
-| homeAddress
-| businessAddress
-| geoCoordinates
-| streetAddress
-| hotel
-| restaurant
-| localBusiness
-| postalAddress
+| Member |
+| -------------- |
+| unknown |
+| authentication |
+| authorization |
+| accountValidation |
+| userValidation |
+| deviceNotSupported |
+| inMaintenance |
+| badRequest |
+| featureNotSupported |
+| enrollmentRestrictionsEnforced |
+| clientDisconnected |
 
-### locationUniqueIdType values
+## bodyType values
 
-| Member
-|:-------------------------
-| unknown
-| locationStore
-| directory
-| private
-| bing
+| Member |
+| ---------- |
+| text |
+| html |
 
+## locationType values
 
-### messageActionFlag values
+| Member |
+| -------------------------- |
+| default |
+| conferenceRoom |
+| homeAddress |
+| businessAddress |
+| geoCoordinates |
+| streetAddress |
+| hotel |
+| restaurant |
+| localBusiness |
+| postalAddress |
 
-| Member
-|:-------------------------
-| any
-| call
-| doNotForward
-| followUp
-| fyi
-| forward
-| noResponseNecessary
-| read
-| reply
-| replyToAll
-| review
+## locationUniqueIdType values
 
+| Member |
+| -------------------------- |
+| unknown |
+| locationStore |
+| directory |
+| private |
+| bing |
 
-### onenoteUserRole values
+## messageActionFlag values
+
+| Member |
+| -------------------------- |
+| any |
+| call |
+| doNotForward |
+| followUp |
+| fyi |
+| forward |
+| noResponseNecessary |
+| read |
+| reply |
+| replyToAll |
+| review |
+
+## onenoteUserRole values
 
 | Member      | Value |
-| :---------- | :---- |
+| ----------- | ----- |
 | Owner       | 0     |
 | Contributor | 1     |
 | Reader      | 2     |
 | None        | -1    |
 
+## operationStatus values
 
-### operationStatus values
+| Member |
+| ------------------ |
+| NotStarted |
+| Running |
+| Completed |
+| Failed |
 
-| Member
-|:-----------------
-|NotStarted
-|Running
-|Completed
-|Failed
+## onenotePatchActionType values
 
+| Member |
+| -------------------------- |
+| Replace |
+| Append |
+| Delete |
+| Insert |
+| Prepend |
 
-### onenotePatchActionType values
+## onenotePatchInsertPosition values
 
-| Member
-|:-------------------------
-| Replace
-| Append
-| Delete
-| Insert
-| Prepend
+| Member |
+| -------------------------- |
+| After |
+| Before |
 
-### onenotePatchInsertPosition values
+## phoneType values
 
-| Member
-|:-------------------------
-| After
-| Before
+| Member |
+| -------------------------- |
+| home |
+| business |
+| mobile |
+| other |
+| assistant |
+| homeFax |
+| businessFax |
+| otherFax |
+| pager |
+| radio |
 
+## plannerContainerType values
 
-### phoneType values
-
-| Member
-|:-------------------------
-| home
-| business
-| mobile
-| other
-| assistant
-| homeFax
-| businessFax
-| otherFax
-| pager
-| radio
-
-
-### plannerContainerType values
-
-| Member             |
-| :----------------- |
-| group              |
+| Member |
+| ------------------ |
+| group |
 | unknownFutureValue |
-| roster             |
+| roster |
 
+## plannerPreviewType values
 
-### plannerPreviewType values
+| Member |
+| -------------------------- |
+| automatic |
+| noPreview |
+| checklist |
+| description |
+| reference |
 
-| Member
-|:-------------------------
-| automatic
-| noPreview
-| checklist
-| description
-| reference
+## status values
 
+| Member |
+| ------------------ |
+| active |
+| updated |
+| deleted |
+| ignored |
+| unknownFutureValue |
 
-### status values
+## weekIndex values
 
-| Member
-|:-----------------
-| active
-| updated
-| deleted
-| ignored
-| unknownFutureValue
+| Member |
+| -------------------------- |
+| first |
+| second |
+| third |
+| fourth |
+| last |
 
+## dayOfWeek values
 
-### weekIndex values
+| Member |
+| -------------------------- |
+| sunday |
+| monday |
+| tuesday |
+| wednesday |
+| thursday |
+| friday |
+| saturday |
 
-| Member
-|:-------------------------
-| first
-| second
-| third
-| fourth
-| last
+## recurrenceRangeType values
 
+| Member |
+| -------------------------- |
+| endDate |
+| noEnd |
+| numbered |
 
-### dayOfWeek values
+## onenoteSourceService values
 
-| Member
-|:-------------------------
-| sunday
-| monday
-| tuesday
-| wednesday
-| thursday
-| friday
-| saturday
+| Member |
+| ---------------------- |
+| Unknown |
+| OneDrive |
+| OneDriveForBusiness |
+| OnPremOneDriveForBusiness |
 
-### recurrencePatternType values
+## responseType values
 
-| Member
-|:-------------------------
-| daily
-| weekly
-| absoluteMonthly
-| relativeMonthly
-| absoluteYearly
-| relativeYearly
+| Member |
+| -------------------------- |
+| none |
+| organizer |
+| tentativelyAccepted |
+| accepted |
+| declined |
+| notResponded |
 
+## activityDomain values
 
-### recurrenceRangeType values
+| Member |
+| -------------------------- |
+| unknown |
+| work |
+| personal |
+| unrestricted |
 
-| Member
-|:-------------------------
-| endDate
-| noEnd
-| numbered
+## websiteType values
 
+| Member |
+| -------------------------- |
+| other |
+| home |
+| work |
+| blog |
+| profile |
 
-### onenoteSourceService values
-| Member
-|:---------------------
-| Unknown
-| OneDrive
-| OneDriveForBusiness
-| OnPremOneDriveForBusiness
-
-
-### responseType values
-
-| Member
-|:-------------------------
-| none
-| organizer
-| tentativelyAccepted
-| accepted
-| declined
-| notResponded
-
-
-### activityDomain values
-
-| Member
-|:-------------------------
-| unknown
-| work
-| personal
-| unrestricted
-
-
-### websiteType values
-
-| Member
-|:-------------------------
-| other
-| home
-| work
-| blog
-| profile
-
-
-### categoryColor values
+## categoryColor values
 
 | Member   | Value |
-| :------- | :---- |
+| -------- | ----- |
 | none     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
@@ -1566,23 +1564,23 @@ Possible types of Windows settings.
 | preset23 | 23    |
 | preset24 | 24    |
 
-### alertFeedback values
+## alertFeedback values
 
 Possible feedback values on the alert provided by an analyst.
 
 | Member         | Value | Description               |
-| :------------- | :---- | :------------------------ |
+| -------------- | ----- | ------------------------- |
 | unknown        | 0     | Unknown.                  |
 | truePositive   | 1     | Alert is true-positive.   |
 | falsePositive  | 2     | Alert is false-positive.  |
 | benignPositive | 3     | Alert is benign-positive. |
 
-### fileHashType values
+## fileHashType values
 
 Enum for file hash types.
 
 | Member              | Value | Description                    |
-| :------------------ | :---- | :----------------------------- |
+| ------------------- | ----- | ------------------------------ |
 | unknown             | 0     | Unknown type.                  |
 | sha1                | 1     | SHA1 hash type.                |
 | sha256              | 2     | SHA256 hash type.              |
@@ -1593,34 +1591,34 @@ Enum for file hash types.
 | peSha1              | 7     | PESHA1 hash type.              |
 | peSha256            | 8     | PESHA256 hash type.            |
 
-### connectionDirection values
+## connectionDirection values
 
 Enum for the direction of the network connection (inbound/outbound).
 
 | Member   | Value | Description          |
-| :------- | :---- | :------------------- |
+| -------- | ----- | -------------------- |
 | unknown  | 0     | Unknown connection.  |
 | inbound  | 1     | Inbound connection.  |
 | outbound | 2     | Outbound connection. |
 
-### connectionStatus values
+## connectionStatus values
 
 Enum for the status of connections.
 
 | Member    | Value | Description                |
-| :-------- | :---- | :------------------------- |
+| --------- | ----- | -------------------------- |
 | unknown   | 0     | Unknown connection status. |
 | attempted | 1     | Connection attempted.      |
 | succeeded | 2     | Connection succeeded.      |
 | blocked   | 3     | Connection blocked.        |
 | failed    | 4     | Connection failed.         |
 
-### processIntegrityLevel values
+## processIntegrityLevel values
 
 Possible integrity level values of the process.
 
 | Member    | Value | Description                   |
-| :-------- | :---- | :---------------------------- |
+| --------- | ----- | ----------------------------- |
 | unknown   | 0     | Unknown.                      |
 | untrusted | 10    | Integrity level is Untrusted. |
 | low       | 20    | Integrity level is Low.       |
@@ -1628,12 +1626,12 @@ Possible integrity level values of the process.
 | high      | 40    | Integrity level is High.      |
 | system    | 50    | Integrity level is System.    |
 
-### registryHive values
+## registryHive values
 
 Enum for registry hives as defined by [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
-| :---------------------- | :---- | :-------------------------------- |
+| ----------------------- | ----- | --------------------------------- |
 | unknown                 | 0     | Unknown hive.                     |
 | currentConfig           | 1     | HKEY_CURRENT_CONFIG hive.         |
 | currentUser             | 2     | HKEY_CURRENT_USER hive.           |
@@ -1642,23 +1640,23 @@ Enum for registry hives as defined by [/windows/desktop/sysinfo/registry-hives](
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6     | HKEY_USERS\\.DEFAULT hive.        |
 
-### registryOperation values
+## registryOperation values
 
 Operation that changed the registry key name and/or value.
 
 | Member  | Value | Description                  |
-| :------ | :---- | :--------------------------- |
+| ------- | ----- | ---------------------------- |
 | unknown | 0     | Unknown registry value type. |
 | create  | 1     | Create registry.             |
 | modify  | 2     | Modify registry.             |
 | delete  | 3     | Delete registry.             |
 
-### registryValueType values
+## registryValueType values
 
 Enum for registry value types as defined by [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
-| :---------------- | :---- | :------------------------------------------- |
+| ----------------- | ----- | -------------------------------------------- |
 | unknown           | 0     | Unknown registry value type.                 |
 | binary            | 1     | REG_BINARY registry value type.              |
 | dword             | 2     | REG_DWORD registry value type.               |
@@ -1672,44 +1670,45 @@ Enum for registry value types as defined by [/windows/desktop/sysinfo/registry-v
 | qwordlittleEndian | 10    | REG_QWORD_LITTLE_ENDIAN registry value type. |
 | sz                | 11    | REG_SZ registry value type.                  |
 
-### alertSeverity values
+## alertSeverity values
 
 Enum for severity of alerts.
 
 | Member        | Value | Description                       |
-| :------------ | :---- | :-------------------------------- |
+| ------------- | ----- | --------------------------------- |
 | unknown       | 0     | Severity is unknown.              |
 | informational | 1     | Severity is only for information. |
 | low           | 2     | Severity is low.                  |
 | medium        | 3     | Severity is medium.               |
 | high          | 4     | Severity is high.                 |
 
-### alertStatus values
+## alertStatus values
 
 Possible values of an Alert lifecycle status (stage).
 
 | Member     | Value | Description           |
-| :--------- | :---- | :-------------------- |
+| ---------- | ----- | --------------------- |
 | unknown    | 0     | Unknown status.       |
 | newAlert   | 10    | Alert is new.         |
 | inProgress | 20    | Alert is in progress. |
 | resolved   | 30    | Alert is resolved.    |
 
-### emailRole values
+## emailRole values
+
 Possible values for email roles.
 
 | Member    | Value | Description             |
-| :-------- | :---- | :---------------------- |
+| --------- | ----- | ----------------------- |
 | unknown   | 0     | Unknown Role.           |
 | sender    | 1     | Sender of the email.    |
 | recipient | 2     | Recipient of the email. |
 
-### logonType values
+## logonType values
 
 Possible values for the method of user signin.
 
 | Member            | Value | Description                  |
-| :---------------- | :---- | :--------------------------- |
+| ----------------- | ----- | ---------------------------- |
 | unknown           | -1    | Unknown.                     |
 | interactive       | 0     | Logon is interactive.        |
 | remoteInteractive | 1     | Logon is remote interactive. |
@@ -1717,189 +1716,189 @@ Possible values for the method of user signin.
 | batch             | 3     | Logon is batch.              |
 | service           | 4     | Logon is service.            |
 
-### userAccountSecurityType values
+## userAccountSecurityType values
 
 Possible values for user account types (group membership), per Windows definition.
 
 | Member        | Member | Description                     |
-| :------------ | :----- | :------------------------------ |
+| ------------- | ------ | ------------------------------- |
 | unknown       | -1     | Unknown.                        |
 | standard      | 0      | Member of Standard Users group. |
 | power         | 1      | Member of Power Users group.    |
 | administrator | 2      | Member of Administrators group. |
 
-### riskDetail values
+## riskDetail values
 
-| Member                                    |
-| :---------------------------------------- |
-| none                                      |
-| adminGeneratedTemporaryPassword           |
-| userPerformedSecuredPasswordChange        |
-| userPerformedSecuredPasswordReset         |
-| adminConfirmedSigninSafe                  |
-| aiConfirmedSigninSafe                     |
-| userPassedMFADrivenByRiskBasedPolicy      |
-| adminDismissedAllRiskForUser              |
-| adminConfirmedSigninCompromised           |
-| hidden                                    |
-| adminConfirmedUserCompromised             |
-| unknownFutureValue                        |
+| Member |
+| ----------------------------------------- |
+| none |
+| adminGeneratedTemporaryPassword |
+| userPerformedSecuredPasswordChange |
+| userPerformedSecuredPasswordReset |
+| adminConfirmedSigninSafe |
+| aiConfirmedSigninSafe |
+| userPassedMFADrivenByRiskBasedPolicy |
+| adminDismissedAllRiskForUser |
+| adminConfirmedSigninCompromised |
+| hidden |
+| adminConfirmedUserCompromised |
+| unknownFutureValue |
 | adminConfirmedServicePrincipalCompromised |
-| adminDismissedAllRiskForServicePrincipal  |
-| m365DAdminDismissedDetection              |
-| userChangedPasswordOnPremises             |
-| adminDismissedRiskForSignIn               |
-| adminConfirmedAccountSafe                 |
+| adminDismissedAllRiskForServicePrincipal |
+| m365DAdminDismissedDetection |
+| userChangedPasswordOnPremises |
+| adminDismissedRiskForSignIn |
+| adminConfirmedAccountSafe |
 
-### riskEventTypes values
+## riskEventTypes values
 
-| Member
-|:-------------------------
-| unlikelyTravel
-| anonymizedIPAddress
-| maliciousIPAddress
-| unfamiliarFeatures
-| malwareInfectedIPAddress
-| suspiciousIPAddress
-| leakedCredentials
-| investigationsThreatIntelligence
-| generic
-| unknownFutureValue
+| Member |
+| -------------------------- |
+| unlikelyTravel |
+| anonymizedIPAddress |
+| maliciousIPAddress |
+| unfamiliarFeatures |
+| malwareInfectedIPAddress |
+| suspiciousIPAddress |
+| leakedCredentials |
+| investigationsThreatIntelligence |
+| generic |
+| unknownFutureValue |
 
-### riskEventType values
+## riskEventType values
 
-| Member                                       |
-| :------------------------------------------- |
-| unlikelyTravel                               |
-| anonymizedIPAddress                          |
-| maliciousIPAddress                           |
-| unfamiliarFeatures                           |
-| malwareInfectedIPAddress                     |
-| suspiciousIPAddress                          |
-| leakedCredentials                            |
-| investigationsThreatIntelligence             |
-| generic                                      |
-| adminConfirmedUserCompromised                |
-| mcasImpossibleTravel                         |
-| mcasSuspiciousInboxManipulationRules         |
+| Member |
+| -------------------------------------------- |
+| unlikelyTravel |
+| anonymizedIPAddress |
+| maliciousIPAddress |
+| unfamiliarFeatures |
+| malwareInfectedIPAddress |
+| suspiciousIPAddress |
+| leakedCredentials |
+| investigationsThreatIntelligence |
+| generic |
+| adminConfirmedUserCompromised |
+| mcasImpossibleTravel |
+| mcasSuspiciousInboxManipulationRules |
 | investigationsThreatIntelligenceSigninLinked |
-| maliciousIPAddressValidCredentialsBlockedIP  |
-| unknownFutureValue                           |
+| maliciousIPAddressValidCredentialsBlockedIP |
+| unknownFutureValue |
 
-### riskLevel values
+## riskLevel values
 
-| Member
-|:-------------------------
-| none
-| low
-| medium
-| high
-| hidden
-| unknownFutureValue
+| Member |
+| -------------------------- |
+| none |
+| low |
+| medium |
+| high |
+| hidden |
+| unknownFutureValue |
 
-### riskState values
+## riskState values
 
-| Member
-|:-------------------------
-| none
-| confirmedSafe
-| remediated
-| dismissed
-| atRisk
-| confirmedCompromised
-| unknownFutureValue
+| Member |
+| -------------------------- |
+| none |
+| confirmedSafe |
+| remediated |
+| dismissed |
+| atRisk |
+| confirmedCompromised |
+| unknownFutureValue |
 
-### exchangeIdFormat values
+## exchangeIdFormat values
 
-| Member               |
-| :------------------- |
-| entryId              |
-| ewsId                |
-| immutableEntryId     |
-| restId               |
+| Member |
+| -------------------- |
+| entryId |
+| ewsId |
+| immutableEntryId |
+| restId |
 | restImmutableEntryId |
 
-### onlineMeetingProviderType values
+## onlineMeetingProviderType values
 
-| Member           |
-| :--------------- |
-| unknown          |
+| Member |
+| ---------------- |
+| unknown |
 | skypeForBusiness |
 | skypeForConsumer |
 | teamsForBusiness |
 
-### delegateMeetingMessageDeliveryOptions values
+## delegateMeetingMessageDeliveryOptions values
 
-| Member                                  |
-| :-------------------------------------- |
+| Member |
+| --------------------------------------- |
 | sendToDelegateAndInformationToPrincipal |
-| sendToDelegateAndPrincipal              |
-| sendToDelegateOnly                      |
+| sendToDelegateAndPrincipal |
+| sendToDelegateOnly |
 
-### calendarRoleType values
+## calendarRoleType values
 
-| Member                            |
-| :-------------------------------- |
-| none                              |
-| freeBusyRead                      |
-| limitedRead                       |
-| read                              |
-| write                             |
+| Member |
+| --------------------------------- |
+| none |
+| freeBusyRead |
+| limitedRead |
+| read |
+| write |
 | delegateWithoutPrivateEventAccess |
-| delegateWithPrivateEventAccess    |
-| custom                            |
+| delegateWithPrivateEventAccess |
+| custom |
 
-### threatAssessmentContentType values
+## threatAssessmentContentType values
 
 | Member | Value | Description             |
-| :----- | :---- | :---------------------- |
+| ------ | ----- | ----------------------- |
 | mail   | 1     | Mail threat.            |
 | url    | 2     | URL threat.             |
 | file   | 3     | Attachment file threat. |
 
-### threatExpectedAssessment values
+## threatExpectedAssessment values
 
 | Member  | Value | Description                       |
-| :------ | :---- | :-------------------------------- |
+| ------- | ----- | --------------------------------- |
 | block   | 1     | The threat should be blocked.     |
 | unblock | 2     | The threat shouldn't be blocked. |
 
-### threatCategory values
+## threatCategory values
 
 | Member             | Value | Description        |
-| :----------------- | :---- | :----------------- |
+| ------------------ | ----- | ------------------ |
 | spam               | 1     | Spam threat.       |
 | phishing           | 2     | Phishing threat.   |
 | malware            | 3     | Malware threat.    |
 | unknownFutureValue | 4     | A sentinel member. |
 
-### threatAssessmentStatus values
+## threatAssessmentStatus values
 
 | Member    | Value | Description                              |
-| :-------- | :---- | :--------------------------------------- |
+| --------- | ----- | ---------------------------------------- |
 | pending   | 1     | The threat assessment still in progress. |
 | completed | 2     | The threat assessment completed.         |
 
-### threatAssessmentRequestSource values
+## threatAssessmentRequestSource values
 
 | Member        | Value | Description              |
-| :------------ | :---- | :----------------------- |
+| ------------- | ----- | ------------------------ |
 | undefined     | 0     | Not yet know.            |
 | user          | 1     | User submission.         |
 | administrator | 2     | Tenant admin submission. |
 
-### threatAssessmentResultType values
+## threatAssessmentResultType values
 
 | Member             | Value | Description                                          |
-| :----------------- | :---- | :--------------------------------------------------- |
+| ------------------ | ----- | ---------------------------------------------------- |
 | checkPolicy        | 1     | The policy check result, only for `mail` assessment. |
 | rescan             | 2     | The rescan result.                                   |
 | unknownFutureValue | 3     | A sentinel member.                                   |
 
-### mailDestinationRoutingReason values
+## mailDestinationRoutingReason values
 
 | Member                | Value | Description                         |
-| :-------------------- | :---- | :---------------------------------- |
+| --------------------- | ----- | ----------------------------------- |
 | none                  | 0     | Not yet know.                       |
 | mailFlowRule          | 1     | Exchange transport rule.            |
 | safeSender            | 2     | Safe sender list.                   |
@@ -1917,63 +1916,65 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
-### chatMessageType values
+## chatMessageType values
 
-| Value              |
-| :----------------- |
-| message            |
-| chatEvent          |
-| typing             |
+| Value |
+| ------------------ |
+| message |
+| chatEvent |
+| typing |
 | unknownFutureValue |
 | systemEventMessage |
 
-### chatMessagePolicyViolationDlpActionType values
+## chatMessagePolicyViolationDlpActionType values
 
-| Value               |
-| :------------------ |
-| none                |
-| NotifySender        |
-| BlockAccess         |
+| Value |
+| ------------------- |
+| none |
+| NotifySender |
+| BlockAccess |
 | BlockAccessExternal |
 
-### chatMessagePolicyViolationUserActionType values
+## chatMessagePolicyViolationUserActionType values
 
 | Member              | Int value | Description                                                                                                        |
-| :------------------ | :-------- | :----------------------------------------------------------------------------------------------------------------- |
+| ------------------- | --------- | ------------------------------------------------------------------------------------------------------------------ |
 | None                | 0         | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
 | Override            | 1         | Sender has overridden the message verdict and sent the message anyway.                                             |
 | ReportFalsePositive | 2         | Sender has reported the message verdict to the admins as a false positive.                                         |
 
-### chatMessagePolicyViolationVerdictDetailsType values
+## chatMessagePolicyViolationVerdictDetailsType values
 
-| Member                            | Int value | Description                                                                                                                                                                                                                                                           |
-| :-------------------------------- | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| None                              | 0         | User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.                                                             |
-| AllowFalsePositiveOverride        | 1         | User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
-| AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text isn't required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
-| AllowOverrideWithJustification    | 4         | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.                                                                                                                         |
+| Member | Int value | Description |
+| ------ | --------- | ----------- |
+| None | 0 | User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive. |
+| AllowFalsePositiveOverride | 1 | User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text isn't required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`. |
 
-### wellknownListName values
-| Member
-|:----------------------
-| none
-| defaultList
-| flaggedEmails
-| unknownFutureValue
+## wellknownListName values
 
-### taskStatus values
-| Member
-|:----------------------
-| notStarted
-| inProgress
-| completed
-| waitingOnOthers
-| deferred
+| Member |
+| ----------------------- |
+| none |
+| defaultList |
+| flaggedEmails |
+| unknownFutureValue |
 
-### columnTypes values
+## taskStatus values
+
+| Member |
+| ----------------------- |
+| notStarted |
+| inProgress |
+| completed |
+| waitingOnOthers |
+| deferred |
+
+## columnTypes values
 
 | Member             | Description                                        |
-| :----------------- | :------------------------------------------------- |
+| ------------------ | -------------------------------------------------- |
 | note               | Multiline text.                                    |
 | text               | Single line text.                                  |
 | choice             | Choice column                                      |
@@ -1994,1280 +1995,1334 @@ Possible values for user account types (group membership), per Windows definitio
 | approvalStatus     | Content approval status column.                    |
 | unknownFutureValue | UnknownFuturevalue                                 |
 
-### permissionClassificationType values
-
-| Member
-|:-------
-| low
-| medium
-| high
-
-### permissionType values
-
-| Member
-|:-------------------------
-| application
-| delegated
-| delegatedUserConsentable
-
-### printColorMode values
-
-| Member             |
-| :----------------- |
-| blackAndWhite      |
-| grayscale          |
-| color              |
-| auto               |
-| unknownFutureValue |
-
-### printDuplexMode values
-
-| Member             |
-| :----------------- |
-| flipOnLongEdge     |
-| flipOnShortEdge    |
-| oneSided           |
-| unknownFutureValue |
-
-### printerFeedOrientation values
-
-| Member             |
-| :----------------- |
-| longEdgeFirst      |
-| shortEdgeFirst     |
-| unknownFutureValue |
-
-### printFinishing values
-
-| Member             |
-| :----------------- |
-| none               |
-| staple             |
-| punch              |
-| cover              |
-| bind               |
-| saddleStitch       |
-| stitchEdge         |
-| stapleTopLeft      |
-| stapleBottomLeft   |
-| stapleTopRight     |
-| stapleBottomRight  |
-| stitchLeftEdge     |
-| stitchTopEdge      |
-| stitchRightEdge    |
-| stitchBottomEdge   |
-| stapleDualLeft     |
-| stapleDualTop      |
-| stapleDualRight    |
-| stapleDualBottom   |
-| unknownFutureValue |
-
-### printMultipageLayout values
-
-| Member                          |
-| :------------------------------ |
-| clockwiseFromTopLeft            |
-| counterclockwiseFromTopLeft     |
-| counterclockwiseFromTopRight    |
-| clockwiseFromTopRight           |
-| counterclockwiseFromBottomLeft  |
-| clockwiseFromBottomLeft         |
-| counterclockwiseFromBottomRight |
-| clockwiseFromBottomRight        |
-| unknownFutureValue              |
-
-### printOrientation values
-
-| Member             |
-| :----------------- |
-| portrait           |
-| landscape          |
-| reverseLandscape   |
-| reversePortrait    |
-| unknownFutureValue |
-
-### printQuality values
-
-| Member             |
-| :----------------- |
-| low                |
-| medium             |
-| high               |
-| unknownFutureValue |
-
-### printScaling values
-
-| Member             |
-| :----------------- |
-| auto               |
-| shrinkToFit        |
-| fill               |
-| fit                |
-| none               |
-| unknownFutureValue |
-
-### userFlowType values
-
-|Member
-|:----------------------
-| signUp
-| signIn
-| signUpOrSignIn
-| passwordReset
-| profileUpdate
-| resourceOwner
-| unknownFutureValue
-
-### identityUserFlowAttributeDataType values
-
-| Member             |
-| :----------------- |
-| string             |
-| boolean            |
-| int64              |
-| stringCollection   |
-| dateTime           |
-| unknownFutureValue |
-
-### identityUserFlowAttributeType values
-
-| Member             |
-| :----------------- |
-| builtIn            |
-| custom             |
-| required           |
-| unknownFutureValue |
-
-### identityUserFlowAttributeInputType values
-
-| Member               |
-| :------------------- |
-| textBox              |
-| dateTimeDropDown     |
-| radioSingleSelect    |
-| dropdownSingleSelect |
-| emailBox             |
-| checkboxMultiSelect  |
-
-### teamworkActivityTopicSource values
-
-| Member    |
-| :-------- |
-| entityUrl |
-| text      |
-
-
-### provisioningResult values
-
-| Member             |
-| :----------------- |
-| success            |
-| failure            |
-| skipped            |
-| warning            |
-| unknownFutureValue |
-
-### provisioningStepType values
-
-| Member              |
-| :------------------ |
-| import              |
-| scoping             |
-| matching            |
-| processing          |
-| referenceResolution |
-| export              |
-| unknownFutureValue  |
-
-### provisioningStatusErrorCategory values
-
-| Member             |
-| :----------------- |
-| failure            |
-| nonServiceFailure  |
-| success            |
-| unknownFutureValue |
-
-### provisioningAction values
-
-| Member             |
-| :----------------- |
-| other              |
-| create             |
-| delete             |
-| disable            |
-| update             |
-| stagedDelete       |
-| unknownFutureValue |
-
-
-### initiatorType values
-
-| Member             |
-| :----------------- |
-| user               |
-| application        |
-| system             |
-| unknownFutureValue |
-
-### teamworkApplicationIdentityType values
-
-| Member             |
-| :----------------- |
-| aadApplication     |
-| bot                |
-| tenantBot          |
-| office365Connector |
-| outgoingWebhook    |
-| unknownFutureValue |
-
-### teamworkConversationIdentityType values
-
-| Member             |
-| :----------------- |
-| team               |
-| channel            |
-| chat               |
-| unknownFutureValue |
-
-### teamworkUserIdentityType values
-
-| Member                       |
-| :--------------------------- |
-| aadUser                      |
-| onPremiseAadUser             |
-| anonymousGuest               |
-| federatedUser                |
-| personalMicrosoftAccountUser |
-| skypeUser                    |
-| phoneUser                    |
-| unknownFutureValue           |
-| emailUser                    |
-
-### postType values
-
-| Member             |
-| :----------------- |
-| regular            |
-| quick              |
-| strategic          |
-| unknownFutureValue |
-
-### searchAlterationType values
-
-| Member       |
-| :----------- |
-| modification |
-| suggestion   |
-
-### serviceHealthClassificationType values
-
-| Member             |
-| :----------------- |
-| advisory           |
-| incident           |
-| unknownFutureValue |
-
-### serviceHealthOrigin values
-
-| Member             |
-| :----------------- |
-| microsoft          |
-| thirdParty         |
-| customer           |
-| unknownFutureValue |
-
-### featureTargetType values
-
-| Member             |
-| :----------------- |
-| group              |
-| administrativeUnit |
-| role               |
-| unknownFutureValue |
-
-### serviceHealthStatus values
-
-| Member                      |
-| :-------------------------- |
-| serviceOperational          |
-| investigating               |
-| restoringService            |
-| verifyingService            |
-| serviceRestored             |
-| postIncidentReviewPublished |
-| serviceDegradation          |
-| serviceInterruption         |
-| extendedRecovery            |
-| falsePositive               |
-| investigationSuspended      |
-| resolved                    |
-| mitigatedExternal           |
-| mitigated                   |
-| resolvedExternal            |
-| confirmed                   |
-| reported                    |
-| unknownFutureValue          |
-
-### serviceUpdateCategory values
-
-| Member             |
-| :----------------- |
-| preventOrFixIssue  |
-| planForChange      |
-| stayInformed       |
-| unknownFutureValue |
-
-### serviceUpdateSeverity values
-
-| Member             |
-| :----------------- |
-| normal             |
-| high               |
-| critical           |
-| unknownFutureValue |
-
-### subjectRightsRequestStage values
-
-| Member             |
-| :----------------- |
-| contentRetrieval   |
-| contentReview      |
-| generateReport     |
-| contentDeletion    |
-| caseResolved       |
-| unknownFutureValue |
-| approval           |
-
-### subjectRightsRequestStageStatus values
-
-| Member             |
-| :----------------- |
-| notStarted         |
-| current            |
-| completed          |
-| failed             |
-| unknownFutureValue |
-
-### subjectRightsRequestStatus values
-
-| Member             |
-| :----------------- |
-| active             |
-| closed             |
-| unknownFutureValue |
-
-### subjectRightsRequestType values
-
-| Member             |
-| :----------------- |
-| export             |
-| delete             |
-| access             |
-| tagForAction       |
-| unknownFutureValue |
-
-### dataSubjectType values
-
-| Member              |
-| :------------------ |
-| customer            |
-| currentEmployee     |
-| formerEmployee      |
-| prospectiveEmployee |
-| student             |
-| teacher             |
-| faculty             |
-| other               |
-| unknownFutureValue  |
-
-### advancedConfigState values
-
-| Member             |
-| :----------------- |
-| default            |
-| enabled            |
-| disabled           |
-| unknownFutureValue |
-
-### callRecordingStatus values
-
-| Member             |
-| :----------------- |
-| success            |
-| failure            |
-| initial            |
-| chunkFinished      |
-| unknownFutureValue |
-
-### endUserNotificationPreference values
-
-|Member|
-|:---|
-|unknown|
-|microsoft|
-|custom|
-|unknownFutureValue|
-
-### endUserNotificationSettingType values
-
-|Member|
-|:---|
-|unknown|
-|noTraining|
-|trainingSelected|
-|noNotification|
-|unknownFutureValue|
-
-### endUserNotificationType values
-
-|Member|
-|:---|
-|unknown|
-|positiveReinforcement|
-|noTraining|
-|trainingAssignment|
-|trainingReminder|
-|unknownFutureValue|
-
-### notificationDeliveryFrequency values
-
-|Member|
-|:---|
-|unknown|
-|weekly|
-|biWeekly|
-|unknownFutureValue|
-
-### notificationDeliveryPreference values
-
-|Member|
-|:---|
-|unknown|
-|deliverImmedietly|
-|deliverAfterCampaignEnd|
-|unknownFutureValue|
-
-### oAuthAppScope values
-
-|Member|
-|:---|
-|unknown|
-|readCalendar|
-|readContact|
-|readMail|
-|readAllChat|
-|readAllFile|
-|readAndWriteMail|
-|sendMail|
-|unknownFutureValue|
-
-### targettedUserType values
-
-|Member|
-|:---|
-|unknown|
-|clicked|
-|compromised|
-|allUsers|
-|unknownFutureValue|
-
-### trainingAssignedTo values
-
-|Member|
-|:---|
-|none|
-|allUsers|
-|clickedPayload|
-|compromised|
-|reportedPhish|
-|readButNotClicked|
-|didNothing|
-|unknownFutureValue|
-
-### trainingAvailabilityStatus values
-
-|Member|
-|:---|
-|unknown|
-|notAvailable|
-|available|
-|archive|
-|delete|
-|unknownFutureValue|
-
-### trainingCompletionDuration values
-
-| Member             |
-| :------------------|
-| week               |
-| fortnite           |
-| month              |
-| unknownFutureValue |
-
-### trainingSettingType values
-
-|Member|
-|:---|
-|microsoftCustom|
-|microsoftManaged|
-|noTraining|
-|custom|
-|unknownFutureValue|
-
-### trainingType values
-
-|Member|
-|:---|
-|unknown|
-|phishing|
-|unknownFutureValue|
-
-### payloadDeliveryPlatform values
-
-| Member             |
-| :----------------- |
-| unknown            |
-| sms                |
-| email              |
-| teams              |
-| unknownFutureValue |
-
-### trainingStatus values
-
-| Member             |
-| :----------------- |
-| unknown            |
-| assigned           |
-| inProgress         |
-| completed          |
-| overdue            |
-| unknownFutureValue |
-
-### teamworkCallEventType values
-
-| Member             |
-| :----------------- |
-| call               |
-| meeting            |
-| screenShare        |
-| unknownFutureValue |
-
-### bookingReminderRecipients values
-
-| Member             |
-| :----------------- |
-| allAttendees       |
-| staff              |
-| customer           |
-| unknownFutureValue |
-
-### bookingStaffRole values
-
-| Member             |
-| :----------------- |
-| guest              |
-| administrator      |
-| viewer             |
-| externalGuest      |
-| unknownFutureValue |
-| scheduler          |
-| teamMember         |
-
-### answerInputType values
-
-| Member             |
-| :----------------- |
-| text               |
-| radioButton        |
-| unknownFutureValue |
-
-### bookingPriceType values
-
-| Member             |
-| :----------------- |
-| undefined          |
-| fixedPrice         |
-| startingAt         |
-| hourly             |
-| free               |
-| priceVaries        |
-| callUs             |
-| notSet             |
-| unknownFutureValue |
-
-### accessReviewHistoryStatus values
-
-| Member             |
-| :----------------- |
-| done               |
-| inprogress         |
-| error              |
-| requested          |
-| unknownFutureValue |
-
-### accessReviewHistoryDecisionFilter values
-
-| Member             |
-| :----------------- |
-| approve            |
-| deny               |
-| notReviewed        |
-| dontKnow           |
-| notNotified        |
-| unknownFutureValue |
-
-### weakAlgorithms values
-
-|Member|
-|:---|
-|rsaSha1|
-|unknownFutureValue|
-
-### authenticationProtocol values
+## permissionClassificationType values
 
 | Member |
-| :----- |
-| wsFed  |
-| saml   |
+| -------- |
+| low |
+| medium |
+| high |
 
-### longRunningOperationStatus values
+## permissionType values
 
-| Member             |
-| :----------------- |
-| notStarted         |
-| running            |
-| succeeded          |
-| failed             |
+| Member |
+| -------------------------- |
+| application |
+| delegated |
+| delegatedUserConsentable |
+
+## printColorMode values
+
+| Member |
+| ------------------ |
+| blackAndWhite |
+| grayscale |
+| color |
+| auto |
 | unknownFutureValue |
 
-### delegatedAdminAccessAssignmentStatus values
+## printDuplexMode values
 
-| Member             |
-| :----------------- |
-| pending            |
-| active             |
-| deleting           |
-| deleted            |
-| error              |
+| Member |
+| ------------------ |
+| flipOnLongEdge |
+| flipOnShortEdge |
+| oneSided |
 | unknownFutureValue |
 
-### delegatedAdminAccessContainerType values
+## printerFeedOrientation values
 
-| Member             |
-| :----------------- |
-| securityGroup      |
+| Member |
+| ------------------ |
+| longEdgeFirst |
+| shortEdgeFirst |
 | unknownFutureValue |
 
-### delegatedAdminRelationshipOperationType values
+## printFinishing values
 
-| Member                               |
-| :----------------------------------- |
+| Member |
+| ------------------ |
+| none |
+| staple |
+| punch |
+| cover |
+| bind |
+| saddleStitch |
+| stitchEdge |
+| stapleTopLeft |
+| stapleBottomLeft |
+| stapleTopRight |
+| stapleBottomRight |
+| stitchLeftEdge |
+| stitchTopEdge |
+| stitchRightEdge |
+| stitchBottomEdge |
+| stapleDualLeft |
+| stapleDualTop |
+| stapleDualRight |
+| stapleDualBottom |
+| unknownFutureValue |
+| stapleTripleLeft |
+| stapleTripleTop |
+| stapleTripleRight |
+| stapleTripleBottom |
+| bindLeft |
+| bindTop |
+| bindRight |
+| bindBottom |
+| foldAccordion |
+| foldDoubleGate |
+| foldGate |
+| foldHalf |
+| foldHalfZ |
+| foldLeftGate |
+| foldLetter |
+| foldParallel |
+| foldPoster |
+| foldRightGate |
+| foldZ |
+| foldEngineeringZ |
+| punchTopLeft |
+| punchBottomLeft |
+| punchTopRight |
+| punchBottomRight |
+| punchDualLeft |
+| punchDualTop |
+| punchDualRight |
+| punchDualBottom |
+| punchTripleLeft |
+| punchTripleTop |
+| punchTripleRight |
+| punchTripleBottom |
+| punchQuadLeft |
+| punchQuadTop |
+| punchQuadRight |
+| punchQuadBottom |
+| fold |
+| trim |
+| bale |
+| bookletMaker |
+| coat |
+| laminate |
+| trimAfterPages |
+| trimAfterDocuments |
+| trimAfterCopies |
+| trimAfterJob |
+
+## printMultipageLayout values
+
+| Member |
+| ------------------------------- |
+| clockwiseFromTopLeft |
+| counterclockwiseFromTopLeft |
+| counterclockwiseFromTopRight |
+| clockwiseFromTopRight |
+| counterclockwiseFromBottomLeft |
+| clockwiseFromBottomLeft |
+| counterclockwiseFromBottomRight |
+| clockwiseFromBottomRight |
+| unknownFutureValue |
+
+## printOrientation values
+
+| Member |
+| ------------------ |
+| portrait |
+| landscape |
+| reverseLandscape |
+| reversePortrait |
+| unknownFutureValue |
+
+## printQuality values
+
+| Member |
+| ------------------ |
+| low |
+| medium |
+| high |
+| unknownFutureValue |
+
+## printScaling values
+
+| Member |
+| ------------------ |
+| auto |
+| shrinkToFit |
+| fill |
+| fit |
+| none |
+| unknownFutureValue |
+
+## userFlowType values
+
+| Member |
+| ----------------------- |
+| signUp |
+| signIn |
+| signUpOrSignIn |
+| passwordReset |
+| profileUpdate |
+| resourceOwner |
+| unknownFutureValue |
+
+## identityUserFlowAttributeDataType values
+
+| Member |
+| ------------------ |
+| string |
+| boolean |
+| int64 |
+| stringCollection |
+| dateTime |
+| unknownFutureValue |
+
+## identityUserFlowAttributeType values
+
+| Member |
+| ------------------ |
+| builtIn |
+| custom |
+| required |
+| unknownFutureValue |
+
+## identityUserFlowAttributeInputType values
+
+| Member |
+| -------------------- |
+| textBox |
+| dateTimeDropDown |
+| radioSingleSelect |
+| dropdownSingleSelect |
+| emailBox |
+| checkboxMultiSelect |
+
+## authenticationAttributeCollectionInputType values
+
+| Member |
+| ---- |
+| text |
+| radioSingleSelect |
+| checkboxMultiSelect |
+| boolean |
+| unknownFutureValue |
+
+## teamworkActivityTopicSource values
+
+| Member |
+| --------- |
+| entityUrl |
+| text |
+
+## provisioningResult values
+
+| Member |
+| ------------------ |
+| success |
+| failure |
+| skipped |
+| warning |
+| unknownFutureValue |
+
+## provisioningStepType values
+
+| Member |
+| ------------------- |
+| import |
+| scoping |
+| matching |
+| processing |
+| referenceResolution |
+| export |
+| unknownFutureValue |
+
+## provisioningStatusErrorCategory values
+
+| Member |
+| ------------------ |
+| failure |
+| nonServiceFailure |
+| success |
+| unknownFutureValue |
+
+## provisioningAction values
+
+| Member |
+| ------------------ |
+| other |
+| create |
+| delete |
+| disable |
+| update |
+| stagedDelete |
+| unknownFutureValue |
+
+## initiatorType values
+
+| Member |
+| ------------------ |
+| user |
+| application |
+| system |
+| unknownFutureValue |
+
+## teamworkApplicationIdentityType values
+
+| Member |
+| ------------------ |
+| aadApplication |
+| bot |
+| tenantBot |
+| office365Connector |
+| outgoingWebhook |
+| unknownFutureValue |
+
+## teamworkConversationIdentityType values
+
+| Member |
+| ------------------ |
+| team |
+| channel |
+| chat |
+| unknownFutureValue |
+
+## teamworkUserIdentityType values
+
+| Member |
+| ---------------------------- |
+| aadUser |
+| onPremiseAadUser |
+| anonymousGuest |
+| federatedUser |
+| personalMicrosoftAccountUser |
+| skypeUser |
+| phoneUser |
+| unknownFutureValue |
+| emailUser |
+
+## postType values
+
+| Member |
+| ------------------ |
+| regular |
+| quick |
+| strategic |
+| unknownFutureValue |
+
+## searchAlterationType values
+
+| Member |
+| ------------ |
+| modification |
+| suggestion |
+
+## serviceHealthClassificationType values
+
+| Member |
+| ------------------ |
+| advisory |
+| incident |
+| unknownFutureValue |
+
+## serviceHealthOrigin values
+
+| Member |
+| ------------------ |
+| microsoft |
+| thirdParty |
+| customer |
+| unknownFutureValue |
+
+## featureTargetType values
+
+| Member |
+| ------------------ |
+| group |
+| administrativeUnit |
+| role |
+| unknownFutureValue |
+
+## serviceHealthStatus values
+
+| Member |
+| --------------------------- |
+| serviceOperational |
+| investigating |
+| restoringService |
+| verifyingService |
+| serviceRestored |
+| postIncidentReviewPublished |
+| serviceDegradation |
+| serviceInterruption |
+| extendedRecovery |
+| falsePositive |
+| investigationSuspended |
+| resolved |
+| mitigatedExternal |
+| mitigated |
+| resolvedExternal |
+| confirmed |
+| reported |
+| unknownFutureValue |
+
+## serviceUpdateCategory values
+
+| Member |
+| ------------------ |
+| preventOrFixIssue |
+| planForChange |
+| stayInformed |
+| unknownFutureValue |
+
+## serviceUpdateSeverity values
+
+| Member |
+| ------------------ |
+| normal |
+| high |
+| critical |
+| unknownFutureValue |
+
+## subjectRightsRequestStage values
+
+| Member |
+| ------------------ |
+| contentRetrieval |
+| contentReview |
+| generateReport |
+| contentDeletion |
+| caseResolved |
+| unknownFutureValue |
+| approval |
+
+## subjectRightsRequestStageStatus values
+
+| Member |
+| ------------------ |
+| notStarted |
+| current |
+| completed |
+| failed |
+| unknownFutureValue |
+
+## subjectRightsRequestStatus values
+
+| Member |
+| ------------------ |
+| active |
+| closed |
+| unknownFutureValue |
+
+## subjectRightsRequestType values
+
+| Member |
+| ------------------ |
+| export |
+| delete |
+| access |
+| tagForAction |
+| unknownFutureValue |
+
+## dataSubjectType values
+
+| Member |
+| ------------------- |
+| customer |
+| currentEmployee |
+| formerEmployee |
+| prospectiveEmployee |
+| student |
+| teacher |
+| faculty |
+| other |
+| unknownFutureValue |
+
+## advancedConfigState values
+
+| Member |
+| ------------------ |
+| default |
+| enabled |
+| disabled |
+| unknownFutureValue |
+
+## callRecordingStatus values
+
+| Member |
+| ------------------ |
+| success |
+| failure |
+| initial |
+| chunkFinished |
+| unknownFutureValue |
+
+## endUserNotificationPreference values
+
+| Member |
+| ---- |
+| unknown |
+| microsoft |
+| custom |
+| unknownFutureValue |
+
+## endUserNotificationSettingType values
+
+| Member |
+| ---- |
+| unknown |
+| noTraining |
+| trainingSelected |
+| noNotification |
+| unknownFutureValue |
+
+## endUserNotificationType values
+
+| Member |
+| ---- |
+| unknown |
+| positiveReinforcement |
+| noTraining |
+| trainingAssignment |
+| trainingReminder |
+| unknownFutureValue |
+
+## notificationDeliveryFrequency values
+
+| Member |
+| ---- |
+| unknown |
+| weekly |
+| biWeekly |
+| unknownFutureValue |
+
+## notificationDeliveryPreference values
+
+| Member |
+| ---- |
+| unknown |
+| deliverImmedietly |
+| deliverAfterCampaignEnd |
+| unknownFutureValue |
+
+## oAuthAppScope values
+
+| Member |
+| ---- |
+| unknown |
+| readCalendar |
+| readContact |
+| readMail |
+| readAllChat |
+| readAllFile |
+| readAndWriteMail |
+| sendMail |
+| unknownFutureValue |
+
+## targettedUserType values
+
+| Member |
+| ---- |
+| unknown |
+| clicked |
+| compromised |
+| allUsers |
+| unknownFutureValue |
+
+## trainingAssignedTo values
+
+| Member |
+| ---- |
+| none |
+| allUsers |
+| clickedPayload |
+| compromised |
+| reportedPhish |
+| readButNotClicked |
+| didNothing |
+| unknownFutureValue |
+
+## trainingAvailabilityStatus values
+
+| Member |
+| ---- |
+| unknown |
+| notAvailable |
+| available |
+| archive |
+| delete |
+| unknownFutureValue |
+
+## trainingCompletionDuration values
+
+| Member |
+| ------------------- |
+| week |
+| fortnite |
+| month |
+| unknownFutureValue |
+
+## trainingSettingType values
+
+| Member |
+| ---- |
+| microsoftCustom |
+| microsoftManaged |
+| noTraining |
+| custom |
+| unknownFutureValue |
+
+## trainingType values
+
+| Member |
+| ---- |
+| unknown |
+| phishing |
+| unknownFutureValue |
+
+## payloadDeliveryPlatform values
+
+| Member |
+| ------------------ |
+| unknown |
+| sms |
+| email |
+| teams |
+| unknownFutureValue |
+
+## trainingStatus values
+
+| Member |
+| ------------------ |
+| unknown |
+| assigned |
+| inProgress |
+| completed |
+| overdue |
+| unknownFutureValue |
+
+## teamworkCallEventType values
+
+| Member |
+| ------------------ |
+| call |
+| meeting |
+| screenShare |
+| unknownFutureValue |
+
+## bookingReminderRecipients values
+
+| Member |
+| ------------------ |
+| allAttendees |
+| staff |
+| customer |
+| unknownFutureValue |
+
+## bookingStaffRole values
+
+| Member |
+| ------------------ |
+| guest |
+| administrator |
+| viewer |
+| externalGuest |
+| unknownFutureValue |
+| scheduler |
+| teamMember |
+
+## answerInputType values
+
+| Member |
+| ------------------ |
+| text |
+| radioButton |
+| unknownFutureValue |
+
+## bookingPriceType values
+
+| Member |
+| ------------------ |
+| undefined |
+| fixedPrice |
+| startingAt |
+| hourly |
+| free |
+| priceVaries |
+| callUs |
+| notSet |
+| unknownFutureValue |
+
+## accessReviewHistoryStatus values
+
+| Member |
+| ------------------ |
+| done |
+| inprogress |
+| error |
+| requested |
+| unknownFutureValue |
+
+## accessReviewHistoryDecisionFilter values
+
+| Member |
+| ------------------ |
+| approve |
+| deny |
+| notReviewed |
+| dontKnow |
+| notNotified |
+| unknownFutureValue |
+
+## weakAlgorithms values
+
+| Member |
+| ---- |
+| rsaSha1 |
+| unknownFutureValue |
+
+## authenticationProtocol values
+
+| Member |
+| ------ |
+| wsFed |
+| saml |
+
+## longRunningOperationStatus values
+
+| Member |
+| ------------------ |
+| notStarted |
+| running |
+| succeeded |
+| failed |
+| unknownFutureValue |
+
+## delegatedAdminAccessAssignmentStatus values
+
+| Member |
+| ------------------ |
+| pending |
+| active |
+| deleting |
+| deleted |
+| error |
+| unknownFutureValue |
+
+## delegatedAdminAccessContainerType values
+
+| Member |
+| ------------------ |
+| securityGroup |
+| unknownFutureValue |
+
+## delegatedAdminRelationshipOperationType values
+
+| Member |
+| ------------------------------------ |
 | delegatedAdminAccessAssignmentUpdate |
-| unknownFutureValue                   |
-
-### delegatedAdminRelationshipRequestAction values
-
-| Member             |
-| :----------------- |
-| lockForApproval    |
-| approve            |
-| terminate          |
-| unknownFutureValue |
-| reject             |
-
-### delegatedAdminRelationshipRequestStatus values
-
-| Member             |
-| :----------------- |
-| created            |
-| pending            |
-| succeeded          |
-| failed             |
 | unknownFutureValue |
 
-### delegatedAdminRelationshipStatus values
+## delegatedAdminRelationshipRequestAction values
 
-| Member               |
-| :------------------- |
-| activating           |
-| active               |
-| approvalPending      |
-| approved             |
-| created              |
-| expired              |
-| expiring             |
-| terminated           |
-| terminating          |
+| Member |
+| ------------------ |
+| lockForApproval |
+| approve |
+| terminate |
+| unknownFutureValue |
+| reject |
+
+## delegatedAdminRelationshipRequestStatus values
+
+| Member |
+| ------------------ |
+| created |
+| pending |
+| succeeded |
+| failed |
+| unknownFutureValue |
+
+## delegatedAdminRelationshipStatus values
+
+| Member |
+| -------------------- |
+| activating |
+| active |
+| approvalPending |
+| approved |
+| created |
+| expired |
+| expiring |
+| terminated |
+| terminating |
 | terminationRequested |
-| unknownFutureValue   |
+| unknownFutureValue |
 
-### onPremisesDirectorySynchronizationDeletionPreventionType values
+## onPremisesDirectorySynchronizationDeletionPreventionType values
 
-| Member               |
-| :------------------- |
-| disabled             |
-| enabledForCount      |
+| Member |
+| -------------------- |
+| disabled |
+| enabledForCount |
 | enabledForPercentage |
 
-### searchContent values
+## searchContent values
 
-| Member             |
-| :----------------- |
-| sharedContent      |
-| privateContent     |
+| Member |
+| ------------------ |
+| sharedContent |
+| privateContent |
 | unknownFutureValue |
 
-### authenticationMethodsPolicyMigrationState values
+## authenticationMethodsPolicyMigrationState values
 
-|Member|
-|:-----|
-|premigration|
-|migrationInProgress|
-|migrationComplete|
-|unknownFutureValue|
+| Member |
+| ------ |
+| premigration |
+| migrationInProgress |
+| migrationComplete |
+| unknownFutureValue |
 
-### authenticationStrengthPolicyType values
+## authenticationStrengthPolicyType values
 
-|Member|
-|:---|
-|builtIn|
-|custom|
-|unknownFutureValue|
+| Member |
+| ---- |
+| builtIn |
+| custom |
+| unknownFutureValue |
 
-### authenticationStrengthRequirements values
+## authenticationStrengthRequirements values
 
-|Member|
-|:---|
-|none|
-|mfa|
-|unknownFutureValue|
+| Member |
+| ---- |
+| none |
+| mfa |
+| unknownFutureValue |
 
-### authenticationMethodModes values
+## authenticationMethodModes values
 
-|Member|
-|:---|
-|password|
-|voice|
-|hardwareOath|
-|softwareOath|
-|sms|
-|fido2|
-|windowsHelloForBusiness|
-|microsoftAuthenticatorPush|
-|deviceBasedPush|
-|temporaryAccessPassOneTime|
-|temporaryAccessPassMultiUse|
-|email|
-|x509CertificateSingleFactor|
-|x509CertificateMultiFactor|
-|federatedSingleFactor|
-|federatedMultiFactor|
-|unknownFutureValue|
+| Member |
+| ---- |
+| password |
+| voice |
+| hardwareOath |
+| softwareOath |
+| sms |
+| fido2 |
+| windowsHelloForBusiness |
+| microsoftAuthenticatorPush |
+| deviceBasedPush |
+| temporaryAccessPassOneTime |
+| temporaryAccessPassMultiUse |
+| email |
+| x509CertificateSingleFactor |
+| x509CertificateMultiFactor |
+| federatedSingleFactor |
+| federatedMultiFactor |
+| unknownFutureValue |
 
-### baseAuthenticationMethod values
+## baseAuthenticationMethod values
 
-|Member|
-|:---|
-|password|
-|voice|
-|hardwareOath|
-|softwareOath|
-|sms|
-|fido|
-|microsoftAuthenticator|
-|windowsHelloForBusiness|
-|temporaryAccessPass|
-|email|
-|x509Certificate|
-|federation|
-|unknownFutureValue|
+| Member |
+| ---- |
+| password |
+| voice |
+| hardwareOath |
+| softwareOath |
+| sms |
+| fido |
+| microsoftAuthenticator |
+| windowsHelloForBusiness |
+| temporaryAccessPass |
+| email |
+| x509Certificate |
+| federation |
+| unknownFutureValue |
 
-### browserSharedCookieSourceEnvironment values
+## browserSharedCookieSourceEnvironment values
 
-| Member|
-|:-----------------|
-|microsoftEdge|
-|internetExplorer11|
-|both|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| microsoftEdge |
+| internetExplorer11 |
+| both |
+| unknownFutureValue |
 
-### browserSiteCompatibilityMode values
+## browserSiteCompatibilityMode values
 
-| Member|
-|:-----------------|
-|default|
-|internetExplorer8Enterprise|
-|internetExplorer7Enterprise|
-|internetExplorer11|
-|internetExplorer10|
-|internetExplorer9|
-|internetExplorer8|
-|internetExplorer7|
-|internetExplorer5|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| default |
+| internetExplorer8Enterprise |
+| internetExplorer7Enterprise |
+| internetExplorer11 |
+| internetExplorer10 |
+| internetExplorer9 |
+| internetExplorer8 |
+| internetExplorer7 |
+| internetExplorer5 |
+| unknownFutureValue |
 
-### browserSiteMergeType values
+## browserSiteMergeType values
 
-| Member|
-|:-----------------|
-|noMerge|
-|default|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| noMerge |
+| default |
+| unknownFutureValue |
 
-### browserSiteTargetEnvironment values
+## browserSiteTargetEnvironment values
 
-| Member|
-|:-----------------|
-|internetExplorerMode|
-|internetExplorer11|
-|microsoftEdge|
-|configurable|
-|none|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| internetExplorerMode |
+| internetExplorer11 |
+| microsoftEdge |
+| configurable |
+| none |
+| unknownFutureValue |
 
-### browserSiteStatus values
+## browserSiteStatus values
 
-| Member|
-|:-----------------|
-|published|
-|pendingAdd|
-|pendingEdit|
-|pendingDelete|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| published |
+| pendingAdd |
+| pendingEdit |
+| pendingDelete |
+| unknownFutureValue |
 
-### browserSharedCookieStatus values
+## browserSharedCookieStatus values
 
-| Member|
-|:-----------------|
-|published|
-|pendingAdd|
-|pendingEdit|
-|pendingDelete|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| published |
+| pendingAdd |
+| pendingEdit |
+| pendingDelete |
+| unknownFutureValue |
 
-### browserSiteListStatus values
+## browserSiteListStatus values
 
-| Member|
-|:-----------------|
-|draft|
-|published|
-|pending|
-|unknownFutureValue|
+| Member |
+| ------------------ |
+| draft |
+| published |
+| pending |
+| unknownFutureValue |
 
-### chatMessageActions values
+## chatMessageActions values
 
-|Member|
-|:---|
-|reactionAdded|
-|reactionRemoved|
-|actionUndefined|
-|unknownFutureValue|
+| Member |
+| ---- |
+| reactionAdded |
+| reactionRemoved |
+| actionUndefined |
+| unknownFutureValue |
 
-### attributeDefinitionMetadata values
+## attributeDefinitionMetadata values
 
-|Member|
-|:---|
-|BaseAttributeName|
-|ComplexObjectDefinition|
-|IsContainer|
-|IsCustomerDefined|
-|IsDomainQualified|
-|LinkPropertyNames|
-|LinkTypeName|
-|MaximumLength|
-|ReferencedProperty|
+| Member |
+| ---- |
+| BaseAttributeName |
+| ComplexObjectDefinition |
+| IsContainer |
+| IsCustomerDefined |
+| IsDomainQualified |
+| LinkPropertyNames |
+| LinkTypeName |
+| MaximumLength |
+| ReferencedProperty |
 
-### attributeFlowBehavior values
+## attributeFlowBehavior values
 
-|Member|
-|:---|
-|FlowWhenChanged|
-|FlowAlways|
+| Member |
+| ---- |
+| FlowWhenChanged |
+| FlowAlways |
 
-### attributeFlowType values
+## attributeFlowType values
 
-| Member            |
-| :---------------- |
-| Always            |
-| ObjectAddOnly     |
+| Member |
+| ----------------- |
+| Always |
+| ObjectAddOnly |
 | MultiValueAddOnly |
-| ValueAddOnly      |
-| AttributeAddOnly  |
+| ValueAddOnly |
+| AttributeAddOnly |
 
-### attributeMappingSourceType values
+## attributeMappingSourceType values
 
-| Member    |
-| :-------- |
+| Member |
+| --------- |
 | Attribute |
-| Constant  |
-| Function  |
+| Constant |
+| Function |
 
-### directoryDefinitionDiscoverabilities values
+## directoryDefinitionDiscoverabilities values
 
-| Member              |
-| :------------------ |
-| None                |
-| AttributeNames      |
-| AttributeDataTypes  |
-| AttributeReadOnly   |
+| Member |
+| ------------------- |
+| None |
+| AttributeNames |
+| AttributeDataTypes |
+| AttributeReadOnly |
 | ReferenceAttributes |
-| UnknownFutureValue  |
+| UnknownFutureValue |
 
-### attributeType values
+## attributeType values
 
-| Member    |
-| :-------- |
-| String    |
-| Integer   |
+| Member |
+| --------- |
+| String |
+| Integer |
 | Reference |
-| Binary    |
-| Boolean   |
-| DateTime  |
+| Binary |
+| Boolean |
+| DateTime |
 
-### mutability values
+## mutability values
 
-| Member    |
-| :-------- |
+| Member |
+| --------- |
 | ReadWrite |
-| ReadOnly  |
+| ReadOnly |
 | Immutable |
 | WriteOnly |
 
-### objectDefinitionMetadata values
+## objectDefinitionMetadata values
 
-|Member|
-|:---|
-|PropertyNameAccountEnabled|
-|PropertyNameSoftDeleted|
-|IsSoftDeletionSupported|
-|IsSynchronizeAllSupported|
-|ConnectorDataStorageRequired|
-|Extensions|
-|BaseObjectName|
+| Member |
+| ---- |
+| PropertyNameAccountEnabled |
+| PropertyNameSoftDeleted |
+| IsSoftDeletionSupported |
+| IsSynchronizeAllSupported |
+| ConnectorDataStorageRequired |
+| Extensions |
+| BaseObjectName |
 
-### objectFlowTypes values
+## objectFlowTypes values
 
-|Member|
-|:---|
-|None|
-|Add|
-|Update|
-|Delete|
+| Member |
+| ---- |
+| None |
+| Add |
+| Update |
+| Delete |
 
-### objectMappingMetadata values
+## objectMappingMetadata values
 
-|Member|
-|:---|
-|EscrowBehavior|
-|DisableMonitoringForChanges|
-|OriginalJoiningProperty|
-|Disposition|
-|IsCustomerDefined|
-|ExcludeFromReporting|
-|Unsynchronized|
+| Member |
+| ---- |
+| EscrowBehavior |
+| DisableMonitoringForChanges |
+| OriginalJoiningProperty |
+| Disposition |
+| IsCustomerDefined |
+| ExcludeFromReporting |
+| Unsynchronized |
 
-### synchronizationMetadata values
+## synchronizationMetadata values
 
-|Member|
-|:---|
-|GalleryApplicationIdentifier|
-|GalleryApplicationKey|
-|IsOAuthEnabled|
-|IsSynchronizationAgentAssignmentRequired|
-|IsSynchronizationAgentRequired|
-|IsSynchronizationInPreview|
-|OAuthSettings|
-|SynchronizationLearnMoreIbizaFwLink|
-|ConfigurationFields|
+| Member |
+| ---- |
+| GalleryApplicationIdentifier |
+| GalleryApplicationKey |
+| IsOAuthEnabled |
+| IsSynchronizationAgentAssignmentRequired |
+| IsSynchronizationAgentRequired |
+| IsSynchronizationInPreview |
+| OAuthSettings |
+| SynchronizationLearnMoreIbizaFwLink |
+| ConfigurationFields |
 
-### synchronizationSecret values
+## synchronizationSecret values
 
-| Member                          |
-| :------------------------------ |
-| None                            |
-| UserName                        |
-| Password                        |
-| SecretToken                     |
-| AppKey                          |
-| BaseAddress                     |
-| ClientIdentifier                |
-| ClientSecret                    |
-| SingleSignOnType                |
-| Sandbox                         |
-| Url                             |
-| Domain                          |
-| ConsumerKey                     |
-| ConsumerSecret                  |
-| TokenKey                        |
-| TokenExpiration                 |
-| Oauth2AccessToken               |
-| Oauth2AccessTokenCreationTime   |
-| Oauth2RefreshToken              |
-| SyncAll                         |
-| InstanceName                    |
-| Oauth2ClientId                  |
-| Oauth2ClientSecret              |
-| CompanyId                       |
-| UpdateKeyOnSoftDelete           |
-| SynchronizationSchedule         |
-| SystemOfRecord                  |
-| SandboxName                     |
-| EnforceDomain                   |
-| SyncNotificationSettings        |
-| SkipOutOfScopeDeletions         |
-| Oauth2AuthorizationCode         |
-| Oauth2RedirectUri               |
-| ApplicationTemplateIdentifier   |
-| Oauth2TokenExchangeUri          |
-| Oauth2AuthorizationUri          |
-| AuthenticationType              |
-| Server                          |
+| Member |
+| ------------------------------- |
+| None |
+| UserName |
+| Password |
+| SecretToken |
+| AppKey |
+| BaseAddress |
+| ClientIdentifier |
+| ClientSecret |
+| SingleSignOnType |
+| Sandbox |
+| Url |
+| Domain |
+| ConsumerKey |
+| ConsumerSecret |
+| TokenKey |
+| TokenExpiration |
+| Oauth2AccessToken |
+| Oauth2AccessTokenCreationTime |
+| Oauth2RefreshToken |
+| SyncAll |
+| InstanceName |
+| Oauth2ClientId |
+| Oauth2ClientSecret |
+| CompanyId |
+| UpdateKeyOnSoftDelete |
+| SynchronizationSchedule |
+| SystemOfRecord |
+| SandboxName |
+| EnforceDomain |
+| SyncNotificationSettings |
+| SkipOutOfScopeDeletions |
+| Oauth2AuthorizationCode |
+| Oauth2RedirectUri |
+| ApplicationTemplateIdentifier |
+| Oauth2TokenExchangeUri |
+| Oauth2AuthorizationUri |
+| AuthenticationType |
+| Server |
 | PerformInboundEntitlementGrants |
-| HardDeletesEnabled              |
-| SyncAgentCompatibilityKey       |
-| SyncAgentADContainer            |
-| ValidateDomain                  |
-| TestReferences                  |
-| ConnectionString                |
+| HardDeletesEnabled |
+| SyncAgentCompatibilityKey |
+| SyncAgentADContainer |
+| ValidateDomain |
+| TestReferences |
+| ConnectionString |
 
-### synchronizationStatusCode values
+## synchronizationStatusCode values
 
-| Member        |
-| :------------ |
+| Member |
+| ------------- |
 | NotConfigured |
-| NotRun        |
-| Active        |
-| Paused        |
-| Quarantine    |
+| NotRun |
+| Active |
+| Paused |
+| Quarantine |
 
-### synchronizationTaskExecutionResult values
+## synchronizationTaskExecutionResult values
 
-| Member           |
-| :--------------- |
-| Succeeded        |
-| Failed           |
+| Member |
+| ---------------- |
+| Succeeded |
+| Failed |
 | EntryLevelErrors |
 
-### stagedFeatureName values
+## stagedFeatureName values
 
-| Member                         |
-|:-------------------------------|
-| passthroughAuthentication      |
-| seamlessSso                    |
-| passwordHashSync               |
-| emailAsAlternateId             |
-| unknownFutureValue             |
+| Member |
+| -------------------------------- |
+| passthroughAuthentication |
+| seamlessSso |
+| passwordHashSync |
+| emailAsAlternateId |
+| unknownFutureValue |
 | certificateBasedAuthentication |
-| multiFactorAuthentication      |
+| multiFactorAuthentication |
 
-### synchronizationJobRestartScope values
+## synchronizationJobRestartScope values
 
-|Member|
-|:---|
-|None|
-|ConnectorDataStore|
-|Escrows|
-|Watermark|
-|QuarantineState|
-|Full|
-|ForceDeletes|
+| Member |
+| ---- |
+| None |
+| ConnectorDataStore |
+| Escrows |
+| Watermark |
+| QuarantineState |
+| Full |
+| ForceDeletes |
 
-### quarantineReason values
+## quarantineReason values
 
-| Member                               |
-| :----------------------------------- |
-| EncounteredBaseEscrowThreshold       |
-| EncounteredTotalEscrowThreshold      |
+| Member |
+| ------------------------------------ |
+| EncounteredBaseEscrowThreshold |
+| EncounteredTotalEscrowThreshold |
 | EncounteredEscrowProportionThreshold |
-| EncounteredQuarantineException       |
-| Unknown                              |
-| QuarantinedOnDemand                  |
-| TooManyDeletes                       |
-| IngestionInterrupted                 |
+| EncounteredQuarantineException |
+| Unknown |
+| QuarantinedOnDemand |
+| TooManyDeletes |
+| IngestionInterrupted |
 
-### synchronizationScheduleState values
+## synchronizationScheduleState values
 
-| Member   |
-| :------- |
-| Active   |
+| Member |
+| -------- |
+| Active |
 | Disabled |
-| Paused   |
+| Paused |
 
-### scopeOperatorMultiValuedComparisonType values
-
-|Member|
-|:---|
-|All|
-|Any|
-
-### scopeOperatorType values
+## scopeOperatorMultiValuedComparisonType values
 
 | Member |
-| :----- |
+| ---- |
+| All |
+| Any |
+
+## scopeOperatorType values
+
+| Member |
+| ------ |
 | Binary |
-| Unary  |
+| Unary |
 
-### entryExportStatus values
-
-|Member|
-|:---|
-|Noop|
-|Success|
-|RetryableError|
-|PermanentError|
-|Error|
-
-### entrySyncOperation values
-
-|Member|
-|:---|
-|None|
-|Add|
-|Delete|
-|Update|
-
-### scopeOperatorType values
+## entryExportStatus values
 
 | Member |
-| :----- |
+| ---- |
+| Noop |
+| Success |
+| RetryableError |
+| PermanentError |
+| Error |
+
+## entrySyncOperation values
+
+| Member |
+| ---- |
+| None |
+| Add |
+| Delete |
+| Update |
+
+## escrowBehavior values
+
+| Member |
+| ------ |
 | Default |
-| IgnoreLookupReferenceResolutionFailure  |
+| IgnoreLookupReferenceResolutionFailure |
 
-### synchronizationDisposition values
+## synchronizationDisposition values
 
-| Member   |
-| :------- |
-| Normal   |
+| Member |
+| -------- |
+| Normal |
 | Discard |
-| Escrow   |
+| Escrow |
 
-### outlierMemberType values
+## outlierMemberType values
 
-|Member|
-|:---|
-|user|
-|unknownFutureValue|
-
-### outlierContainerType values
-
-|Member|
-|:---|
-|group|
-|unknownFutureValue|
-
-### authenticationMethodFeature values
-
-|Member|
-|:---|
-|ssprRegistered|
-|ssprEnabled|
-|ssprCapable|
-|passwordlessCapable|
-|mfaCapable|
-|unknownFutureValue|
-
-### featureType values
-
-|Member|
-|:---|
-|registration|
-|reset|
-|unknownFutureValue|
-
-### includedUserRoles values
-
-|Member|
-|:---|
-|all|
-|privilegedAdmin|
-|admin|
-|user|
-|unknownFutureValue|
-
-### includedUserTypes values
-
-|Member|
-|:---|
-|all|
-|member|
-|guest|
-|unknownFutureValue|
-
-### signInUserType values
-
-|Member|
-|:---|
-|member|
-|guest|
-|unknownFutureValue|
-
-### userDefaultAuthenticationMethod values
-
-|Member|
-|:---|
-|push|
-|oath|
-|voiceMobile|
-|voiceAlternateMobile|
-|voiceOffice|
-|sms|
-|none|
-|unknownFutureValue|
-
-### layoutTemplateType values
-
-| Member             |
-| :----------------- |
-| default            |
-| verticalSplit      |
+| Member |
+| ---- |
+| user |
 | unknownFutureValue |
 
-### meetingAudience values 
+## outlierContainerType values
 
-|Member|
-|:---|
-|everyone|
-|organization|
-|unknownFutureValue|
+| Member |
+| ---- |
+| group |
+| unknownFutureValue |
 
-### virtualEventAttendeeRegistrationStatus values 
+## authenticationMethodFeature values
 
-|Member|
-|:---|
-|registered|
-|canceled|
-|waitlisted|
-|pendingApproval|
-|rejectedByOrganizer|
-|unknownFutureValue|
+| Member |
+| ---- |
+| ssprRegistered |
+| ssprEnabled |
+| ssprCapable |
+| passwordlessCapable |
+| mfaCapable |
+| unknownFutureValue |
 
-### virtualEventStatus values 
+## featureType values
 
-|Member|
-|:---|
-|draft|
-|published|
-|canceled|
+| Member |
+| ---- |
+| registration |
+| reset |
+| unknownFutureValue |
 
-### socialIdentitySourceType values
+## includedUserRoles values
 
-|Member|
-|:---|
-|facebook|
-|unknownFutureValue|
+| Member |
+| ---- |
+| all |
+| privilegedAdmin |
+| admin |
+| user |
+| unknownFutureValue |
 
-### devicePlatformType values
+## includedUserTypes values
 
-| Member             |
-|:-------------------|
-| android            |
-| androidForWork     |
-| iOS                |
-| macOS              |
-| windowsPhone81     |
-| windows81AndLater  |
-| windows10AndLater  |
+| Member |
+| ---- |
+| all |
+| member |
+| guest |
+| unknownFutureValue |
+
+## signInUserType values
+
+| Member |
+| ---- |
+| member |
+| guest |
+| unknownFutureValue |
+
+## userDefaultAuthenticationMethod values
+
+| Member |
+| ---- |
+| push |
+| oath |
+| voiceMobile |
+| voiceAlternateMobile |
+| voiceOffice |
+| sms |
+| none |
+| unknownFutureValue |
+
+## layoutTemplateType values
+
+| Member |
+| ------------------ |
+| default |
+| verticalSplit |
+| unknownFutureValue |
+
+## meetingAudience values
+
+| Member |
+| ---- |
+| everyone |
+| organization |
+| unknownFutureValue |
+
+## virtualEventAttendeeRegistrationStatus values
+
+| Member |
+| ---- |
+| registered |
+| canceled |
+| waitlisted |
+| pendingApproval |
+| rejectedByOrganizer |
+| unknownFutureValue |
+
+## virtualEventStatus values
+
+| Member |
+| ---- |
+| draft |
+| published |
+| canceled |
+
+## socialIdentitySourceType values
+
+| Member |
+| ---- |
+| facebook |
+| unknownFutureValue |
+
+## devicePlatformType values
+
+| Member |
+| -------------------- |
+| android |
+| androidForWork |
+| iOS |
+| macOS |
+| windowsPhone81 |
+| windows81AndLater |
+| windows10AndLater |
 | androidWorkProfile |
 | unknown            |
 | androidAOSP        |
@@ -3296,3 +3351,100 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAccount|
 |defaultConfiguredIdp|
 |unknownFutureValue|
+
+### bookingStaffMembershipStatus values
+
+|Member|
+|:---|
+|active|
+|pendingAcceptance|
+|rejectedByStaff|
+|unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
+|unknownFutureValue|
+
+### nativeAuthenticationApisEnabled values
+
+| Member|
+|:---|
+|none|
+|all|
+|unknownFutureValue|
+| unknown |
+| androidAOSP |
+| androidMobileApplicationManagement |
+| iOSMobileApplicationManagement |
+| unknownFutureValue |
+
+## educationAssignmentStatus values
+
+| Member |
+| ------------------ |
+| draft |
+| published |
+| assigned |
+| unknownFutureValue |
+| inactive |
+
+## b2bIdentityProvidersType values
+
+| Member |
+| ------ |
+| azureActiveDirectory |
+| externalFederation |
+| socialIdentityProviders |
+| emailOneTimePasscode |
+| microsoftAccount |
+| defaultConfiguredIdp |
+| unknownFutureValue |
+
+## bookingStaffMembershipStatus values
+
+| Member |
+| ---- |
+| active |
+| pendingAcceptance |
+| rejectedByStaff |
+| unknownFutureValue |
+
+## conditionalAccessInsiderRiskLevels values
+
+| Member |
+| ---- |
+| minor |
+| moderate |
+| elevated |
+| unknownFutureValue |
+
+## nativeAuthenticationApisEnabled values
+
+| Member |
+| ---- |
+| none |
+| all |
+| unknownFutureValue |
+

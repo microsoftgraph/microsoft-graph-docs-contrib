@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\GetCloudPcRecommendationReportsPostRequestBody;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\Reports\GetCloudPcRecommendationReports\GetCloudPcRecommendationReportsPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcReportName;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

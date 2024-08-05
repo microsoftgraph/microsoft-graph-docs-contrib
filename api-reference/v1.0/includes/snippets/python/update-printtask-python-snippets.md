@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.print_task import PrintTask
 from msgraph.generated.models.print_task_status import PrintTaskStatus
+from msgraph.generated.models.print_task_processing_state import PrintTaskProcessingState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

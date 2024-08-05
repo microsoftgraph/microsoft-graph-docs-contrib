@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
-from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
-from msgraph.generated.models.access_package_answer import AccessPackageAnswer
-from msgraph.generated.models.access_package_answer_string import AccessPackageAnswerString
-from msgraph.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
-from msgraph.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph_beta.generated.models.access_package_assignment import AccessPackageAssignment
+from msgraph_beta.generated.models.access_package_answer import AccessPackageAnswer
+from msgraph_beta.generated.models.access_package_answer_string import AccessPackageAnswerString
+from msgraph_beta.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
+from msgraph_beta.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
 
 graph_client = GraphServiceClient(credentials, scopes)
 

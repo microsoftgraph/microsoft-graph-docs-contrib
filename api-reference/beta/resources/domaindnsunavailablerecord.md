@@ -34,19 +34,18 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord"
+  "@odata.type": "microsoft.graph.domainDnsUnavailableRecord",
+  "baseType": "microsoft.graph.domainDnsRecord"
 }-->
 
 ```json
 {
-  "canonicalName": "String",
   "description": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
   "recordType": "String",
   "supportedService": "String",
-  "text": "String",
   "ttl": 1024
 }
 

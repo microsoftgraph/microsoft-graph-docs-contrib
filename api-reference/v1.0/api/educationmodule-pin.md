@@ -22,7 +22,6 @@ Only teachers can perform this action and only one module at a time can be pinne
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "educationmodule_pin" } -->
-
 [!INCLUDE [permissions-table](../includes/permissions/educationmodule-pin-permissions.md)]
 
 ## HTTP request
@@ -37,7 +36,7 @@ POST /education/classes/{id}/modules/{id}/pin
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

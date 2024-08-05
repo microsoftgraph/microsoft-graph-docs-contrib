@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.cases.ediscoverycases.item.reviewsets.item.microsoft_graph_security_add_to_review_set.add_to_review_set_post_request_body import AddToReviewSetPostRequestBody
-from msgraph.generated.models.ediscovery_search import EdiscoverySearch
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.cases.ediscoverycases.item.reviewsets.item.microsoft_graph_security_add_to_review_set.add_to_review_set_post_request_body import AddToReviewSetPostRequestBody
+from msgraph_beta.generated.models.security.ediscovery_search import EdiscoverySearch
+from msgraph_beta.generated.models.additional_data_options import AdditionalDataOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

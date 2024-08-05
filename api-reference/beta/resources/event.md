@@ -37,30 +37,28 @@ This resource supports:
 |[List events](../api/user-list-events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
 |[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
-|[Delete](../api/event-delete.md) | None |Delete event object. |
-|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
-|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
-|[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
-|[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
-|[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
-|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
-|[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
-|[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get an event object collection.|
+|[Update event](../api/event-update.md) | [event](event.md)	|Update event object. |
+|[Delete event](../api/event-delete.md) | None |Delete event object. |
+|[Get delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[Forward event](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
+|[Cancel event](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
+|[Accept event](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
+|[Tentatively accept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
+|[Decline event](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
+|[Dismiss reminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
+|[Snooze reminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
+|[List event instances](../api/event-list-instances.md) |[Event](event.md) collection| Get an event object collection.|
 |**Attachments**| | |
 |[List attachments](../api/event-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on an event.|
 |[Add attachment](../api/event-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
-|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
-|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
 
 ## Properties
@@ -155,7 +153,8 @@ The following JSON representation shows the resource type.
     "singleValueExtendedProperties",
     "multiValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.event"
+  "@odata.type": "microsoft.graph.event",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

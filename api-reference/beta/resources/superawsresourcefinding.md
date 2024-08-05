@@ -5,7 +5,7 @@ author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # superAwsResourceFinding resource type
@@ -21,9 +21,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superAwsResourceFinding objects](../api/superawsresourcefinding-list.md)|[superAwsResourceFinding](../resources/superawsresourcefinding.md) collection|Get a list of the [superAwsResourceFinding](../resources/superawsresourcefinding.md) objects and their properties.|
-|[Get superAwsResourceFinding](../api/superawsresourcefinding-get.md)|[superAwsResourceFinding](../resources/superawsresourcefinding.md)|Read the properties and relationships of a [superAwsResourceFinding](../resources/superawsresourcefinding.md) object.|
-|[aggregatedSummary](../api/superawsresourcefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/superawsresourcefinding-list.md)|[superAwsResourceFinding](../resources/superawsresourcefinding.md) collection|Get a list of the [superAwsResourceFinding](../resources/superawsresourcefinding.md) objects and their properties.|
+|[Get](../api/superawsresourcefinding-get.md)|[superAwsResourceFinding](../resources/superawsresourcefinding.md)|Read the properties and relationships of a [superAwsResourceFinding](../resources/superawsresourcefinding.md) object.|
+|[Aggregated summary](../api/superawsresourcefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 ## Properties
 |Property|Type|Description|

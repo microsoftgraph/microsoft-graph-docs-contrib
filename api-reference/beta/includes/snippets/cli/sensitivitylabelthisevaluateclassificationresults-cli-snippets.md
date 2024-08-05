@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta users security information-protection sensitivity-labels microsoft-graph-security-evaluate-classification-results post --user-id {user-id} --body '{\
     "contentInfo": {\
         "@odata.type": "#microsoft.graph.security.contentInfo",\

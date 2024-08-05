@@ -5,11 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.workflow import Workflow
-from msgraph.generated.models.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
-from msgraph.generated.models.rule_based_subject_set import RuleBasedSubjectSet
-from msgraph.generated.models.time_based_attribute_trigger import TimeBasedAttributeTrigger
-from msgraph.generated.models.task import Task
+from msgraph.generated.models.identity_governance.workflow import Workflow
+from msgraph.generated.models.identity_governance.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
+from msgraph.generated.models.identity_governance.rule_based_subject_set import RuleBasedSubjectSet
+from msgraph.generated.models.identity_governance.time_based_attribute_trigger import TimeBasedAttributeTrigger
+from msgraph.generated.models.workflow_trigger_time_based_attribute import WorkflowTriggerTimeBasedAttribute
+from msgraph.generated.models.identity_governance.task import Task
+from msgraph.generated.models.lifecycle_task_category import LifecycleTaskCategory
 from msgraph.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)

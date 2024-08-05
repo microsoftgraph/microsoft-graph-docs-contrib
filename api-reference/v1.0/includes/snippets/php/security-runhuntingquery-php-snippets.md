@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RunHuntingQueryPostRequestBody;
+use Microsoft\Graph\Generated\Security\MicrosoftGraphSecurityRunHuntingQuery\RunHuntingQueryPostRequestBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

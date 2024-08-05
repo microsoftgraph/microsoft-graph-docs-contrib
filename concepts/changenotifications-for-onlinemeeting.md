@@ -11,9 +11,12 @@ ms.custom: scenarios:getting-started
 
 Change notifications in Microsoft Graph enable you to subscribe to call started, call ended, and roster updated for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
-A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
+A subscription has a maximum expiry period of three days. To persist the subscription for more than this period, a subscription renewal request must be made. For more information, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+
+> [!NOTE]
+> Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
 
 ## Permissions
 
@@ -38,7 +41,9 @@ To park a subscription, the argument must be URL encoded and used as the `joinWe
 > [!NOTE]
 > Replace `{JoinWebUrl}` with the actual URL-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
-### Subscription payload sample
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
+
+### Subscription to rich notifications payload sample
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -56,8 +61,13 @@ Content-Type: application/json
 }
 ```
 
-## Notifications with encrypted resource data
+> [!NOTE]
+> Subscriptions to basic notifications are available for change notifications for meeting calls. However, because basic notifications only contain the resource ID and no other details, and an API that gets meeting call data with this ID isn't available, we recommend that subscribe to rich notifications for change notifications for meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
 
+## Rich notifications
+When you subscribe to rich notifications for change events in an active meeting call, details of the changes are encrypted in the notification payload.
+
+### Rich notification payload example
 ```json
 {
   "value": [{
@@ -85,16 +95,14 @@ Content-Type: application/json
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
-
-## Event notifications types
+#### Event notifications types
 
 The following are the supported meeting events:
-- callStarted - Events for when the meeting call has started.
-- callEnded - Events for when the meeting call has ended.
+- callStarted - Events for when the meeting call started.
+- callEnded - Events for when the meeting call ended.
 - rosterUpdated - Events for when a participant joins and exits the call or lobby.
-  - The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
-### Decrypted payload examples
+  - The **rosterUpdated** event contains a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants who exited the collection. For more information, see [participant](/graph/api/resources/participant).
+#### Decrypted payload examples
 
 #### CallStarted
 ```json
@@ -157,7 +165,7 @@ The following are the supported meeting events:
 }
 ```
 
-#### RosterUpdated - Participant enters an inactive state (not in Lobby or Call)
+#### RosterUpdated - Participant enters an inactive state (not in lobby or Call)
 ```json
 {
   "@odata.type": "#microsoft.graph.callevent",

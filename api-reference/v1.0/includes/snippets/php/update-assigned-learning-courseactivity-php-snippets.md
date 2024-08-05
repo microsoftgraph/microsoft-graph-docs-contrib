@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\LearningAssignment;
+use Microsoft\Graph\Generated\Models\AssignmentType;
 use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\BodyType;
+use Microsoft\Graph\Generated\Models\CourseStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -25,7 +28,7 @@ $dueDateTime = new DateTimeTimeZone();
 $dueDateTime->setDateTime('2022-09-22T16:05:00.0000000');
 $dueDateTime->setTimeZone('UTC');
 $requestBody->setDueDateTime($dueDateTime);
-$requestBody->setExternalcourseActivityId('12a2228a-e020-11ec-9d64-0242ac120002');
+$requestBody->setExternalCourseActivityId('12a2228a-e020-11ec-9d64-0242ac120002');
 $requestBody->setLearningContentId('57baf9dc-e020-11ec-9d64-0242ac120002');
 $requestBody->setLearnerUserId('7ba2228a-e020-11ec-9d64-0242ac120002');
 $notes = new ItemBody();

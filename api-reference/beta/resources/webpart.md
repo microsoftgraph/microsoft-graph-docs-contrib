@@ -23,13 +23,13 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                                         | Return type                                        | Description                                                                                                                                 |
 | :----------------------------------------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| [List webParts](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                          |
-| [Get webPart](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                       |
-| [Delete webPart](../api/webpart-delete.md)                                           | [webPart](../resources/webpart.md)                 | Deletes a [webPart](../resources/webpart.md) object.                                                |
-| [Create webPart](../api/sitepage-create-webpart.md)                                           | [webPart](../resources/webpart.md)                 | Create a new [webPart](../resources/webpart.md) object. |
-| [Update webPart](../api/webpart-update.md)                                           | [webPart](../resources/webpart.md)                 | Update the properties of a [webPart](../resources/webpart.md) object.     |
-| [Get webPart position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
-| [Get webPart collection by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
+| [List](../api/webpart-list.md)                                        | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects and their properties.                                                          |
+| [Get](../api/webpart-get.md)                                           | [webPart](../resources/webpart.md)                 | Read the properties and relationships of a [webPart](../resources/webpart.md) object.                                                       |
+| [Delete](../api/webpart-delete.md)                                           | [webPart](../resources/webpart.md)                 | Deletes a [webPart](../resources/webpart.md) object.                                                |
+| [Create](../api/sitepage-create-webpart.md)                                           | [webPart](../resources/webpart.md)                 | Create a new [webPart](../resources/webpart.md) object. |
+| [Update](../api/webpart-update.md)                                           | [webPart](../resources/webpart.md)                 | Update the properties of a [webPart](../resources/webpart.md) object.     |
+| [Get position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
+| [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
 
 ## Properties
 
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -34,7 +34,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.taskViewpoint",
-  "reminderDatetime": {
+  "reminderDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "categories": ["string"]

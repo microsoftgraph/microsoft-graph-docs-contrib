@@ -8,6 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\WindowsUniversalAppX;
 use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\WindowsArchitecture;
+use Microsoft\Graph\Generated\Models\WindowsDeviceType;
 use Microsoft\Graph\Generated\Models\WindowsMinimumOperatingSystem;
 
 

@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -51,3 +51,14 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "tenantRelationshipAccessPolicyBase resource type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

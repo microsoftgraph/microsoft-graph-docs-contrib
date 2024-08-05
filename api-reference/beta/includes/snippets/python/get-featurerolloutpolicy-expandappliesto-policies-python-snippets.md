@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.policies.feature_rollout_policies.item.feature_rollout_policy_item_request_builder import FeatureRolloutPolicyItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.policies.feature_rollout_policies.item.feature_rollout_policy_item_request_builder import FeatureRolloutPolicyItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = FeatureRolloutPolicyItemRequestBuilder.FeatureRolloutPolicyItemRe
 		expand = ["appliesTo"],
 )
 
-request_configuration = FeatureRolloutPolicyItemRequestBuilder.FeatureRolloutPolicyItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -5,8 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\M365AppsInstallationOptions;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\M365AppsInstallationOptions;
+use Microsoft\Graph\Beta\Generated\Models\AppsUpdateChannelType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

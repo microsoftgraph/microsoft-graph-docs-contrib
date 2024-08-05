@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.threads.item.posts.item.reply.reply_post_request_body import ReplyPostRequestBody
-from msgraph.generated.models.post import Post
-from msgraph.generated.models.item_body import ItemBody
-from msgraph.generated.models.recipient import Recipient
-from msgraph.generated.models.email_address import EmailAddress
-from msgraph.generated.models.attachment import Attachment
-from msgraph.generated.models.file_attachment import FileAttachment
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups.item.threads.item.posts.item.reply.reply_post_request_body import ReplyPostRequestBody
+from msgraph_beta.generated.models.post import Post
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.recipient import Recipient
+from msgraph_beta.generated.models.email_address import EmailAddress
+from msgraph_beta.generated.models.attachment import Attachment
+from msgraph_beta.generated.models.file_attachment import FileAttachment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

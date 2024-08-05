@@ -11,9 +11,11 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
+Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more. You can use the Microsoft Graph API to integrate with Microsoft Teams features. 
 
 ## Common use cases
+
+The following table lists common use cases for Microsoft Teams APIs in Microsoft Graph.
 
 | Use cases | REST resources |  See also  |
 |:-----------|:--------|:--------|
@@ -22,10 +24,20 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 | Create channels and chats to send and receive chat messages | [channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md) | [create channel](../api/channel-post.md), [list channel](../api/channel-list.md), [send chatMessage in a channel](../api/chatmessage-post.md) |
 | Use tags to classify users or groups based on common attributes within a team | [teamworkTag](../resources/teamworktag.md), [teamworkTagMember](../resources/teamworktagmember.md) | [list teamworkTag](../api/teamworktag-list.md), [create teamworkTag](../api/teamworktag-post.md) |
 | Create and receive calls, call records or retrieve meeting coordinates | [call](../resources/call.md), [callRecords](../resources/callrecords-api-overview.md) | [answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) | 
-| Connect bots to calls and implement interactive voice response (IVR) | [IVR scenarios](../resources/calls-api-ivr-overview.md)| |
+| Connect bots to calls and implement interactive voice response (IVR) | [call](../resources/call.md) | [IVR scenarios](#ivr-scenarios) |
 | Create and retrieve online meetings or check users presence and activity | [onlineMeeting](../resources/onlinemeeting.md), [presence](../resources/presence.md) | [create onlineMeeting](../api/application-post-onlinemeetings.md), [meetingAttendanceReport](../resources/meetingattendancereport.md) | 
 | Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md) | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) |
 | Use the employee learning API  to integrate with Viva Learning | [employee learning](../resources/viva-learning-api-overview.md), [learningProvider](../resources/learningprovider.md), [learningContent](../resources/learningcontent.md) | [list learningProviders](../api/employeeexperience-list-learningproviders.md), [list learningContents](../api/learningprovider-list-learningcontents.md) |
+
+### IVR scenarios
+
+The following are the Interactive Voice Response (IVR) scenarios that the calling APIs in Microsoft Graph support:
+
+- [Play an audio prompt](/graph/api/call-playprompt) - for example, when a call is placed in a customer service agent's queue.
+- [Record a response](/graph/api/call-record) - for example, to record the caller's audio, usually after they heard a prompt with options.
+- [Subscribe to tones](/graph/api/call-subscribetotone) - for example, when you want to know what DTMF tones the caller selected, usually after hearing the audio prompt.
+- [Cancel media processing](/graph/api/call-cancelmediaprocessing) - for example, when you want to cancel any **playPrompt** or **recordResponse** operations that might be in process.
+
 
 ## Microsoft Teams limits
 

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.role_management.directory.role_assignments.item.unified_role_assignment_item_request_builder import UnifiedRoleAssignmentItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.role_management.directory.role_assignments.item.unified_role_assignment_item_request_builder import UnifiedRoleAssignmentItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = UnifiedRoleAssignmentItemRequestBuilder.UnifiedRoleAssignmentItem
 		expand = ["roleDefinition"],
 )
 
-request_configuration = UnifiedRoleAssignmentItemRequestBuilder.UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

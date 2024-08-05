@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identitygovernance.entitlementmanagement.accesspackages.item.get_applicable_policy_requirements.get_applicable_policy_requirements_post_request_body import GetApplicablePolicyRequirementsPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identitygovernance.entitlementmanagement.accesspackages.item.get_applicable_policy_requirements.get_applicable_policy_requirements_post_request_body import GetApplicablePolicyRequirementsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

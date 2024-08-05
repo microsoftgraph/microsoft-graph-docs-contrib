@@ -19,7 +19,7 @@ Represents details for billed Azure usage data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
+|[Export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
 
 ## Properties
 

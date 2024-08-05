@@ -1,50 +1,48 @@
 ---
 title: "Working with groups in Microsoft Graph"
-description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
-author: "yuhko-msft"
-ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: conceptualPageType
-ms.date: 09/12/2023
+ms.topic: overview
+ms.date: 05/22/2024
 ---
 
 # Working with groups in Microsoft Graph
 
 Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
 
-Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality.
+Microsoft Graph exposes the [group resource type](../resources/group.md) and its associated APIs to create and manage different types of groups and group functionality.
 
 > [!NOTE]
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 > 2. All group-related operations in Microsoft Graph require administrator consent.
 
-<a name='group-types-in-azure-ad-and-microsoft-graph'></a>
-
 ## Group types in Microsoft Entra ID and Microsoft Graph
 
 Microsoft Entra ID supports the following types of groups.
 
-- Microsoft 365 groups
+- [Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)
 - Security groups
 - Mail-enabled security groups
 - Distribution groups
 
 > [!NOTE]
-> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which can't be managed or retrieved through Microsoft Graph.
 
-Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
+In Microsoft Graph, the type of group can be identified by the settings of its **groupTypes**, **mailEnabled**, and **securityEnabled** properties. The following table indicates how to differentiate the groups by their settings, and whether the group types can be managed through the Microsoft Graph groups APIs.
 
-In Microsoft Graph, the type of group can be identified by the settings of its **groupType**, **mailEnabled**, and **securityEnabled** properties as indicated in the table below.
-
-| Type |groupType | mailEnabled | securityEnabled | Created and managed via the groups API |
+| Type |groupTypes | mailEnabled | securityEnabled | Created and managed via the groups APIs |
 |--|--|--|--|--|
 | [Microsoft 365 groups](#microsoft-365-groups) | `["Unified"]` | `true` | `true` or `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `false` | `true` | Yes |
-| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `true` | `true` | No |
-| Distribution groups | `[]` | `true` | `false` | No |
+| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `true` | `true` | No; read-only through Microsoft Graph |
+| Distribution groups | `[]` | `true` | `false` | No; read-only through Microsoft Graph |
 
-For more information about groups, see the sections below. For more information about groups in Microsoft Entra ID, see [compare groups in Microsoft Entra ID](/microsoft-365/admin/create-groups/compare-groups).
+For more information about groups in Microsoft Entra ID, see [compare groups in Microsoft Entra ID](/microsoft-365/admin/create-groups/compare-groups).
 
 ## Microsoft 365 groups
 
@@ -91,18 +89,11 @@ Content-type: application/json
 
 To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-### Settings for Microsoft 365 groups
-
-Apart from configuring the standard group properties, you can also configure the following settings for Microsoft 365 groups.
-
-- [Group expiration](../resources/grouplifecyclepolicy.md)
-- [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
-
 ## Security groups and mail-enabled security groups
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
 
-**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
+**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. For more information, see [Manage mail-enabled security groups](/exchange/recipients/mail-enabled-security-groups).
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
@@ -136,23 +127,23 @@ Membership to groups can be statically assigned or dynamic. Not all object types
 
 ### Dynamic membership
 
-Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group.
+Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any users who leave the department are automatically removed from the group.
 
 Only users and devices are supported as members in dynamic membership groups. You can create a dynamic membership group for devices or users, but not both.
 
 The dynamic membership rules are specified through the **membershipRule** property during group creation. A single expression follows this syntax: `Property Operator Value`.
 
-- The `Property` is defined following this syntax: `object.property`. For example `user.department` or `device.accountEnabled`.
+- The `Property` is defined following this syntax: `object.property`. For example, `user.department` or `device.accountEnabled`.
 - The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 - A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Microsoft Entra admin center because the expression isn't enclosed in double quotes.
 
-The following example shows shows a complete rule.
+The following example shows a complete rule.
 
 `"membershipRule": "user.department -eq \"Marketing\""`.
 
 You can combine multiple expressions in a rule using the `and`, `or`, and `not` operators.
 
-The **groupType** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
+The **groupTypes** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
 
@@ -254,6 +245,16 @@ To learn more about formulating membership rules, see [Dynamic membership rules 
 
 Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](/rest/api/yammer/).
 
+## Additional settings for security and Microsoft 365 groups
+
+Apart from configuring the properties on the group resource, you can also configure the following settings for groups.
+
+| Setting | Applies to |
+|--|--|
+| [Group expiration](../resources/grouplifecyclepolicy.md) | Microsoft 365 groups |
+| [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, allowed words in group names, who is allowed to create groups, and so on | Microsoft 365 groups |
+| [Settings to synchronize on-premises groups with the cloud](../resources/onpremisesdirectorysynchronization.md), such as whether writeback is enabled | Security and Microsoft 365 groups |
+
 ## Group search limitations for guest users in organizations
 
 Group search capabilities allow the app to search for any groups in an organization's directory by performing queries against the `/groups` resource (for example, `https://graph.microsoft.com/beta/groups`). Both administrators and users who are members have this capability; however, guest users don't.
@@ -262,12 +263,13 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
 
-For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 
-Group-based licensing capability can be used to assign one or more product licenses to a Microsoft Entra group. Microsoft Entra ID ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Microsoft 365 groups that have the **securityEnabled** property set to `true`. To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal?context=/azure/active-directory/enterprise-users/context/ugr-context).
+You can use group-based licensing to assign one or more product licenses to a Microsoft Entra group, and the licenses are then inherited by the members of the group, and automatically by any new members. When members leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have **securityEnabled** set to `true`. 
 
+To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 ## Properties stored outside the main data store
 
 While the group resource data is mostly stored in Microsoft Entra ID, some of its properties, like **autoSubscribeNewMembers** and **allowExternalSenders**, are stored in Microsoft Exchange. In most instances, you can't specify these properties in the same Create or Update request body as other group properties.
@@ -280,12 +282,32 @@ Properties stored outside the main data store also aren't supported as part of [
 
 Using Microsoft Graph, you can perform the following common operations on groups.
 
-| **Use cases** | **REST resources** | **See also** |
-|:-|:-|:-|
-| **Create groups, manage group characteristics** |  |  |
-| Create new groups, get existing groups, update the properties on groups, and delete groups. Currently, only security groups and groups in Outlook can be created through the API. | [group](group.md) | [Create new groups](../api/group-post-groups.md) <br/> [List groups](../api/group-list.md) <br/> [Update groups](../api/group-update.md) <br/> [Delete groups](../api/group-delete.md) |
-| **Manage group membership** |  |  |
-| List the members of a group, and add or remove members. | [user](user.md) <br/> [group](group.md) | [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
-| Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md) | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
-| List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md) | [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
+| Use cases | API operations |
+|:-|:-|
+| **Create groups, manage group characteristics** |  |
+| Create new groups, get existing groups, update the properties on groups, and delete groups. | [Create new groups](../api/group-post-groups.md) <br/> [List groups](../api/group-list.md) <br/> [Update groups](../api/group-update.md) <br/> [Delete groups](../api/group-delete.md) <br/> [Renew](../api/group-renew.md) groups that are about to expire <br/> [Restore](../api/directory-deleteditems-restore.md) deleted Microsoft 365 groups|
+| **Manage group membership and ownership** |  |
+| List the members of a group, and add or remove members. | [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
+| Determine whether a user is a member of a group, get all the groups the user is a member of. | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
+| List the owners of a group, and add or remove owners. | [List owners](../api/group-list-owners.md) <br/> [Add owner](../api/group-post-members.md) <br/> [Remove owner](../api/group-delete-members.md) |
+| **Group functionality for Microsoft 365 apps** |  |
+| Manage group conversations | [Create](../api/group-post-conversations.md), [get](../api/group-get-conversation.md), or [delete](../api/group-delete-conversation.md)  |
+| Schedule and manage calendar events on a group calendar | [Create](../api/group-post-events.md), [list](../api/group-list-events.md), [get](../api/group-get-event.md), [update](../api/group-update-event.md), [delete](../api/group-delete-event.md) |
+| Manage OneNote notebooks for a group |[Create](../api/onenote-post-notebooks.md), [list](../api/onenote-list-notebooks.md) |
+| Enable a Microsoft group for Microsoft Teams |[Create](../api/team-put-teams.md) |
+
+## Microsoft Entra roles for managing groups
+
+To manage groups in delegated scenarios, the app must be granted the appropriate permissions and the signed-in user must be in a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). 
+
+The following Microsoft Entra roles are the least privileged roles for managing all aspects of groups through Microsoft Graph, except for role-assignable groups. The least privileged role for managing role-assignable groups is **Privileged Role Administrator**.
+
+- Directory Writers
+- Groups Administrator
+- User Administrator
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Start working with groups](../resources/group.md)
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta security attack-simulation simulations patch --simulation-id {simulation-id} --body '{\
   "@odata.etag": "\"0100aa9b-0000-0100-0000-6396fa270000\"",\
   "displayName": "Graph Simulation",\

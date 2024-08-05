@@ -11,9 +11,9 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.tables.item.columns.add.AddPostRequestBody();
 Index index = new Index();
 addPostRequestBody.setIndex(index);
-LinkedList<Json> values = new LinkedList<Json>();
-Json json = new Json();
-values.add(json);
+LinkedList<Object> values = new LinkedList<Object>();
+ property = new ();
+values.add(property);
 addPostRequestBody.setValues(values);
 var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").columns().add().post(addPostRequestBody);
 

@@ -22,8 +22,8 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedAwsRoleFinding objects](../api/overprovisionedawsrolefinding-list.md)|[overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) collection|Get a list of the [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) objects and their properties.|
-|[Get overprovisionedAwsRoleFinding](../api/overprovisionedawsrolefinding-get.md)|[overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md)|Read the properties and relationships of an [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) object.|
+|[List](../api/overprovisionedawsrolefinding-list.md)|[overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) collection|Get a list of the [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) objects and their properties.|
+|[Get](../api/overprovisionedawsrolefinding-get.md)|[overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md)|Read the properties and relationships of an [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) object.|
 
 
 ## Properties

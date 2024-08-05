@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,13 +15,10 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewTenantAppManagementPolicy()
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-applicationRestrictions := graphmodels.NewAppManagementConfiguration()
+applicationRestrictions := graphmodels.NewAppManagementApplicationConfiguration()
 
 
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
@@ -81,6 +81,7 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 applicationRestrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 defaultAppManagementPolicy, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
 
 

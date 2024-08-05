@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.role_management.exchange.role_assignments.role_assignments_request_builder import RoleAssignmentsRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.role_management.exchange.role_assignments.role_assignments_request_builder import RoleAssignmentsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RoleAssignmentsRequestBuilder.RoleAssignmentsRequestBuilderGetQue
 		filter = "principalId eq '/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39'",
 )
 
-request_configuration = RoleAssignmentsRequestBuilder.RoleAssignmentsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

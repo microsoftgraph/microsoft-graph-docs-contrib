@@ -1,0 +1,12 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/notifications-api-overview.md
+- name: Notification
+  items:
+  - name: Notification
+    href: ../../resources/projectrome-notification.md
+  - name: Create and send a notification (deprecated)
+    href: ../../api/user-post-notifications.md

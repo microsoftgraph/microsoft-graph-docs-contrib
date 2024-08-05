@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.identity_governance.entitlement_management.catalogs.catalogs_request_builder import CatalogsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = CatalogsRequestBuilder.CatalogsRequestBuilderGetQueryParameters(
 		filter = "(displayName eq 'General')",
 )
 
-request_configuration = CatalogsRequestBuilder.CatalogsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

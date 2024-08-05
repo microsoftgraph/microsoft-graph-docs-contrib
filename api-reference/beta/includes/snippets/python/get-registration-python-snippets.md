@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.online_meetings.item.registration.registration_request_builder import RegistrationRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.online_meetings.item.registration.registration_request_builder import RegistrationRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RegistrationRequestBuilder.RegistrationRequestBuilderGetQueryPara
 		expand = ["microsoft.graph.meetingRegistration/customQuestions"],
 )
 
-request_configuration = RegistrationRequestBuilder.RegistrationRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

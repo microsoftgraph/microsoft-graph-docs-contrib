@@ -5,11 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\DelegatedAdminAccessAssignment;
-use Microsoft\Graph\Generated\Models\DelegatedAdminAccessContainer;
-use Microsoft\Graph\Generated\Models\DelegatedAdminAccessDetails;
-use Microsoft\Graph\Generated\Models\UnifiedRole;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessAssignment;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessContainer;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessContainerType;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdminAccessDetails;
+use Microsoft\Graph\Beta\Generated\Models\UnifiedRole;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

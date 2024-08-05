@@ -2,7 +2,7 @@
 title: "Update macOSWiFiConfiguration"
 description: "Update the properties of a macOSWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -72,6 +72,7 @@ The following table shows the properties that are required when you create the [
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
@@ -86,7 +87,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1450
+Content-length: 1489
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -127,6 +128,7 @@ Content-length: 1450
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "deploymentChannel": "userChannel",
   "preSharedKey": "Pre Shared Key value"
 }
 ```
@@ -136,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1622
+Content-Length: 1661
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -180,6 +182,7 @@ Content-Length: 1622
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "deploymentChannel": "userChannel",
   "preSharedKey": "Pre Shared Key value"
 }
 ```

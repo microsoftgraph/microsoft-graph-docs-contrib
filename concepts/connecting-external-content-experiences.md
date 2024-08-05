@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph connector experiences"
 description: "Discover the experiences that you can enable with Microsoft Graph connectors and the requirements to build those experiences."
-author: monaray
+author: "monaray97"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
@@ -41,7 +41,8 @@ To configure your connector for Context IQ:
 
 To make sure that Copilot for Microsoft 365 uses your content effectively:
 
-- Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot for Microsoft 365 interpret the semantic meaning of your schema. Apply as many of them to your schema as applicable. The `iconUrl`, `title`, and `url` labels must be applied for content to surface in Copilot. Users can use semantic labels as part of their prompts in Copilot, but they won't get the expected response if the respective semantic label isn't applied.
+- Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Copilot for Microsoft 365 interpret the semantic meaning of your schema. Apply as many of them to your schema as applicable. The `iconUrl`, `title`, and `url` labels must be applied for content to surface in Copilot. Currently, only the `title` semantic label can be used in prompts in Copilot for Microsoft 365; however, more semantic labels will be supported as the platform evolves. If you apply all applicable labels, you won't have to recreate your schema in the future.
+- Ingest content relevant to external items as text. Users can query against the content property of external items in Copilot for Microsoft 365. Copilot for Microsoft 365 performs better on content-rich items.
 - Apply the **searchable** property label to schema properties with stored content that you would like your users' prompts to match against in Copilot. The `searchable` label is the most important with respect to Copilot because it defines which schema properties can be searched against.
 - Add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A **urlToItemResolver** enables the platform to detect when users share URLs from your external content with each other. Copilot for Microsoft 365 has a higher likelihood of displaying content that has been shared with that user.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. For a list of supported activity types, see [externalActivity](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in importance.

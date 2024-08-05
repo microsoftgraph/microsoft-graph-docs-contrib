@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.identitygovernance.entitlementmanagement.assignmentrequests.item.resume.resume_post_request_body import ResumePostRequestBody
 from msgraph.generated.models.access_package_assignment_request_callback_data import AccessPackageAssignmentRequestCallbackData
+from msgraph.generated.models.access_package_custom_extension_stage import AccessPackageCustomExtensionStage
 
 graph_client = GraphServiceClient(credentials, scopes)
 

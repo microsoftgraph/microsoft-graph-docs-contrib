@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\DriveItem;
-use Microsoft\Graph\Generated\Models\Bundle;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\DriveItem;
+use Microsoft\Graph\Beta\Generated\Models\Bundle;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

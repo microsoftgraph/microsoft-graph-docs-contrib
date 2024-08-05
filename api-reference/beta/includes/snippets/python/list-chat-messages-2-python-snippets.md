@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.chats.item.messages.messages_request_builder import MessagesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.chats.item.messages.messages_request_builder import MessagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +16,7 @@ query_params = MessagesRequestBuilder.MessagesRequestBuilderGetQueryParameters(
 		filter = "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z",
 )
 
-request_configuration = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

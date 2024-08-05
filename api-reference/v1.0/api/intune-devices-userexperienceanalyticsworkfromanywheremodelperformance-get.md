@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsWorkFromAnywhereModelPerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsWorkFromAnywhereModelPerformance object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

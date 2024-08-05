@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.chats.item.installed_apps.installed_apps_request_builder import InstalledAppsRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.chats.item.installed_apps.installed_apps_request_builder import InstalledAppsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = InstalledAppsRequestBuilder.InstalledAppsRequestBuilderGetQueryPa
 		expand = ["teamsAppDefinition($expand=bot)"],
 )
 
-request_configuration = InstalledAppsRequestBuilder.InstalledAppsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

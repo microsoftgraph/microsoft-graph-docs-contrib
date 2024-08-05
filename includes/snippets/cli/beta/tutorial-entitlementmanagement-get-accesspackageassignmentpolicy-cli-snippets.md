@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance entitlement-management access-package-assignment-policies create --body '{\
   "accessPackageId": "88203d16-0e31-41d4-87b2-dd402f1435e9",\
   "displayName": "Specific users",\

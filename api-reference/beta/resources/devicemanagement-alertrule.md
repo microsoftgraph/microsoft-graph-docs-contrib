@@ -98,7 +98,7 @@ The following JSON representation shows the resource type.
   "threshold": {
     "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
   },
-  "condition": [
+  "conditions": [
     {
       "@odata.type": "microsoft.graph.deviceManagement.ruleCondition"
     }

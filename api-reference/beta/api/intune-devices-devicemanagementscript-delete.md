@@ -2,7 +2,7 @@
 title: "Delete deviceManagementScript"
 description: "Deletes a deviceManagementScript."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
+Deletes a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

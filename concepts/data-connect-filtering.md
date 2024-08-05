@@ -41,5 +41,4 @@ The following datasets require a filter to be provided on one of the correspondi
 
 ## Related content
 
-- [Integrate with PAM](data-connect-pam.md)
-- [Data Connect frequently asked questions](data-connect-faq.md)
+[Data Connect frequently asked questions](data-connect-faq.md)

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc identity-governance lifecycle-workflows workflows create --body '{\
     "category": "leaver",\
     "displayName": "Post-Offboarding of an employee",\

@@ -3,7 +3,7 @@ title: "reviewSetQuery resource type"
 description: "Represents a review set query, which is used to query and cull data stored in an eDiscovery reviewSet."
 ms.localizationpriority: medium
 author: "mahage-msft"
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "resourcePageType"
 ---
 
@@ -19,12 +19,12 @@ Represents a review set query, which is used to query and cull data stored in an
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List queries](../api/ediscovery-reviewsetquery-list.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) collection | List the review set queries in a review set. |
-| [Create queries](../api/ediscovery-reviewsetquery-post.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) | Create a new review set query. |
-| [Get queries](../api/ediscovery-reviewsetquery-get.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
-| [Update reviewSetQuery](../api/ediscovery-reviewsetquery-update.md) | None | Update a review set query. |
-| [Delete reviewSetQuery](../api/ediscovery-reviewsetquery-delete.md) | None | Delete review set query. |
-| [applyTags](../api/ediscovery-reviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
+| [List](../api/ediscovery-reviewsetquery-list.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) collection | List the review set queries in a review set. |
+| [Create](../api/ediscovery-reviewsetquery-post.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) | Create a new review set query. |
+| [Get](../api/ediscovery-reviewsetquery-get.md) | [microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
+| [Update](../api/ediscovery-reviewsetquery-update.md) | None | Update a review set query. |
+| [Delete](../api/ediscovery-reviewsetquery-delete.md) | None | Delete review set query. |
+| [Apply tags](../api/ediscovery-reviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
 
 ## Properties
 
@@ -44,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

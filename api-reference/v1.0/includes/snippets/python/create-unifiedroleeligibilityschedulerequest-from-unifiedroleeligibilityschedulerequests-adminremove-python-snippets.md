@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.unified_role_eligibility_schedule_request import UnifiedRoleEligibilityScheduleRequest
+from msgraph.generated.models.unified_role_schedule_request_actions import UnifiedRoleScheduleRequestActions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

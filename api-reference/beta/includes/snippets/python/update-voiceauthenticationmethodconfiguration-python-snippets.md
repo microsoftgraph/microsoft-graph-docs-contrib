@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.voice_authentication_method_configuration import VoiceAuthenticationMethodConfiguration
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.voice_authentication_method_configuration import VoiceAuthenticationMethodConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.drives.item.items.item.invite.invite_post_request_body import InvitePostRequestBody
-from msgraph.generated.models.drive_recipient import DriveRecipient
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.drives.item.items.item.invite.invite_post_request_body import InvitePostRequestBody
+from msgraph_beta.generated.models.drive_recipient import DriveRecipient
 
 graph_client = GraphServiceClient(credentials, scopes)
 

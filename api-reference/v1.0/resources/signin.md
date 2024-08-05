@@ -19,8 +19,8 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
+|[List](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
+|[Get](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
 
 ## Properties
 | Property       | Type    |Description|
@@ -47,7 +47,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (if a sign-in failure occurs). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |userDisplayName|String|Display name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|ID of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`).|
-|userPrincipalName|String|User principal name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|userPrincipalName|String|User principal name of the user that initiated the sign-in. This value is always in lowercase. For guest users whose values in the user object typically contain `#EXT#` before the domain part, this property stores the value in both lowercase and the "true" format. For example, while the user object stores `AdeleVance_fabrikam.com#EXT#@contoso.com`, the sign-in logs store `adelevance@fabrikam.com`.<br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 
 ## Relationships
 
@@ -75,7 +75,7 @@ The following JSON representation shows the resource type.
   "clientAppUsed": "String",
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "isInteractive": true,
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},

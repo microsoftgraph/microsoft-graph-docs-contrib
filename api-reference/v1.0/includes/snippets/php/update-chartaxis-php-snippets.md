@@ -7,17 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\WorkbookChartAxis;
-use Microsoft\Graph\Generated\Models\Json;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WorkbookChartAxis();
-$majorUnit = new Json();
+$majorUnit = new MajorUnit();
 $requestBody->setMajorUnit($majorUnit);
-$maximum = new Json();
+$maximum = new Maximum();
 $requestBody->setMaximum($maximum);
-$minimum = new Json();
+$minimum = new Minimum();
 $requestBody->setMinimum($minimum);
 
 $result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->worksheets()->byWorkbookWorksheetId('workbookWorksheet-id')->charts()->byWorkbookChartId('workbookChart-id')->axes()->valueAxis()->patch($requestBody)->wait();

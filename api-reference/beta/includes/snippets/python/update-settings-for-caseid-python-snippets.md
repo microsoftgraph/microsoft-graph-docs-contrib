@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.case_settings import CaseSettings
-from msgraph.generated.models.redundancy_detection_settings import RedundancyDetectionSettings
-from msgraph.generated.models.topic_modeling_settings import TopicModelingSettings
-from msgraph.generated.models.ocr_settings import OcrSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.ediscovery.case_settings import CaseSettings
+from msgraph_beta.generated.models.ediscovery.redundancy_detection_settings import RedundancyDetectionSettings
+from msgraph_beta.generated.models.ediscovery.topic_modeling_settings import TopicModelingSettings
+from msgraph_beta.generated.models.ediscovery.ocr_settings import OcrSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

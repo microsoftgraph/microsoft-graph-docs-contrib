@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.identity_governance.lifecycle_workflows.workflows.item.runs.item.user_processing_results.item.user_processing_result_item_request_builder import UserProcessingResultItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = UserProcessingResultItemRequestBuilder.UserProcessingResultItemRe
 		select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"],
 )
 
-request_configuration = UserProcessingResultItemRequestBuilder.UserProcessingResultItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

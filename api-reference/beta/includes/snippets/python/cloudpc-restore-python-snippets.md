@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.devicemanagement.virtualendpoint.cloudpcs.item.restore.restore_post_request_body import RestorePostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.cloudpcs.item.restore.restore_post_request_body import RestorePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

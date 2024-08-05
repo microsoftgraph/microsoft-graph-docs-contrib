@@ -3,7 +3,7 @@ title: "goalsExportJob resource type"
 description: "Represents an entity that holds the properties of an exportJob for Viva Goals."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "employee-goals"
+ms.subservice: "viva-goals"
 doc_type: resourcePageType
 ---
 
@@ -20,9 +20,9 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List goalsExportJobs](../api/goals-list-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md) collection|Get a list of **goalsExportJob** objects and their properties.|
-|[Create goalsExportJob](../api/goals-post-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md)|Create a new **goalsExportJob** object.|
-|[Get goalsExportJob](../api/goalsexportjob-get.md)|[goalsExportJob](../resources/goalsexportjob.md)|Read the properties and relationships of a **goalsExportJob** object.|
+|[List](../api/goals-list-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md) collection|Get a list of **goalsExportJob** objects and their properties.|
+|[Create](../api/goals-post-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md)|Create a new **goalsExportJob** object.|
+|[Get](../api/goalsexportjob-get.md)|[goalsExportJob](../resources/goalsexportjob.md)|Read the properties and relationships of a **goalsExportJob** object.|
 
 ## Properties
 |Property|Type|Description|

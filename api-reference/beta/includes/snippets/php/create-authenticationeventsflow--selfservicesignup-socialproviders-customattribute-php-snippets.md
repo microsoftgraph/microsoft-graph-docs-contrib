@@ -5,16 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ExternalUsersSelfServiceSignUpEventsFlow;
-use Microsoft\Graph\Generated\Models\OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp;
-use Microsoft\Graph\Generated\Models\IdentityProviderBase;
-use Microsoft\Graph\Generated\Models\OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp;
-use Microsoft\Graph\Generated\Models\OnAttributeCollectionExternalUsersSelfServiceSignUp;
-use Microsoft\Graph\Generated\Models\IdentityUserFlowAttribute;
-use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionPage;
-use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionPageViewConfiguration;
-use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionInputConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ExternalUsersSelfServiceSignUpEventsFlow;
+use Microsoft\Graph\Beta\Generated\Models\OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Beta\Generated\Models\IdentityProviderBase;
+use Microsoft\Graph\Beta\Generated\Models\OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Beta\Generated\Models\OnAttributeCollectionExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttribute;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeType;
+use Microsoft\Graph\Beta\Generated\Models\IdentityUserFlowAttributeDataType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPage;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionPageViewConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationAttributeCollectionInputType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

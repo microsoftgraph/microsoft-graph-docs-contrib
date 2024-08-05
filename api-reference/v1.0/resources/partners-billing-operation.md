@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/partners-billing-operation-get.md)|[microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md)|Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.|
+|[Get](../api/partners-billing-operation-get.md)|[microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md)|Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.|
 
 ## Properties
 

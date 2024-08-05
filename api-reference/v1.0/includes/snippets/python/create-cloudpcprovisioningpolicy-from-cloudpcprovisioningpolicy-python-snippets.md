@@ -7,7 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.cloud_pc_provisioning_policy import CloudPcProvisioningPolicy
 from msgraph.generated.models.cloud_pc_domain_join_configuration import CloudPcDomainJoinConfiguration
+from msgraph.generated.models.cloud_pc_domain_join_type import CloudPcDomainJoinType
+from msgraph.generated.models.cloud_pc_provisioning_policy_image_type import CloudPcProvisioningPolicyImageType
 from msgraph.generated.models.cloud_pc_windows_setting import CloudPcWindowsSetting
+from msgraph.generated.models.cloud_pc_provisioning_type import CloudPcProvisioningType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

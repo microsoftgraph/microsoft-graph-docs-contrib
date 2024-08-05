@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mac_o_s_general_device_configuration import MacOSGeneralDeviceConfiguration
 from msgraph.generated.models.app_list_item import AppListItem
+from msgraph.generated.models.app_list_type import AppListType
+from msgraph.generated.models.required_password_type import RequiredPasswordType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

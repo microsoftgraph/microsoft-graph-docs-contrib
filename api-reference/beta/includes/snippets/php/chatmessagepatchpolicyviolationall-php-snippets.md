@@ -5,10 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ChatMessage;
-use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolation;
-use Microsoft\Graph\Generated\Models\ChatMessagePolicyViolationPolicyTip;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessagePolicyViolation;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessagePolicyViolationPolicyTip;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessagePolicyViolationVerdictDetailsTypes;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessagePolicyViolationDlpActionTypes;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

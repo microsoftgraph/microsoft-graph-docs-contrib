@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodelssearch "github.com/microsoftgraph/msgraph-sdk-go/models/search"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelssearch.NewAcronym()
 displayName := "DNN"
@@ -27,6 +27,7 @@ requestBody.SetWebUrl(&webUrl)
 state := graphmodels.DRAFT_ANSWERSTATE 
 requestBody.SetState(&state) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 acronyms, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
 
 

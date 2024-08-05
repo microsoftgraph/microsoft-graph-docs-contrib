@@ -1,7 +1,7 @@
 ---
 title: "virtualEventSession resource type"
 description: "Represents information about a virtual event session."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
@@ -21,8 +21,8 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
-|[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[List](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
+|[Get](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
@@ -92,7 +92,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventSession",
-  "baseType": "microsoft.graph.onlineMeeting",
+  "baseType": "microsoft.graph.onlineMeetingBase",
   "openType": false
 }
 -->
@@ -105,7 +105,6 @@ The following JSON representation shows the resource type.
   "allowParticipantsToChangeName": "Boolean",
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},

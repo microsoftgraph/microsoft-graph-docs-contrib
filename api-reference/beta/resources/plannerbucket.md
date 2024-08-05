@@ -20,18 +20,20 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
-|[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
-|[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
-|[Delete](../api/plannerbucket-delete.md) | None |Delete **plannerBucket** object. |
+|[Get bucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
+|[List bucket tasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Create bucket](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
+|[Update bucket](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
+|[Delete bucket](../api/plannerbucket-delete.md) | None |Delete **plannerBucket** object. |
 |[Get delta](../api/plannerbucket-delta.md)|[plannerBucket](../resources/plannerbucket.md) collection| Get newly created, updated, or deleted **plannerBucket** objects in a Planner plan without having to perform a full read of the entire resource collection.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the bucket and why.|
 |creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
 |id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. If set to`true`, the bucket is archived. An archived bucket is read-only.|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
@@ -42,7 +44,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.onlinemeetings.item.send_virtual_appointment_reminder_sms.send_virtual_appointment_reminder_sms_post_request_body import SendVirtualAppointmentReminderSmsPostRequestBody
-from msgraph.generated.models.attendee_notification_info import AttendeeNotificationInfo
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.onlinemeetings.item.send_virtual_appointment_reminder_sms.send_virtual_appointment_reminder_sms_post_request_body import SendVirtualAppointmentReminderSmsPostRequestBody
+from msgraph_beta.generated.models.attendee_notification_info import AttendeeNotificationInfo
+from msgraph_beta.generated.models.remind_before_time_in_minutes_type import RemindBeforeTimeInMinutesType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.channel import Channel
+from msgraph.generated.models.channel_membership_type import ChannelMembershipType
 from msgraph.generated.models.conversation_member import ConversationMember
 from msgraph.generated.models.aad_user_conversation_member import AadUserConversationMember
 

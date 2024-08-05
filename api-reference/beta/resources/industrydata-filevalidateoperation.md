@@ -27,8 +27,8 @@ Inherits from [validateOperation](industrydata-validateoperation.md).
 
 | Method                                                                            | Return type                                                                                              | Description                                                                                                          |
 | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| [List fileValidateOperations](../api/industrydata-filevalidateoperation-list.md) | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md) collection | Get a list of the [fileValidateOperation](industrydata-filevalidateoperation.md) objects and their properties.     |
-| [Get fileValidateOperation](../api/industrydata-filevalidateoperation-get.md)    | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md)            | Read the properties and relationships of an [fileValidateOperation](industrydata-filevalidateoperation.md) object. |
+| [List](../api/industrydata-filevalidateoperation-list.md) | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md) collection | Get a list of the [fileValidateOperation](industrydata-filevalidateoperation.md) objects and their properties.     |
+| [Get](../api/industrydata-filevalidateoperation-get.md)    | [microsoft.graph.industryData.fileValidateOperation](industrydata-filevalidateoperation.md)            | Read the properties and relationships of an [fileValidateOperation](industrydata-filevalidateoperation.md) object. |
 
 ## Properties
 
@@ -50,7 +50,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

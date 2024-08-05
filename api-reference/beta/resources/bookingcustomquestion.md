@@ -21,11 +21,11 @@ Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
 
 | Method                                                                         | Return type                                                               | Description                                                                                                       |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
-| [List bookingCustomQuestions](../api/bookingbusiness-list-customquestions.md)            | [bookingCustomQuestion](../resources/bookingcustomquestion.md) collection | Get a list of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) objects and their properties.    |
-| [Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md) | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Create a new [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                               |
-| [Get bookingCustomQuestion](../api/bookingcustomquestion-get.md)               | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object. |
-| [Update bookingCustomQuestion](../api/bookingcustomquestion-update.md)         | None     | Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                 |
-| [Delete bookingCustomQuestion](../api/bookingcustomquestion-delete.md)         | None                                                                      | Delete a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                                  |
+| [List](../api/bookingbusiness-list-customquestions.md)            | [bookingCustomQuestion](../resources/bookingcustomquestion.md) collection | Get a list of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) objects and their properties.    |
+| [Create](../api/bookingbusiness-post-customquestions.md) | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Create a new [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                               |
+| [Get](../api/bookingcustomquestion-get.md)               | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object. |
+| [Update](../api/bookingcustomquestion-update.md)         | None     | Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                 |
+| [Delete](../api/bookingcustomquestion-delete.md)         | None                                                                      | Delete a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                                  |
 
 ## Properties
 
@@ -44,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

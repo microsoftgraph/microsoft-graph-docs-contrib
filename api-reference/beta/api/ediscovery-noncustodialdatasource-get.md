@@ -3,7 +3,7 @@ title: "Get noncustodialDataSource"
 description: "Read the properties and relationships of a noncustodialDataSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

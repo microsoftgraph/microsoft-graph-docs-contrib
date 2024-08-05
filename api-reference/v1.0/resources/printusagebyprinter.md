@@ -16,9 +16,9 @@ Describes print activity for a printer during a specified time period (usageDate
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List (daily)](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of daily print usage summaries, grouped by printer. |
-| [List (monthly)](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of monthly print usage summaries, grouped by printer. |
-| [Get](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Read the properties and relationships of a **printUsageByPrinter** object. |
+| [List daily reports by printer](../api/reportroot-list-dailyprintusagebyprinter.md) | printUsageByPrinter | Get a list of daily print usage summaries, grouped by printer. |
+| [List monthly reports by printer](../api/reportroot-list-monthlyprintusagebyprinter.md) | printUsageByPrinter | Get a list of monthly print usage summaries, grouped by printer. |
+| [Get](../api/printusagebyprinter-get.md) | printUsageByPrinter | Read the properties and relationships of a printUsageByPrinter object. |
 
 ## Properties
 |Property|Type|Description|
@@ -33,13 +33,13 @@ Describes print activity for a printer during a specified time period (usageDate
 |incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed.|
 |mediaSheetCount|Int64|The estimated number of media sheets printed based on reporting by the printer.|
 |pageCount|Int64|The estimated number of pages printed based on reporting by the printer.|
-|printerID|String|The ID of the printer represented by these statistics.|
+|printerId|String|The ID of the printer represented by these statistics.|
 |printerName|String|The name of the printer represented by these statistics.|
 |singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed based on reporting by the printer.|
 |usageDate|Date|The date associated with these statistics.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

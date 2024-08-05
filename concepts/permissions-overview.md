@@ -107,16 +107,9 @@ Container objects such as groups support members of various types, for example u
 
 This principle is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
-### Example scenario
+For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`.
 
-A group's members are users, groups, and devices. An app has been granted the Microsoft Graph [User.Read.All](permissions-reference.md#userreadall) and [Group.Read.All](permissions-reference.md#groupreadall) permissions. The app calls the [list group members](/graph/api/group-list-members) API to retrieve the members of the group.
-
-To read the basic properties of a group's members that are users, the app needs at least the *User.Read.All* permission. To read the basic properties of a group's members that are groups, the app needs at least the *Group.Read.All* permission. To read the basic properties of a group's members that are devices, the app needs at least the *Device.Read.All* permission.
-
-Because the app has permissions to access only user and group objects in the group, but not device objects, in the response:
-
-- All the basic properties of the user and group member objects are returned. 
-- For the device member objects, only the object type and object ID are returned, but all other properties have the value *null*.
+To read the basic properties of a group's members that are users, the app needs at least the *User.Read.All* permission. To read the basic properties of a group's members that are groups, the app needs at least the *Group.Read.All* permission. To read the basic properties of a group's members that are devices, the app needs at least the *Device.Read.All* permission, and so on. However, as an alternative to the individual resource-level permissions, the app can be assigned at least the *Directory.Read.All* permission to read *all properties for all member types*.
 
 ### Example
 

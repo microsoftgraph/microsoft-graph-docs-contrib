@@ -4,16 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.booking_appointment import BookingAppointment
-from msgraph.generated.models.location import Location
-from msgraph.generated.models.physical_address import PhysicalAddress
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
-from msgraph.generated.models.booking_reminder import BookingReminder
-from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
-from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
-from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
-from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.booking_appointment import BookingAppointment
+from msgraph_beta.generated.models.location import Location
+from msgraph_beta.generated.models.physical_address import PhysicalAddress
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta.generated.models.booking_invoice_status import BookingInvoiceStatus
+from msgraph_beta.generated.models.booking_price_type import BookingPriceType
+from msgraph_beta.generated.models.booking_reminder import BookingReminder
+from msgraph_beta.generated.models.booking_reminder_recipients import BookingReminderRecipients
+from msgraph_beta.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph_beta.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph_beta.generated.models.physical_address_type import PhysicalAddressType
+from msgraph_beta.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph_beta.generated.models.booking_question_answer import BookingQuestionAnswer
+from msgraph_beta.generated.models.answer_input_type import AnswerInputType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

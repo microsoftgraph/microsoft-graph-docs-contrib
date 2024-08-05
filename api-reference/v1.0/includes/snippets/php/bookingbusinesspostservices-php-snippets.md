@@ -9,7 +9,9 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\BookingService;
 use Microsoft\Graph\Generated\Models\Location;
 use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\BookingPriceType;
 use Microsoft\Graph\Generated\Models\BookingReminder;
+use Microsoft\Graph\Generated\Models\BookingReminderRecipients;
 use Microsoft\Graph\Generated\Models\BookingSchedulingPolicy;
 
 

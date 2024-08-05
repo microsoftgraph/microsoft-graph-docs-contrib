@@ -25,11 +25,11 @@ Configuring an identity provider in your Microsoft Entra tenant enables future B
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get identityProvider](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
-|[Create identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
-|[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
-|[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
-|[List identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
+|[Get](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
+|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
+|[Update](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
+|[Delete](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
+|[List](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
 
 ## Properties
 
@@ -47,7 +47,7 @@ Each identity provider has a process for creating an app registration. For examp
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

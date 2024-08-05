@@ -17,7 +17,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
+|[Get schema functions](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
 
 ## Properties
 
@@ -28,7 +28,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

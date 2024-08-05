@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\MessageRule;
 use Microsoft\Graph\Generated\Models\MessageRuleActions;
+use Microsoft\Graph\Generated\Models\Importance;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

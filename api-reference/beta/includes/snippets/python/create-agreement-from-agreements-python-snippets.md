@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.agreement import Agreement
-from msgraph.generated.models.agreement_file_localization import AgreementFileLocalization
-from msgraph.generated.models.agreement_file_data import AgreementFileData
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.agreement import Agreement
+from msgraph_beta.generated.models.agreement_file_localization import AgreementFileLocalization
+from msgraph_beta.generated.models.agreement_file_data import AgreementFileData
 
 graph_client = GraphServiceClient(credentials, scopes)
 

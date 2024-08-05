@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.phone_authentication_method import PhoneAuthenticationMethod
+from msgraph.generated.models.authentication_phone_type import AuthenticationPhoneType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

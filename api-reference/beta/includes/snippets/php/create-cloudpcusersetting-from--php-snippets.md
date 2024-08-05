@@ -5,9 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CloudPcUserSetting;
-use Microsoft\Graph\Generated\Models\CloudPcRestorePointSetting;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSetting;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcRestorePointSetting;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcRestorePointFrequencyType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

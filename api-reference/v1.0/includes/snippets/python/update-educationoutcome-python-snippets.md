@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.education_rubric_outcome import EducationRubricOutcome
 from msgraph.generated.models.rubric_quality_feedback_model import RubricQualityFeedbackModel
 from msgraph.generated.models.education_item_body import EducationItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.rubric_quality_selected_column_model import RubricQualitySelectedColumnModel
 
 graph_client = GraphServiceClient(credentials, scopes)

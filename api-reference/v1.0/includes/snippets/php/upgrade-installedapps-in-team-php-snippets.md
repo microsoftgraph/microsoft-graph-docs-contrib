@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\UpgradePostRequestBody;
+use Microsoft\Graph\Generated\Teams\Item\InstalledApps\Item\Upgrade\UpgradePostRequestBody;
 use Microsoft\Graph\Generated\Models\TeamsAppPermissionSet;
 use Microsoft\Graph\Generated\Models\TeamsAppResourceSpecificPermission;
+use Microsoft\Graph\Generated\Models\TeamsAppResourceSpecificPermissionType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

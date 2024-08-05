@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.education.classes.item.assignments.item.deactivate.deactivate_request_builder import DeactivateRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.education.classes.item.assignments.item.deactivate.deactivate_request_builder import DeactivateRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = DeactivateRequestBuilder.DeactivateRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "include-unknown-enum-members")
 
 

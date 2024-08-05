@@ -22,7 +22,7 @@ Represents the details of the usage of self-service password reset and multi-fac
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails collection | Get a list of [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) objects for a given tenant.
+| [List](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails collection | Get a list of [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) objects for a given tenant.
  |
 
 ## Properties
@@ -44,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

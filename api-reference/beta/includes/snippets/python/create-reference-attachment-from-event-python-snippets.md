@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.reference_attachment import ReferenceAttachment
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.reference_attachment import ReferenceAttachment
+from msgraph_beta.generated.models.reference_attachment_provider import ReferenceAttachmentProvider
+from msgraph_beta.generated.models.reference_attachment_permission import ReferenceAttachmentPermission
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Module resource
 ---
 
 # educationModuleResource resource type
@@ -19,11 +20,11 @@ A wrapper object that stores the resources associated with a module. The student
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List resources](../api/educationmodule-list-resources.md) |[educationModuleResource](educationmoduleresource.md) collection| Get an **educationModuleResource** object collection.|
-|[Create educationModuleResource](../api/educationmodule-post-resources.md) | [educationModuleResource](educationmoduleresource.md) |Create and return an **educationModuleResource** object.|
-|[Get educationModuleResource](../api/educationmoduleresource-get.md) | [educationModuleResource](educationmoduleresource.md) |Read properties and relationships of an **educationModuleResource** object.|
-|[Update educationModuleResource](../api/educationmoduleresource-update.md) | [educationModuleResource](educationmoduleresource.md) |Update an **educationModuleResource** object. |
-|[Delete educationModuleResource](../api/educationmoduleresource-delete.md) | None |Delete an **educationModuleResource** object. |
+|[List module resources](../api/educationmodule-list-resources.md) |[educationModuleResource](educationmoduleresource.md) collection| Get an **educationModuleResource** object collection.|
+|[Create module resource](../api/educationmodule-post-resources.md) | [educationModuleResource](educationmoduleresource.md) |Create and return an **educationModuleResource** object.|
+|[Get module resource](../api/educationmoduleresource-get.md) | [educationModuleResource](educationmoduleresource.md) |Read properties and relationships of an **educationModuleResource** object.|
+|[Update module resource](../api/educationmoduleresource-update.md) | [educationModuleResource](educationmoduleresource.md) |Update an **educationModuleResource** object. |
+|[Delete resource from module](../api/educationmoduleresource-delete.md) | None |Delete an **educationModuleResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,8 +33,8 @@ A wrapper object that stores the resources associated with a module. The student
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this module.|
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 

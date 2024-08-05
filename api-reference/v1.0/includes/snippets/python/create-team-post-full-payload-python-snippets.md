@@ -6,12 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.team import Team
+from msgraph.generated.models.team_visibility_type import TeamVisibilityType
 from msgraph.generated.models.channel import Channel
 from msgraph.generated.models.teams_tab import TeamsTab
 from msgraph.generated.models.teams_tab_configuration import TeamsTabConfiguration
 from msgraph.generated.models.team_member_settings import TeamMemberSettings
 from msgraph.generated.models.team_guest_settings import TeamGuestSettings
 from msgraph.generated.models.team_fun_settings import TeamFunSettings
+from msgraph.generated.models.giphy_rating_type import GiphyRatingType
 from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
 from msgraph.generated.models.teams_app_installation import TeamsAppInstallation
 

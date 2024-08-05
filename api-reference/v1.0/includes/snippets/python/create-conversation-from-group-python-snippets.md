@@ -9,6 +9,7 @@ from msgraph.generated.models.conversation import Conversation
 from msgraph.generated.models.conversation_thread import ConversationThread
 from msgraph.generated.models.post import Post
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.recipient import Recipient
 from msgraph.generated.models.email_address import EmailAddress
 

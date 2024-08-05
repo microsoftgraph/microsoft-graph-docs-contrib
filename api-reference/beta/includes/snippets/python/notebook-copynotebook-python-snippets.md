@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.onenote.notebooks.item.copy_notebook.copy_notebook_post_request_body import CopyNotebookPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.onenote.notebooks.item.copy_notebook.copy_notebook_post_request_body import CopyNotebookPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

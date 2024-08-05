@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.update_policy import UpdatePolicy
-from msgraph.generated.models.deployment_settings import DeploymentSettings
-from msgraph.generated.models.schedule_settings import ScheduleSettings
-from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.windows_updates.update_policy import UpdatePolicy
+from msgraph_beta.generated.models.windows_updates.deployment_settings import DeploymentSettings
+from msgraph_beta.generated.models.windows_updates.schedule_settings import ScheduleSettings
+from msgraph_beta.generated.models.windows_updates.rate_driven_rollout_settings import RateDrivenRolloutSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

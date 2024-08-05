@@ -19,18 +19,18 @@ Inherits from [commsOperation](commsoperation.md).
 
 ## Methods
 
-| Method | Return Type | Description |
-|:-|:-|:-|
-| [Get addLargeGalleryViewOperation](../api/addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md) | Get the status of an operation that adds the large gallery view to a call. |
+|Method|Return Type|Description|
+|:-----|:----------|:----------|
+|[Get large gallery view operation status](../api/addlargegalleryviewoperation-get.md)|[addLargeGalleryViewOperation](addlargegalleryviewoperation.md)|Get the status of an operation that adds the large gallery view to a call.|
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The ID of the server operation. Read-only.                                                                                             |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
-| status                         | operationStatus             | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|clientContext|String|The client context.|
+|id|String|The ID of the server operation. Read-only.|
+|resultInfo|[resultInfo](resultinfo.md)|The result information. Read-only.|
+|status|operationStatus|The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.|
 
 ## Relationships
 
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

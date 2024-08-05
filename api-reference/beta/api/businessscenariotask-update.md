@@ -84,7 +84,6 @@ PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.businessScenarioTask",
   "title": "Customer order #12010",
   "percentComplete": 20,
   "priority": 1,

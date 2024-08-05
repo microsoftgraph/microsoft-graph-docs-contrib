@@ -5,9 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ExternalAuthenticationMethodConfiguration;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodTarget;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ExternalAuthenticationMethodConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTarget;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

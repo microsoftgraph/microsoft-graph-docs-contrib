@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|IndustryData-ReferenceDefinition.Read.All|Not available.|
+|Delegated (work or school account)|IndustryData-ReferenceDefinition.Read.All|IndustryData-ReferenceDefinition.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|IndustryData-ReferenceDefinition.Read.All|Not available.|
+|Application|IndustryData-ReferenceDefinition.Read.All|IndustryData-ReferenceDefinition.ReadWrite.All|
 

@@ -19,11 +19,11 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List bookmarks](../api/search-searchentity-list-bookmarks.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection|Get a list of the [bookmark](../resources/search-bookmark.md) objects and their properties.|
-|[Create bookmark](../api/search-searchentity-post-bookmarks.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Create a new [bookmark](../resources/search-bookmark.md) object.|
-|[Get bookmark](../api/search-bookmark-get.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Read the properties and relationships of a [bookmark](../resources/search-bookmark.md) object.|
-|[Update bookmark](../api/search-bookmark-update.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Update the properties of a [bookmark](../resources/search-bookmark.md) object.|
-|[Delete bookmark](../api/search-bookmark-delete.md)|None|Delete a [bookmark](../resources/search-bookmark.md) object.|
+|[List](../api/search-searchentity-list-bookmarks.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection|Get a list of the [bookmark](../resources/search-bookmark.md) objects and their properties.|
+|[Create](../api/search-searchentity-post-bookmarks.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Create a new [bookmark](../resources/search-bookmark.md) object.|
+|[Get](../api/search-bookmark-get.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Read the properties and relationships of a [bookmark](../resources/search-bookmark.md) object.|
+|[Update](../api/search-bookmark-update.md)|[microsoft.graph.search.bookmark](../resources/search-bookmark.md)|Update the properties of a [bookmark](../resources/search-bookmark.md) object.|
+|[Delete](../api/search-bookmark-delete.md)|None|Delete a [bookmark](../resources/search-bookmark.md) object.|
 
 ## Properties
 

@@ -4,7 +4,8 @@ ms.topic: include
 ms.author: ilyalushnikov
 ---
 
-The calling user must also be the owner or member of the group or be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be an owner or member of the group or be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+
 - For role-assignable groups: *Global Reader* or *Privileged Role Administrator*
 - For non-role-assignable groups: *Global Reader*, *Directory Writer*, *Groups Administrator*, *Identity Governance Administrator*, or *User Administrator*
 

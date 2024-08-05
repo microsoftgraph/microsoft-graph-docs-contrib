@@ -5,10 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.bookmark import Bookmark
-from msgraph.generated.models.answer_keyword import AnswerKeyword
+from msgraph.generated.models.search.bookmark import Bookmark
+from msgraph.generated.models.search.answer_keyword import AnswerKeyword
 from msgraph.generated.models.device_platform_type import DevicePlatformType
-from msgraph.generated.models.answer_variant import AnswerVariant
+from msgraph.generated.models.search.answer_variant import AnswerVariant
+from msgraph.generated.models.answer_state import AnswerState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

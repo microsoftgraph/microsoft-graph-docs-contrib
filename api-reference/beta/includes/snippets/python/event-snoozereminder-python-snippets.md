@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.events.item.snooze_reminder.snooze_reminder_post_request_body import SnoozeReminderPostRequestBody
-from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.events.item.snooze_reminder.snooze_reminder_post_request_body import SnoozeReminderPostRequestBody
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 

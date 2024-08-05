@@ -2,7 +2,7 @@
 title: "Get macOSImportedPFXCertificateProfile"
 description: "Read properties and relationships of the macOSImportedPFXCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1564
+Content-Length: 1605
 
 {
   "value": {
@@ -108,7 +108,8 @@ Content-Length: 1564
     "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months",
-    "intendedPurpose": "smimeEncryption"
+    "intendedPurpose": "smimeEncryption",
+    "deploymentChannel": "userChannel"
   }
 }
 ```

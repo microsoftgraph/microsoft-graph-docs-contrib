@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph network access APIs to secure acc
 author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)
@@ -72,6 +72,8 @@ Cross-tenant access settings involve network packet tagging and the enforcement 
 Conditional access settings in the Global Secure Access services involve enabling or disabling the conditional access signaling for source IP restoration and connectivity. The configuration determines whether the target resource receives the original source IP address of the client or the IP address of the Global Secure Access service.
 
 Use the [conditionalAccessSettings resource type](../resources/networkaccess-conditionalaccesssettings.md) and its associated APIs to manage conditional access settings.
+
+Use the [compliantNetworkNamedLocation resource type](../resources/compliantnetworknamedlocation.md) to ensure that users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators.
 
 ### Forwarding options
 

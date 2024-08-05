@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.notification_message_template import NotificationMessageTemplate
+from msgraph.generated.models.notification_template_branding_options import NotificationTemplateBrandingOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

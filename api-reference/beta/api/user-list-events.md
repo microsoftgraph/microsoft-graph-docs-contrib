@@ -68,11 +68,15 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+> [!NOTE]
+> You can't use the `$filter` parameter to filter on the **recurrence** property.
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
@@ -82,8 +86,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-## Example
-##### Request 1
+## Examples
+### Example 1: Get all user's events
 The first example gets all the user's events. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
@@ -91,6 +95,7 @@ The first example gets all the user's events. It specifies the following:
 
 The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -136,7 +141,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response 1
+#### Response
 The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
@@ -218,10 +223,12 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 }
 ```
 
-##### Request 2
-The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
+### Example 2: Get the body propery of the message
+The following example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -267,7 +274,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### Response 2
+#### Response
 The following example shows the response. The **body** property is returned in text format.
 
 <!-- {

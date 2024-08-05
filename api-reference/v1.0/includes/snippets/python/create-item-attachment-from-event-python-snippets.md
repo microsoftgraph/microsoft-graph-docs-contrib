@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.item_attachment import ItemAttachment
 from msgraph.generated.models.event import Event
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)

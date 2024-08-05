@@ -13,6 +13,7 @@ use Microsoft\Graph\Generated\Models\IosHomeScreenFolderPage;
 use Microsoft\Graph\Generated\Models\IosHomeScreenApp;
 use Microsoft\Graph\Generated\Models\IosHomeScreenPage;
 use Microsoft\Graph\Generated\Models\IosNotificationSettings;
+use Microsoft\Graph\Generated\Models\IosNotificationAlertType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.mailbox_settings import MailboxSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.mailbox_settings import MailboxSettings
+from msgraph_beta.generated.models.delegate_meeting_message_delivery_options import DelegateMeetingMessageDeliveryOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

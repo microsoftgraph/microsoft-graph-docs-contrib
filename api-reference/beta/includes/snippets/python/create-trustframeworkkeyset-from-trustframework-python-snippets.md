@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.trust_framework_key_set import TrustFrameworkKeySet
-from msgraph.generated.models.trust_framework_key import TrustFrameworkKey
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.trust_framework_key_set import TrustFrameworkKeySet
+from msgraph_beta.generated.models.trust_framework_key import TrustFrameworkKey
 
 graph_client = GraphServiceClient(credentials, scopes)
 

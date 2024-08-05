@@ -25,7 +25,7 @@ Represents a writeback state on Microsoft Entra cloud groups (Microsoft 365 and 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.writebackConfiguration"

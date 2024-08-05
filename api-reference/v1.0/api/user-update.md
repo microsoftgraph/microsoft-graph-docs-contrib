@@ -12,9 +12,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [user](../resources/user.md) object. Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
+Update the properties of a [user](../resources/user.md) object.
 
-Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in customer tenants](../resources/users.md#default-user-permissions-in-customer-tenants) for the list of properties they can update.
+- Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
+- Customers through Microsoft Entra ID for customers can also use this API operation to update their details. See [Default user permissions in customer tenants](../resources/users.md#default-user-permissions-in-customer-tenants) for the list of properties they can update.
+- For synced users, the ability to update certain properties is additionally determined by the source of authority and whether synchronization is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,7 +51,7 @@ PATCH /users/{id | userPrincipalName}
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. A global administrator assigned the _Directory.AccessAsUser.All_ delegated permission can update the **accountEnabled** status of all administrators in the tenant.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. Apart from a global administrator, a privileged authentication administrator assigned the _Directory.AccessAsUser.All_ delegated permission can update the **accountEnabled** status of all administrators in the tenant.|
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult`, and `Adult`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |businessPhones| String collection | The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|

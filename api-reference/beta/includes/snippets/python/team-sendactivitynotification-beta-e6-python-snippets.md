@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.teams.item.send_activity_notification.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
-from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
-from msgraph.generated.models.item_body import ItemBody
-from msgraph.generated.models.channel_members_notification_recipient import ChannelMembersNotificationRecipient
-from msgraph.generated.models.key_value_pair import KeyValuePair
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.teams.item.send_activity_notification.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
+from msgraph_beta.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph_beta.generated.models.teamwork_activity_topic_source import TeamworkActivityTopicSource
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.channel_members_notification_recipient import ChannelMembersNotificationRecipient
+from msgraph_beta.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

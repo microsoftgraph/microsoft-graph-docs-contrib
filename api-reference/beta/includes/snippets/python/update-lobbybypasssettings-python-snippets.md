@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.online_meeting import OnlineMeeting
-from msgraph.generated.models.lobby_bypass_settings import LobbyBypassSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.online_meeting import OnlineMeeting
+from msgraph_beta.generated.models.lobby_bypass_settings import LobbyBypassSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

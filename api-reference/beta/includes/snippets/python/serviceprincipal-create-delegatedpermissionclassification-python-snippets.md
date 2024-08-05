@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.delegated_permission_classification import DelegatedPermissionClassification
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.delegated_permission_classification import DelegatedPermissionClassification
+from msgraph_beta.generated.models.permission_classification_type import PermissionClassificationType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

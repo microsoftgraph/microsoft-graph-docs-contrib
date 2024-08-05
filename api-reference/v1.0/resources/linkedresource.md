@@ -23,11 +23,11 @@ Some **linkedResource** objects are not associated with any web URLs, in which c
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
-|[Create linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
-|[Get linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Read the properties and relationships of a [linkedResource](../resources/linkedresource.md) object.|
-|[Update linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Update the properties of a [linkedResource](../resources/linkedresource.md) object.|
-|[Delete linkedResource](../api/linkedresource-delete.md)|None|Delete a [linkedResource](../resources/linkedresource.md) object.|
+|[List](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
+|[Create](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
+|[Get](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Read the properties and relationships of a [linkedResource](../resources/linkedresource.md) object.|
+|[Update](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Update the properties of a [linkedResource](../resources/linkedresource.md) object.|
+|[Delete](../api/linkedresource-delete.md)|None|Delete a [linkedResource](../resources/linkedresource.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +42,7 @@ Some **linkedResource** objects are not associated with any web URLs, in which c
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

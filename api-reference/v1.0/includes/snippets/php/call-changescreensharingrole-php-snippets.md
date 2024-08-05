@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ChangeScreenSharingRolePostRequestBody;
+use Microsoft\Graph\Generated\Communications\Calls\Item\ChangeScreenSharingRole\ChangeScreenSharingRolePostRequestBody;
+use Microsoft\Graph\Generated\Models\ScreenSharingRole;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

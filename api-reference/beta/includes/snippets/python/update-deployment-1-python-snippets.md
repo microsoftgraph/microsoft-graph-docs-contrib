@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.deployment import Deployment
-from msgraph.generated.models.deployment_state import DeploymentState
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.windows_updates.deployment import Deployment
+from msgraph_beta.generated.models.windows_updates.deployment_state import DeploymentState
+from msgraph_beta.generated.models.requested_deployment_state_value import RequestedDeploymentStateValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows81_compliance_policy import Windows81CompliancePolicy
+from msgraph.generated.models.required_password_type import RequiredPasswordType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -124,7 +124,7 @@ Specify the request headers and the request body as described in the following s
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-|Authorization | String | Bearer {token}. Required. |
+|Authorization | String |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Length | Int32 | The number of bytes being uploaded in this operation. The upper limit of the number of bytes for each `PUT` operation is 4 MB. The request will fail for anything higher than 4 MB. Required. |
 | Content-Range | String | The 0-based byte range of the file being uploaded in this operation, expressed in the format `bytes {start}-{end}/{total}`. Required. |
 | Content-Type | String  | The MIME type. Specify `application/octet-stream`. Required. |

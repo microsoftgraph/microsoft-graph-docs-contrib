@@ -4,22 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.scheduled_permissions_request import ScheduledPermissionsRequest
-from msgraph.generated.models.aws_permissions_definition import AwsPermissionsDefinition
-from msgraph.generated.models.permissions_definition_authorization_system import PermissionsDefinitionAuthorizationSystem
-from msgraph.generated.models.aws_actions_permissions_definition_action import AwsActionsPermissionsDefinitionAction
-from msgraph.generated.models.aws_statement import AwsStatement
-from msgraph.generated.models.aws_condition import AwsCondition
-from msgraph.generated.models.permissions_definition_authorization_system_identity import PermissionsDefinitionAuthorizationSystemIdentity
-from msgraph.generated.models.saml_identity_source import SamlIdentitySource
-from msgraph.generated.models.request_schedule import RequestSchedule
-from msgraph.generated.models.expiration_pattern import ExpirationPattern
-from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
-from msgraph.generated.models.recurrence_pattern import RecurrencePattern
-from msgraph.generated.models.day_of_week import DayOfWeek
-from msgraph.generated.models.recurrence_range import RecurrenceRange
-from msgraph.generated.models.ticket_info import TicketInfo
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.scheduled_permissions_request import ScheduledPermissionsRequest
+from msgraph_beta.generated.models.aws_permissions_definition import AwsPermissionsDefinition
+from msgraph_beta.generated.models.permissions_definition_authorization_system import PermissionsDefinitionAuthorizationSystem
+from msgraph_beta.generated.models.aws_actions_permissions_definition_action import AwsActionsPermissionsDefinitionAction
+from msgraph_beta.generated.models.aws_statement import AwsStatement
+from msgraph_beta.generated.models.aws_statement_effect import AwsStatementEffect
+from msgraph_beta.generated.models.aws_condition import AwsCondition
+from msgraph_beta.generated.models.permissions_definition_authorization_system_identity import PermissionsDefinitionAuthorizationSystemIdentity
+from msgraph_beta.generated.models.saml_identity_source import SamlIdentitySource
+from msgraph_beta.generated.models.permissions_definition_identity_type import PermissionsDefinitionIdentityType
+from msgraph_beta.generated.models.request_schedule import RequestSchedule
+from msgraph_beta.generated.models.expiration_pattern import ExpirationPattern
+from msgraph_beta.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph_beta.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph_beta.generated.models.day_of_week import DayOfWeek
+from msgraph_beta.generated.models.recurrence_range import RecurrenceRange
+from msgraph_beta.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

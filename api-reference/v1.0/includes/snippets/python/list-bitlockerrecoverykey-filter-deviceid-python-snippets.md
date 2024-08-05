@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.information_protection.bitlocker.recovery_keys.recovery_keys_request_builder import RecoveryKeysRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RecoveryKeysRequestBuilder.RecoveryKeysRequestBuilderGetQueryPara
 		filter = "deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'",
 )
 
-request_configuration = RecoveryKeysRequestBuilder.RecoveryKeysRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("User-Agent", "Dsreg/10.0")

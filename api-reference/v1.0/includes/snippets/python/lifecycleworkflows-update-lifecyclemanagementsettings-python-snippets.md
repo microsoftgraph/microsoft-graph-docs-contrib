@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.lifecycle_management_settings import LifecycleManagementSettings
+from msgraph.generated.models.identity_governance.lifecycle_management_settings import LifecycleManagementSettings
 from msgraph.generated.models.email_settings import EmailSettings
 
 graph_client = GraphServiceClient(credentials, scopes)

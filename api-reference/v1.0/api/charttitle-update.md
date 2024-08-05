@@ -41,13 +41,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value representing if the chart title overlays the chart or not.|
+|overlay|Boolean|Boolean value representing if the chart title overlays the chart or not.|
 |text|string|Represents the title text of a chart.|
-|visible|boolean|A boolean value that represents the visibility of a chart title object.|
+|visible|Boolean|A Boolean value that represents the visibility of a chart title object.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartTitle](../resources/charttitle.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartTitle](../resources/workbookcharttitle.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

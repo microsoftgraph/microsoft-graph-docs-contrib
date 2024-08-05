@@ -10,9 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let getAllRecordings = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings')
+let getAllRecordings = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllRecordings(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5')')
 	.version('beta')
-	.filter('meetingOrganizerId eq \'8b081ef6-4792-4def-b2c9-c363a1bf41d5\'')
 	.get();
 
 ```

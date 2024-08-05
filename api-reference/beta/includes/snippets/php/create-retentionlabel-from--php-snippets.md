@@ -5,11 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\RetentionLabel;
-use Microsoft\Graph\Generated\Models\RetentionDurationInDays;
-use Microsoft\Graph\Generated\Models\DispositionReviewStage;
-use Microsoft\Graph\Generated\Models\FilePlanDescriptor;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionLabel;
+use Microsoft\Graph\Beta\Generated\Models\Security\BehaviorDuringRetentionPeriod;
+use Microsoft\Graph\Beta\Generated\Models\Security\ActionAfterRetentionPeriod;
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionTrigger;
+use Microsoft\Graph\Beta\Generated\Models\Security\RetentionDurationInDays;
+use Microsoft\Graph\Beta\Generated\Models\Security\DispositionReviewStage;
+use Microsoft\Graph\Beta\Generated\Models\Security\FilePlanDescriptor;
+use Microsoft\Graph\Beta\Generated\Models\Security\DefaultRecordBehavior;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

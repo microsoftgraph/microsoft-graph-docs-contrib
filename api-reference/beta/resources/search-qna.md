@@ -21,11 +21,11 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List qnas](../api/search-searchentity-list-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md) collection|Get a list of the [qna](../resources/search-qna.md) objects and their properties.|
-|[Create qna](../api/search-searchentity-post-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Create a new [qna](../resources/search-qna.md) object.|
-|[Get qna](../api/search-qna-get.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Read the properties and relationships of a [qna](../resources/search-qna.md) object.|
-|[Update qna](../api/search-qna-update.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Update the properties of a [qna](../resources/search-qna.md) object.|
-|[Delete qna](../api/search-qna-delete.md)|None|Delete a [qna](../resources/search-qna.md) object.|
+|[List](../api/search-searchentity-list-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md) collection|Get a list of the [qna](../resources/search-qna.md) objects and their properties.|
+|[Create](../api/search-searchentity-post-qnas.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Create a new [qna](../resources/search-qna.md) object.|
+|[Get](../api/search-qna-get.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Read the properties and relationships of a [qna](../resources/search-qna.md) object.|
+|[Update](../api/search-qna-update.md)|[microsoft.graph.search.qna](../resources/search-qna.md)|Update the properties of a [qna](../resources/search-qna.md) object.|
+|[Delete](../api/search-qna-delete.md)|None|Delete a [qna](../resources/search-qna.md) object.|
 
 ## Properties
 

@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Bookings API in Microsoft Graph"
+title: "Use the Microsoft Bookings API in Microsoft Graph for shared bookings"
 description: "Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup."
 ms.localizationpriority: high
 author: "arvindmicrosoft"
@@ -7,9 +7,12 @@ ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Bookings API in Microsoft Graph
+# Use the Microsoft Bookings API in Microsoft Graph for shared bookings
 
-Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup. A business owner can create one or more businesses, with each business offering a set of services. The owner can set up staff members, and specify the services that each staff member performs. A customer can book an appointment for a specific service in that business in an online or mobile app. Bookings ensures that the appointment time is kept up-to-date for the business, staff members, and customers involved.
+Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information in shared bookings with minimal setup. A business owner can create one or more businesses, with each business offering a set of services. The owner can set up staff members, and specify the services that each staff member performs. A customer can book an appointment for a specific service in that business in an online or mobile app. Microsoft Bookings ensures that the appointment time is kept up-to-date for the business, staff members, and customers involved.
+
+> [!IMPORTANT]
+> The Microsoft Bookings API in Microsoft Graph applies only to shared bookings. The API is not applicable for personal bookings.
 
 Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API involves the following objects:
 
@@ -18,7 +21,7 @@ Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API in
 - A set of [bookingAppointment](bookingappointment.md) instances
 - A set of [bookingCustomer](bookingcustomer.md) objects
 
-## Using the Bookings REST API
+## Using the Microsoft Bookings REST API
 
 Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](/graph/auth/auth-concepts#access-tokens) for the corresponding operations.
 

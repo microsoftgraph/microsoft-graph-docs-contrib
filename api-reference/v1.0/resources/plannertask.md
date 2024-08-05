@@ -18,9 +18,9 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
-|[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
-|[Delete](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
+|[Get task](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
+|[Update task](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
+|[Delete task](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.external_meeting_registrant import ExternalMeetingRegistrant
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.external_meeting_registrant import ExternalMeetingRegistrant
 
 graph_client = GraphServiceClient(credentials, scopes)
 

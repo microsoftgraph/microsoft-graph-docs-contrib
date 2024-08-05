@@ -1,0 +1,65 @@
+name: On-demand reference TOC generation
+
+on:
+  issue_comment:
+    types:
+    - created
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+
+  get-pull-target:
+    name: Get pull request head branch
+    runs-on: ubuntu-latest
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '#gen-toc') && github.event.issue.state == 'open' }}
+    outputs:
+      target: ${{ fromJson(steps.get_pull_request.outputs.data).head.ref }}
+    steps:
+    - uses: octokit/request-action@v2.x
+      id: thumbs-up
+      with:
+        route: POST /repos/:owner/:repo/issues/comments/:comment/reactions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_OWNER: ${{ github.repository_owner }}
+        INPUT_REPO: ${{ github.event.repository.name }}
+        INPUT_COMMENT: ${{ github.event.comment.id }}
+        INPUT_CONTENT: '"+1"'
+    - uses: octokit/request-action@v2.x
+      id: get_pull_request
+      with:
+        route: GET /repos/:owner/:repo/pulls/:pull
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_OWNER: ${{ github.repository_owner }}
+        INPUT_REPO: ${{ github.event.repository.name }}
+        INPUT_PULL: ${{ github.event.issue.number }}
+
+  request-toc-gen:
+    name: Generate reference TOC
+    needs: get-pull-target
+    uses: microsoftgraph/microsoft-graph-docs/.github/workflows/generate-ref-toc.yml@main
+    with:
+      target: ${{ needs.get-pull-target.outputs.target }}
+      pull_request: false
+
+  update-pull-request:
+    name: Update pull request
+    runs-on: ubuntu-latest
+    needs: request-toc-gen
+    steps:
+    - uses: octokit/request-action@v2.x
+      id: update-pr
+      with:
+        route: POST /repos/:owner/:repo/issues/:pull/comments
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_OWNER: ${{ github.repository_owner }}
+        INPUT_REPO: ${{ github.event.repository.name }}
+        INPUT_PULL: ${{ github.event.issue.number }}
+        INPUT_BODY: ${{ needs.request-toc-gen.outputs.result }}

@@ -35,11 +35,11 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
+In the request body, supply a JSON representation of [ChartPoints](../resources/workbookchartpoint.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.
+If successful, this method returns `201 Created` response code and [ChartPoints](../resources/workbookchartpoint.md) object in the response body.
 
 ## Example
 ##### Request
@@ -88,7 +88,7 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
+In the request body, supply a JSON representation of [ChartPoints](../resources/workbookchartpoint.md) object.
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {

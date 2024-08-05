@@ -19,7 +19,7 @@ Represents the current status of a user's response to a company's customizable t
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List agreementAcceptances for a user](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve a user's agreementAcceptance objects. |
+| [List agreement acceptances for a user](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve a user's agreementAcceptance objects. |
 | [List acceptances](../api/agreement-list-acceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve acceptance for an agreement.  |
 
 ## Properties
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

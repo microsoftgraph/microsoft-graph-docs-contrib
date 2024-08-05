@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.devicemanagement.virtualendpoint.provisioningpolicies.item.assign.assign_post_request_body import AssignPostRequestBody
-from msgraph.generated.models.cloud_pc_provisioning_policy_assignment import CloudPcProvisioningPolicyAssignment
-from msgraph.generated.models.cloud_pc_management_group_assignment_target import CloudPcManagementGroupAssignmentTarget
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.provisioningpolicies.item.assign.assign_post_request_body import AssignPostRequestBody
+from msgraph_beta.generated.models.cloud_pc_provisioning_policy_assignment import CloudPcProvisioningPolicyAssignment
+from msgraph_beta.generated.models.cloud_pc_management_group_assignment_target import CloudPcManagementGroupAssignmentTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

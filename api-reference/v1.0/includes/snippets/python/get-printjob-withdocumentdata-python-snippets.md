@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.print.printers.item.jobs.item.print_job_item_request_builder import PrintJobItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = PrintJobItemRequestBuilder.PrintJobItemRequestBuilderGetQueryPara
 		expand = ["documents"],
 )
 
-request_configuration = PrintJobItemRequestBuilder.PrintJobItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

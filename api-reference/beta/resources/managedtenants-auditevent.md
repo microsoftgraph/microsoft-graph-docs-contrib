@@ -18,8 +18,8 @@ Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List auditEvents](../api/managedtenants-managedtenant-list-auditevents.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md) collection|Get a list of the [auditEvent](../resources/managedtenants-auditevent.md) objects and their properties.|
-|[Get auditEvent](../api/managedtenants-auditevent-get.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|Read the properties and relationships of an [auditEvent](../resources/managedtenants-auditevent.md) object.|
+|[List](../api/managedtenants-managedtenant-list-auditevents.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md) collection|Get a list of the [auditEvent](../resources/managedtenants-auditevent.md) objects and their properties.|
+|[Get](../api/managedtenants-auditevent-get.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|Read the properties and relationships of an [auditEvent](../resources/managedtenants-auditevent.md) object.|
 
 ## Properties
 |Property|Type|Description|

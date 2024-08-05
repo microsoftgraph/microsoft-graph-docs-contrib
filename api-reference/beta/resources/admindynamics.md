@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminDynamics](../api/admindynamics-get.md)|[adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
-|[Update adminDynamics](../api/admindynamics-update.md)|[adminDynamics](../resources/admindynamics.md)|Update the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
+|[Get](../api/admindynamics-get.md)|[adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
+|[Update](../api/admindynamics-update.md)|[adminDynamics](../resources/admindynamics.md)|Update the properties and relationships of a [adminDynamics](../resources/admindynamics.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

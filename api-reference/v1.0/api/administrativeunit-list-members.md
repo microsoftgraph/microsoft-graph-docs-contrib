@@ -21,9 +21,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_list_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-list-members-permissions.md)]
 
-> Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 

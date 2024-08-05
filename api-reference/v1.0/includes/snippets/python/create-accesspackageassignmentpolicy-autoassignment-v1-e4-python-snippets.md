@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.allowed_target_scope import AllowedTargetScope
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 from msgraph.generated.models.access_package_assignment_requestor_settings import AccessPackageAssignmentRequestorSettings
 from msgraph.generated.models.access_package_assignment_approval_settings import AccessPackageAssignmentApprovalSettings
 from msgraph.generated.models.access_package_approval_stage import AccessPackageApprovalStage

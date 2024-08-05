@@ -5,22 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
-	  graphgroups(uniquename='{uniquename}') "github.com/microsoftgraph/msgraph-sdk-go/groups(uniquename='{uniquename}')"
+	  graphgroupswithuniquename "github.com/microsoftgraph/msgraph-sdk-go/groupswithuniquename"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "create-if-missing")
 
-configuration := &graphgroups(uniquename='{uniquename}').Groups(uniqueName='{uniqueName}')RequestBuilderPatchRequestConfiguration{
+configuration := &graphgroupswithuniquename.GroupsWithUniqueNameRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewGroup()
@@ -39,6 +39,7 @@ requestBody.SetMailNickname(&mailNickname)
 securityEnabled := false
 requestBody.SetSecurityEnabled(&securityEnabled) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 uniqueName := "{uniqueName}"
 groups, err := graphClient.GroupsWithUniqueName(&uniqueName).Patch(context.Background(), requestBody, configuration)
 

@@ -3,7 +3,7 @@ title: "personAward resource type"
 description: "personAward resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awards](../api/profile-list-awards.md)|[personAward](../resources/personaward.md) collection|Get the personAward resources from the awards navigation property.|
-|[Create personAward](../api/profile-post-awards.md)|[personAward](../resources/personaward.md)|Create a new personAward object.|
-|[Get personAward](../api/personaward-get.md)|[personAward](../resources/personaward.md)|Read the properties and relationships of an [personAward](../resources/personaward.md) object.|
-|[Update personAward](../api/personaward-update.md)|[personAward](../resources/personaward.md)|Update the properties of an [personAward](../resources/personaward.md) object.|
-|[Delete personAward](../api/personaward-delete.md)|None|Deletes an [personAward](../resources/personaward.md) object.|
+|[List](../api/profile-list-awards.md)|[personAward](../resources/personaward.md) collection|Get the personAward resources from the awards navigation property.|
+|[Create](../api/profile-post-awards.md)|[personAward](../resources/personaward.md)|Create a new personAward object.|
+|[Get](../api/personaward-get.md)|[personAward](../resources/personaward.md)|Read the properties and relationships of an [personAward](../resources/personaward.md) object.|
+|[Update](../api/personaward-update.md)|[personAward](../resources/personaward.md)|Update the properties of an [personAward](../resources/personaward.md) object.|
+|[Delete](../api/personaward-delete.md)|None|Deletes an [personAward](../resources/personaward.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +46,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -5,7 +5,7 @@ author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # superAwsRoleFinding resource type
@@ -22,9 +22,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superAwsRoleFinding objects](../api/superawsrolefinding-list.md)|[superAwsRoleFinding](../resources/superawsrolefinding.md) collection|Get a list of the [superAwsRoleFinding](../resources/superawsrolefinding.md) objects and their properties.|
-|[Get superAwsRoleFinding](../api/superawsrolefinding-get.md)|[superAwsRoleFinding](../resources/superawsrolefinding.md)|Read the properties and relationships of a [superAwsRoleFinding](../resources/superawsrolefinding.md) object.|
-|[aggregatedSummary](../api/superawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/superawsrolefinding-list.md)|[superAwsRoleFinding](../resources/superawsrolefinding.md) collection|Get a list of the [superAwsRoleFinding](../resources/superawsrolefinding.md) objects and their properties.|
+|[Get](../api/superawsrolefinding-get.md)|[superAwsRoleFinding](../resources/superawsrolefinding.md)|Read the properties and relationships of a [superAwsRoleFinding](../resources/superawsrolefinding.md) object.|
+|[Aggregated summary](../api/superawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 ## Properties
 

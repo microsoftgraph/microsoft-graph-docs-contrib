@@ -19,17 +19,19 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedOrganization objects. |
-|[Create connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
-|[Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
-|[Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
-|[Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
-|[List internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's internal sponsors. |
-|[List externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's external sponsors. |
-|[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add a user or group to a connectedOrganization's internal sponsors. |
-|[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a connectedOrganization's external sponsors. |
-|[Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a connectedOrganization's internal sponsors. |
-|[Remove externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | None | Remove a user or group from a connectedOrganization's external sponsors. |
+|[List](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedOrganization objects. |
+|[Create](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
+|[Get](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
+|[Update](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
+|[Delete](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
+| **External sponsors**| | |
+|[List external sponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's external sponsors. |
+|[Add external sponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a connectedOrganization's external sponsors. |
+|[Remove external sponsors](../api/connectedorganization-delete-externalsponsors.md) | None | Remove a user or group from a connectedOrganization's external sponsors. |
+| **Internal sponsors**| | |
+|[List internal sponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's internal sponsors. |
+|[Add internal sponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add a user or group to a connectedOrganization's internal sponsors. |
+|[Remove internal sponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a connectedOrganization's internal sponsors. |
 
 ## Properties
 
@@ -54,7 +56,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,6 +5,7 @@ author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Document task change
 ---
 
 # workbookDocumentTaskChange resource type
@@ -21,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get workbookDocumentTaskChange](../api/workbookdocumenttaskchange-get.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) | Get the properties and relationships of a [workbookDocumentTaskChange](../resources/workbookdocumenttaskchange.md) object. |
-| [List workbookDocumentTaskChanges](../api/workbookdocumenttask-list-changes.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection | Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects. |
+| [Get](../api/workbookdocumenttaskchange-get.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) | Get the properties and relationships of a [workbookDocumentTaskChange](../resources/workbookdocumenttaskchange.md) object. |
+| [List](../api/workbookdocumenttask-list-changes.md) | [workbookDocumentTaskChange](workbookdocumenttaskchange.md) collection | Get a list of [workbookDocumentTaskChange](workbookdocumenttaskchange.md) objects. |
 
 ## Properties
 
@@ -47,7 +48,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -21,7 +21,7 @@ Represents an agedAccountsReceivable object in Dynamics 365 Business Central, wh
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get agedAccountsReceivable](../api/dynamics-agedaccountsreceivable-get.md)|agedAccountsReceivable|Get agedAccountsReceivable object|
+|[Get aged accounts payable](../api/dynamics-agedaccountsreceivable-get.md)|agedAccountsReceivable|Get agedAccountsReceivable object|
 
 ## Properties
 | Property	     | Type    |Description                                  |

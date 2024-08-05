@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.drive_item import DriveItem
-from msgraph.generated.models.bundle import Bundle
-from msgraph.generated.models.album import Album
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.drive_item import DriveItem
+from msgraph_beta.generated.models.bundle import Bundle
+from msgraph_beta.generated.models.album import Album
 
 graph_client = GraphServiceClient(credentials, scopes)
 

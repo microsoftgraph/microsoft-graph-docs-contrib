@@ -3,7 +3,7 @@ title: "engagementAsyncOperation resource type"
 description: "Represents the status of a Viva Engage async operation that is an operation that transcends the lifetime of a single API request."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get engagementAsyncOperation](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
+| [Get](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
 
 ## Properties
 

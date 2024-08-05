@@ -25,7 +25,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the **conversation member** user.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conversationMemberRoleUpdatedEventMessageDetail",
@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
   "conversationMemberRoles": [
     "String"
   ],
-  "converstaionMemberUser": {
+  "conversationMemberUser": {
     "@odata.type": "microsoft.graph.teamworkUserIdentity"
   },
   "initiator": {

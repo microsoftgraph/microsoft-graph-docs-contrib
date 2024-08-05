@@ -6,8 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.schedule.open_shifts.open_shifts_request_builder import OpenShiftsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.open_shift import OpenShift
 from msgraph.generated.models.open_shift_item import OpenShiftItem
+from msgraph.generated.models.schedule_entity_theme import ScheduleEntityTheme
 from msgraph.generated.models.shift_activity import ShiftActivity
 from msgraph.generated.models.identity_set import IdentitySet
 from msgraph.generated.models.identity import Identity
@@ -50,7 +52,7 @@ request_body = OpenShift(
 	),
 )
 
-request_configuration = OpenShiftsRequestBuilder.OpenShiftsRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Authorization", "Bearer {token}")
 
 

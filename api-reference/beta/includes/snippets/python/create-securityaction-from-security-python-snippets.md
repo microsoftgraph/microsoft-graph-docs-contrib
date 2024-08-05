@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.security_action import SecurityAction
-from msgraph.generated.models.key_value_pair import KeyValuePair
-from msgraph.generated.models.security_vendor_information import SecurityVendorInformation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security_action import SecurityAction
+from msgraph_beta.generated.models.key_value_pair import KeyValuePair
+from msgraph_beta.generated.models.security_vendor_information import SecurityVendorInformation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

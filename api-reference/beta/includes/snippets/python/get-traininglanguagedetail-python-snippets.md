@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.attack_simulation.trainings.item.language_details.item.training_language_detail_item_request_builder import TrainingLanguageDetailItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.attack_simulation.trainings.item.language_details.item.training_language_detail_item_request_builder import TrainingLanguageDetailItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = TrainingLanguageDetailItemRequestBuilder.TrainingLanguageDetailIt
 		filter = "locale eq 'en'",
 )
 
-request_configuration = TrainingLanguageDetailItemRequestBuilder.TrainingLanguageDetailItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management monitoring alert-rules create --body '{\
   "id": "215c55cc-b1c9-4d36-a870-be5778101714",\
   "displayName": "Azure network connection failure impacting Cloud PCs",\

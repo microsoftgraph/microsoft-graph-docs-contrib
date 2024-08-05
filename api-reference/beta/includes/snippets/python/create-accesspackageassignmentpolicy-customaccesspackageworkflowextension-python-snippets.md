@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
-from msgraph.generated.models.requestor_settings import RequestorSettings
-from msgraph.generated.models.user_set import UserSet
-from msgraph.generated.models.access_package_question import AccessPackageQuestion
-from msgraph.generated.models.custom_extension_handler import CustomExtensionHandler
-from msgraph.generated.models.custom_access_package_workflow_extension import CustomAccessPackageWorkflowExtension
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph_beta.generated.models.requestor_settings import RequestorSettings
+from msgraph_beta.generated.models.user_set import UserSet
+from msgraph_beta.generated.models.access_package_question import AccessPackageQuestion
+from msgraph_beta.generated.models.custom_extension_handler import CustomExtensionHandler
+from msgraph_beta.generated.models.access_package_custom_extension_stage import AccessPackageCustomExtensionStage
+from msgraph_beta.generated.models.custom_access_package_workflow_extension import CustomAccessPackageWorkflowExtension
 
 graph_client = GraphServiceClient(credentials, scopes)
 

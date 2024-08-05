@@ -4,7 +4,7 @@ description: "Get the collection of sitePage objects from the site pages [list] 
 ms.date: 03/15/2018
 title: List SitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

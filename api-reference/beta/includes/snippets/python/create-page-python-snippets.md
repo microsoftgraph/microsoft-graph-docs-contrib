@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.site_page import SitePage
-from msgraph.generated.models.title_area import TitleArea
-from msgraph.generated.models.canvas_layout import CanvasLayout
-from msgraph.generated.models.horizontal_section import HorizontalSection
-from msgraph.generated.models.horizontal_section_column import HorizontalSectionColumn
-from msgraph.generated.models.web_part import WebPart
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.site_page import SitePage
+from msgraph_beta.generated.models.page_layout_type import PageLayoutType
+from msgraph_beta.generated.models.title_area import TitleArea
+from msgraph_beta.generated.models.title_area_layout_type import TitleAreaLayoutType
+from msgraph_beta.generated.models.title_area_text_alignment_type import TitleAreaTextAlignmentType
+from msgraph_beta.generated.models.canvas_layout import CanvasLayout
+from msgraph_beta.generated.models.horizontal_section import HorizontalSection
+from msgraph_beta.generated.models.horizontal_section_layout_type import HorizontalSectionLayoutType
+from msgraph_beta.generated.models.section_emphasis_type import SectionEmphasisType
+from msgraph_beta.generated.models.horizontal_section_column import HorizontalSectionColumn
+from msgraph_beta.generated.models.web_part import WebPart
 
 graph_client = GraphServiceClient(credentials, scopes)
 

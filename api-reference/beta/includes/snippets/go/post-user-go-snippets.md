@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsindustrydata.NewProvisioningFlow()
 createUnmatchedUsers := true
@@ -44,7 +44,7 @@ licenseSkus := []string {
 }
 userConfiguration.SetLicenseSkus(licenseSkus)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
 }
 userConfiguration.SetAdditionalData(additionalData)
 userConfiguration1 := graphmodelsindustrydata.NewUserConfiguration()
@@ -57,7 +57,7 @@ licenseSkus := []string {
 }
 userConfiguration1.SetLicenseSkus(licenseSkus)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/students", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/students", 
 }
 userConfiguration1.SetAdditionalData(additionalData)
 
@@ -68,6 +68,7 @@ configurations := []graphmodelsindustrydata.UserConfigurationable {
 creationOptions.SetConfigurations(configurations)
 requestBody.SetCreationOptions(creationOptions)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 provisioningFlows, err := graphClient.External().IndustryData().OutboundProvisioningFlowSets().ByOutboundProvisioningFlowSetId("outboundProvisioningFlowSet-id").ProvisioningFlows().Post(context.Background(), requestBody, nil)
 
 

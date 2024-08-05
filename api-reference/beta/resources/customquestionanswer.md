@@ -28,7 +28,8 @@ Represents a registrant's answer to the [custom registration question](meetingre
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.customQuestionAnswer"
+  "@odata.type": "microsoft.graph.customQuestionAnswer",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

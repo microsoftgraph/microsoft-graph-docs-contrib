@@ -5,15 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Deployment;
-use Microsoft\Graph\Generated\Models\CatalogContent;
-use Microsoft\Graph\Generated\Models\FeatureUpdateCatalogEntry;
-use Microsoft\Graph\Generated\Models\DeploymentSettings;
-use Microsoft\Graph\Generated\Models\ScheduleSettings;
-use Microsoft\Graph\Generated\Models\RateDrivenRolloutSettings;
-use Microsoft\Graph\Generated\Models\MonitoringSettings;
-use Microsoft\Graph\Generated\Models\MonitoringRule;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\Deployment;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\CatalogContent;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\FeatureUpdateCatalogEntry;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\DeploymentSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\ScheduleSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\RateDrivenRolloutSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringSettings;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringRule;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringSignal;
+use Microsoft\Graph\Beta\Generated\Models\WindowsUpdates\MonitoringAction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

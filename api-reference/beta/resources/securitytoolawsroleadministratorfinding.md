@@ -21,8 +21,8 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsRoleAdministratorFinding objects](../api/securitytoolawsroleadministratorfinding-list.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) collection|Get a list of the [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) objects and their properties.|
-|[Get securityToolAwsRoleAdministratorFinding](../api/securitytoolawsroleadministratorfinding-get.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) object.|
+|[List](../api/securitytoolawsroleadministratorfinding-list.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) collection|Get a list of the [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) objects and their properties.|
+|[Get](../api/securitytoolawsroleadministratorfinding-get.md)|[securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md) object.|
 
 ## Properties
 |Property|Type|Description|

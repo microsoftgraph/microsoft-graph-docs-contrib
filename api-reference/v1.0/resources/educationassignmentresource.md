@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Assignment resource
 ---
 
 # educationAssignmentResource resource type
@@ -20,8 +21,8 @@ The wrapper adds the **distributeForStudentWork** property and indicates that th
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
-|[Delete](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
+|[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
+|[Delete from assignment](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|

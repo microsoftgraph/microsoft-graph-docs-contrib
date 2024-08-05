@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ContentType;
-use Microsoft\Graph\Generated\Models\DocumentSet;
-use Microsoft\Graph\Generated\Models\ContentTypeInfo;
-use Microsoft\Graph\Generated\Models\DocumentSetContent;
-use Microsoft\Graph\Generated\Models\ColumnDefinition;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ContentType;
+use Microsoft\Graph\Beta\Generated\Models\DocumentSet;
+use Microsoft\Graph\Beta\Generated\Models\ContentTypeInfo;
+use Microsoft\Graph\Beta\Generated\Models\DocumentSetContent;
+use Microsoft\Graph\Beta\Generated\Models\ColumnDefinition;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

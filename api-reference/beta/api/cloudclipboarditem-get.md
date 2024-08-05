@@ -45,7 +45,7 @@ This method doesn't support the OData query parameters to customize the respone.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -63,7 +63,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, th
 |400|Bad request|The request is malformed or incorrect, such as an invalid `cloudClipboardItemId`.|
 |403|Forbidden|The caller can't perform the action. It indicates that the user doesn't consent to sharing  [cloudClipboardItem](../resources/cloudclipboarditem.md).|
 |409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because they don't have at least two devices authenticated through multi-factor authentication during the sign-in process.|
-|429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
+|429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.|
 
 ## Examples
 

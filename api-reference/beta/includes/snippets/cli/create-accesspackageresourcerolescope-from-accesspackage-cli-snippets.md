@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance entitlement-management access-packages access-package-resource-role-scopes create --access-package-id {accessPackage-id} --body '{\
   "accessPackageResourceRole":{\
     "originId":"Member_b31fe1f1-3651-488f-bd9a-1711887fd4ca",\

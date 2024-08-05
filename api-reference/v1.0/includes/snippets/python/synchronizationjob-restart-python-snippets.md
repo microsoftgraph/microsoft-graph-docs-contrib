@@ -6,8 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.service_principals.item.synchronization.jobs.item.restart.restart_request_builder import RestartRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.serviceprincipals.item.synchronization.jobs.item.restart.restart_post_request_body import RestartPostRequestBody
 from msgraph.generated.models.synchronization_job_restart_criteria import SynchronizationJobRestartCriteria
+from msgraph.generated.models.synchronization_job_restart_scope import SynchronizationJobRestartScope
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,7 +19,7 @@ request_body = RestartPostRequestBody(
 	),
 )
 
-request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Authorization", "Bearer <token>")
 
 

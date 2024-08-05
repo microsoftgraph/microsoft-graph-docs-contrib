@@ -42,7 +42,8 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.commsOperation",
+  "baseType": "microsoft.graph.entity"
 }-->
 ```json
 {

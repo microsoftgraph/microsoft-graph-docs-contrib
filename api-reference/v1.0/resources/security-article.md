@@ -21,7 +21,7 @@ Represents an article, which is a narrative that provides insight into threat ac
 | :------------------------------------------------------------ | :----------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | [List articles](../api/security-threatintelligence-list-articles.md)              | [article](../resources/security-article.md) collection                   | Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.    |
 | [Get article](../api/security-article-get.md)                 | [article](../resources/security-article.md)                              | Read the properties and relationships of a [microsoft.graph.security.article](../resources/security-article.md) object. |
-| [List indicators](../api/security-article-list-indicators.md) | [articleIndicator](../resources/security-articleindicator.md) collection | Get the articleIndicator resources from the indicators navigation property.                                             |
+| [List article indicators](../api/security-article-list-indicators.md) | [articleIndicator](../resources/security-articleindicator.md) collection | Get the articleIndicator resources from the indicators navigation property.                                             |
 
 ## Properties
 
@@ -45,7 +45,7 @@ Represents an article, which is a narrative that provides insight into threat ac
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

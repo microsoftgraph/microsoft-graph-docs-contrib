@@ -18,9 +18,9 @@ Contains metadata for email messages that are analyzed for security threats.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List analyzedEmail objects](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
-|[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.|
-|[remediate](../api/security-analyzedemail-remediate.md)|None|Remove a potential threat from end users' mailboxes.|
+|[List](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
+|[Get](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.|
+|[Remediate](../api/security-analyzedemail-remediate.md)|None|Remove a potential threat from end users' mailboxes.|
 
 ## Properties
 |Property|Type|Description|

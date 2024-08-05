@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.calls.item.send_dtmf_tones.send_dtmf_tones_post_request_body import SendDtmfTonesPostRequestBody
-from msgraph.generated.models.tone import Tone
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.calls.item.send_dtmf_tones.send_dtmf_tones_post_request_body import SendDtmfTonesPostRequestBody
+from msgraph_beta.generated.models.tone import Tone
 
 graph_client = GraphServiceClient(credentials, scopes)
 

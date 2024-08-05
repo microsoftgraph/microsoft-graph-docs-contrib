@@ -1,6 +1,6 @@
 ---
 title: "signInPreferences resource type"
-description: "Represents settings and preferences for the sign-in experience of a user."
+description: "Represents settings and preferences for the sign-in experience of a user. Currently, only system-preferred MFA settings are available. "
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings and preferences for the sign-in experience of a user.
+Represents settings and preferences for the sign-in experience of a user. Currently, only system-preferred MFA settings are available. For more information, see [System-preferred multifactor authentication](/entra/identity/authentication/concept-system-preferred-multifactor-authentication).
 
 ## Properties
 
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.signInPreferences"

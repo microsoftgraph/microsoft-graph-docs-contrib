@@ -5,17 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ScheduledPermissionsRequest;
-use Microsoft\Graph\Generated\Models\SingleResourceAzurePermissionsDefinition;
-use Microsoft\Graph\Generated\Models\PermissionsDefinitionAuthorizationSystem;
-use Microsoft\Graph\Generated\Models\AzureRolePermissionsDefinitionAction;
-use Microsoft\Graph\Generated\Models\PermissionsDefinitionAzureRole;
-use Microsoft\Graph\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
-use Microsoft\Graph\Generated\Models\EdIdentitySource;
-use Microsoft\Graph\Generated\Models\RequestSchedule;
-use Microsoft\Graph\Generated\Models\ExpirationPattern;
-use Microsoft\Graph\Generated\Models\TicketInfo;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ScheduledPermissionsRequest;
+use Microsoft\Graph\Beta\Generated\Models\SingleResourceAzurePermissionsDefinition;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystem;
+use Microsoft\Graph\Beta\Generated\Models\AzureRolePermissionsDefinitionAction;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAzureRole;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
+use Microsoft\Graph\Beta\Generated\Models\EdIdentitySource;
+use Microsoft\Graph\Beta\Generated\Models\PermissionsDefinitionIdentityType;
+use Microsoft\Graph\Beta\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Beta\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Beta\Generated\Models\TicketInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

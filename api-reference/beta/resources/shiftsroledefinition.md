@@ -18,8 +18,8 @@ A definition for a single role in a schedule in the Shifts app in Teams.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get shiftsRoleDefinition](../api/shiftsroledefinition-get.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Read the properties and relationships of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
-|[Set shiftsRoleDefinition](../api/shiftsroledefinition-update.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Create/Update the properties of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
+|[Get](../api/shiftsroledefinition-get.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Read the properties and relationships of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
+|[Update](../api/shiftsroledefinition-update.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Create/Update the properties of a [shiftsRoleDefinition](../resources/shiftsroledefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|

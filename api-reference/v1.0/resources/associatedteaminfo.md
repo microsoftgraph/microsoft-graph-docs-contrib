@@ -22,7 +22,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List associatedTeamInfo](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.|
+|[List your associated teams](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +33,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

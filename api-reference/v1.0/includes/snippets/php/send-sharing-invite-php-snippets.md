@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\InvitePostRequestBody;
+use Microsoft\Graph\Generated\Drives\Item\Items\Item\Invite\InvitePostRequestBody;
 use Microsoft\Graph\Generated\Models\DriveRecipient;
 
 

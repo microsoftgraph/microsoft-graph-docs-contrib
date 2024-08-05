@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphcommunications.NewSendDtmfTonesPostRequestBody()
 tones := []graphmodels.Toneable {
@@ -49,6 +49,7 @@ requestBody.SetDelayBetweenTonesMs(&delayBetweenTonesMs)
 clientContext := "e0be71f1-a14f-4cec-b65a-e7aba5db7c53"
 requestBody.SetClientContext(&clientContext) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 sendDtmfTones, err := graphClient.Communications().Calls().ByCallId("call-id").SendDtmfTones().Post(context.Background(), requestBody, nil)
 
 

@@ -7,8 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\PrivilegedAccessGroupEligibilityScheduleRequest;
+use Microsoft\Graph\Generated\Models\PrivilegedAccessGroupRelationships;
+use Microsoft\Graph\Generated\Models\ScheduleRequestActions;
 use Microsoft\Graph\Generated\Models\RequestSchedule;
 use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\ExpirationPatternType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

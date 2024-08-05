@@ -22,8 +22,8 @@ Represents a journal in Dynamics 365 Business Central.
 | Method                                            |Return Type|Description    |
 |:--------------------------------------------------|:----------|:--------------|
 |[Get journal](../api/dynamics-journal-get.md)      |journal    |Gets a journal.   |
-|[Post journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
-|[Patch journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
+|[Create journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
+|[Update journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
 |[Delete journal](../api/dynamics-journal-delete.md)|none       |Deletes a journal.|
 
 ## Properties

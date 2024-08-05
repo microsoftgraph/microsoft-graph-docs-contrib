@@ -3,7 +3,7 @@ title: "itemEmail resource type"
 description: "itemEmail resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -20,11 +20,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List emails](../api/profile-list-emails.md)|[itemEmail](../resources/itememail.md) collection|Get the itemEmail resources from the emails navigation property.|
-|[Create itemEmail](../api/profile-post-emails.md)|[itemEmail](../resources/itememail.md)|Create a new itemEmail object.|
-|[Get itemEmail](../api/itememail-get.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
-|[Update itemEmail](../api/itememail-update.md)|[itemEmail](../resources/itememail.md)|Update the properties of an [itemEmail](../resources/itememail.md) object.|
-|[Delete itemEmail](../api/itememail-delete.md)|None|Deletes an [itemEmail](../resources/itememail.md) object.|
+|[List](../api/profile-list-emails.md)|[itemEmail](../resources/itememail.md) collection|Get the itemEmail resources from the emails navigation property.|
+|[Create](../api/profile-post-emails.md)|[itemEmail](../resources/itememail.md)|Create a new itemEmail object.|
+|[Get](../api/itememail-get.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
+|[Update](../api/itememail-update.md)|[itemEmail](../resources/itememail.md)|Update the properties of an [itemEmail](../resources/itememail.md) object.|
+|[Delete](../api/itememail-delete.md)|None|Deletes an [itemEmail](../resources/itememail.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -45,7 +45,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

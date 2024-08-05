@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.applications.item.remove_password.remove_password_post_request_body import RemovePasswordPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.applications.item.remove_password.remove_password_post_request_body import RemovePasswordPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

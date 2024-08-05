@@ -3,6 +3,84 @@
     {
       "ChangeList": [
         {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** enumeration type.",
+          "Target": "meetingRequestType"
+        },
+        {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** property to the [eventMessageRequest](https://learn.microsoft.com/en-us/graph/api/resources/eventMessageRequest?view=graph-rest-beta) resource.",
+          "Target": "eventMessageRequest"
+        }
+      ],
+      "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-23T20:46:34.1850971Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** enumeration type.",
+          "Target": "meetingRequestType"
+        },
+        {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** property to the [eventMessageRequest](https://learn.microsoft.com/en-us/graph/api/resources/eventMessageRequest?view=graph-rest-beta) resource.",
+          "Target": "eventMessageRequest"
+        }
+      ],
+      "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-23T20:46:34.1850971Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** enumeration type.",
+          "Target": "meetingRequestType"
+        },
+        {
+          "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRequestType** property to the [eventMessageRequest](https://learn.microsoft.com/en-us/graph/api/resources/eventMessageRequest?view=graph-rest-beta) resource.",
+          "Target": "eventMessageRequest"
+        }
+      ],
+      "Id": "fbbd9865-d43b-44dd-9420-38e4b2d261a7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-23T20:46:34.1850971Z",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3163e72c-3807-4dc3-909f-33421d2c69e0",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
@@ -1018,6 +1096,48 @@
       "Version": "beta",
       "CreatedDateTime": "2024-02-16T00:00:00",
       "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
+          "ApiChange": "Method",
+          "ChangedApiName": "recall",
+          "ChangeType": "Addition",
+          "Description": "Added the [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+          "Target": "message"
+        },
+        {
+          "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
+          "ApiChange": "Method",
+          "ChangedApiName": "recall",
+          "ChangeType": "Addition",
+          "Description": "Added the [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [eventmessage](https://learn.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-beta) resource.",
+          "Target": "eventmessage"
+        },
+        {
+          "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
+          "ApiChange": "Method",
+          "ChangedApiName": "recall",
+          "ChangeType": "Addition",
+          "Description": "Added the [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [eventmessagerequest](https://learn.microsoft.com/en-us/graph/api/resources/eventmessagerequest?view=graph-rest-beta) resource.",
+          "Target": "eventmessagerequest"
+        },
+        {
+          "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
+          "ApiChange": "Method",
+          "ChangedApiName": "recall",
+          "ChangeType": "Addition",
+          "Description": "Added the [recall] (https://learn.microsoft.com/en-us/graph/api/message-recall?view=graph-rest-beta) method to the [eventmessageresponse](https://learn.microsoft.com/en-us/graph/api/resources/eventmessageresponse?view=graph-rest-beta) resource.",
+          "Target": "eventmessageresponse"
+        }
+      ],
+      "Id": "fec8da2a-0eb1-46af-9913-42a9c7c67201",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-06-24T12:00:00.000Z",
+      "WorkloadArea": "Mail",
       "SubArea": ""
     }
   ]

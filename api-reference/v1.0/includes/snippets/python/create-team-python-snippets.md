@@ -9,6 +9,7 @@ from msgraph.generated.models.team import Team
 from msgraph.generated.models.team_member_settings import TeamMemberSettings
 from msgraph.generated.models.team_messaging_settings import TeamMessagingSettings
 from msgraph.generated.models.team_fun_settings import TeamFunSettings
+from msgraph.generated.models.giphy_rating_type import GiphyRatingType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

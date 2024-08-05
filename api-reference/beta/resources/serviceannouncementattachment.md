@@ -18,7 +18,7 @@ Represents an attachment associated with a [serviceUpdateMessage](../resources/s
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceAnnouncementAttachment](../api/serviceannouncementattachment-get.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|Read the properties and relationships of a [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) object.|
+|[Get](../api/serviceannouncementattachment-get.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|Read the properties and relationships of a [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Represents an attachment associated with a [serviceUpdateMessage](../resources/s
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

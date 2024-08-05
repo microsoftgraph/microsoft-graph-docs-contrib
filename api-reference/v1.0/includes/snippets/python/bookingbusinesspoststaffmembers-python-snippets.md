@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.booking_staff_member import BookingStaffMember
+from msgraph.generated.models.booking_staff_role import BookingStaffRole
 from msgraph.generated.models.booking_work_hours import BookingWorkHours
+from msgraph.generated.models.day_of_week import DayOfWeek
 from msgraph.generated.models.booking_work_time_slot import BookingWorkTimeSlot
 
 graph_client = GraphServiceClient(credentials, scopes)

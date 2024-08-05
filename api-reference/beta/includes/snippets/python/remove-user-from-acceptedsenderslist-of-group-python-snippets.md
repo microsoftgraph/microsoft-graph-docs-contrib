@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.accepted_senders.ref.ref_request_builder import RefRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups.item.accepted_senders.ref.ref_request_builder import RefRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RefRequestBuilder.RefRequestBuilderDeleteQueryParameters(
 		id = "https://graph.microsoft.com/beta/users/{user-id}",
 )
 
-request_configuration = RefRequestBuilder.RefRequestBuilderDeleteRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

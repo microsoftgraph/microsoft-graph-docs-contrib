@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.training_campaign import TrainingCampaign
-from msgraph.generated.models.email_identity import EmailIdentity
-from msgraph.generated.models.account_target_content import AccountTargetContent
-from msgraph.generated.models.end_user_notification_setting import EndUserNotificationSetting
-from msgraph.generated.models.training_setting import TrainingSetting
-from msgraph.generated.models.campaign_schedule import CampaignSchedule
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.training_campaign import TrainingCampaign
+from msgraph_beta.generated.models.email_identity import EmailIdentity
+from msgraph_beta.generated.models.account_target_content import AccountTargetContent
+from msgraph_beta.generated.models.account_target_content_type import AccountTargetContentType
+from msgraph_beta.generated.models.end_user_notification_setting import EndUserNotificationSetting
+from msgraph_beta.generated.models.end_user_notification_preference import EndUserNotificationPreference
+from msgraph_beta.generated.models.end_user_notification_setting_type import EndUserNotificationSettingType
+from msgraph_beta.generated.models.training_setting import TrainingSetting
+from msgraph_beta.generated.models.training_setting_type import TrainingSettingType
+from msgraph_beta.generated.models.campaign_schedule import CampaignSchedule
+from msgraph_beta.generated.models.campaign_status import CampaignStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

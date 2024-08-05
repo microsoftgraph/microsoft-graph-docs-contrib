@@ -34,8 +34,8 @@ The following table lists some of the common uses for the cloud communications A
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)| [Methods for calls](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#methods)| 
-|IVR calls   |     | [Methods for IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0&preserve-view=true)
+| Creating and joining 1-1 and group calls   | [call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)| [Methods for calls](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#methods)| 
+|IVR calls   |  [call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)   | [Methods for IVR](/graph/api/resources/teams-api-overview#ivr-scenarios?view=graph-rest-v1.0&preserve-view=true)
 | Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-v1.0&preserve-view=true)   ||
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true#methods)|
 | Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) |

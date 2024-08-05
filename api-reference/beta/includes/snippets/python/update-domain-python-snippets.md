@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.domain import Domain
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.domain import Domain
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,6 +14,7 @@ request_body = Domain(
 	supported_services = [
 		"Email",
 		"OfficeCommunicationsOnline",
+		"CustomUrlDomain",
 	],
 )
 

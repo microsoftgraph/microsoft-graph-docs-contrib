@@ -21,11 +21,11 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 | Method                                                                  | Return Type                           | Description                                                                                       |
 | :---------------------------------------------------------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------ |
-| [List openShifts](../api/openshift-list.md)                             | [openShift](openshift.md) collection  | Get the list of **openShift** in a schedule.                                                      |
-| [Create openShift](../api/openshift-post.md)                            | [openShift](openshift.md)             | Create a new **openShift**.                                                                       |
-| [Get openShift](../api/openshift-get.md)                                | [openShift](openshift.md)             | Get an **openShift** by ID.                                                                       |
-| [Update openShift](../api/openshift-update.md)                          | [openShift](openshift.md)             | Update an **openShift**.                                                                          |
-| [Delete openShift](../api/openshift-delete.md)                          | None                                  | Delete an **openShift** from the schedule.                                                        |
+| [List](../api/openshift-list.md)                             | [openShift](openshift.md) collection  | Get the list of **openShift** in a schedule.                                                      |
+| [Create](../api/openshift-post.md)                            | [openShift](openshift.md)             | Create a new **openShift**.                                                                       |
+| [Get](../api/openshift-get.md)                                | [openShift](openshift.md)             | Get an **openShift** by ID.                                                                       |
+| [Update](../api/openshift-update.md)                          | [openShift](openshift.md)             | Update an **openShift**.                                                                          |
+| [Delete](../api/openshift-delete.md)                          | None                                  | Delete an **openShift** from the schedule.                                                        |
 | [Get open shifts across all joined teams](../api/team-getopenshifts.md) | [openShift](openshift.md) collection  | Get all **openShift** objects across all teams a user is a direct member of. |
 | [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)    | None                                  | Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.    |
 

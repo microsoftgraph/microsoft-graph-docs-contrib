@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.time_card import TimeCard
-from msgraph.generated.models.time_card_event import TimeCardEvent
-from msgraph.generated.models.item_body import ItemBody
-from msgraph.generated.models.time_card_break import TimeCardBreak
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.time_card import TimeCard
+from msgraph_beta.generated.models.time_card_event import TimeCardEvent
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.time_card_break import TimeCardBreak
 
 graph_client = GraphServiceClient(credentials, scopes)
 

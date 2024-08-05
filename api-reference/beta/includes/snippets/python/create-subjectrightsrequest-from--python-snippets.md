@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.subject_rights_request import SubjectRightsRequest
-from msgraph.generated.models.data_subject import DataSubject
-from msgraph.generated.models.subject_rights_request_all_site_location import SubjectRightsRequestAllSiteLocation
-from msgraph.generated.models.user import User
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.subject_rights_request import SubjectRightsRequest
+from msgraph_beta.generated.models.subject_rights_request_type import SubjectRightsRequestType
+from msgraph_beta.generated.models.data_subject_type import DataSubjectType
+from msgraph_beta.generated.models.data_subject import DataSubject
+from msgraph_beta.generated.models.subject_rights_request_all_site_location import SubjectRightsRequestAllSiteLocation
+from msgraph_beta.generated.models.user import User
 
 graph_client = GraphServiceClient(credentials, scopes)
 

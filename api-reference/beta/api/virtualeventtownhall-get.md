@@ -1,13 +1,14 @@
 ---
 title: "Get virtualEventTownhall"
 description: "Read the properties and relationships of a virtualEventTownhall object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Get virtualEventTownhall
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,14 +18,15 @@ Read the properties and relationships of a [virtualEventTownhall](../resources/v
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventtownhall-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-get-permissions.md)]
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-get-permissions.md)]
+
+> [!NOTE]
+>
+> To use application permissions with this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
 
@@ -33,16 +35,18 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /solutions/virtualEvents/townhalls/{townhallId}
+GET /solutions/virtualEvents/townhalls/{id}
 ```
 
 ## Optional query parameters
-This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -121,8 +125,8 @@ Content-Type: application/json
   "status": "published",
   "displayName": "The Impact of Tech on Our Lives",
   "description": {
-    "content": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
-    "contentType": "Html"
+    "content": "<p>Discusses how technology has changed the way we communicate, work, and interact with each other.</p>",
+    "contentType": "html"
   },
   "startDateTime": {
     "dateTime": "2023-11-30T16:30:00",
@@ -159,6 +163,9 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
+  "settings": {
+    "isAttendeeEmailNotificationEnabled": false
+  },
   "isInviteOnly": false
 }
 ```

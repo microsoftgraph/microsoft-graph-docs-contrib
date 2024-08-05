@@ -16,10 +16,10 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)  | [externalItem](../resources/externalconnectors-externalitem.md)  | Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
-| [Get externalItem](../api/externalconnectors-externalitem-get.md)        | [externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
-| [Update externalItem](../api/externalconnectors-externalitem-update.md)  | [externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
-| [Delete externalItem](../api/externalconnectors-externalitem-delete.md)  | None |Delete an [externalItem](../resources/externalconnectors-externalitem.md) object.|
+| [Create](../api/externalconnectors-externalconnection-put-items.md)  | [externalItem](../resources/externalconnectors-externalitem.md)  | Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
+| [Get](../api/externalconnectors-externalitem-get.md)        | [externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
+| [Update](../api/externalconnectors-externalitem-update.md)  | [externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
+| [Delete](../api/externalconnectors-externalitem-delete.md)  | None |Delete an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Add activities](../api/externalconnectors-externalitem-addactivities.md) | [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection | Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties
@@ -37,7 +37,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Returns a list of activities performed on the item. Write-only. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

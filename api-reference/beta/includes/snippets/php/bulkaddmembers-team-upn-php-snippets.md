@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\AddPostRequestBody;
-use Microsoft\Graph\Generated\Models\ConversationMember;
-use Microsoft\Graph\Generated\Models\AadUserConversationMember;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Teams\Item\Members\Add\AddPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ConversationMember;
+use Microsoft\Graph\Beta\Generated\Models\AadUserConversationMember;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

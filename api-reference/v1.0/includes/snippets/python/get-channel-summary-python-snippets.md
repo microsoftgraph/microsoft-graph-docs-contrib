@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.channels.item.channel_item_request_builder import ChannelItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = ChannelItemRequestBuilder.ChannelItemRequestBuilderGetQueryParame
 		select = ["summary"],
 )
 
-request_configuration = ChannelItemRequestBuilder.ChannelItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

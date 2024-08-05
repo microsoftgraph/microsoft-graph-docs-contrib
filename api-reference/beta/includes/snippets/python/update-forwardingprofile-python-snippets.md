@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.forwarding_profile import ForwardingProfile
-from msgraph.generated.models.association import Association
-from msgraph.generated.models.associated_branch import AssociatedBranch
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.forwarding_profile import ForwardingProfile
+from msgraph_beta.generated.models.networkaccess.association import Association
+from msgraph_beta.generated.models.networkaccess.associated_branch import AssociatedBranch
 
 graph_client = GraphServiceClient(credentials, scopes)
 

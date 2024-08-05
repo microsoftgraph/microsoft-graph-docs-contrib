@@ -6,7 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.simulation import Simulation
+from msgraph.generated.models.simulation_attack_technique import SimulationAttackTechnique
+from msgraph.generated.models.simulation_attack_type import SimulationAttackType
+from msgraph.generated.models.simulation_status import SimulationStatus
 from msgraph.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
+from msgraph.generated.models.account_target_content_type import AccountTargetContentType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

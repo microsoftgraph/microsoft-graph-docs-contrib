@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity_governance.terms_of_use.agreements.item.agreement_item_request_builder import AgreementItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity_governance.terms_of_use.agreements.item.agreement_item_request_builder import AgreementItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = AgreementItemRequestBuilder.AgreementItemRequestBuilderGetQueryPa
 		expand = ["files"],
 )
 
-request_configuration = AgreementItemRequestBuilder.AgreementItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

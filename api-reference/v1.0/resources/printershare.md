@@ -22,14 +22,14 @@ Inherits from [printerBase](../resources/printerbase.md).
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Read properties and relationships of a **printerShare** object. |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Update a **printerShare** object. |
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
-| [List jobs](../api/printershare-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printerShare. |
-| [Create job](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printerShare. To start printing the job, use [start](../api/printjob-start.md). |
-| [List allowedUsers](../api/printershare-list-allowedusers.md) | [user](user.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
-| [Add allowedUser](../api/printershare-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
-| [Remove allowedUser](../api/printershare-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
-| [List allowedGroups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share. |
-| [Add allowedGroup](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
-| [Remove allowedGroup](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
+| [List jobs for a printer share](../api/printershare-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printerShare. |
+| [Create job for a printer share](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printerShare. To start printing the job, use [start](../api/printjob-start.md). |
+| [List allowed users](../api/printershare-list-allowedusers.md) | [user](user.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
+| [Create allowed user](../api/printershare-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
+| [Delete allowed user](../api/printershare-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
+| [List allowed groups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share. |
+| [Create allowed group](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
+| [Delete allowed group](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
 
 ## Properties
 |Property|Type|Description|
@@ -56,7 +56,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |allowedGroups|[group](group.md)|The groups whose users have access to print using the printer.|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer associated with this printer share.|
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

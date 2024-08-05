@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.call import Call
+from msgraph.generated.models.call_direction import CallDirection
 from msgraph.generated.models.modality import Modality
 from msgraph.generated.models.app_hosted_media_config import AppHostedMediaConfig
 from msgraph.generated.models.chat_info import ChatInfo

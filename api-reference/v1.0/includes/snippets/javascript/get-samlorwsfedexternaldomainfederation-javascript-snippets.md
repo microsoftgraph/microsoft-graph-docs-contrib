@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let samlOrWsFedExternalDomainFederation = await client.api('/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation')
-	.version('beta')
 	.filter('domains/any(x: x/id eq \'contoso.com\')')
 	.get();
 

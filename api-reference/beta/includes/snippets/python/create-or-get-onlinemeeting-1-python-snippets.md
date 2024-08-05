@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.onlinemeetings.create_or_get.create_or_get_post_request_body import CreateOrGetPostRequestBody
-from msgraph.generated.models.meeting_participants import MeetingParticipants
-from msgraph.generated.models.meeting_participant_info import MeetingParticipantInfo
-from msgraph.generated.models.identity_set import IdentitySet
-from msgraph.generated.models.identity import Identity
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.onlinemeetings.create_or_get.create_or_get_post_request_body import CreateOrGetPostRequestBody
+from msgraph_beta.generated.models.meeting_participants import MeetingParticipants
+from msgraph_beta.generated.models.meeting_participant_info import MeetingParticipantInfo
+from msgraph_beta.generated.models.identity_set import IdentitySet
+from msgraph_beta.generated.models.identity import Identity
+from msgraph_beta.generated.models.online_meeting_role import OnlineMeetingRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 

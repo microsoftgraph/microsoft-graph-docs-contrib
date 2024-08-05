@@ -27,7 +27,7 @@ Represents health details for a peripheral device attached to a Microsoft Teams-
 |peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the peripheral device.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkPeripheralHealth"

@@ -43,13 +43,13 @@ In the request body, supply the values for relevant fields that should be update
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |name|string|Name of the table.|
-|showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
-|showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
+|showHeaders|Boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
+|showTotals|Boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
 |style|string|Constant value that represents the Table style. The possible values are: `TableStyleLight1` through `TableStyleLight21`, `TableStyleMedium1` through  `TableStyleMedium28`, `TableStyleDark1` through `TableStyleDark11`. A custom user-defined style present in the workbook can also be specified.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [workbookTable](../resources/table.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
 ### Request

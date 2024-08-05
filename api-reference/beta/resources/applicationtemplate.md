@@ -19,9 +19,9 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
-| [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.|
+|[List](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
+| [Get](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
+|[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.|
 
 
 ## Properties
@@ -29,6 +29,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`.|
+|configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
@@ -57,14 +58,16 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "id" : "id-value",
-    "displayName" : "displayName-value",
-    "homePageUrl" : "homePageUrl-value",
-    "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-    "logoUrl" : "logoUrl-value",
-    "categories" : ["categories-value"],
-    "publisher" : "publisher-value",
-    "description" : "description-value"
+  "categories": ["String"],
+  "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
+  "description": "String",
+  "displayName": "String",
+  "homePageUrl": "String",
+  "id": "String (identifier)",
+  "logoUrl": "String",
+  "publisher": "String",
+  "supportedProvisioningTypes": ["String"],
+  "supportedSingleSignOnModes": ["String"]
 }
 ```
 

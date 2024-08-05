@@ -21,9 +21,9 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List federatedTokenValidationPolicies](../api/policyroot-list-federatedtokenvalidationpolicy.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) collection|Get a list of the [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) objects and their properties.|
-|[Get federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-get.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
-|[Update federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-update.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Update the properties of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[List](../api/policyroot-list-federatedtokenvalidationpolicy.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) collection|Get a list of the [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) objects and their properties.|
+|[Get](../api/federatedtokenvalidationpolicy-get.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[Update](../api/federatedtokenvalidationpolicy-update.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Update the properties of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

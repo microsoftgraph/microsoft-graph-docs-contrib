@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.governance_role_setting import GovernanceRoleSetting
-from msgraph.generated.models.governance_rule_setting import GovernanceRuleSetting
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.governance_role_setting import GovernanceRoleSetting
+from msgraph_beta.generated.models.governance_rule_setting import GovernanceRuleSetting
 
 graph_client = GraphServiceClient(credentials, scopes)
 

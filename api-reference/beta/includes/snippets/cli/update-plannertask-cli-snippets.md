@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta planner tasks patch --planner-task-id {plannerTask-id} --if-match "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="" --body '{\
   "assignments": {\
     "fbab97d0-4932-4511-b675-204639209557": {\

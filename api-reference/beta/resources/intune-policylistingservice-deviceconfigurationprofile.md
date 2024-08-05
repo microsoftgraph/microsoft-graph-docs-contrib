@@ -2,7 +2,7 @@
 title: "deviceConfigurationProfile resource type"
 description: "The listing service profile entity contains the meta data of an Intune configuration profile "
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceConfigurationProfile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The listing service profile entity contains the meta data of an Intune configuration profile 
 
@@ -35,7 +35,7 @@ The listing service profile entity contains the meta data of an Intune configura
 |createdDateTime|DateTimeOffset|The date and time the object was created.|
 |profileName|String|Profile name|
 |profileType|[profileType](../resources/intune-policylistingservice-profiletype.md)|Profile Type. Possible values are: `settingsCatalog`, `administrativeTemplates`, `importedADMXTemplates`, `oemAppConfig`, `hardwareConfig`, `dcV1EndpointProtection`, `dcV1DeviceRestrictions`.|
-|platformType|[platformType](../resources/intune-policylistingservice-platformtype.md)|Platform Type. Possible values are: `none`, `android`, `androidEnterprise`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|platformType|[platformType](../resources/intune-policylistingservice-platformtype.md)|Platform Type. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`, `androidEnterprise`, `aosp`.|
 |configurationTechnologies|Int32|Configuration Technologies for Settins Catalog Policies|
 |templateId|String|TemplateId for Settings Catalog Policies|
 |roleScopeTagIds|String collection|The list of scope tags for the configuration.|

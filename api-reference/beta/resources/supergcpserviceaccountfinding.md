@@ -21,9 +21,9 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superGcpServiceAccountFinding objects](../api/supergcpserviceaccountfinding-list.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) collection|Get a list of the [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) objects and their properties.|
-|[Get superGcpServiceAccountFinding](../api/supergcpserviceaccountfinding-get.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md)|Read the properties and relationships of a [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) object.|
-|[aggregatedSummary](../api/supergcpserviceaccountfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
+|[List](../api/supergcpserviceaccountfinding-list.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) collection|Get a list of the [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) objects and their properties.|
+|[Get](../api/supergcpserviceaccountfinding-get.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md)|Read the properties and relationships of a [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) object.|
+|[Aggregated summary](../api/supergcpserviceaccountfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 
 ## Properties
