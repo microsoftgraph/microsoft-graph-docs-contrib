@@ -11,6 +11,52 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+# provisionState values
+
+| Member |
+| -------------------- |
+| notProvisioned |
+| provisioningInProgress |
+| provisioningFailed |
+| provisioningCompleted |
+| unknownFutureValue |
+
+# approvalOperationStatus values
+
+| Member |
+| -------------------- |
+| scheduled |
+| inProgress |
+| succeeded |
+| failed |
+| timeout |
+| unknownFutureValue |
+
+## approverRole values
+
+| Member |
+| -------------------- |
+| approver |
+| owner |
+
+## approvalItemState values
+
+| Member |
+| -------------------- |
+| canceled |
+| created |
+| pending |
+| completed |
+
+## approvalItemType values
+
+| Member |
+| -------------------- |
+| basic |
+| basicAwaitAll |
+| custom |
+| customAwaitAll |
+
 ## responseFeedbackType values
 
 | Member |

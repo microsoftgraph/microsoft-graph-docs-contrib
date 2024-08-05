@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Considers only cells with values as used cells.|
+|valuesOnly|Boolean|Optional. Considers only cells with values as used cells.|
 
 ## Response
 

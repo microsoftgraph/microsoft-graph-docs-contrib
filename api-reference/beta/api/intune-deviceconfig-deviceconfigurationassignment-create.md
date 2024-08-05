@@ -2,7 +2,7 @@
 title: "Create deviceConfigurationAssignment"
 description: "Create a new deviceConfigurationAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

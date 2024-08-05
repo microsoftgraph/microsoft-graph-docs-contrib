@@ -2,7 +2,7 @@
 title: "List deviceManagementConfigurationPolicyAssignments"
 description: "List properties and relationships of the deviceManagementConfigurationPolicyAssignment objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "revokeAppleVppLicenses action"
 description: "Revoke all Apple Vpp licenses for a device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

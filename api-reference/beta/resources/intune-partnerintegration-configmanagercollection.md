@@ -2,7 +2,7 @@
 title: "configManagerCollection resource type"
 description: "A ConfigManager defined collection of devices or users."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

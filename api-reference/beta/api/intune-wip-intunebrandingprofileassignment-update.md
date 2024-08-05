@@ -2,7 +2,7 @@
 title: "Update intuneBrandingProfileAssignment"
 description: "Update the properties of a intuneBrandingProfileAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

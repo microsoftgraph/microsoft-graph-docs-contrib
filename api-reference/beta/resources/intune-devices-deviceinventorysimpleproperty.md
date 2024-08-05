@@ -2,7 +2,7 @@
 title: "deviceInventorySimpleProperty resource type"
 description: "Inherited type of DeviceInventoryProperty where the property contains a single value"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

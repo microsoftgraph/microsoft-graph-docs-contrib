@@ -2,7 +2,7 @@
 title: "bitLockerRecoveryPasswordRotationType enum type"
 description: "BitLocker recovery password rotation type"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

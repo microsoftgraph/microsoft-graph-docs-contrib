@@ -2,7 +2,7 @@
 title: "Delete macOSSoftwareUpdateCategorySummary"
 description: "Deletes a macOSSoftwareUpdateCategorySummary."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

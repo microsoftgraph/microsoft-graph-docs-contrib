@@ -16,7 +16,7 @@ The **AppliedCategoriesCollection** resource represents the collection of catego
 There can be up to six categories applied to a task. Category descriptions, for example, `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. When they don't apply, properties are automatically removed by setting their values to the `false` boolean. 
+Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` Boolean when the corresponding categories are applied on the task. When they don't apply, properties are automatically removed by setting their values to the `false` Boolean. 
 
 ## JSON representation
 

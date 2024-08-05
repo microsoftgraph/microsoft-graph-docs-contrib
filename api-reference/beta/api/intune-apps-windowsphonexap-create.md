@@ -2,7 +2,7 @@
 title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

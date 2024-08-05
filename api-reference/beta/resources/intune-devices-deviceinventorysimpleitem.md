@@ -2,7 +2,7 @@
 title: "deviceInventorySimpleItem resource type"
 description: "Inherited type of DeviceInventoryItem where the instance only has a list of properties that can be displayed in a table format"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

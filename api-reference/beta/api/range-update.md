@@ -41,13 +41,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|Represents if all columns of the current range are hidden.|
+|columnHidden|Boolean|Represents if all columns of the current range are hidden.|
 |formulas|Json|Represents the formula in A1-style notation.|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
 |formulasR1C1|Json|Represents the formula in R1C1-style notation.|
 |numberFormat|Json|Represents Excel's number format code for the given cell.|
-|rowHidden|boolean|Represents if all rows of the current range are hidden.|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error return the error string.|
+|rowHidden|Boolean|Represents if all rows of the current range are hidden.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a Boolean. Cells that contain an error return the error string.|
 
 ## Response
 

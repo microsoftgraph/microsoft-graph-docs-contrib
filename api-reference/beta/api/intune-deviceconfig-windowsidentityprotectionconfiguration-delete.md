@@ -2,7 +2,7 @@
 title: "Delete windowsIdentityProtectionConfiguration"
 description: "Deletes a windowsIdentityProtectionConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
