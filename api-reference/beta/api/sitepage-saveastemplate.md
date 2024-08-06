@@ -37,12 +37,7 @@ POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/saveAsTemplate
 
 ## Request body
 
-These fields and be used in request payload.
-
-| Property | Type | Description |
-| :--------|:-----|-------------|
-| title | String | The title of the site page template to create. Optional. |
-| name | String | The name of the site page template to create. Required. |
+In the request body, supply a JSON representation of the [crateFromPageRequest](../resources/saveastemplaterequest.md) to use in the request payload.
 
 ## Response
 
