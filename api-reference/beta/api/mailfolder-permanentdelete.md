@@ -1,6 +1,6 @@
 ---
 title: "mailFolder: permanentDelete"
-description: "Permanently delete mail folder and remove it's items from the user's mailbox"
+description: "Permanently delete a mail folder and remove its items from the user's mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"

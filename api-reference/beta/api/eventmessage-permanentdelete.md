@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete an eventMessage and place it in the Purges folder in the dumpster in the user's mailbox. Email clients such as Outlook or the Outlook Web App can't access permanently deleted items. Unless there's a hold set on the mailbox, the items will be permanently deleted after a set period of time.
+Permanently delete an event message and place it in the Purges folder in the user's mailbox. Email clients such as Outlook or the Outlook Web App can't access permanently deleted items. Unless there's a hold set on the mailbox, the items will be permanently deleted after a set period of time.
 
 You can read more about item retention in the article [Configure Deleted Item Retention and Recoverable Items Quotas](https://technet.microsoft.com/library/ee364752%28v=exchg.150%29.aspx).
 
