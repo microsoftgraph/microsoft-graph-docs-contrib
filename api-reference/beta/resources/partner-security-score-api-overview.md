@@ -27,7 +27,7 @@ The primary objectives of the Security Score API include:
 Use Microsoft Graph [Partner Security Score API](../resources/partner-security-partnersecurityscore.md) to retrieve the score and insights into customer security posture.
 The partner security score API is defined in the OData subnamespace microsoft.graph.partners.security.
  
-_Note: In order to take actions for the Security Requirements you will need to visit the relevant user interface by clicking the Action URL provisioned in the API response._
+_Note: In order to take actions for the Security Requirements, you must visit the relevant user interface by clicking the Action URL provisioned in the API response._
 
 The partner security score API is defined in the OData subnamespace `microsoft.graph.partners.security`.
 
