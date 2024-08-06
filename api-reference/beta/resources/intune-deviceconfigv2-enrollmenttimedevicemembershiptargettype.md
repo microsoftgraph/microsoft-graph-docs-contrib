@@ -2,7 +2,7 @@
 title: "enrollmentTimeDeviceMembershipTargetType enum type"
 description: "Represents the type of the targets that devices will become members of when enrolled with the associated profile. Possible values are staticSecurityGroup."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

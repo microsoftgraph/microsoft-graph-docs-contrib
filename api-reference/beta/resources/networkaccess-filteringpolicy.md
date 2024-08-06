@@ -21,10 +21,14 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-networkaccessroot-list-filteringpolicies.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|Get all filtering policies in the tenant to better understand what traffic is blocked or allowed.|
-|[Add policy](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Create a new [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) for defining traffic rules.|
+|[List policies for a filtering policy profile](../api/networkaccess-policylink-list-policy.md)|[filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) collection|Get the filtering policy resources from the policy profile.|
+|[Create](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Create a new [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) for defining traffic rules.|
 |[Get](../api/networkaccess-filteringpolicy-get.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Get a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object to view its configuration.|
 |[Update](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Modify the properties of an existing [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) to update its traffic rules.|
-|[Delete](../api/networkaccess-filteringprofile-delete-policies.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object.|
+|[Delete](../api/networkaccess-filteringpolicylink-delete-policy.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object.|
+|[Delete policy for a filtering policy profile](../api/networkaccess-filteringprofile-delete-policies.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object.|
+
+
 
 ## Properties
 |Property|Type|Description|

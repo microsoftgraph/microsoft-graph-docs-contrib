@@ -2,7 +2,7 @@
 title: "Get reportRoot"
 description: "Read properties and relationships of the reportRoot object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

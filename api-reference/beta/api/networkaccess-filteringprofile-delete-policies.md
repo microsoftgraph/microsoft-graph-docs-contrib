@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /networkaccess/FilteringProfiles/{FilteringProfileId}/policies/{FilteringPolicyId}
+DELETE /networkaccess/filteringProfiles/{filteringProfileId}/policies/{filteringPolicyId}
 
 ```
 
