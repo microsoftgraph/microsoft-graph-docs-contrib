@@ -53,10 +53,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.partnerSecurityScore",
-  "updatedDateTime": "2024-01-17T00:00:00Z",
-  "lastRefreshDateTime":"2024-02-28T00:00:00Z",
-  "currentScore": 14.29,
-  "maxScore": 100.0
+  "updatedDateTime": "String (timestamp)",
+  "lastRefreshDateTime": "String (timestamp)",
+  "currentScore": "Single",
+  "maxScore": "Single"
 }
 ```
 

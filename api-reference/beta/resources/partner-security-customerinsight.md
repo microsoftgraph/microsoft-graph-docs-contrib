@@ -41,15 +41,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.customerInsight",
-  "tenantId": "87f425b5-498a-a5a9-bbb0-10791a36cfc2",
+  "tenantId": "String (identifier)",
   "mfa": {
-    "@odata.type": "microsoft.graph.partner.security.customerMfaInsight",
-    "compliantAdminsCount": 53,
-    "compliantNonAdminsCount": 11,
-    "totalUsersCount": 6852,
-    "securityDefaultsStatus": "disabled",
-    "mfaConditionalAccessPolicyStatus": "enabled",
-    "legacyPerUserMfaStatus": "enabled"
+    "@odata.type": "microsoft.graph.partner.security.customerMfaInsight"
   }
 }
 ```

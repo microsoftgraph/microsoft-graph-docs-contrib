@@ -48,17 +48,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
-  "id": "mfaEnforcedForAdminsOfCustomers",
-  "requirementType": "mfaEnforcedForAdminsOfCustomers",
-  "complianceStatus": "compliant",
-  "actionUrl": "https://aka.ms/partner-center-security-customer-mfa",
-  "helpUrl": "https://aka.ms/partner-center-security-dashboard-require-mfa",
-  "score": 20,
-  "maxScore": 20,
-  "state": "active",
-  "updatedDateTime": "2024-01-27T03:34:43.2103657Z",
-  "totalTenantCount": 79,
-  "compliantTenantCount": 20
+  "id": "String (identifier)",
+  "requirementType": "String",
+  "complianceStatus": "String",
+  "actionUrl": "String",
+  "helpUrl": "String",
+  "score": "Integer",
+  "maxScore": "Integer",
+  "state": "String",
+  "updatedDateTime": "String (timestamp)",
+  "totalTenantCount": "Integer",
+  "compliantTenantCount": "Integer"
 }
 ```
 

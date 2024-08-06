@@ -53,15 +53,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.securityRequirement",
-  "id": "securityContactProvided",
-  "requirementType": "securityContactProvided",
-  "complianceStatus": "compliant",
-  "actionUrl":"https://aka.ms/partner-center-security-contact", 
-  "helpUrl":"https://aka.ms/partner-center-security-dashboard-security-contact", 
-  "score": 10,
-  "maxScore": 10,
-  "state": "active",
-  "updatedDateTime": "2023-09-26T04:04:01.4261872Z",
+  "id": "String (identifier)",
+  "requirementType": "String",
+  "complianceStatus": "String",
+  "actionUrl": "String",
+  "helpUrl": "String",
+  "score": "Integer",
+  "maxScore": "Integer",
+  "state": "String",
+  "updatedDateTime": "String (timestamp)"
 }
 ```
 

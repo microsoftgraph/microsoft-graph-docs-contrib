@@ -49,11 +49,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.securityScoreHistory",
-  "id": "c1f995b5-418e-45f9-8b90-9c7a1a36cfc2",
-  "createdDateTime": "2024-01-17T00:00:00Z",
-  "score": 14.29,
-  "compliantRequirementsCount": 1,
-  "totalRequirementsCount": 5
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "score": "Single",
+  "compliantRequirementsCount": "Integer",
+  "totalRequirementsCount": "Integer"
 }
 ```
 
