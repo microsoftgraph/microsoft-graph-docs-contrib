@@ -49,6 +49,7 @@ POST /sites/{site-id}/pages
 In the request body, supply a JSON representation of the [newsLinkPage](../resources/newsLinkPage.md) object.
 
 > **Notes:**
+>
 > 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
 > 2. Currently, to set the bannerImageWebUrl, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
 
@@ -82,8 +83,8 @@ Content-Type: application/json
 
 {
   "@odata.type" : "#microsoft.graph.newsLinkPage",
-  "title": "Microsoft Build brings AI tools to the forefront for developers",
-  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
+  "title" : "Microsoft Build brings AI tools to the forefront for developers",
+  "newsWebUrl" : "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
   "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
@@ -94,7 +95,7 @@ Content-Type: image/jpeg
 
 ... binary image data ...
 
---MyPartBoundary198374--
+--MyPartBoundary198374
 ```
 
 ---
@@ -155,3 +156,17 @@ Content-Type: application/json
   }
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update checklistItem",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  "Error: /api/newslinkpage-create.md/create-newslinkpage:
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
+  ]
+}
+-->

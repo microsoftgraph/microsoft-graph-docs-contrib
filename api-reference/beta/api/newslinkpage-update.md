@@ -149,4 +149,16 @@ Content-Type: application/json
   }
 }
 ```
-
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update checklistItem",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  "Error: /api/newslinkpage-update.md/update_newslinkpage:
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
+  ]
+}
+-->
