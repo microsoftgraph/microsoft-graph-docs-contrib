@@ -1,6 +1,6 @@
 ---
 title: "adminReportSettings resource type"
-description: "Represents the tenant-level settings for Microsoft 365 Reports."
+description: "Represents the tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "reports"
@@ -11,14 +11,14 @@ author: "ganggao"
 
 Namespace: microsoft.graph
 
-Represents the tenant-level settings for Microsoft 365 Reports.
+Represents the tenant-level settings for Microsoft 365 reports.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 Reports.|
-|[Update](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 Reports.|
+|[Get](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 reports.|
+|[Update](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 reports.|
 
 ## Properties
 
