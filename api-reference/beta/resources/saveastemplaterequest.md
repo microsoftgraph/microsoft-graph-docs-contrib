@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# sortProperty resource type
+#  saveAsTemplate resource type
 
 Namespace: microsoft.graph
 
