@@ -1,6 +1,6 @@
 ---
 title: "adminReportSettings resource type"
-description: "Represents the tenant-level settings for Microsoft 365 reports."
+description: "Represents the tenant-level settings for Microsoft 365 Reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level settings for Microsoft 365 reports.
+Represents the tenant-level settings for Microsoft 365 Reports.
 
 ## Methods
 
@@ -26,7 +26,7 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| displayConcealedNames | Boolean | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required. |
+| displayConcealedNames | Boolean | If set to `true`, all reports conceal user information such as usernames, groups, and sites. If `false`, all reports show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## JSON representation
 
