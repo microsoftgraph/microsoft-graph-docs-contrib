@@ -195,7 +195,7 @@ The third response returns the only remaining transcripts and an **@odata.deltaL
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collectio(microsoft.graph.callTranscript)"
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -247,8 +247,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
