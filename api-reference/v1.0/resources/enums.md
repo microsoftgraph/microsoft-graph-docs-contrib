@@ -11,6 +11,31 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### virtualEventRegistrationPredefinedQuestionLabel values
+
+|Member|
+|:---|
+|street|
+|city|
+|state|
+|postalCode|
+|countryOrRegion|
+|industry|
+|jobTitle|
+|organization|
+|unknownFutureValue|
+
+### virtualEventRegistrationQuestionAnswerInputType values
+
+|Member|
+|:---|
+|text|
+|multilineText|
+|singleChoice|
+|multiChoice|
+|boolean|
+|unknownFutureValue|
+
 ## fileStorageContainerStatus values
 
 | Member |

@@ -28,9 +28,9 @@ Represents a chart title object of a chart.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Indicates whether the chart title will overlay the chart or not.|
+|overlay|Boolean|Indicates whether the chart title will overlay the chart or not.|
 |text|string|The title text of the chart.|
-|visible|boolean|Indicates whether the chart title is visible.|
+|visible|Boolean|Indicates whether the chart title is visible.|
 
 ## Relationships
 

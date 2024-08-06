@@ -2,7 +2,7 @@
 title: "updateRelationships action"
 description: "Intune Shared Mobileapp Updaterelationships Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

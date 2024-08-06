@@ -2,7 +2,7 @@
 title: "Create androidForWorkWiFiConfiguration"
 description: "Create a new androidForWorkWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "setScheduledRetireState action"
 description: "Intune Deviceconfig Devicecompliancepolicy Setscheduledretirestate Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

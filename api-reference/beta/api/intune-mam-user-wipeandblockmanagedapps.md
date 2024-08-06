@@ -2,7 +2,7 @@
 title: "wipeAndBlockManagedApps action"
 description: "Blocks the managed app user from app check-in."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

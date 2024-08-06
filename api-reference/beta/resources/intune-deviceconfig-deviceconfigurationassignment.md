@@ -2,7 +2,7 @@
 title: "deviceConfigurationAssignment resource type"
 description: "The device configuration assignment entity assigns an AAD group to a specific device configuration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

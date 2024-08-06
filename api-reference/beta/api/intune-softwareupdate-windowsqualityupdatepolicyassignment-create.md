@@ -2,7 +2,7 @@
 title: "Create windowsQualityUpdatePolicyAssignment"
 description: "Create a new windowsQualityUpdatePolicyAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

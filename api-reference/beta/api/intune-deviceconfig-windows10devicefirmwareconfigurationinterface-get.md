@@ -2,7 +2,7 @@
 title: "Get windows10DeviceFirmwareConfigurationInterface"
 description: "Read properties and relationships of the windows10DeviceFirmwareConfigurationInterface object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

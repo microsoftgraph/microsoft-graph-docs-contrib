@@ -2,7 +2,7 @@
 title: "Delete embeddedSIMDeviceState"
 description: "Deletes a embeddedSIMDeviceState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

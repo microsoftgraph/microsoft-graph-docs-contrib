@@ -2,7 +2,7 @@
 title: "deviceInventory resource type"
 description: "Represents the data collected on a device for a particular inventory type. These device inventory types may include Disk Drives, Network Adapters, etc."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
