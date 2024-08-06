@@ -55,6 +55,6 @@ jobs:
           git add .
           git commit -m "Update permissions reference"
           git push --set-upstream origin cloud-support/$timestamp
-          gh pr create --base main --title "Automated permissons reference update" --body "Scheduled permissions reference update" --add-assignee "FaithOmbongi" --label "ready for content review"
+          gh pr create --base main --title "Automated permissons reference update" --body "Scheduled permissions reference update" --add-assignee "FaithOmbongi","msewaweru" --label "ready for content review"
         }
     
