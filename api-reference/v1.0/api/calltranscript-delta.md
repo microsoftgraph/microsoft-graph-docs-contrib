@@ -18,7 +18,7 @@ Delta query supports both full synchronization that gets all the transcripts for
 A GET request with the delta function returns one of the following:
 
 - An **@odata.nextLink** that contains a URL with a **delta** function call and a `skipToken`.
-- An **@odata.deltaLink** that contains a URL with a **delta** function call and `deltaToken`.
+- An **@odata.deltaLink** that contains a URL with a **delta** function call and a `deltaToken`.
 
 State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call for that same transcript view. An **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you start the next round of synchronization to get the new transcripts added after you acquire **@odata.deltaLink**.
 
@@ -78,7 +78,7 @@ The following example shows a series of three requests to synchronize the call t
 - Step 2: [second request](#second-request) and [response](#second-response).
 - Step 3: [third request](#third-request) and [final response](#third-and-final-response-for-the-round).
 
-See also what you'll do in the [next round to get more transcripts](#example-2-next-round-to-get-more-transcripts).
+See also what you do in the [next round to get more transcripts](#example-2-next-round-to-get-more-transcripts).
 
 #### Initial request
 
