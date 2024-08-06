@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "admin",
           "ChangeType": "Addition",
           "Description": "Added the **reportSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
@@ -22,8 +22,8 @@
       "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-07-29T09:09:41.2023199Z",
-      "WorkloadArea": "Reports and audit",
+      "CreatedDateTime": "2024-08-07T09:09:41.2023199Z",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
