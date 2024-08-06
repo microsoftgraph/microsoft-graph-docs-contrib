@@ -17,7 +17,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plan](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create **plannerPlan** object.|
+|[Create plan](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create a **plannerPlan** object.|
 |[Get plan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
 |[Update plan](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete plan](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
