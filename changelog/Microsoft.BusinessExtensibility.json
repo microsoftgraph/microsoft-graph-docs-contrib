@@ -115,7 +115,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Deletion",
-          "Description": "Removed the **Create** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Description": "Removed the [Create](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
           "Target": "POST"
         },
         {
@@ -123,7 +123,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Deletion",
-          "Description": "Removed the **Get** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Description": "Removed the [Get](https://learn.microsoft.com/en-us/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-beta&tabs=http) from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
           "Target": "GET"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Deletion",
-          "Description": "Removed the **Update** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Description": "Removed the [Update](https://learn.microsoft.com/en-us/graph/api/plannerplanconfigurationlocalization-update?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
           "Target": "PATCH"
         },
         {
@@ -139,7 +139,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Deletion",
-          "Description": "Removed the **Delete** method for the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
+          "Description": "Removed the [Delete](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
           "Target": "DELETE"
         }
       ],
