@@ -2,7 +2,7 @@
 title: "Get iosManagedAppProtection"
 description: "Read properties and relationships of the iosManagedAppProtection object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

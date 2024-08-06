@@ -2,7 +2,7 @@
 title: "Update macOSWiFiConfiguration"
 description: "Update the properties of a macOSWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "deviceInventoryProperty resource type"
 description: "Abstract type to represent a single property of an inventory entity"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

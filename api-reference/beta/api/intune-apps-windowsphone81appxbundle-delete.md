@@ -2,7 +2,7 @@
 title: "Delete windowsPhone81AppXBundle"
 description: "Deletes a windowsPhone81AppXBundle."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

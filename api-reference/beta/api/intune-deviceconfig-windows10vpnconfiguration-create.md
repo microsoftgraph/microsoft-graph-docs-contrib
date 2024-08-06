@@ -2,7 +2,7 @@
 title: "Create windows10VpnConfiguration"
 description: "Create a new windows10VpnConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

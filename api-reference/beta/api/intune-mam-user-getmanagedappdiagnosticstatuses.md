@@ -2,7 +2,7 @@
 title: "getManagedAppDiagnosticStatuses function"
 description: "Gets diagnostics validation status for a given user."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

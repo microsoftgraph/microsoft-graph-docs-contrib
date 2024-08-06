@@ -2,7 +2,7 @@
 title: "assign action"
 description: "Intune Shared Ioslobappprovisioningconfiguration Assign Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

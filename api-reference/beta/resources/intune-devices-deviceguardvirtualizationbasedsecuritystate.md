@@ -2,7 +2,7 @@
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Intune Devices Deviceguardvirtualizationbasedsecuritystate Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
