@@ -30,7 +30,7 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 |[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Update calendar](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Delete calendar](../api/calendar-delete.md) | None |Delete calendar object. |
-|[permanentDelete](../api/calendar-permanentdelete.md)|None|Permanently deletes the **calender** folder and removes it from the mailbox|
+|[permanentDelete](../api/calendar-permanentdelete.md)|None|Permanently delete the **calendar** folder and remove it from the mailbo.x|
 |[List calendar view](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarView)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Create Event](../api/calendar-post-events.md) |[event](event.md)| Create a new event in the default or specified calendar.|
