@@ -1,6 +1,6 @@
 ---
 author: Yadong1106
-description: "Create a new page according to a page template."
+description: "Create a new page from a page template."
 ms.date: 05/07/2018
 title: Create Page From template
 ms.localizationpriority: medium
@@ -31,20 +31,20 @@ POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
 ```
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
+| Name | Description |
+| :----|:------------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
 These fields and be used in request payload.
 
-| Property             | Type                                         | Description                                                                                                                                                                                                      |
-| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title                | String                                         | Title of the site page template to be created.  Optional.                                                                                                                                                                                  |
-| name                 | String                                         | Name of the site page template to be created. Required.                                                                                                                          |
-| id                   | String                                         | Id of an existing page templated. Required.                                                                                                                          |
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| title | String | The title of the site page template to create. Optional. |
+| name | String | The name of the site page template to create. Required. |
+| id | String | The identifier for an existing page template. Required. |
 
 ## Response
 
@@ -75,6 +75,8 @@ Content-Type: application/json
 The following example shows the response.
 
 If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
+
+**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -127,8 +129,6 @@ Content-type: application/json
 }
 
 ```
-
-**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 <!--
 {

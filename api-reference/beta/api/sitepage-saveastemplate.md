@@ -1,6 +1,6 @@
 ---
 author: Yadong1106
-description: "Saves the current page as a template."
+description: "Save the current page as a template."
 ms.date: 05/07/2018
 title: Save As Template,
 ms.localizationpriority: medium
@@ -39,10 +39,10 @@ POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/saveAsTemplate
 
 These fields and be used in request payload.
 
-| Property             | Type                                         | Description                                                                                                                                                                                                      |
-| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title                | String                                       | Title of the site page template to be created.  Optional.                                                                                                                                                                                  |
-| name                 | String                                       | Name of the site page template to be created. Required.                                                                                                                        |
+| Property | Type | Description |
+| :--------|:-----|-------------|
+| title | String | The title of the site page template to create. Optional. |
+| name | String | The name of the site page template to create. Required. |
 
 ## Response
 
