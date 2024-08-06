@@ -1,6 +1,6 @@
 ---
 title: "calendar: permanentDelete"
-description: "Permanently deletes the calender folder and the events that it contains and removes them from the mailbox."
+description: "Permanently delete acalendar folder and the events that it contains and remove them from the mailbox."
 author: "deepakbaghel99"
 ms.localizationpriority: high
 ms.subservice: "outlook"
