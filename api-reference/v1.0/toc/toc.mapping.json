@@ -1222,6 +1222,7 @@
           "name": "Microsoft 365 usage reports",
           "overview": "../../resources/report.md",
           "resources": [
+            "adminReportSettings",
             "reportRoot"
           ]
         },
