@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |compliantRequirementsCount|Int64|The number of compliant security requirements at the time.|
 |createdDateTime|DateTimeOffset|The date the history entry was created.|
 |id|String|The unique identifier for the history entry.|
-|score|Single|The score recorded at the time.|
+|score|Double|The score recorded at the time.|
 |totalRequirementsCount|Int64|The total The number of requirements at the time.|
 
 ## Relationships
@@ -51,7 +51,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.partner.security.securityScoreHistory",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "score": "Single",
+  "score": "Double",
   "compliantRequirementsCount": "Integer",
   "totalRequirementsCount": "Integer"
 }
