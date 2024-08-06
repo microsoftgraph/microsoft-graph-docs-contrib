@@ -21,20 +21,14 @@ requestBody.SetDisplayName(&displayName)
 
 
 mailboxProtectionUnit := graphmodels.NewMailboxProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "cdd3a849-dcaf-4a85-af82-7e39fc14019a", 
-}
-mailboxProtectionUnit.SetAdditionalData(additionalData)
+directoryObjectId := "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
+mailboxProtectionUnit.SetDirectoryObjectId(&directoryObjectId) 
 mailboxProtectionUnit1 := graphmodels.NewMailboxProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "9bc069da-b746-41a4-89ab-26125c6373c7", 
-}
-mailboxProtectionUnit1.SetAdditionalData(additionalData)
+directoryObjectId := "9bc069da-b746-41a4-89ab-26125c6373c7"
+mailboxProtectionUnit1.SetDirectoryObjectId(&directoryObjectId) 
 mailboxProtectionUnit2 := graphmodels.NewMailboxProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7", 
-}
-mailboxProtectionUnit2.SetAdditionalData(additionalData)
+directoryObjectId := "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+mailboxProtectionUnit2.SetDirectoryObjectId(&directoryObjectId) 
 
 mailboxProtectionUnits := []graphmodels.MailboxProtectionUnitable {
 	mailboxProtectionUnit,

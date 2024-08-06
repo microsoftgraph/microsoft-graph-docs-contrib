@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 
 ---
 
-
 ### Response
 
 The following example shows the response.

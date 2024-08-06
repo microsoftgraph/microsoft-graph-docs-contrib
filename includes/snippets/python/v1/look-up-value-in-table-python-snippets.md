@@ -13,10 +13,8 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = VlookupPostRequestBody(
 	lookup_value = "pear",
-	table_array = TableArray(
-		additional_data = {
-				"address" : "Sheet1!B2:C7",
-		}
+	table_array = UntypedNode(
+		address = "Sheet1!B2:C7",
 	),
 	col_index_num = 2,
 	range_lookup = False,

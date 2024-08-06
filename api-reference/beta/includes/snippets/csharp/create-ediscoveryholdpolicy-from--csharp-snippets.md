@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new EdiscoveryHoldPolicy
 {
@@ -18,24 +19,34 @@ var requestBody = new EdiscoveryHoldPolicy
 		{
 			"userSources@odata.bind" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "microsoft.graph.security.userSource",
-					Email = "SalesTeam@contoso.com",
-				},
+					{
+						"@odata.type", new UntypedString("microsoft.graph.security.userSource")
+					},
+					{
+						"email", new UntypedString("SalesTeam@contoso.com")
+					},
+				}),
 			}
 		},
 		{
 			"siteSources@odata.bind" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "microsoft.graph.security.siteSource",
-					Site = new 
 					{
-						WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
+						"@odata.type", new UntypedString("microsoft.graph.security.siteSource")
 					},
-				},
+					{
+						"site", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"webUrl", new UntypedString("https://m365x809305.sharepoint.com/sites/Design-topsecret")
+							},
+						})
+					},
+				}),
 			}
 		},
 	},

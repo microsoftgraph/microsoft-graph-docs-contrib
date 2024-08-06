@@ -16,10 +16,10 @@ request_body = ExchangeProtectionPolicy(
 	additional_data = {
 			"mailbox_protection_units@delta" : [
 				{
-						"user_id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+						"directory_object_id" : "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
 				},
 				{
-						"user_id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+						"directory_object_id" : "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
 				},
 				{
 						"@removed" : {
