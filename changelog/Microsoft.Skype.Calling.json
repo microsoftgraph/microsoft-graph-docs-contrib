@@ -111,12 +111,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-04-25T17:17:05.1836226Z",
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventSettings](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSettings?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventSettings"
+        },
+        {
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-06T00:00:00Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
-        {      
+        {
           "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
           "ApiChange": "Enumeration",
           "ChangedApiName": "virtualEventRegistrationPredefinedQuestionLabel",

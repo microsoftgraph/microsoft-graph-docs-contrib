@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an owner to an application by posting to the owners collection.
+Add an owner to an [application](../resources/application.md). Currently, only individual users are supported as owners of applications.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

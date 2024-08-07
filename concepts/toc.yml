@@ -383,6 +383,10 @@ items:
     - name: Data Connect troubleshooting
       href: data-connect-troubleshooting.md
       displayName: Microsoft Graph Data Connect troubleshooting
+  - name: Backup storage
+    items:
+    - name: Overview
+      href: backup-storage-concept-overview.md
   - name: Calendar
     items:
     - name: Overview

@@ -130,7 +130,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -141,7 +141,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -158,7 +158,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -169,7 +169,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -186,7 +186,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -197,7 +197,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -214,7 +214,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -225,7 +225,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     }
   ]
