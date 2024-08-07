@@ -20,7 +20,7 @@ Represents settings associated with a [fileStorageContainer](../resources/filest
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isOcrEnabled|Boolean|Flag indicating whether OCR is enabled or not for given container. If OCR is enabled on a container, OCR extraction will be performed for recently added/updated document (select supported document types) and add the extracted fields in metadata of document which enables end-user search and search-driven solutions|
+|isOcrEnabled|Boolean|Indicates whether OCR is enabled for a given container. If OCR is enabled on a container, OCR extraction is performed for recently added or updated documents (of supported document types) and the extracted fields are added to the metadata of the document. This enables end-user search and search-driven solutions.|
 
 ## Relationships
 
