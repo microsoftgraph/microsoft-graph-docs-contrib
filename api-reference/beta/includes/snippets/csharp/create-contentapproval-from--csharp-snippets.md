@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.WindowsUpdates;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ContentApproval
 {
@@ -27,15 +28,23 @@ var requestBody = new ContentApproval
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"schedule" , new 
+			"schedule" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				StartDateTime = "String (timestamp)",
-				GradualRollout = new 
 				{
-					OdataType = "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
-					EndDateTime = "String (timestamp)",
+					"startDateTime", new UntypedString("String (timestamp)")
 				},
-			}
+				{
+					"gradualRollout", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"@odata.type", new UntypedString("#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings")
+						},
+						{
+							"endDateTime", new UntypedString("String (timestamp)")
+						},
+					})
+				},
+			})
 		},
 	},
 };

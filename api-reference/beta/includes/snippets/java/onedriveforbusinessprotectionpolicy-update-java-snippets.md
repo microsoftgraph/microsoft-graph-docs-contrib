@@ -13,10 +13,10 @@ oneDriveForBusinessProtectionPolicy.setDisplayName("One Drive  Policy - Inadvert
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 LinkedList<Object> driveProtectionUnitsDelta = new LinkedList<Object>();
  property = new ();
-property.setUserId("1b014d8c-71fe-4d00-a01a-31850bc5b32c");
+property.setDirectoryObjectId("1b014d8c-71fe-4d00-a01a-31850bc5b32c");
 driveProtectionUnitsDelta.add(property);
  property1 = new ();
-property1.setUserId("2b014d8c-71fe-4d00-a01a-31850bc5b32c");
+property1.setDirectoryObjectId("2b014d8c-71fe-4d00-a01a-31850bc5b32c");
 driveProtectionUnitsDelta.add(property1);
  property2 = new ();
  removed = new ();

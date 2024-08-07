@@ -8,21 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Functions.Vlookup;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new VlookupPostRequestBody
 {
-	LookupValue = "pear",
-	TableArray = new TableArray
+	LookupValue = new UntypedString("pear"),
+	TableArray = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-		AdditionalData = new Dictionary<string, object>
 		{
-			{
-				"Address" , "Sheet1!B2:C7"
-			},
+			"Address", new UntypedString("Sheet1!B2:C7")
 		},
-	},
-	ColIndexNum = 2,
-	RangeLookup = false,
+	}),
+	ColIndexNum = new UntypedDouble(2),
+	RangeLookup = new UntypedBoolean(false),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
