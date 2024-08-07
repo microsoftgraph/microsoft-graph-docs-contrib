@@ -1,6 +1,6 @@
 ---
 title: "attachment resource type"
-description: "You can add related content to an event,"
+description: "The base type for several types of attachments on a user, message, task, or group post."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "outlook"
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
-
-You can add related content to a user [event](../resources/event.md),
-[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or group [post](../resources/post.md) in the form of an attachment.
-
-Events in group calendars do not support attachments.
-
-Outlook tasks do not support reference attachments.
-
-**attachment** is the base resource for the following derived types of attachments:
+The base resource for the following derived types of attachments:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource)
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
+
+You can add related content to a user [event](../resources/event.md),
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or group [post](../resources/post.md) in the form of an attachment.
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Events in group calendars do not support attachments.
+
+Outlook tasks do not support reference attachments.
 
 >**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, limit the size of the attachment to 3 MB.
 >
