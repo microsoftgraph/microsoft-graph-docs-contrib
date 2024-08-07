@@ -85,6 +85,76 @@
       ]
     },
     {
+      "name": "Backup storage",
+      "shouldSort": true,
+      "keywords": [
+        "M365 Backup Storage",
+        "Microsoft 365 Backup Storage",
+        "Enhanced Restore"
+      ],
+      "resources": [
+        "backupRestoreRoot",
+        "protectionPolicyBase",
+        "protectionRuleBase",
+        "protectionUnitBase",
+        "restoreArtifactBase",
+        "restorePoint",
+        "restoreSessionBase",
+        "serviceApp"
+      ],
+      "childNodes": [
+        {
+          "name": "Protection policy",
+          "resources": [
+            "exchangeProtectionPolicy",
+            "oneDriveForBusinessProtectionPolicy",
+            "sharePointProtectionPolicy"
+          ]
+        },
+        {
+          "name": "Protection rule",
+          "resources": [
+            "driveProtectionRule",
+            "mailboxProtectionRule",
+            "siteProtectionRule"
+          ]
+        },
+        {
+          "name": "Protection unit",
+          "resources": [
+            "driveProtectionUnit",
+            "mailboxProtectionUnit",
+            "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Restore artifact",
+          "resources": [
+            "granularMailBoxRestoreArtifact",
+            "driveRestoreArtifact",
+            "mailboxRestoreArtifact",
+            "siteRestoreArtifact"
+          ]
+        },
+        {
+          "name": "Restore session",
+          "resources": [
+            "oneDriveForBusinessRestoreSession",
+            "exchangeRestoreSession",
+            "sharePointRestoreSession"
+          ]
+        }
+      ],
+      "complexTypes": [
+        "artifactQuery",
+        "restorePointSearchResponse",
+        "restorePointSearchResult",
+        "retentionSetting",
+        "serviceStatus",
+        "timePeriod"
+      ]
+    },
+    {
       "name": "Calendars",
       "keywords": [
         "Outlook",
@@ -1167,6 +1237,14 @@
             "sharingDetail",
             "usageDetails"
           ]
+        },
+        {
+          "name": "Item insights",
+          "resources": [
+            "itemInsights",
+            "userInsightsSettings",
+            "insightsSettings"
+          ]
         }
       ]
     },
@@ -1670,9 +1748,13 @@
             {
               "name": "Virtual events",
               "resources": [
-                "virtualEventWebinar",
+                "virtualEventPresenter",
                 "virtualEventRegistration",
-                "virtualEventSession"
+                "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventRegistrationQuestionBase",
+                "virtualEventSession",
+                "virtualEventTownhall",
+                "virtualEventWebinar"
               ]
             }
           ]

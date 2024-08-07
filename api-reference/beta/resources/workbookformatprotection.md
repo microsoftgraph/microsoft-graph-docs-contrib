@@ -26,8 +26,8 @@ Represents the format protection of a range object.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Indicates whether Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
-|locked|boolean|Indicates whether Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
+|formulaHidden|Boolean|Indicates whether Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.|
+|locked|Boolean|Indicates whether Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
 
 ## Relationships
 None

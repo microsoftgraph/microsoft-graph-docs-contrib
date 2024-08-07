@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 07/19/2024
+ms.date: 08/02/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1869,8 +1869,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Manage restricted resources in the directory | Manage restricted resources in the directory |
 | Description | Allows the app to manage restricted resources based on the other permissions granted to the app, without a signed-in user. | Allows the app to manage restricted resources based on the other permissions granted to the app, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
-
-[!INCLUDE [Directory.Write.Restricted](../includes/permissions-notes/directory.write.restricted.md)]
 
 ---
 
@@ -7120,6 +7118,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | TeamsActivity.Send.User | 483c432d-7210-44e7-a362-954c0c5e4108 | Send activity feed notifications to this user | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. |
 | TeamsAppInstallation.Read.Chat | b60343cd-f77a-4c4f-8036-41938b1abd8b | Read which apps are installed in this chat | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |
 | TeamsAppInstallation.Read.Group | ba4beb29-863b-4f02-8969-37a289cd91c0 | Read which apps are installed in this team | Allows the app to read the Teams apps that are installed in this team, without a signed-in user.  |
+| TeamsAppInstallation.Read.User | 39a4b5e8-1aa6-4da4-877a-d2345944028d | Read installed Teams apps for a user | Allows the app to read the Teams apps that are installed in user's personal scope, without a signed-in user. Does not give the ability to read application-specific settings. |
 | TeamSettings.Edit.Group | 33f7a028-d012-4bd9-b40f-3c970d089bc8 | Edit this team's settings | Allows the app to edit this team's settings, without a signed-in user. |
 | TeamSettings.Read.Group | 87909ea6-7b07-42cf-b3a0-b8bd8e7072a8 | Read this team's settings | Allows the app to read this team's settings, without a signed-in user. |
 | TeamSettings.ReadWrite.Group | 13451d84-ced2-4d45-9b0d-98688b90e5bf | Read and write this team's settings | Allows the app to read and write this team's settings, without a signed-in user. |

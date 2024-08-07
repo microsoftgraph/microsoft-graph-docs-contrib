@@ -2,7 +2,7 @@
 title: "rolePermission resource type"
 description: "Contains the set of ResourceActions determining the allowed and not allowed permissions for each role."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

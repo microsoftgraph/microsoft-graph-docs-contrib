@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/
 
 ---
 
-
 ### Response
 
 The following example shows the response.

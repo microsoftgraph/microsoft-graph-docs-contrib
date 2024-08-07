@@ -8,15 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new WorkbookNamedItem
 {
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = new Value
+	Value = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
+	}),
 	Visible = true,
 };
 

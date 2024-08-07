@@ -2,7 +2,7 @@
 title: "aospDeviceOwnerTrustedRootCertificate resource type"
 description: "AOSP Device Owner Trusted Root Certificate configuration profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

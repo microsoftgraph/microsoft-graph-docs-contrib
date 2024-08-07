@@ -2,7 +2,7 @@
 title: "Get androidWorkProfileEasEmailProfileBase"
 description: "Read properties and relationships of the androidWorkProfileEasEmailProfileBase object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

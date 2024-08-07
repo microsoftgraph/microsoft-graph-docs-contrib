@@ -2,7 +2,7 @@
 title: "Update windows10XTrustedRootCertificate"
 description: "Update the properties of a windows10XTrustedRootCertificate object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -42,8 +42,8 @@ Represents an Excel table.
 |:---------------|:--------|:----------|
 |id|string|The unique identifier for the table in the workbook. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and shouldn't be parsed to any other type. Read-only.|
 |name|string|The name of the table.|
-|showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
-|showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
+|showHeaders|Boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
+|showTotals|Boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
 |style|string|A constant value that represents the Table style. Possible values are: `TableStyleLight1` through `TableStyleLight21`, `TableStyleMedium1` through `TableStyleMedium28`, `TableStyleStyleDark1` through `TableStyleStyleDark11`. A custom user-defined style present in the workbook can also be specified.|
 |highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
 |highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|

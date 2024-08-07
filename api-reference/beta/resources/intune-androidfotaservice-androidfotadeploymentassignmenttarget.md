@@ -2,7 +2,7 @@
 title: "androidFotaDeploymentAssignmentTarget resource type"
 description: "The AAD Group we are deploying firmware updates to"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

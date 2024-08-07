@@ -39,6 +39,9 @@ items:
     href: toc/groups/toc.yml
   - name: Applications
     href: toc/applications/toc.yml
+  - name: Backup storage
+    href: toc/backup-storage/toc.yml
+    displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
   - name: Calendars
     href: toc/calendars/toc.yml
     displayName: Outlook, Outlook calendar

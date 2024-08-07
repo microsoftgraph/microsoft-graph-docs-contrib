@@ -2,7 +2,7 @@
 title: "Update termsAndConditionsAssignment"
 description: "Update the properties of a termsAndConditionsAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

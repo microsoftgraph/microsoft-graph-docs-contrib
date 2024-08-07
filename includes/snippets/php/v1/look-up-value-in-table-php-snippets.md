@@ -14,11 +14,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new VlookupPostRequestBody();
 $requestBody->setLookupValue('pear');
-$tableArray = new TableArray();
-$additionalData = [
-	'Address' => 'Sheet1!B2:C7',
-];
-$tableArray->setAdditionalData($additionalData);
+$tableArray = new UntypedNode();
+$tableArray->setAddress('Sheet1!B2:C7');
 $requestBody->setTableArray($tableArray);
 $requestBody->setColIndexNum(2);
 $requestBody->setRangeLookup(false);

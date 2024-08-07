@@ -2,7 +2,7 @@
 title: "rotateLocalAdminPassword action"
 description: "Initiates a manual rotation for the local admin password on the device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
