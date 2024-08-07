@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> Existing apps that use this feature with Outlook tasks should be updated, as Outlook tasks are being deprecated. See [To Do APIs in public preview](https://developer.microsoft.com/graph/blogs/the-new-improved-microsoft-graph-to-do-apis-are-now-in-public-preview/) for more information.
+> Outlook tasks is deprecated. Update existing apps that use this feature with Outlook tasks. For more information, see [To Do APIs in public preview](https://developer.microsoft.com/graph/blogs/the-new-improved-microsoft-graph-to-do-apis-are-now-in-public-preview/).
