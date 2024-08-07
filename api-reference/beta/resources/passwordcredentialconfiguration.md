@@ -19,10 +19,10 @@ Password credential configuration object that contains properties to configure r
 
 | Property                                    | Type                            | Description |
 | :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `passwordLifetime`.|
-| restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
-| restrictionType                             | appCredentialRestrictionType    | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`,`customPasswordAddition`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
-| state                                       | appManagementRestrictionState   |  String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
+| maxLifetime                                 | String                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `passwordLifetime`.|
+| restrictForAppsCreatedAfterDateTime         | String                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
+| restrictionType                             | [appCredentialRestrictionType](./enums.md#appcredentialrestrictiontype-values)    | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`,`customPasswordAddition`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
+| state                                       | [appManagementRestrictionState](./enums.md#appmanagementrestrictionstate-values)   | String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
 
 ## Relationships
 
@@ -41,13 +41,9 @@ The following JSON representation shows the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.passwordCredentialConfiguration",
-  "restrictionType": {
-    "@odata.type": "microsoft.graph.appCredentialRestrictionType"
-  },
-  "state": {
-    "@odata.type": "microsoft.graph.appManagementRestrictionState"
-  },
-  "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
+  "restrictionType": "String",
+  "state": "String",
+  "restrictForAppsCreatedAfterDateTime": "String (timestamp)",
   "maxLifetime": "String (ISO 8601 duration)"
 }
 ```
