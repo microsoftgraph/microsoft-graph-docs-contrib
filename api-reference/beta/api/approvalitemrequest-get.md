@@ -38,7 +38,7 @@ GET /solutions/approval/approvalItems/{approvalItemId}/requests/{approvalItemReq
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
