@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Property",
+          "ChangedApiName": "identifierUris",
+          "ChangeType": "Addition",
+          "Description": "Added the **identifierUris** property to the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementApplicationConfiguration"
+        },
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identifierUriConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [identifierUriConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriConfiguration?view=graph-rest-beta) resource.",
+          "Target": "identifierUriConfiguration"
+        },
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identifierUriRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the [identifierUriRestriction](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriRestriction?view=graph-rest-beta) resource.",
+          "Target": "identifierUriRestriction"
+        }
+      ],
+      "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-07T18:51:50.9615768Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
           "ApiChange": "Enumeration",
           "ChangedApiName": "nativeAuthenticationApisEnabled",
