@@ -3118,8 +3118,6 @@ items:
           href: ../../api/identityuserflowattribute-delete.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
