@@ -967,8 +967,6 @@ Namespace: microsoft.graph
 | Member |
 | ------------------ |
 | unknown |
-
-
 | groupCall |
 | peerToPeer |
 | unknownFutureValue |
@@ -1544,9 +1542,7 @@ Possible types of Windows settings.
 | preset1  | 1     |
 | preset2  | 2     |
 | preset3  | 3     |
-| preset4
-
-  | 4     |
+| preset4  | 4     |
 | preset5  | 5     |
 | preset6  | 6     |
 | preset7  | 7     |
@@ -1793,8 +1789,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member |
 | -------------------------- |
-
-
 | none |
 | low |
 | medium |
@@ -2120,9 +2114,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Member |
 | ------------------------------- |
 | clockwiseFromTopLeft |
-| counterclock
-
-wiseFromTopLeft |
+| counterclockwiseFromTopLeft |
 | counterclockwiseFromTopRight |
 | clockwiseFromTopRight |
 | counterclockwiseFromBottomLeft |
@@ -2736,8 +2728,6 @@ wiseFromTopLeft |
 | lockForApproval |
 | approve |
 | terminate |
-
-
 | unknownFutureValue |
 | reject |
 
@@ -3313,9 +3303,7 @@ wiseFromTopLeft |
 | ---- |
 | draft |
 | published |
-|
-
- canceled |
+| canceled |
 
 ### socialIdentitySourceType values
 
