@@ -16,10 +16,10 @@ $requestBody->setDisplayName('One Drive  Policy - Inadvertent data loss');
 $additionalData = [
 	'driveProtectionUnits@delta' => [
 			[
-				'userId' => '1b014d8c-71fe-4d00-a01a-31850bc5b32c',
+				'directoryObjectId' => '1b014d8c-71fe-4d00-a01a-31850bc5b32c',
 			],
 			[
-				'userId' => '2b014d8c-71fe-4d00-a01a-31850bc5b32c',
+				'directoryObjectId' => '2b014d8c-71fe-4d00-a01a-31850bc5b32c',
 			],
 			[
 				'@removed' => [
