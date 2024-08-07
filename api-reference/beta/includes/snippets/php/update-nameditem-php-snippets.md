@@ -15,7 +15,7 @@ $requestBody = new WorkbookNamedItem();
 $requestBody->setType('type-value');
 $requestBody->setScope('scope-value');
 $requestBody->setComment('comment-value');
-$value = new Value();
+$value = new UntypedNode();
 $requestBody->setValue($value);
 $requestBody->setVisible(true);
 

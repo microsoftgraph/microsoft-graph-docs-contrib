@@ -25,7 +25,7 @@ $criteriaIcon->setSet('set-value');
 $criteriaIcon->setIndex(99);
 $criteria->setIcon($criteriaIcon);
 $criteria->setDynamicCriteria('dynamicCriteria-value');
-$criteriaValues = new Values();
+$criteriaValues = new UntypedNode();
 $criteria->setValues($criteriaValues);
 $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);
