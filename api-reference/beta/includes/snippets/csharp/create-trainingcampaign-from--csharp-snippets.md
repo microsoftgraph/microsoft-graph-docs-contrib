@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new TrainingCampaign
 {
@@ -41,19 +42,29 @@ var requestBody = new TrainingCampaign
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"trainingReminder" , new 
+				"trainingReminder" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					DeliveryFrequency = "weekly",
-					EndUserNotificationOdataBind = "https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('fe521249-9901-4584-a987-026a9980c58e')",
-					DefaultLanguage = "en",
-				}
+					{
+						"deliveryFrequency", new UntypedString("weekly")
+					},
+					{
+						"endUserNotification@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('fe521249-9901-4584-a987-026a9980c58e')")
+					},
+					{
+						"defaultLanguage", new UntypedString("en")
+					},
+				})
 			},
 			{
-				"trainingAssignment" , new 
+				"trainingAssignment" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					EndUserNotificationOdataBind = "https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('36fb4dc1-7c37-4b96-9096-12e6d6014fae')",
-					DefaultLanguage = "en",
-				}
+					{
+						"endUserNotification@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications('36fb4dc1-7c37-4b96-9096-12e6d6014fae')")
+					},
+					{
+						"defaultLanguage", new UntypedString("en")
+					},
+				})
 			},
 		},
 	},
@@ -65,30 +76,42 @@ var requestBody = new TrainingCampaign
 			{
 				"trainingAssignmentMappings" , new List<object>
 				{
-					new 
+					new UntypedObject(new Dictionary<string, UntypedNode>
 					{
-						AssignedTo = new List<string>
 						{
-							"allUsers",
+							"assignedTo", new UntypedArray(new List<UntypedNode>
+							{
+								new UntypedString("allUsers"),
+							})
 						},
-						TrainingOdataBind = "https://graph.microsoft.com/beta/security/attackSimulation/trainings('40454905-dc26-4f36-b854-3042a5362cb3')",
-					},
-					new 
+						{
+							"training@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attackSimulation/trainings('40454905-dc26-4f36-b854-3042a5362cb3')")
+						},
+					}),
+					new UntypedObject(new Dictionary<string, UntypedNode>
 					{
-						AssignedTo = new List<string>
 						{
-							"allUsers",
+							"assignedTo", new UntypedArray(new List<UntypedNode>
+							{
+								new UntypedString("allUsers"),
+							})
 						},
-						TrainingOdataBind = "https://graph.microsoft.com/beta/security/attackSimulation/trainings('ea70ae06-3859-4818-be9d-270ee81d80a4')",
-					},
-					new 
+						{
+							"training@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attackSimulation/trainings('ea70ae06-3859-4818-be9d-270ee81d80a4')")
+						},
+					}),
+					new UntypedObject(new Dictionary<string, UntypedNode>
 					{
-						AssignedTo = new List<string>
 						{
-							"allUsers",
+							"assignedTo", new UntypedArray(new List<UntypedNode>
+							{
+								new UntypedString("allUsers"),
+							})
 						},
-						TrainingOdataBind = "https://graph.microsoft.com/beta/security/attackSimulation/trainings('d733d88c-1b5a-48e3-a588-9910e41ac21d')",
-					},
+						{
+							"training@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attackSimulation/trainings('d733d88c-1b5a-48e3-a588-9910e41ac21d')")
+						},
+					}),
 				}
 			},
 		},
