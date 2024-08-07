@@ -160,6 +160,7 @@
         {
           "name": "Restore artifact",
           "resources": [
+            "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
@@ -175,6 +176,7 @@
         }
       ],
       "complexTypes": [
+        "artifactQuery",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
