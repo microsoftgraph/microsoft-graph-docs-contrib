@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-creationoptions-permissions.md)]
 
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
+
 ## HTTP request
 
 <!-- {
@@ -92,7 +94,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
