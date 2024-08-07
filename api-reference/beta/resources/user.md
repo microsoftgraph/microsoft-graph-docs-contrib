@@ -345,7 +345,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |events|[event](event.md) collection|The user's events. The default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Supports `$expand`. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
-|insights|[itemInsights](iteminsights.md) | Read-only. Nullable.|
+|insights|[itemInsights](iteminsights.md) | Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. Read-only. Nullable.|
 |invitedBy|[directoryObject](directoryobject.md) | The user or service principal that invited the user.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
