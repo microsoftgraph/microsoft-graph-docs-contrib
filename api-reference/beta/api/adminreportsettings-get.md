@@ -36,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/reportSettings
 ```
 
+## Optional query parameters
+
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name          | Description               |
