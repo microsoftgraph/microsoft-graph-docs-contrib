@@ -53,6 +53,7 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
 
 ### roles property values
 
@@ -86,7 +87,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.fileStorageContainerViewpoint"
   },
   "status": "String",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
 }
 ```
 

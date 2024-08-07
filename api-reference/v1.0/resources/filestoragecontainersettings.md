@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents settings associated with a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 
@@ -42,4 +40,3 @@ The following JSON representation shows the resource type.
   "isOcrEnabled": "Boolean"
 }
 ```
-
