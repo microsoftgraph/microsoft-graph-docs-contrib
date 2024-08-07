@@ -1154,6 +1154,14 @@
             "sharingDetail",
             "usageDetails"
           ]
+        },
+        {
+          "name": "Item insights",
+          "resources": [
+            "itemInsights",
+            "userInsightsSettings",
+            "insightsSettings"
+          ]
         }
       ]
     },
