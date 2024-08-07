@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 ### Error response
 
-If you send a request to upload an app manifest that contains missing information or errors, you receive an error message that includes the inner error code `UnableToParseTeamsAppManifest`. The *details* property of the inner error contains the error code and the error message. The following table describes the most frequently encountered error codes:
+If you send a request to upload an app manifest that contains missing information or errors, you receive an error message that includes the inner error code `UnableToParseTeamsAppManifest`. The **details** property of the inner error contains the error code and the error message. The following table describes the error codes that you might encounter.
 
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
