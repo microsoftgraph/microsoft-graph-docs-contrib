@@ -591,8 +591,6 @@ Namespace: microsoft.graph
 ### multiTenantOrganizationMemberState values
 
 | Member |
-
-
 | ---- |
 | pending |
 | active |
@@ -1144,9 +1142,7 @@ Namespace: microsoft.graph
 | default |
 | voicemail |
 | skypeForBusiness |
-|
-
- skypeForBusinessVoipPhone |
+| skypeForBusinessVoipPhone |
 | unknownFutureValue |
 
 ### kerberosSignOnMappingAttributeType values
@@ -1667,9 +1663,7 @@ Namespace: microsoft.graph
 
 ### replyRestriction values
 
-|
-
- Member |
+| Member |
 | --------------- |
 | everyone |
 | authorAndModerators |
@@ -2240,9 +2234,7 @@ Namespace: microsoft.graph
 | default |
 | conferenceRoom |
 | homeAddress |
-|
-
- businessAddress |
+| businessAddress |
 | geoCoordinates |
 | streetAddress |
 | hotel |
@@ -2576,9 +2568,7 @@ Possible values of an Alert lifecycle status (stage).
 | unknown    | 0     | Unknown status.       |
 | newAlert   | 10    | Alert is new.         |
 | inProgress | 20    | Alert is in progress. |
-| resolved   | 30    | Alert is
-
- resolved.    |
+| resolved   | 30    | Alert is resolved.    |
 
 ### emailRole values
 
@@ -2948,9 +2938,7 @@ Possible values for user account types (group membership), per Windows definitio
 | office365 |
 | appId |
 | acr |
-| appFilter
-
- |
+| appFilter |
 | allUsers |
 | guest |
 | groupId |
@@ -3279,9 +3267,7 @@ Possible values for user account types (group membership), per Windows definitio
 | required           | 3     |                                                                    |
 | unknownFutureValue | 4     | A sentinel member.                                                 |
 
-### permission
-
-ClassificationType values
+### permissionClassificationType values
 
 | Member |
 | -------- |
@@ -3809,9 +3795,7 @@ ClassificationType values
 | free |
 | priceVaries |
 | callUs |
-| notSet
-
- |
+| notSet |
 | unknownFutureValue |
 
 ### bookingStaffRole values
@@ -4299,9 +4283,7 @@ ClassificationType values
 ### endUserNotificationPreference values
 
 | Member |
-| ----
-
- |
+| ---- |
 | unknown |
 | microsoft |
 | custom |
