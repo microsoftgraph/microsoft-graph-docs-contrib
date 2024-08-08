@@ -1,6 +1,6 @@
 ---
 title: "plannerChecklistItems resource type"
-description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the checklistItem object."
+description: "Represents the collection of checklist items on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the checklistItem object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It's an Open Type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
+Represents the collection of checklist items on a task. It's an open type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
 
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.
+Properties of an open type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. To remove an item in the checklist, set the value of the property to `null`.
 
 ## Relationships
 

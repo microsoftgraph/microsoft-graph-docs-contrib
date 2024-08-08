@@ -17,10 +17,10 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plan](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create a **plannerPlan** object.|
-|[Get plan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
-|[Update plan](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
-|[Delete plan](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
+|[Create](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create a **plannerPlan** object.|
+|[Get](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
+|[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 

@@ -20,10 +20,10 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create task](../api/planner-post-tasks.md) | [plannerTask](plannertask.md) |Create a **plannerTask** object.|
-|[Get task](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read the properties and relationships of **plannerTask** object.|
-|[Update task](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update a **plannerTask** object. |
-|[Delete task](../api/plannertask-delete.md) | None |Delete a **plannerTask** object. |
+|[Create](../api/planner-post-tasks.md) | [plannerTask](plannertask.md) |Create a **plannerTask** object.|
+|[Get](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read the properties and relationships of **plannerTask** object.|
+|[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update a **plannerTask** object. |
+|[Delete](../api/plannertask-delete.md) | None |Delete a **plannerTask** object. |
 |[Get delta](../api/plannertask-delta.md)|[plannerTask](../resources/plannertask.md) collection| Get newly created, updated, or deleted **plannerTask** objects in either a **plannerPlan** or assigned to the signed-in user without having to perform a full read of the entire resource collection. |
 
 ## Properties
