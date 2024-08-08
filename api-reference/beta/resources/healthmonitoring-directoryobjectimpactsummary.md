@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resour
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceSampling|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|Shows a collection of sampling resources that were impacted.|
+|resourceSampling|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The collection of sampling resources that were impacted.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
