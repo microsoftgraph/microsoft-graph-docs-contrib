@@ -110,7 +110,7 @@ Content-Type: application/json
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
         ],
-        "keyCredentials":[
+        "keyCredentials": [
             {
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P30D",
@@ -125,7 +125,14 @@ Content-Type: application/json
                 ],
                 "maxLifetime": null
             }
-        ]
+        ],
+        "identifierUris": {
+            "nonDefaultUriAddition": {
+                "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
+                "excludeAppsReceivingV2Tokens": true,
+                "excludeSaml": true
+            }
+        }
     }
 }
 ```

@@ -17,10 +17,10 @@ App management configuration object that contains properties which can be config
 
 ## Properties
 
-| Property                                    | Type                                                                              | Description                                                                   |
-| :------------------------------------------ | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| keyCredentials                              | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection            | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
-| passwordCredentials                         | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection  | Collection of password restrictions settings to be applied to an application or service principal. |
+| Property            | Type                              | Description                                     |
+| :------------------ | :-------------------------------- | :---------------------------------------------- |
+| keyCredentials      | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
+| passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. |
 
 ## Relationships
 

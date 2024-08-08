@@ -32,8 +32,8 @@ Inherits from [policyBase](policybase.md).
 | displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Denotes whether the policy is enabled. Default value is `false`.                                    |
-| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
-| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
+| applicationRestrictions      | [appManagementApplicationConfiguration](appmanagementapplicationconfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
+| servicePrincipalRestrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
 ## Relationships
 

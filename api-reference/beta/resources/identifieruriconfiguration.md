@@ -1,6 +1,6 @@
 ---
 title: "identifierUriConfiguration resource type"
-description: "identifierUriConfiguration to configure a various restrictions for identifier URIs on applications"
+description: "Identifier URIs configuration object to configure restrictions for identifier URIs on applications"
 author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -16,9 +16,9 @@ Namespace: microsoft.graph
  Creates a restriction to block identifier URI formats on applications that could either be easily compromised or used for compromise.
 
 ## Properties
-| Property                                    | Type                            | Description                 |
-| :------------------------------------------ | :------------------------------ | :-------------------------- |
-| nonDefaultUriAddition                       | [identifierUriRestriction](./identifierurirestriction.md)                                                    | Block new identifier URIs for apps that receive v1 tokens, unless they are the 'default' URI of the format api:<appId>.|
+| Property                            | Type                            | Description                 |
+| :-----------------------------------| :------------------------------ | :-------------------------- |
+| nonDefaultUriAddition               | [identifierUriRestriction](identifierurirestriction.md)       | Block new identifier URIs for apps that receive v1 tokens, unless they are the 'default' URI of the format api://{appId}|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "identifierUriRestriction resource type"
-description: "identifierUriRestriction to configure a restriction for identifier URIs on applications"
+description: "Identifier URI restriction configuration object to configure a restriction for identifier URIs on applications"
 author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
