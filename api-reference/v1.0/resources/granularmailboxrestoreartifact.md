@@ -1,0 +1,69 @@
+---
+title: "granularMailboxRestoreArtifact resource type"
+description: "Represents the restore point and destination details that can be used to restore a granular mailbox protection unit."
+author: "tushar20"
+ms.localizationpriority: medium
+ms.subservice: "m365-backup-storage"
+doc_type: resourcePageType
+toc.title: Granular mailbox restore artifact
+---
+
+# granularMailboxRestoreArtifact resource type
+
+Namespace: microsoft.graph
+
+Represents the restore point and destination details that can be used to restore a [mailbox protection unit](mailboxprotectionunit.md).
+
+Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get a list of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects and their properties.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|artifactCount|int|.|
+|id|String|The unique identifier of the restore artifact.|
+|completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|restoredFolderId|String|The new restored folder identifier for the user.|
+|restoredFolderName|String|The new restored folder name.|
+|searchResponseId|String|.|
+|startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).T he possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Represents the date and time when an artifact is protected by a protection policy and can be restored. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md)|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.granularMailboxRestoreArtifact",
+  "baseType": "microsoft.graph.mailboxRestoreArtifact",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.granularMailboxRestoreArtifact",
+  "artifactCount": "Int",
+  "id": "String (identifier)",
+  "destinationType": "String",
+  "status": "String",
+  "startDateTime": "String (timestamp)",
+  "completionDateTime": "String (timestamp)",
+  "error": {
+    "@odata.type": "microsoft.graph.publicError"
+  },
+  "restoredFolderId": "String",
+  "restoredFolderName": "String",
+  "searchResponseId": "String"
+}
+```

@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ExchangeProtectionPolicy
 {
@@ -17,30 +18,46 @@ var requestBody = new ExchangeProtectionPolicy
 		{
 			"mailboxProtectionUnits@delta" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					UserId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
-				},
-				new 
-				{
-					UserId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
-				},
-				new 
-				{
-					Removed = new 
 					{
-						Reason = "changed",
+						"directoryObjectId", new UntypedString("1b014d8c-71fe-4d00-a01a-31850bc5b32c")
 					},
-					Id = "99954f18-c8ec-4b62-85bf-cdf3b70b140e",
-				},
-				new 
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Removed = new 
 					{
-						Reason = "changed",
+						"directoryObjectId", new UntypedString("2b014d8c-71fe-4d00-a01a-31850bc5b32c")
 					},
-					Id = "4267e382-71a9-4c07-bef7-bda97e09c0d2",
-				},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"@removed", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"reason", new UntypedString("changed")
+							},
+						})
+					},
+					{
+						"id", new UntypedString("99954f18-c8ec-4b62-85bf-cdf3b70b140e")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"@removed", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"reason", new UntypedString("changed")
+							},
+						})
+					},
+					{
+						"id", new UntypedString("4267e382-71a9-4c07-bef7-bda97e09c0d2")
+					},
+				}),
 			}
 		},
 	},

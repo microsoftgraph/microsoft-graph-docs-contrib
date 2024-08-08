@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object representing the application that will be triggered for an authenticationEventListener.
+An object representing the application that will be triggered for an authenticationEventListener. The object is the service principal instance in the tenant.
 
 ## Methods
 

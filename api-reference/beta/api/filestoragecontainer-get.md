@@ -90,6 +90,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId
 
 ### Response
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +108,10 @@ Content-Type: application/json
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "status": "active",
-  "createdDateTime": "2021-11-24T15:41:52.347Z"
+  "createdDateTime": "2021-11-24T15:41:52.347Z",
+  "settings": {
+    "isOcrEnabled": false
+  }
 }
 ```
 
