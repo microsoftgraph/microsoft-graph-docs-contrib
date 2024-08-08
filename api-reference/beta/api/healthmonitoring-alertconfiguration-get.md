@@ -1,6 +1,6 @@
 ---
 title: "Get alertConfiguration"
-description: "Read the properties and relationships of a microsoft.graph.healthMonitoring.alertConfiguration object."
+description: "Read the properties and relationships of an alertConfiguration object."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

@@ -1,6 +1,6 @@
 ---
 title: "Update alert"
-description: "Update the properties of a microsoft.graph.healthMonitoring.alert object."
+description: "Update the properties of an alert object."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

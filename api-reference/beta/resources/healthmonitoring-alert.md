@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams (available from serviceActivity APIs) and surfaces these in the form of alerts."
+description: "Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams, available from serviceActivity APIs, and surfaces these patterns in the form of alerts."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams (available from serviceActivity APIs) and surfaces these in the form of alerts.
+Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams, available from serviceActivity APIs, and surfaces these patterns in the form of alerts.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -28,13 +28,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.healthMonitoring.alertType|The alert type indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. New alert types may be added over time as new monitored scenarios are added.|
-|category|microsoft.graph.healthMonitoring.category|The category is a classification grouping the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. New categories may be added over time as new monitored scenarios are added.|
-|createdDateTime|DateTimeOffset|Time that the Alert was generated at.|
-|documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|Returns a key-value pair containing the name of documentation to aid in investigation of the alert and a link to the documentation.|
-|enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Provides helpful investigative information on the alert. This information typically includes counts of impacted users, devices, and other resources and a pointer to supporting data.|
-|id|String|Unique identifier of this alert under the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|scenario|microsoft.graph.healthMonitoring.scenario|The scenario is the area being monitored. Associated with the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. New scenarios may be added over time.|
+|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. New alert types might be added in the future as new monitored scenarios are added.|
+|category|microsoft.graph.healthMonitoring.category|The classification that groups the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. New categories might be added in the future as new monitored scenarios are added.|
+|createdDateTime|DateTimeOffset|The time that the Alert was generated at.|
+|documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|A key-value pair that contains the name of documentation to aid in investigation of the alert and a link to the documentation.|
+|enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Investigative information on the alert. This information typically includes counts of impacted users, devices, and other resources and a pointer to supporting data.|
+|id|String|The unique identifier of this alert in the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|scenario|microsoft.graph.healthMonitoring.scenario|The area being monitored on the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. New scenarios might be added in the future.|
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|A collection of signals that are used in the generation of the alert. These signals are sourced from [serviceActivity APIs](https://learn.microsoft.com/graph/api/resources/serviceactivity) and are added to the alert as key-value pairs. The key is the signal name (for example, mfaSignInFailure or mfaSignInSuccess). The value is a serviceActivity GET query that takes the following parameters: `inclusiveIntervalStartDateTime` (DateTimeOffset), `exclusiveIntervalEndDateTime` (DateTimeOffset), `aggregationIntervalInMinutes` (Int32).|
 |state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert. The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 

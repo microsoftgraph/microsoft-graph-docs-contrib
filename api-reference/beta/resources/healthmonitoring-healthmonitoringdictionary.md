@@ -19,8 +19,8 @@ Represents a dictionary type used in Health Monitoring
 Inherits from [microsoft.graph.healthMonitoring.Dictionary](../resources/healthmonitoring-dictionary.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
 None.

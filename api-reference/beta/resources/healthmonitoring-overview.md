@@ -32,7 +32,7 @@ The following table lists some common requests that you can use with this API.
 | Retrieve alert configuration for an alert type | [Get alert configuration](../api/healthmonitoring-alertconfiguration-get.md) |
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
 > [!NOTE]
-> You may see `unknownFutureValue` as a member in enums due to evolvable enumerations, here's how you can do to [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)
+> You might see `unknownFutureValue` as a member in enums due to evolvable enumerations, here's how you can do to [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)
 
 ## Related content
 
