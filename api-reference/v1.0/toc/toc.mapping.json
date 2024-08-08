@@ -577,6 +577,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "appRoleAssignment",
             "contract",
             "directory",
             "device",
