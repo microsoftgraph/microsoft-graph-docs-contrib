@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](..
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceSampling|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|Shows a collection of sampling resources that were impacted. Inherited from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md)|
+|resourceSampling|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The collection of sampling resources that were impacted. Inherited from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
