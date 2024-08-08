@@ -38,7 +38,7 @@ POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
 
 ## Request body
 
-In the request body, supply a JSON representation of the [crateFromPageRequest](../resources/createfromtemplaterequest.md) to use in the request payload.
+In the request body, supply a JSON representation of the [crateFromPageRequest](../resources/createfromtemplate.md) to use in the request payload.
 
 ## Response
 
