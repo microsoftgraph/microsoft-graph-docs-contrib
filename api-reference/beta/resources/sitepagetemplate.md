@@ -23,11 +23,11 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 |Method|Return type|Description|
 |:-----|:----------|:----------|
-|[List site page templates](../api/sitepagetemplate-list.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a list of the [pageTemplate](../resources/sitepagetemplate.md) objects and their properties.|
-|[Create site page template](../api/sitepagetemplate-create.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Create a new [pageTemplate](../resources/sitepagetemplate.md) object.|
-|[Get site page template](../api/sitepagetemplate-get.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a [sitePageTemplate](../resources/sitepagetemplate.md) object and properties.|
-|[Update site page template](../api/sitepagetemplate-update.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Update the properties of a [pageTemplate](../resources/sitepagetemplate.md) object.|
-|[Delete site page template](../api/sitepagetemplate-delete.md)|None|Delete a [sitePageTemplate](../resources/sitepagetemplate.md) object.|
+|[List](../api/sitepagetemplate-list.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a list of the [pageTemplate](../resources/sitepagetemplate.md) objects and their properties.|
+|[Create](../api/sitepagetemplate-create.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Create a new [pageTemplate](../resources/sitepagetemplate.md) object.|
+|[Get](../api/sitepagetemplate-get.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a [sitePageTemplate](../resources/sitepagetemplate.md) object and properties.|
+|[Update](../api/sitepagetemplate-update.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Update the properties of a [pageTemplate](../resources/sitepagetemplate.md) object.|
+|[Delete](../api/sitepagetemplate-delete.md)|None|Delete a [sitePageTemplate](../resources/sitepagetemplate.md) object.|
 
 ## Properties
 
