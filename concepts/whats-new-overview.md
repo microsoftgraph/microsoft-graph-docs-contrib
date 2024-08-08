@@ -34,7 +34,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Teamwork and communications | Apps
 
-Use get **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
+Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
 
 ### Teamwork and communications | Calls and online meetings
 
