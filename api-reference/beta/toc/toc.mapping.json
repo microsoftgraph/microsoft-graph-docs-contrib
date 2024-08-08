@@ -160,6 +160,7 @@
         {
           "name": "Restore artifact",
           "resources": [
+            "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
@@ -175,6 +176,7 @@
         }
       ],
       "complexTypes": [
+        "artifactQuery",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -922,6 +924,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "appRoleAssignment",
             "contract",
             "directory",
             "device",

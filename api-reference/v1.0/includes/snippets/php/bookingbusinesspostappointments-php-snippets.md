@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\BookingAppointment;
-use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 use Microsoft\Graph\Generated\Models\BookingPriceType;
 use Microsoft\Graph\Generated\Models\BookingReminder;
 use Microsoft\Graph\Generated\Models\BookingReminderRecipients;
@@ -18,6 +17,7 @@ use Microsoft\Graph\Generated\Models\BookingCustomerInformation;
 use Microsoft\Graph\Generated\Models\OutlookGeoCoordinates;
 use Microsoft\Graph\Generated\Models\BookingQuestionAnswer;
 use Microsoft\Graph\Generated\Models\AnswerInputType;
+use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -25,12 +25,12 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new BookingAppointment();
 $requestBody->setOdataType('#microsoft.graph.bookingAppointment');
 $requestBody->setCustomerTimeZone('America/Chicago');
+$requestBody->setCustomerName('Jordan Miller');
+$requestBody->setCustomerEmailAddress('jordanm@contoso.com');
+$requestBody->setCustomerPhone('213-555-0199');
+$requestBody->setCustomerNotes(null);
 $requestBody->setSmsNotificationsEnabled(true);
-$endDateTime = new DateTimeTimeZone();
-$endDateTime->setOdataType('#microsoft.graph.dateTimeTimeZone');
-$endDateTime->setDateTime('2018-05-01T12:30:00.0000000+00:00');
-$endDateTime->setTimeZone('UTC');
-$requestBody->setEndDateTime($endDateTime);
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setIsLocationOnline(true);
 $requestBody->setOptOutOfCustomerEmail(false);
 $requestBody->setAnonymousJoinWebUrl(null);
@@ -103,11 +103,6 @@ $requestBody->setServiceLocation($serviceLocation);
 $requestBody->setServiceName('Catered bento');
 $requestBody->setServiceNotes('Customer requires punctual service.');
 $requestBody->setStaffMemberIds(['8ee1c803-a1fa-406d-8259-7ab53233f148', ]);
-$startDateTime = new DateTimeTimeZone();
-$startDateTime->setOdataType('#microsoft.graph.dateTimeTimeZone');
-$startDateTime->setDateTime('2018-05-01T12:00:00.0000000+00:00');
-$startDateTime->setTimeZone('UTC');
-$requestBody->setStartDateTime($startDateTime);
 $requestBody->setMaximumAttendeesCount(5);
 $requestBody->setFilledAttendeesCount(1);
 $customersBookingCustomerInformationBase1 = new BookingCustomerInformation();
@@ -157,8 +152,18 @@ $customersArray []= $customersBookingCustomerInformationBase1;
 $requestBody->setCustomers($customersArray);
 
 $additionalData = [
+'end' => [
+'@odata.type' => '#microsoft.graph.dateTimeTimeZone',
+'dateTime' => '2018-05-01T12:30:00.0000000+00:00',
+'timeZone' => 'UTC',
+],
 'priceType@odata.type' => '#microsoft.graph.bookingPriceType',
 'reminders@odata.type' => '#Collection(microsoft.graph.bookingReminder)',
+'start' => [
+'@odata.type' => '#microsoft.graph.dateTimeTimeZone',
+'dateTime' => '2018-05-01T12:00:00.0000000+00:00',
+'timeZone' => 'UTC',
+],
 'customers@odata.type' => '#Collection(microsoft.graph.bookingCustomerInformation)',
 ];
 $requestBody->setAdditionalData($additionalData);

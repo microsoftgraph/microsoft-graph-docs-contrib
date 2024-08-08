@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new User
 {
@@ -16,16 +17,22 @@ var requestBody = new User
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"Engineering" , new 
+				"Engineering" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
-					ProjectOdataType = "#Collection(String)",
-					Project = new List<string>
 					{
-						"Baker",
-						"Cascade",
+						"@odata.type", new UntypedString("#Microsoft.DirectoryServices.CustomSecurityAttributeValue")
 					},
-				}
+					{
+						"project@odata.type", new UntypedString("#Collection(String)")
+					},
+					{
+						"project", new UntypedArray(new List<UntypedNode>
+						{
+							new UntypedString("Baker"),
+							new UntypedString("Cascade"),
+						})
+					},
+				})
 			},
 		},
 	},
