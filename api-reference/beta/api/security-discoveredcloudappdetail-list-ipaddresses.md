@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property.
+Get the [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) resources from the ipAddresses navigation property.
 
 ## Permissions
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/discoveredCloudAppDetail/ipAddresses
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/ipAddresses
 ```
 
 
@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppIPAddress",
-      "ipAddress": "28827319-0708-fbb2-d5e4-7f5a908fe599"
+      "ipAddress": "127.0.0.1"
     }
   ]
 }
