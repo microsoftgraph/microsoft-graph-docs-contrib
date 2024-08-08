@@ -13,7 +13,7 @@ request_body = AddPostRequestBody(
 	index = Index(
 	),
 	values = [
-		(
+		UntypedNode(
 		),
 	],
 )

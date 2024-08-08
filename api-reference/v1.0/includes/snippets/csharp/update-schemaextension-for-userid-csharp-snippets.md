@@ -8,16 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new User
 {
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"ext55gb1l09_msLearnCourses" , new 
+			"ext55gb1l09_msLearnCourses" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				CourseType = "Admin",
-			}
+				{
+					"courseType", new UntypedString("Admin")
+				},
+			})
 		},
 	},
 };
