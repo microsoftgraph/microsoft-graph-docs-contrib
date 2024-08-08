@@ -120,9 +120,9 @@ items:
 - name: Restore artifact
   href: ../../resources/restoreartifactbase.md
   items:
-  - name: Granular mail box restore artifact
+  - name: Granular mailbox restore artifact
     items:
-    - name: Granular mail box restore artifact
+    - name: Granular mailbox restore artifact
       href: ../../resources/granularmailboxrestoreartifact.md
     - name: List
       href: ../../api/exchangerestoresession-list-mailboxrestoreartifacts.md
