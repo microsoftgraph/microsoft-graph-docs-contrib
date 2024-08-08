@@ -1,23 +1,19 @@
 ---
-title: "Create a new NewsLink page in a SharePoint site"
-description: "Create a new newsLinkPage in the site pages list in a site."
+title: "Create newsLinkPage"
+description: "Create a new news link page in the site pages list of a site."
 author: "shgangan"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "apiPageType"
 ---
 
-# Create a newsLinkPage
+# Create newsLinkPage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [newsLinkPage][] in the site pages [list][] in a [site][].
-
-[newsLinkPage]: ../resources/newslinkpage.md
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+Create a new [newsLinkPage](../resources/newslinkpage.md) in the site pages [list](../resources/list.md) of a [site](../resources/site.md).
 
 ## Permissions
 
@@ -41,25 +37,24 @@ POST /sites/{site-id}/pages
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|	`application/json` for a non-multipart request, i.e. when uploading a bannerImage to create a newslinkpage is omitted. When uploading a a bannerImage while creating a newslinkpage, the request will be a multipart request. Multipart requests use `multipart/form-data; boundary=your-boundary` content type. `application/json` for "request" part, and content-type of the the bannerImage `application/json` for the "content" part of the multipart request. Required.|
-|Prefer | include-unknown-enum-members. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink` |
+|Content-Type|	`application/json` for a non-multipart request; for example, when you upload a bannerImage to create a newslinkpage is omitted. When you upload a bannerImage while creating a newslinkpage, the request will be a multipart request. Multipart requests use `multipart/form-data; boundary=your-boundary` content type. `application/json` for "request" part, and content-type of the the bannerImage `application/json` for the "content" part of the multipart request. Required.|
+|Prefer | include-unknown-enum-members. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [newsLinkPage](../resources/newsLinkPage.md) object.
+In the request body, supply a JSON representation of the [newsLinkPage](../resources/newslinkpage.md) object.
 
 > **Notes:**
->
-> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
-> 2. Currently, to set the bannerImageWebUrl, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
+> * To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
+> * Currently, to set the **bannerImageWebUrl**, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. The way to do that would be to make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content, as illustrated in the example.
 
-You can specify the following properties when creating a [newsLinkPage](../resources/newslinkpage.md).
+You can specify the following properties when you create a [newsLinkPage](../resources/newslinkpage.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters. Optional.|
-|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters. Required.|
-|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md). Required.|
+|description|String|The descriptive text for the item. The maximum length limit is 250 characters. Optional. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. The maximum length limit is 110 characters. Required.|
+|title|String|Title of the **newsLinkPage**. Required. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ## Response
 
@@ -71,8 +66,9 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
+The following example shows a request.
 
+<!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
 ```http
 POST https://graph.microsoft.com/beta/sites/{id}/pages
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
@@ -98,11 +94,10 @@ Content-Type: image/jpeg
 --MyPartBoundary198374
 ```
 
----
-
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -160,7 +155,7 @@ Content-Type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Update checklistItem",
+  "description": "Create newsLinkPage",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
