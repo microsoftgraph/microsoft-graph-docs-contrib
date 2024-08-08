@@ -34,7 +34,8 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.signals"
+  "@odata.type": "#microsoft.graph.healthMonitoring.signals",
+  "openType": true
 }
 ```
 
