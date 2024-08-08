@@ -96,9 +96,9 @@ items:
     href: ../../resources/tasks-overview.md
   - name: Outlook tasks
     items:
-    - name: Outlook task
+    - name: Outlook task (deprecated)
       items:
-      - name: Outlook task
+      - name: Outlook task (deprecated)
         href: ../../resources/outlooktask.md
       - name: Get
         href: ../../api/outlooktask-get.md
