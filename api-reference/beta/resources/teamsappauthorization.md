@@ -18,7 +18,7 @@ The authorization details of a [teamsApp](teamsapp.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|clientAppId|String|The registration ID of the Microsoft Entra ID app associated with the [teamsApp](teamsapp.md). |
+|clientAppId|String|The registration ID of the Microsoft Entra app ID associated with the [teamsApp](teamsapp.md). |
 |requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions required by the [teamsApp](teamsapp.md).|
 
 ## Relationships
