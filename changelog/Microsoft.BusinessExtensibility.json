@@ -110,6 +110,14 @@
     },
     {
       "ChangeList": [
+         {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Removed the [List](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-beta&tabs=http) method from the [plannerplanconfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta) resource.",
+          "Target": "Plannerplanconfiguration"
+        },
         {
           "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
           "ApiChange": "Method",
