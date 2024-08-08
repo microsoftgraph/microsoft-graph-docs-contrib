@@ -130,7 +130,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "createdDateTime":"2015-06-19T12-01-03.45Z",
+         "createdDateTime":"2015-06-19T12:01:03.45Z",
          "lastModifiedBy":{
             "application":{
                "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -139,7 +139,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+         "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
          "isAutoApplyEnabled": false,
          "driveExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       },
@@ -155,7 +155,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "createdDateTime":"2015-06-19T12-01-03.45Z",
+         "createdDateTime":"2015-06-19T12:01:03.45Z",
          "lastModifiedBy":{
             "application":{
                "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -164,7 +164,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+         "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
          "isAutoApplyEnabled": false,
          "driveExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       },
@@ -180,7 +180,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "createdDateTime":"2015-06-19T12-01-03.45Z",
+         "createdDateTime":"2015-06-19T12:01:03.45Z",
          "lastModifiedBy":{
             "application":{
                "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -189,7 +189,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
                "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
             }
          },
-         "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+         "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
          "isAutoApplyEnabled": false,
          "driveExpression": "(memberOf -any (group.id -in ['c818eb4a-ea72-42bd-8f0b-d0bbf794bec7']))",
          "error" : 
