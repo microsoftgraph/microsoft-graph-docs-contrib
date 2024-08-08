@@ -123,6 +123,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Deletion",
+          "Description": "Removed the [Create](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-beta&tabs=http) method from the [plannerplanconfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta) resource.",
+          "Target": "Plannerplanconfiguration"
+        },
+        {
+          "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Deletion",
           "Description": "Removed the [Create](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
           "Target": "plannerPlanConfigurationLocalization"
         },
