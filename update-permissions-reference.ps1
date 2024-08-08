@@ -66,7 +66,7 @@ function Generate-Markdown {
                 $markdown += if ($permission) { "| $($permission.$category) " } else { "| - " }
             }
             
-            $markdown += " |`n"
+            $markdown += "|`n"
         }
         
         # Handle permissions supported in MSA
@@ -162,7 +162,8 @@ $authUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $response = Invoke-RestMethod $authUri  -Method 'POST' -Headers $headers -Body $body
 $response | ConvertTo-Json
 $accessToken = $response.access_token
-$secureAccessToken = ConvertTo-SecureString $accessToken -AsPlainText -Force
+# $secureAccessToken = ConvertTo-SecureString $accessToken -AsPlainText -Force
+
 # Install the Microsoft Graph PowerShell module if not already installed
 if (-not (Get-Module -Name Microsoft.Graph -ListAvailable)) {
     Install-Module -Name Microsoft.Graph -Scope CurrentUser -Force
@@ -170,7 +171,7 @@ if (-not (Get-Module -Name Microsoft.Graph -ListAvailable)) {
 
 # Connect to Microsoft Graph
 try {
-    Connect-MgGraph -AccessToken $secureAccessToken -NoWelcome
+    Connect-MgGraph -Thumbprint $secureAccessToken -NoWelcome
     Write-Host "Connected successfully."
 }
 catch {
