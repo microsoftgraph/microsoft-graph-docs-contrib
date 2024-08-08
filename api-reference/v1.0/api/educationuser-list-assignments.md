@@ -44,7 +44,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 
 All [properties](../resources/educationassignment.md#properties) are supported for the query parameters `$filter`.
 
-You can use `$orderby` for the the following properties of [educationAssignment](../resources/educationassignment.md) **resource**, **dueDateTime**, **displayName**, **status**, **createdDateTime**, **assignedDateTime**, **assignDateTime**, **lastModifiedDateTime**, **classworkModuleId** and **closeDateTime**.
+You can use `$orderby` for the the following properties of [educationAssignment](../resources/educationassignment.md) `resource`, `dueDateTime`, `displayName`, `status`, `createdDateTime`, `assignedDateTime`, `assignDateTime`, `lastModifiedDateTime`, `classworkModuleId` and `closeDateTime`.
 
 ## Request headers
 
