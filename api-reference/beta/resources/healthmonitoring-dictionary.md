@@ -1,6 +1,6 @@
 ---
 title: "Dictionary resource type"
-description: "Represents a dictionary type"
+description: "Represents a dictionary type that consists of key-value pairs."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a dictionary type
+Represents a dictionary type that consists of key-value pairs.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None
 
 ## Relationships
 None.

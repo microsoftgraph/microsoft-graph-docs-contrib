@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: "Read the properties and relationships of a microsoft.graph.healthMonitoring.alert object."
+description: "Read the properties and relationships of an alert object."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) object. The returned alert object contains information about the state, type, date, and impact of each alert that has fired within your tenant.
+Read the properties and relationships of a [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) object. The returned alert object contains information about the state, type, date, and impact of each alert that fired within your tenant.
 
 ## Permissions
 

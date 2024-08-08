@@ -30,8 +30,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertConfigurations|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) collection|Represents the configuration of an alert type defining behavior that occurs when an alert is created.|
-|alerts|[microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) collection|Represents a health monitoring system detected alert for anomalous usage patterns found in a Microsoft Entra tenant.|
+|alertConfigurations|[microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) collection|The configuration of an alert type, which defines behavior that occurs when an alert is created.|
+|alerts|[microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) collection|The collection of health monitoring system detected alerts for anomalous usage patterns found in a Microsoft Entra tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

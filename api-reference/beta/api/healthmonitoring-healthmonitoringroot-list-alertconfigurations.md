@@ -1,6 +1,6 @@
 ---
 title: "List alertConfiguration objects"
-description: "Get a list of the microsoft.graph.healthMonitoring.alertConfiguration objects and their properties."
+description: "Get a list of the alertConfiguration objects and their properties."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

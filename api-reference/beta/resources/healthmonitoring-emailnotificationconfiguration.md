@@ -19,7 +19,7 @@ Represents the email configuration of an alert type defining behavior that occur
 |Property|Type|Description|
 |:---|:---|:---|
 |groupId|String|The identifier of the group to send an email to.|
-|isEnabled|Boolean|Flag indicating if email notifications are enabled on the alert type.|
+|isEnabled|Boolean|Indicates whether email notifications are enabled on the alert type.|
 
 ## Relationships
 None.
