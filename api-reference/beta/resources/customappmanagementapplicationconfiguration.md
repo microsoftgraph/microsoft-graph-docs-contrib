@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom app management application configuration object that contains properties which can be configured to enable various restrictions specific to applications.
+Custom app management application configuration object that contains properties which can be configured to enable various restrictions specific to application objects.
 
 ## Properties
 
 | Property                | Type                              | Description                                     |
 | :---------------------- | :-------------------------------- | :---------------------------------------------- |
-| identifierUris          | [identifierUriConfiguration](identifieruriconfiguration.md)  | Configuration for identifierUris restriction |
+| identifierUris          | [identifierUriConfiguration](identifieruriconfiguration.md)  | Configuration for identifierUris restrictions |
 
 ## Relationships
 None.
