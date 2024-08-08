@@ -23,7 +23,7 @@ request_body = ApplyPostRequestBody(
 			index = 99,
 		),
 		dynamic_criteria = "dynamicCriteria-value",
-		values = Values(
+		values = UntypedNode(
 		),
 		filter_on = "filterOn-value",
 	),

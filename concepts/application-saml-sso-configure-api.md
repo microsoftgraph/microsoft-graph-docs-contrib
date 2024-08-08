@@ -476,7 +476,7 @@ Content-type: application/json
 
 ## Step 4: Add app roles
 
-If the application requires the role information in the token, add the definition of the roles in the application object. By default, the **appRoles** object in the application and service principal in Step 2 included the default `User` and `msiam_access` roles. Don't modify or remove them. To add mode roles, you must include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
+If the application requires the role information in the token, add the definition of the roles in the application object. By default, the **appRoles** object in the application and service principal in Step 2 included the default `User` and `msiam_access` roles. Don't modify or remove them. To add more roles, you must include both the existing roles and the new roles in the **appRoles** object in the request, otherwise, the existing roles are replaced.
 
 In this step, add the `Finance,WAAD` and `Admin,WAAD` roles to the AWS Contoso service principal. The request returns a `204 No Content` response code.
 

@@ -50,6 +50,36 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List appRoleAssignments granted to a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List appRoleAssignments granted to a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List appRoleAssignments granted to a service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List appRoleAssignments granted to users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant an appRole to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant an appRole to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant an appRole to a service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant a user, group, or client service principal an appRoleAssignment for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get appRoleAssignment
+      href: ../../api/approleassignment-get.md
+    - name: Dlete an appRoleAssignment from a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete an appRoleAssignment from a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete an appRoleAssignment from a service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete an appRoleAssignment granted to a user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -3116,8 +3146,6 @@ items:
           href: ../../api/identityuserflowattribute-update.md
         - name: Delete
           href: ../../api/identityuserflowattribute-delete.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow

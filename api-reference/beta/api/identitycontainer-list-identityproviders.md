@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
+### Example 2: List all identity providers configured in an Azure AD B2C tenant
 
 #### Request
 The following example shows a request.
@@ -253,4 +253,64 @@ Content-type: application/json
     ]
 }
 
+```
+
+### Example 3: List all identity providers configured in a Microsoft Entra External ID in an external tenant
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityproviderbase_CIAM"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/identityProviders
+```
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityProviderBase",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/identityProviders?$select=displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "AADSignup-OAUTH",
+            "displayName": "Azure Active Directory Sign up",
+            "identityProviderType": "AADSignup",
+            "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "EmailOtpSignup-OAUTH",
+            "displayName": "Email One Time Passcode",
+            "identityProviderType": "EmailOTP",
+            "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "EmailPassword-OAUTH",
+            "displayName": "Email with password",
+            "identityProviderType": "EmailPassword",
+            "state": null
+        }
+    ]
+}
 ```
