@@ -25,7 +25,7 @@ You can apply a category to an item by assigning the **displayName** property of
 Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), [outlookTask](outlooktask.md), [post](post.md), and [todoTask](todotask.md).
 
 Each category is attributed by 2 properties: **displayName** and **color**. The **displayName** value must be unique in a user's master list.
-The **color** however does not have to be unique; multiple categories in the master list can be mapped to the same color. You can map up to 25 different colors to categories in a user's master list.
+The **color** however doesn't have to be unique; multiple categories in the master list can be mapped to the same color. You can map up to 25 different colors to categories in a user's master list.
 
 ## Methods
 | Method		   | Return Type	|Description|
@@ -39,14 +39,14 @@ The **color** however does not have to be unique; multiple categories in the mas
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|String|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. For more details, see the following note. |
-|displayName|String|A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.|
+|color|String|A preset color constant that characterizes a category, and that is mapped to one of 25 predefined colors. For more information, see the following note. |
+|displayName|String|A unique name that identifies a category in the user's mailbox. After a category is created, the name can't be changed. Read-only.|
 
-> **Note** The possible values for **color** are pre-set constants such as `None`, `preset0` and `preset1`. Each pre-set constant is further mapped to a color; the actual
-color is dependent on the Outlook client that the categories are being displayed in. The following table shows the colors mapped to each pre-set constant for Outlook (desktop client).
+> **Note** The possible values for **color** are preset constants such as `None`, `preset0` and `preset1`. Each preset constant is further mapped to a color; the actual
+color is dependent on the Outlook client that the categories are being displayed in. The following table shows the colors mapped to each preset constant for Outlook (desktop client).
 
 
-| Pre-set constant	| Color mapped to in Outlook |
+| Preset constant	| Color mapped to in Outlook |
 |:---------------|:--------|
 | None | No color mapped |
 | Preset0 | Red |
