@@ -131,7 +131,7 @@ Content-Type: application/json
     "pciDssVersion": "String",
     "dataAtRestEncryptionMethod": "String",
     "holding": "String",
-    "tlsEncryptionProtocol": "String",
+    "encryptionProtocol": "String",
     "dataCenter": "String",
     "headquarters": "String",
     "founded": "Integer",

@@ -104,7 +104,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |latestBreachDateTime|DateTimeOffset|The last date of company's data breach.|
 |logonUrls|String|The URL that users can use to sign into the app.|
 |pciDssVersion|microsoft.graph.security.appInfoPciDssVersion|The pciDss version. The possible values are: `v1`, `v2`, `v3`, `v3_1`, `v3_2`, `v3_2_1`, `notSupported`, `unknown`, `unknownFutureValue`, `v4`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `v4`.|
-|tlsEncryptionProtocol|microsoft.graph.security.appInfoTlsEncryptionProtocol|The TLS encryption protocol version. The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`.|
+|encryptionProtocol|microsoft.graph.security.appInfoEncryptionProtocol|The TLS encryption protocol version. The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`.|
 |vendor|String|The app vendor.|
 
 ## Relationships
@@ -168,7 +168,7 @@ The following JSON representation shows the resource type.
   "pciDssVersion": "String",
   "dataAtRestEncryptionMethod": "String",
   "holding": "String",
-  "tlsEncryptionProtocol": "String",
+  "encryptionProtocol": "String",
   "dataCenter": "String",
   "headquarters": "String",
   "founded": "Integer",

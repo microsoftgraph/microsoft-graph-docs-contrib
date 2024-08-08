@@ -29,15 +29,15 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 |Property|Type|Description|
 |:---|:---|:---|
 |category|microsoft.graph.security.appCategory|The list of category of discovered apps.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
-|deviceCount|Int64|The number of devices accessing discovered apps.|
-|displayName|String|The device name.|
-|domains|String collection|The list of domains accessing discovered apps.|
-|downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the devices.|
+|deviceCount|Int64|The number of devices accessing discovered app.|
+|displayName|String|Discovered Application name.|
+|domains|String collection|The list of domains identified as belonging to the discovered app.|
+|downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the app.|
 |id|String|The ID of the discovered app.|
-|ipAddressCount|Int64|The IpAddress.|
+|ipAddressCount|Int64|The count of ip addresses accessing discovered app.|
 |lastSeenDateTime|DateTimeOffset|The app last seen date & time.|
 |riskScore|Int64|The riskscore of the discovered app.|
-|tags|String collection|The discovered app tag.|
+|tags|String collection|List of discovered app tags.|
 |transactionCount|Int64|The total transanctions on discovered app.|
 |uploadNetworkTrafficInBytes|Int64|The upload traffic on discovered app.|
 |userCount|Int64|The count of users accessing discovered app.|

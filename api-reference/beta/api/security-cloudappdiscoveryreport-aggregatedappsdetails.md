@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the aggregated details of discovered apps by providing the time period. The supported time periods are last 7, 30, or 90 days.
+Get the [aggregated details](../resources/security-discoveredcloudappdetail.md) of discovered apps by providing the time period. The supported time periods are last 7, 30, or 90 days.
 
 ## Permissions
 
