@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 The base resource for the following derived types of attachments:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource)
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
+* An item (contact, event, or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
 You can add related content to a user [event](../resources/event.md),
