@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-topworkflowsprocessedsummary-permissions.md)]
 
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
