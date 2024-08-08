@@ -66,7 +66,7 @@ function Generate-Markdown {
                 $markdown += if ($permission) { "| $($permission.$category) " } else { "| - " }
             }
             
-            $markdown += " |`n"
+            $markdown += "|`n"
         }
         
         # Handle permissions supported in MSA
