@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The base resource for the following derived types of attachments:
+The base type for several types of attachments on a user, message, task, or group post that serves as the base resource for the following derived types of attachments:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource)
 * An item (contact, event, or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
