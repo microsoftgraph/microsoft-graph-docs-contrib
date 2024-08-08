@@ -148,7 +148,7 @@
           "ChangedApiName": "GET",
           "ChangeType": "Deletion",
           "Description": "Removed the [Get](https://learn.microsoft.com/en-us/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-beta&tabs=http) from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
-          "Target": "GET"
+          "Target": "plannerPlanConfigurationLocalization"
         },
         {
           "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
@@ -156,7 +156,7 @@
           "ChangedApiName": "PATCH",
           "ChangeType": "Deletion",
           "Description": "Removed the [Update](https://learn.microsoft.com/en-us/graph/api/plannerplanconfigurationlocalization-update?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
-          "Target": "PATCH"
+          "Target": "plannerPlanConfigurationLocalization"
         },
         {
           "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
@@ -164,7 +164,7 @@
           "ChangedApiName": "DELETE",
           "ChangeType": "Deletion",
           "Description": "Removed the [Delete](https://learn.microsoft.com/en-us/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-beta&tabs=http) method from the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource.",
-          "Target": "DELETE"
+          "Target": "plannerPlanConfigurationLocalization"
         }
       ],
       "Id": "fe03d867-a979-4838-a073-9b8a63e11284",
