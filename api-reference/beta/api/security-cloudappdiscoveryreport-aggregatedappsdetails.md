@@ -93,21 +93,21 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
       "id": "String (identifier)",
-      "displayName": "String",
+      "displayName": "Example App",
       "tags": [
-        "String"
+        "Sanctioned"
       ],
-      "riskScore": "Integer",
-      "uploadNetworkTrafficInBytes": "Integer",
-      "downloadNetworkTrafficInBytes": "Integer",
-      "transactionCount": "Integer",
-      "ipAddressCount": "Integer",
-      "userCount": "Integer",
-      "lastSeenDateTime": "String (timestamp)",
+      "riskScore": "8",
+      "uploadNetworkTrafficInBytes": "1024",
+      "downloadNetworkTrafficInBytes": "2048",
+      "transactionCount": "20",
+      "ipAddressCount": "5",
+      "userCount": "3",
+      "lastSeenDateTime": "2024-06-13T00:00:00Z",
       "domains": [
-        "String"
+        "example.com"
       ],
-      "category": "String"
+      "category": "health"
     }
   ]
 }

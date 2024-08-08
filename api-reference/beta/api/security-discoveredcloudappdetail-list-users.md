@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of users for the discovered cloud apps.
+Get a list of [users](../resources/security-discoveredcloudappuser.md) for the discovered cloud apps.
 
 ## Permissions
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/discoveredCloudAppDetail/users
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/users
 ```
 
 
@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppUser",
-      "userIdentifier": "60367f4d-4b91-20cd-5ec6-a84642e8fbde"
+      "userIdentifier": "AnonymusUser"
     }
   ]
 }
