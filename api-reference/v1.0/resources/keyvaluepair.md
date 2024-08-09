@@ -20,6 +20,10 @@ Key value pair for action parameters.
 |name|String|Name for this key-value pair|
 |value|String|Value for this key-value pair|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
