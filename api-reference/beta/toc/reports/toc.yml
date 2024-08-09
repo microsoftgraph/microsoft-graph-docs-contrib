@@ -140,10 +140,18 @@ items:
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
     - name: Microsoft Entra health
       items:
-      - name: Microsoft Entra health
-        href: ../../resources/azureadauthentication.md
-      - name: Get SLA attainment
-        href: ../../api/azureadauthentication-get.md
+      - name: SLA Attainment
+        items:
+        - name: SLA attainment
+          items:
+          - name: SLA attainment
+            href: ../../resources/azureadauthentication.md
+          - name: Get SLA attainment
+            href: ../../api/azureadauthentication-get.md
+      - name: Microsoft Entra health monitoring
+        items:
+        - name: Overview
+          href: ../../resources/healthmonitoring-overview.md
     - name: Registration and usage
       items:
       - name: Overview
