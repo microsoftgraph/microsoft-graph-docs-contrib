@@ -1,5 +1,5 @@
 ---
-title: "List group usageRights"
+title: "List usageRights for a user"
 description: "Get a list of the microsoft.graph.cloudLicensing.usageRight objects and their properties."
 author: "patrick-starrin"
 ms.localizationpriority: medium
