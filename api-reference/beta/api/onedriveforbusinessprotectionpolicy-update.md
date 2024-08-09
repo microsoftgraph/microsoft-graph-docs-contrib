@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the protection policy for the OneDrive service in Microsoft 365. This method adds a [driveProtectionUnit](../resources/driveprotectionunit.md) to or removes it from a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,6 +60,7 @@ If successful, this method returns a `200 OK` response code and an updated [oneD
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_update"
@@ -70,10 +73,10 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
   "displayName": "One Drive  Policy - Inadvertent data loss",
   "driveProtectionUnits@delta": [
     {
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
       "@removed": {
@@ -90,6 +93,36 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessprotectionpolicy-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/onedriveforbusinessprotectionpolicy-update-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusinessprotectionpolicy-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessprotectionpolicy-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusinessprotectionpolicy-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -110,7 +143,7 @@ HTTP/1.1 200 OK
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -123,7 +156,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -135,11 +168,11 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "protectRequested",
       "createdBy": {
@@ -153,7 +186,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -165,7 +198,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario
@@ -182,7 +215,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "3667e382-71a9-4c07-bef7-bda97e09c0d2",
-      "userId": "5767e382-71a9-4c07-bef7-bda97e09c0d2",
+      "directoryObjectId": "5767e382-71a9-4c07-bef7-bda97e09c0d2",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "removeRequested",
       "createdBy": {
@@ -196,7 +229,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -208,7 +241,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     }
   ]
 }

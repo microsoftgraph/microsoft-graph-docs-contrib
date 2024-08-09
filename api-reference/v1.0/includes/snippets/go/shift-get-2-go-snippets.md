@@ -52,7 +52,7 @@ availability := []graphmodels.ShiftAvailabilityable {
 }
 requestBody.SetAvailability(availability)
 additionalData := map[string]interface{}{
-	"odataEtag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
+	"@odata.etag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
 }
 requestBody.SetAdditionalData(additionalData)
 

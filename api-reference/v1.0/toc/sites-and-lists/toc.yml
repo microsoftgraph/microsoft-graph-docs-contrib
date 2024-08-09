@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/sharepoint.md
@@ -11,6 +14,8 @@ items:
     href: ../../api/site-get.md
   - name: List sites across geographies
     href: ../../api/site-getallsites.md
+  - name: List subsites for a site
+    href: ../../api/site-list-subsites.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
   - name: Get site for a group
@@ -42,7 +47,7 @@ items:
   - name: List operations
     href: ../../api/site-list-operations.md
   - name: List pages
-    href: ../../api/baseSitePage-list.md
+    href: ../../api/basesitepage-list.md
 - name: List
   items:
   - name: List
@@ -186,9 +191,9 @@ items:
     - name: List
       href: ../../api/basesitepage-list.md
     - name: Get
-      href: ../../api/baseSitePage-get.md
+      href: ../../api/basesitepage-get.md
     - name: Delete
-      href: ../../api/baseSitePage-delete.md
+      href: ../../api/basesitepage-delete.md
   - name: Site page
     items:
     - name: Site page
@@ -262,7 +267,7 @@ items:
     - name: Get position
       href: ../../api/webpart-getposition.md
     - name: Get by position
-      href: ../../api/sitePage-getwebpartsbyposition.md
+      href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Text web part
       href: ../../resources/textwebpart.md
     - name: Standard web part

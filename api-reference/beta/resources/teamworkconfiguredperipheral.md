@@ -26,7 +26,7 @@ Represents the details about a peripheral device configured for a Microsoft Team
 |peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Details about the peripheral devices attached.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkConfiguredPeripheral"

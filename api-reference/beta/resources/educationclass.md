@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Class
 ---
 
 # educationClass resource type
@@ -74,7 +75,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

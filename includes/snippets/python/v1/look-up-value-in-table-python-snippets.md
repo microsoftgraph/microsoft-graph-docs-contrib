@@ -8,16 +8,13 @@ from msgraph import GraphServiceClient
 from msgraph.generated.drives.item.items.item.workbook.functions.vlookup.vlookup_request_builder import VlookupRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.drives.item.items.item.workbook.functions.vlookup.vlookup_post_request_body import VlookupPostRequestBody
-from msgraph.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = VlookupPostRequestBody(
 	lookup_value = "pear",
-	table_array = Json(
-		additional_data = {
-				"address" : "Sheet1!B2:C7",
-		}
+	table_array = UntypedNode(
+		address = "Sheet1!B2:C7",
 	),
 	col_index_num = 2,
 	range_lookup = False,

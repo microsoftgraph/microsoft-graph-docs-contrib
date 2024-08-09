@@ -3,7 +3,7 @@ title: "Delete citationTemplate"
 description: "Delete a citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationT
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

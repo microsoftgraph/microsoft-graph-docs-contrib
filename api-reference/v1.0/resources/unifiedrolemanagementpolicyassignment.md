@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Policy assignment
 ---
 
 # unifiedRoleManagementPolicyAssignment resource type
@@ -38,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)| The policy that's associated with a policy assignment. Supports `$expand` and a nested `$expand` of the **rules** and **effectiveRules** relationships for the policy.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

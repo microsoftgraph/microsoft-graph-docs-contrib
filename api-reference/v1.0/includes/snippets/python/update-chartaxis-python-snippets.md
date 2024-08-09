@@ -6,16 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.workbook_chart_axis import WorkbookChartAxis
-from msgraph.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WorkbookChartAxis(
-	major_unit = Json(
+	major_unit = UntypedNode(
 	),
-	maximum = Json(
+	maximum = UntypedNode(
 	),
-	minimum = Json(
+	minimum = UntypedNode(
 	),
 )
 

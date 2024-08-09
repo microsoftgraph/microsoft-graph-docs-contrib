@@ -25,21 +25,21 @@ configuration := &graphdrives.DriveItemItemItemWorkbookTableItemRowsRequestBuild
 	Headers: headers,
 }
 requestBody := graphmodels.NewWorkbookTableRow()
-values := []graph.Jsonable {
-	json := []graph.Numberable {
- := int32(1)
+values := []graph.UntypedNodeable {
+	 := []graph.UntypedNodeable {
+ := float64(1)
 requestBody.Set(&) 
- := int32(2)
+ := float64(2)
 requestBody.Set(&) 
- := int32(3)
+ := float64(3)
 requestBody.Set(&)
 	}
-	json := []graph.Numberable {
- := int32(4)
+	 := []graph.UntypedNodeable {
+ := float64(4)
 requestBody.Set(&) 
- := int32(5)
+ := float64(5)
 requestBody.Set(&) 
- := int32(6)
+ := float64(6)
 requestBody.Set(&)
 	}
 }

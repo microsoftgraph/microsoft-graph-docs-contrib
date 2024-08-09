@@ -1,5 +1,5 @@
 ---
-ms.service: entra-id
+ms.subservice: entra-id
 ms.topic: include
 ---
 ## Zero Trust

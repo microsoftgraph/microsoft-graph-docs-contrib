@@ -3,7 +3,7 @@ title: "customClaimCondition resource type"
 description: "Represents a claim condition associated with a particular claim configuration. The claim configuration is only applied if the condition is met."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

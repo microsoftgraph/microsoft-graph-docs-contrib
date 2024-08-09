@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 Create a protection policy for the Exchange service in a Microsoft 365 tenant. The policy is set to `inactive` when it is created. Users can also provide a list of protection units under the policy.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -59,6 +61,7 @@ If successful, this method returns a `201 Created` response code and an [exchang
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_create"
@@ -72,17 +75,51 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtection
   "displayName": "Exchange Protection Policy",
   "mailboxProtectionUnits": [
     {
-      "userId": "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
+      "directoryObjectId": "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
     },
     {
-      "userId": "9bc069da-b746-41a4-89ab-26125c6373c7"
+      "directoryObjectId": "9bc069da-b746-41a4-89ab-26125c6373c7"
     },
     {
-      "userId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+      "directoryObjectId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
     }
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangeprotectionpolicy-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangeprotectionpolicy-create-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/exchangeprotectionpolicy-create-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangeprotectionpolicy-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangeprotectionpolicy-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-create-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangeprotectionpolicy-create-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -115,7 +152,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -127,7 +164,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
   "retentionSettings": [
     {
       "interval": "R/PT10M",

@@ -1,5 +1,5 @@
 ---
-title: "Start sync after uploading files to an educationSynchronizationProfile"
+title: "Start sync after uploading files to an educationSynchronizationProfile (deprecated)"
 description: "Verify the files uploaded to a specific school data synchronization profile in the tenant. If the verification is successful, synchronization starts on the profile. Otherwise, the response contains errors and warnings. If the response contains errors, the synchronization won't start. If the response contains only warnings, synchronization starts."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Start sync after uploading files to an educationSynchronizationProfile
+# Start sync after uploading files to an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. If the verification is successful, synchronization starts on the profile. Otherwise, the response contains errors and warnings. If the response contains errors, the synchronization won't start. If the response contains only warnings, synchronization starts.
 
@@ -34,7 +36,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -89,7 +91,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ---
 
 ##### Response
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -159,7 +161,7 @@ Content-type: application/json
     ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

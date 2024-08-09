@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -62,6 +64,7 @@ If successful, this method returns a `201 Created` response code and a [oneDrive
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onedriveforbusinessrestoresession"
@@ -85,6 +88,39 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-onedriveforbusinessrestoresession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-onedriveforbusinessrestoresession-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onedriveforbusinessrestoresession-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-onedriveforbusinessrestoresession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onedriveforbusinessrestoresession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-onedriveforbusinessrestoresession-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-onedriveforbusinessrestoresession-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-onedriveforbusinessrestoresession-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -114,7 +150,7 @@ Content-Type: application/json
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2023-03-30T12-01-03.45Z",
+  "createdDateTime": "2023-03-30T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -125,7 +161,7 @@ Content-Type: application/json
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z"
+  "lastModifiedDateTime": "2023-03-30T12:01:03.45Z"
 }
 ```
 

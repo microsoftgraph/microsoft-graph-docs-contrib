@@ -2,7 +2,7 @@
 title: "androidGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the androidGeneralDeviceConfiguration resource."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

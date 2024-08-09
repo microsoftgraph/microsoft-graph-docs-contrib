@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let response = await client.api('/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}')
+let permissionGrantPreApprovalPolicy = await client.api('/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}')
 	.version('beta')
 	.get();
 

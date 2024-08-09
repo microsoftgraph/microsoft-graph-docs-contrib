@@ -25,8 +25,8 @@ Role management container for unified role definitions and role assignments for 
 | [List transitive role assignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get direct and transitive unifiedRoleAssignments assigned to a specific principal. Specifying principalId is required. |
 | [Create role definition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new unifiedRoleDefinition by posting to the roleDefinitions collection. |
 | [List role definitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
-| [roleSchedules](../api/rbacapplication-roleschedules.md) | [unifiedRoleScheduleBase](unifiedroleschedulebase.md) collection | Function to retrieve a collection of unifiedRoleScheduleBase objects. |
-| [roleScheduleInstances](../api/rbacapplication-rolescheduleinstances.md) | [unifiedRoleScheduleInstanceBase](unifiedrolescheduleinstancebase.md) collection | Function to retrieve a collection of unifiedRoleScheduleInstanceBase objects.  |
+| [List role schedules](../api/rbacapplication-roleschedules.md) | [unifiedRoleScheduleBase](unifiedroleschedulebase.md) collection | Function to retrieve a collection of unifiedRoleScheduleBase objects. |
+| [List role schedule instances](../api/rbacapplication-rolescheduleinstances.md) | [unifiedRoleScheduleInstanceBase](unifiedrolescheduleinstancebase.md) collection | Function to retrieve a collection of unifiedRoleScheduleInstanceBase objects.  |
 
 ## Properties
 

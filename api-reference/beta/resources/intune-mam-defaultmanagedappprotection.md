@@ -2,7 +2,7 @@
 title: "defaultManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # defaultManagedAppProtection resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
 
@@ -88,6 +88,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
+|allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data. (iOS Only)|
@@ -222,6 +223,7 @@ Here is a JSON representation of the resource.
   "protectedMessagingRedirectAppType": "String",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
+  "allowWidgetContentSync": true,
   "encryptAppData": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "String",

@@ -719,3 +719,110 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+### Example 7: Update the expiration date for an access package assignment
+
+The following example shows how to update the expiration date for an access package assignment.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_expiration_date"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+    "requestType": "adminUpdate",
+    "schedule": {
+        "startDateTime": "2023-05-23T20:04:02.39Z",
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": "2024-07-01T00:00:00.00Z",
+            "duration": null,
+            "type": "afterDateTime"
+        }
+    },
+    "assignment": {
+        "id": "329f8dac-8062-4c1b-a9b8-39b7132f9bff"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentrequest-expiration-date-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-accesspackageassignmentrequest-expiration-date-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentrequest-expiration-date-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentrequest-expiration-date-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentrequest-expiration-date-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accesspackageassignmentrequest-expiration-date-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accesspackageassignmentrequest-expiration-date-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accesspackageassignmentrequest-expiration-date-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "5b682fbb-d6e5-4118-a471-46dfc553e9cc",
+    "requestType": "adminUpdate",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": "2024-06-07T15:53:35.333Z",
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": "2024-07-01T00:00:00Z",
+            "duration": null,
+            "type": "afterDateTime"
+        }
+    },
+    "answers": [],
+    "customExtensionCalloutInstances": []
+}
+```

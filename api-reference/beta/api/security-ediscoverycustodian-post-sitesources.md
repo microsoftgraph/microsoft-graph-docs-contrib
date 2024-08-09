@@ -3,7 +3,7 @@ title: "Create custodian siteSource"
 description: "Create a new custodian siteSource object associated with an eDiscovery custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

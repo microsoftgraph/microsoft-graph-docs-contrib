@@ -49,7 +49,7 @@ The following are examples of backward compatible changes:
 The following versions of the Microsoft Graph API are currently available.
 
 ### Beta version
-In general, APIs debut in the beta version and are accessible in the `https://graph.microsoft.com/beta` endpoint. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Expect breaking changes and deprecation of APIs in the beta version from time to time. Don't take a production dependency on beta APIs.
+In general, APIs debut in the beta version and are accessible in the `https://graph.microsoft.com/beta` endpoint. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Expect breaking changes and deprecation of APIs in the beta version from time to time. Use of beta APIs in production applications is not supported.
 
 We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability, we add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number is incremented, with the new version becoming the current version.
 

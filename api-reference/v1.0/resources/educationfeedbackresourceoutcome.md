@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: "resourcePageType"
+toc.title: Feedback resource outcome
 ---
 
 # educationFeedbackResourceOutcome resource type
@@ -38,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

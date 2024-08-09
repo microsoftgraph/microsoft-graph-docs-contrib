@@ -3,7 +3,7 @@ title: "Create ediscoveryReviewSetQuery"
 description: "Create a new ediscoveryReviewSetQuery object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

@@ -30,8 +30,10 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the bucket and why.|
 |creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
 |id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. If set to`true`, the bucket is archived. An archived bucket is read-only.|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
@@ -42,7 +44,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

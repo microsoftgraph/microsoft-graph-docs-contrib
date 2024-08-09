@@ -3,6 +3,7 @@ title: "Manage Microsoft Entra identity and network access capabilities by using
 description: "Microsoft Graph provides REST APIs to help manage identity and network access capabilities, most of which are available through Microsoft Entra."
 ms.localizationpriority: high
 doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: entra-id
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -46,7 +47,7 @@ A core functionality of identity and access management is managing your tenant c
 |--|--|
 | Manage administrative units including the following operations: <li>Create administrative units <li> Create and manage members and membership rules of administrative units <li> Assign administrator roles that are scoped to administrative units | [administrativeUnit resource type](administrativeunit.md) and its associated APIs |
 | Retrieve BitLocker recovery keys | [bitlockerRecoveryKey resource type](bitlockerrecoverykey.md) and its associated APIs |
-| Monitor licenses and subscriptions for the tenant | [subscribedSku resource type](subscribedsku.md) and its associated APIs |
+| Monitor licenses and subscriptions for the tenant | <li> [companySubscription resource type](companysubscription.md) and its associated APIs <li>[subscribedSku resource type](subscribedsku.md) and its associated APIs |
 | Manage custom security attributes | See [Overview of custom security attributes using the Microsoft Graph API](custom-security-attributes-overview.md) |
 | Manage deleted directory objects. The functionality to store deleted objects in a "recycle bin" is supported for the following objects: <li> Administrative units <li> Applications <li> External user profiles <li> Groups <li> Pending external user profiles <li> Service principals <li> Users | <li> [Get](../api/directory-deleteditems-get.md) or [List](../api/directory-deleteditems-list.md) deleted objects <li> [Permanently delete](../api/directory-deleteditems-delete.md) a deleted object   <li> [Restore a deleted item](../api/directory-deleteditems-restore.md) <li> [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) |
 | Manage devices in the cloud | [device resource type](device.md) and its associated APIs |

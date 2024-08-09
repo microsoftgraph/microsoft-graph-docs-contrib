@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Eligibility schedule instance
 ---
 
 # privilegedAccessGroupEligibilityScheduleInstance resource type
@@ -41,7 +42,7 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

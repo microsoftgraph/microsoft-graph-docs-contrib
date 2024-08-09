@@ -1,6 +1,69 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Approvals
+  items:
+  - name: Approval item
+    items:
+    - name: Approval item
+      href: ../../resources/approvalitem.md
+    - name: List
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get
+      href: ../../api/approvalitem-get.md
+    - name: Cancel
+      href: ../../api/approvalitem-cancel.md
+    - name: List requests
+      href: ../../api/approvalitem-list-requests.md
+    - name: List responses
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create response
+      href: ../../api/approvalitem-post-responses.md
+  - name: Approval solution
+    items:
+    - name: Approval solution
+      href: ../../resources/approvalsolution.md
+    - name: Get
+      href: ../../api/approvalsolution-get.md
+    - name: Provision
+      href: ../../api/approvalsolution-provision.md
+    - name: List approval items
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create approval item
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get approval operation
+      href: ../../api/approvaloperation-get.md
+  - name: Approval item request
+    items:
+    - name: Approval item request
+      href: ../../resources/approvalitemrequest.md
+    - name: List
+      href: ../../api/approvalitem-list-requests.md
+    - name: Get
+      href: ../../api/approvalitemrequest-get.md
+  - name: Approval item response
+    items:
+    - name: Approval item response
+      href: ../../resources/approvalitemresponse.md
+    - name: List
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create
+      href: ../../api/approvalitem-post-responses.md
+    - name: Get
+      href: ../../api/approvalitemresponse-get.md
+  - name: Approval item view point
+    href: ../../resources/approvalitemviewpoint.md
+  - name: Approval operation
+    items:
+    - name: Approval operation
+      href: ../../resources/approvaloperation.md
+    - name: Get
+      href: ../../api/approvaloperation-get.md
 - name: Apps
   items:
   - name: Teams app
@@ -15,7 +78,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app icon
     items:
@@ -157,7 +220,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -320,7 +383,7 @@ items:
       - name: Online meeting
         href: ../../resources/onlinemeeting.md
       - name: Create
-        href: ../../api/application-post-onlineMeetings.md
+        href: ../../api/application-post-onlinemeetings.md
       - name: Get
         href: ../../api/onlinemeeting-get.md
       - name: Update
@@ -331,11 +394,11 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
-    - name: External meeting registration
+    - name: External meeting registration (deprecated)
       items:
-      - name: External meeting registration
+      - name: External meeting registration (deprecated)
         href: ../../resources/externalmeetingregistration.md
       - name: Create
         href: ../../api/externalmeetingregistration-post.md
@@ -343,9 +406,9 @@ items:
         href: ../../api/externalmeetingregistration-get.md
       - name: Delete
         href: ../../api/externalmeetingregistration-delete.md
-    - name: Meeting registration
+    - name: Meeting registration (deprecated)
       items:
-      - name: Meeting registration
+      - name: Meeting registration (deprecated)
         href: ../../resources/meetingregistration.md
       - name: Create
         href: ../../api/meetingregistration-post.md
@@ -378,7 +441,7 @@ items:
       - name: Get delta by organizer
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
-        href: ../../api/onlinemeeting-getAllTranscripts.md
+        href: ../../api/onlinemeeting-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -409,14 +472,30 @@ items:
         href: ../../resources/virtualeventregistration.md
       - name: List
         href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
+      - name: List sessions
+        href: ../../api/virtualeventregistration-list-sessions.md
     - name: Virtual event webinar registration configuration
       items:
       - name: Virtual event webinar registration configuration
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event registration question
+      items:
+      - name: Virtual event registration question
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
@@ -743,7 +822,7 @@ items:
       - name: List operations
         href: ../../api/chat-list-operations.md
       - name: Get operation on chat
-        href: ../../api/teamsasyncoperation-get.md#example-get-operation-on-chat
+        href: ../../api/teamsasyncoperation-get.md
     - name: Pinned messages
       items:
       - name: List pinned messages
@@ -773,7 +852,7 @@ items:
       - name: Delete message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -791,7 +870,7 @@ items:
       - name: Delete reply message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo deletion of a reply message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a reply message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a reply message in channel
@@ -815,7 +894,7 @@ items:
       - name: Delete message in chat
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in chat
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in chat
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in chat

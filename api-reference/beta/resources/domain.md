@@ -38,16 +38,13 @@ To associate a domain with a tenant:
 |[Get](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Update](../api/domain-update.md) | [domain](domain.md) |Update a domain.|
 |[Delete](../api/domain-delete.md) | None |Delete a domain.|
+|[Force delete](../api/domain-forcedelete.md)|None|Delete a domain by using an asynchronous operation.|
+|[Verify](../api/domain-verify.md)|[domain](domain.md)|Validate the ownership of the domain.|
+|[Promote](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
+|[Get root domain](../api/domain-list-rootdomain.md) |  Get the root domain of a subdomain. |
 |[List domain name references](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
 |[List service configuration records](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
 |[List verification DNS records](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
-|[List domain name reference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
-|[List service configuration records](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
-|[List verification DNS records](../api/domain-list-verificationdnsrecords.md) |
-|[Get root domain](../api/domain-list-rootdomain.md) |  Get the root domain of a subdomain. |
-|[Promote](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
-|[Force delete](../api/domain-forcedelete.md)|None|Delete a domain by using an asynchronous operation.|
-|[Verify](../api/domain-verify.md)|[domain](domain.md)|Validate the ownership of the domain.|
 
 ## Properties
 

@@ -2,7 +2,7 @@
 title: "Create androidVpnConfiguration"
 description: "Create a new androidVpnConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

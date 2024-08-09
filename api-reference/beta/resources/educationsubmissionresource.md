@@ -5,6 +5,7 @@ author: "dipakboyed"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Submission resource
 ---
 
 # educationSubmissionResource resource type

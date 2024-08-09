@@ -26,11 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 Users cannot update their own email authentication method.
 
 ## HTTP request
+The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
 
 Update the email authentication method for another user's account.
 <!-- {  "blockType": "ignored" } -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
 ```
 
 ## Request headers

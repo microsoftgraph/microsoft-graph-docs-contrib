@@ -3,7 +3,7 @@ title: "Add noncustodialDataSources"
 description: "Create a new non-custodial source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

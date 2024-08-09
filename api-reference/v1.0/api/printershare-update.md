@@ -49,6 +49,9 @@ Following properties can be updated:
 |displayName|String|The name of the printer share that print clients should display.|
 |allowAllUsers|Boolean|	If true, all users and groups are granted access to this printer share. This supersedes the allowlists defined by the allowedUsers and allowedGroups navigation properties.|
 
+> [!NOTE]
+> If you're updating the **printer** property, other properties can't be updated in the same request.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.

@@ -19,7 +19,7 @@ Create a new [virtualEventWebinar](../resources/virtualeventwebinar.md) object i
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -58,6 +58,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
 ## Response
@@ -69,6 +70,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,7 +83,10 @@ Content-Type: application/json
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2024-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
@@ -96,7 +101,10 @@ Content-Type: application/json
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    }
 }
 ```
 
@@ -128,7 +136,10 @@ Content-Type: application/json
     "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
     "status": "draft",
     "displayName": "The Impact of Tech on Our Lives",
-    "description": "Discusses how technology has changed the way we communicate.",
+    "description": {
+      "contentType": "text",
+      "content": "Discusses how technology has changed the way we communicate."
+    },
     "startDateTime": {
       "dateTime": "2024-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
@@ -153,6 +164,9 @@ Content-Type: application/json
         "displayName": "Kenneth Brown", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ]
+    ],
+    "settings": {
+      "isAttendeeEmailNotificationEnabled": false
+    }
 }
 ```

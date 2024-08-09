@@ -1,7 +1,6 @@
 ---
 title: "incident resource type"
 description: "An incident in Microsoft 365 Defender is a collection of correlated alerts and associated metadata that reflects the story of an attack."
-ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -42,12 +41,12 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |lastModifiedBy|String|The identity that last modified the incident.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
+|resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
-|tenantId|String|The Microsoft Entra tenant in which the alert was created.|
+|summary|String|The overview of an attack. When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.|
 |systemTags|String collection|The system tags associated with the incident.|
-|resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
-
+|tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 
 ### incidentStatus values 
 The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
@@ -81,31 +80,25 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.incident",
-  "id": "String (identifier)",
-  "incidentWebUrl": "String",
-  "tenantId": "String",
-  "redirectIncidentId": "String",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastUpdateDateTime": "String (timestamp)",
   "assignedTo": "String",
   "classification": "String",
-  "determination": "String",
-  "status": "String",
-  "severity": "String",
-  "customTags": [
-    "String"
-  ],
-  "comments": [
-    {
-      "@odata.type": "microsoft.graph.security.alertComment"
-    }
-  ],
-  "systemTags" : [
-    "String"
-  ],
+  "comments": [{"@odata.type": "microsoft.graph.security.alertComment"}],
+  "createdDateTime": "String (timestamp)",
+  "customTags": ["String"],
   "description" : "String",
-  "lastModifiedBy": "String"
+  "determination": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "incidentWebUrl": "String",
+  "lastModifiedBy": "String",
+  "lastUpdateDateTime": "String (timestamp)",
+  "redirectIncidentId": "String",
+  "resolvingComment": "String",
+  "severity": "String",
+  "status": "String",
+  "summary": "String",
+  "systemTags" : ["String"],
+  "tenantId": "String"
 }
 ```
 

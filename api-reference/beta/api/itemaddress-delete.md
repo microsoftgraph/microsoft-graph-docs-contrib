@@ -3,7 +3,7 @@ title: "Delete itemAddress"
 description: "Deletes an itemAddress object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

@@ -21,7 +21,7 @@ highlightedContent:
       url: ./overview.md
     - title: Microsoft Graph REST API
       itemType: reference
-      url: /graph/api/overview?view=graph-rest-1.0
+      url: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     - title: Build connectors for Copilot for Microsoft 365
       itemType: concept
       url: /graph/connecting-external-content-experiences#copilot-for-microsoft-365

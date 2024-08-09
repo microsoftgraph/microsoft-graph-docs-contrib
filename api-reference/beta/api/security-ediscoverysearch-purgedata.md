@@ -3,7 +3,7 @@ title: "ediscoverySearch: purgeData"
 description: "Use the purge data method to delete Teams messages in a eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

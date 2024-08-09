@@ -32,7 +32,8 @@
       "author",
       "title",
       "description",
-      "doc_type"
+      "doc_type",
+      "ms.subservice"
     ],
     "textToRemoveFromPropertyNames": [
       "(deprecated)"

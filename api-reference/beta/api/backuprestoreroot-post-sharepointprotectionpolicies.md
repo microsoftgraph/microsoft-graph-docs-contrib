@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a protection policy for a M365 service SharePoint. Policy will be created in `inactive` state. User can also provide a list of protection units under the policy.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,6 +60,7 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create"
@@ -82,6 +85,40 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtecti
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sharepointprotectionpolicy-create-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sharepointprotectionpolicy-create-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sharepointprotectionpolicy-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sharepointprotectionpolicy-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/sharepointprotectionpolicy-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointprotectionpolicy-create-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/sharepointprotectionpolicy-create-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -114,7 +151,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -126,7 +163,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
   "retentionSettings": [
     {
       //Keep the per 10 minute copies for 14 days

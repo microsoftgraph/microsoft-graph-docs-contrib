@@ -2,7 +2,7 @@
 title: "Get advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Read properties and relationships of the advancedThreatProtectionOnboardingDeviceSettingState object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

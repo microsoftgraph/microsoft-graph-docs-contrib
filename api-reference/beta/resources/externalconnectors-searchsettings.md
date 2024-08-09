@@ -2,7 +2,7 @@
 title: "searchSettings resource type"
 description: "Collects all configurable settings related to search over connector content."
 author: "emzho"
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
 ---
@@ -24,7 +24,7 @@ Collects all configurable settings related to search over connector content.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.searchSettings"

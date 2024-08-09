@@ -3,7 +3,7 @@ title: "Update ediscoveryReviewSetQuery"
 description: "Update the properties of an ediscoveryReviewSetQuery object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 # Update ediscoveryReviewSetQuery

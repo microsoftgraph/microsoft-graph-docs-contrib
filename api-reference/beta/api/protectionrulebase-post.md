@@ -86,6 +86,7 @@ The following example shows how to create a new **siteInclusionRule** associated
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create_siteinclusionrules"
@@ -99,6 +100,12 @@ Content-Type: application/json
     "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sharepointprotectionpolicy-create-siteinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -125,7 +132,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -134,7 +141,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false,
    "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
 }
@@ -147,6 +154,7 @@ The following example shows how to create a new **driveInclusionRule** associate
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_create_driveinclusionrules"
@@ -160,6 +168,12 @@ Content-Type: application/json
     "driveExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessprotectionpolicy-create-driveinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -186,7 +200,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -195,7 +209,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false,
    "driveExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
@@ -208,6 +222,7 @@ The following example shows how to create a new **mailboxInclusionRule** associa
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy-create-mailboxinclusionrules"
@@ -221,6 +236,12 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtection
    "mailboxExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangeprotectionpolicy-create-mailboxinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -247,7 +268,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/excha
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -256,7 +277,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/excha
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false,
    "mailboxExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }

@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-07-22T12:15:16.6366934Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db50",
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
@@ -271,6 +329,56 @@
       "CreatedDateTime": "2023-08-17T01:54:55.1386602Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Member",
+          "ChangedApiName": "archiveChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `archiveChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Member",
+          "ChangedApiName": "unarchiveChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `unarchiveChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the **isArchived** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/channel-archive?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-06-21T07:37:30.2398104Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
@@ -2015,6 +2123,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-05-03T22:21:52.1606075Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOrganizerId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **meetingOrganizerId** property from the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOrganizerId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **meetingOrganizerId** property from the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "1cd89089-b655-489b-b893-8254a125ad74",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-15T20:32:27.9708769Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

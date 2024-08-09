@@ -27,7 +27,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List sites across geographies][]            | GET /site/getAllSites                                      |
+| [List sites across geographies][]                 | GET /site/getAllSites                                       |
+| [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -41,7 +42,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
-| [List operations in a site](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
+| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
@@ -51,9 +53,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/baseSitePage-list.md
+[List pages]: ../api/basesitepage-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
+[List subsites for a site]: ../api/site-list-subsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
@@ -104,8 +107,10 @@ The `root` identifier always references the root site for a given target, as fol
 | :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place on this site.                                                                          |
 | columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
+|contentModels    | [contentModel](../resources/contentmodel.md) collection| The collection of content models applied to this site.|
 | contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
+|documentProcessingJobs |[documentProcessingJob](../resources/documentprocessingjob.md) collection  | The document processing jobs running on this site. |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
 | externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
 | items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |

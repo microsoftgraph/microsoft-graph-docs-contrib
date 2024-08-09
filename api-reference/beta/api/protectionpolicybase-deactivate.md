@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Deactivate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -56,6 +58,7 @@ Deactivating the protection policy when it is in active state.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_deactivate_example_1"
@@ -65,6 +68,40 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-deactivate-example-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/protectionpolicybase-deactivate-example-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/protectionpolicybase-deactivate-example-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/protectionpolicybase-deactivate-example-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionpolicybase-deactivate-example-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-deactivate-example-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-deactivate-example-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/protectionpolicybase-deactivate-example-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -98,7 +135,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
          "displayName":"Ryan"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -110,7 +147,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
          "displayName":"Rian"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "retentionSettings" : [
       {
           "interval": "R/PT10M",
@@ -131,6 +168,7 @@ Deactivating the protection policy when it is in updating state.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionpolicybase_deactivate_example_2"
@@ -140,6 +178,40 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-deactivate-example-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/protectionpolicybase-deactivate-example-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/protectionpolicybase-deactivate-example-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/protectionpolicybase-deactivate-example-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionpolicybase-deactivate-example-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-deactivate-example-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-deactivate-example-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/protectionpolicybase-deactivate-example-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

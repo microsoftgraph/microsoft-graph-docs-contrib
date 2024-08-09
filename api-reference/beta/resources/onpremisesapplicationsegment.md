@@ -25,11 +25,13 @@ Represents a [onPremisesApplicationSegment](onPremisesApplicationSegment.md) obj
 |externalUrl|String |The published external URL for the application segment; for example, https://intranet.contoso.com./|
 |internalUrl|String |The internal URL of the application segment; for example, https://intranet/.|
 
+## Relationships
 
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onPremisesApplicationSegment"

@@ -19,9 +19,13 @@ It's a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value 
 |managerLevel|Int32|The hierarchical level of the manager with respect to the requestor. For example, the direct manager of a requestor would have a managerLevel of 1, while the manager of the requestor's manager would have a managerLevel of 2. Default value for managerLevel is 1. Possible values for this property range from 1 to 2. |
 
 ## Relationships
+
 None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestorManager",

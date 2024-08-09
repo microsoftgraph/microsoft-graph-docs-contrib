@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -59,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_update"
@@ -108,6 +111,35 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-update-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangerestoresession-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangerestoresession-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -130,28 +162,28 @@ Content-Type: application/json
       "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario

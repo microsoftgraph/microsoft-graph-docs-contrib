@@ -51,6 +51,10 @@ You must include the **@odata.type** property with a value of the specific user 
 |displayName|String|The display name for the events policy. |
 |description|String|The description of the events policy.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that is used to decide whether the events policy is invoked. |
+|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
+|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke for the onAttributeCollection event. You can only update this property if it was configured during user flow creation. If it wasn't, call the [Add attributes to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md) API instead.|
+|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
 
 ## Response
 
@@ -343,7 +347,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
