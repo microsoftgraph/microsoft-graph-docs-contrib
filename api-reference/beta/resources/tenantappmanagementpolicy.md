@@ -21,7 +21,7 @@ Inherits from [policyBase](policybase.md).
 
 | Method                                                | Return type                                                             | Description                                                                         |
 | :---------------------------------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [Get](../api/tenantappmanagementpolicy-get.md)       | tenantAppManagementPolicy | Read the properties of the default app management policy set for applications and service principals. |
+| [Get](../api/tenantappmanagementpolicy-get.md)       | [tenantAppManagementPolicy](tenantappmanagementpolicy.md) | Read the properties of the default app management policy set for applications and service principals. |
 | [Update](../api/tenantappmanagementpolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
 
 ## Properties
@@ -33,7 +33,7 @@ Inherits from [policyBase](policybase.md).
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Denotes whether the policy is enabled. Default value is `false`.                                    |
 | applicationRestrictions      | [appManagementApplicationConfiguration](appmanagementapplicationconfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
-| servicePrincipalRestrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
+| servicePrincipalRestrictions | [appManagementServicePrincipalConfiguration](appmanagementserviceprincipalconfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
 ## Relationships
 
