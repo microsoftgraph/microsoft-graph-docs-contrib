@@ -31,10 +31,13 @@ Inherits from [educationResource](educationresource.md).
 | teamsEmbeddedContentUrl | String                        | URL for the app resource that will be opened by Teams.                                         |
 | webUrl                  | String                        | URL for the app resource that can be opened in the browser.                                    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
