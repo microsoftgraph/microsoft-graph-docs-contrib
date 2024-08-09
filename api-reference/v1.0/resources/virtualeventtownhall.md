@@ -38,6 +38,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | id | String | Unique identifier of the town hall. Inherited from [entity](../resources/entity.md). Read-only. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The attendees invited to the town hall. The supported identities are: [communicationsUserIdentity](../resources/communicationsuseridentity.md) and [communicationsGuestIdentity](../resources/communicationsguestidentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
 | status | virtualEventStatus | Status of the town hall. Possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
@@ -72,6 +73,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
   "isInviteOnly": "Boolean",
+  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"
 }
