@@ -20,10 +20,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "cloudlicensing-usageright-list-permissions"
+  "name": "cloudlicensing-userusageright-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-userusageright-list-permissions.md)]
 
 ## HTTP request
 
