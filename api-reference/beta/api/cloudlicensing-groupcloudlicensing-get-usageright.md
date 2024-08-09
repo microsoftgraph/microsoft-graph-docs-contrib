@@ -60,13 +60,42 @@ If successful, this method returns a `200 OK` response code and a [usageRight](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_usageright"
+  "name": "cloudlicensing-groupusageright-get-example"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/usageRight
+GET https://graph.microsoft.com/beta/groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-usageright-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-group-usageright-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-usageright-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-usageright-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-usageright-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-group-usageright-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-group-usageright-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -83,14 +112,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
-    "id": "1e373a1d-1f05-28cf-bfc0-ee0ecfd3db15",
-    "services": [
-      {
-        "@odata.type": "microsoft.graph.cloudLicensing.service"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
+  "id": "1e373a1d-1f05-28cf-bfc0-ee0ecfd3db15",
+  "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuPartNumber": "Microsoft_365_Copilot",
+  "services": [
+    {
+      "@odata.type": "microsoft.graph.cloudLicensing.service",
+      "assignableTo": "users,groups",
+      "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
+      "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    }
+  ]
 }
 ```

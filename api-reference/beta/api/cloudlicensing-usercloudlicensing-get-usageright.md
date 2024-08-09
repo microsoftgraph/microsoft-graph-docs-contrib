@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [usageRight](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_usageright"
+  "name": "cloudlicensing-userusageright-get-example"
 }
 -->
 ``` http
