@@ -142,8 +142,6 @@ Content-Type: application/json
 }
 ```
 
-
-
 ### Example 2: Get all usage rights for a user with a specific service plan
 
 #### Request
