@@ -19,6 +19,10 @@ Represents a URL that opens a OneNote page or notebook.
 |:---------------|:--------|:---------------------|
 | href           | String  | The URL of the link. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
