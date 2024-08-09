@@ -1,5 +1,5 @@
 ---
-title: "sitePageTemplate resource type"
+title: "pageTemplate resource type"
 description: "Represents a page template in the templates folder."
 author: Yadong1106
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# sitePageTemplate resource type
+# pageTemplate resource type
 
 Namespace: microsoft.graph
 
@@ -23,11 +23,19 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 |Method|Return type|Description|
 |:-----|:----------|:----------|
+<<<<<<< Updated upstream:api-reference/beta/resources/sitepagetemplate.md
 |[List](../api/sitepagetemplate-list.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a list of the [pageTemplate](../resources/sitepagetemplate.md) objects and their properties.|
 |[Create](../api/sitepagetemplate-create.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Create a new [pageTemplate](../resources/sitepagetemplate.md) object.|
 |[Get](../api/sitepagetemplate-get.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a [sitePageTemplate](../resources/sitepagetemplate.md) object and properties.|
 |[Update](../api/sitepagetemplate-update.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Update the properties of a [pageTemplate](../resources/sitepagetemplate.md) object.|
 |[Delete](../api/sitepagetemplate-delete.md)|None|Delete a [sitePageTemplate](../resources/sitepagetemplate.md) object.|
+=======
+|[List site page templates](../api/pagetemplate-list.md)|[pageTemplate](../resources/pagetemplate.md)|Get a list of the [pageTemplate](../resources/pagetemplate.md) objects and their properties.|
+|[Create site page template](../api/pagetemplate-create.md)|[pageTemplate](../resources/pagetemplate.md)|Create a new [pageTemplate](../resources/pagetemplate.md) object.|
+|[Get site page template](../api/pagetemplate-get.md)|[pageTemplate](../resources/pagetemplate.md)|Get a [pageTemplate](../resources/pagetemplate.md) object and properties.|
+|[Update site page template](../api/pagetemplate-update.md)|[pageTemplate](../resources/pagetemplate.md)|Update the properties of a [pageTemplate](../resources/pagetemplate.md) object.|
+|[Delete site page template](../api/pagetemplate-delete.md)|None|Delete a [pageTemplate](../resources/pagetemplate.md) object.|
+>>>>>>> Stashed changes:api-reference/beta/resources/pagetemplate.md
 
 ## Properties
 
@@ -66,7 +74,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.sitePageTemplate",
+  "@odata.type": "microsoft.graph.pageTemplate",
   "baseType": "microsoft.graph.baseSitePage",
   "openType": true
 }
@@ -74,7 +82,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.sitePageTemplate",
+  "@odata.type": "#microsoft.graph.pageTemplate",
   "id": "String (identifier)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"

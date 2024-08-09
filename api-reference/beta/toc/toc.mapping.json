@@ -2563,7 +2563,7 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "sitePageTemplate",
+            "pageTemplate",
             "webPart"
           ],
           "childNodes": [

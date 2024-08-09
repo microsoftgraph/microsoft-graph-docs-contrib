@@ -2,25 +2,25 @@
 author: Yadong1106
 description: "Returns the metadata for a page template in the templates folder in a site."
 ms.date: 03/15/2018
-title: Get sitePageTemplate
+title: Get PageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Get SitePageTemplate
+# Get PageTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [sitePageTemplate](../resources/sitepagetemplate.md) in the templates folder in a [site](../resources/site.md).
+Returns the metadata for a [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "sitePageTemplate-get" } -->
+<!-- { "blockType": "permissions", "name": "pageTemplate-get" } -->
 
 
 ## HTTP request
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate/{page-template-id}
+GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{page-template-id}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a [sitePageTemplate](../resources/sitepagetemplate.md) object in the response body.
+If successful, this method returns a `200` and a [pageTemplate](../resources/pagetemplate.md) object in the response body.
 
 
 ## Examples
@@ -62,24 +62,24 @@ If successful, this method returns a `200` and a [sitePageTemplate](../resources
 
 The following example shows a request.
 
-<!-- { "blockType": "request", "name": "get-sitePageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.sitePageTemplate/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
+GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
 ```
 
 #### Response
 
 The following example shows the response.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePageTemplate", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.sitePageTemplate",
+  "@odata.type": "microsoft.graph.pageTemplate",
   "description": "Here's the page description",
   "id": "65e59907-59d5-44ff-a038-7c0bf3034567",
   "name": "Home.aspx",
@@ -114,11 +114,11 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#sitePageTemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Get a page template in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "SitePageTemplates/Get",
+  "tocPath": "pageTemplates/Get",
   "suppressions": [
   ]
 }
