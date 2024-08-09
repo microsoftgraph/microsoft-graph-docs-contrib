@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# List usageRight objects
+# List usageRight objects for a user
 
 Namespace: microsoft.graph.cloudLicensing
 
