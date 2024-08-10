@@ -1,6 +1,6 @@
 ---
 title: "plannerChecklistItems resource type"
-description: "Represents the collection of checklist items on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the checklistItem object."
+description: "Represents the collection of checklist items on a task. This complex type is an open type that's part of the task details object. The value in the property-value pair is the checklistItem object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the collection of checklist items on a task. It's an open type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
+Represents the collection of checklist items on a task. This complex type is an open type that's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
 
 
 ## Properties
