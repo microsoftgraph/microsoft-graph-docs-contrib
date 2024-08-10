@@ -2,7 +2,7 @@
 title: "editionUpgradeConfiguration resource type"
 description: "Windows 10 Edition Upgrade configuration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

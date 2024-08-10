@@ -24,9 +24,13 @@ Specifies additional application IDs that are allowed to manage the externalConn
 > [!NOTE]
 > The `authorizedAppIds` property was previously named `authorizedApps`.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

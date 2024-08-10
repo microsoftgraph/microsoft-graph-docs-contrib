@@ -2,7 +2,7 @@
 title: "setScheduledActions action"
 description: "Intune Deviceconfigv2 Devicemanagementcompliancepolicy Setscheduledactions Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

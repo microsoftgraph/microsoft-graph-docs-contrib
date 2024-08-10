@@ -2,7 +2,7 @@
 title: "savedUIStateGenerationOptions enum type"
 description: "Intune Shared Saveduistategenerationoptions Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

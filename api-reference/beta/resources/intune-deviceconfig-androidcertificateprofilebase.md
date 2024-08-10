@@ -2,7 +2,7 @@
 title: "androidCertificateProfileBase resource type"
 description: "Android certificate profile base."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

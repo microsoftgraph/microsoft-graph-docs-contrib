@@ -1,6 +1,6 @@
 ---
 title: "Update authentication method states"
-description: "Update the properties of a user's authentication states."
+description: "Update the properties of a user's authentication states, such as their sign-in preferences (system-preferred MFA) and per-user MFA state."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -15,28 +15,52 @@ Namespace: microsoft.graph
 
 Update the properties of a user's authentication method states. Use this API to update the following information:
 
-- A user's [signInPreferences](../resources/signInPreferences.md)
-- A user's [strongAuthenticationRequirements](../resources/strongauthenticationrequirements.md)
+- A user's [signInPreferences (system-preferred MFA)](../resources/signInPreferences.md)
+- A user's [strongAuthenticationRequirements (per-user MFA)](../resources/strongauthenticationrequirements.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to update system-preferred MFA
+
 <!-- { "blockType": "permissions", "name": "authentication_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-update-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
+### Permissions to update per-user MFA state
+
+#### Permissions acting on self
+
+<!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-update-2-permissions.md)]
+
+#### Permissions acting on others
+
+<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-update-3-permissions.md)]
+
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
-To update the sign-in preferences for a user:
+To update the sign-in preferences (system-preferred MFA) for a user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /users/{id | userPrincipalName}/authentication/signInPreferences
+```
+
+To update the per-user multifactor authentication state for the signed-in user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /me/authentication/requirements
 ```
 
 To update the per-user multifactor authentication state for a user:
@@ -71,7 +95,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update a user's default MFA method
+### Example 1: Update a user's system-preferred MFA method
 
 #### Request
 The following example shows a request.
@@ -140,6 +164,7 @@ HTTP/1.1 204 No Content
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authentication_strongAuthenticationRequirements"
@@ -153,6 +178,40 @@ Content-Type: application/json
   "perUserMfaState": "disabled"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authentication-strongauthenticationrequirements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

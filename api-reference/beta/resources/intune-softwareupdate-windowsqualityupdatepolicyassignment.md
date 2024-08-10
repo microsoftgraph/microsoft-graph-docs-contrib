@@ -2,7 +2,7 @@
 title: "windowsQualityUpdatePolicyAssignment resource type"
 description: "This entity contains the properties used to assign a Windows quality update policy to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -96,9 +96,9 @@ items:
     href: ../../resources/tasks-overview.md
   - name: Outlook tasks
     items:
-    - name: Outlook task
+    - name: Outlook task (deprecated)
       items:
-      - name: Outlook task
+      - name: Outlook task (deprecated)
         href: ../../resources/outlooktask.md
       - name: Get
         href: ../../api/outlooktask-get.md
@@ -124,9 +124,9 @@ items:
           href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: Get multi-value property
           href: ../../api/multivaluelegacyextendedproperty-get.md
-    - name: Outlook task folder
+    - name: Outlook task folder (deprecated)
       items:
-      - name: Outlook task folder
+      - name: Outlook task folder (deprecated)
         href: ../../resources/outlooktaskfolder.md
       - name: Get
         href: ../../api/outlooktaskfolder-get.md
@@ -148,9 +148,9 @@ items:
           href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: Get multi-value property
           href: ../../api/multivaluelegacyextendedproperty-get.md
-    - name: Outlook task group
+    - name: Outlook task group (deprecated)
       items:
-      - name: Outlook task group
+      - name: Outlook task group (deprecated)
         href: ../../resources/outlooktaskgroup.md
       - name: Get
         href: ../../api/outlooktaskgroup-get.md

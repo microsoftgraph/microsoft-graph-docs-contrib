@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add or link an application to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
+Add or link an application to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow. The app must have an associated service principal in the tenant.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -42,7 +42,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/condition
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the **appId** of the application to associate with the user flow.
+In the request body, provide a JSON representation of the **appId** of the service principal to associate with the user flow.
 
 ## Response
 

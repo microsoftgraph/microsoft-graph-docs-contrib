@@ -2,7 +2,7 @@
 title: "vulnerableManagedDevice resource type"
 description: "This entity represents a device associated with a task."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

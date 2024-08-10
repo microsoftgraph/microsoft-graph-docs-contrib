@@ -2,7 +2,7 @@
 title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all domain join connector entities"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

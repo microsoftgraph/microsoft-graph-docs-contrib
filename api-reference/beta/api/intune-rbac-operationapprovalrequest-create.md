@@ -2,7 +2,7 @@
 title: "Create operationApprovalRequest"
 description: "Create a new operationApprovalRequest object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

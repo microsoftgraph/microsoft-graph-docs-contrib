@@ -2,7 +2,7 @@
 title: "managedAppDiagnosticStatus resource type"
 description: "Represents diagnostics status."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

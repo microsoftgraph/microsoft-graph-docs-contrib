@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.app_management_policy import AppManagementPolicy
-from msgraph_beta.generated.models.app_management_configuration import AppManagementConfiguration
+from msgraph_beta.generated.models.custom_app_management_configuration import CustomAppManagementConfiguration
 from msgraph_beta.generated.models.password_credential_configuration import PasswordCredentialConfiguration
 from msgraph_beta.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
 from msgraph_beta.generated.models.key_credential_configuration import KeyCredentialConfiguration
@@ -18,7 +18,7 @@ request_body = AppManagementPolicy(
 	display_name = "Credential management policy",
 	description = "Cred policy sample",
 	is_enabled = True,
-	restrictions = AppManagementConfiguration(
+	restrictions = CustomAppManagementConfiguration(
 		password_credentials = [
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordAddition,

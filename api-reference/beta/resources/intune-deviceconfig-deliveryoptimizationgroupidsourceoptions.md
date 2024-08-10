@@ -2,7 +2,7 @@
 title: "deliveryOptimizationGroupIdSourceOptions resource type"
 description: "Group id options type"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

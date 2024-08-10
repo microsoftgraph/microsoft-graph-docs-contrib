@@ -2,7 +2,7 @@
 title: "Delete embeddedSIMActivationCodePoolAssignment"
 description: "Deletes a embeddedSIMActivationCodePoolAssignment."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

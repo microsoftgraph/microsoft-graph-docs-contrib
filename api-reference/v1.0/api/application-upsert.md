@@ -46,7 +46,9 @@ In the request body, supply a JSON representation of the [application](../resour
 
 ## Response
 
-If successful, if an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body.
+If an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body. The application is assigned the uniqueName value.
+
+If an application object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
 
 If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
 
