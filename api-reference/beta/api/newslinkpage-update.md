@@ -1,12 +1,13 @@
 ---
-title: "Update NewsLink page in a SharePoint site"
+title: "Update newsLinkPage"
 description: "Update the properties of a newsLinkPage object."
 author: "shgangan"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "apiPageType"
 ---
-# Update a newsLinkPage
+
+# Update newsLinkPage
 
 Namespace: microsoft.graph
 
@@ -51,9 +52,9 @@ PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md). Has a max length limit of 250 characters.|
-|newsWebUrl|String|The URL of the news article referenced by the [newsLinkPage](../resources/newslinkpage.md). Can be an external link. Has a max length limit of 110 characters.|
-|title|String|Title of the [newsLinkPage](../resources/newslinkpage.md). Inherited from [baseSitePage](../resources/basesitepage.md).|
+|description|String|The descriptive text for the item. The maximum length limit is 250 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. The maximum length limit is 110 characters.|
+|title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ## Response
 
