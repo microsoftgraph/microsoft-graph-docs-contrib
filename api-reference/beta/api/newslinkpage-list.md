@@ -1,5 +1,5 @@
 ---
-title: List newsLinkPage objects
+title: List newsLinkPage
 description: Get a list of the newsLinkPage objects and their properties.
 author: shgangan
 ms.localizationpriority: medium
@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Prefer | include-unknown-enum-members |
+|Prefer | include-unknown-enum-members. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
 
 ## Request body
 
@@ -66,9 +66,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/microsoft.graph.newsLinkPage
+GET https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/microsoft.graph.newsLinkPage
 ```
-
 
 ### Response
 
@@ -85,75 +84,76 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/microsoft.graph.newsLinkPage",
-    "value": [
-        {
-            "@odata.etag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
-            "createdDateTime": "2024-06-05T20:39:36Z",
-            "eTag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
-            "id": "3cbb2560-f640-453f-a37a-fa1377368efd",
-            "lastModifiedDateTime": "2024-06-05T20:39:42Z",
-            "name": "Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
-            "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
-            "title": "Microsoft and Meta expand their AI partnership with Llama 2 on Azure and Windows",
-            "pageLayout": "newsLink",
-            "bannerImageWebUrl": "https://contoso.sharepoint.com/SiteAssets/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows(5)/BannerImage.webp",
-            "newsWebUrl": "https://blogs.microsoft.com/blog/2023/07/18/microsoft-and-meta-expand-their-ai-partnership-with-llama-2-on-azure-and-windows/",
-            "createdBy": {
-                "user": {
-                    "displayName": "SharePoint App"
-                }
-            },
-            "lastModifiedBy": {
-                "user": {
-                    "displayName": "SharePoint App"
-                }
-            },
-            "parentReference": {
-                "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
-            },
-            "publishingState": {
-                "level": "published",
-                "versionId": "1.0"
-            }
-        },
-        {
-            "@odata.etag": "\"{406766CD-52BD-4221-9310-2954FFCA7A73},2\"",
-            "createdDateTime": "2024-06-05T20:39:55Z",
-            "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
-            "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
-            "id": "57aff05d-6c80-4d36-b051-acc211400306",
-            "lastModifiedDateTime": "2024-06-05T20:39:57Z",
-            "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-            "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-            "title": "Microsoft Build brings AI tools to the forefront for developers",
-            "pageLayout": "newsLink",
-            "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
-            "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
-            "createdBy": {
-                "user": {
-                    "displayName": "SharePoint App"
-                }
-            },
-            "lastModifiedBy": {
-                "user": {
-                    "displayName": "SharePoint App"
-                }
-            },
-            "parentReference": {
-                "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
-            },
-            "publishingState": {
-                "level": "checkout",
-                "versionId": "0.1",
-                "checkedOutBy": {
-                    "user": {
-                        "displayName": "John Doe",
-                        "email": "jdoe@contoso.com"
-                    }
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/microsoft.graph.newsLinkPage",
+  "value": [
+    {
+      "@odata.etag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
+      "createdDateTime": "2024-06-05T20:39:36Z",
+      "eTag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
+      "id": "3cbb2560-f640-453f-a37a-fa1377368efd",
+      "lastModifiedDateTime": "2024-06-05T20:39:42Z",
+      "name": "Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
+      "title": "Microsoft and Meta expand their AI partnership with Llama 2 on Azure and Windows",
+      "pageLayout": "newsLink",
+      "bannerImageWebUrl": "https://contoso.sharepoint.com/SiteAssets/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows(5)/BannerImage.webp",
+      "newsWebUrl": "https://blogs.microsoft.com/blog/2023/07/18/microsoft-and-meta-expand-their-ai-partnership-with-llama-2-on-azure-and-windows/",
+      "createdBy": {
+        "user": {
+          "displayName": "SharePoint App"
         }
-    ]
+      },
+      "lastModifiedBy": {
+        "user": {
+          "displayName": "SharePoint App"
+        }
+      },
+      "parentReference": {
+        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+      },
+      "publishingState": {
+        "level": "published",
+        "versionId": "1.0"
+      }
+    },
+    {
+      "@odata.etag": "\"{406766CD-52BD-4221-9310-2954FFCA7A73},2\"",
+      "createdDateTime": "2024-06-05T20:39:55Z",
+      "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+      "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
+      "id": "57aff05d-6c80-4d36-b051-acc211400306",
+      "lastModifiedDateTime": "2024-06-05T20:39:57Z",
+      "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+      "title": "Microsoft Build brings AI tools to the forefront for developers",
+      "pageLayout": "newsLink",
+      "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
+      "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
+      "createdBy": {
+        "user": {
+          "displayName": "SharePoint App"
+        }
+      },
+      "lastModifiedBy": {
+        "user": {
+          "displayName": "SharePoint App"
+        }
+      },
+      "parentReference": {
+        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+      },
+      "publishingState": {
+        "level": "checkout",
+        "versionId": "0.1",
+        "checkedOutBy": {
+          "user": {
+            "displayName": "John Doe",
+            "email": "jdoe@contoso.com"
+          }
+        }
+      }
+    }
+  ]
 }
 ```
+
