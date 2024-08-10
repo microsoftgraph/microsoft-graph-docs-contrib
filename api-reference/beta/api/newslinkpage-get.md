@@ -68,7 +68,7 @@ The following example shows a request.
 -->
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.newsLinkPage
+GET https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.newsLinkPage
 ```
 
 ### Response
