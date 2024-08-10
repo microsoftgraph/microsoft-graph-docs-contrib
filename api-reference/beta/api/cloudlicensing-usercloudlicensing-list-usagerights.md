@@ -132,7 +132,7 @@ Content-Type: application/json
       "services": [
         {
           "@odata.type": "microsoft.graph.cloudLicensing.service",
-          "assignableTo": "users,groups",
+          "assignableTo": "user,group",
           "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
           "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
         }
@@ -210,7 +210,7 @@ Content-Type: application/json
       "services": [
         {
           "@odata.type": "microsoft.graph.cloudLicensing.service",
-          "assignableTo": "users",
+          "assignableTo": "user",
           "planId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
           "planName": "EXCHANGE_S_FOUNDATION"
         }
