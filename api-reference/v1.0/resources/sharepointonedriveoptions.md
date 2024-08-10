@@ -19,6 +19,10 @@ Provides the search content options when a search is performed using application
 |:-------------|:------------|:------------|
 |includeContent|searchContent| The type of search content. The possible values are: `sharedContent`, `privateContent`, `unknownFutureValue`. Read-only. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

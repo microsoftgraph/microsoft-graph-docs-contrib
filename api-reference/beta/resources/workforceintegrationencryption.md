@@ -22,9 +22,13 @@ An encryption entity defining the protocol and secret for a [workforceintegratio
 |protocol|String| Possible values are: `sharedSecret`, `unknownFutureValue`.|
 |secret|String|Encryption shared secret.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-HEre's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
