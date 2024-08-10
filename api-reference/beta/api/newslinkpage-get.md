@@ -1,6 +1,6 @@
 ---
 title: "Get newsLinkPage"
-description: "Retrieve the the metadata of a newsLinkPage in the site pages list in a site."
+description: "Get the metadata of a newsLinkPage in the site pages list of a site."
 author: "shgangan"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
@@ -13,11 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Retrieve the the metadata of a [newsLinkPage](../resources/newslinkpage.md) in the site pages [list][] of a [site][].
-
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+Get the metadata of a [newsLinkPage](../resources/newslinkpage.md) in the site pages [list](../resources/list.md) of a [site](../resources/site.md).
 
 ## Permissions
 
@@ -61,6 +57,8 @@ If successful, this method returns a `200 OK` response code and a [newsLinkPage]
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 <!--{
   "blockType": "request",
