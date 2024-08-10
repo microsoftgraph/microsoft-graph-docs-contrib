@@ -1,6 +1,6 @@
 ---
-title: "Publish NewsLinkPage"
-description: "Publish the latest version of a newsLinkPage resource, which makes the version of the newLinkPage available to all users."
+title: "Publish newsLinkPage"
+description: "Publish the latest version of a newsLinkPage resource that makes the version available to all users."
 author: shgangan
 ms.localizationpriority: medium
 ms.subservice: sharepoint
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish the latest version of a [newsLinkPage](../resources/newslinkpage.md) resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published.
-
-> If a page approval flow has been activated in the page library, the page is not published until the approval flow is completed.
+Publish the latest version of a [newsLinkPage](../resources/newslinkpage.md) resource that makes the version available to all users. If the page is checked out, check it in first and then publish it. If the page is checked out to the caller of this API, it is automatically checked in and then published. If content approval is activated in the page library, the page isn't published until the approval flow is completed.
 
 ## Permissions
 
@@ -50,13 +48,14 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "newslinkpagethis.publish"
@@ -65,7 +64,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/sites/{siteId}/pages/{pageId}/microsoft.graph.newsLinkPage/publish
 ```
-
 
 ### Response
 
