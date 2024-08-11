@@ -21,6 +21,10 @@ an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property 
 |:---------------|:--------|:----------|
 |maxPoints|Single| Max points possible for this assignment.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
