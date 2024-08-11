@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of devices accessing discovered cloud apps. 
+Get a list of [devices](../resources/security-discoveredcloudappdevice.md) accessing discovered cloud app. 
 
 ## Permissions
 
@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/devices
 ```
 
 ## Optional query parameters
@@ -64,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails/{appId}/devices
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/devices
 ```
 
 

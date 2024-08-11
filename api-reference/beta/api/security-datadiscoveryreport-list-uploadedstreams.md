@@ -1,6 +1,6 @@
 ---
 title: "List cloudAppDiscoveryReport"
-description: "Get a list of the discovered cloud apps."
+description: "Get a list of the cloud apps discovery reports."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get a list of the discovered cloud apps.
+Get a list of the [cloud apps discovery reports](../resources/security-cloudappdiscoveryreport.md).
 
 ## Permissions
 
@@ -33,10 +33,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,23 +82,25 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.cloudAppDiscoveryReport",
       "id": "e05b6a3f-629f-c591-6ce5-2bdc3d962faf",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastDataReceivedDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "receiverProtocol": "String",
+      "displayName": "Checkpoint report",
+      "createdDateTime": "2024-06-13T13:03:40.887Z",
+      "lastDataReceivedDateTime": null,
+      "lastModifiedDateTime": "2024-06-13T13:03:40.887Z",
+      "receiverProtocol": "ftp",
       "supportedEntityTypes": [
-        "String"
+        "ipAddress", 
+        "userName"
       ],
       "supportedTrafficTypes": [
-        "String"
+        "uploadedBytes",
+        "downloadedBytes"
       ],
-      "anonymizeMachineData": "Boolean",
-      "anonymizeUserData": "Boolean",
-      "logDataProvider": "String",
+      "anonymizeMachineData": false,
+      "anonymizeUserData": true,
+      "logDataProvider": "checkpoint",
       "description": "String",
       "logFileCount": "Integer",
-      "isSnapshotReport": "Boolean"
+      "isSnapshotReport": false
     }
   ]
 }

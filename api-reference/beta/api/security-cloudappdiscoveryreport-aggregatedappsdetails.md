@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails(period=String (duration))
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')
 ```
 
 
