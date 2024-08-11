@@ -97,12 +97,12 @@ Content-Type: application/json
       "tags": [
         "Sanctioned"
       ],
-      "riskScore": "8",
-      "uploadNetworkTrafficInBytes": "1024",
-      "downloadNetworkTrafficInBytes": "2048",
-      "transactionCount": "20",
-      "ipAddressCount": "5",
-      "userCount": "3",
+      "riskScore": 8,
+      "uploadNetworkTrafficInBytes": 1024,
+      "downloadNetworkTrafficInBytes": 2048,
+      "transactionCount": 20,
+      "ipAddressCount": 5,
+      "userCount": 3,
       "lastSeenDateTime": "2024-06-13T00:00:00Z",
       "domains": [
         "example.com"
