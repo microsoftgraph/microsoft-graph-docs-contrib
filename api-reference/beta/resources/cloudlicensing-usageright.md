@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
 
-# usageRight resource type
+# cloud licensing usageRight resource type
 
 Namespace: microsoft.graph.cloudLicensing
 

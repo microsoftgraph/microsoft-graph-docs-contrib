@@ -12,7 +12,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [usageRight](../resources/cloudlicensing-usageright.md) objects for enterprise users. This API returns details about licenses that are directly assigned and those transitively assigned through memberships in licensed groups.
+Get a list of [usageRight](../resources/cloudlicensing-usageright.md) objects for enterprise users. This API returns details about licenses that are directly assigned and those licenses transitively assigned through memberships in licensed groups.
 
 ## Permissions
 
