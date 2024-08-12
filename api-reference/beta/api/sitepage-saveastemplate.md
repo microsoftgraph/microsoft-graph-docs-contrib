@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Save a [sitePage](../resources/sitepage.md) as a [sitePageTemplate](../resources/sitepagetemplate.md) in a [site](../resources/site.md).
+Save a [sitePage](../resources/sitepage.md) as a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ In the request body, supply a JSON representation of the [saveAsTemplate](../res
 
 ## Response
 
-If successful, this method returns a `201` and the created [sitePageTemplate](../resources/sitepagetemplate.md) object.
+If successful, this method returns a `201` and the created [pageTemplate](../api/pagetemplate.md) object.
 
 ## Example
 
@@ -66,16 +66,16 @@ Content-Type: application/json
 
 The following example shows the response.
 
-If successful, this method returns a [sitePageTemplate](../resources/sitepagetemplate.md) in the response body for the created page template.
+If successful, this method returns a [pageTemplate](../resources/pagetemplate.md) in the response body for the created page template.
  
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePageTemplate", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
  
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.type": "microsoft.graph.sitePageTemplate",
+    "@odata.type": "microsoft.graph.pageTemplate",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e726371",
     "name": "SampleTemplate.aspx",
     "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Sample.aspx",
@@ -121,11 +121,11 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#sitePageTemplate.annotation",
+  "type": "#PageTemplate.annotation",
   "description": "Create a page template in the templates folder in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "SitePageTemplates/Create",
+  "tocPath": "PageTemplates/Create",
   "suppressions": []
 }
 -->

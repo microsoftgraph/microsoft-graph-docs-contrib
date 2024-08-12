@@ -14,7 +14,7 @@ Namespace: microsoft.graph
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Create a new [sitePage](../resources/sitepage.md) from a [sitePageTemplate](../resources/sitepagetemplate.md) in a [site](../resources/site.md).
+Create a new [sitePage](../resources/sitepage.md) from a [pageTemplate](../resources/pagetemplate.md) in a [site](../resources/site.md).
  
 ## Permissions
  
@@ -38,7 +38,7 @@ POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
 
 ## Request body
 
-In the request body, supply a JSON representation of the [crateFromPageRequest](../resources/createfromtemplate.md) to use in the request payload.
+In the request body, supply a JSON representation of the [crateFromPageRequest](../api/createfromtemplate.md) to use in the request payload.
 
 ## Response
 

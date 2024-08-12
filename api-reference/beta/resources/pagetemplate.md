@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a page template in the templates folder.
 
-In addition to other properties, a **sitePageTemplate** resource contains the title, layout, and a collection of [webPart](../resources/webpart.md) objects.
+In addition to other properties, a **pageTemplate** resource contains the title, layout, and a collection of [webPart](../resources/webpart.md) objects.
 
 Inherits from [baseSitePage](../resources/basesitepage.md).
 
@@ -23,19 +23,11 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 |Method|Return type|Description|
 |:-----|:----------|:----------|
-<<<<<<< Updated upstream:api-reference/beta/resources/sitepagetemplate.md
-|[List](../api/sitepagetemplate-list.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a list of the [pageTemplate](../resources/sitepagetemplate.md) objects and their properties.|
-|[Create](../api/sitepagetemplate-create.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Create a new [pageTemplate](../resources/sitepagetemplate.md) object.|
-|[Get](../api/sitepagetemplate-get.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Get a [sitePageTemplate](../resources/sitepagetemplate.md) object and properties.|
-|[Update](../api/sitepagetemplate-update.md)|[sitePageTemplate](../resources/sitepagetemplate.md)|Update the properties of a [pageTemplate](../resources/sitepagetemplate.md) object.|
-|[Delete](../api/sitepagetemplate-delete.md)|None|Delete a [sitePageTemplate](../resources/sitepagetemplate.md) object.|
-=======
 |[List site page templates](../api/pagetemplate-list.md)|[pageTemplate](../resources/pagetemplate.md)|Get a list of the [pageTemplate](../resources/pagetemplate.md) objects and their properties.|
 |[Create site page template](../api/pagetemplate-create.md)|[pageTemplate](../resources/pagetemplate.md)|Create a new [pageTemplate](../resources/pagetemplate.md) object.|
 |[Get site page template](../api/pagetemplate-get.md)|[pageTemplate](../resources/pagetemplate.md)|Get a [pageTemplate](../resources/pagetemplate.md) object and properties.|
 |[Update site page template](../api/pagetemplate-update.md)|[pageTemplate](../resources/pagetemplate.md)|Update the properties of a [pageTemplate](../resources/pagetemplate.md) object.|
 |[Delete site page template](../api/pagetemplate-delete.md)|None|Delete a [pageTemplate](../resources/pagetemplate.md) object.|
->>>>>>> Stashed changes:api-reference/beta/resources/pagetemplate.md
 
 ## Properties
 
