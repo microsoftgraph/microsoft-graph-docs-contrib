@@ -154,24 +154,14 @@ items:
         href: ../../api/plannerplanconfiguration-get.md
       - name: Update
         href: ../../api/plannerplanconfiguration-update.md
-      - name: List
-        href: ../../api/plannerplanconfiguration-list-localizations.md
-      - name: Create
-        href: ../../api/plannerplanconfiguration-post-localizations.md
     - name: Planner plan configuration localization
       items:
       - name: Planner plan configuration localization
         href: ../../resources/plannerplanconfigurationlocalization.md
       - name: List
         href: ../../api/plannerplanconfiguration-list-localizations.md
-      - name: Create
-        href: ../../api/plannerplanconfiguration-post-localizations.md
-      - name: Get
-        href: ../../api/plannerplanconfigurationlocalization-get.md
       - name: Update
-        href: ../../api/plannerplanconfigurationlocalization-update.md
-      - name: Delete
-        href: ../../api/plannerplanconfiguration-delete-localizations.md
+        href: ../../api/plannerplanconfiguration-update.md
     - name: Planner task configuration
       items:
       - name: Planner task configuration
