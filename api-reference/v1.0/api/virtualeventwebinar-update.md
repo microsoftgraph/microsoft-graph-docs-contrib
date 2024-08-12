@@ -52,6 +52,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
 | displayName | String | Display name of the virtual event. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
@@ -63,6 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_virtualeventwebinar"
@@ -83,6 +85,40 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-virtualeventwebinar-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-virtualeventwebinar-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-virtualeventwebinar-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-virtualeventwebinar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-virtualeventwebinar-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-virtualeventwebinar-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-virtualeventwebinar-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-virtualeventwebinar-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -134,6 +170,9 @@ Content-Type: application/json
       "displayName": "Kenneth Brown",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
-  ]
+  ],
+  "settings": {
+    "isAttendeeEmailNotificationEnabled": false
+  }
 }
 ```

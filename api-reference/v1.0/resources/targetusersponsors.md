@@ -16,9 +16,18 @@ This resource is a subtype of [subjectSet](subjectset.md), in which the `@odata.
 
 Inherits from [subjectSet](subjectset.md).
 
+## Properties
+
+None.
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.targetUserSponsors"
