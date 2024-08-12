@@ -12,12 +12,13 @@ Namespace: microsoft.graph.cloudLicensing
 
 ### assigneeTypes values 
 
-|Member            |
-|:-----------------|
-|user              |
-|group             |
-|device            |
-|unknownFutureValue|
+|Member|Value|Description|
+|:---|:---|:---|
+|none|0|No flags are enabled; this service cannot be assigned.|
+|user|1|If enabled, this service can be assigned directly to users.|
+|group|2|If enabled, this service can be assigned to groups.|
+|device|4|If enabled, this service can be assigned directly to devices.|
+|unknownFutureValue|8|A placeholder value for future states.|
 
 <!--
 {
