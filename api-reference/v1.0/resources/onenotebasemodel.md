@@ -13,6 +13,16 @@ Namespace: microsoft.graph
 
 This is the base type for OneNote entities.
 
+## Properties
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|self|String|The endpoint where you can get details about the page. Read-only.|
+
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -33,11 +43,6 @@ The following JSON representation shows the resource type.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|self|String|The endpoint where you can get details about the page. Read-only.|
-
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -4,6 +4,7 @@ description: "Best practices for using Microsoft Graph permissions when building
 ms.localizationpriority: high
 author: v-sdhakshina
 ms.author: v-sdhakshina
+ms.subservice: teams
 ---
 
 # Best practices for using Microsoft Graph permissions

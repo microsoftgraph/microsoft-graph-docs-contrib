@@ -118,8 +118,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.serviceApp",
     "id":"71633878-8321-4950-bfaf-ed285bdd1461",
     "status" : "active",
-    "registrationDateTime":"2023-06-19T12-01-03.45Z",   
-    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+    "registrationDateTime":"2023-06-19T12:01:03.45Z",   
+    "lastModifiedDateTime":"2023-06-19T12:01:03.45Z",
     "lastModifiedBy":{
         "application":{
             "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -133,8 +133,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.serviceApp",
     "id":"e9ebe5ee-bc41-4941-92d9-899ef265c27f",
     "status" : "inactive",
-    "registrationDateTime":"2023-06-19T12-01-03.45Z",   
-    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+    "registrationDateTime":"2023-06-19T12:01:03.45Z",   
+    "lastModifiedDateTime":"2023-06-19T12:01:03.45Z",
     "lastModifiedBy":{
         "application":{
             "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"

@@ -19,6 +19,14 @@ Possible values include individuals or groups. This is used within the **submiss
 ## Properties
 None.
 
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

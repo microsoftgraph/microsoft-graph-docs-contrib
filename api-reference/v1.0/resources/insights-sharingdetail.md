@@ -23,8 +23,12 @@ Contains properties of [sharedInsight](insights-shared.md) items.
 | sharingType     		  | String        | Determines the way the document was shared. Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.     |
 | sharingReference		  | [resourceReference](insights-resourcereference.md)	    | Reference properties of the document, such as the URL and type of the document. Read-only  |
 
+## Relationships
+
+None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
