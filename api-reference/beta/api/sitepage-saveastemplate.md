@@ -37,11 +37,11 @@ POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/saveAsTemplate
 
 ## Request body
 
-In the request body, supply a JSON representation of the [saveAsTemplate](../resources/saveastemplate.md) to use in the request payload.
+In the request body, supply a JSON representation of the [saveAsTemplate](../api/saveastemplate.md) to use in the request payload.
 
 ## Response
 
-If successful, this method returns a `201` and the created [pageTemplate](../api/pagetemplate.md) object.
+If successful, this method returns a `201` and the created [pageTemplate](../resources/pagetemplate.md) object.
 
 ## Example
 
