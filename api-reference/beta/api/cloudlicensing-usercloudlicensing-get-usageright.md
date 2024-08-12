@@ -1,6 +1,6 @@
 ---
-title: "Get usageRight for a user"
-description: "Read the properties and relationships of a microsoft.graph.cloudLicensing.usageRight object."
+title: "Get a cloud licensing usageRight for a user"
+description: "Read the properties and relationships of a microsoft.graph.cloudLicensing.usageRight object for a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -38,7 +38,7 @@ GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

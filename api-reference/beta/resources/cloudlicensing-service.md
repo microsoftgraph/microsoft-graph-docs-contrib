@@ -1,5 +1,5 @@
 ---
-title: "service resource type"
+title: "cloud licensing service resource type"
 description: "Represents a specific service conferred by an individual usageRight."
 author: "patrick-starrin"
 ms.localizationpriority: medium

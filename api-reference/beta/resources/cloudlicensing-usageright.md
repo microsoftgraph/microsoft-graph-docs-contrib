@@ -1,5 +1,5 @@
 ---
-title: "usageRight resource type"
+title: "cloud licensing usageRight resource type"
 description: "Represents the right of a user or group to use a particular set of services."
 author: "patrick-starrin"
 ms.localizationpriority: medium

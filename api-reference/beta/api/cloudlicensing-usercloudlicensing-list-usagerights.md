@@ -1,6 +1,6 @@
 ---
-title: "List usageRights for a user"
-description: "Get a list of the microsoft.graph.cloudLicensing.usageRight objects and their properties."
+title: "List cloud licensing usageRights for a user"
+description: "Get a list of the microsoft.graph.cloudLicensing.usageRight objects and their properties for a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -38,7 +38,7 @@ GET /users/{userId}/cloudLicensing/usageRights
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 - $filter = skuId eq skuIdValue1
 - $filter = skuId in (skuIdValue1, skuIdValue2)

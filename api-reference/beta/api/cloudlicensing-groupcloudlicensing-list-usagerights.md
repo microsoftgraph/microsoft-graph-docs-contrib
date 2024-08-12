@@ -1,6 +1,6 @@
 ---
-title: "List usageRights for a group"
-description: "Get a list of the microsoft.graph.cloudLicensing.usageRight objects and their properties."
+title: "List cloud licensing usageRights for a group"
+description: "Get a list of the microsoft.graph.cloudLicensing.usageRight objects and their properties for a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -37,7 +37,15 @@ GET /groups/{groupId}/cloudLicensing/usageRights
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+- $filter = skuId eq skuIdValue1
+- $filter = skuId in (skuIdValue1, skuIdValue2)
+- $filter = skuPartNumber eq 'skuPartNumberValue1'
+- $filter = services/any(c:c/planId eq planIdValue1)
+- $filter = services/any(c:c/planId in (planIdValue1, planIdValue2))
+- $filter = services/any(c:c/planName eq planNameValue1)
+- $filter = services/any(c:c/planName in (planNameValue1, planNameValue2))
 
 ## Request headers
 
