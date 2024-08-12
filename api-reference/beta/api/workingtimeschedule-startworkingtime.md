@@ -63,7 +63,7 @@ If successful, this action returns a `202 Accepted` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "workingtimeschedulethis.startworkingtime"
+  "name": "workingtimeschedule.startworkingtime"
 }
 -->
 ``` http
