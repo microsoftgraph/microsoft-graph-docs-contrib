@@ -1,7 +1,7 @@
 ---
 title: "assigneeTypes enum type"
 description: "Flag enum representing the possible values of Assignee Types for Microsoft Cloud Licensing."
-author: "jcelletti"
+author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
