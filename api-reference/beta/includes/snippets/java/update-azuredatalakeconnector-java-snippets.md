@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.industrydata.AzureDataLakeConnector industryDataConnector = new com.microsoft.graph.beta.models.industrydata.AzureDataLakeConnector();
 industryDataConnector.setOdataType("microsoft.graph.industryData.azureDataLakeConnector");
-industryDataConnector.setDisplayName("API Monitor 60201009");
+industryDataConnector.setDisplayName("CSV files from SIS");
 com.microsoft.graph.models.industrydata.IndustryDataConnector result = graphClient.external().industryData().dataConnectors().byIndustryDataConnectorId("{industryDataConnector-id}").patch(industryDataConnector);
 
 

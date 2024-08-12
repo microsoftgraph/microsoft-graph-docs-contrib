@@ -52,6 +52,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Microsoft Entra B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. |
+| tenantRestrictions  |[crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the default tenant restrictions configuration for users in your organization who access an external organization on your network or devices. |
 
 ## Response
 
@@ -192,6 +193,96 @@ Content-Type: application/json
 
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-automaticuserconsentsettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Configure tenant restrictions settings
+
+The following example shows how to configure tenant restrictions settings.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_tenantrestriction"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
+Content-Type: application/json
+
+{
+  "tenantRestrictions": {
+    "usersAndGroups": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications": {
+      "accessType": "allowed",
+      "targets": [
+        {
+          "target": "Office365",
+          "targetType": "application"
+        }
+      ]
+    }
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-tenantrestriction-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 ## Methods
-|  Method       |  Return Type  | Description| 
+|  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that have been added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-|[List transcripts by organizer](../api/onlinemeeting-getAllTranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
- 
+|[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
+
 
 ## Properties
 
@@ -32,11 +32,10 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | content| Stream| The content of the transcript. Read-only.|
 | contentCorrelationId | String | The unique identifier that links the transcript with its corresponding recording. Read-only.|
 | createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-| endDateTime | DateTimeOffset |  Date and time at which the transcription ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
+| endDateTime | DateTimeOffset |  Date and time at which the transcription ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
 | meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
-| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
 
@@ -60,7 +59,6 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "meetingId": "String",
   "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
-  "meetingOrganizerId": "String",
   "metadataContent": "Stream",
   "transcriptContentUrl": "String"
 }

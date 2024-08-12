@@ -4,7 +4,7 @@ description: "Update the properties of serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Update servicePrincipal

@@ -39,8 +39,8 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
 |[List languages](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
 |[Create language](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Creates a custom language in a B2C user flow.|
-|[Get API connectors configuration for user flow](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter is not supported for this method.|
-|[Configure an API connector in a user flow](../api/b2cidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
+|[Get API connectors configuration for user flow](../api/b2cidentityuserflow-get-apiconnectorconfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter is not supported for this method.|
+|[Configure an API connector in a user flow](../api/b2cidentityuserflow-put-apiconnectorconfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
 |[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
 |[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2C user flow.|
 |[Delete identity provider](../api/b2cidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2C user flow|
@@ -67,7 +67,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -40,16 +40,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
+
 Get details of your own email authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /me/authentication/emailMethods/{id}
+GET /me/authentication/emailMethods/{emailMethods-id}
 ```
 
 Get details of your own or another user's email authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
 ```
 
 ## Request headers

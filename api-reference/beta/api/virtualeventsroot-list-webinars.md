@@ -128,7 +128,10 @@ Content-Type: application/json
       "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
       "status": "published",
       "displayName": "The Impact of Tech on Our Lives",
-      "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
+      "description": {
+        "contentType": "text",
+        "content": "Discusses how technology has changed the way we communicate, work, and interact with each other."
+      },
       "startDateTime": {
         "dateTime": "2023-03-30T10:00:00",
         "timeZone": "Pacific Standard Time"
@@ -154,7 +157,10 @@ Content-Type: application/json
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
-      ]
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      }
     }
   ]
 }

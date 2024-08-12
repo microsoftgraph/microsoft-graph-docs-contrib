@@ -7,7 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc-beta solutions virtual-events webinars create --body '{\
     "displayName": "The Impact of Tech on Our Lives",\
-    "description": "Discusses how technology has changed the way we communicate.",\
+    "description": {\
+      "contentType": "text",\
+      "content": "Discusses how technology has changed the way we communicate."\
+    },\
     "startDateTime": {\
       "dateTime": "2024-03-30T10:00:00", \
       "timeZone": "Pacific Standard Time" \
@@ -22,7 +25,10 @@ mgc-beta solutions virtual-events webinars create --body '{\
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", \
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" \
       }\
-    ]\
+    ],\
+    "settings": {\
+      "isAttendeeEmailNotificationEnabled": false\
+    }\
 }\
 '
 

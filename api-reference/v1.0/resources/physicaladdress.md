@@ -3,7 +3,7 @@ title: "physicalAddress resource type"
 description: "Represents the street address of a resource such as a contact or event."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: people
+ms.subservice: people
 doc_type: resourcePageType
 ---
 
@@ -22,6 +22,10 @@ Represents the street address of a resource such as a contact or event.
 |postalCode|String|The postal code.|
 |state|String|The state.|
 |street|String|The street.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

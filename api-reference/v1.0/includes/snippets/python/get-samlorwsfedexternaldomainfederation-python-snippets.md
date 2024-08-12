@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.directory.federation_configurations.item.identity_provider_base_item_request_builder import IdentityProviderBaseItemRequestBuilder
+from msgraph import GraphServiceClient
+from msgraph.generated.directory.federation_configurations.item.identity_provider_base_item_request_builder import IdentityProviderBaseItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)

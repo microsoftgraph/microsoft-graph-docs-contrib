@@ -3,7 +3,7 @@ title: "ediscoveryReviewSetQuery: applyTags"
 description: "Apply tags to files in an eDiscovery review set."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

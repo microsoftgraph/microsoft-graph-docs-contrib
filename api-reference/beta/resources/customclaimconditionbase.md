@@ -3,7 +3,7 @@ title: "customClaimConditionBase resource type"
 description: "Represents a custom claim condition base."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

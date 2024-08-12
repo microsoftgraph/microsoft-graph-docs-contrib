@@ -1,16 +1,16 @@
 ---
-title: "Create schema"
-description: "Create the schema for a Microsoft Search connection."
+title: "Create or update schema"
+description: "Create or update the schema for a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
 ---
 
-# Create schema
+# Create or update schema
 Namespace: microsoft.graph.externalConnectors
 
-Create a new [schema](../resources/externalconnectors-schema.md) object.
+Create a new or update an existing [schema](../resources/externalconnectors-schema.md) for a Microsoft Search [connection](../resources/externalconnectors-externalconnection.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -47,13 +47,13 @@ When you register a custom item schema, the **schema** object **must** have the 
 
 If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
->**Note:** It can take between 5 and 15 minutes for the schema to get created. We recommend that you use the URL in the `Location` response header to get the operation status.
+>**Note:** It can take between 5 and 15 minutes for the schema to be created. We recommend that you use the URL in the `Location` response header to get the operation status.
 
 ## Examples
 
 ### Request
 
-The following example shows a request to register a custom schema asynchronously.
+The following example shows a request to register a new or update an existing custom schema asynchronously.
 
 # [HTTP](#tab/http)
 <!-- {

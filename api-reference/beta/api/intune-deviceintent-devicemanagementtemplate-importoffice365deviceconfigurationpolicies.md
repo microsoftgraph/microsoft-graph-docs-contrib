@@ -2,7 +2,7 @@
 title: "importOffice365DeviceConfigurationPolicies action"
 description: "Intune Deviceintent Devicemanagementtemplate Importoffice365deviceconfigurationpolicies Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -3,7 +3,7 @@ title: "groupClaimFilterBase resource type"
 description: "This is an abstract type for base group filter."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

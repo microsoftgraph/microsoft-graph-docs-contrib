@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationDecimalTextBox"
 description: "Create a new groupPolicyPresentationDecimalTextBox object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

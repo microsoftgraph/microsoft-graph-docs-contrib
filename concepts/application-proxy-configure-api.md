@@ -722,7 +722,6 @@ Content-type: appplication/json
 
 The following request shows how to configure header-based SSO for the application. In this mode, the value of the **singleSignOnMode** property can be `aadHeaderBased`, `pingHeaderBased`, or `oAuthToken`. The request returns a `204 No content` response.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignore",
   "name": "tutorial_configure_appproxy_update_app_headerbased_sso"
@@ -740,12 +739,6 @@ Content-type: appplication/json
   } 
 }
 ```
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-app-headerbased-sso-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ## Step 5: Assign a user to the application
 

@@ -1,6 +1,6 @@
 ---
 title: "channel resource type"
-description: "A channel is a collection of chatMessages within a team. "
+description: "A channel is a collection of chatMessages within a team."
 author: "nkramer"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -36,6 +36,8 @@ where files are shared, and where tabs are added.
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
+|[Archive channel](../api/channel-archive.md) | None | Archive a channel in a team.|
+|[Unarchive channel](../api/channel-unarchive.md) | None | Restore an archived channel in a team.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes the migration mode from the channel and makes the channel available to users to post and read messages.|
@@ -62,7 +64,8 @@ where files are shared, and where tabs are added.
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |id|String|The channel's unique identifier. Read-only.|
-|isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
+|isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
+|isFavoriteByDefault|Boolean|Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list. **Note:** All recommended channels automatically show in the channels list for education and frontline worker users. The property can only be set programmatically via the [Create team](../api/team-post.md) method. The default value is `false`.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
@@ -103,7 +106,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -116,14 +119,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "createdDateTime": "string (timestamp)",
-  "description": "string",
-  "displayName": "string",
-  "email": "string",
-  "id": "string (identifier)",
-  "isFavoriteByDefault": true,
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "email": "String",
+  "id": "String (identifier)",
+  "isArchived": "Boolean",
+  "isFavoriteByDefault": "Boolean",
   "membershipType": "String",
-  "webUrl": "string"
+  "webUrl": "String"
 }
 ```
 

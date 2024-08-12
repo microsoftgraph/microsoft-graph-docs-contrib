@@ -44,8 +44,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours.SetAdditionalData(additionalData)
 bookingWorkHours1 := graphmodels.NewBookingWorkHours()
@@ -64,8 +64,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours1.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours1.SetAdditionalData(additionalData)
 bookingWorkHours2 := graphmodels.NewBookingWorkHours()
@@ -84,8 +84,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours2.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours2.SetAdditionalData(additionalData)
 bookingWorkHours3 := graphmodels.NewBookingWorkHours()
@@ -104,8 +104,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours3.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours3.SetAdditionalData(additionalData)
 bookingWorkHours4 := graphmodels.NewBookingWorkHours()
@@ -124,8 +124,8 @@ timeSlots := []graphmodels.BookingWorkTimeSlotable {
 }
 bookingWorkHours4.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.dayOfWeek", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
+	"day@odata.type" : "#microsoft.graph.dayOfWeek", 
+	"timeSlots@odata.type" : "#Collection(microsoft.graph.bookingWorkTimeSlot)", 
 }
 bookingWorkHours4.SetAdditionalData(additionalData)
 
@@ -140,8 +140,8 @@ requestBody.SetWorkingHours(workingHours)
 isEmailNotificationEnabled := false
 requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled) 
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.bookingStaffRole", 
-	"odataType" : "#Collection(microsoft.graph.bookingWorkHours)", 
+	"role@odata.type" : "#microsoft.graph.bookingStaffRole", 
+	"workingHours@odata.type" : "#Collection(microsoft.graph.bookingWorkHours)", 
 }
 requestBody.SetAdditionalData(additionalData)
 

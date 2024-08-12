@@ -2,7 +2,7 @@
 title: "Create securityBaselineDeviceState"
 description: "Create a new securityBaselineDeviceState object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -10,7 +10,9 @@ doc_type: apiPageType
 # List includeApplications (for a user flow)
 Namespace: microsoft.graph
 
-List the applications linked to an [authenticationEventsFlow](../resources/authenticationeventsflow.md). These are the applications for which the authentication experience defined by the user flow is enabled.
+List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the applications for which the authentication experience that's defined by the user flow is enabled.
+
+To find the user flow that's linked to an application, see [Example 4: List user flow associated with specific application ID](../api/identitycontainer-list-authenticationeventsflows.md#example-4-list-user-flow-associated-with-specific-application-id).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

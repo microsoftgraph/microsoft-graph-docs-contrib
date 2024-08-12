@@ -19,7 +19,7 @@ mgc-beta device-management virtual-endpoint reports get-connection-quality-repor
     "UDPConnectionPercentage",\
     "LastConnectionGateway",\
     "LastConnectionProtocol",\
-    "EventDateTime"\
+    "LastActiveTime"\
   ],\
   "skip": "0",\
   "top": "25",\

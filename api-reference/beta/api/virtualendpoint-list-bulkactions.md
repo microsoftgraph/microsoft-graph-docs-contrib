@@ -112,22 +112,15 @@ Content-Type: application/json
   "value": [
     {
       "value": {
-        "@odata.type": "#microsoft.graph.cloudPcBulkAction",
-        "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
-        "displayName": "Bulk Power Off by Andy",
-        "cloudPcIds": [
-          "d6e0b8ee-8836-4b8d-b038-6130a97a3a9d",
-          "85994912-197b-4927-b569-447bd81350ec"
-        ],
-        "actionSummary": {
-          "failedCount": 1,
-          "inProgressCount": 0,
-          "notSupportedCount": 0,
-          "pendingCount": 1,
-          "successfulCount": 0
-        },
-        "scheduledDuringMaintenanceWindow": true,
-        "createdDateTime": "2024-02-05T10:29:57Z"
+        "@odata.type": "#microsoft.graph.cloudPcBulkPowerOn",
+        "displayName": "BulkPowerOn on 2024-6-14 17:05:43 GMT-0300 (French Guiana Time)",
+        "id": "0d76d02b-e0a0-4f58-baff-d1718cc2d144",
+        "cloudPcIds": [],
+        "scheduledDuringMaintenanceWindow": false,
+        "createdDateTime": "2024-06-14T20:05:44.5239567Z",
+        "status": "succeeded",
+        "initiatedByUserPrincipalName": "johnd@contoso.com",
+        "actionSummary": null
       }
     }
   ]

@@ -21,7 +21,7 @@ requestBody.SetName(&name)
 folder := graphmodels.NewFolder()
 requestBody.SetFolder(folder)
 additionalData := map[string]interface{}{
-	"microsoftGraphConflictBehavior" : "rename", 
+	"@microsoft.graph.conflictBehavior" : "rename", 
 }
 requestBody.SetAdditionalData(additionalData)
 

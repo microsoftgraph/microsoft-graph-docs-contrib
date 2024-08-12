@@ -3,7 +3,7 @@ title: "caseOperation resource type"
 description: "An abstract entity that represents a long-running eDiscovery process."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

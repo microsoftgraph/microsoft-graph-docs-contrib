@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Calendar
   items:
@@ -75,10 +78,6 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Extended properties
     items:
     - name: Create single-value property
@@ -117,6 +116,8 @@ items:
     href: ../../api/message-replyall.md
   - name: Send draft message
     href: ../../api/message-send.md
+  - name: Recall message
+    href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
   - name: Attachments
@@ -199,19 +200,19 @@ items:
     href: ../../api/calendarpermission-update.md
   - name: Delete
     href: ../../api/calendarpermission-delete.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Extended properties
   items:

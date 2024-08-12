@@ -26,7 +26,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('adams@contoso.com')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('adams@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 conversationMember1 := graphmodels.NewAadUserConversationMember()
@@ -35,7 +35,7 @@ roles := []string {
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('gradyA@contoso.com')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('gradyA@contoso.com')", 
 }
 conversationMember1.SetAdditionalData(additionalData)
 conversationMember2 := graphmodels.NewAadUserConversationMember()
@@ -44,7 +44,7 @@ roles := []string {
 }
 conversationMember2.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/v1.0/users('4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')", 
+	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('4562bcc8-c436-4f95-b7c0-4f8ce89dca5e')", 
 }
 conversationMember2.SetAdditionalData(additionalData)
 

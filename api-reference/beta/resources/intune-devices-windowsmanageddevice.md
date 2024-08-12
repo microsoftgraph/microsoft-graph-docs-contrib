@@ -2,7 +2,7 @@
 title: "windowsManagedDevice resource type"
 description: "Windows devices that are managed or pre-enrolled through Intune"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

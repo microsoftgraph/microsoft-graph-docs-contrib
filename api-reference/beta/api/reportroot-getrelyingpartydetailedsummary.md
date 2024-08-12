@@ -40,7 +40,6 @@ GET /reports/getRelyingPartyDetailedSummary(period='parameterValue')
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 ## Optional query parameters
 
@@ -55,7 +54,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

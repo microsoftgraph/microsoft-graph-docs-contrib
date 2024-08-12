@@ -9,7 +9,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Columns\Item\Filter\Apply\ApplyPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\WorkbookFilterCriteria;
 use Microsoft\Graph\Beta\Generated\Models\WorkbookIcon;
-use Microsoft\Graph\Beta\Generated\Models\Json;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -26,7 +25,7 @@ $criteriaIcon->setSet('set-value');
 $criteriaIcon->setIndex(99);
 $criteria->setIcon($criteriaIcon);
 $criteria->setDynamicCriteria('dynamicCriteria-value');
-$criteriaValues = new Json();
+$criteriaValues = new UntypedNode();
 $criteria->setValues($criteriaValues);
 $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);

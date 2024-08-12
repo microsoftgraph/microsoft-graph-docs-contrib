@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart font
 ---
 
 # workbookChartFont resource type
@@ -20,18 +21,18 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartFont](../api/chartfont-get.md) | [workbookChartFont](workbookchartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont-update.md) | [workbookChartFont](workbookchartfont.md)	|Update ChartFont object. |
+|[Get](../api/chartfont-get.md) | [workbookChartFont](workbookchartfont.md) |Read the properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [workbookChartFont](workbookchartfont.md)	|Update a chartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
-|color|string|HTML color code representation of the text color. for example #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
-|name|string|Font name (for example "Calibri")|
-|size|double|Size of the font (for example 11)|
-|underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`.|
+|bold|Boolean|Indicates whether the fond is bold.|
+|color|string|The HTML color code representation of the text color. For example #FF0000 represents Red.|
+|italic|Boolean|Indicates whether the fond is italic.|
+|name|string|The font name. For example "Calibri".|
+|size|double|The size of the font. For example,  11.|
+|underline|string|The type of underlining applied to the font. The possible values are: `None`, `Single`.|
 
 ## Relationships
 None

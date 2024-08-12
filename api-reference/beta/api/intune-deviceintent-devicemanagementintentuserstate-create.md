@@ -2,7 +2,7 @@
 title: "Create deviceManagementIntentUserState"
 description: "Create a new deviceManagementIntentUserState object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

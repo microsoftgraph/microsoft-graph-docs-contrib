@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Invalid license
 ---
 
 # invalidLicenseAlertConfiguration resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that's triggered if the tenant doesn't have a valid Microsoft Entra ID P2 license that's required to use the PIM for Microsoft Entra roles feature.
+Represents an alert configuration that's triggered if the tenant doesn't have a valid Microsoft Entra ID P2 license required to use the PIM for Microsoft Entra roles feature.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -32,7 +33,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

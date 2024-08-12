@@ -2,7 +2,7 @@
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -106,6 +106,7 @@ The following table shows the properties that are required when you create the d
 |protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
+|allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data. (iOS Only)|
@@ -173,7 +174,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 6201
+Content-length: 6236
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -236,6 +237,7 @@ Content-length: 6201
   "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
+  "allowWidgetContentSync": true,
   "encryptAppData": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
@@ -318,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6373
+Content-Length: 6408
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -384,6 +386,7 @@ Content-Length: 6373
   "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
+  "allowWidgetContentSync": true,
   "encryptAppData": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",

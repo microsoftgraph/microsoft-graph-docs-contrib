@@ -17,7 +17,7 @@ Represents information about an external attendee.
 |Property|Type|Description|
 |:---|:---|:---|
 |phoneNumber|String|The phone number of the external attendee. Required.|
-|timeZone|String|The time zone of the external attendee. The timeZone property can be set to any of the time zones currently supported by [Windows](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones). Required.|
+|timeZone|String|The time zone of the external attendee. The timeZone property can be set to any of the time zones currently supported by [Windows](/windows-hardware/manufacture/desktop/default-time-zones). Required.|
 
 ## Relationships
 None.
@@ -34,6 +34,6 @@ The following JSON representation shows the resource type.
    ```json
 {
     "phoneNumber": "String",
-    "timeZone": "String",
+    "timeZone": "String"
 }
 ```

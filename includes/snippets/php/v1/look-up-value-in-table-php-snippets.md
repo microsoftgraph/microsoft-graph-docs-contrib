@@ -8,18 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Functions\Vlookup\VlookupRequestBuilderPostRequestConfiguration;
 use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Functions\Vlookup\VlookupPostRequestBody;
-use Microsoft\Graph\Generated\Models\Json;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new VlookupPostRequestBody();
 $requestBody->setLookupValue('pear');
-$tableArray = new Json();
-$additionalData = [
-	'Address' => 'Sheet1!B2:C7',
-];
-$tableArray->setAdditionalData($additionalData);
+$tableArray = new UntypedNode();
+$tableArray->setAddress('Sheet1!B2:C7');
 $requestBody->setTableArray($tableArray);
 $requestBody->setColIndexNum(2);
 $requestBody->setRangeLookup(false);

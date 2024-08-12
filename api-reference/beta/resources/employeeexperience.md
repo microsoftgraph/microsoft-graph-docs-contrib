@@ -3,7 +3,7 @@ title: "employeeExperience resource type"
 description: "Represents a container that exposes navigation properties for employee experience resources."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

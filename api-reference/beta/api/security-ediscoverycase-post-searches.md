@@ -3,7 +3,7 @@ title: "Create searches"
 description: "Create a new ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

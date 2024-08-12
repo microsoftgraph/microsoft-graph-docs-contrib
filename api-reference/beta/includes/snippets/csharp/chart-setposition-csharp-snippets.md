@@ -8,11 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Item.SetPosition;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new SetPositionPostRequestBody
 {
-	StartCell = "startCell-value",
-	EndCell = "endCell-value",
+	StartCell = new UntypedString("startCell-value"),
+	EndCell = new UntypedString("endCell-value"),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -30,7 +30,7 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.adminReportSettings",

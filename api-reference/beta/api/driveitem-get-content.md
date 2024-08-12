@@ -1,18 +1,20 @@
 ---
 author: spgraph-docs-team
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
-title: Download a file
+title: Download driveItem content
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Download the contents of a driveItem
+# Download driveItem content
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
+Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItem** objects with the **file** property can be downloaded. 
+
+To get the ID of the item to be downloaded, see [Get driveItem](driveitem-get.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
