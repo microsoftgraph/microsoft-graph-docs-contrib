@@ -44,8 +44,8 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 - $filter = skuPartNumber eq 'skuPartNumberValue1'
 - $filter = services/any(c:c/planId eq planIdValue1)
 - $filter = services/any(c:c/planId in (planIdValue1, planIdValue2))
-- $filter = services/any(c:c/planName eq planNameValue1)
-- $filter = services/any(c:c/planName in (planNameValue1, planNameValue2))
+- $filter = services/any(c:c/planName eq 'planNameValue1')
+- $filter = services/any(c:c/planName in ('planNameValue1', 'planNameValue2'))
 
 ## Request headers
 
