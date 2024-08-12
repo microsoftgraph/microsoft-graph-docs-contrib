@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Create a new androidWorkProfileEnterpriseWiFiConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

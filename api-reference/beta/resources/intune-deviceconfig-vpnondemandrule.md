@@ -2,7 +2,7 @@
 title: "vpnOnDemandRule resource type"
 description: "VPN On-Demand Rule definition."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

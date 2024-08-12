@@ -38,7 +38,7 @@ The following shows the supported types of answer input for a custom registratio
 | multilineText | The registration question accepts multi-line text. |
 | singleChoice | The registration question accepts one answer from a list of options. |
 | multiChoice | The registration question accepts more than one answer from a list of options. |
-| boolean | The registration question accepts a yes, or no answer. |
+| Boolean | The registration question accepts a yes, or no answer. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation

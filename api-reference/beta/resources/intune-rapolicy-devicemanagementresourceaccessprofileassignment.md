@@ -2,7 +2,7 @@
 title: "deviceManagementResourceAccessProfileAssignment resource type"
 description: "Entity that describes tenant level settings for derived credentials"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

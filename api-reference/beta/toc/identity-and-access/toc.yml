@@ -50,6 +50,36 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -1342,6 +1372,8 @@ items:
           href: ../../api/identitygovernance-deleteditemcontainer-get.md
         - name: Restore
           href: ../../api/identitygovernance-workflow-restore.md
+        - name: Permanently delete
+          href: ../../api/identitygovernance-deleteditemcontainer-delete.md
       - name: Task
         items:
         - name: Task
@@ -3116,8 +3148,6 @@ items:
           href: ../../api/identityuserflowattribute-delete.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
@@ -3919,9 +3949,9 @@ items:
       href: ../../api/networkaccess-tenantstatus-get.md
     - name: Onboard
       href: ../../api/networkaccess-networkaccessroot-onboard.md
-  - name: Branch site
+  - name: Branch site (deprecated)
     items:
-    - name: Branch site
+    - name: Branch site (deprecated)
       href: ../../resources/networkaccess-branchsite.md
     - name: List
       href: ../../api/networkaccess-connectivity-list-branches.md
@@ -3949,8 +3979,12 @@ items:
         href: ../../api/networkaccess-branchsite-list-devicelinks.md
       - name: Create deviceLink for a branchSite (deprecated)
         href: ../../api/networkaccess-branchsite-post-devicelinks.md
-    - name: Connectivity configuration link
-      href: ../../resources/networkaccess-connectivityconfigurationlink.md
+    - name: Connectivity configuration link (deprecated)
+      items:
+      - name: Connectivity configuration link (deprecated)
+        href: ../../resources/networkaccess-connectivityconfigurationlink.md
+      - name: Get
+        href: ../../api/networkaccess-branchconnectivityconfiguration-get.md
   - name: Enriched audit logs
     items:
     - name: Enriched audit logs
@@ -3959,17 +3993,23 @@ items:
       href: ../../api/networkaccess-settings-list-enrichedauditlogs.md
     - name: Update
       href: ../../api/networkaccess-enrichedauditlogs-update.md
-  - name: Logs
+  - name: Traffic logs
     items:
-    - name: Logs
+    - name: Traffic logs
       href: ../../resources/networkaccess-logs.md
-    - name: List remoteNetworks
-      href: ../../api/networkaccess-remotenetworkhealthstatusevent-list.md
     - name: List traffic
       href: ../../api/networkaccess-logs-list-traffic.md
-  - name: Reports
+    - name: Network access traffic
+      items:
+      - name: Network access traffic
+        href: ../../resources/networkaccess-networkaccesstraffic.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-traffic.md
+    - name: Remote network health event
+      href: ../../resources/networkaccess-remotenetworkhealthevent.md
+  - name: Traffic reports
     items:
-    - name: Reports
+    - name: Traffic reports
       href: ../../resources/networkaccess-reports.md
     - name: Get transaction summaries
       href: ../../api/networkaccess-reports-transactionsummaries.md
@@ -3977,10 +4017,18 @@ items:
       href: ../../api/networkaccess-reports-entitiessummaries.md
     - name: Get cross-tenant access summary
       href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+    - name: Get cross-tenant access report
+      href: ../../api/networkaccess-reports-crosstenantaccessreport.md
     - name: Get device usage summary
       href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+    - name: Get device usage report
+      href: ../../api/networkaccess-reports-devicereport.md
     - name: Get destination summary
       href: ../../api/networkaccess-reports-getdestinationsummaries.md
+    - name: Get destination report
+      href: ../../api/networkaccess-reports-destinationreport.md
+    - name: Get user usage report
+      href: ../../api/networkaccess-reports-userreport.md
   - name: Remote network
     items:
     - name: Remote network
@@ -4017,8 +4065,6 @@ items:
         href: ../../resources/networkaccess-remotenetworkconnectivityconfiguration.md
       - name: Get
         href: ../../api/networkaccess-remotenetworkconnectivityconfiguration-get.md
-  - name: Remote network health event
-    href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
     - name: Cross-tenant access settings
@@ -4055,7 +4101,11 @@ items:
         href: ../../api/networkaccess-networkaccessroot-list-forwardingprofiles.md
       - name: Get
         href: ../../api/networkaccess-forwardingprofile-get.md
-      - name: Update forwarding profile for branch
+      - name: List forwarding profiles for branch (deprecated)
+        href: ../../api/networkaccess-branchsite-list-forwardingprofiles.md
+      - name: Create forwarding profile for branch (deprecated)
+        href: ../../api/networkaccess-branchsite-post-forwardingprofiles.md
+      - name: Update forwarding profile for branch (deprecated)
         href: ../../api/networkaccess-forwardingprofile-update.md
     - name: Forwarding policy
       items:
@@ -4083,7 +4133,7 @@ items:
       items:
       - name: Policy rule
         href: ../../resources/networkaccess-policyrule.md
-      - name: List policyRules
+      - name: List
         href: ../../api/networkaccess-policy-list-policyrules.md
       - name: Get
         href: ../../api/networkaccess-policyrule-get.md
@@ -4091,6 +4141,10 @@ items:
         href: ../../api/networkaccess-policyrule-update.md
     - name: Forwarding rule
       href: ../../resources/networkaccess-forwardingrule.md
+    - name: M 365 forwarding rule
+      href: ../../resources/networkaccess-m365forwardingrule.md
+    - name: Private access forwarding rule
+      href: ../../resources/networkaccess-privateaccessforwardingrule.md
   - name: Filtering traffic
     items:
     - name: Filtering profile
@@ -4109,13 +4163,17 @@ items:
         href: ../../resources/networkaccess-filteringpolicy.md
       - name: List
         href: ../../api/networkaccess-networkaccessroot-list-filteringpolicies.md
-      - name: Add policy
+      - name: List policies for a filtering policy profile
+        href: ../../api/networkaccess-policylink-list-policy.md
+      - name: Create
         href: ../../api/networkaccess-filteringpolicy-post-policyrules.md
       - name: Get
         href: ../../api/networkaccess-filteringpolicy-get.md
       - name: Update
         href: ../../api/networkaccess-filteringprofile-update.md
       - name: Delete
+        href: ../../api/networkaccess-filteringpolicylink-delete-policy.md
+      - name: Delete policy for a filtering policy profile
         href: ../../api/networkaccess-filteringprofile-delete-policies.md
     - name: Filtering policy link
       items:
@@ -4135,6 +4193,8 @@ items:
         href: ../../resources/networkaccess-filteringrule.md
       - name: List
         href: ../../api/networkaccess-filteringrule-list.md
+      - name: Create
+        href: ../../api/networkaccess-filteringrule-post.md
       - name: Get
         href: ../../api/networkaccess-filteringrule-get.md
       - name: Update

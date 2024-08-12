@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
+toc.title: Traffic logs
 ---
 
 # logs resource type
@@ -18,7 +19,6 @@ Global Secure Access network logs.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteNetworks](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a collection of remote network health events.|
 |[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network access traffic events.|
 
 ## Properties

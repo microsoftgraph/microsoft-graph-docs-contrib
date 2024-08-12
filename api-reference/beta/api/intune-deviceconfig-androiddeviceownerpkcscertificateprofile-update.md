@@ -2,7 +2,7 @@
 title: "Update androidDeviceOwnerPkcsCertificateProfile"
 description: "Update the properties of a androidDeviceOwnerPkcsCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

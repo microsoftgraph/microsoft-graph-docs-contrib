@@ -304,7 +304,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaconditionalAccessBetaDocs/$metadata#conditionalAccess/policies/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
     "id": "c98e6c3d-f6ca-42ea-a927-773b6f12a0c2",
     "displayName": "Block access to EXO non-trusted regions.",
     "createdDateTime": "2019-10-14T19:53:11.3705634Z",

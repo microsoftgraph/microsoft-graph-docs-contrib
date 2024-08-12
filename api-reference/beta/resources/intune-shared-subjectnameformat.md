@@ -2,7 +2,7 @@
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

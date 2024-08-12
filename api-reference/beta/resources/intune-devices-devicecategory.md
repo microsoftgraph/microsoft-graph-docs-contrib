@@ -2,7 +2,7 @@
 title: "deviceCategory resource type"
 description: "Intune Devices Devicecategory Source_Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

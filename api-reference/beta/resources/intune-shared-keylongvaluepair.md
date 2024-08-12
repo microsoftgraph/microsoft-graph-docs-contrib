@@ -2,7 +2,7 @@
 title: "keyLongValuePair resource type"
 description: "Key long value pair"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

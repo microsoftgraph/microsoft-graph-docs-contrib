@@ -2,7 +2,7 @@
 title: "Create managedDeviceMobileAppConfigurationPolicySetItem"
 description: "Create a new managedDeviceMobileAppConfigurationPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

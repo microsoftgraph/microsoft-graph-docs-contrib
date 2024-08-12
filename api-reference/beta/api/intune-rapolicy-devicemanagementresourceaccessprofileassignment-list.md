@@ -2,7 +2,7 @@
 title: "List deviceManagementResourceAccessProfileAssignments"
 description: "List properties and relationships of the deviceManagementResourceAccessProfileAssignment objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
