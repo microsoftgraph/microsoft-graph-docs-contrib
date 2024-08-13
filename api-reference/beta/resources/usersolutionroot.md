@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# solution resource type
+# userSolutionRoot resource type
 
 Namespace: microsoft.graph
 
