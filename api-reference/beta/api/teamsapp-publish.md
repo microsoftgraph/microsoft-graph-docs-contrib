@@ -178,6 +178,8 @@ If you send a request to upload an app manifest that contains missing informatio
 |`ShortNameLengthCheck` |Maximum character length for Short Name must not exceed 30 chars.|The short name exceeds 30 characters.|
 |`ApiSpecificationFileParameterContainUnsupportedSchemaType` |API-based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays aren't supported.|The API-based compose extension has an unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
+</details>
+
 ## Examples
 
 ### Example 1: Publish an app to the app catalog
@@ -435,10 +437,6 @@ Content-type: application/json
     }
 }
 ```
-
-
-
-</details>
 
 ## Related content
 
