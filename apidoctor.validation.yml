@@ -8,18 +8,12 @@ trigger:
     include:
       - live
       - main
-  paths:
-    include:
-      - api-reference/*
 
 pr:
   branches:
     include:
       - live
       - main
-  paths:
-    include:
-      - api-reference/*
 
 parameters:
   - name: useNuGetPackage

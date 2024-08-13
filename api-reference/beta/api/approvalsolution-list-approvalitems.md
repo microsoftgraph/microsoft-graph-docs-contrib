@@ -38,7 +38,7 @@ GET /solutions/approval/approvalItems
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$orderby`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$orderby`, `$top`, `$count`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 ## Request headers
