@@ -582,6 +582,28 @@ items:
       href: ../../api/alert-list.md
     - name: Update multiple alerts
       href: ../../api/alert-updatealerts.md
+- name: Microsoft Defender for Cloud Apps (Preview)
+  items:
+  - name: Cloud app discovery report
+    items:
+    - name: Cloud app discovery report
+      href: ../../resources/security-cloudappdiscoveryreport.md
+    - name: List
+      href: ../../api/security-datadiscoveryreport-list-uploadedstreams.md
+    - name: aggregatedAppsDetails
+      href: ../../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md
+  - name: Discovered cloud app detail
+    items:
+    - name: Discovered cloud app detail
+      href: ../../resources/security-discoveredcloudappdetail.md
+    - name: Get
+      href: ../../api/security-discoveredcloudappdetail-get.md
+    - name: Get appInfo
+      href: ../../api/security-discoveredcloudappinfo-get.md
+    - name: List ipAddresses
+      href: ../../api/security-discoveredcloudappdetail-list-ipaddresses.md
+    - name: List users
+      href: ../../api/security-discoveredcloudappdetail-list-users.md
 - name: Records management
   items:
   - name: Overview
