@@ -1,6 +1,6 @@
 ---
 title: "eventMessage resource type"
-description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "
+description: "A message that represents a meeting request, cancellation, or response. Can be one of the following values: acceptance, tentative acceptance, or decline."
 ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
+A message that represents a meeting request, cancellation, or response. Can be one of the following values: acceptance, tentative acceptance, or decline.
 
 The **eventMessage** entity is derived from [message](message.md). **eventMessage** is the base type for [eventMessageRequest](eventmessagerequest.md) and
 [eventMessageResponse](eventmessageresponse.md). The **meetingMessageType** property identifies the type of the event message.

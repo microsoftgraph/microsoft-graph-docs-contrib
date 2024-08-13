@@ -20,15 +20,14 @@ by providing a [delta](../api/mailfolder-delta.md) function.
 
 **Well-known folder names**
 
-Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use
-the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it's named.
+Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of its name.
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|

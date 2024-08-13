@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
 In Outlook, the default task group, `My Tasks`, contains a default task folder, `Tasks`, for the user's mailbox. 
-You cannot rename or delete these default task group and folder, but you can create additional task groups and task folders.
+You can't rename or delete these default task groups or folders, but you can create new task groups and folders.
 
 
 ## Methods

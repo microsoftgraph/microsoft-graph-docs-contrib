@@ -17,7 +17,7 @@ A **mailSearchFolder** is a virtual folder in the user's mailbox that contains a
 
 ## Search folder lifecycle
 
-Search folders created by your application can be deleted by Exchange Online for one of the following reasons:
+Exchange Online can delete search folders created by your application for one of the following reasons:
 
 1.	Search folders expire after 45 days of no usage.
 2.	There are limits on the number of search folders that can be created per source folder. When this limit is breached, older search folders are deleted to make way for new ones.

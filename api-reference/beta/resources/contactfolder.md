@@ -29,7 +29,7 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 |[permanentDelete](../api/contactfolder-permanentdelete.md)|None|Permanently delete a contact folder and remove its items from the user's mailbox.|
 |[List child folders](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
 |[Create child folder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Create a new **contactFolder** as a child of a specified folder.|
-|[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
+|[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contact folders that were added, deleted, or removed from the user's mailbox.|
 |[List contacts in folder](../api/contactfolder-list-contacts.md) |[contact](contact.md) collection| Get a contact collection from the default contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
 |[Create contact in folder](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Add a contact to the root contacts folder or to the `contacts` endpoint of another contact folder.|
 |**Extended properties**| | |
