@@ -1,6 +1,6 @@
 ---
-title: "solution resource type"
-description: "Represents a user's custom solution entity."
+title: "user solution resource type"
+description: "Represents a user's custom user solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -25,7 +25,7 @@ Represents a user's custom solution entity.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|schedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|The working time schedule entity associated with the solution.|
+|workingTimeSchedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|The working time schedule entity associated with the solution.|
 
 ## JSON representation
 
