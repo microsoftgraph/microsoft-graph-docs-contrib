@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/security-api-overview.md
@@ -23,13 +26,13 @@ items:
     items:
     - name: Alert
       href: ../../resources/security-alert.md
-    - name: List alerts_v2
+    - name: List
       href: ../../api/security-list-alerts_v2.md
-    - name: Get alert
+    - name: Get
       href: ../../api/security-alert-get.md
-    - name: Update alert
+    - name: Update
       href: ../../api/security-alert-update.md
-    - name: Create comment for alert
+    - name: Create comment
       href: ../../api/security-alert-post-comments.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md
@@ -67,6 +70,20 @@ items:
       href: ../../api/loginpage-get.md
     - name: Get landingPage
       href: ../../api/landingpage-get.md
+  - name: Training campaign (preview)
+    items:
+    - name: Training campaign (preview)
+      href: ../../resources/trainingcampaign.md
+    - name: List
+      href: ../../api/attacksimulationroot-list-trainingcampaigns.md
+    - name: Create
+      href: ../../api/attacksimulationroot-post-trainingcampaigns.md
+    - name: Get
+      href: ../../api/trainingcampaign-get.md
+    - name: Update
+      href: ../../api/trainingcampaign-update.md
+    - name: Delete
+      href: ../../api/attacksimulationroot-delete-trainingcampaigns.md
   - name: Attack simulation operation
     items:
     - name: Attack simulation operation
@@ -196,7 +213,7 @@ items:
   - name: Get
     href: ../../api/security-detectionrule-get.md
   - name: Create
-    href: ../../api/security-detectionrule-post-detectionRules.md
+    href: ../../api/security-detectionrule-post-detectionrules.md
   - name: Update
     href: ../../api/security-detectionrule-update.md
   - name: Delete
@@ -452,7 +469,7 @@ items:
     - name: Health issue
       href: ../../resources/security-healthissue.md
     - name: List
-      href: ../../api/security-identityContainer-list-healthissues.md
+      href: ../../api/security-identitycontainer-list-healthissues.md
     - name: Get
       href: ../../api/security-healthissue-get.md
     - name: Update
@@ -654,9 +671,9 @@ items:
 - name: Secure score
   items:
   - name: Secure score
-    href: ../../resources/securescores.md
-  - name: List secure scores
-    href: ../../api/securescores-list.md
+    href: ../../resources/securescore.md
+  - name: List
+    href: ../../api/security-list-securescores.md
 - name: Secure score control profile
   items:
   - name: Secure score control profile
@@ -803,6 +820,8 @@ items:
       href: ../../api/security-threatintelligence-list-sslcertificates.md
     - name: Get
       href: ../../api/security-sslcertificate-get.md
+    - name: List related hosts
+      href: ../../api/security-sslcertificate-list-relatedhosts.md
   - name: Subdomain
     items:
     - name: Subdomain

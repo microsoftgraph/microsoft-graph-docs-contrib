@@ -3,7 +3,7 @@ title: "extractTransformation resource type"
 description: "Returns the substring after, between or before it matches the specified value.*"
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

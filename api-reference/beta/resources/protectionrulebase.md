@@ -6,9 +6,10 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: Protection rule
 ---
 
-# protectionRuleBase resource
+# protectionRuleBase resource type
 
 Namespace: microsoft.graph
 

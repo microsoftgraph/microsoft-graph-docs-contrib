@@ -3,7 +3,7 @@ title: "Create legalHold userSource"
 description: "Create a new legalHold userSource object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

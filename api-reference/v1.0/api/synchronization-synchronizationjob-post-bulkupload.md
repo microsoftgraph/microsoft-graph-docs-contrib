@@ -4,7 +4,7 @@ description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-doc_type: apiPageType 
+doc_type: apiPageType
 ---
 
 # Perform bulkUpload
@@ -329,7 +329,7 @@ Content-Type: application/scim+json
             "urn:contoso:employee": {
                 "HireDate": "2021-05-01T00:00:00-05:00",
                 "JobCode": "AB-1002"
-            }            
+            }
         }
     },
     {
@@ -397,7 +397,7 @@ Content-Type: application/scim+json
             "urn:contoso:employee": {
                 "HireDate": "2022-07-15T00:00:00-05:00",
                 "JobCode": "AB-1003"
-            }            
+            }
         }
     }
 ],
@@ -435,13 +435,13 @@ request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 #### Request
 
-The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, change the user's department, and disable sign-in for the user.  This example assumes you have configured a mapping for the **externalId**, **department**, and **active** fields, and you have an existing Microsoft Entra user that has an attribute matching the **externalId**.  
+The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, change the user's department, and disable sign-in for the user.  This example assumes you have configured a mapping for the **externalId**, **department**, and **active** fields, and you have an existing Microsoft Entra user that has an attribute matching the **externalId**.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_for_update"
-} 
+}
 -->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
@@ -510,13 +510,7 @@ request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
     "Error: bulkuploadfromSCIMcustom_schema:
       Resource type was null or missing in response metadata, so we assume there is no response to validate.",
     "Error: bulkuploadfromSCIMstandard_schema:
-      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
-    "Error: microsoft.graph.microsoft.graph/servicePrincipals:
-      /servicePrincipals/{var}/synchronization/jobs/{var}/bulkUpload
-      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
-       1) Doc bug where 'jobs' isn't defined on the resource.
-       2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-       3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+      Resource type was null or missing in response metadata, so we assume there is no response to validate."
   ]
 }
 -->

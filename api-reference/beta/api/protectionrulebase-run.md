@@ -60,6 +60,7 @@ The following example shows how to activate a **siteInclusionRule** associated w
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "siteprotectionrulethis.run"
@@ -68,6 +69,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/siteprotectionrulethisrun-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -96,7 +103,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -105,7 +112,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/share
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false
 }
 ```
@@ -117,6 +124,7 @@ The following example shows how to activate a **driveInclusionRule**associated w
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveprotectionrulethis_run"
@@ -125,6 +133,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveprotectionrulethis-run-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -153,7 +167,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -162,7 +176,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false
 }
 ```
@@ -174,6 +188,7 @@ The following example shows how to activate a **mailboxInclusionRule** associate
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionrulethis.run"
@@ -182,6 +197,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailboxprotectionrulethisrun-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -210,7 +231,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/excha
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
@@ -219,7 +240,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/excha
          "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "isAutoApplyEnabled": false
 }
 ```

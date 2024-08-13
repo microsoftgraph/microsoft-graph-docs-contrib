@@ -2,7 +2,7 @@
 title: "Delete deviceHealthScriptPolicyState"
 description: "Deletes a deviceHealthScriptPolicyState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

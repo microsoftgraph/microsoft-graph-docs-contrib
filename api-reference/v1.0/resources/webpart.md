@@ -3,7 +3,7 @@ title: 'webPart resource type'
 description: Represents a specific web part instance on a SharePoint page.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 | [Create](../api/sitepage-create-webpart.md)                                           | [webPart](../resources/webpart.md)                 | Create a new [webPart](../resources/webpart.md) object. |
 | [Update](../api/webpart-update.md)                                           | [webPart](../resources/webpart.md)                 | Update the properties of a [webPart](../resources/webpart.md) object.     |
 | [Get position](../api/webpart-getposition.md)                          | [webPartPosition](../resources/webpartposition.md) | Get the [webPartPosition](../resources/webpartposition.md) information of a [WebPart](../resources/webpart.md).                             |
-| [Get by position](../api/sitePage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
+| [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection      | Get a list of the [webPart](../resources/webpart.md) objects filtered by [webPartPosition](../resources/webpartposition.md) information.  |
 
 ## Properties
 
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

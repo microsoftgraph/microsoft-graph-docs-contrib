@@ -3,7 +3,7 @@ title: "subjectRightsRequestHistory resource type"
 description: "Represents the history for a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents the history for a subject rights request.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.subjectRightsRequestHistory"

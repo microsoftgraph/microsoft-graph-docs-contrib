@@ -3,7 +3,7 @@ title: "subjectRightsRequestDetail resource type"
 description: "Represents the details of a subject rights request, including number of items found, number of items reviewed, and so on."
 author: "skadam-msft"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents the details of a subject rights request, including number of items fo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.subjectRightsRequestDetail"

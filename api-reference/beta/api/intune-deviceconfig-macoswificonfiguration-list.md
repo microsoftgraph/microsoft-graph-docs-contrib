@@ -2,7 +2,7 @@
 title: "List macOSWiFiConfigurations"
 description: "List properties and relationships of the macOSWiFiConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1823
+Content-Length: 1866
 
 {
   "value": [
@@ -109,6 +109,7 @@ Content-Length: 1823
       "proxyManualAddress": "Proxy Manual Address value",
       "proxyManualPort": 15,
       "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "deploymentChannel": "userChannel",
       "preSharedKey": "Pre Shared Key value"
     }
   ]

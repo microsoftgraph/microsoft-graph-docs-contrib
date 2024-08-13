@@ -9,6 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply;
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ApplyPostRequestBody
 {
@@ -26,9 +27,9 @@ var requestBody = new ApplyPostRequestBody
 			Index = 99,
 		},
 		DynamicCriteria = "dynamicCriteria-value",
-		Values = new Json
+		Values = new UntypedObject(new Dictionary<string, UntypedNode>
 		{
-		},
+		}),
 		FilterOn = "filterOn-value",
 	},
 };

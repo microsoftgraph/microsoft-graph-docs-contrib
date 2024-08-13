@@ -3,7 +3,7 @@ title: "Create or replace claimsPolicy"
 description: "Create a new custom claims policy object if it doesn't exist, or replace an existing one."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Comment reply
 ---
 
 # workbookCommentReply resource type
@@ -17,17 +18,17 @@ Represents a reply to an excel comment.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects. |
-| [Get reply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read properties and relationships of workbookCommentReply object. |
-| [Create reply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply. |
+| [List](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a list of comment replies. |
+| [Create](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new comment reply. |
+| [Get](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read the properties and relationships of a comment reply. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of replied comment.|
-|contentType|String|Indicates the type for the replied comment.|
-|id|String|Represents the comment identifier. Read-only.|
+|content|String|The content of the reply.|
+|contentType|String|The content type for the reply.|
+|id|String|The unique identifier for the reply. Read-only.|
 
 ## Relationships
 
@@ -37,7 +38,7 @@ Represents a reply to an excel comment.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

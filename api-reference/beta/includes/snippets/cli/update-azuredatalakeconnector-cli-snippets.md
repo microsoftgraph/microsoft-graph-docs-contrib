@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 mgc-beta external industry-data data-connectors patch --industry-data-connector-id {industryDataConnector-id} --body '{\
   "@odata.type": "microsoft.graph.industryData.azureDataLakeConnector",\
-  "displayName": "API Monitor 60201009"\
+  "displayName": "CSV files from SIS"\
 }\
 '
 

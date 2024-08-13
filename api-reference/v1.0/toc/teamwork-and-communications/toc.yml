@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
@@ -15,7 +18,7 @@ items:
       href: ../../api/teamsapp-update.md
     - name: Delete app from catalog
       href: ../../api/teamsapp-delete.md
-    - name: Get bot associated with app in catalog
+    - name: Get associated bot
       href: ../../api/teamworkbot-get.md
   - name: Teams app installation
     items:
@@ -149,7 +152,7 @@ items:
           href: ../../api/participant-mute.md
         - name: Create
           href: ../../api/call-post-audioroutinggroups.md
-        - name: List audioRoutingGroups
+        - name: List audio routing groups
           href: ../../api/call-list-audioroutinggroups.md
         - name: Add large gallery view
           href: ../../api/call-addlargegalleryview.md
@@ -160,7 +163,7 @@ items:
         - name: Record response
           href: ../../api/call-record.md
         - name: Cancel media processing
-          href: ../../api/call-cancelMediaProcessing.md
+          href: ../../api/call-cancelmediaprocessing.md
         - name: Subscribe to tone
           href: ../../api/call-subscribetotone.md
         - name: Send DTMF tone
@@ -246,7 +249,7 @@ items:
       - name: Online meeting
         href: ../../resources/onlinemeeting.md
       - name: Create
-        href: ../../api/application-post-onlineMeetings.md
+        href: ../../api/application-post-onlinemeetings.md
       - name: Get
         href: ../../api/onlinemeeting-get.md
       - name: Update
@@ -257,7 +260,7 @@ items:
         href: ../../api/onlinemeeting-createorget.md
       - name: List transcripts
         href: ../../api/onlinemeeting-list-transcripts.md
-      - name: List
+      - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
     - name: Call recording
       items:
@@ -303,26 +306,50 @@ items:
       href: ../../api/presence-setstatusmessage.md
   - name: Virtual events
     items:
-    - name: Virtual event webinar
+    - name: Virtual event presenter
       items:
-      - name: Virtual event webinar
-        href: ../../resources/virtualeventwebinar.md
+      - name: Virtual event presenter
+        href: ../../resources/virtualeventpresenter.md
       - name: List
-        href: ../../api/virtualeventsroot-list-webinars.md
+        href: ../../api/virtualevent-list-presenters.md
+      - name: Create
+        href: ../../api/virtualevent-post-presenters.md
       - name: Get
-        href: ../../api/virtualeventwebinar-get.md
-      - name: List by user role
-        href: ../../api/virtualeventwebinar-getbyuserrole.md
-      - name: List by user ID and role
-        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+        href: ../../api/virtualeventpresenter-get.md
+      - name: Update
+        href: ../../api/virtualeventpresenter-update.md
+      - name: Delete
+        href: ../../api/virtualeventpresenter-delete.md
     - name: Virtual event registration
       items:
       - name: Virtual event registration
         href: ../../resources/virtualeventregistration.md
       - name: List
-        href: ../../api/virtualeventwebinar-list-registrations.md
+        href: ../../api/virtualeventregistration-list.md
+      - name: Create
+        href: ../../api/virtualeventwebinar-post-registrations.md
       - name: Get
         href: ../../api/virtualeventregistration-get.md
+      - name: Cancel
+        href: ../../api/virtualeventregistration-cancel.md
+      - name: List sessions
+        href: ../../api/virtualeventregistration-list-sessions.md
+    - name: Virtual event webinar registration configuration
+      items:
+      - name: Virtual event webinar registration configuration
+        href: ../../resources/virtualeventwebinarregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event registration question
+      items:
+      - name: Virtual event registration question
+        href: ../../resources/virtualeventregistrationquestionbase.md
+      - name: List
+        href: ../../api/virtualeventregistrationconfiguration-list-questions.md
+      - name: Create
+        href: ../../api/virtualeventregistrationconfiguration-post-questions.md
+      - name: Delete
+        href: ../../api/virtualeventregistrationquestionbase-delete.md
     - name: Virtual event session
       items:
       - name: Virtual event session
@@ -331,6 +358,40 @@ items:
         href: ../../api/virtualevent-list-sessions.md
       - name: Get
         href: ../../api/virtualeventsession-get.md
+    - name: Virtual event townhall
+      items:
+      - name: Virtual event townhall
+        href: ../../resources/virtualeventtownhall.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-townhalls.md
+      - name: Get
+        href: ../../api/virtualeventtownhall-get.md
+      - name: Update
+        href: ../../api/virtualeventtownhall-update.md
+      - name: Publish
+        href: ../../api/virtualeventtownhall-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventtownhall-cancel.md
+    - name: Virtual event webinar
+      items:
+      - name: Virtual event webinar
+        href: ../../resources/virtualeventwebinar.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-webinars.md
+      - name: Get
+        href: ../../api/virtualeventwebinar-get.md
+      - name: Update
+        href: ../../api/virtualeventwebinar-update.md
+      - name: Publish
+        href: ../../api/virtualeventwebinar-publish.md
+      - name: Cancel
+        href: ../../api/virtualeventwebinar-cancel.md
+      - name: List in organization
+        href: ../../api/virtualeventsroot-list-webinars.md
+      - name: List by user role
+        href: ../../api/virtualeventwebinar-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -424,6 +485,10 @@ items:
       href: ../../api/channel-post-members.md
     - name: Get channel member
       href: ../../api/channel-get-members.md
+    - name: Archive channel
+      href: ../../api/channel-archive.md
+    - name: Unarchive channel
+      href: ../../api/channel-unarchive.md
     - name: Update channel member's role
       href: ../../api/channel-update-members.md
     - name: Remove channel member
@@ -543,7 +608,7 @@ items:
       - name: Delete message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -561,7 +626,7 @@ items:
       - name: Delete reply message in channel
         href: ../../api/chatmessage-softdelete.md
       - name: Undo deletion of a reply message in channel
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
@@ -585,7 +650,7 @@ items:
       - name: Delete message in chat
         href: ../../api/chatmessage-softdelete.md
       - name: Undo the deletion of a message in chat
-        href: ../../api/chatmessage-undoSoftdelete.md
+        href: ../../api/chatmessage-undosoftdelete.md
       - name: Set reaction to a message in channel
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel

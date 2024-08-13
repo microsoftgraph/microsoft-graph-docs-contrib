@@ -3,7 +3,7 @@ title: "valueBasedAttribute resource type"
 description: "Represents an attribute backed by a static value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

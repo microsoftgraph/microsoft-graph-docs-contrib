@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
+toc.title: Named item
 ---
 
 # workbookNamedItem resource type
@@ -18,27 +19,28 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add named item](../api/nameditem-add.md)|[workbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope.|
-|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[workbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
-|[Get named item](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |Read properties and relationships of namedItem object.|
-|[Update named item](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)	|Update NamedItem object. |
-|[List range](../api/nameditem-range.md)|[Range](workbookrange.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type isn't a range.|
-|[List named item](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get namedItem object collection. |
+|[List](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) collection |Get the list of workbookNamedItem objects. |
+|[Add](../api/nameditem-add.md)|[workbookNamedItem](workbooknameditem.md)|Add a new workbookNamedItem object to the collection of the given scope.|
+|[Get](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |Read the properties and relationships of a workbookNamedItem object.|
+|[Update](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)	|Update a workbookNamedItem object. |
+|[Add named item to collection](../api/nameditem-addformulalocal.md)|[workbookNamedItem](workbooknameditem.md)|Add a new workbookNamedItem object to the collection of the given scope. Uses the user's locale for the formula.|
+|[List range](../api/nameditem-range.md)|[workbookRange](workbookrange.md)|Return the range object that is associated with the workbookNamedItem object. Throw an exception if the workbookNamedItem object's **type** is not a range.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|string|Represents the comment associated with this name.|
-|name|string|The name of the object. Read-only.|
-|scope|string|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
-|type|string|Indicates what type of reference is associated with the name. The possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
-|value|Json|Represents the formula that the name is defined to refer to. for example, =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.|
-|visible|boolean|Specifies whether the object is visible or not.|
+|comment|String|The comment associated with this name.|
+|name|String|The name of the object. Read-only.|
+|scope|String|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
+|type|String|The type of reference is associated with the name. Possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
+|value|String|The formula that the name is defined to refer to. For example, `=Sheet14!$B$2:$H$12` and `=4.75`. Read-only.|
+|visible|Boolean|Indicates whether the object is visible.|
+
 
 ## Relationships
 | Relationship	   | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[workbookWorksheet](workbookworksheet.md)|Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.|
+|worksheet|[workbookWorksheet](workbookworksheet.md)|Returns the worksheet to which the named item is scoped. Available only if the item is scoped to the worksheet. Read-only.|
 
 ## JSON representation
 

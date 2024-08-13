@@ -22,6 +22,10 @@ Indicates the status of a [staff member](bookingstaffmember.md) for a given time
 |status |bookingsAvailabilityStatus |The status of the staff member. Possible values are: `available`, `busy`, `slotsAvailable`, `outOfOffice`, `unknownFutureValue`.|
 |startDateTime |dateTimeTimeZone |The start time of the time slot.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

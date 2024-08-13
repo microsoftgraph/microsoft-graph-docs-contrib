@@ -3,7 +3,7 @@ title: "Get caseOperation"
 description: "Read the properties and relationships of a caseOperation object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

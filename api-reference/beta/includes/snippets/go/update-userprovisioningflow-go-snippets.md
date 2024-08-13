@@ -44,7 +44,7 @@ licenseSkus := []string {
 }
 userConfiguration.SetLicenseSkus(licenseSkus)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff", 
 }
 userConfiguration.SetAdditionalData(additionalData)
 userConfiguration1 := graphmodelsindustrydata.NewUserConfiguration()
@@ -57,7 +57,7 @@ licenseSkus := []string {
 }
 userConfiguration1.SetLicenseSkus(licenseSkus)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/students", 
+	"roleGroup@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/students", 
 }
 userConfiguration1.SetAdditionalData(additionalData)
 

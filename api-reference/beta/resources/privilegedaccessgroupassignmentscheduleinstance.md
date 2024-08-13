@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Assignment schedule instance
 ---
 
 # privilegedAccessGroupAssignmentScheduleInstance resource type

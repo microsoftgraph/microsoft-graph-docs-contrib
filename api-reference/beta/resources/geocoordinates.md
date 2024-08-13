@@ -27,6 +27,10 @@ If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item r
 | latitude  | Double | Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
 | longitude | Double | Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

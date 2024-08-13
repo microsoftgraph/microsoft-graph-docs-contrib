@@ -2,7 +2,7 @@
 title: "Create microsoftTunnelServer"
 description: "Create a new microsoftTunnelServer object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -50,12 +50,13 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the managed server. This id is assigned at enrollment time. Supports: $delete. $Update, $insert, $skip, $top is not supported. Read-only.|
-|displayName|String|The display name for the server. This property is required when a server is created and cannot be cleared during updates.|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
-|lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in|
-|agentImageDigest|String|The digest of the current agent image running on this server|
-|serverImageDigest|String|The digest of the current server image running on this server|
+|id|String|The unique identifier for the managed server. This ID is assigned at registration time. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
+|displayName|String|The display name of the server. It is the same as the host name during registration and can be changed later. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Max allowed length is 200 chars.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
+|lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported Read-only.|
+|agentImageDigest|String|The digest of the current agent image running on this server. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
+|serverImageDigest|String|The digest of the current server image running on this server. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
+|deploymentMode|[microsoftTunnelDeploymentMode](../resources/intune-mstunnel-microsofttunneldeploymentmode.md)|Microsoft Tunnel server deployment mode. The value is set when the server is registered. Possible values are standaloneRootful, standaloneRootless, podRootful, podRootless. Default value: standaloneRootful. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. Possible values are: `standaloneRootful`, `standaloneRootless`, `podRootful`, `podRootless`, `unknownFutureValue`.|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 Content-type: application/json
-Content-length: 312
+Content-length: 355
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
@@ -77,7 +78,8 @@ Content-length: 312
   "tunnelServerHealthStatus": "healthy",
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
   "agentImageDigest": "Agent Image Digest value",
-  "serverImageDigest": "Server Image Digest value"
+  "serverImageDigest": "Server Image Digest value",
+  "deploymentMode": "standaloneRootless"
 }
 ```
 
@@ -86,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 361
+Content-Length: 404
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
@@ -95,6 +97,7 @@ Content-Length: 361
   "tunnelServerHealthStatus": "healthy",
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
   "agentImageDigest": "Agent Image Digest value",
-  "serverImageDigest": "Server Image Digest value"
+  "serverImageDigest": "Server Image Digest value",
+  "deploymentMode": "standaloneRootless"
 }
 ```

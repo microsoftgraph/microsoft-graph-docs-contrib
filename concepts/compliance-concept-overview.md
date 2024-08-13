@@ -3,7 +3,7 @@ title: "Overview of compliance and privacy APIs in Microsoft Graph"
 description: "Use the Microsoft Graph compliance and privacy APIs to automate repetitive tasks and integrate with your compliance tools to meet required industry regulations."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 ms.custom: scenarios:getting-started
 ---
 

@@ -3,7 +3,7 @@ title: "Create educationalActivity"
 description: "Create a new educationalActivity."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

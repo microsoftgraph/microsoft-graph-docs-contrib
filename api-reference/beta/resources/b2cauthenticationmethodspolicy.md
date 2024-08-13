@@ -21,8 +21,8 @@ The local accounts in Azure AD B2C do not follow the settings or paradigms from 
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [Get b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-get.md) | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md) | Read the properties of a **b2cauthenticationmethodspolicy** object. |
-| [Update b2cAuthenticationMethodsPolicy](../api/b2cauthenticationmethodspolicy-update.md) | None | Update the properties of a **b2cauthenticationmethodspolicy** objects. |
+| [Get](../api/b2cauthenticationmethodspolicy-get.md) | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md) | Read the properties of a **b2cauthenticationmethodspolicy** object. |
+| [Update](../api/b2cauthenticationmethodspolicy-update.md) | None | Update the properties of a **b2cauthenticationmethodspolicy** objects. |
 
 ## Properties
 

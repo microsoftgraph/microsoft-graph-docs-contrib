@@ -6,6 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
+toc.title: Role assignment
 ---
 
 # unifiedRoleAssignment resource type
@@ -20,11 +21,11 @@ Represents a role definition assigned to a principal at a particular scope. Supp
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List role assignment](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read a list of unifiedRoleAssignment objects and their properties. |
+| [List](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read a list of unifiedRoleAssignment objects and their properties. |
+| [Create](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
+| [Get](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
+| [Delete](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 | [List transitive role assignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get direct and transitive unifiedRoleAssignments assigned to a specific principal. Specifying principalId is required. |
-| [Get role assignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
-| [Create role assignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
-| [Delete role assignment](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 
 ## Properties
 
@@ -40,12 +41,12 @@ Represents a role definition assigned to a principal at a particular scope. Supp
 
 ## Relationships
 
-| Relationship | Type    |Description|
-|:---------------|:--------|:----------|
-|appScope|[appScope](appscope.md)|Details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand` for the entitlement provider only.|
-|directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. Supports `$expand`. |
-|principal|[directoryObject](directoryobject.md)| The assigned principal. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only. Supports `$expand`. |
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. **roleDefinition.id** will be auto expanded. Supports `$expand`. |
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|appScope|[appScope](appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand` for the entitlement provider only.|
+|directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand` for the directory provider.|
+|principal|[directoryObject](directoryobject.md)| Referencing the assigned principal. Read-only. Supports `$expand` except for the Exchange provider.|
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for. Supports `$expand`.|
 
 
 

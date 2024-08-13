@@ -3,7 +3,7 @@ title: "ediscoveryNoncustodialDataSource: removeHold"
 description: "Start the process of removing hold from eDiscovery non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

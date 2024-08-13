@@ -15,6 +15,7 @@ The following table lists the latency to expect between an event happening in th
 | Resource                | Average latency      | Maximum latency |
 |:------------------------|:---------------------|:----------------|
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
+| [approvals][]           | Less than 10 seconds | 40 seconds      |
 | [calendar][]            | Less than 1 minute   | 3 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
 | [callRecording][]       | Less than 10 seconds | 60 minutes      |
@@ -30,11 +31,16 @@ The following table lists the latency to expect between an event happening in th
 | [group][]               | Unknown              | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
+| [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
+| [openShiftChangeRequest][]| Less than 1 minute | 60 minutes      |
 | [presence][]            | Less than 10 seconds | 1 minute        |
 | [printer][]             | Less than 1 minute   | 5 minutes       |
 | [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
+| [shift][]               | Less than 1 minute   | 60 minutes      |
+| [swapShiftsChangeRequest][]| Less than 1 minute| 60 minutes      |
 | [team][]                | Less than 10 seconds | 60 minutes      |
+| [timeOffRequest][]      | Less than 1 minute   | 60 minutes      |
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Unknown              | Unknown         |
 
@@ -52,14 +58,20 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[offerShiftRequest]: /graph/api/resources/offershiftrequest
+[openShiftChangeRequest]: /graph/api/resources/openshiftchangerequest
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[shift]: /graph/api/resources/shift
+[swapShiftsChangeRequest]: /graph/api/resources/swapshiftschangerequest
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[timeOffRequest]: /graph/api/resources/timeoffrequest
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
 [calendar]: /graph/api/resources/calendar
+[approvals]: /graph/api/resources/approvalItem

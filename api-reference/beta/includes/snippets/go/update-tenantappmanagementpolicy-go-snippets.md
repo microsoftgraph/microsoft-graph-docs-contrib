@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewTenantAppManagementPolicy()
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-applicationRestrictions := graphmodels.NewAppManagementConfiguration()
+applicationRestrictions := graphmodels.NewAppManagementApplicationConfiguration()
 
 
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()

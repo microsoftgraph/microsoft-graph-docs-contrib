@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/booking-api-overview.md
@@ -21,11 +24,11 @@ items:
   items:
   - name: Booking business
     href: ../../resources/bookingbusiness.md
-  - name: List bookingBusinesses
+  - name: List
     href: ../../api/bookingbusiness-list.md
-  - name: Create bookingBusiness
+  - name: Create
     href: ../../api/bookingbusiness-post-bookingbusinesses.md
-  - name: Get bookingBusiness
+  - name: Get
     href: ../../api/bookingbusiness-get.md
   - name: Update
     href: ../../api/bookingbusiness-update.md
@@ -129,6 +132,8 @@ items:
     href: ../../resources/bookingcustomerinformation.md
   - name: Booking customer information base
     href: ../../resources/bookingcustomerinformationbase.md
+  - name: Booking page settings
+    href: ../../resources/bookingpagesettings.md
   - name: Booking question answer
     href: ../../resources/bookingquestionanswer.md
   - name: Booking question assignment
@@ -141,6 +146,10 @@ items:
     href: ../../resources/bookingworkhours.md
   - name: Booking work time slot
     href: ../../resources/bookingworktimeslot.md
+  - name: Bookings availability
+    href: ../../resources/bookingsavailability.md
+  - name: Bookings availability window
+    href: ../../resources/bookingsavailabilitywindow.md
   - name: Date time time zone
     href: ../../resources/datetimetimezone.md
   - name: Location

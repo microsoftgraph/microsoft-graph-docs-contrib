@@ -3,7 +3,7 @@ title: "ediscoveryCase resource type"
 description: "In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -76,7 +76,7 @@ In the context of eDiscovery, contains custodians, holds, searches, review sets,
 |tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns a list of **ediscoveryReviewTag** objects associated to this case.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

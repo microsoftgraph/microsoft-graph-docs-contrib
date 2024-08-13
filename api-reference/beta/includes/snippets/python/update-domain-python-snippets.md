@@ -14,6 +14,7 @@ request_body = Domain(
 	supported_services = [
 		"Email",
 		"OfficeCommunicationsOnline",
+		"CustomUrlDomain",
 	],
 )
 

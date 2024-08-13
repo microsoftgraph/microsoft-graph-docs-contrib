@@ -14,7 +14,8 @@
       "title",
       "description",
       "author",
-      "doc_type"
+      "doc_type",
+      "ms.subservice"
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"

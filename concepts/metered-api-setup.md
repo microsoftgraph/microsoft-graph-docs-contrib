@@ -33,48 +33,39 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 
 1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
 
-2. Use **az resource create** to create a new instance of the **Microsoft.GraphServices/accounts** resource type to associate your application registration with the active subscription. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
+2. Use [az graph-services](/cli/azure/service-page/graph%20services) in [Azure Cloudshell](https://shell.azure.com/) or your own [Azure CLI](/cli/azure/) installation to create a new instance of the **Microsoft.GraphServices/accounts** resource type to associate your application registration with the active subscription.
+ 
+Copy the following command into your preferred command-line interface (PowerShell, Bash, or Windows command prompt), replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response includes a JSON representation of the newly created billing resource. 
 
-# [Azure Cloud Shell](#tab/azurecloudshell)
-  ```PowerShell
-  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{\"appId\": \"myAppGUID\"}" --location Global --subscription mySubscriptionGUID
-  ```
-# [PowerShell](#tab/powershell)
-  ```PowerShell
-  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{\`"appId\`": \`"myAppGUID\`"}" --location Global --subscription mySubscriptionGUID
-  ```
-# [Windows Command Prompt](#tab/commandprompt)
-  ```CommandPrompt
-  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{""appId"": ""myAppGUID""}" --location Global --subscription mySubscriptionGUID
-  ```
-
----
+```powershell
+az graph-services account create --resource-group myRG  --resource-name myGraphAppBilling --subscription mySubscriptionGUID --location global --app-id AppRegGUID
+```
 
   | Parameter | Description |
   |:--------------------------|:----------------------------------------|
   | myRG | The name of an existing Azure resource group to add the newly created resource to. |
   | myGraphAppBilling | The name you want to give to this resource instance. |
-  | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. |
-  | mySubscriptionGUID | The ID of the Azure subscription that will receive billing events, provided as a string parameter; for example, 00000000-0000-0000-0000-000000000000. |
+  | myAppGUID | The Application (client) ID of the application being enabled, provided as a string parameter; for example, 123e4567-e89b-12d3-a456-426655440000. |
+  | mySubscriptionGUID | The ID of the Azure subscription that will receive billing events, provided as a string parameter; for example, 123e4567-e89b-12d3-a456-426655440000. |
 
   A successful JSON result will look something like this:
 
-```
+```json
 {
   "extendedLocation": null,
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
   "identity": null,
   "kind": null,
   "location": "Global",
   "managedBy": null,
-  "name": "myGraphAppBilling",
+  "name": "<myGraphAppBilling>",
   "plan": null,
   "properties": {
-    "appId": "00000000-0000-0000-0000-000000000000",
-    "billingPlanId": "00000000-0000-0000-0000-000000000000",
+    "appId": "<myAppGUID>",
+    "billingPlanId": "123e4567-e89b-12d3-a456-426655440000",
     "provisioningState": "Succeeded"
   },
-  "resourceGroup": "myRG",
+  "resourceGroup": "<myRG>",
   "sku": null,
   "systemData": {
     "createdAt": "2023-01-31T00:12:20.7893671Z",
@@ -96,28 +87,28 @@ Use the following steps to verify that an application is properly enabled to use
 
 2. Use **az resource list** to list the resources associated with the active Azure subscription. Copy the following command into your command-line interface and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the resources associated with the active Azure subscription.
 
-```PowerShell
+```powershell
   az resource list --resource-type Microsoft.GraphServices/accounts
 ```
 
 A successful JSON result will look something like this:
 
-```
+```json
 [
   {
     "changedTime": "2023-04-25T18:12:30.586342+00:00",
     "createdTime": "2023-04-25T18:02:30.141407+00:00",
     "extendedLocation": null,
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+    "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
     "identity": null,
     "kind": null,
     "location": "global",
     "managedBy": null,
-    "name": "myGraphAppBilling",
+    "name": "<myGraphAppBilling>",
     "plan": null,
     "properties": null,
     "provisioningState": "Succeeded",
-    "resourceGroup": "myRG",
+    "resourceGroup": "<myRG>",
     "sku": null,
     "tags": null,
     "type": "Microsoft.GraphServices/accounts"
@@ -127,9 +118,8 @@ A successful JSON result will look something like this:
 
 3. With the values returned in step 2, use **az resource show** to show the full details of the resource. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the requested resource.
 
-```PowerShell
+```powershell
   az resource show --resource-group myRg --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts
-```
 
 | Parameter | Description |
   |:--------------------------|:----------------------------------------|
@@ -138,21 +128,21 @@ A successful JSON result will look something like this:
 
   A successful JSON result will look something like this:
 
-```
+```json
 {
   "extendedLocation": null,
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "id": "/subscriptions/<mySubscriptionGUID>/resourceGroups/<myRG>/providers/Microsoft.GraphServices/accounts/<myGraphAppBilling>",
   "identity": null,
   "kind": null,
   "location": "Global",
   "managedBy": null,
-  "name": "myGraphAppBilling",
+  "name": "<myGraphAppBilling>",
   "plan": null,
   "properties": {
-    "appId": "00000000-0000-0000-0000-000000000000",
-    "billingPlanId": "00000000-0000-0000-0000-000000000000"
+    "appId": "<myAppGUID>",
+    "billingPlanId": "123e4567-e89b-12d3-a456-426655440000"
   },
-  "resourceGroup": "myRG",
+  "resourceGroup": "<myRG>",
   "sku": null,
   "tags": null,
   "type": "microsoft.graphservices/accounts"
@@ -178,3 +168,4 @@ The invoice will include details that allow you to understand the amount of usag
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
+- [Metered APIs frequently asked questions](/graph/metered-api-faq)

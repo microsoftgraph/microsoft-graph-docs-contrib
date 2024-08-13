@@ -78,7 +78,7 @@ const bulkUpload = {
             'urn:contoso:employee': {
                 HireDate: '2021-05-01T00:00:00-05:00',
                 JobCode: 'AB-1002'
-            }            
+            }
         }
     },
     {
@@ -146,7 +146,7 @@ const bulkUpload = {
             'urn:contoso:employee': {
                 HireDate: '2022-07-15T00:00:00-05:00',
                 JobCode: 'AB-1003'
-            }            
+            }
         }
     }
 ],

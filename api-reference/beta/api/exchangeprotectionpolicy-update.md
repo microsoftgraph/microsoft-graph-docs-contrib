@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_update"
@@ -75,10 +76,10 @@ Authorization: Bearer <Access-Token>
   "displayName": "Exchange Policy - Inadvertent data loss",
   "mailboxProtectionUnits@delta": [
     {
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
       "@removed": {
@@ -95,6 +96,36 @@ Authorization: Bearer <Access-Token>
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/exchangeprotectionpolicy-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/exchangeprotectionpolicy-update-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/exchangeprotectionpolicy-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangeprotectionpolicy-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/exchangeprotectionpolicy-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -115,7 +146,7 @@ HTTP/1.1 200 OK
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -128,7 +159,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -140,11 +171,11 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "protectRequested",
       "createdBy": {
@@ -158,7 +189,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -170,11 +201,11 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "99954f18-c8ec-4b62-85bf-cdf3b70b140e",
-      "userId": "7b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "7b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "removeRequested",
       "createdBy": {
@@ -188,7 +219,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -200,7 +231,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario

@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restoresession_list"
@@ -62,6 +63,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/restoresession-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restoresession-list-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restoresession-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restoresession-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restoresession-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/restoresession-list-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restoresession-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/restoresession-list-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -95,7 +130,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -106,7 +141,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -123,7 +158,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -134,7 +169,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -151,7 +186,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -162,7 +197,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     },
     {
@@ -179,7 +214,7 @@ Content-Type: application/json
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2023-03-30T12-01-03.45Z",
+      "createdDateTime": "2023-03-30T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -190,7 +225,7 @@ Content-Type: application/json
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+      "lastModifiedDateTime": "2023-03-30T12:01:03.45Z",
       "error": null
     }
   ]

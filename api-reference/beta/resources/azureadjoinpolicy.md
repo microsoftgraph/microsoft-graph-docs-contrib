@@ -20,6 +20,7 @@ Represents the policy scope of the Microsoft Entra tenant that controls the abil
 |:---|:---|:---|
 |allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed.|
 |isAdminConfigurable|Boolean|Determines if administrators can modify this policy.|
+|localAdmins|[localAdminSettings](../resources/localAdminSettings.md)|Determines who becomes a local administrator on joined devices.|
 
 ## Relationships
 
@@ -27,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.azureADJoinPolicy"
@@ -39,6 +40,9 @@ The following is a JSON representation of the resource.
   "isAdminConfigurable": "Boolean",
   "allowedToJoin": {
     "@odata.type": "microsoft.graph.deviceRegistrationMembership"
+  },
+  "localAdmins": {
+        "@odata.type": "microsoft.graph.localAdminSettings"
   }
 }
 ```
