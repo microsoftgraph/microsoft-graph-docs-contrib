@@ -25,7 +25,7 @@ For details about report views and names, see [Microsoft 365 reports - Forms act
 |:-----|:----------|:----------|
 |[Get user detail](../api/reportroot-getformsuseractivityuserdetail.md )|Stream|Get the detailed forms usage per user.|
 |[Get user counts](../api/reportroot-getformsuseractivityusercounts.md )|Stream|Get the trend in the number of active users for each user type.|
-|[Get activity counts](../api/reportroot-getformsuseractivitycounts.md)|Stream|Get the number of activities count by activity type over a selected period.|
+|[Get activity counts](../api/reportroot-getformsuseractivitycounts.md)|Stream|Get the number of activities count by activity type during a selected period.|
 
 ### Microsoft Teams device usage
 
@@ -36,8 +36,8 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 |[Get user detail](../api/reportroot-getteamsdeviceusageuserdetail.md)|Stream|Get details about Microsoft Teams device usage by user.|
 |[Get user counts](../api/reportroot-getteamsdeviceusageusercounts.md)|Stream|Get the number of daily unique users by device type.|
 |[Get total user counts](../api/reportroot-getteamsdeviceusagetotalusercounts.md)|Stream|Get the number of daily unique Microsoft Teams licensed or non-licensed users by device type.|
-|[Get distribution user counts](../api/reportroot-getteamsdeviceusagedistributionusercounts.md)|Stream|Get the number of unique users by device type over the selected time period.|
-|[Get distribution total user counts](../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md)|Stream|Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period.|
+|[Get distribution user counts](../api/reportroot-getteamsdeviceusagedistributionusercounts.md)|Stream|Get the number of unique users by device type during the selected time period.|
+|[Get distribution total user counts](../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md)|Stream|Get the number of unique Microsoft Teams licensed or non-licensed users by device type during the selected time period.|
 
 ### Microsoft Teams user activity
 
@@ -50,8 +50,8 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 |[Get activity total counts](../api/reportroot-getteamsuseractivitytotalcounts.md)|Stream|Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or unlicensed users.|
 |[Get user counts](../api/reportroot-getteamsuseractivityusercounts.md)|Stream|Get the number of users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.|
 |[Get total user counts](../api/reportroot-getteamsuseractivitytotalusercounts.md)|Stream|Get the number of Microsoft Teams licensed or unlicensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.|
-|[Get distribution user counts](../api/reportroot-getteamsuseractivitydistributionusercounts.md)|Stream|Get the number of Microsoft Teams licensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.|
-|[Get distribution total user counts](../api/reportroot-getteamsuseractivitydistributiontotalusercounts.md)|Stream|Get the number of Microsoft Teams licensed or unlicensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.|
+|[Get distribution user counts](../api/reportroot-getteamsuseractivitydistributionusercounts.md)|Stream|Get the number of Microsoft Teams licensed users by activity type during the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.|
+|[Get distribution total user counts](../api/reportroot-getteamsuseractivitydistributiontotalusercounts.md)|Stream|Get the number of Microsoft Teams licensed or unlicensed users by activity type during the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.|
 |[Get total distribution activity counts](../api/reportroot-getteamsuseractivitytotaldistributioncounts.md)|Stream|Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages.|
 
 ### Microsoft Teams team activity
@@ -168,7 +168,7 @@ For details about report views and names, see [Microsoft 365 reports - OneDrive 
 |[Get account detail](../api/reportroot-getonedriveusageaccountdetail.md)|Stream|Get details about OneDrive usage by account.|
 |[Get account counts](../api/reportroot-getonedriveusageaccountcounts.md)|Stream|Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.|
 |[Get file counts](../api/reportroot-getonedriveusagefilecounts.md)|Stream|Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period.|
-|[Get storage](../api/reportroot-getonedriveusagestorage.md)|Stream|Get the trend on the amount of storage you are using in OneDrive for Business.|
+|[Get storage](../api/reportroot-getonedriveusagestorage.md)|Stream|Get the trend on the amount of storage you're using in OneDrive for Business.|
 
 ### SharePoint activity
 
@@ -178,7 +178,7 @@ For details about report views and names, see [Microsoft 365 reports - SharePoin
 |:-----|:----------|:----------|
 |[Get user detail](../api/reportroot-getsharepointactivityuserdetail.md)|Stream|Get details about SharePoint activity by user.|
 |[Get file counts](../api/reportroot-getsharepointactivityfilecounts.md)|Stream|Get the number of unique, licensed users who interacted with files stored on SharePoint sites.|
-|[Get user counts](../api/reportroot-getsharepointactivityusercounts.md)|Stream|Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.|
+|[Get user counts](../api/reportroot-getsharepointactivityusercounts.md)|Stream|Get the trend in the number of active users. A user is considered active if he or she's executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.|
 |[Get pages](../api/reportroot-getsharepointactivitypages.md)|Stream|Get the number of unique pages visited by users.|
 
 ### SharePoint site usage
