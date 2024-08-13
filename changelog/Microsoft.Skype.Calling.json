@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d8f96b79-6370-407f-a68a-733b41652b9e",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        }
+      ],
+      "Id": "d8f96b79-6370-407f-a68a-733b41652b9e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-08T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
           "ApiChange": "Enum type",
           "ChangedApiName": "meetingLiveShareOptions",
