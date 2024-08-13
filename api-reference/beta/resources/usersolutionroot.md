@@ -1,19 +1,19 @@
 ---
-title: "usersolution resource type"
-description: "Represents a user's custom usersolution entity."
+title: "solution resource type"
+description: "Represents a user's custom solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# usersolution resource type
+# solution resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's custom usersolution entity.
+Represents a user's custom solution entity.
 
 ## Properties
 
