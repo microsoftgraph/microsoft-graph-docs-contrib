@@ -23,6 +23,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |[Filter by current user](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of **accessPackageAssignmentRequest** objects filtered on the signed-in user.|
 |[Cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel an **accessPackageAssignmentRequest** object that is in a cancelable state.|
 |[Reprocess](../api/accesspackageassignmentrequest-reprocess.md) | None | Automatically retry a user’s request for access to an access package.|
+| [Resume](../api/accesspackageassignmentrequest-resume.md) | None | Resumes an user's access package request after waiting for a callback from a custom extension.|
 
 ## Properties
 |Property|Type|Description|
