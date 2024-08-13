@@ -167,6 +167,72 @@
       "CreatedDateTime": "2024-05-10T21:07:51.9198392Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workplaceSensorEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workplaceSensorEventType** enumeration type.",
+          "Target": "workplaceSensorEventType"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Member",
+          "ChangedApiName": "badge",
+          "ChangeType": "Addition",
+          "Description": "Added the `badge` member to the **workplaceSensorType** enumeration.",
+          "Target": "workplaceSensorType"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Property",
+          "ChangedApiName": "eventValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventValue** property to the [workplaceSensorDeviceTelemetry](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDeviceTelemetry?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorDeviceTelemetry"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationHint",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationHint** property to the [workplaceSensorDeviceTelemetry](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDeviceTelemetry?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorDeviceTelemetry"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workplaceSensorEventValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [workplaceSensorEventValue](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorEventValue?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorEventValue"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/emailIdentity?view=graph-rest-beta) resource.",
+          "Target": "emailIdentity"
+        },
+        {
+          "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
+          "Target": "identity"
+        }
+      ],
+      "Id": "012c6730-61ac-4d57-82b0-fbc5da001746",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-12T10:16:22.3182957Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
     }
   ]
 }
