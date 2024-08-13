@@ -21,7 +21,11 @@ Provides the details on how to generate the aggregations in the results.
 |minimumCount|Int32|The minimum number of items that should be present in the aggregation to be returned in a bucket. Optional.|
 |prefixFilter|String|A filter to define a matching criteria. The key should start with the specified prefix to be returned in the response. Optional.|
 |ranges|[bucketAggregationRange](bucketaggregationrange.md) collection|Specifies the manual ranges to compute the aggregations. This is only valid for nonstring refiners of date or numeric type. Optional.|
-|sortBy|bucketAggregationSortProperty| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabetically based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation. Required.
+|sortBy|bucketAggregationSortProperty| The possible values are `count` to sort by the number of matches in the aggregation, `keyAsString`to sort alphabetically based on the key in the aggregation, `keyAsNumber` for numerical sorting based on the key in the aggregation. Required.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

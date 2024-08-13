@@ -12,7 +12,7 @@ WorkbookNamedItem workbookNamedItem = new WorkbookNamedItem();
 workbookNamedItem.setType("type-value");
 workbookNamedItem.setScope("scope-value");
 workbookNamedItem.setComment("comment-value");
-Value value = new Value();
+UntypedNode value = new UntypedNode();
 workbookNamedItem.setValue(value);
 workbookNamedItem.setVisible(true);
 WorkbookNamedItem result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().byWorkbookNamedItemId("{workbookNamedItem-id}").patch(workbookNamedItem);

@@ -5,6 +5,7 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+toc.title: Outlook task group (deprecated)
 ---
 
 # outlookTaskGroup resource type (deprecated)

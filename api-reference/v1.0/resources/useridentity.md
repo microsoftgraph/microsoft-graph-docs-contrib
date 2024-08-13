@@ -24,6 +24,10 @@ Inherits from [identity](identity.md).
 | ipAddress   | String | Indicates the client IP address associated with the user performing the activity (audit log only).|
 | userPrincipalName | String  | The **userPrincipalName** attribute of the user. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

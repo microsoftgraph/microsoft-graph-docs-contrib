@@ -20,6 +20,10 @@ The status of a long-running operation.
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new SharePointRestoreSession
 {
@@ -16,62 +17,104 @@ var requestBody = new SharePointRestoreSession
 		{
 			"siteRestoreArtifacts@delta" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					RestorePoint = new 
 					{
-						OdataId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"@odata.id", new UntypedString("1b014d8c-71fe-4d00-a01a-31850bc5b32c")
+							},
+						})
 					},
-					DestinationType = "new",
-				},
-				new 
+					{
+						"destinationType", new UntypedString("new")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					RestorePoint = new 
 					{
-						OdataId = "2b014d8c-71fe-4d00-a01a-31850bc5b32",
+						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"@odata.id", new UntypedString("2b014d8c-71fe-4d00-a01a-31850bc5b32")
+							},
+						})
 					},
-					DestinationType = "new",
-				},
-				new 
+					{
+						"destinationType", new UntypedString("new")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					RestorePoint = new 
 					{
-						OdataId = "3b014d8c-71fe-4d00-a01a-31850bc5b32c",
+						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"@odata.id", new UntypedString("3b014d8c-71fe-4d00-a01a-31850bc5b32c")
+							},
+						})
 					},
-					DestinationType = "new",
-				},
-				new 
+					{
+						"destinationType", new UntypedString("new")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					RestorePoint = new 
 					{
-						OdataId = "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
+						"restorePoint", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"@odata.id", new UntypedString("4b014d8c-71fe-4d00-a01a-31850bc5b32c")
+							},
+						})
 					},
-					DestinationType = "new",
-				},
-				new 
+					{
+						"destinationType", new UntypedString("new")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Removed = new 
 					{
-						Reason = "changed",
+						"@removed", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"reason", new UntypedString("changed")
+							},
+						})
 					},
-					Id = "959ba739-70b5-43c4-8c90-b2c22014f18a",
-				},
-				new 
+					{
+						"id", new UntypedString("959ba739-70b5-43c4-8c90-b2c22014f18a")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Removed = new 
 					{
-						Reason = "changed",
+						"@removed", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"reason", new UntypedString("changed")
+							},
+						})
 					},
-					Id = "959ba739-70b5-43c4-8c90-b2c22014f18b",
-				},
-				new 
+					{
+						"id", new UntypedString("959ba739-70b5-43c4-8c90-b2c22014f18b")
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Removed = new 
 					{
-						Reason = "changed",
+						"@removed", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"reason", new UntypedString("changed")
+							},
+						})
 					},
-					Id = "959ba739-70b5-43c4-8c90-b2c22014f18c",
-				},
+					{
+						"id", new UntypedString("959ba739-70b5-43c4-8c90-b2c22014f18c")
+					},
+				}),
 			}
 		},
 	},
