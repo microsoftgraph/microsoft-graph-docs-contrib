@@ -15,21 +15,21 @@ Enable a bot to answer an incoming [call](../resources/call.md). The incoming ca
 
 The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 This API supports the following PSTN scenarios:
 
-+ Incoming call to Bot's PSTN number and then bot invites another PSTN.
-+ Incoming call to Bot's PSTN number and then bot transfer to another PSTN.
-+ Incoming call to Bot's PSTN number and then bot redirects to another PSTN.
-+ Incoming call to Bot's instance identifier and then bot invites another PSTN.
-+ Incoming call to Bot's instance identifier and then bot transfer to another PSTN.
-+ Incoming call to Bot's instance identifier and then bot redirects to another PSTN.
-+ Incoming call to Bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
-+ Outgoing call from Bot (with instance identifier) to a PSTN.
-+ P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN.
-+ P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user.
++ Incoming call to bot's PSTN number and then bot invites another PSTN.
++ Incoming call to bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier and then bot invites another PSTN.
++ Incoming call to bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from bot (with instance identifier) to a PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
 + Bot join the scheduled meeting and then invite PSTN.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

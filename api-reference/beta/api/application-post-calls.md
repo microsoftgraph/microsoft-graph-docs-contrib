@@ -17,21 +17,21 @@ Namespace: microsoft.graph
 
 Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 This API supports the following PSTN scenarios:
 
-+ Incoming call to Bot's PSTN number and then bot invites another PSTN.
-+ Incoming call to Bot's PSTN number and then bot transfer to another PSTN.
-+ Incoming call to Bot's PSTN number and then bot redirects to another PSTN.
-+ Incoming call to Bot's instance identifier and then bot invites another PSTN.
-+ Incoming call to Bot's instance identifier and then bot transfer to another PSTN.
-+ Incoming call to Bot's instance identifier and then bot redirects to another PSTN.
-+ Incoming call to Bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
-+ Outgoing call from Bot (with instance identifier) to a PSTN.
-+ P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN.
-+ P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user.
++ Incoming call to bot's PSTN number and then bot invites another PSTN.
++ Incoming call to bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier and then bot invites another PSTN.
++ Incoming call to bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from bot (with instance identifier) to a PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
 + Bot join the scheduled meeting and then invite PSTN.
+
++ [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
