@@ -22,6 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
 
+> [!IMPORTANT]
+> App-only access can be authorized **without** consenting the caller the ```EntitlementManagement.ReadWrite.All``` application permission. Instead assign the caller an [Entitlement Management role](/entra/id-governance/entitlement-management-delegate), ```Access package assignment manager``` is the least privileged role supported for this operation. To assign an Entitlement Management role refer to [create unifiedRoleAssignment](/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0&tabs=http#example-4-create-a-role-assignment-with-access-package-catalog-scope) or [delegate access governance to access package managers](/entra/id-governance/entitlement-management-delegate-managers#as-a-catalog-owner-delegate-to-an-access-package-manager).
+
 ## HTTP request
 
 > [!NOTE]
