@@ -2771,6 +2771,7 @@
             "timeOffReason",
             "timeOffRequest",
             "workforceIntegration",
+            "userSolutionRoot",
             "workingTimeSchedule"
           ],
           "complexTypes": [

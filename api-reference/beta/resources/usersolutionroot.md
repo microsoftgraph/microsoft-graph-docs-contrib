@@ -1,19 +1,19 @@
 ---
-title: "solution resource type"
-description: "Represents a user's custom solution entity."
+title: "usersolution resource type"
+description: "Represents a user's custom usersolution entity."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# solution resource type
+# usersolution resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's custom solution entity.
+Represents a user's custom usersolution entity.
 
 ## Properties
 
@@ -25,7 +25,7 @@ Represents a user's custom solution entity.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|schedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|The working time schedule entity associated with the solution.|
+|workingTimeSchedule|[workingTimeSchedule](../resources/workingtimeschedule.md)|The working time schedule entity associated with the solution.|
 
 ## JSON representation
 
