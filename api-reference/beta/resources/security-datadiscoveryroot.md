@@ -26,7 +26,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|microsoft.graph.security.cloudAppDiscovery|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|The available entities.|
+|cloudAppDiscovery|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|The available entities.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDetail resource type"
-description: "Represents the resource type for discovered cloud apps."
+description: "Represents the discovered cloud apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the resource type for discovered cloud apps. 
+Represents the discovered cloud apps. 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/security-discoveredcloudappdetail-get.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|Read the properties and relationships of a discovered cloud app.|
-|[GET appInfo](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) |Get the discoveredCloudAppInfo resource from the appInfo navigation property.|
+|[Get appInfo](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) |Get the discoveredCloudAppInfo resource from the appInfo navigation property.|
 |[List ipAddresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property.|
 |[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get the discoveredCloudAppUser resources from the users navigation property.|
 
