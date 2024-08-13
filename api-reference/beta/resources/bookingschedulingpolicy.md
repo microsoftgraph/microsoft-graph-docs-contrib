@@ -15,6 +15,10 @@ Namespace: microsoft.graph
  
 Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar.
 
+> [!NOTE]
+>
+> If the Default Scheduling Policy is enabled at the service level, the values of this resource are limited to those defined in the policy in the [List services](/graph/api/bookingbusiness-list-services) API response. In this case, the client must fall back to the Default Scheduling Policy for the business.
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

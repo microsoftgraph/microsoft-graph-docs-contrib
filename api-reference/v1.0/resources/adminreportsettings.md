@@ -4,14 +4,12 @@ description: "Represents the tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "reports"
-author: "qiwhuang"
+author: "ganggao"
 ---
 
 # adminReportSettings resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the tenant-level settings for Microsoft 365 reports.
 
