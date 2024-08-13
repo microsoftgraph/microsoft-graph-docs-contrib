@@ -1205,6 +1205,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/outlookTaskFolder-permanentDelete?view=graph-rest-beta) method to the [outlookTaskFolder](https://learn.microsoft.com/en-us/graph/api/resources/outlookTaskFolder?view=graph-rest-beta) resource.",
           "Target": "outlookTaskFolder"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/eventMessage-permanentDelete?view=graph-rest-beta) method to the [eventMessage](https://learn.microsoft.com/en-us/graph/api/resources/eventMessage?view=graph-rest-beta) resource.",
+          "Target": "eventMessage"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/mailSearchFolder-permanentDelete?view=graph-rest-beta) method to the [mailSearchFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailSearchFolder?view=graph-rest-beta) resource.",
+          "Target": "mailSearchFolder"
         }
       ],
       "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
