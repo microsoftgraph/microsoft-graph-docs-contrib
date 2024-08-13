@@ -8,33 +8,37 @@ items:
   items:
   - name: Planner plan
     href: ../../resources/plannerplan.md
-  - name: Get plan
+  - name: Create
+    href: ../../api/planner-post-plans.md
+  - name: Get
     href: ../../api/plannerplan-get.md
-  - name: List plan buckets
-    href: ../../api/plannerplan-list-buckets.md
-  - name: List plan tasks
-    href: ../../api/plannerplan-list-tasks.md
-  - name: Update plan
+  - name: Update
     href: ../../api/plannerplan-update.md
-  - name: Delete plan
+  - name: Delete
     href: ../../api/plannerplan-delete.md
-  - name: Get delta
-    href: ../../api/plannerplan-delta.md
-  - name: Move to container
-    href: ../../api/plannerplan-movetocontainer.md
   - name: Archive plan
     href: ../../api/plannerplan-archive.md
   - name: Unarchive plan
     href: ../../api/plannerplan-unarchive.md
+  - name: Move to container
+    href: ../../api/plannerplan-movetocontainer.md
+  - name: List plan buckets
+    href: ../../api/plannerplan-list-buckets.md
+  - name: List plan tasks
+    href: ../../api/plannerplan-list-tasks.md
+  - name: Get delta
+    href: ../../api/plannerplan-delta.md
 - name: Planner task
   items:
   - name: Planner task
     href: ../../resources/plannertask.md
-  - name: Get task
+  - name: Create
+    href: ../../api/planner-post-tasks.md
+  - name: Get
     href: ../../api/plannertask-get.md
-  - name: Update task
+  - name: Update
     href: ../../api/plannertask-update.md
-  - name: Delete task
+  - name: Delete
     href: ../../api/plannertask-delete.md
   - name: Get delta
     href: ../../api/plannertask-delta.md
