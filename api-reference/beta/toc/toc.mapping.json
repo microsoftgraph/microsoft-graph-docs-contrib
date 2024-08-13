@@ -2771,7 +2771,8 @@
             "timeOffReason",
             "timeOffRequest",
             "workforceIntegration",
-            "workingTimeSchedule"
+            "workingTimeSchedule",
+            ""
           ],
           "complexTypes": [
             "geoCoordinates",

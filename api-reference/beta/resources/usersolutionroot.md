@@ -1,6 +1,6 @@
 ---
-title: "user solution resource type"
-description: "Represents a user's custom user solution entity."
+title: "userSolutionRoot resource type"
+description: "Represents a user's custom userSolutionRoot entity."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
