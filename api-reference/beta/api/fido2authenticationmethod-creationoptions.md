@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods
 [!INCLUDE [sample-code](../includes/snippets/javascript/fido2authenticationmethodthiscreationoptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/fido2authenticationmethodthiscreationoptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

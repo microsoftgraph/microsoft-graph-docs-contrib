@@ -12,7 +12,7 @@ from msgraph_beta.generated.solutions.backuprestore.serviceapps.item.activate.ac
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ActivatePostRequestBody(
-	effective_date_time = "2024-04-19T12-01-03.45Z",
+	effective_date_time = "2024-04-19T12:01:03.45Z",
 )
 
 request_configuration = RequestConfiguration()
