@@ -1,121 +1,159 @@
 ---
-title: "educationClass: getRecentlyModifiedSubmissions"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Get recently modified educationSubmissions"
+description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
+author: "v-rmanda"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# educationClass: getRecentlyModifiedSubmissions
+# Get educationSubmission
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Retrieve recently modified submissions. Only teachers, students, and applications with application permissions can perform this operation.
+
+A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
+
+Only the **assignedTo** student can see and modify the **submission**. A teacher or application with application permissions has full access to all **submissions**.
+
+The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the **assignment** has been released.
+
+Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status. For details, see the examples section.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "educationclass-getrecentlymodifiedsubmissions-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
+<!-- { "blockType": "permissions", "name": "educationsubmission_get_recentlymodifiedsubmissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-get-permissions.md)]
 
 ## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /education/classes/{educationClassId}/getRecentlyModifiedSubmissions
+<!-- { "blockType": "ignored" } -->
+```http
+GET /education/classes/{class-id}/getRecentlyModifiedSubmissions
 ```
 
-## Request headers
+## Optional query parameters
 
-|Name|Description|
-|:---|:---|
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Prefer  | `include-unknown-enum-members`. Optional.  |
 
 ## Request body
-
 Don't supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
-If successful, this function returns a `200 OK` response code and a [educationSubmission](../resources/educationsubmission.md) collection in the response body.
-
-## Examples
+## Example
 
 ### Request
-
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "educationclassthis.getrecentlymodifiedsubmissions"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/education/classes/{educationClassId}/getRecentlyModifiedSubmissions
+  "name": "get_educationsubmission"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions
 ```
 
-
 ### Response
-
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+>**Notes:** 
+>The response object shown here might be shortened for readability. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.educationSubmission"
+} -->
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.educationSubmission",
-      "id": "String (identifier)",
-      "recipient": {
-        "@odata.type": "microsoft.graph.educationSubmissionRecipient"
-      },
-      "status": "String",
-      "submittedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "submittedDateTime": "String (timestamp)",
-      "unsubmittedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "unsubmittedDateTime": "String (timestamp)",
-      "returnedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "returnedDateTime": "String (timestamp)",
-      "reassignedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "reassignedDateTime": "String (timestamp)",
-      "excusedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "excusedDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "resourcesFolderUrl": "String",
-      "webUrl": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=excusedBy,excusedDateTime",
+    "value": [
+        {
+            "status": "returned",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": "2024-08-14T05:48:30.9345815Z",
+            "returnedDateTime": "2024-08-14T05:47:41.4128921Z",
+            "reassignedDateTime": "2024-08-14T05:47:18.3007671Z",
+            "excusedDateTime": "2024-08-14T05:47:41.4128921Z",
+            "lastModifiedDateTime": "2024-08-14T06:37:17.9779374Z",
+            "resourcesFolderUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22bf1f1963-05f6-4cba-903c-5892b4ce3bd7%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%224bca096a-7de3-8675-5e86-2fa149923860%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "id": "4bca096a-7de3-8675-5e86-2fa149923860",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "61243ddb-6f39-499d-b232-9fa8cef26b3a",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "excusedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get educationSubmission recentlymodifiedsubmission",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
