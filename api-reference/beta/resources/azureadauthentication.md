@@ -5,7 +5,6 @@ author: "SarahBar"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-toc.title: "SLA attainment"
 ---
 
 # azureADAuthentication resource type
