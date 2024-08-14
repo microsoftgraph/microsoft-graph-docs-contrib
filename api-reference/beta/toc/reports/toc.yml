@@ -142,9 +142,9 @@ items:
       items:
       - name: SLA Attainment
         items:
-        - name: SLA attainment
+        - name: Microsoft Entra authentication
           items:
-          - name: SLA attainment
+          - name: Microsoft Entra authentication
             href: ../../resources/azureadauthentication.md
           - name: Get SLA attainment
             href: ../../api/azureadauthentication-get.md
