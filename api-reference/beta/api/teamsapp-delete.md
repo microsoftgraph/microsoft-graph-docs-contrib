@@ -46,6 +46,11 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
 <!-- { "blockType": "permissions", "name": "teamsapp_delete",   "requestUrls" : [appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}] } -->
 
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|AppCatalog.Submit|AppCatalog.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 
 ## HTTP request
