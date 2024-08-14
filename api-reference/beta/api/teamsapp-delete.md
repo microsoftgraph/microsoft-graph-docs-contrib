@@ -32,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Permissions for the following HTTP request:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
@@ -41,6 +42,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 Permissions for the following HTTP request:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
