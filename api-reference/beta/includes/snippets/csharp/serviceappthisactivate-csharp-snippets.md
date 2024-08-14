@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Solutions.BackupRestore.ServiceApps.Item.Activate;
 
 var requestBody = new ActivatePostRequestBody
 {
-	EffectiveDateTime = DateTimeOffset.Parse("2024-04-19T12-01-03.45Z"),
+	EffectiveDateTime = DateTimeOffset.Parse("2024-04-19T12:01:03.45Z"),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
