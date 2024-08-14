@@ -2216,7 +2216,7 @@
                       "name": "Microsoft Entra health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
-                        "healthmonitoring-alert"
+                        "microsoft.graph.healthMonitoring.alert"
                       ]
                     }
                   ]
