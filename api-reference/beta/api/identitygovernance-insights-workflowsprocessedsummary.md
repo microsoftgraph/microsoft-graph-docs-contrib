@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary
+GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
