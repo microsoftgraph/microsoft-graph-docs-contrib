@@ -159,9 +159,9 @@ The following JSON representation shows the resource type.
 }
 -->
 
-## Known Issues
+## Known issues
 
 The following known issues are associated with this resource:
 
 - [Web hook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752).
-- [Support for Multi endpoint use case in Delta Roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894).
+- [Support for multi-endpoint use case in which the delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894).
