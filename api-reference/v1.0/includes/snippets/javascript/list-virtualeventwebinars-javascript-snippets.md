@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let webinars = await client.api('/solutions/virtualEvents/webinars')
-	.version('beta')
 	.get();
 
 ```
