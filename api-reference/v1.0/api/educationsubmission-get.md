@@ -37,7 +37,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 
 This method supports the `$select` and`$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use `$orderby` for the the following properties of [submission](../resources/educationsubmission.md) resource `lastModifiedDateTime`, `status`, `submittedDateTime`, `unsubmittedDateTime`, `returnedDateTime`, `reassignedDateTime`, `excusedDateTime`, `viewedDateTime`, `firstViewedDateTime`, `extendedDueDateTime`, `remindedDateTime`, `assignmentId`, `memberId` and `studentGroupId`.
+You can use `$orderby` for the the following properties of [submission](../resources/educationsubmission.md) resource `status`, `submittedDateTime`, `unsubmittedDateTime`, `returnedDateTime`, `reassignedDateTime`, and `excusedDateTime`.
 
 ## Request headers
 | Header       | Value |
