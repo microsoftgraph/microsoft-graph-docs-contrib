@@ -2,7 +2,7 @@
 title: "exportDeviceAndAppManagementData function"
 description: "Intune Shared User Exportdeviceandappmanagementdata Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

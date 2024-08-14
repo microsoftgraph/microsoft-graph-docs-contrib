@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	displayName = "One Drive  Policy - Inadvertent data loss"
 	"driveProtectionUnits@delta" = @(
 		@{
-			userId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			directoryObjectId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
 		}
 		@{
-			userId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			directoryObjectId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
 		}
 		@{
 			"@removed" = @{
@@ -30,6 +30,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -BodyParameter $params
+Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -BodyParameter $params
 
 ```

@@ -57,10 +57,6 @@ If a [driveItem](driveitem.md) has a non-null **shared** facet, the item was sha
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/shared.md:
-      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
-  ],
+  "suppressions": [],
   "tocPath": "Facets/Shared"
 } -->
-

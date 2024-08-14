@@ -2,7 +2,7 @@
 title: "enrollmentState enum type"
 description: "Intune Enrollment Enrollmentstate Source_Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -18,6 +18,10 @@ Represents a Microsoft Entra terms of use agreement file.
 |:-------------|:------------|:------------|
 |data|Binary|Data that represents the terms of use PDF document. Read-only.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

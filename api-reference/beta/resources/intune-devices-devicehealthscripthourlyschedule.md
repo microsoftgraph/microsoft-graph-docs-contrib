@@ -2,7 +2,7 @@
 title: "deviceHealthScriptHourlySchedule resource type"
 description: "Type of Device health script hourly schedule."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

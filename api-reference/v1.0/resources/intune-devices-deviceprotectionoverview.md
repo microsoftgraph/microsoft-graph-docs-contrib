@@ -2,7 +2,7 @@
 title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

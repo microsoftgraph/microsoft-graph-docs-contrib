@@ -2,7 +2,7 @@
 title: "roleManagement resource type"
 description: "Intune Rbac Rolemanagement Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

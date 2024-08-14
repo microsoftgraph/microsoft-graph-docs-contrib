@@ -2,7 +2,7 @@
 title: "osVersionCount resource type"
 description: "Count of devices with malware for each OS version"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

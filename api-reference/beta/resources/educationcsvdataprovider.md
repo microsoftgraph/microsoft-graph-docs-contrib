@@ -28,7 +28,13 @@ Derived from [educationSynchronizationDataProvider].
 [educationsynchronizationdataprovider]: educationsynchronizationdataprovider.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

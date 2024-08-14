@@ -13,7 +13,7 @@ request_body = WorkbookNamedItem(
 	type = "type-value",
 	scope = "scope-value",
 	comment = "comment-value",
-	value = Value(
+	value = UntypedNode(
 	),
 	visible = True,
 )

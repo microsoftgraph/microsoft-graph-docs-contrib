@@ -44,8 +44,14 @@ Represents the descriptive labels for the categories that have been defined for 
 |category24|String|The label associated with Category 24|
 |category25|String|The label associated with Category 25|
 
+## Relationships
+
+None.
+
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

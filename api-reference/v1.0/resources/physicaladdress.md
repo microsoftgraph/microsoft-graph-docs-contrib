@@ -23,6 +23,10 @@ Represents the street address of a resource such as a contact or event.
 |state|String|The state.|
 |street|String|The street.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

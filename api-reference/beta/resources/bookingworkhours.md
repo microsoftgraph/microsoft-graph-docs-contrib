@@ -21,6 +21,10 @@ Represents the set of working hours in a single day of the week, for a [bookingB
 |day|String| The day of the week represented by this instance. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |timeSlots|[bookingWorkTimeSlot](bookingworktimeslot.md) collection|A list of start/end times during a day.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
