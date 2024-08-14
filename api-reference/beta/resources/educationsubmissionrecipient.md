@@ -17,7 +17,16 @@ Abstract class that represents the different sets of users to whom a submission 
 
 
 ## Properties
+
 None.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -21,6 +21,10 @@ Defines the Microsoft Entra application used to authenticate a logic app with a 
 |:---|:---|:---|
 |resourceId|String|The **appID** of the Microsoft Entra application to use to authenticate a logic app with a custom access package workflow extension.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

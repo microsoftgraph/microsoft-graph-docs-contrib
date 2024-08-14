@@ -2,7 +2,7 @@
 title: "Delete win32LobApp"
 description: "Deletes a win32LobApp."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

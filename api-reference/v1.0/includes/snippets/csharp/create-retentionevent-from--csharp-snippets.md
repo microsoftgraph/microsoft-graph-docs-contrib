@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models.Security;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new RetentionEvent
 {
@@ -20,10 +21,12 @@ var requestBody = new RetentionEvent
 		{
 			"eventQuery" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "microsoft.graph.security.eventQuery",
-				},
+					{
+						"@odata.type", new UntypedString("microsoft.graph.security.eventQuery")
+					},
+				}),
 			}
 		},
 		{

@@ -21,6 +21,10 @@ See [educationRubric](educationrubric.md) for a description of the relationship 
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this criterion.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsBatteryHealthDevicePerformance resource type"
 description: "The user experience analytics battery health device performance entity contains device level battery information."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

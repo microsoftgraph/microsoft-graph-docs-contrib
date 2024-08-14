@@ -2,7 +2,7 @@
 title: "Delete windowsQualityUpdatePolicyAssignment"
 description: "Deletes a windowsQualityUpdatePolicyAssignment."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

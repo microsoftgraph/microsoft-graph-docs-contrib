@@ -24,7 +24,13 @@ Represents the mapping between an education user type and the domain the user's 
 | appliesTo | String | The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`. |
 | name      | String | Represents the domain for the user account.                                                        |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

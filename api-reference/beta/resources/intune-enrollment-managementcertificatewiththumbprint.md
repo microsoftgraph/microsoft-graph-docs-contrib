@@ -2,7 +2,7 @@
 title: "managementCertificateWithThumbprint resource type"
 description: "Intune Enrollment Managementcertificatewiththumbprint Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete deviceComplianceScriptDeviceState"
 description: "Deletes a deviceComplianceScriptDeviceState."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

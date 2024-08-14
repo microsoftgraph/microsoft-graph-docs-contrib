@@ -9,17 +9,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookTableRow workbookTableRow = new WorkbookTableRow();
-LinkedList<LinkedList<Number>> values = new LinkedList<LinkedList<Number>>();
-LinkedList<Number> property = new LinkedList<Number>();
-property.add(1);
-property.add(2);
-property.add(3);
-values.add(property);
-LinkedList<Number> property4 = new LinkedList<Number>();
-property4.add(4);
-property4.add(5);
-property4.add(6);
-values.add(property4);
+LinkedList<LinkedList<UntypedNode>> values = new LinkedList<LinkedList<UntypedNode>>();
+LinkedList<UntypedNode>  = new LinkedList<UntypedNode>();
+.add(1d);
+.add(2d);
+.add(3d);
+values.add();
+LinkedList<UntypedNode> 4 = new LinkedList<UntypedNode>();
+4.add(4d);
+4.add(5d);
+4.add(6d);
+values.add(4);
 workbookTableRow.setValues(values);
 WorkbookTableRow result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().tables().byWorkbookTableId("{workbookTable-id}").rows().post(workbookTableRow);
 

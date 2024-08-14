@@ -23,6 +23,10 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 |timeSlots|[timeRange](timerange.md) collection|The time slot(s) preferred by the user.|
 |timeZone|String|Specifies the time zone for the indicated time. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

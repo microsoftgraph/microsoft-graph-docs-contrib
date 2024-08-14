@@ -21,6 +21,10 @@ Represents properties of the body of an item, such as a message, event or group 
 |content|String|The content of the item.|
 |contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

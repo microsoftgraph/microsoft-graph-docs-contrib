@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -89,12 +90,18 @@ var requestBody = new AccessPackageAssignmentPolicy
 			}
 		},
 		{
-			"expiration" , new 
+			"expiration" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				EndDateTime = null,
-				Duration = null,
-				Type = "noExpiration",
-			}
+				{
+					"endDateTime", new UntypedNull()
+				},
+				{
+					"duration", new UntypedNull()
+				},
+				{
+					"type", new UntypedString("noExpiration")
+				},
+			})
 		},
 	},
 };
