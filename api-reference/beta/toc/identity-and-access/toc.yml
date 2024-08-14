@@ -1061,6 +1061,8 @@ items:
         href: ../../api/accesspackageassignmentrequest-cancel.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
