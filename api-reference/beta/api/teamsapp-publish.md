@@ -77,6 +77,7 @@ If you send a request to upload an app manifest that contains missing informatio
 
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
+|`Serialization_ManifestVersionPropertyMissing`| The file doesn't contain the "{0}" property.| The `manifestVersion` property is missing in the app manifest file. Here, {0} is the string for `manifestVersion` property.|
 |`Serialization_FileNotValidJson`| The file couldn't be parsed as a JSON object.| The submitted file didn't comply with a valid JSON format. |
 |`Serialization_FileMissing`| The file {0} couldn't be found in the app package.| The expected file is missing in the app package.|
 |`Serialization_TrailingCommaInManifestJsonFile`| Manifest json file contains trailing comma.| The app manifest file contains a trailing comma.|
@@ -126,6 +127,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`MsftEntraAuthTypeComposeExtensionContainsNoMsftEntraConfiguration`|API-based compose extension with microsoftEntra authType have no microsoftEntraConfiguration defined.| The API-based compose extension doesn't have `microsoftEntraConfiguration` defined in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionWebApplicationInfoOrResourceNotDefined`|API-based compose extension with microsoftEntra authType have no webApplicationInfo or resource defined on manifest.| The API-based compose extension with `microsoftEntra` authType doesn't have `webApplicationInfo` or `resource` defined in the app manifest.|
 |`MsftEntraAuthTypeComposeExtensionResourceURLNotMatchServerURLOnApiSpec` |API-based compose extension with microsoftEntra authType resource URL on manifest doesn't match server URL on API specification file.| The API-based compose extension with `microsoftEntra` authType resource URL in the app manifest doesn't match server URL in the API specification file.|
+|`MsftEntraAuthTypeComposeExtensionSupportsSingleSignOnFalse` | API-based compose extension with microsoftEntra authType doesn't set supportsSingleSignOn to true.| The API-based compose extension doesn't set `supportsSingleSignOn` to `true` in the app manifest.|
 |`NoAuthTypeComposeExtensionContainsAuthConfiguration` |API-based compose extension with none authType have auth-related configuration defined.| The API-based compose extension with authType `microsoftEntraConfiguration` or `apiSecretServiceConfiguration` isn't defined in the app manifest.|
 |`ApiSpecificationFileContainUnsupportedHttpMethod`| API-based compose extension have server urls that have unsupported http method defined on apiSpecificationFile. Currently only GET and POST are supported.| The API-based compose extension has an unsupported `http` method defined in the `apiSpecificationFile`.|
 |`ApiSpecificationFileRequiredParameterContainUnsupportedLocation`| API-based compose extension have unsupported parameter location defined on apiSpecificationFile for {0}. Currently only path and query supported.| The API-based compose extension has an unsupported parameter location defined in the `apiSpecificationFile`.|
@@ -166,6 +168,7 @@ If you send a request to upload an app manifest that contains missing informatio
 |`ParameterOnManifestNotDefinedOnApiSpecFile` | API-based compose extension have parameters {0} on manifest not defined on API specification file.| The API-based compose extension parameters in the app manifest aren't defined in the API specification file. |
 |`ReservedActivitiesValidation`| Manifest shouldn't contain reserved Activity Type 'systemDefault'.| The `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull`| Reserved tab "Name" property shouldn't be specified.| The reserved `staticTabs` name property was specified.|
+|`InvalidOutlineIconTransparency`| Outline icon isn't transparent. It's Alpha.| The outline icon contains pixels that aren't transparent or white, with an Alpha, R, G, B value of {0}, {1}, {2}, {3}.  |
 |`ShortDescriptionCannotBeEmpty`| Short Description can’t be empty| The short description was empty.|
 |`ShortDescriptionLengthCheck`|Maximum character length for short description must not exceed 80 chars.| The short description is more than 80 characters long.|
 |`ShortNameEqualsReservedName`|Short name of the app can't be reserved name.| The short name is a reserved name.|
