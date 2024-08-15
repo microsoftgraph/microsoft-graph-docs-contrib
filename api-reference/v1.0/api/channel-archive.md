@@ -107,6 +107,10 @@ POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721
 [!INCLUDE [sample-code](../includes/snippets/php/archive-channel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/archive-channel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -166,6 +170,10 @@ POST https://graph.microsoft.com/v1.0/teams/16dc05c0-2259-4540-a970-3580ff459721
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/archive-channel-on-archived-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-channel-on-archived-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

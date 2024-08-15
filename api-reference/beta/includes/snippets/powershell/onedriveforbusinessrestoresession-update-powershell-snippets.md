@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	"driveRestoreArtifacts@delta" = @(
@@ -53,6 +53,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession -OneDriveForBusinessRestoreSessionId $oneDriveForBusinessRestoreSessionId -BodyParameter $params
+Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession -OneDriveForBusinessRestoreSessionId $oneDriveForBusinessRestoreSessionId -BodyParameter $params
 
 ```

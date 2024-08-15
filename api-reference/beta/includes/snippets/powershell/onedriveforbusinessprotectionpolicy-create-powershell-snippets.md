@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	displayName = "OneDrive For Business Protection Policy"
@@ -21,6 +21,6 @@ $params = @{
 	)
 }
 
-New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -BodyParameter $params
+New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy -BodyParameter $params
 
 ```
