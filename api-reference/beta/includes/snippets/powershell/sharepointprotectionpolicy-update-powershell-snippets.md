@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	displayName = "SharePoint Policy - Inadvertent data loss"
@@ -42,6 +42,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaBackupRestoreSharePointProtectionPolicy -SharePointProtectionPolicyId $sharePointProtectionPolicyId -BodyParameter $params
+Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy -SharePointProtectionPolicyId $sharePointProtectionPolicyId -BodyParameter $params
 
 ```
