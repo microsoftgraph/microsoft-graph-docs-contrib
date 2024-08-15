@@ -1834,7 +1834,8 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "changeTrackedEntity",
@@ -1849,6 +1850,7 @@
             "shiftItem",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }
