@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/authentication/fido2Methods/creationOptions
+GET /users/{user-id}/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes={challengeTimeoutInMinutes})
 ```
 
 ## Function parameters
@@ -111,7 +111,64 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.webauthnCredentialCreationOptions"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.webauthnCredentialCreationOptions",
+    "challengeTimeoutDateTime": "2024-08-14T16:29:58Z",
+    "publicKey": {
+        "challenge": "ZXlKaGJHY2lPaUpTVTBFdFQwRkZVQzB5TlRZaUxDSmxibU1pT2lKQk1qVTJSME5OSWl3aWVEVmpJanBiSWsxSlNVUmhSRU5EUVd4...",
+        "timeout": 0,
+        "attestation": "direct",
+        "rp": {
+            "id": "login.microsoft.com",
+            "name": "Microsoft"
+        },
+        "user": {
+            "id": "T0Y6Ehqp2EfQP0iExdt54DFwdWuaH7qIZbZGpOc92RGnvbXyRPvU-8AOp9r1T7Cebfc3",
+            "displayName": "Kim User",
+            "name": "kimuser@contoso.com"
+        },
+        "pubKeyCredParams": [
+            {
+                "type": "public-key",
+                "alg": -7
+            },
+            {
+                "type": "public-key",
+                "alg": -257
+            }
+        ],
+        "excludeCredentials": [
+            {
+                "id": "0S64X8KwFmCeJjHzK1oE/39T+JYhfYbhFurwOxMMjtvRWc/sLYq8AMJVuva823XQ",
+                "type": "public-key",
+                "transports": []
+            },
+            {
+                "id": "pgIfj2fnom8rJdb4/h1gKqDkq+gxHFksI+m2aR5T+PNNycBfENAM4ksEBvoXky6d",
+                "type": "public-key",
+                "transports": []
+            },
+            {
+                "id": "u5wuw6SGH0VhAz7OXCLRkCuxhm4UrCB7hcLccyMU6calP1hWexfKe5PJNM69neAM",
+                "type": "public-key",
+                "transports": []
+            },
+            {
+                "id": "6rc0zTSz2YRlaKlCjqxsNDjDe8qY8TSL95Z4WhxEaaP4XfvfSnAGMk49RSwm/uAO",
+                "type": "public-key",
+                "transports": []
+            }
+        ],
+        "authenticatorSelection": {
+            "authenticatorAttachment": "cross-platform",
+            "requireResidentKey": true,
+            "userVerification": "required"
+        },
+        "extensions": {
+            "hmacCreateSecret": true,
+            "enforceCredentialProtectionPolicy": true,
+            "credentialProtectionPolicy": "userVerificationOptional"
+        }
+    }
   }
 }
 ```
