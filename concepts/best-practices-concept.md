@@ -28,7 +28,7 @@ Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develo
 
 Apply the following best practices for consent and authorization in your app:
 
-- **Apply least privilege**. Grant users and apps only the lowest privileged permission they require to call the API. Check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users)), and choose the least privileged permissions. For example, if the app will read only the profile of the currently signed-in user, grant *User.Read* instead of *User.ReadBasic.All*. If an app doesn't read the user's calendar, do not grant it the *Calendars.Read* permission. For a full list of permissions, see [permissions reference](permissions-reference.md).
+- **Apply least privilege**. Grant users and apps only the lowest privileged permission they require to call the API. Check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users)), and choose the least privileged permissions. For example, if the app will read only the profile of the currently signed-in user, grant *User.Read* instead of *User.ReadBasic.All*. If an app doesn't read the user's calendar, don't grant it the *Calendars.Read* permission. For a full list of permissions, see [permissions reference](permissions-reference.md).
 
 - **Use the correct permission type based on scenarios**. Avoid using both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use *application permissions*.
 
@@ -37,7 +37,7 @@ Apply the following best practices for consent and authorization in your app:
 
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
-  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use show up in consent and other experiences. Configure these settings carefully so they are understood by your end users.
+  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use show up in consent and other experiences. Configure these settings carefully so they're understood by your end users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
   - Ensure that you understand the difference between [static, dynamic, and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
@@ -77,10 +77,10 @@ While your application should handle all error responses (in the 400 and 500 ran
 
 | Topic   | HTTP error code    | Best practice|
 |:-----------|:--------|:----------|
-| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case, it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
-|Not found| 404 | In certain cases, a requested resource might not be found. For example a resource might not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
+| User doesn't have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience. In this case, it's most likely that the signed-in user doesn't have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
+|Not found| 404 | In certain cases, a requested resource might not be found. For example, a resource might not exist, because it hasn't yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
 |Throttling|429|APIs might throttle at any time for various reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
-|Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
+|Service unavailable| 503 | This is likely because the services are busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
 
 ### Handling future members in evolvable enumerations
 
@@ -88,7 +88,7 @@ Adding members to existing enumerations can break applications already using the
 
 Evolvable enums have a common _sentinel_ member called `unknownFutureValue` that demarcates known members that have been defined in the enum initially, and unknown members that are added subsequently or will be defined in the future. Internally, known members are mapped to numeric values that are less than the sentinel member, and unknown members are greater than the sentinel member. The documentation for an evolvable enum lists the possible _string_ values in ascending order: known members, followed by `unknownFutureValue`, followed by unknown members. Like other types of enumerations, you should _always_ reference members of evolvable enums by their _string_ values.
 
-By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt-in to receive those members by using an HTTP `Prefer` request header:
+By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt in to receive those members by using an HTTP `Prefer` request header:
 ```http
 Prefer: include-unknown-enum-members
 ```
@@ -140,7 +140,7 @@ Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 ### Using webhooks and delta query together
 
-Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses, which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
+Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses, which waste resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
 Use [webhook notifications](/graph/api/resources/webhooks) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
@@ -148,7 +148,7 @@ Use [webhook notifications](/graph/api/resources/webhooks) as the trigger to mak
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. Combining individual requests into a single batch request can save the application significant network latency and can conserve connection resources.
 
-Use [batching](json-batching.md) where significant network latency can have a big impact on the performance.
+Use [batching](json-batching.md) where significant network latency can have a significant impact on the performance.
 
 ## Reliability and support
 To ensure reliability and facilitate support for your application:
