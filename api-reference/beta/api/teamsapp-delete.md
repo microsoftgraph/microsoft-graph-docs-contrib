@@ -37,7 +37,7 @@ Permissions for the following HTTP request:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "teamsapp_delete",   "requestUrls" : [DELETE /appCatalogs/teamsApps/{id}] } -->
+<!-- { "blockType": "permissions", "name": "teamsapp_delete",   "requestUrls" : ["DELETE /appCatalogs/teamsApps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamsapp-delete-permissions.md)]
 
 Permissions for the following HTTP request:
@@ -46,7 +46,7 @@ Permissions for the following HTTP request:
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
-<!-- { "blockType": "permissions", "name": "teamsapp_delete",   "requestUrls" : [DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}] } -->
+<!-- { "blockType": "permissions", "name": "teamsapp_delete",   "requestUrls" : ["DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId"}] } -->
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
