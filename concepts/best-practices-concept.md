@@ -17,12 +17,12 @@ Experiment with new APIs before you integrate them into your application.
 
 ## Authentication
 
-To access data through Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following options:
+To access data through Microsoft Graph, your application needs to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following options:
 
 - The HTTP *Authorization* request header, as a *Bearer* token
 - The graph client constructor, when using a Microsoft Graph client library
 
-Use the Microsoft Authentication Library API, [MSAL](/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
+Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
 
 ## Consent and authorization
 
@@ -37,7 +37,7 @@ Apply the following best practices for consent and authorization in your app:
 
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
-  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use will show up in consent and other experiences. Configure these settings carefully so they are understood by your end users.
+  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use show up in consent and other experiences. Configure these settings carefully so they are understood by your end users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
   - Ensure that you understand the difference between [static, dynamic, and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
@@ -69,7 +69,7 @@ Would return a response containing an `@odata.nextLink` property, if the result 
 > [!NOTE]
 > Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata.nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
 
-For more details, see [paging](paging.md).
+For more information, see [paging](paging.md).
 
 ### Handling expected errors
 
@@ -79,7 +79,7 @@ While your application should handle all error responses (in the 400 and 500 ran
 |:-----------|:--------|:----------|
 | User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case, it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
 |Not found| 404 | In certain cases, a requested resource might not be found. For example a resource might not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
-|Throttling|429|APIs might throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
+|Throttling|429|APIs might throttle at any time for various reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
 |Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
 
 ### Handling future members in evolvable enumerations
@@ -123,24 +123,24 @@ When you make a GET request without using `$select` to limit the amount of prope
 
 ### Getting minimal responses
 
-For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a `204 No Content` response for PUT and PATCH operations.
+For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Some services already return a `204 No Content` response for PUT and PATCH operations.
 
 > [!NOTE]
 > Request minimal representation responses using the **Prefer** header set to `return=minimal`, where supported. For creation operations, use of this header might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
 
 ### Track changes: delta query and webhook notifications
 
-If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling on a regular basis.
+If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling regularly.
 
 Use [webhook notifications](/graph/api/resources/webhooks) to get push notifications when data changes.
 
-If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This will avoid excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
+If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This avoids excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
 
 Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 ### Using webhooks and delta query together
 
-Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
+Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses, which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
 Use [webhook notifications](/graph/api/resources/webhooks) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
@@ -156,6 +156,6 @@ To ensure reliability and facilitate support for your application:
 - Use TLS 1.3 or 1.2 to support all capabilities of Microsoft Graph. Migrate from TLS 1.0 and 1.1. For more information, see [Enable support for TLS 1.2 in your environment](/troubleshoot/azure/active-directory/enable-support-tls-environment).
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
-- Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
+- Generate a unique GUID and send it on each Microsoft Graph REST request. This helps Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
   - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
   - Always log the `request-id` and `Date` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.
