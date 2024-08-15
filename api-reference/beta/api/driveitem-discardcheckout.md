@@ -101,6 +101,10 @@ POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/discardC
 [!INCLUDE [sample-code](../includes/snippets/php/driveitemthisdiscardcheckout-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/driveitemthisdiscardcheckout-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/driveitemthisdiscardcheckout-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
