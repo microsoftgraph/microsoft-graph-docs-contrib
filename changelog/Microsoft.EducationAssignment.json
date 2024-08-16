@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
           "ChangeType": "Addition",
-          "Description": "Added the [getRecentlyModifiedSubmissions](https://learn.microsoft.com/en-us/graph/api/educationsubmission-get-recent?view=graph-rest-beta) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta) resource.",
+          "Description": "Added the [getRecentlyModifiedSubmissions](https://learn.microsoft.com/en-us/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-beta) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta) resource.",
           "Target": "educationClass"
         },
         {
