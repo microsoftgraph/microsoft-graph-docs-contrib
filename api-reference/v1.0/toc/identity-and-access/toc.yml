@@ -472,8 +472,6 @@ items:
         href: ../../resources/accessreviewnotificationrecipientitem.md
       - name: Access review notification recipient query scope
         href: ../../resources/accessreviewnotificationrecipientqueryscope.md
-      - name: Access review notification recipient scope
-        href: ../../resources/accessreviewnotificationrecipientscope.md
       - name: Access review query scope
         href: ../../resources/accessreviewqueryscope.md
       - name: Access review recommendation insight setting
@@ -490,6 +488,8 @@ items:
         href: ../../resources/accessreviewset.md
       - name: Access review stage settings
         href: ../../resources/accessreviewstagesettings.md
+      - name: Accessreviewnotificationrecipientscope
+        href: ../../resources/accessreviewnotificationrecipientscope.md
       - name: App consent approval route
         href: ../../resources/appconsentapprovalroute.md
       - name: App consent request scope
@@ -524,7 +524,7 @@ items:
         href: ../../resources/useridentity.md
       - name: User last sign in recommendation insight setting
         href: ../../resources/userlastsigninrecommendationinsightsetting.md
-      - name: User sign in insight
+      - name: Usersignininsight
         href: ../../resources/usersignininsight.md
   - name: Consent requests
     items:
