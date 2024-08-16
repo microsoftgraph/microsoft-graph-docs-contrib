@@ -11,7 +11,7 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
+Assign an app role to a [user](../resources/user.md),creating an [appRoleAssignment](../resources/approleassignments.md). To grant an app role assignment to a user, you need three identifiers:
 
 - `principalId`: The `id` of the user to whom you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
