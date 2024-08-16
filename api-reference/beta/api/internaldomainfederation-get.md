@@ -129,7 +129,8 @@ Content-Type: application/json
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
     },
-    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
+    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",
+    "passwordResetUri": "http://contoso.com/adfs/services/passwordReset",
   }
 }
 ```
