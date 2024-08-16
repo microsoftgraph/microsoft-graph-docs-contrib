@@ -18,7 +18,7 @@ ms.date: 08/16/2024
 
 Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph. **We recommend that you migrate your apps to Microsoft Graph.**
 
-The timeline for the retirement of Azure AD Graph is as follows:
+Key timelines in the retirement of Azure AD Graph is as follows:
 - 2019: Initial announcement of the deprecation of Azure AD Graph. Retirement set for June 30, 2023.
 - June 30, 2023: End of the three-year notice period for deprecation of Azure AD Graph. Azure AD Graph enters its retirement cycle.
 - August 31, 2024: New applications created after this date will not be able to use Azure AD Graph [unless they explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-till-june-30-2025). Existing applications will continue to work.
