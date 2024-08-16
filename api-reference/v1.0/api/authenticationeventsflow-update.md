@@ -124,9 +124,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the onAttributeCollection event of an external identities self-service sign-up user flow
+### Example 2: Update the page layout of a self-service sign up user flow
 
-The following request updates the configuration of some of the attributes. For example, email, city, and the custom attribute as marked as required. The email attribute is marked as hidden. The custom attribute is also updated to a radio button with two options.
+The following request updates the configuration of some of the attributes. All the attributes are marked as required; the email attribute is marked as hidden; the input type of the custom attribute is also updated to a radio button with two options.
 
 #### Request
 
@@ -182,7 +182,7 @@ Content-Type: application/json
                             "hidden": false,
                             "editable": true,
                             "writeToDirectory": true,
-                            "required": false,
+                            "required": true,
                             "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
                             "options": []
                         },

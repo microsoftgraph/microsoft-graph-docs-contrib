@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 
 #### Request
 
-The following example shows a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. If the request is successful, the attribute is added to both the **attributeCollection**> **attributes** and **attributeCollection**> **attributeCollectionPage** > **views** collections on the user flow. After, you can [PATCH the user flow](../api/authenticationeventsflow-update.md) to customize the settings of the attribute on the **views** object, for example, marking it as required or updating the allowed input types.
+The following example shows a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. If the request is successful, the attribute is added to both the **attributeCollection**> **attributes** and **attributeCollection**> **attributeCollectionPage** > **views** collections on the user flow. After adding the attribute to the user flow, you can [PATCH the user flow](../api/authenticationeventsflow-update.md) to customize the settings of the attribute on the **views** object, that is, customize the page layout.
 
 # [HTTP](#tab/http)
 <!-- {
