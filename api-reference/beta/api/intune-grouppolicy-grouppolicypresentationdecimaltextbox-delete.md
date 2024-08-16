@@ -2,7 +2,7 @@
 title: "Delete groupPolicyPresentationDecimalTextBox"
 description: "Deletes a groupPolicyPresentationDecimalTextBox."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

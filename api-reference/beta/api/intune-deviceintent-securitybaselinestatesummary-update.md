@@ -2,7 +2,7 @@
 title: "Update securityBaselineStateSummary"
 description: "Update the properties of a securityBaselineStateSummary object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

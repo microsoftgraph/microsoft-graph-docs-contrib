@@ -2,7 +2,7 @@
 title: "mobileAppTroubleshootingEvent resource type"
 description: "Event representing a users device application install status."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	siteRestoreArtifacts = @(
@@ -23,6 +23,6 @@ $params = @{
 	)
 }
 
-New-MgBetaBackupRestoreSharePointRestoreSession -BodyParameter $params
+New-MgBetaSolutionBackupRestoreSharePointRestoreSession -BodyParameter $params
 
 ```

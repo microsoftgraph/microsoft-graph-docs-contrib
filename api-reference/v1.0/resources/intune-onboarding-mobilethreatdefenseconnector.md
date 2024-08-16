@@ -2,7 +2,7 @@
 title: "mobileThreatDefenseConnector resource type"
 description: "Entity which represents a connection to Mobile Threat Defense partner."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

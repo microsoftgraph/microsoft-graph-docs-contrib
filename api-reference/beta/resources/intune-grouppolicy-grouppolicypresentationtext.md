@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationText resource type"
 description: "Represents an ADMX text element."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

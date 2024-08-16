@@ -2,7 +2,7 @@
 title: "sendCustomNotificationToCompanyPortal action"
 description: "Intune Shared Devicemanagement Sendcustomnotificationtocompanyportal Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

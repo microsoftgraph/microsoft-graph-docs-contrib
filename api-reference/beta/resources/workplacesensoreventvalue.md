@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensorEventValue resource type"
-description: "Represents the data collected and reported by a Wi-Fi or badge-swiping device."
+description: "Represents the data collected and reported by a badge-swiping device."
 author: "Ailss"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data collected and reported by a Wi-Fi or badge-swiping device.
+Represents the data collected and reported by a badge-swiping device.
 
 ## Properties
 
 | Property                   | Type    | Description                                                    |
 |:---------------------------|:--------|:---------------------------------------------------------------|
-| eventType | [workplaceSensorEventType](../resources/workplacesensoreventvalue.md#workplacesensoreventtype-values) | The type of possible sensor event value. The possible values are: `badgeIn`, `badgeOut`, `wifiConnect`, `wifiDisconnect`, `unknownFutureValue`.  |
+| eventType | [workplaceSensorEventType](../resources/workplacesensoreventvalue.md#workplacesensoreventtype-values) | The type of possible sensor event value. The possible values are: `badgeIn`, `badgeOut`, `unknownFutureValue`.  |
 | user | [emailIdentity](../resources/emailidentity.md) | The unique identifier of a user. It could be an email or a Microsoft Entra ID. |
 
 ### workplaceSensorEventType values
@@ -27,8 +27,6 @@ Represents the data collected and reported by a Wi-Fi or badge-swiping device.
 |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | badgeIn          | An event in which a user enters a place by swiping the badge. |
 | badgeOut        | An event in which a user exits a place by swiping the badge. |
-| wifiConnect  | An event in which a user connects to the Wi-Fi device. |
-| wifiDisconnect          | An event in which a user disconnects from the Wi-Fi device. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 ## JSON representation
 The following JSON representation shows the resource type.

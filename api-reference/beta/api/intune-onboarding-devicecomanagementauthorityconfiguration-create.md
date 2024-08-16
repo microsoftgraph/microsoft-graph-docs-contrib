@@ -2,7 +2,7 @@
 title: "Create deviceComanagementAuthorityConfiguration"
 description: "Create a new deviceComanagementAuthorityConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

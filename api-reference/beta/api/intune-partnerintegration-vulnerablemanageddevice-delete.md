@@ -2,7 +2,7 @@
 title: "Delete vulnerableManagedDevice"
 description: "Deletes a vulnerableManagedDevice."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

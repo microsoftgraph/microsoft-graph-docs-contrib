@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Update the properties of a [chat](../resources/chat.md) object.
 
-[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

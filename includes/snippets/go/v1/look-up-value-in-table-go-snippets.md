@@ -25,13 +25,11 @@ configuration := &graphdrives.DriveItemItemItemWorkbookFunctionsVlookupRequestBu
 requestBody := graphdrives.NewVlookupPostRequestBody()
 lookupValue := "pear"
 requestBody.SetLookupValue(&lookupValue) 
-tableArray := graph.NewtableArray()
-additionalData := map[string]interface{}{
-	"Address" : "Sheet1!B2:C7", 
-}
-tableArray.SetAdditionalData(additionalData)
+tableArray := graph.NewUntypedNode()
+address := "Sheet1!B2:C7"
+tableArray.SetAddress(&address) 
 requestBody.SetTableArray(tableArray)
-colIndexNum := int32(2)
+colIndexNum := float64(2)
 requestBody.SetColIndexNum(&colIndexNum) 
 rangeLookup := false
 requestBody.SetRangeLookup(&rangeLookup) 

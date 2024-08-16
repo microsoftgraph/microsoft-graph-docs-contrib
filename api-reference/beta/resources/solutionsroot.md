@@ -35,7 +35,7 @@ To access Bookings currencies, use the following syntax:
 https://graph.microsoft.com/{version}/solutions/bookingCurrencies 
 ```
 
-To access business scenarios, use the folloing syntax:
+To access business scenarios, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -56,6 +56,14 @@ To access virtual event town halls, use the following syntax:
 https://graph.microsoft.com/{version}/solutions/virtualEvents/townhalls
 ```
 
+To access approval items, use the following syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/solutions/approval/approvalItems
+```
+
+
 ## Methods
 None.
 
@@ -69,6 +77,7 @@ None.
 |bookingCurrencies|[bookingCurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
 |virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
+|approvalItems|[approvalItem](approvalitem.md) collection | A collection of approval items.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

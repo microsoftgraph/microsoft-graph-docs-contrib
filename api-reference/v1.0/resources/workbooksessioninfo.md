@@ -36,6 +36,6 @@ The following JSON representation shows the resource type.
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | ID of the workbook session. |
-| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| persistChanges | Boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 

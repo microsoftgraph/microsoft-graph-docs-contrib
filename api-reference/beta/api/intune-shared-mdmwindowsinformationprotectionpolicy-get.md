@@ -2,7 +2,7 @@
 title: "Get mdmWindowsInformationProtectionPolicy"
 description: "Read properties and relationships of the mdmWindowsInformationProtectionPolicy object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

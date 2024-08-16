@@ -2,7 +2,7 @@
 title: "Create managedAndroidStoreApp"
 description: "Create a new managedAndroidStoreApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

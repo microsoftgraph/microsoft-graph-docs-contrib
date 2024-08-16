@@ -21,6 +21,8 @@ Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networ
 
 None.
 
+For API operations for managing forward rules, see [policyRule](../resources/networkaccess-policyrule.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

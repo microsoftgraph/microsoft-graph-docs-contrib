@@ -2,7 +2,7 @@
 title: "getEffectivePermissions function"
 description: "Retrieves the effective permissions of the currently authenticated user"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

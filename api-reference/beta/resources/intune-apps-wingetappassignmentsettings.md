@@ -2,7 +2,7 @@
 title: "winGetAppAssignmentSettings resource type"
 description: "Contains properties used to assign a WinGet app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
