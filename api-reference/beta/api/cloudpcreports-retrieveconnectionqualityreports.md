@@ -1,0 +1,201 @@
+---
+title: "cloudPcReports: retrieveConnectionQualityReports"
+description: "Get the overall connection quality reports for all devices under current tenant during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metric such as last connection round trip time, last connection Client IP, last connection gateway, last connection protocol. Also retrieve regional connection quality weekly trend report with regionalConnectionQualityTrendReport report name, such as round trip time trend, available bandwidth trend, UDP utilization trend, dropped connection trend. Also retrieve regional connection quality report with regionalConnectionQualityInsightsReport report name, such as current slow connections count, current Low available bandwidth count, current avg low Udp connections count."
+author: "bingqiangxiang"
+ms.localizationpriority: medium
+ms.subservice: "cloud-pc"
+doc_type: apiPageType
+---
+
+# cloudPcReports: retrieveConnectionQualityReports
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the overall connection quality reports for all devices under current tenant during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metric such as last connection round trip time, last connection Client IP, last connection gateway, last connection protocol. Also retrieve regional connection quality weekly trend report with regionalConnectionQualityTrendReport report name, such as round trip time trend, available bandwidth trend, UDP utilization trend, dropped connection trend. Also retrieve regional connection quality report with regionalConnectionQualityInsightsReport report name, such as current slow connections count, current Low available bandwidth count, current avg low Udp connections count.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "cloudpcreports_retrieveConnectionQualityReports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/virtualEndpoint/reports/retrieveConnectionQualityReports
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|filter|String|OData `$filter` syntax. Supported filters include: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
+|groupBy|String collection|Specify how to group the reports. If used, must have the same contents as the **select** parameter.|
+|orderBy|String collection|Specify how to sort the reports.|
+|search|String|Specifies a String to search.|
+|select|String collection|OData `$select` syntax. The selected columns of the reports. |
+|skip|Int32|Number of records to skip.|
+|top|Int32|The number of top records to return.|
+
+## Response
+
+If successful, this action returns a `200 OK` response code and a Stream in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "cloudpcreportsthis.retrieveConnectionQualityReports"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveConnectionQualityReports
+Content-Type: application/json
+Content-length: 200
+
+{
+    "reportName":"regionalConnectionQualityTrendReport",
+    "filter": "",
+    "select": ["GatewayRegion", "RoundTripTimeTrend", "AvailableBandwidthTrend", "UDPUtilizationTrend", "DroppedConnectionTrend", "WeeklyAvgRoundTripTimeInMs", "DailyAvgRoundTripTimeInMs", "WeeklyAvailableBandwidthInMBps", "DailyAvailableBandwidthInMBps", "WeeklyUdpUtilization", "DailyWeeklyUdpUtilization", "WeeklyDroppedConnectionsCount", "DailyDroppedConnectionsCount"],
+    "search": "",
+    "skip": 0,
+    "top": 50
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetconnectionqualityreports-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetconnectionqualityreports-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetconnectionqualityreports-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetconnectionqualityreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetconnectionqualityreports-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetconnectionqualityreports-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetconnectionqualityreports-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetconnectionqualityreports-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Edm.Stream"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+
+{
+    "TotalRowCount": 2,
+    "Schema": [
+        {
+            "Column": "GatewayRegion",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "RoundTripTimeTrend",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "AvailableBandwidthTrend",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "UDPUtilizationTrend",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "DroppedConnectionTrend",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "WeeklyAvgRoundTripTimeInMs",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "DailyAvgRoundTripTimeInMs",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "WeeklyAvailableBandwidthInMBps",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "DailyAvailableBandwidthInMBps",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "WeeklyUdpUtilization",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "DailyWeeklyUdpUtilization",
+            "PropertyType": "Double"
+        },
+        {
+            "Column": "WeeklyDroppedConnectionsCount",
+            "PropertyType": "Int32"
+        },
+        {
+            "Column": "DailyDroppedConnectionsCount",
+            "PropertyType": "Int32"
+        }
+    ],
+    "Values" :[
+        ["Japan East", "Increasing", "Decreasing", "Static", "Decreasing", "296.25", "350.50", "3.1", "2,1", "51.2", "47.8", "19", "29"],
+        ["Southeast Asia", "Decreasing", "Static", "Increasing", "Increasing", "337.14", "299.50", "1.7", "2,2", "33.5", "67.8", "17", "16"],
+    ]
+}
+```
