@@ -43,7 +43,7 @@ In this section you:
 Steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
-1. Select **Create a resource** > type **Event Hubs** in the search bar > select the **Event Hubs** suggestion. 
+1. Select **Create a resource**, type **Event Hubs** in the search bar, and then select the **Event Hubs** suggestion. 
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
 1. When the event hub namespace is provisioned, go to the page for the namespace.
@@ -52,9 +52,9 @@ Steps:
 1. After the event hub is created, go to the event hub namespace, and then select **Access Control (IAM)** from the sidebar.
 1. Select **Role Assignments**.
 1. Select **+ Add** and select **Add Role Assignment**.
-1. Under **Role** > **Job function roles** > select **Azure Event Hubs Data Sender** > select **Next**.
+1. Under **Role**, go to **Job function roles**, select **Azure Event Hubs Data Sender**, and then select **Next**.
 1. Under the **Members** tab, select **Assign access to User, group, or service principal**.
-1. Select **+ Select members** > search for and select **Microsoft Graph Change Tracking**.
+1. Select **+ Select members**, then search for and select **Microsoft Graph Change Tracking**.
 1. Select **Review + assign** to complete the process.
  
 <!-- End of "Use the Azure portal rbac" tab-->
@@ -180,9 +180,9 @@ If you're using role-based access control, the **notificationUrl** property look
 
 If you're using Key Vault, the **notificationUrl** property looks like this: `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
-- `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
-- `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
+- `azurekeyvaultname` - The name you gave to the key vault during creation. It can be found in the DNS name.
+- `secretname` - The name you gave to the secret during creation. It can be found on the Azure Key Vault **Secrets** page.
+- `domainname` - The name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
 
 <!-- End of "Using Key Vault tab-->
 
