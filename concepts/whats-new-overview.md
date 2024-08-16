@@ -58,7 +58,7 @@ Enabled the `Spain` and `Mexico` values as supported regions for the **region** 
 
 ### Backup Storage
 
-The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the see, [Backup Storage](/concepts/backup-storage-concept-overview.md).
+The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. For more information, see [Backup Storage](/graph/backup-storage-concept-overview).
 
 ### Customer booking
 
