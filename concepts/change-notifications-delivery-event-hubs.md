@@ -47,7 +47,7 @@ Steps:
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
 1. When the event hub namespace is provisioned, go to the page for the namespace.
-1. Select **Event Hubs** and **+ Event Hub**.
+1. Select **Event Hubs** and then **+ Event Hub**.
 1. Give a name to the new event hub, and select **Create**.
 1. After the event hub is created, go to the event hub namespace, and then select **Access Control (IAM)** from the sidebar.
 1. Select **Role Assignments**.
@@ -114,13 +114,13 @@ In this section, you:
 Steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
-1. Select **Create a resource** > type **Event Hubs** in the search bar > select the **Event Hubs** suggestion. 
+1. Select **Create a resource**, type **Event Hubs** in the search bar, and then select the **Event Hubs** suggestion. 
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
 1. When the event hub namespace is provisioned, go to the page for the namespace.
-1. Select **Event Hubs** and **+ Event Hub**.
+1. Select **Event Hubs** and then **+ Event Hub**.
 1. Give a name to the new event hub, and select **Create**.
-1. After the event hub is created, select the name of the event hub, and then select **Shared access policies** and **+ Add** to add a new policy.
+1. After the event hub is created, select the name of the event hub, then choose **Shared access policies** and **+ Add** to add a new policy.
 1. Give a name to the policy, check **Send**, and select **Create**.
 1. After the policy is created, select the name of the policy to open the details panel, and then copy the **Connection string-primary key** value. Record the value; you need it for the next step.
 
@@ -137,14 +137,14 @@ In this section, you:
 Steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
-1. Select **Create a resource** > type **Key Vault** in the search bar > select the **Key Vault** suggestion.
+1. Select **Create a resource**, type **Key Vault** in the search bar, and then select the **Key Vault** suggestion.
 1. On the Key Vault creation page, select **Create**.
-1. Fill in the Key Vault creation details, and then select **Review + Create** and **Create**.
+1. Fill in the Key Vault creation details, then select **Review + Create** and **Create**.
 1. Go to the newly created key vault using the **Go to resource** from the notification.
 1. Copy the **DNS name**; you need it later in this article.
 1. Go to **Secrets** and select **+ Generate/Import**.
 1. Give a name to the secret, and keep the name for later; you need it later in this article. For the value, paste in the connection string you generated at the Event Hubs step. Select **Create**.
-1. Select **Access Policies** and **+ Add Access Policy**.
+1. Select **Access Policies** and then **+ Add Access Policy**.
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Select **Add**.
 
 <!-- End of "Use the Azure portal" tab-->
@@ -169,9 +169,9 @@ If you're using role-based access control, the **notificationUrl** property look
 
 `EventHub:https://<eventhubnamespace>.servicebus.windows.net/eventhubname/<eventhubname>?tenantId=<domainname>`
 
-- `eventhubnamespace` is the name you give to the Event Hub namespace. Can be found in the Event Hubs Overview page under Host name.
-- `eventhubname` is the name you give to the Event Hub. Can be found in the Event Hubs -> Overview -> Event Hubs.
-- `domainname` is the name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Event Hub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
+- `eventhubnamespace` is the name you give to the Event Hub namespace. It can be found in the Event Hubs Overview page under Host name.
+- `eventhubname` is the name you give to the Event Hub. It can be found in the Event Hubs -> Overview -> Event Hubs.
+- `domainname` is the name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Event Hub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
 
 <!-- End of "Using RBAC tab-->
 
