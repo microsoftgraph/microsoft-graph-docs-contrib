@@ -36,6 +36,9 @@ To use the Postman collection, fork it to your own Postman workspace. Do this fr
 1. Under **Workspace**, ensure that **My Workspace** is selected in the dropdown list.
 1. Select **Fork Collection**.
 
+> [!IMPORTANT]
+> Don't fork this collection to a public workspace. Use a private workspace to reduce the risk of exposing credentials or other sensitive data.
+
 You are redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
 ## Step 2: Download the Postman Agent (optional - Postman web browser only)

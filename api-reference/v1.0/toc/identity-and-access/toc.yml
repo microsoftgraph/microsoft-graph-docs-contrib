@@ -710,12 +710,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
     - name: Access package catalog
       items:
       - name: Access package catalog
