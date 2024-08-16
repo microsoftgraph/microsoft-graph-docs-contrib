@@ -5491,11 +5491,11 @@
     {
       "ChangeList": [
         {
-           "Id": "42d14f15-8f2c-46b6-9486-10291763aba0",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "frontlineCloudPcAccessState",
+          "Id": "42d14f15-8f2c-46b6-9486-10291763aba0",
+          "ApiChange": "Member",
+          "ChangedApiName": "noLicensesAvailable",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **noLicensesAvailable** enumeration value in **frontlineCloudPcAccessState** enumeration.",
+          "Description": "Deprecated the **noLicensesAvailable** member of the **frontlineCloudPcAccessState** enumeration. The `noLicensesAvailable` member is deprecated and will stop returning on September 30, 2024.",
           "Target": "frontlineCloudPcAccessState"
         }
       ],
