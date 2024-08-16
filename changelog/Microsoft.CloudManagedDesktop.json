@@ -5494,23 +5494,23 @@
           "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
           "ApiChange": "Method",
           "ChangedApiName": "getShiftWorkCloudPcAccessState",
-          "ChangeType": "Change",
-          "Description": "Retire getShiftWorkAccessState Api",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getShiftWorkAccessState** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
           "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
           "ApiChange": "Enum type",
           "ChangedApiName": "shiftWorkCloudPcAccessState",
-          "ChangeType": "Change",
-          "Description": "Retire shiftWorkCloudPcAccessState enum",
-          "Target": "cloudPC"
+          "ChangeType": "Deletion",
+          "Description": "Removed the **shiftWorkCloudPcAccessState** enumeration type.",
+          "Target": "shiftWorkCloudPcAccessState"
         }
       ],
       "Id": "b2a1d6a7-618e-4c9b-990f-fa4dea1de695",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-06-04T06:58:17.7596296Z",
+      "CreatedDateTime": "2024-08-16T06:58:17.7596296Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     }
