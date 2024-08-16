@@ -8,13 +8,19 @@ ms.topic: how-to
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.subservice: entra-applications
-ms.date: 06/10/2024
+ms.date: 08/16/2024
 #customer intent: As a developer, I want to use Microsoft Graph to configure my app's behavior to adopt new breaking changes.
 ---
 
 # Manage application authenticationBehaviors
 
 The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object allows you to configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
+
+The following behaviors are configurable:
+
+- Enable or disable extended Azure AD Graph access till July 31, 2025, when Azure AD Graph is fully retired.
+- [Allow or prevent the issuance of email claims with unverified domain owners](#prevent-the-issuance-of-email-claims-with-unverified-domain-owners).
+- Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
 > The authenticationBehaviors property of the application object is currently available in `beta` only.
@@ -457,6 +463,42 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+## Allow extended Azure AD Graph access till July 31, 2025
+
+By default, applications created after August 31, 2024 will receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, unless they're configured to allow extended Azure AD Graph access. This extended access is available only until July 31, 2025, when Azure AD Graph is fully retired. After July 31, 2025, all apps will receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, regardless of their extended access configuration. For more information, see [June 2024 update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/june-2024-update-on-azure-ad-graph-api-retirement/ba-p/4094534).
+
+The following request shows how to update an app to enable extended Azure AD Graph access. The request returns a `204 No Content` response code.
+
+#### Option 1
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationBehaviors_blockazureadgraphaccess_option1"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f/authenticationBehaviors
+
+{
+    "blockAzureADGraphAccess": false
+}
+```
+
+#### Option 2
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationBehaviors_blockazureadgraphaccess_option2"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f
+
+{
+    "authenticationBehaviors": {
+        "blockAzureADGraphAccess": false
+    }
+}
+```
 
 ## Related content
 
