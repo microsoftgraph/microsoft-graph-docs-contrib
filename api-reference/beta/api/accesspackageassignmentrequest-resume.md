@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequest: resume"
-description: "Resume accessPackageAssignmentRequest objects."
+description: "Resume a user's access package request after waiting for a callback from a custom extension."
 ms.localizationpriority: medium
 author: "vikama-microsoft"
 ms.subservice: "entra-id-governance"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
+Resume a user's access package request after waiting for a callback from a custom extension.
+
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -21,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
+
+> [!IMPORTANT]
+> App-only access can be authorized *without* granting the `EntitlementManagement.ReadWrite.All` application permission to the caller. Instead, assign the caller an [Entitlement Management role](/entra/id-governance/entitlement-management-delegate), where `Access package assignment manager` is the least privileged role supported for this operation. For more information on how to assign an Entitlement Management role, see [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md#example-4-create-a-role-assignment-with-access-package-catalog-scope) or [Delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers#as-a-catalog-owner-delegate-to-an-access-package-manager).
 
 ## HTTP request
 

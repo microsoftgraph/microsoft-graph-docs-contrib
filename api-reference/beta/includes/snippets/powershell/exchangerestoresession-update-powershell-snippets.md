@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	"mailboxRestoreArtifacts@delta" = @(
@@ -53,6 +53,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId $exchangeRestoreSessionId -BodyParameter $params
+Update-MgBetaSolutionBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId $exchangeRestoreSessionId -BodyParameter $params
 
 ```

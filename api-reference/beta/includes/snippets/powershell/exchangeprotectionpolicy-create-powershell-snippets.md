@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	displayName = "Exchange Protection Policy"
@@ -21,6 +21,6 @@ $params = @{
 	)
 }
 
-New-MgBetaBackupRestoreExchangeProtectionPolicy -BodyParameter $params
+New-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -BodyParameter $params
 
 ```
