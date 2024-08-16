@@ -18,8 +18,8 @@ The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?v
 
 The following behaviors are configurable:
 
-- Enable or disable extended Azure AD Graph access till June 30, 2025, when Azure AD Graph is fully retired.
 - [Allow or prevent the issuance of email claims with unverified domain owners](#prevent-the-issuance-of-email-claims-with-unverified-domain-owners).
+- [Enable or disable extended Azure AD Graph access till June 30, 2025](#allow-extended-azure-ad-graph-access-till-june-30-2025), when Azure AD Graph is fully retired.
 - Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
