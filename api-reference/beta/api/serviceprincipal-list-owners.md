@@ -25,8 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
