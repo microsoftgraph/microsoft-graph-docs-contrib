@@ -2,7 +2,7 @@
 title: "getEffectivePermissions function"
 description: "Intune Shared Devicemanagement Geteffectivepermissions Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

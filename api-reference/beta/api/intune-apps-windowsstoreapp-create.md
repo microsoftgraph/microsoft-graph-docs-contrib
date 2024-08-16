@@ -2,7 +2,7 @@
 title: "Create windowsStoreApp"
 description: "Create a new windowsStoreApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

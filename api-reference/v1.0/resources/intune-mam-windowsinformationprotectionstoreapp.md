@@ -2,7 +2,7 @@
 title: "windowsInformationProtectionStoreApp resource type"
 description: "Store App for Windows information protection"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

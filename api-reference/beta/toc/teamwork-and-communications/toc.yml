@@ -4,6 +4,66 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Approvals
+  items:
+  - name: Approval item
+    items:
+    - name: Approval item
+      href: ../../resources/approvalitem.md
+    - name: List
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get
+      href: ../../api/approvalitem-get.md
+    - name: Cancel
+      href: ../../api/approvalitem-cancel.md
+    - name: List requests
+      href: ../../api/approvalitem-list-requests.md
+    - name: List responses
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create response
+      href: ../../api/approvalitem-post-responses.md
+  - name: Approval solution
+    items:
+    - name: Approval solution
+      href: ../../resources/approvalsolution.md
+    - name: Get
+      href: ../../api/approvalsolution-get.md
+    - name: Provision
+      href: ../../api/approvalsolution-provision.md
+    - name: List approval items
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create approval item
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get approval operation
+      href: ../../api/approvaloperation-get.md
+  - name: Approval item request
+    items:
+    - name: Approval item request
+      href: ../../resources/approvalitemrequest.md
+    - name: List
+      href: ../../api/approvalitem-list-requests.md
+    - name: Get
+      href: ../../api/approvalitemrequest-get.md
+  - name: Approval item response
+    items:
+    - name: Approval item response
+      href: ../../resources/approvalitemresponse.md
+    - name: List
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create
+      href: ../../api/approvalitem-post-responses.md
+    - name: Get
+      href: ../../api/approvalitemresponse-get.md
+  - name: Approval item view point
+    href: ../../resources/approvalitemviewpoint.md
+  - name: Approval operation
+    items:
+    - name: Approval operation
+      href: ../../resources/approvaloperation.md
+    - name: Get
+      href: ../../api/approvaloperation-get.md
 - name: Apps
   items:
   - name: Teams app
@@ -336,9 +396,9 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
-    - name: External meeting registration
+    - name: External meeting registration (deprecated)
       items:
-      - name: External meeting registration
+      - name: External meeting registration (deprecated)
         href: ../../resources/externalmeetingregistration.md
       - name: Create
         href: ../../api/externalmeetingregistration-post.md
@@ -346,9 +406,9 @@ items:
         href: ../../api/externalmeetingregistration-get.md
       - name: Delete
         href: ../../api/externalmeetingregistration-delete.md
-    - name: Meeting registration
+    - name: Meeting registration (deprecated)
       items:
-      - name: Meeting registration
+      - name: Meeting registration (deprecated)
         href: ../../resources/meetingregistration.md
       - name: Create
         href: ../../api/meetingregistration-post.md
@@ -1183,6 +1243,16 @@ items:
       href: ../../api/workforceintegration-update.md
     - name: Delete
       href: ../../api/workforceintegration-delete.md
+  - name: Working time schedule
+    items:
+    - name: Working time schedule
+      href: ../../resources/workingtimeschedule.md
+    - name: Get
+      href: ../../api/workingtimeschedule-get.md
+    - name: Start working time
+      href: ../../api/workingtimeschedule-startworkingtime.md
+    - name: End working time
+      href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
     - name: Geo coordinates
@@ -1227,5 +1297,7 @@ items:
       href: ../../resources/timeoffitem.md
     - name: Time range
       href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
     - name: Workforce integration encryption
       href: ../../resources/workforceintegrationencryption.md

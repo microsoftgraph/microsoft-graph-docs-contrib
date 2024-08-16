@@ -24,6 +24,10 @@ See [educationRubric](educationrubric.md) for a description of the relationship 
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it's a points rubric.|
 |levelId|String|The ID of this resource.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

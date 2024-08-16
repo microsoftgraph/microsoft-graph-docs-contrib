@@ -21,11 +21,11 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessPackageDisplayName|String| Display name of the access package to which access has been granted. |
-|accessPackageId|String| Identifier of the access package to which access has been granted. |
+|accessPackageDisplayName|String| Display name of the access package to which access is granted. |
+|accessPackageId|String| Identifier of the access package to which access is granted. |
 | displayName | String | Display name of the access package. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
 | id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | String | Type of resource. Type will always be `AccessPackageAssignmentPolicy`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. This value is always `AccessPackageAssignmentPolicy`. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 
@@ -33,7 +33,7 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource",

@@ -1,6 +1,6 @@
 ---
 title: "resultInfo resource type"
-description: "This contains success and failure specific result information."
+description: "Provides success and failure-specific result information."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,11 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This contains success and failure specific result information. 
+Provides success and failure-specific result information. 
 
-The code specifies if the result is a generic success or failure. If the code is 2xx it's a success, if it's a 4xx it's a client error, and if it's 5xx, it's a server error.
+The code specifies if the result is a generic success or failure. If the code is 2xx, it's a success; if it's 4xx, it's a client error; and if it's 5xx, it's a server error.
 
-The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful)
+The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful).
 
 
 ## Properties

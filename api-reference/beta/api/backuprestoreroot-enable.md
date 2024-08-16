@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/enable
 [!INCLUDE [sample-code](../includes/snippets/php/backuprestoreroot-enable-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/backuprestoreroot-enable-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/backuprestoreroot-enable-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -128,7 +132,7 @@ HTTP/1.1 200 OK
             "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
         }
     },
-    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z"
+    "lastModifiedDateTime":"2023-06-19T12:01:03.45Z"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Get certificateConnectorDetails"
 description: "Read properties and relationships of the certificateConnectorDetails object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -32,11 +32,11 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

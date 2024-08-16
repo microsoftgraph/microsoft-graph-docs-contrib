@@ -19,6 +19,10 @@ A subclass of [educationResource](educationresource.md) that represents a Micros
 | :------- | :----- | :--------------------------- |
 | url      | String | URL of the channel resource. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

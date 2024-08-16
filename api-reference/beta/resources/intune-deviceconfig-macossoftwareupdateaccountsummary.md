@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateAccountSummary resource type"
 description: "MacOS software update account summary report for a device and user"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -42,7 +42,7 @@ POST /groups/{id}/validateProperties
 
 | Name          | Description      |
 | :------------ | :--------------- |
-| Authorization | Bearer {code}    |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

@@ -8,32 +8,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageResourceRoleScope
 {
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"role" , new 
+			"role" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				OriginId = "Eligible",
-				DisplayName = "Eligible Member",
-				OriginSystem = "DirectoryRole",
-				Resource = new 
 				{
-					Id = "ea036095-57a6-4c90-a640-013edf151eb1",
+					"originId", new UntypedString("Eligible")
 				},
-			}
+				{
+					"displayName", new UntypedString("Eligible Member")
+				},
+				{
+					"originSystem", new UntypedString("DirectoryRole")
+				},
+				{
+					"resource", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"id", new UntypedString("ea036095-57a6-4c90-a640-013edf151eb1")
+						},
+					})
+				},
+			})
 		},
 		{
-			"scope" , new 
+			"scope" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Description = "Root Scope",
-				DisplayName = "Root",
-				IsRootScope = true,
-				OriginSystem = "DirectoryRole",
-				OriginId = "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-			}
+				{
+					"description", new UntypedString("Root Scope")
+				},
+				{
+					"displayName", new UntypedString("Root")
+				},
+				{
+					"isRootScope", new UntypedBoolean(true)
+				},
+				{
+					"originSystem", new UntypedString("DirectoryRole")
+				},
+				{
+					"originId", new UntypedString("c4e39bd9-1100-46d3-8c65-fb160da0071f")
+				},
+			})
 		},
 	},
 };

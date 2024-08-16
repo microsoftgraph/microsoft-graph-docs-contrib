@@ -2,7 +2,7 @@
 title: "securityBaselinePolicySourceType enum type"
 description: "Authoring source of a policy"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

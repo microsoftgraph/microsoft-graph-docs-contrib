@@ -24,10 +24,13 @@ An access control entry for an item indexed by a Microsoft Search [externalConne
 | type           | String | The type of identity. Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests` if the identitySource is `azureActiveDirectory` and just `group` if the identitySource is `external`. |
 | value          | String | The unique identifer of the identity. For Microsoft Entra identities, `value` is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. For external groups, `value` is set to the ID of the [externalGroup](externalconnectors-externalgroup.md).|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

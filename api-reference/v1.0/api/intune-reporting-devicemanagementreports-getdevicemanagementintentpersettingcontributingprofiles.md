@@ -2,7 +2,7 @@
 title: "getDeviceManagementIntentPerSettingContributingProfiles action"
 description: "Not yet documented"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -110,8 +110,16 @@ Content-length: 278
 [!INCLUDE [sample-code](../includes/snippets/java/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles-getdevicemanagementintentpersettingcontributingprofiles-action-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles-getdevicemanagementintentpersettingcontributingprofiles-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles-getdevicemanagementintentpersettingcontributingprofiles-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles-getdevicemanagementintentpersettingcontributingprofiles-action-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

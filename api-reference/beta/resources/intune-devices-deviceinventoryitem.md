@@ -2,7 +2,7 @@
 title: "deviceInventoryItem resource type"
 description: "Abstract type to represent a single piece of inventory data that was collected on a device. For example, this could represent a single network adapter that was present on a device"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -5,7 +5,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # conversionUserDetails resource type

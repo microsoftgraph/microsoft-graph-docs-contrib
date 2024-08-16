@@ -2,7 +2,7 @@
 title: "Update telecomExpenseManagementPartner"
 description: "Update the properties of a telecomExpenseManagementPartner object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

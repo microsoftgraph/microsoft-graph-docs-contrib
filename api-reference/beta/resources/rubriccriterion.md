@@ -21,9 +21,13 @@ A criterion of a rubric. See [educationRubric](educationrubric.md) for a descrip
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this criterion.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
