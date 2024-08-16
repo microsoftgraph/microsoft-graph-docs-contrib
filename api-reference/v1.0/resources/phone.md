@@ -20,6 +20,10 @@ Represents a phone number.
 |number|string|The phone number.|
 |type|phoneType|The type of phone number. The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

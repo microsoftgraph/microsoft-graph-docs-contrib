@@ -7,11 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.planner_plan_configuration import PlannerPlanConfiguration
 from msgraph_beta.generated.models.planner_plan_configuration_bucket_definition import PlannerPlanConfigurationBucketDefinition
+from msgraph_beta.generated.models.planner_plan_configuration_localization import PlannerPlanConfigurationLocalization
+from msgraph_beta.generated.models.planner_plan_configuration_bucket_localization import PlannerPlanConfigurationBucketLocalization
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerPlanConfiguration(
-	odata_type = "#microsoft.graph.plannerPlanConfiguration",
 	default_language = "en-us",
 	buckets = [
 		PlannerPlanConfigurationBucketDefinition(
@@ -25,6 +26,54 @@ request_body = PlannerPlanConfiguration(
 		),
 		PlannerPlanConfigurationBucketDefinition(
 			external_bucket_id = "returnProcessingBucket",
+		),
+	],
+	localizations = [
+		PlannerPlanConfigurationLocalization(
+			id = "en-us",
+			language_tag = "en-us",
+			plan_title = "Order Tracking",
+			buckets = [
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "deliveryBucket",
+					name = "Deliveries",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "storePickupBucket",
+					name = "Pickup",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "specialOrdersBucket",
+					name = "Special Orders",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "returnProcessingBucket",
+					name = "Customer Returns",
+				),
+			],
+		),
+		PlannerPlanConfigurationLocalization(
+			id = "es-es",
+			language_tag = "es-es",
+			plan_title = "Seguimiento de pedidos",
+			buckets = [
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "deliveryBucket",
+					name = "Entregas",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "storePickupBucket",
+					name = "Recogida",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "specialOrdersBucket",
+					name = "Pedidos especiales",
+				),
+				PlannerPlanConfigurationBucketLocalization(
+					external_bucket_id = "specialOrdersBucket",
+					name = "Devoluciones de clientes",
+				),
+			],
 		),
 	],
 )

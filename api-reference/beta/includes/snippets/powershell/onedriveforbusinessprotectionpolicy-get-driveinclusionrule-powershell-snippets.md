@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
-Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -DriveProtectionRuleId $driveProtectionRuleId
+Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -DriveProtectionRuleId $driveProtectionRuleId
 
 ```
