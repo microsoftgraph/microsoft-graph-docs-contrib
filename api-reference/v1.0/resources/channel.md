@@ -1,7 +1,7 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType
