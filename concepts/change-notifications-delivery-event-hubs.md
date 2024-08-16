@@ -46,10 +46,10 @@ Steps:
 1. Select **Create a resource**, type **Event Hubs** in the search bar, and then select the **Event Hubs** suggestion. 
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
-1. When the event hub namespace is provisioned, go to the page for the namespace.
+1. When the Event Hubs namespace is provisioned, go to the page for the namespace.
 1. Select **Event Hubs** and then **+ Event Hub**.
 1. Give a name to the new event hub, and select **Create**.
-1. After the event hub is created, go to the event hub namespace, and then select **Access Control (IAM)** from the sidebar.
+1. After the event hub is created, go to the Event Hubs namespace, and then select **Access Control (IAM)** from the sidebar.
 1. Select **Role Assignments**.
 1. Select **+ Add** and select **Add Role Assignment**.
 1. Under **Role**, go to **Job function roles**, select **Azure Event Hubs Data Sender**, and then select **Next**.
@@ -117,7 +117,7 @@ Steps:
 1. Select **Create a resource**, type **Event Hubs** in the search bar, and then select the **Event Hubs** suggestion. 
 1. On the Event Hubs creation page, select **Create**.
 1. Fill in the Event Hubs namespace creation details, and then select **Create**.
-1. When the event hub namespace is provisioned, go to the page for the namespace.
+1. When the Event Hubs namespace is provisioned, go to the page for the namespace.
 1. Select **Event Hubs** and then **+ Event Hub**.
 1. Give a name to the new event hub, and select **Create**.
 1. After the event hub is created, select the name of the event hub, then choose **Shared access policies** and **+ Add** to add a new policy.
@@ -169,9 +169,9 @@ If you're using role-based access control, the **notificationUrl** property look
 
 `EventHub:https://<eventhubnamespace>.servicebus.windows.net/eventhubname/<eventhubname>?tenantId=<domainname>`
 
-- `eventhubnamespace` is the name you give to the Event Hub namespace. It can be found in the Event Hubs Overview page under Host name.
-- `eventhubname` is the name you give to the Event Hub. It can be found in the Event Hubs -> Overview -> Event Hubs.
-- `domainname` is the name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Event Hub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
+- `eventhubnamespace` is the name you give to the Event Hubs namespace. It can be found in the Event Hubs Overview page under Host name.
+- `eventhubname` is the name you give to the event hub. It can be found in the Event Hubs -> Overview -> Event Hubs.
+- `domainname` is the name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Event Hubs, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hubs. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
 
 <!-- End of "Using RBAC tab-->
 
