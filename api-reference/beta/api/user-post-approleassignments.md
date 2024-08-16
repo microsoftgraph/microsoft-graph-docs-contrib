@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign an [app role](../resources/approle.md) to a [user](../resources/user.md), creating an [appRoleAssignment](../resources/approleassignment.md). To grant an app role assignment to a user, you need three identifiers:
+Use this API to assign an [app role](../resources/approle.md) to a [user](../resources/user.md), creating an [appRoleAssignment](../resources/approleassignment.md) object. To grant an app role assignment to a user, you need three identifiers:
 
 - `principalId`: The `id` of the user to whom you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
