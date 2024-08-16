@@ -2,7 +2,7 @@
 title: "windowsKioskUWPApp resource type"
 description: "The base class for a type of apps"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

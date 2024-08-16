@@ -2,7 +2,7 @@
 title: "Create windowsUpdateState"
 description: "Create a new windowsUpdateState object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

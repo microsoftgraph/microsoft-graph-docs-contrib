@@ -2,7 +2,7 @@
 title: "Create mobileAppTroubleshootingEvent"
 description: "Create a new mobileAppTroubleshootingEvent object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

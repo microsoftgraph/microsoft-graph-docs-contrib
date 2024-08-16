@@ -13,10 +13,10 @@ exchangeProtectionPolicy.setDisplayName("Exchange Policy - Inadvertent data loss
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 LinkedList<Object> mailboxProtectionUnitsDelta = new LinkedList<Object>();
  property = new ();
-property.setUserId("1b014d8c-71fe-4d00-a01a-31850bc5b32c");
+property.setDirectoryObjectId("1b014d8c-71fe-4d00-a01a-31850bc5b32c");
 mailboxProtectionUnitsDelta.add(property);
  property1 = new ();
-property1.setUserId("2b014d8c-71fe-4d00-a01a-31850bc5b32c");
+property1.setDirectoryObjectId("2b014d8c-71fe-4d00-a01a-31850bc5b32c");
 mailboxProtectionUnitsDelta.add(property1);
  property2 = new ();
  removed = new ();

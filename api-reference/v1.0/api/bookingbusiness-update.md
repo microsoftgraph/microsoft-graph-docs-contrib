@@ -29,7 +29,7 @@ PATCH /solutions/bookingBusinesses/{id}
 ## Request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]

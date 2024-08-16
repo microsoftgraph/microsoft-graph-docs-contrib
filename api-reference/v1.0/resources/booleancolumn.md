@@ -2,7 +2,7 @@
 author: "spgraph-docs-team"
 title: "booleanColumn resource type"
 ms.localizationpriority: medium
-description: "Indicates that the column in a columnDefinition holds a boolean value."
+description: "Indicates that the column in a columnDefinition holds a Boolean value."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates that the column in a [columnDefinition](columndefinition.md) holds a boolean value.
+Indicates that the column in a [columnDefinition](columndefinition.md) holds a Boolean value.
 
 ## Properties
 

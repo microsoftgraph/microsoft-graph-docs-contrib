@@ -2,7 +2,7 @@
 title: "deviceConfigurationDeviceStatus resource type"
 description: "Support for this Entity is being deprecated starting May 2026 & will no longer be supported."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

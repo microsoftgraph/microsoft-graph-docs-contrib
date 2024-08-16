@@ -42,7 +42,7 @@ Represents a vendor in Dynamics 365 Business Central.
 |irs1099Code|string|Specifies a 1099 code for the vendor. US only.|
 |paymentTermsId|GUID|The default payment terms ID for the vendor.|
 |paymentMethodId|GUID|The default payment method ID for the vendor.|
-|taxLiable|boolean|Specifies if the vendor is liable for tax.|
+|taxLiable|Boolean|Specifies if the vendor is liable for tax.|
 |blocked|string|Specifies which transactions with the vendor that can't be posted. Accepted values are blank, Payment or All|
 |balance|decimal|The vendor's balance. Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|
@@ -77,7 +77,7 @@ Here's a JSON representation of the vendor.
   "irs1099Code": "string",
   "paymentTermsId": "GUID",
   "paymentMethodId": "GUID",
-  "taxLiable": "boolean",
+  "taxLiable": "Boolean",
   "blocked": "string",
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"

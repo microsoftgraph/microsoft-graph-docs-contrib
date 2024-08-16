@@ -2,7 +2,7 @@
 title: "moveDevicesToOU action"
 description: "Intune Devices Manageddevice Movedevicestoou Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

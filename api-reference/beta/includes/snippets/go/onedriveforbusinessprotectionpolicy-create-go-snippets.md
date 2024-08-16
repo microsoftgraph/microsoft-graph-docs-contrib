@@ -21,20 +21,14 @@ requestBody.SetDisplayName(&displayName)
 
 
 driveProtectionUnit := graphmodels.NewDriveProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "cdd3a849-dcaf-4a85-af82-7e39fc14019", 
-}
-driveProtectionUnit.SetAdditionalData(additionalData)
+directoryObjectId := "cdd3a849-dcaf-4a85-af82-7e39fc14019"
+driveProtectionUnit.SetDirectoryObjectId(&directoryObjectId) 
 driveProtectionUnit1 := graphmodels.NewDriveProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "9bc069da-b746-41a4-89ab-26125c6373c7", 
-}
-driveProtectionUnit1.SetAdditionalData(additionalData)
+directoryObjectId := "9bc069da-b746-41a4-89ab-26125c6373c7"
+driveProtectionUnit1.SetDirectoryObjectId(&directoryObjectId) 
 driveProtectionUnit2 := graphmodels.NewDriveProtectionUnit()
-additionalData := map[string]interface{}{
-	"userId" : "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7", 
-}
-driveProtectionUnit2.SetAdditionalData(additionalData)
+directoryObjectId := "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+driveProtectionUnit2.SetDirectoryObjectId(&directoryObjectId) 
 
 driveProtectionUnits := []graphmodels.DriveProtectionUnitable {
 	driveProtectionUnit,

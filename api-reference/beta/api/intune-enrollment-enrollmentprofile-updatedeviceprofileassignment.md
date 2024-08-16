@@ -2,7 +2,7 @@
 title: "updateDeviceProfileAssignment action"
 description: "Intune Enrollment Enrollmentprofile Updatedeviceprofileassignment Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

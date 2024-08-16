@@ -2,7 +2,7 @@
 title: "deviceInventoryValue resource type"
 description: "An empty abstract type that will represent a single value"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

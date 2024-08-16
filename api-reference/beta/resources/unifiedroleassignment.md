@@ -41,12 +41,12 @@ Represents a role definition assigned to a principal at a particular scope. Supp
 
 ## Relationships
 
-| Relationship | Type    |Description|
-|:---------------|:--------|:----------|
-|appScope|[appScope](appscope.md)|Details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand` for the entitlement provider only.|
-|directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. Supports `$expand`. |
-|principal|[directoryObject](directoryobject.md)| The assigned principal. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only. Supports `$expand`. |
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. **roleDefinition.id** will be auto expanded. Supports `$expand`. |
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|appScope|[appScope](appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand` for the entitlement provider only.|
+|directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand` for the directory provider.|
+|principal|[directoryObject](directoryobject.md)| Referencing the assigned principal. Read-only. Supports `$expand` except for the Exchange provider.|
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for. Supports `$expand`.|
 
 
 
