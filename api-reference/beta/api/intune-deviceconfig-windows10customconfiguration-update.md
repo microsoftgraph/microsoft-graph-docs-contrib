@@ -2,7 +2,7 @@
 title: "Update windows10CustomConfiguration"
 description: "Update the properties of a windows10CustomConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

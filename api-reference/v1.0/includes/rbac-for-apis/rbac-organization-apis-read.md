@@ -3,7 +3,9 @@ author: sauwat
 ms.topic: include
 ---
 
-For delegated scenarios, the signed-in user must have at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+Applications granted the *User.Read* permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization. All other properties return with `null` values. To read all properties, use at least *Organization.Read.All*.
+
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
 
 - AdHoc License Administrator
 - Application Administrator
@@ -18,12 +20,14 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Desktop Analytics Administrator
 - Directory Readers
 - Directory Reviewer
+- Directory Synchronization Accounts - for Microsoft Entra Connect and Microsoft Entra Cloud Sync services
 - Directory Writers
 - Dynamics 365 Administrator
 - Dynamics 365 Administrator
 - Global Reader
 - Guest User
 - Helpdesk Administrator
+- Hybrid Identity Administrator
 - Insights Administrator
 - Kaizala Administrator
 - License Administrator
@@ -48,5 +52,3 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - User Administrator
 - Volume Licensing Business Center User
 - Volume Licensing Service Center User
-
-Applications granted the *User.Read* permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization. All other properties return with `null` values. To read all properties, use at least *Organization.Read.All*.

@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "oauth2permissiongrant_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-update-permissions.md)]
 
+[!INCLUDE [rbac-oauth2permissiongrant-apis-write](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

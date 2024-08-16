@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "admin",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminReportSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/adminReportSettings?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "adminReportSettings"
+        }
+      ],
+      "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-12T09:09:41.2023199Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
           "ApiChange": "Relationship",
           "ChangedApiName": "reportSettings",

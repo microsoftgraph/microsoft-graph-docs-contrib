@@ -2,7 +2,7 @@
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

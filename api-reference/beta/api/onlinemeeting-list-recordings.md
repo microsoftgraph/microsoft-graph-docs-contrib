@@ -48,7 +48,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings
 
 ## Optional query parameters
 
-This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select`, `$filter`, and `$top`  [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -139,7 +139,6 @@ Content-Type: application/json
       "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
       "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
       "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-      "meetingOrganizerId": "b935e675-5e67-48b9-8d45-249d5f88e964",
       "createdDateTime": "2023-04-10T08:13:17.5990966Z",
       "endDateTime": "2023-04-10T08:27:25.2346000Z",
       "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",

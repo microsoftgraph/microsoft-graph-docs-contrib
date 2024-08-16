@@ -131,6 +131,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-update-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-update-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -158,28 +162,28 @@ Content-Type: application/json
       "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "inPlace",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario

@@ -2,7 +2,7 @@
 title: "managedDeviceArchitecture enum type"
 description: "Processor architecture"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -167,12 +167,12 @@ Notifications include the resource URL of the changed resource. You can send a s
 
 The following table indicates the supported notification and change types for the virtual events resource.
 
-| Notification type                                                        | Resource ID                                                                                    | Change types      |
-|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar)                      | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession)                      | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Registration](/graph/api/resources/virtualeventregistrant)              | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
-| [Meeting Attendance Report](graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
+| Notification type                                                         | Resource ID                                                                                    | Change types      |
+|:--------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
+| [Webinar](/graph/api/resources/virtualeventwebinar)                       | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistrant)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| [Meeting Attendance Report](/graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 
 ## Event notification examples
 

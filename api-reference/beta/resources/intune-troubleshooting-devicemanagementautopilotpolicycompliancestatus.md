@@ -2,7 +2,7 @@
 title: "deviceManagementAutopilotPolicyComplianceStatus enum type"
 description: "Intune Troubleshooting Devicemanagementautopilotpolicycompliancestatus Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-list-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/protectionpolicybase-list-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,7 +133,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -141,7 +145,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "retentionSettings": [
         {
           "interval": "R/PT10M",
@@ -169,7 +173,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -181,7 +185,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "retentionSettings": [
         {
           "interval": "R/PT10M",
@@ -209,7 +213,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -221,7 +225,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
           "displayName": "User2"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "retentionSettings": [
         {
           "interval": "R/PT10M",

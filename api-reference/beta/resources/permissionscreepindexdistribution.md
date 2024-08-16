@@ -6,6 +6,7 @@ ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
 doc_type: resourcePageType
+toc.title: Permissions Creep Index
 ---
 
 # permissionsCreepIndexDistribution resource type

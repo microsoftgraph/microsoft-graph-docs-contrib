@@ -28,22 +28,21 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite | User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    User.ReadWrite.All           | Not supported. |
+|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All |  User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.ReadWrite           | Not supported. |
+|Application      |     ProfilePhoto.ReadWrite.All           | User.ReadWrite.All |
 
 ### To delete the profile photo of a group
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
+|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 |Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Not supported.           | Not supported. |
+|Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 > [!NOTE]
-> - An app with only application permissions cannot delete a group's photo.
-> - Global and user admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
+> - Global and user admins can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
 
 ## HTTP request
 
@@ -111,6 +110,10 @@ DELETE https://graph.microsoft.com/beta/me/photo/$value
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-profilephoto-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilephoto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

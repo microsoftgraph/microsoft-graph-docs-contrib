@@ -2,7 +2,7 @@
 title: "scheduleActionsForRules action"
 description: "Intune Shared Devicecompliancepolicy Scheduleactionsforrules Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

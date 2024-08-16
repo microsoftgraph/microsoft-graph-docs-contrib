@@ -2,7 +2,7 @@
 title: "List deviceEnrollmentConfigurations"
 description: "List properties and relationships of the deviceEnrollmentConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

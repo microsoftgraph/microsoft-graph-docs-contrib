@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-The **startDateTime** and **endDateTime** properties are always returned in UTC.
+The **start** and **end** properties are always returned in UTC.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,13 +31,13 @@ GET /solutions/bookingBusinesses/{id}/appointments/{id}
 
 ## Optional query parameters
 
-This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -131,11 +131,16 @@ Content-type: application/json
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
-    "startDateTime": {
+    "isCustomerAllowedToManageBooking": false,
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,	
+    "start": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
     },

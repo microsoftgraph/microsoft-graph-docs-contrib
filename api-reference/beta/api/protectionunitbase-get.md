@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/890
 [!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-get-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/protectionunitbase-get-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,7 +125,7 @@ HTTP/1.1 200 OK
       "displayName": "Rian"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -133,6 +137,6 @@ HTTP/1.1 200 OK
       "displayName": "Ryan"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
 }
 ```

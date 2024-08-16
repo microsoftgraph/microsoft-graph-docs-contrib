@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ScheduledPermissionsRequest
 {
@@ -48,10 +49,12 @@ var requestBody = new ScheduledPermissionsRequest
 						AdditionalData = new Dictionary<string, object>
 						{
 							{
-								"NumericLessThanEquals" , new 
+								"NumericLessThanEquals" , new UntypedObject(new Dictionary<string, UntypedNode>
 								{
-									AwsMultiFactorAuthAge = "3600",
-								}
+									{
+										"aws:MultiFactorAuthAge", new UntypedString("3600")
+									},
+								})
 							},
 						},
 					},
@@ -79,10 +82,12 @@ var requestBody = new ScheduledPermissionsRequest
 						AdditionalData = new Dictionary<string, object>
 						{
 							{
-								"NumericLessThanEquals" , new 
+								"NumericLessThanEquals" , new UntypedObject(new Dictionary<string, UntypedNode>
 								{
-									AwsMultiFactorAuthAge = "3600",
-								}
+									{
+										"aws:MultiFactorAuthAge", new UntypedString("3600")
+									},
+								})
 							},
 						},
 					},

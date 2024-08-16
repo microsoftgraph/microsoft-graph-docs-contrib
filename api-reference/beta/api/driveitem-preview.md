@@ -51,8 +51,8 @@ The request should be a JSON object with the following properties.
 |   Name      |  Type         | Description
 |:------------|:--------------|:-----------------------------------------------
 | viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically.
-| chromeless  | boolean       | Optional. If `true` (default), the embedded view will not include any controls.
-| allowEdit   | boolean       | Optional. If `true`, the file can be edited from the embedded UI.
+| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls.
+| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI.
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 

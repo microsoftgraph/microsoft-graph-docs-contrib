@@ -27,7 +27,7 @@ Represents the key restrictions that are enforced as part of the [FIDO2 security
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fido2KeyRestrictions"

@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits
 [!INCLUDE [sample-code](../includes/snippets/php/list-all-siteprotectionunit-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-all-siteprotectionunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-all-siteprotectionunit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -133,7 +137,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -145,7 +149,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -167,7 +171,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -179,7 +183,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -201,7 +205,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -213,7 +217,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -234,7 +238,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -246,7 +250,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -268,7 +272,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -280,7 +284,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     }
   ]
@@ -328,6 +332,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectio
 [!INCLUDE [sample-code](../includes/snippets/php/list-siteprotectionunit-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-siteprotectionunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-siteprotectionunit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -369,7 +377,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -381,7 +389,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -403,7 +411,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -415,7 +423,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -437,7 +445,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -449,7 +457,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -471,7 +479,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -483,7 +491,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -505,7 +513,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -517,7 +525,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     }
   ]

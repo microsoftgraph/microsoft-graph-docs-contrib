@@ -38,7 +38,7 @@ To instantiate non-gallery apps, use the `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

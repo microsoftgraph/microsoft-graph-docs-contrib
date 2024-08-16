@@ -35,9 +35,9 @@ You can use either PATCH or PUT for this operation.
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Not supported.           | Not supported. |
+|Delegated (work or school account)      |    ProfilePhoto.ReadWrite.All          | Group.ReadWrite.All |
+|Delegated (personal Microsoft account)      |    Not supported.            | Not supported. |
+|Application      |    ProfilePhoto.ReadWrite.All           | Group.ReadWrite.All |
 
 ### To update the profile photo of a team
 
@@ -53,15 +53,14 @@ You can use either PATCH or PUT for this operation.
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite | User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    User.ReadWrite.All           | Not supported. |
+|Delegated (work or school account)      |   ProfilePhoto.ReadWrite.All | User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.ReadWrite            | Not supported. |
+|Application      |     ProfilePhoto.ReadWrite.All           | User.ReadWrite.All |
 
 > [!NOTE]
 >
-> - An app with only application permissions cannot update a group's photo.
 > - Permissions marked with * are supported only for backward compatibility. Please update your solutions to use an alternative permission and avoid using these permissions going forward.
-> - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *ProfilePhoto.ReadWrite.All* or *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request

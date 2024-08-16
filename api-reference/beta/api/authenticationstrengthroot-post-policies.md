@@ -70,16 +70,27 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies
 Content-Type: application/json
-Content-length: 239
 
 {
-  "@odata.type" : "#microsoft.graph.authenticationStrengthPolicy",
-  "displayName": "Contoso authentication level",
-  "description": "The only authentication level allowed to access our secret apps",
-  "allowedCombinations": [
-      "password, hardwareOath",
-      "password, sms"
-  ]
+    "displayName": "Example",
+    "requirementsSatisfied": "mfa",
+    "allowedCombinations": [
+        "fido2"
+    ],
+    "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('5790842a-5bab-44c2-9cf1-b38d675b70ea')/combinationConfigurations",
+    "combinationConfigurations": [
+        {
+            "@odata.type": "#microsoft.graph.fido2CombinationConfiguration",
+            "id": "42235320-c8db-4d8c-9344-8f1ce87f734b",
+            "appliesToCombinations": [
+                "fido2"
+            ],
+            "allowedAAGUIDs": [
+                "de1e552d-db1d-4423-a619-566b625cdc84",
+                "90a3ccdf-635c-4729-a248-9b709135078f"
+            ]
+        }
+    ]
 }
 ```
 
@@ -131,20 +142,31 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type" : "authenticationStrengthPolicy",
-  "id": "dd055c42-4218-4281-8631-f090e171f5cd",
-  "createdDateTime": "2022-09-30T10:59:01Z",
-  "modifiedDateTime": "2022-09-30T10:59:01Z",
-  "displayName": "Contoso authentication level",
-  "description": "The only authentication level allowed to access our secret apps",
-  "policyType": "custom",
-  "requirementsSatisfied": "mfa",
-  "allowedCombinations": [
-      "password, hardwareOath",
-      "password, sms"
-  ],
-  "combinationConfigurations": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies/$entity",
+    "id": "7daf2132-6a2d-4e78-a699-b823babf4436",
+    "createdDateTime": "2024-07-23T17:10:58.1492045Z",
+    "modifiedDateTime": "2024-07-23T17:10:58.1492045Z",
+    "displayName": "Example",
+    "description": "",
+    "policyType": "custom",
+    "requirementsSatisfied": "mfa",
+    "allowedCombinations": [
+        "fido2"
+    ],
+    "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('7daf2132-6a2d-4e78-a699-b823babf4436')/combinationConfigurations",
+    "combinationConfigurations": [
+        {
+            "@odata.type": "#microsoft.graph.fido2CombinationConfiguration",
+            "id": "c0fdf2f9-3b3f-4bbf-988c-17606ea4b4e4",
+            "appliesToCombinations": [
+                "fido2"
+            ],
+            "allowedAAGUIDs": [
+                "de1e552d-db1d-4423-a619-566b625cdc84",
+                "90a3ccdf-635c-4729-a248-9b709135078f"
+            ]
+        }
+    ]
 }
-
 ```
 
