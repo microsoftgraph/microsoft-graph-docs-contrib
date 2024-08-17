@@ -51,7 +51,7 @@ Enabled the `Spain` and `Mexico` values as supported regions for the **region** 
 
 ### Teamwork and communications | Messaging
 
-Use the **displayName** property on the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).
+Use the **displayName** property on the [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) resource to represent the reaction name [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Online meeting
 
