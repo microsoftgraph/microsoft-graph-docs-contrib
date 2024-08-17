@@ -565,7 +565,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getShiftWorkCloudPcAccessState",
           "ChangeType": "Change",
-          "Description": "Changed the deprecation date for the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource to April 24, 2024. Going forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getFrontlineCloudPcAccessState?view=graph-rest-beta) API.",
+          "Description": "Changed the deprecation date for the **getShiftWorkCloudPcAccessState** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource to April 24, 2024. Going forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getFrontlineCloudPcAccessState?view=graph-rest-beta) API.",
           "Target": "cloudPC"
         },
         {
@@ -4795,7 +4795,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getShiftWorkCloudPcAccessState",
           "ChangeType": "Addition",
-          "Description": "Added the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Added the **getShiftWorkCloudPcAccessState** method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
