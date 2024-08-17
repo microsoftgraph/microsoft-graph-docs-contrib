@@ -10,10 +10,11 @@ doc_type: apiPageType
 # Remove attribute (from user flow)
 Namespace: microsoft.graph
 
-
 Remove an attribute from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. You can add both custom and built-in attributes to a user flow.
 
-After this step, [PATCH the user flow](../api/authenticationeventsflow-update.md) to remove the attribute from the attribute collection step.
+The attribute is removed from both the **onAttributeCollection** > **attributes** and **onAttributeCollection** > **attributeCollectionPage** > **views** collections of the user flow.
+
+This API operation fails when you attempt to remove the last remaining attribute on the user flow.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -44,12 +45,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error is returned with specific details.
+If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error is returned with specific details. Attempting to remove the last remaining attribute results in a `400 Bad Request` error code.
 
 ## Examples
 
 #### Request
-The following example shows a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+The following example shows a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
