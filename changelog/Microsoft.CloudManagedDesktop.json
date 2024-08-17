@@ -5495,7 +5495,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getShiftWorkCloudPcAccessState",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getShiftWorkAccessState** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Removed the **getShiftWorkAccessState** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta) API.",
           "Target": "cloudPC"
         },
         {
