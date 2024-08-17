@@ -24,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for the signed-in user's direct memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_memberof_1" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-1-permissions.md)]
+<!-- { "blockType": "permissions", "name": "user_list_memberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-permissions.md)]
 
 ### Permissions for another user's direct memberships
 
