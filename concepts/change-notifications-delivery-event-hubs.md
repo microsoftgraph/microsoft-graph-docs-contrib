@@ -42,14 +42,6 @@ This section demonstrates how to set up Azure Event Hubs authentication using Mi
 
 ##### Configure the event hub
 
-In this section you:
-
-- Create an Event Hubs namespace.
-- Add a hub to that namespace to relay and deliver notifications.
-- Add a shared access policy that allows you to get a connection string to the newly created hub.
-
-Steps:
-
 1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
 1. Select **Create a resource**, type **Event Hubs** in the search bar, and then select the **Event Hubs** suggestion. 
 1. On the Event Hubs creation page, select **Create**.
@@ -75,7 +67,7 @@ This section demonstrates how to set up Azure Event Hubs authentication using Sh
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate administrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
 > [!IMPORTANT]
-> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead.
+> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
 
 ```azurecli
 # --------------
@@ -117,16 +109,20 @@ echo "Notification Url:\n${notificationUrl}"
 <!-- Start of "Use the Azure portal" tab-->
 # [Use the Azure portal with SAS](#tab/change-notifications-eventhubs-azure-portal)
 
+This section demonstrates how to set up Azure Event Hubs authentication using Shared Access Signatures (SAS) through the Azure portal.
+
 > [!IMPORTANT]
-> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead.
+> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
 
 ##### Configure the event hub
 
 In this section, you:
 
-- Create an Event Hubs namespace.
-- Add a hub to that namespace to relay and deliver notifications.
-- Add a shared access policy that allows you to get a connection string to the newly created hub.
+> [!div class="checklist"]
+>
+> * Create an Event Hub namespace.
+> * Add a hub to that namespace to relay and deliver notifications.
+> * Add a shared access policy that allows you to get a connection string to the newly created hub.
 
 Steps:
 
@@ -216,7 +212,7 @@ This section guides you through how to migrate your existing Event Hubs with SAS
 1. Under the same event hub namespace that you're using for your existing subscription, create a new event hub.
 1. Create a new subscription with the same details as the existing one, except using the new event hub's name from the preceding step in the URL. See [Create the subscription: Using RBAC](#create-the-subscription) for more details.
 
-You'll receive notifications on the new event hub. You can validate if the traffic looks similar to the old subscription by inspecting the Messages chart per event hub. Also validate for any errors or failures in receiving notifications on your side.
+You'll receive notifications on the new event hub. You can validate if the traffic looks similar to the old subscription by inspecting the **Messages** chart for the event hub. Also validate for any errors or failures in receiving notifications.
 
 Once you validate that you're receiving notifications and the new event hub works correctly, you can delete the old subscription, the old event hub, and SAS-based authentication and start using the new one.
 
