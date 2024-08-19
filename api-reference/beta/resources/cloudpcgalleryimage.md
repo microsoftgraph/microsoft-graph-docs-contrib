@@ -42,6 +42,7 @@ Represents the gallery image resource of the current organization that can be us
 |recommendedSku (deprecated)|String|The recommended Cloud PC SKU for this gallery image. Read-only. The **recommendedSku** property is deprecated and will stop returning data on January 31, 2024.|
 |sku (deprecated)|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only. The **sku** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **skuName** property.|
 |skuDisplayName (deprecated)|String|The official display SKU name of this gallery image. For example, `2004`. Read-only. The **skuDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
+|osVersionNumber|String|The OS version of this gallery image. For example: 10.0.22000.296. Read-Only.|
 
 ### cloudPcGalleryImageStatus values
 
@@ -86,6 +87,7 @@ The following JSON representation shows the resource type.
   "skuDisplayName": "String",
   "skuName": "String",
   "startDate": "String (Date)",
-  "status": "String"
+  "status": "String",
+  "osBuildNumber": "String"
 }
 ```
