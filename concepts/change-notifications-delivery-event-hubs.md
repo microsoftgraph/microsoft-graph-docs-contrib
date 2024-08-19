@@ -7,7 +7,7 @@ ms.subservice: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.date: 03/25/2024
+ms.date: 08/19/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
 
@@ -19,6 +19,9 @@ Examples of high throughput scenarios where you can use Azure Event Hubs include
 
 The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through Azure Event Hubs.
 
+> [!IMPORTANT]
+> Authenticating Event Hubs by using Shared Access Signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
+
 ## Using Azure Event Hubs to receive change notification
 
 [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
@@ -26,11 +29,16 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You need to provision an event hub.
-- You need to provision an Azure Key Vault or add the Microsoft Graph Change Tracking service to the Data Sender role on your Event Hub.
+- You need to provision an Azure Key Vault or add the Microsoft Graph Change Tracking service to the Data Sender role on your event hub.
 
 ## Set up the Azure Event Hubs authentication
+
+Azure Event Hubs supports authentication through either Shared Access Signatures (SAS) or Microsoft Entra ID role-based access control (RBAC). For more information, see [Authorize access to Azure Event Hubs](/azure/event-hubs/authorize-access-event-hubs).
+
 <!-- Start of "Use the Azure portal (RBAC)" tab-->
-# [Use the Azure portal (RBAC)](#tab/change-notifications-eventhubs-azure-portal-rbac)
+# [Use the Azure portal with RBAC](#tab/change-notifications-eventhubs-azure-portal-rbac)
+
+This section demonstrates how to set up Azure Event Hubs authentication using Microsoft Entra ID role-based access control (RBAC) on the Azure portal.
 
 ##### Configure the event hub
 
@@ -58,10 +66,16 @@ Steps:
 1. Select **Review + assign** to complete the process.
  
 <!-- End of "Use the Azure portal rbac" tab-->
-<!-- Start of "Use Azure CLI" tab-->
-# [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
+
+<!-- Start of "Use Azure CLI with Shared Access Signatures (SAS)" tab-->
+# [Use Azure CLI with SAS](#tab/change-notifications-eventhubs-azure-cli)
+
+This section demonstrates how to set up Azure Event Hubs authentication using Shared Access Signatures (SAS) through Azure CLI.
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate administrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
+
+> [!IMPORTANT]
+> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead.
 
 ```azurecli
 # --------------
@@ -101,7 +115,10 @@ echo "Notification Url:\n${notificationUrl}"
 <!-- End of "Use Azure CLI" tab-->
 
 <!-- Start of "Use the Azure portal" tab-->
-# [Use the Azure portal](#tab/change-notifications-eventhubs-azure-portal)
+# [Use the Azure portal with SAS](#tab/change-notifications-eventhubs-azure-portal)
+
+> [!IMPORTANT]
+> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead.
 
 ##### Configure the event hub
 
@@ -149,7 +166,6 @@ Steps:
 
 <!-- End of "Use the Azure portal" tab-->
 
-
 ---
 
 ## Create the subscription and receive notifications
@@ -163,7 +179,7 @@ Creating a subscription to receive change notifications with Event Hubs is nearl
 At subscription creation, the **notificationUrl** must point to your Event Hubs location.
 
 <!-- Start of "Using RBAC" tab-->
-# [Using role-based access control](#tab/change-notifications-eventhubs-rbac)
+# [Using RBAC](#tab/change-notifications-eventhubs-rbac)
 
 If you're using role-based access control, the **notificationUrl** property looks like this:
 
@@ -182,7 +198,7 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 
 - `azurekeyvaultname` - The name you gave to the key vault during creation. It can be found in the DNS name.
 - `secretname` - The name you gave to the secret during creation. It can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
+- `domainname` - The name of your tenant; for example, `contoso.com`. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
 
 <!-- End of "Using Key Vault tab-->
 
@@ -190,6 +206,19 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 
 > [!NOTE]
 > Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
+#### Migrate an event hub authentication to Microsoft Entra ID RBAC
+
+Authenticating Event Hubs by using Shared Access Signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
+
+This section guides you through how to migrate your existing Event Hubs with SAS authentication to Microsoft Entra ID RBAC authentication. *Use the same event hub namespace that you used with the SAS authentication, either via Azure CLI or the Azure portal.*
+
+1. Under the same event hub namespace that you're using for your existing subscription, create a new event hub.
+1. Create a new subscription with the same details as the existing one, except using the new event hub's name from the preceding step in the URL. See [Create the subscription: Using RBAC](#create-the-subscription) for more details.
+
+You'll receive notifications on the new event hub. You can validate if the traffic looks similar to the old subscription by inspecting the Messages chart per event hub. Also validate for any errors or failures in receiving notifications on your side.
+
+Once you validate that you're receiving notifications and the new event hub works correctly, you can delete the old subscription, the old event hub, and SAS-based authentication and start using the new one.
 
 #### Receive notifications
 
