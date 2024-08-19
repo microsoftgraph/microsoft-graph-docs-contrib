@@ -1,5 +1,5 @@
 ---
-title: "servicePrincipals: List owners"
+title: "List owners of a service principal"
 description: "Retrieve a list of owners of the servicePrincipal."
 ms.localizationpriority: high
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
-# servicePrincipals: List owners
+# List owners of a service principal
 
 Namespace: microsoft.graph
 
@@ -25,15 +25,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/owners
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Name           | Description                |
@@ -57,7 +55,7 @@ The following example shows a request.
   "name": "serviceprincipal_get_owners"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
+GET https://graph.microsoft.com/beta/serviceprincipals(appId='bbec3106-565f-4907-941e-96b4dbfef21c')/owners
 ```
 
 # [C#](#tab/csharp)
@@ -110,11 +108,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET servicePrincipals(appId=<key>)/owners?$select=deletedDateTime",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "ce4770b3-70b2-4a38-a242-76631e9f7408",
+            "accountEnabled": null,
+            "city": null,
+            "createdDateTime": null,
+            "displayName": null,
+            "mail": null,
+            "mailNickname": null,
+            "otherMails": [],
+            "proxyAddresses": [],
+            "surname": null,
+            "userPrincipalName": null,
+            "userType": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "858a9c90-38b3-4e78-b915-234aece712c4"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "7585d967-f300-43de-b817-7119a6404c5e"
+        }
+    ]
 }
 ```
 
