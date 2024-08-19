@@ -1,5 +1,89 @@
 {
   "changelog": [
+  {
+    "ChangeList": [
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Enumeration",
+        "ChangedApiName": "locationType",
+        "ChangeType": "Addition",
+        "Description": "Added the **locationType** enumeration type.",
+        "Target": "locationType"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Enumeration",
+        "ChangedApiName": "locationUniqueIdType",
+        "ChangeType": "Addition",
+        "Description": "Added the **locationUniqueIdType** enumeration type.",
+        "Target": "locationUniqueIdType"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Enumeration",
+        "ChangedApiName": "physicalAddressType",
+        "ChangeType": "Addition",
+        "Description": "Added the **physicalAddressType** enumeration type.",
+        "Target": "physicalAddressType"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Resource",
+        "ChangedApiName": "emergencyCallerInfo",
+        "ChangeType": "Addition",
+        "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-beta) resource.",
+        "Target": "emergencyCallerInfo"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Resource",
+        "ChangedApiName": "outlookGeoCoordinates",
+        "ChangeType": "Addition",
+        "Description": "Added the [outlookGeoCoordinates](https://learn.microsoft.com/en-us/graph/api/resources/outlookGeoCoordinates?view=graph-rest-beta) resource.",
+        "Target": "outlookGeoCoordinates"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Resource",
+        "ChangedApiName": "physicalAddress",
+        "ChangeType": "Addition",
+        "Description": "Added the [physicalAddress](https://learn.microsoft.com/en-us/graph/api/resources/physicalAddress?view=graph-rest-beta) resource.",
+        "Target": "physicalAddress"
+      },
+      {
+        "Id": "e554e67c-d299-46dd-9402-77b676082897",
+        "ApiChange": "Resource",
+        "ChangedApiName": "emergencyCallEvent",
+        "ChangeType": "Addition",
+        "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-beta) resource.",
+        "Target": "emergencyCallEvent"
+      }
+    ],
+    "Id": "e554e67c-d299-46dd-9402-77b676082897",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2024-09-13T20:21:16.9977147Z",
+    "WorkloadArea": "Cloud communications",
+    "SubArea": "Call"
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "48f13a29-639d-4d59-ada4-cb2310bb2774",
+        "ApiChange": "Resource",
+        "ChangedApiName": "location",
+        "ChangeType": "Addition",
+        "Description": "Added the [location](https://learn.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) resource.",
+        "Target": "location"
+      }
+    ],
+    "Id": "48f13a29-639d-4d59-ada4-cb2310bb2774",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2024-09-13T20:21:16.9979611Z",
+    "WorkloadArea": "Calendar, mail, personal contacts",
+    "SubArea": ""
+  },
     {
       "ChangeList": [
         {
