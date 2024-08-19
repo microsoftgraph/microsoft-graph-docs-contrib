@@ -20,7 +20,7 @@ Examples of high throughput scenarios where you can use Azure Event Hubs include
 The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through Azure Event Hubs.
 
 > [!IMPORTANT]
-> Authenticating Event Hubs by using Shared Access Signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
+> Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
 
 ## Using Azure Event Hubs to receive change notification
 
@@ -33,7 +33,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 
 ## Set up the Azure Event Hubs authentication
 
-Azure Event Hubs supports authentication through either Shared Access Signatures (SAS) or Microsoft Entra ID role-based access control (RBAC). For more information, see [Authorize access to Azure Event Hubs](/azure/event-hubs/authorize-access-event-hubs).
+Azure Event Hubs supports authentication through either shared access signatures (SAS) or Microsoft Entra ID role-based access control (RBAC). For more information, see [Authorize access to Azure Event Hubs](/azure/event-hubs/authorize-access-event-hubs).
 
 <!-- Start of "Use the Azure portal (RBAC)" tab-->
 # [Use the Azure portal with RBAC](#tab/change-notifications-eventhubs-azure-portal-rbac)
@@ -59,10 +59,10 @@ This section demonstrates how to set up Azure Event Hubs authentication using Mi
  
 <!-- End of "Use the Azure portal rbac" tab-->
 
-<!-- Start of "Use Azure CLI with Shared Access Signatures (SAS)" tab-->
+<!-- Start of "Use Azure CLI with shared access signatures (SAS)" tab-->
 # [Use Azure CLI with SAS](#tab/change-notifications-eventhubs-azure-cli)
 
-This section demonstrates how to set up Azure Event Hubs authentication using Shared Access Signatures (SAS) through Azure CLI.
+This section demonstrates how to set up Azure Event Hubs authentication using shared access signatures (SAS) through Azure CLI.
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate administrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
@@ -109,7 +109,7 @@ echo "Notification Url:\n${notificationUrl}"
 <!-- Start of "Use the Azure portal" tab-->
 # [Use the Azure portal with SAS](#tab/change-notifications-eventhubs-azure-portal)
 
-This section demonstrates how to set up Azure Event Hubs authentication using Shared Access Signatures (SAS) through the Azure portal.
+This section demonstrates how to set up Azure Event Hubs authentication using shared access signatures (SAS) through the Azure portal.
 
 > [!IMPORTANT]
 > Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
@@ -205,7 +205,7 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 
 #### Migrate an event hub authentication to Microsoft Entra ID RBAC
 
-Authenticating Event Hubs by using Shared Access Signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
+Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated in the future. We recommend authenticating Event Hubs by using Microsoft Entra ID role-based access control (RBAC) instead.
 
 This section guides you through how to migrate your existing Event Hubs with SAS authentication to Microsoft Entra ID RBAC authentication. *Use the same event hub namespace that you used with the SAS authentication, either via Azure CLI or the Azure portal.*
 
