@@ -2910,7 +2910,9 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule",
+            ""
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -2934,6 +2936,7 @@
             "timeClockSettings",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }

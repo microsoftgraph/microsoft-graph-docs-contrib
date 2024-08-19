@@ -2151,6 +2151,58 @@
       "CreatedDateTime": "2024-07-15T20:32:27.9708769Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3082bece-3f02-4b7f-a050-64e49eb3a881",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "3082bece-3f02-4b7f-a050-64e49eb3a881",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the `Spain` and `Mexico` values as supported regions for the **region** property of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "3082bece-3f02-4b7f-a050-64e49eb3a881",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-07-17T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d1a292b3-cf42-42af-ba0b-57e22671591b",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "d1a292b3-cf42-42af-ba0b-57e22671591b",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the `Spain` and `Mexico` values as supported regions for the **region** property of the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "d1a292b3-cf42-42af-ba0b-57e22671591b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-14T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Settings"
     }
   ]
 }

@@ -22,8 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for the signed-in user's memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof_1" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-1-permissions.md)]
+<!-- { "blockType": "permissions", "name": "user_list_transitivememberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-permissions.md)]
 
 ### Permissions for another user's memberships
 
