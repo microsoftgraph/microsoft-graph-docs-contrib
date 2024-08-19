@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_educationsubmission_recentlymodifiedsubmissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions
 ```
 
 ### Response
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_cristobal_recentsubmissions/$metadata#Collection(microsoft.graph.educationSubmission)",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=excusedBy,excusedDateTime",
     "value": [
         {
@@ -139,6 +139,78 @@ Content-type: application/json
                     "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                     "displayName": null
                 }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "returned",
+            "submittedDateTime": "2024-08-14T05:58:29.6425088Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": "2024-08-14T06:02:42.5332788Z",
+            "reassignedDateTime": null,
+            "excusedDateTime": "2024-08-14T06:01:13.6973311Z",
+            "lastModifiedDateTime": "2024-08-14T06:02:47.7331349Z",
+            "resourcesFolderUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22bf1f1963-05f6-4cba-903c-5892b4ce3bd7%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22a6f7b358-9b75-457d-8c59-3d18244f3e20%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%227c5e0f4f-f212-769c-0b21-01b661df3bf8%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "id": "7c5e0f4f-f212-769c-0b21-01b661df3bf8",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "excusedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
             }
         }
     ]
@@ -146,7 +218,7 @@ Content-type: application/json
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2024-08-18 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",

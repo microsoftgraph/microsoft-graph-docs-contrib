@@ -34,7 +34,9 @@
       "WorkloadArea": "Education",
       "SubArea": ""
     },  
-=======
+    {
+      "ChangeList" : [
+        {
           "Id": "8fce350c-9043-4c0b-b3b6-6daa5a59414e",
           "ApiChange": "Enum type",
           "ChangedApiName": "responseFeedbackType",
