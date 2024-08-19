@@ -3,15 +3,15 @@
       {
         "ChangeList": [
           {
-            "Id": "cb6c5955-de9e-4fe7-9420-6fdd8c284aba",
+            "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Resource",
-            "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+            "ChangedApiName": "cloudPcAutopilotConfiguration",
             "ChangeType": "Addition",
-            "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-beta) resource type.",
-            "Target": "cloudPcProvisioningPolicyAutopatch"
+            "Description": "Added the [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcAutopilotConfiguration"
           },
           {
-            "Id": "cb6c5955-de9e-4fe7-9420-6fdd8c284aba",
+            "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Property",
             "ChangedApiName": "autopilot",
             "ChangeType": "Addition",
