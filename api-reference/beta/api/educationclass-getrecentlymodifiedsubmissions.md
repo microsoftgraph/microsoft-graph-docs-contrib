@@ -13,15 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve recently modified submissions. Only teachers, students, and applications with application permissions can perform this operation.
+Retrieve modified submissions from last 7 days. Only teachers, students, and applications with application permissions can perform this operation.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 
 Only the **assignedTo** student can see and modify the **submission**. A teacher or application with application permissions has full access to all **submissions**.
 
 The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the **assignment** has been released.
-
-Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status. For details, see the examples section.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -51,7 +49,7 @@ This method supports the `$select` OData query parameters to help customize the 
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
 ## Example
 
@@ -75,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission"
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
 } -->
 ```http
 HTTP/1.1 200 OK
