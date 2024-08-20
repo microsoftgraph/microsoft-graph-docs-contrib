@@ -38,4 +38,4 @@ Cloud-enabled printers can connect directly to Universal print, but legacy print
 |:-------|:--------|
 
 ## Related content
-[What is the Universal Print connector?](/universal-print/fundamentals/universal-print-connector-overview)
+[What is the Universal Print connector?](https://learn.microsoft.com/en-us/universal-print/fundamentals/universal-print-connector-overview)
