@@ -93,6 +93,9 @@ Content-Type: application/json
 
 #### Response
 
+- Calls return a maximum of five restore points.
+- You can include a maximum of 20 protection units in one request and the response won't be paginated.
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
