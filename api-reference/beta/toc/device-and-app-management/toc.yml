@@ -105,8 +105,6 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
-    - name: Bulk set review status
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info for user
@@ -123,6 +121,10 @@ items:
       href: ../../api/cloudpc-validatebulkresize.md
     - name: Create snapshot
       href: ../../api/cloudpc-createsnapshot.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
+    - name: Share snapshot
+      href: ../../api/cloudpc-sharesnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Bulk reprovision remote action (deprecated)
@@ -145,6 +147,8 @@ items:
       href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
+    - name: Bulk set review status (deprecated)
+      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -309,10 +313,10 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: Get
       href: ../../api/cloudpcsnapshot-get.md
+    - name: List (deprecated)
+      href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region

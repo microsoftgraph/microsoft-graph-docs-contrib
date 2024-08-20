@@ -108,8 +108,15 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 
 ### Device and app management | Cloud PC
 
-- Use the **disasterRecoveryCapability** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type.
-- Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC.
+New methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+|[retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true)|[cloudPcSnapshot](/graph/api/resources/cloudpcsnappshot?view=graph-rest-beta&preserve-view=true) collection|Get a list of [cloudPcSnapshot](/graph/api/resources/cloudpcsnappshot?view=graph-rest-beta&preserve-view=true) of a Cloud PC.|
+|[shareSnapshot](/graph/api/cloudpc-createsnapshot?view=graph-rest-beta&preserve-view=true)|None|Share a [cloudPcSnapshot](/graph/api/resources/cloudpcsnappshot?view=graph-rest-beta&preserve-view=true) for a specific Cloud PC to a storage account.|
+
+Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+
+Deprecated the following methods on the [cloudPCSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource:
+- [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots/?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 
 ### Education
 

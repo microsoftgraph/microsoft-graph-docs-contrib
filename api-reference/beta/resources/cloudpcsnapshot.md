@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-snapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.|
 |[Get](../api/cloudpcsnapshot-get.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md)|Read the properties and relationships of a [cloudPcSnapshot](../resources/cloudpcsnapshot.md) object.|
+|[List (deprecated)](../api/virtualendpoint-list-snapshots.md)|None|Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties. This API is deprecated and stopped returning data on September 30, 2024. Going forward, use the [cloudPcRetrieveSnapshots](../api/cloudpc-retrievesnapshots.md) API.|
 
 ## Properties
 |Property|Type|Description|
