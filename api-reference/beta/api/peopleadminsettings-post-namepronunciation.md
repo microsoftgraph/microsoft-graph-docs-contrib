@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.namePronunciationSettings not found
+POST /admin/people/namePronunciation
 ```
 
 ## Request headers
