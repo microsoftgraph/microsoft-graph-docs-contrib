@@ -14,7 +14,7 @@ The connection [schema](/graph/api/resources/externalconnectors-schema) determin
 
 ## Example schema
 
-The following table represents an example of a possible schema for a work ticket system connector.
+The following table represents an example of a possible schema for a work ticket system connector:
 
 | Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Exact Match Required | Labels               | Aliases    |
 |----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|----------------------|------------|
@@ -47,7 +47,7 @@ If a property is searchable, its value is added to the full text index. When a u
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of one or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(*).
 
 > [!NOTE]
-> Suffix matching is not supported.
+> Suffix matching isn't supported.
 
 ![A search for "search ba*" displaying results that match this prefix.](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 
@@ -59,7 +59,7 @@ If a property is queryable, you can query against it using knowledge query langu
 
 ### Retrievable
 
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose to select relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
@@ -67,7 +67,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 ### Refinable
 
-If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A `refinable` property cannot be `searchable`.
+If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A `refinable` property can't be `searchable`.
 
 ![Refine results by tags, a refinable property.](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
@@ -87,7 +87,7 @@ Similarly, the **tags** property also specifies exact matching.
 
 For example, there might be a scenario where the item property is a GUID-formatted string. If this property must be matched exactly for item queries, specify that **isExactMatchRequired** is `true`.
 
-The **title** property does not specify exact matching. If nothing is specified, then **isExactMatchRequired** is `false`. The **title** property will be tokenized based on the tokenization rules of the language of the item content.
+The **title** property doesn't specify exact matching. If nothing is specified, then **isExactMatchRequired** is `false`. The **title** property will be tokenized based on the tokenization rules of the language of the item content.
 - Querying `title:Contoso Title` will return any item containing "Contoso" or "Title" in the **title** property.
 
 ## Semantic labels
@@ -119,7 +119,7 @@ You can assign semantic labels to your source properties on the **Assign propert
 
 For example, the connection property **lastEditedBy** has the same meaning as the Microsoft label *lastModifiedBy*.
 
-Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
+Add as many labels as you can, but ensure that they are accurately mapped to properties. Don't add a label to a property if it doesn't make sense. Incorrect mappings degrade the experience.
 
 > [!IMPORTANT]
 > All properties that you map to labels must be retrievable.
@@ -145,7 +145,7 @@ For discovery (search scenarios), note the following:
 
 ### Rank hints 
 
-Rank hints can be applied to textual properties that are not mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
+Rank hints can be applied to textual properties that aren't mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
 
 Use the following steps to set rank hints:
 
@@ -199,13 +199,13 @@ This section includes information about the update capabilities for the [schema]
 
 ### Add a property
 
-You can add a property to your schema; doing so does not require reingestion, but we recommend it.
+You can add a property to your schema; doing so doesn't require reingestion, but we recommend it.
 
 When you add a property, you can include all the search attributes that you need.
 
 ### Add/remove a search capability
 
-You can add specific search attributes to a property, but keep in mind that you cannot add a refiner search attribute as a schema change. Also, it is not possible to use refinable attributes as searchable capabilities.
+You can add specific search attributes to a property, but keep in mind that you can't add a refiner search attribute as a schema change. Also, it isn't possible to use refinable attributes as searchable capabilities.
 
 Adding a search capability requires reingestion.
 
@@ -213,7 +213,7 @@ Adding a search capability requires reingestion.
 
 You can add or remove aliases, and use them for your search queries.
 
-Consider that you cannot remove the original alias of a refinable property that was autocreated by the system.
+Consider that you can't remove the original alias of a refinable property that was autocreated by the system.
 
 ### Add/remove a semantic label
 
