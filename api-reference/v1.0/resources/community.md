@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a community in Viva Engage that is a central place for conversations, files, events, and updates for people sharing a common interest or goal.
 
 Every community is associated with a [Microsoft 365 group](../resources/group.md), but the group doesn't have the same ID as the community. For more information about managing communities in Viva Engage, see [Use the Microsoft Graph API to work with Viva Engage](../resources/engagement-api-overview.md).

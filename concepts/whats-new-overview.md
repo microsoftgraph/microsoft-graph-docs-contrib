@@ -18,6 +18,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## August 2024: New and generally available
 
+### Employee experience | Employee engagement
+
+Introduced the general availability of the Viva Engage API in Microsoft Graph. A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+
+- [Create a community](/graph/api/employeeexperience-post-communities)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
+- [Get a community](/graph/api/community-get)
+- [List communities](/graph/api/employeeexperience-list-communities)
+- [Update a community](/graph/api/community-update)
+- [Delete a community](/graph/api/community-delete)
+
 ### People and workplace intelligence | Insights
 
 [Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
