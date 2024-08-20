@@ -210,11 +210,11 @@ Authenticating Event Hubs by using shared access signatures (SAS) will be deprec
 This section guides you through how to migrate your existing Event Hubs with SAS authentication to Microsoft Entra ID RBAC authentication. *Use the same event hub namespace that you used with the SAS authentication, either via Azure CLI or the Azure portal.*
 
 1. Under the same event hub namespace that you're using for your existing subscription, create a new event hub.
-1. Create a new subscription with the same details as the existing one, except using the new event hub's name from the preceding step in the URL. See [Create the subscription: Using RBAC](#create-the-subscription) for more details.
+1. Create a new subscription with the same details as the existing one, except using the new event hub's name from the preceding step in the URL. For more information, see [Create the subscription: Using RBAC](#create-the-subscription).
 
 You'll receive notifications on the new event hub. You can validate if the traffic looks similar to the old subscription by inspecting the **Messages** chart for the event hub. Also validate for any errors or failures in receiving notifications.
 
-Once you validate that you're receiving notifications and the new event hub works correctly, you can delete the old subscription, the old event hub, and SAS-based authentication and start using the new one.
+After you validate that you're receiving notifications and the new event hub works correctly, you can delete the old subscription, the old event hub, and SAS-based authentication and start using the new one.
 
 #### Receive notifications
 
