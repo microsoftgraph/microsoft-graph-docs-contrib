@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and stopped returning data from September 30, 2023. Going forward, use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstaus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs.
+> This API is deprecated and stopped returning data from September 30, 2023. Going forward, use the [cloudPcBulkSetReviewStatus](../resources/cloudpcbulksetreviewstatus.md) resource and its supported APIs.
 
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 

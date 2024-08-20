@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get list of [cloudPcSnapshot](..\resources\cloudpcsnappshot.md) of a Cloud PC.
+Get list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) of a Cloud PC.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [cloudPcSnapshot](../resources/cloudpcsnappshot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) object in the response body.
 
 ## Examples
 
