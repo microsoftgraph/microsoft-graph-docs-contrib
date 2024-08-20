@@ -1,7 +1,7 @@
 ---
 title: "Create team from group"
 description: "Create a new team under a group."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
