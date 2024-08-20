@@ -403,7 +403,6 @@
             "cloudPcProvisioningPolicy",
             "cloudPcReports",
             "cloudPcServicePlan",
-            "cloudPcSharedUseServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
