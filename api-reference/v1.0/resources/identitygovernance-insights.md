@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents insights into the health and processing of lifecycle workflows across different workflows. The insights include the number of total, successful, and failed workflow executions, tasks processed, and users processed across all workflows for the tenant for a given period.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

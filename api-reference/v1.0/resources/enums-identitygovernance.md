@@ -88,6 +88,17 @@ Namespace: microsoft.graph.identityGovernance
 |employeeLeaveDateTime|
 |unknownFutureValue|
 
+### membershipChangeType values
+
+
+
+|Member|
+|:---|
+|add|
+|remove|
+|unknownFutureValue|
+
+
 
 <!--
 {

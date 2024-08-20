@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provide a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
 ## Permissions
@@ -26,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
-[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
 
 ## HTTP request
 
@@ -66,49 +64,15 @@ If successful, this function returns a `200 OK` response code and a [workflowsIn
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "insightsthis.workflowsprocessedsummary"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/insightsthisworkflowsprocessedsummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/insightsthisworkflowsprocessedsummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/insightsthisworkflowsprocessedsummary-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/insightsthisworkflowsprocessedsummary-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/insightsthisworkflowsprocessedsummary-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/insightsthisworkflowsprocessedsummary-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/insightsthisworkflowsprocessedsummary-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/insightsthisworkflowsprocessedsummary-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -125,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.workflowsInsightsSummary", 
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.identityGovernance.workflowsInsightsSummary", 
    "totalRuns" : 106,
    "successfulRuns" : 71,
    "failedRuns": 35,
