@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
+Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. In the absence of the `orderBy` clause, the latest restorePoints are returned.
 
 > **Note:** This API returns a maximum of five **restorePoint** objects.
 
@@ -39,7 +39,8 @@ GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 
 ```
 
 ## Optional query parameters
-This method supports the `$expand` and `$filter` [OData puery parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request). 
+
+This method supports the `$expand`, `$filter` and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request).
 
 The two query parameters are required.
 
