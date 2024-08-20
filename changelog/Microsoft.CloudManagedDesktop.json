@@ -47,7 +47,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "bulksetcloudpcreviewstatus",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the [bulksetcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkSetReviewStatus](https://learn.microsoft.com/en-us/graph/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta) resource.",
+            "Description": "Deprecated the [bulksetcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkSetReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkSetReviewStatus?view=graph-rest-beta) resource.",
             "Target": "cloudPc"
           },
           {
@@ -55,7 +55,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "list_cloudpcsnapshot",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the [list_cloudpcsnapshot](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkSetReviewStatus](https://learn.microsoft.com/en-us/graph/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta) resource.",
+            "Description": "Deprecated the [list_cloudpcsnapshot](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta) method of the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource. Going forward, use the [retrieveSnapshots](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrieveSnapshots?view=graph-rest-beta) API.",
             "Target": "cloudPcSnapshot"
           }
         ],
