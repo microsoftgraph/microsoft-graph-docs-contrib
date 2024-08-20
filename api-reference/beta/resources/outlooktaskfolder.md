@@ -5,6 +5,7 @@ author: "mashriv"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+toc.title: Outlook task folder (deprecated)
 ---
 
 # outlookTaskFolder resource type (deprecated)

@@ -125,7 +125,7 @@ The following are examples of how to set these types:
         DateTimeValue = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow)
     };
 
-    // Setting boolean value in generic type
+    // Setting Boolean value in generic type
     GenericType boolType = new GenericType
     {
         BoolValue = true

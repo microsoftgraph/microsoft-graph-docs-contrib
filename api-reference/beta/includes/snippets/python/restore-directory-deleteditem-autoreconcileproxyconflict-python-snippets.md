@@ -10,9 +10,7 @@ from msgraph_beta.generated.directory.deleteditems.item.restore.restore_post_req
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RestorePostRequestBody(
-	additional_data = {
-			"auto_reconcile_proxy_conflict" : True,
-	}
+	auto_reconcile_proxy_conflict = True,
 )
 
 result = await graph_client.directory.deleted_items.by_directory_object_id('directoryObject-id').restore.post(request_body)

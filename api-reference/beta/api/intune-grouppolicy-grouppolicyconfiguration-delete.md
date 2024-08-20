@@ -2,7 +2,7 @@
 title: "Delete groupPolicyConfiguration"
 description: "Deletes a groupPolicyConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

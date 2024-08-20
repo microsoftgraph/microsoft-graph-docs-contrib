@@ -33,11 +33,12 @@ None.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) collection| Read-only. Nullable.|
-|me|[educationUser](educationuser.md)| Read-only. Nullable.|
-|schools|[educationSchool](educationschool.md) collection| Read-only. Nullable.|
-|synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Read-only. Nullable.|
-|users|[educationUser](educationuser.md) collection| Read-only. Nullable.|
+|classes|[educationClass](educationclass.md) collection| Classes taught at the school. Nullable.|
+|me|[educationUser](educationuser.md)| Represents a user in the system. Nullable.|
+|reports|[reportRoot](../resources/reportroot.md)|Reporting resources. Read-only. Nullable. |
+|schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
+|synchronizationProfiles (deprecated)|[educationSynchronizationProfile](educationsynchronizationprofile.md) collection| Represents the synchronization status of a school data. Nullable.|
+|users|[educationUser](educationuser.md) collection| Users in the school. Nullable.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

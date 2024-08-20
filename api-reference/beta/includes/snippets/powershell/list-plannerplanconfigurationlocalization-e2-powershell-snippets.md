@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BusinessScenario
 
-Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -Filter "languageTag eq 'en-us'" 
+Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -Filter "languageTag eq 'en-us'" 
 
 ```

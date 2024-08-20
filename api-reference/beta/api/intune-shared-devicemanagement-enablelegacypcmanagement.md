@@ -2,7 +2,7 @@
 title: "enableLegacyPcManagement action"
 description: "Intune Shared Devicemanagement Enablelegacypcmanagement Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "managedDeviceEnrollmentFailureDetails function"
 description: "Intune Shared Reportroot Manageddeviceenrollmentfailuredetails Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

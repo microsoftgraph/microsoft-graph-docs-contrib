@@ -2,7 +2,7 @@
 title: "Get termsAndConditionsAcceptanceStatus"
 description: "Read properties and relationships of the termsAndConditionsAcceptanceStatus object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

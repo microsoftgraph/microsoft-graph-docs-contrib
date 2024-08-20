@@ -2,7 +2,7 @@
 title: "Create mobileAppProvisioningConfigGroupAssignment"
 description: "Create a new mobileAppProvisioningConfigGroupAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

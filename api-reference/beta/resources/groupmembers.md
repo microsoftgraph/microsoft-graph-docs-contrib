@@ -24,10 +24,13 @@ The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type
 | description |String | The name of the group in Microsoft Entra ID. Read only. |
 | isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

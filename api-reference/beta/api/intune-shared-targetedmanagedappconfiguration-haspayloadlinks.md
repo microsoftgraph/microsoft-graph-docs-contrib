@@ -2,7 +2,7 @@
 title: "hasPayloadLinks action"
 description: "Intune Shared Targetedmanagedappconfiguration Haspayloadlinks Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

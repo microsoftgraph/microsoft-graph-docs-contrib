@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 07/19/2024
+ms.date: 08/12/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -444,6 +444,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### BackupRestore-Control.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6fe20a79-0e15-45a1-b019-834c125993a0 | af598c63-4292-4437-b925-e996354d3854 |
+| DisplayText | Read the status of the M365 backup service | Read the status of the M365 backup service |
+| Description | Allows the app to read the status of M365 backup service (enable/disable), without signed in user | Allows the app to read the status of M365 backup service (enable/disable), on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### BackupRestore-Control.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fb240865-88f8-4a1d-923f-98dbc7920860 | 96d46335-d92d-41b8-bc9f-273a692381ea |
+| DisplayText | Update or read the status of the M365 backup service | Update or read the status of the M365 backup service |
+| Description | Allows the app to update or read the status of M365 backup service (enable/disable), without signed in user | Allows the app to update or read the status of M365 backup service (enable/disable), on behalf of the signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### BackupRestore-Monitor.Read.All
 
 | Category | Application | Delegated |
@@ -670,7 +692,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 798ee544-9d2d-430c-a058-570e29e34338 | 465a38f9-76ea-45b9-9f34-9e8b0d4b0b42 |
 | DisplayText | Read calendars in all mailboxes | Read user calendars  |
-| Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars.  |
+| Description | Allows the app to read events of all calendars without a signed-in user. | Allows the app to read events in user calendars .  |
 | AdminConsentRequired | Yes | No |
 
 ![personal Microsoft accounts][MSA] The *Calendars.Read* delegated permission is available for consent in personal Microsoft accounts.
@@ -1870,6 +1892,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to manage restricted resources based on the other permissions granted to the app, without a signed-in user. | Allows the app to manage restricted resources based on the other permissions granted to the app, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
+[!INCLUDE [Directory.Write.Restricted](../includes/permissions-notes/directory.write.restricted.md)]
+
 ---
 
 ### DirectoryRecommendations.Read.All
@@ -2694,7 +2718,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0 | 43781733-b5a7-4d1b-98f4-e8edff23e1a9 |
 | DisplayText | Read identity providers | Read identity providers |
-| Description | Allows the app to read your organization's identity (authentication) providers’ properties without a signed in user. | Allows the app to read your organization's identity (authentication) providers’ properties on behalf of the user. |
+| Description | Allows the app to read your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read your organization's identity (authentication) providers' properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -2705,7 +2729,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 90db2b9a-d928-4d33-a4dd-8442ae3d41e4 | f13ce604-1677-429f-90bd-8a10b9f01325 |
 | DisplayText | Read and write identity providers | Read and write identity providers |
-| Description | Allows the app to read and write your organization's identity (authentication) providers’ properties without a signed in user. | Allows the app to read and write your organization's identity (authentication) providers’ properties on behalf of the user. |
+| Description | Allows the app to read and write your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read and write your organization's identity (authentication) providers' properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5657,8 +5681,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f10e1f91-74ed-437f-a6fd-d6ae88e26c1f | - |
-| DisplayText | Read all users’ tasks and tasklist | - |
-| Description | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user. | - |
+| DisplayText | Read all users' tasks and tasklist | - |
+| Description | Allows the app to read all users' tasks and task lists in your organization, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -5692,8 +5716,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 44e666d1-d276-445b-a5fc-8815eeb81d55 | - |
-| DisplayText | Read and write all users’ tasks and tasklists | - |
-| Description | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | - |
+| DisplayText | Read and write all users' tasks and tasklists | - |
+| Description | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -7118,6 +7142,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | TeamsActivity.Send.User | 483c432d-7210-44e7-a362-954c0c5e4108 | Send activity feed notifications to this user | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. |
 | TeamsAppInstallation.Read.Chat | b60343cd-f77a-4c4f-8036-41938b1abd8b | Read which apps are installed in this chat | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |
 | TeamsAppInstallation.Read.Group | ba4beb29-863b-4f02-8969-37a289cd91c0 | Read which apps are installed in this team | Allows the app to read the Teams apps that are installed in this team, without a signed-in user.  |
+| TeamsAppInstallation.Read.User | 39a4b5e8-1aa6-4da4-877a-d2345944028d | Read installed Teams apps for a user | Allows the app to read the Teams apps that are installed in user's personal scope, without a signed-in user. Does not give the ability to read application-specific settings. |
 | TeamSettings.Edit.Group | 33f7a028-d012-4bd9-b40f-3c970d089bc8 | Edit this team's settings | Allows the app to edit this team's settings, without a signed-in user. |
 | TeamSettings.Read.Group | 87909ea6-7b07-42cf-b3a0-b8bd8e7072a8 | Read this team's settings | Allows the app to read this team's settings, without a signed-in user. |
 | TeamSettings.ReadWrite.Group | 13451d84-ced2-4d45-9b0d-98688b90e5bf | Read and write this team's settings | Allows the app to read and write this team's settings, without a signed-in user. |

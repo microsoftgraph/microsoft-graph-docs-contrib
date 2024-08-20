@@ -2,7 +2,7 @@
 title: "List windows81WifiImportConfigurations"
 description: "List properties and relationships of the windows81WifiImportConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

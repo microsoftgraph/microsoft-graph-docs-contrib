@@ -2,7 +2,7 @@
 title: "macOSWebClip resource type"
 description: "Contains properties and inherited properties for macOS web apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

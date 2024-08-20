@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	displayName = "Exchange Policy - Inadvertent data loss"
 	"mailboxProtectionUnits@delta" = @(
 		@{
-			userId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			directoryObjectId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
 		}
 		@{
-			userId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			directoryObjectId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
 		}
 		@{
 			"@removed" = @{
@@ -30,6 +30,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -BodyParameter $params
+Update-MgBetaSolutionBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -BodyParameter $params
 
 ```
