@@ -30,8 +30,8 @@ For more information about staged rollout, see [How to configure staged rollout 
 | [Create](../api/featurerolloutpolicies-post.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
 | [Update](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object.                     |
 | [Delete](../api/featurerolloutpolicy-delete.md)           | None                                            | Delete a featureRolloutPolicy object.                                     |
-| [Create appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
-| [Delete appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
+| [Create applies to](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Assign a directoryObject to feature rollout.                              |
+| [Delete applies to](../api/featurerolloutpolicy-delete-appliesto.md)            | None                                            | Remove a directoryObject from feature rollout.                            |
 
 ## Properties
 

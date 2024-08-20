@@ -29,10 +29,14 @@ To add a keyCredential using Microsoft Graph, see [Add a certificate to an app u
 |type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`, or `X509CertAndPassword`.|
 |usage|String|A string that describes the purpose for which the key can be used; for example, `None`​, `Verify`​, `PairwiseIdentifier`​, `Delegation`​, `Decrypt`​, `Encrypt`​, `HashedIdentifier`​, `SelfSignedTls`, or `Sign`. <br/><br/>If **usage** is `Sign`​, the **type** should be `X509CertAndPassword`​, and the **passwordCredentials**​ for signing should be defined.|
 
+## Relationships
+
+None.
+
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

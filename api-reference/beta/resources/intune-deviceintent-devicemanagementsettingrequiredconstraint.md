@@ -2,7 +2,7 @@
 title: "deviceManagementSettingRequiredConstraint resource type"
 description: "Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceManagementSettingRequiredConstraint resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured
 

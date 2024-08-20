@@ -86,6 +86,8 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
+  - name: Discard checkout
+    href: ../../api/driveitem-discardcheckout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
   - name: Assign sensitivity label

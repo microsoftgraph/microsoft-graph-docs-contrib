@@ -24,7 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |tabId|String|Unique identifier of the tab.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.tabUpdatedEventMessageDetail",

@@ -2,7 +2,7 @@
 title: "revoke action"
 description: "Intune Epmgraphapiservice Privilegemanagementelevationrequest Revoke Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -77,7 +77,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1480
+Content-Length: 1496
 
 {
   "value": {
@@ -91,7 +91,7 @@ Content-Length: 1480
     "requestLastModifiedDateTime": "2016-12-31T23:58:50.6194179-08:00",
     "requestJustification": "Request Justification value",
     "applicationDetail": {
-      "@odata.type": "microsoft.graph.applicationDetail",
+      "@odata.type": "microsoft.graph.elevationRequestApplicationDetail",
       "fileHash": "File Hash value",
       "fileName": "File Name value",
       "filePath": "File Path value",

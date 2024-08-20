@@ -18,6 +18,9 @@ Provides details about user or application sign-in activity in your directory. Y
 
 The [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
 
+> [!NOTE]
+> This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
+
 ## Methods
 
 | Method           | Return Type    |Description|
@@ -40,7 +43,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and more details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
-|authenticationProcessingDetails|[keyValue](keyvalue.md) collection|More authentication processing details, such as the agent name for  PTA and PHS, or a server or farm name for federated authentication.|
+|authenticationProcessingDetails|[keyValue](keyvalue.md) collection|More authentication processing details, such as the agent name for PTA and PHS, or a server or farm name for federated authentication.|
 |authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`. Use `none` for all authentications that don't have a specific value in that list. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer`, `nativeAuth`. |
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |authenticationRequirementPolicies|[authenticationRequirementPolicy](../resources/authenticationrequirementpolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
@@ -48,9 +51,9 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |azureResourceId|String|Contains a fully qualified Azure Resource Manager ID of an Azure resource accessed during the sign-in.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange ActiveSync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`. <br/><br/> Supports `$filter` (`eq`). |
 |clientCredentialType|clientCredentialType|Describes the credential type that a user client or service principal provided to Microsoft Entra ID to authenticate itself. You can review this property to track and eliminate less secure credential types or to watch for clients and service principals using anomalous credential types. The possible values are: `none`, `clientSecret`, `clientAssertion`, `federatedIdentityCredential`, `managedIdentity`, `certificate`, `unknownFutureValue`.|
-|conditionalAccessAudiences|String|A list that indicates the audience that was evaluated by Conditional Access during a sign-in event. <br/><br/> Supports `$filter` (`eq`).|
+|conditionalAccessAudiences|String|A list that indicates the audience that Conditional Access evaluated during a sign-in event. <br/><br/> Supports `$filter` (`eq`).|
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
-|correlationId|String|The identifier the client sends when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support. <br/><br/> Supports `$filter` (`eq`).|
+|correlationId|String|The identifier the client sends when sign-in is initiated. This property is used for troubleshooting the corresponding sign-in activity when calling for support. <br/><br/> Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
 |crossTenantAccessType|signInAccessType|Describes the type of cross-tenant access used by the actor to access the resource. Possible values are: `none`, `b2bCollaboration`, `b2bDirectConnect`, `microsoftSupport`, `serviceProvider`, `unknownFutureValue`, `passthrough`. Also, you must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `passthrough`. If the sign in didn't cross tenant boundaries, the value is `none`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **browser** and **operatingSystem** properties.|
@@ -58,7 +61,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |flaggedForReview|Boolean|During a failed sign-in, a user can select a button in the Azure portal to mark the failed event for tenant admins. If a user selects the button to flag the failed sign-in, this value is `true`.|
 |globalSecureAccessIpAddress|String|The Global Secure Access IP address that the sign-in was initiated from.|
 |homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or service principal sign ins.|
-|homeTenantName|String|For user sign ins, the identifier of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Microsoft Entra ID to show the tenant content.|
+|homeTenantName|String|For user sign ins, the identifier of the tenant that the user is a member of. Only populated in cases where the home tenant provides affirmative consent to Microsoft Entra ID to show the tenant content.|
 |id|String|The identifier representing the sign-in activity. Inherited from [entity](entity.md). <br/><br/> Supports `$filter` (`eq`).|
 |incomingTokenType|incomingTokenType|Indicates the token types that were presented to Microsoft Entra ID to authenticate the actor in the sign in. The possible values are: `none`, `primaryRefreshToken`, `saml11`, `saml20`, `unknownFutureValue`, `remoteDesktopToken`. <br><br> **NOTE** Microsoft Entra ID might have also used token types not listed in this enum type to authenticate the actor. Don't infer the lack of a token if it isn't one of the types listed. Also, you must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteDesktopToken`.|
 |ipAddress|String|The IP address of the client from where the sign-in occurred. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
@@ -98,7 +101,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |userAgent|String|The user agent information related to sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userDisplayName|String|The display name of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
-|userPrincipalName|String|The UPN of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|userPrincipalName|String|User principal name of the user that initiated the sign-in. This value is always in lowercase. For guest users whose values in the user object typically contain `#EXT#` before the domain part, this property stores the value in both lowercase and the "true" format. For example, while the user object stores `AdeleVance_fabrikam.com#EXT#@contoso.com`, the sign-in logs store `adelevance@fabrikam.com`.<br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
 |mfaDetail (deprecated)|[mfaDetail](../resources/mfadetail.md)|This property is deprecated.|
 

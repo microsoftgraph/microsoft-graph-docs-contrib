@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAnomalyCorrelationGroupFeature resource type"
 description: "Describes the features of a device that are shared between all devices in a correlation group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # userExperienceAnalyticsAnomalyCorrelationGroupFeature resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Describes the features of a device that are shared between all devices in a correlation group.
 

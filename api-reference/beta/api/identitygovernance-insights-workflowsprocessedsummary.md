@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
+[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary
+GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -96,6 +98,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insig
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/insightsthisworkflowsprocessedsummary-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/insightsthisworkflowsprocessedsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

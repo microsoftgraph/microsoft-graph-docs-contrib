@@ -45,7 +45,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the Cloud PC.|
 |[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of Cloud PC devices meet the requirements to be bulk resized.|
 |[Create snapshot](../api/cloudpc-createsnapshot.md)|None|Create a snapshot for a specific Cloud PC device.|
-|[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
+|[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`. The `noLicensesAvailable` member is deprecated and will stop returning on September 30, 2024.|
 |[Bulk reprovision remote action (deprecated)](../api/manageddevice-bulkreprovisioncloudpc.md) |None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md) resource. |
 |[Bulk resize (deprecated)](../api/cloudpc-bulkresize.md) |[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of Cloud PCs that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkResize](../resources/cloudpcbulkresize.md) resource.|
 |[Bulk restore remote action (deprecated)](../api/manageddevice-bulkrestorecloudpc.md) |[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time. This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource.|
@@ -65,6 +65,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |deviceRegionName|String|The name of the geographical region where the Cloud PC is currently provisioned. For example, `westus3`, `eastus2`, and `southeastasia`. Read-only.|
+|disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. To receive a response with the **disasterRecoveryCapability** property, `$select` and `$filter` it by `disasterRecoveryCapability/{subProperty}` in the request URL. For more details, see [Example 4: List Cloud PCs filtered by disaster recovery capability type](../api/cloudpc-get.md#example-4-list-cloud-pcs-filtered-by-disaster-recovery-capability-type). Read-only. |
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -135,7 +136,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |Member|Description|
 |:---|:---|
 |unassigned|Set to unassigned if the Cloud PC doesn't consume any shared-use licenses. The default value is `unassigned`.|
-|noLicensesAvailable|Indicates that all shared-use licenses are in use.|
+|noLicensesAvailable (deprecated)|Indicates that all shared-use licenses are in use. The `noLicensesAvailable` member is deprecated and will stop returning on September 30, 2024.|
 |activationFailed|Indicates that the frontline Cloud PC activation failed after the user requested a frontline Cloud PC.|
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
@@ -179,6 +180,7 @@ The following JSON representation shows the resource type.
   "allotmentDisplayName": "String",
   "connectivityResult": "String",
   "deviceRegionName": "String",
+  "disasterRecoveryCapability": {"@odata.type": "microsoft.graph.cloudPcDisasterRecoveryCapability"},
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",

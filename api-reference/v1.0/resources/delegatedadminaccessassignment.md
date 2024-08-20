@@ -36,7 +36,7 @@ Represents an assignment of administrative roles to a Microsoft partner using de
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment",

@@ -44,7 +44,7 @@ POST /solutions/backupRestore/serviceApps
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 
@@ -55,6 +55,7 @@ If successful, this method returns a `201 Created` response code and a [serviceA
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,6 +64,10 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+Content-type: application/json
+
+{
+}
 ```
 
 # [C#](#tab/csharp)
@@ -87,6 +92,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-serviceapp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-serviceapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -114,8 +123,8 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/servi
   "@odata.type": "#microsoft.graph.serviceApp",
   "id":"71633878-8321-4950-bfaf-ed285bdd1461",
   "status" : "inactive",
-  "registrationDateTime":"2022-06-19T12-01-03.45Z",
-  "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+  "registrationDateTime":"2022-06-19T12:01:03.45Z",
+  "lastModifiedDateTime":"2023-06-19T12:01:03.45Z",
   "lastModifiedBy":{
       "application":{
           "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"

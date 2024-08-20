@@ -48,6 +48,10 @@ Represents the current status of a print job.
 |releaseWait|5|Job is pending to be released.|
 |interpreting|6|Job is in 'processing' state, but more specifically, document payload is being interpreted.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

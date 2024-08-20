@@ -2,8 +2,8 @@
 title: "wipeManagedAppRegistrationsByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.subservice: "intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,7 @@ Namespace: microsoft.graph
 
 Issues a wipe operation on an app registration with specified device tag.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-## Permissions
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application||
 | &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 

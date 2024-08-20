@@ -27,13 +27,12 @@ For a recording, this API returns the metadata of the single recording associate
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignore", "name": "callrecording_get" } -->
-
-| Permission type                        | Least privileged permissions                                      | Higher privileged permissions |
-| :------------------------------------- | :---------------------------------------------------------------- | :---------------------------- |
-| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                   | Not available.                |
-| Delegated (personal Microsoft account) | Not supported.                                                    | Not supported.                |
-| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat | Not available.                |
+<!-- { "blockType": "ignored", "name": "callrecording_get" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingRecording.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not available.|
 
 > **Notes:**
 >
@@ -49,6 +48,7 @@ To use application permissions for this API, tenant administrators must create a
 
 Get a single recording of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
@@ -56,6 +56,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 
 Get the content of a single recording of an online meeting.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
@@ -63,7 +64,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 
 ## Optional query parameters
 
-This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -154,7 +155,10 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/$entity",
   "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
   "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
+  "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
   "createdDateTime": "2023-04-10T08:13:17.5990966Z",
+  "endDateTime": "2024-01-29T09:27:25.2346000Z",
+  "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
   "recordingContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/('7e31db25-bc6e-4fd8-96c7-e01264e9b6fc')/content",
   "meetingOrganizer": {
     "application": null,
@@ -239,4 +243,102 @@ HTTP/1.1 200 OK
 Content-Type: video/mp4
 
 <bytes of a recording>
+```
+
+### Example 3: Get a callRecording from a corresponding transcript using contentCorrelationId
+
+The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_callRecording_using_contentCorrelationId",
+  "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentCorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-using-contentcorrelationid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecording-using-contentcorrelationid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-using-contentcorrelationid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecording-using-contentcorrelationid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-using-contentcorrelationid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-using-contentcorrelationid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-using-contentcorrelationid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.callRecording"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('1273a016-201d-4f95-8083-1b7f99b3edeb')/onlineMeetings('MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy')/recordings",
+    "@odata.count": 1,
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET me/onlineMeetings('<key>')/recordings?$select=callId,content",
+    "value": [
+        {
+            "id": "VjIjIzExMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwNDA3ZjYyNjg0ZmQ0ZGEwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDRiZWQ5YTIzZGMyZmZmNDY4OTc4OTg0NjU2ZjI3MjE5IyM5YzM3ZDZhMS1mNGJmLTRjZWMtOTFmYS0xNDc1MGUwNzFhMTg=",
+            "meetingId": "MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy",
+            "callId": "26c38520-e74d-4391-8188-cb458d413825",
+            "contentCorrelationId": "e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0",
+            "createdDateTime": "2024-07-12T11:37:59.0113199Z",
+            "endDateTime": "2024-07-12T11:38:11.3313199Z",
+            "recordingContentUrl": "https://graph.microsoft.com/v1.0/users/1273a016-201d-4f95-8083-1b7f99b3edeb/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings/VjIjIzExMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwNDA3ZjYyNjg0ZmQ0ZGEwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDRiZWQ5YTIzZGMyZmZmNDY4OTc4OTg0NjU2ZjI3MjE5IyM5YzM3ZDZhMS1mNGJmLTRjZWMtOTFmYS0xNDc1MGUwNzFhMTg=/content",
+            "meetingOrganizer": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "1273a016-201d-4f95-8083-1b7f99b3edeb",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+                }
+            }
+        }
+    ]
+}
 ```

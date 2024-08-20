@@ -20,7 +20,7 @@ Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and
 
 <!-- { "blockType": "ignored" } -->
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

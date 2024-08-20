@@ -25,17 +25,20 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the Viva Engage [community](../resources/community.md) objects and their properties.|
 |[Create](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[Get](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
+|[Update](../api/community-update.md)|None|Update the properties of an existing Viva Engage [community](../resources/community.md).|
+|[Delete](../api/community-delete.md)|None|Delete a Viva Engage [community](../resources/community.md) along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-| description | String | The description of the community. The maximum length is 1024 characters. |
+| description | String | The description of the community. The maximum length is 1,024 characters. |
 | displayName | String | The name of the community. The maximum length is 255 characters. |
 | groupId | String | The ID of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
-| id | String | The unique identifier of the community. Read only. Inherited from [entity](../resources/entity.md). |
+| id | String | The unique identifier of the community. Read-only. Inherited from [entity](../resources/entity.md). |
 | privacy | [communityPrivacy](../resources/community.md#communityprivacy-values) | Defines the privacy level of the community. The possible values are: `public`, `private`, `unknownFutureValue`. |
 
 ### communityPrivacy values

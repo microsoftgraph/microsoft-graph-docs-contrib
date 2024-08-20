@@ -2,7 +2,7 @@
 title: "Create iosManagedAppProtection"
 description: "Create a new iosManagedAppProtection object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.
+Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -111,6 +111,7 @@ The following table shows the properties that are required when you create the i
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
+|allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
 |exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
@@ -130,7 +131,7 @@ The following table shows the properties that are required when you create the i
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object in the response body.
 
 ## Example
 
@@ -139,7 +140,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 3883
+Content-length: 3918
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -207,6 +208,7 @@ Content-length: 3883
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,
   "faceIdBlocked": true,
+  "allowWidgetContentSync": true,
   "exemptedAppProtocols": [
     {
       "@odata.type": "microsoft.graph.keyValuePair",
@@ -240,7 +242,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4055
+Content-Length: 4090
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -311,6 +313,7 @@ Content-Length: 4055
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,
   "faceIdBlocked": true,
+  "allowWidgetContentSync": true,
   "exemptedAppProtocols": [
     {
       "@odata.type": "microsoft.graph.keyValuePair",

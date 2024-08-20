@@ -17,12 +17,17 @@ For details about the settings that govern identification/de-identification of i
 
 Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
+## Settings
+
+In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values aren't displayed. You can use the [adminReportSettings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
+
 ## Cloud deployments
 
 The following table shows the availability for each API across all cloud deployments.
 
 | APIs | Microsoft Graph global service | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
 | ---- | ------------------------------ | ----------------------------------| ------------------------------------------ |
+| [Admin report settings](../resources/adminreportsettings.md)                                       | ✔ | ➖ | ➖ |
 | [Microsoft 365 activations](reportroot.md#microsoft-365-activations)                               | ✔ | ➖ | ➖ |
 | [Microsoft 365 active users](reportroot.md#microsoft-365-active-users)                             | ✔ | ➖ | ➖ |
 | [Microsoft 365 apps usage](reportroot.md#microsoft-365-apps-usage)                                 | ✔ | ➖ | ➖ |

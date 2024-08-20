@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsBatteryHealthDevicePerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsBatteryHealthDevicePerformance object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 1000
 
 {
   "value": {
@@ -75,6 +75,8 @@ Content-Length: 884
     "deviceName": "Device Name value",
     "model": "Model value",
     "manufacturer": "Manufacturer value",
+    "deviceModelName": "Device Model Name value",
+    "deviceManufacturerName": "Device Manufacturer Name value",
     "maxCapacityPercentage": 5,
     "estimatedRuntimeInMinutes": 9,
     "batteryAgeInDays": 0,

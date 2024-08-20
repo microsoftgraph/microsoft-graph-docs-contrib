@@ -2,7 +2,7 @@
 title: "List microsoftTunnelConfigurations"
 description: "List properties and relationships of the microsoftTunnelConfiguration objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1124
+Content-Length: 1167
 
 {
   "value": [
@@ -72,6 +72,7 @@ Content-Length: 1124
       "displayName": "Display Name value",
       "description": "Description value",
       "network": "Network value",
+      "ipv6Network": "Ipv6Network value",
       "dnsServers": [
         "Dns Servers value"
       ],

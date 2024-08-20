@@ -53,7 +53,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {code}    |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json |
 
 ## Request body

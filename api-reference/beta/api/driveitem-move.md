@@ -1,11 +1,12 @@
 ---
 author: spgraph-docs-team
 description: "Move a driveItem to a new parent folder."
-title: driveItem: move
+title: "driveItem: move"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
+
 # driveItem: move
 Namespace: microsoft.graph
 

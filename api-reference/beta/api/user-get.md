@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of user object.
+Retrieve the properties and relationships of [user](../resources/user.md) object.
 
 This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
@@ -75,9 +75,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties. This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
-This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
+If a user with the ID doesn't exist, this method returns a `404 Not Found` error code.
 
 ## Example
 

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a commercial subscription for a tenant.
+Represents a commercial subscription for a tenant. Use the values of **skuId** and **serviceStatus** > **servicePlanId** to assign licenses to unassigned users and groups through the [user: assignLicense](../api/user-assignlicense.md) and [group: assignLicense](../api/group-assignlicense.md) APIs respectively.
 
 Inherits from [entity](entity.md).
 
@@ -58,7 +58,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "commerceSubscriptionId": "String",
+  "commerceSubscriptionId": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isTrial": "Boolean",
