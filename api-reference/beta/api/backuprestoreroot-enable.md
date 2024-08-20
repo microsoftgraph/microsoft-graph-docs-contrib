@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
-The following are limitations of enabling backup restore service:
-
-- The first API call for any tenant should be [List Protection Policies](../api/backuprestoreroot-list-protectionpolicies.md) for the tenant to initialise the datastore. Once the datastore initialisation is done (usually takes about 5 minutes), we are good to go for the subsequent API calls. Making any other API call before datastore initialisation will result in error.
+Before you call this API, call [List Protection Policies](../api/backuprestoreroot-list-protectionpolicies.md) to initialize the data store in the tenant. Data store initialization takes about 5 minutes. If you call this API before the data store is initialized, the call will result in an error.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

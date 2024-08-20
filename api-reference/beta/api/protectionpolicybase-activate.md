@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 Activate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
-The following are the limitations of activating protectionPolicyBase:
-
-- We currently support only one active backup policy per underlying service (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove as many artifacts (sites or user accounts) to or from each active policy.
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

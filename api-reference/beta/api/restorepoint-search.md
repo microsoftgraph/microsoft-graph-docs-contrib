@@ -126,6 +126,9 @@ Content-Type: application/json
 
 ### Response
 
+- Calls return a maximum of five restore points.
+- You can include a maximum of 20 protection units in one request and the response won't be paginated.
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -191,10 +194,3 @@ Content-Type: application/json
     "noResultProtectionUnitIds": ["63014d8c-71fe-4d00-a01a-31850bc5b42c"]
 }
 ```
-
-### Limits
-
-The following limitations apply to all API calls:
-
-- Search Restore Points APIs will always return a maximum of 5 restore points.
-- Search Restore Points APIs will only support max 20 Protection Units in one request & the response will be not paginated.
