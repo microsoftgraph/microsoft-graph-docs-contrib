@@ -1,7 +1,7 @@
 ---
 title: "List channels"
 description: "Retrieve the list of channels in this team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"

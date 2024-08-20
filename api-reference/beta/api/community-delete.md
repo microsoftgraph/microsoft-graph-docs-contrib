@@ -1,6 +1,6 @@
 ---
 title: "Delete community"
-description: "Delete a community in Viva Engage."
+description: "Delete a Viva Engage community along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans."
 author: "aditijha4"
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"

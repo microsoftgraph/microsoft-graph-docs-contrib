@@ -1,7 +1,7 @@
 ---
 title: "Remove member from team"
 description: "Remove a conversationMember from a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType

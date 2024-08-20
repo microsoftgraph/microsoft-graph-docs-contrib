@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 [!INCLUDE [sample-code](../includes/snippets/php/list-questions-virtualeventregistration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-questions-virtualeventregistration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-questions-virtualeventregistration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
