@@ -100,6 +100,8 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore
 
 ### Response
 
+For a list of possible error responses, see [Common Backup Storage error conditions](../resources/backup-storage-overview.md#common-backup-storage-error-conditions).
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
