@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete an event message and place it in the Purges folder in the user's mailbox. Email clients such as Outlook or the Outlook Web App can't access permanently deleted items. Unless there's a hold set on the mailbox, the items will be permanently deleted after a set period of time.
+Permanently delete an event message and place it in the Purges folder in the user's mailbox. Email clients such as Outlook or the Outlook on the web can't access permanently deleted items. Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 
-You can read more about item retention in the article [Configure Deleted Item Retention and Recoverable Items Quotas](https://technet.microsoft.com/library/ee364752%28v=exchg.150%29.aspx).
+For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
 
 ## Permissions
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta** Entity URI for Microsoft.OutlookServices
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
