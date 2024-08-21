@@ -29,17 +29,12 @@ To access the actual passwords on the device, done by including `$select=credent
 ## HTTP request
 To get the device local credential for a specific device object:
 
-> [!CAUTION]
-> The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
->
-
 <!-- {
   "blockType": "ignored"  
 }
 -->
 ``` http
 GET /directory/deviceLocalCredentials/{deviceId}
-GET /deviceLocalCredentials/{deviceId}
 ```
 
 ## Request headers
