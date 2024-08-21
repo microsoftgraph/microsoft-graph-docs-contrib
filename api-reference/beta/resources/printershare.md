@@ -25,10 +25,10 @@ Represents a printer that is intended to be discoverable by users and printing a
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
 | [List jobs](../api/printershare-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printerShare. |
 | [Create job for a printer share](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printerShare. To start printing the job, use [start](../api/printjob-start.md). |
-| [List allowed users](../api/printershare-list-allowedusers.md) | [user](user.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
+| [List allowed users](../api/printershare-list-allowedusers.md) | [user](user.md) collection | Retrieve a list of users who can submit print jobs to the associated printer share. |
 | [Create allowed user](../api/printershare-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
 | [Delete allowed user](../api/printershare-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
-| [List allowed groups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share. |
+| [List allowed groups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups whose members can submit print jobs to the associated printer share. |
 | [Create allowed group](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
 | [Delete allowed group](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
 | [List recent shares](../api/print-list-recentshares.md) | [printerShare](printershare.md) collection | Get a list of recently used **printerShares** by the signed-in user. |
@@ -36,7 +36,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowAllUsers|Boolean|If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
+|allowAllUsers|Boolean|If true, all users and groups can access this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
 |defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share.|
