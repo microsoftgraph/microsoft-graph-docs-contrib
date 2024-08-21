@@ -1,7 +1,7 @@
 ---
 title: "teamsTemplate resource type"
 description: "Describes the teamsTemplate entity."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
