@@ -15,6 +15,9 @@ Represents the identity of a participant in a [callRecord](callrecords-callrecor
 
 Inherits from [participantBase](callrecords-participantbase.md).
 
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=25794) related to application identities.
+
 ## Methods
 
 | Method          | Return Type                                                                                     | Description                                                   |
