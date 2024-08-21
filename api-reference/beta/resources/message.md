@@ -48,7 +48,7 @@ by providing a [delta](../api/message-delta.md) function.
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
-|[permanentDelete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
+|[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
