@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 In the Microsoft Entra [access reviews](accessreviews-root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  
 
-Each tenant that has on-boarded Microsoft Entra access reviews has one program, `Default program`.  A global administrator can create additional programs, for example to represent compliance initiatives. 
+Each tenant that has on-boarded Microsoft Entra access reviews has one program, `Default program`. An authorized administrator can create additional programs, for example, to represent compliance initiatives. 
 
 
 ## Methods
