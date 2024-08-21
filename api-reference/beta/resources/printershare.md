@@ -36,7 +36,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowAllUsers|Boolean|If true, all users and groups can access this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
+|allowAllUsers|Boolean|If true, all users and groups can access this printer share. This property supersedes the lists of allowed users and groups defined by the **allowedUsers** and **allowedGroups** navigation properties.|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
 |defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share.|
@@ -47,7 +47,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 |manufacturer|String|The manufacturer reported by the printer associated with this printer share. Read-only.|
 |model|String|The model name reported by the printer associated with this printer share. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share. Read-only.|
-|viewPoint|[printerShareViewpoint](../resources/printershareviewpoint.md)|Additional data for a printer share as viewed by the signed-in user.|
+|viewPoint|[printerShareViewpoint](../resources/printershareviewpoint.md)|More data for a printer share as viewed by the signed-in user.|
 
 ## Relationships
 | Relationship | Type        | Description |

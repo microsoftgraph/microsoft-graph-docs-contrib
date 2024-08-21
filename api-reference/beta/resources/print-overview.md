@@ -9,6 +9,8 @@ ms.subservice: "universal-print"
 
 # Use the Microsoft Graph Universal Print API
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Microsoft Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft. Organizations use Universal Print to move key Windows Server print functionality to the Microsoft 365 cloud, simplifying and securing their print infrastructure, streamlining printer management, enabling users to discover printers by location, and more. For more information, see [Universal Print cloud printing API overview](/graph/universal-print-concept-overview). The cloud printing API provides access to Universal Print. Use the cloud printing API to:
 
 - Manage printers and shares.
@@ -23,7 +25,7 @@ The cloud printing API provides key features that are described in the following
 
 The [printerShare](./printershare.md) and [printer](./printer.md) resources define the public view and the actual printer, respectively, for a physical printer that is discoverable by users and applications. The printer share is a logical view to a printer resource that represents a physical printer. The underlying physical printer can be changed without changing the printer share, enabling organizations to maintain high printer availability. The printer share contains properties and methods that let you manage which users and groups can perform operations on this printer, such as creating or deleting print jobs. You can use the **printer** property of the printer share to access information about the physical printer, see its status, list and reset its settings, and more.
 
-Cloud-enabled printers can connect directly to Universal print, but legacy printers require a [print connector](./printconnector.md) to connect and enable discovery. See [What is the Universal Print connector?](/universal-print/fundamentals/universal-print-connector-overview) for more information on print connectors for legacy print devices.
+Cloud-enabled printers can connect directly to Universal print, but legacy printers require a [print connector](./printconnector.md) to connect and enable discovery. For more information about print connectors for legacy print devices, see [The Universal Print connector](/universal-print/fundamentals/universal-print-connector-overview).
 
 ### Printing user and group permissions
 
@@ -44,7 +46,6 @@ In pull printing, the user swipes their badge at a physical printer, which notif
 
 Use the [printUsageByUser](./printusagebyuser.md) and [printUsageByPrinter](./printusagebyprinter.md) resources report information about the daily or monthly number and type of print jobs for a user or printer. These reports are valuable for understanding your organization's usage of print resources and where there might be problems with your print infrastructure. The APIs that return[archivedPrintJob](./archivedprintjob.md) resources contain detailed information about the historical jobs from a printer, user, or group.
 
-## Common use cases
-
-|Use case|Rest APIs|
-|:-------|:--------|
+## Related content
+- [Universal Print cloud printing API overview](/graph/universal-print-concept-overview)
+- [Install Universal Print connector on Windows](/universal-print/fundamentals/universal-print-connector-installation)
