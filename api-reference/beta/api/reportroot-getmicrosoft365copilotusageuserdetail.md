@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUsageUserDetail"
-description: "**TODO: Add Description**"
+description: "Get the most recent activity date for enabled users of Microsoft 365 Copilot apps."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"

@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUserCountTrend"
-description: "**TODO: Add Description**"
+description: "Get the daily number trend of Copilot enabled users and active users over a selected period."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
