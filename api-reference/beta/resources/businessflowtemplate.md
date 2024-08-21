@@ -17,8 +17,12 @@ Namespace: microsoft.graph
 
 In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the **businesFlowTemplate** represents a Microsoft Entra business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review.
 
-The business flow template objects are automatically generated when an authorized administrator onboards the tenant to use the access reviews feature.  The business flow templates include access reviews of assignments to an application, memberships of a group, memberships of a Microsoft Entra role, guest user memberships of a group, and guest user assignments to an application. No additional business flow templates can be created.
-
+The business flow template objects are predefined and automatically generated when an authorized administrator onboards the tenant to use the access reviews feature. They include the following access reviews workflows and scopes:
+- Assignments to an application
+- Memberships of a group
+- Memberships of a Microsoft Entra role
+- Memberships of guests to a group
+- Assignments of guests to an application.
 
 ## Methods
 
