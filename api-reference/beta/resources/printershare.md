@@ -52,7 +52,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedGroups|[group](group.md)|The groups whose users have access to print using the printer.|
+|allowedGroups|[group](group.md) collection|The groups whose users have access to print using the printer.|
 |allowedUsers|[user](user.md) collection|The users who have access to print using the printer.|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer associated with this printer share.|
 |printer|[printer](printer.md)|The printer that this printer share is related to. |
