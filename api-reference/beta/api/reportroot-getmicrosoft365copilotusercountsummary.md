@@ -107,7 +107,7 @@ The following is an example that outputs CSV.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "reportrootthis.getmicrosoft365copilotusercountsummary"
+  "name": "reportroot_getmicrosoft365copilotusercountsummary_csv"
 }
 -->
 ``` http
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 
 The following example shows the response.
 
-<!-- { "blockType": "response" } --> 
+<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -149,7 +149,7 @@ The following is an example that returns JSON.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "reportrootthis.getmicrosoft365copilotusercountsummary"
+  "name": "reportroot_getmicrosoft365copilotusercountsummary_json"
 }
 -->
 ``` http
