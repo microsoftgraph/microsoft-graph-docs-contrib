@@ -13449,7 +13449,25 @@
       "CreatedDateTime": "2024-07-29T19:18:43.3124977Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-	}
+	},
+    {
+      "ChangeList": [
+      {
+          "Id": "bc7c942d-bcad-4daa-844b-e4b4b2b6d366",
+          "ApiChange": "Property",
+          "ChangedApiName": "passwordResetUri",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordResetUri** property to the [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-beta) resource.",
+          "Target": "internalDomainFederation"
+        }
+      ],
+      "Id": "bc7c942d-bcad-4daa-844b-e4b4b2b6d366",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-21T21:04:59.6323438Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
   ]
 }
   
