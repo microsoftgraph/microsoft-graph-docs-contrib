@@ -56,6 +56,8 @@ items:
     href: ../../api/educationclass-list-assignments.md
   - name: List modules
     href: ../../api/educationclass-list-modules.md
+  - name: Get recently modified submissions
+    href: ../../api/educationclass-getrecentlymodifiedsubmissions.md
   - name: Get group
     href: ../../api/educationclass-get-group.md
   - name: Create category

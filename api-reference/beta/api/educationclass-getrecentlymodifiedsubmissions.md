@@ -7,17 +7,17 @@ ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Get educationSubmission
+# Get recently modified educationSubmissions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve modified submissions from last 7 days. Only teachers, students, and applications with application permissions can perform this operation.
+Retrieve recently modified submissions up to maximum of last 7 days. Only teachers and applications with application permissions can perform this operation.
 
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 
-Only the **assignedTo** student can see and modify the **submission**. A teacher or application with application permissions has full access to all **submissions**.
+A teacher or application with application permissions has full access to all **submissions**.
 
 The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the **assignment** has been released.
 
@@ -26,8 +26,8 @@ The grade and feedback from a teacher are part of the [educationOutcome](../reso
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationsubmission_get_recentlymodifiedsubmissions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "educationclass_get_recentlymodifiedsubmissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationsubmission_recentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_cristobal_recentsubmissions/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=excusedBy,excusedDateTime",
     "value": [
         {

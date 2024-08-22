@@ -41,7 +41,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [Update class](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
 | [Delete class](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
 | [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
-|[getRecentlyModifiedSubmissions](../api/educationclass-getrecentlymodifiedsubmissions.md)|[educationSubmission](../resources/educationsubmission.md) collection|**TODO: Add Description**|
+|[getRecentlyModifiedSubmissions](../api/educationclass-getrecentlymodifiedsubmissions.md)|[educationSubmission](../resources/educationsubmission.md) collection|Retrieve modified submissions for duration which goes maximum of last 7 days|
 
 ## Properties
 
