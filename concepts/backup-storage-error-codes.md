@@ -1,25 +1,25 @@
 ---
-title: "Use the Backup Storage REST API"
-description: "You can use the Backup Storage API in Microsoft Graph to manage Backup and Restore of sites, users, and mailboxes in Microsoft 365."
+title: "Error codes for the Backup Storage API in Microsoft Graph"
+description: "Find information about error codes that the Backup Storage API in Microsoft Graph returns when a request that is sent through the API fails."
 author: "tushar20"
 ms.localizationpriority: high
 ms.subservice: "m365-backup-storage"
 doc_type: conceptualPageType
 ---
 
-# Use the Backup Storage REST API
+# Backup Storage API error responses
+
+This topic provides a list of common error conditions you might encounter when you use the Backup Storage API.
 
 Partners can use the Microsoft 365 Backup Storage API in Microsoft Graph to create their own applications to manage backups. Your application becomes the Microsoft 365 Backup Storage controller in the tenant where the application is deployed.
 
-# Common Backup Storage error conditions
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Backup Storage APIs.
 
-In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
-
-## Create ProtectionPolicy API Errors
+## Create protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidCreateRequest|Can't process the request because it's malformed or incorrect.|Create request is null, invalid or its size is too large.|
 |400|InvalidDisplayName|Thrown when the policy display name exceeds the character limit or is empty/null.|Please ensure policy name length should be > 0 chars and <= 1024 chars.|
@@ -29,72 +29,72 @@ The following table lists the possible error and response codes that can be retu
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
 |500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Please try again.|
 
-## Get Protection Policies API Errors
+## Get protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Thrown when the Policy ID in request is invalid, null, or empty.|Policy ID is invalid.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
-## Patch Protection Policies API Errors
+## Patch protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |200|ProtectionUnitAlreadyExists|This is a delta patch ProtectionUnit level error returned when the request has duplicate Protection Unit in the list that is already present in the service.|ProtectionUnit level error: ProtectionUnit already exists.|
 |200|ProtectionUnitNotFound|This is a delta patch ProtectionUnit level error returned when the user requests to remove Protection Unit, which isn't present in the service.|ProtectionUnit level error: ProtectionUnit doesn't exist.|
 |400|DuplicateProtectionUnitInList|This is a Protection Unit level error returned when the request has duplicate artifacts in the list.|Protection Unit level error: Duplicate Protection Unit in list.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
-## Delete Inactive Protection Policy API Errors
+## Delete inactive protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Policy not found.|
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't delete policy. Only policy in Inactive status can be deleted.|
 
-## Deactivate Active Protection Policy API Errors
+## Deactivate active protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in active state.|Policy isn't in correct state. Please wait till it comes in active state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
-## Activate Inactive Protection Policy API Errors
+## Activate inactive protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyI|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't activate policy. The policy isn't in correct state. Please make sure the policy is in Inactive state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
-## List all the Protection Units under a Protection Policy API Errors
+## List all the protection unit under a protection policy API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Policy ID is invalid, null, or empty.|Policy ID is invalid.|
 |400|FilterLengthExceeded|This error occurs when client attempt to send too many filters or queries all at once in a single request including both "and" and "or" filter queries combined.|Filter length exceeds the allowed limit.|
 |400|InvalidProtectionUnitId|Protection unit ID is invalid or empty ID.|Invalid Protection Unit ID.|
 |404|PolicyNotFound|Policy doesn't exist or can't be found.|Unable to get the Protection Policy.|
 
-## Get Protection unit API Errors
+## Get protection unit API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |200|UnknownError|Unknown error occurred occurs.|Unknown error occurred. Please try again. If the issue persists, please contact support.|
 |200|ProtectionUnitNotFound|Protection Unit doesn't exist.|Requested Protection Unit either doesn't exist, is deleted, or can't be found. Please recheck the Protection Unit ID and try again.|
@@ -102,33 +102,33 @@ The following table lists the possible error and response codes that can be retu
 |200|QuotaExceeded|Exceeding backup size quota (specifically for Exo).|You have exceeded the backup quota.|
 |400|InvalidProtectionUnitId|Protection unit ID is invalid or empty ID.|Invalid Protection Unit ID.|
 
-## Create Restore Session API Errors
+## Create restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|400|InvalidPathType|PathType (new/inplace) isn't known for artifacts.|Restore path type isn't present.|
+|400|InvalidPathType|PathType (new/in-place) isn't known for artifacts.|Restore path type isn't present.|
 |400|InvalidArtifactRequest|Empty or null restore artifact list.|There should be at least one restore artifact.|
 |400|InvalidRestorePoint|Invalid restore point provided.|Restore Point ID is invalid or empty.|
 |400|DifferentRestoreDestinationType|Different destination types for artifacts in request.|Different restore destination type.|
 |413|RestoreArtifactsLimitBreached|Request Exceeded maximum artifacts limit.|Restore Artifacts limit is breached.|
 |400|DuplicateArtifactInList|Duplicate artifacts in the list.|The restore artifact requested is already present.|
 
-## Get Restore Session API Errors
+## Get restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidRestoreSessionId|Restore session ID invalid, null, or empty.|Restore Session ID is absent.|
 |404|RestoreSessionNotFound|Valid ID but session not found.|Restore Session Not Found.|
 
-## Patch Restore Session API Errors
+## Patch restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidRestoreSessionId|Restore session ID invalid, null, or empty.|Restore Session ID is absent.|
 |400|InvalidPatchRequest|Can't process the request because it's malformed or incorrect.|Can't process the request because it's malformed or incorrect.|
@@ -139,33 +139,33 @@ The following table lists the possible error and response codes that can be retu
 |404|RestoreSessionNotFound|Valid ID but session not found.|Unable to get restore session.|
 |400|DuplicateArtifactInList|Duplicate artifacts in the request.|The restore artifact requested is already present.|
 
-## Delete Restore Session API Errors
+## Delete restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidRestoreSessionId|Restore session ID invalid, null, or empty.|RestoreSessionId is absent.|
 |403|RestoreSessionActionNotAllowed|Attempt to delete active restore session.|Restore session can only be deleted in Draft state.|
 |404|RestoreSessionNotFound|Valid ID but session not found.|Unable to get restore session.|
 |500|IncompleteArtifactDeletion|Service unable to delete all requested artifacts.|Unable to delete session, try again.|
 
-## Activate Restore Session API Errors
+## Activate restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidRestoreSessionId|Restore session ID invalid, null, or empty.|RestoreSessionId is absent.|
 |403|RestoreSessionActionNotAllowed|Attempt to activate active restore session.|Restore session can only be activated in Draft state.|
 |404|RestoreSessionNotFound|Valid ID but session not found.|Unable to get restore session.|
 |500|TooManyActiveRestoreSessions|Attempt to activate more than 25 sessions simultaneously.|Temporary error: Too many active restore sessions.|
 
-## List Restore Artifacts under a Restore Session API Errors
+## List restore artifact under a restore session API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |200|UnknownError|Unknown error occurred or a provider-side error.|Unknown error occurred. Please try again. If the issue persists, contact support.|
 |200|ArtifactNotFound|Restore Artifact doesn't exist.|The requested restore artifact wasn't found for restore.|
@@ -174,48 +174,48 @@ The following table lists the possible error and response codes that can be retu
 |200|DuplicateArtifactRestoreRequest|Concurrent restoration of the same restore artifact.|An ongoing Restore was found for the given restore artifact. Please wait till its completion and try again.|
 |400|InvalidRestoreSessionId|Restore session ID invalid, null, or empty.|RestoreSession ID is invalid.|
 
-## Create Inclusion Rule API Errors
+## Create inclusion rule API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
 |500|InvalidProtectionRuleDetails|A transient error where Service is unable to save the rule details.|Invalid rule details.|
 
-## Get Inclusion Rule by ID API Errors
+## Get inclusion rule by ID API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
 |404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
 
-## Update Inclusion Rule API Errors
+## Update inclusion rule API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is absent.|
 |404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
 
-## Get Restore Point API Errors
+## Get restore point API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|FilterLengthExceeded|Filter length exceeds allowed limit.|Filter length exceeds allowed limit.|
 |400|InvalidSearchRequest|Requested date time limit or protection unit ID is invalid.|Restore point input is invalid.|
 |400|InvalidProtectionUnitId|Protection unit ID in request is invalid.|Invalid Protection unit ID.|
 
-## Enable service API Errors
+## Enable service API errors
 
 The following table lists the possible error and response codes that can be returned.
 
-| HTTP Status Code| Error Code| Description| Error Message |
+| HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|BillingProfileNotAvailable|Billing profile isn't available.|Configure the billing profile.|
