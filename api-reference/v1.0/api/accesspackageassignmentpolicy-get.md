@@ -163,7 +163,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
 ```
 
 #### Response
@@ -207,7 +207,7 @@ Content-type: application/json
             "id": "5a38d27a-b702-48d9-ac72-dcf158ba1b0d",
             "stage": "assignmentRequestCreated",
             "customExtension": {
-                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "@odata.type": "#microsoft.graph.AssignmentRequestWorkflowExtension",
                 "id": "219f57b6-7983-45a1-be01-2c228b7a43f8",
                 "displayName": "test_action_1",
                 "description": "Test logic app",
