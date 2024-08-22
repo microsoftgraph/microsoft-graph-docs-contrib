@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update tenant-level settings for Microsoft 365 reports.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
