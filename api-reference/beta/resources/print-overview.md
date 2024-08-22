@@ -27,7 +27,7 @@ The [printerShare](./printershare.md) and [printer](./printer.md) resources defi
 
 Cloud-enabled printers can connect directly to Universal print, but legacy printers require a [print connector](./printconnector.md) to connect and enable discovery. For more information about print connectors for legacy print devices, see [The Universal Print connector](/universal-print/fundamentals/universal-print-connector-overview).
 
-### Printing user and group permissions
+### User and group printing permissions
 
 You manage user and group print permissions with cloud printing APIs that operate on printer share resources. You can add, remove, and list authorized users and groups to a printer share. The permissions applied to the printer share apply to all the physical printers that the share contains. In addition, printer shares have the **allowedUsers** and **allowedGroups** navigation properties, which contain the users and groups, respectively, that are authorized to use the printers that the printer share contains.
 
