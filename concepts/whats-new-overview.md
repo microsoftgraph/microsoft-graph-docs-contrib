@@ -43,6 +43,8 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 - Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts) method.
+- Get all [recordings](/graph/api/onlinemeeting-getallrecordings) and [transcripts](/graph/api/onlinemeeting-getalltranscripts) from scheduled online meeting instances for which the specified user is the organizer. 
+- Get a set of [recording](/graph/api/callrecording-delta) and [transcript](/graph/api/calltranscript-delta) resources that were added for online meeting instances organized by the specified user.
 
 ### Teamwork and communications | Settings
 
