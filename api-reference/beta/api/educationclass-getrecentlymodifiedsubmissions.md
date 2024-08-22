@@ -37,7 +37,9 @@ GET /education/classes/{class-id}/getRecentlyModifiedSubmissions
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$orderby` for the the following property of [educationClass](../resources/educationclass.md) resource `lastModifiedDateTime`.
 
 ## Request headers
 | Header       | Value |
