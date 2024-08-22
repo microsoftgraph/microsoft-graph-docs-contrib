@@ -21,11 +21,11 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 For details about report views and names, see [Microsoft 365 reports - Copilot for Microsoft 365 usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
-| Method                                                                                 | Return type | Description                                                                                  |
-| :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------- |
-| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity date for enabled users of Microsoft 365 Copilot apps.           |
-| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of Copilot enabled users and active users over a selected period.  |
-| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the daily number trend of Copilot enabled users and active users over a selected period. |
+| Method                                                                                 | Return type | Description                                                                                                    |
+| :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
+| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity date for enabled users of Microsoft 365 Copilot apps.                             |
+| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of Copilot for Microsoft 365 enabled users and active users over a selected period.  |
+| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the daily number trend of Copilot for Microsoft 365 enabled users and active users over a selected period. |
 
 ### Forms activity
 

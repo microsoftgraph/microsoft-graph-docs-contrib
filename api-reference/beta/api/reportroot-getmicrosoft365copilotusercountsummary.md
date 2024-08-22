@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the aggregated number of Copilot enabled users and active users over a selected period.
+Get the aggregated number of Copilot for Microsoft 365 enabled users and active users over a selected period.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
