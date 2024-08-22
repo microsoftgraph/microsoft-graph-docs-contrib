@@ -31,7 +31,7 @@ This API supports the following PSTN scenarios:
 + P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
 + Bot join the scheduled meeting and then invite PSTN.
 
-+ [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
