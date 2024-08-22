@@ -37,7 +37,7 @@ jobs:
       run: dotnet build --configuration Release
     - name: Install hidi
       run: dotnet tool install microsoft.openapi.hidi -g
-    - name: Create metadata output director
+    - name: Create metadata output directory
       run: |
         mkdir openapi
         cd openapi
@@ -55,6 +55,7 @@ jobs:
         ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Mooncake.csdl -outputPath ../../transformed_beta-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
     - name: Transform CSDL with hidi
       working-directory: ./metadata
+      shell: pwsh
       env:
         SETTINGS: ./conversion-settings/openapi.json
       run: |
