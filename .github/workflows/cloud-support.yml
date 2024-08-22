@@ -59,12 +59,12 @@ jobs:
       env:
         SETTINGS: ./conversion-settings/openapi.json
       run: |
-        hidi transform --cs transformed_v1.0-Prod.csdl -o ../openapi/v1.0/Prod.yml --co -f Yaml --sp $SETTINGS
-        hidi transform --cs transformed_v1.0-Fairfax.csdl -o ../openapi/v1.0/Fairfax.yml --co -f Yaml --sp $SETTINGS
-        hidi transform --cs transformed_v1.0-Mooncake.csdl -o ../openapi/v1.0/Mooncake.yml --co -f Yaml --sp $SETTINGS
-        hidi transform --cs transformed_beta-Prod.csdl -o ../openapi/beta/Prod.yml --co -f Yaml --sp $SETTINGS
-        hidi transform --cs transformed_beta-Fairfax.csdl -o ../openapi/beta/Fairfax.yml --co -f Yaml --sp $SETTINGS
-        hidi transform --cs transformed_beta-Mooncake.csdl -o ../openapi/beta/Mooncake.yml --co -f Yaml --sp $SETTINGS
+        hidi transform --cs transformed_v1.0-Prod.csdl -o ../openapi/v1.0/Prod.yml --co -f Yaml --sp $Env:SETTINGS
+        hidi transform --cs transformed_v1.0-Fairfax.csdl -o ../openapi/v1.0/Fairfax.yml --co -f Yaml --sp $Env:SETTINGS
+        hidi transform --cs transformed_v1.0-Mooncake.csdl -o ../openapi/v1.0/Mooncake.yml --co -f Yaml --sp $Env:SETTINGS
+        hidi transform --cs transformed_beta-Prod.csdl -o ../openapi/beta/Prod.yml --co -f Yaml --sp $Env:SETTINGS
+        hidi transform --cs transformed_beta-Fairfax.csdl -o ../openapi/beta/Fairfax.yml --co -f Yaml --sp $Env:SETTINGS
+        hidi transform --cs transformed_beta-Mooncake.csdl -o ../openapi/beta/Mooncake.yml --co -f Yaml --sp $Env:SETTINGS
     - name: Run cloud support tool
       env:
         TOOL: ./tool/src/bin/Release/net8.0/CheckCloudSupport
