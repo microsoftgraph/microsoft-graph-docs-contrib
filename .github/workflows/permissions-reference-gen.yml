@@ -69,11 +69,15 @@ jobs:
         $status = git status --porcelain
         if ($status -eq $null) {
           Write-Host "No changes to commit." -ForegroundColor Green
-        } else {  
-          $branchName = "permissions-reference/$(Get-Date -Format 'yyyy-MM-dd')"      
+        } else { 
+          $dateToday = Get-Date -Format 'yyyy-MM-dd'
+          $branchName = "permissions-reference/$dateToday" 
+          $prTitle = "${dateToday}: Automated permissions reference update"
+          
           git add .
           git commit -m "Correct errors in permissions reference"
           git checkout -b $branchName
           git push --set-upstream origin $branchName
-          gh pr create --base main --title "Automated permissons reference update" --body "Scheduled permissions reference update" --reviewer "millicentachieng" --label "ready for content review"
+          
+          gh pr create --base main --title $prTitle --body "Scheduled permissions reference update" --reviewer "FaithOmbongi,msewaweru" --label "ready for content review"
         }
