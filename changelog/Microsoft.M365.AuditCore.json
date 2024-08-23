@@ -287,6 +287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aadRiskDetectionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [aadRiskDetectionAuditRecord]() resource.",
           "Target": "aadRiskDetectionAuditRecord"
         },
         {
@@ -294,6 +295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aedAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [aedAuditRecord]() resource.",
           "Target": "aedAuditRecord"
         },
         {
@@ -301,6 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiAppInteractionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [aiAppInteractionAuditRecord]() resource.",
           "Target": "aiAppInteractionAuditRecord"
         },
         {
@@ -308,6 +311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aipFileDeleted",
           "ChangeType": "Addition",
+          "Description": "Added the [aipFileDeleted]() resource.",
           "Target": "aipFileDeleted"
         },
         {
@@ -315,6 +319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aipHeartBeat",
           "ChangeType": "Addition",
+          "Description": "Added the [aipHeartBeat]() resource.",
           "Target": "aipHeartBeat"
         },
         {
@@ -322,6 +327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aipProtectionActionLogRequest",
           "ChangeType": "Addition",
+          "Description": "Added the [aipProtectionActionLogRequest]() resource.",
           "Target": "aipProtectionActionLogRequest"
         },
         {
@@ -329,6 +335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aipScannerDiscoverEvent",
           "ChangeType": "Addition",
+          "Description": "Added the [aipScannerDiscoverEvent]() resource.",
           "Target": "aipScannerDiscoverEvent"
         },
         {
@@ -336,6 +343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aipSensitivityLabelActionLogRequest",
           "ChangeType": "Addition",
+          "Description": "Added the [aipSensitivityLabelActionLogRequest]() resource.",
           "Target": "aipSensitivityLabelActionLogRequest"
         },
         {
@@ -343,6 +351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "airAdminActionInvestigationData",
           "ChangeType": "Addition",
+          "Description": "Added the [airAdminActionInvestigationData]() resource.",
           "Target": "airAdminActionInvestigationData"
         },
         {
@@ -350,6 +359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "airInvestigationData",
           "ChangeType": "Addition",
+          "Description": "Added the [airInvestigationData]() resource.",
           "Target": "airInvestigationData"
         },
         {
@@ -357,6 +367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "airManualInvestigationData",
           "ChangeType": "Addition",
+          "Description": "Added the [airManualInvestigationData]() resource.",
           "Target": "airManualInvestigationData"
         },
         {
@@ -364,6 +375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attackSimAdminAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [attackSimAdminAuditRecord]() resource.",
           "Target": "attackSimAdminAuditRecord"
         },
         {
@@ -371,6 +383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "auditSearchAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [auditSearchAuditRecord]() resource.",
           "Target": "auditSearchAuditRecord"
         },
         {
@@ -378,6 +391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureActiveDirectoryAccountLogonAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryAccountLogonAuditRecord]() resource.",
           "Target": "azureActiveDirectoryAccountLogonAuditRecord"
         },
         {
@@ -385,6 +399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureActiveDirectoryAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryAuditRecord]() resource.",
           "Target": "azureActiveDirectoryAuditRecord"
         },
         {
@@ -392,6 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureActiveDirectoryBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryBaseAuditRecord]() resource.",
           "Target": "azureActiveDirectoryBaseAuditRecord"
         },
         {
@@ -399,6 +415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureActiveDirectoryStsLogonAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryStsLogonAuditRecord]() resource.",
           "Target": "azureActiveDirectoryStsLogonAuditRecord"
         },
         {
@@ -406,6 +423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "campaignAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [campaignAuditRecord]() resource.",
           "Target": "campaignAuditRecord"
         },
         {
@@ -413,6 +431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "caseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [caseAuditRecord]() resource.",
           "Target": "caseAuditRecord"
         },
         {
@@ -420,6 +439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "caseInvestigation",
           "ChangeType": "Addition",
+          "Description": "Added the [caseInvestigation]() resource.",
           "Target": "caseInvestigation"
         },
         {
@@ -427,6 +447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpColdCrawlStatusRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpColdCrawlStatusRecord]() resource.",
           "Target": "cdpColdCrawlStatusRecord"
         },
         {
@@ -434,6 +455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpContentExplorerAggregateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpContentExplorerAggregateRecord]() resource.",
           "Target": "cdpContentExplorerAggregateRecord"
         },
         {
@@ -441,6 +463,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpDlpSensitiveAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpDlpSensitiveAuditRecord]() resource.",
           "Target": "cdpDlpSensitiveAuditRecord"
         },
         {
@@ -448,6 +471,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpDlpSensitiveEndpointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpDlpSensitiveEndpointAuditRecord]() resource.",
           "Target": "cdpDlpSensitiveEndpointAuditRecord"
         },
         {
@@ -455,6 +479,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpLogRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpLogRecord]() resource.",
           "Target": "cdpLogRecord"
         },
         {
@@ -462,6 +487,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpOcrBillingRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpOcrBillingRecord]() resource.",
           "Target": "cdpOcrBillingRecord"
         },
         {
@@ -469,6 +495,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cdpResourceScopeChangeEventRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cdpResourceScopeChangeEventRecord]() resource.",
           "Target": "cdpResourceScopeChangeEventRecord"
         },
         {
@@ -476,6 +503,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cernerSMSLinkRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSLinkRecord]() resource.",
           "Target": "cernerSMSLinkRecord"
         },
         {
@@ -483,6 +511,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cernerSMSSettingsUpdateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSSettingsUpdateRecord]() resource.",
           "Target": "cernerSMSSettingsUpdateRecord"
         },
         {
@@ -490,6 +519,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cernerSMSUnlinkRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSUnlinkRecord]() resource.",
           "Target": "cernerSMSUnlinkRecord"
         },
         {
@@ -497,6 +527,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceConnectorAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceConnectorAuditRecord]() resource.",
           "Target": "complianceConnectorAuditRecord"
         },
         {
@@ -504,6 +535,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDLMExchangeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDLMExchangeAuditRecord]() resource.",
           "Target": "complianceDLMExchangeAuditRecord"
         },
         {
@@ -511,6 +543,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDLMSharePointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDLMSharePointAuditRecord]() resource.",
           "Target": "complianceDLMSharePointAuditRecord"
         },
         {
@@ -518,6 +551,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpApplicationsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpApplicationsAuditRecord]() resource.",
           "Target": "complianceDlpApplicationsAuditRecord"
         },
         {
@@ -525,6 +559,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpApplicationsClassificationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpApplicationsClassificationAuditRecord]() resource.",
           "Target": "complianceDlpApplicationsClassificationAuditRecord"
         },
         {
@@ -532,6 +567,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpBaseAuditRecord]() resource.",
           "Target": "complianceDlpBaseAuditRecord"
         },
         {
@@ -539,6 +575,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpClassificationBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpClassificationBaseAuditRecord]() resource.",
           "Target": "complianceDlpClassificationBaseAuditRecord"
         },
         {
@@ -546,6 +583,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpClassificationBaseCdpRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpClassificationBaseCdpRecord]() resource.",
           "Target": "complianceDlpClassificationBaseCdpRecord"
         },
         {
@@ -553,6 +591,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpEndpointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpEndpointAuditRecord]() resource.",
           "Target": "complianceDlpEndpointAuditRecord"
         },
         {
@@ -560,6 +599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpEndpointDiscoveryAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpEndpointDiscoveryAuditRecord]() resource.",
           "Target": "complianceDlpEndpointDiscoveryAuditRecord"
         },
         {
@@ -567,6 +607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpExchangeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeAuditRecord]() resource.",
           "Target": "complianceDlpExchangeAuditRecord"
         },
         {
@@ -574,6 +615,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpExchangeClassificationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeClassificationAuditRecord]() resource.",
           "Target": "complianceDlpExchangeClassificationAuditRecord"
         },
         {
@@ -581,6 +623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpExchangeClassificationCdpRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeClassificationCdpRecord]() resource.",
           "Target": "complianceDlpExchangeClassificationCdpRecord"
         },
         {
@@ -588,6 +631,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpExchangeDiscoveryAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeDiscoveryAuditRecord]() resource.",
           "Target": "complianceDlpExchangeDiscoveryAuditRecord"
         },
         {
@@ -595,6 +639,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpSharePointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointAuditRecord]() resource.",
           "Target": "complianceDlpSharePointAuditRecord"
         },
         {
@@ -602,6 +647,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpSharePointClassificationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointClassificationAuditRecord]() resource.",
           "Target": "complianceDlpSharePointClassificationAuditRecord"
         },
         {
@@ -609,6 +655,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceDlpSharePointClassificationExtendedAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointClassificationExtendedAuditRecord]() resource.",
           "Target": "complianceDlpSharePointClassificationExtendedAuditRecord"
         },
         {
@@ -616,6 +663,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceManagerActionRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceManagerActionRecord]() resource.",
           "Target": "complianceManagerActionRecord"
         },
         {
@@ -623,6 +671,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceSupervisionBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceSupervisionBaseAuditRecord]() resource.",
           "Target": "complianceSupervisionBaseAuditRecord"
         },
         {
@@ -630,6 +679,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceSupervisionExchangeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [complianceSupervisionExchangeAuditRecord]() resource.",
           "Target": "complianceSupervisionExchangeAuditRecord"
         },
         {
@@ -637,6 +687,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "consumptionResourceAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [consumptionResourceAuditRecord]() resource.",
           "Target": "consumptionResourceAuditRecord"
         },
         {
@@ -644,6 +695,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "copilotInteractionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [copilotInteractionAuditRecord]() resource.",
           "Target": "copilotInteractionAuditRecord"
         },
         {
@@ -651,6 +703,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "coreReportingSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [coreReportingSettingsAuditRecord]() resource.",
           "Target": "coreReportingSettingsAuditRecord"
         },
         {
@@ -658,6 +711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cortanaBriefingAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cortanaBriefingAuditRecord]() resource.",
           "Target": "cortanaBriefingAuditRecord"
         },
         {
@@ -665,6 +719,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cpsCommonPolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cpsCommonPolicyAuditRecord]() resource.",
           "Target": "cpsCommonPolicyAuditRecord"
         },
         {
@@ -672,6 +727,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cpsPolicyConfigAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [cpsPolicyConfigAuditRecord]() resource.",
           "Target": "cpsPolicyConfigAuditRecord"
         },
         {
@@ -679,6 +735,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crmBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [crmBaseAuditRecord]() resource.",
           "Target": "crmBaseAuditRecord"
         },
         {
@@ -686,6 +743,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crmEntityOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [crmEntityOperationAuditRecord]() resource.",
           "Target": "crmEntityOperationAuditRecord"
         },
         {
@@ -693,6 +751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customerKeyServiceEncryptionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [customerKeyServiceEncryptionAuditRecord]() resource.",
           "Target": "customerKeyServiceEncryptionAuditRecord"
         },
         {
@@ -700,6 +759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataCenterSecurityBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataCenterSecurityBaseAuditRecord]() resource.",
           "Target": "dataCenterSecurityBaseAuditRecord"
         },
         {
@@ -707,6 +767,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataCenterSecurityCmdletAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataCenterSecurityCmdletAuditRecord]() resource.",
           "Target": "dataCenterSecurityCmdletAuditRecord"
         },
         {
@@ -714,6 +775,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataGovernanceAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataGovernanceAuditRecord]() resource.",
           "Target": "dataGovernanceAuditRecord"
         },
         {
@@ -721,6 +783,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataInsightsRestApiAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataInsightsRestApiAuditRecord]() resource.",
           "Target": "dataInsightsRestApiAuditRecord"
         },
         {
@@ -728,6 +791,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataLakeExportOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataLakeExportOperationAuditRecord]() resource.",
           "Target": "dataLakeExportOperationAuditRecord"
         },
         {
@@ -735,6 +799,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dataShareOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dataShareOperationAuditRecord]() resource.",
           "Target": "dataShareOperationAuditRecord"
         },
         {
@@ -742,6 +807,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "defenderSecurityAlertBaseRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [defenderSecurityAlertBaseRecord]() resource.",
           "Target": "defenderSecurityAlertBaseRecord"
         },
         {
@@ -749,6 +815,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deleteCertificateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [deleteCertificateRecord]() resource.",
           "Target": "deleteCertificateRecord"
         },
         {
@@ -756,6 +823,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "disableConsentRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [disableConsentRecord]() resource.",
           "Target": "disableConsentRecord"
         },
         {
@@ -763,6 +831,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "discoveryAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [discoveryAuditRecord]() resource.",
           "Target": "discoveryAuditRecord"
         },
         {
@@ -770,6 +839,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dlpEndpointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dlpEndpointAuditRecord]() resource.",
           "Target": "dlpEndpointAuditRecord"
         },
         {
@@ -777,6 +847,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dlpSensitiveInformationTypeCmdletRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dlpSensitiveInformationTypeCmdletRecord]() resource.",
           "Target": "dlpSensitiveInformationTypeCmdletRecord"
         },
         {
@@ -784,6 +855,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dlpSensitiveInformationTypeRulePackageCmdletRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dlpSensitiveInformationTypeRulePackageCmdletRecord]() resource.",
           "Target": "dlpSensitiveInformationTypeRulePackageCmdletRecord"
         },
         {
@@ -791,6 +863,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "downloadCertificateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [downloadCertificateRecord]() resource.",
           "Target": "downloadCertificateRecord"
         },
         {
@@ -798,6 +871,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dynamics365BusinessCentralAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [dynamics365BusinessCentralAuditRecord]() resource.",
           "Target": "dynamics365BusinessCentralAuditRecord"
         },
         {
@@ -805,6 +879,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enableConsentRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [enableConsentRecord]() resource.",
           "Target": "enableConsentRecord"
         },
         {
@@ -812,6 +887,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "epicSMSLinkRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [epicSMSLinkRecord]() resource.",
           "Target": "epicSMSLinkRecord"
         },
         {
@@ -819,6 +895,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "epicSMSSettingsUpdateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [epicSMSSettingsUpdateRecord]() resource.",
           "Target": "epicSMSSettingsUpdateRecord"
         },
         {
@@ -826,6 +903,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "epicSMSUnlinkRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [epicSMSUnlinkRecord]() resource.",
           "Target": "epicSMSUnlinkRecord"
         },
         {
@@ -833,6 +911,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeAdminAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeAdminAuditRecord]() resource.",
           "Target": "exchangeAdminAuditRecord"
         },
         {
@@ -840,6 +919,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeAggregatedMailboxAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeAggregatedMailboxAuditRecord]() resource.",
           "Target": "exchangeAggregatedMailboxAuditRecord"
         },
         {
@@ -847,6 +927,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeAggregatedOperationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeAggregatedOperationRecord]() resource.",
           "Target": "exchangeAggregatedOperationRecord"
         },
         {
@@ -854,6 +935,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeMailboxAuditBaseRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditBaseRecord]() resource.",
           "Target": "exchangeMailboxAuditBaseRecord"
         },
         {
@@ -861,6 +943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeMailboxAuditGroupRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditGroupRecord]() resource.",
           "Target": "exchangeMailboxAuditGroupRecord"
         },
         {
@@ -868,6 +951,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "exchangeMailboxAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditRecord]() resource.",
           "Target": "exchangeMailboxAuditRecord"
         },
         {
@@ -875,6 +959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fhirBaseUrlAddRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlAddRecord]() resource.",
           "Target": "fhirBaseUrlAddRecord"
         },
         {
@@ -882,6 +967,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fhirBaseUrlApproveRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlApproveRecord]() resource.",
           "Target": "fhirBaseUrlApproveRecord"
         },
         {
@@ -889,6 +975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fhirBaseUrlDeleteRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlDeleteRecord]() resource.",
           "Target": "fhirBaseUrlDeleteRecord"
         },
         {
@@ -896,6 +983,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fhirBaseUrlUpdateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlUpdateRecord]() resource.",
           "Target": "fhirBaseUrlUpdateRecord"
         },
         {
@@ -903,6 +991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "healthcareSignalRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [healthcareSignalRecord]() resource.",
           "Target": "healthcareSignalRecord"
         },
         {
@@ -910,6 +999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hostedRpaAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [hostedRpaAuditRecord]() resource.",
           "Target": "hostedRpaAuditRecord"
         },
         {
@@ -917,6 +1007,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hrSignalAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [hrSignalAuditRecord]() resource.",
           "Target": "hrSignalAuditRecord"
         },
         {
@@ -924,6 +1015,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hygieneEventRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [hygieneEventRecord]() resource.",
           "Target": "hygieneEventRecord"
         },
         {
@@ -931,6 +1023,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationBarrierPolicyApplicationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [informationBarrierPolicyApplicationAuditRecord]() resource.",
           "Target": "informationBarrierPolicyApplicationAuditRecord"
         },
         {
@@ -938,6 +1031,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationWorkerProtectionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [informationWorkerProtectionAuditRecord]() resource.",
           "Target": "informationWorkerProtectionAuditRecord"
         },
         {
@@ -945,6 +1039,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insiderRiskScopedUserInsightsRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [insiderRiskScopedUserInsightsRecord]() resource.",
           "Target": "insiderRiskScopedUserInsightsRecord"
         },
         {
@@ -952,6 +1047,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insiderRiskScopedUsersRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [insiderRiskScopedUsersRecord]() resource.",
           "Target": "insiderRiskScopedUsersRecord"
         },
         {
@@ -959,6 +1055,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "irmSecurityAlertRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [irmSecurityAlertRecord]() resource.",
           "Target": "irmSecurityAlertRecord"
         },
         {
@@ -966,6 +1063,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "irmUserDefinedDetectionRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [irmUserDefinedDetectionRecord]() resource.",
           "Target": "irmUserDefinedDetectionRecord"
         },
         {
@@ -973,6 +1071,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "kaizalaAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [kaizalaAuditRecord]() resource.",
           "Target": "kaizalaAuditRecord"
         },
         {
@@ -980,6 +1079,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "labelAnalyticsAggregateAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [labelAnalyticsAggregateAuditRecord]() resource.",
           "Target": "labelAnalyticsAggregateAuditRecord"
         },
         {
@@ -987,6 +1087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "labelContentExplorerAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [labelContentExplorerAuditRecord]() resource.",
           "Target": "labelContentExplorerAuditRecord"
         },
         {
@@ -994,6 +1095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "largeContentMetadataAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [largeContentMetadataAuditRecord]() resource.",
           "Target": "largeContentMetadataAuditRecord"
         },
         {
@@ -1001,6 +1103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "m365ComplianceConnectorAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [m365ComplianceConnectorAuditRecord]() resource.",
           "Target": "m365ComplianceConnectorAuditRecord"
         },
         {
@@ -1008,6 +1111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "m365DAADAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [m365DAADAuditRecord]() resource.",
           "Target": "m365DAADAuditRecord"
         },
         {
@@ -1015,6 +1119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailSubmissionData",
           "ChangeType": "Addition",
+          "Description": "Added the [mailSubmissionData]() resource.",
           "Target": "mailSubmissionData"
         },
         {
@@ -1022,6 +1127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedServicesAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [managedServicesAuditRecord]() resource.",
           "Target": "managedServicesAuditRecord"
         },
         {
@@ -1029,6 +1135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedTenantsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [managedTenantsAuditRecord]() resource.",
           "Target": "managedTenantsAuditRecord"
         },
         {
@@ -1036,6 +1143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mapgAlertsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mapgAlertsAuditRecord]() resource.",
           "Target": "mapgAlertsAuditRecord"
         },
         {
@@ -1043,6 +1151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mapgOnboardAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mapgOnboardAuditRecord]() resource.",
           "Target": "mapgOnboardAuditRecord"
         },
         {
@@ -1050,6 +1159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mapgPolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mapgPolicyAuditRecord]() resource.",
           "Target": "mapgPolicyAuditRecord"
         },
         {
@@ -1057,6 +1167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mcasAlertsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mcasAlertsAuditRecord]() resource.",
           "Target": "mcasAlertsAuditRecord"
         },
         {
@@ -1064,6 +1175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mdaDataSecuritySignalRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mdaDataSecuritySignalRecord]() resource.",
           "Target": "mdaDataSecuritySignalRecord"
         },
         {
@@ -1071,6 +1183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mdatpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mdatpAuditRecord]() resource.",
           "Target": "mdatpAuditRecord"
         },
         {
@@ -1078,6 +1191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mdcEventsRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mdcEventsRecord]() resource.",
           "Target": "mdcEventsRecord"
         },
         {
@@ -1085,6 +1199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mdiAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mdiAuditRecord]() resource.",
           "Target": "mdiAuditRecord"
         },
         {
@@ -1092,6 +1207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meshWorldsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [meshWorldsAuditRecord]() resource.",
           "Target": "meshWorldsAuditRecord"
         },
         {
@@ -1099,6 +1215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoft365BackupBackupItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupBackupItemAuditRecord]() resource.",
           "Target": "microsoft365BackupBackupItemAuditRecord"
         },
         {
@@ -1106,6 +1223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoft365BackupBackupPolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupBackupPolicyAuditRecord]() resource.",
           "Target": "microsoft365BackupBackupPolicyAuditRecord"
         },
         {
@@ -1113,6 +1231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoft365BackupRestoreItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupRestoreItemAuditRecord]() resource.",
           "Target": "microsoft365BackupRestoreItemAuditRecord"
         },
         {
@@ -1120,6 +1239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoft365BackupRestoreTaskAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupRestoreTaskAuditRecord]() resource.",
           "Target": "microsoft365BackupRestoreTaskAuditRecord"
         },
         {
@@ -1127,6 +1247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftDefenderExpertsBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftDefenderExpertsBaseAuditRecord]() resource.",
           "Target": "microsoftDefenderExpertsBaseAuditRecord"
         },
         {
@@ -1134,6 +1255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftDefenderExpertsXDRAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftDefenderExpertsXDRAuditRecord]() resource.",
           "Target": "microsoftDefenderExpertsXDRAuditRecord"
         },
         {
@@ -1141,6 +1263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftFlowAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftFlowAuditRecord]() resource.",
           "Target": "microsoftFlowAuditRecord"
         },
         {
@@ -1148,6 +1271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftFormsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftFormsAuditRecord]() resource.",
           "Target": "microsoftFormsAuditRecord"
         },
         {
@@ -1155,6 +1279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftGraphDataConnectConsent",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftGraphDataConnectConsent]() resource.",
           "Target": "microsoftGraphDataConnectConsent"
         },
         {
@@ -1162,6 +1287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftGraphDataConnectOperation",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftGraphDataConnectOperation]() resource.",
           "Target": "microsoftGraphDataConnectOperation"
         },
         {
@@ -1169,6 +1295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftPurviewDataMapOperationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewDataMapOperationRecord]() resource.",
           "Target": "microsoftPurviewDataMapOperationRecord"
         },
         {
@@ -1176,6 +1303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftPurviewMetadataPolicyOperationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewMetadataPolicyOperationRecord]() resource.",
           "Target": "microsoftPurviewMetadataPolicyOperationRecord"
         },
         {
@@ -1183,6 +1311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftPurviewPolicyOperationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewPolicyOperationRecord]() resource.",
           "Target": "microsoftPurviewPolicyOperationRecord"
         },
         {
@@ -1190,6 +1319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftPurviewPrivacyAuditEvent",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewPrivacyAuditEvent]() resource.",
           "Target": "microsoftPurviewPrivacyAuditEvent"
         },
         {
@@ -1197,6 +1327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftStreamAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftStreamAuditRecord]() resource.",
           "Target": "microsoftStreamAuditRecord"
         },
         {
@@ -1204,6 +1335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsAdminAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAdminAuditRecord]() resource.",
           "Target": "microsoftTeamsAdminAuditRecord"
         },
         {
@@ -1211,6 +1343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsAnalyticsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAnalyticsAuditRecord]() resource.",
           "Target": "microsoftTeamsAnalyticsAuditRecord"
         },
         {
@@ -1218,6 +1351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAuditRecord]() resource.",
           "Target": "microsoftTeamsAuditRecord"
         },
         {
@@ -1225,6 +1359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsDeviceAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsDeviceAuditRecord]() resource.",
           "Target": "microsoftTeamsDeviceAuditRecord"
         },
         {
@@ -1232,6 +1367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsRetentionLabelActionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsRetentionLabelActionAuditRecord]() resource.",
           "Target": "microsoftTeamsRetentionLabelActionAuditRecord"
         },
         {
@@ -1239,6 +1375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsSensitivityLabelActionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsSensitivityLabelActionAuditRecord]() resource.",
           "Target": "microsoftTeamsSensitivityLabelActionAuditRecord"
         },
         {
@@ -1246,6 +1383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftTeamsShiftsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsShiftsAuditRecord]() resource.",
           "Target": "microsoftTeamsShiftsAuditRecord"
         },
         {
@@ -1253,6 +1391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelExchangeItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelExchangeItemAuditRecord]() resource.",
           "Target": "mipAutoLabelExchangeItemAuditRecord"
         },
         {
@@ -1260,6 +1399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelItemAuditRecord]() resource.",
           "Target": "mipAutoLabelItemAuditRecord"
         },
         {
@@ -1267,6 +1407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelPolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelPolicyAuditRecord]() resource.",
           "Target": "mipAutoLabelPolicyAuditRecord"
         },
         {
@@ -1274,6 +1415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelProgressFeedbackAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelProgressFeedbackAuditRecord]() resource.",
           "Target": "mipAutoLabelProgressFeedbackAuditRecord"
         },
         {
@@ -1281,6 +1423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSharePointItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSharePointItemAuditRecord]() resource.",
           "Target": "mipAutoLabelSharePointItemAuditRecord"
         },
         {
@@ -1288,6 +1431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSharePointPolicyLocationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSharePointPolicyLocationAuditRecord]() resource.",
           "Target": "mipAutoLabelSharePointPolicyLocationAuditRecord"
         },
         {
@@ -1295,6 +1439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSimulationSharePointCompletionRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationSharePointCompletionRecord]() resource.",
           "Target": "mipAutoLabelSimulationSharePointCompletionRecord"
         },
         {
@@ -1302,6 +1447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSimulationSharePointProgressRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationSharePointProgressRecord]() resource.",
           "Target": "mipAutoLabelSimulationSharePointProgressRecord"
         },
         {
@@ -1309,6 +1455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSimulationStatisticsRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationStatisticsRecord]() resource.",
           "Target": "mipAutoLabelSimulationStatisticsRecord"
         },
         {
@@ -1316,6 +1463,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipAutoLabelSimulationStatusRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationStatusRecord]() resource.",
           "Target": "mipAutoLabelSimulationStatusRecord"
         },
         {
@@ -1323,6 +1471,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipExactDataMatchAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipExactDataMatchAuditRecord]() resource.",
           "Target": "mipExactDataMatchAuditRecord"
         },
         {
@@ -1330,6 +1479,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipLabelAnalyticsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipLabelAnalyticsAuditRecord]() resource.",
           "Target": "mipLabelAnalyticsAuditRecord"
         },
         {
@@ -1337,6 +1487,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mipLabelAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mipLabelAuditRecord]() resource.",
           "Target": "mipLabelAuditRecord"
         },
         {
@@ -1344,6 +1495,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mS365DCustomDetectionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mS365DCustomDetectionAuditRecord]() resource.",
           "Target": "mS365DCustomDetectionAuditRecord"
         },
         {
@@ -1351,6 +1503,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mS365DIncidentAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mS365DIncidentAuditRecord]() resource.",
           "Target": "mS365DIncidentAuditRecord"
         },
         {
@@ -1358,6 +1511,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mS365DSuppressionRuleAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [mS365DSuppressionRuleAuditRecord]() resource.",
           "Target": "mS365DSuppressionRuleAuditRecord"
         },
         {
@@ -1365,6 +1519,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "msdeGeneralSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [msdeGeneralSettingsAuditRecord]() resource.",
           "Target": "msdeGeneralSettingsAuditRecord"
         },
         {
@@ -1372,6 +1527,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "msdeIndicatorsSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [msdeIndicatorsSettingsAuditRecord]() resource.",
           "Target": "msdeIndicatorsSettingsAuditRecord"
         },
         {
@@ -1379,6 +1535,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "msdeResponseActionsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [msdeResponseActionsAuditRecord]() resource.",
           "Target": "msdeResponseActionsAuditRecord"
         },
         {
@@ -1386,6 +1543,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "msdeRolesSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [msdeRolesSettingsAuditRecord]() resource.",
           "Target": "msdeRolesSettingsAuditRecord"
         },
         {
@@ -1393,6 +1551,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "msticNationStateNotificationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [msticNationStateNotificationRecord]() resource.",
           "Target": "msticNationStateNotificationRecord"
         },
         {
@@ -1400,6 +1559,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "multiStageDispositionAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [multiStageDispositionAuditRecord]() resource.",
           "Target": "multiStageDispositionAuditRecord"
         },
         {
@@ -1407,6 +1567,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "myAnalyticsSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [myAnalyticsSettingsAuditRecord]() resource.",
           "Target": "myAnalyticsSettingsAuditRecord"
         },
         {
@@ -1414,6 +1575,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "officeNativeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [officeNativeAuditRecord]() resource.",
           "Target": "officeNativeAuditRecord"
         },
         {
@@ -1421,6 +1583,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "omePortalAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [omePortalAuditRecord]() resource.",
           "Target": "omePortalAuditRecord"
         },
         {
@@ -1428,6 +1591,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "oneDriveAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [oneDriveAuditRecord]() resource.",
           "Target": "oneDriveAuditRecord"
         },
         {
@@ -1435,6 +1599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesFileShareScannerDlpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [onPremisesFileShareScannerDlpAuditRecord]() resource.",
           "Target": "onPremisesFileShareScannerDlpAuditRecord"
         },
         {
@@ -1442,6 +1607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesScannerDlpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [onPremisesScannerDlpAuditRecord]() resource.",
           "Target": "onPremisesScannerDlpAuditRecord"
         },
         {
@@ -1449,6 +1615,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesSharePointScannerDlpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [onPremisesSharePointScannerDlpAuditRecord]() resource.",
           "Target": "onPremisesSharePointScannerDlpAuditRecord"
         },
         {
@@ -1456,6 +1623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "owaGetAccessTokenForResourceAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [owaGetAccessTokenForResourceAuditRecord]() resource.",
           "Target": "owaGetAccessTokenForResourceAuditRecord"
         },
         {
@@ -1463,6 +1631,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "peopleAdminSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [peopleAdminSettingsAuditRecord]() resource.",
           "Target": "peopleAdminSettingsAuditRecord"
         },
         {
@@ -1470,6 +1639,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "physicalBadgingSignalAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [physicalBadgingSignalAuditRecord]() resource.",
           "Target": "physicalBadgingSignalAuditRecord"
         },
         {
@@ -1477,6 +1647,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerCopyPlanAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerCopyPlanAuditRecord]() resource.",
           "Target": "plannerCopyPlanAuditRecord"
         },
         {
@@ -1484,6 +1655,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanAuditRecord]() resource.",
           "Target": "plannerPlanAuditRecord"
         },
         {
@@ -1491,6 +1663,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanListAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanListAuditRecord]() resource.",
           "Target": "plannerPlanListAuditRecord"
         },
         {
@@ -1498,6 +1671,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRosterAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterAuditRecord]() resource.",
           "Target": "plannerRosterAuditRecord"
         },
         {
@@ -1505,6 +1679,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRosterSensitivityLabelAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterSensitivityLabelAuditRecord]() resource.",
           "Target": "plannerRosterSensitivityLabelAuditRecord"
         },
         {
@@ -1512,6 +1687,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskAuditRecord]() resource.",
           "Target": "plannerTaskAuditRecord"
         },
         {
@@ -1519,6 +1695,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskListAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskListAuditRecord]() resource.",
           "Target": "plannerTaskListAuditRecord"
         },
         {
@@ -1526,6 +1703,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTenantSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [plannerTenantSettingsAuditRecord]() resource.",
           "Target": "plannerTenantSettingsAuditRecord"
         },
         {
@@ -1533,6 +1711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerAppsAuditAppRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditAppRecord]() resource.",
           "Target": "powerAppsAuditAppRecord"
         },
         {
@@ -1540,6 +1719,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerAppsAuditPlanRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditPlanRecord]() resource.",
           "Target": "powerAppsAuditPlanRecord"
         },
         {
@@ -1547,6 +1727,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerAppsAuditResourceRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditResourceRecord]() resource.",
           "Target": "powerAppsAuditResourceRecord"
         },
         {
@@ -1554,6 +1735,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerBiAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerBiAuditRecord]() resource.",
           "Target": "powerBiAuditRecord"
         },
         {
@@ -1561,6 +1743,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerBiDlpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerBiDlpAuditRecord]() resource.",
           "Target": "powerBiDlpAuditRecord"
         },
         {
@@ -1568,6 +1751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPagesSiteAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPagesSiteAuditRecord]() resource.",
           "Target": "powerPagesSiteAuditRecord"
         },
         {
@@ -1575,6 +1759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformAdminDlpAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdminDlpAuditRecord]() resource.",
           "Target": "powerPlatformAdminDlpAuditRecord"
         },
         {
@@ -1582,6 +1767,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformAdminEnvironmentAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdminEnvironmentAuditRecord]() resource.",
           "Target": "powerPlatformAdminEnvironmentAuditRecord"
         },
         {
@@ -1589,6 +1775,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformAdministratorActivityRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdministratorActivityRecord]() resource.",
           "Target": "powerPlatformAdministratorActivityRecord"
         },
         {
@@ -1596,6 +1783,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformLockboxResourceAccessRequestAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformLockboxResourceAccessRequestAuditRecord]() resource.",
           "Target": "powerPlatformLockboxResourceAccessRequestAuditRecord"
         },
         {
@@ -1603,6 +1791,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformLockboxResourceCommandAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformLockboxResourceCommandAuditRecord]() resource.",
           "Target": "powerPlatformLockboxResourceCommandAuditRecord"
         },
         {
@@ -1610,6 +1799,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "powerPlatformServiceActivityAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformServiceActivityAuditRecord]() resource.",
           "Target": "powerPlatformServiceActivityAuditRecord"
         },
         {
@@ -1617,6 +1807,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyDataMatchAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyDataMatchAuditRecord]() resource.",
           "Target": "privacyDataMatchAuditRecord"
         },
         {
@@ -1624,6 +1815,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyDataMinimizationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyDataMinimizationRecord]() resource.",
           "Target": "privacyDataMinimizationRecord"
         },
         {
@@ -1631,6 +1823,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyDigestEmailRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyDigestEmailRecord]() resource.",
           "Target": "privacyDigestEmailRecord"
         },
         {
@@ -1638,6 +1831,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyOpenAccessAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyOpenAccessAuditRecord]() resource.",
           "Target": "privacyOpenAccessAuditRecord"
         },
         {
@@ -1645,6 +1839,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyPortalAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyPortalAuditRecord]() resource.",
           "Target": "privacyPortalAuditRecord"
         },
         {
@@ -1652,6 +1847,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyRemediationActionRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyRemediationActionRecord]() resource.",
           "Target": "privacyRemediationActionRecord"
         },
         {
@@ -1659,6 +1855,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyRemediationRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyRemediationRecord]() resource.",
           "Target": "privacyRemediationRecord"
         },
         {
@@ -1666,6 +1863,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privacyTenantAuditHistoryRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [privacyTenantAuditHistoryRecord]() resource.",
           "Target": "privacyTenantAuditHistoryRecord"
         },
         {
@@ -1673,6 +1871,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectAuditRecord]() resource.",
           "Target": "projectAuditRecord"
         },
         {
@@ -1680,6 +1879,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebAssignedToMeSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebAssignedToMeSettingsAuditRecord]() resource.",
           "Target": "projectForTheWebAssignedToMeSettingsAuditRecord"
         },
         {
@@ -1687,6 +1887,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebProjectAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebProjectAuditRecord]() resource.",
           "Target": "projectForTheWebProjectAuditRecord"
         },
         {
@@ -1694,6 +1895,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebProjectSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebProjectSettingsAuditRecord]() resource.",
           "Target": "projectForTheWebProjectSettingsAuditRecord"
         },
         {
@@ -1701,6 +1903,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebRoadmapAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapAuditRecord]() resource.",
           "Target": "projectForTheWebRoadmapAuditRecord"
         },
         {
@@ -1708,6 +1911,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebRoadmapItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapItemAuditRecord]() resource.",
           "Target": "projectForTheWebRoadmapItemAuditRecord"
         },
         {
@@ -1715,6 +1919,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebRoadmapSettingsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapSettingsAuditRecord]() resource.",
           "Target": "projectForTheWebRoadmapSettingsAuditRecord"
         },
         {
@@ -1722,6 +1927,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "projectForTheWebTaskAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebTaskAuditRecord]() resource.",
           "Target": "projectForTheWebTaskAuditRecord"
         },
         {
@@ -1729,6 +1935,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicFolderAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [publicFolderAuditRecord]() resource.",
           "Target": "publicFolderAuditRecord"
         },
         {
@@ -1736,6 +1943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "purviewInsiderRiskAlertsRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [purviewInsiderRiskAlertsRecord]() resource.",
           "Target": "purviewInsiderRiskAlertsRecord"
         },
         {
@@ -1743,6 +1951,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "purviewInsiderRiskCasesRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [purviewInsiderRiskCasesRecord]() resource.",
           "Target": "purviewInsiderRiskCasesRecord"
         },
         {
@@ -1750,6 +1959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "quarantineAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [quarantineAuditRecord]() resource.",
           "Target": "quarantineAuditRecord"
         },
         {
@@ -1757,6 +1967,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recordsManagementAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [recordsManagementAuditRecord]() resource.",
           "Target": "recordsManagementAuditRecord"
         },
         {
@@ -1764,6 +1975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionPolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [retentionPolicyAuditRecord]() resource.",
           "Target": "retentionPolicyAuditRecord"
         },
         {
@@ -1771,6 +1983,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "scoreEvidence",
           "ChangeType": "Addition",
+          "Description": "Added the [scoreEvidence]() resource.",
           "Target": "scoreEvidence"
         },
         {
@@ -1778,6 +1991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "scorePlatformGenericAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [scorePlatformGenericAuditRecord]() resource.",
           "Target": "scorePlatformGenericAuditRecord"
         },
         {
@@ -1785,6 +1999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "scriptRunAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [scriptRunAuditRecord]() resource.",
           "Target": "scriptRunAuditRecord"
         },
         {
@@ -1792,6 +2007,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "searchAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [searchAuditRecord]() resource.",
           "Target": "searchAuditRecord"
         },
         {
@@ -1799,6 +2015,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityComplianceAlertRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceAlertRecord]() resource.",
           "Target": "securityComplianceAlertRecord"
         },
         {
@@ -1806,6 +2023,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityComplianceCenterEOPCmdletAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceCenterEOPCmdletAuditRecord]() resource.",
           "Target": "securityComplianceCenterEOPCmdletAuditRecord"
         },
         {
@@ -1813,6 +2031,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityComplianceInsightsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceInsightsAuditRecord]() resource.",
           "Target": "securityComplianceInsightsAuditRecord"
         },
         {
@@ -1820,6 +2039,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityComplianceRBACAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceRBACAuditRecord]() resource.",
           "Target": "securityComplianceRBACAuditRecord"
         },
         {
@@ -1827,6 +2047,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityComplianceUserChangeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceUserChangeAuditRecord]() resource.",
           "Target": "securityComplianceUserChangeAuditRecord"
         },
         {
@@ -1834,6 +2055,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointAppPermissionOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointAppPermissionOperationAuditRecord]() resource.",
           "Target": "sharePointAppPermissionOperationAuditRecord"
         },
         {
@@ -1841,6 +2063,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointAuditRecord]() resource.",
           "Target": "sharePointAuditRecord"
         },
         {
@@ -1848,6 +2071,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointCommentOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointCommentOperationAuditRecord]() resource.",
           "Target": "sharePointCommentOperationAuditRecord"
         },
         {
@@ -1855,6 +2079,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointContentTypeOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointContentTypeOperationAuditRecord]() resource.",
           "Target": "sharePointContentTypeOperationAuditRecord"
         },
         {
@@ -1862,6 +2087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointESignatureAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointESignatureAuditRecord]() resource.",
           "Target": "sharePointESignatureAuditRecord"
         },
         {
@@ -1869,6 +2095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointFieldOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointFieldOperationAuditRecord]() resource.",
           "Target": "sharePointFieldOperationAuditRecord"
         },
         {
@@ -1876,6 +2103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointFileOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointFileOperationAuditRecord]() resource.",
           "Target": "sharePointFileOperationAuditRecord"
         },
         {
@@ -1883,6 +2111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointListOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointListOperationAuditRecord]() resource.",
           "Target": "sharePointListOperationAuditRecord"
         },
         {
@@ -1890,6 +2119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointSharingOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [sharePointSharingOperationAuditRecord]() resource.",
           "Target": "sharePointSharingOperationAuditRecord"
         },
         {
@@ -1897,6 +2127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessBaseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessBaseAuditRecord]() resource.",
           "Target": "skypeForBusinessBaseAuditRecord"
         },
         {
@@ -1904,6 +2135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessCmdletsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessCmdletsAuditRecord]() resource.",
           "Target": "skypeForBusinessCmdletsAuditRecord"
         },
         {
@@ -1911,6 +2143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessPSTNUsageAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessPSTNUsageAuditRecord]() resource.",
           "Target": "skypeForBusinessPSTNUsageAuditRecord"
         },
         {
@@ -1918,6 +2151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessUsersBlockedAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessUsersBlockedAuditRecord]() resource.",
           "Target": "skypeForBusinessUsersBlockedAuditRecord"
         },
         {
@@ -1925,6 +2159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "smsCreatePhoneNumberRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [smsCreatePhoneNumberRecord]() resource.",
           "Target": "smsCreatePhoneNumberRecord"
         },
         {
@@ -1932,6 +2167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "smsDeletePhoneNumberRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [smsDeletePhoneNumberRecord]() resource.",
           "Target": "smsDeletePhoneNumberRecord"
         },
         {
@@ -1939,6 +2175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "supervisoryReviewDayXInsightsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [supervisoryReviewDayXInsightsAuditRecord]() resource.",
           "Target": "supervisoryReviewDayXInsightsAuditRecord"
         },
         {
@@ -1946,6 +2183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "syntheticProbeAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [syntheticProbeAuditRecord]() resource.",
           "Target": "syntheticProbeAuditRecord"
         },
         {
@@ -1953,6 +2191,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsEasyApprovalsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [teamsEasyApprovalsAuditRecord]() resource.",
           "Target": "teamsEasyApprovalsAuditRecord"
         },
         {
@@ -1960,6 +2199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsHealthcareAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [teamsHealthcareAuditRecord]() resource.",
           "Target": "teamsHealthcareAuditRecord"
         },
         {
@@ -1967,6 +2207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsUpdatesAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [teamsUpdatesAuditRecord]() resource.",
           "Target": "teamsUpdatesAuditRecord"
         },
         {
@@ -1974,6 +2215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantAllowBlockListAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowBlockListAuditRecord]() resource.",
           "Target": "tenantAllowBlockListAuditRecord"
         },
         {
@@ -1981,6 +2223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatFinderAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [threatFinderAuditRecord]() resource.",
           "Target": "threatFinderAuditRecord"
         },
         {
@@ -1988,6 +2231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatIntelligenceAtpContentData",
           "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceAtpContentData]() resource.",
           "Target": "threatIntelligenceAtpContentData"
         },
         {
@@ -1995,6 +2239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatIntelligenceMailData",
           "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceMailData]() resource.",
           "Target": "threatIntelligenceMailData"
         },
         {
@@ -2002,6 +2247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "threatIntelligenceUrlClickData",
           "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceUrlClickData]() resource.",
           "Target": "threatIntelligenceUrlClickData"
         },
         {
@@ -2009,6 +2255,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "todoAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [todoAuditRecord]() resource.",
           "Target": "todoAuditRecord"
         },
         {
@@ -2016,6 +2263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "uamOperationAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [uamOperationAuditRecord]() resource.",
           "Target": "uamOperationAuditRecord"
         },
         {
@@ -2023,6 +2271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedGroupAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [unifiedGroupAuditRecord]() resource.",
           "Target": "unifiedGroupAuditRecord"
         },
         {
@@ -2030,6 +2279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedSimulationMatchedItemAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [unifiedSimulationMatchedItemAuditRecord]() resource.",
           "Target": "unifiedSimulationMatchedItemAuditRecord"
         },
         {
@@ -2037,6 +2287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedSimulationSummaryAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [unifiedSimulationSummaryAuditRecord]() resource.",
           "Target": "unifiedSimulationSummaryAuditRecord"
         },
         {
@@ -2044,6 +2295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "uploadCertificateRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [uploadCertificateRecord]() resource.",
           "Target": "uploadCertificateRecord"
         },
         {
@@ -2051,6 +2303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "urbacAssignmentAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [urbacAssignmentAuditRecord]() resource.",
           "Target": "urbacAssignmentAuditRecord"
         },
         {
@@ -2058,6 +2311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "urbacEnableStateAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [urbacEnableStateAuditRecord]() resource.",
           "Target": "urbacEnableStateAuditRecord"
         },
         {
@@ -2065,6 +2319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "urbacRoleAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [urbacRoleAuditRecord]() resource.",
           "Target": "urbacRoleAuditRecord"
         },
         {
@@ -2072,6 +2327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userTrainingAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [userTrainingAuditRecord]() resource.",
           "Target": "userTrainingAuditRecord"
         },
         {
@@ -2079,6 +2335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vfamBasePolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vfamBasePolicyAuditRecord]() resource.",
           "Target": "vfamBasePolicyAuditRecord"
         },
         {
@@ -2086,6 +2343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vfamCreatePolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vfamCreatePolicyAuditRecord]() resource.",
           "Target": "vfamCreatePolicyAuditRecord"
         },
         {
@@ -2093,6 +2351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vfamDeletePolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vfamDeletePolicyAuditRecord]() resource.",
           "Target": "vfamDeletePolicyAuditRecord"
         },
         {
@@ -2100,6 +2359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vfamUpdatePolicyAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vfamUpdatePolicyAuditRecord]() resource.",
           "Target": "vfamUpdatePolicyAuditRecord"
         },
         {
@@ -2107,6 +2367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaGoalsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaGoalsAuditRecord]() resource.",
           "Target": "vivaGoalsAuditRecord"
         },
         {
@@ -2114,6 +2375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaLearningAdminAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaLearningAdminAuditRecord]() resource.",
           "Target": "vivaLearningAdminAuditRecord"
         },
         {
@@ -2121,6 +2383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaLearningAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaLearningAuditRecord]() resource.",
           "Target": "vivaLearningAuditRecord"
         },
         {
@@ -2128,6 +2391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaPulseAdminAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseAdminAuditRecord]() resource.",
           "Target": "vivaPulseAdminAuditRecord"
         },
         {
@@ -2135,6 +2399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaPulseOrganizerAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseOrganizerAuditRecord]() resource.",
           "Target": "vivaPulseOrganizerAuditRecord"
         },
         {
@@ -2142,6 +2407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaPulseReportAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseReportAuditRecord]() resource.",
           "Target": "vivaPulseReportAuditRecord"
         },
         {
@@ -2149,6 +2415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "vivaPulseResponseAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseResponseAuditRecord]() resource.",
           "Target": "vivaPulseResponseAuditRecord"
         },
         {
@@ -2156,6 +2423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "wdatpAlertsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [wdatpAlertsAuditRecord]() resource.",
           "Target": "wdatpAlertsAuditRecord"
         },
         {
@@ -2163,6 +2431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windows365CustomerLockboxAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [windows365CustomerLockboxAuditRecord]() resource.",
           "Target": "windows365CustomerLockboxAuditRecord"
         },
         {
@@ -2170,6 +2439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workplaceAnalyticsAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [workplaceAnalyticsAuditRecord]() resource.",
           "Target": "workplaceAnalyticsAuditRecord"
         },
         {
@@ -2177,6 +2447,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "yammerAuditRecord",
           "ChangeType": "Addition",
+          "Description": "Added the [yammerAuditRecord]() resource.",
           "Target": "yammerAuditRecord"
         }
       ],
