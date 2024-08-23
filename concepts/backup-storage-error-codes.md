@@ -15,7 +15,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 ## Create protection policy API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [Create ExchangeProtectionPolicy](/graph/api/backuprestoreroot-post-exchangeprotectionpolicies)
 - [Create OneDriveForBusinessProtectionPolicy](/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies)
@@ -35,7 +35,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get protection policy API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Get ProtectionPolicyBase](/graph/api/protectionpolicybase-get)
 
@@ -48,7 +48,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Patch protection policy API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [Update ExchangeProtectionPolicy](/graph/api/exchangeprotectionpolicy-update)
 - [Update OneDriveForBusinessProtectionPolicy](/graph/api/onedriveforbusinessprotectionpolicy-update)
@@ -65,7 +65,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Delete inactive protection policy API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Delete ProtectionPolicyBase](/graph/api/protectionpolicybase-delete)
 
@@ -79,7 +79,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Deactivate active protection policy API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Deactivate ProtectionPolicyBase](/graph/api/protectionpolicybase-deactivate)
 
@@ -93,7 +93,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Activate inactive protection policy API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Activate ProtectionPolicyBase](/graph/api/protectionpolicybase-activate)
 
@@ -107,7 +107,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## List all the protection unit under a protection policy API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [List DriveProtectionUnit](/graph/api/backuprestoreroot-list-driveprotectionunits)
 - [List MailboxProtectionUnit](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
@@ -124,7 +124,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get protection unit API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Get ProtectionUnitBase](/graph/api/protectionunitbase-get)
 
@@ -140,7 +140,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Create restore session API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [Create ExchangeRestoreSession](/graph/api/backuprestoreroot-post-exchangerestoresessions)
 - [Create OneDriveForBusinessRestoreSession](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions)
@@ -159,7 +159,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get restore session API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Get RestoreSessionBase](/graph/api/restoresessionbase-get)
 
@@ -172,7 +172,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Patch restore session API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [Update ExchangeRestoreSession](/graph/api/exchangerestoresession-update)
 - [Update OneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-update)
@@ -193,7 +193,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Delete restore session API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Delete RestoreSessionBase](/graph/api/restoresessionbase-delete)
 
@@ -208,7 +208,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Activate restore session API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Activate RestoreSessionBase](/graph/api/restoresessionbase-activate)
 
@@ -223,7 +223,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## List restore artifact under a restore session API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [List DriveRestoreArtifact](/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts)
 - [List MailboxRestoreArtifact](/graph/api/exchangerestoresession-list-mailboxrestoreartifacts)
@@ -242,7 +242,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Create inclusion rule API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Create ProtectionRuleBase](/graph/api/protectionrulebase-post)
 
@@ -255,7 +255,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get inclusion rule by ID API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Get ProtectionRuleBase](/graph/api/protectionrulebase-get)
 
@@ -268,7 +268,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get restore point API errors
 
-These error codes apply to the following APIs
+The error codes in this section apply to the following APIs:
 
 - [List RestorePoint](/graph/api/backuprestoreroot-list-restorepoints)
 - [Search RestorePoint](/graph/api/restorepoint-search)
@@ -283,7 +283,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Enable service API errors
 
-These error codes apply to the following API
+The error codes in this section apply to the following API:
 
 - [Activate serviceApp](/graph/api/serviceapp-activate)
 
