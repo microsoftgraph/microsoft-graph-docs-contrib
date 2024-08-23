@@ -1,0 +1,2462 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PowerPlatformAdministratorActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the `PowerPlatformAdministratorActivity` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "Windows365CustomerLockbox",
+          "ChangeType": "Addition",
+          "Description": "Added the `Windows365CustomerLockbox` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CdpResourceScopeChangeEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the `CdpResourceScopeChangeEvent` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceCCExchangeExecutionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceCCExchangeExecutionResult` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CdpOcrCostEstimatorRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the `CdpOcrCostEstimatorRecord` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CopilotInteraction",
+          "ChangeType": "Addition",
+          "Description": "Added the `CopilotInteraction` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CdpOcrBillingRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the `CdpOcrBillingRecord` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceDLPApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceDLPApplications` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "UAMOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the `UAMOperation` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaLearning",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaLearning` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaLearningAdmin",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaLearningAdmin` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PurviewPolicyOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the `PurviewPolicyOperation` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PurviewMetadataPolicyOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the `PurviewMetadataPolicyOperation` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PeopleAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `PeopleAdminSettings` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CdpComplianceDLPExchangeClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the `CdpComplianceDLPExchangeClassification` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CdpComplianceDLPSharePointClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the `CdpComplianceDLPSharePointClassification` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "FilteringBulkSenderInsightData",
+          "ChangeType": "Addition",
+          "Description": "Added the `FilteringBulkSenderInsightData` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "FilteringBulkThresholdInsightData",
+          "ChangeType": "Addition",
+          "Description": "Added the `FilteringBulkThresholdInsightData` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PrivacyOpenAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivacyOpenAccess` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "OWAAuth",
+          "ChangeType": "Addition",
+          "Description": "Added the `OWAAuth` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceDLPApplicationsClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceDLPApplicationsClassification` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "SharePointESignature",
+          "ChangeType": "Addition",
+          "Description": "Added the `SharePointESignature` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "Dynamics365BusinessCentral",
+          "ChangeType": "Addition",
+          "Description": "Added the `Dynamics365BusinessCentral` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "MeshWorlds",
+          "ChangeType": "Addition",
+          "Description": "Added the `MeshWorlds` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaPulseResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaPulseResponse` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaPulseOrganizer",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaPulseOrganizer` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaPulseAdmin",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaPulseAdmin` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "VivaPulseReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `VivaPulseReport` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "AIAppInteraction",
+          "ChangeType": "Addition",
+          "Description": "Added the `AIAppInteraction` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceDLMExchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceDLMExchange` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceDLMSharePoint",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceDLMSharePoint` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ProjectForTheWebAssignedToMeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `ProjectForTheWebAssignedToMeSettings` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "CPSOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the `CPSOperation` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "ComplianceDLPExchangeDiscovery",
+          "ChangeType": "Addition",
+          "Description": "Added the `ComplianceDLPExchangeDiscovery` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Member",
+          "ChangedApiName": "PurviewMCRecommendation",
+          "ChangeType": "Addition",
+          "Description": "Added the `PurviewMCRecommendation` member to the **auditLogRecordType** enumeration.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadRiskDetectionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [aadRiskDetectionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-aadRiskDetectionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "aadRiskDetectionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aedAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [aedAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-aedAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "aedAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAppInteractionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAppInteractionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-aiAppInteractionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "aiAppInteractionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aipFileDeleted",
+          "ChangeType": "Addition",
+          "Description": "Added the [aipFileDeleted](https://learn.microsoft.com/en-us/graph/api/resources/security-aipFileDeleted?view=graph-rest-beta) resource.",
+          "Target": "aipFileDeleted"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aipHeartBeat",
+          "ChangeType": "Addition",
+          "Description": "Added the [aipHeartBeat](https://learn.microsoft.com/en-us/graph/api/resources/security-aipHeartBeat?view=graph-rest-beta) resource.",
+          "Target": "aipHeartBeat"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aipProtectionActionLogRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [aipProtectionActionLogRequest](https://learn.microsoft.com/en-us/graph/api/resources/security-aipProtectionActionLogRequest?view=graph-rest-beta) resource.",
+          "Target": "aipProtectionActionLogRequest"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aipScannerDiscoverEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [aipScannerDiscoverEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-aipScannerDiscoverEvent?view=graph-rest-beta) resource.",
+          "Target": "aipScannerDiscoverEvent"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aipSensitivityLabelActionLogRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [aipSensitivityLabelActionLogRequest](https://learn.microsoft.com/en-us/graph/api/resources/security-aipSensitivityLabelActionLogRequest?view=graph-rest-beta) resource.",
+          "Target": "aipSensitivityLabelActionLogRequest"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airAdminActionInvestigationData",
+          "ChangeType": "Addition",
+          "Description": "Added the [airAdminActionInvestigationData](https://learn.microsoft.com/en-us/graph/api/resources/security-airAdminActionInvestigationData?view=graph-rest-beta) resource.",
+          "Target": "airAdminActionInvestigationData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airInvestigationData",
+          "ChangeType": "Addition",
+          "Description": "Added the [airInvestigationData](https://learn.microsoft.com/en-us/graph/api/resources/security-airInvestigationData?view=graph-rest-beta) resource.",
+          "Target": "airInvestigationData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airManualInvestigationData",
+          "ChangeType": "Addition",
+          "Description": "Added the [airManualInvestigationData](https://learn.microsoft.com/en-us/graph/api/resources/security-airManualInvestigationData?view=graph-rest-beta) resource.",
+          "Target": "airManualInvestigationData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimAdminAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimAdminAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-attackSimAdminAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "attackSimAdminAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditSearchAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [auditSearchAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-auditSearchAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "auditSearchAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureActiveDirectoryAccountLogonAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryAccountLogonAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-azureActiveDirectoryAccountLogonAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "azureActiveDirectoryAccountLogonAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureActiveDirectoryAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-azureActiveDirectoryAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "azureActiveDirectoryAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureActiveDirectoryBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-azureActiveDirectoryBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "azureActiveDirectoryBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureActiveDirectoryStsLogonAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryStsLogonAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-azureActiveDirectoryStsLogonAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "azureActiveDirectoryStsLogonAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "campaignAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [campaignAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-campaignAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "campaignAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-caseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "caseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseInvestigation",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseInvestigation](https://learn.microsoft.com/en-us/graph/api/resources/security-caseInvestigation?view=graph-rest-beta) resource.",
+          "Target": "caseInvestigation"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpColdCrawlStatusRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpColdCrawlStatusRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpColdCrawlStatusRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpColdCrawlStatusRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpContentExplorerAggregateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpContentExplorerAggregateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpContentExplorerAggregateRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpContentExplorerAggregateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpDlpSensitiveAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpDlpSensitiveAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpDlpSensitiveAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpDlpSensitiveAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpDlpSensitiveEndpointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpDlpSensitiveEndpointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpDlpSensitiveEndpointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpDlpSensitiveEndpointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpLogRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpLogRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpLogRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpLogRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpOcrBillingRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpOcrBillingRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpOcrBillingRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpOcrBillingRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cdpResourceScopeChangeEventRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cdpResourceScopeChangeEventRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cdpResourceScopeChangeEventRecord?view=graph-rest-beta) resource.",
+          "Target": "cdpResourceScopeChangeEventRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cernerSMSLinkRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSLinkRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cernerSMSLinkRecord?view=graph-rest-beta) resource.",
+          "Target": "cernerSMSLinkRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cernerSMSSettingsUpdateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSSettingsUpdateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cernerSMSSettingsUpdateRecord?view=graph-rest-beta) resource.",
+          "Target": "cernerSMSSettingsUpdateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cernerSMSUnlinkRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cernerSMSUnlinkRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cernerSMSUnlinkRecord?view=graph-rest-beta) resource.",
+          "Target": "cernerSMSUnlinkRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceConnectorAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceConnectorAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceConnectorAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceConnectorAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDLMExchangeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDLMExchangeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDLMExchangeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDLMExchangeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDLMSharePointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDLMSharePointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDLMSharePointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDLMSharePointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpApplicationsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpApplicationsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpApplicationsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpApplicationsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpApplicationsClassificationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpApplicationsClassificationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpApplicationsClassificationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpApplicationsClassificationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpClassificationBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpClassificationBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpClassificationBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpClassificationBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpClassificationBaseCdpRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpClassificationBaseCdpRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpClassificationBaseCdpRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpClassificationBaseCdpRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpEndpointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpEndpointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpEndpointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpEndpointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpEndpointDiscoveryAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpEndpointDiscoveryAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpEndpointDiscoveryAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpEndpointDiscoveryAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpExchangeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpExchangeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpExchangeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpExchangeClassificationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeClassificationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpExchangeClassificationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpExchangeClassificationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpExchangeClassificationCdpRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeClassificationCdpRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpExchangeClassificationCdpRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpExchangeClassificationCdpRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpExchangeDiscoveryAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpExchangeDiscoveryAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpExchangeDiscoveryAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpExchangeDiscoveryAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpSharePointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpSharePointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpSharePointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpSharePointClassificationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointClassificationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpSharePointClassificationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpSharePointClassificationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceDlpSharePointClassificationExtendedAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceDlpSharePointClassificationExtendedAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceDlpSharePointClassificationExtendedAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceDlpSharePointClassificationExtendedAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceManagerActionRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceManagerActionRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceManagerActionRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceManagerActionRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceSupervisionBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceSupervisionBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceSupervisionBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceSupervisionBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceSupervisionExchangeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceSupervisionExchangeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-complianceSupervisionExchangeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "complianceSupervisionExchangeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "consumptionResourceAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [consumptionResourceAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-consumptionResourceAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "consumptionResourceAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotInteractionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotInteractionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-copilotInteractionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "copilotInteractionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "coreReportingSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [coreReportingSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-coreReportingSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "coreReportingSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cortanaBriefingAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cortanaBriefingAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cortanaBriefingAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "cortanaBriefingAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cpsCommonPolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cpsCommonPolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cpsCommonPolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "cpsCommonPolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cpsPolicyConfigAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [cpsPolicyConfigAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-cpsPolicyConfigAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "cpsPolicyConfigAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crmBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [crmBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-crmBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "crmBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crmEntityOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [crmEntityOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-crmEntityOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "crmEntityOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customerKeyServiceEncryptionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [customerKeyServiceEncryptionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-customerKeyServiceEncryptionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "customerKeyServiceEncryptionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataCenterSecurityBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataCenterSecurityBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataCenterSecurityBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataCenterSecurityBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataCenterSecurityCmdletAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataCenterSecurityCmdletAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataCenterSecurityCmdletAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataCenterSecurityCmdletAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataGovernanceAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataGovernanceAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataGovernanceAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataGovernanceAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataInsightsRestApiAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataInsightsRestApiAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataInsightsRestApiAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataInsightsRestApiAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataLakeExportOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataLakeExportOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataLakeExportOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataLakeExportOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dataShareOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataShareOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dataShareOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dataShareOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defenderSecurityAlertBaseRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [defenderSecurityAlertBaseRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-defenderSecurityAlertBaseRecord?view=graph-rest-beta) resource.",
+          "Target": "defenderSecurityAlertBaseRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deleteCertificateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteCertificateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-deleteCertificateRecord?view=graph-rest-beta) resource.",
+          "Target": "deleteCertificateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableConsentRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [disableConsentRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-disableConsentRecord?view=graph-rest-beta) resource.",
+          "Target": "disableConsentRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveryAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveryAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveryAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "discoveryAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dlpEndpointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dlpEndpointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dlpEndpointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dlpEndpointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dlpSensitiveInformationTypeCmdletRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dlpSensitiveInformationTypeCmdletRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dlpSensitiveInformationTypeCmdletRecord?view=graph-rest-beta) resource.",
+          "Target": "dlpSensitiveInformationTypeCmdletRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dlpSensitiveInformationTypeRulePackageCmdletRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dlpSensitiveInformationTypeRulePackageCmdletRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dlpSensitiveInformationTypeRulePackageCmdletRecord?view=graph-rest-beta) resource.",
+          "Target": "dlpSensitiveInformationTypeRulePackageCmdletRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "downloadCertificateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [downloadCertificateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-downloadCertificateRecord?view=graph-rest-beta) resource.",
+          "Target": "downloadCertificateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dynamics365BusinessCentralAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [dynamics365BusinessCentralAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-dynamics365BusinessCentralAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "dynamics365BusinessCentralAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enableConsentRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [enableConsentRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-enableConsentRecord?view=graph-rest-beta) resource.",
+          "Target": "enableConsentRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "epicSMSLinkRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [epicSMSLinkRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-epicSMSLinkRecord?view=graph-rest-beta) resource.",
+          "Target": "epicSMSLinkRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "epicSMSSettingsUpdateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [epicSMSSettingsUpdateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-epicSMSSettingsUpdateRecord?view=graph-rest-beta) resource.",
+          "Target": "epicSMSSettingsUpdateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "epicSMSUnlinkRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [epicSMSUnlinkRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-epicSMSUnlinkRecord?view=graph-rest-beta) resource.",
+          "Target": "epicSMSUnlinkRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeAdminAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeAdminAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeAdminAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeAdminAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeAggregatedMailboxAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeAggregatedMailboxAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeAggregatedMailboxAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeAggregatedMailboxAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeAggregatedOperationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeAggregatedOperationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeAggregatedOperationRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeAggregatedOperationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMailboxAuditBaseRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditBaseRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeMailboxAuditBaseRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeMailboxAuditBaseRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMailboxAuditGroupRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditGroupRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeMailboxAuditGroupRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeMailboxAuditGroupRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMailboxAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMailboxAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-exchangeMailboxAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "exchangeMailboxAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fhirBaseUrlAddRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlAddRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-fhirBaseUrlAddRecord?view=graph-rest-beta) resource.",
+          "Target": "fhirBaseUrlAddRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fhirBaseUrlApproveRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlApproveRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-fhirBaseUrlApproveRecord?view=graph-rest-beta) resource.",
+          "Target": "fhirBaseUrlApproveRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fhirBaseUrlDeleteRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlDeleteRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-fhirBaseUrlDeleteRecord?view=graph-rest-beta) resource.",
+          "Target": "fhirBaseUrlDeleteRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fhirBaseUrlUpdateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [fhirBaseUrlUpdateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-fhirBaseUrlUpdateRecord?view=graph-rest-beta) resource.",
+          "Target": "fhirBaseUrlUpdateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "healthcareSignalRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [healthcareSignalRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-healthcareSignalRecord?view=graph-rest-beta) resource.",
+          "Target": "healthcareSignalRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostedRpaAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostedRpaAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-hostedRpaAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "hostedRpaAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hrSignalAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [hrSignalAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-hrSignalAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "hrSignalAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hygieneEventRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [hygieneEventRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-hygieneEventRecord?view=graph-rest-beta) resource.",
+          "Target": "hygieneEventRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationBarrierPolicyApplicationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationBarrierPolicyApplicationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-informationBarrierPolicyApplicationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "informationBarrierPolicyApplicationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationWorkerProtectionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationWorkerProtectionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-informationWorkerProtectionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "informationWorkerProtectionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insiderRiskScopedUserInsightsRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [insiderRiskScopedUserInsightsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-insiderRiskScopedUserInsightsRecord?view=graph-rest-beta) resource.",
+          "Target": "insiderRiskScopedUserInsightsRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insiderRiskScopedUsersRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [insiderRiskScopedUsersRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-insiderRiskScopedUsersRecord?view=graph-rest-beta) resource.",
+          "Target": "insiderRiskScopedUsersRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "irmSecurityAlertRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [irmSecurityAlertRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-irmSecurityAlertRecord?view=graph-rest-beta) resource.",
+          "Target": "irmSecurityAlertRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "irmUserDefinedDetectionRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [irmUserDefinedDetectionRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-irmUserDefinedDetectionRecord?view=graph-rest-beta) resource.",
+          "Target": "irmUserDefinedDetectionRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "kaizalaAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [kaizalaAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-kaizalaAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "kaizalaAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelAnalyticsAggregateAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelAnalyticsAggregateAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-labelAnalyticsAggregateAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "labelAnalyticsAggregateAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelContentExplorerAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelContentExplorerAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-labelContentExplorerAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "labelContentExplorerAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "largeContentMetadataAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [largeContentMetadataAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-largeContentMetadataAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "largeContentMetadataAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365ComplianceConnectorAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365ComplianceConnectorAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-m365ComplianceConnectorAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "m365ComplianceConnectorAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365DAADAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365DAADAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-m365DAADAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "m365DAADAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailSubmissionData",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailSubmissionData](https://learn.microsoft.com/en-us/graph/api/resources/security-mailSubmissionData?view=graph-rest-beta) resource.",
+          "Target": "mailSubmissionData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedServicesAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedServicesAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-managedServicesAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "managedServicesAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedTenantsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedTenantsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-managedTenantsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "managedTenantsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mapgAlertsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mapgAlertsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mapgAlertsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mapgAlertsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mapgOnboardAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mapgOnboardAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mapgOnboardAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mapgOnboardAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mapgPolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mapgPolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mapgPolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mapgPolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mcasAlertsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mcasAlertsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mcasAlertsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mcasAlertsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mdaDataSecuritySignalRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mdaDataSecuritySignalRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mdaDataSecuritySignalRecord?view=graph-rest-beta) resource.",
+          "Target": "mdaDataSecuritySignalRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mdatpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mdatpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mdatpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mdatpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mdcEventsRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mdcEventsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mdcEventsRecord?view=graph-rest-beta) resource.",
+          "Target": "mdcEventsRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mdiAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mdiAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mdiAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mdiAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meshWorldsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [meshWorldsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-meshWorldsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "meshWorldsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoft365BackupBackupItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupBackupItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoft365BackupBackupItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoft365BackupBackupItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoft365BackupBackupPolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupBackupPolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoft365BackupBackupPolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoft365BackupBackupPolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoft365BackupRestoreItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupRestoreItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoft365BackupRestoreItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoft365BackupRestoreItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoft365BackupRestoreTaskAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoft365BackupRestoreTaskAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoft365BackupRestoreTaskAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoft365BackupRestoreTaskAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftDefenderExpertsBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftDefenderExpertsBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftDefenderExpertsBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftDefenderExpertsBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftDefenderExpertsXDRAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftDefenderExpertsXDRAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftDefenderExpertsXDRAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftDefenderExpertsXDRAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftFlowAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftFlowAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftFlowAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftFlowAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftFormsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftFormsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftFormsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftFormsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftGraphDataConnectConsent",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftGraphDataConnectConsent](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftGraphDataConnectConsent?view=graph-rest-beta) resource.",
+          "Target": "microsoftGraphDataConnectConsent"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftGraphDataConnectOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftGraphDataConnectOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftGraphDataConnectOperation?view=graph-rest-beta) resource.",
+          "Target": "microsoftGraphDataConnectOperation"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftPurviewDataMapOperationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewDataMapOperationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftPurviewDataMapOperationRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftPurviewDataMapOperationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftPurviewMetadataPolicyOperationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewMetadataPolicyOperationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftPurviewMetadataPolicyOperationRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftPurviewMetadataPolicyOperationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftPurviewPolicyOperationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewPolicyOperationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftPurviewPolicyOperationRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftPurviewPolicyOperationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftPurviewPrivacyAuditEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftPurviewPrivacyAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftPurviewPrivacyAuditEvent?view=graph-rest-beta) resource.",
+          "Target": "microsoftPurviewPrivacyAuditEvent"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftStreamAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftStreamAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftStreamAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftStreamAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsAdminAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAdminAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsAdminAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsAdminAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsAnalyticsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAnalyticsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsAnalyticsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsAnalyticsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsDeviceAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsDeviceAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsDeviceAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsDeviceAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsRetentionLabelActionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsRetentionLabelActionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsRetentionLabelActionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsRetentionLabelActionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsSensitivityLabelActionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsSensitivityLabelActionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsSensitivityLabelActionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsSensitivityLabelActionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTeamsShiftsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftTeamsShiftsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-microsoftTeamsShiftsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "microsoftTeamsShiftsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelExchangeItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelExchangeItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelExchangeItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelExchangeItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelPolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelPolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelPolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelPolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelProgressFeedbackAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelProgressFeedbackAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelProgressFeedbackAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelProgressFeedbackAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSharePointItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSharePointItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSharePointItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSharePointItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSharePointPolicyLocationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSharePointPolicyLocationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSharePointPolicyLocationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSharePointPolicyLocationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSimulationSharePointCompletionRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationSharePointCompletionRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSimulationSharePointCompletionRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSimulationSharePointCompletionRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSimulationSharePointProgressRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationSharePointProgressRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSimulationSharePointProgressRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSimulationSharePointProgressRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSimulationStatisticsRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationStatisticsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSimulationStatisticsRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSimulationStatisticsRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipAutoLabelSimulationStatusRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipAutoLabelSimulationStatusRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipAutoLabelSimulationStatusRecord?view=graph-rest-beta) resource.",
+          "Target": "mipAutoLabelSimulationStatusRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipExactDataMatchAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipExactDataMatchAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipExactDataMatchAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipExactDataMatchAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipLabelAnalyticsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipLabelAnalyticsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipLabelAnalyticsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipLabelAnalyticsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mipLabelAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipLabelAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mipLabelAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mipLabelAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mS365DCustomDetectionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mS365DCustomDetectionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mS365DCustomDetectionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mS365DCustomDetectionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mS365DIncidentAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mS365DIncidentAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mS365DIncidentAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mS365DIncidentAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mS365DSuppressionRuleAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [mS365DSuppressionRuleAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-mS365DSuppressionRuleAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "mS365DSuppressionRuleAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "msdeGeneralSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [msdeGeneralSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-msdeGeneralSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "msdeGeneralSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "msdeIndicatorsSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [msdeIndicatorsSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-msdeIndicatorsSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "msdeIndicatorsSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "msdeResponseActionsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [msdeResponseActionsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-msdeResponseActionsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "msdeResponseActionsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "msdeRolesSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [msdeRolesSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-msdeRolesSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "msdeRolesSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "msticNationStateNotificationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [msticNationStateNotificationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-msticNationStateNotificationRecord?view=graph-rest-beta) resource.",
+          "Target": "msticNationStateNotificationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiStageDispositionAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiStageDispositionAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-multiStageDispositionAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "multiStageDispositionAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "myAnalyticsSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [myAnalyticsSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-myAnalyticsSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "myAnalyticsSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "officeNativeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [officeNativeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-officeNativeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "officeNativeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "omePortalAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [omePortalAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-omePortalAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "omePortalAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [oneDriveAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-oneDriveAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "oneDriveAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesFileShareScannerDlpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesFileShareScannerDlpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-onPremisesFileShareScannerDlpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "onPremisesFileShareScannerDlpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesScannerDlpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesScannerDlpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-onPremisesScannerDlpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "onPremisesScannerDlpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesSharePointScannerDlpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesSharePointScannerDlpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-onPremisesSharePointScannerDlpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "onPremisesSharePointScannerDlpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "owaGetAccessTokenForResourceAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [owaGetAccessTokenForResourceAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-owaGetAccessTokenForResourceAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "owaGetAccessTokenForResourceAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "peopleAdminSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [peopleAdminSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-peopleAdminSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "physicalBadgingSignalAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [physicalBadgingSignalAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-physicalBadgingSignalAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "physicalBadgingSignalAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerCopyPlanAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerCopyPlanAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerCopyPlanAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerCopyPlanAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerPlanAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanListAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanListAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerPlanListAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanListAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRosterAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerRosterAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerRosterAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRosterSensitivityLabelAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterSensitivityLabelAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerRosterSensitivityLabelAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerRosterSensitivityLabelAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerTaskAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskListAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskListAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerTaskListAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskListAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTenantSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTenantSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-plannerTenantSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "plannerTenantSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerAppsAuditAppRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditAppRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerAppsAuditAppRecord?view=graph-rest-beta) resource.",
+          "Target": "powerAppsAuditAppRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerAppsAuditPlanRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditPlanRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerAppsAuditPlanRecord?view=graph-rest-beta) resource.",
+          "Target": "powerAppsAuditPlanRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerAppsAuditResourceRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerAppsAuditResourceRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerAppsAuditResourceRecord?view=graph-rest-beta) resource.",
+          "Target": "powerAppsAuditResourceRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerBiAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerBiAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerBiAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerBiAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerBiDlpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerBiDlpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerBiDlpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerBiDlpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPagesSiteAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPagesSiteAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPagesSiteAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPagesSiteAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformAdminDlpAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdminDlpAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformAdminDlpAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformAdminDlpAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformAdminEnvironmentAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdminEnvironmentAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformAdminEnvironmentAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformAdminEnvironmentAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformAdministratorActivityRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformAdministratorActivityRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformAdministratorActivityRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformAdministratorActivityRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformLockboxResourceAccessRequestAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformLockboxResourceAccessRequestAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformLockboxResourceAccessRequestAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformLockboxResourceAccessRequestAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformLockboxResourceCommandAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformLockboxResourceCommandAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformLockboxResourceCommandAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformLockboxResourceCommandAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "powerPlatformServiceActivityAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [powerPlatformServiceActivityAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-powerPlatformServiceActivityAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "powerPlatformServiceActivityAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyDataMatchAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyDataMatchAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyDataMatchAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyDataMatchAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyDataMinimizationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyDataMinimizationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyDataMinimizationRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyDataMinimizationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyDigestEmailRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyDigestEmailRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyDigestEmailRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyDigestEmailRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyOpenAccessAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyOpenAccessAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyOpenAccessAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyOpenAccessAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyPortalAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyPortalAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyPortalAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyPortalAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyRemediationActionRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyRemediationActionRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyRemediationActionRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyRemediationActionRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyRemediationRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyRemediationRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyRemediationRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyRemediationRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privacyTenantAuditHistoryRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyTenantAuditHistoryRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-privacyTenantAuditHistoryRecord?view=graph-rest-beta) resource.",
+          "Target": "privacyTenantAuditHistoryRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebAssignedToMeSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebAssignedToMeSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebAssignedToMeSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebAssignedToMeSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebProjectAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebProjectAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebProjectAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebProjectAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebProjectSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebProjectSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebProjectSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebProjectSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebRoadmapAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebRoadmapAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebRoadmapAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebRoadmapItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebRoadmapItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebRoadmapItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebRoadmapSettingsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebRoadmapSettingsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebRoadmapSettingsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebRoadmapSettingsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "projectForTheWebTaskAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [projectForTheWebTaskAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-projectForTheWebTaskAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "projectForTheWebTaskAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicFolderAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicFolderAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-publicFolderAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "publicFolderAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "purviewInsiderRiskAlertsRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [purviewInsiderRiskAlertsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-purviewInsiderRiskAlertsRecord?view=graph-rest-beta) resource.",
+          "Target": "purviewInsiderRiskAlertsRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "purviewInsiderRiskCasesRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [purviewInsiderRiskCasesRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-purviewInsiderRiskCasesRecord?view=graph-rest-beta) resource.",
+          "Target": "purviewInsiderRiskCasesRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [quarantineAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-quarantineAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "quarantineAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recordsManagementAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [recordsManagementAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-recordsManagementAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "recordsManagementAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionPolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionPolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionPolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "retentionPolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "scoreEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [scoreEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-scoreEvidence?view=graph-rest-beta) resource.",
+          "Target": "scoreEvidence"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "scorePlatformGenericAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [scorePlatformGenericAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-scorePlatformGenericAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "scorePlatformGenericAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "scriptRunAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [scriptRunAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-scriptRunAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "scriptRunAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-searchAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "searchAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityComplianceAlertRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceAlertRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-securityComplianceAlertRecord?view=graph-rest-beta) resource.",
+          "Target": "securityComplianceAlertRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityComplianceCenterEOPCmdletAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceCenterEOPCmdletAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-securityComplianceCenterEOPCmdletAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "securityComplianceCenterEOPCmdletAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityComplianceInsightsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceInsightsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-securityComplianceInsightsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "securityComplianceInsightsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityComplianceRBACAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceRBACAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-securityComplianceRBACAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "securityComplianceRBACAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityComplianceUserChangeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityComplianceUserChangeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-securityComplianceUserChangeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "securityComplianceUserChangeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointAppPermissionOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointAppPermissionOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointAppPermissionOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointAppPermissionOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointCommentOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointCommentOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointCommentOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointCommentOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointContentTypeOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointContentTypeOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointContentTypeOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointContentTypeOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointESignatureAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointESignatureAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointESignatureAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointESignatureAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointFieldOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointFieldOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointFieldOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointFieldOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointFileOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointFileOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointFileOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointFileOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointListOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointListOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointListOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointListOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSharingOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointSharingOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-sharePointSharingOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "sharePointSharingOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessBaseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessBaseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-skypeForBusinessBaseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "skypeForBusinessBaseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessCmdletsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessCmdletsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-skypeForBusinessCmdletsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "skypeForBusinessCmdletsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessPSTNUsageAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessPSTNUsageAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-skypeForBusinessPSTNUsageAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "skypeForBusinessPSTNUsageAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessUsersBlockedAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessUsersBlockedAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-skypeForBusinessUsersBlockedAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "skypeForBusinessUsersBlockedAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "smsCreatePhoneNumberRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [smsCreatePhoneNumberRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-smsCreatePhoneNumberRecord?view=graph-rest-beta) resource.",
+          "Target": "smsCreatePhoneNumberRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "smsDeletePhoneNumberRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [smsDeletePhoneNumberRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-smsDeletePhoneNumberRecord?view=graph-rest-beta) resource.",
+          "Target": "smsDeletePhoneNumberRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "supervisoryReviewDayXInsightsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [supervisoryReviewDayXInsightsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-supervisoryReviewDayXInsightsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "supervisoryReviewDayXInsightsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "syntheticProbeAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [syntheticProbeAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-syntheticProbeAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "syntheticProbeAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsEasyApprovalsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsEasyApprovalsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsEasyApprovalsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "teamsEasyApprovalsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsHealthcareAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsHealthcareAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsHealthcareAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "teamsHealthcareAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUpdatesAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsUpdatesAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-teamsUpdatesAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "teamsUpdatesAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAllowBlockListAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowBlockListAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-tenantAllowBlockListAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "tenantAllowBlockListAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatFinderAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatFinderAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-threatFinderAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "threatFinderAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceAtpContentData",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceAtpContentData](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligenceAtpContentData?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceAtpContentData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceMailData",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceMailData](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligenceMailData?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceMailData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceUrlClickData",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceUrlClickData](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligenceUrlClickData?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceUrlClickData"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [todoAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-todoAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "todoAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "uamOperationAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [uamOperationAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-uamOperationAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "uamOperationAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedGroupAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedGroupAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedGroupAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "unifiedGroupAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedSimulationMatchedItemAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedSimulationMatchedItemAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedSimulationMatchedItemAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "unifiedSimulationMatchedItemAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedSimulationSummaryAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedSimulationSummaryAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-unifiedSimulationSummaryAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "unifiedSimulationSummaryAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "uploadCertificateRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [uploadCertificateRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-uploadCertificateRecord?view=graph-rest-beta) resource.",
+          "Target": "uploadCertificateRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urbacAssignmentAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [urbacAssignmentAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-urbacAssignmentAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "urbacAssignmentAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urbacEnableStateAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [urbacEnableStateAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-urbacEnableStateAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "urbacEnableStateAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urbacRoleAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [urbacRoleAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-urbacRoleAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "urbacRoleAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userTrainingAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [userTrainingAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-userTrainingAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "userTrainingAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vfamBasePolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vfamBasePolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vfamBasePolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vfamBasePolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vfamCreatePolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vfamCreatePolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vfamCreatePolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vfamCreatePolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vfamDeletePolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vfamDeletePolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vfamDeletePolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vfamDeletePolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vfamUpdatePolicyAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vfamUpdatePolicyAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vfamUpdatePolicyAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vfamUpdatePolicyAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaGoalsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaGoalsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaGoalsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaGoalsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaLearningAdminAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaLearningAdminAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaLearningAdminAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaLearningAdminAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaLearningAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaLearningAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaLearningAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaLearningAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaPulseAdminAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseAdminAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaPulseAdminAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaPulseAdminAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaPulseOrganizerAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseOrganizerAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaPulseOrganizerAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaPulseOrganizerAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaPulseReportAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseReportAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaPulseReportAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaPulseReportAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "vivaPulseResponseAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [vivaPulseResponseAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-vivaPulseResponseAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "vivaPulseResponseAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "wdatpAlertsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [wdatpAlertsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-wdatpAlertsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "wdatpAlertsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windows365CustomerLockboxAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [windows365CustomerLockboxAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-windows365CustomerLockboxAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "windows365CustomerLockboxAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workplaceAnalyticsAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [workplaceAnalyticsAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-workplaceAnalyticsAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "workplaceAnalyticsAuditRecord"
+        },
+        {
+          "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerAuditRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [yammerAuditRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-yammerAuditRecord?view=graph-rest-beta) resource.",
+          "Target": "yammerAuditRecord"
+        }
+      ],
+      "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-13T07:17:14.2064036Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    }
+  ]
+}
