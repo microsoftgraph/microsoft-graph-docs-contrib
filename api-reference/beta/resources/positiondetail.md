@@ -3,7 +3,7 @@ title: "positionDetail resource type"
 description: "positionDetail resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -17,19 +17,23 @@ Represents information about positions related to entities within a user's [prof
 
 ## Properties
 
-| Property       | Type                             | Description                                            |
-|:---------------|:---------------------------------|:-------------------------------------------------------|
-|company         |[companyDetail](companydetail.md) | Detail about the company or employer.                  |
-|description     |String                            | Description of the position in question.               |
-|endMonthYear    |Date                              | When the position ended.                               |
-|jobTitle        |String                            | The title held when in that position.                  |
-|role            |String                            | The role the position entailed.                        |
-|startMonthYear  |Date                              | The start month and year of the position.              |
-|summary         |String                            |Short summary of the position.                          |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|company|[companyDetail](companydetail.md)|Information about the company or employer.|
+|description|String|A description for the position in question.|
+|endMonthYear|Date|The date when the position ended.|
+|jobTitle|String|The title of the position.|
+|layer|Int32|The place where the employee is within the organizational hierarchy.|
+|level|String|The employee’s experience or management level.|
+|role|String|The role the position entailed.|
+|secondaryJobTitle|String|An optional job title for the position.|
+|secondaryRole|String|An optional role for the position entailed.|
+|startMonthYear|Date|The start date of the position.|
+|summary|String|The summary of the position.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -46,7 +50,11 @@ The following is a JSON representation of the resource.
   "description": "String",
   "endMonthYear": "String (timestamp)",
   "jobTitle": "String",
+  "layer": "Integer",
+  "level": "String",
   "role": "String",
+  "secondaryJobTitle": "String",
+  "secondaryRole": "String",
   "startMonthYear": "String (timestamp)",
   "summary": "String"
 }

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryReviewTag ediscoveryReviewTag = new EdiscoveryReviewTag();
-ediscoveryReviewTag.displayName = "My tag API";
-ediscoveryReviewTag.description = "Use Graph API to create tags";
-ediscoveryReviewTag.childSelectability = ChildSelectability.MANY;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1fd645").tags()
-	.buildRequest()
-	.post(ediscoveryReviewTag);
+com.microsoft.graph.beta.models.security.EdiscoveryReviewTag ediscoveryReviewTag = new com.microsoft.graph.beta.models.security.EdiscoveryReviewTag();
+ediscoveryReviewTag.setDisplayName("My tag API");
+ediscoveryReviewTag.setDescription("Use Graph API to create tags");
+ediscoveryReviewTag.setChildSelectability(com.microsoft.graph.beta.models.security.ChildSelectability.Many);
+com.microsoft.graph.models.security.EdiscoveryReviewTag result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").tags().post(ediscoveryReviewTag);
+
 
 ```

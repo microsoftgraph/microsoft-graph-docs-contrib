@@ -3,7 +3,7 @@ title: "educationSubmission: setUpResourcesFolder"
 description: "Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission."
 ms.localizationpriority: medium
 author: "sharmas"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,10 @@ Note that files must be located in this folder in order to be added as resources
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+<!-- { "blockType": "permissions", "name": "educationsubmission_setupresourcesfolder" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,12 +47,12 @@ If the assignment is already in submitted state or if the assignment is no longe
 ### Example 1: Set up a resource folder for a submission
 
 #### Request
-The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
+The following example shows a request that triggers the creation of a SharePoint resource folder for a submission.
 
 ### Example 1: Set up a resource folder for a submission
 
 #### Request
-The following is an example of a request that triggers the creation of a SharePoint resource folder for a submission.
+The following example shows a request that triggers the creation of a SharePoint resource folder for a submission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -161,7 +158,7 @@ Content-type: application/json
 ### Example 2: Set up a resource folder when the assignment is no longer open for submission
 
 #### Request
-The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
+The following example shows a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment is no longer open for submission.
 
 
 
@@ -240,7 +237,7 @@ Content-type: application/json
 ### Example 3: Set up a resource folder when the assignment is already in submitted state
 
 #### Request
-The following is an example of a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
+The following example shows a request that tries to set up a resource folder but fails with a `400 Bad Request` response code because the assignment has already been submitted.
 
 
 

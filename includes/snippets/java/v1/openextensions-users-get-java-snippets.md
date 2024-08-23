@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-User user = graphClient.me()
-	.buildRequest()
-	.expand("extensions")
-	.select("id,displayName,mail,mobilePhone")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+User result = graphClient.me().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "mail", "mobilePhone"};
+	requestConfiguration.queryParameters.expand = new String []{"extensions"};
+});
+
 
 ```

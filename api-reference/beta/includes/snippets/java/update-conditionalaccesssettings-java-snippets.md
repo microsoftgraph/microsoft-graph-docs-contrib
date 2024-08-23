@@ -4,14 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ConditionalAccessSettings conditionalAccessSettings = new ConditionalAccessSettings();
-conditionalAccessSettings.additionalDataManager().put("@odata.context", new JsonPrimitive("https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess"));
-conditionalAccessSettings.signalingStatus = Status.DISABLED;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().settings().conditionalAccess()
-	.buildRequest()
-	.patch(conditionalAccessSettings);
+com.microsoft.graph.beta.models.networkaccess.ConditionalAccessSettings conditionalAccessSettings = new com.microsoft.graph.beta.models.networkaccess.ConditionalAccessSettings();
+conditionalAccessSettings.setSignalingStatus(com.microsoft.graph.beta.models.networkaccess.Status.Disabled);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@odata.context", "https://graph.microsoft.com/beta/networkAccess/settings/$metadata#conditionalAccess");
+conditionalAccessSettings.setAdditionalData(additionalData);
+com.microsoft.graph.models.networkaccess.ConditionalAccessSettings result = graphClient.networkAccess().settings().conditionalAccess().patch(conditionalAccessSettings);
+
 
 ```

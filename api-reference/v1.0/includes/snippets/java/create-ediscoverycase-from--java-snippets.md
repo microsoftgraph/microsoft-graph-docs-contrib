@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryCase ediscoveryCase = new EdiscoveryCase();
-ediscoveryCase.displayName = "CONTOSO LITIGATION-005";
-ediscoveryCase.description = "Project Bazooka";
-ediscoveryCase.externalId = "324516";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases()
-	.buildRequest()
-	.post(ediscoveryCase);
+com.microsoft.graph.models.security.EdiscoveryCase ediscoveryCase = new com.microsoft.graph.models.security.EdiscoveryCase();
+ediscoveryCase.setDisplayName("CONTOSO LITIGATION-005");
+ediscoveryCase.setDescription("Project Bazooka");
+ediscoveryCase.setExternalId("324516");
+com.microsoft.graph.models.security.EdiscoveryCase result = graphClient.security().cases().ediscoveryCases().post(ediscoveryCase);
+
 
 ```

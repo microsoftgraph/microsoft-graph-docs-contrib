@@ -3,7 +3,7 @@ title: "cloudPcReviewStatus resource type"
 description: "Represents details about the review status of a Cloud PC."
 author: "yayang3"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ Represents details about the review status of a Cloud PC.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcReviewStatus"

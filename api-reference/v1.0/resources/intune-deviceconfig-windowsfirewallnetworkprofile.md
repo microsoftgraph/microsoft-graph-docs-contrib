@@ -2,8 +2,8 @@
 title: "windowsFirewallNetworkProfile resource type"
 description: "Windows Firewall Profile Policies."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

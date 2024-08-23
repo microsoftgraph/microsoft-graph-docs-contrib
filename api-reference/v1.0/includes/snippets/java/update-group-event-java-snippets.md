@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Event event = new Event();
 Location location = new Location();
-location.displayName = "Conf Room 2";
-event.location = location;
+location.setDisplayName("Conf Room 2");
+event.setLocation(location);
+Event result = graphClient.groups().byGroupId("{group-id}").calendar().events().byEventId("{event-id}").patch(event);
 
-graphClient.groups("01d4ee64-15ce-491e-bad1-b91aa3223df4").calendar().events("AAMkADZlAAAAABERAAA=")
-	.buildRequest()
-	.patch(event);
 
 ```

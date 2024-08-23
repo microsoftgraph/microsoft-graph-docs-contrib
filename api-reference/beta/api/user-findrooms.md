@@ -3,7 +3,7 @@ title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list."
 ms.localizationpriority: high
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -22,14 +22,11 @@ up to the first 100 rooms in the tenant.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All |
+<!-- { "blockType": "permissions", "name": "user_findrooms" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-findrooms-permissions.md)]
 
 ## HTTP request
 
@@ -58,7 +55,7 @@ GET /users/{id}/findRooms(RoomList='{room_list_emailAddress}')
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 
 
@@ -141,27 +138,27 @@ Content-type: application/json
     "value": [
         {
             "name": "Conf Room Adams",
-            "address": "Adams@contoso.onmicrosoft.com"
+            "address": "Adams@contoso.com"
         },
         {
             "name": "Conf Room Baker",
-            "address": "Baker@contoso.onmicrosoft.com"
+            "address": "Baker@contoso.com"
         },
         {
             "name": "Conf Room Crystal",
-            "address": "Crystal@contoso.onmicrosoft.com"
+            "address": "Crystal@contoso.com"
         },
         {
             "name": "Conf Room Hood",
-            "address": "Hood@contoso.onmicrosoft.com"
+            "address": "Hood@contoso.com"
         },
         {
             "name": "Conf Room Rainier",
-            "address": "Rainier@contoso.onmicrosoft.com"
+            "address": "Rainier@contoso.com"
         },
         {
             "name": "Conf Room Stevens",
-            "address": "Stevens@contoso.onmicrosoft.com"
+            "address": "Stevens@contoso.com"
         }
     ]
 }
@@ -171,7 +168,7 @@ Content-type: application/json
 
 #### Request
 
-The second example gets the [emailAddress](../resources/emailaddress.md) objects that represent the rooms in the specified room list identified by the email address `Building2Rooms@contoso.onmicrosoft.com`.
+The second example gets the [emailAddress](../resources/emailaddress.md) objects that represent the rooms in the specified room list identified by the email address `Building2Rooms@contoso.com`.
 
 
 # [HTTP](#tab/http)
@@ -180,7 +177,7 @@ The second example gets the [emailAddress](../resources/emailaddress.md) objects
   "name": "user_get_rooms_from_specific_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.com')
 ```
 
 # [C#](#tab/csharp)
@@ -196,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-rooms-from-specific-list-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -237,15 +234,15 @@ Content-type: application/json
     "value": [
         {
             "name": "Conf Room Baker",
-            "address": "Baker@contoso.onmicrosoft.com"
+            "address": "Baker@contoso.com"
         },
         {
             "name": "Conf Room Hood",
-            "address": "Hood@contoso.onmicrosoft.com"
+            "address": "Hood@contoso.com"
         },
         {
             "name": "Conf Room Rainier",
-            "address": "Rainier@contoso.onmicrosoft.com"
+            "address": "Rainier@contoso.com"
         }
     ]
 }

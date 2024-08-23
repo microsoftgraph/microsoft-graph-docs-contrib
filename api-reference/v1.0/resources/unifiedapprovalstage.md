@@ -3,7 +3,7 @@ title: "unifiedApprovalStage resource type"
 description: "Defines the settings of the approval stages in a unifiedRoleManagementPolicyApprovalRule object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Defines the settings of the approval stages in a [unifiedRoleManagementPolicyApp
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unifiedApprovalStage"

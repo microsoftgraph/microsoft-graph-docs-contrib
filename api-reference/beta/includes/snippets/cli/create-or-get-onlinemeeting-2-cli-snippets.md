@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta users online-meetings create-or-get post --user-id {user-id} --body '{\
     "chatInfo": {\
         "threadId": "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"\

@@ -3,7 +3,7 @@ title: "relatedContact resource type"
 description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

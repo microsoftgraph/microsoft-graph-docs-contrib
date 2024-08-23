@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChange
+var requestBody = new ComplianceChange
 {
 	OdataType = "#microsoft.graph.windowsUpdates.complianceChange",
 	IsRevoked = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].ComplianceChanges["{complianceChange-id}"].PatchAsync(requestBody);
 
 

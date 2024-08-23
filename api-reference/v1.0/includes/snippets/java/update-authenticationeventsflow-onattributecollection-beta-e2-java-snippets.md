@@ -1,0 +1,89 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ExternalUsersSelfServiceSignUpEventsFlow authenticationEventsFlow = new ExternalUsersSelfServiceSignUpEventsFlow();
+authenticationEventsFlow.setOdataType("#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow");
+OnAttributeCollectionExternalUsersSelfServiceSignUp onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
+onAttributeCollection.setOdataType("#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp");
+AuthenticationAttributeCollectionPage attributeCollectionPage = new AuthenticationAttributeCollectionPage();
+LinkedList<AuthenticationAttributeCollectionPageViewConfiguration> views = new LinkedList<AuthenticationAttributeCollectionPageViewConfiguration>();
+AuthenticationAttributeCollectionPageViewConfiguration authenticationAttributeCollectionPageViewConfiguration = new AuthenticationAttributeCollectionPageViewConfiguration();
+authenticationAttributeCollectionPageViewConfiguration.setTitle(null);
+authenticationAttributeCollectionPageViewConfiguration.setDescription(null);
+LinkedList<AuthenticationAttributeCollectionInputConfiguration> inputs = new LinkedList<AuthenticationAttributeCollectionInputConfiguration>();
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration.setAttribute("email");
+authenticationAttributeCollectionInputConfiguration.setLabel("Email Address");
+authenticationAttributeCollectionInputConfiguration.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration.setHidden(true);
+authenticationAttributeCollectionInputConfiguration.setEditable(false);
+authenticationAttributeCollectionInputConfiguration.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration.setRequired(true);
+authenticationAttributeCollectionInputConfiguration.setValidationRegEx("^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration.setOptions(options);
+inputs.add(authenticationAttributeCollectionInputConfiguration);
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration1 = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration1.setAttribute("displayName");
+authenticationAttributeCollectionInputConfiguration1.setLabel("Display Name");
+authenticationAttributeCollectionInputConfiguration1.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration1.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration1.setHidden(false);
+authenticationAttributeCollectionInputConfiguration1.setEditable(true);
+authenticationAttributeCollectionInputConfiguration1.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration1.setRequired(true);
+authenticationAttributeCollectionInputConfiguration1.setValidationRegEx("^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options1 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration1.setOptions(options1);
+inputs.add(authenticationAttributeCollectionInputConfiguration1);
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration2 = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration2.setAttribute("city");
+authenticationAttributeCollectionInputConfiguration2.setLabel("City");
+authenticationAttributeCollectionInputConfiguration2.setInputType(AuthenticationAttributeCollectionInputType.Text);
+authenticationAttributeCollectionInputConfiguration2.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration2.setHidden(false);
+authenticationAttributeCollectionInputConfiguration2.setEditable(true);
+authenticationAttributeCollectionInputConfiguration2.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration2.setRequired(true);
+authenticationAttributeCollectionInputConfiguration2.setValidationRegEx("^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options2 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+authenticationAttributeCollectionInputConfiguration2.setOptions(options2);
+inputs.add(authenticationAttributeCollectionInputConfiguration2);
+AuthenticationAttributeCollectionInputConfiguration authenticationAttributeCollectionInputConfiguration3 = new AuthenticationAttributeCollectionInputConfiguration();
+authenticationAttributeCollectionInputConfiguration3.setAttribute("extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry");
+authenticationAttributeCollectionInputConfiguration3.setLabel("Rock music or Country");
+authenticationAttributeCollectionInputConfiguration3.setInputType(AuthenticationAttributeCollectionInputType.RadioSingleSelect);
+authenticationAttributeCollectionInputConfiguration3.setDefaultValue(null);
+authenticationAttributeCollectionInputConfiguration3.setHidden(false);
+authenticationAttributeCollectionInputConfiguration3.setEditable(true);
+authenticationAttributeCollectionInputConfiguration3.setWriteToDirectory(true);
+authenticationAttributeCollectionInputConfiguration3.setRequired(true);
+authenticationAttributeCollectionInputConfiguration3.setValidationRegEx("^.*");
+LinkedList<AuthenticationAttributeCollectionOptionConfiguration> options3 = new LinkedList<AuthenticationAttributeCollectionOptionConfiguration>();
+AuthenticationAttributeCollectionOptionConfiguration authenticationAttributeCollectionOptionConfiguration = new AuthenticationAttributeCollectionOptionConfiguration();
+authenticationAttributeCollectionOptionConfiguration.setLabel("Rock music");
+authenticationAttributeCollectionOptionConfiguration.setValue("Rock");
+options3.add(authenticationAttributeCollectionOptionConfiguration);
+AuthenticationAttributeCollectionOptionConfiguration authenticationAttributeCollectionOptionConfiguration1 = new AuthenticationAttributeCollectionOptionConfiguration();
+authenticationAttributeCollectionOptionConfiguration1.setLabel("Country music");
+authenticationAttributeCollectionOptionConfiguration1.setValue("Country");
+options3.add(authenticationAttributeCollectionOptionConfiguration1);
+authenticationAttributeCollectionInputConfiguration3.setOptions(options3);
+inputs.add(authenticationAttributeCollectionInputConfiguration3);
+authenticationAttributeCollectionPageViewConfiguration.setInputs(inputs);
+views.add(authenticationAttributeCollectionPageViewConfiguration);
+attributeCollectionPage.setViews(views);
+onAttributeCollection.setAttributeCollectionPage(attributeCollectionPage);
+authenticationEventsFlow.setOnAttributeCollection(onAttributeCollection);
+AuthenticationEventsFlow result = graphClient.identity().authenticationEventsFlows().byAuthenticationEventsFlowId("{authenticationEventsFlow-id}").patch(authenticationEventsFlow);
+
+
+```

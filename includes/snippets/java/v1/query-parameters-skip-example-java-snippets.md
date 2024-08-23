@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EventCollectionPage events = graphClient.me().events()
-	.buildRequest()
-	.orderBy("createdDateTime")
-	.skip(20)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EventCollectionResponse result = graphClient.me().events().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.orderby = new String []{"createdDateTime"};
+	requestConfiguration.queryParameters.skip = 20;
+});
+
 
 ```

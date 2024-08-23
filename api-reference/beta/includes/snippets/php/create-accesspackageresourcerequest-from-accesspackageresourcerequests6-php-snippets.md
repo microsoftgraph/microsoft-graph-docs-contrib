@@ -5,8 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRequest;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceAttribute;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceAttributeQuestion;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageTextInputQuestion;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageLocalizedContent;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageLocalizedText;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageUserDirectoryAttributeStore;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageResourceRequest();

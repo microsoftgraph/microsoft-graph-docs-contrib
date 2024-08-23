@@ -3,7 +3,7 @@ title: "Create permissionGrantConditionSet in includes collection of permissionG
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -17,13 +17,10 @@ Add conditions under which a permission grant event is *included* in a permissio
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Policy.ReadWrite.PermissionGrant |
+<!-- { "blockType": "permissions", "name": "permissiongrantpolicy_post_includes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permissiongrantpolicy-post-includes-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +34,7 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

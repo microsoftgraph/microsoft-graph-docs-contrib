@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleDefinition unifiedRoleDefinition = new UnifiedRoleDefinition();
-unifiedRoleDefinition.description = "Update basic properties of application registrations";
-unifiedRoleDefinition.displayName = "Application Registration Support Administrator";
-LinkedList<UnifiedRolePermission> rolePermissionsList = new LinkedList<UnifiedRolePermission>();
-UnifiedRolePermission rolePermissions = new UnifiedRolePermission();
-LinkedList<String> allowedResourceActionsList = new LinkedList<String>();
-allowedResourceActionsList.add("microsoft.directory/applications/basic/read");
-rolePermissions.allowedResourceActions = allowedResourceActionsList;
-rolePermissionsList.add(rolePermissions);
-unifiedRoleDefinition.rolePermissions = rolePermissionsList;
-unifiedRoleDefinition.isEnabled = false;
+unifiedRoleDefinition.setDescription("Update basic properties of application registrations");
+unifiedRoleDefinition.setDisplayName("Application Registration Support Administrator");
+LinkedList<UnifiedRolePermission> rolePermissions = new LinkedList<UnifiedRolePermission>();
+UnifiedRolePermission unifiedRolePermission = new UnifiedRolePermission();
+LinkedList<String> allowedResourceActions = new LinkedList<String>();
+allowedResourceActions.add("microsoft.directory/applications/basic/read");
+unifiedRolePermission.setAllowedResourceActions(allowedResourceActions);
+rolePermissions.add(unifiedRolePermission);
+unifiedRoleDefinition.setRolePermissions(rolePermissions);
+unifiedRoleDefinition.setIsEnabled(true);
+UnifiedRoleDefinition result = graphClient.roleManagement().directory().roleDefinitions().post(unifiedRoleDefinition);
 
-graphClient.roleManagement().directory().roleDefinitions()
-	.buildRequest()
-	.post(unifiedRoleDefinition);
 
 ```

@@ -3,7 +3,7 @@ title: "serverProcessedContent resource type"
 description: Represents the server processed content of a given web part.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Represents the server processed content of a given web part.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.serverProcessedContent"

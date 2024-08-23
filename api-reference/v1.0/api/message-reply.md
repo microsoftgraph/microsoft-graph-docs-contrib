@@ -3,7 +3,7 @@ title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -28,13 +28,10 @@ Alternatively, [create a draft to reply to an existing message](../api/message-c
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Send    |
-|Delegated (personal Microsoft account) | Mail.Send    |
-|Application | Mail.Send |
+<!-- { "blockType": "permissions", "name": "message_reply" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-reply-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -89,13 +86,13 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"samanthab@contoso.onmicrosoft.com",
+          "address":"samanthab@contoso.com",
           "name":"Samantha Booth"
         }
       },
       {
         "emailAddress":{
-          "address":"randiw@contoso.onmicrosoft.com",
+          "address":"randiw@contoso.com",
           "name":"Randi Welch"
         }
       }

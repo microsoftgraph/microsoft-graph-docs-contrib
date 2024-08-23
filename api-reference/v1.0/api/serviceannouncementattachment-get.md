@@ -3,7 +3,7 @@ title: "Get serviceAnnouncementAttachment"
 description: "Read the properties and relationships of a serviceAnnouncementAttachment object."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,10 @@ Read the properties and relationships of a [serviceAnnouncementAttachment](../re
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ServiceMessage.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ServiceMessage.Read.All|
+<!-- { "blockType": "permissions", "name": "serviceannouncementattachment_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceannouncementattachment-get-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -115,7 +112,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.context": "https://graph.microsoft-ppe.com/v1.0/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments/$entity",
     "contentType": "application/csv",
     "isInline": false,
     "lastModifiedDateTime": "2021-09-21T04:07:15.9720778Z",

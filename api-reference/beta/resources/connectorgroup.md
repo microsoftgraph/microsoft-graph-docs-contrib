@@ -2,7 +2,7 @@
 title: "connectorGroup resource type"
 description: "Represents an Application Proxy connectorGroup."
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "dhruvinrshah"
 doc_type: resourcePageType
 ---
@@ -21,11 +21,11 @@ After a connector group is created, you can add or move connectors to the connec
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List connectorGroup](../api/connectorgroup-list.md) |[connectorGroup](connectorgroup.md) collection | Retrieve a list of connectorGroup objects. |
-|[Create connectorGroup](../api/connectorgroup-post.md) |[connectorGroup](connectorgroup.md) collection | Create a connectorGroup object. |
-|[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of a connectorGroup object. |
-|[Update connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update a connectorGroup object. |
-|[Delete connectorGroup](../api/connectorgroup-delete.md) | None | Delete a connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
+|[List](../api/connectorgroup-list.md) |[connectorGroup](connectorgroup.md) collection | Retrieve a list of connectorGroup objects. |
+|[Create](../api/connectorgroup-post.md) |[connectorGroup](connectorgroup.md) collection | Create a connectorGroup object. |
+|[Get](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of a connectorGroup object. |
+|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update a connectorGroup object. |
+|[Delete](../api/connectorgroup-delete.md) | None | Delete a connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
 |[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the application object collection associated with the connectorGroup. |
 |[Add application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
@@ -34,9 +34,9 @@ After a connector group is created, you can add or move connectors to the connec
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`. Read-only. |
+|connectorGroupType|connectorGroupType| Indicates the type of hybrid agent. This pre-set by the system. Possible values are: `applicationProxy`, `syncFabric`. Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
+|isDefault|Boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
 |region|connectorGroupRegion| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no connectors or applications** are assigned to the connectorGroup. The possible values are: `nam` (for **North America**), `eur` (for Europe), `aus` (for Australia), `asia` (for Asia), `ind` (for India), and `unknownFutureValue`.|
 
@@ -48,7 +48,7 @@ After a connector group is created, you can add or move connectors to the connec
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

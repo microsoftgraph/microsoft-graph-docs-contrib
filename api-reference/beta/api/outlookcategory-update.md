@@ -1,31 +1,27 @@
 ---
-title: "Update Outlook category"
-description: "Update the writable property, **color**, of the specified outlookCategory object. You can't modify the **displayName** property "
+title: "Update outlookCategory"
+description: "Update the writable property, **color**, of the specified outlookCategory object."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Update Outlook category
+# Update outlookCategory
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You can't modify the **displayName** property
-once you have created the category.
+Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You can't modify the **displayName** property once you have created the category.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.ReadWrite |
+<!-- { "blockType": "permissions", "name": "outlookcategory_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/outlookcategory-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +33,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body
@@ -49,10 +45,10 @@ maintains their previous values or be recalculated based on changes to other pro
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [outlookCategory](../resources/outlookcategory.md) object in the response body.
 ## Example
-##### Request
-Here's an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,8 +98,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

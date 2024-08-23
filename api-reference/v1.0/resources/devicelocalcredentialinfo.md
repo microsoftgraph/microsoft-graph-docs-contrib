@@ -3,7 +3,7 @@ title: "deviceLocalCredentialInfo resource type"
 description: "Represents local administrator credential information for all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -16,8 +16,8 @@ Represents local administrator credential information for all device objects in 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceLocationCredentialInfo](../api/directory-list-devicelocalcredentials.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
-|[Get deviceLocalCredentialInfo](../api/devicelocalcredentialinfo-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
+|[List](../api/directory-list-devicelocalcredentials.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
+|[Get](../api/devicelocalcredentialinfo-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
 
 ## Properties
 |Property|Type|Description|

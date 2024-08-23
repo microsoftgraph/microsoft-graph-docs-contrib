@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.delegated_admin_relationship import DelegatedAdminRelationship
+from msgraph.generated.models.delegated_admin_relationship_customer_participant import DelegatedAdminRelationshipCustomerParticipant
+from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
+from msgraph.generated.models.unified_role import UnifiedRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -25,6 +29,7 @@ request_body = DelegatedAdminRelationship(
 			),
 		],
 	),
+	auto_extend_duration = "P180D",
 )
 
 result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body)

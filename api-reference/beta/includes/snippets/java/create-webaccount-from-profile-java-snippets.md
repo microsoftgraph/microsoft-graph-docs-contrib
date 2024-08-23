@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WebAccount webAccount = new WebAccount();
-webAccount.description = "My Github contributions!";
-webAccount.userId = "innocenty.popov";
+webAccount.setDescription("My Github contributions!");
+webAccount.setUserId("innocenty.popov");
 ServiceInformation service = new ServiceInformation();
-service.name = "GitHub";
-service.webUrl = "https://github.com";
-webAccount.service = service;
+service.setName("GitHub");
+service.setWebUrl("https://github.com");
+webAccount.setService(service);
+WebAccount result = graphClient.me().profile().webAccounts().post(webAccount);
 
-graphClient.me().profile().webAccounts()
-	.buildRequest()
-	.post(webAccount);
 
 ```

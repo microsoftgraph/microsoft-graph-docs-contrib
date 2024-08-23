@@ -3,7 +3,8 @@ title: "authenticationStrengthRoot resource type"
 description: "The authenticationStrengthRoot resource is the entry point for the authentication strengths object model."
 ms.localizationpriority: medium
 author: "InbarckMS"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +32,7 @@ None.
 |policies|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|A collection of [authentication strength policies](authenticationStrengthPolicy.md) that exist for this tenant, including both built-in and custom policies.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

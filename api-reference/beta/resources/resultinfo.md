@@ -1,9 +1,9 @@
 ---
 title: "resultInfo resource type"
-description: "Contains success and failure-specific result information."
+description: Provides success and failure-specific result information."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains success and failure-specific result information. 
+Provides success and failure-specific result information. 
 
 The code specifies whether the result is a generic success or failure. 
 
@@ -30,7 +30,7 @@ The subcodes provide supplementary information related to the type of success or
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

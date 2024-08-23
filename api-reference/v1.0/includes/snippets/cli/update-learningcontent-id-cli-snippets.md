@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc employee-experience learning-providers learning-contents patch --learning-provider-id {learningProvider-id} --learning-content-id {learningContent-id} --body '{\
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",\
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",\
@@ -15,6 +15,7 @@ mgc employee-experience learning-providers learning-contents patch --learning-pr
     "numberOfPages": 9,\
     "duration": "PT20M",\
     "format": "Book",\
+    "level": "Beginner",\
     "createdDateTime": "2018-01-01T00:00:00Z",\
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",\
     "contributors": [\

@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.identityGovernance().privilegedAccess().group().assignmentScheduleRequests("f4b57a8c-da56-4ae0-8aef-65c3a043dab4")
-	.cancel()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.identityGovernance().privilegedAccess().group().assignmentScheduleRequests().byPrivilegedAccessGroupAssignmentScheduleRequestId("{privilegedAccessGroupAssignmentScheduleRequest-id}").cancel().post();
+
 
 ```

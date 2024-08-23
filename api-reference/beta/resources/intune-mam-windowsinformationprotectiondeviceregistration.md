@@ -2,18 +2,18 @@
 title: "windowsInformationProtectionDeviceRegistration resource type"
 description: "Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDeviceRegistration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices.
 
@@ -25,7 +25,7 @@ Represents device registration records for Bring-Your-Own-Device(BYOD) Windows d
 |[Create windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Create a new [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.|
 |[Delete windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|None|Deletes a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).|
 |[Update windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Update the properties of a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.|
-|[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|None|Not yet documented|
+|[wipe action](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|None||
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "call resource type"
 description: "The **call** resource is created when there's an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
 author: "ananmishr"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -28,41 +28,45 @@ Becomes:
 ```http
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
-
+> [!NOTE]
+> The following known issues are associated with this resource:
+> - [Webhook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752)
+> - [Support for multi-endpoint use case in delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894)
 
 ## Methods
 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
-| [Delete](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
-| [KeepAlive](../api/call-keepalive.md)                             | None                                                  | Ensure that the call remains active.
+| [Delete/hang up](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
+| [Keep alive](../api/call-keepalive.md)                             | None                                                  | Ensure that the call remains active.
 | **Call Handling**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | None                                                            | Answer an incoming call.                                                        |
 | [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
 | [Redirect](../api/call-redirect.md)                                | None                                                            | Redirect an incoming call.                                                      |
 | [Transfer](../api/call-transfer.md)                                | None                                                            | Transfer a call                                                                 |
 | **Group Calls**                                                    |                                                             |                                                                            |
-| [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
+| [List](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
 | [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
 | [Mute all participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
 | [Mute participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
-| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Create a new **audioRoutingGroup** by posting to the audioRoutingGroups collection. |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get an **audioRoutingGroup** object collection.                                      |
+| [Create](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Create a new **audioRoutingGroup** by posting to the audioRoutingGroups collection. |
+| [List audio routing groups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get an **audioRoutingGroup** object collection.                                      |
 | [Add large gallery view](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | Add the large gallery view to a call.                                      |
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
-| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Play prompt in the call.                                                        |
-| [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Records a short audio response from the caller.                                        |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | Cancel media processing.                                                        |
-| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Subscribe to DTMF tones.                                                        |
+| [Play prompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Play prompt in the call.                                                        |
+| [Record response](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Records a short audio response from the caller.                                        |
+| [Cancel media processing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | Cancel media processing.                                                        |
+| [Subscribe to tone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Subscribe to DTMF tones.                                                        |
+| [Send DTMF tone](../api/call-senddtmftones.md)                      | [commsOperation](commsoperation.md)                         | Send DTMF tones in a call.                                                      |
 | **Self Participant Operations**                                    |                                                             |                                                                                 |
-| [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
-| [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Unmute self in the call.                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | None                                                        | Start and stop sharing screen in the call.                                      |
+| [Mute application](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
+| [Unmute application](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Unmute self in the call.                                                        |
+| [Change screen sharing role](../api/call-changescreensharingrole.md)  | None                                                        | Start and stop sharing screen in the call.                                      |
 | **Recording Operations**                                           |                                                             |                                              |
-| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
+| [Update recording status](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
 | **Logging Operations**                                           |                                                             |                                              |
-| [Log device quality data](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Log video teleconferencing device quality data.|
+| [Log teleconference device quality data](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Log video teleconferencing device quality data.|
 
 ## Properties
 
@@ -83,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting. Read-only.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo](tokenmeetinginfo.md), or [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | The meeting information. Required information for meeting scenarios.                                                                                                              |
 |transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | The transcription information for the call. Read-only.                           |
-myParticipantId     | String                                                                                                   | Read-only.                                                                                                                                                                        |
+| myParticipantId     | String                                                                                                   | Read-only.                                                                                                                                                                        |
 | requestedModalities | modality collection                                                                                      | The list of requested modalities. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example, the result can hold termination reason. Read-only.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout in seconds for outgoing peer to peer calls. The max value for this attribute is 115 seconds.                                                                                        |
@@ -107,7 +111,7 @@ myParticipantId     | String                                                    
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -161,7 +165,6 @@ Here's a JSON representation of the resource.
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
-  "replacesContext": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,

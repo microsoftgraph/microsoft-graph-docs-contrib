@@ -3,7 +3,8 @@ title: "Microsoft Entra authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 ms.localizationpriority: medium
 author: "jpettere"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 05/22/2023
 ---
@@ -12,7 +13,7 @@ ms.date: 05/22/2023
 
 Namespace: microsoft.graph
 
-Authentication methods policies define [authentication methods](/azure/active-directory/authentication/concept-authentication-methods) and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Microsoft Entra ID. Authentication methods policies that can be managed in Microsoft Graph include FIDO2 Security Keys and Passwordless Phone Sign-in with Microsoft Authenticator app.
+Authentication methods policies define [authentication methods](authenticationmethods-overview.md) and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Microsoft Entra ID. Authentication methods policies that can be managed in Microsoft Graph include FIDO2 Security Keys and Passwordless Phone Sign-in with Microsoft Authenticator app.
 
 The authentication method policies APIs are used to manage policy settings. For example:
 

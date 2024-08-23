@@ -3,7 +3,7 @@ title: "watermarkProtectionValues resource type"
 description: "Indicates whether a watermark is enabled for different content types in a meeting."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ These flags indicate that a watermark is enabled for this particular meeting. An
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

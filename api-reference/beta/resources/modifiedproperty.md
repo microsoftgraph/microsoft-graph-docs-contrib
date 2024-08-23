@@ -3,7 +3,7 @@ title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Describes the changes performed in the target system.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

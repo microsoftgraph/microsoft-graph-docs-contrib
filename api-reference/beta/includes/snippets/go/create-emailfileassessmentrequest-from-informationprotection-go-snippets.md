@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,11 +15,8 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewThreatAssessmentRequest()
-recipientEmail := "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+recipientEmail := "tifc@contoso.com"
 requestBody.SetRecipientEmail(&recipientEmail) 
 expectedAssessment := graphmodels.BLOCK_THREATEXPECTEDASSESSMENT 
 requestBody.SetExpectedAssessment(&expectedAssessment) 
@@ -25,6 +25,7 @@ requestBody.SetCategory(&category)
 contentData := "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 requestBody.SetContentData(&contentData) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 

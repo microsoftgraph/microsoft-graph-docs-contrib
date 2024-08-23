@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ReportRootGetCredentialUsageSummaryCollectionPage getCredentialUsageSummary = graphClient.reports()
-	.getCredentialUsageSummary(ReportRootGetCredentialUsageSummaryParameterSet
-		.newBuilder()
-		.withPeriod("D30")
-		.build())
-	.buildRequest()
-	.filter("feature eq 'registration'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.reports().getCredentialUsageSummaryWithPeriod("{period}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "feature eq 'registration'";
+});
+
 
 ```

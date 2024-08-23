@@ -4,17 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String applyTo = "applyTo-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook().names("{name}")
-	.range()
-	.clear(WorkbookRangeClearParameterSet
-		.newBuilder()
-		.withApplyTo(applyTo)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.drives.item.items.item.workbook.names.item.range.clear.ClearPostRequestBody clearPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.names.item.range.clear.ClearPostRequestBody();
+clearPostRequestBody.setApplyTo("applyTo-value");
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().byWorkbookNamedItemId("{workbookNamedItem-id}").range().clear().post(clearPostRequestBody);
+
 
 ```

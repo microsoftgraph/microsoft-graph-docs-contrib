@@ -3,7 +3,7 @@ title: "plannerExternalReferences resource type"
 description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It's part of the task details object. The value in the property-value pair is the externalReference object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Properties of an Open Type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

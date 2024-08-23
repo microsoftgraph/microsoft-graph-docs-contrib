@@ -2,8 +2,8 @@
 title: "userExperienceAnalyticsRegressionSummary resource type"
 description: "The user experience analytics Regression Summary."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

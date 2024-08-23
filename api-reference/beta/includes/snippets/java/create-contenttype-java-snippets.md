@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ContentType contentType = new ContentType();
-contentType.name = "docSet";
-contentType.description = "custom docset";
+contentType.setName("docSet");
+contentType.setDescription("custom docset");
 ContentType base = new ContentType();
-base.name = "Document Set";
-base.id = "0x0120D520";
-contentType.base = base;
-contentType.group = "Document Set Content Types";
+base.setName("Document Set");
+base.setId("0x0120D520");
+contentType.setBase(base);
+contentType.setGroup("Document Set Content Types");
+ContentType result = graphClient.sites().bySiteId("{site-id}").contentTypes().post(contentType);
 
-graphClient.sites("{id}").contentTypes()
-	.buildRequest()
-	.post(contentType);
 
 ```

@@ -3,7 +3,7 @@ title: "Update educationOutcome"
 description: "Update the properties of educationOutcome object."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Update the properties of an [educationOutcome](../resources/educationoutcome.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EduAssignments.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationoutcome_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationoutcome-update-permissions.md)]
 
 ## HTTP request
 
@@ -39,11 +36,11 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 The **educationOutcome** object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome you're updating.
 
@@ -100,7 +97,7 @@ The following example shows a request to update a feedback outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/4bca096a-7de3-8675-5e86-2fa149923860/outcomes/ca05367a-b292-42d5-aff7-5d279feeace8
 Content-type: application/json
 
 {
@@ -165,22 +162,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('bf1f1963-05f6-4cba-903c-5892b4ce3bd7')/assignments('db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a')/submissions('4bca096a-7de3-8675-5e86-2fa149923860')/outcomes/$entity",
     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+    "lastModifiedDateTime": "2024-08-14T06:37:17.7703021Z",
     "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+    "publishedFeedback": null,
     "lastModifiedBy": {
+        "application": null,
+        "device": null,
         "user": {
-            "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
         }
     },
     "feedback": {
-        "feedbackDateTime": "2019-07-31T21:10:30.3231461Z",
+        "feedbackDateTime": "2024-08-14T06:37:17.7703021Z",
         "text": {
             "content": "This is feedback for the assignment as a whole.",
             "contentType": "text"
         },
         "feedbackBy": {
+            "application": null,
+            "device": null,
             "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878",
+                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                "displayName": null
             }
         }
     }

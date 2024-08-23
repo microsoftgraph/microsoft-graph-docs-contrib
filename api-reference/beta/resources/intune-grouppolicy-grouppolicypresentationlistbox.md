@@ -2,18 +2,18 @@
 title: "groupPolicyPresentationListBox resource type"
 description: "Represents an ADMX listBox element and an ADMX list element."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationListBox resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Represents an ADMX listBox element and an ADMX list element.
 
@@ -36,7 +36,7 @@ Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-
 |id|String|Key of the entity. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|If this option is specified true the user must specify the registry subkey value and the registry subkey name. The list box shows two columns, one for the name and one for the data. The default value is false.|
-|valuePrefix|String|Not yet documented|
+|valuePrefix|String||
 
 ## Relationships
 |Relationship|Type|Description|

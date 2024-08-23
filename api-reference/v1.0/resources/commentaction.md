@@ -3,7 +3,7 @@ author: daspek
 title: commentAction resource type
 description: The commentAction object provides information about a comment that was made on an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # commentAction resource type
@@ -20,7 +20,7 @@ The **commentAction** resource provides information about a comment [activity][]
 
 | Property name    | Type                       | Description
 |:-----------------|:---------------------------|:-----------------------------
-| isReply          | boolean                    | If true, this activity was a reply to an existing comment thread.
+| isReply          | Boolean                    | If true, this activity was a reply to an existing comment thread.
 | parentAuthor     | [identitySet][]            | The identity of the user who started the comment thread.
 | participants     | [identitySet][] collection | The identities of the users participating in this comment thread.
 

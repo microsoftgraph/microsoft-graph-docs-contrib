@@ -3,7 +3,7 @@ title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -18,13 +18,10 @@ You can set up which entities you want to receive Shifts synchronous change noti
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "workforceintegration_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workforceintegration-post-permissions.md)]
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -40,7 +37,7 @@ POST /teamwork/workforceIntegrations
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -196,7 +193,7 @@ The interaction between Shifts app and workforce integration endpoints will foll
 
 ### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read

@@ -2,18 +2,18 @@
 title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsFeatureUpdateProfile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Windows Feature Update Profile
 
@@ -25,7 +25,7 @@ Windows Feature Update Profile
 |[Create windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-create.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.|
 |[Delete windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|None|Deletes a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
 |[Update windowsFeatureUpdateProfile](../api/intune-softwareupdate-windowsfeatureupdateprofile-update.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Update the properties of a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.|
-|[assign action](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -40,6 +40,8 @@ Windows Feature Update Profile
 |roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 |endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
+|installLatestWindows10OnWindows11IneligibleDevice|Boolean|If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11|
+|installFeatureUpdatesOptional|Boolean|If true, the Windows 11 update will become optional|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,6 +75,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "deployableContentDisplayName": "String",
-  "endOfSupportDate": "String (timestamp)"
+  "endOfSupportDate": "String (timestamp)",
+  "installLatestWindows10OnWindows11IneligibleDevice": true,
+  "installFeatureUpdatesOptional": true
 }
 ```

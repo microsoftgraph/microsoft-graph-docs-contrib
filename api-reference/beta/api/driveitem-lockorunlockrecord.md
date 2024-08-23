@@ -3,7 +3,7 @@ title: "driveItem: lockOrUnlockRecord"
 description: "Lock or unlock a retention label on a driveItem that classifies content as records."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -17,19 +17,16 @@ Lock or unlock a retention label on a [driveItem](../resources/driveitem.md) tha
 
 For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
-For information about how you can lock and unlock retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning).
+For more information about how you can lock and unlock retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All    |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All    |
+<!-- { "blockType": "permissions", "name": "driveitem_lockorunlockrecord" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-lockorunlockrecord-permissions.md)]
 
 ## HTTP request
 
@@ -39,14 +36,14 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 PATCH /driveitem/retentionLabel
-PATCH /drives/{drive-id}/items/{id}/retentionLabel
+PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -65,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 
 ### Request
 
-The following shows an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +119,7 @@ Content-Type: application/json
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

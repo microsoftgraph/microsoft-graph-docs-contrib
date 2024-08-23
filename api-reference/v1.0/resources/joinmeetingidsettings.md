@@ -3,7 +3,7 @@ title: "joinMeetingIdSettings resource type"
 description: "Specifies the joinMeetingId, the meeting passcode, and the requirement for the passcode."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Specifies the **joinMeetingId**, the meeting passcode, and the requirement for t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.joinMeetingIdSettings"

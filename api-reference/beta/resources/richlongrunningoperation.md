@@ -3,7 +3,7 @@ title: "richLongRunningOperation resource type"
 description: "Contains metadata about long running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -18,9 +18,9 @@ Contains metadata about long running operation.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List richLongRunningOperations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a site.|
-|[List richLongRunningOperations in a list](../api/list-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a list.|
-|[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Read the properties of a [richLongRunningOperation](../resources/richlongrunningoperation.md) object.|
+|[List operations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a site.|
+|[List operations in a list](../api/list-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a list.|
+|[Get operation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Read the properties of a [richLongRunningOperation](../resources/richlongrunningoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Contains metadata about long running operation.
 |percentageComplete|Int32|A value between 0 and 100 that indicates the progress of the operation.|
 |resourceId|String|A unique identifier for the result.|
 |resourceLocation|String|Canonical url of the resource.|
-|status|longRunningOperationStatus|Status of the opertaion.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|Status of the opertaion.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Detail about the status value.|
 |type|String| Type of the operation.|
 
@@ -40,7 +40,7 @@ Contains metadata about long running operation.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

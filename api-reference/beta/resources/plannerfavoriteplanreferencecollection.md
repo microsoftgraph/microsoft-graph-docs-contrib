@@ -3,7 +3,7 @@ title: "plannerFavoritePlanReferenceCollection resource type"
 description: " the value is the plannerFavoritePlanReference object."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -19,17 +19,22 @@ The **plannerFavoritePlanReferenceCollection** resource represents the collectio
 ## Properties
 You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"
+  "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection",
+  "openType": true
 }-->
 
 ```json

@@ -2,8 +2,8 @@
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "authenticationAppDeviceDetails resource type"
 description: "Provides details about the app and device used during the Microsoft Entra authentication step."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Provides details about the app and device used during the Microsoft Entra authen
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"

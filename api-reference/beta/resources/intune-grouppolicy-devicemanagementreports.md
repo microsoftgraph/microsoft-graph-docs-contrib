@@ -2,18 +2,18 @@
 title: "deviceManagementReports resource type"
 description: "Singleton entity that acts as a container for all reports functionality."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementReports resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Singleton entity that acts as a container for all reports functionality.
 
@@ -22,7 +22,7 @@ Singleton entity that acts as a container for all reports functionality.
 |:---|:---|:---|
 |[Get deviceManagementReports](../api/intune-grouppolicy-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-grouppolicy-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md) object.|
-|[getGroupPolicySettingsDeviceSettingsReport action](../api/intune-grouppolicy-devicemanagementreports-getgrouppolicysettingsdevicesettingsreport.md)|Stream|Not yet documented|
+|[getGroupPolicySettingsDeviceSettingsReport action](../api/intune-grouppolicy-devicemanagementreports-getgrouppolicysettingsdevicesettingsreport.md)|Stream||
 
 ## Properties
 |Property|Type|Description|

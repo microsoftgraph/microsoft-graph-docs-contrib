@@ -3,7 +3,7 @@ title: "Create inboundFileFlow"
 description: "Create a new inboundFileFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -15,23 +15,14 @@ Namespace: microsoft.graph.industryData
 
 Create a new [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
-The following prerequisite resources are required when you create an **inboundFileFlow**:
-
-- [dataConnector](../resources/industrydata-industrydataconnector.md)
-- [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
-- [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | IndustryData-InboundFlow.ReadWrite.All      |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | IndustryData-InboundFlow.ReadWrite.All      |
+<!-- { "blockType": "permissions", "name": "industrydata_inboundfileflow_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
 
 ## HTTP request
 
@@ -48,23 +39,23 @@ POST /external/industryData/inboundFlows
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
+In the request body, supply a JSON representation of the [inboundFileFlow](../resources/industrydata-inboundfileflow.md) object.
 
-You can specify the following properties when you create an **inboundFileFlow**.
+The following table lists the required and optional properties for creating an **inboundFileFlow** object.
 
 | Property           | Type                                                                              | Description                                                                                                                                                                                                                                          |
 | :----------------- | :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The broad category of data that is being imported by this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
+| dataDomain         | microsoft.graph.industryData.inboundDomain                                                                     | The category of data that is being imported in this flow. The possible values are: `educationRostering`, `unknownFutureValue`. Required.                                                                                                       |
 | displayName        | String                                                                            | The name of the process. Inherited from [industryDataActivity](../resources/industrydata-industrydataactivity.md). Required.                                                                                                                         |
 | effectiveDateTime  | DateTimeOffset                                                                    | The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | expirationDateTime | DateTimeOffset                                                                    | The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.   |
-| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector in the context of which this flow pulls in data from a source system. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
-| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year that the data being brought in via this flow applies to. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
+| dataConnector      | [microsoft.graph.industryData.industryDataConnector](../resources/industrydata-industrydataconnector.md)       | The data connector to the source system from where this flow gets its data. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                     |
+| year               | [microsoft.graph.industryData.yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md) | The year associated to the data that this flow brings in. Inherited from [inboundFlow](../resources/industrydata-inboundflow.md).                                                                                                            |
 
 ## Response
 
@@ -74,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

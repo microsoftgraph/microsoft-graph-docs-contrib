@@ -3,7 +3,7 @@ title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
 author: "anthona"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ You can get this information via the People API. For examples, see the [Examples
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | People.Read, People.Read.All    |
-|Delegated (personal Microsoft account) | People.Read    |
-|Application | People.Read.All |
+<!-- { "blockType": "permissions", "name": "user_list_people" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-people-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +50,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept | application/json |
 
 ## Request body
@@ -202,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - For details about the People API and more examples, see [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

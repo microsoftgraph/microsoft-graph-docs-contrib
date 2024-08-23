@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.admin.windows.updates.deploymentaudiences.item.microsoft_graph_windows_updates_update_audience.update_audience_post_request_body import UpdateAudiencePostRequestBody
+from msgraph_beta.generated.models.windows_updates.updatable_asset import UpdatableAsset
+from msgraph_beta.generated.models.windows_updates.azure_a_d_device import AzureADDevice
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for a user as defined in the userRegistrationDetails object."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -13,20 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.
+Get a list of the authentication methods registered for a user  as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object. This method doesn't work for disabled users.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AuditLog.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|AuditLog.Read.All|
+<!-- { "blockType": "permissions", "name": "authenticationmethodsroot_list_userregistrationdetails" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethodsroot-list-userregistrationdetails-permissions.md)]
+
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -40,13 +38,23 @@ GET /reports/authenticationMethods/userRegistrationDetails
 
 ## Optional query parameters
 
-This method supports only the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [userRegistrationDetails](../resources/userregistrationdetails.md) resource.
+
+| Property          | Description                                                                                                                     | Example                                                                   |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
+| isMfaCapable      | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). Supported filter operators: `eq`.| `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaCapable eq true`           |
+| isMfaRegistered   | Filter for users who are registered for MFA. Supported filter operators are: `eq`.                                              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaRegistered eq true`        |
+| isSsprEnabled     | Filter for users who have been enabled for SSPR. Supported filter operators are: `eq`.                                          | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprEnabled eq true`.         |
+| isSsprRegistered  | Filter for users who have registered for self-service password reset (SSPR). Supported filter operators are: `eq`.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprRegistered eq true`       |
+| methodsRegistered | Filter by the authentication methods used during registration. Supported filter operators are: `eq`.                            | `/reports/authenticationMethods/userRegistrationDetails?$filter=methodsRegistered/any(x:x eq 'email')`   |
+| userDisplayName   | Filter by user name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.                        | `/reports/authenticationMethods/userRegistrationDetails?$filter=userDisplayName eq 'Contoso'`   |
+| userPrincipalName | Filter by user principal name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=userPrincipalName eq 'Contoso'` |
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Remove-MgDeviceRegisteredUserByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+Remove-MgDeviceRegisteredUserDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
 
 ```

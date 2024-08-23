@@ -3,7 +3,7 @@ title: "expirationPattern resource type"
 description: "The expiration pattern in a request schedule can be included in an access package assignment request and is present in an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -32,9 +32,13 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |afterDateTime|2|Access will expire after a specified date and time.|
 |afterDuration|3|Access will expire after a specified duration relative to access being granted. Required when the **duration** property is specified.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

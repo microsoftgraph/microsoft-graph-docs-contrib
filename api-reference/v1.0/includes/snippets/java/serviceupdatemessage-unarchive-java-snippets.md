@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> messageIdsList = new LinkedList<String>();
-messageIdsList.add("MC172851");
-messageIdsList.add("MC167983");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.admin().serviceAnnouncement().messages()
-	.unarchive(ServiceUpdateMessageUnarchiveParameterSet
-		.newBuilder()
-		.withMessageIds(messageIdsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.admin.serviceannouncement.messages.unarchive.UnarchivePostRequestBody unarchivePostRequestBody = new com.microsoft.graph.admin.serviceannouncement.messages.unarchive.UnarchivePostRequestBody();
+LinkedList<String> messageIds = new LinkedList<String>();
+messageIds.add("MC172851");
+messageIds.add("MC167983");
+unarchivePostRequestBody.setMessageIds(messageIds);
+var result = graphClient.admin().serviceAnnouncement().messages().unarchive().post(unarchivePostRequestBody);
+
 
 ```

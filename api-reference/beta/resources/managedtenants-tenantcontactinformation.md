@@ -3,7 +3,7 @@ title: "tenantContactInformation resource type"
 description: "Represents a contact at a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents a contact at a managed tenant.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"

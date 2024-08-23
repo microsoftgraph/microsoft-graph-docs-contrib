@@ -3,7 +3,7 @@ title: printTaskStatus resource type
 description: Represents the current execution status of a printTask.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -29,8 +29,14 @@ Represents the current execution status of a [printTask](printtask.md).
 |aborted|3|Task execution was aborted.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printTaskStatus"

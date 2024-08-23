@@ -2,18 +2,18 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # managementAgentType enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Management agent type.
 
@@ -32,5 +32,7 @@ Management agent type.
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
-|msSense|1024|Not yet documented|
+|msSense|1024||
 |intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|
+|google|8192|Indicates the management agent to manage the device is Google.|
+|unknownFutureValue|8193|Evolvable enumeration sentinel value. Do not use.|

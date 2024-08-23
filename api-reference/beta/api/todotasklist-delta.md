@@ -3,7 +3,7 @@ title: "todoTaskList: delta"
 description: "Get a set of todoTaskList resources that have been added, deleted, or removed in Microsoft To Do."
 ms.localizationpriority: medium
 author: "avijityadav"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -21,14 +21,11 @@ you can query for incremental changes in the **todoTaskList**. This allows you t
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
-|Application|Tasks.Read.All, Tasks.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "todotasklist_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotasklist-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +57,7 @@ _id_ property is always returned.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
@@ -113,7 +110,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 

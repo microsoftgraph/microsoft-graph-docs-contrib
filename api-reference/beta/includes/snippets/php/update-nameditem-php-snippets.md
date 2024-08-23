@@ -5,15 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookNamedItem;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WorkbookNamedItem();
 $requestBody->setType('type-value');
 $requestBody->setScope('scope-value');
 $requestBody->setComment('comment-value');
-$value = new Json();
+$value = new UntypedNode();
 $requestBody->setValue($value);
 $requestBody->setVisible(true);
 

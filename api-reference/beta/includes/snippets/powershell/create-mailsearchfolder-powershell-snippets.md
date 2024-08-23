@@ -11,9 +11,9 @@ $params = @{
 	displayName = "Weekly digests"
 	includeNestedFolders = $true
 	sourceFolderIds = @(
-		"AQMkADYAAAIBDAAAAA=="
-	)
-	filterQuery = "contains(subject, 'weekly digest')"
+	"AQMkADYAAAIBDAAAAA=="
+)
+filterQuery = "contains(subject, 'weekly digest')"
 }
 
 # A UPN can also be used as -UserId.

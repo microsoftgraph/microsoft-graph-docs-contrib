@@ -6,18 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.GetMailTips;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.GetMailTips.GetMailTipsPostRequestBody
+var requestBody = new GetMailTipsPostRequestBody
 {
 	EmailAddresses = new List<string>
 	{
-		"danas@contoso.onmicrosoft.com",
-		"fannyd@contoso.onmicrosoft.com",
+		"danas@contoso.com",
+		"fannyd@contoso.com",
 	},
 	MailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
 };
-var result = await graphClient.Me.GetMailTips.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.GetMailTips.PostAsGetMailTipsPostResponseAsync(requestBody);
 
 
 ```

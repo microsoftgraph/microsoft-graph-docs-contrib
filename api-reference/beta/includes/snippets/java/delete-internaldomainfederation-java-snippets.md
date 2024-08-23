@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.domains("contoso.com").federationConfiguration("96db02e2-80c1-5555-bc3a-de92ffb8c5be")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.domains().byDomainId("{domain-id}").federationConfiguration().byInternalDomainFederationId("{internalDomainFederation-id}").delete();
+
 
 ```

@@ -5,16 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\AuthorityTemplate;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthorityTemplate();
 $requestBody->setOdataType('#microsoft.graph.security.authorityTemplate');
-$requestBody->setDisplayName('String');
-$createdBy = new IdentitySet();
-$createdBy->setOdataType('microsoft.graph.identitySet');
-$requestBody->setCreatedBy($createdBy);
+$requestBody->setDisplayName('Business');
 
 $result = $graphServiceClient->security()->labels()->authorities()->post($requestBody)->wait();
 

@@ -3,7 +3,7 @@ title: "Get page"
 description: "Retrieve the properties and relationships of a page object."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -35,13 +35,10 @@ The `includeIDs=true` query option is used to [update pages](../api/page-update.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite    |
-|Application | Notes.Read.All, Notes.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "page_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/page-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +56,7 @@ The default response expands `parentSection` and selects the section's `id`, `na
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept | string | `application/json` |
 
 ## Request body
@@ -70,7 +67,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and the [page](../resources/page.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
  <!-- { "blockType": "request", "name": "page_get" } -->
 
@@ -113,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown Here's truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown Here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": "true",

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Me.Messages.Item.Reply;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Reply.ReplyPostRequestBody
+var requestBody = new ReplyPostRequestBody
 {
 	Message = new Message
 	{
@@ -18,7 +20,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Reply.ReplyPostReque
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "samanthab@contoso.onmicrosoft.com",
+					Address = "samanthab@contoso.com",
 					Name = "Samantha Booth",
 				},
 			},
@@ -26,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Reply.ReplyPostReque
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "randiw@contoso.onmicrosoft.com",
+					Address = "randiw@contoso.com",
 					Name = "Randi Welch",
 				},
 			},
@@ -34,6 +36,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Reply.ReplyPostReque
 	},
 	Comment = "Samantha, Randi, would you name the group please?",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Messages["{message-id}"].Reply.PostAsync(requestBody);
 
 

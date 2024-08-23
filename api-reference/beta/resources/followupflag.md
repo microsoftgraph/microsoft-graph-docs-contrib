@@ -3,7 +3,7 @@ title: "followupFlag resource type"
 description: "Allows setting a flag for the user to follow up on an item later. Supported items include message and contact."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "SuryaLashmiS"
 ---
 
@@ -25,7 +25,7 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

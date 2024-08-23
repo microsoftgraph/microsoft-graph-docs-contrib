@@ -3,7 +3,7 @@ title: "Update tiIndicator"
 description: "Update the properties of a tiIndicator object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Update the properties of a [tiIndicator](../resources/tiindicator.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+<!-- { "blockType": "permissions", "name": "tiindicator_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/tiindicator-update-permissions.md)]
 
 ## HTTP request
 
@@ -79,7 +76,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 
 #### Request
 
-Here's an example of the request without the `Prefer` header.
+The following example shows a request without the `Prefer` header.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,7 +129,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -146,7 +143,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's an example of the request that includes the `Prefer` header.
+The following example shows a request that includes the `Prefer` header.
 
 
 # [HTTP](#tab/http)
@@ -203,7 +200,7 @@ Prefer: return=representation
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability.

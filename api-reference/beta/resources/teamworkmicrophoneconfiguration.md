@@ -3,7 +3,7 @@ title: "teamworkMicrophoneConfiguration resource type"
 description: "Represents the details about the microphone configuration for a Microsoft Teams Rooms device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents the details about the microphone configuration for a Microsoft Teams 
 |microphones|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|A collection of microphones.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkMicrophoneConfiguration"

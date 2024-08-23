@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.call_records.item.call_record_item_request_builder import CallRecordItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = CallRecordItemRequestBuilder.CallRecordItemRequestBuilderGetQuery
 		expand = ["sessions($expand=segments)"],
 )
 
-request_configuration = CallRecordItemRequestBuilder.CallRecordItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

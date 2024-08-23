@@ -2,8 +2,9 @@
 title: "Get emailAuthenticationMethod"
 description: "Read the properties and relationships of an emailAuthenticationMethod object."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -14,13 +15,13 @@ Namespace: microsoft.graph
 
 Retrieve a user's single [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions acting on self
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
@@ -28,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ### Permissions acting on other users
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
@@ -39,22 +40,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+The ID of the email authentication method, referenced by `{emailMethods-id}`, is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.
+
 Get details of your own email authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /me/authentication/emailMethods/{id}
+GET /me/authentication/emailMethods/{emailMethods-id}
 ```
 
 Get details of your own or another user's email authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/emailMethods/{emailMethods-id}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

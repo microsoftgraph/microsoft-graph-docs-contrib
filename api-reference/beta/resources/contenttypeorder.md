@@ -4,7 +4,7 @@ description: "Specifies in which order a content type appears in the selection U
 title: "contentTypeOrder resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentTypeOrder resource type
@@ -24,7 +24,7 @@ Specifies in which order a [contentType](contenttype.md)  appears in the selecti
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 

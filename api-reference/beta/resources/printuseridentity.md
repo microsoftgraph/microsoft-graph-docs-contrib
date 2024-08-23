@@ -3,7 +3,7 @@ title: printUserIdentity resource type
 description: Represents a user identity within the Universal Print service. Maps to a Microsoft Entra user.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents a user identity within the Universal Print service. Maps to an [Micro
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

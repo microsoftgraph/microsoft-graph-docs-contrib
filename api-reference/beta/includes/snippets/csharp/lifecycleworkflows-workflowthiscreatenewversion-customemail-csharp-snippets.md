@@ -6,9 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion;
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion.CreateNewVersionPostRequestBody
+var requestBody = new CreateNewVersionPostRequestBody
 {
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -28,18 +31,18 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 			"isSchedulingEnabled" , false
 		},
 		{
-			"executionConditions" , new Microsoft.Graph.Beta.Models.IdentityGovernance.TriggerAndScopeBasedConditions
+			"executionConditions" , new TriggerAndScopeBasedConditions
 			{
 				OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-				Scope = new Microsoft.Graph.Beta.Models.IdentityGovernance.RuleBasedSubjectSet
+				Scope = new RuleBasedSubjectSet
 				{
 					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
 					Rule = "(department eq 'Marketing')",
 				},
-				Trigger = new Microsoft.Graph.Beta.Models.IdentityGovernance.TimeBasedAttributeTrigger
+				Trigger = new TimeBasedAttributeTrigger
 				{
 					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+					TimeBasedAttribute = WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
 					OffsetInDays = 0,
 				},
 			}
@@ -47,52 +50,94 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 		{
 			"tasks" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					ContinueOnError = false,
-					Description = "Enable user account in the directory",
-					DisplayName = "Enable User Account",
-					IsEnabled = true,
-					TaskDefinitionId = "6fc52c9d-398b-4305-9763-15f42c1676fc",
-					Arguments = new List<object>
 					{
+						"continueOnError", new UntypedBoolean(false)
 					},
-				},
-				new 
+					{
+						"description", new UntypedString("Enable user account in the directory")
+					},
+					{
+						"displayName", new UntypedString("Enable User Account")
+					},
+					{
+						"isEnabled", new UntypedBoolean(true)
+					},
+					{
+						"taskDefinitionId", new UntypedString("6fc52c9d-398b-4305-9763-15f42c1676fc")
+					},
+					{
+						"arguments", new UntypedArray(new List<UntypedNode>
+						{
+						})
+					},
+				}),
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					ContinueOnError = false,
-					Description = "Send welcome email to new hire",
-					DisplayName = "Send Welcome Email",
-					IsEnabled = true,
-					TaskDefinitionId = "70b29d51-b59a-4773-9280-8841dfd3f2ea",
-					Arguments = new List<object>
 					{
-						new 
-						{
-							Name = "cc",
-							Value = "1baa57fa-3c4e-4526-ba5a-db47a9df95f0",
-						},
-						new 
-						{
-							Name = "customSubject",
-							Value = "Welcome to the organization {{userDisplayName}}!",
-						},
-						new 
-						{
-							Name = "customBody",
-							Value = "Welcome to our organization {{userGivenName}}!",
-						},
-						new 
-						{
-							Name = "locale",
-							Value = "en-us",
-						},
+						"continueOnError", new UntypedBoolean(false)
 					},
-				},
+					{
+						"description", new UntypedString("Send welcome email to new hire")
+					},
+					{
+						"displayName", new UntypedString("Send Welcome Email")
+					},
+					{
+						"isEnabled", new UntypedBoolean(true)
+					},
+					{
+						"taskDefinitionId", new UntypedString("70b29d51-b59a-4773-9280-8841dfd3f2ea")
+					},
+					{
+						"arguments", new UntypedArray(new List<UntypedNode>
+						{
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"name", new UntypedString("cc")
+								},
+								{
+									"value", new UntypedString("1baa57fa-3c4e-4526-ba5a-db47a9df95f0")
+								},
+							}),
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"name", new UntypedString("customSubject")
+								},
+								{
+									"value", new UntypedString("Welcome to the organization {{userDisplayName}}!")
+								},
+							}),
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"name", new UntypedString("customBody")
+								},
+								{
+									"value", new UntypedString("Welcome to our organization {{userGivenName}}!")
+								},
+							}),
+							new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"name", new UntypedString("locale")
+								},
+								{
+									"value", new UntypedString("en-us")
+								},
+							}),
+						})
+					},
+				}),
 			}
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].MicrosoftGraphIdentityGovernanceCreateNewVersion.PostAsync(requestBody);
 
 

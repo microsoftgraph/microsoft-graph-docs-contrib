@@ -3,7 +3,7 @@ title: "Create plannerRoster"
 description: "Create a new plannerRoster object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Create a new [plannerRoster](../resources/plannerroster.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| Tasks.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "planner_post_rosters" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planner-post-rosters-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /planner/rosters
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -49,6 +46,16 @@ There are no writable properties on [plannerRoster](../resources/plannerroster.m
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
+
+This method fails with a `403 Forbidden` response code in the following situations. The **code** property in the error response indicates the specific error.
+
+| Description | Code property value |
+|:---|:---|
+|If labels are mandatory for the user and the created roster has no sensitivity label, the request fails.|`sensitivityLabelsAreMandatory`|
+|If the roster is created with guest members initially added, but the proposed sensitivity label disallows the addition of guests, the request fails.|`addingGuestUsersProhibitedByLabel`|
+|If the provided label doesn't have the correct tenant ID, the request fails.|`tenantIdIsIncorrect`|
+
+For more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 

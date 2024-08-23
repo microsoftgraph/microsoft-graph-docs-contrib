@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.privileged_access_group_eligibility_schedule_request import PrivilegedAccessGroupEligibilityScheduleRequest
+from msgraph_beta.generated.models.privileged_access_group_relationships import PrivilegedAccessGroupRelationships
+from msgraph_beta.generated.models.schedule_request_actions import ScheduleRequestActions
+from msgraph_beta.generated.models.request_schedule import RequestSchedule
+from msgraph_beta.generated.models.expiration_pattern import ExpirationPattern
+from msgraph_beta.generated.models.expiration_pattern_type import ExpirationPatternType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

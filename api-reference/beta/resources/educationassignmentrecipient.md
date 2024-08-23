@@ -3,7 +3,7 @@ title: "educationAssignmentRecipient resource type"
 description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -21,6 +21,11 @@ assignment should be assigned to when the assignment is published.
 The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) and [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) resources are subclasses of this superclass.
 
 ## Properties
+
+None.
+
+## Relationships
+
 None.
 
 <!-- {

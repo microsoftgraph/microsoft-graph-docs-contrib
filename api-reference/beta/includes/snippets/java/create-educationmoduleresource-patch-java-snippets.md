@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationModuleResource educationModuleResource = new EducationModuleResource();
 EducationResource resource = new EducationResource();
-resource.displayName = "new pdf file patched.pdf";
-educationModuleResource.resource = resource;
+resource.setDisplayName("new pdf file patched.pdf");
+educationModuleResource.setResource(resource);
+EducationModuleResource result = graphClient.education().classes().byEducationClassId("{educationClass-id}").modules().byEducationModuleId("{educationModule-id}").resources().byEducationModuleResourceId("{educationModuleResource-id}").patch(educationModuleResource);
 
-graphClient.education().classes("0b78e924-9623-49d8-b444-23bfabafa4fe").modules("fa1f6b67-7da6-458d-82fd-0d671df7bc31").resources("2fb5e262-611b-4672-8f55-1236b7f2804a")
-	.buildRequest()
-	.patch(educationModuleResource);
 
 ```

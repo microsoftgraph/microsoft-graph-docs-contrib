@@ -3,8 +3,10 @@ title: "Microsoft Entra authentication strengths API overview"
 description: "Authentication strengths are sets of authentication method combinations that determine which methods your users can use to authenticate to access a resource."
 ms.localizationpriority: medium
 author: "InbarckMS"
-ms.prod: "identity-and-sign-in"
-doc_type: "conceptualPageType"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
+doc_type: conceptualPageType
+ms.topic: overview
 ms.date: 03/13/2023
 ---
 

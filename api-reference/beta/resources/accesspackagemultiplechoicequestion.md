@@ -3,7 +3,7 @@ title: "accessPackageMultipleChoiceQuestion resource type"
 description: "Subclass of accessPackageQuestion that has multiple choice as the question's answer format"
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"

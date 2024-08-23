@@ -3,7 +3,7 @@ title: "requestorManager complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -25,10 +25,13 @@ It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#mic
 | isBackup | Boolean | For a manager in an approval stage, indicates whether the manager is a backup fallback approver. |
 |managerLevel | Int32 | The hierarchical level of the manager with respect to the requestor. For example, the direct manager of a requestor would have a managerLevel of 1, while the manager of the requestor's manager would have a managerLevel of 2. Default value for managerLevel is 1. Possible values for this property range from 1 to 2. |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

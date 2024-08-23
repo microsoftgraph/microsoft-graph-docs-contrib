@@ -15,6 +15,8 @@ $params = @{
 			id = "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4"
 		}
 	}
+	deploymentSettings = @{
+	}
 	schedule = @{
 		startDateTime = "String (timestamp)"
 		gradualRollout = @{

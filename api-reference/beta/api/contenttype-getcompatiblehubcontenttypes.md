@@ -3,7 +3,7 @@ title: "contentType: getCompatibleHubContentTypes"
 description: "Get compatible content types in content type hub that can be added to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ This method is part of the content type publishing changes to optimize the synci
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+<!-- { "blockType": "permissions", "name": "contenttype_getcompatiblehubcontenttypes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contenttype-getcompatiblehubcontenttypes-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

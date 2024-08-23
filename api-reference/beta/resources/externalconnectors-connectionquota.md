@@ -3,7 +3,7 @@ title: "connectionQuota resource type"
 description: "Represents the connection quota that contains calculated information about the quota utilization of an external connection."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents the [connection](externalconnectors-externalconnection.md) quota that
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get connectionQuota](../api/externalconnectors-connectionquota-get.md) |[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
+| [Get](../api/externalconnectors-connectionquota-get.md) |[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
 
 ## Properties
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

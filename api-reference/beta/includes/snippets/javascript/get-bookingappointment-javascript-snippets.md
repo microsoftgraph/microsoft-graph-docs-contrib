@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let bookingAppointment = await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=')
+let bookingAppointment = await client.api('/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=')
 	.version('beta')
 	.get();
 

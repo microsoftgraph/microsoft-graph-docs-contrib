@@ -2,7 +2,7 @@
 title: "Authorization and the Microsoft Graph Security API"
 description: "The Microsoft Graph Security API supports both application-level and user-delegated authorization. Learn how to manage authorization, register an application, and more."
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ---
 
 # Authorization and the Microsoft Graph Security API

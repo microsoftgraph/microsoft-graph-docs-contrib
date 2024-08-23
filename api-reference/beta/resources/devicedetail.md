@@ -3,31 +3,30 @@ title: "deviceDetail resource type"
 description: "Indicates device details associated with a device used for signing in."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
 # deviceDetail resource type
 
 Namespace: microsoft.graph
-Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Microsoft Entra ID managed.
 
-
+Indicates details of the device used in a sign-in activity. Includes information like device browser and OS info and if the device is Microsoft Entra ID-managed.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|browser|String|Indicates the browser information of the used for signing-in.|
-|deviceId|String|Refers to the UniqueID of the device used for signing-in.|
-|displayName|String|Refers to the name of the device used for signing-in.|
+|browser|String|Indicates the browser information of the used in the sign-in. Populated for devices registered in Microsoft Entra.|
+|deviceId|String|Refers to the unique ID of the device used in the sign-in. Populated for devices registered in Microsoft Entra.|
+|displayName|String|Refers to the name of the device used in the sign-in. Populated for devices registered in Microsoft Entra.|
 |isCompliant|Boolean|Indicates whether the device is compliant or not.|
 |isManaged|Boolean|Indicates if the device is managed or not.|
-|operatingSystem|String|Indicates the OS name and version used for signing-in.|
-|trustType|String|Indicates information on whether the signed-in device is Workplace Joined, AzureAD Joined, Domain Joined. |
+|operatingSystem|String|Indicates the OS name and version used in the sign-in.|
+|trustType|String|Indicates information on whether the device used in the sign-in is workplace-joined, Microsoft Entra-joined, domain-joined.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

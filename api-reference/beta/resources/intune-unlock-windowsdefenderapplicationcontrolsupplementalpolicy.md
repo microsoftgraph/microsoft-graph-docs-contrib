@@ -1,21 +1,21 @@
 ---
 title: "windowsDefenderApplicationControlSupplementalPolicy resource type"
-description: "Not yet documented"
+description: "Intune Unlock Windowsdefenderapplicationcontrolsupplementalpolicy Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsDefenderApplicationControlSupplementalPolicy resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -25,7 +25,7 @@ Not yet documented
 |[Create windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-create.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Create a new [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) object.|
 |[Delete windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-delete.md)|None|Deletes a [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md).|
 |[Update windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-update.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Update the properties of a [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) object.|
-|[assign action](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "List permissionGrantPolicies"
 description: "Retrieve a list of permissionGrantPolicy objects."
 ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -19,13 +19,10 @@ Retrieve the list of [permissionGrantPolicy](../resources/permissiongrantpolicy.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
+<!-- { "blockType": "permissions", "name": "permissiongrantpolicy_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permissiongrantpolicy-list-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
@@ -45,7 +42,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,8 +3,9 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Cancel governanceRoleAssignmentRequest
@@ -20,33 +21,24 @@ Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignment
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Azure resources
 
-| Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_cancel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-cancel-permissions.md)]
 
 <a name='azure-ad'></a>
 
 ### Microsoft Entra ID
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_cancel_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-cancel-2-permissions.md)]
 
 ### Groups
 
-|Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_cancel_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-cancel-3-permissions.md)]
 
 ## Optional query parameters
 This method does **not** support [OData Query Parameters](/graph/query-parameters).
@@ -60,7 +52,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json|
 
 ## Request body
@@ -79,7 +71,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

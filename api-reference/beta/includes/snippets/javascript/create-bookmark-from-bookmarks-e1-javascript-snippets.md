@@ -16,7 +16,7 @@ const bookmark = {
   description: 'Try or buy Contoso for Home or Business and view product information',
   keywords: {
     keywords: ['Contoso', 'install'],
-    reservedKeywords: ['Contoso'],
+    reservedKeywords: ['Unique keyword'],
     matchSimilarKeywords: true
   },
   availabilityStartDateTime: null,

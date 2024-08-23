@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.device_enrollment_windows_hello_for_business_configuration import DeviceEnrollmentWindowsHelloForBusinessConfiguration
+from msgraph.generated.models.windows_hello_for_business_pin_usage import WindowsHelloForBusinessPinUsage
+from msgraph.generated.models.enablement import Enablement
 
 graph_client = GraphServiceClient(credentials, scopes)
 

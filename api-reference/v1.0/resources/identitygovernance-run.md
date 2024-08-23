@@ -3,7 +3,7 @@ title: "run resource type"
 description: "Represents the runs of a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -20,9 +20,9 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List runs](../api/identitygovernance-workflow-list-runs.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get a list of the [run](../resources/identitygovernance-run.md) objects and their properties.|
-|[Get run](../api/identitygovernance-run-get.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Read the properties and relationships of a [run](../resources/identitygovernance-run.md) object.|
-|[summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|Get a summary of workflows runs.|
-|[List task processing results of a run](../api/identitygovernance-run-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskprocessingresult.md)|List task processing results from a run.|
+|[Get runs](../api/identitygovernance-run-get.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Read the properties and relationships of a [run](../resources/identitygovernance-run.md) object.|
+|[Get summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|Get a summary of workflows runs.|
+|[List task processing results](../api/identitygovernance-run-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskprocessingresult.md)|List task processing results from a run.|
 
 ## Properties
 
@@ -52,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

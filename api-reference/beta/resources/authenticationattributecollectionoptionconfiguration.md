@@ -3,7 +3,7 @@ title: "authenticationAttributeCollectionOptionConfiguration resource type"
 description: "Represents the configuration of option values for certain input types on an attribute collection page that is part of a self-service user flow for external identities."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents the option values for certain input types, such as radio buttons, on 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAttributeCollectionOptionConfiguration"

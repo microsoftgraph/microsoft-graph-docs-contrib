@@ -4,7 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.event import Event
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph_beta.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph_beta.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph_beta.generated.models.recurrence_pattern_type import RecurrencePatternType
+from msgraph_beta.generated.models.day_of_week import DayOfWeek
+from msgraph_beta.generated.models.recurrence_range import RecurrenceRange
+from msgraph_beta.generated.models.recurrence_range_type import RecurrenceRangeType
+from msgraph_beta.generated.models.location import Location
+from msgraph_beta.generated.models.attendee import Attendee
+from msgraph_beta.generated.models.email_address import EmailAddress
+from msgraph_beta.generated.models.attendee_type import AttendeeType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -42,7 +56,7 @@ request_body = Event(
 	attendees = [
 		Attendee(
 			email_address = EmailAddress(
-				address = "AdeleV@contoso.onmicrosoft.com",
+				address = "AdeleV@contoso.com",
 				name = "Adele Vance",
 			),
 			type = AttendeeType.Required,

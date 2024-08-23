@@ -3,7 +3,7 @@ title: 'Delete horizontalSection'
 description: 'Delete a horizontal section from a page.'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -17,15 +17,10 @@ Remove a [horizontalSection](../resources/horizontalSection.md) from a [sitePage
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-> **Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "horizontalsection_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/horizontalsection-delete-permissions.md)]
 
 ## HTTP request
 
@@ -39,11 +34,11 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ho
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
@@ -60,10 +55,9 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 ```
 
-ve
 ### Response
 
 <!-- { "blockType": "response" } -->

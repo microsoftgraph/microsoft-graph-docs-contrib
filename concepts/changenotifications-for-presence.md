@@ -3,7 +3,7 @@ title: "Get change notifications for presence updates in Microsoft Teams"
 description: "Use change notifications in Microsoft Graph to subscribe to presence changes for Microsoft Teams users."
 author: "awang119"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ---
 
@@ -11,7 +11,10 @@ ms.custom: "scenarios:getting-started"
 
 Change notifications in Microsoft Graph enable you to subscribe to changes in [user presence](/microsoftteams/presence-admins) information in Microsoft Teams. Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) APIs.
 
-Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/webhooks).
+Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview).
+
+> [!NOTE]
+> Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
 
 ## Permissions
 
@@ -23,7 +26,7 @@ Use webhooks to subscribe to users' presence information and get notifications w
 
 ## Supported resources for presence
 
-Subscriptions have a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](webhooks-with-resource-data.md).
+Subscriptions have a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](change-notifications-with-resource-data.md).
 
 The following table lists the types of presence changes you can subscribe to. For more information, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
@@ -32,9 +35,11 @@ The following table lists the types of presence changes you can subscribe to. Fo
 | Single user presence changes                  | `communications/presences/{id}`                                |Updated                |
 | Bulk user presence changes (maximum 650 user IDs) | `communications/presences?$filter=id in ('{id}', '{id}', ...)` | Updated                |
 
-### Subscribe to presence changes 
+## Subscribe to presence changes 
 
 To subscribe to presence changes, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
+
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
 
 ### Example: Single user presence subscription payloads
 
@@ -74,8 +79,13 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 ## Receive presence event notifications
 
 Change notifications for presence events are triggered when changes to a user's availability and activity are made.
+### Basic presence notifications
 
-### Example: Basic presence notifications
+Basic notifications notify subscribers about the identity of the resource that changed. When you receive this information, you should make a separate GET call to get the details of the data. 
+For basic presence notifications, you receive information about which user's presence changed but no data about the details of user's presence. You can use the [GET presence APIs](/graph/api/presence-get) to discover the state of the user's availability and activity.
+
+#### Payload example
+
 ```json
 {
   "value": [{
@@ -95,16 +105,16 @@ Change notifications for presence events are triggered when changes to a user's 
 }
 ```
 
-### Example: Presence notifications with resource data 
+### Rich presence notifications
 
-Presence notifications with resource data have the following additional properties encrypted in the payload:
-- Availability or base presence information (available, away, busy)
-- Activity or information that’s supplemental to the availability (in a meeting, in call)
+Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers are notified when the user's `Availability` and `Activity` changes in `encryptedContent.data`. For information about subscribing to rich notifications and decrypting data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
-> [Note]:
+> [!NOTE]
 > The availability and activity can be the same value.
 
 For more information about possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
+
+#### Payload example
 
 ```json
 {
@@ -144,7 +154,7 @@ For more information about possible combinations of availability and activity, s
 }
 ```
 
-## See also
+## Related content
 - [Presence](/graph/api/resources/presence)
 - [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
-- [Microsoft Graph API change notifications](/graph/api/resources/webhooks)
+- [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)

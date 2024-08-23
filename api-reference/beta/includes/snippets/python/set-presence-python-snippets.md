@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.presence.set_presence.set_presence_post_request_body import SetPresencePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

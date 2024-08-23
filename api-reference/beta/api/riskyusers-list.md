@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a collection of **ris
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # List riskyUsers
 
@@ -19,13 +19,10 @@ Retrieve the properties and relationships of a collection of **riskyUser** objec
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+<!-- { "blockType": "permissions", "name": "riskyusers_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyusers-list-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -36,12 +33,12 @@ GET /riskyUsers
 GET /identityProtection/riskyUsers
 ```
 ## Optional query parameters
-This method supports `$filter` to customize the query response. See the example later in this topic. 
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The maximum page size with `$top` is 500 objects.
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
@@ -53,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 ### Example 1: List risky users
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +96,7 @@ GET https://graph.microsoft.com/beta/riskyUsers
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -176,7 +173,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

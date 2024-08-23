@@ -3,7 +3,7 @@ title: "Update plannerPlanConfiguration"
 description: "Update the properties of a plannerPlanConfiguration object for a businessScenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -13,19 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object for a [businessScenario](../resources/businessscenario.md).
+Update the properties of a [plannerPlanConfiguration](../resources/plannerplanconfiguration.md) object and its [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection for a [businessScenario](../resources/businessscenario.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|BusinessScenarioConfig.ReadWrite.OwnedBy|
+<!-- { "blockType": "permissions", "name": "plannerplanconfiguration_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/plannerplanconfiguration-update-permissions.md)]
 
 ## HTTP request
 
@@ -50,7 +47,7 @@ PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfig
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -59,8 +56,9 @@ PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfig
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguage|String|The language that should be used for creating plans when no language has been specified. Required.|
-|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|Buckets that will be available in the plan. Required.|
+|defaultLanguage|String|The language that should be used for creating plans when no language has been specified.|
+|buckets|[plannerPlanConfigurationBucketDefinition](../resources/plannerplanconfigurationbucketdefinition.md) collection|Buckets available in the plan.|
+|localizations|[plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) collection|Localized names for the plan configuration.|
 
 ## Response
 
@@ -70,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [plan
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -84,7 +82,6 @@ PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.plannerPlanConfiguration",
   "defaultLanguage": "en-us",
   "buckets": [
     {
@@ -98,6 +95,54 @@ Content-Type: application/json
     },
     {
       "externalBucketId": "returnProcessingBucket"
+    }
+  ],
+  "localizations": [
+    {
+      "id": "en-us",
+      "languageTag": "en-us",
+      "planTitle": "Order Tracking",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "Deliveries"
+        },
+        {
+          "externalBucketId": "storePickupBucket",
+          "name": "Pickup"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Special Orders"
+        },
+        {
+          "externalBucketId": "returnProcessingBucket",
+          "name": "Customer Returns"
+        }
+      ]
+    },
+    {
+      "id": "es-es",
+      "languageTag": "es-es",
+      "planTitle": "Seguimiento de pedidos",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "Entregas"
+        },
+        {
+          "externalBucketId": "storePickupBucket",
+          "name": "Recogida"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Pedidos especiales"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Devoluciones de clientes"
+        }
+      ]
     }
   ]
 }
@@ -167,6 +212,54 @@ Content-Type: application/json
     },
     {
       "externalBucketId": "returnProcessingBucket"
+    }
+  ],
+  "localizations": [
+    {
+      "id": "en-us",
+      "languageTag": "en-us",
+      "planTitle": "Order Tracking",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "Deliveries"
+        },
+        {
+          "externalBucketId": "storePickupBucket",
+          "name": "Pickup"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Special Orders"
+        },
+        {
+          "externalBucketId": "returnProcessingBucket",
+          "name": "Customer Returns"
+        }
+      ]
+    },
+    {
+      "id": "es-es",
+      "languageTag": "es-es",
+      "planTitle": "Seguimiento de pedidos",
+      "buckets": [
+        {
+          "externalBucketId": "deliveryBucket",
+          "name": "Entregas"
+        },
+        {
+          "externalBucketId": "storePickupBucket",
+          "name": "Recogida"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Pedidos especiales"
+        },
+        {
+          "externalBucketId": "specialOrdersBucket",
+          "name": "Devoluciones de clientes"
+        }
+      ]
     }
   ]
 }

@@ -1,9 +1,9 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
-author: "williamlooney"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph.callRecords
 
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_getpstncalls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-getpstncalls-permissions.md)]
 
 ## HTTP request
 
@@ -55,20 +52,20 @@ The following table shows the parameters that can be used with this function.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
 
-If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If there are more than 1,000 entries in the date range, the body also includes an `@odata.nextLink` with a URL to query the next page of call entries. The last page in the date range doesn't have `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
+The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1,000 calls in that date range.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -156,13 +153,21 @@ HTTP/1.1 200 OK
             "clientPublicIpV4Address": "99.76.33.16",
             "clientPublicIpV6Address": "1234:fd2:5621:1:89::4500",
             "clientLocalIpV4Address": "192.168.1.165",
-            "clientLocalIpV6Address": "2600:1700:1dca:8110::40"
+            "clientLocalIpV6Address": "2600:1700:1dca:8110::40",
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]
         }
     ]
 }
 ```
 
-## See also
+## Related content
 
 - [Get aggregated report of the audio conferencing dial-out](callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)
 - [Get log of users who are blocked from making PSTN calls](callrecords-callrecord-getpstnblockeduserslog.md)

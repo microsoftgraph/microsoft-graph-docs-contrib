@@ -1,9 +1,9 @@
 ---
 title: "Add member to team"
 description: "Add a new member to a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -12,27 +12,26 @@ Namespace: microsoft.graph
 
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
-> [!NOTE] 
-> The **roles** property will be empty by default for all members. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the roles property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property.
+> [!NOTE]
+> * The **roles** property is empty by default for all members. This property only contains additional qualifiers when relevant; for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member shouldn't have any values specified in the **roles** property.
+> * After adding a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md), it might take some time for the addition to be reflected. Users can use [change notifications](../resources/change-notifications-api-overview.md) to subscribe to notifications for membership changes in a particular team.
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "team_post_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-post-members-permissions.md)]
 
 > [!NOTE]
 > Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) to a team is not supported.
 
 ## HTTP request
 
-<!-- 
+<!--
 {
   "blockType": "ignored"
 }
@@ -44,7 +43,7 @@ POST /teams/{team-id}/members
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -54,7 +53,10 @@ In the request body, supply a JSON representation of the [conversationMember](..
 
 If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
-For best results, stagger calls with a 2 second buffer.
+For best results, stagger calls with a 2-second buffer.
+
+> [!NOTE]
+> The response code `404 Not Found` is returned when you attempt to add a disabled/blocked user.
 
 ## Examples
 
@@ -116,7 +118,7 @@ Content-type: application/json
 #### Response
 **Note:** The response object shown here might be shortened for readability.
 
-<!-- 
+<!--
 {
   "blockType": "response",
   "truncated": true,
@@ -136,7 +138,7 @@ Content-type: application/json
     ],
     "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
     "displayName": "Cameron White",
-    "email": "CameronW@M365x987948.OnMicrosoft.com"
+    "email": "CameronW@contoso.com"
 }
 ```
 
@@ -220,6 +222,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create member in channel](channel-post-members.md)

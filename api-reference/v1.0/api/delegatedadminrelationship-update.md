@@ -3,25 +3,29 @@ title: "Update delegatedAdminRelationship"
 description: "Update the properties of a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
 # Update delegatedAdminRelationship
 Namespace: microsoft.graph
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
+
+The following restrictions apply:
+- You can update this relationship when its **status** property is `created`.
+- You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+- You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long-running operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "delegatedadminrelationship_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/delegatedadminrelationship-update-permissions.md)]
+
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
 
 ## HTTP request
 
@@ -36,7 +40,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be updated. Retrieve the ETag value from a LIST or GET operation. Required.|
 |Content-Type|application/json. Required.|
 
@@ -49,17 +53,30 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant.|
 |autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship.|
-|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Maximum length is 50 characters.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
+If successful, this method returns either a `200 OK` or a `202 Accepted` response code. The response body contains a 
+ [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object when the response is `200 OK`.
+
+### Response headers
+|Name|Description|
+|:---|:---|
+|Content-Type|application/json.|
+|Location|The location of the long-running operation.|
+|Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
+
+This method returns a `202 Accepted` response if you remove the Microsoft Entra Global Administrator role from the relationship while its **status** property is `active`. The response includes a URL in the Location header that you can use to monitor the operation's progress.
+
+If you don't supply the template ID that corresponds to the Microsoft Entra Global Administrator role in the `unifiedRoles` array in the `accessDetails` property of the request body, then the API returns `200 OK` and the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 
 ### Request
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,6 +151,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the request.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -175,6 +193,25 @@ Content-Type: application/json
     ]
   },
   "autoExtendDuration": "P180D"
+}
+```
+
+The following is an example response that returns a `202 Accepted` response code along with **Location** and **Retry-After** headers.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminRelationship"
+}
+-->
+
+``` http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
+Retry-After: 10
+Content-Type: application/json
+
+{
 }
 ```
 

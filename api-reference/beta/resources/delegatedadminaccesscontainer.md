@@ -3,7 +3,7 @@ title: "delegatedAdminAccessContainer resource type"
 description: "An admin access container through which directory roles are assigned via an access assignment."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ An admin access container through which directory roles are assigned via an acce
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"

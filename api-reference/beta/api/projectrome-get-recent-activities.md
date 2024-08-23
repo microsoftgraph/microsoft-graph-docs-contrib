@@ -1,8 +1,8 @@
 ---
 title: "Get recent user activities"
-description: " API. The service queries for the most recent historyItems, and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
+description: Get recent activities for a given user.
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---
@@ -13,19 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service queries for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
+Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service queries for the most recent [activityHistoryItems](../resources/projectrome-historyitem.md), and then pull those related activities. Activities are sorted according to the most recent **lastModified** on the **activityHistoryItem**. This means that activities without **activityHistoryItems** won't be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "projectrome_get_recent_activities" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-get-recent-activities-permissions.md)]
 
 ## HTTP request
 
@@ -57,7 +54,7 @@ The following are some examples of supported queries with URL encoding.
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

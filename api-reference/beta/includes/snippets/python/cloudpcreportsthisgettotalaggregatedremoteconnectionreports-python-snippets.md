@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.reports.get_total_aggregated_remote_connection_reports.get_total_aggregated_remote_connection_reports_post_request_body import GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,7 +18,9 @@ request_body = GetTotalAggregatedRemoteConnectionReportsPostRequestBody(
 		"ManagedDeviceName",
 		"UserPrincipalName",
 		"TotalUsageInHour",
-		"DaysSinceLastSignIn",
+		"LastActiveTime",
+		"PcType",
+		"CreatedDate",
 	],
 )
 

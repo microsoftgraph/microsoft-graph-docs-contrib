@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn about the common models used in the Microsoft Graph connectors SDK."
 ---
 

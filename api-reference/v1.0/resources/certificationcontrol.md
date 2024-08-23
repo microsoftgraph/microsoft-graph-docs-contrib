@@ -3,7 +3,7 @@ title: "certificationControl resource type"
 description: "This resource contains compliance certification data associated with secure score control."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Contains compliance certification data associated with secure score control.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

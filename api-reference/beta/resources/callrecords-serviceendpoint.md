@@ -3,7 +3,7 @@ title: "serviceEndpoint resource type"
 description: "The serviceEndpoint type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ calling media server or other service entity. Inherits from [endpoint](callrecor
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,35 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TrustFrameworkKeySet trustFrameworkKeySet = new TrustFrameworkKeySet();
-trustFrameworkKeySet.id = "keyset1";
-LinkedList<TrustFrameworkKey> keysList = new LinkedList<TrustFrameworkKey>();
-TrustFrameworkKey keys = new TrustFrameworkKey();
-keys.k = "k-value";
-LinkedList<String> x5cList = new LinkedList<String>();
-x5cList.add("x5c-value");
-keys.x5c = x5cList;
-keys.x5t = "x5t-value";
-keys.kty = "kty-value";
-keys.use = "use-value";
-keys.exp = 99L;
-keys.nbf = 99L;
-keys.kid = "kid-value";
-keys.e = "e-value";
-keys.n = "n-value";
-keys.d = "d-value";
-keys.p = "p-value";
-keys.q = "q-value";
-keys.dp = "dp-value";
-keys.dq = "dq-value";
-keys.qi = "qi-value";
-keysList.add(keys);
-trustFrameworkKeySet.keys = keysList;
+trustFrameworkKeySet.setId("keyset1");
+LinkedList<TrustFrameworkKey> keys = new LinkedList<TrustFrameworkKey>();
+TrustFrameworkKey trustFrameworkKey = new TrustFrameworkKey();
+trustFrameworkKey.setK("k-value");
+LinkedList<String> x5c = new LinkedList<String>();
+x5c.add("x5c-value");
+trustFrameworkKey.setX5c(x5c);
+trustFrameworkKey.setX5t("x5t-value");
+trustFrameworkKey.setKty("kty-value");
+trustFrameworkKey.setUse("use-value");
+trustFrameworkKey.setExp(99L);
+trustFrameworkKey.setNbf(99L);
+trustFrameworkKey.setKid("kid-value");
+trustFrameworkKey.setE("e-value");
+trustFrameworkKey.setN("n-value");
+trustFrameworkKey.setD("d-value");
+trustFrameworkKey.setP("p-value");
+trustFrameworkKey.setQ("q-value");
+trustFrameworkKey.setDp("dp-value");
+trustFrameworkKey.setDq("dq-value");
+trustFrameworkKey.setQi("qi-value");
+keys.add(trustFrameworkKey);
+trustFrameworkKeySet.setKeys(keys);
+TrustFrameworkKeySet result = graphClient.trustFramework().keySets().post(trustFrameworkKeySet);
 
-graphClient.trustFramework().keySets()
-	.buildRequest()
-	.post(trustFrameworkKeySet);
 
 ```

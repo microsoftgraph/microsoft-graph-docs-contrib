@@ -3,7 +3,7 @@ title: "programControl resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, the program control object represents a control, linking an access review to a program."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
@@ -50,7 +50,7 @@ In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the prog
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Print.Printers.Create;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Print.Printers.Create.CreatePostRequestBody
+var requestBody = new CreatePostRequestBody
 {
 	DisplayName = "Test Printer",
 	Manufacturer = "Test Printer Manufacturer",
@@ -22,6 +24,8 @@ var requestBody = new Microsoft.Graph.Beta.Print.Printers.Create.CreatePostReque
 	},
 	ConnectorId = null,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Print.Printers.Create.PostAsync(requestBody);
 
 

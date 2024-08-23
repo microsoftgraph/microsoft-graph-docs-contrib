@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 description: "Represents a specific version of a driveItem."
 title: "driveItemVersion resource type"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -49,7 +49,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
 

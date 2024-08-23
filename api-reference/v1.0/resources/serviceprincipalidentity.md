@@ -3,7 +3,7 @@ title: "servicePrincipalIdentity resource type"
 description: "Models a service principal identity."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [identity](../resources/identity.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.servicePrincipalIdentity"

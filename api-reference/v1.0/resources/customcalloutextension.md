@@ -3,7 +3,7 @@ title: "customCalloutExtension resource type"
 description: "An abstract type that defines the configuration for apps that can be integrated with the customer's identity flows."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -16,6 +16,7 @@ An abstract type that defines the configuration for apps that can extend the cus
 This abstract type is inherited by the following derived types.
 
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
+- [customAuthenticationExtension](../resources/customauthenticationextension.md)
 - [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
 - [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
@@ -43,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

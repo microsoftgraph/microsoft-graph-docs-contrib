@@ -2,8 +2,8 @@
 title: "iosCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosCustomConfiguration resource."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

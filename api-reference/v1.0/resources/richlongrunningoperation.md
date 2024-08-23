@@ -3,7 +3,7 @@ title: "richLongRunningOperation resource type"
 description: "Represents the status of a long-running operation on a site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Represents the status of a long-running operation on a [site](../resources/site.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md) on a [site](../resources/site.md) or a [list](../resources/list.md).|
+|[Get](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md) on a [site](../resources/site.md) or a [list](../resources/list.md).|
 
 ## Properties
 
@@ -37,7 +37,7 @@ Represents the status of a long-running operation on a [site](../resources/site.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

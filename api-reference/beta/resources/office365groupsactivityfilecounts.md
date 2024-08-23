@@ -1,8 +1,8 @@
 ---
 title: "office365GroupsActivityFileCounts resource type"
-description: "Here's a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---
@@ -21,9 +21,13 @@ Namespace: microsoft.graph
 | reportDate        | Date   | The date on which a number of files were active in the group's SharePoint site. |
 | reportPeriod      | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
 

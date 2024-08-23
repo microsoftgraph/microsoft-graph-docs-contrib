@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let applicationTemplate = await client.api('/applicationTemplates/{id}')
+let applicationTemplate = await client.api('/applicationTemplates/006a06ef-9160-42cd-88bf-17a7588fc844')
 	.version('beta')
 	.get();
 

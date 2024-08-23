@@ -3,7 +3,7 @@ title: "participantJoiningResponse resource type"
 description: "An abstract base class that contains the response to a participant joining notification."
 author: "yizhenww"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ An abstract base class that contains the response to a participant joining notif
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

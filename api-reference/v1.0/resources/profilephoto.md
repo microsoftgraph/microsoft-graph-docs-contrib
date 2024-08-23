@@ -2,8 +2,8 @@
 title: "profilePhoto resource type"
 description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID."
 ms.localizationpriority: medium
-author: "kevinbellinger"
-ms.prod: "people"
+author: "kristinmcleod"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID. The data is binary and not encoded in base-64.
 
-The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`,
-`360x360`,`432x432`, `504x504`, and `648x648`. In Microsoft Entra ID, photos can be any dimension.
-
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
-|[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Get team photo](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
+|[Update team photo](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Delete photo](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the profile photo _of a user or group_.|
 
 > [!NOTE]
-> Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - Managing users' photos using the Microsoft Graph API is currently _not supported in Azure AD B2C tenants_.
+> 
+> - The delete operation supports only user or group photos, but _not Outlook contact nor Teams photos_.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

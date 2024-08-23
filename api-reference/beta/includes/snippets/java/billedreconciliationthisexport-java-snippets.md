@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.reports.partners.billing.reconciliation.billed.microsoftgraphpartnersbillingexport.ExportPostRequestBody exportPostRequestBody = new com.microsoft.graph.beta.reports.partners.billing.reconciliation.billed.microsoftgraphpartnersbillingexport.ExportPostRequestBody();
+exportPostRequestBody.setInvoiceId("G016907411");
+exportPostRequestBody.setAttributeSet(com.microsoft.graph.beta.models.partners.billing.AttributeSet.Full);
+var result = graphClient.reports().partners().billing().reconciliation().billed().microsoftGraphPartnersBillingExport().post(exportPostRequestBody);
+
+
+```

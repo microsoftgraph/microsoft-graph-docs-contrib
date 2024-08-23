@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ContinuousAccessEvaluationPolicy continuousAccessEvaluationPolicy = new ContinuousAccessEvaluationPolicy();
-continuousAccessEvaluationPolicy.migrate = true;
+continuousAccessEvaluationPolicy.setOdataType("#microsoft.graph.continuousAccessEvaluationPolicy");
+continuousAccessEvaluationPolicy.setMigrate(true);
+ContinuousAccessEvaluationPolicy result = graphClient.identity().continuousAccessEvaluationPolicy().patch(continuousAccessEvaluationPolicy);
 
-graphClient.identity().continuousAccessEvaluationPolicy()
-	.buildRequest()
-	.patch(continuousAccessEvaluationPolicy);
 
 ```

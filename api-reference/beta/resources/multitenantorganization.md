@@ -3,7 +3,7 @@ title: "multiTenantOrganization resource type"
 description: "Defines an organization with more than one instance of Microsoft Entra ID."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -20,9 +20,9 @@ There can only be one multitenant organization per active tenant. It is not poss
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create multiTenantOrganization](../api/tenantrelationship-put-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new multitenant organization.|
-|[Get multiTenantOrganization](../api/multitenantorganization-get.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Get properties of the multitenant organization.|
-|[Update multiTenantOrganization](../api/multitenantorganization-update.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Update the properties of a multitenant organization.|
+|[Create](../api/tenantrelationship-put-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new multitenant organization.|
+|[Get](../api/multitenantorganization-get.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Get properties of the multitenant organization.|
+|[Update](../api/multitenantorganization-update.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Update the properties of a multitenant organization.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +40,7 @@ There can only be one multitenant organization per active tenant. It is not poss
 |tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Defines tenants added to a multitenant organization.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

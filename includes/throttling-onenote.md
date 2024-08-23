@@ -1,7 +1,7 @@
 ---
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: onenotepage
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

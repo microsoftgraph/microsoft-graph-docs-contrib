@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignmentRequest;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAssignment;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAnswer;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageAnswerString;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageMultipleChoiceQuestion;
+use Microsoft\Graph\Beta\Generated\Models\AccessPackageTextInputQuestion;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentRequest();

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewMessage()
 receivedDateTime , err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
@@ -34,6 +34,7 @@ requestBody.SetBody(body)
 bodyPreview := "bodyPreview-value"
 requestBody.SetBodyPreview(&bodyPreview) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 messages, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
 
 

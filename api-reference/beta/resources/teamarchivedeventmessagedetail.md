@@ -3,7 +3,7 @@ title: "teamArchivedEventMessageDetail resource type"
 description: "Represents the details of an event message about an archived team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamId|String|Unique identifier of the team.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamArchivedEventMessageDetail",
@@ -44,6 +44,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about an archived team](/graph/system-messages/#team-archived)
 - For more information about other types of events, see [System messages](/graph/system-messages).

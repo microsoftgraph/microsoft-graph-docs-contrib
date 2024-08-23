@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryHoldPolicy ediscoveryHoldPolicy = new EdiscoveryHoldPolicy();
-ediscoveryHoldPolicy.description = "updated description";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").legalHolds("783c3ea4-d474-4051-9c13-08707ce8c8b6")
-	.buildRequest()
-	.patch(ediscoveryHoldPolicy);
+com.microsoft.graph.beta.models.security.EdiscoveryHoldPolicy ediscoveryHoldPolicy = new com.microsoft.graph.beta.models.security.EdiscoveryHoldPolicy();
+ediscoveryHoldPolicy.setDescription("updated description");
+com.microsoft.graph.models.security.EdiscoveryHoldPolicy result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").legalHolds().byEdiscoveryHoldPolicyId("{ediscoveryHoldPolicy-id}").patch(ediscoveryHoldPolicy);
+
 
 ```

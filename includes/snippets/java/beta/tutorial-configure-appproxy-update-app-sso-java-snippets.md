@@ -4,21 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Application application = new Application();
-OnPremisesPublishing onPremisesPublishing = new OnPremisesPublishing();
-OnPremisesPublishingSingleSignOn singleSignOnSettings = new OnPremisesPublishingSingleSignOn();
-KerberosSignOnSettings kerberosSignOnSettings = new KerberosSignOnSettings();
-kerberosSignOnSettings.kerberosServicePrincipalName = "HTTP/iwademo.contoso.com";
-kerberosSignOnSettings.kerberosSignOnMappingAttributeType = KerberosSignOnMappingAttributeType.USER_PRINCIPAL_NAME;
-singleSignOnSettings.kerberosSignOnSettings = kerberosSignOnSettings;
-singleSignOnSettings.singleSignOnMode = SingleSignOnMode.ON_PREMISES_KERBEROS;
-onPremisesPublishing.singleSignOnSettings = singleSignOnSettings;
-application.onPremisesPublishing = onPremisesPublishing;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applications("bf21f7e9-9d25-4da2-82ab-7fdd85049f83")
-	.buildRequest()
-	.patch(application);
+com.microsoft.graph.beta.applications.item.Application application = new com.microsoft.graph.beta.applications.item.Application();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ onPremisesPublishing = new ();
+ singleSignOnSettings = new ();
+ kerberosSignOnSettings = new ();
+kerberosSignOnSettings.setKerberosServicePrincipalName("HTTP/iwademo.contoso.com");
+kerberosSignOnSettings.setKerberosSignOnMappingAttributeType("userPrincipalName");
+singleSignOnSettings.setKerberosSignOnSettings(kerberosSignOnSettings);
+singleSignOnSettings.setSingleSignOnMode("onPremisesKerberos");
+onPremisesPublishing.setSingleSignOnSettings(singleSignOnSettings);
+additionalData.put("onPremisesPublishing", onPremisesPublishing);
+application.setAdditionalData(additionalData);
+graphClient.applications().byApplicationId("{application-id}").patch(application);
+
 
 ```

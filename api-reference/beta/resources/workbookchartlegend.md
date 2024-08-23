@@ -3,8 +3,9 @@ title: "workbookChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart legend
 ---
 
 # workbookChartLegend resource type
@@ -19,15 +20,15 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartLegend](../api/chartlegend-get.md) | [workbookChartLegend](workbookchartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend-update.md) | [workbookChartLegend](workbookchartlegend.md)	|Update ChartLegend object. |
+|[Get](../api/chartlegend-get.md) | [workbookChartLegend](workbookchartlegend.md) |Read the properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [workbookChartLegend](workbookchartlegend.md)	|Update a chartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
+|overlay|Boolean|Indicates whether the chart legend should overlap with the main body of the chart.|
 |position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|A boolean value the represents the visibility of a ChartLegend object.|
+|visible|Boolean|Indicates whether the chart legend is visible.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -36,7 +37,7 @@ Represents the legend in a chart.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

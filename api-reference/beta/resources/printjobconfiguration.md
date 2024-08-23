@@ -3,7 +3,7 @@ title: printJobConfiguration resource type
 description: A group of settings that a printer should use to print a job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -129,9 +129,13 @@ A group of settings that a printer should use to print a job.
 |none|4|The printer doesn't scale the document to fit the requested media size. If the document is larger than the requested media, the printer centers and clips the resulting output. If the document is smaller than the requested media, printer centers the resulting output.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Don't use.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,8 @@ title: "directoryRole resource type"
 description: "Represents a Microsoft Entra directory role. Microsoft Entra directory roles are also known as *administrator roles*."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -25,14 +26,14 @@ This resource supports:
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
-|[List directoryRoles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) collection | List the directory roles that are activated in the tenant. |
+|[Get directory role](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
+|[List directory roles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) collection | List the directory roles that are activated in the tenant. |
 |[Add member](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
 |[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
-|[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
-|[Activate directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Activate a directory role.|
-|[List scopeMembers](../api/directoryrole-list-scopedmembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
-|[delta](../api/directoryrole-delta.md)|directoryRole collection| Get incremental changes for directory roles. |
+|[Remove member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
+|[Activate directory role](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Activate a directory role.|
+|[List scoped members](../api/directoryrole-list-scopedmembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
+|[Get delta](../api/directoryrole-delta.md)|directoryRole collection| Get incremental changes for directory roles. |
 
 ## Properties
 | Property   | Type |Description|
@@ -50,7 +51,7 @@ This resource supports:
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

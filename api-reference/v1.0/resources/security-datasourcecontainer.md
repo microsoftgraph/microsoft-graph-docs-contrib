@@ -3,7 +3,7 @@ title: "dataSourceContainer resource type"
 description: "Base class for custodians and noncustodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -53,7 +53,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

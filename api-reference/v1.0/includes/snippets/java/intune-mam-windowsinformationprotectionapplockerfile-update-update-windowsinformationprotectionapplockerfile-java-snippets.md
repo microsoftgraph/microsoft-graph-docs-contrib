@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WindowsInformationProtectionAppLockerFile windowsInformationProtectionAppLockerFile = new WindowsInformationProtectionAppLockerFile();
-windowsInformationProtectionAppLockerFile.displayName = "Display Name value";
-windowsInformationProtectionAppLockerFile.fileHash = "File Hash value";
-windowsInformationProtectionAppLockerFile.file = Base64.getDecoder().decode("ZmlsZQ==");
-windowsInformationProtectionAppLockerFile.version = "Version value";
+windowsInformationProtectionAppLockerFile.setOdataType("#microsoft.graph.windowsInformationProtectionAppLockerFile");
+windowsInformationProtectionAppLockerFile.setDisplayName("Display Name value");
+windowsInformationProtectionAppLockerFile.setFileHash("File Hash value");
+byte[] file = Base64.getDecoder().decode("ZmlsZQ==");
+windowsInformationProtectionAppLockerFile.setFile(file);
+windowsInformationProtectionAppLockerFile.setVersion("Version value");
+WindowsInformationProtectionAppLockerFile result = graphClient.deviceAppManagement().windowsInformationProtectionPolicies().byWindowsInformationProtectionPolicyId("{windowsInformationProtectionPolicy-id}").exemptAppLockerFiles().byWindowsInformationProtectionAppLockerFileId("{windowsInformationProtectionAppLockerFile-id}").patch(windowsInformationProtectionAppLockerFile);
 
-graphClient.deviceAppManagement().windowsInformationProtectionPolicies("{windowsInformationProtectionPolicyId}").exemptAppLockerFiles("{windowsInformationProtectionAppLockerFileId}")
-	.buildRequest()
-	.patch(windowsInformationProtectionAppLockerFile);
 
 ```

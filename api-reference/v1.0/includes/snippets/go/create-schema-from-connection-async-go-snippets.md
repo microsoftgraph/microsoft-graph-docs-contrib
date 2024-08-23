@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-sdk-go/models/externalconnectors"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsexternalconnectors.NewSchema()
 baseType := "microsoft.graph.externalItem"
@@ -60,6 +60,7 @@ properties := []graphmodelsexternalconnectors.Propertyable {
 }
 requestBody.SetProperties(properties)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 schema, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 

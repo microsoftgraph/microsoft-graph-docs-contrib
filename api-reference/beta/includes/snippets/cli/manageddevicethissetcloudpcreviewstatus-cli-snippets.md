@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management managed-devices set-cloud-pc-review-status post --managed-device-id {managedDevice-id} --body '{\
   "reviewStatus": {\
     "inReview": true,\

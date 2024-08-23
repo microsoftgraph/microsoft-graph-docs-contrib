@@ -2,8 +2,8 @@
 title: "Update windows10XSCEPCertificateProfile"
 description: "Update the properties of a windows10XSCEPCertificateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windows10XSCEPCertificateProfile](../resources/intune-rapolicy-windows10xscepcertificateprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -55,10 +57,11 @@ The following table shows the properties that are required when you create the [
 |creationDateTime|DateTimeOffset|DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |roleScopeTagIds|String collection|Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period|
-|extendedKeyUsages|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune-rapolicy-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-shared-hashalgorithms.md) collection|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |keySize|[keySize](../resources/intune-shared-keysize.md)|SCEP Key Size. Possible values are: `size1024`, `size2048`, `size4096`.|
 |keyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|Key Storage Provider (KSP). Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
@@ -81,7 +84,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
 Content-type: application/json
-Content-length: 1178
+Content-length: 1321
 
 {
   "@odata.type": "#microsoft.graph.windows10XSCEPCertificateProfile",
@@ -91,6 +94,12 @@ Content-length: 1178
   "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "certificateStore": "machine",
   "certificateValidityPeriodScale": "months",
@@ -129,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1291
+Content-Length: 1434
 
 {
   "@odata.type": "#microsoft.graph.windows10XSCEPCertificateProfile",
@@ -141,6 +150,12 @@ Content-Length: 1291
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "certificateStore": "machine",
   "certificateValidityPeriodScale": "months",

@@ -3,7 +3,7 @@ title: "searchQueryString resource type"
 description: "searchQueryString"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -22,9 +22,13 @@ The search terms for the query.
 |:-------------|:------------|:------------|
 |query|String|Contains the actual search terms of the request.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const importedWindowsAutopilotDeviceIdentity = Content-type: application/json
-Content-length: 808
-
-{
+const importedWindowsAutopilotDeviceIdentity = {
   importedWindowsAutopilotDeviceIdentities: [
     {
       '@odata.type': '#microsoft.graph.importedWindowsAutopilotDeviceIdentity',

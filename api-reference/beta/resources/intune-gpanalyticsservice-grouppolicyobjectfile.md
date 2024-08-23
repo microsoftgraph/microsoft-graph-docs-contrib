@@ -2,18 +2,18 @@
 title: "groupPolicyObjectFile resource type"
 description: "The Group Policy Object file uploaded by admin."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyObjectFile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The Group Policy Object file uploaded by admin.
 
@@ -29,7 +29,7 @@ The Group Policy Object file uploaded by admin.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
 |ouDistinguishedName|String|The distinguished name of the OU.|
 |createdDateTime|DateTimeOffset|The date and time at which the GroupPolicy was first uploaded.|

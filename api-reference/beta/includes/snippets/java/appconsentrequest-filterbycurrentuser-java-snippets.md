@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AppConsentRequestFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().appConsent().appConsentRequests()
-	.filterByCurrentUser(AppConsentRequestFilterByCurrentUserParameterSet
-		.newBuilder()
-		.withOn('reviewer')
-		.build())
-	.buildRequest()
-	.filter("userConsentRequests/any(u:u/status eq 'InProgress')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.identityGovernance().appConsent().appConsentRequests().filterByCurrentUserWithOn("reviewer").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "userConsentRequests/any(u:u/status eq 'InProgress')";
+});
+
 
 ```

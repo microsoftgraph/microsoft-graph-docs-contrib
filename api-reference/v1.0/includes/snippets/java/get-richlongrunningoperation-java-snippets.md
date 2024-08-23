@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RichLongRunningOperation richLongRunningOperation = graphClient.sites("root").operations("contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RichLongRunningOperation result = graphClient.sites().bySiteId("{site-id}").operations().byRichLongRunningOperationId("{richLongRunningOperation-id}").get();
+
 
 ```

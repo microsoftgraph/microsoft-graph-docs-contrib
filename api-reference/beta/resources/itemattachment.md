@@ -3,7 +3,7 @@ title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 ---
 
@@ -24,8 +24,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
-|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
+|[Get attachment](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
+|[Delete attachment](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,7 +44,7 @@ Derived from [attachment](attachment.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

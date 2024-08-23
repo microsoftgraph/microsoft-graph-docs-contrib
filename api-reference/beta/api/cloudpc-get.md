@@ -3,7 +3,7 @@ title: "Get cloudPC"
 description: "Read the properties and relationships of a specific cloudPC object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Read the properties and relationships of a specific [cloudPC](../resources/cloud
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudpc_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpc-get-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +52,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -121,7 +118,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -162,10 +159,10 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "sharedByUser",
     "diskEncryptionState": "notAvailable"
 }
 ```
@@ -174,8 +171,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -185,7 +181,7 @@ Here's an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName
 ```
 
 # [C#](#tab/csharp)
@@ -224,7 +220,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -267,7 +263,9 @@ Content-Type: application/json
           "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
         }
       ]
-    }
+    },
+    "allotmentDisplayName": null,
+    "deviceRegionName": "eastus2"
 }
 ```
 
@@ -275,7 +273,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -325,7 +323,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac1
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -366,10 +364,105 @@ Content-Type: application/json
         }
       ]
     },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "dedicated",
     "diskEncryptionState": "notAvailable"
 }
 ```
+
+### Example 4: List Cloud PCs filtered by disaster recovery capability type
+
+The following example shows how to list Cloud PCs filtered by disaster recovery capability type and select specific parameters.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc_disasterrecoverycapability"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$select=id,displayName,disasterRecoveryCapability&$filter=disasterRecoveryCapability/capabilityType eq 'failover'
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-disasterrecoverycapability-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpc-disasterrecoverycapability-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpc-disasterrecoverycapability-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpc-disasterrecoverycapability-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-disasterrecoverycapability-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpc-disasterrecoverycapability-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpc-disasterrecoverycapability-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpc-disasterrecoverycapability-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc_disasterrecoverycapability",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/cloudPCs(id,displayName,disasterRecoveryCapability)",
+  "value": [
+    {
+      "id": "662009bc-7732-4f6f-8726-25883518b33e",
+      "displayName": "Demo-0",
+      "disasterRecoveryCapability": {
+        "primaryRegion": "eastus",
+        "secondaryRegion": "westus",
+        "capabilityType": "failover"
+      }
+    },
+    {
+      "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+      "displayName": "Demo-1",
+      "disasterRecoveryCapability": {
+        "primaryRegion": "eastus",
+        "secondaryRegion": "westus",
+        "capabilityType": "failover"
+      }
+    }
+  ]
+}
+```
+
+

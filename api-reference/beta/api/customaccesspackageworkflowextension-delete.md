@@ -3,7 +3,7 @@ title: "Delete customAccessPackageWorkflowExtension"
 description: "Delete a customAccessPackageWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -17,16 +17,13 @@ Delete a [customAccessPackageWorkflowExtension](../resources/customaccesspackage
 2. Use the access package catalog ID and retrieve the ID of the **customAccessPackageWorkflowExtension** object that you want to delete by running the [LIST customAccessPackageWorkflowExtensions](accesspackagecatalog-list-customaccesspackageworkflowextensions.md) operation.
 3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy. For an example, see [Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy](accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-and-verifiablecredentialsettings-from-a-policy).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EntitlementManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "customaccesspackageworkflowextension_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/customaccesspackageworkflowextension-delete-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogI
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -61,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 ```
 
 # [C#](#tab/csharp)

@@ -3,7 +3,7 @@ title: "plannerRosterMember resource type"
 description: "Represents a member of a plannerRoster."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -21,10 +21,10 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List plannerRosterMembers](../api/plannerroster-list-members.md)|[plannerRosterMember](../resources/plannerrostermember.md) collection|Get a list of the [plannerRosterMember](../resources/plannerrostermember.md) objects and their properties.|
-|[Create plannerRosterMember](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new [plannerRosterMember](../resources/plannerrostermember.md) object.|
-|[Get plannerRosterMember](../api/plannerrostermember-get.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Read the properties and relationships of a [plannerRosterMember](../resources/plannerrostermember.md) object.|
-|[Delete plannerRosterMember](../api/plannerrostermember-delete.md)|None|Deletes a [plannerRosterMember](../resources/plannerrostermember.md) object.|
+|[List roster's members](../api/plannerroster-list-members.md)|[plannerRosterMember](../resources/plannerrostermember.md) collection|Get a list of the [plannerRosterMember](../resources/plannerrostermember.md) objects and their properties.|
+|[Add a member to roster](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new [plannerRosterMember](../resources/plannerrostermember.md) object.|
+|[Get roster's member](../api/plannerrostermember-get.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Read the properties and relationships of a [plannerRosterMember](../resources/plannerrostermember.md) object.|
+|[Remove a member from roster](../api/plannerrostermember-delete.md)|None|Deletes a [plannerRosterMember](../resources/plannerrostermember.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

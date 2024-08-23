@@ -11,12 +11,12 @@ $params = @{
 		@{
 			id = "StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette"
 			value = @(
-				"Green"
-				"Aqua"
-				"Blue"
-			)
-		}
-	)
+			"Green"
+		"Aqua"
+	"Blue"
+)
+}
+)
 }
 
 # A UPN can also be used as -UserId.

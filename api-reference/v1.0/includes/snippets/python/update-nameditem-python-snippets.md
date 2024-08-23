@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.workbook_named_item import WorkbookNamedItem
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +13,7 @@ request_body = WorkbookNamedItem(
 	type = "type-value",
 	scope = "scope-value",
 	comment = "comment-value",
-	value = Json(
+	value = UntypedNode(
 	),
 	visible = True,
 )

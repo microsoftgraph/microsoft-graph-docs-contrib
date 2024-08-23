@@ -2,8 +2,9 @@
 title: "propertyToEvaluate resource type"
 description: "Defines the name and the value of the property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +25,7 @@ Defines the name and the value of the property.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 let groups = await client.api('/groups')
-	.filter('graphlearn_courses/courseId eq \'123\'')
-	.select('displayName,id,description,graphlearn_courses')
+	.filter('bellowscollege_courses/courseId eq \'123\'')
+	.select('displayName,id,description,bellowscollege_courses')
 	.get();
 
 ```

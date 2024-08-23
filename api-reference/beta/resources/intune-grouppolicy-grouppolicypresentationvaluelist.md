@@ -2,18 +2,18 @@
 title: "groupPolicyPresentationValueList resource type"
 description: "The entity represents a collection of name/value pairs of a list box presentation on a policy definition."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueList resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The entity represents a collection of name/value pairs of a list box presentation on a policy definition.
 
@@ -35,7 +35,7 @@ Inherits from [groupPolicyPresentationValue](../resources/intune-grouppolicy-gro
 |lastModifiedDateTime|DateTimeOffset|The date and time the object was last modified. Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|The date and time the object was created. Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Key of the entity. Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|[keyValuePair](../resources/intune-grouppolicy-keyvaluepair.md) collection|A list of pairs for the associated presentation.|
+|values|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A list of pairs for the associated presentation.|
 
 ## Relationships
 |Relationship|Type|Description|

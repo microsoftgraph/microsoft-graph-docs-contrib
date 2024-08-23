@@ -3,7 +3,7 @@ title: "managedIdentity resource type"
 description: "Represents details of the managed identity that was used to sign into the target resource."
 author: "phoebeweiser"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents details of the managed identity that was used to sign into the target
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedIdentity"

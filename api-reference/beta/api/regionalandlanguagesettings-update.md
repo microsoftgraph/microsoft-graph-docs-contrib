@@ -3,7 +3,7 @@ title: "Update regionalAndLanguageSettings"
 description: "Update the regional and language settings of a user."
 author: "jasonbro"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,10 @@ Update some or all of the properties of a [regionalAndLanguageSettings](../resou
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type                   |Permission (from least to most privileged)     |
-|----------------------------------|---------------------------------------------- |
-|Delegated (work or school account)|User.ReadWrite, User.ReadWrite.All             |
-|Delegated (personal account)      |User.ReadWrite, User.ReadWrite.All             |
-|Application                       |User.ReadWrite, User.ReadWrite.All             |
+<!-- { "blockType": "permissions", "name": "regionalandlanguagesettings_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/regionalandlanguagesettings-update-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +42,7 @@ PATCH /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -129,7 +126,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

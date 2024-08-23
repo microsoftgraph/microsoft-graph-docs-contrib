@@ -2,8 +2,8 @@
 title: "displayTemplate resource type"
 description: "Defines the appearance of the content and the conditions that dictate when the template should be displayed."
 author: "emzho"
-ms.localizationpriority: normal
-ms.prod: "search"
+ms.localizationpriority: medium
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Defines the appearance of the content and the conditions that dictate when the t
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.displayTemplate"

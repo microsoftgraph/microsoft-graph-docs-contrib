@@ -3,7 +3,7 @@ title: "deviceInfo resource type"
 description: "The deviceInfo type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -44,7 +44,7 @@ Represents information about a device (microphone, speaker, camera, etc.) used i
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

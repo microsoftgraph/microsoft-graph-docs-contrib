@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Simulation;
+use Microsoft\Graph\Beta\Generated\Models\SimulationAttackTechnique;
+use Microsoft\Graph\Beta\Generated\Models\SimulationAttackType;
+use Microsoft\Graph\Beta\Generated\Models\SimulationStatus;
+use Microsoft\Graph\Beta\Generated\Models\AddressBookAccountTargetContent;
+use Microsoft\Graph\Beta\Generated\Models\AccountTargetContentType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Simulation();

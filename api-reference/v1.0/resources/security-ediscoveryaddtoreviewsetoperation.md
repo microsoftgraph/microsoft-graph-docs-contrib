@@ -3,7 +3,7 @@ title: "ediscoveryAddToReviewSetOperation resource type"
 description: "Represents an operation to add an eDiscoverySearch to an eDiscoveryReviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ None.
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|eDiscovery search that gets added to review set.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

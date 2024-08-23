@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemAddress itemAddress = new ItemAddress();
-itemAddress.displayName = "Home";
+itemAddress.setDisplayName("Home");
 PhysicalAddress detail = new PhysicalAddress();
-detail.type = PhysicalAddressType.HOME;
-detail.postOfficeBox = null;
-detail.street = "221B Baker Street";
-detail.city = "London";
-detail.state = null;
-detail.countryOrRegion = "United Kingdom";
-detail.postalCode = "E14 3TD";
-itemAddress.detail = detail;
+detail.setType(PhysicalAddressType.Home);
+detail.setPostOfficeBox(null);
+detail.setStreet("221B Baker Street");
+detail.setCity("London");
+detail.setState(null);
+detail.setCountryOrRegion("United Kingdom");
+detail.setPostalCode("E14 3TD");
+itemAddress.setDetail(detail);
+ItemAddress result = graphClient.me().profile().addresses().post(itemAddress);
 
-graphClient.me().profile().addresses()
-	.buildRequest()
-	.post(itemAddress);
 
 ```

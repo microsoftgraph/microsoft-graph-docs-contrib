@@ -5,8 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateApplication\EvaluateApplicationRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateApplication\EvaluateApplicationPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ContentInfo;
+use Microsoft\Graph\Beta\Generated\Models\ContentFormat;
+use Microsoft\Graph\Beta\Generated\Models\ContentState;
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Beta\Generated\Models\LabelingOptions;
+use Microsoft\Graph\Beta\Generated\Models\AssignmentMethod;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EvaluateApplicationPostRequestBody();

@@ -3,7 +3,7 @@ title: "List history"
 description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatIntelligence.Read.All                 |
+<!-- { "blockType": "permissions", "name": "security_whoisrecord_list_history" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-whoisrecord-list-history-permissions.md)]
 
 ## HTTP request
 
@@ -54,7 +51,7 @@ This method supports the `$count`, `$select`, `$skip`, and `$top` OData query pa
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -68,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,10 +78,6 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-whoishistoryrecord-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-whoishistoryrecord-javascript-snippets.md)]

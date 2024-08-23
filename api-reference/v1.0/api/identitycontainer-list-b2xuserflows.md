@@ -4,7 +4,7 @@ description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2xIdentityUserFlows
@@ -13,22 +13,16 @@ Namespace: microsoft.graph
 
 Retrieve a list of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identitycontainer_list_b2xuserflows" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-b2xuserflows-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -46,7 +40,7 @@ You can use `$expand` to expand specific user flow properties that aren't expand
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -62,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -112,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -148,7 +142,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -198,7 +192,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProvi
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -227,7 +221,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       },
       {
@@ -241,7 +235,7 @@ Content-type: application/json
                 "name": "Facebook",
                 "clientId": "clientIdFromFacebook",
                 "clientSecret": "*******"
-              }  
+              }
           ]
       }
    ]
@@ -256,6 +250,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2xUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: listb2xUserFlowsexpand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

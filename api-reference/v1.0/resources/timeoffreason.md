@@ -3,7 +3,7 @@ title: "timeOffReason resource type"
 description: "Represents a valid reason to take time off in a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedul
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

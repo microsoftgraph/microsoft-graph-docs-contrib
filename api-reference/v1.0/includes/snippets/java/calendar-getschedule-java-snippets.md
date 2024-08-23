@@ -4,34 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> schedulesList = new LinkedList<String>();
-schedulesList.add("adelev@contoso.onmicrosoft.com");
-schedulesList.add("meganb@contoso.onmicrosoft.com");
-
+com.microsoft.graph.users.item.calendar.getschedule.GetSchedulePostRequestBody getSchedulePostRequestBody = new com.microsoft.graph.users.item.calendar.getschedule.GetSchedulePostRequestBody();
+LinkedList<String> schedules = new LinkedList<String>();
+schedules.add("adelev@contoso.com");
+schedules.add("meganb@contoso.com");
+getSchedulePostRequestBody.setSchedules(schedules);
 DateTimeTimeZone startTime = new DateTimeTimeZone();
-startTime.dateTime = "2019-03-15T09:00:00";
-startTime.timeZone = "Pacific Standard Time";
-
+startTime.setDateTime("2019-03-15T09:00:00");
+startTime.setTimeZone("Pacific Standard Time");
+getSchedulePostRequestBody.setStartTime(startTime);
 DateTimeTimeZone endTime = new DateTimeTimeZone();
-endTime.dateTime = "2019-03-15T18:00:00";
-endTime.timeZone = "Pacific Standard Time";
+endTime.setDateTime("2019-03-15T18:00:00");
+endTime.setTimeZone("Pacific Standard Time");
+getSchedulePostRequestBody.setEndTime(endTime);
+getSchedulePostRequestBody.setAvailabilityViewInterval(60);
+var result = graphClient.me().calendar().getSchedule().post(getSchedulePostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-int availabilityViewInterval = 60;
-
-graphClient.me().calendar()
-	.getSchedule(CalendarGetScheduleParameterSet
-		.newBuilder()
-		.withSchedules(schedulesList)
-		.withEndTime(endTime)
-		.withStartTime(startTime)
-		.withAvailabilityViewInterval(availabilityViewInterval)
-		.build())
-	.buildRequest( requestOptions )
-	.post();
 
 ```

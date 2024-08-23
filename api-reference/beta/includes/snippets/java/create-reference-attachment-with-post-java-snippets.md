@@ -4,32 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.groups.item.threads.item.reply.ReplyPostRequestBody replyPostRequestBody = new com.microsoft.graph.beta.groups.item.threads.item.reply.ReplyPostRequestBody();
 Post post = new Post();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "I attached a reference to a file on OneDrive.";
-post.body = body;
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-ReferenceAttachment attachments = new ReferenceAttachment();
-attachments.name = "Personal pictures";
-attachments.sourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics";
-attachments.providerType = ReferenceAttachmentProvider.ONE_DRIVE_CONSUMER;
-attachments.permission = ReferenceAttachmentPermission.EDIT;
-attachments.isFolder = false;
-attachmentsList.add(attachments);
-AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
-attachmentCollectionResponse.value = attachmentsList;
-AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
-post.attachments = attachmentCollectionPage;
+body.setContentType(BodyType.Text);
+body.setContent("I attached a reference to a file on OneDrive.");
+post.setBody(body);
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+ReferenceAttachment attachment = new ReferenceAttachment();
+attachment.setOdataType("#microsoft.graph.referenceAttachment");
+attachment.setName("Personal pictures");
+attachment.setSourceUrl("https://contoso.com/personal/mario_contoso_net/Documents/Pics");
+attachment.setProviderType(ReferenceAttachmentProvider.OneDriveConsumer);
+attachment.setPermission(ReferenceAttachmentPermission.Edit);
+attachment.setIsFolder(true);
+attachments.add(attachment);
+post.setAttachments(attachments);
+replyPostRequestBody.setPost(post);
+graphClient.groups().byGroupId("{group-id}").threads().byConversationThreadId("{conversationThread-id}").reply().post(replyPostRequestBody);
 
-graphClient.groups("1848753d-185d-4c08-a4e4-6ee40521d115").threads("AAQkADJUdfolA==")
-	.reply(ConversationThreadReplyParameterSet
-		.newBuilder()
-		.withPost(post)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

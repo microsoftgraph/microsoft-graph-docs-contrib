@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const cleanWindowsDevice = Content-type: application/json
-Content-length: 28
-
-{
+const cleanWindowsDevice = {
   keepUserData: true
 };
 

@@ -3,8 +3,9 @@ title: "staleSignInAlertIncident resource type"
 description: "Represents an alert incident that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified time period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Inactive account
 ---
 
 # staleSignInAlertIncident resource type
@@ -36,7 +37,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

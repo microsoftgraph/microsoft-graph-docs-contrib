@@ -1,30 +1,29 @@
 ---
-title: "List educationSynchronizationProfiles"
+title: "List educationSynchronizationProfiles (deprecated)"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# List educationSynchronizationProfiles
+# List educationSynchronizationProfiles (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Retrieve the collection of school data [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationsynchronizationprofile_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsynchronizationprofile-list-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +37,7 @@ This method supports the following [OData Query Parameters](/graph/query-paramet
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

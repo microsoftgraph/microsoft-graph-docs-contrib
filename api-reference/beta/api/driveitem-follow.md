@@ -3,7 +3,7 @@ author: chackman
 description: "Follow a driveItem."
 title: Follow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow drive item
@@ -20,13 +20,10 @@ Follow a [driveItem](../resources/driveitem.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_follow" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-follow-permissions.md)]
 
 ## HTTP request
 
@@ -57,7 +54,7 @@ This example follows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/follow
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/follow
 ```
 
 # [C#](#tab/csharp)

@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.external_connectors.schema import Schema
+from msgraph_beta.generated.models.external_connectors.property import Property
+from msgraph_beta.generated.models.property_type import PropertyType
+from msgraph_beta.generated.models.external_connectors.label import Label
+from msgraph_beta.generated.models.label import Label
 
 graph_client = GraphServiceClient(credentials, scopes)
 

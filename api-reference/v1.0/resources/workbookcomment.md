@@ -1,42 +1,44 @@
 ---
 title: "workbookComment resource type"
-description: "Definition of workbookComment resource type"
+description: "Represents a comment in a workbook."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
+toc.title: Comment
 ---
 
 # workbookComment resource type
 
 Namespace: microsoft.graph
 
-Represents a comment in workbook.
+Represents a comment in a workbook.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+| [List](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
+| [Get](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of comment.|
-|contentType|String|Indicates the type for the comment.|
-|id|String| Represents the comment identifier. Read-only.|
+|content|String|The content of the comment.|
+|contentType|String|The content type of the comment.|
+|id|String|The unique identifier of the comment. Read-only.|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|replies|[workbookCommentReply](workbookcommentreply.md) collection| Read-only. Nullable.|
+|replies|[workbookCommentReply](workbookcommentreply.md) collection| The list of replies to the comment. Read-only. Nullable.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

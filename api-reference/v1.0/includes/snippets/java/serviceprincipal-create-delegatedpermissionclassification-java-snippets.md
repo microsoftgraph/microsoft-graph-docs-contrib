@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DelegatedPermissionClassification delegatedPermissionClassification = new DelegatedPermissionClassification();
-delegatedPermissionClassification.permissionId = "e1fe6dd8-ba31-4d61-89e7-88639da4683d";
-delegatedPermissionClassification.permissionName = "User.Read";
-delegatedPermissionClassification.classification = PermissionClassificationType.LOW;
+delegatedPermissionClassification.setPermissionId("e1fe6dd8-ba31-4d61-89e7-88639da4683d");
+delegatedPermissionClassification.setPermissionName("User.Read");
+delegatedPermissionClassification.setClassification(PermissionClassificationType.Low);
+DelegatedPermissionClassification result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").delegatedPermissionClassifications().post(delegatedPermissionClassification);
 
-graphClient.servicePrincipals("{id}").delegatedPermissionClassifications()
-	.buildRequest()
-	.post(delegatedPermissionClassification);
 
 ```

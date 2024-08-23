@@ -3,7 +3,7 @@ title: "session resource type"
 description: "Represents a user-user communication or a user-meeting communication in the case of a conference call."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -17,7 +17,7 @@ Represents a user-user communication or a user-meeting communication in the case
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List sessions](../api/callrecords-session-list.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.|
+| [List sessions](../api/callrecords-callrecord-list-sessions.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.|
 
 ## Properties
 
@@ -40,7 +40,7 @@ Represents a user-user communication or a user-meeting communication in the case
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

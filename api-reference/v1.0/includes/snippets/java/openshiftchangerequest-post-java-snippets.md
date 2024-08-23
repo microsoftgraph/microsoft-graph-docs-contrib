@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Authorization", "Bearer {token}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OpenShiftChangeRequest openShiftChangeRequest = new OpenShiftChangeRequest();
-openShiftChangeRequest.senderMessage = "Can I take this shift?";
-openShiftChangeRequest.openShiftId = "577b75d2-a927-48c0-a5d1-dc984894e7b8";
+openShiftChangeRequest.setSenderMessage("Can I take this shift?");
+openShiftChangeRequest.setOpenShiftId("577b75d2-a927-48c0-a5d1-dc984894e7b8");
+OpenShiftChangeRequest result = graphClient.teams().byTeamId("{team-id}").schedule().openShiftChangeRequests().post(openShiftChangeRequest, requestConfiguration -> {
+	requestConfiguration.headers.add("Authorization", "Bearer {token}");
+});
 
-graphClient.teams("788b75d2-a911-48c0-a5e2-dc98480457e3").schedule().openShiftChangeRequests()
-	.buildRequest( requestOptions )
-	.post(openShiftChangeRequest);
 
 ```

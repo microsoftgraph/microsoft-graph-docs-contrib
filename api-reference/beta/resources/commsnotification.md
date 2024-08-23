@@ -3,7 +3,7 @@ title: "commsNotification resource type"
 description: "Communications notification base type that is published by Communications servers to notify changes."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Communications notification base type that is published by Communications server
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "Create azureDataLakeConnector"
 description: "Create a new azureDataLakeConnector object."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Create a new [azureDataLakeConnector](../resources/industrydata-azuredatalakecon
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | IndustryData-DataConnector.ReadWrite.All    |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | IndustryData-DataConnector.ReadWrite.All    |
+<!-- { "blockType": "permissions", "name": "industrydata_azuredatalakeconnector_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/industrydata-azuredatalakeconnector-post-permissions.md)]
 
 ## HTTP request
 
@@ -42,18 +39,19 @@ POST /external/industryData/dataConnectors
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
+In the request body, supply a JSON representation of the [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) object.
 
 You can specify the following properties when you create an **azureDataLakeConnector**.
 
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
 | displayName | String | The name of the data connector. Required. |
+| fileFormat  | [microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md) | A reference to a file format entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Optional. |
 
 ## Response
 
@@ -63,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,7 +78,11 @@ Content-length: 104
 {
     "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
     "displayName": "CSV connector",
-    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
+    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')",
+    "fileFormat": {
+      "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+      "code": "schoolDataSyncV1"
+    }
 }
 ```
 
@@ -138,6 +140,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
   "displayName": "CSV connector",
-  "id": "51dca0a0-85f6-4478-f526-08daddab2271"
+  "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+  "fileFormat": {
+    "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+    "code": "schoolDataSyncV1"
+  }
 }
 ```

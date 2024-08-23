@@ -3,7 +3,7 @@ title: "List customSecurityAttributeDefinitions"
 description: "Get a list of the customSecurityAttributeDefinition objects and their properties."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -17,15 +17,12 @@ Get a list of the [customSecurityAttributeDefinition](../resources/customsecurit
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "directory_list_customsecurityattributedefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-list-customsecurityattributedefinitions-permissions.md)]
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
+The signed-in user must also be assigned one of the following [directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 + Attribute Definition Reader
 + Attribute Assignment Administrator
@@ -53,7 +50,7 @@ The **allowedValues** navigation property is not returned or expanded by default
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,7 +68,7 @@ The following example gets all custom security attribute definitions in a tenant
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -177,7 +174,7 @@ The following example retrieves custom security attribute definitions that are n
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -272,7 +269,7 @@ The following example retrieves custom security attribute definitions that are i
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

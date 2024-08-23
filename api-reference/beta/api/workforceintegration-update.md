@@ -3,7 +3,7 @@ title: "Update workforceintegration"
 description: "Update the properties of a workforceintegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Update the properties of a [workforceintegration](../resources/workforceintegrat
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "workforceintegration_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workforceintegration-update-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -68,7 +65,7 @@ The following example updates a **workforceIntegration** object.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -129,7 +126,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -162,7 +159,7 @@ The following example creates a new **workforceIntegration** with SwapRequest en
 
 #### Request
 
-Here's an example of the request. 
+The following example shows a request. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
@@ -184,7 +181,7 @@ Content-type: application/json
 ```
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 {
@@ -210,7 +207,7 @@ The interaction between Shifts app and workforce integration endpoints follow th
 
 #### Request
 
-Here's an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -251,7 +248,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-Here's an example of the request. 
+The following example shows a request. 
 ```
 POST https://foobarWorkforceIntegration.com/foobar/v1/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/update
 Accept-Language: en-us
@@ -343,7 +340,7 @@ Content-type: application/json
 ```
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

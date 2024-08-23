@@ -4,48 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean bargeInAllowed = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-LinkedList<Prompt> promptsList = new LinkedList<Prompt>();
-MediaPrompt prompts = new MediaPrompt();
+com.microsoft.graph.beta.communications.calls.item.recordresponse.RecordResponsePostRequestBody recordResponsePostRequestBody = new com.microsoft.graph.beta.communications.calls.item.recordresponse.RecordResponsePostRequestBody();
+recordResponsePostRequestBody.setBargeInAllowed(true);
+recordResponsePostRequestBody.setClientContext("d45324c1-fcb5-430a-902c-f20af696537c");
+LinkedList<Prompt> prompts = new LinkedList<Prompt>();
+MediaPrompt prompt = new MediaPrompt();
+prompt.setOdataType("#microsoft.graph.mediaPrompt");
 MediaInfo mediaInfo = new MediaInfo();
-mediaInfo.uri = "https://cdn.contoso.com/beep.wav";
-mediaInfo.resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E";
-prompts.mediaInfo = mediaInfo;
+mediaInfo.setUri("https://cdn.contoso.com/beep.wav");
+mediaInfo.setResourceId("1D6DE2D4-CD51-4309-8DAA-70768651088E");
+prompt.setMediaInfo(mediaInfo);
+prompts.add(prompt);
+recordResponsePostRequestBody.setPrompts(prompts);
+recordResponsePostRequestBody.setMaxRecordDurationInSeconds(10);
+recordResponsePostRequestBody.setInitialSilenceTimeoutInSeconds(5);
+recordResponsePostRequestBody.setMaxSilenceTimeoutInSeconds(2);
+recordResponsePostRequestBody.setPlayBeep(true);
+LinkedList<String> stopTones = new LinkedList<String>();
+stopTones.add("#");
+stopTones.add("1");
+stopTones.add("*");
+recordResponsePostRequestBody.setStopTones(stopTones);
+var result = graphClient.communications().calls().byCallId("{call-id}").recordResponse().post(recordResponsePostRequestBody);
 
-promptsList.add(prompts);
-
-int maxRecordDurationInSeconds = 10;
-
-int initialSilenceTimeoutInSeconds = 5;
-
-int maxSilenceTimeoutInSeconds = 2;
-
-Boolean playBeep = true;
-
-LinkedList<String> stopTonesList = new LinkedList<String>();
-stopTonesList.add("#");
-stopTonesList.add("1");
-stopTonesList.add("*");
-
-graphClient.communications().calls("{id}")
-	.recordResponse(CallRecordResponseParameterSet
-		.newBuilder()
-		.withPrompts(promptsList)
-		.withBargeInAllowed(bargeInAllowed)
-		.withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
-		.withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
-		.withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
-		.withPlayBeep(playBeep)
-		.withStreamWhileRecording(null)
-		.withStopTones(stopTonesList)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

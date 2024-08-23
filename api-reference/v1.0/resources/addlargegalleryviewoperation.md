@@ -3,7 +3,7 @@ title: "addLargeGalleryViewOperation resource type"
 description: "Describes the response format for an operation that adds the large gallery view."
 author: "navali-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Inherits from [commsOperation](commsoperation.md).
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get addLargeGalleryViewOperation](../api/addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md) | Get the status of an operation that adds the large gallery view to a call. |
+| [Get large gallery view operation status](../api/addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md) | Get the status of an operation that adds the large gallery view to a call. |
 
 ## Properties
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

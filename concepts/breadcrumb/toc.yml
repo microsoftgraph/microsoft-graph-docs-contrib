@@ -1,7 +1,3 @@
-- name: Learn
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Microsoft Graph
-    tocHref: /graph/
-    topicHref: /graph/index
+- name: Microsoft Graph
+  tocHref: /graph/
+  topicHref: /graph/index

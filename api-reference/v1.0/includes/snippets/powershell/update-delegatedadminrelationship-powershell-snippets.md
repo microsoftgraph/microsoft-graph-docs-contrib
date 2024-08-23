@@ -28,6 +28,7 @@ $params = @{
 			}
 		)
 	}
+	autoExtendDuration = "P180D"
 }
 
 Update-MgTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params

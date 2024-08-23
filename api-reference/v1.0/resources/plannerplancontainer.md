@@ -3,7 +3,7 @@ title: "plannerPlanContainer resource type"
 description: "Represents a container for a plannerPlan. The container is a resource that specifies authorization rules and the lifetime of the plan."
 author: "TarkanSevilmis"
 ms.localizationpriority: high
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Microsoft Planner currently supports the container types listed in the following
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerPlanContainer"

@@ -6,22 +6,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Group
 {
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"graphlearn_courses" , new 
+			"bellowscollege_courses" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				CourseId = "123",
-				CourseName = "New Managers",
-				CourseType = "Online",
-			}
+				{
+					"courseId", new UntypedString("123")
+				},
+				{
+					"courseName", new UntypedString("New Managers")
+				},
+				{
+					"courseType", new UntypedString("Online")
+				},
+			})
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
 

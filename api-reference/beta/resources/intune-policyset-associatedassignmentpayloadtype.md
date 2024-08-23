@@ -2,18 +2,18 @@
 title: "associatedAssignmentPayloadType enum type"
 description: "This enum represents associated assignment payload type"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # associatedAssignmentPayloadType enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 This enum represents associated assignment payload type
 

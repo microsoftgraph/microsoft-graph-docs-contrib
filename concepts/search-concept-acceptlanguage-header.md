@@ -3,7 +3,7 @@ title: "Supported language codes"
 description: "Get a list of the supported language codes for the Microsoft Search API in Microsoft Graph."
 author: "cxiang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Supported language codes
@@ -139,6 +139,6 @@ Accept-Language: en-US, fr-FR;q=0.9
 ## Known limitations
 - If no Accept-Language header is present in the request, the server assumes that all languages are equally acceptable. If an Accept-Language header is present, then all languages, which are assigned a quality factor greater than zero are acceptable.
 
-## See also
+## Related content
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

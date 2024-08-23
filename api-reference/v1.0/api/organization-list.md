@@ -2,8 +2,9 @@
 title: "List organizations"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -17,14 +18,14 @@ Retrieve a list of organization objects. There's only one organization object in
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +37,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -46,7 +47,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body. Only one object is returned in the collection.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/organization
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -185,7 +186,7 @@ Content-type: application/json
                     "capabilities": "Email, OfficeCommunicationsOnline",
                     "isDefault": true,
                     "isInitial": true,
-                    "name": "Contoso.onmicrosoft.com",
+                    "name": "contoso.com",
                     "type": "Managed"
                 }
             ]

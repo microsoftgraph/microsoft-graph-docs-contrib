@@ -4,7 +4,7 @@ description: "Represents information for print document upload"
 title: "printDocumentUploadProperties resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: cloud-printing
+ms.subservice: universal-print
 ---
 # printDocumentUploadProperties resource type
 
@@ -14,9 +14,21 @@ Namespace: microsoft.graph
 
 Describes the document that is being uploaded
 
+## Properties
+
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| contentType | String    | The document's content (MIME) type.|
+| documentName | String | The document's name.|
+| size          | Int64            | The document's size in bytes.|
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -32,15 +44,6 @@ Here is a JSON representation of the resource
   "size": "Int64",
 }
 ```
-
-## Properties
-
-
-| Property	     | Type              |Description
-|:-------------------|:------------------|:------------------------------------
-| contentType | String    | The document's content (MIME) type.
-| documentName | String | The document's name.
-| size          | Int64            | The document's size in bytes.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,7 +3,7 @@ title: "sensitivityLabelAssignment resource type"
 description: "Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business."
 author: "jaLuthra"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ Provides details about a sensitivity label assigned to a [file](./driveitem.md) 
 |labels|[extractSensitivityLabelsResult](./extractsensitivitylabelsresult.md)|List of sensitivity labels assigned to a file.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sensitivityLabelAssignment"

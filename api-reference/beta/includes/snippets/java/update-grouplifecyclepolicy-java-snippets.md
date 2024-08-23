@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 GroupLifecyclePolicy groupLifecyclePolicy = new GroupLifecyclePolicy();
-groupLifecyclePolicy.groupLifetimeInDays = 180;
-groupLifecyclePolicy.managedGroupTypes = "Selected";
-groupLifecyclePolicy.alternateNotificationEmails = "admin@contoso.com";
+groupLifecyclePolicy.setGroupLifetimeInDays(180);
+groupLifecyclePolicy.setManagedGroupTypes("Selected");
+groupLifecyclePolicy.setAlternateNotificationEmails("admin@contoso.com");
+GroupLifecyclePolicy result = graphClient.groupLifecyclePolicies().byGroupLifecyclePolicyId("{groupLifecyclePolicy-id}").patch(groupLifecyclePolicy);
 
-graphClient.groupLifecyclePolicies("{id}")
-	.buildRequest()
-	.patch(groupLifecyclePolicy);
 
 ```

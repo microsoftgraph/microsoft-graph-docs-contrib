@@ -1,8 +1,7 @@
 ---
 author: AlexFilipin
 ms.topic: include
-ms.date: 03/21/2023
 ms.author: alexander.filipin
 ---
 
-For delegated scenarios, the admin needs at least the *Global Reader* or *Lifecycle Workflows Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Global Reader* and *Lifecycle Workflows Administrator* are the least privileged roles supported for this operation.

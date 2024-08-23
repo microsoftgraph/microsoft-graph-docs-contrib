@@ -5,8 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceManagement;
+use Microsoft\Graph\Generated\Models\DeviceManagementSubscriptionState;
+use Microsoft\Graph\Generated\Models\DeviceProtectionOverview;
+use Microsoft\Graph\Generated\Models\WindowsMalwareOverview;
+use Microsoft\Graph\Generated\Models\WindowsMalwareStateCount;
+use Microsoft\Graph\Generated\Models\WindowsMalwareThreatState;
+use Microsoft\Graph\Generated\Models\WindowsMalwareSeverityCount;
+use Microsoft\Graph\Generated\Models\WindowsMalwareSeverity;
+use Microsoft\Graph\Generated\Models\WindowsMalwareExecutionStateCount;
+use Microsoft\Graph\Generated\Models\WindowsMalwareExecutionState;
+use Microsoft\Graph\Generated\Models\WindowsMalwareCategoryCount;
+use Microsoft\Graph\Generated\Models\WindowsMalwareCategory;
+use Microsoft\Graph\Generated\Models\WindowsMalwareNameCount;
+use Microsoft\Graph\Generated\Models\OsVersionCount;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceManagement();

@@ -3,7 +3,8 @@ title: "roleManagement resource type"
 description: "Microsoft 365 role-based access control (RBAC) resource."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -35,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.roleManagement",

@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	value = @(
-		"externalId-value1"
-		"externalId-value2"
-	)
+	"externalId-value1"
+"externalId-value2"
+)
 }
 
 Remove-MgBetaSecurityTiIndicatorByExternalId -BodyParameter $params

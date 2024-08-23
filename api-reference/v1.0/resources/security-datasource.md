@@ -3,7 +3,7 @@ title: "dataSource resource type"
 description: "The dataSource entity is an abstract base class used to identify sources of content for eDiscovery."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

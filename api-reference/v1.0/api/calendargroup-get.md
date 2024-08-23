@@ -3,7 +3,7 @@ title: "Get calendarGroup"
 description: "Retrieve the properties and relationships of a calendar group object."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Retrieve the properties and relationships of a [calendar group](../resources/cal
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Calendars.ReadBasic, Calendars.Read         |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read         |
-| Application                            | Calendars.ReadBasic, Calendars.Read         |
+<!-- { "blockType": "permissions", "name": "calendargroup_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/calendargroup-get-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +41,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

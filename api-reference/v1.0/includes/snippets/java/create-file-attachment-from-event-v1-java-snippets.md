@@ -4,14 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 FileAttachment attachment = new FileAttachment();
-attachment.name = "menu.txt";
-attachment.contentBytes = Base64.getDecoder().decode("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=");
+attachment.setOdataType("#microsoft.graph.fileAttachment");
+attachment.setName("menu.txt");
+byte[] contentBytes = Base64.getDecoder().decode("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=");
+attachment.setContentBytes(contentBytes);
+Attachment result = graphClient.me().events().byEventId("{event-id}").attachments().post(attachment);
 
-graphClient.me().events("AAMkAGI1AAAt9AHjAAA=").attachments()
-	.buildRequest()
-	.post(attachment);
 
 ```

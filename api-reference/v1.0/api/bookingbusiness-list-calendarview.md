@@ -3,7 +3,7 @@ title: "List business calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness that occurs in the specified date range."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -13,17 +13,14 @@ Namespace: microsoft.graph
 
 Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md) that occurs in the specified date range.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_list_calendarview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-list-calendarview-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +39,13 @@ In the request URL, provide the following required query parameters with values.
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -62,16 +59,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusinesslistcalendarview",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 # [C#](#tab/csharp)
@@ -110,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -125,12 +122,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
+	    "customerName": "Jordan Miller",
+	    "customerEmailAddress": "jordanm@contoso.com",
+	    "customerPhone": "213-555-0199",
+	    "customerNotes": null,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "anonymousJoinWebUrl": null,
             "customers": [
@@ -179,11 +180,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-05-05T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-05T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -217,6 +218,10 @@ Content-type: application/json
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "anonymousJoinWebUrl": null,
+	    "customerName": "Jordan Miller",
+	    "customerEmailAddress": "jordanm@contoso.com",
+	    "customerPhone": "213-555-0199",
+	    "customerNotes": null,	
             "customers": [
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -263,11 +268,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "startDateTime": {
+            "start": {
                 "dateTime": "2018-05-06T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "endDateTime": {
+            "end": {
                 "dateTime": "2018-05-06T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },

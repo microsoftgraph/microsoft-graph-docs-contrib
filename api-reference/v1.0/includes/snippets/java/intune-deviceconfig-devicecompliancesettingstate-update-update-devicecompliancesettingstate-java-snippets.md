@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceComplianceSettingState deviceComplianceSettingState = new DeviceComplianceSettingState();
-deviceComplianceSettingState.setting = "Setting value";
-deviceComplianceSettingState.settingName = "Setting Name value";
-deviceComplianceSettingState.deviceId = "Device Id value";
-deviceComplianceSettingState.deviceName = "Device Name value";
-deviceComplianceSettingState.userId = "User Id value";
-deviceComplianceSettingState.userEmail = "User Email value";
-deviceComplianceSettingState.userName = "User Name value";
-deviceComplianceSettingState.userPrincipalName = "User Principal Name value";
-deviceComplianceSettingState.deviceModel = "Device Model value";
-deviceComplianceSettingState.state = ComplianceStatus.NOT_APPLICABLE;
-deviceComplianceSettingState.complianceGracePeriodExpirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:56:44.951111+00:00");
+deviceComplianceSettingState.setOdataType("#microsoft.graph.deviceComplianceSettingState");
+deviceComplianceSettingState.setSetting("Setting value");
+deviceComplianceSettingState.setSettingName("Setting Name value");
+deviceComplianceSettingState.setDeviceId("Device Id value");
+deviceComplianceSettingState.setDeviceName("Device Name value");
+deviceComplianceSettingState.setUserId("User Id value");
+deviceComplianceSettingState.setUserEmail("User Email value");
+deviceComplianceSettingState.setUserName("User Name value");
+deviceComplianceSettingState.setUserPrincipalName("User Principal Name value");
+deviceComplianceSettingState.setDeviceModel("Device Model value");
+deviceComplianceSettingState.setState(ComplianceStatus.NotApplicable);
+OffsetDateTime complianceGracePeriodExpirationDateTime = OffsetDateTime.parse("2016-12-31T23:56:44.951111-08:00");
+deviceComplianceSettingState.setComplianceGracePeriodExpirationDateTime(complianceGracePeriodExpirationDateTime);
+DeviceComplianceSettingState result = graphClient.deviceManagement().deviceCompliancePolicySettingStateSummaries().byDeviceCompliancePolicySettingStateSummaryId("{deviceCompliancePolicySettingStateSummary-id}").deviceComplianceSettingStates().byDeviceComplianceSettingStateId("{deviceComplianceSettingState-id}").patch(deviceComplianceSettingState);
 
-graphClient.deviceManagement().deviceCompliancePolicySettingStateSummaries("{deviceCompliancePolicySettingStateSummaryId}").deviceComplianceSettingStates("{deviceComplianceSettingStateId}")
-	.buildRequest()
-	.patch(deviceComplianceSettingState);
 
 ```

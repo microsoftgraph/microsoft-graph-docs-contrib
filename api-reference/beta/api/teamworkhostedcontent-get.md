@@ -3,7 +3,7 @@ title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
 ms.localizationpriority: medium
 author: "jecha"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -19,14 +19,11 @@ Retrieve the [hosted content](../resources/teamworkhostedcontent.md) in an [app'
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for app icon in app catalog
-| Permission Type                        | Permissions (from least to most privileged)                      |
-| :------------------------------------- | :--------------------------------------------------------------- |
-| Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
-| Delegated (personal Microsoft account) | Not supported.                                                   |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
+<!-- { "blockType": "permissions", "name": "teamworkhostedcontent_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamworkhostedcontent-get-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ This operation supports the `$select` [OData query parameters](/graph/query-para
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -198,7 +195,7 @@ HTTP/1.1 200 OK
 Content-type: image/png
 ```
 
-## See also
+## Related content
 
 - [Get icons of a Teams app](teamsappicon-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

@@ -3,7 +3,7 @@ title: "actionStep resource type"
 description: "Represents a single action to take toward completing a recommendation."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a single action to take toward completing a [recommendation](../resou
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionStep"

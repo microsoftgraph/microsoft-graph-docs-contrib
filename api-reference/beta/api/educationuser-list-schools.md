@@ -3,7 +3,7 @@ title: "List schools"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Retrieve a list of schools for a user.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | EduRoster.ReadBasic                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationuser_list_schools" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-list-schools-permissions.md)]
 
 > [!NOTE]
 > When delegated permissions are used, only educationSchool resources that the authentication user is a member will be returned.
@@ -47,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

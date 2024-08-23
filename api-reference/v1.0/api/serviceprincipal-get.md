@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of servicePrincipal object."
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -16,13 +16,10 @@ Retrieve the properties and relationships of a [servicePrincipal](../resources/s
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-get-permissions.md)]
 
 > [!NOTE]
 > A service principal can retrieve its own application and service principal details without being granted any application permissions.
@@ -50,7 +47,7 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language| Language code. Optional.   |
 
 Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
@@ -66,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 ### Example 1: Retrieve a service principal by its ID
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -114,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -173,7 +170,7 @@ Content-type: application/json
 ### Example 2: Retrieve the specific properties of a service principal
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -220,7 +217,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7408235b-7540-4850-82fe-a
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -301,7 +298,7 @@ To get custom security attribute assignments, the calling principal must be assi
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -348,7 +345,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}?$select=customSecuri
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

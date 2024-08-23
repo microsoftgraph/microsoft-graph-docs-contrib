@@ -2,8 +2,8 @@
 title: "requiredPasswordType enum type"
 description: "Possible values of required passwords."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

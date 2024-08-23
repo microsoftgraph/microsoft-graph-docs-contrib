@@ -2,8 +2,8 @@
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceAppManagement/defaultManagedAppProtections
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -101,8 +103,10 @@ The following table shows the properties that are required when you create the d
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 |gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
+|allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data. (iOS Only)|
@@ -154,6 +158,9 @@ The following table shows the properties that are required when you create the d
 |requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
 |fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
 |minimumWarningSdkVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. (iOS only)|
+|messagingRedirectAppUrlScheme|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.|
+|messagingRedirectAppDisplayName|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app name which are allowed to be used.|
+|messagingRedirectAppPackageId|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app package ids which are allowed to be used.|
 
 
 
@@ -167,7 +174,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5903
+Content-length: 6236
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -227,8 +234,10 @@ Content-length: 5903
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
   "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+  "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
+  "allowWidgetContentSync": true,
   "encryptAppData": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
@@ -299,7 +308,10 @@ Content-length: 5903
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
   "fingerprintAndBiometricEnabled": true,
-  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+  "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+  "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+  "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
 }
 ```
 
@@ -308,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6075
+Content-Length: 6408
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -371,8 +383,10 @@ Content-Length: 6075
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
   "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+  "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
+  "allowWidgetContentSync": true,
   "encryptAppData": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
@@ -443,6 +457,9 @@ Content-Length: 6075
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
   "fingerprintAndBiometricEnabled": true,
-  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+  "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+  "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+  "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
 }
 ```

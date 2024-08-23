@@ -3,7 +3,7 @@ title: "teamworkHardwareDetail resource type"
 description: "Represents the details about the hardware properties of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents the details about the hardware properties of a Microsoft Teams-enable
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkHardwareDetail"

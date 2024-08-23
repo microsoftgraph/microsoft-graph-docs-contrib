@@ -3,7 +3,7 @@ title: "participantLeftNotification resource type"
 description: "Contains details about the policy-based participant who has left the call."
 author: "yizhenww"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Under the [Policy-based recording](/microsoftteams/teams-recording-policy) scena
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

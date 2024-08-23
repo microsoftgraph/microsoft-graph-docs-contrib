@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.external_connectors.identity import Identity
+from msgraph.generated.models.identity_type import IdentityType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

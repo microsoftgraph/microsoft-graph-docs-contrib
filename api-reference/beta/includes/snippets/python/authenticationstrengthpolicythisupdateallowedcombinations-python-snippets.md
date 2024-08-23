@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.policies.authenticationstrengthpolicies.item.update_allowed_combinations.update_allowed_combinations_post_request_body import UpdateAllowedCombinationsPostRequestBody
+from msgraph_beta.generated.models.authentication_method_modes import AuthenticationMethodModes
 
 graph_client = GraphServiceClient(credentials, scopes)
 

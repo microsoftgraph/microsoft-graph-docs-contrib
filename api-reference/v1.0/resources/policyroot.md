@@ -1,9 +1,9 @@
 ---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "rkarim-ms"
+author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "non-product-specific"
 doc_type: resourcePageType
 ---
 
@@ -47,7 +47,7 @@ None
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -4,7 +4,7 @@ description: "Get a user's presence information."
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Get presence
@@ -13,31 +13,30 @@ Namespace: microsoft.graph
 
 Get a user's [presence](../resources/presence.md) information.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read, Presence.Read.All      |
-| Delegated (personal Microsoft account) | Not Supported.                        |
-| Application                            | Not Supported.                        |
+<!-- { "blockType": "permissions", "name": "presence_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/presence-get-permissions.md)]
 
-> **Note:** The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
+> [!NOTE]
+> - You can't use application permissions to access APIs under the `/me` path.
+> - The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/presence
 GET /users/{id}/presence
 GET /communications/presences
+GET /me/presence
 ```
 
 ## Request Headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body

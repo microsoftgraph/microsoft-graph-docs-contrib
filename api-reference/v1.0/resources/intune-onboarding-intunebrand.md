@@ -2,8 +2,8 @@
 title: "intuneBrand resource type"
 description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

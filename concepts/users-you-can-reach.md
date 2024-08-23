@@ -42,6 +42,7 @@ Use Microsoft Graph to reach students, teachers, and schools with licenses to Mi
 - Check out some [partner solutions](https://developer.microsoft.com/graph/partners).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
-- Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.
+- Explore the [services and features](overview-major-services.md) that you can use in your scenarios.
+- See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Find out how to [get an auth token](./auth/index.yml) in your app.
 - Start [using the API](use-the-api.md).

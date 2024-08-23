@@ -2,8 +2,8 @@
 title: "deviceManagementPartner resource type"
 description: "Entity which represents a connection to device management partner."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

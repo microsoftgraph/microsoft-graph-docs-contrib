@@ -3,7 +3,7 @@ title: "taskReportSummary resource type"
 description: "A summary of task processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts (successful, failed, unprocessed, and total tasks)."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.taskReportSummary"

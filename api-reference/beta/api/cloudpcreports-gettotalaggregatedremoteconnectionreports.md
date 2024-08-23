@@ -3,7 +3,7 @@ title: "cloudPcReports: getTotalAggregatedRemoteConnectionReports"
 description: "Get the total aggregated remote connection usage of a Cloud PC during a given time span."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,13 @@ Namespace: microsoft.graph
 
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudpcreports_gettotalaggregatedremoteconnectionreports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /deviceManagement/virtualEndpoint/reports/getTotalAggregatedRemoteConnectio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -48,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |search|String|Specifies a string to search|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as select parameter|
@@ -65,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +84,9 @@ Content-length: 199
         "ManagedDeviceName",
         "UserPrincipalName",
         "TotalUsageInHour",
-        "DaysSinceLastSignIn"
+        "LastActiveTime",
+        "PcType",
+        "CreatedDate"
     ]
 }
 ```
@@ -159,17 +158,27 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "DaysSinceLastSignIn",
-            "PropertyType": "Int64"
+            "Column": "LastActiveTime",
+            "PropertyType": "DateTime"
+        },
+        {
+            "Column": "PcType",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "CreatedDate",
+            "PropertyType": "DateTime"
         }
     ],
     "Values": [
         [
             "40f9315c-5b63-4126-9f89-b7dcb145ffff",
             "CPC-DisplayName",
-            "connie@cpccontoso.onmicrosoft.com",
+            "connie@contoso.com",
             66.36944444444444,
-            0
+            "2023-04-17T01:43:18",
+            "Cloud PC Enterprise 8vCPU/32GB/512GB",
+            "2022-03-30T13:48:38"
         ]
     ]
 }

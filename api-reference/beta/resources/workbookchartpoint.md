@@ -3,8 +3,9 @@ title: "workbookChartPoint resource type"
 description: "Represents a point of a series in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart point
 ---
 
 # workbookChartPoint resource type
@@ -20,24 +21,24 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
-|[List](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md) collection |Get chartPoint object collection. |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|Retrieve a point based on its position within the series.|
+|[List](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md) collection |Get a list of chartPoint objects. |
+|[Get](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |Read the properties and relationships of a chartPoint object.|
+|[Get chart point at](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|Get a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|value|Json|Returns the value of a chart point. Read-only.|
 |ID|string|unique identifier|
+|value|Json|The value of a chart point. Read-only.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](workbookchartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
+|format|[workbookChartPointFormat](workbookchartpointformat.md)|The format properties of the chart point. Read-only.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

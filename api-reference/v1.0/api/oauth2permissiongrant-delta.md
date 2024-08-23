@@ -3,7 +3,7 @@ title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
 ms.localizationpriority: medium
 author: "psignoret"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -17,14 +17,13 @@ Get newly created, updated, or deleted [oauth2permissiongrant](../resources/oaut
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DelegatedPermissionGrant.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "oauth2permissiongrant_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-delta-permissions.md)]
+
+[!INCLUDE [rbac-oauth2permissiongrant-apis-read](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-read.md)]
 
 ## HTTP request
 
@@ -44,7 +43,7 @@ You only need to specify query parameters once.
 In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. The URL 
 includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL, including this token, in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same resource collection. |
@@ -60,7 +59,7 @@ This method supports OData query parameters to help customize the response.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,31 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Call call = new Call();
-call.callbackUri = "https://bot.contoso.com/callback";
-LinkedList<InvitationParticipantInfo> targetsList = new LinkedList<InvitationParticipantInfo>();
-InvitationParticipantInfo targets = new InvitationParticipantInfo();
+call.setOdataType("#microsoft.graph.call");
+call.setCallbackUri("https://bot.contoso.com/callback");
+LinkedList<InvitationParticipantInfo> targets = new LinkedList<InvitationParticipantInfo>();
+InvitationParticipantInfo invitationParticipantInfo = new InvitationParticipantInfo();
+invitationParticipantInfo.setOdataType("#microsoft.graph.invitationParticipantInfo");
 IdentitySet identity = new IdentitySet();
+identity.setOdataType("#microsoft.graph.identitySet");
 Identity user = new Identity();
-user.displayName = "John";
-user.id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8";
-identity.user = user;
-targets.identity = identity;
-targetsList.add(targets);
-call.targets = targetsList;
-LinkedList<Modality> requestedModalitiesList = new LinkedList<Modality>();
-requestedModalitiesList.add(Modality.AUDIO);
-call.requestedModalities = requestedModalitiesList;
+user.setOdataType("#microsoft.graph.identity");
+user.setDisplayName("John");
+user.setId("112f7296-5fa4-42ca-bae8-6a692b15d4b8");
+identity.setUser(user);
+invitationParticipantInfo.setIdentity(identity);
+targets.add(invitationParticipantInfo);
+call.setTargets(targets);
+LinkedList<Modality> requestedModalities = new LinkedList<Modality>();
+requestedModalities.add(Modality.Audio);
+call.setRequestedModalities(requestedModalities);
 OutgoingCallOptions callOptions = new OutgoingCallOptions();
-callOptions.isContentSharingNotificationEnabled = true;
-call.callOptions = callOptions;
+callOptions.setOdataType("#microsoft.graph.outgoingCallOptions");
+callOptions.setIsContentSharingNotificationEnabled(true);
+call.setCallOptions(callOptions);
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
-call.mediaConfig = mediaConfig;
+mediaConfig.setOdataType("#microsoft.graph.serviceHostedMediaConfig");
+call.setMediaConfig(mediaConfig);
+Call result = graphClient.communications().calls().post(call);
 
-graphClient.communications().calls()
-	.buildRequest()
-	.post(call);
 
 ```

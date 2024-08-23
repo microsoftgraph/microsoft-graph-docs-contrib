@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -53,14 +55,20 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"expiration" , new 
+			"expiration" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Type = "afterDuration",
-				Duration = "P365D",
-			}
+				{
+					"type", new UntypedString("afterDuration")
+				},
+				{
+					"duration", new UntypedString("P365D")
+				},
+			})
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies.PostAsync(requestBody);
 
 

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new UnifiedRoleAssignmentScheduleRequest
 {
@@ -17,7 +18,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 	Justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	ScheduleInfo = new RequestSchedule
 	{
-		StartDateTime = DateTimeOffset.Parse("2021-09-04T15:13:00.000Z"),
+		StartDateTime = DateTimeOffset.Parse("2024-03-25T15:13:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDuration,
@@ -30,6 +31,8 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 		TicketSystem = "Contoso ICM",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleRequests.PostAsync(requestBody);
 
 

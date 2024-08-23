@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.Messages.Item.Forward;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Me.Messages.Item.Forward.ForwardPostRequestBody
+var requestBody = new ForwardPostRequestBody
 {
 	Comment = "comment-value",
 	ToRecipients = new List<Recipient>
@@ -23,6 +25,8 @@ var requestBody = new Microsoft.Graph.Me.Messages.Item.Forward.ForwardPostReques
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Messages["{message-id}"].Forward.PostAsync(requestBody);
 
 

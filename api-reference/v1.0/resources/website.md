@@ -3,7 +3,7 @@ title: "website resource type"
 description: "Represents a website."
 ms.localizationpriority: medium
 author: "AAmatino"
-ms.prod: applications
+ms.subservice: entra-applications
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents a website.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

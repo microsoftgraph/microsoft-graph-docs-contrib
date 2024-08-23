@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const scheduleActionsForRules = Content-type: application/json
-Content-length: 242
-
-{
+const scheduleActionsForRules = {
   deviceComplianceScheduledActionForRules: [
     {
       '@odata.type': '#microsoft.graph.deviceComplianceScheduledActionForRule',

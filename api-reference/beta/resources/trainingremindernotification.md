@@ -3,7 +3,7 @@ title: "trainingReminderNotification resource type"
 description: "Represents notification content details for a training reminder during a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ Inherits from [baseEndUserNotification](../resources/baseendusernotification.md)
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

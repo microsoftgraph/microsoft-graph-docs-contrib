@@ -3,7 +3,7 @@ title: "participantJoiningNotification resource type"
 description: "Contains details about the policy-based participant joining a call."
 author: "yizhenww"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ A [participantJoiningResponse](participantjoiningResponse.md) in the response pa
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

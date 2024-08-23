@@ -3,7 +3,7 @@ title: "Use workbook functions in Excel"
 description: "You can use the workbook functions in Excel with Microsoft Graph to invoke any workbook function. Includes examples for vlookup and median functions."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Use workbook functions in Excel
@@ -110,7 +110,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)

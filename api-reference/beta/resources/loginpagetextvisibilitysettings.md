@@ -3,7 +3,7 @@ title: "loginPageTextVisibilitySettings resource type"
 description: "Contains details of the organization's branding."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents the various text strings that can be hidden on the sign-in page for a
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"

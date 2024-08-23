@@ -4,7 +4,7 @@ description: "Represents a column in a site, a list, or a contentType."
 title: "columnDefinition resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # columnDefinition resource type
@@ -49,7 +49,7 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **name**                  | string                          | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**. |
 | **readOnly**              | Boolean                         | Specifies whether the column values can be modified.                                                                                |
 | **required**              | Boolean                         | Specifies whether the column value isn't optional.                                                                                  |
-| **boolean**               | [booleanColumn][]               | This column stores boolean values.                                                                                                  |
+| **boolean**               | [booleanColumn][]               | This column stores Boolean values.                                                                                                  |
 | **calculated**            | [calculatedColumn][]            | This column's data is calculated based on other columns.                                                                            |
 | **choice**                | [choiceColumn][]                | This column stores data from a list of choices.                                                                                     |
 | **currency**              | [currencyColumn][]              | This column stores currency values.                                                                                                 |
@@ -84,7 +84,7 @@ In those cases, none of the column type facets will be populated, and the column
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

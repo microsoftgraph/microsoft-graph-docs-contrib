@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ExternalIdentitiesPolicy externalIdentitiesPolicy = new ExternalIdentitiesPolicy();
-externalIdentitiesPolicy.allowExternalIdentitiesToLeave = false;
+externalIdentitiesPolicy.setAllowExternalIdentitiesToLeave(false);
+ExternalIdentitiesPolicy result = graphClient.policies().externalIdentitiesPolicy().patch(externalIdentitiesPolicy);
 
-graphClient.policies().externalIdentitiesPolicy()
-	.buildRequest()
-	.patch(externalIdentitiesPolicy);
 
 ```

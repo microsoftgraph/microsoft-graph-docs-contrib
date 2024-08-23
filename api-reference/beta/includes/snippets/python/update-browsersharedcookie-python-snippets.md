@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.browser_shared_cookie import BrowserSharedCookie
+from msgraph_beta.generated.models.browser_shared_cookie_source_environment import BrowserSharedCookieSourceEnvironment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.identityGovernance().lifecycleWorkflows().workflows("4c9c57b9-e1e9-4bed-a936-4fad9d8f5638")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").delete();
+
 
 ```

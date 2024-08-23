@@ -1,13 +1,13 @@
 ---
-title: "page resource type"
+title: "onenotePage resource type"
 description: "A page in a OneNote notebook."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
-# page resource type
+# onenotePage resource type
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ A page in a OneNote notebook.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -70,9 +70,9 @@ Here is a JSON representation of the resource.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get page](../api/page-get.md) | [Page](page.md) |Read the properties and relationships of the page.|
-|[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
+|[Update page](../api/page-update.md) | None |Update the HTML content of the page. |
 |[Delete page](../api/page-delete.md) | None |Delete the page. |
-|[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|
+|[Copy to section](../api/page-copytosection.md)| None |Copies the page to a specific section.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

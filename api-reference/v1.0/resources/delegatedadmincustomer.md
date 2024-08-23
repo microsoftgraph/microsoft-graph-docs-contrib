@@ -3,7 +3,7 @@ title: "delegatedAdminCustomer resource type"
 description: "Represents a customer who has a delegated admin relationship with a Microsoft partner."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -16,8 +16,8 @@ Represents a Microsoft Entra organization that is a customer of a Microsoft part
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) collection|Get a list of the **delegatedAdminCustomer** objects and their properties.|
-|[Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Read the properties and relationships of a **delegatedAdminCustomer** object.|
+|[List](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) collection|Get a list of the **delegatedAdminCustomer** objects and their properties.|
+|[Get](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Read the properties and relationships of a **delegatedAdminCustomer** object.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Represents a Microsoft Entra organization that is a customer of a Microsoft part
 |serviceManagementDetails|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Contains the management details of a service in the customer tenant that's managed by delegated administration.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

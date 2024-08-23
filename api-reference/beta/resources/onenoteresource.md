@@ -3,7 +3,7 @@ title: "onenoteResource resource type"
 description: "An image or other file resource on a OneNote page. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: notes
+ms.subservice: onenote
 author: "jewan-microsoft"
 ---
 
@@ -66,13 +66,13 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
+|[Get resource](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| content | Edm.Stream||
-| contentUrl | String ||
+| content | Edm.Stream|The content of the resource.|
+| contentUrl | String |The URL for the content stream.|
 
 ## Relationships
 None.

@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Permission
 ms.localizationpriority: high
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -281,10 +281,10 @@ property will contain the information about the account that redeemed the permis
 |:---------------------------------------------------------|:-----------------------
 | [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Add](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [Add permissions](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update permission](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete permission](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Grant access to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -293,5 +293,6 @@ property will contain the information about the account that redeemed the permis
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
+  "tocPath": "Resources/Permission",
+  "suppressions": []
 } -->

@@ -2,18 +2,18 @@
 title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementConfigurationTechnologies enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Describes which technology this setting can be deployed with
 
@@ -29,6 +29,8 @@ Describes which technology this setting can be deployed with
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel.|
 |mobileApplicationManagement|512|Setting can be deployed through the Mobile Application Management (MAM) channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel.|
+|extensibility|2048|Setting can be deployed through the Extensibility channel.|
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
 |unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|
+|windowsOsRecovery|32768|Setting can be deployed using the Operating System Recovery channel|

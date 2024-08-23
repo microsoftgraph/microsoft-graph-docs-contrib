@@ -3,8 +3,9 @@ title: "educationCategory resource type"
 description: "A category that can be applied to assignments."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Category
 ---
 
 # educationCategory resource type
@@ -18,9 +19,9 @@ A category that can be applied to assignments.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
-|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
-|[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
+|[Create](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
+|[Get](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
+|[Delete](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
 |[Get delta](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) collection|Get a list of newly created or updated **educationCategory** objects without having to perform a full read of the collection.|
 
 
@@ -30,9 +31,13 @@ A category that can be applied to assignments.
 |displayName|String|Unique identifier for the category.|
 |id|String|Unique identifier for the category.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

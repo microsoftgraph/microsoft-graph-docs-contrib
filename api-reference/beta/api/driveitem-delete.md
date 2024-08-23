@@ -4,7 +4,7 @@ description: "Delete a DriveItem by using its ID or path."
 ms.date: 09/10/2017
 title: Delete a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete a DriveItem
@@ -20,13 +20,10 @@ Deleting items using this method moves the items to the recycle bin instead of p
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-delete-permissions.md)]
 
 ## HTTP request
 
@@ -44,18 +41,21 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
+| if-match      | String | If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted. |
 
 ## Example
 
-Here's an example of how to call this API.
+The following example shows how to call this API.
 
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}
+DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
 # [C#](#tab/csharp)
@@ -94,6 +94,7 @@ DELETE /me/drive/items/{item-id}
 
 ## Response
 
+The following example shows the response. 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
@@ -104,8 +105,7 @@ HTTP/1.1 204 No Content
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+See [Error responses][error-response] for more info about how errors are returned.
 
 [error-response]: /graph/errors
 

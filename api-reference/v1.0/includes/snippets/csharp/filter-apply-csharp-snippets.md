@@ -6,9 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply;
+using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply.ApplyPostRequestBody
+var requestBody = new ApplyPostRequestBody
 {
 	Criteria = new WorkbookFilterCriteria
 	{
@@ -24,12 +27,14 @@ var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Ite
 			Index = 99,
 		},
 		DynamicCriteria = "dynamicCriteria-value",
-		Values = new Json
+		Values = new UntypedObject(new Dictionary<string, UntypedNode>
 		{
-		},
+		}),
 		FilterOn = "filterOn-value",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].Filter.Apply.PostAsync(requestBody);
 
 

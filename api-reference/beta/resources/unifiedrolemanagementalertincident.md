@@ -3,8 +3,9 @@ title: "unifiedRoleManagementAlertIncident resource type"
 description: "An abstract type that represents the details of a security alert incident in your tenant in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Role management alert incident
 ---
 
 # unifiedRoleManagementAlertIncident resource type
@@ -32,9 +33,9 @@ For more information about working with security alerts for Microsoft Entra role
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alertIncidents](../api/unifiedrolemanagementalert-list-alertincidents.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Get a list of the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) objects and their properties.|
-|[Get unifiedRoleManagementAlertIncident](../api/unifiedrolemanagementalertincident-get.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md)|Read the properties and relationships of an [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
-|[remediate](../api/unifiedrolemanagementalertincident-remediate.md)|None|Remediate or mitigate an incident of an alert.|
+|[List](../api/unifiedrolemanagementalert-list-alertincidents.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Get a list of the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) objects and their properties.|
+|[Get](../api/unifiedrolemanagementalertincident-get.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md)|Read the properties and relationships of an [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object.|
+|[Remediate](../api/unifiedrolemanagementalertincident-remediate.md)|None|Remediate or mitigate an incident of an alert.|
 
 ## Properties
 |Property|Type|Description|
@@ -45,7 +46,7 @@ For more information about working with security alerts for Microsoft Entra role
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -61,5 +62,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 + [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).

@@ -3,7 +3,7 @@ title: "provisioningObjectSummary resource type"
 description: "Represents an action performed by the Microsoft Entra provisioning service and its associated properties."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -18,7 +18,7 @@ Represents an action performed by the Microsoft Entra provisioning service and i
 
 | Method  | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
+| [List](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
 
 
 ## Properties
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

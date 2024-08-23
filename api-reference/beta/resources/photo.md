@@ -4,7 +4,7 @@ description: "The photo resource provides photo and camera properties, for examp
 ms.date: 09/10/2017
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: files
+ms.subservice: onedrive
 doc_type: "resourcePageType"
 ---
 
@@ -35,7 +35,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

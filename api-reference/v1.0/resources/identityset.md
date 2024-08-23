@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "identitySet resource type"
 description: "Represents a keyed collection of identity resources."
 ms.localizationpriority: medium
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -28,10 +28,13 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 | phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
 | user        | [identity](identity.md) | Optional. The user associated with this action.         |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
        "optionalProperties": ["application", "applicationInstance", "conversation", "conversationIdentityType", "encrypted", "onPremises", "guest", "phone", "user", "device"],
@@ -51,7 +54,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 For examples about the usage of **identitySet** resources, see [driveItem](driveitem.md).
 

@@ -6,19 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.CitationTemplate
+var requestBody = new CitationTemplate
 {
 	OdataType = "#microsoft.graph.security.citationTemplate",
-	DisplayName = "String",
-	CreatedBy = new IdentitySet
-	{
-		OdataType = "microsoft.graph.identitySet",
-	},
-	CitationUrl = "String",
-	CitationJurisdiction = "String",
+	DisplayName = "Contoso Company Policy",
+	CitationUrl = "www.citationUrl.com",
+	CitationJurisdiction = "Contoso",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Labels.Citations.PostAsync(requestBody);
 
 

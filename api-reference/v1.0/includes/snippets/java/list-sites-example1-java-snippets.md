@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SiteCollectionPage sites = graphClient.sites()
-	.buildRequest()
-	.filter("siteCollection/root ne null")
-	.select("siteCollection,webUrl")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+SiteCollectionResponse result = graphClient.sites().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"siteCollection", "webUrl"};
+	requestConfiguration.queryParameters.filter = "siteCollection/root ne null";
+});
+
 
 ```

@@ -2,8 +2,8 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -32,4 +32,5 @@ Management agent type.
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
-|windowsManagementCloudApi|512|This device is managed by Windows Management Cloud API.|
+|msSense|1024||
+|intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|

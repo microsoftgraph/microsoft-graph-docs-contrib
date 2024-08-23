@@ -3,7 +3,7 @@ title: "serviceUpdateMessageViewpoint resource type"
 description: Represents user view points data for a serviceUpdateMessage."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents user view points data for a [serviceUpdateMessage](../resources/servi
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.serviceUpdateMessageViewpoint"

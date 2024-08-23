@@ -3,7 +3,7 @@ title: "notificationReceiver resource type"
 description: "Represents the locale and contact information provided by a user in a notification channel."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents the locale and contact information provided by a user in a [notificat
 
 None.
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagement.notificationReceiver"

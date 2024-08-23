@@ -3,7 +3,7 @@ title: "apiAuthenticationConfigurationBase resource type"
 description: "Represents the base type of authentication configuration used for calling an API."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"

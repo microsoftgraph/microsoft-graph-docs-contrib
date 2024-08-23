@@ -4,14 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PrintTaskTrigger printTaskTrigger = new PrintTaskTrigger();
-printTaskTrigger.event = PrintEvent.JOB_STARTED;
-printTaskTrigger.additionalDataManager().put("definition@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-8147-d25290b00a3c"));
+printTaskTrigger.setEvent(PrintEvent.JobStarted);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("definition@odata.bind", "https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-8147-d25290b00a3c");
+printTaskTrigger.setAdditionalData(additionalData);
+PrintTaskTrigger result = graphClient.print().printers().byPrinterId("{printer-id}").taskTriggers().post(printTaskTrigger);
 
-graphClient.print().printers("ae63f617-4856-4b45-8ea9-69dfbeea230e").taskTriggers()
-	.buildRequest()
-	.post(printTaskTrigger);
 
 ```

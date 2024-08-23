@@ -3,7 +3,7 @@ title: "informationProtection resource type"
 description: "Exposes methods that you can use to get Microsoft Purview Information Protection labels and label policies."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 | sensitivityLabels   | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Purview Information Protection labels for the user or organization.          |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

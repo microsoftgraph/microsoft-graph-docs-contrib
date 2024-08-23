@@ -3,7 +3,7 @@ title: "plannerRecentPlanReferenceCollection resource type"
 description: "The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user. This resource is an open type and is part of the plannerUser object. The property name is the ID of the corresponding plan. The value in the property-value pair is the plannerRecentPlanReference object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -20,17 +20,21 @@ Adding new references to this collection will automatically remove the oldest en
 ## Properties
 You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"
+  "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection",
+  "openType": true
 }-->
 
 ```json

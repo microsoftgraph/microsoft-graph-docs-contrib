@@ -3,7 +3,7 @@ title: "accessReviewError resource type"
 description: "Represents an error that occurred within an access review instance lifecycle."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewError"

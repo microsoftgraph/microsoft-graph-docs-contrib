@@ -1,15 +1,15 @@
 ---
-title: generalLedgerEntries resource type 
+title: generalLedgerEntry resource type
 description: A general ledger entry in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# generalLedgerEntries resource type
+# generalLedgerEntry resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Represents a general ledger entry in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[Get generalLedgerEntries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntries|Get a general ledger entry object.|
+|[Get general ledger entries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntry|Get a general ledger entry object.|
 
 ## Properties
 | Property	         | Type	                 |Description                                  |
@@ -43,13 +43,13 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json
 {
   "accountId": "GUID",
-  "accountNumber": "String",  
+  "accountNumber": "String",
   "creditAmount": "Decimal",
   "debitAmount": "Decimal",
   "description": "String",

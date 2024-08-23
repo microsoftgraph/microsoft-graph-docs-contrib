@@ -3,7 +3,7 @@ title: "builtInIdentityProvider resource type"
 description: "Represents built-in identity providers in a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 
@@ -17,12 +17,9 @@ For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in iden
 This type inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
+None.
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers. There's no way to retrieve only the built-in identity providers in a tenant.|
-|[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of a built-in identity provider.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+For the list of API operations for managing built-in identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 
@@ -34,7 +31,7 @@ This type inherits from [identityProviderBase](../resources/identityproviderbase
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

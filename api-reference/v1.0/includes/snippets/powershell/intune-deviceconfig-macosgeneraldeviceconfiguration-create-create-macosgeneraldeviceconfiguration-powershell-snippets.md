@@ -22,17 +22,17 @@ $params = @{
 	)
 	compliantAppListType = "appsInListCompliant"
 	emailInDomainSuffixes = @(
-		"Email In Domain Suffixes value"
-	)
-	passwordBlockSimple = $true
-	passwordExpirationDays = 
-	passwordMinimumCharacterSetCount = 
-	passwordMinimumLength = 
-	passwordMinutesOfInactivityBeforeLock = 
-	passwordMinutesOfInactivityBeforeScreenTimeout = 
-	passwordPreviousPasswordBlockCount = 
-	passwordRequiredType = "alphanumeric"
-	passwordRequired = $true
+	"Email In Domain Suffixes value"
+)
+passwordBlockSimple = $true
+passwordExpirationDays = 
+passwordMinimumCharacterSetCount = 
+passwordMinimumLength = 
+passwordMinutesOfInactivityBeforeLock = 
+passwordMinutesOfInactivityBeforeScreenTimeout = 
+passwordPreviousPasswordBlockCount = 
+passwordRequiredType = "alphanumeric"
+passwordRequired = $true
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params

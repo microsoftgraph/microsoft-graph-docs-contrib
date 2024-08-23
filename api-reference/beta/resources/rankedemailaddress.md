@@ -3,7 +3,7 @@ title: "rankedEmailAddress resource type"
 description: "Represents a ranked email address."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
+ms.subservice: mail
 author: "AAmatino"
 ---
 
@@ -24,7 +24,7 @@ Represents a ranked email address.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

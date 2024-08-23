@@ -3,7 +3,7 @@ author: ddeeps2610
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must have at least one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
 
 - Reports Reader
 - Security Reader
@@ -12,4 +12,3 @@ For delegated scenarios, the calling user must have at least one of the followin
 - Application Administrator
 - Security Administrator
 - Cloud Application Administrator
-- Global Administrator

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OnlineMeetingCollectionPage onlineMeetings = graphClient.me().onlineMeetings()
-	.buildRequest()
-	.filter("joinMeetingIdSettings/joinMeetingId eq '1234567890'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+OnlineMeetingCollectionResponse result = graphClient.me().onlineMeetings().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "joinMeetingIdSettings/joinMeetingId eq '1234567890'";
+});
+
 
 ```

@@ -2,9 +2,11 @@
 title: "temporaryAccessPassAuthenticationMethodConfiguration resource type"
 description: "Represents a Temporary Access Pass authentication methods policy that defines the configuration settings and users or groups who are enabled to use the authentication method."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: Temporary Access Pass
 ---
 
 # temporaryAccessPassAuthenticationMethodConfiguration resource type
@@ -28,7 +30,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |defaultLifetimeInMinutes|Int|Default lifetime in minutes for a Temporary Access Pass. Value can be any integer between the **minimumLifetimeInMinutes** and **maximumLifetimeInMinutes**.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The identifier of the authentication method policy. Inherited from [entity](entity.md).|
-|isUsableOnce|Boolean	|If `true`, all the passes in the tenant will be restricted to one-time use. If `false`, passes in the tenant can be created to be either one-time use or reusable.|
+|isUsableOnce|Boolean    |If `true`, all the passes in the tenant will be restricted to one-time use. If `false`, passes in the tenant can be created to be either one-time use or reusable.|
 |maximumLifetimeInMinutes|Int|Maximum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
 |minimumLifetimeInMinutes|Int|Minimum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
 |state|authenticationMethodState|Whether the Temporary Access Pass method is enabled in the tenant. Possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](authenticationmethodconfiguration.md). |
@@ -38,7 +40,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

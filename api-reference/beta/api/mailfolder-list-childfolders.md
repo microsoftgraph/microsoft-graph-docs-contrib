@@ -3,7 +3,7 @@ title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -22,13 +22,10 @@ By default, this operation does not return hidden folders. Use a query parameter
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
+<!-- { "blockType": "permissions", "name": "mailfolder_list_childfolders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-list-childfolders-permissions.md)]
 
 ## HTTP request
 
@@ -56,7 +53,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

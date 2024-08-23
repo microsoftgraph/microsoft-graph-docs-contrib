@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CustomSecurityAttributeDefinition customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition();
-customSecurityAttributeDefinition.attributeSet = "Engineering";
-customSecurityAttributeDefinition.description = "Active projects for user";
-customSecurityAttributeDefinition.isCollection = true;
-customSecurityAttributeDefinition.isSearchable = true;
-customSecurityAttributeDefinition.name = "Project";
-customSecurityAttributeDefinition.status = "Available";
-customSecurityAttributeDefinition.type = "String";
-customSecurityAttributeDefinition.usePreDefinedValuesOnly = true;
+customSecurityAttributeDefinition.setAttributeSet("Engineering");
+customSecurityAttributeDefinition.setDescription("Active projects for user");
+customSecurityAttributeDefinition.setIsCollection(true);
+customSecurityAttributeDefinition.setIsSearchable(true);
+customSecurityAttributeDefinition.setName("Project");
+customSecurityAttributeDefinition.setStatus("Available");
+customSecurityAttributeDefinition.setType("String");
+customSecurityAttributeDefinition.setUsePreDefinedValuesOnly(true);
+CustomSecurityAttributeDefinition result = graphClient.directory().customSecurityAttributeDefinitions().post(customSecurityAttributeDefinition);
 
-graphClient.directory().customSecurityAttributeDefinitions()
-	.buildRequest()
-	.post(customSecurityAttributeDefinition);
 
 ```

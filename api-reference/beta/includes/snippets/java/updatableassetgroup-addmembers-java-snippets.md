@@ -4,23 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<UpdatableAsset> assetsList = new LinkedList<UpdatableAsset>();
-AzureADDevice assets = new AzureADDevice();
-assets.id = "String (identifier)";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-assetsList.add(assets);
-UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new UpdatableAssetCollectionResponse();
-updatableAssetCollectionResponse.value = assetsList;
-UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
+com.microsoft.graph.beta.admin.windows.updates.updatableassets.item.microsoftgraphwindowsupdatesaddmembers.AddMembersPostRequestBody addMembersPostRequestBody = new com.microsoft.graph.beta.admin.windows.updates.updatableassets.item.microsoftgraphwindowsupdatesaddmembers.AddMembersPostRequestBody();
+LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset> assets = new LinkedList<com.microsoft.graph.beta.models.windowsupdates.UpdatableAsset>();
+com.microsoft.graph.beta.models.windowsupdates.AzureADDevice updatableAsset = new com.microsoft.graph.beta.models.windowsupdates.AzureADDevice();
+updatableAsset.setOdataType("#microsoft.graph.windowsUpdates.azureADDevice");
+updatableAsset.setId("String (identifier)");
+assets.add(updatableAsset);
+addMembersPostRequestBody.setAssets(assets);
+graphClient.admin().windows().updates().updatableAssets().byUpdatableAssetId("{updatableAsset-id}").microsoftGraphWindowsUpdatesAddMembers().post(addMembersPostRequestBody);
 
-graphClient.admin().windows().updates().updatableAssets("f5ba7065-7065-f5ba-6570-baf56570baf5")
-	.addMembers(UpdatableAssetAddMembersParameterSet
-		.newBuilder()
-		.withAssets(assetsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "teamsAppDefinition resource type"
 description: "Represents the details of one version of a teamsApp."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -50,7 +50,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)

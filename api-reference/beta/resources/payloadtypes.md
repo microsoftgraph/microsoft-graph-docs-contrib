@@ -3,7 +3,7 @@ title: "payloadTypes resource type"
 description: "Represents data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification."
 ms.localizationpriority: medium
 author: "merzink"
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: "resourcePageType"
 ---
 
@@ -25,7 +25,7 @@ This resource represents data content of a raw or visual user notification that 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

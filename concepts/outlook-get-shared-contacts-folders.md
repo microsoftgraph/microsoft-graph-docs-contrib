@@ -3,7 +3,7 @@ title: "Get Outlook contacts in a shared folder"
 description: "In Outlook, customers can share contact folders and provide access to folders. Outlook also lets a customer delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get Outlook contacts in a shared folder
@@ -15,7 +15,7 @@ Programmatically, Microsoft Graph supports getting contacts in contact folders t
 As an example, Garth has shared with John a custom contact folder and given John read access. If John has signed into your app and provided delegated permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared), your app is able to access Garth's custom contact folder and the contacts in that folder. For details, see the following sections.
 
 > [!NOTE]
-> The sharing permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared) allow you to read or write contacts in a shared or delegated folder. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on contacts in a shared, delegated, or any other user's contact folder in the tenant, use the application permission, Contacts.Read.
+> The sharing permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared) allow you to read or write contacts in a shared or delegated folder. They do not support [subscribing to change notifications](change-notifications-overview.md) on items in such folders. To set up change notification subscriptions on contacts in a shared, delegated, or any other user's contact folder in the tenant, use the application permission, Contacts.Read.
 
 ## Get a contact in the shared folder
 
@@ -52,7 +52,7 @@ On successful completion, you'll get HTTP 200 OK and a [contactFolder](/graph/ap
 
 The same GET capabilities apply if Garth had delegated John his entire mailbox.
 
-If Garth has not shared the contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
+If Garth has not shared the contact folder with John, nor has he delegated his mailbox to John, specifying Garth's user ID or user principal name in those GET operations will return an error. 
 
 
 ## Next steps

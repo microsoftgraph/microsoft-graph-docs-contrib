@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TargetedManagedAppConfiguration targetedManagedAppConfiguration = new TargetedManagedAppConfiguration();
-targetedManagedAppConfiguration.displayName = "Display Name value";
-targetedManagedAppConfiguration.description = "Description value";
-targetedManagedAppConfiguration.version = "Version value";
-LinkedList<KeyValuePair> customSettingsList = new LinkedList<KeyValuePair>();
-KeyValuePair customSettings = new KeyValuePair();
-customSettings.name = "Name value";
-customSettings.value = "Value value";
-customSettingsList.add(customSettings);
-targetedManagedAppConfiguration.customSettings = customSettingsList;
-targetedManagedAppConfiguration.deployedAppCount = 0;
-targetedManagedAppConfiguration.isAssigned = true;
+targetedManagedAppConfiguration.setOdataType("#microsoft.graph.targetedManagedAppConfiguration");
+targetedManagedAppConfiguration.setDisplayName("Display Name value");
+targetedManagedAppConfiguration.setDescription("Description value");
+targetedManagedAppConfiguration.setVersion("Version value");
+LinkedList<KeyValuePair> customSettings = new LinkedList<KeyValuePair>();
+KeyValuePair keyValuePair = new KeyValuePair();
+keyValuePair.setOdataType("microsoft.graph.keyValuePair");
+keyValuePair.setName("Name value");
+keyValuePair.setValue("Value value");
+customSettings.add(keyValuePair);
+targetedManagedAppConfiguration.setCustomSettings(customSettings);
+targetedManagedAppConfiguration.setDeployedAppCount(0);
+targetedManagedAppConfiguration.setIsAssigned(true);
+TargetedManagedAppConfiguration result = graphClient.deviceAppManagement().targetedManagedAppConfigurations().post(targetedManagedAppConfiguration);
 
-graphClient.deviceAppManagement().targetedManagedAppConfigurations()
-	.buildRequest()
-	.post(targetedManagedAppConfiguration);
 
 ```

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.cases.ediscoverycases.item.custodians.microsoft_graph_security_apply_hold.apply_hold_post_request_body import ApplyHoldPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -2,8 +2,8 @@
 title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -5,12 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioTask;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioGroupTarget;
+use Microsoft\Graph\Beta\Generated\Models\PlannerTaskTargetKind;
+use Microsoft\Graph\Beta\Generated\Models\BusinessScenarioProperties;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BusinessScenarioTask();
-$requestBody->setOdataType('#microsoft.graph.businessScenarioTask');
 $requestBody->setTitle('Customer order #12010');
 $requestBody->setPercentComplete(0);
 $requestBody->setPriority(5);

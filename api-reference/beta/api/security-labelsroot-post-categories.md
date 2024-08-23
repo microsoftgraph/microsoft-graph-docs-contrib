@@ -3,7 +3,7 @@ title: "Create categoryTemplate"
 description: "Create a new categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,13 @@ Namespace: microsoft.graph.security
 
 Create a new [categoryTemplate](../resources/security-categorytemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_labelsroot_post_categories" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-labelsroot-post-categories-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /security/labels/categories
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -73,10 +70,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.categoryTemplate",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+  "displayName": "Accounts Payable",
 }
 ```
 
@@ -115,7 +109,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -130,11 +124,14 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.categoryTemplate",
   "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
-  "displayName": "String",
+  "displayName": "Accounts Payable",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
   },
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime" : "2021-03-24T02:09:08Z"
 }
 ```
 

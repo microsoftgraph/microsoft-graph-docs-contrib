@@ -4,7 +4,7 @@ description: "Metadata for the given object."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # objectDefinitionMetadataEntry resource type
@@ -34,7 +34,7 @@ Metadata for the given object.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.objectDefinitionMetadataEntry"

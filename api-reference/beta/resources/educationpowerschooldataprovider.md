@@ -1,17 +1,19 @@
 ---
-title: "educationPowerSchoolDataProvider resource"
+title: educationPowerSchoolDataProvider resource type (deprecated)
 description: "Used to set up the school data synchronization profile when PowerSchool is used as the input source."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationPowerSchoolDataProvider resource
+# educationPowerSchoolDataProvider resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Used to set up the school data synchronization profile when [PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/) is used as the input source.
 
@@ -32,7 +34,13 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 [educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

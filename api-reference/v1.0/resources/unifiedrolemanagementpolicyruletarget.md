@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyRuleTarget resource type"
 description: "Defines details of the scope that's targeted by role management policy rule. The details can include the principal type, the role assignment type, and actions affecting a role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Defines details of the scope that's targeted by role management policy rule. The
 |targetObjects|[directoryObject](../resources/directoryobject.md) collection| **Not implemented.** The collection of users, groups, and service principals that are in scope of the policy. If not specified, all objects are in scope of the policy.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"

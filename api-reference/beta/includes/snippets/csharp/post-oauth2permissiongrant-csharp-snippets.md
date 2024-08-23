@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new OAuth2PermissionGrant
 {
@@ -17,6 +18,8 @@ var requestBody = new OAuth2PermissionGrant
 	StartTime = DateTimeOffset.Parse("2022-03-17T00:00:00Z"),
 	ExpiryTime = DateTimeOffset.Parse("2023-03-17T00:00:00Z"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Oauth2PermissionGrants.PostAsync(requestBody);
 
 

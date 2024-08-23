@@ -3,7 +3,7 @@ title: "printerShareViewpoint resource type"
 description: "Represents additional data for a printer share as viewed by the signed-in user."
 author: "venkatnagula"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Represents user-specific data for a printer share as viewed by the signed-in use
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printerShareViewpoint"

@@ -3,8 +3,9 @@ title: "openIdConnectProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
+toc.title: OpenID Connect identity provider (deprecated)
 ---
 
 # openIdConnectProvider resource type (deprecated)
@@ -21,14 +22,9 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|openIdConnectProvider|Create a new OpenID Connect identity provider.|
-|[Get](../api/identityprovider-get.md) |openIdConnectProvider|Retrieve properties of an OpenID Connect identity provider.|
-|[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
-|[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
-|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
+None.
+
+For the list of API operations for managing the Open ID Connect provider, see [identityProvider](../resources/identityprovider.md).
 
 ## Properties
 
@@ -56,7 +52,7 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

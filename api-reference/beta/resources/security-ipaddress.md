@@ -3,7 +3,7 @@ title: "ipAddress resource type"
 description: "Represents an IP address, which is (or has been) addressable over the internet."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -59,7 +59,7 @@ Inherits from [host](../resources/security-host.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

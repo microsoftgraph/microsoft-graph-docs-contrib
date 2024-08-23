@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.items.item.workbook.close_session.close_session_request_builder import CloseSessionRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph.generated.drives.item.items.item.workbook.close_session.close_session_post_request_body import CloseSessionPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloseSessionPostRequestBody(
 )
 
-request_configuration = CloseSessionRequestBuilder.CloseSessionRequestBuilderPostRequestConfiguration(
-headers = {
-		'workbook-session-id' : "{session-id}",
-}
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("workbook-session-id", "{session-id}")
 
-)
 
 await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.close_session.post(request_body, request_configuration = request_configuration)
 

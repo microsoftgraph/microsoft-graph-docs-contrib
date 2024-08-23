@@ -3,7 +3,7 @@ title: "Get deviceLocalCredentialInfo"
 description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Retrieve the properties of a [deviceLocalCredentialInfo](../resources/deviceloca
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
+<!-- { "blockType": "permissions", "name": "devicelocalcredentialinfo_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
 
 To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
@@ -32,23 +29,18 @@ To access the actual passwords on the device, done by including `$select=credent
 ## HTTP request
 To get the device local credential for a specific device object:
 
-> [!CAUTION]
-> The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
->
-
 <!-- {
   "blockType": "ignored"  
 }
 -->
 ``` http
 GET /directory/deviceLocalCredentials/{deviceId}
-GET /deviceLocalCredentials/{deviceId}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |User-Agent|The identifier for the calling application. This value contains information about the operating system and the browser used. Required.|
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
@@ -72,6 +64,7 @@ The following example shows a request. This example doesn't return the **credent
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -115,6 +108,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->

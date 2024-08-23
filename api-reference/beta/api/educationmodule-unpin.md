@@ -3,7 +3,7 @@ title: "educationModule: unpin"
 description: "Unpin an educationModule in the classwork list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -13,43 +13,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unpin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to **false** for an [educationModule](../resources/educationmodule.md).
+Unpin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to `false` for an [educationModule](../resources/educationmodule.md).
 
 Only teachers in the class can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduCurricula.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduCurricula.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationmodule_unpin" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationmodule-unpin-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/modules/{id}/unpin
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +94,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -106,7 +103,7 @@ The following is an example of a response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/$metadata#educationModule",

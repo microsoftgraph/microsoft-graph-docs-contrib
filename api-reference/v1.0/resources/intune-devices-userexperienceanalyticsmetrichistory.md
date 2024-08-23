@@ -2,8 +2,8 @@
 title: "userExperienceAnalyticsMetricHistory resource type"
 description: "The user experience analytics metric history."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

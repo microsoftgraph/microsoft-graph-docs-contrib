@@ -3,7 +3,7 @@ title: "chatViewpoint resource type"
 description: "Represents user-specific properties of a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents user-specific properties of a [chat](../resources/chat.md). These pro
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.chatViewpoint"

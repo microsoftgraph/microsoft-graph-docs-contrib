@@ -3,7 +3,7 @@ title: "responseStatus resource type"
 description: "The response status of a meeting request."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "iamgirishck"
 ---
 
@@ -26,7 +26,7 @@ You can get the response status of an attendee or organizer through the **respon
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

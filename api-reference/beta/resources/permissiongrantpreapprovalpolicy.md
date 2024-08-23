@@ -3,7 +3,7 @@ title: "permissionGrantPreApprovalPolicy resource type"
 description: "Policies that specify the conditions under which consent can be granted to a specific application."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -21,14 +21,14 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List permissionGrantPreApprovalPolicies](../api/policyroot-list-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection|Get a list of the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) objects and their properties.|
-|[Create permissionGrantPreApprovalPolicy](../api/policyroot-post-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Create a new [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
-|[Get permissionGrantPreApprovalPolicy](../api/permissiongrantpreapprovalpolicy-get.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Read the properties and relationships of a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
-|[Update permissionGrantPreApprovalPolicy](../api/permissiongrantpreapprovalpolicy-update.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Update the properties of a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
-|[Delete permissionGrantPreApprovalPolicy](../api/permissiongrantpreapprovalpolicy-delete.md)|None|Delete a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
-|[List permissionGrantPreApprovalPolicy assigned to servicePrincipal](../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Get permissionGrantPreApprovalPolicy assigned to a service principal.|
-|[Assign permissionGrantPreApprovalPolicy to servicePrincipal](../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Assign a permissionGrantPreApprovalPolicy to a service principal.|
-|[Remove permissionGrantPreApprovalPolicy from servicePrincipal](../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Remove a permissionGrantPreApprovalPolicy from a service principal.|
+|[List](../api/policyroot-list-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection|Get a list of the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) objects and their properties.|
+|[Create](../api/policyroot-post-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Create a new [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
+|[Get](../api/permissiongrantpreapprovalpolicy-get.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Read the properties and relationships of a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
+|[Update](../api/permissiongrantpreapprovalpolicy-update.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Update the properties of a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
+|[Delete](../api/permissiongrantpreapprovalpolicy-delete.md)|None|Delete a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
+|[List assigned to service principal](../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Get permissionGrantPreApprovalPolicy assigned to a service principal.|
+|[Assign to service principal](../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Assign a permissionGrantPreApprovalPolicy to a service principal.|
+|[Unassign from service principal](../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Remove a permissionGrantPreApprovalPolicy from a service principal.|
 
 
 ## Properties
@@ -42,7 +42,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

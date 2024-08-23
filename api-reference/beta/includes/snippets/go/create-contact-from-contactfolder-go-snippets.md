@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewContact()
 parentFolderId := "parentFolderId-value"
@@ -30,6 +30,7 @@ requestBody.SetGivenName(&givenName)
 initials := "initials-value"
 requestBody.SetInitials(&initials) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 contacts, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Post(context.Background(), requestBody, nil)
 
 

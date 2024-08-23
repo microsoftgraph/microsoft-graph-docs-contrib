@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentPolicy"
 description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get accessPackageAssignmentPolicy
@@ -18,13 +18,10 @@ In [Microsoft Entra entitlement management](../resources/entitlementmanagement-o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackageassignmentpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentpolicy-get-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +42,7 @@ For example, to retrieve the access package, add `$expand=accessPackage`.
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -56,7 +53,13 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ## Examples
 
-### Request
+### Example 1: Retrieve a policy
+
+The following example shows how to retrieve a policy.
+
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +105,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,5 +146,95 @@ Content-Type: application/json
       "isApprovalRequiredForUpdate": false,
       "stages": []
   }
+}
+```
+
+### Example 2: Retrieve the custom extension stage settings for a policy
+
+The following example shows how to retrieve the collection of custom extension stage settings defined for a policy, along with their associated access package custom workflow extension.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageassignmentpolicy_expand_customextensionstagesettings"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "canExtend": true,
+    "durationInDays": 0,
+    "expirationDateTime": null,
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "accessReviewSettings": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "NoApproval",
+        "approvalStages": []
+    },
+    "customExtensionStageSettings": [
+        {
+            "id": "5a38d27a-b702-48d9-ac72-dcf158ba1b0d",
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "219f57b6-7983-45a1-be01-2c228b7a43f8",
+                "displayName": "test_action_1",
+                "description": "Test logic app",
+                "createdDateTime": "2022-01-11T05:19:16.97Z",
+                "lastModifiedDateTime": "2022-01-11T05:19:16.97Z",
+                "endpointConfiguration": {
+                    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+                    "resourceGroupName": "resourcegroup",
+                    "logicAppWorkflowName": "customextension_test",
+                    "url": "https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+                },
+                "authenticationConfiguration": {
+                    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+                }
+            }
+        }
+    ],
+    "verifiableCredentialSettings": {
+        "credentialTypes": [
+            {
+                "issuers": [
+                    "did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."
+                ],
+                "credentialType": "VerifiedCredentialExpert"
+            }
+        ]
+    }
 }
 ```

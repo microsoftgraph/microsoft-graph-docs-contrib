@@ -2,8 +2,9 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -22,7 +23,7 @@ This operation returns by default only a subset of the more commonly used proper
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
@@ -52,7 +53,7 @@ The following properties are not supported in personal Microsoft accounts and wi
 
 | Header | Value |
 |:------ |:----- |
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
@@ -139,7 +140,7 @@ Content-type: application/json
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
       "proxyAddresses":["SMTP:contoso1@gmail.com"],
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contoso1_gmail.com#EXT#@contoso.com"
     }
   ]
 }
@@ -256,7 +257,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2b-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -316,7 +317,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -385,7 +386,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
-        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     }
   ]
@@ -396,7 +399,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
 
 <!-- {
   "blockType": "ignored",
@@ -431,7 +434,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-06-17T16:41:33Z",
         "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
         "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
-        "lastNonInteractiveSignInRequestId": ""
+        "lastNonInteractiveSignInRequestId": "",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     },
     {
@@ -441,7 +446,9 @@ Content-type: application/json
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
-        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
+        "lastSuccessfulSignInDateTime": "",
+        "lastSuccessfulSignInRequestId": ""
       }
     }
   ]
@@ -558,7 +565,7 @@ Content-type: application/json
       "mailNickname":"a_contoso.com#EXT#",
       "otherMails":["a@contoso.com"],
       "proxyAddresses":["SMTP:a@contoso.com"],
-      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"a_contoso.com#EXT#@contoso.com"
     }
   ]
 }
@@ -763,7 +770,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-to-count-e10-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -815,7 +822,7 @@ Content-type: application/json
       "mail":"'contosoadmin1@gmail.com",
       "mailNickname":"contosoadmin1_gmail.com#EXT#",
       "proxyAddresses":["SMTP:contosoadmin1@gmail.com"],
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@contoso.com"
     }
   ]
 }

@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<DriveRecipient> granteesList = new LinkedList<DriveRecipient>();
-DriveRecipient grantees = new DriveRecipient();
-grantees.email = "ryan@contoso.com";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-granteesList.add(grantees);
+com.microsoft.graph.beta.drives.item.items.item.permissions.item.revokegrants.RevokeGrantsPostRequestBody revokeGrantsPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.permissions.item.revokegrants.RevokeGrantsPostRequestBody();
+LinkedList<DriveRecipient> grantees = new LinkedList<DriveRecipient>();
+DriveRecipient driveRecipient = new DriveRecipient();
+driveRecipient.setEmail("ryan@contoso.com");
+grantees.add(driveRecipient);
+revokeGrantsPostRequestBody.setGrantees(grantees);
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").permissions().byPermissionId("{permission-id}").revokeGrants().post(revokeGrantsPostRequestBody);
 
-graphClient.me().drive().items("{item-id}").permissions("{perm-id}")
-	.revokeGrants(PermissionRevokeGrantsParameterSet
-		.newBuilder()
-		.withGrantees(granteesList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

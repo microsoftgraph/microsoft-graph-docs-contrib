@@ -3,7 +3,7 @@ title: "fileHash resource type"
 description: "Contains stateful information about file hashes (cryptographic and location-sensitive)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -22,7 +22,7 @@ Contains stateful information about file hashes (cryptographic and location-sens
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

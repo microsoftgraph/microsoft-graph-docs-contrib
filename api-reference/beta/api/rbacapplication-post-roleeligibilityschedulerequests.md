@@ -3,7 +3,7 @@ title: "Create roleEligibilityScheduleRequests"
 description: "Create a new unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,12 @@ Create a new [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeli
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roleeligibilityschedulerequests" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 
@@ -38,7 +37,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -51,7 +50,7 @@ The following table shows the optional and required properties when you create t
 |action|String|Represents the type of the operation on the role eligibility assignment. The possible values are: <ul><li>`AdminAssign`: For administrators to assign role eligibility to users or groups to roles.</li><li>`AdminExtend`: For administrators to extend expiring assignments.</li><li>`AdminUpdate`: For administrators to change existing role assignments.</li><li>`AdminRenew`: For administrators to renew expired assignments.</li><li>`AdminRemove`: For administrators to remove users or groups from eligible roles.</li><li>`UserAdd`: For users to activate their eligible assignments.</li><li>`UserExtend`: For users to request to extend their expiring eligible assignments.</li><li>`UserRemove`: For users to deactivate their active eligible assignments.</li><li>`UserRenew`: For users to request to renew their expired eligible assignments.</li></ul>|
 |appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units or all users.|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only.|
-|isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|isValidationOnly|Boolean|A Boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed. Optional when **action** is `AdminRemove`.|
 |principalId|String|Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the **isAssignableToRole** of the group property set to `true`.|
 |roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Required. Read only.|

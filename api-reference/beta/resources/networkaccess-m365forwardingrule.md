@@ -3,7 +3,7 @@ title: "m365ForwardingRule resource type"
 description: "Defines the rule or criteria used to direct and route specific Microsoft 365 traffic through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -19,6 +19,8 @@ Inherits from [microsoft.graph.networkaccess.forwardingRule](../resources/networ
 
 ## Methods
 None.
+
+For API operations for managing forward rules, see [policyRule](../resources/networkaccess-policyrule.md).
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +38,7 @@ None.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

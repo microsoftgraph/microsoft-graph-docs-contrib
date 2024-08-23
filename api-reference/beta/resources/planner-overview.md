@@ -3,7 +3,7 @@ title: "Use the Planner REST API"
 description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: high
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: conceptualPageType
 ---
 
@@ -13,17 +13,19 @@ doc_type: conceptualPageType
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365.
 
-Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Microsoft 365 groups.
+Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained by another resource. The containing resource determines the authorization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups,
-group members will be able to create, edit, resolve, and delete tasks in the plan, as well as changing some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a group is restored, all the plans will be automatically restored.
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), Planner project, [roster](plannerroster.md), or [user](user.md).
 
-The most common type of container is a Microsoft 365 group.
+The most common type of container is a group.
 
 ### Container type: Microsoft 365 groups
 
-Plans are commonly contained in Microsoft 365 groups in the Planner API.
+Plans are commonly contained in groups in the Planner API.
+
+Group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
+
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -34,11 +36,39 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 >**Note:** The user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
+
+### Container type: User
+
+The user container type supports personal plans, where the user is the only user tracking their individual tasks. This provides the flexibility for users to share or collaborate on their personal plans. Plans that are created for a single user are automatically deleted when the user is deleted.
+
+To [create a new plan](../api/planner-post-plans.md) in a user's container, set the **container** property on a [plan](plannerplan.md) object with **type** being `user`.
+
+```json
+{
+    "container": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "type": "user"
+    }
+}
+```
+
+Alternatively, you can specify the URL for a user.
+
+```json
+{
+    "container": {
+        "url": "https://graph.microsoft.com/beta/users/me"
+    }
+}
+```
+
+Users can upgrade their personal plans into group-based plans by [moving](../api/plannerplan-movetocontainer.md) the plan from the user container to a group container, changing the type of the container for the plan from `user` to `group`. 
+
 ## Plans
 
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md).
 To [create a task in a plan](../api/planner-post-tasks.md), set the **planId** property on the task object to the ID of the plan while creating the task.
-Tasks currently cannot be created without plans.
+Tasks currently can't be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
 ``` http
@@ -52,7 +82,7 @@ The ID of the user to assign the task is the name of the open property on **assi
 
 ## Task and plan details
 
-Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
+Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill-down views.
 
 ## Visualization
 
@@ -68,7 +98,7 @@ Aside from task and plan data, the Planner API also provides resources for creat
 
 The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by **orderHint** property on the object.
 
-All the ordering is controlled by the principles described in [Planner order hints](planner-order-hint-format.md).
+The ordering principles are described in [Planner order hints](planner-order-hint-format.md).
 
 ## <a name="delta">Track changes using delta query</a>
 
@@ -86,7 +116,7 @@ Users are subscribed to the following objects.
 
 If you want to use the Planner delta query API, maintain a local cache of objects that the user is interested in observing in order to apply the changes from the delta response feed.
 
-The delta payload objects that the Planner delta query can currently return will be of the following types:
+The delta payload objects that the Planner delta query can currently return are of the following types:
 
 * [plannerTask](plannertask.md)
 * [plannerTaskDetails](plannertaskdetails.md)
@@ -105,9 +135,9 @@ In certain scenarios, the caller might want to distinguish between object creati
 
 These guidelines can be used to infer object creation:
 
-* The **createdBy** property will only appear on newly created objects.
-* A newly created **plannerTask** object will be followed by its corresponding **plannerTaskDetails** object.
-* A newly created **plannerPlan** object will be followed by its corresponding **plannerPlanDetails** object.
+* The **createdBy** property appears on newly created objects.
+* A newly created **plannerTask** object is followed by its corresponding **plannerTaskDetails** object.
+* A newly created **plannerPlan** object is followed by its corresponding **plannerPlanDetails** object.
 
 ### Usage
 
@@ -125,8 +155,8 @@ Planner's delta query call flow is as follows:
 ## Planner resource versioning
 
 Planner versions all resources using etags. These etags are returned with **@odata.etag** property on each resource. `PATCH` and `DELETE` requests require the last etag known by the client to be specified with a `If-Match` header.
-Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison.
-Each resource has a unique etag. Etag values for different resources, including those with containment relationships, cannot be compared.
+Planner allows changes to older versions of resources, if the intended change doesn't conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison.
+Each resource has a unique etag. Etag values for different resources, including resources with containment relationships, can't be compared.
 The client apps are expected to handle versioning related [error codes](/graph/errors) `409` and `412` by reading the latest version of the item and resolving the conflicting changes.
 
 ## Common Planner error conditions
@@ -137,24 +167,24 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
-* Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
+* Open Type properties had the wrong type specified or no type specified, or didn't contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
+* Order hint values didn't have the [correct format](planner-order-hint-format.md). For example, an order hint value was set directly to the value returned to the client.
 * The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
 ### 403 Forbidden
 
-In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit has been exceeded. If this is the case, the **code** property on the error resource type will indicate the type of the limit exceeded by the request.
+In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit is exceeded. If so, the **code** property on the error resource type indicates the type of the limit exceeded by the request.
 The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit has been exceeded. This limit applies to plans contained by a group based on the **container** property of the [plannerPlan](plannerplan.md) resource.                                         |
-| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit has been exceeded.  This limit is based on the **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource.                   |
-| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit has been exceeded. This limit is based on the **createdBy** property on the [plannerTask](plannertask.md) resource.                                    |
-| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit has been exceeded. This limit is based on the **assignments** property on the [plannerTask](plannertask.md) resource.                                 |
-| MaximumTasksInProject         | The maximum number of tasks in a plan limit has been exceeded. This limit is based on the **planId** property on the [plannerTask](plannertask.md) resource.                                               |
-| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit has been exceeded. This limit is based on the **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource. |
-| MaximumBucketsInProject       | The maximum number of buckets in a plan limit has been exceeded. This limit is based on the **planId** property on the [plannerBucket](plannerbucket.md) resource.                                         |
+| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. The **container** property of the [plannerPlan](plannerplan.md) resource determines this limit. |
+| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource determines this limit.                   |
+| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. The **createdBy** property on the [plannerTask](plannertask.md) resource determines this limit.                                    |
+| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. The **assignments** property on the [plannerTask](plannertask.md) resource determines this limit.                                 |
+| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. The **planId** property on the [plannerTask](plannertask.md) resource determines this limit.                                               |
+| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. The **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource determines this limit. |
+| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. The **planId** property on the [plannerBucket](plannerbucket.md) resource determines this limit.                                         |
 | MaximumUsersSharedWithProject | The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource contains too many values.                                                                                          |
 | MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
@@ -162,13 +192,9 @@ The following are the possible values for the limit types.
 | MaximumFavoritePlansForUser   | The **favoritePlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
 | MaximumRecentPlansForUser     | The **recentPlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
 | MaximumContextsOnPlan         | The **contexts** property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
-| MaximumPlannerPlans       | The group already contains a **plan**. Currently, groups can only contain one **plan**. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
 ### 412 Precondition Failed
 
 All Planner API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 

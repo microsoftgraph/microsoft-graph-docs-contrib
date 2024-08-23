@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
@@ -52,7 +52,7 @@ requestBody.SetLocation(location)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "samanthab@contoso.onmicrosoft.com"
+address := "samanthab@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Samantha Booth"
 emailAddress.SetName(&name) 
@@ -60,7 +60,7 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.attendeeable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 }
 requestBody.SetAttendees(attendees)
@@ -69,6 +69,7 @@ requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 

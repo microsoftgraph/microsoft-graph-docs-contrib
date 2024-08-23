@@ -3,7 +3,7 @@ title: "labelDetails resource type"
 description: "Represents the label details of an information protection label."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -31,7 +31,7 @@ the [parentLabelDetails](parentlabeldetails.md). Can be returned by [evaluateRem
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

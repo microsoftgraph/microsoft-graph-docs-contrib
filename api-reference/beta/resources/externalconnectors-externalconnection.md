@@ -3,7 +3,7 @@ title: "externalConnection resource type"
 description: "A connection is a logical container for your external content in Microsoft Graph"
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -56,7 +56,7 @@ A logical container to add content from an external source into Microsoft Graph.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

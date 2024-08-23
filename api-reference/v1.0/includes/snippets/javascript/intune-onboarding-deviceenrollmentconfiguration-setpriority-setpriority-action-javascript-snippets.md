@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const setPriority = Content-type: application/json
-Content-length: 21
-
-{
+const setPriority = {
   priority: 8
 };
 

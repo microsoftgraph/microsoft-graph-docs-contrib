@@ -2,18 +2,18 @@
 title: "deviceManagementReports resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementReports resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Singleton entity that acts as a container for all device management functionality.
 
@@ -22,8 +22,8 @@ Singleton entity that acts as a container for all device management functionalit
 |:---|:---|:---|
 |[Get deviceManagementReports](../api/intune-mam-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-mam-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-mam-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-mam-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-mam-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-mam-devicemanagementreports.md) object.|
-|[getMobileApplicationManagementAppRegistrationSummaryReport action](../api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md)|Stream|Not yet documented|
-|[getMobileApplicationManagementAppConfigurationReport action](../api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappconfigurationreport.md)|Stream|Not yet documented|
+|[getMobileApplicationManagementAppRegistrationSummaryReport action](../api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappregistrationsummaryreport.md)|Stream||
+|[getMobileApplicationManagementAppConfigurationReport action](../api/intune-mam-devicemanagementreports-getmobileapplicationmanagementappconfigurationreport.md)|Stream||
 
 ## Properties
 |Property|Type|Description|

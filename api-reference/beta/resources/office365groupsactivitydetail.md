@@ -1,8 +1,8 @@
 ---
 title: "office365GroupsActivityDetail resource type"
-description: "Here's a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---
@@ -39,9 +39,13 @@ Namespace: microsoft.graph
 | sharePointSiteStorageUsedInBytes  | Int64   | The storage used by SharePoint Group site. |
 | reportPeriod                      | String  | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

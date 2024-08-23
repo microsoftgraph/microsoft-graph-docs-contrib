@@ -3,7 +3,7 @@ title: "set resource type"
 description: "Represents a set in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |terms|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|All the terms under the set.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

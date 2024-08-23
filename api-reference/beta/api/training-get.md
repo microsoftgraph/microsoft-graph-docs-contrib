@@ -3,7 +3,7 @@ title: "Get training"
 description: "Get an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -39,13 +39,13 @@ GET /security/attackSimulation/trainings/{trainingId}
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [training](../
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -155,6 +155,7 @@ Content-Type: application/json
         "email": "yibsu",
         "id": null,
         "displayName": null
-    }
+    },
+    "customUrl" : null
 }
 ```

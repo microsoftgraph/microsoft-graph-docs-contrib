@@ -3,7 +3,7 @@ title: "tag resource type"
 description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content"
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -21,13 +21,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tags](../api/ediscovery-case-list-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of the **tag** objects and their properties.|
-|[Create tag](../api/ediscovery-case-post-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Create a new **tag** object.|
-|[Get tag](../api/ediscovery-tag-get.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a **tag** object.|
-|[Update tag](../api/ediscovery-tag-update.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Update the properties of a **tag** object.|
-|[Delete tag](../api/ediscovery-tag-delete.md)|None|Delete a **tag** object.|
-|[asHierarchy](../api/ediscovery-tag-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags, including their hierarchy.|
-|[List childTags](../api/ediscovery-tag-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of child **tag** objects associated with a tag.|
+|[List](../api/ediscovery-case-list-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of the **tag** objects and their properties.|
+|[Create](../api/ediscovery-case-post-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Create a new **tag** object.|
+|[Get](../api/ediscovery-tag-get.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Read the properties and relationships of a **tag** object.|
+|[Update](../api/ediscovery-tag-update.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Update the properties of a **tag** object.|
+|[Delete](../api/ediscovery-tag-delete.md)|None|Delete a **tag** object.|
+|[List tags as hierarchy](../api/ediscovery-tag-ashierarchy.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Lists all tags, including their hierarchy.|
+|[List child tags](../api/ediscovery-tag-childtags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Get a list of child **tag** objects associated with a tag.|
 
 ## Properties
 
@@ -56,7 +56,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

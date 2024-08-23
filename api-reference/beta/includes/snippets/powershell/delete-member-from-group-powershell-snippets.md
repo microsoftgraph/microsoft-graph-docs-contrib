@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Remove-MgBetaGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+Remove-MgBetaGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
 ```

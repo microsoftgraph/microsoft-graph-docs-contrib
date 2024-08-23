@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.device_link import DeviceLink
+from msgraph_beta.generated.models.device_vendor import DeviceVendor
+from msgraph_beta.generated.models.bandwidth_capacity_in_mbps import BandwidthCapacityInMbps
+from msgraph_beta.generated.models.networkaccess.bgp_configuration import BgpConfiguration
+from msgraph_beta.generated.models.networkaccess.redundancy_configuration import RedundancyConfiguration
+from msgraph_beta.generated.models.redundancy_tier import RedundancyTier
+from msgraph_beta.generated.models.networkaccess.tunnel_configuration import TunnelConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

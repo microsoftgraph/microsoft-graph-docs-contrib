@@ -3,7 +3,7 @@ title: "cvssSummary resource type"
 description: "Represents a common vulnerability scoring system (CVSS) evaluation of a vulnerability."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.cvssSummary"

@@ -3,7 +3,7 @@ title: "taskList resource type"
 description: "Represents a list created by a user in Microsoft To Do that contains one or more Task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -27,12 +27,12 @@ Its contents, of the **task** resource type, inherit from [baseTask](../resource
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskLists](../api/tasks-list-lists.md)|[taskList](../resources/tasklist.md) collection|Get a list of the [taskList](../resources/tasklist.md) objects and their properties.|
-|[Get taskList](../api/basetasklist-get.md)|[taskList](../resources/tasklist.md)|Read the properties and relationships of a [taskList](../resources/tasklist.md) object.|
-|[Update taskList](../api/tasklist-update.md)|[taskList](../resources/tasklist.md)|Update the properties of a [taskList](../resources/tasklist.md) object.|
-|[Delete taskList](../api/tasklist-delete.md)|None|Deletes a [taskList](../resources/tasklist.md) object.|
-|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
-|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
+|[List base task lists](../api/tasks-list-lists.md)|[taskList](../resources/tasklist.md) collection|Get a list of the [taskList](../resources/tasklist.md) objects and their properties.|
+|[Get base task list](../api/basetasklist-get.md)|[taskList](../resources/tasklist.md)|Read the properties and relationships of a [taskList](../resources/tasklist.md) object.|
+|[Update base task list](../api/tasklist-update.md)|[taskList](../resources/tasklist.md)|Update the properties of a [taskList](../resources/tasklist.md) object.|
+|[Delete base task list](../api/tasklist-delete.md)|None|Deletes a [taskList](../resources/tasklist.md) object.|
+|[List base tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
+|[Create base task](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
 ## Properties
 |Property|Type|Description|
@@ -47,7 +47,7 @@ Its contents, of the **task** resource type, inherit from [baseTask](../resource
 |tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

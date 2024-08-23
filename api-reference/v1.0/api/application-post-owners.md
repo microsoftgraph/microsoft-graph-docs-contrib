@@ -3,7 +3,7 @@ title: "Add owner"
 description: "Add an owner to an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -11,19 +11,15 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add an owner to an [application](../resources/application.md) by posting to the owners collection.
+Add an owner to an [application](../resources/application.md). Currently, only individual users are supported as owners of applications.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Application.ReadWrite.All and Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "application_post_owners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-owners-permissions.md)]
 
 > **Note:** **Application.ReadWrite.OwnedBy** will not be sufficient to add another owner. Consent also to **Application.ReadWrite.All**. 
 
@@ -39,7 +35,7 @@ POST /applications(appId='{appId}')/owners/$ref
 ## Request headers
 | Name | Description|
 |:---- |:---------- |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the identifier of the directory object to be assigned as owner.

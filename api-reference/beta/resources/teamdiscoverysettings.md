@@ -2,8 +2,8 @@
 title: "teamDiscoverySettings resource type"
 description: "Settings to configure team discoverability by others."
 ms.localizationpriority: medium
-author: "nkramer"
-ms.prod: "microsoft-teams"
+author: "MSFTRickyCastaneda"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Provides settings to enable others to configure [team](team.md) discoverability.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

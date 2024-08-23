@@ -7,11 +7,13 @@ author: gavinbarron
 
 # Microsoft Graph Toolkit component disambiguation
 
-The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page, this creates issues for Microsoft Graph Toolkit, most notably when developing solutions using SharePoint Framework.
+The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page, this creates issues for Microsoft Graph Toolkit, most notably when developing solutions using SharePoint Framework.
 
 The [`mgt-spfx`](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt-spfx) package helps to mitigate this challenge. By using `mgt-spfx`, you can centralize the registration of Microsoft Graph Toolkit web components across all SPFx solutions deployed on the tenant. By reusing toolkit components from a central location, web parts from different solutions can be loaded into a single page without throwing errors. When you use `mgt-spfx`, all Microsoft Graph Toolkit-based web parts in a SharePoint tenant use the same version of the toolkit.
 
 The disambiguation feature enables you to build web parts using the latest version of Microsoft Graph Toolkit and load them on pages along with web parts that use v2.x. By using this feature, you can specify a unique string to add to the tag name of all toolkit web components in their application. When using disambiguation, the supplied value is inserted as the second segment of the tag name, so when using `customElementHelper.withDisambiguation('foo')` the `<mgt-login>` tag is referenced using `<mgt-foo-login>`.
+
+When you register custom elements calling `CustomElementRegistry.define()`, the name entered must be a [valid custom element name](https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/define#valid_custom_element_names). For a better developer experience, the `withDisambiguation` method automatically converts the provided value to lowercase and issues a warning in the developer console if the provided value contains any non-lowercase characters. This helper method doesn't completely sanitize the input, and the underlying `define` method call may still fail with an error like `DOMException: Failed to execute 'define' on 'CustomElementRegistry': "mgt-MyName-flyout" is not a valid custom element name`. 
 
 ## Usage in SharePoint Framework web parts with React
 
@@ -76,7 +78,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 
 ## Usage in React
 
-To make use of disambiguation in a React application, call `customElementHelper.withDisambiguation()` before loading and rendering your root component. To help with lazy loading in this secnario, React provides the `lazy` function and `Suspense` component in React version 16.6 and up.
+To make use of disambiguation in a React application, call `customElementHelper.withDisambiguation()` before loading and rendering your root component. To help with lazy loading in this scenario, React provides the `lazy` function and `Suspense` component in React version 16.6 and up.
 
 ```TypeScript
 import React, { lazy, Suspense } from 'react';
@@ -116,7 +118,7 @@ To make use of the disambiguation feature when using standard HTML and JavaScrip
 ```
 
 > [!Important]
-> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used, it is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
+> The `import` of `mgt-components` must use a [dynamic import](#dynamic-imports-lazy-loading) to ensure that the disambiguation is applied before the components are imported. If a static import is used, it is [hoisted](https://developer.mozilla.org/docs/Glossary/Hoisting) and the import will occur before disambiguation can be applied.
 
 ## Dynamic imports (lazy loading)
 
@@ -124,7 +126,7 @@ Using dynamic imports, you can load dependencies asynchronously. This pattern al
 
 > **Important:** If you import the components before you have applied the disambiguation, the disambiguation will not be applied and using the disambiguated tag name will not work.
 
-When using an `import` statement, the import statement is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) and runs before any other code in the code block. To use dynamic imports, you must use the `import()` function. The `import()` function returns a promise that resolves to the module. You can also use the `then` method to run code after the module is loaded and the `catch` method to handle any errors if necessary.
+When using an `import` statement, the import statement is [hoisted](https://developer.mozilla.org/docs/Glossary/Hoisting) and runs before any other code in the code block. To use dynamic imports, you must use the `import()` function. The `import()` function returns a promise that resolves to the module. You can also use the `then` method to run code after the module is loaded and the `catch` method to handle any errors if necessary.
 
 ### Example using dynamic imports
 

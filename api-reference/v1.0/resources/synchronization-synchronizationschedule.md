@@ -4,7 +4,7 @@ description: "Defines the schedule used to run a synchronizationJob."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSchedule resource type
@@ -17,13 +17,13 @@ Defines the schedule used to run a [synchronizationJob](synchronization-synchron
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |expiration|DateTimeOffset|Date and time when this job expires. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|interval|Duration|The interval between synchronization iterations. The value is represented in ISO 8601 format for durations. For example, `PT1M` represents a period of one month.|
+|interval|Duration|The interval between synchronization iterations. The value is represented in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)  format for durations. For example, `P1M` represents a period of one month and `PT1M` represents a period of one minute.|
 |state|synchronizationScheduleState|The possible values are: `Active`, `Disabled`, `Paused`.|
 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

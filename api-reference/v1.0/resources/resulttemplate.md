@@ -3,7 +3,7 @@ title: "resultTemplate resource type"
 description: "Represents a dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates."
 ms.localizationpriority: medium
 author: "cristianv-ms"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -21,9 +21,13 @@ Represents a dictionary of **resultTemplateIds** and associated values, which in
 |displayName|String|Name of the result template.|
 |key|String|ID of a result template. The **key** property must map to a **resultTemplateId** in the [searchHit](searchhit.md) collection.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,12 +41,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "resultTemplateId": {
-      "displayName": "String",
-      "body":{
+    "displayName": "String",
+     "body":{
          "@odata.type":"microsoft.graph.Json"
       }
-   }
 }
 ```
 

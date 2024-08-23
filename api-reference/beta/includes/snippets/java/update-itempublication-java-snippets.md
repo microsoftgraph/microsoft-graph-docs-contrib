@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemPublication itemPublication = new ItemPublication();
-itemPublication.publisher = "International Association of Branding Management Publishing";
-itemPublication.thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg";
+itemPublication.setPublisher("International Association of Branding Management Publishing");
+itemPublication.setThumbnailUrl("https://iabm.io/sdhdfhsdhshsd.jpg");
+ItemPublication result = graphClient.users().byUserId("{user-id}").profile().publications().byItemPublicationId("{itemPublication-id}").patch(itemPublication);
 
-graphClient.users("{userId}").profile().publications("{id}")
-	.buildRequest()
-	.patch(itemPublication);
 
 ```

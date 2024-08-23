@@ -2,8 +2,9 @@
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
 description: "Allow users and groups of users to be prompted to set up targeted authentication methods."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +27,7 @@ Represents the users and groups that are targeted for authentication method regi
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationMethodsRegistrationCampaignIncludeTarget"

@@ -1,10 +1,10 @@
 ---
 author: spgraph-docs-team
-description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
+description: "Retrieve the list of drive resources available for a target user, group, or site."
 ms.date: 09/10/2017
-title: List Drives
+title: List drives
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List available drives
@@ -13,23 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
+Retrieve the list of [drive](../resources/drive.md) resources available for a target user, group, or [site](../resources/site.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "drive_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-list-permissions.md)]
 
 ## HTTP request
 
-### List a group's drives
+### List the drives of a group
+
 To list the document libraries for a group, your app requests the **drives** relationship on the Group.
 
 <!-- {"blockType": "ignored" } -->
@@ -38,7 +36,7 @@ To list the document libraries for a group, your app requests the **drives** rel
 GET /groups/{groupId}/drives
 ```
 
-### List a site's drives
+### List the drives of a site
 
 To list the document libraries for a site, your app requests the **drives** relationship on the Site.
 
@@ -47,7 +45,7 @@ To list the document libraries for a site, your app requests the **drives** rela
 GET /sites/{siteId}/drives
 ```
 
-### List a user's drives
+### List the drives of a user
 
 <!-- {"blockType": "ignored" } -->
 
@@ -55,7 +53,7 @@ GET /sites/{siteId}/drives
 GET /users/{userId}/drives
 ```
 
-### List the current user's drives
+### List the current drives of a user
 
 <!-- {"blockType": "ignored" } -->
 
@@ -71,10 +69,11 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 
-
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
@@ -119,6 +118,7 @@ GET /me/drives
 
 ### Response
 
+The following example shows the response.
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.drive)",
        "truncated": true } -->
@@ -157,9 +157,9 @@ Content-Type: application/json
 
 ## Remarks
 
-Most users will only have a single Drive resource.
+Most users only have a single drive resource.
 
-Groups and Sites may have multiple Drive resources available.
+Groups and sites may have multiple drive resources available.
 
 Drives with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.

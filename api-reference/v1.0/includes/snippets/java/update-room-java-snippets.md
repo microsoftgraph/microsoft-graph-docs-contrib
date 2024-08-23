@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Room place = new Room();
-place.nickname = "Conf Room";
-place.building = "1";
-place.label = "100";
-place.capacity = 50;
-place.isWheelChairAccessible = false;
+place.setOdataType("microsoft.graph.room");
+place.setNickname("Conf Room");
+place.setBuilding("1");
+place.setLabel("100");
+place.setCapacity(50);
+place.setIsWheelChairAccessible(false);
+Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
-graphClient.places("cf100@contoso.com")
-	.buildRequest()
-	.patch(place);
 
 ```

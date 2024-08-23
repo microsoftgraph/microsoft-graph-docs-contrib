@@ -4,7 +4,7 @@ description: "Create a new folder or DriveItem in a Drive with a specified paren
 ms.date: 09/10/2017
 title: Create a new folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Create a new folder in a drive
@@ -19,13 +19,10 @@ Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_post_children" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-post-children-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 
 ### Request
 
-Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.
+The following example shows a request to create a new folder in the signed-in user's OneDrive root folder.
 The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.
 
 
@@ -59,7 +56,7 @@ The `@microsoft.graph.conflictBehavior` property used indicates that if an item 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
-POST /me/drive/root/children
+POST https://graph.microsoft.com/beta/me/drive/root/children
 Content-Type: application/json
 
 {

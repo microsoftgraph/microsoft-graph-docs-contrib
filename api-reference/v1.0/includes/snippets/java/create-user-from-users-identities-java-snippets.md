@@ -4,35 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 User user = new User();
-user.displayName = "John Smith";
-LinkedList<ObjectIdentity> identitiesList = new LinkedList<ObjectIdentity>();
-ObjectIdentity identities = new ObjectIdentity();
-identities.signInType = "userName";
-identities.issuer = "contoso.onmicrosoft.com";
-identities.issuerAssignedId = "johnsmith";
-identitiesList.add(identities);
-ObjectIdentity identities1 = new ObjectIdentity();
-identities1.signInType = "emailAddress";
-identities1.issuer = "contoso.onmicrosoft.com";
-identities1.issuerAssignedId = "jsmith@yahoo.com";
-identitiesList.add(identities1);
-ObjectIdentity identities2 = new ObjectIdentity();
-identities2.signInType = "federated";
-identities2.issuer = "facebook.com";
-identities2.issuerAssignedId = "5eecb0cd";
-identitiesList.add(identities2);
-user.identities = identitiesList;
+user.setDisplayName("John Smith");
+LinkedList<ObjectIdentity> identities = new LinkedList<ObjectIdentity>();
+ObjectIdentity objectIdentity = new ObjectIdentity();
+objectIdentity.setSignInType("userName");
+objectIdentity.setIssuer("contoso.com");
+objectIdentity.setIssuerAssignedId("johnsmith");
+identities.add(objectIdentity);
+ObjectIdentity objectIdentity1 = new ObjectIdentity();
+objectIdentity1.setSignInType("emailAddress");
+objectIdentity1.setIssuer("contoso.com");
+objectIdentity1.setIssuerAssignedId("jsmith@yahoo.com");
+identities.add(objectIdentity1);
+ObjectIdentity objectIdentity2 = new ObjectIdentity();
+objectIdentity2.setSignInType("federated");
+objectIdentity2.setIssuer("facebook.com");
+objectIdentity2.setIssuerAssignedId("5eecb0cd");
+identities.add(objectIdentity2);
+user.setIdentities(identities);
 PasswordProfile passwordProfile = new PasswordProfile();
-passwordProfile.password = "password-value";
-passwordProfile.forceChangePasswordNextSignIn = false;
-user.passwordProfile = passwordProfile;
-user.passwordPolicies = "DisablePasswordExpiration";
+passwordProfile.setPassword("password-value");
+passwordProfile.setForceChangePasswordNextSignIn(false);
+user.setPasswordProfile(passwordProfile);
+user.setPasswordPolicies("DisablePasswordExpiration");
+User result = graphClient.users().post(user);
 
-graphClient.users()
-	.buildRequest()
-	.post(user);
 
 ```

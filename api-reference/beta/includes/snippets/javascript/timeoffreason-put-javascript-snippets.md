@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const timeOffReason = {
   displayName: 'Vacation',
+  code: 'VacationCode',
   iconType: 'plane',
   isActive: true
 };

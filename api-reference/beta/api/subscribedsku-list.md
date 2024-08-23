@@ -3,7 +3,7 @@ title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the list of commercial subscriptions that an organization has acquired. For 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                    |
-| :------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
-| Delegated (personal Microsoft account) | Not supported.                                                                                 |
-| Application                            | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "subscribedsku_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/subscribedsku-list-permissions.md)]
 
 ## HTTP request
 
@@ -39,11 +36,14 @@ GET /subscribedSkus
 
 This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
 
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -152,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 

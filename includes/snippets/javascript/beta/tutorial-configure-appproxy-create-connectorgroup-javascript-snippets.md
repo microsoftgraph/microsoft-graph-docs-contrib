@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const connectorGroup = Content-type: application/json
-{
+const connectorGroup = {
   name: 'IWA Demo Connector Group'
 };
 

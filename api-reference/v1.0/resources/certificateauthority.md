@@ -2,8 +2,8 @@
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "identity-and-sign-in"
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a certificate authority.
+Used by the **certificateAuthorities** property of [certificateBasedAuthConfiguration resource type](certificatebasedauthconfiguration.md) to represent a certificate authority.
 
 ## Properties
 
@@ -26,7 +26,7 @@ Represents a certificate authority.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

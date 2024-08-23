@@ -2,18 +2,18 @@
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # managedAppPolicy resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The ManagedAppPolicy resource represents a base type for platform specific policies.
 
@@ -22,7 +22,7 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |:---|:---|:---|
 |[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) objects.|
 |[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) object.|
-|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None|Not yet documented|
+|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None||
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "callActivityStatistics resource type"
 description: "Represents information about call activities for users."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 
@@ -33,7 +33,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

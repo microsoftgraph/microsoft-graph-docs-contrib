@@ -3,7 +3,7 @@ title: "failureInfo resource type"
 description: "The failureInfo type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -22,7 +22,7 @@ Represents information about why a call or portion of a call failed.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_history_definition import AccessReviewHistoryDefinition
+from msgraph.generated.models.access_review_history_decision_filter import AccessReviewHistoryDecisionFilter
+from msgraph.generated.models.access_review_scope import AccessReviewScope
+from msgraph.generated.models.access_review_query_scope import AccessReviewQueryScope
 
 graph_client = GraphServiceClient(credentials, scopes)
 

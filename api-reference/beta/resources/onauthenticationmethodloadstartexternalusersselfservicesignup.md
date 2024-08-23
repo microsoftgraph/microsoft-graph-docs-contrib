@@ -3,7 +3,7 @@ title: "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp resource t
 description: "Managed handler for loading the authentication methods during the authentication step in an external identities user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ None
 |identityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|Required. The list of identity providers that user can sign in or sign up with. At least one identity provider must be specified.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp"

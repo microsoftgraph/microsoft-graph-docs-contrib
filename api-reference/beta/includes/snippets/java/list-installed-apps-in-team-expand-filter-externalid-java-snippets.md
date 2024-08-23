@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsAppInstallationCollectionPage installedApps = graphClient.teams("acda442c-78d2-491b-8204-4ef5019c0193").installedApps()
-	.buildRequest()
-	.filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-	.expand("teamsApp,teamsAppDefinition")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamsAppInstallationCollectionResponse result = graphClient.teams().byTeamId("{team-id}").installedApps().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"teamsApp", "teamsAppDefinition"};
+	requestConfiguration.queryParameters.filter = "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'";
+});
+
 
 ```

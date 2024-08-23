@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "psignoret"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
+Use this API to assign an [app role](../resources/approle.md) to a [user](../resources/user.md), creating an [appRoleAssignment](../resources/approleassignment.md) object. To grant an app role assignment to a user, you need three identifiers:
 
 - `principalId`: The `id` of the user to whom you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
@@ -23,13 +23,10 @@ Use this API to assign an app role to a user. To grant an app role assignment to
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_post_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-post-approleassignments-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +42,7 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -60,7 +57,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +115,7 @@ In this example, note that the value used as the user **id** in the request URL 
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

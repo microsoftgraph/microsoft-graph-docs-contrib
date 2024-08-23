@@ -3,7 +3,7 @@ title: "List meetingAttendanceReports"
 description: "Get a list of attendance reports for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
 
 > [!WARNING]
 >
@@ -23,13 +23,10 @@ Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-| Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | OnlineMeetingArtifact.Read.All |
+<!-- { "blockType": "permissions", "name": "meetingattendancereport_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/meetingattendancereport-list-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -42,7 +39,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```
 
-To get all attendance reports for a virtual event session:
+To get all attendance reports for a webinar session with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
@@ -63,7 +60,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -80,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 ### Example 1: List attendance reports for an online meeting
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -128,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -163,11 +160,11 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 2: List attendance reports for a virtual event session
+### Example 2: List attendance reports for a webinar session
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -175,7 +172,7 @@ Here's an example of a request.
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
 # [C#](#tab/csharp)
@@ -214,7 +211,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 
 #### Response
 
-Here's an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

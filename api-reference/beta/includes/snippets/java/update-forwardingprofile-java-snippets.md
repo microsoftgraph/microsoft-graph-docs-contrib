@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ForwardingProfile forwardingProfile = new ForwardingProfile();
-LinkedList<Association> associationsList = new LinkedList<Association>();
-AssociatedBranch associations = new AssociatedBranch();
-associations.branchId = "88e5a488-92c3-45d6-ba56-e5cfa63677e8";
-associationsList.add(associations);
-forwardingProfile.associations = associationsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().forwardingProfiles("{forwardingProfileId}")
-	.buildRequest()
-	.patch(forwardingProfile);
+com.microsoft.graph.beta.models.networkaccess.ForwardingProfile forwardingProfile = new com.microsoft.graph.beta.models.networkaccess.ForwardingProfile();
+LinkedList<com.microsoft.graph.beta.models.networkaccess.Association> associations = new LinkedList<com.microsoft.graph.beta.models.networkaccess.Association>();
+com.microsoft.graph.beta.models.networkaccess.AssociatedBranch association = new com.microsoft.graph.beta.models.networkaccess.AssociatedBranch();
+association.setOdataType("#microsoft.graph.networkaccess.associatedBranch");
+association.setBranchId("88e5a488-92c3-45d6-ba56-e5cfa63677e8");
+associations.add(association);
+forwardingProfile.setAssociations(associations);
+com.microsoft.graph.models.networkaccess.ForwardingProfile result = graphClient.networkAccess().forwardingProfiles().byForwardingProfileId("{forwardingProfile-id}").patch(forwardingProfile);
+
 
 ```

@@ -3,7 +3,7 @@ title: "baseSitePage resource type"
 description: "An abstract type that represents a baseSitePage in the site page library."
 author: "Sangle7"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,9 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 | Method                                               | Return type                                             | Description                                                                                  |
 | :--------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
-| [List baseSitePage](../api/basesitepage-list.md)     | [baseSitePage](../resources/basesitepage.md) collection | Get the collection of [baseSitePage](../resources/basesitepage.md) objects from the site pages [list](../resources/list.md) in a [site](../resources/site.md). |
-| [Get baseSitePage](../api/baseSitePage-get.md)       | [baseSitePage](../resources/basesitepage.md)                | Get the metadata for a [baseSitePage](../resources/basesitepage.md) in the site pages [list](../resources/list.md) in a [site](../resources/site.md).      |
-| [Delete baseSitePage](../api/baseSitePage-delete.md) | None                                                    | Delete a [baseSitePage](../resources/basesitepage.md) object.                               |
+| [List](../api/basesitepage-list.md)     | [baseSitePage](../resources/basesitepage.md) collection | Get the collection of [baseSitePage](../resources/basesitepage.md) objects from the site pages [list](../resources/list.md) in a [site](../resources/site.md). |
+| [Get](../api/basesitepage-get.md)       | [baseSitePage](../resources/basesitepage.md)                | Get the metadata for a [baseSitePage](../resources/basesitepage.md) in the site pages [list](../resources/list.md) in a [site](../resources/site.md).      |
+| [Delete](../api/basesitepage-delete.md) | None                                                    | Delete a [baseSitePage](../resources/basesitepage.md) object.                               |
 
 ## Properties
 
@@ -62,7 +62,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

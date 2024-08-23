@@ -3,7 +3,7 @@ title: "Create educationFeedbackResourceOutcome"
 description: "Create a new feedback resource for a submission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -23,13 +23,10 @@ To create a new file-based resource, upload the file to the feedback resources f
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "educationfeedbackresourceoutcome_post_outcomes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationfeedbackresourceoutcome-post-outcomes-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +37,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/submissions/{submis
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json           |
 
 ## Request body
@@ -53,7 +50,7 @@ This method returns a `400 Bad Request` when the submission has exceeded more th
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -123,30 +120,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes/$entity",
     "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
-    "lastModifiedDateTime": "2022-05-06T00:50:30.0772434Z",
-    "id": "ba12f282-2190-4958-80b3-42b8afb9626a",
+    "lastModifiedDateTime": "2024-08-14T06:50:11.6979503Z",
+    "id": "b7e92489-91b6-4734-ab5c-b1370862e4a2",
     "resourceStatus": "notPublished",
     "lastModifiedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
     "feedbackResource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
         "displayName": "Document1.docx",
-        "createdDateTime": "2022-05-06T00:50:30.0772177Z",
-        "lastModifiedDateTime": "2022-05-06T00:50:30.0772434Z",
-        "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQZQ33I4AJBSURHZJDDQKEJ5TEMJ",
+        "createdDateTime": "2024-08-14T06:50:11.6979432Z",
+        "lastModifiedDateTime": "2024-08-14T06:50:11.6979503Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQZ6GPYK2SPEXRDKILMSBSL5KNKM",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                 "displayName": null
             }
         },
@@ -154,7 +151,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                 "displayName": null
             }
         }
@@ -162,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 To upload an existing file, see [Upload feedback files for education submissions](/graph/education-upload-feedback-resource-overview).
 

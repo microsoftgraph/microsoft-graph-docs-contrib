@@ -3,7 +3,7 @@ title: "teleconferenceDeviceVideoQuality resource type"
 description: "Represents video teleconferencing device video quality data."
 ms.localizationpriority: medium
 author: "dongkyun"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -34,7 +34,7 @@ The **teleconferenceDeviceVideoQuality** resource inherits the properties from [
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

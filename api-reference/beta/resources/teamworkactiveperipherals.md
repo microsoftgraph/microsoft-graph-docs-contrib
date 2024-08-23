@@ -3,7 +3,7 @@ title: "teamworkActivePeripherals resource type"
 description: "Represents the details about the active peripheral devices attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ None.
 |speaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|Linked speaker details.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkActivePeripherals"

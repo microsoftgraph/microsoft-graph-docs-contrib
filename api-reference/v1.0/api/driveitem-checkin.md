@@ -3,7 +3,7 @@ author: learafa
 description: "Check in a checked out driveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: checkin
@@ -16,13 +16,10 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_checkin" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-checkin-permissions.md)]
 
 ## HTTP request
 
@@ -35,6 +32,13 @@ POST /me/drive/items/{item-id}/checkin
 POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -60,7 +64,7 @@ This example checks in a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkin
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/checkin
 Content-Type: application/json
 
 {

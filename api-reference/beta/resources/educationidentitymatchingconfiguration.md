@@ -1,15 +1,17 @@
 ---
-title: "educationIdentityMatchingConfiguration resource type"
+title: "educationIdentityMatchingConfiguration resource type (deprecated)"
 description: "Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationIdentityMatchingConfiguration resource type
+# educationIdentityMatchingConfiguration resource type (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory.
 
@@ -22,7 +24,13 @@ Defines the settings for matching school data profile identities. These identiti
 | :-------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
 | matchingOptions | [microsoft.graph.educationIdentityMatchingOptions](educationidentitymatchingoptions.md) collection | Mapping between the user account and the options to use to uniquely identify the user to update. |
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

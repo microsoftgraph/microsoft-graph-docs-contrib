@@ -3,7 +3,7 @@ title: "alertRecord: getPortalNotifications"
 description: "Get a list of all portal notifications that one or more users can access."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "devicemanagement_alertrecord_getportalnotifications" } -->
+[!INCLUDE [permissions-table](../includes/permissions/devicemanagement-alertrecord-getportalnotifications-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ GET /deviceManagement/monitoring/alertRecords/getPortalNotifications
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +52,7 @@ If successful, this function returns a `200 OK` response code and a collection o
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

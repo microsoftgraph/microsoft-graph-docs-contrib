@@ -3,8 +3,9 @@ title: "Update governanceRoleAssignmentRequests"
 description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Update governanceRoleAssignmentRequests
@@ -40,12 +41,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ## Request headers
 | Name           | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json|
 
 ## Request body
 
-|Parameters	     |Type	                 |Required |Description|
+|Parameters         |Type                     |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
 |decision        |String                 |✓        |The administrator decision of the role assignment request. The value should be updated as `AdminApproved` or `AdminDenied`.|

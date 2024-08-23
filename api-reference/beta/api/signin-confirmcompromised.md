@@ -3,7 +3,7 @@ title: "signIn: confirmCompromised"
 description: "Allow admins to mark Microsoft Entra sign-in events as risky for Microsoft Entra ID Protection."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ For details about investigating Identity Protection risks, see [How to investiga
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|IdentityRiskyUser.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|IdentityRiskEvent.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "signin_confirmcompromised" } -->
+[!INCLUDE [permissions-table](../includes/permissions/signin-confirmcompromised-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +37,7 @@ POST /auditLogs/signIns/confirmCompromised
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

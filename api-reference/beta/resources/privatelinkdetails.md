@@ -3,7 +3,7 @@ title: "privateLinkDetails resource type"
 description: "Provides details about Private Links in your Microsoft Entra tenant"
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Provides details about the Azure Private Link associated with a sign-in event. F
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.privateLinkDetails"

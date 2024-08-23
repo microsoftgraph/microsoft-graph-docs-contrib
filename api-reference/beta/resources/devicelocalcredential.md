@@ -3,7 +3,7 @@ title: "deviceLocalCredential resource type"
 description: "Represents the local administrator account credential of a device object in Microsoft Entra ID that is enabled with Local Admin Password Solution (LAPS). Includes the actual password for the local administrator account returned as Base64 encoded value."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents the local administrator account credential of a device object in Micr
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceLocalCredential",

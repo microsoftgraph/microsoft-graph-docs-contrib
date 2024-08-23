@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
 description: "Represents service principals whose access to a resource is represented through an accessReviewInstanceDecisionItem object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessreviewinstancedecisionitemserviceprincipalresource",

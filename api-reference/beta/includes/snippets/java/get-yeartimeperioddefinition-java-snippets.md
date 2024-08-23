@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-YearTimePeriodDefinition yearTimePeriodDefinition = graphClient.external().industryData().years("ebf18762-ab92-487e-21d1-08daddab28bb")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.industrydata.YearTimePeriodDefinition result = graphClient.external().industryData().years().byYearTimePeriodDefinitionId("{yearTimePeriodDefinition-id}").get();
+
 
 ```

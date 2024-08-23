@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicyConfigurationPartner crossTenantAccessPolicyConfigurationPartner = new CrossTenantAccessPolicyConfigurationPartner();
 CrossTenantAccessPolicyInboundTrust inboundTrust = new CrossTenantAccessPolicyInboundTrust();
-inboundTrust.isMfaAccepted = true;
-inboundTrust.isCompliantDeviceAccepted = true;
-inboundTrust.isHybridAzureADJoinedDeviceAccepted = true;
-crossTenantAccessPolicyConfigurationPartner.inboundTrust = inboundTrust;
+inboundTrust.setIsMfaAccepted(true);
+inboundTrust.setIsCompliantDeviceAccepted(true);
+inboundTrust.setIsHybridAzureADJoinedDeviceAccepted(true);
+crossTenantAccessPolicyConfigurationPartner.setInboundTrust(inboundTrust);
+CrossTenantAccessPolicyConfigurationPartner result = graphClient.policies().crossTenantAccessPolicy().partners().byCrossTenantAccessPolicyConfigurationPartnerTenantId("{crossTenantAccessPolicyConfigurationPartner-tenantId}").patch(crossTenantAccessPolicyConfigurationPartner);
 
-graphClient.policies().crossTenantAccessPolicy().partners("90e29127-71ad-49c7-9ce8-db3f41ea06f1")
-	.buildRequest()
-	.patch(crossTenantAccessPolicyConfigurationPartner);
 
 ```

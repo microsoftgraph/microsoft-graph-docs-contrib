@@ -3,7 +3,7 @@ title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -124,7 +124,7 @@ PATCH /groups/{id}/events/{id}
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

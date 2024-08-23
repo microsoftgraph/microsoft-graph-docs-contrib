@@ -3,7 +3,7 @@ title: "directoryObject: checkMemberGroups"
 description: "Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, device, or directory object is a member."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -66,12 +66,8 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ### Group memberships for a device
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
 
 <!--
 
@@ -132,7 +128,7 @@ POST /devices/{id}/checkMemberGroups
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

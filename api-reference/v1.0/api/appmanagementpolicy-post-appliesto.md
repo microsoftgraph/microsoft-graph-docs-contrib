@@ -3,7 +3,7 @@ title: "Assign appliesTo"
 description: "Assign an appManagementPolicy to an application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -13,20 +13,16 @@ Namespace: microsoft.graph
 
 Assign an [appManagementPolicy](../resources/appManagementPolicy.md) policy object to an application or service principal object. The application or service principal adopts this policy over the tenant-wide [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) setting. Only one policy object can be assigned to an application or service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged)                        |
-| :------------------------------------- | :----------------------------------------------------------------- |
-| Delegated (work or school account)     | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                                     |
-| Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-post-appliesto-permissions.md)]
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
 ## HTTP request
 
@@ -40,7 +36,7 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -57,7 +53,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-The following is an example of the request to assign an appManagementPolicy to an application.
+The following example shows a request to assign an appManagementPolicy to an application.
 
 
 # [HTTP](#tab/http)
@@ -126,7 +122,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to assign an appManagementPolicy to a service principal.
+The following example shows a request to assign an appManagementPolicy to a service principal.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -155,7 +151,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolici
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/assign-appliesto-ex2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

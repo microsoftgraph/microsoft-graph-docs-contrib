@@ -2,8 +2,9 @@
 title: "List group owners"
 description: "Retrieve a list of the group's owners."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -19,15 +20,27 @@ Retrieve a list of the group's owners. The owners are a set of users who are all
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                           |
-| Application                            | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "group_list_owners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-owners-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/owners/read` role permission. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator
+- Exchange Administrator - for Microsoft 365 groups only
+- SharePoint Administrator - for Microsoft 365 groups only
+- Teams Administrator - for Microsoft 365 groups only
+- Yammer Administrator - for Microsoft 365 groups only
+- Intune Administrator - for security groups only
 
 ## HTTP request
 
@@ -47,7 +60,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "message: forward"
 description: "Forward a message using either JSON or MIME format"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -30,13 +30,10 @@ Alternatively, [create a draft to forward a message](../api/message-createforwar
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Send    |
-|Delegated (personal Microsoft account) | Mail.Send    |
-|Application | Mail.Send |
+<!-- { "blockType": "permissions", "name": "message_forward" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-forward-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
@@ -73,7 +70,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Forward a message using JSON format
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +88,7 @@ Content-Type: application/json
     "toRecipients":[
       {
         "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
+          "address":"danas@contoso.com",
           "name":"Dana Swope"
         }
       }
@@ -136,7 +133,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -164,7 +161,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

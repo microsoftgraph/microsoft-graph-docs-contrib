@@ -3,7 +3,7 @@ title: "searchBucket resource type"
 description: "Represents a container for one or more search results that share the same value for the entity field that aggregates them"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -23,9 +23,13 @@ Represents a container for one or more search results that share the same value 
 |count|Int32| The approximate number of search matches that share the same value specified in the **key** property. Note that this number is not the exact number of matches.|
 |key|String| The discrete value of the field that an aggregation was computed on.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,8 +2,8 @@
 title: "iosCompliancePolicy resource type"
 description: "This class contains compliance settings for IOS."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

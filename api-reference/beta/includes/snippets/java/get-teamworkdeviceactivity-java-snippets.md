@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamworkDeviceActivity teamworkDeviceActivity = graphClient.teamwork().devices("1ae3fe60-fe60-1ae3-60fe-e31a60fee31a").activity()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamworkDeviceActivity result = graphClient.teamwork().devices().byTeamworkDeviceId("{teamworkDevice-id}").activity().get();
+
 
 ```

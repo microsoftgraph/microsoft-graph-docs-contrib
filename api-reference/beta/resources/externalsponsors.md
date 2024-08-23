@@ -3,7 +3,7 @@ title: "externalSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -22,9 +22,13 @@ It's a subtype of [userSet](userset.md), in which the `@odata.type` value `#micr
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | Indicates whether the sponsor is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of this type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,9 @@ title: "workbookApplication resource type"
 description: "Represents the Excel application that manages the workbook."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Application
 ---
 
 # workbookApplication resource type
@@ -18,7 +19,7 @@ Represents the Excel application that manages the workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookApplication](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |Read properties and relationships of workbookApplication object.|
+|[Get](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |Read properties and relationships of workbookApplication object.|
 |[Calculate](../api/workbookapplication-calculate.md)|None|Recalculate all currently opened workbooks in Excel.|
 
 ## Properties

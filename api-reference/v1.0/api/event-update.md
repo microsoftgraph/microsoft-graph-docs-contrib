@@ -3,7 +3,7 @@ title: "Update event"
 description: "Update the properties of the event object."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ Note the following behaviors or recommendations when updating the corresponding 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | Calendars.ReadWrite                 |
@@ -65,7 +65,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -108,7 +108,7 @@ If successful, this method returns a `200 OK` response code and updated [event](
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 <!-- markdownlint-disable MD025 -->
 # [HTTP](#tab/http)
@@ -177,7 +177,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -210,7 +210,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

@@ -3,7 +3,7 @@ title: "triggerAndScopeBasedConditions resource type"
 description: "Represents a lifecycle workflow running by schedule, who it runs for, and what triggers the workflow to run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions"

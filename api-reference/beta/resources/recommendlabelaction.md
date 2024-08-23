@@ -3,7 +3,7 @@ title: "recommendLabelAction resource type (deprecated)"
 description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -28,7 +28,7 @@ Represents a label that should be recommended to the user for application to the
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

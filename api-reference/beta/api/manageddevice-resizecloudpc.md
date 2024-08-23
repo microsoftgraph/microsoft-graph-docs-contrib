@@ -1,17 +1,20 @@
 ---
-title: "managedDevice: resizeCloudPc"
+title: "managedDevice: resizeCloudPc (deprecated)"
 description: "Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: resizeCloudPc
+# managedDevice: resizeCloudPc (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on October 30, 2023. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.
 
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
@@ -19,13 +22,10 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "manageddevice_resizecloudpc" } -->
+[!INCLUDE [permissions-table](../includes/permissions/manageddevice-resizecloudpc-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

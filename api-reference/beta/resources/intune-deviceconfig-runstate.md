@@ -2,8 +2,8 @@
 title: "runState enum type"
 description: "Indicates the type of execution status of the device management script."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

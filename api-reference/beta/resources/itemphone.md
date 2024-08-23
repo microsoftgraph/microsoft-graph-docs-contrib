@@ -3,7 +3,7 @@ title: "itemPhone resource type"
 description: "itemPhone resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List phones](../api/profile-list-phones.md)|[itemPhone](../resources/itemphone.md) collection|Get the itemPhone resources from the phones navigation property.|
-|[Create itemPhone](../api/profile-post-phones.md)|[itemPhone](../resources/itemphone.md)|Create a new itemPhone object.|
-|[Get itemPhone](../api/itemphone-get.md)|[itemPhone](../resources/itemphone.md)|Read the properties and relationships of an [itemPhone](../resources/itemphone.md) object.|
-|[Update itemPhone](../api/itemphone-update.md)|[itemPhone](../resources/itemphone.md)|Update the properties of an [itemPhone](../resources/itemphone.md) object.|
-|[Delete itemPhone](../api/itemphone-delete.md)|None|Deletes an [itemPhone](../resources/itemphone.md) object.|
+|[List](../api/profile-list-phones.md)|[itemPhone](../resources/itemphone.md) collection|Get the itemPhone resources from the phones navigation property.|
+|[Create](../api/profile-post-phones.md)|[itemPhone](../resources/itemphone.md)|Create a new itemPhone object.|
+|[Get](../api/itemphone-get.md)|[itemPhone](../resources/itemphone.md)|Read the properties and relationships of an [itemPhone](../resources/itemphone.md) object.|
+|[Update](../api/itemphone-update.md)|[itemPhone](../resources/itemphone.md)|Update the properties of an [itemPhone](../resources/itemphone.md) object.|
+|[Delete](../api/itemphone-delete.md)|None|Deletes an [itemPhone](../resources/itemphone.md) object.|
 
 ## Properties
 
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

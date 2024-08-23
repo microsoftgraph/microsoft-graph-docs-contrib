@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const assign = Content-type: application/json
-Content-length: 360
-
-{
+const assign = {
   enrollmentConfigurationAssignments: [
     {
       '@odata.type': '#microsoft.graph.enrollmentConfigurationAssignment',

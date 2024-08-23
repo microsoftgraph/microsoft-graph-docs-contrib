@@ -1,17 +1,19 @@
 ---
-title: "educationCsvDataProvider resource type"
-description: "Used to set up the school data synchronization profile when CSV files are the input source.  "
+title: "educationCsvDataProvider resource type (deprecated)"
+description: "Used to set up the school data synchronization profile when CSV files are the input source."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationCsvDataProvider resource type
+# educationCsvDataProvider resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Used to set up the school data synchronization profile when CSV files are the input source.
 
@@ -26,7 +28,13 @@ Derived from [educationSynchronizationDataProvider].
 [educationsynchronizationdataprovider]: educationsynchronizationdataprovider.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

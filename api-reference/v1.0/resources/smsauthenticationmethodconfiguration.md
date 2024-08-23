@@ -2,9 +2,11 @@
 title: "smsAuthenticationMethodConfiguration resource type"
 description: "Represents a text message authentication methods policy."
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: SMS
 ---
 
 # smsAuthenticationMethodConfiguration resource type
@@ -35,7 +37,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |includeTargets|[smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

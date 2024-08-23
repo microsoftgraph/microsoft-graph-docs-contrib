@@ -3,7 +3,7 @@ title: "fileSecurityState resource type"
 description: "Contains information about the file (not process) related to the alert."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Contains information about the file (not process) related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

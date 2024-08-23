@@ -9,8 +9,6 @@ author: jasonjoh
 
 In this topic, you'll use the Microsoft Graph command-line interface (CLI) to perform some basic tasks. If you haven't already [installed the CLI](installation.md), do so before following this guide.
 
-[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
-
 ## API version
 
 The Microsoft Graph CLI uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).

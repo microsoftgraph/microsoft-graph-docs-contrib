@@ -3,7 +3,7 @@ title: "azureADDeviceRegistrationError resource type"
 description: "An error in the registration process of a Microsoft Entra device that prevents the service from enrolling the device in update management or deploying content to the device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError"

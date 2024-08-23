@@ -3,7 +3,7 @@ title: "pageLinks resource type"
 description: "Links for opening a OneNote page."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: notes
+ms.subservice: onenote
 author: "jewan-microsoft"
 ---
 
@@ -14,10 +14,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Links for opening a OneNote page.
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|oneNoteClientUrl|[externalLink](externallink.md)|Opens the page in the OneNote native client if it's installed.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Opens the page in OneNote on the web.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,11 +43,6 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Opens the page in the OneNote native client if it's installed.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Opens the page in OneNote on the web.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

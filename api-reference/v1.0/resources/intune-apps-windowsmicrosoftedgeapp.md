@@ -2,8 +2,8 @@
 title: "windowsMicrosoftEdgeApp resource type"
 description: "Contains properties and inherited properties for the Microsoft Edge app on Windows."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

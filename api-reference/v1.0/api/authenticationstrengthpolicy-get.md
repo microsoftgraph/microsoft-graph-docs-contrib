@@ -2,8 +2,9 @@
 title: "Get authenticationStrengthPolicy"
 description: "Read the properties and relationships of an authenticationStrengthPolicy object."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -12,16 +13,13 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+<!-- { "blockType": "permissions", "name": "authenticationstrengthpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationstrengthpolicy-get-permissions.md)]
 
 [!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
@@ -41,7 +39,7 @@ This method does not support OData query parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -53,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,20 +112,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type" : "#microsoft.graph.authenticationStrengthPolicy",
-  "id": "00000000-0000-0000-0000-000000000004",
-  "createdDateTime": "2017-10-30T10:59:01Z",
-  "modifiedDateTime": "2017-10-30T10:59:01Z",
-  "displayName": "Phishing resistant MFA",
-  "description": "Phishing resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
-  "policyType": "builtIn",
-  "requirementsSatisfied": "mfa",
-  "allowedCombinations": [
-      "windowsHelloForBusiness",
-      "fido2",
-      "x509CertificateMultiFactor"
-  ],
-  "combinationConfigurations": []
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authenticationStrengthPolicies('<guid>')?$select=allowedCombinations,createdDateTime",
+    "id": "5790842a-5bab-44c2-9cf1-b38d675b70ea",
+    "createdDateTime": "2024-07-10T20:27:42.5264618Z",
+    "modifiedDateTime": "2024-07-10T23:49:43.883679Z",
+    "displayName": "Auth Strength policy name",
+    "description": "",
+    "policyType": "custom",
+    "requirementsSatisfied": "mfa",
+    "allowedCombinations": [
+        "fido2"
+    ],
+    "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('5790842a-5bab-44c2-9cf1-b38d675b70ea')/combinationConfigurations",
+    "combinationConfigurations": [
+        {
+            "@odata.type": "#microsoft.graph.fido2CombinationConfiguration",
+            "id": "42235320-c8db-4d8c-9344-8f1ce87f734b",
+            "appliesToCombinations": [
+                "fido2"
+            ],
+            "allowedAAGUIDs": [
+                "de1e552d-db1d-4423-a619-566b625cdc84",
+                "90a3ccdf-635c-4729-a248-9b709135078f"
+            ]
+        }
+    ]
 }
 ```
 

@@ -3,7 +3,7 @@ title: "term resource type"
 description: "Defines a term entity in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the term is created.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

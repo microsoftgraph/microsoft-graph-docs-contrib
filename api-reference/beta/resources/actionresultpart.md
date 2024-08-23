@@ -3,7 +3,7 @@ title: "actionResultPart resource type"
 description: "Abstract type to model responses of bulk operations."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ An abstract type that serves as a base to model responses of bulk operations. Th
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionResultPart"
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-## See also
+## Related content
 
 - [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
 - [Add members in bulk to a team](../api/conversationmembers-add.md)

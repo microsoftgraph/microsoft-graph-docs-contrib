@@ -4,20 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> participantsList = new LinkedList<String>();
-participantsList.add("");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String clientContext = "clientContext-value";
+com.microsoft.graph.beta.communications.calls.item.participants.muteall.MuteAllPostRequestBody muteAllPostRequestBody = new com.microsoft.graph.beta.communications.calls.item.participants.muteall.MuteAllPostRequestBody();
+LinkedList<String> participants = new LinkedList<String>();
+participants.add("");
+muteAllPostRequestBody.setParticipants(participants);
+muteAllPostRequestBody.setClientContext("clientContext-value");
+var result = graphClient.communications().calls().byCallId("{call-id}").participants().muteAll().post(muteAllPostRequestBody);
 
-graphClient.communications().calls("{id}").participants()
-	.muteAll(ParticipantMuteAllParameterSet
-		.newBuilder()
-		.withParticipants(participantsList)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

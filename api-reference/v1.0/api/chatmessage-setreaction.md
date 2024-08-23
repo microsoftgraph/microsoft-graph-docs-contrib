@@ -2,7 +2,7 @@
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -20,7 +20,7 @@ Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Send |
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| Not supported. |
 
 ### Permissions for chat
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.ReadWrite, ChatMessage.Send |
@@ -60,7 +60,7 @@ POST /chats/{chatsId}/messages/{chatMessageId}/setReaction
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

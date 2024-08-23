@@ -1,9 +1,9 @@
 ---
 title: "answerVariant resource type"
-description: "An answer variant can be used to change certain properties of a search answer based on country or platform."
+description: "Represents an answer variant that can be used to change certain properties of a search answer based on country or platform."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,23 +13,26 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An answer variant can be used to change certain fields of a search answer based on country or platform.
+Represents an answer variant that can be used to change certain properties of a search answer based on country or platform.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Answer variation description shown on search results page.|
-|displayName|String|Answer variation name displayed in search results.|
-|webUrl|String|Answer variation URL link. When users click this answer variation in search results, they will go to this URL.|
-|languageTags|String collection|List of countries or regions able to view this search answer.|
-|platforms|microsoft.graph.platform collection|List of devices and operating systems able to view this answer variation. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-
+|description|String|The answer variation description that is shown on the search results page.|
+|displayName|String|The answer variation name that is displayed in search results.|
+|languageTag|String|The country or region that can view this answer variation.|
+|platform|microsoft.graph.devicePlatformType|The device or operating system that can view this answer variation. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|webUrl|String|The URL link for the answer variation. When users select this answer variation from the search results, they're directed to the specified URL.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.search.answerVariant"
@@ -38,11 +41,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.search.answerVariant",
-  "displayName": "String",
-  "webUrl": "String",
   "description": "String",
-  "languageTags": ["String"],
-  "platforms": ["String"]
+  "displayName": "String",
+  "languageTag": "String",
+  "platform": "String",
+  "webUrl": "String"
 }
 ```
-

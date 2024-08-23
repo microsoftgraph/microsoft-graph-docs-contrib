@@ -3,7 +3,7 @@ title: "accessPackageAutomaticRequestSettings resource type"
 description: "Specifies information about an automatic access package assignment."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Specifies information about an automatic access package assignment.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAutomaticRequestSettings"

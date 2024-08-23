@@ -2,7 +2,7 @@
 title: "Onboard to cross-device experiences for notifications (deprecated)"
 description: "Your app needs to register cross-device information to authorize Microsoft Graph to send notifications via native push notification services (deprecated)."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 author: "merzink"
 ---
 

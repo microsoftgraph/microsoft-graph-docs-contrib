@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -21,13 +21,10 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+<!-- { "blockType": "permissions", "name": "event_post_attachments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-post-attachments-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +43,7 @@ POST /groups/{id}/events/{id}/attachments
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -61,7 +58,7 @@ If successful, this method returns `201 Created` response code and [attachment](
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +116,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -222,7 +219,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -251,7 +248,7 @@ Content-type: application/json
 
 ### Request
 
-Here is an example of a request that adds a reference attachment to an existing event.
+The following example shows a request that adds a reference attachment to an existing event.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)

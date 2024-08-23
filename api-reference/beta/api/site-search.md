@@ -4,7 +4,7 @@ description: "Search across a SharePoint tenant for sites that match keywords pr
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Search for sites
@@ -23,13 +23,10 @@ The only property that works for sorting is **createdDateTime**. The search filt
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.Read.All, Sites.ReadWrite.All
+<!-- { "blockType": "permissions", "name": "site_search" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-search-permissions.md)]
 
 >**Note:** This method does not support the Sites.Selected application permission.
 
@@ -44,7 +41,7 @@ GET /sites?search={query}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

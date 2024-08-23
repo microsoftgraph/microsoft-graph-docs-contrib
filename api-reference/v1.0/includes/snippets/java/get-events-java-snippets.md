@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-EventCollectionPage events = graphClient.me().events()
-	.buildRequest( requestOptions )
-	.select("subject,body,bodyPreview,organizer,attendees,start,end,location")
-	.get();
+EventCollectionResponse result = graphClient.me().events().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"subject", "body", "bodyPreview", "organizer", "attendees", "start", "end", "location"};
+	requestConfiguration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
+
 
 ```

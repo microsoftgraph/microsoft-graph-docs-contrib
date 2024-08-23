@@ -13,10 +13,10 @@ $params = @{
 	expirationDate = "2016-07-30T11:00:00.000Z"
 	DealValue = 
 	topPicks = @(
-		"Employees only"
-		"Add spouse or guest"
-		"Add family"
-	)
+	"Employees only"
+"Add spouse or guest"
+"Add family"
+)
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params

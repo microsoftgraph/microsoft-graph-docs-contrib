@@ -3,7 +3,7 @@ title: "timeRange resource type"
 description: "A time range resource with a start and end time."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -22,9 +22,13 @@ A time range resource with a start and end time.
 |endTime|TimeOfDay|End time for the time range.|
 |startTime|TimeOfDay|Start time for the time range.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

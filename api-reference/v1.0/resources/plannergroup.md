@@ -3,7 +3,7 @@ title: "plannerGroup resource type"
 description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List plans for group](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -30,7 +30,7 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 |plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

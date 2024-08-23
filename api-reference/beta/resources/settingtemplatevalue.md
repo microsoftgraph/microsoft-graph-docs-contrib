@@ -3,8 +3,9 @@ title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
-author: "Jordanndahl"
+ms.subservice: "entra-directory-management"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # settingTemplateValue resource type
@@ -26,7 +27,7 @@ Represents an individual template setting definition, including the default valu
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

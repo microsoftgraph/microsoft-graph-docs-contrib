@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentPolicy"
 description: "Use this API to create a new accessPackageAssignmentPolicy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "entitlementmanagement_post_accesspackageassignmentpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-accesspackageassignmentpolicies-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -154,7 +151,7 @@ The following example shows a more complex policy with two-stage approvals and a
 
 #### Request
 
-The following is an example of the request to create an access package assignment policy. 
+The following example shows a request to create an access package assignment policy. 
 
 
 # [HTTP](#tab/http)
@@ -585,7 +582,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-customaccesspackageworkflowextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -646,12 +643,13 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create a policy and specify the stages to trigger pre-defined access package custom extensions
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
+
+In the following example, the predefined **accessPackageCustomWorkflowExtension** object is triggered by the creation or approval of an access package assignment request. The identifier in the **customExtension** property corresponds to the ID of the **accessPackageCustomWorkflowExtension** object.
 
 #### Request
 
-In the following example, the pre-defined **accessPackageCustomWorkflowExtension** object is triggered when an access package assignment request is created and when it's granted.  The identifier provided within the **customExtension** field is the **accessPackageCustomWorkflowExtension** object's ID.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -712,7 +710,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-accesspackagecustomworkflowextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -735,7 +733,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy)
+The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) method with `$expand`. For more information, see [Example 3: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy).
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -830,7 +828,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-verifiablecredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

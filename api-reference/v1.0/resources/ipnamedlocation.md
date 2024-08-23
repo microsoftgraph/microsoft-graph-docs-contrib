@@ -3,7 +3,8 @@ title: "ipNamedLocation resource type"
 description: "Represents a Microsoft Entra ID named location defined by IP ranges. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy."
 ms.localizationpriority: medium
 author: "lisaychuang"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,11 +20,11 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
-| [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
-| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
-| [Update ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
-| [Delete ipNamedLocation](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
+| [Create](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
+| [Get](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
+| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
+| [Delete](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
 
 ## Properties
 
@@ -42,7 +43,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +64,7 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)

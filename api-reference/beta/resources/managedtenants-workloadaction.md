@@ -3,7 +3,7 @@ title: "workloadAction resource type"
 description: "Represents an action that will be performed for a specific workload."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Represents an action that will be performed for a specific workload.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.workloadAction"

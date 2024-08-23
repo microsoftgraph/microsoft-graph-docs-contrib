@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc device-management managed-devices create --body '{\
   "@odata.type": "#microsoft.graph.managedDevice",\
   "userId": "User Id value",\
@@ -109,7 +109,8 @@ mgc device-management managed-devices create --body '{\
   "udid": "Udid value",\
   "notes": "Notes value",\
   "ethernetMacAddress": "Ethernet Mac Address value",\
-  "physicalMemoryInBytes": 5\
+  "physicalMemoryInBytes": 5,  \
+  "enrollmentProfileName": "Enrollment Profile Name value"\
 }\
 '
 

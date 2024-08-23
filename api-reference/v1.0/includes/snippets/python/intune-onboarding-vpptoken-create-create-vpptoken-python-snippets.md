@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.vpp_token import VppToken
+from msgraph.generated.models.vpp_token_account_type import VppTokenAccountType
+from msgraph.generated.models.vpp_token_state import VppTokenState
+from msgraph.generated.models.vpp_token_sync_status import VppTokenSyncStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

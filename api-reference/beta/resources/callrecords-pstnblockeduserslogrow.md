@@ -1,9 +1,9 @@
 ---
 title: "pstnBlockedUsersLogRow resource type"
 description: "Represents a row of data in the public switched telephone network (PSTN) blocked users log."
-author: "radoslag"
+author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents a row of data in the public switched telephone network (PSTN) blocked
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection | Get log of users who are blocked/unblocked from making PSTN calls in Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. |
+| [Get PSTN blocked users log](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection | Get log of users who are blocked/unblocked from making PSTN calls in Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. |
 
 ## Properties
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.pstnBlockedUsersLogRow"

@@ -3,7 +3,7 @@ title: "endUserNotification resource type"
 description: "Represents an end user notification."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of [endUserNotification](../resources/endusernotification.md) objects and their properties.|
-|[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
+|[List](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of [endUserNotification](../resources/endusernotification.md) objects and their properties.|
+|[Get](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
 
 ## Properties
 
@@ -36,8 +36,8 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the notification.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the notification was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |notificationType|endUserNotificationType|Type of notification. Possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
-|source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|The status of the notification. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentstatus-values)|The status of the notification. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales for **endUserNotification** content.|
 
 ## Relationships
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

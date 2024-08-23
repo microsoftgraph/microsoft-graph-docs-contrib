@@ -3,7 +3,7 @@ title: "driverUpdateCatalogEntry resource type"
 description: "Represents the metadata for driver update content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

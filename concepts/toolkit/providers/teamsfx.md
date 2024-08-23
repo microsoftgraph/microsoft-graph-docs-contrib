@@ -48,7 +48,7 @@ Now you can add any component in your HTML page or in your `render()` method whe
 public render(): void {
   return (
       <div>
-        <Person personQuery="me" view={PersonViewType.threelines}></Person>
+        <Person personQuery="me" view={ViewType.threelines}></Person>
       </div>
   );
 }
@@ -98,7 +98,7 @@ If you're using TeamsFx provider version <= v2.7.1, you can follow these steps t
     Providers.globalProvider.setState(ProviderState.SignedIn);
     ```
 
-## See also
+## Related content
 * [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
 * [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk)
 * [One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

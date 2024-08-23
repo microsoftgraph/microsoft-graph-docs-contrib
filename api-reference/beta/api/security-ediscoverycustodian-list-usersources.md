@@ -3,7 +3,7 @@ title: "List userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get a list of the [userSource](../resources/security-usersource.md) objects asso
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_list_usersources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-list-usersources-permissions.md)]
 ## HTTP request
 
 <!-- {
@@ -41,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -53,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +117,7 @@ Content-Type: application/json
             "createdDateTime": "2022-05-23T00:58:19.0702524Z",
             "holdStatus": "applied",
             "id": "43434642-3137-3138-3432-374142313639",
-            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "email": "AlexW@contoso.com",
             "includedSources": "mailbox,site",
             "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
             "createdBy": {

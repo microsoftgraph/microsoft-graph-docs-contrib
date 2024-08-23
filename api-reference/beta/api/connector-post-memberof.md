@@ -3,7 +3,7 @@ title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -15,13 +15,10 @@ Namespace: microsoft.graph
 
 Add a [connector](../resources/connector.md)  to a [connectorGroup](../resources/connectorgroup.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "connector_post_memberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/connector-post-memberof-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +29,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
@@ -43,7 +40,7 @@ If successful, this method returns `201 Created` response code and [connectorGro
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +92,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

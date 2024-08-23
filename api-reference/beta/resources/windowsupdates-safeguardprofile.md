@@ -3,7 +3,7 @@ title: "safeguardProfile resource type"
 description: "Describes the issue(s) against which the service safeguards devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Describes the issue(s) against which the service safeguards devices.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.safeguardProfile"

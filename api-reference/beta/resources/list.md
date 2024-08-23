@@ -1,13 +1,13 @@
 ---
 author: "spgraph-docs-team"
 description: "Represents a list in a site."
-title: "List resource"
+title: list resource type
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# List resource
+# list resource type
 
 Namespace: microsoft.graph
 
@@ -19,20 +19,25 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 
 | Method                                                     | Return Type                                                                     | Description                                                                                                                      |
 |:-----------------------------------------------------------|:--------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| [Create](../api/list-create.md)                       | [list](../resources/list.md)                                                    | Create a new **list** in a **site**.                                                                                             |
+| [Get](../api/list-get.md)                             | [list](../resources/list.md)                                                    | Get the metadata for a **list**.                                                                                                 |
+| [Get items](../api/listitem-list.md)            | [listItem](../resources/listitem.md) collection                                 | Get the collection of [listItems]( ../resources/listitem.md) in a **list**.                                                      |
 | [Get lists in a site](../api/list-list.md)                 | [list](../resources/list.md) collection                                         | Get the collection of **lists** in a [site](site.md).                                                                            |
-| [Create list](../api/list-create.md)                       | [list](../resources/list.md)                                                    | Create a new **list** in a **site**.                                                                                             |
-| [Get list](../api/list-get.md)                             | [list](../resources/list.md)                                                    | Get the metadata for a **list**.                                                                                                 |
 | [Get recent activities](../api/activities-list.md)         | [itemActivity](../resources/itemactivity.md) collection                         | List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.                      |
-| [Enumerate list items](../api/listitem-list.md)            | [listItem](../resources/listitem.md) collection                                 | Get the collection of [listItems]( ../resources/listitem.md) in a **list**.                                                      |
-| [Update list item](../api/listitem-update.md)              | [listItem](../resources/listitem.md)                                            | Update the properties on a [listItem]( ../resources/listitem.md).                                                                |
-| [Delete list item](../api/listitem-delete.md)              | None                                                                            | Delete a [listItem]( ../resources/listitem.md) from a **list**.                                                                  |
-| [Create list item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
+| [Create item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
+| [Update item](../api/listitem-update.md)              | [listItem](../resources/listitem.md)                                            | Update the properties on a [listItem]( ../resources/listitem.md).                                                                |
+| [Delete item](../api/listitem-delete.md)              | None                                                                            | Delete a [listItem]( ../resources/listitem.md) from a **list**.                                                                  |
 | [Get websocket endpoint](../api/subscriptions-socketio.md) | [subscription](../resources/subscription.md)                                    | Get near-real-time change notifications for a [drive](../resources/drive.md) and **list** using [socket.io](https://socket.io/). |
-| [List operations](../api/list-list-operations.md)          | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a **list**.               |
+| [List operations in a list](../api/list-list-operations.md)          | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a **list**.               |
 | [List content types](../api/list-list-contenttypes.md)     | [contentType](../resources/contenttype.md) collection                           | Get the collection of [contentType](../resources/contenttype.md) resources in a **list**.                                        |
-| [Add copy of content type from site](../api/contenttype-addcopy.md) | [contentType](../resources/contenttype.md)                             | Add a copy of a [contentType](../resources/contenttype.md) from a [site](site.md) to a **list**.                                 |
+| [Add copy to list](../api/contenttype-addcopy.md) | [contentType](../resources/contenttype.md)                             | Add a copy of a [contentType](../resources/contenttype.md) from a [site](site.md) to a **list**.                                 |
 | [List columns](../api/list-list-columns.md)                | [columnDefinition](../resources/columndefinition.md) collection                 | Get the collection of columns, represented as [columnDefinition](../resources/columndefinition.md) objects, in a **list**.       |
 | [Create column](../api/list-post-columns.md)               | [columnDefinition](../resources/columndefinition.md)                            | Create a column for a **list** with a request that specifies a [columnDefinition](../resources/columndefinition.md).             |
+| [List permissions](../api/list-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [list](../resources/list.md).|
+| [Create permission](../api/list-list-permissions.md)| [permission](../resources/permission.md) |Get a list of the [permission](../resources/permission.md) objects associated with a [list](../resources/list.md).|
+| [Get permission](../api/list-post-permissions.md)| [permission](../resources/permission.md) |Create a new [permission](../resources/permission.md) object on a [list](../resources/list.md).|
+| [Update permission](../api/list-update-permissions.md)| [permission](../resources/permission.md) |Update a [permission](../resources/permission.md) object on a [list](../resources/list.md).|
+| [Delete permission](../api/list-delete-permissions.md)| None |Delete a [permission](../resources/permission.md) object on a [list](../resources/list.md).|
 
 ## Properties
 
@@ -63,11 +68,12 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | drive         | [drive](drive.md)                                                               | Allows access to the list as a **drive** resource with [driveItems](driveitem.md). Only present on document libraries. |
 | items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
 | operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
+| permissions   | [permission](permission.md) collection                                          | The set of permissions for the item. Read-only. Nullable.                                                              |
 | subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource",
        "@odata.type": "microsoft.graph.list",

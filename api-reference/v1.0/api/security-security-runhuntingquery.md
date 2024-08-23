@@ -1,10 +1,10 @@
 ---
 title: "security: runHuntingQuery"
-description: "Run Hunting query API"
+description: "Run the hunting query API."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
 
-This is the method for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data, and format the query output in specific ways. 
+This method is for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data, and format the query output in specific ways. 
 
 Find out more about [hunting for threats across devices, emails, apps, and identities](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide&preserve-view=true). Learn about [KQL](/azure/data-explorer/kusto/query/).
 
@@ -22,14 +22,10 @@ For information on using advanced hunting in the [Microsoft 365 Defender portal]
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatHunting.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatHunting.Read.All|
-
+<!-- { "blockType": "permissions", "name": "security_security_runhuntingquery" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
 
 ## HTTP request
 
@@ -37,26 +33,35 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/runHuntingQuery
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 > [!NOTE]
-> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
+> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header.
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `Query`. 
+In the request body, provide a JSON object for the `Query` parameter, and optionally include a `Timespan` parameter.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|Query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
+| Parameter    | Type            | Description                                                                                                                      | Example                                                            |
+|:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| Timespan     | String          | Optional. The interval of time over which to query data, in ISO 8601 format. The default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last seven days and the startTime is 10 days ago, the query only looks back seven days. | |
+
+The following examples show the possible formats for the `Timepsan` parameter:
+
+- **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
+- **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
+- **Start/duration**: "2024-02-01T08:00:00Z/P30D" - Start date and duration.
+- **ISO8601 duration**: "P30D" - Duration from now backwards.
+- **Single date/time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
 
 ## Response
 
@@ -64,15 +69,16 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 ## Examples
 
-### Request
+### Example 1: Query with default timespan
 
-This example specifies a KQL query which does the following:
+#### Request
+
+The following example specifies a KQL query and does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
-- Filters on the condition that the event is initiated by the powershell.exe process.
-- Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
+- Filters on the condition that the powershell.exe process initiates the event.
+- Specifies the output of three columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
 - Sorts the output by the `Timestamp` value.
-- Limits the output to 2 records (2 rows).
-
+- Limits the output to two records (two rows).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,7 +86,7 @@ This example specifies a KQL query which does the following:
   "name": "security_runhuntingquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
@@ -112,8 +118,109 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 [!INCLUDE [sample-code](../includes/snippets/php/security-runhuntingquery-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-runhuntingquery-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/security-runhuntingquery-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
+    "schema": [
+        {
+            "name": "Timestamp",
+            "type": "DateTime"
+        },
+        {
+            "name": "FileName",
+            "type": "String"
+        },
+        {
+            "name": "InitiatingProcessFileName",
+            "type": "String"
+        }
+    ],
+    "results": [
+        {
+            "Timestamp": "2024-03-26T09:39:50.7688641Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2024-03-26T09:39:49.4353788Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
+}
+```
+### Example 2: Query with optional the timespan parameter specified
+
+#### Request
+
+This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "security_runhuntingquery_timespan"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
+
+{
+    "Query": "DeviceProcessEvents",
+    "Timespan": "P90D"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-runhuntingquery-timespan-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/security-runhuntingquery-timespan-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-runhuntingquery-timespan-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-runhuntingquery-timespan-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-runhuntingquery-timespan-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-runhuntingquery-timespan-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-runhuntingquery-timespan-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-runhuntingquery-timespan-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -122,7 +229,8 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.security.huntingQueryResults"
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
 }
 -->
 
@@ -133,28 +241,28 @@ Content-type: application/json
 {
     "schema": [
         {
-            "Name": "Timestamp",
-            "Type": "DateTime"
+            "name": "Timestamp",
+            "type": "DateTime"
         },
         {
-            "Name": "FileName",
-            "Type": "String"
+            "name": "FileName",
+            "type": "String"
         },
         {
-            "Name": "InitiatingProcessFileName",
-            "Type": "String"
+            "name": "InitiatingProcessFileName",
+            "type": "String"
         }
     ],
     "results": [
         {
-            "Timestamp": "2020-08-30T06:38:35.7664356Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
+            "timestamp": "2020-08-30T06:38:35.7664356Z",
+            "fileName": "conhost.exe",
+            "initiatingProcessFileName": "powershell.exe"
         },
         {
-            "Timestamp": "2020-08-30T06:38:30.5163363Z",
-            "FileName": "conhost.exe",
-            "InitiatingProcessFileName": "powershell.exe"
+            "timestamp": "2020-08-30T06:38:30.5163363Z",
+            "fileName": "conhost.exe",
+            "initiatingProcessFileName": "powershell.exe"
         }
     ]
 }

@@ -1,10 +1,9 @@
 ---
 title: "networkConnection resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Contains stateful information about the network connection related to the alert."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.subservice: cloud-pc
 author: "preetikr"
 ---
 
@@ -71,7 +70,7 @@ Contains stateful information about the network connection related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

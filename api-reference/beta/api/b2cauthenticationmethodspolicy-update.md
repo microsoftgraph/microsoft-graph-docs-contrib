@@ -3,7 +3,7 @@ title: "Update b2cAuthenticationMethodsPolicy"
 description: "Update properties of a b2cAuthenticationMethodsPolicy object."
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Update the properties of a [b2cAuthenticationMethodsPolicy](../resources/b2cauth
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions|
-|:---------------------------------------|:---------------|
-| Delegated (work or school account)     | Policy.ReadWrite.AuthenticationMethod|
-| Delegated (personal Microsoft account) | Policy.ReadWrite.AuthenticationMethod|
-| Application                            | Policy.ReadWrite.AuthenticationMethod|
+<!-- { "blockType": "permissions", "name": "b2cauthenticationmethodspolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/b2cauthenticationmethodspolicy-update-permissions.md)]
 
 ## HTTP request
 
@@ -39,14 +36,12 @@ PATCH /policies/b2cAuthenticationMethodsPolicy
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
-
-The following table shows the properties that are required when you update the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md).
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -103,6 +98,10 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/patch-b2cauthenticationmethodspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-b2cauthenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

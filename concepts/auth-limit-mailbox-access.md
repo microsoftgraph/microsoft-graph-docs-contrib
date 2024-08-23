@@ -3,7 +3,7 @@ title: "Limiting application permissions to specific Exchange Online mailboxes"
 description: "To scope an app's application permissions to specific Exchange Online mailboxes, you will need to create application access policies."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "exchange"
 ---
 
 # Limiting application permissions to specific Exchange Online mailboxes
@@ -95,7 +95,7 @@ If the Microsoft Graph API calls from your app return this error, work with the 
 
 
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy)

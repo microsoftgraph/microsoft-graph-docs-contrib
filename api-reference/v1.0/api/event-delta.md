@@ -3,7 +3,7 @@ title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -18,14 +18,11 @@ Typically, synchronizing events in a **calendarView** in a local store entails a
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read        |
-|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read    |
-|Application | Calendars.ReadBasic, Calendars.Read                               |
+<!-- { "blockType": "permissions", "name": "event_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-delta-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +58,7 @@ includes the encoded, desired parameters.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 | Prefer | string | {Time zone}. Optional, UTC assumed if absent.|
@@ -161,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to events in a calendar](/graph/delta-query-events)

@@ -5,13 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\UnifiedGroupSource;
+use Microsoft\Graph\Beta\Generated\Models\Group;
+use Microsoft\Graph\Beta\Generated\Models\Security\SourceType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedGroupSource();
 $group = new Group();
-$group->setMail('SOCTeam@M365x809305.onmicrosoft.com');
+$group->setMail('SOCTeam@contoso.com');
 $requestBody->setGroup($group);
 $requestBody->setIncludedSources(new SourceType('mailbox, site'));
 

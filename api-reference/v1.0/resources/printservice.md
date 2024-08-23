@@ -3,7 +3,7 @@ title: printService resource type
 description: Represents a Microsoft Entra tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (for example, discovery, notifications, registration and IPP) and have one or more endpoints.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -16,9 +16,9 @@ Represents a Microsoft Entra tenant-specific description of a print service inst
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List services](../api/print-list-services.md) | [printService](printservice.md) collection | Get a list of Universal Print services. |
-| [Get service](../api/printservice-get.md) | [printService](printservice.md) | Read the properties and relationships of service object. |
-| [List endpoints](../api/printservice-list-endpoints.md) | [printServiceEndpoint](printserviceendpoint.md) collection | Get a list of endpoints that a service provides. |
+| [List](../api/print-list-services.md) | [printService](printservice.md) collection | Get a list of Universal Print services. |
+| [Get](../api/printservice-get.md) | [printService](printservice.md) | Read the properties and relationships of service object. |
+| [List a service's endpoints](../api/printservice-list-endpoints.md) | [printServiceEndpoint](printserviceendpoint.md) collection | Get a list of endpoints that a service provides. |
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Represents a Microsoft Entra tenant-specific description of a print service inst
 |endpoints|[printServiceEndpoint](printserviceendpoint.md) collection| Endpoints that can be used to access the service. Read-only. Nullable.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

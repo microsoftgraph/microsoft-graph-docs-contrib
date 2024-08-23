@@ -2,18 +2,18 @@
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # applePushNotificationCertificate resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Apple push notification certificate.
 
@@ -36,7 +36,7 @@ Apple push notification certificate.
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificateSerialNumber|String|Certificate serial number. This property is read-only.|
-|certificate|String|Not yet documented|
+|certificate|String||
 
 ## Relationships
 None

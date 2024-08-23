@@ -3,7 +3,7 @@ author: tushar20
 title: sharePointIdentity resource type
 ms.localizationpriority: medium
 description: "Represents a SharePoint identity of an actor."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "userCredentialUsageDetails resource type"
 description: "Represents the self-service password reset usage for a given tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Read properties and relationships of a userCredentialUsageDetails object. |
+| [List](../api/reportroot-list-usercredentialusagedetails.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Read properties and relationships of a userCredentialUsageDetails object. |
 
 ## Properties
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

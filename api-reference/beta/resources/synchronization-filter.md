@@ -4,7 +4,7 @@ description: "Determines which objects should be provisioned to the application.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # filter resource type
@@ -30,7 +30,7 @@ For more information, see [Attribute-based application provisioning with scoping
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

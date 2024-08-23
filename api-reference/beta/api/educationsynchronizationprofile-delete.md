@@ -1,30 +1,29 @@
 ---
-title: "Delete a educationSynchronizationProfile"
+title: "Delete a educationSynchronizationProfile (deprecated)"
 description: "Delete a school data synchronization profile in the tenant based on the identifier."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Delete a educationSynchronizationProfile
+# Delete a educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.ReadWrite |
-| Delegated (personal Microsoft account) |Not supported.|
-| Application |Not supported.|
+<!-- { "blockType": "permissions", "name": "educationsynchronizationprofile_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsynchronizationprofile-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +34,7 @@ DELETE /education/synchronizationProfiles/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

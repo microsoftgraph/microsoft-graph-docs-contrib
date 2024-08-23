@@ -3,7 +3,7 @@ title: "userTrainingStatusInfo resource type"
 description: "Represents an assigned training and its status for a user in attack simulation and training."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents an assigned training and its status for a user in attack simulation a
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userTrainingStatusInfo"

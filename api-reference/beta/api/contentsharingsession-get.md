@@ -3,7 +3,7 @@ title: "Get contentSharingSession"
 description: "Retrieve the properties of a contentSharingSession object."
 author: "satyakonmsft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -18,12 +18,10 @@ Retrieve the properties of a [contentSharingSession](../resources/contentsharing
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.       |
-| Delegated (personal Microsoft account) | Not supported.       |
-| Application     | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All                                      |
+<!-- { "blockType": "permissions", "name": "contentsharingsession_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contentsharingsession-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +33,7 @@ GET /communications/calls/{id}/contentSharingSessions/{id}
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -49,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a [contentSharin
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

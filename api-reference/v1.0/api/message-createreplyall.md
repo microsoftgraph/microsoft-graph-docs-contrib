@@ -3,7 +3,7 @@ title: "message: createReplyAll"
 description: "Create a draft to reply to the sender and all the recipients of the specified message, in either JSON or MIME format."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -29,13 +29,10 @@ Alternatively, [reply-all to a message](../api/message-replyall.md) in a single 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "message_createreplyall" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-createreplyall-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +65,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a message draft in JSON format to reply-all to an existing message
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,7 +111,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -152,7 +149,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",

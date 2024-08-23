@@ -3,7 +3,7 @@ title: "dataPolicyOperation resource type"
 description: "Represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. For example, a company administrator can submit a data policy operation request to export an employee's company data, and then later track that request."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -15,15 +15,15 @@ Represents a submitted data policy operation. It contains necessary information 
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
+|[Get](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
 
 ## Properties
 
 > **Note:** All properties of this resource are read-only.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Null until the operation completes.|
 |id|String| Unique key for this operation. |
@@ -39,7 +39,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,7 +4,7 @@ description: "Create a new serviceprincipal object."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create servicePrincipal
@@ -19,20 +19,16 @@ Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
-For multi-tenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+For multi-tenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-+ Global Administrator
 + Application Administrator
-+ Cloud Application Administrator roles
++ Cloud Application Administrator
 
 For single-tenant apps where the calling user is a non-admin user but is the owner of the backing application, the user must have the *Application Developer* role.
 
@@ -45,7 +41,7 @@ POST /servicePrincipals
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body
@@ -57,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [serviceP
 
 ## Examples
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -109,7 +105,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

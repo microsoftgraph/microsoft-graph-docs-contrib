@@ -4,7 +4,7 @@ description: "Create a new custom identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Create identityUserFlowAttribute
@@ -19,13 +19,10 @@ Create a new custom [identityUserFlowAttribute](../resources/identityuserflowatt
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identityuserflowattribute_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identityuserflowattribute-post-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
@@ -41,7 +38,7 @@ POST /identity/userFlowAttributes
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -54,7 +51,7 @@ In the request body, provide a JSON representation of [identityUserFlowAttribute
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
 |userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`Boolean` : denotes that the dataType for the identityUserFlowAttribute is a Boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
 
 ## Response
 
@@ -64,7 +61,7 @@ If successful, this method returns a `201 Created` response code and [identityUs
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -121,7 +118,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >>**Note:** The response object shown here might be shortened for readability.
 

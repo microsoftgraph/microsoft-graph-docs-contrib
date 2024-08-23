@@ -3,7 +3,7 @@ title: "Get virtualAppointment"
 description: "Read the properties and relationships of a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                            |
-|:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.ReadWrite, VirtualAppointment.Read, OnlineMeetings.ReadWrite, OnlineMeetings.Read                                  |
-| Delegated (personal Microsoft account) | Not supported.                                                                         |
-| Application                            | VirtualAppointment.ReadWrite.All, VirtualAppointment.Read.All
+<!-- { "blockType": "permissions", "name": "virtualappointment_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-get-permissions.md)]
 
 > [!NOTE]
 > Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. We'll provide additional details on when online meeting permissions will no longer be supported before the preview period ends.
@@ -49,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body
@@ -62,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [virtualAppoin
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,10 +71,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-virtualappointment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-virtualappointment-javascript-snippets.md)]

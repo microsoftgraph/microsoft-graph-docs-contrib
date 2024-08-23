@@ -3,7 +3,7 @@ title: "groupMembers complex type"
 description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -24,10 +24,13 @@ The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type
 | description |String | The name of the group in Microsoft Entra ID. Read only. |
 | isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

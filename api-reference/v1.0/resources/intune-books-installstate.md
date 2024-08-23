@@ -2,8 +2,8 @@
 title: "installState enum type"
 description: "Possible values for install state."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

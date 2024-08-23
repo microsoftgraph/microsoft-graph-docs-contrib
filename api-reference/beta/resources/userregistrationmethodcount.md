@@ -3,7 +3,7 @@ title: "userRegistrationMethodCount resource type"
 description: "Represents the number of users registered for an authentication method."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

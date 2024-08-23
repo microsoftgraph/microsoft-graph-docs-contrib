@@ -1,13 +1,14 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
-# Get group 
+# Get group
 
 Namespace: microsoft.graph
 
@@ -21,13 +22,10 @@ This operation returns by default only a subset of all the available properties,
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-get-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +51,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -121,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-Here's an example of the response. It includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -149,7 +147,7 @@ Content-type: application/json
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "HRTaskforce@M365x214355.onmicrosoft.com",
+    "mail": "HRTaskforce@contoso.com",
     "mailEnabled": true,
     "mailNickname": "HRTaskforce",
     "membershipRule": null,
@@ -163,7 +161,7 @@ Content-type: application/json
     "preferredDataLocation": null,
     "preferredLanguage": null,
     "proxyAddresses": [
-        "SMTP:HRTaskforce@M365x214355.onmicrosoft.com",
+        "SMTP:HRTaskforce@contoso.com",
         "SPO:SPO_896cf652-b200-4b74-8111-c013f64406cf@SPO_dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
     ],
     "renewedDateTime": "2020-01-24T19:01:14Z",
@@ -173,6 +171,7 @@ Content-type: application/json
     ],
     "securityEnabled": false,
     "securityIdentifier": "S-1-12-1-45981654-1196986259-3072312199-363020343",
+    "serviceProvisioningErrors": [],
     "theme": null,
     "visibility": "Private",
     "onPremisesProvisioningErrors": []

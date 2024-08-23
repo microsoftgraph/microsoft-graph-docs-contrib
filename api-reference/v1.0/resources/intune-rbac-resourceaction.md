@@ -2,8 +2,8 @@
 title: "resourceAction resource type"
 description: "Set of allowed and not allowed actions for a resource."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

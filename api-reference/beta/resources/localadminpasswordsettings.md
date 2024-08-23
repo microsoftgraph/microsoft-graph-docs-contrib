@@ -3,7 +3,7 @@ title: "localAdminPasswordSettings resource type"
 description: "Represents the policy scope of a Microsoft Entra tenant that controls the Local Admin Password Solution (LAPS) setting."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 # localAdminPasswordSettings resource type
@@ -26,7 +26,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.localAdminPasswordSettings"

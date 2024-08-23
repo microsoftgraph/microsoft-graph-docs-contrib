@@ -4,14 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-NotebookGetRecentNotebooksCollectionPage getRecentNotebooks = graphClient.me().onenote().notebooks()
-	.getRecentNotebooks(NotebookGetRecentNotebooksParameterSet
-		.newBuilder()
-		.withIncludePersonalNotebooks(true)
-		.build())
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.me().onenote().notebooks().getRecentNotebooksWithIncludePersonalNotebooks(false).get();
+
 
 ```

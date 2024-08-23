@@ -3,8 +3,9 @@ title: "workbookChartLineFormat resource type"
 description: "Enapsulates the formatting options for line elements."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart line format
 ---
 
 # workbookChartLineFormat resource type
@@ -20,14 +21,14 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartLineFormat](../api/chartlineformat-get.md) | [workbookChartLineFormat](workbookchartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat-update.md) | [workbookChartLineFormat](workbookchartlineformat.md)	|Update ChartLineFormat object. |
+|[Get](../api/chartlineformat-get.md) | [workbookChartLineFormat](workbookchartlineformat.md) |Read the properties and relationships of a chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [workbookChartLineFormat](workbookchartlineformat.md)	|Update a chartLineFormat object. |
 |[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of lines in the chart.|
+|color|string|The HTML color code that represents the color of lines in the chart.|
 
 ## Relationships
 None
@@ -35,7 +36,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

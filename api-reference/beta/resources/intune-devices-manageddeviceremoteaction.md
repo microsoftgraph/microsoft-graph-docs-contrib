@@ -1,21 +1,21 @@
 ---
 title: "managedDeviceRemoteAction enum type"
-description: "Not yet documented"
+description: "Intune Devices Manageddeviceremoteaction Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # managedDeviceRemoteAction enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
 
 ## Members
 |Member|Value|Description|
@@ -39,3 +39,4 @@ Not yet documented
 |initiateMobileDeviceManagementKeyRecovery|16|Name of action to initiate MDM key recovery|
 |initiateOnDemandProactiveRemediation|17|Name of action to initiate On Demand Proactive Remediation|
 |unknownFutureValue|18|Evolvable enum member|
+|initiateDeviceAttestation|19|Indicates remote device action to intiate Mobile Device Management (MDM) attestation if device is capable for it|

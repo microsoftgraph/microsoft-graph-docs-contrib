@@ -3,7 +3,7 @@ title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -25,13 +25,10 @@ For more information about tracking changes in Microsoft Graph data, see [Use de
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "planneruser_list_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-delta-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ No additional query parameters (such as `$select`, `$expand`, or `$filter`) are 
 
 | Name           |Description                |
 |:---------------|:--------------------------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -68,7 +65,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ##### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +113,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
 

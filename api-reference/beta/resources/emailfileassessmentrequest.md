@@ -3,7 +3,7 @@ title: "emailFileAssessmentRequest resource type"
 description: "Represents a resource that creates and retrieves an email file threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -21,8 +21,8 @@ Inherits from [threatAssessmentRequest](threatassessmentrequest.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
-| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
+| [Create](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
+| [Get](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
 
 ## Properties
 
@@ -48,7 +48,7 @@ Inherits from [threatAssessmentRequest](threatassessmentrequest.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

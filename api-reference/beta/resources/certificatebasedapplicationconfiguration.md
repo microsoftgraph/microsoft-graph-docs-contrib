@@ -3,7 +3,7 @@ title: "certificateBasedApplicationConfiguration resource type"
 description: "Represents a configuration of trusted certificate authorities for certificates that can be assigned to apps and service principals in the tenant."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -21,10 +21,10 @@ Inherits from [trustedCertificateAuthorityAsEntityBase](../resources/trustedcert
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List certificateBasedApplicationConfigurations](../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) collection|Get a list of the [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) objects and their properties.|
-|[Create certificateBasedApplicationConfiguration](../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Create a new [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
-|[Get certificateBasedApplicationConfiguration](../api/certificatebasedapplicationconfiguration-get.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Read the properties and relationships of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
-|[Update certificateBasedApplicationConfiguration](../api/certificatebasedapplicationconfiguration-update.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Update the properties of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
+|[List](../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) collection|Get a list of the [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) objects and their properties.|
+|[Create](../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Create a new [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
+|[Get](../api/certificatebasedapplicationconfiguration-get.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Read the properties and relationships of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
+|[Update](../api/certificatebasedapplicationconfiguration-update.md)|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md)|Update the properties of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.|
 
 ## Properties
 
@@ -43,7 +43,7 @@ Inherits from [trustedCertificateAuthorityAsEntityBase](../resources/trustedcert
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

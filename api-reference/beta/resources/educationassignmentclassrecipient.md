@@ -3,7 +3,7 @@ title: "educationAssignmentClassRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to class recipient, every student in the class will "
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -22,6 +22,9 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 
 None.
 
+## Relationships
+
+None.
 
 <!-- {
   "blockType": "resource",

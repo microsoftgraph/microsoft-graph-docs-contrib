@@ -4,7 +4,7 @@ description: "Restore a previous version of a DriveItem to be the current versio
 ms.date: 09/10/2017
 title: Restore a previous version
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a DriveItem
@@ -19,13 +19,10 @@ Restore a previous version of a DriveItem to be the current version. This will c
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitemversion_restore" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ This example restores a version of a file identified by `{item-id}` and `{versio
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 # [C#](#tab/csharp)

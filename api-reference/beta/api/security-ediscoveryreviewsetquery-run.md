@@ -3,7 +3,7 @@ title: "ediscoveryReviewSetQuery: run"
 description: "Run reviewset query to get the list of files."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Run reviewset query to get the list of files.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoveryreviewsetquery_run" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewsetquery-run-permissions.md)]
 ## HTTP request
 
 <!-- {
@@ -37,7 +34,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRev
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +46,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +93,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -179,7 +176,7 @@ Content-Type: application/json
                 "Recipients": null,
                 "Author@odata.type": "#Collection(String)",
                 "Author": [
-                    "meganb@m365x809305.onmicrosoft.com"
+                    "meganb@contoso.com"
                 ],
                 "CreatedTime": "2021-09-14T12:00:53Z",
                 "Received": null,

@@ -3,7 +3,7 @@ title: "customAppScopeAttributesDictionary resource type"
 description: "Represents a dictionary type that holds custom attributes for scope objects in different RBAC providers."
 author: "cubika"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Currently only the Exchange Online RBAC provider is supported.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

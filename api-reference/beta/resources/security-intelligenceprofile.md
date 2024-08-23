@@ -3,7 +3,7 @@ title: "intelligenceProfile resource type"
 description: "Provides up-to-date threat actor infrastructure visibility."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ The Microsoft Defender Threat Intelligence Profiles (Intel Profile) API provides
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List intelligenceProfiles](../api/security-threatintelligence-list-intelprofiles.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of the [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.|
-|[Get intelligenceProfile](../api/security-intelligenceprofile-get.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md)|Read the properties and relationships of a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) object.|
+|[List intelligence profiles](../api/security-threatintelligence-list-intelprofiles.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of the [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.|
+|[Get intelligence profile](../api/security-intelligenceprofile-get.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md)|Read the properties and relationships of a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) object.|
 |[List indicators](../api/security-intelligenceprofile-list-indicators.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get a list of **intelligenceProfileIndicator** resources.|
 
 ## Properties
@@ -48,7 +48,7 @@ The Microsoft Defender Threat Intelligence Profiles (Intel Profile) API provides
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

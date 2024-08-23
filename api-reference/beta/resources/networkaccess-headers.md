@@ -3,7 +3,7 @@ title: "headers resource type"
 description: "The HTTP headers represent the additional information included in a network request or response. These headers contain various attributes and values that provide additional context or instructions for the communication between the client and the server."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ The HTTP headers represent the additional information included in a network requ
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.headers"

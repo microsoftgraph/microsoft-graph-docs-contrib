@@ -4,7 +4,7 @@ description: "The geolocationColumn on a columnDefinition resource indicates tha
 title: GeolocationColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "files"
+ms.subservice: "onedrive"
 ---
 # geolocationColumn resource type
 

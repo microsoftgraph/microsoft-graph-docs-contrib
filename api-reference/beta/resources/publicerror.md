@@ -3,7 +3,7 @@ title: "publicError resource type"
 description: "Represent a generic error and its details."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 author: "AkJo"
 ---
 
@@ -26,7 +26,7 @@ Represents a generic error and its details.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.publicError"

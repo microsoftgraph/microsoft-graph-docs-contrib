@@ -3,7 +3,8 @@ title: "namedLocation resource type"
 description: "This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 ms.localizationpriority: medium
 author: "lisaychuang"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,9 +20,9 @@ This is the base class that represents a Microsoft Entra ID named location. Name
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all the **namedLocation** objects in the organization. |
-| [Get namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read the properties and relationships of a **namedLocation** object. |
-| [Delete namedLocation](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all the **namedLocation** objects in the organization. |
+| [Get](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read the properties and relationships of a **namedLocation** object. |
+| [Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
 
 ## Properties
 
@@ -38,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -58,7 +59,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)

@@ -3,7 +3,7 @@ title: "hostPair resource type"
 description: "Represents a pair of parent-child hosts in which the child host able to be reached via the parent host."
 author: "jakedavies-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -26,10 +26,10 @@ For more information about host pairs, see the Microsoft Defender Threat Intelli
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md)|Read the properties and relationships of a **hostPair** object.|
-|[List hostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a specified host, where the host is either the parent *or* child.|
-|[List parentHostPairs for a host as child](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.|
-|[List childHostPairs for a host as parent](../api/security-host-list-childhostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*.|
+|[Get](../api/security-hostpair-get.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md)|Read the properties and relationships of a **hostPair** object.|
+|[List for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a specified host, where the host is either the parent *or* child.|
+|[List for a host as child](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.|
+|[List for a host as parent](../api/security-host-list-childhostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*.|
 
 ## Properties
 
@@ -49,7 +49,7 @@ For more information about host pairs, see the Microsoft Defender Threat Intelli
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

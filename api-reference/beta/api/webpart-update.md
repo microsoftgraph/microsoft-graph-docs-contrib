@@ -3,7 +3,7 @@ title: "Update webPart"
 description: "Update the properties of a webPart."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Update the properties of a [webPart](../resources/webpart.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "webpart_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/webpart-update-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +39,7 @@ PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -64,7 +61,7 @@ The following example shows how to update a webpart.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webpartId}
+PATCH /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e
 Content-Type: application/json
 
 {

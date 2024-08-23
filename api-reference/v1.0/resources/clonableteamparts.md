@@ -2,8 +2,8 @@
 title: "clonableTeamParts enum type"
 description: "Describes which part of a team should be cloned. "
 ms.localizationpriority: medium
-author: "nkramer"
-ms.prod: teamwork
+author: "MSFTRickyCastaneda"
+ms.subservice: teams
 doc_type: enumPageType
 ---
 

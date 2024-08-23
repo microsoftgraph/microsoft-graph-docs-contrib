@@ -3,7 +3,7 @@ title: "detailsInfo resource type"
 description: "A property bag that can contain any information about the associated identity or system."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ The **detailsInfo** resource is a JSON string that contains more properties such
 ## Relationships
 None
 ## JSON Representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.detailsInfo",

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta sites pages create --site-id {site-id} --body '{\
   "@odata.type": "#microsoft.graph.sitePage",\
   "name": "test.aspx",\
@@ -14,7 +14,7 @@ mgc-beta sites pages create --site-id {site-id} --body '{\
   "showRecommendedPages": false,\
   "titleArea": {\
     "enableGradientEffect": true,\
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",\
+    "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",\
     "layout": "colorBlock",\
     "showAuthor": true,\
     "showPublishedDate": false,\

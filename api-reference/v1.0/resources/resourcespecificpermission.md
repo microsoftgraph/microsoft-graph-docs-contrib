@@ -3,7 +3,7 @@ title: "resourceSpecificPermission resource type"
 description: "Represents permissions used to authorize an application for direct access to data for a specific instance of resource"
 author: "psignoret"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.resourceSpecificPermission"

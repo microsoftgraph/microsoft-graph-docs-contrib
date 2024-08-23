@@ -3,7 +3,7 @@ title: "provisioningSystem resource type"
 description: "Represents the system that a user was provisioned to or from."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Inherits from [identity](../resources/identity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

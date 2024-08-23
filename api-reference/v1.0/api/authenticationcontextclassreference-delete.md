@@ -3,7 +3,8 @@ title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object that's not published or used by a conditional access policy."
 ms.localizationpriority: medium
 author: "swetha-rai"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,13 +18,10 @@ Delete an [authenticationContextClassReference](../resources/authenticationconte
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                                       |
-|:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.ConditionalAccess |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.ConditionalAccess |
+<!-- { "blockType": "permissions", "name": "authenticationcontextclassreference_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationcontextclassreference-delete-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +34,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +49,7 @@ This method returns a `403 Forbidden` error code when deleting a published authe
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -62,7 +60,7 @@ Here's an example of the request.
 }-->
 
 ```http
-DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
+DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationContextClassReferences/c1
 ```
 
 # [C#](#tab/csharp)
@@ -101,7 +99,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

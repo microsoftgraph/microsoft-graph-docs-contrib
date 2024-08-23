@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}')
+await client.api('/security/labels/categories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5/subcategories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5')
 	.version('beta')
 	.delete();
 

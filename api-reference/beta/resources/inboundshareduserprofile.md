@@ -1,9 +1,10 @@
 ---
 title: "inboundSharedUserProfile resource type"
 description: "Represents a Microsoft Entra user from an external Microsoft Entra tenant whose profile data is shared with the current tenant using B2B direct connect."
-author: "jkdouglas"
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +20,8 @@ Represents a Microsoft Entra user from an external Microsoft Entra tenant whose 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get inboundSharedUserProfile](../api/inboundshareduserprofile-get.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|Read the properties of an inboundSharedUserProfile.|
-|[List inboundSharedUserProfile](../api/directory-list-inboundshareduserprofiles.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md) collection|Retrieve all inboundSharedUserProfiles in the directory.|
+|[Get](../api/inboundshareduserprofile-get.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|Read the properties of an inboundSharedUserProfile.|
+|[List](../api/directory-list-inboundshareduserprofiles.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md) collection|Retrieve all inboundSharedUserProfiles in the directory.|
 |[Remove personal data](../api/inboundshareduserprofile-removepersonaldata.md)|None|Create a request to remove all personal data associated with the inboundSharedUserProfile from the directory.|
 |[Export personal data](../api/inboundshareduserprofile-exportpersonaldata.md)|None|Create a request to export all personal data associated with the inboundSharedUserProfile and stores it in the specified location. The storage location must be an Azure Storage Account.|
 
@@ -39,7 +40,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "userId",

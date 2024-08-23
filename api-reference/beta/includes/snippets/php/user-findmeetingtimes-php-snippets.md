@@ -5,8 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Users\Item\FindMeetingTimes\FindMeetingTimesPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeBase;
+use Microsoft\Graph\Beta\Generated\Models\AttendeeType;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraint;
+use Microsoft\Graph\Beta\Generated\Models\LocationConstraintItem;
+use Microsoft\Graph\Beta\Generated\Models\TimeConstraint;
+use Microsoft\Graph\Beta\Generated\Models\ActivityDomain;
+use Microsoft\Graph\Beta\Generated\Models\TimeSlot;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new FindMeetingTimesPostRequestBody();
@@ -14,7 +26,7 @@ $attendeesAttendeeBase1 = new AttendeeBase();
 $attendeesAttendeeBase1->setType(new AttendeeType('required'));
 $attendeesAttendeeBase1EmailAddress = new EmailAddress();
 $attendeesAttendeeBase1EmailAddress->setName('Alex Wilbur');
-$attendeesAttendeeBase1EmailAddress->setAddress('alexw@contoso.onmicrosoft.com');
+$attendeesAttendeeBase1EmailAddress->setAddress('alexw@contoso.com');
 $attendeesAttendeeBase1->setEmailAddress($attendeesAttendeeBase1EmailAddress);
 $attendeesArray []= $attendeesAttendeeBase1;
 $requestBody->setAttendees($attendeesArray);

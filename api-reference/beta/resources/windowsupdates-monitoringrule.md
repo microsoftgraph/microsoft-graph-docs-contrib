@@ -3,7 +3,7 @@ title: "monitoringRule resource type"
 description: "Rule defining a signal and threshold to monitor, and the action to perform when met."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Rule defining a signal and threshold to monitor, and the action to perform when 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.monitoringRule"

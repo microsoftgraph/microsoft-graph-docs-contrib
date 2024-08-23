@@ -3,8 +3,9 @@ title: "multiTenantOrganizationIdentitySyncPolicyTemplate resource type"
 description: "Defines an optional cross-tenant access policy template with user synchronization settings for multitenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Identity sync policy template
 ---
 
 # multiTenantOrganizationIdentitySyncPolicyTemplate resource type
@@ -27,9 +28,9 @@ In its default and unconfigured state, where all template properties (other than
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get multiTenantOrganizationIdentitySyncPolicyTemplate](../api/multitenantorganizationidentitysyncpolicytemplate-get.md)|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Get the user synchronization settings of the template.|
-|[Update multiTenantOrganizationIdentitySyncPolicyTemplate](../api/multitenantorganizationidentitysyncpolicytemplate-update.md)|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Update the user synchronization settings of the template.|
-|[resetToDefaultSettings](../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md)|None|Reset the user synchronization settings of the template to the default values.|
+|[Get](../api/multitenantorganizationidentitysyncpolicytemplate-get.md)|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Get the user synchronization settings of the template.|
+|[Update](../api/multitenantorganizationidentitysyncpolicytemplate-update.md)|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Update the user synchronization settings of the template.|
+|[Reset](../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md)|None|Reset the user synchronization settings of the template to the default values.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +43,7 @@ In its default and unconfigured state, where all template properties (other than
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "List permissionGrantPreApprovalPolicies for a servicePrincipal"
 description: "Retrieve the permissionGrantPreApprovalPolicy object from a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Retrieve the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object for the [servicePrincipal](../resources/serviceprincipal.md).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Application.Read.All and Policy.Read.PermissionGrant, Application.Read.All and Policy.ReadWrite.PermissionGrant|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.Read.All and Policy.Read.PermissionGrant, Application.Read.All and Policy.ReadWrite.PermissionGrant|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "serviceprincipal_list_permissiongrantpreapprovalpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissiongrantpreapprovalpolicies-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
@@ -38,7 +37,7 @@ GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -61,8 +60,20 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-permissiongrantpreapprovalpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-get-permissiongrantpreapprovalpolicies-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-permissiongrantpreapprovalpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-permissiongrantpreapprovalpolicies-java-snippets.md)]
@@ -70,6 +81,18 @@ GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-permissiongrantpreapprovalpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-get-permissiongrantpreapprovalpolicies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-permissiongrantpreapprovalpolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-get-permissiongrantpreapprovalpolicies-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,7 +3,7 @@ title: "Update continuousAccessEvaluationPolicy"
 description: "Update the properties of a continuousAccessEvaluationPolicy object."
 author: "Jerrysai-zz"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,14 +17,10 @@ Update the properties of a [continuousAccessEvaluationPolicy](../resources/conti
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type                        | Permissions (from least to most privileged)                    |
-|:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+[!INCLUDE [permissions-table](../includes/permissions/continuousaccessevaluationpolicy-update-permissions.md)]
 
 > [!NOTE]
 > This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and may require consent to multiple permissions.
@@ -42,11 +38,11 @@ PATCH /identity/continuousAccessEvaluationPolicy
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 |Property|Type|Description|
 |:---|:---|:---|

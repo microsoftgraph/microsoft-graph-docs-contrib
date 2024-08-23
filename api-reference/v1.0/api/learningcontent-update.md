@@ -3,7 +3,7 @@ title: "Update learningContent"
 description: "Update the specified learningContent resource."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Used by a [learning provider](../resources/learningprovider.md) to ingest or upd
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|LearningContent.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "learningcontent_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/learningcontent-update-permissions.md)]
 
 ## HTTP request
 
@@ -50,7 +47,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -67,6 +64,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 |duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
+|level|Level|The difficulty level of the learning content. Possible values are: `Beginner`, `Intermediate`, `Advanced`. Optional.|
 |isActive|Boolean|Indicates whether the content is active or not. Inactive content doesn't show up in the UI. The default value is `true`. Optional.|
 |isPremium|Boolean|Indicates whether the learning content requires the user to sign-in on the learning provider platform or not. The default value is `false`. Optional.|
 |isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|
@@ -113,6 +111,7 @@ Content-Type: application/json
     "numberOfPages": 9,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00Z",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -193,6 +192,7 @@ Content-Type: application/json
     "numberOfPages": 9,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -222,6 +222,7 @@ The following example shows a request that updates the metadata of a learning co
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_learningcontent_externalid",
@@ -242,6 +243,7 @@ Content-Type: application/json
     "numberOfPages": 9,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -262,6 +264,36 @@ Content-Type: application/json
     "isSearchable": true
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-learningcontent-externalid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-learningcontent-externalid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-learningcontent-externalid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-learningcontent-externalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-learningcontent-externalid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-learningcontent-externalid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -292,6 +324,7 @@ Content-Type: application/json
     "numberOfPages": 9,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [

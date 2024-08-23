@@ -5,8 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Tables\Item\Columns\Item\Filter\Apply\ApplyPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookFilterCriteria;
+use Microsoft\Graph\Beta\Generated\Models\WorkbookIcon;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ApplyPostRequestBody();
@@ -21,7 +25,7 @@ $criteriaIcon->setSet('set-value');
 $criteriaIcon->setIndex(99);
 $criteria->setIcon($criteriaIcon);
 $criteria->setDynamicCriteria('dynamicCriteria-value');
-$criteriaValues = new Json();
+$criteriaValues = new UntypedNode();
 $criteria->setValues($criteriaValues);
 $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);

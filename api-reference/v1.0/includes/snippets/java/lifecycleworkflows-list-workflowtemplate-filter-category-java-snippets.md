@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WorkflowTemplateCollectionPage workflowTemplates = graphClient.identityGovernance().lifecycleWorkflows().workflowTemplates()
-	.buildRequest()
-	.filter("category eq 'leaver'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.identitygovernance.WorkflowTemplateCollectionResponse result = graphClient.identityGovernance().lifecycleWorkflows().workflowTemplates().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "category eq 'leaver'";
+});
+
 
 ```

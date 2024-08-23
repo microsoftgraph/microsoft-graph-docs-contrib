@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -28,7 +28,7 @@ For more information, see [provide optional claims to your Microsoft Entra app](
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,8 +2,8 @@
 title: "windowsInformationProtectionProxiedDomainCollection resource type"
 description: "Windows Information Protection Proxied Domain Collection"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

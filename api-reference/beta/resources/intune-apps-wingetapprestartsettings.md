@@ -2,8 +2,8 @@
 title: "winGetAppRestartSettings resource type"
 description: "Contains properties describing restart coordination following an app installation."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

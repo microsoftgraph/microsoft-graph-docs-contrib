@@ -2,8 +2,8 @@
 title: "mobileAppTroubleshootingEvent resource type"
 description: "MobileAppTroubleshootingEvent Entity."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

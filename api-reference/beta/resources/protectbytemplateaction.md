@@ -3,7 +3,7 @@ title: "protectByTemplateAction resource type (deprecated)"
 description: "Informs the application that an Azure Information Protection protection template should be applied. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -25,7 +25,7 @@ Informs the application that an Azure Information Protection protection template
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

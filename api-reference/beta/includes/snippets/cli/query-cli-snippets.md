@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta search query post --body '{\
   "requests": [\
     {\
@@ -14,6 +14,7 @@ mgc-beta search query post --body '{\
       "contentSources": [\
         "/external/connections/connectionfriendlyname"\
       ],\
+      "region": "US",\
       "query": {\
         "queryString": "contoso product"\
       },\

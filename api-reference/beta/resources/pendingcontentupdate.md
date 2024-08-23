@@ -4,7 +4,7 @@ description: "The pendingContentUpdate resource indicates that an operation that
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.date: 08/06/2019
-ms.prod: notes
+ms.subservice: onenote
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ Indicates that an operation that might affect the binary content of the **driveI
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

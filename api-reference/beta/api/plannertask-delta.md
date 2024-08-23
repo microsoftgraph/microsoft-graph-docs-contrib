@@ -3,7 +3,7 @@ title: "plannerTask: delta"
 description: "Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection."
 author: "AnubhavKumarSingh"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get newly created, updated, or deleted [tasks](../resources/plannertask.md) in e
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Tasks.Read                                  |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Tasks.Read.All                              |
+<!-- { "blockType": "permissions", "name": "plannertask_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/plannertask-delta-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json          |
 
 ## Request body

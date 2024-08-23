@@ -6,19 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new BookingAppointment
 {
 	OdataType = "#microsoft.graph.bookingAppointment",
 	CustomerTimeZone = "America/Chicago",
+	CustomerName = "Jordan Miller",
+	CustomerEmailAddress = "jordanm@contoso.com",
+	CustomerPhone = "213-555-0199",
+	CustomerNotes = null,
 	SmsNotificationsEnabled = true,
-	EndDateTime = new DateTimeTimeZone
-	{
-		OdataType = "#microsoft.graph.dateTimeTimeZone",
-		DateTime = "2018-05-01T12:30:00.0000000+00:00",
-		TimeZone = "UTC",
-	},
+	IsCustomerAllowedToManageBooking = true,
 	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,
 	AnonymousJoinWebUrl = null,
@@ -116,12 +116,6 @@ var requestBody = new BookingAppointment
 	{
 		"8ee1c803-a1fa-406d-8259-7ab53233f148",
 	},
-	StartDateTime = new DateTimeTimeZone
-	{
-		OdataType = "#microsoft.graph.dateTimeTimeZone",
-		DateTime = "2018-05-01T12:00:00.0000000+00:00",
-		TimeZone = "UTC",
-	},
 	MaximumAttendeesCount = 5,
 	FilledAttendeesCount = 1,
 	Customers = new List<BookingCustomerInformationBase>
@@ -184,16 +178,34 @@ var requestBody = new BookingAppointment
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
+			"end" , new DateTimeTimeZone
+			{
+				OdataType = "#microsoft.graph.dateTimeTimeZone",
+				DateTime = "2018-05-01T12:30:00.0000000+00:00",
+				TimeZone = "UTC",
+			}
+		},
+		{
 			"priceType@odata.type" , "#microsoft.graph.bookingPriceType"
 		},
 		{
 			"reminders@odata.type" , "#Collection(microsoft.graph.bookingReminder)"
 		},
 		{
+			"start" , new DateTimeTimeZone
+			{
+				OdataType = "#microsoft.graph.dateTimeTimeZone",
+				DateTime = "2018-05-01T12:00:00.0000000+00:00",
+				TimeZone = "UTC",
+			}
+		},
+		{
 			"customers@odata.type" , "#Collection(microsoft.graph.bookingCustomerInformation)"
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Appointments.PostAsync(requestBody);
 
 

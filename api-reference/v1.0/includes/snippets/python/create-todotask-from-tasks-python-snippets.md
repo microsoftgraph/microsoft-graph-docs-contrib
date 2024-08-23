@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.todo_task import TodoTask
+from msgraph.generated.models.linked_resource import LinkedResource
 
 graph_client = GraphServiceClient(credentials, scopes)
 

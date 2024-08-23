@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows10_team_general_configuration import Windows10TeamGeneralConfiguration
+from msgraph.generated.models.miracast_channel import MiracastChannel
+from msgraph.generated.models.welcome_screen_meeting_information import WelcomeScreenMeetingInformation
 
 graph_client = GraphServiceClient(credentials, scopes)
 

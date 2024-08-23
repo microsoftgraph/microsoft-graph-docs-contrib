@@ -3,9 +3,10 @@ title: "Microsoft Entra authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 ms.localizationpriority: medium
 author: "jpettere"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 02/05/2022
+ms.date: 05/21/2024
 ---
 
 # Microsoft Entra authentication methods policies API overview
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication methods policies define [authentication methods](/azure/active-directory/authentication/concept-authentication-methods) and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Microsoft Entra ID. Authentication methods policies that can be managed in Microsoft Graph include FIDO2 Security Keys and Passwordless Phone Sign-in with Microsoft Authenticator app.
+Authentication methods policies define [authentication methods](authenticationmethods-overview.md) and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Microsoft Entra ID. Authentication methods policies that can be managed in Microsoft Graph include FIDO2 Security Keys and Passwordless Phone Sign-in with Microsoft Authenticator app.
 
 The authentication method policies APIs are used to manage policy settings. For example:
 
@@ -27,6 +28,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |Authentication method policy       | Description |
 |:---------------------------|:------------|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Microsoft Entra tenant.|
+|[externalauthenticationmethodconfiguration](externalauthenticationmethodconfiguration.md) (preview)|Define users who can use an external authentication method to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Microsoft Entra ID.|
 |[hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)| Define users who can use hardware OATH tokens to sign in to Microsoft Entra ID.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Microsoft Entra tenant.|
@@ -35,7 +37,6 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Define users who can use Temporary Access Pass to sign in to Microsoft Entra ID.|
 |[voiceAuthenticationMethodConfiguration](voiceAuthenticationMethodConfiguration.md)|Define users or groups that are enabled to use the voice call authentication method.|
 |[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificate to sign in to Microsoft Entra ID.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Define users who can use Passwordless Phone Sign-in to sign in to Microsoft Entra ID.|
 
 ## Policies available to push users to set up authentication methods:
 |Policy       | Description |

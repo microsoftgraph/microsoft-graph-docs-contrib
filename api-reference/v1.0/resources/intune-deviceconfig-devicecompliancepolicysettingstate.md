@@ -2,8 +2,8 @@
 title: "deviceCompliancePolicySettingState resource type"
 description: "Device Compilance Policy Setting State for a given device."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

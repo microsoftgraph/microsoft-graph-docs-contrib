@@ -13,13 +13,13 @@ $params = @{
 		blob = "<Media Session Configuration Blob>"
 	}
 	acceptedModalities = @(
-		"audio"
-	)
-	callOptions = @{
-		"@odata.type" = "#microsoft.graph.incomingCallOptions"
-		isContentSharingNotificationEnabled = $true
-	}
-	participantCapacity = 200
+	"audio"
+)
+callOptions = @{
+	"@odata.type" = "#microsoft.graph.incomingCallOptions"
+	isContentSharingNotificationEnabled = $true
+}
+participantCapacity = 200
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params

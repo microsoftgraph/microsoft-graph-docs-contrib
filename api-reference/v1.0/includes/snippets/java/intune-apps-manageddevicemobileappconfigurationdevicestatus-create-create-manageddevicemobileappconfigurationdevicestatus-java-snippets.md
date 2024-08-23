@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ManagedDeviceMobileAppConfigurationDeviceStatus managedDeviceMobileAppConfigurationDeviceStatus = new ManagedDeviceMobileAppConfigurationDeviceStatus();
-managedDeviceMobileAppConfigurationDeviceStatus.deviceDisplayName = "Device Display Name value";
-managedDeviceMobileAppConfigurationDeviceStatus.userName = "User Name value";
-managedDeviceMobileAppConfigurationDeviceStatus.deviceModel = "Device Model value";
-managedDeviceMobileAppConfigurationDeviceStatus.complianceGracePeriodExpirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:56:44.951111+00:00");
-managedDeviceMobileAppConfigurationDeviceStatus.status = ComplianceStatus.NOT_APPLICABLE;
-managedDeviceMobileAppConfigurationDeviceStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-managedDeviceMobileAppConfigurationDeviceStatus.userPrincipalName = "User Principal Name value";
+managedDeviceMobileAppConfigurationDeviceStatus.setOdataType("#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus");
+managedDeviceMobileAppConfigurationDeviceStatus.setDeviceDisplayName("Device Display Name value");
+managedDeviceMobileAppConfigurationDeviceStatus.setUserName("User Name value");
+managedDeviceMobileAppConfigurationDeviceStatus.setDeviceModel("Device Model value");
+OffsetDateTime complianceGracePeriodExpirationDateTime = OffsetDateTime.parse("2016-12-31T23:56:44.951111-08:00");
+managedDeviceMobileAppConfigurationDeviceStatus.setComplianceGracePeriodExpirationDateTime(complianceGracePeriodExpirationDateTime);
+managedDeviceMobileAppConfigurationDeviceStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+managedDeviceMobileAppConfigurationDeviceStatus.setLastReportedDateTime(lastReportedDateTime);
+managedDeviceMobileAppConfigurationDeviceStatus.setUserPrincipalName("User Principal Name value");
+ManagedDeviceMobileAppConfigurationDeviceStatus result = graphClient.deviceAppManagement().mobileAppConfigurations().byManagedDeviceMobileAppConfigurationId("{managedDeviceMobileAppConfiguration-id}").deviceStatuses().post(managedDeviceMobileAppConfigurationDeviceStatus);
 
-graphClient.deviceAppManagement().mobileAppConfigurations("{managedDeviceMobileAppConfigurationId}").deviceStatuses()
-	.buildRequest()
-	.post(managedDeviceMobileAppConfigurationDeviceStatus);
 
 ```

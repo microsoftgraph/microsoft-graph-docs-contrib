@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String dismissReason = "Recommendations is not relevant for my organization because...";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directory().recommendations("0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA")
-	.dismiss(RecommendationDismissParameterSet
-		.newBuilder()
-		.withDismissReason(dismissReason)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.directory.recommendations.item.dismiss.DismissPostRequestBody dismissPostRequestBody = new com.microsoft.graph.beta.directory.recommendations.item.dismiss.DismissPostRequestBody();
+dismissPostRequestBody.setDismissReason("Recommendations is not relevant for my organization because...");
+var result = graphClient.directory().recommendations().byRecommendationId("{recommendation-id}").dismiss().post(dismissPostRequestBody);
+
 
 ```

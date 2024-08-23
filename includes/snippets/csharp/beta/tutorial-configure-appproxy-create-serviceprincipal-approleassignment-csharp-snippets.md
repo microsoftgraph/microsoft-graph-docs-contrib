@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.AppRoleAssignments;
 
-var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.AppRoleAssignments.AppRoleAssignmentsPostRequestBody
+var requestBody = new AppRoleAssignmentsPostRequestBody
 {
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -26,7 +27,9 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.AppRoleAssignm
 		},
 	},
 };
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsAppRoleAssignmentsPostResponseAsync(requestBody);
 
 
 ```

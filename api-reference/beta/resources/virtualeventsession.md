@@ -1,9 +1,9 @@
 ---
 title: "virtualEventSession resource type"
 description: "Represents information about a virtual event session."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,36 +13,99 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session in a [virtualEvent](../resources/virtualevent.md)
+Represents a session in a [virtualEvent](../resources/virtualevent.md).
 
-Inherits from [onlineMeeting](../resources/onlinemeeting.md).
+Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
-|[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[List](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
+|[Get](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
-Reference base type [onlineMeeting](../resources/onlinemeeting.md).
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a virtual event session. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the virtual event session. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowParticipantsToChangeName | Boolean | Specifies whether participants are allowed to rename themselves in an instance of the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowRecording | Boolean | Indicates whether recording is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| recordAutomatically | Boolean | Indicates whether to record the virtual event session automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| videoTeleconferenceId | String | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+
+### meetingChatHistoryDefaultMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meeting chat history is shared.                                     |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
+
+### meetingChatMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting chat is enabled.                                               |
+| disabled           | Meeting chat is disabled.                                              |
+| limited            | Meeting chat is enabled but only during the meeting call.              |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
+
+### meetingLiveShareOptions values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting live share is enabled.                                         |
+| disabled           | Meeting live share is disabled.                                        |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
+
+### onlineMeetingPresenters values
+
+| Value              | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| everyone           | Everyone is a presenter. Default.                             |
+| organization       | Everyone in organizer’s organization is a presenter.          |
+| roleIsPresenter    | Only the participants whose role is presenter are presenters. |
+| organizer          | Only the organizer  is a presenter.                           |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
-|registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventSession",
-  "baseType": "microsoft.graph.onlineMeeting",
+  "baseType": "microsoft.graph.onlineMeetingBase",
   "openType": false
 }
 -->
@@ -51,38 +114,34 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.virtualEventSession",
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
+  "allowBreakoutRooms": "Boolean",
+  "allowedPresenters": "String",
+  "allowLiveShare": "String",
   "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
+  "allowPowerPointSharing": "Boolean",
+  "allowRecording": "Boolean",
   "allowTeamworkReactions": "Boolean",
-  "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
+  "allowTranscription": "Boolean",
+  "allowWhiteboard": "Boolean",
   "anonymizeIdentityForRoles": ["String"],
-  "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastMeetingSettings"},
-  "capabilities": ["String"],
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
-  "creationDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "externalId": "String",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
-  "joinUrl": "String",
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
-  "recording": "Stream",
   "shareMeetingChatHistoryDefault": "String",
-  "startDateTime": "String (timestamp)",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }
 ```
 
-## See also
+## Related content
 [List meetingAttendanceReports](../api/meetingattendancereport-list.md)

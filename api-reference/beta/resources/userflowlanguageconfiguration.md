@@ -3,7 +3,7 @@ title: "userFlowLanguageConfiguration resource type"
 description: "The userFlowsLanguageConfiguration object allows a user flow to support customization of multiple languages."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ For [Azure Active Directory B2C user flows](/azure/active-directory-b2c/user-flo
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-get.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow.|
-|[Delete userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-delete.md)|None|Deletes a custom [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow and only a custom language can be deleted from an Azure AD B2C user flow.|
+|[Get user flow language configuration](../api/userflowlanguageconfiguration-get.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow.|
+|[Delete user flow language configuration](../api/userflowlanguageconfiguration-delete.md)|None|Deletes a custom [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object. These objects represent a language available in a user flow and only a custom language can be deleted from an Azure AD B2C user flow.|
 |[List defaultPages](../api/userflowlanguageconfiguration-list-defaultpages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Get the userFlowLanguagePage resources from the defaultPages navigation property. Represents the default user journey in a user flow.|
 |[List overridesPages](../api/userflowlanguageconfiguration-list-overridespages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Get the userFlowLanguagePage resources from the overridesPages navigation property. Represents a custom experience for a user journey in a user flow.|
 
@@ -43,7 +43,7 @@ For [Azure Active Directory B2C user flows](/azure/active-directory-b2c/user-flo
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

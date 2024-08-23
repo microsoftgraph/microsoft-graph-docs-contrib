@@ -3,7 +3,7 @@ title: printConnector resource type
 description: Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,10 @@ Represents a print connector that has been registered by using a Universal Print
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
-| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
-| [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
+| [List](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
+| [Get](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
+| [Update](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
+| [Delete](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -39,7 +39,7 @@ Represents a print connector that has been registered by using a Universal Print
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

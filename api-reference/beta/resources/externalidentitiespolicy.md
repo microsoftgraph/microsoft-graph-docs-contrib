@@ -3,7 +3,7 @@ title: "externalIdentitiesPolicy resource type"
 description: "Represents the tenant-wide policy that controls whether external users can leave a Microsoft Entra tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Inherits from [policyBase](../resources/policybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get externalIdentitiesPolicy](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
-|[Update externalIdentitiesPolicy](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Get](../api/externalidentitiespolicy-get.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Read the properties and relationships of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
+|[Update](../api/externalidentitiespolicy-update.md)|[externalIdentitiesPolicy](../resources/externalidentitiespolicy.md)|Update the properties of an [externalIdentitiesPolicy](../resources/externalidentitiespolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Inherits from [policyBase](../resources/policybase.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -47,7 +47,6 @@ Here's a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.externalIdentitiesPolicy",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "allowExternalIdentitiesToLeave": "Boolean",
@@ -55,5 +54,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 + [Leave an organization as an external user](/azure/active-directory/external-identities/leave-the-organization)

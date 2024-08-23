@@ -3,7 +3,7 @@ title: "learningProvider resource type"
 description: "Represents an entity that holds the details about a learning provider in Viva learning."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: resourcePageType
 ---
 
@@ -19,11 +19,11 @@ Represents an entity that holds the details about a learning provider in Viva le
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
-|[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and registers it with Viva Learning using the specified display name and logos for different themes.|
-|[Get learningProvider](../api/learningprovider-get.md)|[learningProvider](../resources/learningprovider.md)|Read the properties and relationships of a [learningProvider](../resources/learningprovider.md) object.|
-|[Update learningProvider](../api/learningprovider-update.md)|[learningProvider](../resources/learningprovider.md)|Update the properties of a [learningProvider](../resources/learningprovider.md) object.|
-|[Delete learningProvider](../api/employeeexperience-delete-learningproviders.md)|None|Delete a [learningProvider](../resources/learningprovider.md) resource and remove its registration in Viva Learning for the tenant.|
+|[List](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
+|[Create](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and registers it with Viva Learning using the specified display name and logos for different themes.|
+|[Get](../api/learningprovider-get.md)|[learningProvider](../resources/learningprovider.md)|Read the properties and relationships of a [learningProvider](../resources/learningprovider.md) object.|
+|[Update](../api/learningprovider-update.md)|[learningProvider](../resources/learningprovider.md)|Update the properties of a [learningProvider](../resources/learningprovider.md) object.|
+|[Delete](../api/employeeexperience-delete-learningproviders.md)|None|Delete a [learningProvider](../resources/learningprovider.md) resource and remove its registration in Viva Learning for the tenant.|
 
 ## Properties
 
@@ -46,7 +46,7 @@ Represents an entity that holds the details about a learning provider in Viva le
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

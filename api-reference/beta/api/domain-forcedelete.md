@@ -1,9 +1,9 @@
 ---
 title: "domain: forceDelete"
-description: "Deletes a domain using an asynchronous operation."
-author: "adimitui"
+description: "Delete a domain using an asynchronous operation."
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a domain using an asynchronous operation.
+Delete a domain using an asynchronous operation.
 
-Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
+Before performing this operation, you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -27,28 +27,21 @@ The following actions are performed as part of this operation:
 
 * If the number of objects to be renamed is greater than 1,000, an error is returned.
 
-* If one of the applications to be renamed is a multi-tenant app, an error is returned.
+* If one of the applications to be renamed is a multitenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "domain_forcedelete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/domain-forcedelete-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* Domain Name Administrator
-* Partner Tier2 Support
+The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -63,16 +56,16 @@ POST /domains/{id}/forceDelete
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in.<br>*True* (default) - User accounts renamed as part of this operation are disabled.<br>*False* - User accounts renamed as part of this operation are not disabled. |
+|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user isn't allowed to sign in.<br>`true` (default) - User accounts renamed as part of this operation are disabled.<br>`false` - User accounts renamed as part of this operation aren't disabled. |
 
 ## Response
 

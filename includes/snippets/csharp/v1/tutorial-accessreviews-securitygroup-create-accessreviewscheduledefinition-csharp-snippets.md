@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
@@ -55,12 +56,14 @@ var requestBody = new AccessReviewScheduleDefinition
 				Type = RecurrenceRangeType.Numbered,
 				NumberOfOccurrences = 0,
 				RecurrenceTimeZone = null,
-				StartDate = new Date(DateTime.Parse("2022-02-11")),
-				EndDate = new Date(DateTime.Parse("2022-02-16")),
+				StartDate = new Date(DateTime.Parse("2024-03-21")),
+				EndDate = new Date(DateTime.Parse("2024-03-30")),
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
 

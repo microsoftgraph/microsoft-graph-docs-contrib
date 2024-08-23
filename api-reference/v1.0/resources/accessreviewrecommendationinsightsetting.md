@@ -3,7 +3,7 @@ title: "accessReviewRecommendationInsightSetting resource type"
 description: "In the Microsoft Entra access reviews, the accessReviewRecommendationInsightSetting represents the settings associated with an insight provided for an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ The **accessReviewRecommendationInsightSetting** allows you to configure insight
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"

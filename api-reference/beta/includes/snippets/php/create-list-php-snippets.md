@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\List;
+use Microsoft\Graph\Beta\Generated\Models\ColumnDefinition;
+use Microsoft\Graph\Beta\Generated\Models\TextColumn;
+use Microsoft\Graph\Beta\Generated\Models\NumberColumn;
+use Microsoft\Graph\Beta\Generated\Models\ListInfo;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EscapedList();

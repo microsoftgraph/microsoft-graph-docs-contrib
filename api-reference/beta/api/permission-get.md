@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Get permission
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 ---
 # Get sharing permission for a file or folder
 
@@ -24,13 +24,10 @@ This property is an [ItemReference](../resources/itemreference.md) resource refe
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "permission_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permission-get-permissions.md)]
 
 ## HTTP request
 
@@ -56,7 +53,7 @@ If successful, this method returns a `200 OK` response code and [Permission](../
 
 ### Request
 
-Here is an example of the request to access a permission on a folder.
+The following example shows a request to access a permission on a folder.
 
 
 # [HTTP](#tab/http)

@@ -3,8 +3,9 @@ title: "Create governanceRoleAssignmentRequest"
 description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Create governanceRoleAssignmentRequest
@@ -52,7 +53,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {code}    |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json |
 
 ## Request body

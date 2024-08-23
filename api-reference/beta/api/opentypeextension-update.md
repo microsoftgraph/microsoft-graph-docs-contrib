@@ -1,10 +1,10 @@
 ---
 title: "Update openTypeExtension"
-description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
+description: "Update an open extension (openTypeExtension object) on a supported resource type."
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # Update openTypeExtension
@@ -15,13 +15,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
+Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) on a supported resource type.
+- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.
+- Otherwise, that property and its data are added to the extension. 
 
-- If a property in the request body matches the name of an existing property in the extension, the data in the 
-extension is updated.
-- Otherwise that property and its data are added to the extension. 
-
-The data in an extension can be primitive types, or arrays of primitive types.
+The data in an extension can be primitive types or arrays of primitive types. The operation behaves differently for resources that are directory objects vs other resources.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
 
@@ -78,30 +76,34 @@ See the [Request body](#request-body) section about including in the request bod
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
 
-Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the 
-following required name-value pairs, and any custom data to change or add to that extension. 
-The data in the JSON payload can be primitive types, or arrays of primitive types.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Name       | Value |
-|:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | Unique string |
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension. 
 
-Use this operation to either store data in the open extension property, update the stored data, or delete the existing data.
-    - To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties.
-    - To delete data from a property in the open extension object, set its value to `null`.
-    - To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph will delete it.
-    - To delete data from all properties in the open extension object but keep the open extension object, update the values of the properties to `null`.
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|Must be `#microsoft.graph.openTypeExtension`. Required.|
+|extensionName|String|Required if **id** isn't supplied. Updatable.|
+|id|String|Required if **id** isn't supplied. Read-only.|
+
+For resources that are directory (Microsoft Entra ID) objects:
+- To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph deletes the unspecified properties.
+- To delete data from a property in the open extension object but keep the property, set its value to `null`.
+- To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph deletes it.
+- To delete data from all properties in the open extension object but keep the open extension object, update the values of all the properties to `null`.
+
+For Microsoft 365 resources like messages:
+- You can specify a subset of the properties in the request body to update them. The omitted properties and their values are retained.
+- `null` values aren't allowed.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the updated
-[openTypeExtension](../resources/opentypeextension.md) object.
+If successful, this method returns a `204 No Content` response code for directory objects or a `200 OK` response code and an updated [openTypeExtension](../resources/opentypeextension.md) object for other resources.
 
 
 ## Example
@@ -242,6 +244,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

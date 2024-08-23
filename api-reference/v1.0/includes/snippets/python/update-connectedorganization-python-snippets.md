@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.connected_organization import ConnectedOrganization
+from msgraph.generated.models.connected_organization_state import ConnectedOrganizationState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

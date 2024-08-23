@@ -3,7 +3,7 @@ title: "aadUserConversationMember resource type"
 description: "Represents a Microsoft Entra user in a chat or channel."
 ms.localizationpriority: high
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -49,7 +49,7 @@ Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

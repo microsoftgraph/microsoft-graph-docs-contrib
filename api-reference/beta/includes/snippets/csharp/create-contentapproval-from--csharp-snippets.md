@@ -6,38 +6,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.ContentApproval
+var requestBody = new ContentApproval
 {
 	OdataType = "#microsoft.graph.windowsUpdates.contentApproval",
-	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.CatalogContent
+	Content = new CatalogContent
 	{
 		OdataType = "#microsoft.graph.windowsUpdates.catalogContent",
-		CatalogEntry = new Microsoft.Graph.Beta.Models.WindowsUpdates.FeatureUpdateCatalogEntry
+		CatalogEntry = new FeatureUpdateCatalogEntry
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
 			Id = "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4",
 		},
 	},
-	DeploymentSettings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	DeploymentSettings = new DeploymentSettings
 	{
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"schedule" , new 
+			"schedule" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				StartDateTime = "String (timestamp)",
-				GradualRollout = new 
 				{
-					OdataType = "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
-					EndDateTime = "String (timestamp)",
+					"startDateTime", new UntypedString("String (timestamp)")
 				},
-			}
+				{
+					"gradualRollout", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"@odata.type", new UntypedString("#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings")
+						},
+						{
+							"endDateTime", new UntypedString("String (timestamp)")
+						},
+					})
+				},
+			})
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].ComplianceChanges.PostAsync(requestBody);
 
 

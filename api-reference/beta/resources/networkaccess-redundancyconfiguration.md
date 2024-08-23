@@ -3,7 +3,7 @@ title: "redundancyConfiguration resource type"
 description: "The redundancy option for a device link specifies the specific details and configuration settings related to redundancy. "
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ The redundancy option for a device link specifies the specific details and confi
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.redundancyConfiguration"

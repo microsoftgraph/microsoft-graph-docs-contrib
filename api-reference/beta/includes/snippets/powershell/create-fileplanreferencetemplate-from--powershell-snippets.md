@@ -8,10 +8,7 @@ Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.filePlanReferenceTemplate"
-	displayName = "String"
-	createdBy = @{
-		"@odata.type" = "microsoft.graph.identitySet"
-	}
+	displayName = "FIN 01-02-001"
 }
 
 New-MgBetaSecurityLabelFilePlanReference -BodyParameter $params

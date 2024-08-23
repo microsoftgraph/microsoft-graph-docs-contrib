@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.CreatePasswordSingleSignOnCredentials;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.CreatePasswordSingleSignOnCredentials.CreatePasswordSingleSignOnCredentialsPostRequestBody
+var requestBody = new CreatePasswordSingleSignOnCredentialsPostRequestBody
 {
 	Id = "5793aa3b-cca9-4794-679a240f8b58",
 	Credentials = new List<Credential>
@@ -27,6 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.CreatePassword
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].CreatePasswordSingleSignOnCredentials.PostAsync(requestBody);
 
 

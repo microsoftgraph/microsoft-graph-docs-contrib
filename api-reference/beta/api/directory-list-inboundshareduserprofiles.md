@@ -1,9 +1,10 @@
 ---
 title: "List inboundSharedUserProfiles"
 description: "Retrieve the properties of an inboundSharedUserProfiles."
-author: "jkdouglas"
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,13 +20,10 @@ Retrieve the properties of all [inboundSharedUserProfiles](../resources/inbounds
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not applicable|
-|Application|CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "directory_list_inboundshareduserprofiles" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 [!INCLUDE [rbac-cross-tenant-access-shared-user-profiles-apis-read](../includes/rbac-for-apis/rbac-cross-tenant-access-shared-user-profiles-apis-read.md)]
 
@@ -44,7 +42,7 @@ GET /directory/inboundSharedUserProfiles
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -120,7 +118,7 @@ Content-Type: application/json
     "value": [
         {
             "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
-            "userPrincipalName":"bob@contoso.onmicrosoft.com",
+            "userPrincipalName":"bob@contoso.com",
             "displayName":"Bob",
             "homeTenantId":"486fb458-9474-4c44-896b-b30942d055f0"
         },

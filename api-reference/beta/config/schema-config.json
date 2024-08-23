@@ -14,9 +14,8 @@
       "title",
       "description",
       "author",
-      "ms.prod",
       "doc_type",
-      "ms.localizationpriority"
+      "ms.subservice"
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"
@@ -35,7 +34,10 @@
       "readme.md",
       "license.md",
       "index.md"
-    ]
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
+    ] 
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [

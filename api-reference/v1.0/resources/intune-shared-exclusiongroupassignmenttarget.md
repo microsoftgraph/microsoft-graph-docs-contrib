@@ -2,8 +2,8 @@
 title: "exclusionGroupAssignmentTarget resource type"
 description: "Represents a group that should be excluded from an assignment."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

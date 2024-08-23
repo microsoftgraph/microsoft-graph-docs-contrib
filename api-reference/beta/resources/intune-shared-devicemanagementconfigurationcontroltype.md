@@ -2,8 +2,8 @@
 title: "deviceManagementConfigurationControlType enum type"
 description: "Setting control type representation in the UX"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

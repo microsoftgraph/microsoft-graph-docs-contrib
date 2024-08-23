@@ -3,7 +3,7 @@ title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,10 @@ When setting up an Outlook client, the user selects the preferred language from 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadBasic.All    |
-|Delegated (personal Microsoft account) | User.Read    |
-|Application | User.Read.All |
+<!-- { "blockType": "permissions", "name": "outlookuser_supportedlanguages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/outlookuser-supportedlanguages-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Request body
@@ -49,7 +46,7 @@ If successful, this method returns `200 OK` response code and a collection of [l
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

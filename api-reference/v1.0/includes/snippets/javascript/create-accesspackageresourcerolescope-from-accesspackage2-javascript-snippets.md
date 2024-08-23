@@ -12,9 +12,7 @@ const client = Client.init(options);
 
 const accessPackageResourceRoleScope = {
     role: {
-        id: '6646a29e-da03-49f6-bcd9-dec124492de3',
         displayName: 'Contributors',
-        description: null,
         originSystem: 'SharePointOnline',
         originId: '4',
         resource: {
@@ -22,7 +20,6 @@ const accessPackageResourceRoleScope = {
         }
     },
     scope: {
-        id: '5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33',
         displayName: 'Root',
         description: 'Root Scope',
         originId: 'https://contoso.sharepoint.com/portals/Community',

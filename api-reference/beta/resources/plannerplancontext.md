@@ -3,7 +3,7 @@ title: "plannerPlanContext resource type"
 description: "The **plannerPlanContext** resource represents the relationship of a plannerPlan to a user experience outside of Planner. Plans in Planner can be surfaced in other experiences, such as Microsoft Teams, to track work in the context of that experience."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -25,9 +25,13 @@ The **plannerPlanContext** resource represents the relationship of a [plannerPla
 |isCreationContext|Boolean|Read-only. Indicates whether the plan is created from the specified context. Auto-generated based on whether the context is specified as part of plan creation.|
 |ownerAppId|String|Read-only. ID of the app that created the **plannerPlanContext**.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

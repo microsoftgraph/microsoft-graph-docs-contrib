@@ -3,7 +3,7 @@ title: "callParticipantInfo resource type"
 description: "Represents the details for a call participant."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Represents the details for a call participant.
 |participant|[identitySet](../resources/identityset.md)|Identity of the call participant.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callParticipantInfo"

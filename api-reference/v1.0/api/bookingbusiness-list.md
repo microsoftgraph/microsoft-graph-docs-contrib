@@ -3,7 +3,7 @@ title: "List bookingBusinesses"
 description: "Get a collection of bookingBusiness objects that have been created for the tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -17,17 +17,14 @@ This operation returns only the **id** and **displayName** of each Microsoft Boo
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-list-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +42,7 @@ This method also supports the `query` parameter which accepts a string value. Th
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -123,11 +120,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@contoso.onmicrosoft.com",
+            "id":"Fabrikam@contoso.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -164,7 +161,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"AdventureWorksCycles@M365B960066.onmicrosoft.com",
+            "id":"AdventureWorksCycles@contoso.com",
             "displayName":"Adventure Works Cycles",
         }
     ]

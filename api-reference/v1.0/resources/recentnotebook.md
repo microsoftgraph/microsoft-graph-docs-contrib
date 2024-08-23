@@ -3,7 +3,7 @@ title: "recentNotebook resource type"
 description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ A recently accessed OneNote notebook. A **recentNotebook** is similar to a [note
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -46,5 +46,5 @@ The following is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[Get recent notebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
 

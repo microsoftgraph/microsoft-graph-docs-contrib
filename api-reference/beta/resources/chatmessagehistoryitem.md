@@ -3,7 +3,7 @@ title: "chatMessageHistoryItem resource type"
 description: "Represents the edition history of a message in a chat or a channel."
 author: "agnesliu"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents activity history information for a message in a chat or a channel.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.chatMessageHistoryItem"

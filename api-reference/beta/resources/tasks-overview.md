@@ -3,8 +3,9 @@ title: "Use the To Do API in Microsoft Graph"
 description: "You can use the Microsoft Graph API to create an app that connects with tasks and task lists in Microsoft To Do."
 author: "avijityadav"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: conceptualPageType
+toc.title: To-do tasks API overview (deprecated)
 ---
 
 # Use the To Do API built on base tasks in Microsoft Graph (deprecated)
@@ -63,5 +64,3 @@ The following To Do API resources support delta query:
 * [baseTask](./basetask.md) collection in a task list
 * [baseTaskList](./basetasklist.md)
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

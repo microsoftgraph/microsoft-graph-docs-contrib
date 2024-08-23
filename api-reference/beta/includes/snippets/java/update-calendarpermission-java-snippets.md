@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CalendarPermission calendarPermission = new CalendarPermission();
-calendarPermission.role = CalendarRoleType.WRITE;
+calendarPermission.setRole(CalendarRoleType.Write);
+CalendarPermission result = graphClient.users().byUserId("{user-id}").calendar().calendarPermissions().byCalendarPermissionId("{calendarPermission-id}").patch(calendarPermission);
 
-graphClient.users("{id}").calendar().calendarPermissions("RGVmYXVsdA==")
-	.buildRequest()
-	.patch(calendarPermission);
 
 ```

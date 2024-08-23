@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_vpp_app import IosVppApp
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
+from msgraph.generated.models.vpp_licensing_type import VppLicensingType
+from msgraph.generated.models.ios_device_type import IosDeviceType
+from msgraph.generated.models.vpp_token_account_type import VppTokenAccountType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

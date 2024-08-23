@@ -3,7 +3,7 @@ title: "task resource type"
 description: "Represents a task, such as a piece of work or personal item, that can be tracked and completed."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -63,7 +63,7 @@ Inherits from [baseTask](../resources/basetask.md).
 |parentList|[baseTaskList](../resources/basetasklist.md)|The list which contains the task. Inherited from [baseTask](../resources/basetask.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

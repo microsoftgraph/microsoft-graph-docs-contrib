@@ -1,0 +1,467 @@
+name: inactive-pulls
+description: Close pull requests with no activity
+resource: repository
+
+configuration:
+  resourceManagementConfiguration:
+    scheduledSearches:
+    - description: 'Step 1 (do not merge) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: do not merge
+      - isNotLabeledWith:
+          label: ready for content review
+      - isNotLabeledWith:
+          label: content review in progress
+      - isNotLabeledWith:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 2 weeks with the `do not merge` label. Please update the pull request appropriately.
+
+
+              - If you are still working on this pull request, please add a comment or push changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is ready for content review, please add the `ready for content review` label.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - addLabel:
+            label: inactive-2-weeks
+    - description: 'Step 2 (do not merge) - Add inactive-4-weeks label to pull requests with no activity for 28 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: do not merge
+      - hasLabel:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: ready for content review
+      - isNotLabeledWith:
+          label: content review in progress
+      - isNotLabeledWith:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 4 weeks with the `do not merge` label. Please update the pull request appropriately.
+
+
+              - If you are still working on this pull request, please add a comment or push changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is ready for content review, please add the `ready for content review` label.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - removeLabel:
+            label: inactive-2-weeks
+        - addLabel:
+            label: inactive-4-weeks
+    - description: 'Step 3 (do not merge) - Add no recent activity label to pull requests with no activity for 42 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: do not merge
+      - hasLabel:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: ready for content review
+      - isNotLabeledWith:
+          label: content review in progress
+      - isNotLabeledWith:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 6 weeks with the `do not merge` label. Please update the pull request appropriately to avoid automatic closure.
+
+
+              - If you are still working on this pull request, please add a comment or push changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is ready for content review, please add the `ready for content review` label.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > This pull request will be automatically closed in 7 days if you do not take action.
+        - removeLabel:
+            label: inactive-4-weeks
+        - addLabel:
+            label: no recent activity
+    - description: 'Step 1 (changes requested) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 2 weeks with the `changes requested` label. Please address the feedback left by your reviewer and add the `review feedback addressed`. If you have any questions, please contact your reviewer.
+
+
+              - If you are still working on this pull request, please add a comment or push changes. Remove `changes requested` and add `review feedback addressed` once you've made all requested changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - addLabel:
+            label: inactive-2-weeks
+    - description: 'Step 2 (changes requested) - Add inactive-4-weeks label to pull requests with no activity for 28 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: inactive-2-weeks
+      - hasLabel:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 4 weeks with the `changes requested` label. Please address the feedback left by your reviewer and add the `review feedback addressed`. If you have any questions, please contact your reviewer.
+
+
+              - If you are still working on this pull request, please add a comment or push changes. Remove `changes requested` and add `review feedback addressed` once you've made all requested changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - removeLabel:
+            label: inactive-2-weeks
+        - addLabel:
+            label: inactive-4-weeks
+    - description: 'Step 3 (changes requested) - Add no recent activity label to pull requests with no activity for 42 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: inactive-4-weeks
+      - hasLabel:
+          label: changes requested
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: content review complete
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request has been inactive for 6 weeks with the `changes requested` label. Please address the feedback left by your reviewer and add the `review feedback addressed`. If you have any questions, please contact your reviewer.
+
+
+              - If you are still working on this pull request, please add a comment or push changes. Remove `changes requested` and add `review feedback addressed` once you've made all requested changes.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > This pull request will be automatically closed in 7 days if you do not take action.
+        - removeLabel:
+            label: inactive-4-weeks
+        - addLabel:
+            label: no recent activity
+    - description: 'Step 1 (content review complete) - Add inactive-2-weeks label to pull requests with no activity for 14 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: content review complete
+      - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request was approved by your reviewer, but has been inactive for 2 weeks. Please update the pull request appropriately.
+
+
+              - If you are ready to publish, please add the `ready to merge` label.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - addLabel:
+            label: inactive-2-weeks
+    - description: 'Step 2 (content review complete) - Add inactive-4-weeks label to pull requests with no activity for 14 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: inactive-2-weeks
+      - hasLabel:
+          label: content review complete
+      - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request was approved by your reviewer, but has been inactive for 4 weeks. Please update the pull request appropriately.
+
+
+              - If you are ready to publish, please add the `ready to merge` label.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - removeLabel:
+            label: inactive-2-weeks
+        - addLabel:
+            label: inactive-4-weeks
+    - description: 'Step 3 (content review complete) - Add no recent activity label to pull requests with no activity for 14 days'
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: inactive-4-weeks
+      - hasLabel:
+          label: content review complete
+      - isNotLabeledWith:
+          label: ready to merge
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: no recent activity
+      - noActivitySince:
+          days: 14
+      actions:
+        - addReply:
+            reply: >-
+              Hello @${issueAuthor}! This pull request was approved by your reviewer, but has been inactive for 6 weeks. Please update the pull request appropriately to avoid automatic closure.
+
+
+              - If you are ready to publish, please add the `ready to merge` label.
+
+              - If the pull request is no longer needed, please close it.
+
+              - If the pull request is on hold or otherwise blocked, please add the `blocked` label.
+
+
+              > [!NOTE]
+
+              > Pull requests that are inactive more than 6 weeks will be automatically closed.
+        - removeLabel:
+            label: inactive-4-weeks
+        - addLabel:
+            label: no recent activity
+    - description: Close issues with no recent activity label with no activity for 7 days
+      frequencies:
+      - daily:
+          time: 11:00
+      filters:
+      - isOpen
+      - isPullRequest
+      - isNotPartOfMilestone:
+          milestone: Community Contributions
+      - hasLabel:
+          label: no recent activity
+      - isNotLabeledWith:
+          label: ready for content review
+      - isNotLabeledWith:
+          label: content review in progress
+      - isNotLabeledWith:
+          label: review feedback addressed
+      - isNotLabeledWith:
+          label: blocked
+      - isNotLabeledWith:
+          label: inactive-2-weeks
+      - isNotLabeledWith:
+          label: inactive-4-weeks
+      - noActivitySince:
+          days: 7
+      actions:
+        - addReply:
+            reply: This pull request has been closed due to inactivity. If you still need this pull request, please reopen or recreate the request when you are ready to continue working on it.
+        - closeIssue
+    eventResponderTasks:
+    - description: Remove activity tracking labels if pull request is updated
+      if:
+      - payloadType: Pull_Request
+      - not:
+          isAction:
+            action: Closed
+      then:
+      - removeLabel:
+          label: inactive-2-weeks
+      - removeLabel:
+          label: inactive-4-weeks
+      - removeLabel:
+          label: no recent activity

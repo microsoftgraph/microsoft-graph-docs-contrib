@@ -2,40 +2,37 @@
 author: spgraph-docs-team
 description: "Retrieve the properties and relationships of a Drive resource."
 ms.date: 09/10/2017
-title: Get Drive
+title: Get drive
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Get Drive
+# Get drive
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
+Retrieve the properties and relationships of a [drive](../resources/drive.md) resource.
 
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+A drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "drive_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-get-permissions.md)]
 
 ## HTTP request
 
-### Get current user's OneDrive
+### Get the current OneDrive of a user
 
-The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
+The signed-in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
 
-If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user has a license for OneDrive but their OneDrive isn't set up yet, this request automatically provisions the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,12 +40,11 @@ If a user's OneDrive isn't provisioned but the user has a license to use OneDriv
 GET /me/drive
 ```
 
-
-### Get a user's OneDrive
+### Get the OneDrive of a user
 
 To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
 
-If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user has a license for OneDrive but their OneDrive isn't set up yet, this request automatically provisions the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -124,7 +120,7 @@ If the drive doesn't exist and can't be provisioned automatically (when using de
 
 ### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default" } -->
 
@@ -167,6 +163,8 @@ GET /me/drive
 ---
 
 ### Response
+
+The following example shows the response.
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id",] } -->
 
 ```http
@@ -190,7 +188,6 @@ Content-type: application/json
     }
 }
 ```
-
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters

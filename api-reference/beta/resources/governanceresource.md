@@ -3,8 +3,9 @@ title: "governanceResource resource type"
 description: "Represents resources that are managed Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, etc."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceResource resource type
@@ -20,7 +21,7 @@ Represents Privileged Identity Management (PIM) resources. For Azure resources, 
 
 ## Methods
 
-| Method		  | Return Type	|Description|
+| Method          | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
 |[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
@@ -29,7 +30,7 @@ Represents Privileged Identity Management (PIM) resources. For Azure resources, 
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity set for now.
 
 ## Properties
-| Property	        |Type	      |Description|
+| Property            |Type          |Description|
 |:------------------|:----------|:----------|
 |id                 |String     |The id of the resource. It is in GUID format.|
 |externalId           |String   |The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
@@ -43,7 +44,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource. To get the property, explicitly use `$select=permissions` in the query.|
 
 ## Relationships
-| Relationship   | Type	                                        |Description|
+| Relationship   | Type                                            |Description|
 |:---------------|:---------------------------------------------|:----------|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|The collection of role assignments for the resource.|
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|The collection of role definitions for the resource.|
@@ -53,7 +54,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

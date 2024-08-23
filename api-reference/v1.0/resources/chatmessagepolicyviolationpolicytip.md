@@ -4,7 +4,7 @@ description: "Represents properties of a policy tip on a chatMessagePolicyViolat
 author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 # chatMessagePolicyTip resource type
 
@@ -22,7 +22,7 @@ Policy tips are typically set by a data loss prevention (DLP) app which watches 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

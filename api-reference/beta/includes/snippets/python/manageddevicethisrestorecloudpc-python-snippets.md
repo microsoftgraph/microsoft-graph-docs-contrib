@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.manageddevices.item.restore_cloud_pc.restore_cloud_pc_post_request_body import RestoreCloudPcPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

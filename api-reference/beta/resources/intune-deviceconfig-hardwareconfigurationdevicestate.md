@@ -2,18 +2,18 @@
 title: "hardwareConfigurationDeviceState resource type"
 description: "Contains properties for device run state of the hardware configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # hardwareConfigurationDeviceState resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Contains properties for device run state of the hardware configuration
 
@@ -35,9 +35,11 @@ Contains properties for device run state of the hardware configuration
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|
-|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
+|assignmentFilterIds|String|A list of identifier strings of different assignment filters applied|
+|userId|String|The unique identifier of the Entra user associated with the device for which policy is applied. Read-Only.|
 
 ## Relationships
 None
@@ -61,6 +63,8 @@ Here is a JSON representation of the resource.
   "lastStateUpdateDateTime": "String (timestamp)",
   "configurationState": "String",
   "configurationOutput": "String",
-  "configurationError": "String"
+  "configurationError": "String",
+  "assignmentFilterIds": "String",
+  "userId": "String"
 }
 ```

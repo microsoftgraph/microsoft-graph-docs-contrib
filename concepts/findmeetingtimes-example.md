@@ -6,22 +6,22 @@ ms.localizationpriority: high
 
 # Find possible meeting times on the Outlook calendar
 
-In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
+In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use
 [findMeetingTimes](/graph/api/user-findmeetingtimes) to identify any possible meeting times that satisfy time, location, and other constraints.
 
 The **findMeetingTimes** action lets you specify conditions such as the meeting date/time range, duration, optional or required attendees, and
-nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests 
-times that are appropriate for the participants and type of activity. For instance, suggestions for a work-related activity always occur 
+nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests
+times that are appropriate for the participants and type of activity. For instance, suggestions for a work-related activity always occur
 during the work hours of the organizer and attendees, and suggestions where required attendees are available are ordered higher up in the suggested list.
 
-In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
-and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions 
+In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer
+and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions
 expressed in a specific time zone.
 ``` http
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 
-Especially useful for larger meetings, you can specify a percentage (**minimumAttendeePercentage**) for a quorum and have **findMeetingTimes** return suggestions 
+Especially useful for larger meetings, you can specify a percentage (**minimumAttendeePercentage**) for a quorum and have **findMeetingTimes** return suggestions
 only if that minimum attendee availability is met.
 
 If **findMeetingTimes** cannot suggest any meeting times, it indicates a specific reason (**emptySuggestionsReason**), such as the organizer or a required attendee not available.
@@ -32,8 +32,8 @@ Based on this value, you can better adjust the parameters and call **findMeeting
 
 ## Example
 
-The following example shows how to use **findMeetingTimes** to return possible times for 2 users to meet for a couple of hours, taking into 
-account the users' free/busy and work schedules, and the attendee being away for part of the time. Because there are only 2 users for this meeting, suggestions 
+The following example shows how to use **findMeetingTimes** to return possible times for 2 users to meet for a couple of hours, taking into
+account the users' free/busy and work schedules, and the attendee being away for part of the time. Because there are only 2 users for this meeting, suggestions
 require 100% attendance. The following shows the users' free/busy schedule.
 
 ### Organizer's calendar
@@ -47,7 +47,7 @@ require 100% attendance. The following shows the users' free/busy schedule.
 The example makes 2 calls to **findMeetingTimes**:
 
 1. The first call looks in the date range of April 18-20.
-As the attendee is out-of-office on April 18-19, and there is no commonly available time on April 20, the first call returns no suggestions 
+As the attendee is out-of-office on April 18-19, and there is no commonly available time on April 20, the first call returns no suggestions
 with the reason (**emptySuggestionsReason**) that attendees are not available.
 2. The second call looks for availability on April 21 and returns a suggestion of 2-4pm.
 
@@ -74,41 +74,41 @@ POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 
-{ 
-  "attendees": [ 
-    { 
-      "type": "required",  
-      "emailAddress": { 
+{
+  "attendees": [
+    {
+      "type": "required",
+      "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com" 
-      } 
+        "address": "samanthab@contoso.com"
+      }
     }
-  ],  
-  "locationConstraint": { 
-    "isRequired": false,  
-    "suggestLocation": false,  
-    "locations": [ 
-      { 
+  ],
+  "locationConstraint": {
+    "isRequired": false,
+    "suggestLocation": false,
+    "locations": [
+      {
         "resolveAvailability": false,
-        "displayName": "Conf room Hood" 
-      } 
-    ] 
-  },  
+        "displayName": "Conf room Hood"
+      }
+    ]
+  },
   "timeConstraint": {
-    "activityDomain":"work", 
-    "timeslots": [ 
-      { 
-        "start": { 
-          "dateTime": "2017-04-18T09:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        },  
-        "end": { 
-          "dateTime": "2017-04-20T17:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        } 
-      } 
-    ] 
-  },  
+    "activityDomain":"work",
+    "timeslots": [
+      {
+        "start": {
+          "dateTime": "2017-04-18T09:00:00",
+          "timeZone": "Pacific Standard Time"
+        },
+        "end": {
+          "dateTime": "2017-04-20T17:00:00",
+          "timeZone": "Pacific Standard Time"
+        }
+      }
+    ]
+  },
   "meetingDuration": "PT2H",
   "returnSuggestionReasons": true,
   "minimumAttendeePercentage": 100
@@ -149,41 +149,41 @@ POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 
-{ 
-  "attendees": [ 
-    { 
-      "type": "required",  
-      "emailAddress": { 
+{
+  "attendees": [
+    {
+      "type": "required",
+      "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com" 
-      } 
+        "address": "samanthab@contoso.com"
+      }
     }
-  ],  
-  "locationConstraint": { 
-    "isRequired": false,  
-    "suggestLocation": false,  
-    "locations": [ 
-      { 
+  ],
+  "locationConstraint": {
+    "isRequired": false,
+    "suggestLocation": false,
+    "locations": [
+      {
         "resolveAvailability": false,
-        "displayName": "Conf room Hood" 
-      } 
-    ] 
-  },  
+        "displayName": "Conf room Hood"
+      }
+    ]
+  },
   "timeConstraint": {
-    "activityDomain":"work", 
-    "timeslots": [ 
-      { 
-        "start": { 
-          "dateTime": "2017-04-21T09:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        },  
-        "end": { 
-          "dateTime": "2017-04-21T17:00:00",  
-          "timeZone": "Pacific Standard Time" 
-        } 
-      } 
-    ] 
-  },  
+    "activityDomain":"work",
+    "timeslots": [
+      {
+        "start": {
+          "dateTime": "2017-04-21T09:00:00",
+          "timeZone": "Pacific Standard Time"
+        },
+        "end": {
+          "dateTime": "2017-04-21T17:00:00",
+          "timeZone": "Pacific Standard Time"
+        }
+      }
+    ]
+  },
   "meetingDuration": "PT2H",
   "returnSuggestionReasons": true,
   "minimumAttendeePercentage": 100
@@ -228,7 +228,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"samanthab@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.com"
                         }
                     }
                 }
@@ -247,7 +247,7 @@ Content-Length: 714
 
 ## Next steps
 
-There are times when not all attendees can attend a meeting. You can have **findMeetingTimes** suggest a time if the _confidence_ for attendance reaches a certain percentage, by specifying the **minimumAttendeePercentage** optional parameter. Learn more about the 
+There are times when not all attendees can attend a meeting. You can have **findMeetingTimes** suggest a time if the _confidence_ for attendance reaches a certain percentage, by specifying the **minimumAttendeePercentage** optional parameter. Learn more about the
 [confidence of a meeting suggestion](/graph/api/user-findmeetingtimes#the-confidence-of-a-meeting-suggestion)
 and other [parameters](/graph/api/user-findmeetingtimes#request-body), and apply them as appropriate for meetings of larger sizes.
 

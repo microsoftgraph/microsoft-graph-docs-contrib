@@ -5,8 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\PrintJob;
+use Microsoft\Graph\Generated\Models\PrintJobConfiguration;
+use Microsoft\Graph\Generated\Models\PrinterFeedOrientation;
+use Microsoft\Graph\Generated\Models\IntegerRange;
+use Microsoft\Graph\Generated\Models\PrintQuality;
+use Microsoft\Graph\Generated\Models\PrintOrientation;
+use Microsoft\Graph\Generated\Models\PrintDuplexMode;
+use Microsoft\Graph\Generated\Models\PrintColorMode;
+use Microsoft\Graph\Generated\Models\PrintMargin;
+use Microsoft\Graph\Generated\Models\PrintMultipageLayout;
+use Microsoft\Graph\Generated\Models\PrintScaling;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PrintJob();

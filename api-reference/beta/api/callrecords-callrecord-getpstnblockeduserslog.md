@@ -1,9 +1,9 @@
 ---
 title: "callRecord: getPstnBlockedUsersLog"
 description: "Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of pstnBlockedUsersLogRow entries."
-author: "radoslag" 
+author: "saurabhjain0804" 
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph.callRecords
 
 Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of [pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries. The log includes information about each blocked user such as their assigned phone number and the reason they were blocked/unblocked from making calls.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| Not supported. |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_getpstnblockeduserslog" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-getpstnblockeduserslog-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +50,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -63,15 +60,15 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.pstnBlockedUsersLogRow](../resources/callrecords-pstnblockeduserslogrow.md) entries in the response body.
   
-If the function returns more than 1000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
+If the function returns more than 1,000 entries for the specified date range, the body also includes an `@odata.nextLink` with a URL to query the next page of entries. The last page in the date range doesn't have an `@odata.nextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in the first response, and an `@odata.nextLink` to get records beyond the first 1000. For readability, the response object contains only a collection of two records.
+The following example shows how to get a collection of records for PSTN blocked users that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in the first response, and an `@odata.nextLink` to get records beyond the first 1,000. For readability, the response object contains only a collection of two records.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -161,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [Get log of PSTN calls in Microsoft Graph](callrecords-callrecord-getpstncalls.md)
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)

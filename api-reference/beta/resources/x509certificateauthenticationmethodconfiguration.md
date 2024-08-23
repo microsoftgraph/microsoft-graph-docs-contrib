@@ -3,8 +3,10 @@ title: "x509CertificateAuthenticationMethodConfiguration resource type"
 description: "Represents the details of the Microsoft Entra native Certificate-Based Authentication (CBA) in the tenant, including whether the authentication method is enabled or disabled and the users and groups who can register and use it."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: X509 certificate
+toc.keywords: [ certificate-based authentication, CBA ]
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type
@@ -20,9 +22,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object.|
-|[Update x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|None|Update the properties of a x509CertificateAuthenticationMethodConfiguration object.|
-|[Delete x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|None| Delete the tenant-customized x509CertificateAuthenticationMethodConfiguration object and restore the default configuration.|
+|[Get](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object.|
+|[Update](../api/x509certificateauthenticationmethodconfiguration-update.md)|None|Update the properties of a x509CertificateAuthenticationMethodConfiguration object.|
+|[Delete](../api/x509certificateauthenticationmethodconfiguration-delete.md)|None| Delete the tenant-customized x509CertificateAuthenticationMethodConfiguration object and restore the default configuration.|
 
 
 ## Properties
@@ -41,7 +43,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

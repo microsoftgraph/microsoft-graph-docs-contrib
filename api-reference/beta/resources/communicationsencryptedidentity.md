@@ -3,7 +3,7 @@ title: "communicationsEncryptedIdentity resource type"
 description: "Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,14 +19,14 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's encrypted identifier. |
+| Property                       | Type                        | Description   |
+| :----------------------------- | :---------------------------| :-------------|
 | displayName | String | Inherited from **identity**. The display name associated with the user. |
+| id | String | Inherited from **identity**. The user's encrypted identifier. |
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String"
 }
 ```

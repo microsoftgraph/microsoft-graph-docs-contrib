@@ -3,8 +3,9 @@ title: "privilegedAccessGroupAssignmentSchedule resource type"
 description: "Represents the schedule of membership or ownership assignments to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Assignment schedule
 ---
 
 # privilegedAccessGroupAssignmentSchedule resource type
@@ -18,9 +19,9 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Get a list of the [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) objects and their properties.|
-|[Get privilegedAccessGroupAssignmentSchedule](../api/privilegedaccessgroupassignmentschedule-get.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
-|[filterByCurrentUser](../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Return schedules of membership and ownership assignment requests for the calling principal.|
+|[List](../api/privilegedaccessgroup-list-assignmentschedules.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Get a list of the [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) objects and their properties.|
+|[Get](../api/privilegedaccessgroupassignmentschedule-get.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) object.|
+|[Filter by current user](../api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) collection|Return schedules of membership and ownership assignment requests for the calling principal.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,11 +42,11 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |Relationship|Type|Description|
 |:---|:---|:---|
 |activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship. Otherwise, it's `null`. Supports `$expand`.|
-|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment through PIM for groups. Supports `$expand`.|
-|principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM. Supports `$expand`.|
+|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment through PIM for groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
+|principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM. Supports `$expand` and `$select` nested in `$expand` for **id** only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -33,10 +33,13 @@ Use the **type** property to specify the different types of **recurrenceRange**.
 |`noEnd`  |Range without an end date | Event repeats on all the days that fit the corresponding recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017 indefinitely. | **type**, **startDate** |
 |`numbered`|Range with specific number of occurrences | Event repeats for the **numberOfOccurrences** based on the recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017, for 10 occurrences.  | **type**, **startDate**, **numberOfOccurrences** |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

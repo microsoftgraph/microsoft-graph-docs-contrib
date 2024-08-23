@@ -4,32 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProjectParticipation projectParticipation = new ProjectParticipation();
-LinkedList<String> categoriesList = new LinkedList<String>();
-categoriesList.add("Branding");
-projectParticipation.categories = categoriesList;
+LinkedList<String> categories = new LinkedList<String>();
+categories.add("Branding");
+projectParticipation.setCategories(categories);
 CompanyDetail client = new CompanyDetail();
-client.displayName = "Contoso Ltd.";
-client.department = "Corporate Marketing";
-client.webUrl = "https://www.contoso.com";
-projectParticipation.client = client;
-projectParticipation.displayName = "Contoso Re-branding Project";
+client.setDisplayName("Contoso Ltd.");
+client.setDepartment("Corporate Marketing");
+client.setWebUrl("https://www.contoso.com");
+projectParticipation.setClient(client);
+projectParticipation.setDisplayName("Contoso Re-branding Project");
 PositionDetail detail = new PositionDetail();
 CompanyDetail company = new CompanyDetail();
-company.displayName = "Adventureworks Inc.";
-company.department = "Consulting";
-company.webUrl = "https://adventureworks.com";
-detail.company = company;
-detail.description = "Rebranding of Contoso Ltd.";
-detail.jobTitle = "Lead PM Rebranding";
-detail.role = "project management";
-detail.summary = "A 6 month project to help Contoso rebrand after they were divested from a parent organization.";
-projectParticipation.detail = detail;
+company.setDisplayName("Adventureworks Inc.");
+company.setDepartment("Consulting");
+company.setWebUrl("https://adventureworks.com");
+detail.setCompany(company);
+detail.setDescription("Rebranding of Contoso Ltd.");
+detail.setJobTitle("Lead PM Rebranding");
+detail.setRole("project management");
+detail.setSummary("A 6 month project to help Contoso rebrand after they were divested from a parent organization.");
+projectParticipation.setDetail(detail);
+ProjectParticipation result = graphClient.me().profile().projects().post(projectParticipation);
 
-graphClient.me().profile().projects()
-	.buildRequest()
-	.post(projectParticipation);
 
 ```

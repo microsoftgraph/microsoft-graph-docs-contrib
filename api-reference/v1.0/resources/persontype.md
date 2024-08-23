@@ -3,7 +3,7 @@ title: "personType resource type"
 description: "Represents the type of person."
 ms.localizationpriority: medium
 author: "simonhult"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Represents the type of person.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

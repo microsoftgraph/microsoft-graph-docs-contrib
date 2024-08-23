@@ -3,8 +3,9 @@ title: "multiTenantOrganizationMember resource type"
 description: "Defines a tenant added to a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Member
 ---
 
 # multiTenantOrganizationMember resource type
@@ -18,11 +19,11 @@ Defines a tenant added to a multitenant organization.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List multiTenantOrganizationMembers](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|List the tenants and their properties in the multitenant organization.|
-|[Add multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a tenant to a multitenant organization.|
-|[Get multiTenantOrganizationMember](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Get a tenant and its properties in the multitenant organization.|
-|[Update multiTenantOrganizationMember](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a tenant in a multitenant organization.|
-|[Remove multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Remove a tenant from a multitenant organization.|
+|[List](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|List the tenants and their properties in the multitenant organization.|
+|[Add](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a tenant to a multitenant organization.|
+|[Get](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Get a tenant and its properties in the multitenant organization.|
+|[Update](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a tenant in a multitenant organization.|
+|[Remove](../api/multitenantorganization-delete-tenants.md)|None|Remove a tenant from a multitenant organization.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +41,7 @@ Defines a tenant added to a multitenant organization.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "tenantId",

@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AppLogCollectionRequest appLogCollectionRequest = new AppLogCollectionRequest();
-appLogCollectionRequest.status = AppLogUploadState.COMPLETED;
-appLogCollectionRequest.errorMessage = "Error Message value";
-LinkedList<String> customLogFoldersList = new LinkedList<String>();
-customLogFoldersList.add("Custom Log Folders value");
-appLogCollectionRequest.customLogFolders = customLogFoldersList;
-appLogCollectionRequest.completedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:58:52.3534526+00:00");
+appLogCollectionRequest.setOdataType("#microsoft.graph.appLogCollectionRequest");
+appLogCollectionRequest.setStatus(AppLogUploadState.Completed);
+appLogCollectionRequest.setErrorMessage("Error Message value");
+LinkedList<String> customLogFolders = new LinkedList<String>();
+customLogFolders.add("Custom Log Folders value");
+appLogCollectionRequest.setCustomLogFolders(customLogFolders);
+OffsetDateTime completedDateTime = OffsetDateTime.parse("2016-12-31T23:58:52.3534526-08:00");
+appLogCollectionRequest.setCompletedDateTime(completedDateTime);
+AppLogCollectionRequest result = graphClient.deviceManagement().mobileAppTroubleshootingEvents().byMobileAppTroubleshootingEventId("{mobileAppTroubleshootingEvent-id}").appLogCollectionRequests().byAppLogCollectionRequestId("{appLogCollectionRequest-id}").patch(appLogCollectionRequest);
 
-graphClient.deviceManagement().mobileAppTroubleshootingEvents("{mobileAppTroubleshootingEventId}").appLogCollectionRequests("{appLogCollectionRequestId}")
-	.buildRequest()
-	.patch(appLogCollectionRequest);
 
 ```

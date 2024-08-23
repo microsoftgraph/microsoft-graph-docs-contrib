@@ -3,7 +3,7 @@ title: "termsOfUseContainer resource type"
 description: "Container for the relationships that expose the terms of use API and its features. Currently exposes the agreements and agreementAcceptances relationships."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
 ---
 
@@ -34,7 +34,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

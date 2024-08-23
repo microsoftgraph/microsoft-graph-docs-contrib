@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DelegatedAdminServiceManagementDetailCollectionPage serviceManagementDetails = graphClient.tenantRelationships().delegatedAdminCustomers("4fdbff88-9d6b-42e0-9713-45c922ba8001").serviceManagementDetails()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DelegatedAdminServiceManagementDetailCollectionResponse result = graphClient.tenantRelationships().delegatedAdminCustomers().byDelegatedAdminCustomerId("{delegatedAdminCustomer-id}").serviceManagementDetails().get();
+
 
 ```

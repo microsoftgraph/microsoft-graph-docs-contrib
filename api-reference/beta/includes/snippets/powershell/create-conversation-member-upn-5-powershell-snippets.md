@@ -11,8 +11,8 @@ $params = @{
 	"user@odata.bind" = "https://graph.microsoft.com/beta/users/jacob@contoso.com"
 	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
-		"owner"
-	)
+	"owner"
+)
 }
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params

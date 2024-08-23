@@ -1,9 +1,9 @@
 ---
 title: "Create retentionEvent"
 description: "Create a new retentionEvent object."
-author: "sseth" 
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security" 
+ms.subservice: "security" 
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Create a new [retentionEvent](../resources/security-retentionevent.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_retentionevent_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-retentionevent-post-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ POST /security/triggers/retentionEvents
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -50,7 +47,7 @@ Specify the following properties when creating a **retentionEvent**.
 |:---|:---|:---|
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
-|eventQuery|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
+|eventQuery|[microsoft.graph.security.eventQuery](../resources/security-eventquery.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |retentionEventType|String|Name of the event type associated with the event.|
 
@@ -61,6 +58,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,7 +77,7 @@ Content-length: 616
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
@@ -133,7 +131,7 @@ Content-length: 616
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -152,7 +150,7 @@ Content-Type: application/json
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",

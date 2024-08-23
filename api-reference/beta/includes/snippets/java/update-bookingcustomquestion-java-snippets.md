@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BookingCustomQuestion bookingCustomQuestion = new BookingCustomQuestion();
-bookingCustomQuestion.displayName = "What is your age?";
-bookingCustomQuestion.answerInputType = AnswerInputType.TEXT;
-LinkedList<String> answerOptionsList = new LinkedList<String>();
-bookingCustomQuestion.answerOptions = answerOptionsList;
+bookingCustomQuestion.setOdataType("#microsoft.graph.bookingCustomQuestion");
+bookingCustomQuestion.setDisplayName("What is your age?");
+bookingCustomQuestion.setAnswerInputType(AnswerInputType.Text);
+LinkedList<String> answerOptions = new LinkedList<String>();
+bookingCustomQuestion.setAnswerOptions(answerOptions);
+BookingCustomQuestion result = graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").customQuestions().byBookingCustomQuestionId("{bookingCustomQuestion-id}").patch(bookingCustomQuestion);
 
-graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").customQuestions("3bc6fde0-4ad3-445d-ab17-0fc15dba0774")
-	.buildRequest()
-	.patch(bookingCustomQuestion);
 
 ```

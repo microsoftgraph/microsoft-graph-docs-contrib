@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Create a connectorGroup object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 Create a [connectorGroup](../resources/connectorgroup.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "connectorgroup_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/connectorgroup-post-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +30,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -44,7 +41,7 @@ The following table lists the properties available for a **connectorGroup**. The
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indicates the type of hybrid agent. This property is preset by the system.|
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
+|isDefault|Boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
 |name|string| The name associated with the connectorGroup. |
 |region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 

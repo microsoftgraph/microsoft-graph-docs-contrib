@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessPackageAssignmentAdditionalAccessCollectionPage additionalAccess = graphClient.identityGovernance().entitlementManagement().assignments()
-	.additionalAccess(AccessPackageAssignmentAdditionalAccessParameterSet
-		.newBuilder()
-		.withAccessPackageId("2506aef1-3929-4d24-a61e-7c8b83d95e6f")
-		.withIncompatibleAccessPackageId("d5d99728-8c0b-4ede-83d2-cf9b0e8dabfb")
-		.build())
-	.buildRequest()
-	.expand("target")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.identityGovernance().entitlementManagement().assignments().additionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId("{accessPackageId}", "{incompatibleAccessPackageId}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"target"};
+});
+
 
 ```

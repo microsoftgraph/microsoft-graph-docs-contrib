@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Chats.Item.UnhideForUser;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Chats.Item.UnhideForUser.UnhideForUserPostRequestBody
+var requestBody = new UnhideForUserPostRequestBody
 {
 	User = new TeamworkUserIdentity
 	{
@@ -21,6 +23,8 @@ var requestBody = new Microsoft.Graph.Chats.Item.UnhideForUser.UnhideForUserPost
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].UnhideForUser.PostAsync(requestBody);
 
 

@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new User
 {
@@ -15,16 +17,24 @@ var requestBody = new User
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"Engineering" , new 
+				"Engineering" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
-					NumVendorsOdataType = "#Int32",
-					NumVendors = 4,
-				}
+					{
+						"@odata.type", new UntypedString("#Microsoft.DirectoryServices.CustomSecurityAttributeValue")
+					},
+					{
+						"numVendors@odata.type", new UntypedString("#Int32")
+					},
+					{
+						"numVendors", new UntypedString("4")
+					},
+				})
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
 

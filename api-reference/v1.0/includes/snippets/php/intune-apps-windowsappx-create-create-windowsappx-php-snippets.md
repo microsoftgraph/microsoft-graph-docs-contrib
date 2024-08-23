@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WindowsAppX;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MobileAppPublishingState;
+use Microsoft\Graph\Generated\Models\WindowsArchitecture;
+use Microsoft\Graph\Generated\Models\WindowsMinimumOperatingSystem;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WindowsAppX();

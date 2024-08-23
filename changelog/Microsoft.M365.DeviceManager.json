@@ -1,0 +1,128 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appsUpdateChannelType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appsUpdateChannelType** enumeration type.",
+          "Target": "appsUpdateChannelType"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appsInstallationOptionsForMac",
+          "ChangeType": "Addition",
+          "Description": "Added the [appsInstallationOptionsForMac](https://learn.microsoft.com/en-us/graph/api/resources/appsInstallationOptionsForMac?view=graph-rest-beta) resource type.",
+          "Target": "appsInstallationOptionsForMac"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appsInstallationOptionsForWindows",
+          "ChangeType": "Addition",
+          "Description": "Added the [appsInstallationOptionsForWindows](https://learn.microsoft.com/en-us/graph/api/resources/appsInstallationOptionsForWindows?view=graph-rest-beta) resource type.",
+          "Target": "appsInstallationOptionsForWindows"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoft365Apps",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoft365Apps** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminMicrosoft365Apps",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminMicrosoft365Apps](https://learn.microsoft.com/en-us/graph/api/resources/adminMicrosoft365Apps?view=graph-rest-beta) resource.",
+          "Target": "adminMicrosoft365Apps"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "installationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **installationOptions** relationship to the [adminMicrosoft365Apps](https://learn.microsoft.com/en-us/graph/api/resources/adminMicrosoft365Apps?view=graph-rest-beta) resource.",
+          "Target": "adminMicrosoft365Apps"
+        },
+        {
+          "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365AppsInstallationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365AppsInstallationOptions](https://learn.microsoft.com/en-us/graph/api/resources/m365AppsInstallationOptions?view=graph-rest-beta) resource and its methods.",
+          "Target": "m365AppsInstallationOptions"
+        }
+      ],
+      "Id": "78923b56-848e-4686-bc5b-12f1e69f14ca",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-12T00:41:19.865921Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Microsoft 365 apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appsUpdateChannelType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appsUpdateChannelType** enumeration type.",
+          "Target": "appsUpdateChannelType"
+        },
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appsInstallationOptionsForMac",
+          "ChangeType": "Addition",
+          "Description": "Added the [appsInstallationOptionsForMac](https://learn.microsoft.com/en-us/graph/api/resources/appsInstallationOptionsForMac?view=graph-rest-1.0) resource.",
+          "Target": "appsInstallationOptionsForMac"
+        },
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appsInstallationOptionsForWindows",
+          "ChangeType": "Addition",
+          "Description": "Added the [appsInstallationOptionsForWindows](https://learn.microsoft.com/en-us/graph/api/resources/appsInstallationOptionsForWindows?view=graph-rest-1.0) resource.",
+          "Target": "appsInstallationOptionsForWindows"
+        },
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "microsoft365Apps",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoft365Apps** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminMicrosoft365Apps",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminMicrosoft365Apps](https://learn.microsoft.com/en-us/graph/api/resources/adminMicrosoft365Apps?view=graph-rest-1.0) resource.",
+          "Target": "adminMicrosoft365Apps"
+        },
+        {
+          "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365AppsInstallationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365AppsInstallationOptions](https://learn.microsoft.com/en-us/graph/api/resources/m365AppsInstallationOptions?view=graph-rest-1.0) resource.",
+          "Target": "m365AppsInstallationOptions"
+        }
+      ],
+      "Id": "4fb9c1f5-7ca7-4147-ad76-64ca4d7b076e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-11T15:33:50.9608727Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Microsoft 365 apps"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "complianceChangeRule resource type"
 description: "An abstract type that represents a rule for governing the automatic creation of compliance changes."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ An abstract type that represents a rule for governing the automatic creation of 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.complianceChangeRule"

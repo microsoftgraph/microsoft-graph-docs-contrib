@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String dismissReason = "Application is no longer needed.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directory().recommendations("0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry").impactedResources("dbd9935e-15b7-4800-9049-8d8704c23ad2")
-	.dismiss(ImpactedResourceDismissParameterSet
-		.newBuilder()
-		.withDismissReason(dismissReason)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.directory.recommendations.item.impactedresources.item.dismiss.DismissPostRequestBody dismissPostRequestBody = new com.microsoft.graph.beta.directory.recommendations.item.impactedresources.item.dismiss.DismissPostRequestBody();
+dismissPostRequestBody.setDismissReason("Application is no longer needed.");
+var result = graphClient.directory().recommendations().byRecommendationId("{recommendation-id}").impactedResources().byImpactedResourceId("{impactedResource-id}").dismiss().post(dismissPostRequestBody);
+
 
 ```

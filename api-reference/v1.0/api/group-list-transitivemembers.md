@@ -3,7 +3,7 @@ title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members."
 author: Jordanndahl
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -19,17 +19,14 @@ This operation is transitive and returns a flat list of all nested members. An a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                           |
-| Application                            | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-
-> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
+<!-- { "blockType": "permissions", "name": "group_list_transitivemembers" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-transitivemembers-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the _Member.Read.Hidden_ permission is required.
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 | Name             | Description                                                                                                                                                                                                       |
 | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -13,44 +13,41 @@ Namespace: microsoft.graph
 
 Update the properties of an [educationRubric](../resources/educationrubric.md) object. Only teachers can perform this operation.
 
-Updating a rubric attached to an assignment (`PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/classes/{class-id}/assignments/{assignment-id}/rubric](educationrubric-get.md), but it cannot be updated.
+Updating a rubric attached to an assignment (`PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/classes/{class-id}/assignments/{assignment-id}/rubric](educationrubric-get.md), but it can't be updated.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "educationrubric_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationrubric-update-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /education/me/rubrics/{rubric-id}
-PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric
+PATCH /education/me/rubrics/{id}
+PATCH /education/classes/{id}/assignments/{id}/rubric
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` if this is a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) if it is a rubric with points.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` for a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) for a rubric with points.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
@@ -64,7 +61,6 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 The following example shows a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -72,7 +68,7 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
+PATCH https://graph.microsoft.com/v1.0/education/me/rubrics/5f650796-a600-4d20-87ef-c46ae34da3bb
 Content-type: application/json
 
 {
@@ -131,78 +127,122 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/me/rubrics/$entity",
     "displayName": "Example Credit Rubric after display name patch",
-    "id": "c4459fcb-a761-4f70-ac5b-e9466cb77c2a",
+    "createdDateTime": "2024-07-17T00:21:14.4479093Z",
+    "lastModifiedDateTime": "2024-07-17T15:00:08.5062776Z",
+    "id": "5f650796-a600-4d20-87ef-c46ae34da3bb",
     "description": {
-        "content": "This is an example of a credit rubric (no points)",
+        "content": "New Rubric",
         "contentType": "text"
     },
+    "qualities": [
+        {
+            "qualityId": "bdde7fc5-9a0b-4db7-9103-aeb6d4d20fbd",
+            "displayName": null,
+            "weight": 33.33,
+            "description": {
+                "content": "First quality",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "First quality is excellent",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is good",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is fair",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "First quality is poor",
+                        "contentType": "text"
+                    }
+                }
+            ]
+        }
+    ],
     "levels": [
         {
-            "levelId": "dec665d4-cf1b-4481-ac61-1d5b6188f4f5",
+            "levelId": "f0b16138-3ab2-4712-bbe0-b0a2653017a1",
+            "displayName": "Excellent",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 4
+            }
+        },
+        {
+            "levelId": "f5b1cc98-a22e-44d6-8e20-a29fb7de4860",
             "displayName": "Good",
             "description": {
                 "content": "",
                 "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 3
             }
         },
         {
-            "levelId": "3f2e4b0f-508e-4005-984b-17e061bc5377",
+            "levelId": "352dfa9f-0ad3-42c5-a7b7-843dc78d83f9",
+            "displayName": "Fair",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 2
+            }
+        },
+        {
+            "levelId": "b1d9ac8f-fb57-4172-9863-4a4994bc31fa",
             "displayName": "Poor",
             "description": {
                 "content": "",
                 "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 1
             }
         }
     ],
-    "qualities": [
-        {
-            "qualityId": "dc79dcbf-b536-4797-9c5b-902f28129fd0",
-            "description": {
-                "content": "Argument",
-                "contentType": "text"
-            },
-            "criteria": [
-                {
-                    "id": "8937fa15-4a7c-4f27-bd01-ca3471d2d1d5",
-                    "description": {
-                        "content": "The essay's argument is persuasive.",
-                        "contentType": "text"
-                    }
-                },
-                {
-                    "id": "4dfb5263-1d3f-4f0a-93ef-d24d800d0f69",
-                    "description": {
-                        "content": "The essay's argument does not make sense.",
-                        "contentType": "text"
-                    }
-                }
-            ]
-        },
-        {
-            "qualityId": "7e087062-ac25-4629-8386-a946350936db",
-            "description": {
-                "content": "Spelling and Grammar",
-                "contentType": "text"
-            },
-            "criteria": [
-                {
-                    "id": "12276eb2-122c-4ad2-ba92-335ea798c88e",
-                    "description": {
-                        "content": "The essay uses proper spelling and grammar with few or no errors.",
-                        "contentType": "text"
-                    }
-                },
-                {
-                    "id": "3db7e6b2-2b1b-4f8e-9fca-bea701159145",
-                    "description": {
-                        "content": "The essay has numerous errors in spelling and/or grammar.",
-                        "contentType": "text"
-                    }
-                }
-            ]
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
         }
-    ]
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
+        }
+    }
 }
 ```
 

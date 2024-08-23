@@ -1,19 +1,19 @@
 ---
 title: "symantecCodeSigningCertificate resource type"
-description: ""
+description: "Intune Apps Symanteccodesigningcertificate Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # symantecCodeSigningCertificate resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 
 
@@ -26,7 +26,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|

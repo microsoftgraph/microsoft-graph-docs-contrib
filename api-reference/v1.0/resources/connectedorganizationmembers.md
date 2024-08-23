@@ -3,7 +3,7 @@ title: "connectedOrganizationMembers complex type"
 description: "The connectedOrganizationMembers type identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # connectedOrganizationMembers complex type
@@ -22,7 +22,7 @@ Used in the request settings of an access package assignment policy. The `@odata
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.connectedOrganizationMembers",

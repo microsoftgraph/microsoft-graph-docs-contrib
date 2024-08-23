@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CategoryTemplate categoryTemplate = new CategoryTemplate();
-categoryTemplate.displayName = "String";
-IdentitySet createdBy = new IdentitySet();
-categoryTemplate.createdBy = createdBy;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().labels().categories()
-	.buildRequest()
-	.post(categoryTemplate);
+com.microsoft.graph.beta.models.security.CategoryTemplate categoryTemplate = new com.microsoft.graph.beta.models.security.CategoryTemplate();
+categoryTemplate.setOdataType("#microsoft.graph.security.categoryTemplate");
+categoryTemplate.setDisplayName("Accounts Payable");
+com.microsoft.graph.models.security.CategoryTemplate result = graphClient.security().labels().categories().post(categoryTemplate);
+
 
 ```

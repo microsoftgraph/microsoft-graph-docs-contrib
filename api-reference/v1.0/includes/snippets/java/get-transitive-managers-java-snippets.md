@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-User user = graphClient.me()
-	.buildRequest( requestOptions )
-	.expand("manager($levels=max;$select=id,displayName)")
-	.select("id,displayName")
-	.get();
+User result = graphClient.me().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"manager($levels=max;$select=id,displayName)"};
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName"};
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

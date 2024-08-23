@@ -3,7 +3,7 @@ title: "teamworkTeamsClientConfiguration resource type"
 description: "Represents configuration details for the Microsoft Teams client running on a Microsoft Teams Rooms device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents configuration details for the Microsoft Teams client running on a Mic
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkTeamsClientConfiguration"

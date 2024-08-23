@@ -3,7 +3,7 @@ title: "resourceVisualization resource type"
 description: "Complex type containing properties of Insights."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -12,29 +12,6 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
-
-## JSON representation
-
-Here's a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
-```json
-{
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
-}
-```
 
 ## Properties
 
@@ -49,7 +26,7 @@ Here's a JSON representation of the resource
 | previewText      		| String		| A preview text for the item. |
 | type    			| String		| The item's media type. Can be used for filtering for a specific file based on a specific type. See the section Type property values for supported types. |
 
-## Type property values
+### Type property values
 -	PowerPoint
 -	Word
 -	Excel
@@ -83,7 +60,7 @@ Example query:
 Notes:
 For `spsite`, you may need to sort by `lastUsed/lastAccessedDateTime` desc in order to retrieve valid results
 
-## containerType property values
+### containerType property values
 The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox,' 'Box,' and 'GDrive.'
 
 -	OneDriveBusiness
@@ -95,4 +72,30 @@ The supported types can differ based on containers from which [officeGraphInsigh
 
 Example query:
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
+```json
+{
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
+}
+```
 

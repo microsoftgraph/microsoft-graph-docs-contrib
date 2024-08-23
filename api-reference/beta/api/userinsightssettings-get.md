@@ -1,9 +1,9 @@
 ---
 title: "Get userInsightsSettings"
-description: "Retrieve the properties of a userInsightsSettings object."
+description: "Get the user-customizable privacy settings for item insights and meeting hours insights."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Get the user-customizable privacy settings for [itemInsights](../resources/itemi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "userinsightssettings_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/userinsightssettings-get-permissions.md)]
 
 
 ## HTTP request
@@ -35,13 +32,13 @@ GET /me/settings/itemInsights
 GET /users/{userId}/settings/itemInsights
 ```
 
->**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
+>**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the `User.ReadWrite.All` permission. To learn more, see [Permissions](/graph/permissions-reference).
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [userInsightsS
 
 ### Request
 
-The following is an example of the request to get user item insights and meeting hours insights settings.
+The following example shows a request to get user item insights and meeting hours insights settings.
 
 
 # [HTTP](#tab/http)
@@ -122,5 +119,4 @@ Content-type: application/json
   "isEnabled": true
 }
 ```
-
 

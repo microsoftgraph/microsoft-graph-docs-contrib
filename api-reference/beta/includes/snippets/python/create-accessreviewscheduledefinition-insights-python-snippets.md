@@ -4,7 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
+from msgraph_beta.generated.models.access_review_query_scope import AccessReviewQueryScope
+from msgraph_beta.generated.models.access_review_reviewer_scope import AccessReviewReviewerScope
+from msgraph_beta.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
+from msgraph_beta.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph_beta.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph_beta.generated.models.recurrence_pattern_type import RecurrencePatternType
+from msgraph_beta.generated.models.recurrence_range import RecurrenceRange
+from msgraph_beta.generated.models.recurrence_range_type import RecurrenceRangeType
+from msgraph_beta.generated.models.access_review_recommendation_insight_setting import AccessReviewRecommendationInsightSetting
+from msgraph_beta.generated.models.user_last_sign_in_recommendation_insight_setting import UserLastSignInRecommendationInsightSetting
+from msgraph_beta.generated.models.user_sign_in_recommendation_scope import UserSignInRecommendationScope
+from msgraph_beta.generated.models.group_peer_outlier_recommendation_insight_settings import GroupPeerOutlierRecommendationInsightSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,8 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\BookingAppointment;
+use Microsoft\Graph\Beta\Generated\Models\Location;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Beta\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Beta\Generated\Models\BookingInvoiceStatus;
+use Microsoft\Graph\Beta\Generated\Models\BookingPriceType;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminder;
+use Microsoft\Graph\Beta\Generated\Models\BookingReminderRecipients;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformationBase;
+use Microsoft\Graph\Beta\Generated\Models\BookingCustomerInformation;
+use Microsoft\Graph\Beta\Generated\Models\PhysicalAddressType;
+use Microsoft\Graph\Beta\Generated\Models\OutlookGeoCoordinates;
+use Microsoft\Graph\Beta\Generated\Models\BookingQuestionAnswer;
+use Microsoft\Graph\Beta\Generated\Models\AnswerInputType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingAppointment();
@@ -59,6 +74,7 @@ $invoiceDate->setTimeZone('UTC');
 $requestBody->setInvoiceDate($invoiceDate);
 $requestBody->setInvoiceId('1001');
 $requestBody->setInvoiceStatus(new BookingInvoiceStatus('open'));
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setInvoiceUrl('theInvoiceUrl');
 $requestBody->setIsLocationOnline(true);
 $requestBody->setOptOutOfCustomerEmail(false);
@@ -193,6 +209,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
 
 ```

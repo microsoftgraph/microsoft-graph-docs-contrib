@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authorityTemplate = await client.api('/security/labels/authorities/{authorityTemplateId}')
+let authorityTemplate = await client.api('/security/labels/authorities/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5')
 	.version('beta')
 	.get();
 

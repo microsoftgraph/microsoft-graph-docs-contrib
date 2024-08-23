@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WorkflowCollectionPage workflows = graphClient.identityGovernance().lifecycleWorkflows().deletedItems().workflows()
-	.buildRequest()
-	.filter("category eq 'leaver'")
-	.select("id,category,displayName,description,version")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.identitygovernance.WorkflowCollectionResponse result = graphClient.identityGovernance().lifecycleWorkflows().deletedItems().workflows().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "category", "displayName", "description", "version"};
+	requestConfiguration.queryParameters.filter = "category eq 'leaver'";
+});
+
 
 ```

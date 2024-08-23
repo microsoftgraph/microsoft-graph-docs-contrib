@@ -3,8 +3,9 @@ title: "tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type"
 description: "Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Too many Global Administrators
 ---
 
 # tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role. [Global Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#global-administrator) is the highest privileged role in Microsoft Entra ID. If an account with global administrator privileges is compromised, the malicious actor has permissions for almost all actions in the tenant, which puts the whole system at risk.
+Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role. [Global Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#global-administrator) is the highest privileged role in Microsoft Entra ID. If an account with global administrator privileges is compromised, the malicious actor has permissions for almost all actions in the tenant, which puts the whole system at risk.
 
 Triggered if two different criteria are met, and you can configure both of them. First, you need to reach a certain threshold of Global administrator role assignments. Second, a certain percentage of your total role assignments must be Global administrators. If you only meet one of these measurements, the alert doesn't appear.
 
@@ -36,7 +37,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

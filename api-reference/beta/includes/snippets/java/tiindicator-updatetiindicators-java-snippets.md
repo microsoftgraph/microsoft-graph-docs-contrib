@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<TiIndicator> valueList = new LinkedList<TiIndicator>();
-TiIndicator value = new TiIndicator();
-value.id = "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4";
-value.additionalInformation = "mytest";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-valueList.add(value);
-TiIndicator value1 = new TiIndicator();
-value1.id = "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e";
-value1.additionalInformation = "test again";
+com.microsoft.graph.beta.security.tiindicators.updatetiindicators.UpdateTiIndicatorsPostRequestBody updateTiIndicatorsPostRequestBody = new com.microsoft.graph.beta.security.tiindicators.updatetiindicators.UpdateTiIndicatorsPostRequestBody();
+LinkedList<TiIndicator> value = new LinkedList<TiIndicator>();
+TiIndicator tiIndicator = new TiIndicator();
+tiIndicator.setId("c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4");
+tiIndicator.setAdditionalInformation("mytest");
+value.add(tiIndicator);
+TiIndicator tiIndicator1 = new TiIndicator();
+tiIndicator1.setId("e58c072b-c9bb-a5c4-34ce-eb69af44fb1e");
+tiIndicator1.setAdditionalInformation("test again");
+value.add(tiIndicator1);
+updateTiIndicatorsPostRequestBody.setValue(value);
+var result = graphClient.security().tiIndicators().updateTiIndicators().post(updateTiIndicatorsPostRequestBody);
 
-valueList.add(value1);
-TiIndicatorCollectionResponse tiIndicatorCollectionResponse = new TiIndicatorCollectionResponse();
-tiIndicatorCollectionResponse.value = valueList;
-TiIndicatorCollectionPage tiIndicatorCollectionPage = new TiIndicatorCollectionPage(tiIndicatorCollectionResponse, null);
-
-graphClient.security().tiIndicators()
-	.updateTiIndicators(TiIndicatorUpdateTiIndicatorsParameterSet
-		.newBuilder()
-		.withValue(valueList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

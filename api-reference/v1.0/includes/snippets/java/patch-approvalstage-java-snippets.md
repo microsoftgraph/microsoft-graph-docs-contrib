@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ApprovalStage approvalStage = new ApprovalStage();
-approvalStage.reviewResult = "Approve";
-approvalStage.justification = "OK";
+approvalStage.setReviewResult("Approve");
+approvalStage.setJustification("OK");
+ApprovalStage result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentApprovals().byApprovalId("{approval-id}").stages().byApprovalStageId("{approvalStage-id}").patch(approvalStage);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentApprovals("abd306ef-f7b2-4a10-9fd1-493454322489").stages("d4fa4045-4716-436d-aec5-57b0a713f095")
-	.buildRequest()
-	.patch(approvalStage);
 
 ```

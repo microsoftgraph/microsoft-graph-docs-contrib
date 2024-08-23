@@ -1,7 +1,8 @@
 ---
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: ric.lewis
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
 ---
@@ -10,29 +11,35 @@ ms.localizationpriority: high
 
 <!-- Maximum length of subscription per resource. This file is referenced in the change notifications overview and subscription resource type files. -->
 
-| Resource                                       | Maximum expiration time       |
-|:-----------------------------------------------|:------------------------------|
-| Security [alert][]                             | 43,200 minutes (under 30 days)|
-| Teams [callRecord][]                           | 4,230 minutes (under 3 days)  |
-| Teams [callRecording][]                        | 4,320 minutes (3 days)        |
-| Teams [callTranscript][]                       | 4,320 minutes (3 days)        |
-| Teams [channel][]                              | 4,320 minutes (3 days)        |
-| Teams [chat][]                                 | 4,320 minutes (3 days)        |
-| Teams [chatMessage][]                          | 4,320 minutes (3 days)        |
-| Teams [conversationMember][]                   | 4,320 minutes (3 days)        |
-| Teams [onlineMeeting][]                        | 4,320 minutes (3 days)        |
-| Teams [team][]                                 | 4,320 minutes (3 days)        |
-| Group [conversation][]                         | 4,230 minutes (under 3 days)  |
-| OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)|
-| SharePoint [list][]                            | 42,300 minutes (under 30 days)|
-| Outlook [message][], [event][], [contact][]    | 4,230 minutes (under 3 days)  |
-| [user][], [group][], other directory resources | 41,760 minutes (under 29 days)|
-| [onlineMeeting][]                              | 4,230 minutes (under 3 days)  |
-| [presence][]                                   | 60 minutes (1 hour)           |
-| Print [printer][]                              | 4,230 minutes (under 3 days)  |
-| Print [printTaskDefinition][]                  | 4,230 minutes (under 3 days)  |
-| [todoTask][]                                   | 4,230 minutes (under 3 days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
-| **baseTask** (deprecated)                      | 4,230 minutes (under 3 days)  |
+| Resource                                       | Maximum expiration time           |
+|:-----------------------------------------------|:----------------------------------|
+| Security [alert][]                             | 43,200 minutes (under 30 days)    |
+| Teams [approvals][]                            | 43,200 minutes (under 30 days)    |
+| Teams [callRecord][]                           | 4,230 minutes (under three days)  |
+| Teams [callRecording][]                        | 4,320 minutes (three days)        |
+| Teams [callTranscript][]                       | 4,320 minutes (three days)        |
+| Teams [channel][]                              | 4,320 minutes (three days)        |
+| Teams [chat][]                                 | 4,320 minutes (three days)        |
+| Teams [chatMessage][]                          | 4,320 minutes (three days)        |
+| Teams [conversationMember][]                   | 4,320 minutes (three days)        |
+| Teams [onlineMeeting][]                        | 4,320 minutes (three days)        |
+| Teams [team][]                                 | 4,320 minutes (three days)        |
+| Teams Shifts [offerShiftRequest][]             | 360 minutes (6 hours)             |
+| Teams Shifts [openShiftChangeRequest][]        | 360 minutes (6 hours)             |
+| Teams Shifts [shift][]                         | 360 minutes (6 hours)             |
+| Teams Shifts [swapShiftsChangeRequest][]       | 360 minutes (6 hours)             |
+| Teams Shifts [timeOffRequest][]                | 360 minutes (6 hours)             |
+| Group [conversation][]                         | 4,230 minutes (under three days)  |
+| OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
+| SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
+| Outlook [message][], [event][], [contact][]    | 4,230 minutes (under three days)  |
+| [user][], [group][], other directory resources | 41,760 minutes (under 29 days)    |
+| [onlineMeeting][]                              | 4,230 minutes (under three days)  |
+| [presence][]                                   | 60 minutes (1 hour)               |
+| Print [printer][]                              | 4,230 minutes (under three days)  |
+| Print [printTaskDefinition][]                  | 4,230 minutes (under three days)  |
+| [todoTask][]                                   | 4,230 minutes (under three days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
+| **baseTask** (deprecated)                      | 4,230 minutes (under three days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
@@ -49,13 +56,19 @@ ms.localizationpriority: high
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[offerShiftRequest]: /graph/api/resources/offershiftrequest
+[openShiftChangeRequest]: /graph/api/resources/openshiftchangerequest
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[shift]: /graph/api/resources/shift
+[swapShiftsChangeRequest]: /graph/api/resources/swapshiftschangerequest
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[timeOffRequest]: /graph/api/resources/timeoffrequest
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
+[approvals]: /graph/api/resources/approvalItem

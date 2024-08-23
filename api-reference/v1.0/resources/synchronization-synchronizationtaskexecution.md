@@ -4,7 +4,7 @@ description: "Summarizes the results of the synchronization job run."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationTaskExecution resource type
@@ -33,7 +33,7 @@ Summarizes the results of the synchronization job run.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

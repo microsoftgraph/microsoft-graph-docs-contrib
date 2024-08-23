@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 {
@@ -49,7 +50,7 @@ var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 							Hidden = false,
 							Editable = true,
 							WriteToDirectory = true,
-							Required = false,
+							Required = true,
 							ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
 							{
@@ -64,7 +65,7 @@ var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 							Hidden = false,
 							Editable = true,
 							WriteToDirectory = true,
-							Required = false,
+							Required = true,
 							ValidationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
 							{
@@ -72,17 +73,27 @@ var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 						},
 						new AuthenticationAttributeCollectionInputConfiguration
 						{
-							Attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-							Label = "Favorite color",
-							InputType = AuthenticationAttributeCollectionInputType.Text,
+							Attribute = "extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry",
+							Label = "Rock music or Country",
+							InputType = AuthenticationAttributeCollectionInputType.RadioSingleSelect,
 							DefaultValue = null,
 							Hidden = false,
 							Editable = true,
 							WriteToDirectory = true,
-							Required = false,
+							Required = true,
 							ValidationRegEx = "^.*",
 							Options = new List<AuthenticationAttributeCollectionOptionConfiguration>
 							{
+								new AuthenticationAttributeCollectionOptionConfiguration
+								{
+									Label = "Rock music",
+									Value = "Rock",
+								},
+								new AuthenticationAttributeCollectionOptionConfiguration
+								{
+									Label = "Country music",
+									Value = "Country",
+								},
 							},
 						},
 					},
@@ -91,6 +102,8 @@ var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.AuthenticationEventsFlows["{authenticationEventsFlow-id}"].PatchAsync(requestBody);
 
 

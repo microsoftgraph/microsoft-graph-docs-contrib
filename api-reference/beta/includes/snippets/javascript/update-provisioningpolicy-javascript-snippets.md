@@ -20,6 +20,16 @@ const cloudPcProvisioningPolicy = {
   imageType: 'custom',
   windowsSettings: {
     language: 'en-US'
+  },
+  windowsSetting: {
+    locale: 'en-US'
+  },
+  microsoftManagedDesktop: {
+    managedType: 'starterManaged',
+    profile: null
+  },
+  autopatch: {
+    autopatchGroupId: '91197a0b-3a74-408d-ba88-bce3fdc4e5eb'
   }
 };
 

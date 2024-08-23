@@ -3,7 +3,7 @@ title: "teamClassSettings resource type"
 description: "Represents settings specific to teams of type Class."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Represents class-specific properties of a [team](team.md). Available only when t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

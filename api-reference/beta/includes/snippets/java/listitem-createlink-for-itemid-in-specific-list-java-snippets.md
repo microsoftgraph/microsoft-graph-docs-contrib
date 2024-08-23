@@ -4,35 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "view";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String scope = "anonymous";
+com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.beta.sites.item.lists.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("view");
+createLinkPostRequestBody.setScope("anonymous");
+createLinkPostRequestBody.setPassword("String");
+LinkedList<DriveRecipient> recipients = new LinkedList<DriveRecipient>();
+DriveRecipient driveRecipient = new DriveRecipient();
+driveRecipient.setOdataType("microsoft.graph.driveRecipient");
+recipients.add(driveRecipient);
+createLinkPostRequestBody.setRecipients(recipients);
+createLinkPostRequestBody.setSendNotification(true);
+createLinkPostRequestBody.setRetainInheritedPermissions(false);
+var result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().byListItemId("{listItem-id}").createLink().post(createLinkPostRequestBody);
 
-String password = "String";
-
-LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
-DriveRecipient recipients = new DriveRecipient();
-
-recipientsList.add(recipients);
-
-Boolean sendNotification = true;
-
-Boolean retainInheritedPermissions = false;
-
-graphClient.sites("{siteId}").lists("{listId}").items("{itemId}")
-	.createLink(ListItemCreateLinkParameterSet
-		.newBuilder()
-		.withType(type)
-		.withScope(scope)
-		.withExpirationDateTime(null)
-		.withPassword(password)
-		.withRecipients(recipientsList)
-		.withRetainInheritedPermissions(retainInheritedPermissions)
-		.withSendNotification(sendNotification)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

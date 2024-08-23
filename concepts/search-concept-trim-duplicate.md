@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to trim duplicate search results"
 description: "You can use the Microsoft Search API trimDuplicates property in Microsoft Graph to trim duplicate search results. Only supported on SharePoint files."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to trim duplicate search results

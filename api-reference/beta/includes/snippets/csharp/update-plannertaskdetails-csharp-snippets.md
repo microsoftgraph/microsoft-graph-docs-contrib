@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PlannerTaskDetails
 {
@@ -62,6 +63,8 @@ var requestBody = new PlannerTaskDetails
 	},
 	Description = "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Planner.Tasks["{plannerTask-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");

@@ -3,7 +3,7 @@ author: mahgoyal
 ms.date: 06/28/2023
 title: Permanently delete a file or folder
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
 ---
@@ -11,20 +11,16 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
-If you delete items using this method, they are permanently removed and won't be sent to the recycle bin. Therefore, they can't be restored afterward.
+Permanently delete a [driveItem](../resources/driveitem.md) by using its ID. If you delete items using this method, they're permanently removed and aren't sent to the recycle bin, unlike the [Delete driveItem](../api/driveitem-delete.md) API, which sends the item to the recycle bin. Therefore, permanently deleted drive items can't be restored afterward.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_permanentdelete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-permanentdelete-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +33,7 @@ POST /drives/{drive-id}/items/{item-id}/permanentDelete
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Required*|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept  | application/json |
 
 ## Request body
@@ -56,7 +52,7 @@ The following example shows how to call this API.
 ### Request
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/permanentDelete
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/permanentDelete
 ```
 
 ### Response

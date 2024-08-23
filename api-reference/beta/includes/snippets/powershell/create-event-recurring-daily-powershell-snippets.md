@@ -26,7 +26,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "AlexW@contoso.OnMicrosoft.com"
+				address = "AlexW@contoso.com"
 				name = "Alex Wilbur"
 			}
 			type = "required"

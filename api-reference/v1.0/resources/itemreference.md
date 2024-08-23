@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: itemReference
 ms.localizationpriority: medium
 description: "The itemReference resource provides information necessary to address a driveItem or listItem via the API."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -21,14 +21,14 @@ The **itemReference** resource provides information necessary to address a [driv
 | driveType     | String            | Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
 | id            | String            | Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
 | name          | String            | The name of the item being referenced. Read-only.
-| path          | String            | Path that can be used to navigate to the item. Read-only.
+| path          | String            | Percent-encoded path that can be used to navigate to the item. Read-only.
 | shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
 | sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | siteId        | String            | For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an [opaque string that consists of three identifiers](/graph/api/resources/site#id-property) of the site. <br>For OneDrive, this property is not populated.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -62,7 +62,7 @@ To address a **driveItem** from an **itemReference** resource, construct a URL o
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
 ```
 
-The **path** value is an API path relative to the target drive, for example: `/drive/root:/Documents/myfile.docx`.
+The **path** value is a percent-encoded API path relative to the target drive, for example: `/drive/root:/Documents/my%20file.docx`.
 
 To retrieve the human-readable path for a breadcrumb, you can safely ignore everything up to the first `:` in the path string.
 

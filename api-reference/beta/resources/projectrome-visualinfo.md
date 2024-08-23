@@ -2,7 +2,7 @@
 title: visualInfo resource type
 description: A complex type for representing the **visualElements** property in the activity object.
 ms.localizationpriority: medium
-ms.prod: project-rome
+ms.subservice: project-rome
 doc_type: resourcePageType
 author: ailae
 ---
@@ -33,7 +33,7 @@ If a custom card is not provided, a simple card will be generated using displayT
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

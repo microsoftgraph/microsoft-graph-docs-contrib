@@ -4,27 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MobileThreatDefenseConnector mobileThreatDefenseConnector = new MobileThreatDefenseConnector();
-mobileThreatDefenseConnector.lastHeartbeatDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:59:37.9174975+00:00");
-mobileThreatDefenseConnector.partnerState = MobileThreatPartnerTenantState.AVAILABLE;
-mobileThreatDefenseConnector.androidMobileApplicationManagementEnabled = true;
-mobileThreatDefenseConnector.iosMobileApplicationManagementEnabled = true;
-mobileThreatDefenseConnector.androidEnabled = true;
-mobileThreatDefenseConnector.iosEnabled = true;
-mobileThreatDefenseConnector.windowsEnabled = true;
-mobileThreatDefenseConnector.androidDeviceBlockedOnMissingPartnerData = true;
-mobileThreatDefenseConnector.iosDeviceBlockedOnMissingPartnerData = true;
-mobileThreatDefenseConnector.windowsDeviceBlockedOnMissingPartnerData = true;
-mobileThreatDefenseConnector.partnerUnsupportedOsVersionBlocked = true;
-mobileThreatDefenseConnector.partnerUnresponsivenessThresholdInDays = 6;
-mobileThreatDefenseConnector.allowPartnerToCollectIOSApplicationMetadata = true;
-mobileThreatDefenseConnector.allowPartnerToCollectIOSPersonalApplicationMetadata = true;
-mobileThreatDefenseConnector.microsoftDefenderForEndpointAttachEnabled = true;
+mobileThreatDefenseConnector.setOdataType("#microsoft.graph.mobileThreatDefenseConnector");
+OffsetDateTime lastHeartbeatDateTime = OffsetDateTime.parse("2016-12-31T23:59:37.9174975-08:00");
+mobileThreatDefenseConnector.setLastHeartbeatDateTime(lastHeartbeatDateTime);
+mobileThreatDefenseConnector.setPartnerState(MobileThreatPartnerTenantState.Available);
+mobileThreatDefenseConnector.setAndroidMobileApplicationManagementEnabled(true);
+mobileThreatDefenseConnector.setIosMobileApplicationManagementEnabled(true);
+mobileThreatDefenseConnector.setAndroidEnabled(true);
+mobileThreatDefenseConnector.setIosEnabled(true);
+mobileThreatDefenseConnector.setWindowsEnabled(true);
+mobileThreatDefenseConnector.setAndroidDeviceBlockedOnMissingPartnerData(true);
+mobileThreatDefenseConnector.setIosDeviceBlockedOnMissingPartnerData(true);
+mobileThreatDefenseConnector.setWindowsDeviceBlockedOnMissingPartnerData(true);
+mobileThreatDefenseConnector.setPartnerUnsupportedOsVersionBlocked(true);
+mobileThreatDefenseConnector.setPartnerUnresponsivenessThresholdInDays(6);
+mobileThreatDefenseConnector.setAllowPartnerToCollectIOSApplicationMetadata(true);
+mobileThreatDefenseConnector.setAllowPartnerToCollectIOSPersonalApplicationMetadata(true);
+mobileThreatDefenseConnector.setMicrosoftDefenderForEndpointAttachEnabled(true);
+MobileThreatDefenseConnector result = graphClient.deviceManagement().mobileThreatDefenseConnectors().post(mobileThreatDefenseConnector);
 
-graphClient.deviceManagement().mobileThreatDefenseConnectors()
-	.buildRequest()
-	.post(mobileThreatDefenseConnector);
 
 ```

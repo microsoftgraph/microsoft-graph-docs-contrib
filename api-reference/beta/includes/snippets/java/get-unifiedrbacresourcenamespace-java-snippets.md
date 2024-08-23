@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-UnifiedRbacResourceNamespace unifiedRbacResourceNamespace = graphClient.roleManagement().directory().resourceNamespaces("microsoft.aad.b2c")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+UnifiedRbacResourceNamespace result = graphClient.roleManagement().directory().resourceNamespaces().byUnifiedRbacResourceNamespaceId("{unifiedRbacResourceNamespace-id}").get();
+
 
 ```

@@ -1,31 +1,28 @@
 ---
 author: "vanshisingh"
-title: "List recycleBinItems"
-description: "Get a list of recycleBinItems under the specified site."
+title: "List items"
+description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List recycleBinItems
+# List items
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site.
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                           |
-|:---------------------------------------|:------------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
+<!-- { "blockType": "permissions", "name": "recyclebin_list_items" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recyclebin-list-items-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +39,7 @@ This method supports the `$select` and `$top` OData query parameters to customiz
 
 |Name          |Description              |
 |:-------------|:------------------------|
-|Authorization |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request Body
 
@@ -56,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to list all **recycleBinItems** under a specific site.
+The following example shows a request to list all **recycleBinItem** resources under a specific site.
 
 # [HTTP](#tab/http)
 <!-- {

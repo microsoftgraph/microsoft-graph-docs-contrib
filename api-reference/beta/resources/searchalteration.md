@@ -3,7 +3,7 @@ title: "searchAlteration resource type"
 description: "Provides the details of search alteration for spelling correction."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -23,9 +23,13 @@ Provides the details of search alteration for spelling correction.
 |alteredHighlightedQueryString|String| Defines the altered highlighted query string with spelling correction. The annotation around the corrected segment is (\ue000, \ue001)|
 |alteredQueryTokens|[alteredQueryToken](alteredquerytoken.md) collection| Represents changed segments with respect to original query.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

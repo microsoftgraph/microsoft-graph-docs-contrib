@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance entitlement-management access-package-catalogs custom-access-package-workflow-extensions create --access-package-catalog-id {accessPackageCatalog-id} --body '{\
     "displayName": "test_action_0124", \
     "description": "this is for graph testing only", \

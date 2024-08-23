@@ -6,12 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.ChangeScreenSharingRole;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.ChangeScreenSharingRole.ChangeScreenSharingRolePostRequestBody
+var requestBody = new ChangeScreenSharingRolePostRequestBody
 {
 	Role = ScreenSharingRole.Viewer,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].ChangeScreenSharingRole.PostAsync(requestBody);
 
 

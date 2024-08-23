@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -13,9 +16,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
@@ -80,9 +80,9 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.contentFormat", 
-	"odataType" : "#microsoft.graph.contentState", 
-	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
+	"format@odata.type" : "#microsoft.graph.contentFormat", 
+	"state@odata.type" : "#microsoft.graph.contentState", 
+	"metadata@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -98,14 +98,15 @@ extendedProperties := []graphmodels.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.assignmentMethod", 
-	"odataType" : "#Guid", 
-	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
+	"assignmentMethod@odata.type" : "#microsoft.graph.assignmentMethod", 
+	"labelId@odata.type" : "#Guid", 
+	"extendedProperties@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-evaluateApplication, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+evaluateApplication, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().PostAsEvaluateApplicationPostResponse(context.Background(), requestBody, configuration)
 
 
 ```

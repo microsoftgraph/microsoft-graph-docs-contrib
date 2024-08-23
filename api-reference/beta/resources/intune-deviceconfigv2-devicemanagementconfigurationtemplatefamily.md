@@ -2,18 +2,18 @@
 title: "deviceManagementConfigurationTemplateFamily enum type"
 description: "Describes the TemplateFamily for the Template entity"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementConfigurationTemplateFamily enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Describes the TemplateFamily for the Template entity
 
@@ -35,3 +35,5 @@ Describes the TemplateFamily for the Template entity
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |deviceConfigurationScripts|22|Template Family for device configuration scripts|
 |deviceConfigurationPolicies|23|Template Family for device configuration policies|
+|windowsOsRecoveryPolicies|24|Template Family for windowsOsRecovery that can be applied during a Windows operating system recovery|
+|companyPortal|25|Template Family for Company Portal settings|

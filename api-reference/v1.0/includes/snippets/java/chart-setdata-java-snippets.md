@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-JsonElement sourceData = JsonParser.parseString("sourceData-value");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String seriesBy = "seriesBy-value";
+com.microsoft.graph.drives.item.items.item.workbook.worksheets.item.charts.item.setdata.SetDataPostRequestBody setDataPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.worksheets.item.charts.item.setdata.SetDataPostRequestBody();
+setDataPostRequestBody.setSourceData("sourceData-value");
+setDataPostRequestBody.setSeriesBy("seriesBy-value");
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").setData().post(setDataPostRequestBody);
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}")
-	.setData(WorkbookChartSetDataParameterSet
-		.newBuilder()
-		.withSourceData(sourceData)
-		.withSeriesBy(seriesBy)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

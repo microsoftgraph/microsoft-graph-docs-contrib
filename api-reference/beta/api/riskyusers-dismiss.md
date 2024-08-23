@@ -3,7 +3,7 @@ title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,10 @@ Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "riskyusers_dismiss" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyusers-dismiss-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
@@ -40,7 +37,7 @@ POST /riskyUsers/dismiss
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Specify the userIds to dismiss in the request body.
@@ -51,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 <!--### Example 1: Dismiss risky users-->
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +110,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Dismiss a risky user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -131,7 +128,7 @@ Content-Type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

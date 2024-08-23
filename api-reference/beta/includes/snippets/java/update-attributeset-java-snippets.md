@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AttributeSet attributeSet = new AttributeSet();
-attributeSet.description = "Attributes for engineering team";
-attributeSet.maxAttributesPerSet = 20;
+attributeSet.setDescription("Attributes for engineering team");
+attributeSet.setMaxAttributesPerSet(20);
+AttributeSet result = graphClient.directory().attributeSets().byAttributeSetId("{attributeSet-id}").patch(attributeSet);
 
-graphClient.directory().attributeSets("Engineering")
-	.buildRequest()
-	.patch(attributeSet);
 
 ```

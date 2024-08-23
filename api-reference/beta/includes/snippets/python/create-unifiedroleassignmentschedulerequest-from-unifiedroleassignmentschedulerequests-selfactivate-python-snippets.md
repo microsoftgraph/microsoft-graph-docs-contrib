@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.unified_role_assignment_schedule_request import UnifiedRoleAssignmentScheduleRequest
+from msgraph_beta.generated.models.request_schedule import RequestSchedule
+from msgraph_beta.generated.models.expiration_pattern import ExpirationPattern
+from msgraph_beta.generated.models.expiration_pattern_type import ExpirationPatternType
+from msgraph_beta.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

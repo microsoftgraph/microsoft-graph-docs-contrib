@@ -3,7 +3,7 @@ title: "accessPackageAssignmentReviewSettings complex type"
 description: "Used for the access reviews of an access package's assignments."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignmentReviewSettings complex type
@@ -27,7 +27,7 @@ Settings configured in an [access package assignment policy](accesspackageassign
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"

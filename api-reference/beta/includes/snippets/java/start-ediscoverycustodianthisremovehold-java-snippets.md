@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<String> idsList = new LinkedList<String>();
-idsList.add("39333641443238353535383731453339");
-idsList.add("46333131344239353834433430454335");
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").noncustodialDataSources()
-	.removeHold(EdiscoveryNoncustodialDataSourceRemoveHoldParameterSet
-		.newBuilder()
-		.withIds(idsList)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.security.cases.ediscoverycases.item.noncustodialdatasources.microsoftgraphsecurityremovehold.RemoveHoldPostRequestBody removeHoldPostRequestBody = new com.microsoft.graph.beta.security.cases.ediscoverycases.item.noncustodialdatasources.microsoftgraphsecurityremovehold.RemoveHoldPostRequestBody();
+LinkedList<String> ids = new LinkedList<String>();
+ids.add("39333641443238353535383731453339");
+ids.add("46333131344239353834433430454335");
+removeHoldPostRequestBody.setIds(ids);
+graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").noncustodialDataSources().microsoftGraphSecurityRemoveHold().post(removeHoldPostRequestBody);
+
 
 ```

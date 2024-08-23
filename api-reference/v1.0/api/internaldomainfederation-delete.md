@@ -3,7 +3,7 @@ title: "Delete internalDomainFederation"
 description: "Delete an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -15,15 +15,16 @@ Delete an [internalDomainFederation](../resources/internaldomainfederation.md) o
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Domain.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Domain.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "internaldomainfederation_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-delete-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+> [!IMPORTANT]
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
+
+<!-- Domain Name Administrator and Hybrid Identity Administrator can't delete federated domains -->
+The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator
@@ -41,7 +42,7 @@ DELETE /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

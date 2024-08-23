@@ -3,7 +3,7 @@ title: "delegatedAdminAccessAssignment resource type"
 description: "Represents an assignment of administrative roles to a Microsoft partner's access container."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -16,11 +16,11 @@ Represents an assignment of administrative roles to a Microsoft partner using de
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Create a new **delegatedAdminAccessAssignment** object.|
-|[List delegatedAdminAccessAssignments](../api/delegatedadminrelationship-list-accessassignments.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md) collection|Get a list of the **delegatedAdminAccessAssignment** objects and their properties.|
-|[Get delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-get.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Read the properties and relationships of a **delegatedAdminAccessAssignment** object.|
-|[Update delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-update.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Update the properties of a **delegatedAdminAccessAssignment** object.|
-|[Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)|None|Delete a **delegatedAdminAccessAssignment** object.|
+|[Create](../api/delegatedadminrelationship-post-accessassignments.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Create a new **delegatedAdminAccessAssignment** object.|
+|[List](../api/delegatedadminrelationship-list-accessassignments.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md) collection|Get a list of the **delegatedAdminAccessAssignment** objects and their properties.|
+|[Get](../api/delegatedadminaccessassignment-get.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Read the properties and relationships of a **delegatedAdminAccessAssignment** object.|
+|[Update](../api/delegatedadminaccessassignment-update.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Update the properties of a **delegatedAdminAccessAssignment** object.|
+|[Delete](../api/delegatedadminaccessassignment-delete.md)|None|Delete a **delegatedAdminAccessAssignment** object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ Represents an assignment of administrative roles to a Microsoft partner using de
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment",

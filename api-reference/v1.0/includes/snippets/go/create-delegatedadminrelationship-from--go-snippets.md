@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewDelegatedAdminRelationship()
 displayName := "Contoso admin relationship"
@@ -43,7 +43,10 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
+autoExtendDuration , err := abstractions.ParseISODuration("P180D")
+requestBody.SetAutoExtendDuration(&autoExtendDuration) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 delegatedAdminRelationships, err := graphClient.TenantRelationships().DelegatedAdminRelationships().Post(context.Background(), requestBody, nil)
 
 

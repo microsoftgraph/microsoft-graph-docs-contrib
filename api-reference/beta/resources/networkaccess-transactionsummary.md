@@ -1,9 +1,9 @@
 ---
 title: "transactionSummary resource type"
-description: "A summary for network transactions traffic."
-author: "Moti-ba"
+description: "Contains information about network transactions."
+author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,20 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for network transcations traffic that's returned by the [transactionSummaries](../api/networkaccess-reports-transactionsummaries.md) method.
+Contains information about network transactions.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|blockedCount|Int32|Count of transactions that were blocked.|
-|totalCount|Int32|Count of transactions.|
-|trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
+|blockedCount|Int32|The number of transactions that were blocked.|
+|totalCount|Int32|The total number of transactions.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The trraffic classification. The possible values are `internet`, `private`, `microsoft365`, and `all`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.transactionSummary"

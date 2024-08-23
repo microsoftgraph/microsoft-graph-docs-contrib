@@ -4,7 +4,7 @@ title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: isPublished
@@ -17,13 +17,10 @@ Check the publishing status of a [contentType][] in a content type hub site.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.FullControl.All    |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Sites.FullControl.All |
+<!-- { "blockType": "permissions", "name": "contenttype_ispublished" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +34,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a Boolean value that specifies the publishing status of the content type.
@@ -49,7 +46,7 @@ Don't supply a request body for this method.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

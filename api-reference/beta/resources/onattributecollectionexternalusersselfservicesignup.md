@@ -3,7 +3,7 @@ title: "onAttributeCollectionExternalUsersSelfServiceSignUp resource type"
 description: "Managed handler for the attribute collection step in an external identities user flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionh
 |attributes|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|A list of user attributes to collect.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp"

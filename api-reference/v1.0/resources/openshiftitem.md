@@ -3,7 +3,7 @@ title: "openShiftItem resource type"
 description: "Represents a single count of an open shift."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -21,7 +21,7 @@ Represents a single count of an [openShift](../resources/openshift.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

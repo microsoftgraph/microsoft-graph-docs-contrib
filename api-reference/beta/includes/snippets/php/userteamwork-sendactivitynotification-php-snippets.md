@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\Teamwork\SendActivityNotification\SendActivityNotificationPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkActivityTopic;
+use Microsoft\Graph\Beta\Generated\Models\TeamworkActivityTopicSource;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();

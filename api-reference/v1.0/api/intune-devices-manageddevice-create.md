@@ -2,8 +2,8 @@
 title: "Create managedDevice"
 description: "Create a new managedDevice object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [managedDevice](../resources/intune-devices-manageddevice.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -102,6 +104,7 @@ The following table shows the properties that are required when you create the m
 |notes|String|Notes on the device created by IT Admin. Default is null. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported.|
 |ethernetMacAddress|String|Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values. Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. Default is 0. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. Read-only. This property is read-only.|
+|enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 
 
 
@@ -118,7 +121,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 4942
+Content-length: 5058
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -224,7 +227,8 @@ Content-length: 4942
   "udid": "Udid value",
   "notes": "Notes value",
   "ethernetMacAddress": "Ethernet Mac Address value",
-  "physicalMemoryInBytes": 5
+  "physicalMemoryInBytes": 5,  
+  "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```
 
@@ -263,13 +267,13 @@ Content-length: 4942
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.managedDevice" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4991
+Content-Length: 5107
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -376,6 +380,7 @@ Content-Length: 4991
   "udid": "Udid value",
   "notes": "Notes value",
   "ethernetMacAddress": "Ethernet Mac Address value",
-  "physicalMemoryInBytes": 5
+  "physicalMemoryInBytes": 5,
+  "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```

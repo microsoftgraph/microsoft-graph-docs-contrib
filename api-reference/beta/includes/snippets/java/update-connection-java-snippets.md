@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ExternalConnection externalConnection = new ExternalConnection();
-externalConnection.name = "Contoso HR Service Tickets";
-externalConnection.description = "Connection to index HR service tickets";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().connections("contosohr")
-	.buildRequest()
-	.patch(externalConnection);
+com.microsoft.graph.beta.models.externalconnectors.ExternalConnection externalConnection = new com.microsoft.graph.beta.models.externalconnectors.ExternalConnection();
+externalConnection.setName("Contoso HR Service Tickets");
+externalConnection.setDescription("Connection to index HR service tickets");
+com.microsoft.graph.models.externalconnectors.ExternalConnection result = graphClient.external().connections().byExternalConnectionId("{externalConnection-id}").patch(externalConnection);
+
 
 ```

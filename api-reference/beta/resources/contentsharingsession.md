@@ -3,7 +3,7 @@ title: "contentSharingSession resource type"
 description: "Represents a content sharing session in a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents a content sharing session in a call.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

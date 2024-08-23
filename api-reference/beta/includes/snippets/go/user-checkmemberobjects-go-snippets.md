@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphusers.NewItemCheckMemberObjectsPostRequestBody()
 ids := []string {
@@ -24,7 +24,8 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-checkMemberObjects, err := graphClient.Me().CheckMemberObjects().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+checkMemberObjects, err := graphClient.Me().CheckMemberObjects().PostAsCheckMemberObjectsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

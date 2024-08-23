@@ -9,8 +9,6 @@ author: jasonjoh
 
 The Microsoft Graph command-line interface (CLI) supports two types of authentication: [delegated access](../auth-v2-user.md), and [app-only access](../auth-v2-service.md). This topic describes the configuration needed to enable app-only access.
 
-[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
-
 > [!NOTE]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
@@ -20,7 +18,7 @@ In this topic, you'll configure app-only access for a simple script to list user
 
 Before you can use app-only access with the SDK, you need the following:
 
-- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [See also](#see-also) section.
+- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [Related content](#related-content) section.
 - [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Microsoft Entra ID, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Certificate
@@ -143,6 +141,6 @@ Finally, sign out of the CLI.
 mgc logout
 ```
 
-## See also
+## Related content
 
 - [How to: Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).

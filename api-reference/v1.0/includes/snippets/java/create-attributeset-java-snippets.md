@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AttributeSet attributeSet = new AttributeSet();
-attributeSet.id = "Engineering";
-attributeSet.description = "Attributes for engineering team";
-attributeSet.maxAttributesPerSet = 25;
+attributeSet.setId("Engineering");
+attributeSet.setDescription("Attributes for engineering team");
+attributeSet.setMaxAttributesPerSet(25);
+AttributeSet result = graphClient.directory().attributeSets().post(attributeSet);
 
-graphClient.directory().attributeSets()
-	.buildRequest()
-	.post(attributeSet);
 
 ```

@@ -3,7 +3,7 @@ title: "call: mute"
 description: "Allows the application to mute itself."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,22 +15,19 @@ Namespace: microsoft.graph
 
 Allows the application to mute itself.
 
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+This is a server mute, meaning that the server drops all audio packets for this participant, even if the participant continues to stream audio.
 
-For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
+For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md).
 
 > **Note:** This method is only supported for group calls.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
-| Application     | Calls.Initiate.All, Calls.AccessMedia.All  |
+<!-- { "blockType": "permissions", "name": "call_mute" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-mute-permissions.md)]
 
 > **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
@@ -45,7 +42,7 @@ POST /communications/calls/{id}/mute
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -58,12 +55,14 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.
 
-> **Note:** After this operation returns a successful response, all participants will receive a roster update
+> **Note:** After this operation returns a successful response, all participants receive a roster update.
 
 ## Example
+
 The following example shows how to call this API.
 
 ##### Request
+
 The following example shows the request.
 
 
@@ -115,8 +114,9 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. 
  
 <!-- { 

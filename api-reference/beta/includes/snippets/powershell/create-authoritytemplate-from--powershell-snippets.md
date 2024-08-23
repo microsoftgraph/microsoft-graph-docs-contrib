@@ -8,10 +8,7 @@ Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.authorityTemplate"
-	displayName = "String"
-	createdBy = @{
-		"@odata.type" = "microsoft.graph.identitySet"
-	}
+	displayName = "Business"
 }
 
 New-MgBetaSecurityLabelAuthority -BodyParameter $params

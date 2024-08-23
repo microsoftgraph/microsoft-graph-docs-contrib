@@ -1,15 +1,15 @@
 ---
-title: dimensionValues resource type 
+title: dimensionValue resource type
 description: A dimension value in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# dimensionValues resource type
+# dimensionValue resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Represents a dimension value in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description                   |
 |:-------------|:-------------|:-----------------------------|
-|[Get dimensionValues](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
+|[Get dimension](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
 
 
 ## Properties
@@ -30,12 +30,12 @@ Represents a dimension value in Dynamics 365 Business Central.
 |id                  |GUID                   |The unique ID of the item.                         |
 |code                |string, maximum size 20|The dimension value code.                          |
 |displayName         |string                 |Specifies the dimension value's name. This name appears where the dimension value is used.|
-|lastModifiedDateTime|datetime               |The last datetime the dimension value was modified.|  
+|lastModifiedDateTime|datetime               |The last datetime the dimension value was modified.|
 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

@@ -3,8 +3,9 @@ title: "educationClass resource type"
 description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Class
 ---
 
 # educationClass resource type
@@ -23,22 +24,22 @@ Students are regular members of the class, and Teachers are owners and have appr
 
 | Method                                                                  | Return Type                                    | Description                                                                               |
 | :---------------------------------------------------------------------- | :--------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| [Get educationClass](../api/educationclass-get.md)                      | [educationClass]                               | Read properties and relationships of an **educationClass** object.                        |
+| [Get class](../api/educationclass-get.md)                      | [educationClass]                               | Read properties and relationships of an **educationClass** object.                        |
 | [Add member](../api/educationclass-post-members.md)                     | [educationUser]                                | Add a new **educationUser** for the class by posting to the members navigation property.  |
 | [List members](../api/educationclass-list-members.md)                   | [educationUser] collection                     | Get an **educationUser** object collection.                                               |
-| [Remove student](../api/educationclass-delete-members.md)               | [educationUser]                                | Remove an **educationUser** from the class through the members navigation property.       |
+| [Remove member](../api/educationclass-delete-members.md)               | [educationUser]                                | Remove an **educationUser** from the class through the members navigation property.       |
 | [List schools](../api/educationclass-list-schools.md)                   | [educationSchool] collection                   | Get an **educationSchool** object collection.                                             |
 | [Add teacher](../api/educationclass-post-teachers.md)                   | [educationUser]                                | Add a new **educationUser** for the class by posting to the teachers navigation property. |
 | [List teachers](../api/educationclass-list-teachers.md)                 | [educationUser] collection                     | Get a list of teachers for the class.                                                     |
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remove an **educationUser** from the class through the teachers navigation property.      |
-| [Create educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Create a new **educationAssignment** by posting to the assignments collection.            |
+| [Create](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Create a new **educationAssignment** by posting to the assignments collection.            |
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
 | [List modules](../api/educationclass-list-modules.md)                   | [educationModule]collection                    | Get an **educationModule** object collection.                                             |
 | [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
-| [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
+| [Create category](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
-| [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
-| [Delete](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
+| [Update class](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
+| [Delete class](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
 | [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
@@ -74,7 +75,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

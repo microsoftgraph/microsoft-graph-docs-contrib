@@ -2,8 +2,8 @@
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

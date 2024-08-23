@@ -2,18 +2,18 @@
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # remoteAction enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Remote actions Intune supports.
 
@@ -55,3 +55,7 @@ Remote actions Intune supports.
 |launchRemoteHelp|34|Add device action of Remote Help Launch|
 |revokeAppleVppLicenses|35|Revoke all Apple Vpp licenses for a device|
 |removeDeviceFirmwareConfigurationInterfaceManagement|36|Indicate IT Admin initiates an action to remove devices from Device Firmware Configuration Interface management|
+|pauseConfigurationRefresh|37|Indicates an action has been initiated to pause configuration refresh for the device.|
+|initiateDeviceAttestation|38|Indicates remote device action to intiate Mobile Device Management (MDM) attestation if device is capable for it.|
+|changeAssignments|39|Indicates remote device action to override assignments for a Device.|
+|delete|40|Indicates remote device action to delete a device from Intune portal.|

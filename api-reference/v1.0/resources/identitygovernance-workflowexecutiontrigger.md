@@ -3,7 +3,7 @@ title: "workflowExecutionTrigger resource type"
 description: "An abstract type that represents the workflow execution trigger when the workflow runs on schedule."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionTrigger"

@@ -4,4 +4,7 @@ ms.topic: include
 ms.author: saumadan
 ---
 
-To configure application certificate trusted authorities, the calling user must also be assigned the *Application Administrator*, *Cloud Application Administrator*, or *Global Administrator* [directory role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+
+- Application Administrator
+- Cloud Application Administrator

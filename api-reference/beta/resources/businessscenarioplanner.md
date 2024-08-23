@@ -3,7 +3,7 @@ title: "businessScenarioPlanner resource type"
 description: "Contains Microsoft Planner-related content for the scenario, allowing both configuration of Planner behavior and accessing the scenario data in Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

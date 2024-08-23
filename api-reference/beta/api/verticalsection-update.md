@@ -3,7 +3,7 @@ title: 'Update verticalSection'
 description: "Update the properties of a verticalSection object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Update verticalSection
@@ -18,13 +18,10 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "verticalsection_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/verticalsection-update-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ PATCH /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ver
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -58,12 +55,12 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
+PATCH https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca/microsoft.graph.sitePage/canvasLayout/verticalSection
 Content-Type: application/json
 
 {

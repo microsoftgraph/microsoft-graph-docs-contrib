@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -13,9 +16,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewManagedEBook()
 displayName := "Display Name value"
@@ -55,6 +55,7 @@ requestBody.SetTotalLicenseCount(&totalLicenseCount)
 usedLicenseCount := int32(0)
 requestBody.SetUsedLicenseCount(&usedLicenseCount) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 managedEBooks, err := graphClient.DeviceAppManagement().ManagedEBooks().Post(context.Background(), requestBody, nil)
 
 

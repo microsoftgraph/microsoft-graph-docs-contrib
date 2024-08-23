@@ -3,7 +3,7 @@ title: "claimsMappingPolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -29,29 +29,28 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Create a claimsMappingPolicy object. |
-| [Get claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Read properties and relationships of a claimsMappingPolicy object. |
-| [List claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Read properties and relationships of claimsMappingPolicies objects. |
-| [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | None | Update a claimsMappingPolicy object. |
-| [Delete claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | None | Delete a claimsMappingPolicy object. |
-| **Directory objects** |  |  |
-| [List appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
-| [Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | None | Assign a claimsMappingPolicy to a [servicePrincipal](serviceprincipal.md) object. |
-| [List assigned claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) collection | List the claimsMappingPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
-| [Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | None | Remove a claimsMappingPolicy from a [servicePrincipal](serviceprincipal.md) object. |
+| [List](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Read properties and relationships of claimsMappingPolicies objects. |
+| [Create](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Create a claimsMappingPolicy object. |
+| [Get](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Read properties and relationships of a claimsMappingPolicy object. |
+| [Update](../api/claimsmappingpolicy-update.md) | None | Update a claimsMappingPolicy object. |
+| [Delete](../api/claimsmappingpolicy-delete.md) | None | Delete a claimsMappingPolicy object. |
+| [List applies to](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign to service principal](../api/serviceprincipal-post-claimsmappingpolicies.md) | None | Assign a claimsMappingPolicy to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned to service principal](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) collection | List the claimsMappingPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Unassign from service principal](../api/serviceprincipal-delete-claimsmappingpolicies.md) | None | Remove a claimsMappingPolicy from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. For more information about the JSON schema for this property, see [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition). Required.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|Ignore this property. The claims-mapping policy can only be applied to service principals and can't be set globally for the organization.|
 
 ### Properties of a claims-mapping policy definition
 
-The properties below form the JSON object that represents a claims-mapping policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. A few definition examples are shown below:
+The JSON object to be inserted into the **definition** property must first be **converted to a string with quotations escaped**. This section shows a few definition examples.
 
 #### Example: **definition** to include the EmployeeID and TenantCountry as claims in tokens
 
@@ -81,12 +80,12 @@ The properties below form the JSON object that represents a claims-mapping polic
 }
 ```
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |Version|Integer|Set value of 1. Required.|
-|IncludeBasicClaimSet|Boolean|If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. If set to `false`, claims in the basic claim set aren't in the tokens, unless they are individually added in the ClaimsSchema property of the same policy.|
-|ClaimsSchema|JSON object|Defines which claims are present in the tokens affected by the policy, in addition to the basic claim set and the core claim set. For each claim schema entry defined in this property, certain information is required. Specify where the data is coming from (Value or Source/ID pair), and which claim the data is emitted as (Claim Type). A maximum of 50 claims are included in the token through the ClaimsSchema object. Any claims schema entries that are encountered after the limit has been reached will be ignored and will not appear in the issued token. Further details are available in the [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
-|ClaimsTransformation|JSON object| Defines common transformations that can be applied to source data, to generate the output data for claims specified in the ClaimsSchema. A maximum of 50 transformations are included in the token through the ClaimsTransformation object. Any transformations that are encountered after the limit has been reached will be ignored and won't appear in the issued token. For more information about ClaimsTransformation and the supported functions, see [Claims transformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
+|IncludeBasicClaimSet|Boolean|If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. If set to `false`, claims in the basic claim set aren't in the tokens, unless they're individually added in the ClaimsSchema property of the same policy.|
+|ClaimsSchema|JSON object|Defines which claims are present in the tokens affected by the policy, in addition to the basic claim set and the core claim set. For each claim schema entry defined in this property, certain information is required. Specify where the data is coming from (Value or Source/ID pair), and which claim the data is emitted as (Claim Type). A maximum of 50 claims are included in the token through the ClaimsSchema object. Any claims schema entries that are encountered after the limit has been reached are ignored and don't appear in the issued token. Further details are available in the [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
+|ClaimsTransformation|JSON object| Defines common transformations that can be applied to source data, to generate the output data for claims specified in the ClaimsSchema. A maximum of 50 transformations are included in the token through the ClaimsTransformation object. Any transformations that are encountered after the limit has been reached are ignored and don't appear in the issued token. For more information about ClaimsTransformation and the supported functions, see [Claims transformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 
 
 ## Relationships
@@ -97,7 +96,7 @@ The properties below form the JSON object that represents a claims-mapping polic
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

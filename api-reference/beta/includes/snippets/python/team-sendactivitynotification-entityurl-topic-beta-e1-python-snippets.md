@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.teams.item.send_activity_notification.send_activity_notification_post_request_body import SendActivityNotificationPostRequestBody
+from msgraph_beta.generated.models.teamwork_activity_topic import TeamworkActivityTopic
+from msgraph_beta.generated.models.teamwork_activity_topic_source import TeamworkActivityTopicSource
+from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.aad_user_notification_recipient import AadUserNotificationRecipient
+from msgraph_beta.generated.models.key_value_pair import KeyValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)
 

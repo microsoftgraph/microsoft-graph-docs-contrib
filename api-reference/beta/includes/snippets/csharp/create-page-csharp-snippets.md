@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new SitePage
 {
@@ -19,7 +21,7 @@ var requestBody = new SitePage
 	TitleArea = new TitleArea
 	{
 		EnableGradientEffect = true,
-		ImageWebUrl = "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+		ImageWebUrl = "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
 		Layout = TitleAreaLayoutType.ColorBlock,
 		ShowAuthor = true,
 		ShowPublishedDate = false,
@@ -80,54 +82,112 @@ var requestBody = new SitePage
 										"webPartType" , "d1d91016-032f-456d-98a4-721247c305e8"
 									},
 									{
-										"data" , new 
+										"data" , new UntypedObject(new Dictionary<string, UntypedNode>
 										{
-											DataVersion = "1.9",
-											Description = "Show an image on your page",
-											Title = "Image",
-											Properties = new 
 											{
-												ImageSourceType = 2,
-												AltText = "",
-												OverlayText = "",
-												Siteid = "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-												Webid = "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-												Listid = "bdb41041-eb06-474e-ac29-87093386bb14",
-												Uniqueid = "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-												ImgWidth = 4288,
-												ImgHeight = 2848,
-												FixAspectRatio = false,
-												CaptionText = "",
-												Alignment = "Center",
+												"dataVersion", new UntypedString("1.9")
 											},
-											ServerProcessedContent = new 
 											{
-												ImageSources = new List<object>
+												"description", new UntypedString("Show an image on your page")
+											},
+											{
+												"title", new UntypedString("Image")
+											},
+											{
+												"properties", new UntypedObject(new Dictionary<string, UntypedNode>
 												{
-													new 
 													{
-														Key = "imageSource",
-														Value = "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG",
+														"imageSourceType", new UntypedString("2")
 													},
-												},
-												CustomMetadata = new List<object>
-												{
-													new 
 													{
-														Key = "imageSource",
-														Value = new 
+														"altText", new UntypedString("")
+													},
+													{
+														"overlayText", new UntypedString("")
+													},
+													{
+														"siteid", new UntypedString("0264cabe-6b92-450a-b162-b0c3d54fe5e8")
+													},
+													{
+														"webid", new UntypedString("f3989670-cd37-4514-8ccb-0f7c2cbe5314")
+													},
+													{
+														"listid", new UntypedString("bdb41041-eb06-474e-ac29-87093386bb14")
+													},
+													{
+														"uniqueid", new UntypedString("d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb")
+													},
+													{
+														"imgWidth", new UntypedString("4288")
+													},
+													{
+														"imgHeight", new UntypedString("2848")
+													},
+													{
+														"fixAspectRatio", new UntypedBoolean(false)
+													},
+													{
+														"captionText", new UntypedString("")
+													},
+													{
+														"alignment", new UntypedString("Center")
+													},
+												})
+											},
+											{
+												"serverProcessedContent", new UntypedObject(new Dictionary<string, UntypedNode>
+												{
+													{
+														"imageSources", new UntypedArray(new List<UntypedNode>
 														{
-															Siteid = "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-															Webid = "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-															Listid = "bdb41041-eb06-474e-ac29-87093386bb14",
-															Uniqueid = "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-															Width = "4288",
-															Height = "2848",
-														},
+															new UntypedObject(new Dictionary<string, UntypedNode>
+															{
+																{
+																	"key", new UntypedString("imageSource")
+																},
+																{
+																	"value", new UntypedString("/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG")
+																},
+															}),
+														})
 													},
-												},
+													{
+														"customMetadata", new UntypedArray(new List<UntypedNode>
+														{
+															new UntypedObject(new Dictionary<string, UntypedNode>
+															{
+																{
+																	"key", new UntypedString("imageSource")
+																},
+																{
+																	"value", new UntypedObject(new Dictionary<string, UntypedNode>
+																	{
+																		{
+																			"siteid", new UntypedString("0264cabe-6b92-450a-b162-b0c3d54fe5e8")
+																		},
+																		{
+																			"webid", new UntypedString("f3989670-cd37-4514-8ccb-0f7c2cbe5314")
+																		},
+																		{
+																			"listid", new UntypedString("bdb41041-eb06-474e-ac29-87093386bb14")
+																		},
+																		{
+																			"uniqueid", new UntypedString("d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb")
+																		},
+																		{
+																			"width", new UntypedString("4288")
+																		},
+																		{
+																			"height", new UntypedString("2848")
+																		},
+																	})
+																},
+															}),
+														})
+													},
+												})
 											},
-										}
+										})
 									},
 								},
 							},
@@ -138,6 +198,8 @@ var requestBody = new SitePage
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].Pages.PostAsync(requestBody);
 
 

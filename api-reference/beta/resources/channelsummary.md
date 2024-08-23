@@ -2,8 +2,8 @@
 title: "channelSummary resource type"
 description: "Contains information about a channel in Microsoft Teams, including numbers of guests, members, and owners, and whether the channel includes members from other tenants."
 ms.localizationpriority: medium
-author: "sonalikallanimicrosoft"
-ms.prod: "microsoft-teams"
+author: "rupanshoo"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Contains information about a channel in Microsoft Teams, including numbers of gu
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

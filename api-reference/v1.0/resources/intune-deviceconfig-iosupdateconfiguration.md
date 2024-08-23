@@ -2,8 +2,8 @@
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

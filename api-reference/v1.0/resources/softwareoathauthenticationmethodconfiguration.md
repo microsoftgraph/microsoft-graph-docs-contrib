@@ -2,9 +2,11 @@
 title: "softwareOathAuthenticationMethodConfiguration resource type"
 description: "Represents the authentication policy for a third-party software OATH authentication method."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Software OATH
 ---
 
 # softwareOathAuthenticationMethodConfiguration resource type
@@ -19,9 +21,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get softwareOathAuthenticationMethodConfiguration](../api/softwareoathauthenticationmethodconfiguration-get.md)|[softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md)|Read the properties and relationships of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object.|
-|[Update softwareOathAuthenticationMethodConfiguration](../api/softwareoathauthenticationmethodconfiguration-update.md)|None|Update the properties of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object.|
-|[Delete softwareOathAuthenticationMethodConfiguration](../api/softwareoathauthenticationmethodconfiguration-delete.md)|None|Reverts the [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object to its default configuration.|
+|[Get](../api/softwareoathauthenticationmethodconfiguration-get.md)|[softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md)|Read the properties and relationships of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object.|
+|[Update](../api/softwareoathauthenticationmethodconfiguration-update.md)|None|Update the properties of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object.|
+|[Delete](../api/softwareoathauthenticationmethodconfiguration-delete.md)|None|Reverts the [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object to its default configuration.|
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +37,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection| A collection of groups that are enabled to use the authentication method. Expanded by default.|
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

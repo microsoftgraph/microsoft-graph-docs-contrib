@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String destinationId = "destinationId-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().mailFolders("{id}")
-	.move(MailFolderMoveParameterSet
-		.newBuilder()
-		.withDestinationId(destinationId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.users.item.mailfolders.item.move.MovePostRequestBody movePostRequestBody = new com.microsoft.graph.beta.users.item.mailfolders.item.move.MovePostRequestBody();
+movePostRequestBody.setDestinationId("destinationId-value");
+var result = graphClient.me().mailFolders().byMailFolderId("{mailFolder-id}").move().post(movePostRequestBody);
+
 
 ```

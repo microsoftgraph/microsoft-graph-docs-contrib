@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.alerts.item.alert_item_request_builder import AlertItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.alert import Alert
+from msgraph_beta.generated.models.alert_feedback import AlertFeedback
+from msgraph_beta.generated.models.alert_status import AlertStatus
+from msgraph_beta.generated.models.security_vendor_information import SecurityVendorInformation
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -25,12 +31,9 @@ request_body = Alert(
 	),
 )
 
-request_configuration = AlertItemRequestBuilder.AlertItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-}
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
 
-)
 
 result = await graph_client.security.alerts.by_alert_id('alert-id').patch(request_body, request_configuration = request_configuration)
 

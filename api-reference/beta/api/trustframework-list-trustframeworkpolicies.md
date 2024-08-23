@@ -3,7 +3,7 @@ title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
@@ -18,15 +18,12 @@ Retrieve a list of [trustFrameworkPolicies](../resources/trustframeworkpolicy.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.TrustFramework|
+<!-- { "blockType": "permissions", "name": "trustframework_list_trustframeworkpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+The work or school account must have at least the *B2C IEF Keyset Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -42,7 +39,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

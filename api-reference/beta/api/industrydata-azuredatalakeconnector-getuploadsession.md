@@ -3,7 +3,7 @@ title: "azureDataLakeConnector: getUploadSession"
 description: "Retrieve an upload session used to supply file-based data to an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Retrieve an upload session used to supply file-based data to an inbound flow.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                 |
-| :------------------------------------- | :-------------------------------------------------------------------------- |
-| Delegated (work or school account)     | IndustryData-DataConnector.Upload, IndustryData-DataConnector.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                              |
-| Application                            | IndustryData-DataConnector.Upload, IndustryData-DataConnector.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "industrydata_azuredatalakeconnector_getuploadsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/industrydata-azuredatalakeconnector-getuploadsession-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ In the request URL, provide the following query parameters with values.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -62,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,10 +72,6 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271/microsoft.graph.industryData.azureDataLakeConnector/getUploadSession
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/azuredatalakeconnectorthisgetuploadsession-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/azuredatalakeconnectorthisgetuploadsession-javascript-snippets.md)]

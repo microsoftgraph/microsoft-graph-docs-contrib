@@ -2,8 +2,9 @@
 title: "group: assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 
@@ -19,21 +20,17 @@ To get the subscriptions available in the directory, perform a [GET subscribedSk
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)  |
-| :------------------------------------- | :------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_assignlicense" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 - Directory Writers
 - Groups Administrator
 - License Administrator
 - User Administrator
-- Global Administrator
 
 ## HTTP request
 
@@ -47,7 +44,7 @@ POST /groups/{id}/assignLicense
 
 | Header        | Value                       |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -57,7 +54,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type                                                          | Description                                                                                                                                                                                                                                                                    |
 | :------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | addLicenses    | [assignedLicense](../resources/assignedlicense.md) collection | A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object. |
-| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove.                                                                                                                                                                                                                   |
+| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove. Required.                                                                                                                                                                                                                   |
 
 ## Response
 

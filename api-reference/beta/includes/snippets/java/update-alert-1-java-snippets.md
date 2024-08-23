@@ -4,26 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Alert alert = new Alert();
-alert.assignedTo = "String";
-alert.closedDateTime = OffsetDateTimeSerializer.deserialize("String (timestamp)");
-LinkedList<String> commentsList = new LinkedList<String>();
-commentsList.add("String");
-alert.comments = commentsList;
-alert.feedback = AlertFeedback.UNKNOWN;
-alert.status = AlertStatus.UNKNOWN;
-LinkedList<String> tagsList = new LinkedList<String>();
-tagsList.add("String");
-alert.tags = tagsList;
+alert.setAssignedTo("String");
+OffsetDateTime closedDateTime = OffsetDateTime.parse("String (timestamp)");
+alert.setClosedDateTime(closedDateTime);
+LinkedList<String> comments = new LinkedList<String>();
+comments.add("String");
+alert.setComments(comments);
+alert.setFeedback(AlertFeedback.Unknown);
+alert.setStatus(AlertStatus.Unknown);
+LinkedList<String> tags = new LinkedList<String>();
+tags.add("String");
+alert.setTags(tags);
 SecurityVendorInformation vendorInformation = new SecurityVendorInformation();
-vendorInformation.provider = "String";
-vendorInformation.vendor = "String";
-alert.vendorInformation = vendorInformation;
+vendorInformation.setProvider("String");
+vendorInformation.setVendor("String");
+alert.setVendorInformation(vendorInformation);
+Alert result = graphClient.security().alerts().byAlertId("{alert-id}").patch(alert);
 
-graphClient.security().alerts("{alert_id}")
-	.buildRequest()
-	.patch(alert);
 
 ```

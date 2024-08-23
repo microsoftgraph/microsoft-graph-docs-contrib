@@ -4,26 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Team team = new Team();
-team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/teamsTemplates('standard')"));
-team.displayName = "My Sample Team";
-team.description = "My Sample Team’s Description";
-LinkedList<ConversationMember> membersList = new LinkedList<ConversationMember>();
-AadUserConversationMember members = new AadUserConversationMember();
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("owner");
-members.roles = rolesList;
-members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/users('jacob@contoso.com')"));
-membersList.add(members);
-ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
-conversationMemberCollectionResponse.value = membersList;
-ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
-team.members = conversationMemberCollectionPage;
+team.setDisplayName("My Sample Team");
+team.setDescription("My Sample Team’s Description");
+LinkedList<ConversationMember> members = new LinkedList<ConversationMember>();
+AadUserConversationMember conversationMember = new AadUserConversationMember();
+conversationMember.setOdataType("#microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("owner");
+conversationMember.setRoles(roles);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')");
+conversationMember.setAdditionalData(additionalData);
+members.add(conversationMember);
+team.setMembers(members);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')");
+team.setAdditionalData(additionalData1);
+Team result = graphClient.teams().post(team);
 
-graphClient.teams()
-	.buildRequest()
-	.post(team);
 
 ```

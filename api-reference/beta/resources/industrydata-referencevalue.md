@@ -3,7 +3,7 @@ title: "referenceValue resource type"
 description: "An abstract type that represents a pointer to an entry in the referenceDefinitions collection."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Base type of [identifierTypeReferenceValue](industrydata-identifiertypereference
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

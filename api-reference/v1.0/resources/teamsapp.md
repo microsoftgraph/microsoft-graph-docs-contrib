@@ -1,9 +1,9 @@
 ---
 title: "teamsApp resource type"
 description: "Represents an app in the Microsoft Teams app catalog."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -20,10 +20,10 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps in catalog](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) collection | List all the apps in the Microsoft Teams apps catalog.|
-|[Upload app to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
+|[Publish apps to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
 |[Update app in catalog](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update an app in your organization's app catalog.|
 |[Delete app from catalog](../api/teamsapp-delete.md) | None | Remove an app from your organization's app catalog.|
-|[Get bot associated with app in catalog](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
+|[Get associated bot](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
 
 ## Properties
 
@@ -67,7 +67,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

@@ -4,7 +4,7 @@ description: The personOrGroupColumn on a columnDefinition resource indicates th
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 | Property                   | Type    | Description                                                                                                        |
 | :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
-| **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.                                                 |
+| **allowMultipleSelection** | Boolean | Indicates whether multiple values can be selected from the source.                                                 |
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.                                        |
 | **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`. |
 

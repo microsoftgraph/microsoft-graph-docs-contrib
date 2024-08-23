@@ -3,7 +3,7 @@ title: "Update forwardingOptions"
 description: "Update the forwarding options for the tenant, with a specific focus on the skipDnsLookupState flag. This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ the forwarding options for the tenant, with a specific focus on the skipDnsLooku
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "networkaccess_forwardingoptions_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-forwardingoptions-update-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -40,7 +37,7 @@ PATCH /networkAccess/settings/forwardingOptions
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -49,7 +46,7 @@ PATCH /networkAccess/settings/forwardingOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|signalingStatus|microsoft.graph.networkaccess.status|The skipDnsLookupState flag is a boolean value that determines whether DNS lookup should be performed at the client-side. When this flag is enabled (true), DNS lookup is skipped, and Microsoft 365 (M365) traffic is directly forwarded to the Front Door using the client-resolved destination IP address. The possible values are: `enabled`, `disabled`. Required.|
+|signalingStatus|microsoft.graph.networkaccess.status|The skipDnsLookupState flag is a Boolean value that determines whether DNS lookup should be performed at the client-side. When this flag is enabled (true), DNS lookup is skipped, and Microsoft 365 (M365) traffic is directly forwarded to the Front Door using the client-resolved destination IP address. The possible values are: `enabled`, `disabled`. Required.|
 
 
 
@@ -60,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,6 +95,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-forwardingoptions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-forwardingoptions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

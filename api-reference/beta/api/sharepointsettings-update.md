@@ -3,7 +3,7 @@ title: "Update sharepointSettings"
 description: "Update one or more tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Update one or more tenant-level [settings](../resources/sharepointsettings.md) f
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SharePointTenantSettings.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SharePointTenantSettings.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "sharepointsettings_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sharepointsettings-update-permissions.md)]
 
 When calling on behalf of a user, the user needs to belong to one of the following admin roles. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles):
 * Global Administrator
@@ -42,7 +39,7 @@ PATCH /admin/sharepoint/settings
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -88,7 +85,7 @@ If successful, this method returns a `200 OK` response code and an updated [sett
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -1,9 +1,9 @@
 ---
 author: chackman
-description: "List the items that have been followed by the signed in user."
+description: "List the items that the signed-in user followed."
 title: List followed items
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # List followed items
@@ -12,20 +12,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [items](../resources/driveitem.md) that have been followed by the signed in user.
-This collection includes items that are in the user's drive as well as items they have access to from other drives.
+List the [items](../resources/driveitem.md) that the signed-in user followed.
+This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "drive_list_following" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-list-following-permissions.md)]
 
 ## HTTP request
 
@@ -35,15 +32,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/drive/following
 ```
 
-
 ## Response
 
-This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
+This method returns a collection of [driveItem](../resources/driveitem.md) resources for items, which the owner of the drive is following.
 If no items were found, an empty collection is returned.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items" } -->
@@ -88,6 +86,7 @@ GET /me/drive/following
 
 ### Response
 
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

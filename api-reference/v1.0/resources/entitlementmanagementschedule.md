@@ -3,7 +3,7 @@ title: "entitlementManagementSchedule resource type"
 description: "An entitlement management schedule can be included in an access package assignment request and is present in an access package assignment, and is also used for access reviews schedules in a policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # entitlementManagementSchedule complex type
@@ -22,7 +22,7 @@ The entitlement management schedule is used in three scenarios in [Microsoft Ent
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.entitlementManagementSchedule"

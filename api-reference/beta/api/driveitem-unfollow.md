@@ -3,7 +3,7 @@ author: chackman
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Unfollow drive item
@@ -20,13 +20,10 @@ Unfollow a [driveItem](../resources/driveitem.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_unfollow" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## HTTP request
 
@@ -49,7 +46,7 @@ If successful, the API call returns a `204 No Content`. It doesn't return anythi
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 This example unfollows an item identified by `{item-id}`.
 
 
@@ -57,7 +54,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-POST /me/drive/items/{item-id}/unfollow
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/unfollow
 ```
 
 # [C#](#tab/csharp)

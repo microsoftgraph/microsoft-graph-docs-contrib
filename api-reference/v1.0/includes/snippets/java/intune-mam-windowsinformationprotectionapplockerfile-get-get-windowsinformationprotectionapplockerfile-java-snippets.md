@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WindowsInformationProtectionAppLockerFile windowsInformationProtectionAppLockerFile = graphClient.deviceAppManagement().windowsInformationProtectionPolicies("{windowsInformationProtectionPolicyId}").exemptAppLockerFiles("{windowsInformationProtectionAppLockerFileId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+WindowsInformationProtectionAppLockerFile result = graphClient.deviceAppManagement().windowsInformationProtectionPolicies().byWindowsInformationProtectionPolicyId("{windowsInformationProtectionPolicy-id}").exemptAppLockerFiles().byWindowsInformationProtectionAppLockerFileId("{windowsInformationProtectionAppLockerFile-id}").get();
+
 
 ```

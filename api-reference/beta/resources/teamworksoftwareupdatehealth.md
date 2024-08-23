@@ -3,7 +3,7 @@ title: "teamworkSoftwareUpdateHealth resource type"
 description: "Represents the details about the software updates available for different components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client, in a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents the details about the software updates available for different compon
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkSoftwareUpdateHealth"

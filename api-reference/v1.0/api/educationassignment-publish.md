@@ -1,9 +1,9 @@
 ---
 title: "educationAssignment: publish"
-description: "Change the state of an educationAssignment from its original draft status to the published status."
+description: "Change the status of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -13,26 +13,23 @@ Namespace: microsoft.graph
 
 Publish an education assignment.
 
-Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
+Change the status of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
-You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
+You can change the status from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
 
 Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. Calling this API creates [educationSubmission](../resources/educationsubmission.md) objects and displays the assignment in each student's list.
 
-The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+The status of the assignment goes back to `draft` if there is any backend failure during publish process.
 
 To update the properties of a published **assignment**, see [update an assignment](../api/educationassignment-update.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+<!-- { "blockType": "permissions", "name": "educationassignment_publish" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-publish-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +40,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -55,7 +52,7 @@ If successful, this method returns a `200 Ok` response code and an [educationAss
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -104,7 +101,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 ---
 
 ### Response
-The following is an example of a response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",
@@ -161,9 +158,9 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## See also
+## Related content
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+* [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

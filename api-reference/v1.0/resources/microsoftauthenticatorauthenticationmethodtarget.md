@@ -2,8 +2,9 @@
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use Microsoft Authenticator authentication methods policy."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +25,7 @@ A collection of groups enabled to use [Microsoft Authenticator authentication me
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

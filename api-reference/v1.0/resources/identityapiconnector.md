@@ -3,7 +3,7 @@ title: "identityApiConnector resource type"
 description: "Represents API connectors in a Microsoft Entra tenant."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connecto
 |[Create](../api/identityapiconnector-create.md)|[identityApiConnector](identityapiconnector.md)|Create a new API connector. |
 |[Get](../api/identityapiconnector-get.md)|[identityApiConnector](identityapiconnector.md)|Read the properties of an [identityApiConnector](../resources/identityapiconnector.md) object.|
 |[Update](../api/identityapiconnector-update.md)|[identityApiConnector](identityapiconnector.md)|Update the properties of an API connector.|
-|[Upload client certificate](../api/identityapiconnector-uploadclientcertificate.md)|[identityApiConnector](identityapiconnector.md)|Upload a client certificate to use for authentication.|
+|[Upload a client certificate](../api/identityapiconnector-uploadclientcertificate.md)|[identityApiConnector](identityapiconnector.md)|Upload a client certificate to use for authentication.|
 |[Delete](../api/identityapiconnector-delete.md)|None|Delete an API connector.|
 
 ## Properties
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

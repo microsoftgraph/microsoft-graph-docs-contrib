@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.windows_information_protection_network_learning_summary import WindowsInformationProtectionNetworkLearningSummary
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.aad_user_conversation_member import AadUserConversationMember
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ request_body = AadUserConversationMember(
 	roles = [
 	],
 	additional_data = {
-			"user@odata_bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+			"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
 	}
 )
 

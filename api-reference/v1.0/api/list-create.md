@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Create a SharePoint List
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
 ---
@@ -16,13 +16,10 @@ Create a new [list][] in a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Manage.All                            |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Manage.All                            |
+<!-- { "blockType": "permissions", "name": "list_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/list-create-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +33,7 @@ POST /sites/{site-id}/lists
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,7 +60,7 @@ If the **list** facet or **template** is unspecified, the list defaults to the `
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 Content-Type: application/json
 
 {

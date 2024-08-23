@@ -4,7 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.x509_certificate_authentication_method_configuration import X509CertificateAuthenticationMethodConfiguration
+from msgraph_beta.generated.models.authentication_method_state import AuthenticationMethodState
+from msgraph_beta.generated.models.x509_certificate_user_binding import X509CertificateUserBinding
+from msgraph_beta.generated.models.x509_certificate_authentication_mode_configuration import X509CertificateAuthenticationModeConfiguration
+from msgraph_beta.generated.models.x509_certificate_authentication_mode import X509CertificateAuthenticationMode
+from msgraph_beta.generated.models.x509_certificate_rule import X509CertificateRule
+from msgraph_beta.generated.models.x509_certificate_rule_type import X509CertificateRuleType
+from msgraph_beta.generated.models.x509_certificate_issuer_hints_configuration import X509CertificateIssuerHintsConfiguration
+from msgraph_beta.generated.models.x509_certificate_issuer_hints_state import X509CertificateIssuerHintsState
+from msgraph_beta.generated.models.authentication_method_target import AuthenticationMethodTarget
+from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

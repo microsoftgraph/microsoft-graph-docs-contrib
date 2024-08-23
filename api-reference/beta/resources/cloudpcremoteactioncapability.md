@@ -3,7 +3,7 @@ title: "cloudPcRemoteActionCapability resource type"
 description: "Represents the action name and capability of a supported Cloud PC remote action."
 author: "hanky0301"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcRemoteActionCapability"

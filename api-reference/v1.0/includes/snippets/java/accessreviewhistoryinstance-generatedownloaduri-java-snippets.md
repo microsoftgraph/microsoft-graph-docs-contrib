@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.identityGovernance().accessReviews().historyDefinitions("b2cb022f-b7e1-40f3-9854-c65a40861c38").instances("b2cb022f-b7e1-40f3-9854-c65a40861c38")
-	.generateDownloadUri()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.identityGovernance().accessReviews().historyDefinitions().byAccessReviewHistoryDefinitionId("{accessReviewHistoryDefinition-id}").instances().byAccessReviewHistoryInstanceId("{accessReviewHistoryInstance-id}").generateDownloadUri().post();
+
 
 ```

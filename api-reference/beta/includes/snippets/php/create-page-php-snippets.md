@@ -5,8 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\SitePage;
+use Microsoft\Graph\Beta\Generated\Models\PageLayoutType;
+use Microsoft\Graph\Beta\Generated\Models\TitleArea;
+use Microsoft\Graph\Beta\Generated\Models\TitleAreaLayoutType;
+use Microsoft\Graph\Beta\Generated\Models\TitleAreaTextAlignmentType;
+use Microsoft\Graph\Beta\Generated\Models\CanvasLayout;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSection;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSectionLayoutType;
+use Microsoft\Graph\Beta\Generated\Models\SectionEmphasisType;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSectionColumn;
+use Microsoft\Graph\Beta\Generated\Models\WebPart;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SitePage();
@@ -18,7 +30,7 @@ $requestBody->setShowComments(true);
 $requestBody->setShowRecommendedPages(false);
 $titleArea = new TitleArea();
 $titleArea->setEnableGradientEffect(true);
-$titleArea->setImageWebUrl('/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG');
+$titleArea->setImageWebUrl('https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg');
 $titleArea->setLayout(new TitleAreaLayoutType('colorBlock'));
 $titleArea->setShowAuthor(true);
 $titleArea->setShowPublishedDate(false);

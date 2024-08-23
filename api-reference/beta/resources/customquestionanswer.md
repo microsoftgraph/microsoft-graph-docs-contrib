@@ -3,7 +3,7 @@ title: "customQuestionAnswer resource type"
 description: "Represents a registrant's answer to a custom registration question."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.date: 09/30/2021
 doc_type: resourcePageType
 ---
@@ -28,7 +28,8 @@ Represents a registrant's answer to the [custom registration question](meetingre
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.customQuestionAnswer"
+  "@odata.type": "microsoft.graph.customQuestionAnswer",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

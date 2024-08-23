@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const sync = Content-type: application/json
-Content-length: 31
-
-{
+const sync = {
   syncType: 'deltaSync'
 };
 

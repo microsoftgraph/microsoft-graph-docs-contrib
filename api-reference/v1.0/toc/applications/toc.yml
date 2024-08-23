@@ -1,0 +1,390 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/applications-api-overview.md
+- name: Application
+  items:
+  - name: Application
+    href: ../../resources/application.md
+  - name: List
+    href: ../../api/application-list.md
+  - name: Create
+    href: ../../api/application-post-applications.md
+  - name: Get
+    href: ../../api/application-get.md
+  - name: Update
+    href: ../../api/application-update.md
+  - name: Upsert
+    href: ../../api/application-upsert.md
+  - name: Delete
+    href: ../../api/application-delete.md
+  - name: Get delta
+    href: ../../api/application-delta.md
+  - name: Deleted items
+    items:
+    - name: List
+      href: ../../api/directory-deleteditems-list.md
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete
+      href: ../../api/directory-deleteditems-delete.md
+    - name: List deleted items owned by user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
+  - name: Certificates and secrets
+    items:
+    - name: Add password
+      href: ../../api/application-addpassword.md
+    - name: Remove password
+      href: ../../api/application-removepassword.md
+    - name: Add key
+      href: ../../api/application-addkey.md
+    - name: Remove key
+      href: ../../api/application-removekey.md
+  - name: Owners
+    items:
+    - name: List
+      href: ../../api/application-list-owners.md
+    - name: Add
+      href: ../../api/application-post-owners.md
+    - name: Remove
+      href: ../../api/application-delete-owners.md
+  - name: Verified publisher
+    items:
+    - name: Set
+      href: ../../api/application-setverifiedpublisher.md
+    - name: Unset
+      href: ../../api/application-unsetverifiedpublisher.md
+  - name: Application template
+    items:
+    - name: Application template
+      href: ../../resources/applicationtemplate.md
+    - name: List
+      href: ../../api/applicationtemplate-list.md
+    - name: Get
+      href: ../../api/applicationtemplate-get.md
+    - name: Instantiate
+      href: ../../api/applicationtemplate-instantiate.md
+  - name: Directory extension
+    items:
+    - name: Directory extension
+      href: ../../resources/extensionproperty.md
+    - name: Create
+      href: ../../api/application-post-extensionproperty.md
+    - name: List
+      href: ../../api/application-list-extensionproperty.md
+    - name: Get
+      href: ../../api/extensionproperty-get.md
+    - name: Delete
+      href: ../../api/extensionproperty-delete.md
+    - name: Get available extension properties
+      href: ../../api/directoryobject-getavailableextensionproperties.md
+  - name: Federated identity credential
+    items:
+    - name: Overview
+      href: ../../resources/federatedidentitycredentials-overview.md
+    - name: Federated identity credential
+      href: ../../resources/federatedidentitycredential.md
+    - name: List
+      href: ../../api/application-list-federatedidentitycredentials.md
+    - name: Create
+      href: ../../api/application-post-federatedidentitycredentials.md
+    - name: Get
+      href: ../../api/federatedidentitycredential-get.md
+    - name: Update
+      href: ../../api/federatedidentitycredential-update.md
+    - name: Upsert
+      href: ../../api/federatedidentitycredential-upsert.md
+    - name: Delete
+      href: ../../api/federatedidentitycredential-delete.md
+  - name: Policies
+    items:
+    - name: Remote desktop security configuration
+      items:
+      - name: Remote desktop security configuration
+        href: ../../resources/remotedesktopsecurityconfiguration.md
+      - name: Create
+        href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+      - name: Get
+        href: ../../api/remotedesktopsecurityconfiguration-get.md
+      - name: Update
+        href: ../../api/remotedesktopsecurityconfiguration-update.md
+      - name: Delete
+        href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+    - name: Token issuance policy
+      items:
+      - name: Token issuance policy
+        href: ../../resources/tokenissuancepolicy.md
+      - name: List
+        href: ../../api/tokenissuancepolicy-list.md
+      - name: Create
+        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
+      - name: Get
+        href: ../../api/tokenissuancepolicy-get.md
+      - name: Update
+        href: ../../api/tokenissuancepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenissuancepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenissuancepolicy-list-appliesto.md
+    - name: Token lifetime policy
+      items:
+      - name: Token lifetime policy
+        href: ../../resources/tokenlifetimepolicy.md
+      - name: List
+        href: ../../api/tokenlifetimepolicy-list.md
+      - name: Create
+        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+      - name: Get
+        href: ../../api/tokenlifetimepolicy-get.md
+      - name: Update
+        href: ../../api/tokenlifetimepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenlifetimepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenlifetimepolicy-list-appliesto.md
+- name: Service principal
+  items:
+  - name: Service principal
+    href: ../../resources/serviceprincipal.md
+  - name: List
+    href: ../../api/serviceprincipal-list.md
+  - name: Create
+    href: ../../api/serviceprincipal-post-serviceprincipals.md
+  - name: Get
+    href: ../../api/serviceprincipal-get.md
+  - name: Update
+    href: ../../api/serviceprincipal-update.md
+  - name: Upsert
+    href: ../../api/serviceprincipal-upsert.md
+  - name: Delete
+    href: ../../api/serviceprincipal-delete.md
+  - name: Get delta
+    href: ../../api/serviceprincipal-delta.md
+  - name: List created objects
+    href: ../../api/serviceprincipal-list-createdobjects.md
+  - name: List owned objects
+    href: ../../api/serviceprincipal-list-ownedobjects.md
+  - name: Deleted items
+    items:
+    - name: List
+      href: ../../api/directory-deleteditems-list.md
+    - name: Get
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore
+      href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete
+      href: ../../api/directory-deleteditems-delete.md
+  - name: App role assignments
+    items:
+    - name: List appRoleAssignments
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: Add appRoleAssignment
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Remove appRoleAssignment
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: List appRoleAssignedTo
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Add appRoleAssignedTo
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Remove appRoleAssignedTo
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
+  - name: Certificates and secrets
+    items:
+    - name: Add password
+      href: ../../api/serviceprincipal-addpassword.md
+    - name: Remove password
+      href: ../../api/serviceprincipal-removepassword.md
+    - name: Add key
+      href: ../../api/serviceprincipal-addkey.md
+    - name: Remove key
+      href: ../../api/serviceprincipal-removekey.md
+    - name: Add token signing certificate
+      href: ../../api/serviceprincipal-addtokensigningcertificate.md
+  - name: Delegated permission classifications
+    items:
+    - name: List
+      href: ../../api/serviceprincipal-list-delegatedpermissionclassifications.md
+    - name: Add
+      href: ../../api/serviceprincipal-post-delegatedpermissionclassifications.md
+    - name: Remove
+      href: ../../api/serviceprincipal-delete-delegatedpermissionclassifications.md
+  - name: Delegated (OAuth2) permission grants
+    items:
+    - name: List
+      href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
+  - name: Membership
+    items:
+    - name: List memberOf
+      href: ../../api/serviceprincipal-list-memberof.md
+    - name: List transitive member of
+      href: ../../api/serviceprincipal-list-transitivememberof.md
+    - name: Check member groups
+      href: ../../api/directoryobject-checkmembergroups.md
+    - name: Check member objects
+      href: ../../api/directoryobject-checkmemberobjects.md
+    - name: Get member groups
+      href: ../../api/directoryobject-getmembergroups.md
+    - name: Get member objects
+      href: ../../api/directoryobject-getmemberobjects.md
+  - name: Owners
+    items:
+    - name: List
+      href: ../../api/serviceprincipal-list-owners.md
+    - name: Add
+      href: ../../api/serviceprincipal-post-owners.md
+    - name: Remove
+      href: ../../api/serviceprincipal-delete-owners.md
+  - name: Policies
+    items:
+    - name: Token issuance policy
+      items:
+      - name: Token issuance policy
+        href: ../../resources/tokenissuancepolicy.md
+      - name: List
+        href: ../../api/tokenissuancepolicy-list.md
+      - name: Create
+        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
+      - name: Get
+        href: ../../api/tokenissuancepolicy-get.md
+      - name: Update
+        href: ../../api/tokenissuancepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenissuancepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenissuancepolicy-list-appliesto.md
+    - name: Token lifetime policy
+      items:
+      - name: Token lifetime policy
+        href: ../../resources/tokenlifetimepolicy.md
+      - name: List
+        href: ../../api/tokenlifetimepolicy-list.md
+      - name: Create
+        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+      - name: Get
+        href: ../../api/tokenlifetimepolicy-get.md
+      - name: Update
+        href: ../../api/tokenlifetimepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenlifetimepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenlifetimepolicy-list-appliesto.md
+    - name: Claims mapping policy
+      items:
+      - name: Claims mapping policy
+        href: ../../resources/claimsmappingpolicy.md
+      - name: List
+        href: ../../api/claimsmappingpolicy-list.md
+      - name: Create
+        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
+      - name: Get
+        href: ../../api/claimsmappingpolicy-get.md
+      - name: Update
+        href: ../../api/claimsmappingpolicy-update.md
+      - name: Delete
+        href: ../../api/claimsmappingpolicy-delete.md
+      - name: List applies to
+        href: ../../api/claimsmappingpolicy-list-appliesto.md
+      - name: Assign to service principal
+        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+      - name: List assigned to service principal
+        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+      - name: Unassign from service principal
+        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+    - name: Home realm discovery policy
+      items:
+      - name: Home realm discovery policy
+        href: ../../resources/homerealmdiscoverypolicy.md
+      - name: List
+        href: ../../api/homerealmdiscoverypolicy-list.md
+      - name: Create
+        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+      - name: Get
+        href: ../../api/homerealmdiscoverypolicy-get.md
+      - name: Update
+        href: ../../api/homerealmdiscoverypolicy-update.md
+      - name: Delete
+        href: ../../api/homerealmdiscoverypolicy-delete.md
+      - name: List applies to
+        href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
+      - name: Assign to service principal
+        href: ../../api/serviceprincipal-post-homerealmdiscoverypolicies.md
+      - name: List assigned to service principal
+        href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
+      - name: Unassign from service principal
+        href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+- name: Synchronization
+  items:
+  - name: Overview
+    href: ../../resources/synchronization-overview.md
+  - name: Synchronization
+    items:
+    - name: Synchronization
+      href: ../../resources/synchronization-synchronization.md
+    - name: Acquire access token
+      href: ../../api/synchronization-synchronization-acquireaccesstoken.md
+    - name: Add secrets
+      href: ../../api/synchronization-serviceprincipal-put-synchronization.md
+  - name: Synchronization job
+    items:
+    - name: Synchronization job
+      href: ../../resources/synchronization-synchronizationjob.md
+    - name: List
+      href: ../../api/synchronization-synchronization-list-jobs.md
+    - name: Get
+      href: ../../api/synchronization-synchronizationjob-get.md
+    - name: Create
+      href: ../../api/synchronization-synchronization-post-jobs.md
+    - name: Start
+      href: ../../api/synchronization-synchronizationjob-start.md
+    - name: Pause
+      href: ../../api/synchronization-synchronizationjob-pause.md
+    - name: Restart
+      href: ../../api/synchronization-synchronizationjob-restart.md
+    - name: Delete
+      href: ../../api/synchronization-synchronizationjob-delete.md
+    - name: Provision on demand
+      href: ../../api/synchronization-synchronizationjob-provisionondemand.md
+    - name: Validate credentials
+      href: ../../api/synchronization-synchronizationjob-validatecredentials.md
+    - name: Bulk upload
+      items:
+      - name: Bulk upload
+        href: ../../resources/synchronization-bulkupload.md
+      - name: Perform bulk upload
+        href: ../../api/synchronization-synchronizationjob-post-bulkupload.md
+  - name: Synchronization schema
+    items:
+    - name: Synchronization schema
+      href: ../../resources/synchronization-synchronizationschema.md
+    - name: Get
+      href: ../../api/synchronization-synchronizationschema-get.md
+    - name: Update
+      href: ../../api/synchronization-synchronizationschema-update.md
+    - name: Reset
+      href: ../../api/synchronization-synchronizationschema-delete.md
+    - name: Get schema filter operators
+      href: ../../api/synchronization-synchronizationschema-filteroperators.md
+    - name: Get schema functions
+      href: ../../api/synchronization-synchronizationschema-functions.md
+    - name: Parse attribute mapping expression
+      href: ../../api/synchronization-synchronizationschema-parseexpression.md
+    - name: Directory definition
+      items:
+      - name: Directory definition
+        href: ../../resources/synchronization-directorydefinition.md
+      - name: Discover
+        href: ../../api/synchronization-directorydefinition-discover.md
+  - name: Synchronization template
+    items:
+    - name: Synchronization template
+      href: ../../resources/synchronization-synchronizationtemplate.md
+    - name: List
+      href: ../../api/synchronization-synchronization-list-templates.md
+    - name: Get
+      href: ../../api/synchronization-synchronizationtemplate-get.md
+    - name: Update
+      href: ../../api/synchronization-synchronizationtemplate-update.md

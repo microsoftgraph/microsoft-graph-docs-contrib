@@ -3,7 +3,7 @@ title: "baseTaskList: delta"
 description: "Get a set of baseTaskList resources that have been added, deleted, or removed in Microsoft To Do."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,10 @@ A **delta** function call for **baseTaskList** is similar to a GET request, exce
 you can query for incremental changes in the **baseTaskList**. This allows you to maintain and synchronize a local store of a user's **baseTaskList** without having to fetch all the **baseTaskList** from the server every time.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
-|Application|Not supported|
+<!-- { "blockType": "permissions", "name": "basetasklist_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/basetasklist-delta-permissions.md)]
 
 ## HTTP request
 
@@ -62,7 +59,7 @@ includes the encoded, desired parameters.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
@@ -85,10 +82,6 @@ If successful, this function returns a `200 OK` response code and a [baseTaskLis
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]

@@ -3,7 +3,7 @@ title: "stopHoldMusicOperation resource type"
 description: "Represents the status of a stopHoldMusic operation, triggered by a call to the stopHoldMusic API."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Represents the status of a [stopHoldMusic](../api/participant-stopholdmusic.md) 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

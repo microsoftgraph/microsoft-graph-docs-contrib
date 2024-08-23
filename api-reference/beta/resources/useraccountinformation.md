@@ -3,7 +3,7 @@ title: "userAccountInformation resource type"
 description: "userAccountInformation resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemfacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accounts](../api/profile-list-accounts.md)|[userAccountInformation](../resources/useraccountinformation.md) collection|Get the userAccountInformation resources from the account navigation property.|
-|[Create userAccountInformation](../api/profile-post-accounts.md)|[userAccountInformation](../resources/useraccountinformation.md)|Create a new userAccountInformation object.|
-|[Get userAccountInformation](../api/useraccountinformation-get.md)|[userAccountInformation](../resources/useraccountinformation.md)|Read the properties and relationships of a [userAccountInformation](../resources/useraccountinformation.md) object.|
-|[Update userAccountInformation](../api/useraccountinformation-update.md)|[userAccountInformation](../resources/useraccountinformation.md)|Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object.|
-|[Delete userAccountInformation](../api/useraccountinformation-delete.md)|None|Deletes a [userAccountInformation](../resources/useraccountinformation.md) object.|
+|[List](../api/profile-list-accounts.md)|[userAccountInformation](../resources/useraccountinformation.md) collection|Get the userAccountInformation resources from the account navigation property.|
+|[Create](../api/profile-post-accounts.md)|[userAccountInformation](../resources/useraccountinformation.md)|Create a new userAccountInformation object.|
+|[Get](../api/useraccountinformation-get.md)|[userAccountInformation](../resources/useraccountinformation.md)|Read the properties and relationships of a [userAccountInformation](../resources/useraccountinformation.md) object.|
+|[Update](../api/useraccountinformation-update.md)|[userAccountInformation](../resources/useraccountinformation.md)|Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object.|
+|[Delete](../api/useraccountinformation-delete.md)|None|Deletes a [userAccountInformation](../resources/useraccountinformation.md) object.|
 
 ## Properties
 
@@ -48,7 +48,7 @@ Inherits from [itemFacet](itemfacet.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

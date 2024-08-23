@@ -111,6 +111,7 @@ $params = @{
 	notes = "Notes value"
 	ethernetMacAddress = "Ethernet Mac Address value"
 	physicalMemoryInBytes = 5
+	enrollmentProfileName = "Enrollment Profile Name value"
 }
 
 New-MgDeviceManagementManagedDevice -BodyParameter $params

@@ -2,18 +2,18 @@
 title: "configManagerCollection resource type"
 description: "A ConfigManager defined collection of devices or users."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # configManagerCollection resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 A ConfigManager defined collection of devices or users.
 
@@ -25,7 +25,7 @@ A ConfigManager defined collection of devices or users.
 |[Create configManagerCollection](../api/intune-partnerintegration-configmanagercollection-create.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Create a new [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) object.|
 |[Delete configManagerCollection](../api/intune-partnerintegration-configmanagercollection-delete.md)|None|Deletes a [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md).|
 |[Update configManagerCollection](../api/intune-partnerintegration-configmanagercollection-update.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md)|Update the properties of a [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) object.|
-|[getPolicySummary function](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)|Not yet documented|
+|[getPolicySummary function](../api/intune-partnerintegration-configmanagercollection-getpolicysummary.md)|[configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md)||
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "Configure an application access policy using the cloud communications AP
 description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access cloud communications resources."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Configure application access to online meetings or virtual events
@@ -28,13 +28,13 @@ The following table compares application access policy for online meeting and vi
 
 - _Policy_1_ contains one app ID (_app_1_)
 - _Policy_2_ contains one app ID (_app_2_)
-- _Policy_3_) contains both app IDs (_app_1_ and _app_2_)
+- _Policy_3_ contains both app IDs (_app_1_ and _app_2_)
 
 | Scenario | Online meeting | Virtual event |
 |----------|----------------|---------------|
 | _policy_1_ is assigned to _user_1_, _policy_2_ is assigned to _user_2_ | _app_1_ can only access online meetings as _user_1_<br>_app_2_ can only access online meetings as _user_2_ | _app_1_ can only access virtual events created by _user_1_<br>_app_2_ can only access virtual events created by _user_2_ |
 | _policy_1_ is assigned to _user_1_ and _user_2_ | _app_1_ can access online meetings as _user_1_<br>_app_1_ can access online meetings as _user_2_ | _app_1_ can access virtual events created by _user_1_<br>_app_1_ can access virtual events created by _user_2_ |
-| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ can access online meeting as _user_1_ and _user_2_<br>No app can access online meeting as _user_2_ | _app_1_ can access virtual events created by _user_1_ and _user_2_<br>No app can access virtual events created by _user_2_ |
+| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ and _app_2_ can access online meeting as _user_1_<br>No app can access online meeting as _user_2_ | _app_1_ and _app_2_ can access virtual events created by _user_1_<br>No app can access virtual events created by _user_2_ |
 | _policy_3_ is assigned to the whole tenant | Both _app_1_ and _app_2_ can access online meetings as either _user_1_ or _user_2_ |  Both _app_1_ and _app_2_ can access virtual events created by either _user_1_ or _user_2_ |
 
 ## Configure application access policy
@@ -64,7 +64,7 @@ To configure an application access policy and allow applications to access onlin
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "748d2cbb-3b55-40ed-8c34-2eae5932b22a"
    ```
 
-5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
+5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [Related content](#related-content) section.
 
    Run the following cmdlet, replacing the **PolicyName** argument.
 
@@ -110,7 +110,7 @@ If you attempt an API call to access an online meeting or virtual event without 
 
 Follow the steps in this article to create and/or grant an application access policy that contains the app ID to the user ID.
 
-## See also
+## Related content
 
 - [Permissions reference](permissions-reference.md)
 - [New-CsApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)

@@ -3,7 +3,7 @@ title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -22,24 +22,22 @@ The maximum and default page size is 1,000 objects and by default, the most rece
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All and Directory.Read.All  |
+[!INCLUDE [permissions-table](../includes/permissions/signin-list-permissions.md)]
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
+In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
 + Global Reader
 + Reports Reader
 + Security Administrator
 + Security Operator
 + Security Reader
+
+### Viewing applied conditional access (CA) policies in sign-ins
 
 [!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
@@ -54,18 +52,25 @@ GET /auditLogs/signIns
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.
 
 ## Examples
 
-### Example 1: List all sign-ins
+### Example 1: List all sign-ins during a specific time period
 
 #### Request
 
-Here's an example of the request.
-
+The following example shows a request to list all sign-ins during a specific time period.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,7 +78,7 @@ Here's an example of the request.
   "name": "list_signins"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z
 ```
 
 # [C#](#tab/csharp)
@@ -112,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -131,7 +136,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:35Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
@@ -198,7 +203,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -223,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-signins-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -246,7 +251,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### Response
 
-Here's an example of the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
+The following example shows the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -265,7 +270,7 @@ Content-type: application/json
     "value": [
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "createdDateTime": "2023-12-01T16:03:32Z",
             "userDisplayName": "Test Contoso",
             "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",

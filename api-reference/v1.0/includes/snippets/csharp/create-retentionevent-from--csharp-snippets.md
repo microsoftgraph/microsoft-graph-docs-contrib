@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models.Security;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Microsoft.Graph.Models.Security.RetentionEvent
+var requestBody = new RetentionEvent
 {
 	OdataType = "#microsoft.graph.security.retentionEvent",
 	DisplayName = "String",
@@ -19,10 +21,12 @@ var requestBody = new Microsoft.Graph.Models.Security.RetentionEvent
 		{
 			"eventQuery" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					OdataType = "microsoft.graph.security.eventQuery",
-				},
+					{
+						"@odata.type", new UntypedString("microsoft.graph.security.eventQuery")
+					},
+				}),
 			}
 		},
 		{
@@ -30,6 +34,8 @@ var requestBody = new Microsoft.Graph.Models.Security.RetentionEvent
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Triggers.RetentionEvents.PostAsync(requestBody);
 
 

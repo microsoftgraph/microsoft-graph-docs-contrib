@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.deviceManagement().managedDevices("{managedDeviceId}")
-	.resizeCloudPc(ManagedDeviceResizeCloudPcParameterSet
-		.newBuilder()
-		.withTargetServicePlanId(targetServicePlanId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.devicemanagement.manageddevices.item.resizecloudpc.ResizeCloudPcPostRequestBody resizeCloudPcPostRequestBody = new com.microsoft.graph.beta.devicemanagement.manageddevices.item.resizecloudpc.ResizeCloudPcPostRequestBody();
+resizeCloudPcPostRequestBody.setTargetServicePlanId("30d0e128-de93-41dc-89ec-33d84bb662a0");
+graphClient.deviceManagement().managedDevices().byManagedDeviceId("{managedDevice-id}").resizeCloudPc().post(resizeCloudPcPostRequestBody);
+
 
 ```

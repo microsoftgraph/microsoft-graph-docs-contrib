@@ -3,7 +3,7 @@ title: "todoTask resource type"
 description: "A todoTask resource tracks a work item."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -61,7 +61,7 @@ This resource supports the following:
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

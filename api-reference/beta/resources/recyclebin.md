@@ -3,8 +3,8 @@ author: "vanshisingh"
 title: "recycleBin resource type"
 description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: resourcePageType
+ms.subservice: "sharepoint"
 ---
 
 # recycleBin resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a list of [recycleBinItems](recyclebinitem.md).
+Represents a container for a collection of [recycleBinItem](recyclebinitem.md) resources in a SharePoint [site](site.md).
 
 Inherits from [baseItem](baseitem.md).
 
@@ -31,7 +31,7 @@ Inherits from [baseItem](baseitem.md).
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

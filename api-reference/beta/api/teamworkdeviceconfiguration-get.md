@@ -3,7 +3,7 @@ title: "Get teamworkDeviceConfiguration"
 description: "Get the configuration details of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the [configuration](../resources/teamworkdeviceconfiguration.md) details of 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "teamworkdeviceconfiguration_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamworkdeviceconfiguration-get-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ This operation supports the `$select` and `$expand` [OData query parameters](/gr
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -56,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

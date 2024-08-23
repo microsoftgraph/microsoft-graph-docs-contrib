@@ -3,7 +3,7 @@ title: "workbookSortField resource type"
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "ruoyingl"
 ---
 
@@ -18,7 +18,7 @@ Represents a condition in a sorting operation.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ascending|boolean|Represents whether the sorting is done in an ascending fashion.|
+|ascending|Boolean|Represents whether the sorting is done in an ascending fashion.|
 |color|string|Represents the color that is the target of the condition if the sorting is on font or cell color.|
 |dataOption|string|Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.|
 |icon|[workbookIcon](workbookicon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
@@ -27,7 +27,7 @@ Represents a condition in a sorting operation.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

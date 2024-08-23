@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AndroidManagedAppProtection;
+use Microsoft\Graph\Generated\Models\ManagedAppDataTransferLevel;
+use Microsoft\Graph\Generated\Models\ManagedAppClipboardSharingLevel;
+use Microsoft\Graph\Generated\Models\ManagedAppPinCharacterSet;
+use Microsoft\Graph\Generated\Models\ManagedAppDataStorageLocation;
+use Microsoft\Graph\Generated\Models\ManagedBrowserType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AndroidManagedAppProtection();

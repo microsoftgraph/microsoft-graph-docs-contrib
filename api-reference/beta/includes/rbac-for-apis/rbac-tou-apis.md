@@ -3,4 +3,5 @@ author: AlexFilipin
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must be assigned at least the *Security Administrator* or *Conditional Access Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios with work or school accounts, the signed-in user must be an owner or member of the group or be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Security Administrator* and *Conditional Access Administrator* are the least privileged roles supported for this operation.
+

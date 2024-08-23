@@ -3,7 +3,7 @@ title: "impactedResource: postpone"
 description: "Postpone action on an impactedResource object to a specified future date and time."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Postpone action on an [impactedResource](../resources/impactedresource.md) objec
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DirectoryRecommendations.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "impactedresource_postpone" } -->
+[!INCLUDE [permissions-table](../includes/permissions/impactedresource-postpone-permissions.md)]
 
 [!INCLUDE [rbac-directory-recommendations-apis-write](../includes/rbac-for-apis/rbac-directory-recommendations-apis-write.md)]
 
@@ -40,7 +37,7 @@ POST /directory/recommendations/{recommendationId}/impactedResources/{impactedRe
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -61,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [impactedResou
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

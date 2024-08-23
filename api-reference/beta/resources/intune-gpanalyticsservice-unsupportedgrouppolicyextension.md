@@ -2,18 +2,18 @@
 title: "unsupportedGroupPolicyExtension resource type"
 description: "Unsupported Group Policy Extension."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # unsupportedGroupPolicyExtension resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Unsupported Group Policy Extension.
 
@@ -29,7 +29,7 @@ Unsupported Group Policy Extension.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Setting Scope of the unsupported extension. Possible values are: `unknown`, `device`, `user`.|
 |namespaceUrl|String|Namespace Url of the unsupported extension.|
 |extensionType|String|ExtensionType of the unsupported extension.|

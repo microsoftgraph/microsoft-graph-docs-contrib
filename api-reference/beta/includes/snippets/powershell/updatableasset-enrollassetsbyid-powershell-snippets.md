@@ -10,10 +10,10 @@ $params = @{
 	updateCategory = "feature"
 	memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
 	ids = @(
-		"String"
-		"String"
-		"String"
-	)
+	"String"
+"String"
+"String"
+)
 }
 
 Invoke-MgBetaEnrollWindowsUpdatesUpdatableAssetById -BodyParameter $params

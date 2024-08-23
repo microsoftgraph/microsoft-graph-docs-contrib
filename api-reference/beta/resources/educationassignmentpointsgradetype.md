@@ -3,7 +3,7 @@ title: "educationAssignmentPointsGradeType resource type"
 description: "Used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -23,9 +23,13 @@ an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property 
 |:---------------|:--------|:----------|
 |maxPoints|Single| Max points possible for this assignment.  |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

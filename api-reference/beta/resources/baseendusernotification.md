@@ -3,7 +3,7 @@ title: "baseEndUserNotification resource type"
 description: "Represents details about an end user notification."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Base type of [positiveReinforcementNotification](../resources/positivereinforcem
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

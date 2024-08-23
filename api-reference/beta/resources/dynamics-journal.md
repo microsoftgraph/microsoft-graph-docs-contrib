@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -22,8 +22,8 @@ Represents a journal in Dynamics 365 Business Central.
 | Method                                            |Return Type|Description    |
 |:--------------------------------------------------|:----------|:--------------|
 |[Get journal](../api/dynamics-journal-get.md)      |journal    |Gets a journal.   |
-|[Post journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
-|[Patch journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
+|[Create journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
+|[Update journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
 |[Delete journal](../api/dynamics-journal-delete.md)|none       |Deletes a journal.|
 
 ## Properties
@@ -44,7 +44,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

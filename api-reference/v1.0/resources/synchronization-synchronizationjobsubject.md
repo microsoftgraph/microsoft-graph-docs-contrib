@@ -3,7 +3,7 @@ title: "synchronizationJobSubject resource type"
 description: "Represents the objects that will be provisioned during on-demand provisioning."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Represents the objects that will be provisioned during on-demand provisioning.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronizationJobSubject"

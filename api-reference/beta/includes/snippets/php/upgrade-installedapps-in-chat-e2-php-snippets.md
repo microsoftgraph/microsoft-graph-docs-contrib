@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Chats\Item\InstalledApps\Item\Upgrade\UpgradePostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\TeamsAppPermissionSet;
+use Microsoft\Graph\Beta\Generated\Models\TeamsAppResourceSpecificPermission;
+use Microsoft\Graph\Beta\Generated\Models\TeamsAppResourceSpecificPermissionType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpgradePostRequestBody();

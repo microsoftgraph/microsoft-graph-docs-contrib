@@ -3,7 +3,7 @@ title: "Get passwordAuthenticationMethod"
 description: "Retrieve the properties and relationships of passwordauthenticationmethod object."
 ms.localizationpriority: medium
 author: "zhvolosh"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [password authentication method](../resources/passwordauthenticationmethod.md) object. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions acting on self
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ### Permissions acting on other users
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
@@ -42,17 +42,18 @@ One of the following permissions is required to call this API. To learn more, in
 Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
+The ID of the password authentication method, referenced by `{passwordMethods-id}`, is always `28c10230-6103-485e-b985-444c60001490`.
 
 Get details of your own password authentication method.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/authentication/passwordMethods/{id}
+GET /me/authentication/passwordMethods/{passwordMethods-id}
 ```
 
 Get details of your own or another user's password authentication method.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/passwordMethods/{passwordMethods-id}
 ```
 
 ## Optional query parameters
@@ -63,7 +64,7 @@ This method does not support optional query parameters to customize the response
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

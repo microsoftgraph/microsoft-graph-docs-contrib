@@ -3,7 +3,7 @@ title: "List learningCourseActivities"
 description: "Get a list of the learningCourseActivity objects (assigned or self-initiated) for a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get a list of the [learningCourseActivity](../resources/learningcourseactivity.m
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                           |
-|:---------------------------------------|:----------------------------------------------------------------------|
-| Delegated (work or school account)     | LearningAssignedCourse.Read.All, LearningSelfInitiatedCourse.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                                        |
-| Application                            | Not supported.                                                        |
+<!-- { "blockType": "permissions", "name": "learningcourseactivity_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/learningcourseactivity-list-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +33,7 @@ To retrieve the course activity list for a signed-in user:
 }
 -->
 ``` http
-GET me/employeeExperience/learningCourseActivities
+GET /me/employeeExperience/learningCourseActivities
 ```
 
 To retrieve the course activity list for a user:
@@ -46,7 +43,7 @@ To retrieve the course activity list for a user:
 }
 -->
 ``` http
-GET users/{user-id}/employeeExperience/learningCourseActivities
+GET /users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
 ## Optional query parameters
@@ -57,7 +54,7 @@ This method supports the `$skip`, `$top`, `$count`, and `$select` OData query pa
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request to retrieve all the course activities for a given user.
+The following example shows how to retrieve all the course activities for a given user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,8 +120,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.learningCourseActivity",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.learningCourseActivity)"
 }
 -->
 

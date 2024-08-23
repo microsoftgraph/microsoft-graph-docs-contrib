@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Organization organization = new Organization();
-organization.mobileDeviceManagementAuthority = MdmAuthority.INTUNE;
+organization.setOdataType("#microsoft.graph.organization");
+organization.setMobileDeviceManagementAuthority(MdmAuthority.Intune);
+Organization result = graphClient.organization().byOrganizationId("{organization-id}").patch(organization);
 
-graphClient.organization("{organizationId}")
-	.buildRequest()
-	.patch(organization);
 
 ```

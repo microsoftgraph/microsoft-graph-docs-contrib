@@ -3,7 +3,7 @@ title: "externalGroup resource type"
 description: "Represents a non-Microsoft Entra group."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -21,10 +21,10 @@ Examples of external groups are business units and work teams.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
-|[Get externalGroup](../api/externalconnectors-externalgroup-get.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Get an **externalGroup** object.|
-|[Update externalGroup](../api/externalconnectors-externalgroup-update.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Update the properties of an **externalGroup** object.|
-|[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
+|[Create](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
+|[Get](../api/externalconnectors-externalgroup-get.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Get an **externalGroup** object.|
+|[Update](../api/externalconnectors-externalgroup-update.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Update the properties of an **externalGroup** object.|
+|[Delete](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
 
 ## Properties
 
@@ -41,7 +41,7 @@ Examples of external groups are business units and work teams.
 | members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Microsoft Entra users, Microsoft Entra groups, or an **externalGroup** as members. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

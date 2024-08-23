@@ -3,7 +3,8 @@ title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -19,20 +20,22 @@ Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <a name='for-directory-azure-ad-provider'></a>
 
 ### For Directory (Microsoft Entra ID) provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Directory   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.ReadWrite.Directory |
 
-### For Entitlement management provider
+[!INCLUDE [rbac-role-assignment-apis-write](../includes/rbac-for-apis/rbac-role-assignment-apis-write.md)]
 
+### For Entitlement management provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
@@ -40,19 +43,18 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | Not supported. |
 
 ### For an Exchange Online provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | RoleManagement.ReadWrite.Exchange |
 
 ## HTTP request
 
 Remove a role assignment from a directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
@@ -60,7 +62,6 @@ DELETE /roleManagement/directory/roleAssignments/{id}
 Remove a role assignment from the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
@@ -68,7 +69,6 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 Remove a role assignment from the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/exchange/roleAssignments/{id}
 ```
@@ -78,7 +78,7 @@ DELETE /roleManagement/exchange/roleAssignments/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -194,7 +194,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-exchange-unifiedroleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsidentitygovernance.NewCustomTaskExtension()
 displayName := "Grant manager access to mailbox and OneDrive"
@@ -44,6 +44,7 @@ timeoutDuration , err := abstractions.ParseISODuration("PT20M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 customTaskExtensions, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().ByCustomTaskExtensionId("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
 
 

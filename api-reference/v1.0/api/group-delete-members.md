@@ -2,8 +2,9 @@
 title: "Remove member"
 description: "Remove a member from a group via the members navigation property."
 ms.localizationpriority: high
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -17,16 +18,25 @@ Remove a member from a group via the **members** navigation property. You can't 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                             |
-| :------------------------------------- | :---------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                          |
-| Application                            | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_delete_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-delete-members-permissions.md)]
 
-> [!IMPORTANT]
-> To remove members from a role-assignable group, the calling user must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following least privileged roles are supported for this operation, except for role-assignable groups:
+
+- Group owners
+- Directory Writers
+- Groups Administrator
+- Identity Governance Administrator
+- User Administrator
+- Exchange Administrator - for Microsoft 365 groups only
+- SharePoint Administrator - for Microsoft 365 groups only
+- Teams Administrator - for Microsoft 365 groups only
+- Yammer Administrator - for Microsoft 365 groups only
+- Intune Administrator - for security groups only
+
+To remove members from a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
 ## HTTP request
 
@@ -42,7 +52,7 @@ DELETE /groups/{id}/members/{id}/$ref
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -119,7 +129,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)

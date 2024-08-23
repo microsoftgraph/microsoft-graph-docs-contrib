@@ -1,8 +1,8 @@
 ---
 title: "office365ActiveUserCounts resource type"
-description: "The following is a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---
@@ -26,9 +26,13 @@ Namespace: microsoft.graph
 | reportDate        | Date   | The date on which a number of users were active. |
 | reportPeriod      | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

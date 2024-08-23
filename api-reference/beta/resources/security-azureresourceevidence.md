@@ -3,7 +3,7 @@ title: "azureResourceEvidence resource type"
 description: "Represents an Azure resource such as a VM, Storage, or KeyVault."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -37,10 +37,11 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.azureResourceEvidence"
+  "@odata.type": "microsoft.graph.security.azureResourceEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

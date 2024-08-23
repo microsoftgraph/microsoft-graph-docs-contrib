@@ -18,9 +18,19 @@ The component retrieves the first level terms that are present under a specified
 
 The following example shows the use of the `mgt-taxonomy-picker` component to select a term from a term set.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker--taxonomy-picker&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker--taxonomy-picker&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker-html--taxonomy-picker&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker-react--taxonomy-picker&source=docs).
+
+---
 
 ## Properties and attributes
 
@@ -124,7 +134,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `mgt-taxonomy-picker` component supports several [templates](../customize-components/templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `mgt-taxonomy-picker` component supports several [templates](../customize-components/templates.md) that you can use to define the look and feel. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values.
 
 | Data type | Data context                    | Description                                                         |
 | --------- | ------------------------------- | ------------------------------------------------------------------- |
@@ -152,11 +162,14 @@ The `mgt-taxonomy-picker` component supports several [templates](../customize-co
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed.
 
-| Configuration | Permission         | API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| default       | TermStore.Read.All | [/termStore/sets/{setId}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/termStore/sets/{setId}/terms/{termId}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/sites/{site-id}/termStore/sets/{set-id}/children](/graph/api/termstore-term-list-children?tabs=http#http-request)<br> [/sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](/graph/api/termstore-term-list-children?tabs=http#http-request) |
+| Configuration     | Permission         | API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| default           | TermStore.Read.All, TermStore.ReadWrite.All | [/termStore/sets/{setId}/children](/graph/api/termstore-term-list-children?view=graph-rest-beta&preserve-view=true) |
+| default           | TermStore.Read.All, TermStore.ReadWrite.All | [/termStore/sets/{setId}/terms/{termId}/children](/graph/api/termstore-term-list-children?view=graph-rest-beta&preserve-view=true)|
+| `site-id` is set  | TermStore.Read.All, TermStore.ReadWrite.All | [/sites/{site-id}/termStore/sets/{set-id}/children](/graph/api/termstore-term-list-children) |
+| `site-id` is set  | TermStore.Read.All, TermStore.ReadWrite.All | [/sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](/graph/api/termstore-term-list-children) |
 
 For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
@@ -181,3 +194,7 @@ The control exposes the following variables that can be localized. For details a
 | String name         | Default value   |
 | ------------------- | --------------- |
 | comboboxPlaceholder | `Select a term` |
+| loadingMessage | `Loading...` |
+| noTermsFound | `No terms found` |
+| termsetIdRequired   | `The termsetId property or termset-id attribute is required` |
+

@@ -3,7 +3,7 @@ title: "onPremisesPublishing resource type"
 description: "Represents an Application Proxy onPremisesPublishing object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -46,9 +46,13 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| The associated password credential for the custom domain used. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -66,7 +70,7 @@ Here's a JSON representation of the resource.
   "externalAuthenticationType": "String",
   "externalUrl": "String",
   "internalUrl": "String",
-  "isBackendCertificationValidationEnabled": true,
+  "isBackendCertificateValidationEnabled": true,
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
   "isPersistentCookieEnabled": true,

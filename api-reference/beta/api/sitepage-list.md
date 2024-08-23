@@ -4,7 +4,7 @@ description: "Get the collection of sitePage objects from the site pages [list] 
 ms.date: 03/15/2018
 title: List SitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -24,13 +24,10 @@ Get the collection of [sitePage][] objects from the site pages [list][] in a sit
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "sitepage_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-list-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -73,7 +70,7 @@ If successful, this method returns a `200` and a list of [sitePage](../resources
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/microsoft.graph.sitePage
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/microsoft.graph.sitePage
 ```
 
 # [C#](#tab/csharp)
@@ -130,7 +127,7 @@ Content-type: application/json
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
             "name": "sample.aspx",
-            "webUrl": "SitePages/sample.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/sample.aspx",
             "title": "sample",
             "pageLayout": "article",
             "showComments": true,
@@ -163,7 +160,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG",
+                "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": false,
                 "showPublishedDate": false,
@@ -177,7 +174,7 @@ Content-type: application/json
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
             "name": "Home.aspx",
-            "webUrl": "SitePages/Home.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Home.aspx",
             "title": "Home",
             "pageLayout": "home",
             "showComments": true,
@@ -209,7 +206,7 @@ Content-type: application/json
             },
             "titleArea": {
                 "enableGradientEffect": true,
-                "imageWebUrl": "/siteAssets/titleBackground.jpg",
+                "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
                 "layout": "imageAndTitle",
                 "showAuthor": true,
                 "showPublishedDate": false,

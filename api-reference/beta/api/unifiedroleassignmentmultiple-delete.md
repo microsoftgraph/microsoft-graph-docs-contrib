@@ -3,7 +3,8 @@ title: "Delete unifiedRoleAssignmentMultiple"
 description: "Delete a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -19,27 +20,21 @@ This is applicable for a RBAC application that supports multiple principals and 
 - Cloud PC 
 - device management (Intune)
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For Cloud PC provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-permissions.md)]
 
 ### For Device management (Intune) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-2-permissions.md)]
 
 
 
@@ -63,7 +58,7 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -81,7 +76,7 @@ The following example shows how to delete a [unifiedRoleAssignmentMultiple](../r
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -131,7 +126,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -148,7 +143,7 @@ The following example shows how to delete a [unifiedRoleAssignmentMultiple](../r
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -196,7 +191,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

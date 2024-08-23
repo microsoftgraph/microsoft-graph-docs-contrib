@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\DeviceLink;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\DeviceVendor;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\BandwidthCapacityInMbps;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\BgpConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RedundancyConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\RedundancyTier;
+use Microsoft\Graph\Beta\Generated\Models\Networkaccess\TunnelConfiguration;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceLink();

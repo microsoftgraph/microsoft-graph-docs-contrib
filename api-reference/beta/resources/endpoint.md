@@ -3,8 +3,9 @@ title: "Endpoint resource type"
 description: "Endpoints represent URLs for resources associated with an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "groups"
-author: "Jordanndahl"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # Endpoint resource type
@@ -39,7 +40,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "accessReviewNotificationRecipientQueryScope resource type"
 description: "Specifies a static list of recipients (for example, specific users, group owners, or group members) to receive access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

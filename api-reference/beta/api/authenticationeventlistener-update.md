@@ -3,7 +3,7 @@ title: "Update authenticationEventListener"
 description: "Update the properties of an authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "authenticationeventlistener_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationeventlistener-update-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ PATCH /identity/authenticationEventListeners/{authenticationEventListenerId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,6 +52,8 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartListener** listener type.|
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onUserCreateStartListener** listener type.|
+|handler|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartListener** listener type.|
+|handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitListener** listener type.|
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
@@ -64,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to update an authentication event listener's trigger conditions or priority:
+The following example shows a request to update an authentication event listener's trigger conditions or priority:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

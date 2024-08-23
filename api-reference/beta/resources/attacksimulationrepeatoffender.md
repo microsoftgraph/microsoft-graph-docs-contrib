@@ -3,7 +3,7 @@ title: "attackSimulationRepeatOffender resource type"
 description: "Represents a user in a tenant who has given way to attacks more than once across various attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents a user in a tenant who has given way to attacks more than once across
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.attackSimulationRepeatOffender"

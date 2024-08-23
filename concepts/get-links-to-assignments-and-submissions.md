@@ -3,7 +3,7 @@ title: "Get links to assignments and submissions"
 description: "Use Microsoft Graph APIs to get deep links to assignments for use in custom tools."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

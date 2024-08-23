@@ -3,7 +3,7 @@ title: Update printershare
 description: Update the properties of printer share. This method can be used to "swap" printers.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -17,15 +17,10 @@ For example, if a physical printer device breaks, an administrator can register 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "printershare_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printershare-update-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +35,7 @@ PATCH /print/shares/{printerShareId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -53,6 +48,9 @@ Following properties can be updated:
 |printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
 |displayName|String|The name of the printer share that print clients should display.|
 |allowAllUsers|Boolean|	If true, all users and groups are granted access to this printer share. This supersedes the allowlists defined by the allowedUsers and allowedGroups navigation properties.|
+
+> [!NOTE]
+> If you're updating the **printer** property, other properties can't be updated in the same request.
 
 ## Response
 

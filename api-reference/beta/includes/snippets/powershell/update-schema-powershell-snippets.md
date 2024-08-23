@@ -15,22 +15,22 @@ $params = @{
 			isSearchable = "true"
 			isRetrievable = "true"
 			labels = @(
-				"title"
-			)
-		}
-		@{
-			name = "priority"
-			type = "string"
-			isQueryable = "true"
-			isRetrievable = "true"
-			isSearchable = "false"
-		}
-		@{
-			name = "assignee"
-			type = "string"
-			isRetrievable = "true"
-		}
-	)
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "string"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "string"
+		isRetrievable = "true"
+	}
+)
 }
 
 Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params

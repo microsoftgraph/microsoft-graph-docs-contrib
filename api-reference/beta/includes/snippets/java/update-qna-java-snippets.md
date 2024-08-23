@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Qna qna = new Qna();
-qna.description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.search().qnas("{qnaId}")
-	.buildRequest()
-	.patch(qna);
+com.microsoft.graph.beta.models.search.Qna qna = new com.microsoft.graph.beta.models.search.Qna();
+qna.setDescription("The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend.");
+com.microsoft.graph.models.search.Qna result = graphClient.search().qnas().byQnaId("{qna-id}").patch(qna);
+
 
 ```

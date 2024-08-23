@@ -4,21 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String id = "id-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String groupId = "groupId-value";
+com.microsoft.graph.beta.users.item.onenote.pages.item.copytosection.CopyToSectionPostRequestBody copyToSectionPostRequestBody = new com.microsoft.graph.beta.users.item.onenote.pages.item.copytosection.CopyToSectionPostRequestBody();
+copyToSectionPostRequestBody.setId("id-value");
+copyToSectionPostRequestBody.setGroupId("groupId-value");
+var result = graphClient.me().onenote().pages().byOnenotePageId("{onenotePage-id}").copyToSection().post(copyToSectionPostRequestBody);
 
-graphClient.me().onenote().pages("{id}")
-	.copyToSection(OnenotePageCopyToSectionParameterSet
-		.newBuilder()
-		.withId(id)
-		.withGroupId(groupId)
-		.withSiteCollectionId(null)
-		.withSiteId(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

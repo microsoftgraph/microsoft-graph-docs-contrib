@@ -3,7 +3,7 @@ title: "samlOrWsFedProvider resource type"
 description: "Configuration details for setting up a SAML or WS-Fed based identity provider."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "forwardingRule resource type"
 description: "A forwarding rule is utilized to selectively forward traffic to the Global Secure Access services based on specific requirements or preferences."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

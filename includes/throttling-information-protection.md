@@ -1,7 +1,7 @@
 ---
 author: "hafen-ms"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.susbervice: security
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

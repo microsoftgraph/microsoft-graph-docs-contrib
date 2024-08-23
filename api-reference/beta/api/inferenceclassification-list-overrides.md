@@ -4,7 +4,7 @@ description: "Get the Focused Inbox overrides that a user has set up to always c
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # List overrides
@@ -20,13 +20,10 @@ Each override corresponds to an SMTP address of a sender. Initially, a user does
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+<!-- { "blockType": "permissions", "name": "inferenceclassification_list_overrides" } -->
+[!INCLUDE [permissions-table](../includes/permissions/inferenceclassification-list-overrides-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +35,7 @@ GET /users/{id}/inferenceClassification/overrides
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -48,7 +45,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,7 +108,7 @@ Content-type: application/json
       "classifyAs": "focused",
       "senderEmailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@adatum.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },
@@ -119,7 +116,7 @@ Content-type: application/json
       "classifyAs": "other",
       "senderEmailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@adatum.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
     }

@@ -3,7 +3,7 @@ title: "Write data to an Excel workbook"
 description: "Use the Excel REST API in Microsoft Graph to write simple data sets to an Excel workbook on three web development frameworks: ASP.NET, Angular, and React."
 ms.localizationpriority: high
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Write data to an Excel workbook
@@ -34,7 +34,7 @@ The POST body looks like this:
 {
   "index": null,
   "values": [
-    ["alex darrow", "adarrow@tenant.onmicrosoft.com"]
+    ["alex darrow", "adarrow@contoso.com"]
   ]
 }
 ```
@@ -164,7 +164,7 @@ onWriteToExcel() {
 }
 ```
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

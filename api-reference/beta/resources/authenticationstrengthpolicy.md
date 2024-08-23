@@ -2,8 +2,9 @@
 title: "authenticationStrengthPolicy resource type"
 description: "A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Microsoft Entra Conditional Access, defines which authentication methods must be used to authenticate in that scenario."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -20,16 +21,13 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authenticationStrengthPolicies](../api/authenticationstrengthroot-list-policies.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties.|
-|[Create authenticationStrengthPolicy](../api/authenticationstrengthroot-post-policies.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Create a new custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.|
-|[Get authenticationStrengthPolicy](../api/authenticationstrengthpolicy-get.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Read the properties and relationships of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.|
-|[Update authenticationStrengthPolicy](../api/authenticationstrengthpolicy-update.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Update the properties of a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't update a built-in **authenticationStrengthPolicy** object. |
-|[Delete authenticationStrengthPolicy](../api/authenticationstrengthroot-delete-policies.md)|None|Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't delete a built-in **authenticationStrengthPolicy** object.|
-|[findByMethodMode](../api/authenticationstrengthpolicy-findbymethodmode.md) (deprecated)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Find an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) by allowed mode.|
+|[List](../api/authenticationstrengthroot-list-policies.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties.|
+|[Create](../api/authenticationstrengthroot-post-policies.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Create a new custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.|
+|[Get](../api/authenticationstrengthpolicy-get.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Read the properties and relationships of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.|
+|[Update](../api/authenticationstrengthpolicy-update.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Update the properties of a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't update a built-in **authenticationStrengthPolicy** object. |
+|[Delete](../api/authenticationstrengthroot-delete-policies.md)|None|Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't delete a built-in **authenticationStrengthPolicy** object.|
 |[List usage](../api/authenticationstrengthpolicy-usage.md)|[authenticationStrengthUsage](../resources/authenticationstrengthusage.md)|Find all [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) that reference an authentication strength.|
-|[updateAllowedCombinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md) |[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
-|[List combinationConfigurations](../api/authenticationstrengthpolicy-list-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property.|
-|[Create authenticationCombinationConfiguration](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Create a new authenticationCombinationConfiguration object.|
+|[Find by method mode](../api/authenticationstrengthpolicy-findbymethodmode.md) (deprecated)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Find an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) by allowed mode.|
 
 ## Properties
 |Property|Type|Description|
@@ -49,10 +47,9 @@ Inherits from [entity](../resources/entity.md).
 |combinationConfigurations|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationStrengthPolicy",
   "baseType": "microsoft.graph.entity",
   "openType": false

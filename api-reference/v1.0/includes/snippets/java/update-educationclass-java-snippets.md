@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationClass educationClass = new EducationClass();
-educationClass.description = "History - World History 1";
-educationClass.displayName = "World History Level 1";
+educationClass.setDescription("History - World History 1");
+educationClass.setDisplayName("World History Level 1");
+EducationClass result = graphClient.education().classes().byEducationClassId("{educationClass-id}").patch(educationClass);
 
-graphClient.education().classes("{class-id}")
-	.buildRequest()
-	.patch(educationClass);
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.EndBreak;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.EndBreak.EndBreakPostRequestBody
+var requestBody = new EndBreakPostRequestBody
 {
 	Notes = new ItemBody
 	{
@@ -22,6 +24,8 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Schedule.TimeCards.Item.En
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Teams["{team-id}"].Schedule.TimeCards["{timeCard-id}"].EndBreak.PostAsync(requestBody);
 
 

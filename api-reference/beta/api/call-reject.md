@@ -3,7 +3,7 @@ title: "call: reject"
 description: "Enable a bot to reject an incoming call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,22 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.
+Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification contains the **chatInfo** and **meetingInfo** parameters.
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
-This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
+This API doesn't end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                       |
-| Delegated (personal Microsoft account) | Not Supported                       |
-| Application     | None                                                       |
+<!-- { "blockType": "permissions", "name": "call_reject" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-reject-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +38,7 @@ POST /communications/calls/{id}/reject
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required.|
 
 ## Request body
@@ -49,18 +46,21 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden` |
-|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
+|reason|String|The rejection reason. Possible values are `None`, `Busy`, and `Forbidden`. |
+|callbackUri|String|Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. The URI must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
+
 The following examples show how to call this API.
 
 ### Example 1: Reject an incoming call with 'Busy' reason
+
 #### Request
 
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -111,6 +111,7 @@ Content-Length: 24
 ---
 
 ##### Response
+The following examples shows the response.
 
 <!-- {
   "blockType": "response"
@@ -176,7 +177,7 @@ Content-Type: application/json
 
 ##### Request
 
-
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -227,6 +228,8 @@ Content-Length: 24
 ---
 
 ##### Response
+
+The following examples shows the response.
 <!-- {
   "blockType": "response"
 } -->

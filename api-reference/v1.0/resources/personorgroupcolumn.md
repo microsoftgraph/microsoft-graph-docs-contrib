@@ -3,7 +3,7 @@ author: "simonhult"
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 description: "The personOrGroupColumn on a columnDefinition resource indicates that the column's values represent a person or group chosen from the directory."
 doc_type: resourcePageType
 ---
@@ -31,7 +31,7 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 | Property name              | Type    | Description
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.
+| **allowMultipleSelection** | Boolean | Indicates whether multiple values can be selected from the source.
 | **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.
 

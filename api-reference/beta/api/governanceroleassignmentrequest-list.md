@@ -3,8 +3,9 @@ title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # List governanceRoleAssignmentRequests
@@ -20,33 +21,24 @@ Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governa
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Azure resources
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureResources |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-permissions.md)]
 
 <a name='azure-ad'></a>
 
 ### Microsoft Entra ID
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureAD |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-2-permissions.md)]
 
 ### Groups
 
-|Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+<!-- { "blockType": "permissions", "name": "governanceroleassignmentrequest_list_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/governanceroleassignmentrequest-list-3-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +70,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -98,7 +90,7 @@ Administrators query pending role assignment requests for subscription Wingtip T
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

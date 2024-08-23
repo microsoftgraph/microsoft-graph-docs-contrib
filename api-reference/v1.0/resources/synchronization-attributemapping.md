@@ -4,7 +4,7 @@ description: "Defines how values for the given target attribute should flow duri
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # attributeMapping resource type
@@ -27,7 +27,7 @@ Defines how values for the given target attribute should flow during synchroniza
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AuthenticationMethodModeDetail authenticationMethodModeDetail = graphClient.identity().conditionalAccess().authenticationStrength().authenticationMethodModes("windowsHelloForBusiness")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AuthenticationMethodModeDetail result = graphClient.identity().conditionalAccess().authenticationStrength().authenticationMethodModes().byAuthenticationMethodModeDetailId("{authenticationMethodModeDetail-id}").get();
+
 
 ```

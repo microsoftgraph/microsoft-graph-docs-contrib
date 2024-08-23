@@ -2,17 +2,19 @@
 title: "Microsoft Entra authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
-author: "jpettere"
-ms.prod: "identity-and-sign-in"
+ms.custom: has-azure-ad-ps-ref
+author: FaithOmbongi
+ms.reviewer: julija.pettere, intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 09/12/2023
+ms.date: 07/02/2024
 ---
 
 # Microsoft Entra authentication methods API overview
 
 Namespace: microsoft.graph
 
-[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Microsoft Entra ID. Authentication methods in Microsoft Entra ID include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph beta endpoint today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
+[Authentication methods](/entra/identity/authentication/concept-authentication-methods) are the ways that users authenticate in Microsoft Entra ID. Authentication methods in Microsoft Entra ID include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph beta endpoint today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 
 The authentication method APIs are used to manage a user's authentication methods. For example:
 
@@ -24,6 +26,8 @@ The authentication method APIs are used to manage a user's authentication method
 * You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
     * You can update that email, or delete it from the user.
+
+The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
 We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview) (available on the `beta` endpoint only).
 
@@ -46,9 +50,16 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |:---------------------------|:------------|:------------|
 |Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
-|Password | A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password.|
-|Require re-register MFA | Represents a configuration that requires that when user signs in next time, they're requested to set up a new MFA authentication method.| **NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Microsoft Entra admin center, Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
+|Authentication states|Manage a user's sign-in preferences and per-user MFA|See or set the MFA state for a user. See or set the system-preferred multifactor authentication (MFA) setting.|
+
+## Require re-register multifactor authentication
+
+To require users to set up a new multifactor authentication the next time they sign in, call the individual DELETE authentication method operations to delete each of the user's current authentication methods. After the user has no more methods, they're prompted to register the next time they sign in where strong authentication is required.
+
+## Tenant-level authentication method usage
+
+You can monitor tenant-level authentication method registration and usage, including users registered or unregistered for MFA and passwordless authentication, and users registered or unregistered for SSPR by using the [Authentication methods usage report APIs](/graph/api/resources/authenticationmethods-usage-insights-overview).
 
 ## Next steps
 

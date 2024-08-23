@@ -3,7 +3,7 @@ title: "durationDrivenRolloutSettings resource type"
 description: "Represents settings for controlling how to roll out over a specific duration."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.durationDrivenRolloutSettings"

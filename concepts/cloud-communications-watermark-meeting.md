@@ -3,7 +3,7 @@ title: "Manage watermarks for sensitive Teams meetings"
 description: "Use the cloud communications API in Microsoft Graph to manage a watermark for sensitive Microsoft Teams meetings."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Manage watermarks for sensitive Teams meetings

@@ -3,7 +3,7 @@ title: "hostSslCertificatePort resource type"
 description: "Represents the ports of a host where a hostSslCertificate is currently or was previously related."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

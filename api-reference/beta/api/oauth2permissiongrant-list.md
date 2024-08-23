@@ -3,7 +3,7 @@ title: "List oAuth2PermissionGrants (delegated permission grants)"
 description: "Retrieve a list of oauth2PermissionGrant objects, representing delegated permission grants."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -22,13 +22,12 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DelegatedPermissionGrant.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "oauth2permissiongrant_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/oauth2permissiongrant-list-permissions.md)]
+
+[!INCLUDE [rbac-oauth2permissiongrant-apis-read](../includes/rbac-for-apis/rbac-oauth2permissiongrant-apis-read.md)]
 
 ## HTTP request
 
@@ -46,7 +45,7 @@ This method supports the `$filter` (`eq`) [OData query parameter](/graph/query-p
 
 | Name | Description |
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

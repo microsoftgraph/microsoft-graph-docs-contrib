@@ -2,8 +2,8 @@
 title: "List remoteActionAudits"
 description: "List properties and relationships of the remoteActionAudit objects."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ GET /deviceManagement/remoteActionAudits
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 630
+Content-Length: 867
 
 {
   "value": [
@@ -75,7 +77,14 @@ Content-Length: 630
       "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
       "deviceIMEI": "Device IMEI value",
       "actionState": "pending",
-      "managedDeviceId": "Managed Device Id value"
+      "managedDeviceId": "Managed Device Id value",
+      "deviceActionDetails": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair_2OfString_String"
+        }
+      ],
+      "deviceActionCategory": "bulk",
+      "bulkDeviceActionId": "Bulk Device Action Id value"
     }
   ]
 }

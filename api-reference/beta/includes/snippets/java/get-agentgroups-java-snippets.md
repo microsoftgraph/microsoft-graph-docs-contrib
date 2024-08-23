@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-OnPremisesAgentGroupCollectionPage agentGroups = graphClient.onPremisesPublishingProfiles("provisioning").agentGroups()
-	.buildRequest()
-	.expand("agents,publishedResources")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+OnPremisesAgentGroupCollectionResponse result = graphClient.onPremisesPublishingProfiles().byOnPremisesPublishingProfileId("{onPremisesPublishingProfile-id}").agentGroups().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"agents", "publishedResources"};
+});
+
 
 ```

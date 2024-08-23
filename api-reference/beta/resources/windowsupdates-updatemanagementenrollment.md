@@ -3,7 +3,7 @@ title: "updateManagementEnrollment resource type"
 description: "Represents enrollment into management by the service of a certain update category."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableas
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment"

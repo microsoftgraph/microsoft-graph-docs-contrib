@@ -3,7 +3,7 @@ title: "List members of an educationClass"
 description: "Retrieves the teachers and students for a class."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -16,13 +16,10 @@ Retrieves the [educationUser](../resources/educationuser.md) members of an [educ
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                         |
-| :------------------------------------- | :------------------------------------------------------------------ |
-| Delegated (work or school account)     | EduRoster.ReadBasic                                                 |
-| Delegated (personal Microsoft account) | Not supported.                                                      |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
+<!-- { "blockType": "permissions", "name": "educationclass_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationclass-list-members-permissions.md)]
 
 > [!NOTE]
 > Note that if the delegated token is used, members can only see information about their own classes.
@@ -44,7 +41,7 @@ For more information on OData query options, see [OData query parameters](/graph
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -123,7 +120,7 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "userType": "Member",
       "primaryRole": "teacher",
       "onPremisesInfo": {
@@ -137,7 +134,7 @@ Content-type: application/json
       "displayName": "Christie Cline",
       "givenName": "Christie",
       "surname": "Cline",
-      "userPrincipalName": "ChristieC@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "ChristieC@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {
@@ -151,7 +148,7 @@ Content-type: application/json
       "displayName": "Ben Walters",
       "givenName": "Ben",
       "surname": "Walters",
-      "userPrincipalName": "BenW@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "BenW@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {
@@ -165,7 +162,7 @@ Content-type: application/json
       "displayName": "Megan Bowen",
       "givenName": "Megan",
       "surname": "Bowen",
-      "userPrincipalName": "MeganB@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "MeganB@contoso.com",
       "userType": "Member",
       "primaryRole": "teacher",
       "onPremisesInfo": {
@@ -179,7 +176,7 @@ Content-type: application/json
       "displayName": "Allan Deyoung",
       "givenName": "Allan",
       "surname": "Deyoung",
-      "userPrincipalName": "AllanD@M365x214355.onmicrosoft.com",
+      "userPrincipalName": "AllanD@contoso.com",
       "userType": "Member",
       "primaryRole": "student",
       "onPremisesInfo": {

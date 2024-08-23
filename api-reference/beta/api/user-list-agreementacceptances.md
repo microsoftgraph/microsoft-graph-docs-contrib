@@ -3,7 +3,7 @@ title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
 author: "AlexFilipin"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -13,18 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+Retrieve a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AgreementAcceptance.Read, AgreementAcceptance.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "user_list_agreementacceptances" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-agreementacceptances-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +38,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -119,8 +116,8 @@ Content-type: application/json
             "deviceOSVersion": null,
             "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
             "userDisplayName": "Megan Bowen",
-            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
-            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userPrincipalName": "MeganB@Contoso.com",
+            "userEmail": "MeganB@contoso.com",
             "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
             "expirationDateTime": null,
             "state": "accepted"

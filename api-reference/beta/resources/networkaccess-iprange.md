@@ -1,13 +1,13 @@
 ---
-title: "Global Secure Access ipRange resource type"
+title: ipRange resource type
 description: "An IP address range represents either a specific IP address or a range of IP addresses. It is used to define a set of network addresses or a single network endpoint within a specified range."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
-# Global Secure Access ipRange resource type
+# ipRange resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -27,7 +27,7 @@ Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/netwo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.ipRange"

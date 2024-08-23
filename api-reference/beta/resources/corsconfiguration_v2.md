@@ -3,7 +3,7 @@ title: "corsConfiguration_v2 resource type"
 description: "Represents the CORS settings for an on-premises web application segment published via Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -27,10 +27,13 @@ Represents the CORS settings for the [webApplicationSegment](webapplicationsegme
 |maxAgeInSeconds|Integer|The maximum amount of time that a browser should cache the response to the preflight **OPTIONS** request.|
 |resource|String|Resource within the application segment for which CORS permissions are granted. `/` grants permission for the whole app segment.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

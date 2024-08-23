@@ -2,8 +2,8 @@
 title: "mdmAuthority enum type"
 description: "Mobile device management authority."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

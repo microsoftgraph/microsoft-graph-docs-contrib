@@ -3,7 +3,7 @@ title: "emailSettings resource type"
 description: "Defines the settings for emails sent using Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Defines the settings for emails sent from Lifecycle workflow [tasks](identitygov
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.emailSettings"

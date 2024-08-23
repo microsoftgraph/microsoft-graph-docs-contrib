@@ -3,7 +3,7 @@ title: "PublicationFacet resource type"
 description: "The **publicationFacet** resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,8 @@ The **publicationFacet** resource provides details on the published status of a 
 | :------------ | :----- | :---------- |
 | **level**     | String | The state of publication for this document. Either `published` or `checkout`. Read-only.  |
 | **versionId** | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
-| **checkedOutBy**   | microsoft.graph.identitySet | User who has checked out the file.                               |
+| **checkedOutBy**  | microsoft.graph.identitySet | The user who checked out the file.                               |
+
 
 
 <!-- {

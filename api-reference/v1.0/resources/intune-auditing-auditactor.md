@@ -2,8 +2,8 @@
 title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

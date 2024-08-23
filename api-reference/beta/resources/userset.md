@@ -3,7 +3,7 @@ title: "userSet complex type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -27,6 +27,10 @@ Used in the request, approval, and assignment review settings of an [access pack
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | For a user in an approval stage, this property indicates whether the user is a backup fallback approver. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

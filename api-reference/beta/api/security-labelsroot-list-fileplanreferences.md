@@ -3,7 +3,7 @@ title: "List filePlanReferenceTemplates"
 description: "Get a list of the filePlanReferenceTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,13 @@ Namespace: microsoft.graph.security
 
 Get a list of the [filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_labelsroot_list_fileplanreferences" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-labelsroot-list-fileplanreferences-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -53,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,7 +96,7 @@ GET https://graph.microsoft.com/beta/security/labels/filePlanReferences
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -116,11 +113,14 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
       "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
-      "displayName": "String",
+      "displayName": "FIN 01-02-001",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
       },
-      "createdDateTime": "String (timestamp)"
+      "createdDateTime": "2021-03-24T02:09:08Z"
     }
   ]
 }

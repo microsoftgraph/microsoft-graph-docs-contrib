@@ -1,9 +1,9 @@
 ---
-title: "List calendarView"
+title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "iamgirishck"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the occurrences, exceptions, and single instances of events in a calendar vi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "group_list_calendarview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-calendarview-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +52,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 
 | Name                              | Type   | Description                                                                                                                                                                                                                                                                        |
 | :-------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization                     | string | Bearer {token}. Required.                                                                                                                                                                                                                                                          |
+| Authorization                     | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: outlook.timezone          | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional.                                                                                                                                      |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
@@ -117,7 +114,7 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -194,7 +191,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -205,14 +202,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
              ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         },
@@ -273,7 +270,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -284,14 +281,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         }

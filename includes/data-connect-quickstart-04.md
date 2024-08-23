@@ -8,7 +8,7 @@ In this step you will create an Azure Storage account where Microsoft Graph Data
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in using an account with an **[Application developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
+1. Sign in using an account with an **[Application developer](/entra/identity/role-based-access-control/permissions-reference#application-developer)** role to your Azure portal.
 
 1. On the sidebar navigation, select **Create a resource**.
 
@@ -22,14 +22,14 @@ In this step you will create an Azure Storage account where Microsoft Graph Data
     - **Redundancy**: Geo-redundant storage
     - **Advanced tab**:
       - **Access tier**: Hot
-
+    
     ![Screenshot of the Create a storage account page with Subscription, Resource group, Storage account name, and Region highlighted](../concepts/images/data-connect-azure-storageaccount-create.png)
     
 1. After configuring the values for the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
 
     > [!NOTE]
-    >  Ensure that within the **Networking** tab, only the **Enable public access from all networks** is enabled. Other types of network access are supported; however, we're working on removing additional restrictions required for them. For the time being, only select the first option. For questions about additional network access, contact the [Data Connect team](mailto:dataconnect@microsoft.com).
-
+    > Ensure that within the **Networking** tab, the **Enable public access from all networks** is enabled. You can also select the second option **Enable public access from selected virtual networks and IP addresses**; however, additional steps outside of this tutorial need to be performed, which are highlighted in the [IP addresses section](../concepts/data-connect-troubleshooting.md#issues-adding-network-ip-address-to-allow-list-with-azure-integration-runtime).
+    
     ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
 
 1. Review that the settings match those shown in the previous steps and select **Create** to finalize.

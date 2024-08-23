@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonAnnotation personAnnotation = new PersonAnnotation();
-personAnnotation.allowedAudiences = EnumSet.of(AllowedAudiences.ORGANIZATION);
+personAnnotation.setAllowedAudiences(EnumSet.of(AllowedAudiences.Organization));
+PersonAnnotation result = graphClient.users().byUserId("{user-id}").profile().notes().byPersonAnnotationId("{personAnnotation-id}").patch(personAnnotation);
 
-graphClient.users("{userId}").profile().notes("{id}")
-	.buildRequest()
-	.patch(personAnnotation);
 
 ```

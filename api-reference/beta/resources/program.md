@@ -3,7 +3,7 @@ title: "program resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
@@ -15,20 +15,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Microsoft Entra [access reviews](accessreviews-root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs. Each control links an access review to a program, to make it easier to locate related access reviews.  
 
-Each tenant that has on-boarded Microsoft Entra access reviews has one program, `Default program`.  A global administrator can create additional programs, for example to represent compliance initiatives. 
+A tenant that has onboarded Microsoft Entra access reviews has one program, the `Default program`. An authorized administrator can create more programs, for example, to represent compliance initiatives. 
 
 
 ## Methods
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Create program](../api/program-create.md) |    [program](program.md)    |    Create a new program.|
-|[Delete program](../api/program-delete.md) |    None.    |    Delete a program.|
-|[List programs](../api/program-list.md) |    [program](program.md) collection|    Get a collection of all the programs.|
-|[List programControls of a program](../api/program-listcontrols.md) |        [programControl](programcontrol.md) collection|    Get a collection of the controls of a program.|
-|[Update program](../api/program-update.md) |    [program](program.md)|    Update a program.|
+|[Create](../api/program-create.md) |    [program](program.md)    |    Create a new program.|
+|[Delete](../api/program-delete.md) |    None.    |    Delete a program.|
+|[List](../api/program-list.md) |    [program](program.md) collection|    Get a collection of all the programs.|
+|[List controls](../api/program-listcontrols.md) |        [programControl](programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Update](../api/program-update.md) |    [program](program.md)|    Update a program.|
 
 ## Properties
 | Property       | Type    |Description|
@@ -44,7 +44,7 @@ Each tenant that has on-boarded Microsoft Entra access reviews has one program, 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

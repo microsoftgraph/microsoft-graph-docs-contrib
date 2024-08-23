@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MessageCollectionPage messages = graphClient.me().messages()
-	.buildRequest()
-	.filter("subject eq 'let''s meet for lunch?'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MessageCollectionResponse result = graphClient.me().messages().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "subject eq 'let''s meet for lunch?'";
+});
+
 
 ```

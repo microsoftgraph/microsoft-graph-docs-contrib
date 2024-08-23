@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create application
@@ -16,21 +16,17 @@ Namespace: microsoft.graph
 Create a new [application](../resources/application.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
 >
 > Do not share application client IDs (**appId**) in API documentation or code samples.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Application.ReadWrite.All    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "application_post_applications" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-applications-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +37,7 @@ POST /applications
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.|
 
 ## Request body
@@ -52,8 +48,11 @@ In the request body, supply a JSON representation of [application](../resources/
 If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
 ## Examples
-### Request
-Here is an example of the request.
+
+### Example 1: Create an application with the default settings
+
+#### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,8 +102,8 @@ Content-type: application/json
 
 ---
 
-### Response
-Here is an example of the response.
+#### Response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -130,7 +129,7 @@ Content-type: application/json
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "contoso.com",
     "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
@@ -169,8 +168,112 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }, 
+    },
     "windows" : null
+}
+```
+
+### Example 2: Create a new application and add a password secret
+
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_application_with_passwordcredentials"
+}-->
+```http
+POST https://graph.microsoft.com/beta/applications
+Content-type: application/json
+
+{
+  "displayName": "MyAppName",
+  "passwordCredentials": [
+    {
+      "displayName": "Password name"
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-with-passwordcredentials-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-application-with-passwordcredentials-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-application-with-passwordcredentials-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-application-with-passwordcredentials-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-with-passwordcredentials-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-application-with-passwordcredentials-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-application-with-passwordcredentials-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-application-with-passwordcredentials-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The **secretText** property in the response object contains the strong passwords or secret generated by Microsoft Entra ID and is 16-64 characters in length. There is no way to retrieve this password in the future.
+
+> **Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.passwordCredential"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
+    "deletedDateTime": null,
+    "appId": "9519e58c-bd06-4120-a7fd-2220d4de8409",
+    "applicationTemplateId": null,
+    "disabledByMicrosoftStatus": null,
+    "createdDateTime": "2024-04-01T19:10:02.6626202Z",
+    "displayName": "MyAppName",
+    "description": null,
+    "keyCredentials": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+        {
+            "customKeyIdentifier": null,
+            "displayName": "Password name",
+            "endDateTime": "2026-04-01T19:10:02.6576213Z",
+            "hint": "puE",
+            "keyId": "09a0c91a-1bc3-4eaf-a945-c88c041fad6c",
+            "secretText": "1234567890abcdefghijklmnopqrstuvwxyzabcd",
+            "startDateTime": "2024-04-01T19:10:02.6576213Z"
+        }
+    ],
+    "publicClient": {
+        "redirectUris": []
+    }
 }
 ```
 

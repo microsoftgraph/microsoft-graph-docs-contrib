@@ -1,6 +1,7 @@
 {
     "pathsToIgnore": [
         "/adaptive-cards",
+        "/answers",
         "/aspnet",
         "/azure",
         "/compliance",
@@ -12,6 +13,7 @@
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
+        "/entra",
         "/graph",
         "/intune-classic",
         "/legal",
@@ -27,6 +29,7 @@
         "/powershell",
         "/previous-versions",
         "/project-for-the-web",
+        "/purview",
         "/rest",
         "/schooldatasync",
         "/security",
@@ -34,6 +37,7 @@
         "/sharepoint",
         "/training",
         "/troubleshoot",
+        "/viva",
         "/windows",
         "/windows-hardware"
     ]

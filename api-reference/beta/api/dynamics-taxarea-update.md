@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,10 @@ Update the properties of a tax area object for Dynamics 365 Business Central.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "dynamics_taxarea_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/dynamics-taxarea-update-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |------|-----|
-|Authorization |Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type  |application/json|
 |If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **taxAreas**, the **taxAreas** won't be updated. |
 
@@ -54,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an updated **tax
 
 **Request**
 
-Here's an example of the request.
+The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 Content-type: application/json
@@ -67,7 +64,7 @@ Content-type: application/json
 
 **Response**
 
-Here's an example of the response. 
+The following example shows the response. 
 
 > **Note**: The response object shown here might be shortened for readability.
 

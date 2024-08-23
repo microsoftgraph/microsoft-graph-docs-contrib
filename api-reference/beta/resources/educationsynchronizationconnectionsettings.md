@@ -1,17 +1,19 @@
 ---
-title: "educationSynchronizationConnectionSettings resource type"
+title: "educationSynchronizationConnectionSettings resource type (deprecated)"
 description: "Represents the provider connection settings. This allows the system to know how to connect to the provider APIs. "
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationConnectionSettings resource type
+# educationSynchronizationConnectionSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Represents the provider connection settings. This allows the system to know how to connect to the provider APIs.
 
@@ -32,9 +34,13 @@ Represents the provider connection settings. This allows the system to know how 
 | clientId     | String | Client ID used to connect to the provider.                    |
 | clientSecret | String | Client secret to authenticate the connection to the provider. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of this resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

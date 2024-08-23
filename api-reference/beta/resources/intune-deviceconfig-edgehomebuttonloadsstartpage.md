@@ -2,18 +2,18 @@
 title: "edgeHomeButtonLoadsStartPage resource type"
 description: "Show the home button; clicking the home button loads the Start page - this is also the default value."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # edgeHomeButtonLoadsStartPage resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Show the home button; clicking the home button loads the Start page - this is also the default value.
 

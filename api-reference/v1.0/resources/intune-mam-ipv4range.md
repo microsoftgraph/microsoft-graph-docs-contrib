@@ -2,8 +2,8 @@
 title: "iPv4Range resource type"
 description: "IPv4 Range definition."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

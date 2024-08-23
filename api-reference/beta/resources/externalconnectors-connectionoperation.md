@@ -3,7 +3,7 @@ title: "connectionOperation resource type"
 description: "Describes status of an asynchronous request to create a Microsoft Search connection schema."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get connectionOperation](../api/externalconnectors-connectionoperation-get.md) | [connectionOperation](externalconnectors-connectionoperation.md) | Read properties of a connectionOperation object. |
+| [Get operation](../api/externalconnectors-connectionoperation-get.md) | [connectionOperation](externalconnectors-connectionoperation.md) | Read properties of a connectionOperation object. |
 
 ## Properties
 
@@ -35,7 +35,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

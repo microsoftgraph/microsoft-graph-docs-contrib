@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.shift import Shift
+from msgraph_beta.generated.models.shift_item import ShiftItem
+from msgraph_beta.generated.models.schedule_entity_theme import ScheduleEntityTheme
+from msgraph_beta.generated.models.shift_activity import ShiftActivity
 
 graph_client = GraphServiceClient(credentials, scopes)
 

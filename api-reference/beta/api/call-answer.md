@@ -3,7 +3,7 @@ title: "call: answer"
 description: "Answer an incoming call."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,20 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification contains the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
+Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invitation from a participant in a group call or a peer-to-peer call. If an invitation to a group call is received, the notification contains the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
 
 The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds. The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
+
+This API supports the following PSTN scenarios:
+
++ Incoming call to bot's PSTN number and then bot invites another PSTN.
++ Incoming call to bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier and then bot invites another PSTN.
++ Incoming call to bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from bot (with instance identifier) to a PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
++ Bot join the scheduled meeting and then invite PSTN.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-You don't need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                 |
-| :-------------- | :-----------------------------------------------------------|
-| Delegated (work or school account)     | Not supported.                       |
-| Delegated (personal Microsoft account) | Not supported.                       |
-| Application     | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All     |
+<!-- { "blockType": "permissions", "name": "call_answer" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-answer-permissions.md)]
 
 > **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
@@ -41,7 +52,7 @@ POST /communications/calls/{id}/answer
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body
@@ -126,7 +137,7 @@ Content-Length: 211
 ---
 
 #### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"
@@ -372,7 +383,7 @@ Content-Type: application/json
   "name": "call-answer-app-hosted-media"
 }-->
 ```http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+POST https://graph.microsoft.com/beta/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Content-Type: application/json
 
 {

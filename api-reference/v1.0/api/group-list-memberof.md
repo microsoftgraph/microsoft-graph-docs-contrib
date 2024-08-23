@@ -1,9 +1,10 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -19,13 +20,10 @@ This operation is not transitive. Unlike getting a user's Microsoft 365 groups, 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)              |
-| :------------------------------------- | :------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All                     |
-| Delegated (personal Microsoft account) | Not supported.                                           |
-| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "group_list_memberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-memberof-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -45,7 +43,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name             | Description                                                                                                                                                                                                       |
 | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body

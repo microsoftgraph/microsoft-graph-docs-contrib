@@ -3,7 +3,7 @@ title: "httpRequestEndpoint resource type"
 description: "The HTTP endpoint that a custom extension calls."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [customExtensionEndpointConfiguration](../resources/customextensio
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.httpRequestEndpoint"

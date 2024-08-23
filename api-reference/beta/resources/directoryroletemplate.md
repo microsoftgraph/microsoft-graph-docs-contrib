@@ -3,7 +3,8 @@ title: "directoryRoleTemplate resource type"
 description: "Represents a directory role template. A directory role template specifies the property values of a directory role (directoryRole). There's an associated directory role template object for each of the directory roles that may be activated in a tenant."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -20,10 +21,11 @@ Represents a directory role template. A directory role template specifies the pr
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
+|[Get](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
+|[List](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) collection |Retrieve a list of directoryRoleTemplate objects.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |description|String|The description to set for the directory role. Read-only.|
 |displayName|String|The display name to set for the directory role. Read-only. |
@@ -36,7 +38,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

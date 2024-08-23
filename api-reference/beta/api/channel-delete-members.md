@@ -4,7 +4,7 @@ description: "Remove a member from a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Remove member from channel
@@ -19,13 +19,10 @@ Delete a [conversationMember](../resources/conversationmember.md) from a [channe
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChannelMember.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "channel_delete_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-delete-members-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -38,7 +35,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +107,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from team](team-delete-members.md)
 

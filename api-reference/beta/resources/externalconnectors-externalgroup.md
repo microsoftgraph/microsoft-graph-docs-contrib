@@ -3,7 +3,7 @@ title: "externalGroup resource type"
 description: "Represents a non-Microsoft Entra group."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ Examples of external groups are business units and work teams.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

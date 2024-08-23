@@ -3,7 +3,7 @@ title: "List appliesTo"
 description: "List resources assigned to an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -19,15 +19,12 @@ List application and service principal objects assigned an [appManagementPolicy]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged)                                                                  |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                                                                               |
-| Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-list-appliesto-permissions.md)]
 
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -148,7 +145,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request using $select query option.
+The following example shows a request using $select query option.
 
 # [HTTP](#tab/http)
 <!-- {

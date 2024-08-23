@@ -2,8 +2,9 @@
 title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -15,18 +16,15 @@ Namespace: microsoft.graph
 
 Retrieve a count of transitive reports for a user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | User.Read, User.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | User.Read, User.Read.All, Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "user_get_transitivereports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-get-transitivereports-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +39,7 @@ This method supports the `$filter` query parameter for only the **accountEnabled
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required. |
 
 ## Request body
@@ -56,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ### Request
 
-Here's an example of the request. The `$count` query segment is required.
+The following example shows a request. The `$count` query segment is required.
 
 
 # [HTTP](#tab/http)
@@ -104,7 +102,7 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

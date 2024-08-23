@@ -2,8 +2,9 @@
 title: "passwordValidationInformation resource type"
 description: "Exposes the properties that specify whether a user's password is valid when validated against the tenant's password validation policy."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
@@ -26,7 +27,7 @@ Exposes the properties that specify whether a user's password is valid, when val
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.passwordValidationInformation"

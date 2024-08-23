@@ -3,7 +3,7 @@ title: "plannerBucketCreation resource type"
 description: "Contains information about the origin of the plannerBucket."
 author: "DanluCui"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ The resources that derive from plannerBucketCreation contain information about t
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerBucketCreation"

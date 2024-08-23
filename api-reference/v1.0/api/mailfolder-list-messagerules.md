@@ -3,7 +3,7 @@ title: "List rules"
 description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -16,13 +16,10 @@ Get all the [messageRule](../resources/messagerule.md) objects defined for the u
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read    |
-|Application | MailboxSettings.Read |
+<!-- { "blockType": "permissions", "name": "mailfolder_list_messagerules" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-list-messagerules-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,7 +44,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,7 +141,7 @@ Content-type: application/json
           {
             "emailAddress":{
               "name":"Alex Wilbur",
-              "address":"AlexW@contoso.onmicrosoft.com"
+              "address":"AlexW@contoso.com"
             }
           }
         ]

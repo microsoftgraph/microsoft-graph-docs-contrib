@@ -3,7 +3,7 @@ title: "Create externalGroup"
 description: "Create a new externalGroup object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Create a new [externalGroup](../resources/externalconnectors-externalgroup.md) o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "externalconnectors_externalconnection_post_groups" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]
 
 ## HTTP request
 
@@ -42,20 +39,20 @@ POST /external/connections/{connectionId}/groups
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the **externalGroup** object.
 
-You can specify the following properties when creating an **externalGroup**.
+You can specify the following properties when you create an **externalGroup**.
 
-| Property    | Type   | Description                                                                                                              |
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
+| Property    | Type   | Description                                                                                                            |
+|:------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| description | String | The description of the external group. Optional.                                                                       |
+| displayName | String | The friendly name of the external group. Optional.                                                                     |
 | id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | String | The friendly name of the external group. Optional.                                                                      |
-| description | String | The description of the external group. Optional.                                                                         |
 
 ## Response
 
@@ -65,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an **extern
 
 ### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -121,8 +118,8 @@ Content-Type: application/json
 
 <!-- markdownlint-disable MD024 -->
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

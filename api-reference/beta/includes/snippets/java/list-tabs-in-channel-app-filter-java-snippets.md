@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsTabCollectionPage tabs = graphClient.teams("6903fa93-605b-43ef-920e-77c4729f8258").channels("19:33b76eea88574bd1969dca37e2b7a819@thread.skype").tabs()
-	.buildRequest()
-	.filter("teamsApp/id eq 'com.microsoft.teamspace.tab.planner'")
-	.expand("teamsApp")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamsTabCollectionResponse result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").tabs().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"teamsApp"};
+	requestConfiguration.queryParameters.filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'";
+});
+
 
 ```

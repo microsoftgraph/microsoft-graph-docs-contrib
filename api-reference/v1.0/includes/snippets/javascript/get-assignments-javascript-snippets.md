@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let assignments = await client.api('/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments')
+let assignments = await client.api('/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments')
+	.filter('status eq \'assigned\'')
 	.get();
 
 ```

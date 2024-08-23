@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: high
-ms.prod: sharepoint
+ms.subservice: sharepoint
 description: "Return a collection of DriveItems in the children relationship of a DriveItem."
 doc_type: apiPageType
 ---
@@ -20,13 +20,10 @@ DriveItems with a non-null **folder** or **package** facet can have one or more 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_list_children" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-list-children-permissions.md)]
 
 ## HTTP request
 
@@ -44,11 +41,12 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
-### Optional request headers
+## Request headers
 
-| Name     | Value | Description                                                                                                                                              |
-|:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | etag  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| _if-none-match_ | `etag`. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Examples
 
@@ -149,7 +147,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
+GET https://graph.microsoft.com/v1.0/drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
 ## Response

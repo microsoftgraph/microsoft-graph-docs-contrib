@@ -3,7 +3,7 @@ title: "unifiedRoleScheduleBase resource type"
 description: "A template that exposes properties and relationships used in unifiedRoleAssignmentSchedule and unifiedRoleEligibilitySchedule resource types."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -60,7 +60,7 @@ None.
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Detailed information for the roleDefinition object that is referenced through the **roleDefinitionId** property.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

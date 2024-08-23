@@ -3,7 +3,7 @@ title: "informationProtectionContentLabel resource type (deprecated)"
 description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Describes the informationProtectionContentLabel object that defines MIP metadata
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

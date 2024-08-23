@@ -4,7 +4,7 @@ title: "documentSetContent resource type"
 description: "The documentSetContent resource contains metadata about a file present in default content location of a content."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # documentSetContent resource type

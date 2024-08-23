@@ -1,11 +1,12 @@
 ---
-title: Confirm riskyUser compromised
+title: "riskyUser: confirmCompromised"
 description: Confirm a riskyUser object as compromised.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
+
 # riskyUser: confirmCompromised
 
 Namespace: microsoft.graph
@@ -19,13 +20,10 @@ Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromise
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "riskyusers_confirmcompromised" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyusers-confirmcompromised-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
@@ -39,10 +37,10 @@ POST /riskyUsers/confirmCompromised
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Specify the risky user IDs to dismiss in the request body.
+Specify the user IDs to confirm as compromised in the request body.
 
 ## Response
 
@@ -112,7 +110,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Confirm a user as compromised
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -130,7 +128,7 @@ Content-type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

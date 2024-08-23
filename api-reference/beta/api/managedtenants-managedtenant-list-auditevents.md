@@ -3,7 +3,7 @@ title: "List auditEvents"
 description: "Get a list of the auditEvent objects and their properties."
 author: "vkumar2015"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get a list of the [auditEvent](../resources/managedtenants-auditevent.md) object
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ManagedTenant.Read.All, ManagedTenant.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "managedtenants_managedtenant_list_auditevents" } -->
+[!INCLUDE [permissions-table](../includes/permissions/managedtenants-managedtenant-list-auditevents-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -116,7 +113,7 @@ Content-Type: application/json
       "activityDateTime": "2021-12-21T16:48:23.0330765Z",
       "activityId": "64be6675-3cb8-4b14-95f3-6d5ce9eecd79",
       "initiatedByAppId": "00000003-0000-0000-c000-000000000000",
-      "initiatedByUpn": "meganb@contoso.onmicrosoft.com",
+      "initiatedByUpn": "meganb@contoso.com",
       "category": "Baselines",
       "activity": "/managementActionTenantDeploymentStatuses/microsoft.graph.managedTenants.changeDeploymentStatus",
       "httpVerb": "POST",

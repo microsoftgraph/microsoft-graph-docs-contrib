@@ -3,7 +3,7 @@ title: "Update store"
 description: "Update the properties of a store object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Update the properties of a [store](../resources/termstore-store.md) object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "termstore_store_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/termstore-store-update-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ PATCH /termStore
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -48,19 +45,19 @@ The following table shows the properties that can be edited for the [store](../r
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
-|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|defaultLanguageTag|String|Default language of the [store](../resources/termstore-store.md)|
+|languageTags|String collection|Available languages in the [store](../resources/termstore-store.md)|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStore.store](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -107,7 +104,8 @@ Content-Type: application/json
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,6 +137,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-
-

@@ -1,29 +1,29 @@
 ---
-title: "managedDevice: bulkRestoreCloudPc"
+title: "managedDevice: bulkRestoreCloudPc (deprecated)"
 description: "Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkRestoreCloudPc
+# managedDevice: bulkRestoreCloudPc (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource and its supported APIs.
 
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "manageddevice_bulkrestorecloudpc" } -->
+[!INCLUDE [permissions-table](../includes/permissions/manageddevice-bulkrestorecloudpc-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ POST /deviceManagement/managedDevices/bulkRestoreCloudPc
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -68,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a [cloudPcBulkRe
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

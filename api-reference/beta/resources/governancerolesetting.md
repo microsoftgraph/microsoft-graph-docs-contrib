@@ -3,8 +3,9 @@ title: "governanceRoleSetting resource type"
 description: "Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRoleSetting resource type
@@ -19,14 +20,14 @@ Represents a set of configurations on each role definition that needs to be eval
 
 ## Methods
 
-| Method		  | Return Type	|Description|
+| Method          | Return Type    |Description|
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) collection|List a collection of role settings on a resource.|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Read properties and relationships of a role setting.|
-|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)	|Update a role setting object. |
+|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)    |Update a role setting object. |
 
 ## Properties
-|Property	            |Type	                                   |Description|
+|Property                |Type                                       |Description|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |String                                  |The id of the roleSetting.|
 |resourceId           |String                                  |Required. The id of the resource that the role setting is associated with.|
@@ -40,14 +41,14 @@ Represents a set of configurations on each role definition that needs to be eval
 |userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Read-only. The associated resource for this role setting.|
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition that is enforced with this role setting. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

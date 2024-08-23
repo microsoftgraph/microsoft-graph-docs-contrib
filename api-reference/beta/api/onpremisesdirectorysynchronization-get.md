@@ -3,7 +3,7 @@ title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                           |
-| :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | OnPremDirectorySynchronization.Read.All, OnPremDirectorySynchronization.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                        |
-| Application                            | OnPremDirectorySynchronization.Read.All, OnPremDirectorySynchronization.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "onpremisesdirectorysynchronization_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
 
 For delegated scenarios, the user needs to be assigned the *Global Administrator* [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
@@ -47,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -61,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [onPremisesDi
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -141,7 +138,7 @@ Content-Type: application/json
       "successfulLinksProvisioningCount": 0,
       "successfulObjectsProvisioningCount": 0,
       "clientMachineName": "ABCD-SYNC-01",
-      "serviceAccount": "Synchronization-01@Contoso.onmicrosoft.com",
+      "serviceAccount": "Synchronization-01@contoso.com",
       "totalConnectorSpaceObjects": 123456789
     },
     "writebackConfiguration": {

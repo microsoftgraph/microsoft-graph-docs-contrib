@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkbookChartTitle workbookChartTitle = new WorkbookChartTitle();
-workbookChartTitle.overlay = true;
-workbookChartTitle.text = "text-value";
-workbookChartTitle.visible = true;
+workbookChartTitle.setOverlay(true);
+workbookChartTitle.setText("text-value");
+workbookChartTitle.setVisible(true);
+WorkbookChartTitle result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().byWorkbookWorksheetId("{workbookWorksheet-id}").charts().byWorkbookChartId("{workbookChart-id}").title().patch(workbookChartTitle);
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").title()
-	.buildRequest()
-	.patch(workbookChartTitle);
 
 ```

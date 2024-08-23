@@ -3,7 +3,7 @@ title: "auditUserIdentity resource type"
 description: "An open type that represents details of the identity of a user along with information about their home tenant."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Inherits from [userIdentity](../resources/useridentity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditUserIdentity",

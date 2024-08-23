@@ -2,18 +2,18 @@
 title: "windows10XCertificateProfile resource type"
 description: "Base Profile Type for Authentication Certificates (SCEP or PFX Create)"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windows10XCertificateProfile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Base Profile Type for Authentication Certificates (SCEP or PFX Create)
 
@@ -36,6 +36,7 @@ Inherits from [deviceManagementResourceAccessProfileBase](../resources/intune-ra
 |creationDateTime|DateTimeOffset|DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |roleScopeTagIds|String collection|Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -61,6 +62,12 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "String"
+    }
   ]
 }
 ```

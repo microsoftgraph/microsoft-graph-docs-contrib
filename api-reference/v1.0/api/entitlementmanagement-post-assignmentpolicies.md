@@ -3,10 +3,12 @@ title: "Create assignmentPolicies"
 description: "Create a new accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
+
 # Create assignmentPolicies
+
 Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.  The request will include a reference to the [accessPackage](../resources/accesspackage.md) that will contain this policy, which must already exist.
@@ -15,13 +17,10 @@ In [Microsoft Entra entitlement management](../resources/entitlementmanagement-o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "entitlementmanagement_post_assignmentpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
 
 ## HTTP request
@@ -37,7 +36,7 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -600,5 +599,148 @@ Content-Type: application/json
     "allowedTargetScope": "allMemberUsers",
     "createdDateTime": "2022-09-30T20:32:07.1949218Z",
     "modifiedDateTime": "2022-09-30T20:32:07.4173893Z",
+}
+```
+
+
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
+
+In the following example, the predefined **accessPackageCustomWorkflowExtension** object is triggered by the creation or approval of an access package assignment request. The identifier in the **customExtension** property corresponds to the ID of the **accessPackageCustomWorkflowExtension** object.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_CustomWorkflowExtension"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/
+Content-type: application/json
+
+{
+    "displayName": "customExtensionStageSettings policy",
+    "description": "policy with specified stages for custom extension assignment",
+    "allowedTargetScope": "notSpecified",
+    "specificAllowedTargets": [],
+    "expiration": {
+        "endDateTime": null,
+        "duration": null,
+        "type": "noExpiration"
+    },
+    "requestorSettings": {
+        "enableTargetsToSelfAddAccess": false,
+        "enableTargetsToSelfUpdateAccess": false,
+        "enableTargetsToSelfRemoveAccess": false,
+        "allowCustomAssignmentSchedule": true,
+        "enableOnBehalfRequestorsToAddAccess": false,
+        "enableOnBehalfRequestorsToUpdateAccess": false,
+        "enableOnBehalfRequestorsToRemoveAccess": false,
+        "onBehalfRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequiredForAdd": false,
+        "isApprovalRequiredForUpdate": false,
+        "stages": []
+    },
+    "accessPackage": {
+        "id": "5ad1eb64-15f7-4614-b419-05d11ee266bf"
+    },
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-customworkflowextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentpolicy-customworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-customworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-customworkflowextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-customworkflowextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentpolicy-customworkflowextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-customworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentpolicy-customworkflowextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response 
+
+The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) method with `$expand`. For more information, see [Example 2: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-stage-settings-for-a-policy).
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
+  "displayName": "customExtensionStageSettings policy",
+  "description": "policy with specified stages for custom extension assignment",
+  "canExtend": false,
+  "durationInDays": 0,
+  "expirationDateTime": null,
+  "accessPackageId": "5ad1eb64-15f7-4614-b419-05d11ee266bf",
+  "accessReviewSettings": null,
+  "questions": [],
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  },
+  "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
 }
 ```

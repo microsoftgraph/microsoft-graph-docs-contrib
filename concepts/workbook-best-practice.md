@@ -3,7 +3,7 @@ title: "Best practices for working with the Excel API"
 description: "Find tips for working with Excel APIs in Microsoft Graph. Learn how to manage sessions, work with APIs that take a long time to complete, and reduce throttling errors."
 author: "grangeryy"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Best practices for working with the Excel API
@@ -182,7 +182,7 @@ workbook-session-id: {session-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/look-up-value-in-table-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -509,6 +509,6 @@ Another factor related to throttling is request concurrency. We don't recommend 
 
 Concurrent write requests to the same workbook don’t usually run in parallel (although in some cases they do); rather, they are often the cause of throttling, timeout (when requests are queued on servers), merge conflict (when concurrent sessions are involved) and other types of failures. They also complicate error handling; for example, when you receive a failure response, there is no way to confirm the status of other pending requests, which makes it difficult to determine or to recover the state of the workbook.
 
-## See also
+## Related content
 
 * [Use the Excel REST API](/graph/api/resources/excel)

@@ -3,7 +3,7 @@ title: "tenantStatusInformation resource type"
 description: "Represents onboarding status information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ Represents onboarding status information for a managed tenant.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"

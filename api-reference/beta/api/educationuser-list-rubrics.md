@@ -3,7 +3,7 @@ title: "List rubrics"
 description: "Retrieve a list of educationrubric objects."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "educationuser_list_rubrics" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-list-rubrics-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,15 +102,14 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationRubric)"
 } -->
 
 ```http
@@ -121,80 +117,126 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value":[
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/rubrics",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/me/rubrics?$skiptoken=MyZRVkZCUVVGQlFVRkVXakJCUVVGQlFVRkJRWGxCUVVGQmVYbGlhbFJxYmpsWE1EWmxhbWN2YjBoR1l6bE5RVDA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/rubrics?$select=createdBy,createdDateTime",
+    "value": [
         {
-            "displayName":"Example Credit Rubric",
-            "id":"c4459fcb-a761-4f70-ac5b-e9466cb77c2a",
-            "description":{
-                "content":"This is an example of a credit rubric (no points)",
-                "contentType":"text"
+            "displayName": "Example Credit Rubric after display name patch",
+            "createdDateTime": "2024-07-17T00:21:14.4479093Z",
+            "lastModifiedDateTime": "2024-07-17T15:00:08.5062776Z",
+            "id": "5f650796-a600-4d20-87ef-c46ae34da3bb",
+            "description": {
+                "content": "New Rubric",
+                "contentType": "text"
             },
-            "levels":[
+            "qualities": [
                 {
-                    "levelId":"dec665d4-cf1b-4481-ac61-1d5b6188f4f5",
-                    "displayName":"Good",
-                    "description":{
-                        "content":"",
-                        "contentType":"text"
+                    "qualityId": "bdde7fc5-9a0b-4db7-9103-aeb6d4d20fbd",
+                    "displayName": null,
+                    "weight": 33.33,
+                    "description": {
+                        "content": "First quality",
+                        "contentType": "text"
+                    },
+                    "criteria": [
+                        {
+                            "description": {
+                                "content": "First quality is excellent",
+                                "contentType": "text"
+                            }
+                        },
+                        {
+                            "description": {
+                                "content": "First quality is good",
+                                "contentType": "text"
+                            }
+                        },
+                        {
+                            "description": {
+                                "content": "First quality is fair",
+                                "contentType": "text"
+                            }
+                        },
+                        {
+                            "description": {
+                                "content": "First quality is poor",
+                                "contentType": "text"
+                            }
+                        }
+                    ]
+                }                
+            ],
+            "levels": [
+                {
+                    "levelId": "f0b16138-3ab2-4712-bbe0-b0a2653017a1",
+                    "displayName": "Excellent",
+                    "description": {
+                        "content": "",
+                        "contentType": "text"
+                    },
+                    "grading": {
+                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                        "maxPoints": 4
                     }
                 },
                 {
-                    "levelId":"3f2e4b0f-508e-4005-984b-17e061bc5377",
-                    "displayName":"Poor",
-                    "description":{
-                        "content":"",
-                        "contentType":"text"
+                    "levelId": "f5b1cc98-a22e-44d6-8e20-a29fb7de4860",
+                    "displayName": "Good",
+                    "description": {
+                        "content": "",
+                        "contentType": "text"
+                    },
+                    "grading": {
+                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                        "maxPoints": 3
+                    }
+                },
+                {
+                    "levelId": "352dfa9f-0ad3-42c5-a7b7-843dc78d83f9",
+                    "displayName": "Fair",
+                    "description": {
+                        "content": "",
+                        "contentType": "text"
+                    },
+                    "grading": {
+                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                        "maxPoints": 2
+                    }
+                },
+                {
+                    "levelId": "b1d9ac8f-fb57-4172-9863-4a4994bc31fa",
+                    "displayName": "Poor",
+                    "description": {
+                        "content": "",
+                        "contentType": "text"
+                    },
+                    "grading": {
+                        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                        "maxPoints": 1
                     }
                 }
             ],
-            "qualities":[
-                {
-                    "qualityId":"dc79dcbf-b536-4797-9c5b-902f28129fd0",
-                    "description":{
-                        "content":"Argument",
-                        "contentType":"text"
-                    },
-                    "criteria":[
-                        {
-                            "id":"8937fa15-4a7c-4f27-bd01-ca3471d2d1d5",
-                            "description":{
-                                "content":"The essay's argument is persuasive.",
-                                "contentType":"text"
-                            }
-                        },
-                        {
-                            "id":"4dfb5263-1d3f-4f0a-93ef-d24d800d0f69",
-                            "description":{
-                                "content":"The essay's argument does not make sense.",
-                                "contentType":"text"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "qualityId":"7e087062-ac25-4629-8386-a946350936db",
-                    "description":{
-                        "content":"Spelling and Grammar",
-                        "contentType":"text"
-                    },
-                    "criteria":[
-                        {
-                            "id":"12276eb2-122c-4ad2-ba92-335ea798c88e",
-                            "description":{
-                                "content":"The essay uses proper spelling and grammar with few or no errors.",
-                                "contentType":"text"
-                            }
-                        },
-                        {
-                            "id":"3db7e6b2-2b1b-4f8e-9fca-bea701159145",
-                            "description":{
-                                "content":"The essay has numerous errors in spelling and/or grammar.",
-                                "contentType":"text"
-                            }
-                        }
-                    ]
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
                 }
-            ]
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            }
         }
     ]
 }

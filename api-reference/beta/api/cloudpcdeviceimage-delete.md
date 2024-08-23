@@ -3,7 +3,7 @@ title: "Delete cloudPcDeviceImage"
 description: "Delete a cloudPcDeviceImage object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudpcdeviceimage_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcdeviceimage-delete-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +39,7 @@ DELETE /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +53,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -65,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/435849e6-0263-4621-9f93-8657667af3bb
 ```
 
 # [C#](#tab/csharp)

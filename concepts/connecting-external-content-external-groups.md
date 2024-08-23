@@ -3,7 +3,7 @@ title: Use external groups to manage permissions to Microsoft Graph connectors d
 description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ms.localizationpriority: medium
 ---
 
@@ -158,7 +158,7 @@ You can use the groups API to manage your external groups and group membership. 
 > A user should have less than 2,049 external security group memberships, including direct and indirect memberships. When this limit is exceeded, search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with a `400` response.
 
 
-## Next steps
+## Related content
 
 - [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
 - [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview.md)

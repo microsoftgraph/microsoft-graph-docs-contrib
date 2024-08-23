@@ -2,8 +2,9 @@
 title: "conditionalAccessClientApplications resource type"
 description: "Represents client applications (service principals and workload identities) included in and excluded from the policy scope."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +24,7 @@ Represents client applications (service principals and workload identities) incl
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conditionalAccessClientApplications"

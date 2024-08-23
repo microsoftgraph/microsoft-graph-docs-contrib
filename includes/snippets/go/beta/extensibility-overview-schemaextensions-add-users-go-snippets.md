@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewUser()
 accountEnabled := true
@@ -31,7 +31,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 additionalData := map[string]interface{}{
-extkmpdyld2_graphLearnCourses := graphmodels.New()
+extkmpdyld2_graphLearnCourses := graph.New()
 courseId := int32(100)
 extkmpdyld2_graphLearnCourses.SetCourseId(&courseId) 
 courseName := "Explore Microsoft Graph"
@@ -42,6 +42,7 @@ extkmpdyld2_graphLearnCourses.SetCourseType(&courseType)
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 

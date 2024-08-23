@@ -2,8 +2,9 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -22,63 +23,14 @@ Since the **organization** resource supports [extensions](/graph/extensibility-o
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
-
-* Global Administrator
-* User Administrator
-* User
-* Helpdesk Administrator
-* Service Support Administrator
-* Billing Administrator
-* Mailbox Administrator
-* Partner Tier1 Support
-* Partner Tier2 Support
-* Directory Readers
-* Directory Writers
-* AdHoc License Administrator
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Authentication Administrator
-* Privileged Authentication Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Volume Licensing Business Center User
-* Volume Licensing Service Center User
-* Modern Commerce User
-* Microsoft Store for Business User
-* Directory Reviewer
-* Guest User
-* Restricted Guest User
-
-> **Note**: Applications granted the User.Read permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization.  All other properties will return with `null` values. To read all properties, use Organization.Read.All.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 
@@ -96,7 +48,7 @@ This method supports only the `$select` [OData query parameter](/graph/query-par
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -110,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -158,7 +110,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ##### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -257,7 +209,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

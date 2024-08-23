@@ -3,7 +3,7 @@ title: "Get singleValueLegacyExtendedProperty"
 description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -247,7 +247,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Set set = new Set();
-set.description = "mySet";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.termStore().sets("{setId}")
-	.buildRequest()
-	.patch(set);
+com.microsoft.graph.beta.models.termstore.Set set = new com.microsoft.graph.beta.models.termstore.Set();
+set.setDescription("mySet");
+com.microsoft.graph.models.termstore.Set result = graphClient.termStore().sets().bySetId("{set-id}").patch(set);
+
 
 ```

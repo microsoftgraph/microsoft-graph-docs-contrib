@@ -3,7 +3,7 @@ title: "cloudPcForensicStorageAccount resource type"
 description: "Represents a Cloud PC storage account for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents the storage account information that can be used to store a snapshot 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "storageAccountId",

@@ -3,7 +3,7 @@ title: "keyValuePair resource type"
 description: "Represents a key-value pair for sensitivity labels in Microsoft Purview Information Protection."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a key-value pair for sensitivity labels in Microsoft Purview Informat
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.keyValuePair"

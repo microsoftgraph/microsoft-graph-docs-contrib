@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.agreement_file_localization import AgreementFileLocalization
+from msgraph.generated.models.agreement_file_data import AgreementFileData
 
 graph_client = GraphServiceClient(credentials, scopes)
 

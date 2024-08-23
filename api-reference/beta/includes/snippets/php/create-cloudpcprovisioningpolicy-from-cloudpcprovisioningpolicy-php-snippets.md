@@ -5,21 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicy;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcDomainJoinConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcDomainJoinType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicyImageType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSettings;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSetting;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcProvisioningPolicy();
 $requestBody->setOdataType('#microsoft.graph.cloudPcProvisioningPolicy');
 $requestBody->setDescription('Description value');
 $requestBody->setDisplayName('Display Name value');
-$domainJoinConfiguration = new CloudPcDomainJoinConfiguration();
-$domainJoinConfiguration->setOnPremisesConnectionId('16ee6c71-fc10-438b-88ac-daa1ccafffff');
-$additionalData = [
-	'domainJoinType' => 'hybridAzureADJoin',
-];
-$domainJoinConfiguration->setAdditionalData($additionalData);
-$requestBody->setDomainJoinConfiguration($domainJoinConfiguration);
 $domainJoinConfigurationsCloudPcDomainJoinConfiguration1 = new CloudPcDomainJoinConfiguration();
 $domainJoinConfigurationsCloudPcDomainJoinConfiguration1->setOnPremisesConnectionId('16ee6c71-fc10-438b-88ac-daa1ccafffff');
 $domainJoinConfigurationsCloudPcDomainJoinConfiguration1->setType(new CloudPcDomainJoinType('hybridAzureADJoin'));
@@ -35,11 +36,21 @@ $requestBody->setEnableSingleSignOn(true);
 $requestBody->setImageDisplayName('Windows-10 19h1-evd');
 $requestBody->setImageId('MicrosoftWindowsDesktop_Windows-10_19h1-evd');
 $requestBody->setImageType(new CloudPcProvisioningPolicyImageType('gallery'));
-$requestBody->setOnPremisesConnectionId('4e47d0f6-6f77-44f0-8893-c0fe1701ffff');
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
+$windowsSetting = new CloudPcWindowsSetting();
+$windowsSetting->setLocale('en-US');
+$requestBody->setWindowsSetting($windowsSetting);
 $requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
+$additionalData = [
+'domainJoinConfiguration' => [
+	'domainJoinType' => 'hybridAzureADJoin',
+	'onPremisesConnectionId' => '16ee6c71-fc10-438b-88ac-daa1ccafffff',
+],
+'onPremisesConnectionId' => '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody)->wait();
 

@@ -3,7 +3,7 @@ title: "mailSearchFolder resource type"
 description: "A mailSearchFolder is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. mailSearchFolder inherits from mailFolder."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -27,12 +27,12 @@ When a search folder is deleted, your app should create a new search folder reso
 
 | Method | Return Type  | Description |
 |:---------------|:--------|:----------|
-| [Create a search folder](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
-| [List search folders](../api/mailfolder-list-childfolders.md) | [mailFolder](mailfolder.md) collection | List all the folders in this user's mailbox, including search folders. |
-| [Get a search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
-| [Update a search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
-| [Delete a search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
-| [List all messages in a search folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
+| [Create mail search folder](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
+| [List child folders](../api/mailfolder-list-childfolders.md) | [mailFolder](mailfolder.md) collection | List all the folders in this user's mailbox, including search folders. |
+| [Get mail search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
+| [Update mail search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
+| [Delete mail search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
+| [List messages in folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
 
 ## Properties
 
@@ -45,7 +45,7 @@ When a search folder is deleted, your app should create a new search folder reso
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

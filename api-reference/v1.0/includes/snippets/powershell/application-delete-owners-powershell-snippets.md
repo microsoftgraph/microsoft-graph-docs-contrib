@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Remove-MgApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+Remove-MgApplicationOwnerDirectoryObjectByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
 
 ```

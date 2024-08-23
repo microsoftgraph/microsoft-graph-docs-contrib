@@ -2,9 +2,11 @@
 title: "fido2AuthenticationMethod resource type"
 description: "A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method."
 author: "calvinlui"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: FIDO2
 ---
 
 # fido2AuthenticationMethod resource type
@@ -36,7 +38,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 None.
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

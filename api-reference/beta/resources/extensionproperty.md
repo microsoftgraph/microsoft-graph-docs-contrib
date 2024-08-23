@@ -3,8 +3,9 @@ title: "extensionProperty resource type (directory extensions)"
 description: "Represents a directory extension"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: "resourcePageType"
+toc.title: Directory extension
 ---
 
 # extensionProperty resource type (directory extensions)
@@ -38,10 +39,10 @@ Inherits from [directoryObject](directoryobject.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create a directory extension on an application object. |
-| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List directory extensions on an application object. |
-| [Get extensionProperty](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | Get a directory extension an application object. |
-| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete directory extension from an application object. You can delete only directory extensions that aren't synced from on-premises active directory. |
+| [Create](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create a directory extension on an application object. |
+| [List](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List directory extensions on an application object. |
+| [Get](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | Get a directory extension an application object. |
+| [Delete](../api/extensionproperty-delete.md) | None | Delete directory extension from an application object. You can delete only directory extensions that aren't synced from on-premises active directory. |
 
 > [!TIP]
 > 1. To set a value for the extension property to an instance of a resource that is specified in **targetObjects**, use the Update operation of the resource. For example, the [Update user](../api/user-update.md) API to set the value for a user.
@@ -52,11 +53,11 @@ Inherits from [directoryObject](directoryobject.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |appDisplayName|String| Display name of the application object on which this extension property is defined. Read-only. |
-|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
+|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>Not nullable. For multivalued directory extensions, these limits apply per value in the collection. |
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](directoryobject.md).|
 |isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect. Read-only. |
 |name|String| Name of the extension property. Not nullable. Supports `$filter` (`eq`).|
-|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of integers. The default value is `false`.|
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of string types such as `"extension_b7b1c57b532f40b8b5ed4b7a7ba67401_jobGroupTracker": ["String 1", "String 2"]`. The default value is `false`. Supports `$filter` (`eq`).|
 |targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 ## Relationships
@@ -65,7 +66,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -91,7 +92,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 

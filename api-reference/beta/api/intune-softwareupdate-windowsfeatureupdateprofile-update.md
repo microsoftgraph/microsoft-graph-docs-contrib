@@ -2,8 +2,8 @@
 title: "Update windowsFeatureUpdateProfile"
 description: "Update the properties of a windowsFeatureUpdateProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -59,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 |endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
 |installLatestWindows10OnWindows11IneligibleDevice|Boolean|If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11|
+|installFeatureUpdatesOptional|Boolean|If true, the Windows 11 update will become optional|
 
 
 
@@ -72,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 731
+Content-length: 773
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -90,7 +93,8 @@ Content-length: 731
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
-  "installLatestWindows10OnWindows11IneligibleDevice": true
+  "installLatestWindows10OnWindows11IneligibleDevice": true,
+  "installFeatureUpdatesOptional": true
 }
 ```
 
@@ -99,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 903
+Content-Length: 945
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -120,6 +124,7 @@ Content-Length: 903
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
-  "installLatestWindows10OnWindows11IneligibleDevice": true
+  "installLatestWindows10OnWindows11IneligibleDevice": true,
+  "installFeatureUpdatesOptional": true
 }
 ```

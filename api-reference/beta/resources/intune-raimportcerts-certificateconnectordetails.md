@@ -2,18 +2,18 @@
 title: "certificateConnectorDetails resource type"
 description: "Entity used to retrieve information about Intune Certificate Connectors."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # certificateConnectorDetails resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Entity used to retrieve information about Intune Certificate Connectors.
 
@@ -25,8 +25,8 @@ Entity used to retrieve information about Intune Certificate Connectors.
 |[Create certificateConnectorDetails](../api/intune-raimportcerts-certificateconnectordetails-create.md)|[certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md)|Create a new [certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) object.|
 |[Delete certificateConnectorDetails](../api/intune-raimportcerts-certificateconnectordetails-delete.md)|None|Deletes a [certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md).|
 |[Update certificateConnectorDetails](../api/intune-raimportcerts-certificateconnectordetails-update.md)|[certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md)|Update the properties of a [certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) object.|
-|[getHealthMetrics action](../api/intune-raimportcerts-certificateconnectordetails-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection|Not yet documented|
-|[getHealthMetricTimeSeries action](../api/intune-raimportcerts-certificateconnectordetails-gethealthmetrictimeseries.md)|[certificateConnectorHealthMetricValue](../resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md) collection|Not yet documented|
+|[getHealthMetrics action](../api/intune-raimportcerts-certificateconnectordetails-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection||
+|[getHealthMetricTimeSeries action](../api/intune-raimportcerts-certificateconnectordetails-gethealthmetrictimeseries.md)|[certificateConnectorHealthMetricValue](../resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md) collection||
 
 ## Properties
 |Property|Type|Description|

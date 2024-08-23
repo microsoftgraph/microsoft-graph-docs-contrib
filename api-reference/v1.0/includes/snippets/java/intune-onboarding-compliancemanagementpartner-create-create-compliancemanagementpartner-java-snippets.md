@@ -4,39 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ComplianceManagementPartner complianceManagementPartner = new ComplianceManagementPartner();
-complianceManagementPartner.lastHeartbeatDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:59:37.9174975+00:00");
-complianceManagementPartner.partnerState = DeviceManagementPartnerTenantState.UNAVAILABLE;
-complianceManagementPartner.displayName = "Display Name value";
-complianceManagementPartner.macOsOnboarded = true;
-complianceManagementPartner.androidOnboarded = true;
-complianceManagementPartner.iosOnboarded = true;
-LinkedList<ComplianceManagementPartnerAssignment> macOsEnrollmentAssignmentsList = new LinkedList<ComplianceManagementPartnerAssignment>();
-ComplianceManagementPartnerAssignment macOsEnrollmentAssignments = new ComplianceManagementPartnerAssignment();
+complianceManagementPartner.setOdataType("#microsoft.graph.complianceManagementPartner");
+OffsetDateTime lastHeartbeatDateTime = OffsetDateTime.parse("2016-12-31T23:59:37.9174975-08:00");
+complianceManagementPartner.setLastHeartbeatDateTime(lastHeartbeatDateTime);
+complianceManagementPartner.setPartnerState(DeviceManagementPartnerTenantState.Unavailable);
+complianceManagementPartner.setDisplayName("Display Name value");
+complianceManagementPartner.setMacOsOnboarded(true);
+complianceManagementPartner.setAndroidOnboarded(true);
+complianceManagementPartner.setIosOnboarded(true);
+LinkedList<ComplianceManagementPartnerAssignment> macOsEnrollmentAssignments = new LinkedList<ComplianceManagementPartnerAssignment>();
+ComplianceManagementPartnerAssignment complianceManagementPartnerAssignment = new ComplianceManagementPartnerAssignment();
+complianceManagementPartnerAssignment.setOdataType("microsoft.graph.complianceManagementPartnerAssignment");
 ConfigurationManagerCollectionAssignmentTarget target = new ConfigurationManagerCollectionAssignmentTarget();
-target.collectionId = "Collection Id value";
-macOsEnrollmentAssignments.target = target;
-macOsEnrollmentAssignmentsList.add(macOsEnrollmentAssignments);
-complianceManagementPartner.macOsEnrollmentAssignments = macOsEnrollmentAssignmentsList;
-LinkedList<ComplianceManagementPartnerAssignment> androidEnrollmentAssignmentsList = new LinkedList<ComplianceManagementPartnerAssignment>();
-ComplianceManagementPartnerAssignment androidEnrollmentAssignments = new ComplianceManagementPartnerAssignment();
+target.setOdataType("microsoft.graph.configurationManagerCollectionAssignmentTarget");
+target.setCollectionId("Collection Id value");
+complianceManagementPartnerAssignment.setTarget(target);
+macOsEnrollmentAssignments.add(complianceManagementPartnerAssignment);
+complianceManagementPartner.setMacOsEnrollmentAssignments(macOsEnrollmentAssignments);
+LinkedList<ComplianceManagementPartnerAssignment> androidEnrollmentAssignments = new LinkedList<ComplianceManagementPartnerAssignment>();
+ComplianceManagementPartnerAssignment complianceManagementPartnerAssignment1 = new ComplianceManagementPartnerAssignment();
+complianceManagementPartnerAssignment1.setOdataType("microsoft.graph.complianceManagementPartnerAssignment");
 ConfigurationManagerCollectionAssignmentTarget target1 = new ConfigurationManagerCollectionAssignmentTarget();
-target1.collectionId = "Collection Id value";
-androidEnrollmentAssignments.target = target1;
-androidEnrollmentAssignmentsList.add(androidEnrollmentAssignments);
-complianceManagementPartner.androidEnrollmentAssignments = androidEnrollmentAssignmentsList;
-LinkedList<ComplianceManagementPartnerAssignment> iosEnrollmentAssignmentsList = new LinkedList<ComplianceManagementPartnerAssignment>();
-ComplianceManagementPartnerAssignment iosEnrollmentAssignments = new ComplianceManagementPartnerAssignment();
+target1.setOdataType("microsoft.graph.configurationManagerCollectionAssignmentTarget");
+target1.setCollectionId("Collection Id value");
+complianceManagementPartnerAssignment1.setTarget(target1);
+androidEnrollmentAssignments.add(complianceManagementPartnerAssignment1);
+complianceManagementPartner.setAndroidEnrollmentAssignments(androidEnrollmentAssignments);
+LinkedList<ComplianceManagementPartnerAssignment> iosEnrollmentAssignments = new LinkedList<ComplianceManagementPartnerAssignment>();
+ComplianceManagementPartnerAssignment complianceManagementPartnerAssignment2 = new ComplianceManagementPartnerAssignment();
+complianceManagementPartnerAssignment2.setOdataType("microsoft.graph.complianceManagementPartnerAssignment");
 ConfigurationManagerCollectionAssignmentTarget target2 = new ConfigurationManagerCollectionAssignmentTarget();
-target2.collectionId = "Collection Id value";
-iosEnrollmentAssignments.target = target2;
-iosEnrollmentAssignmentsList.add(iosEnrollmentAssignments);
-complianceManagementPartner.iosEnrollmentAssignments = iosEnrollmentAssignmentsList;
+target2.setOdataType("microsoft.graph.configurationManagerCollectionAssignmentTarget");
+target2.setCollectionId("Collection Id value");
+complianceManagementPartnerAssignment2.setTarget(target2);
+iosEnrollmentAssignments.add(complianceManagementPartnerAssignment2);
+complianceManagementPartner.setIosEnrollmentAssignments(iosEnrollmentAssignments);
+ComplianceManagementPartner result = graphClient.deviceManagement().complianceManagementPartners().post(complianceManagementPartner);
 
-graphClient.deviceManagement().complianceManagementPartners()
-	.buildRequest()
-	.post(complianceManagementPartner);
 
 ```

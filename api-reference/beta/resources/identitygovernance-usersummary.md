@@ -3,7 +3,7 @@ title: "userSummary resource type"
 description: "A summary of user processing results for a specified time period. This summary allows the administrator to get a quick overview based on counts."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.userSummary"

@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -34,13 +34,10 @@ message that is being [drafted](../api/user-post-messages.md), or [created and s
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "message_post_attachments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-post-attachments-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -63,7 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -76,7 +73,7 @@ If successful, this method returns `201 Created` response code and the [Attachme
 ## Example (file attachment)
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +128,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_message_beta",
@@ -158,7 +155,7 @@ Content-type: application/json
 ## Example (item attachment)
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -230,7 +227,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -254,7 +251,7 @@ Content-type: application/json
 ## Example (reference attachment)
 
 ##### Request
-Here is an example of a request that adds a reference attachment to an existing message.
+The following example shows a request that adds a reference attachment to an existing message.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)

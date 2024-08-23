@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Networkaccess;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Networkaccess.ForwardingPolicyLink
+var requestBody = new ForwardingPolicyLink
 {
 	OdataType = "#microsoft.graph.networkaccess.forwardingPolicyLink",
-	State = Microsoft.Graph.Beta.Models.Networkaccess.Status.Enabled,
+	State = Status.Enabled,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.NetworkAccess.ForwardingProfiles["{forwardingProfile-id}"].Policies["{policyLink-id}"].PatchAsync(requestBody);
 
 

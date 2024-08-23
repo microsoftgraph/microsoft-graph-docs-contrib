@@ -4,7 +4,7 @@ description: "Represents a reaction to a chatMessage entity. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessageReaction resource type
@@ -25,7 +25,7 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

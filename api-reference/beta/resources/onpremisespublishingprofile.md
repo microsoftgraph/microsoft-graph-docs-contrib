@@ -3,7 +3,7 @@ title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -22,8 +22,8 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read the properties and relationships of an **onPremisesPublishingProfile** object. |
-| [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update an [onPremisesPublishingProfile](onpremisespublishingprofile.md) object. |
+| [Get](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read the properties and relationships of an **onPremisesPublishingProfile** object. |
+| [Update](../api/onpremisespublishingprofile-update.md) | None | Update an [onPremisesPublishingProfile](onpremisespublishingprofile.md) object. |
 
 ## Properties
 
@@ -31,7 +31,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
 |id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
-|isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) is enabled for the tenant. |
+|isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/entra/identity/app-proxy/) is enabled for the tenant. |
 
 ## Relationships
 
@@ -45,7 +45,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonAnnualEvent personAnnualEvent = new PersonAnnualEvent();
-personAnnualEvent.type = PersonAnnualEventType.BIRTHDAY;
-personAnnualEvent.date = new DateOnly(1900,1,1);
+personAnnualEvent.setType(PersonAnnualEventType.Birthday);
+LocalDate date = LocalDate.parse("1980-01-08");
+personAnnualEvent.setDate(date);
+PersonAnnualEvent result = graphClient.me().profile().anniversaries().post(personAnnualEvent);
 
-graphClient.me().profile().anniversaries()
-	.buildRequest()
-	.post(personAnnualEvent);
 
 ```

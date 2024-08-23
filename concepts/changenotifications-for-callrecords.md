@@ -3,7 +3,7 @@ title: "Get change notifications for Microsoft Teams call records"
 description: "Use change notifications in Microsoft Graph to receive notifications for created and updated call records."
 author: "mcm223"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 
@@ -28,7 +28,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/communications/callRecords",
@@ -37,7 +37,9 @@ Content-Type: application/json
 }
 ```
 
-Change notifications for call records support both `create` and `update` notification types. A call record is created after a call or meeting ends and remains accessible for 30 days. However, because specific call record attributes depend on client-side signals, which can be subject to delays or interruptions due to network issues, a call record may undergo updates with new or revised information after its initial creation. These changes trigger an `update` notification, and the record's `version` field is incremented to indicate the modification.
+Change notifications for call records support both `create` and `update` notification types. A subscription for `create` changes only sends a single notification when a call record is first generated. A call record is created after a call or meeting ends and remains accessible for 30 days. 
+
+A subscription for `update` changes includes an initial notification when the record is first generated and any subsequent notifications as that record is modified. Because specific call record attributes depend on client-side signals, which can be subject to delays or interruptions due to network issues, a call record may undergo updates with new or revised information after its initial creation. These changes trigger an `update` notification, and the record's `version` field is incremented to indicate the modification.
 
 The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
@@ -62,7 +64,7 @@ The latency of change notifications and the maximum subscription expiration peri
 
 - The **Call ID** property corresponds to a specific [call record resource](/graph/api/resources/callrecords-callrecord), which can be retrieved using the [Get callRecord](/graph/api/callrecords-callrecord-get) API.
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)

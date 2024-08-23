@@ -2,8 +2,9 @@
 title: "List group members"
 description: "Get a list of the group's direct members."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -13,23 +14,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive.
+Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation isn't transitive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                           |
-| Application                            | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-
-> **Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
+<!-- { "blockType": "permissions", "name": "group_list_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-members-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/read` or `microsoft.directory/groups/members/limitedRead` role permission, or `microsoft.directory/groups/hiddenMembers/read` role permission to read hidden members. The following least privileged roles are supported for this operation:
+
+- Group owners
+- "Member" users
+- "Guest" users - have [limited read permissions](/entra/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions)
+- Directory Readers
+- Directory Writers
+- Groups Administrator
+- User Administrator - Including hidden members
+- Exchange Administrator - Including hidden members
+- SharePoint Administrator - Including hidden members 
+- Intune Administrator - Including hidden members
+- Teams Administrator - Including hidden members
+- Yammer Administrator - Including hidden members
+
+To list the members of a hidden membership group, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 
@@ -43,13 +56,13 @@ GET /groups/{id}/members
 
 This method supports the `$filter`, `$count`, `$select`, `$search`, `$top`, `$search`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-OData cast is also enabled. For example, `/groups/{id}}/members/microsoft.graph.user` retrives group members that are users.
+OData cast is also enabled. For example, `/groups/{id}}/members/microsoft.graph.user` retrieves group members that are users.
 
 ## Request headers
 
 | Name             | Description                                                                                                                                                                                                       |
 | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body
@@ -60,7 +73,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
-An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code. For example, `/groups/{id}}/members/microsoft.graph.group` when the group is a Microsoft 365 group will return this error, because Microsoft 365 groups cannot have other groups as members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code. For example, `/groups/{id}}/members/microsoft.graph.group` when the group is a Microsoft 365 group returns this error, because Microsoft 365 groups can't have other groups as members.
 
 ## Examples
 

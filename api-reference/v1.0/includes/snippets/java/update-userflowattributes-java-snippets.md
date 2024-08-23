@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityUserFlowAttribute identityUserFlowAttribute = new IdentityUserFlowAttribute();
-identityUserFlowAttribute.description = "Your new hobby";
+identityUserFlowAttribute.setDescription("Your new hobby");
+IdentityUserFlowAttribute result = graphClient.identity().userFlowAttributes().byIdentityUserFlowAttributeId("{identityUserFlowAttribute-id}").patch(identityUserFlowAttribute);
 
-graphClient.identity().userFlowAttributes("extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby")
-	.buildRequest()
-	.patch(identityUserFlowAttribute);
 
 ```

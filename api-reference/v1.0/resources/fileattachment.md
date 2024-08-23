@@ -3,7 +3,7 @@ title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message, or post."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -28,8 +28,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties, relationships, or raw contents of a **fileAttachment** object.|
-|[Delete](../api/attachment-delete.md) | None |Delete a **fileAttachment** object. |
+|[Get attachment](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties, relationships, or raw contents of a **fileAttachment** object.|
+|[Delete attachment](../api/attachment-delete.md) | None |Delete a **fileAttachment** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -50,7 +50,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

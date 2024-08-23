@@ -3,7 +3,7 @@ title: "businessScenarioTask resource type"
 description: "Represents a plannerTask that is associated with a businessScenario and contains additional scenario data."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -21,11 +21,11 @@ Inherits from [plannerTask](../resources/plannertask.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List businessScenarioTasks](../api/businessscenarioplanner-list-tasks.md)|[businessScenarioTask](../resources/businessscenariotask.md) collection|Get a list of the [businessScenarioTask](../resources/businessscenariotask.md) objects and their properties.|
-|[Create businessScenarioTask](../api/businessscenarioplanner-post-tasks.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Create a new [businessScenarioTask](../resources/businessscenariotask.md) object.|
-|[Get businessScenarioTask](../api/businessscenariotask-get.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Read the properties and relationships of a [businessScenarioTask](../resources/businessscenariotask.md) object.|
-|[Update businessScenarioTask](../api/businessscenariotask-update.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Update the properties of a [businessScenarioTask](../resources/businessscenariotask.md) object.|
-|[Delete businessScenarioTask](../api/businessscenarioplanner-delete-tasks.md)|None|Delete a [businessScenarioTask](../resources/businessscenariotask.md) object.|
+|[List](../api/businessscenarioplanner-list-tasks.md)|[businessScenarioTask](../resources/businessscenariotask.md) collection|Get a list of the [businessScenarioTask](../resources/businessscenariotask.md) objects and their properties.|
+|[Create](../api/businessscenarioplanner-post-tasks.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Create a new [businessScenarioTask](../resources/businessscenariotask.md) object.|
+|[Get](../api/businessscenariotask-get.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Read the properties and relationships of a [businessScenarioTask](../resources/businessscenariotask.md) object.|
+|[Update](../api/businessscenariotask-update.md)|[businessScenarioTask](../resources/businessscenariotask.md)|Update the properties of a [businessScenarioTask](../resources/businessscenariotask.md) object.|
+|[Delete](../api/businessscenarioplanner-delete-tasks.md)|None|Delete a [businessScenarioTask](../resources/businessscenariotask.md) object.|
 
 ## Properties
 
@@ -68,7 +68,7 @@ Inherits from [plannerTask](../resources/plannertask.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "sitepage: getWebPartsByPosition"
 description: "Get a collection of webParts by position information"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get a collection of [webPart](../resources/webpart.md) by providing [webPartPosi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "sitepage_getwebpartsbyposition" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-getwebpartsbyposition-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +41,7 @@ In the request URL, provide one or more following parameters with a valid value.
 | :------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | columnId            | Double  | Indicate the identifier of the column where the WebPart located in. Only works if `horizontalSectionId` is provided.                                           |
 | horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                                                                                                  |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
+| isInVerticalSection | Boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
 | webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
 ## Optional query parameters
@@ -55,7 +52,7 @@ This method supports the  `$expand`, `$filter`, and `$select` [OData query param
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -70,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -81,12 +78,8 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-webparts-by-position-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]

@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-BranchSite branchSite = new BranchSite();
-branchSite.name = "test branch - 11:50";
-branchSite.country = "United States";
-branchSite.region = Region.EAST_U_S;
-branchSite.bandwidthCapacity = 500L;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.networkAccess().connectivity().branches()
-	.buildRequest()
-	.post(branchSite);
+com.microsoft.graph.beta.models.networkaccess.BranchSite branchSite = new com.microsoft.graph.beta.models.networkaccess.BranchSite();
+branchSite.setName("test branch - 11:50");
+branchSite.setCountry("United States");
+branchSite.setRegion(com.microsoft.graph.beta.models.networkaccess.Region.EastUS);
+branchSite.setBandwidthCapacity(500L);
+com.microsoft.graph.models.networkaccess.BranchSite result = graphClient.networkAccess().connectivity().branches().post(branchSite);
+
 
 ```

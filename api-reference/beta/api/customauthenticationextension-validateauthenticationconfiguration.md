@@ -3,7 +3,7 @@ title: "customAuthenticationExtension: validateAuthenticationConfiguration"
 description: "An API to check validity of the endpoint and authentication configuration for a customAuthenticationExtension."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ An API to check validity of the endpoint and and authentication configuration fo
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "customauthenticationextension_validateauthenticationconfiguration" } -->
+[!INCLUDE [permissions-table](../includes/permissions/customauthenticationextension-validateauthenticationconfiguration-permissions.md)]
 
 ## HTTP request
 
@@ -48,13 +45,13 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
 In the request body, supply JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, do not supply a request body for this method.
+The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, Don't supply a request body for this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -70,7 +67,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 ### Example 1: Supply and validate a potential custom authentication extension configuration
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "customauthenticationextensionthis.validateauthenticationconfiguration"
@@ -135,7 +132,7 @@ Content-Type: application/json
 ### Example 2: Validate the configuration of a specific existing custom authentication extension
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

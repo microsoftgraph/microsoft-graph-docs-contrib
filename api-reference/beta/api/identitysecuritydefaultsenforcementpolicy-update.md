@@ -3,7 +3,7 @@ title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 ms.localizationpriority: medium
 author: "Sammak"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,14 +19,10 @@ Update the properties of an [identitySecurityDefaultsEnforcementPolicy](../resou
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
+<!-- { "blockType": "permissions", "name": "identitysecuritydefaultsenforcementpolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitysecuritydefaultsenforcementpolicy-update-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +36,7 @@ PATCH /policies/identitySecurityDefaultsEnforcementPolicy
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -59,7 +55,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,7 +108,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

@@ -3,7 +3,7 @@ author: "daspek"
 title: "contentTypeOrder resource type"
 ms.localizationpriority: medium
 description: "Specifies in which order a content type appears in the selection UI."
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

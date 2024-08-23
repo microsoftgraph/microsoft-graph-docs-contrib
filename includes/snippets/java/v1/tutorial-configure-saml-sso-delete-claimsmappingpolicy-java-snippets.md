@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.policies().claimsMappingPolicies("a4b35718-fd5e-4ca8-8248-a3c9934b1b78")
-	.buildRequest()
-	.delete();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+graphClient.policies().claimsMappingPolicies().byClaimsMappingPolicyId("{claimsMappingPolicy-id}").delete();
+
 
 ```

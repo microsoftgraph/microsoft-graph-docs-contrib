@@ -3,7 +3,7 @@ title: "verifiableCredentialVerified resource type"
 description: "Represents the status where the service has validated the verifiable credential that the user presented."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialVerified"

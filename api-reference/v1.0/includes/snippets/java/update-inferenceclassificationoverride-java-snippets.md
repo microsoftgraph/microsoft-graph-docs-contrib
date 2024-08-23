@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 InferenceClassificationOverride inferenceClassificationOverride = new InferenceClassificationOverride();
-inferenceClassificationOverride.classifyAs = InferenceClassificationType.FOCUSED;
+inferenceClassificationOverride.setClassifyAs(InferenceClassificationType.Focused);
+InferenceClassificationOverride result = graphClient.me().inferenceClassification().overrides().byInferenceClassificationOverrideId("{inferenceClassificationOverride-id}").patch(inferenceClassificationOverride);
 
-graphClient.me().inferenceClassification().overrides("{id}")
-	.buildRequest()
-	.patch(inferenceClassificationOverride);
 
 ```

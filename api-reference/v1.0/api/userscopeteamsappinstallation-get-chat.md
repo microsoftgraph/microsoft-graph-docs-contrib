@@ -4,7 +4,7 @@ description: "Retrieve one-on-one chat between the specified user and the Teams 
 author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get chat between user and teamsApp
@@ -17,13 +17,10 @@ Retrieve the [chat](../resources/chat.md) of the specified [user](../resources/u
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+<!-- { "blockType": "permissions", "name": "userscopeteamsappinstallation_get_chat" } -->
+[!INCLUDE [permissions-table](../includes/permissions/userscopeteamsappinstallation-get-chat-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an instance of [
 
 ### Request
 
-The following is an example of a request that lists one-on-one chats between the specified user and the Teams app.
+The following example shows a request that lists one-on-one chats between the specified user and the Teams app.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,6 +130,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

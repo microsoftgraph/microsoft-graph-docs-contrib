@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
-	.buildRequest()
-	.filter("appDefinitions/any(a:a/bot ne null)")
-	.expand("appDefinitions($expand=bot)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+TeamsAppCollectionResponse result = graphClient.appCatalogs().teamsApps().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"appDefinitions($expand=bot)"};
+	requestConfiguration.queryParameters.filter = "appDefinitions/any(a:a/bot ne null)";
+});
+
 
 ```

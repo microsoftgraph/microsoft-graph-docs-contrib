@@ -3,7 +3,7 @@ title: "managementIntentInfo resource type"
 description: "Represents relationship information for a management intent."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents relationship information for a management intent.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.managementIntentInfo"

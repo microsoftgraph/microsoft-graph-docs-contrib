@@ -33,6 +33,9 @@ $params = @{
 	windowsSettings = @{
 		language = "en-US"
 	}
+	windowsSetting = @{
+		locale = "en-US"
+	}
 	provisioningType = "dedicated"
 }
 

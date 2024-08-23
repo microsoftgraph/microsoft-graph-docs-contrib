@@ -2,8 +2,8 @@
 title: "win32LobAppRuleOperator enum type"
 description: "Contains properties for detection operator."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

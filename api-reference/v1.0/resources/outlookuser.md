@@ -3,7 +3,7 @@ title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Represents the Outlook services available to a user.
 |:---------------|:--------|:----------|
 |[Create category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
 |[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection |Get all the categories that have been defined for the user.|
-|[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that is supported for the user, as configured on the user's mailbox server. |
-|[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that is supported for the user, as configured on the user's mailbox server. |
+|[Get language choices](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that is supported for the user, as configured on the user's mailbox server. |
+|[Get time zone choices](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that is supported for the user, as configured on the user's mailbox server. |
 
 
 ## Properties

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.cross_tenant_identity_sync_policy_partner import CrossTenantIdentitySyncPolicyPartner
+from msgraph.generated.models.cross_tenant_user_sync_inbound import CrossTenantUserSyncInbound
 
 graph_client = GraphServiceClient(credentials, scopes)
 

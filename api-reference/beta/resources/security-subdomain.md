@@ -3,7 +3,7 @@ title: "subdomain resource type"
 description: "Represents an internet domain that is part of a primary domain"
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ For every subdomain, there can be a new set of IP addresses to which the domain 
 
 | Method                                                                | Return type                                                                         | Description                                                                                                                 |
 | :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| [Get subdomain](../api/security-subdomain-get.md)                     | [microsoft.graph.security.subdomain](../resources/security-subdomain.md)            | Read the properties and relationships of a [microsoft.graph.security.subdomain](../resources/security-subdomain.md) object. |
-| [List subdomains for a host](../api/security-host-list-subdomains.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection | Get a list of **subdomain** resources of a host.                                                                            |
+| [Get](../api/security-subdomain-get.md)                     | [microsoft.graph.security.subdomain](../resources/security-subdomain.md)            | Read the properties and relationships of a [microsoft.graph.security.subdomain](../resources/security-subdomain.md) object. |
+| [List](../api/security-host-list-subdomains.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection | Get a list of **subdomain** resources of a host.                                                                            |
 
 ## Properties
 
@@ -39,7 +39,7 @@ For every subdomain, there can be a new set of IP addresses to which the domain 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -12,11 +12,11 @@ $params = @{
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
-				"Microsoft.CloudPC/CloudPCs/Read"
-				"Microsoft.CloudPC/CloudPCs/Reprovision"
-			)
-		}
+			"Microsoft.CloudPC/CloudPCs/Read"
+		"Microsoft.CloudPC/CloudPCs/Reprovision"
 	)
+}
+)
 }
 
 Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params

@@ -3,7 +3,7 @@ title: "clientUserAgent resource type"
 description: "The clientUserAgent type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -24,12 +24,12 @@ the [userAgent](callrecords-useragent.md) type.
 |headerValue|String|User-agent header value reported by this endpoint.|
 |platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
 |productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`.  Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `azureCommunicationServices`.|
-|communicationServiceId|String|Immutable resource identifier of the Azure Communication Service associated with this endpoint based on [Communication Services APIs](https://azure.microsoft.com/en-us/services/communication-services/).|
+|communicationServiceId|String|Immutable resource identifier of the Azure Communication Service associated with this endpoint based on [Communication Services APIs](https://azure.microsoft.com/services/communication-services/).|
 |azureADAppId|String|The unique identifier of the Microsoft Entra application used by this endpoint.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

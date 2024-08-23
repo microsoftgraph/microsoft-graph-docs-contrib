@@ -3,7 +3,7 @@ title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -28,13 +28,10 @@ Teams live event attendee report **(deprecated)** is an online meeting artifact.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "onlinemeeting_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
@@ -86,6 +83,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - \* This scenario only supports application token and doesn't support application access policy.
 > - **joinWebUrl** must be URL encoded.
+>- The format of `joinWebUrl` might differ from the following examples, depending on how the URLs were obtained. These variations don't affect how `joinWebUrl` is used in the API.
 >- **joinMeetingId** is the meeting ID to be used to join a meeting.
 
 ## Optional query parameters
@@ -94,7 +92,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language  | Language. Optional. |
 
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
@@ -121,7 +119,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -258,7 +256,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 > **Note:** The meeting ID has been truncated for readability.
 
@@ -366,7 +364,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token", "sampleKeys": ["https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d"]} -->
@@ -476,7 +474,7 @@ You can retrieve meeting information via the **joinMeetingId** by using either a
 
 #### Request
 
-The following is an example of a request that uses a user (delegated) token.
+The following example shows a request that uses a user (delegated) token.
 
 # [HTTP](#tab/http)
 <!-- {

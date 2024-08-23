@@ -3,7 +3,7 @@ title: "Microsoft Purview Information Protection labeling overview"
 description: "Microsoft Purview Information Protection labeling helps organizations to classify, label, and protect data based on Microsoft 365 Security and Compliance Center Sensitivity Labels."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 ---
 
 # Information Protection overview

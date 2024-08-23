@@ -3,7 +3,7 @@ title: "Get place"
 description: "Retrieve the properties and relationships of a place object."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -22,17 +22,14 @@ The **place** object can be one of the following types:
 
 The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+<!-- { "blockType": "permissions", "name": "place_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-get-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ For more information about OData query options, see [OData query parameters](/gr
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -78,10 +75,6 @@ The following example specifies the **id** of a **room** to get its properties.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
@@ -136,7 +129,8 @@ Content-type: application/json
     ],
     "audioDeviceName": null,
     "videoDeviceName": null,
-    "displayDeviceName": "surface hub"
+    "displayDeviceName": "surface hub",
+    "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
 }
 ```
 ### Example 2: Get a workspace
@@ -155,10 +149,6 @@ The following example specifies the **id** of a **workspace** to get its propert
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-workspace-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workspace-javascript-snippets.md)]
@@ -208,7 +198,8 @@ Content-type: application/json
     "isWheelChairAccessible": false,
     "tags": [
       "bean bags"
-    ]
+    ],
+    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
 }
 ```
 ### Example 3: Get a room list
@@ -226,10 +217,6 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
@@ -268,7 +255,8 @@ Content-type: application/json
   },
   "geoCoordinates": null,
   "phone": null,
-  "emailAddress": "bldg1@contoso.com"
+  "emailAddress": "bldg1@contoso.com",
+  "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
 ```
 

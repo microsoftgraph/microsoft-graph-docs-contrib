@@ -3,7 +3,7 @@ title: "teamworkHardwareConfiguration resource type"
 description: "Represents the details about the hardware configuration for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Represents the details about the hardware configuration for a Microsoft Teams-en
 |hdmiIngest|[teamworkPeripheral](../resources/teamworkperipheral.md)|The product details about the HDMI ingest of a device.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkHardwareConfiguration"

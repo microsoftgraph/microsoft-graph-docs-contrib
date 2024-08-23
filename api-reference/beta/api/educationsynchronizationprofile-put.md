@@ -1,28 +1,27 @@
 ---
-title: "Update an educationSynchronizationProfile"
+title: "Update an educationSynchronizationProfile (deprecated)"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Update an educationSynchronizationProfile
+# Update an educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
+
 Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "educationsynchronizationprofile_put" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsynchronizationprofile-put-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +32,7 @@ PUT /education/synchronizationProfiles
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string | application/json. Required. |
 
 ## Request body
@@ -44,7 +43,7 @@ If successful, this method returns a `202, Accepted` response code and a [synchr
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
@@ -97,7 +96,7 @@ Content-type: application/json
 ```
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

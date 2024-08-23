@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Teams.Item.Members.Add;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Teams.Item.Members.Add.AddPostRequestBody
+var requestBody = new AddPostRequestBody
 {
 	Values = new List<ConversationMember>
 	{
@@ -41,7 +43,9 @@ var requestBody = new Microsoft.Graph.Beta.Teams.Item.Members.Add.AddPostRequest
 		},
 	},
 };
-var result = await graphClient.Teams["{team-id}"].Members.Add.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Members.Add.PostAsAddPostResponseAsync(requestBody);
 
 
 ```

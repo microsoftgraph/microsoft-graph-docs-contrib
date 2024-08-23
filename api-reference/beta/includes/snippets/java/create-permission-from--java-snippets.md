@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Permission permission = new Permission();
-LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("write");
-permission.roles = rolesList;
-LinkedList<IdentitySet> grantedToIdentitiesList = new LinkedList<IdentitySet>();
-IdentitySet grantedToIdentities = new IdentitySet();
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("write");
+permission.setRoles(roles);
+LinkedList<IdentitySet> grantedToIdentities = new LinkedList<IdentitySet>();
+IdentitySet identitySet = new IdentitySet();
 Identity application = new Identity();
-application.id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e";
-application.displayName = "Contoso Time Manager App";
-grantedToIdentities.application = application;
-grantedToIdentitiesList.add(grantedToIdentities);
-permission.grantedToIdentities = grantedToIdentitiesList;
+application.setId("89ea5c94-7736-4e25-95ad-3fa95f62b66e");
+application.setDisplayName("Contoso Time Manager App");
+identitySet.setApplication(application);
+grantedToIdentities.add(identitySet);
+permission.setGrantedToIdentities(grantedToIdentities);
+Permission result = graphClient.sites().bySiteId("{site-id}").permissions().post(permission);
 
-graphClient.sites("f2d90359-865b-4b6c-8848-d2722dd630e5").permissions()
-	.buildRequest()
-	.post(permission);
 
 ```

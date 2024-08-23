@@ -3,7 +3,7 @@ title: "dynamicColumnValue resource type"
 description: "Represents a dynamic column in a huntingRowResult row."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.dynamicColumnValue",

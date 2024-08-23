@@ -3,7 +3,7 @@ title: "Delete onlineMeeting"
 description: "Delete an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -16,14 +16,13 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
-| Delegated (personal Microsoft account) | Not supported.                        |
-| Application                            | OnlineMeetings.ReadWrite.All*         |
+<!-- { "blockType": "permissions", "name": "onlinemeeting_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-delete-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
+> [!IMPORTANT]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 To get an **onlineMeeting** using the meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
@@ -40,7 +39,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

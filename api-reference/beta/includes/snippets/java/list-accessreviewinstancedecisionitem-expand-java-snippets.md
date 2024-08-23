@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AccessReviewInstanceDecisionItemFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().accessReviews().decisions()
-	.filterByCurrentUser(AccessReviewInstanceDecisionItemFilterByCurrentUserParameterSet
-		.newBuilder()
-		.withOn('reviewer')
-		.build())
-	.buildRequest()
-	.expand("instance($expand=definition)")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.identityGovernance().accessReviews().decisions().filterByCurrentUserWithOn("reviewer").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"instance($expand=definition)"};
+});
+
 
 ```

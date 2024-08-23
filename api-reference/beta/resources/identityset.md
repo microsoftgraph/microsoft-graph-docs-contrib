@@ -4,7 +4,7 @@ description: "Represents a keyed collection of identity resources."
 title: "identitySet resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.subservice: entra-users
 ---
 # identitySet resource type
 
@@ -29,9 +29,13 @@ Represents a keyed collection of [identity](identity.md) resources. It is used t
 | phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
 | user        | [identity](identity.md) | Optional. The user associated with this action.         |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -64,7 +68,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 For examples that show how to use **identitySet** resources, see [call](call.md).
 

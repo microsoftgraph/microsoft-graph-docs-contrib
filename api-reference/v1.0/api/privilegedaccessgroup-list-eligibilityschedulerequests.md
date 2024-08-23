@@ -3,7 +3,7 @@ title: "List eligibilityScheduleRequests"
 description: "Get a list of the privilegedAccessGroupEligibilityScheduleRequest objects and their properties."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,13 @@ Namespace: microsoft.graph
 
 Get a list of the [privilegedAccessGroupEligibilityScheduleRequest](../resources/privilegedaccessgroupeligibilityschedulerequest.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "privilegedaccessgroup_list_eligibilityschedulerequests" } -->
+[!INCLUDE [permissions-table](../includes/permissions/privilegedaccessgroup-list-eligibilityschedulerequests-permissions.md)]
 
 [!INCLUDE [rbac-pim-groups-apis-read-eligibilityschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-read-eligibilityschedulerequests.md)]
 
@@ -44,7 +41,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -58,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Retrieve all the eligibility requests scoped to a group and a principal
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -160,7 +157,7 @@ Content-Type: application/json
 ### Example 2: Retrieve specific properties of all eligibility requests scoped to a group and a principal
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

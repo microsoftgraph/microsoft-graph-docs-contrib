@@ -3,7 +3,7 @@ title: "Get deviceLocalCredentialInfo"
 description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,13 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) for a specified device object. 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "devicelocalcredentialinfo_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
 
 To access the actual passwords on the device by using the `$select=credentials` query parameter, the app must be assigned the DeviceLocalCredential.Read.All permission. DeviceLocalCredential.ReadBasic.All is insufficient.
 
@@ -38,7 +37,7 @@ GET /directory/deviceLocalCredentials/{deviceId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |User-Agent|The identifier for the calling application. This value contains information about the operating system and the browser used. Required.|
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
@@ -58,10 +57,11 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 ### Example 1: Get a device's local administrator account credential info
 
 #### Request
-The following is an example of the request. This example doesn't return the **credentials** property.
+The following example shows a request. This example doesn't return the **credentials** property.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -74,7 +74,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -101,10 +101,11 @@ Content-type: application/json
 ### Example 2: Get the device local administrator account credential info with the **credentials** property
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "name": "devicelocalcredentialinfo_get_credentials",
   "id": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
 }
 -->
@@ -116,7 +117,7 @@ ocp-client-version: "1.2"
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

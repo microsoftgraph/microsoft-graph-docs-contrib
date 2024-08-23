@@ -2,8 +2,9 @@
 title: "List conditionalAccessTemplates"
 description: "Get a list of the conditionalAccessTemplate objects and their properties."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -15,13 +16,10 @@ Get a list of the [conditionalAccessTemplate](../resources/conditionalaccesstemp
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                                       |
-|:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.All |
+<!-- { "blockType": "permissions", "name": "conditionalaccessroot_list_templates" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-list-templates-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +37,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 ## Request headers
 | Name            |Description|
 |:----------------|:----------|
-| Authorization   | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional. |
 
 ## Request body
@@ -54,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all conditional access policy templates
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -181,7 +179,7 @@ Content-Type: application/json
 ### Example 2: List name, description, id, scenarios of templates whose scenarios contain "secureFoundation"
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

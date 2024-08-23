@@ -3,7 +3,7 @@ title: "BaseItemVersion resource type"
 description: "The **baseItemVersion** resource represents a previous version of an item or entity."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

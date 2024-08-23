@@ -2,15 +2,14 @@
 title: "deviceComplianceScriptDeviceState resource type"
 description: "Contains properties for device run state of the device compliance script."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceComplianceScriptDeviceState resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -30,7 +29,7 @@ Contains properties for device run state of the device compliance script.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device compliance script device state entity. This property is read-only.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device compliance script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device compliance script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|

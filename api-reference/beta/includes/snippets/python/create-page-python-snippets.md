@@ -4,7 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.site_page import SitePage
+from msgraph_beta.generated.models.page_layout_type import PageLayoutType
+from msgraph_beta.generated.models.title_area import TitleArea
+from msgraph_beta.generated.models.title_area_layout_type import TitleAreaLayoutType
+from msgraph_beta.generated.models.title_area_text_alignment_type import TitleAreaTextAlignmentType
+from msgraph_beta.generated.models.canvas_layout import CanvasLayout
+from msgraph_beta.generated.models.horizontal_section import HorizontalSection
+from msgraph_beta.generated.models.horizontal_section_layout_type import HorizontalSectionLayoutType
+from msgraph_beta.generated.models.section_emphasis_type import SectionEmphasisType
+from msgraph_beta.generated.models.horizontal_section_column import HorizontalSectionColumn
+from msgraph_beta.generated.models.web_part import WebPart
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -17,7 +28,7 @@ request_body = SitePage(
 	show_recommended_pages = False,
 	title_area = TitleArea(
 		enable_gradient_effect = True,
-		image_web_url = "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+		image_web_url = "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
 		layout = TitleAreaLayoutType.ColorBlock,
 		show_author = True,
 		show_published_date = False,

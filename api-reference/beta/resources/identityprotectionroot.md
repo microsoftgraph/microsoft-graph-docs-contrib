@@ -3,7 +3,7 @@ title: "identityProtectionRoot resource type"
 description: "Container for navigation properties for Microsoft Graph identity protection resources."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ None.
 |servicePrincipalRiskDetections| [servicePrincipalRiskDetection](serviceprincipalriskdetection.md) collection | Represents information about detected at-risk service principals in a Microsoft Entra tenant.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

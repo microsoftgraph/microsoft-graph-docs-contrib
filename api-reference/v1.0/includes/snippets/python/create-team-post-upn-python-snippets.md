@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.team import Team
+from msgraph.generated.models.conversation_member import ConversationMember
+from msgraph.generated.models.aad_user_conversation_member import AadUserConversationMember
 
 graph_client = GraphServiceClient(credentials, scopes)
 

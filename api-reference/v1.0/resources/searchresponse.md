@@ -3,7 +3,7 @@ title: "searchResponse resource type"
 description: "Description of the searchResponse"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ Represents results from a search query, and the terms used for the query.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

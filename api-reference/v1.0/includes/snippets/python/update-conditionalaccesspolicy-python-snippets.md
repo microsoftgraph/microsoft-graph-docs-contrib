@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
+from msgraph.generated.models.risk_level import RiskLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

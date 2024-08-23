@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphsecurity.NewUpdateTiIndicatorsPostRequestBody()
 
@@ -30,13 +30,14 @@ tiIndicator1.SetId(&id)
 additionalInformation := "test again"
 tiIndicator1.SetAdditionalInformation(&additionalInformation) 
 
-value := []graphmodels.tiIndicatorable {
+value := []graphmodels.TiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
 }
 requestBody.SetValue(value)
 
-updateTiIndicators, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(context.Background(), requestBody, nil)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+updateTiIndicators, err := graphClient.Security().TiIndicators().UpdateTiIndicators().PostAsUpdateTiIndicatorsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

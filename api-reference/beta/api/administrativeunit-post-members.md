@@ -3,7 +3,7 @@ title: "Add a member"
 description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -23,22 +23,29 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions to add an existing user, group, or device
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ### Permissions to create a new group
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All and AdministrativeUnit.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | Group.Create and AdministrativeUnit.Read.All, Group.ReadWrite.All and AdministrativeUnit.Read.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+To create a new group in an administrative unit, the calling principal must be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) at the scope of the administrative unit:
+
+* Groups Administrator
+* User Administrator
+
+When these roles are assigned to a service principal, additional permissions are required to read the directory, such as assignment to the Directory Readers role, or having Microsoft Graph application permissions, such as Directory.Read.All.
 
 ## HTTP request
 
@@ -57,7 +64,7 @@ POST /administrativeUnits/{id}/members
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
@@ -70,10 +77,10 @@ The following table shows the properties of the [group](../resources/group.md) r
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
 | description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Privileged Role Administrator is the least privileged role to set the value of this property. Optional. |
+| mailEnabled | Boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
+| securityEnabled | Boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
@@ -145,7 +152,7 @@ In the request body, provide the `id` of the [user](../resources/user.md), [grou
 #### Response
 
 The following example shows the response.
- 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -259,7 +266,7 @@ Content-type: application/json
      "preferredDataLocation": "CAN",
      "preferredLanguage": null,
      "proxyAddresses": [
-         "SMTP:golfassist@contoso.onmicrosoft.com"
+         "SMTP:golfassist@contoso.com"
      ],
      "renewedDateTime": "2018-12-22T02:21:05Z",
      "resourceBehaviorOptions": [],

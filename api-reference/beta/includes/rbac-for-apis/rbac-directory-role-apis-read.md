@@ -1,9 +1,10 @@
 ---
 author: DougKirschner
+ms.reviewer: msodsrbac
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must be a member user or have at least one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
 
 - User Administrator
 - Helpdesk Administrator
@@ -11,8 +12,6 @@ For delegated scenarios, the calling user must be a member user or have at least
 - Billing Administrator
 - User
 - Mailbox Administrator
-- Partner Tier1 Support
-- Partner Tier2 Support
 - Directory Readers
 - Directory Writers
 - Application Administrator
@@ -40,6 +39,6 @@ For delegated scenarios, the calling user must be a member user or have at least
 - Global Reader
 - Volume Licensing Business Center User
 - Volume Licensing Service Center User
-- Modern Commerce User
+- Modern Commerce Administrator
 - Microsoft Store for Business User
 - Directory Reviewer

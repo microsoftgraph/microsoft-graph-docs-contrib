@@ -3,7 +3,7 @@ title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,24 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
-meeting request to a new recipient. 
+This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the
+meeting request to a new recipient.
 
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action 
-also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's 
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action
+also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+<!-- { "blockType": "permissions", "name": "event_forward" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-forward-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -70,7 +67,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,12 +82,12 @@ Content-type: application/json
   "ToRecipients":[
       {
         "EmailAddress": {
-          "Address":"danas@contoso.onmicrosoft.com",
+          "Address":"danas@contoso.com",
           "Name":"Dana Swope"
         }
       }
      ],
-  "Comment": "Dana, hope you can make this meeting." 
+  "Comment": "Dana, hope you can make this meeting."
 }
 
 ```
@@ -130,7 +127,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

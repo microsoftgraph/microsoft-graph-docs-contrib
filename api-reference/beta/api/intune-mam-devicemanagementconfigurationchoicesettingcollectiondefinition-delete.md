@@ -2,8 +2,8 @@
 title: "Delete deviceManagementConfigurationChoiceSettingCollectionDefinition"
 description: "Deletes a deviceManagementConfigurationChoiceSettingCollectionDefinition."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

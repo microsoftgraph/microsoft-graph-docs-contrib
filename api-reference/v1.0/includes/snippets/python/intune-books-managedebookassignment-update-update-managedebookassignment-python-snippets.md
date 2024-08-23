@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_e_book_assignment import ManagedEBookAssignment
+from msgraph.generated.models.all_licensed_users_assignment_target import AllLicensedUsersAssignmentTarget
+from msgraph.generated.models.install_intent import InstallIntent
 
 graph_client = GraphServiceClient(credentials, scopes)
 

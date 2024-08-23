@@ -1,9 +1,9 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "List all webinars where the specified user is either the organizer or a coorganizer."
+description: "Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -13,17 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a coorganizer.
+Get a list of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects where the specified user is either the organizer or a coorganizer.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All|
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_getbyuseridandrole" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-getbyuseridandrole-permissions.md)]
 
 > [!IMPORTANT]
 >
@@ -52,7 +49,7 @@ In the request URL, provide the following query parameters with values.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -60,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects in the response body.
 
 ## Examples
 
@@ -131,7 +128,10 @@ Content-Type: application/json
       "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
       "status": "published",
       "displayName": "The Impact of Tech on Our Lives",
-      "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
+      "description": {
+        "contentType": "text",
+        "content": "Discusses how technology has changed the way we communicate, work, and interact with each other."
+      },
       "startDateTime": {
         "dateTime": "2023-03-30T10:00:00",
         "timeZone": "PacificSt"
@@ -157,7 +157,10 @@ Content-Type: application/json
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
-      ]
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      }
     }
   ]
 }

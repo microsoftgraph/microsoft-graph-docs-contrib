@@ -3,7 +3,7 @@ title: "accessReviewReviewerScope resource type"
 description: "Represents reviewers of an access review or user consent requests."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ For more about configuration options for **reviewers**, see [Assign reviewers to
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewReviewerScope"

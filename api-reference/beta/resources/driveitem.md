@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Represents a file, folder, or other item stored in a drive."
 title: driveItem
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -39,44 +39,46 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 ## Methods
 
-| Method                                                                       | REST Path                                                              |
-|:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| [Get item](../api/driveitem-get.md)                                          | `GET /drive/items/{item-id}`                                           |
-| [List activities](../api/activities-list.md)                                 | `GET /drive/items/{item-id}/activities`                                |
-| [Get analytics][]                                                            | `GET /drive/items/{item-id}/analytics`                                 |
-| [Get activities by interval][]                                               | `GET /drive/items/{item-id}/getActivitiesByInterval`                   |
-| [List children](../api/driveitem-list-children.md)                           | `GET /drive/items/{item-id}/children`                                  |
-| [List versions](../api/driveitem-list-versions.md)                           | `GET /drive/items/{item-id}/versions`                                  |
-| [Create item](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
-| [Update item](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
-| [Upload content](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
-| [Download content](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
-| [Download specific file format][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
-| [Delete item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
-| [PermanentDelete item](../api/driveitem-permanentDelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`                |
-| [Restore item](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
-| [Move item](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
-| [Copy item](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
-| [Search items](../api/driveitem-search.md)                                   | `GET /drive/items/{item-id}/search(q='text')`                          |
-| [List changes in a drive](../api/driveitem-delta.md)                         | `GET /drive/root/delta`                                                |
-| [Follow item](../api/driveitem-follow.md)                                    | `POST /drives/{drive-id}/items/{item-id}/follow`                       |
-| [Unfollow item](../api/driveitem-unfollow.md)                                | `POST /drives/{drive-id}/items/{item-id}/unfollow`                     |
-| [List thumbnails](../api/driveitem-list-thumbnails.md)                       | `GET /drive/items/{item-id}/thumbnails`                                |
-| [Create sharing link](../api/driveitem-createlink.md)                        | `POST /drive/items/{item-id}/createLink`                               |
-| [Add permissions](../api/driveitem-invite.md)                                | `POST /drive/items/{item-id}/invite`                                   |
-| [List permissions](../api/driveitem-list-permissions.md)                     | `GET /drive/items/{item-id}/permissions`                               |
-| [Delete permission](../api/permission-delete.md)                             | `DELETE /drive/items/{item-id}/permissions/{perm-id}`                  |
-| [Get WebSocket channel][getWebSocket]                                        | `GET /drive/root/subscriptions/socketIo`                               |
-| [Preview item][item-preview]                                                 | `POST /drive/items/{item-id}/preview`                                  |
-| [Check in](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`                        |
-| [Check out](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`                       |
-| [Revoke grants](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
-| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
-| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel`                   |
-| [Get retention label](../api/driveitem-getretentionlabel.md)                 | `GET /drives/{drive-id}/items/{id}/retentionLabel`                |
-| [Set retention label](../api/driveitem-setretentionlabel.md)                 | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
-| [Remove retention label](../api/driveitem-removeretentionlabel.md)           | `DELETE /drives/{drive-id}/items/{id}/retentionLabel`             |
-| [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
+| Method                                                                       | Return Type | Description |
+|:-----------------------------------------------------------------------------|:------------|:-------------|
+| [Get item](../api/driveitem-get.md)                                          | [driveItem](../resources/driveitem.md) |Retrieve the metadata for a **driveItem** in a drive.|
+| [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.|
+| [Get activities by interval][]                                               | [itemActivityStat](../resources/itemactivitystat.md) | Get a collection of **itemActivityStats** within the specified time interval.|
+| [List children](../api/driveitem-list-children.md)                           | [driveItem](../resources/driveitem.md) collection | Return a collection of **driveItems** in the children relationship of a **driveItem**.|
+| [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion][] collection | Retrieve the versions of a file in the current user's drive.|
+| [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
+| [Update item](../api/driveitem-update.md)                                    | [driveItem](../resources/driveitem.md) | Update a **driveItem** in the drive.|
+| [Upload](../api/driveitem-put-content.md)                            | [driveItem](../resources/driveitem.md) | Upload content to the **driveItem**.|
+| [Download file content](../api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
+| [Download specific file format][download-format]                             | download URL | Download content of a **driveItem** with a specific format.|
+| [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
+| [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
+| [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Create a copy of a **driveItem** (including any children).|
+| [Search items](../api/driveitem-search.md)                                   | [driveItem](../resources/driveitem.md) collection | Search the hierarchy of items for items matching a query.|
+| [Track changes](../api/driveitem-delta.md)                         | delta link | List any changes in the drive.|
+| [Follow item](../api/driveitem-follow.md)                                    | [driveItem](../resources/driveitem.md)  | Follow a **driveItem**.|
+| [Unfollow item](../api/driveitem-unfollow.md)                                | None | Unfollow a **driveItem**.|
+| [Get thumbnails](../api/driveitem-list-thumbnails.md)                       | [driveItem](../resources/driveitem.md) collection | List **driveItems** with their thumbnails.|
+| [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the **driveItem**.|
+| [Add permissions](../api/driveitem-invite.md)                                | [permission][] collection | Send a sharing invite to a user.|
+| [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on a **driveItem**.|
+| [Create permission](../api/driveitem-post-permissions.md)                     | [permission][] | Create a permission on a **driveItem**.|
+| [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
+| [Revoke grants on sharing link](../api/permission-revokegrants.md)| [permission][] | Revoke access to a **listItem** or **driveItem** granted via a sharing link by removing the specified recipient from the link.|
+| [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
+| [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|
+| [Check in files](../api/driveitem-checkin.md)                                      | None| Check in a checked out **driveItem** resource, which makes the version of the document available to others. |
+| [Check out files](../api/driveitem-checkout.md)                                    | None| Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is [checked in](../api/driveitem-checkin.md). |
+| [Discard checkout](../api/driveitem-discardcheckout.md)                       | None| Discard a previously [checked out](../api/driveitem-checkout.md) **driveItem**.|
+| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) | Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. |
+| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | String | Asynchronously assign a sensitivity label to a **driveItem**.|
+| [Get retention label](../api/driveitem-getretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Get metadata information for a retention label applied on a **driveItem**. |
+| [Set retention label](../api/driveitem-setretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Apply (set) a retention label on a **driveItem** (files and folders). |
+| [Remove retention label](../api/driveitem-removeretentionlabel.md)           | None | Remove a retention label from a **driveItem**. |
+| [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
+| [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
+
 
 ## Properties
 
@@ -84,7 +86,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
 | bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
-| content              | Stream             | The content stream, if the item represents a file.
+| content (deprecated) | Stream             | The content stream, if the item represents a file. The **content** property will have a potentially breaking change in behavior in the future. It will stream content directly instead of redirecting. To proactively opt in to the new behavior ahead of time, use the **contentStream** property instead.
+| contentStream        | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application, which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag isn't changed if only the metadata is changed. **Note** This property isn't returned if the item is a folder. Read-only.
@@ -104,18 +107,19 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
-| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.
+| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that might affect the state of the driveItem are pending completion. Read-only.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
 | publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property isn't returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
 | root                 | [root][]           | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
 | searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
-| shared               | [shared][]         | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
+| shared               | [shared][]         | Indicates that the item was shared with others and provides information about the shared state of the item. Read-only.
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
 | source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
 | video                | [video][]          | Video metadata, if the item is a video. Read-only.
+| viewpoint            | [driveItemViewpoint][] | Returns information specific to the calling user for this drive item. Read-only.
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.
 
@@ -133,10 +137,10 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-| retentionLabel     | [itemRetentionLabel][]      | Information about retention label and settings enforced on the **driveItem**. Read-write.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
+| retentionLabel     | [itemRetentionLabel][]      | Information about retention label and settings enforced on the **driveItem**. Read-write.
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
-| thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| thumbnails         | [thumbnailSet][] collection | Collection of [thumbnailSet][] objects associated with the item. For more information, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, access to the workbook API to work with the spreadsheet's contents. Nullable.
 
@@ -151,15 +155,17 @@ These properties are temporary and either define behavior the service should per
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication isn't required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | This instance annotation can be used to instruct the service to download the contents of the URL when issuing a PUT request, and stores it as the file. Write-only.
 
-**Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
-The URL is only available for a short period of time (1 hour) before it's invalidated.
-Removing file permissions for a user may not immediately invalidate the URL.
-
->**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+>**Notes:**
+>The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
+>
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL is invalidated after for a short period of time (1 hour).
+Removing file permissions for a user might not immediately invalidate the URL.
+>
+>Using the `@microsoft.graph.sourceUrl` property for file uploading is [not supported](/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true) in OneDrive for Business, SharePoint Online, and SharePoint Server 2016.
 
 ## JSON representation
 
-The following shows an example of the JSON representation of a **driveItem** resource.
+The following JSON representation shows the resource type.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
@@ -167,7 +173,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "shared", "content","contentStream", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
@@ -176,6 +182,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
+  "contentStream": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -199,13 +206,14 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
+  "viewpoint": { "@odata.type": "microsoft.graph.driveItemViewpoint" },
   "webDavUrl": "string",
 
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "itemRetentionLabel": [{ "@odata.type": "microsoft.graph.itemRetentionLabel" }],
+  "retentionLabel": { "@odata.type": "microsoft.graph.itemRetentionLabel" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -271,6 +279,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
+[driveItemViewpoint]: driveitemviewpoint.md
 [workbook]: workbook.md
 [user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md

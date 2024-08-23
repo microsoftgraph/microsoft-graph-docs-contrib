@@ -3,7 +3,7 @@ title: "aadUserConversationMemberResult resource type"
 description: "Resource for modeling responses of bulk operations on aadUserConversationMember."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ This resource is the derivative of the [actionResultPart](actionresultpart.md) r
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Add members in bulk to team](../api/conversationmembers-add.md)
 

@@ -3,7 +3,7 @@ title: "documentSetVersionItem resource type"
 description: "Represents an item that is a part of a captured document set version."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Represents an [item](../resources/listitem.md) that is a part of a captured [doc
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.documentSetVersionItem"

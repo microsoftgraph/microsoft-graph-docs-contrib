@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new OnlineMeeting
 {
@@ -14,6 +15,8 @@ var requestBody = new OnlineMeeting
 	EndDateTime = DateTimeOffset.Parse("2020-09-09T15:03:30.8566356-07:00"),
 	Subject = "Patch Meeting Subject",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
 
 

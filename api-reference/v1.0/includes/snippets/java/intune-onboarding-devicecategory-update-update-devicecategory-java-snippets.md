@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceCategory deviceCategory = new DeviceCategory();
-deviceCategory.displayName = "Display Name value";
-deviceCategory.description = "Description value";
+deviceCategory.setOdataType("#microsoft.graph.deviceCategory");
+deviceCategory.setDisplayName("Display Name value");
+deviceCategory.setDescription("Description value");
+DeviceCategory result = graphClient.deviceManagement().deviceCategories().byDeviceCategoryId("{deviceCategory-id}").patch(deviceCategory);
 
-graphClient.deviceManagement().deviceCategories("{deviceCategoryId}")
-	.buildRequest()
-	.patch(deviceCategory);
 
 ```

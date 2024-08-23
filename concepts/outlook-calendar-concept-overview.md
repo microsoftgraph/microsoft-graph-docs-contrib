@@ -3,7 +3,7 @@ title: "Outlook calendar API overview"
 description: "Use Outlook calendar to schedule meetings, manage emails and contacts, organize your time, and collaborate all in one place on the web, mobile, or desktop."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
@@ -99,19 +99,16 @@ Looking for the API reference for this service?
 - [Outlook calendar API in Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true)
 - [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
-- Select and try calendar sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
-- Learn about:
-  - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
-  - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
-  - [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
-  - [Create or set an event as an online meeting in an Outlook calendar](outlook-calendar-online-meetings.md)
-  - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
-  - [Getting shared events](outlook-get-shared-events-calendars.md)
-  - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
-  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
-- Take a look at the Outlook [calendar API](/graph/api/resources/calendar) reference.
+- [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
+- [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
+- [Propose meeting times in an Outlook calendar](outlook-calendar-meeting-proposals.md)
+- [Create or set an event as an online meeting in an Outlook calendar](outlook-calendar-online-meetings.md)
+- [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
+- [Getting shared events](outlook-get-shared-events-calendars.md)
+- [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
+- [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
 <!-- Replace the last item with the calendar API overview when it's published.
 -->

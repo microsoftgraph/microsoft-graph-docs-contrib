@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewTiIndicator()
 action := graphmodels.ALERT_TIACTION 
@@ -56,6 +56,7 @@ requestBody.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 requestBody.SetTlpLevel(&tlpLevel) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 tiIndicators, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
 
 

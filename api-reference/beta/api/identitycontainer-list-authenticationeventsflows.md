@@ -3,7 +3,7 @@ title: "List authenticationEventsFlows"
 description: "Get a list of the authenticationEventsFlow objects and their properties."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,10 @@ Get a collection of authentication events policies that are derived from [authen
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.Read.All, EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.Read.All, EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identitycontainer_list_authenticationeventsflows" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-authenticationeventsflows-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
 
@@ -46,7 +43,7 @@ This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData qu
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -60,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all user flows
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -348,7 +345,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -394,7 +391,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 ---
 
 #### Response
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -543,7 +540,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -590,7 +587,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 ---
 
 #### Response
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -873,7 +870,7 @@ Content-Type: application/json
 ### Example 4: List user flow associated with specific application ID
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -920,7 +917,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 
 #### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

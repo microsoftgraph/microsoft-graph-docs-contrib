@@ -3,7 +3,7 @@ title: "tenantInformation resource type"
 description: "Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -14,6 +14,13 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants.
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Find tenant by domain name](../api/tenantrelationship-findtenantinformationbydomainname.md) | tenantInformation | Given a domain name, search for a tenant and read its information. |
+| [Find tenant by tenant ID](../api/tenantrelationship-findtenantinformationbytenantid.md) | tenantInformation | Given a tenant ID, search for a tenant and read its information. |
 
 ## Properties
 
@@ -30,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

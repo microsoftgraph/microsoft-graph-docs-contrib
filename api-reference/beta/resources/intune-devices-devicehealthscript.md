@@ -2,18 +2,18 @@
 title: "deviceHealthScript resource type"
 description: "Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceHealthScript resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices.
 
@@ -25,12 +25,12 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |[Create deviceHealthScript](../api/intune-devices-devicehealthscript-create.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Create a new [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.|
 |[Delete deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|None|Deletes a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Update deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Update the properties of a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.|
-|[assign action](../api/intune-devices-devicehealthscript-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-devices-devicehealthscript-assign.md)|None||
 |[updateGlobalScript action](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Update the Proprietary Device Health Script|
 |[getGlobalScriptHighestAvailableVersion action](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Update the Proprietary Device Health Script|
-|[enableGlobalScripts action](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|None|Not yet documented|
-|[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Not yet documented|
-|[getRemediationSummary function](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Not yet documented|
+|[enableGlobalScripts action](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|None||
+|[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)||
+|[getRemediationSummary function](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)||
 |[getRemediationHistory function](../api/intune-devices-devicehealthscript-getremediationhistory.md)|[deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md)|Function to get the number of remediations by a device health scripts|
 
 ## Properties

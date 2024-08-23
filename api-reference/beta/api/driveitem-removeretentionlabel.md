@@ -3,7 +3,7 @@ title: "driveItem: removeRetentionLabel"
 description: "Remove a retention label from a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -21,13 +21,10 @@ For information about retention labels from an administrator's perspective, see 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                                     |
-|:---------------------------------------|:--------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All, Sites.FullControl.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                  |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
+<!-- { "blockType": "permissions", "name": "driveitem_removeretentionlabel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
 >**Note:** `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
 
@@ -39,14 +36,14 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 DELETE /driveitem/retentionLabel
-DELETE /drives/{drive-id}/items/{id}/retentionLabel
+DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -60,7 +57,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following shows an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +107,7 @@ DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "hostComponent resource type"
 description: "Represents a web component that provides details about a web page or server infrastructure gleaned from a web crawl or scan."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Read the properties and relationships of a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
+|[Get](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Read the properties and relationships of a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
 
 ## Properties
 
@@ -46,7 +46,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

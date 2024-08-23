@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DriveItem driveItem = new DriveItem();
-driveItem.name = "New Folder";
+driveItem.setName("New Folder");
 Folder folder = new Folder();
-driveItem.folder = folder;
-driveItem.additionalDataManager().put("@microsoft.graph.conflictBehavior", new JsonPrimitive("rename"));
+driveItem.setFolder(folder);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("@microsoft.graph.conflictBehavior", "rename");
+driveItem.setAdditionalData(additionalData);
+DriveItem result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").children().post(driveItem);
 
-graphClient.me().drive().root().children()
-	.buildRequest()
-	.post(driveItem);
 
 ```

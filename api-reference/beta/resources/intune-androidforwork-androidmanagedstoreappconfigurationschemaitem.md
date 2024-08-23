@@ -2,18 +2,18 @@
 title: "androidManagedStoreAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android application's custom configuration schema."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # androidManagedStoreAppConfigurationSchemaItem resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Single configuration item inside an Android application's custom configuration schema.
 
@@ -30,7 +30,7 @@ Single configuration item inside an Android application's custom configuration s
 |defaultStringValue|String|Default value for string type items, if specified by the app developer|
 |defaultStringArrayValue|String collection|Default value for string array type items, if specified by the app developer|
 |dataType|[androidManagedStoreAppConfigurationSchemaItemDataType](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|The type of value this item describes. Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
-|selections|[keyValuePair](../resources/intune-androidforwork-keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
+|selections|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
 
 ## Relationships
 None

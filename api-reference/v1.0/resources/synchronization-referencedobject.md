@@ -4,7 +4,7 @@ description: "Describes a reference to another object defined in the same direct
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # referencedObject resource type
@@ -22,7 +22,7 @@ Describes a reference to another object defined in the same [directory definitio
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "plannerPlan resource type"
 description: "Represents a plan in Microsoft 365."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -17,11 +17,12 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
-|[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
-|[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Create](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create a **plannerPlan** object.|
+|[Get](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
+|[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
+|[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -42,7 +43,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

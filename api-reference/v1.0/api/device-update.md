@@ -3,7 +3,7 @@ title: "Update device"
 description: "Update the properties of a registered device."
 author: sandeo-MSFT
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -18,17 +18,14 @@ Only certain properties of a device can be updated through approved Mobile Devic
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "device_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/device-update-permissions.md)]
 
 In application-only scenarios and for non-Windows devices, that is, where the **operatingSystem** property is not `Windows`, the app can update only the **extensionAttributes** property.
 
-The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
+The calling user must also be in at least the *Intune Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). A calling user in the *Cloud Device Administrator* role can only enable or disable devices and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ PATCH /devices(deviceId='{deviceId}')
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -51,7 +48,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers in *Global Administrator* and *Cloud Device Administrator* roles can update this property.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers with at least the *Cloud Device Administrator* role can update this property.|
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
 |displayName|String|The display name for the device.|
@@ -159,7 +156,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-device-extensionattributes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

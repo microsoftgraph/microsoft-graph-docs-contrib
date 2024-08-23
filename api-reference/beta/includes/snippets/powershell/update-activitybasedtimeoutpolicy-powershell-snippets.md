@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	definition = @(
-		"definition-value"
-	)
-	displayName = "displayName-value"
-	isOrganizationDefault = $true
+	"definition-value"
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
 }
 
 Update-MgBetaPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params

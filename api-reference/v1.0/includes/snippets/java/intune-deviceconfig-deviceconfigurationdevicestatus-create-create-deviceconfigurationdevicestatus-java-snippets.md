@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceConfigurationDeviceStatus deviceConfigurationDeviceStatus = new DeviceConfigurationDeviceStatus();
-deviceConfigurationDeviceStatus.deviceDisplayName = "Device Display Name value";
-deviceConfigurationDeviceStatus.userName = "User Name value";
-deviceConfigurationDeviceStatus.deviceModel = "Device Model value";
-deviceConfigurationDeviceStatus.complianceGracePeriodExpirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:56:44.951111+00:00");
-deviceConfigurationDeviceStatus.status = ComplianceStatus.NOT_APPLICABLE;
-deviceConfigurationDeviceStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-deviceConfigurationDeviceStatus.userPrincipalName = "User Principal Name value";
+deviceConfigurationDeviceStatus.setOdataType("#microsoft.graph.deviceConfigurationDeviceStatus");
+deviceConfigurationDeviceStatus.setDeviceDisplayName("Device Display Name value");
+deviceConfigurationDeviceStatus.setUserName("User Name value");
+deviceConfigurationDeviceStatus.setDeviceModel("Device Model value");
+OffsetDateTime complianceGracePeriodExpirationDateTime = OffsetDateTime.parse("2016-12-31T23:56:44.951111-08:00");
+deviceConfigurationDeviceStatus.setComplianceGracePeriodExpirationDateTime(complianceGracePeriodExpirationDateTime);
+deviceConfigurationDeviceStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+deviceConfigurationDeviceStatus.setLastReportedDateTime(lastReportedDateTime);
+deviceConfigurationDeviceStatus.setUserPrincipalName("User Principal Name value");
+DeviceConfigurationDeviceStatus result = graphClient.deviceManagement().deviceConfigurations().byDeviceConfigurationId("{deviceConfiguration-id}").deviceStatuses().post(deviceConfigurationDeviceStatus);
 
-graphClient.deviceManagement().deviceConfigurations("{deviceConfigurationId}").deviceStatuses()
-	.buildRequest()
-	.post(deviceConfigurationDeviceStatus);
 
 ```

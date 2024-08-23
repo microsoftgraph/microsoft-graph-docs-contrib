@@ -3,7 +3,7 @@ title: "teamsAppRemovedEventMessageDetail resource type"
 description: "Represents the details of an event message about teamsApp removed."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |teamsAppId|String|Unique identifier of the **teamsApp**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppRemovedEventMessageDetail",
@@ -44,6 +44,6 @@ The following is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related content
 - [Example response for an event message about **teamsApp** removed](/graph/system-messages/#teams-app-removed)
 - For more information about other types of events, see [System messages](/graph/system-messages).

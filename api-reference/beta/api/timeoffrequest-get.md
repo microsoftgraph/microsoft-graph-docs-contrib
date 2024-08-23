@@ -3,7 +3,7 @@ title: "Get timeOffRequest"
 description: "Retrieve the properties and relationships of timeoffrequest object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -19,15 +19,13 @@ Retrieve the properties and relationships of a [timeoffrequest](../resources/tim
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All*  |
+<!-- { "blockType": "permissions", "name": "timeoffrequest_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-get-permissions.md)]
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+> [!NOTE]
+> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
 
 ## HTTP request
 
@@ -39,13 +37,13 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body

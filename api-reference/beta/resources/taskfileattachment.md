@@ -3,7 +3,7 @@ title: "taskFileAttachment resource type"
 description: "Represents a file, such as a text file or Word document, attached to a todoTask."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -21,11 +21,11 @@ Inherits from [attachmentBase](../resources/attachmentbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List attachments](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
-|[Create attachment](../api/todotask-post-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Add a new [taskFileAttachment](../resources/taskfileattachment.md) object to a [todoTask](../resources/todotask.md).|
-|[Create upload session](../api/taskfileattachment-createuploadsession.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Create an upload session to iteratively upload ranges of a file as an attachment to a [todoTask](../resources/todotask.md).|
-|[Get attachment](../api/taskfileattachment-get.md)|[taskFileAttachment](../resources/taskfileattachment.md)|Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.|
-|[Delete attachment](../api/taskfileattachment-delete.md)|None|Delete a [taskFileAttachment](../resources/taskfileattachment.md) object.|
+|[List](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
+|[Attach small file](../api/todotask-post-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Add a new [taskFileAttachment](../resources/taskfileattachment.md) object to a [todoTask](../resources/todotask.md).|
+|[Attach all file sizes](../api/taskfileattachment-createuploadsession.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Create an upload session to iteratively upload ranges of a file as an attachment to a [todoTask](../resources/todotask.md).|
+|[Get](../api/taskfileattachment-get.md)|[taskFileAttachment](../resources/taskfileattachment.md)|Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.|
+|[Delete](../api/taskfileattachment-delete.md)|None|Delete a [taskFileAttachment](../resources/taskfileattachment.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +42,7 @@ Inherits from [attachmentBase](../resources/attachmentbase.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

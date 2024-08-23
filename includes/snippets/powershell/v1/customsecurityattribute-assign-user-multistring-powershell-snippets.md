@@ -12,11 +12,11 @@ $params = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			"Project@odata.type" = "#Collection(String)"
 			Project = @(
-				"Baker"
-				"Cascade"
-			)
-		}
-	}
+			"Baker"
+		"Cascade"
+	)
+}
+}
 }
 
 Update-MgUser -UserId $userId -BodyParameter $params

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphidentitygovernance.NewActivatePostRequestBody()
 
@@ -26,12 +26,13 @@ user1 := graphmodels.NewUser()
 id := "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
 user1.SetId(&id) 
 
-subjects := []graphmodels.userable {
+subjects := []graphmodels.Userable {
 	user,
 	user1,
 }
 requestBody.SetSubjects(subjects)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").MicrosoftGraphIdentityGovernanceActivate().Post(context.Background(), requestBody, nil)
 
 

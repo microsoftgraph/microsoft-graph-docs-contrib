@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	roles = @(
-		"read"
-	)
+	"read"
+)
 }
 
 Update-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params

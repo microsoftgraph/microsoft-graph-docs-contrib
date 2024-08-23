@@ -4,7 +4,7 @@ description: "Defines how the synchronization should be performed for the synchr
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationRule resource type
@@ -23,7 +23,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
+|containerFilter|[containerFilter](../resources/synchronization-containerfilter.md)|The names and identifiers of organizational units that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request. Currently only supported for Azure AD Connect cloud sync scenarios.|
 |editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and shouldn't be changed.|
+|groupFilter|[groupFilter](../resources/synchronization-groupfilter.md)|The names and identifiers of groups that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request. Currently only supported for Azure AD Connect cloud sync scenarios.|
 |id             |String     |Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.|
 |metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values shouldn't be changed.|
 |name           |String     |Human-readable name of the synchronization rule. Not nullable.|
@@ -33,8 +35,7 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 |targetDirectoryName       |String    |Name of the target directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## JSON representation
-
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -46,7 +47,13 @@ Here's a JSON representation of the resource.
 
 ```json
 {
+  "containerFilter": {
+    "@odata.type": "microsoft.graph.containerFilter"
+  },
   "editable": true,
+  "groupFilter": {
+    "@odata.type": "microsoft.graph.groupFilter"
+  },
   "id": "String",
   "metadata": [
     {

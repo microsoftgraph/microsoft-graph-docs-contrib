@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-UserCollectionPage users = graphClient.users()
-	.buildRequest( requestOptions )
-	.filter("NOT(imAddresses/any(i:i eq 'admin@contoso.com'))")
-	.get();
+UserCollectionResponse result = graphClient.users().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "NOT(imAddresses/any(i:i eq 'admin@contoso.com'))";
+	requestConfiguration.queryParameters.count = true;
+	requestConfiguration.headers.add("ConsistencyLevel", "eventual");
+});
+
 
 ```

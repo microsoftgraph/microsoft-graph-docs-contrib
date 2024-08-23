@@ -3,8 +3,9 @@ title: "redundantAssignmentAlertIncident resource type"
 description: "Represents an alert incident that is triggered if a user goes over a specified number of days without activating a role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Redundant assignment
 ---
 
 # redundantAssignmentAlertIncident resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if a user goes over a specified number of days without activating a role. Assigning users privileged roles that they do not need increases the risks of a security attack. It is also easier for security threats to remain unnoticed in accounts that are not actively used.
+Represents an alert incident that is triggered if a user goes over a specified number of days without activating a role. Assigning users privileged roles that they don't need increases the risks of a security attack. It's also easier for security threats to remain unnoticed in accounts that aren't actively used.
 
 The threshold that triggers this incident when it's reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
 
@@ -35,7 +36,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

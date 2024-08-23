@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: The site resource provides metadata and relationships for a SharePoint site.
 title: site resource type
 ms.localizationpriority: high
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List sites across geographies][]            | GET /site/getAllSites                                      |
+| [List sites across geographies][]                 | GET /site/getAllSites                                       |
+| [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -41,8 +42,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
+| [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
+| [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -50,9 +53,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/baseSitePage-list.md
+[List pages]: ../api/basesitepage-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
+[List subsites for a site]: ../api/site-list-subsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
@@ -78,8 +82,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
 | **displayName**          | string             | The full title for the site. Read-only.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
-| **name**                 | string             | The name / title of the item.                                                                  |
-| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **name**                 | string             | The name/title of the item.                                                                  |
+| **root**                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
 | **settings**             | [siteSettings]     | The settings on this site. Read-only.                                |
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
@@ -101,18 +105,20 @@ The `root` identifier always references the root site for a given target, as fol
 
 | Relationship    | Type                                                                            | Description                                                                                                                                |
 | :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place in this site.                                                                          |
+| analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place on this site.                                                                          |
 | columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
+|contentModels    | [contentModel](../resources/contentmodel.md) collection| The collection of content models applied to this site.|
 | contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
+|documentProcessingJobs |[documentProcessingJob](../resources/documentprocessingjob.md) collection  | The document processing jobs running on this site. |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
-| externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site. |
-| items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection cannot be enumerated.                                                     |
+| externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
+| items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |
 | lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
 | operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
-| pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list in this site.                                                                                |
+| pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list on this site.                                                                                |
 | permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
-| recycleBin      | [recycleBin][]                                                                 | The collection of [recycleBinItems](../resources/recyclebinitem.md) under this site. |
+| recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
 | sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
 | termStore       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
 
@@ -135,7 +141,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

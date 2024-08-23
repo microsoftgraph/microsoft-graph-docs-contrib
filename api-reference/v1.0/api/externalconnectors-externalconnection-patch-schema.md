@@ -1,27 +1,24 @@
 ---
-title: "Create schema"
-description: "Create the schema for a Microsoft Search connection."
+title: "Create or update schema"
+description: "Create or update the schema for a Microsoft Search connection."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
-# Create schema
+# Create or update schema
 Namespace: microsoft.graph.externalConnectors
 
-Create a new [schema](../resources/externalconnectors-schema.md) object.
+Create a new or update an existing [schema](../resources/externalconnectors-schema.md) for a Microsoft Search [connection](../resources/externalconnectors-externalconnection.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "externalconnectors_externalconnection_patch_schema" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## HTTP request
 
@@ -32,6 +29,16 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /external/connections/{id}/schema
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
 When you register a custom item schema, the **schema** object **must** have the **baseType** property set to `microsoft.graph.externalItem` and **must** contain the **properties** property. The **properties** object **must** contain at least one property, up to a maximum of 128.
@@ -40,13 +47,13 @@ When you register a custom item schema, the **schema** object **must** have the 
 
 If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
+>**Note:** It can take between 5 and 15 minutes for the schema to be created. We recommend that you use the URL in the `Location` response header to get the operation status.
+
 ## Examples
 
-### Example: Register custom schema asynchronously
+### Request
 
-#### Request
-
-The following example shows a request.
+The following example shows a request to register a new or update an existing custom schema asynchronously.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +128,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+### Response
 
 The following example shows the response.
 

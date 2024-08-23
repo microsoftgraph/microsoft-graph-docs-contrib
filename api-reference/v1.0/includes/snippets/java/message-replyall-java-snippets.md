@@ -4,17 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "comment-value";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().messages("{id}")
-	.replyAll(MessageReplyAllParameterSet
-		.newBuilder()
-		.withMessage(null)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.users.item.messages.item.replyall.ReplyAllPostRequestBody replyAllPostRequestBody = new com.microsoft.graph.users.item.messages.item.replyall.ReplyAllPostRequestBody();
+replyAllPostRequestBody.setComment("comment-value");
+graphClient.me().messages().byMessageId("{message-id}").replyAll().post(replyAllPostRequestBody);
+
 
 ```

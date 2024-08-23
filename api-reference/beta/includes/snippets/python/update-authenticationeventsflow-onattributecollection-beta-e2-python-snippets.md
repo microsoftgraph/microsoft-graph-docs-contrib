@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.external_users_self_service_sign_up_events_flow import ExternalUsersSelfServiceSignUpEventsFlow
+from msgraph_beta.generated.models.on_attribute_collection_external_users_self_service_sign_up import OnAttributeCollectionExternalUsersSelfServiceSignUp
+from msgraph_beta.generated.models.authentication_attribute_collection_page import AuthenticationAttributeCollectionPage
+from msgraph_beta.generated.models.authentication_attribute_collection_page_view_configuration import AuthenticationAttributeCollectionPageViewConfiguration
+from msgraph_beta.generated.models.authentication_attribute_collection_input_configuration import AuthenticationAttributeCollectionInputConfiguration
+from msgraph_beta.generated.models.authentication_attribute_collection_input_type import AuthenticationAttributeCollectionInputType
+from msgraph_beta.generated.models.authentication_attribute_collection_option_configuration import AuthenticationAttributeCollectionOptionConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -40,7 +47,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							hidden = False,
 							editable = True,
 							write_to_directory = True,
-							required = False,
+							required = True,
 							validation_reg_ex = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							options = [
 							],
@@ -53,22 +60,30 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							hidden = False,
 							editable = True,
 							write_to_directory = True,
-							required = False,
+							required = True,
 							validation_reg_ex = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							options = [
 							],
 						),
 						AuthenticationAttributeCollectionInputConfiguration(
-							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-							label = "Favorite color",
-							input_type = AuthenticationAttributeCollectionInputType.Text,
+							attribute = "extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry",
+							label = "Rock music or Country",
+							input_type = AuthenticationAttributeCollectionInputType.RadioSingleSelect,
 							default_value = None,
 							hidden = False,
 							editable = True,
 							write_to_directory = True,
-							required = False,
+							required = True,
 							validation_reg_ex = "^.*",
 							options = [
+								AuthenticationAttributeCollectionOptionConfiguration(
+									label = "Rock music",
+									value = "Rock",
+								),
+								AuthenticationAttributeCollectionOptionConfiguration(
+									label = "Country music",
+									value = "Country",
+								),
 							],
 						),
 					],

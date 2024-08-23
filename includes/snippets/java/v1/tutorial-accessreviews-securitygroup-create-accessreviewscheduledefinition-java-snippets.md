@@ -4,43 +4,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReviewScheduleDefinition();
-accessReviewScheduleDefinition.displayName = "One-time self-review for members of Building security";
-accessReviewScheduleDefinition.descriptionForAdmins = "One-time self-review for members of Building security";
-accessReviewScheduleDefinition.descriptionForReviewers = "One-time self-review for members of Building security";
+accessReviewScheduleDefinition.setDisplayName("One-time self-review for members of Building security");
+accessReviewScheduleDefinition.setDescriptionForAdmins("One-time self-review for members of Building security");
+accessReviewScheduleDefinition.setDescriptionForReviewers("One-time self-review for members of Building security");
 AccessReviewScope scope = new AccessReviewScope();
-scope.query = "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers";
-scope.queryType = "MicrosoftGraph";
-accessReviewScheduleDefinition.scope = scope;
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("query", "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers");
+additionalData.put("queryType", "MicrosoftGraph");
+scope.setAdditionalData(additionalData);
+accessReviewScheduleDefinition.setScope(scope);
 AccessReviewScope instanceEnumerationScope = new AccessReviewScope();
-instanceEnumerationScope.query = "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4";
-instanceEnumerationScope.queryType = "MicrosoftGraph";
-accessReviewScheduleDefinition.instanceEnumerationScope = instanceEnumerationScope;
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("query", "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4");
+additionalData1.put("queryType", "MicrosoftGraph");
+instanceEnumerationScope.setAdditionalData(additionalData1);
+accessReviewScheduleDefinition.setInstanceEnumerationScope(instanceEnumerationScope);
 AccessReviewScheduleSettings settings = new AccessReviewScheduleSettings();
-settings.mailNotificationsEnabled = true;
-settings.reminderNotificationsEnabled = true;
-settings.justificationRequiredOnApproval = true;
-settings.defaultDecisionEnabled = true;
-settings.defaultDecision = "Deny";
-settings.instanceDurationInDays = 5;
-settings.autoApplyDecisionsEnabled = true;
-settings.recommendationsEnabled = true;
+settings.setMailNotificationsEnabled(true);
+settings.setReminderNotificationsEnabled(true);
+settings.setJustificationRequiredOnApproval(true);
+settings.setDefaultDecisionEnabled(true);
+settings.setDefaultDecision("Deny");
+settings.setInstanceDurationInDays(5);
+settings.setAutoApplyDecisionsEnabled(true);
+settings.setRecommendationsEnabled(true);
 PatternedRecurrence recurrence = new PatternedRecurrence();
-recurrence.pattern = null;
+recurrence.setPattern(null);
 RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NUMBERED;
-range.numberOfOccurrences = 0;
-range.recurrenceTimeZone = null;
-range.startDate = new DateOnly(1900,1,1);
-range.endDate = new DateOnly(1900,1,1);
-recurrence.range = range;
-settings.recurrence = recurrence;
-accessReviewScheduleDefinition.settings = settings;
+range.setType(RecurrenceRangeType.Numbered);
+range.setNumberOfOccurrences(0);
+range.setRecurrenceTimeZone(null);
+LocalDate startDate = LocalDate.parse("2024-03-21");
+range.setStartDate(startDate);
+LocalDate endDate = LocalDate.parse("2024-03-30");
+range.setEndDate(endDate);
+recurrence.setRange(range);
+settings.setRecurrence(recurrence);
+accessReviewScheduleDefinition.setSettings(settings);
+AccessReviewScheduleDefinition result = graphClient.identityGovernance().accessReviews().definitions().post(accessReviewScheduleDefinition);
 
-graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.post(accessReviewScheduleDefinition);
 
 ```

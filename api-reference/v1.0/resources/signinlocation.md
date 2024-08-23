@@ -3,7 +3,7 @@ title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Provides the city, state and country/region from where the sign-in happened.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

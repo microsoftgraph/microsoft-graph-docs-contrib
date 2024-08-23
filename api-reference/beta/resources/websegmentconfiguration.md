@@ -3,7 +3,7 @@ title: "webSegmentConfiguration resource type"
 description: "Represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -23,10 +23,13 @@ Inherits from [segmentsConfiguration](segmentconfiguration.md).
 |:-------------|:------------|:------------|
 |applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onPremisesApplicationSegment"

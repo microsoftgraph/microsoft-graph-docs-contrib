@@ -3,7 +3,7 @@ title: "appConsentRequestScope resource type"
 description: "Details of the dynamic permission scopes for which access is requested."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConsentRequestScope"

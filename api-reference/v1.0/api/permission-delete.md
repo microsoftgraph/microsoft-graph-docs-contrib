@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
 description: "Remove access to a DriveItem."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
@@ -20,13 +20,10 @@ The **inheritedFrom** property must be `null`.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "permission_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permission-delete-permissions.md)]
 
 ## HTTP request
 
@@ -40,11 +37,13 @@ DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+| if-match      | String. If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Response
 
@@ -59,7 +58,7 @@ This example removes the permission identified as {perm-id} from the item {item-
 <!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 # [C#](#tab/csharp)

@@ -3,7 +3,7 @@ title: "contentLabel resource type"
 description: "Describes the contentLabel object that defines Microsoft Purview Information Protection metadata on an object."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Describes the **contentLabel** object that defines Microsoft Purview Information
 | sensitivityLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The **sensitivityLabel** referred to by the content metadata. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.contentLabel"

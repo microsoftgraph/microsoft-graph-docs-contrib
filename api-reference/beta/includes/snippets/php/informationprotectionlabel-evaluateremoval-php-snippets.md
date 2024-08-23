@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateRemoval\EvaluateRemovalRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\InformationProtection\Policy\Labels\EvaluateRemoval\EvaluateRemovalPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ContentInfo;
+use Microsoft\Graph\Beta\Generated\Models\ContentFormat;
+use Microsoft\Graph\Beta\Generated\Models\ContentState;
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Beta\Generated\Models\DowngradeJustification;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EvaluateRemovalPostRequestBody();

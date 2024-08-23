@@ -3,7 +3,7 @@ title: "membershipOutlierInsight resource type"
 description: "In the Microsoft Entra access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ Inherits from [governanceInsight](governanceinsight.md).
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

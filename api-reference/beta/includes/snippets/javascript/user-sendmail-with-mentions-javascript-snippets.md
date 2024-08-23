@@ -17,7 +17,7 @@ const sendMail = {
       {
         emailAddress: {
           name: 'Samantha Booth',
-          address: 'samanthab@contoso.onmicrosoft.com'
+          address: 'samanthab@contoso.com'
         }
       }
     ],
@@ -25,7 +25,7 @@ const sendMail = {
       {
         mentioned: {
           name: 'Dana Swope',
-          address: 'danas@contoso.onmicrosoft.com'
+          address: 'danas@contoso.com'
         }
       }
     ]

@@ -4,7 +4,7 @@ description: "Represents a key-value pair where the key is a string and the valu
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # stringKeyAttributeMappingSourceValuePair resource type
@@ -23,7 +23,7 @@ Represents a key-value pair where the key is a string and the value is [attribut
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

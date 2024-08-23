@@ -2,7 +2,7 @@
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.
 
-## Permissions
+        ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application||
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## HTTP Request
 
@@ -57,7 +59,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

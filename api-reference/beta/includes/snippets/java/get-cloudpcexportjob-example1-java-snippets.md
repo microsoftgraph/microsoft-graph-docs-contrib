@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcExportJob cloudPcExportJob = graphClient.deviceManagement().virtualEndpoint().reports().exportJobs("TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CloudPcExportJob result = graphClient.deviceManagement().virtualEndpoint().reports().exportJobs().byCloudPcExportJobId("{cloudPcExportJob-id}").get();
+
 
 ```

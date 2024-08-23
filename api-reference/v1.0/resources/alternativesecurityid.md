@@ -3,7 +3,7 @@ title: "alternativeSecurityId resource type"
 description: "For internal use only."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ For internal use only. This complex type will be deprecated in the future.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

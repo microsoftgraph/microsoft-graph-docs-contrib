@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 AccessPackageAssignmentRequest accessPackageAssignmentRequest = new AccessPackageAssignmentRequest();
-accessPackageAssignmentRequest.requestType = "UserAdd";
+accessPackageAssignmentRequest.setRequestType("UserAdd");
 AccessPackageAssignment accessPackageAssignment = new AccessPackageAssignment();
-accessPackageAssignment.accessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b";
-accessPackageAssignmentRequest.accessPackageAssignment = accessPackageAssignment;
-accessPackageAssignmentRequest.justification = "Need access to New Hire access package";
+accessPackageAssignment.setAccessPackageId("a914b616-e04e-476b-aa37-91038f0b165b");
+accessPackageAssignmentRequest.setAccessPackageAssignment(accessPackageAssignment);
+accessPackageAssignmentRequest.setJustification("Need access to New Hire access package");
+AccessPackageAssignmentRequest result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests().post(accessPackageAssignmentRequest);
 
-graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
-	.buildRequest()
-	.post(accessPackageAssignmentRequest);
 
 ```

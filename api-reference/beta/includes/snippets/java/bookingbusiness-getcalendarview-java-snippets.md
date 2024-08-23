@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("start", "2018-04-30T00:00:00Z"));
-requestOptions.add(new QueryOption("end", "2018-05-10T00:00:00Z"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-BookingAppointmentCollectionPage calendarView = graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").calendarView()
-	.buildRequest( requestOptions )
-	.get();
+BookingAppointmentCollectionResponse result = graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").calendarView().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.start = "2018-04-30T00:00:00Z";
+	requestConfiguration.queryParameters.end = "2018-05-10T00:00:00Z";
+});
+
 
 ```

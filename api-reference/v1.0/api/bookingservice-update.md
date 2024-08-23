@@ -3,7 +3,7 @@ title: "Update bookingService"
 description: "Update the properties of a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -20,16 +20,13 @@ The following are some examples you can customize for a service:
 - Any time buffer to set up before or finish up after the service
 - [Scheduling policy](../resources/bookingschedulingpolicy.md) parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingservice_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingservice-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,16 +52,17 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String| The unique identifier for the **bookingService**. Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
-|isHiddenFromCustomers|Boolean|If `true`, the service isn't available to customers for booking.|
-|isLocationOnline|Boolean|If `true` it indicates that the appointments for the service will be held online. Default value is `false`.|
+|isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) is generated for the appointment booked for this service.|
+|isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
+|isHiddenFromCustomers|Boolean|`True` indicates that the service isn't available to customers for booking.|
+|isLocationOnline|Boolean|`True` indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
+|smsNotificationsEnabled|Boolean|`True` indicates that SMS notifications can be sent to the customers for the appointment of the service. The default value is `false`.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
 
 ## Response
@@ -75,10 +73,10 @@ The following example updates the duration of the specified service.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {
@@ -88,7 +86,7 @@ Content-type: application/json
 ```
 
 ### Response
-The Here's an example of the response.
+The The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

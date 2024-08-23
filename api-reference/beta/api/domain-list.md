@@ -1,9 +1,9 @@
 ---
 title: "List domains"
 description: "Retrieve a list of domain objects."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -18,24 +18,19 @@ Retrieve a list of domain objects.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-The work or school account needs to belong to one of the following roles:
+<!-- { "blockType": "permissions", "name": "domain_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/domain-list-permissions.md)]
 
-* Global Administrator
+The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
 * User Administrator
 * Helpdesk Administrator
 * Service Support Administrator
 * Billing Administrator
 * Mailbox Administrator
-* Partner Tier 1 Support
-* Partner Tier2 Support
 * Directory Readers
 * Directory Writers
 * AdHoc License Administrator
@@ -64,7 +59,7 @@ The work or school account needs to belong to one of the following roles:
 * Global Reader
 * Volume Licensing Business Center User
 * Volume Licensing Service Center User
-* Modern Commerce User
+* Modern Commerce Administrator
 * Microsoft Store for Business User
 * Directory Reviewer
 * Domain Name Administrator
@@ -77,24 +72,32 @@ The work or school account needs to belong to one of the following roles:
 ```http
 GET /domains
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Accept         | application/json; |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Accept        | application/json;         |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [domain](../resources/domain.md) objects in the response body.
-## Example
-##### Request
 
+## Examples
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,8 +142,9 @@ GET https://graph.microsoft.com/beta/domains
 
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+### Response
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

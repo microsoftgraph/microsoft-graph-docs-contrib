@@ -5,13 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ExtensionProperty;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExtensionProperty();
 $requestBody->setName('jobGroup');
 $requestBody->setDataType('String');
+$requestBody->setIsMultiValued(true);
 $requestBody->setTargetObjects(['User', 	]);
 
 $result = $graphServiceClient->applications()->byApplicationId('application-id')->extensionProperties()->post($requestBody)->wait();

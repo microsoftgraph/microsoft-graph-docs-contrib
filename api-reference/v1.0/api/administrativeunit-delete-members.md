@@ -3,7 +3,7 @@ title: "Remove a member"
 description: "Use this API to remove a member (user, group, or device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -16,19 +16,13 @@ Use this API to remove a member (user, group, or device) from an administrative 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "administrativeunit_delete_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/administrativeunit-delete-members-permissions.md)]
 
-To remove a member from an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
-
-* Privileged Role Administrator
-* Global Administrator
+To remove a member from an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +36,7 @@ DELETE /directory/administrativeUnits/{id}/members/{id}/$ref
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -100,7 +94,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/memb
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

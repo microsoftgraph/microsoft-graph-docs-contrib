@@ -3,7 +3,7 @@ title: "Get plannerUser"
 description: "Retrieve the properties and relationships of a plannerUser object. The returned properties include the user's favorite plans and recently viewed plans. "
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,10 @@ Retrieve the properties and relationships of a [plannerUser](../resources/planne
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Tasks.Read.All, Tasks.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "planneruser_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planneruser-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

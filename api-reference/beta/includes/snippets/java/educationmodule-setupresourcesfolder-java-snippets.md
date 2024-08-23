@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.education().classes("37d99af7-cfc5-4e3b-8566-f7d40e4a2070").modules("ba8e4215-4fb2-4dba-abe7-a8f2585177d3")
-	.setUpResourcesFolder()
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.education.classes.item.modules.item.setupresourcesfolder.SetUpResourcesFolderPostRequestBody setUpResourcesFolderPostRequestBody = new com.microsoft.graph.beta.education.classes.item.modules.item.setupresourcesfolder.SetUpResourcesFolderPostRequestBody();
+var result = graphClient.education().classes().byEducationClassId("{educationClass-id}").modules().byEducationModuleId("{educationModule-id}").setUpResourcesFolder().post(setUpResourcesFolderPostRequestBody);
+
 
 ```

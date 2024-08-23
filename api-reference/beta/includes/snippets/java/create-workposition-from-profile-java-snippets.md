@@ -4,30 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 WorkPosition workPosition = new WorkPosition();
 PositionDetail detail = new PositionDetail();
 CompanyDetail company = new CompanyDetail();
-company.displayName = "Adventureworks Ltd.";
-company.department = "Consulting";
-company.officeLocation = "AW23/344";
+company.setDisplayName("Adventureworks Ltd.");
+company.setDepartment("Consulting");
+company.setOfficeLocation("AW23/344");
 PhysicalAddress address = new PhysicalAddress();
-address.type = PhysicalAddressType.BUSINESS;
-address.street = "123 Patriachy Ponds";
-address.city = "Moscow";
-address.countryOrRegion = "Russian Federation";
-address.postalCode = "RU-34621";
-company.address = address;
-company.webUrl = "https://www.adventureworks.com";
-detail.company = company;
-detail.jobTitle = "Senior Product Branding Manager II";
-detail.role = "consulting";
-workPosition.detail = detail;
-workPosition.isCurrent = true;
+address.setType(PhysicalAddressType.Business);
+address.setStreet("123 Patriachy Ponds");
+address.setCity("Moscow");
+address.setCountryOrRegion("Russian Federation");
+address.setPostalCode("RU-34621");
+company.setAddress(address);
+company.setWebUrl("https://www.adventureworks.com");
+detail.setCompany(company);
+detail.setJobTitle("Senior Product Branding Manager II");
+detail.setRole("consulting");
+workPosition.setDetail(detail);
+workPosition.setIsCurrent(true);
+WorkPosition result = graphClient.me().profile().positions().post(workPosition);
 
-graphClient.me().profile().positions()
-	.buildRequest()
-	.post(workPosition);
 
 ```

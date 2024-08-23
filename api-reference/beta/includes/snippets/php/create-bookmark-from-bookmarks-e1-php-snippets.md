@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Search\Bookmark;
+use Microsoft\Graph\Beta\Generated\Models\Search\AnswerKeyword;
+use Microsoft\Graph\Beta\Generated\Models\DevicePlatformType;
+use Microsoft\Graph\Beta\Generated\Models\Search\AnswerVariant;
+use Microsoft\Graph\Beta\Generated\Models\Search\AnswerState;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Bookmark();
@@ -15,7 +21,7 @@ $requestBody->setWebUrl('http://www.contoso.com/');
 $requestBody->setDescription('Try or buy Contoso for Home or Business and view product information');
 $keywords = new AnswerKeyword();
 $keywords->setKeywords(['Contoso', 'install', 	]);
-$keywords->setReservedKeywords(['Contoso', 	]);
+$keywords->setReservedKeywords(['Unique keyword', 	]);
 $keywords->setMatchSimilarKeywords(true);
 $requestBody->setKeywords($keywords);
 $requestBody->setAvailabilityStartDateTime(null);

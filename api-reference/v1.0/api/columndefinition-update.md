@@ -4,7 +4,7 @@ title: "Update columnDefinition"
 description: "Update a site, a list, or a content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Update columnDefinition
@@ -18,15 +18,12 @@ Update a [site][], a [list][], or a [content type][contentType] [column][columnD
 
 ## Permissions  
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
   
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All  |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+<!-- { "blockType": "permissions", "name": "columndefinition_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/columndefinition-update-permissions.md)]
 
   
 
@@ -48,7 +45,7 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 
@@ -76,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [colu
 }-->
 
 ```http
-PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {

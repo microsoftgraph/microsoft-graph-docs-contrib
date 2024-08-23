@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OutlookCategory outlookCategory = new OutlookCategory();
-outlookCategory.displayName = "Project expenses";
-outlookCategory.color = CategoryColor.PRESET9;
+outlookCategory.setDisplayName("Project expenses");
+outlookCategory.setColor(CategoryColor.Preset9);
+OutlookCategory result = graphClient.me().outlook().masterCategories().post(outlookCategory);
 
-graphClient.me().outlook().masterCategories()
-	.buildRequest()
-	.post(outlookCategory);
 
 ```

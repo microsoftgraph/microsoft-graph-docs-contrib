@@ -3,7 +3,7 @@ title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Discover the latest schema definition for provisioning to an application.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "synchronization_directorydefinition_discover" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
@@ -39,7 +36,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 | Header        | Value                      |
 |:--------------|:---------------------------|
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +49,7 @@ If successful, this method returns a `200 OK` response with a [directoryDefiniti
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +96,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

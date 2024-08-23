@@ -32,9 +32,11 @@
       "author",
       "title",
       "description",
-      "ms.prod",
       "doc_type",
-      "ms.localizationpriority"
+      "ms.subservice"
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
     ]
   },
   "schemaDiffConfig": {

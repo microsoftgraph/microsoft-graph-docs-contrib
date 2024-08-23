@@ -3,7 +3,7 @@ title: "socialIdentityProvider resource type"
 description: "Represents social identity providers in a Microsoft Entra tenant and an Azure AD B2C tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 
@@ -18,20 +18,15 @@ For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the identity prov
 
 Configuring an identity provider in your Microsoft Entra tenant enables new Microsoft Entra B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-In an Azure AD B2C tenant, the identity provider type can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn `or `Twitter`. The following identity providers are in preview: `Weibo`, `QQ`, `WeChat`, and `GitHub`.
+In an Azure AD B2C tenant, the identity provider type can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, or `Twitter`. The following identity providers are in preview: `Weibo`, `QQ`, `WeChat`, and `GitHub`.
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to sign up and sign in using a social account supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the [socialidentityprovider](../resources/socialidentityprovider.md) object types. There is no way to retrieve only the social identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[socialidentityprovider](../resources/socialidentityprovider.md) |Create a new [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md) |Retrieve properties of a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Update](../api/identityproviderbase-update.md)|None|Update a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete a [socialidentityprovider](../resources/socialidentityprovider.md) object.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+None. 
+
+For the list of API operations for managing social identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 
@@ -49,13 +44,12 @@ Each identity provider has a process for creating an app registration. For examp
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.socialIdentityProvider"
 } -->
-
 ```json
 {
     "id": "String",

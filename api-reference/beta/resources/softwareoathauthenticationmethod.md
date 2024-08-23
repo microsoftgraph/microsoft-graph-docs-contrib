@@ -2,9 +2,11 @@
 title: "softwareOathAuthenticationMethod resource type"
 description: "A representation of a Software OATH token registered to a user. Software OATH is a multifactor authentication method."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Software OATH
 ---
 
 # softwareOathAuthenticationMethod resource type
@@ -35,7 +37,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

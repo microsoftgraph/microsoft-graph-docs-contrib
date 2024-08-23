@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance entitlement-management access-package-assignment-policies put --access-package-assignment-policy-id {accessPackageAssignmentPolicy-id} --body '{\
     "id": "5540a08f-8ab5-43f6-a923-015275799197",\
     "displayName": "policy with access package custom workflow extension",\

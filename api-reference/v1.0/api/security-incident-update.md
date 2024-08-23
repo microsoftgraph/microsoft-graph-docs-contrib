@@ -4,7 +4,7 @@ description: "Update the properties of an incident object."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -16,14 +16,11 @@ Update the properties of an [incident](../resources/security-incident.md) object
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SecurityIncident.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityIncident.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_incident_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-incident-update-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +35,7 @@ PATCH /security/incidents/{incidentId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -49,9 +46,10 @@ PATCH /security/incidents/{incidentId}
 |:---|:---|:---|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|status|microsoft.graph.security.incidentStatus|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|status|microsoft.graph.security.incidentStatus|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
+|summary|String|The overview of an attack. When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.|
 
 
 ## Response
@@ -61,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [inci
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,21 +137,26 @@ Content-Type: application/json
     "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "KaiC@contoso.onmicrosoft.com",
+    "assignedTo": "KaiC@contoso.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
     "severity": "Medium",
     "customTags": [
-      "Demo"
+        "Demo"
     ],
     "comments": [
-      {
-		"comment": "Demo incident",
-		"createdBy": "DavidS@contoso.onmicrosoft.com",
-		"createdTime": "2021-09-30T12:07:37.2756993Z"
-      }
-    ]
+        {
+            "comment": "Demo incident",
+            "createdBy": "DavidS@contoso.com",
+            "createdTime": "2021-09-30T12:07:37.2756993Z"
+        }
+    ],
+    "systemTags": [
+        "Defender Experts"
+    ],
+    "description": "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
+    "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
 }
 ```
 

@@ -3,7 +3,7 @@ title: "ediscoveryReviewSetQuery: export"
 description: "Initiate an export from a reviewSet query."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Initiate an export from a [ediscoveryReviewSetQuery](../resources/security-edisc
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoveryreviewsetquery_export" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewsetquery-export-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,7 +60,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 

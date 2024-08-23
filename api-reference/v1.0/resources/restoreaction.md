@@ -3,7 +3,7 @@ author: daspek
 title: restoreAction resource type
 description: The RestoreAction object provides information about an activity that restored an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # restoreAction resource type

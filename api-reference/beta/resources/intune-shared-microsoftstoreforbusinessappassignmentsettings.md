@@ -2,18 +2,18 @@
 title: "microsoftStoreForBusinessAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Microsoft Store for Business mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # microsoftStoreForBusinessAppAssignmentSettings resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Contains properties used to assign an Microsoft Store for Business mobile app to a group.
 

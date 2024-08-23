@@ -3,7 +3,7 @@ title: "sortProperty resource type"
 description: "Indicates the order to sort search results"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -22,9 +22,13 @@ Indicates the order to sort search results.
 |name|String|The name of the property to sort on. Required.|
 |isDescending|Boolean|`True` if the sort order is descending. Default is `false`, with the sort order as ascending. Optional.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

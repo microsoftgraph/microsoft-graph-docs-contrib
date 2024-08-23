@@ -12,10 +12,7 @@ const client = Client.init(options);
 
 const authorityTemplate = {
   '@odata.type': '#microsoft.graph.security.authorityTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+  displayName: 'Business',
 };
 
 await client.api('/security/labels/authorities')

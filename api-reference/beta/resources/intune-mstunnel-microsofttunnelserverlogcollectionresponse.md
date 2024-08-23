@@ -2,18 +2,18 @@
 title: "microsoftTunnelServerLogCollectionResponse resource type"
 description: "Entity that stores the server log collection status."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # microsoftTunnelServerLogCollectionResponse resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Entity that stores the server log collection status.
 
@@ -25,8 +25,8 @@ Entity that stores the server log collection status.
 |[Create microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-create.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Create a new [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
 |[Delete microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-delete.md)|None|Deletes a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).|
 |[Update microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-update.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Update the properties of a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
-|[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String|Not yet documented|
-|[generateDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-generatedownloadurl.md)|String|Not yet documented|
+|[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String||
+|[generateDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-generatedownloadurl.md)|String||
 
 ## Properties
 |Property|Type|Description|

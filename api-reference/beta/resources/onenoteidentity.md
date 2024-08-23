@@ -3,7 +3,7 @@ title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ In future, this type is merged with [identity](identity.md)
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

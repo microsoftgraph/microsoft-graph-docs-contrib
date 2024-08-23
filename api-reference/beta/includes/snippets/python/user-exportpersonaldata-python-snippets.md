@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.export_personal_data.export_personal_data_post_request_body import ExportPersonalDataPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

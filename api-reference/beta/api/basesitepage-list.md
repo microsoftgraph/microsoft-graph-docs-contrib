@@ -3,7 +3,7 @@ author: "rahmit"
 description: "Get the collection of baseSitePage objects from the site pages list in a site."
 title: "List baseSitePages"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -23,8 +23,8 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 | :----------- | :------------------------- |
 | [sitePage][] | Represents a regular page. |
 
-[basesitepage]: ../resources/baseSitePage.md
-[sitepage]: ../resources/sitePage.md
+[baseSitePage]: ../resources/baseSitePage.md
+[sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -32,13 +32,10 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "basesitepage_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/basesitepage-list-permissions.md)]
 
 ## HTTP request
 
@@ -56,7 +53,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -85,7 +82,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
 ```
 
 # [C#](#tab/csharp)
@@ -148,7 +145,7 @@ Content-type: application/json
       "id": "5fa48f95-2fdf-40e8-a28c-6d0d8345bcd2",
       "lastModifiedDateTime": "2023-04-16T08:37:51Z",
       "name": "Account holistic.aspx",
-      "webUrl": "SitePages/Account holistic.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Account holistic.aspx",
       "title": "CSS Global Lithuanian meter",
       "pageLayout": "article",
       "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/a830edad9050849vanaukyisx52.spgrid.com/_layouts/15/images/sitepagethumbnail.png",
@@ -162,13 +159,13 @@ Content-type: application/json
       "createdBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "parentReference": {
@@ -187,7 +184,7 @@ Content-type: application/json
       "id": "da0f67be-977e-4d09-88ac-506a1002e678",
       "lastModifiedDateTime": "2023-04-16T06:39:30Z",
       "name": "Analyst Fresh.aspx",
-      "webUrl": "SitePages/Analyst Fresh.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Analyst Fresh.aspx",
       "title": "Lesotho Account Metal Analyst du",
       "pageLayout": "article",
       "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/a830edad9050849vanaukyisx52.spgrid.com/_layouts/15/images/sitepagethumbnail.png",
@@ -201,13 +198,13 @@ Content-type: application/json
       "createdBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
           "displayName": "admin_contoso",
-          "email": "admin@contoso.onmicrosoft.com"
+          "email": "admin@contoso.com"
         }
       },
       "parentReference": {

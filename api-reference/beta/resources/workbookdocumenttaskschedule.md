@@ -3,7 +3,7 @@ title: "workbookDocumentTaskSchedule resource type"
 description: "Represents the start and due time of a workbookDocumentTask."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

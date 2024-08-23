@@ -3,7 +3,7 @@ title: "accessPackageAssignment: additionalAccess"
 description: "Retrieve a list of accessPackageAssignment objects indicating potential separation of duties conflicts or access to incompatible access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -15,13 +15,10 @@ In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-o
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "accesspackageassignment_additionalaccess" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackageassignment-additionalaccess-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

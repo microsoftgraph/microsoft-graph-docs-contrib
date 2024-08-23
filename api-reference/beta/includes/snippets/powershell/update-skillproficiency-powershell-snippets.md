@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
 	categories = @(
-		"Professional"
-	)
-	proficiency = "advancedProfessional"
+	"Professional"
+)
+proficiency = "advancedProfessional"
 }
 
 # A UPN can also be used as -UserId.

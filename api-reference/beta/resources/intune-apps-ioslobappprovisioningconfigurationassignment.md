@@ -2,18 +2,18 @@
 title: "iosLobAppProvisioningConfigurationAssignment resource type"
 description: "A class containing the properties used for Group Assignment of an iOS LOB App Provisioning and Configuration."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # iosLobAppProvisioningConfigurationAssignment resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 A class containing the properties used for Group Assignment of an iOS LOB App Provisioning and Configuration.
 
@@ -29,7 +29,7 @@ A class containing the properties used for Group Assignment of an iOS LOB App Pr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 
 ## Relationships

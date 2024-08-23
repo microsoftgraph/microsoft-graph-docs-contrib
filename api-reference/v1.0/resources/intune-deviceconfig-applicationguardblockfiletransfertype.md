@@ -2,8 +2,8 @@
 title: "applicationGuardBlockFileTransferType enum type"
 description: "Possible values for applicationGuardBlockFileTransfer"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

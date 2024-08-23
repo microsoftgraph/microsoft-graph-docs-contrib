@@ -4,43 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ServicePrincipal servicePrincipal = new ServicePrincipal();
-LinkedList<KeyCredential> keyCredentialsList = new LinkedList<KeyCredential>();
-KeyCredential keyCredentials = new KeyCredential();
-keyCredentials.customKeyIdentifier = Base64.getDecoder().decode("lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=");
-keyCredentials.endDateTime = OffsetDateTimeSerializer.deserialize("2021-04-22T22:10:13Z");
-keyCredentials.keyId = UUID.fromString("4c266507-3e74-4b91-aeba-18a25b450f6e");
-keyCredentials.startDateTime = OffsetDateTimeSerializer.deserialize("2020-04-22T21:50:13Z");
-keyCredentials.type = "X509CertAndPassword";
-keyCredentials.usage = "Sign";
-keyCredentials.key = Base64.getDecoder().decode("MIIKIAIBAz.....HBgUrDgMCERE20nuTptI9MEFCh2Ih2jaaLZBZGeZBRFVNXeZmAAgIH0A==");
-keyCredentials.displayName = "CN=awsAPI";
-keyCredentialsList.add(keyCredentials);
-KeyCredential keyCredentials1 = new KeyCredential();
-keyCredentials1.customKeyIdentifier = Base64.getDecoder().decode("lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=");
-keyCredentials1.endDateTime = OffsetDateTimeSerializer.deserialize("2021-04-22T22:10:13Z");
-keyCredentials1.keyId = UUID.fromString("e35a7d11-fef0-49ad-9f3e-aacbe0a42c42");
-keyCredentials1.startDateTime = OffsetDateTimeSerializer.deserialize("2020-04-22T21:50:13Z");
-keyCredentials1.type = "AsymmetricX509Cert";
-keyCredentials1.usage = "Verify";
-keyCredentials1.key = Base64.getDecoder().decode("MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg==");
-keyCredentials1.displayName = "CN=awsAPI";
-keyCredentialsList.add(keyCredentials1);
-servicePrincipal.keyCredentials = keyCredentialsList;
-LinkedList<PasswordCredential> passwordCredentialsList = new LinkedList<PasswordCredential>();
-PasswordCredential passwordCredentials = new PasswordCredential();
-passwordCredentials.customKeyIdentifier = Base64.getDecoder().decode("lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA=");
-passwordCredentials.keyId = UUID.fromString("4c266507-3e74-4b91-aeba-18a25b450f6e");
-passwordCredentials.endDateTime = OffsetDateTimeSerializer.deserialize("2022-01-27T19:40:33Z");
-passwordCredentials.startDateTime = OffsetDateTimeSerializer.deserialize("2020-04-20T19:40:33Z");
-passwordCredentials.secretText = "61891f4ee44d";
-passwordCredentialsList.add(passwordCredentials);
-servicePrincipal.passwordCredentials = passwordCredentialsList;
+LinkedList<KeyCredential> keyCredentials = new LinkedList<KeyCredential>();
+KeyCredential keyCredential = new KeyCredential();
+byte[] customKeyIdentifier = Base64.getDecoder().decode("5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A");
+keyCredential.setCustomKeyIdentifier(customKeyIdentifier);
+OffsetDateTime endDateTime = OffsetDateTime.parse("2027-01-22T00:00:00Z");
+keyCredential.setEndDateTime(endDateTime);
+keyCredential.setKeyId(UUID.fromString("4c266507-3e74-4b91-aeba-18a25b450f6e"));
+OffsetDateTime startDateTime = OffsetDateTime.parse("2024-02-21T17:09:35Z");
+keyCredential.setStartDateTime(startDateTime);
+keyCredential.setType("X509CertAndPassword");
+keyCredential.setUsage("Sign");
+byte[] key = Base64.getDecoder().decode("MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=");
+keyCredential.setKey(key);
+keyCredential.setDisplayName("CN=AWSContoso");
+keyCredentials.add(keyCredential);
+KeyCredential keyCredential1 = new KeyCredential();
+byte[] customKeyIdentifier1 = Base64.getDecoder().decode("5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A");
+keyCredential1.setCustomKeyIdentifier(customKeyIdentifier1);
+OffsetDateTime endDateTime1 = OffsetDateTime.parse("2027-01-22T00:00:00Z");
+keyCredential1.setEndDateTime(endDateTime1);
+keyCredential1.setKeyId(UUID.fromString("e35a7d11-fef0-49ad-9f3e-aacbe0a42c42"));
+OffsetDateTime startDateTime1 = OffsetDateTime.parse("2024-02-21T17:09:35Z");
+keyCredential1.setStartDateTime(startDateTime1);
+keyCredential1.setType("AsymmetricX509Cert");
+keyCredential1.setUsage("Verify");
+byte[] key1 = Base64.getDecoder().decode("MIICqjCCAZKgAwIBAgIIZYCy..KlDixjUT61i4tFs=");
+keyCredential1.setKey(key1);
+keyCredential1.setDisplayName("CN=AWSContoso");
+keyCredentials.add(keyCredential1);
+servicePrincipal.setKeyCredentials(keyCredentials);
+LinkedList<PasswordCredential> passwordCredentials = new LinkedList<PasswordCredential>();
+PasswordCredential passwordCredential = new PasswordCredential();
+byte[] customKeyIdentifier2 = Base64.getDecoder().decode("5214D6BA9438F984A0CC2C856CCEA6A76EDCEC3A");
+passwordCredential.setCustomKeyIdentifier(customKeyIdentifier2);
+passwordCredential.setKeyId(UUID.fromString("4c266507-3e74-4b91-aeba-18a25b450f6e"));
+OffsetDateTime endDateTime2 = OffsetDateTime.parse("2022-01-27T19:40:33Z");
+passwordCredential.setEndDateTime(endDateTime2);
+OffsetDateTime startDateTime2 = OffsetDateTime.parse("2027-01-22T00:00:00Z");
+passwordCredential.setStartDateTime(startDateTime2);
+passwordCredential.setSecretText("61891f4ee44d");
+passwordCredentials.add(passwordCredential);
+servicePrincipal.setPasswordCredentials(passwordCredentials);
+ServicePrincipal result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").patch(servicePrincipal);
 
-graphClient.servicePrincipals("f47a6776-bca7-4f2e-bc6c-eec59d058e3e")
-	.buildRequest()
-	.patch(servicePrincipal);
 
 ```

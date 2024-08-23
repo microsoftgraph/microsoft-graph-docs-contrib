@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EducationAssignmentDeltaCollectionPage delta = graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments()
-	.delta()
-	.buildRequest()
-	.top(2)
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().delta().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.top = 2;
+});
+
 
 ```

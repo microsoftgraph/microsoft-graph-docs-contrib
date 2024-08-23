@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 BookingCustomer bookingCustomer = new BookingCustomer();
-bookingCustomer.displayName = "Adele";
-bookingCustomer.emailAddress = "adele@relecloud.com";
+bookingCustomer.setDisplayName("Adele");
+bookingCustomer.setEmailAddress("adele@relecloud.com");
+BookingCustomer result = graphClient.solutions().bookingBusinesses().byBookingBusinessId("{bookingBusiness-id}").customers().byBookingCustomerId("{bookingCustomer-id}").patch(bookingCustomer);
 
-graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").customers("8bb19078-0f45-4efb-b2c5-da78b860f73a")
-	.buildRequest()
-	.patch(bookingCustomer);
 
 ```

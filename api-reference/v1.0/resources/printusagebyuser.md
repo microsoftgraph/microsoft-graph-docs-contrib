@@ -3,7 +3,7 @@ title: printUsageByUser resource type
 description: Describes print activity for a user during a specified time period (usageDate).
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -16,8 +16,8 @@ Describes print activity for a user during a specified time period (usageDate).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List (daily)](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of daily print usage summaries, grouped by user. |
-| [List (monthly)](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of monthly print usage summaries, grouped by user. |
+| [List daily reports by user](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of daily print usage summaries, grouped by user. |
+| [List monthly reports by user](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Get a list of monthly print usage summaries, grouped by user. |
 | [Get](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Read properties and relationships of a printUsageByUser object. |
 
 ## Properties
@@ -38,7 +38,7 @@ Describes print activity for a user during a specified time period (usageDate).
 |userPrincipalName|String|The UPN of the user represented by these statistics.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,8 @@ title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 ms.localizationpriority: high
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -11,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [change tracking](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted users without having to perform a full read of the entire [user](../resources/user.md) collection. See [change tracking](/graph/delta-query-overview) for details.
 
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.
@@ -20,14 +21,11 @@ Get newly created, updated, or deleted users without having to perform a full re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-delta-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +44,7 @@ You only need to specify any desired query parameters once upfront.
 
 In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
@@ -62,7 +60,7 @@ This method supports optional OData Query Parameters to help customize the respo
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `@odata.deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
@@ -107,7 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -181,12 +179,12 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "givenName": "Adele",
       "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mail": "AdeleV@contoso.com",
       "mobilePhone": "+1 425 555 0109",
       "officeLocation": "18/2111",
       "preferredLanguage": "en-US",
       "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "userPrincipalName": "AdeleV@contoso.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
@@ -347,7 +345,7 @@ Content-type: application/json
   ]
 }
 ```
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).

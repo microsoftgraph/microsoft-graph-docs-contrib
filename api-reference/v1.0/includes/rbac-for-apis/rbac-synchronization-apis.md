@@ -5,6 +5,8 @@ ms.date: 03/07/2023
 ms.author: arvinh
 ---
 
-To configure application provisioning or HR-driven provisioning, the calling user must also be assigned at least the *Application Administrator* or *Cloud Application Administrator* [directory role](/azure/active-directory/roles/permissions-reference).
+In delegated scenarios with work or school accounts, the signed-in user must be an owner or member of the group or be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
 
-To configure Microsoft Entra Cloud Sync, the calling user must also be assigned at least the *Hybrid Identity Administrator* directory role.
+- Application Administrator
+- Cloud Application Administrator
+- Hybrid Identity Administrator - to configure Microsoft Entra Cloud Sync

@@ -2,18 +2,18 @@
 title: "windowsQualityUpdateProfileAssignment resource type"
 description: "This entity contains the properties used to assign a windows quality update profile to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsQualityUpdateProfileAssignment resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 This entity contains the properties used to assign a windows quality update profile to a group.
 

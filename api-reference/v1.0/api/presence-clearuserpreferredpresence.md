@@ -4,7 +4,7 @@ description: "Clear the preferred availability and activity status for a user."
 author: "benjaminlee"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence: clearUserPreferredPresence
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 Clear the preferred availability and activity status for a user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Presence.ReadWrite                          |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Presence.ReadWrite.All                      |
+<!-- { "blockType": "permissions", "name": "presence_clearuserpreferredpresence" } -->
+[!INCLUDE [permissions-table](../includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +30,7 @@ POST /users/{userId}/presence/clearUserPreferredPresence
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -47,7 +44,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-The following is an example of a request that clears the preferred availability and activity status for a user.
+The following example shows a request that clears the preferred availability and activity status for a user.
 
 # [HTTP](#tab/http)
 <!-- {

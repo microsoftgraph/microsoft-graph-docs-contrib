@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Apply best practices when you use the Microsoft Graph connectors SDK."
 ---
 
@@ -125,7 +125,7 @@ The following are examples of how to set these types:
         DateTimeValue = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTime(DateTime.UtcNow)
     };
 
-    // Setting boolean value in generic type
+    // Setting Boolean value in generic type
     GenericType boolType = new GenericType
     {
         BoolValue = true
@@ -233,6 +233,6 @@ The following errors move the connection to failed state:
 
 The other operation codes will be treated as transient failures and will be retried in subsequent crawls.
 
-## See also
+## Related content
 
 * [Troubleshooting issues with your connector](/graph/custom-connector-sdk-troubleshooting)

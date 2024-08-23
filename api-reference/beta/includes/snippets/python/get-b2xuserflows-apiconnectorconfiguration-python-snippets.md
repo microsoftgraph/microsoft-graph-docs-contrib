@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.b2x_user_flows.item.api_connector_configuration.api_connector_configuration_request_builder import ApiConnectorConfigurationRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = ApiConnectorConfigurationRequestBuilder.ApiConnectorConfiguration
 		expand = ["postFederationSignup","postAttributeCollection"],
 )
 
-request_configuration = ApiConnectorConfigurationRequestBuilder.ApiConnectorConfigurationRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

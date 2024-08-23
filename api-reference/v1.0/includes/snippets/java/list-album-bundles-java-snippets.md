@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("filter", "bundle/album ne null"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-DriveItemCollectionPage bundles = graphClient.drive().bundles()
-	.buildRequest( requestOptions )
-	.filter("bundle/album ne null")
-	.get();
+DriveItemCollectionResponse result = graphClient.drives().byDriveId("{drive-id}").bundles().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "bundle/album ne null";
+});
+
 
 ```

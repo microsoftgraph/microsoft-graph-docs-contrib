@@ -16,7 +16,7 @@ $params = @{
 		toRecipients = @(
 			@{
 				emailAddress = @{
-					address = "meganb@contoso.onmicrosoft.com"
+					address = "meganb@contoso.com"
 				}
 			}
 		)

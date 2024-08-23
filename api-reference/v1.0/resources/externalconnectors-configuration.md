@@ -3,7 +3,7 @@ title: "configuration resource type"
 description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Specifies additional application IDs that are allowed to manage the externalConn
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.configuration"

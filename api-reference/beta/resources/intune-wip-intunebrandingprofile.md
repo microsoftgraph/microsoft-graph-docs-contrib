@@ -2,18 +2,18 @@
 title: "intuneBrandingProfile resource type"
 description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # intuneBrandingProfile resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
 
@@ -25,7 +25,7 @@ This entity contains data which is used in customizing the tenant level appearan
 |[Create intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Create a new [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
 |[Delete intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|None|Deletes a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Update intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
-|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-wip-intunebrandingprofile-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

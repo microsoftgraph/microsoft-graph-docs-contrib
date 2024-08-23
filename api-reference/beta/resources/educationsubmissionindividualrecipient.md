@@ -3,7 +3,7 @@ title: "educationSubmissionIndividualRecipient resource type"
 description: "A subclass of educationSubmissionRecipient that indicates that a submission is assigned to an individual in the class.  "
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -21,9 +21,13 @@ A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) th
 |:---------------|:--------|:----------|
 |userId|String|User ID of the user to whom the submission is assigned.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

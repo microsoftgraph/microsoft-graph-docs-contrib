@@ -3,7 +3,7 @@ title: "timeOffItem resource type"
 description: "Represents a version of the timeOff."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -23,9 +23,14 @@ Represents a version of the [timeOff](timeoff.md).
 | endDateTime               | DateTimeOffset                  | The end date and time for the **timeOffItem**. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

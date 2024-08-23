@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.Custodian
+var requestBody = new Custodian
 {
 	Email = "AdeleV@contoso.com",
 	ApplyHoldToSources = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians.PostAsync(requestBody);
 
 

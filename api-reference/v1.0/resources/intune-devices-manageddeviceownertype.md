@@ -2,8 +2,8 @@
 title: "managedDeviceOwnerType enum type"
 description: "Owner type of device."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

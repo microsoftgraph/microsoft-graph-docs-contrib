@@ -3,7 +3,7 @@ title: "enumeratedPreApprovedPermissions resource type"
 description: "Indicates that only the permissions explicitly preapproved will be allowed for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [preApprovePermissions](../resources/preapprovedpermissions.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.enumeratedPreApprovedPermissions"

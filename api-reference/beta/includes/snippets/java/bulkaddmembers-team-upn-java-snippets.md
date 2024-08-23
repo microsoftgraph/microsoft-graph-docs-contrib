@@ -4,32 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<ConversationMember> valuesList = new LinkedList<ConversationMember>();
-AadUserConversationMember values = new AadUserConversationMember();
-LinkedList<String> rolesList = new LinkedList<String>();
-values.roles = rolesList;
-values.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/users('jacob@contoso.com')"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-valuesList.add(values);
-AadUserConversationMember values1 = new AadUserConversationMember();
-LinkedList<String> rolesList1 = new LinkedList<String>();
-rolesList1.add("owner");
-values1.roles = rolesList1;
-values1.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/users('alex@contoso.com')"));
+com.microsoft.graph.beta.teams.item.members.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.beta.teams.item.members.add.AddPostRequestBody();
+LinkedList<ConversationMember> values = new LinkedList<ConversationMember>();
+AadUserConversationMember conversationMember = new AadUserConversationMember();
+conversationMember.setOdataType("microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles = new LinkedList<String>();
+conversationMember.setRoles(roles);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("user@odata.bind", "https://graph.microsoft.com/beta/users('jacob@contoso.com')");
+conversationMember.setAdditionalData(additionalData);
+values.add(conversationMember);
+AadUserConversationMember conversationMember1 = new AadUserConversationMember();
+conversationMember1.setOdataType("microsoft.graph.aadUserConversationMember");
+LinkedList<String> roles1 = new LinkedList<String>();
+roles1.add("owner");
+conversationMember1.setRoles(roles1);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("user@odata.bind", "https://graph.microsoft.com/beta/users('alex@contoso.com')");
+conversationMember1.setAdditionalData(additionalData1);
+values.add(conversationMember1);
+addPostRequestBody.setValues(values);
+var result = graphClient.teams().byTeamId("{team-id}").members().add().post(addPostRequestBody);
 
-valuesList.add(values1);
-ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
-conversationMemberCollectionResponse.value = valuesList;
-ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
-
-graphClient.teams("e4183b04-c9a2-417c-bde4-70e3ee46a6dc").members()
-	.add(ConversationMemberAddParameterSet
-		.newBuilder()
-		.withValues(valuesList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

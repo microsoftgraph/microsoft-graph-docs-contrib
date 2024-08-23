@@ -3,7 +3,7 @@ title: "retentionLabelSettings resource type"
 description: "Groups all the compliance retention restrictions on the item into a single structure."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Groups all the compliance retention restrictions on the item into a single struc
 
 ## JSON representation
 
-The following example shows a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
 "blockType": "resource",

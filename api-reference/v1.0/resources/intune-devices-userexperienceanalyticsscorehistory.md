@@ -2,8 +2,8 @@
 title: "userExperienceAnalyticsScoreHistory resource type"
 description: "The user experience analytics device startup score history."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

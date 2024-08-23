@@ -3,7 +3,7 @@ title: "emailUrlThreatSubmission resource type"
 description: "Represents a threat submission object created when the submission is made using the email URL."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmissio
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

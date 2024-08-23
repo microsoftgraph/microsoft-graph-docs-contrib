@@ -58,7 +58,7 @@ Certain [conditional access policies](/azure/active-directory/conditional-access
 
 See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
-## See also
+## Related content
 
 - [Use Postman with the Microsoft Graph API](use-postman.md)
 - [Use app-only authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)

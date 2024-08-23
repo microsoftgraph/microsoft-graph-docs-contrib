@@ -21,7 +21,7 @@ You need to initialize ElectronProvider in the renderer process (front end), and
 
 ### Initializing ElectronProvider in the renderer process (renderer.ts)
 
-The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the components to work. 
+The ElectronProvider is responsible for communicating with ElectronAuthenticator (in the main process) to request access tokens and receive information regarding logged in state that are required for the components to work.
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
@@ -41,30 +41,30 @@ The ElectronAuthenticator is responsible for setting up the configuration variab
 Initialize the ElectronAuthenticator in the main process and set up the configuration variables such as client-id.
 
 ```ts
-import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
+import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator';
 
 let config: MsalElectronConfig = {
   clientId: '<your_client_id>',
   authority: '<your_authority_url>', //optional
-  mainWindow: mainWindow, 
+  mainWindow: mainWindow,
   scopes: ['user.read'], // We recommend pre-consenting all the required scopes on the Microsoft Entra admin center
   baseURL: 'https://graph.microsoft.us' // change this if you want to use a different M365 endpoint
 };
 
 ElectronAuthenticator.initialize(config);
 ```
- 
+
 | Attribute   | Description                                                                                                                                                                                                                                                           |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | clientId    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | scopes      | Comma-separated strings for scopes the user must consent to on sign in. Recommended.                                                                                                                                                                                  |
-| authority   | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+| authority   | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-contoso.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | mainWindow  | Instance of the main BrowserWindow that requires authentication.                                                                                                                                                                                                      |
 | cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional.                       |
 | base-url | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.                                                          |
 
 >**Note:** Currently, the provider does not support incremental support. As a best practice, be sure to consent to all the scopes that the components require.
-    
+
 ## Create an app/client ID
 
 <a name='add-new-application-registration-in-azure-active-directory-to-get-a-client-id'></a>

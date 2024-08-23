@@ -3,7 +3,7 @@ title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of claimsMappingPolicy object."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -19,13 +19,10 @@ Retrieve the properties and relationships of a [claimsMappingPolicy](../resource
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+<!-- { "blockType": "permissions", "name": "claimsmappingpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/claimsmappingpolicy-get-permissions.md)]
 
 > [!IMPORTANT]
 > This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13678) and may require consent to both permissions.
@@ -46,7 +43,7 @@ This method supports the `$expand` and `$select` OData query parameters to help 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

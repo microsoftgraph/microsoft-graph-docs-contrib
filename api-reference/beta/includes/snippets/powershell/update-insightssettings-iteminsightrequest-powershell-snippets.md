@@ -10,6 +10,6 @@ $params = @{
 	disabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 
-Update-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaAdminPeopleItemInsight -BodyParameter $params
 
 ```

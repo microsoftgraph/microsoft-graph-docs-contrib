@@ -5,8 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Workflow;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\LifecycleWorkflowCategory;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\TriggerAndScopeBasedConditions;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\RuleBasedSubjectSet;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\TimeBasedAttributeTrigger;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\WorkflowTriggerTimeBasedAttribute;
+use Microsoft\Graph\Beta\Generated\Models\IdentityGovernance\Task;
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();

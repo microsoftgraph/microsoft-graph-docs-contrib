@@ -3,7 +3,7 @@ author: daspek
 title: moveAction resource type
 description: The MoveAction object provides information about an activity that moved an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # moveAction resource type

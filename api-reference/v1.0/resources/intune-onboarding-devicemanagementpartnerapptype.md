@@ -2,8 +2,8 @@
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

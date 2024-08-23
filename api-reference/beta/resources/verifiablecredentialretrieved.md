@@ -3,7 +3,7 @@ title: "verifiableCredentialRetrieved resource type"
 description: "Represents the status where a service requires a verifiable credential to be presented and the user has retrieved the presentation request."
 author: "sponnada"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Used for the **verifiableCredentialRequirementStatus** property of [access packa
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.verifiableCredentialRetrieved"

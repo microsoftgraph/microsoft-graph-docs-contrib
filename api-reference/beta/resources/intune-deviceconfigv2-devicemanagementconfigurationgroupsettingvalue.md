@@ -2,18 +2,18 @@
 title: "deviceManagementConfigurationGroupSettingValue resource type"
 description: "Value of the GroupSetting"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementConfigurationGroupSettingValue resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Value of the GroupSetting
 
@@ -24,7 +24,7 @@ Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-de
 |Property|Type|Description|
 |:---|:---|:---|
 |settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Setting value template reference Inherited from [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
-|children|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md) collection|Collection of child setting instances contained within this GroupSetting|
+|children|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md) collection|Collection of child setting instances contained within this GroupSetting|
 
 ## Relationships
 None

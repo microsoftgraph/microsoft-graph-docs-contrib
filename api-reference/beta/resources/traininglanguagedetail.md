@@ -3,7 +3,7 @@ title: "trainingLanguageDetail resource type"
 description: "Represents an attack simulation training language detail."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
+|[Get](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
 
 ## Properties
 
@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |content|String|Language specific content for the training.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the language details.|
-|createdDateTime|DateTimeOffset|Date and time when the language details were created.|
+|createdDateTime|DateTimeOffset|Date and time when the language details were created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description as defined by the user.|
 |displayName|String|Display name as defined by the user.|
 |id|String|Unique identifier of the **trainingLanguageDetail** object. Inherited from [entity](../resources/entity.md).|
@@ -44,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

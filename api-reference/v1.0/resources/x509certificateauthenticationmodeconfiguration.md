@@ -3,7 +3,7 @@ title: "x509CertificateAuthenticationModeConfiguration resource type"
 description: "Defines the strong authentication configurations for the X.509 certificate. This configuration includes the default authentication mode and the different rules of strong authentication bindings."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Defines the strong authentication configurations for the X.509 certificate. This
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.x509CertificateAuthenticationModeConfiguration"

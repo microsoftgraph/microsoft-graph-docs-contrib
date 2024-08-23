@@ -3,7 +3,7 @@ title: "Error handling for Excel APIs"
 description: "Find general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Error handling for Excel APIs
@@ -159,6 +159,6 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
   "tocPath": ""
 } -->
 
-## See also
+## Related content
 
 - [Use the Excel REST API](/graph/api/resources/excel)

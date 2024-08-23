@@ -3,8 +3,10 @@ title: "phoneAuthenticationMethod resource type"
 description: "Represents a phone number and type that's registered to a user."
 ms.localizationpriority: medium
 author: "luc-msft"
-ms.prod: "identity-and-sign-in"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: Phone
 ---
 
 # phoneAuthenticationMethod resource type
@@ -25,13 +27,13 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List phoneMethods](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all this user's phoneAuthenticationMethod objects. |
-| [Get phoneAuthenticationMethod](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of the phoneAuthenticationMethod object for a user. |
-|[Create phoneMethod](../api/authentication-post-phonemethods.md)|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Create a user's phoneAuthenticationMethod object.|
-| [Update phoneAuthenticationMethod](../api/phoneauthenticationmethod-update.md) | None | Update the phoneAuthenticationMethod object for a user. |
-| [Delete phoneAuthenticationMethod](../api/phoneauthenticationmethod-delete.md) | None | Delete the phoneAuthenticationMethod object for a user. |
-|[Disable SMS signin](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
-|[Enable SMS signin](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
+| [List](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all this user's phoneAuthenticationMethod objects. |
+| [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of the phoneAuthenticationMethod object for a user. |
+|[Add](../api/authentication-post-phonemethods.md)|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Create a user's phoneAuthenticationMethod object.|
+| [Update](../api/phoneauthenticationmethod-update.md) | None | Update the phoneAuthenticationMethod object for a user. |
+| [Delete](../api/phoneauthenticationmethod-delete.md) | None | Delete the phoneAuthenticationMethod object for a user. |
+|[Disable SMS sign-in](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
+|[Enable SMS sign-in](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
 
 ## Properties
 
@@ -70,7 +72,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -83,6 +85,7 @@ Here's a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.phoneAuthenticationMethod",
   "id": "String (identifier)",
   "phoneNumber": "String",
   "phoneType": "string",

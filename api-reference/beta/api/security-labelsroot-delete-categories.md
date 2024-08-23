@@ -3,7 +3,7 @@ title: "Delete categoryTemplate"
 description: "Delete a categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,13 @@ Namespace: microsoft.graph.security
 
 Delete a [categoryTemplate](../resources/security-categorytemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_labelsroot_delete_categories" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-labelsroot-delete-categories-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryT
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -51,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/categories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/categories/{categoryTemp
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",

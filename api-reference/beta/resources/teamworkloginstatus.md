@@ -3,7 +3,7 @@ title: "teamworkLoginStatus resource type"
 description: "Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for 
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkLoginStatus"

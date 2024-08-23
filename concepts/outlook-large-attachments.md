@@ -3,7 +3,7 @@ title: "Attach large files to Outlook messages or events"
 description: "Create and use an upload session to add large file attachments over 3 MB to Outlook items. Each step shows the corresponding code for a message and an event."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Attach large files to Outlook messages or events

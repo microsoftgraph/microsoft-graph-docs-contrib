@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.education_user import EducationUser
+from msgraph_beta.generated.models.identity_set import IdentitySet
+from msgraph_beta.generated.models.identity import Identity
+from msgraph_beta.generated.models.education_external_source import EducationExternalSource
+from msgraph_beta.generated.models.physical_address import PhysicalAddress
+from msgraph_beta.generated.models.education_user_role import EducationUserRole
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonCertification personCertification = new PersonCertification();
-personCertification.certificationId = "KB-1235466333663322";
-personCertification.description = "Blackbelt in Marketing - Brand Management";
-personCertification.displayName = "Marketing Blackbelt - Brand Management";
-personCertification.thumbnailUrl = "https://iame.io/dfhdfdfd334.jpg";
-personCertification.webUrl = "https://www.iame.io/blackbelt";
+personCertification.setCertificationId("KB-1235466333663322");
+personCertification.setDescription("Blackbelt in Marketing - Brand Management");
+personCertification.setDisplayName("Marketing Blackbelt - Brand Management");
+personCertification.setThumbnailUrl("https://iame.io/dfhdfdfd334.jpg");
+personCertification.setWebUrl("https://www.iame.io/blackbelt");
+PersonCertification result = graphClient.me().profile().certifications().post(personCertification);
 
-graphClient.me().profile().certifications()
-	.buildRequest()
-	.post(personCertification);
 
 ```

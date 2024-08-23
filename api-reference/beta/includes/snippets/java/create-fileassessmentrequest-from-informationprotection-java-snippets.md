@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 FileAssessmentRequest threatAssessmentRequest = new FileAssessmentRequest();
-threatAssessmentRequest.expectedAssessment = ThreatExpectedAssessment.BLOCK;
-threatAssessmentRequest.category = ThreatCategory.MALWARE;
-threatAssessmentRequest.fileName = "test.txt";
-threatAssessmentRequest.contentData = "VGhpcyBpcyBhIHRlc3QgZmlsZQ==";
+threatAssessmentRequest.setOdataType("#microsoft.graph.fileAssessmentRequest");
+threatAssessmentRequest.setExpectedAssessment(ThreatExpectedAssessment.Block);
+threatAssessmentRequest.setCategory(ThreatCategory.Malware);
+threatAssessmentRequest.setFileName("test.txt");
+threatAssessmentRequest.setContentData("VGhpcyBpcyBhIHRlc3QgZmlsZQ==");
+ThreatAssessmentRequest result = graphClient.informationProtection().threatAssessmentRequests().post(threatAssessmentRequest);
 
-graphClient.informationProtection().threatAssessmentRequests()
-	.buildRequest()
-	.post(threatAssessmentRequest);
 
 ```

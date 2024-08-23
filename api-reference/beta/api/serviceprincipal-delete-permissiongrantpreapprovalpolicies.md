@@ -3,7 +3,7 @@ title: "Remove a permissionGrantPreApprovalPolicy from a servicePrincipal"
 description: "Remove a permissionGrantPreApprovalPolicy from servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,10 @@ Namespace: microsoft.graph
 Unassign a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object from a [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Application.ReadWrite.All and Policy.ReadWrite.PermissionGrant|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.All and Policy.ReadWrite.PermissionGrant|
+<!-- { "blockType": "permissions", "name": "serviceprincipal_delete_permissiongrantpreapprovalpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-permissiongrantpreapprovalpolicies-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
@@ -38,7 +35,7 @@ DELETE /servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,6 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_remove_permissionGrantPreApprovalPoliciesdelete"
@@ -61,6 +59,11 @@ If successful, this method returns a `204 No Content` response code.
 DELETE https://graph.microsoft.com/beta/servicePrincipals/37d4ba51-cc54-4762-9ff7-deb5c9438cc7/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853/$ref
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-remove-permissiongrantpreapprovalpoliciesdelete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- {

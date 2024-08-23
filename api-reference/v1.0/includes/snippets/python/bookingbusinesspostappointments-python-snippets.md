@@ -4,19 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_appointment import BookingAppointment
+from msgraph.generated.models.booking_price_type import BookingPriceType
+from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.booking_reminder_recipients import BookingReminderRecipients
+from msgraph.generated.models.location import Location
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
+from msgraph.generated.models.answer_input_type import AnswerInputType
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingAppointment(
 	odata_type = "#microsoft.graph.bookingAppointment",
 	customer_time_zone = "America/Chicago",
+	customer_name = "Jordan Miller",
+	customer_email_address = "jordanm@contoso.com",
+	customer_phone = "213-555-0199",
+	customer_notes = None,
 	sms_notifications_enabled = True,
-	end_date_time = DateTimeTimeZone(
-		odata_type = "#microsoft.graph.dateTimeTimeZone",
-		date_time = "2018-05-01T12:30:00.0000000+00:00",
-		time_zone = "UTC",
-	),
+	is_customer_allowed_to_manage_booking = True,
 	is_location_online = True,
 	opt_out_of_customer_email = False,
 	anonymous_join_web_url = None,
@@ -86,11 +98,6 @@ request_body = BookingAppointment(
 	staff_member_ids = [
 		"8ee1c803-a1fa-406d-8259-7ab53233f148",
 	],
-	start_date_time = DateTimeTimeZone(
-		odata_type = "#microsoft.graph.dateTimeTimeZone",
-		date_time = "2018-05-01T12:00:00.0000000+00:00",
-		time_zone = "UTC",
-	),
 	maximum_attendees_count = 5,
 	filled_attendees_count = 1,
 	customers = [
@@ -142,8 +149,18 @@ request_body = BookingAppointment(
 		),
 	],
 	additional_data = {
+			"end" : {
+					"@odata_type" : "#microsoft.graph.dateTimeTimeZone",
+					"date_time" : "2018-05-01T12:30:00.0000000+00:00",
+					"time_zone" : "UTC",
+			},
 			"price_type@odata_type" : "#microsoft.graph.bookingPriceType",
 			"reminders@odata_type" : "#Collection(microsoft.graph.bookingReminder)",
+			"start" : {
+					"@odata_type" : "#microsoft.graph.dateTimeTimeZone",
+					"date_time" : "2018-05-01T12:00:00.0000000+00:00",
+					"time_zone" : "UTC",
+			},
 			"customers@odata_type" : "#Collection(microsoft.graph.bookingCustomerInformation)",
 	}
 )

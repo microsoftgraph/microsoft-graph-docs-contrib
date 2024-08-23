@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AgreementFileLocalizationCollectionPage localizations = graphClient.agreements("94410bbf-3d3e-4683-8149-f034e55c39dd").file().localizations()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+AgreementFileLocalizationCollectionResponse result = graphClient.agreements().byAgreementId("{agreement-id}").file().localizations().get();
+
 
 ```

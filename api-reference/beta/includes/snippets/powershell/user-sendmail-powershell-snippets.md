@@ -16,14 +16,14 @@ $params = @{
 		toRecipients = @(
 			@{
 				emailAddress = @{
-					address = "samanthab@contoso.onmicrosoft.com"
+					address = "samanthab@contoso.com"
 				}
 			}
 		)
 		ccRecipients = @(
 			@{
 				emailAddress = @{
-					address = "danas@contoso.onmicrosoft.com"
+					address = "danas@contoso.com"
 				}
 			}
 		)

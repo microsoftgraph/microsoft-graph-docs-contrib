@@ -3,7 +3,7 @@ title: "safeguardSettings resource type"
 description: "Manages the safeguards that the service applies to devices in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Manages the safeguards that the service applies to devices in a deployment.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.safeguardSettings"

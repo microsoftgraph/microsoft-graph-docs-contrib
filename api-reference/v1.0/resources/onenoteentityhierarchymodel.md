@@ -1,21 +1,34 @@
 ---
-title: "onenoteEntityHierarchyModel resource"
+title: "onenoteEntityHierarchyModel resource type"
 description: "A base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
-# onenoteEntityHierarchyModel resource
+# onenoteEntityHierarchyModel resource type
 
 Namespace: microsoft.graph
 
 A base type for OneNote entities.
 
+## Properties
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The name of the notebook.|
+|createdBy|[identitySet](identityset.md)|Identity of the user, device, and application that created the item. Read-only.|
+|lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application that created the item. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -36,13 +49,6 @@ Here's a JSON representation of the resource.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The name of the notebook.|
-|createdBy|[identitySet](identityset.md)|Identity of the user, device, and application that created the item. Read-only.|
-|lastModifiedBy|[identitySet](identityset.md)|Identity of the user, device, and application that created the item. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 <!-- uuid: 8b1af557-1a7c-4432-86eb-94989c2d4b54
 2015-10-25 14:57:30 UTC -->

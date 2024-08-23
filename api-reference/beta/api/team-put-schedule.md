@@ -1,9 +1,9 @@
 ---
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
-author: "nkramer"
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -27,13 +27,10 @@ Clients can also inspect the configuration of the schedule.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "team_put_schedule" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-put-schedule-permissions.md)]
 
 ## HTTP request
 
@@ -47,7 +44,7 @@ PUT /teams/{teamId}/schedule
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -141,7 +138,11 @@ Content-type: application/json
   "openShiftsEnabled": true,
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
-  "timeOffRequestsEnabled": true
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Sunday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true
 }
 ```
 
@@ -150,7 +151,6 @@ Content-type: application/json
 #### Request
 
 The following example shows a request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -161,23 +161,27 @@ The following example shows a request.
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
-} 
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
+}
 ```
 
 # [C#](#tab/csharp)
@@ -230,22 +234,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "enabled":true,
-   "timeZone":"America/Chicago",
-   "provisionStatus":"Completed",
-   "provisionStatusCode":null,
-   "openShiftsEnabled":true,
-   "swapShiftsRequestsEnabled":true,
-   "offerShiftRequestsEnabled":true,
-   "timeOffRequestsEnabled":true,
-   "timeClockEnabled":true,
-   "timeClockSettings":{
-      "approvedLocation":{
-         "altitude":1024.13,
-         "latitude":26.13246,
-         "longitude":24.34616
-      }
-   }
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Tuesday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true,
+  "isCrossLocationShiftsEnabled": true,
+  "isCrossLocationShiftRequestApprovalRequired": true,
+  "timeClockEnabled": true,
+  "timeClockSettings": {
+    "approvedLocation": {
+      "altitude": 1024.13,
+      "latitude": 26.13246,
+      "longitude": 24.34616
+    }
+  }
 }
 ```
 
@@ -263,6 +271,6 @@ Content-type: application/json
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

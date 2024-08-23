@@ -3,7 +3,7 @@ title: "attachmentItem resource type"
 description: "Represents attributes of an item to be attached."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Represents attributes of an item to be attached.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

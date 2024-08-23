@@ -3,7 +3,7 @@ title: "huntingQueryResults resource type"
 description: "The results of the hunting query API"
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ The results of running a [query for advanced hunting](../api/security-security-r
 |results|[microsoft.graph.security.huntingRowResult](../resources/security-huntingrowresult.md) collection|The results of the hunting query.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.huntingQueryResults"

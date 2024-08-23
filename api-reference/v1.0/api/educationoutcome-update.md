@@ -3,7 +3,7 @@ title: "Update educationOutcome"
 description: "Update the properties of educationOutcome object."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Update the properties of an [educationOutcome](../resources/educationoutcome.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EduAssignments.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationoutcome_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationoutcome-update-permissions.md)]
 
 ## HTTP request
 
@@ -37,7 +34,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}/submissions/{sub
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

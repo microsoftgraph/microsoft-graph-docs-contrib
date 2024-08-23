@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.serviceprincipals.item.synchronization.jobs.item.provision_on_demand.provision_on_demand_post_request_body import ProvisionOnDemandPostRequestBody
+from msgraph_beta.generated.models.synchronization_job_application_parameters import SynchronizationJobApplicationParameters
+from msgraph_beta.generated.models.synchronization_job_subject import SynchronizationJobSubject
+from msgraph_beta.generated.models.synchronization_linked_objects import SynchronizationLinkedObjects
 
 graph_client = GraphServiceClient(credentials, scopes)
 

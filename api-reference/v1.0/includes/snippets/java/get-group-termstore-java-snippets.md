@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Group group = graphClient.sites("mycompany.sharepoint.com,8f03a01c-dcfa-4aaf-9be5-b3fb48e538c1,739084f3-c0fa-46ac-b7f8-13b344781ad0").termStore().groups("1FFD3F87-9464-488A-A0EC-8FB90911182C")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.termstore.Group result = graphClient.sites().bySiteId("{site-id}").termStore().groups().byGroupId("{group-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"*", "parentSiteId"};
+});
+
 
 ```

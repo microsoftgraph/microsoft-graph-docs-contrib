@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.search.acronym import Acronym
+from msgraph_beta.generated.models.answer_state import AnswerState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

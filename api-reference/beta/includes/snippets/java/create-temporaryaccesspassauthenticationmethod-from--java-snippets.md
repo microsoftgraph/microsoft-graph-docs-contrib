@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TemporaryAccessPassAuthenticationMethod temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod();
-temporaryAccessPassAuthenticationMethod.startDateTime = OffsetDateTimeSerializer.deserialize("2022-06-05T00:00:00Z");
-temporaryAccessPassAuthenticationMethod.lifetimeInMinutes = 60;
-temporaryAccessPassAuthenticationMethod.isUsableOnce = false;
+OffsetDateTime startDateTime = OffsetDateTime.parse("2022-06-05T00:00:00.000Z");
+temporaryAccessPassAuthenticationMethod.setStartDateTime(startDateTime);
+temporaryAccessPassAuthenticationMethod.setLifetimeInMinutes(60);
+temporaryAccessPassAuthenticationMethod.setIsUsableOnce(false);
+TemporaryAccessPassAuthenticationMethod result = graphClient.users().byUserId("{user-id}").authentication().temporaryAccessPassMethods().post(temporaryAccessPassAuthenticationMethod);
 
-graphClient.users("071cc716-8147-4397-a5ba-b2105951cc0b").authentication().temporaryAccessPassMethods()
-	.buildRequest()
-	.post(temporaryAccessPassAuthenticationMethod);
 
 ```

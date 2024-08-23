@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custodians.MicrosoftGraphSecurityApplyHold;
 
-var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custodians.MicrosoftGraphSecurityApplyHold.ApplyHoldPostRequestBody
+var requestBody = new ApplyHoldPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Custod
 		"b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians.MicrosoftGraphSecurityApplyHold.PostAsync(requestBody);
 
 

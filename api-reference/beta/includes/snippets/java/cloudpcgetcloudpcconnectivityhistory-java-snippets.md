@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPCGetCloudPcConnectivityHistoryCollectionPage getCloudPcConnectivityHistory = graphClient.deviceManagement().virtualEndpoint().cloudPCs("{id}")
-	.getCloudPcConnectivityHistory()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.deviceManagement().virtualEndpoint().cloudPCs().byCloudPCId("{cloudPC-id}").getCloudPcConnectivityHistory().get();
+
 
 ```

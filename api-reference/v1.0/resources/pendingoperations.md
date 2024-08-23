@@ -3,7 +3,7 @@ title: "pendingOperations"
 description: "The pendingOperations resource indicates that one or more operations that might affect the state of the driveItem are pending completion."
 ms.localizationpriority: medium
 author: "learafa"
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: "resourcePageType"
 ---
 
@@ -21,7 +21,7 @@ Indicates that one or more operations that might affect the state of the **drive
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

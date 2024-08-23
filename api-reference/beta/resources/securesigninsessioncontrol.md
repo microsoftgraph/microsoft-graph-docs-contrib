@@ -3,7 +3,7 @@ title: "secureSignInSessionControl resource type"
 description: "Session control to require sign in sessions to be bound to a device."
 ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Session control to require sign in sessions to be bound to a device. Inherits fr
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.secureSignInSessionControl"
@@ -34,7 +34,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.secureSignInSessionControl",
-  "isEnabled": "Boolean",
-  "secureAppSessionMode": "String"
+  "isEnabled": "Boolean"
 }
 ```

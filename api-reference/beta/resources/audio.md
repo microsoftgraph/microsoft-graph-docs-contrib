@@ -4,7 +4,7 @@ description: The Audio resource groups audio-related properties on an item into 
 ms.date: 09/10/2017
 title: Audio
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 
@@ -60,8 +60,8 @@ The **Audio** resource is only supported on OneDrive Personal.
 | **discCount**         | Int32   | The total number of discs in this album.                             |
 | **duration**          | Int64   | Duration of the audio file, expressed in milliseconds                |
 | **genre**             | string  | The genre of this audio file.                                        |
-| **hasDrm**            | boolean | Indicates if the file is protected with digital rights management.   |
-| **isVariableBitrate** | boolean | Indicates if the file is encoded with a variable bitrate.            |
+| **hasDrm**            | Boolean | Indicates if the file is protected with digital rights management.   |
+| **isVariableBitrate** | Boolean | Indicates if the file is encoded with a variable bitrate.            |
 | **title**             | string  | The title of the audio file.                                         |
 | **track**             | Int32   | The number of the track on the original disc for this audio file.    |
 | **trackCount**        | Int32   | The total number of tracks on the original disc for this audio file. |

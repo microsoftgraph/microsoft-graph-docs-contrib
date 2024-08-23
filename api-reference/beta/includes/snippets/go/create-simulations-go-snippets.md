@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -12,12 +15,13 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 requestBody := graphmodels.NewSimulation()
 displayName := "Graph Simulation"
 requestBody.SetDisplayName(&displayName) 
+createdBy := graphmodels.NewEmailIdentity()
+email := "john@contoso.com"
+createdBy.SetEmail(&email) 
+requestBody.SetCreatedBy(createdBy)
 durationInDays := int32(3)
 requestBody.SetDurationInDays(&durationInDays) 
 attackTechnique := graphmodels.CREDENTIALHARVESTING_SIMULATIONATTACKTECHNIQUE 
@@ -50,7 +54,7 @@ defaultLanguage := "en"
 positiveReinforcement.SetDefaultLanguage(&defaultLanguage) 
 endUserNotificationSetting.SetPositiveReinforcement(positiveReinforcement)
 additionalData := map[string]interface{}{
-simulationNotification := graphmodels.New()
+simulationNotification := graph.New()
 targettedUserType := "compromised"
 simulationNotification.SetTargettedUserType(&targettedUserType) 
 odataBind := "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a"
@@ -62,12 +66,13 @@ simulationNotification.SetDefaultLanguage(&defaultLanguage)
 endUserNotificationSetting.SetAdditionalData(additionalData)
 requestBody.SetEndUserNotificationSetting(endUserNotificationSetting)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a", 
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a", 
+	"payload@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
+	"loginPage@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a", 
+	"landingPage@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a", 
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 simulations, err := graphClient.Security().AttackSimulation().Simulations().Post(context.Background(), requestBody, nil)
 
 

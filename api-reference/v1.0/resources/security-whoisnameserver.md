@@ -3,7 +3,7 @@ title: "whoisNameserver resource type"
 description: "Represents a nameserver associated with a whoisRecord."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents a nameserver associated with a [whoisRecord](../resources/security-wh
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

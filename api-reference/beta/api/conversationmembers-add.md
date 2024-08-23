@@ -1,10 +1,10 @@
 ---
 title: "conversationMember: add"
 description: "Add members in bulk to a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # conversationMember: add
@@ -15,17 +15,17 @@ Namespace: microsoft.graph
 
 Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> Sometimes it takes time to reflect the addition of a member after they're added. Users can use [change notifications](../resources/change-notifications-api-overview.md) to subscribe to notifications for membership changes in a particular team.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged) |
-|:--------------------|:--------------------------|
-| Delegated (work or school account) | TeamMember.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | TeamMember.ReadWrite.All   |
+<!-- { "blockType": "permissions", "name": "conversationmembers_add" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conversationmembers-add-permissions.md)]
 
 
 ## HTTP Request
@@ -41,7 +41,7 @@ POST /teams/{team-id}/members/add
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team. A maximum of 200 `conversationMember` derivatives can be added in one single request.
@@ -230,7 +230,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -261,7 +261,7 @@ Content-Type: application/json
 ```
 
 
-## See also
+## Related content
 
 - [Add member to a team](team-post-members.md)
 

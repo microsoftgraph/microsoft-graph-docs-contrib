@@ -2,8 +2,8 @@
 title: "Create microsoftTunnelConfiguration"
 description: "Create a new microsoftTunnelConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -51,7 +53,8 @@ The following table shows the properties that are required when you create the m
 |id|String|The unique identifier for the configuration id. Supports: $delete, $update. $Insert, $skip, $top is not supported. Read-only.|
 |displayName|String|The display name for the server configuration. This property is required when a server is created.|
 |description|String|The configuration's description (optional)|
-|network|String|The subnet that will be used to allocate virtual address for the clients|
+|network|String|The IPv4 subnet that will be used to allocate virtual address for the clients|
+|ipv6Network|String|The IPv6 subnet that will be used to allocate virtual address for the clients|
 |dnsServers|String collection|The DNS servers that will be used by the clients|
 |defaultDomainSuffix|String|The Default Domain appendix that will be used by the clients|
 |routesInclude|String collection|The routes that will be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.|
@@ -77,13 +80,14 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations
 Content-type: application/json
-Content-length: 894
+Content-length: 933
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
   "displayName": "Display Name value",
   "description": "Description value",
   "network": "Network value",
+  "ipv6Network": "Ipv6Network value",
   "dnsServers": [
     "Dns Servers value"
   ],
@@ -124,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 943
+Content-Length: 982
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -132,6 +136,7 @@ Content-Length: 943
   "displayName": "Display Name value",
   "description": "Description value",
   "network": "Network value",
+  "ipv6Network": "Ipv6Network value",
   "dnsServers": [
     "Dns Servers value"
   ],

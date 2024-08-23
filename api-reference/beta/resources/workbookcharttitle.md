@@ -3,8 +3,9 @@ title: "workbookChartTitle resource type"
 description: "Represents a chart title object of a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart title
 ---
 
 # workbookChartTitle resource type
@@ -20,24 +21,26 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartTitle](../api/charttitle-get.md) | [workbookChartTitle](workbookcharttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle-update.md) | [workbookChartTitle](workbookcharttitle.md)	|Update ChartTitle object. |
+|[Get](../api/charttitle-get.md) | [workbookChartTitle](workbookcharttitle.md) |Read the properties and relationships of a chart title.|
+|[Update](../api/charttitle-update.md) | [workbookChartTitle](workbookcharttitle.md)	|Update a chart title. |
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value representing if the chart title will overlay the chart or not.|
-|text|string|Represents the title text of a chart.|
-|visible|boolean|A boolean value that represents the visibility of a chart title object.|
+|overlay|Boolean|Indicates whether the chart title will overlay the chart or not.|
+|text|string|The title text of the chart.|
+|visible|Boolean|Indicates whether the chart title is visible.|
 
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[workbookChartTitleFormat](workbookcharttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
+|format|[workbookChartTitleFormat](workbookcharttitleformat.md)|The formatting of a chart title, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "List history of riskyUser"
 description: "Retrieve the risk history"
 ms.localizationpriority: medium
 author: "tracyshi"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List history of riskyUser
@@ -19,13 +19,10 @@ Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "riskyuser_list_history" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyuser-list-history-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -40,7 +37,7 @@ GET /identityProtection/riskyUsers/{id}/history/
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 ### Example 1: List history of a specific user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +96,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,7 +120,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -141,7 +138,7 @@ Content-type: application/json
             "riskDetail": "none",
             "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": null,
             "activity": {
@@ -161,7 +158,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -175,7 +172,7 @@ Content-type: application/json
 ```
 ### Example 2: List history of a specific user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -222,7 +219,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,7 +242,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {
@@ -262,7 +259,7 @@ Content-type: application/json
             "riskDetail": "none",
             "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": null,
             "activity": {
@@ -281,7 +278,7 @@ Content-type: application/json
             "riskDetail": "userPerformedSecuredPasswordReset",
             "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
             "userDisplayName": "Allan Deyoung",
-            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userPrincipalName": "AllanD@contoso.com",
             "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
             "activity": {

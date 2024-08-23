@@ -3,7 +3,7 @@ title: "serviceHealthIssuePost resource type"
 description: "Represents a historical post in a service health issue."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a historical post in a [service health issue](../resources/servicehea
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.serviceHealthIssuePost"

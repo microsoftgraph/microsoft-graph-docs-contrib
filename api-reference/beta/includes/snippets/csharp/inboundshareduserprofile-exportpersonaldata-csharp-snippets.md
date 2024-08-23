@@ -6,12 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.DirectoryNamespace.InboundSharedUserProfiles.Item.ExportPersonalData;
 
-var requestBody = new Microsoft.Graph.Beta.DirectoryNamespace.InboundSharedUserProfiles.Item.ExportPersonalData.ExportPersonalDataPostRequestBody
+var requestBody = new ExportPersonalDataPostRequestBody
 {
 	StorageLocation = "MyStorageAccount",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Directory.InboundSharedUserProfiles["{inboundSharedUserProfile-userId}"].ExportPersonalData.PostAsync(requestBody);
 
 

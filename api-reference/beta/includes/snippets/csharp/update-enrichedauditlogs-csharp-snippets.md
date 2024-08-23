@@ -6,24 +6,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Networkaccess;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Networkaccess.EnrichedAuditLogs
+var requestBody = new EnrichedAuditLogs
 {
 	OdataType = "#microsoft.graph.networkaccess.enrichedAuditLogs",
-	Sharepoint = new Microsoft.Graph.Beta.Models.Networkaccess.EnrichedAuditLogsSettings
+	Sharepoint = new EnrichedAuditLogsSettings
 	{
 		OdataType = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
 	},
-	Teams = new Microsoft.Graph.Beta.Models.Networkaccess.EnrichedAuditLogsSettings
+	Teams = new EnrichedAuditLogsSettings
 	{
 		OdataType = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
 	},
-	Exchange = new Microsoft.Graph.Beta.Models.Networkaccess.EnrichedAuditLogsSettings
+	Exchange = new EnrichedAuditLogsSettings
 	{
 		OdataType = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.NetworkAccess.Settings.EnrichedAuditLogs.PatchAsync(requestBody);
 
 

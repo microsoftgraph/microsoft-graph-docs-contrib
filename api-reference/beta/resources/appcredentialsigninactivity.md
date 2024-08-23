@@ -3,7 +3,7 @@ title: "appCredentialSignInActivity resource type"
 description: "Represents an application credential activity in a given tenant."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: "resourcePageType"
 ---
 
@@ -15,18 +15,20 @@ Namespace: microsoft.graph
 
 Represents an application credential activity in a given tenant. This resource contains information about the last usage time of an application credential.
 
+For more information about this report, see [Usage and insights report: Microsoft Entra application activity (preview)](/entra/identity/monitoring-health/concept-usage-insights-report?tabs=microsoft-entra-admin-center#microsoft-entra-application-activity-preview)
+
 ## Methods
 
 | Method                                                                         | Return Type                                                                           | Description                                                                |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------- |
-| [List appCredentialSignInActivities](../api/reportroot-list-appcredentialsigninactivities.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.                    |
-| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Get an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential. |
+| [List](../api/reportroot-list-appcredentialsigninactivities.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.                    |
+| [Get](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Get an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential. |
 
 ## Properties
 
 | Property                 | Type                                             | Description                                                                                           |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| appId                    | String                                           | The globally unique appId (also called *client ID* on the Microsoft Entra admin center) of the credential application.                                                                 |
+| appId                    | String                                           | The globally unique **appId** (also called *client ID* on the Microsoft Entra admin center) of the credentialed application.                                                                 |
 | appObjectId              | String                                           | The ID of the credential application instance.                                                        |
 | createdDateTime          | DateTimeOffset                                   | The date and time when the credential was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                                                   |
 | credentialOrigin         | applicationKeyOrigin                             | The type the key credential originated from. Possible values are: `application`, `servicePrincipal`, `unknownFutureValue`. |
@@ -45,7 +47,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

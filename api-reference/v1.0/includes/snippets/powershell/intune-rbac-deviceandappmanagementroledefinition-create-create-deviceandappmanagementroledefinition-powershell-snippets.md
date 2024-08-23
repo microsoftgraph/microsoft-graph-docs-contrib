@@ -17,16 +17,16 @@ $params = @{
 				@{
 					"@odata.type" = "microsoft.graph.resourceAction"
 					allowedResourceActions = @(
-						"Allowed Resource Actions value"
-					)
-					notAllowedResourceActions = @(
-						"Not Allowed Resource Actions value"
-					)
-				}
+					"Allowed Resource Actions value"
+				)
+				notAllowedResourceActions = @(
+				"Not Allowed Resource Actions value"
 			)
 		}
 	)
-	isBuiltIn = $true
+}
+)
+isBuiltIn = $true
 }
 
 New-MgDeviceManagementRoleDefinition -BodyParameter $params

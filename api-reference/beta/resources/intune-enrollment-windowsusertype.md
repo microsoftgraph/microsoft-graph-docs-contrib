@@ -1,24 +1,25 @@
 ---
 title: "windowsUserType enum type"
-description: "Not yet documented"
+description: "Intune Enrollment Windowsusertype Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # windowsUserType enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|administrator|0|Not yet documented|
-|standard|1|Not yet documented|
+|administrator|0|Indicates that the user has administrator privileges.|
+|standard|1|Indicates that the user is a low-rights user without administrator privileges.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|

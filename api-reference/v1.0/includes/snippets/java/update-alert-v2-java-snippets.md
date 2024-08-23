@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Alert alert = new Alert();
-alert.assignedTo = "secAdmin@contoso.onmicrosoft.com";
-alert.classification = AlertClassification.TRUE_POSITIVE;
-alert.determination = AlertDetermination.MALWARE;
-alert.status = AlertStatus.IN_PROGRESS;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().alerts_v2("da637551227677560813_-961444813")
-	.buildRequest()
-	.patch(alert);
+com.microsoft.graph.models.security.Alert alert = new com.microsoft.graph.models.security.Alert();
+alert.setAssignedTo("secAdmin@contoso.com");
+alert.setClassification(com.microsoft.graph.models.security.AlertClassification.TruePositive);
+alert.setDetermination(com.microsoft.graph.models.security.AlertDetermination.Malware);
+alert.setStatus(com.microsoft.graph.models.security.AlertStatus.InProgress);
+com.microsoft.graph.models.security.Alert result = graphClient.security().alertsV2().byAlertId("{alert-id}").patch(alert);
+
 
 ```

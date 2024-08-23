@@ -3,7 +3,7 @@ title: "teamworkConnection resource type"
 description: "Represents the details about the connection status of a Microsoft Teams-enabled device and its peripherals."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ The connection status is useful when you calculate the device health as when the
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkConnection"

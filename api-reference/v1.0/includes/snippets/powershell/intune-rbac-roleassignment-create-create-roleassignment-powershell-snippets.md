@@ -11,8 +11,8 @@ $params = @{
 	displayName = "Display Name value"
 	description = "Description value"
 	resourceScopes = @(
-		"Resource Scopes value"
-	)
+	"Resource Scopes value"
+)
 }
 
 New-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -BodyParameter $params

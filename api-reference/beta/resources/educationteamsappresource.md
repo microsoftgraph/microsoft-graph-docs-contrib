@@ -3,7 +3,7 @@ title: "educationTeamsAppResource resource type"
 description: "Corresponds to an installed Microsoft Teams app."
 author: "adarshgh"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -33,9 +33,13 @@ Inherits from [educationResource](educationresource.md).
 | teamsEmbeddedContentUrl | String                        | URL for the app resource that will be opened by Teams.                                         |
 | webUrl                  | String                        | URL for the app resource that can be opened in the browser.                                    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "List places"
 description: "Retrieve a list of place objects."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -27,17 +27,14 @@ By default, this operation returns 100 places per page.
 
 Compared with the [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-findroomlists) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+<!-- { "blockType": "permissions", "name": "place_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-list-permissions.md)]
 
 ## HTTP request
 
@@ -79,7 +76,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -346,11 +343,11 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist",
-  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
+  "sampleKeys": ["Building2Rooms@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@contoso.com/microsoft.graph.roomlist/rooms
 ```
 
 # [C#](#tab/csharp)
@@ -378,7 +375,7 @@ GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicroso
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rooms-in-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -406,7 +403,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40M365x214355.onmicrosoft.com')/microsoft.graph.roomList/rooms",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40contoso.com')/microsoft.graph.roomList/rooms",
     "value": [
         {
             "id": "f4119db7-9a33-4bfe-a387-4444b9e7fd54",
@@ -415,7 +412,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Rainier",
-            "emailAddress": "Rainier@M365x214355.onmicrosoft.com",
+            "emailAddress": "Rainier@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -435,7 +432,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Hood",
-            "emailAddress": "Hood@M365x214355.onmicrosoft.com",
+            "emailAddress": "Hood@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -455,7 +452,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Baker",
-            "emailAddress": "Baker@M365x214355.onmicrosoft.com",
+            "emailAddress": "Baker@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,

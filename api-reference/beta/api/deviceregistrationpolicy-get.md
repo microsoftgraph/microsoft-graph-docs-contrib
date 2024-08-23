@@ -3,7 +3,7 @@ title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 # Get deviceRegistrationPolicy
@@ -17,15 +17,12 @@ Read the properties and relationships of a [deviceRegistrationPolicy](../resourc
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+<!-- { "blockType": "permissions", "name": "deviceregistrationpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/deviceregistrationpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Reader
 + Cloud Device Administrator
 + Intune Administrator
@@ -46,7 +43,7 @@ GET /policies/deviceRegistrationPolicy
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -106,7 +103,7 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 
 ### Response
 
-The following is an example of a response that shows the default settings for the device registration policy.
+The following example shows the response with default settings for the device registration policy.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -120,26 +117,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
-    "id": "deviceRegistrationPolicy",
-    "displayName": "Device Registration Policy",
-    "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-    "userDeviceQuota": 50,
-    "multiFactorAuthConfiguration": "0",
-    "azureADRegistration": {
-        "appliesTo": "1",
-        "isAdminConfigurable": false,
-        "allowedUsers": [],
-        "allowedGroups": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
+  "id": "deviceRegistrationPolicy",
+  "displayName": "Device Registration Policy",
+  "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
+  "userDeviceQuota": 2,
+  "multiFactorAuthConfiguration": "notRequired",
+  "azureADRegistration": {
+    "isAdminConfigurable": false,
+    "allowedToRegister": {
+      "@odata.type": "#microsoft.graph.noDeviceRegistrationMembership"
     },
-    "azureADJoin": {
-        "appliesTo": "1",
-        "isAdminConfigurable": true,
-        "allowedUsers": [],
-        "allowedGroups": []
+  },
+  "azureADJoin": {
+    "isAdminConfigurable": true,
+    "allowedToJoin": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
     },
-    "localAdminPassword": {
-      "isEnabled": false
+    "localAdmins": {
+      "enableGlobalAdmins": true,
+      "registeringUsers": {
+        "@odata.type": "#microsoft.graph.enumeratedDeviceRegistrationMembership",
+        "users": ["3c8ef067-8b96-44de-b2ae-557dfa0f97a0"],
+        "groups": []
+      }
     }
+  },
+  "localAdminPassword": {
+    "isEnabled": false
+  }
 }
 ```

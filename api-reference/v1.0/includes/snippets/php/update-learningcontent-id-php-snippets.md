@@ -5,8 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\LearningContent;
+use Microsoft\Graph\Generated\Models\Level;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LearningContent();
@@ -19,6 +22,7 @@ $requestBody->setLanguageTag('en-us');
 $requestBody->setNumberOfPages(9);
 $requestBody->setDuration(new \DateInterval('PT20M'));
 $requestBody->setFormat('Book');
+$requestBody->setLevel(new Level('beginner'));
 $requestBody->setCreatedDateTime(new \DateTime('2018-01-01T00:00:00Z'));
 $requestBody->setLastModifiedDateTime(new \DateTime('2021-04-01T04:26:06.1995367Z'));
 $requestBody->setContributors(['Lina Wagner', 'Lisa Richter', 	]);

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let decisions = await client.api('/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions')
+let decisions = await client.api('/identityGovernance/accessReviews/definitions/02800b79-1a6f-40b7-8381-c0bebc3763bd/instances/30f0cb53-da42-402e-8be5-9005f9c374f7/decisions')
 	.get();
 
 ```

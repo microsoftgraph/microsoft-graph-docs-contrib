@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 title: "driveItem: createUploadSession"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: createUploadSession
@@ -25,13 +25,10 @@ To upload a file using an upload session:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_createuploadsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-createuploadsession-permissions.md)]
 
 ## Create an upload session
 
@@ -380,7 +377,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "request", "name": "explicit-upload-commit" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_file}
+PUT https://graph.microsoft.com/beta/me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 
@@ -435,7 +432,7 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
 
-## See also
+## Related content
 
 [Large file upload](/graph/sdks/large-file-upload)
 

@@ -3,7 +3,7 @@ title: "accessPackageSubject resource type"
 description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update accessPackageSubject](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
-| [Get accessPackageSubject](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Get](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 
 ## Properties
 
@@ -33,6 +33,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |email|String|The email address of the subject.|
 |id|String| Read-only. Key.|
 |objectId|String|The object identifier of the subject. `null` if the subject isn't yet a user in the tenant. Alternate key.|
+|onPremisesSecurityIdentifier|String|A string representation of the principal's security identifier, if known, or `null` if the subject doesn't have a security identifier.|
 |principalName|String|The principal name, if known, of the subject.|
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|
@@ -46,7 +47,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

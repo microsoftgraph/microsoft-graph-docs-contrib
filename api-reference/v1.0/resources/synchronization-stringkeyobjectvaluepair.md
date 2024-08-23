@@ -4,7 +4,7 @@ description: "Represents a key."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # stringKeyObjectValuePair resource type
@@ -20,7 +20,7 @@ Represents a key. This resource is an open type that allows other properties to 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

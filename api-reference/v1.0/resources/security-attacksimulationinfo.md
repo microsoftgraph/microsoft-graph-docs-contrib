@@ -3,7 +3,7 @@ title: "attackSimulationInfo resource type"
 description: "Represents attack simulation information for threat submission."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents attack simulation information for threat submission. If an email was 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.attackSimulationInfo"

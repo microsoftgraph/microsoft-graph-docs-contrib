@@ -3,7 +3,7 @@ title: "customExtensionStageSetting resource type"
 description: "Defines when to execute an access package custom workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,9 +15,10 @@ Defines when to execute a [accessPackageAssignmentRequestWorkflowExtension](../r
 
 Inherits from [entity](../resources/entity.md).
 
-To read the **customExtensionStageSettings** objects on a policy, append `?$expand=customExtensionStageSettings` to a [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) request. For example, `GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings`.
+To read the **customExtensionStageSettings** objects on a policy, append `?$expand=customExtensionStageSettings($expand=customExtension)` to a [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) request. For example, `GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)`. For more information, see [Example 2: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-stage-settings-for-a-policy).
 
-To delete the **customExtensionStageSettings** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection.
+To delete the **customExtensionStageSettings** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection. For more information, see [Example 2: Remove the customExtensionStageSettings from a policy](../api/accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionstagesettings-from-a-policy).
+
 
 ## Methods
 
@@ -38,7 +39,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

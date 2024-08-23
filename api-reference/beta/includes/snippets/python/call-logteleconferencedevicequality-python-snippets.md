@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.calls.log_teleconference_device_quality.log_teleconference_device_quality_post_request_body import LogTeleconferenceDeviceQualityPostRequestBody
+from msgraph_beta.generated.models.teleconference_device_quality import TeleconferenceDeviceQuality
+from msgraph_beta.generated.models.teleconference_device_media_quality import TeleconferenceDeviceMediaQuality
+from msgraph_beta.generated.models.teleconference_device_audio_quality import TeleconferenceDeviceAudioQuality
+from msgraph_beta.generated.models.teleconference_device_video_quality import TeleconferenceDeviceVideoQuality
+from msgraph_beta.generated.models.teleconference_device_screen_sharing_quality import TeleconferenceDeviceScreenSharingQuality
 
 graph_client = GraphServiceClient(credentials, scopes)
 

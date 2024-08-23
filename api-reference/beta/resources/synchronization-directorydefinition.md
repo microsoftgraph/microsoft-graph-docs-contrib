@@ -4,7 +4,7 @@ description: "Provides the synchronization engine information about a directory 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # directoryDefinition resource type
@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+|[Discover](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 
@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -59,11 +59,6 @@ Here's a JSON representation of the resource.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

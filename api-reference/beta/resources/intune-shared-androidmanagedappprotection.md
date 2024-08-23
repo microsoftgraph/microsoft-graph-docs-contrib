@@ -2,8 +2,8 @@
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |[Delete androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-delete.md)|None|Deletes a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |[Update androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Update the properties of a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.|
 |**Policy Set**|
-|[hasPayloadLinks action](../api/intune-shared-androidmanagedappprotection-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
+|[hasPayloadLinks action](../api/intune-shared-androidmanagedappprotection-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
 
 ## Properties
 |Property|Type|Description|

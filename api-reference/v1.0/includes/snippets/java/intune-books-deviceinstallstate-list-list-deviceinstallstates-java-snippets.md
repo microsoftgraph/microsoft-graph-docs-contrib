@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-DeviceInstallStateCollectionPage deviceStates = graphClient.deviceAppManagement().managedEBooks("{managedEBookId}").deviceStates()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+DeviceInstallStateCollectionResponse result = graphClient.deviceAppManagement().managedEBooks().byManagedEBookId("{managedEBook-id}").deviceStates().get();
+
 
 ```

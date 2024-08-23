@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta external connections schema patch --external-connection-id {externalConnection-id} --body '{\
   "baseType": "microsoft.graph.externalItem",\
   "properties": [\

@@ -4,27 +4,75 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PlannerPlanConfiguration plannerPlanConfiguration = new PlannerPlanConfiguration();
-plannerPlanConfiguration.defaultLanguage = "en-us";
-LinkedList<PlannerPlanConfigurationBucketDefinition> bucketsList = new LinkedList<PlannerPlanConfigurationBucketDefinition>();
-PlannerPlanConfigurationBucketDefinition buckets = new PlannerPlanConfigurationBucketDefinition();
-buckets.externalBucketId = "deliveryBucket";
-bucketsList.add(buckets);
-PlannerPlanConfigurationBucketDefinition buckets1 = new PlannerPlanConfigurationBucketDefinition();
-buckets1.externalBucketId = "storePickupBucket";
-bucketsList.add(buckets1);
-PlannerPlanConfigurationBucketDefinition buckets2 = new PlannerPlanConfigurationBucketDefinition();
-buckets2.externalBucketId = "specialOrdersBucket";
-bucketsList.add(buckets2);
-PlannerPlanConfigurationBucketDefinition buckets3 = new PlannerPlanConfigurationBucketDefinition();
-buckets3.externalBucketId = "returnProcessingBucket";
-bucketsList.add(buckets3);
-plannerPlanConfiguration.buckets = bucketsList;
+plannerPlanConfiguration.setDefaultLanguage("en-us");
+LinkedList<PlannerPlanConfigurationBucketDefinition> buckets = new LinkedList<PlannerPlanConfigurationBucketDefinition>();
+PlannerPlanConfigurationBucketDefinition plannerPlanConfigurationBucketDefinition = new PlannerPlanConfigurationBucketDefinition();
+plannerPlanConfigurationBucketDefinition.setExternalBucketId("deliveryBucket");
+buckets.add(plannerPlanConfigurationBucketDefinition);
+PlannerPlanConfigurationBucketDefinition plannerPlanConfigurationBucketDefinition1 = new PlannerPlanConfigurationBucketDefinition();
+plannerPlanConfigurationBucketDefinition1.setExternalBucketId("storePickupBucket");
+buckets.add(plannerPlanConfigurationBucketDefinition1);
+PlannerPlanConfigurationBucketDefinition plannerPlanConfigurationBucketDefinition2 = new PlannerPlanConfigurationBucketDefinition();
+plannerPlanConfigurationBucketDefinition2.setExternalBucketId("specialOrdersBucket");
+buckets.add(plannerPlanConfigurationBucketDefinition2);
+PlannerPlanConfigurationBucketDefinition plannerPlanConfigurationBucketDefinition3 = new PlannerPlanConfigurationBucketDefinition();
+plannerPlanConfigurationBucketDefinition3.setExternalBucketId("returnProcessingBucket");
+buckets.add(plannerPlanConfigurationBucketDefinition3);
+plannerPlanConfiguration.setBuckets(buckets);
+LinkedList<PlannerPlanConfigurationLocalization> localizations = new LinkedList<PlannerPlanConfigurationLocalization>();
+PlannerPlanConfigurationLocalization plannerPlanConfigurationLocalization = new PlannerPlanConfigurationLocalization();
+plannerPlanConfigurationLocalization.setId("en-us");
+plannerPlanConfigurationLocalization.setLanguageTag("en-us");
+plannerPlanConfigurationLocalization.setPlanTitle("Order Tracking");
+LinkedList<PlannerPlanConfigurationBucketLocalization> buckets1 = new LinkedList<PlannerPlanConfigurationBucketLocalization>();
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization.setExternalBucketId("deliveryBucket");
+plannerPlanConfigurationBucketLocalization.setName("Deliveries");
+buckets1.add(plannerPlanConfigurationBucketLocalization);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization1 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization1.setExternalBucketId("storePickupBucket");
+plannerPlanConfigurationBucketLocalization1.setName("Pickup");
+buckets1.add(plannerPlanConfigurationBucketLocalization1);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization2 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization2.setExternalBucketId("specialOrdersBucket");
+plannerPlanConfigurationBucketLocalization2.setName("Special Orders");
+buckets1.add(plannerPlanConfigurationBucketLocalization2);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization3 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization3.setExternalBucketId("returnProcessingBucket");
+plannerPlanConfigurationBucketLocalization3.setName("Customer Returns");
+buckets1.add(plannerPlanConfigurationBucketLocalization3);
+plannerPlanConfigurationLocalization.setBuckets(buckets1);
+localizations.add(plannerPlanConfigurationLocalization);
+PlannerPlanConfigurationLocalization plannerPlanConfigurationLocalization1 = new PlannerPlanConfigurationLocalization();
+plannerPlanConfigurationLocalization1.setId("es-es");
+plannerPlanConfigurationLocalization1.setLanguageTag("es-es");
+plannerPlanConfigurationLocalization1.setPlanTitle("Seguimiento de pedidos");
+LinkedList<PlannerPlanConfigurationBucketLocalization> buckets2 = new LinkedList<PlannerPlanConfigurationBucketLocalization>();
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization4 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization4.setExternalBucketId("deliveryBucket");
+plannerPlanConfigurationBucketLocalization4.setName("Entregas");
+buckets2.add(plannerPlanConfigurationBucketLocalization4);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization5 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization5.setExternalBucketId("storePickupBucket");
+plannerPlanConfigurationBucketLocalization5.setName("Recogida");
+buckets2.add(plannerPlanConfigurationBucketLocalization5);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization6 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization6.setExternalBucketId("specialOrdersBucket");
+plannerPlanConfigurationBucketLocalization6.setName("Pedidos especiales");
+buckets2.add(plannerPlanConfigurationBucketLocalization6);
+PlannerPlanConfigurationBucketLocalization plannerPlanConfigurationBucketLocalization7 = new PlannerPlanConfigurationBucketLocalization();
+plannerPlanConfigurationBucketLocalization7.setExternalBucketId("specialOrdersBucket");
+plannerPlanConfigurationBucketLocalization7.setName("Devoluciones de clientes");
+buckets2.add(plannerPlanConfigurationBucketLocalization7);
+plannerPlanConfigurationLocalization1.setBuckets(buckets2);
+localizations.add(plannerPlanConfigurationLocalization1);
+plannerPlanConfiguration.setLocalizations(localizations);
+PlannerPlanConfiguration result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().planConfiguration().patch(plannerPlanConfiguration);
 
-graphClient.solutions().businessScenarios("c5d514e6c6864911ac46c720affb6e4d").planner().planConfiguration()
-	.buildRequest()
-	.patch(plannerPlanConfiguration);
 
 ```

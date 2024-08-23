@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnPremisesDirectorySynchronization onPremisesDirectorySynchronization = new OnPremisesDirectorySynchronization();
 OnPremisesDirectorySynchronizationConfiguration configuration = new OnPremisesDirectorySynchronizationConfiguration();
 OnPremisesAccidentalDeletionPrevention accidentalDeletionPrevention = new OnPremisesAccidentalDeletionPrevention();
-accidentalDeletionPrevention.synchronizationPreventionType = OnPremisesDirectorySynchronizationDeletionPreventionType.ENABLED_FOR_COUNT;
-accidentalDeletionPrevention.alertThreshold = 500;
-configuration.accidentalDeletionPrevention = accidentalDeletionPrevention;
-configuration.synchronizationInterval = DatatypeFactory.newInstance().newDuration("PT30M");
-configuration.customerRequestedSynchronizationInterval = DatatypeFactory.newInstance().newDuration("PT1H");
-onPremisesDirectorySynchronization.configuration = configuration;
+accidentalDeletionPrevention.setSynchronizationPreventionType(OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount);
+accidentalDeletionPrevention.setAlertThreshold(500);
+configuration.setAccidentalDeletionPrevention(accidentalDeletionPrevention);
+PeriodAndDuration synchronizationInterval = PeriodAndDuration.ofDuration(Duration.parse("PT30M"));
+configuration.setSynchronizationInterval(synchronizationInterval);
+PeriodAndDuration customerRequestedSynchronizationInterval = PeriodAndDuration.ofDuration(Duration.parse("PT1H"));
+configuration.setCustomerRequestedSynchronizationInterval(customerRequestedSynchronizationInterval);
+onPremisesDirectorySynchronization.setConfiguration(configuration);
 OnPremisesDirectorySynchronizationFeature features = new OnPremisesDirectorySynchronizationFeature();
-features.groupWriteBackEnabled = true;
-onPremisesDirectorySynchronization.features = features;
+features.setGroupWriteBackEnabled(true);
+onPremisesDirectorySynchronization.setFeatures(features);
+OnPremisesDirectorySynchronization result = graphClient.directory().onPremisesSynchronization().byOnPremisesDirectorySynchronizationId("{onPremisesDirectorySynchronization-id}").patch(onPremisesDirectorySynchronization);
 
-graphClient.directory().onPremisesSynchronization("{id}")
-	.buildRequest()
-	.patch(onPremisesDirectorySynchronization);
 
 ```

@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.education_assignment import EducationAssignment
+from msgraph_beta.generated.models.education_item_body import EducationItemBody
+from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.education_added_student_action import EducationAddedStudentAction
+from msgraph_beta.generated.models.education_add_to_calendar_options import EducationAddToCalendarOptions
 
 graph_client = GraphServiceClient(credentials, scopes)
 

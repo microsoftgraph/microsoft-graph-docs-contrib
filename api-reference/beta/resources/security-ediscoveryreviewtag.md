@@ -3,7 +3,7 @@ title: "ediscoveryReviewTag resource type"
 description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and nonresponsive content"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -18,12 +18,12 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryReviewTags](../api/security-ediscoverycase-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get a list of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.|
-|[Create ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Get ediscoveryReviewTag](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Read the properties and relationships of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Update ediscoveryReviewTag](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Delete an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[asHierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|List tags organized as hierarchy.|
+|[List](../api/security-ediscoverycase-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get a list of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.|
+|[Create](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Get](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Read the properties and relationships of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Update](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Delete](../api/security-ediscoverycase-delete-tags.md)|None|Delete an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[List tags as hierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|List tags organized as hierarchy.|
 
 
 ## Properties
@@ -50,7 +50,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 |childTags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
 |parent|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

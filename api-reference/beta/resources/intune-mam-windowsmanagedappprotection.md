@@ -2,18 +2,18 @@
 title: "windowsManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on a Windows device"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsManagedAppProtection resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on a Windows device
 
@@ -28,8 +28,8 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |[Create windowsManagedAppProtection](../api/intune-mam-windowsmanagedappprotection-create.md)|[windowsManagedAppProtection](../resources/intune-mam-windowsmanagedappprotection.md)|Create a new [windowsManagedAppProtection](../resources/intune-mam-windowsmanagedappprotection.md) object.|
 |[Delete windowsManagedAppProtection](../api/intune-mam-windowsmanagedappprotection-delete.md)|None|Deletes a [windowsManagedAppProtection](../resources/intune-mam-windowsmanagedappprotection.md).|
 |[Update windowsManagedAppProtection](../api/intune-mam-windowsmanagedappprotection-update.md)|[windowsManagedAppProtection](../resources/intune-mam-windowsmanagedappprotection.md)|Update the properties of a [windowsManagedAppProtection](../resources/intune-mam-windowsmanagedappprotection.md) object.|
-|[targetApps action](../api/intune-mam-windowsmanagedappprotection-targetapps.md)|None|Not yet documented|
-|[assign action](../api/intune-mam-windowsmanagedappprotection-assign.md)|None|Not yet documented|
+|[targetApps action](../api/intune-mam-windowsmanagedappprotection-targetapps.md)|None||
+|[assign action](../api/intune-mam-windowsmanagedappprotection-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -69,6 +69,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |:---|:---|:---|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|List of apps to which the policy is deployed.|
+|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

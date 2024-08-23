@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-BusinessScenario businessScenario = graphClient.solutions().businessScenarios("c5d514e6c6864911ac46c720affb6e4d")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+BusinessScenario result = graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").get();
+
 
 ```

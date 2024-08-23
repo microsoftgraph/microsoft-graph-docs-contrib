@@ -3,7 +3,7 @@ title: "ediscoveryNoncustodialDataSource: removeHold"
 description: "Start the process of removing hold from eDiscovery non-custodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Start the process of removing hold from [eDiscovery non-custodial data sources](
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoverynoncustodialdatasource_removehold" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverynoncustodialdatasource-removehold-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -61,7 +58,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Remove hold from multiple non-custodial data sources
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +113,7 @@ Content-Type: application/json
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -129,7 +126,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Remove hold from a single non-custodial data source
 #### Request
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -176,7 +173,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

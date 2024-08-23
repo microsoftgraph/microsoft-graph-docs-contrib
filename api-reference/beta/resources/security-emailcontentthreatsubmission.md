@@ -3,7 +3,7 @@ title: "emailContentThreatSubmission resource type"
 description: "Represents a threat submission related to the content of an email."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmissio
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

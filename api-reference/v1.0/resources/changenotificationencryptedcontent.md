@@ -4,7 +4,7 @@ description: "A changeNotificationEncryptedContent object represents the encrypt
 ms.localizationpriority: medium
 author: "baywet"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # changeNotificationEncryptedContent resource type
@@ -27,7 +27,7 @@ For more information, see [Set up change notifications that include resource dat
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

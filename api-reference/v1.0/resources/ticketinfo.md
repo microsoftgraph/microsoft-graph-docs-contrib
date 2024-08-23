@@ -3,7 +3,7 @@ title: "ticketInfo resource type"
 description: "Represents ticket information related to role assignment and eligibility requests."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents ticket information related to assignment and eligibility requests in 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ticketInfo"

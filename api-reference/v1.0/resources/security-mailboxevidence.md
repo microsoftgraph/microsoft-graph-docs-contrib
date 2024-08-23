@@ -4,7 +4,7 @@ description: "A mailbox that is reported in the alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -27,10 +27,11 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.mailboxEvidence"
+  "@odata.type": "microsoft.graph.security.mailboxEvidence",
+  "baseType": "microsoft.graph.security.alertEvidence"
 }
 -->
 ``` json

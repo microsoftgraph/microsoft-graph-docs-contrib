@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # NumberColumn resource type

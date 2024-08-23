@@ -1,0 +1,274 @@
+{
+    "redirections": [
+        {
+            "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/resources/printreleasemechanism.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/nameditem.md",
+            "redirect_url": "/graph/api/resources/workbooknameditem",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/table.md",
+            "redirect_url": "/graph/api/resources/workbooktable",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/worksheet.md",
+            "redirect_url": "/graph/api/resources/workbookworksheet",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chart.md",
+            "redirect_url": "/graph/api/resources/workbookchart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartaxes.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartdatalabels.md",
+            "redirect_url": "/graph/api/resources/workbookchartdatalabels",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartareaformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartareaformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartlegend.md",
+            "redirect_url": "/graph/api/resources/workbookchartlegend",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartseries.md",
+            "redirect_url": "/graph/api/resources/workbookchartseries",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/charttitle.md",
+            "redirect_url": "/graph/api/resources/workbookcharttitle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartfill.md",
+            "redirect_url": "/graph/api/resources/workbookchartfill",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartfont.md",
+            "redirect_url": "/graph/api/resources/workbookchartfont",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartaxis.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxis",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartaxisformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxisformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartgridlines.md",
+            "redirect_url": "/graph/api/resources/workbookchartgridlines",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartaxistitle.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxistitle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartlineformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartlineformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartaxistitleformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxistitleformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartdatalabelformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartdatalabelformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartgridlinesformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartgridlinesformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartlegendformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartlegendformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartpoint.md",
+            "redirect_url": "/graph/api/resources/workbookchartpoint",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartpointformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartpointformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/chartseriesformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartseriesformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/charttitleformat.md",
+            "redirect_url": "/graph/api/resources/workbookcharttitleformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/filter.md",
+            "redirect_url": "/graph/api/resources/workbookfilter",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/range.md",
+            "redirect_url": "/graph/api/resources/workbookrange",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/rangeformat.md",
+            "redirect_url": "/graph/api/resources/workbookrangeformat",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/rangesort.md",
+            "redirect_url": "/graph/api/resources/workbookrangesort",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/rangeborder.md",
+            "redirect_url": "/graph/api/resources/workbookrangeborder",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/rangefill.md",
+            "redirect_url": "/graph/api/resources/workbookrangefill",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/rangefont.md",
+            "redirect_url": "/graph/api/resources/workbookrangefont",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/tablesort.md",
+            "redirect_url": "/graph/api/resources/workbooktablesort",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/worksheetprotection.md",
+            "redirect_url": "/graph/api/resources/workbookworksheetprotection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/microsoft365-groups-concept-overview.md",
+            "redirect_url": "/graph/api/resources/groups-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-delete.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-get.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-list.md",
+            "redirect_url": "/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-delete.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-get.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-get?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-list.md",
+            "redirect_url": "/graph/api/industrydata-inboundflow-list?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-post.md",
+            "redirect_url": "/graph/api/industrydata-inboundfileflow-post?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-update.md",
+            "redirect_url": "/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-post.md",
+            "redirect_url": "/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-update.md",
+            "redirect_url": "/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "graph/data-connect-pam.md",
+            "redirect_url": "/concepts/data-connect-concept-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/formatprotection-get.md ",
+            "redirect_url": "/graph/api/workbookformatprotection-get.md?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/v1.0/api/formatprotection-get.md",
+            "redirect_url": "/graph/api/workbookformatprotection-get.md?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/formatprotection-update.md",
+            "redirect_url": "/graph/api/workbookformatprotection-update.md?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/v1.0/api/formatprotection-update.md ",
+            "redirect_url": "/graph/api/workbookformatprotection-update.md?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/resources/formatprotection.md",
+            "redirect_url": "/graph/api/resources/workbookformatprotection.md?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/v1.0/resources/formatprotection.md",
+            "redirect_url": "/graph/api/resources/workbookformatprotection.md?view=graph-rest-1.0",
+            "redirect_document_id": false
+        }
+    ]
+}

@@ -3,7 +3,7 @@ title: "singleUser complex type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -25,9 +25,13 @@ This type has the following properties:
 | description |String | The name of the user in Microsoft Entra ID. Read only. |
 | isBackup | Boolean | For a **singleUser** in an approval stage, indicates whether the user is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

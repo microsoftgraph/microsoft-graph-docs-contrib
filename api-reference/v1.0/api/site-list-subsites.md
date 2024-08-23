@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: List subsites for a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
 ---
@@ -18,13 +18,10 @@ Get a collection of subsites defined for a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "site_list_subsites" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-list-subsites-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,6 +108,7 @@ Content-type: application/json
     {
       "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
       "name": "Team A Subsite",
+      "isPersonalSite": false,
       "description": "",
       "createdDateTime": "2016-10-18T03:05:59Z",
       "lastModifiedDateTime": "2016-10-18T10:40:59Z",
@@ -119,6 +117,7 @@ Content-type: application/json
     {
       "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
       "name": "Team B Subsite",
+      "isPersonalSite": false,
       "description": "",
       "createdDateTime": "2016-10-18T03:05:59Z",
       "lastModifiedDateTime": "2016-10-18T10:40:59Z",

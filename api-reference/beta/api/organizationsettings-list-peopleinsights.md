@@ -3,7 +3,7 @@ title: "List peopleInsights"
 description: "Get the properties of an insightsSettings object for displaying or returning people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -21,13 +21,10 @@ To learn how to customize privacy for people insights in an organization, see [C
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "organizationsettings_list_peopleinsights" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organizationsettings-list-peopleinsights-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +37,7 @@ GET /organization/{organizationId}/settings/peopleInsights
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -122,5 +119,5 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) for an organization.

@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a **riskyUser** objec
 ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 # Get riskyUser
 
@@ -19,13 +19,10 @@ Retrieve the properties and relationships of a **riskyUser** object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+<!-- { "blockType": "permissions", "name": "riskyusers_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyusers-get-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -35,12 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /riskyUsers/{id}
 GET /identityProtection/riskyUsers/{id}
 ```
-
+## Optional query parameters
+This method does not support any [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
@@ -52,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 ## Examples
 ### Example 1: Get a risky user
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +97,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,7 +121,7 @@ Content-type: application/json
 ```
 ### Example 2: Get risky users
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -169,7 +167,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

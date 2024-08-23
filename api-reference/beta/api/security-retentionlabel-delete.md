@@ -3,7 +3,7 @@ title: "Delete retentionLabel"
 description: "Deletes a retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,16 +14,13 @@ Namespace: microsoft.graph.security
 
 Delete a [retentionLabel](../resources/security-retentionlabel.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "security_retentionlabel_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-retentionlabel-delete-permissions.md)]
 
 ## HTTP request
 
@@ -39,7 +36,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -51,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -59,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
+DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 ```
 
 # [C#](#tab/csharp)
@@ -97,6 +95,8 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retenti
 ---
 
 ### Response
+Here's an example of the response.
+
 >
 <!-- {
   "blockType": "response",

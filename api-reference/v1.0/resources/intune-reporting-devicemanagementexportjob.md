@@ -2,8 +2,8 @@
 title: "deviceManagementExportJob resource type"
 description: "Entity representing a job to export a report"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

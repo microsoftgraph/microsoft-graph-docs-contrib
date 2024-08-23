@@ -3,7 +3,7 @@ title: "secureScore resource type"
 description: "Represents a tenant's secure score per day of scoring data, at the tenant and control level."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScores](../api/security-list-securescores.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
-|[Get secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Read properties and metadata of a secureScore object. | 
+|[List](../api/security-list-securescores.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
+|[Get](../api/securescore-get.md) | [secureScore](securescore.md) |Read properties and metadata of a secureScore object. |
 
 
 
@@ -31,7 +31,7 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 |	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
 |	azureTenantId	|	String	|	GUID string for tenant ID.	|
 |	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
-|	createdDateTime	|	DateTimeOffset	|	The date when the entity is created.  |
+|	createdDateTime	|	DateTimeOffset	|	When the report was created.  |
 |	currentScore	|	Double	|	Tenant current attained score on specified date.	|
 |	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).	|
 |id |String|Provider-generated GUID/unique identifier. Read-only. Required.|
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "requestSchedule resource type"
 description: "An request schedule can be included in an access package assignment request and is present in an access package assignment. In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -25,9 +25,13 @@ In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) a
 |expiration|[expirationPattern](expirationpattern.md)|In entitlement management, when the access should expire.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|For recurring access, or eligible or active assignment. This property is currently unsupported in both PIM and entitlement management.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSchedule"

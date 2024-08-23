@@ -3,7 +3,7 @@ title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune

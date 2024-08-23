@@ -2,18 +2,18 @@
 title: "deviceCustomAttributeShellScript resource type"
 description: "Represents a custom attribute script for macOS."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceCustomAttributeShellScript resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Represents a custom attribute script for macOS.
 
@@ -25,7 +25,7 @@ Represents a custom attribute script for macOS.
 |[Create deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-create.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Create a new [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) object.|
 |[Delete deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-delete.md)|None|Deletes a [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md).|
 |[Update deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-update.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Update the properties of a [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) object.|
-|[assign action](../api/intune-devices-devicecustomattributeshellscript-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-devices-devicecustomattributeshellscript-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|

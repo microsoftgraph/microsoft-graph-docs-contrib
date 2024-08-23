@@ -12,8 +12,8 @@ $params = @{
 	subject = "a7d388c3-5e3f-4959-ac7d-786b3383006a"
 	description = "Updated description"
 	audiences = @(
-		"api://AzureADTokenExchange"
-	)
+	"api://AzureADTokenExchange"
+)
 }
 
 Update-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId -BodyParameter $params

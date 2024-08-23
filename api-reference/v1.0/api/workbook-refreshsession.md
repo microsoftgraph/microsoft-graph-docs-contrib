@@ -3,7 +3,7 @@ title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -16,13 +16,10 @@ Use this API to refresh an existing workbook session.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "workbook_refreshsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbook-refreshsession-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +32,7 @@ POST /me/drive/root:/{item-path}:/workbook/refreshSession
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | workbook-session-id | Workbook session ID to be refreshed. Required. |
 
 ## Request body
@@ -48,7 +45,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +96,7 @@ Note that workbook-session-id header is required.
 
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

@@ -2,8 +2,8 @@
 title: "Get azureADWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the azureADWindowsAutopilotDeploymentProfile object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [azureADWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1482
+Content-Length: 1911
 
 {
   "value": {
@@ -74,6 +76,7 @@ Content-Length: 1482
     "displayName": "Display Name value",
     "description": "Description value",
     "language": "Language value",
+    "locale": "Locale value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "outOfBoxExperienceSettings": {
@@ -84,6 +87,15 @@ Content-Length: 1482
       "deviceUsageType": "shared",
       "skipKeyboardSelectionPage": true,
       "hideEscapeLink": true
+    },
+    "outOfBoxExperienceSetting": {
+      "@odata.type": "microsoft.graph.outOfBoxExperienceSetting",
+      "privacySettingsHidden": true,
+      "eulaHidden": true,
+      "userType": "standard",
+      "deviceUsageType": "shared",
+      "keyboardSelectionPageSkipped": true,
+      "escapeLinkHidden": true
     },
     "enrollmentStatusScreenSettings": {
       "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -96,9 +108,11 @@ Content-Length: 1482
       "allowDeviceUseOnInstallFailure": true
     },
     "extractHardwareHash": true,
+    "hardwareHashExtractionEnabled": true,
     "deviceNameTemplate": "Device Name Template value",
-    "deviceType": "surfaceHub2",
+    "deviceType": "holoLens",
     "enableWhiteGlove": true,
+    "preprovisioningAllowed": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],

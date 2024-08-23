@@ -3,7 +3,7 @@ title: "keyCredential resource type"
 description: "Contains a key credential associated with an application or a service principal. The keyCredentials property of the application and servicePrincipal entities is a collection of keyCredential."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "madansr7"
 ---
 
@@ -29,10 +29,14 @@ To add a keyCredential using Microsoft Graph, see [Add a certificate to an app u
 |type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`, or `X509CertAndPassword`.|
 |usage|String|A string that describes the purpose for which the key can be used; for example, `None`​, `Verify`​, `PairwiseIdentifier`​, `Delegation`​, `Decrypt`​, `Encrypt`​, `HashedIdentifier`​, `SelfSignedTls`, or `Sign`. <br/><br/>If **usage** is `Sign`​, the **type** should be `X509CertAndPassword`​, and the **passwordCredentials**​ for signing should be defined.|
 
+## Relationships
+
+None.
+
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

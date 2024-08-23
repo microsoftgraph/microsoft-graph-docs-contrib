@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.business_scenario_task import BusinessScenarioTask
+from msgraph_beta.generated.models.business_scenario_group_target import BusinessScenarioGroupTarget
+from msgraph_beta.generated.models.planner_task_target_kind import PlannerTaskTargetKind
+from msgraph_beta.generated.models.business_scenario_properties import BusinessScenarioProperties
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BusinessScenarioTask(
-	odata_type = "#microsoft.graph.businessScenarioTask",
 	title = "Customer order #12010",
 	percent_complete = 0,
 	priority = 5,

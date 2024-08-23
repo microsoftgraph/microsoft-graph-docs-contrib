@@ -3,7 +3,7 @@ title: "bookingCustomerInformation resource type"
 description: "Registers the customer properties for an appointment. An appointment contains a list of customer information and each unit indicates the properties of a customer who is part of that appointment."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Inherits from [bookingCustomerInformationBase](bookingcustomerinformationbase.md
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingCustomerInformation"

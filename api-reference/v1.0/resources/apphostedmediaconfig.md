@@ -3,7 +3,7 @@ title: "appHostedMediaConfig resource type"
 description: "Media stack hosted by the application."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Media stack hosted by the application.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

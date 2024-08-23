@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.iosi_pad_o_s_web_clip import IosiPadOSWebClip
+from msgraph.generated.models.mime_content import MimeContent
+from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

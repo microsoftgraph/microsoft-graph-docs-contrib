@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAssignmentRequest: resume"
-description: "Resume accessPackageAssignmentRequest objects."
+description: "Resume a user's access package request after waiting for a callback from a custom extension."
 ms.localizationpriority: medium
 author: "vikama-microsoft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -11,19 +11,21 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
+Resume a user's access package request after waiting for a callback from a custom extension.
+
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_resume" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
+
+> [!IMPORTANT]
+> App-only access can be authorized *without* granting the `EntitlementManagement.ReadWrite.All` application permission to the caller. Instead, assign the caller an [Entitlement Management role](/entra/id-governance/entitlement-management-delegate), where `Access package assignment manager` is the least privileged role supported for this operation. For more information on how to assign an Entitlement Management role, see [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md#example-4-create-a-role-assignment-with-access-package-catalog-scope) or [Delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers#as-a-catalog-owner-delegate-to-an-access-package-manager).
 
 ## HTTP request
 
@@ -39,7 +41,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackage
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -64,7 +66,7 @@ If successful, this action returns a `204 No Content` response code.
 
 #### Request
 
-The following is an example of a call to resume an access package assignment request that's waiting for a callback.
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -138,7 +140,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
+The following example shows a request to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
 <!-- {
   "blockType": "request"
 }

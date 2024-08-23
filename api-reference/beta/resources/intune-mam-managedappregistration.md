@@ -2,18 +2,18 @@
 title: "managedAppRegistration resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # managedAppRegistration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
@@ -23,7 +23,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |:---|:---|:---|
 |[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) objects.|
 |[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) object.|
-|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection|Not yet documented|
+|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection||
 
 ## Properties
 |Property|Type|Description|
@@ -51,6 +51,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |:---|:---|:---|
 |appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service.|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now.|
+|managedAppLogCollectionRequests|[managedAppLogCollectionRequest](../resources/intune-mam-managedapplogcollectionrequest.md) collection|Zero or more log collection requests triggered for the app.|
 |operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) collection|Zero or more long running operations triggered on the app registration.|
 
 ## JSON Representation

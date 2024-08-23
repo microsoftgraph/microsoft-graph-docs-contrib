@@ -14,7 +14,7 @@ const servicePrincipal = {
   preferredSingleSignOnMode: 'saml'
 };
 
-await client.api('/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91')
+await client.api('/servicePrincipals/d3616293-fff8-4415-9f01-33b05dad1b46')
 	.update(servicePrincipal);
 
 ```

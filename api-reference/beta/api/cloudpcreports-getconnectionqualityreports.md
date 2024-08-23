@@ -3,7 +3,7 @@ title: "cloudPcReports: getConnectionQualityReports"
 description: "Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -15,17 +15,14 @@ Namespace: microsoft.graph
 
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudpcreports_getconnectionqualityreports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/reports/getConnectionQualityReports
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters include: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specify how to group the reports. If used, must have the same contents as the **select** parameter.|
 |orderBy|String collection|Specify how to sort the reports.|
-|search|String|Specifies a String to search|
+|search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|
 |top|Int32|The number of top records to return.|
@@ -68,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +92,7 @@ Content-length: 200
     "UDPConnectionPercentage",
     "LastConnectionGateway",
     "LastConnectionProtocol",
-    "EventDateTime"
+    "LastActiveTime"
   ],
   "skip": "0",
   "top": "25",
@@ -196,7 +193,7 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "EventDateTime",
+      "Column": "LastActiveTime",
       "PropertyType": "DateTime"
     }
   ],

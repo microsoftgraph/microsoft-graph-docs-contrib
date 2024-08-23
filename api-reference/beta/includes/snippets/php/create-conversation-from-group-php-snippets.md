@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Conversation;
+use Microsoft\Graph\Beta\Generated\Models\ConversationThread;
+use Microsoft\Graph\Beta\Generated\Models\Post;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\Recipient;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Conversation();
@@ -20,7 +28,7 @@ $postsPost1->setBody($postsPost1Body);
 $newParticipantsRecipient1 = new Recipient();
 $newParticipantsRecipient1EmailAddress = new EmailAddress();
 $newParticipantsRecipient1EmailAddress->setName('Adele Vance');
-$newParticipantsRecipient1EmailAddress->setAddress('AdeleV@contoso.onmicrosoft.com');
+$newParticipantsRecipient1EmailAddress->setAddress('AdeleV@contoso.com');
 $newParticipantsRecipient1->setEmailAddress($newParticipantsRecipient1EmailAddress);
 $newParticipantsArray []= $newParticipantsRecipient1;
 $postsPost1->setNewParticipants($newParticipantsArray);

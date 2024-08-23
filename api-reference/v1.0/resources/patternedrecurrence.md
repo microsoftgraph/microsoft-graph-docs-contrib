@@ -3,7 +3,7 @@ title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -23,9 +23,13 @@ The recurrence pattern and range. This shared object is used to define the recur
 |pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
 |range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

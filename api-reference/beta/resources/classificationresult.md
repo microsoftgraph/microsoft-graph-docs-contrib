@@ -3,7 +3,7 @@ title: "classificationResult resource type (deprecated)"
 description: "Represents the result of a classification request. Deprecated."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Represents the result of a classification operation from the Microsoft Classific
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

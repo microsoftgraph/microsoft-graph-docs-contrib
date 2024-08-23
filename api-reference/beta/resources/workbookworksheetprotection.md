@@ -3,8 +3,9 @@ title: "workbookWorksheetProtection resource type"
 description: "Represents the protection of a sheet object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Worksheet protection
 ---
 
 # workbookWorksheetProtection resource type
@@ -20,22 +21,22 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookWorksheetProtection](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |Read properties and relationships of workbookWorksheetProtection object.|
-|[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
-|[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
+|[Get](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |Read the properties and relationships of a workbookWorksheetProtection object.|
+|[Protect worksheet](../api/worksheetprotection-protect.md)|None|Protect a worksheet. Returns an error if the worksheet is already protected.|
+|[Unprotect worksheet](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtectionOptions](workbookworksheetprotectionoptions.md)|Sheet protection options. Read-only.|
-|protected|boolean|Indicates if the worksheet is protected.  Read-only.|
+|options|[workbookWorksheetProtectionOptions](workbookworksheetprotectionoptions.md)|Worksheet protection options. Read-only.|
+|protected|Boolean|Indicates whether the worksheet is protected.  Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -47,7 +48,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "protected": "boolean"
+  "protected": "Boolean"
 }
 
 ```

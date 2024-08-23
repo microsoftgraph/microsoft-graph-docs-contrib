@@ -3,7 +3,7 @@ title: "Create bookingAppointment"
 description: "Create a new bookingAppointment for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -13,17 +13,14 @@ Namespace: microsoft.graph
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_post_appointments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-post-appointments-permissions.md)]
 
 > [!NOTE]
 > If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
@@ -49,7 +46,7 @@ If the maximum number of customers (**maximumAttendeesCount**) allowed in the [s
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
 
-- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is invalid, that customer isn't included in the appointment object.
 
 ## Response
 
@@ -59,27 +56,32 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following example shows a request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment doesn't involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostappointments",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.bookingAppointment",
     "customerTimeZone": "America/Chicago",
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,	
     "smsNotificationsEnabled": true,
-    "endDateTime": {
+    "end": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:30:00.0000000+00:00",
         "timeZone": "UTC"
     },
+    "isCustomerAllowedToManageBooking": true,
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
@@ -141,7 +143,7 @@ Content-type: application/json
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
         "timeZone": "UTC"
@@ -244,12 +246,16 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
     "smsNotificationsEnabled": true,
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,	
     "customerTimeZone": "America/Chicago",
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
@@ -261,14 +267,15 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
+    "isCustomerAllowedToManageBooking": true,
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-01T12:30:00.0000000Z",
         "timeZone": "UTC"
     },

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.role_management.directory.resource_namespaces.item.resource_actions.resource_actions_request_builder import ResourceActionsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -12,7 +14,7 @@ query_params = ResourceActionsRequestBuilder.ResourceActionsRequestBuilderGetQue
 		filter = "isPrivileged eq true",
 )
 
-request_configuration = ResourceActionsRequestBuilder.ResourceActionsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

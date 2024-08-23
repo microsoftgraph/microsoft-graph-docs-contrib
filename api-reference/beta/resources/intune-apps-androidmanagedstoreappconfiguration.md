@@ -2,18 +2,18 @@
 title: "androidManagedStoreAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for Android Enterprise mobile app configurations."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
 # androidManagedStoreAppConfiguration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Contains properties, inherited properties and actions for Android Enterprise mobile app configurations.
 
@@ -43,7 +43,7 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune-apps-man
 |packageId|String|Android Enterprise app configuration package id.|
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
-|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
+|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy. This property is read-only.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 |connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 

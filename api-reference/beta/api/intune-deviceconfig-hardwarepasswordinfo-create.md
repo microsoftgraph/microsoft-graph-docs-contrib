@@ -2,8 +2,8 @@
 title: "Create hardwarePasswordInfo"
 description: "Create a new hardwarePasswordInfo object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [hardwarePasswordInfo](../resources/intune-deviceconfig-hardwarepasswordinfo.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/hardwarePasswordInfo
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,10 +50,10 @@ The following table shows the properties that are required when you create the h
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the hardware password info|
-|serialNumber|String|Device serial number|
-|currentPassword|String|Current device password|
-|previousPasswords|String collection|List of previous device passwords|
+|id|String|A unique string Id that is based on associated Intune Device Id. This property is read-only.|
+|serialNumber|String|Associated device's serial number . This property is read-only.|
+|currentPassword|String|Current device password. This property is read-only.|
+|previousPasswords|String collection|List of previous device passwords. This property is read-only.|
 
 
 

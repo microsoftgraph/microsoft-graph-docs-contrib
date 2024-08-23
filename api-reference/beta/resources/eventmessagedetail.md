@@ -3,7 +3,7 @@ title: "eventMessageDetail resource type"
 description: "Represents the base type for event message detail."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -30,6 +30,7 @@ The following table lists the supported events.
 | [channelDescriptionUpdatedEventMessageDetail](../resources/channeldescriptionupdatedeventmessagedetail.md) | **Channel's** description has been updated. |
 | [channelRenamedEventMessageDetail](../resources/channelrenamedeventmessagedetail.md) | A **channel** has been renamed. |
 | [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been set as favorite by default. |
+| [channelSharingUpdatedEventMessageDetail](../resources/channelsharingupdatedeventmessagedetail.md) | A **channel** is shared. |
 | [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelunsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been unset as favorite by default. |
 | [chatRenamedEventMessageDetail](../resources/chatrenamedeventmessagedetail.md) | A chat has been renamed. |
 | [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationmemberroleupdatedeventmessagedetail.md) | Role has been updated for a **member**. |
@@ -58,7 +59,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.eventMessageDetail"

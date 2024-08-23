@@ -3,7 +3,7 @@ title: "plannerCategoryDescriptions resource type"
 description: "Represents the descriptive labels for the categories that have been defined for a plan. It belongs to the plan details object. There can be up to 25 categories defined. "
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ Represents the descriptive labels for the categories that have been defined for 
 |category25|String|The label associated with Category 25|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

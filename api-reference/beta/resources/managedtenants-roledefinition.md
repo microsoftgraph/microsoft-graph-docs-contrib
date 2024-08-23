@@ -3,7 +3,7 @@ title: "roleDefinition resource type"
 description: "Represents detailed information for the role definition."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents detailed information for the role definition.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.roleDefinition"

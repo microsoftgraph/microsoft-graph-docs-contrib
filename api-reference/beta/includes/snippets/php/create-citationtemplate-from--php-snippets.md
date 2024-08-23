@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Security\CitationTemplate;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CitationTemplate();
 $requestBody->setOdataType('#microsoft.graph.security.citationTemplate');
-$requestBody->setDisplayName('String');
-$createdBy = new IdentitySet();
-$createdBy->setOdataType('microsoft.graph.identitySet');
-$requestBody->setCreatedBy($createdBy);
-$requestBody->setCitationUrl('String');
-$requestBody->setCitationJurisdiction('String');
+$requestBody->setDisplayName('Contoso Company Policy');
+$requestBody->setCitationUrl('www.citationUrl.com');
+$requestBody->setCitationJurisdiction('Contoso');
 
 $result = $graphServiceClient->security()->labels()->citations()->post($requestBody)->wait();
 

@@ -4,23 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String decision = "Approve";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team";
+com.microsoft.graph.beta.users.item.pendingaccessreviewinstances.item.batchrecorddecisions.BatchRecordDecisionsPostRequestBody batchRecordDecisionsPostRequestBody = new com.microsoft.graph.beta.users.item.pendingaccessreviewinstances.item.batchrecorddecisions.BatchRecordDecisionsPostRequestBody();
+batchRecordDecisionsPostRequestBody.setDecision("Approve");
+batchRecordDecisionsPostRequestBody.setJustification("All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team");
+batchRecordDecisionsPostRequestBody.setResourceId("a5c51e59-3fcd-4a37-87a1-835c0c21488a");
+graphClient.me().pendingAccessReviewInstances().byAccessReviewInstanceId("{accessReviewInstance-id}").batchRecordDecisions().post(batchRecordDecisionsPostRequestBody);
 
-String resourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a";
-
-graphClient.me().pendingAccessReviewInstances("{accessReviewInstanceId}")
-	.batchRecordDecisions(AccessReviewInstanceBatchRecordDecisionsParameterSet
-		.newBuilder()
-		.withDecision(decision)
-		.withJustification(justification)
-		.withPrincipalId(null)
-		.withResourceId(resourceId)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

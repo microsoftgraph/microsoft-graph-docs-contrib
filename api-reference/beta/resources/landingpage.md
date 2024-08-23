@@ -3,7 +3,7 @@ title: "landingPage resource type"
 description: "Represents an attack simulation landing page."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
-|[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
+|[List](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
+|[Get](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
 
 ## Properties
 
@@ -36,17 +36,19 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last modified the landing page.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the landing page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |locale|String|Content locale.|
-|source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentstatus-values)|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales.|
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|details|[landingPageDetail](../resources/landingpagedetail.md) collection|The detail information for a landing page associated with a simulation during its creation.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -66,8 +68,8 @@ The following is a JSON representation of the resource.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
   "locale": "String",
-  "source": "microsoft.graph.simulationContentSource",
-  "status": "microsoft.graph.simulationContentStatus",
+  "source": "String",
+  "status": "String",
   "supportedLocales": ["String"]
 }
 ```

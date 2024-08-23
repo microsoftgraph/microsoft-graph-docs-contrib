@@ -3,7 +3,7 @@ title: "localizedLabel resource type"
 description: "Represents the label for a term in the term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Identifies the labels associated with a given term.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedLabel"

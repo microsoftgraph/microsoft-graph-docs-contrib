@@ -15,7 +15,7 @@ To learn more, see [providers](./providers.md).
 Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
-All new applications should use MSAL2 Provider whenever possible. 
+All new applications should use MSAL2 Provider whenever possible.
 
 ## Get started
 
@@ -27,11 +27,11 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 
 ```html
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
-                        login-type="redirect/popup" 
-                        scopes="user.read,people.read" 
-                        redirect-uri="https://my.redirect/uri" 
-                        authority=""> 
-    </mgt-msal2-provider> 
+                        login-type="redirect/popup"
+                        scopes="user.read,people.read"
+                        redirect-uri="https://my.redirect/uri"
+                        authority="">
+    </mgt-msal2-provider>
 ```
 
 | Attribute                    | Description                                                                                                                                                                                                                                                           |
@@ -40,10 +40,10 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 | login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
 | scopes                       | Comma-separated strings for scopes that the user must consent to when they sign in. Optional.
 | custom-hosts                 | Comma-separated strings for additional domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
-| authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+| authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-contoso.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
-| base-url                     | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
+| base-url                     | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.
 | incremental-consent-disabled | Specifies if incremental consent is disabled. Default `false`. Optional. |
 
 ### Initialize in JavaScript
@@ -187,31 +187,31 @@ For details about how to register an app and get a client ID, see [Create a Micr
 To migrate an application that's using MSAL provider to the MSAL2 Provider:
 1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations**.
-1. Select the app registration of the app to migrate. 
+1. Select the app registration of the app to migrate.
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, select on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
 1. In your code, replace `MSALProvider` with `MSAL2Provider`.
 
     If you are initializing your provider in the JS/TS code, follow these steps:
-    
-    Replace the import statement for ```mgt-MSAL-provider``` with 
-    ```ts 
+
+    Replace the import statement for ```mgt-MSAL-provider``` with
+    ```ts
     import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
     ```
 
     Replace the initialization of MsalProvider with
     ```ts
-    Providers.globalProvider = new Msal2Provider({ 
+    Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
       ...
     })
     ```
-    If you are initializing the provider in HTML, replace 
+    If you are initializing the provider in HTML, replace
     ```html
     <mgt-msal-provider client-id="" ... ></mgt-msal-provider>
-    ``` 
-    with 
+    ```
+    with
     ```html
     <mgt-msal2-provider  client-id="" ... ></mgt-msal2-provider>
      ```

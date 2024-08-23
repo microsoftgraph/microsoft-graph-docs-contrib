@@ -3,8 +3,9 @@ title: "sequentialActivationRenewalsAlertIncident resource type"
 description: "Represents the details of an alert incident that is triggered if a user activates the same privileged role multiple times within the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Sequential activation
 ---
 
 # sequentialActivationRenewalsAlertIncident resource type
@@ -35,7 +36,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

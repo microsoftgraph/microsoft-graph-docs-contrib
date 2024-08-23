@@ -2,8 +2,8 @@
 title: "Delete deviceManagementConfigurationPolicyAssignment"
 description: "Deletes a deviceManagementConfigurationPolicyAssignment."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Deletes a [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /deviceManagement/inventoryPolicies/{deviceManagementInventoryPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 DELETE /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
@@ -39,7 +42,7 @@ DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPol
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -53,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/inventoryPolicies/{deviceManagementInventoryPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
 
 ### Response

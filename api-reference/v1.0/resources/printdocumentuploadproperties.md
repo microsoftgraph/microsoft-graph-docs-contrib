@@ -4,7 +4,7 @@ description: "Represents information for print document upload"
 title: "printDocumentUploadProperties resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: cloud-printing
+ms.subservice: universal-print
 ---
 
 # printDocumentUploadProperties resource type
@@ -24,7 +24,7 @@ Describes the document that is being uploaded
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printDocumentUploadProperties"

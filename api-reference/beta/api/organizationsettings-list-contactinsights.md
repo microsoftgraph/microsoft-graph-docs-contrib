@@ -3,7 +3,7 @@ title: "List contactInsights"
 description: "Retrieve properties of insightsSettings object for displaying or returning contact insights in an organization."
 author: "rogoy"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the properties of an [insightsSettings](../resources/insightssettings.md) ob
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Organization.Read.All, Organization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "organizationsettings_list_contactinsights" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organizationsettings-list-contactinsights-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +37,7 @@ GET /organization/{organizationId}/settings/contactInsights
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +49,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

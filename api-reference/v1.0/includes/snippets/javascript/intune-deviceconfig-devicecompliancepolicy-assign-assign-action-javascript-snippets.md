@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const deviceCompliancePolicyAssignment = Content-type: application/json
-Content-length: 336
-
-{
+const deviceCompliancePolicyAssignment = {
   assignments: [
     {
       '@odata.type': '#microsoft.graph.deviceCompliancePolicyAssignment',

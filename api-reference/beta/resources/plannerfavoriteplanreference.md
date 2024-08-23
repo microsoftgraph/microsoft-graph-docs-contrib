@@ -3,7 +3,7 @@ title: "plannerFavoritePlanReference resource type"
 description: "The **plannerFavoritePlanReference** resource type repesents a reference to a plannerPlan that has been marked as a favorite by the user. "
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -25,10 +25,14 @@ We recommend that clients notify users when there are discrepancies and keep the
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](planner-order-hint-format.md).|
 |planTitle|String|Title of the plan at the time the user marked it as a favorite.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 
 <!-- {
   "blockType": "resource",

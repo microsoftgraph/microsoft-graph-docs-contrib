@@ -3,7 +3,7 @@ title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment is graded. This is used within the **assignments.grading** property."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,15 @@ This superclass can’t be used directly in the assignment property. It exists t
 
 Base class for [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
-
 ## Properties
-
 None.
+
+## Relationships
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

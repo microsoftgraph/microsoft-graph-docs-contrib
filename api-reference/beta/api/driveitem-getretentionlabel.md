@@ -3,7 +3,7 @@ title: "driveItem: getRetentionLabel"
 description: "Get metadata information for a retention label applied on a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -21,13 +21,10 @@ For information about retention labels from an administrator's perspective, see 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                              |
-|:---------------------------------------|:-------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Sites.Read.All                                           |
-| Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | Files.Read.All, Sites.Read.All                                           |
+<!-- { "blockType": "permissions", "name": "driveitem_getretentionlabel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-getretentionlabel-permissions.md)]
 
 ## HTTP request
 
@@ -37,8 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET /driveitem/retentionLabel
-GET /drives/{drive-id}/items/{id}/retentionLabel
-GET /drives/{drive-id}/items/{id}?$expand=retentionLabel
+GET /drives/{drive-id}/items/{item-id}/retentionLabel
+GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```
 
 ## Optional query parameters
@@ -49,7 +46,7 @@ This method supports the `$expand` [OData query parameter](/graph/query-paramete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -63,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [itemRetentio
 
 ### Request
 
-The following shows an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -77,7 +74,7 @@ GET https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

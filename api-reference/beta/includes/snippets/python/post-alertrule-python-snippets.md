@@ -4,7 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.device_management.alert_rule import AlertRule
+from msgraph_beta.generated.models.rule_severity_type import RuleSeverityType
+from msgraph_beta.generated.models.alert_rule_template import AlertRuleTemplate
+from msgraph_beta.generated.models.device_management.rule_threshold import RuleThreshold
+from msgraph_beta.generated.models.aggregation_type import AggregationType
+from msgraph_beta.generated.models.operator_type import OperatorType
+from msgraph_beta.generated.models.device_management.rule_condition import RuleCondition
+from msgraph_beta.generated.models.relationship_type import RelationshipType
+from msgraph_beta.generated.models.condition_category import ConditionCategory
+from msgraph_beta.generated.models.device_management.notification_channel import NotificationChannel
+from msgraph_beta.generated.models.notification_channel_type import NotificationChannelType
+from msgraph_beta.generated.models.device_management.notification_receiver import NotificationReceiver
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -21,6 +33,15 @@ request_body = AlertRule(
 		operator = OperatorType.GreaterOrEqual,
 		target = 90,
 	),
+	conditions = [
+		RuleCondition(
+			relationship_type = RelationshipType.Or,
+			condition_category = ConditionCategory.AzureNetworkConnectionCheckFailures,
+			aggregation = AggregationType.Count,
+			operator = OperatorType.GreaterOrEqual,
+			threshold_value = "90",
+		),
+	],
 	notification_channels = [
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,

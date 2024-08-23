@@ -3,7 +3,7 @@ title: "riskyUserHistoryItem resource type"
 description: "Represents the risk history of a Microsoft Entra user as determined by Microsoft Entra ID Protection."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -51,7 +51,7 @@ Inherits from [riskyUser](../resources/riskyuser.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

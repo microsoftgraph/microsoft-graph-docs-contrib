@@ -4,17 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Boolean across = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().drive().items("{id}").workbook().names("{name}")
-	.range()
-	.merge(WorkbookRangeMergeParameterSet
-		.newBuilder()
-		.withAcross(across)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.drives.item.items.item.workbook.names.item.range.merge.MergePostRequestBody mergePostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.names.item.range.merge.MergePostRequestBody();
+mergePostRequestBody.setAcross(true);
+graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().byWorkbookNamedItemId("{workbookNamedItem-id}").range().merge().post(mergePostRequestBody);
+
 
 ```

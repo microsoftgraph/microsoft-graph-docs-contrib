@@ -3,7 +3,7 @@ title: "message: createReply"
 description: "Create a draft to reply to a message, in either JSON or MIME format. "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -29,13 +29,10 @@ Alternatively, [reply to a message](../api/message-reply.md) in a single operati
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "message_createreply" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-createreply-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required.|
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 | Prefer: outlook.timezone | string | Sets the timezone in the email thread to the desired format while replying to an email. Values can be any of the outlook [supportedTimeZones](outlookuser-supportedtimezones.md). If the header is not specified, by default UTC timezone is followed. Optional.|
 
@@ -70,7 +67,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft message in JSON format to reply to an existing message.
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +113,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -160,7 +157,7 @@ ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",

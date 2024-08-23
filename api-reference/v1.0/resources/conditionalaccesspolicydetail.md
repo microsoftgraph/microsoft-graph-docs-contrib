@@ -2,8 +2,9 @@
 title: "conditionalAccessPolicyDetail resource type"
 description: "Represents the configuration of a Microsoft recommended best-practice template for a Microsoft Entra Conditional Access policy."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +25,7 @@ Represents the configuration of the **details** property of a Microsoft recommen
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conditionalAccessPolicyDetail"

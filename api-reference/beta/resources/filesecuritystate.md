@@ -3,7 +3,7 @@ title: "fileSecurityState resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -26,7 +26,7 @@ Contains information about the file (not process) related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

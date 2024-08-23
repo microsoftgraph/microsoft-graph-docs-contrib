@@ -6,20 +6,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new WorkbookChartAxis
 {
-	MajorUnit = new Json
+	MajorUnit = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
-	Maximum = new Json
+	}),
+	Maximum = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
-	Minimum = new Json
+	}),
+	Minimum = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
+	}),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.PatchAsync(requestBody);
 
 

@@ -3,7 +3,7 @@ title: "deviceLocalCredential resource type"
 description: "Represents the local administrator account credential of a device object in Azure Active Directory that is enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

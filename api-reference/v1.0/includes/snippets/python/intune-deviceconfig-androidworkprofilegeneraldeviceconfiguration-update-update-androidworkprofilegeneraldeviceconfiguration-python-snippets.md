@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.android_work_profile_general_device_configuration import AndroidWorkProfileGeneralDeviceConfiguration
+from msgraph.generated.models.android_work_profile_required_password_type import AndroidWorkProfileRequiredPasswordType
+from msgraph.generated.models.android_work_profile_cross_profile_data_sharing_type import AndroidWorkProfileCrossProfileDataSharingType
+from msgraph.generated.models.android_work_profile_default_app_permission_policy_type import AndroidWorkProfileDefaultAppPermissionPolicyType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

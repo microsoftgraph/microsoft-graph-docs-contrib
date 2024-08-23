@@ -3,7 +3,7 @@ title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -25,9 +25,13 @@ Represents the custom domain certificate metadata for the [onPremisesPublishing]
 |subjectName|String| The subject name of the custom domain certificate. |
 |thumbprint|String| The thumbprint associated with the custom domain certificate. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

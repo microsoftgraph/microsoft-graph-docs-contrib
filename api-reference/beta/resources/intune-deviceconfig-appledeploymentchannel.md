@@ -2,18 +2,18 @@
 title: "appleDeploymentChannel enum type"
 description: "Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
 # appleDeploymentChannel enum type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel
 
@@ -22,3 +22,4 @@ Indicates the channel used to deploy the configuration profile. Available choice
 |:---|:---|:---|
 |deviceChannel|0|Send payload down over Device Channel.|
 |userChannel|1|Send payload down over User Channel.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|

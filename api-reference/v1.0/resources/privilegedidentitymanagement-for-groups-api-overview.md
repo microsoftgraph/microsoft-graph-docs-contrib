@@ -1,10 +1,13 @@
 ---
 title: "Govern membership and ownership of groups using privileged identity management (PIM) for groups"
 description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
-author: "ilyalushnikov"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: ilyal
 ms.localizationpriority: medium
-ms.prod: "governance"
-doc_type: resourcePageType
+doc_type: conceptualPageType
+ms.topic: overview
+ms.subservice: "entra-id-governance"
 ms.date: 10/03/2023
 ---
 
@@ -112,9 +115,11 @@ When a principal's *temporary active* membership or ownership of a group expires
 - The principal's details are automatically removed from the **members** and **owners** relationships.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
-## PIM for groups and identity security with Zero Trust
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
 
 ## Permissions and privileges
 
@@ -146,12 +151,12 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Microsoft Entra roles.
 
 
-## See also
+## Related content
 
 - [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Microsoft Entra Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Privileged Identity Management (PIM) for groups](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
-  
+
   <!-- {
   "type": "#page.annotation",
   "description": "Govern membership and ownership of groups using privileged identity management (PIM) for groups",

@@ -3,7 +3,7 @@ title: "plannerTaskRoleBasedRule resource type"
 description: "Represents the rules for editing tasks created for a scenario."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskRoleBasedRule"

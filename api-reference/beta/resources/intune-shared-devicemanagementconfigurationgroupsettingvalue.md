@@ -2,8 +2,8 @@
 title: "deviceManagementConfigurationGroupSettingValue resource type"
 description: "Value of the GroupSetting"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

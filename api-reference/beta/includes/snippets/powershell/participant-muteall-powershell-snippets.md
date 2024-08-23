@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	participants = @(
-		""
-	)
-	clientContext = "clientContext-value"
+	""
+)
+clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params

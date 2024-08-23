@@ -3,7 +3,7 @@ title: "Working with the Microsoft Entra entitlement management API"
 description: "Govern access to resources including groups, apps and sites through Microsoft Entra entitlement management"
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "conceptualPageType"
 ms.date: 11/01/2022
 ---
@@ -91,9 +91,9 @@ The following table lists the methods that you can use to interact with entitlem
 |[Get approvalStage](../api/approvalstage-get.md) | [approvalStage](approvalstage.md) | Retrieve the properties of an **approvalStage** object. |
 |[Update approvalStage](../api/approvalstage-update.md) | None | Apply approve or deny decision on an **approvalStage** object. |
 
-## See also
+## Related content
 
 - [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
-- [subjectSet](subjectset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md).
+- [subjectSet](subjectset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md), and [targetUserSponsors](targetusersponsors.md).
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
 - [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).

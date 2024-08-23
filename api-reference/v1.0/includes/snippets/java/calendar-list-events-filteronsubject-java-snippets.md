@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EventCollectionPage events = graphClient.me().calendar().events()
-	.buildRequest()
-	.filter("startsWith(subject,'All')")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+EventCollectionResponse result = graphClient.me().calendar().events().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "startsWith(subject,'All')";
+});
+
 
 ```

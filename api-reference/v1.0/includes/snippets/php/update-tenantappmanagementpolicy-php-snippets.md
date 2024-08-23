@@ -5,13 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\TenantAppManagementPolicy;
+use Microsoft\Graph\Generated\Models\AppManagementApplicationConfiguration;
+use Microsoft\Graph\Generated\Models\PasswordCredentialConfiguration;
+use Microsoft\Graph\Generated\Models\AppCredentialRestrictionType;
+use Microsoft\Graph\Generated\Models\KeyCredentialConfiguration;
+use Microsoft\Graph\Generated\Models\AppKeyCredentialRestrictionType;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TenantAppManagementPolicy();
 $requestBody->setIsEnabled(true);
-$applicationRestrictions = new AppManagementConfiguration();
+$applicationRestrictions = new AppManagementApplicationConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictionType(new AppCredentialRestrictionType('passwordAddition'));
 $passwordCredentialsPasswordCredentialConfiguration1->setMaxLifetime(null);

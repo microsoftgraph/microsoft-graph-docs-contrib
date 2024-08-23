@@ -3,7 +3,7 @@ author: daspek
 title: editAction resource type
 description: The EditAction object provides information about an activity that edited an item.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # editAction resource type

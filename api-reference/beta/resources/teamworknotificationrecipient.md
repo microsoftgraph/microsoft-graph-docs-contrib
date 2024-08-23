@@ -3,7 +3,7 @@ title: "teamworkNotificationRecipient resource type"
 description: "Represents the recipient of a notification sent in a Microsoft Teams activity feed."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkNotificationRecipient"

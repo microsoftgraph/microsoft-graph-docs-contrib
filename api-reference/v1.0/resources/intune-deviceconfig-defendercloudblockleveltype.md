@@ -2,8 +2,8 @@
 title: "defenderCloudBlockLevelType enum type"
 description: "Possible values of Cloud Block Level"
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

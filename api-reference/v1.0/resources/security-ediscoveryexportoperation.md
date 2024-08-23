@@ -3,7 +3,7 @@ title: "ediscoveryExportOperation resource type"
 description: "Represents the process of a Microsoft Purview eDiscovery export."
 author: "vbhatt0211"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get caseOperation](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method provides downloadUrl, fileName and size of exported content |
+|[Get case operation by ID](../api/security-caseoperation-get.md)|Resource | The **exportFileMetadata** property returned by the method provides downloadUrl, fileName and size of exported content |
 
 ## Properties
 |Property|Type|Description|
@@ -28,7 +28,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
 |createdDateTime|DateTimeOffset| The date and time the export was created.|
 |description|String| The description provided for the export.|
-|exportFileMetaData | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
+|exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.  |
 |exportOptions|microsoft.graph.security.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`,  `tags`.|
 |exportStructure|microsoft.graph.security.exportFileStructure|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. |
@@ -63,7 +63,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

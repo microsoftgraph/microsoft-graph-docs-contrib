@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceComplianceUserStatus deviceComplianceUserStatus = new DeviceComplianceUserStatus();
-deviceComplianceUserStatus.userDisplayName = "User Display Name value";
-deviceComplianceUserStatus.devicesCount = 12;
-deviceComplianceUserStatus.status = ComplianceStatus.NOT_APPLICABLE;
-deviceComplianceUserStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-deviceComplianceUserStatus.userPrincipalName = "User Principal Name value";
+deviceComplianceUserStatus.setOdataType("#microsoft.graph.deviceComplianceUserStatus");
+deviceComplianceUserStatus.setUserDisplayName("User Display Name value");
+deviceComplianceUserStatus.setDevicesCount(12);
+deviceComplianceUserStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+deviceComplianceUserStatus.setLastReportedDateTime(lastReportedDateTime);
+deviceComplianceUserStatus.setUserPrincipalName("User Principal Name value");
+DeviceComplianceUserStatus result = graphClient.deviceManagement().deviceCompliancePolicies().byDeviceCompliancePolicyId("{deviceCompliancePolicy-id}").userStatuses().post(deviceComplianceUserStatus);
 
-graphClient.deviceManagement().deviceCompliancePolicies("{deviceCompliancePolicyId}").userStatuses()
-	.buildRequest()
-	.post(deviceComplianceUserStatus);
 
 ```

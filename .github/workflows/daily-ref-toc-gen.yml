@@ -1,0 +1,16 @@
+name: Daily reference TOC generation
+
+on:
+  schedule:
+  - cron: 0 11 * * 1-5
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-toc:
+    uses: microsoftgraph/microsoft-graph-docs/.github/workflows/generate-ref-toc.yml@main
+    secrets: inherit

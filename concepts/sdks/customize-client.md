@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Customize the Microsoft Graph SDK service client
 
-The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
+The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This customizable default set allows you to change the client's behavior. For example, you can insert customized logging or a test handler to simulate specific scenarios. You can add and remove middleware components. It's important to note that the order in which middleware components run is significant.
 
 <!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
@@ -25,38 +25,10 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
 ## [PHP](#tab/PHP)
-We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom configured Guzzle client using:
 
-```php
-<?php
-use Microsoft\Graph\Core\GraphClientFactory;
-use Microsoft\Graph\GraphRequestAdapter;
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Core\Authentication\GraphPhpLeagueAuthenticationProvider;
-
-$tokenRequestContext = new ClientCredentialContext(
-    'tenantId',
-    'clientId',
-    'clientSecret'
-);
-$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
-// Get default middleware stack from SDK
-$handlerStack = GraphClientFactory::getDefaultHandlerStack();
-
-// Add a custom handler or extra handlers not added by default
-// Add Chaos handler to simulate random server failure responses
-$handlerStack->push(KiotaMiddleware::chaos());
-
-$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
-
-$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-```
+:::code language="php" source="./snippets/php/snippets/CustomClients.php" id="ChaosHandlerSnippet":::
 
 ## [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="CustomMiddlewareSnippet":::
 
@@ -72,7 +44,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 ## Configuring the HTTP proxy for the client
 
-Some environments require client applications to use a HTTP proxy before they can access the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
+Some environments require client applications to use an HTTP proxy before accessing the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
 
 <!-- markdownlint-disable MD024 -->
 ## [C#](#tab/csharp)
@@ -91,28 +63,9 @@ Some environments require client applications to use a HTTP proxy before they ca
 
 ## [PHP](#tab/PHP)
 
-```php
-<?php
-use Microsoft\Graph\Core\GraphClientFactory;
-use Microsoft\Graph\GraphRequestAdapter;
-
-// Configure proxy URLs on the Guzzle client
-$guzzleConfig = [
-    'proxy' => [
-        'http'  => 'http://proxy-url', // Use this proxy with "http"
-        'https' => 'http://proxy-url', // Use this proxy with "https"
-    ]
-];
-
-$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
-$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
-
-```
+:::code language="php" source="./snippets/php/snippets/CustomClients.php" id="ProxySnippet":::
 
 ## [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="ProxySnippet":::
 

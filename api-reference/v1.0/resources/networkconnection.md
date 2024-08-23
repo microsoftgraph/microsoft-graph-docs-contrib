@@ -3,7 +3,7 @@ title: "networkConnection resource type"
 description: "Contains stateful information about the network connection related to the alert."
 ms.localizationpriority: medium
 author: "chinguyen1"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ Contains stateful information about the network connection related to the alert.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

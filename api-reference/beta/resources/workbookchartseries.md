@@ -3,8 +3,9 @@ title: "workbookChartSeries resource type"
 description: "Represents a series in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart series
 ---
 
 # workbookChartSeries resource type
@@ -20,27 +21,27 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |Read properties and relationships of chartSeries object.|
-|[Create ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| Create a new chartPoint by posting to the points collection.|
-|[List points](../api/chartseries-list-points.md) |[workbookChartPoints](workbookchartpoint.md) collection| Get a chartPoints object collection.|
-|[Update](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md)	|Update chartSeries object. |
-|[List](../api/chartseries-list.md) | [workbookChartSeries](workbookchartseries.md) collection |Get chartSeries object collection. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|Retrieves a series based on its position in the collection|
+|[List](../api/chartseries-list.md) | [workbookChartSeries](workbookchartseries.md) collection |Get the list of chart series. |
+|[Get](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |Read the properties and relationships of a chart series.|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md)	|Update a chart series. |
+|[Create chart points](../api/chartseries-post-points.md) |[workbookChartPoint](workbookchartpoint.md)| Create a new chart point by posting to the points collection.|
+|[List chart points](../api/chartseries-list-points.md) |[workbookChartPoint](workbookchartpoint.md) collection| Get a list of chart points.|
+|[Get series at](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|Get a chart series based on its position in the collection.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|string|Represents the name of a series in a chart.|
+|name|string|The name of a series in a chart.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[workbookChartSeriesFormat](workbookchartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[workbookChartPoint](workbookchartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[workbookChartSeriesFormat](workbookchartseriesformat.md)|The formatting of a chart series, which includes fill and line formatting. Read-only.|
+|points|[workbookChartPoint](workbookchartpoint.md) collection|A collection of all points in the series. Read-only.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

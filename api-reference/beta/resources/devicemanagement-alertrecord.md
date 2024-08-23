@@ -3,7 +3,7 @@ title: "alertRecord resource type"
 description: "Represents the record of an alert event triggered by a rule."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -25,10 +25,10 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alertRecords](../api/devicemanagement-alertrecord-list.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.|
-|[Get alertRecord](../api/devicemanagement-alertrecord-get.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
-|[getPortalNotifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|Get a list of all portal notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.|
-|[setPortalNotificationAsSent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent.|
+|[List](../api/devicemanagement-alertrecord-list.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md) collection|Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.|
+|[Get](../api/devicemanagement-alertrecord-get.md)|[microsoft.graph.deviceManagement.alertRecord](../resources/devicemanagement-alertrecord.md)|Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.|
+|[Get portal notifications](../api/devicemanagement-alertrecord-getportalnotifications.md)|[microsoft.graph.deviceManagement.portalNotification](../resources/devicemanagement-portalnotification.md) collection|Get a list of all portal notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.|
+|[Set portal notification as sent](../api/devicemanagement-alertrecord-setportalnotificationassent.md)|None|Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent.|
 
 ## Properties
 
@@ -59,7 +59,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

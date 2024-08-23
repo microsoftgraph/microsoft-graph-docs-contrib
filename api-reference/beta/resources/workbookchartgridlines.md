@@ -3,8 +3,9 @@ title: "workbookChartGridlines resource type"
 description: "Represents major or minor gridlines on a chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart gridlines
 ---
 
 # workbookChartGridlines resource type
@@ -20,13 +21,13 @@ Represents major or minor gridlines on a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookChartGridlines](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |Read properties and relationships of chartGridlines object.|
-|[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](workbookchartgridlines.md)	|Update ChartGridlines object. |
+|[Get](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |Read the properties and relationships of a chartGridlines object.|
+|[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](workbookchartgridlines.md)	|Update a chartGridlines object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Boolean value representing if the axis gridlines are visible or not.|
+|visible|Boolean|Indicates whether the axis gridlines are visible.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -35,7 +36,7 @@ Represents major or minor gridlines on a chart axis.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

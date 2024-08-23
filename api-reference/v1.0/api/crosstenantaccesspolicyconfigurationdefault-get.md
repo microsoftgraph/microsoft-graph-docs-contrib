@@ -3,7 +3,7 @@ title: "Get crossTenantAccessPolicyConfigurationDefault"
 description: "Read the default configuration of a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Read the [default configuration](../resources/crosstenantaccesspolicyconfigurati
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not applicable|
-|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+<!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationdefault_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationdefault-get-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +37,7 @@ GET /policies/crossTenantAccessPolicy/default
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -120,7 +117,7 @@ Content-Type: application/json
   {
     "isMfaAccepted": false,
     "isCompliantDeviceAccepted": false,
-    "isHybridAzureADJoinedDeviceAccepted": false,
+    "isHybridAzureADJoinedDeviceAccepted": false
   },
   "automaticUserConsentSettings":
   {
@@ -218,6 +215,35 @@ Content-Type: application/json
         }
       ]
     }
+  },
+  "tenantRestrictions": {
+    "usersAndGroups": {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications": {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "invitationRedemptionIdentityProviderConfiguration": 
+  { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation", 
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ],
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }
 ```

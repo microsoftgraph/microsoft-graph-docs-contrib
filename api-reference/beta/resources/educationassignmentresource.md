@@ -1,10 +1,11 @@
 ---
 title: "educationAssignmentResource resource type"
-description: "A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will"
+description: "Represents a wrapper object that stores the resources associated with an assignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Assignment resource
 ---
 
 # educationAssignmentResource resource type
@@ -13,24 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will
-be copied to the student submission.  If the object isn't copied, each student sees a link to the resource on the assignment. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student 
-receives a copy of this resource in the resource list of their submission. Each student is able to modify their copy and submit it for grading.
+Represents a wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource is copied to the student submission.  If the object isn't copied, each student sees a link to the resource on the assignment. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student receives a copy of this resource in the resource list of their submission. Each student is able to modify their copy and submit it for grading.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
-|[Delete](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
+|[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
+|[Delete from assignment](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission. Required|
 |id|String| ID of this resource. Read-only.|
-|resource|[educationResource](educationresource.md)|Resource object that has been associated with this assignment.|
+|resource|[educationResource](educationresource.md)|Resource object that is associated with this assignment.|
 
 ## Relationships
 None.
@@ -38,7 +37,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

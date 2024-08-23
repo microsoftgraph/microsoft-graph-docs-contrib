@@ -1,13 +1,13 @@
 ---
-title: "Create or replace a historyItem"
+title: "Create or replace an activityHistoryItem"
 description: "Create a new or replace an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---
 
-# Create or replace a historyItem
+# Create or replace an activityHistoryItem
 
 Namespace: microsoft.graph
 
@@ -15,14 +15,11 @@ Create a new or replace an existing history item for an existing user activity.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "projectrome_put_historyitem" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-put-historyitem-permissions.md)]
 
 ## HTTP request
 
@@ -38,15 +35,15 @@ PUT /me/activities/{id}/historyItems/{id}
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+|Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.
+In the request body, supply a JSON representation of an [activityHistoryItem](../resources/projectrome-historyitem.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code if the **historyItem** was created or `200 OK` if the **historyItem** was replaced.
+If successful, this method returns a `201 Created` response code if the **activityHistoryItem** was created or `200 OK` if the **activityHistoryItem** was replaced.
 
 ## Example
 
@@ -70,10 +67,6 @@ Content-type: application/json
     "lastActiveDateTime": "2015-02-11T20:54:04.3457274+00:00"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/upsert-historyitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upsert-historyitem-javascript-snippets.md)]

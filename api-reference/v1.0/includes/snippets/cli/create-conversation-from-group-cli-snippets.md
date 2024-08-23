@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc groups conversations create --group-id {group-id} --body '{\
     "topic": "Take your wellness days and rest",\
     "threads": [\
@@ -19,7 +19,7 @@ mgc groups conversations create --group-id {group-id} --body '{\
                         {\
                             "emailAddress": {\
                                 "name": "Adele Vance",\
-                                "address": "AdeleV@contoso.onmicrosoft.com"\
+                                "address": "AdeleV@contoso.com"\
                             }\
                         }\
                     ]\

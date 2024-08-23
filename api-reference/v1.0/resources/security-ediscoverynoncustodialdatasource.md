@@ -3,7 +3,7 @@ title: "ediscoveryNoncustodialDataSource resource type"
 description: "Noncustodial data sources let you add data to a case without having to associate it to a custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -21,14 +21,14 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryNoncustodialDataSources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Get a list of the [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) objects and their properties.|
-|[Create ediscoveryNoncustodialDataSource](../api/security-ediscoverysearch-post-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Create a new [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.|
-|[Get ediscoveryNoncustodialDataSource](../api/security-ediscoverynoncustodialdatasource-get.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Read the properties and relationships of an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.|
-|[updateIndex](../api/security-ediscoverynoncustodialdatasource-updateindex.md)|None|Triggers a indexOperation to make a noncustodial data source and associated data sources searchable.|
-|[release](../api/security-ediscoverynoncustodialdatasource-release.md)|None|Release a noncustodial data source from a case.|
-|[applyHold](../api/security-ediscoverynoncustodialdatasource-applyhold.md)|None|Start the process of applying hold to eDiscovery noncustodial data sources.|
-|[removeHold](../api/security-ediscoverynoncustodialdatasource-removehold.md)|None|Start the process of removing hold from eDiscovery noncustodial data sources.|
-|[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md).|
+|[List non-custodial data sources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Get a list of the [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) objects and their properties.|
+|[Add non-custodial data sources](../api/security-ediscoverysearch-post-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Create a new [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.|
+|[Get](../api/security-ediscoverynoncustodialdatasource-get.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Read the properties and relationships of an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.|
+|[Update index](../api/security-ediscoverynoncustodialdatasource-updateindex.md)|None|Triggers a indexOperation to make a noncustodial data source and associated data sources searchable.|
+|[Release](../api/security-ediscoverynoncustodialdatasource-release.md)|None|Release a noncustodial data source from a case.|
+|[Apply hold](../api/security-ediscoverynoncustodialdatasource-applyhold.md)|None|Start the process of applying hold to eDiscovery noncustodial data sources.|
+|[Remove hold](../api/security-ediscoverynoncustodialdatasource-removehold.md)|None|Start the process of removing hold from eDiscovery noncustodial data sources.|
+|[Get last index operation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) associated with an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -49,7 +49,7 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 |lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the noncustodial data source.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

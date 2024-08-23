@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationClass educationClass = new EducationClass();
-educationClass.description = "Health Level 1";
-educationClass.classCode = "Health 501";
-educationClass.displayName = "Health 1";
-educationClass.externalId = "11019";
-educationClass.externalName = "Health Level 1";
-educationClass.externalSource = EducationExternalSource.SIS;
-educationClass.mailNickname = "fineartschool.net";
+educationClass.setDescription("Health Level 1");
+educationClass.setClassCode("Health 501");
+educationClass.setDisplayName("Health 1");
+educationClass.setExternalId("11019");
+educationClass.setExternalName("Health Level 1");
+educationClass.setExternalSource(EducationExternalSource.Sis);
+educationClass.setMailNickname("fineartschool.net");
+EducationClass result = graphClient.education().classes().post(educationClass);
 
-graphClient.education().classes()
-	.buildRequest()
-	.post(educationClass);
 
 ```

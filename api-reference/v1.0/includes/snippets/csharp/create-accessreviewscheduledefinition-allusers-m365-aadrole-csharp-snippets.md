@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
@@ -82,15 +84,21 @@ var requestBody = new AccessReviewScheduleDefinition
 		{
 			"backupReviewers" , new List<object>
 			{
-				new 
+				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-					QueryType = "MicrosoftGraph",
-				},
+					{
+						"query", new UntypedString("/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers")
+					},
+					{
+						"queryType", new UntypedString("MicrosoftGraph")
+					},
+				}),
 			}
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
 

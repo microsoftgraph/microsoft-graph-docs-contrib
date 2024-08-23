@@ -3,7 +3,7 @@ title: Create printJob
 description: Create a new printJob for a printer. 
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -14,20 +14,15 @@ Create a new [printJob](../resources/printJob.md) for a [printer](../resources/p
 
 Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.
 
-> **Note:** A user can submit up to ~10000 print jobs in 10 days.
+> **Note:** A user can submit up to ~10000 print jobs in 12 days.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+<!-- { "blockType": "permissions", "name": "printer_post_jobs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printer-post-jobs-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +37,7 @@ POST /print/printers/{printerId}/jobs
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -4,29 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 UnifiedRoleManagementPolicyEnablementRule unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyEnablementRule();
-unifiedRoleManagementPolicyRule.id = "Enablement_EndUser_Assignment";
-LinkedList<String> enabledRulesList = new LinkedList<String>();
-enabledRulesList.add("Justification");
-enabledRulesList.add("MultiFactorAuthentication");
-enabledRulesList.add("Ticketing");
-unifiedRoleManagementPolicyRule.enabledRules = enabledRulesList;
+unifiedRoleManagementPolicyRule.setOdataType("#microsoft.graph.unifiedRoleManagementPolicyEnablementRule");
+unifiedRoleManagementPolicyRule.setId("Enablement_EndUser_Assignment");
+LinkedList<String> enabledRules = new LinkedList<String>();
+enabledRules.add("Justification");
+enabledRules.add("MultiFactorAuthentication");
+enabledRules.add("Ticketing");
+unifiedRoleManagementPolicyRule.setEnabledRules(enabledRules);
 UnifiedRoleManagementPolicyRuleTarget target = new UnifiedRoleManagementPolicyRuleTarget();
-target.caller = "EndUser";
-LinkedList<UnifiedRoleManagementPolicyRuleTargetOperations> operationsList = new LinkedList<UnifiedRoleManagementPolicyRuleTargetOperations>();
-operationsList.add(UnifiedRoleManagementPolicyRuleTargetOperations.ALL);
-target.operations = operationsList;
-target.level = "Assignment";
-LinkedList<String> inheritableSettingsList = new LinkedList<String>();
-target.inheritableSettings = inheritableSettingsList;
-LinkedList<String> enforcedSettingsList = new LinkedList<String>();
-target.enforcedSettings = enforcedSettingsList;
-unifiedRoleManagementPolicyRule.target = target;
+target.setOdataType("microsoft.graph.unifiedRoleManagementPolicyRuleTarget");
+target.setCaller("EndUser");
+LinkedList<UnifiedRoleManagementPolicyRuleTargetOperations> operations = new LinkedList<UnifiedRoleManagementPolicyRuleTargetOperations>();
+operations.add(UnifiedRoleManagementPolicyRuleTargetOperations.All);
+target.setOperations(operations);
+target.setLevel("Assignment");
+LinkedList<String> inheritableSettings = new LinkedList<String>();
+target.setInheritableSettings(inheritableSettings);
+LinkedList<String> enforcedSettings = new LinkedList<String>();
+target.setEnforcedSettings(enforcedSettings);
+unifiedRoleManagementPolicyRule.setTarget(target);
+UnifiedRoleManagementPolicyRule result = graphClient.policies().roleManagementPolicies().byUnifiedRoleManagementPolicyId("{unifiedRoleManagementPolicy-id}").rules().byUnifiedRoleManagementPolicyRuleId("{unifiedRoleManagementPolicyRule-id}").patch(unifiedRoleManagementPolicyRule);
 
-graphClient.policies().roleManagementPolicies("DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_59d351b1-e819-4262-b298-236f5f9b1a67").rules("Enablement_EndUser_Assignment")
-	.buildRequest()
-	.patch(unifiedRoleManagementPolicyRule);
 
 ```

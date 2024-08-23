@@ -2,8 +2,8 @@
 title: "Create macOSWiredNetworkConfiguration"
 description: "Create a new macOSWiredNetworkConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
-ms.prod: "intune"
+ms.localizationpriority: medium
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [macOSWiredNetworkConfiguration](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -68,6 +70,7 @@ The following table shows the properties that are required when you create the m
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |nonEapAuthenticationMethodForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this wired network using their real username is displayed as 'anonymous'.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 
 
@@ -81,7 +84,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1499
+Content-length: 1538
 
 {
   "@odata.type": "#microsoft.graph.macOSWiredNetworkConfiguration",
@@ -122,7 +125,8 @@ Content-length: 1499
   ],
   "authenticationMethod": "usernameAndPassword",
   "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -131,7 +135,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1671
+Content-Length: 1710
 
 {
   "@odata.type": "#microsoft.graph.macOSWiredNetworkConfiguration",
@@ -175,6 +179,7 @@ Content-Length: 1671
   ],
   "authenticationMethod": "usernameAndPassword",
   "nonEapAuthenticationMethodForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
+  "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value",
+  "deploymentChannel": "userChannel"
 }
 ```

@@ -3,7 +3,7 @@ title: "targetManager resource type"
 description: "Complex type for entitlement management to indicate the manager, including indirect managers of a user may request on behalf of that user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # targetManager complex type
@@ -20,7 +20,7 @@ Used in an access package assignment policy, this type inherits from [subjectSet
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.targetManager"

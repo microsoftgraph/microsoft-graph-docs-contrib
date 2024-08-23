@@ -3,7 +3,7 @@ title: "azureAdPopTokenAuthentication resource type"
 description: "Defines the Microsoft Entra Proof Of Possession (PoP) used to authenticate with a workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.customExtensionAuthenticationConfiguration",

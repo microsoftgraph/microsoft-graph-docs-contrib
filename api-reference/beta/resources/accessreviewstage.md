@@ -3,7 +3,7 @@ title: "accessReviewStage resource type"
 description: "Represents a stage of an accessReviewInstance."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -22,12 +22,12 @@ Every **accessReviewStage** contains a list of [decisions](accessreviewinstanced
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewStages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Get a list of the [accessReviewStage](../resources/accessreviewstage.md) objects and their properties.|
-|[Get accessReviewStage](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
-|[Update accessReviewStage](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
-|[stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|
-|[filterByCurrentUser](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is a reviewer.|
-|[List decisions](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the decisions made in an accessReviewStage.|
+|[List](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Get a list of the [accessReviewStage](../resources/accessreviewstage.md) objects and their properties.|
+|[Get](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
+|[Update](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
+|[Stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|
+|[Filter by current user](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is a reviewer.|
+|[List decisions from a stage of an instance](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the decisions made in an accessReviewStage.|
 
 ## Properties
 |Property|Type|Description|

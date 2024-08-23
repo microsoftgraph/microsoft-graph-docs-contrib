@@ -3,7 +3,7 @@ title: "Chart: setPosition"
 description: "Positions the chart relative to cells on the worksheet."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,10 @@ Positions the chart relative to cells on the worksheet.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "chart_setposition" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chart-setposition-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,16 +33,16 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startCell|string|The start cell. This is where the chart is moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
-|endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
+|startCell|string|The start cell. It is where the chart is moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
+|endCell|string|Optional. The end cell. If specified, the chart's width and height is set to fully cover up this cell/range.|
 
 ## Response
 
@@ -54,7 +51,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +99,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

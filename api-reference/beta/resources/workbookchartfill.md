@@ -3,8 +3,9 @@ title: "workbookChartFill resource type"
 description: "Represents the fill formatting for a chart element."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Chart fill
 ---
 
 # workbookChartFill resource type
@@ -19,8 +20,8 @@ Represents the fill formatting for a chart element.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill-clear.md)|None|Clear the fill color of a chart element.|
-|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
+|[Set clear fill](../api/chartfill-clear.md)|None|Clear the fill color of a chart element.|
+|[Set solid fill](../api/chartfill-setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
 
 ## Properties
 None

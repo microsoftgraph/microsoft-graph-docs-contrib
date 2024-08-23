@@ -3,7 +3,7 @@ title: "plannerPropertyRule resource type"
 description: "An abstract base type of all entity rule definitions for Microsoft Planner."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerPropertyRule"

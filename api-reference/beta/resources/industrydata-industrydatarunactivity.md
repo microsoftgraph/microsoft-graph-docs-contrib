@@ -3,7 +3,7 @@ title: "industryDataRunActivity resource type"
 description: "An abstract base type for all activity types."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ Base type of [inboundFlowActivity](../resources/industrydata-inboundflowactivity
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

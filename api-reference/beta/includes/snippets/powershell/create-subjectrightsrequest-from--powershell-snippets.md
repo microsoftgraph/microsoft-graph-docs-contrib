@@ -25,16 +25,16 @@ $params = @{
 	mailboxLocations = $null
 	pauseAfterEstimate = $true
 	regulations = @(
-		"CCPA"
-	)
-	siteLocations = @{
-		"@odata.type" = "microsoft.graph.subjectRightsRequestAllSiteLocation"
+	"CCPA"
+)
+siteLocations = @{
+	"@odata.type" = "microsoft.graph.subjectRightsRequestAllSiteLocation"
+}
+approvers = @(
+	@{
+		id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
 	}
-	approvers = @(
-		@{
-			id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
-		}
-	)
+)
 }
 
 New-MgBetaPrivacySubjectRightsRequest -BodyParameter $params

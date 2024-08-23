@@ -6,11 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Simulation
 {
 	DisplayName = "Graph Simulation",
+	CreatedBy = new EmailIdentity
+	{
+		Email = "john@contoso.com",
+	},
 	DurationInDays = 3,
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
 	Status = SimulationStatus.Scheduled,
@@ -40,12 +46,18 @@ var requestBody = new Simulation
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"simulationNotification" , new 
+				"simulationNotification" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					TargettedUserType = "compromised",
-					EndUserNotificationOdataBind = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
-					DefaultLanguage = "en",
-				}
+					{
+						"targettedUserType", new UntypedString("compromised")
+					},
+					{
+						"endUserNotification@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a")
+					},
+					{
+						"defaultLanguage", new UntypedString("en")
+					},
+				})
 			},
 		},
 	},
@@ -62,6 +74,8 @@ var requestBody = new Simulation
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.AttackSimulation.Simulations.PostAsync(requestBody);
 
 

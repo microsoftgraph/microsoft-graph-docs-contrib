@@ -3,7 +3,7 @@ title: "tenantContract resource type"
 description: "Represents relationship information between a tenant and the managing entity."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents relationship information between a tenant and the managing entity.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedTenants.tenantContract"

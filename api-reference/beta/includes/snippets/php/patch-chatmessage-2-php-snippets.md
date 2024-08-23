@@ -5,8 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageImportance;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\Identity;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageMentionedIdentitySet;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageReaction;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageHistoryItem;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();

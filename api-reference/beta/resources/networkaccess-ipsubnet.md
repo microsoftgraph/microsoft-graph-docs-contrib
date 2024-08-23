@@ -3,7 +3,7 @@ title: "ipSubnet resource type"
 description: "An IP subnet is a portion of an IP network that shares a common network prefix. "
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/netwo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.ipSubnet"

@@ -3,7 +3,7 @@ title: "Get change notifications for teams and channels using Microsoft Graph"
 description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs."
 author: "anandab"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -18,7 +18,7 @@ Continue with this article about scenarios for the **team** or **channel** resou
 
 ## Subscribe to changes in any team at tenant level
 
-To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 ## Subscribe to changes in a particular team
 
 
-To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{team-id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{team-id}`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 
 ## Subscribe to changes in any channel at tenant level
 
-To get change notifications for all changes (create, update, and delete) related to any [channel](/graph/api/resources/channel) in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create, update, and delete) related to any [channel](/graph/api/resources/channel) in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 Continue with this article about scenarios for the [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat) context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 ## Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 The following are examples of events that generate notifications for this resource:
 - The display name of a channel is updated in the team.
@@ -323,9 +323,9 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-## See also
+## Related content
 
-- [Microsoft Graph change notifications](webhooks.md)
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
