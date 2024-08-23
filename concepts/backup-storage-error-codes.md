@@ -17,6 +17,11 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 ## Create protection policy API errors
 
+These error codes apply to the following APIs
+- [Create ExchangeProtectionPolicy](/graph/api/backuprestoreroot-post-exchangeprotectionpolicies)
+- [Create OneDriveForBusinessProtectionPolicy](/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies)
+- [Create SharePointProtectionPolicy](/graph/api/backuprestoreroot-post-sharepointprotectionpolicies)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
