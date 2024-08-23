@@ -36,7 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Entity URI for Microsoft.OutlookServices.eventMessage not found/permanentDelete
+POST /me/messages/{id}/permanentDelete
+POST /users/{id | userPrincipalName}/messages/{id}/permanentDelete
+POST /me/mailFolders/{id}/messages/{id}/permanentDelete
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/permanentDelete
 ```
 
 ## Request headers
@@ -64,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Entity URI for Microsoft.OutlookServices.eventMessage not found/permanentDelete
+POST https://graph.microsoft.com/beta/me/messages/{id}/permanentDelete
 ```
 
 
