@@ -83,6 +83,7 @@ The following example shows how to create a new **siteInclusionRule** associated
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create_siteinclusionrules"
@@ -96,6 +97,12 @@ Content-Type: application/json
     "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sharepointprotectionpolicy-create-siteinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -145,6 +152,7 @@ The following example shows how to create a new **driveInclusionRule** associate
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_create_driveinclusionrules"
@@ -158,6 +166,12 @@ Content-Type: application/json
     "driveExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessprotectionpolicy-create-driveinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -207,6 +221,7 @@ The following example shows how to create a new **mailboxInclusionRule** associa
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy-create-mailboxinclusionrules"
@@ -220,6 +235,12 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtection
    "mailboxExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangeprotectionpolicy-create-mailboxinclusionrules-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
