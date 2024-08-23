@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [backupRestoreRoot](../resources/backuprestoreroot.md) object in the response body.
 
-For a list of possible error responses, see [Backup Storage API error responses](../../../concepts/backup-storage-error-codes.md#backup-storage-api-error-responses).
+For a list of possible error responses, see [Backup Storage API error responses](graph/backup-storage-error-codes.md#backup-storage-api-error-responses).
 
 ## Examples
 
