@@ -14,7 +14,7 @@ ms.date: 08/16/2024
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
 > [!CAUTION]
-> Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. 
+> Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. We recommend that you migrate your apps to Microsoft Graph.
 
 Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph. **We recommend that you migrate your apps to Microsoft Graph.**
 

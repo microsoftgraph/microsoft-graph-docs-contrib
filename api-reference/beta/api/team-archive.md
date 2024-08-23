@@ -1,7 +1,7 @@
 ---
 title: "Archive team"
 description: "Archive the specified team. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
