@@ -1,0 +1,35 @@
+The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
+
+### Legend
+
++ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
++ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
+  + `ConsistencyLevel=eventual` header
+  + `$count=true` query string
++ Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).
+
+| Directory object   | Property name                 | $orderby |
+| ------------------ | ----------------------------- | -------- |
+| administrativeUnit | createdDateTime               | ![Advanced][AQP] |
+| administrativeUnit | deletedDateTime               | ![Advanced][AQP] |
+| administrativeUnit | displayName                   | ![Advanced][AQP] |
+| application        | createdDateTime               | ![Advanced][AQP] |
+| application        | deletedDateTime               | ![Advanced][AQP] |
+| application        | displayName                   | ![Advanced][AQP] |
+| orgContact         | createdDateTime               | ![Advanced][AQP] |
+| orgContact         | displayName                   | ![Advanced][AQP] |
+| device             | approximateLastSignInDateTime | ![Advanced][AQP] |
+| device             | createdDateTime               | ![Advanced][AQP] |
+| device             | deletedDateTime               | ![Advanced][AQP] |
+| device             | displayName                   | ![Advanced][AQP] |
+| group              | deletedDateTime               | ![Advanced][AQP] |
+| group              | displayName                   | ![Default][RDS] |
+| servicePrincipal   | createdDateTime               | ![Advanced][AQP] |
+| servicePrincipal   | deletedDateTime               | ![Advanced][AQP] |
+| servicePrincipal   | displayName                   | ![Advanced][AQP] |
+| user               | createdDateTime               | ![Advanced][AQP] |
+| user               | deletedDateTime               | ![Advanced][AQP] |
+| user               | displayName                   | ![Default][RDS] |
+| user               | userPrincipalName             | ![Default][RDS] |
+| [*all others*]     | [*all others*]                | ![NotSupported][NS]  |
+
