@@ -18,6 +18,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 ## Create protection policy API errors
 
 These error codes apply to the following APIs
+
 - [Create ExchangeProtectionPolicy](/graph/api/backuprestoreroot-post-exchangeprotectionpolicies)
 - [Create OneDriveForBusinessProtectionPolicy](/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies)
 - [Create SharePointProtectionPolicy](/graph/api/backuprestoreroot-post-sharepointprotectionpolicies)
@@ -36,6 +37,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get protection policy API errors
 
+These error codes apply to the following API
+
+- [Get ProtectionPolicyBase](/graph/api/protectionpolicybase-get)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -44,6 +49,12 @@ The following table lists the possible error and response codes that can be retu
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
 ## Patch protection policy API errors
+
+These error codes apply to the following APIs
+
+- [Update ExchangeProtectionPolicy](/graph/api/exchangeprotectionpolicy-update)
+- [Update OneDriveForBusinessProtectionPolicy](/graph/api/onedriveforbusinessprotectionpolicy-update)
+- [Update SharePointProtectionPolicy](/graph/api/sharepointprotectionpolicy-update)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -56,6 +67,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Delete inactive protection policy API errors
 
+These error codes apply to the following API
+
+- [Delete ProtectionPolicyBase](/graph/api/protectionpolicybase-delete)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -65,6 +80,10 @@ The following table lists the possible error and response codes that can be retu
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't delete policy. Only policy in Inactive status can be deleted.|
 
 ## Deactivate active protection policy API errors
+
+These error codes apply to the following API
+
+- [Deactivate ProtectionPolicyBase](/graph/api/protectionpolicybase-deactivate)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -76,6 +95,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Activate inactive protection policy API errors
 
+These error codes apply to the following API
+
+- [Activate ProtectionPolicyBase](/graph/api/protectionpolicybase-activate)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -85,6 +108,12 @@ The following table lists the possible error and response codes that can be retu
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
 ## List all the protection unit under a protection policy API errors
+
+These error codes apply to the following APIs
+
+- [List DriveProtectionUnit](/graph/api/backuprestoreroot-list-driveprotectionunits)
+- [List MailboxProtectionUnit](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
+- [List SiteProtectionUnit](/graph/api/backuprestoreroot-list-siteprotectionunits)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -97,6 +126,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get protection unit API errors
 
+These error codes apply to the following API
+
+- [Get ProtectionUnitBase](/graph/api/protectionunitbase-get)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -108,6 +141,12 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Protection unit ID is invalid or empty ID.|Invalid Protection Unit ID.|
 
 ## Create restore session API errors
+
+These error codes apply to the following APIs
+
+- [Create ExchangeRestoreSession](/graph/api/backuprestoreroot-post-exchangerestoresessions)
+- [Create OneDriveForBusinessRestoreSession](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions)
+- [Create SharePointRestoreSession](/graph/api/backuprestoreroot-post-sharepointrestoresessions)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -122,6 +161,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get restore session API errors
 
+These error codes apply to the following API
+
+- [Get RestoreSessionBase](/graph/api/restoresessionbase-get)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -130,6 +173,12 @@ The following table lists the possible error and response codes that can be retu
 |404|RestoreSessionNotFound|Valid ID but session not found.|Restore Session Not Found.|
 
 ## Patch restore session API errors
+
+These error codes apply to the following APIs
+
+- [Update ExchangeRestoreSession](/graph/api/exchangerestoresession-update)
+- [Update OneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-update)
+- [Update SharePointRestoreSession](/graph/api/sharepointrestoresession-update)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -146,6 +195,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Delete restore session API errors
 
+These error codes apply to the following API
+
+- [Delete RestoreSessionBase](/graph/api/restoresessionbase-delete)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -157,6 +210,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Activate restore session API errors
 
+These error codes apply to the following API
+
+- [Activate RestoreSessionBase](/graph/api/restoresessionbase-activate)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -167,6 +224,12 @@ The following table lists the possible error and response codes that can be retu
 |500|TooManyActiveRestoreSessions|Attempt to activate more than 25 sessions simultaneously.|Temporary error: Too many active restore sessions.|
 
 ## List restore artifact under a restore session API errors
+
+These error codes apply to the following APIs
+
+- [List DriveRestoreArtifact](/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts)
+- [List MailboxRestoreArtifact](/graph/api/exchangerestoresession-list-mailboxrestoreartifacts)
+- [List SiteRestoreArtifact](/graph/api/sharepointrestoresession-list-siterestoreartifacts)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -181,6 +244,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Create inclusion rule API errors
 
+These error codes apply to the following API
+
+- [Create ProtectionRuleBase](/graph/api/protectionrulebase-post)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -190,6 +257,10 @@ The following table lists the possible error and response codes that can be retu
 
 ## Get inclusion rule by ID API errors
 
+These error codes apply to the following API
+
+- [Get ProtectionRuleBase](/graph/api/protectionrulebase-get)
+
 The following table lists the possible error and response codes that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
@@ -197,16 +268,12 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
 |404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
 
-## Update inclusion rule API errors
-
-The following table lists the possible error and response codes that can be returned.
-
-| HTTP status code| Error code| Error message | Description|
-|:------------------|:--------------|:--------------|:--------------|
-|400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is absent.|
-|404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
-
 ## Get restore point API errors
+
+These error codes apply to the following APIs
+
+- [List RestorePoint](/graph/api/backuprestoreroot-list-restorepoints)
+- [Search RestorePoint](/graph/api/restorepoint-search)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -217,6 +284,10 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Protection unit ID in request is invalid.|Invalid Protection unit ID.|
 
 ## Enable service API errors
+
+These error codes apply to the following API
+
+- [Activate serviceApp](/graph/api/serviceapp-activate)
 
 The following table lists the possible error and response codes that can be returned.
 
