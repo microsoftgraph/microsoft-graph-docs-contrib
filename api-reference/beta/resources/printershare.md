@@ -37,16 +37,16 @@ Represents a printer that is intended to be discoverable by users and printing a
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |allowAllUsers|Boolean|If true, all users and groups can access this printer share. This property supersedes the lists of allowed users and groups defined by the **allowedUsers** and **allowedGroups** navigation properties.|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](./printerbase.md).|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
-|defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share.|
-|displayName|String|The name of the printer share that print clients should display.|
+|defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share. Inherited from [printerBase](./printerbase.md).|
+|displayName|String|The name of the printer share that print clients should display. Inherited from [printerBase](./printerbase.md).|
 |id|String| The printerShare's identifier. Read-only.|
-|isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs.|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share.|
-|manufacturer|String|The manufacturer reported by the printer associated with this printer share. Read-only.|
+|isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs. Inherited from [printerBase](./printerbase.md).|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share. Inherited from [printerBase](./printerbase.md).|
+|manufacturer|String|The manufacturer reported by the printer associated with this printer share. Read-only. Inherited from [printerBase](./printerbase.md).|
 |model|String|The model name reported by the printer associated with this printer share. Read-only.|
-|status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share. Read-only.|
+|status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share. Read-only. Inherited from [printerBase](./printerbase.md).|
 |viewPoint|[printerShareViewpoint](../resources/printershareviewpoint.md)|More data for a printer share as viewed by the signed-in user.|
 
 ## Relationships

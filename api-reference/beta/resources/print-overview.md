@@ -25,7 +25,7 @@ The cloud printing API provides the following key features.
 
 ## Print devices
 
-The [printerShare](./printershare.md) and [printer](./printer.md) resources define the public view and the actual printer for physical printers that are discoverable by users and applications. The printer share is a logical view of a printer resource that represents a physical printer. The underlying physical printer can be changed without changing the printer share, which enables organizations to maintain high printer availability. 
+The [printerShare](./printershare.md) and [printer](./printer.md) resources define the public view and the actual printer for physical printers that are discoverable by users and applications. A **printerShare** is a logical view of **printer** resources that represent physical printers. The underlying physical printers can be changed without changing the printer share, which enables organizations to maintain high printer availability. 
 
 The **printerShare** resource contains properties and methods that let you manage which users and groups can perform operations on that printer, such as creating or deleting print jobs. You can use the **printer** property to access information about the physical printer, see its status, list and reset its settings, and more.
 
@@ -40,7 +40,7 @@ You can manage user and group print permissions with Universal Print APIs that o
 
 [printJob](./printjob.md) objects are the basic unit of work for printing. They have a list of documents to print and another list of [printTask](./printtask.md) objects that describe the print operation to complete. Resources that derive from the [printOperation](./printoperation.md) base resource type, such as [printerCreateOperation](./printercreateoperation.md), represent long-running operations such as creating a new printer.
 
-To print a document, create a print job and pass its unique identifier to [printDocument: createUploadSession](../api/printdocument-createuploadsession.md) after the print task for the print job enters the **processing** state. Then use the session identifier that you received when you created the upload session to send the document to the **document** property of the print job. After this operation completes, you can start the print job to print your document. For more information about uploading documents, see [Upload documents using the Microsoft Graph Universal Print API](/graph/upload-data-to-upload-session).
+To print a document, create a **printJob** and pass its unique identifier to [printDocument: createUploadSession](../api/printdocument-createuploadsession.md) after the print task for the print job enters the **processing** state. Then use the session identifier that you received when you created the upload session to send the document to the **document** property of the **printJob**. After this operation completes, you can start the **printjob** to print your document. For more information about uploading documents, see [Upload documents using the Microsoft Graph Universal Print API](/graph/upload-data-to-upload-session).
 
 ## Implement pull printing
 

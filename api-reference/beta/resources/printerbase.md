@@ -10,7 +10,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the base type for the [printer](printer.md) and [printerShare](printerShare.md) entity types.  Inherits from [printerBase](./printerbase.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the base type for the [printer](printer.md) and [printerShare](printerShare.md) entity types. Inherits from [printerBase](./printerbase.md).
 
 ## Properties
 |Property|Type|Description|
