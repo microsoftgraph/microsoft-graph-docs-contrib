@@ -76,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageassignmentPolicies/87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187
 Content-Type: application/json
 
 {
@@ -169,7 +169,7 @@ The following example shows a request.
 -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
 Content-Type: application/json
 
 {
@@ -241,7 +241,7 @@ The following example shows a request.
 -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/f9afd2e3-7486-40df-9c35-aa2ae108c495
 Content-Type: application/json
 
 {
