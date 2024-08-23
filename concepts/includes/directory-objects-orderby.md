@@ -13,8 +13,8 @@ The following table summarizes support for `$orderby` by properties of directory
 
 ### Legend
 
-+ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
-+ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
++ ![Sorting works by default. Does not require advanced query parameters.](../images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
++ ![Sorting requires advanced query parameters.](../images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
   + `ConsistencyLevel=eventual` header
   + `$count=true` query string
 + Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).

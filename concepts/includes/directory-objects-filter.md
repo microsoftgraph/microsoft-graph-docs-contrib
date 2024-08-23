@@ -23,8 +23,8 @@ The following tables summarize support for `$filter` operators by properties of 
 
 ### Legend
 
-+ ![Works by default. Does not require advanced query parameters.](../images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
-+ ![Requires advanced query parameters.](../images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
++ ![Filter works by default. Does not require advanced query parameters.](../images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
++ ![Filter requires advanced query parameters.](../images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
   + `ConsistencyLevel=eventual` header
   + `$count=true` query string
 + ![Not supported.](../images/yesandnosymbols/no.svg) The `$filter` operator isn't supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
