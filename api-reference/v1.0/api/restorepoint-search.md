@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). In the absence of the `orderBy` clause, the latest restorePoints are returned.
+Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). If you don't include the `orderBy` parameter, the latest restore points are returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -62,6 +62,10 @@ In the request body, supply a JSON representation of the following parameters.
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
+
+> [!NOTE]
+> - Calls return a maximum of five restore points.
+> - You can include a maximum of 20 protection units in one request and the response won't be paginated.
 
 ## Examples
 
