@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Activate a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
 
+The following points apply to restoring a protection unit:
+
 - The SharePoint sites and OneDrive accounts being restored aren't locked in a ready-only state.
 - For SharePoint and OneDrive sites restored to new URLs, users don't have the same permissions they had to the original site. Only the global admin or SharePoint admin has permission to the restored site. However, for in-place or restores to the same URL, the permissions from the original site at the time of restoration are preserved.
 - Restoration of SharePoint site and OneDrive user content that was removed from the recycle bin isn't supported.
