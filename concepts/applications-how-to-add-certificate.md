@@ -14,7 +14,7 @@ ms.date: 08/23/2024
 
 The Microsoft identity platform supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
 
-You can [add or remove certificates using the Microsoft Entra admin center](/entra/identity-platform/quickstart-register-app?tabs=certificate#add-credentials). However, in automation scenarios, you might need to automate the certificate rollover for your app or service principal.
+You can [add or remove certificates using the Microsoft Entra admin center](/entra/identity-platform/quickstart-register-app?tabs=certificate#add-credentials). However, you might need to automate the adding the certificate credentials for your app or service principal.
 
 This article provides guidance for using Microsoft Graph and PowerShell scripts to update certificate credentials programmatically for an app registration.
 
@@ -23,7 +23,7 @@ This article provides guidance for using Microsoft Graph and PowerShell scripts 
 To complete this tutorial, you need the following resources and privileges:
 
 - An active Microsoft Entra tenant.
-- An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user who is allowed to create and manage applications in the tenant. The *Application Administrator* role is the least privileged role that can perform this operation.
+- An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user who is allowed to create and manage applications in the tenant. The *Application Developer* (of an app they own) and *Application Administrator* role are the least privileged roles that can perform this operation.
 - A signed certificate to use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To generate one, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 > [!CAUTION]
