@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase resource type"
-description: "Describes Protection Rule and its properties "
+description: "Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -19,11 +19,11 @@ Protection rules can be static or dynamic, which means that the rules can run on
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
 
-The following are the limitations of protectionRuleBase:
+The following limitations apply to this resource:
 
-- The protection rule APIs for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+- The protection rule APIs for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and a maximum of 255 characters.
 - The protection rule APIs for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time.
-- The rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
+- The rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time they're added to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
 
 ## Properties
 
