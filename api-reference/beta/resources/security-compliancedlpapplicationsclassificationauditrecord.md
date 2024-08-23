@@ -1,9 +1,9 @@
 ---
 title: "complianceDlpApplicationsClassificationAuditRecord resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "diksha27"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "AuditCore"
 doc_type: resourcePageType
 ---
 
