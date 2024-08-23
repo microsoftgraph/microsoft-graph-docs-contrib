@@ -36,7 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Entity URI for Microsoft.OutlookServices.mailSearchFolder not found/permanentDelete
+POST /me/mailFolders/{id}/permanentDelete
+POST /users/{id | userPrincipalName}/mailFolders/{id}/permanentDelete
 ```
 
 ## Request headers
@@ -64,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Entity URI for Microsoft.OutlookServices.mailSearchFolder not found/permanentDelete
+POST https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/permanentDelete
 ```
 
 
