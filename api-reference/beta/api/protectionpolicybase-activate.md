@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Activate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
-Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove artifacts (sites or user accounts) to or from each active policy.
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users). You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,9 +53,9 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ## Examples
 
-### Example 1 : Activate an inactive protection policy
+### Example 1: Activate an inactive protection policy
 
-Activate an inactive protection policy.
+The following example shows a request to activate an inactive protection policy.
 
 #### Request
 
@@ -163,9 +163,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
 }
 ```
 
-### Example 2 : Activate an active protection policy
+### Example 2: Activate an active protection policy
 
-Activate an already active protection policy.
+The following example shows a request to activate a protection policy that's already active. This request results in an error.
 
 #### Request
 
