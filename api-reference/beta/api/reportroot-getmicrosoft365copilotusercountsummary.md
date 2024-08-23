@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUserCountSummary"
-description: "Get the aggregated number of Copilot enabled users and active users over a selected period."
+description: "Get the aggregated number of Copilot for Microsoft 365 enabled users and active users over a selected period."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
