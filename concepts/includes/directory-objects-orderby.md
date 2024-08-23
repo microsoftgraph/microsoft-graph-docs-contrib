@@ -44,3 +44,8 @@ The following table summarizes support for `$orderby` by properties of directory
 | user               | userPrincipalName             | ![Default][RDS] |
 | [*all others*]     | [*all others*]                | ![NotSupported][NS]  |
 
+[RDS]: ../images/yesandnosymbols/greencheck.svg "Default"
+[AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg "Advanced"
+[NS]: ../images/yesandnosymbols/no.svg "NotSupported"
+
+
