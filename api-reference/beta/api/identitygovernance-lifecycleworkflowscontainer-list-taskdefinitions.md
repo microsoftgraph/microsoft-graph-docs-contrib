@@ -109,6 +109,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 #### Response
 
 The following example shows the response.
+<!-- Keep the full response object for this example for other internal purposes-->
 
 <!-- {
   "blockType": "response",
@@ -122,7 +123,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 25,
+    "@odata.count": 24,
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/taskDefinitions?$select=category,continueOnError",
     "value": [
         {
             "category": "joiner,leaver,mover",
@@ -561,14 +563,6 @@ Content-Type: application/json
                     "valueType": "string"
                 }
             ]
-        },
-        {
-            "category": "leaver,mover",
-            "description": "Transfer groups the user owned to the user's manager",
-            "displayName": "Transfer group ownership to manager",
-            "id": "dde2a64c-8420-447b-9075-7309449de5cd",
-            "version": 1,
-            "parameters": []
         }
     ]
 }
