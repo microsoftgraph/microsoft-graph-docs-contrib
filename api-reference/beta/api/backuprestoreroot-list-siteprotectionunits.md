@@ -50,6 +50,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [siteProtectionUnit](../resources/siteprotectionunit.md) in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes.md#backup-storage-api-error-responses).
+
 ## Examples
 
 ### Example 1: List all the siteProtectionUnits in a tenant
