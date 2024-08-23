@@ -49,7 +49,7 @@ The following example shows a request.
   "sampleKeys": ["11021", "19002", "ec98f158-341d-4fea-9f8c-14a250d489ac"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
+DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/e98aaae1-7c98-4e65-bb62-1994fe410552/categories/39e3d9dc-7244-42d7-8b4d-1071aae5eb41/$ref
 ```
 
 ### Response
