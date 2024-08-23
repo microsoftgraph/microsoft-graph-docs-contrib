@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "4893e0a7-53d2-482c-81f7-e7f2eef29958",
-          "ApiChange": "Function",
+          "ApiChange": "function",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
           "ChangeType": "Addition",
           "Description": "Added the [getRecentlyModifiedSubmissions](https://learn.microsoft.com/en-us/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-beta) method to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationclass?view=graph-rest-beta) resource.",
