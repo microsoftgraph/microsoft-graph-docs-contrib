@@ -166,24 +166,24 @@ Content-Type: application/json
 Content-Length: 10747
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUsageUserDetail(period='D7')?$format=application/json",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUsageUserDetail(period='D7')?$format=application/json&$skiptoken=MDoyOg",
     "value": [
         {
-            "reportRefreshDate": "2024-06-26",
+            "reportRefreshDate": "2024-08-20",
             "userPrincipalName": "DC8C64D6EC3A3AA17481D7E5EB5B68A6",
             "displayName": "C65E8D8AFA0DAB9639EDFAAEA94AFE66",
-            "lastActivityDate": "2024-06-12",
-            "copilotChatLastActivityDate": "2024-01-10",
-            "microsoftTeamsCopilotLastActivityDate": "2024-06-12",
-            "wordCopilotLastActivityDate": "2024-03-29",
-            "excelCopilotLastActivityDate": null,
+            "lastActivityDate": "2024-08-20",
+            "copilotChatLastActivityDate": "2024-08-16",
+            "microsoftTeamsCopilotLastActivityDate": "2024-08-20",
+            "wordCopilotLastActivityDate": "2024-08-06",
+            "excelCopilotLastActivityDate": "",
             "powerPointCopilotLastActivityDate": "2024-03-26",
-            "outlookCopilotLastActivityDate": null,
-            "oneNoteCopilotLastActivityDate": null,
-            "loopCopilotLastActivityDate": null,
+            "outlookCopilotLastActivityDate": "",
+            "oneNoteCopilotLastActivityDate": "",
+            "loopCopilotLastActivityDate": "",
             "copilotActivityUserDetailsByPeriod": [
                 {
-                    "reportPeriod": 7,
+                    "reportPeriod": 7
                 }
             ]
         }
