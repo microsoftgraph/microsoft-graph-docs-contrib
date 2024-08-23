@@ -65,6 +65,8 @@ In the request body, supply a JSON representation of the following parameters.
 
 If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes.md#backup-storage-api-error-responses).
+
 ## Examples
 
 ### Example 1: Search request
