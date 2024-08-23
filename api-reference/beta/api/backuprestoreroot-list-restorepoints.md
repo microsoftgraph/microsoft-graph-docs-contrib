@@ -1,6 +1,6 @@
 ---
 title: "List restorePoints"
-description: "Get a list of the restorePoint objects and their properties."
+description: "Get a list of restorePoint objects and their properties."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. In the absence of the `orderBy` clause, the latest restorePoints are returned.
+Get a list of [restorePoint](../resources/restorepoint.md) objects and their properties. 
 
-> **Note:** This API returns a maximum of five **restorePoint** objects.
+> **Note:** This API returns a maximum of five **restorePoint** objects. If you don't include the `orderBy` parameter, the five most recent restore points are returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -42,9 +42,9 @@ GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$filter` and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request).
+This method supports the `$expand`, `$filter` and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
 
-The two query parameters are required.
+The `$expand` and `$filter` query parameters are required.
 
 ## Request headers
 
