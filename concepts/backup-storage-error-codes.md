@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Partners can use the Microsoft 365 Backup Storage API in Microsoft Graph to create their own applications to manage backups. Your application becomes the Microsoft 365 Backup Storage controller in the tenant where the application is deployed.
 
-In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Backup Storage APIs. This topic provides a list of common error conditions you might encounter when you use the Backup Storage API.
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Backup Storage API. This topic provides a list of common error conditions you might encounter when you use the Backup Storage API.
 
 ## Create protection policy API errors
 
