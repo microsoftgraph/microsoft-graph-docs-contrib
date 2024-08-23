@@ -1,5 +1,5 @@
 ---
-title: "scorePlatformGenericAuditRecord resource type"
+title: "vivaPulseOrganizerAuditRecord resource type"
 description: "**TODO: Add Description**"
 author: "diksha27"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "AuditCore"
 doc_type: resourcePageType
 ---
 
-# scorePlatformGenericAuditRecord resource type
+# vivaPulseOrganizerAuditRecord resource type
 
 Namespace: microsoft.graph.security
 
@@ -30,12 +30,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.scorePlatformGenericAuditRecord"
+  "@odata.type": "microsoft.graph.security.vivaPulseOrganizerAuditRecord"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.scorePlatformGenericAuditRecord"
+  "@odata.type": "#microsoft.graph.security.vivaPulseOrganizerAuditRecord"
 }
 ```
 
