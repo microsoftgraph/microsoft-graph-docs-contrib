@@ -3,7 +3,6 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 author: "diksha27"
 ms.localizationpriority: medium
-ms.subservice: "AuditCore"
 doc_type: enumTypes
 ---
 
