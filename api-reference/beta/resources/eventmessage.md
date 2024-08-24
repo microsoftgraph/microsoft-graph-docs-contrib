@@ -1,6 +1,6 @@
 ---
 title: "eventMessage resource type"
-description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "
+description: "A message that represents a meeting request, cancellation, or response. Can be one of the following values: acceptance, tentative acceptance, or decline."
 ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
+A message that represents a meeting request, cancellation, or response. Can be one of the following values: acceptance, tentative acceptance, or decline.
 
 The **eventMessage** entity is derived from [message](message.md). **eventMessage** is the base type for [eventMessageRequest](eventmessagerequest.md) and
 [eventMessageResponse](eventmessageresponse.md). The **meetingMessageType** property identifies the type of the event message.
@@ -154,9 +154,9 @@ The following JSON representation shows the resource type.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get event message](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Update event message](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
-|[Delete event message](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
+|[Get](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object.|
+|[Delete](../api/eventmessage-delete.md) | None |Delete eventMessage object.|
 |[Copy message](../api/message-copy.md)|[message](message.md)|Copy a message to a folder.|
 |[Create draft to forward message](../api/message-createforward.md)|[message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[Create draft to reply](../api/message-createreply.md)|[message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
@@ -168,6 +168,7 @@ The following JSON representation shows the resource type.
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
+|[Permanently delete](../api/eventmessage-permanentdelete.md)|None|Permanently delete an event message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
 |**Attachments**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an eventMessage by posting to the attachments collection.|
