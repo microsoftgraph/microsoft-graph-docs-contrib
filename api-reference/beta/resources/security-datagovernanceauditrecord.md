@@ -1,9 +1,8 @@
 ---
 title: "dataGovernanceAuditRecord resource type"
-description: "**TODO: Add Description**"
+description: "Audit data for security-datagovernanceauditrecord.md"
 author: "diksha27"
 ms.localizationpriority: medium
-ms.subservice: "AuditCore"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Audit data for security-datagovernanceauditrecord.md
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
