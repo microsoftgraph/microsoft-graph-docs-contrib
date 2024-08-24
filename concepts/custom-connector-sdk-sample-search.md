@@ -46,7 +46,7 @@ To create a result type:
 
    * **Rules**: None
 
-   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/ResultType.json) into the layout designer textbox.
+   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20samples/CsvConnector/ResultType.json) into the layout designer textbox.
 
      ![Screenshot of the "Design layout" section with the JSON pasted](images/connectors-sdk/build18.png)
 

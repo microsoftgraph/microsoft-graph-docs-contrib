@@ -106,6 +106,8 @@ items:
         href: ../../api/outlooktask-update.md
       - name: Delete
         href: ../../api/outlooktask-delete.md
+      - name: Permanently delete
+        href: ../../api/outlooktask-permanentdelete.md
       - name: Complete
         href: ../../api/outlooktask-complete.md
       - name: Attachments
@@ -114,30 +116,6 @@ items:
           href: ../../api/outlooktask-list-attachments.md
         - name: Add attachment
           href: ../../api/outlooktask-post-attachments.md
-      - name: Extended properties
-        items:
-        - name: Create single-value property
-          href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-        - name: Get single-value property
-          href: ../../api/singlevaluelegacyextendedproperty-get.md
-        - name: Create multi-value property
-          href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-        - name: Get multi-value property
-          href: ../../api/multivaluelegacyextendedproperty-get.md
-    - name: Outlook task folder (deprecated)
-      items:
-      - name: Outlook task folder (deprecated)
-        href: ../../resources/outlooktaskfolder.md
-      - name: Get
-        href: ../../api/outlooktaskfolder-get.md
-      - name: Create task folder in group
-        href: ../../api/outlooktaskfolder-post-tasks.md
-      - name: List task folders in group
-        href: ../../api/outlooktaskfolder-list-tasks.md
-      - name: Update
-        href: ../../api/outlooktaskfolder-update.md
-      - name: Delete
-        href: ../../api/outlooktaskfolder-delete.md
       - name: Extended properties
         items:
         - name: Create single-value property

@@ -1,6 +1,6 @@
 ---
 title: "Get taskDefinition"
-description: "Read the details of a built-in workflow task."
+description: "Read the details of a built-in workflow task in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md).
+Read the details of a built-in workflow [task](../resources/identitygovernance-taskdefinition.md) in Lifecycle Workflows.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

@@ -1139,6 +1139,126 @@
       "CreatedDateTime": "2024-06-24T12:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/calendar-permanentDelete?view=graph-rest-beta) method to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/event-permanentDelete?view=graph-rest-beta) method to the [event](https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) resource.",
+          "Target": "event"
+        },
+        {
+          "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/eventMessage-permanentDelete?view=graph-rest-beta) method to the [eventMessage](https://learn.microsoft.com/en-us/graph/api/resources/eventMessage?view=graph-rest-beta) resource.",
+          "Target": "eventMessage"
+        }
+      ],
+      "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-23T04:13:38.5525311Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "38a0347b-9048-4bc5-953c-4f6b7b320712",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/contact-permanentDelete?view=graph-rest-beta) method to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "38a0347b-9048-4bc5-953c-4f6b7b320712",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/contactFolder-permanentDelete?view=graph-rest-beta) method to the [contactFolder](https://learn.microsoft.com/en-us/graph/api/resources/contactFolder?view=graph-rest-beta) resource.",
+          "Target": "contactFolder"
+        }
+      ],
+      "Id": "38a0347b-9048-4bc5-953c-4f6b7b320712",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-23T04:13:38.5525311Z",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd5f975c-e9f1-4fb7-9d5d-83b6e2e5f4b1",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/mailFolder-permanentDelete?view=graph-rest-beta) method to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailFolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "fd5f975c-e9f1-4fb7-9d5d-83b6e2e5f4b1",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/message-permanentDelete?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resource.",
+          "Target": "message"
+        },
+        {
+          "Id": "fd5f975c-e9f1-4fb7-9d5d-83b6e2e5f4b1",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/mailSearchFolder-permanentDelete?view=graph-rest-beta) method to the [mailSearchFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailSearchFolder?view=graph-rest-beta) resource.",
+          "Target": "mailSearchFolder"
+        }
+      ],
+      "Id": "db94e9ef-db0f-4872-8093-41852c5b07e5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-23T04:13:38.5525311Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fb7c0af1-70ff-449d-8281-c5ca86d3ad01",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/outlookTask-permanentDelete?view=graph-rest-beta) method to the [outlookTask](https://learn.microsoft.com/en-us/graph/api/resources/outlookTask?view=graph-rest-beta) resource.",
+          "Target": "outlookTask"
+        },
+        {
+          "Id": "fb7c0af1-70ff-449d-8281-c5ca86d3ad01",
+          "ApiChange": "Method",
+          "ChangedApiName": "permanentDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/outlookTaskFolder-permanentDelete?view=graph-rest-beta) method to the [outlookTaskFolder](https://learn.microsoft.com/en-us/graph/api/resources/outlookTaskFolder?view=graph-rest-beta) resource.",
+          "Target": "outlookTaskFolder"
+        }
+      ],
+      "Id": "fb7c0af1-70ff-449d-8281-c5ca86d3ad01",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-23T04:13:38.5525311Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
     }
   ]
 }

@@ -24,7 +24,7 @@ This article provides code examples in C# to demonstrate how to:
 4. Use the PoP token to remove a certificate from the app or service principal object using the **removeKey** method.
 
 > [!IMPORTANT]
-> Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the **keyCredential** property.
+> Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the **keyCredentials** property. For more information, see [Add a certificate to an app using Microsoft Graph](applications-how-to-add-certificate.md).
 
 ## Prerequisites
 

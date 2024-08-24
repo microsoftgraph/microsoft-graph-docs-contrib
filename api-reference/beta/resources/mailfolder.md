@@ -20,15 +20,14 @@ by providing a [delta](../api/mailfolder-delta.md) function.
 
 **Well-known folder names**
 
-Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use
-the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use the well-known folder names from the table below when accessing these folders. For example, you can get the Drafts folder using its well-known name with the following query.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it's named.
+Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of its name.
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|
@@ -66,6 +65,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[Copy mail folder](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
 |[Get folder delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[Move mail folder](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
+|[Permanently delete](../api/mailfolder-permanentdelete.md)|None|Permanently delete a mail folder and remove its items from the user's mailbox.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
