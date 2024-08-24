@@ -13,7 +13,7 @@ toc.title: Protection unit
 
 Namespace: microsoft.graph
 
-Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md). All the protection units in a protection policy will have same retention period by default.
+Represents a site, drive, or mailbox that's protected by a [protection policy](protectionpolicybase.md). All the protection units in a protection policy have same retention period by default.
 
 This resource is an abstract type.
 
