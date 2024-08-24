@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a draft [restoreSessionBase](../resources/restoresessionbase.md) object to restore a [protection unit](protectionunitbase.md).
+Activate a draft [restoreSessionBase](../resources/restoresessionbase.md) object to restore a [protection unit](../resources/protectionunitbase.md).
 
 The following points apply to restoring a protection unit:
 
