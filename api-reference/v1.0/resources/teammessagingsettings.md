@@ -1,7 +1,7 @@
 ---
 title: "teamMessagingSettings resource type"
 description: "Settings to configure messaging and mentions in the team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType

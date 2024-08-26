@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Graph API to work with Viva Engage (preview)"
+title: "Use the Microsoft Graph API to work with Viva Engage"
 description: "The Microsoft Graph API enables apps to manage communities in Viva Engage."
 ms.localizationpriority: medium
 author: "aditijha4"
@@ -7,7 +7,7 @@ ms.subservice: "viva-engage"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph API to work with Viva Engage (preview)
+# Use the Microsoft Graph API to work with Viva Engage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ For more information about the relationship between Viva Engage communities and 
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
 
-For guidance for how to handle throttling in Microsoft Graph, see [Microsoft Graph throttling guidance](/graph/throttling).
+For guidance on how to handle throttling in Microsoft Graph, see [Microsoft Graph throttling guidance](/graph/throttling).
 
 ## Next steps
 

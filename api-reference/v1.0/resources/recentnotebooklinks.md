@@ -19,6 +19,10 @@ Links for opening a OneNote notebook. This resource type exists as a property on
 |oneNoteClientUrl|[externalLink](externallink.md)|Opens the notebook in the OneNote native client if it's installed.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Opens the notebook in OneNote on the web.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

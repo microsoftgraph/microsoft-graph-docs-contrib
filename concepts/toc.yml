@@ -1142,7 +1142,7 @@ items:
     displayName: Microsoft Graph error responses and error resource types
   - name: Microsoft Entra service limits
     displayName: Azure AD service limits and restrictions
-    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?context=graph/context
 - name: Migrate
   items:
   - name: Azure AD Graph

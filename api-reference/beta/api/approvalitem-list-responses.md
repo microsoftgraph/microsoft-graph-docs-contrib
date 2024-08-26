@@ -19,11 +19,7 @@ Get a list of [approvalItemResponse](../resources/approvalitemresponse.md) objec
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "approvalitem-list-responses-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "approvalitem_list_responses" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalitem-list-responses-permissions.md)]
 
 ## HTTP request
@@ -96,15 +92,7 @@ Content-Type: application/json
               "id": "f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473"
             }
       },
-      "createdDateTime":"2022-04-12T20:51:19Z",
-      "onBehalfOf":[
-        {
-            "user":{
-              "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
-              "displayName":"Lilli Allik"
-            }
-        }
-      ]
+      "createdDateTime":"2022-04-12T20:51:19Z"
     },
     {
         "id": "d3a7405e-452a-47e0-9c35-9335225ba55d",
@@ -116,21 +104,7 @@ Content-Type: application/json
               "displayName": "Lilli Allik"
             }
         },
-        "createdDateTime":"2022-04-12T20:51:19Z",
-        "onBehalfOf":[
-        {
-            "user":{
-              "id":"f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473",
-              "displayName":"Jana Pihlak"
-            }
-        },
-        {
-            "group":{
-              "id":"da9fe780-a3de-48cc-a571-82faa05c8463",
-              "displayName":"Microsoft Executive"
-            }
-        }
-      ]
+        "createdDateTime":"2022-04-12T20:51:19Z"
     }
   ]
 }
