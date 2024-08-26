@@ -35,7 +35,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 This method supports the `$select` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use `$orderby` for the **displayName** property of the [educationCategory](../resources/educationcategory.md) resource.
+You can use `$orderby` with the **displayName** property of the [educationCategory](../resources/educationcategory.md) resource.
 
 ## Request headers
 | Header        | Value                     |
