@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUserCountTrend"
-description: "Get the daily number trend of Copilot for Microsoft 365 enabled users and active users over a selected period."
+description: "Get the trend in daily of Copilot usage for Microsoft 365 enabled users and active users over a selected period."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
@@ -45,7 +45,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|String|Specifies the length of time over which the report is aggregated. The supported values are: `D7`, `D30`, `D90`, `D180`, `ALL`. These values follow the format Dn where n represents the number of days over which the report is aggregated. ALL Specify the data for all period.|
+|period|String|The number of previous days over which to report aggregated usage. The supported values are: `D7`, `D30`, `D90`, `D180`, `ALL`. The first four values follow the format Dn where n represents the number of days over which to aggregate data. `ALL` indicates to report usage for 7, 30, 90, and 180 days.|
 
 ## Optional query parameters
 
@@ -67,7 +67,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -101,7 +101,7 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ### Example 1: CSV output
 
-The following is an example that outputs CSV.
+The following example outputs a URL to a CSV file.
 
 #### Request
 
@@ -143,7 +143,7 @@ Report Refresh Date,Report Period,Report Date,Any App Enabled Users,Any App Acti
 
 ### Example 2: JSON output
 
-The following is an example that returns JSON.
+The following example returns JSON data.
 
 #### Request
 

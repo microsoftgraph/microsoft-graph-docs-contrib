@@ -23,9 +23,9 @@ For details about report views and names, see [Microsoft 365 reports - Copilot f
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
-| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity date for enabled users of Microsoft 365 Copilot apps.                             |
-| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of Copilot for Microsoft 365 enabled users and active users over a selected period.  |
-| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the daily number trend of Copilot for Microsoft 365 enabled users and active users over a selected period. |
+| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.                             |
+| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period.  |
+| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period. |
 
 ### Forms activity
 
@@ -35,7 +35,7 @@ For details about report views and names, see [Microsoft 365 reports - Forms act
 | :--------------------------------------------------------------------- | :---------- | :-------------------------------------------------------------------------- |
 | [Get user detail](../api/reportroot-getformsuseractivityuserdetail.md) | Stream      | Get the detailed forms usage per user.                                      |
 | [Get user counts](../api/reportroot-getformsuseractivityusercounts.md) | Stream      | Get the trend in the number of active users for each user type.             |
-| [Get activity counts](../api/reportroot-getformsuseractivitycounts.md) | Stream      | Get the number of activities count by activity type over a selected period. |
+| [Get activity counts](../api/reportroot-getformsuseractivitycounts.md) | Stream      | Get the number of activities count by activity type for a specified time period. |
 
 ### Microsoft Teams device usage
 
@@ -45,9 +45,9 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | :-------------------------------------------------------------------------------------------------------- | :---------- | :-------------------------------------------------------------------------------------------------------------------- |
 | [Get user detail](../api/reportroot-getteamsdeviceusageuserdetail.md)                                     | Stream      | Get details about Microsoft Teams device usage by user.                                                               |
 | [Get user counts](../api/reportroot-getteamsdeviceusageusercounts.md)                                     | Stream      | Get the number of daily unique users by device type.                                                                  |
-| [Get total user counts](../api/reportroot-getteamsdeviceusagetotalusercounts.md)                          | Stream      | Get the number of daily unique Microsoft Teams licensed or non-licensed users by device type.                         |
-| [Get distribution user counts](../api/reportroot-getteamsdeviceusagedistributionusercounts.md)            | Stream      | Get the number of unique users by device type over the selected time period.                                          |
-| [Get distribution total user counts](../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md) | Stream      | Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period. |
+| [Get total user counts](../api/reportroot-getteamsdeviceusagetotalusercounts.md)                          | Stream      | Get the number of daily unique Microsoft Teams licensed or nonlicensed users by device type.                         |
+| [Get distribution user counts](../api/reportroot-getteamsdeviceusagedistributionusercounts.md)            | Stream      | Get the number of unique users by device type for the selected time period.                                          |
+| [Get distribution total user counts](../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md) | Stream      | Get the number of unique Microsoft Teams licensed or nonlicensed users by device type for the selected time period. |
 
 ### Microsoft Teams user activity
 
@@ -60,8 +60,8 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | [Get activity total counts](../api/reportroot-getteamsuseractivitytotalcounts.md)                          | Stream      | Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or unlicensed users.                                                                                                                                                    |
 | [Get user counts](../api/reportroot-getteamsuseractivityusercounts.md)                                     | Stream      | Get the number of users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.                                                                                                                                                      |
 | [Get total user counts](../api/reportroot-getteamsuseractivitytotalusercounts.md)                          | Stream      | Get the number of Microsoft Teams licensed or unlicensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.                                                                                                               |
-| [Get distribution user counts](../api/reportroot-getteamsuseractivitydistributionusercounts.md)            | Stream      | Get the number of Microsoft Teams licensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.                                                                                                   |
-| [Get distribution total user counts](../api/reportroot-getteamsuseractivitydistributiontotalusercounts.md) | Stream      | Get the number of Microsoft Teams licensed or unlicensed users by activity type over the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.                                                                                     |
+| [Get distribution user counts](../api/reportroot-getteamsuseractivitydistributionusercounts.md)            | Stream      | Get the number of Microsoft Teams licensed users by activity type for the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.                                                                                                   |
+| [Get distribution total user counts](../api/reportroot-getteamsuseractivitydistributiontotalusercounts.md) | Stream      | Get the number of Microsoft Teams licensed or unlicensed users by activity type for the selected period. The activity types are number of teams chat messages, private chat messages, calls, and meetings.                                                                                     |
 | [Get total distribution activity counts](../api/reportroot-getteamsuseractivitytotaldistributioncounts.md) | Stream      | Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages. |
 
 ### Microsoft Teams team activity
@@ -70,9 +70,9 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 
 | Method                                                                                               | Return type | Description                                                                                                        |
 | :--------------------------------------------------------------------------------------------------- | :---------- | :----------------------------------------------------------------------------------------------------------------- |
-| [Get team detail](../api/reportroot-getteamsteamactivitydetail.md)                                   | Stream      | Get details about Teams activity by team. The numbers include activities for both licensed and non-licensed users. |
+| [Get team detail](../api/reportroot-getteamsteamactivitydetail.md)                                   | Stream      | Get details about Teams activity by team. The numbers include activities for both licensed and nonlicensed users. |
 | [Get team activity counts](../api/reportroot-getteamsteamactivitycounts.md)                          | Stream      | Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages. |
-| [Get team activity distribution counts](../api/reportroot-getteamsteamactivitydistributioncounts.md) | Stream      | Get the number of team activities across Microsoft Teams over a selected period.                                   |
+| [Get team activity distribution counts](../api/reportroot-getteamsteamactivitydistributioncounts.md) | Stream      | Get the number of team activities across Microsoft Teams over a specified time period.                                   |
 | [Get team counts](../api/reportroot-getteamsteamcounts.md)                                           | Stream      | Get the number of teams by type across Microsoft Teams.                                                            |
 
 ### Outlook activity
@@ -145,7 +145,7 @@ For details about report views and names, see [Microsoft 365 reports - Microsoft
 | :------------------------------------------------------------------------------------ | :---------- | :------------------------------------------------------------ |
 | [Get user detail](../api/reportroot-getbrowseruserdetail.md)                          | Stream      | Get the detailed browser usage per user.                      |
 | [Get user counts](../api/reportroot-getbrowserusercounts.md)                          | Stream      | Get the trend in the number of active users for each browser. |
-| [Get distribution user counts](../api/reportroot-getbrowserdistributionusercounts.md) | Stream      | Get the number of users by browser over a selected period.    |
+| [Get distribution user counts](../api/reportroot-getbrowserdistributionusercounts.md) | Stream      | Get the number of users by browser over a specified time period.    |
 
 ### Microsoft 365 groups activity
 
