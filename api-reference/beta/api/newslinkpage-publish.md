@@ -1,5 +1,5 @@
 ---
-title: "Publish newsLinkPage"
+title: "newsLinkPage: publish"
 description: "Publish the latest version of a newsLinkPage resource that makes the version available to all users."
 author: shgangan
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Publish newsLinkPage
+# newsLinkPage: publish
 
 Namespace: microsoft.graph
 
