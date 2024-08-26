@@ -558,7 +558,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 #### Response
 The following response shows one channel message on the page, and includes a URL in `@odata.nextLink` for a subsequent operation to get the next message in that channel. 
 
-The response includes replies of that channel message. In practice, this operation can return up to 1,000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1000. This example assumes more than 1,000 replies in that channel message, but for readability, the following response shows only three replies.
+The response includes replies of that channel message. In practice, this operation can return up to 1,000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1,000. This example assumes more than 1,000 replies in that channel message, but for readability, the following response shows only three replies.
 
 <!-- {
   "blockType": "response",
