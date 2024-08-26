@@ -61,9 +61,8 @@ Content-type: application/json
 The following example shows the response.
 
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignmentResource"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
