@@ -36,14 +36,13 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object(s) to add to this assignment.
-
+In the request body, supply the **odata.id** of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "ignored",
@@ -56,10 +55,9 @@ Content-type: application/json
 {
     "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentCategories/39e3d9dc-7244-42d7-8b4d-1071aae5eb41"
 }
-
 ```
-In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
-##### Response
+
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -73,6 +71,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -85,5 +84,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-
