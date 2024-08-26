@@ -3,82 +3,50 @@
       {
         "ChangeList": [
           {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "cloudPCConnectionQualityReportType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPCConnectionQualityReportType** enumeration type.",
+            "Target": "cloudPCConnectionQualityReportType"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "regionalConnectionQualityTrendReport",
+            "ChangeType": "Addition",
+            "Description": "Added the `regionalConnectionQualityTrendReport` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "regionalConnectionQualityInsightsReport",
+            "ChangeType": "Addition",
+            "Description": "Added the `regionalConnectionQualityInsightsReport` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "remoteConnectionQualityReport",
+            "ChangeType": "Addition",
+            "Description": "Added the `remoteConnectionQualityReport` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
             "ApiChange": "Method",
             "ChangedApiName": "retrieveConnectionQualityReports",
             "ChangeType": "Addition",
-            "Description": "Added the [retrieveConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/resources/retrieveConnectionQualityReports?view=graph-rest-beta) resource type.",
-            "Target": "retrieveConnectionQualityReports"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Enum type",
-            "ChangedApiName": "cloudPCConnectionQualityReportType",
-            "ChangeType": "Addition",
-            "Description": "Added new enum type of **cloudPCConnectionQualityReportType**",
-            "Target": "cloudPCConnectionQualityReportType"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "remoteConnectionQualityReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPCConnectionQualityReportType` in the request body",
-            "Target": "cloudPCConnectionQualityReportType"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "regionalConnectionQualityTrendReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPCConnectionQualityReportType` in the request body",
-            "Target": "cloudPCConnectionQualityReportType"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "regionalConnectionQualityInsightsReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPCConnectionQualityReportType` in the request body",
-            "Target": "cloudPCConnectionQualityReportType"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "regionalConnectionQualityTrendReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPcReportName` in the request body",
-            "Target": "cloudPcReportName"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "regionalConnectionQualityInsightsReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPcReportName` in the request body",
-            "Target": "cloudPcReportName"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "remoteConnectionQualityReport",
-            "ChangeType": "Addition",
-            "Description": "Added new optional request parameter of `cloudPcReportName` in the request body",
-            "Target": "cloudPcReportName"
-          },
-          {
-            "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
-            "ApiChange": "Member",
-            "ChangedApiName": "remoteConnectionQualityReports",
-            "ChangeType": "Deletion",
-            "Description": "Added new optional request parameter of `cloudPcReportName` in the request body",
-            "Target": "cloudPcReportName"
-          }          
+            "Description": "Added the [retrieveConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveConnectionQualityReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
+            "Target": "cloudPcReports"
+          }         
         ],
-        "Id": "80b3dd44-6e42-4733-9a91-554301fa0172",
+        "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-08-22T10:25:21.3434973Z",
+        "CreatedDateTime": "2024-08-15T17:11:33.7283612Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
