@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). If you don't include the `orderBy` parameter, the latest restore points are returned.
+Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
