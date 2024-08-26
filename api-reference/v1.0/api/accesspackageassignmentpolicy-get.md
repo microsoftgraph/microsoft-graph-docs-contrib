@@ -163,7 +163,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionStageSettings($expand=customExtension)
 ```
 
 #### Response
