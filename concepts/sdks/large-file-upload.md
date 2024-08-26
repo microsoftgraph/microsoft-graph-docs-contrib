@@ -17,6 +17,12 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="LargeFileUploadSnippet":::
 
+## [Go](#tab/go)
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="LargeFileUploadSnippet":::
+
 ## [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="LargeFileUploadSnippet":::
@@ -39,6 +45,12 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="ResumeSnippet":::
 
+## [Go](#tab/go)
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="ResumeSnippet":::
+
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="ResumeSnippet":::
@@ -58,6 +70,12 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 ### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/LargeFileUpload.cs" id="UploadAttachmentSnippet":::
+
+## [Go](#tab/go)
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/large_file_upload.go" id="UploadAttachmentSnippet":::
 
 ### [Java](#tab/java)
 
