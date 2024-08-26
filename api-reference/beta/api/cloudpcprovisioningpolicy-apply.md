@@ -51,6 +51,7 @@ The following table shows the parameter that you can use with this method.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |policySettings|cloudPcPolicySettingType|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`. The default value is `region`. This action applies `region` as a value if this parameter is `null`.|
+|reservePercentage|Int32|For `Frontline shared` only. Administrators can set a value (0-99) to keep a percentage of Cloud PCs available. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
 
 ## Response
 
@@ -74,7 +75,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-  "policySettings": "region"
+  "policySettings": "region",
+  "reservePercentage": 80,
 }
 ```
 
