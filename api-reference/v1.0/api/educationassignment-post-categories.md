@@ -33,8 +33,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object(s) to add to this assignment.
-
+In the request body, supply the **odata.id** of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
@@ -57,7 +56,6 @@ Content-type: application/json
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"
 }
-
 ```
 
 # [C#](#tab/csharp)
@@ -93,8 +91,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
 
 ### Response
 The following example shows the response.
