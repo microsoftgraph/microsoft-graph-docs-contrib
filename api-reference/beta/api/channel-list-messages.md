@@ -66,9 +66,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
-
-For successful responses, channel messages in the response will be sorted in order of last modified date of the entire reply chain, which includes both root channel messagee and its replies.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The channel messages in the response are sorted by the last modified date of the entire reply chain, including both the root channel message and its replies.
 
 ## Examples
 
