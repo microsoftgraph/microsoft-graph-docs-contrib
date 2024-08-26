@@ -31,8 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
 > [!NOTE]
-> - The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> - The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> - The `ChannelMessage.Read.Group` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The `Group.Read.All` and `Group.ReadWrite.All` permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
