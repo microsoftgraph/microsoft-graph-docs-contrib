@@ -25,6 +25,7 @@ Represents information about companies related to entities within their [profile
 |displayName     |String                               | Company name.                                          |
 |officeLocation  |String                               | Office Location of the person referred to.             |
 |pronunciation   |String                               | Pronunciation guide for the company name.              |
+|secondaryDepartment|String                            | Secondary Department Name within a company.            |
 |webUrl          |String                               | Link to the company home page.                         |
 
 ## JSON representation
@@ -48,6 +49,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "officeLocation": "String",
   "pronunciation": "String",
+  "secondaryDepartment": "String",
   "webUrl": "String"
 }
 ```

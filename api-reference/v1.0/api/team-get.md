@@ -1,7 +1,7 @@
 ---
 title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType

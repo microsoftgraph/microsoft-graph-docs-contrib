@@ -1,7 +1,7 @@
 ---
 title: "List all teams in Microsoft Teams for an organization"
 description: "Use the Microsoft Teams API in Microsoft Graph to list all teams in an organization by finding all groups that have teams and getting information for each team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ---
