@@ -53,15 +53,12 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 Content-type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentCategories/39e3d9dc-7244-42d7-8b4d-1071aae5eb41"
+  "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentCategories/39e3d9dc-7244-42d7-8b4d-1071aae5eb41"
 }
 ```
 
 ### Response
 The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
-
 
 <!-- {
   "blockType": "ignored",
