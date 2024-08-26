@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Azure connection configuration of backup Cloud PCs provisioned for cross-region disaster recovery.
+Represents the Azure network connection configuration of backup Cloud PCs provisioned for cross-region disaster recovery.
 
 Inherits from [cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md).
 

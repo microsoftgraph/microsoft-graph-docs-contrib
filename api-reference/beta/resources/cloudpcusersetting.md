@@ -29,7 +29,7 @@ Represents a Cloud PC user setting.
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the setting was created. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
-|crossRegionDisasterRecoverySetting|[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|This setting can be used to define whether the CPC of user enable cross region disaster recovery and the specific network for the disaster recovery.|
+|crossRegionDisasterRecoverySetting|[cloudPcCrossRegionDisasterRecoverySetting](../resources/cloudpccrossregiondisasterrecoverysetting.md)|Defines whether the user's Cloud PC enables cross-region disaster recovery and specifies the network for the disaster recovery.|
 |displayName|String|The setting name displayed in the user interface. |
 |id|String|Unique identifier for the Cloud PC user setting. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
