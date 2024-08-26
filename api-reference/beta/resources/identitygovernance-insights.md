@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Properties
 
-None.
+None. 
 
 ## Relationships
 
