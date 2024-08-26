@@ -2,7 +2,7 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
-- name: Employee engagement (preview)
+- name: Employee engagement
   items:
   - name: Overview
     href: ../../resources/engagement-api-overview.md

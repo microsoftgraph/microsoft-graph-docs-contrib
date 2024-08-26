@@ -1,7 +1,7 @@
 ---
 title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

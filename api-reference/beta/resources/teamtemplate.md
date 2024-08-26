@@ -1,7 +1,7 @@
 ---
 title: "teamTemplate resource type"
 description: "Represents a logical container for all the definitions and versions of the same team template."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
