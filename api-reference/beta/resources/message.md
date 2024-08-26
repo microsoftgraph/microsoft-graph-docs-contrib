@@ -19,7 +19,7 @@ The maximum total number of recipients included in the **toRecipients**, **ccRec
 
 This resource supports:
 
-- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". After the message is sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
+- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". After the message is sent, you can't modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
 - Adding your own data as custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
@@ -42,12 +42,13 @@ by providing a [delta](../api/message-delta.md) function.
 |[Forward message](../api/message-forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
 |[Mark as junk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
 |[Mark as not junk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
-|[Move message](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
+|[Move message](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This API creates a new copy of the message in the destination folder.|
 |[Reply to message](../api/message-reply.md)|None|Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.|
 |[Reply-all to message](../api/message-replyall.md)|None|Reply to all the recipients of a message by specifying a comment and modifying any updateable properties for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.|
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
+|[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
