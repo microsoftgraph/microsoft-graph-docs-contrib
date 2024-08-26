@@ -47,7 +47,7 @@ The following `$expand` options are available for this method: `categories`, `re
 
 All [properties](../resources/educationassignment.md#properties) are supported for the query parameter `$filter`.
 
-You can use `$orderby` with the the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, and **status**.
+You can use `$orderby` with the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, and **status**.
 
 ## Request headers
 
