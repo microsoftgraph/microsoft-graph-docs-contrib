@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Teams app installation change notifications allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, upgraded, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope). For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
 
-Continue with this article about scenarios for Teams app installation resources in **personal**, **team**, or **chat** scope. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+Continue with this article to learn more about receiving notifications for Teams apps in **personal**, **team**, or **chat** scopes. Or, learn about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
