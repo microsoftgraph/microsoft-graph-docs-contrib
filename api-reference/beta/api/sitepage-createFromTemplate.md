@@ -2,7 +2,7 @@
 author: Yadong1106
 description: "Create a new page from a page template."
 ms.date: 05/07/2018
-title: Create Page From template
+title: Create page from template
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
@@ -38,7 +38,7 @@ POST /sites/{site-id}/pages/microsoft.graph.sitePage/createFromTemplate
 
 ## Request body
 
-In the request body, supply a JSON representation of the [crateFromPageRequest](../api/createfromtemplate.md) to use in the request payload.
+In the request body, supply a JSON representation of the [crateFromPageTemplateRequest](../api/createfromtemplate.md) to use in the request payload.
 
 ## Response
 

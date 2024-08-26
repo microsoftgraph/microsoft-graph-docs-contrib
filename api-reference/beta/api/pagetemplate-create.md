@@ -8,7 +8,7 @@ ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Create PageTemplate
+# Create pageTemplate
 
 Namespace: microsoft.graph
 

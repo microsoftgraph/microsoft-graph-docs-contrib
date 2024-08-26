@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
-# Delete PageTemplate
+# Delete pageTemplate
 
 Namespace: microsoft.graph
 

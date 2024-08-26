@@ -1,14 +1,14 @@
 ---
 author: Yadong1106
-description: "Get the collection of PageTemplate objects from the page templates in a site. All page templates in the site are returned."
+description: "Get the collection of pageTemplate objects from the page templates in a site. All page templates in the site are returned."
 ms.date: 03/15/2018
-title: List PageTemplate
+title: List pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# List PageTemplate
+# List pageTemplate
 
 Namespace: microsoft.graph
 
@@ -186,7 +186,7 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#PageTemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Enumerate the list of page templates in a site",
   "keywords": "",
   "section": "documentation",

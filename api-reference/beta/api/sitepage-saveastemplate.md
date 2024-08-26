@@ -2,7 +2,7 @@
 author: Yadong1106
 description: "Save the current page as a template."
 ms.date: 05/07/2018
-title: Save As Template,
+title: Save page as template,
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
@@ -121,7 +121,7 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#PageTemplate.annotation",
+  "type": "#pageTemplate.annotation",
   "description": "Create a page template in the templates folder in a site.",
   "keywords": "",
   "section": "documentation",

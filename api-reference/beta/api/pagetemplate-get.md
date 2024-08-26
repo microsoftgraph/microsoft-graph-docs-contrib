@@ -2,13 +2,13 @@
 author: Yadong1106
 description: "Returns the metadata for a page template in the templates folder in a site."
 ms.date: 03/15/2018
-title: Get PageTemplate
+title: Get pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Get PageTemplate
+# Get pageTemplate
 
 Namespace: microsoft.graph
 

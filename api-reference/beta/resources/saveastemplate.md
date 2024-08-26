@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-#  saveAsTemplate resource type
+#  sitePage: saveAsTemplate
 
 Namespace: microsoft.graph
 

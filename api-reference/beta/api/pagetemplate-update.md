@@ -1,5 +1,5 @@
 ---
-title: "Update Page Template"
+title: "Update page template"
 description: "Update the properties of a pageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
