@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
 > [!NOTE]
-> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The `ChannelMessage.Read.Group` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -63,9 +63,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
-
-For successful responses, channel messages in the response will be sorted in order of last modified date of the entire reply chain, which includes both root channel messagee and its replies.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The channel messages in the response are sorted by the last modified date of the entire reply chain, including both the root channel message and its replies.
 
 ## Examples
 
@@ -73,7 +71,7 @@ For successful responses, channel messages in the response will be sorted in ord
 
 #### Request
 
-The following example shows a request with the $top query option and without the optional prefer header.
+The following example shows a request with the `$top` query option and without the optional prefer header.
 
 
 # [HTTP](#tab/http)
