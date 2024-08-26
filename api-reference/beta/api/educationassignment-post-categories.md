@@ -36,7 +36,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the **odata.id** of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
+In the request body, supply the **odata.id** of an existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
