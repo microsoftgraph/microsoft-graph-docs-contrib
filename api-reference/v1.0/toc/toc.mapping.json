@@ -87,7 +87,6 @@
     {
       "name": "Backup storage",
       "shouldSort": true,
-      "overview": "../../resources/backup-storage-overview.md",
       "keywords": [
         "M365 Backup Storage",
         "Microsoft 365 Backup Storage",

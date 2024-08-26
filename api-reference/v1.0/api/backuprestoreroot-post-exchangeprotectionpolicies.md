@@ -52,7 +52,7 @@ In the request body, include a JSON representation of the [exchangeProtectionPol
 
 If successful, this method returns a `201 Created` response code and an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
-For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes.md#backup-storage-api-error-responses).
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
