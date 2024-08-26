@@ -179,7 +179,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_expand"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$expand=submissions
@@ -326,7 +326,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=status eq 'working'
@@ -427,7 +427,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_orderby"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby= lastModifiedDateTime
@@ -527,7 +527,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_select"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$select=excusedDateTime
@@ -571,7 +571,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_top"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$top=2
