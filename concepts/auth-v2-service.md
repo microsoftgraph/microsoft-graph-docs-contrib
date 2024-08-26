@@ -265,4 +265,4 @@ Access the [Microsoft identity platform code samples](/entra/identity-platform/s
 
 ## Related content
 
-- Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios.
+Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios.
