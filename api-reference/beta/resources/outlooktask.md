@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 An Outlook item that can track a work item.
 
-You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.
+You can use a task to track:
+- The start, due, and actual completion dates and times.
+- The progress or status of the task.
+- The recurrence and reminder statuses of the task.
 
 Date-related properties in the **outlookTask** resource include the following:
 
@@ -44,7 +47,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Get](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Get the properties and relationships of an Outlook task in the user's mailbox.|
 |[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md)	|Change writeable properties of an Outlook task. |
 |[Delete](../api/outlooktask-delete.md) | None |Delete the specified task in the user's mailbox. |
-|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) collection|Complete an Outlook task which sets the **completedDateTime** property to the current date, and **status** property to `completed`.|
+|[Permanently delete](../api/outlooktask-permanentdelete.md)|None|Permanently delete an Outlook task and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
+|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) collection|Complete an Outlook task that sets the **completedDateTime** property to the current date, and **status** property to `completed`.|
 |**Attachments**| | |
 |[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an Outlook task.|
 |[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Add a file, item (message, event or contact), or link to a file as an attachment to a task.|
@@ -58,7 +62,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|The name of the person who has been assigned the task in Outlook. Read-only.|
-|body|[itemBody](itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
+|body|[itemBody](itembody.md)|The task body that typically contains information about the task. Only the HTML type is supported.|
 |categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that the user has defined.|
 |changeKey|String|The version of the task.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task was finished.|
@@ -81,7 +85,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the task.  Read-only. Nullable.|
+|attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the task. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
 
