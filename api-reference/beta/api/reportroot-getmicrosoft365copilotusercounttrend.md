@@ -174,33 +174,32 @@ Content-Type: application/json
 Content-Length: 10747
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountTrend(period='D7')?$format=application/json",
     "value": [
         {
-            "reportRefreshDate": "2024-06-26",
+            "reportRefreshDate": "2024-08-20",
             "reportPeriod": 7,
             "adoptionByDate": [
                 {
-                    "reportDate": "2024-06-26",
-                    "anyAppEnabledUsers": 353910,
-                    "anyAppActiveUsers": 64283,
-                    "microsoftTeamsEnabledUsers": 353769,
-                    "microsoftTeamsActiveUsers": 32629,
-                    "wordEnabledUsers": 353769,
-                    "wordActiveUsers": 5220,
-                    "powerPointEnabledUsers": 353769,
-                    "powerPointActiveUsers": 1842,
-                    "outlookEnabledUsers": 353769,
-                    "outlookActiveUsers": 12534,
-                    "excelEnabledUsers": 353769,
-                    "excelActiveUsers": 619,
-                    "oneNoteEnabledUsers": 353769,
-                    "oneNoteActiveUsers": 362,
-                    "loopEnabledUsers": 353769,
-                    "loopActiveUsers": 226,
-                    "copilotChatEnabledUsers": 353769,
-                    "copilotChatActiveUsers": 25942
-                }
+                    "reportDate": "2024-08-20",
+                    "anyAppEnabledUsers": 357584,
+                    "anyAppActiveUsers": 94745,
+                    "microsoftTeamsEnabledUsers": 357451,
+                    "microsoftTeamsActiveUsers": 72272,
+                    "wordEnabledUsers": 357451,
+                    "wordActiveUsers": 6602,
+                    "powerPointEnabledUsers": 357451,
+                    "powerPointActiveUsers": 2231,
+                    "outlookEnabledUsers": 357451,
+                    "outlookActiveUsers": 11786,
+                    "excelEnabledUsers": 357451,
+                    "excelActiveUsers": 1712,
+                    "oneNoteEnabledUsers": 357451,
+                    "oneNoteActiveUsers": 492,
+                    "loopEnabledUsers": 357451,
+                    "loopActiveUsers": 340,
+                    "copilotChatEnabledUsers": 357451,
+                    "copilotChatActiveUsers": 26609
+                },
             ]
         }
     ]
