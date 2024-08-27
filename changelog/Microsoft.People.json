@@ -1,5 +1,47 @@
 {
-  "changelog": [    
+  "changelog": [  
+    {
+     "ChangeList": [
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+          "ApiChange": "Resource",
+          "ChangedApiName": "namePronunciation",
+          "ChangeType": "Addition",
+          "Description": "Added the [namePronunciation](https://learn.microsoft.com/en-us/graph/api/resources/namePronunciation?view=graph-rest-beta) resource.",
+          "Target": "namePronunciation"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "namePronunciation",
+          "ChangeType": "Addition",
+          "Description": "Added the **namePronunciation** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-namepronunciation?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-namepronunciation?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        }
+      ],
+      "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-27T14:35:08.1357387Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"	  
+    },
     {
       "ChangeList": [
         {
