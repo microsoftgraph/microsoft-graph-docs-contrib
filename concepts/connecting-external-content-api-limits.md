@@ -31,7 +31,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | Limit type | Limit |
 | ---------- | ----- |
 | [External groups](/graph/api/resources/externalconnectors-externalgroup) per Microsoft 365 tenant | 100,000 | 
-| Requests allowed per second (requests/sec) in the group administration [throttling](#throttling) threshold | 1,000 |
+| Requests allowed per second (requests/sec) in the group administration [throttling](#throttling) threshold | 1000 |
 | [External groups](/graph/api/resources/externalconnectors-externalgroup) per user for search query | 10,000 | 
 
 ## Item ingestion

@@ -8,7 +8,7 @@ ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, and delete items added by your application via Microsoft Graph connectors
+# Create, update, and delete items in a Microsoft Graph connection
 
 Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items your application adds to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource in Microsoft Graph.
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 ## Add activities to an item
 To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if someone with Microsoft Entra ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022, at 4:25 PM, the request to send that activity might look like the following.
+For example, if someone with Microsoft Entra ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on Apr 11, 2022, at 4:25 PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
@@ -110,7 +110,7 @@ Content-Type: application/json
 ]
 ```
 
-You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, like `acl` and `content`. If you add an activity this way, include the `@odata.type` for the activity, or the request fails. Activities with timestamps older than seven days don't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they can access and have an activity on (for example, shared with them, created, edited, and so on).
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, like `acl` and `content`. If you add an activity this way, include the `@odata.type` for the activity, or the request fails. Activities with timestamps older than seven days don't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they can access and have an activity on (for example, shared with them, created, and edited).
 
 ## Update an item
 

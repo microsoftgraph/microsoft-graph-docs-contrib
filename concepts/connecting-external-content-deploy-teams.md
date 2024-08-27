@@ -19,8 +19,7 @@ To enable the simplified admin experience in the Teams admin center:
 2. [Update Microsoft Graph permissions.](#update-microsoft-graph-permissions)
 3. [Handle Microsoft Graph webhook notifications.](#handle-microsoft-graph-webhook-notifications)
 4. [Create or delete Microsoft Graph connections.](#create-or-delete-microsoft-graph-connections)
-5. [Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center.
-](#validate-the-experience-by-enabling-the-microsoft-graph-connector-in-the-teams-admin-center)
+5. [Validate the experience by enabling the Microsoft Graph connector in the Teams admin center.](#validate-the-experience-by-enabling-the-microsoft-graph-connector-in-the-teams-admin-center)
 
 ## Update Teams app manifest
 
@@ -46,7 +45,12 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
 
 ## Update Microsoft Graph permissions
 
-In the [Microsoft Entra admin center](https://entra.microsoft.com) > expand the **Identity** menu > select **Applications** > **App registrations** > select your app registration > select **API permissions** > select **Add a permission** > select **Microsoft Graph**. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
+1. Go to [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu and go to **Applications** > **App registrations**.
+1. Select your app registration.
+1. Go to **API permissions** > **Add a permission** > **Microsoft Graph**. 
+1. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example:
+
 ![updated Microsoft Graph permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
 ## Handle Microsoft Graph webhook notifications
@@ -135,7 +139,7 @@ To validate the authenticity of **validatonToken**:
 
 * Verify that the token hasn't expired.
 * Verify that the token hasn't been tampered with and was issued by the Microsoft identity platform.
-* Verify that the **appId** claim in the **validationToken** is 0bf30f3b-4a52-48df-9a82-234910c4a086.
+* Verify that the **appId** claim in the **validationToken**.
 * Verify the **aud** claim in the **validationToken** is the same as the "{{Teams-appid}}" you specified.
 
 For more information, see [Validating the authenticity of notification](/graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
