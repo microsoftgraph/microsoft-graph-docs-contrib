@@ -50,6 +50,10 @@ extends:
     sdl:
       credscan:
         suppressionsFile: $(Build.SourcesDirectory)\.azure-pipelines\.config\CredScanSuppressions.json
+      baseline:
+        baselineFile: $(Build.SourcesDirectory)\.gdn\.gdnbaselines
+      suppression:
+        suppressionFile: $(Build.SourcesDirectory)\.gdn\.gdnsuppress
     customBuildTags:
       - ES365AIMigrationTooling
 
