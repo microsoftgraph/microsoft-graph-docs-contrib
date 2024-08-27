@@ -1,18 +1,18 @@
 ---
 title: "microsoft365BackupRestoreItemAuditRecord resource type"
-description: "Audit data for security-microsoft365backuprestoreitemauditrecord.md"
+description: "**TODO: Add Description**"
 author: "diksha27"
+ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
-
 # microsoft365BackupRestoreItemAuditRecord resource type
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit data for security-microsoft365backuprestoreitemauditrecord.md
+**TODO: Add Description**
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
