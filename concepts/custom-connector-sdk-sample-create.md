@@ -134,7 +134,7 @@ The **ValidateAuthentication** method is used to validate the credentials and th
     
     ```
 
-    The ReadRecordFromCsv method opens the CSV file and read the first record from the file. We can use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials aren't validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
+    The **ReadRecordFromCsv** method opens the CSV file and reads the first record from the file. We can use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials aren't validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
