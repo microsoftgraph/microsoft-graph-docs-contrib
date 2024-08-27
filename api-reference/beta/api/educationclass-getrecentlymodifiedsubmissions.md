@@ -36,10 +36,9 @@ GET /education/classes/{class-id}/getRecentlyModifiedSubmissions
 ```
 
 ## Optional query parameters
-
 This method supports the `$orderby`, `$top`, `$filter`, `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use `$orderby` for the the following property of [educationClass](../resources/educationclass.md) resource `lastModifiedDateTime`.
+You can use `$orderby` for the following property of [educationClass](../resources/educationclass.md) resource `lastModifiedDateTime`.
 
 ## Request headers
 | Header       | Value |
@@ -52,7 +51,25 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
-If the endpoint name is misspelt, the method returns a `400` error message.
+If invalid `$orderby` property is specified, the method returns a `400` error message.
+
+```http
+HTTP/1.1 403 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "20143",
+        "message": "The OData query is invalid. $orderby clause is only supported for these properties : (lastModifiedDateTime).",
+        "innerError": {
+            "date": "2024-08-27T13:04:10",
+            "request-id": "218ae0dc-664c-4928-b4e1-f3b37c27c472",
+            "client-request-id": "ed8c66ed-fd50-d7ec-d989-5a92140999c1"
+        }
+    }
+}
+```
+If invalid `$filter` property is specified, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 403 Bad Request
@@ -61,17 +78,17 @@ Content-type: application/json
 {
     "error": {
         "code": "BadRequest",
-        "message": "Resource not found for the segment 'getRecentlyModifiedSubmission'.",
+        "message": "Invalid filter clause: The $filter expression must evaluate to a single boolean value.",
         "innerError": {
-            "date": "2024-08-26T18:31:50",
-            "request-id": "0e0593ab-7c79-4040-b2ae-1036a57e02fa",
-            "client-request-id": "725a2f58-91be-c04e-45b9-ad14e0ff0686"
+            "date": "2024-08-27T13:05:11",
+            "request-id": "31233bf3-c442-4a8d-a1ff-56c665239e25",
+            "client-request-id": "30f9e18f-f311-741b-bf48-23fd4feecdb9"
         }
     }
 }
 ```
 
-## Example
+## Examples
 ### Example 1: Get recently modified submissions
 
 #### Request
@@ -172,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get recently modified submissions using `$expand` option
+### Example 2: Get recently modified submissions with `$expand` option
 
 #### Request
 The following example shows a request.
@@ -319,7 +336,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get recently modified submissions using `$filter` option
+### Example 3: Get recently modified submissions with `$filter` option
 
 #### Request
 The following example shows a request.
@@ -420,7 +437,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get recently modified submissions using `$orderby` option
+### Example 4: Get recently modified submissions with `$orderby` option
 
 #### Request
 The following example shows a request.
@@ -520,7 +537,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get recently modified submissions using `$select` option
+### Example 5: Get recently modified submissions with `$select` option
 
 #### Request
 The following example shows a request.
@@ -564,7 +581,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Get recently modified submissions using `$top` option
+### Example 6: Get recently modified submissions with `$top` option
 
 #### Request
 The following example shows a request.
@@ -574,7 +591,7 @@ The following example shows a request.
   "name": "get_educationclass_getrecentlymodifiedsubmissions_top"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$top=2
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$top=1
 ```
 
 #### Response
@@ -641,70 +658,6 @@ Content-type: application/json
                 "device": null,
                 "user": {
                     "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            },
-            "excusedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "status": "submitted",
-            "submittedDateTime": "2024-08-26T16:01:02.4555453Z",
-            "unsubmittedDateTime": null,
-            "returnedDateTime": "2024-08-26T16:00:54.9627952Z",
-            "reassignedDateTime": null,
-            "excusedDateTime": null,
-            "lastModifiedDateTime": "2024-08-26T16:01:02.5588969Z",
-            "resourcesFolderUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%223d2fcfd4-cb6a-4e31-aa63-16ca865e9014%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%226bae2cc4-8c31-546f-d30b-d21917129d1f%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "id": "6bae2cc4-8c31-546f-d30b-d21917129d1f",
-            "recipient": {
-                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-                "userId": "f82e5a61-87bb-446e-9fcd-b17d5bc4f352"
-            },
-            "submittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            },
-            "unsubmittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "returnedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            },
-            "reassignedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
                     "displayName": null
                 }
             },
