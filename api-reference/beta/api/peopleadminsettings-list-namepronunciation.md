@@ -1,9 +1,9 @@
 ---
 title: "List namePronunciationSettings objects"
 description: "Get a list of the namePronunciationSettings objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "fondieki"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.namePronunciationSettings not found
+GET https://graph.microsoft.com/beta/admin/people/namePronunciation
 ```
 
 

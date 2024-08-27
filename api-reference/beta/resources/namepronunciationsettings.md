@@ -30,8 +30,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isEnabledInOrganization|Boolean|**TODO: Add Description**|
+|id|String|The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
+|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization; otherwise, `false`. The default value is `false`, and namepronunciation is disabled.|
 
 ## Relationships
 None.
