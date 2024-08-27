@@ -45,7 +45,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_educationcategory_to_educationassignment"
 }-->
 ```http
@@ -61,7 +61,7 @@ Content-type: application/json
 The following example shows the response.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->

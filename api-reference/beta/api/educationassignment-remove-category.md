@@ -44,7 +44,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_educationcategory_to_educationassignment"
 }-->
 ```http
@@ -55,7 +55,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 The following example shows the response.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->
