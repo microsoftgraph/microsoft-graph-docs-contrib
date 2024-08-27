@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "namePronunciation",
           "ChangeType": "Addition",
-          "Description": "Added the [namePronunciation](https://learn.microsoft.com/en-us/graph/api/resources/namePronunciation?view=graph-rest-beta) resource.",
+          "Description": "Added the [namePronunciation](https://learn.microsoft.com/en-us/graph/api/resources/namepronunciation?view=graph-rest-beta) resource.",
           "Target": "namePronunciation"
         },
         {
