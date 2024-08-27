@@ -134,7 +134,7 @@ The **ValidateAuthentication** method is used to validate the credentials and th
     
     ```
 
-    The ReadRecordFromCsv method will open the CSV file and read the first record from the file. We can Use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials are not validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
+    The ReadRecordFromCsv method opens the CSV file and read the first record from the file. We can use this method to validate that the provided data source URL (path of the CSV file) is valid. This connector is using anonymous auth; therefore, credentials aren't validated. If the connector uses any other auth type, the connection to the data source must be made using the credentials provided to validate the authentication.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs.
 
@@ -164,7 +164,7 @@ The **ValidateAuthentication** method is used to validate the credentials and th
 
 #### ValidateCustomConfiguration
 
-The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method will validate that the extra parameters are empty.
+The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method validates that the extra parameters are empty.
 
 1. Update the **ValidateCustomConfiguration** method in ConnectionManagementServiceImpl.cs with the following code.
 
@@ -314,9 +314,9 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
 
 ### Update ConnectorCrawlerServiceImpl.cs
 
-This class has the methods that will be called by the platform during the crawls.
+This class has the methods that are called by the platform during the crawls.
 
-The **GetCrawlStream** method will be called during the full or periodic full crawls.
+The **GetCrawlStream** method is called during the full or periodic full crawls.
 
 1. Add the following using directive in AppliancePart.cs.
 
@@ -440,7 +440,7 @@ The **GetCrawlStream** method will be called during the full or periodic full cr
             {
                 csv.Context.RegisterClassMap<AppliancePartMap>();
 
-                // The GetRecords<T> method will return an IEnumerable<T> that will yield records. This means that only one record is returned at a time as you iterate the records.
+                // The GetRecords<T> method returns an IEnumerable<T> that yields records. This means that only one record is returned at a time as you iterate the records.
                 foreach (var record in csv.GetRecords<AppliancePart>())
                 {
                     yield return record.ToCrawlItem();
