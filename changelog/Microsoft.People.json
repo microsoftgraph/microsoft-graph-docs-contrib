@@ -1,15 +1,7 @@
 {
   "changelog": [  
     {
-     "ChangeList": [
-        {
-          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
-          "ApiChange": "Resource",
-          "ChangedApiName": "namePronunciation",
-          "ChangeType": "Addition",
-          "Description": "Added the [namePronunciation](https://learn.microsoft.com/en-us/graph/api/resources/namepronunciation?view=graph-rest-beta) resource.",
-          "Target": "namePronunciation"
-        },
+     "ChangeList": [     
         {
           "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
           "ApiChange": "Relationship",
