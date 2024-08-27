@@ -17,9 +17,9 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 The error codes in this section apply to the following APIs:
 
-- [Create ExchangeProtectionPolicy](/graph/api/backuprestoreroot-post-exchangeprotectionpolicies)
-- [Create OneDriveForBusinessProtectionPolicy](/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies)
-- [Create SharePointProtectionPolicy](/graph/api/backuprestoreroot-post-sharepointprotectionpolicies)
+- [Create exchangeProtectionPolicy](/graph/api/backuprestoreroot-post-exchangeprotectionpolicies)
+- [Create oneDriveForBusinessProtectionPolicy](/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies)
+- [Create sharePointProtectionPolicy](/graph/api/backuprestoreroot-post-sharepointprotectionpolicies)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -37,7 +37,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Get ProtectionPolicyBase](/graph/api/protectionpolicybase-get)
+- [Get protectionPolicyBase](/graph/api/protectionpolicybase-get)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -50,9 +50,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [Update ExchangeProtectionPolicy](/graph/api/exchangeprotectionpolicy-update)
-- [Update OneDriveForBusinessProtectionPolicy](/graph/api/onedriveforbusinessprotectionpolicy-update)
-- [Update SharePointProtectionPolicy](/graph/api/sharepointprotectionpolicy-update)
+- [Update exchangeProtectionPolicy](/graph/api/exchangeprotectionpolicy-update)
+- [Update oneDriveForBusinessProtectionPolicy](/graph/api/onedriveforbusinessprotectionpolicy-update)
+- [Update sharePointProtectionPolicy](/graph/api/sharepointprotectionpolicy-update)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -67,7 +67,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Delete ProtectionPolicyBase](/graph/api/protectionpolicybase-delete)
+- [Delete protectionPolicyBase](/graph/api/protectionpolicybase-delete)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -81,7 +81,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Deactivate ProtectionPolicyBase](/graph/api/protectionpolicybase-deactivate)
+- [Deactivate protectionPolicyBase](/graph/api/protectionpolicybase-deactivate)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -95,7 +95,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Activate ProtectionPolicyBase](/graph/api/protectionpolicybase-activate)
+- [Activate protectionPolicyBase](/graph/api/protectionpolicybase-activate)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -109,9 +109,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [List DriveProtectionUnit](/graph/api/backuprestoreroot-list-driveprotectionunits)
-- [List MailboxProtectionUnit](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
-- [List SiteProtectionUnit](/graph/api/backuprestoreroot-list-siteprotectionunits)
+- [List driveProtectionUnit](/graph/api/backuprestoreroot-list-driveprotectionunits)
+- [List mailboxProtectionUnit](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
+- [List siteProtectionUnit](/graph/api/backuprestoreroot-list-siteprotectionunits)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -126,7 +126,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Get ProtectionUnitBase](/graph/api/protectionunitbase-get)
+- [Get protectionUnitBase](/graph/api/protectionunitbase-get)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -142,9 +142,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [Create ExchangeRestoreSession](/graph/api/backuprestoreroot-post-exchangerestoresessions)
-- [Create OneDriveForBusinessRestoreSession](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions)
-- [Create SharePointRestoreSession](/graph/api/backuprestoreroot-post-sharepointrestoresessions)
+- [Create exchangeRestoreSession](/graph/api/backuprestoreroot-post-exchangerestoresessions)
+- [Create oneDriveForBusinessRestoreSession](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions)
+- [Create sharePointRestoreSession](/graph/api/backuprestoreroot-post-sharepointrestoresessions)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -161,7 +161,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Get RestoreSessionBase](/graph/api/restoresessionbase-get)
+- [Get restoreSessionBase](/graph/api/restoresessionbase-get)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -174,9 +174,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [Update ExchangeRestoreSession](/graph/api/exchangerestoresession-update)
-- [Update OneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-update)
-- [Update SharePointRestoreSession](/graph/api/sharepointrestoresession-update)
+- [Update exchangeRestoreSession](/graph/api/exchangerestoresession-update)
+- [Update oneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-update)
+- [Update sharePointRestoreSession](/graph/api/sharepointrestoresession-update)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -195,7 +195,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Delete RestoreSessionBase](/graph/api/restoresessionbase-delete)
+- [Delete restoreSessionBase](/graph/api/restoresessionbase-delete)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -210,7 +210,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Activate RestoreSessionBase](/graph/api/restoresessionbase-activate)
+- [Activate restoreSessionBase](/graph/api/restoresessionbase-activate)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -225,9 +225,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [List DriveRestoreArtifact](/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts)
-- [List MailboxRestoreArtifact](/graph/api/exchangerestoresession-list-mailboxrestoreartifacts)
-- [List SiteRestoreArtifact](/graph/api/sharepointrestoresession-list-siterestoreartifacts)
+- [List driveRestoreArtifact](/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts)
+- [List mailboxRestoreArtifact](/graph/api/exchangerestoresession-list-mailboxrestoreartifacts)
+- [List siteRestoreArtifact](/graph/api/sharepointrestoresession-list-siterestoreartifacts)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -244,7 +244,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Create ProtectionRuleBase](/graph/api/protectionrulebase-post)
+- [Create protectionRuleBase](/graph/api/protectionrulebase-post)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -257,7 +257,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Get ProtectionRuleBase](/graph/api/protectionrulebase-get)
+- [Get protectionRuleBase](/graph/api/protectionrulebase-get)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -270,8 +270,8 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [List RestorePoint](/graph/api/backuprestoreroot-list-restorepoints)
-- [Search RestorePoint](/graph/api/restorepoint-search)
+- [List restorePoint](/graph/api/backuprestoreroot-list-restorepoints)
+- [Search restorePoint](/graph/api/restorepoint-search)
 
 The following table lists the possible error and response codes that can be returned.
 
