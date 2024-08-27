@@ -2,10 +2,10 @@
 title: "airInvestigationData resource type"
 description: "Audit data for security-airinvestigationdata.md"
 author: "diksha27"
+ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
-
 # airInvestigationData resource type
 
 Namespace: microsoft.graph.security

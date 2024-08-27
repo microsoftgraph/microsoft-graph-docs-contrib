@@ -2,10 +2,10 @@
 title: "aipSensitivityLabelActionLogRequest resource type"
 description: "Audit data for security-aipsensitivitylabelactionlogrequest.md"
 author: "diksha27"
+ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
-
 # aipSensitivityLabelActionLogRequest resource type
 
 Namespace: microsoft.graph.security

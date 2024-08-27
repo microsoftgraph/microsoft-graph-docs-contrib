@@ -1,18 +1,18 @@
 ---
 title: "dynamics365BusinessCentralAuditRecord resource type"
-description: "Audit data for security-dynamics365businesscentralauditrecord.md"
+description: "**TODO: Add Description**"
 author: "diksha27"
+ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
-
 # dynamics365BusinessCentralAuditRecord resource type
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit data for security-dynamics365businesscentralauditrecord.md
+**TODO: Add Description**
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
