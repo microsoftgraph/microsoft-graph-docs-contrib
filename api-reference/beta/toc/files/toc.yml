@@ -200,3 +200,9 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+- name: Shared drive item
+  items:
+  - name: Shared drive item
+    href: ../../resources/shareddriveitem.md
+  - name: Use sharing links
+    href: ../../api/shares-get.md
