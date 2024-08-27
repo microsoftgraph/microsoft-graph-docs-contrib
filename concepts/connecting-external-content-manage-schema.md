@@ -149,7 +149,8 @@ Rank hints can be applied to textual properties that aren't mapped to semantic l
 
 Use the following steps to set rank hints:
 
-1. On the **Search and intelligence** tab in the admin portal, go to **Customization** > **Relevance tuning**. 
+1. Go to **Search and intelligence** tab in the admin portal.
+1. Select **Customization** > **Relevance tuning**.
 
   ![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
 
