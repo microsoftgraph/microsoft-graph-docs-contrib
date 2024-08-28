@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryAzureConnectionSetting resource type"
-description: "Represents the Azure connection configuration of backup Cloud PCs provisioned for cross-region disaster recovery."
+description: "Represents the Azure network connection configuration of backup Cloud PCs provisioned for cross-region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
