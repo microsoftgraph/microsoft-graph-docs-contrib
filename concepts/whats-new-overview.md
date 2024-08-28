@@ -32,7 +32,7 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 
 ### Files
 
-Introduced the ability to include all version history when you [copy a driveItem](/graph/driveitem-copyy?view=graph-rest-beta). Version history is included up to the target version setting limit.
+Introduced the ability to include all version history when you [copy a drive item](/graph/driveitem-copyy?view=graph-rest-beta). Version history is included up to the target version setting limit.
 
 ### People and workplace intelligence | Insights
 
