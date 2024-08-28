@@ -27,7 +27,6 @@ The following table lists the possible error and response codes that can be retu
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidCreateRequest|Can't process the request because it's malformed or incorrect.|Create request is null, invalid or its size is too large.|
 |400|InvalidDisplayName|Thrown when the policy display name exceeds the character limit or is empty/null.|Please ensure policy name length should be > 0 chars and <= 1024 chars.|
-|400|EmptyProtectionUnitList|Thrown when the Protection Unit list in the create request is empty.|Protection Unit list is empty.|
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
