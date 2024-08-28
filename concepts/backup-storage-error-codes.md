@@ -101,7 +101,7 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|400|InvalidPolicyI|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
+|400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't activate policy. The policy isn't in correct state. Please make sure the policy is in Inactive state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
