@@ -418,7 +418,7 @@ The following example shows a request.
   "name": "get_educationclass_getrecentlymodifiedsubmissions_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby= lastModifiedDateTime
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby=lastModifiedDateTime
 ```
 
 #### Response
