@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/12/2024
+ms.date: 08/28/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -134,6 +134,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read all terms of use acceptance statuses | Read terms of use acceptance statuses that user can access |
 | Description | Allows the app to read terms of use acceptance statuses, without a signed in user. | Allows the app to read terms of use acceptance statuses on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### AiEnterpriseInteraction.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 839c90ab-5771-41ee-aef8-a562e8487c1e | - |
+| DisplayText | Read all AI enterprise interactions. | - |
+| Description | Allows the app to read all AI enterprise interactions. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -290,6 +301,61 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### ApprovalSolution.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b0df437d-d341-4df0-aa3e-89ca81a1207f |
+| DisplayText | - | Read approvals |
+| Description | - | Allows the app to read approvals on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### ApprovalSolution.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9f265de7-8d5e-4e9a-a805-5e8bbc49656f | - |
+| DisplayText | Read all approvals | - |
+| Description | Allows the app to read all approvals and approval item subscriptions, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### ApprovalSolution.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 6768d3af-4562-48ff-82d2-c5e19eb21b9c |
+| DisplayText | - | Read, create, and respond to approvals |
+| Description | - | Allows the app to provision, read, create, and respond to approvals on behalf of the signed-in user.  |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### ApprovalSolution.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 45583558-1113-4d06-8969-e79a28edc9ad | - |
+| DisplayText | Read all approvals and manage approval subscriptions | - |
+| Description | Allows the app to read all approvals and create, update, or remove approval item subscriptions, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### ApprovalSolutionResponse.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 89d944f2-2011-44ad-830c-aa9bf5ef2319 |
+| DisplayText | - | Read and respond to approvals assigned to the current user |
+| Description | - | Allows the app to read and respond to approvals on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
 ### AttackSimulation.Read.All
 
 | Category | Application | Delegated |
@@ -340,7 +406,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 0bc85aed-7b0b-437a-bac8-3b29a1b84c99 | ee3409fe-617f-43cf-bd1e-fc8b38049e69 |
 | DisplayText | Read audit logs data from Endpoint Data Loss Prevention workload | Read audit logs data from Endpoint Data Loss Prevention workload |
-| Description | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, on behalf of the signed-in user. |
+| Description | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint Data Loss Precention workload, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -494,7 +560,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | bebd0841-a3d8-4313-a51d-731112c8ee41 | 9f89e109-94b9-4c9b-b4fc-98cdaa54f574 |
 | DisplayText | Read restore all sessions and start restore sessions from backups | Read restore sessions and start restore sessions from backups |
-| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed-up snapshot, on behalf of the signed in user. |
+| Description | Allows the app to search all backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up snapshot, without a signed-in user. | Allows the app to search the backup snapshots for Microsoft 365 resources, and restore Microsoft 365 resources from a backed up snapshot, on behalf of the signed in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -525,10 +591,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | b27a61ec-b99c-4d6a-b126-c4375d08ae30 |
-| DisplayText | - | Read BitLocker keys |
-| Description | - | Allows the app to read BitLocker keys on behalf of the signed-in user, for their owned devices. Allows read of the recovery key. |
-| AdminConsentRequired | - | Yes |
+| Identifier | 57f1cf28-c0c4-4ec3-9a30-19a2eaaf2f6e | b27a61ec-b99c-4d6a-b126-c4375d08ae30 |
+| DisplayText | Read all BitLocker keys | Read BitLocker keys |
+| Description | Allows an app to read BitLocker keys for all devices, without a signed-in user. Allows read of the recovery key. | Allows the app to read BitLocker keys on behalf of the signed-in user, for their owned devices. Allows read of the recovery key. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -536,10 +602,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 5a107bfc-4f00-4e1a-b67e-66451267bc68 |
-| DisplayText | - | Read BitLocker keys basic information |
-| Description | - | Allows the app to read basic BitLocker key properties on behalf of the signed-in user, for their owned devices. Does not allow read of the recovery key itself. |
-| AdminConsentRequired | - | Yes |
+| Identifier | f690d423-6b29-4d04-98c6-694c42282419 | 5a107bfc-4f00-4e1a-b67e-66451267bc68 |
+| DisplayText | Read all BitLocker keys basic information | Read BitLocker keys basic information |
+| Description | Allows an app to read basic BitLocker key properties for all devices, without a signed-in user. Does not allow read of the recovery key. | Allows the app to read basic BitLocker key properties on behalf of the signed-in user, for their owned devices. Does not allow read of the recovery key itself. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -781,7 +847,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1abb026f-7572-49f6-9ddd-ad61cbba181e | - |
 | DisplayText | Read all call events | - |
-| Description | Allows the app to read call event information for all users in your organization, without a signed-in user. | - |
+| Description | Allows the app to read call event information for all users in your organizatio, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -829,7 +895,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 284383ee-7f6e-4e40-a2a8-e85dcb029101 | - |
 | DisplayText | Initiate outgoing 1 to 1 calls from the app | - |
-| Description | Allows the app to place outbound calls to a single user and transfer calls to users in your organization's directory, without a signed-in user. | - |
+| Description | Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -1456,7 +1522,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 88bb2658-5d9e-454f-aacd-a3933e079526 | b2052569-c98c-4f36-a5fb-43e5c111e6d0 |
-| DisplayText | Read all custom authentication extensions | Read your organization's custom authentication extensions |
+| DisplayText | Read all custom authentication extensions | Read your oganization's custom authentication extensions |
 | Description | Allows the app to read your organization's custom authentication extensions without a signed-in user. | Allows the app to read your organization's custom authentication extensions on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -1785,7 +1851,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 243333ab-4d21-40cb-a475-36241daa0842 | 44642bfe-8385-4adc-8fc6-fe3cb2c375c3 |
 | DisplayText | Read and write Microsoft Intune devices | Read and write Microsoft Intune devices |
-| Description | Allows the app to read and write the properties of devices managed by Microsoft Intune, without a signed-in user. Does not allow high impact operations such as remote wipe and password reset on the device's owner | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device's owner. |
+| Description | Allows the app to read and write the properties of devices managed by Microsoft Intune, without a signed-in user. Does not allow high impact operations such as remote wipe and password reset on the device’s owner | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. |
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementManagedDevices.ReadWrite.All](../includes/permissions-notes/devicemanagementmanageddevices.readwrite.all.md)]
@@ -2718,7 +2784,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0 | 43781733-b5a7-4d1b-98f4-e8edff23e1a9 |
 | DisplayText | Read identity providers | Read identity providers |
-| Description | Allows the app to read your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read your organization's identity (authentication) providers' properties on behalf of the user. |
+| Description | Allows the app to read your organization’s identity (authentication) providers’ properties without a signed in user. | Allows the app to read your organization’s identity (authentication) providers’ properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -2729,7 +2795,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 90db2b9a-d928-4d33-a4dd-8442ae3d41e4 | f13ce604-1677-429f-90bd-8a10b9f01325 |
 | DisplayText | Read and write identity providers | Read and write identity providers |
-| Description | Allows the app to read and write your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read and write your organization's identity (authentication) providers' properties on behalf of the user. |
+| Description | Allows the app to read and write your organization’s identity (authentication) providers’ properties without a signed in user. | Allows the app to read and write your organization’s identity (authentication) providers’ properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -3358,6 +3424,94 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | - | No |
 
 [!INCLUDE [Mail.Send.Shared](../includes/permissions-notes/mail.send.shared.md)]
+
+---
+
+### MailboxFolder.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 52dc2051-4958-4636-8f2a-281d39c6981c |
+| DisplayText | - | Read a user's mailbox folders |
+| Description | - | Allows the app to read the user's mailbox folders, on behalf of the the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### MailboxFolder.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 99280d24-a782-4793-93cc-0888549957f6 | - |
+| DisplayText | Read all the users' mailbox folders | - |
+| Description | Allows the app to read all the users' mailbox folders, without signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### MailboxFolder.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 077fde41-7e0b-4c5b-bcd1-e9d743a30c80 |
+| DisplayText | - | Read and write a user's mailbox folders |
+| Description | - | Allows the app to read and write the user's mailbox folders, on behalf of the the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### MailboxFolder.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fef87b92-8391-4589-9da7-eb93dab7dc8a | - |
+| DisplayText | Read and write all the users' mailbox folders | - |
+| Description | Allows the app to read and write all the users' mailbox folders, without signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### MailboxItem.ImportExport
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | df96e8a0-f4e1-4ecf-8d83-a429f822cbd6 |
+| DisplayText | - | Allows the app to perform backup and restore of mailbox items |
+| Description | - | Allows the app to backup, restore, and modify mailbox items on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### MailboxItem.ImportExport.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 76577085-e73d-4f1d-b26a-85fb33892327 | - |
+| DisplayText | Allows the app to perform backup and restore for all mailbox items | - |
+| Description | Allows the app to backup, restore, and modify all mailbox items without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### MailboxItem.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 82305458-296d-4edd-8b0b-74dd74c34526 |
+| DisplayText | - | Read a user's mailbox items |
+| Description | - | Allows the app to read the user's mailbox items, on behalf of the the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### MailboxItem.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7d9f353d-a7bd-4fbb-822a-26d5dd39a3ce | - |
+| DisplayText | Read all the users' mailbox items | - |
+| Description | Allows the app to read all the users' mailbox items, without signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -4115,8 +4269,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | b21b72f6-4e6a-4533-9112-47eea9f97b28 | d146432f-b803-4ed4-8d42-ba74193a6ede |
-| DisplayText | Read your organization's identity protection policy | Read your organization's identity protection policy |
-| Description | Allows the app to read your organization's identity protection policy without a signed-in user.  | Allows the app to read your organization's identity protection policy on behalf of the signed-in user.  |
+| DisplayText | Read your organization’s identity protection policy | Read your organization’s identity protection policy |
+| Description | Allows the app to read your organization’s identity protection policy without a signed-in user.  | Allows the app to read your organization’s identity protection policy on behalf of the signed-in user.  |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4271,8 +4425,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 2dcf8603-09eb-4078-b1ec-d30a1a76b873 | 7256e131-3efb-4323-9854-cf41c6021770 |
-| DisplayText | Read and write your organization's identity protection policy  | Read and write your organization's identity protection policy  |
-| Description | Allows the app to read and write your organization's identity protection policy without a signed-in user. | Allows the app to read and write your organization's identity protection policy on behalf of the signed-in user. |
+| DisplayText | Read and write your organization’s identity protection policy  | Read and write your organization’s identity protection policy  |
+| Description | Allows the app to read and write your organization’s identity protection policy without a signed-in user. | Allows the app to read and write your organization’s identity protection policy on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4769,7 +4923,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e24d31aa-e1ab-4c80-85fe-23018690335d | 469cd065-729e-4dee-b1fa-d92e0fab6310 |
 | DisplayText | Read profile photo of a user or group | Read profile photo of a user or group |
-| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the signed-in user. |
+| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4780,7 +4934,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 27baa7f6-5dfb-4ba8-b1d3-1e812c143013 | f5b24df7-511e-48bb-ae88-643f023b55e1 |
 | DisplayText | Read and write profile photo of a user or group | Read and write profile photo of a user or group |
-| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the signed-in user. |
+| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4892,6 +5046,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all admin report settings | Read and write admin report settings |
 | Description | Allows the app to read and update all admin report settings, such as whether to display concealed information in reports, without a signed-in user. | Allows the app to read and update admin report settings, such as whether to display concealed information in reports, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### ResourceSpecificPermissionGrant.ReadForChat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | cb530fca-534b-4e72-aa74-bca7e8bbd06f |
+| DisplayText | - | Read resource specific permissions granted on a chat |
+| Description | - | Allows the app to read the resource specific permissions granted on the chat, on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### ResourceSpecificPermissionGrant.ReadForChat.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2ff643d8-43e4-4a9b-88c1-86cb4a4b4c2f | - |
+| DisplayText | Read resource specific permissions granted on a chat | - |
+| Description | Allows the app to read the resource specific permissions granted on the chat without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### ResourceSpecificPermissionGrant.ReadForTeam
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | eafad40c-bf7a-415a-b7f8-acdf5706b58f |
+| DisplayText | - | Read resource specific permissions granted on a team |
+| Description | - | Allows the app to read the resource specific permissions granted on the team, on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### ResourceSpecificPermissionGrant.ReadForTeam.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ad4600ae-d900-42cb-a9a2-2415d05593d0 | - |
+| DisplayText | Read resource specific permissions granted on a team | - |
+| Description | Allows the app to read the resource specific permissions granted on the team without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -5057,7 +5255,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 11059518-d6a6-4851-98ed-509268489c4a | 435644c6-a5b1-40bf-8f52-fe8e5b53e19c |
 | DisplayText | Read all alert data, configure alerts, and take actions on all alerts for your company's directory | Read all alert data, configure alerts, and take actions on all alerts for your company's directory |
-| Description | Allows the app to read and manage all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes managing alert settings, initiating alert scans, dismissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Allows the app to read and manage the role-based access control (RBAC) alerts for your company's directory, on behalf of the signed-in user. This includes managing alert settings, initiating alert scans, dismissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. |
+| Description | Allows the app to read and manage all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Allows the app to read and manage the role-based access control (RBAC) alerts for your company's directory, on behalf of the signed-in user. This includes managing alert settings, initiating alert scans, dimissing alerts, remediating alert incidents, and reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5243,8 +5441,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | bf394140-e372-4bf9-a898-299cfc7564e5 | 64733abd-851e-478a-bffb-e47a14b18235 |
-| DisplayText | Read your organization's security events | Read your organization's security events |
-| Description | Allows the app to read your organization's security events without a signed-in user. | Allows the app to read your organization's security events on behalf of the signed-in user. |
+| DisplayText | Read your organization’s security events | Read your organization’s security events |
+| Description | Allows the app to read your organization’s security events without a signed-in user. | Allows the app to read your organization’s security events on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5254,8 +5452,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | d903a879-88e0-4c09-b0c9-82f6a1333f84 | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc |
-| DisplayText | Read and update your organization's security events | Read and update your organization's security events |
-| Description | Allows the app to read your organization's security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization's security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. |
+| DisplayText | Read and update your organization’s security events | Read and update your organization’s security events |
+| Description | Allows the app to read your organization’s security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5568,7 +5766,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 258f6531-6087-4cc4-bb90-092c5fb3ed3f |
 | DisplayText | - | Send emails from mailboxes using SMTP AUTH. |
-| Description | - | Allows the app to be able to send emails from the user's mailbox using the SMTP AUTH client submission protocol. |
+| Description | - | Allows the app to be able to send emails from the user’s mailbox using the SMTP AUTH client submission protocol. |
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *SMTP.Send* delegated permission is available for consent in personal Microsoft accounts.
@@ -5669,7 +5867,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | f45671fb-e0fe-4b4b-be20-3d3ce43f1bcb |
 | DisplayText | - | Read user's tasks and task lists |
-| Description | - | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. |
+| Description | - | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. |
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *Tasks.Read* delegated permission is available for consent in personal Microsoft accounts.
@@ -5681,8 +5879,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f10e1f91-74ed-437f-a6fd-d6ae88e26c1f | - |
-| DisplayText | Read all users' tasks and tasklist | - |
-| Description | Allows the app to read all users' tasks and task lists in your organization, without a signed-in user. | - |
+| DisplayText | Read all users’ tasks and tasklist | - |
+| Description | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -5703,7 +5901,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | 2219042f-cab5-40cc-b0d2-16b1540b4c5f |
-| DisplayText | - | Create, read, update, and delete user's tasks and task lists |
+| DisplayText | - | Create, read, update, and delete user’s tasks and task lists |
 | Description | - | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. |
 | AdminConsentRequired | - | No |
 
@@ -5716,8 +5914,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 44e666d1-d276-445b-a5fc-8815eeb81d55 | - |
-| DisplayText | Read and write all users' tasks and tasklists | - |
-| Description | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | - |
+| DisplayText | Read and write all users’ tasks and tasklists | - |
+| Description | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -6588,7 +6786,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e0b77adb-e790-44a3-b0a0-257d06303687 | f266d9c0-ccb9-4fb8-a228-01ac0d8d6627 |
 | DisplayText | Read all Threat Intelligence Information | Read all threat intelligence information |
-| Description | Allows the app to read threat intelligence information, such as indicators, observations, and and articles, without a signed in user. | Allows the app to read threat intelligence information, such as indicators, observations, and articles, on behalf of the signed-in user. |
+| Description | Allows the app to read threat intellgence information, such as indicators, observations, and and articles, without a signed in user. | Allows the app to read threat intelligence information, such as indicators, observations, and articles, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6643,7 +6841,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 926a6798-b100-4a20-a22f-a4918f13951d | 059e5840-5353-4c68-b1da-666a033fc5e8 |
 | DisplayText | Read and write all of the organization's threat submission policies | Read and write all threat submission policies |
-| Description | Allows the app to read your organization's threat submission policies without a signed-in user. Also allows the app to create new threat submission policies without a signed-in user. | Allows the app to read your organization's threat submission policies on behalf of the signed-in user. Also allows the app to create new threat submission policies on behalf of the signed-in user. |
+| Description | Allows the app to read your organization's threat submission policies without a signed-in user. Also allows the app to create new threat submission polices without a signed-in user. | Allows the app to read your organization's threat submission policies on behalf of the signed-in user. Also allows the app to create new threat submission policies on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6725,6 +6923,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### User-Mail.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 280d0935-0796-47d1-8d26-273470a3f17a | 6166886a-9576-433b-8544-658177bdef1d |
+| DisplayText | Read and write all secondary mail addresses for users | Read and write secondary mail addresses for users |
+| Description | Allows the app to read and write secondary mail addresses for all users, without a signed-in user. | Allows the app to read and write secondary mail addresses for all users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### User-PasswordProfile.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | cc117bb9-00cf-4eb8-b580-ea2a878fe8f7 | 56760768-b641-451f-8906-e1b8ab31bca7 |
+| DisplayText | Read and write all password profiles and reset user passwords | Read and write password profiles and reset user passwords |
+| Description | Allows the app to read and write password profiles and reset passwords for all users, without a signed-in user. | Allows the app to read and write password profiles and reset passwords for all users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### User-Phone.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 86ceff06-c822-49ff-989a-d912845ffe69 | e29d5979-5b06-4a7f-ae24-6a9348d2e1ff |
+| DisplayText | Read and write all user mobile phone and business phones | Read and write user mobile phone and business phones |
+| Description | Allows the app to read and write the mobile phone and business phones for all users, without a signed-in user. | Allows the app to read and write the mobile phone and business phones for all users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### User.DeleteRestore.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | eccc023d-eccf-4e7b-9683-8813ab36cecc | 4bb440cd-2cf2-4f90-8004-aa2acd2537c5 |
+| DisplayText | Delete and restore all users | Delete and restore users |
+| Description | Allows the app to delete and restore all users, without a signed-in user. | Allows the app to delete and restore all users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### User.EnableDisableAccount.All
 
 | Category | Application | Delegated |
@@ -6780,6 +7022,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ![personal Microsoft accounts][MSA] The *User.Read* delegated permission is available for consent in personal Microsoft accounts.
 
+[!INCLUDE [User.Read](../includes/permissions-notes/user.read.md)]
+
 ---
 
 ### User.Read.All
@@ -6806,6 +7050,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ![personal Microsoft accounts][MSA] The *User.ReadBasic.All* delegated permission is available for consent in personal Microsoft accounts.
 
+[!INCLUDE [User.ReadBasic.All](../includes/permissions-notes/user.readbasic.all.md)]
+
 ---
 
 ### User.ReadWrite
@@ -6819,6 +7065,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ![personal Microsoft accounts][MSA] The *User.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
 
+[!INCLUDE [User.ReadWrite](../includes/permissions-notes/user.readwrite.md)]
+
 ---
 
 ### User.ReadWrite.All
@@ -6831,6 +7079,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *User.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
+
+[!INCLUDE [User.ReadWrite.All](../includes/permissions-notes/user.readwrite.all.md)]
 
 ---
 
@@ -6875,7 +7125,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 38d9df27-64da-44fd-b7c5-a6fbac20248f | aec28ec7-4d02-4e8c-b864-50163aea77eb |
 | DisplayText | Read all users' authentication methods | Read all users' authentication methods |
-| Description | Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| Description | Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6897,7 +7147,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 50483e42-d915-4231-9639-7fdb7fd190e5 | b7887744-6746-4312-813d-72daeaee7e2d |
 | DisplayText | Read and write all users' authentication methods  | Read and write all users' authentication methods. |
-| Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user’s phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user’s phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6908,7 +7158,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 4e774092-a092-48d1-90bd-baad67c7eb47 | 26e2f3e8-b2a1-47fc-9620-89bb5b042024 |
 | DisplayText | Deliver and manage all user's notifications | Deliver and manage user's notifications |
-| Description | Allows the app to send, read, update and delete user's notifications, without a signed-in user. | Allows the app to send, read, update and delete user's notifications. |
+| Description | Allows the app to send, read, update and delete user’s notifications, without a signed-in user. | Allows the app to send, read, update and delete user’s notifications. |
 | AdminConsentRequired | Yes | No |
 
 ---
@@ -6985,7 +7235,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | d4f67ec2-59b5-4bdc-b4af-d78f6f9c1954 | - |
 | DisplayText | Read all virtual appointments for users, as authorized by online meetings application access policy | - |
-| Description | Allows the application to read virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | - |
+| Description | Allows the application to read virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user’s data by the online meetings application access policy. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -7007,7 +7257,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | bf46a256-f47d-448f-ab78-f226fff08d40 | - |
 | DisplayText | Read-write all virtual appointments for users, as authorized by online meetings app access policy | - |
-| Description | Allows the application to read and write virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | - |
+| Description | Allows the application to read and write virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user’s data by the online meetings application access policy. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -7029,7 +7279,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 6b616635-ae58-433a-a918-8c45e4f304dc |
 | DisplayText | - | Read your virtual events |
-| Description | - | Allows the app to read virtual events created by you |
+| Description | - | Allows the app to read virtual events created by the you |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -7118,9 +7368,9 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelMeetingRecording.Read.Group | 30a40618-9b50-4764-b62e-b04023a8f5f3 | Read the recordings of all channel meetings associated with this team | Allows the app to read recordings of all the channel meetings associated with this team, without a signed-in user. |
 | ChannelMeetingTranscript.Read.Group | 37e59e88-1a46-482b-b623-0a4aa6abdf67 | Read the transcripts of all channel meetings associated with this team | Allows the app to read transcripts of all the channel meetings associated with this team, without a signed-in user. |
 | ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. |
-| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send messages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
-| ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
-| ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. |
+| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send mesages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
+| ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team’s channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
+| ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team’s channels | Allows the app to update and read the names, descriptions, and settings of this team’s channels, without a signed-in user. |
 | Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user.  |
 | ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. |
 | ChatMessage.Read.Chat | 9398c3de-3f6b-4958-90f3-5098714ff50c | Read this chat's messages | Allows the app to read this chat's messages, without a signed-in user. |
