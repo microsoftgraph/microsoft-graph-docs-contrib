@@ -250,7 +250,6 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
-|500|InvalidProtectionRuleDetails|A transient error where Service is unable to save the rule details.|Invalid rule details.|
 
 ## Get inclusion rule by ID API errors
 
@@ -263,7 +262,6 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
-|404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
 
 ## Get restore point API errors
 
