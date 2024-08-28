@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1
 [!INCLUDE [sample-code](../includes/snippets/php/delete-virtualeventregistrationquestion-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-virtualeventregistrationquestion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-virtualeventregistrationquestion-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

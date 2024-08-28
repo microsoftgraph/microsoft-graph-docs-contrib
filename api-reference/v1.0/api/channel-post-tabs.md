@@ -1,7 +1,7 @@
 ---
 title: "Add tab to channel"
 description: "Add (pin) a tab to the specified channel within a team. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType

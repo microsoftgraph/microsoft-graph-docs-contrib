@@ -4,7 +4,7 @@ description: "Represents organization data associated with a user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: entra-users
-author: "cmmdesai"
+author: "yyuank"
 ---
 
 # employeeOrgData resource type

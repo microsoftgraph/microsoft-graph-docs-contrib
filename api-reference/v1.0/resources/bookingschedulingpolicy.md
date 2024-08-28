@@ -13,6 +13,10 @@ Namespace: microsoft.graph
 
 Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar.
 
+> [!NOTE]
+>
+> If the Default Scheduling Policy is enabled at the service level, the values of this resource are limited to those defined in the policy in the [List services](/graph/api/bookingbusiness-list-services) API response. In this case, the client must fall back to the Default Scheduling Policy for the business.
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -24,6 +28,10 @@ Represents the set of policies that determine how appointments should be created
 |minimumLeadTime|Duration|The minimum amount of time before which bookings and cancellations must be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |sendConfirmationsToOwner|Boolean| `True` to notify the business via email when a booking is created or changed. Use the email address specified in the **email** property of the **bookingBusiness** entity for the business. |
 |timeSlotInterval|Duration|Duration of each time slot, denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

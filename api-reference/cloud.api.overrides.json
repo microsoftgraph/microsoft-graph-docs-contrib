@@ -1,0 +1,191 @@
+[
+  {
+    "apiPath": "/directory/administrativeUnits/{id}/members/{id}",
+    "overridePath": "/directory/administrativeUnits/{id}/members/{id}/graph.application"
+  },
+  {
+    "apiPath": "/administrativeUnits/{id}/members/{id}",
+    "overridePath": "/administrativeUnits/{id}/members/{id}/graph.application"
+  },
+  {
+    "apiPath": "/directory/deleteditems/microsoft.graph.application",
+    "overridePath": "/directory/deleteditems"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/hardwareOath",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/voice",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate",
+    "overridePath": "/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{authenticationMethodConfiguration-id}"
+  },
+  {
+    "apiPath": "/identity/b2xUserFlows/{id}/apiConnectorConfiguration/{step}/$ref",
+    "overridePath": "/identity/b2xUserFlows/{id}/apiConnectorConfiguration/postFederationSignup/$ref"
+  },
+  {
+    "apiPath": "/places/{id}",
+    "overridePath": "/places/{id}/graph.room",
+    "operation": "GET"
+  },
+  {
+    "apiPath": "/places/microsoft.graph.room",
+    "overridePath": "/places/graph.room"
+  },
+  {
+    "apiPath": "/print/printers/{id}/shares/{id}/allowedGroups/$ref",
+    "overridePath": "/print/shares/{id}/allowedGroups/$ref"
+  },
+  {
+    "apiPath": "/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation",
+    "overridePath": "/directory/federationConfigurations"
+  },
+  {
+    "apiPath": "/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation",
+    "overridePath": "/directory/federationConfigurations"
+  },
+  {
+    "apiPath": "directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/{id}",
+    "overridePath": "directory/federationConfigurations/{id}"
+  },
+  {
+    "apiPath": "/admin/serviceAnnouncement/healthOverviews/{ServiceName}",
+    "overridePath": "/admin/serviceAnnouncement/healthOverviews/{id}"
+  },
+  {
+    "apiPath": "/drives/{id}/items/{id}/workbook/tables/{id}/rows/{index}",
+    "overridePath": "/drives/{id}/items/{id}/workbook/tables/{id}/rows/{id}"
+  },
+  {
+    "apiPath": "/admin/windows/updates/resourceConnections/microsoft.graph.windowsUpdates.operationalInsightsConnection",
+    "overridePath": "/admin/windows/updates/resourceConnections"
+  },
+  {
+    "apiPath": "/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice",
+    "overridePath": "/admin/windows/updates/updatableAssets"
+  },
+  {
+    "apiPath": "/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.updatableAssetGroup",
+    "overridePath": "/admin/windows/updates/updatableAssets"
+  },
+  {
+    "apiPath": "/policies/authorizationPolicy/authorizationPolicy",
+    "overridePath": "/policies/authorizationPolicy/{id}"
+  },
+  {
+    "apiPath": "/identityGovernance/entitlementManagement/subjects(objectId='{objectId}')",
+    "overridePath": "/identityGovernance/entitlementManagement/subjects/{id}"
+  },
+  {
+    "apiPath": "/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='{on}')/recordAllDecisions",
+    "overridePath": "/identityGovernance/accessReviews/decisions/recordAllDecisions"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources",
+    "overridePath": "/privilegedAccess/{id}/resources"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/register",
+    "overridePath": "/privilegedAccess/{id}/resources/register"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/cancel",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/cancel"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/roleAssignments",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/roleAssignments"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/roleAssignments/{id}",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/roleAssignments/{id}"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/roleDefinitions",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/roleDefinitions"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/roleDefinitions/{id}",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/roleDefinitions/{id}"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/resources/{id}/roleSettings",
+    "overridePath": "/privilegedAccess/{id}/resources/{id}/roleSettings"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleAssignmentRequests",
+    "overridePath": "/privilegedAccess/{id}/roleAssignmentRequests"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleAssignments/export",
+    "overridePath": "/privilegedAccess/{id}/roleAssignments/export"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleAssignmentRequests/{id}",
+    "overridePath": "/privilegedAccess/{id}/roleAssignmentRequests/{id}"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel",
+    "overridePath": "/privilegedAccess/{id}/roleAssignmentRequests/{id}/cancel"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest",
+    "overridePath": "/privilegedAccess/{id}/roleAssignmentRequests/{id}/updateRequest"
+  },
+  {
+    "apiPath": "/privilegedAccess/azureResources/roleSettings/{id}",
+    "overridePath": "/privilegedAccess/{id}/roleSettings/{id}"
+  },
+  {
+    "apiPath": "/me/onlineMeetings/{id}/registration/microsoft.graph.meetingRegistration/customQuestions",
+    "overridePath": "/me/onlineMeetings/{id}/registration/customQuestions"
+  },
+  {
+    "apiPath": "/sites/{id}/pages/{id}/microsoft.graph.sitePage",
+    "overridePath": "/sites/{id}/pages/{id}"
+  },
+  {
+    "apiPath": "/sites/{id}/pages/microsoft.graph.sitePage",
+    "overridePath": "/sites/{id}/pages"
+  },
+  {
+    "apiPath": "/admin/windows/updates/updatePolicies/{id}/complianceChanges/microsoft.graph.windowsUpdates.contentApproval",
+    "overridePath": "/admin/windows/updates/updatePolicies/{id}/complianceChanges"
+  }
+]

@@ -50,6 +50,36 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -1025,12 +1055,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
@@ -3116,8 +3148,6 @@ items:
           href: ../../api/identityuserflowattribute-update.md
         - name: Delete
           href: ../../api/identityuserflowattribute-delete.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow

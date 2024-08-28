@@ -38,7 +38,7 @@ $params = @{
 							hidden = $false
 							editable = $true
 							writeToDirectory = $true
-							required = $false
+							required = $true
 							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
@@ -51,22 +51,30 @@ $params = @{
 							hidden = $false
 							editable = $true
 							writeToDirectory = $true
-							required = $false
+							required = $true
 							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
 							options = @(
 							)
 						}
 						@{
-							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
-							label = "Favorite color"
-							inputType = "text"
+							attribute = "extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry"
+							label = "Rock music or Country"
+							inputType = "radioSingleSelect"
 							defaultValue = $null
 							hidden = $false
 							editable = $true
 							writeToDirectory = $true
-							required = $false
+							required = $true
 							validationRegEx = "^.*"
 							options = @(
+								@{
+									label = "Rock music"
+									value = "Rock"
+								}
+								@{
+									label = "Country music"
+									value = "Country"
+								}
 							)
 						}
 					)
