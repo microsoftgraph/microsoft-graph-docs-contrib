@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of the most processed tasks, known as top tasks, for a specified time period in a tenant. The task definition is provided, along with numerical counts of total, successful, and failed runs. For information about workflows processed, see [insights: topWorkflowsProcessedSummary](identitygovernance-insights-topworkflowsprocessedsummary.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -26,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-toptasksprocessedsummary-permissions.md)]
 
+[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/insights/topTasksProcessedSummary
+GET /identityGovernance/lifecycleWorkflows/insights/topTasksProcessedSummary(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

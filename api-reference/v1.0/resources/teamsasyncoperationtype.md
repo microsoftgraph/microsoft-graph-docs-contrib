@@ -1,7 +1,7 @@
 ---
 title: "teamsAsyncOperationType enum type"
 description: "Types of teamsAsyncOperation."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: enumPageType
