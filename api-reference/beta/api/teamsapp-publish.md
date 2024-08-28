@@ -1,7 +1,7 @@
 ---
 title: "Publish teamsApp"
 description: "Publish an app to the Microsoft Teams app catalog."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

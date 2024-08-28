@@ -1,33 +1,38 @@
 ---
 title: "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
-description: "Learn how to migrate yor apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
+description: "Learn how to migrate your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 01/30/2024
+ms.date: 08/16/2024
 #customer intent: As a developer currently using Azure AD Graph, I want to know why I should migrate my applications to Microsoft Graph.
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
+> [!CAUTION]
+> Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. We recommend that you migrate your apps to Microsoft Graph.
 
-> [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated and is in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
->
-> June 30, 2023 will mark the end of the three-year deprecation period for Azure AD Graph. Before June 30, 2023, existing applications using Azure AD Graph will not be impacted. After June 30, 2023, Azure AD Graph will enter its retirement phase where we will retire it in incremental steps to allow you sufficient time to migrate your applications to Microsoft Graph APIs. The first step in this plan, and at a later date that we will announce, we will block the creation of any new applications using Azure AD Graph.
->
-> For more details on the latest announcement, see [Important: Azure AD Graph Retirement and Powershell Module Deprecation](https://aka.ms/aadgraphupdate).
+Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph. **We recommend that you migrate your apps to Microsoft Graph.**
+
+Key timelines in the retirement of Azure AD Graph is as follows:
+- 2019: Initial announcement of the deprecation of Azure AD Graph. Retirement set for June 30, 2023.
+- June 30, 2023: End of the three-year notice period for deprecation of Azure AD Graph. Azure AD Graph enters its retirement cycle.
+- August 31, 2024: New applications created after this date will not be able to use Azure AD Graph [unless they explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-until-june-30-2025). Existing applications will continue to work.
+- June 30, 2025: End of extended access to Azure AD Graph. Azure AD Graph will be fully retired.
+
+For more information on the latest announcement, see [Important: Update on Azure AD Graph API retirement](https://aka.ms/aadgraphupdate).
 
 ## Why use Microsoft Graph?
 
-Microsoft Graph represents our best-in-breed API surface. It offers a single unified endpoint to access Microsoft Entra services and Microsoft 365 services such as Microsoft Teams and Microsoft Intune. Microsoft Graph API's usage has more than doubled that of Azure AD Graph, and in the past two years we have added [167 new features](https://developer.microsoft.com/en-us/graph/changelog). All new functionalities will only be available through the Microsoft Graph.
+Microsoft Graph represents our best-in-breed API surface. It offers a single unified endpoint to access Microsoft Entra services and Microsoft 365 services such as Microsoft Teams and Microsoft Intune. Microsoft Graph's API surface [has more than doubled that of Azure AD Graph](https://developer.microsoft.com/en-us/graph/changelog). All new functionalities will only be available through the Microsoft Graph.
 
 Microsoft Graph is also more secure and resilient than Azure AD Graph.
 
-Microsoft Graph has all the capabilities that have been available in Azure AD Graph and new APIs like identity protection and authentication methods. Its client libraries offer built-in support for features like retry handling, secure redirects, transparent authentication, and payload compression.
+Microsoft Graph has all the capabilities that were available in Azure AD Graph and includes new APIs like identity protection, privileged identity management, lifecycle workflows, and multitenant permissions management. Its client libraries offer built-in support for features like retry handling, secure redirects, transparent authentication, and payload compression.
 
 Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 
@@ -43,10 +48,11 @@ Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 - Security features such as:
   - [Identity risk events](/graph/api/resources/riskdetection).
   - [Risky users](/graph/api/resources/riskyuser).
+- [Multicloud permissions and entitlements management capabilities](/graph/api/resources/permissions-management-api-overview).
 - [Client libraries and samples](/graph/) available on many more platforms and languages. Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
 - More [OData query capabilities](/graph/query-parameters) supported by resources such as users, groups, applications, and service principals.
 
-The rest of the articles in this section help you migrate your app from Azure AD Graph to Microsoft Graph. You'll find:
+The rest of the articles in this section help you migrate your app from Azure AD Graph to Microsoft Graph. It includes:
 
 - A checklist to help you plan the migration.
 - Guidance describing specific differences between the APIs.

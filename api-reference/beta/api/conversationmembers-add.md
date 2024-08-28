@@ -1,7 +1,7 @@
 ---
 title: "conversationMember: add"
 description: "Add members in bulk to a team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
