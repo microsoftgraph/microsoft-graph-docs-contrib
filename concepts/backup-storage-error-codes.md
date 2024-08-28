@@ -245,7 +245,7 @@ The error codes in this section apply to the following API:
 
 - [Create protectionRuleBase](/graph/api/protectionrulebase-post)
 
-The following table lists the possible error and response codes that can be returned.
+The following table lists the possible error and response code that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
@@ -257,7 +257,7 @@ The error codes in this section apply to the following API:
 
 - [Get protectionRuleBase](/graph/api/protectionrulebase-get)
 
-The following table lists the possible error and response codes that can be returned.
+The following table lists the possible error and response code that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
