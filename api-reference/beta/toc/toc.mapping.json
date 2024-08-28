@@ -875,7 +875,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
