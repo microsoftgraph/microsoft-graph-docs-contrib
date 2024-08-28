@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "callOptions"
+        }
+      ],
+      "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-18T06:24:28.2066497Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d8f96b79-6370-407f-a68a-733b41652b9e",
           "ApiChange": "Property",
           "ChangedApiName": "settings",
@@ -462,7 +480,7 @@
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta) operation to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistrationQuestionBase"
         }
-    ],
+      ],
       "Id": "496235c6-497f-40c1-8f0d-fd269abcfd62",
       "Cloud": "Prod",
       "Version": "beta",
@@ -505,7 +523,7 @@
           "Target": "virtualEventRegistration"
         },
         {
-        "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestion",
           "ChangeType": "Deletion",
@@ -576,7 +594,7 @@
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
-        "Target": "virtualEventRegistration"
+          "Target": "virtualEventRegistration"
         },
         {
           "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
@@ -824,7 +842,7 @@
     },
     {
       "ChangeList": [
-        {    
+        {
           "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
           "ApiChange": "Resource",
           "ChangedApiName": "chatrestrictions",
