@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryNetworkSetting resource type"
-description: "Represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery."
+description: "An abstract type that represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery.
+An abstract type that represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery.
+
+Base type of [cloudPcDisasterRecoveryAzureConnectionSetting](../resources/cloudpcdisasterrecoveryazureconnectionsetting.md) and [cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting](../resources/cloudpcdisasterrecoverymicrosofthostednetworksetting.md)
 
 ## Properties
 
