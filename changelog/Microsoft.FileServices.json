@@ -115,10 +115,10 @@
         {
           "Id": "06c626a9-2c81-4f85-b04c-a317aa1c9068",
           "ApiChange": "Parameter",
-          "ChangedApiName": "copy",
-          "ChangeType": "Change",
-          "Description": "Updated the [copy](https://learn.microsoft.com/en-us/graph/api/driveItem-copy?view=graph-rest-beta) method to include the **includeAllVersionHistory** parameter.",
-          "Target": "driveItem"
+          "ChangedApiName": "includeAllVersionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeAllVersionHistory` parameter to the [driveItem: copy](https://learn.microsoft.com/en-us/graph/api/driveItem-copy?view=graph-rest-beta) method.",
+          "Target": "copy"
         }
       ],
       "Id": "06c626a9-2c81-4f85-b04c-a317aa1c9068",
