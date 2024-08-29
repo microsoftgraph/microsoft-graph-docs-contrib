@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the partner's Entra tenant MFA usage data. Use this resource to determine if admins are adequately protected with MFA. 
+Represents the partner's Entra tenant MFA usage data. Use this resource to determine whether admins are adequately protected with MFA. 
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).
 
