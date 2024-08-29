@@ -1,7 +1,7 @@
 ---
 title: "Get primaryChannel"
 description: "Retrieve the navigation property of a team that allows access to its default General channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType

@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Application.ReadWrite.All and Policy.Read.All|Application.ReadWrite.All and Policy.ReadWrite.ApplicationConfiguration|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Application.ReadWrite.OwnedBy and Policy.Read.All|Application.ReadWrite.OwnedBy and Policy.ReadWrite.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All, Policy.Read.All and Application.ReadWrite.All|
+|Application|Application.ReadWrite.OwnedBy and Policy.Read.All|Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All, Application.ReadWrite.OwnedBy and Policy.ReadWrite.ApplicationConfiguration|
 

@@ -710,12 +710,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
     - name: Access package catalog
       items:
       - name: Access package catalog
@@ -1082,6 +1084,18 @@ items:
         href: ../../api/identitygovernance-lifecyclemanagementsettings-get.md
       - name: Update
         href: ../../api/identitygovernance-lifecyclemanagementsettings-update.md
+    - name: Insights
+      items:
+      - name: Insights
+        href: ../../resources/identitygovernance-insights.md
+      - name: Get top workflows summary
+        href: ../../api/identitygovernance-insights-topworkflowsprocessedsummary.md
+      - name: Get top tasks summary
+        href: ../../api/identitygovernance-insights-toptasksprocessedsummary.md
+      - name: Get workflows processed summary
+        href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
+      - name: Get workflows processed by category
+        href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
     - name: Complex types
       items:
       - name: Custom callout extension

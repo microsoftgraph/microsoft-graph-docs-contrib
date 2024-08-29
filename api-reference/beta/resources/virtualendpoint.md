@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Existing apps that use this feature with the **cloudPcSharedUseServicePlan** should be updated.
-
 Represents a container for APIs to manage Cloud PCs.
 
 Use the Cloud PC API to provision and manage virtual desktops for employees in an organization, or along with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
@@ -44,7 +41,6 @@ Inherits from [entity](../resources/entity.md).
 |[List external partner settings](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
 |[Create external partner setting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[List front line service plans](../api/virtualendpoint-list-frontlineserviceplans.md) |[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.|
-|[List shared use service plans](../api/virtualendpoint-list-shareduseserviceplans.md) (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|List properties and relationships of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects.|
 |[List bulk actions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
 |[Create bulk action](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 |[Retrieve tenant encryption setting](../api/virtualendpoint-retrievetenantencryptionsetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md)|Retrieve the [cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) associated with the current authenticated user.|
@@ -75,7 +71,6 @@ Inherits from [entity](../resources/entity.md).
 |snapshots|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Cloud PC snapshots.|
 |supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|Cloud PC supported regions.|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
-|sharedUseServicePlans (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Cloud PC shared-use service plans. The **sharedUseServicePlans** relationship is deprecated and stopped returning data on October 8, 2023. Going forward, use the **frontLineServicePlans** relationship.|
 |tenantEncryptionSetting|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) collection|Cloud PC encryption setting for a tenant. |
 
 ## JSON representation

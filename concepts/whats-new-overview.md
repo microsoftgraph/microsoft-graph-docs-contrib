@@ -18,22 +18,52 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## August 2024: New and generally available
 
+### Employee experience | Employee engagement
+
+Introduced the general availability of the Viva Engage API in Microsoft Graph. A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+
+- [Create a community](/graph/api/employeeexperience-post-communities)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
+- [Get a community](/graph/api/community-get)
+- [List communities](/graph/api/employeeexperience-list-communities)
+- [Update a community](/graph/api/community-update)
+- [Delete a community](/graph/api/community-delete)
+
+### People and workplace intelligence | Insights
+
+[Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
+
+### Reports | Microsoft 365 usage reports
+
+[Get](/graph/api/adminreportsettings-get) or [update](/graph/api/adminreportsettings-update) tenant-wide [settings](/graph/api/resources/adminreportsettings) to hide or show identifiable information for users, groups, or sites in Microsoft 365 usage reports.
+
 ### Teamwork and communications | Online meeting
 
 - Enabled the `$select` query parameter for the [Get callRecording](/graph/api/callrecording-get) method.
 - Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts) method.
+- Get all [recordings](/graph/api/onlinemeeting-getallrecordings) and [transcripts](/graph/api/onlinemeeting-getalltranscripts) from scheduled online meeting instances for which the specified user is the organizer. 
+- Get a set of [recording](/graph/api/callrecording-delta) and [transcript](/graph/api/calltranscript-delta) resources that were added for online meeting instances organized by the specified user.
+
+### Teamwork and communications | Settings
+
+Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork) and [userTeamwork](/graph/api/resources/userteamwork) resources.
 
 ## August 2024: New in preview only
 
-### People and workplace intelligence | Insights
+### Device and app management | Cloud PC
 
-[Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
+Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true#frontlinecloudpcaccessstate-values).
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the **allowBreakoutRooms**, **allowLiveShare**, **allowPowerPointSharing**, and **allowWhiteboard** to indicate whether breakout rooms, live share, PowerPoint live, and whiteboard features are enabled in an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) or [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true).
+- Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
+- Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
+
+### Teamwork and communications | Messaging
+
+Use the **displayName** property on the [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) resource to represent the reaction name [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Online meeting
 
@@ -42,11 +72,15 @@ Use the **allowBreakoutRooms**, **allowLiveShare**, **allowPowerPointSharing**, 
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta&preserve-view=true) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta&preserve-view=true) method.
 
+### Teamwork and communications | Settings
+
+Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork?view=graph-rest-beta&preserve-view=true) and [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resources.
+
 ## July 2024: New and generally available
 
 ### Backup Storage
 
-The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the see, [Backup Storage](/concepts/backup-storage-concept-overview.md).
+The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. For more information, see [Backup Storage](/graph/backup-storage-concept-overview).
 
 ### Customer booking
 
@@ -99,6 +133,11 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 
 Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
   
+The following objects are removed:
+
+- **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](/graph/api/resources/cloudpcfrontlineserviceplan?view=graph-rest-beta&preserve-view=true) resource.
+- **sharedUseServicePlans** relationship from the [virtualEndpoint](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the **frontLineServicePlans** relationship.
+
 ### People and workplace intelligence | Profile
 
 Use the **companyCode** on [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true) to get or set the legal entity number of the company or its subdivision.
@@ -111,6 +150,10 @@ Use the **summary** property to get details about what happened, impacted assets
 
 - Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
 - Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
+
+### Teamwork and communications | Shift management
+
+Added the ability to [start](/graph/api/workingtimeschedule-startworkingtime?view=graph-rest-beta&preserve-view=true) and [end](/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta&preserve-view=true) the working time of a specific user.
 
 ## Contribute to Microsoft Graph
 
