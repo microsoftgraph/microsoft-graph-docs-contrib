@@ -162,7 +162,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted. For example, if RSC permission is granted for user A but not for user B, the notifications are sent only for the Teams app installation events within user A's personal scope.
+> Notifications are delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted. For example, if RSC permission is granted for user A but not for user B, the notifications are sent only for the Teams app installation events within user A's personal scope.
 
 **To create a subscription using RSC without the `$filter` parameter:**
 
@@ -182,7 +182,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Notifications will be delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted.
+> Notifications are delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted.
 
 ### Notifications with resource data
 
