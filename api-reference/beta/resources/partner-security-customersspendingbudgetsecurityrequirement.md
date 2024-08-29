@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the customer spending budget security requirement in the partner security score. All customer's are expected to have a spending budget set by the partner to track and control Azure spending.
+Represents the security requirement to have a customer spending budget for all customers. All of a partner's customers are expected to have a spending budget set by the partner to track and control Azure spending.
 
 This requirement aggregates the partner's customers and tracks if they have an Azure spending budget. 
 
