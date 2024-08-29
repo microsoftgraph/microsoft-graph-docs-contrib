@@ -97,7 +97,7 @@ The following example shows a request to update a feedback outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/4bca096a-7de3-8675-5e86-2fa149923860/outcomes/ca05367a-b292-42d5-aff7-5d279feeace8
 Content-type: application/json
 
 {
@@ -162,22 +162,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('bf1f1963-05f6-4cba-903c-5892b4ce3bd7')/assignments('db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a')/submissions('4bca096a-7de3-8675-5e86-2fa149923860')/outcomes/$entity",
     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+    "lastModifiedDateTime": "2024-08-14T06:37:17.7703021Z",
     "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+    "publishedFeedback": null,
     "lastModifiedBy": {
+        "application": null,
+        "device": null,
         "user": {
-            "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+            "displayName": null
         }
     },
     "feedback": {
-        "feedbackDateTime": "2019-07-31T21:10:30.3231461Z",
+        "feedbackDateTime": "2024-08-14T06:37:17.7703021Z",
         "text": {
             "content": "This is feedback for the assignment as a whole.",
             "contentType": "text"
         },
         "feedbackBy": {
+            "application": null,
+            "device": null,
             "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878",
+                "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                "displayName": null
             }
         }
     }
