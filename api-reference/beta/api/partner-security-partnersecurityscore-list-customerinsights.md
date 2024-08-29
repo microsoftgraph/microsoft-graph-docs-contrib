@@ -1,5 +1,5 @@
 ---
-title: "List customerInsights for Partner"
+title: "List customerInsights"
 description: "Get a list of the customerInsight data and their properties."
 author: "evandontje-ms"
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ GET /security/partner/securityScore/customerInsights
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-Server-Side pagination is supported by following the `nextLink` provided in the API response through using the `$skiptoken` OData query parameter. Using Client-Side pagination with `$skip` and `$top` isn't supported.
+Server-side pagination is supported by following the `nextLink` provided in the API response when you use the `$skiptoken` OData query parameter. Using client-side pagination with `$skip` and `$top` isn't supported.
 
 ## Request headers
 
@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [customerInsight](../resources/partner-security-customerinsight.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) objects in the response body.
 
 ## Examples
 
