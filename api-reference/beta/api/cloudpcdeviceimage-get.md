@@ -130,6 +130,6 @@ Content-Type: application/json
     "status": "ready",
     "statusDetails": null,
     "errorCode": null,
-    "osBuildNumber": "10.0.22631.3593"
+    "osVersionNumber": "10.0.22631.3593"
 }
 ```

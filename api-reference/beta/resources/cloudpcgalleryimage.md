@@ -88,6 +88,6 @@ The following JSON representation shows the resource type.
   "skuName": "String",
   "startDate": "String (Date)",
   "status": "String",
-  "osBuildNumber": "String"
+  "osVersionNumber": "String"
 }
 ```

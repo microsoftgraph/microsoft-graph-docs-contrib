@@ -13,9 +13,9 @@
           {
             "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Property",
-            "ChangedApiName": "autopilot",
+            "ChangedApiName": "autopilotConfiguration",
             "ChangeType": "Addition",
-            "Description": "Added the **autopilot** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the **autopilotConfiguration** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
             "Target": "cloudPcProvisioningPolicy"
           },
           {
@@ -31,11 +31,11 @@
             "ApiChange": "Property",
             "ChangedApiName": "osVersionNumber",
             "ChangeType": "Addition",
-            "Description": "Added the **osVersionNumber** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource.",
+            "Description": "Added the **osVersionNumber** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource.",
             "Target": "cloudPcGalleryImage"
           }
         ],
-        "Id": "461cc3-80cf-4761-8c06-05972e729209",
+        "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-09-17T11:15:22.3134973Z",
