@@ -38,9 +38,7 @@ GET /security/partner/securityScore
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-Specifically, the `$expand` parameter is useful to retrieve optional properties like `requirements` or `history`.
+This method supports OData query parameters to customize the response. For example, the `$expand` parameter is useful to retrieve optional properties like **requirements** or **history**.See [OData query parameters](/graph/query-parameters) for more information and examples.
 
 ## Request headers
 
