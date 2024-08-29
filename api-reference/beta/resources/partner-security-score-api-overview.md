@@ -45,14 +45,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## Common use cases
 
-The following are requests for working with the partner security alert API in Microsoft Graph.
+The following are common requests for working with the partner security alert API in Microsoft Graph.
 
 | Use cases   | REST operations | Try it in Graph Explorer |
 |:---------------|:--------|:----------|
 |Get partner security score| [List](../api/partner-security-partnersecurityscore-get.md) | [https://graph.microsoft.com/beta/security/partner/securityScore](https://developer.microsoft.com/graph/graph-explorer?request=security/partner/securityScore&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 |List customer security insights |[List](../api/partner-security-partnersecurityscore-list-customerinsights.md)| [https://graph.microsoft.com/beta/security/partner/securityScore/customerInsights](https://developer.microsoft.com/graph/graph-explorer?request=security/partner/securityScore/customerInsights&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 
-## Next steps
+## Related content
 
 The partner security score API in Microsoft Graph provides a summary of your security posture and provides actions to improve. Follow these steps to get started:
 
