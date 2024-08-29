@@ -403,7 +403,6 @@
             "cloudPcProvisioningPolicy",
             "cloudPcReports",
             "cloudPcServicePlan",
-            "cloudPcSharedUseServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
@@ -798,7 +797,7 @@
       "name": "Employee experience",
       "childNodes": [
         {
-          "name": "Employee engagement (preview)",
+          "name": "Employee engagement",
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
@@ -876,7 +875,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {

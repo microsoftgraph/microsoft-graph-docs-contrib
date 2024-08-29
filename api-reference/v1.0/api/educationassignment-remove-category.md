@@ -46,7 +46,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ec98f158-341d-4fea-9f8c-14a250d489ac"],
-  "name": "add_educationcategory_to_educationassignment_classID_assignID"
+  "name": "remove_educationcategory_from_educationassignment"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
@@ -91,14 +91,10 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignmentResource"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
-
-{
-}
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
