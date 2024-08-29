@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveConnectionQualityReports"
-description: "Get the overall connection quality reports for all devices under current tenant during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metric such as last connection round trip time, last connection Client IP, last connection gateway, last connection protocol. Also retrieve regional connection quality weekly trend report with regionalConnectionQualityTrendReport report name, such as round trip time trend, available bandwidth trend, UDP utilization trend, dropped connection trend. Also retrieve regional connection quality report with regionalConnectionQualityInsightsReport report name, such as current slow connections count, current Low available bandwidth count, current avg low Udp connections count."
+description: "Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and drop connections."
 author: "bingqiangxiang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the overall connection quality reports for all devices under current tenant during a given time period, such as average round trip time (P50), average available bandwidth, UDP connection percentage, and other real time metric such as last connection round trip time, last connection Client IP, last connection gateway, last connection protocol. Also retrieve regional connection quality weekly trend report with regionalConnectionQualityTrendReport report name, such as round trip time trend, available bandwidth trend, UDP utilization trend, dropped connection trend. Also retrieve regional connection quality report with regionalConnectionQualityInsightsReport report name, such as current slow connections count, current Low available bandwidth count, current avg low Udp connections count.
+Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and drop connections.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
