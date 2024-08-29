@@ -90,9 +90,9 @@ Content-type: application/json
 }
 ```
 
----
-
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -150,6 +150,8 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/work
 
 ### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,6 +195,8 @@ At any time, you can monitor the status of the workflows and their associated ta
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "tutorial_lifecycle_workflows_mover_list_userProcessingResults"
@@ -201,9 +205,9 @@ At any time, you can monitor the status of the workflows and their associated ta
 GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/userProcessingResults
 ```
 
----
-
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -241,6 +245,7 @@ Content-Type: application/json
 
 #### Request
 
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -250,9 +255,9 @@ Content-Type: application/json
 GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/userProcessingResults/summary(startDateTime=2024-03-01T00:00:00Z,endDateTime=2024-03-30T00:00:00Z)
 ```
 
----
-
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
