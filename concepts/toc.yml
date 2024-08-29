@@ -387,6 +387,8 @@ items:
     items:
     - name: Overview
       href: backup-storage-concept-overview.md
+    - name: Error codes
+      href: backup-storage-error-codes.md
   - name: Calendar
     items:
     - name: Overview
