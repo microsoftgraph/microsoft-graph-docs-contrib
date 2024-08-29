@@ -1,6 +1,6 @@
 ---
 title: "partnerSecurityScore resource type"
-description: "Represents an overview of the partner security score."
+description: "Represents the security score for a partner which helps them understand their security posture"
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the aggregate security score for the partner along with history of score changes, detailed customer insights, and requirement score information.
+Represents the security score for the partner which helps Cloud Solution Provider (CSP) partners understand their security posture and their customer's security posture. The scoe includes an aggregate score along with history of score changes, detailed customer insights, and requirement score information.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/partner-security-partnersecurityscore-get.md)|[microsoft.graph.partner.security.partnerSecurityScore](../resources/partner-security-partnersecurityscore.md)|Read the properties and relationships of a [microsoft.graph.partner.security.partnerSecurityScore](../resources/partner-security-partnersecurityscore.md) object.|
-|[List customer insights](../api/partner-security-partnersecurityscore-list-customerinsights.md)|[microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) collection|Get the customer insight resources from the **customerInsights** navigation property.|
-|[List history](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Get the security score history resources from the **history** navigation property.|
+|[List customer insights](../api/partner-security-partnersecurityscore-list-customerinsights.md)|[microsoft.graph.partner.security.customerInsight](../resources/partner-security-customerinsight.md) collection|Get a list of the **customerInsight** data to learn more about the partner's customer security posture.|
+|[List history](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Lists the history of security score changes for the partner..|
 |[List requirements](../api/partner-security-partnersecurityscore-list-requirements.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) collection|Get the security requirement resources from the **requirements** navigation property.|
 
 ## Properties

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This requirement aggregates the partner's Security Alerts response time data to determine if the partner is responding quickly to alerts. 
+This requirement shows if the partner is responding quickly to address new [security alerts](../resources/security-alert.md).
 
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).

@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date the history entry was created.|
 |id|String|The unique identifier for the history entry.|
 |score|Double|The score recorded at the time.|
-|totalRequirementsCount|Int64|The total The number of requirements at the time.|
+|totalRequirementsCount|Int64|The total number of requirements at the time.|
 
 ## Relationships
 None.

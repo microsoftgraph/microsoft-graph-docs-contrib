@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource aggregates the partner's customers and their mfa policy compliance.
+This resource represents the customer MFA-enforced security requirement in the partner security score based on aggregate data from the partner's customers and their mfa policy compliance.
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).
 

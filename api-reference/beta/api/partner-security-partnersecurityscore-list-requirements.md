@@ -1,13 +1,13 @@
 ---
-title: "List securityRequirement objects"
-description: "Get a list of the securityRequirement objects and their properties."
+title: "List requirements"
+description: "Get a list of the security requirements to understand if the requirement is compliant and how to improve the score."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
 ---
 
-# List securityRequirement objects
+# List requirement 
 
 Namespace: microsoft.graph.partner.security
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [securityRequirement](../resources/partner-security-securityrequirement.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) objects in the response body.
 
 ## Examples
 

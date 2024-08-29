@@ -23,7 +23,7 @@ Represents insights into the security score for a partner's customer.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mfa|[microsoft.graph.partner.security.customerMfaInsight](../resources/partner-security-customermfainsight.md)|Details about the customer's MFA posture.|
+|mfa|[microsoft.graph.partner.security.customerMfaInsight](../resources/partner-security-customermfainsight.md)|Details of the customer's Entra tenant MFA policy configuration and usage.|
 |tenantId|String|The unique identifier for the customer.|
 
 ## Relationships

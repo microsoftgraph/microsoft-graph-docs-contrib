@@ -1,5 +1,5 @@
 ---
-title: "List securityScoreHistory objects"
+title: "List securityScoreHistory"
 description: "Lists the history of security score changes for the partner."
 author: "evandontje-ms"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
 ---
 
-# List securityScoreHistory objects
+# List securityScoreHistory
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects and their properties.
+Get a list of [securityScoreHistory](../resources/partner-security-securityscorehistory.md) entries.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects in the response body.
 
 ## Examples
 

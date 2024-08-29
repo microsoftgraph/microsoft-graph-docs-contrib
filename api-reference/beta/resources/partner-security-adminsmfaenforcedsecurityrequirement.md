@@ -1,6 +1,6 @@
 ---
 title: "adminsMfaEnforcedSecurityRequirement resource type"
-description: "Represents the partner admin mfa enforcement security requirements from the partner security score."
+description: "Represents the partner admin mfa enforcement security requirement from the partner security score."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the partner's Entra tenant MFA usage data. Use this resource to determine whether admins are adequately protected with MFA. 
+Represents the partner admin mfa enforcement security requirement. The requirement is calculated based on Entra tenant MFA usage data. Use this resource to determine whether admins are adequately protected with MFA. 
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).
 
@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.partner.security.securityRequirement](../resource
 |mfaConditionalAccessPolicyStatus|microsoft.graph.partner.security.policyStatus|The status of conditional access policies in the partner tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |mfaEnabledAdminsCount|Int64|The number of admins who are using MFA.|
 |mfaEnabledUsersCount|Int64|The number of users who are using MFA.|
-|requirementType|microsoft.graph.partner.security.securityRequirementType|The type of the requirement. This property's value isaAlways to `mfaEnforcedForAdminsOfCustomers` for this resource. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `mfaEnforcedForAdmins`, `mfaEnforcedForAdminsOfCustomers`, `securityAlertsPromptlyResolved`, `securityContactProvided`, `spendingBudgetSetForCustomerAzureSubscriptions`, `unknownFutureValue`.|
+|requirementType|microsoft.graph.partner.security.securityRequirementType|The type of the requirement. The value is always `mfaEnforcedForAdminsOfCustomers` for this requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `mfaEnforcedForAdmins`, `mfaEnforcedForAdminsOfCustomers`, `securityAlertsPromptlyResolved`, `securityContactProvided`, `spendingBudgetSetForCustomerAzureSubscriptions`, `unknownFutureValue`.|
 |score|Int64|The score received for this requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
 |securityDefaultsStatus|microsoft.graph.partner.security.policyStatus|The status of security defaults in the partner tenant. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
 |state|microsoft.graph.partner.security.securityRequirementState|Indicates whether the requirement is in preview or is fully released. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md). The possible values are: `active`, `preview`, `unknownFutureValue`.|

@@ -14,34 +14,22 @@ Namespace: microsoft.graph.partner.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Partner Center ecosystem provides a security score to indirect providers or direct bill partners in the Cloud Solution Provider (CSP), Value Added Reseller, or Advisor programs. The goal of the score and requirements is to help partners understand the security posture of their tenant and their customer's tenants. The partner security score builds on the Identity and Microsoft 365 security scores to provide specific suggestions to their scenario.
-The [Partner Security Score API](../resources/partner-security-partnersecurityscore.md) is a pivotal tool designed to empower Microsoft partners by providing a quantifiable measure of their security performance. This API facilitates partners in enhancing their security posture by offering a comprehensive security score based on their adherence to Microsoft's security requirements.
+The [partner security score API](../resources/partner-security-partnersecurityscore.md) is a pivotal tool designed to empower Microsoft partners by providing a quantifiable measure of their security performance. This API facilitates partners in enhancing their security posture by offering a comprehensive security score based on their adherence to Microsoft's security requirements.
 
 ## Objectives
 
-The primary objectives of the Security Score API include:
+The primary objectives of the security score API include:
  
-* __Quantifying Security Performance:__ Offering partners a numerical score that reflects their current security status.  
-* __Guiding Security Enhancements with Actionable Insights:__ Providing actionable insights and recommendations to help partners bolster their security measures.  
-* __Monitoring Security Evolution:__ Enabling partners to track their security improvements over time, fostering a culture of continuous security enhancement.  
+* __Quantifying security performance:__ Offering partners a numerical score that reflects their current security status.  
+* __Guiding security enhancements with actionable insights:__ Providing actionable insights and recommendations to help partners bolster their security measures.  
+* __Monitoring security evolution:__ Enabling partners to track their security improvements over time, fostering a culture of continuous security enhancement.  
  
-Use Microsoft Graph [Partner Security Score API](../resources/partner-security-partnersecurityscore.md) to retrieve the score and insights into customer security posture.
+Use Microsoft Graph [partner security score API](../resources/partner-security-partnersecurityscore.md) to retrieve the score and insights into customer security posture.
 The partner security score API is defined in the OData subnamespace microsoft.graph.partners.security.
  
 > **Note:** In order to take actions for the security requirements, choose the action URL provisioned in the API response to go to the relevant UI.
 
 The partner security score API is defined in the OData subnamespace `microsoft.graph.partners.security`.
-
-## Authorization
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-[!INCLUDE [permissions-table](../includes/permissions/partnersecurityscore-get-permissions.md)]
-
-<!-- Start of: Link to ZT guidance: H2 section -->
-
-[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
-
-<!-- End of: Link to ZT guidance -->
 
 ## Common use cases
 
