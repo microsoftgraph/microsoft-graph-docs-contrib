@@ -67,12 +67,6 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "cloudpcreportsthis.retrieveConnectionQualityReports"
-}
--->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/retrieveConnectionQualityReports
 Content-Type: application/json
