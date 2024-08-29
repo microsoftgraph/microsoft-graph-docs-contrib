@@ -50,8 +50,8 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |filter|String|OData `$filter` syntax. Supported filters include: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
-|groupBy|String collection|Specify how to group the reports. If used, must have the same contents as the **select** parameter.|
-|orderBy|String collection|Specify how to sort the reports.|
+|groupBy|String collection|Specifies how to group the reports. If used, must have the same contents as the **select** parameter.|
+|orderBy|String collection|Specifies how to sort the reports.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|The number of records to skip.|
