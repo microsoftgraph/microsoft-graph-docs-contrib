@@ -2,7 +2,7 @@
 title: "applicationType enum type"
 description: "Possible types of Application"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

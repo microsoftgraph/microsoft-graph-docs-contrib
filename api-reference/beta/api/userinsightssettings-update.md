@@ -1,6 +1,6 @@
 ---
 title: "Update userInsightsSettings"
-description: "Update the properties of a userInsightsSettings object."
+description: "Update the privacy settings for item insights and meeting hours insights of a user."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
@@ -32,7 +32,7 @@ PATCH /me/settings/itemInsights
 PATCH /users/{userId}/settings/itemInsights
 ```
 
->**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
+>**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the `User.ReadWrite.All` permission. To learn more, see [Permissions](/graph/permissions-reference).
 
 ## Request headers
 
@@ -43,22 +43,21 @@ PATCH /users/{userId}/settings/itemInsights
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabled|Boolean| `true` if user's **itemInsights** and meeting hours insights are enabled; `false` if user's **itemInsights** and meeting hours insights are disabled. Default is `true`. Optional.|
+|isEnabled|Boolean| `True` if the user's **itemInsights** and meeting hours insights are enabled; `false` if the user's **itemInsights** and meeting hours insights are disabled. The default value is `true`. Optional.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [userInsightsSettings](../resources/userinsightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [userInsightsSettings](../resources/userinsightssettings.md) object in the response body.
 
 ## Example 
 
 ### Request
 
-The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable his item insights and meeting hours insights.
-
+The following example shows how a user updates the **isEnabled** privacy setting to disable their item insights and meeting hours insights.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -24,7 +24,7 @@ configuration := &graphsolutions.SolutionsBackupRestoreServiceAppItemActivateReq
 	Headers: headers,
 }
 requestBody := graphsolutions.NewActivatePostRequestBody()
-effectiveDateTime , err := time.Parse(time.RFC3339, "2024-04-19T12-01-03.45Z")
+effectiveDateTime , err := time.Parse(time.RFC3339, "2024-04-19T12:01:03.45Z")
 requestBody.SetEffectiveDateTime(&effectiveDateTime) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

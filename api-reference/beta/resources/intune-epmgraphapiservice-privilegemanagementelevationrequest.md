@@ -2,7 +2,7 @@
 title: "privilegeManagementElevationRequest resource type"
 description: "These are elevation approval requests for EPM support arbitrated scenario initiated by IW user that admins can take action on."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

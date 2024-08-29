@@ -21,7 +21,7 @@ Represents the tenant-level service status of the backup service.
 |Property|Type|Description|
 |:---|:---|:---|
 |backupServiceConsumer|[backupServiceConsumer](../resources/servicestatus.md#backupserviceconsumer-values)|The type of consumer. The possible values are: `unknown`, `firstparty`, `thirdparty`, `unknownFutureValue`.|
-|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
+|disableReason|[disableReason](../resources/servicestatus.md#disablereason-values)|The reason the service is disabled. The possible values are: `none`, `controllerServiceAppDeleted`, `invalidBillingProfile`, `userRequested`, `unknownFutureValue`.|
 |gracePeriodDateTime|DateTimeOffset|The expiration time of the grace period.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the entity.|
@@ -35,26 +35,27 @@ Represents the tenant-level service status of the backup service.
 |none | Default value. No consumer is using the service.|
 |firstparty | Microsoft Admin Center is the backup service control app.|
 |thirdparty | An ISV app is the backup service control app.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ### disableReason values
 
 |Member | Description |
 |:------|:------------|
 |none | No reason specified.|
-|invalidBillingProfile | Billing profile or Azure subscription status does not exist or is not healthy.|
+|controllerServiceAppDeleted | Controller service app is deleted for this consumer.|
+|invalidBillingProfile | Billing profile or Azure subscription status doesn't exist or is not healthy.|
 |userRequested | Service is disabled manually via user action.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ### backupServiceStatus values
 
 |Member | Description |
 |:------|:------------|
-|disabled | Service is disabled. This is the default state. The service is not enabled for the tenant.|
+|disabled | Service is disabled. This is the default state. The service isn't enabled for the tenant.|
 |enabled | Service is enabled. A new protection policy can be created or modified and restore is allowed.|
 |protectionChangeLocked | Service is locked with no change in protection allowed. A new protection policy can't be created or updated. No new protection items can be added or removed.|
 |restoreLocked | Service is locked with no protection change and no restore. The protection policy can't be created or updated. No new protection items can be added or removed. No restore can be performed.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

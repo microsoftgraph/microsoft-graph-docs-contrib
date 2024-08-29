@@ -160,6 +160,7 @@
         {
           "name": "Restore artifact",
           "resources": [
+            "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
             "mailboxRestoreArtifact",
             "siteRestoreArtifact"
@@ -175,6 +176,7 @@
         }
       ],
       "complexTypes": [
+        "artifactQuery",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -401,7 +403,6 @@
             "cloudPcProvisioningPolicy",
             "cloudPcReports",
             "cloudPcServicePlan",
-            "cloudPcSharedUseServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
@@ -739,9 +740,12 @@
         "educationSynchronizationError",
         "educationSynchronizationProfile",
         "educationSynchronizationProfileStatus",
+        "readingAssignmentSubmission",
+        "reflectCheckInResponse",
         "relatedContact"
       ],
       "complexTypes": [
+        "challengingWord",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -793,7 +797,7 @@
       "name": "Employee experience",
       "childNodes": [
         {
-          "name": "Employee engagement (preview)",
+          "name": "Employee engagement",
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
@@ -871,7 +875,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -919,6 +924,7 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
+            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -1576,9 +1582,11 @@
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
+                  "shouldSort": true,
                   "resources": [
                     "authenticationMethodsPolicy",
                     "emailAuthenticationMethodConfiguration",
+                    "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
@@ -1631,7 +1639,8 @@
               "resources": [
                 "awsAuthorizationSystem",
                 "azureAuthorizationSystem",
-                "gcpAuthorizationSystem"
+                "gcpAuthorizationSystem",
+                "authorizationSystemTypeService"
               ],
               "childNodes": [
                 {
@@ -1642,8 +1651,7 @@
                       "resources": [
                         "awsAuthorizationSystemTypeAction",
                         "awsPolicy",
-                        "awsAuthorizationSystemResource",
-                        "authorizationSystemTypeService"
+                        "awsAuthorizationSystemResource"
                       ],
                       "childNodes": [
                         {
@@ -1666,8 +1674,7 @@
                       "resources": [
                         "azureAuthorizationSystemTypeAction",
                         "azureAuthorizationSystemResource",
-                        "azureRoleDefinition",
-                        "authorizationSystemTypeService"
+                        "azureRoleDefinition"
                       ],
                       "childNodes": [
                         {
@@ -1691,8 +1698,7 @@
                       "resources": [
                         "gcpAuthorizationSystemTypeAction",
                         "gcpAuthorizationSystemResource",
-                        "gcpRole",
-                        "authorizationSystemTypeService"
+                        "gcpRole"
                       ],
                       "childNodes": [
                         {
@@ -1805,12 +1811,11 @@
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
-            "microsoft.graph.networkaccess.remoteNetwork",
-            "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+            "microsoft.graph.networkaccess.remoteNetwork"
           ],
           "childNodes": [
             {
-              "name": "Branch site",
+              "name": "Branch site (deprecated)",
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.connectivityConfigurationLink"
@@ -1831,7 +1836,9 @@
                 "microsoft.graph.networkaccess.forwardingPolicy",
                 "microsoft.graph.networkaccess.forwardingPolicyLink",
                 "microsoft.graph.networkaccess.policyRule",
-                "microsoft.graph.networkaccess.forwardingRule"
+                "microsoft.graph.networkaccess.forwardingRule",
+                "microsoft.graph.networkaccess.m365ForwardingRule",
+                "microsoft.graph.networkaccess.privateAccessForwardingRule"
               ]
             },
             {
@@ -1848,6 +1855,13 @@
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
                 "microsoft.graph.networkaccess.remoteNetworkConnectivityConfiguration"
+              ]
+            },
+            {
+              "name": "Traffic logs",
+              "resources": [
+                "microsoft.graph.networkaccess.networkAccessTraffic",
+                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2686,6 +2700,17 @@
       ],
       "childNodes": [
         {
+          "name": "Approvals",
+          "resources": [
+            "approvalItem",
+            "approvalSolution",
+            "approvalItemRequest",
+            "approvalItemResponse",
+            "approvalItemViewPoint",
+            "approvalOperation"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -2871,7 +2896,9 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule",
+            ""
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -2895,6 +2922,7 @@
             "timeClockSettings",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }

@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ConversationThread
 {
@@ -20,11 +21,15 @@ var requestBody = new ConversationThread
 			"originalEndTimeZone" , "originalEndTimeZone-value"
 		},
 		{
-			"responseStatus" , new 
+			"responseStatus" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Response = "",
-				Time = "datetime-value",
-			}
+				{
+					"response", new UntypedString("")
+				},
+				{
+					"time", new UntypedString("datetime-value")
+				},
+			})
 		},
 		{
 			"iCalUId" , "iCalUId-value"

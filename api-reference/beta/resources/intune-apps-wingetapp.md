@@ -2,7 +2,7 @@
 title: "winGetApp resource type"
 description: "A MobileApp that is based on a referenced application in a WinGet repository."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

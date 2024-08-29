@@ -48,6 +48,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -129,7 +131,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
          "displayName":"Ryan"
       }
    },
-   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "createdDateTime":"2015-06-19T12:01:03.45Z",
    "lastModifiedBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -141,7 +143,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
          "displayName":"Rian"
       }
    },
-   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
    "retentionSettings" : [
       {
           "interval": "R/PT10M",

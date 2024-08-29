@@ -32,7 +32,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

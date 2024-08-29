@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileNineWorkEasConfiguration"
 description: "Create a new androidWorkProfileNineWorkEasConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -20,6 +20,9 @@ Represents timeclock settings for a [schedule](schedule.md).
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | approvedLocation | [geoCoordinates](geocoordinates.md)  |The approved location of the **timeClock**. |
 
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -2,7 +2,7 @@
 title: "Delete iosLobAppProvisioningConfiguration"
 description: "Deletes a iosLobAppProvisioningConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

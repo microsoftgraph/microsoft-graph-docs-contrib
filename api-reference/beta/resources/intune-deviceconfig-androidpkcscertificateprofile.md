@@ -2,7 +2,7 @@
 title: "androidPkcsCertificateProfile resource type"
 description: "Android PKCS certificate profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

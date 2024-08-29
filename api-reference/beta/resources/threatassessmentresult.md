@@ -24,6 +24,10 @@ Represents a threat assessment result item.
 |message|String|The result message for each threat assessment.|
 |resultType|threatAssessmentResultType|The threat assessment result type. Possible values are: `checkPolicy` (only for mail assessment), `rescan`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

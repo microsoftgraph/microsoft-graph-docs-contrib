@@ -21,6 +21,10 @@ Represents tenant-wide settings for the Universal Print service.
 |documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service converts documents into a format compatible with the printer (xps to pdf) when needed.|
 |printerDiscoverySettings|[printerDiscoverySettings](../resources/printerdiscoverysettings.md)|Specifies settings that affect printer discovery when using Universal Print.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON shows a representation of the resource.

@@ -500,6 +500,7 @@ Content-type: application/json
     "reactions": [
         {
             "reactionType": "💯",
+            "displayName": "Hundred points",
             "reactionContentUrl": null,
             "createdDateTime": "2024-02-14T22:07:36.3Z",
             "user": {
@@ -515,6 +516,7 @@ Content-type: application/json
         },
         {
             "reactionType": "custom",
+            "displayName": "microsoft_teams",
             "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
             "createdDateTime": "2024-02-14T22:07:02.288Z",
             "user": {

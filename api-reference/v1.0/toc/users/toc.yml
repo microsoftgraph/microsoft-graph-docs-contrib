@@ -91,9 +91,9 @@ items:
     - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
     - name: Restore deleted item
-      href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete item
       href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete item
+      href: ../../api/directory-deleteditems-delete.md
   - name: Drive
     items:
     - name: Get drive

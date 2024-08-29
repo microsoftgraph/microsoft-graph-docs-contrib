@@ -17,7 +17,7 @@ Represents the display of the attribute collection page that is part of a self-s
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the page.|
-|inputs|[authenticationAttributeCollectionInputConfiguration](../resources/authenticationattributecollectioninputconfiguration.md) collection|The display configuration of attributes being collected on the attribute collection page.|
+|inputs|[authenticationAttributeCollectionInputConfiguration](../resources/authenticationattributecollectioninputconfiguration.md) collection|The display configuration of attributes being collected on the attribute collection page. You must specify all attributes that you want to retain, otherwise they're removed from the user flow.|
 |title|String|The title of the attribute collection page.|
 
 ## Relationships

@@ -32,6 +32,10 @@ Namespace: microsoft.graph
 | office365Inactive        | Int64  | The number of inactive users on Microsoft 365.     |
 | reportPeriod             | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

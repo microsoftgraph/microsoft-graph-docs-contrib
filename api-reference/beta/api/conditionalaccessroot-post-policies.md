@@ -20,14 +20,10 @@ Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type                        | Permissions (from least to most privileged)                    |
-|:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+[!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
 
 > [!NOTE]
 > This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and may require consent to multiple permissions.
@@ -308,7 +304,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaconditionalAccessBetaDocs/$metadata#conditionalAccess/policies/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
     "id": "c98e6c3d-f6ca-42ea-a927-773b6f12a0c2",
     "displayName": "Block access to EXO non-trusted regions.",
     "createdDateTime": "2019-10-14T19:53:11.3705634Z",

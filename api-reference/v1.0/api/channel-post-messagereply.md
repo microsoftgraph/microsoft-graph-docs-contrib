@@ -1,7 +1,7 @@
 ---
 title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

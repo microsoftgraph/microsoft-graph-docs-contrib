@@ -10,11 +10,11 @@ from msgraph_beta.generated.models.workbook_chart_axis import WorkbookChartAxis
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WorkbookChartAxis(
-	major_unit = MajorUnit(
+	major_unit = UntypedNode(
 	),
-	maximum = Maximum(
+	maximum = UntypedNode(
 	),
-	minimum = Minimum(
+	minimum = UntypedNode(
 	),
 )
 

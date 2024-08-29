@@ -46,7 +46,7 @@ If the maximum number of customers (**maximumAttendeesCount**) allowed in the [s
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
 
-- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is invalid, that customer isn't included in the appointment object.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following example shows a request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment doesn't involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,12 +71,17 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.bookingAppointment",
     "customerTimeZone": "America/Chicago",
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,	
     "smsNotificationsEnabled": true,
-    "endDateTime": {
+    "end": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:30:00.0000000+00:00",
         "timeZone": "UTC"
     },
+    "isCustomerAllowedToManageBooking": true,
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
@@ -138,7 +143,7 @@ Content-type: application/json
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
         "timeZone": "UTC"
@@ -247,6 +252,10 @@ Content-type: application/json
     "isLocationOnline": true,
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
     "smsNotificationsEnabled": true,
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,	
     "customerTimeZone": "America/Chicago",
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
@@ -258,14 +267,15 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
+    "isCustomerAllowedToManageBooking": true,
     "staffMemberIds": [
       "8ee1c803-a1fa-406d-8259-7ab53233f148"
     ],
-    "startDateTime": {
+    "start": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-01T12:30:00.0000000Z",
         "timeZone": "UTC"
     },

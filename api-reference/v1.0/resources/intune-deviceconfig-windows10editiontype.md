@@ -2,7 +2,7 @@
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

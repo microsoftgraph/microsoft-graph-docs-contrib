@@ -2,7 +2,7 @@
 title: "Update androidManagedStoreAppConfiguration"
 description: "Update the properties of a androidManagedStoreAppConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
