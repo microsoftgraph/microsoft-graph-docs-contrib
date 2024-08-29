@@ -1901,28 +1901,6 @@
           "name": "Partner security",
           "resources": [
             "microsoft.graph.partner.security.partnerSecurityScore"
-          ],
-          "childNodes": [
-            {
-              "name": "Partner Security Score",
-              "overview": "../../resources/partner-security-score-api-overview.md",
-              "keywords": [
-                "Security Score",
-                "Partner Center",
-                "CSP"
-              ],
-              "resources": [
-                "microsoft.graph.partner.security.partnerSecurityScore",
-                "microsoft.graph.partner.security.securityScoreHistory",
-                "microsoft.graph.partner.security.securityRequirement",
-                "microsoft.graph.partner.security.responseTimeSecurityRequirement",
-                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
-                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
-                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
-                "microsoft.graph.partner.security.customerInsight",
-                "microsoft.graph.partner.security.customerMfaInsight"
-              ]
-            }
           ]
         }
       ]
@@ -3066,6 +3044,10 @@
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
+    },
+    {
+      "resource": "partnerSecurityScore",
+      "overview": "../../resources/partner-security-score-api-overview.md"
     }
   ]
 }
