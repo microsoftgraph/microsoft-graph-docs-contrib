@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUserCountTrend"
-description: "Get the trend in daily of Copilot usage for Microsoft 365 enabled users and active users over a selected period."
+description: "Get the trend in the daily number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the daily number trend of Copilot for Microsoft 365 enabled users and active users over a selected period.
+Get the trend in the daily number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
