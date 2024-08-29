@@ -280,7 +280,7 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
      ```
 
     >[!Note]
-    > * The **RequiredSearchAnnotations** property marks the property annotations as mandatory and cannot be changed while setting up the connector. The example above sets all the properties as *searchable* and *retrievable* mandatorily, however you can skip assigning **RequiredSearchAnnotations** to properties.
+    > * The **RequiredSearchAnnotations** property marks the property annotations as mandatory and unchangeable during the setup of the connector. The previous example sets all properties as *searchable* and *retrievable* mandatorily; however, you can choose not to set the **RequiredSearchAnnotations** on one or more properties.
     > * The **DefaultSearchAnnotations** property marks the property annotations as default and can be changed while setting up the connector.
 
 3. Add the following using directive in ConnectionManagementServiceImpl.cs.
