@@ -9,6 +9,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **isDeltaRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
           "Target": "callOptions"
+        },
+        {
+          "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "outgoingCallOptions"
         }
       ],
       "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
