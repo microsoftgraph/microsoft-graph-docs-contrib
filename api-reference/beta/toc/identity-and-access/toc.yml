@@ -4284,3 +4284,22 @@ items:
         href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
       - name: Unified role
         href: ../../resources/unifiedrole.md
+- name: Partner Security
+  items:
+  - name: Partner security score
+    items:
+    - name: Partner security score
+      href: ../../resources/partner-security-partnersecurityscore.md
+    - name: Get
+      href: ../../api/partner-security-partnersecurityscore-get.md
+    - name: List customer insights
+      href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+    - name: List history
+      href: ../../api/partner-security-partnersecurityscore-list-history.md
+    - name: List requirements
+      href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+  - name: Partner Security Score (preview)
+    displayName: Security Score, Partner Center, CSP
+    items:
+    - name: Overview
+      href: ../../resources/partner-security-score-api-overview.md
