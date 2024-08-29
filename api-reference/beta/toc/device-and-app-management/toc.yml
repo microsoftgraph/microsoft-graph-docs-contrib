@@ -283,6 +283,8 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: retrieveCrossRegionDisasterRecoveryReport
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
+    - name: Get Cloud PC performance related reports.
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
