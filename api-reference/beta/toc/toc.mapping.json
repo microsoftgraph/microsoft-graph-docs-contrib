@@ -1898,13 +1898,13 @@
           ]
         },
         {
-          "name": "Partner Security",
+          "name": "Partner security",
           "resources": [
             "microsoft.graph.partner.security.partnerSecurityScore"
           ],
           "childNodes": [
             {
-              "name": "Partner Security Score (preview)",
+              "name": "Partner Security Score",
               "overview": "../../resources/partner-security-score-api-overview.md",
               "keywords": [
                 "Security Score",
@@ -1912,15 +1912,15 @@
                 "CSP"
               ],
               "resources": [
-                "partnerSecurityScore",
-                "securityScoreHistory",
-                "securityRequirement",
-                "responseTimeSecurityRequirement",
-                "adminsMfaEnforcedSecurityRequirement",
-                "customersSpendingBudgetSecurityRequirement",
-                "customersMfaEnforcedSecurityRequirement",
-                "customerInsight",
-                "customerMfaInsight"
+                "microsoft.graph.partner.security.partnerSecurityScore",
+                "microsoft.graph.partner.security.securityScoreHistory",
+                "microsoft.graph.partner.security.securityRequirement",
+                "microsoft.graph.partner.security.responseTimeSecurityRequirement",
+                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customerInsight",
+                "microsoft.graph.partner.security.customerMfaInsight"
               ]
             }
           ]
