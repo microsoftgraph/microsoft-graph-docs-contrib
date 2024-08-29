@@ -13,6 +13,11 @@ var requestBody = new AzureDataLakeConnector
 {
 	OdataType = "#microsoft.graph.industryData.azureDataLakeConnector",
 	DisplayName = "CSV connector",
+	FileFormat = new FileFormatReferenceValue
+	{
+		OdataType = "microsoft.graph.industryData.fileFormatReferenceValue",
+		Code = "schoolDataSyncV1",
+	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

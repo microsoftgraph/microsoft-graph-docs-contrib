@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/planner-overview.md
@@ -5,29 +8,37 @@ items:
   items:
   - name: Planner plan
     href: ../../resources/plannerplan.md
-  - name: Get plan
+  - name: Create
+    href: ../../api/planner-post-plans.md
+  - name: Get
     href: ../../api/plannerplan-get.md
+  - name: Update
+    href: ../../api/plannerplan-update.md
+  - name: Delete
+    href: ../../api/plannerplan-delete.md
+  - name: Archive plan
+    href: ../../api/plannerplan-archive.md
+  - name: Unarchive plan
+    href: ../../api/plannerplan-unarchive.md
+  - name: Move to container
+    href: ../../api/plannerplan-movetocontainer.md
   - name: List plan buckets
     href: ../../api/plannerplan-list-buckets.md
   - name: List plan tasks
     href: ../../api/plannerplan-list-tasks.md
-  - name: Update plan
-    href: ../../api/plannerplan-update.md
-  - name: Delete plan
-    href: ../../api/plannerplan-delete.md
   - name: Get delta
     href: ../../api/plannerplan-delta.md
-  - name: Move to container
-    href: ../../api/plannerplan-movetocontainer.md
 - name: Planner task
   items:
   - name: Planner task
     href: ../../resources/plannertask.md
-  - name: Get task
+  - name: Create
+    href: ../../api/planner-post-tasks.md
+  - name: Get
     href: ../../api/plannertask-get.md
-  - name: Update task
+  - name: Update
     href: ../../api/plannertask-update.md
-  - name: Delete task
+  - name: Delete
     href: ../../api/plannertask-delete.md
   - name: Get delta
     href: ../../api/plannertask-delta.md
@@ -59,20 +70,22 @@ items:
   items:
   - name: Planner roster
     href: ../../resources/plannerroster.md
-  - name: Create roster
+  - name: Create
     href: ../../api/planner-post-rosters.md
-  - name: Get roster
+  - name: Get
     href: ../../api/plannerroster-get.md
-  - name: Delete roster
+  - name: Delete
     href: ../../api/plannerroster-delete.md
-  - name: List roster's members
+  - name: List members of roster
     href: ../../api/plannerroster-list-members.md
-  - name: Add a member to roster
+  - name: Add member to roster
     href: ../../api/plannerroster-post-members.md
   - name: List plans in roster
     href: ../../api/plannerroster-list-plans.md
   - name: List user's plans in rosters
     href: ../../api/planneruser-list-rosterplans.md
+  - name: Assign sensitivity label
+    href: ../../api/plannerroster-assignsensitivitylabel.md
 - name: Planner user
   items:
   - name: Planner user
@@ -145,24 +158,14 @@ items:
         href: ../../api/plannerplanconfiguration-get.md
       - name: Update
         href: ../../api/plannerplanconfiguration-update.md
-      - name: List
-        href: ../../api/plannerplanconfiguration-list-localizations.md
-      - name: Create
-        href: ../../api/plannerplanconfiguration-post-localizations.md
     - name: Planner plan configuration localization
       items:
       - name: Planner plan configuration localization
         href: ../../resources/plannerplanconfigurationlocalization.md
       - name: List
         href: ../../api/plannerplanconfiguration-list-localizations.md
-      - name: Create
-        href: ../../api/plannerplanconfiguration-post-localizations.md
-      - name: Get
-        href: ../../api/plannerplanconfigurationlocalization-get.md
       - name: Update
-        href: ../../api/plannerplanconfigurationlocalization-update.md
-      - name: Delete
-        href: ../../api/plannerplanconfiguration-delete-localizations.md
+        href: ../../api/plannerplanconfiguration-update.md
     - name: Planner task configuration
       items:
       - name: Planner task configuration

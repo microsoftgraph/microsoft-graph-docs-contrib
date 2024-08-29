@@ -13,8 +13,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddPostRequestBody();
 $requestBody->setIndex(3);
-$valuesJson1 = new Json();
-$valuesArray []= $valuesJson1;
+$values1 = new UntypedNode();
+$valuesArray []= $values1;
 $requestBody->setValues($valuesArray);
 
 

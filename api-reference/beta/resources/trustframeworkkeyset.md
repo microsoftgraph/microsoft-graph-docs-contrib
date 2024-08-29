@@ -27,8 +27,8 @@ Inherits from [entity](../resources/entity.md).
 |[Generate key](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Generate a key in keyset.|
 |[Upload secret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a string based secret.|
 |[Get active key](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Get currently active key in the keyset.|
-|[Upload certificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a X.509 certificate.|
-|[uploadPkcs12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a PKCS12 format certificate.|
+|[Upload X.509 certificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a X.509 certificate.|
+|[Upload PKCS12 certificate](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a PKCS12 format certificate.|
 
 ## Properties
 |Property|Type|Description|

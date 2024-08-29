@@ -3,7 +3,7 @@ title: "custodian: activate"
 description: "Reactivate a custodian in a case."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a custodian that has been released from a case to make them part of the case again. For details, see [Manage custodians in an Advanced eDiscovery case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
+Activate a custodian that was released from a case. This method makes the custodian part of the case again. For details, see [Manage custodians in an Advanced eDiscovery case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

@@ -63,7 +63,7 @@ GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

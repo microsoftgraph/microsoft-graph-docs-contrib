@@ -1,7 +1,7 @@
 ---
 title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "getAllManagedDeviceWindowsOSImages function"
 description: "Intune Osprovisioninggraphservice Manageddevicewindowsoperatingsystemimage Getallmanageddevicewindowsosimages Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

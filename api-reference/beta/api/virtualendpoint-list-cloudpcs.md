@@ -146,6 +146,7 @@ Content-Type: application/json
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
       "provisioningType": "dedicated",
+      "deviceRegionName": "eastus2",
       "diskEncryptionState": "encryptedUsingPlatformManagedKey"
     }
   ]
@@ -245,6 +246,7 @@ Content-Type: application/json
             "servicePlanType": "enterprise",
             "diskEncryptionState": "notAvailable",
             "provisioningType": "dedicated",
+            "deviceRegionName": "eastus2",
             "statusDetails": {
                 "code": "intuneEnrollFailed",
                 "message": "We can’t complete MEM enrollment of this Cloud PC. Check MEM policy settings and retry. If that doesn’t work, contact Customer support.",
@@ -284,6 +286,7 @@ Content-Type: application/json
             "servicePlanType": "enterprise",
             "diskEncryptionState": "notAvailable",
             "provisioningType": "dedicated",
+            "deviceRegionName": "eastus2",
             "statusDetails": {
                 "code": "intuneEnrollFailed",
                 "message": "We can’t complete MEM enrollment of this Cloud PC. Check MEM policy settings and retry. If that doesn’t work, contact Customer support.",

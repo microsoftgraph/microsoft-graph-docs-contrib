@@ -3,7 +3,7 @@ title: "Reopen eDiscoveryCase"
 description: "Reopen an eDiscoveryCase that was closed."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

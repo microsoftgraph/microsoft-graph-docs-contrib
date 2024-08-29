@@ -2,7 +2,7 @@
 title: "macOSEnterpriseWiFiConfiguration resource type"
 description: "MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # macOSEnterpriseWiFiConfiguration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile.
 
@@ -52,6 +52,7 @@ Inherits from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswif
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected. Inherited from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected. Inherited from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file. Inherited from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Inherited from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md). Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the Wi-Fi endpoint (router). Possible values are: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`, `teap`.|
 |eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type. Possible values are: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
@@ -125,6 +126,7 @@ Here is a JSON representation of the resource.
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
   "proxyAutomaticConfigurationUrl": "String",
+  "deploymentChannel": "String",
   "preSharedKey": "String",
   "eapType": "String",
   "eapFastConfiguration": "String",

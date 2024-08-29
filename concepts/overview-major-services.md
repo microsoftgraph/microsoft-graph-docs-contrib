@@ -128,8 +128,9 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Customer booking (preview) | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
+| Customer booking | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
 | Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimization of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
+| Backup storage (preview) | SharePoint Online, Exchange, OneDrive for Business | Enables partners to build customized versions of their applications integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental or malicious deletion or overwriting of content by employees. Business continuity assurance is a critical concern for many companies. Microsoft 365 Backup Storage APIs provide peace of mind by delivering reliable, performant and at-scale backup/restore confidence. | [Backup Storage API overview](backup-storage-concept-overview.md) |
 
 ## Related content
 

@@ -3,7 +3,7 @@ title: "itemPublication resource type"
 description: "itemPublication resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: resourcePageType
 ---
 
@@ -46,7 +46,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

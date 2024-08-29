@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Email
 ---
 
 # emailAuthenticationMethod resource type
@@ -30,13 +31,13 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |Property|Type|Description|
 |:---|:---|:---|
 |emailAddress|String|The email address registered to this user.|
-|id|String|The identifier of the email address registered to this user.|
+|id|String|The identifier of the email address registered to this user. The ID is always `3ddfcfc8-9383-446f-83cc-3ab9be4be18f`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

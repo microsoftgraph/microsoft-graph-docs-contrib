@@ -2,7 +2,7 @@
 title: "macOSCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # macOSCustomConfiguration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource.
 
@@ -46,7 +46,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |payloadName|String|Name that is displayed to the user.|
 |payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
-|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|

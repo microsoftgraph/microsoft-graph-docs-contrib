@@ -3,7 +3,7 @@ title: "transformationAttribute resource type"
 description: "Represents an attribute used to support transformations."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

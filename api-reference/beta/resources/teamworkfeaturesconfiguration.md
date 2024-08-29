@@ -26,7 +26,7 @@ Represents the Microsoft Teams client configuration details for a Teams-enabled 
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkFeaturesConfiguration"

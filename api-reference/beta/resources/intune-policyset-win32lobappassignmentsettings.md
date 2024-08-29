@@ -2,7 +2,7 @@
 title: "win32LobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Win32 LOB mobile app to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # win32LobAppAssignmentSettings resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Contains properties used to assign an Win32 LOB mobile app to a group.
 
@@ -27,7 +27,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|The reboot settings to apply for this app assignment.|
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
 |deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md)|The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. Possible values are: `notConfigured`, `foreground`.|
-|autoUpdateSettings|[win32LobAppAutoUpdateSettings](../resources/intune-shared-win32lobappautoupdatesettings.md)|The auto-update settings to apply for this app assignment.|
+|autoUpdateSettings|[win32LobAppAutoUpdateSettings](../resources/intune-policyset-win32lobappautoupdatesettings.md)|The auto-update settings to apply for this app assignment.|
 
 ## Relationships
 None

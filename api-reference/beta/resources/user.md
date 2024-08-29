@@ -30,127 +30,130 @@ This resource supports:
 
 | Method | Return Type | Description |
 |:------ |:----------- |:----------- |
-| [List users](../api/user-list.md) | [user](user.md) collection | Get a list of user objects. |
-| [Create user](../api/user-post-users.md) | [user](user.md) | Create a new user object. |
-| [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
-| [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
-| [Delete user](../api/user-delete.md) | None | Delete user object. |
+| [List](../api/user-list.md) | [user](user.md) collection | Get a list of user objects. |
+| [Create](../api/user-post-users.md) | [user](user.md) | Create a new user object. |
+| [Get](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
+| [Update](../api/user-update.md) | [user](user.md) | Update user object. |
+| [Delete](../api/user-delete.md) | None | Delete user object. |
 | [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
-| [changePassword](../api/user-changepassword.md) | None | Update your own password. |
+| [Change password](../api/user-changepassword.md) | None | Update your own password. |
+| [Validate password](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
+| [Retry service provisioning](../api/user-retryserviceprovisioning.md) | None | Retry the user service provisioning. |
 | [Convert external user to internal member user](../api/user-convertexternaltointernalmemberuser.md) | [user](user.md) | Convert an externally authenticated user into an internal member user. |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. |
-| [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
+| [Invalidate all refresh tokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. **DO NOT USE. Use user: revokeSignInSessions method instead.**  |
+| [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This operation forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
+| [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request made by a company administrator to export an organizational user's data. |
 | **App role assignments**|||
-| [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
+| [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
+| [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
+| [Remove](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from a user. |
 | [List appRoleAssignedResources](../api/user-list-approleassignedresources.md) | [servicePrincipal](serviceprincipal.md) collection | Get the apps that a user has an app role assignment either directly or through group membership. |
-| [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
-| [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from a user. |
 | **Calendar** |||
-| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
-| [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
-| [Create event](../api/user-post-events.md) | [event](event.md) | Create a new event by posting to the events collection. |
-| [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Find time and locations to meet based on attendee availability, location, or time constraints. |
-| [findRooms](../api/user-findrooms.md) | [emailaddress.md](emailaddress.md) collection | Get all the meeting rooms in the user's tenant or a specific room list. |
-| [findRoomLists](../api/user-findroomlists.md) | [emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant. |
-| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified period. |
 | [List calendars](../api/user-list-calendars.md) | [Calendar](calendar.md) collection | Get a Calendar object collection. |
-| [List calendarGroups](../api/user-list-calendargroups.md) | [CalendarGroup](calendargroup.md) collection | Get a CalendarGroup object collection. |
-| [List calendarView](../api/user-list-calendarview.md) | [event](event.md) collection | Get an event object collection. |
+| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
+| [List calendar groups](../api/user-list-calendargroups.md) | [CalendarGroup](calendargroup.md) collection | Get a CalendarGroup object collection. |
+| [Create calendar group](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
 | [List events](../api/user-list-events.md) | [event](event.md) collection | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters. |
-| [reminderView](../api/user-reminderview.md) | [Reminder](reminder.md) collection | Return a list of calendar reminders within the start and end times specified.|
-| **Contacts**|||
-| [Create contact](../api/user-post-contacts.md)| [contact](contact.md) | Create a new contact by posting to the contacts collection. |
-| [Create contactFolder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new contactFolder by posting to the contactFolders collection. |
-| [List contacts](../api/user-list-contacts.md) | [contact](contact.md) collection | Get a contact collection from the default contacts folder of the signed-in user. |
-| [List contactFolders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default contacts folder of the signed-in user. |
+| [Create event](../api/user-post-events.md) | [event](event.md) | Create a new event by posting to the events collection. |
+| [Find meeting times](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Find time and locations to meet based on attendee availability, location, or time constraints. |
+| [Find rooms](../api/user-findrooms.md) | [emailaddress.md](emailaddress.md) collection | Get all the meeting rooms in the user's tenant or a specific room list. |
+| [Find room lists](../api/user-findroomlists.md) | [emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant. |
+| [Get free/busy schedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified period. |
+| [List calendar view](../api/user-list-calendarview.md) | [event](event.md) collection | Get an event object collection. |
+| [Reminder view](../api/user-reminderview.md) | [Reminder](reminder.md) collection | Return a list of calendar reminders within the start and end times specified.|
+| **Cloud PC**|||
+|[List cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+| **Delegated permission grants** | | |
+| [List delegated permission grants](../api/user-list-oauth2permissiongrants.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Retrieve a list of delegated permissions granted to enable a client application to access an API on behalf of the user. |
 | **Directory objects**|||
-| [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
-| [exportPersonalData](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request made by a company administrator to export an organizational user's data. |
-| [getByIds](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of IDs. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The check is transitive. |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups the user is a member of. The check is transitive. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units the user is a member of. The check is transitive. |
-| [Get transitiveReports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
-| [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
-| [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
-| [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that the user owns from the ownedDevices navigation property. |
-| [List ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects owned by the user from the ownedObjects navigation property. |
-| [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are registered for the user from the registeredDevices navigation property. |
+| [Get by IDs](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of IDs. |
+|[Get delta for directory object](../api/directoryobject-delta.md)|[directoryObject](directoryObject.md) collection| Get incremental changes for directory objects such as [users](../api/user-delta.md), [groups](../api/group-delta.md), [applications](../api/application-delta.md), and [service principals](../api/serviceprincipal-delta.md). Filtering is required on either the **id** of the derived type or the derived type itself. For more information on delta queries, see the [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).|
+| [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The check is transitive. |
+| [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups the user is a member of. The check is transitive. |
+| [Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive. |
+| [Get member objects](../api/directoryobject-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units the user is a member of. The check is transitive. |
+| [Get transitive reports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
+| [List created objects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
+| [List owned devices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that the user owns from the ownedDevices navigation property. |
+| [List owned objects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects owned by the user from the ownedObjects navigation property. |
+| [List deleted groups owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that owned by a user. |
+| [List registered devices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are registered for the user from the registeredDevices navigation property. |
 | [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) collection | Get the scoped-role administrative units memberships for this user. |
-| [List usageRights](../api/user-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the user. |
-| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This operation forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
-| [List deleted users](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the users deleted in the tenant in the last 30 days. |
-| [Get deleted user](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
-| [Restore deleted user](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
-| [Permanently delete user](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
+| [List usage rights](../api/user-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the user. |
+| [List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the users deleted in the tenant in the last 30 days. |
+| [Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
 | **Drive** |||
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
 | **Groups** |||
-| [List joinedTeams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
-| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
-| [List transitiveMemberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
+| [List joined teams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
+| [List member of](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
+| [List transitive member of](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Insights** |||
 | [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Calculated insight that returns the list of items trending around the user. |
 | [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Calculated insight that returns the list of files used with a user. |
+| **License management** |||
+| [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
+| [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
+| [Reprocess license assignment](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
 | **Mail** |||
-| [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) | Create a Focused Inbox override for a sender identified by an SMTP address. |
-| [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new mailFolder by posting to the mailFolders collection |
-| [Create message](../api/user-post-messages.md) | [message](message.md) | Create a message by posting to the messages collection. |
-| [Create messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Create a messageRule object by specifying a set of conditions and actions. |
-| [getMailTips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
-| [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
+| [List mail folders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
+| [Create mail folder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new mailFolder by posting to the mailFolders collection |
 | [List messages](../api/user-list-messages.md) | [message](message.md) collection | Get all the messages in the signed-in user's mailbox. |
+| [Create message](../api/user-post-messages.md) | [message](message.md) | Create a message by posting to the messages collection. |
 | [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the focused inbox overrides that a user sets up to classify messages from certain senders in specific ways. |
+| [Create override](../api/inferenceclassification-post-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) | Create a Focused Inbox override for a sender identified by an SMTP address. |
 | [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
+| [Create rule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Create a messageRule object by specifying a set of conditions and actions. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
+| [Get mail tips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
 | **Notes** |||
-| [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
-| **Open extensions** |||
-| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing resource. |
-| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name. |
+| [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
 | **Org hierarchy** |||
 | [Assign manager](../api/user-post-manager.md) | None | Assign a user's manager. |
 | [Get manager](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property. |
 | [Remove manager](../api/user-delete-manager.md) | None | Remove the manager of a user. |
-| [List directReports](../api/user-list-directreports.md) | [directoryObject](directoryobject.md) collection | Get the users and contacts that report to the user from the directReports navigation property. |
+| [List direct reports](../api/user-list-directreports.md) | [directoryObject](directoryobject.md) collection | Get the users and contacts that report to the user from the directReports navigation property. |
 | **Outlook settings** |||
-| [Create Outlook category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Create an outlookCategory object in the user's master list of categories. |
-| [Get supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server. |
-| [Get supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that are supported for the user, as configured on the user's mailbox server. |
 | [Get user mailbox settings](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Get the user's mailboxSettings. |
-| [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories defined for the user. |
-| [Translate Exchange Ids](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | [Update user mailbox settings](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Enable, configure, or disable one or more mailboxSettings for a user. |
+| [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories defined for the user. |
+| [Create Outlook category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Create an outlookCategory object in the user's master list of categories. |
+| [Get supported languages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server. |
+| [Get supported time zones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that are supported for the user, as configured on the user's mailbox server. |
+| [Translate Exchange IDs](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | **Password-based single sign-on credentials** |||
-| [getPasswordSingleSignOnCredentials](../api/user-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md) collection|Get the list of password-based single sign-on credentials for given user. Passwords are never returned, and instead are always returned as null or empty strings.|
-| [deletePasswordSingleSignOnCredentials](../api/user-deletepasswordsinglesignoncredentials.md)|None|Delete password-based single sign-on credential for a given service principal that is associated to a given user.|
+| [Get](../api/user-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md) collection|Get the list of password-based single sign-on credentials for given user. Passwords are never returned, and instead are always returned as null or empty strings.|
+| [Delete](../api/user-deletepasswordsinglesignoncredentials.md)|None|Delete password-based single sign-on credential for a given service principal that is associated to a given user.|
 | **People** |||
-| [List people](../api/user-list-people.md) | [person](person.md) | Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships. |
-| **Photo** |||
-| [Get photo](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
-| [Update profilephoto](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. |
-| [Delete profilephoto](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant, including the signed-in user or the specified group. |
+| [List](../api/user-list-people.md) | [person](person.md) | Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships. |
+| **Personal contacts**|||
+| [List contacts](../api/user-list-contacts.md) | [contact](contact.md) collection | Get a contact collection from the default contacts folder of the signed-in user. |
+| [Create contact](../api/user-post-contacts.md)| [contact](contact.md) | Create a new contact by posting to the contacts collection. |
+| [List contact folders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default contacts folder of the signed-in user. |
+| [Create contact folder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new contactFolder by posting to the contactFolders collection. |
+| **Profile photo** |||
+| [Get](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
+| [Update](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. |
+| [Delete](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant, including the signed-in user or the specified group. |
 | **Planner** |||
-| [Get plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Retrieve the properties and relationships of a plannerUser object. |
-| [List favoritePlans](../api/planneruser-list-favoriteplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans that are marked as favorite by a user. |
-| [List recentPlans](../api/planneruser-list-recentplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans recently viewed by a user. |
+| [List favorite plans](../api/planneruser-list-favoriteplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans that are marked as favorite by a user. |
+| [List recent plans](../api/planneruser-list-recentplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans recently viewed by a user. |
 | [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user.|
-| [Update plannerUser](../api/planneruser-update.md) | None | Update the properties of a plannerUser object. |
+| [Update settings](../api/planneruser-update.md) | None | Update the properties of a plannerUser object. |
 | **Profile** |||
-| [Get profile](../api/profile-get.md) | [profile](profile.md) | Retrieve the properties and relationships of a profile object for a given user. |
-| [Delete profile](../api/profile-delete.md) | None | Delete profile object from a user's account. |
-| **Schema extensions** |||
-| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom-typed data to a resource. |
+| [Get](../api/profile-get.md) | [profile](profile.md) | Retrieve the properties and relationships of a profile object for a given user. |
+| [Delete](../api/profile-delete.md) | None | Delete profile object from a user's account. |
 | **Sponsors** |||
-| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
-| [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
-| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
-| [List invitedBy](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the user or service principal that invited the specified user into the tenant.|
+| [Assign](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
+| [List](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [Remove](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
+| [List invited by](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the user or service principal that invited the specified user into the tenant.|
 | **Teamwork** |||
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
@@ -158,23 +161,15 @@ This resource supports:
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
 |[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
-|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
 |[List permission grants](../api/user-list-permissiongrants.md)| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). |
 | **To-do tasks** |||
-|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
-|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
 |[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
+|[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
 |[List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
+|[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
 | **User settings** |||
-| [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
-| [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
-| **Outlook tasks** (deprecated)|||
-| [Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
-| [List tasks](../api/outlookuser-list-tasks.md) (deprecated) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
-| **Cloud PC**|||
-|[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
-|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
-
+| [Get](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
+| [Update](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
 
 ## Properties
 
@@ -219,7 +214,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
-| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit, which requires a role scoped to the restricted administrative unit to manage. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the *Directory.Write.Restricted* permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.|
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -350,7 +345,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |events|[event](event.md) collection|The user's events. The default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Supports `$expand`. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
-|insights|[itemInsights](iteminsights.md) | Read-only. Nullable.|
+|insights|[itemInsights](iteminsights.md) | Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. Read-only. Nullable.|
 |invitedBy|[directoryObject](directoryobject.md) | The user or service principal that invited the user.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
@@ -374,6 +369,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
+|solutions|[userSolutionRoot](../resources/usersolutionroot.md)| Represents a user's custom solution entity. Read-Only. Nullable.|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
@@ -383,7 +379,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

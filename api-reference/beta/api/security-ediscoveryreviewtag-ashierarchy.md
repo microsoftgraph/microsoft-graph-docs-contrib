@@ -3,7 +3,7 @@ title: "ediscoveryReviewTag: asHierarchy"
 description: "List tag as hierarchy*"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

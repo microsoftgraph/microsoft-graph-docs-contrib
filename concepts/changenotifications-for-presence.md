@@ -13,6 +13,9 @@ Change notifications in Microsoft Graph enable you to subscribe to changes in [u
 
 Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview).
 
+> [!NOTE]
+> Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
+
 ## Permissions
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
@@ -32,9 +35,11 @@ The following table lists the types of presence changes you can subscribe to. Fo
 | Single user presence changes                  | `communications/presences/{id}`                                |Updated                |
 | Bulk user presence changes (maximum 650 user IDs) | `communications/presences?$filter=id in ('{id}', '{id}', ...)` | Updated                |
 
-### Subscribe to presence changes 
+## Subscribe to presence changes 
 
 To subscribe to presence changes, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
+
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications.
 
 ### Example: Single user presence subscription payloads
 

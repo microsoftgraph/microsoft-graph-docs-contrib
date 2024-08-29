@@ -3,7 +3,7 @@ title: "Add noncustodialDataSource"
 description: "Add noncustodialSources by posting to the noncustodialSources collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/06d52284-ed81-
 Content-Type: application/json
 
 {
-    "@odata.id": "https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246"
+    "@odata.id": "https://graph.microsoft.com/beta/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246"
 }
 ```
 

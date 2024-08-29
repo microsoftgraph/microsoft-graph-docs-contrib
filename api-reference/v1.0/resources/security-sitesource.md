@@ -3,7 +3,7 @@ title: "siteSource resource type"
 description: "The container for a site associated with a custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 

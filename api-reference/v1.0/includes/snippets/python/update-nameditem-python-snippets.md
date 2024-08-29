@@ -6,7 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.workbook_named_item import WorkbookNamedItem
-from msgraph.generated.models.json import Json
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +13,7 @@ request_body = WorkbookNamedItem(
 	type = "type-value",
 	scope = "scope-value",
 	comment = "comment-value",
-	value = Json(
+	value = UntypedNode(
 	),
 	visible = True,
 )

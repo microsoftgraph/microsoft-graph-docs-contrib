@@ -1,7 +1,7 @@
 ---
 title: "Payment models and licensing requirements for Microsoft Teams APIs"
 description: "Learn about the payment models and license requirements that apply to some Microsoft Teams APIs in Microsoft Graph: model=A, model=B, and evaluation mode."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ---

@@ -29,32 +29,31 @@ This resource supports:
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
-|[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
-|[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
-|[Update application](../api/application-update.md) | None |Update application object. |
-|[Upsert application](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
-|[Delete application](../api/application-delete.md) | None |Delete application object. |
-|[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
-| [List deleted applications owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
-|[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
-|[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
-|[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
-|[delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
-|[Create call](../api/application-post-calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
-|[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|
+|[List](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
+|[Create](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
+|[Get](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
+|[Update](../api/application-update.md) | None |Update application object. |
+|[Upsert](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
+|[Delete](../api/application-delete.md) | None |Delete application object. |
+|[Get delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
+|**Deleted items**| | |
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an application. |
+| [List deleted items owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the applications deleted in the tenant in the last 30 days and that are owned by a user. |
 |**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password or secret to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password or secret from an application.|
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
 |[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
 |**Owners**| | |
-|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application. |
-|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals. |
-|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
+|[List](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application. |
+|[Add](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals. |
+|[Remove](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
 |**Verified publisher**| | |
-|[Set verified publisher](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
-|[Unset verified publisher](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
+|[Set](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
+|[Unset](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
 
 ## Properties
 
@@ -68,7 +67,7 @@ This resource supports:
 | appId | String | The unique identifier for the application that is assigned by Microsoft Entra ID. Not nullable. Read-only. Alternate key. Supports `$filter` (`eq`). |
 |applicationTemplateId | String | Unique identifier of the [applicationTemplate](../resources/applicationtemplate.md). Supports `$filter` (`eq`, `not`, `ne`). Read-only. `null` if the app wasn't created from an application template.|
 | appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
-|authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The collection of authentication behaviors set for the application. Authentication behaviors are unset by default and must be explicitly enabled (or disabled). Returned only on `$select`. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors to avoid unverified use of email claims for user identification or authorization](/graph/applications-authenticationbehaviors).|
+|authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The collection of breaking change behaviors related to token issuance that are configured for the application. Authentication behaviors are unset by default (`null`) and must be explicitly enabled or disabled. Nullable. Returned only on `$select`. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors to avoid unverified use of email claims for user identification or authorization](/graph/applications-authenticationbehaviors).|
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
 |defaultRedirectUri|String|The default redirect URI. If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI. Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on. The value must match one of the configured redirect URIs for the application.|
@@ -84,6 +83,7 @@ This resource supports:
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where the application is configured without specifying a redirect URI. In those cases Microsoft Entra ID interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | logo | Stream | The main logo for the application. Not nullable. |
+| nativeAuthenticationApisEnabled | nativeAuthenticationApisEnabled | Specifies whether the Native Authentication APIs are enabled for the application. The possible values are: `none`and `all`. Default is `none`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication). |
 | notes | String | Notes relevant for the management of the application. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Microsoft Entra ID allows POST requests, as opposed to GET requests. The default is `false`, which specifies that only GET requests are allowed. |
 | onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| Represents the set of properties required for [configuring Application Proxy](/graph/application-proxy-configure-api) for this application. Configuring these properties allows you to publish your on-premises application for secure remote access. |
@@ -172,6 +172,7 @@ The following JSON representation shows the resource type.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "nativeAuthenticationApisEnabled": "String",
   "notes": "String",
   "oauth2RequiredPostResponse": false,
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},

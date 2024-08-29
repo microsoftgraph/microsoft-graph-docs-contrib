@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 # List emailMethods
 Namespace: microsoft.graph
 
-Retrieve a list of a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties. This API will return only a single object in the collection as only one email method can be set for a user.
+Retrieve a list of a user's [email Authentication Method](../resources/emailauthenticationmethod.md) objects and their properties. This call only returns a single object referenced by ID `3ddfcfc8-9383-446f-83cc-3ab9be4be18f` as only one email method can be set on users.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

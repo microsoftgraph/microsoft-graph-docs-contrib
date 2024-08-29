@@ -57,7 +57,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
 | **Operations** |||
 |[List operations](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) collection | Get the list of async operations that ran or are running on the chat.|
-|[Get operation on chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Get a single async operation that ran or is running on the chat.|
+|[Get operation on chat](../api/teamsasyncoperation-get.md) | [teamsAsyncOperation](teamsAsyncOperation.md) | Get a single async operation that ran or is running on the chat.|
 | **Pinned messages** |||
 |[List pinned messages](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
 |[Pin message](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|

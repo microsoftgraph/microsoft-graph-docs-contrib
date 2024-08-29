@@ -22,8 +22,8 @@ Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decisi
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List decisions](../api/accessreviewinstance-list-decisions.md) (from an access review instance) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects and their properties.|
-|[List decisions](../api/accessreviewstage-list-decisions.md) (from a stage of an access review instance)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a stage of an access review instance.|
+|[List instance decisions](../api/accessreviewinstance-list-decisions.md) (from an access review instance) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects and their properties.|
+|[List stage decisions](../api/accessreviewstage-list-decisions.md) (from a stage of an access review instance)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a stage of an access review instance.|
 |[Get](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Read the properties and relationships of an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.|
 |[Update](../api/accessreviewinstancedecisionitem-update.md) | None. | For any accessReviewInstanceDecisionItems that the calling user is assigned a reviewer on, calling user can record a decision by patching the decision object. |
 |[Filter by current user](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Retrieves all [accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) objects where the calling use is the reviewer for a given [accessReviewInstance](accessreviewinstance.md).|
@@ -52,7 +52,7 @@ Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decisi
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 | instance |[accessReviewInstance](accessreviewinstance.md) | There's exactly one accessReviewInstance associated with each decision. The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on. |
 | insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
@@ -60,7 +60,7 @@ Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decisi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

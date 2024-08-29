@@ -1,6 +1,6 @@
 ---
 title: "chat: markChatReadForUser"
-description: "Mark a chat as read till the current time, or the last message received or sent."
+description: "Mark a chat as read until the current time, or until the most recent message was received or sent."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"

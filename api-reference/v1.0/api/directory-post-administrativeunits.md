@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directory_post_administrativeunits" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-post-administrativeunits-permissions.md)]
 
-To create an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/administrativeUnits/allProperties/allTasks` role permission. *Privileged Role Administrator* is the least privileged role for this operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

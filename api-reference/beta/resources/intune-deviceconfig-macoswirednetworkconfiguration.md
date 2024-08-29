@@ -2,7 +2,7 @@
 title: "macOSWiredNetworkConfiguration resource type"
 description: "MacOS wired network configuration profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # macOSWiredNetworkConfiguration resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 MacOS wired network configuration profile.
 
@@ -51,6 +51,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |nonEapAuthenticationMethodForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this wired network using their real username is displayed as 'anonymous'.|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the deployment channel type used to deploy the configuration profile. Possible values are deviceChannel, userChannel. Possible values are: `deviceChannel`, `userChannel`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -117,6 +118,7 @@ Here is a JSON representation of the resource.
   ],
   "authenticationMethod": "String",
   "nonEapAuthenticationMethodForEapTtls": "String",
-  "enableOuterIdentityPrivacy": "String"
+  "enableOuterIdentityPrivacy": "String",
+  "deploymentChannel": "String"
 }
 ```

@@ -3,7 +3,7 @@ title: "List campaign users"
 description: "List users of a tenant and their online actions in a training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Domain();
 $requestBody->setIsDefault(true);
-$requestBody->setSupportedServices(['Email', 'OfficeCommunicationsOnline', 	]);
+$requestBody->setSupportedServices(['Email', 'OfficeCommunicationsOnline', 'CustomUrlDomain', 	]);
 
 $result = $graphServiceClient->domains()->byDomainId('domain-id')->patch($requestBody)->wait();
 

@@ -8,41 +8,23 @@ ms.subservice: "data-connect"
 
 # Troubleshoot Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
+Microsoft Graph Data Connect (Data Connect) enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Data Connect.
 
-For more questions, reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
+## Issues with finding an application in the Azure portal experience
 
-## Issues with service principal check when running your first pipeline
+If you can't find an application in the Data Connect Azure portal experience, verify that you have Microsoft Entra application ownership, as it is required to update and delete app registrations with Data Connect.
 
-If you're having issues running your pipelines for the first time, verify that you have defined the owners for the Source Linked Service as follows:
+## Issues with approving an application
 
-- The service principal's owner must be a valid user account within the tenant, not another service principal. 
+To approve an application in the [Microsoft 365 admin center](https://www.microsoft.com/microsoft-365/business/office-365-administration), the user must be a global admin. An E5 license isn't required.
 
-- The owner’s account must have:
+## Renewing an application consent
 
-    - A valid mailbox, either via an Exchange Online license or an Exchange Online plan within an Office 365 or Microsoft 365 license.
-
-    - An Office 365 or Microsoft 365 E5 subscription assigned. No specific services within the license need to be enabled unless the user doesn't have a separate Exchange Online license, in which case the Exchange Online plan must be enabled.  
-        **Note:** This account doesn't need the Global Admin role enabled. This is only required for Approver accounts that approve requests through the admin center.
-
-    - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
-
-- If the owning member is no longer valid in a tenant's system, pipelines fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
-
-## PAM approver issues
-
-If you're having issues approving jobs within your tenant for your specified pipeline runs or extractions, verify that the approvers in your tenant meet the following criteria. Certain privileges must be granted to designated approvers to successfully approve jobs.
-
-- Approvers must be active user accounts within the tenant, not other service principals or groups.
-
-- The user account must have an Office 365 or Microsoft 365 E5 license with Exchange Online capabilities and a mailbox.
-
-- If approvers want to approve jobs through the Microsoft 365 admin center, they need global admin privileges. Global admin privileges aren't needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
-
+You can renew an app authorization before the expiration date. The global admin can click on the consented application and approve it again to extend the consent validity.
 
 ## Multi-geo tenant extraction issues
 
-Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers can't use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
+Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Data Connect, be aware that when customers request data, they can only extract data for one region. Customers can't use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
 
 Keep the following in mind when customers with multi-geo tenants extract data:
 
@@ -75,7 +57,7 @@ If the destination storage account needs to be closed for public access, you nee
 1. Find an Office-to-Azure region mapping. To look up which Office region you will be extracting user data from, see the following table.
 
 > [!NOTE]
-> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect doesn't extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it only extracts the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
+> The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Data Connect doesn't extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it only extracts the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
 
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see the following table). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
@@ -135,27 +117,16 @@ The following example describes how to troubleshoot network access issue:
 
 8.	 The user lists these IP addresses and moves the destination storage to North Europe because the Office region is EUR, and the Azure region is West Europe. 
 
-## Issues with running your pipeline using mapping data flows 
-
-First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with a `Consent Pending` error. This triggers a consent request for the tenant admin, who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request. To resolve the issue:
-
-1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
-
-    a. If not approved in that timeframe, subsequent runs fail with the same error and regenerate a consent request.
-
-    b. When approved, the pipeline can be rerun at any time to retrieve data.
-
-    ![An image that shows the error the first time  Microsoft Graph Data Connect and the mapping data flow runs](images/data-connect-mdf-error.png)
-
-2. Verify that the destination storage is set up correctly to allow the app to write data into it.
-
 ## Issues with app registration
 
-The following scenarios provide troubleshooting information for registering a Microsoft Entra app with Microsoft Graph Data Connect.
+The following scenarios provide troubleshooting information for registering a Microsoft Entra app with Data Connect.
 
 ### No authorization
 
-In the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
+In the [Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
+
+ > [!NOTE]
+ > Effective January 31, 2024, billing is now enabled for all Microsoft Graph Data Connect pipelines on Fabric. Update your application in the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure) to use it with Fabric.
 
 ![Screenshot that shows an error encountered during the creation of a billing resource.](images/app-registration-unable-create-resource.png)
 

@@ -28,7 +28,10 @@ Becomes:
 ```http
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
-
+> [!NOTE]
+> The following known issues are associated with this resource:
+> - [Webhook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752)
+> - [Support for multi-endpoint use case in delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894)
 
 ## Methods
 
@@ -48,7 +51,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Mute all participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
 | [Mute participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
 | [Create](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Create a new **audioRoutingGroup** by posting to the audioRoutingGroups collection. |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get an **audioRoutingGroup** object collection.                                      |
+| [List audio routing groups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get an **audioRoutingGroup** object collection.                                      |
 | [Add large gallery view](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | Add the large gallery view to a call.                                      |
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
 | [Play prompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Play prompt in the call.                                                        |

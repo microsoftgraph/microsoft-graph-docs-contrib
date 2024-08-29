@@ -3,7 +3,7 @@ title: "tag: asHierarchy"
 description: "Return a list of tags in hierarchial form."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

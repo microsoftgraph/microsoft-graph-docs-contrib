@@ -2,7 +2,7 @@
 title: "Create androidDeviceOwnerTrustedRootCertificate"
 description: "Create a new androidDeviceOwnerTrustedRootCertificate object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

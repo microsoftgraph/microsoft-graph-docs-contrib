@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AccessPackageAssignmentRequest
 {
@@ -15,15 +16,23 @@ var requestBody = new AccessPackageAssignmentRequest
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"accessPackageAssignment" , new 
+			"accessPackageAssignment" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				Target = new 
 				{
-					Email = "user@contoso.com",
+					"target", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"email", new UntypedString("user@contoso.com")
+						},
+					})
 				},
-				AssignmentPolicyId = "2264bf65-76ba-417b-a27d-54d291f0cbc8",
-				AccessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b",
-			}
+				{
+					"assignmentPolicyId", new UntypedString("2264bf65-76ba-417b-a27d-54d291f0cbc8")
+				},
+				{
+					"accessPackageId", new UntypedString("a914b616-e04e-476b-aa37-91038f0b165b")
+				},
+			})
 		},
 	},
 };

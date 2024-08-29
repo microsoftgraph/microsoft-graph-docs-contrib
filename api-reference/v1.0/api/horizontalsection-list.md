@@ -3,7 +3,7 @@ title: "List horizontalSections"
 description: "Get a list of the horizontalSection objects and their properties."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

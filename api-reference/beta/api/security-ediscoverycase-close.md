@@ -3,7 +3,7 @@ title: "Close eDiscoveryCase"
 description: "Close an eDiscoveryCase."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

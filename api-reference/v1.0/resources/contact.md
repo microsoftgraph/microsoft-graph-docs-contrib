@@ -33,8 +33,6 @@ by providing a [delta](../api/contact-delta.md) function.
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -58,7 +56,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
-|generation|String|The contact's generation.|
+|generation|String|The contact's suffix.|
 |givenName|String|The contact's given name.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|
@@ -93,7 +91,7 @@ by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

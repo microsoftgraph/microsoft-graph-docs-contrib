@@ -2,7 +2,7 @@
 title: "Create securityConfigurationTask"
 description: "Create a new securityConfigurationTask object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

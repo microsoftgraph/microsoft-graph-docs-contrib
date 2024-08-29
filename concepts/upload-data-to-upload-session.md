@@ -83,6 +83,7 @@ Content-Type: application/json
 * On failures, when the client sends a fragment the server has already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
 * Including the `Authorization` header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
+* We recommend that you log the `X-MSEdge-Ref` and `request-id` response headers, if present, to assist in support team investigations.
 
 ## Complete a file upload
 

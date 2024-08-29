@@ -3,7 +3,7 @@ title: "Create or replace claimsPolicy"
 description: "Create a new custom claims policy object if it doesn't exist, or replace an existing one."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [customClaimsPolicy](../resources/customclaimspolicy.md) object if it doesn't exist, or replace an existing one.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

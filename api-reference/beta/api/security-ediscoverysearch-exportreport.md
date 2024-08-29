@@ -3,7 +3,7 @@ title: "ediscoverySearch: exportReport"
 description: "Export an item report from an estimated ediscoverySearch."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

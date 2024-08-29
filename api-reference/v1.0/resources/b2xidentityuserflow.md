@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a self-service sign up user flow within a Microsoft Entra tenant.
 
-User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up, including which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, along with which attributes are collected as part of the sign up process.
+User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up. This experience includes which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, and which attributes are collected as part of the sign up process.
 
 Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
 
@@ -31,8 +31,8 @@ Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a self-service sign-up user flow.|
 |[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a self-service sign-up user flow.|
 |[List languages](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a self-service sign-up user flow.|
-|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the self-service sign-up user flow. The $expand query parameter isn't supported for this method.|
-|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a self-service sign-up user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
+|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiconnectorconfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the self-service sign-up user flow. The $expand query parameter isn't supported for this method.|
+|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiconnectorconfiguration.md)|None| Configure an API connector for specific steps in a self-service sign-up user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
 
 ## Properties
 

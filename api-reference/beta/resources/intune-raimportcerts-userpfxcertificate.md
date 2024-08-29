@@ -2,7 +2,7 @@
 title: "userPFXCertificate resource type"
 description: "Entity that encapsulates all information required for a user's PFX certificates."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # userPFXCertificate resource type
 
 Namespace: microsoft.graph
-
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
 
 Entity that encapsulates all information required for a user's PFX certificates.
 

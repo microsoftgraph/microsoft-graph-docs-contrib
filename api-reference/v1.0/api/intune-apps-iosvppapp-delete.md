@@ -2,7 +2,7 @@
 title: "Delete iosVppApp"
 description: "Deletes a iosVppApp."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

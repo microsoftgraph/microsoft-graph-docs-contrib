@@ -24,7 +24,7 @@ calling media server or other service entity. Inherits from [endpoint](callrecor
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

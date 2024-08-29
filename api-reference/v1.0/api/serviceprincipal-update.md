@@ -3,7 +3,7 @@ title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

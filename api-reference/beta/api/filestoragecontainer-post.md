@@ -54,6 +54,7 @@ You can specify the following properties when you create a **fileStorageContaine
 |displayName|String|The display name of the container. Required.|
 |description|String|Provides a user-visible description of the item. Optional.|
 |containerTypeId|GUID|The container type of the container instance. Required.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with the container. Optional.|
 
 ## Response
 
@@ -76,7 +77,10 @@ Content-Type: application/json
 {
   "displayName": "My Application Storage Container",
   "description": "Description of My Application Storage Container",
-  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73"
+  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
+  "settings": {
+    "isOcrEnabled": true
+  }
 }
 ```
 
@@ -130,7 +134,10 @@ Content-type: application/json
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "status": "inactive",
-  "createdDateTime": "2021-11-24T15:41:52.347Z"
+  "createdDateTime": "2021-11-24T15:41:52.347Z",
+  "settings": {
+    "isOcrEnabled": true
+  }
 }
 
 ```

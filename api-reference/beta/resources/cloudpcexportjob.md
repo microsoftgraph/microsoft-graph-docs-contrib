@@ -32,7 +32,11 @@ Represents the export job for downloading a specified Cloud PC report.
 | filter             | String                                                   | The filter applied on the report.                                                                                                                                                       |
 | format             | String                                                   | The format of the exported report.                                                                                                                                                      |
 | id                 | String                                                   | The unique identifier for the report. Read-only.                                                                                                                                        |
+<<<<<<< HEAD
 | reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`.|
+=======
+| reportName         | [cloudPcReportName](#cloudpcreportname-values)           | The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `rawRemoteConnectionReports`, `cloudPcUsageCategoryReports`, `crossRegionDisasterRecoveryReport`.|
+>>>>>>> main
 | requestDateTime    | DateTimeOffset                                           | The date and time when the export job was requested.  |
 | select             | String collection                                        | The selected columns of the report.   |
 
@@ -63,11 +67,15 @@ Represents the export job for downloading a specified Cloud PC report.
 | inaccessibleCloudPcReports             | The Cloud PCs that are inaccessible. |
 | rawRemoteConnectionReports             | The raw real-time remote connection report.                         |
 | cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |
+<<<<<<< HEAD
 | crossRegionDisasterRecoveryReport                 | The cross-region disaster recovery report.                                 |
 | performanceTrendReport                 | The daily aggregated report which shows list of connection quality including `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, `LowTimeConnectedCloudPcCount` of Cloud PCs in last 7 days under a tenant, every single day's report is an aggregation of last 28 days dating back from the trigger time. |
 | inaccessibleCloudPcTrendReport         | The daily aggregated report for a period that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state. |
 
 
+=======
+| crossRegionDisasterRecoveryReport           | The cross-region disaster recovery status for Cloud PCs.                 |
+>>>>>>> main
 
 ## Relationships
 

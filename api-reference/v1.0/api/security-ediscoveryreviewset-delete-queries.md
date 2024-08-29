@@ -3,7 +3,7 @@ title: "Delete ediscoveryReviewSetQuery"
 description: "Delete an ediscoveryReviewSetQuery object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
