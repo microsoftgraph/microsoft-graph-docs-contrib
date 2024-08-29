@@ -39,7 +39,7 @@
             "ApiChange": "Member",
             "ChangedApiName": "remoteConnectionQualityReports",
             "ChangeType": "Deprecation",
-            "Description": "Deprecation the `remoteConnectionQualityReports` member in the **cloudPcReportName** enumeration.",
+            "Description": "Deprecated the `remoteConnectionQualityReports` member in the **cloudPcReportName** enumeration.",
             "Target": "cloudPcReportName"
           },
           {
