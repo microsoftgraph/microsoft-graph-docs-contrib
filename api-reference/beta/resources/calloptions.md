@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 An abstract base class that contains the optional features for a call.
 
+Base type of [incomingCallOptions](../resources/incomingcalloptions.md) and [outgoingCallOptions](../resources/outgoingcalloptions.md).
+
 ## Properties
 
 |Property                              |Type                      |Description                                                                        |
