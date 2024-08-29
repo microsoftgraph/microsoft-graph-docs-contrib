@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
-|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization; otherwise, `false`. The default value is `false`, and namepronunciation is disabled.|
+|isEnabledInOrganization|Boolean| `true` to enable name pronunciation in the organization; otherwise, `false`. The default value is `false`, and name pronunciation is disabled.|
 
 ## Relationships
 None.
