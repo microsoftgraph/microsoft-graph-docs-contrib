@@ -45,11 +45,11 @@ POST /deviceManagement/virtualEndpoint/reports/getInaccessibleCloudPcReports
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this method.
+The following table shows the parameters that you can use with this method.
 
 | Parameter | Type              | Description                                                                                |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------|
-| reportName| [cloudPCInaccessibleReportName](#cloudpcinaccessiblereportname-values)            | The report name, possible values: `inaccessibleCloudPcReports`,`inaccessibleCloudPcTrendReport`. Default value: `inaccessibleCloudPcReports` when input reportName is empty. |
+| reportName | [cloudPCInaccessibleReportName](#cloudpcinaccessiblereportname-values) | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. |
 | filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
 | select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
 | search    | String            | Specifies a String to search for.                                                          |
@@ -62,9 +62,9 @@ The following table shows the parameters that can be used with this method.
 
 | Member                          | Description               |
 | :------------------------------ | :------------------------ |
-| `inaccessibleCloudPcReports`    | Indicates report that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state.    |
-| `inaccessibleCloudPcTrendReport`| Indicates daily aggregated report for a period that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state.                                          |
-| `unknownFutureValue`            | Evolvable enumeration sentinel value. Do not use.         |
+| inaccessibleCloudPcReports    | Indicates a report that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.    |
+| inaccessibleCloudPcTrendReport| Indicates a daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state.                                          |
+| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.         |
 
 ## Response
 
