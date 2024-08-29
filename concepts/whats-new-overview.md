@@ -60,7 +60,7 @@ Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/gr
 
 - Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
 - Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
-- Use the **isDeltaRosterEnabled** property to indicate whether delta roster is enabled in the [callOptions](/graph/api/resources/callOptions?view=graph-rest-beta&preserve-view=true)
+- Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
 
 ### Teamwork and communications | Messaging
 
