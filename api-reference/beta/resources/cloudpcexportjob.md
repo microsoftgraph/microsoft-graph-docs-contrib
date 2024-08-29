@@ -59,7 +59,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | noLicenseAvailableConnectivityFailureReport | The Cloud PCs that failed to connect because no licenses were available. |
 | frontlineLicenseUsageReport                 | The daily/hourly aggregated Windows 365 Frontline license usage report.  |
 | frontlineLicenseUsageRealTimeReport         | The real-time data for Windows 365 Frontline license usage.              |
-| remoteConnectionQualityReports (deprecated) | The overall connection quality report for all devices within a tenant.   |
+| remoteConnectionQualityReports (deprecated) | The overall connection quality report for all devices within a tenant. Starting from December 31, 2024, this member ('remoteConnectionQualityReports') will be deprecated and no longer supported. Please use 'remoteConnectionQualityReport' instead. |
 | inaccessibleCloudPcReports                  | The Cloud PCs that are inaccessible.                                     |
 | rawRemoteConnectionReports                  | The raw real-time remote connection report.                              |
 | cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |

@@ -36,12 +36,28 @@
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Member",
+            "ChangedApiName": "remoteConnectionQualityReports",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecation the `remoteConnectionQualityReports` member in the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
+            "ApiChange": "Method",
+            "ChangedApiName": "getConnectionQualityReports",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the [getConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta) method. Going forward, use the [retrieveConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveConnectionQualityReports?view=graph-rest-beta) API.",
+            "Target": "cloudPcReportName"
+          },
+          {
+            "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
             "ApiChange": "Method",
             "ChangedApiName": "retrieveConnectionQualityReports",
             "ChangeType": "Addition",
             "Description": "Added the [retrieveConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/intune-cloudPcReports-retrieveConnectionQualityReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReports?view=graph-rest-beta) resource.",
             "Target": "cloudPcReports"
-          }         
+          }
         ],
         "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
         "Cloud": "Prod",
