@@ -408,17 +408,17 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get recently modified submissions with `$orderby` option
+### Example 4: Get recently modified submissions with `$orderby` and `$top` options
 
 #### Request
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions_orderby"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_orderby_top"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby=lastModifiedDateTime
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby=lastModifiedDateTime&$top=1
 ```
 
 #### Response
@@ -551,18 +551,17 @@ Content-type: application/json
     ]
 }
 ```
-
-### Example 6: Get recently modified submissions with `$top` option
+### Example 6: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
 
 #### Request
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions_top"
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_range"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$top=1
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2024-08-25T20:45:51.3485047Z and lastModifiedDateTime lt 2024-08-28T20:45:51.3485047Z
 ```
 
 #### Response
@@ -582,29 +581,28 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$top=5&$skiptoken=eyJJbm5lclNraXBUb2tlbiI6Ik15WlJWa1pDVVZWR1FsRlZSa1JSVlVaQ1VWVkdRbEZWUmtKUlZWcENVVlZHUWxZeFdsZFZhekZyWTFWS1VtRjZTVEJVTTFJeFZGZEdWbFJFV21oa2VqQTUifQ%3d%3d",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/microsoft.graph.getRecentlyModifiedSubmissions?$select=excusedBy,excusedDateTime",
     "value": [
         {
-            "status": "returned",
-            "submittedDateTime": "2024-08-26T16:01:35.180033Z",
+            "status": "working",
+            "submittedDateTime": null,
             "unsubmittedDateTime": null,
-            "returnedDateTime": "2024-08-26T16:01:43.988604Z",
-            "reassignedDateTime": "2024-08-26T16:01:43.988604Z",
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
             "excusedDateTime": null,
-            "lastModifiedDateTime": "2024-08-26T16:01:48.0623777Z",
-            "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ09U1eIUFaoRYA01ZbdVzuK/items/01VANVJQ4HVKYQ3PAFDBD2WGG6QFHGCISY",
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%223d2fcfd4-cb6a-4e31-aa63-16ca865e9014%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22a509cfeb-6ea1-a19e-272e-7c3c43b4f200%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "id": "a509cfeb-6ea1-a19e-272e-7c3c43b4f200",
+            "lastModifiedDateTime": "2024-08-26T20:45:51.3485047Z",
+            "resourcesFolderUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%2273b252e5-5f2c-42d6-8896-bfe924ce5fe9%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%225af42a11-37cc-c144-fa4c-7db855942011%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "id": "5af42a11-37cc-c144-fa4c-7db855942011",
             "recipient": {
                 "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-                "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
+                "userId": "e5c17181-ad7e-4a66-86bf-b560ce0c8b29"
             },
             "submittedBy": {
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": "e5c17181-ad7e-4a66-86bf-b560ce0c8b29",
                     "displayName": null
                 }
             },
@@ -620,7 +618,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": null,
                     "displayName": null
                 }
             },
@@ -628,7 +626,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": null,
                     "displayName": null
                 }
             },
@@ -644,7 +642,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "id": "7254e396-868c-4bf7-96b2-6fe763590b5a",
                     "displayName": null
                 }
             }
