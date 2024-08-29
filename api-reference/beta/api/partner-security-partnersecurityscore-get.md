@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "partner-permissions"
+  "name": "partner-security-partnersecurityscore-get-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/partnersecurityscore-get-permissions.md)]

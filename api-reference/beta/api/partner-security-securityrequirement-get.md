@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "partner-permissions"
+  "name": "partner-security-securityrequirement-get"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/partnersecurityscore-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/securityrequirement-get-permissions.md)]
 
 ## HTTP request
 
