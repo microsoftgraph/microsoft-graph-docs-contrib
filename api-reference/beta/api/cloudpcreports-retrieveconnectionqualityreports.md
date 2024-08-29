@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 |orderBy|String collection|Specify how to sort the reports.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
-|skip|Int32|Number of records to skip.|
+|skip|Int32|The number of records to skip.|
 |top|Int32|The number of top records to return.|
 
 ## Response
