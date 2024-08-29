@@ -48,10 +48,9 @@ PATCH /admin/people/namePronunciation
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|**TODO: Add Description** Required.|
+|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization; otherwise, false. The default value is `false`, and name pronunciation is disabled. Required.|
 
 
 

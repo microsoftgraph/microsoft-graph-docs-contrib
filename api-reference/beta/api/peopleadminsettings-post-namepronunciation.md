@@ -49,10 +49,9 @@ In the request body, supply a JSON representation of the [namePronunciationSetti
 
 You can specify the following properties when creating a **namePronunciationSettings**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|**TODO: Add Description** Required.|
+|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization; otherwise, false. The default value is `false`, and name pronunciation is disabled.|
 
 
 
@@ -71,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.namePronunciationSettings not found
+POST https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
 {

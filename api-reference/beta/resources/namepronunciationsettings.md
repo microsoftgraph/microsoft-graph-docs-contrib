@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a setting to control people-related admin settings in the tenant.
 
 
 Inherits from [entity](../resources/entity.md).
