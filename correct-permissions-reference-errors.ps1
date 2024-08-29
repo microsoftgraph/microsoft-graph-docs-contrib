@@ -31,6 +31,8 @@ foreach ($typo in $corrections.Keys) {
     $content = $content -replace "\b$typo\b", $corrections[$typo]
 }
 
+$content = $content -replace "’", "'"
+
 # Write the corrected content back to the file
 Set-Content -Path $permissionsReferenceFilePath -Value $content
 
