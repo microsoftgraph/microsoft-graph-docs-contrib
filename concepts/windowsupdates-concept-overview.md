@@ -88,6 +88,6 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 
 ## API reference
 
-Looking for the API reference for this service?
+Looking for the API reference for Windows Autopatch?
 
 See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).

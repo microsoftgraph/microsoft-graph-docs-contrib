@@ -56,7 +56,7 @@ Deployments move through lifecycle states as described in the following table.
 | `scheduled` | The deployment is waiting for offer conditions to be met to start offering the update to devices. |
 | `offering`  | The deployment is offering the update to devices.                                                 |
 | `paused`    | The deployment is paused and prevented from offering the update to devices until it's unpaused.  |
-| `faulted`   | The deployment is not offering the update to devices due to a reason the service cannot resolve.  |
+| `faulted`   | The deployment is not offering the update to devices due to a reason Windows Autopatch cannot resolve.  |
 
 
 ### Transitions
@@ -67,7 +67,7 @@ Deployments move through lifecycle states as described in the following table.
 | `offering` → `scheduled`             | Scheduling condition is not met.         |
 | `scheduled` or `offering` → `paused` | There is a request or automatic action to pause. |
 | `paused` → `scheduled` or `offering` | There is no longer a request or automatic action to pause. |
-| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that the service cannot resolve. |
+| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that the Windows Autopatch cannot resolve. |
 
 ### Resource model
 
