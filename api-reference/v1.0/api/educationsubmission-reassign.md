@@ -100,7 +100,8 @@ POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-
 The following is an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header and the submission hasn't been returned before.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "response",  
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
@@ -214,6 +215,7 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
