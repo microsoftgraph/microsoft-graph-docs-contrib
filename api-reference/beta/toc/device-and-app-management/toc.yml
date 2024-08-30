@@ -259,6 +259,8 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: getActionStatusReports
       href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: getCloudPCPerformanceReport
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: getCloudPcRecommendationReports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: getConnectionQualityReports
@@ -281,10 +283,6 @@ items:
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: getTotalAggregatedRemoteConnectionReports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getRawRemoteConnectionReports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: getCloudPCPerformanceReport
-      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: retrieveCrossRegionDisasterRecoveryReport
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Cloud PC export job
