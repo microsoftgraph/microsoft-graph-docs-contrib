@@ -3,7 +3,7 @@ title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 
