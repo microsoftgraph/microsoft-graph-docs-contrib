@@ -4284,19 +4284,41 @@ items:
         href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
       - name: Unified role
         href: ../../resources/unifiedrole.md
-- name: Partner security
+- name: Partner Center security
   items:
-  - name: Partner security score
+  - name: Security score
     items:
     - name: Overview
-      href: ../../resources/partner-security-score-api-overview.md
+      href: ../../resources/partner-security-score-api-overview
+    - name: Customer insight
+      items:
+      - name: Customer insight
+        href: ../../resources/partner-security-customerinsight.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
     - name: Partner security score
-      href: ../../resources/partner-security-partnersecurityscore.md
-    - name: Get
-      href: ../../api/partner-security-partnersecurityscore-get.md
-    - name: List customer insights
-      href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
-    - name: List history
-      href: ../../api/partner-security-partnersecurityscore-list-history.md
-    - name: List requirements
-      href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+      items:
+      - name: Partner security score
+        href: ../../resources/partner-security-partnersecurityscore.md
+      - name: Get
+        href: ../../api/partner-security-partnersecurityscore-get.md
+      - name: List customer insights
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+      - name: List history
+        href: ../../api/partner-security-partnersecurityscore-list-history.md
+      - name: List requirements
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+    - name: Security requirement
+      items:
+      - name: Security requirement
+        href: ../../resources/partner-security-securityrequirement.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+      - name: Get
+        href: ../../api/partner-security-securityrequirement-get.md
+    - name: Complex types
+      items:
+      - name: Customers MFA enforced security requirement
+        href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
+      - name: Customers spending budget security requirement
+        href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
