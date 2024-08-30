@@ -1,6 +1,6 @@
 ---
 title: "securityScoreHistory resource type"
-description: "The security score history entity"
+description: "Represents a single history entry for the security score where the score or the requirements changed."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Get a list of the [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects and their properties.|
-|[Get](../api/partner-security-securityscorehistory-get.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md)|Read the properties and relationships of a [microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) object.|
+|[List](../api/partner-security-partnersecurityscore-list-history.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md) collection|Get a list of [securityScoreHistory](../resources/partner-security-securityscorehistory.md) objects and their properties.|
+|[Get](../api/partner-security-securityscorehistory-get.md)|[microsoft.graph.partner.security.securityScoreHistory](../resources/partner-security-securityscorehistory.md)|Read the properties and relationships of a [securityScoreHistory](../resources/partner-security-securityscorehistory.md) object.|
 
 ## Properties
 |Property|Type|Description|
