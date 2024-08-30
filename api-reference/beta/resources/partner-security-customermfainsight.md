@@ -1,6 +1,6 @@
 ---
 title: "customerMfaInsight resource type"
-description: "Represents a single partner customer's mfa policy configuration and usage"
+description: "Represents a single partner customer's MFA policy configuration and usage"
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
