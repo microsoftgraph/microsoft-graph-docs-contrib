@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/partner-security-partnersecurityscore-list-requirements.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) collection|Get a list of the [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.|
-|[Get](../api/partner-security-securityrequirement-get.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md)|Read the properties and relationships of a [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) object.|
+|[List](../api/partner-security-partnersecurityscore-list-requirements.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md) collection|Get a list of the [securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.|
+|[Get](../api/partner-security-securityrequirement-get.md)|[microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md)|Read the properties and relationships of a [securityRequirement](../resources/partner-security-securityrequirement.md) object.|
 
 ## Properties
 |Property|Type|Description|
