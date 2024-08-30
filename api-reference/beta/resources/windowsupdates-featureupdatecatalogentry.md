@@ -3,7 +3,7 @@ title: "featureUpdateCatalogEntry resource type"
 description: "Represents metadata for a Windows 10 feature update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |Property|Type|Description|
 |:---|:---|:---|
 |buildNumber|String|The build number of the feature update. Read-only.|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |displayName|String|The display name of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
