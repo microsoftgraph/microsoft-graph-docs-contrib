@@ -7,13 +7,13 @@ ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
 ---
 
-# List requirement 
+# List requirements 
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.
+Get a list of [securityRequirement](../resources/partner-security-securityrequirement.md) objects and their properties.
 
 ## Permissions
 
