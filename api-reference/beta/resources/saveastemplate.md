@@ -1,6 +1,6 @@
 ---
 title: "Save page as a template page request body"
-description: "The JSON representation of the required fields to save page as a template in SharePoint."
+description: "Represents the required fields to save page as a template in SharePoint."
 author: Yadong1106
 ms.localizationpriority: medium
 ms.subservice: sharepoint
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the required fields to save page as a template in SharePoint.
 
 ## Properties
 
