@@ -1898,9 +1898,25 @@
           ]
         },
         {
-          "name": "Partner security",
-          "resources": [
-            "microsoft.graph.partner.security.partnerSecurityScore"
+          "name": "Partner Center security",
+          "childNodes": [
+            {
+              "name": "Security score",
+              "overview": "../../resources/partner-security-score-api-overview",
+              "resources":[
+                "microsoft.graph.partner.security.customerInsight",
+                "microsoft.graph.partner.security.partnerSecurityScore",
+                "microsoft.graph.partner.security.partnerSecurityScore.securityRequirement",
+                "microsoft.graph.partner.security.partnerSecurityScore.securityHistory"
+              ],
+              "complexTypes":[
+                "microsoft.graph.partner.security.partnerSecurityScore.adminsMfaEnforcedSecurityRequirement ",
+                "microsoft.graph.partner.security.partnerSecurityScore.customerMfaInsight ",
+                "microsoft.graph.partner.security.partnerSecurityScore.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.partnerSecurityScore.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.partnerSecurityScore.responseTimeSecurityRequirement "
+              ]
+            }
           ]
         }
       ]
@@ -3044,10 +3060,6 @@
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
-    },
-    {
-      "resource": "partnerSecurityScore",
-      "overview": "../../resources/partner-security-score-api-overview.md"
     }
   ]
 }
