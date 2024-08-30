@@ -1906,8 +1906,8 @@
               "resources":[
                 "microsoft.graph.partner.security.customerInsight",
                 "microsoft.graph.partner.security.partnerSecurityScore",
-                "microsoft.graph.partner.security.partnerSecurityScore.securityRequirement",
-                "microsoft.graph.partner.security.partnerSecurityScore.securityHistory"
+                "microsoft.graph.partner.security.securityRequirement",
+                "microsoft.graph.partner.security.securityHistory"
               ],
               "complexTypes":[
                 "microsoft.graph.partner.security.partnerSecurityScore.adminsMfaEnforcedSecurityRequirement ",
