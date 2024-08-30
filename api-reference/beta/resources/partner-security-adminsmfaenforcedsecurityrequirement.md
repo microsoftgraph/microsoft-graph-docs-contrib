@@ -1,6 +1,6 @@
 ---
 title: "adminsMfaEnforcedSecurityRequirement resource type"
-description: "Represents the partner admin mfa enforcement security requirement from the partner security score."
+description: "Represents the partner admin MFA enforcement security requirement from the partner security score."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the partner admin mfa enforcement security requirement. The requirement is calculated based on Entra tenant MFA usage data. Use this resource to determine whether admins are adequately protected with MFA. 
+Represents the partner admin MFA enforcement security requirement. The requirement is calculated based on Entra tenant MFA usage data. Use this resource to determine whether admins are adequately protected with MFA. 
 
 Inherits from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).
 
