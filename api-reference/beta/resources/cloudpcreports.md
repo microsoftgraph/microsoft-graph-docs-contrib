@@ -35,7 +35,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
 |[retrieveCrossRegionDisasterRecoveryReport](../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md)|Stream| Retrieve the Windows 365 cross-region disaster recovery report with configuration health check results, disaster recovery status, latest cross-region restore points, and user settings.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
