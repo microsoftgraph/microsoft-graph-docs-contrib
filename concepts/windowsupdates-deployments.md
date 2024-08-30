@@ -1,15 +1,15 @@
 ---
-title: "Deployments in the Windows Update for Business deployment service"
-description: "Use the Windows Update for Business deployment service to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
+title: "Deployments in the Windows Autopatch"
+description: "Use the Windows Autopatch to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Deployments in the Windows Update for Business deployment service
+# Deployments in the Windows Autopatch
 
-Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment, you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
+Deployments are the foundation of the Windows Autopatch. Through a deployment, you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
 
 Deployments have the following key aspects:
 
@@ -73,12 +73,12 @@ Deployments move through lifecycle states as described in the following table.
 
 The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a **state** property of type [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) which provides information about the current lifecycle state.
 
-The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include schedule settings and monitoring settings.
+The effective **value** of the deployment state is determined as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include schedule settings and monitoring settings.
 
 ## Assign a device to multiple deployments
 
 You can assign a device to multiple deployments at one time. These deployments can be for content of the same update category (for example all deployments are feature updates), or for content of different update categories.
 
-When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the deployment service offers content in a sequence according to Microsoft’s recommendation.
+When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the content is offered in a sequence according to Microsoft’s recommendation.
 
-When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published January 2023 and 1.0.0.1 published February 2023), the deployment service offers the content that is higher ranked by Microsoft. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment delivers content to the device.
+When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published January 2023 and 1.0.0.1 published February 2023), the content that is higher ranked by Microsoft is offered. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment delivers content to the device.
