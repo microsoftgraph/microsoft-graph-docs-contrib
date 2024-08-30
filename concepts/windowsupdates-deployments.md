@@ -67,7 +67,7 @@ Deployments move through lifecycle states as described in the following table.
 | `offering` → `scheduled`             | Scheduling condition is not met.         |
 | `scheduled` or `offering` → `paused` | There is a request or automatic action to pause. |
 | `paused` → `scheduled` or `offering` | There is no longer a request or automatic action to pause. |
-| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that the Windows Autopatch cannot resolve. |
+| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that Windows Autopatch cannot resolve. |
 
 ### Resource model
 

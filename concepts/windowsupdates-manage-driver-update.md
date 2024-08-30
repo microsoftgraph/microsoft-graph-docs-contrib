@@ -15,7 +15,7 @@ When devices enrolled in Windows Autopatch scan Windows Update, scan results of 
 
 ## Prerequisites
 
-Devices must meet the [prerequisites for the Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
+Devices must meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
 
 ## Step 1: Enroll devices in driver management
 
