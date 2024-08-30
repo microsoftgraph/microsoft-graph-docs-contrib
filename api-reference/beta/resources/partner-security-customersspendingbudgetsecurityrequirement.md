@@ -1,6 +1,6 @@
 ---
 title: "customersSpendingBudgetSecurityRequirement resource type"
-description: "Represents the customer spending budget security requirement in the partner security score."
+description: "Represents the security requirement to have a customer spending budget for all customers."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
