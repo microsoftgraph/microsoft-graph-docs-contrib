@@ -1,6 +1,6 @@
 ---
 title: "Get securityRequirement"
-description: "Read the properties and relationships of a microsoft.graph.partner.security.securityRequirement object."
+description: "Read the properties and relationships of a ecurityRequirement object."
 author: "evandontje-ms"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
