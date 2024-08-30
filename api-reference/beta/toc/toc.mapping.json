@@ -1910,11 +1910,11 @@
                 "microsoft.graph.partner.security.securityHistory"
               ],
               "complexTypes":[
-                "microsoft.graph.partner.security.partnerSecurityScore.adminsMfaEnforcedSecurityRequirement ",
-                "microsoft.graph.partner.security.partnerSecurityScore.customerMfaInsight ",
-                "microsoft.graph.partner.security.partnerSecurityScore.customersMfaEnforcedSecurityRequirement",
-                "microsoft.graph.partner.security.partnerSecurityScore.customersSpendingBudgetSecurityRequirement",
-                "microsoft.graph.partner.security.partnerSecurityScore.responseTimeSecurityRequirement "
+                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement ",
+                "microsoft.graph.partner.security.customerMfaInsight ",
+                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.responseTimeSecurityRequirement "
               ]
             }
           ]
