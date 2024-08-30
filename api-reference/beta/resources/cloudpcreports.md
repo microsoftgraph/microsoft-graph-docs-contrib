@@ -21,6 +21,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[getActionStatusReports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.|
+|[getCloudPCPerformanceReport](../api/cloudpcreports-getcloudpcperformancereport.md)|Stream|Get reports related to the performance of Cloud PCs.|
 |[getCloudPcRecommendationReports](../api/cloudpcreports-getcloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report.|
 |[getConnectionQualityReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.|
 |[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time and available bandwidth in a given period.|
@@ -32,8 +33,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports, such as **signInDateTime**, **signOutDateTime**, or **usageInHour**, in a given period.|
 |[getSharedUseLicenseUsageReport](../api/cloudpcreports-getshareduselicenseusagereport.md) (deprecated) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
-|[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
-|[getCloudPCPerformanceReport](../api/cloudpcreports-getcloudpcperformancereport.md)|Stream|Get Tenant level metrics for related reports for Cloud PCs including slow round-trip time Cloud PCs, Low UDP utilization Cloud PCs, No active time connected Cloud PCs and Low Active time connected Cloud PCs.|
 |[retrieveCrossRegionDisasterRecoveryReport](../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md)|Stream| Retrieve the Windows 365 cross-region disaster recovery report with configuration health check results, disaster recovery status, latest cross-region restore points, and user settings.|
 
 
