@@ -27,9 +27,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|String|The link to the site where the admin can take action on the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|actionUrl|String|The link to the site where the admin can take action on the requirement.|
 |complianceStatus|microsoft.graph.partner.security.complianceStatus|Indicates whether the partner is compliant with this requirement. The possible values are: `compliant`, `noncomplaint`, `unknownFutureValue`.|
-|helpUrl|String|The link to documentation for the requirement. Inherited from [microsoft.graph.partner.security.securityRequirement](../resources/partner-security-securityrequirement.md).|
+|helpUrl|String|The link to documentation for the requirement.|
 |id|String|The unique identifier for the requirement. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |maxScore|Int64|The maximum score possible for the requirement. |
 |requirementType|microsoft.graph.partner.security.securityRequirementType|The type of requirement. The possible values are: `mfaEnforcedForAdmins`, `mfaEnforcedForAdminsOfCustomers`, `securityAlertsPromptlyResolved`, `securityContactProvided`, `spendingBudgetSetForCustomerAzureSubscriptions`, `unknownFutureValue`.|
