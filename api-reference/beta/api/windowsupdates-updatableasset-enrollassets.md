@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: enrollAssets"
-description: "Enroll updatableAsset resources in update management by the deployment service."
+description: "Enroll updatableAsset resources in update management by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources in update management by the deployment service.
+Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources in update management by Windows Autopatch.
 
 You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) resource in update management, but may not enroll an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) in update management.
 

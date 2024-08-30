@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: unenrollAssetsById"
-description: "Unenroll updatableAsset resources of the same type from update management by the deployment service."
+description: "Unenroll updatableAsset resources of the same type from update management by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch

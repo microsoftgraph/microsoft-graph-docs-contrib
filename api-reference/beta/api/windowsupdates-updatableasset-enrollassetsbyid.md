@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: enrollAssetsById"
-description: "Enroll updatableAsset resources of the same type in update management by the deployment service."
+description: "Enroll updatableAsset resources of the same type in update management by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
