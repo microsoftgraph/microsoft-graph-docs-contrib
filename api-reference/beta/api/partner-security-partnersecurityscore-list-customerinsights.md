@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "partner-security-partnersecurityscore-list-customerinsights"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/partnersecurityscore-list-customerinsights-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partner-security-partnersecurityscore-list-customerinsights-permissions.md)]
 
 ## HTTP request
 
