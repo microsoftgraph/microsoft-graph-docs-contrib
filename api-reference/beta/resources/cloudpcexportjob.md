@@ -65,7 +65,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |
 | crossRegionDisasterRecoveryReport                 | The cross-region disaster recovery report.                                 |
 | performanceTrendReport                 | The daily aggregated report which shows list of connection quality including `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, `LowTimeConnectedCloudPcCount` of Cloud PCs in last 7 days under a tenant, every single day's report is an aggregation of last 28 days dating back from the trigger time. |
-| inaccessibleCloudPcTrendReport         | The daily aggregated report for a period that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state. |
+| inaccessibleCloudPcTrendReport         | The daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state. |
 
 ## Relationships
 
