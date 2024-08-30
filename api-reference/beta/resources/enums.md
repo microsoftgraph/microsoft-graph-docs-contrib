@@ -4913,14 +4913,14 @@ Possible values for user account types (group membership), per Windows definitio
 ### cloudPCPerformanceReportName values
 
 | Member                 |
-| :--------------------- |
+| ---------------------- |
 | performanceTrendReport | 
 | unknownFutureValue     |
 
-### cloudPCInaccessibleReportName  values
+### cloudPCInaccessibleReportName values
 
 | Member                         |
-| :----------------------------- |
+| ------------------------------ |
 | inaccessibleCloudPcReports     |
 | inaccessibleCloudPcTrendReport |
 | unknownFutureValue             |
