@@ -58,7 +58,7 @@ The following table shows the parameters that you can use with this method.
 | skip      | Int32             | Number of records to skip.                                                                 |
 | top       | Int32             | The number of top records to return.                                                       |
 
-### cloudPCInaccessibleReportName  values
+### cloudPCInaccessibleReportName values
 
 | Member                          | Description               |
 | :------------------------------ | :------------------------ |
