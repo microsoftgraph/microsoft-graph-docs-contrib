@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the security score for the partner which helps Cloud Solution Provider (CSP) partners understand their security posture and their customer's security posture. The scoe includes an aggregate score along with history of score changes, detailed customer insights, and requirement score information.
+Represents the security score for the partner which helps Cloud Solution Provider (CSP) partners understand their security posture and their customer's security posture. The score includes an aggregate score along with history of score changes, detailed customer insights, and requirement score information.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
