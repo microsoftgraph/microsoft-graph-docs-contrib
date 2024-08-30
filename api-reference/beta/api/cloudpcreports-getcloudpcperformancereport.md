@@ -107,7 +107,7 @@ The following example shows the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Edm.Stream"
-}
+} -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
