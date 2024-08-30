@@ -4908,3 +4908,18 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### cloudPCPerformanceReportName values
+
+| Member                 |
+| :--------------------- |
+| performanceTrendReport | 
+| unknownFutureValue     |
+
+### cloudPCInaccessibleReportName  values
+
+| Member                         |
+| :----------------------------- |
+| inaccessibleCloudPcReports     |
+| inaccessibleCloudPcTrendReport |
+| unknownFutureValue             |
