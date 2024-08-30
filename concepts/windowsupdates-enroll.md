@@ -15,7 +15,7 @@ Today, there is support for device enrollment for Windows 10/11 feature updates 
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, Windows Autopatch becomes the authority for updates of that category coming from Windows Update. As a result, devices don't receive updates of that category from Windows Update until you deploy an update by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered when enrolled in management by the autopatch (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
+When you enroll a device in management for a certain update category, Windows Autopatch becomes the authority for updates of that category coming from Windows Update. As a result, devices don't receive updates of that category from Windows Update until you deploy an update by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered when enrolled in management by Windows Autopatch (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
 
 The following example shows how to enroll a device in feature update management.
 
