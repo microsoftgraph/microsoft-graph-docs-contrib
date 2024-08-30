@@ -5,6 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+toc.title: Cloud PC cross-region disaster recovery setting
 ---
 
 # cloudPcCrossRegionDisasterRecoverySetting resource type
