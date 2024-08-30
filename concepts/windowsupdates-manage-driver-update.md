@@ -1,9 +1,9 @@
 ---
-title: "Deploy a driver update using the Windows Update for Business deployment service"
-description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
+title: "Deploy a driver update using the Windows Autopatch"
+description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using Windows Autopatch."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
@@ -15,7 +15,7 @@ When devices enrolled in Windows Autopatch scan Windows Update, scan results of 
 
 ## Prerequisites
 
-Devices must meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
+Devices must meet the [prerequisites for the Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
 
 ## Step 1: Enroll devices in driver management
 
@@ -327,7 +327,7 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories (if applicable).
 
 
 ### Request
