@@ -1,5 +1,5 @@
 ---
-title: "Create from page template request body"
+title: "Represents the required fields to create a page from a template in SharePoint."
 description: "Represents the required fields to create a page from a template in SharePoint."
 author: Yadong1106
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# sitePage: createFromPageTemplate
+# createFromPageTemplate
 
 Namespace: microsoft.graph
 
