@@ -56,6 +56,10 @@ Enabled the `Spain` and `Mexico` values as supported regions for the **region** 
 
 Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true#frontlinecloudpcaccessstate-values).
 
+### Teamwork and communications | Apps
+
+Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization?view=graph-rest-beta&preserve-view=true) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true) in the Microsoft Teams app catalog.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
