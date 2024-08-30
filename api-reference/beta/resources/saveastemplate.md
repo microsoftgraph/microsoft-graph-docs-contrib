@@ -19,7 +19,7 @@ Represents the required fields to save page as a template in SharePoint.
 
 | Property | Type | Description |
 | :---------| :------| :------------|
-| title | String | The title of the site page template to create.  Optional. |
+| title | String | The title of the site page template to create. Optional. |
 | name | String | The name of the site page template to create. Required. |
 
 

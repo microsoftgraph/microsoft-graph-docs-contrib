@@ -19,7 +19,7 @@ Represents the required fields to create a page from a template in SharePoint.
 
 | Property | Type | Description |
 | :---------| :-----| :------------- |
-| title | String | The title of the site page template to create.  Optional. |
+| title | String | The title of the site page template to create. Optional. |
 | name | String | The name of the site page template to create. Required. |
 | templateId | String | The identifier for an existing page template. Required. |
 

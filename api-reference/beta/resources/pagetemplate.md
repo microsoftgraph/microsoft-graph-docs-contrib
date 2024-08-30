@@ -54,10 +54,10 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
-|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout indicates the layout of the content in a given SharePoint page template, including horizontal sections and vertical sections.|
+|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a given SharePoint page template, including horizontal sections and vertical sections.|
 |createdByUser|[user](../resources/user.md)|The identity of the user who created this site page template. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).|
 |lastModifiedByUser|[user](../resources/user.md)|The identity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).|
-|webParts|[webPart](../resources/webpart.md) collection|Collection of web parts on the SharePoint page.|
+|webParts|[webPart](../resources/webpart.md) collection|The collection of web parts on the SharePoint page.|
 
 ## JSON representation
 
