@@ -13,8 +13,10 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Partner Center ecosystem provides a security score to indirect providers or direct bill partners in the Cloud Solution Provider (CSP), Value Added Reseller, or Advisor programs. The goal of the score and requirements is to help partners understand the security posture of their tenant and their customer's tenants. The partner security score builds on the Identity and Microsoft 365 security scores to provide specific suggestions to their scenario.
+The Microsoft Partner Center ecosystem provides a security score to indirect providers or direct bill partners in the Cloud Solution Provider (CSP), Value Added Reseller, or Advisor programs. The goal of the score and requirements is to help partners understand the security posture of their tenant and their customer's tenants. The partner security score builds on the Identity and Microsoft 365 security scores to provide suggestions specific to their scenario.
 The [partner security score API](../resources/partner-security-partnersecurityscore.md) is a pivotal tool designed to empower Microsoft partners by providing a quantifiable measure of their security performance. This API facilitates partners in enhancing their security posture by offering a comprehensive security score based on their adherence to Microsoft's security requirements.
+
+The partner security score API is defined in the OData subnamespace `microsoft.graph.partners.security`.
 
 ## Objectives
 
@@ -24,20 +26,17 @@ The primary objectives of the security score API include:
 * __Guiding security enhancements with actionable insights:__ Providing actionable insights and recommendations to help partners bolster their security measures.  
 * __Monitoring security evolution:__ Enabling partners to track their security improvements over time, fostering a culture of continuous security enhancement.  
  
-Use Microsoft Graph [partner security score API](../resources/partner-security-partnersecurityscore.md) to retrieve the score and insights into customer security posture.
-The partner security score API is defined in the OData subnamespace microsoft.graph.partners.security.
+Use the Microsoft Graph [partner security score API](../resources/partner-security-partnersecurityscore.md) to retrieve the score and insights into your customer security posture.
  
 > **Note:** In order to take actions for the security requirements, choose the action URL provisioned in the API response to go to the relevant UI.
 
-The partner security score API is defined in the OData subnamespace `microsoft.graph.partners.security`.
-
 ## Common use cases
 
-The following are common requests for working with the partner security alert API in Microsoft Graph.
+The following table shows common requests for working with the partner security alert API in Microsoft Graph.
 
-| Use cases   | REST operations | Try it in Graph Explorer |
+| Use case   | REST operation | Try it in Graph Explorer |
 |:---------------|:--------|:----------|
-|Get partner security score| [List](../api/partner-security-partnersecurityscore-get.md) | [https://graph.microsoft.com/beta/security/partner/securityScore](https://developer.microsoft.com/graph/graph-explorer?request=security/partner/securityScore&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+|Get partner security score| [Get](../api/partner-security-partnersecurityscore-get.md) | [https://graph.microsoft.com/beta/security/partner/securityScore](https://developer.microsoft.com/graph/graph-explorer?request=security/partner/securityScore&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 |List customer security insights |[List](../api/partner-security-partnersecurityscore-list-customerinsights.md)| [https://graph.microsoft.com/beta/security/partner/securityScore/customerInsights](https://developer.microsoft.com/graph/graph-explorer?request=security/partner/securityScore/customerInsights&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 
 ## Related content
