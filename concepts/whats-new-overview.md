@@ -60,6 +60,10 @@ Enabled the `Spain` and `Mexico` values as supported regions for the **region** 
 
 ## August 2024: New in preview only
 
+### Identity and access | Partner Center security
+
+Introduced the [partner security score API](/graph//api/resources/partner-security-score-api-overview). Use this API to generate security scores for partners to help them enhance their posture. The API provides a history of score changes, detailed customer insights, and requirement score information.
+
 ### Device and app management | Cloud PC
 
 - Use the **crossRegionDisasterRecoverySetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to define cross-region disaster recovery settings.
