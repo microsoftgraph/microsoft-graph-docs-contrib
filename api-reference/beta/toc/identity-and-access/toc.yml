@@ -4291,7 +4291,7 @@ items:
   - name: Security score
     items:
     - name: Overview
-      href: ../../resources/partner-security-score-api-overview
+      href: ../../resources/partner-security-score-api-overview.md
     - name: Customer insight
       items:
       - name: Customer insight
