@@ -4318,7 +4318,13 @@ items:
         href: ../../api/partner-security-securityrequirement-get.md
     - name: Complex types
       items:
+      - name: Admins MFA enforced security requirement
+        href: ../../resources/partner-security-adminsmfaenforcedsecurityrequirement.md
+      - name: Customer MFA insight
+        href: ../../resources/partner-security-customermfainsight.md
       - name: Customers MFA enforced security requirement
         href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
       - name: Customers spending budget security requirement
         href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
+      - name: Response time security requirement
+        href: ../../resources/partner-security-responsetimesecurityrequirement.md
