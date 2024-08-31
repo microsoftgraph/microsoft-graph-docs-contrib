@@ -36,7 +36,7 @@ This method supports the $count and $expand [OData query parameters](/graph/quer
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

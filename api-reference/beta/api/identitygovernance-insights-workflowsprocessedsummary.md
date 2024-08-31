@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -26,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
+[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary
+GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

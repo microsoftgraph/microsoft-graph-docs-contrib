@@ -17,8 +17,8 @@ Retrieve the properties and relationships of formatprotection object.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "formatprotection_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/formatprotection-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "workbookformatprotection_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbookformatprotection-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,6 +48,7 @@ If successful, this method returns a `200 OK` response code and a [formatProtect
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_formatprotection"
@@ -55,6 +56,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-formatprotection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response. 

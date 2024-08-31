@@ -498,6 +498,19 @@
       ]
     },
     {
+      "name": "Employee experience",
+      "childNodes": [
+        {
+          "name": "Employee engagement",
+          "overview": "../../resources/engagement-api-overview.md",
+          "resources": [
+            "community",
+            "engagementAsyncOperation"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Extensions",
       "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true",
       "keywords": [
@@ -559,7 +572,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -787,7 +801,8 @@
                 "microsoft.graph.identityGovernance.workflowTemplate",
                 "microsoft.graph.identityGovernance.taskDefinition",
                 "microsoft.graph.identityGovernance.customTaskExtension",
-                "microsoft.graph.identityGovernance.lifecycleManagementSettings"
+                "microsoft.graph.identityGovernance.lifecycleManagementSettings",
+                "microsoft.graph.identitygovernance.insights"
               ],
               "complexTypes": [
                 "azureAdPopTokenAuthentication",
@@ -1301,6 +1316,7 @@
           "name": "Microsoft 365 usage reports",
           "overview": "../../resources/report.md",
           "resources": [
+            "adminReportSettings",
             "reportRoot"
           ]
         },
