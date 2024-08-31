@@ -1055,12 +1055,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
@@ -4318,7 +4320,13 @@ items:
         href: ../../api/partner-security-securityrequirement-get.md
     - name: Complex types
       items:
+      - name: Admins MFA enforced security requirement
+        href: ../../resources/partner-security-adminsmfaenforcedsecurityrequirement.md
+      - name: Customer MFA insight
+        href: ../../resources/partner-security-customermfainsight.md
       - name: Customers MFA enforced security requirement
         href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
       - name: Customers spending budget security requirement
         href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
+      - name: Response time security requirement
+        href: ../../resources/partner-security-responsetimesecurityrequirement.md

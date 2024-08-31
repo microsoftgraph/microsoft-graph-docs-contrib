@@ -403,7 +403,6 @@
             "cloudPcProvisioningPolicy",
             "cloudPcReports",
             "cloudPcServicePlan",
-            "cloudPcSharedUseServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
@@ -427,6 +426,10 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
+            "cloudPcCrossRegionDisasterRecoverySetting",
+            "cloudPcDisasterRecoveryAzureConnectionSetting",
+            "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+            "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcHealthCheckItem",
@@ -798,7 +801,7 @@
       "name": "Employee experience",
       "childNodes": [
         {
-          "name": "Employee engagement (preview)",
+          "name": "Employee engagement",
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
@@ -876,7 +879,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -2915,7 +2919,9 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule",
+            ""
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -2939,6 +2945,7 @@
             "timeClockSettings",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }

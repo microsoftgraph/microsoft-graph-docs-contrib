@@ -1,7 +1,7 @@
 ---
 title: "Update tab"
 description: "Update the properties of the specified tab."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

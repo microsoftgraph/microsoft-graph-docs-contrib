@@ -41,7 +41,7 @@ This method supports the `$filter` (`eq`, `ge`, `le`, `startswith`), `$top`, `$o
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
