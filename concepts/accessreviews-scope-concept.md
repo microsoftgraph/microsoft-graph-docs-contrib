@@ -34,7 +34,7 @@ To configure the scope by using the [accessReviewQueryScope resource type](/grap
 ## Examples
 
 > [!NOTE]
-> The following 17 examples are the only valid combinations of *principalScopes* and *resourceScopes* that are supported in Microsoft Graph API
+> The examples in this section show the only valid combinations of *principalScopes* and *resourceScopes* that the Microsoft Graph API supports.
 
 ### Example 1: Review all users with direct and transitive assignment to a group
 
