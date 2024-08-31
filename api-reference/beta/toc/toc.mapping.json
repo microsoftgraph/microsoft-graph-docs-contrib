@@ -1902,7 +1902,7 @@
           "childNodes": [
             {
               "name": "Security score",
-              "overview": "../../resources/partner-security-score-api-overview",
+              "overview": "../../resources/partner-security-score-api-overview.md",
               "resources":[
                 "microsoft.graph.partner.security.customerInsight",
                 "microsoft.graph.partner.security.partnerSecurityScore",
