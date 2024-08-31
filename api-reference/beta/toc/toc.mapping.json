@@ -1905,7 +1905,7 @@
           "name": "Partner Center security",
           "childNodes": [
             {
-              "name": "Security score",
+              "name": "Partner security score",
               "overview": "../../resources/partner-security-score-api-overview.md",
               "resources":[
                 "microsoft.graph.partner.security.customerInsight",
