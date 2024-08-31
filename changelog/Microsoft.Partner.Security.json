@@ -126,9 +126,9 @@
       "Id": "2dd9165c-c528-4423-a262-0d8341473032",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-07-22T21:02:50.6861196Z",
+      "CreatedDateTime": "2024-08-30T21:02:50.6861196Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Partner Center Security"
+      "SubArea": "Partner Center security"
     }
   ]
 }
