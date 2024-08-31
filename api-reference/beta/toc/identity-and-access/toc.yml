@@ -4288,7 +4288,7 @@ items:
         href: ../../resources/unifiedrole.md
 - name: Partner Center security
   items:
-  - name: Security score
+  - name: Partner security score
     items:
     - name: Overview
       href: ../../resources/partner-security-score-api-overview.md
