@@ -2589,8 +2589,8 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "pageTemplate",
             "webPart",
+            "pageTemplate",
             "createFromTemplate",
             "saveAsTemplate"
           ],
