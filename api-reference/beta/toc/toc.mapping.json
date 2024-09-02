@@ -2536,7 +2536,11 @@
           "name": "Microsoft Defender for Cloud Apps (preview)",
           "resources": [
             "microsoft.graph.security.cloudAppDiscoveryReport",
-            "microsoft.graph.security.discoveredCloudAppDetail"
+            "microsoft.graph.security.discoveredCloudAppDetail",
+            "microsoft.graph.security.discoveredCloudAppInfo",
+            "microsoft.graph.security.discoveredCloudAppUser",
+            "microsoft.graph.security.discoveredCloudAppIPAddress",
+            "microsoft.graph.security.discoveredCloudAppDevice"
           ]
         }
       ]
