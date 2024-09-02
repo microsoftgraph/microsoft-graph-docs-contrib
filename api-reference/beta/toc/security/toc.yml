@@ -604,6 +604,24 @@ items:
       href: ../../api/security-discoveredcloudappdetail-list-ipaddresses.md
     - name: List users
       href: ../../api/security-discoveredcloudappdetail-list-users.md
+  - name: Discovered cloud app user
+    items:
+    - name: Discovered cloud app user
+      href: ../../resources/security-discoveredcloudappuser.md
+    - name: List
+      href: ../../api/security-discoveredcloudappdetail-list-users.md
+  - name: Discovered cloud app IP address
+    items:
+    - name: Discovered cloud app IP address
+      href: ../../resources/security-discoveredcloudappipaddress.md
+    - name: List
+      href: ../../api/security-discoveredcloudappdetail-list-ipaddresses.md
+  - name: Discovered cloud app device
+    items:
+    - name: Discovered cloud app device
+      href: ../../resources/security-discoveredcloudappdevice.md
+    - name: List
+      href: ../../api/security-endpointdiscoveredcloudappdetail-list-devices.md
 - name: Records management
   items:
   - name: Overview
