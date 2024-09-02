@@ -2563,7 +2563,9 @@
             "baseSitePage",
             "sitePage",
             "pageTemplate",
-            "webPart"
+            "webPart",
+            "createFromTemplate",
+            "saveAsTemplate"
           ],
           "childNodes": [
             {
