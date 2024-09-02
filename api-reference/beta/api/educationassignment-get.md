@@ -33,7 +33,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /education/classes/{id}/assignments/{id}
 ```
 ## Optional query parameters
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$orderby` with the following properties of the [educationAssignment](../resources/educationassignment.md) resource: **assignDateTime**, **assignedDateTime**, **closeDateTime**, **createdDateTime**, **displayName**, **dueDateTime**, **lastModifiedDateTime**, **moduleUrl**, and **status**.
 
 The following `$expand` options are available for this method: `categories`, `resources`, `rubric`, `submissions`, `gradingScheme`, `gradingCategory`, and `*`. `*` specifies all the previous options.
 

@@ -51,6 +51,42 @@ Namespace: microsoft.graph.partner.security
 |investigating|
 |unknownFutureValue|
 
+
+### complianceStatus values 
+
+|Member|
+|:---|
+|compliant|
+|noncomplaint|
+|unknownFutureValue|
+
+### policyStatus values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### securityRequirementState values 
+
+|Member|
+|:---|
+|active|
+|preview|
+|unknownFutureValue|
+
+### securityRequirementType values 
+
+|Member|
+|:---|
+|mfaEnforcedForAdmins|
+|mfaEnforcedForAdminsOfCustomers|
+|securityAlertsPromptlyResolved|
+|securityContactProvided|
+|spendingBudgetSetForCustomerAzureSubscriptions|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

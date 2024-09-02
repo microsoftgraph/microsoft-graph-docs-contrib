@@ -1,6 +1,6 @@
 ---
 title: "partnerSecurity resource type"
-description: "Represents the root for various types of partner security entities."
+description: "Represents the root for partner security entities."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,9 +13,10 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the root for various types of partner security entities.
+Represents the root for partner security entities.
 
-Inherits from [entity](../resources/entity.md).
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 
@@ -28,7 +29,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|securityAlerts|[microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) collection|The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.|
+|securityAlerts|[microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) collection|The security alerts or a vulnerability of a Cloud Solution Provider (CSP) partner's customer that the partner must be made aware of for further action.|
+|securityScore|[microsoft.graph.partner.security.securityScore](../resources/partner-security-partnerSecurityScore.md) singleton|The security score calculated for the CSP partner and their customers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

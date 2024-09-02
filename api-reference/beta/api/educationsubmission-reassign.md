@@ -102,6 +102,7 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
@@ -213,7 +214,8 @@ Prefer: include-unknown-enum-members
 The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission hasn't been returned before.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "response",  
+  "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http

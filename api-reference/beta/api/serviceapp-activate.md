@@ -53,6 +53,8 @@ You can specify the following properties you activate a **serviceApp**.
 
 If successful, this action returns a `202 Accepted` response code and a [serviceApp](../resources/serviceapp.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request

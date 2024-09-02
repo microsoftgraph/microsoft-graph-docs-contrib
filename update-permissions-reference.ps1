@@ -52,7 +52,7 @@ function Generate-Markdown {
     )
     $markdown = ""
 
-    $markdown += "`n## All permissions`n`n"
+    $markdown += "## All permissions`n`n"
 
     foreach ($name in ($permissions.Name | Get-Unique)) {        
         $markdown += "### $name`n`n"
@@ -106,7 +106,7 @@ function Generate-Markdown {
         $markdown += "| $($resourceSpecificApplicationPermission.value) | $($resourceSpecificApplicationPermission.id) | $($resourceSpecificApplicationPermission.displayName) | $($resourceSpecificApplicationPermission.description) |`n"
     }
 
-    $markdown += "---`n"
+    $markdown += "`n---`n"
 
     return $markdown
 }
@@ -134,10 +134,14 @@ function Update-FileContent {
         # Split the file content into three parts: before first header index, the new content, and after second header index 
         $beforeFirstHeader = $fileContents[0..($firstHeaderIndex - 1)]
         $afterSecondHeader = $fileContents[$secondHeaderIndex..($fileContents.Count - 1)]
+		
+		# Update ms.date
+		$today = Get-Date -Format "MM/dd/yyyy"
+		$beforeFirstHeader = $beforeFirstHeader -replace '^ms\.date:.*', "ms.date: $today"
 
         # Combine the parts with the new content
         $updatedContent = $beforeFirstHeader + $NewContent.Split("`n") + $afterSecondHeader
-
+		
         # Write the updated content back to the file
         $updatedContent | Set-Content -Path $FilePath
     }
@@ -162,7 +166,7 @@ $authUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $response = Invoke-RestMethod $authUri  -Method 'POST' -Headers $headers -Body $body
 $response | ConvertTo-Json
 $accessToken = $response.access_token
-# $secureAccessToken = ConvertTo-SecureString $accessToken -AsPlainText -Force
+$secureAccessToken = ConvertTo-SecureString $accessToken -AsPlainText -Force
 
 # Install the Microsoft Graph PowerShell module if not already installed
 if (-not (Get-Module -Name Microsoft.Graph -ListAvailable)) {
@@ -171,7 +175,7 @@ if (-not (Get-Module -Name Microsoft.Graph -ListAvailable)) {
 
 # Connect to Microsoft Graph
 try {
-    Connect-MgGraph -Thumbprint $secureAccessToken -NoWelcome
+    Connect-MgGraph -AccessToken $secureAccessToken -NoWelcome
     Write-Host "Connected successfully."
 }
 catch {

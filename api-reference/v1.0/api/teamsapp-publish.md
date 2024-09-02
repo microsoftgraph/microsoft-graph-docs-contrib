@@ -27,7 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/teamsapp-publish-permissions.md)]
 
 > [!NOTE]
-> The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+>
+> * The `Directory.ReadWrite.All` permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> * The `AppCatalog.Submit` permission allows you to submit apps for review only, not to publish them to the catalog.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

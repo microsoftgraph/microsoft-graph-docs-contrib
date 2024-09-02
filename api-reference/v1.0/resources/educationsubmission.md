@@ -38,9 +38,9 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|Unique identifier for the submission.|
 |excusedBy|[identitySet](identityset.md)| The user that marked the submission as excused.|
 |excusedDateTime|DateTimeOffset|The time that the submission was excused. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|Unique identifier for the submission.|
 |reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
 |reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
@@ -77,6 +77,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "excusedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "excusedDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "reassignedBy": {"@odata.type":"microsoft.graph.identitySet"},
   "reassignedDateTime": "String (timestamp)",
