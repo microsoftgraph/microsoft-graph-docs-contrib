@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/exclusions
 ```
-**Note:** Only $skiptoken is supported for paging, client-driven paging is not impelemented.
+**Note:** Only $skiptoken is supported for paging. Client-driven paging isn't implemented.
 
 ## Request headers
 |Name|Description|
