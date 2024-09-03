@@ -114,7 +114,8 @@ Content-Type: application/json
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
@@ -242,6 +243,10 @@ Content-Type: application/json
   "chatInfo": null,
   "meetingInfo": null,
   "transcription": null,
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isDeltaRosterEnabled": true
+  },
   "meetingCapability": null,
   "toneInfo": null
 }
