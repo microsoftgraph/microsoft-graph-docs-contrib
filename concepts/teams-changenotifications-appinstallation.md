@@ -186,7 +186,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-The following payload is an example for notifications with resource data:
+The following example shows a payload of notifications with resource data.
 
 ```json
 {
@@ -213,7 +213,7 @@ The following payload is an example for notifications with resource data:
 }
 ```
 
-The following payload is an example of the decrypted notification. The payload adheres to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) schema.
+The following example shows a payload of the decrypted notification. The payload adheres to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) schema.
 
 ```json
 {
