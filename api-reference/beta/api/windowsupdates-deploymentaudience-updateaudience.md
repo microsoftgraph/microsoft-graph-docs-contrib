@@ -15,9 +15,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update the members and exclusions collections of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
 
-Adding an [azureADDevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object, if it does not already exist.
+Adding an [azureADDevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object, if it doesn't already exist.
 
-If the same [updatableAsset](../resources/windowsupdates-updatableasset.md) gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
+If the same [updatableAsset](../resources/windowsupdates-updatableasset.md) gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment won't apply to that asset.
 
 If all **updatableAsset** objects are the same type, you can also use the method [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) to update the **deploymentAudience**.
 
