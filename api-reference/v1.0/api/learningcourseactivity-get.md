@@ -38,7 +38,7 @@ To get a specific learning course activity based on its **externalCourseActivity
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId={externalCourseActivityId})
+GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId='{externalCourseActivityId}')
 ```
 
 To get the details of a learning course activity for a user:
@@ -190,7 +190,7 @@ The following example shows a request to get the details of a learning course ac
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
+GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId='12a2228a-e020-11ec-9d64-0242ac120002')
 ```
 
 # [C#](#tab/csharp)
