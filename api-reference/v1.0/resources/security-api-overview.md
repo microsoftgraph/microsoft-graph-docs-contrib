@@ -96,6 +96,11 @@ Alerts from the following providers are available via the **alert** resource. Su
 
 [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
 
+## Identities
+
+### Health Issues
+The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use this API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use this API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
+
 ## Incidents
 
 An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender, and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/). 
@@ -151,6 +156,8 @@ The following are some of the most popular requests for working with the Microso
 | **eDiscovery**|||
 |List eDiscovery cases|[List eDiscoveryCases](../api/security-casesroot-list-ediscoverycases.md)|[https://graph.microsoft.com/v1.0/security/cases/eDiscoveryCases](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |List eDiscovery case operations|[List caseOperations](../api/security-ediscoverycase-list-operations.md)|[https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{id}/operations](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases%2F%7Bid%7D%2Foperations&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+| **Identities**|||
+| List health issues | [List health issues](../api/security-identityContainer-list-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Legacy alerts**|||
 | List alerts | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 | Update alerts | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
