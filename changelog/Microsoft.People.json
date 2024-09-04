@@ -731,6 +731,40 @@
       "CreatedDateTime": "2024-03-05T15:26:15.2757589Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "89b36fa0-c4c0-4f96-823b-2dc9e66baf74",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryDepartment",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryDepartment** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.",
+          "Target": "companyDetail"
+        },
+        {
+          "Id": "89b36fa0-c4c0-4f96-823b-2dc9e66baf74",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryJobTitle",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryJobTitle** property to the [positionDetail](https://learn.microsoft.com/en-us/graph/api/resources/positionDetail?view=graph-rest-beta) resource.",
+          "Target": "positionDetail"
+        },
+        {
+          "Id": "89b36fa0-c4c0-4f96-823b-2dc9e66baf74",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryRole** property to the [positionDetail](https://learn.microsoft.com/en-us/graph/api/resources/positionDetail?view=graph-rest-beta) resource.",
+          "Target": "positionDetail"
+        }
+      ],
+      "Id": "89b36fa0-c4c0-4f96-823b-2dc9e66baf74",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-20T12:04:03.6520588Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
     }
   ]
 }
