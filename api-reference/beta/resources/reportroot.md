@@ -23,9 +23,9 @@ For details about report views and names, see [Microsoft 365 reports - Copilot f
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
-| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.                             |
-| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period.  |
-| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active users and users enabled for Copilot for Microsoft 365 Copilot for a specified time period. |
+| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.                             |
+| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active users and users enabled for Copilot for Microsoft 365 for a specified time period.  |
+| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active users and users enabled for Copilot for Microsoft 365 for a specified time period. |
 
 ### Forms activity
 
