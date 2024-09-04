@@ -1,4 +1,3 @@
----
 title: "Update healthIssue"
 description: "Update the properties of a healthIssue object."
 author: "amirfeldman"

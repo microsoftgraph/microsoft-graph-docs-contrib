@@ -82,6 +82,7 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/security/identities/healthIssues/{healthIssueId}
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
   "displayName": "String",
@@ -121,6 +122,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
   "id": "bf600aba-e975-0274-d332-c0f79dc75740",

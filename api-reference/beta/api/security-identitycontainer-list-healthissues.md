@@ -1,4 +1,4 @@
----
+
 title: "List healthIssues"
 description: "Get a list of health issue objects and their properties."
 author: "amirfeldman"
