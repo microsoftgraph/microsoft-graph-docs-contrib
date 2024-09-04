@@ -55,7 +55,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |webUrl|String| The deep link URL for the given submission.|
-|assignmentId|String| The unique identifier for the **assignment**. Inherited from [entity](../resources/entity.md). Read-only.|
+|assignmentId|String| The unique identifier for the assignment that this submission is associated with. A submission is always associated with one and only one assignment.|
 
 ## Relationships
 | Relationship | Type	|Description|

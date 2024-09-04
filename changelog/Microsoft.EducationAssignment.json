@@ -5,7 +5,7 @@
         {
           "Id": "9d6be2a6-416f-4f30-a104-9c41e43c9e95",
           "ApiChange": "Property",
-          "ChangedApiName": "assignmentID",
+          "ChangedApiName": "assignmentId",
           "ChangeType": "Addition",
           "Description":  "Added the **assignmentID** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
           "Target": "educationSubmission"
