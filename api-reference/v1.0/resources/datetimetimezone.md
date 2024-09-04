@@ -224,6 +224,10 @@ Pacific/Apia
 
 Pacific/Kiritimati
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

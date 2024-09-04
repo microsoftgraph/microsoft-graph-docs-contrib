@@ -50,6 +50,36 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -1025,12 +1055,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
@@ -3118,8 +3150,6 @@ items:
           href: ../../api/identityuserflowattribute-delete.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
         - name: Remove attribute from a user flow
@@ -4256,3 +4286,47 @@ items:
         href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
       - name: Unified role
         href: ../../resources/unifiedrole.md
+- name: Partner Center security
+  items:
+  - name: Partner security score
+    items:
+    - name: Overview
+      href: ../../resources/partner-security-score-api-overview.md
+    - name: Customer insight
+      items:
+      - name: Customer insight
+        href: ../../resources/partner-security-customerinsight.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+    - name: Partner security score
+      items:
+      - name: Partner security score
+        href: ../../resources/partner-security-partnersecurityscore.md
+      - name: Get
+        href: ../../api/partner-security-partnersecurityscore-get.md
+      - name: List customer insights
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+      - name: List history
+        href: ../../api/partner-security-partnersecurityscore-list-history.md
+      - name: List requirements
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+    - name: Security requirement
+      items:
+      - name: Security requirement
+        href: ../../resources/partner-security-securityrequirement.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+      - name: Get
+        href: ../../api/partner-security-securityrequirement-get.md
+    - name: Complex types
+      items:
+      - name: Admins MFA enforced security requirement
+        href: ../../resources/partner-security-adminsmfaenforcedsecurityrequirement.md
+      - name: Customer MFA insight
+        href: ../../resources/partner-security-customermfainsight.md
+      - name: Customers MFA enforced security requirement
+        href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
+      - name: Customers spending budget security requirement
+        href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
+      - name: Response time security requirement
+        href: ../../resources/partner-security-responsetimesecurityrequirement.md
