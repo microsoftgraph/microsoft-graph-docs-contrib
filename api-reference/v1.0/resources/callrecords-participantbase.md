@@ -22,6 +22,7 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 |:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
 | identity    | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. |
+| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call participant. |
 
 ## JSON representation
 
@@ -32,14 +33,16 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.callRecords.participantBase",
   "optionalProperties": [
     "id",
-    "identity"
+    "identity",
+    "administrativeUnitInfos"
   ],
   "openType": true
 } -->
 ```json
 {
   "id": "String (identifier)",
-  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}]
 }
 ```
 
