@@ -1,3 +1,4 @@
+---
 title: "Update healthIssue"
 description: "Update the properties of a microsoft.graph.security.healthIssue object."
 author: "naalmog"
@@ -75,7 +76,9 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 The following example shows a request.
 <!-- {
-  "blockType": "request",
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.healthIssue",
+  "truncated": true,
   "name": "update_healthissue"
 }
 -->

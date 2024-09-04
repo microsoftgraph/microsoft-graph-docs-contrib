@@ -1,3 +1,4 @@
+---
 title: "Get healthIssue"
 description: "Read the properties and relationships of a microsoft.graph.security.healthIssue object."
 author: "naalmog"

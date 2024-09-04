@@ -1,3 +1,4 @@
+---
 title: "List healthIssue objects"
 description: "Get a list of the microsoft.graph.security.healthIssue objects and their properties."
 author: "naalmog"

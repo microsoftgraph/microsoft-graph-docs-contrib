@@ -1,9 +1,11 @@
+---
 title: "identityContainer resource type"
 description: "A container for security identities APIs."
 author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.date: 04/09/2024
+ms.subservice: "security"
 ---
 
 # identityContainer resource type

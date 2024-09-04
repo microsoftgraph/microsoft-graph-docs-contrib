@@ -1,9 +1,11 @@
+---
 title: "healthIssue resource type"
 description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified."
 author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.date: 04/09/2024
+ms.subservice: "security"
 ---
 
 # healthIssue resource type
