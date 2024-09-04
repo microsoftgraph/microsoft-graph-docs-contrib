@@ -8,7 +8,7 @@ ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# sitePage: save page as template
+# sitePage: saveAsTemplate
 
 Namespace: microsoft.graph
 
