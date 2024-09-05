@@ -301,7 +301,7 @@ The following Microsoft Entra roles are the least privileged roles for all read 
 
 For a summary of the least privileged admin roles for different group-related tasks, see [Least privileged roles to manage groups](/entra/identity/role-based-access-control/delegate-by-task#groups).
 
-You can also create custom roles for group-related tasks. Refer to the [Microsoft Entra built-in roles reference](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) to identify permissions that start with `microsoft.directory/groups/` which infer the permission-specific tasks, and [create a custom role](../api/rbacapplication-post-roledefinitions?view=graph-rest-1.0&tabs=http) with the selected permissions.
+You can also create custom roles for group-related tasks. Refer to the [Microsoft Entra built-in roles reference](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) to identify permissions that start with `microsoft.directory/groups/` which infer the permission-specific tasks, and [create a custom role](../api/rbacapplication-post-roledefinitions.md) with the selected permissions.
 
 ## Next step
 
