@@ -584,6 +584,8 @@ items:
       href: ../../api/alert-updatealerts.md
 - name: Microsoft Defender for Cloud Apps (preview)
   items:
+  - name: Overview
+    href: ../../resources/security-cloudappdiscovery-overview.md
   - name: Cloud app discovery report
     items:
     - name: Cloud app discovery report
