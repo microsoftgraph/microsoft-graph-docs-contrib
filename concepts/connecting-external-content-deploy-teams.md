@@ -45,7 +45,7 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
 
 ## Update Microsoft Graph permissions
 
-In the [Microsoft Entra admin center](https://entra.microsoft.com) > expand the **Identity** menu > select **Applications** > **App registrations** > select your app registration > select **API permissions** > select **Add a permission** > select **Microsoft Graph**. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
+In the [Microsoft Entra admin center](https://entra.microsoft.com), expand the **Identity** menu > select **Applications** > **App registrations** > select your app registration > select **API permissions** > select **Add a permission** > select **Microsoft Graph**. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
 
 ![Updated Microsoft Graph permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
@@ -89,7 +89,7 @@ Keep the following tips in mind:
 - You can ignore `subscriptionExpirationDateTime` and `subscriptionId`.
 - The change notification is for Microsoft Graph connector management only when the `@odata.type` of the resource data matches the one in the sample payload.
 - The `tenantId` identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](connecting-external-content-manage-connections.md), you must generate the app token on behalf of this customer's tenant ID.
-- You can call the Microsoft Graph API to get the customer's display name and default domain name. This can help you map the `tenantId` to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
+- You can call the Microsoft Graph API to get the customer's display name and default domain name. This step can help you map the `tenantId` to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
 - Within `resourceData`, use `state` to determine whether to create or delete connections. You need the `connectorsTicket` to create the connections.
 
 ### Handling "connector enable" notification
@@ -146,15 +146,15 @@ Content-type: application/json
 Content-length: 0
 ```
 
-You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification a number of times for about four hours. After that, the change notification is dropped and isn't delivered.
+You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification many times for about four hours. After that, the change notification is dropped and isn't delivered.
 
 > [!NOTE]
 > Send the `202 - Accepted` status code as soon as you receive the change notification, even before you validate its authenticity. You are acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance. If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10-minute period, all subsequent notifications will be delayed and retried for a period of 4 hours. If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10-minute period, all subsequent notifications will be dropped.
 
 To validate the authenticity of `validationToken`:
 
-- Verify that the token hasn't expired.
-- Verify that the token hasn't been tampered with and was issued by the Microsoft identity platform.
+- Verify that the token isn't expired.
+- Verify that the Microsoft identity platform issued the token and that the token isn't tampered with.
 - Verify that the `azp` claim in the token is **0bf30f3b-4a52-48df-9a82-234910c4a086**.
 - Verify the `aud` claim in the token is the same as the "{{Teams-appid}}" you specified.
 
@@ -275,7 +275,7 @@ In the Sample Prompts section, provide two sample prompts that Microsoft can use
 
 ### Connection Description
 
-In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft will use this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsoft 365. This description is optional.
+In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft uses this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsoft 365. This description is optional.
 
 ### Activity Settings
 
