@@ -158,7 +158,7 @@ To validate the authenticity of `validationToken`:
 - Verify that the `azp` claim in the token is **0bf30f3b-4a52-48df-9a82-234910c4a086**.
 - Verify the `aud` claim in the token is the same as the "{{Teams-appid}}" you specified.
 
-For details, see [Validating the authenticity of notification](/graph/webhooks-with-resource-data.md#validating-the-authenticity-of-notifications).
+For details, see [Validating the authenticity of notification](webhooks-with-resource-data.md#validating-the-authenticity-of-notifications).
 
 The following example shows a validation token.
 
