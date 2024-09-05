@@ -7,7 +7,7 @@ ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.topic: faq
-ms.date: 06/12/2024
+ms.date: 08/16/2024
 #Customer intent: As a developer, I want to understand more about why and how I should migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -17,9 +17,9 @@ This article provides answers to frequently asked questions about migrating from
 
 ## How is Microsoft Graph different from Azure AD Graph and why should I migrate my apps?
 
-Azure AD Graph offers access to only Microsoft Entra ID (formerly Azure AD) services. Microsoft Graph offers a single unified endpoint to access Microsoft Entra services and other Microsoft services such as Microsoft Teams, Microsoft Exchange, Microsoft Intune, and much more.
+Azure AD Graph offers access to only Microsoft Entra ID (formerly Azure AD) services. Microsoft Graph offers a single unified endpoint to access [Microsoft Entra identity and network access family of services](/entra/) and other Microsoft services such as Microsoft Teams, Microsoft Exchange, Microsoft Intune, and much more.
 
-[Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and entered the retirement phase on July 1, 2023 as we move all investments to Microsoft Graph. Migrate to Microsoft Graph to avoid loss of existing functionality and to access new features and capabilities.
+[Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph is currently in a phased retirement cycle as we move all investments to Microsoft Graph. Migrate to Microsoft Graph to avoid loss of existing functionality and to access new features and capabilities.
 
 ## As a developer, how do I identify apps that use Azure AD Graph?
 
@@ -71,9 +71,9 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps). Use this method to retrieve apps with their home directory in your tenant and apps with their home directories in other tenants.
 
-## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app, including the owner?
+## Microsoft sent me an email with a list of app IDs for apps using Azure AD Graph. How do I find the details of each app, including the owner?
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with privileges to read application details. The following least privileged roles are supported for this operation: *Application Administrator*, *Cloud Application Administrator*, *Security Reader*, **Security Operator*, *Hybrid Identity Administrator*, *Security Administrator*, and *Global Reader*. 
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least the [default user permissions](/entra/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions) to read application details.
 1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**. A filter pops up.
 1. Enter an app ID in the text box and select **Apply**. The list has narrowed down to the specified app.
@@ -82,7 +82,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 6. Select the app. This reveals the app's menu. From the left pane of the window, menu options such as **Owners** allow you to retrieve the app's details.
 
-## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. Are these all the affected apps?
+## Microsoft sent me an email with a list of app IDs for apps using Azure AD Graph. Are these all the affected apps?
 
 This list captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. For apps with seasonal use, their app ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the [three methods](#as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph) listed previously.
 
@@ -133,7 +133,8 @@ If you still need to configure Azure AD Graph permissions for your applications,
 
 + Use the Microsoft Entra admin center to find the APIs your organization uses.
 + Update the application manifest on the Microsoft Entra admin center.
-+ Use the [Update application](/graph/api/application-update) API in Microsoft Graph to update the [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) object.
++ Use the [Update application](/graph/api/application-update) API in Microsoft Graph to update the [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) object. For more information, see [Assign permissions to an app](/graph/tutorial-applications-basics?tabs=http#assign-permissions-to-an-app).
++ Use Microsoft Graph APIs to [grant permissions programmatically](/graph/permissions-grant-via-msgraph)
 + Use the [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK.
 
 For examples using the listed workarounds, see [Use Microsoft Graph to configure required Azure AD Graph permissions for an app registration](migrate-azure-ad-graph-configure-permissions.md)

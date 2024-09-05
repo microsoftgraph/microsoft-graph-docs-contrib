@@ -297,14 +297,6 @@ items:
       href: ../../resources/cloudpcserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-serviceplans.md
-  - name: Cloud PC shared use service plan
-    items:
-    - name: Cloud PC shared use service plan
-      href: ../../resources/cloudpcshareduseserviceplan.md
-    - name: List
-      href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: Get
-      href: ../../api/cloudpcshareduseserviceplan-get.md
   - name: Cloud PC snapshot
     items:
     - name: Cloud PC snapshot
@@ -375,8 +367,6 @@ items:
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
     - name: List front line service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
-    - name: List shared use service plans
-      href: ../../api/virtualendpoint-list-shareduseserviceplans.md
     - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
     - name: Create bulk action
@@ -448,6 +438,14 @@ items:
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
       href: ../../resources/cloudpcconnectivityresult.md
+    - name: Cloud PC cross-region disaster recovery setting
+      href: ../../resources/cloudpccrossregiondisasterrecoverysetting.md
+    - name: Cloud PC disaster recovery Azure connection setting
+      href: ../../resources/cloudpcdisasterrecoveryazureconnectionsetting.md
+    - name: Cloud PC disaster recovery Microsoft hosted network setting
+      href: ../../resources/cloudpcdisasterrecoverymicrosofthostednetworksetting.md
+    - name: Cloud PC disaster recovery network setting
+      href: ../../resources/cloudpcdisasterrecoverynetworksetting.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
@@ -492,9 +490,9 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
-    - name: Cloud PC windows setting
+    - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
-    - name: Cloud PC windows settings
+    - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md

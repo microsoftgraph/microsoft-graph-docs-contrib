@@ -1,7 +1,7 @@
 ---
 title: "Uninstall app in a chat"
 description: "Uninstall (remove) an app installed in a chat."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
