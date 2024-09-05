@@ -403,7 +403,6 @@
             "cloudPcProvisioningPolicy",
             "cloudPcReports",
             "cloudPcServicePlan",
-            "cloudPcSharedUseServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
@@ -427,6 +426,10 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
+            "cloudPcCrossRegionDisasterRecoverySetting",
+            "cloudPcDisasterRecoveryAzureConnectionSetting",
+            "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+            "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcHealthCheckItem",
@@ -798,7 +801,7 @@
       "name": "Employee experience",
       "childNodes": [
         {
-          "name": "Employee engagement (preview)",
+          "name": "Employee engagement",
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
@@ -876,7 +879,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -1893,6 +1897,28 @@
                 "delegatedAdminAccessDetails",
                 "delegatedAdminRelationshipCustomerParticipant",
                 "unifiedRole"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Partner Center security",
+          "childNodes": [
+            {
+              "name": "Partner security score",
+              "overview": "../../resources/partner-security-score-api-overview.md",
+              "resources":[
+                "microsoft.graph.partner.security.customerInsight",
+                "microsoft.graph.partner.security.partnerSecurityScore",
+                "microsoft.graph.partner.security.securityRequirement",
+                "microsoft.graph.partner.security.securityHistory"
+              ],
+              "complexTypes":[
+                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customerMfaInsight",
+                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.responseTimeSecurityRequirement"
               ]
             }
           ]

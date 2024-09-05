@@ -15,15 +15,13 @@ Namespace: microsoft.graph
 
 Get a list of [approvalItemResponse](../resources/approvalitemresponse.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "approvalitem-list-responses-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "approvalitem_list_responses" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalitem-list-responses-permissions.md)]
 
 ## HTTP request
@@ -59,6 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_approvalitemresponse"
@@ -67,6 +66,36 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/d3a7405e-452a-47e0-9c35-9335225ba55d/responses
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-approvalitemresponse-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-approvalitemresponse-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-approvalitemresponse-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-approvalitemresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-approvalitemresponse-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-approvalitemresponse-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-approvalitemresponse-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -96,15 +125,7 @@ Content-Type: application/json
               "id": "f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473"
             }
       },
-      "createdDateTime":"2022-04-12T20:51:19Z",
-      "onBehalfOf":[
-        {
-            "user":{
-              "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
-              "displayName":"Lilli Allik"
-            }
-        }
-      ]
+      "createdDateTime":"2022-04-12T20:51:19Z"
     },
     {
         "id": "d3a7405e-452a-47e0-9c35-9335225ba55d",
@@ -116,21 +137,7 @@ Content-Type: application/json
               "displayName": "Lilli Allik"
             }
         },
-        "createdDateTime":"2022-04-12T20:51:19Z",
-        "onBehalfOf":[
-        {
-            "user":{
-              "id":"f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473",
-              "displayName":"Jana Pihlak"
-            }
-        },
-        {
-            "group":{
-              "id":"da9fe780-a3de-48cc-a571-82faa05c8463",
-              "displayName":"Microsoft Executive"
-            }
-        }
-      ]
+        "createdDateTime":"2022-04-12T20:51:19Z"
     }
   ]
 }

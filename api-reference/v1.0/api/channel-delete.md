@@ -1,7 +1,7 @@
 ---
 title: "Delete channel"
 description: "Delete the channel."
-author: "nkramer" 
+author: "MSFTRickyCastaneda" 
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
