@@ -124,14 +124,34 @@ You need to send a `202 - Accepted` status code in your response to Microsoft Gr
 To validate the authenticity of **validatonToken**:
 - Verify that the token hasn't expired.
 - Verify that the token hasn't been tampered with and was issued by the Microsoft identity platform.
-- Verify that the **appId** claim in the **validationToken** is 0bf30f3b-4a52-48df-9a82-234910c4a086.
+- Verify that the **azp** claim in the **validationToken** is **0bf30f3b-4a52-48df-9a82-234910c4a086**.
 - Verify the **aud** claim in the **validationToken** is the same as the "{{Teams-appid}}" you specified.
 
 For details, see [Validating the authenticity of notification](/graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
 
 The following example shows a validation token.
-```
-{ "typ": "JWT", "alg": "RS256", "x5t": "nOo3ZDrODXEK1jKWhXslHR_KXEg", "kid": "nOo3ZDrODXEK1jKWhXslHR_KXEg" }.{ "aud": "e478830d-8f49-4c26-80c6-58f68e0f064b", "iss": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "iat": 1624649764, "nbf": 1624649764, "exp": 1624736464, "aio": "E2ZgYGjnuFglnX7mtjJzwR5lYaWvAA==", "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086", "appidacr": "2", "idp": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "oid": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "rh": "0.AX0AtrpOnw1SwEmFzHslx41KkzsP8wtSSt9ImoIjSRDEoIZ9AAA.", "sub": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "tid": "9f4ebab6-520d-49c0-85cc-7b25c78d4a93", "uti": "mIB4QKCeZE6hK71XUHJ3AA", "ver": "1.0" }.[Signature]
+
+```json
+{
+  "typ": "JWT",
+  "alg": "RS256",
+  "kid": "nOo3ZDrODXEK1jKWhXslHR_KXEg"
+}.{
+  "aud": "e478830d-8f49-4c26-80c6-58f68e0f064b",
+  "iss": "https://login.microsoftonline.com/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/v2.0",
+  "iat": 1624649764,
+  "nbf": 1624649764,
+  "exp": 1624736464,
+  "aio": "E2ZgYGjnuFglnX7mtjJzwR5lYaWvAA==",
+  "azp": "0bf30f3b-4a52-48df-9a82-234910c4a086",
+  "azpacr": "2",
+  "oid": "1e7d79fa-7893-4d50-bdde-164260d9c5ba",
+  "rh": "0.AX0AtrpOnw1SwEmFzHslx41KkzsP8wtSSt9ImoIjSRDEoIZ9AAA.",
+  "sub": "1e7d79fa-7893-4d50-bdde-164260d9c5ba",
+  "tid": "9f4ebab6-520d-49c0-85cc-7b25c78d4a93",
+  "uti": "mIB4QKCeZE6hK71XUHJ3AA",
+  "ver": "2.0"
+}.[Signature]
 ```
 
 ## Create or delete Microsoft Graph connections
