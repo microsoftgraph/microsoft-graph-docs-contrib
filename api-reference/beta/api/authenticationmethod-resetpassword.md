@@ -61,9 +61,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a **Location** header with a URL to check the status of the reset operation.
+If the caller provided a password in the request body, this method returns a `202 Accepted` response code and no response body. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
-If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
+If the caller used the system-generated password option, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body which contains a Microsoft-generated password. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
 ### Response headers
 
@@ -222,7 +222,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.passwordResetResponse"
 } -->
 
 ```http
