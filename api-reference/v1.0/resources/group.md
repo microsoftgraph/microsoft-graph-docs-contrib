@@ -363,6 +363,7 @@ The following JSON representation shows the resource type.
   "conversations": [{ "@odata.type": "microsoft.graph.conversation" }],
   "createdDateTime": "String (timestamp)",
   "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
+  "deletedDateTime":  "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "drive": { "@odata.type": "microsoft.graph.drive" },
