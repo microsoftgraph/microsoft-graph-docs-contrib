@@ -21,11 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/peopleadminsettings-list-namepronunciation.md)|[namePronunciationSettings](../resources/namepronunciationsettings.md) collection|Get a list of the [namePronunciationSettings](../resources/namepronunciationsettings.md) objects and their properties.|
-|[Create](../api/peopleadminsettings-post-namepronunciation.md)|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Create a new [namePronunciationSettings](../resources/namepronunciationsettings.md) object.|
 |[Get](../api/namepronunciationsettings-get.md)|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Read the properties and relationships of a [namePronunciationSettings](../resources/namepronunciationsettings.md) object.|
 |[Update](../api/namepronunciationsettings-update.md)|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Update the properties of a [namePronunciationSettings](../resources/namepronunciationsettings.md) object.|
-|[Delete](../api/peopleadminsettings-delete-namepronunciation.md)|None|Delete a [namePronunciationSettings](../resources/namepronunciationsettings.md) object.|
 
 ## Properties
 |Property|Type|Description|

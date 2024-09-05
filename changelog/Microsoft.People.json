@@ -2,30 +2,39 @@
   "changelog": [  
     {
      "ChangeList": [     
-        {
+       {
+        "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+        "ApiChange": "Resource",
+        "ChangedApiName": "namePronunciationSettings",
+        "ChangeType": "Addition",
+        "Description": "Added the [namePronunciationSettings](https://learn.microsoft.com/en-us/graph/api/resources/namePronunciationSettings?view=graph-rest-beta) resource.",
+        "Target": "namePronunciationSettings"
+       },
+       {
           "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
           "ApiChange": "Relationship",
-          "ChangedApiName": "namePronunciation",
+          "ChangedApiName": "namePronunciationSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **namePronunciation** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **namePronunciationSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },        
+        {
+          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/namepronunciationsettings-get?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         },
         {
           "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
           "ApiChange": "Method",
-          "ChangedApiName": "LIST",
+          "ChangedApiName": "UPDATE",
           "ChangeType": "Addition",
-          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-namepronunciation?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
-          "Target": "peopleAdminSettings"
-        },
-        {
-          "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
-          "ApiChange": "Method",
-          "ChangedApiName": "POST",
-          "ChangeType": "Addition",
-          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-post-namepronunciation?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/namepronunciationsettings-update?view=graph-rest-beta) method to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
         }
+
       ],
       "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
       "Cloud": "Prod",
