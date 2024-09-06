@@ -27,7 +27,6 @@ In delegated scenarios, the signed-in user must also be assigned a supported [Mi
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{id}
 PATCH /directory/administrativeUnits/{id}
 ```
 
@@ -36,6 +35,7 @@ PATCH /directory/administrativeUnits/{id}
 | Name      |Description|
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -67,7 +67,7 @@ The following example sets a dynamic membership rule on an existing administrati
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
+PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {

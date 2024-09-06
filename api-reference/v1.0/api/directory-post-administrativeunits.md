@@ -27,7 +27,6 @@ In delegated scenarios, the signed-in user must also be assigned a supported [Mi
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits
 POST /directory/administrativeUnits
 ```
 ## Request headers
@@ -67,7 +66,7 @@ The following example creates a new administrative unit with a dynamic membershi
   "name": "create_administrativeunit_from_administrativeunits"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/administrativeUnits
+POST https://graph.microsoft.com/v1.0/directory/administrativeUnits
 Content-type: application/json
 
 {
@@ -75,7 +74,8 @@ Content-type: application/json
     "description": "Seattle district technical schools administration",
     "membershipType": "Dynamic",
     "membershipRule": "(user.country -eq \"United States\")",
-    "membershipRuleProcessingState": "On"
+    "membershipRuleProcessingState": "On",
+    "visibility": "HiddenMembership"
 }
 ```
 
@@ -94,13 +94,14 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#administrativeUnits/$entity",
-    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipType": "Dynamic",
-    "membershipRuleProcessingState": "On"
+    "membershipRuleProcessingState": "On",
+    "visibility": "HiddenMembership"
 }
 ```
 
