@@ -62,7 +62,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If the caller provided a password in the request body, this method returns a `202 Accepted` response code and no response body. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
-If the caller used the system-generated password option, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body which contains a Microsoft-generated password. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
+If the caller used the system-generated password option, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) object in the response body which contains a Microsoft-generated password. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
 ### Response headers
 
