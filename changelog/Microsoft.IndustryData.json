@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "IndustryData-Run.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the `IndustryData-Run.ReadWrite.All` delegated and application permission to the [start](https://learn.microsoft.com/en-us/graph/api/industryData-industryDataRun-start?view=graph-rest-beta) method of the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industryData-industryDataRun?view=graph-rest-beta) resource.",
+          "Description": "Added the `IndustryData-Run.ReadWrite.All` delegated and application permissions to the [start](https://learn.microsoft.com/en-us/graph/api/industryData-industryDataRun-start?view=graph-rest-beta) method of the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industryData-industryDataRun?view=graph-rest-beta) resource.",
           "Target": "industryDataRun"
         }
       ],
