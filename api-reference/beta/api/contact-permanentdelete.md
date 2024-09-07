@@ -17,15 +17,13 @@ Permanently delete a contact and place it in the Purges folder in the dumpster i
 
 For more information about item retention, see [Configure Deleted Item retention and Recoverable Items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "contact-permanentdelete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "contact_permanentdelete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/contact-permanentdelete-permissions.md)]
 
 ## HTTP request

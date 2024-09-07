@@ -19,15 +19,13 @@ For more information about item retention, see [Configure Deleted Item retention
 
 >**Note:** Folders aren't placed in the Purges folder when they are permanently deleted. Permanently deleted folders are removed from the mailbox.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "event-permanentdelete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "event_permanentdelete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/event-permanentdelete-permissions.md)]
 
 ## HTTP request
