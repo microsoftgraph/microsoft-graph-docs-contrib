@@ -13,7 +13,10 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start a new [industryDataRun](../resources/industrydata-industrydatarun.md). Industry data automates a run every 12 hours, however users can use the start action to perform an on demand run. Industry Data service throttles run executions allowing 5 successful runs per 12 hours. Scheduling an on demand run will cause the next system scheduled run to be skipped if it set to execute within the next 10 hours.
+Start a new [industryDataRun](../resources/industrydata-industrydatarun.md). 
+
+Industry data automates a run every 12 hours, however users can use the start action to perform an on demand run. Industry Data service throttles run executions allowing 5 successful runs per 12 hours. Scheduling an on demand run will cause the next system sheduled run to be skipped if it set to execute within the next 10 hours.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -54,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 
