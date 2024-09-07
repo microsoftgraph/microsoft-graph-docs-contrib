@@ -265,7 +265,7 @@ The preceding limits apply to the following resources:
 
 ## Industry data ETL service limits
 
-The industry data service limits on-demand [runs](/graph/api/resources/industrydatarun) to a maximum of five successful starts every 12 hours.
+The industry data service limits on-demand [runs](/graph/api/resources/industrydata-industrydatarun) to a maximum of five successful starts every 12 hours.
 
 ## Information protection service limits
 
