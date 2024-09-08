@@ -1,6 +1,6 @@
 ---
 title: "Enroll in update management by Windows Autopatch"
-description: "Enroll a device in update management so that you can use the Windows Autopatch to manage content delivered from Windows Update to that device."
+description: "Enroll a device in update management so that you can use Windows Autopatch to manage content delivered from Windows Update to that device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
