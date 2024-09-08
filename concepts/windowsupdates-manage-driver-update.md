@@ -1,5 +1,5 @@
 ---
-title: "Deploy a driver update using the Windows Autopatch"
+title: "Deploy a driver update using Windows Autopatch"
 description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using Windows Autopatch."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience?view=graph-rest-beta&preserve-view=true) is created, you can assign devices to the deployment audience. When the deployment audience is successfully updated, Windows Autopatch will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
+After a [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience?view=graph-rest-beta&preserve-view=true) is created, you can assign devices to the deployment audience. When the deployment audience is successfully updated, Windows Autopatch starts collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 
@@ -327,7 +327,7 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
 
 
 ### Request
