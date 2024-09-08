@@ -32,9 +32,9 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[Get Microsoft Entra device](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete Microsoft Entra device](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Enroll in update management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by Windows Autopatch.|
-|[Enroll by ID](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by Windows Autopatch.|
+|[Enroll by ID](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources of the same type in update management by Windows Autopatch.|
 |[Unenroll from update management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by Windows Autopatch.|
-|[Unenroll by ID](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by Windows Autopatch.|
+|[Unenroll by ID](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources of the same type from update management by Windows Autopatch.|
 
 ## Properties
 |Property|Type|Description|
