@@ -25,9 +25,9 @@ As long as a device remains enrolled in feature update management, the device do
 
 ## Step 1: (Optional) Get a list of deployable updates
 
-You can query the windows autopatch catalog API to get a list of updates that can be deployed to devices as content in a deployment.
+You can query the Windows Autopatch catalog API to get a list of updates that can be deployed to devices as content in a deployment.
 
-The following example shows how to query for all Windows feature updates that are deployable by windows autopatch.
+The following example shows how to query for all Windows feature updates that are deployable by Windows Autopatch.
 
 ### Request
 
