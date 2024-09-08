@@ -1,13 +1,13 @@
 ---
-title: "Manage safeguards using the Windows Autopatch"
-description: "When you deploy updates with the Windows Autopatch, it automatically prevents devices with issues from being offered the update."
+title: "Manage safeguards using Windows Autopatch"
+description: "When you deploy updates with Windows Autopatch, it automatically prevents devices with issues from being offered the update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Manage safeguards using the Windows Autopatch
+# Manage safeguards using Windows Autopatch
 
 When you deploy updates with Windows Autopatch, there is automatic safeguard of deployments by preventing devices with known or likely issues from being offered the update by Windows Update.
 
