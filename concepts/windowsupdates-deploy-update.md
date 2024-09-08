@@ -1,6 +1,6 @@
 ---
 title: "Deploy a feature update using Windows Autopatch"
-description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using the Windows Autopatch."
+description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
@@ -9,14 +9,14 @@ doc_type: conceptualPageType
 
 # Deploy a feature update using Windows Autopatch
 
-With the Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, there is support for [deployments](windowsupdates-deployments.md) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This article focuses on deployments of feature updates. For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
+With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, there is support for [deployments](windowsupdates-deployments.md) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This article focuses on deployments of feature updates. For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 When you deploy a feature update to a device, Windows Update offers the specified update to the device if it hasn't yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or beyond version 20H2, it stays on its current version. If the device isn't enrolled in feature update management, the device isn't affected by this operation.
 
 As long as a device remains enrolled in feature update management, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using Windows Autopatch.
 
 > [!IMPORTANT]
-> By using the Windows Autopatch to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
+> By using Windows Autopatch to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
 
 ## Prerequisites
 
