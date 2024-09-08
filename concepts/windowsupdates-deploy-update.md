@@ -1,5 +1,5 @@
 ---
-title: "Deploy a feature update using the Windows Autopatch"
+title: "Deploy a feature update using Windows Autopatch"
 description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using the Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Deploy a feature update using the Windows Autopatch
+# Deploy a feature update using Windows Autopatch
 
 With the Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, there is support for [deployments](windowsupdates-deployments.md) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This article focuses on deployments of feature updates. For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
