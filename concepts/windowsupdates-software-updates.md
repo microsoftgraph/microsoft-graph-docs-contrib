@@ -17,9 +17,9 @@ You might already be familiar with the [Microsoft Update Catalog](https://www.ca
 
 In general, there are three high-level categories of Windows updates: feature updates, quality updates, and driver updates. Quality updates category includes security updates.
 
-Windows Autopatch [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) also categorizes updates as feature, quality, and driver updates. [Quality update catalog entries](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta&preserve-view=true) define security and non-security updates in a specific way and exclude driver updates. Note that the definition is different from the Microsoft Update Catalog. See [quality updates](#quality-updates) below for more details.
+Windows Autopatch [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) also categorizes updates as feature, quality, and driver updates. [Quality update catalog entries](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta&preserve-view=true) define security and non-security updates in a specific way and exclude driver updates. Note that the definition is different from the Microsoft Update Catalog. For more information, see [quality updates](#quality-updates).
 
-Effectively, Windows Autopatch currently deploys only feature updates, _security_ quality updates, and driver updates as defined in its catalog. Windows Autopatch currently does not deploy non-security quality updates.
+Effectively, Windows Autopatch currently deploys only feature updates, _security_ quality updates, and driver updates as defined in its catalog. Windows Autopatch currently doesn't deploy nonsecurity quality updates.
 
 To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](/windows/deployment/update/waas-quick-start).
 
@@ -61,7 +61,7 @@ Feature updates in the Windows Autopatch catalog are identified by version. Entr
 |----------|---------------------------------------------------|
 | version  | Feature update version for the Windows 10 release.|
 
-Below are some examples of feature updates in the Windows Autopatch catalog.
+The following examples show feature updates in the Windows Autopatch catalog.
 
 | Display name                               | Version |
 |--------------------------------------------|---------|
@@ -88,7 +88,7 @@ The following table shows the classification mapping between the Windows Autopat
 | Security         | Security Update<br>Critical Update<br>Update (if needed as a dependency)<br>Servicing Stack Update (if needed as a dependency) |
 | Non-security     | Update<br>Servicing Stack Update                                                                                               |
 
-The entries from the Microsoft Update Catalog corresponding to a quality update in the Windows Autopatch catalog with `classification = security` and `releaseDateTime = 2021-03-09` might include the following.
+The entries from the Microsoft Update Catalog that correspond to a quality update in the Windows Autopatch catalog with `classification = security` and `releaseDateTime = 2021-03-09` might include the following.
 
 | Title                                                                                   | Products                           | Classification   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
