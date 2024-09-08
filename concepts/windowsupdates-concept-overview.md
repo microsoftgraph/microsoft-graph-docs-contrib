@@ -19,7 +19,7 @@ IT professionals and management tool vendors alike can use Windows Autopatch to:
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, Windows Autopatch supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the context of Windows Autopatch, see [Windows Autopatch Overview](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). To track the progress and status of your deployments, see [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview). This solution is integrated with Windows Autopatch to enable per deployment reporting, monitoring, and troubleshooting.
+Today, Windows Autopatch supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the context of Windows Autopatch, see [What is Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). To track the progress and status of your deployments, see [Windows Update for Business reports overview](/windows/deployment/update/wufb-reports-overview). This solution is integrated with Windows Autopatch to enable per deployment reporting, monitoring, and troubleshooting.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Quality updates released by Microsoft deliver both security and non-security fix
 
 ## Drivers and firmware
 
-Driver and firmware updates are published to Windows Update by independent hardware vendors and original equipment manufacturers, who continuously build new drivers and firmware or update existing ones. Windows Autopatch will only show you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices . Windows Autopatch takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that will help keep your devices protected and productive.
+Driver and firmware updates are published to Windows Update by independent hardware vendors and original equipment manufacturers, who continuously build new drivers and firmware or update existing ones. Windows Autopatch only shows you driver and firmware updates that are applicable and better (normally by version number or version date) than what is currently installed on your devices. Windows Autopatch takes the guess work out of identifying what drivers and firmware updates apply to your devices and lets you focus on approving content that help keep your devices protected and productive.
 
 ## Capabilities of Windows Autopatch
 
@@ -88,6 +88,6 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 
 ## API reference
 
-Looking for the API reference for Windows Autopatch?
+Looking for the API reference for this service?
 
 See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).
