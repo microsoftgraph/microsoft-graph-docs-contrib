@@ -65,9 +65,9 @@ Deployments move through lifecycle states as described in the following table.
 |--------------------------------------|------------------------------------------|
 | `scheduled` → `offering`             | Scheduling condition is met.             |
 | `offering` → `scheduled`             | Scheduling condition isn't met.         |
-| `scheduled` or `offering` → `paused` | There is a request or automatic action to pause. |
-| `paused` → `scheduled` or `offering` | There is no longer a request or automatic action to pause. |
-| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that Windows Autopatch can't resolve. |
+| `scheduled` or `offering` → `paused` | There's a request or automatic action to pause. |
+| `paused` → `scheduled` or `offering` | There's no longer a request or automatic action to pause. |
+| `offering`, `scheduled`, or `paused` → `faulted` | There's an error that Windows Autopatch can't resolve. |
 
 ### Resource model
 
@@ -81,4 +81,4 @@ You can assign a device to multiple deployments at one time. These deployments c
 
 When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the content is offered in a sequence based on the recommendation from Microsoft.
 
-When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published January 2023 and 1.0.0.1 published February 2023), the content ranked higher by Microsoft is offered. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and isn't ready to offer content. In that case, the other deployment delivers content to the device.
+When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published in January 2023 and 1.0.0.1 published in February 2023), the content ranked higher by Microsoft is offered. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and isn't ready to offer content. In that case, the other deployment delivers content to the device.
