@@ -1,13 +1,13 @@
 ---
-title: "Manage monitoring rules using the Windows Autopatch"
-description: "Use the Windows Autopatch to create a monitoring rule or resume deployments paused by a monitoring rule."
+title: "Manage monitoring rules using Windows Autopatch"
+description: "Use Windows Autopatch to create a monitoring rule or resume deployments paused by a monitoring rule."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Manage monitoring rules using the Windows Autopatch
+# Manage monitoring rules using Windows Autopatch
 
 For deployments initiated by Windows Autopatch, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
