@@ -1,5 +1,5 @@
 ---
-title: "Enroll in update management by the Windows Autopatch"
+title: "Enroll in update management by Windows Autopatch"
 description: "Enroll a device in update management so that you can use the Windows Autopatch to manage content delivered from Windows Update to that device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
@@ -7,11 +7,11 @@ ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Enroll in update management by the Windows Autopatch
+# Enroll in update management by Windows Autopatch
 
 When you enroll a device in update management by Windows Autopatch, you can use Windows Autopatch to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category.
 
-Today, there is support for device enrollment for Windows 10/11 feature updates and driver updates. At this time, there is no requirement for device enrollment in management of Windows 10/11 quality updates in order to deploy expedited quality updates.
+Today, there is support for device enrollment for Windows 10/11 feature updates and driver updates. At this time, no device enrollment is required in the management of Windows 10/11 quality updates in order to deploy expedited quality updates.
 
 ## Enroll the device in update management
 
@@ -52,7 +52,7 @@ HTTP/1.1 202 Accepted
 
 ## Check the enrollment state of a device
 
-You can check the enrollment state of a device by [getting the device](/graph/api/windowsupdates-azureaddevice-get) and looking at the **enrollments** and **errors** properties on the **azureADDevice** object. A device that is successfully enrolled in update management has an [updateManagementEnrollment](/graph/api/resources/windowsupdates-updatemanagementenrollment) object in the enrollments collection, and it doesn't have any [updatableAssetError](/graph/api/resources/windowsupdates-updatableasseterror) objects in the errors collection. A device that tried to enroll but encountered an error has populated collections for both enrollments and errors. A device for which there are no enrollment requests has empty collections for both enrollments and errors.
+You can check the enrollment state of a device by [getting the device](/graph/api/windowsupdates-azureaddevice-get) and looking at the **enrollments** and **errors** properties on the **azureADDevice** object. A device that is successfully enrolled in update management has an [updateManagementEnrollment](/graph/api/resources/windowsupdates-updatemanagementenrollment) object in the enrollments collection, and it doesn't have any [updatableAssetError](/graph/api/resources/windowsupdates-updatableasseterror) objects in the errors collection. A device that tried to enroll but encountered an error has populated collections for both enrollments and errors. A device with no enrollment requests has empty collections for both enrollments and errors.
 
 The following example shows a device that is successfully enrolled in management of feature updates.
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 ## Unenroll from management or unregister  
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer considered managed and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer considered managed and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered and is still enrolled and receiving content for other update categories, if applicable.
 
 ### Request
 
