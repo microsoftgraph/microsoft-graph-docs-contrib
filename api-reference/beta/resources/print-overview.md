@@ -23,7 +23,7 @@ Use the Universal Print API to:
 
 The cloud printing API provides the following key features.
 
-## Print devices
+## Access print devices
 
 The [printerShare](./printershare.md) and [printer](./printer.md) resources define the public view and the actual printer for physical printers that are discoverable by users and applications. A **printerShare** is a logical view of **printer** resources that represent physical printers. The underlying physical printers can be changed without changing the printer share, which enables organizations to maintain high printer availability. 
 
