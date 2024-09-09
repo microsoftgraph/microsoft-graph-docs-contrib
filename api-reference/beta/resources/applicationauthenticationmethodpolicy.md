@@ -53,7 +53,7 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
 | asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
 | trustedCertificateAuthority  | Enforce the list of trusted certificate authorities.      | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.   |
-| nonDefaultUriAddition  | Block new identifier URIs for apps except 'default' URI format. | Block new identifier URIs for apps, unless they are of the format api://{appId}   |
+| nonDefaultUriAddition  | Block new identifier URIs for apps except the "default" URI format. | Block new identifier URIs for apps unless they are of the format `api://{appId}`.   |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
