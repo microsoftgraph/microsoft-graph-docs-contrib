@@ -21,7 +21,7 @@ Inherits from [policyBase](policybase.md).
 
 | Method                                                | Return type                                                             | Description                                                                         |
 | :---------------------------------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [Get](../api/tenantappmanagementpolicy-get.md)       | [tenantAppManagementPolicy](tenantappmanagementpolicy.md) | Read the properties of the default app management policy set for applications and service principals. |
+| [Get](../api/tenantappmanagementpolicy-get.md)       | [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) | Read the properties of the default app management policy set for applications and service principals. |
 | [Update](../api/tenantappmanagementpolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
 
 ## Properties
