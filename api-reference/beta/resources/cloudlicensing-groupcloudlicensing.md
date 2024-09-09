@@ -26,7 +26,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|usageRights|[usageRight](../resources/cloudlicensing-usageright.md) collection|The rights that all direct members of the group have to use various services, granted by the combination of its assigned licenses.|
+|usageRights|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|The rights that all direct members of the group have to use various services, granted by the combination of its assigned licenses.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
