@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getmicrosoft365copilotusercountsummary-permissions.md)]
 
-> **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+[!INCLUDE [rbac-m365-copilot-apis](../includes/rbac-for-apis/rbac-m365-copilot-apis.md)]
 
 ## HTTP request
 
