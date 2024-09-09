@@ -17,7 +17,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **namePronunciationSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
           "Target": "peopleAdminSettings"
-        },        
+        }      
       ],
       "Id": "8a7c8eff-e942-4888-80b2-447a38615689",
       "Cloud": "Prod",
