@@ -107,8 +107,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -207,8 +207,8 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -325,8 +325,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -426,8 +426,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -526,8 +526,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -569,8 +569,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
-> ** Note:** 
-> The response object shown here might be shortened for readability. 
+>** Note:** 
+>The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
