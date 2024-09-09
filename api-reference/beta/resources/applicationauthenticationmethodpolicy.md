@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Microsoft Entra application authentication methods API overview 
+# Microsoft Entra application management policies API overview 
 
 Namespace: microsoft.graph
 

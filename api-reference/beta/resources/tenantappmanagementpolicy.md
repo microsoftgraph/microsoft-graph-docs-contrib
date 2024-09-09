@@ -60,10 +60,10 @@ The following JSON representation shows the resource type.
   "displayName": "string",
   "isEnabled": false,
   "applicationRestrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
+    "@odata.type":"microsoft.graph.appManagementApplicationConfiguration"
   },
   "servicePrincipalRestrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
+    "@odata.type":"microsoft.graph.appManagementServicePrincipalConfiguration"
   }
 }
 ```

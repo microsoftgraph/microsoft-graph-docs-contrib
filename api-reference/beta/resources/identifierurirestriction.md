@@ -21,7 +21,7 @@ Configuration object to configure a restriction for identifier URIs on applicati
 | excludeAppsReceivingV2Tokens                | Boolean                         | if `True`, the restriction will not be enforced for applications that are configured to receive V2 tokens in Entra ID, else, if `False` the restriction will be enforced for  those applications.|
 | excludeSaml                                 | Boolean                         | if `True`, the restriction will not be enforced for applications that are configured to as SAML in Entra ID, else, if `False` the restriction will be enforced for  those applications.|
 | restrictForAppsCreatedAfterDateTime         | String                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
-| state                                       | [appManagementRestrictionState](./enums.md#appmanagementrestrictionstate-values)   |  String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
+| state                                       | appManagementRestrictionState   |  String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
 
 ## Relationships
 None.
