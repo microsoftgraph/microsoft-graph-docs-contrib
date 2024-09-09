@@ -2263,6 +2263,64 @@
       "CreatedDateTime": "2024-08-14T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionItem](https://learn.microsoft.com/en-us/graph/api/resources/actionItem?view=graph-rest-beta) resource.",
+          "Target": "actionItem"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callAiInsightViewPoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [callAiInsightViewPoint](https://learn.microsoft.com/en-us/graph/api/resources/callAiInsightViewPoint?view=graph-rest-beta) resource.",
+          "Target": "callAiInsightViewPoint"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingNote",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingNote](https://learn.microsoft.com/en-us/graph/api/resources/meetingNote?view=graph-rest-beta) resource.",
+          "Target": "meetingNote"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingNoteSubpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingNoteSubpoint](https://learn.microsoft.com/en-us/graph/api/resources/meetingNoteSubpoint?view=graph-rest-beta) resource.",
+          "Target": "meetingNoteSubpoint"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mentionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [mentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/mentionEvent?view=graph-rest-beta) resource.",
+          "Target": "mentionEvent"
+        },
+        {
+          "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callAiInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [callAiInsight](https://learn.microsoft.com/en-us/graph/api/resources/callAiInsight?view=graph-rest-beta) resource.",
+          "Target": "callAiInsight"
+        }
+      ],
+      "Id": "d2f6fa17-3439-430e-ace7-6c90f2848ff9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-09T09:04:47.8844588Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     }
   ]
 }
