@@ -57,6 +57,8 @@ To remove a **siteProtectionUnit** from the policy, specify the `@removed` annot
 
 If successful, this method returns a `200 OK` response code and an updated [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
