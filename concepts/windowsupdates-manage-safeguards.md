@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Manage safeguards using Windows Autopatch
 
-When you deploy updates with Windows Autopatch, there is automatic safeguard of deployments by preventing devices with known or likely issues from being offered the update by Windows Update.
+When you deploy updates with Windows Autopatch, deployments are automatically safeguarded by preventing devices with known or likely issues from being offered the update by Windows Update.
 
 Safeguards are compatible with [deployments](/graph/windowsupdates-deployments) of Windows 11 and Windows 10 feature updates. Safeguard holds against known issues are available for deployments of Windows 11 and Windows 10 feature updates, and safeguard holds against likely issues are available for deployments of Windows 11.
 
