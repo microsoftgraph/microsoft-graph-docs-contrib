@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
 |photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Represents administrator settings that manage the support for item photo updates in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
-|namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Represents administrator settings that manage the support of name pronunciation in an organization.|
+|namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|The administrator settings that manage the support of name pronunciation in an organization.|
 
 ## JSON representation
 
