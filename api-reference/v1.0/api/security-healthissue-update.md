@@ -47,23 +47,9 @@ PATCH /security/identities/healthIssues/{healthIssueId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the health issue. Required.|
-|healthIssueType|microsoft.graph.security.healthIssueType|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. Optional.|
-|issueTypeId|String|The type identifier of the health issue. You can find a comprehensive list of all health issues and their identifiers at the following link: https://go.microsoft.com/fwlink/?linkid=2245397. Optional.|
-|severity|microsoft.graph.security.healthIssueSeverity| The severity of the health issue. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`. Optional.|
-|status|microsoft.graph.security.healthIssueStatus|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|The date and time of when the health issue was generated.|
-|lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated. Required.|
-|domainNames|String collection|List of the fully qualified domain name of the domains or the sensors the health issue is realated to. Optional.|
-|sensorDNSNames|String collection|List of the dns names of the sensors the health issue is realated to. Optional.|
-|description|String|More detailed information on the health issue. Required.|
-|recommendations|String collection|This field contains a list of recommended actions that can be taken to resolve the issue. These actions may include instructions on how to investigate the issue further, and they are not limited to pre-written responses. The recommended actions are intended to provide guidance on how to address the issue effectively and efficiently. Required.|
-|recommendedActionCommands|String collection|This field may contain a list of commands from the product's PowerShell Module that can be used to resolve the issue, if available. If there are no commands that can be used to solve the issue, the field will be left empty. The commands, if present, are intended to provide a quick and efficient way to address the issue. These commands will be executed in order for the single recommended fix. Required.|
-|additionalInformation|String collection|Additional information on the issue, such as a list of items to fix. Required.|
-
+|status|microsoft.graph.security.healthIssueStatus|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 
 
 ## Response

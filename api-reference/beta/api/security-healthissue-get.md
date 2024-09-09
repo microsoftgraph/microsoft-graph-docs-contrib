@@ -31,8 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/identities/healthIssues/{healthIssueId}
+GET /security/identities/healthIssues/bf600aba-e975-0274-d332-c0f79dc75740
 ```
+
+## Optional query parameters
+
+This method supports the following OData query parameters to help customize the response: `$select`. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
