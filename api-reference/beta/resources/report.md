@@ -1,6 +1,6 @@
 ---
 title: "Working with Microsoft 365 usage reports in Microsoft Graph"
-description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all."
+description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all."
 ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
@@ -21,7 +21,7 @@ Microsoft Graph controls access to resources via permissions. You must specify t
 
 ## Settings
 
-In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values aren't displayed. You can use the [adminReportSettings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
+In Microsoft 365 reports, user information such as usernames, groups, and sites are concealed; actual values aren't displayed. You can use the [adminReportSettings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
 
 ## Cloud deployments
 
@@ -35,7 +35,7 @@ The following table shows the availability for each API across all cloud deploym
 | [Microsoft 365 active users](../resources/reportroot.md#microsoft-365-active-users)                             | ✔                              | ✔                                     | ✔                                              | ➖                                      |
 | [Microsoft 365 Apps usage](../resources/reportroot.md#microsoft-365-apps-usage)                                 | ✔                              | ✔                                     | ✔                                              | ➖                                      |
 | [Microsoft 365 browser usage](../resources/reportroot.md#microsoft-365-browser-usage)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
-| [Microsoft 365 groups activity](../resources/reportroot.md#microsoft-365-groups-activity)                       | ✔                              | ➖                                    | ✔                                              | ➖                                      |
+| [Microsoft 365 Groups activity](../resources/reportroot.md#microsoft-365-groups-activity)                       | ✔                              | ➖                                    | ✔                                              | ➖                                      |
 | [Microsoft Forms Usage](../resources/reportroot.md#forms-activity)                                              | ✔                              | ➖                                    |
 | [Microsoft Teams device usage](../resources/reportroot.md#microsoft-teams-device-usage)                         | ✔                              | ✔                                     | ✔                                              | ✔                                       |
 | [Microsoft Teams team activity](../resources/reportroot.md#microsoft-teams-team-activity)                       | ✔                              | ✔                                     | ✔                                              | ✔                                       |
