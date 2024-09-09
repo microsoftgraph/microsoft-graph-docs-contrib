@@ -1,18 +1,18 @@
 ---
-title: "List cloud licensing usageRights for a group"
-description: "Get a list of the usageRight objects and their properties for a group."
+title: "List group usageRights"
+description: "Get a list of the usageRight objects granted to a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# List usageRight objects for a group
+# List group usageRights
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects for a given group.
+Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) objects in the response body.
 
 ## Examples
 
