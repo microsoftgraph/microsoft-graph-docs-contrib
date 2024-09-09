@@ -69,6 +69,9 @@ This resource supports:
 | [Update event](../api/group-update-event.md) | None | Update the properties of an event object. |
 | [Delete event](../api/group-delete-event.md) | None | Delete event object. |
 | [List calendar view](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
+| **Cloud licensing** |  |  |
+|[List group usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
+|[Get group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 | **Conversations** |  |  |
 | [List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection | Get a conversation object collection. |
 | [Create conversation](../api/group-post-conversations.md) | [conversation](conversation.md) | Create a new conversation by posting to the conversations collection. |
@@ -149,7 +152,7 @@ name. |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). Read-only. |
 | autoSubscribeNewMembers | Boolean | Indicates if new members added to the group are auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | classification | String | Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
-| cloudLicensing | [microsoft.graph.cloudLicensing.userCloudLicensing](./cloudlicensing-usercloudlicensing.md) | The user's relationships to Cloud Licensing entities. |
+| cloudLicensing | [microsoft.graph.cloudLicensing.userCloudLicensing](../resources/cloudlicensing-usercloudlicensing.md) | The user's relationships to Cloud Licensing entities. |
 | createdByAppId | String | App ID of the app used to create the group. Can be null for some groups. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`). |
 | createdDateTime | DateTimeOffset | Timestamp of when the group was created. The value can't be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
 | deletedDateTime | DateTimeOffset | For some Microsoft Entra objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to `null`. Inherited from [directoryObject](../resources/directoryobject.md). |
