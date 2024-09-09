@@ -1,18 +1,18 @@
 ---
-title: "Get a cloud licensing usageRight for a user"
-description: "Read the properties and relationships of a usageRight object for a user."
+title: "Get user usageRight"
+description: "Get the properties and relationships of a usageRight object granted to a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get usageRight for a user
+# Get user usageRight
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object.
+Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a user.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [usageRight](../resources/cloudlicensing-usageright.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) object in the response body.
 
 ## Examples
 
