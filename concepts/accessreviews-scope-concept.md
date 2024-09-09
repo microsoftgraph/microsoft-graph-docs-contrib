@@ -31,6 +31,11 @@ To configure the scope by using the [accessReviewQueryScope resource type](/grap
 
 **accessReviewInactiveUsersQueryScope** requires all the properties of **accessReviewQueryScope** and includes an **inactiveDuration** property.
 
+## Examples
+
+> [!NOTE]
+> The examples in this section show the only valid combinations of *principalScopes* and *resourceScopes* that the Microsoft Graph API supports.
+
 ### Example 1: Review all users with direct and transitive assignment to a group
 
 **Example scenario:** Suppose group A has three direct members - users AU1 and AU2 and group G1. Group G1 on the other hand has two members - users GU1 and GU2. Users GU1 and GU2 are therefore transitive members of the nested group G1. Four objects are included in the review: users AU1, AU2, GU1, and GU2.

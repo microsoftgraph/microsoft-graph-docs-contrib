@@ -647,6 +647,7 @@ Namespace: microsoft.graph
 | saml20 |
 | unknownFutureValue |
 | remoteDesktopToken |
+| refreshToken       |
 
 ### protocolType values
 
