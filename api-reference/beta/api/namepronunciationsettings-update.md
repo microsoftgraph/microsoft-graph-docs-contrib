@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.namePronunciationSettings",
-  "isEnabledInOrganization": "Boolean"
+  "isEnabledInOrganization": true
 }
 ```
 
