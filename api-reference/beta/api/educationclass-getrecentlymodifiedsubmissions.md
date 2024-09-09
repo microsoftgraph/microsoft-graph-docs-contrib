@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
-If you specify an unsupported property for the `$orderby` query parameter, the method returns a `400` error message.
+>**Note:** If you specify an unsupported property for the `$orderby` query parameter, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -325,7 +325,7 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -426,7 +426,7 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -526,7 +526,7 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -569,7 +569,7 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->** Note:** 
+>**Note:** 
 >The response object shown here might be shortened for readability. 
 
 <!-- {
