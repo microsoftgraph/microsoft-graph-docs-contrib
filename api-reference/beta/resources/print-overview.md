@@ -11,7 +11,7 @@ ms.subservice: "universal-print"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Universal Print is a modern print solution that organizations can use to manage their print infrastructure through Microsoft cloud services. Organizations use Universal Print to move key Windows Server print functionality to the Microsoft 365 cloud. This helps to simplify and secure their print infrastructure, streamline printer management, enable users to discover printers by location, and more.
+Universal Print is a modern print solution that organizations can use to manage their print infrastructure through Microsoft cloud services. Organizations use Universal Print to move key Windows Server print functionality to the Microsoft 365 cloud. Using Universal print helps organizations simplify and secure their print infrastructure, streamline printer management, enable users to discover printers by location, and more.
 
 Use the Universal Print API to:
 
@@ -36,15 +36,15 @@ Cloud-enabled printers can connect directly to Universal Print, but legacy print
 You can manage user and group print permissions with Universal Print APIs that operate on **printerShare** resources. You can add, remove, and list authorized users and groups to a printer share. The permissions applied to the printer share apply to all the physical printers that the share contains. In addition, the **printerShare** resource includes **allowedUsers** and **allowedGroups** navigation properties that contain the users and groups that are authorized to use the printers that the printer share contains.
 
 
-## Manage print jobs, tasks and operations
+## Manage print jobs, tasks, and operations
 
 [printJob](./printjob.md) objects are the basic unit of work for printing. They have a list of documents to print and another list of [printTask](./printtask.md) objects that describe the print operation to complete. Resources that derive from the [printOperation](./printoperation.md) base resource type, such as [printerCreateOperation](./printercreateoperation.md), represent long-running operations such as creating a new printer.
 
-To print a document, create a **printJob** and pass its unique identifier to [printDocument: createUploadSession](../api/printdocument-createuploadsession.md) after the print task for the print job enters the **processing** state. Then use the session identifier that you received when you created the upload session to send the document to the **document** property of the **printJob**. After this operation completes, you can start the **printjob** to print your document. For more information about uploading documents, see [Upload documents using the Microsoft Graph Universal Print API](/graph/upload-data-to-upload-session).
+To print a document, create a **printJob** and pass its unique identifier to [printDocument: createUploadSession](../api/printdocument-createuploadsession.md) after the print task for the print job enters the **processing** state. Then use the session identifier that you received when you created the upload session to send the document to the **document** property of the **printJob**. After this operation completes, you can start the **printJob** to print your document. For more information about uploading documents, see [Upload documents using the Microsoft Graph Universal Print API](/graph/upload-data-to-upload-session).
 
 ## Implement pull printing
 
-In pull printing, the user swipes their badge at a physical printer, which notifies your application via a [printTaskTrigger](./printtasktrigger.md). When your application receives this notification, it can fetch the jobs from the virtual printer and the user can then select which jobs to print. This workflow increases security by reducing the number of unattended documents at the physical printer. 
+In pull printing, the user swipes their badge at a physical printer to enable printing. To implement pull printing, first create a virtual printer and then create a [printTaskTrigger](./printtasktrigger.md) on it. When a job is submitted, it pauses and your application can be notified. When the user swipes their badge at the physical printer, your application can redirect the job from virtual printer to the physical printer. This workflow increases security by reducing the number of unattended documents at the physical printer. 
 
 ## Get print usage data and reports
 
