@@ -1,18 +1,18 @@
 ---
-title: "List cloud licensing usageRights for a user"
-description: "Get a list of the usageRight objects and their properties for a user."
+title: "List user usageRights"
+description: "Get a list of the usageRight objects granted to a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# List usageRight objects for a user
+# List user usageRight
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [usageRight](../resources/cloudlicensing-usageright.md) objects for enterprise users. This API returns details about licenses that are directly assigned and those licenses transitively assigned through memberships in licensed groups.
+Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a user. This API returns details about licenses that are directly assigned and those licenses transitively assigned through memberships in licensed groups.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.cloudLicensing.usageRight](../resources/usageright.md) objects in the response body.
 
 ## Examples
 
