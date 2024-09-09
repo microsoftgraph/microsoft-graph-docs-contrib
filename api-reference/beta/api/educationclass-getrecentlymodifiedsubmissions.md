@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve recently modified submissions up to maximum of last 7 days. Only teachers and applications with application permissions can perform this operation.
+Retrieve submissions modified in the previous seven days. Only teachers and applications with application permissions can perform this operation.
 
-A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent their work.
+A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the submission represent their work.
 
-A teacher or application with application permissions has full access to all **submissions**.
+A teacher or application with application permissions has full access to all **submission** objects.
 
-The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the **assignment** has been released.
+The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students can't see the grade or feedback until the **assignment** is released.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,11 +36,11 @@ GET /education/classes/{class-id}/getRecentlyModifiedSubmissions
 ```
 
 ## Optional query parameters
-This method supports the `$orderby`, `$top`, `$filter`, `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$orderby`, `$top`, `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use `$orderby` for the following property of [educationClass](../resources/educationclass.md) resource `lastModifiedDateTime`.
+The `$orderby` query parameter only supports the `lastModifiedDateTime` property of the [educationClass](../resources/educationclass.md) resource.
 
-Default ordering is based on `lastModifiedDateTime` resource in descending order.
+The default ordering is by descending `lastModifiedDateTime` property values.
 
 ## Request headers
 | Header       | Value |
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
-If invalid `$orderby` property is specified, the method returns a `400` error message.
+If you specify an unsupported property for the `$orderby` query parameter, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -71,7 +71,7 @@ Content-type: application/json
     }
 }
 ```
-If invalid `$filter` property is specified, the method returns a `400` error message.
+If you specify an unsupported value for the `$filter` query parameter, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -107,8 +107,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -207,8 +207,8 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -325,8 +325,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -426,8 +426,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -526,8 +526,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -569,8 +569,8 @@ GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5
 #### Response
 The following example shows the response.
 
->**Notes:** 
->The response object shown here might be shortened for readability. 
+> ** Note:** 
+> The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
