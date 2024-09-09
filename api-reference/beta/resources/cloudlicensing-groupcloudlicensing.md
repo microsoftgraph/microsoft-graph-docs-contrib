@@ -1,6 +1,6 @@
 ---
 title: "groupCloudLicensing resource type"
-description: "Represents a group's relationships to Cloud Licensing resources."
+description: "Represents the relationships of a group to Cloud Licensing resources."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -12,13 +12,13 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group's relationships to Cloud Licensing resources.
+Represents the relationships of a group to Cloud Licensing resources.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to the group.|
-|[Get usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[usageRight](../resources/cloudlicensing-usageright.md)|Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to the group.|
+|[List group usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
+|[Get group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 
 ## Properties
 None.
