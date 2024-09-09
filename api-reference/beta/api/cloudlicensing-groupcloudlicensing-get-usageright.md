@@ -1,18 +1,18 @@
 ---
-title: "Get a cloud licensing usageRight for a group"
-description: "Read the properties and relationships of a usageRight object for a group."
+title: "Get group usageRight"
+description: "Get the properties and relationships of a usageRight object granted to a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get usageRight for a group
+# Get group usageRight
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object for a group.
+Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.
 
 ## Permissions
 
