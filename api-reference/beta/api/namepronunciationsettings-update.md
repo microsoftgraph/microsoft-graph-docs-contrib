@@ -1,6 +1,6 @@
 ---
 title: "Update namePronunciationSettings"
-description: "Update the properties of a namePronunciationSettings object."
+description: "Update the properties of a **namePronunciationSettings** object."
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
