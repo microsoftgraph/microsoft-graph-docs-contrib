@@ -11,12 +11,7 @@ using Microsoft.Graph.Beta.Domains.Item.Verify;
 
 var requestBody = new VerifyPostRequestBody
 {
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"forceTakeover" , true
-		},
-	},
+	ForceTakeover = true,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

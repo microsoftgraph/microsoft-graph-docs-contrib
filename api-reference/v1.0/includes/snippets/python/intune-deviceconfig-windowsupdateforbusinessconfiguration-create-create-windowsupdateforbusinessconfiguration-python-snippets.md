@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_update_for_business_configuration import WindowsUpdateForBusinessConfiguration
 from msgraph.generated.models.windows_delivery_optimization_mode import WindowsDeliveryOptimizationMode
@@ -16,9 +17,7 @@ from msgraph.generated.models.windows_update_for_business_update_weeks import Wi
 from msgraph.generated.models.auto_restart_notification_dismissal_method import AutoRestartNotificationDismissalMethod
 from msgraph.generated.models.enablement import Enablement
 from msgraph.generated.models.windows_update_notification_display_option import WindowsUpdateNotificationDisplayOption
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WindowsUpdateForBusinessConfiguration(
 	odata_type = "#microsoft.graph.windowsUpdateForBusinessConfiguration",
 	description = "Description value",
