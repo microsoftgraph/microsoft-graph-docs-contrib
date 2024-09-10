@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
+GET /groups/0003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
+GET https://graph.microsoft.com/beta/groups/0003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
 ```
 
 ### Response

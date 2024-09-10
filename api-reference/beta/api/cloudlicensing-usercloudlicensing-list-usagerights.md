@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /me/cloudLicensing/usageRights
-GET /users/{userId}/cloudLicensing/usageRights
+GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights
 ```
 
 ## Optional query parameters
@@ -43,10 +43,10 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 The following examples show how to get usage rights information for users based on specific filters:
 
 ``` http
-GET /users/{userId}/cloudLicensing/usageRights?$filter=skuId eq '{skuIdValue1}'
-GET /users/{userId}/cloudLicensing/usageRights?$filter=skuId in ('{skuIdValue1}', '{skuIdValue2}')
-GET /users/{userId}/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 'planIdValue1')
-GET /users/{userId}/cloudLicensing/usageRights?$filter=services/any(c:c/planId in ('planIdValue1', 'planIdValue2'))
+GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId eq 639dec6b-bb19-468b-871c-c5c441c4b0cb
+GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId in (639dec6b-bb19-468b-871c-c5c441c4b0cb, a403ebcc-fae0-4ca2-8c8c-7a907fd6c235)
+GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
+GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=services/any(c:c/planId in (113feb6c-3fe4-4440-bddc-54d774bf0318, 2049e525-b859-401b-b2a0-e0a31c4b1fe4))
 ```
 
 ## Request headers
@@ -78,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{userId}/cloudLicensing/usageRights
+GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights
 ```
 
 #### Response
@@ -128,7 +128,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{userId}/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
+GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
 ```
 
 #### Response
