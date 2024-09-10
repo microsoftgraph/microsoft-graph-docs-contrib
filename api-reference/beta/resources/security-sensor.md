@@ -33,15 +33,54 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|e date and time of when the sensor was generated|
-|deploymentStatus|microsoft.graph.security.deploymentStatus|The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.|
+|deploymentStatus|[microsoft.graph.security.deploymentStatus](#deploymentstatus-values)|The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.|
 |displayName|String|The display name of the sensor|
 |domainName|String|The fully qualified domain name of the sensor|
-|healthStatus|microsoft.graph.security.sensorHealthStatus|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
+|healthStatus|[microsoft.graph.security.sensorHealthStatus](#healthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
 |ID|String|Unique identifier to represent the sensor.|
 |openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|
-|sensorType|microsoft.graph.security.sensorType|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
+|sensorType|[microsoft.graph.security.sensorType](#sensortype-values)|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
 |settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information.|
 |version|String|The version of the sensor.|
+
+#### deploymentStatus values
+
+| Member                     | Description                                                                                                                  |
+| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
+| upToDate | todo |
+| outdated | todo |
+| updating | todo |
+| updateFailed | todo |
+| notConfigured | todo |
+| unreachable | todo |
+| disconnected | todo |
+| startFailure | todo |
+| startFailure | todo |
+| syncing | todo |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+#### healthStatus values
+
+| Member                     | Description                                                                                                                  |
+| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
+| healthy | todo |
+| notHealthyLow | todo |
+| notHealthyMedium | todo |
+| notHealthyHigh | todo |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+#### sensorType values
+
+| Member                     | Description                                                                                                                  |
+| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
+| adConnectIntegrated | todo |
+| adcsIntegrated | todo |
+| adfsIntegrated | todo |
+| domainControllerIntegrated | todo |
+| domainControllerStandalone | todo |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+
 
 ## Relationships
 |Relationship|Type|Description|

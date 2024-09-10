@@ -76,6 +76,7 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 Content-Type: application/json
+
 {
   "settings": {
     "description": "dc1 settings new description",
@@ -100,6 +101,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.security.sensor",
     "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",

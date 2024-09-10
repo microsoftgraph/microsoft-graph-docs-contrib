@@ -88,6 +88,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.security.sensor",
     "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
