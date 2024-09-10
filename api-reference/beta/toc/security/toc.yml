@@ -485,7 +485,7 @@ items:
     - name: Update
       href: ../../api/security-sensor-update.md
     - name: Delete
-      href: ../../api/sesecurity-identitycontainer-delete-sensors.md
+      href: ../../api/security-identitycontainer-delete-sensors.md
     - name: Get deployment access key
       href: ../../api/security-sensor-getdeploymentaccesskey.md
     - name: Get deployment package
