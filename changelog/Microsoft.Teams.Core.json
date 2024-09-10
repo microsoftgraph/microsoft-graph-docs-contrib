@@ -5627,6 +5627,24 @@
       "CreatedDateTime": "2024-08-15T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db02c576-4a6b-4171-8c4f-d6a7570ed181",
+          "ApiChange": "Property",
+          "ChangedApiName": "conversationIdentityType",
+          "ChangeType": "Change",
+          "Description": "Updated @mention everyone with example, which shows that **chatMessageMentionedIdentitySet** supports **chat** which is an existing **conversationIdentityType** for **teamworkConversationIdentity**",
+          "Target": "chatMessageMention"
+        }
+      ],
+      "Id": "db02c576-4a6b-4171-8c4f-d6a7570ed181",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-15T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
