@@ -294,6 +294,7 @@ The following JSON representation shows the resource type.
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "cloudLicensing": { "@odata.type": "microsoft.graph.cloudLicensing.groupCloudLicensing" },
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
