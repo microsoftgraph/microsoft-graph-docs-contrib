@@ -2088,7 +2088,7 @@
         "insightsSettings",
         "pronounsSettings",
         "photoUpdateSettings",
-        "namePronunciation",
+        "namePronunciationSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2105,7 +2105,7 @@
             "pronounsSettings",
             "profileCardProperty",
             "photoUpdateSettings",
-            "namePronunciation"
+            "namePronunciationSettings"
 
           ]
         },
