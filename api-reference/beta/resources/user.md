@@ -435,6 +435,7 @@ The following JSON representation shows the resource type.
   "birthday": "String (timestamp)",
   "businessPhones": ["String"],
   "city": "String",
+  "cloudLicensing": { "@odata.type": "microsoft.graph.cloudLicensing.userCloudLicensing" },
   "cloudRealtimeCommunicationInfo": {
     "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
   },
