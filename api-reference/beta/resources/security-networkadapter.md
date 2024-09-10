@@ -1,4 +1,5 @@
 ---
+title: "networkAdapter resource type"
 description: "Network adapters that are used for communication"
 author: "amirfeldman"
 ms.localizationpriority: medium
@@ -22,8 +23,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique identifier that represents the network adapter.|
-|isEnabled|Boolean|Is the network adapter enabled.|
+|ID|String|A unique identifier that represents the network adapter.|
+|isEnabled|Boolean|Is the network adapter enabled or not.|
 |name|String|The name of the network adapter.|
 
 ## Relationships
