@@ -1,6 +1,6 @@
 ---
 title: "customAppManagementConfiguration resource type"
-description: "Custom app management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals."
+description: "Configuration object that contains properties that can be configured to enable various restrictions for applications and service principals as part of an appManagementPolicy object."
 author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom app management configuration object that can be configured to enable various restrictions for applications and service principals. Some of these restrictions apply to both applications and service principals. Others, like identifierUris restriction applicable only to applications and are configured under the property `applicationRestrictions` as a [customAppManagementApplicationConfiguration](customAppManagementApplicationConfiguration.md) object.
+Configuration object that can be configured to enable various restrictions for applications and service principals as part of the [appManagementPolicy](../resources/appmanagementpolicy.md) object. Some of these restrictions apply to both applications and service principals while others are applicable only to applications.
 
 
 Inherits from [appManagementConfiguration](appmanagementconfiguration.md).

@@ -1,6 +1,6 @@
 ---
 title: "appManagementApplicationConfiguration resource type"
-description: "App management application configuration object to configure app management policy restrictions like identifierUris, passwordCredentials, keyCredentials that are specific to applications"
+description: "App management application configuration object to configure app management policy restrictions like identifier URIs, password credentials, and certificate credentials that are specific to applications."
 author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration object to configure app management policy restrictions like [identifierUriConfiguration](identifieruriconfiguration.md), [passwordCredentials](passwordcredentialconfiguration.md), [keyCredentials](keycredentialconfiguration.md)  that are specific to applications.
+Configuration object to configure app management policy restrictions like identifier URIs, password credentials, and certificate credentials that are specific to applications.
 
 
 Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
@@ -21,9 +21,9 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 ## Properties
 | Property                                    | Type                                                                              | Description                                                                   |
 | :------------------------------------------ | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| identifierUris                              | [identifierUriConfiguration](identifieruriconfiguration.md)          | Configuration object for identifierUris restrictions that are applied to only an application |
-| keyCredentials                              | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection            | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
-| passwordCredentials                         | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection  | Collection of password restrictions settings to be applied to an application or service principal. |
+| identifierUris                              | [identifierUriConfiguration](identifieruriconfiguration.md)          | Configuration object for restrictions on **identifierUris** property for an application |
+| keyCredentials                              | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection            | Collection of certificate credential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
+| passwordCredentials                         | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection  | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
 
 ## Relationships
 None.

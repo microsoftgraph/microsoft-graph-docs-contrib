@@ -1,6 +1,6 @@
 ---
 title: "appManagementServicePrincipalConfiguration resource type"
-description: "App management service principal configuration object to configure app management policy restrictions like that are specific to applications"
+description: "Configuration object to configure app management policy restrictions like that are specific to service principals."
 author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration object to configure app management policy restrictions like [passwordCredentials](passwordcredentialconfiguration.md), [keyCredentials](keycredentialconfiguration.md) that are specific to service principals.
+Configuration object to configure app management policy restrictions like password credentials and certificate key credentials that are specific to service principals.
 
 
 Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
@@ -21,8 +21,8 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 ## Properties
 | Property                                    | Type                                                                              | Description                                                                   |
 | :------------------------------------------ | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| keyCredentials                              | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection            | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
-| passwordCredentials                         | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection  | Collection of password restrictions settings to be applied to an application or service principal. |
+| keyCredentials                              | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection            | Collection of certificate credential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).|
+| passwordCredentials                         | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection  | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).|
 
 ## Relationships
 None.
