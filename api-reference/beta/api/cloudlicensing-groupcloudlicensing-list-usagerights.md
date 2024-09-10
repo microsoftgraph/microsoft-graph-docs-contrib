@@ -39,10 +39,14 @@ GET /groups/{groupId}/cloudLicensing/usageRights
 
 This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-- $filter = skuId eq skuIdValue1
-- $filter = skuId in (skuIdValue1, skuIdValue2)
-- $filter = services/any(c:c/planId eq planIdValue1)
-- $filter = services/any(c:c/planId in (planIdValue1, planIdValue2))
+The following examples show how to get usage rights information for groups based on specific filters:
+
+``` http
+GET /groups/{groupId}/cloudLicensing/usageRights?$filter=skuId eq '{skuIdValue1}'
+GET /groups/{groupId}/cloudLicensing/usageRights?$filter=skuId in ('{skuIdValue1}', '{skuIdValue2}')
+GET /groups/{groupId}/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 'planIdValue1')
+GET /groups/{groupId}/cloudLicensing/usageRights?$filter=services/any(c:c/planId in ('planIdValue1', 'planIdValue2'))
+```
 
 ## Request headers
 
@@ -61,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1: Get all usage rights for a group
+
+The following example shows how to get all usage rights granted to a group.
 
 #### Request
 
@@ -109,6 +115,8 @@ Content-Type: application/json
 ```
 
 ### Example 2: Get all usage rights for a group with a specific service plan
+
+The following example shows how to get all usage rights granted to a group for a specific service plan.
 
 #### Request
 
