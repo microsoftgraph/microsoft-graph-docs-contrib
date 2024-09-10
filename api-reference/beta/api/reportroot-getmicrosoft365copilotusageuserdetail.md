@@ -118,7 +118,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads have the following schema.
+The CSV file in the `Location` header of the 302 response has the following schema.
 
 <!-- {
   "blockType": "response",
