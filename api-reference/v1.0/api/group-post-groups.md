@@ -72,7 +72,7 @@ The following table lists the properties that are required when you create the [
 >
 > - Creating a Microsoft 365 group in an app-only context and without specifying owners creates the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
 > 
-> - Creating a group in a delegated context, signed in as a non-admin user, and without specifying owners automatically adds the calling user as the group owner.
+> - Creating a Microsoft 365 or security group in a delegated context, signed in as a non-admin user, and without specifying owners automatically adds the calling user as the group owner. An admin user is automatically added as the group owner of a Microsoft 365 group they create but not of a security group.
 >
 > - To following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
