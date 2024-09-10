@@ -3703,6 +3703,36 @@
       "CreatedDateTime": "2024-08-06T23:30:03.445931Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "e20272f2-4250-461d-9ff1-0264c8f5f3e3",
+              "ApiChange": "Resource",
+              "ChangedApiName": "fileStorageContainerSettings",
+              "ChangeType": "Addition",
+              "Description": "Added the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerSettings?view=graph-rest-1.0) resource.",
+              "Target": "fileStorageContainerSettings"
+            },
+            {
+              "Id": "e20272f2-4250-461d-9ff1-0264c8f5f3e3",
+              "ApiChange": "Property",
+              "ChangedApiName": "settings",
+              "ChangeType": "Addition",
+              "Description": "Added the **settings** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+              "Target": "fileStorageContainer"
+            }
+          ],
+          "Id": "e20272f2-4250-461d-9ff1-0264c8f5f3e3",
+          "Cloud": "Review",
+          "Version": "v1.0",
+          "CreatedDateTime": "2024-09-03T20:37:49.0981907Z",
+          "WorkloadArea": "Files",
+          "SubArea": ""
+        }
+      ]
     }
   ]
 }
