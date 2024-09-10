@@ -126,6 +126,10 @@ The new Microsoft 365 Backup Storage API enables partners to build customized ve
 
 Use the **summary** property to get details about what happened, impacted assets, and the type of attack on an [incident](/graph/api/resources/security-incident).
 
+### Security | Identities
+
+Added the ability to get, get list, update Microsoft Defender for Identity [sensors](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true).
+
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **settings** property on [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) to identify whether attendees receive email notifications.
