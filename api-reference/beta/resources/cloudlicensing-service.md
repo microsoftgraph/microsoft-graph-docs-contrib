@@ -12,7 +12,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the service plan granted with a usageRight. 
+Represents a specific service conferred by an individual usageRight.
 
 ## Properties
 |Property|Type|Description|
