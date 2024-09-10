@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Creates a restriction to block identifier URI formats on applications that could either be easily compromised or used for compromise.
+ Represents a restriction to block identifier URI formats on applications that could either be easily compromised or used for compromise.
 
 ## Properties
 | Property                            | Type                            | Description                 |
 | :-----------------------------------| :------------------------------ | :-------------------------- |
-| nonDefaultUriAddition               | [identifierUriRestriction](identifierurirestriction.md)       | Block new identifier URIs for applications, unless they are the 'default' URI of the format api://{appId}|
+| nonDefaultUriAddition               | [identifierUriRestriction](../resources/identifierurirestriction.md)       | Block new identifier URIs for applications, unless they are the "default" URI of the format `api://{appId}`.|
 
 ## Relationships
 None.
