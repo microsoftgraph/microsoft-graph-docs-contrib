@@ -3,7 +3,7 @@ author: GGsmile
 ms.topic: include
 ---
 
-For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. This can be one of the following roles:
+For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user one of the following Microsoft Entra ID limited administrator roles:
 
 - Company Administrator
 - Exchange Administrator
