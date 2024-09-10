@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |ID|String|A unique identifier that represents the network adapter.|
-|isEnabled|Boolean|Is the network adapter enabled or not.|
+|isEnabled|Boolean|Specify whether the network adapter is enabled.|
 |name|String|The name of the network adapter.|
 
 ## Relationships
