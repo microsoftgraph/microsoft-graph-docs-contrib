@@ -100,7 +100,7 @@ Content-Type: application/json
       "createdDateTime": "2023-11-16T09:41:24.2585071Z",
       "domainName": "domain1.test.local",
       "healthStatus": "healthy",
-      "openHealthIssuesCount": "0",
+      "openHealthIssuesCount": 0,
       "settings": {
         "@odata.type": "microsoft.graph.security.sensorSettings",
         "description": "dc1 settings",

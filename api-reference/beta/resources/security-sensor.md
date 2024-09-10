@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |deploymentStatus|[microsoft.graph.security.deploymentStatus](#deploymentstatus-values)|The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.|
 |displayName|String|The display name of the sensor|
 |domainName|String|The fully qualified domain name of the sensor|
-|healthStatus|[microsoft.graph.security.sensorHealthStatus](#healthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
+|healthStatus|[microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
 |ID|String|Unique identifier to represent the sensor.|
 |openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|
 |sensorType|[microsoft.graph.security.sensorType](#sensortype-values)|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
@@ -59,7 +59,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | syncing | todo |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
-#### healthStatus values
+#### sensorHealthStatus values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |

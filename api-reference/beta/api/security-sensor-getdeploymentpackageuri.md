@@ -86,7 +86,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "microsoft.graph.security.sensorDeploymentPackage",
-    "downloadUrl": <Download URL string>,
+    "downloadUrl": "<Download URL string>",
     "version": "2.239.18124.58593"
   }
 }
