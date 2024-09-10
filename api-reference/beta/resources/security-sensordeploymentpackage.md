@@ -3,7 +3,7 @@ title: "sensorDeploymentPackage resource type"
 description: "Sensor deployment package"
 author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "Microsoft Defender for Identity"
+ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 09/10/2024
 ---

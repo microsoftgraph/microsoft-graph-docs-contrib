@@ -2,7 +2,7 @@
 description: "Network adapters that are used for communication"
 author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "Microsoft Defender For Identity"
+ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 09/10/2024
 ---

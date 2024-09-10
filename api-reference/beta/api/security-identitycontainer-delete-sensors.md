@@ -3,7 +3,7 @@ title: "Delete sensor"
 description: "Delete a sensor object."
 author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "Microsoft Defender For Identity"
+ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 09/10/2024
 ---

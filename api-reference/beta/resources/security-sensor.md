@@ -3,7 +3,7 @@ title: "sensor resource type"
 description: "Represents Microsoft Defender for Identity Sensor"
 author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "Microsoft Defender for Identity"
+ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 09/10/2024
 ---
