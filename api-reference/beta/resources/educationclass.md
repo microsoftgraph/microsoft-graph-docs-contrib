@@ -33,8 +33,8 @@ Students are regular members of the class, and Teachers are owners and have appr
 |[List teachers](../api/educationclass-list-teachers.md)|[educationUser] collection|Get a list of teachers for the class.|
 |[Remove teacher](../api/educationclass-delete-teachers.md)|[educationUser]|Remove an **educationUser** from the class through the teachers navigation property.|
 |[Create](../api/educationclass-post-assignments.md)|[educationAssignment]|Create a new **educationAssignment** by posting to the assignments collection.|
-|[List assignments](../api/educationclass-list-assignments.md)|[educationAssignment]collection|Get an **educationAssignment** object collection.|
-|[List modules](../api/educationclass-list-modules.md)|[educationModule]collection|Get an **educationModule** object collection.|
+|[List assignments](../api/educationclass-list-assignments.md)|[educationAssignment] collection|Get an **educationAssignment** object collection.|
+|[List modules](../api/educationclass-list-modules.md)|[educationModule] collection|Get an **educationModule** object collection.|
 |[Get group](../api/educationclass-get-group.md)|[group]|Get the Microsoft 365 **group** that corresponds to this **educationClass**.|
 |[Create category](../api/educationclass-post-category.md)|[educationCategory]|Create a new **educationCategory** for this class.|
 |[List categories](../api/educationclass-list-categories.md)|[educationCategory] collection|Get a list of **educationCategory** objects that belong to this class.|
