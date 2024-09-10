@@ -1,10 +1,11 @@
 ---
 title: "Get sensor"
-description: "Read the properties and relationships of a microsoft.graph.security.sensor object."
-author: "naalmog"
+description: "Read the properties and relationships of a sensor object."
+author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "Microsoft Defender For Identity"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Get sensor
@@ -26,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.Read.All|
+|Delegated (work or school account)|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.Read.All|
+|Application|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.ReadWrite.All|
 
 ## HTTP request
 
@@ -65,11 +66,12 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["d31dd827-92cd-4cd6-b269-c151a0eec55d"],
   "name": "get_sensor"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensors/{sensorId}
+GET https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 ```
 
 
@@ -87,20 +89,23 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": {
     "@odata.type": "#microsoft.graph.security.sensor",
-    "id": "0b28e446-166b-97fc-4b98-b857b1f2546a",
-    "displayName": "String",
-    "sensorType": "String",
-    "version": "String",
-    "deploymentStatus": "String",
-    "createdDateTime": "String (timestamp)",
-    "domainName": "String",
-    "healthStatus": "String",
-    "openHealthIssuesCount": "Integer",
+    "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+    "displayName": "DC1",
+    "sensorType": "domainControllerIntegrated",
+    "version": "2.239.18124.58593",
+    "deploymentStatus": "upToDate",
+    "createdDateTime": "2023-11-16T09:41:24.2585071Z",
+    "domainName": "domain1.test.local",
+    "healthStatus": "healthy",
+    "openHealthIssuesCount": "0",
     "settings": {
-      "@odata.type": "microsoft.graph.security.sensorSettings"
+        "@odata.type": "microsoft.graph.security.sensorSettings",
+        "description": "dc1 settings",
+        "domainControllerDnsNames": [
+            "DC1.domain1.test.local"
+        ],
+        "isDelayedDeploymentEnabled": true
     }
-  }
 }
 ```

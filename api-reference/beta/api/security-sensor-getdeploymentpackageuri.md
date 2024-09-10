@@ -1,10 +1,11 @@
 ---
 title: "sensor: getDeploymentPackageUri"
 description: "Get the sensor deployment package url and version."
-author: "naalmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "Microsoft Defender For Identity"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # sensor: getDeploymentPackageUri
@@ -26,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.Read.All|
+|Delegated (work or school account)|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.Read.All|
+|Application|SecurityIdentitiesSensors.Read.All|SecurityIdentitiesSensors.ReadWrite.All|
 
 ## HTTP request
 
@@ -83,7 +84,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "microsoft.graph.security.sensorDeploymentPackage"
+    "@odata.type": "microsoft.graph.security.sensorDeploymentPackage",
+    "downloadUrl": <Download URL string>,
+    "version": "2.239.18124.58593"
   }
 }
 ```

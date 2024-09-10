@@ -1,10 +1,11 @@
 ---
 title: "sensor: regenerateDeploymentAccessKey"
 description: "Generate a new deployment access key that can be used to activate sensor installation."
-author: "naalmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "Microsoft Defender For Identity"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # sensor: regenerateDeploymentAccessKey
@@ -84,7 +85,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "value": {
-    "@odata.type": "microsoft.graph.security.deploymentAccessKeyType"
+    "@odata.type": "microsoft.graph.security.deploymentAccessKeyType",
+    "sensorDeploymentAccessKey": "<Deployment access key (Secret)>"
   }
 }
 ```

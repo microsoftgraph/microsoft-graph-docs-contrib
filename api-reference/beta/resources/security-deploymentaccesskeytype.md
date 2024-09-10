@@ -1,10 +1,11 @@
 ---
 title: "deploymentAccessKeyType resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Sensor deployment access key"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "Microsoft Defender For Identity"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # deploymentAccessKeyType resource type
@@ -13,12 +14,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Microsoft Defender for Identity sensor deployment access key.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deploymentAccessKey|String|**TODO: Add Description**|
+|deploymentAccessKey|String|The Deployment access key.|
 
 ## Relationships
 None.

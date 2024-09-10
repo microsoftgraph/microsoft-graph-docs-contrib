@@ -1,10 +1,11 @@
 ---
 title: "sensorSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Sensor settings information"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "Microsoft Defender for Identity"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # sensorSettings resource type
@@ -13,19 +14,19 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Sensor settings information.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|domainControllerDnsNames|String collection|**TODO: Add Description**|
-|isDelayedDeploymentEnabled|Boolean|**TODO: Add Description**|
+|description|String|Description of the sensor.|
+|domainControllerDnsNames|String collection|DNS Names for the domain controller|
+|isDelayedDeploymentEnabled|Boolean|Enable delayed updates for the sensor|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|networkAdapters|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) collection|**TODO: Add Description**|
+|networkAdapters|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) collection|Sensor network adapters.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

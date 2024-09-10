@@ -1,10 +1,11 @@
 ---
 title: "sensorDeploymentPackage resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Sensor deployment package"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "Microsoft Defender for Identity"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # sensorDeploymentPackage resource type
@@ -13,13 +14,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Sensor deployment package.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|downloadUrl|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|downloadUrl|String|Url to download the sensor deployment package.|
+|version|String|Version of the sensor.|
 
 ## Relationships
 None.

@@ -1,10 +1,11 @@
 ---
 title: "Delete sensor"
-description: "Delete a microsoft.graph.security.sensor object."
-author: "naalmog"
+description: "Delete a sensor object."
+author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "Microsoft Defender For Identity"
 doc_type: apiPageType
+ms.date: 09/10/2024
 ---
 
 # Delete sensor
@@ -37,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /security/identities/sensors/{sensorId}/$ref
+DELETE /security/identities/sensors/{sensorId}
 ```
 
 ## Request headers
@@ -61,11 +62,12 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["d31dd827-92cd-4cd6-b269-c151a0eec55d"],
   "name": "delete_sensor"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/identities/sensors/{sensorId}
+DELETE https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 ```
 
 

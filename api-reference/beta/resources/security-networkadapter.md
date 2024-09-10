@@ -1,8 +1,10 @@
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+---
+description: "Network adapters that are used for communication"
+author: "amirfeldman"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "Microsoft Defender For Identity"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # networkAdapter resource type
@@ -11,26 +13,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+For Defender for Identity sensors, network adapters that are used for communication with other computers in your organization.
+For Defender for Identity standalone sensor on a dedicated server, network adapters that are configured as the destination mirror port. These network adapters receive the mirrored domain controller traffic.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/security-sensorsettings-list-networkadapters.md)|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) collection|Get a list of the [microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) objects and their properties.|
-|[Create](../api/security-sensorsettings-post-networkadapters.md)|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md)|Create a new [microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) object.|
-|[Get](../api/security-networkadapter-get.md)|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md)|Read the properties and relationships of a [microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) object.|
-|[Update](../api/security-networkadapter-update.md)|[microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md)|Update the properties of a [microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) object.|
-|[Delete](../api/security-sensorsettings-delete-networkadapters.md)|None|Delete a [microsoft.graph.security.networkAdapter](../resources/security-networkadapter.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|isEnabled|Boolean|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|id|String|A unique identifier that represents the network adapter.|
+|isEnabled|Boolean|Is the network adapter enabled.|
+|name|String|The name of the network adapter.|
 
 ## Relationships
 None.
