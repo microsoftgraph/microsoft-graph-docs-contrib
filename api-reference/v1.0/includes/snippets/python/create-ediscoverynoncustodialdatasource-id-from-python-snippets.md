@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.security.ediscovery_noncustodial_data_source import EdiscoveryNoncustodialDataSource
 from msgraph.generated.models.security.site_source import SiteSource
 from msgraph.generated.models.site import Site
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EdiscoveryNoncustodialDataSource(
 	data_source = SiteSource(
 		odata_type = "microsoft.graph.security.siteSource",
