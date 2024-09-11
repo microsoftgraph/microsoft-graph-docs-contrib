@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and drop connections.
+Get the overall connection quality reports for all devices in the current tenant. This includes the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and drop connections.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
