@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceInventoryItem resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Abstract type to represent a single piece of inventory data that was collected on a device. For example, this could represent a single network adapter that was present on a device
 
