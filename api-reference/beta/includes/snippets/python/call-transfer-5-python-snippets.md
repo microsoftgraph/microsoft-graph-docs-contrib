@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.communications.calls.item.transfer.transfer_post_request_body import TransferPostRequestBody
 from msgraph_beta.generated.models.invitation_participant_info import InvitationParticipantInfo
@@ -11,9 +12,7 @@ from msgraph_beta.generated.models.endpoint_type import EndpointType
 from msgraph_beta.generated.models.identity_set import IdentitySet
 from msgraph_beta.generated.models.identity import Identity
 from msgraph_beta.generated.models.participant_info import ParticipantInfo
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = TransferPostRequestBody(
 	transfer_target = InvitationParticipantInfo(
 		endpoint_type = EndpointType.Default,
