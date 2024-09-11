@@ -38,7 +38,7 @@ GET /education/classes/{class-id}/getRecentlyModifiedSubmissions
 ## Optional query parameters
 This method supports the `$orderby`, `$top`, `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-The `$orderby` query parameter only supports the **lastModifiedDateTime** property of the [educationClass](../resources/educationclass.md) resource.
+The `$orderby` query parameter only supports the **lastModifiedDateTime** property of the [educationSubmission](../resources/educationsubmission.md) resource.
 
 The default ordering is by descending **lastModifiedDateTime** property values.
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
->**Note:** If you specify an unsupported property for the `$orderby` query parameter, the method returns a `400` error message.
+If you specify an unsupported property for the `$orderby` query parameter, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
