@@ -46,6 +46,8 @@ The default ordering is by descending **lastModifiedDateTime** property values.
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Prefer  | `include-unknown-enum-members`. Optional.  |
+
 
 ## Request body
 Don't supply a request body for this method.
