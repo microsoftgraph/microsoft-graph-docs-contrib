@@ -532,25 +532,24 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
-    "id": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "445a3118-6bf2-4a19-94ad-5660295963fd",
     "requestType": "userAdd",
     "state": "submitted",
     "status": "Accepted",
     "createdDateTime": null,
     "completedDateTime": null,
     "schedule": {
-        "startDateTime": "2024-06-07T15:53:35.333Z",
+        "startDateTime": null,
         "recurrence": null,
         "expiration": {
-            "endDateTime": "2024-07-01T00:00:00Z",
+            "endDateTime": null,
             "duration": null,
-            "type": "afterDateTime"
+            "type": "notSpecified"
         }
     },
-   "justification": "Access for direct employee",
-   "requestType": "UserAdd",
-   "answers": []
+    "answers": [],
+    "customExtensionCalloutInstances": []
 }
 ```
 
