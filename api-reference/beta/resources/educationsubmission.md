@@ -43,6 +43,8 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |excusedBy|[identitySet](identityset.md)|The user that marked the submission as excused.|
 |excusedDateTime|DateTimeOffset|Moment in time when the submission was moved to the excused state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the submission.|
+|lastModifiedBy|[identitySet](../resources/intune-rbac-identityset.md)|The identities of those who modified the submission.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the submission was modified.|
 |reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
 |reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
@@ -55,15 +57,13 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |webUrl|String|The deep link URL for the given submission.|
-|lastModifiedBy|[identitySet](../resources/intune-rbac-identityset.md)|The identities of those who modified the submission.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the submission was modified.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
+|outcomes|[educationOutcome](educationOutcome.md) collection. Holds grades, feedback and/or rubrics information the teacher assigns to this submission|Read-Write. Nullable.|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) collection|Nullable.|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md) collection|Read-only. Nullable.|
-|outcomes|[educationOutcome](educationOutcome.md) collection. Holds grades, feedback and/or rubrics information the teacher assigns to this submission|Read-Write. Nullable.|
 
 ## JSON representation
 
