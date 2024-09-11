@@ -1,6 +1,6 @@
 ---
 title: "List townhalls"
-description: "Get the list of all virtual event townhalls created in a tenant."
+description: "Get the list of all virtualEventTownhall objects created in a tenant."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all [virtualEventTownhall](../resources/virtualeventtownhall.md) objects created in the tenant.
+Get the list of all [virtualEventTownhall](../resources/virtualeventtownhall.md) objects created in a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -26,7 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 >
-> This API returns only townhalls whose organizer has been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> This API returns only townhalls whose organizer is assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+
 ## HTTP request
 
 <!-- {
@@ -79,6 +80,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
