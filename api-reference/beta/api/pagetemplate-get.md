@@ -1,6 +1,6 @@
 ---
 author: Yadong1106
-description: "Returns the metadata for a page template in the templates folder in a site."
+description: "Return the metadata for a page template in the templates folder in a site."
 ms.date: 03/15/2018
 title: Get pageTemplate
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
+Return the metadata for a [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{page-template-i
 
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query parameter to include the content of an item when you retrieve the metadata of an item if the item has a **canvasLayout** relationship.
 
 
 ## Request headers
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a [pageTemplate](../resources/pagetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` and a [pageTemplate](../resources/pagetemplate.md) object in the response body.
 
 
 ## Examples
