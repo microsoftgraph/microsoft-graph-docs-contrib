@@ -34,6 +34,24 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "5869ee0c-c48f-4031-9381-29d2f6792789",
+          "ApiChange": "Member",
+          "ChangedApiName": "refreshToken",
+          "ChangeType": "Addition",
+          "Description": "Added the `refreshToken` member to the **incomingTokenType** enumeration.",
+          "Target": "incomingTokenType"
+        }
+      ],
+      "Id": "5869ee0c-c48f-4031-9381-29d2f6792789",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-29T21:29:24.8427621Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
       {
       "ChangeList": [
         {

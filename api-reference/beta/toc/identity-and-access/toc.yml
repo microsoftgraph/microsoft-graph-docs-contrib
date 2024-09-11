@@ -1055,12 +1055,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
@@ -4284,3 +4286,47 @@ items:
         href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
       - name: Unified role
         href: ../../resources/unifiedrole.md
+- name: Partner Center security
+  items:
+  - name: Partner security score
+    items:
+    - name: Overview
+      href: ../../resources/partner-security-score-api-overview.md
+    - name: Customer insight
+      items:
+      - name: Customer insight
+        href: ../../resources/partner-security-customerinsight.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+    - name: Partner security score
+      items:
+      - name: Partner security score
+        href: ../../resources/partner-security-partnersecurityscore.md
+      - name: Get
+        href: ../../api/partner-security-partnersecurityscore-get.md
+      - name: List customer insights
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+      - name: List history
+        href: ../../api/partner-security-partnersecurityscore-list-history.md
+      - name: List requirements
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+    - name: Security requirement
+      items:
+      - name: Security requirement
+        href: ../../resources/partner-security-securityrequirement.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+      - name: Get
+        href: ../../api/partner-security-securityrequirement-get.md
+    - name: Complex types
+      items:
+      - name: Admins MFA enforced security requirement
+        href: ../../resources/partner-security-adminsmfaenforcedsecurityrequirement.md
+      - name: Customer MFA insight
+        href: ../../resources/partner-security-customermfainsight.md
+      - name: Customers MFA enforced security requirement
+        href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
+      - name: Customers spending budget security requirement
+        href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
+      - name: Response time security requirement
+        href: ../../resources/partner-security-responsetimesecurityrequirement.md

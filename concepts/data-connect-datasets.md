@@ -135,12 +135,13 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
-| SharePointSites_v1  | Contains information about SharePoint sites. Formerly known as SharePointSitesDataset_v0_Preview.| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
-| SharePointPermissions_v1 | Contains information about sharing permissions. Formerly DocumentSharingDataset_v0_Preview. | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
-| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. Formerly SharePointGroupsDataset_v0_Preview. | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
-| SharePointFiles_v1  | Contains information about SharePoint files. Coming in August 2024. | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointSites_v1  | Contains information about SharePoint sites. | [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
 | SharePointFileActions_v1 | Contains information about SharePoint file actions. | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
-| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for work or school. | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
+| OneDriveSyncErrors_v1 | Contains details about errors on devices running OneDrive for work or school. | [OneDriveSyncErrors_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesyncerrors.md) |
 
 ### Viva Insights
 

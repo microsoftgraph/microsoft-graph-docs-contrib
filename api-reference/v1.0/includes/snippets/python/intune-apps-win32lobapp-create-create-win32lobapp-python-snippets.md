@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.win32_lob_app import Win32LobApp
 from msgraph.generated.models.mime_content import MimeContent
@@ -21,9 +22,7 @@ from msgraph.generated.models.win32_lob_app_return_code import Win32LobAppReturn
 from msgraph.generated.models.win32_lob_app_return_code_type import Win32LobAppReturnCodeType
 from msgraph.generated.models.win32_lob_app_msi_information import Win32LobAppMsiInformation
 from msgraph.generated.models.win32_lob_app_msi_package_type import Win32LobAppMsiPackageType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Win32LobApp(
 	odata_type = "#microsoft.graph.win32LobApp",
 	display_name = "Display Name value",

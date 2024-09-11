@@ -9,9 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.domains.item.verify.VerifyPostRequestBody verifyPostRequestBody = new com.microsoft.graph.beta.domains.item.verify.VerifyPostRequestBody();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("forceTakeover", true);
-verifyPostRequestBody.setAdditionalData(additionalData);
+verifyPostRequestBody.setForceTakeover(true);
 var result = graphClient.domains().byDomainId("{domain-id}").verify().post(verifyPostRequestBody);
 
 

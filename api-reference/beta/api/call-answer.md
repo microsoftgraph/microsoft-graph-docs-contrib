@@ -13,9 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification contains the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
+Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invitation from a participant in a group call or a peer-to-peer call. If an invitation to a group call is received, the notification contains the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
 
 The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds. The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
+
+This API supports the following PSTN scenarios:
+
++ Incoming call to bot's PSTN number and then bot invites another PSTN.
++ Incoming call to bot's PSTN number and then bot transfer to another PSTN.
++ Incoming call to bot's PSTN number and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier and then bot invites another PSTN.
++ Incoming call to bot's instance identifier and then bot transfer to another PSTN.
++ Incoming call to bot's instance identifier and then bot redirects to another PSTN.
++ Incoming call to bot's instance identifier from Scheduled Meeting and then bot invites PSTN.
++ Outgoing call from bot (with instance identifier) to a PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another PSTN.
++ P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
++ Bot join the scheduled meeting and then invite PSTN.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -61,7 +75,6 @@ The following example shows how to call this API.
 #### Request
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -82,45 +95,12 @@ Content-Length: 211
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.incomingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "participantCapacity": 200
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-answer-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/call-answer-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response. 
