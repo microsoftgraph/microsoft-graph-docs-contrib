@@ -3705,9 +3705,7 @@
       "SubArea": ""
     },
     {
-      "changelog": [
-        {
-          "ChangeList": [
+       "ChangeList": [
             {
               "Id": "80e39010-fa5c-4a36-a77d-453b2b3cce75",
               "ApiChange": "Resource",
@@ -3732,7 +3730,5 @@
           "WorkloadArea": "Files",
           "SubArea": ""
         }
-      ]
-    }
   ]
 }
