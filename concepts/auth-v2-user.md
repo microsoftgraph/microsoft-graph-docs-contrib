@@ -32,7 +32,7 @@ Before proceeding with the steps in this article:
 1. Understand the authentication and authorization concepts in the Microsoft identity platform. For more information, see [Authentication and authorization basics](auth/auth-concepts.md).
 2. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md). Save the following values from the app registration:
     - The application ID (referred to as Object ID on the Microsoft Entra admin center).
-    - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
+    - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile, and single page applications.
     - A redirect URI for the app to receive token responses from Microsoft Entra ID.
 
 ## Step 1: Request authorization
@@ -85,7 +85,7 @@ curl --location --request GET 'https://login.microsoftonline.com/{tenant}/oauth2
 
 ### User consent experience
 
-After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there is any permission that the user or administrator has not consented to, they're asked to consent to the required permissions. For more information about the Microsoft Entra consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
+After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there's any permission that the user or administrator hasn't consented to, they're asked to consent to the required permissions. For more information about the Microsoft Entra consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
@@ -323,7 +323,7 @@ Content-type: application/json
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details usually required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you walked through the low-level protocol details that are required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
