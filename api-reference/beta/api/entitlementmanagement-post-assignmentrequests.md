@@ -475,7 +475,84 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Admin requests a direct assignment for a user not yet in the directory
+### Example 5: Request a package on behalf of a direct employee
+
+The following example shows how a manager can request an access package assignment on behalf of their direct employee.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_request_behalf"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+   "assignment": {
+       "accessPackageId": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+       "schedule": {
+           "startDateTime": null,
+           "stopDateTime": null
+       },
+       "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
+       "target": {
+           "displayName": "Ivan Franklin",
+           "email": "IvanFranklin@woodgrove.com",
+           "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
+           "subjectType": "user"
+       }
+   },
+   "justification": "Access for direct employee",
+   "requestType": "UserAdd",
+   "answers": []
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+    "requestType": "userAdd",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": "2024-06-07T15:53:35.333Z",
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": "2024-07-01T00:00:00Z",
+            "duration": null,
+            "type": "afterDateTime"
+        }
+    },
+   "justification": "Access for direct employee",
+   "requestType": "UserAdd",
+   "answers": []
+}
+```
+
+
+### Example 6: Admin requests a direct assignment for a user not yet in the directory
 
 #### Request
 
@@ -579,7 +656,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Request an update to answers for an assignment
+### Example 7: Request an update to answers for an assignment
 
 The following example shows how an admin can request updates to an assignment to edit their responses to questions that were answered during the request for the assignment.
 
@@ -726,7 +803,7 @@ Content-type: application/json
 }-->
 
 
-### Example 7: Update the expiration date for an access package assignment
+### Example 8: Update the expiration date for an access package assignment
 
 The following example shows how to update the expiration date for an access package assignment.
 
@@ -830,81 +907,5 @@ Content-type: application/json
     },
     "answers": [],
     "customExtensionCalloutInstances": []
-}
-```
-
-### Example 8: Manager requests an access package assignment on behalf of their direct employee
-
-The following example shows how a manager can request an access package assignment on behalf of their direct employee.
-
-#### Request
-
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "update_accesspackageassignmentrequest_expiration_date"
-}-->
-```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
-Content-type: application/json
-
-{
-   "assignment": {
-       "accessPackageId": "5b98f958-0dea-4a5b-836e-109dccbd530c",
-       "schedule": {
-           "startDateTime": null,
-           "stopDateTime": null
-       },
-       "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
-       "target": {
-           "displayName": "Ivan Franklin",
-           "email": "IvanFranklin@woodgrove.com",
-           "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
-           "subjectType": "user"
-       }
-   },
-   "justification": "Access for direct employee",
-   "requestType": "UserAdd",
-   "answers": []
-}
-```
-
-#### Response
-
-The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
-    "id": "5b98f958-0dea-4a5b-836e-109dccbd530c",
-    "requestType": "userAdd",
-    "state": "submitted",
-    "status": "Accepted",
-    "createdDateTime": null,
-    "completedDateTime": null,
-    "schedule": {
-        "startDateTime": "2024-06-07T15:53:35.333Z",
-        "recurrence": null,
-        "expiration": {
-            "endDateTime": "2024-07-01T00:00:00Z",
-            "duration": null,
-            "type": "afterDateTime"
-        }
-    },
-   "justification": "Access for direct employee",
-   "requestType": "UserAdd",
-   "answers": []
 }
 ```
