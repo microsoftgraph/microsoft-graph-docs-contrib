@@ -82,6 +82,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.teams.workingTime.workingTimeSchedule",
