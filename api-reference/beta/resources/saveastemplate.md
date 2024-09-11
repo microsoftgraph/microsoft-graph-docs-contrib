@@ -1,5 +1,5 @@
 ---
-title: "Save page as a template page request body"
+title: "saveAsTemplate resource type"
 description: "Represents the required fields to save page as a template in SharePoint."
 author: Yadong1106
 ms.localizationpriority: medium
