@@ -5633,10 +5633,18 @@
         {
           "Id": "db02c576-4a6b-4171-8c4f-d6a7570ed181",
           "ApiChange": "Property",
-          "ChangedApiName": "conversationIdentityType",
+          "ChangedApiName": "mentions",
           "ChangeType": "Change",
-          "Description": "Updated @mention everyone with example, which shows that **chatMessageMentionedIdentitySet** supports **chat** which is an existing **conversationIdentityType** for **teamworkConversationIdentity**",
-          "Target": "chatMessageMention"
+          "Description": "Added `chat` as a supported value for the **mentions** property in the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "db02c576-4a6b-4171-8c4f-d6a7570ed181",
+          "ApiChange": "Property",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Added a new example to the [Get](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta) operation of the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource to show the support for @mention everyone in a group chat. The example shows that [chatMessageMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagementionedidentityset?view=graph-rest-beta) supports the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) entity as an existing **conversationIdentityType** in the [teamworkConversationIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkconversationidentity?view=graph-rest-beta) resource."
+          "Target": "chatMessage"
         }
       ],
       "Id": "db02c576-4a6b-4171-8c4f-d6a7570ed181",
