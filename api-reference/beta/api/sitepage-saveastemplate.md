@@ -42,7 +42,7 @@ In the request body, supply a JSON representation of the [saveAsTemplate](../res
 
 ## Response
 
-If successful, this method returns a `201` and the created [pageTemplate](../resources/pagetemplate.md) object.
+If successful, this method returns a `201 Created` HTTP response and the created [pageTemplate](../resources/pagetemplate.md) object.
 
 ## Example
 
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 The following example shows the response.
 
-If successful, this method returns a [pageTemplate](../resources/pagetemplate.md) in the response body for the created page template.
+> **Note:** The response object might be shortened for readability.
  
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
  
@@ -117,8 +117,6 @@ Content-type: application/json
     }
 }
 ```
-
-**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 <!--
 {
