@@ -12,14 +12,6 @@
         },
         {
           "Id": "10600f5d-d864-4255-8d70-4473f6bfc57a",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "pageTemplates",
-          "ChangeType": "Addition",
-          "Description": "Added the **pageTemplates** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
-          "Target": "site"
-        },
-        {
-          "Id": "10600f5d-d864-4255-8d70-4473f6bfc57a",
           "ApiChange": "Method",
           "ChangedApiName": "createFromTemplate",
           "ChangeType": "Addition",
@@ -39,24 +31,6 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2024-09-10T02:27:49.2550406Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
-          "ApiChange": "Method",
-          "ChangedApiName": "permanentDelete",
-          "ChangeType": "Addition",
-          "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-permanentdelete?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
-          "Target": "fileStorageContainer"
-        }
-      ],
-      "Id": "2d8d032a-23d3-4574-8a67-952ddc3b9253",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-06-10T06:57:37.5509045Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },

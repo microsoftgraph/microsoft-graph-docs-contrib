@@ -1,7 +1,6 @@
 ---
 author: Yadong1106
 description: "Get the collection of pageTemplate objects from the page templates in a site. All page templates in the site are returned."
-ms.date: 03/15/2018
 title: List pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
