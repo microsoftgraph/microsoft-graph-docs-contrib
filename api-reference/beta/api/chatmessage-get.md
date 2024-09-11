@@ -533,15 +533,15 @@ Content-type: application/json
     ]
 }
 ```
-### Example 5: Get a chat message with at @mention everyone in a chat message
 
-The following example shows a request to get a chat message that contains @mention to everyone in a group chat.
+### Example 5: Get a chat message that @mentions everyone in a chat message
+
+The following example shows a request to get a chat message that @mentions everyone in a group chat.
 
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessage_5",
@@ -553,7 +553,7 @@ GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@t
 
 #### Response
 
-The following example shows the response. The message body contains @mention everyone in a group chat represented using `<at></at>` tag. The `conversationIdentityType` is `chat` in `conversation` identity in `mention` object.
+The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mention** object.
 
 <!-- {
   "blockType": "response",
@@ -592,7 +592,7 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "28c10244-4bad-4fda-993c-f332faef94f0",
-            "displayName": "Test User",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser",
             "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
         }
@@ -621,7 +621,6 @@ Content-type: application/json
     ],
     "reactions": []
 }
-
 ```
 
 ## Related content
