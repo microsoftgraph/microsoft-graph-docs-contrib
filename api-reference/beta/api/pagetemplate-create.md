@@ -42,11 +42,12 @@ POST /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate
 In the request body, supply a JSON representation of the [pageTemplate](../resources/pageTemplate.md) resource to create.
 
 > **Notes:** :
-> 1. You must include `@odata.type=#microsoft.graph.pageTemplate` in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint.
-> 2. If you're using the response from the [Get pageTemplate](../api/pageTemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none` to remove all OData metadata from the response. You can also manually remove all OData metadata.
+> - You must include `@odata.type=#microsoft.graph.pageTemplate` in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API that specifies the page template type for SharePoint.
+> - If you're using the response from the [Get pageTemplate](../api/pageTemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none` to remove all OData metadata from the response. You can also manually remove all OData metadata.
+
 ## Response
 
-If successful, this method returns a `201` and the created [pageTemplate](../resources/pageTemplate.md) object.
+If successful, this method returns a `201 Created` HTTP response and the created [pageTemplate](../resources/pageTemplate.md) object.
 
 ## Example
 
@@ -160,6 +161,8 @@ Content-Type: application/json
 
 The following example shows the response.
 
+> **Note:** The response might be shortened for readability.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
 
 ```http
@@ -212,7 +215,6 @@ Content-type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 <!--
 {
