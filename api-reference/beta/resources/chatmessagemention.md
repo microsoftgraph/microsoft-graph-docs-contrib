@@ -1,6 +1,6 @@
 ---
 title: "chatMessageMention resource type"
-description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot, channel, or chat."
+description: "Represents a mention in a chatMessage entity."
 ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
