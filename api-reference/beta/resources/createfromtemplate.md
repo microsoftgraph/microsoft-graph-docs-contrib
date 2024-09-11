@@ -1,5 +1,5 @@
 ---
-title: "Represents the required fields to create a page from a template in SharePoint."
+title: "createFromPageTemplate resource type"
 description: "Represents the required fields to create a page from a template in SharePoint."
 author: Yadong1106
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# createFromPageTemplate
+# createFromPageTemplate resource type
 
 Namespace: microsoft.graph
 
