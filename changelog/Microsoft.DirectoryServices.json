@@ -13449,7 +13449,25 @@
       "CreatedDateTime": "2024-07-29T19:18:43.3124977Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-	}
+	},
+  {
+    "ChangeList": [      
+      {
+        "Id": "b2a17e8f-b8d2-49ba-9ec0-d6ba4c6a691c",
+        "ApiChange": "Method",
+        "ChangedApiName": "restore",
+        "ChangeType": "Addition",
+        "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/directoryObject-restore?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Target": "directoryObject"
+      }
+    ],
+    "Id": "b2a17e8f-b8d2-49ba-9ec0-d6ba4c6a691c",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2024-09-11T18:27:13.3184952Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
+  }
   ]
 }
   
