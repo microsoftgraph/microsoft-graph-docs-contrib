@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{page-template-id}
+DELETE /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{pageTemplate-id}
 ```
 
 ## Request headers
@@ -42,16 +42,15 @@ Don't supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` HTTP response. It doesn't return anything in the response body.
 
 ## Example
-
-<!-- { "blockType": "request", "name": "delete-page-template", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ### Request
 
 The following example shows a request.
 
+<!-- { "blockType": "request", "name": "delete-page-template", "scopes": "files.readwrite sites.readwrite.all" } -->
 ```http
 DELETE /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/7bf14f9b-8764-4e54-bc5a-ee7d83dd09f7
 ```
