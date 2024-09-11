@@ -1,7 +1,7 @@
 ---
 title: "Update team"
 description: "Update the properties of the specified team."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

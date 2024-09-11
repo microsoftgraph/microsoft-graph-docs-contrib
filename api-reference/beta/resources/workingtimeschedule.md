@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule resource type"
-description: "Represents a user's scheduled working hours."
+description: "Represents the scheduled working hours for a user.."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's scheduled working hours.
+Represents the scheduled working hours for a user.
 
 ## Methods
 
