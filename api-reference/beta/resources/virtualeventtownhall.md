@@ -27,8 +27,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Publish](../api/virtualeventtownhall-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
-| [List by user role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a **virtualEventTownhall** collection where the signed-in user is either the organizer or a co-organizer. |
-| [List by user ID and role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a **virtualEventTownhall** collection where the specified user is either the organizer or a co-organizer. |
+| [List by user role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the signed-in user is either the organizer or a coorganizer. |
+| [List by user ID and role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the specified user is either the organizer or a coorganizer. |
 
 ## Properties
 
