@@ -123,8 +123,6 @@ items:
       href: ../../api/cloudpc-createsnapshot.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
-    - name: Share snapshot
-      href: ../../api/cloudpc-sharesnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Bulk reprovision remote action (deprecated)

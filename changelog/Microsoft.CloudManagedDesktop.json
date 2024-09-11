@@ -12,27 +12,11 @@
           },
           {
             "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
-            "ApiChange": "Method",
-            "ChangedApiName": "shareSnapshot",
-            "ChangeType": "Addition",
-            "Description": "Added the [shareSnapshot](https://learn.microsoft.com/en-us/graph/api/cloudpc-shareSnapshot?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-            "Target": "cloudPc"
-          },
-          {
-            "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcBulkCreateSnapshot",
             "ChangeType": "Addition",
             "Description": "Added the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource type.",
             "Target": "cloudPcBulkCreateSnapshot"
-          },
-          {
-            "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
-            "ApiChange": "Resource",
-            "ChangedApiName": "cloudPcBulkShareSnapshot",
-            "ChangeType": "Addition",
-            "Description": "Added the [cloudPcBulkShareSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkShareSnapshot?view=graph-rest-beta) resource type.",
-            "Target": "cloudPcBulkShareSnapshot"
           },
           {
             "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
@@ -62,7 +46,7 @@
         "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-08-20T21:56:29.8792314Z",
+        "CreatedDateTime": "2024-09-11T21:56:29.8792314Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
