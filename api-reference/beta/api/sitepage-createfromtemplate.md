@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of the [crateFromPageTemplateR
 
 ## Response
 
-If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
+If successful, this method returns a `201 Created` and the created [sitePage](../resources/baseSitePage.md) object.
 
 ## Example
 
@@ -69,9 +69,7 @@ Content-Type: application/json
 
 The following example shows the response.
 
-If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
-
-**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
+> **Note:** The response object might be shortened for readability.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
