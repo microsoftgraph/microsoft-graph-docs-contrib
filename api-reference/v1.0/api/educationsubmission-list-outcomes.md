@@ -79,7 +79,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/outcomes
+GET https://graph.microsoft.com/v1.0/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/4bca096a-7de3-8675-5e86-2fa149923860/outcomes
 ```
 
 # [C#](#tab/csharp)
@@ -134,34 +134,92 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('bf1f1963-05f6-4cba-903c-5892b4ce3bd7')/assignments('db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a')/submissions('4bca096a-7de3-8675-5e86-2fa149923860')/outcomes",
     "value": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+            "lastModifiedDateTime": null,
             "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
-            "feedback": {
-                "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-                "text": {
-                    "content": "This is feedback for the assignment as a whole.",
-                    "contentType": "text"
-                },
-                "feedbackBy": {
-                    "user": {
-                        "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-                    }
+            "lastModifiedBy": null,
+            "feedback": null,
+            "publishedFeedback": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationPointsOutcome",
+            "lastModifiedDateTime": null,
+            "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+            "lastModifiedBy": null,
+            "points": null,
+            "publishedPoints": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationRubricOutcome",
+            "lastModifiedDateTime": "2024-08-14T05:47:41.8399565Z",
+            "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
                 }
             },
-            "publishedFeedback": {
-                "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-                "text": {
-                    "content": "This is feedback for the assignment as a whole.",
-                    "contentType": "text"
+            "rubricQualityFeedback": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "feedback": null
                 },
-                "feedbackBy": {
-                    "user": {
-                        "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-                    }
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "feedback": null
                 }
-            }
+            ],
+            "rubricQualitySelectedLevels": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "columnId": null
+                }
+            ],
+            "publishedRubricQualityFeedback": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "feedback": null
+                }
+            ],
+            "publishedRubricQualitySelectedLevels": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "columnId": null
+                }
+            ]
         }
     ]
 }
@@ -237,11 +295,12 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignments('<guid>')/submissions('<guid>')/outcomes?$select=lastModifiedBy,lastModifiedDateTime",
     "value": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
-            "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
-            "id": "8fb409c5-570b-4fe5-8473-d3666e61f3a0",
+            "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+            "id": "0710aeea-590d-46b4-9eb8-1c08b6549677",
             "resourceStatus": "notPublished",
             "lastModifiedBy": {
                 "application": null,
@@ -253,10 +312,10 @@ Content-type: application/json
             },
             "feedbackResource": {
                 "@odata.type": "#microsoft.graph.educationWordResource",
-                "displayName": "Document2.docx",
-                "createdDateTime": "2022-05-06T00:52:12.8318064Z",
-                "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ26WF6K2W2IOFAKDITG4F5GWRH5",
+                "displayName": "Document3.docx",
+                "createdDateTime": "2022-05-06T00:52:17.3180176Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ563EMEMHRTBBH2SOZ4GDSNEUZK",
                 "createdBy": {
                     "application": null,
                     "device": null,
@@ -274,6 +333,43 @@ Content-type: application/json
                     }
                 }
             }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
+            "lastModifiedDateTime": "2022-05-06T00:52:21.8011514Z",
+            "id": "4176c991-c263-4772-9b01-5a27d55e123e",
+            "resourceStatus": "notPublished",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "feedbackResource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document4.docx",
+                "createdDateTime": "2022-05-06T00:52:21.8011302Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:21.8011514Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ3OHVMMZAEQPRC3LQJLBEQQY4BI",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                }
+            }        
         }
     ]
 }

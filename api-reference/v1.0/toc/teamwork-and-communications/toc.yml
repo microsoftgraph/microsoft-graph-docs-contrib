@@ -126,6 +126,8 @@ items:
       items:
       - name: Call
         href: ../../resources/call.md
+      - name: Create
+        href: ../../api/application-post-calls.md
       - name: Get
         href: ../../api/call-get.md
       - name: Delete/hang up
@@ -270,6 +272,10 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
         href: ../../api/callrecording-get.md
+      - name: Get delta by organizer
+        href: ../../api/callrecording-delta.md
+      - name: List recordings by organizer
+        href: ../../api/onlinemeeting-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -278,6 +284,10 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: Get transcript
         href: ../../api/calltranscript-get.md
+      - name: Get delta by organizer
+        href: ../../api/calltranscript-delta.md
+      - name: List transcripts by organizer
+        href: ../../api/onlinemeeting-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link

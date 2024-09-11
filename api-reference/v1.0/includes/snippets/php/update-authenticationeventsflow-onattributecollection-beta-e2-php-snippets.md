@@ -45,7 +45,7 @@ $inputsAuthenticationAttributeCollectionInputConfiguration2->setDefaultValue(nul
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setHidden(false);
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setEditable(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setWriteToDirectory(true);
-$inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
 $inputsAuthenticationAttributeCollectionInputConfiguration2->setOptions([	]);
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration2;
@@ -57,21 +57,30 @@ $inputsAuthenticationAttributeCollectionInputConfiguration3->setDefaultValue(nul
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setHidden(false);
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setEditable(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setWriteToDirectory(true);
-$inputsAuthenticationAttributeCollectionInputConfiguration3->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setRequired(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
 $inputsAuthenticationAttributeCollectionInputConfiguration3->setOptions([	]);
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration3;
 $inputsAuthenticationAttributeCollectionInputConfiguration4 = new AuthenticationAttributeCollectionInputConfiguration();
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setAttribute('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setLabel('Favorite color');
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setAttribute('extension_331d514c0c18477583ea7dd5a79feda2_RockorCountry');
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setLabel('Rock music or Country');
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setInputType(new AuthenticationAttributeCollectionInputType('radioSingleSelect'));
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setDefaultValue(null);
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setHidden(false);
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setEditable(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setWriteToDirectory(true);
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setRequired(true);
 $inputsAuthenticationAttributeCollectionInputConfiguration4->setValidationRegEx('^.*');
-$inputsAuthenticationAttributeCollectionInputConfiguration4->setOptions([	]);
+$optionsAuthenticationAttributeCollectionOptionConfiguration1 = new AuthenticationAttributeCollectionOptionConfiguration();
+$optionsAuthenticationAttributeCollectionOptionConfiguration1->setLabel('Rock music');
+$optionsAuthenticationAttributeCollectionOptionConfiguration1->setValue('Rock');
+$optionsArray []= $optionsAuthenticationAttributeCollectionOptionConfiguration1;
+$optionsAuthenticationAttributeCollectionOptionConfiguration2 = new AuthenticationAttributeCollectionOptionConfiguration();
+$optionsAuthenticationAttributeCollectionOptionConfiguration2->setLabel('Country music');
+$optionsAuthenticationAttributeCollectionOptionConfiguration2->setValue('Country');
+$optionsArray []= $optionsAuthenticationAttributeCollectionOptionConfiguration2;
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setOptions($optionsArray);
+
 $inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration4;
 $viewsAuthenticationAttributeCollectionPageViewConfiguration1->setInputs($inputsArray);
 
