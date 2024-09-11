@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.android_work_profile_general_device_configuration import AndroidWorkProfileGeneralDeviceConfiguration
 from msgraph.generated.models.android_work_profile_required_password_type import AndroidWorkProfileRequiredPasswordType
 from msgraph.generated.models.android_work_profile_cross_profile_data_sharing_type import AndroidWorkProfileCrossProfileDataSharingType
 from msgraph.generated.models.android_work_profile_default_app_permission_policy_type import AndroidWorkProfileDefaultAppPermissionPolicyType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AndroidWorkProfileGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
 	description = "Description value",
