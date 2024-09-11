@@ -1,5 +1,5 @@
 ---
-title: "Get recently modified educationSubmissions"
+title: "getRecentlyModifiedSubmissions: educationClass"
 description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
 author: "v-rmanda"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Get recently modified educationSubmissions
+# getRecentlyModifiedSubmissions: educationClass
 
 Namespace: microsoft.graph
 
