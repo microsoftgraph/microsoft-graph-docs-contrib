@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows10_endpoint_protection_configuration import Windows10EndpointProtectionConfiguration
 from msgraph.generated.models.firewall_pre_shared_key_encoding_method_type import FirewallPreSharedKeyEncodingMethodType
@@ -16,9 +17,7 @@ from msgraph.generated.models.application_guard_block_file_transfer_type import 
 from msgraph.generated.models.application_guard_block_clipboard_sharing_type import ApplicationGuardBlockClipboardSharingType
 from msgraph.generated.models.bit_locker_removable_drive_policy import BitLockerRemovableDrivePolicy
 from msgraph.generated.models.bit_locker_encryption_method import BitLockerEncryptionMethod
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Windows10EndpointProtectionConfiguration(
 	odata_type = "#microsoft.graph.windows10EndpointProtectionConfiguration",
 	description = "Description value",

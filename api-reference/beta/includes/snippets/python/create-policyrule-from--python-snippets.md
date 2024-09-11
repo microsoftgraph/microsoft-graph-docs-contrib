@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.networkaccess.filtering_policy import FilteringPolicy
 from msgraph_beta.generated.models.networkaccess.policy_rule import PolicyRule
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.network_destination_type import NetworkDestin
 from msgraph_beta.generated.models.networkaccess.rule_destination import RuleDestination
 from msgraph_beta.generated.models.networkaccess.web_category import WebCategory
 from msgraph_beta.generated.models.filtering_policy_action import FilteringPolicyAction
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = FilteringPolicy(
 	name = "Block Social",
 	policy_rules = [
