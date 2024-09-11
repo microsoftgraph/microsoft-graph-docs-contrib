@@ -42,8 +42,6 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=one-dev-minute&ep=how-do-delegated-permissions-work]
-
 In a delegated access scenario, an app may allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
 
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.cloud_pc_provisioning_policy import CloudPcProvisioningPolicy
 from msgraph_beta.generated.models.cloud_pc_provisioning_policy_image_type import CloudPcProvisioningPolicyImageType
@@ -12,9 +13,7 @@ from msgraph_beta.generated.models.cloud_pc_windows_setting import CloudPcWindow
 from msgraph_beta.generated.models.microsoft_managed_desktop import MicrosoftManagedDesktop
 from msgraph_beta.generated.models.microsoft_managed_desktop_type import MicrosoftManagedDesktopType
 from msgraph_beta.generated.models.cloud_pc_provisioning_policy_autopatch import CloudPcProvisioningPolicyAutopatch
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
 	display_name = "HR provisioning policy",
