@@ -137,30 +137,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.healthIssue",
-      "id": "bf600aba-e975-0274-d332-c0f79dc75740",
-      "displayName": "String",
-      "healthIssueType": "String",
-      "issueTypeId": "String",
-      "severity": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "domainNames": [
-        "String"
-      ],
-      "sensorDNSNames": [
-        "String"
-      ],
-      "description": "String",
-      "recommendations": [
-        "String"
-      ],
-      "recommendedActionCommands": [
-        "String"
-      ],
-      "additionalInformation": [
-        "String"
-      ]
+      "additionalInformation": ["Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)"],
+      "createdDateTime": "2022-07-15T12:19:27.7211305Z",
+      "description": "Directory Services Object Auditing is not configured as required on domain1.contoso.com",
+      "displayName": "Directory Services Object Auditing is not configured as required",
+      "domainNames": ["domain1.contoso.com", "domain2.contoso.com"],
+      "healthIssueType": "Global",
+      "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "issueTypeId": "1031",
+      "lastModifiedDateTime": "2022-07-15T12:19:27.7211305Z",
+      "recommendations": ["Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"],
+      "recommendedActionCommands": ["Import-Module DefenderForIdentity"],
+      "sensorDNSNames": ["DC1.domain1.contoso.com", "DC2.domain2.contoso.com"],
+      "severity": "medium"",
+      "status": "open"
     }
   ]
 }
