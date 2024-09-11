@@ -553,7 +553,7 @@ GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@t
 
 #### Response
 
-The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mention** object.
+The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
 
 <!-- {
   "blockType": "response",
