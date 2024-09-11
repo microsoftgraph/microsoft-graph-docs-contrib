@@ -1,19 +1,19 @@
 ---
-title: "List healthIssue objects"
-description: "Get a list of the microsoft.graph.security.healthIssue objects and their properties."
+title: "List healthIssues"
+description: "Get a list of the healthIssue objects and their properties."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List healthIssue objects
+# List healthIssues
 
 Namespace: microsoft.graph.security
 
 
 
-Get a list of the [microsoft.graph.security.healthIssue](../resources/security-healthissue.md) objects and their properties.
+Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.
 
 ## Permissions
 

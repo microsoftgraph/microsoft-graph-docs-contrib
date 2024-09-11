@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for security identities APIs. Currently exposes the [healthIssues](security-healthissue.md) relationship.
+A container for security identities APIs that currently exposes the [healthIssues](security-healthissue.md) relationship.
 
 ## Methods
 
@@ -28,7 +28,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.|
+|healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration. |
 
 ## JSON representation
 

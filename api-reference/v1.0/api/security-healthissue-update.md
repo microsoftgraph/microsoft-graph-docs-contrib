@@ -1,6 +1,6 @@
 ---
 title: "Update healthIssue"
-description: "Update the properties of a microsoft.graph.security.healthIssue object."
+description: "Update the properties of a healthIssue object."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Update the properties of a [microsoft.graph.security.healthIssue](../resources/security-healthissue.md) object.
+Update the properties of a [healthIssue](../resources/security-healthissue.md) object.
 
 ## Permissions
 

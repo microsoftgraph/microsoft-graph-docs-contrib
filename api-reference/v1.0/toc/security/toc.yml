@@ -342,6 +342,18 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+- name: Identities
+  items:
+  - name: Health issue
+    items:
+    - name: Health issue
+      href: ../../resources/security-healthissue.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-healthissues.md
+    - name: Get
+      href: ../../api/security-healthissue-get.md
+    - name: Update
+      href: ../../api/security-healthissue-update.md
 - name: Information protection
   items:
   - name: Threat assessment

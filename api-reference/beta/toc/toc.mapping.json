@@ -2447,7 +2447,7 @@
           ]
         },
         {
-          "name": "Identities (preview)",
+          "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue"
           ]
