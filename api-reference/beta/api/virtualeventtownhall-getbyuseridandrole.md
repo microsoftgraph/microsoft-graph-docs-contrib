@@ -57,13 +57,14 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [virtualEventTownhall](../resources/virtualeventtownhall.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventTownhall](../resources/virtualeventtownhall.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "virtualeventtownhallthis.getbyuseridandrole"
@@ -73,11 +74,9 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
----
-
 ### Response
 
-The following example shows the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
