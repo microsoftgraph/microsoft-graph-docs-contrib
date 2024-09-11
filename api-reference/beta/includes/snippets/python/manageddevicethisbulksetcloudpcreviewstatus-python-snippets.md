@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.devicemanagement.manageddevices.bulk_set_cloud_pc_review_status.bulk_set_cloud_pc_review_status_post_request_body import BulkSetCloudPcReviewStatusPostRequestBody
 from msgraph_beta.generated.models.cloud_pc_review_status import CloudPcReviewStatus
 from msgraph_beta.generated.models.cloud_pc_user_access_level import CloudPcUserAccessLevel
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = BulkSetCloudPcReviewStatusPostRequestBody(
 	managed_device_ids = [
 		"30d0e128-de93-41dc-89ec-33d84bb662a0",

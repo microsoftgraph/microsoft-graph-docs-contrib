@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.identitygovernance.lifecycleworkflows.workflows.item.microsoft_graph_identity_governance_create_new_version.create_new_version_post_request_body import CreateNewVersionPostRequestBody
 from msgraph_beta.generated.models.identity_governance.workflow import Workflow
@@ -14,9 +15,7 @@ from msgraph_beta.generated.models.identity_governance.time_based_attribute_trig
 from msgraph_beta.generated.models.workflow_trigger_time_based_attribute import WorkflowTriggerTimeBasedAttribute
 from msgraph_beta.generated.models.identity_governance.task import Task
 from msgraph_beta.generated.models.key_value_pair import KeyValuePair
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CreateNewVersionPostRequestBody(
 	workflow = Workflow(
 		category = LifecycleWorkflowCategory.Joiner,
