@@ -36,7 +36,7 @@ GET /solutions/virtualEvents/townhalls/getByUserRole(role='{role}')
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the following query parameter with value.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a collection o
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "virtualeventtownhallthis.getbyuserrole"
@@ -71,11 +71,9 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
 ```
 
----
-
 ### Response
 
-The following example shows the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
