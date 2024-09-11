@@ -479,6 +479,9 @@ Content-type: application/json
 
 The following example shows how a manager can request an access package assignment on behalf of their direct employee.
 
+> [!NOTE]
+> The requestor(manager) is extracted from the token, and the target object is the id of the direct employee receiving access.
+
 #### Request
 
 The following example shows a request.
