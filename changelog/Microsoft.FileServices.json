@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pageTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pageTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pageTemplate?view=graph-rest-beta) resource and its supported methods.",
           "Target": "pageTemplate"
         },
         {
@@ -38,7 +38,7 @@
       "Id": "10600f5d-d864-4255-8d70-4473f6bfc57a",
       "Cloud": "Review",
       "Version": "beta",
-      "CreatedDateTime": "2024-08-21T02:27:49.2550406Z",
+      "CreatedDateTime": "2024-09-10T02:27:49.2550406Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
