@@ -2590,7 +2590,9 @@
             "baseSitePage",
             "sitePage",
             "webPart",
-            "pageTemplate",
+            "pageTemplate"
+          ],
+          "complexTypes": [
             "createFromTemplate",
             "saveAsTemplate"
           ],
