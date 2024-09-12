@@ -28,6 +28,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.|
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
