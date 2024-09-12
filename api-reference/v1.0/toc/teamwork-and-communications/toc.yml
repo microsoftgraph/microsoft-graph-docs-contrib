@@ -386,6 +386,8 @@ items:
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -396,8 +398,6 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
