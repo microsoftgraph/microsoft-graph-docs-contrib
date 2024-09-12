@@ -42,8 +42,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the specified user in Microsoft Entra.|
 |role|String|User role of the specified user in the **virtualEventTownhall**. Possible values are: `organizer`, `coOrganizer`.|
+|userId|String|The ID of the specified user in Microsoft Entra.|
 
 ## Request headers
 
