@@ -12,8 +12,6 @@ ms.subservice: "security"
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
 
 Inherits from [entity](../resources/entity.md).
