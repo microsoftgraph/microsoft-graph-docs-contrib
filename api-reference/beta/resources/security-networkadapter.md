@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a network adapter associated with a Microsoft Defender for Identity sensor. Network adapters are used for communication with other computers in your organization. For a standalone sensor on a dedicated server, network adapters are configured as the destination mirror port and receive the mirrored domain controller traffic.
-For Defender for Identity standalone sensor on a dedicated server, network adapters that are configured as the destination mirror port. These network adapters receive the mirrored domain controller traffic.
+Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -24,7 +23,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |ID|String|A unique identifier that represents the network adapter.|
-|isEnabled|Boolean|Indicates whether the network adapter is enabled.|
+|isEnabled|Boolean|Indicates whether the network adapter is selected for capturing and analyzing network traffic.|
 |name|String|The name of the network adapter.|
 
 ## Relationships

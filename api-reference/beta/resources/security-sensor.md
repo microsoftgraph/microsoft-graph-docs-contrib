@@ -25,9 +25,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get](../api/security-sensor-get.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Read the properties and relationships of a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
 |[Update](../api/security-sensor-update.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Update the properties of a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
 |[Delete](../api/security-identitycontainer-delete-sensors.md)|None|Delete a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
-|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version. You can use this URL and version to download an installer to install the sensor on a dedicated server.|
-|[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the sensor deployment access key.|
-|[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to activate the sensor installation.|
+|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version. You can use this URL to download the installer to install the sensor on a server.|
+|[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the deployment access key associated with the Microsoft Defender for Identity workspace, needed to install sensors associated with the workspace.|
+|[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install sensors associated with the workspace.|
 
 ## Properties
 |Property|Type|Description|
@@ -47,38 +47,37 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| upToDate | todo |
-| outdated | todo |
-| updating | todo |
-| updateFailed | todo |
-| notConfigured | todo |
-| unreachable | todo |
-| disconnected | todo |
-| startFailure | todo |
-| startFailure | todo |
-| syncing | todo |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| upToDate |Sensor is running a current version of the sensor.|
+| outdated |Sensor is running a version of the software that is at least three versions behind the current version.|
+| updating |Sensor software is being updated.|
+| updateFailed |Sensor failed to update to a new version.|
+| notConfigured |Sensor requires more configuration before it's fully operational. This applies to sensors installed on AD FS / AD CS servers or standalone sensors.|
+| unreachable |The domain controller was deleted from Active Directory. However, the sensor installation wasn't uninstalled and removed from the domain controller before it was decommissioned. You can safely delete this entry.|
+| disconnected |The Defender for Identity service hasn't seen any communication from this sensor in 10 minutes.|
+| startFailure |Sensor didn't pull configuration for more than 30 minutes.|
+| syncing |Sensor has configuration updates pending, but it didn't yet pull the new configuration.|
+| unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 #### sensorHealthStatus values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| healthy | todo |
-| notHealthyLow | todo |
-| notHealthyMedium | todo |
-| notHealthyHigh | todo |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| healthy |No opened health issues.|
+| notHealthyLow |The highest severity opened health issue is low.|
+| notHealthyMedium |The highest severity opened health issue is medium.|
+| notHealthyHigh |The highest severity opened health issue is high.|
+| unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 #### sensorType values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| adConnectIntegrated | todo |
-| adcsIntegrated | todo |
-| adfsIntegrated | todo |
-| domainControllerIntegrated | todo |
-| domainControllerStandalone | todo |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| adConnectIntegrated |Entra Connect sensor.|
+| adcsIntegrated |Active Directory Certificate Services (ADCS) sensor.|
+| adfsIntegrated |Active Directory Federation Services (ADFS) sensor.|
+| domainControllerIntegrated |Domain Controller sensor.|
+| domainControllerStandalone |Standalone sensor.|
+| unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 
 

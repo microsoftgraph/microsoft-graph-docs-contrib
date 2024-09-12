@@ -2317,7 +2317,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "deploymentAccessKeyType",
             "ChangeType": "Addition",
-            "Description": "Added the [deploymentAccessKeyType](https://learn.microsoft.com/en-us/graph/api/resources/security-deploymentAccessKeyType?view=graph-rest-beta) resource.",
+            "Description": "Added the [deploymentAccessKeyType](https://learn.microsoft.com/graph/api/resources/security-deploymentAccessKeyType?view=graph-rest-beta) resource.",
             "Target": "deploymentAccessKeyType"
           },
           {
@@ -2325,7 +2325,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "sensorDeploymentPackage",
             "ChangeType": "Addition",
-            "Description": "Added the [sensorDeploymentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorDeploymentPackage?view=graph-rest-beta) resource.",
+            "Description": "Added the [sensorDeploymentPackage](https://learn.microsoft.com/graph/api/resources/security-sensorDeploymentPackage?view=graph-rest-beta) resource.",
             "Target": "sensorDeploymentPackage"
           },
           {
@@ -2333,7 +2333,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "sensorSettings",
             "ChangeType": "Addition",
-            "Description": "Added the [sensorSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorSettings?view=graph-rest-beta) resource.",
+            "Description": "Added the [sensorSettings](https://learn.microsoft.com/graph/api/resources/security-sensorSettings?view=graph-rest-beta) resource.",
             "Target": "sensorSettings"
           },
           {
@@ -2341,7 +2341,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "sensors",
             "ChangeType": "Addition",
-            "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+            "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
             "Target": "identityContainer"
           },
           {
@@ -2349,7 +2349,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "networkAdapter",
             "ChangeType": "Addition",
-            "Description": "Added the [networkAdapter](https://learn.microsoft.com/en-us/graph/api/resources/security-networkAdapter?view=graph-rest-beta) resource.",
+            "Description": "Added the [networkAdapter](https://learn.microsoft.com/graph/api/resources/security-networkAdapter?view=graph-rest-beta) resource.",
             "Target": "networkAdapter"
           },
           {
@@ -2357,7 +2357,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "sensor",
             "ChangeType": "Addition",
-            "Description": "Added the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Description": "Added the [sensor](https://learn.microsoft.com/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
             "Target": "sensor"
           },
           {
@@ -2365,7 +2365,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "regenerateDeploymentAccessKey",
             "ChangeType": "Addition",
-            "Description": "Added the [regenerateDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-regenerateDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Description": "Added the [regenerateDeploymentAccessKey](https://learn.microsoft.com/graph/api/security-sensor-regenerateDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
             "Target": "sensor"
           },
           {
@@ -2373,7 +2373,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getDeploymentAccessKey",
             "ChangeType": "Addition",
-            "Description": "Added the [getDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Description": "Added the [getDeploymentAccessKey](https://learn.microsoft.com/graph/api/security-sensor-getDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
             "Target": "sensor"
           },
           {
@@ -2381,7 +2381,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getDeploymentPackageUri",
             "ChangeType": "Addition",
-            "Description": "Added the [getDeploymentPackageUri](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentPackageUri?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Description": "Added the [getDeploymentPackageUri](https://learn.microsoft.com/graph/api/security-sensor-getDeploymentPackageUri?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
             "Target": "sensor"
           }
         ],

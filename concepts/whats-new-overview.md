@@ -109,7 +109,7 @@ Enabled the `Spain` and `Mexico` values as supported regions for the **region** 
 
 ### Security | Identities
 
-Added the ability to get, list, and update Microsoft Defender for Identity [sensors](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true).
+Added the ability to get, list, and update Microsoft Defender for Identity [sensors](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) settings.
 
 ## Contribute to Microsoft Graph
 

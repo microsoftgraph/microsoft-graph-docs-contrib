@@ -1,6 +1,6 @@
 ---
 title: "sensor: regenerateDeploymentAccessKey"
-description: "Generate a new deployment access key that can be used to activate sensor installation."
+description: "Generate a new deployment access key that can be used to install sensors associated with the workspace."
 author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generate a new deployment access key that can be used to activate [sensor](../resources/security-sensor.md) installation.
+Generate a new deployment access key that can be used to install a [sensor](../resources/security-sensor.md) associated with the workspace.
 
 ## Permissions
 
