@@ -1,6 +1,6 @@
 ---
 title: "virtualEventTownhall: getByUserIdAndRole"
-description: "Get a list of virtualEventTownhall objects where the specified user is either the organizer or a coorganizer."
+description: "Get a list of virtualEventTownhall objects where the specified user is either the organizer or a co-organizer."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [virtualEventTownhall](../resources/virtualeventtownhall.md) objects where the specified user is either the organizer or a coorganizer.
+Get a list of [virtualEventTownhall](../resources/virtualeventtownhall.md) objects where the specified user is either the organizer or a co-organizer.
 
 ## Permissions
 
