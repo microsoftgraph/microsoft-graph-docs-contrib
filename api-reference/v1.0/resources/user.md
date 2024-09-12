@@ -322,12 +322,11 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |photos|[profilePhoto](profilephoto.md) collection| The collection of the user's profile photos in different sizes. Read-only.|
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand` and returns up to 100 objects.|
-|solutions|[userSolutionRoot](../resources/usersolutionroot.md)| The user's custom solution entity. Read-Only. Nullable.|
+|solutions|[userSolutionRoot](../resources/usersolutionroot.md)|The identifier that relates the user to the working time schedule triggers. Read-Only. Nullable|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
-|solutions|[userSolutionRoot](../resources/usersolutionroot.md)| Represents a users identifier which helps relate to the working time schedule triggers. Read-Only. Nullable.|
 
 ## JSON representation
 

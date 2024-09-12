@@ -1,6 +1,6 @@
 ---
 title: "userSolutionRoot resource type"
-description: "Represents a user's identifier which helps relate to the working time schedule triggers"
+description: "Represents an identifier that relates a user to the working time schedule triggers."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's custom solution entity.
+Represents an identifier that relates a user to the working time schedule triggers.
 
 ## Properties
 
