@@ -462,7 +462,7 @@ items:
       href: ../../resources/security-detonationdetails.md
     - name: Detonation observables
       href: ../../resources/security-detonationobservables.md
-- name: Identities (preview)
+- name: Identities
   items:
   - name: Health issue
     items:

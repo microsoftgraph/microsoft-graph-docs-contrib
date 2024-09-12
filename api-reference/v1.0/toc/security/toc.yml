@@ -354,6 +354,10 @@ items:
       href: ../../api/security-healthissue-get.md
     - name: Update
       href: ../../api/security-healthissue-update.md
+  - name: Complex types
+    items:
+    - name: Identity container
+      href: ../../resources/security-identitycontainer.md
 - name: Information protection
   items:
   - name: Threat assessment
