@@ -975,14 +975,6 @@ items:
       href: ../../api/workforceintegration-update.md
     - name: Delete
       href: ../../api/workforceintegration-delete.md
-  - name: Working time schedule
-    items:
-    - name: Working time schedule
-      href: ../../resources/workingtimeschedule.md
-    - name: Start working time
-      href: ../../api/workingtimeschedule-startworkingtime.md
-    - name: End working time
-      href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
     - name: Change tracked entity
