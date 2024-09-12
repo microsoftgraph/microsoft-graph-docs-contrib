@@ -1865,6 +1865,7 @@
             "shiftItem",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }
