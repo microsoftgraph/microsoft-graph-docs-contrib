@@ -120,7 +120,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_sharmas_recent-submissions-2/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
     "value": [
         {
             "status": "submitted",
