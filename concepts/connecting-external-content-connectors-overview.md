@@ -22,7 +22,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) (preview)
 
 >[!NOTE]
->For details about how to build a Microsoft Graph connector that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector). 
+>For details about how to build a Microsoft Graph connector that is integrated with Microsoft 365 Copilot, see [Microsoft 365 Copilot for Microsoft Graph connectors](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-graph-connector). 
 
 ## Get started with custom connectors
 
