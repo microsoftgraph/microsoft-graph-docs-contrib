@@ -273,18 +273,18 @@ items:
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
     - name: Get remove connection hitorical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
-    - name: Get shared use license usage report
-      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Retrieve connection quality reports
       href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
-    - name: Get connection quality reports (deprecated)
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: Get daily aggregated remote connection reports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get connection quality reports (deprecated)
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Get shared use license usage report (deprecated)
+      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
