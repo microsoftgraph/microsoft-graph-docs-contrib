@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for a peopleAdminSettings object. Inherited from [entity](../resources/entity.md).|
-|isEnabledInOrganization|Boolean| `true` to enable name pronunciation in the organization; otherwise, `false`. The default value is `false`, and name pronunciation is disabled.|
+|id|String|The unique identifier of the **namePronunciationSettings** object. Inherited from [entity](../resources/entity.md).|
+|isEnabledInOrganization|Boolean| `true` to enable name pronunciation in the organization; otherwise, `false`. The default value is `false`.|
 
 ## Relationships
 None.

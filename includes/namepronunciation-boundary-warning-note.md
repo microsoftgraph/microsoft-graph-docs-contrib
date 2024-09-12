@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 > [!NOTE]
-> Data will be sent outside the M365 data boundary to the Microsoft Defender Endpoint for malware scanning, by turning the toggle on you are consenting to this data flow. Data will not be stored outside the M365 data boundary. 
+> Data will be sent outside the M365 data boundary to the Microsoft Defender Endpoint for malware scanning. By turning the toggle on you are consenting to this data flow. Data will not be stored outside the M365 data boundary. 
