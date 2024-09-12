@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the deployment access key associated with a Microsoft Defender for Identity [sensor](../security-sensor.md).
+Get the deployment access key associated with a Microsoft Defender for Identity [sensor](../resources/security-sensor.md).
 
 ## Permissions
 

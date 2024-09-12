@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generate a new deployment access key that can be used to activate [sensor](../security-sensor.md) installation.
+Generate a new deployment access key that can be used to activate [sensor](../resources/security-sensor.md) installation.
 
 ## Permissions
 

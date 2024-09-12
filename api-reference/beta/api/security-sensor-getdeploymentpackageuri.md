@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [sensor](../security-sensor.md) deployment package URL and version. You can use this URL and version to download an installer to install the sensor on a dedicated server.
+Get the [sensor](../resources/security-sensor.md) deployment package URL and version. You can use this URL and version to download an installer to install the sensor on a dedicated server.
 
 ## Permissions
 
