@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. However, security groups cannot be restored. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
+Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. However, security groups can't be restored. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -50,7 +50,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md). The default value for this paramater is `false`.|
+|autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md) objects. The default value for this paramater is `false`.|
 
 ## Response
 
