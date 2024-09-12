@@ -357,11 +357,7 @@ items:
   - name: Complex types
     items:
     - name: Identity container
-      items:
-      - name: Identity container
-        href: ../../resources/security-identitycontainer.md
-      - name: List healthIssues
-        href: ../../api/security-identitycontainer-list-healthissues.md
+      href: ../../resources/security-identitycontainer.md
 - name: Information protection
   items:
   - name: Threat assessment
