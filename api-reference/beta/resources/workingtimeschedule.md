@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule resource type"
-description: "Represents the scheduled working hours for a user.."
+description: "Represents the scheduled working hours for a user."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"

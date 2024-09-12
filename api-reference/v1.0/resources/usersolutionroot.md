@@ -19,7 +19,7 @@ Represents a user's custom solution entity.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique programmatic identifier for the entity. Read-only.|
+|id|String|The unique identifier for the user's custom solution entity. Read-only.|
 
 ## Relationships
 
