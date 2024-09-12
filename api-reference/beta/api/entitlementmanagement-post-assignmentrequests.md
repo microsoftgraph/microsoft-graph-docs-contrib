@@ -503,8 +503,8 @@ Content-type: application/json
        },
        "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
        "target": {
-           "displayName": "Ivan Franklin",
-           "email": "IvanFranklin@woodgrove.com",
+           "displayName": "Idris Ibrahim",
+           "email": "IdrisIbrahim@woodgrovebank.com",
            "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
            "subjectType": "user"
        }
