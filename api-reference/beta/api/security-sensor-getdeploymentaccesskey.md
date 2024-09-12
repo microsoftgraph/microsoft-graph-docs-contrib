@@ -1,5 +1,5 @@
 ---
-title: "Sensor: getDeploymentAccessKey"
+title: "sensor: getDeploymentAccessKey"
 description: "Get the deployment access key associated with a sensor."
 author: "amirfeldman"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 09/10/2024
 ---
 
-# Sensor: getDeploymentAccessKey
+# sensor: getDeploymentAccessKey
 
 Namespace: microsoft.graph.security
 

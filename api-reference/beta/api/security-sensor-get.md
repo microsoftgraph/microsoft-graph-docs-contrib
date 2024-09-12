@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.
+Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.
 
 ## Permissions
 

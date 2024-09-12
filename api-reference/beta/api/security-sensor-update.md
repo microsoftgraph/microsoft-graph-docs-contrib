@@ -54,7 +54,7 @@ PATCH /security/identities/sensors/{sensorId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information. The **description** property can be updated for all sensor types. The **isDelayedUpdateEnabled** property can be updated for all sensors with version < 3.X. The **domainControllerDnsNames** property can be updated for all sensors with version < 3.X except for domain controller sensors. |
+|settings|[sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information. The **description** property can be updated for all sensor types. The **isDelayedUpdateEnabled** property can be updated for all sensors with version < 3.X. The **domainControllerDnsNames** property can be updated for all sensors with version < 3.X except for domain controller sensors. |
 
 
 

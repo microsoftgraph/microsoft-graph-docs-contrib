@@ -1,5 +1,5 @@
 ---
-title: "Sensor: regenerateDeploymentAccessKey"
+title: "sensor: regenerateDeploymentAccessKey"
 description: "Generate a new deployment access key that can be used to activate sensor installation."
 author: "amirfeldman"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 09/10/2024
 ---
 
-# Sensor: regenerateDeploymentAccessKey
+# sensor: regenerateDeploymentAccessKey
 
 Namespace: microsoft.graph.security
 

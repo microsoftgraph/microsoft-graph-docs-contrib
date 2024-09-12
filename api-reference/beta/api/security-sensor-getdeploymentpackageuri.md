@@ -1,5 +1,5 @@
 ---
-title: "Sensor: getDeploymentPackageUri"
+title: "sensor: getDeploymentPackageUri"
 description: "Get the sensor deployment package URL and version."
 author: "amirfeldman"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 09/10/2024
 ---
 
-# Sensor: getDeploymentPackageUri
+# sensor: getDeploymentPackageUri
 
 Namespace: microsoft.graph.security
 

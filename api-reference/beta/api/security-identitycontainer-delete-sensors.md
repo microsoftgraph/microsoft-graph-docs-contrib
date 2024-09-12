@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.
+Delete a [sensor](../resources/security-sensor.md) object.
 
 ## Permissions
 
