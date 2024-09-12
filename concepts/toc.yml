@@ -582,6 +582,116 @@ items:
         href: custom-connector-sdk-sample-publish.md
       - name: Surface the data in search
         href: custom-connector-sdk-sample-search.md
+    - name: Set up Microsoft-built connectors
+    items:
+    - name: Setup overview
+      href: /microsoftsearch/configure-connector?context=graph/context
+    - name: Add staged rollout to connectors
+      href: /microsoftsearch/staged-rollout-for-graph-connectors?context=graph/context
+    - name: Microsoft Graph connectors in Microsoft 365 Copilot
+      items:
+      - name: Enhancing Microsoft 365 Copilot discovery with Microsoft Graph connector content
+        href: /microsoftsearch/enhancing-microsoft-copilot-discovery-with-graph-connector-content?context=graph/context
+    - name: On-prem connectors
+      items:
+      - name: Connector agent setup
+        href: /microsoftsearch/graph-connector-agent?context=graph/context
+      - name: Connector agent release history
+        href: /microsoftsearch/graph-connector-agent-releases?context=graph/context
+    - name: Map non-Azure AD Identities
+      href: /microsoftsearch/map-non-aad?context=graph/context
+    - name: Map Microsoft Entra identities
+      href: /microsoftsearch/map-aad?context=graph/context
+    - name: Microsoft Graph prebuilt connectors
+      href: /microsoftsearch/pre-built-connectors-overview?context=graph/context
+      items:
+      - name: Azure Data Lake Storage Gen2
+        items:
+        - name: Setup
+          href: /microsoftsearch/azure-data-lake-connector?context=graph/context
+      - name: Azure DevOps Work Items
+        items:
+        - name: Setup
+          href: /microsoftsearch/azure-devops-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-azure-devops-connector?context=graph/context
+      - name: Azure DevOps Wiki
+        items:
+        - name: Setup
+          href: /microsoftsearch/azure-devops-wiki-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-azure-devops-wiki-connector?context=graph/context
+      - name: Azure SQL and Microsoft SQL Server
+        items:
+        - name: Setup
+          href: /microsoftsearch/MSSQL-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-mssql-connector?context=graph/context
+      - name: Confluence Cloud
+        items:
+        - name: Setup
+          href: /microsoftsearch/confluence-cloud-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-confluence-cloud-connector?context=graph/context
+      - name: Confluence On-premises (preview)
+        items:
+        - name: Setup
+          href: /microsoftsearch/confluence-onpremises-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-confluence-onpremises-connector?context=graph/context
+      - name: CSV
+        href: /microsoftsearch/csv-connector?context=graph/context
+        items:
+        - name: Setup
+          href: /microsoftsearch/csv-connector?context=graph/context
+      - name: Jira Cloud
+        items:
+        - name: Setup
+          href: /microsoftsearch/jira-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-jira-cloud-connector?context=graph/context
+      - name: Enterprise websites
+        items:
+        - name: Setup
+          href: /microsoftsearch/enterprise-web-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-enterprise-web-connector?context=graph/context
+      - name: File Share
+        items:
+        - name: Setup
+          href: /microsoftsearch/fileshare-connector?context=graph/context
+      - name: MediaWiki
+        items:
+        - name: Setup
+          href: /microsoftsearch/mediawiki-connector?context=graph/context
+      - name: Oracle SQL
+        items:
+        - name: Setup
+          href: /microsoftsearch/OracleSQL-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-oraclesql-connector?context=graph/context
+      - name: Salesforce
+        items:
+        - name: Setup
+          href: /microsoftsearch/salesforce-connector?context=graph/context
+      - name: ServiceNow Catalog
+        items:
+        - name: Setup
+          href: /microsoftsearch/servicenow-catalog-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-servicenow-catalog-connector?context=graph/context
+      - name: ServiceNow Knowledge
+        items:
+        - name: Setup
+          href: /microsoftsearch/servicenow-knowledge-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-servicenow-knowledge-connector?context=graph/context
+      - name: ServiceNow Tickets
+        items:
+        - name: Setup
+          href: /microsoftsearch/servicenow-tickets-connector?context=graph/context
+        - name: Troubleshooting
+          href: /microsoftsearch/troubleshoot-servicenow-tickets-connector?context=graph/context
     - name: Simplify connector deployment
       href: connecting-external-content-deploy-teams.md
     - name: Manage connections
