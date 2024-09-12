@@ -92,80 +92,7 @@ Content-type: application/json
 
 ## Examples
 
-### Example 1: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
-
-#### Request
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_select_assignmentId"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=LastModifiedDateTime,status
-```
-
-#### Response
-The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability. 
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
-    "value": [
-        {
-            "status": "submitted",
-            "lastModifiedDateTime": "2024-09-09T10:18:33.4052415Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.6464644Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.588738Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.5295878Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.4718648Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.3513158Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.2866527Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.2219998Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.1602788Z"
-        },
-        {
-            "status": "working",
-            "lastModifiedDateTime": "2024-09-09T10:18:07.0884058Z"
-        }
-    ]
-}
-```
-### Example 2: Get recently modified submissions
+### Example 1: Get recently modified submissions
 
 #### Request
 The following example shows a request.
@@ -259,6 +186,80 @@ Content-type: application/json
                     "displayName": null
                 }
             }
+        }
+    ]
+}
+```
+
+### Example 2: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_select_assignmentId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=LastModifiedDateTime,status
+```
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "value": [
+        {
+            "status": "submitted",
+            "lastModifiedDateTime": "2024-09-09T10:18:33.4052415Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.6464644Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.588738Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.5295878Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.4718648Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.3513158Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2866527Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2219998Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.1602788Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.0884058Z"
         }
     ]
 }
