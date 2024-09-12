@@ -17,7 +17,9 @@ Represents a container for security identities APIs that currently exposes the [
 
 ## Methods
 
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List healthIssues](../api/security-identitycontainer-list-healthissues.md)|[microsoft.graph.security.healthIssue](../resources/security-healthissue.md) collection|Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.|
 
 ## Properties
 
