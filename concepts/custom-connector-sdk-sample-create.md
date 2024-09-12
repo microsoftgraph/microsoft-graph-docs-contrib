@@ -210,7 +210,7 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
 
 2. Add the following **GetSchema** method in the AppliancePart.cs class.
 
-     ```csharp
+    ```csharp
     public static DataSourceSchema GetSchema()
     {
         DataSourceSchema schema = new DataSourceSchema();
@@ -271,7 +271,7 @@ The **GetDataSourceSchema** method is used to fetch the schema for the connector
 
         return schema;
     }
-     ```
+    ```
 
     > [!NOTE]
     > * The **RequiredSearchAnnotations** property marks the property annotations as mandatory and unchangeable during the setup of the connector. The previous example sets all properties as *searchable* and *retrievable* mandatorily; however, you can choose not to set the **RequiredSearchAnnotations** on one or more properties.
