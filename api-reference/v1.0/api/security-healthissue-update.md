@@ -71,31 +71,9 @@ PATCH https://graph.microsoft.com/v1.0/security/identities/healthIssues/b3c1b5fc
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.healthIssue",
-  "displayName": "String",
-  "healthIssueType": "String",
-  "issueTypeId": "String",
-  "severity": "String",
-  "status": "String",
-  "domainNames": [
-    "String"
-  ],
-  "sensorDNSNames": [
-    "String"
-  ],
-  "description": "String",
-  "recommendations": [
-    "String"
-  ],
-  "recommendedActionCommands": [
-    "String"
-  ],
-  "additionalInformation": [
-    "String"
-  ]
+  "status": "closed"
 }
 ```
-
 
 ### Response
 
@@ -125,6 +103,6 @@ Content-Type: application/json
   "recommendedActionCommands": ["Import-Module DefenderForIdentity"],
   "sensorDNSNames": ["DC1.domain1.contoso.com", "DC2.domain2.contoso.com"],
   "severity": "medium"",
-  "status": "open"
+  "status": "closed"
 }
 ```
