@@ -167,7 +167,7 @@ Represents the schema of the properties that represent a data entity in the data
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter on the Microsoft Search results page. A refinable property can't be searchable. |
 
 > [!NOTE]
-> If a connection has the **Title** and **Url** semantic labels and any schema property in the connection is marked as **IsContent**, the item content will be vectorized in the semantic index.
+> If a connection has the **Title** and **Url** semantic labels, and any schema property in the connection is marked as **IsContent**, the content of the item is vectorized in the semantic index.
 
 ## SearchPropertyLabel
 
