@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-
-
 Update the properties of a [healthIssue](../resources/security-healthissue.md) object.
 
 ## Permissions
@@ -69,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/security/identities/healthIssues/{healthIssueId}
+PATCH https://graph.microsoft.com/v1.0/security/identities/healthIssues/b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c
 Content-Type: application/json
 
 {
