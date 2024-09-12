@@ -18,7 +18,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-healthissue-get-permissions"
+  "name": "security_healthissue_get"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-healthissue-get-permissions.md)]
