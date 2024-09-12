@@ -4,7 +4,6 @@ description: "Represents potential issues identified by Microsoft Defender for I
 author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.date: 04/09/2024
 ms.subservice: "security"
 ---
 
