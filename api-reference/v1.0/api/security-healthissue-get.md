@@ -10,9 +10,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-
-
 Read the properties and relationships of a [healthIssue](../resources/security-healthissue.md) object.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,12 +30,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/identities/healthIssues/bf600aba-e975-0274-d332-c0f79dc75740
+GET /security/identities/healthIssues/{healthIssueId}
 ```
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response: `$select`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
