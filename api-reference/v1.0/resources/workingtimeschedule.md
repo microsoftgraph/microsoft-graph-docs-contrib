@@ -27,7 +27,7 @@ Represents the scheduled working hours for a user.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique programmatic identifier for the entity. Read-only.|
+|id|String|The unique identifier for the working time schedule. Read-only.|
 
 ## Relationships
 
