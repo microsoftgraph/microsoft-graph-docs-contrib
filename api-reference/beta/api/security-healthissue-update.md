@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /security/identities/healthIssues/bf600aba-e975-0274-d332-c0f79dc75740
+PATCH /security/identities/healthIssues/{healthIssueId}
 ```
 
 ## Request headers
