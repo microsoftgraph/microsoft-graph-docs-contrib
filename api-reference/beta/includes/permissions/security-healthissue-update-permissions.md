@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|SecurityIdentitiesHealth.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|SecurityIdentitiesHealth.ReadWrite.All|Not available.|
+
