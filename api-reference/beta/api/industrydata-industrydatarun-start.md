@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start a new [industryDataRun](../resources/industrydata-industrydatarun.md). Industry data automates a run every 12 hours, however users can use the start action to perform an on demand run. Industry Data service throttles run executions allowing 5 successful runs per 12 hours. Scheduling an on demand run will cause the next system sheduled run to be skipped if it set to execute within the next 10 hours.
+Start a new [industryDataRun](../resources/industrydata-industrydatarun.md). Industry data automates a run every 12 hours; however, users can use the start action to perform an on-demand run. The industry data service throttles the start of runs, allowing up to five successful runs every 12 hours. An on-demand run causes the next system-scheduled run to be skipped if it is set to run within the next 10 hours.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,10 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /external/industryData/runs/start
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
