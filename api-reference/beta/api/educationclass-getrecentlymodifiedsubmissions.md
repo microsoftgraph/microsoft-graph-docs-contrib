@@ -91,7 +91,81 @@ Content-type: application/json
 ```
 
 ## Examples
-### Example 1: Get recently modified submissions
+
+### Example 1: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_select_assignmentId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=assignmentId,status
+```
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "value": [
+        {
+            "status": "submitted",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        },
+        {
+            "status": "working",
+            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+        }
+    ]
+}
+```
+### Example 2: Get recently modified submissions
 
 #### Request
 The following example shows a request.
@@ -190,7 +264,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get recently modified submissions with `$expand` option
+### Example 3: Get recently modified submissions with `$expand` option
 
 #### Request
 The following example shows a request.
@@ -307,7 +381,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get recently modified submissions with `$filter` option
+### Example 4: Get recently modified submissions with `$filter` option
 
 #### Request
 The following example shows a request.
@@ -407,7 +481,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get recently modified submissions with `$orderby` and `$top` options
+### Example 5: Get recently modified submissions with `$orderby` and `$top` options
 
 #### Request
 The following example shows a request.
@@ -506,7 +580,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get recently modified submissions with `$select` option
+### Example 6: Get recently modified submissions with `$select` option
 
 #### Request
 The following example shows a request.
@@ -548,7 +622,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 6: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
+### Example 7: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
 
 #### Request
 The following example shows a request.

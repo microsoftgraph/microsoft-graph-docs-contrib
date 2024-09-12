@@ -40,7 +40,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|assignmentId|String| The unique identifier for the assignment that this submission is associated with. A submission is always associated with one and only one assignment.|
+|assignmentId|String|The unique identifier for the assignment that this submission is associated with. A submission is always associated with one and only one assignment.|
 |excusedBy|[identitySet](identityset.md)|The user that marked the submission as excused.|
 |excusedDateTime|DateTimeOffset|Moment in time when the submission was moved to the excused state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the submission.|
