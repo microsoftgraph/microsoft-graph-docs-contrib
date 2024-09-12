@@ -65,9 +65,9 @@
         {
           "Id": "fe8cbb45-4575-4378-a47a-b334d54446e3",
           "ApiChange": "Property",
-          "ChangedApiName": "user",
+          "ChangedApiName": "solutions",
           "ChangeType": "Addition",
-          "Description": "Added the start and end working time schedule trigger for user [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Description": "Added the **solutions** relationship to the [user] (https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],
