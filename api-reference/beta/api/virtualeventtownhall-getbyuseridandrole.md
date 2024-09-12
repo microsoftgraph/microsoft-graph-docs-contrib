@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!IMPORTANT]
 >
-> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to the specified user to authorize the app to get townhalls on behalf of that user.
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to the specified user to authorize the app to get town halls on behalf of that user.
 
 ## HTTP request
 
