@@ -102,7 +102,7 @@ The following example shows a request.
   "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_select_assignmentId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=assignmentId,status
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=LastModifiedDateTime,status
 ```
 
 #### Response
@@ -120,47 +120,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_sharmas_recent-submissions-2/$metadata#Collection(microsoft.graph.educationSubmission)",
     "value": [
         {
             "status": "submitted",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:33.4052415Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.6464644Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.588738Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.5295878Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.4718648Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.3513158Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2866527Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2219998Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.1602788Z"
         },
         {
             "status": "working",
-            "assignmentId": "b20d6737-f88e-4892-8174-73aa26d18784"
+            "lastModifiedDateTime": "2024-09-09T10:18:07.0884058Z"
         }
     ]
 }
