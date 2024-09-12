@@ -22,6 +22,9 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |azureAdDeviceId|String|A unique identifier assigned to a device by Microsoft Entra ID when device is Microsoft Entra joined.|
 |defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
 |deviceDnsName|String|The fully qualified domain name (FQDN) for the device.|
+| hostName | String | The hostname without the domain suffix |
+| ntDomain | String | A logical grouping of computers within a Microsoft Windows network. |
+| dnsDomain | String | The DNS domain that this computer belongs to. A sequence of labels separated by dots |
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
 |healthStatus|[microsoft.graph.security.deviceHealthStatus](#devicehealthstatus-values)|The health state of the device. The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
 |ipInterfaces|String collection|Ip interfaces of the device during the time of the alert.|

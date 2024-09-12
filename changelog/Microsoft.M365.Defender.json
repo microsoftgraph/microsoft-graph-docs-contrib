@@ -2285,6 +2285,40 @@
         "CreatedDateTime": "2024-05-26T11:35:02.5280165Z",
         "WorkloadArea": "Security",
         "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "dnsDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **dnsDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "hostName",
+            "ChangeType": "Addition",
+            "Description": "Added the **hostName** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "ntDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **ntDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          }
+        ],
+        "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+        "Cloud": "Review",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-12T11:01:36.741426Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
       }
   ]
 }
