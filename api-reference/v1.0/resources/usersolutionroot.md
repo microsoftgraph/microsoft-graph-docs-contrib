@@ -1,6 +1,6 @@
 ---
 title: "userSolutionRoot resource type"
-description: "Represents a user's custom userSolutionRoot entity."
+description: "Represents a users identifier which helps relate to the working time schedule"
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"

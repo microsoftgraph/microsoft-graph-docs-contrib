@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule resource type"
-description: "Represents the scheduled working hours for a user."
+description: "Resource contains triggers for policies associated with the start and end of working hours for users."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
