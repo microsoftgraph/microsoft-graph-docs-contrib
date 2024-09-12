@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20
-ms.date: 09/08/2023
+ms.date: 09/11/2024
 #customer intent: As a developer, I want to understand how my app can run with it's own identity, without a signed in user, and call Microsoft Graph to access resources in a tenant.
 ---
 
@@ -18,44 +18,28 @@ To call Microsoft Graph, an app must obtain an access token from the Microsoft i
 
 This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that handles many of these details for you and helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
 
+In this article, you complete the following steps in using the OAuth 2.0 authorization code grant flow:
+
+1. Request authorization.
+2. Request an access token.
+3. Use the access token to call Microsoft Graph.
+4. [Optional] Use the refresh token to renew an expired access token.
+
 ## Prerequisites
 
 Before proceeding with the steps in this article:
 
 1. Understand the authentication and authorization concepts in the Microsoft identity platform. For more information, see [Authentication and authorization basics](auth/auth-concepts.md).
-2. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md).
+2. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md). Save the following values from the app registration:
+    - The application ID (referred to as Object ID on the Microsoft Entra admin center).
+    - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile, and single page applications.
+    - A redirect URI for the app to receive token responses from Microsoft Entra ID.
 
-## Authentication and authorization steps
-
-For an app to get authorization and access to Microsoft Graph using the authorization code flow, you must follow these five steps:
-
-1. Register the app with Microsoft Entra ID.
-2. Request authorization.
-3. Request an access token.
-4. Use the access token to call Microsoft Graph.
-5. [Optional] Use the refresh token to renew an expired access token.
-
-<!--
-> [!TIP]
-> [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
-> Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
--->
-
-## 1. Register the app
-
-Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Microsoft Entra admin center.
-
-From the app registration, save the following values:
-
-- The application ID (referred to as Object ID on the Microsoft Entra admin center) assigned by the app registration portal.
-- A redirect URI (or reply URL) for the app to receive responses from Microsoft Entra ID.
-- A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
-
-## 2. Request authorization
+## Step 1: Request authorization
 
 The first step in the authorization code flow is for the user to authorize the app to act on their behalf.
 
-In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Microsoft Entra ID signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Microsoft Entra ID will return an authorization **code** to the app. The app can then redeem this code at the Microsoft identity platform `/token` endpoint for an access token.
+In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Microsoft Entra ID signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Microsoft Entra ID returns an authorization **code** to the app. The app can then redeem this code at the Microsoft identity platform `/token` endpoint for an access token.
 
 ### Authorization request
 
@@ -101,7 +85,7 @@ curl --location --request GET 'https://login.microsoftonline.com/{tenant}/oauth2
 
 ### User consent experience
 
-After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there is any permission that the user or administrator has not consented to, they're asked to consent to the required permissions. For more information about the Microsoft Entra consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
+After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there's any permission that the user or administrator hasn't consented to, they're asked to consent to the required permissions. For more information about the Microsoft Entra consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
@@ -125,7 +109,7 @@ https://localhost/myapp/?code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d&state=12345&
 | state         | If a state parameter is included in the request, the same value should appear in the response. The app should verify that the state values in the request and response are identical. This check helps to detect [Cross-Site Request Forgery (CSRF) attacks](https://tools.ietf.org/html/rfc6749#section-10.12) against the client. |
 | session_state | A unique value that identifies the current user session. This value is a GUID, but should be treated as an opaque value that is passed without examination.                                                                                                                                                                |
 
-## 3. Request an access token
+## Step 2: Request an access token
 
 The app uses the authorization `code` received in the previous step to request an access token by sending a `POST` request to the `/token` endpoint.
 
@@ -203,7 +187,7 @@ Content-type: application/json
 | access_token  | The requested access token. The app can use this token to call Microsoft Graph.                                                                                                                                                                                                                                                                                                          |
 | refresh_token | An OAuth 2.0 refresh token. The app can use this token to acquire additional access tokens after the current access token expires. Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time. A refresh token will only be returned if `offline_access` was included as a `scope` parameter. For details, see the [v2.0 token reference](/azure/active-directory/develop/active-directory-v2-tokens). |
 
-## 4. Use the access token to call Microsoft Graph
+## Step 3: Use the access token to call Microsoft Graph
 
 After you have an access token, the app uses it to call Microsoft Graph by attaching the access token as a **Bearer** token to the **Authorization** header in an HTTP request. The following request gets the profile of the signed-in user.
 
@@ -259,7 +243,7 @@ Content-Length: 407
 }
 ```
 
-## 5. Use the refresh token to renew an expired access token
+## Step 4: Use the refresh token to renew an expired access token
 
 Access tokens are short lived, and the app must refresh them after they expire to continue accessing resources. The app does so by submitting another `POST` request to the `/token` endpoint, this time:
 
@@ -339,7 +323,7 @@ Content-type: application/json
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details usually required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you walked through the low-level protocol details that are required only when manually crafting and issuing raw HTTP requests to execute the authorization code flow. In production apps, use a [Microsoft-built or supported authentication library](/azure/active-directory/develop/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
 
 MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections, allowing you to focus on the functionality of your application.
 
