@@ -583,7 +583,7 @@ items:
       - name: Surface the data in search
         href: custom-connector-sdk-sample-search.md
     - name: Set up Microsoft-built connectors
-    items:
+      items:
     - name: Setup overview
       href: /microsoftsearch/configure-connector?context=graph/context
     - name: Add staged rollout to connectors
