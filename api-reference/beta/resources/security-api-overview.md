@@ -125,11 +125,11 @@ Alerts from the following security providers are available via the legacy **aler
 
 ## Identities
 
-### Health Issues
-The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use the health issues API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use the API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
+### Health issues
 
-> **Note:** These APIs are only available for Defender for Identity Plan or Microsoft 365 A5/E5/F5/G5 Security service plans.
+The Microsoft Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use the health issues API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use the API to identify and resolve any issues that might affect the functionality or security of your sensors and agents.
 
+> **Note:** The Microsoft Defender for Identity health issues API is only available on the Defender for Identity plan or Microsoft 365 E5/A5/G5/F5 Security service plans.
 
 ## Incidents
 
