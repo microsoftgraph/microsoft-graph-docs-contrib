@@ -42,8 +42,6 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=one-dev-minute&ep=how-do-delegated-permissions-work]
-
 In a delegated access scenario, an app may allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
 
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
@@ -109,7 +107,7 @@ This principle is applied to all relationships that are of [directoryObject](/gr
 
 For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`.
 
-To read the basic properties of a group's members that are users, the app needs at least the *User.Read.All* permission. To read the basic properties of a group's members that are groups, the app needs at least the *Group.Read.All* permission. To read the basic properties of a group's members that are devices, the app needs at least the *Device.Read.All* permission, and so on. However, as an alternative to the individual resource-level permissions, the app can be assigned at least the *Directory.Read.All* permission to read *all properties for all member types*.
+To read the basic properties of a group's members that are users, the app needs at least the *User.ReadBasic.All* permission. To read the basic properties of a group's members that are groups, the app needs at least the *GroupMember.Read.All* permission. To read the basic properties of a group's members that are devices, the app needs at least the *Device.Read.All* permission, and so on. However, as an alternative to the individual resource-level permissions, the app can be assigned at least the *Directory.Read.All* permission to read *all properties for all member types*.
 
 ### Example
 
@@ -198,7 +196,7 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 Consider the following examples:
 
 - An app needs to only read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
-- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *Group.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user.
+- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *GroupMember.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user.
 - An app needs to read or write to a calendar of the signed-in user. The app manages dynamic jobs, and syncs from the user's Outlook calendar to keep the app up-to-date so to schedule jobs for the user. Even though [getting](/graph/api/event-delta) the user's calendar data requires *Calendars.Read*, [updating](/graph/api/user-post-events) the calendar with scheduled jobs requires a higher privileged permission, *Calendars.ReadWrite*. In this case, the app should request *Calendars.ReadWrite*.
 
 Granting an application more privileges than it needs is a poor security practice that exposes an app to unauthorized and unintended access to data or operations. Also, requesting more permissions than necessary may cause users to refrain from consenting to an app, affecting an app's adoption and usage.

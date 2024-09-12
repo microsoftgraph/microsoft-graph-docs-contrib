@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.auditlogs.signins.confirm_safe.confirm_safe_post_request_body import ConfirmSafePostRequestBody
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConfirmSafePostRequestBody(
 	request_ids = [
 		"5a0c76d2-cb57-4ece-9bc1-c323178f116a",
