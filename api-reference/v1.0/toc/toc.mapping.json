@@ -1849,8 +1849,7 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration",
-            "workingTimeSchedule"
+            "workforceIntegration"
           ],
           "complexTypes": [
             "changeTrackedEntity",
