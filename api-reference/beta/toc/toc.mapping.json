@@ -2449,7 +2449,8 @@
         {
           "name": "Identities (preview)",
           "resources": [
-            "microsoft.graph.security.healthIssue"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ]
         },
         {
