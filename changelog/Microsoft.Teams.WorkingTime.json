@@ -67,7 +67,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user",
           "ChangeType": "Change",
-          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Description": "Changed the user [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],

@@ -327,7 +327,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
-|solutions|[userSolutionRoot](../resources/usersolutionroot.md)| Represents a users identifier which helps relate to the working time schedule. Read-Only. Nullable.|
+|solutions|[userSolutionRoot](../resources/usersolutionroot.md)| Represents a users identifier which helps relate to the working time schedule triggers. Read-Only. Nullable.|
 
 ## JSON representation
 

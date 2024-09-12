@@ -1,6 +1,6 @@
 ---
 title: "Get workingTimeSchedule"
-description: "Read the properties and relationships of a workingTimeSchedule object."
+description: "resource contains triggers for policies associated with the start and end of working hours for users."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"

@@ -1,6 +1,6 @@
 ---
 title: "userSolutionRoot resource type"
-description: "Represents a users identifier which helps relate to the working time schedule"
+description: "Represents a users identifier which helps relate to the working time schedule triggers"
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
