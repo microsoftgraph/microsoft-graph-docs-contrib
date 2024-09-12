@@ -40,7 +40,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|assignmentId|String|The unique identifier for the assignment that this submission is associated with. A submission is always associated with one and only one assignment.|
+|assignmentId|String|The unique identifier for the assignment with which this submission is associated. A submission is always associated with one and only one assignment.|
 |excusedBy|[identitySet](identityset.md)|The user that marked the submission as excused.|
 |excusedDateTime|DateTimeOffset|Moment in time when the submission was moved to the excused state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the submission.|
@@ -52,7 +52,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
 |returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|status|educationSubmissionStatus|Read-only. Possible values are: `working`, `submitted`, `returned`, `unknownFutureValue`, `reassigned`, and `excused`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`, and `excused`.|
+|status|educationSubmissionStatus|Read-only. Possible values are: `working`, `submitted`, `returned`, `unknownFutureValue`, `reassigned`, and `excused`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`, and `excused`.|
 |submittedBy|[identitySet](identityset.md)|User who moved the resource into the submitted state.|
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
