@@ -78,7 +78,10 @@ GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq '
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
 
-See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
+### Get open global health alerts where the domain name or sensor DNS name ends with a specific value
+
+The following example shows how to get global health alerts where the domain name or sensor DNS name ends with a specific value, for example, `contoso.com`.
+
 <!-- {
   "blockType": "ignored"
 }
