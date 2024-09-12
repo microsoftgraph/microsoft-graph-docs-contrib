@@ -36,7 +36,7 @@ GET /security/identities/healthIssues
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`, `$select`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$skip`, `$top`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following examples show how to use optional query parameters.
 
