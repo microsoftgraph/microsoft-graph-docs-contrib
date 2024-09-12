@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sensor settings information.
+Provides settings information for a sensor.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the sensor.|
-|domainControllerDnsNames|String collection|DNS Names for the domain controller|
-|isDelayedDeploymentEnabled|Boolean|Enable delayed updates for the sensor|
+|domainControllerDnsNames|String collection|DNS names for the domain controller|
+|isDelayedDeploymentEnabled|Boolean|Indicates whether to delay updates for the sensor.|
 
 ## Relationships
 |Relationship|Type|Description|

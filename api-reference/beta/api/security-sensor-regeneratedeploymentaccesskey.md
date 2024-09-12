@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generate a new deployment access key that can be used to activate sensor installation.
+Generate a new deployment access key that can be used to activate [sensor](../security-sensor.md) installation.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md) in the response body.
 
 ## Examples
 

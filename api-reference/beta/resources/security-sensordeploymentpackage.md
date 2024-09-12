@@ -14,12 +14,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sensor deployment package.
+Represents a sensor deployment package.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|downloadUrl|String|Url to download the sensor deployment package.|
+|downloadUrl|String|URL to download the sensor deployment package.|
 |version|String|Version of the sensor.|
 
 ## Relationships

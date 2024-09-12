@@ -1,6 +1,6 @@
 ---
-title: "Sensor resource type"
-description: "Represents Microsoft Defender for Identity Sensor"
+title: "sensor resource type"
+description: "Represents a Microsoft Defender for Identity sensor."
 author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -8,13 +8,13 @@ doc_type: resourcePageType
 ms.date: 09/10/2024
 ---
 
-# Sensor resource type
+# sensor resource type
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft Defender for Identity Sensor
+Represents a Microsoft Defender for Identity sensor.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -25,17 +25,17 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Get](../api/security-sensor-get.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Read the properties and relationships of a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
 |[Update](../api/security-sensor-update.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Update the properties of a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
 |[Delete](../api/security-identitycontainer-delete-sensors.md)|None|Delete a [microsoft.graph.security.sensor](../resources/security-sensor.md) object.|
-|[getDeploymentPackageUri](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version. You can use this URL and version to download an installer to install sensor on a dedicated server.|
-|[getDeploymentAccessKey](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the sensor deployment access key.|
-|[regenerateDeploymentAccessKey](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to activate sensor installation.|
+|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version. You can use this URL and version to download an installer to install the sensor on a dedicated server.|
+|[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the sensor deployment access key.|
+|[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to activate the sensor installation.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|e date and time of when the sensor was generated|
+|createdDateTime|DateTimeOffset|The date and time when the sensor was generated.|
 |deploymentStatus|[microsoft.graph.security.deploymentStatus](#deploymentstatus-values)|The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.|
-|displayName|String|The display name of the sensor|
-|domainName|String|The fully qualified domain name of the sensor|
+|displayName|String|The display name of the sensor.|
+|domainName|String|The fully qualified domain name of the sensor.|
 |healthStatus|[microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
 |ID|String|Unique identifier to represent the sensor.|
 |openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|

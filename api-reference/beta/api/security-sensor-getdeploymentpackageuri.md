@@ -1,6 +1,6 @@
 ---
 title: "Sensor: getDeploymentPackageUri"
-description: "Get the sensor deployment package url and version."
+description: "Get the sensor deployment package URL and version."
 author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the sensor deployment package URL and version. You can use this URL and version to download an installer to install sensor on a dedicated server.
+Get the [sensor](../security-sensor.md) deployment package URL and version. You can use this URL and version to download an installer to install the sensor on a dedicated server.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md) in the response body.
 
 ## Examples
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the sensor resources from the sensors navigation property.
+Get a list of [sensor](../security-sensor.md) objects and their properties.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [sensor](../resources/security-sensor.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.sensor](../resources/security-sensor.md) objects in the response body.
 
 ## Examples
 

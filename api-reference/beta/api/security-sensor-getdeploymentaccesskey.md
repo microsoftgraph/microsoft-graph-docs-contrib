@@ -1,6 +1,6 @@
 ---
 title: "Sensor: getDeploymentAccessKey"
-description: "Get the sensor deployment access key"
+description: "Get the deployment access key associated with a sensor."
 author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the sensor deployment access key.
+Get the deployment access key associated with a Microsoft Defender for Identity [sensor](../security-sensor.md).
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md) in the response body.
 
 ## Examples
 

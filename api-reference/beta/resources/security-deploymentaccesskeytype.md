@@ -14,12 +14,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Defender for Identity sensor deployment access key.
+Represents the deployment access key for a Microsoft Defender for Identity sensor.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deploymentAccessKey|String|The Deployment access key.|
+|deploymentAccessKey|String|The deployment access key.|
 
 ## Relationships
 None.
