@@ -1,6 +1,6 @@
 ---
 title: "Get change notifications for Teams app installations"
-description: "Learn how to get change notifications for app installations by using Microsoft Graph APIs."
+description: "Learn how to get change notifications for Teams app installations by using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -9,9 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for Teams app installations
 
-Changes notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope).
+Change notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope).
 
-This article describes how to subscribe to change notifications for Teams apps in personal, team, or chat scopes.
+This article describes how to subscribe to change notifications for Teams apps in personal, team, or chat scopes by using Microsoft Graph APIs.
 
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: "lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour."
