@@ -200,7 +200,7 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use the health issues API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use the API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
 
 ### Sensors
-The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information on the server's name, sensor version, type, state, and health status. Additionally, it enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor will connect to for querying Active Directory.
+The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
 
 ## Common use cases
 
