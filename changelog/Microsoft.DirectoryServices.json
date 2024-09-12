@@ -13454,10 +13454,10 @@
     "ChangeList": [      
       {
         "Id": "b2a17e8f-b8d2-49ba-9ec0-d6ba4c6a691c",
-        "ApiChange": "Method",
+        "ApiChange": "Parameter",
         "ChangedApiName": "restore",
         "ChangeType": "Addition",
-        "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/directoryObject-restore?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+        "Description": "Added the `autoReconcileProxyConflict` parameter to the [restore directoryObject](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) method. Use this property to specify whether Microsoft Entra ID should autoreconcile conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user.",
         "Target": "directoryObject"
       }
     ],
