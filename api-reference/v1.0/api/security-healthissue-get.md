@@ -96,7 +96,7 @@ Content-Type: application/json
       "recommendations": ["Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"],
       "recommendedActionCommands": ["Import-Module DefenderForIdentity"],
       "sensorDNSNames": ["DC1.domain1.contoso.com", "DC2.domain2.contoso.com"],
-      "severity": "medium"",
+      "severity": "medium",
       "status": "open"
   }
 }
