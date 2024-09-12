@@ -98,7 +98,8 @@ Alerts from the following providers are available via the **alert** resource. Su
 
 ## Identities
 
-### Health Issues
+### Health issues
+
 The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use the health issues API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use this API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
 
 ## Incidents
