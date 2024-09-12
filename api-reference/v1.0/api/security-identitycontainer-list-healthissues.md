@@ -19,7 +19,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-identitycontainer-list-healthissues-permissions"
+  "name": "security-identitycontainer-list-healthissues"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identitycontainer-list-healthissues-permissions.md)]
