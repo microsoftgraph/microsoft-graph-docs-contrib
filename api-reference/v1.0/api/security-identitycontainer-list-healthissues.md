@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-
-
 Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.
 
 ## Permissions
@@ -38,7 +36,7 @@ GET /security/identities/healthIssues
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`, `$select`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$skip`, `$top`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following examples show how to use optional query parameters.
 
@@ -80,7 +78,10 @@ GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq '
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
 
-See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
+### Get open global health alerts where the domain name or sensor DNS name ends with a specific value
+
+The following example shows how to get global health alerts where the domain name or sensor DNS name ends with a specific value, for example, `contoso.com`.
+
 <!-- {
   "blockType": "ignored"
 }
@@ -102,7 +103,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [healthIssue](../resources/security-healthissue.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.healthIssue](../resources/security-healthissue.md) objects in the response body.
 
 ## Examples
 
