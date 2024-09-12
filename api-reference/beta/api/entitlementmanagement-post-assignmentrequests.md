@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object. This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -59,7 +59,7 @@ For a non-administrator user to request to update their own assignments, the val
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-If this is an `adminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md).
+If the request type is `adminAdd` for this request, then an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those objects using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md).
 
 ## Examples
 
@@ -480,7 +480,7 @@ Content-type: application/json
 The following example shows how a manager can request an access package assignment on behalf of their direct employee.
 
 > [!NOTE]
-> The requestor(manager) is extracted from the token, and the target object is the id of the direct employee receiving access.
+> The requestor (manager) is extracted from the token, and the target object is determined by the `id` of the direct employee who is receiving access.
 
 #### Request
 
