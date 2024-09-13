@@ -1,7 +1,6 @@
 ---
 author: Yadong1106
 description: "Create a new page from a page template."
-ms.date: 05/07/2018
 title: Create page from template
 ms.localizationpriority: medium
 ms.subservice: sharepoint
