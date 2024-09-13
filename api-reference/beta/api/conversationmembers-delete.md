@@ -41,14 +41,14 @@ POST /teams/{team-id}/members/remove
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team. A maximum of 20 `conversationMember` derivatives can be added in one single request.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |values|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be deleted.|
-
 
 ## Response
 
@@ -63,8 +63,6 @@ This API returns either a `204` response to indicate that all members supplied w
 #### Request
 
 The following example shows a request to delete multiple members from a team.
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -89,40 +87,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/bulkdeletemembers-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bulkdeletemembers-team-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/bulkdeletemembers-team-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/bulkdeletemembers-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulkdeletemembers-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/bulkdeletemembers-team-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/bulkdeletemembers-team-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/bulkdeletemembers-team-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following example shows the response.
@@ -132,9 +96,8 @@ The following example shows the response.
   "truncated": false
 } -->
 
-
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Delete members in bulk from a team using user principal name
@@ -143,8 +106,6 @@ HTTP/1.1 204 NoContent
 
 The following example shows a request to delete multiple members from a team using user principal name of the members.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkdeletemembers_team_upn"
@@ -168,40 +129,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/bulkdeletemembers-team-upn-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bulkdeletemembers-team-upn-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/bulkdeletemembers-team-upn-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/bulkdeletemembers-team-upn-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulkdeletemembers-team-upn-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/bulkdeletemembers-team-upn-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/bulkdeletemembers-team-upn-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/bulkdeletemembers-team-upn-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following example shows the response.
@@ -212,7 +139,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Some of the supplied members were not deleted from the team
@@ -220,8 +147,6 @@ HTTP/1.1 204 NoContent
 #### Request
 
 The following example shows a request to delete multiple members to a team where deletion of some members is unsuccessful.
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -246,40 +171,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/bulkdeletemembers-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bulkdeletemembers-team-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/bulkdeletemembers-team-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/bulkdeletemembers-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulkdeletemembers-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/bulkdeletemembers-team-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/bulkdeletemembers-team-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/bulkdeletemembers-team-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
 The following example shows the response.
@@ -288,8 +179,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.actionResultPart",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
 } -->
 
 ```http
