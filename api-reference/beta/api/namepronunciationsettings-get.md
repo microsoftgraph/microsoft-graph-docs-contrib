@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.namePronunciationSettings",
     "id": "5a5ec63c-48e0-993a-788a-d4e9fb4f479e",
-    "isEnabledInOrganization": "Boolean"
+    "isEnabledInOrganization": true
   }
 }
 ```
