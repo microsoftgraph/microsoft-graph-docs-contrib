@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule resource type"
-description: "Contains methods that trigger policies for the start and end of working hours for a user."
+description: "Contains triggers for policies associated with the start and end of working hours for users."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains methods that trigger policies for the start and end of working hours for a user.
+Contains triggers for policies associated with the start and end of working hours for users.
 
 ## Methods
 
@@ -27,7 +27,7 @@ Contains methods that trigger policies for the start and end of working hours fo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique programmatic identifier for the resource. Read-only.|
+|id|String|The unique identifier for the working time schedule. Read-only.|
 
 ## Relationships
 
