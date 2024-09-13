@@ -1,5 +1,5 @@
 ---
-title: "Update page template"
+title: "Update pageTemplate"
 description: "Update the properties of a pageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
-# Update PageTemplate
+# Update pageTemplate
 
 Namespace: microsoft.graph
 
