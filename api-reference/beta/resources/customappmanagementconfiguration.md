@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Configuration object that can be configured to enable various restrictions for applications and service principals as part of the [appManagementPolicy](../resources/appmanagementpolicy.md) object. Some of these restrictions apply to both applications and service principals while others are applicable only to applications.
 
-
 Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 
 ## Properties
@@ -23,8 +22,8 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 | Property                | Type                              | Description                                     |
 | :---------------------- | :-------------------------------- | :---------------------------------------------- |
 | applicationRestrictions | [customAppManagementApplicationConfiguration](customappmanagementapplicationconfiguration.md) | Restrictions applicable only to application objects that the policy applies to.               |
-| keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
-| passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. |
+| keyCredentials          | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection | Collection of keyCredential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
+| passwordCredentials     | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](appmanagementconfiguration.md). |
 
 
 ## Relationships
