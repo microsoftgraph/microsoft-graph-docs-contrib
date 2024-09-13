@@ -1,7 +1,6 @@
 ---
 author: Yadong1106
 description: "Create a new page template in the templates folder in a site."
-ms.date: 05/07/2018
 title: Create pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
