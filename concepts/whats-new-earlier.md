@@ -65,7 +65,7 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 ### Identity and access | Directory management
 
 Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
-  
+
 The following objects are removed:
 
 - **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](/graph/api/resources/cloudpcfrontlineserviceplan?view=graph-rest-beta&preserve-view=true) resource.
@@ -449,7 +449,7 @@ Added the ability to list emails analyzed by Microsoft Defender for Office 365, 
 
 ### Security | Identities
 
-Added the ability to get, get list, update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
+Added the ability to get, list, and update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
 
 ### Users
 
