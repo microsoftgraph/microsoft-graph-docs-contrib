@@ -1,7 +1,6 @@
 ---
 author: Yadong1106
 description: "Return the metadata for a page template in the templates folder in a site."
-ms.date: 03/15/2018
 title: Get pageTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
