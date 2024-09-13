@@ -1451,6 +1451,15 @@
           ]
         },
         {
+          "name": "Identities",
+          "resources": [
+            "microsoft.graph.security.healthIssue"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.identityContainer"
+          ]
+        },
+        {
           "name": "Information protection",
           "childNodes": [
             {
