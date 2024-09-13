@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.namePronunciationSettings",
   "id": "String (identifier)",
-  "isEnabledInOrganization": "false"
+  "isEnabledInOrganization": false
 }
 ```
 
