@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents settings associated with a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 
@@ -20,7 +18,7 @@ Represents settings associated with a [fileStorageContainer](../resources/filest
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isOcrEnabled|Boolean|Whether optical character recognition (OCR) is enabled for a given container. When OCR is enabled on a container, OCR extraction is performed for new and updated documents of supported types. The extracted fields are added to the metadata of the document, enabling end-user search and search-driven solutions. Changing this property from `true` to `false` doesn't remove OCR metadata that was created while it was `true`. Default value is `false`.|
+|isOcrEnabled|Boolean|Indicates whether optical character recognition (OCR) is enabled for a given container. When OCR is enabled on a container, OCR extraction is performed for new and updated documents of supported types. The extracted fields are added to the metadata of the document, enabling end-user search and search-driven solutions. Changing this property from `true` to `false` doesn't remove OCR metadata that was created while it was `true`. Default value is `false`.|
 
 ## Relationships
 
@@ -42,4 +40,3 @@ The following JSON representation shows the resource type.
   "isOcrEnabled": "Boolean"
 }
 ```
-

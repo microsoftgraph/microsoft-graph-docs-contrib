@@ -2447,9 +2447,12 @@
           ]
         },
         {
-          "name": "Identities (preview)",
+          "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.identityContainer"
           ]
         },
         {
