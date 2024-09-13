@@ -142,7 +142,7 @@ By default, private content search is disabled for customers with application pe
 To include all private content in a search using application permissions, specify `privateContent` in the **sharePointOneDriveOptions** property.
 
 > [!NOTE]
-> Searching all private content can be an expensive option. When you run an initial search request, if the tenant does not have an active APC stamp, you will need a provision a new APC stamp for your tenant. This can take several hours or days to complete. After the provisioning, the search will work as normal. 
+> Searching all private content can be an expensive option. To make the process more efficient, when you run the initial search request and specify `privateContnt`, an index is provisioned to serve “private” results.  The time required to build the index depends largely on the number of items in your user’s OneDrive.  For a medium-to-large tenant, provisioning a new index may take days to a week to complete.  Very large tenants will take longer.  While the index is provisioning, search requests will only return shared and public content.  Once the new index is complete, private and shared content will be returned.  If no search requests for `privateContent` are sent within 3 months, the private index will be decommissioned.  If needed again, a subsequent search request for `privateContent` will rebuild the index.”
 
 ### Request
 
