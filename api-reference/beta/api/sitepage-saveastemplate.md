@@ -1,8 +1,7 @@
 ---
 author: Yadong1106
 description: "Save the current page as a template."
-ms.date: 05/07/2018
-title: Save page as template,
+title: sitePage: saveAsTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
