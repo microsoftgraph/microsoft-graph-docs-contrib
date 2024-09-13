@@ -4,6 +4,62 @@
       "ChangeList": [
         {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appManagementApplicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementApplicationConfiguration"
+        },
+	{
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appManagementServicePrincipalConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [appManagementServicePrincipalConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementServicePrincipalConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementServicePrincipalConfiguration"
+        },
+	{
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppManagementApplicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementApplicationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customAppManagementApplicationConfiguration"
+        },
+	{
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppManagementConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customAppManagementConfiguration"
+        },	      
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Property",
+          "ChangedApiName": "restrictions",
+          "ChangeType": "Change",
+          "Description": "Updated the return type for the **restrictions** property of the [appManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicy?view=graph-rest-beta) resource from [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) to [customAppManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementConfiguration?view=graph-rest-beta).",
+          "Target": "appManagementPolicy"
+        },	      
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationRestrictions",
+          "ChangeType": "Change",
+          "Description": "Updated the return type for the **applicationRestrictions** property of the [tenantAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/tenantappManagementPolicy?view=graph-rest-beta) resource from [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) to [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta).",
+          "Target": "tenantAppManagementPolicy"
+        },	      
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
+          "ApiChange": "Property",
+          "ChangedApiName": "restrictions",
+          "ChangeType": "Change",
+          "Description": "Updated the return type for the **servicePrincipalRestrictions** property of the [tenantAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/tenantAppManagementPolicy?view=graph-rest-beta) resource from [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) to [appManagementServicePrincipalConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementServicePrincipalConfiguration?view=graph-rest-beta).",
+          "Target": "tenantAppManagementPolicy"
+        },
+        {
+          "Id": "777011cf-6e8d-4736-92b6-08104586c162",
           "ApiChange": "Property",
           "ChangedApiName": "identifierUris",
           "ChangeType": "Addition",
