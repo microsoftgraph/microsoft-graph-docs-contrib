@@ -43,7 +43,8 @@ The assignments API supports both delegated (per user) and app only (per app) pe
 
 Over the course of the school year, there will be updates to assignments as teachers and students continue to work on them. All education APIs support [delta query](/graph/api/educationschool-delta), allowing you to track changes since the last time the API endpoint was queried.
 
-For assignments, [delta queries](/graph/api/educationassignment-delta) are supported for assignment information changes only, and not submission changes for an assignment.
+For assignments, [delta queries](/graph/api/educationassignment-delta) are supported for assignment information changes. 
+For submissions, [get Recent changes](/graph/api/educationclass-getrecentlymodifiedsubmissions.md) are supported for grades related information changes.
 
 ## Filtering data
 
