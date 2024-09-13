@@ -1,12 +1,11 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Automatically generated file. DO NOT MODIFY
 ms.topic: include
 ms.localizationpriority: medium
 ---
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|EduAssignments.Read|EduAssignments.ReadWrite|
+|Delegated (work or school account)|SecurityIdentitiesHealth.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|EduAssignments.Read.All|EduAssignments.ReadWrite.All|
-
+|Application|SecurityIdentitiesHealth.ReadWrite.All|Not available.|
