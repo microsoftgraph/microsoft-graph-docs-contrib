@@ -1011,5 +1011,7 @@ items:
       href: ../../resources/timeoffitem.md
     - name: Time range
       href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
     - name: Workforce integration encryption
       href: ../../resources/workforceintegrationencryption.md
