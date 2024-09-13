@@ -534,7 +534,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get a chat message that @mentions everyone in a chat message
+### Example 5: Get a chat message with an @mention for everyone
 
 The following example shows a request to get a chat message that @mentions everyone in a group chat.
 
