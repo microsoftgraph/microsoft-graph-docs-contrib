@@ -1,13 +1,13 @@
 ---
 author: Yadong1106
 description: "Create a new page from a page template."
-title: Create page from template
+title: sitePage: createFromTemplate
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
 ---
  
-# Create a site page from a page template
+# sitePage: createFromTemplate
  
 Namespace: microsoft.graph
  
