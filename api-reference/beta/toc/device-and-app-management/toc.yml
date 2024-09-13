@@ -5858,14 +5858,6 @@ items:
         href: ../../resources/intune-devices-devicehealthscriptdevicestate.md
       - name: List deviceHealthScriptDeviceStates
         href: ../../api/intune-devices-devicehealthscriptdevicestate-list.md
-      - name: Get deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-get.md
-      - name: Create deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-create.md
-      - name: Delete deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-delete.md
-      - name: Update deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-update.md
     - name: Device health script policy state
       items:
       - name: Device health script policy state

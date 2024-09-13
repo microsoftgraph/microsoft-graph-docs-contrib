@@ -22,18 +22,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
 
+### Security | Identities
+
+Added the ability to get, list, and update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue) that represent potential issues identified within a customer's Defender for Identity configuration.
+
 ## September 2024: New and generally available
 
 ### Device and app management | Cloud PC
 
 New methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-|[retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots)|[cloudPcSnapshot](/graph/api/resources/cloudpcsnappshot?view=graph-rest-beta&preserve-view=true) collection|Get a list of [cloudPcSnapshot](/graph/api/resources/cloudpcsnappshot?view=graph-rest-beta&preserve-view=true) of a Cloud PC.|
+|[retrieveSnapshots]|[cloudPcSnapshot]collection|Get a list of [cloudPcSnapshot] of a Cloud PC.|
 
 Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus) resource and its supported APIs instead.
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus] resource and its supported APIs instead.
 
 Deprecated the following methods on the [cloudPCSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource:
-- [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots) resource and its supported APIs instead.
+- [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots] resource and its supported APIs instead.
 
 ## August 2024: New and generally available
 

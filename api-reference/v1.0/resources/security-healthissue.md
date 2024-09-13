@@ -1,7 +1,7 @@
 ---
 title: "healthIssue resource type"
 description: "Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration."
-author: "amirfeldman"
+author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
@@ -10,8 +10,6 @@ ms.subservice: "security"
 # healthIssue resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
 
@@ -65,7 +63,7 @@ Inherits from [entity](../resources/entity.md).
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | sensor | The issue is on specific sensor. |
-| global | The issue is in the Defender for identity system configuration. |
+| global | The issue is in the Defender for Identity system configuration. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
@@ -100,4 +98,3 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
-
