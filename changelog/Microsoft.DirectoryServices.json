@@ -10,7 +10,7 @@
           "Description": "Added the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta) resource.",
           "Target": "appManagementApplicationConfiguration"
         },
-	{
+	      {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
           "ApiChange": "Resource",
           "ChangedApiName": "appManagementServicePrincipalConfiguration",
@@ -18,7 +18,7 @@
           "Description": "Added the [appManagementServicePrincipalConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementServicePrincipalConfiguration?view=graph-rest-beta) resource.",
           "Target": "appManagementServicePrincipalConfiguration"
         },
-	{
+	      {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
           "ApiChange": "Resource",
           "ChangedApiName": "customAppManagementApplicationConfiguration",
@@ -26,7 +26,7 @@
           "Description": "Added the [customAppManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementApplicationConfiguration?view=graph-rest-beta) resource.",
           "Target": "customAppManagementApplicationConfiguration"
         },
-	{
+	      {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
           "ApiChange": "Resource",
           "ChangedApiName": "customAppManagementConfiguration",
