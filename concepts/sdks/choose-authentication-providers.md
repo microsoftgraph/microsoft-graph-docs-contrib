@@ -287,7 +287,10 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ## Username/password provider
 
-The username/password provider allows an application to sign in a user using their username and password. Use this flow only when you can't use any other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user using their username and password. 
+
+> [!NOTE]
+> Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc).
 
 ### [C#](#tab/csharp)
 
