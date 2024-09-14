@@ -52,9 +52,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |name|String||
 |select|String collection||
-|search|String||
 |groupBy|String collection||
 |orderBy|String collection||
+|search|String||
 |skip|Int32||
 |top|Int32||
 |sessionId|String||
@@ -80,13 +80,13 @@ Content-length: 278
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",
