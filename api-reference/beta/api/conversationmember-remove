@@ -1,6 +1,6 @@
 ---
 title: "conversationMember: remove"
-description: "Delete members in bulk from a team."
+description: "Remove members in bulk from a team."
 author: "MSFTPrachiGoyal"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete multiple members in a single request from a [team](../resources/team.md). The response provides details about which memberships could and couldn't be deleted.
+Remove multiple members in a single request from a [team](../resources/team.md). The response provides details about which memberships could and couldn't be removed.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,13 +21,13 @@ Delete multiple members in a single request from a [team](../resources/team.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "conversationmembers_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/conversationmembers-delete-permissions.md)]
+<!-- { "blockType": "permissions", "name": "conversationmember_remove" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conversationmember-remove-permissions.md)]
 
 
 ## HTTP Request
 
-This is a bound action to delete multiple elements from a **conversationMember** collection in a single request.
+This is a bound action to remove multiple elements from a [conversationMember](../resources/conversationmember.md) collection in a single request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -39,34 +39,35 @@ POST /teams/{team-id}/members/remove
 | Header        | Value                     |
 | :------------ | :------------------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team. A maximum of 20 `conversationMember` derivatives can be added in one single request.
+In the request body, supply the JSON representation of the list of **conversationMember** derivatives to be removed from a team. A maximum of 20 **conversationMember** derivatives can be removed in a single request.
 
-The following table shows the parameter that you can use with this action.
+The following table shows the parameter that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|values|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be deleted.|
+|values|[conversationMember](../resources/conversationmember.md) collection|A list of conversation members that should be removed.|
 
 ## Response
 
-If successful, this action returns a `204 OK` response code with no content.
-
-This API returns either a `204` response to indicate that all members supplied were deleetd from the team, or a `207` response to indicate that only some of the supplied members were deleted from the team. The caller should inspect the response payload to determine which member deletions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. This API responds with an error when the request fails. For details about Microsoft Graph errors, see [Microsoft Graph errors and resource types](/graph/errors).
+If successful, this method returns either a `204 No Content` response if all specified members were successfully removed from the team or a `207 Multi-Status` response if only some members were removed. The caller should inspect the response payload to identify which member removals failed. The response body contains a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. If the request fails, the API returns an error. For more information about Microsoft Graph errors, see [Microsoft Graph errors and resource types](/graph/errors).
 
 ## Examples
 
-### Example 1: Delete members in bulk from a team
+### Example 1: Remove members in bulk from a team
+
+The following example shows how to remove multiple members from a **team** in a single request.
 
 #### Request
 
-The following example shows a request to delete multiple members from a team.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "bulkdeletemembers_team"
+  "name": "bulkremovemembers_team"
 }-->
 
 ```http
@@ -100,11 +101,13 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Delete members in bulk from a team using user principal name
+### Example 2: Remove members in bulk from a team using user principal name
+
+The following example shows how to remove multiple members from a **team** in a single request using their user principal names.
 
 #### Request
 
-The following example shows a request to delete multiple members from a team using user principal name of the members.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -142,11 +145,13 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Some of the supplied members were not deleted from the team
+### Example 3: Remove members in bulk from a team with failed removals
+
+The following example shows how to remove multiple members from a **team** when the removal of a member fails.
 
 #### Request
 
-The following example shows a request to delete multiple members to a team where deletion of some members is unsuccessful.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -208,7 +213,7 @@ Content-Type: application/json
 
 ## Related content
 
-- [Delete member from a team](team-delete-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-09-12 06:02:30 UTC -->
