@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.authentication_strength_policy import AuthenticationStrengthPolicy
 from msgraph.generated.models.authentication_strength_requirements import AuthenticationStrengthRequirements
 from msgraph.generated.models.authentication_method_modes import AuthenticationMethodModes
 from msgraph.generated.models.authentication_combination_configuration import AuthenticationCombinationConfiguration
 from msgraph.generated.models.fido2_combination_configuration import Fido2CombinationConfiguration
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AuthenticationStrengthPolicy(
 	display_name = "Example",
 	requirements_satisfied = AuthenticationStrengthRequirements.Mfa,

@@ -2,7 +2,7 @@
 title: "teamGuestSettings resource type"
 description: "Settings to configure whether guests can create, update, or delete channels in the team."
 ms.localizationpriority: medium
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
 ---
