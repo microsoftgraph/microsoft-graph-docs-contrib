@@ -17,7 +17,7 @@ The following table lists the latency to expect between an event happening in th
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [approvals][]           | Less than 10 seconds | 40 seconds      |
 | [calendar][]            | Less than 1 minute   | 3 minutes       |
-| [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [callRecord][] <sup>2</sup> | Less than 30 minutes | 150 minutes |
 | [callRecording][]       | Less than 10 seconds | 60 minutes      |
 | [callTranscript][]      | Less than 10 seconds | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
@@ -45,6 +45,7 @@ The following table lists the latency to expect between an event happening in th
 | [user][]                | Unknown              | Unknown         |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
+<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a callRecord. Subsequent versions of a callRecord may be created beyond the stated latencies.
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
