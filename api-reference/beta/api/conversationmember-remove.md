@@ -220,7 +220,7 @@ Content-Type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete members from a team in bulk.",
+  "description": "Remove members from a team in bulk.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
