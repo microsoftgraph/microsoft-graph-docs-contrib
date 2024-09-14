@@ -45,7 +45,7 @@ The following table lists the latency to expect between an event happening in th
 | [user][]                | Unknown              | Unknown         |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
-<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a callRecord. Subsequent versions of a callRecord may be created beyond the stated latencies.
+<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a callRecord. Subsequent versions of a callRecord may be updated beyond the stated latencies.
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
