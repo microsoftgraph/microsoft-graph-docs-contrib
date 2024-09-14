@@ -6,7 +6,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
 ---
-## Microsoft 365 Copilot
+# Microsoft 365 Copilot
 
 [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) with Microsoft Graph connectors allow users to easily find, summarize, and learn important details about *all* content relevant to a user's natural language prompts.
 
@@ -29,7 +29,7 @@ In addition, search administrators should ensure that your Microsoft Graph conne
 - Open the Admin Center, go to **Search & intelligence** > **Customizations** > **Verticals** and select the **All** vertical.
 - Select **Manage connector result**. Ensure that **Show results inline** is selected and that the connections that you want to enable for Microsoft Search and Copilot are checked.
 
-# Microsoft Graph connector experiences
+## Microsoft Graph connector experiences
 
 Microsoft Graph connectors offer an intuitive way to bring content from external services into Microsoft Graph and the semantic search index, enabling you to make external data discoverable across a set of Microsoft 365 experiences.
 
