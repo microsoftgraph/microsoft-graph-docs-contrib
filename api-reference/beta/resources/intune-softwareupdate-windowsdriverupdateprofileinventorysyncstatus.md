@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # windowsDriverUpdateProfileInventorySyncStatus resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 A complex type to store the status of a driver and firmware profile inventory sync. The status includes the last successful sync date time and the state of the last sync.
 

@@ -1576,7 +1576,7 @@
               ],
               "childNodes": [
                 {
-                  "name": "Application authentication method policy",
+                  "name": "Application management policy",
                   "overview": "../../resources/applicationauthenticationmethodpolicy.md",
                   "resources": [
                     "tenantAppManagementPolicy",
@@ -2447,9 +2447,12 @@
           ]
         },
         {
-          "name": "Identities (preview)",
+          "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.identityContainer"
           ]
         },
         {
