@@ -259,7 +259,7 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: getCloudPCPerformanceReport
+    - name: Get Cloud PC performance report
       href: ../../api/cloudpcreports-getcloudpcperformancereport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
@@ -802,6 +802,12 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+      - name: setEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
+      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
+      - name: clearEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app
