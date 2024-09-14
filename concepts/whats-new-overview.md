@@ -24,6 +24,12 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 
 ## September 2024: New in preview only
 
+### Device and app management | Cloud PC
+
+- Use the [getCloudPCPerformanceReport](/graph/api/cloudpcreports-getcloudpcperformancereport?view=graph-rest-beta&preserve-view=true) method to get reports related to the performance of Cloud PCs.
+- Use the **reportName** parameter with the [getInaccessibleCloudPcReports](/graph/api/cloudpcreports-getinaccessiblecloudpcreports?view=graph-rest-beta&preserve-view=true) method to specify the Cloud PC report type.
+- Enabled the `performanceTrendReport` and `getInaccessibleCloudPcReports` options for the **reportName** parameter in the [Create cloudPcExportJob](/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta&preserve-view=true) method.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
@@ -80,9 +86,6 @@ Introduced the [partner security score API](/graph//api/resources/partner-securi
 
 - Use the **crossRegionDisasterRecoverySetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to define cross-region disaster recovery settings.
 - Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true#frontlinecloudpcaccessstate-values).
-- Use the [getCloudPCPerformanceReport](/graph/api/cloudpcreports-getcloudpcperformancereport?view=graph-rest-beta&preserve-view=true) method to get reports related to the performance of Cloud PCs.
-- Use the **reportName** parameter with the [getInaccessibleCloudPcReports](/graph/api/cloudpcreports-getinaccessiblecloudpcreports?view=graph-rest-beta&preserve-view=true) method to specify the Cloud PC report type.
-- Enabled the `performanceTrendReport` and `getInaccessibleCloudPcReports` options for the **reportName** parameter in the [Create cloudPcExportJob](/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta&preserve-view=true) method.
 
 ### Education
 
