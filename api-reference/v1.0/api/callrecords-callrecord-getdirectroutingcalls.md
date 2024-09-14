@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph.callRecords
 
-Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
+Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries. This API only returns individual calls that involve direct routing and will not reflect other participants in a group call or meeting. A [directRoutingLowRow](../resources/callrecords-directroutinglogrow.md) **id** corresponds to a [session](../resources/callrecords-session.md) within a [callRecord](../resources/callrecords-callrecord.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
