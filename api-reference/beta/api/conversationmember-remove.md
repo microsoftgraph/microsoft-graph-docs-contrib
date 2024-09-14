@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove multiple members in a single request from a [team](../resources/team.md). The response provides details about which memberships could and couldn't be removed.
+Remove multiple members from a [team](../resources/team.md) in a single request. The response provides details about which memberships could and couldn't be removed.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
