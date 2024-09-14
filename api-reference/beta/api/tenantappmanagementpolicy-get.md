@@ -122,7 +122,10 @@ Content-type: application/json
     "isEnabled": false,
     "applicationRestrictions": {
         "passwordCredentials": [],
-        "keyCredentials":[]
+        "keyCredentials":[],
+        "identifierUris": {
+          "nonDefaultUriAddition": null
+        }
     },
     "servicePrincipalRestrictions": {
         "passwordCredentials": [],

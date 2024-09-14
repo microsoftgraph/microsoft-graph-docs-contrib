@@ -1451,6 +1451,15 @@
           ]
         },
         {
+          "name": "Identities",
+          "resources": [
+            "microsoft.graph.security.healthIssue"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.identityContainer"
+          ]
+        },
+        {
           "name": "Information protection",
           "childNodes": [
             {
@@ -1849,7 +1858,8 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "changeTrackedEntity",
@@ -1864,6 +1874,7 @@
             "shiftItem",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }

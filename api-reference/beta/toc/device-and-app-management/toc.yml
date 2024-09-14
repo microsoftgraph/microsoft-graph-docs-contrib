@@ -257,32 +257,34 @@ items:
     items:
     - name: Cloud PC reports
       href: ../../resources/cloudpcreports.md
-    - name: getActionStatusReports
+    - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: getCloudPcRecommendationReports
+    - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
-    - name: getConnectionQualityReports
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getDailyAggregatedRemoteConnectionReports
-      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-    - name: getFrontlineReport
+    - name: Get frontline report
       href: ../../api/cloudpcreports-getfrontlinereport.md
-    - name: getInaccessibleCloudPcReports
+    - name: Get inaccessible Cloud PC reports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
-    - name: getRawRemoteConnectionReports
+    - name: Get raw remote connection reports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: getRealTimeRemoteConnectionLatency
+    - name: Get real time remote connection agency reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-    - name: getRealTimeRemoteConnectionStatus
+    - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: getRemoteConnectionHistoricalReports
+    - name: Get remove connection hitorical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
-    - name: getSharedUseLicenseUsageReport
-      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getTotalAggregatedRemoteConnectionReports
+    - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: retrieveCrossRegionDisasterRecoveryReport
+    - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
+    - name: Retrieve connection quality reports
+      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
+    - name: Get daily aggregated remote connection reports
+      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get connection quality reports (deprecated)
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Get shared use license usage report (deprecated)
+      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
@@ -438,6 +440,14 @@ items:
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
       href: ../../resources/cloudpcconnectivityresult.md
+    - name: Cloud PC cross-region disaster recovery setting
+      href: ../../resources/cloudpccrossregiondisasterrecoverysetting.md
+    - name: Cloud PC disaster recovery Azure connection setting
+      href: ../../resources/cloudpcdisasterrecoveryazureconnectionsetting.md
+    - name: Cloud PC disaster recovery Microsoft hosted network setting
+      href: ../../resources/cloudpcdisasterrecoverymicrosofthostednetworksetting.md
+    - name: Cloud PC disaster recovery network setting
+      href: ../../resources/cloudpcdisasterrecoverynetworksetting.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
@@ -482,9 +492,9 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
-    - name: Cloud PC windows setting
+    - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
-    - name: Cloud PC windows settings
+    - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md
@@ -5848,14 +5858,6 @@ items:
         href: ../../resources/intune-devices-devicehealthscriptdevicestate.md
       - name: List deviceHealthScriptDeviceStates
         href: ../../api/intune-devices-devicehealthscriptdevicestate-list.md
-      - name: Get deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-get.md
-      - name: Create deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-create.md
-      - name: Delete deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-delete.md
-      - name: Update deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-update.md
     - name: Device health script policy state
       items:
       - name: Device health script policy state

@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.term_store.set import Set
 from msgraph.generated.models.term_store.group import Group
 from msgraph.generated.models.term_store.localized_name import LocalizedName
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Set(
 	odata_type = "#microsoft.graph.termStore.set",
 	parent_group = Group(

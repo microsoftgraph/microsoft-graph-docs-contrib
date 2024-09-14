@@ -34,6 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/identities/healthIssues/{healthIssueId}
 ```
 
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -116,37 +119,20 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "ID": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
-  "displayName": "Directory Services Object Auditing is not configured as required",
-  "healthIssueType": "Global",
-  "issueTypeId": "1031",
-  "severity": "medium",
-  "status": "open",
+  "additionalInformation": ["Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)"],
   "createdDateTime": "2022-07-15T12:19:27.7211305Z",
+  "description": "Directory Services Object Auditing isn't configured as required on domain1.contoso.com",
+  "displayName": "Directory Services Object Auditing isn't configured as required",
+  "domainNames": ["domain1.contoso.com", "domain2.contoso.com"],
+  "healthIssueType": "Global",
+  "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+  "issueTypeId": "1031",
   "lastModifiedDateTime": "2022-07-15T12:19:27.7211305Z",
-  "domainNames": [
-    "domain1.contoso.com",
-    "domain2.contoso.com"
-  ],
-  "sensorDNSNames": [
-    "DC1.domain1.contoso.com",
-    "DC2.domain2.contoso.com"
-  ],
-  "description": "Directory Services Object Auditing is not configured as required on domain1.contoso.com",
-  "recommendations": [
-    "Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"
-  ],
-  "recommendedActionCommands": [
-    "Import-Module DefenderForIdentity",
-    "Set-MDIConfiguration -Configuration DomainObjectAuditing -Mode Domain -Force"
-  ],
-  "additionalInformation": [
-    "Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)",
-    "Descendant Group Objects (Schema-Id-Guid: bf967a9c-0de6-11d0-a285-00aa003049e2)",
-    "Descendant Computer Objects (Schema-Id-Guid: bf967a86-0de6-11d0-a285-00aa003049e2)",
-    "Descendant msDS-GroupManagedServiceAccount Objects (Schema-Id-Guid: 7b8b558a-93a5-4af7-adca-c017e67f1057)",
-    "Descendant msDS-ManagedServiceAccount Objects (Schema-Id-Guid: ce206244-5827-4a86-ba1c-1c0c386c1b64)"
-  ]
+  "recommendations": ["Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"],
+  "recommendedActionCommands": ["Import-Module DefenderForIdentity"],
+  "sensorDNSNames": ["DC1.domain1.contoso.com", "DC2.domain2.contoso.com"],
+  "severity": "medium",
+  "status": "open"
 }
 ```
 
