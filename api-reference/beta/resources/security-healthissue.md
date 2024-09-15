@@ -1,6 +1,6 @@
 ---
 title: "healthIssue resource type"
-description: "Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified."
+description: "Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
+Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,21 +28,21 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |additionalInformation|String collection|Contains additional information about the issue, such as a list of items to fix.|
-|createdDateTime|DateTimeOffset|The date and time of when the health issue was generated.|
+|createdDateTime|DateTimeOffset|The date and time when the health issue was generated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Contains more detailed information about the health issue.|
 |displayName|String|The display name of the health issue.|
 |domainNames|String collection|A list of the fully qualified domain names of the domains or the sensors the health issue is related to.|
 |healthIssueType|[microsoft.graph.security.healthIssueType](#healthissuetype-values)|The type of the health issue. The possible values are: `sensor`, `global`, `unknownFutureValue`. For a list of all health issues and their identifiers, see [Microsoft Defender for Identity health issues](/defender-for-identity/health-alerts). |
-|ID|String|A unique identifier that represents the health issue.|
+|id|String|A unique identifier that represents the health issue. Inherited from [entity](../resources/entity.md).|
 |issueTypeId|String|The type identifier of the health issue. For a list of all health issues and their identifiers, see [Microsoft Defender for Identity health issues](/defender-for-identity/health-alerts).|
-|lastModifiedDateTime|DateTimeOffset|The date and time of when the health issue was last updated.|
-|recommendations|String collection|This field contains a list of recommended actions that can be taken to resolve the issue effectively and efficiently. These actions might include how to investigate the issue further. Not limited to prewritten responses.|
-|recommendedActionCommands|String collection|Contains a list of commands from the product's PowerShell module that can be used to resolve the issue, if available. If there aren't any commands that can be used to solve the issue, this field is empty. The commands, if present, provide a quick and efficient way to address the issue. The commands run in order for the single recommended fix.|
-|sensorDNSNames|String collection|A list of the dns names of the sensors the health issue is related to.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the health issue was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|recommendations|String collection|A list of recommended actions that can be taken to resolve the issue effectively and efficiently. These actions might include instructions for further investigation and aren't limited to prewritten responses.|
+|recommendedActionCommands|String collection|A list of commands from the PowerShell module for the product that can be used to resolve the issue, if available. If no commands can be used to solve the issue, this property is empty. The commands, if present, provide a quick and efficient way to address the issue. These commands run in sequence for the single recommended fix.|
+|sensorDNSNames|String collection|A list of the DNS names of the sensors the health issue is related to.|
 |severity|[microsoft.graph.security.healthIssueSeverity](#healthissueseverity-values)|The severity of the health issue. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.healthIssueStatus](#healthissuestatus-values)|The status of the health issue. The possible values are: `open`, `closed`, `suppressed`, `unknownFutureValue`.|
 
-#### healthIssueSeverity values
+### healthIssueSeverity values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | high | High severity health issues indicate critical issues that could have a severe impact on your environment. These issues require immediate attention and action. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
-#### healthIssueStatus values
+### healthIssueStatus values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
@@ -60,12 +60,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | suppressed | The operator suppressed the issue manually. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
-#### healthIssueType values
+### healthIssueType values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| Sensor | The issue is on specific sensor. |
-| Global | The issue is in the Defender for identity system configuration. |
+| sensor | The issue is on specific sensor. |
+| global | The issue is in the Defender for identity system configuration. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
@@ -75,7 +75,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "ID",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.healthIssue",
   "baseType": "microsoft.graph.entity",
   "openType": false
@@ -84,30 +84,20 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.healthIssue",
-  "ID": "String (identifier)",
-  "displayName": "String",
-  "healthIssueType": "String",
-  "issueTypeId": "String",
-  "severity": "String",
-  "status": "String",
+  "additionalInformation": ["String"],
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "domainNames": [
-    "String"
-  ],
-  "sensorDNSNames": [
-    "String"
-  ],
   "description": "String",
-  "recommendations": [
-    "String"
-  ],
-  "recommendedActionCommands": [
-    "String"
-  ],
-  "additionalInformation": [
-    "String"
-  ]
+  "displayName": "String",
+  "domainNames": ["String"],
+  "healthIssueType": "String",
+  "id": "String (identifier)",
+  "issueTypeId": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "recommendations": ["String"],
+  "recommendedActionCommands": ["String"],
+  "sensorDNSNames": ["String"],
+  "severity": "String",
+  "status": "String"
 }
 ```
 
