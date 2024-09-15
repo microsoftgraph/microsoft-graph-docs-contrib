@@ -21,7 +21,7 @@ To learn more about how to use app management policy, see [Microsoft Entra appli
 
 | Method                                                         | Return type                                                                | Description                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [List](../api/appmanagementpolicy-list.md)      | [appManagementPolicy](../resources/appmanagementpolicy.md) | Returns a list of app management policies created for applications and service principals along with their properties. |
+| [List](../api/appmanagementpolicy-list.md)      | [appManagementPolicy](../resources/appmanagementpolicy.md) collection| Returns a list of app management policies created for applications and service principals along with their properties. |
 | [Create](../api/appmanagementpolicy-post.md)    | [appManagementPolicy](../resources/appmanagementpolicy.md) | Creates an app management policy that can be assigned to an application or service principal object.                   |
 | [Get](../api/appmanagementpolicy-get.md)       | [appManagementPolicy](../resources/appmanagementpolicy.md) | Gets a single app management policy object.                                                                            |
 | [Update](../api/appmanagementpolicy-update.md) | None                                                                       | Updates an app management policy.                                                                                      |
@@ -37,7 +37,7 @@ To learn more about how to use app management policy, see [Microsoft Entra appli
 | displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](policybase.md).|
 | id           | String                                                      | The unique identifier for the policy.                                      |
 | isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                     |
-| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
+| restrictions | [customAppManagementConfiguration](customAppManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
 ## Relationships
 
@@ -65,7 +65,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "isEnabled": "Boolean",
-  "restrictions": {"@odata.type": "microsoft.graph.appManagementConfiguration"}
+  "restrictions": {"@odata.type": "microsoft.graph.customAppManagementConfiguration"}
 }
 ```
 
