@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
 from msgraph.generated.models.access_review_query_scope import AccessReviewQueryScope
@@ -18,9 +19,7 @@ from msgraph.generated.models.recurrence_range import RecurrenceRange
 from msgraph.generated.models.recurrence_range_type import RecurrenceRangeType
 from msgraph.generated.models.access_review_apply_action import AccessReviewApplyAction
 from msgraph.generated.models.remove_access_apply_action import RemoveAccessApplyAction
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Guest access to marketing group",
 	scope = AccessReviewQueryScope(

@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.android_managed_app_registration import AndroidManagedAppRegistration
 from msgraph.generated.models.managed_app_flagged_reason import ManagedAppFlaggedReason
 from msgraph.generated.models.android_mobile_app_identifier import AndroidMobileAppIdentifier
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AndroidManagedAppRegistration(
 	odata_type = "#microsoft.graph.androidManagedAppRegistration",
 	last_sync_date_time = "2017-01-01T00:02:49.3205976-08:00",
