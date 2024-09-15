@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1616
+Content-Length: 1636
 
 {
   "value": {
@@ -97,7 +97,6 @@ Content-Length: 1616
     "supersedingAppCount": 3,
     "supersededAppCount": 2,
     "packageId": "Package Id value",
-    "appIdentifier": "App Identifier value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "minimumSupportedOperatingSystem": {
       "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -116,7 +115,10 @@ Content-Length: 1616
       "v8_1": true,
       "v9_0": true,
       "v10_0": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true,
+      "v13_0": true,
+      "v14_0": true
     }
   }
 }
