@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "industrydata-industrydatarun-start-permissions"
+  "name": "industrydata_industrydatarun_start"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-industrydatarun-start-permissions.md)]
