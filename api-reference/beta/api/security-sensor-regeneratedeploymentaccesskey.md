@@ -27,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesSensors.ReadWrite.All|SecurityIdentitiesSensors.ReadWrite.All|
+|Delegated (work or school account)|SecurityIdentitiesSensors.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SecurityIdentitiesSensors.ReadWrite.All|SecurityIdentitiesSensors.ReadWrite.All|
+|Application|SecurityIdentitiesSensors.ReadWrite.All|Not available.|
 
 ## HTTP request
 
