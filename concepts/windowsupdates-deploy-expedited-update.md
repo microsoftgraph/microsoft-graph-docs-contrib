@@ -1,5 +1,5 @@
 ---
-title: "Deploy an expedited quality update using the Windows Autopatch"
+title: "Deploy an expedited quality update using Windows Autopatch"
 description: "Follow these steps to deploy expedited Windows quality updates to devices in a Microsoft Entra tenant in case of an emergency by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
