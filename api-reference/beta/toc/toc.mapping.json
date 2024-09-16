@@ -214,7 +214,14 @@
             "place",
             "room",
             "roomList"
-          ]
+          ],
+           "childNodes": [
+            {
+              "name": "Devices (preview)",
+              "resources":[
+                "workplaceSensorDevice"
+              ]
+            }
         }
       ]
     },
