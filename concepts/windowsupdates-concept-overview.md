@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Windows Autopatch provides control over updates through the ability to approve, schedule, and safeguard content delivered by Windows Update to managed devices.
 
-## Why use the Windows Autopatch?
+## Why use Windows Autopatch?
 
 IT professionals and management tool vendors alike can use Windows Autopatch to:
 * Schedule update deployments to begin on a specific date.
