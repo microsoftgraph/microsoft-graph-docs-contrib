@@ -20,10 +20,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "cloudlicensing-userusageright-list-permissions"
+  "name": "cloudlicensing_usercloudlicensing_list_usagerights"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-userusageright-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usercloudlicensing-list-usagerights-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /me/cloudLicensing/usageRights
-GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights
+GET /users/{userId}/cloudLicensing/usageRights
 ```
 
 ## Optional query parameters
