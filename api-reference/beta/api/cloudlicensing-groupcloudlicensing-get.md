@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "cloudlicensing_groupusageright_get_permissions"
+  "name": "cloudlicensing_groupusageright_get"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-groupusageright-get-permissions.md)]
