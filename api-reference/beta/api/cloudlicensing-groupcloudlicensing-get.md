@@ -1,12 +1,12 @@
 ---
-title: "Get group usageRight"
+title: "Get groupCloudLicensing"
 description: "Get the properties and relationships of a usageRight object granted to a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get group usageRight
+# Get groupCloudLicensing
 
 Namespace: microsoft.graph.cloudLicensing
 
@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "cloudlicensing-groupusageright-get-permissions"
+  "name": "cloudlicensing_groupusageright_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-groupusageright-get-permissions.md)]
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /groups/0003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudlicensing-groupusageright-get-example"
+  "name": "cloudlicensing-groupusageright-get-example",
+  "sampleKeys": ["0003985b-dfc1-4f42-97d4-65f70a335ca8","i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
 }
 -->
 ``` http
