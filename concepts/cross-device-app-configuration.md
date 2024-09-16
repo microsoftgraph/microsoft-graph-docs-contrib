@@ -170,7 +170,7 @@ You can find your existing app ID/client IDs or provision new ones by signing in
 
 To find the GUID in the Microsoft Entra admin center  for your tenant: 
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) an administrator.
 1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
 1. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
 
