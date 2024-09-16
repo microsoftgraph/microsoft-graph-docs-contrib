@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to manage. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
-|ids|String collection|List of identifiers that corresponds to the **updatableAsset** resources to enroll in update management for the given **updateCategory**.|
+|ids|String collection|List of identifiers that correspond to the **updatableAsset** resources to enroll in update management for the given **updateCategory**.|
 
 ## Response
 
