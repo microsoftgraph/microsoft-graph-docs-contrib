@@ -74,6 +74,8 @@ items:
     items:
     - name: List user usageRights
       href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get userCloudLicensing
+      href: ../../api/cloudlicensing-usercloudlicensing-get.md
   - name: Cloud PC
     items:
     - name: List cloud PCs
