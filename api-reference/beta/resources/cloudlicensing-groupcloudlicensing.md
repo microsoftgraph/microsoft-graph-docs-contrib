@@ -1,6 +1,6 @@
 ---
 title: "groupCloudLicensing resource type"
-description: "Represents the relationships of a group to Cloud Licensing resources."
+description: "Represents the relationships of a group to cloud licensing resources."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: resourcePageType
