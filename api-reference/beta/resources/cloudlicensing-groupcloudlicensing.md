@@ -12,13 +12,13 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the relationships of a group to Cloud Licensing resources.
+Represents the relationships of a group to cloud licensing resources.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List group usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
-|[Get group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
+|[Get groupCloudLicensing](../api/cloudlicensing-groupcloudlicensing-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 
 ## Properties
 None.
