@@ -1,6 +1,6 @@
 ---
 title: "service resource type"
-description: "Represents a specific service conferred by an individual usageRight."
+description: "Represents a specific service granted by an individual usageRight."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific service conferred by an individual usageRight.
+Represents a specific service granted by an individual [usageRight](../resources/cloudlicensing-usageright.md).
 
 ## Properties
 |Property|Type|Description|
