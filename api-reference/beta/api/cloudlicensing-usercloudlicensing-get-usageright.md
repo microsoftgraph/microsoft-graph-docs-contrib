@@ -1,12 +1,12 @@
 ---
-title: "Get user usageRight"
+title: "Get userCloudLicensing"
 description: "Get the properties and relationships of a usageRight object granted to a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get user usageRight
+# Get userCloudLicensing
 
 Namespace: microsoft.graph.cloudLicensing
 
@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "cloudlicensing-userusageright-get-permissions"
+  "name": "cloudlicensing_userusageright_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-userusageright-get-permissions.md)]
@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /me/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
-GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
+GET /me/cloudLicensing/usageRights/{usageRightId}
+GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
 ## Optional query parameters
@@ -61,7 +61,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudlicensing-userusageright-get-example"
+  "name": "cloudlicensing-userusageright-get-example",
+  "sampleKeys": ["48fbdf70-9e09-40df-9dbe-17af483ab113","i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
 }
 -->
 ``` http
