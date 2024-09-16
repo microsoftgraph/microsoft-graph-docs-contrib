@@ -23,6 +23,8 @@ to the destination time zone so that Outlook time values are displayed in local 
 When other people request work meetings with you in your usual place of work, they can still respect your working hours in the
 appropriate time zone.
 
+> **Note:** The [working hours experience](https://support.microsoft.com/office/set-your-work-hours-and-location-in-outlook-af2fddf9-249e-4710-9c95-5911edfd76f6#articleFooterSupportBridge=communityBridge) in new Outlook and Outlook on the web isn't currently supported.
+
 
 ## Properties
 | Property	   | Type	|Description|
@@ -52,11 +54,6 @@ The following JSON representation shows the resource type.
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 ```
-
-## Modern Working Hours
-There is currently no support for the [modern experience of working hours](https://support.microsoft.com/office/set-your-work-hours-and-location-in-outlook-af2fddf9-249e-4710-9c95-5911edfd76f6#articleFooterSupportBridge=communityBridge) with GraphAPI.
-A subsequential Feature Request is already been drafted: https://feedbackportal.microsoft.com/feedback/idea/f4ed696b-9971-ef11-a4e7-6045bdb238dc
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
