@@ -26,9 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/healthmonitoring-healthmonitoringroot-list-alertconfigurations-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to view alert configurations.
+In addition to the delegated permissions, the signed-in user needs to belong to a [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allows them to view alert configurations. The following least privileged roles are supported for this operation.
 
-+ Global Administrator
 + Global Reader
 + Security Administrator
 + Security Operator
