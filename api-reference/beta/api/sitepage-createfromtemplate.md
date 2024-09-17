@@ -1,7 +1,7 @@
 ---
 author: Yadong1106
 description: "Create a new page from a page template."
-title: sitePage: createFromTemplate
+title: "sitePage: createFromTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
