@@ -3,7 +3,7 @@ title: "Create updatableAssetGroup"
 description: "Create a new updatableAssetGroup object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 
