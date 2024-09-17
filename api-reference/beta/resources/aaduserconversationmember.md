@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a Microsoft Entra user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md). 
 
-Inherited from [conversationMember](conversationmember.md).
+Inherits from [conversationMember](conversationmember.md).
 
 ## Methods
 
