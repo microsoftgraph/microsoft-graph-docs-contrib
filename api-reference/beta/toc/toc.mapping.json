@@ -2592,7 +2592,12 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "webPart"
+            "webPart",
+            "pageTemplate"
+          ],
+          "complexTypes": [
+            "createFromTemplate",
+            "saveAsTemplate"
           ],
           "childNodes": [
             {

@@ -332,6 +332,22 @@ items:
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
+  - name: Save as template
+    href: ../../resources/saveastemplate.md
 - name: Taxonomy
   items:
   - name: Store
