@@ -1,6 +1,6 @@
 ---
 title: "filteringRule resource type"
-description: "A rule that is used to filter traffic in Global Secure Access."
+description: "An abstract type that represents a rule that filters traffic in Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: entra-id
@@ -13,9 +13,11 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type from which the [fqdnFilteringRule](networkaccess-fqdnFilteringRule.md) and [webCategoryFilteringRule](networkaccess-webCategoryFilteringRule.md) resource types are derived.
-Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
+An abstract type that represents a rule that filters traffic in Global Secure Access.
 
+Base type of [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md) and [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md).
+
+Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -30,7 +32,7 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |Property|Type|Description|
 |:---|:---|:---|
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Possible destinations and types of destinations accessed by the user in accordance with the network filtering policy, such as IP addresses and FQDNs/URLs.|
-|id|String|A unique ID for the rule. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|A unique ID for the rule. Inherited from [microsoft.graph.policyRule](../resources/networkaccess-policyrule.md).|
 |name|String|The display name of the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
 |ruleType|microsoft.graph.networkaccess.networkDestinationType|The rule types that specify the basis for filtering. The possible values are `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, and `webCategory`.|
 
