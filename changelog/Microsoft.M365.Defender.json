@@ -2348,7 +2348,7 @@
           }
         ],
         "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
-        "Cloud": "Review",
+        "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2024-09-12T11:01:36.741426Z",
         "WorkloadArea": "Security",
