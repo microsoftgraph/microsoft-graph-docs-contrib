@@ -38,18 +38,18 @@ POST /directory/administrativeUnits
 ## Request body
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
 
-You can specify the following properties when creating an **administrativeUnit**.
+You can specify the following properties when you create an **administrativeUnit**.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | description | String | Description for the administrative unit. Optional. |
 | displayName | String | Display name for the administrative unit. Required. |
-| membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Optional. |
-| membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. Optional. |
-| membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. Optional. |
-| visibility |String | Visibility for the administrative unit. If not set, then the default is `public`. Can be set to `HiddenMembership`, which hides the membership from non-members. Optional. |
+| membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership). Optional.|
+| membershipRuleProcessingState | String | Controls whether the dynamic membership rule is actively processed. Set to `On` to activate the dynamic membership rule, or `Paused` to stop updating membership dynamically. Optional. |
+| membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. Optional. |
+| visibility |String | The visibility of the administrative unit. If not set, the default value is `public`. It can be set to `HiddenMembership` to hide the membership from nonmembers. Optional. |
 
-Because the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
+The **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), which allows you to use the `POST` operation to add custom properties with your own data when you create the administrative unit.
 
 ## Response
 
@@ -57,9 +57,9 @@ If successful, this method returns a `201 Created` response code and an [adminis
 
 ## Example
 
-The following example creates a new administrative unit with a dynamic membership rule to include all users whose country is United States.
-
 ### Request
+
+The following example shows a request that creates a new administrative unit with a dynamic membership rule to include all users whose country is the United States.
 
 <!-- {
   "blockType": "request",
