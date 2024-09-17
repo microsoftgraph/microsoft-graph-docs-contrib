@@ -4196,7 +4196,7 @@ items:
       - name: FQDN Filtering rule
         href: ../../resources/networkaccess-fqdnfilteringrule.md
       - name: Web Category Filtering rule 
-        href: ../../resources/webcategoryfilteringrule.md
+        href: ../../resources/networkaccess-webcategoryfilteringrule.md
       - name: List
         href: ../../api/networkaccess-filteringrule-list.md
       - name: Create

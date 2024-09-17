@@ -42,7 +42,7 @@ POST /networkaccess/filteringPolicies/{filteringPoliciesId}/policyRules
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [fqdnFilteringRule](networkaccess-fqdnFilteringRule.md) or [webCategoryFilteringRule](networkaccess-webCategoryFilteringRule.md) resource type.
+In the request body, supply a JSON representation of [fqdnFilteringRule](../resources/networkaccess-fqdnFilteringRule.md) or [webCategoryFilteringRule](../resources/networkaccess-webCategoryFilteringRule.md) resource type.
 
 
 ## Response
