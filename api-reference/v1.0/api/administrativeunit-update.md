@@ -48,7 +48,7 @@ PATCH /directory/administrativeUnits/{id}
 | membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership).|
 | membershipRuleProcessingState | String | Controls whether the dynamic membership rule is actively processed. Set to `On` to activate the dynamic membership rule, or `Paused` to stop updating membership dynamically. |
 | membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. |
-| visibility | String | Visibility for the administrative unit. If not set, then the default is `public`. Can be set to `HiddenMembership`, which hides the membership from nonmembers. |
+| visibility | String | The visibility of the administrative unit. If not set, the default value is `public`. It can be set to `HiddenMembership` to hide the membership from nonmembers. |
 
 The **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), which allows you to use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
 
