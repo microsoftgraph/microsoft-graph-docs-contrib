@@ -1,6 +1,6 @@
 ---
 title: "Create administrativeUnit"
-description: "Use this API to create a new administrativeUnit."
+description: "Create a new administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
+Create a new [administrativeUnit](../resources/administrativeunit.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
