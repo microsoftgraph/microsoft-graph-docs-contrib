@@ -3,7 +3,7 @@ title: "itemBody resource type"
 description: "Represents a container for holding content and its type."
 ms.localizationpriority: medium
 author: "skandula"
-ms.subservice: "windows-update-business"
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
