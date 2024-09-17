@@ -34,7 +34,7 @@ Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Possible destinations and types of destinations accessed by the user in accordance with the network filtering policy, such as IP addresses and FQDNs/URLs.|
 |id|String|A unique ID for the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
 |name|String|The display name of the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|The rule types that specify the basis for filtering. The possible values are `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, and `webCategory`.|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The rule types that specify the basis for filtering. The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, and `webCategory`.|
 
 ## Relationships
 None.
