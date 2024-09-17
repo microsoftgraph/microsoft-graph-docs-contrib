@@ -3,7 +3,7 @@ title: "fqdnFilteringRule resource type"
 description: "Defines a network filtering rule specifically for fully qualified domain names (FQDNs), allowing administrators to control access to specified domains."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.subservice: entra-global-secure-access
+ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a network filtering rule specifically for fully qualified domain names (FQDNs), allowing administrators to control access to specified domains.
+Defines a network filtering rule specifically for fully qualified domain names (FQDNs) that allows administrators to control access to specified domains.
 
-Inherits from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).
+Inherits from [filteringRule](../resources/networkaccess-filteringrule.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,10 +28,10 @@ Inherits from [microsoft.graph.networkaccess.filteringRule](../resources/network
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Destinations maintain a list of potential destinations and destination types that the user may access within the context of a network filtering policy. This includes FQDNs and web categories. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
-|id|String|Identifier. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|name|String|Display Name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|The network destination type used by a filtering rule. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).The possible values are: `fqdn`, `webCategory`, `unknownFutureValue`.|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|The list of potential destinations and destination types that the user may access within the context of a network filtering policy. This includes FQDNs and web categories. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
+|id|String|The unique identifier for the **fqdnFilteringRule**. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
+|name|String|Display name. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The network destination type used by a filtering rule. Suppports a subset of the values for **networkDestinationType**. The possible values are: `fqdn`, `webCategory`, `unknownFutureValue`. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md). |
 
 ## Relationships
 None.
@@ -48,15 +48,10 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
-	"name": "BlockContoso",
-	"ruleType": "fqdn",
-	"destinations": [
-		{
-			"@odata.type": "#microsoft.graph.networkaccess.fqdn",
-			"value": "Contoso.com"
-		}
-	]
+  "@odata.type": "#microsoft.graph.networkaccess.filteringRule",
+  "destinations": [{"@odata.type": "microsoft.graph.networkaccess.ruleDestination"}],
+  "id": "String (identifier)",
+  "name": "String",
+  "ruleType": "String"
 }
 ```
-
