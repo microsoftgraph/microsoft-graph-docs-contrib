@@ -1,7 +1,7 @@
 ---
 title: "conversationMember: remove"
 description: "Remove members in bulk from a team."
-author: "MSFTPrachiGoyal"
+author: "prachigoyal-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
