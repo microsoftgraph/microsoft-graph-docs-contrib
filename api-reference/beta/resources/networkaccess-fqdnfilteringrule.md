@@ -48,7 +48,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.filteringRule",
+  "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
   "destinations": [{"@odata.type": "microsoft.graph.networkaccess.ruleDestination"}],
   "id": "String (identifier)",
   "name": "String",
