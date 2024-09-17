@@ -56,6 +56,18 @@ $keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $restrictions->setKeyCredentials($keyCredentialsArray);
 
+$additionalData = [
+'applicationRestrictions' => [
+'identifierUris' => [
+	'nonDefaultUriAddition' => [
+		'restrictForAppsCreatedAfterDateTime' => '2024-01-01T10:37:00Z',
+		'excludeAppsReceivingV2Tokens' => true,
+		'excludeSaml' => true,
+	],
+],
+],
+];
+$restrictions->setAdditionalData($additionalData);
 $requestBody->setRestrictions($restrictions);
 
 $result = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody)->wait();
