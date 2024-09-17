@@ -1,6 +1,6 @@
 ---
 title: "educationClass: getRecentlyModifiedSubmissions"
-description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
+description: "Retrieve submissions modified in the previous seven days."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
