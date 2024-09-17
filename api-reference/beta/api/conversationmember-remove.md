@@ -53,7 +53,7 @@ The following table shows the parameter that you can use with this method.
 
 ## Response
 
-If successful, this method returns either a `204 No Content` response if all specified members were successfully removed from the team or a `207 Multi-Status` response if only some members were removed. The caller should inspect the response payload to identify which member removals failed. The response body contains a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. If the request fails, the API returns an error. For more information about Microsoft Graph errors, see [Microsoft Graph errors and resource types](/graph/errors).
+If successful, this method returns either a `204 No Content` response if all specified members were successfully removed from the team or a `207 Multi-Status` response if only some members were removed. The caller should inspect the response payload to identify which member removals failed. The response body contains a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. If the request fails, the API returns an error. For more information about Microsoft Graph errors, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
@@ -213,7 +213,7 @@ Content-Type: application/json
 
 ## Related content
 
-- [Remove member from team](team-delete-members.md)
+[Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-09-12 06:02:30 UTC -->
