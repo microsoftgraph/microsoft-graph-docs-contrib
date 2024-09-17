@@ -3,7 +3,7 @@ title: "durationDrivenRolloutSettings resource type"
 description: "Represents settings for controlling how to roll out over a specific duration."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
