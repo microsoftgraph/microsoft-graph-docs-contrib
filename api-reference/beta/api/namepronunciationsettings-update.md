@@ -50,7 +50,7 @@ PATCH /admin/people/namePronunciation
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|`true` to enable name pronunciation in the organization; otherwise, false. The default value is `false`. Required.|
+|isEnabledInOrganization|Boolean|`true` to enable name pronunciation in the organization; otherwise, `false`. The default value is `false`. Required.|
 
 
 
