@@ -28,6 +28,10 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 
 Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
 
+### Teamwork and communications | Messaging
+
+[Remove multiple members](/graph/api/conversationmember-remove?view=graph-rest-beta&preserve-view=true) from a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) in a single request.
+
 ## August 2024: New and generally available
 
 ### Education
