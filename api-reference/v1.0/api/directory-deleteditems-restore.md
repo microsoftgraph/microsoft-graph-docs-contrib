@@ -56,8 +56,11 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
-## Example
-### Request
+## Examples
+
+### Example 1: Restore a deleted item
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -66,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
   "name": "restore_directory_deleteditem"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 ```
 
 # [C#](#tab/csharp)
@@ -103,8 +106,8 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 ---
 
-### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,7 +143,9 @@ Content-type: application/json
   ]
 }-->
 
-### Request
+### Example 2: Restore a deleted item and remove any conflicting proxy addresses
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -155,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
