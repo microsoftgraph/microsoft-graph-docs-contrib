@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9d6be2a6-416f-4f30-a104-9c41e43c9e95",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentId",
+          "ChangeType": "Addition",
+          "Description":  "Added the **assignmentID** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "9d6be2a6-416f-4f30-a104-9c41e43c9e95",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-12T18:32:24.5964486Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4893e0a7-53d2-482c-81f7-e7f2eef29958",
           "ApiChange": "function",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
