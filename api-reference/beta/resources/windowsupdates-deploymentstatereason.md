@@ -3,7 +3,7 @@ title: "deploymentStateReason resource type"
 description: "A reason for a particular deployment state."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
