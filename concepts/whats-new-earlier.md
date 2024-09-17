@@ -1606,7 +1606,7 @@ Manage [access package](/graph/api/resources/accesspackage) or [group](/graph/ap
 - [Get](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-get) or [update](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-update) specific [feature settings](/graph/api/resources/microsoftAuthenticatorFeatureSettings) for Microsoft Authenticator, for example, whether to show the app that the user is signing into, or the geographic location from which the authentication request originated.
 
 ### Reports | Microsoft 365 usage reports
-Get reports for [Microsoft 365 app usage](/graph/api/resources/microsoft-365-apps-usage-report), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
+Get reports for [Microsoft 365 app usage](/graph/api/resources/reportroot#microsoft-365-apps-usage), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
 
 ### Teamwork and communications | Calls and online meetings
 When [inviting](/graph/api/participant-invite) a [participant](/graph/api/resources/invitationparticipantinfo) to a [call](/graph/api/resources/call), you can specify whether to hide the participant from the roster or remove the participant from the main mixer.

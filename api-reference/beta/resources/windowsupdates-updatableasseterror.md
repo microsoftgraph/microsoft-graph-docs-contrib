@@ -1,9 +1,9 @@
 ---
 title: "updatableAssetError resource type"
-description: "An abstract type that represents an error which prevents the deployment service from enrolling an azureADDevice in update management, or deploying content to the device"
+description: "An abstract type that represents an error which prevents Windows Autopatch from enrolling an azureADDevice in update management, or deploying content to the device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents an error which prevents the deployment service from enrolling an [azureADDevice](../resources/windowsupdates-azureaddevice.md) in update management, or deploying content to the device. 
+An abstract type that represents an error which prevents Windows Autopatch from enrolling an [azureADDevice](../resources/windowsupdates-azureaddevice.md) in update management, or deploying content to the device. 
 
 All updatable asset errors are of the derived type, [azureADDeviceRegistrationError](../resources/windowsupdates-azureaddeviceregistrationerror.md).
 
