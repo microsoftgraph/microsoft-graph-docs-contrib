@@ -213,4 +213,73 @@ HTTP/1.1 204 No Content
 }
 -->
 
+## Example 3: Add a new attribute mapping to the synchronization rules
+
+##### Request
+The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema"
+}-->
+```http
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+   "@odata.type":"#microsoft.graph.synchronizationSchema",
+   "synchronizationRules":[
+      {
+         "defaultValue":"",
+         "exportMissingReferences":false,
+         "flowBehavior":"FlowWhenChanged",
+         "flowType":"Always",
+         "matchingPriority":0,
+         "source":{
+            "expression":"[extensionAttribute11]",
+            "name":"extensionAttribute11",
+            "parameters":[
+               
+            ],
+            "type":"Attribute"
+         },
+         "targetAttributeName":"timezone"
+      }
+   ],
+}
+
+
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationschema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 
