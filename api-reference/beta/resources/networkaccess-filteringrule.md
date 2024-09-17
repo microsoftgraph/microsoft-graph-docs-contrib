@@ -13,8 +13,9 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A rule that is used to filter traffic in Global Secure Access.
+This is an abstract type from which the [fqdnFilteringRule](networkaccess-fqdnFilteringRule.md) and [webCategoryFilteringRule](networkaccess-webCategoryFilteringRule.md) resource types are derived.
 Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
+
 
 ## Methods
 |Method|Return type|Description|

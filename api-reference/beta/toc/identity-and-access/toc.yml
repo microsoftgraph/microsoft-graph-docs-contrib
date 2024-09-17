@@ -3939,7 +3939,7 @@ items:
         - name: Get
           href: ../../api/securitytoolawsserverlessfunctionadministratorfinding-get.md
 - name: Network access (preview)
-  displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
+  displayName: Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
   items:
   - name: Overview
     href: ../../resources/networkaccess-global-secure-access-api-overview.md
@@ -4193,6 +4193,10 @@ items:
       items:
       - name: Filtering rule
         href: ../../resources/networkaccess-filteringrule.md
+      - name: FQDN Filtering rule
+        href: ../../resources/networkaccess-fqdnfilteringrule.md
+      - name: Web Category Filtering rule 
+        href: ../../resources/webcategoryfilteringrule.md
       - name: List
         href: ../../api/networkaccess-filteringrule-list.md
       - name: Create

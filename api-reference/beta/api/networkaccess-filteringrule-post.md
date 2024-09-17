@@ -42,7 +42,8 @@ POST /networkaccess/filteringPolicies/{filteringPoliciesId}/policyRules
 |Content-Type|application/json. Required.|
 
 ## Request body
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of [fqdnFilteringRule](networkaccess-fqdnFilteringRule.md) or [webCategoryFilteringRule](networkaccess-webCategoryFilteringRule.md) resource type.
+
 
 ## Response
 
@@ -63,15 +64,15 @@ POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies/ac253559-3
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-    "name": "Block Alcohol",
-    "ruleType": "webCategory",
-    "destinations": [
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.webCategory",
-            "name": "AlcoholAndTobacco"
-        }
-    ]
+ "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
+	"name": "Block Gambling Sites",
+	"ruleType": "webCategory",
+	"destinations": [
+		{
+			"@odata.type": "#microsoft.graph.networkaccess.webCategory",
+			"name": "Gambling"
+		}
+	]
 }
 ```
 
@@ -123,17 +124,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies('ac253559-37a0-4f72-b666-103420b94e38')/policyRules/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies('49159c8f-3e5c-4a10-a2b8-ef7a734a586d')/policyRules/$entity",
     "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-    "id": "0d7ce7af-fbed-4751-8fed-8c184b751d0b",
-    "name": "BlockStreaming",
+    "id": "47024899-7304-453e-9421-0febf7b57ad8",
+    "name": "Block Gambling Sites",
     "ruleType": "webCategory",
     "destinations": [
         {
             "@odata.type": "#microsoft.graph.networkaccess.webCategory",
-            "name": "StreamingMediaAndDownloads",
-            "displayName": "Streaming Media + Music and Streaming Audio",
-            "group": "HighBandwidth"
+            "name": "Gambling",
+            "displayName": "Gambling",
+            "group": "Liability"
         }
     ]
 }
