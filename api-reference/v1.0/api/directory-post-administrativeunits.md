@@ -46,7 +46,7 @@ You can specify the following properties when you create an **administrativeUnit
 | displayName | String | Display name for the administrative unit. Required. |
 | membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership). Optional.|
 | membershipRuleProcessingState | String | Controls whether the dynamic membership rule is actively processed. Set to `On` to activate the dynamic membership rule, or `Paused` to stop updating membership dynamically. Optional. |
-| membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. Optional. |
+| membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. If not set, the default value is `assigned`. Optional. |
 | visibility | String | The visibility of the administrative unit. If not set, the default value is `public`. It can be set to `HiddenMembership` to hide the membership from nonmembers. Optional. |
 
 The **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), which allows you to use the `POST` operation to add custom properties with your own data when you create the administrative unit.
