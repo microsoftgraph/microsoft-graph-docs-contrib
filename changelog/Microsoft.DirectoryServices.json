@@ -31,25 +31,25 @@
         {
           "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
           "ApiChange": "Property",
-          "ChangedApiName": "administrativeUnits",
+          "ChangedApiName": "membershipRule",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
           "Target": "administrativeUnit"
         },
         {
           "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
           "ApiChange": "Property",
-          "ChangedApiName": "administrativeUnits",
+          "ChangedApiName": "membershipRuleProcessingState",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeunit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
           "Target": "administrativeUnit"
         },
         {
           "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
           "ApiChange": "Property",
-          "ChangedApiName": "administrativeUnits",
+          "ChangedApiName": "membershipType",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipType** property to the [administrativeunit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **membershipType** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
           "Target": "administrativeUnit"
         }
       ],
