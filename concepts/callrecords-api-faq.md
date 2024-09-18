@@ -26,12 +26,12 @@ You can find and collect call IDs using the following options:
 
 * **Subscribe to notifications**: Subscribe to [change notifications feed](changenotifications-for-callrecords.md) and receive notifications containing call IDs whenever a new call record is created.
 * **List call records**: Get a list of call IDs by requesting it from [List callRecords API](/graph/api/callrecords-cloudcommunications-list-callrecords).
-* **Manual search**: If you're a [Call Analytics](https://learn.microsoft.com/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) customer, you can manually search for a call ID in a user’s history. However, there's no automated system available to retrieve all call IDs from Call Analytics.
+* **Manual search**: If you're a [Call Analytics](/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) customer, you can manually search for a call ID in a user’s history. However, there's no automated system available to retrieve all call IDs from Call Analytics.
 * **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](/graph/api/resources/call) API after the call is completed. The `callChainId` may differ from the call ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
 
 ## When is a call record available?
 
-A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more details, please refer to the [Latency](/graph/api/resources/subscription.md#latency) page.
+A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more details, please refer to the [Latency](/graph/api/resources/subscription#latency) page.
 
 ## How long are call records retained?
 
@@ -65,7 +65,7 @@ You can call `GET communications/callRecords/{id}?$expand=participants_v2` to re
 
 To see all participants, implement a custom solution to build the participants list from the call records data:
 
-1. Call [Get callRecord](/graph/api/callrecords-callrecord-get.md) API with expanded sessions endpoint: `GET /communications/callRecords/{id}?$expand=sessions`
+1. Call [Get callRecord](/graph/api/callrecords-callrecord-get) API with expanded sessions endpoint: `GET /communications/callRecords/{id}?$expand=sessions`
 2. Read `caller` property from each session on the received `sessions` list
 3. Build your custom participants list based on the `caller` endpoint [identity](/graph/api/resources/identity) collecting `id`, `displayName`, and other properties you require to gather for a participant
 
