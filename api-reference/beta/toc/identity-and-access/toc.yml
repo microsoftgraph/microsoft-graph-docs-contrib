@@ -2713,7 +2713,7 @@ items:
         href: ../../api/activitybasedtimeoutpolicy-update.md
       - name: Delete
         href: ../../api/activitybasedtimeoutpolicy-delete.md
-    - name: Application authentication method policy
+    - name: Application management policy
       items:
       - name: Overview
         href: ../../resources/applicationauthenticationmethodpolicy.md

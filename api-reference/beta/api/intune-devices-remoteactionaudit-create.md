@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the r
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |managedDeviceId|String|Action target.|
 |deviceActionDetails|[keyValuePair_2OfString_String](../resources/intune-devices-keyvaluepair_2ofstring_string.md) collection|DeviceAction details|
-|deviceActionCategory|[actionCategory](../resources/intune-devices-actioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
+|deviceActionCategory|[deviceActionCategory](../resources/intune-devices-deviceactioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
 |bulkDeviceActionId|String|BulkAction ID|
 
 
