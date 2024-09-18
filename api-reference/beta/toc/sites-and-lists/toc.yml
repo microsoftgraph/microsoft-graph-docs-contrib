@@ -22,7 +22,7 @@ items:
     href: ../../api/itemactivity-getbyinterval.md
   - name: List pages
     href: ../../api/basesitepage-list.md
-  - name: List pageTemplates
+  - name: List page templates
     href: ../../api/pagetemplate-list.md
   - name: List root sites
     href: ../../api/site-list.md
