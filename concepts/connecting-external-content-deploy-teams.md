@@ -231,7 +231,11 @@ To learn how to ingest external items into a working Microsoft Graph connection,
 
 To validate the experience:
 
+<<<<<<< HEAD
 - Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin.
+=======
+- Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
+>>>>>>> parent of bdc0ecacab8 (Revert "Merge branch 'main' into doc-improvement-teamsappinstallation")
 - Select the **Manage apps** blade in the left rail.
 - Go to your Teams application.
 - On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.

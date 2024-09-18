@@ -36,7 +36,7 @@ Before proceeding with the steps in this article:
     - A redirect URI for the app to receive token responses from Microsoft Entra ID.
     - A redirect URI for the service to receive admin consent responses *if* the app implements functionality to request administrator consent.
 
-## Configure permissions for Microsoft Graph
+## Step 1: Configure permissions for Microsoft Graph
 
 Microsoft Graph exposes [application permissions](./permissions-overview.md#application-permissions) for apps that call Microsoft Graph with their own identity. These permissions always require administrator consent.
 

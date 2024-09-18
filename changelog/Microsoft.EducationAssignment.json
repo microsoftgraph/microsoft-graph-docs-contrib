@@ -3,6 +3,7 @@
     {
       "ChangeList": [
         {
+<<<<<<< HEAD
           "Id": "9d6be2a6-416f-4f30-a104-9c41e43c9e95",
           "ApiChange": "Property",
           "ChangedApiName": "assignmentId",
@@ -21,6 +22,8 @@
     {
       "ChangeList": [
         {
+=======
+>>>>>>> parent of bdc0ecacab8 (Revert "Merge branch 'main' into doc-improvement-teamsappinstallation")
           "Id": "4893e0a7-53d2-482c-81f7-e7f2eef29958",
           "ApiChange": "function",
           "ChangedApiName": "getRecentlyModifiedSubmissions",
