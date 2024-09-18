@@ -1,19 +1,19 @@
 ---
-title: "Microsoft Entra application authentication methods API overview"
-description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
+title: "Microsoft Entra application management policy API overview"
+description: "Application management policies allow administrators to set rules on how Entra apps in their tenant can be configured."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Microsoft Entra application authentication methods API overview 
+# Microsoft Entra application management policies API overview 
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Microsoft Entra ID. The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
+Application management policies allow IT admins to enforce best practices for how apps in their organizations should be configured. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
 
 These policies allow organizations to take advantage of the new app security hardening features. By enforcing restrictions that are based on the application or service principal created date, an organization can review their current app security posture, inventory apps, and enforce controls per their resourcing schedules and needs. This approach using the created date allows the organization to enforce the policy for new applications and also apply it to existing applications.
 
@@ -53,6 +53,7 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
 | asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
 | trustedCertificateAuthority  | Enforce the list of trusted certificate authorities.      | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.   |
+| nonDefaultUriAddition  | Block new identifier URIs for apps except the "default" URI format. | Block new identifier URIs for apps unless they are of the format `api://{appId}`.   |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).

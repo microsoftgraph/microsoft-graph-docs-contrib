@@ -46,6 +46,8 @@ items:
     href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
+  - name: Permanently delete
+    href: ../../api/message-permanentdelete.md
   - name: Attachments
     items:
     - name: List attachments
@@ -136,6 +138,8 @@ items:
     href: ../../api/mailfolder-delta.md
   - name: Move mail folder
     href: ../../api/mailfolder-move.md
+  - name: Permanently delete
+    href: ../../api/mailfolder-permanentdelete.md
   - name: Extended properties
     items:
     - name: Create single-value property
@@ -150,16 +154,18 @@ items:
   items:
   - name: Mail search folder
     href: ../../resources/mailsearchfolder.md
-  - name: Create mail search folder
+  - name: Create
     href: ../../api/mailsearchfolder-post.md
+  - name: Get
+    href: ../../api/mailfolder-get.md
+  - name: Update
+    href: ../../api/mailsearchfolder-update.md
+  - name: Delete
+    href: ../../api/mailfolder-delete.md
+  - name: Permanently delete
+    href: ../../api/mailsearchfolder-permanentdelete.md
   - name: List child folders
     href: ../../api/mailfolder-list-childfolders.md
-  - name: Get mail search folder
-    href: ../../api/mailfolder-get.md
-  - name: Update mail search folder
-    href: ../../api/mailsearchfolder-update.md
-  - name: Delete mail search folder
-    href: ../../api/mailfolder-delete.md
   - name: List messages in folder
     href: ../../api/mailfolder-list-messages.md
 - name: Message rule

@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.solutions.businessscenarios.item.planner.get_plan.get_plan_post_request_body import GetPlanPostRequestBody
 from msgraph_beta.generated.models.business_scenario_group_target import BusinessScenarioGroupTarget
 from msgraph_beta.generated.models.planner_task_target_kind import PlannerTaskTargetKind
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = GetPlanPostRequestBody(
 	target = BusinessScenarioGroupTarget(
 		odata_type = "microsoft.graph.businessScenarioGroupTarget",

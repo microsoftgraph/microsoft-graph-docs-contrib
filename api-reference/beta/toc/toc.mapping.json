@@ -214,8 +214,16 @@
             "place",
             "room",
             "roomList"
-          ]
-        }
+          ],
+           "childNodes": [
+            {
+              "name": "Devices (preview)",
+              "resources":[
+                "workplaceSensorDevice"
+              ]
+            }
+           ]
+         }
       ]
     },
     {
@@ -426,6 +434,10 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
+            "cloudPcCrossRegionDisasterRecoverySetting",
+            "cloudPcDisasterRecoveryAzureConnectionSetting",
+            "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+            "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcHealthCheckItem",
@@ -875,7 +887,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -1571,7 +1584,7 @@
               ],
               "childNodes": [
                 {
-                  "name": "Application authentication method policy",
+                  "name": "Application management policy",
                   "overview": "../../resources/applicationauthenticationmethodpolicy.md",
                   "resources": [
                     "tenantAppManagementPolicy",
@@ -1895,6 +1908,28 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Partner Center security",
+          "childNodes": [
+            {
+              "name": "Partner security score",
+              "overview": "../../resources/partner-security-score-api-overview.md",
+              "resources":[
+                "microsoft.graph.partner.security.customerInsight",
+                "microsoft.graph.partner.security.partnerSecurityScore",
+                "microsoft.graph.partner.security.securityRequirement",
+                "microsoft.graph.partner.security.securityHistory"
+              ],
+              "complexTypes":[
+                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customerMfaInsight",
+                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.responseTimeSecurityRequirement"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2061,6 +2096,7 @@
         "insightsSettings",
         "pronounsSettings",
         "photoUpdateSettings",
+        "namePronunciationSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2076,7 +2112,9 @@
           "resources": [
             "pronounsSettings",
             "profileCardProperty",
-            "photoUpdateSettings"
+            "photoUpdateSettings",
+            "namePronunciationSettings"
+
           ]
         },
         {
@@ -2420,9 +2458,12 @@
           ]
         },
         {
-          "name": "Identities (preview)",
+          "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.identityContainer"
           ]
         },
         {
@@ -2562,7 +2603,12 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "webPart"
+            "webPart",
+            "pageTemplate"
+          ],
+          "complexTypes": [
+            "createFromTemplate",
+            "saveAsTemplate"
           ],
           "childNodes": [
             {
