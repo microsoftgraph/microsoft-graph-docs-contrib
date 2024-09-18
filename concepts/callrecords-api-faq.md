@@ -10,28 +10,28 @@ ms.subservice: "cloud-communications"
 
 ## What is the Microsoft Graph Call Records API?
 
-Microsoft Graph Call Records API (also known as the call records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization, called a tenant, when using Microsoft Teams or Skype for Business. Tenants can leverage the call records API to subscribe to, list, and retrieve call records by call IDs, as well as to look up calls for a participant. For more details, please refer to the [Working with the call records API in Microsoft Graph](https://learn.microsoft.com/graph/api/resources/callrecords-api-overview).
+Microsoft Graph Call Records API (also known as the call records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization, called a tenant, when using Microsoft Teams or Skype for Business. Tenants can leverage the call records API to subscribe to, list, and retrieve call records by call IDs, as well as to look up calls for a participant. For more details, please refer to the [Working with the call records API in Microsoft Graph](../api-reference/v1.0/resources/callrecords-api-overview.md).
 
 ## What is the permission required to use the Call Records API?
 
-Your application needs the **CallRecords.Read.All** permission to access call records in Microsoft Graph. An administrator must grant this permission to the application.  For more details, please refer to the [Microsoft Graph permissions reference](https://learn.microsoft.com/graph/permissions-reference).
+Your application needs the **CallRecords.Read.All** permission to access call records in Microsoft Graph. An administrator must grant this permission to the application.  For more details, please refer to the [Microsoft Graph permissions reference](permissions-reference.md).
 
 ## How do I request a call record using the Microsoft Graph Call Records API?
 
-To request a call record, you need to make a `GET` request to the `/communications/callRecords/{id}` endpoint, where `{id}` is the unique identifier of your call. Ensure you have the necessary **CallRecords.Read.All** permission and include the Authorization header with a valid bearer token. For more details, please refer to the  [Get callRecord documentation](https://learn.microsoft.com/graph/api/callrecords-callrecord-get).
+To request a call record, you need to make a `GET` request to the `/communications/callRecords/{id}` endpoint, where `{id}` is the unique identifier of your call. Ensure you have the necessary **CallRecords.Read.All** permission and include the Authorization header with a valid bearer token. For more details, please refer to the  [Get callRecord documentation](../api-reference/v1.0/api/callrecords-callrecord-get.md).
 
 ## Where can I find the call IDs of the calls that occurred in my organization?
 
 You can find and collect call IDs using the following options:
 
-* **Subscribe to notifications**: Subscribe to [change notifications feed](https://learn.microsoft.com/graph/changenotifications-for-callrecords) and receive notifications containing call IDs whenever a new call record is created.
-* **List call records**: Get a list of call IDs by requesting it from [List callRecords API](https://learn.microsoft.com/graph/api/callrecords-cloudcommunications-list-callrecords).
+* **Subscribe to notifications**: Subscribe to [change notifications feed](changenotifications-for-callrecords.md) and receive notifications containing call IDs whenever a new call record is created.
+* **List call records**: Get a list of call IDs by requesting it from [List callRecords API](../api-reference/v1.0/api/callrecords-cloudcommunications-list-callrecords.md).
 * **Manual search**: If you are a [Call Analytics](https://learn.microsoft.com/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) customer, you can manually search for a call ID in a user’s history. Note that there is no automated system available to retrieve all call IDs from Call Analytics.
-* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](https://learn.microsoft.com/graph/api/resources/call) API after the call is completed. Note that the `callChainId` may differ from the call ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
+* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](../api-reference/v1.0/resources/call.md) API after the call is completed. Note that the `callChainId` may differ from the call ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
 
 ## When will a call record be available?
 
-A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more details, please refer to the [Latency](https://learn.microsoft.com/graph/api/resources/subscription?#latency) page.
+A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more details, please refer to the [Latency](../api-reference/v1.0/resources/subscription.md#latency) page.
 
 ## How long are call records retained?
 
@@ -55,7 +55,7 @@ There are multiple options to list all participants who attended a call.
 
 ### Option 1: List participants_v2 API
 
-Use the [List participants_v2](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-participants_v2) API to collect the full list of participants for a requested call id.
+Use the [List participants_v2](../api-reference/v1.0/api/callrecords-callrecord-list-participants_v2.md) API to collect the full list of participants for a requested call id.
 
 ### Option 2: callRecords API with expanded participants_v2 property
 
@@ -65,13 +65,13 @@ You can call `GET communications/callRecords/{id}?$expand=participants_v2` to re
 
 To see all participants, implement a custom solution to build the participants list from the call records data:
 
-1. Call [Get callRecord](https://learn.microsoft.com/graph/api/callrecords-callrecord-get) API with expanded sessions endpoint: `GET /communications/callRecords/{id}?$expand=sessions`
+1. Call [Get callRecord](../api-reference/v1.0/api/callrecords-callrecord-get.md) API with expanded sessions endpoint: `GET /communications/callRecords/{id}?$expand=sessions`
 2. Read `caller` property from each session on the received `sessions` list
-3. Build your custom participants list based on the `caller` endpoint [identity](https://learn.microsoft.com/graph/api/resources/identity) collecting `id`, `displayName`, and other properties you require to gather for a participant
+3. Build your custom participants list based on the `caller` endpoint [identity](../api-reference/v1.0/resources/identity.md) collecting `id`, `displayName`, and other properties you require to gather for a participant
 
 ## Why don't I see all participants who attended a call while calling list participants_v2 API?
 
-You might not see all participants because the [List participants_v2](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-participants_v2) API supports pagination, limiting the number of participants in the response to 60 per page. If there were more than 60 users on the call, the first call record response will contain 60 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, indicating that there are no more participants to retrieve.
+You might not see all participants because the [List participants_v2](../api-reference/v1.0/api/callrecords-callrecord-list-participants_v2.md) API supports pagination, limiting the number of participants in the response to 60 per page. If there were more than 60 users on the call, the first call record response will contain 60 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, indicating that there are no more participants to retrieve.
 
 ## Why do I receive a 404 Not Found error?
 
