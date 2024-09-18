@@ -157,7 +157,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Directory.Write.Restricted",
           "ChangeType": "Deletion",
-          "Description": "Removal of the previously deprecated *Directory.Write.Restricted* permission on the [device](https://learn.microsoft.com/en-us/graph/api/resources/device) resource.",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [device](https://learn.microsoft.com/en-us/graph/api/resources/device) resource.",
           "Target": "device"
         },
 	      {
@@ -165,7 +165,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Directory.Write.Restricted",
           "ChangeType": "Deletion",
-          "Description": "Removal of the previously deprecated *Directory.Write.Restricted* permission on the [group](https://learn.microsoft.com/en-us/graph/api/resources/group) resource.",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [group](https://learn.microsoft.com/en-us/graph/api/resources/group) resource.",
           "Target": "group"
         },
         {
@@ -173,7 +173,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Directory.Write.Restricted",
           "ChangeType": "Deletion",
-          "Description": "Removal of the previously deprecated *Directory.Write.Restricted* permission on the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
           "Target": "user"
         }
       ],
