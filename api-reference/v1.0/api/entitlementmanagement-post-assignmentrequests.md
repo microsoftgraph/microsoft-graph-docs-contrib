@@ -48,9 +48,9 @@ For an administrator to request to update an assignment (for example to extend t
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `adminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or to renew an assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to update their own assignments, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to update their own assignment, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being updated. The **schedule** property contains the updated schedule.
 
 ## Response
 
@@ -593,7 +593,6 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
-    "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
     "requestType": "adminUpdate",
     "answers": [
         {
