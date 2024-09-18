@@ -1,6 +1,6 @@
 ---
 title: "documentation resource type"
-description: "Returns a key-value pair that contains the name of documentation to aid in investigating the alert and a link to the documentation."
+description: "Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
