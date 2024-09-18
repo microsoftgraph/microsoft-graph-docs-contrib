@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object. This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -56,7 +56,7 @@ For a non-administrator user to request to update their own assignment, the valu
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-If this is an `adminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
+If this request is an `adminAdd` or `userAdd` request, then after any approval checks an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
 
 ## Examples
 
@@ -823,5 +823,74 @@ Content-type: application/json
     },
     "answers": [],
     "customExtensionCalloutInstances": []
+}
+```
+
+### Example 8: Update the answers and expiration date for an access package assignment
+
+The following example shows how a user can update their answers and the expiration date for their access package assignment.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_expiration_answers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "userUpdate",
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "My updated answer.",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "0d31cc60-968e-4f92-955b-443fed03d6f6"
+            }
+        }
+
+    ],
+    "schedule": {
+        "startDateTime": "2024-09-18T20:49:16.17Z",
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": "2024-10-18T20:49:15.17Z",
+            "duration": null,
+            "type": "afterDateTime"
+        }
+    },
+    "assignment": {
+        "id": "329f8dac-8062-4c1b-a9b8-39b7132f9bff"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "e0f8458c-7681-42ad-a0b5-0c9587c4dad8",
+    "requestType": "userUpdate",
+    "state": "submitted",
+    "status": "Accepted"
 }
 ```
