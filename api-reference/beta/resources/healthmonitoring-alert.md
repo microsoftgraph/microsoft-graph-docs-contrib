@@ -1,6 +1,6 @@
 ---
 title: "alert resource type"
-description: "Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams, available from serviceActivity APIs, and surfaces these patterns in the form of alerts."
+description: "Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
