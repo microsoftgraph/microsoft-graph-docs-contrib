@@ -1,6 +1,6 @@
 ---
 title: "supportingData resource type"
-description: "Represents a collection of supportingData locations that can be queried for debugging the alert."
+description: "Represents a collection of supporting data locations that can be queried for debugging an alert in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
