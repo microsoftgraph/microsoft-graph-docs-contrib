@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.device_management.alert_rule import AlertRule
 from msgraph_beta.generated.models.rule_severity_type import RuleSeverityType
@@ -17,7 +16,9 @@ from msgraph_beta.generated.models.condition_category import ConditionCategory
 from msgraph_beta.generated.models.device_management.notification_channel import NotificationChannel
 from msgraph_beta.generated.models.notification_channel_type import NotificationChannelType
 from msgraph_beta.generated.models.device_management.notification_receiver import NotificationReceiver
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AlertRule(
 	severity = RuleSeverityType.Informational,
 	enabled = True,

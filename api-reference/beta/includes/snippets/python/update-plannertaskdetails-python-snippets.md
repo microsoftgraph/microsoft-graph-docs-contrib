@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.planner.tasks.item.details.details_request_builder import DetailsRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -14,7 +13,9 @@ from msgraph_beta.generated.models.planner_external_references import PlannerExt
 from msgraph_beta.generated.models.planner_external_reference import PlannerExternalReference
 from msgraph_beta.generated.models.planner_checklist_items import PlannerChecklistItems
 from msgraph_beta.generated.models.planner_checklist_item import PlannerChecklistItem
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = PlannerTaskDetails(
 	preview_type = PlannerPreviewType.NoPreview,
 	references = PlannerExternalReferences(

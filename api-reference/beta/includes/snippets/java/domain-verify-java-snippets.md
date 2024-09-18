@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-var result = graphClient.domains().byDomainId("{domain-id}").verify().post(null);
+var result = graphClient.domains().byDomainId("{domain-id}").verify().post();
 
 
 ```

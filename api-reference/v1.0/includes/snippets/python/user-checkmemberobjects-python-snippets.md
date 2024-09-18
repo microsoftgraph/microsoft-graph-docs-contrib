@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.check_member_objects.check_member_objects_post_request_body import CheckMemberObjectsPostRequestBody
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = CheckMemberObjectsPostRequestBody(
 	ids = [
 		"80a963dd-84af-4eb8-b2a6-781e444d4fb0",

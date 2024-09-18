@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
 from msgraph_beta.generated.models.access_review_query_scope import AccessReviewQueryScope
@@ -19,7 +18,9 @@ from msgraph_beta.generated.models.access_review_recommendation_insight_setting 
 from msgraph_beta.generated.models.user_last_sign_in_recommendation_insight_setting import UserLastSignInRecommendationInsightSetting
 from msgraph_beta.generated.models.user_sign_in_recommendation_scope import UserSignInRecommendationScope
 from msgraph_beta.generated.models.group_peer_outlier_recommendation_insight_settings import GroupPeerOutlierRecommendationInsightSettings
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Test create",
 	description_for_admins = "New scheduled access review",

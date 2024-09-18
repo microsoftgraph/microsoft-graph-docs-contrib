@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.learning_assignment import LearningAssignment
 from msgraph.generated.models.assignment_type import AssignmentType
@@ -12,7 +11,9 @@ from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.course_status import CourseStatus
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = LearningAssignment(
 	odata_type = "#microsoft.graph.learningAssignment",
 	assigned_date_time = "2021-05-11T22:57:17+00:00",

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.windows_updates.content_approval import ContentApproval
 from msgraph_beta.generated.models.windows_updates.catalog_content import CatalogContent
 from msgraph_beta.generated.models.windows_updates.feature_update_catalog_entry import FeatureUpdateCatalogEntry
 from msgraph_beta.generated.models.windows_updates.deployment_settings import DeploymentSettings
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ContentApproval(
 	odata_type = "#microsoft.graph.windowsUpdates.contentApproval",
 	content = CatalogContent(

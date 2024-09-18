@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.cloud_pc_provisioning_policy import CloudPcProvisioningPolicy
 from msgraph.generated.models.cloud_pc_domain_join_configuration import CloudPcDomainJoinConfiguration
@@ -12,7 +11,9 @@ from msgraph.generated.models.cloud_pc_domain_join_type import CloudPcDomainJoin
 from msgraph.generated.models.cloud_pc_provisioning_policy_image_type import CloudPcProvisioningPolicyImageType
 from msgraph.generated.models.cloud_pc_windows_setting import CloudPcWindowsSetting
 from msgraph.generated.models.cloud_pc_provisioning_type import CloudPcProvisioningType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
 	description = "Description value",

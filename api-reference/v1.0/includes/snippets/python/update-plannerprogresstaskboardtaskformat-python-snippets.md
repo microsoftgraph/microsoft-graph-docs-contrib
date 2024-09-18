@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.planner.tasks.item.progress_task_board_format.progress_task_board_format_request_builder import ProgressTaskBoardFormatRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.planner_progress_task_board_task_format import PlannerProgressTaskBoardTaskFormat
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = PlannerProgressTaskBoardTaskFormat(
 	order_hint = "A6673H Ejkl!",
 )

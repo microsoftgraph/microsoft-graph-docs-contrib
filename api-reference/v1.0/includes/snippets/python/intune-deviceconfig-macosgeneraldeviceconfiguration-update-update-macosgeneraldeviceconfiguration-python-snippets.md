@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.mac_o_s_general_device_configuration import MacOSGeneralDeviceConfiguration
 from msgraph.generated.models.app_list_item import AppListItem
 from msgraph.generated.models.app_list_type import AppListType
 from msgraph.generated.models.required_password_type import RequiredPasswordType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = MacOSGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.macOSGeneralDeviceConfiguration",
 	description = "Description value",

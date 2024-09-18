@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.app_log_collection_request import AppLogCollectionRequest
 from msgraph.generated.models.app_log_upload_state import AppLogUploadState
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AppLogCollectionRequest(
 	odata_type = "#microsoft.graph.appLogCollectionRequest",
 	status = AppLogUploadState.Completed,

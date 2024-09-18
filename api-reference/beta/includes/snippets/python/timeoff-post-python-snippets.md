@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.time_off import TimeOff
 from msgraph_beta.generated.models.time_off_item import TimeOffItem
 from msgraph_beta.generated.models.schedule_entity_theme import ScheduleEntityTheme
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = TimeOff(
 	user_id = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
 	shared_time_off = TimeOffItem(

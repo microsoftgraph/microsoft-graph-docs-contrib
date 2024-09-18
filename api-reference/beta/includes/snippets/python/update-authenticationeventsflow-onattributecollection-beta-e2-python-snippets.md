@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.external_users_self_service_sign_up_events_flow import ExternalUsersSelfServiceSignUpEventsFlow
 from msgraph_beta.generated.models.on_attribute_collection_external_users_self_service_sign_up import OnAttributeCollectionExternalUsersSelfServiceSignUp
@@ -13,7 +12,9 @@ from msgraph_beta.generated.models.authentication_attribute_collection_page_view
 from msgraph_beta.generated.models.authentication_attribute_collection_input_configuration import AuthenticationAttributeCollectionInputConfiguration
 from msgraph_beta.generated.models.authentication_attribute_collection_input_type import AuthenticationAttributeCollectionInputType
 from msgraph_beta.generated.models.authentication_attribute_collection_option_configuration import AuthenticationAttributeCollectionOptionConfiguration
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 	odata_type = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
 	on_attribute_collection = OnAttributeCollectionExternalUsersSelfServiceSignUp(

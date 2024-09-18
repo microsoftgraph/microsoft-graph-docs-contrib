@@ -30,7 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /security/attackSimulation/payloads/{payloadId}
-GET /security/attackSimulation/simulations/{simulationId}/payload
 ```
 
 ## Optional query parameters

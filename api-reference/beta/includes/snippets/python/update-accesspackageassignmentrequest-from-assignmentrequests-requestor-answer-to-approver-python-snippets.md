@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
 from msgraph_beta.generated.models.access_package_answer import AccessPackageAnswer
 from msgraph_beta.generated.models.access_package_answer_string import AccessPackageAnswerString
 from msgraph_beta.generated.models.access_package_multiple_choice_question import AccessPackageMultipleChoiceQuestion
 from msgraph_beta.generated.models.access_package_text_input_question import AccessPackageTextInputQuestion
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
 	id = "7a6ab703-0780-4b37-8445-81f679b2d75c",

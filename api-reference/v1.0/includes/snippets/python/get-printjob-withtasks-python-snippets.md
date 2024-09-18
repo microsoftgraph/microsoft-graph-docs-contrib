@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.print.printers.item.jobs.item.print_job_item_request_builder import PrintJobItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 query_params = PrintJobItemRequestBuilder.PrintJobItemRequestBuilderGetQueryParameters(
 		expand = ["tasks"],
 )

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.identity_user_flow_attribute_assignment import IdentityUserFlowAttributeAssignment
 from msgraph.generated.models.identity_user_flow_attribute_input_type import IdentityUserFlowAttributeInputType
 from msgraph.generated.models.user_attribute_values_item import UserAttributeValuesItem
 from msgraph.generated.models.identity_user_flow_attribute import IdentityUserFlowAttribute
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = IdentityUserFlowAttributeAssignment(
 	is_optional = False,
 	requires_verification = False,

@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows81_compliance_policy import Windows81CompliancePolicy
 from msgraph.generated.models.required_password_type import RequiredPasswordType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Windows81CompliancePolicy(
 	odata_type = "#microsoft.graph.windows81CompliancePolicy",
 	description = "Description value",

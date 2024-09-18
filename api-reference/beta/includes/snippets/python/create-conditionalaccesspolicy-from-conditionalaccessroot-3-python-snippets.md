@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.conditional_access_policy import ConditionalAccessPolicy
 from msgraph_beta.generated.models.conditional_access_policy_state import ConditionalAccessPolicyState
@@ -24,7 +23,9 @@ from msgraph_beta.generated.models.cloud_app_security_session_control import Clo
 from msgraph_beta.generated.models.cloud_app_security_session_control_type import CloudAppSecuritySessionControlType
 from msgraph_beta.generated.models.sign_in_frequency_session_control import SignInFrequencySessionControl
 from msgraph_beta.generated.models.signin_frequency_type import SigninFrequencyType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ConditionalAccessPolicy(
 	display_name = "Demo app for documentation",
 	state = ConditionalAccessPolicyState.Disabled,

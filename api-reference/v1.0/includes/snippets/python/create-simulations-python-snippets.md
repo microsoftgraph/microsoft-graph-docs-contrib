@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.simulation import Simulation
 from msgraph.generated.models.email_identity import EmailIdentity
@@ -19,7 +18,9 @@ from msgraph.generated.models.end_user_notification_preference import EndUserNot
 from msgraph.generated.models.end_user_notification_setting_type import EndUserNotificationSettingType
 from msgraph.generated.models.positive_reinforcement_notification import PositiveReinforcementNotification
 from msgraph.generated.models.notification_delivery_preference import NotificationDeliveryPreference
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Simulation(
 	display_name = "Graph Simulation",
 	created_by = EmailIdentity(

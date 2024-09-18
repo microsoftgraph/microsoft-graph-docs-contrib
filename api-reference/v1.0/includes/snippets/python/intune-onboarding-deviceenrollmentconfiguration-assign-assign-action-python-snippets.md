@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.devicemanagement.deviceenrollmentconfigurations.item.assign.assign_post_request_body import AssignPostRequestBody
 from msgraph.generated.models.enrollment_configuration_assignment import EnrollmentConfigurationAssignment
 from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AssignPostRequestBody(
 	enrollment_configuration_assignments = [
 		EnrollmentConfigurationAssignment(

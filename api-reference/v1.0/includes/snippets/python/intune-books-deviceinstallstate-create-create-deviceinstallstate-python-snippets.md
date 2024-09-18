@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_install_state import DeviceInstallState
 from msgraph.generated.models.install_state import InstallState
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = DeviceInstallState(
 	odata_type = "#microsoft.graph.deviceInstallState",
 	device_name = "Device Name value",

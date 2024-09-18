@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.schedule import Schedule
 from msgraph_beta.generated.models.operation_status import OperationStatus
 from msgraph_beta.generated.models.day_of_week import DayOfWeek
 from msgraph_beta.generated.models.time_clock_settings import TimeClockSettings
 from msgraph_beta.generated.models.geo_coordinates import GeoCoordinates
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Schedule(
 	enabled = True,
 	time_zone = "America/Chicago",

@@ -126,8 +126,6 @@ items:
       items:
       - name: Call
         href: ../../resources/call.md
-      - name: Create
-        href: ../../api/application-post-calls.md
       - name: Get
         href: ../../api/call-get.md
       - name: Delete/hang up

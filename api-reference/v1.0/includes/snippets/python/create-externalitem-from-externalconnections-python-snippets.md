@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.external_connectors.external_item import ExternalItem
 from msgraph.generated.models.external_connectors.acl import Acl
@@ -13,7 +12,9 @@ from msgraph.generated.models.access_type import AccessType
 from msgraph.generated.models.external_connectors.properties import Properties
 from msgraph.generated.models.external_connectors.external_item_content import ExternalItemContent
 from msgraph.generated.models.external_item_content_type import ExternalItemContentType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ExternalItem(
 	acl = [
 		Acl(

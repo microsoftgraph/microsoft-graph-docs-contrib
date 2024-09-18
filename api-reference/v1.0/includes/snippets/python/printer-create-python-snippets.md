@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.print.printers.create.create_post_request_body import CreatePostRequestBody
 from msgraph.generated.models.print_certificate_signing_request import PrintCertificateSigningRequest
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = CreatePostRequestBody(
 	display_name = "Test Printer",
 	manufacturer = "Test Printer Manufacturer",

@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.virtual_event_registration import VirtualEventRegistration
 from msgraph_beta.generated.models.virtual_event_registration_question_answer import VirtualEventRegistrationQuestionAnswer
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = VirtualEventRegistration(
 	preferred_timezone = "Pacific Standard Time",
 	preferred_language = "en-us",

@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ios_device_features_configuration import IosDeviceFeaturesConfiguration
 from msgraph.generated.models.ios_home_screen_item import IosHomeScreenItem
@@ -14,7 +13,9 @@ from msgraph.generated.models.ios_home_screen_app import IosHomeScreenApp
 from msgraph.generated.models.ios_home_screen_page import IosHomeScreenPage
 from msgraph.generated.models.ios_notification_settings import IosNotificationSettings
 from msgraph.generated.models.ios_notification_alert_type import IosNotificationAlertType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = IosDeviceFeaturesConfiguration(
 	odata_type = "#microsoft.graph.iosDeviceFeaturesConfiguration",
 	description = "Description value",

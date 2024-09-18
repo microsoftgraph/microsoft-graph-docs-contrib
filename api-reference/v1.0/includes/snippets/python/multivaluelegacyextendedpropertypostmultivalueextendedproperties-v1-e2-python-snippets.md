@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.message import Message
 from msgraph.generated.models.multi_value_legacy_extended_property import MultiValueLegacyExtendedProperty
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Message(
 	multi_value_extended_properties = [
 		MultiValueLegacyExtendedProperty(

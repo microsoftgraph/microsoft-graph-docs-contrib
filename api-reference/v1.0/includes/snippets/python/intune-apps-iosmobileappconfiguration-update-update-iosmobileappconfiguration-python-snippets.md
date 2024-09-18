@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ios_mobile_app_configuration import IosMobileAppConfiguration
 from msgraph.generated.models.app_configuration_setting_item import AppConfigurationSettingItem
 from msgraph.generated.models.mdm_app_config_key_type import MdmAppConfigKeyType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = IosMobileAppConfiguration(
 	odata_type = "#microsoft.graph.iosMobileAppConfiguration",
 	targeted_mobile_apps = [

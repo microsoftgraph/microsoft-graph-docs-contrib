@@ -707,7 +707,6 @@ Content-Type: application/json
                 {
                     "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
                     "authorization": {
-                        "clientAppId": "6ed63604-0ba7-4a28-bb3a-dda03ea18d54",
                         "requiredPermissionSet": {
                             "resourceSpecificPermissions": [
                                 {
@@ -823,7 +822,6 @@ Content-Type: application/json
           "serializedInternalDefinition": null,
           "createdBy": null,
           "authorization": {
-            "clientAppId": null,
             "requiredPermissionSet": {
               "resourceSpecificPermissions": []
             }
@@ -890,7 +888,6 @@ Content-Type: application/json
           "serializedInternalDefinition": null,
           "createdBy": null,
           "authorization": {
-            "clientAppId": null,
             "requiredPermissionSet": {
               "resourceSpecificPermissions": []
             }

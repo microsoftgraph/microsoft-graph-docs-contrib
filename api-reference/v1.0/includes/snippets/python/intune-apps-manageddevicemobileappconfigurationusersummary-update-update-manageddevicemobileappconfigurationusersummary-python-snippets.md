@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.managed_device_mobile_app_configuration_user_summary import ManagedDeviceMobileAppConfigurationUserSummary
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ManagedDeviceMobileAppConfigurationUserSummary(
 	odata_type = "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",
 	pending_count = 12,

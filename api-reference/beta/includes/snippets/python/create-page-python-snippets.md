@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.site_page import SitePage
 from msgraph_beta.generated.models.page_layout_type import PageLayoutType
@@ -17,7 +16,9 @@ from msgraph_beta.generated.models.horizontal_section_layout_type import Horizon
 from msgraph_beta.generated.models.section_emphasis_type import SectionEmphasisType
 from msgraph_beta.generated.models.horizontal_section_column import HorizontalSectionColumn
 from msgraph_beta.generated.models.web_part import WebPart
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = SitePage(
 	odata_type = "#microsoft.graph.sitePage",
 	name = "test.aspx",

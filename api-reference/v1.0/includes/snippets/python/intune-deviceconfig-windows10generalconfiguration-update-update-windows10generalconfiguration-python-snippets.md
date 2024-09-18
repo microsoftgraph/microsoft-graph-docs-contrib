@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows10_general_configuration import Windows10GeneralConfiguration
 from msgraph.generated.models.diagnostic_data_submission_mode import DiagnosticDataSubmissionMode
@@ -25,7 +24,9 @@ from msgraph.generated.models.windows_spotlight_enablement_settings import Windo
 from msgraph.generated.models.windows10_network_proxy_server import Windows10NetworkProxyServer
 from msgraph.generated.models.safe_search_filter_type import SafeSearchFilterType
 from msgraph.generated.models.edge_search_engine_base import EdgeSearchEngineBase
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Windows10GeneralConfiguration(
 	odata_type = "#microsoft.graph.windows10GeneralConfiguration",
 	description = "Description value",

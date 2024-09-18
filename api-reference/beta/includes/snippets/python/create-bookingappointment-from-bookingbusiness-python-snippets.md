@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.booking_appointment import BookingAppointment
 from msgraph_beta.generated.models.location import Location
@@ -20,7 +19,9 @@ from msgraph_beta.generated.models.physical_address_type import PhysicalAddressT
 from msgraph_beta.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
 from msgraph_beta.generated.models.booking_question_answer import BookingQuestionAnswer
 from msgraph_beta.generated.models.answer_input_type import AnswerInputType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = BookingAppointment(
 	odata_type = "#microsoft.graph.bookingAppointment",
 	customer_email_address = "jordanm@contoso.com",

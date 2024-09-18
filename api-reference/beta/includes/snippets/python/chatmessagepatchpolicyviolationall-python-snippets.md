@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.chat_message_policy_violation import ChatMessagePolicyViolation
 from msgraph_beta.generated.models.chat_message_policy_violation_policy_tip import ChatMessagePolicyViolationPolicyTip
 from msgraph_beta.generated.models.chat_message_policy_violation_verdict_details_types import ChatMessagePolicyViolationVerdictDetailsTypes
 from msgraph_beta.generated.models.chat_message_policy_violation_dlp_action_types import ChatMessagePolicyViolationDlpActionTypes
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ChatMessage(
 	policy_violation = ChatMessagePolicyViolation(
 		policy_tip = ChatMessagePolicyViolationPolicyTip(

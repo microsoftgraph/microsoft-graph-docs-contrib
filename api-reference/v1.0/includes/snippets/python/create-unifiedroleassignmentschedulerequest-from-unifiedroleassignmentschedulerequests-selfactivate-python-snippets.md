@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.unified_role_assignment_schedule_request import UnifiedRoleAssignmentScheduleRequest
 from msgraph.generated.models.unified_role_schedule_request_actions import UnifiedRoleScheduleRequestActions
@@ -12,7 +11,9 @@ from msgraph.generated.models.request_schedule import RequestSchedule
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
 from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 from msgraph.generated.models.ticket_info import TicketInfo
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = UnifiedRoleAssignmentScheduleRequest(
 	action = UnifiedRoleScheduleRequestActions.SelfActivate,
 	principal_id = "071cc716-8147-4397-a5ba-b2105951cc0b",

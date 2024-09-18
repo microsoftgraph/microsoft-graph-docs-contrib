@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.find_meeting_times.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -18,7 +17,9 @@ from msgraph.generated.models.time_constraint import TimeConstraint
 from msgraph.generated.models.activity_domain import ActivityDomain
 from msgraph.generated.models.time_slot import TimeSlot
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = FindMeetingTimesPostRequestBody(
 	attendees = [
 		AttendeeBase(

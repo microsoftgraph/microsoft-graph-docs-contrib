@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.print_job import PrintJob
 from msgraph_beta.generated.models.print_job_configuration import PrintJobConfiguration
@@ -17,7 +16,9 @@ from msgraph_beta.generated.models.print_color_mode import PrintColorMode
 from msgraph_beta.generated.models.print_margin import PrintMargin
 from msgraph_beta.generated.models.print_multipage_layout import PrintMultipageLayout
 from msgraph_beta.generated.models.print_scaling import PrintScaling
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = PrintJob(
 	display_name = "testjob",
 	configuration = PrintJobConfiguration(

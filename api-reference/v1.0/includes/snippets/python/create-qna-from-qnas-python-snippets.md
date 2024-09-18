@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.search.qna import Qna
 from msgraph.generated.models.search.answer_keyword import AnswerKeyword
 from msgraph.generated.models.device_platform_type import DevicePlatformType
 from msgraph.generated.models.answer_state import AnswerState
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Qna(
 	display_name = "Global Country Holidays",
 	web_url = "http://www.contoso.com/",

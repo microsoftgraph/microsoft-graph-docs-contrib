@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_universal_app_x import WindowsUniversalAppX
 from msgraph.generated.models.mime_content import MimeContent
@@ -12,7 +11,9 @@ from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublis
 from msgraph.generated.models.windows_architecture import WindowsArchitecture
 from msgraph.generated.models.windows_device_type import WindowsDeviceType
 from msgraph.generated.models.windows_minimum_operating_system import WindowsMinimumOperatingSystem
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = WindowsUniversalAppX(
 	odata_type = "#microsoft.graph.windowsUniversalAppX",
 	display_name = "Display Name value",

@@ -42,8 +42,6 @@ Microsoft Graph offers four types of extensions for adding custom data.
 
 Microsoft Entra ID offers a set of 15 extension attributes with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Microsoft Entra ID through Microsoft Graph.
 
-For more information about these attributes in Microsoft Exchange, see [Custom attributes in Exchange Server](/exchange/recipients/mailbox-custom-attributes).
-
 ### Developer experience
 
 You can use the 15 extension attributes to store String values on **user** or **device** resource instances, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. You can assign the values while creating a new resource instance or while updating an existing resource instance. You can also filter by the values.

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.delegated_admin_relationship import DelegatedAdminRelationship
 from msgraph.generated.models.delegated_admin_relationship_customer_participant import DelegatedAdminRelationshipCustomerParticipant
 from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
 from msgraph.generated.models.unified_role import UnifiedRole
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = DelegatedAdminRelationship(
 	display_name = "Contoso admin relationship",
 	duration = "P730D",

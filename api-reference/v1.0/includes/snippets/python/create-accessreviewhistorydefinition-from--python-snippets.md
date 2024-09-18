@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_review_history_definition import AccessReviewHistoryDefinition
 from msgraph.generated.models.access_review_history_decision_filter import AccessReviewHistoryDecisionFilter
 from msgraph.generated.models.access_review_scope import AccessReviewScope
 from msgraph.generated.models.access_review_query_scope import AccessReviewQueryScope
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AccessReviewHistoryDefinition(
 	display_name = "Last quarter's group reviews April 2021",
 	decisions = [

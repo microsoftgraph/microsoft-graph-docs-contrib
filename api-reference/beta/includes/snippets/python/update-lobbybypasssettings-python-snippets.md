@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.online_meeting import OnlineMeeting
 from msgraph_beta.generated.models.lobby_bypass_settings import LobbyBypassSettings
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = OnlineMeeting(
 	lobby_bypass_settings = LobbyBypassSettings(
 		is_dial_in_bypass_enabled = True,

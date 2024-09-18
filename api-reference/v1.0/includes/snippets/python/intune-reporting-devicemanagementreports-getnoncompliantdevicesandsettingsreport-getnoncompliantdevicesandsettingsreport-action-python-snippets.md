@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.devicemanagement.reports.get_noncompliant_devices_and_settings_report.get_noncompliant_devices_and_settings_report_post_request_body import GetNoncompliantDevicesAndSettingsReportPostRequestBody
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = GetNoncompliantDevicesAndSettingsReportPostRequestBody(
 	name = "Name value",
 	select = [

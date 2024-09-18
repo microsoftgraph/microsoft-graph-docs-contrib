@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.fido2_combination_configuration import Fido2CombinationConfiguration
 from msgraph.generated.models.authentication_method_modes import AuthenticationMethodModes
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Fido2CombinationConfiguration(
 	odata_type = "#microsoft.graph.fido2CombinationConfiguration",
 	allowed_a_a_g_u_i_ds = [

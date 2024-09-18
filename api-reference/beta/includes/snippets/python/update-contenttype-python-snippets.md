@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.content_type import ContentType
 from msgraph_beta.generated.models.document_set import DocumentSet
 from msgraph_beta.generated.models.content_type_info import ContentTypeInfo
 from msgraph_beta.generated.models.document_set_content import DocumentSetContent
 from msgraph_beta.generated.models.column_definition import ColumnDefinition
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ContentType(
 	name = "updatedCt",
 	document_set = DocumentSet(

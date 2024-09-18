@@ -1,32 +1,32 @@
 ---
-title: "Get change notifications for app installation using Microsoft Graph"
-description: "Learn how to get notifications for app installation using Microsoft Graph APIs."
+title: "Get change notifications for Teams app installations"
+description: "Learn how to get change notifications for Teams app installations by using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for app installation using Microsoft Graph
+# Get change notifications for Teams app installations
 
-Teams app installation change notifications allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, upgraded, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope). For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
+Change notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope).
 
-Continue with this article to learn more about receiving notifications for Teams apps in **personal**, **team**, or **chat** scopes. Or, learn about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+This article describes how to subscribe to change notifications for Teams apps in personal, team, or chat scopes by using Microsoft Graph APIs.
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: "lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour."
 
 ## Subscribe to Teams app installations
 
 To get change notifications for Teams app installations, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations`.
 
-### Permissions
+## Permissions
 
-Permissions are required to receive notifications, and the permissions required depend on the scope of the subscription. For more information on available permissions, see [Permissions](/graph/permissions-reference).
+Permissions are required to receive notifications, and the permissions required depend on the scope of the subscription. For more information, see [Permissions reference](/graph/permissions-reference).
 
-#### Personal scope
+### Personal scope
 
-To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
+To get change notifications for Teams app installations in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -34,9 +34,9 @@ To get change notifications for Teams app installation in personal scope, subscr
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.Read.All|
 
-#### Team scope
+### Team scope
 
-To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
+To get change notifications for Teams app installations in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -44,9 +44,9 @@ To get change notifications for Teams app installation in team scope, subscribe 
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.Read.All|
 
-#### Chat scope
+### Chat scope
 
-To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
+To get change notifications for Teams app installations in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -57,9 +57,9 @@ To get change notifications for Teams app installation in chat scope, subscribe 
 > [!NOTE]
 > Notifications for update events that occur in the chat scope might not be delivered. This is a known limitation.
 
-#### All scopes
+### All scopes
 
-To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
+To get change notifications for Teams app installations in all scopes, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions.
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -67,27 +67,27 @@ To get change notifications for Teams app installation in all scope, subscribe t
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.Read.All |
 
-#### RSC permissions
+### RSC permissions
 
-You can also create subscriptions using resource-specific consent (RSC) permissions. For more information on the available RSC permissions, see [RSC permissions](/graph/permissions-reference#resource-specific-consent-rsc-permissions).
+You can also create subscriptions using resource-specific consent (RSC) permissions. For more information, see [RSC permissions](/graph/permissions-reference#resource-specific-consent-rsc-permissions).
 
 > [!NOTE]
 > If you use RSC permissions, deletion events that occur in personal, team, and chat scopes will not be delivered.
 
-The following are the supported RSC permissions with one permission for each scope:
+The following are the supported RSC permissions:
 
-* `TeamsAppInstallation.Read.User` permission is required to receive events in personal scope.
-* `TeamsAppInstallation.Read.Group` permission is required to receive events in team scope.
-* `TeamsAppInstallation.Read.Chat` permission is required to receive events in chat scope.
+* `TeamsAppInstallation.Read.User` is required to receive events in personal scope.
+* `TeamsAppInstallation.Read.Group` is required to receive events in team scope.
+* `TeamsAppInstallation.Read.Chat` is required to receive events in chat scope.
 
-To subscribe using RSC permissions, append query parameter `useResourceSpecificConsentBasedAuthorization` to the subscription resource. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter either alongside the `$filter` query parameter or on its own.
+To subscribe using RSC permissions, append the `useResourceSpecificConsentBasedAuthorization` query parameter to the subscription resource. Unless otherwise specified, the default value for this query parameter is `false`. You can use this parameter with the `$filter` query parameter or on its own.
 
 > [!NOTE]
-> If RSC permissions are in use, application permissions aren't required.
+> If you use RSC permissions, application permissions aren't required.
 
-### Examples
+## Examples
 
-The following example shows how to subscribe for Teams app installation notifications in all scopes:
+The following example shows how to subscribe to Teams app installation notifications in all scopes.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -104,11 +104,12 @@ Content-Type: application/json
 }
 ```
 
-To subscribe for a specific scope, you must declare the scope `$filter` query parameter while you create the subscription. You can do this by adding it to the subscription resource:
+To subscribe for a specific scope, you must declare the scope `$filter` query parameter when you create the subscription. You can do this by adding it to the subscription resource, as shown.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
+
 { 
   "changeType": "created,updated,deleted", 
   "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'groupChat') ", 
@@ -122,13 +123,14 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for `groupChat`, it is mandatory to have at least one permission from the chat scope.
+> Make sure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for `groupChat`, you must have at least one permission from the chat scope.
 
-To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
+To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter when you create the subscription, as shown.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
+
 { 
   "changeType": "created,updated,deleted", 
   "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')", 
@@ -142,13 +144,14 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both `personal` and `team` scopes, it is mandatory to have at least one permission from each scope.
+> Make sure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, you must have at least one permission from each scope.
 
-**To create a subscription using RSC with the `$filter` parameter:**
+The following example shows how to create a subscription using RSC permissions with the `$filter` parameter.
 
 ```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
+
 { 
   "changeType": "created,updated,deleted", 
   "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal')&useResourceSpecificConsentBasedAuthorization=true", 
@@ -164,11 +167,12 @@ Content-Type: application/json
 > [!NOTE]
 > Notifications are delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted. For example, if RSC permission is granted for user A but not for user B, the notifications are sent only for the Teams app installation events within user A's personal scope.
 
-**To create a subscription using RSC without the `$filter` parameter:**
+The following example shows how to create a subscription using RSC without the `$filter` parameter.
 
 ```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
+
 { 
   "changeType": "created,updated,deleted", 
   "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?useResourceSpecificConsentBasedAuthorization=true", 
@@ -184,7 +188,7 @@ Content-Type: application/json
 > [!NOTE]
 > Notifications are delivered only for the events that occur after the relevant RSC permission is granted and only for the resource where RSC has been granted.
 
-### Notifications with resource data
+## Notifications with resource data
 
 The following example shows a payload of notifications with resource data.
 
@@ -229,6 +233,7 @@ The following example shows a payload of the decrypted notification. The payload
 }
 ```
 
-## See also
+## Related content
 
-[Microsoft Graph change notifications](change-notifications-overview.md)
+- [Change notifications for Microsoft Teams resources](/graph/teams-change-notification-in-microsoft-teams-overview)
+- [Microsoft Graph change notifications](/graph/change-notifications-overview)

@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.sites.item.contenttypes.item.copy_to_default_content_location.copy_to_default_content_location_post_request_body import CopyToDefaultContentLocationPostRequestBody
 from msgraph.generated.models.item_reference import ItemReference
 from msgraph.generated.models.sharepoint_ids import SharepointIds
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = CopyToDefaultContentLocationPostRequestBody(
 	source_file = ItemReference(
 		sharepoint_ids = SharepointIds(

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_management import DeviceManagement
 from msgraph.generated.models.intune_brand import IntuneBrand
 from msgraph.generated.models.rgb_color import RgbColor
 from msgraph.generated.models.mime_content import MimeContent
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = DeviceManagement(
 	odata_type = "#microsoft.graph.deviceManagement",
 	intune_brand = IntuneBrand(

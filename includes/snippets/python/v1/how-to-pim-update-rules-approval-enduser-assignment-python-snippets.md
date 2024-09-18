@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.unified_role_management_policy_approval_rule import UnifiedRoleManagementPolicyApprovalRule
 from msgraph.generated.models.unified_role_management_policy_rule_target import UnifiedRoleManagementPolicyRuleTarget
@@ -14,7 +13,9 @@ from msgraph.generated.models.unified_approval_stage import UnifiedApprovalStage
 from msgraph.generated.models.subject_set import SubjectSet
 from msgraph.generated.models.single_user import SingleUser
 from msgraph.generated.models.group_members import GroupMembers
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = UnifiedRoleManagementPolicyApprovalRule(
 	odata_type = "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
 	id = "Approval_EndUser_Assignment",

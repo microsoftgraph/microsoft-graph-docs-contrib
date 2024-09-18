@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoft_graph_security_export.export_post_request_body import ExportPostRequestBody
 from msgraph.generated.models.export_options import ExportOptions
 from msgraph.generated.models.export_file_structure import ExportFileStructure
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = ExportPostRequestBody(
 	output_name = "Export reviewset query via API",
 	description = "Export for the Contoso investigation 2",

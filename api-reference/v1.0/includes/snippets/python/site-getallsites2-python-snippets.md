@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.sites.get_all_sites.get_all_sites_request_builder import GetAllSitesRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 query_params = GetAllSitesRequestBuilder.GetAllSitesRequestBuilderGetQueryParameters(
 		skiptoken = "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ",
 )

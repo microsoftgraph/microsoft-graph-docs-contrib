@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.identity_governance.workflow import Workflow
 from msgraph.generated.models.lifecycle_workflow_category import LifecycleWorkflowCategory
 from msgraph.generated.models.identity_governance.on_demand_execution_only import OnDemandExecutionOnly
 from msgraph.generated.models.identity_governance.task import Task
 from msgraph.generated.models.key_value_pair import KeyValuePair
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Workflow(
 	category = LifecycleWorkflowCategory.Leaver,
 	display_name = "Real-time employee termination",

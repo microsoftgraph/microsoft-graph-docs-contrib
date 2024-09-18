@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.communications.calls.log_teleconference_device_quality.log_teleconference_device_quality_post_request_body import LogTeleconferenceDeviceQualityPostRequestBody
 from msgraph.generated.models.teleconference_device_quality import TeleconferenceDeviceQuality
@@ -12,7 +11,9 @@ from msgraph.generated.models.teleconference_device_media_quality import Telecon
 from msgraph.generated.models.teleconference_device_audio_quality import TeleconferenceDeviceAudioQuality
 from msgraph.generated.models.teleconference_device_video_quality import TeleconferenceDeviceVideoQuality
 from msgraph.generated.models.teleconference_device_screen_sharing_quality import TeleconferenceDeviceScreenSharingQuality
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 	quality = TeleconferenceDeviceQuality(
 		odata_type = "#microsoft.graph.teleconferenceDeviceQuality",

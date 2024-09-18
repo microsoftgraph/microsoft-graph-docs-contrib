@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.identity.custom_authentication_extensions.custom_authentication_extensions_request_builder import CustomAuthenticationExtensionsRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 query_params = CustomAuthenticationExtensionsRequestBuilder.CustomAuthenticationExtensionsRequestBuilderGetQueryParameters(
 		filter = "isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')",
 )

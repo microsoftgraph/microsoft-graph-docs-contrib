@@ -61,9 +61,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If the caller provided a password in the request body, this method returns a `202 Accepted` response code and no response body. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
+If successful, this method returns a `202 Accepted` response code and a **Location** header with a URL to check the status of the reset operation.
 
-If the caller used the system-generated password option, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) object in the response body which contains a Microsoft-generated password. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
+If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
 ### Response headers
 
@@ -137,7 +137,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.entity"
 } -->
 
 ```http
@@ -145,6 +146,7 @@ HTTP/1.1 202 Accepted
 Content-type: application/json
 Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
 
+{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -222,7 +224,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.passwordResetResponse"
+  "@odata.type": "microsoft.graph.entity"
 } -->
 
 ```http

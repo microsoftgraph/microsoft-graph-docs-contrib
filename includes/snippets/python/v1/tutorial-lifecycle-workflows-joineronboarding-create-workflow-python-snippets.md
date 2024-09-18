@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.identity_governance.workflow import Workflow
 from msgraph.generated.models.identity_governance.trigger_and_scope_based_conditions import TriggerAndScopeBasedConditions
@@ -14,7 +13,9 @@ from msgraph.generated.models.workflow_trigger_time_based_attribute import Workf
 from msgraph.generated.models.identity_governance.task import Task
 from msgraph.generated.models.lifecycle_task_category import LifecycleTaskCategory
 from msgraph.generated.models.key_value_pair import KeyValuePair
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Workflow(
 	display_name = "Onboard pre-hire employee",
 	description = "Configure pre-hire tasks for onboarding employees before their first day",

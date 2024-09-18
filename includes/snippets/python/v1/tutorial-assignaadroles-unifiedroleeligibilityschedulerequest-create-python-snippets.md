@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.unified_role_eligibility_schedule_request import UnifiedRoleEligibilityScheduleRequest
 from msgraph.generated.models.unified_role_schedule_request_actions import UnifiedRoleScheduleRequestActions
 from msgraph.generated.models.request_schedule import RequestSchedule
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
 from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = UnifiedRoleEligibilityScheduleRequest(
 	action = UnifiedRoleScheduleRequestActions.AdminAssign,
 	justification = "Assign User Admin eligibility to IT Helpdesk (User) group",

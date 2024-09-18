@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_microsoft_edge_app import WindowsMicrosoftEdgeApp
 from msgraph.generated.models.mime_content import MimeContent
 from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
 from msgraph.generated.models.microsoft_edge_channel import MicrosoftEdgeChannel
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = WindowsMicrosoftEdgeApp(
 	odata_type = "#microsoft.graph.windowsMicrosoftEdgeApp",
 	display_name = "Display Name value",

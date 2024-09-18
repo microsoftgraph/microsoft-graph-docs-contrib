@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.solutions.backuprestore.restorepoints.search.search_post_request_body import SearchPostRequestBody
 from msgraph.generated.models.artifact_query import ArtifactQuery
 from msgraph.generated.models.restorable_artifact import RestorableArtifact
 from msgraph.generated.models.time_period import TimePeriod
 from msgraph.generated.models.restore_point_preference import RestorePointPreference
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = SearchPostRequestBody(
 	artifact_query = ArtifactQuery(
 		query_expression = "((subject -contains ‘Finance’)  -or  (subject -contains ‘Legal’)) -and (sender -eq 'alex@contoso.com') -and (recipient -eq 'carol@contoso.com') -and hasAttachment -eq true",

@@ -1900,28 +1900,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Partner Center security",
-          "childNodes": [
-            {
-              "name": "Partner security score",
-              "overview": "../../resources/partner-security-score-api-overview.md",
-              "resources":[
-                "microsoft.graph.partner.security.customerInsight",
-                "microsoft.graph.partner.security.partnerSecurityScore",
-                "microsoft.graph.partner.security.securityRequirement",
-                "microsoft.graph.partner.security.securityHistory"
-              ],
-              "complexTypes":[
-                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
-                "microsoft.graph.partner.security.customerMfaInsight",
-                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
-                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
-                "microsoft.graph.partner.security.responseTimeSecurityRequirement"
-              ]
-            }
-          ]
         }
       ]
     },

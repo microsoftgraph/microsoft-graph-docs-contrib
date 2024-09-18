@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.android_managed_app_protection import AndroidManagedAppProtection
 from msgraph.generated.models.managed_app_data_transfer_level import ManagedAppDataTransferLevel
@@ -12,7 +11,9 @@ from msgraph.generated.models.managed_app_clipboard_sharing_level import Managed
 from msgraph.generated.models.managed_app_pin_character_set import ManagedAppPinCharacterSet
 from msgraph.generated.models.managed_app_data_storage_location import ManagedAppDataStorageLocation
 from msgraph.generated.models.managed_browser_type import ManagedBrowserType
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AndroidManagedAppProtection(
 	odata_type = "#microsoft.graph.androidManagedAppProtection",
 	display_name = "Display Name value",

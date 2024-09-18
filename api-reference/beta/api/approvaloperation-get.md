@@ -97,6 +97,7 @@ GET https://graph.microsoft.com/beta/solutions/approval/operations/1c281a99-f105
 
 ---
 
+
 ### Response
 
 The following example shows the response.

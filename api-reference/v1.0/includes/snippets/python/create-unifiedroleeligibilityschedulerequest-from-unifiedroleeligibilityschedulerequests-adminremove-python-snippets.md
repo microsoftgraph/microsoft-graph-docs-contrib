@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.unified_role_eligibility_schedule_request import UnifiedRoleEligibilityScheduleRequest
 from msgraph.generated.models.unified_role_schedule_request_actions import UnifiedRoleScheduleRequestActions
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = UnifiedRoleEligibilityScheduleRequest(
 	action = UnifiedRoleScheduleRequestActions.AdminRemove,
 	role_definition_id = "8424c6f0-a189-499e-bbd0-26c1753c96d4",

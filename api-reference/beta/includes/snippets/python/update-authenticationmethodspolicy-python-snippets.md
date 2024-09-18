@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.authentication_methods_policy import AuthenticationMethodsPolicy
 from msgraph_beta.generated.models.registration_enforcement import RegistrationEnforcement
@@ -15,7 +14,9 @@ from msgraph_beta.generated.models.authentication_methods_registration_campaign_
 from msgraph_beta.generated.models.authentication_method_target_type import AuthenticationMethodTargetType
 from msgraph_beta.generated.models.report_suspicious_activity_settings import ReportSuspiciousActivitySettings
 from msgraph_beta.generated.models.include_target import IncludeTarget
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AuthenticationMethodsPolicy(
 	registration_enforcement = RegistrationEnforcement(
 		authentication_methods_registration_campaign = AuthenticationMethodsRegistrationCampaign(

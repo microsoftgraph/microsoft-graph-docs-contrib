@@ -4,7 +4,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
 from msgraph.generated.models.access_package_request_type import AccessPackageRequestType
@@ -12,7 +11,9 @@ from msgraph.generated.models.entitlement_management_schedule import Entitlement
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
 from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
 	request_type = AccessPackageRequestType.AdminUpdate,

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.shift import Shift
 from msgraph.generated.models.shift_item import ShiftItem
 from msgraph.generated.models.schedule_entity_theme import ScheduleEntityTheme
 from msgraph.generated.models.shift_activity import ShiftActivity
-# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+graph_client = GraphServiceClient(credentials, scopes)
+
 request_body = Shift(
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	user_id = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
