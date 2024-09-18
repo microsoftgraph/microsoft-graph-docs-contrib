@@ -295,5 +295,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-> Note: Currently `resourceSampling` only contains `id` of the resource. In the future, it'll be able to show other properties of the resource as well.
