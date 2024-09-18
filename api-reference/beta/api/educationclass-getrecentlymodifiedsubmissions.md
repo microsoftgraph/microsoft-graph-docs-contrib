@@ -1,13 +1,13 @@
 ---
-title: "getRecentlyModifiedSubmissions: educationClass"
-description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
+title: "educationClass: getRecentlyModifiedSubmissions"
+description: "Retrieve submissions modified in the previous seven days."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# getRecentlyModifiedSubmissions: educationClass
+# educationClass: getRecentlyModifiedSubmissions
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ The grade and feedback from a teacher are part of the [educationOutcome](../reso
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationclass_get_recentlymodifiedsubmissions" } -->
+<!-- { "blockType": "permissions", "name": "educationclass_getrecentlymodifiedsubmissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
 
 ## HTTP request
@@ -91,6 +91,7 @@ Content-type: application/json
 ```
 
 ## Examples
+
 ### Example 1: Get recently modified submissions
 
 #### Request
@@ -190,7 +191,79 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get recently modified submissions with `$expand` option
+### Example 2: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_select_assignmentId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getrecentlymodifiedsubmissions?$filter=assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'&$select=LastModifiedDateTime,status
+```
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
+    "value": [
+        {
+            "status": "submitted",
+            "lastModifiedDateTime": "2024-09-09T10:18:33.4052415Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.6464644Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.588738Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.5295878Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.4718648Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.3513158Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2866527Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.2219998Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.1602788Z"
+        },
+        {
+            "status": "working",
+            "lastModifiedDateTime": "2024-09-09T10:18:07.0884058Z"
+        }
+    ]
+}
+```
+
+### Example 3: Get recently modified submissions with `$expand` option
 
 #### Request
 The following example shows a request.
@@ -307,7 +380,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get recently modified submissions with `$filter` option
+### Example 4: Get recently modified submissions with `$filter` option
 
 #### Request
 The following example shows a request.
@@ -407,7 +480,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get recently modified submissions with `$orderby` and `$top` options
+### Example 5: Get recently modified submissions with `$orderby` and `$top` options
 
 #### Request
 The following example shows a request.
@@ -506,7 +579,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get recently modified submissions with `$select` option
+### Example 6: Get recently modified submissions with `$select` option
 
 #### Request
 The following example shows a request.
@@ -548,7 +621,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 6: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
+### Example 7: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
 
 #### Request
 The following example shows a request.
