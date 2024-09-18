@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of an impacted resource in directory object type.
+Represents a summary of an impacted resource in the directory (Microsoft Entra ID) object type.
 This type is an abstract type.
 
 
