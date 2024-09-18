@@ -55,7 +55,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/basesitepage-list.md
-[List pageTemplates]: ../api/pagetemplate-list.md
+[List page templates]: ../api/pagetemplate-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
 [List subsites for a site]: ../api/site-list-subsites.md
