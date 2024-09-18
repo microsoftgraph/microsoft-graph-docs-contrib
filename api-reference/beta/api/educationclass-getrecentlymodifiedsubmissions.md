@@ -208,6 +208,7 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -216,6 +217,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.educationSubmission)",
     "value": [

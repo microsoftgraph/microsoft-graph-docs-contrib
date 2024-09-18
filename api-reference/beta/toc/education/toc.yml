@@ -68,11 +68,7 @@ items:
     href: ../../api/educationclass-delete.md
   - name: Get delta
     href: ../../api/educationclass-delta.md
-<<<<<<< HEAD
   - name: Get recently modified submissions
-=======
-  - name: getRecentlyModifiedSubmissions
->>>>>>> parent of bdc0ecacab8 (Revert "Merge branch 'main' into doc-improvement-teamsappinstallation")
     href: ../../api/educationclass-getrecentlymodifiedsubmissions.md
 - name: User
   items:
