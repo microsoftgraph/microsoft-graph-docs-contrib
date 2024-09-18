@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an endUserNotification ob
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # Get endUserNotification

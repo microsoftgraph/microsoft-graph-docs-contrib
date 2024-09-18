@@ -2,7 +2,7 @@
 title: "servicePrincipals: List ownedObjects"
 description: "Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups."
 ms.localizationpriority: high
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
 ---
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 ---
 
 ### Response
-The following example shows the response. 
+The following example shows the response.
 >Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

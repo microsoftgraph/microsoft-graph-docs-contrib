@@ -5,14 +5,14 @@ author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # List restorePoints
 
 Namespace: microsoft.graph
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. 
+Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
 
 > **Note:** This API returns a maximum of five **restorePoint** objects. If you don't include the `orderBy` parameter, the five most recent restore points are returned.
 

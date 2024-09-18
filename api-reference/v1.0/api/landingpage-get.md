@@ -4,7 +4,7 @@ description: "Get a landingPage associated with an attack simulation campaign fo
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # Get landingPage

@@ -5,7 +5,7 @@ author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # Create oneDriveForBusinessRestoreSession

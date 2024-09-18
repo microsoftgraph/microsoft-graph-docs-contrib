@@ -2,7 +2,7 @@
 title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
 ms.localizationpriority: high
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
 ---
