@@ -95,9 +95,9 @@ The ability to reset a password includes the ability to update the following sen
 > - mobilePhone
 > - otherMails
 
-## Who can perform sensitive actions
+## Sensitive actions
 
-Some administrators can perform the following sensitive actions for some users. All users can read the sensitive properties.
+The following actions against the user object are considered sensitive and might be locked down to only specific administrators. All users can read the sensitive properties.
 
 | Sensitive action                | Sensitive property name |
 |---------------------------------|-------------------------|
@@ -109,6 +109,10 @@ Some administrators can perform the following sensitive actions for some users. 
 | Update password profile         | passwordProfile         |
 | Update user principal name      | userPrincipalName       |
 | Delete or restore users         | Not applicable          |
+
+## Who can perform sensitive actions
+
+Some administrators can perform the preceding sensitive actions for some users. 
 
 In the following table, the columns list the roles that can perform sensitive actions. The rows list the roles for which the sensitive action can be performed upon.
 
