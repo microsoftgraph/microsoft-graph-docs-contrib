@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration of an alert type defining behavior that occurs when an alert is created
+Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
