@@ -1,6 +1,6 @@
 ---
 title: "applicationImpactSummary resource type"
-description: "Represents a summary of an impacted resource in application type."
+description: "Represents a summary of an impacted application resource type for an alert in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
