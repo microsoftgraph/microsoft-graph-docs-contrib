@@ -29,13 +29,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.healthMonitoring.documentation"
+  "@odata.type": "microsoft.graph.healthMonitoring.documentation",
+    "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.documentation",
-  "openType": true
+  "@odata.type": "#microsoft.graph.healthMonitoring.documentation"
 }
 ```
 
