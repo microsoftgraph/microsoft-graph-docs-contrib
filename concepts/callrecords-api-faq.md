@@ -10,7 +10,7 @@ ms.subservice: "cloud-communications"
 
 ## What is the Microsoft Graph Call Records API?
 
-Microsoft Graph Call Records API (also known as the call records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization, called a tenant, when using Microsoft Teams or Skype for Business. Tenants can leverage the call records API to subscribe to, list, and retrieve call records by call IDs, as well as to look up calls for a participant. For more details, please refer to the [Working with the call records API in Microsoft Graph](../api-reference/v1.0/resources/callrecords-api-overview.md).
+The Microsoft Graph Call Records API, also known as the call records API, offers usage and diagnostic insights for calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Organizations, referred to as tenants, can use the call records API to subscribe to, list, retrieve call records by call IDs, and to look up calls for a participant. For more details, please refer to the [Working with the call records API in Microsoft Graph](../api-reference/v1.0/resources/callrecords-api-overview.md).
 
 ## What is the permission required to use the Call Records API?
 
@@ -27,9 +27,9 @@ You can find and collect call IDs using the following options:
 * **Subscribe to notifications**: Subscribe to [change notifications feed](changenotifications-for-callrecords.md) and receive notifications containing call IDs whenever a new call record is created.
 * **List call records**: Get a list of call IDs by requesting it from [List callRecords API](../api-reference/v1.0/api/callrecords-cloudcommunications-list-callrecords.md).
 * **Manual search**: If you are a [Call Analytics](https://learn.microsoft.com/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) customer, you can manually search for a call ID in a user’s history. Note that there is no automated system available to retrieve all call IDs from Call Analytics.
-* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](../api-reference/v1.0/resources/call.md) API after the call is completed. Note that the `callChainId` may differ from the call ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
+* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](../api-reference/v1.0/resources/call.md) API after the call is completed. The `callChainId` may differ from the call ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
 
-## When will a call record be available?
+## When is a call record available?
 
 A first version of a call record is typically generated and a notification is sent within 15 minutes after a call ends. However, it can take up to 60 minutes for the service to make the call record available. For more details, please refer to the [Latency](../api-reference/v1.0/resources/subscription.md#latency) page.
 
@@ -39,7 +39,7 @@ Call records are retained for 30 days after the call ends.
 
 ## Can I retrieve call records older than 30 days?
 
-No, the Call Records API does not return call records older than 30 days. Requests for such records will result in a 404 Not Found error response.
+No, the Call Records API does not return call records older than 30 days. Requests for such records result in a 404 Not Found error response.
 
 ## Why is my call record notification delayed?
 
@@ -47,7 +47,7 @@ Your call record notification may be delayed because it can take up to 60 minute
 
 ## Why does a call record have missing fields?
 
-A call record may have missing fields due to delayed telemetry from a client. When new telemetry data becomes available, the system generates a new call record with updated information and increments the `version` property value. If your call record is missing properties, please wait for the next call record version. If the new version does not arrive, open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Graph Call Records API team.
+A call record may have missing fields due to delayed telemetry from a client. When new telemetry data becomes available, the system generates a new call record with updated information and increments the `version` property value. If your call record is missing properties, wait for the next call record version. If the new version does not arrive, open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Graph Call Records API team.
 
 ## How can I list all participants attended in a call?
 
@@ -71,12 +71,12 @@ To see all participants, implement a custom solution to build the participants l
 
 ## Why don't I see all participants who attended a call while calling list participants_v2 API?
 
-You might not see all participants because the [List participants_v2](../api-reference/v1.0/api/callrecords-callrecord-list-participants_v2.md) API supports pagination, limiting the number of participants in the response to 60 per page. If there were more than 60 users on the call, the first call record response will contain 60 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, indicating that there are no more participants to retrieve.
+You might not see all participants because the [List participants_v2](../api-reference/v1.0/api/callrecords-callrecord-list-participants_v2.md) API supports pagination, limiting the number of participants in the response to 60 per page. If there were more than 60 users on the call, the first call record response contains 60 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, indicating that there are no more participants to retrieve.
 
 ## Why do I receive a 404 Not Found error?
 
 There are several reasons you might encounter a 404 Not Found error:
 
-* **Recent Call**: If the call was made within the last 60 minutes, the call record might not have been generated yet. Please wait and try again in an hour.
+* **Recent Call**: If the call was made within the last 60 minutes, the call record might not be generated yet. Wait and try again in an hour.
 * **Old Call**: If the call is older than 30 days, the Graph Call Records API returns a 404 Not Found error by design.
 * **Other Issues**: If neither of the reasons apply, check for any reported outages by the Graph Call Records API team in the “Health” tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Additionally, you can open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Graph Call Records API team for assistance.
