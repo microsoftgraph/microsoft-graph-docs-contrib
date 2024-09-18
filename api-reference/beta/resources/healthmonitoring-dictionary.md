@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a dictionary type that consists of key-value pairs.
+Represents a dictionary type that consists of key-value pairs. This resource is an open type that allows other properties to be passed in.
 
 
 ## Properties
