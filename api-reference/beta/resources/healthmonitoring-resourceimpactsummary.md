@@ -22,7 +22,7 @@ This resource is an abstract type from which the [directoryObjectImpactSummary](
 |:---|:---|:---|
 |impactedCount|String|The number of resources impacted. The number could be an exhaustive count or a sampling count.|
 |impactedCountLimitExceeded|Boolean|Indicates whether **impactedCount** is exhaustive or a sampling. When this value is `true`, the limit was exceeded and **impactedCount** represents a sampling; otherwise, **impactedCount** represents the true number of impacts.|
-|resourceType|String|The type of resource that was impacted.|
+|resourceType|String|The type of resource that was impacted. Examples include users, groups, CA policies, and applications.|
 
 ## Relationships
 None.
