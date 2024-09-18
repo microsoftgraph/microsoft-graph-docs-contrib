@@ -1,6 +1,6 @@
 ---
 title: "alertConfiguration resource type"
-description: "Represents the configuration of an alert type defining behavior that occurs when an alert is created."
+description: "Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
