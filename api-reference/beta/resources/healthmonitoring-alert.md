@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. New alert types might be added in the future as new monitored scenarios are added.|
+|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`. |
 |category|microsoft.graph.healthMonitoring.category|The classification that groups the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. New categories might be added in the future as new monitored scenarios are added.|
 |createdDateTime|DateTimeOffset|The time that the Alert was generated at.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|A key-value pair that contains the name of documentation to aid in investigation of the alert and a link to the documentation.|
