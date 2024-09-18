@@ -26,7 +26,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
-| [List pageTemplates][]                            | GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate     |
+| [List page templates][]                            | GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate     |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
 | [List sites across geographies][]                 | GET /site/getAllSites                                       |
 | [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
