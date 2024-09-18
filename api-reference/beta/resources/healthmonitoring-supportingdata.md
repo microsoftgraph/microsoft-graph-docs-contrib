@@ -13,7 +13,9 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of supportingData locations that can be queried for debugging the alert.
+Represents a collection of supporting data locations that can be queried for debugging an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health.
+
+This resource is an open type that allows other properties to be passed in.
 
 
 Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
@@ -29,13 +31,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.healthMonitoring.supportingData"
+  "@odata.type": "microsoft.graph.healthMonitoring.supportingData",
+    "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.healthMonitoring.supportingData",
-  "openType": true
+  "@odata.type": "#microsoft.graph.healthMonitoring.supportingData"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "signals resource type"
-description: "Represent a collection of signals that are used in the generation of the alert."
+description: "Represents a collection of signals that are used in the generation of an alert in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a collection of signals that are used in the generation of the alert.
+Represents a collection of signals that are used in the generation of an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health.
+
+This resource is an open type that allows other properties to be passed in.
 
 
 Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).

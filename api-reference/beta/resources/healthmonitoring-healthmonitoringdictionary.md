@@ -1,6 +1,6 @@
 ---
 title: "healthMonitoringDictionary resource type"
-description: "Represents a dictionary type used in Health Monitoring"
+description: "Represents a dictionary type used in Microsoft Entra Health monitoring. This resource is an open type that allows other properties to be passed in."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

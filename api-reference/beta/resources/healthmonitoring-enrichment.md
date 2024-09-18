@@ -1,6 +1,6 @@
 ---
 title: "enrichment resource type"
-description: "Represent a set of properties that add context to the alert."
+description: "Represents additional context for an alert in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a set of properties that add context to the alert.
+Represents additional context for an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health.
 
 ## Properties
 |Property|Type|Description|

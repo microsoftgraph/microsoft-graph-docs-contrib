@@ -1,6 +1,6 @@
 ---
 title: "emailNotificationConfiguration resource type"
-description: "Represents the email configuration of an alert type defining behavior that occurs when an alert is created."
+description: "Represents the email configuration for an alert type in Microsoft Entra Health."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

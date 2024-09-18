@@ -2230,7 +2230,7 @@
                   ]
                 },
                 {
-                  "name": "Microsoft Entra health",
+                  "name": "Microsoft Entra Health",
                   "childNodes": [
                     {
                       "name": "SLA Attainment",
@@ -2239,7 +2239,7 @@
                       ]
                     },
                     {
-                      "name": "Microsoft Entra health monitoring",
+                      "name": "Health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
                         "microsoft.graph.healthMonitoring.alert"
