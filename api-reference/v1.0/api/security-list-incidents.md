@@ -1,7 +1,6 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
