@@ -141,7 +141,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema"
+  "name": "update_synchronizationschema_customattribute"
 }-->
 ```http
 PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
@@ -206,7 +206,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema"
+  "name": "update_synchronizationschema_newattributemapping"
 }-->
 ```http
 PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
