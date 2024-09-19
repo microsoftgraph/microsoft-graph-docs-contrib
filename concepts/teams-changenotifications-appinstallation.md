@@ -1,17 +1,17 @@
 ---
-title: "Get change notifications for app installation using Microsoft Graph"
-description: "Learn how to get notifications for app installation using Microsoft Graph APIs."
+title: "Get change notifications for app installation"
+description: "Learn how to get notifications for Teams app installation using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for app installation using Microsoft Graph
+# Get change notifications for app installation
 
-Teams app installation change notifications allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, upgraded, or deleted from a [team, chat, or personal scope](/microsoftteams/platform/concepts/design/understand-use-cases#app-scope). For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
+Change notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a team, groupChat, or a user's personal scope.
 
-Continue with this article to learn more about receiving notifications for Teams apps in **personal**, **team**, or **chat** scopes. Or, learn about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
+This article describes how to subscribe to change notifications for Teams apps in personal, team, or chat scopes by using Microsoft Graph APIs.
 
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
@@ -26,40 +26,40 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### Personal scope
 
-To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
+Subscriptions to `Personal` scope enable you to get change notifications for Teams apps installed or to be installed within any user. To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.Read.All|
+| Permission type                        | Least privileged permissions | Higher privileged permissions |
+|:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              | Not supported.                              |
+| Application                            |  Not supported.                              |TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.Read.All|
 
 #### Team scope
 
-To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
+Subscriptions to `Team` scope enable you to get change notifications for Teams apps installed or to be installed within any team. To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.Read.All|
+| Permission type                        | Least privileged permissions | Higher privileged permissions |
+|:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              | Not supported.                              |
+| Application                            |  Not supported.                              |TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.Read.All|
 
 #### Chat scope
 
-To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
+Subscriptions to `Chat` scope enable you to get change notifications for Teams apps installed or to be installed within any chat. To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
+| Permission type                        | Least privileged permissions | Higher privileged permissions |
+|:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              | Not supported.                              |
+| Application                            |  Not supported.                              |TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
 
 > [!NOTE]
-> Notifications for update events that occur in the chat scope might not be delivered. This is a known limitation.
+> Notifications for update events that occur in the chat scope might not be delivered. This is a [known issue](https://developer.microsoft.com/graph/known-issues).
 
 #### All scopes
 
-To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
+Subscriptions to `All` scope enable you to get change notifications for Teams apps installed or to be installed within any chat, team or user. To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -89,7 +89,7 @@ To subscribe using RSC permissions, append query parameter `useResourceSpecificC
 
 The following example shows how to subscribe for Teams app installation notifications in all scopes:
 
-```http
+```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 To subscribe for a specific scope, you must declare the scope `$filter` query parameter while you create the subscription. You can do this by adding it to the subscription resource:
 
-```http
+```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 To subscribe for multiple scopes, you must declare the scopes with the `$filter` query parameter while you create the subscription:
 
-```http
+```json
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
@@ -193,7 +193,7 @@ The following example shows a payload of notifications with resource data.
     "value": [{ 
         "subscriptionId": "7ac50e0f-4526-44bc-8e75-834c16143e5d", 
         "changeType": "created", 
-        "clientState": "<<--SpecifiedClientState-->>", 
+        "clientState": "{SpecifiedClientState}", 
         "subscriptionExpirationDateTime": "2023-11-16T11:00:00.0000000Z", 
         "resource": "appCatalogs/teamsApps('19d56a5e-86a2-489b-aa5c-88a60f92b83e')/installations('N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=')", 
         "resourceData": { 
@@ -202,14 +202,14 @@ The following example shows a payload of notifications with resource data.
             "@odata.id": "appCatalogs/teamsApps('19d56a5e-86a2-489b-aa5c-88a60f92b83e')/installations('N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=')" 
         }, 
         "encryptedContent": { 
-            "data": "<<--EncryptedContent-->", 
-            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>", 
-            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>", 
-            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>" 
+            "data": "{EncryptedContent}", 
+            "dataKey": "{EnryptedDataKeyUsedForEncryptingContent}", 
+            "encryptionCertificateId": "{IdOfTheCertificateUsedForEncryptingDataKey}", 
+            "encryptionCertificateThumbprint": "{ThumbprintOfTheCertificateUsedForEncryptingDataKey}" 
         }, 
-        "tenantId": "<<--TenantForWhichNotificationWasSent-->>" 
+        "tenantId": "{TenantForWhichNotificationWasSent}" 
     }], 
-    "validationTokens": ["<<--ValidationTokens-->>"] 
+    "validationTokens": ["{ValidationTokens}"] 
 }
 ```
 
