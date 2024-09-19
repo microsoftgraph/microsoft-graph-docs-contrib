@@ -65,7 +65,7 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 ### Identity and access | Directory management
 
 Added the ability to initiate an external admin takeover of an unmanaged domain via the [domain-verify](/graph/api/domain-verify?view=graph-rest-beta&preserve-view=true) API operation.
-  
+
 The following objects are removed:
 
 - **cloudPcSharedUseServicePlan** resource and its supported methods. Going forward, use the [cloudPcFrontLineServicePlan](/graph/api/resources/cloudpcfrontlineserviceplan?view=graph-rest-beta&preserve-view=true) resource.
@@ -449,7 +449,7 @@ Added the ability to list emails analyzed by Microsoft Defender for Office 365, 
 
 ### Security | Identities
 
-Added the ability to get, get list, update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
+Added the ability to get, list, and update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
 
 ### Users
 
@@ -1606,7 +1606,7 @@ Manage [access package](/graph/api/resources/accesspackage) or [group](/graph/ap
 - [Get](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-get) or [update](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-update) specific [feature settings](/graph/api/resources/microsoftAuthenticatorFeatureSettings) for Microsoft Authenticator, for example, whether to show the app that the user is signing into, or the geographic location from which the authentication request originated.
 
 ### Reports | Microsoft 365 usage reports
-Get reports for [Microsoft 365 app usage](/graph/api/resources/microsoft-365-apps-usage-report), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
+Get reports for [Microsoft 365 app usage](/graph/api/resources/reportroot#microsoft-365-apps-usage), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
 
 ### Teamwork and communications | Calls and online meetings
 When [inviting](/graph/api/participant-invite) a [participant](/graph/api/resources/invitationparticipantinfo) to a [call](/graph/api/resources/call), you can specify whether to hide the participant from the roster or remove the participant from the main mixer.

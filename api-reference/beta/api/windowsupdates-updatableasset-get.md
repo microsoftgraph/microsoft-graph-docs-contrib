@@ -3,7 +3,7 @@ title: "Get updatableAsset"
 description: "Read the properties and relationships of an updatableAsset object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 
