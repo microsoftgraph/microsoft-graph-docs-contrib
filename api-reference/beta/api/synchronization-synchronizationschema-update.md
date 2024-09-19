@@ -11,8 +11,6 @@ ms.subservice: "entra-applications"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the synchronization schema for a given job or template. This method fully replaces the current schema with the one provided in the request. To update the schema of a template, make the call on the application object. You must be the owner of the application.
 
 ## Permissions
@@ -44,12 +42,14 @@ In the request body, supply the [synchronizationSchema](../resources/synchroniza
 
 If successful, returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
-### Example 1: Update the directories and synchronizationRules of a synchronization schema
+### Example 1: {Add title here}
 
-#### Request
+##### Request
 The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
@@ -109,7 +109,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+##### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"
@@ -118,75 +118,72 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the directories and synchronizationRules of a synchronization schema and configure the containers
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationschema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+### Example 2: Add attribute "customAttribute" to the target system schema
 
 #### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema_containerFilter"
+  "name": "update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
-    "directories": [
-        {
-            "name": "Azure Active Directory",
-            "objects": [
-                {
-                    "name": "User",
-                    "attributes": [
-                        {
-                            "name": "userPrincipalName",
-                            "type": "string"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Active Directory"
-        }
-    ],
-    "synchronizationRules": [
-        {
-            "containerFilter": {
-                "includedContainers": [
-                    "OU=In-Scope OU 1,DC=contoso,DC=com",
-                    "OU=In-Scope OU 2,DC=contoso,DC=com",
-                ]
-            },
-            "groupFilter": {
-                "includedGroups": []
-            },
-            "name": "AD2AADProvisioning",
-            "sourceDirectoryName": "Active Directory",
-            "targetDirectoryName": "Azure Active Directory",
-            "objectMappings": [
-                {
-                    "name": "Provision Active Directory users",
-                    "sourceObjectName": "user",
-                    "targetObjectName": "User",
-                    "attributeMappings": [
-                        {
-                            "source": {},
-                            "targetAttributeName": "DisplayName"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+   "directories":[
+      {
+         "id":"09760868-cafb-47ac-9031-0a3262300427",
+         "name":"customappsso",
+         "objects":[
+            {
+               "name":"User",
+               "attributes":[
+                  {
+                     "anchor":false,
+                     "caseExact":false,
+                     "defaultValue":null,
+                     "flowNullValues":false,
+                     "multivalued":false,
+                     "mutability":"ReadWrite",
+                     "name":"urn:ietf:params:scim:schemas:extension:CustomExtensionName:2.0:User:CustomAttribute",
+                     "required":false,
+                     "type":"String",
+                     "apiExpressions":[
+                        
+                     ],
+                     "metadata":[
+                        
+                     ],
+                     "referencedObjects":[
+                        
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
-```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-containerfilter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+```
 
 ---
 
@@ -209,14 +206,70 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: microsoft.graph.microsoft.graph/servicePrincipals:
-      /servicePrincipals/{var}/synchronization/jobs/{var}/schema
-      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
-       1) Doc bug where 'jobs' isn't defined on the resource.
-       2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-       3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->
 
+### Example 3: Add a new attribute mapping to the synchronization rules
 
+#### Request
+The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema"
+}-->
+```http
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+   "@odata.type":"#microsoft.graph.synchronizationSchema",
+   "synchronizationRules":[
+      {
+         "defaultValue":"",
+         "exportMissingReferences":false,
+         "flowBehavior":"FlowWhenChanged",
+         "flowType":"Always",
+         "matchingPriority":0,
+         "source":{
+            "expression":"[extensionAttribute11]",
+            "name":"extensionAttribute11",
+            "parameters":[
+               
+            ],
+            "type":"Attribute"
+         },
+         "targetAttributeName":"timezone"
+      }
+   ]
+}
+
+
+```
+
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationschema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
