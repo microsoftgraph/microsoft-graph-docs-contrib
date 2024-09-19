@@ -46,7 +46,7 @@ If successful, returns a `204 No Content` response code. It doesn't return anyth
 
 ## Examples
 
-### Example 1: {Add title here}
+### Example 1: Update schema
 
 ##### Request
 The following example shows a request.
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
@@ -146,7 +146,7 @@ The following example shows a request.
   "name": "update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
@@ -224,7 +224,7 @@ The following example shows a request.
   "name": "update_synchronizationschema"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
