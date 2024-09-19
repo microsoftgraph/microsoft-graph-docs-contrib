@@ -213,9 +213,9 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## Example 3: Add a new attribute mapping to the synchronization rules
+### Example 3: Add a new attribute mapping to the synchronization rules
 
-##### Request
+#### Request
 The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
