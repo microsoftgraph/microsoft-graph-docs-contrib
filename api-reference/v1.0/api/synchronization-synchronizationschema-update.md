@@ -190,7 +190,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"
