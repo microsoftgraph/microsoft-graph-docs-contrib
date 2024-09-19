@@ -3,6 +3,7 @@ title: "service resource type"
 description: "Represents a specific service granted by an individual usageRight."
 author: "patrick-starrin"
 ms.localizationpriority: medium
+ms.subservice: "microsoft-cloud-licensing"
 doc_type: resourcePageType
 ---
 

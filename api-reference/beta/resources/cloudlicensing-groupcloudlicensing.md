@@ -3,6 +3,7 @@ title: "groupCloudLicensing resource type"
 description: "Represents the relationships of a group to cloud licensing resources."
 author: "patrick-starrin"
 ms.localizationpriority: medium
+ms.subservice: "microsoft-cloud-licensing"
 doc_type: resourcePageType
 ---
 
