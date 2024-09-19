@@ -42,7 +42,9 @@ In the request body, supply the [synchronizationSchema](../resources/synchroniza
 
 If successful, returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
+
+### Example 1: {Add title here}
 
 ##### Request
 The following example shows a request.
@@ -130,4 +132,145 @@ HTTP/1.1 204 No Content
 }
 -->
 
+### Example 2: Add attribute "customAttribute" to the target system schema
+
+#### Request
+The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema"
+}-->
+```http
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+   "directories":[
+      {
+         "id":"09760868-cafb-47ac-9031-0a3262300427",
+         "name":"customappsso",
+         "objects":[
+            {
+               "name":"User",
+               "attributes":[
+                  {
+                     "anchor":false,
+                     "caseExact":false,
+                     "defaultValue":null,
+                     "flowNullValues":false,
+                     "multivalued":false,
+                     "mutability":"ReadWrite",
+                     "name":"urn:ietf:params:scim:schemas:extension:CustomExtensionName:2.0:User:CustomAttribute",
+                     "required":false,
+                     "type":"String",
+                     "apiExpressions":[
+                        
+                     ],
+                     "metadata":[
+                        
+                     ],
+                     "referencedObjects":[
+                        
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
+
+```
+
+---
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationschema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+### Example 3: Add a new attribute mapping to the synchronization rules
+
+#### Request
+The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema"
+}-->
+```http
+PUT https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+   "@odata.type":"#microsoft.graph.synchronizationSchema",
+   "synchronizationRules":[
+      {
+         "defaultValue":"",
+         "exportMissingReferences":false,
+         "flowBehavior":"FlowWhenChanged",
+         "flowType":"Always",
+         "matchingPriority":0,
+         "source":{
+            "expression":"[extensionAttribute11]",
+            "name":"extensionAttribute11",
+            "parameters":[
+               
+            ],
+            "type":"Attribute"
+         },
+         "targetAttributeName":"timezone"
+      }
+   ]
+}
+
+
+```
+
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationschema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 
