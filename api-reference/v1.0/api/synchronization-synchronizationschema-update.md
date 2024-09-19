@@ -220,7 +220,6 @@ The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
