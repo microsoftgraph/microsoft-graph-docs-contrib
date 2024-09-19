@@ -147,7 +147,7 @@ Content-Type: application/json
       "externalRegistrationInformation" : {
         "referrer" : "referralLink",
         "registrationId" : "myExternalRegistrationId"
-      }
+      },
       "status": "registered",
       "registrationDateTime": "2023-03-07T22:04:17",
       "cancelationDateTime": null,
@@ -263,7 +263,7 @@ Content-Type: application/json
       "externalRegistrationInformation" : {
         "referrer" : "referralLink",
         "registrationId" : "myExternalRegistrationId"
-      }
+      },
       "status": "registered",
       "registrationDateTime": "2023-03-07T22:04:17",
       "cancelationDateTime": null,
@@ -379,7 +379,7 @@ Content-Type: application/json
       "externalRegistrationInformation" : {
         "referrer" : "referralLink",
         "registrationId" : "myExternalRegistrationId"
-      }
+      },
       "status": "registered",
       "registrationDateTime": "2023-03-07T22:04:17",
       "cancelationDateTime": null,
