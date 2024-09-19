@@ -44,7 +44,7 @@ If successful, returns a `204 No Content` response code. It doesn't return anyth
 
 ## Examples
 
-### Example 1: {Add title here}
+### Example 1: Update schema
 
 ##### Request
 The following example shows a request.
