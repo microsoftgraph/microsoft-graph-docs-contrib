@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/09/2024
+ms.date: 09/16/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1946,19 +1946,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [Directory.ReadWrite.All](../includes/permissions-notes/directory.readwrite.all.md)]
-
----
-
-### Directory.Write.Restricted
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | f20584af-9290-4153-9280-ff8bb2c0ea7f | cba5390f-ed6a-4b7f-b657-0efc2210ed20 |
-| DisplayText | Manage restricted resources in the directory | Manage restricted resources in the directory |
-| Description | Allows the app to manage restricted resources based on the other permissions granted to the app, without a signed-in user. | Allows the app to manage restricted resources based on the other permissions granted to the app, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
-
-[!INCLUDE [Directory.Write.Restricted](../includes/permissions-notes/directory.write.restricted.md)]
 
 ---
 
@@ -4891,6 +4878,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PrivilegedAssignmentSchedule.Remove.AzureADGroup
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 55d1104b-3821-413d-b3ca-e2393d333cd3 | ca5fe595-68ff-4dfd-907d-4509501a0e49 |
+| DisplayText | Delete assignment schedules for access to Azure AD groups | Delete assignment schedules for access to Azure AD groups |
+| Description | Delete time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Allows the app to delete time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### PrivilegedEligibilitySchedule.Read.AzureADGroup
 
 | Category | Application | Delegated |
@@ -4909,6 +4907,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 618b6020-bca8-4de6-99f6-ef445fa4d857 | ba974594-d163-484e-ba39-c330d5897667 |
 | DisplayText | Read, create, and delete eligibility schedules for access to Azure AD groups | Read, create, and delete eligibility schedules for access to Azure AD groups |
 | Description | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### PrivilegedEligibilitySchedule.Remove.AzureADGroup
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 55745561-7572-4314-a737-a2c2a1b0dd2e | c5ea9ab4-9b41-4c09-a400-53e652fb5096 |
+| DisplayText | Delete eligibility schedules for access to Azure AD groups | Delete eligibility schedules for access to Azure AD groups |
+| Description | Delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Allows the app to delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5148,6 +5157,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### RoleAssignmentSchedule.Remove.Directory
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d3495511-98b7-4df3-b317-4e35c19f6129 | f71cd05c-3fdb-4568-aef2-e1cf62ee20d4 |
+| DisplayText | Delete all active role assignments of your company's directory | Delete all active role assignments for your company's directory |
+| Description | Delete all active privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Allows the app to delete the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### RoleEligibilitySchedule.Read.Directory
 
 | Category | Application | Delegated |
@@ -5166,6 +5186,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | fee28b28-e1f3-4841-818e-2704dc62245f | 62ade113-f8e0-4bf9-a6ba-5acb31db32fd |
 | DisplayText | Read, update, and delete all eligible role assignments and schedules for your company's directory | Read, update, and delete  all eligible role assignments for your company's directory |
 | Description | Allows the app to read and manage the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### RoleEligibilitySchedule.Remove.Directory
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 79c7e69c-0d9f-4eff-97a8-49170a5a08ba | 58ac4fa2-b484-4d6e-ba97-beee2a574220 |
+| DisplayText | Delete all eligible role assignments of your company's directory | Delete all eligible role assignments for your company's directory |
+| Description | Delete all eligible privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Allows the app to delete the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7383,6 +7414,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
 | ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. |
 | Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user. |
+| Chat.ManageDeletion.Chat | b827a2af-24b2-4f61-9eb3-8788e66a0d86 | Delete and recover deleted chat | Allows the app to delete and recover deleted chat, without a signed-in user. |
 | ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. |
 | ChatMessage.Read.Chat | 9398c3de-3f6b-4958-90f3-5098714ff50c | Read this chat's messages | Allows the app to read this chat's messages, without a signed-in user. |
 | ChatMessage.Send.Chat | 19cbeeb2-02a0-49d7-95cd-ab0841beed7f | Send messages to this chat | Allows the app to send messages to this chat, without a signed-in user. |
@@ -7424,5 +7456,3 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
-
