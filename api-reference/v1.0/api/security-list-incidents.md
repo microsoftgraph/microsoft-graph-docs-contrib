@@ -128,8 +128,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 
@@ -226,8 +225,7 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.incident",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
 ``` http
