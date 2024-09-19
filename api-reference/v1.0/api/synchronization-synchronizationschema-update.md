@@ -130,9 +130,9 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## Example 2: Add attribute "customAttribute" to the target system schema
+### Example 2: Add attribute "customAttribute" to the target system schema
 
-##### Request
+#### Request
 The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
