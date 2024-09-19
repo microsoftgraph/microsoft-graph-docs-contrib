@@ -119,8 +119,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.alert",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.alert)"
 }
 -->
 ``` http
