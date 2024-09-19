@@ -1,12 +1,12 @@
 ---
-title: "Get groupCloudLicensing"
+title: "Get group usageRight"
 description: "Get the properties and relationships of a usageRight object granted to a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get groupCloudLicensing
+# Get group usageRight
 
 Namespace: microsoft.graph.cloudLicensing
 

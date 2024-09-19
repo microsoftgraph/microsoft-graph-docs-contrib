@@ -86,8 +86,8 @@ items:
     items:
     - name: List group usageRights
       href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: Get groupCloudLicensing
-      href: ../../api/cloudlicensing-groupcloudlicensing-get.md
+    - name: Get group usageRight
+      href: ../../api/cloudlicensing-groupcloudlicensing-get-usageright.md
   - name: Conversations
     items:
     - name: List conversations
