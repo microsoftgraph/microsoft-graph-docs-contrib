@@ -1,7 +1,7 @@
 ---
 author: Yadong1106
 description: "Create a new page from a page template."
-title: sitePage: createFromTemplate
+title: "sitePage: createFromTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
@@ -50,6 +50,7 @@ The following example shows how to create a new page from the page template.
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -63,6 +64,12 @@ Content-Type: application/json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/createfromtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

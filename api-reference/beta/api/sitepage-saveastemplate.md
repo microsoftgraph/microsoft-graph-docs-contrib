@@ -1,7 +1,7 @@
 ---
 author: Yadong1106
 description: "Save the current page as a template."
-title: sitePage: saveAsTemplate
+title: "sitePage: saveAsTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
@@ -49,6 +49,7 @@ The following example shows how to save a site page as a template page.
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "saveAsTemplate", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -61,6 +62,12 @@ Content-Type: application/json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/saveastemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

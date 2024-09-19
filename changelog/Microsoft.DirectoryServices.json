@@ -160,7 +160,7 @@
           "Description": "Deprecated the *Directory.Write.Restricted* permission on the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
-	{
+	      {
           "Id": "36220714-8e43-47b9-a677-d466f08333b5",
           "ApiChange": "Permission",
           "ChangedApiName": "Directory.Write.Restricted",
@@ -181,6 +181,40 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-07-31T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1cbe4b09-55a8-4248-91c4-10d641f6b0cb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Directory.Write.Restricted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [device](https://learn.microsoft.com/en-us/graph/api/resources/device) resource.",
+          "Target": "device"
+        },
+	      {
+          "Id": "1cbe4b09-55a8-4248-91c4-10d641f6b0cb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Directory.Write.Restricted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [group](https://learn.microsoft.com/en-us/graph/api/resources/group) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "1cbe4b09-55a8-4248-91c4-10d641f6b0cb",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Directory.Write.Restricted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated *Directory.Write.Restricted* permission on the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "1cbe4b09-55a8-4248-91c4-10d641f6b0cb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-16T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
@@ -13574,6 +13608,24 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
 	},
+    {
+      "ChangeList": [
+      {
+          "Id": "bc7c942d-bcad-4daa-844b-e4b4b2b6d366",
+          "ApiChange": "Property",
+          "ChangedApiName": "passwordResetUri",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordResetUri** property to the [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-beta) resource.",
+          "Target": "internalDomainFederation"
+        }
+      ],
+      "Id": "bc7c942d-bcad-4daa-844b-e4b4b2b6d366",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-18T21:04:59.6323438Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
   {
     "ChangeList": [      
       {
