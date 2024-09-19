@@ -117,6 +117,10 @@ Use the **displayName** property on the [chatMessageReaction](/graph/api/resourc
 
 Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork?view=graph-rest-beta&preserve-view=true) and [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resources.
 
+### Security | Identities
+
+Added the ability to get, list, and update Microsoft Defender for Identity [sensors](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) settings.
+
 ## Contribute to Microsoft Graph
 
 Are there scenarios you'd like Microsoft Graph to support?
