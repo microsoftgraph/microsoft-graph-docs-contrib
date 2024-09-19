@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore/history
 
 ---
 
-
 ### Response
 
 The following example shows the response.
