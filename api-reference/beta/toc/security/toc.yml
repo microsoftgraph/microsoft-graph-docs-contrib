@@ -492,10 +492,6 @@ items:
       href: ../../api/security-sensor-getdeploymentaccesskey.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
-  - name: Complex types
-    items:
-    - name: Identity container
-      href: ../../resources/security-identitycontainer.md
 - name: Information protection
   items:
   - name: Information protection label
