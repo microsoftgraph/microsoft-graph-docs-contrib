@@ -221,7 +221,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema"
+  "name": "update_synchronizationschema_newattributemapping"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
