@@ -22,11 +22,11 @@ Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) objects and their properties.|
-|[Create](../api/networkaccess-filteringrule-post.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Create a new [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
-|[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Get a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
-|[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Update the properties of a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
-|[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.|
+|[List](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) collection|Get a list of the object types that are derived from **filteringRule**.|
+|[Create](../api/networkaccess-filteringrule-post.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Create a new object type that is derived from **filteringRule**.|
+|[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Get the properties and relationships of an object type that is derived from **filteringRule**.|
+|[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Update the properties of an object type that is derived from **filteringRule**.|
+|[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete an object type that is derived from **filteringRule**.|
 
 ## Properties
 |Property|Type|Description|
