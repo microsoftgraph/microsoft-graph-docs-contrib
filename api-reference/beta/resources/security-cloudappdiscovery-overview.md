@@ -20,7 +20,7 @@ The API offers
 
 # High level user scenarios: 
 
-Customers will be able to get all the data available on the discovered Apps page via Microsoft Graph API. Below are some of the key user scenarios supported by the Microsoft Graph API:  
+Customers can get all the data available on the discovered Apps page via Microsoft Graph API. Below are some of the key user scenarios supported by the Microsoft Graph API:  
 
 ### List all users using a specific risky SaaS app  
 
