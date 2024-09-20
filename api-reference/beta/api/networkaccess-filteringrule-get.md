@@ -14,8 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Get a [filteringRule](../resources/networkaccess-filteringrule.md) object. The following derived types are supported:
 
-- [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md)
-- [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md)
+- [fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)
+- [webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
