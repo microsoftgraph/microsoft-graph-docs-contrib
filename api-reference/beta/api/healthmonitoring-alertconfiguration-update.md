@@ -15,11 +15,11 @@ Namespace: microsoft.graph.healthMonitoring
 
 Update the properties of a [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. You can use alertConfiguration settings to specify the distribution groups where alert notifications are to be sent.
 
+NOTE: This API doesn't currently support group validation.
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-NOTE: This API doesn't currently support group validation.
 
 <!-- {
   "blockType": "permissions",
@@ -30,10 +30,9 @@ NOTE: This API doesn't currently support group validation.
 
 In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to update alert configurations.
 
-+ Global Administrator
 + Security Administrator
 + Helpdesk Administrator
-  
+
 ## HTTP request
 
 <!-- {
