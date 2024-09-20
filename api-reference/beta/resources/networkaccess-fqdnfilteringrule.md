@@ -1,6 +1,6 @@
 ---
 title: "fqdnFilteringRule resource type"
-description: "Defines a network filtering rule specifically for fully qualified domain names (FQDNs), allowing administrators to control access to specified domains."
+description: "Defines a network filtering rule specifically for fully qualified domain names (FQDNs)that allows administrators to control access to specified domains."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
