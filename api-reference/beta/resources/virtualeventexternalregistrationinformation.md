@@ -17,7 +17,7 @@ Represents the external registration information for a [virtual event](../resour
 
 |Property|Type|Description|
 |:---|:---|:---|
-|referrer|String| (TO DO: PLACEHOLDER DESCRIPTION)|
+|referrer|String| A URL or string representing the location that the registrant registered from.|
 |registrationId|String| (TO DO: PLACEHOLDER DESCRIPTION)|
 
 ## Relationships
