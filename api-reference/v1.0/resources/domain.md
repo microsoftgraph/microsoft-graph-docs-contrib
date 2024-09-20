@@ -66,10 +66,10 @@ Relationships between a domain and other objects in the directory such as its ve
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports `$expand` and `$filter` by the OData type of objects returned. For example, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Supports `$expand`.|
-|federationConfiguration|[internalDomainFederation](internaldomainfederation.md)| Domain settings configured by a customer when federated with Microsoft Entra ID. Supports `$expand`.|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Does not support `$expand`. Supports `$filter` by the OData type of objects returned. For example, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Does not support `$expand`. |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Does not support `$expand`.|
+|federationConfiguration|[internalDomainFederation](internaldomainfederation.md)| Domain settings configured by a customer when federated with Microsoft Entra ID. Does not support `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
