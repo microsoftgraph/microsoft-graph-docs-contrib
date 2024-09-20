@@ -33,7 +33,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The time when Microsoft Entra Health generated the alert.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|A key-value pair that contains the name of and link to the documentation to aid in investigation of the alert.|
 |enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Investigative information on the alert. This information typically includes counts of impacted users, devices, and other resources and a pointer to supporting data.|
-|id|String|The unique identifier of this alert in the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|The GUID unique identifier of this alert in the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |scenario|microsoft.graph.healthMonitoring.scenario|The area being monitored on the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`. |
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|The collection of signals that were used in the generation of the alert. These signals are sourced from [serviceActivity APIs](../resources/serviceactivity.md) and are added to the alert as key-value pairs.|
 |state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert. The possible values are: `active`, `resolved`, `unknownFutureValue`.|
