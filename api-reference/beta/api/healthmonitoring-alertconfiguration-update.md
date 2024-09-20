@@ -68,9 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-### Example 1: Set or update alert configuration of a specific alert type
-
-#### Request
+### Request
 
 The following example shows a request.
 <!-- {
