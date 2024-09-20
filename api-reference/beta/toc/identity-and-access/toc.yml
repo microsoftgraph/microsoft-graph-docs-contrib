@@ -4203,7 +4203,7 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
-    - name: Fqdn filtering rule
+    - name: FQDN filtering rule
       href: ../../resources/networkaccess-fqdnfilteringrule.md
     - name: Web category filtering rule
       href: ../../resources/networkaccess-webcategoryfilteringrule.md
