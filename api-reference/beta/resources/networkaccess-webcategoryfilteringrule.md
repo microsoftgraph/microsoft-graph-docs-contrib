@@ -18,13 +18,9 @@ Defines a network filtering rule for web categories, enabling administrators to 
 Inherits from [filteringRule](../resources/networkaccess-filteringrule.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Create](../api/networkaccess-filteringrule-post.md)|[microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) collection|Create a [microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) objects and their properties.|
-|[List](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) collection|Get a list of the [microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) objects and their properties.|
-|[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) object.|
-|[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)|Update the properties of a [microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) object.|
-|[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md) object.|
+None.
+
+For the list of API operations for managing this resource type, see [filteringRule](../resources/networkaccess-filteringrule.md).
 
 ## Properties
 |Property|Type|Description|
