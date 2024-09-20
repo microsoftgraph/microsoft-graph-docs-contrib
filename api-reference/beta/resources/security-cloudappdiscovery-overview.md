@@ -1,5 +1,5 @@
 ---
-title: "Overview of Discovered apps using the Microsoft Graph API"
+title: "Overview of discovered apps using the Microsoft Graph API"
 description: "Learn how to programmatically query your discovered SaaS applications info using the Microsoft Graph API."
 author: "mravela"
 ms.localizationpriority: medium
@@ -7,10 +7,10 @@ ms.subservice: "security"
 doc_type: conceptualPageType
 ---
 
-# Overview of Discovered apps using the Microsoft Graph API
-Use the Discovered apps Graph API to get data and insights across the Discovered SaaS apps ecosystem. The Discovered apps Graph API is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to query and analyze the risks associated with the discovered apps. 
+# Overview of discovered apps using the Microsoft Graph API
+Use the discovered apps Graph API to get data and insights across the discovered SaaS apps ecosystem. The discovered apps Graph API is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to query and analyze the risks associated with the discovered apps. 
 
-# Why use Discovered apps Graph API 
+# Why use discovered apps Graph API 
 
 The API offers  
 
@@ -20,7 +20,7 @@ The API offers
 
 # High level user scenarios: 
 
-Customers will be able to get all the data available on the Discovered Apps page via an API. Below are some of the key user scenarios supported by the API:  
+Customers will be able to get all the data available on the discovered Apps page via an API. Below are some of the key user scenarios supported by the API:  
 
 ### List all users using a specific risky SaaS app  
 
