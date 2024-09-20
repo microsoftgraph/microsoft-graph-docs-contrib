@@ -154,15 +154,9 @@ Content-type: application/json
                      "name":"urn:ietf:params:scim:schemas:extension:CustomExtensionName:2.0:User:CustomAttribute",
                      "required":false,
                      "type":"String",
-                     "apiExpressions":[
-                        
-                     ],
-                     "metadata":[
-                        
-                     ],
-                     "referencedObjects":[
-                        
-                     ]
+                     "apiExpressions":[],
+                     "metadata":[],
+                     "referencedObjects":[]
                   }
                ]
             }
@@ -212,9 +206,7 @@ Content-type: application/json
          "source":{
             "expression":"[extensionAttribute11]",
             "name":"extensionAttribute11",
-            "parameters":[
-               
-            ],
+            "parameters":[],
             "type":"Attribute"
          },
          "targetAttributeName":"timezone"
