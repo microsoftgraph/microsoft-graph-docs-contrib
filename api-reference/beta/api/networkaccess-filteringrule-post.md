@@ -12,7 +12,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [filteringRule](../resources/networkaccess-filteringrule.md).
+Create a new [filteringRule](../resources/networkaccess-filteringrule.md). The following derived types are supported:
+
+- [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md)
+- [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,7 +49,7 @@ In the request body, supply a JSON representation of the [fqdnFilteringRule](../
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object in the response body. The **@odata.type** property specifies the type of the created object.
 
 ## Examples
 
