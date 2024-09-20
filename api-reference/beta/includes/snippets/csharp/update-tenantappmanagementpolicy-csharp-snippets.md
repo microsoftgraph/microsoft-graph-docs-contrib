@@ -67,6 +67,15 @@ var requestBody = new TenantAppManagementPolicy
 				MaxLifetime = null,
 			},
 		},
+		IdentifierUris = new IdentifierUriConfiguration
+		{
+			NonDefaultUriAddition = new IdentifierUriRestriction
+			{
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+				ExcludeAppsReceivingV2Tokens = true,
+				ExcludeSaml = true,
+			},
+		},
 	},
 };
 
