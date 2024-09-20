@@ -4,18 +4,10 @@
       "ChangeList": [
         {
           "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",
-          "ApiChange": "Method",
-          "ChangedApiName": "instantiate",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **instantiate** method from the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
-          "Target": "applicationTemplate"
-        },
-        {
-          "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "instantiate",
           "ChangeType": "Addition",
-          "Description": "Added the [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationTemplate-instantiate?view=graph-rest-beta) method to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the serviceManagementReference property to the application template [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationTemplate-instantiate?view=graph-rest-beta) method.",
           "Target": "applicationTemplate"
         }
       ],
