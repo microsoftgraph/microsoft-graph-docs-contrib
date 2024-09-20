@@ -118,10 +118,10 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Add attribute "customAttribute" to the target system schema
+### Example 2: Add attribute "CustomAttribute" to the target system schema
 
 #### Request
-The following example shows a request.
+The following example shows a request. It assumes that the attribute "CustomAttribute" does not exist in the target directory schema. If it does exist, the attribute would be updated.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
