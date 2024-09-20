@@ -182,7 +182,7 @@ HTTP/1.1 204 No Content
 ### Example 3: Add a new attribute mapping to the synchronization rules
 
 #### Request
-The following example shows a request.
+The following example shows a request. The synchornizationSchema has a 1 to many relationship between target  and source attributes. If your schema does not have "timezone" as a target attribute, the srevice will add a new mapping for extensionAttribute11 --> timezone. If your application has timezone as a target attribute in the schema, the service will throw an error because an attribute can only be mapped as a target once. In addition, the attribute must exist in the schema before it can be added to the mappings.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
