@@ -18,12 +18,9 @@ Defines a network filtering rule specifically for fully qualified domain names (
 Inherits from [filteringRule](../resources/networkaccess-filteringrule.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/networkaccess-filteringrule-list.md)|[microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md) collection|Get a list of the [microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md) objects and their properties.|
-|[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md) object.|
-|[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)|Update the properties of a [microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md) object.|
-|[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete a [microsoft.graph.networkaccess.fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md) object.|
+None.
+
+For the list of API operations for managing this resource type, see [filteringRule](../resources/networkaccess-filteringrule.md).
 
 ## Properties
 |Property|Type|Description|
