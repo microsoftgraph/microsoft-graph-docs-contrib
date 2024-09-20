@@ -95,7 +95,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetahealthmonitoringfeatureppe/$metadata#reports/healthMonitoring/alertConfigurations",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/healthMonitoring/alertConfigurations",
   "value": [
     {
       "id": "mfaSignInFailure",
