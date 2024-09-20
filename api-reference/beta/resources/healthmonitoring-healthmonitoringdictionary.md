@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a dictionary type used in Health Monitoring
+Represents a dictionary type used in Microsoft Entra Health monitoring. This resource is an open type that allows other properties to be passed in.
 
 
 Inherits from [microsoft.graph.healthMonitoring.Dictionary](../resources/healthmonitoring-dictionary.md).
