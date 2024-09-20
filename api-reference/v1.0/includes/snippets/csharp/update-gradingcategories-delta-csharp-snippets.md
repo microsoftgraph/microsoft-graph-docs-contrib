@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Beta.Models;
+using Microsoft.Graph.Models;
 using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new EducationAssignmentSettings
@@ -20,10 +20,10 @@ var requestBody = new EducationAssignmentSettings
 				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
 					{
-						"id", new UntypedString("fb859cd3-943b-4cd6-9bbe-fe1c39eace0e")
+						"id", new UntypedString("03bd9196-ce2e-41bd-902f-df9ae02de4db")
 					},
 					{
-						"displayName", new UntypedString("Lab Test")
+						"displayName", new UntypedString("Lab Updated")
 					},
 				}),
 				new UntypedObject(new Dictionary<string, UntypedNode>
@@ -32,7 +32,7 @@ var requestBody = new EducationAssignmentSettings
 						"@odata.context", new UntypedString("https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity")
 					},
 					{
-						"id", new UntypedString("e2a86277-24f9-4f29-8196-8c83fc69d00d")
+						"id", new UntypedString("109e5d73-3ef7-42a5-88d8-7e30cdb85f06")
 					},
 					{
 						"reason", new UntypedString("deleted")
@@ -41,19 +41,10 @@ var requestBody = new EducationAssignmentSettings
 				new UntypedObject(new Dictionary<string, UntypedNode>
 				{
 					{
-						"displayName", new UntypedString("Lab Practice")
+						"displayName", new UntypedString("New Homework")
 					},
 					{
-						"percentageWeight", new UntypedString("30")
-					},
-				}),
-				new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"displayName", new UntypedString("Lab Theory")
-					},
-					{
-						"percentageWeight", new UntypedString("10")
+						"percentageWeight", new UntypedString("50")
 					},
 				}),
 			}

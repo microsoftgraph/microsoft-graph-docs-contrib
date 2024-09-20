@@ -101,7 +101,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/mailFolders/{mailFolderId}
 
 ---
 
-
 ### Response
 
 The following example shows the response.

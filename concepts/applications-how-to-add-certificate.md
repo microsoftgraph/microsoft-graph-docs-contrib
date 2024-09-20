@@ -259,7 +259,7 @@ Connect-MgGraph -ClientID 588028ea-22c2-490e-8c6b-80cd06985e8c -TenantId 38d4945
 Welcome To Microsoft Graph!
 ```
 
-To confirm that you're running the Microsoft Graph PowerShell session without a signed-in user, run the following request.
+To confirm that you're running the [Microsoft Graph PowerShell](/powershell/microsoftgraph/) session without a signed-in user, run the following request.
 
 ```powershell
 Get-MgContext
