@@ -28,9 +28,7 @@ Identify and list all users accessing a particular SaaS application deemed risky
 
 ### List of all apps accessing a specific domain: 
 
-Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping a tab on apps/users/devices accessing risky domains. 
-
-For eg: Get a list of all apps accessing a specific domain, such as the ‘Microsoft’ domain,  and have a tag marked with the ‘monitor’ tag  from the stream Defender for Endpoint stream   
+Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping a tab on apps/users/devices accessing risky domains.   
 
 ### Access the cloud app catalog information for a specific discovered SaaS app  
 
