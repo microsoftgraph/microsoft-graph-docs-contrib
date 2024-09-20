@@ -20,6 +20,11 @@ The threshold that triggers this incident when its reached is defined in the [to
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
