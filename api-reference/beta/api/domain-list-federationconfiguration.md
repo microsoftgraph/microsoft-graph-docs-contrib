@@ -127,6 +127,7 @@ Content-Type: application/json
       "isSignedAuthenticationRequestRequired": true,
       "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
       "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp",
+      "passwordResetUri": "https://sts.contoso.com/adfs/passwordReset",
       "signingCertificateUpdateStatus": {
           "certificateUpdateResult": "Success",
           "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"

@@ -15,7 +15,7 @@ You can use Graph Explorer to test Microsoft Graph queries before you implement 
 
 Use the following steps to try education API calls in Graph Explorer:
 
-1. Open a private web browser, go to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), choose **Sign in to Graph Explorer**, and enter your Office 365 Global Admin account credentials.
+1. Open a private web browser, go to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), choose **Sign in to Graph Explorer**, and enter your Office 365 admin account credentials. 
 
 1. To access the rostering API, grant the corresponding permissions to Graph Explorer. Go to **Modify permissions**, search for **EduRoster.ReadBasic**, and choose **Consent**.
 
