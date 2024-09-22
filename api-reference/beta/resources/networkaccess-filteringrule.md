@@ -52,14 +52,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.networkaccess.filteringRule",
+  "destinations": [{"@odata.type": "microsoft.graph.networkaccess.webCategory"}],
   "id": "String (identifier)",
   "name": "String",
-  "ruleType": "String",
-  "destinations": [
-    {
-      "@odata.type": "microsoft.graph.networkaccess.webCategory"
-    }
-  ]
+  "ruleType": "String"
 }
 ```
 
