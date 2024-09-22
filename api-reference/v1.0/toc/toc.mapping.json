@@ -165,6 +165,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
