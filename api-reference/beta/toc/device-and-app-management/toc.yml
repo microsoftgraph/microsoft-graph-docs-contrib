@@ -135,8 +135,6 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Get shift work access state (deprecated)
-      href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
     - name: Reprovision remote action (deprecated)
       href: ../../api/manageddevice-reprovisioncloudpc.md
     - name: Resize remote action (deprecated)
