@@ -17,7 +17,7 @@
             "ChangeType": "Change",
             "Description": "Updated the [delete_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-permissions?view=graph-rest-beta) method to include the **onlyRemoveContainerScopedPermission** header.",
             "Target": "fileStorageContainer"
-          }    
+          },    
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
             "ApiChange": "Resource",
