@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_filestoragecontainer_permissions"
+  "name": "update_filestoragecontainer_recyclebin_settings"
 }
 -->
 ``` http
