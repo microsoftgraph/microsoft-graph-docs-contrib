@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "instantiate",
           "ChangeType": "Addition",
-          "Description": "Added the serviceManagementReference property to the application template [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationTemplate-instantiate?view=graph-rest-beta) method.",
+          "Description": "Added the **serviceManagementReference** parameter to the application template [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationTemplate-instantiate?view=graph-rest-beta) method.",
           "Target": "applicationTemplate"
         }
       ],
