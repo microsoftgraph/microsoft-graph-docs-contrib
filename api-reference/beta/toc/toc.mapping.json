@@ -2253,7 +2253,8 @@
                       "name": "Health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
-                        "microsoft.graph.healthMonitoring.alert"
+                        "microsoft.graph.healthMonitoring.alert",
+                        "microsoft.graph.healthMonitoring.alertConfiguration"
                       ]
                     }
                   ]
