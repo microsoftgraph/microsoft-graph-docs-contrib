@@ -1,9 +1,9 @@
 ---
 title: "Delete certificateBasedAuthPki"
 description: "Delete a certificateBasedAuthPki object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "suawat"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
