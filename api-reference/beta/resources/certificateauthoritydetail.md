@@ -32,15 +32,15 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |certificate|Binary|The public key of the certificate authority.|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate autority whether `root` or `intermediate`.The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority whether `root` or `intermediate`. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked|
 |createdDateTime|DateTimeOffset|The creation DateTime of the certificate authority.|
-|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
 |displayName|String|**TODO: Add Description**|
 |expirationDateTime|DateTimeOffset|The expirationTime of the certificate authority.|
 |id|String|The id of the certificateAuthority entity. Inherited from [entity](../resources/entity.md).|
-|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it is presented to the user in the certificate picker to be used for authentication. `false` by default.|
+|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it's presented to the user in the certificate picker to be used for authentication. `false` by default.|
 |issuer|String|The name of the certificate authority.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority.|
 |thumbprint|String|The thumbprint of the certificate authority public certificate.|
