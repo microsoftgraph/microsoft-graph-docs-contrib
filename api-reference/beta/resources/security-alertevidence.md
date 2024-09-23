@@ -35,6 +35,8 @@ This resource is the base type for the following evidence types:
 * [deviceEvidence](security-deviceevidence.md)
 * [fileEvidence](security-fileevidence.md)
 * [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [iotDeviceEvidence](security-iotdeviceevidence.md)
+* [nicEvidence](security-nicevidence.md)
 * [ipEvidence](security-ipevidence.md)
 * [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
 * [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
