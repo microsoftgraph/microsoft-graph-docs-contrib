@@ -18,7 +18,7 @@ Represents settings for the recycleBin resource type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. **Note** This property is set at a default value of 93 and is valid for values from 93 to 180, and applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
+|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. This property has a default value of 93 and can be set to values from 93 to 180 only. Setting applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
 
 ## Relationships
 None.
@@ -33,6 +33,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.recycleBinSettings",
-  "retentionPeriodOverrideDays": "Integer"
+  "retentionPeriodOverrideDays": "int32"
 }
 ```
