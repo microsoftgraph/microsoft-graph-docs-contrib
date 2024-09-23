@@ -48,12 +48,11 @@ If successful, returns a `204 No Content` response code. It doesn't return anyth
 
 ### Example 1: Update schema
 
-##### Request
+#### Request
 The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -95,23 +94,16 @@ Content-type: application/json
                         {
                             "source": {},
                             "targetAttributeName": "userName"
-                        },
+                        }
                     ]
-                },
+                }
             ]
-        },
+        }
     ]
 }
-
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"
@@ -123,7 +115,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Add attribute "CustomAttribute" to the target system schema
 
 #### Request
-The following example shows a request. It assumes that the attribute "CustomAttribute" does not exist in the target directory schema. If it does exist, the attribute would be updated. 
+The following example shows a request. It assumes that the attribute "CustomAttribute" doesn't exist in the target directory schema. If it does exist, the attribute is updated. 
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
@@ -164,10 +156,7 @@ Content-type: application/json
       }
    ]
 }
-
 ```
-
----
 
 #### Response
 The following example shows the response.
@@ -182,7 +171,7 @@ HTTP/1.1 204 No Content
 ### Example 3: Add a new attribute mapping to the synchronization rules
 
 #### Request
-The following example shows a request. The synchornizationSchema has a 1 to many relationship between target  and source attributes. If your schema does not have "timezone" as a target attribute, the srevice will add a new mapping for extensionAttribute11 --> timezone. If your application has timezone as a target attribute in the schema, the service will throw an error because an attribute can only be mapped as a target once. In addition, the attribute must exist in the schema before it can be added to the mappings.
+The following example shows a request. The synchornizationSchema has a one-to-many relationship between **targetAttributeName** and **source** attributes. If your schema doesn't have "timezone" as a target attribute, the service adds a new mapping for extensionAttribute11 --> timezone. If your application has timezone as a target attribute in the schema, the service throws an error because an attribute can only be mapped as a target once. In addition, the attribute must exist in the schema before it can be added to the mappings.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
