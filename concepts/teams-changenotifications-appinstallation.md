@@ -26,7 +26,7 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### Personal scope
 
-Subscriptions to `Personal` scope enable you to get change notifications for Teams apps installed or to be installed within any user. To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
+`Personal` scope subscriptions refer to being able to receive change notifications for Teams apps installed or to be installed within any user. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ Subscriptions to `Personal` scope enable you to get change notifications for Tea
 
 #### Team scope
 
-Subscriptions to `Team` scope enable you to get change notifications for Teams apps installed or to be installed within any team. To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
+`Team` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any team. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -46,7 +46,7 @@ Subscriptions to `Team` scope enable you to get change notifications for Teams a
 
 #### Chat scope
 
-Subscriptions to `Chat` scope enable you to get change notifications for Teams apps installed or to be installed within any chat. To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
+`Chat` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -59,13 +59,14 @@ Subscriptions to `Chat` scope enable you to get change notifications for Teams a
 
 #### All scopes
 
-Subscriptions to `All` scope enable you to get change notifications for Teams apps installed or to be installed within any chat, team or user. To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
+`All` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat, team or user. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All |
+
+| Permission type                        | Least privileged permissions | Higher privileged permissions |
+|:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              | Not supported.                              |
+| Application                            | Not supported.                              |TeamsAppInstallation.Read.All|
 
 #### RSC permissions
 
