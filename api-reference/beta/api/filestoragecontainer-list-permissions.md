@@ -57,7 +57,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions
 ```
 
 # [C#](#tab/csharp)
@@ -149,3 +149,5 @@ Content-Type: application/json
 }
 ```
 
+## Optional query parameter
+By default, this API lists only container-scoped permissions. You can use the `includeAllContainerUsers=true` query parameter to include entries for identities that may have at least one item-level permission in the container but don't have a container-scoped permission.

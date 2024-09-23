@@ -88,7 +88,7 @@ The following example shows how to get all the custom properties of a **fileStor
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties/
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/
 ```
 
 # [JavaScript](#tab/javascript)

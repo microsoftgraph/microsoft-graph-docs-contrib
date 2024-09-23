@@ -28,6 +28,7 @@ Inherits from [baseItem](baseitem.md).
 | Relationship | Type                                           | Description                                        |
 |:-------------|:-----------------------------------------------|:---------------------------------------------------|
 | items        | [recycleBinItem](recyclebinitem.md) collection | List of the **recycleBinItems** deleted by a user. |
+|settings|[recycleBinSettings](./recyclebinsettings.md)|Settings of the recycleBin.|
 
 ## JSON Representation
 
