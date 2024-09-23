@@ -18,7 +18,7 @@ Represents the email configuration for an alert type in Microsoft Entra Health.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The identifier of the group to send an email to.|
+|groupId|String|The identifier of the group to send an email to. All AAD group types are supported as long as each user has a configured email address.|
 |isEnabled|Boolean|Indicates whether email notifications are enabled on the alert type.|
 
 ## Relationships
