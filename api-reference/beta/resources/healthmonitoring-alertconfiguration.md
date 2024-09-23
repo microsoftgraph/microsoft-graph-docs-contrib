@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|emailNotificationConfigurations|[microsoft.graph.healthMonitoring.emailNotificationConfiguration](../resources/healthmonitoring-emailnotificationconfiguration.md) collection|Defines the recipients of email notifications for an alert type. |
+|emailNotificationConfigurations|[microsoft.graph.healthMonitoring.emailNotificationConfiguration](../resources/healthmonitoring-emailnotificationconfiguration.md) collection|Defines the recipients of email notifications for an alert type. Currently, only one email notification configuration is supported for an alert configuration, meaning just one group will receive notifications for an alert type.|
 |id|String|The unique identifier of this alert configuration under the associated tenant. For example: `mfaSignInFailure`, `managedDeviceSignInFailure`. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships

@@ -57,7 +57,7 @@ PATCH /reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailNotificationConfigurations|[microsoft.graph.healthMonitoring.emailNotificationConfiguration](../resources/healthmonitoring-emailnotificationconfiguration.md) collection|Email notification settings for the particular alert type.|
+|emailNotificationConfigurations|[microsoft.graph.healthMonitoring.emailNotificationConfiguration](../resources/healthmonitoring-emailnotificationconfiguration.md) collection|Email notification settings for the particular alert type. Currently, only one email notification configuration is supported for an alert configuration, meaning just one group will receive notifications for an alert type.|
 
 
 
