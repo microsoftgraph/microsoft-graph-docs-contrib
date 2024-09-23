@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String|Custom name of the application|
-|serviceManagementReference|String| (Optional) The service tree ID for this service. |
+|serviceManagementReference|String|The service tree ID for this service. Optional.|
 
 ## Response
 
