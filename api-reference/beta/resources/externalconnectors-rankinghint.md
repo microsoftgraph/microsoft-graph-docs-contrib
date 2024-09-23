@@ -2,7 +2,7 @@
 title: "rankingHint resource type"
 description: "The ranking hint for the property."
 author: "emzho"
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
 ---
@@ -24,7 +24,7 @@ Specifies the schema property's ranking hint.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.rankingHint"

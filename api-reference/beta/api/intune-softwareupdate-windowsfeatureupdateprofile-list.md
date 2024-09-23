@@ -2,7 +2,7 @@
 title: "List windowsFeatureUpdateProfiles"
 description: "List properties and relationships of the windowsFeatureUpdateProfile objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1012
+Content-Length: 1058
 
 {
   "value": [
@@ -85,7 +85,8 @@ Content-Length: 1012
       ],
       "deployableContentDisplayName": "Deployable Content Display Name value",
       "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
-      "installLatestWindows10OnWindows11IneligibleDevice": true
+      "installLatestWindows10OnWindows11IneligibleDevice": true,
+      "installFeatureUpdatesOptional": true
     }
   ]
 }

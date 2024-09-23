@@ -1,19 +1,22 @@
 ---
-title: "cloudPC: bulkResize"
+title: "cloudPC: bulkResize (deprecated)"
 description: "Bulk resizes a set of Cloud PC devices."
-author: "Aria Zhang (yuzhang3)"
+author: "liguojing929"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: bulkResize
+# cloudPC: bulkResize (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
+> [!CAUTION]
+> This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs.
+
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that successfully pass [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -141,7 +144,8 @@ Content-Type: application/json
         "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
         "cloudPcId": "30d0e128-de93-41dc-89ec-33d84bb662a0",
         "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-        "statusDetails": null
+        "statusDetails": null,
+        "statusDetail": null
       },
       {
         "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcRemoteActionResult",
@@ -151,7 +155,8 @@ Content-Type: application/json
         "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
         "cloudPcId": "7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
         "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",
-        "statusDetails": null
+        "statusDetails": null,
+        "statusDetail": null
       }
     ]
 }

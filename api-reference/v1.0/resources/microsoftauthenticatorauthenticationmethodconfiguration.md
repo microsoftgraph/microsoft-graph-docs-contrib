@@ -6,6 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Microsoft Authenticator
 ---
 
 # microsoftAuthenticatorAuthenticationMethodConfiguration resource type
@@ -35,7 +36,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |includeTargets|[microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method. Expanded by default.|
 
-## JSON representation
+The following JSON representation shows the resource type.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

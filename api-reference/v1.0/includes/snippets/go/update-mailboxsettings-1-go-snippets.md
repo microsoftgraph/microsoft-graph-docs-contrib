@@ -33,7 +33,7 @@ scheduledEndDateTime.SetTimeZone(&timeZone)
 automaticRepliesSetting.SetScheduledEndDateTime(scheduledEndDateTime)
 requestBody.SetAutomaticRepliesSetting(automaticRepliesSetting)
 additionalData := map[string]interface{}{
-	"odataContext" : "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings", 
+	"@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings", 
 }
 requestBody.SetAdditionalData(additionalData)
 

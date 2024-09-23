@@ -2,7 +2,7 @@
 title: "iosKerberosSingleSignOnExtension resource type"
 description: "Represents a Kerberos-type Single Sign-On extension profile for iOS devices."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

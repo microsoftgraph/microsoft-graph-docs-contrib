@@ -2,7 +2,7 @@
 title: "windows10VpnProfileTarget enum type"
 description: "Windows 10 VPN profile target types."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.subject_rights_request import SubjectRightsRequest
 from msgraph_beta.generated.models.subject_rights_request_type import SubjectRightsRequestType
@@ -11,9 +12,7 @@ from msgraph_beta.generated.models.data_subject_type import DataSubjectType
 from msgraph_beta.generated.models.data_subject import DataSubject
 from msgraph_beta.generated.models.subject_rights_request_all_site_location import SubjectRightsRequestAllSiteLocation
 from msgraph_beta.generated.models.user import User
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = SubjectRightsRequest(
 	type = SubjectRightsRequestType.Export,
 	content_query = "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",

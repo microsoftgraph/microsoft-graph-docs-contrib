@@ -51,7 +51,7 @@ Only the following type-related properties are supported and they're mutually ex
 
 |Property|Type|Description|
 |:---|:---|:---|
-|boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores boolean values.|
+|Boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores Boolean values.|
 |choice|[choiceColumn](../resources/choicecolumn.md)|This column stores data from a list of choices.|
 |currency|[currencyColumn](../resources/currencycolumn.md)|This column stores currency values.|
 |dateTime|[dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|

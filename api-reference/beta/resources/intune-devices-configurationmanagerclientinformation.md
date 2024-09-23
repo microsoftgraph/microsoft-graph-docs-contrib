@@ -2,7 +2,7 @@
 title: "configurationManagerClientInformation resource type"
 description: "Configuration Manager client information synced from SCCM"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -8,18 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new WorkbookChartAxis
 {
-	MajorUnit = new Json
+	MajorUnit = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
-	Maximum = new Json
+	}),
+	Maximum = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
-	Minimum = new Json
+	}),
+	Minimum = new UntypedObject(new Dictionary<string, UntypedNode>
 	{
-	},
+	}),
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

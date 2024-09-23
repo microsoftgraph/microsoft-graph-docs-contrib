@@ -2,7 +2,7 @@
 title: "deviceManagementApplicabilityRuleOsEdition resource type"
 description: "Intune Deviceconfig Devicemanagementapplicabilityruleosedition Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

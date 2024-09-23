@@ -3,7 +3,7 @@ title: "Update profileCardProperty"
 description: "Update the properties of a profileCardProperty object, identified by its directoryPropertyName property."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilecardproperty_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
 
 ## HTTP request
 

@@ -2,7 +2,7 @@
 title: "intuneBrandingProfileAssignment resource type"
 description: "This entity contains the properties used to assign a branding profile to a group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

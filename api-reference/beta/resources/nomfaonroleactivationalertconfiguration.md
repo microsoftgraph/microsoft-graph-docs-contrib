@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: No MFA on role activation
 ---
 
 # noMfaOnRoleActivationAlertConfiguration resource type
@@ -16,6 +17,11 @@ Namespace: microsoft.graph
 Represents an alert configuration that is triggered if roles don't require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
 
 ## Properties
 |Property|Type|Description|

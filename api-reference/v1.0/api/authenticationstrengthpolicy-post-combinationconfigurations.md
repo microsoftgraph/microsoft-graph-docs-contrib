@@ -1,6 +1,6 @@
 ---
 title: "Create authenticationCombinationConfiguration"
-description: "Create a new authenticationCombinationConfiguration object. In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies."
+description: "Create a new authenticationCombinationConfiguration object."
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
@@ -8,10 +8,12 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Create combinationConfiguration
+# Create authenticationCombinationConfiguration
 Namespace: microsoft.graph
 
-Create a new authenticationCombinationConfiguration object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) may be created, and these may only be created for custom authentication strength policies.
+Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:
+* [fido2combinationConfiguration](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,27 +48,28 @@ You can specify the following properties when creating an **authenticationCombin
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations to which this configuration applies. The only possible value for fido2combinationConfigurations is `fido2`. Required.|
-
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fido2CombinationConfiguration](../resources/fido2CombinationConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object which can be a [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Create a fido2combinationConfiguration object
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationcombinationconfiguration_from_"
+  "name": "create_authenticationcombinationconfiguration_fido2CombinationConfiguration"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}//combinationConfigurations
 Content-Type: application/json
 Content-length: 130
 
@@ -82,40 +85,40 @@ Content-length: 130
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-fido2combinationconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-from--cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-fido2combinationconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-fido2combinationconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-fido2combinationconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-fido2combinationconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-fido2combinationconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-from--powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-fido2combinationconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-from--python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-fido2combinationconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -138,5 +141,91 @@ Content-Type: application/json
   ],
   "appliesToCombinations": ["fido2"]
 }
+```
+
+### Example 2: Create a x509CertificateCombinationConfiguration object
+
+#### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationcombinationconfiguration_x509CertificateCombinationConfiguration"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations 
+ 
+{ 
+    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
+    "allowedIssuerSkis": [ 
+        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
+    ], 
+    "allowedPolicyOIDs": [], 
+    "appliesToCombinations": [ 
+        "x509CertificateSingleFactor " 
+    ] 
+} 
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationcombinationconfiguration-x509certificatecombinationconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationCombinationConfiguration"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
+    "id" : "96cb1a17-e45e-4b4f-8b4b-4a9490d63d66",
+    "allowedIssuerSkis": [ 
+        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
+    ], 
+    "allowedPolicyOIDs": [], 
+    "appliesToCombinations": [ 
+        "x509CertificateSingleFactor " 
+    ] 
+} 
 ```
 

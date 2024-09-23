@@ -3,7 +3,7 @@ title: "sitePage resource type"
 description: Represents a site page in the sitePages list.
 author: Sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -75,7 +75,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -2,7 +2,7 @@
 title: "windowsDeviceAzureADAccount resource type"
 description: "Intune Devices Windowsdeviceazureadaccount Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

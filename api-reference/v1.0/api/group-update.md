@@ -35,7 +35,7 @@ PATCH /groups/{id}
 
 | Name          | Type   | Description               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -46,7 +46,7 @@ The following table specifies the properties that can be updated.
 | Property                | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowExternalSenders    | Boolean | Default is `false`. Indicates whether people external to the organization can send messages to the group.                                                                                                                                                                                                                                                                                                                                                                                    |
-| assignedLabels                | [assignedLabel](../resources/assignedlabel.md) collection                             | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.|
+| assignedLabels                | [assignedLabel](../resources/assignedlabel.md) collection                             | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).|
 | autoSubscribeNewMembers | Boolean | Default is `false`. Indicates whether new members added to the group will be auto-subscribed to receive email notifications. **autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.                                                                                                                                                                                                                                                        |
 | description             | String  | An optional description for the group.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | displayName             | String  | The display name for the group. This property is required when a group is created and it cannot be cleared during updates.                                                                                                                                                                                                                                                                                                                                                                   |
@@ -89,17 +89,13 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0d09007d-45b2-458c-b180-880dde3a302e
 Content-type: application/json
 
 {
-  "description": "Library Assist",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mailEnabled": true,
-  "mailNickname": "library-help"
+  "description": "Library Assist - ADC",
+  "displayName": "Library Assist - ADC",
+  "mailNickname": "library-help-adc"
 }
 ```
 

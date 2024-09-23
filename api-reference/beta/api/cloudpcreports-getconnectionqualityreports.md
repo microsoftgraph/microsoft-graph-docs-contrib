@@ -1,5 +1,5 @@
 ---
-title: "cloudPcReports: getConnectionQualityReports"
+title: "cloudPcReports: getConnectionQualityReports (deprecated)"
 description: "Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage."
 author: "RuiHou105"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPcReports: getConnectionQualityReports
+# cloudPcReports: getConnectionQualityReports (deprecated)
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+>[!CAUTION] 
+> This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](cloudpcreports-retrieveconnectionqualityreports.md) API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -67,6 +70,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getconnectionqualityreports"
@@ -98,6 +102,40 @@ Content-length: 200
   "orderBy": []
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetconnectionqualityreports-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetconnectionqualityreports-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetconnectionqualityreports-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgetconnectionqualityreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgetconnectionqualityreports-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetconnectionqualityreports-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetconnectionqualityreports-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetconnectionqualityreports-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

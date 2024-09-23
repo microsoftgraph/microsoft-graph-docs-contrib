@@ -2,7 +2,7 @@
 title: "macOSAppScript resource type"
 description: "Shell script used to assist installation of a macOS app. These scripts are used to perform additional tasks to help the app successfully be configured."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

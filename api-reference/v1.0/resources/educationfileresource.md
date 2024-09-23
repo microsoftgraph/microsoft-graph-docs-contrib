@@ -25,9 +25,13 @@ In this case, the file isn't one of the special files (Word, Excel, and so on) b
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -44,7 +44,7 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -53,7 +53,7 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 
 | Property             | Type                                                                        | Description                                                                                 |
 | :------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| createUnmatchedUsers | Boolean                                                                     | A boolean choice indicating whether unmatched users should be created or ignored. Optional. |
+| createUnmatchedUsers | Boolean                                                                     | A Boolean choice indicating whether unmatched users should be created or ignored. Optional. |
 | managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |
 | creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
 

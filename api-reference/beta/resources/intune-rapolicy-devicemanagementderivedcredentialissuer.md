@@ -2,7 +2,7 @@
 title: "deviceManagementDerivedCredentialIssuer enum type"
 description: "Supported values for the derived credential issuer."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

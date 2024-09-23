@@ -3,7 +3,7 @@ title: "Create profileCardProperty"
 description: "Create a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "peopleadminsettings_post_profilecardproperties" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
 
 ## HTTP request
 

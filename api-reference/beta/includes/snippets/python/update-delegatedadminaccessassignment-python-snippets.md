@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.tenant_relationships.delegated_admin_relationships.item.access_assignments.item.delegated_admin_access_assignment_item_request_builder import DelegatedAdminAccessAssignmentItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph_beta.generated.models.delegated_admin_access_assignment import DelegatedAdminAccessAssignment
 from msgraph_beta.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
 from msgraph_beta.generated.models.unified_role import UnifiedRole
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DelegatedAdminAccessAssignment(
 	access_details = DelegatedAdminAccessDetails(
 		unified_roles = [

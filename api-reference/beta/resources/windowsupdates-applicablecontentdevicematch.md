@@ -3,7 +3,7 @@ title: "applicableContentDeviceMatch resource type"
 description: "Represents a collection of devices and recommendations for the applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a collection of devices and recommendations for the applicable catalo
 |:-------------|:-------------------------------------------------|:-------------------------------------------------|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.applicableContentDeviceMatch", 

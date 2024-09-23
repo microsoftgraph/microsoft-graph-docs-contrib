@@ -2,7 +2,7 @@
 title: "identity resource type"
 description: "The Identity"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

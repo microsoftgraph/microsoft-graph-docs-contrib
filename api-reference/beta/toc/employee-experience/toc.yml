@@ -1,5 +1,8 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
-- name: Employee engagement (preview)
+- name: Employee engagement
   items:
   - name: Overview
     href: ../../resources/engagement-api-overview.md
@@ -7,10 +10,16 @@ items:
     items:
     - name: Community
       href: ../../resources/community.md
+    - name: List
+      href: ../../api/employeeexperience-list-communities.md
     - name: Create
       href: ../../api/employeeexperience-post-communities.md
     - name: Get
       href: ../../api/community-get.md
+    - name: Update
+      href: ../../api/community-update.md
+    - name: Delete
+      href: ../../api/community-delete.md
   - name: Engagement async operation
     items:
     - name: Engagement async operation

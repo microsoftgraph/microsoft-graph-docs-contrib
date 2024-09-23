@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsHealthState enum type"
 description: "Intune Devices Userexperienceanalyticshealthstate Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

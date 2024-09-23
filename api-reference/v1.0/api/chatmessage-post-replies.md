@@ -40,7 +40,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory. Other properties are optional.

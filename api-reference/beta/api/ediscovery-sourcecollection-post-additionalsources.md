@@ -3,7 +3,7 @@ title: "Create dataSource"
 description: "Add additional data sources to a source collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

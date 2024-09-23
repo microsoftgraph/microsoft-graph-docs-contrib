@@ -2,7 +2,7 @@
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -60,6 +60,9 @@ The following table shows the properties that are required when you create the [
 |deviceIMEI|String|IMEI of the device.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |managedDeviceId|String|Action target.|
+|deviceActionDetails|[keyValuePair_2OfString_String](../resources/intune-devices-keyvaluepair_2ofstring_string.md) collection|DeviceAction details|
+|deviceActionCategory|[deviceActionCategory](../resources/intune-devices-deviceactioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
+|bulkDeviceActionId|String|BulkAction ID|
 
 
 
@@ -73,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
-Content-length: 504
+Content-length: 713
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -85,7 +88,14 @@ Content-length: 504
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
   "actionState": "pending",
-  "managedDeviceId": "Managed Device Id value"
+  "managedDeviceId": "Managed Device Id value",
+  "deviceActionDetails": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair_2OfString_String"
+    }
+  ],
+  "deviceActionCategory": "bulk",
+  "bulkDeviceActionId": "Bulk Device Action Id value"
 }
 ```
 
@@ -94,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 553
+Content-Length: 762
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -107,6 +117,13 @@ Content-Length: 553
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
   "actionState": "pending",
-  "managedDeviceId": "Managed Device Id value"
+  "managedDeviceId": "Managed Device Id value",
+  "deviceActionDetails": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair_2OfString_String"
+    }
+  ],
+  "deviceActionCategory": "bulk",
+  "bulkDeviceActionId": "Bulk Device Action Id value"
 }
 ```

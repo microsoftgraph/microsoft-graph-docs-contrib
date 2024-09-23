@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new TenantAppManagementPolicy
 {
 	IsEnabled = true,
-	ApplicationRestrictions = new AppManagementConfiguration
+	ApplicationRestrictions = new AppManagementApplicationConfiguration
 	{
 		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{
@@ -65,6 +65,15 @@ var requestBody = new TenantAppManagementPolicy
 					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
 				},
 				MaxLifetime = null,
+			},
+		},
+		IdentifierUris = new IdentifierUriConfiguration
+		{
+			NonDefaultUriAddition = new IdentifierUriRestriction
+			{
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+				ExcludeAppsReceivingV2Tokens = true,
+				ExcludeSaml = true,
 			},
 		},
 	},

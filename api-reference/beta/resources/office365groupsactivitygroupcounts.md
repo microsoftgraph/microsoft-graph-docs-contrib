@@ -21,6 +21,10 @@ Namespace: microsoft.graph
 | reportDate        | Date   | The date on which groups were active. |
 | reportPeriod      | String | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

@@ -2,7 +2,7 @@
 title: "windowsUpdateActiveHoursInstall resource type"
 description: "Intune Deviceconfig Windowsupdateactivehoursinstall Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

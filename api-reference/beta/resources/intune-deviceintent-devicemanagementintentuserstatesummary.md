@@ -2,7 +2,7 @@
 title: "deviceManagementIntentUserStateSummary resource type"
 description: "Entity that represents user state summary for an intent"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

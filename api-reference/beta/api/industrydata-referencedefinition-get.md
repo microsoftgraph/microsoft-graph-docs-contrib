@@ -125,6 +125,7 @@ Content-Type: application/json
 {
   "code": "01",
   "createdDateTime": "0001-01-01T00:00:00Z",
+  "displayName": "English Language and Literature",
   "id": "RefAcademicSubject-01",
   "isDisabled": false,
   "lastModifiedDateTime": "0001-01-01T00:00:00Z",

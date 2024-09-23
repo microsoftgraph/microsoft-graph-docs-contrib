@@ -42,8 +42,10 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete file storage container column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
 |[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
 |[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
-|[Delete recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
+|[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[Get recycle bin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
+|[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -56,18 +58,19 @@ Represents a location where multiple users or a group of users can store files a
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
 |id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
 |owners|[userIdentity](../resources/useridentity.md) collection|List of users who own the **fileStorageContainer**. Read-only.|
-|ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**.The possible values are: `tenantOwned`. Read-only.|
+|ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**. The possible values are: `tenantOwned`. Read-only.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
-|storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**. In bytes. Read-only.||
+|storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**, in bytes. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
-|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings specific to the container. Read-write.|
+|lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
-|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. The permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. Read-write.|
+|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. The permission for each user is set by the **roles** property. The possible values are `reader`, `writer`, `manager`, and `owner`. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 
 ### roles property values
@@ -109,7 +112,8 @@ The following JSON representation shows the resource type.
   "owners":  [ { "@odata.type": "microsoft.graph.userIdentity" } ],
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
   "expiryDateTime": "string (timestamp)",
-  "settings": {"@odata.type": "microsoft.graph.fileStorageContainerSettings"}
+  "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
 }
 ```
 

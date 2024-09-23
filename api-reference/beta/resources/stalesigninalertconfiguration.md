@@ -5,6 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Inactive account
 ---
 
 # staleSignInAlertConfiguration resource type
@@ -16,6 +17,11 @@ Namespace: microsoft.graph
 Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified period. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to security threats.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
 
 ## Properties
 |Property|Type|Description|

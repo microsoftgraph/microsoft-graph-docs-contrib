@@ -53,7 +53,7 @@ The following example shows only tasks from Planner with ID _12345_ and doesn't 
 <mgt-planner read-only initial-id="12345"></mgt-planner>
 ```
 
-The following example shows how to filter tasks that only have _category3_ set.
+The following example shows how to filter tasks that have only _category3_ set.
 
 ```js
 let taskView = document.querySelector("mgt-planner");
@@ -153,6 +153,12 @@ taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
 
   --task-new-person-icon-text-color: blue;
   --task-new-person-icon-color: blue;
+  
+  /** affects the options menu */
+  --dot-options-menu-background-color: yellow;
+  --dot-options-menu-shadow-color: yellow;
+  --dot-options-menu-item-color: maroon;
+  --dot-options-menu-item-hover-background-color: white;
 }
 ```
 
@@ -191,7 +197,7 @@ The following example defines a template for the planner component.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the listed permissions.
 
 | Configuration                                                                 | Permission                                                            | API                                                                                                                                                                                                                         |
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -199,7 +205,7 @@ This control uses the following Microsoft Graph APIs and permissions. For each A
 | default behavior                                                              | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/me/planner/plans](/graph/api/planneruser-list-plans), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)                  |
 | `groupId` set                                                                 | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans), [/planner/plans/${planId}/buckets](/graph/api/planner-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)     |
 | `targetId` set                                                                | Tasks.Read, Group.Read.All, Tasks.ReadWrite, Group.ReadWrite.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerbucket-list-tasks)                  |
-| create, update or delete task                                                 | Tasks.ReadWrite, Group.ReadWrite.All                                  | [POST /planner/tasks](/graph/api/planner-post-tasks), [PATCH /planner/tasks/${taskId}](/graph/api/plannertask-update), [DELETE /planner/tasks/${taskId}](/graph/api/plannertask-delete)                                     |
+| create, update, or delete task                                                 | Tasks.ReadWrite, Group.ReadWrite.All                                  | [POST /planner/tasks](/graph/api/planner-post-tasks), [PATCH /planner/tasks/${taskId}](/graph/api/plannertask-update), [DELETE /planner/tasks/${taskId}](/graph/api/plannertask-delete)                                     |
 
 ### Subcomponents
 

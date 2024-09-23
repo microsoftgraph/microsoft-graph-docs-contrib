@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/sharepoint.md
@@ -18,11 +21,15 @@ items:
   - name: Get activities by interval
     href: ../../api/itemactivity-getbyinterval.md
   - name: List pages
-    href: ../../api/baseSitePage-list.md
+    href: ../../api/basesitepage-list.md
+  - name: List page templates
+    href: ../../api/pagetemplate-list.md
   - name: List root sites
     href: ../../api/site-list.md
   - name: List sites across geographies
     href: ../../api/site-getallsites.md
+  - name: List subsites for a site
+    href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
   - name: Follow site
@@ -49,7 +56,9 @@ items:
     href: ../../api/site-list-columns.md
   - name: Create column
     href: ../../api/site-post-columns.md
-  - name: List operations in a site
+  - name: Create document processing job
+    href: ../../api/site-post-documentprocessingjobs.md
+  - name: List operations
     href: ../../api/site-list-operations.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
@@ -59,22 +68,22 @@ items:
   items:
   - name: List
     href: ../../resources/list.md
-  - name: Get lists in a site
-    href: ../../api/list-list.md
-  - name: Create list
+  - name: Create
     href: ../../api/list-create.md
-  - name: Get list
+  - name: Get
     href: ../../api/list-get.md
-  - name: Get recent activities
-    href: ../../api/activities-list.md
   - name: Get items
     href: ../../api/listitem-list.md
+  - name: Get lists in a site
+    href: ../../api/list-list.md
+  - name: Get recent activities
+    href: ../../api/activities-list.md
+  - name: Create item
+    href: ../../api/listitem-create.md
   - name: Update item
     href: ../../api/listitem-update.md
   - name: Delete item
     href: ../../api/listitem-delete.md
-  - name: Create item
-    href: ../../api/listitem-create.md
   - name: Get websocket endpoint
     href: ../../api/subscriptions-socketio.md
   - name: List operations in a list
@@ -87,6 +96,30 @@ items:
     href: ../../api/list-list-columns.md
   - name: Create column
     href: ../../api/list-post-columns.md
+  - name: List permissions
+    href: ../../api/list-list-permissions.md
+  - name: Create permission
+    href: ../../api/list-list-permissions.md
+  - name: Get permission
+    href: ../../api/list-post-permissions.md
+  - name: Update permission
+    href: ../../api/list-update-permissions.md
+  - name: Delete permission
+    href: ../../api/list-delete-permissions.md
+- name: Content model
+  items:
+  - name: Content model
+    href: ../../resources/contentmodel.md
+  - name: Get
+    href: ../../api/contentmodel-get.md
+  - name: Get applied drives
+    href: ../../api/contentmodel-getapplieddrives.md
+  - name: Get by name
+    href: ../../api/contentmodel-getbyname.md
+  - name: Add to drive
+    href: ../../api/contentmodel-addtodrive.md
+  - name: Remove from drive
+    href: ../../api/contentmodel-removefromdrive.md
 - name: Column definition
   items:
   - name: Column definition
@@ -112,7 +145,47 @@ items:
 - name: Content type
   href: ../../resources/contenttype.md
 - name: List item
-  href: ../../resources/listitem.md
+  items:
+  - name: List item
+    href: ../../resources/listitem.md
+  - name: Create
+    href: ../../api/listitem-create.md
+  - name: Get
+    href: ../../api/listitem-get.md
+  - name: Update
+    href: ../../api/listitem-update.md
+  - name: Delete
+    href: ../../api/listitem-delete.md
+  - name: Get analytics
+    href: ../../api/itemanalytics-get.md
+  - name: Get column values
+    href: ../../api/listitem-get.md
+  - name: Update column values
+    href: ../../api/listitem-update.md
+  - name: List document set version
+    href: ../../api/listitem-list-documentsetversions.md
+  - name: Create document set version
+    href: ../../api/listitem-post-documentsetversions.md
+  - name: Restore document set version
+    href: ../../api/documentsetversion-restore.md
+  - name: Get delta
+    href: ../../api/listitem-delta.md
+  - name: List permissions
+    href: ../../api/listitem-list-permissions.md
+  - name: Create permission
+    href: ../../api/listitem-list-permissions.md
+  - name: Get permission
+    href: ../../api/listitem-post-permissions.md
+  - name: Update permission
+    href: ../../api/listitem-update-permissions.md
+  - name: Delete permission
+    href: ../../api/listitem-delete-permissions.md
+- name: Document processing job
+  items:
+  - name: Document processing job
+    href: ../../resources/documentprocessingjob.md
+  - name: Create
+    href: ../../api/site-post-documentprocessingjobs.md
 - name: Document set version
   items:
   - name: Document set version
@@ -180,9 +253,9 @@ items:
     - name: List
       href: ../../api/basesitepage-list.md
     - name: Get
-      href: ../../api/baseSitePage-get.md
+      href: ../../api/basesitepage-get.md
     - name: Delete
-      href: ../../api/baseSitePage-delete.md
+      href: ../../api/basesitepage-delete.md
   - name: Site page
     items:
     - name: Site page
@@ -201,6 +274,44 @@ items:
       href: ../../api/sitepage-publish.md
     - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Horizontal section
+      items:
+      - name: Horizontal section
+        href: ../../resources/horizontalsection.md
+      - name: List
+        href: ../../api/horizontalsection-list.md
+      - name: Create
+        href: ../../api/sitepage-post-horizontalsection.md
+      - name: Get
+        href: ../../api/horizontalsection-get.md
+      - name: Update
+        href: ../../api/horizontalsection-update.md
+      - name: Delete
+        href: ../../api/horizontalsection-delete.md
+    - name: Horizontal section column
+      items:
+      - name: Horizontal section column
+        href: ../../resources/horizontalsectioncolumn.md
+      - name: List horizontalSectionColumns
+        href: ../../api/horizontalsectioncolumn-list.md
+      - name: Get horizontalSectionColumn
+        href: ../../api/horizontalsectioncolumn-get.md
+      - name: List webParts
+        href: ../../api/webpart-list.md
+    - name: Vertical section
+      items:
+      - name: Vertical section
+        href: ../../resources/verticalsection.md
+      - name: List
+        href: ../../api/webpart-list.md
+      - name: Create
+        href: ../../api/sitepage-post-verticalsection.md
+      - name: Get
+        href: ../../api/verticalsection-get.md
+      - name: Update
+        href: ../../api/verticalsection-update.md
+      - name: Delete
+        href: ../../api/verticalsection-delete.md
   - name: Web part
     items:
     - name: Web part
@@ -218,11 +329,29 @@ items:
     - name: Get position
       href: ../../api/webpart-getposition.md
     - name: Get by position
-      href: ../../api/sitePage-getwebpartsbyposition.md
+      href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Text web part
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
+  - name: Complex types
+    items:
+    - name: Save as template
+      href: ../../resources/saveastemplate.md
 - name: Taxonomy
   items:
   - name: Store

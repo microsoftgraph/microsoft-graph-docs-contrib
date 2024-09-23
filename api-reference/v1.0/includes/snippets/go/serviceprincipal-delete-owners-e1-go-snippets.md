@@ -17,7 +17,7 @@ import (
 
 requestBody := graphserviceprincipals.New$refDeleteRequestBody()
 additionalData := map[string]interface{}{
-	"odataId" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
+	"@odata.id" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
 }
 requestBody.SetAdditionalData(additionalData)
 

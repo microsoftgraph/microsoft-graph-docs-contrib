@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Team
 {
@@ -127,10 +128,12 @@ var requestBody = new Team
 			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 		},
 		{
-			"discoverySettings" , new 
+			"discoverySettings" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				ShowInTeamsSearchAndSuggestions = true,
-			}
+				{
+					"showInTeamsSearchAndSuggestions", new UntypedBoolean(true)
+				},
+			})
 		},
 	},
 };

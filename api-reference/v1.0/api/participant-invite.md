@@ -15,7 +15,9 @@ Invite participants to the active call.
 
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
->**Note:** Inviting multiple participants in one request is only supported for group calls.
+>**Note:**
+> * Inviting multiple participants in one request is only supported for group calls.
+> * Inviting more than one bot to a meeting or group call isn't allowed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,13 +52,13 @@ If successful, this method returns a `200 OK` response code and a location heade
 
 The body of the response contains the created [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
 
->**Note:** When this API returns a successful response, all participants will receive a roster update.
+>**Note:** When this API returns a successful response, all participants receive a roster update.
 
 
 ## Examples
 The following examples show how to call this API.
 
-> **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response objects might be shortened for readability. All the properties are returned from an actual call.
 
 ### Example 1: Invite one participant to an existing call
 
@@ -533,9 +535,7 @@ Content-Type: application/json
 ### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
 
 
-The invite API supports only one participant when replacing an existing peer-to-peer call. 
-When multiple participants are provided in the request body, only the first participant 
-will be read and the rest of the participants will be ignored.
+The invite API supports only one participant when replacing an existing peer-to-peer call. When multiple participants are provided in the request body, only the first participant is read and the rest of the participants are ignored.
 
 
 > **Note:** The invite API supports only one participant when `replacesCallId` is provided. 
@@ -961,7 +961,7 @@ Content-Type: application/json
 You can move one participant from one meeting to another if these two meetings have been created by the same application.
 For more information about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings).
 
-> **Note:** The invite API can move only one participate per request. If you provide more than one participant in the request body, the invite API will move only the first one.
+> **Note:** The invite API can move only one participate per request. If you provide more than one participant in the request body, the invite API moves only the first one.
 
 #### Request
 

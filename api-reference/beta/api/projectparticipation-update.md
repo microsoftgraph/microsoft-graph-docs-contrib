@@ -3,7 +3,7 @@ title: "Update projectParticipation resource type"
 description: "Update the properties of a projectParticipation object in a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -175,6 +175,7 @@ Content-type: application/json
       "displayName": "Adventureworks Inc.",
       "pronunciation": null,
       "department": "Consulting",
+      "companyCode": "C-100",
       "officeLocation": null,
       "address": null,
       "webUrl": "https://adventureworks.com"

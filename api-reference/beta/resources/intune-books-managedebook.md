@@ -2,7 +2,7 @@
 title: "managedEBook resource type"
 description: "An abstract class containing the base properties for Managed eBook."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

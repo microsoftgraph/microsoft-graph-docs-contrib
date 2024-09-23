@@ -25,16 +25,15 @@ by providing a [delta](../api/contact-delta.md) function.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get contact](../api/contact-get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
-|[Create contact](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
-|[Update contact](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
-|[Delete contact](../api/contact-delete.md) | None |Delete contact object. |
+|[Get](../api/contact-get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
+|[Create](../api/user-post-contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
+|[Update](../api/contact-update.md) | [contact](contact.md) |Update contact object. |
+|[Delete](../api/contact-delete.md) | None |Delete contact object. |
+|[Permanently delete](../api/contact-permanentdelete.md)|None|Permanently delete a contact and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
 |[Get contact delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -47,17 +46,17 @@ by providing a [delta](../api/contact-delta.md) function.
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |categories|String collection|The categories associated with the contact. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
-|changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|changeKey|String|Identifies the version of the contact. Every time the contact is changed, **changeKey** changes as well, which allows Exchange to apply changes to the correct version of the object.|
 |children|String collection|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
 |createdDateTime|DateTimeOffset|The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |department|String|The contact's department.|
-|displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
+|displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the contact. |
 |gender |String |The contact's gender. |
-|generation|String|The contact's generation.|
+|generation|String|The contact's suffix.|
 |givenName|String|The contact's given name.|
 |id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
@@ -92,7 +91,7 @@ by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

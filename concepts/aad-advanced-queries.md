@@ -8,19 +8,19 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/28/2023
+ms.date: 08/23/2024
 #customer intent: As a developer building apps that call Microsoft Entra ID APIs on Microsoft Graph, I want to understand the advanced query capabilities, so that my app can efficiently access and retrieve specific data, and avoid errors.
 ---
 
 # Advanced query capabilities on Microsoft Entra ID objects
 
-As Microsoft Entra continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Microsoft Entra ID objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+Microsoft Graph supports advanced query capabilities on various Microsoft Entra ID objects, also called *directory objects*, to help you efficiently access data. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Microsoft Entra ID to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, those properties might be indexed in a separate store. This separate indexing improves query performance. However, these advanced query capabilities aren't available by default but, the requestor must set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request works by default, that is, the request doesn't require the advanced query parameters.
+**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request works by default and doesn't require the advanced query parameters.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ ConsistencyLevel: eventual
 
 ## Microsoft Entra ID (directory) objects that support advanced query capabilities
 
-These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
+Advanced query capabilities are supported only on directory objects and their relationships, including the following objects:
 
 | Object                                                                                            | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -153,77 +153,19 @@ The following table lists query scenarios on directory objects that are supporte
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-<a name='support-for-filter-by-properties-of-azure-ad-directory-objects'></a>
-
 ## Support for filter by properties of Microsoft Entra ID (directory) objects
 
-Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
-
-+ Queries that are supported by default will also work with advanced query parameters, but the response will be eventually consistent.
-+ The `in` operator is supported by default whenever `eq` operator is supported by default.
-+ The `endsWith` operator is supported only with advanced query parameters by **mail**, **otherMails**, **userPrincipalName**, and **proxyAddresses** properties.
-+ Getting empty collections (`/$count eq 0`, `/$count ne 0`) and collections with less than one object (`/$count eq 1`, `/$count ne 1`) is supported only with advanced query parameters.
-+ The `not` and `ne` negation operators are supported only with advanced query parameters.
-  + All properties that support the `eq` operator also supports the `ne` or `not` operators.
-  + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/filter-query-parameter#filter-using-lambda-operators).
-
-The following tables summarize support for `$filter` operators by properties of directory objects, and indicates where querying is supported through advanced query capabilities.
-
-### Legend
-
-+ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
-+ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
-  + `ConsistencyLevel=eventual` header
-  + `$count=true` query string
-+ ![Not supported.](../concepts/images/yesandnosymbols/no.svg) The `$filter` operator isn't supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
-+ Blank cells indicate that the query isn't valid for that property.
-+ The **null value** column indicates that the property is nullable and filterable using `null`.
-+ Properties that aren't listed here don't support `$filter` at all.
-
-[!INCLUDE [filter-directory-objects](includes/filter-directory-objects.md)]
-
-<a name='support-for-sorting-by-properties-of-azure-ad-directory-objects'></a>
+[!INCLUDE [directory-objects-filter](includes/directory-objects-filter.md)]
 
 ## Support for sorting by properties of Microsoft Entra ID (directory) objects
 
-The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
-
-### Legend
-
-+ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
-+ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
-  + `ConsistencyLevel=eventual` header
-  + `$count=true` query string
-+ Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).
-
-| Directory object   | Property name                 | $orderby |
-| ------------------ | ----------------------------- | -------- |
-| administrativeUnit | createdDateTime               | ![][AQP] |
-| administrativeUnit | deletedDateTime               | ![][AQP] |
-| administrativeUnit | displayName                   | ![][AQP] |
-| application        | createdDateTime               | ![][AQP] |
-| application        | deletedDateTime               | ![][AQP] |
-| application        | displayName                   | ![][AQP] |
-| orgContact         | createdDateTime               | ![][AQP] |
-| orgContact         | displayName                   | ![][AQP] |
-| device             | approximateLastSignInDateTime | ![][AQP] |
-| device             | createdDateTime               | ![][AQP] |
-| device             | deletedDateTime               | ![][AQP] |
-| device             | displayName                   | ![][AQP] |
-| group              | deletedDateTime               | ![][AQP] |
-| group              | displayName                   | ![][RDS] |
-| servicePrincipal   | createdDateTime               | ![][AQP] |
-| servicePrincipal   | deletedDateTime               | ![][AQP] |
-| servicePrincipal   | displayName                   | ![][AQP] |
-| user               | createdDateTime               | ![][AQP] |
-| user               | deletedDateTime               | ![][AQP] |
-| user               | displayName                   | ![][RDS] |
-| user               | userPrincipalName             | ![][RDS] |
-| [*all others*]     | [*all others*]                | ![][NS]  |
+[!INCLUDE [directory-objects-orderby](includes/directory-objects-orderby.md)]
 
 ## Error handling for advanced queries on directory objects
 
-Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header isn't specified, the request returns an error when the `$count` URL segment is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
+The following section provides examples of common error scenarios when you don't use advanced query parameters where required.
+
+Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header isn't specified, the request returns an error when the `$count` URL segment (`/$count`) is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
 
 
 # [HTTP](#tab/http)
@@ -408,7 +350,7 @@ GET https://graph.microsoft.com/beta/users?$filter=endsWith(userPrincipalName,'%
 }
 ```
 
-If a property hasn't been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
+If a property isn't indexed to support a query parameter, the request returns an error even if advanced query parameters are specified. For example, the **createdDateTime** property of the **group** resource isn't indexed for query capabilities.
 
 
 # [HTTP](#tab/http)
@@ -534,7 +476,7 @@ Content-type: application/json
 ## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
-+ [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)
++ [Query parameter limitations](https://developer.microsoft.com/graph/known-issues/?search=13635)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Microsoft Entra ID objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
 

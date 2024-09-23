@@ -2,7 +2,7 @@
 title: "macOSPkgApp resource type"
 description: "Contains properties and inherited properties for the MacOSPkgApp."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,7 @@ title: "Review app authentication library changes"
 description: "Describes how to update authentication library use in order to migrate an app from Azure AD Graph to Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: dkershaw
+ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications

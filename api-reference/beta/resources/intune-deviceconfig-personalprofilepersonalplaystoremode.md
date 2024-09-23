@@ -2,7 +2,7 @@
 title: "personalProfilePersonalPlayStoreMode enum type"
 description: "Used together with personalApplications to control how apps in the personal profile are allowed or blocked."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminreportsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminreportsettings-get-permissions.md)]
 
-> **Note:** For delegated permissions to allow apps to get report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to get report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -35,6 +35,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /admin/reportSettings
 ```
+
+## Optional query parameters
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

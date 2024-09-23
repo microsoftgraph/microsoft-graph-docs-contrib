@@ -2,7 +2,7 @@
 title: "associatedAssignmentPayloadType enum type"
 description: "This enum represents associated assignment payload type"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

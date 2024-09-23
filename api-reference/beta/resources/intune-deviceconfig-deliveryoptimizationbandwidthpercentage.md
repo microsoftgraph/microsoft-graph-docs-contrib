@@ -2,7 +2,7 @@
 title: "deliveryOptimizationBandwidthPercentage resource type"
 description: "Bandwidth limits specified as a percentage."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

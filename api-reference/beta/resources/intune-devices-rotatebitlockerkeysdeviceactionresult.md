@@ -2,7 +2,7 @@
 title: "rotateBitLockerKeysDeviceActionResult resource type"
 description: "RotateBitLockerKeys device action result"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

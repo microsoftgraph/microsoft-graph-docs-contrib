@@ -1,3 +1,6 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
   href: ../../resources/security-api-overview.md
@@ -23,13 +26,13 @@ items:
     items:
     - name: Alert
       href: ../../resources/security-alert.md
-    - name: List alerts_v2
+    - name: List
       href: ../../api/security-list-alerts_v2.md
-    - name: Get alert
+    - name: Get
       href: ../../api/security-alert-get.md
-    - name: Update alert
+    - name: Update
       href: ../../api/security-alert-update.md
-    - name: Create comment for alert
+    - name: Create comment
       href: ../../api/security-alert-post-comments.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md
@@ -339,6 +342,22 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+- name: Identities
+  items:
+  - name: Health issue
+    items:
+    - name: Health issue
+      href: ../../resources/security-healthissue.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-healthissues.md
+    - name: Get
+      href: ../../api/security-healthissue-get.md
+    - name: Update
+      href: ../../api/security-healthissue-update.md
+  - name: Complex types
+    items:
+    - name: Identity container
+      href: ../../resources/security-identitycontainer.md
 - name: Information protection
   items:
   - name: Threat assessment
@@ -589,9 +608,9 @@ items:
     items:
     - name: Secure score
       href: ../../resources/securescore.md
-    - name: List secure scores
+    - name: List
       href: ../../api/security-list-securescores.md
-    - name: Get secure score
+    - name: Get
       href: ../../api/securescore-get.md
   - name: Secure score control profile
     items:
@@ -731,6 +750,8 @@ items:
       href: ../../api/security-threatintelligence-list-sslcertificates.md
     - name: Get
       href: ../../api/security-sslcertificate-get.md
+    - name: List related hosts
+      href: ../../api/security-sslcertificate-list-relatedhosts.md
   - name: Subdomain
     items:
     - name: Subdomain
@@ -777,6 +798,10 @@ items:
       href: ../../resources/security-artifact.md
     - name: Autonomous system
       href: ../../resources/security-autonomoussystem.md
+    - name: Cloud logon request evidence
+      href: ../../resources/security-cloudlogonrequestevidence.md
+    - name: Cloud logon session evidence
+      href: ../../resources/security-cloudlogonsessionevidence.md
     - name: CVSS summary
       href: ../../resources/security-cvsssummary.md
     - name: Formatted content

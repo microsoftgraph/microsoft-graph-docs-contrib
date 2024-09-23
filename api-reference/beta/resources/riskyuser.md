@@ -25,19 +25,19 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List risky users](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) collection|List risky users and their properties.|
-|[Get risky user](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Get a specific risky user and its properties.|
-|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of a Microsoft Entra user.|
+|[List](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) collection|List risky users and their properties.|
+|[Get](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Get a specific risky user and its properties.|
 |[Confirm compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
 |[Dismiss](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
+|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of a Microsoft Entra user.|
 
 ## Properties
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |id|string|Unique ID of the user at risk.|
-|isDeleted|boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
-|isProcessing|boolean|Indicates whether a user's risky state is being processed by the backend.|
+|isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
+|isProcessing|Boolean|Indicates whether a user's risky state is being processed by the backend.|
 |riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel| Level of the detected risky user. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.  |
 |riskState|riskState| State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -66,8 +66,8 @@ The following is a JSON representation of the resource.
 {
 "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-"isProcessing": "boolean",
-"isDeleted": "boolean",
+"isProcessing": "Boolean",
+"isDeleted": "Boolean",
 "riskDetail":  "string",
 "riskLevel":  "string",
 "riskState":  "string",

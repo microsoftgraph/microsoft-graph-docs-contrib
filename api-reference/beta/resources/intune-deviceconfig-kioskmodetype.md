@@ -2,7 +2,7 @@
 title: "kioskModeType enum type"
 description: "Possible values of Android Kiosk Mode."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

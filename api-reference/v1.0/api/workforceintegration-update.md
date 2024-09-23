@@ -3,7 +3,7 @@ title: "Update workforceIntegration"
 description: "Update the properties of a workforceIntegration object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workforceintegration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workforceintegration-update-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

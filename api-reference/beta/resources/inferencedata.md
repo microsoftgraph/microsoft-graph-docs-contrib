@@ -3,7 +3,7 @@ title: "inferenceData resource type"
 description: "inferenceData resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "profile"
+ms.subservice: "profile"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ The [inferenceData](inferencedata.md) resource type provides additional detail a
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

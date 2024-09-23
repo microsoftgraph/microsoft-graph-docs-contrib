@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ruoyingl"
 ms.subservice: excel
 doc_type: resourcePageType
+toc.title: Filter
 ---
 
 # workbookFilter resource type

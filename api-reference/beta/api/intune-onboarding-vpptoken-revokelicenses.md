@@ -2,7 +2,7 @@
 title: "revokeLicenses action"
 description: "Revoke licenses associated with a specific appleVolumePurchaseProgramToken"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

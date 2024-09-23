@@ -2,7 +2,7 @@
 title: "retireScheduledManagedDevice resource type"
 description: "ManagedDevices that are scheduled for retire"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

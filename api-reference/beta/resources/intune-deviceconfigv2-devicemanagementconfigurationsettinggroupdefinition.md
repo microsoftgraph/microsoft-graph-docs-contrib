@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingGroupDefinition resource type"
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationsettinggroupdefinition Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

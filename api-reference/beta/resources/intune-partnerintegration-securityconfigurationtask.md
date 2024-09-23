@@ -2,7 +2,7 @@
 title: "securityConfigurationTask resource type"
 description: "A security configuration task."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -26,10 +26,16 @@ Becomes:
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
+> [!NOTE]
+> The following known issues are associated with this resource:
+> - [Webhook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752)
+> - [Support for multi-endpoint use case in delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894)
+
 ## Methods
 
 | Method                                                                   | Return Type                                                         | Description                                                                     |
 |:-------------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Create](../api/application-post-calls.md)                                                | [call](call.md)                                                     | Create **call** enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.                                         |
 | [Get](../api/call-get.md)                                                | [call](call.md)                                                     | Read properties of the **call** object.                                         |
 | [Delete/hang up](../api/call-delete.md)                                          | None                                                                | Delete or Hang-up an active **call**.                                           |
 | [Keep alive](../api/call-keepalive.md)                                    | None                                                                | Ensure that the call remains active.                                            |
@@ -43,12 +49,12 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Invite participants](../api/participant-invite.md)                      | [commsOperation](commsoperation.md)                                 | Invite participants to the active call.                                         |
 | [Mute participant](../api/participant-mute.md)                           | [muteParticipantOperation](muteparticipantoperation.md)             | Mute a participant in the group call.                                           |
 | [Create](../api/call-post-audioroutinggroups.md)       | [audioRoutingGroup](audioroutinggroup.md)                           | Create a new **audioRoutingGroup** by posting to the audioRoutingGroups collection. |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)        | [audioRoutingGroup](audioroutinggroup.md) collection                | Get an **audioRoutingGroup** object collection.                                      |
+| [List audio routing groups](../api/call-list-audioroutinggroups.md)        | [audioRoutingGroup](audioroutinggroup.md) collection                | Get an **audioRoutingGroup** object collection.                                      |
 | [Add large gallery view](../api/call-addlargegalleryview.md)             | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)     | Add the large gallery view to a call.                                           |
 |**Interactive-voice-response**                                            |                                                                     |                                                                                 |
 | [Play prompt](../api/call-playprompt.md)                                  | [playPromptOperation](playpromptoperation.md)                       | Play prompt in the call.                                                        |
 | [Record response](../api/call-record.md)                                  | [recordOperation](recordoperation.md)                               | Records a short audio response from the caller.                                 |
-| [Cancel media processing](../api/call-cancelMediaProcessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
+| [Cancel media processing](../api/call-cancelmediaprocessing.md)            | [commsOperation](commsoperation.md)                                 | Cancel media processing.                                                        |
 | [Subscribe to tone](../api/call-subscribetotone.md)                        | [commsOperation](commsoperation.md)                                 | Subscribe to DTMF tones.                                                        |
 | [Send DTMF tone](../api/call-senddtmftones.md)                      | [commsOperation](commsoperation.md)                         | Send DTMF tones in a call.                                                      |
 | **Self participant operations**                                          |                                                                     |                                                                                 |
@@ -134,7 +140,7 @@ The following JSON representation shows the resource type.
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
-  "myParticipantId": "String",  
+  "myParticipantId": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
@@ -158,4 +164,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-

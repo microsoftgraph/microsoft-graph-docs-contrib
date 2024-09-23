@@ -28,9 +28,9 @@ Some **linkedResource** objects aren't associated with any web URLs, in which ca
 |:---|:---|:---|
 |[List](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get a list of the [linkedResource_v2](../resources/linkedresource_v2.md) objects and their properties.|
 |[Create](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Get linkedResource_v2](../api/linkedresource_v2-get.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Read the properties and relationships of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Update linkedResource_v2](../api/linkedresource_v2-update.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Update the properties of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
-|[Delete linkedResource_v2](../api/linkedresource_v2-delete.md)|None|Deletes a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
+|[Get](../api/linkedresource_v2-get.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Read the properties and relationships of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
+|[Update](../api/linkedresource_v2-update.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Update the properties of a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
+|[Delete](../api/linkedresource_v2-delete.md)|None|Deletes a [linkedResource_v2](../resources/linkedresource_v2.md) object.|
 
 ## Properties
 |Property|Type|Description|

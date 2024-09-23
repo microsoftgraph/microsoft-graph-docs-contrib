@@ -1,7 +1,7 @@
 ---
 title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -36,7 +36,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

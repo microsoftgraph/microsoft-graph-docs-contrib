@@ -19,9 +19,9 @@ Describes print activity for a printer during a specified time period (usageDate
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List daily reports by printer](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of daily print usage summaries, grouped by printer. |
-| [List monthly reports by printer](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Get a list of monthly print usage summaries, grouped by printer. |
-| [Get](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Read the properties and relationships of a **printUsageByPrinter** object. |
+| [List daily reports by printer](../api/reportroot-list-dailyprintusagebyprinter.md) | printUsageByPrinter | Get a list of daily print usage summaries, grouped by printer. |
+| [List monthly reports by printer](../api/reportroot-list-monthlyprintusagebyprinter.md) | printUsageByPrinter | Get a list of monthly print usage summaries, grouped by printer. |
+| [Get](../api/printusagebyprinter-get.md) | printUsageByPrinter | Read the properties and relationships of a printUsageByPrinter object. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -43,7 +43,7 @@ Describes print activity for a printer during a specified time period (usageDate
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

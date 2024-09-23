@@ -2,7 +2,7 @@
 title: "Delete androidForWorkEnterpriseWiFiConfiguration"
 description: "Deletes a androidForWorkEnterpriseWiFiConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

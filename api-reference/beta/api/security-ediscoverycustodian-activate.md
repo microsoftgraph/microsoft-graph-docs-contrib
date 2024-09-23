@@ -3,7 +3,7 @@ title: "ediscoveryCustodian: activate"
 description: "Reactivate a custodian from a case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

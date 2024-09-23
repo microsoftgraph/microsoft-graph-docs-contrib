@@ -3,7 +3,7 @@ title: "ediscoveryCustodian: applyHold"
 description: "Start the process of applying hold to eDiscovery custodians."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 

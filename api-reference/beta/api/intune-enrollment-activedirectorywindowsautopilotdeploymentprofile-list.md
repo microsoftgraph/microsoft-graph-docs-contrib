@@ -2,7 +2,7 @@
 title: "List activeDirectoryWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2083
+Content-Length: 2080
 
 {
   "value": [
@@ -106,7 +106,7 @@ Content-Length: 2083
       "extractHardwareHash": true,
       "hardwareHashExtractionEnabled": true,
       "deviceNameTemplate": "Device Name Template value",
-      "deviceType": "surfaceHub2",
+      "deviceType": "holoLens",
       "enableWhiteGlove": true,
       "preprovisioningAllowed": true,
       "roleScopeTagIds": [

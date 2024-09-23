@@ -2,7 +2,7 @@
 title: "operationApprovalRequest resource type"
 description: "The OperationApprovalRequest entity encompasses the operation an admin wishes to perform and is requesting approval to complete. It contains the detail of the operation one wishes to perform, user metadata of the requestor, and a justification for the change. It allows for several operations for both the requestor and the potential approver to either approve, deny, or cancel the request and a response justification to provide information for the decision."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -25,9 +25,6 @@ The OperationApprovalRequest entity encompasses the operation an admin wishes to
 |[Create operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-create.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Create a new [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) object.|
 |[Delete operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-delete.md)|None|Deletes a [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md).|
 |[Update operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-update.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Update the properties of a [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) object.|
-|[getRequestStatus action](../api/intune-rbac-operationapprovalrequest-getrequeststatus.md)|[operationApprovalRequestEntityStatus](../resources/intune-rbac-operationapprovalrequestentitystatus.md)||
-|[getMyRequestById function](../api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)||
-|[getMyRequests function](../api/intune-rbac-operationapprovalrequest-getmyrequests.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) collection||
 |[cancelMyRequest action](../api/intune-rbac-operationapprovalrequest-cancelmyrequest.md)|None||
 |[approve action](../api/intune-rbac-operationapprovalrequest-approve.md)|String|Approves the requested instance of an operationApprovalRequest.|
 |[reject action](../api/intune-rbac-operationapprovalrequest-reject.md)|String|Rejects the requested instance of an operationApprovalRequest.|

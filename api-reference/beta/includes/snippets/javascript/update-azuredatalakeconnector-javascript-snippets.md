@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const industryDataConnector = {
   '@odata.type': 'microsoft.graph.industryData.azureDataLakeConnector',
-  displayName: 'API Monitor 60201009'
+  displayName: 'CSV files from SIS'
 };
 
 await client.api('/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271')

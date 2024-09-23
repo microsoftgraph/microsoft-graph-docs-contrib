@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer: permanentDelete"
-description: "Permanently delete a fileStorageContainer."
+description: "Permanently delete a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
+Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
 
 ## Permissions
 
@@ -58,7 +58,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.permanentdelete"
+  "name": "filestoragecontainerthis.permanentdelete",
+  "sampleKeys": ["b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z"]
 }
 -->
 

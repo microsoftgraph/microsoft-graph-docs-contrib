@@ -3,7 +3,7 @@ title: "containsTransformation resource type"
 description: "Contains the output of a transformation if the input matches the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

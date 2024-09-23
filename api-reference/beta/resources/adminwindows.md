@@ -3,7 +3,7 @@ title: "adminWindows resource type"
 description: "Represents a container for all Windows administrator functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a container for all Windows administrator functionalities.
 |updates|[adminWindowsUpdates](../resources/adminwindowsupdates.md)|Entity that acts as a container for all Windows Update for Business deployment service functionalities. Read-only.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

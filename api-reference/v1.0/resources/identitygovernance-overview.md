@@ -2,10 +2,12 @@
 title: "Overview of Microsoft Entra ID Governance using Microsoft Graph"
 description: "Microsoft Entra ID Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Microsoft Entra ID Governance features."
 ms.localizationpriority: medium
-author: "markwahl-msft"
-ms.subservice: "entra-id-governance"
+author: FaithOmbongi
+ms.reviewer: Mark.Wahl
+ms.subservice: entra-id-governance
 doc_type: conceptualPageType
-ms.date: 11/15/2023
+ms.topic: overview
+ms.date: 07/02/2024
 ---
 
 # Overview of Microsoft Entra ID Governance using Microsoft Graph
@@ -14,7 +16,7 @@ Microsoft Entra ID Governance allows you to balance your organization's need for
 
 The principals (or identities) whose access you can govern include users, groups, and applications (or service principals). The users can be your employees, business partners, vendors, or contractors. The resources to which you can govern access include groups, access packages, and privileged roles.
 
-You manage Microsoft Entra ID Governance capabilities programmatically by using the following identity governance APIs in Microsoft Graph.
+You manage Microsoft Entra ID Governance capabilities programmatically by using the following APIs in Microsoft Graph.
 
 + [Access reviews](#attest-to-the-access-that-principals-have-to-resources)
 + [Entitlement management](#automate-user-access-to-resources)
@@ -63,6 +65,10 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 [!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
+
+## Licensing
+
+Microsoft Entra ID Governance capabilities are available as part of different suites of Microsoft Entra licenses. To discover the license types and ID Governance features available per license, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
 
 ## Related content
 

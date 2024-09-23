@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

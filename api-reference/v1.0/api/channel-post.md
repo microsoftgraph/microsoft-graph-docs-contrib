@@ -2,7 +2,7 @@
 title: "Create channel"
 description: "Create new channel in a team, as specified in the request body."
 ms.localizationpriority: medium
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: apiPageType
 ---
@@ -25,7 +25,7 @@ If you're creating a private channel, you can add a maximum of 200 members.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+This API supports admin permissions. Microsoft Teams service admins can access teams that they are not a member of.
 
 <!-- { "blockType": "permissions", "name": "channel_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-post-permissions.md)]

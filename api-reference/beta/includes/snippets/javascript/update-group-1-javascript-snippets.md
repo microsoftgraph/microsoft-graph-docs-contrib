@@ -15,7 +15,7 @@ const group = {
    displayName: 'Contoso Life Renewed'
 };
 
-await client.api('/groups/{id}')
+await client.api('/groups/0d09007d-45b2-458c-b180-880dde3a302e')
 	.version('beta')
 	.update(group);
 

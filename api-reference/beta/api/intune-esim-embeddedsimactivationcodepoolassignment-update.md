@@ -2,7 +2,7 @@
 title: "Update embeddedSIMActivationCodePoolAssignment"
 description: "Update the properties of a embeddedSIMActivationCodePoolAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

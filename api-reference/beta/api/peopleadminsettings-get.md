@@ -3,7 +3,7 @@ title: "Get peopleAdminSettings"
 description: "Retrieve the properties and relationships of a peopleAdminSettings object."
 author: "rwaithera"
 ms.localizationpriority: medium
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "peopleadminsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-get-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
 
 ## HTTP request
 

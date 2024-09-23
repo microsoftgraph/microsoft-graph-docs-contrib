@@ -20,9 +20,14 @@ Defines the settings of an [accessReviewHistoryDefinition](accessreviewhistoryde
 | recurrence|[patternedRecurrence](patternedrecurrence.md) | Detailed settings for recurrence using the standard Outlook recurrence object. <br/><br/>**Note:** Only **dayOfMonth**, **interval**, and **type** (`weekly`, `absoluteMonthly`) properties are supported. Use the property **startDate** on **recurrenceRange** to determine the day the review starts. Required. |
 |reportRange|String|A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data. For example, if a history definition is scheduled to run on the first of every month, the **reportRange** is `P1M`. In this case, on the first of every month, access review history data is collected containing only the previous month's review data. <br/><br/>**Note:** Only **years**, **months**, and **days** ISO 8601 properties are supported. Required.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewHistoryScheduleSettings"

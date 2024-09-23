@@ -3,7 +3,7 @@ title: "Get tag"
 description: "Read the properties and relationships of a tag object."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

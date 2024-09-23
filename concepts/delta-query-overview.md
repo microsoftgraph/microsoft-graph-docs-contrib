@@ -120,13 +120,13 @@ Delta query is currently supported for the following resources. Some resources t
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [application](/graph/api/resources/application)                     | [application: delta](/graph/api/application-delta) function                     |
 | [administrativeUnit](/graph/api/resources/administrativeunit)       | [administrativeUnit: delta](/graph/api/administrativeunit-delta) function       |
-| [callRecording](/graph/api/resources/callrecording) *               | [callRecording: delta](/graph/api/callrecording-delta) function                 |
-| [callTranscript](/graph/api/resources/calltranscript) *             | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
+| [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
+| [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
 | [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |
 | [device](/graph/api/resources/device)                               | [device: delta](/graph/api/device-delta) function                               |
 | [directoryRole](/graph/api/resources/directoryrole)                 | [directoryRole: delta](/graph/api/directoryrole-delta) function                 |
 | [directoryObject](/graph/api/resources/directoryObject)             | [directoryObject: delta](/graph/api/directoryobject-delta) function             |
-| [driveItem](/graph/api/resources/driveitem) <sup>1</sup>             | [driveItem: delta](/graph/api/driveitem-delta) function                         |
+| [driveItem](/graph/api/resources/driveitem) <sup>1</sup>            | [driveItem: delta](/graph/api/driveitem-delta) function                         |
 | [educationAssignment](/graph/api/resources/educationassignment)     | [educationAssignment: delta](/graph/api/educationassignment-delta) function     |
 | [educationCategory](/graph/api/resources/educationcategory)         | [educationCategory: delta](/graph/api/educationcategory-delta) function         |
 | [educationClass](/graph/api/resources/educationclass)               | [educationClass: delta](/graph/api/educationclass-delta) function               |
@@ -134,7 +134,7 @@ Delta query is currently supported for the following resources. Some resources t
 | [educationUser](/graph/api/resources/educationuser)                 | [educationUser: delta](/graph/api/educationuser-delta) function                 |
 | [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
 | [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
-| [listItem](/graph/api/resources/listitem) <sup>1</sup>               | [listItem: delta](/graph/api/listitem-delta) function                           |
+| [listItem](/graph/api/resources/listitem) <sup>1</sup>              | [listItem: delta](/graph/api/listitem-delta) function                           |
 | [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
 | [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
 | [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |

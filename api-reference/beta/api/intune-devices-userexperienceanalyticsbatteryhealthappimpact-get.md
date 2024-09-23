@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsBatteryHealthAppImpact"
 description: "Read properties and relationships of the userExperienceAnalyticsBatteryHealthAppImpact object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

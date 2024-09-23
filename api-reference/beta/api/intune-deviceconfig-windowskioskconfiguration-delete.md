@@ -2,7 +2,7 @@
 title: "Delete windowsKioskConfiguration"
 description: "Deletes a windowsKioskConfiguration."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

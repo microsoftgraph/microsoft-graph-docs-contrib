@@ -2,7 +2,7 @@
 title: "androidManagedStoreApp resource type"
 description: "Contains properties and inherited properties for Android Managed Store Apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

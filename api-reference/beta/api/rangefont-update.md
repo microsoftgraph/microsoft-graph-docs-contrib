@@ -1,19 +1,19 @@
 ---
-title: "Update rangefont"
-description: "Update the properties of rangefont object."
+title: "Update rangeFont"
+description: "Update the properties of rangeFont object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Update rangefont
+# Update rangeFont
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of rangefont object.
+Update the properties of rangeFont object.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -34,16 +34,16 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 | Name       | Description|
 |:-----------|:-----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
+| Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that didn't change.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
+|bold|Boolean|Represents the bold status of font.|
 |color|string|HTML color code representation of the text color. for example, #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
+|italic|Boolean|Represents the italic status of the font.|
 |name|string|Font name (for example "Calibri")|
 |size|double|Font size.|
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
@@ -55,6 +55,7 @@ If successful, this method returns a `200 OK` response code and updated [workboo
 ##### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"
@@ -72,6 +73,12 @@ Content-type: application/json
   "underline": "underline-value"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefont-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.

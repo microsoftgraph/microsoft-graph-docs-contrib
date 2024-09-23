@@ -135,18 +135,21 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
-| SharePointSites_v1  | Contains information about SharePoint sites. Formerly known as SharePointSitesDataset_v0_Preview.| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
-| SharePointPermissions_v1 | Contains information about sharing permissions. Formerly DocumentSharingDataset_v0_Preview. | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
-| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. Formerly SharePointGroupsDataset_v0_Preview. | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
-| SharePointFiles_v1  | Contains information about SharePoint files. Coming in June 2024. | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
-| SharePointFileActions_v1 | Contains information about SharePoint file actions. Coming in March 2024. | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
-| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. Coming in March 2024. | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
+| SharePointSites_v1  | Contains information about SharePoint sites. | [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for work or school. | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
+| OneDriveSyncErrors_v1 | Contains details about errors on devices running OneDrive for work or school. | [OneDriveSyncErrors_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesyncerrors.md) |
 
 ### Viva Insights
 
 | Dataset name | Description | Sample and Schema | License |
 | --- | --- | --- | --- |
-| VivaInsightsDataset_PersonReport_v1 | Contains Viva Insights metrics. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/VivaInsightsDataset_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/VivaInsightsDataSet_v0.md)</li></ul> | Requires Viva Insights license |
+| VivaInsightsDataset_Report_v1_{Viva_Insights_Query_Name} | Contains metrics according to the query authored by the user in Viva Insights. | Varies per report. | Requires Viva Insights license. |
+
+>**Note:** `{Viva_Insights_Query_Name}` represents a placeholder for the Viva Insights query name that, when combined with VivaInsightsDataset_Report_v1_, forms the dataset name.
 
 
 ## Regions
@@ -180,6 +183,7 @@ Sinks are the output location that Azure Synapse or Azure Data Factory uses to p
 - [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
 - [Azure SQL DB](https://azure.microsoft.com/products/azure-sql/database/?ef_id=_k_790773b85b8d1e4ef64317867aeee8a0_k_&OCID=AIDcmm5edswduu_SEM__k_790773b85b8d1e4ef64317867aeee8a0_k_&msclkid=790773b85b8d1e4ef64317867aeee8a0) (mapping data flows only)
+- [Microsoft Fabric OneLake](/fabric/onelake/onelake-overview) 
 
 The following characteristics apply to sinks:
 

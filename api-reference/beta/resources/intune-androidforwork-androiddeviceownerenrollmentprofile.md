@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -28,6 +28,9 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|None||
 |[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|None||
 |[getDefaultTeamsDeviceNonGmsEnrollmentProfile action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md)|[enrollmentProfileForNonGmsTeamsDevice](../resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md)||
+|[setEnrollmentTimeDeviceMembershipTarget action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md)||
+|[retrieveEnrollmentTimeDeviceMembershipTarget action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md)||
+|[clearEnrollmentTimeDeviceMembershipTarget action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +47,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |tokenCreationDateTime|DateTimeOffset|Date time the most recently created token was created.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
-|enrollmentTokenUsageCount|Int32|Total number of AOSP devices that have enrolled using the current token.|
+|enrollmentTokenUsageCount|Int32|Total number of AOSP devices that have enrolled using the current token. Valid values 0 to 20000|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|

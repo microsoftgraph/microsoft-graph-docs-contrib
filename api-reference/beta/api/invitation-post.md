@@ -1,6 +1,6 @@
 ---
 title: "Create invitation"
-description: "Create a new invitation. The invitation adds an external user to the organization."
+description: "Create a new invitation or reset the redemption status for a guest user. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
 author: "ppolkadots"
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [invitation](../resources/invitation.md). The invitation adds an external user to the organization.
+Create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. The invitation adds an external user to the organization.
 
 The following options are available for creating an invitation:
 
@@ -31,6 +31,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!IMPORTANT]
 > Application permissions (app-only) do not work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
+
+When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
+
+For delegated scenarios, the signed-in user must have at least the *Guest Inviter*, *Directory Writers*, or *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). To reset the redemption status, the signed-in user must have at least the *Helpdesk Administrator* or *User Administrator* role.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,9 +66,11 @@ If successful, this method returns `201 Created` response code and [invitation](
 
 ## Example
 
-### Request
+### Example 1: Invite a guest user
 
-The following example shows a request.
+#### Request
+
+The following example shows a request to add and invite a guest user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +121,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -131,7 +137,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
     "id": "9071bfde-35e0-47d2-a582-d244ab1b4af6",
-    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d69997834-fa40-45da-xxxx-382c3bdc66c3%26user%3d9071bfde-35e0-47d2-a582-d244ab1b4af6%26ticket%3dwCFIFW%25252frzl2A%25252fpZFZk5fCLJprpDxtcjR8s%25252fo1QZA0yQ%25253d%26ver%3d2.0",
+    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ften...6ver%3d2.0",
     "invitedUserDisplayName": null,
     "invitedUserType": "Guest",
     "invitedUserEmailAddress": "admin@fabrikam.com",
@@ -153,6 +159,106 @@ Content-type: application/json
     },
     "invitedUser": {
         "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+    }
+}
+```
+
+### Example 2: Reset the redemption status of a guest user
+
+#### Request
+
+The following example shows a request to reset the redemption status of a guest user. The request changes the user's email address, but keeps their current user ID. Before running the request, you must add the new email address the **otherMails** property of the existing guest [user](../resources/user.md) object.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_invitation_resetredemption"
+}-->
+```http
+POST https://graph.microsoft.com/beta/invitations
+Content-type: application/json
+
+{
+    "invitedUserEmailAddress": "AdeleV@fabrikam.com",
+    "inviteRedirectUrl": "https://myapp.contoso.com",
+    "invitedUser": {
+        "id": "264e6d50-eaec-461e-b187-873b1bcf855f"
+    },
+    "resetRedemption": true
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-resetredemption-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-resetredemption-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-invitation-resetredemption-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-invitation-resetredemption-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-resetredemption-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-invitation-resetredemption-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-invitation-resetredemption-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-invitation-resetredemption-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.invitation"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
+    "id": "46d72876-dba6-4a05-b9ec-118faf16c4b7",
+    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3fte...3d2.0",
+    "invitedUserDisplayName": null,
+    "invitedUserType": "Guest",
+    "invitedUserEmailAddress": "AdeleV@fabrikam.com",
+    "sendInvitationMessage": false,
+    "resetRedemption": true,
+    "inviteRedirectUrl": "https://myapp.contoso.com",
+    "status": "PendingAcceptance",
+    "invitedUserMessageInfo": {
+        "messageLanguage": null,
+        "customizedMessageBody": null,
+        "ccRecipients": [
+            {
+                "emailAddress": {
+                    "name": null,
+                    "address": null
+                }
+            }
+        ]
+    },
+    "invitedUser": {
+        "id": "264e6d50-eaec-461e-b187-873b1bcf855f"
     }
 }
 ```

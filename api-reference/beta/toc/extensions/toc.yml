@@ -1,6 +1,9 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
 items:
 - name: Overview
-  href: ../../graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http
+  href: /graph/extensibility-overview?context=graph%2Fapi%2Fbeta&preserve-view=true
 - name: Directory extension
   items:
   - name: Directory extension
@@ -17,9 +20,9 @@ items:
   items:
   - name: Open type extension
     href: ../../resources/opentypeextension.md
-  - name: Create open extension
+  - name: Create
     href: ../../api/opentypeextension-post-opentypeextension.md
-  - name: Get open extension
+  - name: Get
     href: ../../api/opentypeextension-get.md
   - name: Update
     href: ../../api/opentypeextension-update.md

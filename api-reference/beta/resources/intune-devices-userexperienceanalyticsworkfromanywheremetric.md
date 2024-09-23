@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsWorkFromAnywhereMetric resource type"
 description: "The user experience analytics metric for work from anywhere report."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

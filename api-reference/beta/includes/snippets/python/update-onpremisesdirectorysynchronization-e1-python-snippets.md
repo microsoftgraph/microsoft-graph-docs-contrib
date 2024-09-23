@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.on_premises_directory_synchronization import OnPremisesDirectorySynchronization
 from msgraph_beta.generated.models.on_premises_directory_synchronization_configuration import OnPremisesDirectorySynchronizationConfiguration
 from msgraph_beta.generated.models.on_premises_accidental_deletion_prevention import OnPremisesAccidentalDeletionPrevention
 from msgraph_beta.generated.models.on_premises_directory_synchronization_deletion_prevention_type import OnPremisesDirectorySynchronizationDeletionPreventionType
 from msgraph_beta.generated.models.on_premises_directory_synchronization_feature import OnPremisesDirectorySynchronizationFeature
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OnPremisesDirectorySynchronization(
 	configuration = OnPremisesDirectorySynchronizationConfiguration(
 		accidental_deletion_prevention = OnPremisesAccidentalDeletionPrevention(

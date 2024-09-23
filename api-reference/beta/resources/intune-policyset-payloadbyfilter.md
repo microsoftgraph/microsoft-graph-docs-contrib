@@ -2,7 +2,7 @@
 title: "payloadByFilter resource type"
 description: "This entity represents a single payload with requested assignment filter Id"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

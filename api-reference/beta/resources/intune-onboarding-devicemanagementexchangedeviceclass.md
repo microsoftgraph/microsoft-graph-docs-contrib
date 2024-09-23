@@ -2,7 +2,7 @@
 title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

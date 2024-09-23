@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerDerivedCredentialAuthenticationConfiguration resource type"
 description: "Android COBO Derived Credential profile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

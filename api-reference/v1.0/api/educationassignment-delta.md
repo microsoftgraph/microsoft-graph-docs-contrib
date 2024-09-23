@@ -38,7 +38,6 @@ This method only supports the `$top` OData query parameter.
 
 ```http
 GET /education/classes/{educationClassId}/assignments/delta
-GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/delta
 ```
 
 ## Request headers

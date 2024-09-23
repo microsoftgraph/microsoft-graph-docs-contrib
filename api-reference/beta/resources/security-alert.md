@@ -23,10 +23,10 @@ Security providers create an alert in the system when they detect a threat. Micr
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts_v2](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that track suspicious activities in an organization.|
-|[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
-|[Update alert](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
-|[Create comment for alert](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **ID** property.|
+|[List](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that track suspicious activities in an organization.|
+|[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
+|[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
+|[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **ID** property.|
 
 ## Properties
 |Property|Type| Description|
@@ -44,7 +44,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)| Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`.|
 |detectorId|String| The ID of the detector that triggered the alert.|
 |productName|String| The name of the product which published this alert.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection| Collection of evidence related to the alert.|
 |firstActivityDateTime|DateTimeOffset| The earliest activity associated with the alert.|
 |id|String| Unique identifier to represent the **alert** resource.|
@@ -85,6 +85,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 | securityPersonnel          | A true positive alert that detected valid suspicious activity performed by someone on the customer's security team. |
 | securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
 | unwantedSoftware           | The alert detected unwanted software.                                                                                        |
+| other                      | Other determination.                                                                                                         |
 | multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
 | compromisedAccount         | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
 | phishing                   | A true positive alert that detected a phishing email.                                                                        |
@@ -93,7 +94,6 @@ Security providers create an alert in the system when they detect a threat. Micr
 | notEnoughDataToValidate    | A false alert, without enough information to prove otherwise.                                                                |
 | confirmedActivity          | The alert caught a true suspicious activity that is considered OK because it's a known user activity.                       |
 | lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it's a known and confirmed internal application.  |
-| other                      | Other determination.                                                                                                         |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                            |
 
 ### alertSeverity values 

@@ -37,7 +37,7 @@ resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissiona
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785", 
+	"teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7023576d-9e40-47ca-9cf2-daae6838e785", 
 }
 requestBody.SetAdditionalData(additionalData)
 

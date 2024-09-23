@@ -1,7 +1,7 @@
 ---
 title: "fileStorageContainerSettings resource type"
-description: "Represents the specific settings of a file storage container resource."
-author: "tonchan-msft"
+description: "Represents settings of a fileStorageContainer."
+author: "vibehavjha"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Represents the settings of a [fileStorageContainer](../resources/filestoragecont
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isOcrEnabled|Boolean|Indicates whether Optical Character Recognition (OCR) is enabled for the container. The default value is `false`. If OCR is enabled on a container, OCR extraction will be performed for recently added/updated document (select supported document types) and add the extracted fields in metadata of document which enables end-user search and search-driven solutions. Optional. Read-write.|
+|isOcrEnabled|Boolean|Indicates whether Optical Character Recognition (OCR) is enabled for the container. The default value is `false`. When set to `true`, OCR extraction will be performed for new and updated documents of supported document types, and add the extracted fields in metadata of document which enables end-user search and search-driven solutions. When set to `false`, existing OCR metadata is not impacted. Optional. Read-write.|
 |itemMajorVersionLimit|Int32|The maximum major versions allowed for items in the container. Optional. Read-write.|
 |isItemVersioningEnabled|Boolean|Indicates whether versioning is enabled for items in the container. Optional. Read-write.|
 
@@ -30,6 +30,7 @@ None.
 
 The following JSON representation shows the resource type.
 
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileStorageContainerSettings"
@@ -38,9 +39,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerSettings",
-  "isOcrEnabled": true,
-  "itemMajorVersionLimit": 1,
-  "isItemVersioningEnabled": true
+  "isOcrEnabled": "boolean",
+  "itemMajorVersionLimit": "int32",
+  "isItemVersioningEnabled": "boolean"
 }
 ```
 

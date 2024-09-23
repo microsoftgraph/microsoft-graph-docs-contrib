@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.workbook_named_item import WorkbookNamedItem
-from msgraph_beta.generated.models.json import Json
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkbookNamedItem(
 	type = "type-value",
 	scope = "scope-value",
 	comment = "comment-value",
-	value = Json(
+	value = UntypedNode(
 	),
 	visible = True,
 )
