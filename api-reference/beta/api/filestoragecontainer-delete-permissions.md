@@ -105,5 +105,5 @@ HTTP/1.1 204 No Content
 ## Deleting container-scoped and item-level permissions
 By default, this API removes access for an identity to the container and all items within the container regardless the identity has container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when calling the API.
 
-When the `Prefer:onlyRemoveContainerScopedPermission` header is provided, only the identity's container-scoped permission is removed, while all the item-level permissions (if any) explicitly granted to the identity will be retained. 
+When the `Prefer:onlyRemoveContainerScopedPermission` header is provided, only the identity's container-scoped permission is removed. All item-level permissions (if any) explicitly granted to the identity will be retained. 
 
