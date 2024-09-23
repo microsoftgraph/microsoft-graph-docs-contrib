@@ -31,12 +31,12 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |displayName|String|The name of the certificateBasedAuthPki entity|
 |id|String|The id of the certificateBasedAuthPki entity. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Date time the certificateBasedAuthPki object of its related certificate authorities were modified|
-|status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki entity which can be upload or delete|
-|statusDetails|String|Property that provides additional information of the upload/delete operation of PKI|
+|status|String|The status of any asynchronous jobs runs on the certificateBasedAuthPki entity which can be upload or delete|
+|statusDetails|String|Property that provides additional information of the upload/deleted operation of PKI(Public Key Infrastructure)|
 
 ## Relationships
 |Relationship|Type|Description|
