@@ -26,11 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/healthmonitoring-alert-update-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to update alerts.
-
-+ Security Administrator
-+ Security Operator
-+ Helpdesk Administrator
+[!INCLUDE [rbac-healthmonitoring-alert-apis-write](../includes/rbac-for-apis/rbac-healthmonitoring-alert-apis-write.md)]
 
 ## HTTP request
 
