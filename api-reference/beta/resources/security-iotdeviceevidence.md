@@ -1,0 +1,84 @@
+---
+title: "IotDeviceEvidence resource type"
+description: "Represents a IoT Device that is reported as part of the security detection alert."
+author: "hareldamti"
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# IoTDeviceEvidence resource type
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents Kubernetes service entity.
+
+Inherits from [alertEvidence](./security-alertevidence.md).
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+| ioTHub |[microsoft.graph.security.azureResourceEvidence](./security-azureresourceevidence.md)| The AzureResource entity representing the IoT Hub the device belongs to  |
+| deviceId  | String|
+| deviceName| String| The friendly name of the device|
+| owners | Collection(String)| The owners for the device|
+| ioTSecurityAgentId | String| The ID of the Azure Security Center for IoT agent running on the device  |
+| deviceType| String| The type of the device ('temperature sensor', 'freezer', 'wind turbine' etc.)  |
+| source | String| The source (microsoft/vendor) of the device entity  |
+| sourceRef | [microsoft.graph.security.urlEvidence](./security-urlevidence.md) | A URL reference to the source item where the device is managed  |
+| manufacturer | String| The manufacturer of the device |
+| model  | String| The model of the device  |
+| operatingSystem | String| The operating system the device is running |
+| ipAddress | [microsoft.graph.security.ipEvidence](./security-ipevidence.md)  | The current IP address of the device |
+| macAddress| String| The MAC address of the device  |
+| nics| Collection([microsoft.graph.security.nicEvidence](./security-nicevidence.md)) | The current Nics on the device |
+| protocols | Collection(String)| A list of protocols that the device supports  |
+| serialNumber | String| The serial number of the device|
+| site| String| The site location of the device|
+| zone| String| The zone location of the device within a site |
+| sensor | String| The sensor the device is monitored by|
+| importance| [microsoft.graph.security.ioTDeviceImportanceType](#ioTDeviceImportanceType) | Importance level for the iot device |
+| purdueLayer  | String| The Purdue Layer of the device |
+| isProgramming| Boolean  | Determines whether the device classified as programming device  |
+| isAuthorized | Boolean  | Determines whether the device classified as authorized device|
+| isScanner | Boolean  | Is the device classified as a scanner device  |
+| devicePageLink  | String| A url to the device page in IoT defender portal  |
+| deviceSubType| String| The name of the device sub type|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.userSource",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "holdStatus": "String",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "email": "String",
+  "includedSources": "String",
+  "siteWebUrl": "String"
+  ///////////////////////////////////////////// FIX EXAMPLE
+}
+```
+
+<a id="ioTDeviceImportanceType"></a>
+## ioTDeviceImportanceType values
+
+Device importance, determines if the device classified as ‘crown jewel’
+
+| Value                | Description                                     |
+|----------------------|-------------------------------------------------|
+| unknown            | Unknown - Default value                         |
+| low                | Low                                             |
+| normal             | Normal                                          |
+| high               | High                                            |
+| unknownFutureValue | unknownFutureValue for evolvable enums pattern. |
