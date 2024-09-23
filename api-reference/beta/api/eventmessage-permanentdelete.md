@@ -103,7 +103,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/permanentDelete
 
 ---
 
-
 ### Response
 
 The following example shows the response.
