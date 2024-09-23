@@ -3,7 +3,7 @@ title: "Delete onOtpSendCustomExtension"
 description: "Delete an onOtpSendCustomExtension object."
 author: "AlexanderMars"
 ms.localizationpriority: medium
-ms.subservice: "validate the token sent in the authorization header"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
