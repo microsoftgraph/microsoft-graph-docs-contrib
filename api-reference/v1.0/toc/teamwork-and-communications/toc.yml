@@ -564,7 +564,7 @@ items:
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
       - name: Get retained messages across all chats
-        href: api/chats-getallretainedmessages.md
+        href: ../../api/chat-getallretainedmessages.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -654,7 +654,7 @@ items:
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Get retained messages across all channels
-        href: api/channel-getallretainedmessages.md
+        href: ../../api/channel-getallretainedmessages.md
       - name: Create subscription for new chat messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Send message in chat
