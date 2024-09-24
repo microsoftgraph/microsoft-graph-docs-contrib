@@ -7,8 +7,8 @@ ms.reviewer: ilyal
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.topic: overview
-ms.subservice: "entra-id-governance"
-ms.date: 10/03/2023
+ms.subservice: entra-id-governance
+ms.date: 09/24/2024
 #Customer intent: As a security administrator, I want to understand how to use PIM for groups to govern membership and ownership of groups in my organization.
 ---
 
