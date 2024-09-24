@@ -9,9 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation
 
-Change notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a team, groupChat, or a user's personal scope.
+Change notifications for [Teams app installations](/graph/api/resources/teamsappinstallation) allow you to subscribe to particular changes (create, update, and delete) on a Teams app. You can get notified whenever the specified Teams app is installed, updated, or deleted from a team, groupChat, or a user's personal scope. 
 
-This article describes how to subscribe to change notifications for Teams apps in personal, team, or chat scopes by using Microsoft Graph APIs.
+More information on each scope and receiving notifications from each scope is provided later in this document.
 
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
@@ -26,7 +26,7 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### Personal scope
 
-`Personal` scope subscriptions refer to being able to receive change notifications for Teams apps installed or to be installed within any user. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
+`Personal` scope subscriptions allow you to receive change notifications for Teams apps installed or to be installed within any user. `Personal` scope subscriptions are created by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with atleast one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### Team scope
 
-`Team` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any team. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
+`Team` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any team. `Team` scope subscriptions are created by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with atleast one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -46,7 +46,7 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### Chat scope
 
-`Chat` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
+`Chat` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat. `Chat` scope subscriptions are created by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with atleast one of the following permissions:
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
 |:---------------------------------------|:--------------------------------------------|:--------------------------------------------|
@@ -59,7 +59,7 @@ Permissions are required to receive notifications, and the permissions required 
 
 #### All scopes
 
-`All` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat, team or user. This is done by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permissions:
+`All` scope subscriptions refer to getting change notifications for Teams apps installed or to be installed within any chat, team or user. `All` scope subscriptions are created by subscribing to `/appCatalogs/teamsApps/{teams-app-id}/installations` with atleast one of the following permissions:
 
 
 | Permission type                        | Least privileged permissions | Higher privileged permissions |
