@@ -4,7 +4,7 @@
           "ChangeList": [
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
-            "ApiChange": "Parameter",
+            "ApiChange": "Method",
             "ChangedApiName": "list_permission",
             "ChangeType": "Change",
             "Description": "Updated the [list_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta) method to include the **includeAllContainerUsers** parameter.",
@@ -12,7 +12,7 @@
           },
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
-            "ApiChange": "Parameter",
+            "ApiChange": "Method",
             "ChangedApiName": "delete_permission",
             "ChangeType": "Change",
             "Description": "Updated the [delete_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-permissions?view=graph-rest-beta) method to include the **onlyRemoveContainerScopedPermission** header.",
