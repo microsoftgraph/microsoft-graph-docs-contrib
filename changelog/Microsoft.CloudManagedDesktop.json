@@ -5657,6 +5657,24 @@
       "CreatedDateTime": "2024-08-16T06:58:17.7596396Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {      
+          "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+          "ApiChange": "Member",
+          "ChangedApiName": "me/cloudpc",
+          "ChangeType": "Addition",
+          "Description": "Add optional property 'frontlineCloudPcAvailability' in CloudPC Entity",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-24T06:58:17.7596396Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }
