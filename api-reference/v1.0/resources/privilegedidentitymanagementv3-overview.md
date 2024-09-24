@@ -52,7 +52,7 @@ The following table lists scenarios for using PIM to manage role assignments and
 
 ## PIM APIs for managing role eligibilities
 
-Your principals may not require permanent role assignments because they don't require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The principle can also be permanently or temporarily eligible fot the role.
+Your principals may not require permanent role assignments because they don't require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The principal can also be permanently or temporarily eligible fot the role.
 
 Use the [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) resource type and its related methods to manage role eligibilities.
 
