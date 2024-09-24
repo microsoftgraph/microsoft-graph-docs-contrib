@@ -32,7 +32,7 @@
             "ChangedApiName": "recycleBinSettings",
             "ChangeType": "Addition",
             "Description": "Added the [recycleBinSettings](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinsettings?view=graph-rest-beta) resource.",
-            "Target": "recycleBin"
+            "Target": "recycleBinSettings"
           },
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
