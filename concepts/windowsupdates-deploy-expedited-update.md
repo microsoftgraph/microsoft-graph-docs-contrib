@@ -25,7 +25,7 @@ Expedited quality updates also have the following characteristics:
 
 * Devices meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
 * Devices have installed the update described in [KB4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (or newer).
-* To verify that your devices meet the prerequisites for receiving an expedited update, use the [Readiness test for expediting updates](/windows/deployment/update/windows-autopatch/manage/windows-autopatch-windows-quality-update-programmatic-controls).
+* To verify that your devices meet the prerequisites for receiving an expedited update, use the [Readiness test for expediting updates](/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-programmatic-controls).
 
 ## Step 1: (Optional) Get a list of expeditable updates
 

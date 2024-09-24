@@ -1,13 +1,13 @@
 ---
-title: "getRecentlyModifiedSubmissions: educationClass"
-description: "Retrieve recently modified submissions. A submission object represents a student's work for an assignment."
+title: "educationClass: getRecentlyModifiedSubmissions"
+description: "Retrieve submissions modified in the previous seven days."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# getRecentlyModifiedSubmissions: educationClass
+# educationClass: getRecentlyModifiedSubmissions
 
 Namespace: microsoft.graph
 
@@ -97,6 +97,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions"
@@ -104,6 +105,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -270,6 +277,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_expand"
@@ -277,6 +285,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions?$expand=outcomes
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -387,6 +401,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_filter"
@@ -394,6 +409,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=status eq 'working'
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -487,6 +508,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_orderby_top"
@@ -494,6 +516,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$orderby=lastModifiedDateTime&$top=1
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -586,6 +614,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_select"
@@ -593,6 +622,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$select=excusedDateTime
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-select-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -628,6 +663,7 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass_getrecentlymodifiedsubmissions_filter_range"
@@ -635,6 +671,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions?$filter=lastModifiedDateTime gt 2024-08-25T20:45:51.3485047Z and lastModifiedDateTime lt 2024-08-28T20:45:51.3485047Z
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-getrecentlymodifiedsubmissions-filter-range-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

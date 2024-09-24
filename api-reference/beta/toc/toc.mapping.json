@@ -195,6 +195,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -2460,10 +2463,8 @@
         {
           "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.identityContainer"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ]
         },
         {
