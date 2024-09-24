@@ -98,7 +98,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages
+GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages
 ```
 
 # [C#](#tab/csharp)
@@ -151,9 +151,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(chatMessage)",
   "@odata.count": 10,
-  "@odata.nextLink": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages?$skip=10",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages?$skip=10",
   "value": [
     {
       "@odata.type": "#microsoft.graph.chatMessage",
