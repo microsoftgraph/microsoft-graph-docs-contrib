@@ -68,6 +68,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|frontlineCloudPcAvailability|microsoft.graph.frontlineCloudPcAvailability|Defines the current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable`. Default value is `notApplicable`. Read Only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
@@ -140,6 +141,15 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
 |standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+### frontlineCloudPcAvailability values
+
+|Member|Description|
+|:---|:---|
+|notApplicable|Default. Indicates that the Cloud PC availability is not applicable as it's not a frontline-assigned type.|
+|available|Indicates that the current frontline Cloud PC is available and the user is able to connect to it.|
+|notAvailable|Indicates that the frontline Cloud PC is currently "not available" and the associated user will not be able to connect to it.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
