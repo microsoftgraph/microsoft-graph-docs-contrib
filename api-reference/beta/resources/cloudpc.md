@@ -68,7 +68,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|frontlineCloudPcAvailability|microsoft.graph.frontlineCloudPcAvailability|Defines the current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable`. Default value is `notApplicable`. Read Only.|
+|frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlineCloudPcAvailability-values)|Defines the current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable`. Default value is `notApplicable`. Read Only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
