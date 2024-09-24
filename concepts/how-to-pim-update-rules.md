@@ -32,6 +32,38 @@ If successful, all requests return `204 No Content` response codes.
     + To manage the rules for Microsoft Entra roles: *RoleManagementPolicy.ReadWrite.Directory*
     + To manage the rules for groups: *RoleManagementPolicy.ReadWrite.AzureADGroup*
 
+## How to find the settings for a Microsoft Entra role
+
+Consider a Microsoft Entra role like *Application Administrator*. The permanent immutable template ID for the role in Microsoft Entra ID is `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`. 
+
+To use the PIM APIs to discover the settings for the *Application Administrator* role, query the role management policy that Microsoft Entra ID has assigned to the role by using the [unifiedRoleManagementPolicyAssignment resource type](/graph/api/resources/unifiedrolemanagementpolicyassignment) as follows:
+
+    ```http
+    GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole' and roleDefinitionId eq '9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3'
+    ```
+
+    The response returns an object similar to the following response that contains a policy assignment ID and a policy ID.
+
+    ```http
+    Content-Type: application/json
+
+    {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicyAssignments",
+        "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/roleManagementPolicyAssignments?$select=policyId,roleDefinitionId",
+        "value": [
+            {
+                "id": "DirectoryRole_714a5b9b-97d1-45af-937f-6a998297bc52_0653a6f0-2dca-4655-88fe-b43a086fb66a_9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "policyId": "DirectoryRole_714a5b9b-97d1-45af-937f-6a998297bc52_0653a6f0-2dca-4655-88fe-b43a086fb66a",
+                "scopeId": "/",
+                "scopeType": "DirectoryRole",
+                "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+            }
+        ]
+    }
+    ```
+
+Use the **policyId** object to query and manage the corresponding rules for the role.
+
 ## Example 1: Update the activation maximum duration
 
 + Category of rule: Activation rule
