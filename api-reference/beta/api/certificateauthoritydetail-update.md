@@ -49,6 +49,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
