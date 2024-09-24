@@ -9,7 +9,7 @@ ms.subservice: search
 
 # Enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center
 
-This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins and Global admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
+This article describes how to enable the simplified admin experience for your Microsoft Graph connector in the Teams admin center. When you enable this experience, Teams admins can enable or disable your custom Microsoft Graph connector seamlessly in the Teams admin center.
 
 ![Simplified admin experience in the Teams admin center](images/connectors-images/oneclickadmin-TAC-connectors.png)
 
@@ -231,7 +231,7 @@ To learn how to ingest external items into a working Microsoft Graph connection,
 
 To validate the experience:
 
-- Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin or Global admin of the tenant.
+- Sign in to the [Teams admin center](https://admin.teams.microsoft.com) as a Teams admin.
 - Select the **Manage apps** blade in the left rail.
 - Go to your Teams application.
 - On the detail page of the Teams app, you notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.

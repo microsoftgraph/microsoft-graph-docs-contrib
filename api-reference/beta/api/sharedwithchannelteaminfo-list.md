@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "sharedwithchannelteaminfo_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharedwithchannelteaminfo-list-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
