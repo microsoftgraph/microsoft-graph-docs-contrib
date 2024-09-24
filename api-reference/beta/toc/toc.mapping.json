@@ -1618,6 +1618,13 @@
               ]
             },
             {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
