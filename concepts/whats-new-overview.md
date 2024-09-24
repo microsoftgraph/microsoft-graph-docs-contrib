@@ -82,6 +82,11 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 - [Update a community](/graph/api/community-update)
 - [Delete a community](/graph/api/community-delete)
 
+
+### Files
+
+Introduced the ability to include all version history when you [copy a drive item](/graph/driveitem-copyy?view=graph-rest-beta). Version history is included up to the target version setting limit.
+
 ### People and workplace intelligence | Insights
 
 [Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
