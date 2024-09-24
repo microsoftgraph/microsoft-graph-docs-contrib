@@ -14,6 +14,17 @@ Namespace: microsoft.graph
 
 Activate a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
 
+The following points apply to restoring a protection unit:
+
+- The SharePoint sites and OneDrive accounts being restored aren't locked in a ready-only state.
+- For SharePoint and OneDrive sites restored to new URLs, users don't have the same permissions they had to the original site. Only the global admin or SharePoint admin has permission to the restored site. However, for in-place or restores to the same URL, the permissions from the original site at the time of restoration are preserved.
+- Restoration of SharePoint site and OneDrive user content that was removed from the recycle bin isn't supported.
+- Mailboxes, OneDrive accounts, and SharePoint sites that are under legal or in-place holds can't be restored unless the legal hold is removes. To restore a SharePoint site under legal hold, you need to restore the site to a new URL.
+- Mailbox draft items aren't backed up and can't be restored.
+- A restore isn't performed if the current state of the mailbox is same as the point in time you're trying to restore it to.
+- SharePoint sites and OneDrive accounts that are restored to a new URL have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually.
+- The global admin, SharePoint admin, or Exchange admin can initiate a restore of up to 1,000 SharePoint sites, 1,000 OneDrive users, and 1000 mailboxes queued in parallel at a time.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -47,12 +58,15 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `200 OK` response code and a [restoreSessionBase](../resources/restoresessionbase.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restoresessionbasethis.activate"
@@ -61,6 +75,40 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions/61633878-8321-4950-bfaf-ed285bdd1461/activate
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/restoresessionbasethisactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restoresessionbasethisactivate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restoresessionbasethisactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restoresessionbasethisactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restoresessionbasethisactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/restoresessionbasethisactivate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restoresessionbasethisactivate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/restoresessionbasethisactivate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

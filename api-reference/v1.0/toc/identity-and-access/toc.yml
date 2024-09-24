@@ -1084,6 +1084,18 @@ items:
         href: ../../api/identitygovernance-lifecyclemanagementsettings-get.md
       - name: Update
         href: ../../api/identitygovernance-lifecyclemanagementsettings-update.md
+    - name: Insights
+      items:
+      - name: Insights
+        href: ../../resources/identitygovernance-insights.md
+      - name: Get top workflows summary
+        href: ../../api/identitygovernance-insights-topworkflowsprocessedsummary.md
+      - name: Get top tasks summary
+        href: ../../api/identitygovernance-insights-toptasksprocessedsummary.md
+      - name: Get workflows processed summary
+        href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
+      - name: Get workflows processed by category
+        href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
     - name: Complex types
       items:
       - name: Custom callout extension
@@ -1667,7 +1679,7 @@ items:
         href: ../../resources/authenticationcontextclassreference.md
       - name: List
         href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-      - name: Create or update authenticationContextClassReference
+      - name: Create or update
         href: ../../api/authenticationcontextclassreference-update.md
       - name: Get
         href: ../../api/authenticationcontextclassreference-get.md

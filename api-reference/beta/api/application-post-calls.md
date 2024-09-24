@@ -31,7 +31,7 @@ This API supports the following PSTN scenarios:
 + P2P call between bot and another peer (Teams user, PSTN), bot invites another Teams user.
 + Bot join the scheduled meeting and then invite PSTN.
 
-+ [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -81,7 +81,6 @@ If successful, this method returns a `201 Created` response code and a [call](..
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
@@ -114,7 +113,8 @@ Content-Type: application/json
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
@@ -242,6 +242,11 @@ Content-Type: application/json
   "chatInfo": null,
   "meetingInfo": null,
   "transcription": null,
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
+  },
   "meetingCapability": null,
   "toneInfo": null
 }
