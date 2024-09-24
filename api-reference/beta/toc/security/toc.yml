@@ -590,9 +590,9 @@ items:
     items:
     - name: Cloud app discovery report
       href: ../../resources/security-cloudappdiscoveryreport.md
-    - name: List Uploaded Streams
+    - name: List uploaded streams
       href: ../../api/security-datadiscoveryreport-list-uploadedstreams.md
-    - name: Get Aggregated Apps Details
+    - name: Aggregated apps details
       href: ../../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md
   - name: Discovered cloud app detail
     items:
