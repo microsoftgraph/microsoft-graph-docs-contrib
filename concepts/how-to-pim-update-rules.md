@@ -7,7 +7,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-id-governance
-ms.date: 09/27/2023
+ms.date: 09/24/2024
 #Customer intent: As a developer, I want to update settings and rules in Privileged Identity Management (PIM) using Microsoft Graph APIs, so that I can manage the activation, approval, and expiration settings for different roles and groups in PIM.
 ---
 
@@ -25,12 +25,12 @@ If successful, all requests return `204 No Content` response codes.
 ## Prerequisites
 
 + Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
+  + Understand the [mapping of the rules to the different categories of rules in PIM](identity-governance-pim-rules-overview.md).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
-  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
+  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with administrative privileges to manage PIM rules. The *Privileged Role Administrator* role is the least privileged role sufficient to manage PIM rules.
   + Depending on operations you want to carry out, grant yourself one of the following delegated permissions:
     + To manage the rules for Microsoft Entra roles: *RoleManagementPolicy.ReadWrite.Directory*
     + To manage the rules for groups: *RoleManagementPolicy.ReadWrite.AzureADGroup*
-
 
 ## Example 1: Update the activation maximum duration
 
@@ -474,4 +474,4 @@ Content-Type: application/json
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Overview of rules for Microsoft Entra roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)
-+ [Configure Microsoft Entra role settings using the Microsoft Entra admin center](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)
++ [Configure Microsoft Entra role settings using the Microsoft Entra admin center](/entra/id-governance/privileged-identity-management/pim-how-to-change-default-settings)
