@@ -18,7 +18,7 @@ const fileStorageContainer = {
   }
 };
 
-await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z')
+await client.api('/storage/fileStorage/containers/{containerId}')
 	.version('beta')
 	.update(fileStorageContainer);
 
