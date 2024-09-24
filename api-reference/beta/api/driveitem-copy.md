@@ -60,6 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
+| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination.    |
 
 
 >[!NOTE]
@@ -89,7 +90,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
   "name": "contoso plan (copy).txt"
@@ -155,7 +156,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
   "childrenOnly": true
@@ -222,7 +223,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   }
 }
@@ -303,7 +304,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   }
 }
@@ -353,14 +354,47 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-### Example 5: Copy the children in a folder from root
+### Example 5: Copy operation preserve version history
+
+The following example copies the item identified by `{item-id}` into a folder identified with a `driveId` and `id` value. It also copies the version history to the target folder. If the source file contains 20 versions and the destination version limit setting is 10, the copy only transfers the maximum number of versions the destination site allows, starting from the most recent.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "copy-item-5", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "includeAllVersionHistory": true
+}
+```
+
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+
+```
+
+### Example 6: Copy the children in a folder from root
 
 The following example attempts to copy the children in a folder identified by `{item-id}` (also known as root) into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter isn't set to true.
 The request fails because the copy operation can't be done in the root folder.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-5" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-6" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/root/copy
@@ -368,7 +402,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   }
 }
@@ -400,14 +434,14 @@ Content-Length: 283
 ```
 To resolve this error, set the `childrenOnly` parameter to true.
 
-### Example 6: Copy the children in a folder where source has more than 150 direct children
+### Example 7: Copy the children in a folder where source has more than 150 direct children
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter is set to true. The drive item identified by `{item-id}` contains more than 150 direct children.
 The request fails because the limit is 150 direct children.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-6" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -415,7 +449,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   }
 }
@@ -448,14 +482,14 @@ Content-Length: 341
 ```
 To resolve this error, reorganize the source folder structure only to have 150 children.
 
-### Example 7: Copy the children where the source item is a file
+### Example 8: Copy the children where the source item is a file
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The `{item-id}` refers to a file, not a folder. The `childrenOnly` parameter is set to true.
 The request fails since the `{item-id}` is a nonfolder driveItem.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-7" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -463,7 +497,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
   "childrenOnly": true
@@ -495,14 +529,14 @@ Content-Length: 290
 }
 ```
 
-### Example 8: Copy the children in a folder with childrenOnly and name
+### Example 9: Copy the children in a folder with childrenOnly and name
 
 The following example attempts to copy the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The `childrenOnly` parameter is set to true and specify a `name` value.
 The request fails because `childrenOnly` and `name` can't be used together.
 
 #### Request
-<!-- { "blockType": "ignored", "name": "copy-item-8" } -->
+<!-- { "blockType": "ignored", "name": "copy-item-9" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
@@ -510,7 +544,7 @@ Content-Type: application/json
 
 {
   "parentReference": {
-    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "driveId": "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
   "name": "contoso plan (copy).txt",
