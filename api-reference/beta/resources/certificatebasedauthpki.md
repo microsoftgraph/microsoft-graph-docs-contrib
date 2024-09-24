@@ -27,6 +27,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[Get](../api/certificatebasedauthpki-get.md)|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md)|Read the properties and relationships of a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.|
 |[Update](../api/certificatebasedauthpki-update.md)|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md)|Update the properties of a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.|
 |[Delete](../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md)|None|Delete a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.|
+|[Upload](../api/certificatebasedauthpki-upload.md)|None|Download the PKI file and populate the certificateAuthorities.|
 
 ## Properties
 |Property|Type|Description|
