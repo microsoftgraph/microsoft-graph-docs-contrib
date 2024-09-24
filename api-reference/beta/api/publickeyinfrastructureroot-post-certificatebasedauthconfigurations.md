@@ -50,6 +50,7 @@ In the request body, supply a JSON representation of the [certificateBasedAuthPk
 You can specify the following properties when creating a **certificateBasedAuthPki**.
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
