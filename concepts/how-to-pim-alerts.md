@@ -570,7 +570,7 @@ Content-Type: application/json
 
 ## Refresh alerts
 
-In PIM, you can refresh a single alert type or all alerts in the tenant. When you refresh either type, PIM scans the tenant for incidents that match the alerts. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the refresh succeeded or failed. In a successful refresh, PIM includes alerts that you previously dismissed, reactives dismissed alerts (updates **isActive** to `true`), and scans and generates new incidents for the alerts.
+In PIM, you can refresh a single alert type or all alerts in the tenant. When you refresh either type, PIM scans the tenant for incidents that match the alerts. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the refresh succeeded or failed. In a successful refresh, PIM includes alerts that you previously dismissed, reactivates dismissed alerts (updates **isActive** to `true`), and scans and generates new incidents for the alerts.
 
 ### Refresh a single alert type
 
