@@ -14,9 +14,9 @@ ms.date: 09/24/2024
 
 # Govern membership and ownership of groups using PIM for groups
 
-With [Privileged Identity Management for groups (PIM for groups)](entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
+With [Privileged Identity Management for groups (PIM for groups)](entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 Groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
 
-The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 groups such as the following capabilities:
+The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 Groups such as the following capabilities:
 
 - Providing principals just-in-time membership or ownership of groups
 - Assigning principals temporary membership or ownership of groups
@@ -59,7 +59,7 @@ The following table lists scenarios for using PIM for groups APIs to manage elig
 
 ## Policy settings in PIM for groups
 
-PIM for groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. The rules are defined in policies and a policy can be applied to a group.
+PIM for groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 Groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. The rules are defined in policies and a policy can be applied to a group.
 
 In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
