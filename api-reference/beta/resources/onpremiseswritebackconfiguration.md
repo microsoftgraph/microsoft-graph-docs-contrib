@@ -2,7 +2,7 @@
 title: "onPremisesWritebackConfiguration resource type"
 description: "Configuration to control how cloud created or owned objects are synchronized back to the on-premises directory."
 author: "dkershaw10"
-ms.reviewer: adam.lassman, daradwan
+ms.reviewer: sgupta, abhishek.badjatya
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
