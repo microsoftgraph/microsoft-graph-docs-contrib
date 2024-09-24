@@ -3092,6 +3092,8 @@ items:
         href: ../../api/certificatebasedauthpki-update.md
       - name: Delete
         href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
     - name: Certificate authority detail
       items:
       - name: Certificate authority detail
