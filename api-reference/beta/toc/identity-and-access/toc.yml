@@ -3016,34 +3016,6 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        items:
-        - name: Remote desktop security configuration
-          href: ../../resources/remotedesktopsecurityconfiguration.md
-        - name: Create
-          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-        - name: Get
-          href: ../../api/remotedesktopsecurityconfiguration-get.md
-        - name: Update
-          href: ../../api/remotedesktopsecurityconfiguration-update.md
-        - name: Delete
-          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-      - name: Target device group
-        items:
-        - name: Target device group
-          href: ../../resources/targetdevicegroup.md
-        - name: List
-          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-        - name: Create
-          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-        - name: Get
-          href: ../../api/targetdevicegroup-get.md
-        - name: Update
-          href: ../../api/targetdevicegroup-update.md
-        - name: Delete
-          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
