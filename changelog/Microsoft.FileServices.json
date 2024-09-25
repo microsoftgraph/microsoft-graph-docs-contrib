@@ -4,27 +4,27 @@
           "ChangeList": [
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
-            "ApiChange": "Method",
-            "ChangedApiName": "list_permission",
-            "ChangeType": "Change",
-            "Description": "Updated the [list_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta) method to include the **includeAllContainerUsers** parameter.",
+            "ApiChange": "Parameter",
+            "ChangedApiName": "includeAllContainerUsers",
+            "ChangeType": "Addition",
+            "Description": "Added the `includeAllContainerUsers` parameter to the [list_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta) method.",
             "Target": "fileStorageContainer"
           },
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
-            "ApiChange": "Method",
-            "ChangedApiName": "delete_permission",
-            "ChangeType": "Change",
-            "Description": "Updated the [delete_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-permissions?view=graph-rest-beta) method to include the **onlyRemoveContainerScopedPermission** header.",
-            "Target": "fileStorageContainer"
+            "ApiChange": "Property",
+            "ChangedApiName": "itemMajorVersionLimit",
+            "ChangeType": "Addition",
+            "Description": "Added the **itemMajorVersionLimit** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta) resource.",
+            "Target": "fileStorageContainerSettings"
           },    
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fileStorageContainerSettings",
+            "ApiChange": "Property",
+            "ChangedApiName": "isItemVersioningEnabled",
             "ChangeType": "Addition",
-            "Description": "Added the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta) resource.",
-            "Target": "fileStorageContainer"
+            "Description": "Added the **isItemVersioningEnabled** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta) resource.",
+            "Target": "fileStorageContainerSettings"
           },
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
