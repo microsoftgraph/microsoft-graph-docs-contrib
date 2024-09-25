@@ -60,11 +60,18 @@ If successful, this method returns a `200 OK` and a [pageTemplate](../resources/
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
