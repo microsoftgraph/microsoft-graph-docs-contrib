@@ -14,6 +14,22 @@
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
             "ApiChange": "Property",
             "ChangedApiName": "itemMajorVersionLimit",
+            "ChangeType": "Removal",
+            "Description": "Removed the **itemMajorVersionLimit** property from the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+            "Target": "fileStorageContainer"
+          },    
+          {
+            "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
+            "ApiChange": "Property",
+            "ChangedApiName": "isItemVersioningEnabled",
+            "ChangeType": "Removal",
+            "Description": "Removed the **isItemVersioningEnabled** property from the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+            "Target": "fileStorageContainer"
+          },  
+          {
+            "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
+            "ApiChange": "Property",
+            "ChangedApiName": "itemMajorVersionLimit",
             "ChangeType": "Addition",
             "Description": "Added the **itemMajorVersionLimit** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta) resource.",
             "Target": "fileStorageContainerSettings"
