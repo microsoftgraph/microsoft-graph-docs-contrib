@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [v1-disclaimer](../../includes/v1-disclaimer.md)]
 
 Represents Kubernetes service entity.
 
