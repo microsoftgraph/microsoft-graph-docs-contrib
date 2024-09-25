@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) of a Cloud PC.
+List all [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.
 
 ## Permissions
 
