@@ -54,6 +54,8 @@ To remove a **mailboxProtectionUnit** from the policy, specify the `@removed` an
 
 If successful, this method returns a `200 OK` response code and an updated [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -113,6 +115,10 @@ Authorization: Bearer <Access-Token>
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-update-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

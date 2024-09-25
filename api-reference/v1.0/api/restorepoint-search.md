@@ -63,6 +63,12 @@ In the request body, supply a JSON representation of the following parameters.
 
 If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
 
+> [!NOTE]
+> - Calls return a maximum of five restore points.
+> - You can include a maximum of 20 protection units in one request and the response won't be paginated.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Example 1: Search request
@@ -116,6 +122,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/restorepoint-search-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,6 +133,9 @@ Content-Type: application/json
 ---
 
 #### Response
+
+- Calls return a maximum of five restore points.
+- You can include a maximum of 20 protection units in one request and the response won't be paginated.
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -241,6 +254,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-artifactquery-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-artifactquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

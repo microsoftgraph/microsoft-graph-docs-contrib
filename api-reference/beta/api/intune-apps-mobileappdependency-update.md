@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceAppManagement/mobileAppRelationships/{mobileAppRelationshipId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
 ```
 
@@ -50,15 +51,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|The target mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|The target mobile app's display name. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayVersion|String|The target mobile app's display version. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetPublisher|String|The target mobile app's publisher. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`.|
-|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
-|dependentAppCount|Int32|The total number of apps that directly or indirectly depend on the parent app. This property is read-only.|
-|dependsOnAppCount|Int32|The total number of apps the child app directly or indirectly depends on. This property is read-only.|
+|id|String|The unique identifier for the mobile app relationship entity. Read-Only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|App ID of the app that is the target of the mobile app relationship entity. Read-Only Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|The display name of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|The display version of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|The publisher of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target application of a relationship is a parent or child in the relationship. Possible values are: parent, child. Read-Only. This property is read-only. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`, `unknownFutureValue`.|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: detect, autoInstall. Read-Only. Possible values are: `detect`, `autoInstall`, `unknownFutureValue`.|
+|dependentAppCount|Int32|The total number of apps that directly or indirectly depend on the parent app. Read-Only. This property is read-only.|
+|dependsOnAppCount|Int32|The total number of apps the child app directly or indirectly depends on. Read-Only. This property is read-only.|
 
 
 
@@ -70,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppRelationships/{mobileAppRelationshipId}
 Content-type: application/json
 Content-length: 372
 

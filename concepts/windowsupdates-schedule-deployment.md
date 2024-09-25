@@ -1,15 +1,15 @@
 ---
-title: "Schedule a deployment using the Windows Update for Business deployment service"
-description: "When deploying an update, you can schedule the deployment so that devices receive the update later by using the Windows Update for Business deployment service."
+title: "Schedule a deployment using Windows Autopatch"
+description: "When deploying an update, you can schedule the deployment so that devices receive the update later by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
 ---
 
-# Schedule a deployment using the Windows Update for Business deployment service
+# Schedule a deployment using Windows Autopatch
 
-When deploying an update using the deployment service, you can schedule the deployment so that devices receive the update at a future date.
+When deploying an update using Windows Autopatch, you can schedule the deployment so that devices receive the update at a future date.
 
 Scheduling features are compatible with [deployments](/graph/windowsupdates-deployments) of Windows 10/Windows 11 feature updates.
 

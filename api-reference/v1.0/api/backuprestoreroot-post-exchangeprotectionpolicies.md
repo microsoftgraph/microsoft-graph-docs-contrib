@@ -52,6 +52,8 @@ In the request body, include a JSON representation of the [exchangeProtectionPol
 
 If successful, this method returns a `201 Created` response code and an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -106,6 +108,10 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtection
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-create-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

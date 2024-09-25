@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AppManagementPolicy
 {
@@ -61,6 +62,33 @@ var requestBody = new AppManagementPolicy
 					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
 				},
 				MaxLifetime = null,
+			},
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"applicationRestrictions" , new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"identifierUris", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"nonDefaultUriAddition", new UntypedObject(new Dictionary<string, UntypedNode>
+								{
+									{
+										"restrictForAppsCreatedAfterDateTime", new UntypedString("2024-01-01T10:37:00Z")
+									},
+									{
+										"excludeAppsReceivingV2Tokens", new UntypedBoolean(true)
+									},
+									{
+										"excludeSaml", new UntypedBoolean(true)
+									},
+								})
+							},
+						})
+					},
+				})
 			},
 		},
 	},
