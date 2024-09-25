@@ -33,13 +33,13 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcAutopilot"
+  "@odata.type": "microsoft.graph.cloudPcAutopilotConfiguration "
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcAutopilot",
+  "@odata.type": "#microsoft.graph.cloudPcAutopilotConfiguration ",
   "devicePreparationProfileId": "String (identifier)",
   "applicationTimeoutInMinutes": "Int32",
   "onFailureDeviceAccessDenied": "Boolean"
