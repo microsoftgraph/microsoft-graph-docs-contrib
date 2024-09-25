@@ -132,18 +132,6 @@ items:
           href: ../../api/tenantappmanagementpolicy-get.md
         - name: Update
           href: ../../api/tenantappmanagementpolicy-update.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        href: ../../resources/remotedesktopsecurityconfiguration.md
-      - name: Create
-        href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-      - name: Get
-        href: ../../api/remotedesktopsecurityconfiguration-get.md
-      - name: Update
-        href: ../../api/remotedesktopsecurityconfiguration-update.md
-      - name: Delete
-        href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
@@ -346,7 +334,7 @@ items:
         href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-    - name: Remote desktop security configuration
+    - name: Remote desktop security policy
       items:
       - name: Remote desktop security configuration
         items:
