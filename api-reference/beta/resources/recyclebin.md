@@ -22,13 +22,13 @@ Inherits from [baseItem](baseitem.md).
 | Property | Type   | Description                                                                                                              |
 |:---------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 |id| String | The unique identifier for the **recycleBin** object. Returned only on `$select`. Inherited from [baseItem](baseitem.md). |
+|settings|[recycleBinSettings](./recyclebinsettings.md)|Settings of the recycleBin.|
 
 ## Relationships
 
 | Relationship | Type                                           | Description                                        |
 |:-------------|:-----------------------------------------------|:---------------------------------------------------|
 | items        | [recycleBinItem](recyclebinitem.md) collection | List of the **recycleBinItems** deleted by a user. |
-|settings|[recycleBinSettings](./recyclebinsettings.md)|Settings of the recycleBin.|
 
 ## JSON Representation
 
@@ -44,7 +44,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "settings": { "@odata.type": "microsoft.graph.recycleBinSettings" }
 }
 ```
 
