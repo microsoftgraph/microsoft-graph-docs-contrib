@@ -24,6 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_list_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-permissions-permissions.md)]
 
+## Optional query parameters
+This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## HTTP request
 
 <!-- {
@@ -34,8 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /storage/fileStorage/containers/{containerId}/permissions
 ```
 
-## Optional query parameters
-This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
