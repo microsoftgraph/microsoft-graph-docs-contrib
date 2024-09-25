@@ -33,9 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -55,6 +67,15 @@
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPreApprovalPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security configuration",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -1609,13 +1630,6 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
