@@ -18,7 +18,7 @@ Represents settings for the recycleBin resource type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. This property has a default value of 93 and can be set to values from 93 to 180 only. Setting applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
+|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. The default value is 93, which can be set from 93 to 180. The setting applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
 
 ## Relationships
 None.
