@@ -47,6 +47,8 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |cloudPcHostHealthCheckFailures| The rule condition targets Cloud PC host health check failures.|
 |cloudPcZoneOutage| The rule condition targets Cloud PC zone outage.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|frontlineBufferUsageDuration| The alert rule condition targets Frontline buffer usage exceeds time duration.|
+|frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting fequency.|
 
 ### aggregationType values
 
@@ -57,6 +59,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |affectedCloudPcCount|The total number of Cloud PCs that meet the rule conditions.|
 |affectedCloudPcPercentage|The percentage of Cloud PCs that meet the rule conditions.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|durationInMinute| The time range during which Cloud PCs that meet the alert rule conditions are affected.|
 
 ### operatorType values
 

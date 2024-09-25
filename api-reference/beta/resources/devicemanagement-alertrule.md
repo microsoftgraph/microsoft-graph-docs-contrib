@@ -54,6 +54,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcInGracePeriodScenario |The alert rule was triggered when the Cloud PC entered the grace period.|
 |cloudPcFrontlineInsufficientLicensesScenario| The alert rule was triggered for the Frontline Cloud PCs where more concurrent Cloud PC connections were active than the concurrency limit allows.|
 |cloudPcInaccessibleScenario| The alert rule was triggered when Cloud PCs couldn't connect due to host health failure, connection errors, or a zone outage. Alternatively, because they were under provisioning or restoring device status.|
+|cloudPcFrontlineBufferUsageScenario| The alert rule was triggered for the Frontline Cloud PCs buffer usage when the buffer is used over the time limit or the count limit. When the frontline licenses are fully utilized by the tenants, there is predefined buffer time duration or number of license count that allows Cloud PC users to use the licenses beyond the allotted licenses. This alert is triggered when the buffered time or license count has been utilized.|
 
 ### ruleSeverityType values
 
