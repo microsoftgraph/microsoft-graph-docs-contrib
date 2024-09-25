@@ -925,7 +925,7 @@ items:
         href: cloud-communications-watermark-meeting.md
     - name: Virtual events
       items:
-      - name: Overview 
+      - name: Choose the right meeting type 
         href: cloud-communications-virtual-events-overview.md
       - name: Town hall use cases 
         href: cloud-communications-virtual-events-townhall-usecases.md
