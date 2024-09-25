@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-permissions-permissions.md)]
 
 ## HTTP request
+>**Note:** By default, this API removes access for an identity to the container, and all items within the container regardless of the identity have container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when calling the API.
+> When the `Prefer:onlyRemoveContainerScopedPermission` header is provided, only the identity's container-scoped permission is removed. All item-level permissions (if any) explicitly granted to the identity will be retained. 
 
 <!-- {
   "blockType": "ignored"
@@ -36,12 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ```
-
-> [!NOTE]
-> By default, this API removes access for an identity to the container and all items within the container regardless the identity has container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when calling the API.
->
-> When the `Prefer:onlyRemoveContainerScopedPermission` header is provided, only the identity's container-scoped permission is removed. All item-level permissions (if any) explicitly granted to the identity will be retained. 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -56,6 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
