@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The properties of each certificate authority object contained in the public key infrastructure resource.
 
 
 Inherits from [directoryObject](../resources/directoryobject.md).
@@ -33,11 +33,11 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |:---|:---|:---|
 |certificate|Binary|The public key of the certificate authority.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority whether `root` or `intermediate`. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
-|certificateRevocationListUrl|String|The URL to check if the certificate is revoked|
+|certificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
 |createdDateTime|DateTimeOffset|The creation DateTime of the certificate authority.|
 |deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
-|displayName|String|**TODO: Add Description**|
+|displayName|String|The display name of the Public key infrastructure for the certificate authority.|
 |expirationDateTime|DateTimeOffset|The expirationTime of the certificate authority.|
 |id|String|The id of the certificateAuthority entity. Inherited from [entity](../resources/entity.md).|
 |isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it's presented to the user in the certificate picker to be used for authentication. `false` by default.|
