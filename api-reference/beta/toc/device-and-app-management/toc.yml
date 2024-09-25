@@ -414,6 +414,8 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk create snapshot
+      href: ../../resources/cloudpcbulkcreatesnapshot.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
@@ -432,6 +434,8 @@ items:
       href: ../../resources/cloudpcbulkrestart.md
     - name: Cloud PC bulk restore
       href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk set review status
+      href: ../../resources/cloudpcbulksetreviewstatus.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC connection setting
