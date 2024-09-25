@@ -927,14 +927,10 @@ items:
       items:
       - name: Overview 
         href: cloud-communications-virtual-events-overview.md
-      - name: Sync virtual events data
-        href: cloud-communications-virtual-events-data-sync.md
-      - name: Create/update/delete virtual events
-        href: cloud-communications-virtual-events-CUD.md
-      - name: Customize email communication
-        href: cloud-communications-virtual-events-email.md
-      - name: Customize webinar registration experience 
-        href: cloud-communications-virtual-events-registration.md
+      - name: Town hall use cases 
+        href: cloud-communications-virtual-events-townhall-usecases.md
+      - name: Webinar use cases 
+        href: cloud-communications-virtual-events-webinar-usecases.md
     - name: Change notifications
       items:
       - name: Subscribe to teams, chats, channels
