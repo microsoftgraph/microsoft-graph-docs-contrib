@@ -1,6 +1,6 @@
 ---
 title: "certificateBasedAuthPki resource type"
-description: "The collection of public key infrastructure instances for the certificate based authentication feature for users."
+description: "The collection of public key infrastructure instances for the certificate based authentication."
 author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -33,11 +33,11 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|displayName|String|The name of the certificateBasedAuthPki entity|
+|displayName|String|The name of the certificateBasedAuthPki entity.|
 |id|String|The id of the certificateBasedAuthPki entity. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Date time the certificateBasedAuthPki object of its related certificate authorities were modified|
-|status|String|The status of any asynchronous jobs runs on the certificateBasedAuthPki entity which can be upload or delete|
-|statusDetails|String|Property that provides additional information of the upload/deleted operation of PKI(Public Key Infrastructure)|
+|lastModifiedDateTime|DateTimeOffset|Date time the certificateBasedAuthPki object of its related certificate authorities were modified.|
+|status|String|The status of any asynchronous jobs runs on the certificateBasedAuthPki entity which can be upload or delete.|
+|statusDetails|String|Property that provides additional information of the upload/deleted operation of PKI(Public Key Infrastructure).|
 
 ## Relationships
 |Relationship|Type|Description|
