@@ -56,7 +56,7 @@ Represents a location where multiple users or a group of users can store files a
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
-|id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
+|id|String|The unique stable identifier of the **fileStorageContainer**. Read-only.|
 |owners|[userIdentity](../resources/useridentity.md) collection|List of users who own the **fileStorageContainer**. Read-only.|
 |ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**. The possible values are: `tenantOwned`. Read-only.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
