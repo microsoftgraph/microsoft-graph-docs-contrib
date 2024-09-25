@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The collection of public key infrastructure instances for the certificate based authentication.
 
 
 Inherits from [directoryObject](../resources/directoryobject.md).
