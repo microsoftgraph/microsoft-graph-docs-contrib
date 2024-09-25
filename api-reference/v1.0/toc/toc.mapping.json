@@ -35,7 +35,6 @@
               "name": "Policies",
               "shouldSort": true,
               "resources": [
-                "remoteDesktopSecurityConfiguration",
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
               ],
@@ -68,7 +67,7 @@
               ],
               "childNodes": [
                 {
-                  "name": "Remote desktop security configuration",
+                  "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
                     "targetDeviceGroup"

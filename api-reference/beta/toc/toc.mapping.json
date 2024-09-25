@@ -62,7 +62,6 @@
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy",
-                "remoteDesktopSecurityConfiguration",
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
@@ -70,7 +69,7 @@
               ],
               "childNodes": [
                 {
-                  "name": "Remote desktop security configuration",
+                  "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
                     "targetDeviceGroup"
