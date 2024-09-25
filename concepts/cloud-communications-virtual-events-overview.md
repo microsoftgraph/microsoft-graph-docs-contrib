@@ -21,7 +21,7 @@ The following table provides a comparison of the types of meetings that Teams an
 To learn more about the differences between each meeting type to help you choose the one that is best suited for your use case, see the [feature comparison chart](https://learn.microsoft.com/en-us/microsoftteams/meeting-webinar-town-hall-feature-comparison).  
 
 
-# Related content 
-- [Create or join online meetings](cloud-communications-online-meetings.md)
-- [Webinar use cases](cloud-communications-virtual-events-webinar-usecases.md)
-- [Town hall use cases](cloud-communications-virtual-events-townhall-usecases.md)
+# Next Steps 
+- [Create or join online meetings](cloud-communications-online-meetings.md) - Learn about how to use online meetings APIs. 
+- [Webinar use cases](cloud-communications-virtual-events-webinar-usecases.md) - Learn how to create solutions with webinar APIs.
+- [Town hall use cases](cloud-communications-virtual-events-townhall-usecases.md) - Learn how to create solutions with town hall APIs.
