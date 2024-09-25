@@ -8,13 +8,13 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.topic: overview
 ms.subservice: entra-id-governance
-ms.date: 09/24/2024
+ms.date: 09/25/2024
 #Customer intent: As a security administrator, I want to understand how to use PIM for groups to govern membership and ownership of groups in my organization.
 ---
 
 # Govern membership and ownership of groups using PIM for groups
 
-With [Privileged Identity Management for groups (PIM for groups)](entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 Groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
+With [Privileged Identity Management for groups (PIM for groups)](/entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 Groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
 
 The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 Groups such as the following capabilities:
 
