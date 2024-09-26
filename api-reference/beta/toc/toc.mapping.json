@@ -33,9 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -50,11 +62,19 @@
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy",
-                "remoteDesktopSecurityConfiguration",
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPreApprovalPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security policy",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -195,6 +215,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -214,8 +237,16 @@
             "place",
             "room",
             "roomList"
-          ]
-        }
+          ],
+           "childNodes": [
+            {
+              "name": "Devices (preview)",
+              "resources":[
+                "workplaceSensorDevice"
+              ]
+            }
+           ]
+         }
       ]
     },
     {
@@ -1576,14 +1607,6 @@
               ],
               "childNodes": [
                 {
-                  "name": "Application management policy",
-                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
-                  "resources": [
-                    "tenantAppManagementPolicy",
-                    "appManagementPolicy"
-                  ]
-                },
-                {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
                   "shouldSort": true,
@@ -1598,13 +1621,6 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
@@ -2088,6 +2104,7 @@
         "insightsSettings",
         "pronounsSettings",
         "photoUpdateSettings",
+        "namePronunciationSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2103,7 +2120,9 @@
           "resources": [
             "pronounsSettings",
             "profileCardProperty",
-            "photoUpdateSettings"
+            "photoUpdateSettings",
+            "namePronunciationSettings"
+
           ]
         },
         {
@@ -2449,10 +2468,8 @@
         {
           "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.identityContainer"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ]
         },
         {
@@ -2592,7 +2609,12 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "webPart"
+            "webPart",
+            "pageTemplate"
+          ],
+          "complexTypes": [
+            "createFromTemplate",
+            "saveAsTemplate"
           ],
           "childNodes": [
             {

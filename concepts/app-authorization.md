@@ -45,8 +45,6 @@ First, the wizard shows overview information about the application:
 
 - **App publisher** — The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this value is the same Microsoft Entra tenant ID as your tenant.
 
-![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
-
 Next, the wizard includes multiple dataset steps, one step per dataset registered in the app. Each page shows you relevant information for each dataset. For example:
 
 - **Columns**—Specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
