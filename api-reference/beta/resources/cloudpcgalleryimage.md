@@ -31,6 +31,7 @@ Represents the gallery image resource of the current organization that can be us
 |expirationDate|Date|The date when the image is no longer available. Users are unable to provision new Cloud PCs if the current time is later than **expirationDate**. The value is usually **endDate** plus six months. For example, if the **startDate** is `2025-10-14`, the **expirationDate** is usually `2026-04-14`. Read-only.|
 |id|String|The unique identifier (ID) of the gallery image resource on Cloud PC. The ID format is {publisherName_offerName_skuName}. For example, `MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365`. You can find the **publisherName**, **offerName**, and **skuName** in the Azure Marketplace. Read-only.|
 |offerName|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
+|osVersionNumber|String|The operating system version of this gallery image. For example, `10.0.22000.296.` Read-only.|
 |publisherName|String|The publisher name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
 |sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
 |skuName|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only.|
@@ -42,7 +43,6 @@ Represents the gallery image resource of the current organization that can be us
 |recommendedSku (deprecated)|String|The recommended Cloud PC SKU for this gallery image. Read-only. The **recommendedSku** property is deprecated and will stop returning data on January 31, 2024.|
 |sku (deprecated)|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only. The **sku** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **skuName** property.|
 |skuDisplayName (deprecated)|String|The official display SKU name of this gallery image. For example, `2004`. Read-only. The **skuDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
-|osVersionNumber|String|The OS version of this gallery image. For example: 10.0.22000.296. Read-Only.|
 
 ### cloudPcGalleryImageStatus values
 
@@ -79,6 +79,7 @@ The following JSON representation shows the resource type.
   "offer": "String",
   "offerDisplayName": "String",
   "offerName": "String",
+  "osVersionNumber": "String",
   "publisher": "String",
   "publisherName": "String",
   "recommendedSku": "String",
@@ -87,7 +88,6 @@ The following JSON representation shows the resource type.
   "skuDisplayName": "String",
   "skuName": "String",
   "startDate": "String (Date)",
-  "status": "String",
-  "osVersionNumber": "String"
+  "status": "String"
 }
 ```
