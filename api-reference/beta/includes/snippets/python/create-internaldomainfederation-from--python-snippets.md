@@ -25,6 +25,7 @@ request_body = InternalDomainFederation(
 	is_signed_authentication_request_required = True,
 	next_signing_certificate = "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
 	federated_idp_mfa_behavior = FederatedIdpMfaBehavior.RejectMfaByFederatedIdp,
+	password_reset_uri = "https://sts.contoso.com/adfs/passwordReset",
 )
 
 result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.post(request_body)
