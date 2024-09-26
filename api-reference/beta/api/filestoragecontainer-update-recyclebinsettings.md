@@ -1,5 +1,5 @@
 ---
-title: "Update recycleBin settings"
+title: "Update recycleBinSettings"
 description: "Update recycleBin settings for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Update recycleBin settings
+# Update recycleBinSettings
 
 
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Update the setting on the recycleBin for a [fileStorageContainer](../resources/f
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "filestoragecontainer-update-recyclebin-settings-permissions" } -->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer-update-recyclebinsettings-permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-update-recyclebinsettings-permissions.md)]
 
 ## HTTP request
@@ -42,7 +42,7 @@ PATCH /storage/fileStorage/containers/{containerId}/recycleBin/settings
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the new values for the **recycleBinSettings** properties. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
+In the request body, supply the new values for the **recycleBinSettings** properties. Existing properties that aren't included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 
