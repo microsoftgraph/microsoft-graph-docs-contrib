@@ -19,7 +19,7 @@ Represents a bulk job associated to one of the protection policy, as specified b
 
 This abstract type is the base type for [siteProtectionUnitsBulkAdditionJob](../resources/siteProtectionUnitsBulkAdditionJob.md), [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md), and [driveProtectionUnitsBulkAdditionJob](../resources/driveprotectionunitsbulkadditionjob.md).
 
-The following limitation apply to this resource:
+The following limitation applies to this resource:
 
 - The protection units bulk addition job APIs for bulk addition of protection units in the backup policy can accommodate a maximum of 50,000 protection resources in a single job.
 
@@ -40,10 +40,10 @@ The following limitation apply to this resource:
 
 |Member | Description |
 |:------|:------------|
-|active | The status of the job when it is running.|
-|completed | The status of the job when it is successfully applied to the corresponding policy.|
+|active | 	The status of the job when it's running.|
+|completed | The status of the job when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status when the job finished running, but encountered errors.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.    |
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
 
 ## Relationships
 

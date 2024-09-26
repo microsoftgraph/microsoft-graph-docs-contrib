@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionUnitsBulkAdditionJob resource type"
-description: "Represents the list of drives and directoryObjectIds of OneDriveForBusiness users to be added into the corresponding OneDriveForBusiness Protection Policy."
+description: "Represents the list of drives and directoryObjectIds of OneDrive users to be added into the corresponding OneDrive Protection Policy."
 author: "neminbshah"
 ms.reviewer: "tushar20"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email address, and a list of directoryObjectIds to be added into the the OneDriveForBusiness Protection Policy for backup.
+Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email address, and a list of directoryObjectIds to be added into the OneDrive Protection Policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
@@ -30,7 +30,7 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the job associated with the OneDriveForBusiness protection policy.|
+|id|String|The unique identifier of the job associated with the OneDrive protection policy.|
 |displayName|String|The name of the job.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the job.|
 |createdDateTime|DateTimeOffset|The date and time that the job was created.|
@@ -38,8 +38,8 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the job.|
 |status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are: `active`, `completed`, `completedWithErrors`.|
-|drives|Collection(String)|The list of email addresses to add into the OneDriveForBusiness protection policy.|
-|directoryObjectIds|Collection(String)|The list of OneDriveForBusiness directoryObjectIds to add into the OneDriveForBusiness protection policy.|
+|drives|Collection(String)|The list of email addresses to add into the OneDrive protection policy.|
+|directoryObjectIds|Collection(String)|The list of OneDrive directoryObjectIds to add into the OneDrive protection policy.|
 
 ## Relationships
 
