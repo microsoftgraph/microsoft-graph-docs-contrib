@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 
-OneDrive users will always have at least one drive available, their default drive.
+OneDrive users always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
 
 ## Methods
@@ -47,7 +47,7 @@ Users without a OneDrive license may not have a default drive available.
 | owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.  This property isn't returned by default and must be selected using the `$select` query parameter.                                                                               |
-| system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
+| system               | [systemFacet][]               | If present, indicates that it's a system-managed drive. Read-only.
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
