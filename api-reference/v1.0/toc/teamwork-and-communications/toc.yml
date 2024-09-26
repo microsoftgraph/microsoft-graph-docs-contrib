@@ -565,7 +565,7 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
-      - name: Get all retained chat messages
+      - name: Get retained messages across all chats
         href: ../../api/chat-getallretainedmessages.md
     - name: Apps
       items:
