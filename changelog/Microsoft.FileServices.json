@@ -7,8 +7,8 @@
             "ApiChange": "Parameter",
             "ChangedApiName": "includeAllContainerUsers",
             "ChangeType": "Addition",
-            "Description": "Added the `includeAllContainerUsers` parameter to the [list_permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta) method.",
-            "Target": "fileStorageContainer"
+            "Description": "Added the `includeAllContainerUsers` parameter to the [list](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta) method.",
+            "Target": "list"
           },
           {
             "Id": "d65b49a2-e418-48d5-ade1-9bf38a0bb7f7",
