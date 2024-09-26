@@ -53,6 +53,7 @@ The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -103,6 +104,12 @@ Content-type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following example shows the response.
 <!-- {
@@ -119,6 +126,7 @@ The following example shows a request. It assumes that the attribute "CustomAttr
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema_customattribute"
@@ -158,6 +166,12 @@ Content-type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-customattribute-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following example shows the response.
 <!-- {
@@ -175,6 +189,7 @@ The following example shows a request. The synchornizationSchema has a one-to-ma
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema_newattributemapping"
@@ -205,6 +220,12 @@ Content-type: application/json
 
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-newattributemapping-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
