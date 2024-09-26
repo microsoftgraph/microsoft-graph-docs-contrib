@@ -39,9 +39,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerSettings",
-  "isOcrEnabled": "boolean",
+  "isOcrEnabled": "Boolean",
   "itemMajorVersionLimit": "int32",
-  "isItemVersioningEnabled": "boolean"
+  "isItemVersioningEnabled": "Boolean"
 }
 ```
 
