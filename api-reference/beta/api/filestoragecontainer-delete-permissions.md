@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 
 Delete permissions from a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
+By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API. When you include the `Prefer:onlyRemoveContainerScopedPermission` header, only the identity's container-scoped permission is removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -28,8 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-permissions-permissions.md)]
 
 ## HTTP request
->**Note:** By default, this API removes access for an identity to the container, and all items within the container regardless of the identity have container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when calling the API.
->When the `Prefer:onlyRemoveContainerScopedPermission` header is provided, only the identity's container-scoped permission is removed. All item-level permissions (if any) explicitly granted to the identity will be retained. 
 
 <!-- {
   "blockType": "ignored"
