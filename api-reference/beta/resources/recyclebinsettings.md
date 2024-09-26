@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings for the recycleBin resource type.
+Represents settings for the [recycleBin](recyclebin.md) resource type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. The default value is 93, which can be set from 93 to 180. The setting applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
+|retentionPeriodOverrideDays|Int32|Recycle bin retention period override in days for deleted content. The default value is `93`; the value range is `93` to `180`. The setting applies to newly deleted content only. Setting this property to `null` reverts to its default value. Read-write.|
 
 ## Relationships
 None.
