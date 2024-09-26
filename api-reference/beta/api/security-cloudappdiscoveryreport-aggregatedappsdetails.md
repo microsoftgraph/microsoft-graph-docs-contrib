@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [aggregated details](../resources/security-discoveredcloudappdetail.md) of discovered apps by providing the time period. The supported time periods are last 7, 30, or 90 days.
+Get the [aggregated details](../resources/security-discoveredcloudappdetail.md) of discovered apps by providing the time period. The supported time periods are the last 7, 30, or 90 days.
 
 ## Permissions
 
@@ -37,12 +37,12 @@ GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscovery
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
+
 The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|Duration|Provide the time frame in which you want to query the data. Supported time frames include - last 7 days ,last 30 days, or the last 90 days.|
+|period|Duration|Provide the time frame in which you want to query the data. Supported time frames are the last 7, 30, or 90 days.|
 
 
 ## Request headers
