@@ -2579,7 +2579,7 @@
           ]
         },
         {
-          "name": "Microsoft Defender for Cloud Apps (preview)",
+          "name": "Microsoft Defender for Cloud apps (preview)",
           "overview": "../../resources/security-cloudappdiscovery-overview.md",
           "resources": [
             "microsoft.graph.security.cloudAppDiscoveryReport",
