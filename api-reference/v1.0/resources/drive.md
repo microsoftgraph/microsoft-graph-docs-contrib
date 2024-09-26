@@ -20,13 +20,14 @@ Users without a OneDrive license may not have a default drive available.
 
 |                        Method                              |         Return type         | Description |
 | :--------------------------------------------------------- | :-------------------------- |-------------|
-| [Get drive][drive-get]                                     | drive                       | Get metadata about a drive |
-| [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive |
-| [List followed items][drive-following]                     | [driveItem][] collection    | List the user's followed driveItems |
-| [List children][item-children]                             | [driveItem][] collection    | List children of the root folder of a drive |
-| [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the Drive |
+|[List drive][drive-list]                                    | drive collection            |Retrieve the list of drive resources available for a target user, group, or site.|
+| [Get drive][drive-get]                                     | drive                       | Get metadata about a drive.|
+| [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive.|
+| [List followed items][drive-following]                     | [driveItem][] collection    | List the user's followed driveItems.|
+| [List children][item-children]                             | [driveItem][] collection    | List children of the root folder of a drive.|
+| [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the drive.|
 | [Search][item-search]                                      | [driveItem][] collection    | Search for driveItems in a drive |
-| [Get special folder](../api/drive-get-specialfolder.md)    | [driveItem][]               | Access a special folder by its canonical name |
+| [Get special folder](../api/drive-get-specialfolder.md)    | [driveItem][]               | Access a special folder by its canonical name.|
 
 
 ## Properties
@@ -124,6 +125,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 [drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [item-get]: ../api/driveitem-get.md
+[drive-list]: ../api/drive-list.md
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
