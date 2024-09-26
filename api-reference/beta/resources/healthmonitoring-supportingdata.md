@@ -1,6 +1,6 @@
 ---
 title: "supportingData resource type"
-description: "Represents a collection of supporting data locations that can be queried for debugging an alert in Microsoft Entra Health."
+description: "Represents a collection of supporting data locations that can be queried for debugging an alert in Microsoft Entra Health scenario monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of supporting data locations that can be queried for debugging an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health.
+Represents a collection of supporting data locations that can be queried for debugging an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health scenario monitoring.
 
 This resource is an open type that allows other properties to be passed in.
 
@@ -32,7 +32,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.healthMonitoring.supportingData",
-    "openType": true
+  "openType": true
 }
 -->
 ``` json

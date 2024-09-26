@@ -2908,6 +2908,14 @@
         },
         {
           "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "healthMonitoringRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [healthMonitoringRoot](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-healthMonitoringRoot?view=graph-rest-beta) resource.",
+          "Target": "healthMonitoringRoot"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
           "ApiChange": "EntitySet",
           "ChangedApiName": "directoryObjects",
           "ChangeType": "Addition",
@@ -3079,7 +3087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alert",
           "ChangeType": "Addition",
-          "Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alert?view=graph-rest-beta) resource.",
+          "Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alert?view=graph-rest-beta) resource. This resource type provides metrics and detailed data relating to the scenarios that Microsoft Entra Health scenario monitoring tracks the health for in your tenant.",
           "Target": "alert"
         },
         {
@@ -3087,23 +3095,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [alertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alertConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [alertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alertConfiguration?view=graph-rest-beta) resource. Use this resource type to manage the configuration for the scenarios that Microsoft Entra Health scenario monitoring tracks the health for in your tenant.",
           "Target": "alertConfiguration"
-        },
-        {
-          "Id": "277da918-3e81-499f-8803-2986a2c73123",
-          "ApiChange": "Resource",
-          "ChangedApiName": "healthMonitoringRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [healthMonitoringRoot](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-healthMonitoringRoot?view=graph-rest-beta) resource.",
-          "Target": "healthMonitoringRoot"
         }
       ],
       "Id": "277da918-3e81-499f-8803-2986a2c73123",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-05-24T17:27:30.6437075Z",
-      "WorkloadArea": "Reports and audit",
+      "CreatedDateTime": "2024-09-27T17:27:30.6437075Z",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     }
   ]

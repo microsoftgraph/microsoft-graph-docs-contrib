@@ -1,6 +1,6 @@
 ---
 title: "directoryObjectImpactSummary resource type"
-description: "Represents a summary of an impacted resource in directory object type."
+description: "Represents a summary of an impacted resource in the directory object type."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"

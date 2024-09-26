@@ -26,14 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/healthmonitoring-alertconfiguration-get-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to view alert configurations.
-
-+ Global Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
-+ Helpdesk Administrator
-+ Reports Reader
+[!INCLUDE [rbac-healthmonitoring-alertconfiguration-apis-read](../includes/rbac-for-apis/rbac-healthmonitoring-alertconfiguration-apis-read.md)]
 
 ## HTTP request
 
@@ -47,7 +40,7 @@ GET /reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 
 ## Optional query parameters
 
-This method supports the $select [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

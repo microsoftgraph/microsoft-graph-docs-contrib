@@ -1,6 +1,6 @@
 ---
 title: "resourceImpactSummary resource type"
-description: "Represent a summary of the impacted resource type for a Microsoft Entra Health alert."
+description: "Represent a summary of the impacted resource type for a Microsoft Entra Health scenario monitoring alert."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a summary of the impacted resource type for a Microsoft Entra Health [alert](../resources/healthmonitoring-alert.md).
+Represent a summary of the impacted resource type for a Microsoft Entra Health scenario monitoring [alert](../resources/healthmonitoring-alert.md).
 This resource is an abstract type from which the [directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md) resource inherits.
 - 
 

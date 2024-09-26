@@ -1,6 +1,6 @@
 ---
 title: "documentation resource type"
-description: "Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health."
+description: "Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health scenario monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health. This resource is an open type that allows other properties to be passed in.
-
+Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health scenario monitoring. This resource is an open type that allows other properties to be passed in.
 
 Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
 
@@ -30,7 +29,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.healthMonitoring.documentation",
-    "openType": true
+  "openType": true
 }
 -->
 ``` json

@@ -1,6 +1,6 @@
 ---
 title: "healthMonitoringRoot resource type"
-description: "Represents a container for navigation properties of resources for Microsoft Entra health monitoring."
+description: "Represents a container for navigation properties of resources for Microsoft Entra Health scenario monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for navigation properties of resources for Microsoft Entra health monitoring.
+Represents a container for navigation properties of resources for Microsoft Entra Health scenario monitoring.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

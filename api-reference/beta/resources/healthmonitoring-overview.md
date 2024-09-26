@@ -1,23 +1,24 @@
 ---
-title: "Overview"
-description: "Use the Microsoft Entra scenario health monitoring API to view anomalous usage pattern for your tenant on business-critical identity scenarios and receive alert notification"
+title: "Microsoft Entra Health scenario monitoring API overview"
+description: "The Microsoft Entra Health scenario monitoring APIs allows you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-toc.title: "Microsoft Entra health monitoring"
+toc.title: "Scenario monitoring"
 ---
 
-# Overview
+# Microsoft Entra Health scenario monitoring API overview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft Entra scenario health monitoring API to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in serviceActivity APIs. These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
+The Microsoft Entra Health scenario monitoring APIs allows you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in [serviceActivity APIs](../resources/serviceactivity.md). These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
 
 ## Licenses
-Premium licensing is required to use this feature. Learn more about [Working with the authentication methods usage report API](../resources/authenticationmethods-usage-insights-overview.md).
+
+For more information about the licenses required to use this premium feature, see [Microsoft Entra licensing: Microsoft Entra monitoring and health](/entra/fundamentals/licensing#microsoft-entra-monitoring-and-health).
 
 ## Common requests
 
@@ -31,10 +32,10 @@ The following table lists some common requests that you can use with this API.
 | Retrieve alert configurations for all alert types | [List alert configurations](../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md) |
 | Retrieve alert configuration for an alert type | [Get alert configuration](../api/healthmonitoring-alertconfiguration-get.md) |
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
+
 > [!NOTE]
-> You might see `unknownFutureValue` as a member in enums due to evolvable enumerations, here's how you can do to [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)
+> You might see `unknownFutureValue` as a member in enums due to evolvable enumerations, here's how you can do to [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ## Related content
 
-* [What is Microsoft Entra Health?](/entra/identity/monitoring-health/concept-microsoft-entra-health)
-* [ServiceActivity API documentation for retrieving the health metric streams upon which alerting is built](../resources/serviceactivity.md)
+- [What is Microsoft Entra Health?](/entra/identity/monitoring-health/concept-microsoft-entra-health)

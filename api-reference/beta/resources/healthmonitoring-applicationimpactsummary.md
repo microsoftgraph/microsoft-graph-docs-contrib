@@ -1,6 +1,6 @@
 ---
 title: "applicationImpactSummary resource type"
-description: "Represents a summary of an impacted application resource type for an alert in Microsoft Entra Health."
+description: "Represents a summary of an impacted application resource type for an alert in Microsoft Entra Health scenario monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of an impacted application resource type for an alert in Microsoft Entra Health.
+Represents a summary of an impacted application resource type for an alert in Microsoft Entra Health scenario monitoring.
 
 
 Inherits from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md).
@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](..
 |:---|:---|:---|
 |impactedCount|String|The number of resources impacted. The count could be an exhaustive count or a sampling count. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
 |impactedCountLimitExceeded|Boolean|Indicates whether **impactedCount** is exhaustive or a sampling. When this value is "true," the limit was exceeded and **impactedCount** represents a sampling. Otherwise, **impactedCount** represents the true number of impacts. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
-|resourceType|String|The type of resource that was impacted. For example: `application`. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
+|resourceType|String|The type of resource that was impacted, which is `application`. Inherited from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).|
 
 ## Relationships
 |Relationship|Type|Description|

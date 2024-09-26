@@ -15,7 +15,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 Update the properties of a [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. You can use alertConfiguration settings to specify the distribution groups where alert notifications are to be sent.
 
-NOTE: This API doesn't currently support group validation.
+This API doesn't currently support group validation.
 
 ## Permissions
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-The following example shows a request.
+The following example shows a request. It currently supports only 1 group to receive email notification for an alert type.
 <!-- {
   "blockType": "request",
   "name": "update_alertconfiguration"
@@ -85,8 +85,6 @@ Content-Type: application/json
   ]
 }
 ```
-> Note: It currently supports only 1 group to receive email notification for an alert type.
-
 
 ### Response
 

@@ -1,6 +1,6 @@
 ---
 title: "emailNotificationConfiguration resource type"
-description: "Represents the email configuration for an alert type in Microsoft Entra Health."
+description: "Represents the email configuration for an alert type in Microsoft Entra Health scenario monitoring. "
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the email configuration for an alert type in Microsoft Entra Health.
+Represents the email configuration for an alert type in Microsoft Entra Health scenario monitoring.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The identifier of the group to send an email to. All AAD group types are supported as long as each user has a configured email address.|
+|groupId|String|The identifier of the group to send an email to. All group types with configured email addresses are supported.|
 |isEnabled|Boolean|Indicates whether email notifications are enabled on the alert type.|
 
 ## Relationships
