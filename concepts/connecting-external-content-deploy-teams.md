@@ -1,5 +1,5 @@
 ---
-title: "Enable the Simplified Admin Experience for your Microsoft Graph connector in the Teams admin center"
+title: "Enable the Simplified Admin Experience for your Microsoft Graph connector"
 description: "Deploy your custom Graph connector in your Teams App with simplified enablement."
 author: "monaray97"
 ms.localizationpriority: high
@@ -49,9 +49,9 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
 1. Expand the **Identity** menu and go to **Applications** > **App registrations**.
 1. Select your app registration.
 1. Go to **API permissions** > **Add a permission** > **Microsoft Graph**. 
-1. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example:
+1. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
 
-![updated Microsoft Graph permissions](images/connectors-images/AADperms-TAC-connectors.png)
+![Updated Microsoft Graph permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
 ## Handle Microsoft Graph webhook notifications
 
@@ -90,10 +90,10 @@ To understand how to validate the inbound change notification, see [Validating t
 
 Keep the following tips in mind:
 
-* You can ignore **SubscriptionExpirationDateTime** and **SubscriptionId**.
-* The change notification is for Microsoft Graph connector management only when the @odata.type of the resource data matches the one in the sample payload.
-* The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
-* You can call the Microsoft Graph API to get the customer's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
+* You can ignore **subscriptionExpirationDateTime** and **subscriptionId**.
+* The change notification is for Microsoft Graph connector management only when the **@odata.type** of the resource data matches the one in the sample payload.
+* The **tenantId** identified is the customer's tenant ID. When you call the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
+* You can call the Microsoft Graph API to get the customer's display name and default domain name. This information can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
 * Within **resourceData**, use **state** to determine whether to create or delete connections. You need the **connectorsTicket** to create the connections.
 
 ### Handling "connector enable" notification
@@ -115,7 +115,7 @@ To handle "connector disable" notifications:
 
 #### Request
 
-```json
+``` http
 POST https://example.com/notificationEndpoint
 Content-type: application/json
 Content-length: 100
@@ -144,26 +144,26 @@ Content-length: 100
 
 #### Response
 
-```
+``` http
 HTTP/1.1 202 Accepted
 Content-type: application/json
 Content-length: 0
 ```
 
-You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification a number of times for about four hours. After that, the change notification is dropped and isn't delivered.
+You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification multiple times for about four hours. After that, the change notification is dropped and isn't delivered.
 
-To validate the authenticity of **validatonToken**:
+To validate the authenticity of a **validatonToken**:
 
 * Verify that the token hasn't expired.
 * Verify that the token hasn't been tampered with and was issued by the Microsoft identity platform.
 * Verify that the **appId** claim in the **validationToken**.
 * Verify the **aud** claim in the **validationToken** is the same as the "{{Teams-appid}}" you specified.
 
-For more information, see [Validating the authenticity of notification](/graph/webhooks-with-resource-data?tabs=csharp#validating-the-authenticity-of-notifications).
+For more information, see [Validating the authenticity of notification](/graph/webhooks-with-resource-data#validating-the-authenticity-of-notifications).
 
-The following example shows a validation token:
+The following example shows a validation token.
 
-```
+``` json
 { "typ": "JWT", "alg": "RS256", "x5t": "nOo3ZDrODXEK1jKWhXslHR_KXEg", "kid": "nOo3ZDrODXEK1jKWhXslHR_KXEg" }.{ "aud": "e478830d-8f49-4c26-80c6-58f68e0f064b", "iss": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "iat": 1624649764, "nbf": 1624649764, "exp": 1624736464, "aio": "E2ZgYGjnuFglnX7mtjJzwR5lYaWvAA==", "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086", "appidacr": "2", "idp": "https://sts.windows.net/9f4ebab6-520d-49c0-85cc-7b25c78d4a93/", "oid": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "rh": "0.AX0AtrpOnw1SwEmFzHslx41KkzsP8wtSSt9ImoIjSRDEoIZ9AAA.", "sub": "1e7d79fa-7893-4d50-bdde-164260d9c5ba", "tid": "9f4ebab6-520d-49c0-85cc-7b25c78d4a93", "uti": "mIB4QKCeZE6hK71XUHJ3AA", "ver": "1.0" }.[Signature]
 ```
 
@@ -173,7 +173,7 @@ You need to send the **connectorTickets** from the payload you received as a `Gr
 
 ### Request
 
-```json
+``` http
 POST https://graph.microsoft.com/v1.0/external/connection
 GraphConnectors-Ticket: {{connectorsTicket}}
 Content-type: application/json
@@ -194,11 +194,11 @@ Authorization: bearer {{accessToken}}
 >[!NOTE]
 >
 >* You must set the {{connectorId}} to the value provided in the notification from Graph Connectors when you create the connection.
->* You should acquire the {{accessToken}} from the [Microsoft identity platform](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
+>* You should acquire the {{accessToken}} from the [Microsoft identity platform](/azure/active-directory/develop/v2-app-types) for the tenant that is notified.
 
 ### Response
 
-```
+``` http
 HTTP/1.1 200 Accepted
 Content-type: application/json
 Content-length: 0
