@@ -26,7 +26,7 @@ To create the app in Microsoft Entra ID:
 
 ## Enable authorization code flow (for MsalProvider and TeamsProvider)
 
-In most cases, you use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. We recommend that you use the [authorization code flow with PKCE ](/entra/identity-platform/scenario-spa-app-registration#redirect-uri-msaljs-20-with-auth-code-flow), which provides a secure way to authenticate users.
+In most cases, you use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. We recommend that you use the [authorization code flow with PKCE ](/entra/identity-platform/scenario-spa-app-registration#redirect-uri-msaljs-20-with-auth-code-flow), which provides a more secure way to authenticate users.
 
 1. In the Microsoft Entra admin center, open your newly created app registration.
 1. From the menu, choose **Authentication**.
