@@ -78,7 +78,7 @@ If you send a request to upload an app manifest that contains missing informatio
 <details><summary>Error response</summary>
 
 | Error code | Error message | Description |
-| ----------------------------- | ----------------------------- | ----------------------------- |
+| :---------------------------- | :---------------------------- | :---------------------------- |
 | `ActivityGroupIdFromActivitiesTypeValidation`     | ActivityGroupId field in ActivityType must be a subset of ID field in ActivityGroup.             | The ActivityGroupId field in ActivityType isn't a subset of the Id field in ActivityGroup in the app manifest.  |
 | `ActivityTypesMustExistWithActivitiesGroupValidation`           | Manifest shouldn't contain Activity Group when Activity Types is missing. | The ActivityGroup property is available, but the ActivityType property is missing in the app manifest. |
 | `ApiBasedComposeExtensionApiResponseRenderingTemplateFileNullOrEmpty`        | API-based compose extension must have apiResponseRenderingTemplateFile defined on manifest.      | The API-based compose extension doesn't have the apiResponseRenderingTemplateFile defined in the app manifest.  |
