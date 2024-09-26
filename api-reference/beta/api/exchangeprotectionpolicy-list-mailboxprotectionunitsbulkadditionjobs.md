@@ -2,7 +2,6 @@
 title: "List mailboxProtectionUnitsBulkAdditionJobs"
 description: "List mailboxProtectionUnitsBulkAdditionJobs in an Exchange protection policy."
 author: "neminbshah"
-ms.reviewer: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

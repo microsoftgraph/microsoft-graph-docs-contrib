@@ -2,7 +2,6 @@
 title: "Get driveProtectionUnitsBulkAdditionJob"
 description: "Get a driveProtectionUnitsBulkAdditionJob in a OneDrive protection policy."
 author: "neminbshah"
-ms.reviewer: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

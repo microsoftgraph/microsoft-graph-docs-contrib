@@ -2,11 +2,10 @@
 title: "protectionUnitsBulkJobBase resource type"
 description: "Represents a bulk job associated to one of the protection policy, as specified by the client as part of a protection plan applied to Microsoft 365 data in an organization."
 author: "neminbshah"
-ms.reviewer: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-toc.title: Bulk Addition Job
+toc.title: Protection units bulk addition job
 ---
 
 # protectionUnitsBulkJobBase resource type

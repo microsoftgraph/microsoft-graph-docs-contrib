@@ -2,7 +2,6 @@
 title: "mailboxProtectionUnitsBulkAdditionJob resource type"
 description: "Represents the list of mailboxes and directoryObjectIds of Exchange users to be added into the corresponding Exchange Protection Policy."
 author: "neminbshah"
-ms.reviewer: "tushar20"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
