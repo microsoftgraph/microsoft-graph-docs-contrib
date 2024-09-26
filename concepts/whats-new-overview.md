@@ -38,6 +38,10 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 
 Removed the **getShiftWorkCloudPcAccessState** method from the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the [getFrontlineCloudPcAccessState](/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) API.
 
+### Files
+
+Introduced the ability to include all version history when you [copy a drive item](/graph/api/driveitem-copy?view=graph-rest-beta&preserve-view=true). The version history is included up to the target version setting limit.
+
 ### Identity and access | Identity and sign in
 
 - Use the **identifierUris** property in the get and update operations of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource to get or set restrictions on vulnerable or easily compromised identifier URI formats for an application.
@@ -81,11 +85,6 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 - [List communities](/graph/api/employeeexperience-list-communities)
 - [Update a community](/graph/api/community-update)
 - [Delete a community](/graph/api/community-delete)
-
-
-### Files
-
-Introduced the ability to include all version history when you [copy a drive item](/graph/driveitem-copyy?view=graph-rest-beta). Version history is included up to the target version setting limit.
 
 ### People and workplace intelligence | Insights
 
