@@ -352,7 +352,7 @@ The preceding limits apply to all [usage reports](/graph/api/resources/report) r
 Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      | Limit per app per tenant per resource(chat/channel)|
-|------------------------------------------------------|---------------------------------|------------|
+|------------------------------------------------------|---------------------------------|------------|---|
 | GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
 | GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |  1rps |
 | GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps | 1rps |
