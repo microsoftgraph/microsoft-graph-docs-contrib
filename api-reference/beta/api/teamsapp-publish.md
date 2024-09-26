@@ -424,16 +424,16 @@ Content-type: application/json
             "code": "UnableToParseTeamsAppManifest",
             "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
             "details": [
-  {
-      "code": "SchemaError_Required",
-      "message": "Required properties are missing from object: [].",
-      "target": "name"
-  },
-  {
-      "code": "SchemaError_Pattern",
-      "message": "String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
-      "target": "developer.websiteUrl"
-  }
+                {
+                    "code": "SchemaError_Required",
+                    "message": "Required properties are missing from object: [].",
+                    "target": "name"
+                },
+                {
+                    "code": "SchemaError_Pattern",
+                    "message": "String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+                    "target": "developer.websiteUrl"
+                }
             ],
             "date": "2024-01-18T21:47:58",
             "request-id": "d1878136-bc88-421a-b342-c3d883db31a1",
