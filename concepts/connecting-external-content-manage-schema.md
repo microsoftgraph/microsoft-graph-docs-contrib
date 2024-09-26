@@ -14,7 +14,7 @@ The connection [schema](/graph/api/resources/externalconnectors-schema) determin
 
 ## Example schema
 
-The following table represents an example of a possible schema for a work ticket system connector:
+The following table represents an example of a possible schema for a work ticket system connector.
 
 | Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Exact Match Required | Labels               | Aliases    |
 |----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|----------------------|------------|
@@ -59,7 +59,7 @@ If a property is queryable, you can query against it using knowledge query langu
 
 ### Retrievable
 
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose to select relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable increases search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result.](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
@@ -75,20 +75,20 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 ### Exact match required
 
-If **isExactMatchRequired** is `true` for a property, the full string value will be indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
+If **isExactMatchRequired** is `true` for a property, the full string value is indexed. **isExactMatchRequired** can only be set to `true` for non-searchable properties.
 
 For example, the **ticketId** property is both queryable and specifies exact matching.
-- Querying `ticketId:CTS-ce913b61` will return the item with a ticket ID property **CTS-ce913b61**.
-- Querying `ticketId:CTS` will NOT return the item with ticket ID **CTS-ce913b61**.
+- Querying `ticketId:CTS-ce913b61` returns the item with a ticket ID property **CTS-ce913b61**.
+- Querying `ticketId:CTS` doesn't return the item with ticket ID **CTS-ce913b61**.
 
 Similarly, the **tags** property also specifies exact matching.
-- Querying `tags:contoso` will return any item with the tag **contoso**.
-- Querying `tags:contoso` will NOT return items with the tag **contoso ticket**.
+- Querying `tags:contoso` returns any item with the tag **contoso**.
+- Querying `tags:contoso` doesn't return items with the tag **contoso ticket**.
 
 For example, there might be a scenario where the item property is a GUID-formatted string. If this property must be matched exactly for item queries, specify that **isExactMatchRequired** is `true`.
 
-The **title** property doesn't specify exact matching. If nothing is specified, then **isExactMatchRequired** is `false`. The **title** property will be tokenized based on the tokenization rules of the language of the item content.
-- Querying `title:Contoso Title` will return any item containing "Contoso" or "Title" in the **title** property.
+The **title** property doesn't specify exact matching. If nothing is specified, then **isExactMatchRequired** is `false`. The **title** property is tokenized based on the tokenization rules of the language of the item content.
+- Querying `title:Contoso Title` returns any item that contains `Contoso` or `Title` in the **title** property.
 
 ## Semantic labels
 
@@ -149,7 +149,7 @@ Rank hints can be applied to textual properties that aren't mapped to semantic l
 
 Use the following steps to set rank hints:
 
-1. Go to **Search and intelligence** tab in the admin portal.
+1. Go to the **Search and intelligence** tab in the admin portal.
 1. Select **Customization** > **Relevance tuning**.
 
   ![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
@@ -196,7 +196,7 @@ Aliases are friendly names for properties that you assign. These are used in que
 This section includes information about the update capabilities for the [schema](/graph/api/resources/externalconnectors-schema) API.
 
 > [!NOTE]
-> We recommend that you reingest items after an update to bring them to the latest schema. Without reingestion, the behavior of the items will be inconsistent.
+> We recommend that you reingest items after an update to bring them to the latest schema. Without reingestion, the behavior of the items is inconsistent.
 
 ### Add a property
 
