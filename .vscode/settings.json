@@ -17,7 +17,7 @@
         },
         {
             "fileMatch": [
-              "toc.mapping.json"
+                "toc.mapping.json"
             ],
             "url": "https://raw.githubusercontent.com/microsoftgraph/msgraph-toc-gen/main/schema/toc.mapping.schema.json"
         }
