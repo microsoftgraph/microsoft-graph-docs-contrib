@@ -70,7 +70,7 @@ External groups belong to a connection. Follow these steps to create external gr
     * A Microsoft Entra group.
     * Another external group, including nested external groups.
 
-3. After you create the group, you can add members to the group. The following examples show how to add members to an external group.
+3. After you create the group, you can add members to it. The following examples show how to add members to an external group.
     
     ```http
     POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
