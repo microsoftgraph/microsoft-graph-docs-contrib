@@ -3,7 +3,7 @@ title: "List azureADDevice resources"
 description: "Get a list of azureADDevice objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

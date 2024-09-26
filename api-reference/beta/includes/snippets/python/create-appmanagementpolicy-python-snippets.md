@@ -56,6 +56,17 @@ request_body = AppManagementPolicy(
 				max_lifetime = None,
 			),
 		],
+		additional_data = {
+				"application_restrictions" : {
+						"identifier_uris" : {
+								"non_default_uri_addition" : {
+										"restrict_for_apps_created_after_date_time" : "2024-01-01T10:37:00Z",
+										"exclude_apps_receiving_v2_tokens" : True,
+										"exclude_saml" : True,
+								},
+						},
+				},
+		}
 	),
 )
 

@@ -13,14 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals.
+Base app management configuration object that contains properties that can be configured to enable various restrictions for applications and service principals through an [application management policy](../resources/applicationauthenticationmethodpolicy.md). This resource is an abstract type from which the following resources inherit:
+- [appManagementApplicationConfiguration](../resources/appmanagementapplicationconfiguration.md) resource type
+- [appManagementServicePrincipalConfiguration](../resources/appmanagementserviceprincipalconfiguration.md) resource type
 
 ## Properties
 
-| Property            | Type                                                                  | Description                                                                                       |
-| :------------------ | :-------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| Property            | Type                              | Description                                     |
+| :------------------ | :-------------------------------- | :---------------------------------------------- |
+| keyCredentials      | [keyCredentialConfiguration](../resources/keycredentialconfiguration.md) collection | Collection of certificate restrictions settings to be applied to an application or service principal. |
 | passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. |
-| keyCredentials | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection | Collection of keyCredential restrictions settings to be applied to an application or service principal. |
 
 ## Relationships
 

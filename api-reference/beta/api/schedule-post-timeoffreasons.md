@@ -21,7 +21,7 @@ Create a new [timeOffReason](../resources/timeoffreason.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-This API supports admin permissions. Global admins can access groups that they aren't a member of.
+This API supports admin permissions. Users with admin roles can access teams that they aren't members of.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
