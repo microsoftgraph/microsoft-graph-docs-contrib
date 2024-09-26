@@ -172,7 +172,7 @@ If you send a request to upload an app manifest that contains missing informatio
 | `UniqueIdInActivitiesGroupValidation` | Manifest shouldn't contain duplicate ID in Activity Groups. | The activity group ID isn't unique in the app manifest. |
 | `VersionCannotBeEmpty` | Required field "version" is missing in the manifest. | The app package version is missing. |
 | `VersionContainsOnlyNumbersDotSeparated` | App version supports only numbers in the '#.#.#' format. | The version in the app package isn't matched by the pattern, `#.#.#`. |
-| `VersionHasMajorLessThan1` | App version shouldn't start with '0'. Ex: 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | The app version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0. |
+| `VersionHasMajorLessThan1` | App version shouldn't start with '0'. For example, 0.0.1 or 0.1 aren't valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store. | The app version is less than 1.0. You need to upgrade your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the app version must be higher than 1.0. |
 
 </details>
 
