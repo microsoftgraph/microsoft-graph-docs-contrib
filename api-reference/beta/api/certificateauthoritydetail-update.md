@@ -52,18 +52,18 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|deletedDateTime|DateTimeOffset| The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|**TODO: Add Description**. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
-|certificate|Binary|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Optional.|
-|issuer|String|**TODO: Add Description** Optional.|
-|issuerSubjectKeyIdentifier|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|thumbprint|String|**TODO: Add Description** Required.|
-|certificateRevocationListUrl|String|**TODO: Add Description** Optional.|
-|deltacertificateRevocationListUrl|String|**TODO: Add Description** Optional.|
-|isIssuerHintEnabled|Boolean|**TODO: Add Description** Optional.|
+|certificate|Binary|The type of certificate autority whether `root` or `intermediate`. Required.|
+|displayName|String|The name of the certificateBasedAuthPki entity. Optional.|
+|issuer|String|The name of the certificate authority. Optional.|
+|issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
+|createdDateTime|DateTimeOffset|The creation DateTime of the certificate authority. Optional.|
+|expirationDateTime|DateTimeOffset|The expirationTime of the certificate authority. Required.|
+|thumbprint|String|The thumbprint of the certificate authority public certificate. Required.|
+|certificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
+|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
+|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it is presented to the user in the certificate picker to be used for authentication. `false` by default. Optional.|
 
 
 
