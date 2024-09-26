@@ -475,8 +475,6 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
@@ -563,8 +561,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
-      - name: Get retained messages across all chats
-        href: ../../api/chat-getallretainedmessages.md
+      - name: Get message delta
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -653,8 +651,6 @@ items:
         href: ../../api/chats-getallmessages.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
-      - name: Get retained messages across all channels
-        href: ../../api/channel-getallretainedmessages.md
       - name: Create subscription for new chat messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Send message in chat
