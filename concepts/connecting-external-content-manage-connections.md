@@ -8,7 +8,7 @@ ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, delete connections in Microsoft Graph
+# Create, update, and delete connections in Microsoft Graph
 
 The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
@@ -29,7 +29,7 @@ You can model a connection any way you want, but creating one connection for eve
 
 ## States and operations
 
-Your connection can exist in one of the following states:
+Your connection can exist in one of the following states.
 
 | State             | Description                |
 |-------------------|----------------------------|
@@ -38,7 +38,7 @@ Your connection can exist in one of the following states:
 | **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
 | **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you can't add more items until you exit the state. |
 
-The following table specifies which operations are available in each state:
+The following table specifies which operations are available in each state.
 
 | Operation         | Draft              | Ready              | Obsolete           | LimitExceeded      |
 |-------------------|--------------------|--------------------|--------------------|--------------------|
@@ -76,7 +76,7 @@ You can define how search results are displayed in the Microsoft Search results 
 ### Activity settings
 In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect share activity, which enables your content to be recommended to users who interact with that content the most. To do this, add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase). This allows a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem).
 
-The following image shows how your item might appear within recommendation experiences across Microsoft 365:
+The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
@@ -90,7 +90,7 @@ Update the activity settings by sending a patch request on the connection.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
-The following **activitySettings** payload is sent with the patch request:
+The following **activitySettings** payload is sent with the patch request.
 
 <!-- {
   "blockType": "resource",
