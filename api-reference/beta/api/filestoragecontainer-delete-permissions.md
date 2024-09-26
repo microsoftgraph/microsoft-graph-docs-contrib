@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 
 Delete permissions from a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
+By default, this API removes access for an identity to the container and all items within the container, regardless of whether the identity has container-scoped or item-level permissions. You can optimize this behavior by adding an optional `Prefer: onlyRemoveContainerScopedPermission` header when you call the API. When you include the `Prefer:onlyRemoveContainerScopedPermission` header, only the identity's container-scoped permission is removed. All item-level permissions explicitly granted to the identity (if any) are retained. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,7 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ```
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -51,6 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -58,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ
 ```
 
 # [C#](#tab/csharp)
@@ -101,4 +102,5 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
