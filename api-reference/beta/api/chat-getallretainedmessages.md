@@ -1,6 +1,6 @@
 ---
 title: "chat: getAllRetainedMessages"
-description: "Get retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats."
+description: "Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats."
 author: "AgnesLiu"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all retained messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+Get all retained [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
