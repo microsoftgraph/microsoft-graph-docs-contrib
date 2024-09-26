@@ -1,6 +1,6 @@
 ---
 title: "certificateBasedAuthPki: upload"
-description: "This service can get the PKI file and populate the certificateAuthorities."
+description: "Get the PKI file and populate the certificateAuthorities."
 author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get the PKI file and populate the certificateAuthorities.
 
 ## Permissions
 
@@ -51,9 +51,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|uploadUrl|String|**TODO: Add Description**|
-|sha256FileHash|String|**TODO: Add Description**|
-
+|uploadUrl|String|The URL where the service can download the PKI file and populate the certificateAuthorities.|
+|sha256FileHash|String|A sequence of numbers and letters to check that your copy of a downloaded update file is identical to the original.|
 
 
 ## Response
