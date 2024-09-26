@@ -100,7 +100,7 @@ The request specifies the optional request header, odata.top, returning 2 events
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedelta_1",
+  "name": "get_chatmessagedeltachats_1",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```msgraph-interactive
@@ -211,7 +211,7 @@ The second request specifies the `@odata.nextLink` URL returned from the previou
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedelta_2",
+  "name": "get_chatmessagedeltachats_2",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58"]
 }-->
 ```msgraph-interactive
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/
 
 #### Second request response
 
-The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.
+The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages to get.
 
 <!-- {
   "blockType": "response",
@@ -322,7 +322,7 @@ The third request continues to use the latest `@odata.nextLink` returned from th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedelta_3",
+  "name": "get_chatmessagedeltachats_3",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4"]
 }-->
 ```msgraph-interactive
@@ -332,7 +332,7 @@ GET  https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa
 
 #### Third request response
 
-The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `@odata.deltaLink` URL to query for any new messages starting from this point onwards.
+The third response returns the only remaining messages and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages have been read. Save and use the `@odata.deltaLink` URL to query for any new messages starting from this point onwards.
 
 <!-- {
   "blockType": "response",
@@ -391,7 +391,7 @@ Content-type: application/json
 
 ### Example 2: Retrieving additional changes
 
-Using the `@odata.deltaLink` from the last request in the last round, you can get only those messages that changed (by being added, or updated) in that channel since then. Your request should look like the following, assuming you prefer to keep the same maximum page size in the response:
+Using the `@odata.deltaLink` from the last request in the last round, you can get only those messages that changed (by being added, or updated) since then. Your request should look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
 
@@ -399,7 +399,7 @@ Using the `@odata.deltaLink` from the last request in the last round, you can ge
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedeltachannel_4",
+  "name": "get_chatmessagedeltachats_4",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4"]
 }-->
 ```msgraph-interactive
