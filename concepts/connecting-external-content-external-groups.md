@@ -43,9 +43,9 @@ To use external groups in your connection, follow these steps:
 
 ### Create an external group
 
-External groups belong to a connection. To create external groups in your connections, follow these steps:
+External groups belong to a connection. Follow these steps to create external groups in your connections: 
 
-1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph, as shown in the following example:
+1. Use the [groups API](/graph/api/resources/group) in Microsoft Graph. The following example shows how to create an external group.
 
     > [!NOTE]
     > The [displayName](/graph/api/resources/externalconnectors-externalgroup#properties) and **description** are optional fields.
@@ -70,7 +70,7 @@ External groups belong to a connection. To create external groups in your connec
     * A Microsoft Entra group.
     * Another external group, including nested external groups.
 
-3. After you create the group, you can add members to the group, as shown in the following examples:
+3. After you create the group, you can add members to the group. The following examples show how to add members to an external group.
     
     ```http
     POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
@@ -155,7 +155,7 @@ You can use the groups API to manage your external groups and group membership. 
 
 
 > [!NOTE]
-> A user should have less than 2049 external security group memberships, including direct and indirect memberships. When this limit is exceeded, search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with a `400` response.
+> A user should have less than 2,049 external security group memberships, including direct and indirect memberships. When this limit is exceeded, search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with a `400` response.
 
 
 ## Related content
