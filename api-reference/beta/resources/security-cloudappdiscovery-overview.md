@@ -8,19 +8,19 @@ doc_type: conceptualPageType
 ---
 
 # Overview of discovered apps using the Microsoft Graph API
-Use the discovered apps Microsoft Graph API to get data and insights across the discovered SaaS apps ecosystem. The discovered apps Microsoft Graph API is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to query and analyze the risks associated with the discovered apps. 
+Use the discovered apps API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The discovered apps Microsoft Graph API is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to query and analyze the risks associated with the discovered apps. 
 
-# Why use discovered apps Microsoft Graph API 
+## Why use the discovered apps API in Microsoft Graph 
 
-The API offers  
+The API offers:
 
 - Ability to programmatically analyze risk profile of all discovered apps 
 - Ability to programmatically filter discovered apps using multiple parameters with 10 filter options 
 - Asynchronous search experience with support for automation – accessible by both users and applications 
 
-# High level user scenarios: 
+## High level user scenarios: 
 
-Customers can get all the data available on the discovered Apps page via Microsoft Graph API. Below are some of the key user scenarios supported by the Microsoft Graph API:  
+Customers can get all the data available on the discovered Apps page via Microsoft Graph API. The following are some of the key user scenarios supported by the Microsoft Graph API:  
 
 ### List all users using a specific risky SaaS app  
 
