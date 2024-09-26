@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUsageUserDetail"
-description: "Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps."
+description: "Get the most recent activity data for enabled users of Microsoft 365 Copilot apps."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.
+Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

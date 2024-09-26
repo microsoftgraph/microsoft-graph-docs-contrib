@@ -33,10 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
-                "remoteDesktopSecurityConfiguration",
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -53,6 +64,15 @@
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security policy",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -165,6 +185,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -1074,14 +1097,6 @@
               ],
               "childNodes": [
                 {
-                  "name": "Application authentication method policy",
-                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
-                  "resources": [
-                    "tenantAppManagementPolicy",
-                    "appManagementPolicy"
-                  ]
-                },
-                {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
                   "resources": [
@@ -1094,13 +1109,6 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
