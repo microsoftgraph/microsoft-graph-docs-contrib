@@ -42,7 +42,6 @@ Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?v
 
 Deprecated the following methods on the [cloudPCSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource:
 - [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
-- 
 ## September 2024: New in preview only
 
 ### Device and app management | Cloud PC
