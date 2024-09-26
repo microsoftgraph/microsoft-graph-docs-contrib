@@ -21,7 +21,7 @@ Users without a OneDrive license may not have a default drive available.
 
 |                        Method                              |         Return type         | Description |
 | :--------------------------------------------------------- | :-------------------------- |-------------|
-| [List drive][drive-list]                                   | [drive][] collection        |Retrieve the list of drive resources available for a target user, group, or site.|
+| [List drive][drive-list]                                   | drive collection        |Retrieve the list of drive resources available for a target user, group, or site.|
 | [Get drive][drive-get]                                     | drive                       | Get metadata about a drive.|
 | [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive.|
 | [List activities][drive-activities]                        | [itemActivity][] collection | List activities that occurred under the drive.|
