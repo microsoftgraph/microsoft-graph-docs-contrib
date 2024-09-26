@@ -67,8 +67,8 @@ The following table lists examples that show how to use the `$filter` parameter.
 
 |Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
 |:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
-|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |`aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |`aadApplication`, `bot`, `tenantBot`, `office365Connector`, `outgoingWebhook`                                         |
 |Get messages sent by user ID              |$filter=from/user/id eq '{oid}'                                                         ||
 |Get control (system event) messages       |$filter=messageType eq 'systemEventMessage'                                             ||
 |Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
