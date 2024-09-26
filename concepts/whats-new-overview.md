@@ -35,13 +35,13 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 ### Device and app management | Cloud PC
 
 New methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-|[retrieveSnapshots]|[cloudPcSnapshot]collection|Get a list of [cloudPcSnapshot] of a Cloud PC.|
+|[retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true)|[cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true)collection|Get a list of [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) of a Cloud PC.|
 
 Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus] resource and its supported APIs instead.
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus](/graph/api/resources/ccloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 
 Deprecated the following methods on the [cloudPCSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true) resource:
-- [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots] resource and its supported APIs instead.
+- [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 - 
 ## September 2024: New in preview only
 
