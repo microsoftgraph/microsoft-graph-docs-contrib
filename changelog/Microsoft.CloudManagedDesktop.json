@@ -7,7 +7,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcAutopilotConfiguration",
             "ChangeType": "Addition",
-            "Description": "Added the cloudPcAutopilotConfiguration resource type.",
+            "Description": "Added the [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) resource type.",
             "Target": "cloudPcAutopilotConfiguration"
           },
           {
