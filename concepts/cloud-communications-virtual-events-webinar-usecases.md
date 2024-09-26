@@ -42,10 +42,17 @@ The following table lists some solutions you can build by using the Teams client
 > [!NOTE]
 >To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/concepts/auth/auth-concepts.md). 
 
-
-
 ### Create/update/delete 
 
+1. Use the Create webinar API to create a draft of the event, followed by the Publish webinar API to complete the creation and make it visible to its audience.
+  
+   The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client
+
+   Just like in Teams, organizers can only create webinar events. The Create webinar API can only be called with delegated permissions on behalf of the organizer.  
+
+3. Only organizers and co-organizers can update and delete webinars. 
+
+4. Subscribe to change notifications to get updates about any changes made to the webinar.  
 
 ### Data Sync 
 
