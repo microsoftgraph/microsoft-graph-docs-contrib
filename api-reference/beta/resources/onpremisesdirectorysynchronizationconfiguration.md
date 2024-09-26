@@ -2,6 +2,7 @@
 title: "onPremisesDirectorySynchronizationConfiguration resource type"
 description: "Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant."
 author: "dkershaw10"
+ms.reviewer: adam.lassman, daradwan
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant.
+Consists of configurations that can be fine-tuned and impact the [on-premises directory synchronization](../resources/onpremisesdirectorysynchronization.md) process for a tenant.
 
 ## Properties
 
