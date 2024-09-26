@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAutopilotConfiguration resource type"
-description: "Represents specific settings for Windows Autopilot that enable Windows 365 customers to experience it on a Cloud PC."
+description: "Represents specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific settings for Windows Autopilot that enable Windows 365 customers to experience it on a Cloud PC.
+Represents specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.
 
 ## Properties
 
