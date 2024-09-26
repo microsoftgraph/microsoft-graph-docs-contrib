@@ -40,15 +40,15 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description|
 |:---|:---|
 |ready|The snapshot is ready to restore the Cloud PC device.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcSnapshotType values
 
 | Member               | Description                                           |
 | -------------------- | ----------------------------------------------------- |
-| `automatic`          | The snapshot is created automaticaly.           |
+| `automatic`          | The snapshot is created automatically.           |
 | `manual`             | The snapshot is created manually.               |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use.     |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Don't use.     |
 
 ## Relationships
 None.
