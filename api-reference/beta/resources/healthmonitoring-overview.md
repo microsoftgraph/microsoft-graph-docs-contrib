@@ -10,7 +10,7 @@ toc.title: "Scenario monitoring"
 
 # Microsoft Entra Health scenario monitoring API overview
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
