@@ -24,11 +24,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_list_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-permissions-permissions.md)]
 
-## Optional query parameters
-This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-By default, this API lists only container-scoped permissions. You can use the `includeAllContainerUsers=true` query parameter to include entries for identities that may have at least one item-level permission in the container but don't have container-scoped permission.
-
 ## HTTP request
 
 <!-- {
@@ -38,7 +33,10 @@ By default, this API lists only container-scoped permissions. You can use the `i
 ``` http
 GET /storage/fileStorage/containers/{containerId}/permissions
 ```
+## Optional query parameters
+This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+By default, this API lists only container-scoped permissions. You can use the `includeAllContainerUsers=true` query parameter to include entries for identities that may have at least one item-level permission in the container but don't have container-scoped permission.
 
 ## Request headers
 |Name|Description|
