@@ -48,13 +48,12 @@ PATCH /onEmailOtpSendListener
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|authenticationEventsFlowId|String|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|**TODO: Add Description** Optional.|
+|priority|Int32|The priority of the listener. Determines the order of evaluation when an event has multiple listeners. The priority is evaluated from low to high. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Determines conditions e.g. applications on which an authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|authenticationEventsFlowId|String|The identifier of the authenticationEventsFlow object. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|Configuration for what to invoke if the event resolves to this listener. Optional.|
 
 
 
