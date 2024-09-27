@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Represents a drive protection rule associated with a OneDrive for Business protection policy."
+description: "Represents a drive protection rule associated with a OneDrive protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
