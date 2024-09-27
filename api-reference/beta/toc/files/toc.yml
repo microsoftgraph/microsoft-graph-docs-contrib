@@ -190,6 +190,8 @@ items:
     href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
+  - name: Update recycleBin settings
+    href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebin-items.md
   - name: Delete recycle bin items
