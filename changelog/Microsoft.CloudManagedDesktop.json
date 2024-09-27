@@ -1,5 +1,25 @@
 {
   "changelog": [
+    {
+      "changelog": [
+          {
+            "ChangeList": [
+              {
+                "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcBulkMove",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcBulkMove](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkMove?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcBulkMove"
+              }
+            ],
+            "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-09-27T16:34:56.2892592Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+      },
       {
         "ChangeList": [
           {
