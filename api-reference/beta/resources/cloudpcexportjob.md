@@ -67,7 +67,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | regionalConnectionQualityTrendReport        | The regional connection quality trend reports of Cloud PCs.              |
 | regionalConnectionQualityInsightsReport     | The regional connection quality insights reports of Cloud PCs.           |
 | remoteConnectionQualityReport               | The overall connection quality reports for all devices under a tenant.   |
-| bulkActionStatusReport               | The details of bulk actions, it includes Cloud PC bulk action status with bulk action name, action type, action state, action completion state and request date time.   |
+| bulkActionStatusReport               | The details of Cloud PC bulk actions, including bulk action status, name, type, state, completion state, and request date time.   |
 ## Relationships
 
 None.
