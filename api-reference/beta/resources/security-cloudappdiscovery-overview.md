@@ -21,7 +21,7 @@ The cloud app discovery API enables you to do the following:
 
 ## Cloud app discovery API use cases
 
-Customers can get all the data available on the discovered Apps page via Microsoft Graph API. The following are some key user scenarios the API supports.  
+Customers can get all the data available on the discovered apps page via Microsoft Graph API. The following are some key user scenarios the API supports.  
 
 ### List all users who use a specific risky SaaS app  
 
