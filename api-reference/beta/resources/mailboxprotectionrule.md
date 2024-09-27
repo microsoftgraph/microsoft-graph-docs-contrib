@@ -36,7 +36,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule expression fails.|
-|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run one time and dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules (that is, isAutoApplyEnabled = false) are supported.|
+|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Static rules run one time while dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification to the rule.|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
