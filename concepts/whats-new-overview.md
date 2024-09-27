@@ -40,6 +40,12 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 - Use the **autopilotConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set the settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.
 - Use the **osVersionNumber** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources to get the operating system version of an image.
 
+### Files
+
+- [Update the recycle bin settings](/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-beta&preserve-view=true) for a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
+- Use the `$skip`, `$top`, `$orderBy`, `$filter`, and `includeAllContainerUsers` query parameters to customize the [List permissions](/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta&preserve-view=true) operation response.
+- Include all version history when you [copy a drive item](/graph/api/driveitem-copy?view=graph-rest-beta&preserve-view=true). The version history is included up to the target version setting limit.
+
 ### Identity and access | Identity and sign in
 
 - Use the **identifierUris** property in the get and update operations of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource to get or set restrictions on vulnerable or easily compromised identifier URI formats for an application.
@@ -83,11 +89,6 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 - [List communities](/graph/api/employeeexperience-list-communities)
 - [Update a community](/graph/api/community-update)
 - [Delete a community](/graph/api/community-delete)
-
-
-### Files
-
-Introduced the ability to include all version history when you [copy a drive item](/graph/driveitem-copyy?view=graph-rest-beta). Version history is included up to the target version setting limit.
 
 ### People and workplace intelligence | Insights
 
