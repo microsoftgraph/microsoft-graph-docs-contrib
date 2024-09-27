@@ -36,7 +36,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if any operation on a rule expression fails.|
-|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run one time and dynamic rules listen to all changes in the system and update the protection unit list.|
+|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run one time and dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules (i.e., isAutoApplyEnabled = false) are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the rule.|
 |siteExpression|String|Contains a site expression. For examples, see [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples).|
