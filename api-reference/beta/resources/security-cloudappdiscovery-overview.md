@@ -8,31 +8,32 @@ doc_type: conceptualPageType
 ---
 
 # Overview of discovered apps using the Microsoft Graph API
-Use the discovered apps API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The discovered apps Microsoft Graph API is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to query and analyze the risks associated with the discovered apps. 
 
-## Why use the discovered apps API in Microsoft Graph 
+Use the cloud app discovery API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The cloud app discovery Microsoft Graph API provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to query and analyze the risks associated with those apps. 
 
-The API offers:
+## Why use the cloud app discovery API?
 
-- Ability to programmatically analyze risk profile of all discovered apps 
-- Ability to programmatically filter discovered apps using multiple parameters with 10 filter options 
-- Asynchronous search experience with support for automation – accessible by both users and applications 
+The cloud app discovery API enables you to do the following:
 
-## High level user scenarios: 
+- Programmatically analyze the risk profile of all discovered apps. 
+- Programmatically filter discovered apps by using multiple parameters and filter options. 
+- Search asynchronously with support for automation, which is accessible to both users and applications. 
 
-Customers can get all the data available on the discovered Apps page via Microsoft Graph API. The following are some of the key user scenarios supported by the Microsoft Graph API:  
+## Cloud app discovery API use cases
 
-### List all users using a specific risky SaaS app  
+Customers can get all the data available on the discovered Apps page via Microsoft Graph API. The following are some key user scenarios the API supports.  
 
-Identify and list all users accessing a particular SaaS application deemed risky. Make informed decisions about SaaS apps by gaining comprehensive insights about risky users and take proactive steps to safeguard your organization's data. 
+### List all users who use a specific risky SaaS app  
 
-### List of all apps accessing a specific domain: 
+Identify and list all users accessing a particular SaaS application that's deemed risky. Make informed decisions about SaaS apps by gaining comprehensive insights about risky users and take proactive steps to safeguard your organization's data. 
 
-Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping a tab on apps/users/devices accessing risky domains.   
+### List all apps accessing a specific domain 
+
+Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping tabs on apps, users, and devices that access risky domains.   
 
 ### Access the cloud app catalog information for a specific discovered SaaS app  
 
-Access detailed information from the cloud app catalog for specific discovered SaaS application. Get access to specific insight into app usage and security risks, enabling effective monitoring and management. Enhance your organization's security & compliance posture by leveraging comprehensive data on app compliance. 
+Access detailed information from the cloud app catalog for a specific discovered SaaS application. Get access to specific insights into app usage and security risks, enabling effective monitoring and management. Enhance your organization's security and compliance posture by using comprehensive data about app compliance. 
 
  
 
