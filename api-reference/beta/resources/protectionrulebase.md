@@ -35,7 +35,7 @@ The following limitations apply to this resource:
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule fails.|
-|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Currently, only static rules (i.e., isAutoApplyEnabled = false) are supported.|
+|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Currently, only static rules (that is, isAutoApplyEnabled = false) are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
