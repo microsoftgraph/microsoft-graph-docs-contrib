@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtensionHandler?view=graph-rest-beta) resource.",
+          "Target": "onOtpSendCustomExtensionHandler"
+        },
+        {
+          "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendHandler](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendHandler?view=graph-rest-beta) resource.",
+          "Target": "onOtpSendHandler"
+        },
+        {
+          "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "onEmailOtpSend",
+          "ChangeType": "Addition",
+          "Description": "Added the **onEmailOtpSend** property to the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-beta) resource.",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onEmailOtpSendListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onEmailOtpSendListener](https://learn.microsoft.com/en-us/graph/api/resources/onEmailOtpSendListener?view=graph-rest-beta) resource.",
+          "Target": "onEmailOtpSendListener"
+        },
+        {
+          "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onOtpSendCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onOtpSendCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtension?view=graph-rest-beta) resource.",
+          "Target": "onOtpSendCustomExtension"
+        }
+      ],
+      "Id": "047b3adf-b803-4959-991f-a097af4492c5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-12T04:08:18.8126011Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4badb014-c277-4c08-b593-8ed808b11baa",
           "ApiChange": "Resource",
           "ChangedApiName": "onAttributeCollectionStartCustomExtensionHandler",
