@@ -2,7 +2,7 @@
 title: "Update deviceManagementScriptAssignment"
 description: "Update the properties of a deviceManagementScriptAssignment object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -1,6 +1,6 @@
 ---
 title: "restorePoint: search"
-description: "Search restore points for protection units."
+description: "Search for the restorePoint objects associated with a protectionUnit."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -48,8 +48,9 @@ In the request body, supply a JSON representation of the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|artifactQuery|[artifactQuery](../resources/artifactquery.md)|Contains an expression that specifies the criteria for search. Optional.|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period.  Required.|
+|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period. Required.|
 |restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Indicates which restore point to return. The possible values are `oldest`, `latest`. Optional.|
 |tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are `None`, `FastRestore`, `UnknownFutureValue`. Optional.|
 
@@ -64,9 +65,17 @@ In the request body, supply a JSON representation of the following parameters.
 
 If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
 
+> [!NOTE]
+> - Calls return a maximum of five restore points.
+> - You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
-### Request
+### Example 1: Search request
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -124,7 +133,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -189,5 +198,71 @@ Content-Type: application/json
         }
     ],
     "noResultProtectionUnitIds": ["63014d8c-71fe-4d00-a01a-31850bc5b42c"]
+}
+```
+
+### Example 2: Search with artifactQuery expression
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "restorepoint_search_artifactquery"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
+Content-Type: application/json
+
+{
+  "artifactQuery": {
+    "queryExpression": "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
+    "artifactType": "message"
+  },
+  "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
+  "protectionTimePeriod": {
+    "startDateTime": "2021-01-01T00:00:00Z"
+  },
+  "restorePointPreference": "oldest"
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.restorePointSearchResponse"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#restorePoints",
+  "searchResponseId": "M2UyZDAwMDAwMDMxMzkzYTMyNj",
+  "searchResults": [
+    {
+      "artifactHitCount": 26,
+      "restorePoint": {
+        "@odata.type": "#microsoft.graph.restorePoint",
+        "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279",
+        "protectionDateTime": "2023-01-04T00:00:00Z",
+        "expirationDateTime": "2024-01-04T00:00:00Z",
+        "protectionUnit": {
+          "@odata.type": "#microsoft.graph.siteProtectionUnit",
+          "id": "23014d8c-71fe-4d00-a01a-31850bc5b42a",
+          "siteId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
+          "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+        },
+        "tags": "fastRestore"
+      }
+    }
+  ]
 }
 ```

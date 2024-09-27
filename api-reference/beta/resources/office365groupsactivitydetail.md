@@ -39,6 +39,10 @@ Namespace: microsoft.graph
 | sharePointSiteStorageUsedInBytes  | Int64   | The storage used by SharePoint Group site. |
 | reportPeriod                      | String  | The number of days the report covers.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

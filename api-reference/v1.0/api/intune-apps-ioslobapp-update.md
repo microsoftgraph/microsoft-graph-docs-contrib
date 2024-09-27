@@ -2,7 +2,7 @@
 title: "Update iosLobApp"
 description: "Update the properties of a iosLobApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

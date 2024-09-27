@@ -383,6 +383,12 @@ items:
     - name: Data Connect troubleshooting
       href: data-connect-troubleshooting.md
       displayName: Microsoft Graph Data Connect troubleshooting
+  - name: Backup storage
+    items:
+    - name: Overview
+      href: backup-storage-concept-overview.md
+    - name: Error codes
+      href: backup-storage-error-codes.md
   - name: Calendar
     items:
     - name: Overview
@@ -632,7 +638,7 @@ items:
           href: tutorial-lifecycle-workflows-scheduled-leaver.md
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
-        - name: Automate employee mover tasks (preview)
+        - name: Automate employee mover tasks
           href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
         - name: Configure employeeLeaveDateTime
           href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
@@ -1097,6 +1103,8 @@ items:
         href: teams-changenotifications-teammembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
+      - name: Teams app installation
+        href: teams-changenotifications-appinstallation.md
     - name: Notifications for Outlook resources
       href: outlook-change-notifications-overview.md
   - name: Change tracking
@@ -1136,7 +1144,7 @@ items:
     displayName: Microsoft Graph error responses and error resource types
   - name: Microsoft Entra service limits
     displayName: Azure AD service limits and restrictions
-    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?context=graph/context
 - name: Migrate
   items:
   - name: Azure AD Graph

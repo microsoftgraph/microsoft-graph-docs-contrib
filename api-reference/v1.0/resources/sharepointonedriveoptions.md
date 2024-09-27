@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "yiwenwang"
 ms.subservice: "search"
 doc_type: "resourcePageType"
+toc.title: "SharePoint OneDrive options"
 ---
 
 # sharePointOneDriveOptions resource type
@@ -18,6 +19,10 @@ Provides the search content options when a search is performed using application
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |includeContent|searchContent| The type of search content. The possible values are: `sharedContent`, `privateContent`, `unknownFutureValue`. Read-only. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

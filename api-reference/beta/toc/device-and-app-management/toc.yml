@@ -135,8 +135,6 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Get shift work access state (deprecated)
-      href: ../../api/cloudpc-getshiftworkcloudpcaccessstate.md
     - name: Reprovision remote action (deprecated)
       href: ../../api/manageddevice-reprovisioncloudpc.md
     - name: Resize remote action (deprecated)
@@ -257,32 +255,34 @@ items:
     items:
     - name: Cloud PC reports
       href: ../../resources/cloudpcreports.md
-    - name: getActionStatusReports
+    - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: getCloudPcRecommendationReports
+    - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
-    - name: getConnectionQualityReports
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: getDailyAggregatedRemoteConnectionReports
-      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-    - name: getFrontlineReport
+    - name: Get frontline report
       href: ../../api/cloudpcreports-getfrontlinereport.md
-    - name: getInaccessibleCloudPcReports
+    - name: Get inaccessible Cloud PC reports
       href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
-    - name: getRawRemoteConnectionReports
+    - name: Get raw remote connection reports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: getRealTimeRemoteConnectionLatency
+    - name: Get real time remote connection agency reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-    - name: getRealTimeRemoteConnectionStatus
+    - name: Get real-time remote connection status reports
       href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: getRemoteConnectionHistoricalReports
+    - name: Get remove connection hitorical reports
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
-    - name: getSharedUseLicenseUsageReport
-      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: getTotalAggregatedRemoteConnectionReports
+    - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: retrieveCrossRegionDisasterRecoveryReport
+    - name: Retrieve cross-region disaster recovery report
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
+    - name: Retrieve connection quality reports
+      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
+    - name: Get daily aggregated remote connection reports
+      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get connection quality reports (deprecated)
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Get shared use license usage report (deprecated)
+      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: Cloud PC export job
       items:
       - name: Cloud PC export job
@@ -297,14 +297,6 @@ items:
       href: ../../resources/cloudpcserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-serviceplans.md
-  - name: Cloud PC shared use service plan
-    items:
-    - name: Cloud PC shared use service plan
-      href: ../../resources/cloudpcshareduseserviceplan.md
-    - name: List
-      href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: Get
-      href: ../../api/cloudpcshareduseserviceplan-get.md
   - name: Cloud PC snapshot
     items:
     - name: Cloud PC snapshot
@@ -341,46 +333,46 @@ items:
       href: ../../resources/virtualendpoint.md
     - name: Get effective permissions
       href: ../../api/virtualendpoint-geteffectivepermissions.md
-    - name: List cloudPCs
+    - name: List Cloud PCs
       href: ../../api/virtualendpoint-list-cloudpcs.md
-    - name: List deviceImages
+    - name: List device images
       href: ../../api/virtualendpoint-list-deviceimages.md
-    - name: List galleryImages
+    - name: List gallery images
       href: ../../api/virtualendpoint-list-galleryimages.md
-    - name: Create cloudPcDeviceImage
+    - name: Create Cloud PC device image
       href: ../../api/virtualendpoint-post-deviceimages.md
-    - name: List onPremisesConnections
+    - name: List Cloud PC on-premises connections
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
-    - name: Create cloudPcOnPremisesConnection
+    - name: Create on-premises connection
       href: ../../api/virtualendpoint-post-onpremisesconnections.md
-    - name: List provisioningPolicies
+    - name: List provisioning policies
       href: ../../api/virtualendpoint-list-provisioningpolicies.md
-    - name: Create cloudPcProvisioningPolicy
+    - name: Create provisioning policy
       href: ../../api/virtualendpoint-post-provisioningpolicies.md
-    - name: List userSettings
+    - name: List user settings
       href: ../../api/virtualendpoint-list-usersettings.md
-    - name: Create cloudPcUserSetting
+    - name: Create user setting
       href: ../../api/virtualendpoint-post-usersettings.md
-    - name: List auditEvents
+    - name: List audit events
       href: ../../api/virtualendpoint-list-auditevents.md
-    - name: List supportedRegions
+    - name: List supported regions
       href: ../../api/virtualendpoint-list-supportedregions.md
-    - name: List servicePlans
+    - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
     - name: List snapshots
       href: ../../api/virtualendpoint-list-snapshots.md
-    - name: List externalPartnerSettings
+    - name: List external partner settings
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create cloudPcExternalPartnerSetting
+    - name: Create external partner setting
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
-    - name: List frontLintServicePlans
+    - name: List front line service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
-    - name: List sharedUseServicePlans
-      href: ../../api/virtualendpoint-list-shareduseserviceplans.md
-    - name: List bulkActions
+    - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
-    - name: Create cloudPcBulkAction
+    - name: Create bulk action
       href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Retrieve tenant encryption setting
+      href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
   - name: Cloud PC bulk action
     items:
     - name: Cloud PC bulk action
@@ -446,6 +438,14 @@ items:
       href: ../../resources/cloudpcconnectivityevent.md
     - name: Cloud PC connectivity result
       href: ../../resources/cloudpcconnectivityresult.md
+    - name: Cloud PC cross-region disaster recovery setting
+      href: ../../resources/cloudpccrossregiondisasterrecoverysetting.md
+    - name: Cloud PC disaster recovery Azure connection setting
+      href: ../../resources/cloudpcdisasterrecoveryazureconnectionsetting.md
+    - name: Cloud PC disaster recovery Microsoft hosted network setting
+      href: ../../resources/cloudpcdisasterrecoverymicrosofthostednetworksetting.md
+    - name: Cloud PC disaster recovery network setting
+      href: ../../resources/cloudpcdisasterrecoverynetworksetting.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
@@ -490,9 +490,9 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
-    - name: Cloud PC windows setting
+    - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
-    - name: Cloud PC windows settings
+    - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md
@@ -798,6 +798,12 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+      - name: setEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
+      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
+      - name: clearEnrollmentTimeDeviceMembershipTarget action
+        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app
@@ -5856,14 +5862,6 @@ items:
         href: ../../resources/intune-devices-devicehealthscriptdevicestate.md
       - name: List deviceHealthScriptDeviceStates
         href: ../../api/intune-devices-devicehealthscriptdevicestate-list.md
-      - name: Get deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-get.md
-      - name: Create deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-create.md
-      - name: Delete deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-delete.md
-      - name: Update deviceHealthScriptDeviceState
-        href: ../../api/intune-devices-devicehealthscriptdevicestate-update.md
     - name: Device health script policy state
       items:
       - name: Device health script policy state

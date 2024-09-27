@@ -39,9 +39,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
+|bold|Boolean|Represents the bold status of font.|
 |color|string|HTML color code representation of the text color. for example, #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
+|italic|Boolean|Represents the italic status of the font.|
 |name|string|Font name (for example "Calibri")|
 |size|double|Font size.|
 |underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
@@ -53,6 +53,7 @@ If successful, this method returns a `200 OK` response code and updated [workboo
 ##### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"
@@ -70,6 +71,12 @@ Content-type: application/json
   "underline": "underline-value"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefont-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.

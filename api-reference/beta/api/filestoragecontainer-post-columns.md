@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storageContainers/{containerId}/columns
+POST /storage/fileStorage/containers/{containerId}/columns
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ Only the following type-related properties are supported and they're mutually ex
 
 |Property|Type|Description|
 |:---|:---|:---|
-|boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores boolean values.|
+|Boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores Boolean values.|
 |choice|[choiceColumn](../resources/choicecolumn.md)|This column stores data from a list of choices.|
 |currency|[currencyColumn](../resources/currencycolumn.md)|This column stores currency values.|
 |dateTime|[dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|
@@ -77,7 +77,7 @@ The following example shows a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
 Content-Type: application/json
 
 {

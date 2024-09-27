@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Bookings
+Import-Module Microsoft.Graph.Beta.BackupRestore
 
-Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -MailboxProtectionRuleId $mailboxProtectionRuleId
+Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -MailboxProtectionRuleId $mailboxProtectionRuleId
 
 ```

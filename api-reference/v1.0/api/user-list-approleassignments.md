@@ -12,7 +12,7 @@ author: "psignoret"
 Namespace: microsoft.graph
 
 
-Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) that are currently granted to a user. This operation also returns app role assignments granted to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) that are currently granted to a [user](../resources/user.md). This operation also returns app role assignments granted to groups that the user is a direct member of.
 
 > [!IMPORTANT]
 > To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). For an example, see [Example 1](#example-1-list-approleassignments-granted-to-a-user).

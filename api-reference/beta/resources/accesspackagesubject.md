@@ -19,8 +19,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 | [Get](../api/accesspackagesubject-get.md)|[accessPackageSubject](../resources/accesspackagesubject.md) | Get the properties of an **accesspackagesubject** object. |
+| [Update](../api/accesspackagesubject-update.md)|None | Update the properties of an **accesspackagesubject** object. |
 
 ## Properties
 

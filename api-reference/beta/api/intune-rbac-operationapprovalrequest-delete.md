@@ -2,7 +2,7 @@
 title: "Delete operationApprovalRequest"
 description: "Deletes a operationApprovalRequest."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

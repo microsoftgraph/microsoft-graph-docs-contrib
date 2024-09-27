@@ -3,6 +3,424 @@
     {
       "ChangeList": [
         {
+          "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "callOptions"
+        },
+        {
+          "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "outgoingCallOptions"
+        }
+      ],
+      "Id": "a1eed465-a1bf-4a36-84c5-87dd66c11118",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-10T18:00:00.00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d8f96b79-6370-407f-a68a-733b41652b9e",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        }
+      ],
+      "Id": "d8f96b79-6370-407f-a68a-733b41652b9e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-08T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "meetingLiveShareOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingLiveShareOptions** enumeration type.",
+          "Target": "meetingLiveShareOptions"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowBreakoutRooms",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowBreakoutRooms** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowLiveShare",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowLiveShare** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPowerPointSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPowerPointSharing** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowWhiteboard",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowWhiteboard** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "ac96557e-1099-42e8-a3be-6307e5f3e2d4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-07T18:39:29.7392578Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventSettings](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSettings?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventSettings"
+        },
+        {
+          "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "ec5ee95e-0c0f-4fe5-a404-bdc4d3faea41",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-06T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualEventRegistrationPredefinedQuestionLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationPredefinedQuestionLabel** enumeration type.",
+          "Target": "virtualEventRegistrationPredefinedQuestionLabel"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualEventRegistrationQuestionAnswerInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventRegistrationQuestionAnswerInputType** enumeration type.",
+          "Target": "virtualEventRegistrationQuestionAnswerInputType"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventPresenterDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventPresenterDetails](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenterDetails?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventPresenterDetails"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "presenters",
+          "ChangeType": "Addition",
+          "Description": "Added the **presenters** relationship to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredLanguage",
+          "ChangeType": "Addition",
+          "Description": "Added the **preferredLanguage** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredTimezone",
+          "ChangeType": "Addition",
+          "Description": "Added the **preferredTimezone** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessions** relationship to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventsRoot](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventsRoot?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventsRoot"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationCustomQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationCustomQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationCustomQuestion?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationCustomQuestion"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationPredefinedQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationPredefinedQuestion](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationPredefinedQuestion?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationPredefinedQuestion"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationQuestionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationQuestionBase?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationQuestionBase"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualEventRegistration-cancel?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [Publish](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-publish?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-update?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-cancel?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Renamed the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0) method to [List](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-post-webinars?view=graph-rest-1.0).",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [Publish](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-publish?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-cancel?view=graph-rest-1.0) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-cancel?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-sessions?view=graph-rest-1.0) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Renamed the file for the List operation of the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource to [virtualeventregistration-list](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list?view=graph-rest-1.0).",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "b3b8ef1a-634f-4b97-b07d-9b4162866868",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-08-01T15:26:51.6498509Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a48373b0-1684-414b-abe3-360925c0011c",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventSettings",
@@ -78,7 +496,7 @@
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta) operation to the [virtualEventRegistrationQuestionBase](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistrationquestionbase?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistrationQuestionBase"
         }
-    ],
+      ],
       "Id": "496235c6-497f-40c1-8f0d-fd269abcfd62",
       "Cloud": "Prod",
       "Version": "beta",
@@ -121,7 +539,7 @@
           "Target": "virtualEventRegistration"
         },
         {
-        "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
+          "Id": "96e0718d-3eea-48bf-bdea-d12877521c08",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrationQuestion",
           "ChangeType": "Deletion",
@@ -440,7 +858,7 @@
     },
     {
       "ChangeList": [
-        {    
+        {
           "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
           "ApiChange": "Resource",
           "ChangedApiName": "chatrestrictions",

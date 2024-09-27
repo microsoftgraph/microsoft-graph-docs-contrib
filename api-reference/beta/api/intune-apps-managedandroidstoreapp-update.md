@@ -2,7 +2,7 @@
 title: "Update managedAndroidStoreApp"
 description: "Update the properties of a managedAndroidStoreApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -88,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1361
+Content-length: 1421
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -136,7 +136,10 @@ Content-length: 1361
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
@@ -146,7 +149,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1533
+Content-Length: 1593
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -197,7 +200,10 @@ Content-Length: 1533
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```

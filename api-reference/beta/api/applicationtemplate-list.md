@@ -21,7 +21,11 @@ Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) ob
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "applicationtemplate_list" } -->
+<!-- {
+  "blockType": "permissions",
+  "name": "applicationtemplate-list-permissions"
+}
+-->
 [!INCLUDE [permissions-table](../includes/permissions/applicationtemplate-list-permissions.md)]
 
 Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
@@ -47,7 +51,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -116,8 +120,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.applicationTemplate",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
 } -->
 
 ```http
@@ -125,34 +128,79 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=appCategory,categories",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=appCategory,categories",
+  "value": [
+    {
+      "id": "006a06ef-9160-42cd-88bf-17a7588fc844",
+      "displayName": "LinkedIn Lookup",
+      "homePageUrl": "www.linkedin.com",
+      "supportedSingleSignOnModes": [
+        "SAML",
+        "Password"
+      ],
+      "supportedProvisioningTypes": [],
+      "logoUrl": "https://images.microsoft.com",
+      "categories": [
+        "collaboration",
+        "social"
+      ],
+      "publisher": "LinkedIn",
+      "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees' LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
+      "supportedClaimConfiguration": {
+        "requiredClaims": [
+          {
+            "id": "first_name",
+            "namespace": "",
+            "source": "user",
+            "attribute": "firstname"
+          },
+          {
+            "id": "last_name",
+            "namespace": "",
+            "source": "user",
+            "attribute": "surname"
+          },
+          {
+            "id": "email_address",
+            "namespace": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/",
+            "source": "user",
+            "attribute": "mail"
+          }
+        ],
+        "groupMembershipClaims": "securityGroup",
+        "nameIdPolicyFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      },
+      "informationalUrls": {
+        "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
+        "provisioningDocumentationUrl": null,
+        "appSignUpUrl": null
+      },
+      "configurationUris": [
         {
-            "id": "00000007-0000-0000-c000-000000000000",
-            "displayName": "Dynamics CRM Online",
-            "homePageUrl": "http://www.microsoft.com/dynamics/crm",
-            "supportedSingleSignOnModes": [
-                "oidc",
-                "external"
-            ],
-            "supportedProvisioningTypes": [],
-            "logoUrl": "https://az495088.vo.msecnd.net/app-logo/crm_215.png",
-            "categories": [
-                "crm",
-                "productivity",
-                "collaboration",
-                "businessMgmt"
-            ],
-            "publisher": "Microsoft Corporation",
-            "description": null,
-            "supportedClaimConfiguration": null,
-            "informationalUrls": {
-                "singleSignOnDocumentationUrl": null,
-                "appSignUpUrl": "http://go.microsoft.com/fwlink/?LinkId=252780"
-            }
+          "usage": "redirectUri",
+          "examples": [
+            "https://www.linkedin.com/checkpoint/enterprise/<SUBDOMAIN>"
+          ],
+          "values": [
+            "https://www.linkedin.com/checkpoint/enterprise/*"
+          ],
+          "isRequired": false,
+          "appliesToSingleSignOnMode": "saml"
+        },
+        {
+          "usage": "identifierUri",
+          "examples": null,
+          "values": [
+            "linkedinlookup/primary",
+            "https://www.linkedin.com/lookup/*"
+          ],
+          "isRequired": true,
+          "appliesToSingleSignOnMode": "saml"
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 

@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TenantAppManagementPolicy tenantAppManagementPolicy = new TenantAppManagementPolicy();
 tenantAppManagementPolicy.setIsEnabled(true);
-AppManagementConfiguration applicationRestrictions = new AppManagementConfiguration();
+AppManagementApplicationConfiguration applicationRestrictions = new AppManagementApplicationConfiguration();
 LinkedList<PasswordCredentialConfiguration> passwordCredentials = new LinkedList<PasswordCredentialConfiguration>();
 PasswordCredentialConfiguration passwordCredentialConfiguration = new PasswordCredentialConfiguration();
 passwordCredentialConfiguration.setRestrictionType(AppCredentialRestrictionType.PasswordAddition);
@@ -64,6 +64,14 @@ keyCredentialConfiguration1.setCertificateBasedApplicationConfigurationIds(certi
 keyCredentialConfiguration1.setMaxLifetime(null);
 keyCredentials.add(keyCredentialConfiguration1);
 applicationRestrictions.setKeyCredentials(keyCredentials);
+IdentifierUriConfiguration identifierUris = new IdentifierUriConfiguration();
+IdentifierUriRestriction nonDefaultUriAddition = new IdentifierUriRestriction();
+OffsetDateTime restrictForAppsCreatedAfterDateTime7 = OffsetDateTime.parse("2024-01-01T10:37:00Z");
+nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime7);
+nonDefaultUriAddition.setExcludeAppsReceivingV2Tokens(true);
+nonDefaultUriAddition.setExcludeSaml(true);
+identifierUris.setNonDefaultUriAddition(nonDefaultUriAddition);
+applicationRestrictions.setIdentifierUris(identifierUris);
 tenantAppManagementPolicy.setApplicationRestrictions(applicationRestrictions);
 TenantAppManagementPolicy result = graphClient.policies().defaultAppManagementPolicy().patch(tenantAppManagementPolicy);
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [sharepointprotectionunit](../resources/mailboxprotectionunit.md) to or removes it from the protection policy.
+Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [siteprotectionunit](../resources/siteprotectionunit.md) to or removes it from the protection policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -56,6 +56,8 @@ To remove a **siteProtectionUnit** from the policy, specify the `@removed` annot
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
@@ -171,7 +173,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -183,7 +185,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -202,7 +204,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -214,7 +216,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -233,7 +235,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -245,7 +247,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -264,7 +266,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -276,7 +278,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -295,7 +297,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -307,7 +309,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
@@ -340,7 +342,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -352,7 +354,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     }
   ]

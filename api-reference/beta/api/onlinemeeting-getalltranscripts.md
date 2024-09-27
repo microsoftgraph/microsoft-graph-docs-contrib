@@ -17,7 +17,7 @@ Get all transcripts from scheduled [onlineMeeting](../resources/onlinemeeting.md
 
 You can apply the [delta](calltranscript-delta.md) function on **getAllTranscripts** to synchronize and get [callTranscript](../resources/calltranscript.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the transcripts for online meetings organized by the user. Incremental synchronization gets transcripts that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the transcripts for online meetings organized by the user. Incremental synchronization gets transcripts that are added since the last synchronization. Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 For more information, see [delta query](/graph/delta-query-overview). For more examples, see [callTranscript: delta](calltranscript-delta.md).
 
@@ -29,7 +29,7 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 The following known issues are associated with this API:
 
-- [Using the `$top` query parameter might not return the @odata.nextLink](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
+- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
 - [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
 
 ## Permissions
@@ -45,23 +45,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
->**Note:** If you don't pass the function parameter **meetingOrganizerUserId**, the request fails.
+>**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**.
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|meetingOrganizerUserId|String|The user identifier of the meeting organizer. To filter for artifacts for meetings organized by the given user identifier.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date.|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date.|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|meetingOrganizerUserId|String|The user identifier of the meeting organizer that is used to filter artifacts for meetings organized by that specific user.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
-## Supported query patterns
+This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-| Pattern                | Supported | Syntax                                                  | Notes                                                                                                        |
-| ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Page size              |     ✓     | `top`                                                   | Allows the caller to specify the maximum number of objects per page. |
-
+| Name           | Description                                                                       |
+| :------------- | :-------------------------------------------------------------------------------- |
+|  `$top`        | Allows the caller to specify the max number of objects per page as the page size. |
 
 ## Request headers
 
@@ -71,7 +70,7 @@ In the request URL, provide the following query parameters with values.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [callTranscript](../resources/calltranscript.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
 
 ## Examples
 
@@ -80,6 +79,8 @@ If successful, this method returns a `200 OK` response code and a list of [callT
 The following example shows a request to get all the transcripts of a given meeting organizer.
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,17 +126,16 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
----
-
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "get_alltranscripts",
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -150,7 +150,6 @@ Content-type: application/json
             "@odata.type": "#microsoft.graph.callTranscript",
             "id": "VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=",
             "meetingId": "MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy",
-            "meetingOrganizerId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "createdDateTime": "2023-12-02T06:59:34.7411768Z",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/transcripts/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
             "meetingOrganizer": {
@@ -169,11 +168,13 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get all transcripts of a given meeting organizer with date range filter
+### Example 2: Get all transcripts of a given meeting organizer using a date range filter
 
 The following example shows a request to get all transcripts of a given meeting organizer, that are created between a given start date and an end date.
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -219,17 +220,16 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
----
-
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "get_alltranscripts_with_dates",
-  "@odata.type": "microsoft.graph.callTranscript",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callTranscript)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -244,7 +244,6 @@ Content-type: application/json
             "@odata.type": "#microsoft.graph.callTranscript",
             "id": "VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=",
             "meetingId": "MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy",
-            "meetingOrganizerId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "createdDateTime": "2023-12-02T06:59:34.7411768Z",
             "transcriptContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/transcripts/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
             "meetingOrganizer": {
@@ -265,6 +264,6 @@ Content-type: application/json
 
 ## Related content
 
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
-[Delta query overview](/graph/delta-query-overview)
-[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+- [Delta query overview](/graph/delta-query-overview)
+- [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)

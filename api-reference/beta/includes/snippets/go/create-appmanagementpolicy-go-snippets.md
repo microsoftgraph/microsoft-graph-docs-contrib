@@ -22,7 +22,7 @@ description := "Cred policy sample"
 requestBody.SetDescription(&description) 
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-restrictions := graphmodels.NewAppManagementConfiguration()
+restrictions := graphmodels.NewCustomAppManagementConfiguration()
 
 
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
@@ -88,6 +88,21 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration1,
 }
 restrictions.SetKeyCredentials(keyCredentials)
+additionalData := map[string]interface{}{
+applicationRestrictions := graph.New()
+identifierUris := graph.New()
+nonDefaultUriAddition := graph.New()
+restrictForAppsCreatedAfterDateTime := "2024-01-01T10:37:00Z"
+nonDefaultUriAddition.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+	excludeAppsReceivingV2Tokens := true
+nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
+	excludeSaml := true
+nonDefaultUriAddition.SetExcludeSaml(&excludeSaml) 
+	identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
+	applicationRestrictions.SetIdentifierUris(identifierUris)
+	restrictions.SetApplicationRestrictions(applicationRestrictions)
+}
+restrictions.SetAdditionalData(additionalData)
 requestBody.SetRestrictions(restrictions)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

@@ -2,7 +2,7 @@
 title: "Update androidVpnConfiguration"
 description: "Update the properties of a androidVpnConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -2,6 +2,7 @@
 title: "onPremisesDirectorySynchronization resource type"
 description: "A container for on-premises directory synchronization functionalities that are available for the organization."
 author: "dkershaw10"
+ms.reviewer: adam.lassman, daradwan
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A container for on-premises directory synchronization functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete aren't supported.
+A container for [on-premises directory synchronization](../resources/onpremisesdirectorysynchronization.md) functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete aren't supported.
 
 ## Methods
 
@@ -24,8 +25,8 @@ A container for on-premises directory synchronization functionalities that are a
 
 | Property      | Type                                                                                                               | Description                                                                                                                  |
 | :------------ | :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| configuration | [onPremisesDirectorySynchronizationConfiguration](../resources/onpremisesdirectorysynchronizationconfiguration.md) | Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant. |
-| features      | [onPremisesDirectorySynchronizationFeature](../resources/onpremisesdirectorysynchronizationfeature.md)             | Consists of directory synchronization features that can be enabled or disabled.                                              |
+| configuration | [onPremisesDirectorySynchronizationConfiguration](../resources/onpremisesdirectorysynchronizationconfiguration.md) | Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant. Nullable.|
+| features      | [onPremisesDirectorySynchronizationFeature](../resources/onpremisesdirectorysynchronizationfeature.md)             | Consists of directory synchronization features that can be enabled or disabled. Not nullable.                                             |
 | id            | String                                                                                                             | The unique Microsoft Entra tenant ID.                                                                                               |
 
 ## Relationships

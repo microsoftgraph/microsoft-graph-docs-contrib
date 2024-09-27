@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policy](../resources/networkaccess-filteringpolicylink.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects in the response body.
 
 ## Examples
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/networkaccess/filteringProfiles/78858adc-db
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-policy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-policy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

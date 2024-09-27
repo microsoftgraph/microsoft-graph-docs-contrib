@@ -2,7 +2,7 @@
 title: "Delete depEnrollmentProfile"
 description: "Deletes a depEnrollmentProfile."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -21,7 +21,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 |[List](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get delta by organizer](../api/callrecording-delta.md) | [callRecording](callrecording.md) collection | Get a set of [callRecording](../resources/callrecording.md) resources that have been added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
+|[Get delta by organizer](../api/callrecording-delta.md) | [callRecording](callrecording.md) collection | Get a set of [callRecording](../resources/callrecording.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List recordings by organizer](../api/onlinemeeting-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
  
 ## Properties
@@ -36,7 +36,6 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | id | String | The unique identifier for the recording. Read-only. Inherited from [entity](../resources/entity.md).|
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
 | meetingOrganizer|  [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
-| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | recordingContentUrl| String| The URL that can be used to access the content of the recording. Read-only.|
 
 ## JSON representation
@@ -61,7 +60,6 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "meetingId": "String",
   "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
-  "meetingOrganizerId": "String",
   "recordingContentUrl": "String"
 }
 ```

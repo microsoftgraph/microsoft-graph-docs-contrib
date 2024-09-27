@@ -46,7 +46,7 @@ Describes the information protection label that details how to properly apply a 
 | parent       | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The parent label associated with a child label. `Null` if the label has no parent. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

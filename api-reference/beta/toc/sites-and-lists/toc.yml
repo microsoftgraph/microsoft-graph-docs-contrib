@@ -22,10 +22,14 @@ items:
     href: ../../api/itemactivity-getbyinterval.md
   - name: List pages
     href: ../../api/basesitepage-list.md
+  - name: List page templates
+    href: ../../api/pagetemplate-list.md
   - name: List root sites
     href: ../../api/site-list.md
   - name: List sites across geographies
     href: ../../api/site-getallsites.md
+  - name: List subsites for a site
+    href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
   - name: Follow site
@@ -330,6 +334,24 @@ items:
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
+  - name: Complex types
+    items:
+    - name: Save as template
+      href: ../../resources/saveastemplate.md
 - name: Taxonomy
   items:
   - name: Store

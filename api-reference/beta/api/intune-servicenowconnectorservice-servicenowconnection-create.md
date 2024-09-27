@@ -2,7 +2,7 @@
 title: "Create serviceNowConnection"
 description: "Create a new serviceNowConnection object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

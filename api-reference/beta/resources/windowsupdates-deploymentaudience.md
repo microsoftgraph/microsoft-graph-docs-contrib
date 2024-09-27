@@ -3,7 +3,7 @@ title: "deploymentAudience resource type"
 description: "The set of updatableAsset resources to which a deployment can apply."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ If the same **updatableAsset** resource is included in the **exclusions** and **
 |applicableContent|[microsoft.graph.windowsUpdates.applicableContent](./windowsupdates-applicablecontent.md) collection|Content eligible to deploy to devices in the audience. Not nullable. Read-only.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

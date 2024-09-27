@@ -58,6 +58,8 @@ To remove a drive restore artifact, specify the `@removed` annotation in the req
 
 If successful, this method returns a `200 OK` response code and an updated [oneDriveForBusinessRestoreSession](../resources/driverestoreartifact.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -162,28 +164,28 @@ HTTP/1.1 200 OK
       "restorePoint": { "@odata.id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "56014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "3b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "32014d8c-71fe-4d00-a01a-31850bc5b32c",
       "restorePoint": { "@odata.id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c" },
       "destinationType": "new",
       "status": "added",
-      "createdDateTime": "2015-06-19T12-01-03.45Z"
+      "createdDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario

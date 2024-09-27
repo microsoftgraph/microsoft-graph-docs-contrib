@@ -2,7 +2,7 @@
 title: "uri resource type"
 description: "Intune Shared Uri Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

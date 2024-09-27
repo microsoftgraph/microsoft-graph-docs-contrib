@@ -46,7 +46,7 @@ Represents an entity that holds the details about a learning provider in Viva le
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
