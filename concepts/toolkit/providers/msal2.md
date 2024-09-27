@@ -7,8 +7,7 @@ author: sebastienlevert
 
 # MSAL2 Provider
 
-The MSAL2 Provider uses [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
-MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow) with PKCE.
+The MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow) with PKCE. It is used to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](./providers.md).
 
