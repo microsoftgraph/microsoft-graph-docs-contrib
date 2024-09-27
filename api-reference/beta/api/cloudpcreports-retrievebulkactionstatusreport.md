@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the bulk remote action status reports, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.
+Get the bulk remote action [Cloud PC status reports](../resources/cloudpcstatusreports.md), including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,14 +53,14 @@ The following table shows the parameters that can be used with this method.
 | filter    | String            | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.                      |
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.   |
 | orderBy   | String collection | Specifies the order by columns name. The default **orderBy** column is `RequestDateTime`.              |
-| search    | String            | Specifies a String to search for.                                                                      |
+| search    | String            | Specifies a string to search for.                                                                      |
 | select    | String collection | OData `$select` syntax. The selected columns of the reports.                                           |
 | skip      | Int32             | Number of records to skip.                                                                             |
 | top       | Int32             | The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a Stream object in the response body.
+If successful, this method returns a `200 OK` response code and a stream object in the response body.
 
 ## Examples
 
