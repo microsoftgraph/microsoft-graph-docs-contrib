@@ -1599,13 +1599,9 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
-                "claimsMappingPolicy",
-                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
-                "tokenIssuancePolicy",
-                "tokenLifetimePolicy",
                 "authenticationEventsPolicy",
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
