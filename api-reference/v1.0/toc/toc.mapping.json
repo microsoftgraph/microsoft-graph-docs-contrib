@@ -1086,10 +1086,7 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
-                "claimsMappingPolicy",
                 "homeRealmDiscoveryPolicy",
-                "tokenIssuancePolicy",
-                "tokenLifetimePolicy",
                 "authenticationFlowsPolicy",
                 "authenticationStrengthPolicy",
                 "featureRolloutPolicy",
