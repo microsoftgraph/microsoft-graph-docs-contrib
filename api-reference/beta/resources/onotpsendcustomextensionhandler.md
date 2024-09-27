@@ -1,6 +1,6 @@
 ---
 title: "onOtpSendCustomExtensionHandler resource type"
-description: "Used for creating a new custom extension based on the onEmailOtpSend event to configure the custom email provider for Oone time passcodes."
+description: "Used for creating a new custom extension based on the onEmailOtpSend event to configure the custom email provider for one time passcodes."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for creating a new custom extension based on the **ononEmailOtpSend** event to configure the custom email provider for one time passcodes.
+Used for creating a new custom extension based on the **onEmailOtpSend** event to configure the custom email provider for one time passcodes.
 
 
 Inherits from [onOtpSendHandler](../resources/onotpsendhandler.md).
@@ -22,12 +22,12 @@ Inherits from [onOtpSendHandler](../resources/onotpsendhandler.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|**TODO: Add Description**|
+|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|Configuration regarding properties of the custom extension that are can be overwritten per event listener.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|**TODO: Add Description**|
+|customExtension|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Used for creating a new custom extension based on the **onEmailOtpSend** event to configure the custom email provider for one time passcodes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
