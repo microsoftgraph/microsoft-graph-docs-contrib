@@ -481,6 +481,8 @@ items:
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
       href: ../../api/channel-getallmessages.md
+    - name: Get all retained channel messages
+      href: ../../api/channel-getallretainedmessages.md
     - name: Create channel message post
       href: ../../api/channel-post-messages.md
     - name: Create reply to channel message post
@@ -563,6 +565,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
+      - name: Get retained messages across all chats
+        href: ../../api/chat-getallretainedmessages.md
     - name: Apps
       items:
       - name: List apps in chat
