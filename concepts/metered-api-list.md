@@ -17,7 +17,9 @@ The following table lists the metered APIs and services.
 | API | Billing and license information |
 |:--------------------------|:--------------------------|
 | Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams [chat retained](/graph/api/chat-getallretainedmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams [channel retained](/graph/api/channel-getallretainedmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
 | Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) |
