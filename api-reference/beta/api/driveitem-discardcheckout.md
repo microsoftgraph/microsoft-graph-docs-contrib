@@ -121,4 +121,12 @@ The following example shows the response.
 HTTP/1.1 204 No content
 ```
 
+## Error responses
 
+If the file is not checked out, the request returns `400 Bad Request`. 
+If the resource is checked out by a different user the request
+may return `423 Locked` unless the request is executed with app-permissions.
+
+See [Error responses][error-response] for more information about how errors are returned.
+
+[error-response]: /graph/errors
