@@ -41,6 +41,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Update column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update a column in a fileStorageContainer.|
 |[Delete file storage container column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
 |[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
+|[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
 |[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[Get recycle bin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
@@ -56,9 +57,7 @@ Represents a location where multiple users or a group of users can store files a
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
-|id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
-|isItemVersioningEnabled|Boolean|Indicates whether versioning is enabled for the **fileStorageContainer**. The setting is applicable to all items in the **fileStorageContainer**. Read-Write.|
-|itemMajorVersionLimit|Int32|Maximum number of major versions allowed for items in the **fileStorageContainer**. Read-write.|
+|id|String|The unique stable identifier of the **fileStorageContainer**. Read-only.|
 |owners|[userIdentity](../resources/useridentity.md) collection|List of users who own the **fileStorageContainer**. Read-only.|
 |ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**. The possible values are: `tenantOwned`. Read-only.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
@@ -114,8 +113,6 @@ The following JSON representation shows the resource type.
   "owners":  [ { "@odata.type": "microsoft.graph.userIdentity" } ],
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
   "expiryDateTime": "string (timestamp)",
-  "itemMajorVersionLimit": "int64",
-  "isItemVersioningEnabled": "boolean",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
   "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
 }
