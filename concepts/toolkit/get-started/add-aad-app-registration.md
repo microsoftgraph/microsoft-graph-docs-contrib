@@ -26,15 +26,14 @@ To create the app in Microsoft Entra ID:
 
 ## Enable authorization code flow (for MsalProvider and TeamsProvider)
 
-In most cases, you use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. We recommend that you use the [authorization code flow with PKCE ](/entra/identity-platform/scenario-spa-app-registration#redirect-uri-msaljs-20-with-auth-code-flow), which provides a more secure way to authenticate users.
+In most cases, you use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. We recommend that you use the [authorization code flow with PKCE](/entra/identity-platform/scenario-spa-app-registration#redirect-uri-msaljs-20-with-auth-code-flow) that provides a more secure way to authenticate users.
 
 1. In the Microsoft Entra admin center, open your newly created app registration.
 1. From the menu, choose **Authentication**.
-1. In the **Platform configurations** section, select **Add a platform** and choose **Single-page application (SPA)**.
-1. In the **Redirect URIs** section, enter your redirect URL (and/or `http://localhost` if testing locally).
-1. In the **Implicit grant and hybrid flows** section, ensure that **ID tokens** and **Access tokens** are not selected.
-1. Select Configure to finish adding the redirect URL
-
+1. In the **Platform configurations** section, select **Add a platform**, then choose **Single-page application**.
+1. In the **Redirect URIs** section, enter your redirect URL, or `http://localhost` if you run the code locally, or both.
+1. In the **Implicit grant and hybrid flows** section, ensure that **ID tokens** and **Access tokens** aren't selected.
+1. Select **Configure** to add the redirect URL and finalize the setup.
 
 ## Next steps
 
