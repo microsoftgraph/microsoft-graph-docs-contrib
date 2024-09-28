@@ -123,9 +123,8 @@ HTTP/1.1 204 No content
 
 ## Error responses
 
-If the file is not checked out, the request returns `400 Bad Request`. 
-If the resource is checked out by a different user the request
-may return `423 Locked` unless the request is executed with app-permissions.
+If the file isn't checked out, the request returns `400 Bad Request`. 
+A `423 Locked` error is returned when a different user checked out the file, unless the request is executed with app-permissions.
 
 See [Error responses][error-response] for more information about how errors are returned.
 
