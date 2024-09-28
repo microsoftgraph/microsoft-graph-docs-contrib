@@ -9,9 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.directory.deleteditems.item.restore.RestorePostRequestBody restorePostRequestBody = new com.microsoft.graph.directory.deleteditems.item.restore.RestorePostRequestBody();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("autoReconcileProxyConflict", true);
-restorePostRequestBody.setAdditionalData(additionalData);
+restorePostRequestBody.setAutoReconcileProxyConflict(true);
 var result = graphClient.directory().deletedItems().byDirectoryObjectId("{directoryObject-id}").restore().post(restorePostRequestBody);
 
 
