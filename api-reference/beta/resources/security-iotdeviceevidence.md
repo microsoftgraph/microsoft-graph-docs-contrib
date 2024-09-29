@@ -115,8 +115,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-<a id="ioTDeviceImportanceType"></a>
-## ioTDeviceImportanceType values
+### ioTDeviceImportanceType values
 
 Device importance, determines if the device classified as ‘crown jewel’
 
