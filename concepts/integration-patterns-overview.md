@@ -20,7 +20,7 @@ The following image shows the Microsoft Graph integration patterns, their associ
 
 ![A diagram that lists integration patterns, the associated architectural components for each, and types of solutions](./images/integrationoptions.png)
 
-The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and non-functional requirements. Then you can select an integration option based on those requirements.
+The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and nonfunctional requirements. Then you can select an integration option based on those requirements.
 
 ![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.png)
 
@@ -29,7 +29,7 @@ Based on many known scenarios in the Microsoft Graph ecosystem, the following ar
 - Integration type - Application integrations involve client applications that depend on both the data and functionality of the Microsoft 365 services; for example, the **sendMail** API accesses user data and also send an email. Data integrations involve applications that produce or consume Microsoft Graph data but don't rely in Microsoft 365 services. All Microsoft Graph integration options support data integration scenarios.
 - Direction of data flow - Outbound flow is when customer data leaves the Microsoft Graph compliance boundaries and inbound flow is when customer data enters Microsoft Graph.
 - Volume of data - The amount of customer data processed in a critical period, such as a business day.
-- Data latency - The time difference between when data is created and when it is extracted.
+- Data latency - The time difference between when data is created and when it's extracted.
 
 Use the following decision tree to choose an integration option based on your architecture requirements.
 
