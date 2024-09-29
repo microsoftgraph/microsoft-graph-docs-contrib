@@ -21,7 +21,7 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 |:---|:---|:---|
 | macAddress | String| The MAC for the nic           |
 | ipAddress  | [microsoft.graph.security.ipEvidence](./security-ipevidence.md) | The current IP for the nic    |
-| vlans      | Collection(String)| The current VLANs for the nic |
+| vlans      | Collection(String)| The current virtual local area networks for the nic |
 
 ## Relationships
 None.
