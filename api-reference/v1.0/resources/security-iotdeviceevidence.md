@@ -49,10 +49,6 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 ## Relationships
 None.
 
-{
-    "@odata.type": "microsoft.graph.security.userAccount"
-  },
-
 ## JSON representation
 
 The following JSON representation shows the resource type.
@@ -119,14 +115,14 @@ The following JSON representation shows the resource type.
 }
 ```
 
-### ioTDeviceImportanceType values
+## ioTDeviceImportanceType values
 
 Device importance, determines if the device classified as ‘crown jewel’
 
-| Value                | Description                                     |
-|----------------------|-------------------------------------------------|
-| unknown            | Unknown - Default value                         |
-| low                | Low                                             |
-| normal             | Normal                                          |
-| high               | High                                            |
+| Value  | Description  |
+|:-------------|-:----|
+| unknown | Unknown - Default value    |
+| low  | Low |
+| normal | Normal  |
+| high    | High |
 | unknownFutureValue | unknownFutureValue for evolvable enums pattern. |
