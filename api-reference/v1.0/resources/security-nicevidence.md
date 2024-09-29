@@ -7,11 +7,9 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# IoTDeviceEvidence resource type
+# NICEvidence resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [v1-disclaimer](../../includes/v1-disclaimer.md)]
 
 Represents Kubernetes service entity.
 
