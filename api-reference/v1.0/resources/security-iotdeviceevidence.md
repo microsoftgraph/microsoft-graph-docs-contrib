@@ -32,7 +32,7 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 | operatingSystem | String| The operating system the device is running |
 | ipAddress | [microsoft.graph.security.ipEvidence](./security-ipevidence.md)  | The current IP address of the device |
 | macAddress| String| The MAC address of the device  |
-| nics| Collection([microsoft.graph.security.nicEvidence](./security-nicevidence.md)) | The current Nics on the device |
+| nics| Collection([microsoft.graph.security.nicEvidence](./security-nicevidence.md)) | The current network interface controllers on the device |
 | protocols | Collection(String)| A list of protocols that the device supports  |
 | serialNumber | String| The serial number of the device|
 | site| String| The site location of the device|
@@ -117,7 +117,7 @@ The following JSON representation shows the resource type.
 
 ## ioTDeviceImportanceType values
 
-Device importance, determines if the device classified as ‘crown jewel’
+Describes the device's importance and determines if the device classified as ‘crown jewel’
 
 | Value  | Description  |
 |:-------------|-:----|
