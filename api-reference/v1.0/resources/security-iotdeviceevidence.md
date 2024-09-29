@@ -38,7 +38,7 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 | site| String| The site location of the device|
 | zone| String| The zone location of the device within a site |
 | sensor | String| The sensor the device is monitored by|
-| importance| [microsoft.graph.security.ioTDeviceImportanceType](##ioTDeviceImportanceType) | Importance level for the iot device |
+| importance| [microsoft.graph.security.ioTDeviceImportanceType](#ioTDeviceImportanceType) | Importance level for the iot device |
 | purdueLayer  | String| The Purdue Layer of the device |
 | isProgramming| Boolean  | Determines whether the device classified as programming device  |
 | isAuthorized | Boolean  | Determines whether the device classified as authorized device|
@@ -114,13 +114,14 @@ The following JSON representation shows the resource type.
   "deviceSubType": "String",
 }
 ```
+<a id="ioTDeviceImportanceType"></a>
 
 ## ioTDeviceImportanceType values
 
 Describes the device's importance and determines if the device classified as ‘crown jewel’
 
 | Value  | Description  |
-|:-------------|-:----|
+|:-------------|:----|
 | unknown | Unknown - Default value    |
 | low  | Low |
 | normal | Normal  |
