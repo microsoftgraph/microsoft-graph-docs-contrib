@@ -17,9 +17,9 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 ## Methods
 
-### Copilot for Microsoft 365 usage
+### Microsoft 365 Copilot usage
 
-For details about report views and names, see [Microsoft 365 reports - Copilot for Microsoft 365 usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
+For details about report views and names, see [Microsoft 365 reports – Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
