@@ -24,7 +24,7 @@ Announced the deprecation of shared access signatures (SAS) for authenticating E
 
 ### Identity and access | Directory management
 
-Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources
+Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
 
 ### Security | Alerts and incidents
 
