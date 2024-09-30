@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the bulk remote action [Cloud PC status reports](../resources/cloudpcstatusreports.md), including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.
+Get the bulk remote action status report, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
