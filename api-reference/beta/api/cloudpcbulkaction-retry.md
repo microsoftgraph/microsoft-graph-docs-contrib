@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# CloudPcOnPremisesConnection: runHealthChecks
+# CloudPcBulkAction: retry
 
 Namespace: microsoft.graph
 
@@ -59,8 +59,6 @@ If successful, this method returns a `202 Accepted` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcbulkaction_retry"
