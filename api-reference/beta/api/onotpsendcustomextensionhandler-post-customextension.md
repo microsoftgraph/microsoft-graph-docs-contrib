@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [onOtpSendCustomExtensi
 
 You can specify the following properties when creating an **onOtpSendCustomExtension**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
