@@ -2,6 +2,7 @@
 title: "onPremisesDirectorySynchronizationFeature resource type"
 description: "Consists of directory synchronization features that can be enabled or disabled."
 author: "dkershaw10"
+ms.reviewer: adam.lassman, daradwan
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Consists of directory synchronization features that can be enabled or disabled. The naming pattern used is `<featureName>Enabled`. `true` indicates that the feature is enabled and `false` indicates that the feature disabled.
+Consists of [directory synchronization](../resources/onpremisesdirectorysynchronization.md) features that can be enabled or disabled. The naming pattern used is `<featureName>Enabled`. `true` indicates that the feature is enabled and `false` indicates that the feature disabled.
 
 ## Properties
 

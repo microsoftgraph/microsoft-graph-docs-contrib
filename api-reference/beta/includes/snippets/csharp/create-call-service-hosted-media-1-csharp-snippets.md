@@ -38,12 +38,7 @@ var requestBody = new Call
 	{
 		OdataType = "#microsoft.graph.outgoingCallOptions",
 		IsContentSharingNotificationEnabled = true,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"isDeltaRosterEnabled" , true
-			},
-		},
+		IsDeltaRosterEnabled = true,
 	},
 	MediaConfig = new ServiceHostedMediaConfig
 	{
