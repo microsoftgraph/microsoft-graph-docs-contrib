@@ -260,9 +260,8 @@ HTTP/1.1 204 No Content
 ### Example 3: Update the passwordProfile of a user and reset their password
 
 The following example shows a request that resets the password of another user. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`.
-- In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user.
-- In application-only access, the calling app must be assigned the *User.ReadWrite.All* (least privileged) or *Directory.ReadWrite.All* (higher privileged) application permission *and* at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
+[!INCLUDE [users-passwordprofile-permissions](../includes/users-passwordprofile-permissions.md)]
 
 #### Request
 
