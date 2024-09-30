@@ -3,6 +3,24 @@
       {
         "ChangeList": [
           {
+            "Id": "93e74e76-b79a-44cf-8f1c-2a8973eeb5b5",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "cloudPcStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the `preparing` member to the **cloudPcStatus** enumeration.",
+            "Target": "cloudPcStatus"
+          }            
+        ],
+        "Id": "93e74e76-b79a-44cf-8f1c-2a8973eeb5b5",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-30T16:03:35.3198087Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcAutopilotConfiguration",
