@@ -3,6 +3,24 @@
       {
         "ChangeList": [
           {
+            "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+            "ApiChange": "Response Example",
+            "ChangedApiName": "getProvisionedCloudPCs",
+            "ChangeType": "Deletion",
+            "Description": "Delete non default properties in the response example of the [getProvisionedCloudPCs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method.",
+            "Target": "getProvisionedCloudPCs"
+          }            
+        ],
+        "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-30T16:37:21.7521953Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcAutopilotConfiguration",

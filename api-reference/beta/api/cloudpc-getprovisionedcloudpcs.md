@@ -138,22 +138,16 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
-            "powerState": "running",
             "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-23T10:29:57Z",
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
             "deviceRegionName": "eastus2",
-            "connectivityResult": "",
             "gracePeriodEndDateTime": null,
-            "lastLoginResult": "2020-07-23T10:29:57Z",
-            "lastRemoteActionResult": "Succeed",
             "onPremisesConnectionName": "Test-OPNC",
-            "osVersion": null,
             "partnerAgentInstallResults": null,
-            "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "provisioningPolicyName": "Test-Policy"
         },
         {
             "@odata.type": "#microsoft.graph.cloudPC",
@@ -169,22 +163,16 @@ Content-Type: application/json
             "servicePlanName": "Cloud PC Enterprise 4vCPU/16GB/256GB",
             "servicePlanType": "enterprise",
             "status": "provisioned",
-            "powerState": "running",
             "userPrincipalName": "pmitchell@contoso.com",
             "lastModifiedDateTime": "2020-07-28T18:14:34Z",
             "statusDetails": null,
             "provisioningType": "dedicated",
             "allotmentDisplayName": null,
             "deviceRegionName": "eastus2",
-            "connectivityResult": "",
             "gracePeriodEndDateTime": null,
-            "lastLoginResult": "2020-07-23T10:29:57Z",
-            "lastRemoteActionResult": "Succeed",
             "onPremisesConnectionName": "Test-OPNC",
-            "osVersion": null,
             "partnerAgentInstallResults": null,
-            "provisioningPolicyName": "Test-Policy",
-            "userAccountType": null
+            "provisioningPolicyName": "Test-Policy"
         }
     ]
 }
