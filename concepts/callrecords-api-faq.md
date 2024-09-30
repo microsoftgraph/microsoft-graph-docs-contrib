@@ -18,11 +18,11 @@ Your application needs the **CallRecords.Read.All** permission to access call re
 
 ## Can I use delegated permissions with the Graph Call Records API?
 
-No, the Graph Call Records API does not support delegated permissions.
+No, the Graph Call Records API doesn't support delegated permissions.
 
 ## Why can't I use delegated permissions with the Graph Call Records API?
 
-You can't use delegated permissions because there is no way to limit **CallRecords.Read.All** permission to specific calls or users, as the application permission is granted at the organization level, not the individual user level.
+You can't use delegated permissions because there's no way to limit **CallRecords.Read.All** permission to specific calls or users, as the application permission is granted at the organization level, not the individual user level.
 
 ## How do I request a call record using the Microsoft Graph Call Records API?
 
@@ -35,7 +35,7 @@ You can find and collect call IDs using the following options:
 * **Subscribe to notifications**: Subscribe to [change notifications feed](changenotifications-for-callrecords.md) and receive notifications containing call IDs whenever a new call record is created.
 * **List call records**: Get a list of call IDs by requesting it from [List callRecords API](/graph/api/callrecords-cloudcommunications-list-callrecords).
 * **Manual search**: If you have access to [Call Analytics](/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) within the [Teams Admin Center](/microsoftteams/teams-overview) for Microsoft Teams, you can manually search for a call ID in a user’s history. However, there's no automated system available to retrieve all call IDs from Call Analytics.
-* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](/graph/api/resources/call) API after the call is completed. This approach works when the call is programmatically created and you are working with the [call resource type](/graph/api/resources/call). Also, the `callChainId` may differ from the call record ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
+* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](/graph/api/resources/call) API after the call is completed. This approach works when the call is programmatically created and you're working with the [call resource type](/graph/api/resources/call). Also, the `callChainId` may differ from the call record ID in certain scenarios, such as transfer calls due to architecture specifics. Therefore, this method is less preferred compared to other options.
 
 ## When is a call record available?
 
