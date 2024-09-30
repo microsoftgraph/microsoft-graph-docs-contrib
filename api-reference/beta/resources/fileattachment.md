@@ -78,7 +78,6 @@ The following JSON representation shows the resource type.
   "name": "string",
   "size": "Int32"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
