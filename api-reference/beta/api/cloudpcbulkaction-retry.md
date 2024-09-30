@@ -40,6 +40,7 @@ POST /deviceManagement/virtualEndpoint/bulkAction/{id}/retry
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -68,6 +69,7 @@ If successful, this method returns a `202 Accepted` response code.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/{id}/retry
 Content-Type: application/json
+
 {
   "@odata.type":"#microsoft.graph.cloudPcBulkAction",
   "cloudPcIds":[
