@@ -1,6 +1,6 @@
 ---
 title: "List ipAddresses"
-description: "Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property."
+description: Get the list of ipAddresses associated with a discovered cloud app.
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Get the [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) resources from the ipAddresses navigation property.
+Get the list of ipAddresses associated with a discovered cloud app.
 
 ## Permissions
 
