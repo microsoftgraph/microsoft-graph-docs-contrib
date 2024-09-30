@@ -2263,6 +2263,32 @@
       "CreatedDateTime": "2024-08-14T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ccbeee51-fd31-4231-9bc0-fb3b76c41218",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallretainedmessages?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "ccbeee51-fd31-4231-9bc0-fb3b76c41218",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/chat-getallretainedmessages?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "ccbeee51-fd31-4231-9bc0-fb3b76c41218",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-25T23:10:46.000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
