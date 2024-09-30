@@ -1,6 +1,6 @@
 ---
 title: "List discoveredCloudAppDevice"
-description: "Get a list of devices accessing discovered cloud apps."
+description: "Get a list of devices that access a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
