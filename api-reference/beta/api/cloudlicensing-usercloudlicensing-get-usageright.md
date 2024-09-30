@@ -1,5 +1,5 @@
 ---
-title: "Get user usageRight"
+title: "Get usageRight"
 description: "Get the properties and relationships of a usageRight object granted to a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "microsoft-cloud-licensing"
 doc_type: apiPageType
 ---
 
-# Get user usageRight
+# Get usageRight
 
 Namespace: microsoft.graph.cloudLicensing
 
