@@ -24,6 +24,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
 |[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
 |[Delete](../api/chat-delete.md)|None|Delete a chat.|
+|[Get message delta](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get user's incremental chat messages. |
 |[List members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Add member](../api/chat-post-members.md) | Location header | Add a user to the chat.|
 |[Get member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|

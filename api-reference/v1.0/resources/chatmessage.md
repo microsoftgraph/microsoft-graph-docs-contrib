@@ -21,7 +21,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
 |[List messages in channel](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
-|[Get delta of messages in channel](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
 |[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
 |[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
@@ -48,6 +47,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |[Delete message in chat](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the message of a chat.|
+|[Get delta of messages in chat](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get user's incremental chat messages. |
 |[Undo the deletion of a message in chat](../api/chatmessage-undosoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a chat.|
 |[Set reaction to a message in channel](../api/chatmessage-setreaction.md)|None| Set reaction to a message in a channel.|
 |[Unset reaction to a message in channel](../api/chatmessage-unsetreaction.md)|None| Unset reaction to a message in a channel.|
