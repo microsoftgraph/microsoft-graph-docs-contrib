@@ -30,11 +30,11 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|priority|Int32|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|authenticationEventsFlowId|String|The identifier of the authenticationEventsFlow object. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|The configuration for what to invoke if an event resolves to this listener.|
+|id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
+|priority|Int32|The priority of the listener. Determines the order of evaluation when an event has multiple listeners. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships
 None.
