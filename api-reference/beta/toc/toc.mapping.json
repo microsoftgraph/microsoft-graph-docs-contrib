@@ -419,6 +419,22 @@
           ]
         },
         {
+          "name": "Cloud licensing",
+          "keywords": [
+            "Cloud licensing",
+            "Microsoft cloud licensing"
+          ],
+          "resources": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing"
+          ],
+          "complexTypes": [
+            "microsoft.graph.cloudLicensing.service",
+            "microsoft.graph.cloudLicensing.usageRight"
+          ],
+          "childNodes": []
+        },
+        {
           "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
