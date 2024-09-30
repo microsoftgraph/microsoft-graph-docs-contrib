@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [devices](../resources/security-discoveredcloudappdevice.md) accessing discovered cloud app. 
+Get a list of [devices](../resources/security-discoveredcloudappdevice.md) that access a discovered cloud app. 
 
 ## Permissions
 
