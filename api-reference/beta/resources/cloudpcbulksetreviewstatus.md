@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk set review status action.
+Represents the entity that sets the review status on Cloud PCs in bulk.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

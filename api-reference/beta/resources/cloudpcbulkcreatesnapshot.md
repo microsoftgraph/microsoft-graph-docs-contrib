@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk create snapshot action.
+Represents the entity that performs a bulk create Cloud PC snapshot action.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
