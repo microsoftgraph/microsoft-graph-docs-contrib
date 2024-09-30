@@ -32,6 +32,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > 1. Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 >2. The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports and manager of the signed-in user only.
 
+>[!NOTE]
+> - To read the **employeeLeaveDateTime** property:
+>   - The calling app must be assigned the *User-LifeCycleInfo.Read.All* permission.
+>   - In delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*.
+> - To read the **customSecurityAttributes** property, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
+
 ## HTTP request
 
 For a specific user:
