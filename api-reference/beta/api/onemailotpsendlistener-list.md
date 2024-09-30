@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.onEmailOtpSendListener not found
+GET /identity/authenticationEventListeners
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.onEmailOtpSendListener not found
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners
 ```
 
 
