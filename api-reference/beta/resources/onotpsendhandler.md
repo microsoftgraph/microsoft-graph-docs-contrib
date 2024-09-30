@@ -1,6 +1,6 @@
 ---
 title: "onOtpSendHandler resource type"
-description: "Serves as a generic OTP event handler used for both email and SMS OTP messages."
+description: "Represents an abstract base class for OTP event handlers that are used for both email and SMS OTP messages."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to configure what to invoke if the onEmailOTPSend event resolves to this listener. This base class will serve as a generic OTP event handler used for both email and SMS OTP messages.
+Used to configure what to invoke if the onEmailOTPSend event resolves to this listener. This base class serves as a generic OTP event handler used for both email and SMS OTP messages.
 This is an abstract type.
 
 

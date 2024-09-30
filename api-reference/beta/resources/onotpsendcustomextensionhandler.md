@@ -1,6 +1,6 @@
 ---
 title: "onOtpSendCustomExtensionHandler resource type"
-description: "Used for creating a new custom extension based on the onEmailOtpSend event to configure the custom email provider for one time passcodes."
+description: "Represents configuration information for creating a new custom extension based on the onEmailOtpSend event to configure the custom email provider for one time passcodes."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for creating a new custom extension based on the **onEmailOtpSend** event to configure the custom email provider for one time passcodes.
+Represents configuration information for creating a new custom extension based on the **onEmailOtpSend** event to configure the custom email provider for one time passcodes.
 
 
 Inherits from [onOtpSendHandler](../resources/onotpsendhandler.md).

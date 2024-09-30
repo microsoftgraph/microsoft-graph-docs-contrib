@@ -1,6 +1,6 @@
 ---
 title: "List onOtpSendCustomExtension objects"
-description: "Get a list of the onOtpSendCustomExtension objects and their properties."
+description: "Get a list of onOtpSendCustomExtension objects and their properties."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) objects and their properties.
+Get a list of [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) objects and their properties.
 
 ## Permissions
 

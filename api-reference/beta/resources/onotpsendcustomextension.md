@@ -33,11 +33,11 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Microsoft Entra ID can wait for a connection, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|description|String|Description for the onEmailOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|Display name for the onEmailOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define:<br/><ul><li>The allowed time that Microsoft Entra ID waits for a connection.</li><li>The number of times you can retry a timed-out connection.</li><li>The exception scenarios when retries are allowed.<br/>Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|description|String|The description for the onEmailOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|displayName|String|Theisplay name for the onEmailOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String|Identifier for the onEmailOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the onEmailOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "onOtpSendCustomExtension: validateAuthenticationConfiguration"
-description: "**TODO: Add Description**"
+description: "Validate the token sent in the authorization header."
 author: "AlexanderMars"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
