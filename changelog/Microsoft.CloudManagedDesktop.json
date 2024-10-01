@@ -7,7 +7,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "CloudPC.Read.All",
             "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.Read.All application permissions to the getCloudPcLaunchInfo method.",
+            "Description": "Added support for the `CloudPC.Read.All` application permission to the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method.",
             "Target": "getCloudPcLaunchInfo"
           },
           {
@@ -15,7 +15,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "CloudPC.ReadWrite.All",
             "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.CloudPC.ReadWrite.All application permissions to getCloudPcLaunchInfo method.",
+            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method.",
             "Target": "getCloudPcLaunchInfo"
           },
           {
@@ -23,7 +23,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "CloudPC.ReadWrite.All",
             "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.CloudPC.ReadWrite.All application permissions to start method.",
+            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta) method.",
             "Target": "start"
           },
           {
@@ -31,7 +31,7 @@
             "ApiChange": "Permission",
             "ChangedApiName": "CloudPC.ReadWrite.All",
             "ChangeType": "Addition",
-            "Description": "Added support for the CloudPC.CloudPC.ReadWrite.All application permissions to stop method.",
+            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: stop](https://learn.microsoft.com/en-us/graph/api/cloudpc-stop?view=graph-rest-beta) method.",
             "Target": "stop"
           }
         ],
