@@ -50,6 +50,8 @@
         "Version": "beta",
         "CreatedDateTime": "2024-09-30T21:56:29.8792314Z",
       },
+      {
+        "ChangeList": [
           {
             "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
             "ApiChange": "Member",
