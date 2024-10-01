@@ -81,8 +81,8 @@ Use the **passwordResetUri** property on [internalDomainFederation](/graph/api/r
 ### Security | Identities
 
 - [Generate](/graph/api/resources/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta&preserve-view=true) a new deployment access key.
-- [Get](/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta&preserve-view=true) the deployment access key associated with a Microsoft Defender for Identity.
-- [Get](/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta&preserve-view=true) the sensor deployment package URL and version.
+- [Get the deployment access key](/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta&preserve-view=true) associated with a Microsoft Defender for Identity.
+- [Get the sensor deployment package](/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta&preserve-view=true) URL and version.
 
 ### Teamwork and communications | Calls and online meetings
 
