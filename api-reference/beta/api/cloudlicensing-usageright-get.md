@@ -1,6 +1,6 @@
 ---
 title: "Get usageRight"
-description: "Get the properties and relationships of a usageRight object granted to a user."
+description: "Read the properties and relationships of a microsoft.graph.cloudLicensing.usageRight object."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-cloud-licensing"
@@ -13,26 +13,58 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a user.
+Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) for a user or group.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudlicensing_userusageright_get"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-userusageright-get-permissions.md)]
-
-## HTTP request
+### Get for a user or me
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /me/cloudLicensing/usageRights/{usageRightId}
+GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
+```
+
+<!-- {
+  "blockType": "permissions",
+  "name": "cloudlicensing-usageright-get-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
+
+
+### Get for a group
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
+```
+
+<!-- {
+  "blockType": "permissions",
+  "name": "cloudlicensing-usageright-get-2-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-2-permissions.md)]
+
+## HTTP request
+
+Get a usage right for a user or me.
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 GET /me/cloudLicensing/usageRights/{usageRightId}
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
@@ -57,12 +89,14 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get a usageRight for a user
+
+#### Request
 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudlicensing-userusageright-get-example",
+  "name": "cloudlicensing-usageright-get-example",
   "sampleKeys": ["48fbdf70-9e09-40df-9dbe-17af483ab113","i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
 }
 -->
@@ -70,7 +104,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,7 +120,52 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
-  "id": "1e373a1d-1f05-28cf-bfc0-ee0ecfd3db15",
+  "id": "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3",
+  "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuPartNumber": "Microsoft_365_Copilot",
+  "services": [
+    {
+      "@odata.type": "microsoft.graph.cloudLicensing.service",
+      "assignableTo": "user,group",
+      "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
+      "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    }
+  ]
+}
+```
+
+### Example 2: Get a usageRight for a group
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "cloudlicensing-usageright-get-2-example",
+  "sampleKeys": ["1003985b-dfc1-4f42-97d4-65f70a335ca8","j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/groups/1003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudLicensing.usageRight"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
+  "id": "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4",
   "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
   "skuPartNumber": "Microsoft_365_Copilot",
   "services": [
