@@ -37,7 +37,6 @@ GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
 
-
 ### Get for a group
 
 <!-- {
