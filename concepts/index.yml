@@ -22,9 +22,9 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-    - title: Build connectors for Copilot for Microsoft 365
+    - title: Build connectors for Microsoft 365 Copilot
       itemType: concept
-      url: /graph/connecting-external-content-experiences#copilot-for-microsoft-365
+      url: /graph/connecting-external-content-experiences#microsoft-365-copilot
     - title: NEW! Deploy with Bicep
       itemType: deploy
       url: /graph/templates/

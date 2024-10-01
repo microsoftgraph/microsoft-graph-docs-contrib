@@ -7,7 +7,7 @@ ms.localizationpriority: low
 
 # Use Microsoft Graph to augment Microsoft Search with custom data
 
-This article describes a common Microsoft Graph integration pattern for a business scenario that requires adding custom enterprise data to the Microsoft Search and Microsoft Copilot for Microsoft 365 experiences. The custom data is ingested into unstructured Microsoft 365 storage and added to various search indexes.
+This article describes a common Microsoft Graph integration pattern for a business scenario that requires adding custom enterprise data to the Microsoft Search and Microsoft 365 Copilot experiences. The custom data is ingested into unstructured Microsoft 365 storage and added to various search indexes.
 
 This non-interactive scenario has the following requirements:
 
