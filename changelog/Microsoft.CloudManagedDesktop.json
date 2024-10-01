@@ -3,6 +3,32 @@
       {
         "ChangeList": [
           {
+            "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
+            "ApiChange": "Member",
+            "ChangedApiName": "middleEast",
+            "ChangeType": "Addition",
+            "Description": "Added the `middleEast` member to the **cloudPcSupportedRegion** enumeration.",
+            "Target": "cloudPcSupportedRegion"
+          },
+          {
+            "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
+            "ApiChange": "Member",
+            "ChangedApiName": "mexico",
+            "ChangeType": "Addition",
+            "Description": "Added the `mexico` member to the **cloudPcSupportedRegion** enumeration.",
+            "Target": "cloudPcSupportedRegion"
+          }
+        ],
+        "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-30T10:03:56.9188489Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "f3292ad9-9f8b-4a45-8aca-4b59d7dcba36",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcAutopilotConfiguration",
