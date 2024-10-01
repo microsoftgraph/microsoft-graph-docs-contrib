@@ -98,8 +98,7 @@ The request specifies the optional request header, odata.top, returning 2 events
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedeltachats_1",
-  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
+  "name": "get_chatmessagedeltachats_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$top=2
@@ -206,8 +205,7 @@ The second request specifies the `@odata.nextLink` URL returned from the previou
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedeltachats_2",
-  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58"]
+  "name": "get_chatmessagedeltachats_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?&%24skiptoken=a-5fqdzHFr_L_cc7C0q1F-HCB8Z9SjwOsMN37XV5yfSnYgK4jVGVGEl25GFlxKWq0Wv6quL-5qcNg4nUnxzof6namZ_DM5no-hcL515cSrRGDoRLn38fZE1AXoDugSTOohOq3YRCYLqJbFGIoovMPTar32oLuoltHixme-Bf1lZtscv1wv5uu-MtkpYZIT0uDw-umQUK7mLNjMcyhNaifMIVTT-htmEOClLVwgcyWLR-sl9Qb73uTTtPXdFdMK6FDE4gpwvvKxvo2ChsW2c4eo77LDh6ZL_WQ8Luq00koQ6vHIrLBHPMUdOAxDxu-U7N7H4hsFn9aRDRdwRky7067A.V2a-J-86yXTd9SJMA4CHP6enI-Ab-bQzRgYujwsIwDo
@@ -314,8 +312,7 @@ The third request continues to use the latest `@odata.nextLink` returned from th
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedeltachats_3",
-  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4"]
+  "name": "get_chatmessagedeltachats_3"
 }-->
 ```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4
@@ -389,8 +386,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagedeltachats_4",
-  "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2", "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4"]
+  "name": "get_chatmessagedeltachats_4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4
