@@ -30,7 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)
+Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users).
+
+>[!NOTE]
+> - The following lesser-privileged permissions are also available for specific scenarios:
+>   - *User-Mail.ReadWrite.All* to read the basic user profile, and read and write the **otherMails** property.
+>   - *User-PasswordProfile.ReadWrite.All* to read and write the **passwordProfile** property; also allows to read the basic user profile.
+>   - *User-Phone.ReadWrite.All* to read and write the **businessPhones** and **mobilePhone** properties; also allows to read the basic user profile.
+>   - *User.EnableDisableAccount.All* to read and write the **accountEnabled** property; also allows to read the basic user profile.
 
 ## HTTP request
 

@@ -40,6 +40,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - To update the **customSecurityAttributes** property:
 >   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
 >   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+> - The following lesser-privileged permissions are also available for specific scenarios:
+>   - *User-Mail.ReadWrite.All* to update the **otherMails** property.
+>   - *User-PasswordProfile.ReadWrite.All* to update the **passwordProfile** property.
+>   - *User-Phone.ReadWrite.All* to update the **businessPhones** and **mobilePhone** properties.
+>   - *User.EnableDisableAccount.All* + *User.Read.All* to update the **accountEnabled** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +64,7 @@ PATCH /users/{id | userPrincipalName}
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. A Privileged Authentication Administrator assigned the _Directory.AccessAsUser.All_ delegated permission is the least privileged role that's allowed to update the **accountEnabled** status of all administrators in the tenant.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br/><li>*User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions required to update this property. <li> In delegated scenarios, *Privileged Authentication Administrator* is the least privileged role that's allowed to update this property for all administrators in the tenant. |
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult` and `Adult`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -87,7 +92,7 @@ PATCH /users/{id | userPrincipalName}
 |officeLocation|String|The office location in the user's place of business.|
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. The individual extension attributes aren't selectable or filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only. These extension attributes are also known as Exchange custom attributes 1-15.|
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Microsoft Entra user object. This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters can't be used when specifying this property.                            |
-|otherMails|String collection|A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
+|otherMails|String collection|A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. To update this property, pass in all the email addresses that you want the user to have; otherwise, existing values get overwritten by the values you specify.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two can be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This can't be used for federated users. <br><br> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. In application-only access, the calling app must be assigned the *User.ReadWrite.All* application permission and at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|

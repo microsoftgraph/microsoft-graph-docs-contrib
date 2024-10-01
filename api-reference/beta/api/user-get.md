@@ -37,6 +37,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - To read the **customSecurityAttributes** property:
 >   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
 >   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Read.All* permission.
+> - The following lesser-privileged permissions are also available for specific scenarios:
+>   - *User-Mail.ReadWrite.All* to read and write the **otherMails** property; also allows to read the basic user profile.
+>   - *User-PasswordProfile.ReadWrite.All* to read and write the **passwordProfile** property; also allows to read the basic user profile.
+>   - *User-Phone.ReadWrite.All* to read and write the **businessPhones** and **mobilePhone** properties; also allows to read the basic user profile.
+>   - *User.EnableDisableAccount.All* to read and write the **accountEnabled** property; also allows to read the basic user profile.
 
 ## HTTP request
 
