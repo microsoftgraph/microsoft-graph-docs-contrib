@@ -455,6 +455,8 @@
             "cloudPcBulkRestore",
             "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
+            "cloudPcBulkCreateSnapshot",
+            "cloudPcBulkSetReviewStatus",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
