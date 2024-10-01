@@ -1,5 +1,5 @@
 ---
-title: "Overview of discovered apps using the Microsoft Graph API"
+title: "Use the cloud app discovery API"
 description: "Learn how to programmatically query your discovered SaaS applications info using the Microsoft Graph API."
 author: "mravela"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: conceptualPageType
 ---
 
-# Overview of discovered apps using the Microsoft Graph API
+# Overview of cloud app discovery API
 
 Use the cloud app discovery API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The cloud app discovery Microsoft Graph API provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to query and analyze the risks associated with those apps. 
 
