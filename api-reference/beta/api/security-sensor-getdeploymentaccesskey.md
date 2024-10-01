@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/security/identities/sensors/getDeploymentAc
 
 ---
 
-
 ### Response
 
 The following example shows the response.
