@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats. By using delta query, you can get new or updated messages.
 
-> **Note:** Delta will only return messages within the last eight months. You can use [GET /users/{id | user-principal-name}/chats/getAllMessages](chats-getallmessages.md) to retrieve older messages.
+> **Note:** Delta only returns messages within the last eight months. You can use [GET /users/{id | user-principal-name}/chats/getAllMessages](chats-getallmessages.md) to retrieve older messages.
 
 Delta query supports both full synchronization that retrieves all the messages, and incremental synchronization that retrieves those messages that have been added or changed since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
 
@@ -114,92 +114,91 @@ The response includes two messages and a `@odata.nextLink` response header with 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.chatMessage)"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
-	"@odata.nextLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=a-5fqdzHFr_L_cc7C0q1F-HCB8Z9SjwOsMN37XV5yfSnYgK4jVGVGEl25GFlxKWq0Wv6quL-5qcNg4nUnxzof6namZ_DM5no-hcL515cSrRGDoRLn38fZE1AXoDugSTOohOq3YRCYLqJbFGIoovMPTar32oLuoltHixme-Bf1lZtscv1wv5uu-MtkpYZIT0uDw-umQUK7mLNjMcyhNaifDrdemGUDMaQ25_QuHukNbkXcxsKMJdJ288p9IkaSeEyJHX5a6T_kEdAmuffsdzOGY8mLbLc7VEsUL75rGdt2aiKkywaPHsT9bDGV7MBo7WM2g_kdPeLdRPSdSxxhkGpNA.y_WMscy7negz0HZPhgjH-YyzsdeXzr2UDSfNrdzC78A",
-	"value": [
-		{
-			"replyToId": null,
-			"etag": "1727366299993",
-			"messageType": "message",
-			"createdDateTime": "2024-09-26T15:58:19.993Z",
-			"lastModifiedDateTime": "2024-09-26T15:58:19.993Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1727366299993",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "<div>\n<div itemprop=\"copy-paste-block\">reply 9&nbsp;to new conv</div>\n</div>"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		},
-		{
-			"replyToId": null,
-			"etag": "1727216579286",
-			"messageType": "message",
-			"createdDateTime": "2024-09-24T22:22:59.286Z",
-			"lastModifiedDateTime": "2024-09-24T22:22:59.286Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:2a247d5dadc24f408d009e4ae84502cf@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1727216579286",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "<div>\n<div itemprop=\"copy-paste-block\">reply 10 to new conv</div>\n</div>"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		}
-	]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=a-5fqdzHFr_L_cc7C0q1F-HCB8Z9SjwOsMN37XV5yfSnYgK4jVGVGEl25GFlxKWq0Wv6quL-5qcNg4nUnxzof6namZ_DM5no-hcL515cSrRGDoRLn38fZE1AXoDugSTOohOq3YRCYLqJbFGIoovMPTar32oLuoltHixme-Bf1lZtscv1wv5uu-MtkpYZIT0uDw-umQUK7mLNjMcyhNaifDrdemGUDMaQ25_QuHukNbkXcxsKMJdJ288p9IkaSeEyJHX5a6T_kEdAmuffsdzOGY8mLbLc7VEsUL75rGdt2aiKkywaPHsT9bDGV7MBo7WM2g_kdPeLdRPSdSxxhkGpNA.y_WMscy7negz0HZPhgjH-YyzsdeXzr2UDSfNrdzC78A",
+  "value": [
+    {
+      "replyToId": null,
+      "etag": "1727366299993",
+      "messageType": "message",
+      "createdDateTime": "2024-09-26T15:58:19.993Z",
+      "lastModifiedDateTime": "2024-09-26T15:58:19.993Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1727366299993",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div>\n<div itemprop=\"copy-paste-block\">reply 9&nbsp;to new conv</div>\n</div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    },
+    {
+      "replyToId": null,
+      "etag": "1727216579286",
+      "messageType": "message",
+      "createdDateTime": "2024-09-24T22:22:59.286Z",
+      "lastModifiedDateTime": "2024-09-24T22:22:59.286Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:2a247d5dadc24f408d009e4ae84502cf@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1727216579286",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div>\n<div itemprop=\"copy-paste-block\">reply 10 to new conv</div>\n</div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    }
+  ]
 }
 ```
 
@@ -231,85 +230,84 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
-	"@odata.nextLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=yJQeoV00BlfhYsCMsrn1GnNz7v5S39NShp1U4rzLZnPsraIATwnnsvbdv52hvKp7AAG-Bcwdu7dA7UweXHvGYQ2M5eysh-cNz6EZICZp7kM9HtmQHu7JU-_sX5S1edvEQxyAgm1R2HXk4R9_TWn9ZAu1BRQ-elS9hg0f8BlwKLCIluuSPS2ZuNVnQTOOYMMpmzKGX4wVVQUv0UlrIFZIPWTeriNpg5sJFd91n2GHSMnS7WaRTh3NSmvJE08ww-2CjGml2RjPyHfLHSqywuNt5BGNVj_vqsLbjetdDIYZFa_yaQqV_Bp5DaWM_nXD8RjVULH7H4ATXoUiG3Etsd_Nhd_GIYoxV6x2_rmbh928WPGSsenCOa352tyFxmuyTH0ozDmU4onVbGnOBQEYJDKZjuIeNVW-E19VHthjZ9GvYGE.NHJkfAbRu3Qoozl699AinriiHvWofLVnWkB5wEJmZlk"
-    "value": [
-        {
-            {
-			"replyToId": null,
-			"etag": "1726706286844",
-			"messageType": "message",
-			"createdDateTime": "2024-09-19T00:38:06.844Z",
-			"lastModifiedDateTime": "2024-09-19T00:38:06.844Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1726706286844",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "<p>Not one message, but several combined together to give you the full picture</p>"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		},
-		{
-			"replyToId": null,
-			"etag": "1726706276201",
-			"messageType": "message",
-			"createdDateTime": "2024-09-19T00:37:56.201Z",
-			"lastModifiedDateTime": "2024-09-19T00:37:56.201Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1726706276201",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "<p>Dive into the possibilities of incorporating context into ML evaluations by looking at entire conversations</p>"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		}
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=yJQeoV00BlfhYsCMsrn1GnNz7v5S39NShp1U4rzLZnPsraIATwnnsvbdv52hvKp7AAG-Bcwdu7dA7UweXHvGYQ2M5eysh-cNz6EZICZp7kM9HtmQHu7JU-_sX5S1edvEQxyAgm1R2HXk4R9_TWn9ZAu1BRQ-elS9hg0f8BlwKLCIluuSPS2ZuNVnQTOOYMMpmzKGX4wVVQUv0UlrIFZIPWTeriNpg5sJFd91n2GHSMnS7WaRTh3NSmvJE08ww-2CjGml2RjPyHfLHSqywuNt5BGNVj_vqsLbjetdDIYZFa_yaQqV_Bp5DaWM_nXD8RjVULH7H4ATXoUiG3Etsd_Nhd_GIYoxV6x2_rmbh928WPGSsenCOa352tyFxmuyTH0ozDmU4onVbGnOBQEYJDKZjuIeNVW-E19VHthjZ9GvYGE.NHJkfAbRu3Qoozl699AinriiHvWofLVnWkB5wEJmZlk",
+  "value": [
+    {
+      "replyToId": null,
+      "etag": "1726706286844",
+      "messageType": "message",
+      "createdDateTime": "2024-09-19T00:38:06.844Z",
+      "lastModifiedDateTime": "2024-09-19T00:38:06.844Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1726706286844",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Not one message, but several combined together to give you the full picture</p>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    },
+    {
+      "replyToId": null,
+      "etag": "1726706276201",
+      "messageType": "message",
+      "createdDateTime": "2024-09-19T00:37:56.201Z",
+      "lastModifiedDateTime": "2024-09-19T00:37:56.201Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1726706276201",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Dive into the possibilities of incorporating context into ML evaluations by looking at entire conversations</p>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    }
+  ]
 }
 ```
 
@@ -326,7 +324,6 @@ The third request continues to use the latest `@odata.nextLink` returned from th
 GET  https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$skiptoken=8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4
 ```
 
-
 #### Third request response
 
 The third response returns the only remaining messages and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages have been read. Save and use the `@odata.deltaLink` URL to query for any new messages starting from this point onwards.
@@ -334,55 +331,54 @@ The third response returns the only remaining messages and a `@odata.deltaLink` 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.chatMessage)"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4",
-    "value": [
-        {
-			"replyToId": null,
-			"etag": "1726706340932",
-			"messageType": "message",
-			"createdDateTime": "2024-09-19T00:39:00.932Z",
-			"lastModifiedDateTime": "2024-09-19T00:39:00.932Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1726706340932",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "<p>let's get started!</p>"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		}
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.chatMessage)",
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4",
+  "value": [
+    {
+      "replyToId": null,
+      "etag": "1726706340932",
+      "messageType": "message",
+      "createdDateTime": "2024-09-19T00:39:00.932Z",
+      "lastModifiedDateTime": "2024-09-19T00:39:00.932Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1726706340932",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>let's get started!</p>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    }
+  ]
 }
 ```
 
@@ -391,6 +387,8 @@ Content-type: application/json
 Using the `@odata.deltaLink` from the last request in the last round, you can get only those messages that changed (by being added, or updated) since then. Your request should look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -403,59 +401,60 @@ GET https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.chatMessage)"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_yjz2nsMoh1gXNtXii7s78HapCi5woifXqwXlVNxICh8wUUnvE2gExsa8eZ2Vy_ch5rVIhm067_1mUPML3iYUVyg.3o0rhgaBUduuxOr98An5pjBDP5JjKUiVWku3flSiOsk",
-    "value": [
-        {
-			"replyToId": null,
-			"etag": "1727366299999",
-			"messageType": "message",
-			"createdDateTime": "2024-09-26T15:58:19.993Z",
-			"lastModifiedDateTime": "2024-09-26T17:58:19.993Z",
-			"lastEditedDateTime": null,
-			"deletedDateTime": null,
-			"subject": "",
-			"summary": null,
-			"chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
-			"importance": "normal",
-			"locale": "en-us",
-			"webUrl": null,
-			"channelIdentity": null,
-			"policyViolation": null,
-			"eventDetail": null,
-			"id": "1727366299999",
-			"from": {
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.teamworkUserIdentity",
-					"id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
-					"displayName": "CFCC5",
-					"userIdentityType": "aadUser",
-					"tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
-				}
-			},
-			"body": {
-				"contentType": "html",
-				"content": "newly added content"
-			},
-			"attachments": [],
-			"mentions": [],
-			"reactions": []
-		},
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa/chats/getAllMessages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_yjz2nsMoh1gXNtXii7s78HapCi5woifXqwXlVNxICh8wUUnvE2gExsa8eZ2Vy_ch5rVIhm067_1mUPML3iYUVyg.3o0rhgaBUduuxOr98An5pjBDP5JjKUiVWku3flSiOsk",
+  "value": [
+    {
+      "replyToId": null,
+      "etag": "1727366299999",
+      "messageType": "message",
+      "createdDateTime": "2024-09-26T15:58:19.993Z",
+      "lastModifiedDateTime": "2024-09-26T17:58:19.993Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": "",
+      "summary": null,
+      "chatId": "19:65a44130a0f249359d77858287ed39f0@thread.v2",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": null,
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "id": "1727366299999",
+      "from": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "43383bf2-f7ab-4ba3-bf5e-12d071db189b",
+          "displayName": "CFCC5",
+          "userIdentityType": "aadUser",
+          "tenantId": "f54e6700-e876-410b-8996-d6447d64098a"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "newly added content"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": []
+    }
+  ]
 }
 ```
 
