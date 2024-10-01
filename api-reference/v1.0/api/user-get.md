@@ -34,7 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - To read the **employeeLeaveDateTime** property:
 >   - The calling app must be assigned the *User-LifeCycleInfo.Read.All* permission.
 >   - In delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*.
-> - To read the **customSecurityAttributes** property, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
+> - To read the **customSecurityAttributes** property:
+>   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
+>   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Read.All* permission.
 
 ## HTTP request
 For a specific user:

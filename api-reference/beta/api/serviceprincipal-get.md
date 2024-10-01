@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 > - To read the **customSecurityAttributes** property:
 >   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* delegated permission.
->   - In app-only scenarios, the app must be granted the *CustomSecAttributeAssignment.Reade.All* application permission.
+>   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Reade.All* application permission.
 
 
 ## HTTP request
