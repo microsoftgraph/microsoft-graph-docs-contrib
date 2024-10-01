@@ -84,10 +84,10 @@ items:
       href: ../../api/group-list-calendarview.md
   - name: Cloud licensing
     items:
-    - name: List group usageRights
-      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: Get group usageRight
-      href: ../../api/cloudlicensing-groupcloudlicensing-get-usageright.md
+    - name: List usageRights
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get usageRight
+      href: ../../api/cloudlicensing-usageright-get.md
   - name: Conversations
     items:
     - name: List conversations

@@ -70,8 +70,8 @@ This resource supports:
 | [Delete event](../api/group-delete-event.md) | None | Delete event object. |
 | [List calendar view](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
 | **Cloud licensing** |  |  |
-|[List group usageRights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
-|[Get group usageRight](../api/cloudlicensing-groupcloudlicensing-get-usageright.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
+|[List usageRights](../api/cloudlicensing-usercloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
+|[Get usageRight](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 | **Conversations** |  |  |
 | [List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection | Get a conversation object collection. |
 | [Create conversation](../api/group-post-conversations.md) | [conversation](conversation.md) | Create a new conversation by posting to the conversations collection. |
