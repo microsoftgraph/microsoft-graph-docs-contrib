@@ -42,3 +42,7 @@ The following JSON representation shows the resource type.
   "requireClientServicePrincipal": "Boolean"
 }
 ```
+
+## Related content
+
+- [How-to: Manage application authenticationBehaviors](/graph/applications-authenticationbehaviors)
