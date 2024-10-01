@@ -98,8 +98,6 @@ In this example, the chat messages are being synchronized for the first time, so
 
 The request specifies the optional request header, odata.top, returning 2 events at a time.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_1",
@@ -209,8 +207,6 @@ Content-type: application/json
 
 The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_2",
@@ -321,7 +317,6 @@ Content-type: application/json
 
 The third request continues to use the latest `@odata.nextLink` returned from the last sync request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_3",
@@ -397,8 +392,6 @@ Using the `@odata.deltaLink` from the last request in the last round, you can ge
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachats_4",
