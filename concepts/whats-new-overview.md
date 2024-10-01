@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Users
 
-Changed the following on-prem synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
+Changed the following on-prem synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
 - onPremisesDistinguishedName
 - onPremisesDomainName
 - onPremisesSamAccountName
