@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats. By using delta query, you can get new or updated messages.
 
-> **Note:** Delta will only return messages within the last eight months. You can use [GET /users/{id | user-principal-name}/chats/getAllMessages](chats-getallmessages.md) to retrieve older messages.
+> **Note:** Delta only returns messages within the last eight months. You can use [GET /users/{id | user-principal-name}/chats/getAllMessages](chats-getallmessages.md) to retrieve older messages.
 
 Delta query supports both full synchronization that retrieves all the messages, and incremental synchronization that retrieves those messages that have been added or changed since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
 
