@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents Kubernetes service entity.
+Represents a IoT Device that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](./security-alertevidence.md).
 

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents Kubernetes service entity.
+Represents a NIC (v2) entity that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](./security-alertevidence.md).
 
@@ -28,6 +28,11 @@ None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.nicEvidence"
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.nicEvidence",

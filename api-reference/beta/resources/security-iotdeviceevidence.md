@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Kubernetes service entity.
+Represents a IoT Device that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](./security-alertevidence.md).
 
