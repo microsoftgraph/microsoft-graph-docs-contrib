@@ -93,7 +93,7 @@ The following JSON representation shows the resource type.
   },
   "nics": [
       {
-      "@odata.type": "microsoft.graph.security.NicEvidence"
+      "@odata.type": "microsoft.graph.security.nicEvidence"
     },
   ],
   "protocols": [

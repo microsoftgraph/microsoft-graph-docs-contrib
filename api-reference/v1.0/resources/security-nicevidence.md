@@ -1,5 +1,5 @@
 ---
-title: "NicEvidence resource type"
+title: "nicEvidence resource type"
 description: "Represents a NIC (v2) entity that is reported as part of the security detection alert."
 author: "hareldamti"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# NICEvidence resource type
+# nicEvidence resource type
 
 Namespace: microsoft.graph.security
 
