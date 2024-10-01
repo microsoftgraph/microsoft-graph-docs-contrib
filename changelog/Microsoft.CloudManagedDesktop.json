@@ -31,11 +31,9 @@
             "ApiChange": "Method",
             "ChangedApiName": "bulksetcloudpcreviewstatus",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the [bulksetcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkSetReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkSetReviewStatus?view=graph-rest-beta) resource.",
+            "Description": "Deprecated the [bulkSetCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkSetReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkSetReviewStatus?view=graph-rest-beta) resource.",
             "Target": "cloudPc"
           },
-          {
-            "ChangeList": [
           {
             "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
             "ApiChange": "Method",
