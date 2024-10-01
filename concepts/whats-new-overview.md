@@ -16,6 +16,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## October 2024: New and generally available
+
+Published the following lesser privileged permissions for managing specific scenarios on the user object:
+
+| Permission                         | Comments |
+|------------------------------------|----------|
+| User-Mail.ReadWrite.All            |          |
+| User-PasswordProfile.ReadWrite.All |          |
+| User-Phone.ReadWrite.All           |          |
+| User-Phone.ReadWrite.All           |          |
+| User.EnableDisableAccount.All      |          |
+| User.DeleteRestore.All             |          |
+
 ## September 2024: New and generally available
 
 ### Change notifications
