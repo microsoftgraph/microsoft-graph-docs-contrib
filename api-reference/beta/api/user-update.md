@@ -45,6 +45,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >   - *User-PasswordProfile.ReadWrite.All* to update the **passwordProfile** property.
 >   - *User-Phone.ReadWrite.All* to update the **businessPhones** and **mobilePhone** properties.
 >   - *User.EnableDisableAccount.All* + *User.Read.All* to update the **accountEnabled** property.
+>   - *User.ManageIdentities.All* to update the **identities** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
