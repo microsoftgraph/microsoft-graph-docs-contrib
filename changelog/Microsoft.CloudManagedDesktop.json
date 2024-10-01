@@ -35,6 +35,8 @@
             "Target": "cloudPc"
           },
           {
+            "ChangeList": [
+          {
             "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
             "ApiChange": "Method",
             "ChangedApiName": "list_cloudpcsnapshot",
