@@ -59,6 +59,7 @@ To associate a domain with a tenant:
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property isn't set, a default value of 90 days is used. |
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 |supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values that you can add or remove using the API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
+|rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 
 ## Relationships
 
