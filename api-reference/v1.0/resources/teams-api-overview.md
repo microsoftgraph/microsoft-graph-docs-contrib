@@ -17,14 +17,14 @@ The following table lists common use cases for Microsoft Teams APIs in Microsoft
 
 | Use cases | REST resources | See also |
 :-----------------|:----------|:--------|
-| Create and manage teams, groups and channels | [team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) | [create team](../api/team-put-teams.md), [list teams](../api/user-list-joinedteams.md), [create channel](../api/channel-post.md) |
-| Add tabs, manage or install apps in the Microsoft Teams app catalog | [teamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) | [create teamsTab](../api/channel-post-tabs.md), [list teamsTab](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md) |
+| Create and manage teams, groups, and channels | [team](../resources/team.md), [channel](../resources/channel.md), [group](../resources/group.md) | [create team](../api/team-put-teams.md), [list teams](../api/user-list-joinedteams.md), [create channel](../api/channel-post.md) |
+| Add tabs, manage, or install apps in the Microsoft Teams app catalog | [teamsTab](../resources/teamstab.md), [teamsAppInstallation](../resources/teamsappinstallation.md) | [create teamsTab](../api/channel-post-tabs.md), [list teamsTab](../api/channel-list-tabs.md), [list apps](../api/appcatalogs-list-teamsapps.md) |
 | Create channels and chats to send and receive chat messages | [channel](../resources/channel.md), [chat](../resources/chat.md), [chatMessage](../resources/chatmessage.md) | [create channel](../api/channel-post.md), [list channel](../api/channel-list.md), [send chatMessage](../api/chatmessage-post.md) |
 | Use tags to classify users or groups based on common attributes within a team | [teamworkTag](../resources/teamworktag.md), [teamworkTagMember](../resources/teamworktagmember.md) | [list teamworkTag](../api/teamworktag-list.md), [create teamworkTag](../api/teamworktag-post.md) |
 | Create and receive calls, call records or retrieve meeting coordinates | [call](../resources/call.md), [callRecords](../resources/callrecords-api-overview.md) |  [answer](../api/call-answer.md), [invite participants](../api/participant-invite.md) |
 | Connect bots to calls and implement interactive voice response (IVR) | [call](../resources/call.md) | [IVR scenarios](#ivr-scenarios) |
 | Create and retrieve online meetings or check users presence and activity | [onlineMeetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) | [create onlineMeetings](../api/application-post-onlinemeetings.md), [meetingAttendanceReport](../resources/meetingattendancereport.md)
-| Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md) | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) |
+| Create and manage workforce integration with shifts, schedules, time cards, or time off in your organization | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md) | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) |
 | Use the employee learning API to integrate with Viva Learning | [employee learning](../resources/viva-learning-api-overview.md), [learningProvider](../resources/learningprovider.md), [learningContent](../resources/learningcontent.md) | [list learningProviders](../api/employeeexperience-list-learningproviders.md), [list learningContents](../api/learningprovider-list-learningcontents.md) |
 
 ### IVR scenarios
@@ -88,8 +88,8 @@ When polling for new messages, you must specify a date range where supported. Fo
 
 Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
 You're allowed to GET the same resource multiple times a day, as long as it's not polling. 
-For example, it is okay to GET /me/joinedTeams every time the user visits/refreshes your web page, 
-but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
+For example, it's okay to GET /me/joinedTeams every time the user visits/refreshes your web page, 
+but it isn't okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
 
 Apps that don't follow these polling requirements will be considered in violation of the
 [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
