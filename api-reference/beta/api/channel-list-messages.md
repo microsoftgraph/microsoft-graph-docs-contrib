@@ -50,7 +50,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$top](/graph/query-parameters#top-parameter)| Apply `$top` to specify the number of channel messages returned per page in the response. The default page size is 20 messages. You can extend up to 50 channel messages per page. |
 | [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1,000 replies. For an operation that expands channel messages with more than 1,000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
 
-The other [OData query parameters](/graph/query-parameters) aren't currently supported.d
+The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request headers
 
