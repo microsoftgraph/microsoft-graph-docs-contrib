@@ -95,7 +95,7 @@ See also what you do in the [next round to get more messages](#example-2-next-ro
 
 #### Initial request
 
-In this example, the chat messages synchronize for the first timeand the initial sync request doesn't include any state token.
+In this example, the chat messages synchronize for the first time and the initial sync request doesn't include any state token.
 
 The request specifies the optional `$top` query parameter that returns 2 events at a time.
 
