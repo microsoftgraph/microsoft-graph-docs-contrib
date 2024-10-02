@@ -49,7 +49,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 |Property|Type|Description|
 |:---|:---|:---|
-|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The virtual event external registration information. Optional. |
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| Contains external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
@@ -61,7 +61,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 |firstName|String|The registrant's first name. Required. |
 |lastName|String|The registrant's last name. Required. |
 |email|String|The registrant's email address. Required. |
-|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The virtual event external registration information. Optional. |
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| Contains external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
