@@ -17,7 +17,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 Some GET queries against Microsoft Graph return multiple pages of data either due to server-side paging or client-side paging. Paging data helps improve the performance of your app and the response time of Microsoft Graph.
 
 > [!NOTE]
-> If you're interested in paging in Microsoft Graph SDKs, you might be interested in [Page through a collection using the Microsoft Graph SDKs](/graph/sdks/paging).
+> If you're looking for information on paging in Microsoft Graph SDKs, you might be interested in [Page through a collection using the Microsoft Graph SDKs](/graph/sdks/paging).
 
 Learn more about pagination through the following video.
 
