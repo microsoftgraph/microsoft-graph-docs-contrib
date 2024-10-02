@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppInfo resource type"
-description: Represents the resources available for discovered app risk attributes.
+description: Contains information about the risk attributes of a discovered cloud app.
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -9,14 +9,14 @@ doc_type: resourcePageType
 
 # discoveredCloudAppInfo resource type
 
-Represents the resources available for discovered app risk attributes.
+Contains information about the risk attributes of a discovered cloud app.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Read the properties and relationships of a discovered cloud app.|
+|[Get](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Get an overview of discovered cloud apps usage.|
 
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDevice resource type"
-description: "Represents the resources available for a discovered cloud app device."
+description: "Represents a device associated with a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the resources available for a discovered cloud app device.
+Represents a device associated with a discovered cloud app.
 
 ## Methods
 |Method|Return type|Description|
