@@ -11,12 +11,7 @@ using Microsoft.Graph.DirectoryNamespace.DeletedItems.Item.Restore;
 
 var requestBody = new RestorePostRequestBody
 {
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"autoReconcileProxyConflict" , true
-		},
-	},
+	AutoReconcileProxyConflict = true,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -2,6 +2,7 @@
 title: "onPremisesCurrentExportData resource type"
 description: "Data for the current export run."
 author: "dkershaw10"
+ms.reviewer: adam.lassman, daradwan
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

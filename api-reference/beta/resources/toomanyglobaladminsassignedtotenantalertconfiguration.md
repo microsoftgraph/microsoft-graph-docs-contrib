@@ -20,6 +20,11 @@ Triggered if two different criteria are met, and you can configure both of them.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

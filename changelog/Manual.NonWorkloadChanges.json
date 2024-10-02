@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "bf84f9b9-7809-48b4-aeeb-4db380be2b4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "changeNotification",
+          "ChangeType": "Deprecation",
+          "Description": "Authenticating Event Hubs by using shared access signatures (SAS) will be deprecated soon. To subscribe to [Microsoft Graph change notifications via Azure Event Hubs](https://learn.microsoft.com/en-us/graph/change-notifications-delivery-event-hubs), we recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](https://learn.microsoft.com/en-us/graph/change-notifications-delivery-event-hubs#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).",
+          "Target": "changeNotification"
+        }
+      ],
+      "Id": "bf84f9b9-7809-48b4-aeeb-4db380be2b4b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-19T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
           "ApiChange": "Resource",
           "ChangedApiName": "application",
