@@ -1,6 +1,6 @@
 ---
 title: "List discoveredCloudAppUsers"
-description: "Get a list of users for the discovered cloud apps."
+description: "Get a list of users who accessed a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

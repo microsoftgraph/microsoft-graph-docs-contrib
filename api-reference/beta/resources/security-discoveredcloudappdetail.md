@@ -17,9 +17,9 @@ Represents the discovered cloud apps.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/security-discoveredcloudappdetail-get.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|Read the properties and relationships of a discovered cloud app.|
-|[Get appInfo](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) |Get the discoveredCloudAppInfo resource from the appInfo navigation property.|
-|[List ipAddresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property.|
-|[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get the discoveredCloudAppUser resources from the users navigation property.|
+|[Get discovered app info](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) |Get the [details](https://github.com/microsoftgraph/microsoft-graph-docs/pull/resources/security-discoveredcloudappinfo.md) of the security, legal, and compliance risk attributes of the discovered cloud apps.|
+|[List IP addresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the list of IP addresses associated with a discovered cloud app.|
+|[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of users who accessed a discovered cloud app.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Represents the discovered cloud apps.
 |ipAddressCount|Int64|The IP address.|
 |lastSeenDateTime|DateTimeOffset|The last seen date.|
 |riskScore|Int64|The app's risk score.|
-|tags|String collection|The app's tag name. Possible values include `Unsanctioned`,`Sanctioned`,`Monitored`, or a custom created tag.|
+|tags|String collection|The tags applied to an app. Possible values include `Unsanctioned`,`Sanctioned`,`Monitored`, or a custom values.|
 |transactionCount|Int64|The app transaction count.|
 |uploadNetworkTrafficInBytes|Int64|The app upload traffic size, in bytes.|
 |userCount|Int64|The count of users using the app.|
