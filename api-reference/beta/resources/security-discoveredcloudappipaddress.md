@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the resource available for IP addresses accessing a discovered cloud app.
+Represents the IP address associated with a discovered cloud app.
 
 ## Methods
 |Method|Return type|Description|
