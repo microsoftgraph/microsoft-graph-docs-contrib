@@ -2295,10 +2295,10 @@
         {
           "Id": "08e437e5-63dc-4204-8f5c-45b140ae966c",
           "ApiChange": "Method",
-          "ChangedApiName": "chatMessage: delta",
+          "ChangedApiName": "delta",
           "ChangeType": "Change",
-          "Description": "Changed methods to reflect chatMessage fetched from chats/getAllMessagesta API",
-          "Target": "chat"
+          "Description": "Updated the [chatMessage: delta](https://learn.microsoft.com/en-us/graph/api/chatmessage-delta?view=graph-rest-beta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant.",
+          "Target": "chatMessage"
         }
       ],
       "Id": "08e437e5-63dc-4204-8f5c-45b140ae966c",
@@ -2306,17 +2306,17 @@
       "Version": "beta",
       "CreatedDateTime": "2024-10-02T16:50:11.579880Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
         {
           "Id": "3672a2e8-5242-4dd3-8233-4d080b97d376",
           "ApiChange": "Method",
-          "ChangedApiName": "chatMessage: delta",
+          "ChangedApiName": "delta",
           "ChangeType": "Change",
-          "Description": "Changed methods to reflect chatMessage fetched from chats/getAllMessagesta API",
-          "Target": "chat"
+          "Description": "Updated the [chatMessage: delta](https://learn.microsoft.com/en-us/graph/api/chatmessage-delta?view=graph-rest-1.0) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant.",
+          "Target": "chatMessage"
         }
       ],
       "Id": "3672a2e8-5242-4dd3-8233-4d080b97d376",
@@ -2324,7 +2324,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2024-10-02T16:52:11.579880Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
     }
   ]
 }
