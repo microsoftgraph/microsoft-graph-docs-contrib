@@ -1,6 +1,6 @@
 ---
 title: "Get usageRight"
-description: "Read the properties and relationships of a usageRight object."
+description: "Read the properties and relationships of a usageRight for a user or group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-cloud-licensing"
