@@ -63,6 +63,37 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing
+  displayName: Cloud licensing, Microsoft cloud licensing
+  items:
+  - name: Group cloud licensing
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: List usageRights
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get usageRight
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: User cloud licensing
+    items:
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
+    - name: List usageRights
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get usageRight
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: Usage right
+      items:
+      - name: Usage right
+        href: ../../resources/cloudlicensing-usageright.md
+      - name: List usageRights
+        href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+      - name: Get usageRight
+        href: ../../api/cloudlicensing-usageright-get.md
 - name: Cloud PC
   items:
   - name: Overview
