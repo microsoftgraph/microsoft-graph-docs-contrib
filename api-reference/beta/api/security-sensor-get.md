@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4
 
 ---
 
-
 ### Response
 
 The following example shows the response.
