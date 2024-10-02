@@ -1,4 +1,4 @@
-e---
+---
 title: "chats-getAllMessages: delta"
 description: "Get the list of messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats."
 ms.localizationpriority: high
