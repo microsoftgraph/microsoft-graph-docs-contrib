@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents the resources available for cloud apps discovered on onboarded endpoints or a stream.
+Represents information about cloud apps discovered on an endpoint or a stream.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -19,7 +19,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List uploaded streams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get a list of cloudAppDiscoveryReport objects and their properties.|
-|[Get aggregated app details](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|Add the appropriate method. Currently supports the Get method only.|
+|[Get aggregated app details](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|Get the aggregated details of discovered apps by providing the period. Currently, it only supports the Get method.|
 
 ## Properties
 |Property|Type|Description|
