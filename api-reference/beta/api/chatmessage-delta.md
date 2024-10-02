@@ -91,7 +91,7 @@ The following example shows a series of three requests to synchronize the messag
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you can do in the [next round to get more messages](#example-2-next-round-to-get-more-messages).
+See also what you can do in the [next round to get more messages](#example-2-the-next-round-to-get-more-messages).
 
 #### Initial request
 
