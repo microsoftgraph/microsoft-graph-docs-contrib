@@ -23,7 +23,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
 |[List messages in channel](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
-|[Get delta of messages in channel](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
 |[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
 |[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
@@ -46,6 +45,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get incremental chat messages for a user. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
