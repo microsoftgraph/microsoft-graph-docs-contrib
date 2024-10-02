@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Represents a drive protection rule associated with a OneDrive for Buisness protection policy."
+description: "Represents a drive protection rule associated with a OneDrive for Business protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -36,8 +36,8 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |createdBy|[identitySet](../resources/identityset.md) entitySet|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |driveExpression|String|Contains a drive expression. For examples, see [driveExpression examples](../resources/driveprotectionrule.md#driveexpression-examples).|
-|error|[publicError](../resources/publicerror.md)|If the operation fails, contains the details of the error.|
-|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list.|
+|error|[publicError](../resources/publicerror.md)|If the operation fails, this property contains the details of the error.|
+|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification to this rule.|
 |status|[protectionRuleStatus](../resources/driveprotectionrule.md#protectionrulestatus-values )|The status of the protection rule. The following are the possible values: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
@@ -57,9 +57,9 @@ The following table shows possible formats for the drive expression.
 |:------|:------------|
 |draft | The initial status of protection rule upon creation is draft.|
 |active | The status of the protection rule upon using the `/run` API.|
-|completed | The status of the protection rule after it is successfully applied to the corresponding policy.|
-|completedWithErrors | The status of the protection rule after it is applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|completed | The status of the protection rule after it's successfully applied to the corresponding policy.|
+|completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
