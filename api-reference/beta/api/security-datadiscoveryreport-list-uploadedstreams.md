@@ -1,5 +1,5 @@
 ---
-title: "List cloudAppDiscoveryReport"
+title: "List uploadedstreams"
 description: "Get a list of the cloud apps discovery reports."
 author: "nechamam"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List cloudAppDiscoveryReport
+# List uploadedstreams
 
 Namespace: microsoft.graph.security
 
