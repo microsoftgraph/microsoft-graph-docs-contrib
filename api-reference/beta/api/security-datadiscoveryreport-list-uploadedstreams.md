@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a list of discov
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_cloudappdiscoveryreport"
+  "name": "list_uploadedstreams"
 }
 -->
 ``` http
