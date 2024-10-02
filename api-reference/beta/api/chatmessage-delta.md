@@ -323,7 +323,7 @@ GET  https://graph.microsoft.com/beta/users/5ed12dd6-24f8-4777-be3d-0d234e06cefa
 
 #### Third request response
 
-The third response returns the only remaining messages and an **@odata.deltaLink** response header with a `deltaToken` which indicates that all messages are returned. Save and use the **@odata.deltaLink** URL to query for any new messages that is added or changed from this point onwards.
+The third response returns the only remaining messages and an **@odata.deltaLink** response header with a `deltaToken` which indicates that all messages are returned. Save and use the **@odata.deltaLink** URL to query for any new messages added or changed from this point onwards.
 
 <!-- {
   "blockType": "response",
