@@ -1,6 +1,6 @@
 ---
 title: "Get usageRight"
-description: "Read the properties and relationships of a microsoft.graph.cloudLicensing.usageRight object."
+description: "Read the properties and relationships of a usageRight object."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-cloud-licensing"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) for a user or group.
+Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md) or [group](../resources/group.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Get for a user or me
+### For a user
+
+To get a **usageRight** for a user with delegated (`/me`) and app (`/users/{userId}`) permission:
 
 <!-- {
   "blockType": "ignored"
@@ -37,7 +39,9 @@ GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
 
-### Get for a group
+### For a group
+
+To get a **usageRight** for a group with either delegated or app permission:
 
 <!-- {
   "blockType": "ignored"
@@ -55,8 +59,6 @@ GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 [!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-2-permissions.md)]
 
 ## HTTP request
-
-Get a usage right for a user or me.
 
 <!-- {
   "blockType": "ignored"
@@ -89,6 +91,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Example 1: Get a usageRight for a user
+
+The following example shows how to get a usage right for a user.
 
 #### Request
 
@@ -134,6 +138,8 @@ Content-Type: application/json
 ```
 
 ### Example 2: Get a usageRight for a group
+
+The following example shows how to get a usage right for a group.
 
 #### Request
 
