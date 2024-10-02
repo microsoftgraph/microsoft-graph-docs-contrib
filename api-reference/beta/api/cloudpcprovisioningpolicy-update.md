@@ -51,6 +51,7 @@ The following table shows the properties that can be updated for the [cloudPcPro
 |Property|Type|Description|
 |:---|:---|:---|
 |autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|The specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC. The settings take effect when the tenant enrolls in Windows Autopatch and the **managedType** of the **microsoftManagedDesktop** property is set as `starterManaged`.|
+|autopilotConfiguration|[cloudPcAutopilotConfiguration](../resources/cloudpcautopilotconfiguration.md)|The specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy. |
 |domainJoinConfigurations|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md) collection|Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID.|
@@ -82,7 +83,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff
 Content-Type: application/json
 
 {
@@ -105,6 +106,11 @@ Content-Type: application/json
   },
   "autopatch": {
     "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+  },
+  "autopilotConfiguration": {
+    "devicePreparationProfileId": "59e5d3d2-ec68-4bfe-9693-27975b318990",
+    "applicationTimeoutInMinutes": 30,
+    "onFailureDeviceAccessDenied": false
   }
 }
 ```
@@ -149,7 +155,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": true
 }
 -->
 ``` http
