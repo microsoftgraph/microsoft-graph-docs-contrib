@@ -45,7 +45,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
-|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get incremental chat messages for a user. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get the list of incremental messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
