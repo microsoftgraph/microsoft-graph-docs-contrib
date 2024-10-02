@@ -84,7 +84,7 @@ If your app polls to see whether a resource has changed, you can only do that on
 If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
 
-When polling for new messages, you must specify a date range where supported. For more information, see [get incremental chat messages for a user](../api/getmessage-delta.md).
+When polling for new messages, you must specify a date range where supported. For more information, see [get incremental chat messages for a user](../api/chatmessage-delta.md).
 
 Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
 You're allowed to GET the same resource multiple times a day, as long as it's not polling. 
