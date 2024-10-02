@@ -42,12 +42,12 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, that includes 1:1 chats, group chats, and meeting chats. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get the list of incremental messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats. |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |[Delete message in chat](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the message of a chat.|
-|[Get delta of messages in chat](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get user's incremental chat messages. |
 |[Undo the deletion of a message in chat](../api/chatmessage-undosoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a chat.|
 |[Set reaction to a message in channel](../api/chatmessage-setreaction.md)|None| Set reaction to a message in a channel.|
 |[Unset reaction to a message in channel](../api/chatmessage-unsetreaction.md)|None| Unset reaction to a message in a channel.|
