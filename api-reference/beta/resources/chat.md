@@ -27,7 +27,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
 |[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
 |[Delete](../api/chat-delete.md)|None|Delete a chat.|
-|[Get message delta](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get user's incremental chat messages. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get incremental chat messages for a user. |
 |[Remove all access for user](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
 |[List members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Add member](../api/chat-post-members.md) | Location header | Add a user to the chat.|
