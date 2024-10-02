@@ -24,7 +24,6 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
 |[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
 |[Delete](../api/chat-delete.md)|None|Delete a chat.|
-|[Get message delta](../api/chats-getAllmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get user's incremental chat messages. |
 |[List members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Add member](../api/chat-post-members.md) | Location header | Add a user to the chat.|
 |[Get member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
@@ -35,6 +34,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
 |[Get messages across all chats](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in. |
 |[Get retained messages across all chats](../api/chat-getallretainedmessages.md)|[chatMessage](../resources/chatmessage.md) collection| Get all retained [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) collection | Get the list of incremental messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats. |
 | **Apps** |||
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat (and associated meeting).|
 |[Get app installed in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat (and associated meeting).|
