@@ -1,6 +1,6 @@
 ---
 title: "chatMessage: delta"
-description: "Get the list of incremental messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats."
+description: "Get the list of messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats."
 ms.localizationpriority: high
 doc_type: apiPageType
 author: "bkeerthivasa"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of incremental [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) in which a user is a participant, including one-on-one chats, group chats, and meeting chats. When you use delta query, you can obtain new or updated messages.
+Get the list of [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) in which a user is a participant, including one-on-one chats, group chats, and meeting chats. When you use delta query, you can obtain new or updated messages.
 
 > **Note:** Delta only returns messages within the last eight months. You can use [GET /users/{id | user-principal-name}/chats/getAllMessages](chats-getallmessages.md) to retrieve older messages.
 Delta query supports both full synchronization that gets all the messages from all chats in which a user is a participant, and incremental synchronization that gets messages added or changed since the last synchronization. Typically, you do an initial full synchronization, and then get incremental changes to that messages view periodically.
@@ -91,7 +91,7 @@ The following example shows a series of three requests to synchronize the messag
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you do in the [next round to get more messages](#example-2-next-round-to-get-more-messages).
+See also what you can do in the [next round to get more messages](#example-2-next-round-to-get-more-messages).
 
 #### Initial request
 
