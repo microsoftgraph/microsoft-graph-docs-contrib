@@ -7,11 +7,9 @@ ms.subservice: "security"
 doc_type: conceptualPageType
 ---
 
-# Overview of cloud app discovery API
+# Use the cloud app discovery API
 
-Use the cloud app discovery API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The cloud app discovery Microsoft Graph API provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to query and analyze the risks associated with those apps. 
-
-## Why use the cloud app discovery API?
+Use the cloud app discovery API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The cloud app discovery API in Microsoft Graph provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to analyze the risks associated with those apps. 
 
 The cloud app discovery API enables you to do the following:
 
