@@ -16,7 +16,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## October 2024: New and generally available
+
+### Teamwork and communications | Messaging
+
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+
 ## October 2024: New in preview only
+
+### Teamwork and communications | Messaging
+
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
 ### Users
 
