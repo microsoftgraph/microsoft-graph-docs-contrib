@@ -25,7 +25,7 @@ A GET request with the delta function returns one of the following:
 - An **@odata.nextLink** that contains a URL with a **delta** function call and a `skipToken`.
 - An **@odata.deltaLink** that contains a URL with a **delta** function call and a `deltaToken`.
 
-State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call for that same calendar view. An **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you begin to retrieve more changes (messages changed or posted after you acquire **@odata.deltaLink**).
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL returned from the last GET request to the next **delta** function call. An **@odata.deltaLink** returned in a response signifies that the current round of change tracking is complete. You can save and use the **@odata.deltaLink** URL when you begin to retrieve more changes (messages changed or posted after you acquire **@odata.deltaLink**).
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -89,7 +89,7 @@ The following example shows a series of three requests to synchronize the messag
 - Step 2: [second request](#second-request) and [response](#second-request-response)
 - Step 3: [third request](#third-request) and [final response](#third-request-response).
 
-For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
+For brevity, the sample responses show only a subset of the properties for a message. In an actual call, most message properties are returned.
 
 See also what you can do in the [next round to get more messages](#example-2-the-next-round-to-get-more-messages).
 
@@ -97,7 +97,7 @@ See also what you can do in the [next round to get more messages](#example-2-the
 
 In this example, the chat messages synchronize for the first time and the initial sync request doesn't include any state token.
 
-The request specifies the optional `$top` query parameter that returns two events at a time.
+The request specifies the optional `$top` query parameter that returns two messages at a time.
 
 <!-- {
   "blockType": "request",
