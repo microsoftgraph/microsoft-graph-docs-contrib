@@ -1,6 +1,6 @@
 ---
 title: "List ipAddresses"
-description: Get the list of ipAddresses associated with a discovered cloud app.
+description: Get the list of IP addresses associated with a discovered cloud app.
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get the list of ipAddresses associated with a discovered cloud app.
+Get the list of IP addresses associated with a discovered cloud app.
 
 ## Permissions
 
