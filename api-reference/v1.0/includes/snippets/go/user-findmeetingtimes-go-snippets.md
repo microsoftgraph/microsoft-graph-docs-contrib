@@ -12,6 +12,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  "github.com/microsoft/kiota-abstractions-go/serialization"
 	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
@@ -27,8 +28,8 @@ requestBody := graphusers.NewItemFindMeetingTimesPostRequestBody()
 
 
 attendeeBase := graphmodels.NewAttendeeBase()
-type := graphmodels.REQUIRED_ATTENDEETYPE 
-attendeeBase.SetType(&type) 
+attendeeType := graphmodels.REQUIRED_ATTENDEETYPE 
+attendeeBase.SetType(&attendeeType) 
 emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Wilbur"
 emailAddress.SetName(&name) 
@@ -84,7 +85,7 @@ timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
 isOrganizerOptional := false
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional) 
-meetingDuration , err := abstractions.ParseISODuration("PT1H")
+meetingDuration , err := serialization.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
 returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
