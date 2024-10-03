@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getMicrosoft365CopilotUserCountSummary"
-description: "Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period."
+description: "Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period."
 author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period.
+Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -135,6 +135,10 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmicrosoft365copilotusercountsummary-csv-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getmicrosoft365copilotusercountsummary-csv-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getmicrosoft365copilotusercountsummary-csv-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -206,6 +210,10 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmicrosoft365copilotusercountsummary-json-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getmicrosoft365copilotusercountsummary-json-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

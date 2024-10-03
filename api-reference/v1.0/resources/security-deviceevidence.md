@@ -1,7 +1,6 @@
 ---
 title: "deviceEvidence resource type"
 description: "A device that is reported in the alert."
-ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -22,11 +21,14 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |azureAdDeviceId|String|A unique identifier assigned to a device by Microsoft Entra ID when device is Microsoft Entra joined.|
 |defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
 |deviceDnsName|String|The fully qualified domain name (FQDN) for the device.|
+| dnsDomain | String | The DNS domain that this computer belongs to. A sequence of labels separated by dots. |
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
 |healthStatus|[microsoft.graph.security.deviceHealthStatus](#devicehealthstatus-values)|The health state of the device. The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
+| hostName | String | The hostname without the domain suffix. |
 |ipInterfaces|String collection|Ip interfaces of the device during the time of the alert.|
 |loggedOnUsers|[microsoft.graph.security.loggedOnUser](../resources/security-loggedonuser.md) collection|Users that were logged on the machine during the time of the alert.|
 |mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
+| ntDomain | String | A logical grouping of computers within a Microsoft Windows network. |
 |onboardingStatus|[microsoft.graph.security.onboardingStatus](#onboardingstatus-values)|The status of the machine onboarding to Microsoft Defender for Endpoint. The possible values are: `insufficientInfo`, `onboarded`, `canBeOnboarded`, `unsupported`, `unknownFutureValue`.|
 |osBuild|Int64|The build version for the operating system the device is running.|
 |osPlatform|String|The operating system platform the device is running.|
@@ -99,42 +101,31 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.deviceEvidence",
+  "azureAdDeviceId": "String",
   "createdDateTime": "String (timestamp)",
-  "verdict": "String",
+  "defenderAvStatus": "String",
+  "detailedRoles": ["String"],
+  "deviceDnsName": "String",
+  "dnsDomain": "String",
+  "firstSeenDateTime": "String (timestamp)",
+  "healthStatus": "String",
+  "hostName": "String",
+  "ipInterfaces": ["String"],
+  "loggedOnUsers": [{"@odata.type": "microsoft.graph.security.loggedOnUser"}],
+  "mdeDeviceId": "String",
+  "ntDomain": "String",
+  "onboardingStatus": "String",
+  "osBuild": "Int64",
+  "osPlatform": "String",
+  "rbacGroupId": "Int32",
+  "rbacGroupName": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "detailedRoles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
-  "firstSeenDateTime": "String (timestamp)",
-  "mdeDeviceId": "String",
-  "azureAdDeviceId": "String",
-  "deviceDnsName": "String",
-  "osPlatform": "String",
-  "osBuild": "Integer",
-  "version": "String",
-  "rbacGroupId": "Integer",
-  "rbacGroupName": "String",
-  "healthStatus": "String",
   "riskScore": "String",
-  "onboardingStatus": "String",
-  "defenderAvStatus": "String",
-  "vmMetadata": {
-    "@odata.type": "microsoft.graph.security.vmMetadata"
-  },
-  "ipInterfaces": [
-    "String"
-  ],
-  "loggedOnUsers": [
-    {
-      "@odata.type": "microsoft.graph.security.loggedOnUser"
-    }
-  ]
+  "roles": ["String"],
+  "tags": ["String"],
+  "verdict": "String",
+  "version": "String",
+  "vmMetadata": {"@odata.type": "microsoft.graph.security.vmMetadata"}
 }
 ```
