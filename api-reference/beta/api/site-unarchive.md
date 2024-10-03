@@ -40,12 +40,16 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
+### Response headers
+|Name|Description|
+|:---|:---|
+|Location|Location of the site being unarchived|
+
 ## Example
 
 Here's an example that shows how to unarchive a site. 
 
 ### Request
-
 
 # [HTTP](#tab/http)
 
@@ -62,9 +66,5 @@ If successful, it returns the following JSON response.
 
 ```http
 HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/sites/{site-id}
 ```
-
-### Response headers
-|Name|Description|
-|:---|:---|
-|Location|Location of the site being unarchived|
