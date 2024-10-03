@@ -47,6 +47,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
+| [Archive Site](../api/site-archive.md)            | POST /sites/{site-id}/archive                               |
+| [Unarchive Site](../api/site-unarchive.md)        | POST /sites/{site-id}/unarchive                             |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
