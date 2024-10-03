@@ -30,7 +30,7 @@ Represents the discovered cloud apps.
 |downloadNetworkTrafficInBytes|Int64|The download traffic size.|
 |id|String|The app's SaaSDB ID. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddressCount|Int64|The IP address.|
-|lastSeenDateTime|DateTimeOffset|The last seen date.|
+|lastSeenDateTime|DateTimeOffset|The last seen date of the discovered app.|
 |riskScore|Int64|The app's risk score.|
 |tags|String collection|The tags applied to an app. Possible values include `Unsanctioned`,`Sanctioned`,`Monitored`, or a custom values.|
 |transactionCount|Int64|The app transaction count.|
