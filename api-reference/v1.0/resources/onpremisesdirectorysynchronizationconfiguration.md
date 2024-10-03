@@ -1,8 +1,8 @@
 ---
 title: "onPremisesDirectorySynchronizationConfiguration resource type"
 description: "Consists of configurations that can be fine-tuned and impact the on-premises directory synchronization process for a tenant."
-author: "dkershaw10"
-ms.reviewer: sgupta, abhishek.badjatya
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
