@@ -25,6 +25,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+> [!NOTE]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - A non-admin member or guest user with default user permissions
+> - Application Developer - for the application they own
+> - Directory Readers
+> - Global Secure Access Administrator
+> - Global Reader
+> - Hybrid Identity Administrator
+> - Cloud Application Administrator
+> - Application Administrator
+
 ## HTTP request
 
 You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
