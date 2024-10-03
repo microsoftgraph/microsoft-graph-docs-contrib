@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryReport resource type"
-description: "Represents a stream of discovered cloud apps."
+description: "Represents the resources available for generating cloud app discovery report."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,14 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a stream of discovered cloud apps.
+Represents the resources available for generating cloud app discovery report.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List uploaded streams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get a list of the cloud apps discovery reports.|
+|[List uploaded streams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get a list of streams available for generating cloud discovery report.
+.|
 
 ## Properties
 |Property|Type|Description|
