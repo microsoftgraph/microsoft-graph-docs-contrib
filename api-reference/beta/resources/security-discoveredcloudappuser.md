@@ -21,7 +21,7 @@ Represents a user who accessed a discovered cloud app.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userIdentifier|String|The user identifier.|
+|userIdentifier|String|The identifier of a user who accessed the discovered cloud app.|
 
 ## Relationships
 None.
