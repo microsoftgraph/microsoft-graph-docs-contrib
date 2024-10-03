@@ -1,6 +1,6 @@
 ---
 title: "List uploadedstreams"
-description: "Get a list of the cloud apps discovery reports."
+description: "Get visibility into all the manually uploaded streams from your firewalls and proxies."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get a list of the [cloud apps discovery reports](../resources/security-cloudappdiscoveryreport.md).
+Get visibility into all the manually uploaded streams [cloud apps discovery reports](../resources/security-cloudappdiscoveryreport.md). from your firewalls and proxies.
 
 ## Permissions
 
