@@ -83,7 +83,7 @@ This resource is the base type for the following evidence types:
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
 | none                       | No threats were found.                         |
-| remediated                 | Remediation action has completed successfully. |
+| remediated                 | Remediation action completed successfully. |
 | prevented                  | The threat was prevented from executing.       |
 | blocked                    | The threat was blocked while executing.        |
 | notFound                   | The evidence wasn't found.                    |

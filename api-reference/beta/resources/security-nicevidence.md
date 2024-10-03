@@ -20,10 +20,10 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---|
-| macAddress | String| The MAC for the nic           |
-| ipAddress  | [microsoft.graph.security.ipEvidence](./security-ipevidence.md) | The current IP for the nic    |
-| vlans      | Collection(String)| The current virtual local area networks for the nic |
+|:-------|:---|:----------|
+|macAddress|String|The MAC address of the NIC.|
+|ipAddress|[microsoft.graph.security.ipEvidence](./security-ipevidence.md)|The current IP address of the NIC.|
+|vlans|Collection(String)|The current virtual local area networks of the NIC.|
 
 ## Relationships
 None.
