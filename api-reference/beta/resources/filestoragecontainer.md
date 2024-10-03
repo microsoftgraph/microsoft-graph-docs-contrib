@@ -47,6 +47,8 @@ Represents a location where multiple users or a group of users can store files a
 |[Get recycle bin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Archive](../api/filestoragecontainer-archive.md)|None|Archive a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Unarchive](../api/filestoragecontainer-unarchive.md)|None|Unarchive a [fileStorageContainer](../resources/filestoragecontainer.md).|
 
 ## Properties
 |Property|Type|Description|
