@@ -34,20 +34,20 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 |domains|String collection|The list of domains identified as belonging to the discovered app.|
 |downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the app.|
 |id|String|The ID of the discovered app.|
-|ipAddressCount|Int64|The count of ip addresses accessing discovered app.|
-|lastSeenDateTime|DateTimeOffset|The app last seen date & time.|
-|riskScore|Int64|The riskscore of the discovered app.|
-|tags|String collection|List of discovered app tags.|
-|transactionCount|Int64|The total transanctions on discovered app.|
-|uploadNetworkTrafficInBytes|Int64|The upload traffic on discovered app.|
-|userCount|Int64|The count of users accessing discovered app.|
+|ipAddressCount|Int64|The count of IP addresses that accessed the discovered app.|
+|lastSeenDateTime|DateTimeOffset|The date and time that the app was last seen.|
+|riskScore|Int64|The risk score of the discovered app.|
+|tags|String collection|A list of tags applied to a discovered app..|
+|transactionCount|Int64|The total transanctions on the discovered app.|
+|uploadNetworkTrafficInBytes|Int64|The upload traffic on the discovered app.|
+|userCount|Int64|The count of users accessing the discovered app.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Represents the discovered app details.|
 |devices|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Represents the devices accessing discovered apps.|
-|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Represents the IPAddressses accessing discovered apps.|
+|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Represents the IPAddressses that access discovered apps.|
 |users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Represents the users accessing discovered apps.|
 
 ## JSON representation
