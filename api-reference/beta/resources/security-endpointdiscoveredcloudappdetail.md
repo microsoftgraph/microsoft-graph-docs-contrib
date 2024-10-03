@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/s
 |:---|:---|:---|
 |category|microsoft.graph.security.appCategory|The list of category of discovered apps.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
 |deviceCount|Int64|The number of devices accessing the discovered app.|
-|displayName|String|Discovered Application name.|
+|displayName|String|The name of the discovered cloud app.|
 |domains|String collection|The list of domains identified as belonging to the discovered app.|
 |downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the app.|
 |id|String|The ID of the discovered app.|
