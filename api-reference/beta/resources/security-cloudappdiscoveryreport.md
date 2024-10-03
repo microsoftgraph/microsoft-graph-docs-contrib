@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport resource type"
-description: "Represents the resources available for cloud apps discovered on onboarded endpoints or a stream."
+description: "Represents information about cloud apps discovered on an endpoint or a stream."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -18,8 +18,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List uploaded streams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get a list of cloudAppDiscoveryReport objects and their properties.|
-|[Get aggregated app details](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|Get the aggregated details of discovered apps by providing the period. Currently, it only supports the Get method.|
+|[List uploaded streams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get the list all uploaded streams like firewalls and proxies.|
+|[Get aggregated app details](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|Get the aggregated details of discovered apps.|
 
 ## Properties
 |Property|Type|Description|
