@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-update-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
