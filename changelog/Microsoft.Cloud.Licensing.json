@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "98958a51-e904-444a-bea0-999a5129bb69",
+          "Id": "fb13767d-2c93-4ce8-92c6-06e37ae1ef58",
           "ApiChange": "Property",
           "ChangedApiName": "cloudLicensing",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "group"
         },
         {
-          "Id": "98958a51-e904-444a-bea0-999a5129bb69",
+          "Id": "fb13767d-2c93-4ce8-92c6-06e37ae1ef58",
           "ApiChange": "Property",
           "ChangedApiName": "cloudLicensing",
           "ChangeType": "Addition",
@@ -19,17 +19,17 @@
           "Target": "user"
         }
       ],
-      "Id": "98958a51-e904-444a-bea0-999a5129bb69",
+      "Id": "fb13767d-2c93-4ce8-92c6-06e37ae1ef58",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-09-20T19:09:14.1948008Z",
+      "CreatedDateTime": "2024-10-01T18:44:46.0410536Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
     {
       "ChangeList": [
         {
-          "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Enumeration",
           "ChangedApiName": "assigneeTypes",
           "ChangeType": "Addition",
@@ -37,15 +37,23 @@
           "Target": "assigneeTypes"
         },
         {
-          "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Resource",
           "ChangedApiName": "groupCloudLicensing",
           "ChangeType": "Addition",
-          "Description": "Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
           "Target": "groupCloudLicensing"
         },
         {
-          "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
+          "Target": "groupCloudLicensing"
+        },
+        {
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Resource",
           "ChangedApiName": "service",
           "ChangeType": "Addition",
@@ -53,15 +61,23 @@
           "Target": "service"
         },
         {
-          "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Resource",
           "ChangedApiName": "userCloudLicensing",
           "ChangeType": "Addition",
-          "Description": "Added the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
           "Target": "userCloudLicensing"
         },
         {
-          "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
+          "Target": "userCloudLicensing"
+        },
+        {
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Resource",
           "ChangedApiName": "usageRight",
           "ChangeType": "Addition",
@@ -69,11 +85,11 @@
           "Target": "usageRight"
         }
       ],
-      "Id": "6d0e82f1-78d4-4fea-958d-5a81e9499ecb",
+      "Id": "66436498-3396-4827-ba61-1e022031f0aa",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-09-20T19:09:14.195067Z",
-      "WorkloadArea": "Microsoft.Cloud.Licensing",
+      "CreatedDateTime": "2024-10-01T18:44:46.0412919Z",
+      "WorkloadArea": "Microsoft Cloud Licensing",
       "SubArea": ""
     }
   ]
