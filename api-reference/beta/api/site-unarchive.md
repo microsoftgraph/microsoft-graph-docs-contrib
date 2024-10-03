@@ -40,7 +40,7 @@ If successful, this method returns a `202 Accepted` response code. It doesn't re
 
 ## Example
 
-Here's and example that shows how to unarchive a site. 
+Here's an example that shows how to unarchive a site. 
 
 ### Request
 

@@ -40,7 +40,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 
-Here's and example that shows how to archive a site. 
+Here's an example that shows how to archive a site. 
 
 ### Request
 
