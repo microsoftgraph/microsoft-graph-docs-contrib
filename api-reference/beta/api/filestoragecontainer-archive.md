@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Archive fileStorageContainer
 
-Archive a [fileStorageContainer](../resources/filestoragecontainer.md).
+Archives a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
 

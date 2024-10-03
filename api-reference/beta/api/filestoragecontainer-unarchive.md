@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Unarchive fileStorageContainer
 
-Unarchive a [fileStorageContainer](../resources/filestoragecontainer.md).
+Unarchives a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
 
@@ -37,6 +37,11 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code.
 
+### Response Headers
+|Name|Description|
+|:---|:---|
+|Location|Location of the storage container being unarchived|
+
 ## Examples
 
 The following example shows a request.
@@ -51,4 +56,5 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/storageContainers/{containerId}/unarchive
 ```
