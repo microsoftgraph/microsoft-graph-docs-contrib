@@ -38,13 +38,21 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 |site|String|The site location of the device.|
 |zone|String|The zone location of the device within a site.|
 |sensor|String|The sensor that monitors the device.|
-|importance|microsoft.graph.security.ioTDeviceImportanceType|The importance level for the IoT device. Possible values are `low`, `normal`, `high`, and `unknownFutureValue`.|
+|importance|[ioTDeviceImportanceType](#iotdeviceimportancetype-values)|The importance level for the IoT device. Possible values are `low`, `normal`, `high`, and `unknownFutureValue`.|
 |purdueLayer|String|The Purdue Layer of the device.|
 |isProgramming|Boolean|Indicates whether the device classified as a programming device.|
 |isAuthorized|Boolean|Indicates whether the device classified as an authorized device.|
 |isScanner|Boolean|Indicates whether the device classified as a scanner.|
 |devicePageLink|String|The URL to the device page in the IoT Defender portal.|
 |deviceSubType|String|The device subtype.|
+
+### ioTDeviceImportanceType values
+|Member|Description |
+|:---|:---|
+|low| Low importance. |
+|normal| Normal importance. |
+|high| High importance.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.
