@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Unarchive a user's [site](../resources/site.md).
+Unarchive a SharePoint [site](../resources/site.md).
 
 ## Permissions
 
@@ -22,6 +22,8 @@ In delegated scenarios, the signed-in user must also be assigned one of the foll
 
 * SharePoint Administrator
 * Global Administrator
+
+*SharePoint Administrator* is the least privileged role for this operation.
 
 ## HTTP request
 
@@ -61,3 +63,8 @@ If successful, it returns the following JSON response.
 ```http
 HTTP/1.1 202 Accepted
 ```
+
+### Response headers
+|Name|Description|
+|:---|:---|
+|Location|Location of the site being unarchived|

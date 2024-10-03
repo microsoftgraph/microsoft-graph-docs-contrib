@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Archive a user's [site](../resources/site.md).
+Archive a SharePoint [site](../resources/site.md).
 
 ## Permissions
 
@@ -22,6 +22,8 @@ In delegated scenarios, the signed-in user must also be assigned one of the foll
 
 * SharePoint Administrator
 * Global Administrator
+
+*SharePoint Administrator* is the least privileged role for this operation.
 
 ## HTTP request
 
