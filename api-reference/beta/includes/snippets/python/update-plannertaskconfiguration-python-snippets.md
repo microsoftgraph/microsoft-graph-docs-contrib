@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.planner_task_configuration import PlannerTaskConfiguration
 from msgraph_beta.generated.models.planner_task_policy import PlannerTaskPolicy
@@ -15,9 +16,7 @@ from msgraph_beta.generated.models.planner_task_property_rule import PlannerTask
 from msgraph_beta.generated.models.planner_rule_kind import PlannerRuleKind
 from msgraph_beta.generated.models.planner_field_rules import PlannerFieldRules
 from msgraph_beta.generated.models.planner_rule_override import PlannerRuleOverride
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PlannerTaskConfiguration(
 	odata_type = "#microsoft.graph.plannerTaskConfiguration",
 	edit_policy = PlannerTaskPolicy(

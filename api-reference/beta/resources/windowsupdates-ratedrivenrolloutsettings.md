@@ -3,7 +3,7 @@ title: "rateDrivenRolloutSettings resource type"
 description: "Represents settings for governing rate driven rollouts."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Inherits from [gradualRolloutSettings](../resources/windowsupdates-gradualrollou
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"

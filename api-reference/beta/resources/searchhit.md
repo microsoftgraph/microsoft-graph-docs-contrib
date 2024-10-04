@@ -47,9 +47,13 @@ Represents a single result within the list of search results.
 |externalItem|Encoded string|`AAMkADRiYWU5MDRkLWE1NGEtNDg5OS1hZWM2LWIxOWZmNzQzMTdiYQBGAAAAAAAvZTGE+1bNQp4lDRL1ctayBwCQNOp97HTbQK/QVOV30iomAAAAEF6yAACQNOp97HTbQK/QVOV30iomAAAAG/DWAAA=` |
 |person|GUID@GUID|`497b7a2a-9e1a-48d7-80e8-2965d2fc3a81@72f988bf-86f1-41af-91ab-2d7cd011db47`|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -84,17 +88,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-	"Error: /resources/searchhit.md:
-      Property '_id' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
-	"Error: /resources/searchhit.md:
-      Property '_score' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
-	"Error: /resources/searchhit.md:
-      Property '_sortField' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
-	"Error: /resources/searchhit.md:
-      Property '_summary' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
-	"Error: /resources/searchhit.md:
-      Property '_source' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table."
-  ]
+  "suppressions": []
 }-->
 

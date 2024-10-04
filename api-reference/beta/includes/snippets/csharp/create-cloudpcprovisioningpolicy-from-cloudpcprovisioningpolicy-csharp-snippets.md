@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new CloudPcProvisioningPolicy
 {
@@ -44,11 +45,15 @@ var requestBody = new CloudPcProvisioningPolicy
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"domainJoinConfiguration" , new 
+			"domainJoinConfiguration" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				DomainJoinType = "hybridAzureADJoin",
-				OnPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-			}
+				{
+					"domainJoinType", new UntypedString("hybridAzureADJoin")
+				},
+				{
+					"onPremisesConnectionId", new UntypedString("16ee6c71-fc10-438b-88ac-daa1ccafffff")
+				},
+			})
 		},
 		{
 			"onPremisesConnectionId" , "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"

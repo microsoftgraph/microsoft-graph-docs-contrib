@@ -21,13 +21,10 @@ For information about retention labels from an administrator's perspective, see 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                                     |
-|:---------------------------------------|:--------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All, Sites.FullControl.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                  |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
+<!-- { "blockType": "permissions", "name": "driveitem_removeretentionlabel" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
 >**Note:** `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
 

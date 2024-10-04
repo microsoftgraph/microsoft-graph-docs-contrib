@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md). Search folders can be created in any folder in a user's Exchange Online mailbox. However, for a search folder to appear in Outlook, Outlook for the web, or Outlook Live, the folder must be created in the **WellKnownFolderName.SearchFolders** folder.
 
-## Search folder lifecycle
+### Search folder lifecycle
 
-Search folders created by your application can be deleted by Exchange Online for one of the following reasons:
+Exchange Online can delete search folders created by your application for one of the following reasons:
 
 1.	Search folders expire after 45 days of no usage.
 2.	There are limits on the number of search folders that can be created per source folder. When this limit is breached, older search folders are deleted to make way for new ones.
@@ -29,11 +29,12 @@ When a search folder is deleted, your app should create a new search folder reso
 
 | Method | Return Type  | Description |
 |:---------------|:--------|:----------|
-| [Create mail search folder](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
+| [Create](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
+| [Get](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
+| [Update](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
+| [Delete](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
+| [Permanently delete](../api/mailsearchfolder-permanentdelete.md)|None|Permanently delete a mail search folder and remove its items from the user's mailbox.|
 | [List child folders](../api/mailfolder-list-childfolders.md) | [mailFolder](mailfolder.md) collection | List all the folders in this user's mailbox, including search folders. |
-| [Get mail search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
-| [Update mail search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
-| [Delete mail search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
 | [List messages in folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
 
 ## Properties
@@ -47,7 +48,7 @@ When a search folder is deleted, your app should create a new search folder reso
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -23,6 +23,9 @@ Represents a specific [timeCard](timecard.md) break.
 | end			        |[timeCardEvent](timecardevent.md)    | The start event of the **timeCardBreak**.|
 | notes			        |[itemBody](itembody.md)  | Notes about the **timeCardBreak**.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 

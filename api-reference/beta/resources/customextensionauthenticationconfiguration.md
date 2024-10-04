@@ -25,6 +25,10 @@ The type of token authentication used depends on the token security. If the toke
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

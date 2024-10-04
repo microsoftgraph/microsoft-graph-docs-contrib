@@ -27,7 +27,7 @@ None.
 |exportJobs|[goalsExportJob](../resources/goalsexportjob.md) collection|Represents a collection of goals export jobs for Viva Goals.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

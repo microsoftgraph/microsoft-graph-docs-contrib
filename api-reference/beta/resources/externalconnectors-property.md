@@ -30,6 +30,10 @@ A [schema](externalconnectors-schema.md) property definition for a Microsoft Sea
 | rankingHint   | [microsoft.graph.externalConnectors.rankingHint](externalconnectors-rankinghint.md) | Specifies the property ranking hint. Developers can specify which properties are most important, allowing Microsoft Search to determine the search relevance of the content. |
 | type          | microsoft.graph.externalConnectors.propertyType         | The data type of the property. Possible values are: `string`, `int64`, `double`, `dateTime`, `boolean`, `stringCollection`, `int64Collection`, `doubleCollection`, `dateTimeCollection`, `unknownFutureValue`. Required. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

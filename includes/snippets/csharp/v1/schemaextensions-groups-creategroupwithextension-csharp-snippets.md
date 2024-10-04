@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Group
 {
@@ -23,12 +24,18 @@ var requestBody = new Group
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"bellowscollege_courses" , new 
+			"bellowscollege_courses" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				CourseId = "123",
-				CourseName = "New Managers",
-				CourseType = "Online",
-			}
+				{
+					"courseId", new UntypedString("123")
+				},
+				{
+					"courseName", new UntypedString("New Managers")
+				},
+				{
+					"courseType", new UntypedString("Online")
+				},
+			})
 		},
 	},
 };

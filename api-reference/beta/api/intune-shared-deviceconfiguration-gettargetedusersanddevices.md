@@ -2,7 +2,7 @@
 title: "getTargetedUsersAndDevices action"
 description: "Intune Shared Deviceconfiguration Gettargetedusersanddevices Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

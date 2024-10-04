@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Simulation
 {
@@ -45,12 +46,18 @@ var requestBody = new Simulation
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"simulationNotification" , new 
+				"simulationNotification" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
-					TargettedUserType = "compromised",
-					EndUserNotificationOdataBind = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
-					DefaultLanguage = "en",
-				}
+					{
+						"targettedUserType", new UntypedString("compromised")
+					},
+					{
+						"endUserNotification@odata.bind", new UntypedString("https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a")
+					},
+					{
+						"defaultLanguage", new UntypedString("en")
+					},
+				})
 			},
 		},
 	},

@@ -2,7 +2,7 @@
 title: "aospDeviceOwnerWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for AOSP Device Owner."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -10,10 +10,10 @@ doc_type: enumPageType
 # aospDeviceOwnerWiFiSecurityType enum type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Wi-Fi Security Types for AOSP Device Owner.
 

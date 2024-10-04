@@ -59,12 +59,15 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 Content-Type: application/json
 
 {
   "displayName": "Updated Name",
-  "description": "Updated Description"
+  "description": "Updated Description",
+  "settings": {
+    "isOcrEnabled": false
+  }
 }
 ```
 
@@ -118,7 +121,10 @@ Content-type: application/json
   "description": "Updated Description",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "status": "active",
-  "createdDateTime": "2021-11-24T15:41:52.347Z"
+  "createdDateTime": "2021-11-24T15:41:52.347Z",
+  "settings": {
+    "isOcrEnabled": false
+  }
 }
 ```
 

@@ -35,7 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -43,9 +43,9 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|workbookSortField collection|The list of conditions to sort on.|
-|matchCase|boolean|Optional. Whether to have the casing determines string ordering.|
-|hasHeaders|boolean|Optional. Whether the range has a header.|
-|orientation|string|Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.|
+|matchCase|Boolean|Optional. Whether to have the casing determines string ordering.|
+|hasHeaders|Boolean|Optional. Whether the range has a header. |
+|orientation|string|Optional. Whether the operation is sorting rows or columns. Possible values are: `Rows`, `Columns`.|
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
@@ -57,6 +57,7 @@ Here's an example of how to call this API.
 ##### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -85,6 +86,12 @@ Content-type: application/json
   "method": "method-value"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rangesort-apply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following example shows the response. 

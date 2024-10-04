@@ -1,5 +1,5 @@
 ---
-title: educationSynchronizationOAuth1ConnectionSettings resource type
+title: educationSynchronizationOAuth1ConnectionSettings resource type (deprecated)
 description: "When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationOAuth1ConnectionSettings resource type
+# educationSynchronizationOAuth1ConnectionSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile.
 
@@ -26,7 +28,13 @@ Derived from [educationSynchronizationConnectionSettings].
 
 [educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
 
+## Relationships
+
+None.
+
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

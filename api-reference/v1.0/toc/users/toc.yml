@@ -86,14 +86,14 @@ items:
       href: ../../api/directory-deleteditems-getuserownedobjects.md
     - name: List registered devices
       href: ../../api/user-list-registereddevices.md
-    - name: List deleted users
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted user
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted user
-      href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete user
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete item
+      href: ../../api/directory-deleteditems-delete.md
   - name: Drive
     items:
     - name: Get drive

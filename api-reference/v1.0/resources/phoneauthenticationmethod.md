@@ -6,6 +6,7 @@ author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: Phone
 ---
 
 # phoneAuthenticationMethod resource type
@@ -84,6 +85,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.phoneAuthenticationMethod",
   "id": "String (identifier)",
   "phoneNumber": "String",
   "phoneType": "string",

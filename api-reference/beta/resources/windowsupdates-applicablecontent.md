@@ -3,7 +3,7 @@ title: "applicableContent resource type"
 description: "Represents content applicable for offering to the related collection of devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents content applicable for offering to the related collection of devices.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.applicableContent",

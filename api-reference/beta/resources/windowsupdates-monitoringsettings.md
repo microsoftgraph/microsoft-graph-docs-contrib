@@ -3,7 +3,7 @@ title: "monitoringSettings resource type"
 description: "Settings controlling automated monitoring and response in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Settings controlling automated monitoring and response in a deployment.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.monitoringSettings"

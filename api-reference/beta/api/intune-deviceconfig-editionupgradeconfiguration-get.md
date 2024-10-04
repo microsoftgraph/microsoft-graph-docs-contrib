@@ -2,7 +2,7 @@
 title: "Get editionUpgradeConfiguration"
 description: "Read properties and relationships of the editionUpgradeConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

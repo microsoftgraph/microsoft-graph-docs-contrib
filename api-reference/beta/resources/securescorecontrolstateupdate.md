@@ -22,7 +22,7 @@ Contains the history of the control states updated by the user (control states i
 |updatedDateTime | DateTimeOffset |Time at which control state was updated |
 
  ## JSON representation
- The following is a JSON representation of the resource.
+ The following JSON representation shows the resource type.
  <!-- {
   "blockType": "resource",
   "optionalProperties": [

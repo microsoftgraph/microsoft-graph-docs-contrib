@@ -63,7 +63,7 @@ Inherits from [baseTask](../resources/basetask.md).
 |parentList|[baseTaskList](../resources/basetasklist.md)|The list which contains the task. Inherited from [baseTask](../resources/basetask.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

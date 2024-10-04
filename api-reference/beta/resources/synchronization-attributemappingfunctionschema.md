@@ -30,7 +30,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -23,6 +23,14 @@ The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) an
 ## Properties
 None.
 
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

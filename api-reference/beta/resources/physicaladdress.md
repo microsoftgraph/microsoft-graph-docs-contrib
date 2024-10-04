@@ -27,6 +27,9 @@ Represents the street address of a resource such as a contact or event.
 |street|String|The street.|
 |type|physicalAddressType|The type of address. Possible values are: `unknown`, `home`, `business`, `other`.|
 
+## Relationships
+
+None.
 
 ## JSON representation
 

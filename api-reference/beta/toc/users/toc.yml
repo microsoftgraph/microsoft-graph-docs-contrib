@@ -76,6 +76,10 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Delegated permission grants
+    items:
+    - name: List delegated permission grants
+      href: ../../api/user-list-oauth2permissiongrants.md
   - name: Directory objects
     items:
     - name: Get by IDs
@@ -106,14 +110,14 @@ items:
       href: ../../api/user-list-scopedrolememberof.md
     - name: List usage rights
       href: ../../api/user-list-usagerights.md
-    - name: List deleted users
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted user
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted user
-      href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete user
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete item
+      href: ../../api/directory-deleteditems-delete.md
   - name: Drive
     items:
     - name: Get drive

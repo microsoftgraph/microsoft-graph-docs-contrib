@@ -26,8 +26,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
+| [List page templates][]                            | GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate     |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List sites across geographies][]            | GET /site/getAllSites                                      |
+| [List sites across geographies][]                 | GET /site/getAllSites                                       |
+| [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -53,8 +55,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/basesitepage-list.md
+[List page templates]: ../api/pagetemplate-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
+[List subsites for a site]: ../api/site-list-subsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
@@ -115,6 +119,7 @@ The `root` identifier always references the root site for a given target, as fol
 | lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
 | operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
 | pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list on this site.                                                                                |
+| pageTemplates   | [pageTemplate][] collection                                                    | The collection of page templates on this site.                                                                                |
 | permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
 | recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
 | sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
@@ -129,6 +134,7 @@ The `root` identifier always references the root site for a given target, as fol
 [list]: list.md
 [permission]: permission.md
 [baseSitePage]: baseSitePage.md
+[pageTemplate]: pagetemplate.md
 [root]: root.md
 [site]: site.md
 [siteSettings]: sitesettings.md

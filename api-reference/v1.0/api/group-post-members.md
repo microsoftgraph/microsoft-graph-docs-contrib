@@ -51,6 +51,7 @@ To add members to a role-assignable group, the app must also be assigned the *Ro
 
 ```http
 POST /groups/{group-id}/members/$ref
+POST /groups/{group-id}/members/
 ```
 
 ## Request headers
@@ -62,11 +63,15 @@ POST /groups/{group-id}/members/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.
+When using the `/groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
+
+When using the `/groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type.
+
+If using the **directoryObjects** reference, that is, `https://graph.microsoft.com/v1.0/directoryObjects/{id}`, the object type must still be a supported group member object type.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Examples
 
@@ -74,7 +79,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 #### Request
 
-The following example shows a request.
+The following example shows a request that uses the **directoryObjects** reference to add a member to a group.
 
 # [HTTP](#tab/http)
 

@@ -1,9 +1,9 @@
 ---
 title: "scheduleSettings resource type"
-description: "Represents settings for controlling how and when the service deploys an update over time."
+description: "Represents settings for controlling how and when Windows Autopatch deploys an update over time."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings for controlling how and when the service deploys an update over time.
+Represents settings for controlling how and when Windows Autopatch deploys an update over time.
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Represents settings for controlling how and when the service deploys an update o
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.scheduleSettings"

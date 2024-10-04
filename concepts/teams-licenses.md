@@ -1,7 +1,7 @@
 ---
 title: "Payment models and licensing requirements for Microsoft Teams APIs"
 description: "Learn about the payment models and license requirements that apply to some Microsoft Teams APIs in Microsoft Graph: model=A, model=B, and evaluation mode."
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ---
@@ -196,7 +196,7 @@ This section describes how to look up the number of messages in your Teams tenan
 
 You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail) API, or you can use the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/) as follows:
 
-> **Note:** You must be either a global admin, global reader, or Teams service admin to view the report in the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/). For details, see [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles).
+> **Note:** You must be either a Global Reader or Teams service admin to view the report in the [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/). For details, see [Use Teams administrator roles to manage Teams](/microsoftteams/using-admin-roles).
 
 1. In the left pane, choose **Analytics & reports** > **Usage reports**.
 2. On the **View reports** tab, under **Report**, choose **Teams user activity**.

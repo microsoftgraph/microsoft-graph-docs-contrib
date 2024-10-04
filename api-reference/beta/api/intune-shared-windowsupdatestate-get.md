@@ -2,7 +2,7 @@
 title: "Get windowsUpdateState"
 description: "Read properties and relationships of the windowsUpdateState object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Intune"
 doc_type: apiPageType
 ---

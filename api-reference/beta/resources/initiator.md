@@ -25,7 +25,7 @@ Describes who or what initiated the provisioning event. Inherits from [identity]
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

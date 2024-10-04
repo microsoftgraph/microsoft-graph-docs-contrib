@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars
 ```
 
 # [C#](#tab/csharp)
@@ -152,7 +152,10 @@ Content-Type: application/json
           "displayName": "Kenneth Brown",
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
-      ]
+      ],
+      "settings": {
+        "isAttendeeEmailNotificationEnabled": false
+      }
     }
   ]
 }
