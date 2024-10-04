@@ -70,11 +70,11 @@ items:
     items:
     - name: Usage right
       href: ../../resources/cloudlicensing-usageright.md
-    - name: List group usageRights
+    - name: List for group
       href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: List user usageRights
+    - name: List for user
       href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
-    - name: Get usageRight
+    - name: Get
       href: ../../api/cloudlicensing-usageright-get.md
   - name: Complex types
     items:

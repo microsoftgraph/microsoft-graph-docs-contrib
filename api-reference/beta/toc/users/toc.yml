@@ -72,9 +72,9 @@ items:
       href: ../../api/user-reminderview.md
   - name: Cloud licensing
     items:
-    - name: List usageRights
+    - name: List usage rights
       href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
-    - name: Get usageRight
+    - name: Get usage right
       href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
