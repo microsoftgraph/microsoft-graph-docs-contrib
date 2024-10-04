@@ -65,6 +65,8 @@ Represents a supported region to establish an Azure network connection for Cloud
 | norway             | The region belongs to the region group: Norway.                                    |
 | switzerland        | The region belongs to the region group: Switzerland.                               |
 | southKorea         | The region belongs to the region group: South Korea.                               |
+| middleEast         | The region belongs to the region group: Middle East.                               |
+| mexico             | The region belongs to the region group: Mexico.                                    |
 
 ## Relationships
 
