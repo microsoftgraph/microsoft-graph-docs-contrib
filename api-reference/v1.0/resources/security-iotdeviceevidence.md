@@ -38,7 +38,7 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 |site|String|The site location of the device.|
 |zone|String|The zone location of the device within a site.|
 |sensor|String|The sensor that monitors the device.|
-|importance|[ioTDeviceImportanceType](#iotdeviceimportancetype-values)|The importance level for the IoT device. Possible values are `low`, `normal`, `high`, and `unknownFutureValue`.|
+|importance|[microsoft.graph.security.ioTDeviceImportanceType](#iotdeviceimportancetype-values)|The importance level for the IoT device. Possible values are `low`, `normal`, `high`, and `unknownFutureValue`.|
 |purdueLayer|String|The Purdue Layer of the device.|
 |isProgramming|Boolean|Indicates whether the device classified as a programming device.|
 |isAuthorized|Boolean|Indicates whether the device classified as an authorized device.|
