@@ -23,11 +23,11 @@ Permissions to get a **usageRight** for a user:
 
 <!-- { "blockType": "ignored"} -->
 ``` http
-GET /me/cloudLicensing/usageRights/{usageRight-id}
-GET /users/{user-id}/cloudLicensing/usageRights/{usageRight-id}
+GET /me/cloudLicensing/usageRights/{usageRightId}
+GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
-<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /users/{user-id}/cloudLicensing/usageRights/{usageRight-id}", "mergePermissions": "true" } -->
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|User-UsageRight.Read|Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read, User-CloudLicensing.Read.All, User-UsageRight.Read.All, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All|
@@ -38,10 +38,10 @@ Permissions to get a **usageRight** for a group:
 
 <!-- { "blockType": "ignored"} -->
 ``` http
-GET /groups/{group-id}/cloudLicensing/usageRights/{usageRight-id}
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
-<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /groups/{group-id}/cloudLicensing/usageRights/{usageRight-id}" } -->
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|Group-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, Group-CloudLicensing.Read, Group-CloudLicensing.Read.All, Group.Read.All, Group.ReadWrite.All, User.Read.All, User.ReadWrite.All|
