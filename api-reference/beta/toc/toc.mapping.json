@@ -420,9 +420,10 @@
         },
         {
           "name": "Cloud licensing (preview)",
+          "overview": "../../resources/cloud-licensing-api-overview.md",
           "keywords": [
             "Cloud licensing",
-            "Microsoft cloud licensing"
+            "Microsoft Cloud Licensing"
           ],
           "resources": [
             "microsoft.graph.cloudLicensing.usageRight"
