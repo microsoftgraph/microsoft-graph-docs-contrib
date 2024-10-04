@@ -1,5 +1,5 @@
 ---
-title: "singleServicePrincipal complex type"
+title: "singleServicePrincipal resource type"
 description: "Identifies a service principal in the tenant who will be allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
