@@ -3,6 +3,7 @@ title: "List usageRights"
 description: "Get a list of the usageRight objects granted to a group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
+ms.subservice: "microsoft-cloud-licensing"
 doc_type: apiPageType
 ---
 
