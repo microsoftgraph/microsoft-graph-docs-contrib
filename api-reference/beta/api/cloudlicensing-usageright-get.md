@@ -1,6 +1,6 @@
 ---
 title: "Get usageRight"
-description: "Read the properties and relationships of a usageRight for a user or group."
+description: "Get the properties and relationships of a usageRight for a user or group."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-cloud-licensing"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md) or [group](../resources/group.md).
+Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md) or [group](../resources/group.md).
 
 ## Permissions
 
