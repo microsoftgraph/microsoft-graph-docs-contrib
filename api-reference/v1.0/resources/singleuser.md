@@ -1,6 +1,6 @@
 ---
 title: "singleUser resource type"
-description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
+description: "Identifies a user in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
