@@ -1,5 +1,5 @@
 ---
-title: "approvalSettings complex type"
+title: "approvalSettings resource type"
 description: "The settings for approval as defined in a role management policy rule."
 ms.localizationpriority: medium
 author: "markwahl-msft"
