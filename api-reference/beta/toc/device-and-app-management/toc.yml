@@ -64,8 +64,10 @@ items:
     - name: Identity set
       href: ../../resources/identityset.md
 - name: Cloud licensing (preview)
-  displayName: Cloud licensing, Microsoft cloud licensing
+  displayName: Cloud licensing, Microsoft Cloud Licensing
   items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
   - name: Usage right
     items:
     - name: Usage right
