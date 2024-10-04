@@ -1,6 +1,6 @@
 ---
 title: "externalSponsors resource type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
