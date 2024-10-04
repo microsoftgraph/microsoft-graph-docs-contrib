@@ -33,7 +33,7 @@ The following sections describe design details for the cloud licensing APIs.
 
 ### Usage rights
 
-The [usageRight](/graph/api/resources/cloudlicensing-usageright?view=graph-rest-beta&preserve-view=true) entity is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**.
+The [usageRight](../resources/cloudlicensing-usageright.md) entity is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**.
 
 ## Next steps
 
