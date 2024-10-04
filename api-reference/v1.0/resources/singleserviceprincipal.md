@@ -1,6 +1,6 @@
 ---
 title: "singleServicePrincipal resource type"
-description: "Identifies a service principal in the tenant who are allowed as requestor, approver, or reviewer."
+description: "Identifies a service principal in the tenant who is allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
