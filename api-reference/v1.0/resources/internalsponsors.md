@@ -1,6 +1,6 @@
 ---
 title: "internalSponsors resource type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
