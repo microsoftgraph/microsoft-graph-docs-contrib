@@ -117,19 +117,20 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
-  "id": "2b422243-5eec-d46c-889d-5bce0d232072",
-  "deletedDateTime": "String (timestamp)",
-  "certificateAuthorityType": "String",
+  "id": "90777c92-2eb3-4a68-931d-4a3e1e1c741f",
+  "deletedDateTime": null,
+  "certificateAuthorityType": "root",
   "certificate": "Binary",
-  "displayName": "String",
-  "issuer": "String",
+  "displayName": "Contoso2 CA1",
+  "issuer": "Contoso2",
   "issuerSubjectKeyIdentifier": "String",
-  "createdDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
+  "createdDateTime": null,
+  "expirationDateTime": "2027-08-29T02:05:57Z",
   "thumbprint": "String",
-  "certificateRevocationListUrl": "String",
-  "deltacertificateRevocationListUrl": "String",
-  "isIssuerHintEnabled": "Boolean"
+  "certificateRevocationListUrl": null,
+  "deltacertificateRevocationListUrl": null,
+  "isIssuerHintEnabled": true
+
 }
 ```
 
