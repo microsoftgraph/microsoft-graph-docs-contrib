@@ -1,5 +1,5 @@
 ---
-title: "groupMembers complex type"
+title: "groupMembers resource type"
 description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
