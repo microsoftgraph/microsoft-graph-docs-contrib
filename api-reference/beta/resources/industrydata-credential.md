@@ -7,13 +7,13 @@ ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
-# industryData credential resource type
+# credential resource type
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base type for credentials supported in the Industry Data API. This is an abstract type.
+Represents a base type for credentials supported in the Industry Data API. This type is abstract.
 
 ## Properties
 |Property|Type|Description|
