@@ -17,8 +17,8 @@ Represents the used and total directory quota for an [organization](organization
 ## Properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|used|Int32| Used amount of the directory quota. |
 |total|Int32| Total amount of the directory quota.|
+|used|Int32| Used amount of the directory quota. |
 
 ## JSON representation
 
@@ -34,7 +34,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "used": "Int32",
-  "total": "Int32"
+  "total": "Int32",
+  "used": "Int32"
 }
 ```
