@@ -15,15 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupCloudLicensing",
           "ChangeType": "Addition",
-          "Description": "Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
-          "Target": "groupCloudLicensing"
-        },
-        {
-          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "usageRights",
-          "ChangeType": "Addition",
-          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
+          "Description": "Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource type.",
           "Target": "groupCloudLicensing"
         },
         {
@@ -31,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "service",
           "ChangeType": "Addition",
-          "Description": "Added the [service](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-service?view=graph-rest-beta) resource.",
+          "Description": "Added the [service](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-service?view=graph-rest-beta) resource type.",
           "Target": "service"
         },
         {
@@ -39,15 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userCloudLicensing",
           "ChangeType": "Addition",
-          "Description": "Added the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
-          "Target": "userCloudLicensing"
-        },
-        {
-          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "usageRights",
-          "ChangeType": "Addition",
-          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
+          "Description": "Added the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource type.",
           "Target": "userCloudLicensing"
         },
         {
@@ -59,7 +43,7 @@
           "Target": "usageRight"
         },
         {
-          "Id": "fb13767d-2c93-4ce8-92c6-06e37ae1ef58",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Property",
           "ChangedApiName": "cloudLicensing",
           "ChangeType": "Addition",
@@ -67,7 +51,7 @@
           "Target": "group"
         },
         {
-          "Id": "fb13767d-2c93-4ce8-92c6-06e37ae1ef58",
+          "Id": "66436498-3396-4827-ba61-1e022031f0aa",
           "ApiChange": "Property",
           "ChangedApiName": "cloudLicensing",
           "ChangeType": "Addition",
