@@ -425,11 +425,11 @@
             "Microsoft cloud licensing"
           ],
           "resources": [
-            "microsoft.graph.cloudLicensing.usageRight",
-            "microsoft.graph.cloudLicensing.groupCloudLicensing",
-            "microsoft.graph.cloudLicensing.userCloudLicensing"
+            "microsoft.graph.cloudLicensing.usageRight"
           ],
           "complexTypes": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing",
             "microsoft.graph.cloudLicensing.service"
           ],
           "childNodes": []
