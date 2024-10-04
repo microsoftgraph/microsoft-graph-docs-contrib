@@ -1,6 +1,6 @@
 ---
 title: "groupMembers resource type"
-description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
+description: "Identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
