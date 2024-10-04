@@ -1,5 +1,5 @@
 ---
-title: "List usageRights"
+title: "List usageRights for user"
 description: "Get a list of the usageRight objects granted to a user."
 author: "patrick-starrin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-licensing"
 doc_type: apiPageType
 ---
 
-# List usageRight
+# List usageRights for user
 
 Namespace: microsoft.graph.cloudLicensing
 
