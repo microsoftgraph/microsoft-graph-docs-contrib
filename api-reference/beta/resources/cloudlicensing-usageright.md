@@ -3,7 +3,7 @@ title: "usageRight resource type"
 description: "Represents the right of a user or group to use a particular set of services, as granted by the combination of their assigned licenses for the same subscribedSku."
 author: "patrick-starrin"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-cloud-licensing"
+ms.subservice: "cloud-licensing"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Use the cloud licensing API in Microsoft Graph (preview)"
 description: "Learn how to use the cloud licensing API to access licenses across different subscriptions."
 author: "patrick-starrin"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-cloud-licensing"
+ms.subservice: "cloud-licensing"
 doc_type: conceptualPageType
 ---
 
