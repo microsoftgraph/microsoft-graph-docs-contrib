@@ -63,7 +63,7 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
-- name: Cloud licensing
+- name: Cloud licensing (preview)
   displayName: Cloud licensing, Microsoft cloud licensing
   items:
   - name: Usage right
