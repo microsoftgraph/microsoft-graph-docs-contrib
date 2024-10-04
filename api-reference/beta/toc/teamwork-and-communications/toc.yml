@@ -164,7 +164,7 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
-    - name: List permission grants of a user
+    - name: List permission grants of a team
       href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
