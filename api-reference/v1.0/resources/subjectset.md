@@ -1,5 +1,5 @@
 ---
-title: "subjectSet complex type"
+title: "subjectSet resource type"
 description: "A shared object that is used in entitlement management access package assignment policies, role management policies, and lifecycle workflows."
 author: "markwahl-msft"
 ms.localizationpriority: medium
