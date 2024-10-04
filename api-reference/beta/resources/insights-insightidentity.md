@@ -1,5 +1,5 @@
 ---
-title: insightIdentity complex type
+title: "insightIdentity resource type"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
 ms.localizationpriority: medium
