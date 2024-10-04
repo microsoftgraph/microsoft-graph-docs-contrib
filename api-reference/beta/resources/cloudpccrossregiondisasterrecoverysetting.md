@@ -27,12 +27,12 @@ Represents the settings for cross-region disaster recovery on a Cloud PC.
 
 ### cloudPcRestorePointFrequencyType values
 
-| Value                                | Description                                                                                                                                                                                                                   |
-| -------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `notConfigured`                      | Default. Indicates the administrator has not set up the Cloud PC disaster recovery functionality.                                                                                                                             |
-| `crossRegion`                        | Indicates that the administrator has set up Cloud PC cross-region disaster recovery functionality.                                                                                                                            |
-| `premium`                            | Indicates that the administrator has set up Cloud PC premium disaster recovery functionality.                                                                                                                                 |
-| `unknownFutureValue`                 | Evolvable enumeration sentinel value. Do not use.
+| Value              | Description                                                                                        |
+|:-------------------|:---------------------------------------------------------------------------------------------------|
+| notConfigured      | Default. Indicates the administrator has not set up the Cloud PC disaster recovery functionality.  |
+| crossRegion        | Indicates that the administrator has set up Cloud PC cross-region disaster recovery functionality. |
+| premium            | Indicates that the administrator has set up Cloud PC premium disaster recovery functionality.      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                   |
 
 ## Relationships
 
