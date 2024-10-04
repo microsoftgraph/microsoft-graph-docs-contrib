@@ -1,5 +1,5 @@
 ---
-title: "singleUser complex type"
+title: "singleUser resource type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
