@@ -160,7 +160,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
-  "id": "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4",
+  "id": "j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4",
   "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
   "skuPartNumber": "Microsoft_365_Copilot",
   "services": [
