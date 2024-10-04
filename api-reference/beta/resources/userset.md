@@ -1,5 +1,5 @@
 ---
-title: "userSet complex type"
+title: "userSet resource type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
