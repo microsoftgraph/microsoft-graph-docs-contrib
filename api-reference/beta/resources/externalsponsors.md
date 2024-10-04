@@ -1,5 +1,5 @@
 ---
-title: "externalSponsors complex type"
+title: "externalSponsors resource type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
