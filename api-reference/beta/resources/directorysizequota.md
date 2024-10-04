@@ -1,6 +1,6 @@
 ---
 title: "directorySizeQuota resource type"
-description: "Represents the used and total directory quota for an oranization."
+description: "Represents the used and total directory quota for an organization."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
@@ -12,7 +12,7 @@ author: "suawat"
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the used and total directory quota for an [oranization](organization.md).
+Represents the used and total directory quota for an [organization](organization.md).
 
 ## Properties
 | Property   | Type|Description|
