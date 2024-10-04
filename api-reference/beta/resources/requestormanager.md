@@ -1,5 +1,5 @@
 ---
-title: "requestorManager complex type"
+title: "requestorManager resource type"
 description: "Identifies a relationship to another user in the tenant who can approve."
 ms.localizationpriority: medium
 author: "markwahl-msft"
