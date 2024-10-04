@@ -1,5 +1,5 @@
 ---
-title: "connectedOrganizationMembers complex type"
+title: "connectedOrganizationMembers resource type"
 description: "Represents a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
