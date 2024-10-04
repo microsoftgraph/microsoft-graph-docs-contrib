@@ -1,5 +1,5 @@
 ---
-title: "industryData credential resource type"
+title: "credential resource type"
 description: "Represents a base type for credentials supported in the Industry Data API."
 author: "dakelle"
 ms.localizationpriority: medium
