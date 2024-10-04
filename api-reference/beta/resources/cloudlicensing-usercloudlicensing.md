@@ -15,11 +15,6 @@ Namespace: microsoft.graph.cloudLicensing
 
 Represents the relationships of a user to cloud licensing resources.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List usageRights](../api/cloudlicensing-usercloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a user.|
-
 ## Properties
 None.
 
