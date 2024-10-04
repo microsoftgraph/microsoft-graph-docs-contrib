@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentReviewSettings complex type"
+title: "accessPackageAssignmentReviewSettings resource type"
 description: "Used for the access reviews of an access package's assignments."
 author: "markwahl-msft"
 ms.localizationpriority: medium
