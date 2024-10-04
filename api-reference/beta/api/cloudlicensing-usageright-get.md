@@ -19,44 +19,34 @@ Get the properties and relationships of a [usageRight](../resources/cloudlicensi
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For a user
+Permissions to get a **usageRight** for a user:
 
-To get a **usageRight** for a user with delegated (`/me`) and app (`/users/{userId}`) permission:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "ignored"} -->
 ``` http
-GET /me/cloudLicensing/usageRights/{usageRightId}
-GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
+GET /me/cloudLicensing/usageRights/{usageRight-id}
+GET /users/{user-id}/cloudLicensing/usageRights/{usageRight-id}
 ```
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudlicensing-usageright-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /users/{user-id}/cloudLicensing/usageRights/{usageRight-id}", "mergePermissions": "true" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User-UsageRight.Read|Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read, User-CloudLicensing.Read.All, User-UsageRight.Read.All, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read.All, User.Read.All, User.ReadWrite.All|
 
-### For a group
+Permissions to get a **usageRight** for a group:
 
-To get a **usageRight** for a group with either delegated or app permission:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "ignored"} -->
 ``` http
-GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
+GET /groups/{group-id}/cloudLicensing/usageRights/{usageRight-id}
 ```
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudlicensing-usageright-get-2-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-2-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /groups/{group-id}/cloudLicensing/usageRights/{usageRight-id}" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Group-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, Group-CloudLicensing.Read, Group-CloudLicensing.Read.All, Group.Read.All, Group.ReadWrite.All, User.Read.All, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Group-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, Group-CloudLicensing.Read.All, Group.Read.All, Group.ReadWrite.All, User.Read.All, User.ReadWrite.All|
 
 ## HTTP request
 
