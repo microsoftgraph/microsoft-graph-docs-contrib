@@ -86,13 +86,13 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-    "id": "c721dc42-b383-e883-bf80-2d539946cf8c",
-    "deletedDateTime": "String (timestamp)",
-    "displayName": "String",
-    "status": "String",
+    "id": "fdd9841c-90c6-4234-a116-d72a5cd2c583",
+    "deletedDateTime": null,
+    "displayName": "Contoso PKI",
+    "status": "succeeded",
     "statusDetails": "String",
     "lastModifiedDateTime": "String (timestamp)"
-  }
+    }
 }
 ```
 
