@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# entitlementManagementSchedule complex type
+# entitlementManagementSchedule resource type
 
 Namespace: microsoft.graph
 

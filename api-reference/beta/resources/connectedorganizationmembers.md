@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# connectedOrganizationMembers complex type
+# connectedOrganizationMembers resource type
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# userSet complex type
+# userSet resource type
 
 Namespace: microsoft.graph
 

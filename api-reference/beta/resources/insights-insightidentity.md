@@ -7,7 +7,7 @@ ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
-# insightIdentity complex type
+# insightIdentity resource type
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# approvalStage complex type
+# approvalStage resource type
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
-# printMargin complex type
+# printMargin resource type
 
 Namespace: microsoft.graph
 

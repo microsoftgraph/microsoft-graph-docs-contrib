@@ -7,7 +7,7 @@ ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
-# printOperationStatus complex type
+# printOperationStatus resource type
 
 Namespace: microsoft.graph
 

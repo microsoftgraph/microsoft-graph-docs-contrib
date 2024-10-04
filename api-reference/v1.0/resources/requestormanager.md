@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# requestorManager complex type
+# requestorManager resource type
 
 Namespace: microsoft.graph
 
