@@ -28,7 +28,7 @@ The Microsoft Graph SDK automatically handles batching requests with respect to 
 
 ## Simple batching example
 
-This example shows how to send multiple requests in a batch that are not dependent on each other. The requests can be run by the service in any order. This example gets the user and gets the user's calendar view for the current day.
+This example shows how to send multiple requests in a batch that are not dependent on each other. The service can run the requests in any order. This example gets the user and gets the user's calendar view for the current day.
 
 ### [C#](#tab/csharp)
 
@@ -54,7 +54,7 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ## Batches with dependent requests
 
-This example shows how to send multiple requests in a batch that are dependent on each other. The requests are run by the service in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request runs first.
+This example shows how to send multiple requests in a batch that are dependent on each other. The service runs the request in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request runs first.
 
 > [!NOTE]
 > If the add event request fails, the get calendar view request fails with a `424 Failed Dependency` error.
