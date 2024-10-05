@@ -20,7 +20,7 @@ The Microsoft Graph SDKs provide three classes to work with batch requests and r
 
 - **BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch. It enables assigning a unique identifier to the request and specifying dependencies between requests.
 - **BatchRequestContent** - Simplifies creating the batch request payload. It contains multiple **BatchRequestStep** objects.
-- **BatchResponseContent** - Simplifies parsing the response from a batch request. It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
+- **BatchResponseContent** - Simplifies parsing the response from a batch request. It enables you to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
 
 ### Automatic batching for request limits
 
@@ -54,10 +54,10 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ## Batches with dependent requests
 
-This example shows how to send multiple requests in a batch that are dependent on each other. The requests will be run by the service in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request will execute first.
+This example shows how to send multiple requests in a batch that are dependent on each other. The requests are run by the service in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request runs first.
 
 > [!NOTE]
-> If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.
+> If the add event request fails, the get calendar view request fails with a `424 Failed Dependency` error.
 
 ### [C#](#tab/csharp)
 
