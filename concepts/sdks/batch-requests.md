@@ -24,7 +24,7 @@ The Microsoft Graph SDKs provide three classes to work with batch requests and r
 
 ### Automatic batching for request limits
 
-The Microsoft Graph SDK automatically handles batching requests with respect to the limit of 20 requests per batch. This means that if your code exceeds this limit, the SDK will split the requests into separate batches behind the scenes, ensuring that each batch complies with the limitation. You no longer need to manually implement logic to handle this batching limit, which makes your code cleaner and easier to manage.
+The Microsoft Graph SDK automatically handles batching requests with respect to the limit of 20 requests per batch. This means that if your code exceeds this limit, the SDK splits the requests into separate batches behind the scenes. This ensures that each batch complies with the limitation. You no longer need to manually implement logic to handle this batching limit, which makes your code cleaner and easier to manage.
 
 ## Simple batching example
 
