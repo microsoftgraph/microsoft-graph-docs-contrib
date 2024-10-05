@@ -22,6 +22,10 @@ The Microsoft Graph SDKs provide three classes to work with batch requests and r
 - **BatchRequestContent** - Simplifies creating the batch request payload. It contains multiple **BatchRequestStep** objects.
 - **BatchResponseContent** - Simplifies parsing the response from a batch request. It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
 
+### Automatic batching for request limits
+
+The Microsoft Graph SDK automatically handles batching requests with respect to the limit of 20 requests per batch. This means that if your code exceeds this limit, the SDK will split the requests into separate batches behind the scenes, ensuring that each batch complies with the limitation. You no longer need to manually implement logic to handle this batching limit, which makes your code cleaner and easier to manage.
+
 ## Simple batching example
 
 This example shows how to send multiple requests in a batch that are not dependent on each other. The requests can be run by the service in any order. This example gets the user and gets the user's calendar view for the current day.
@@ -76,3 +80,6 @@ This example shows how to send multiple requests in a batch that are dependent o
 :::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ---
+
+
+
