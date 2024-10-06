@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
-GET /solutions/backupRestore/ForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveProtectionUnits
+GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveProtectionUnits
 ```
 
 ## Request headers
