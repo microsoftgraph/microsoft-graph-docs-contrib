@@ -49,7 +49,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 |Property|Type|Description|
 |:---|:---|:---|
-|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| Contains external information for a virtual event registration. Optional. |
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
@@ -61,7 +61,7 @@ You can specify the following properties when you create a **virtualEventRegistr
 |firstName|String|The registrant's first name. Required. |
 |lastName|String|The registrant's last name. Required. |
 |email|String|The registrant's email address. Required. |
-|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| Contains external information for a virtual event registration. Optional. |
+|externalRegistrationInformation|[virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md)| The external information for a virtual event registration. Optional. |
 |preferredTimezone|String|The registrant's time zone details. Required. |
 |preferredLanguage|String|The registrant's preferred language. Required. |
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions. Optional. |
@@ -80,7 +80,7 @@ Use delegated permission to create a registration record for a person who has a 
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration-delegated",
@@ -92,9 +92,9 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 Content-Type: application/json
 
 {
-  "externalRegistrationInformation" : {
-    "referrer" : "referralLink",
-    "registrationId" : "myExternalRegistrationId"
+  "externalRegistrationInformation": {
+    "referrer": "referralLink",
+    "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
   "preferredLanguage":"en-us",
@@ -127,40 +127,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-delegated-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-delegated-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-virtualeventregistration-delegated-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-virtualeventregistration-delegated-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventregistration-delegated-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-virtualeventregistration-delegated-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-virtualeventregistration-delegated-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-delegated-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -181,9 +147,9 @@ Content-Type: application/json
   "firstName": "Emilee",
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
-  "externalRegistrationInformation" : {
-    "referrer" : "referralLink",
-    "registrationId" : "myExternalRegistrationId"
+  "externalRegistrationInformation": {
+    "referrer": "referralLink",
+    "registrationId": "myExternalRegistrationId"
   },
   "status": "registered",
   "registrationDateTime": "2023-03-07T22:04:17",
@@ -228,7 +194,7 @@ Use application permission to create a registration record for a person who does
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-virtualeventregistration-application",
@@ -243,9 +209,9 @@ Content-Type: application/json
   "firstName" : "Diane",
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
-  "externalRegistrationInformation" : {
-    "referrer" : "referralLink",
-    "registrationId" : "myExternalRegistrationId"
+  "externalRegistrationInformation": {
+    "referrer": "referralLink",
+    "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
   "preferredLanguage":"en-us",
@@ -276,40 +242,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-application-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-virtualeventregistration-application-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-virtualeventregistration-application-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventregistration-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-virtualeventregistration-application-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-virtualeventregistration-application-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-application-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.
