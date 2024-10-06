@@ -13,7 +13,7 @@
         {
           "Id": "fb938090-d30e-4a1c-9dc8-c0539c172233",
           "ApiChange": "Property",
-          "ChangedApiName": "settings",
+          "ChangedApiName": "externalRegistrationInformation",
           "ChangeType": "Addition",
           "Description": "Added the **externalRegistrationInformation** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistration"
