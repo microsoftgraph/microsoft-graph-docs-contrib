@@ -24,6 +24,10 @@ Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a n
 
 ## October 2024: New in preview only
 
+### Teamwork and communications | Calls and online meetings
+
+Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-betaa&preserve-view=true) to get or set the external information for a virtual event registration.
+
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
