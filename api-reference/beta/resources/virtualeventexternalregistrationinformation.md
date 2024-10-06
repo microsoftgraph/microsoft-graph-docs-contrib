@@ -44,7 +44,3 @@ The following JSON representation shows the resource type.
   "registrationId": "String"
 }
 ```
-
-## Related content
-
-- [Virtual event registration](../resources/virtualeventregistration.md)
