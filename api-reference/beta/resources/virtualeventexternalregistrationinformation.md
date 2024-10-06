@@ -11,14 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the external information for a [virtual event registration](../resources/virtualeventregistration.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|referrer|String| A URL or string representing the location that the registrant registered from. Optional.|
-|registrationId|String| String identifier for a [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) object. Optional.|
+|referrer|String| A URL or string that represents the location from which the registrant registered. Optional. |
+|registrationId|String| The identifier for a **virtualEventExternalRegistrationInformation** object. Optional. |
 
 ## Relationships
 
