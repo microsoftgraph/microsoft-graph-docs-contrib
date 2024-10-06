@@ -56,7 +56,7 @@ Inherits from [entity](../resources/entity.md).
 | waitlisted | Waitlist is enabled and the virtual event is at full capacity. The attendee is on the waitlist. |
 | pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
