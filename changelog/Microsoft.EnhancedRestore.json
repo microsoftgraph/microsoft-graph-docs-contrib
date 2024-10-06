@@ -12,43 +12,11 @@
           },
           {
             "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
             "ApiChange": "Resource",
             "ChangedApiName": "driveProtectionUnitsBulkAdditionJob",
             "ChangeType": "Addition",
             "Description": "Added the [driveProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
             "Target": "driveProtectionUnitsBulkAdditionJob"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **mailboxProtectionUnitsBulkAdditionJobs** relationship to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "exchangeProtectionPolicy"
           },
           {
             "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
@@ -60,27 +28,11 @@
           },
           {
             "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **driveProtectionUnitsBulkAdditionJobs** relationship to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "oneDriveForBusinessProtectionPolicy"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
             "ApiChange": "Resource",
             "ChangedApiName": "protectionUnitsBulkJobBase",
             "ChangeType": "Addition",
             "Description": "Added the [protectionUnitsBulkJobBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitsBulkJobBase?view=graph-rest-beta) resource.",
             "Target": "protectionUnitsBulkJobBase"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the **siteProtectionUnitsBulkAdditionJobs** relationship to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "sharePointProtectionPolicy"
           },
           {
             "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",

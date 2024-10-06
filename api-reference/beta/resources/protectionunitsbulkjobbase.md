@@ -33,13 +33,14 @@ The following limitation applies to this resource:
 |error|[publicError](../resources/publicerror.md)|Error details containing resource resolution failures, if any.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the job.|
-|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|The status of the job. The possible values are: `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|The status of the job. The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### protectionUnitsBulkJobStatus values
 
 |Member | Description |
 |:------|:------------|
-|active | 	The status of the job when it's running.|
+|unknown | The status signifies that the job’s state is indeterminate, possibly due to a temporary system issue or error. |
+|active | The status of the job when it's running.|
 |completed | The status of the job when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status when the job finished running, but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |

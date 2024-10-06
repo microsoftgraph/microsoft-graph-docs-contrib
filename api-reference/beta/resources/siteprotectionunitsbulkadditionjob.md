@@ -1,6 +1,6 @@
 ---
 title: "siteProtectionUnitsBulkAdditionJob resource type"
-description: "Represents the list of site URLs (or siteIds) of SharePoint sites to be added into the corresponding Sharepoint Protection Policy."
+description: "Represents the list of site URLs (or siteIds) of SharePoint sites to be added into the corresponding Sharepoint protection policy."
 author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a siteProtectionUnitsBulkAdditionJob associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). It contains a list of SharePoint site URLs, and a list of SiteIds to be added into the the SharePoint Protection Policy for backup.
+Represents the properties of a siteProtectionUnitsBulkAdditionJob associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). It contains a list of SharePoint site URLs, and a list of site IDs to be added to the SharePoint protection policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
