@@ -68,8 +68,8 @@ You can specify the following properties when you create a **virtualEventRegistr
 
 ## Response
 
-If successful, this action returns one of the following:
-* A `201 Created` response code and [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
+If successful, this method returns one of the following results:
+* A `201 Created` response code and a [virtualEventRegistration](../resources/virtualeventregistration.md) object for delegated permissions.
 * A `204 No Content` response code for application permissions.
 
 ## Examples
@@ -190,7 +190,7 @@ Content-Type: application/json
 
 ### Example 2: Creating registration record with application permission
 
-Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+Use application permission to create a registration record for a person who doesn't have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following example shows a request.
