@@ -129,9 +129,9 @@ Content-Type: application/json
   "firstName": "Emilee",
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
-  "externalRegistrationInformation" : {
-    "referrer" : "referralLink",
-    "registrationId" : "myExternalRegistrationId"
+  "externalRegistrationInformation": {
+    "referrer": "referralLink",
+    "registrationId": "myExternalRegistrationId"
   },
   "status": "registered",
   "registrationDateTime": "2023-03-07T22:04:17",
