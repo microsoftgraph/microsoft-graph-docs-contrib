@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# IoTDeviceEvidence resource type
+# ioTDeviceEvidence resource type
 
 Namespace: microsoft.graph.security
 
