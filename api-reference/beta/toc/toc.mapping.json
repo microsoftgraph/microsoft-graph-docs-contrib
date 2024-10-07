@@ -1613,6 +1613,7 @@
                     "emailAuthenticationMethodConfiguration",
                     "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
+                    "hardwareOathAuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
                     "temporaryAccessPassAuthenticationMethodConfiguration",
