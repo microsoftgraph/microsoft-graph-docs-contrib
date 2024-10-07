@@ -114,7 +114,7 @@ The following JSON representation shows the resource type.
   "zone": "String",
   "sensor": "String",
   "importance": {
-      "@odata.type": "microsoft.graph.security.IoTDeviceImportanceType"
+      "@odata.type": "microsoft.graph.security.ioTDeviceImportanceType"
     },
   "purdueLayer": "String",
   "isProgramming": "Boolean",
