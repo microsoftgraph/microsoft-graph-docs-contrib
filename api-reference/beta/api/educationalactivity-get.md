@@ -21,8 +21,35 @@ Retrieve the properties and relationships of an [educationalActivity](../resourc
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/educationalactivity-get-permissions.md)]
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/profile/educationalActivities/{id}
+```
+
+<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": "GET /me/profile/educationalActivities/{id}"} -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
+|Application|Not supported.|Not supported.|
+
+Permissions for the following HTTP syntax:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
+```
+
+<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": "GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"} -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
+|Application|User.Read.All|User.ReadWrite.All|
 
 ## HTTP request
 
