@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add an owner to an [application](../resources/application.md). Currently, only individual users are supported as owners of applications.
+Add an owner to an [application](../resources/application.md). Currently, [users](../resources/user.md) and [service principals](../resources/serviceprincipal.md) are supported as owners of applications.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
