@@ -124,7 +124,9 @@ HTTP/1.1 204 No content
 ## Error responses
 
 If the file isn't checked out, the request returns `400 Bad Request`. 
-A `423 Locked` error is returned when a different user checked out the file, unless the request is executed with application permissions.
+Application access can discard any check-out. 
+With delegated access however, if a different user checked out the file,
+a `423 Locked` error is returned.
 
 For more information about how errors are returned, see [Error responses][error-response].
 
