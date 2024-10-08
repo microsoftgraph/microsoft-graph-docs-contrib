@@ -64,17 +64,21 @@ Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/a
 
 ## September 2024: New in preview only
 
+### Applications | Service principal
+
+Use the **serviceManagementReference** optional property in the [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&preserve-view=true) method to set the service tree ID for a service.
+
 ### Device and app management | Cloud PC
 
+- Enabled the `middleEast` and `mexico` members as supported regions in the [cloudPcRegionGroup](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) enumeration.
 - Removed the **getShiftWorkCloudPcAccessState** method from the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the [getFrontlineCloudPcAccessState](/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) API.
 - Use the **autopilotConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set the settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.
 - Use the **osVersionNumber** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources to get the operating system version of an image.
+- Introduced the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) method on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to enable you to return a list of all snapshots of a Cloud PC.
 
-Introduced the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) method on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to enable you to return a list of all snapshots of a Cloud PC.
-
-Deprecated the [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
-
-Deprecated the [listSnapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true) method; use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+Deprecated the following methods:
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true); use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [List snapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true); use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 
 ### Files
 
