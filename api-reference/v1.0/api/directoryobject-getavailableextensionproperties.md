@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: getAvailableExtensionProperties"
-description: "Get all or a filtered list of the directory extension properties that have been registered in a directory."
+description: "Get all or a filtered list of the directory extension properties that are registered in a directory."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps. The following entities support extension properties:
+Return all directory extension definitions that are registered in a directory, including through multitenant apps. The following entities support extension properties:
 
 + [user](../resources/user.md)
 + [group](../resources/group.md)
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and non-synced) are returned. Optional.|
+|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that aren't synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and nonsynced) are returned. Optional.|
 
 
 ## Response
