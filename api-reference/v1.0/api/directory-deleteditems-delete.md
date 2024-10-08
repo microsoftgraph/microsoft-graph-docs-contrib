@@ -26,7 +26,7 @@ The following table shows the least privileged permission or permissions require
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.ReadWrite.All | Not supported. | Not supported. |
+| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
 [!INCLUDE [rbac-deleted-items-delete-apis](../includes/rbac-for-apis/rbac-deleted-items-delete-apis.md)]
 
