@@ -5645,6 +5645,40 @@
       "CreatedDateTime": "2024-09-16T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a5a736c-80cd-4f40-b4dc-d3c3a6ea14c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatMessageAttachment",
+          "ChangeType": "Change",
+          "Description": "Added forwarded message as a supported attachment for the **chatMessage** resource in the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "3a5a736c-80cd-4f40-b4dc-d3c3a6ea14c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added original context of forwarded message as a supported value for the **content** property in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource.",
+          "Target": "chatMessageAttachment"
+        },
+        {
+          "Id": "3a5a736c-80cd-4f40-b4dc-d3c3a6ea14c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Change",
+          "Description": "Added `forwardedMessageReference` as a supported value for the **contentType** property in the [chatMessageAttachment](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "3a5a736c-80cd-4f40-b4dc-d3c3a6ea14c0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-08T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
