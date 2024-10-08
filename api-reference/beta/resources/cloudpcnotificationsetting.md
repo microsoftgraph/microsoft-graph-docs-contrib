@@ -19,7 +19,7 @@ Represents the settings of a point-in-time restore of a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|restartPromptsDisabled|Boolean|If `true`, the prompts to restart Cloud PC will be hidden. If `false`, the user will receive prompts to restart Cloud PC. The default value is `false`.|
+|restartPromptsDisabled|Boolean|If `true`, doesn't prompt the user to restart the Cloud PC. If `false`, prompts the user to restart Cloud PC. The default value is `false`.|
 
 ## Relationships
 
