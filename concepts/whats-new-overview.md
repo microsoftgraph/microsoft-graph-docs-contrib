@@ -24,7 +24,7 @@ Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a n
 
 ### Users
 
-Published the following lesser privileged permissions for managing specific scenarios on the [user](/graph/api/resources/user) object:
+Published the following lesser-privileged permissions for managing specific scenarios on the [user](/graph/api/resources/user) object:
 
 | Permission | Comments |
 |--|--|
@@ -42,7 +42,7 @@ Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-be
 
 ### Users
 
-Changed the following on-prem synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
+Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
 - onPremisesDistinguishedName
 - onPremisesDomainName
 - onPremisesSamAccountName
