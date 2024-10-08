@@ -1,6 +1,6 @@
 ---
 title: "emailNotificationConfiguration resource type"
-description: "Represents the email configuration for an alert type in Microsoft Entra Health scenario monitoring. "
+description: "Represents the email configuration for an alert type in Microsoft Entra Health monitoring. "
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the email configuration for an alert type in Microsoft Entra Health scenario monitoring.
+Represents the email configuration for an alert type in Microsoft Entra Health monitoring.
 
 ## Properties
 |Property|Type|Description|
