@@ -37,7 +37,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. You can use `$select` to get specific properties, including those that aren't returned by default.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. You can use `$select` to get specific properties, including those properties that aren't returned by default.
 
 ## Request headers
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 #### Response
 
-The following example shows the response. that includes only the default properties.
+The following example shows the response that includes only the default properties.
 
 <!-- {
   "blockType": "response",
