@@ -33,6 +33,8 @@ The following table shows the least privileged permission or permissions require
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

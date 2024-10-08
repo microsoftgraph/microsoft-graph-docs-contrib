@@ -29,7 +29,7 @@ The following table shows the least privileged permission or permissions require
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [user](../resources/user.md) | User.ReadWrite.All | Not supported. | User.ReadWrite.All |
 
-[!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -35,6 +35,8 @@ The following table shows the least privileged permission or permissions require
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
