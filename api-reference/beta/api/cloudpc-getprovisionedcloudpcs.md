@@ -118,6 +118,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 The following example shows the response. It includes only the default properties.
 
+> **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPC)",
