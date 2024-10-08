@@ -145,7 +145,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "referralLink",
+        "referrer": "Facebook",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",
@@ -261,7 +261,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "referralLink",
+        "referrer": "Facebook",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",
@@ -377,7 +377,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "referralLink",
+        "referrer": "Facebook",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",
