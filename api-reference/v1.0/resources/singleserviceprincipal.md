@@ -1,12 +1,12 @@
 ---
-title: "singleServicePrincipal complex type"
-description: "Identifies a service principal in the tenant who will be allowed as requestor, approver, or reviewer."
+title: "singleServicePrincipal resource type"
+description: "Identifies a service principal in the tenant who is allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# singleServicePrincipal complex type
+# singleServicePrincipal resource type
 
 Namespace: microsoft.graph
 
