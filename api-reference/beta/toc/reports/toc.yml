@@ -148,7 +148,7 @@ items:
             href: ../../resources/azureadauthentication.md
           - name: Get SLA attainment
             href: ../../api/azureadauthentication-get.md
-      - name: Scenario monitoring
+      - name: Health monitoring
         items:
         - name: Overview
           href: ../../resources/healthmonitoring-overview.md
