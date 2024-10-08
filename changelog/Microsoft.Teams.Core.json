@@ -5689,6 +5689,24 @@
       "CreatedDateTime": "2024-10-08T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f9666fc8-6101-4ca6-bd26-3f11395ffc5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "mentions",
+          "ChangeType": "Change",
+          "Description": "Added `chat` as a supported value for the **mentions** property in the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f9666fc8-6101-4ca6-bd26-3f11395ffc5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-08T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
