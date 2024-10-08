@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directoryobject_getavailableextensionproperties" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryobject-getavailableextensionproperties-permissions.md)]
 
+[!INCLUDE [rbac-apps-applications-directoryextensions-apis](../includes/rbac-for-apis/rbac-apps-applications-directoryextensions-apis.md)]
+
 ## HTTP request
 
 <!-- {
