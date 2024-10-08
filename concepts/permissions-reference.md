@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/16/2024
+ms.date: 10/07/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -827,6 +827,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared calendars |
 | Description | - | Allows the app to create, read, update and delete events in all calendars in the organization user has permissions to access. This includes delegate and shared calendars. |
 | AdminConsentRequired | - | No |
+
+---
+
+### CallEvents-Emergency.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f0a35f91-2aa6-4a99-9d5a-5b6bcb66204e | - |
+| DisplayText | Read all emergency call events | - |
+| Description | Allows the app to read emergency call event information for all users in your organization without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -1790,6 +1801,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementApps.ReadWrite.All](../includes/permissions-notes/devicemanagementapps.readwrite.all.md)]
+
+---
+
+### DeviceManagementCloudCA.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 315b6e8c-d92a-4691-919d-00ce76d1344a | ac5c8443-d999-471f-9247-ce92cf5c5560 |
+| DisplayText | Read Microsoft Cloud PKI objects | Read Microsoft Cloud PKI objects |
+| Description | Allows the app to read certification authority information without a signed-in user. | Allows the app to read certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementCloudCA.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f15eb2ba-ef8a-4f70-991d-da5d045154e2 | 93028c58-65aa-48db-a706-1fe4ada325ec |
+| DisplayText | Read and write Microsoft Cloud PKI objects | Read and write Microsoft Cloud PKI objects |
+| Description | Allows the app to read and write certification authority information without a signed-in user. | Allows the app to read and write certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -3773,6 +3806,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### OnlineMeetingAiInsight.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c0cf7895-985f-42d4-a693-b618f36674ad | 166741d6-eeb8-46fe-91f4-817d2af7bc88 |
+| DisplayText | Read all AI Insights for online meetings. | Read all AI Insights for online meetings. |
+| Description | Allows the app to read all AI Insights for all online meetings, without a signed-in user. | Allows the app to read all AI Insights for online meetings, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### OnlineMeetingAiInsight.Read.Chat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 01892c31-3b66-4bcf-b5f5-bf0a03d5ed9f | - |
+| DisplayText | Read all AI Insights for online meetings where the Teams application is installed. | - |
+| Description | Allows the teams-app to read all aiInsights for online meetings where the Teams-app is installed, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### OnlineMeetingArtifact.Read.All
 
 | Category | Application | Delegated |
@@ -5540,6 +5595,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | d4dcee6d-0774-412a-b06c-aeabbd99e816 | 087c3ad9-c2ca-4b82-9885-d5e25ce9e183 |
 | DisplayText | Read and write all identity security sensors | Read and write identity security sensors |
 | Description | Allows the app to read and write identity security sensors without a signed-in user. | Allows the app to read and write identity security sensors on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesUserActions.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3e5d0bee-973f-4736-a123-4e1ab146f3a8 | c7d0a939-da1c-4aca-80fa-d0a6cd924801 |
+| DisplayText | Read all identity security available user actions | Read identity security available user actions |
+| Description | Allows the app to read all the identity security available user actions without a signed-in user. | Allows the app to read all the identity security available user actions of signed user |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesUserActions.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b4146a3a-dd4f-4af4-8d91-7cc0eef3d041 | bf230e97-1957-4df6-b3f6-57f9029eacdf |
+| DisplayText | Read and perform all identity security available user actions | Read and perform identity security available user actions |
+| Description | Allows the app to read and write identity security available user actions without a signed-in user. | Allows the app to read and write identity security available user actions on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7456,6 +7533,9 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
+
+
+
 
 
 

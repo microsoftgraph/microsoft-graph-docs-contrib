@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/v1.0/security/identities/healthIssues/bf600aba-e
 
 ---
 
-
 ### Response
 
 The following example shows the response.
