@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/beta/security/identities/sensors/regenerateDepl
 
 ---
 
-
 ### Response
 
 The following example shows the response.

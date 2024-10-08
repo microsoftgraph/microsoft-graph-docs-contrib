@@ -75,16 +75,16 @@
             "ApiChange": "Member",
             "ChangedApiName": "middleEast",
             "ChangeType": "Addition",
-            "Description": "Added the `middleEast` member to the **cloudPcSupportedRegion** enumeration.",
-            "Target": "cloudPcSupportedRegion"
+            "Description": "Added the `middleEast` member to the **cloudPcRegionGroup** enumeration.",
+            "Target": "cloudPcRegionGroup"
           },
           {
             "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
             "ApiChange": "Member",
             "ChangedApiName": "mexico",
             "ChangeType": "Addition",
-            "Description": "Added the `mexico` member to the **cloudPcSupportedRegion** enumeration.",
-            "Target": "cloudPcSupportedRegion"
+            "Description": "Added the `mexico` member to the **cloudPcRegionGroup** enumeration.",
+            "Target": "cloudPcRegionGroup"
           }
         ],
         "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
