@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId $auditLogQueryId
+Get-MgBetaSecurityIdentitySensorDeploymentPackageUri
 
 ```

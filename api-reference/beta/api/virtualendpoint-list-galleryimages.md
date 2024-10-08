@@ -138,7 +138,8 @@ Content-Type: application/json
       "sizeInGB": 64,
       "startDate": "2019-11-12",
       "endDate": "2022-05-10",
-      "expirationDate": "2022-11-10"
+      "expirationDate": "2022-11-10",
+      "osVersionNumber": "10.0.18363.720"
     },
     {
       "id": "MicrosoftWindowsDesktop_windows-ent-cpc_20h1-ent-cpc-os",
@@ -156,7 +157,8 @@ Content-Type: application/json
       "sizeInGB": 64,
       "startDate": "2020-05-27",
       "endDate": "2021-12-14",
-      "expirationDate": "2022-06-14"
+      "expirationDate": "2022-06-14",
+      "osVersionNumber": "10.0.18363.720"
     }
   ]
 }
