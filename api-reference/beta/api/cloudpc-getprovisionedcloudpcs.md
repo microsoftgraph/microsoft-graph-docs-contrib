@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 #### Response
 
-The following example shows the response that includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ Content-Type: application/json
 
 ### Example 2: Get all provisioned Cloud PCs and specific properties
 
-The following example shows how to get all provisioned Cloud PCs and use `$select` to get specific properties, including nondefault properties.
+The following example shows how to get all provisioned Cloud PCs and use `$select` to get specific properties, including those properties that aren't returned by default.
 
 #### Request
 
