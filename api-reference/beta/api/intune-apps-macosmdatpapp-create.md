@@ -2,7 +2,7 @@
 title: "Create macOSMdatpApp"
 description: "Create a new macOSMdatpApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

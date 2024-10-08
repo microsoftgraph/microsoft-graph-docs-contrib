@@ -3,7 +3,7 @@ title: "List updatable asset group members"
 description: "List the members of an updatableAssetGroup resource. Members are of the azureADDevice type."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

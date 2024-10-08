@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.unified_role_management_policy import UnifiedRoleManagementPolicy
 from msgraph_beta.generated.models.unified_role_management_policy_rule import UnifiedRoleManagementPolicyRule
@@ -16,9 +17,7 @@ from msgraph_beta.generated.models.unified_role_management_policy_authentication
 from msgraph_beta.generated.models.unified_role_management_policy_enablement_rule import UnifiedRoleManagementPolicyEnablementRule
 from msgraph_beta.generated.models.unified_role_management_policy_expiration_rule import UnifiedRoleManagementPolicyExpirationRule
 from msgraph_beta.generated.models.unified_role_management_policy_notification_rule import UnifiedRoleManagementPolicyNotificationRule
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UnifiedRoleManagementPolicy(
 	rules = [
 		UnifiedRoleManagementPolicyApprovalRule(

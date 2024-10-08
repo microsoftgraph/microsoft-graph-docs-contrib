@@ -1,6 +1,6 @@
 ---
 title: "Working with education APIs in Microsoft Graph"
-description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. This makes it easy for you to build solutions that integrate with educational resources."
+description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
@@ -17,7 +17,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app will also need the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions).
+To call the education APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions).
 
 ### App permissions to enable school IT admins to consent
 
@@ -51,8 +51,8 @@ The rostering APIs provide the following key resources:
 - [educationSchool](educationschool.md) - Represents the school.
 - [educationClass](educationclass.md) - Represents a class within a school.
 - [educationTerm](educationterm.md) - Represents a designated portion of the academic year.
-- [educationTeacher](educationteacher.md) - Represents a users with the primary role of 'Teacher'.
-- [educationStudent](educationstudent.md) - Represents a users with the primary role of 'student'.
+- [educationTeacher](educationteacher.md) - Represents a user with the primary role of 'Teacher'.
+- [educationStudent](educationstudent.md) - Represents a user with the primary role of 'student'.
 
 The rostering APIs support the following scenarios:
 
@@ -98,6 +98,53 @@ The following are some common use cases for the assignment-related education API
 | Create assignments          | An external system can create an assignment for the class and attach resources to the assignment.                   | [Create assignment](../api/educationassignment-post-resources.md) |
 | Read assignment information | An analytics application can get information about assignments and student submissions, including dates and grades. | [Get assignment](../api/educationassignment-get.md)               |
 | Track student submissions   | Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.           | [Submission resource](educationsubmission.md)                     |
+
+## Classwork
+
+You can use Classwork as a one-stop shop to create and organize class resources, including assignments, OneNote Class Notebook pages, web links, files, and Teams channels. This means you no longer have to navigate multiple apps and platforms to find what you need. With Classwork, you can curate a view of content and resources that helps your students navigate the class and see everything in one place.
+
+The Classwork API provides the following key resources:
+
+- [educationModule](educationmodule.md) - A module is associated with a class. Represents a group of individual learning resources that are organized in a systematic way.
+- [educationModuleResource](educationmoduleresource.md) - A wrapper object that stores the resources associated with a module. The student is unable to update this resource, which is a handout from the teacher to the student with nothing to be turned in.
+
+The following lists show the scenarios supported by the Classwork API.
+
+### Modules
+
+The **educationModule** resource supports the following scenarios:
+
+- [List modules](../api/educationclass-list-modules.md)
+- [Create module](../api/educationclass-post-module.md)
+- [Get module](../api/educationmodule-get.md)
+- [Update module](../api/educationmodule-update.md)
+- [Delete module](../api/educationmodule-delete.md)
+- [Pin module](../api/educationmodule-pin.md)
+- [Unpin module](../api/educationmodule-unpin.md)
+- [Publish module](../api/educationmodule-publish.md)
+- [Set up module resources folder](../api/educationmodule-setupresourcesfolder.md)
+
+### Module resources
+
+The **educationModuleResource** resource supports the following scenarios:
+
+- [List module resources](../api/educationmodule-list-resources.md)
+- [Create module resource](../api/educationmodule-post-resources.md)
+- [Get module resource](../api/educationmoduleresource-get.md)
+- [Update module resource](../api/educationmoduleresource-update.md)
+- [Delete resource from module](../api/educationmoduleresource-delete.md)
+
+### Common use cases
+
+The following table shows some common use cases for the module-related education APIs.
+
+| Use case                      | Description                                                                                                                                                                  | See also                                                           |
+|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Create a module               | Only teachers in a class can create a module. Modules start in the draft state, which means that students don't see the modules until publication.                           | [Create educationModule](../api/educationclass-post-module.md)              |
+| List modules                  | A teacher or an application with application permissions can see all module objects for the class. Students can only see published modules.                                  | [List class modules](../api/educationclass-list-modules.md)              |
+| Publish a module              | Changes the state of an **educationModule** from its original `draft` status to the `published` status.                                                                      | [educationModule: publish](../api/educationmodule-publish.md)                |
+| Create a resource in a module | Only teachers can perform this operation.                                                                                                                                    | [Create educationModuleResource](../api/educationmodule-post-resources.md) |
+| List module resources         | Get all the **educationModuleResource** objects associated with a module. Only teachers, students, and applications with application permissions can perform this operation. | [List module resources](../api/educationmodule-list-resources.md)  |
 
 ## School data sync management
 

@@ -4,6 +4,66 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Approvals
+  items:
+  - name: Approval item
+    items:
+    - name: Approval item
+      href: ../../resources/approvalitem.md
+    - name: List
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get
+      href: ../../api/approvalitem-get.md
+    - name: Cancel
+      href: ../../api/approvalitem-cancel.md
+    - name: List requests
+      href: ../../api/approvalitem-list-requests.md
+    - name: List responses
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create response
+      href: ../../api/approvalitem-post-responses.md
+  - name: Approval solution
+    items:
+    - name: Approval solution
+      href: ../../resources/approvalsolution.md
+    - name: Get
+      href: ../../api/approvalsolution-get.md
+    - name: Provision
+      href: ../../api/approvalsolution-provision.md
+    - name: List approval items
+      href: ../../api/approvalsolution-list-approvalitems.md
+    - name: Create approval item
+      href: ../../api/approvalsolution-post-approvalitems.md
+    - name: Get approval operation
+      href: ../../api/approvaloperation-get.md
+  - name: Approval item request
+    items:
+    - name: Approval item request
+      href: ../../resources/approvalitemrequest.md
+    - name: List
+      href: ../../api/approvalitem-list-requests.md
+    - name: Get
+      href: ../../api/approvalitemrequest-get.md
+  - name: Approval item response
+    items:
+    - name: Approval item response
+      href: ../../resources/approvalitemresponse.md
+    - name: List
+      href: ../../api/approvalitem-list-responses.md
+    - name: Create
+      href: ../../api/approvalitem-post-responses.md
+    - name: Get
+      href: ../../api/approvalitemresponse-get.md
+  - name: Approval item view point
+    href: ../../resources/approvalitemviewpoint.md
+  - name: Approval operation
+    items:
+    - name: Approval operation
+      href: ../../resources/approvaloperation.md
+    - name: Get
+      href: ../../api/approvaloperation-get.md
 - name: Apps
   items:
   - name: Teams app
@@ -104,6 +164,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -132,6 +194,8 @@ items:
       items:
       - name: Call
         href: ../../resources/call.md
+      - name: Create
+        href: ../../api/application-post-calls.md
       - name: Get
         href: ../../api/call-get.md
       - name: Delete/hang up
@@ -627,8 +691,6 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
@@ -731,6 +793,8 @@ items:
         href: ../../api/chats-getallmessages.md
       - name: Get retained messages across all chats
         href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -779,8 +843,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -823,6 +885,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages
@@ -1183,6 +1247,16 @@ items:
       href: ../../api/workforceintegration-update.md
     - name: Delete
       href: ../../api/workforceintegration-delete.md
+  - name: Working time schedule
+    items:
+    - name: Working time schedule
+      href: ../../resources/workingtimeschedule.md
+    - name: Get
+      href: ../../api/workingtimeschedule-get.md
+    - name: Start working time
+      href: ../../api/workingtimeschedule-startworkingtime.md
+    - name: End working time
+      href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
     - name: Geo coordinates
@@ -1227,5 +1301,7 @@ items:
       href: ../../resources/timeoffitem.md
     - name: Time range
       href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
     - name: Workforce integration encryption
       href: ../../resources/workforceintegrationencryption.md

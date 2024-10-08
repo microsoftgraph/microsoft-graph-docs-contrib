@@ -2,7 +2,7 @@
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type. Multiple values can be selected. Default value is `none`."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -10,10 +10,10 @@ doc_type: enumPageType
 # windowsDeviceType enum type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Contains properties for Windows device type. Multiple values can be selected. Default value is `none`.
 

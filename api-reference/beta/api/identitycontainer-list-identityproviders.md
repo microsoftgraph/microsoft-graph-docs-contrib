@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
+### Example 2: List all identity providers configured in an Azure AD B2C tenant
 
 #### Request
 The following example shows a request.
@@ -253,4 +253,99 @@ Content-type: application/json
     ]
 }
 
+```
+
+### Example 3: List all identity providers configured in a Microsoft Entra External ID in an external tenant
+
+#### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_identityproviderbase_CIAM"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/identityProviders
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderbase-ciam-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-identityproviderbase-ciam-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityproviderbase-ciam-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-ciam-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderbase-ciam-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-identityproviderbase-ciam-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identityproviderbase-ciam-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-identityproviderbase-ciam-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityProviderBase",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/identityProviders?$select=displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "AADSignup-OAUTH",
+            "displayName": "Azure Active Directory Sign up",
+            "identityProviderType": "AADSignup",
+            "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "EmailOtpSignup-OAUTH",
+            "displayName": "Email One Time Passcode",
+            "identityProviderType": "EmailOTP",
+            "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "EmailPassword-OAUTH",
+            "displayName": "Email with password",
+            "identityProviderType": "EmailPassword",
+            "state": null
+        }
+    ]
+}
 ```

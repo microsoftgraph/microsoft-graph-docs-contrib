@@ -1,7 +1,7 @@
 ---
 title: "Archive team"
 description: "Archive the specified team. "
-author: "nkramer"
+author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -27,7 +27,7 @@ To restore a team from its archived state, use the API to [unarchive](team-unarc
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
+This API supports admin permissions. Microsoft Teams service admins can access teams that they aren't a member of.
 
 <!-- { "blockType": "permissions", "name": "team_archive" } -->
 [!INCLUDE [permissions-table](../includes/permissions/team-archive-permissions.md)]

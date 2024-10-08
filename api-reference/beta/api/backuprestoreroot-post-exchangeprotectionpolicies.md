@@ -56,6 +56,8 @@ In the request body, include a JSON representation of the [exchangeProtectionPol
 
 If successful, this method returns a `201 Created` response code and an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -75,13 +77,13 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtection
   "displayName": "Exchange Protection Policy",
   "mailboxProtectionUnits": [
     {
-      "userId": "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
+      "directoryObjectId": "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
     },
     {
-      "userId": "9bc069da-b746-41a4-89ab-26125c6373c7"
+      "directoryObjectId": "9bc069da-b746-41a4-89ab-26125c6373c7"
     },
     {
-      "userId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+      "directoryObjectId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
     }
   ]
 }
@@ -152,7 +154,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "User1"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -164,7 +166,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
   "retentionSettings": [
     {
       "interval": "R/PT10M",

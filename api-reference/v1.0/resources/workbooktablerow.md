@@ -32,7 +32,7 @@ Represents a row in a table.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|Int32|The index of the row within the rows collection of the table. Zero-based. Read-only.|
-|values|[Json](../resources/json.md)|The raw values of the specified range. The data returned could be of type string, number, or a boolean. Any cell that contain an error will return the error string.|
+|values|[Json](../resources/json.md)|The raw values of the specified range. The data returned could be of type string, number, or a Boolean. Any cell that contain an error will return the error string.|
 
 ## Relationships
 

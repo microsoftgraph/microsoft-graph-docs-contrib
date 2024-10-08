@@ -50,6 +50,36 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -1025,12 +1055,14 @@ items:
         href: ../../api/accesspackageassignmentrequest-get.md
       - name: Delete
         href: ../../api/accesspackageassignmentrequest-delete.md
-      - name: Filter by current user
-        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Cancel
         href: ../../api/accesspackageassignmentrequest-cancel.md
+      - name: Filter by current user
+        href: ../../api/accesspackageassignmentrequest-filterbycurrentuser.md
       - name: Reprocess
         href: ../../api/accesspackageassignmentrequest-reprocess.md
+      - name: Resume
+        href: ../../api/accesspackageassignmentrequest-resume.md
       - name: List (deprecated)
         href: ../../api/entitlementmanagement-list-accesspackageassignmentrequests.md
       - name: Create (deprecated)
@@ -1342,6 +1374,8 @@ items:
           href: ../../api/identitygovernance-deleteditemcontainer-get.md
         - name: Restore
           href: ../../api/identitygovernance-workflow-restore.md
+        - name: Permanently delete
+          href: ../../api/identitygovernance-deleteditemcontainer-delete.md
       - name: Task
         items:
         - name: Task
@@ -2679,36 +2713,6 @@ items:
         href: ../../api/activitybasedtimeoutpolicy-update.md
       - name: Delete
         href: ../../api/activitybasedtimeoutpolicy-delete.md
-    - name: Application authentication method policy
-      items:
-      - name: Overview
-        href: ../../resources/applicationauthenticationmethodpolicy.md
-      - name: Tenant app management policy
-        items:
-        - name: Tenant app management policy
-          href: ../../resources/tenantappmanagementpolicy.md
-        - name: Get
-          href: ../../api/tenantappmanagementpolicy-get.md
-        - name: Update
-          href: ../../api/tenantappmanagementpolicy-update.md
-      - name: App management policy
-        items:
-        - name: App management policy
-          href: ../../resources/appmanagementpolicy.md
-        - name: List
-          href: ../../api/appmanagementpolicy-list.md
-        - name: Create
-          href: ../../api/appmanagementpolicy-post.md
-        - name: Get
-          href: ../../api/appmanagementpolicy-get.md
-        - name: Update
-          href: ../../api/appmanagementpolicy-update.md
-        - name: Delete
-          href: ../../api/appmanagementpolicy-delete.md
-        - name: List applies to
-          href: ../../api/appmanagementpolicy-list-appliesto.md
-        - name: Create applies to
-          href: ../../api/appmanagementpolicy-post-appliesto.md
     - name: Authentication events policy
       items:
       - name: Authentication events policy
@@ -2761,6 +2765,16 @@ items:
           href: ../../api/fido2authenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/fido2authenticationmethodconfiguration-delete.md
+      - name: Hardware OATH
+        items:
+        - name: Hardware OATH
+          href: ../../resources/hardwareoathauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator
@@ -2838,28 +2852,6 @@ items:
         href: ../../api/b2cauthenticationmethodspolicy-get.md
       - name: Update
         href: ../../api/b2cauthenticationmethodspolicy-update.md
-    - name: Claims mapping policy
-      items:
-      - name: Claims mapping policy
-        href: ../../resources/claimsmappingpolicy.md
-      - name: List
-        href: ../../api/claimsmappingpolicy-list.md
-      - name: Create
-        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get
-        href: ../../api/claimsmappingpolicy-get.md
-      - name: Update
-        href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete
-        href: ../../api/claimsmappingpolicy-delete.md
-      - name: List applies to
-        href: ../../api/claimsmappingpolicy-list-appliesto.md
-      - name: Assign to service principal
-        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-      - name: List assigned to service principal
-        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-      - name: Unassign from service principal
-        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Continuous access evaluation policy
       items:
       - name: Continuous access evaluation policy
@@ -2868,16 +2860,6 @@ items:
         href: ../../api/continuousaccessevaluationpolicy-get.md
       - name: Update
         href: ../../api/continuousaccessevaluationpolicy-update.md
-    - name: Custom claims policy (preview)
-      items:
-      - name: Custom claims policy (preview)
-        href: ../../resources/customclaimspolicy.md
-      - name: Get
-        href: ../../api/customclaimspolicy-get.md
-      - name: Create or replace
-        href: ../../api/serviceprincipal-put-claimspolicy.md
-      - name: Update
-        href: ../../api/customclaimspolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -2982,66 +2964,6 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        items:
-        - name: Remote desktop security configuration
-          href: ../../resources/remotedesktopsecurityconfiguration.md
-        - name: Create
-          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-        - name: Get
-          href: ../../api/remotedesktopsecurityconfiguration-get.md
-        - name: Update
-          href: ../../api/remotedesktopsecurityconfiguration-update.md
-        - name: Delete
-          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-      - name: Target device group
-        items:
-        - name: Target device group
-          href: ../../resources/targetdevicegroup.md
-        - name: List
-          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-        - name: Create
-          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-        - name: Get
-          href: ../../api/targetdevicegroup-get.md
-        - name: Update
-          href: ../../api/targetdevicegroup-update.md
-        - name: Delete
-          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
-    - name: Token issuance policy
-      items:
-      - name: Token issuance policy
-        href: ../../resources/tokenissuancepolicy.md
-      - name: Create
-        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
-      - name: Get
-        href: ../../api/tokenissuancepolicy-get.md
-      - name: List
-        href: ../../api/tokenissuancepolicy-list.md
-      - name: Update
-        href: ../../api/tokenissuancepolicy-update.md
-      - name: Delete
-        href: ../../api/tokenissuancepolicy-delete.md
-      - name: List applied to applications
-        href: ../../api/tokenissuancepolicy-list-appliesto.md
-    - name: Token lifetime policy
-      items:
-      - name: Token lifetime policy
-        href: ../../resources/tokenlifetimepolicy.md
-      - name: List
-        href: ../../api/tokenlifetimepolicy-list.md
-      - name: Create
-        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-      - name: Get
-        href: ../../api/tokenlifetimepolicy-get.md
-      - name: Update
-        href: ../../api/tokenlifetimepolicy-update.md
-      - name: Delete
-        href: ../../api/tokenlifetimepolicy-delete.md
-      - name: List applied to applications
-        href: ../../api/tokenlifetimepolicy-list-appliesto.md
   - name: Trust framework key set
     items:
     - name: Trust framework key set
@@ -3114,8 +3036,6 @@ items:
           href: ../../api/identityuserflowattribute-update.md
         - name: Delete
           href: ../../api/identityuserflowattribute-delete.md
-        - name: List attributes in a user flow
-          href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: List attributes in a user flow
           href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
         - name: Add attribute to a user flow
@@ -3919,9 +3839,9 @@ items:
       href: ../../api/networkaccess-tenantstatus-get.md
     - name: Onboard
       href: ../../api/networkaccess-networkaccessroot-onboard.md
-  - name: Branch site
+  - name: Branch site (deprecated)
     items:
-    - name: Branch site
+    - name: Branch site (deprecated)
       href: ../../resources/networkaccess-branchsite.md
     - name: List
       href: ../../api/networkaccess-connectivity-list-branches.md
@@ -3949,8 +3869,12 @@ items:
         href: ../../api/networkaccess-branchsite-list-devicelinks.md
       - name: Create deviceLink for a branchSite (deprecated)
         href: ../../api/networkaccess-branchsite-post-devicelinks.md
-    - name: Connectivity configuration link
-      href: ../../resources/networkaccess-connectivityconfigurationlink.md
+    - name: Connectivity configuration link (deprecated)
+      items:
+      - name: Connectivity configuration link (deprecated)
+        href: ../../resources/networkaccess-connectivityconfigurationlink.md
+      - name: Get
+        href: ../../api/networkaccess-branchconnectivityconfiguration-get.md
   - name: Enriched audit logs
     items:
     - name: Enriched audit logs
@@ -3959,17 +3883,23 @@ items:
       href: ../../api/networkaccess-settings-list-enrichedauditlogs.md
     - name: Update
       href: ../../api/networkaccess-enrichedauditlogs-update.md
-  - name: Logs
+  - name: Traffic logs
     items:
-    - name: Logs
+    - name: Traffic logs
       href: ../../resources/networkaccess-logs.md
-    - name: List remoteNetworks
-      href: ../../api/networkaccess-remotenetworkhealthstatusevent-list.md
     - name: List traffic
       href: ../../api/networkaccess-logs-list-traffic.md
-  - name: Reports
+    - name: Network access traffic
+      items:
+      - name: Network access traffic
+        href: ../../resources/networkaccess-networkaccesstraffic.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-traffic.md
+    - name: Remote network health event
+      href: ../../resources/networkaccess-remotenetworkhealthevent.md
+  - name: Traffic reports
     items:
-    - name: Reports
+    - name: Traffic reports
       href: ../../resources/networkaccess-reports.md
     - name: Get transaction summaries
       href: ../../api/networkaccess-reports-transactionsummaries.md
@@ -3977,10 +3907,18 @@ items:
       href: ../../api/networkaccess-reports-entitiessummaries.md
     - name: Get cross-tenant access summary
       href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+    - name: Get cross-tenant access report
+      href: ../../api/networkaccess-reports-crosstenantaccessreport.md
     - name: Get device usage summary
       href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+    - name: Get device usage report
+      href: ../../api/networkaccess-reports-devicereport.md
     - name: Get destination summary
       href: ../../api/networkaccess-reports-getdestinationsummaries.md
+    - name: Get destination report
+      href: ../../api/networkaccess-reports-destinationreport.md
+    - name: Get user usage report
+      href: ../../api/networkaccess-reports-userreport.md
   - name: Remote network
     items:
     - name: Remote network
@@ -4017,8 +3955,6 @@ items:
         href: ../../resources/networkaccess-remotenetworkconnectivityconfiguration.md
       - name: Get
         href: ../../api/networkaccess-remotenetworkconnectivityconfiguration-get.md
-  - name: Remote network health event
-    href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
     items:
     - name: Cross-tenant access settings
@@ -4055,7 +3991,11 @@ items:
         href: ../../api/networkaccess-networkaccessroot-list-forwardingprofiles.md
       - name: Get
         href: ../../api/networkaccess-forwardingprofile-get.md
-      - name: Update forwarding profile for branch
+      - name: List forwarding profiles for branch (deprecated)
+        href: ../../api/networkaccess-branchsite-list-forwardingprofiles.md
+      - name: Create forwarding profile for branch (deprecated)
+        href: ../../api/networkaccess-branchsite-post-forwardingprofiles.md
+      - name: Update forwarding profile for branch (deprecated)
         href: ../../api/networkaccess-forwardingprofile-update.md
     - name: Forwarding policy
       items:
@@ -4083,7 +4023,7 @@ items:
       items:
       - name: Policy rule
         href: ../../resources/networkaccess-policyrule.md
-      - name: List policyRules
+      - name: List
         href: ../../api/networkaccess-policy-list-policyrules.md
       - name: Get
         href: ../../api/networkaccess-policyrule-get.md
@@ -4091,6 +4031,10 @@ items:
         href: ../../api/networkaccess-policyrule-update.md
     - name: Forwarding rule
       href: ../../resources/networkaccess-forwardingrule.md
+    - name: M 365 forwarding rule
+      href: ../../resources/networkaccess-m365forwardingrule.md
+    - name: Private access forwarding rule
+      href: ../../resources/networkaccess-privateaccessforwardingrule.md
   - name: Filtering traffic
     items:
     - name: Filtering profile
@@ -4109,13 +4053,17 @@ items:
         href: ../../resources/networkaccess-filteringpolicy.md
       - name: List
         href: ../../api/networkaccess-networkaccessroot-list-filteringpolicies.md
-      - name: Add policy
+      - name: List policies for a filtering policy profile
+        href: ../../api/networkaccess-policylink-list-policy.md
+      - name: Create
         href: ../../api/networkaccess-filteringpolicy-post-policyrules.md
       - name: Get
         href: ../../api/networkaccess-filteringpolicy-get.md
       - name: Update
         href: ../../api/networkaccess-filteringprofile-update.md
       - name: Delete
+        href: ../../api/networkaccess-filteringpolicylink-delete-policy.md
+      - name: Delete policy for a filtering policy profile
         href: ../../api/networkaccess-filteringprofile-delete-policies.md
     - name: Filtering policy link
       items:
@@ -4135,6 +4083,8 @@ items:
         href: ../../resources/networkaccess-filteringrule.md
       - name: List
         href: ../../api/networkaccess-filteringrule-list.md
+      - name: Create
+        href: ../../api/networkaccess-filteringrule-post.md
       - name: Get
         href: ../../api/networkaccess-filteringrule-get.md
       - name: Update
@@ -4224,3 +4174,47 @@ items:
         href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
       - name: Unified role
         href: ../../resources/unifiedrole.md
+- name: Partner Center security
+  items:
+  - name: Partner security score
+    items:
+    - name: Overview
+      href: ../../resources/partner-security-score-api-overview.md
+    - name: Customer insight
+      items:
+      - name: Customer insight
+        href: ../../resources/partner-security-customerinsight.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+    - name: Partner security score
+      items:
+      - name: Partner security score
+        href: ../../resources/partner-security-partnersecurityscore.md
+      - name: Get
+        href: ../../api/partner-security-partnersecurityscore-get.md
+      - name: List customer insights
+        href: ../../api/partner-security-partnersecurityscore-list-customerinsights.md
+      - name: List history
+        href: ../../api/partner-security-partnersecurityscore-list-history.md
+      - name: List requirements
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+    - name: Security requirement
+      items:
+      - name: Security requirement
+        href: ../../resources/partner-security-securityrequirement.md
+      - name: List
+        href: ../../api/partner-security-partnersecurityscore-list-requirements.md
+      - name: Get
+        href: ../../api/partner-security-securityrequirement-get.md
+    - name: Complex types
+      items:
+      - name: Admins MFA enforced security requirement
+        href: ../../resources/partner-security-adminsmfaenforcedsecurityrequirement.md
+      - name: Customer MFA insight
+        href: ../../resources/partner-security-customermfainsight.md
+      - name: Customers MFA enforced security requirement
+        href: ../../resources/partner-security-customersmfaenforcedsecurityrequirement.md
+      - name: Customers spending budget security requirement
+        href: ../../resources/partner-security-customersspendingbudgetsecurityrequirement.md
+      - name: Response time security requirement
+        href: ../../resources/partner-security-responsetimesecurityrequirement.md

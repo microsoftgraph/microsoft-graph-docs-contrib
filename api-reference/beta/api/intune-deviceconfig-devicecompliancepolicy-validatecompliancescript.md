@@ -2,7 +2,7 @@
 title: "validateComplianceScript action"
 description: "Intune Deviceconfig Devicecompliancepolicy Validatecompliancescript Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

@@ -64,7 +64,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 
 ## Optional query parameters
 
-This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmO
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecording-using-contentcorrelationid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

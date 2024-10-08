@@ -87,8 +87,6 @@ Content-type: application/json
 }
 ```
 
-To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
-
 ## Security groups and mail-enabled security groups
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
@@ -298,13 +296,17 @@ Using Microsoft Graph, you can perform the following common operations on groups
 
 ## Microsoft Entra roles for managing groups
 
-To manage groups in delegated scenarios, the app must be granted the appropriate permissions and the signed-in user must be in a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). 
+To manage groups in delegated scenarios, the app must be granted the appropriate Microsoft Graph permissions and the signed-in user must be in a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-The following Microsoft Entra roles are the least privileged roles for managing all aspects of groups through Microsoft Graph, except for role-assignable groups. The least privileged role for managing role-assignable groups is **Privileged Role Administrator**.
+The following Microsoft Entra roles are the least privileged roles for all read and write operations on groups through Microsoft Graph, *except* for role-assignable groups. The least privileged role for managing role-assignable groups is **Privileged Role Administrator**.
 
 - Directory Writers
 - Groups Administrator
 - User Administrator
+
+For a summary of the least privileged admin roles for different group-related tasks, see [Least privileged roles to manage groups](/entra/identity/role-based-access-control/delegate-by-task#groups).
+
+You can also create custom roles for group-related tasks. Refer to the [Microsoft Entra built-in roles reference](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) to identify permissions that start with `microsoft.directory/groups/` which infer the permission-specific tasks, and [create a custom role](../api/rbacapplication-post-roledefinitions.md) with the selected permissions.
 
 ## Next step
 

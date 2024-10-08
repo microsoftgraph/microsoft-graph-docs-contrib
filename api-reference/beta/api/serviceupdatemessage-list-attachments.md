@@ -111,7 +111,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachments",
     "value": [
         {
             "contentType": "application/csv",
@@ -195,7 +195,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachmentsArchive",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages('MC54091')/attachmentsArchive",
     "value": "Stream"
 }
 ```
