@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 #### Response
 
-The following example shows the response. It includes only the default properties.
+The following example shows the response. that includes only the default properties.
 
 <!-- {
   "blockType": "response",
