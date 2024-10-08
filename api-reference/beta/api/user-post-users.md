@@ -20,7 +20,7 @@ The request body contains the user to create. At a minimum, you must specify the
 This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
->To create external users, use the [invitation API](invitation-post.md).
+>To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
