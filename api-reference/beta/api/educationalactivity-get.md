@@ -29,7 +29,7 @@ Permissions for the following HTTP syntax:
 GET /me/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": "GET /me/profile/educationalActivities/{id}"} -->
+<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": ["GET /me/profile/educationalActivities/{id}"]} -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
@@ -44,7 +44,7 @@ Permissions for the following HTTP syntax:
 GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": "GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"} -->
+<!-- { "blockType": "permissions", "name": "educationalactivity_get", "requestUrls": ["GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]} -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|User.Read|User.ReadWrite, User.Read.All, User.ReadBasic.All, User.ReadWrite.All|
