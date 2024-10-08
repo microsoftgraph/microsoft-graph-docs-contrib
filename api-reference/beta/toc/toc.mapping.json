@@ -2250,7 +2250,7 @@
                       ]
                     },
                     {
-                      "name": "Scenario monitoring",
+                      "name": "Health monitoring",
                       "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
                         "microsoft.graph.healthMonitoring.alertConfiguration",

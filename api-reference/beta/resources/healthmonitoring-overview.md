@@ -5,7 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-toc.title: "Scenario monitoring"
+toc.title: "Health monitoring"
 ---
 
 # Microsoft Entra Health monitoring API overview
