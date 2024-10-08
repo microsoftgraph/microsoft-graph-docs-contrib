@@ -20,7 +20,7 @@ Represents the external information for a [virtual event registration](../resour
 |Property|Type|Description|
 |:---|:---|:---|
 |referrer|String| A URL or string that represents the location from which the registrant registered. Optional. |
-|registrationId|String| The identifier for a **virtualEventExternalRegistrationInformation** object. Optional. |
+|registrationId|String| The identifier for a **virtualEventExternalRegistrationInformation** object. Optional. If set, the maximum supported length is 256 characters.|
 
 ## JSON representation
 
