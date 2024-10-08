@@ -49,8 +49,6 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
-> **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
-
 ## Request headers
 
 | Header       | Value |
