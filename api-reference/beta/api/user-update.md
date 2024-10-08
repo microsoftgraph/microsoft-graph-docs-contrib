@@ -28,24 +28,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "user_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
->[!NOTE]
-> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
->   - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
->   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
-> - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
-> - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
-> - To update the **employeeLeaveDateTime** property:
->   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
->   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
-> - To update the **customSecurityAttributes** property:
->   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
->   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
-> - The following lesser-privileged permissions are also available for specific scenarios:
->   - *User-Mail.ReadWrite.All* to update the **otherMails** property.
->   - *User-PasswordProfile.ReadWrite.All* to update the **passwordProfile** property.
->   - *User-Phone.ReadWrite.All* to update the **businessPhones** and **mobilePhone** properties.
->   - *User.EnableDisableAccount.All* + *User.Read.All* to update the **accountEnabled** property.
->   - *User.ManageIdentities.All* to update the **identities** property.
+### Permissions for specific scenarios
+- Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+- To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privileged administrator roles:
+  - In delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission and the signed-in user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+  - In app-only scenarios in addition to Microsoft Graph permissions, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+- To update the **employeeLeaveDateTime** property:
+  - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
+- To update the **customSecurityAttributes** property:
+  - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+- *User-Mail.ReadWrite.All* is the least privileged permission to update the **otherMails** property.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to update the **passwordProfile** property.
+- *User-Phone.ReadWrite.All* is the least privileged permission to update the **businessPhones** and **mobilePhone** properties.
+- *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to update the **accountEnabled** property.
+- *User.ManageIdentities.All* is *required* to update the **identities** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -81,9 +79,9 @@ PATCH /users/{id | userPrincipalName}
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the *Global Administrator* role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><li> To update this property, the calling app must be assigned the *User-LifeCycleInfo.Read.All* and *User.Read.All* permissions. <li> To update this property in delegated scenarios, the admin needs the Global Administrator role. |
 |employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. |
-|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
+|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection. <br/><br/> **NOTE:** Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object isn't allowed, unless the **user** object already contains a local account identity.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.com`. For Azure AD B2C accounts, this property can be updated up to only 10 times with unique SMTP addresses. Changes to this property also updates the user's **proxyAddresses** collection to include the value as an SMTP address. Can't be updated to `null`.|
