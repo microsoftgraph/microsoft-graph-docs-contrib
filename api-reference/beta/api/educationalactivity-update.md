@@ -29,7 +29,7 @@ Permissions for the following HTTP syntax:
 PATCH /me/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_update", "requestUrls": "PATCH /me/profile/educationalActivities/{id}"} -->
+<!-- { "blockType": "permissions", "name": "educationalactivity_update", "requestUrls": ["PATCH /me/profile/educationalActivities/{id}"]} -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|User.ReadWrite|User.ReadWrite.All|
@@ -44,7 +44,7 @@ Permissions for the following HTTP syntax:
 PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
-<!-- { "blockType": "permissions", "name": "educationalactivity_update", "requestUrls": "PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}"} -->
+<!-- { "blockType": "permissions", "name": "educationalactivity_update", "requestUrls": ["PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}"]} -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|User.ReadWrite|User.ReadWrite.All|
