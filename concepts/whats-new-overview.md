@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2024: New and generally available
 
+### Teamwork and communications | Messaging
+
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+
+### Users
+
 Published the following lesser privileged permissions for managing specific scenarios on the [user](/graph/api/resources/user) object:
 
 | Permission | Comments |
@@ -29,6 +35,10 @@ Published the following lesser privileged permissions for managing specific scen
 | User.DeleteRestore.All | Least privileged permission to [delete a user](/graph/api/user-delete), [restore a deleted user from the recycle bin](/graph/api/directory-deleteditems-restore), or [permanently delete a deleted user from the recycle bin](/graph/api/directory-deleteditems-delete). Also allows retrieving deleted users via the `/directory/deleteditems/microsoft.graph.user` endpoint. |
 
 ## October 2024: New in preview only
+
+### Teamwork and communications | Messaging
+
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
 ### Users
 
