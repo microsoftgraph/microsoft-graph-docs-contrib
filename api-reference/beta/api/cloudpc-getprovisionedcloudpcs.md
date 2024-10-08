@@ -35,6 +35,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{groupId}',servicePlanId='{servicePlanId}')
 ```
 
+## Optional query parameters
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. You can use `$select` to get specific properties, including those that aren't returned by default.
+
 ## Request headers
 
 |Name|Description|
@@ -58,14 +62,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all provisioned Cloud PCs and their default properties
+
+The following example shows how to get all provisioned Cloud PCs and their default properties.
+
+#### Request
 
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.getProvisionedCloudPCs"
+  "name": "cloudpc.getProvisionedCloudPCs_1"
 }
 -->
 ``` http
@@ -106,14 +114,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 ---
 
-### Response
+#### Response
 
-The following example shows the response.
+The following example shows the response. It includes only the default properties.
 
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.cloudPC)",
-  "name": "cloudpc.getProvisionedCloudPCs",
+  "name": "cloudpc.getProvisionedCloudPCs_1",
   "truncated": true
 }
 -->
@@ -175,5 +183,67 @@ Content-Type: application/json
             "provisioningPolicyName": "Test-Policy"
         }
     ]
+}
+```
+
+### Example 2: Get all provisioned Cloud PCs and specific properties
+
+The following example shows how to get all provisioned Cloud PCs and use `$select` to get specific properties, including nondefault properties.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "cloudpc.getProvisionedCloudPCs_2"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='30d0e128-de93-41dc-89ec-33d84bb662a0',servicePlanId='9ecf691d-8b82-46cb-b254-cd061b2c02fb')?$select=id,displayName,powerState,connectivityResult,lastLoginResult,lastRemoteActionResult,osVersion,provisioningPolicyName,userAccountType
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "Collection(microsoft.graph.cloudPC)",
+  "name": "cloudpc.getProvisionedCloudPCs_2",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.cloudPC",
+      "id": "662009bc-7732-4f6f-8726-25883518b33e",
+      "displayName": "Demo-0",
+      "powerState": "running",
+      "connectivityResult": "",
+      "lastLoginResult": "2020-07-23T10:29:57Z",
+      "lastRemoteActionResult": "Succeed",
+      "osVersion": null,
+      "provisioningPolicyName": "Test-Policy",
+      "userAccountType": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.cloudPC",
+      "id": "ac74ae8b-85f7-4272-88cc-5419267403ed",
+      "displayName": "Demo-1",
+      "powerState": "running",
+      "connectivityResult": "",
+      "lastLoginResult": "2020-07-23T10:29:57Z",
+      "lastRemoteActionResult": "Succeed",
+      "osVersion": null,
+      "provisioningPolicyName": "Test-Policy",
+      "userAccountType": null
+    }
+  ]
 }
 ```
