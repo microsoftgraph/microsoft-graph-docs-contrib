@@ -225,7 +225,7 @@ You can submit your Microsoft Graph connector packaged as a Teams app extended a
 
 You can use the [step-by-step submission guide](/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
 
-You need to submit a PDF in the **Additional certification info** step. Microsoft uses the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
+You need to submit a PDF in the **Additional certification info** step. Microsoft uses the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Microsoft 365 Copilot. Your PDF must have the following sections:
 
 * Test accounts, license keys, and credentials
 * Custom Vertical Name
@@ -236,7 +236,7 @@ You need to submit a PDF in the **Additional certification info** step. Microsof
 
 ### Test accounts, license keys, and credentials
 
-Create a user account on your demo tenant that Microsoft can use to validate your Microsoft Graph connector. This can be done in the [Users section](https://admin.microsoft.com/Adminportal/Home?#/users/:/adduser) of the Microsoft 365 Admin Center. Ensure that this new user account has a Copilot for Microsoft 365 license.
+Create a user account on your demo tenant that Microsoft can use to validate your Microsoft Graph connector. This can be done in the [Users section](https://admin.microsoft.com/Adminportal/Home?#/users/:/adduser) of the Microsoft 365 Admin Center. Ensure that this new user account has a Microsoft 365 Copilot license.
 
 In this section of the PDF, provide the credentials and any applicable license keys for this new user account. This information is mandatory. To learn more about how to prepare the user account for validation, see [best practices for providing test notes](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist?tabs=desktop#compile-testing-instructions).
 
@@ -253,11 +253,11 @@ In the Semantic Labels section, indicate which properties from your connection s
 
 ### Sample Prompts
 
-In the Sample Prompts section, provide two sample prompts that Microsoft can use to validate your Microsoft Graph connector in Copilot for Microsoft 365. These prompts should include at least a partial match to the `title` semantic label. These prompts are mandatory.
+In the Sample Prompts section, provide two sample prompts that Microsoft can use to validate your Microsoft Graph connector in Microsoft 365 Copilot. These prompts should include at least a partial match to the `title` semantic label. These prompts are mandatory.
 
 ### Connection Description
 
-In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft uses this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsoft 365. This description is optional.
+In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft uses this to ensure that your Microsoft Graph connection has a rich description for Microsoft 365 Copilot. This description is optional.
 
 ### Activity Settings
 
