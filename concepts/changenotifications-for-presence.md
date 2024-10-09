@@ -26,7 +26,7 @@ Use webhooks to subscribe to users' presence information and get notifications w
 
 ## Supported resources for presence
 
-Subscriptions have a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](change-notifications-with-resource-data.md).
+A single user can create one presence subscription per unique application with a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](change-notifications-with-resource-data.md).
 
 The following table lists the types of presence changes you can subscribe to. For more information, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
@@ -34,6 +34,7 @@ The following table lists the types of presence changes you can subscribe to. Fo
 |:--------------------------------------------- |:-------------------------------------------------------------- |:---------------------- |
 | Single user presence changes                  | `communications/presences/{id}`                                |Updated                |
 | Bulk user presence changes (maximum 650 user IDs) | `communications/presences?$filter=id in ('{id}', '{id}', ...)` | Updated                |
+
 
 ## Subscribe to presence changes 
 
