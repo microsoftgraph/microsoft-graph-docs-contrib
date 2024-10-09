@@ -123,7 +123,7 @@ HTTP/1.1 204 No content
 
 ## Error responses
 
-The request returns `400 Bad Request` if the file isn't checked out. Requests made with Delegated access return `423 Locked` if another user has the file checked out. Requests made with Application access can discard any checkout 
+The request returns `400 Bad Request` if the file isn't checked out. Requests made with delegated access return `423 Locked` if another user has the file checked out. Requests made with application access can discard any checkout 
 
 For more information about how errors are returned, see [Error responses][error-response].
 
