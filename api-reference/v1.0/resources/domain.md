@@ -34,6 +34,7 @@ To associate a domain with a tenant:
 |[List](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
 |[Create](../api/domain-post-domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
 |[Get](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
+|[Get root domain](../api/domain-get-rootdomain.md) | [domain](domain.md) | Get the root domain of a subdomain.|
 |[Update](../api/domain-update.md) | [domain](domain.md) |Updates a domain.|
 |[Delete](../api/domain-delete.md) | None |Deletes a domain.|
 |[Force delete](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
@@ -59,7 +60,6 @@ To associate a domain with a tenant:
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property isn't set, a default value of 90 days is used. |
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 |supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values that you can add or remove using the API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
-|rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 
 ## Relationships
 
@@ -68,6 +68,7 @@ Relationships between a domain and other objects in the directory such as its ve
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Doesn't support `$expand`. Supports `$filter` by the OData type of objects returned. For example, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|rootDomain|[domain](domain.md)| Root domain of a subdomain. Read-only, Nullable. Supports `$expand`.|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Doesn't support `$expand`. |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Doesn't support `$expand`.|
 |federationConfiguration|[internalDomainFederation](internaldomainfederation.md)| Domain settings configured by a customer when federated with Microsoft Entra ID. Doesn't support `$expand`.|

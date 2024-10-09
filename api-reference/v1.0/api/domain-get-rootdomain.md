@@ -18,8 +18,8 @@ The API returns a single object which is the root domain of the specified subdom
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "domain_list_rootdomain" } -->
-[!INCLUDE [permissions-table](../includes/permissions/domain-list-rootdomain-permissions.md)]
+<!-- { "blockType": "permissions", "name": "domain_get_rootdomain" } -->
+[!INCLUDE [permissions-table](../includes/permissions/domain-get-rootdomain-permissions.md)]
 
 ## HTTP request
 
@@ -28,8 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /domains/contoso.com/rootDomain
+GET /domains/{id}/rootDomain
 ```
+> For {id}, specify the domain with its fully qualified domain name.
 
 ## Optional query parameters
 
@@ -47,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [domain](../resources/domain.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [domain](../resources/domain.md) object in the response body.
 
 ## Examples
 
@@ -72,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.domain)"
+  "@odata.type": "microsoft.graph.domain"
 }
 -->
 ``` http
@@ -80,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "value":
     {
       "@odata.type": "#microsoft.graph.domain",
       "id": "contoso.com",
@@ -99,6 +100,5 @@ Content-Type: application/json
       ],
       "state": null
     }
-  ]
 }
 ```

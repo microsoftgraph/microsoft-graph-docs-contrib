@@ -13643,7 +13643,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the [Get rootDomain](https://learn.microsoft.com/en-us/graph/api/domain-list-rootdomain?view=graph-rest-1.0) operation to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Description": "Added the [Get rootDomain](https://learn.microsoft.com/en-us/graph/api/domain-get-rootdomain?view=graph-rest-1.0) operation to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
         "Target": "domain"
       },
       {
