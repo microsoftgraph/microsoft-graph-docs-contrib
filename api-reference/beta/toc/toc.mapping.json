@@ -2244,17 +2244,16 @@
                   "name": "Microsoft Entra Health",
                   "childNodes": [
                     {
-                      "name": "SLA Attainment",
+                      "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
                       ]
                     },
                     {
                       "name": "Scenario monitoring",
-                      "overview": "../../resources/healthmonitoring-overview.md",
                       "resources": [
-                        "microsoft.graph.healthMonitoring.alertConfiguration",
-                        "microsoft.graph.healthMonitoring.alert"
+                        "microsoft.graph.healthMonitoring.alert",
+                        "microsoft.graph.healthMonitoring.alertConfiguration"
                       ]
                     }
                   ]

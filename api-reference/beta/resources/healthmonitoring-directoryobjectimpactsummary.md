@@ -21,7 +21,7 @@ This type is an abstract type from which the following resources inherit:
 - [servicePrincipalImpactSummary](../resources/healthmonitoring-serviceprincipalimpactsummary.md)
 - [userImpactSummary](../resources/healthmonitoring-userimpactsummary.md)
 
-Inherits from [microsoft.graph.healthMonitoring.resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).
+Inherits from [resourceImpactSummary](../resources/healthmonitoring-resourceimpactsummary.md).
 
 ## Properties
 |Property|Type|Description|

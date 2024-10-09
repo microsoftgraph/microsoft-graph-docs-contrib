@@ -14,8 +14,8 @@ Namespace: microsoft.graph.healthMonitoring
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represent a summary of the impacted resource type for a Microsoft Entra Health scenario monitoring [alert](../resources/healthmonitoring-alert.md).
+
 This resource is an abstract type from which the [directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md) resource inherits.
-- 
 
 ## Properties
 |Property|Type|Description|

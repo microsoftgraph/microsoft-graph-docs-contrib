@@ -18,7 +18,7 @@ Represents a collection of supporting data locations that can be queried for deb
 This resource is an open type that allows other properties to be passed in.
 
 
-Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
+Inherits from [healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
 
 ## Properties
 

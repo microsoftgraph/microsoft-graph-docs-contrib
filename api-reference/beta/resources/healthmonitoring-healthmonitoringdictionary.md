@@ -16,7 +16,7 @@ Namespace: microsoft.graph.healthMonitoring
 Represents a dictionary type used in Microsoft Entra Health monitoring. This resource is an open type that allows other properties to be passed in.
 
 
-Inherits from [microsoft.graph.healthMonitoring.Dictionary](../resources/healthmonitoring-dictionary.md).
+Inherits from [Dictionary](../resources/healthmonitoring-dictionary.md).
 
 ## Properties
 

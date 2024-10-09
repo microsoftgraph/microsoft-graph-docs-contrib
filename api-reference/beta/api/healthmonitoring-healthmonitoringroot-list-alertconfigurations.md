@@ -1,5 +1,5 @@
 ---
-title: "List alertConfiguration objects"
+title: "List alertConfigurations"
 description: "Get a list of the alertConfiguration objects and their properties."
 author: "huatang92"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List alertConfiguration objects
+# List alertConfigurations
 
 Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.
+Get a list of the Microsoft Entra scenario monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.
 
 ## Permissions
 

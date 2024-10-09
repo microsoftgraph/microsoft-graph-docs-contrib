@@ -1,19 +1,19 @@
 ---
-title: "List alert objects"
-description: "Get the list of the alert objects and their properties from the past 30 days."
+title: "List alerts"
+description: "Get the list of Microsoft Entra scenario monitoring alerts and their properties from the past 30 days."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List alert objects
+# List alerts
 
 Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of the [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) objects and their properties from the past 30 days.
+Get the list of the Microsoft Entra scenario monitoring [alert](../resources/healthmonitoring-alert.md) objects and their properties from the past 30 days.
 
 ## Permissions
 

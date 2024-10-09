@@ -16,7 +16,7 @@ Namespace: microsoft.graph.healthMonitoring
 Represents a summary of an impacted service principal resource type for an alert in Microsoft Entra Health scenario monitoring.
 
 
-Inherits from [microsoft.graph.healthMonitoring.directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md).
+Inherits from [directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md).
 
 ## Properties
 |Property|Type|Description|

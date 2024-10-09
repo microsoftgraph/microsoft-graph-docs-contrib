@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.healthMonitoring.alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. You can use alertConfiguration settings to specify the distribution groups where alert notifications are to be sent.
+Update the properties of a Microsoft Entra scenario monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. You can use alertConfiguration settings to specify the distribution groups where alert notifications are to be sent.
 
 This API doesn't currently support group validation.
 

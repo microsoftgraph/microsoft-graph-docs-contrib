@@ -15,7 +15,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health scenario monitoring. This resource is an open type that allows other properties to be passed in.
 
-Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
+Inherits from [healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
 
 ## Properties
 

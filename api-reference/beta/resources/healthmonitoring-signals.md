@@ -18,7 +18,7 @@ Represents a collection of signals that are used in the generation of an [alert]
 This resource is an open type that allows other properties to be passed in.
 
 
-Inherits from [microsoft.graph.healthMonitoring.healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
+Inherits from [healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
 
 ## Properties
 

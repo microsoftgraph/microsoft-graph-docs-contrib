@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.healthMonitoring.alert](../resources/healthmonitoring-alert.md) object. For example, change an alert's state from active to resolved.
+Update the properties of a Microsoft Entra scenario monitoring [alert](../resources/healthmonitoring-alert.md) object. For example, change an alert's state from active to resolved.
 
 ## Permissions
 
