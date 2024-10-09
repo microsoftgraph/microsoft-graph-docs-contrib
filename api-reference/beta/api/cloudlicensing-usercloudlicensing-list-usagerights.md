@@ -43,6 +43,10 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 
 The following examples show how to get usage rights information for users based on specific filters:
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId eq 639dec6b-bb19-468b-871c-c5c441c4b0cb
 GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId in (639dec6b-bb19-468b-871c-c5c441c4b0cb, a403ebcc-fae0-4ca2-8c8c-7a907fd6c235)
