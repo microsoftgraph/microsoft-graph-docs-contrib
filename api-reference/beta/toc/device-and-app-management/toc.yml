@@ -466,6 +466,8 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
@@ -506,8 +508,6 @@ items:
       href: ../../resources/microsoftmanageddesktop.md
     - name: Unified role permission
       href: ../../resources/unifiedrolepermission.md
-    - name: Cloud PC notification setting
-      href: ../../resources/cloudpcnotificationsetting.md
 - name: Cloud printing
   displayName: Universal Print
   items:
