@@ -268,7 +268,7 @@ items:
     items:
     - name: Report root
       href: ../../resources/reportroot.md
-    - name: Copilot for Microsoft 365 usage
+    - name: Microsoft 365 Copilot usage
       items:
       - name: Get user detail
         href: ../../api/reportroot-getmicrosoft365copilotusageuserdetail.md
