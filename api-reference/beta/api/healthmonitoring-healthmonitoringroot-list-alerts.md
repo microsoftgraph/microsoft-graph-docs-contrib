@@ -1,6 +1,6 @@
 ---
 title: "List alerts"
-description: "Get the list of Microsoft Entra scenario monitoring alerts and their properties from the past 30 days."
+description: "Get the list of Microsoft Entra health monitoring alerts and their properties from the past 30 days."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of the Microsoft Entra scenario monitoring [alert](../resources/healthmonitoring-alert.md) objects and their properties from the past 30 days.
+Get the list of the Microsoft Entra health monitoring [alert](../resources/healthmonitoring-alert.md) objects and their properties from the past 30 days.
 
 ## Permissions
 

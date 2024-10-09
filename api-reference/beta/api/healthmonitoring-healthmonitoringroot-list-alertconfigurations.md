@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the Microsoft Entra scenario monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.
+Get a list of the Microsoft Entra health monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.
 
 ## Permissions
 

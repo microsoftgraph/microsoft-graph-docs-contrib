@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a Microsoft Entra scenario monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. The returned alertConfiguration object contains the settings for the distribution groups where alert notifications are to be sent.
+Read the properties and relationships of a Microsoft Entra health monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) object. The returned alertConfiguration object contains the settings for the distribution groups where alert notifications are to be sent.
 
 ## Permissions
 

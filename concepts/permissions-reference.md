@@ -2770,8 +2770,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | ac29eb50-f2f9-4518-a117-4bef18e84c7d | b7c60f27-2195-4d5f-96a7-6b98bdfd9664 |
-| DisplayText | Read and write all health monitoring alerts | Read and write all health monitoring alerts |
-| Description | Allows the app to read and write all health monitoring alerts, without a signed-in user. | Allows the app to read and write all health monitoring alerts, on behalf of the signed-in user. |
+| DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alerts |
+| Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alerts, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -2792,8 +2792,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 432e76f0-8af6-4315-a853-66ab9538f480 | b3e5ebc6-1c23-4337-8286-3f27165addb4 |
-| DisplayText | Read and write all health monitoring alerts | Read and write all health monitoring alert configurations. |
-| Description | Allows the app to read and write all health monitoring alerts, without a signed-in user. | Allows the app to read and write all health monitoring alert configurations, on behalf of the signed-in user. |
+| DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alert configurations. |
+| Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alert configurations, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
