@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.open_id_connect_identity_provider import OpenIdConnectIdentityProvider
 from msgraph_beta.generated.models.claims_mapping import ClaimsMapping
 from msgraph_beta.generated.models.open_id_connect_response_mode import OpenIdConnectResponseMode
 from msgraph_beta.generated.models.open_id_connect_response_types import OpenIdConnectResponseTypes
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OpenIdConnectIdentityProvider(
 	odata_type = "microsoft.graph.openIdConnectIdentityProvider",
 	display_name = "Login with the Contoso identity provider",

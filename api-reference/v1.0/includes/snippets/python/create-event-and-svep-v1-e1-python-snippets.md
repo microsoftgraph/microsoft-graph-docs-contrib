@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.event import Event
 from msgraph.generated.models.item_body import ItemBody
@@ -13,9 +14,7 @@ from msgraph.generated.models.attendee import Attendee
 from msgraph.generated.models.email_address import EmailAddress
 from msgraph.generated.models.attendee_type import AttendeeType
 from msgraph.generated.models.single_value_legacy_extended_property import SingleValueLegacyExtendedProperty
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Event(
 	subject = "Celebrate Thanksgiving",
 	body = ItemBody(

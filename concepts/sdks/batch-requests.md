@@ -20,11 +20,15 @@ The Microsoft Graph SDKs provide three classes to work with batch requests and r
 
 - **BatchRequestStep** - Represents a single request (such as `GET /me`) within a batch. It enables assigning a unique identifier to the request and specifying dependencies between requests.
 - **BatchRequestContent** - Simplifies creating the batch request payload. It contains multiple **BatchRequestStep** objects.
-- **BatchResponseContent** - Simplifies parsing the response from a batch request. It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
+- **BatchResponseContent** - Simplifies parsing the response from a batch request. It enables you to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
+
+### Automatic batching for request limits
+
+The Microsoft Graph SDK automatically handles batching requests with respect to the limit of 20 requests per batch. This means that if your code exceeds this limit, the SDK splits the requests into separate batches behind the scenes. This ensures that each batch complies with the limitation. You no longer need to manually implement logic to handle this batching limit, which makes your code cleaner and easier to manage.
 
 ## Simple batching example
 
-This example shows how to send multiple requests in a batch that are not dependent on each other. The requests can be run by the service in any order. This example gets the user and gets the user's calendar view for the current day.
+This example shows how to send multiple requests in a batch that are not dependent on each other. The service can run the requests in any order. This example gets the user and gets the user's calendar view for the current day.
 
 ### [C#](#tab/csharp)
 
@@ -50,10 +54,10 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ## Batches with dependent requests
 
-This example shows how to send multiple requests in a batch that are dependent on each other. The requests will be run by the service in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request will execute first.
+This example shows how to send multiple requests in a batch that are dependent on each other. The service runs the request in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request runs first.
 
 > [!NOTE]
-> If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.
+> If the add event request fails, the get calendar view request fails with a `424 Failed Dependency` error.
 
 ### [C#](#tab/csharp)
 
@@ -76,3 +80,6 @@ This example shows how to send multiple requests in a batch that are dependent o
 :::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ---
+
+
+

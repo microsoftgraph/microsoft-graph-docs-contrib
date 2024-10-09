@@ -34,16 +34,17 @@ Inherits from [entity](../resources/entity.md).
 
 | Property | Type   | Description                                                                                     |
 |:---------|:-------|:------------------------------------------------------------------------------------------------|
-| id       | String | The unique identifier for a **peopleAdminSettings** object. Inherited from [entity](entity.md). |
+| id       | String | The unique identifier for the **peopleAdminSettings** object. Inherited from [entity](entity.md). |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|itemInsights|[insightsSettings](../resources/insightssettings.md)|Represents administrator settings that manage the support for item insights in an organization.|
-|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
-|photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Represents administrator settings that manage the support for item photo updates in an organization.|
-|pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
+|itemInsights|[insightsSettings](../resources/insightssettings.md)|Administrator settings that manage the support for item insights in an organization.|
+|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection|A collection of the properties an administrator defined as visible on the Microsoft 365 profile card.|
+|photoUpdateSettings|[photoUpdateSettings](../resources/photoupdatesettings.md)|Administrator settings that manage the support for item photo updates in an organization.|
+|pronouns|[pronounsSettings](../resources/pronounssettings.md)|Administrator settings that manage the support of pronouns in an organization.|
+|namePronunciation|[namePronunciationSettings](../resources/namepronunciationsettings.md)|Administrator settings that manage the support of name pronunciation in an organization.|
 
 ## JSON representation
 
