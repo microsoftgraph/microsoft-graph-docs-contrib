@@ -24,12 +24,12 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
 }
 -->
 
-|Microsoft 365 Service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
+|Microsoft 365 Service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application|
 |:---|:---|:---|:---|
 |Microsoft OneDrive|AuditLogsQuery-OneDrive.Read.All|Not supported|AuditLogsQuery-OneDrive.Read.All|
 |Microsoft Exchange|AuditLogsQuery-Exchange.Read.All|Not supported|AuditLogsQuery-Exchange.Read.All|
 |Microsoft SharePoint|AuditLogsQuery-SharePoint.Read.All|Not supported|AuditLogsQuery-SharePoint.Read.All|
-|Microsoft Intune|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
+|Data Loss Protection for Endpoint|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
 |Microsoft Dynamics CRM|AuditLogsQuery-CRM.Read.All|Not supported|AuditLogsQuery-CRM.Read.All|
 |Microsoft Entra|AuditLogsQuery-Entra.Read.All|Not supported|AuditLogsQuery-Entra.Read.All|
 |All Audit Logs|AuditLogsQuery.Read.All|Not supported|AuditLogsQuery.Read.All|
