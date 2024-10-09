@@ -358,7 +358,7 @@
     },
     {
       "ChangeList": [
-        {
+        {    
           "Id": "ea968c7d-abd9-22b5-d562-6ac4ccf3c43a",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcBulkDisasterRecoveryFailback",
@@ -512,46 +512,46 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
-          "ApiChange": "Property",
-          "ChangedApiName": "crossRegionDisasterRecoverySetting",
-          "ChangeType": "Addition",
-          "Description": "Added the **crossRegionDisasterRecoverySetting** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
-          "Target": "cloudPcUserSetting"
-        },
-        {
-          "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcCrossRegionDisasterRecoverySetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource type.",
-          "Target": "cloudPcCrossRegionDisasterRecoverySetting"
-        },
-        {
-          "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcDisasterRecoveryAzureConnectionSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudPcDisasterRecoveryAzureConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryAzureConnectionSetting?view=graph-rest-beta) resource type.",
-          "Target": "cloudPcDisasterRecoveryAzureConnectionSetting"
-        },
-        {
-          "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting?view=graph-rest-beta) resource type.",
-          "Target": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting"
-        },
-        {
-          "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cloudPcDisasterRecoveryNetworkSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [cloudPcDisasterRecoveryNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryNetworkSetting?view=graph-rest-beta) resource type.",
-          "Target": "cloudPcDisasterRecoveryNetworkSetting"
-        }
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Property",
+              "ChangedApiName": "crossRegionDisasterRecoverySetting",
+              "ChangeType": "Addition",
+              "Description": "Added the **crossRegionDisasterRecoverySetting** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+              "Target": "cloudPcUserSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcCrossRegionDisasterRecoverySetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryAzureConnectionSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryAzureConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryAzureConnectionSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryAzureConnectionSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryNetworkSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryNetworkSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryNetworkSetting"
+          }
       ],
       "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
       "Cloud": "Prod",
@@ -5796,7 +5796,7 @@
     },
     {
       "ChangeList": [
-        {
+        {      
           "Id": "42d14f15-8f2c-46b6-9486-10291763aba0",
           "ApiChange": "Member",
           "ChangedApiName": "noLicensesAvailable",
