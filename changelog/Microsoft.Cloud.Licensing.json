@@ -59,7 +59,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "usageRights",
           "ChangeType": "Addition",
-          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource collection.",
+          "Description": "Added the **usageRights** relationship to the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.",
           "Target": "groupCloudLicensing"
         },
         {
@@ -83,7 +83,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "usageRights",
           "ChangeType": "Addition",
-          "Description": "Added the [usageRights](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource collection.",
+          "Description": "Added the **usageRights** relationship to the [userCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-userCloudLicensing?view=graph-rest-beta) resource.",
           "Target": "userCloudLicensing"
         },
         {
