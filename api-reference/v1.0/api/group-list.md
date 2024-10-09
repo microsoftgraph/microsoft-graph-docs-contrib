@@ -246,7 +246,7 @@ The following example shows a request. This request requires the **ConsistencyLe
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
-ConsistencyLevel: eventual
+
 ```
 
 # [C#](#tab/csharp)
