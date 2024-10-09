@@ -145,6 +145,7 @@ Content-Type: application/json
   "statusDetails": null,
   "errorCode": null,
   "osStatus": null,
-  "expirationDate": null
+  "expirationDate": null,
+  "osVersionNumber": null
 }
 ```
