@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/conversationmember-remove-permissions.md)]
 
 
-## HTTP Request
+## HTTP request
 
 This is a bound action to remove multiple elements from a [conversationMember](../resources/conversationmember.md) collection in a single request.
 <!-- { "blockType": "ignored" } -->
