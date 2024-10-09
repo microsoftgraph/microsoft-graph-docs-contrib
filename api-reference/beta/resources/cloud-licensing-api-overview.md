@@ -29,7 +29,7 @@ The following table lists common use cases for the cloud licensing API.
 
 ## API design details
 
-The following sections describe design details for the cloud licensing APIs.
+The following sections describe design details for the cloud licensing API.
 
 ### Usage rights
 
