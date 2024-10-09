@@ -44,7 +44,6 @@ Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](
 
 ### Teamwork and communications | Messaging
 
-- [Remove multiple members](/graph/api/conversationmember-remove?view=graph-rest-beta&preserve-view=true) from a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) in a single request.
 - Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
 ### Users
