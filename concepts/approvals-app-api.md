@@ -21,7 +21,6 @@ The following table provides the list of APIs available across Microsoft Graph f
 | [Approval item response](/graph/api/resources/approvalitemresponse?view=graph-rest-beta&preserve-view=true) | Represents a response to an approval item request. |
 | [Approval item view point](/graph/api/resources/approvalitemviewpoint?view=graph-rest-beta&preserve-view=true) |Represents the user's roles for an `approvalItem`.|
 | [Approval operation](/graph/api/resources/approvaloperation?view=graph-rest-beta&preserve-view=true) | Represents the status and details for an operation performed on `approvalItem`.|
-v-sdhakshina marked this conversation as resolved.
 
 ## Use cases
 
