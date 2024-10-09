@@ -13,7 +13,11 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries. This API only returns individual calls that involve PSTN and will not reflect other participants in a group call or meeting. A [pstnCallLowRow](../resources/callrecords-pstncalllogrow.md) **id** corresponds to a [session](../resources/callrecords-session.md) within a [callRecord](../resources/callrecords-callrecord.md) resource.
+Get a log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+
+> [!CAUTION]
+>
+>- This API doesn't return information for **Telstra** or **Softbank** calling plans.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
