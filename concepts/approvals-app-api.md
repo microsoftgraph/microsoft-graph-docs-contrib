@@ -9,8 +9,6 @@ ms.date: 07/10/2024
 
 # Approvals app APIs
 
-> [!NOTE]
-> Approvals app API is available only in [public developer preview](~/resources/dev-preview/developer-preview-intro.md).
 The approvals app API in Microsoft Teams allows you to integrate approval workflows into both Teams app and third-party apps. You can create new approvals, update existing ones, and list all approvals. It mentions the ability to create, update, and list approvals, assign approvals to users, specify custom responses, and receive notifications on Teams. As APIs support graph subscriptions, you can send notifications for approval responses. Approvals app is available as a personal app for all Teams users.
 
 The following table provides the list of APIs available across Microsoft Graph for the approvals app:
