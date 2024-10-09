@@ -3087,7 +3087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alert",
           "ChangeType": "Addition",
-          "Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alert?view=graph-rest-beta) resource. This resource type provides metrics and detailed data relating to the scenarios that Microsoft Entra Health scenario monitoring tracks the health for in your tenant.",
+          "Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alert?view=graph-rest-beta) resource. This resource type provides metrics and detailed data relating to the scenarios that Microsoft Entra Health monitoring tracks the health for in your tenant.",
           "Target": "alert"
         },
         {
@@ -3095,7 +3095,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [alertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alertConfiguration?view=graph-rest-beta) resource. Use this resource type to manage the configuration for the scenarios that Microsoft Entra Health scenario monitoring tracks the health for in your tenant.",
+          "Description": "Added the [alertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alertConfiguration?view=graph-rest-beta) resource. Use this resource type to manage the configuration for the scenarios that Microsoft Entra Health monitoring tracks the health for in your tenant.",
           "Target": "alertConfiguration"
         }
       ],

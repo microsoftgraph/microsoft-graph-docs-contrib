@@ -152,16 +152,6 @@ items:
         items:
         - name: Overview
           href: ../../resources/healthmonitoring-overview.md
-        - name: Alert
-          items:
-          - name: Alert
-            href: ../../resources/healthmonitoring-alert.md
-          - name: List
-            href: ../../api/healthmonitoring-healthmonitoringroot-list-alerts.md
-          - name: Get
-            href: ../../api/healthmonitoring-alert-get.md
-          - name: Update
-            href: ../../api/healthmonitoring-alert-update.md
         - name: Alert configuration
           items:
           - name: Alert configuration
@@ -172,6 +162,16 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
+        - name: Alert
+          items:
+          - name: Alert
+            href: ../../resources/healthmonitoring-alert.md
+          - name: List
+            href: ../../api/healthmonitoring-healthmonitoringroot-list-alerts.md
+          - name: Get
+            href: ../../api/healthmonitoring-alert-get.md
+          - name: Update
+            href: ../../api/healthmonitoring-alert-update.md
     - name: Registration and usage
       items:
       - name: Overview
@@ -296,7 +296,7 @@ items:
     items:
     - name: Report root
       href: ../../resources/reportroot.md
-    - name: Copilot for Microsoft 365 usage
+    - name: Microsoft 365 Copilot usage
       items:
       - name: Get user detail
         href: ../../api/reportroot-getmicrosoft365copilotusageuserdetail.md

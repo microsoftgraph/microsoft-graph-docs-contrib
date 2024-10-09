@@ -17,15 +17,15 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 ## Methods
 
-### Copilot for Microsoft 365 usage
+### Microsoft 365 Copilot usage
 
-For details about report views and names, see [Microsoft 365 reports - Copilot for Microsoft 365 usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
+For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
-| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Copilot for Microsoft 365 apps.                             |
-| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period.  |
-| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active and enabled users of Copilot for Microsoft 365 for a specified time period. |
+| [Get user detail](../api/reportroot-getmicrosoft365copilotusageuserdetail.md)          | Stream      | Get the most recent activity data for enabled users of Microsoft 365 Copilot apps.                             |
+| [Get user counts summary](../api/reportroot-getmicrosoft365copilotusercountsummary.md) | Stream      | Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.  |
+| [Get user counts trend](../api/reportroot-getmicrosoft365copilotusercounttrend.md)     | Stream      | Get the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period. |
 
 ### Forms activity
 
@@ -297,7 +297,7 @@ None.
 | credentialUserRegistrationDetails | [credentialUserRegistrationDetails](credentialuserregistrationdetails.md) collection  | Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.                       |
 | dailyPrintUsageByPrinter          | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of daily print usage summaries, grouped by printer.                                                                      |
 | dailyPrintUsageByUser             | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of daily print usage summaries, grouped by user.                                                                         |
-| healthMonitoring             | [microsoft.graph.healthMonitoring.healthMonitoringRoot](healthmonitoring-healthmonitoringroot.md) collection                                    | Reports for Microsoft Entra Health Scenario Monitoring.                                                                         |
+| healthMonitoring             | [microsoft.graph.healthMonitoring.healthMonitoringRoot](healthmonitoring-healthmonitoringroot.md) collection                                    | Reports for Microsoft Entra Health Monitoring.                                                                         |
 | monthlyPrintUsageByPrinter        | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of monthly print usage summaries, grouped by printer.                                                                    |
 | monthlyPrintUsageByUser           | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of monthly print usage summaries, grouped by user.                                                                       |
 | partners                          | [partners](partners.md)                                                               | Represents billing details for a Microsoft direct partner.                                                                               |

@@ -1,20 +1,20 @@
 ---
-title: "Microsoft Entra Health scenario monitoring API overview"
-description: "The Microsoft Entra Health scenario monitoring APIs allows you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications."
+title: "Microsoft Entra Health monitoring API overview"
+description: "The Microsoft Entra Health monitoring APIs allow you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-toc.title: "Scenario monitoring"
+toc.title: "Health monitoring"
 ---
 
-# Microsoft Entra Health scenario monitoring API overview
+# Microsoft Entra Health monitoring API overview
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Entra Health scenario monitoring APIs allows you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in [serviceActivity APIs](../resources/serviceactivity.md). These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
+The Microsoft Entra Health monitoring alerts APIs allow you to view anomalous usage patterns for your tenant on business-critical identity scenarios and receive alert notifications. The API is built to fire alerts based on monitoring the health metric streams in [serviceActivity APIs](../resources/serviceactivity.md). These alerts contain information about the type, date, and impact of the anomalous usage patterns and allow you to investigate and remediate issues that you find.
 
 ## Licenses
 
@@ -34,7 +34,7 @@ The following table lists some common requests that you can use with this API.
 | Update alert configuration for an alert type | [Update alert configuration](../api/healthmonitoring-alertconfiguration-update.md) |
 
 > [!NOTE]
-> You might see `unknownFutureValue` as a member in enums due to evolvable enumerations, here's how you can do to [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+> You might see `unknownFutureValue` as a member in enums due to evolvable enumerations. Here's how you can [handle future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ## Related content
 

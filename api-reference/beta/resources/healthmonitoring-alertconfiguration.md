@@ -1,6 +1,6 @@
 ---
 title: "alertConfiguration resource type"
-description: "Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health scenario monitoring."
+description: "Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health scenario monitoring. For more information about alert configurations, see [What is Microsoft Entra Health?](/entra/identity/monitoring-health/concept-microsoft-entra-health).
+Represents the configuration of an alert type defining behavior that occurs when an alert is created in Microsoft Entra Health monitoring. For more information about alert configurations, see [What is Microsoft Entra Health?](/entra/identity/monitoring-health/concept-microsoft-entra-health).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

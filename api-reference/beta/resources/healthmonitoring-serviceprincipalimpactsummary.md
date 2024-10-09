@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipalImpactSummary resource type"
-description: "Represents a summary of an impacted service principal resource type for an alert in Microsoft Entra Health scenario monitoring."
+description: "Represents a summary of an impacted service principal resource type for an alert in Microsoft Entra Health monitoring."
 author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of an impacted service principal resource type for an alert in Microsoft Entra Health scenario monitoring.
+Represents a summary of an impacted service principal resource type for an alert in Microsoft Entra Health monitoring.
 
 
 Inherits from [directoryObjectImpactSummary](../resources/healthmonitoring-directoryobjectimpactsummary.md).
