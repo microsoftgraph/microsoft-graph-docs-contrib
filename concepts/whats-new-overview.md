@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2024: New and generally available
 
+### Identity and access | Directory management
+
+- Use the **membershipRule** property on [administrativeUnit](/graph/api/resources/administrativeunit) to get or set the dynamic membership rule for an administrative unit.
+- Use the **membershipRuleProcessingState** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether the dynamic membership rule is actively processed.
+- Use the **membershipType** property on [administrativeUnit](/graph/api/resources/administrativeunit) to get or set the membership type for an administrative unit.
+
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
@@ -49,10 +55,7 @@ Announced the deprecation of shared access signatures (SAS) for authenticating E
 
 ### Identity and access | Directory management
 
-- Use the **membershipRule** property on [administrativeUnit](/graph/api/resources/administrativeunit) to get or set the dynamic membership rule for an administrative unit.
-- Use the **membershipRuleProcessingState** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether the dynamic membership rule is actively processed.
-- Use the **membershipType** property on [administrativeUnit](/graph/api/resources/administrativeunit) to get or set the membership type for an administrative unit.
-- Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
+Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
 
 ### Security | Alerts and incidents
 
