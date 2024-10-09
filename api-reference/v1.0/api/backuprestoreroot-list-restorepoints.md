@@ -24,9 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Search.Read.All|BackupRestore-Search.Read.All|
 
 ## HTTP request
 
