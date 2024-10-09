@@ -117,35 +117,6 @@ Use the **passwordResetUri** property on [internalDomainFederation](/graph/api/r
 - Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the hostname without the domain suffix.
 - Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get a logical grouping of computers within a Microsoft Windows network.
 
-### Industry data ETL
-
-Use the [start](/graph/api/industrydata-industrydatarun-start?view=graph-rest-beta&preserve-view=true) operation on the [industryDataRun](/graph/api/resources/industrydata-industrydatarun?view=graph-rest-beta&preserve-view=true) resource to perform an on-demand run, with throttling limits of up to five successful runs every 12 hours.
-
-### Teamwork and communications | Calls and online meetings
-
-Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
-
-## August 2024: New and generally available
-
-### Education
-
-- Enabled the `$orderby` query parameter for the following methods:
-  - [Get educationAssignment](/graph/api/educationassignment-get)
-  - [Get educationCategory](/graph/api/educationcategory-get)
-  - [Get educationSubmission](/graph/api/educationsubmission-get)
-- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment) resource.  
-
-### Employee experience | Employee engagement
-
-Introduced the general availability of the Viva Engage API in Microsoft Graph. A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
-
-- [Create a community](/graph/api/employeeexperience-post-communities)
-- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
-- [Get a community](/graph/api/community-get)
-- [List communities](/graph/api/employeeexperience-list-communities)
-- [Update a community](/graph/api/community-update)
-- [Delete a community](/graph/api/community-delete)
-
 ### Security | Identities
 
 - [Generate](/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta&preserve-view=true) a new deployment access key.
