@@ -1,6 +1,6 @@
 ---
 title: "iotDeviceEvidence resource type"
-description: "Represents an IoT Device that is reported as part of the security detection alert."
+description: "Represents an IoT device that is reported as part of the security detection alert."
 author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an IoT Device that is reported as part of the security detection alert.
+Represents an IoT device that is reported as part of the security detection alert.
 
 Inherits from [alertEvidence](./security-alertevidence.md).
 
@@ -21,11 +21,11 @@ Inherits from [alertEvidence](./security-alertevidence.md).
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|ioTHub|[microsoft.graph.security.azureResourceEvidence](./security-azureresourceevidence.md)|The azureResourceEvidence entity that represents the IoT Hub that the device belongs to.|
+|ioTHub|[microsoft.graph.security.azureResourceEvidence](./security-azureresourceevidence.md)|The **azureResourceEvidence** entity that represents the IoT Hub that the device belongs to.|
 |deviceId|String|The device ID.|
 |deviceName|String|The friendly name of the device.|
 |owners|Collection(String)|The owners for the device.|
-|ioTSecurityAgentId|String|The ID of the Azure Security Center for IoT agent that is running on the device.|
+|ioTSecurityAgentId|String|The ID of the Azure Security Center for the IoT agent that is running on the device.|
 |deviceType|String|The type of the device. For example, "temperature sensor," "freezer," "wind turbine," and so on.|
 |source|String|The source (microsoft/vendor) of the device entity.|
 |sourceRef|[microsoft.graph.security.urlEvidence](./security-urlevidence.md)|A URL reference to the source item where the device is managed.|
