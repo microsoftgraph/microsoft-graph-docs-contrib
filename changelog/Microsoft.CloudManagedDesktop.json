@@ -3,6 +3,24 @@
       {
         "ChangeList": [
           {
+            "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+            "ApiChange": "Parameter",
+            "ChangedApiName": "getProvisionedCloudPCs",
+            "ChangeType": "Addition",
+            "Description": "Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method.",
+            "Target": "getProvisionedCloudPCs"
+          }            
+        ],
+        "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-08T16:37:21.7521953Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "75c8a4f4-a5eb-4e9a-808a-101585271315",
             "ApiChange": "Method",
             "ChangedApiName": "retrieveSnapshots",
@@ -57,16 +75,16 @@
             "ApiChange": "Member",
             "ChangedApiName": "middleEast",
             "ChangeType": "Addition",
-            "Description": "Added the `middleEast` member to the **cloudPcSupportedRegion** enumeration.",
-            "Target": "cloudPcSupportedRegion"
+            "Description": "Added the `middleEast` member to the **cloudPcRegionGroup** enumeration.",
+            "Target": "cloudPcRegionGroup"
           },
           {
             "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
             "ApiChange": "Member",
             "ChangedApiName": "mexico",
             "ChangeType": "Addition",
-            "Description": "Added the `mexico` member to the **cloudPcSupportedRegion** enumeration.",
-            "Target": "cloudPcSupportedRegion"
+            "Description": "Added the `mexico` member to the **cloudPcRegionGroup** enumeration.",
+            "Target": "cloudPcRegionGroup"
           }
         ],
         "Id": "574e5196-9210-44e8-82e3-09603fd11e24",
