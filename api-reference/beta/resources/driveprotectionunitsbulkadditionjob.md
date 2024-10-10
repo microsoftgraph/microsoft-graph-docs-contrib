@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionUnitsBulkAdditionJob resource type"
-description: "Represents the list of drives and directoryObjectIds of OneDrive users to be added into the corresponding OneDrive Protection Policy."
+description: "Represents the list of drives and directoryObjectIds of OneDrive users to be added into the corresponding OneDrive protection policy."
 author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email address, and a list of directoryObjectIds to be added into the OneDrive Protection Policy for backup.
+Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email addresses and a list of directoryObjectIds to be added to the OneDrive protection policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 

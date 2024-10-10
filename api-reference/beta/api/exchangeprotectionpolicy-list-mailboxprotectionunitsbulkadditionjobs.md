@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [mailboxProtectionUnitsBulkAdditionJobs](../resources/mailboxprotectionunitsbulkadditionjob.md) objects associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Get a list of [mailboxProtectionUnitsBulkAdditionJobs](../resources/mailboxprotectionunitsbulkadditionjob.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 The `mailboxes`, and `directoryObjectIds` field are deliberately omitted from the response body in order to limit the response size.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

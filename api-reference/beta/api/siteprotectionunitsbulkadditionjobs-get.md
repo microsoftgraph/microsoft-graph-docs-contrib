@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [siteProtectionUnitsBulkAdditionJob](../resources/siteprotectionunitsbulkadditionjob.md) object by it's `id` associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Get a [siteProtectionUnitsBulkAdditionJob](../resources/siteprotectionunitsbulkadditionjob.md) object by the ID associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

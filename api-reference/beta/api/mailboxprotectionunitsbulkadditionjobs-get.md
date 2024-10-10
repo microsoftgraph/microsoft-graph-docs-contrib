@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md) object by its `id` associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Get a [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md) object by the ID associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
