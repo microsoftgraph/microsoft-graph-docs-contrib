@@ -1,6 +1,6 @@
 ---
-title: "ediscoverySearch: purgeData"
-description: "Use the purge data method to delete Teams messages in a eDiscovery search."
+title: "Purge data"
+description: "Use the purge data method to delete Mailbox and Teams messages in a eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -8,14 +8,12 @@ doc_type: "apiPageType"
 ---
 
 
-# ediscoverySearch: purgeData
+# Purge data
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete Microsoft Teams messages contained in a [eDiscovery search](../resources/security-ediscoverysearch.md). 
-
->**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
+Delete Mailbox and Microsoft Teams messages contained in a [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 You can collect and purge the following categories of Teams content:
 - **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people. Teams 1:1 chats are also called *conversations*.
@@ -59,8 +57,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `permanentlydeleted`, `unknownFutureValue`. |
-|purgeAreas|microsoft.graph.security.purgeAreas| Options to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
+|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `permanentlyDelete`. |
+|purgeAreas|microsoft.graph.security.purgeAreas| Options to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`. |
 
 
 ## Response
@@ -87,7 +85,8 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/purgeData
 
 {
-
+  "purgeType": "recoverable",
+  "purgeAreas": "teamsMessages"
 }
 ```
 
