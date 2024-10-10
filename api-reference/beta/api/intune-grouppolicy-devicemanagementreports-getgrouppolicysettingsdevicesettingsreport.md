@@ -59,6 +59,7 @@ The following table shows the parameters that can be used with this action.
 |top|Int32||
 |sessionId|String||
 |filter|String||
+|skiptoken|String||
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 
 Content-type: application/json
-Content-length: 278
+Content-length: 313
 
 {
   "name": "Name value",
@@ -90,7 +91,8 @@ Content-length: 278
   "skip": 4,
   "top": 3,
   "sessionId": "Session Id value",
-  "filter": "Filter value"
+  "filter": "Filter value",
+  "skiptoken": "Skiptoken value"
 }
 ```
 

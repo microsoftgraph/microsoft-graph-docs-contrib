@@ -27,7 +27,6 @@ The following table lists the possible error and response codes that can be retu
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidCreateRequest|Can't process the request because it's malformed or incorrect.|Create request is null, invalid or its size is too large.|
 |400|InvalidDisplayName|Thrown when the policy display name exceeds the character limit or is empty/null.|Please ensure policy name length should be > 0 chars and <= 1024 chars.|
-|400|EmptyProtectionUnitList|Thrown when the Protection Unit list in the create request is empty.|Protection Unit list is empty.|
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
@@ -101,7 +100,7 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|400|InvalidPolicyI|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
+|400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
 |403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't activate policy. The policy isn't in correct state. Please make sure the policy is in Inactive state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
@@ -246,12 +245,11 @@ The error codes in this section apply to the following API:
 
 - [Create protectionRuleBase](/graph/api/protectionrulebase-post)
 
-The following table lists the possible error and response codes that can be returned.
+The following table lists the possible error and response code that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleCreateRequest|Can't process the request because it's malformed or incorrect.|Invalid create request.|
-|500|InvalidProtectionRuleDetails|A transient error where Service is unable to save the rule details.|Invalid rule details.|
 
 ## Get inclusion rule by ID API errors
 
@@ -259,12 +257,11 @@ The error codes in this section apply to the following API:
 
 - [Get protectionRuleBase](/graph/api/protectionrulebase-get)
 
-The following table lists the possible error and response codes that can be returned.
+The following table lists the possible error and response code that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidInclusionRuleId|Rule ID in request is invalid, null, or empty.|Rule ID is invalid.|
-|404|ProtectionRuleNotFound|ID is valid but rule details do not exist.|Inclusion details not found.|
 
 ## Get restore point API errors
 

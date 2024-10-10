@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to. For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription.
+Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to. For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. Direct user licensing is an alternative to [group-based licensing](../api/group-assignlicense.md).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku-list.md). 
 
@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove. Required.|
+|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove. Required. Can be an empty collection.|
 
 
 ## Response
