@@ -1,5 +1,49 @@
 {
   "changelog": [
+    {
+        "ChangeList": [
+          {
+            "Id": "80b58cf2-cc97-4e32-87fb-3ecd969c2c26",
+            "ApiChange": "ComplexType",
+            "ChangedApiName": "cloudPcNotificationSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcNotificationSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcNotificationSetting?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcNotificationSetting"
+          },
+          {
+            "Id": "80b58cf2-cc97-4e32-87fb-3ecd969c2c26",
+            "ApiChange": "Property",
+            "ChangedApiName": "notificationSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationSetting** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+            "Target": "cloudPcUserSetting"
+          }
+        ],
+        "Id": "80b58cf2-cc97-4e32-87fb-3ecd969c2c26",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-08T05:03:56.9188489Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },  
+    {
+        "ChangeList": [
+          {
+            "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+            "ApiChange": "Parameter",
+            "ChangedApiName": "getProvisionedCloudPCs",
+            "ChangeType": "Addition",
+            "Description": "Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method.",
+            "Target": "getProvisionedCloudPCs"
+          }            
+        ],
+        "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-08T16:37:21.7521953Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
       {
         "ChangeList": [
           {
