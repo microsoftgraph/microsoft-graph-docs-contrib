@@ -677,7 +677,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as **forwardedMessageReference**. The original message that was forwarded is also available in the attachment **content**.
+The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as `forwardedMessageReference`. The original message that was forwarded is also available in the attachment **content**.
 
 <!-- {
   "blockType": "response",
