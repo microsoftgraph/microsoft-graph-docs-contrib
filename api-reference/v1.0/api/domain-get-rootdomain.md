@@ -12,7 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the [root domain](../resources/domain.md) of a subdomain.
-The API returns a single object which is the root domain of the specified subdomain.
+
+This API returns a single object.
 
 ## Permissions
 
