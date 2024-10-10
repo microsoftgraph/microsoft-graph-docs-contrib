@@ -25,6 +25,7 @@ The following points apply to restoring a protection unit:
 - Mailbox draft items aren't backed up and can't be restored.
 - A restore isn't performed if the current state of the mailbox is the same as the point in time you're trying to restore it to.
 - SharePoint sites and OneDrive accounts that are restored to a new URL have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually.
+- When a restore to a new location is performed, the property details of the new location are not populated immediately, even after the restore session has succeeded. It can take more than 15 minutes for the properties to be populated.
 - The global admin, SharePoint admin, or Exchange admin can initiate a restore of up to 1,000 SharePoint sites, 1,000 OneDrive users, and 1000 mailboxes queued in parallel at a time.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
