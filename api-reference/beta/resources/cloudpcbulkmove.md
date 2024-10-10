@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcBulkRestart resource type
+# cloudPcBulkMove resource type
 
 Namespace: microsoft.graph
 
