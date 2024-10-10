@@ -2765,6 +2765,16 @@ items:
           href: ../../api/fido2authenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/fido2authenticationmethodconfiguration-delete.md
+      - name: Hardware OATH
+        items:
+        - name: Hardware OATH
+          href: ../../resources/hardwareoathauthenticationmethodconfiguration.md
+        - name: Get
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-get.md
+        - name: Update
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-update.md
+        - name: Delete
+          href: ../../api/hardwareoathauthenticationmethodconfiguration-delete.md
       - name: Microsoft Authenticator
         items:
         - name: Microsoft Authenticator
