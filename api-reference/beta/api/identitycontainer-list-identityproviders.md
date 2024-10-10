@@ -18,6 +18,8 @@ For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../
 
 For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
+For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), custom OIDC identoty provider or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -345,6 +347,36 @@ Content-type: application/json
             "displayName": "Email with password",
             "identityProviderType": "EmailPassword",
             "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.OidcIdentityProvider",
+            "displayName": "B2C Test",
+            "clientId": "e2ea5db9-545a-491f-a881-37690ee12c79",
+            "issuer": "https://contos.b2clogin.com/b07624bf-a5cd-47be-97e4-42702c46c74e/v2.0/",
+            "wellKnownEndpoint": "https://contoso.b2clogin.com/contos.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
+            "responseType": "code",
+            "scope": "openid profile email offline_access",
+            "clientAuthentication": {
+              "@odata.type": "#microsoft.graph.OIDCClientSecretAuthentication",
+              "clientSecret": "***********"
+            },
+            "inboundClaimMapping": {
+              "sub": "sub",
+              "name": "name",
+              "given_name": "given_name",
+              "family_name": "family_name",
+              "email": "email",
+              "email_verified": "email_verified",
+              "phone_number": "phone_number",
+              "phone_number_verified": "phone_number_verified",
+              "address": {
+                "street_address": "street_address",
+                "locality": "locality",
+                "region": "region",
+                "postal_code": "postal_code",
+                "country": "country"
+              }
+          }
         }
     ]
 }
