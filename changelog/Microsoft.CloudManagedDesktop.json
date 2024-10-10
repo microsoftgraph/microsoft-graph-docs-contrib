@@ -5819,6 +5819,24 @@
       "CreatedDateTime": "2024-08-16T06:58:17.7596396Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+          {
+              "Id": "9a7f237c-3e5e-457f-900a-bab0385515e3",
+              "ApiChange": "Member",
+              "ChangedApiName": "cloudPcOnPremisesConnection",
+              "ChangeType": "Addition",
+              "Description": "Added the `inUseByCloudPc` and `healthCheckPaused` member to the **cloudPcOnPremisesConnection** entity.",
+              "Target": "cloudPcOnPremisesConnection"
+          }
+      ],
+      "Id": "9a7f237c-3e5e-457f-900a-bab0385515e3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-10T08:07:55.9412735Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }
