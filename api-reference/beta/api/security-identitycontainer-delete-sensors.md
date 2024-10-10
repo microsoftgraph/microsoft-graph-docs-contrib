@@ -99,7 +99,6 @@ DELETE https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92c
 
 ---
 
-
 ### Response
 
 The following example shows the response.

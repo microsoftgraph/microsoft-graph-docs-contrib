@@ -105,8 +105,6 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
-    - name: Bulk set review status
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info for user
@@ -123,6 +121,8 @@ items:
       href: ../../api/cloudpc-validatebulkresize.md
     - name: Create snapshot
       href: ../../api/cloudpc-createsnapshot.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Bulk reprovision remote action (deprecated)
@@ -143,6 +143,8 @@ items:
       href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
+    - name: Bulk set review status (deprecated)
+      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -301,10 +303,10 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: Get
       href: ../../api/cloudpcsnapshot-get.md
+    - name: List (deprecated)
+      href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -412,6 +414,8 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk create snapshot
+      href: ../../resources/cloudpcbulkcreatesnapshot.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
@@ -430,6 +434,8 @@ items:
       href: ../../resources/cloudpcbulkrestart.md
     - name: Cloud PC bulk restore
       href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk set review status
+      href: ../../resources/cloudpcbulksetreviewstatus.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC connection setting
@@ -460,6 +466,8 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
