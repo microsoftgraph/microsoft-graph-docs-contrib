@@ -54,7 +54,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type                                                          | Description                                                                                                                                                                                                                                                                    |
 | :------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | addLicenses    | [assignedLicense](../resources/assignedlicense.md) collection | A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object. |
-| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove. Required.                                                                                                                                                                                                                   |
+| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove. Required. Can be an empty collection.                                                                                                                                                                                                                   |
 
 ## Response
 
@@ -154,7 +154,7 @@ location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/di
   "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
   "createdDateTime": "2021-03-12T11:15:03Z",
   "groupTypes": [],
-  "securityEnabled": true,
+  "securityEnabled": true
 }
 ```
 
@@ -241,7 +241,7 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   "deletedDateTime": null,
   "classification": null,
   "createdDateTime": "2018-04-18T22:05:03Z",
-  "securityEnabled": true,
+  "securityEnabled": true
 
 }
 ```
