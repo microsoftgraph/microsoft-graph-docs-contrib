@@ -3,7 +3,6 @@
       {
         "ChangeList": [
           {
-
             "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcBulkMove",
