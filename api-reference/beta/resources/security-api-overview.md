@@ -114,11 +114,11 @@ Alerts from the following security providers are available via the legacy **aler
 
 [Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets users in a tenant experience a realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant administrators to view launched [simulation](simulation.md) exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
-## eDiscovery (preview)
+## eDiscovery
 
 [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
 
-## Audit logs query (preview)
+## Audit log query (preview)
 
 [Microsoft Purview Audit](/microsoft-365/compliance/audit-solutions-overview) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
@@ -196,12 +196,15 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 > **Note:** We recommend that you use the threat submission API instead of the deprecated Information Protection threat assessment API. The threat submission API provides unified security threat submission functionality and adds unified result support, user submission query support, tenant allow block list support, admin review support and app-only mode support.
 
-## Email and collaboration protection (preview)
+## Email and collaboration protection
 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) is a cloud-based email filtering service that helps protect your organization against advanced threats to email and collaboration tools, like phishing, business email compromise, and malware attacks. You can use the Microsoft Graph **analyzedemails** and **remediate** APIs to retrieve email metadata and perform response actions (soft delete, hard delete, move to junk, move to Inbox) on analyzed messages.
 
 > **Note:** These APIs are only available for Defender for Office 365 Plan 2 or Microsoft 365 A5/E5/F5/G5 Security service plans. For the most up-to-date list of service plans, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
+
+### Sensors
+The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
 
 ## Common use cases
 
@@ -265,6 +268,7 @@ The following are some of the most popular requests for working with the Microso
 |Remediate analyzed email|[analyzedEmail: remediate](../api/security-analyzedemail-remediate.md )|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/remediate](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/remediate&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Identities**|||
 | List health issues | [List health issues](../api/security-identityContainer-list-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List sensors | [List sensors](../api/security-identityContainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
