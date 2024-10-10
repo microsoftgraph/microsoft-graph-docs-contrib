@@ -4,8 +4,8 @@
       "ChangeList": [
         {
           "Id": "93e74e76-b79a-44cf-8f1c-2a8973eeb5b5",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcStatus",
+          "ApiChange": "Member",
+          "ChangedApiName": "preparing",
           "ChangeType": "Addition",
           "Description": "Added the `preparing` member to the **cloudPcStatus** enumeration.",
           "Target": "cloudPcStatus"
