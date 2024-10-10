@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get details about OneDrive activity by user.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - OneDrive for Business activity](https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww?view=o365-worldwide).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
