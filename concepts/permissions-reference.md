@@ -405,8 +405,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 0bc85aed-7b0b-437a-bac8-3b29a1b84c99 | ee3409fe-617f-43cf-bd1e-fc8b38049e69 |
-| DisplayText | Read audit logs data from Endpoint Data Loss Prevention workload | Read audit logs data from Endpoint Data Loss Prevention workload |
-| Description | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint Data Loss Prevention workload, on behalf of the signed-in user. |
+| DisplayText | Read audit logs data from Endpoint/Intune workload | Read audit logs data from Endpoint/Intune workload |
+| Description | Allows the app to read and query audit logs from Endpoint/Intune workload, without a signed-in user | Allows the app to read and query audit logs from Endpoint/Intune workload, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
