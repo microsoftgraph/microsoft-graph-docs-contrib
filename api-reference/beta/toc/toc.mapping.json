@@ -490,7 +490,8 @@
             "cloudPcWindowsSettings",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission"
+            "unifiedRolePermission",
+            "cloudPcNotificationSetting"
           ],
           "childNodes": [
             {
