@@ -252,6 +252,60 @@ items:
         href: ../../resources/provisioningobjectsummary.md
       - name: List
         href: ../../api/provisioningobjectsummary-list.md
+- name: Microsoft 365 Monitoring
+  items:
+  - name: Overview
+    href: ../../resources/report.md
+  - name: Service activity
+    href: ../../resources/m365monitoringserviceactivity.md
+  - name: Exchange Online monitoring
+    items:
+    - name: Get active users metrics for desktop mail apps
+      href: ../../api/serviceactivity-getActiveUserMetricsForDesktopMailByReadEmail.md
+    - name: Get active users metrics for Outlook apps for mobile
+      href: ../../api/serviceactivity-getActiveUserMetricsForOutlookMobileByReadEmail.md
+    - name: Get active users metrics for Outlook for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForOutlookWebByReadEmail.md
+    - name: Get active users metrics for Outlook apps for Mac
+      href: ../../api/serviceactivity-getActiveUserMetricsForOutlookMacByReadEmail.md
+    - name: Get active users metrics for iOS or Android mail apps
+      href: ../../resources/serviceactivity-getActiveUserMetricsForiOSOrAndroidMailByReadEmail.md
+    - name: Get active users metrics for opening Outlook for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForOutlookWebByAppOpening.md
+    - name: Get active users metrics for modern authentication
+      href: ../../api/serviceactivity-getActiveUserMetricsForEmailByModernAuthentication.md
+    - name: Get metrics for messages successfully delivered by Exchange
+      href: ../../api/serviceactivity-getMessageVolumeMetricsForEmailDelivery.md
+    - name: Get metrics for connections to Exchange Online from communication apps
+      href: ../../api/serviceactivity-getConnectivityMetricsForExchange.md
+  - name: Microsoft 365 Teams monitoring
+    items:
+    - name: Get metrics for messages successfully sent by chat
+      href: ../../api/serviceactivity-getMessageVolumeMetricsForTeamsChat.md
+    - name: Get usage metrics based on succesful app launch
+      href: ../../api/serviceactivity-getUsageMetricsForTeamsByLaunch.md
+    - name: Get usage metrics based on successful join meeting
+      href: ../../api/serviceactivity-getUsageMetricsForTeamsByMeetingsJoined.md
+    - name: Get metrics for the percentage of audio streams that received Quality of Experience(QoE) telemetry
+      href: ../../api/serviceactivity-getAudioStreamQoEMetricsForTeams.md
+    - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
+      href: ../../resources/serviceactivity-getAudioStreamsOverUdpMetricsForTeams.md
+  - name: OneDrive for Business monitoring (Preview)
+    items:
+    - name: Get device metrics for download online-only files
+      href: ../../api/serviceactivity-getDeviceMetricsForOneDriveForBusinessBydownloadOnlineOnlyFiles.md
+  - name: Microsoft 365 for the web monitoring
+    items:
+    - name: Get active users metrics for Excel for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForExcelWeb.md
+    - name: Get active users metrics for OneNote for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForOneNoteWeb.md
+    - name: Get active users metrics for PowerPoint for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForPowerPointWeb.md
+    - name: Get active users metrics for Visio for the web
+      href: ../../api/serviceactivity-getActiveUserMetricsForVisioWeb.md
+    - name: Get active users metrics for Word for the web
+      href: ../../resources/serviceactivity-getActiveUserMetricsForWordWeb.md
 - name: Microsoft 365 usage reports
   items:
   - name: Overview
