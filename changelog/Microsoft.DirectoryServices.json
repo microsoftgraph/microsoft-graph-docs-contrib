@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+        "ChangeList": [
+            {
+              "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
+              "ApiChange": "Resource",
+              "ChangedApiName": "user",
+              "ChangeType": "Change",
+              "Description": "Changed the following on-prem synced properties of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: **onPremisesDistinguishedName**, **onPremisesDomainName**, **onPremisesSamAccountName**, **onPremisesSecurityIdentifier**, **onPremisesUserPrincipalName**.",
+              "Target": "user"
+            }
+          ],
+        "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-01T16:45:20.304139Z",
+        "WorkloadArea": "User",
+        "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
@@ -13609,6 +13627,40 @@
     "CreatedDateTime": "2024-09-11T18:27:13.3184952Z",
     "WorkloadArea": "Identity and access",
     "SubArea": "Directory management"
+  },
+  {
+    "ChangeList": [
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "rootDomain",
+        "ChangeType": "Addition",
+        "Description": "Added the **rootDomain** relationship to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target": "domain"
+      },
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "Method",
+        "ChangedApiName": "GET",
+        "ChangeType": "Addition",
+        "Description": "Added the [Get rootDomain](https://learn.microsoft.com/en-us/graph/api/domain-get-rootdomain?view=graph-rest-1.0) operation to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+        "Target": "domain"
+      },
+      {
+        "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+        "ApiChange": "NavigationPropertyBinding",
+        "ChangedApiName": "rootDomain",
+        "ChangeType": "Addition",
+        "Description": "Added the [rootDomain](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+        "Target": "domains"
+      }
+    ],
+      "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-09T23:15:04.1920065Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
   }
   ]
 }
