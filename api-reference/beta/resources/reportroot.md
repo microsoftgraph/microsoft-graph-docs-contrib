@@ -17,9 +17,9 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 ## Methods
 
-### Copilot for Microsoft 365 usage
+### Microsoft 365 Copilot usage
 
-For details about report views and names, see [Microsoft 365 reports - Copilot for Microsoft 365 usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
+For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
@@ -297,6 +297,7 @@ None.
 | credentialUserRegistrationDetails | [credentialUserRegistrationDetails](credentialuserregistrationdetails.md) collection  | Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.                       |
 | dailyPrintUsageByPrinter          | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of daily print usage summaries, grouped by printer.                                                                      |
 | dailyPrintUsageByUser             | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of daily print usage summaries, grouped by user.                                                                         |
+| healthMonitoring             | [microsoft.graph.healthMonitoring.healthMonitoringRoot](healthmonitoring-healthmonitoringroot.md) collection                                    | Reports for Microsoft Entra Health Monitoring.                                                                         |
 | monthlyPrintUsageByPrinter        | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of monthly print usage summaries, grouped by printer.                                                                    |
 | monthlyPrintUsageByUser           | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of monthly print usage summaries, grouped by user.                                                                       |
 | partners                          | [partners](partners.md)                                                               | Represents billing details for a Microsoft direct partner.                                                                               |
@@ -305,7 +306,7 @@ None.
 | security                          | [securityReportsRoot](securityreportsroot.md)                                         | Provides the ability to launch a simulated phishing attack that organizations can learn from.                                            |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](serviceprincipalsigninactivity.md) collection        | Represents a collection of sign-in activities of service principals.                                                                     |
 | serviceActivity                   | [serviceActivity](serviceactivity.md)                                                 | Reports that relate to tenant-level authentication activities in Microsoft Entra.                                                        |
-| sla                               | [serviceLevelAgreementRoot](servicelevelagreementroot.md)                             | Reports that relate to tenant-level Microsoft Entra SLA attainment.                                                                      |
+| sla                               | [serviceLevelAgreementRoot](servicelevelagreementroot.md)                             | Reports that relate to tenant-level Microsoft Entra Health SLA attainment.                                                                      |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](usercredentialusagedetails.md) collection                | Represents the self-service password reset (SSPR) usage for a given tenant.                                                              |
 | userInsights                      | [userInsightsRoot](userinsightsroot.md)                                               | Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers. |
 
