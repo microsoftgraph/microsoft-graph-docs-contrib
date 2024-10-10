@@ -80,6 +80,18 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |keyId|String|The Apple key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
+### customOidcIdentityProvider
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
+|issuer|String|The issuer url.|
+|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
+|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
+|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
+|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
@@ -249,6 +261,78 @@ The following example shows a request.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
+  "displayName": "Apple"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-appleidentityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-appleidentityprovider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appleidentityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-appleidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-appleidentityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-appleidentityprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-appleidentityprovider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-appleidentityprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Update a specific **OIDC identity provider** (only for Azure AD External)
+
+#### Request
+
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "OIDCIdentityProvider",
+  "sampleKeys": ["OIDCIdentityProvider"]
+}
+-->
+
+``` http
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDCIdentityProvider
 Content-type: application/json
 
 {
