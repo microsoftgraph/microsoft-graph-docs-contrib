@@ -41,30 +41,6 @@
             "ChangeType": "Addition",
             "Description": "Added the [siteProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
             "Target": "siteProtectionUnitsBulkAdditionJob"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-            "Target": "solutions"
-          },
-          {
-            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
-            "ApiChange": "NavigationPropertyBinding",
-            "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs",
-            "ChangeType": "Addition",
-            "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteProtectionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-            "Target": "solutions"
           }
         ],
         "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
