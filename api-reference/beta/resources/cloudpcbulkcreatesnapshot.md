@@ -28,8 +28,8 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |initiatedByUserPrincipalName|String|The user principal name (UPN) of the user who initiated this bulk action. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |status|[cloudPcBulkActionStatus](../resources/cloudpcbulkaction.md#cloudpcbulkactionstatus-values)|The status of the bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|storageAccountId|String|The unique identifier for Secure Azure Storage Account, which will receive the restore points(snapshots). The value cannot be modified once it is created. For example, '/subscriptions/06199b73-30a1-4922-8734-93feca64cdf6/resourceGroups/res2627/providers/Microsoft.Storage/storageAccounts/sto1125'. Read-Only.|
-|accessTier|[cloudPcBlobAccessTier](#cloudPcBlobAccessTier-values)|Indicates the access tier of the blob file that the snapshot will be copied to. Possible values are `hot`, `cool`, `cold` and `archive`, default value is `hot`. Read-Only.|
+|storageAccountId|String|The unique identifier for Secure Azure Storage Account, which receives the restore points(snapshots). The value cannot be modified once it is created. For example, '/subscriptions/06199b73-30a1-4922-8734-93feca64cdf6/resourceGroups/res2627/providers/Microsoft.Storage/storageAccounts/sto1125'. Read-Only.|
+|accessTier|[cloudPcBlobAccessTier](#cloudPcBlobAccessTier-values)|Indicates the access tier of the blob file that the snapshot is copied to. Possible values are `hot`, `cool`, `cold`, and `archive`, default value is `hot`. Read-Only.|
 
 
 ### cloudPcBlobAccessTier values
