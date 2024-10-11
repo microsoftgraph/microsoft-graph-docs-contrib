@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email addresses and a list of directoryObjectIds to be added to the OneDrive protection policy for backup.
+Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email addresses, drives, and, directoryObjectIds to be added to the OneDrive protection policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
