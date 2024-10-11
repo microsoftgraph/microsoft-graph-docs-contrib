@@ -34,7 +34,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ### cloudPcBlobAccessTier values
 
-|Member name|Description|
+|Member|Description|
 |:---|:---|
 |hot|Indicates the blob access tier is "hot", an online tier optimized for storing data that is accessed or modified frequently.|
 |cool|Indicates the blob access tier is "cool", an online tier optimized for storing data that is infrequently accessed or modified.|
