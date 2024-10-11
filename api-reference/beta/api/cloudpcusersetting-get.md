@@ -129,14 +129,14 @@ Content-Type: application/json
       "userRestoreEnabled": true
     },
     "crossRegionDisasterRecoverySetting": {
-    "crossRegionDisasterRecoveryEnabled": true,
-    "maintainCrossRegionRestorePointEnabled": true,
-    "disasterRecoveryNetworkSetting": {
+      "crossRegionDisasterRecoveryEnabled": true,
+      "maintainCrossRegionRestorePointEnabled": true,
+      "disasterRecoveryNetworkSetting": {
         "regionName": "westus",
-        "regionGroup": "usEast",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium"
     },
-    "disasterRecoveryType": "premium"
-  },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -207,29 +207,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcUserSetting",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
-    "selfServiceEnabled": true,
-    "localAdminEnabled": false,
-    "resetEnabled": true,
-    "restorePointSetting": {
-      "frequencyInHours": 16,
-      "frequencyType": "sixteenHours",
-      "userRestoreEnabled": true
-    },
-    "lastModifiedDateTime": "2021-02-01T10:29:57Z",
-    "createdDateTime": "2021-02-01T10:29:57Z",
-    "assignments": [
-      {
-        "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
-        "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-        "createdDateTime": "2021-02-01T10:29:57Z",
-        "target": {
-          "@odata.type":"microsoft.graph.cloudPCManagementGroupAssignmentTarget",
-          "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
-          }
+  "@odata.type": "#microsoft.graph.cloudPcUserSetting",
+  "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
+  "displayName": "Display Name value",
+  "selfServiceEnabled": true,
+  "localAdminEnabled": false,
+  "resetEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "frequencyType": "sixteenHours",
+    "userRestoreEnabled": true
+  },
+  "lastModifiedDateTime": "2021-02-01T10:29:57Z",
+  "createdDateTime": "2021-02-01T10:29:57Z",
+  "assignments": [
+    {
+      "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
+      "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+      "createdDateTime": "2021-02-01T10:29:57Z",
+      "target": {
+        "@odata.type": "microsoft.graph.cloudPCManagementGroupAssignmentTarget",
+        "groupId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
       }
-    ]
+    }
+  ]
 }
 ```
