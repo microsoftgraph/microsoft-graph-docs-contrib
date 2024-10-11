@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a mailboxProtectionUnitsBulkAdditionJob associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). It contains a list of email address, and a list of directoryObjectIds to be added into the the Exchange Protection Policy for backup.
+Represents the properties of a mailboxProtectionUnitsBulkAdditionJob associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). It contains a list of email addresses and a list of directoryObjectIds to be added to the Exchange Protection Policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
