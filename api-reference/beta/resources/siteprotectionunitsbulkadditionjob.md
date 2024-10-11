@@ -36,7 +36,7 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 |error|[publicError](../resources/publicerror.md)|Contains error details if any site-url resolution fails.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the job.|
-|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are: `active`, `completed`, `completedWithErrors`.|
+|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are:  `unknown`, `active`, `completed`, `completedWithErrors`, and  `unknownFutureValue`.|
 |siteWebUrls|Collection(String)|The list of SharePoint site URLs to add into the SharePoint protection policy.|
 |siteIds|Collection(String)|The list of SharePoint siteIds to add into the SharePoint protection policy.|
 

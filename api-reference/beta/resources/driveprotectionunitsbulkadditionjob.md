@@ -36,7 +36,7 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 |error|[publicError](../resources/publicerror.md)|Contains error details if any email address resolution fails.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the job.|
-|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are: `active`, `completed`, `completedWithErrors`.|
+|status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are:  `unknown`, `active`, `completed`, `completedWithErrors`, and  `unknownFutureValue`.|
 |drives|Collection(String)|The list of email addresses to add into the OneDrive protection policy.|
 |directoryObjectIds|Collection(String)|The list of OneDrive directoryObjectIds to add into the OneDrive protection policy.|
 
