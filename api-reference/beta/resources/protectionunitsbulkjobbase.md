@@ -27,7 +27,7 @@ The following limitation applies to this resource:
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the bulk job associated to the policy.|
-|displayName|String|The name of the Protection Units bulk addition job.|
+|displayName|String|The name of the protection units bulk addition job.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the job.|
 |createdDateTime|DateTimeOffset|The time of creation of the job.|
 |error|[publicError](../resources/publicerror.md)|Error details containing resource resolution failures, if any.|
@@ -39,10 +39,10 @@ The following limitation applies to this resource:
 
 |Member | Description |
 |:------|:------------|
-|unknown | The status signifies that the job’s state is indeterminate, possibly due to a temporary system issue or error. |
-|active | The status of the job when it's running.|
-|completed | The status of the job when it's successfully applied to the corresponding policy.|
-|completedWithErrors | The status when the job finished running, but encountered errors.|
+|unknown | The job is in an indeterminate state, possibly due to a temporary system issue or error. |
+|active | The job is running.|
+|completed | The job when is successfully applied to the corresponding policy.|
+|completedWithErrors | The job finished running but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
 
 ## Relationships
