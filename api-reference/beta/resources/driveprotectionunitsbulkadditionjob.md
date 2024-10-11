@@ -29,16 +29,16 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the job associated with the OneDrive protection policy.|
-|displayName|String|The name of the job.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the job.|
 |createdDateTime|DateTimeOffset|The date and time that the job was created.|
+|directoryObjectIds|Collection(String)|The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.|
+|displayName|String|The name of the job.|
+|drives|Collection(String)|The list of email addresses to add to the OneDrive protection policy.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if any email address resolution fails.|
+|id|String|The unique identifier of the job associated with the OneDrive protection policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the job.|
 |status|[protectionUnitsBulkJobStatus](../resources/protectionunitsbulkjobbase.md#protectionunitsbulkjobstatus-values )|Status of the job. The possible values are:  `unknown`, `active`, `completed`, `completedWithErrors`, and  `unknownFutureValue`.|
-|drives|Collection(String)|The list of email addresses to add into the OneDrive protection policy.|
-|directoryObjectIds|Collection(String)|The list of OneDrive directoryObjectIds to add into the OneDrive protection policy.|
 
 ## Relationships
 
