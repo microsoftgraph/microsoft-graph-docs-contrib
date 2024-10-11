@@ -4935,6 +4935,7 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
+<<<<<<< HEAD
 ### cloudPCPerformanceReportName values
 
 | Member                 |
@@ -4957,3 +4958,111 @@ Possible values for user account types (group membership), per Windows definitio
 |false|
 |true|
 |unknownFutureValue|
+=======
+### changeItemService values
+
+|Member|
+|:---|
+|accessReviews|
+|appProxy|
+|audit|
+|authenticationsLogins|
+|azureADDomainServices|
+|b2B|
+|b2CConsumerIdentityManagement|
+|conditionalAccess|
+|deviceAccessManagement|
+|deviceRegistrationandManagement|
+|directoryManagement|
+|enterpriseApps|
+|entitlementManagement|
+|groupManagement|
+|identityProtection|
+|internetAccess|
+|lifecycleWorkflows|
+|linkedIn|
+|managedidentitiesforAzureresources|
+|mfA|
+|microsoftAuthenticatorApp|
+|microsoftIdentityManager|
+|msGraph|
+|myApps|
+|myProfileAccount|
+|na|
+|o365Groups|
+|other|
+|privateAccess|
+|privilegedIdentityManagement|
+|provisioning|
+|rbac|
+|reporting|
+|roles|
+|selfServicePasswordReset|
+|sovereignClouds|
+|termsofUse|
+|userAccessManagement|
+|userExperienceandManagement|
+|userManagement|
+|microsoftEntraDomainServices|
+|verifiedId|
+|unknownFutureValue|
+
+### changeItemState values
+
+|Member|
+|:---|
+|available|
+|comingSoon|
+|unknownFutureValue|
+
+### roadmapItemCategory values
+
+|Member|
+|:---|
+|aadConnectCloudSync|
+|aadConnectSync|
+|accessControl|
+|authZAccessDelegation|
+|azureADDomainServices|
+|b2BB2C|
+|collaboration|
+|developerExperience|
+|deviceLifecycleManagement|
+|directory|
+|endUserExperiences|
+|entitlementManagement|
+|extensibility|
+|gdpr|
+|goLocal|
+|identityGovernance|
+|identityLifecycleManagement|
+|identitySecurityProtection|
+|inboundtoEntraID|
+|monitoringReporting|
+|outboundtoOnPremisesApplications|
+|outboundtoSaaSApplications|
+|permissionsManagement|
+|platform|
+|privilegedIdentityManagement|
+|reinventCollaboration|
+|sso|
+|standards|
+|thirdPartyIntegration|
+|userAuthentication|
+|userManagement|
+|decentralizedIdentities|
+|entraCloudSync|
+|entraConnect|
+|entraDomainServices|
+|other|
+|unknownFutureValue|
+
+### roadmapItemDeliveryStage values
+
+|Member|
+|:---|
+|privatePreview|
+|publicPreview|
+|ga|
+|unknownFutureValue|
+>>>>>>> 43d723d64c9 (Add initial stub files for Entra What's New)

@@ -1,0 +1,78 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "changeItemService",
+          "ChangeType": "Addition",
+          "Description": "Added the **changeItemService** enumeration type.",
+          "Target": "changeItemService"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "changeItemState",
+          "ChangeType": "Addition",
+          "Description": "Added the **changeItemState** enumeration type.",
+          "Target": "changeItemState"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "roadmapItemCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **roadmapItemCategory** enumeration type.",
+          "Target": "roadmapItemCategory"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "roadmapItemDeliveryStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **roadmapItemDeliveryStage** enumeration type.",
+          "Target": "roadmapItemDeliveryStage"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "announcement",
+          "ChangeType": "Addition",
+          "Description": "Added the [announcement](https://learn.microsoft.com/en-us/graph/api/resources/announcement?view=graph-rest-beta) resource.",
+          "Target": "announcement"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "changeItemBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource.",
+          "Target": "changeItemBase"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "productChanges",
+          "ChangeType": "Addition",
+          "Description": "Added the **productChanges** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roadmap",
+          "ChangeType": "Addition",
+          "Description": "Added the [roadmap](https://learn.microsoft.com/en-us/graph/api/resources/roadmap?view=graph-rest-beta) resource.",
+          "Target": "roadmap"
+        }
+      ],
+      "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-10T14:08:50.8783007Z",
+      "WorkloadArea": "Microsoft.ChangeManagement",
+      "SubArea": ""
+    }
+  ]
+}
