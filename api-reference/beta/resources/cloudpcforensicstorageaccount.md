@@ -20,6 +20,8 @@ Represents the storage account information that can be used to store a snapshot 
 |:---|:---|:---|
 |storageAccountId|String|The ID of the storage account.|
 |storageAccountName|String|The name of the storage account.|
+|accessTier|String|The accessTier of storage account. Possible values are `hot`, `cool`, `cold` and `archive`, default value is `hot`. Read-Only.|
+|immutableStorage|Boolean|Indicates whether immutability policies are configured for the storage account. When `ture`, the storage account only accepts "hot" as the snapshot(s) access tier. When `false`, the storage account accepts all valid access tiers. Read-Only.|
 
 ## Relationships
 None.
@@ -38,6 +40,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcForensicStorageAccount",
   "storageAccountId": "String",
-  "storageAccountName": "String"
+  "storageAccountName": "String",
+  "accessTier": "String",
+  "immutableStorage: "Boolean"
 }
 ```

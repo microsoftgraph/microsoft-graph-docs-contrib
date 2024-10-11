@@ -27,6 +27,7 @@ Represents details about the review status of a Cloud PC.
 |subscriptionId|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
+|accessTier|[cloudPcBlobAccessTier](#cloudPcBlobAccessTier-values)| The blob access tier of the Azure Storage account in which the Cloud PC snapshot is saved with. Possible values are `hot`, `cool`, `cold` and `archive`, default value is `hot`.|
 
 ### cloudPcUserAccessLevel values
 
@@ -36,6 +37,15 @@ Represents details about the review status of a Cloud PC.
 |restricted|1|Users are not allowed to access the Cloud PC.|
 |unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
 
+### cloudPcBlobAccessTier values
+
+|Member name|Description|
+|:---|:---|
+|hot|Indicates the blob access tier is "hot", an online tier optimized for storing data that is accessed or modified frequently.|
+|cool|Indicates the blob access tier is "cool", an online tier optimized for storing data that is infrequently accessed or modified.|
+|cold|Indicates the blob access tier is "cold", an online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
+|archive|Indicates the blob access tier is "archive", an offline tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 None.
@@ -58,7 +68,8 @@ The following JSON representation shows the resource type.
   "reviewStartDateTime": "String (timestamp)",
   "subscriptionId": "String",
   "subscriptionName": "String",
-  "userAccessLevel": "String"
+  "userAccessLevel": "String",
+  "accessTier": "String"
 }
 ```
 
