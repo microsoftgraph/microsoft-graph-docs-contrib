@@ -42,6 +42,6 @@ The following JSON representation shows the resource type.
   "storageAccountId": "String",
   "storageAccountName": "String",
   "accessTier": "String",
-  "immutableStorage: "Boolean"
+  "immutableStorage": "Boolean"
 }
 ```
