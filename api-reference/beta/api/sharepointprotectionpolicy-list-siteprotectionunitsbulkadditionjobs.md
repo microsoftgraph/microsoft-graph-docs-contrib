@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [siteProtectionUnitsBulkAdditionJobs](../resources/siteprotectionunitsbulkadditionjob.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
-The `siteWebUrls`, and `siteIds` field are deliberately omitted from the response body in order to limit the response size.
+The `siteWebUrls`, and `siteIds` values are deliberately omitted from the response body in order to limit the response size.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
