@@ -26,14 +26,14 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },  
-    {
+      {
         "ChangeList": [
           {
             "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
             "ApiChange": "Property",
             "ChangedApiName": "disasterRecoveryType",
             "ChangeType": "Addition",
-            "Description": "Added the `disasterRecoveryType` Property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
+            "Description": "Added the **disasterRecoveryType** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
             "Target": "cloudPcCrossRegionDisasterRecoverySetting"
           },          
           {
@@ -41,8 +41,8 @@
             "ApiChange": "Enumeration",
             "ChangedApiName": "cloudPcDisasterRecoveryType",
             "ChangeType": "Addition",
-            "Description": "Added the `cloudPcDisasterRecoveryType ` enum value to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
-            "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+            "Description": "Added the **cloudPcDisasterRecoveryType** enumeration type.",
+            "Target": "cloudPcDisasterRecoveryType"
           }
         ],
         "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
