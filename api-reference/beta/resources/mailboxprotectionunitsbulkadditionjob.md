@@ -1,6 +1,6 @@
 ---
 title: "mailboxProtectionUnitsBulkAdditionJob resource type"
-description: "Represents the list of mailboxes and directoryObjectIds of Exchange users to be added into the corresponding Exchange protection policy."
+description: "Represents the list of mailboxes and directory object IDs of Exchange users to be added into the corresponding Exchange protection policy."
 author: "neminbshah"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a mailboxProtectionUnitsBulkAdditionJob associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). It contains a list of email addresses and a list of directoryObjectIds to be added to the Exchange Protection Policy for backup.
+Represents the properties of a mailboxProtectionUnitsBulkAdditionJob associated with a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). It contains a list of email addresses and a list of directory object IDs to be added to the Exchange Protection Policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
