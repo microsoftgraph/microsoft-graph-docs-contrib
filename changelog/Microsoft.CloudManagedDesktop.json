@@ -5827,7 +5827,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "healthCheckPaused",
           "ChangeType": "Addition",
-          "Description": "Added the **healthCheckPaused** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **healthCheckPaused** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
           "Target": "cloudPcOnPremisesConnection"
         },
         {
@@ -5835,7 +5835,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "inUseByCloudPc",
           "ChangeType": "Addition",
-          "Description": "Added the **inUseByCloudPc** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **inUseByCloudPc** property to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
           "Target": "cloudPcOnPremisesConnection"
         }
       ],
