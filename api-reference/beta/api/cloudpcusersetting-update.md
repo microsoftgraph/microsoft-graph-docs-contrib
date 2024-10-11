@@ -89,8 +89,8 @@ Content-Type: application/json
     "crossRegionDisasterRecoveryEnabled": true,
     "maintainCrossRegionRestorePointEnabled": true,
     "disasterRecoveryNetworkSetting": {
-        "regionName": "westus",
-        "regionGroup": "usEast",
+      "regionName": "westus",
+      "regionGroup": "usEast"
     },
     "disasterRecoveryType": "premium"
   },
