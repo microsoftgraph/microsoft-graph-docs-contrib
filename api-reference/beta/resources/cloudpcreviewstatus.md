@@ -27,7 +27,7 @@ Represents details about the review status of a Cloud PC.
 |subscriptionId|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
-|accessTier|[cloudPcBlobAccessTier](#cloudPcBlobAccessTier-values)| The blob access tier of the Azure Storage account in which the Cloud PC snapshot is saved with. Possible values are `hot`, `cool`, `cold` and `archive`, default value is `hot`.|
+|accessTier|[cloudPcBlobAccessTier](#cloudpcblobaccesstier-values)| The blob access tier of the Azure Storage account in which the Cloud PC snapshot is saved with. Possible values are `hot`, `cool`, `cold` and `archive`, default value is `hot`.|
 
 ### cloudPcUserAccessLevel values
 
