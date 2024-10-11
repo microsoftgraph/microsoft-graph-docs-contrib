@@ -18,11 +18,36 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2024: New and generally available
 
+### Backup storage
+
+Updated the endpoints of the following methods:
+- [List driveProtectionUnits](/graph/api/backuprestoreroot-list-driveprotectionunits)
+- [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
+- [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits)
+
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
 ## October 2024: New in preview only
+
+### Backup storage
+
+Updated the endpoints of the following methods:
+- [List driveProtectionUnits](/graph/api/backuprestoreroot-list-driveprotectionunits?view=graph-rest-beta&preserve-view=true)
+- [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta&preserve-view=true)
+- [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta&preserve-view=true)
+
+### Device and app management | Cloud PC
+
+Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) type:
+- [List](/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-beta&preserve-view=true) all virtual event town halls created in a tenant.
+- [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
+- [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
 
 ### Teamwork and communications | Messaging
 
@@ -30,7 +55,7 @@ Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-be
 
 ### Users
 
-Changed the following on-prem synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
+Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
 - onPremisesDistinguishedName
 - onPremisesDomainName
 - onPremisesSamAccountName
