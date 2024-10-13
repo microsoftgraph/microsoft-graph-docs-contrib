@@ -138,9 +138,9 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
-    - name: Microsoft Entra Health
+    - name: Microsoft Entra Health (preview)
       items:
-      - name: SLA Attainment
+      - name: SLA attainment
         items:
         - name: Microsoft Entra authentication
           items:
@@ -152,16 +152,6 @@ items:
         items:
         - name: Overview
           href: ../../resources/healthmonitoring-overview.md
-        - name: Alert configuration
-          items:
-          - name: Alert configuration
-            href: ../../resources/healthmonitoring-alertconfiguration.md
-          - name: List
-            href: ../../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
-          - name: Get
-            href: ../../api/healthmonitoring-alertconfiguration-get.md
-          - name: Update
-            href: ../../api/healthmonitoring-alertconfiguration-update.md
         - name: Alert
           items:
           - name: Alert
@@ -172,6 +162,16 @@ items:
             href: ../../api/healthmonitoring-alert-get.md
           - name: Update
             href: ../../api/healthmonitoring-alert-update.md
+        - name: Alert configuration
+          items:
+          - name: Alert configuration
+            href: ../../resources/healthmonitoring-alertconfiguration.md
+          - name: List
+            href: ../../api/healthmonitoring-healthmonitoringroot-list-alertconfigurations.md
+          - name: Get
+            href: ../../api/healthmonitoring-alertconfiguration-get.md
+          - name: Update
+            href: ../../api/healthmonitoring-alertconfiguration-update.md
     - name: Registration and usage
       items:
       - name: Overview
