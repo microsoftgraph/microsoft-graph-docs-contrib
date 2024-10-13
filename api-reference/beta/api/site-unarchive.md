@@ -58,7 +58,7 @@ The following example shows how to unarchive a site.
 
 <!-- {
   "blockType": "request",
-  "name": "archive_site"
+  "name": "unarchive_site"
 }
 -->
 ```http
