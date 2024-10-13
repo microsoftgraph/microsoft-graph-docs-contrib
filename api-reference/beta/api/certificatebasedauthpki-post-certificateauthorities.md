@@ -129,7 +129,7 @@ Content-Type: application/json
   "thumbprint": "String",
   "certificateRevocationListUrl": null,
   "deltacertificateRevocationListUrl": null,
-  "isIssuerHintEnabled": "true"
+  "isIssuerHintEnabled": true
 }
 ```
 
