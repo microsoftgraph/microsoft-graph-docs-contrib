@@ -64,6 +64,10 @@ items:
     href: ../../api/sitesettings-get.md
   - name: Get delta
     href: ../../api/site-delta.md
+  - name: Archive Site
+    href: ../../api/site-archive.md
+  - name: Unarchive Site
+    href: ../../api/site-unarchive.md
 - name: List
   items:
   - name: List
