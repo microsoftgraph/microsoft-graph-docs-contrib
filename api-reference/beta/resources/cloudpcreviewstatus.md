@@ -44,7 +44,7 @@ Represents details about the review status of a Cloud PC.
 |hot|Indicates an online tier optimized for storing data that is accessed or modified frequently.|
 |cool|Indicates an online tier optimized for storing data that is infrequently accessed or modified.|
 |cold|Indicates an online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
-|archive|Indicates an offline access tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours.|
+|archive|Indicates an offline access tier optimized for storing data that is rarely accessed, and that has flexible latency requirements that can be up to a few hours.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
