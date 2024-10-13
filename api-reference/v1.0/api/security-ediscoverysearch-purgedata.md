@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: purgeData"
-description: "Delete mailbox and Microsoft Teams messages contained in an eDiscovery search."
+description: "Delete mailbox or Microsoft Teams messages contained in an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # ediscoverySearch: purgeData
 Namespace: microsoft.graph.security
 
-Delete mailbox and Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
+Delete mailbox or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 You can collect and purge the following categories of Teams content:
 - **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people. Teams 1:1 chats are also called *conversations*.
@@ -61,7 +61,7 @@ The following table shows the parameters that you can use with this action.
 
 If successful, this action returns a `202 Accepted` response code.
 
-If the purge data operation is started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the [Purge data operation](../resources/security-ediscoverypurgedataoperation.md) that was created to commit the purge.To check the status of the purge data operation, make a GET request to the location URL.
+If the purge data operation is started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the [Purge data operation](../resources/security-ediscoverypurgedataoperation.md) that was created to commit the purge. To check the status of the purge data operation, make a GET request to the location URL.
 
 ## Examples
 
