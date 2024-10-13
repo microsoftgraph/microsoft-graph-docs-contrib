@@ -2,11 +2,12 @@
 title: "site: archive"
 description: "Archive an active SharePoint site."
 ms.localizationpriority: medium
-author: neelporiya
+author: "neelporiya"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Archive site 
+
+# site: archive
 
 Namespace: microsoft.graph
 
