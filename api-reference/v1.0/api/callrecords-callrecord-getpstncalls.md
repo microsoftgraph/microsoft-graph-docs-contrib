@@ -11,7 +11,10 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph.callRecords
 
-Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+Get a log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+
+> [!NOTE]
+> This API doesn't return information for **Telstra** or **Softbank** calling plans.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -60,7 +63,7 @@ If there are more than 1,000 entries in the date range, the body also includes a
 
 ## Example
 
-The following example shows getting a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1,000 calls in that date range.
+The following example shows getting a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.nextLink` to get records beyond the first 1,000. For readability, the response shows only a collection of one record. Assume there are more than 1,000 calls in that date range.
 
 ### Request
 The following example shows a request.
@@ -155,4 +158,4 @@ HTTP/1.1 200 OK
 ## Related content
 
 * [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
-* [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).
+* [Direct Routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).

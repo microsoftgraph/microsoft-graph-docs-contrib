@@ -210,6 +210,8 @@ items:
     href: ../../resources/industrydata-basicfilter.md
   - name: Class group configuration
     href: ../../resources/industrydata-classgroupconfiguration.md
+  - name: Credential
+    href: ../../resources/industrydata-credential.md
   - name: Enrollment mappings
     href: ../../resources/industrydata-enrollmentmappings.md
   - name: File data connector

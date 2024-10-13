@@ -1,4 +1,4 @@
-﻿---
+---
 title: "conversationMember resource type"
 description: "Represents a user in a conversation."
 ms.localizationpriority: medium

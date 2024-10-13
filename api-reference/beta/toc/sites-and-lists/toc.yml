@@ -173,9 +173,9 @@ items:
   - name: List permissions
     href: ../../api/listitem-list-permissions.md
   - name: Create permission
-    href: ../../api/listitem-list-permissions.md
-  - name: Get permission
     href: ../../api/listitem-post-permissions.md
+  - name: Get permission
+    href: ../../api/listitem-get-permissions.md
   - name: Update permission
     href: ../../api/listitem-update-permissions.md
   - name: Delete permission

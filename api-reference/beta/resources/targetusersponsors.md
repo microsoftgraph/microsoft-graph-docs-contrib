@@ -1,5 +1,5 @@
 ---
-title: "targetUserSponsors complex type"
+title: "targetUserSponsors resource type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 author: "sadia353"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
-# targetUserSponsors complex type
+# targetUserSponsors resource type
 
 Namespace: microsoft.graph
 

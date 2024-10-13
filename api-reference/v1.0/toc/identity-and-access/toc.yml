@@ -246,6 +246,8 @@ items:
       href: ../../api/domain-post-domains.md
     - name: Get
       href: ../../api/domain-get.md
+    - name: Get root domain
+      href: ../../api/domain-get-rootdomain.md
     - name: Update
       href: ../../api/domain-update.md
     - name: Delete

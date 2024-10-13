@@ -60,17 +60,16 @@ keyCredentialConfiguration1.setCertificateBasedApplicationConfigurationIds(certi
 keyCredentialConfiguration1.setMaxLifetime(null);
 keyCredentials.add(keyCredentialConfiguration1);
 restrictions.setKeyCredentials(keyCredentials);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- applicationRestrictions = new ();
- identifierUris = new ();
- nonDefaultUriAddition = new ();
-nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime("2024-01-01T10:37:00Z");
+CustomAppManagementApplicationConfiguration applicationRestrictions = new CustomAppManagementApplicationConfiguration();
+IdentifierUriConfiguration identifierUris = new IdentifierUriConfiguration();
+IdentifierUriRestriction nonDefaultUriAddition = new IdentifierUriRestriction();
+OffsetDateTime restrictForAppsCreatedAfterDateTime6 = OffsetDateTime.parse("2024-01-01T10:37:00Z");
+nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime(restrictForAppsCreatedAfterDateTime6);
 nonDefaultUriAddition.setExcludeAppsReceivingV2Tokens(true);
 nonDefaultUriAddition.setExcludeSaml(true);
 identifierUris.setNonDefaultUriAddition(nonDefaultUriAddition);
 applicationRestrictions.setIdentifierUris(identifierUris);
-additionalData.put("applicationRestrictions", applicationRestrictions);
-restrictions.setAdditionalData(additionalData);
+restrictions.setApplicationRestrictions(applicationRestrictions);
 appManagementPolicy.setRestrictions(restrictions);
 AppManagementPolicy result = graphClient.policies().appManagementPolicies().post(appManagementPolicy);
 

@@ -1,5 +1,5 @@
 ---
-title: "approvalSettings complex type"
+title: "approvalSettings resource type"
 description: "The settings for approval as defined in a role management policy rule."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# approvalSettings complex type
+# approvalSettings resource type
 
 Namespace: microsoft.graph
 

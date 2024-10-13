@@ -1,5 +1,5 @@
 ---
-title: "userSet complex type"
+title: "userSet resource type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,13 +7,13 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# userSet complex type
+# userSet resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). It is an abstract base type inherited by the following resource types:
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). It's an abstract base type inherited by the following resource types:
 + [singleUser](singleuser.md)
 + [groupMembers](groupmembers.md)
 + [connectedOrganizationMembers](connectedorganizationmembers.md)
@@ -34,7 +34,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of userSet. A [userSet](userset.md) is an abstract base class and so would not be sent or received.  Instead, one of the following `@odata.type` values representing the inherited types would be used:
+The following JSON representation shows the resource type. A [userSet](userset.md) is an abstract base class and so wouldn't be sent or received. Instead, one of the following `@odata.type` values representing the inherited types would be used:
 + `#microsoft.graph.singleUser`
 + `#microsoft.graph.groupMembers`
 + `#microsoft.graph.connectedOrganizationMembers`

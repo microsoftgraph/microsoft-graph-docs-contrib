@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [protection rule](../resources/protectionrulebase.md) associated with a [protection policy](../resources/protectionpolicybase.md). You can use this method to create a [mailbox](../resources/mailboxprotectionrule.md), [driveProtectionRule](../resources/driveprotectionrule.md), or [siteIProtectionRule](../resources/siteprotectionrule.md).
+Create a new [protection rule](../resources/protectionrulebase.md) associated with a [protection policy](../resources/protectionpolicybase.md). You can use this method to create a [mailboxProtectionRule](../resources/mailboxprotectionrule.md), [driveProtectionRule](../resources/driveprotectionrule.md), or [siteProtectionRule](../resources/siteprotectionrule.md).
 
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 

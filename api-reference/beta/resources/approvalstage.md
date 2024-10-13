@@ -1,5 +1,5 @@
 ---
-title: "approvalStage complex type"
+title: "approvalStage resource type"
 description: "In entitlement management, used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage. In PIM, defines the settings of the approval stages in a unifiedRoleManagementPolicyApprovalRule object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# approvalStage complex type
+# approvalStage resource type
 
 Namespace: microsoft.graph
 

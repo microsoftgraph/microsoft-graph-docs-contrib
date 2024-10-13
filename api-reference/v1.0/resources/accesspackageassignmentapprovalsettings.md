@@ -1,12 +1,12 @@
 ---
-title: "accessPackageAssignmentApprovalSettings complex type"
+title: "accessPackageAssignmentApprovalSettings resource type"
 description: "Specifies the settings for approval of a request for an access package assignment in an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# accessPackageAssignmentApprovalSettings complex type
+# accessPackageAssignmentApprovalSettings resource type
 
 Namespace: microsoft.graph
 

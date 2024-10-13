@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-var result = graphClient.directory().deletedItems().byDirectoryObjectId("{directoryObject-id}").restore().post(null);
+var result = graphClient.directory().deletedItems().byDirectoryObjectId("{directoryObject-id}").restore().post();
 
 
 ```
