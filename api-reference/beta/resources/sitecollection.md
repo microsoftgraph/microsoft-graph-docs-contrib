@@ -24,7 +24,7 @@ If a [**site**](site.md) resource has a non-null **siteCollection** property, th
 | **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
 | **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.       |
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
-| **archivalDetails**  | [siteArchivalDetails][] | Represents whether the site collection is recently archived, fully archived, or reactivating. Possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.  |
+| **archivalDetails**  | [siteArchivalDetails][] | Represents whether the site collection is recently archived, fully archived, or reactivating. Possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.   |
 
 
 ## JSON representation
