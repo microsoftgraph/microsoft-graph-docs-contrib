@@ -52,9 +52,9 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|**TODO: Add Description**. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
-|certificate|Binary|The type of certificate autority whether `root` or `intermediate`. Required.|
+|certificate|Binary|The type of certificate authority whether `root` or `intermediate`. Required.|
 |displayName|String|The name of the certificateBasedAuthPki entity. Optional.|
 |issuer|String|The name of the certificate authority. Optional.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
@@ -63,7 +63,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 |thumbprint|String|The thumbprint of the certificate authority public certificate. Required.|
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
 |deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
-|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it is presented to the user in the certificate picker to be used for authentication. `false` by default. Optional.|
+|isIssuerHintEnabled|Boolean|`true` to enable the the issuer hint feature. The certificate picker presents the certificate to the user to use for authentication. `false` by default. Optional.|
 
 
 
