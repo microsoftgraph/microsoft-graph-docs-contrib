@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
-          "Description": "Added the [site: archive](https://learn.microsoft.com/en-us/graph/api/site-archive?view=graph-rest-beta) to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the [site: archive](https://learn.microsoft.com/en-us/graph/api/site-archive?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
-          "Description": "Added the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
