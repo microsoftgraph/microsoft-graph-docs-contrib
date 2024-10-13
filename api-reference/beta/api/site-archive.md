@@ -1,8 +1,8 @@
 ---
-author: neelporiya
-title: Archive site
-description: Archive a user's site.
+title: "site: archive"
+description: "Archive an active SharePoint site."
 ms.localizationpriority: medium
+author: neelporiya
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
@@ -10,7 +10,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Archive a SharePoint [site](../resources/site.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Archive an active SharePoint [site](../resources/site.md).
 
 ## Permissions
 
@@ -18,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- this will be generated automatically -->
 
-In delegated scenarios, the signed-in user must also be assigned one of the following supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) for this operation:
+In delegated scenarios, the signed-in user must also be assigned one of the following supported [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) for this operation:
 
 * SharePoint Administrator
 * Global Administrator
@@ -31,35 +33,44 @@ In delegated scenarios, the signed-in user must also be assigned one of the foll
 POST /sites/{site-id}/archive
 ```
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Request body
 
 Don't supply a request body for this method.
-
 
 ## Response 
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
-
-Here's an example that shows how to archive a site. 
+## Examples
 
 ### Request
 
+The following example shows how to archive a site.
 
-# [HTTP](#tab/http)
-
+<!-- {
+  "blockType": "request",
+  "name": "archive_site"
+}
+-->
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/archive
 ```
 
----
-
 ### Response
 
-If successful, it returns the following JSON response. 
+The following example shows the response.
 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
