@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response 
 
-If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the site that's unarchived. To check the status of the unarchive operation, make a GET request to the location URL.
+If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the site that is unarchived. To check the status of the unarchive operation, make a GET request to the location URL.
 
 ## Examples
 
