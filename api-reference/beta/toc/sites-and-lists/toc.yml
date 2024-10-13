@@ -32,6 +32,10 @@ items:
     href: ../../api/site-list-subsites.md
   - name: Search for sites
     href: ../../api/site-search.md
+  - name: Archive site
+    href: ../../api/site-archive.md
+  - name: Unarchive site
+    href: ../../api/site-unarchive.md
   - name: Follow site
     href: ../../api/site-follow.md
   - name: Unfollow site
@@ -64,10 +68,6 @@ items:
     href: ../../api/sitesettings-get.md
   - name: Get delta
     href: ../../api/site-delta.md
-  - name: Archive site
-    href: ../../api/site-archive.md
-  - name: Unarchive site
-    href: ../../api/site-unarchive.md
 - name: List
   items:
   - name: List
