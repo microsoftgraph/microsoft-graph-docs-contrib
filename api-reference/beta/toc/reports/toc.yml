@@ -138,7 +138,7 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
-    - name: Microsoft Entra Health
+    - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment
         items:
