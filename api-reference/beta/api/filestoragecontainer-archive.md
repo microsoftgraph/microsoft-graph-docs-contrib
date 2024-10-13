@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# title: "fileStorageContainer: archive"
+# fileStorageContainer: archive
 
 Archive an active [fileStorageContainer](../resources/filestoragecontainer.md).
 
