@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "accessTier",
           "ChangeType": "Addition",
-          "Description": "Added the **accessTier** property to the [cloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcReviewStatus?view=graph-rest-beta) resource.",
+          "Description": "Added the **accessTier** property to the [cloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta) resource.",
           "Target": "cloudPcReviewStatus"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "accessTier",
           "ChangeType": "Addition",
-          "Description": "Added the **accessTier** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
+          "Description": "Added the **accessTier** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkCreateSnapshot"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "storageAccountId",
           "ChangeType": "Addition",
-          "Description": "Added the **storageAccountId** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
+          "Description": "Added the **storageAccountId** property to the [cloudPcBulkCreateSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkCreateSnapshot?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkCreateSnapshot"
         },
         {
