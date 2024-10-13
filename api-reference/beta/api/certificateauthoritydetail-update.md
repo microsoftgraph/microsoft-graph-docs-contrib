@@ -78,8 +78,7 @@ If successful, this method returns a `200 OK` response code and an updated [cert
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_certificateauthoritydetail",
-  "@odata.type": "microsoft.graph.certificateAuthorityDetail"
+  "name": "update_certificateauthoritydetail"
 }
 -->
 ``` http
@@ -109,7 +108,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.certificateAuthorityDetail"
 }
 -->
 ``` http
