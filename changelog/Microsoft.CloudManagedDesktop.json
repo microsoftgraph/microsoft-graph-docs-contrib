@@ -127,7 +127,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "cloudPcBulkMove",
             "ChangeType": "Addition",
-            "Description": "Added the [cloudPcBulkMove](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkMove?view=graph-rest-beta) resource type.",
+            "Description": "Added the [cloudPcBulkMove](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkmove?view=graph-rest-beta) resource type.",
             "Target": "cloudPcBulkMove"
           }            
         ],
