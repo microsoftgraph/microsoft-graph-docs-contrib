@@ -1,16 +1,19 @@
 ---
-author: neelporiya
-title: Unarchive site
-description: Unarchive a user's site.
+title: "site: unarchive"
+description: "Unarchive an archived SharePoint site."
 ms.localizationpriority: medium
+author: "neelporiya"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Unarchive site 
+
+# site: unarchive
 
 Namespace: microsoft.graph
 
-Unarchive a SharePoint [site](../resources/site.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Unarchive an archived SharePoint [site](../resources/site.md).
 
 ## Permissions
 
@@ -18,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- this will be generated automatically -->
 
-In delegated scenarios, the signed-in user must also be assigned one of the following supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) for this operation:
+In delegated scenarios, the signed-in user must also be assigned one of the following supported [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) for this operation:
 
 * SharePoint Administrator
 * Global Administrator
@@ -31,6 +34,12 @@ In delegated scenarios, the signed-in user must also be assigned one of the foll
 POST /sites/{site-id}/unarchive
 ```
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
 ## Request body
 
 Don't supply a request body for this method.
@@ -38,32 +47,32 @@ Don't supply a request body for this method.
 
 ## Response 
 
-If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the site that's unarchived. To check the status of the unarchive operation, make a GET request to the location URL.
 
-### Response headers
-|Name|Description|
-|:---|:---|
-|Location|Location of the site being unarchived|
-
-## Example
-
-Here's an example that shows how to unarchive a site. 
+## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
+The following example shows how to unarchive a site.
 
+<!-- {
+  "blockType": "request",
+  "name": "archive_site"
+}
+-->
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/unarchive
 ```
 
----
-
 ### Response
 
-If successful, it returns the following JSON response. 
+The following example shows the response.
 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/sites/{site-id}
