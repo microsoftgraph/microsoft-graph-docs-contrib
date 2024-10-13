@@ -31,6 +31,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List sites across geographies][]                 | GET /site/getAllSites                                       |
 | [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
+| [Archive site](../api/site-archive.md)            | POST /sites/{site-id}/archive                               |
+| [Unarchive site](../api/site-unarchive.md)        | POST /sites/{site-id}/unarchive                             |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
 | [List followed sites][]                           | GET /me/followedSites                                       |
@@ -47,8 +49,6 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
-| [Archive site](../api/site-archive.md)            | POST /sites/{site-id}/archive                               |
-| [Unarchive site](../api/site-unarchive.md)        | POST /sites/{site-id}/unarchive                             |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
