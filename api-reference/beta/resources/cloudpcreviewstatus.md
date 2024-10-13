@@ -41,10 +41,10 @@ Represents details about the review status of a Cloud PC.
 
 |Member|Description|
 |:---|:---|
-|hot|Indicates the blob access tier is "hot", an online tier optimized for storing data that is accessed or modified frequently.|
-|cool|Indicates the blob access tier is "cool", an online tier optimized for storing data that is infrequently accessed or modified.|
-|cold|Indicates the blob access tier is "cold", an online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
-|archive|Indicates the blob access tier is "archive", an offline tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours.|
+|hot|Indicates an online tier optimized for storing data that is accessed or modified frequently.|
+|cool|Indicates an online tier optimized for storing data that is infrequently accessed or modified.|
+|cold|Indicates an online tier optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
+|archive|Indicates an offline access tier optimized for storing data that is rarely accessed, and that has flexible latency requirements, on the order of hours.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships

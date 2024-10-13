@@ -50,7 +50,7 @@ The following table shows the parameter that you can use with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |storageAccountId|String| The storage account which receives the restore point(snapshot).|
-|accessTier|String|Indicates the access tier of the blob file that the snapshot is copied to. Possible values are `hot`, `cool`, `cold`, and `archive`, default value is `hot`.|
+|accessTier|String|The access tier of the blob file that the snapshot is copied to. Possible values are `hot`, `cool`, `cold`, `archive`, and `unknownFutureValue`. The default value is `hot`.|
 
 ## Response
 
