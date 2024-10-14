@@ -657,7 +657,8 @@ Content-type: application/json
     "reactions": []
 }
 ```
-### Example 5: Get a chat message with a forwarded message
+
+### Example 6: Get a chat message with a forwarded message
 
 The following example shows a request to get a chat message that has a forwarded message.
 
@@ -665,10 +666,9 @@ The following example shows a request to get a chat message that has a forwarded
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_5",
+  "name": "get_chatmessage_6",
   "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1727903166936"]
 }-->
 ```msgraph-interactive
@@ -677,7 +677,7 @@ GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@t
 
 #### Response
 
-The following example shows the response. The message body contains a forwarded message as an attachment. The attachment **contentType** for forwarded message is identified as **forwardedMessageReference**. The original message that has been forwarded to is also available in attachment **content**.
+The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as `forwardedMessageReference`. The original message that was forwarded is also available in the attachment **content**.
 
 <!-- {
   "blockType": "response",

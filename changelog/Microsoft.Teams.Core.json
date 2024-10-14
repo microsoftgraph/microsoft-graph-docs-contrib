@@ -5647,7 +5647,7 @@
       "SubArea": "Messaging"
     },
     {
-      "ChangeList": [        
+      "ChangeList": [ 
         {
           "Id": "3a5a736c-80cd-4f40-b4dc-d3c3a6ea14c0",
           "ApiChange": "Property",
