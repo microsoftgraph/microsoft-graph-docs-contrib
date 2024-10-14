@@ -15,7 +15,9 @@ The container for [virtual event](virtualevent.md) APIs.
 
 ## Methods
 
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+| [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant. |
 
 ## Properties
 

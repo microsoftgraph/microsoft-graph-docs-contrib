@@ -8,6 +8,8 @@ items:
   items:
   - name: Drive
     href: ../../resources/drive.md
+  - name: List drive
+    href: ../../api/drive-list.md
   - name: Get drive
     href: ../../api/drive-get.md
   - name: Get drive root

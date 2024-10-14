@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 ---
 
-
 ### Response
 
 The following example shows the response.

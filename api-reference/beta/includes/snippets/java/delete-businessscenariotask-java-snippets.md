@@ -8,7 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().tasks().byBusinessScenarioTaskId("{businessScenarioTask-id}").delete();
+graphClient.solutions().businessScenarios().byBusinessScenarioId("{businessScenario-id}").planner().tasks().byBusinessScenarioTaskId("{businessScenarioTask-id}").delete(requestConfiguration -> {
+	requestConfiguration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
 
 ```
