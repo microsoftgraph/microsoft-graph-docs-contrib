@@ -216,20 +216,12 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ## Integrated Windows provider
 
-The integrated Windows flow allows Windows computers to acquire an access token when domain-joined silently. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+The integrated Windows flow allows Windows computers to use the Web Account Manager (WAM) to acquire an access token when domain-joined silently.
 
 > [!NOTE]
-> Integrated Windows authentication has specific requirements. See [Using MSAL.NET with Integrated Windows Authentication (IWA)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/integrated-windows-authentication) for details.
+> Authentication through WAM has specific requirements. See [Azure Identity Brokered Authentication client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity.Broker) for details.
 
 ### [C#](#tab/csharp)
-
-The `Azure.Identity` package doesn't currently support Windows-integrated authentication. Instead, create a custom access token provider using MSAL.
-
-### Access token provider
-
-:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
-
-### Create the client
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
 
@@ -243,7 +235,7 @@ Not applicable.
 
 ### [PHP](#tab/PHP)
 
-The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+Not applicable.
 
 ### [Python](#tab/python)
 
@@ -287,7 +279,7 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ## Username/password provider
 
-The username/password provider allows an application to sign in a user using their username and password. 
+The username/password provider allows an application to sign in a user using their username and password.
 
 > [!NOTE]
 > Microsoft recommends that you use the most secure authentication flow available. The authentication flow described in this procedure requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as managed identities, aren't viable. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc).
