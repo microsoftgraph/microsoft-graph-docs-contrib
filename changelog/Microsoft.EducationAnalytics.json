@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "readingAssignmentSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingAssignmentSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingAssignmentSubmission?view=graph-rest-beta) resource and associated methods.",
           "Target": "readingAssignmentSubmission"
         },
         {
@@ -39,23 +39,23 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reflectCheckInResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-beta) resource and associated methods.",
           "Target": "reflectCheckInResponse"
         },
         {
           "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
           "ApiChange": "Resource",
-          "ChangedApiName": "reportsRoot",
+          "ChangedApiName": "reportRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "reportsRoot"
         }
       ],
       "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-10-06T18:43:47.0500792Z",
-      "WorkloadArea": "Microsoft.EducationAnalytics",
+      "CreatedDateTime": "2024-10-14T18:43:47.0500792Z",
+      "WorkloadArea": "Education",
       "SubArea": ""
     }
   ]
