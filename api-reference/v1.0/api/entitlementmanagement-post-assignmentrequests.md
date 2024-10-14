@@ -56,7 +56,7 @@ For a non-administrator user to request to update their own assignment, the valu
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-If this request is an `adminAdd` or `userAdd` request, then after any approval checks an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
+If this is an `adminAdd` or `userAdd` request, then after any approval checks an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
 
 ## Examples
 
