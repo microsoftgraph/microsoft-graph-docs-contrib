@@ -106,7 +106,7 @@ The Toolkit component in Graph Explorer allows you visualize Microsoft Graph Too
 
 Click on the **History tab** to access and export queries ran in the past 30 days.
 
-:::image type="content" source="./images/history-tab-screenshot.png" alt-text="Screenshot of history tab." border="false":::
+:::image type="content" source="./images/history-tab-screenshot.png" alt-text="Screenshot of history tab.":::
 
 ### Settings
 
