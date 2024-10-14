@@ -38,7 +38,7 @@ GET /identity/productChanges/microsoft.changeManagement.announcement
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,9 +65,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.announcement not found
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.announcement
 ```
-
 
 ### Response
 
@@ -87,27 +86,26 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.announcement",
-      "id": "febb1b44-aab1-0b96-4bf7-2355ac19d5d4",
-      "changeItemState": "String",
-      "changeItemService": "String",
+      "id": "ddde9e3b-7ee4-4066-a62e-fb1fc5fb87a1",
+      "changeItemState": "comingSoon",
+      "changeItemService": "mfA",
       "tags": [
-        "String"
+        "Identity Security"
       ],
       "systemTags": [
-        "String"
+        "entra_change_announcements_90days"
       ],
       "documentationUrls": [
-        "String"
+        "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mandatory-multifactor-authentication"
       ],
-      "shortDescription": "String",
-      "title": "String",
-      "description": "String",
-      "announcementDateTime": "String (timestamp)",
-      "targetDateTime": "String (timestamp)",
-      "impactLink": "String",
-      "isCustomerActionRequired": "Boolean"
+      "shortDescription": "Learn how multifactor authentication (MFA) can protect your data and identity and get ready for upcoming MFA requirement.",
+      "title": "Upcoming MFA Enforcement on Microsoft Entra admin center",
+      "description": "*Omitted for brevity*",
+      "announcementDateTime": "2024-08-16T00:00:00Z",
+      "targetDateTime": "2024-08-16T00:00:00Z",
+      "impactLink": null,
+      "isCustomerActionRequired": true
     }
   ]
 }
 ```
-

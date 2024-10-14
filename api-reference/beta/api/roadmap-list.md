@@ -33,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.roadmap not found
+GET /identity/productChanges/microsoft.changeManagement.roadmap
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,9 +65,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.roadmap not found
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.roadmap
 ```
-
 
 ### Response
 
@@ -87,27 +86,24 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.roadmap",
-      "id": "5fcf403b-2330-55b7-51b3-27db4061e8bc",
-      "changeItemState": "String",
-      "changeItemService": "String",
-      "tags": [
-        "String"
-      ],
+      "id": "8370d119-d695-4dd9-bce2-00e893fadf7d",
+      "changeItemState": "available",
+      "changeItemService": "enterpriseApps",
+      "tags": null,
       "systemTags": [
-        "String"
+        "entra_roadmap_highlight_new_feature"
       ],
       "documentationUrls": [
-        "String"
+        "https://learn.microsoft.com/en-us/entra/identity-platform/claims-customization-custom-claims-policy"
       ],
-      "shortDescription": "String",
-      "title": "String",
-      "description": "String",
-      "deliveryStage": "String",
-      "category": "String",
-      "publishedDateTime": "String (timestamp)",
-      "gotoLink": "String"
-    }
+      "shortDescription": "Custom Claims API allows admins to manage and update additional claims for their Enterprise Applications seamlessly through MS Graph.",
+      "title": "Custom Claims API for Claims Configuration of Enterprise Apps",
+      "description": "*Ommited for brevity.*",
+      "deliveryStage": "publicPreview",
+      "category": "sso",
+      "publishedDateTime": "2024-10-01T07:00:00Z",
+      "gotoLink": "null"
+  }
   ]
 }
 ```
-

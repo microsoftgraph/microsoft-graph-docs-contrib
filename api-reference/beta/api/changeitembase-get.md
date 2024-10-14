@@ -33,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/productChanges/{changeItemBaseId}
+GET /identity/productChanges/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/{changeItemBaseId}
+GET https://graph.microsoft.com/beta/identity/productChanges/{id}
 ```
 
 
@@ -104,4 +104,3 @@ Content-Type: application/json
   }
 }
 ```
-

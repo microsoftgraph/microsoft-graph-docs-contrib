@@ -17,7 +17,6 @@ Namespace: microsoft.graph
 
 Inherits from [changeItemBase](../resources/changeitembase.md).
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -78,4 +77,3 @@ The following JSON representation shows the resource type.
   "isCustomerActionRequired": "Boolean"
 }
 ```
-

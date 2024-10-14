@@ -38,7 +38,7 @@ GET /identity/productChanges
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -67,7 +67,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/productChanges
 ```
-
 
 ### Response
 
@@ -106,4 +105,3 @@ Content-Type: application/json
   ]
 }
 ```
-
