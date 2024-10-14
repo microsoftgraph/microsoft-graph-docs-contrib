@@ -512,6 +512,8 @@ items:
       items:
       - name: Virtual event townhall
         href: ../../resources/virtualeventtownhall.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-townhalls.md
       - name: Create
         href: ../../api/virtualeventsroot-post-townhalls.md
       - name: Get
@@ -522,10 +524,16 @@ items:
         href: ../../api/virtualeventtownhall-publish.md
       - name: Cancel
         href: ../../api/virtualeventtownhall-cancel.md
+      - name: List by user role
+        href: ../../api/virtualeventtownhall-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventtownhall-getbyuseridandrole.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -536,8 +544,6 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
