@@ -306,7 +306,6 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
-   "@odata.count":2,
    "value":[
       {
          "id":"11111111-2222-3333-4444-555555555555",
