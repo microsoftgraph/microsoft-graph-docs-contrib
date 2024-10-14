@@ -8,7 +8,7 @@
           "ChangedApiName": "reprovisionCloudPc",
           "ChangeType": "Deletion",
           "Description": "Removed the **reprovisionCloudPc** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-          "Target": "managedDevice"
+          "Target": "cloudPC"
         },
         {
           "Id": "5e979ab3-1bda-4842-8392-6c94e388062b",
@@ -16,7 +16,7 @@
           "ChangedApiName": "resizeCloudPc",
           "ChangeType": "Deletion",
           "Description": "Removed the **resizeCloudPc** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-          "Target": "managedDevice"
+          "Target": "cloudPC"
         },
         {
           "Id": "5e979ab3-1bda-4842-8392-6c94e388062b",
@@ -24,7 +24,7 @@
           "ChangedApiName": "restoreCloudPc",
           "ChangeType": "Deletion",
           "Description": "Removed the **restoreCloudPc** method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-          "Target": "managedDevice"
+          "Target": "cloudPC"
         }
       ],
       "Id": "5e979ab3-1bda-4842-8392-6c94e388062b",
