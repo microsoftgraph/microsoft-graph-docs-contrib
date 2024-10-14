@@ -1,8 +1,6 @@
 ---
 title: "serviceActivity: getActiveUserMetricsForExcelWeb"
-description: "This operation gets all the active usage based on the number of active users opening or saving Excel for the web.
-
-"
+description: "This operation gets all the active usage based on the number of active users opening or saving Excel for the web."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"

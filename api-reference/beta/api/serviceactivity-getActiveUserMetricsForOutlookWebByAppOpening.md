@@ -21,8 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|ServiceActivity-Exchange.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ServiceActivity-Exchange.Read.All|Not available.|[!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getActiveUserMetricsForOutlookWebByAppOpening-permissions.md)]
-
+|Application|ServiceActivity-Exchange.Read.All|Not available.|
 
 ## HTTP request
 
