@@ -47,7 +47,7 @@ For example, to run a Post request, select POST in the drop-down list for the HT
 1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API.
 1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component, and Adaptive cards relevant to the query.  
 
-:::image type="content" source="./images/GE-tutorial-step4-run-your-first-query.png" alt-text="Screenshot of the Graph Explorer running the POST "create a new application" query." border="true":::
+:::image type="content" source="./images/GE-tutorial-step4-run-query.png" alt-text="Screenshot of the Graph Explorer running the POST "create a new application" query." border="true":::
 
 ### Step 5: Modify permissions
 
