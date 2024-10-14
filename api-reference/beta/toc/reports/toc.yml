@@ -285,7 +285,7 @@ items:
   - name: Overview
     href: ../../resources/report.md
   - name: Service activity
-    href: ../../resources/m365monitoringserviceactivity.md
+    href: ../../resources/serviceactivity.md
   - name: Exchange Online monitoring
     items:
     - name: Get active users metrics for desktop mail apps
