@@ -50,7 +50,7 @@ For an administrator to request to remove an assignment, the value of the **requ
 
 For a non-administrator user to request to create their own assignment for either a first assignment or to renew an assignment, the value of the **requestType** property is `userAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to update their own assignment, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being updated. The **schedule** property contains the updated schedule.
+For a non-administrator user to request to update their own assignment, the value of the **requestType** property is `userUpdate`. The **assignment** property contains the **ID** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being updated. The **schedule** property contains the updated schedule.
 
 ## Response
 
