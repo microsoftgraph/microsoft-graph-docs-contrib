@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reportsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "reportsRoot"
         }
       ],
