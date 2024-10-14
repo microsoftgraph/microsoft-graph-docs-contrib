@@ -77,7 +77,7 @@ jobs:
           git add .
           git commit -m "Correct errors in permissions reference"
           git checkout -b $branchName
-          git push --set-upstream origin $branchName
+          git push --set-upstream origin $branchName -f
           
           gh pr create --base main --title $prTitle --body "Scheduled permissions reference update" --reviewer "FaithOmbongi,msewaweru" --label "ready for content review"
         }

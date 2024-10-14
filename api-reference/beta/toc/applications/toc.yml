@@ -89,6 +89,36 @@ items:
       href: ../../api/federatedidentitycredential-delete.md
   - name: Policies
     items:
+    - name: Application management policy
+      items:
+      - name: Overview
+        href: ../../resources/applicationauthenticationmethodpolicy.md
+      - name: App management policy
+        items:
+        - name: App management policy
+          href: ../../resources/appmanagementpolicy.md
+        - name: List
+          href: ../../api/appmanagementpolicy-list.md
+        - name: Create
+          href: ../../api/appmanagementpolicy-post.md
+        - name: Get
+          href: ../../api/appmanagementpolicy-get.md
+        - name: Update
+          href: ../../api/appmanagementpolicy-update.md
+        - name: Delete
+          href: ../../api/appmanagementpolicy-delete.md
+        - name: List applies to
+          href: ../../api/appmanagementpolicy-list-appliesto.md
+        - name: Create applies to
+          href: ../../api/appmanagementpolicy-post-appliesto.md
+      - name: Tenant app management policy
+        items:
+        - name: Tenant app management policy
+          href: ../../resources/tenantappmanagementpolicy.md
+        - name: Get
+          href: ../../api/tenantappmanagementpolicy-get.md
+        - name: Update
+          href: ../../api/tenantappmanagementpolicy-update.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
@@ -379,18 +409,6 @@ items:
         href: ../../api/tokenlifetimepolicy-delete.md
       - name: List applied to applications
         href: ../../api/tokenlifetimepolicy-list-appliesto.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        href: ../../resources/remotedesktopsecurityconfiguration.md
-      - name: Create
-        href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-      - name: Get
-        href: ../../api/remotedesktopsecurityconfiguration-get.md
-      - name: Update
-        href: ../../api/remotedesktopsecurityconfiguration-update.md
-      - name: Delete
-        href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
     - name: Claims mapping policy
       items:
       - name: Claims mapping policy
@@ -465,6 +483,34 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+    - name: Remote desktop security policy
+      items:
+      - name: Remote desktop security configuration
+        items:
+        - name: Remote desktop security configuration
+          href: ../../resources/remotedesktopsecurityconfiguration.md
+        - name: Create
+          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+        - name: Get
+          href: ../../api/remotedesktopsecurityconfiguration-get.md
+        - name: Update
+          href: ../../api/remotedesktopsecurityconfiguration-update.md
+        - name: Delete
+          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+      - name: Target device group
+        items:
+        - name: Target device group
+          href: ../../resources/targetdevicegroup.md
+        - name: List
+          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+        - name: Create
+          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+        - name: Get
+          href: ../../api/targetdevicegroup-get.md
+        - name: Update
+          href: ../../api/targetdevicegroup-update.md
+        - name: Delete
+          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
 - name: Synchronization
   items:
   - name: Overview
