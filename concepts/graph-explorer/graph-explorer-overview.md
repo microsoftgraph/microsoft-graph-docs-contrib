@@ -9,11 +9,9 @@ author: wujessica
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs.
 
-:::image type="content" source="./images/graph-explorer-screen.png" alt-text="Screenshot of the Graph Explorer user interface." border="true":::
-
 Use Graph Explorer to:
 
-- Try out APIs on the default sample tenant and explore the capabilities and resources available on Microsoft Graph.
+- Try out APIs on the sample tenant and explore the capabilities and resources available on Microsoft Graph.
 - Sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios.
 - Learn about the permissions required for the different APIs.  
 - Explore Microsoft Graph Toolkit components, adaptive cards and code snippets for your queries.
@@ -30,6 +28,8 @@ Here’s a step-by-step tutorial for using Graph Explorer.
 
 1. On the left sidebar, you’ll see a list of sample queries. These are pre-built queries that you can run to see how the API works.
 1. Click on any sample query, such as “Get my profile,” to see the request and response.
+
+:::image type="content" source="./images/GE-tutorial-step2-explore-sample-query.png" alt-text="Screenshot of the Graph Explorer user interface. The GET my profile query has been run and the results are successfully returned." border="true":::
 
 ### Step 3: Sign In for more features
 
@@ -49,12 +49,16 @@ For example, to run a Post request, select POST in the drop-down list for the HT
 1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API. 
 1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component and Adaptive cards relevant to the query.  
 
+:::image type="content" source="./images/GE-tutorial-step4-run-your-first-query.png" alt-text="Screenshot of the Graph Explorer running the POST "create a new application" query." border="true":::
+
 ### Step 5: Modify permissions
 
 1. Some queries require specific permissions. If a query fails due to insufficient permissions, you’ll see an error message. 
 1. Click the **Modify permissions** tab to consent to the required permissions. 
 1. After consenting, run the query again.
 1. You can also click on the profile avatar and choose Consent to permissions. From the list of all available permissions, consent to the ones you want.
+
+:::image type="content" source="./images/GE-tutorial-step5-modify-permissions.png" alt-text="Screenshot of the Graph Explorer interfance, specifically the Modify permissions tab." border="true":::
 
 ## Finding the right API for your application
 
@@ -65,6 +69,8 @@ Use the **Resources tab** and the documentation feature to find the right API fo
 Use the **Resources tab** to explore Microsoft Graph resources in the beta and v1.0 endpoints by browsing the list of resources or use the search bar to search for a specific resource.
 
 You can also select specific queries to add to your collection. When you're finished adding resources, choose **Preview collection**. From the collection view, you can review, remove and download the resources you selected.
+
+:::image type="content" source="./images/GE-tutorial-resources.png" alt-text="On the left is a screenshot of the Resources tab in Graph Explorer. The right side displays the Preview collection panel. " border="true":::
 
 ### Documentation
 
@@ -78,21 +84,29 @@ Use the following features in Graph Explorer to integrate Microsoft Graph APIs i
 
 After running a query, click on the Code snippets tab to see how to perform the same operation in your preferred language (C#, JavaScript, Java, Go, PowerShell).
 
+:::image type="content" source="./images/GE-tutorial-code-snippets.png" alt-text="Screenshot of the code snippets tab in Graph Explorer." border="true":::
+
 ### Toolkit component
 
 [The Microsoft Graph Toolkit](https://learn.microsoft.com/en-us/graph/toolkit/overview?tabs=html) provides reusable, framework-agnostic web components and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
 
 The Toolkit component in Graph Explorer allows you visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
 
+:::image type="content" source="./images/toolkit-screenshot.png" alt-text="Screenshot of the Microsoft Graph Toolkit tab in Graph Explorer." border="false":::
+
 ### Adaptive cards
 
 [Adaptive cards](https://adaptivecards.io/) provide platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. A blue dot on the adaptive cards tab indicates that an adaptive card is available for the selected query. 
+
+:::image type="content" source="./images/adaptive-cards-screenshot.png" alt-text="Screenshot of the adaptive cards tab in Graph Explorer with the response details highlighted." border="false":::
 
 ## Other tools and resources in Graph Explorer
 
 ### History
 
 Click on the **History tab** to access and export queries ran in the past 30 days.
+
+:::image type="content" source="./images/history-tab-screenshot.png" alt-text="Screenshot of history tab." border="false":::
 
 ### Settings
 
