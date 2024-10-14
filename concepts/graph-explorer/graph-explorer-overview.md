@@ -86,7 +86,7 @@ After running a query, select on the Code snippets tab to see how to perform the
 
 ### Toolkit component
 
-[The Microsoft Graph Toolkit](https://learn.microsoft.com/en-us/graph/toolkit/overview?tabs=html) provides reusable, framework-agnostic web components, and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
+[The Microsoft Graph Toolkit](https://learn.microsoft.com/graph/toolkit/overview?tabs=html) provides reusable, framework-agnostic web components, and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
 
 The Toolkit component in Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
 
