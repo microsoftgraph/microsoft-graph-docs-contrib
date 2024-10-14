@@ -2,55 +2,105 @@
 title: Use Graph Explorer to try Microsoft Graph APIs
 description: Try Microsoft Graph APIs on the default sample tenant to explore capabilities, or sign in to your tenant and use it as a prototyping tool to fulfill your app scenarios.
 ms.localizationpriority: high
-author: RabebOthmani
+author: wujessica
 ---
 
 # Use Graph Explorer to try Microsoft Graph APIs
 
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs. Use Graph Explorer to try the APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios. This tool includes helpful features such as code snippets (C#, Java, JavaScript, Go and PowerShell), Microsoft Graph Toolkit and adaptive cards integration, and more.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs.
 
 :::image type="content" source="./images/graph-explorer-screen.png" alt-text="Screenshot of the Graph Explorer user interface." border="true":::
 
 Use Graph Explorer to:
 
-- Try out Microsoft Graph APIs.
-- Learn about the permissions required for the different APIs.
-- Explore all the resources available on Microsoft Graph.
+- Try out APIs on the default sample tenant and explore the capabilities and resources available on Microsoft Graph.
+- Sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios.
+- Learn about the permissions required for the different APIs.  
 - Explore Microsoft Graph Toolkit components, adaptive cards and code snippets for your queries.
 
-Graph Explorer handles the authentication process for you. Customize the experience by collapsing the sidebar or changing the theme.
+## Getting started
 
-## Get started
+Here’s a step-by-step tutorial for using Graph Explorer.
 
-Graph Explorer is a web application hosted on the [Microsoft Graph developer center](https://developer.microsoft.com/graph). It's an open-source project, and we welcome your contributions and feedback on [GitHub](https://github.com/microsoftgraph/microsoft-graph-explorer-v4).
+### Step 1: Access to Graph Explorer
 
-### Make requests
+1. Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/).
 
-With Graph Explorer, you can make requests to the Microsoft Graph APIs to retrieve, add, delete and update data. Your requests can send parameters, authorization details, and any body data you require.
+### Step 2: Explore a sample query
 
-:::image type="content" source="./images/request-headers.png" alt-text="Screenshot of request headers in Graph Explorer." border="true":::
+1. On the left sidebar, you’ll see a list of sample queries. These are pre-built queries that you can run to see how the API works.
+1. Click on any sample query, such as “Get my profile,” to see the request and response.
 
-## Retrieve data in Graph Explorer
+### Step 3: Sign In for more features
 
-To run a GET request in Graph Explorer, you don't have to sign in. You can retrieve sample data from the default sample tenant.
-
-:::image type="content" source="./images/get-request.png" alt-text="Screenshot of a sample request in Graph Explorer." border="true":::
-
-To create the request, you can either select a sample query from the menu at the left, which fills in the query field, or you can choose to manually type your request in the field.
-Once you run the request, you will get the HTTP response code and the response will be displayed in the response preview area.
-
-When you sign in to Graph Explorer and run the same query, the response is returned with real data from the tenant that you signed in to.
-
-## Modify data in Graph Explorer
-
-To try POST, PUT, PATCH, and DELETE requests, sign in to Graph Explorer by using a Microsoft 365 account. This can be an organizational account for testing or demonstration purposes. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
+1. You can use Graph Explorer without signing in, but signing in allows you to access your own tenant and perform more advanced operations.
+1. To try POST, PUT, PATCH, and DELETE requests, click the Sign In button at the top right corner and sign in with your Microsoft 365 account.
+1. We recommend signing into your [M365 Developer sandbox tenant](https://developer.microsoft.com/en-US/microsoft-365/dev-program) to avoid any operations that may potentially alter your production data.
 
 > [!IMPORTANT]
-> If you choose to sign in by using your organizational account, running a non-GET request might affect the data in the tenant.
+> If you choose to sign in with your organizational account, running a non-GET request might affect the data in the tenant.
 
-For example, to run a POST request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
+### Step 4: Run your first query
 
-:::image type="content" source="./images/post-request.png" alt-text="Screenshot of a POST request in Graph Explorer." border="true":::
+1. Select a sample query or type your own query in the request field. 
+1. Edit the request body, request headers as needed for the query. 
+For example, to run a Post request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
+1. Click the **Run query** button.
+1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API. 
+1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component and Adaptive cards relevant to the query.  
+
+### Step 5: Modify permissions
+
+1. Some queries require specific permissions. If a query fails due to insufficient permissions, you’ll see an error message. 
+1. Click the **Modify permissions** tab to consent to the required permissions. 
+1. After consenting, run the query again.
+1. You can also click on the profile avatar and choose Consent to permissions. From the list of all available permissions, consent to the ones you want.
+
+## Finding the right API for your application
+
+Use the **Resources tab** and the documentation feature to find the right API for your application.
+
+### Resources
+
+Use the **Resources tab** to explore Microsoft Graph resources in the beta and v1.0 endpoints by browsing the list of resources or use the search bar to search for a specific resource.
+
+You can also select specific queries to add to your collection. When you're finished adding resources, choose **Preview collection**. From the collection view, you can review, remove and download the resources you selected.
+
+### Documentation
+
+Click the **Documentation** button next to each query to learn more about the API endpoint. The relevant API Reference provides more information about the request parameters, response structure, and required permissions.
+
+## Integrate Microsoft Graph into your application
+
+Use the following features in Graph Explorer to integrate Microsoft Graph APIs into your application.
+
+### Code snippets
+
+After running a query, click on the Code snippets tab to see how to perform the same operation in your preferred language (C#, JavaScript, Java, Go, PowerShell).
+
+### Toolkit component
+
+[The Microsoft Graph Toolkit](https://learn.microsoft.com/en-us/graph/toolkit/overview?tabs=html) provides reusable, framework-agnostic web components and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
+
+The Toolkit component in Graph Explorer allows you visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
+
+### Adaptive cards
+
+[Adaptive cards](https://adaptivecards.io/) provide platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange. A blue dot on the adaptive cards tab indicates that an adaptive card is available for the selected query. 
+
+## Other tools and resources in Graph Explorer
+
+### History
+
+Click on the **History tab** to access and export queries ran in the past 30 days.
+
+### Settings
+
+You can customize the Graph Explorer interface by using the settings icon at the top right. You can also collapse or expand the sidebar by dragging the sidebar.
+
+### Share  
+
+Click on the share icon (next to the Run query button) to share your current query, so that people can try out the query in Graph Explorer.
 
 ## Next steps
 
