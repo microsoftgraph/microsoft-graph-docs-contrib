@@ -48,12 +48,10 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
-
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|certificateAuthorityType|certificateAuthorityType|**TODO: Add Description**. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate autority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
 |certificate|Binary|The type of certificate authority whether `root` or `intermediate`. Required.|
 |displayName|String|The name of the certificateBasedAuthPki entity. Optional.|
 |issuer|String|The name of the certificate authority. Optional.|
