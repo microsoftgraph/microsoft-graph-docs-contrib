@@ -5655,6 +5655,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **reactionContentUrl** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-1.0) resource to represent the hosted content URL for a custom reaction in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0).",
           "Target": "chatMessageReaction"
+        },       
+        {
+          "Id": "bcfecfae-4fce-4780-9130-2ac773de36dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-1.0) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0).",
+          "Target": "chatMessageReaction"
         },
         {
           "Id": "aae970a0-f381-40f7-bf96-fea7f489e08a",
@@ -5668,27 +5676,9 @@
       "Id": "aae970a0-f381-40f7-bf96-fea7f489e08a",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-10-08T18:15:55.2254479Z",
+      "CreatedDateTime": "2024-10-14T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "bcfecfae-4fce-4780-9130-2ac773de36dd",
-          "ApiChange": "Property",
-          "ChangedApiName": "displayName",
-          "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-1.0) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0).",
-          "Target": "chatMessageReaction"
-        }
-      ],
-      "Id": "bcfecfae-4fce-4780-9130-2ac773de36dd",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-10-08T18:15:55.2254479Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Messaging"
-    }
+    }    
   ]
 }
