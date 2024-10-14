@@ -47,7 +47,7 @@ For example, to run a Post request, select POST in the drop-down list for the HT
 1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API.
 1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component, and Adaptive cards relevant to the query.  
 
-:::image type="content" source="./images/GE-tutorial-step4-run-query.png" alt-text="Screenshot of the Graph Explorer running the POST "create a new application" query." border="true":::
+:::image type="content" source="./images/GE-tutorial-step4-run-query.png" alt-text="Screenshot of the Graph Explorer running the POST create a new application query." border="true":::
 
 ### Step 5: Modify permissions
 
@@ -86,7 +86,7 @@ After running a query, select on the Code snippets tab to see how to perform the
 
 ### Toolkit component
 
-[The Microsoft Graph Toolkit](https://learn.microsoft.com/graph/toolkit/overview?tabs=html) provides reusable, framework-agnostic web components, and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
+[The Microsoft Graph Toolkit](../toolkit/overview.md) provides reusable, framework-agnostic web components, and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
 
 The Toolkit component in Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
 
