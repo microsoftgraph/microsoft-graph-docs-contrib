@@ -147,6 +147,25 @@ The following example shows the schema for a message attachment.
     ],
 ```
 
+#### forwarded message attachment
+
+An [attachment](/graph/api/resources/chatmessageattachment) object contains a forwarded message that has been forwarded to a [chat](/graph/api/resources/chat).  For message attachments, the **id** property contains the ID of the forwarded message. The **content** property contains more details about the message; for example, the original message context and original sender detail. For message attachments, the **contentType** property is set to `forwardedMessageReference`.
+
+The following example shows the schema for a forwarded message attachment.
+
+```json
+    "attachments": [
+        {
+            "id": "1727881360458",
+            "contentType": "forwardedMessageReference",
+            "contentUrl": null,
+            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
 ### body
 
 The **body** property of a **chatMessage** object represents the body of the message. The **body** property can refer to other elements in the schema such as mentions or attachments. The contents can be `text` or `html`, as specified by the **contentType** property of the [itemBody](/graph/api/resources/itembody) resource type.
