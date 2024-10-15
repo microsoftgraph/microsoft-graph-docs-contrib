@@ -1,13 +1,13 @@
 ---
-title: "Update deviceManagement"
-description: "Update the properties of a deviceManagement object."
+title: "Delete cloudCertificationAuthority"
+description: "Deletes a cloudCertificationAuthority."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
-# Update deviceManagement
+# Delete cloudCertificationAuthority
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object.
+Deletes a [cloudCertificationAuthority](../resources/intune-cloudpkigraphservice-cloudcertificationauthority.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement
+DELETE /deviceManagement/cloudCertificationAuthority/{cloudCertificationAuthorityId}
 ```
 
 ## Request headers
@@ -44,40 +44,21 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object.
-
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
-
-
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-multidevicepivotservice-devicemanagement.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
-Content-type: application/json
-Content-length: 58
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagement"
-}
+DELETE https://graph.microsoft.com/beta/deviceManagement/cloudCertificationAuthority/{cloudCertificationAuthorityId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 58
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagement"
-}
+HTTP/1.1 204 No Content
 ```
