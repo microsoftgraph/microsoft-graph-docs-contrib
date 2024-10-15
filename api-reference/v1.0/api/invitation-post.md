@@ -34,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >   - Both nonadmin member users and guest users can invite guests if the tenant admin hasn't restricted the [default user permissions](/entra/fundamentals/users-default-permissions?toc=%2Fgraph%2Ftoc.json).
 >   - Guest Inviter, Directory Writers, or User Administrator.
 > - To reset the redemption status: Helpdesk Administrator or User Administrator.
-> Application permissions (app-only) don't work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
-> When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
+> - Application permissions (app-only) don't work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
+> - When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
