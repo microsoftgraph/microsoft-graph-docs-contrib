@@ -166,9 +166,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a user with social and local account identities
+### Example 2: Create a user with social and local account identities in Azure AD B2C
 
-Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity.
 
 >[!NOTE]
 >For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
@@ -314,6 +314,7 @@ Content-type: application/json
             "issuerAssignedId": "adelev@adatum.com"
         }
     ],
+    "mail": "adelev@adatum.com",
     "passwordProfile": {
         "password": "passwordValue",
         "forceChangePasswordNextSignIn": false
@@ -344,7 +345,7 @@ Content-type: application/json
     "displayName": "Test User",
     "givenName": null,
     "jobTitle": null,
-    "mail": null,
+    "mail": "adelev@adatum.com",
     "mobilePhone": null,
     "officeLocation": null,
     "preferredLanguage": null,
