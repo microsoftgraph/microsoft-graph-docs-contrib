@@ -32,7 +32,7 @@ Here’s a step-by-step tutorial for using Graph Explorer.
 ### Step 3: Sign In for more features
 
 1. You can use Graph Explorer without signing in, but signing in allows you to access your own tenant and perform more advanced operations.
-1. To try POST, PUT, PATCH, and DELETE requests, select the Sign In button at the top right corner and sign in with your Microsoft 365 account.
+1. To try POST, PUT, PATCH, and DELETE requests, sign in with your Microsoft 365 account.
 1. We recommend signing into your [M365 Developer sandbox tenant](https://developer.microsoft.com/en-US/microsoft-365/dev-program) to avoid any operations that may potentially alter your production data.
 
 > [!IMPORTANT]
