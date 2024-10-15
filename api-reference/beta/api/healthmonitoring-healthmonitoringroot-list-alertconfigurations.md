@@ -15,15 +15,13 @@ Namespace: microsoft.graph.healthMonitoring
 
 Get a list of the Microsoft Entra health monitoring [alertConfiguration](../resources/healthmonitoring-alertconfiguration.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "healthmonitoring-healthmonitoringroot-list-alertconfigurations-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "healthmonitoring_healthmonitoringroot_list_alertconfigurations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/healthmonitoring-healthmonitoringroot-list-alertconfigurations-permissions.md)]
 
 [!INCLUDE [rbac-healthmonitoring-alertconfiguration-apis-read](../includes/rbac-for-apis/rbac-healthmonitoring-alertconfiguration-apis-read.md)]

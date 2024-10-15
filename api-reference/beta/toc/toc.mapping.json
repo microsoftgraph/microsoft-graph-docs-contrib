@@ -2258,7 +2258,7 @@
                   ]
                 },
                 {
-                  "name": "Microsoft Entra Health",
+                  "name": "Microsoft Entra Health (preview)",
                   "childNodes": [
                     {
                       "name": "SLA attainment",
