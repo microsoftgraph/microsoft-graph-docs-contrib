@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerGlobalProxyAutoConfig resource type"
 description: "Android Device Owner Global Proxy Auto Config."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "macOSProcessIdentifierType enum type"
 description: "Process identifier types for MacOS Privacy Preferences"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

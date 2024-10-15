@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# targetManager complex type
+# targetManager resource type
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Used in an access package assignment policy, this type inherits from [subjectSet
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.targetManager"

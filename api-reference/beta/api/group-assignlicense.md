@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. Group-based licensing is an alternative to [direct user licensing](../api/user-assignlicense.md). To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku-list.md).
 
@@ -56,7 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type                                                          | Description                                                                                                                                                                                                                                                                    |
 | :------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | addLicenses    | [assignedLicense](../resources/assignedlicense.md) collection | A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object. |
-| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove.                                                                                                                                                                                                                   |
+| removeLicenses | Guid collection                                               | A collection of skuIds that identify the licenses to remove. Required. Can be an empty collection.                                                                                                                                                                                                                   |
 
 ## Response
 
@@ -156,7 +156,7 @@ location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/di
   "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
   "createdDateTime": "2021-03-12T11:15:03Z",
   "groupTypes": [],
-  "securityEnabled": true,
+  "securityEnabled": true
 }
 ```
 
@@ -241,7 +241,7 @@ location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/di
   "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
   "createdDateTime": "2021-03-12T11:15:03Z",
   "groupTypes": [],
-  "securityEnabled": true,
+  "securityEnabled": true
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "comanagementEligibleType enum type"
 description: "Intune Devices Comanagementeligibletype Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

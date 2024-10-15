@@ -48,7 +48,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -172,7 +172,7 @@ Content-Type: application/json
                     "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
                     "password": "***************"
                 },
-                "roleGroup@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_sds-ppe/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
+                "roleGroup@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
                 "roleGroup": {
                     "id": "staff",
                     "displayName": "Staff",

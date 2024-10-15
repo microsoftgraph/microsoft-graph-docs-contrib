@@ -32,10 +32,12 @@ This resource supports:
 | [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
 | [Change password](../api/user-changepassword.md) | None | Update your own password. |
 | [Retry service provisioning](../api/user-retryserviceprovisioning.md) | None | Retry the user service provisioning. |
+| [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
+| [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
 | **App role assignments** |  |  |
-| [List app role assignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this user. |
-| [Add app role assignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
-| [Remove app role assignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user. |
+| [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this user. |
+| [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
+| [Remove](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user. |
 | **Calendar** |  |  |
 | [List calendars](../api/user-list-calendars.md) | [calendar](calendar.md) collection | Get a Calendar object collection. |
 | [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
@@ -56,19 +58,15 @@ This resource supports:
 | [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the user is a member of. The check is transitive. |
 | [Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
 | [Get member objects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups, administrative units, and directory roles that the user is a member of. The check is transitive. |
-| [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
 | [List created objects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
-| [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
-| [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
-| [Reprocess license assignment](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
 | [List owned devices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that the user owns from the ownedDevices navigation property. |
 | [List owned objects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects owned by the user from the ownedObjects navigation property. |
+| [List deleted groups owned by user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that owned by a user. |
 | [List registered devices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are registered for the user from the registeredDevices navigation property. |
-| [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
-| [List deleted users](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the users deleted in the tenant in the last 30 days. |
-| [Get deleted user](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
-| [Restore deleted user](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
-| [Permanently delete user](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
+| [List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the users deleted in the tenant in the last 30 days. |
+| [Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
 | **Drive** |  |  |
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
@@ -82,6 +80,10 @@ This resource supports:
 | [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Get a list of used files. |
 | [Get content discovery settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Get users's content discovery settings. |
 | [Update content discovery settings](../api/usersettings-update.md) | None | Update users's content discovery settings. |
+| **License management** |||
+| [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
+| [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
+| [Reprocess license assignment](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocess subscription assignments for the user. |
 | **Mail** |  |  |
 | [List mail folders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
 | [Create mail folder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new MailFolder by posting to the mailFolders collection. |
@@ -96,9 +98,6 @@ This resource supports:
 | **Notes** |  |  |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
-| **Open extensions** |  |  |
-| [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing resource. |
-| [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name. |
 | **Org hierarchy** |  |  |
 | [Assign manager](../api/user-post-manager.md) | [directoryObject](directoryobject.md) | Assign a user or an organizational contact as this user's manager. |
 | [Get manager](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Get the user or organizational contact that is this user's manager from the manager navigation property. |
@@ -113,24 +112,22 @@ This resource supports:
 | [Get supported time zones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that are supported for the user, as configured on the user's mailbox server. |
 | [Translate Exchange IDs](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | **People** | | |
-| [List people](../api/user-list-people.md) | [person](person.md) collection | Get a collection of person objects ordered by their relevance to the user. |
+| [List](../api/user-list-people.md) | [person](person.md) collection | Get a collection of person objects ordered by their relevance to the user. |
 | **Personal contacts** |  |  |
 | [List contacts](../api/user-list-contacts.md) | [contact](contact.md) collection | Get a contact collection from the default Contacts folder of the signed-in user. |
 | [Create contact](../api/user-post-contacts.md) | [contact](contact.md) | Create a new Contact by posting to the contacts collection. |
 | [List contact folders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default Contacts folder of the signed-in user. |
 | [Create contact folder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new ContactFolder by posting to the contactFolders collection. |
-| **Photo** |  |  |
-| [Get profile photo](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
-| [Update profile photo](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
-| [Delete profile photo](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant including the signed-in user or the specified group. |
+| **Profile photo** |  |  |
+| [Get](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
+| [Update](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
+| [Delete](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant including the signed-in user or the specified group. |
 | **Planner** |  |  |
 | [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user. |
-| **Schema extensions** |  |  |
-| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Sponsors** | | |
-| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
-| [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
-| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
+| [Assign](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
+| [List](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [Remove](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |  |  |
 | [List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of teams in Microsoft Teams that a user is associated with. |
 | [List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
@@ -146,8 +143,8 @@ This resource supports:
 | [List task lists](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) collection | Get all the task lists in the user's mailbox. |
 | [Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
 | **User settings** |  |  |
-| [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
-| [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
+| [Get](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
+| [Update](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
 
 ## Properties
 
@@ -169,12 +166,12 @@ This resource supports:
 |country|String|The country/region where the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |createdDateTime | DateTimeOffset |The date and time the user was created, in ISO 8601 format and UTC. The value can't be modified and is automatically populated when the entity is created. Nullable. For on-premises users, the value represents when they were first created in Microsoft Entra ID. Property is `null` for some users created before June 2018 and on-premises users that were synced to Microsoft Entra ID before June 2018. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | creationType | String | Indicates whether the user account was created through one of the following methods: <br/> <ul><li>As a regular school or work account (`null`). <li>As an external account (`Invitation`). <li>As a local account for an Azure Active Directory B2C tenant (`LocalAccount`). <li>Through self-service sign-up by an internal user using email verification (`EmailVerified`). <li>Through self-service sign-up by a guest signing up through a link that is part of a user flow (`SelfServiceSignUp`).</ul> <br>Read-only.<br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). The filter value is case-sensitive.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). The filter value is case-sensitive. <br><li>To read this property, the calling app must be assigned the *CustomSecAttributeAssignment.Read.All* permission. To write this property, the calling app must be assigned the *CustomSecAttributeAssignment.ReadWrite.All* permissions. <li>To read or write this property in delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role. |
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 |department|String|The name of the department in which the user works. Maximum length is 64 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, and `eq` on `null` values).|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and family name. This property is required when a user is created and it can't be cleared during updates. Maximum length is 256 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$orderby`, and `$search`.|
 | employeeHireDate | DateTimeOffset |The date and time when the user was hired or will start work in a future hire. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
-| employeeLeaveDateTime | DateTimeOffset | The date and time when the user left or will leave the organization. <br><br>To read this property, the calling app must be assigned the *User-LifeCycleInfo.Read.All* permission. To write this property, the calling app must be assigned the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator*, *Global Reader*. To write this property in delegated scenarios, the admin needs the *Global Administrator* role. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). <br><br>For more information, see [Configure the employeeLeaveDateTime property for a user](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime).|
+| employeeLeaveDateTime | DateTimeOffset | The date and time when the user left or will leave the organization. <br><li>To read this property, the calling app must be assigned the *User-LifeCycleInfo.Read.All* permission. To write this property, the calling app must be assigned the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. <li>To read this property in delegated scenarios, the admin needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*. To write this property in delegated scenarios, the admin needs the *Global Administrator* role. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`). <br><br>For more information, see [Configure the employeeLeaveDateTime property for a user](/graph/tutorial-lifecycle-workflows-set-employeeleavedatetime).|
 | employeeId | String | The employee identifier assigned to the user by the organization. The maximum length is 16 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`).|
@@ -200,7 +197,7 @@ This resource supports:
 |officeLocation|String|The office location in the user's place of business. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |onPremisesDistinguishedName|String| Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect. Read-only. <br><br>Returned only on `$select`. |
 |onPremisesDomainName|String| Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect. Read-only. <br><br>Returned only on `$select`.|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes1-15 for the user. These extension attributes are also known as Exchange custom attributes 1-15. <br><li>For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises and is read-only. </li><li>For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties can be set during the creation or update of a user object.  </li><li>For a cloud-only user previously synced from on-premises Active Directory, these properties are read-only in Microsoft Graph but can be fully managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.</li><br> Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes1-15 for the user. These extension attributes are also known as Exchange custom attributes 1-15. Each attribute can store up to 1024 characters. <br><li>For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises and is read-only. </li><li>For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties can be set during the creation or update of a user object.  </li><li>For a cloud-only user previously synced from on-premises Active Directory, these properties are read-only in Microsoft Graph but can be fully managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.</li><br> Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Microsoft Entra user object. This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's **userPrincipalName** (UPN) property. **NOTE:** The **$** and **\_** characters can't be used when specifying this property. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: `2013-02-16T03:04:54Z`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
@@ -210,7 +207,7 @@ This resource supports:
 |onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |otherMails|String collection| A list of other email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. <br>NOTE: This property can't contain accent characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, `/$count eq 0`, `/$count ne 0`).|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two might be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`. <br><br>Returned only on `$select`. For more information on the default password policies, see [Microsoft Entra password policies](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts). Supports `$filter` (`ne`, `not`, and `eq` on `null` values).|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values).|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). <br><br>To update this property: <br><li> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. <li> In application-only access, the calling app must be assigned the *User.ReadWrite.All* (least privilege) or *Directory.ReadWrite.All* (higher privilege) application permission *and* at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).|
 |pastProjects|String collection|A list for the user to enumerate their past projects. <br><br>Returned only on `$select`.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | preferredDataLocation | String | The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
@@ -308,7 +305,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Supports `$expand`. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
+|insights|[itemInsights](iteminsights.md) | Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. Read-only. Nullable.|
 |licenseDetails|[licenseDetails](licensedetails.md) collection|A collection of this user's license details. Read-only.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. Supports `$expand`.|
@@ -325,6 +322,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |photos|[profilePhoto](profilephoto.md) collection| The collection of the user's profile photos in different sizes. Read-only.|
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand` and returns up to 100 objects.|
+|solutions|[userSolutionRoot](../resources/usersolutionroot.md)|The identifier that relates the user to the working time schedule triggers. Read-Only. Nullable|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
@@ -332,7 +330,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

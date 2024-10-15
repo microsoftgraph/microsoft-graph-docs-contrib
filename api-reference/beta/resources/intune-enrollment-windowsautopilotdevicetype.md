@@ -2,7 +2,7 @@
 title: "windowsAutopilotDeviceType enum type"
 description: "Intune Enrollment Windowsautopilotdevicetype Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|windowsPc|0|Windows PC|
-|surfaceHub2|1|Surface Hub 2|
-|holoLens|2|HoloLens|
+|windowsPc|0|Default. Indicates that the device type  is a Windows PC.|
+|holoLens|1|Indicates that the device type is a HoloLens.|
+|surfaceHub2|2|Surface Hub 2|
 |surfaceHub2S|3|SurfaceHub2S|
 |virtualMachine|4|VirtualMachine|
-|unknownFutureValue|99|Placeholder for evolvable enum, but this enum is never returned to the caller, so it shouldn't be necessary.         |
+|unknownFutureValue|99|Evolvable enumeration sentinel value. Do not use.|

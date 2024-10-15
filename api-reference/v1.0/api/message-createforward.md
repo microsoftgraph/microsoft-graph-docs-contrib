@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body

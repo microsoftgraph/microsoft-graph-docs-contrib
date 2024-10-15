@@ -1,9 +1,9 @@
 ---
 title: "deployableContent resource type"
-description: "Represents content that is deployable by the service."
+description: "An abstract type that represents content that is deployable by Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content that is deployable by the service.
-
-This is an abstract type. 
+An abstract type that represents content that is deployable by Windows Autopatch.
 
 Base type for [catalogContent](../resources/windowsupdates-catalogcontent.md).
 
@@ -26,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.deployableContent"

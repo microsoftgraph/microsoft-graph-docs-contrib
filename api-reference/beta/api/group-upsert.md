@@ -27,8 +27,8 @@ You can create or update the following types of group:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "group_post_groups" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-post-groups-permissions.md)]
+<!-- { "blockType": "permissions", "name": "group_upsert" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-upsert-permissions.md)]
 
 In order for an app with Group.Create permission to create a group with owners or members, it must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
 
@@ -49,7 +49,7 @@ PATCH /groups/(uniqueName='uniqueName')
 
 | Name          | Description  |
 |:--------------|:---|
-| Authorization | Bearer {token}. Required.|
+| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 | Prefer        | `create-if-missing`. Required for upsert behavior, otherwise the request is treated as an update operation. |
 
@@ -69,6 +69,7 @@ The following table lists the properties that are required when you create the [
 > [!IMPORTANT]
 > - Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
 > - Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
+> - A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).
 > - The following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can add custom properties with your own data to the group while creating it.
@@ -84,9 +85,11 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 ## Response
 
-If successful, if the object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
+If an object with the **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [group](../resources/group.md) object in the response body.
 
-If the object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
+If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
+
+If an object with the **uniqueName** already exists, this method updates the [group](../resources/group.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
@@ -210,6 +213,8 @@ Content-type: application/json
 ### Example 2: Create a security group with an owner and members if it doesn't exist
 
 The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add multiple additional members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+
+A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).
 
 #### Request
 
@@ -342,6 +347,8 @@ Content-type: application/json
 ### Example 3: Update an existing group
 
 In this example, the specified group already exists, so the operation is treated as an update.
+
+A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).
 
 #### Request
 

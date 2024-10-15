@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
 
+To reset a user's password in in Azure AD B2C, use the [Update user](../api/user-update.md) API operation and update the **passwordProfile** > **forceChangePasswordNextSignIn** object.
+
 This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
 This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
@@ -35,10 +37,11 @@ Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Adminis
 
 ## HTTP request
 
+The ID of the password authentication method, referenced by `{passwordMethods-id}`, is always `28c10230-6103-485e-b985-444c60001490`.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id | userPrincipalName}/authentication/methods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/methods/{passwordMethods-id}/resetPassword
 ```
 
 ## Request headers
@@ -58,9 +61,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a **Location** header with a URL to check the status of the reset operation.
+If the caller provided a password in the request body, this method returns a `202 Accepted` response code and no response body. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
-If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
+If the caller used the system-generated password option, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) object in the response body which contains a Microsoft-generated password. The response might also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
 ### Response headers
 
@@ -134,8 +137,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.entity"
+  "truncated": true
 } -->
 
 ```http
@@ -143,7 +145,6 @@ HTTP/1.1 202 Accepted
 Content-type: application/json
 Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
 
-{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -221,7 +222,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.passwordResetResponse"
 } -->
 
 ```http

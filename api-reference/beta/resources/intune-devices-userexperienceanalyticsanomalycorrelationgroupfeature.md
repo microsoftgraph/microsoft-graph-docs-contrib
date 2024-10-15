@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAnomalyCorrelationGroupFeature resource type"
 description: "Describes the features of a device that are shared between all devices in a correlation group."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

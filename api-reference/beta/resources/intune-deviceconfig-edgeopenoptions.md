@@ -2,7 +2,7 @@
 title: "edgeOpenOptions enum type"
 description: "Possible values for the EdgeOpensWith setting."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

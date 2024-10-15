@@ -1,19 +1,19 @@
 ---
-title: "List owners"
-description: "Retrieve a list of owners (directoryObject objects) for an application."
+title: "List owners of an application"
+description: "Retrieve a list of owners for an application."
 author: "sureshja"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List owners
+# List owners of an application
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) objects.
+Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) types.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,8 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-
-
 ## HTTP request
 
 You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
@@ -37,7 +35,7 @@ GET /applications(appId='{appId}')/owners
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Name           | Description                |
@@ -51,54 +49,20 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
-##### Request
-The following example shows a request.
+### Request
+The following example shows a request that uses the **appId** alternate key to query the owners of an application.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_get_owners"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/owners
+GET https://graph.microsoft.com/beta/applications(appId='bbec3106-565f-4907-941e-96b4dbfef21c')/owners
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-get-owners-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/application-get-owners-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/application-get-owners-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-get-owners-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/application-get-owners-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/application-get-owners-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/application-get-owners-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/application-get-owners-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. It shows only the **id** property as populated while other properties as `null`. This is because the caller did not have permissions to read users in the tenant. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,11 +74,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applications(appId=<key>)/owners?$select=deletedDateTime",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "ce4770b3-70b2-4a38-a242-76631e9f7408",
+            "businessPhones": [],
+            "displayName": null,
+            "givenName": null,
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "858a9c90-38b3-4e78-b915-234aece712c4",
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "7585d967-f300-43de-b817-7119a6404c5e",
+        }
+    ]
 }
 ```
 

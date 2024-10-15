@@ -2,7 +2,7 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -30,6 +30,6 @@ Supported platform types.
 |androidWorkProfile|7|Indicates device platform type is Android Work Profile.|
 |unknown|8|This is the default value when device platform type resolution fails|
 |androidAOSP|9|Indicates device platform type is Android AOSP.|
-|androidMobileApplicationManagement|10|Indicates Mobile Application Management (MAM) for android devices.|
-|iOSMobileApplicationManagement|11|Indicates Mobile Application Management (MAM) for iOS devices.|
+|androidMobileApplicationManagement|10|Indicates device platform type associated with Mobile Application Management (MAM) for android devices.|
+|iOSMobileApplicationManagement|11|Indicates device platform type associated with Mobile Application Management (MAM) for iOS devices.|
 |unknownFutureValue|12|Evolvable enumeration sentinel value. Do not use.|

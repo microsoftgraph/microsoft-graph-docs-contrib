@@ -2,7 +2,7 @@
 title: "adminConsentState enum type"
 description: "Admin consent state."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

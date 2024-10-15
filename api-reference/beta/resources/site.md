@@ -26,8 +26,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
+| [List page templates][]                            | GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate     |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
-| [List sites across geographies][]            | GET /site/getAllSites                                      |
+| [List sites across geographies][]                 | GET /site/getAllSites                                       |
+| [List subsites for a site][]                      | GET /sites/{site-id}/sites                                  |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -41,7 +43,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create contentType][]                            | POST /sites/{site-id}/contentTypes                          |
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
-| [List operations in a site](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
+| [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
@@ -52,8 +55,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/basesitepage-list.md
+[List page templates]: ../api/pagetemplate-list.md
 [List root sites]: ../api/site-list.md
 [List sites across geographies]: ../api/site-getallsites.md
+[List subsites for a site]: ../api/site-list-subsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
@@ -104,14 +109,17 @@ The `root` identifier always references the root site for a given target, as fol
 | :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place on this site.                                                                          |
 | columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
+|contentModels    | [contentModel](../resources/contentmodel.md) collection| The collection of content models applied to this site.|
 | contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
+|documentProcessingJobs |[documentProcessingJob](../resources/documentprocessingjob.md) collection  | The document processing jobs running on this site. |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
 | externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
 | items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |
 | lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
 | operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
 | pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list on this site.                                                                                |
+| pageTemplates   | [pageTemplate][] collection                                                    | The collection of page templates on this site.                                                                                |
 | permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
 | recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
 | sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
@@ -126,6 +134,7 @@ The `root` identifier always references the root site for a given target, as fol
 [list]: list.md
 [permission]: permission.md
 [baseSitePage]: baseSitePage.md
+[pageTemplate]: pagetemplate.md
 [root]: root.md
 [site]: site.md
 [siteSettings]: sitesettings.md

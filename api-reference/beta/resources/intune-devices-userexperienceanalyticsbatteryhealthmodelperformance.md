@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsBatteryHealthModelPerformance resource type"
 description: "The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---
@@ -31,8 +31,10 @@ The user experience analytics battery health model performance entity contains b
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics battery health model performance object.|
 |activeDevices|Int32|Number of active devices for that model. Valid values 0 to 2147483647|
-|model|String|The model name of the device.|
-|manufacturer|String|Name of the device manufacturer.|
+|model|String|The model name of the device. Deprecated in favor of DeviceModelName.|
+|manufacturer|String|Name of the device manufacturer. Deprecated in favor of DeviceManufacturerName.|
+|deviceModelName|String|The model name of the device.|
+|deviceManufacturerName|String|The manufacturer name of the device.|
 |averageMaxCapacityPercentage|Int32|The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values 0 to 2147483647|
 |averageEstimatedRuntimeInMinutes|Int32|The mean of the estimated runtimes on full charge for all devices of a given model. Unit in minutes. Valid values 0 to 2147483647|
 |averageBatteryAgeInDays|Int32|The mean of the battery age for all devices of a given model in a tenant. Unit in days. Valid values 0 to 2147483647|
@@ -61,6 +63,8 @@ Here is a JSON representation of the resource.
   "activeDevices": 1024,
   "model": "String",
   "manufacturer": "String",
+  "deviceModelName": "String",
+  "deviceManufacturerName": "String",
   "averageMaxCapacityPercentage": 1024,
   "averageEstimatedRuntimeInMinutes": 1024,
   "averageBatteryAgeInDays": 1024,

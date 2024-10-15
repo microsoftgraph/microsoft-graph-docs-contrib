@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.title: Assignment schedule request
 ---
 
 # privilegedAccessGroupAssignmentScheduleRequest resource type
@@ -53,7 +54,7 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

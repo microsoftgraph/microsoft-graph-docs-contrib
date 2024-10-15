@@ -2,7 +2,7 @@
 title: "windowsDefenderScanActionResult resource type"
 description: "Windows Defender last scan result"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

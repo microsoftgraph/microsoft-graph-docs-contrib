@@ -24,13 +24,17 @@ items:
     href: ../../api/user-changepassword.md
   - name: Retry service provisioning
     href: ../../api/user-retryserviceprovisioning.md
+  - name: Revoke sign-in sessions
+    href: ../../api/user-revokesigninsessions.md
+  - name: Export personal data
+    href: ../../api/user-exportpersonaldata.md
   - name: App role assignments
     items:
-    - name: List app role assignments
+    - name: List
       href: ../../api/user-list-approleassignments.md
-    - name: Add app role assignment
+    - name: Add
       href: ../../api/user-post-approleassignments.md
-    - name: Remove app role assignment
+    - name: Remove
       href: ../../api/user-delete-approleassignments.md
   - name: Calendar
     items:
@@ -72,32 +76,24 @@ items:
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
       href: ../../api/directoryobject-getmemberobjects.md
-    - name: Export personal data
-      href: ../../api/user-exportpersonaldata.md
     - name: List created objects
       href: ../../api/user-list-createdobjects.md
-    - name: List license details
-      href: ../../api/user-list-licensedetails.md
-    - name: Assign license
-      href: ../../api/user-assignlicense.md
-    - name: Reprocess license assignment
-      href: ../../api/user-reprocesslicenseassignment.md
     - name: List owned devices
       href: ../../api/user-list-owneddevices.md
     - name: List owned objects
       href: ../../api/user-list-ownedobjects.md
+    - name: List deleted groups owned by user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
     - name: List registered devices
       href: ../../api/user-list-registereddevices.md
-    - name: Revoke sign-in sessions
-      href: ../../api/user-revokesigninsessions.md
-    - name: List deleted users
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted user
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted user
-      href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete user
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete item
+      href: ../../api/directory-deleteditems-delete.md
   - name: Drive
     items:
     - name: Get drive
@@ -124,6 +120,14 @@ items:
       href: ../../api/usersettings-get.md
     - name: Update content discovery settings
       href: ../../api/usersettings-update.md
+  - name: License management
+    items:
+    - name: Assign license
+      href: ../../api/user-assignlicense.md
+    - name: List license details
+      href: ../../api/user-list-licensedetails.md
+    - name: Reprocess license assignment
+      href: ../../api/user-reprocesslicenseassignment.md
   - name: Mail
     items:
     - name: List mail folders
@@ -152,12 +156,6 @@ items:
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
-  - name: Open extensions
-    items:
-    - name: Create open extension
-      href: ../../api/opentypeextension-post-opentypeextension.md
-    - name: Get open extension
-      href: ../../api/opentypeextension-get.md
   - name: Org hierarchy
     items:
     - name: Assign manager
@@ -186,7 +184,7 @@ items:
       href: ../../api/user-translateexchangeids.md
   - name: People
     items:
-    - name: List people
+    - name: List
       href: ../../api/user-list-people.md
   - name: Personal contacts
     items:
@@ -198,29 +196,25 @@ items:
       href: ../../api/user-list-contactfolders.md
     - name: Create contact folder
       href: ../../api/user-post-contactfolders.md
-  - name: Photo
+  - name: Profile photo
     items:
-    - name: Get profile photo
+    - name: Get
       href: ../../api/profilephoto-get.md
-    - name: Update profile photo
+    - name: Update
       href: ../../api/profilephoto-update.md
-    - name: Delete profile photo
+    - name: Delete
       href: ../../api/profilephoto-delete.md
   - name: Planner
     items:
     - name: List tasks
       href: ../../api/planneruser-list-tasks.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Sponsors
     items:
-    - name: Assign sponsors
+    - name: Assign
       href: ../../api/user-post-sponsors.md
-    - name: List sponsors
+    - name: List
       href: ../../api/user-list-sponsors.md
-    - name: Remove sponsors
+    - name: Remove
       href: ../../api/user-delete-sponsors.md
   - name: Teamwork
     items:
@@ -252,7 +246,7 @@ items:
       href: ../../api/todo-post-lists.md
   - name: User settings
     items:
-    - name: Get settings
+    - name: Get
       href: ../../api/usersettings-get.md
-    - name: Update settings
+    - name: Update
       href: ../../api/usersettings-update.md

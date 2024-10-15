@@ -1,6 +1,6 @@
 ---
 title: "appRoleAssignment resource type"
-description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
+description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read, and delete app role assignments."
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
@@ -15,7 +15,7 @@ Used to record when a user, group, or service principal is assigned an app role 
 
 An app role assignment is a relationship between the assigned principal (a user, a group, or a service principal), a resource application (the app's service principal) and an app role defined on the resource application.
 
-When the [app role](approle.md) which has been assigned to a principal has a non-empty **value** property, this will be included in the **roles** claim of tokens where the subject is the  assigned principal (e.g. SAML responses, ID tokens, access tokens identifying a signed-in user, or an access token identifying a service principal). Applications and APIs use these claims as part of their authorization logic.
+When the [app role](approle.md) that has been assigned to a principal has a nonempty **value** property, it's included in the **roles** claim of tokens where the subject is the  assigned principal (for example, SAML responses, ID tokens, access tokens identifying a signed-in user, or an access token identifying a service principal). Applications and APIs use these claims as part of their authorization logic.
 
 A user can be assigned an app role directly. If an app role is assigned to a group, direct members of the group are also considered to have been assigned the app role. When a user is assigned an app role for an application, a tile for that application is displayed in the user's [MyApps portal](/azure/active-directory/user-help/my-apps-portal-end-user-access) and [Microsoft 365 app launcher](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a).
 
@@ -24,25 +24,25 @@ An app role assignment where the assigned principal is a service principal is an
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List appRoleAssignments granted to a group](../api/group-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties.|
-|[List appRoleAssignments granted to a user](../api/user-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties.|
-|[List appRoleAssignments granted to a service principal](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties.|
-|[List appRoleAssignments granted to users, groups, and client service principals for a resource service principal](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties.|
-|[Grant an appRole to a group](../api/group-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Grant an appRole to a user](../api/user-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Grant an appRole to a service principal](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Grant a user, group, or client service principal an appRoleAssignment for a resource service principal](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object.
-|[Get appRoleAssignment](../api/approleassignment-get.md)|[appRoleAssignment](../resources/approleassignment.md)|Get a new [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Delete an appRoleAssignment from a group](../api/group-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Delete an appRoleAssignment from a user](../api/user-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Delete an appRoleAssignment from a service principal](../api/serviceprincipal-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Delete an appRoleAssignment granted to a user, group, or client service principal for a resource service principal](../api/serviceprincipal-delete-approleassignedto.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
+|[List app role assignments for a group](../api/group-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties for a group.|
+|[List app role assignments for a user](../api/user-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties for a user.|
+|[List app role assignments for a client service principal](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties for a client service principal.|
+|[List app role assignments for users, groups, and client service principals for a resource service principal](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties for users, groups, and client service principals for a specified resource service principal.|
+|[Grant app role to a group](../api/group-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new [appRoleAssignment](../resources/approleassignment.md) object for a group.|
+|[Grant app role to a user](../api/user-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new [appRoleAssignment](../resources/approleassignment.md) object for a user.|
+|[Grant app role to a client service principal](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object for a client service principal.|
+|[Grant app role assignment to user, group, or client service principal for a resource service principal](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object to a user, group, or client service principal for a specified resource service principal.|
+|[Get app role assignment](../api/approleassignment-get.md)|[appRoleAssignment](../resources/approleassignment.md)|Get an [appRoleAssignment](../resources/approleassignment.md) object assigned to a user, group, or client service principal for a resource service principal.|
+|[Delete app role assignment for a group](../api/group-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object from a group.|
+|[Delete app role assignment for a user](../api/user-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object from a user.|
+|[Delete app role assignment for a client service principal](../api/serviceprincipal-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object from a client service principal.|
+|[Delete app role assignment for user, group, or client service principal to a resource service principal](../api/serviceprincipal-delete-approleassignedto.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object from a user, group, or client service principal for a specified resource service principal.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| appRoleId | Guid | The identifier (**id**) for the [app role](approle.md) which is assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application has not declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.  |
+| appRoleId | Guid | The identifier (**id**) for the [app role](approle.md) that's assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application hasn't declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.  |
 | createdDateTime | DateTimeOffset | The time when the app role assignment was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.  |
 | deletedDateTime | DateTimeOffset | The date and time when the app role assignment was deleted. Always `null` for an appRoleAssignment object that hasn't been deleted. Inherited from [directoryObject](directoryobject.md). |
 | id | String | A unique identifier for the **appRoleAssignment** key. Not nullable. Read-only. |
@@ -54,7 +54,7 @@ An app role assignment where the assigned principal is a service principal is an
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

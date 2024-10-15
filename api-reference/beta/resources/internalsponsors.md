@@ -1,13 +1,13 @@
 ---
-title: "internalSponsors complex type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "internalSponsors resource type"
+description: "Identifies a relationship to another user in the tenant who can approve."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# internalSponsors complex type
+# internalSponsors resource type
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,13 @@ It's a subtype of [userSet](userset.md), in which the `@odata.type` value `#micr
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | Indicates whether the sponsor is a backup fallback approver. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

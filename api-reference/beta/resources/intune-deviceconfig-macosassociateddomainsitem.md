@@ -2,7 +2,7 @@
 title: "macOSAssociatedDomainsItem resource type"
 description: "A mapping of application identifiers to associated domains."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

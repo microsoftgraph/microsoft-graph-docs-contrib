@@ -3,7 +3,7 @@ title: "knowledgeBaseArticle resource type"
 description: "Represents a knowledge base article."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

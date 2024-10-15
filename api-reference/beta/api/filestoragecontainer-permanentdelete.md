@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer: permanentDelete"
-description: "Permanently delete a fileStorageContainer."
+description: "Permanently delete a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
+Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -33,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storageContainers/{containerId}/permanentDelete
+POST /storage/fileStorage/containers/{containerId}/permanentDelete
 ```
 
 ## Request headers
@@ -56,16 +58,47 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.permanentdelete"
+  "name": "filestoragecontainerthis.permanentdelete",
+  "sampleKeys": ["b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z"]
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/filestoragecontainerthispermanentdelete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/filestoragecontainerthispermanentdelete-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/filestoragecontainerthispermanentdelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/filestoragecontainerthispermanentdelete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/filestoragecontainerthispermanentdelete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/filestoragecontainerthispermanentdelete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filestoragecontainerthispermanentdelete-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

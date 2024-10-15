@@ -3,7 +3,7 @@ title: "List custodianSources"
 description: "Get the list of dataSource objects associated with a source collection."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 

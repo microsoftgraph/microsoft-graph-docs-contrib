@@ -2,7 +2,7 @@
 title: "errorCode enum type"
 description: "Intune Policyset Errorcode Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

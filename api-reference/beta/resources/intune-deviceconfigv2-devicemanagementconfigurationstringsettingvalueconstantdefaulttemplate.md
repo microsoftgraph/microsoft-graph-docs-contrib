@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationStringSettingValueConstantDefaultTemplate resource type"
 description: "String Setting Value Constant Default Template"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

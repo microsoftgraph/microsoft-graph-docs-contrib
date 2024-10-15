@@ -2,7 +2,7 @@
 title: "macAddressRandomizationMode enum type"
 description: "An enum representing the possible values of Android MAC Address Randomization Mode."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

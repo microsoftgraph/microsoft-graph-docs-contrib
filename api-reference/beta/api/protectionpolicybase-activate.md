@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Activate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users). You can add or remove artifacts (sites or user accounts) to or from each active policy.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -49,11 +51,13 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
-### Example 1 : Activate an inactive protection policy
+### Example 1: Activate an inactive protection policy
 
-Activate an inactive protection policy.
+The following example shows a request to activate an inactive protection policy.
 
 #### Request
 
@@ -91,6 +95,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-activate-example-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-activate-example-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -131,7 +139,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       "displayName": "Ryan"
     }
   },
-  "createdDateTime": "2015-06-19T12-01-03.45Z",
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
   "lastModifiedBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -143,7 +151,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       "displayName": "rian"
     }
   },
-  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
   "retentionSettings": [
     {
       "interval": "R/PT10M",
@@ -157,9 +165,9 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
 }
 ```
 
-### Example 2 : Activate an active protection policy
+### Example 2: Activate an active protection policy
 
-Activate an already active protection policy.
+The following example shows a request to activate a protection policy that's already active. This request results in an error.
 
 #### Request
 
@@ -197,6 +205,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/protectionpolicybase-activate-example-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionpolicybase-activate-example-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

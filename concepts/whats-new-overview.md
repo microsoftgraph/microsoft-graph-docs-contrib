@@ -16,106 +16,142 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## June 2024: New and generally available
-
-### Change notifications
-
-Enabled change notifications support to the methods to [list](/graph/api/subscription-list), [get](/graph/api/subscription-get), [create](/graph/api/subscription-post-subscriptions), [reauthorize](/graph/api/subscription-reauthorize), [update](/graph/api/subscription-update), and [delete](/graph/api/subscription-delete) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [shift](/graph/api/resources/shift), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), and [timeOffRequest](/graph/api/resources/timeoffrequest).
-
-## June 2024: New in preview only
-
-### Change notifications
-
-Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), and [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true).
-
-### Tasks and plans
-
-[Assign a sensitivity label](/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a [plannerRoster](/graph/api/resources/plannerroster?view=graph-rest-beta&preserve-view=true).
-
-## May 2024: New and generally available
-
-### Identity and access | Identity and sign-in
-
-Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
-
-### Teamwork and communications | Calls and online meetings
-
-Get the list of [callRecord](/graph/api/resources/callrecords-callrecord) objects and their properties and the associated [participant](/graph/api/resources/callrecords-participant) objects for each **callRecord** using the following APIs:
-
-- [List callRecords](/graph/api/callrecords-cloudcommunications-list-callrecords)
-- [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2)
-
-The following properties are deprecated:
-
-- **organizer** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **organizer_v2** relationship.
-- **participants** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **participants_v2** relationship.
-- **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
-
-## May 2024: New in preview only
+## October 2024: New and generally available
 
 ### Backup storage
 
-The new Microsoft 365 Backup Storage API enables partners to build customized versions of their applications that are integrated with the Microsoft 365 Backup Storage platform. This helps to ensure exceptionally fast recovery from typical business continuity and disaster recovery (BCDR) scenarios, such as ransomware attacks or accidental/malicious deletion or overwriting of content by employees. To explore the API, see [Backup restore root](/graph/api/resources/backuprestoreroot?view=graph-rest-beta&preserve-view=true).
+Updated the endpoints of the following methods:
+- [List driveProtectionUnits](/graph/api/backuprestoreroot-list-driveprotectionunits)
+- [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
+- [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits)
 
-### Change notifications
+### Identity and access | Directory management
 
-- Enabled change notifications support to the methods to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [user-scoped chat notifications](/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview).
-- Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the **resource** property in the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource. You can use the [notifyOnUserSpecificProperties](/graph/teams-changenotifications-chat#notification-payloads-for-user-specific-properties) parameter when you subscribe either to [user-scoped chat notifications](/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).
-
-### Device and app management | Cloud PC
-
-[Create a snapshot](/graph/api/cloudpc-createsnapshot?view=graph-rest-beta&preserve-view=true) for a specific Cloud PC device.
-
-Deprecated the following methods on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
-- [getCloudPcReviewStatus](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [retrieveReviewStatus](/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta&preserve-view=true) API insted.
-- [setCloudPcReviewStatus](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method; use the [setReviewStatus](/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta&preserve-view=true) API instead.
-- [resizeCloudPc](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [resize](/graph/api/cloudpc-resize?view=graph-rest-beta&preserve-view=true) API instead.
-- [bulkReprovisionCloudPc](/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkReprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
-- [bulkRestoreCloudPc](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
-- [bulkResize](/graph/api/cloudpc-bulkresize?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
-
-### Identity and access | Identity and sign-in
-
-- Use the [externalAuthenticationMethodConfiguration resource type](/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) and its associated methods to manage the configuration of external authentication methods and define users who can use the external authentication methods to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.
-- Added API operations to retrieve or update keys in an Azure AD B2C Identity Experience Framework (IEF) policy through the new [trustFrameworkKey_v2 resource type](/graph/api/resources/trustframeworkkey_v2?view=graph-rest-beta&preserve-view=true) and its associated methods.
-
-The [custom claims policy](/graph/api/resources/customclaimspolicy) API allows application admins to customize the additional claims emitted in tokens affected by this policy. This API enables admins to manage the claims for their application from the Microsoft Entra portal and by using the Microsoft Graph API interchangeably, allowing more flexibility in their application claims management experience.
-
-### Microsoft Graph Bicep templates
-
-Use the new [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep) to deploy Microsoft Graph resources for your infrastructure as code (IaC) projects. The following Microsoft Graph resources are currently supported as Bicep resource types:
-
-- application
-- appRoleAssignedTo
-- group
-- federatedIdentityCredential
-- oauth2PermissionGrant
-- servicePrincipal
-
-Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
-
-### Search
-
-Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
-
-### Security | eDiscovery
-
-Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta&preserve-view=true) and a [report](/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta&preserve-view=true) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta&preserve-view=true).
-
-### Teamwork and communications | Calls and online meetings
-
-- [Get](/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta&preserve-view=true) information about a [webinar registration configuration](/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta&preserve-view=true).
-- [List](/graph/api/virtualevent-list-presenters?view=graph-rest-beta&preserve-view=true), [create](/graph/api/virtualevent-post-presenters?view=graph-rest-beta&preserve-view=true), [get](/graph/api/virtualeventpresenter-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/virtualeventpresenter-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/virtualeventpresenter-delete?view=graph-rest-beta&preserve-view=true) presenters on a [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true).
-- Use the **callId** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to identify the [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) that is related to a recording or transcript.
-- Use the **contentCorrelationId** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to correlate a transcript with its corresponding recording.
-- Use the **endDateTime** on [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) or [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) to identify when a recording or transcript ends.
+[Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
 
 ### Teamwork and communications | Messaging
 
-- Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
-- Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
-- Use the **isHiddenForAllMembers** property to indicate whether a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) is hidden from all its members.
-- Use the **createdBy** property on [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to retrieve the entity that created the chat.
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+
+## October 2024: New in preview only
+
+### Backup storage
+
+Updated the endpoints of the following methods:
+- [List driveProtectionUnits](/graph/api/backuprestoreroot-list-driveprotectionunits?view=graph-rest-beta&preserve-view=true)
+- [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta&preserve-view=true)
+- [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta&preserve-view=true)
+
+### Device and app management | Cloud PC
+
+- Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
+- Use the **notificationSetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcnotificationsetting?view=graph-rest-beta&preserve-view=true) to define the Cloud PC notification prompts for a Cloud PC user.
+
+### Reports | Identity and access reports
+
+The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous usage patterns in business-critical identity scenarios for your tenant and receive alert notifications. Use the operations of the [alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) and [alertConfiguration](/graph/api/resources/healthmonitoring-alertconfiguration?view=graph-rest-beta&preserve-view=true) resources to retrieve and update alerts and alert configurations. For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=277da918-3e81-499f-8803-2986a2c73123).
+
+### Teamwork and communications | Calls and online meetings
+
+Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) type:
+- [List](/graph/api/virtualeventsroot-list-townhalls?view=graph-rest-beta&preserve-view=true) all virtual event town halls created in a tenant.
+- [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
+- [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
+
+### Teamwork and communications | Messaging
+
+Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+
+### Users
+
+Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
+- onPremisesDistinguishedName
+- onPremisesDomainName
+- onPremisesSamAccountName
+- onPremisesSecurityIdentifier
+- onPremisesUserPrincipalName
+
+## September 2024: New and generally available
+
+### Change notifications
+
+Announced the deprecation of shared access signatures (SAS) for authenticating Event Hubs for [Microsoft Graph change notifications](/graph/change-notifications-delivery-event-hubs). We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](/graph/change-notifications-delivery-event-hubs#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
+
+### Identity and access | Directory management
+
+Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
+
+### Security | Alerts and incidents
+
+- Use the **dnsDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get the DNS domain that a computer belongs to.
+- Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get the hostname without the domain suffix.
+- Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get a logical grouping of computers within a Microsoft Windows network.
+
+### Security | Identities
+
+Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/api/security-identitycontainer-list-healthissues), and [update](/graph/api/security-healthissue-update) Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue) that represent potential issues identified within a customer's Defender for Identity configuration.
+
+### Teamwork and communications | Messaging
+
+- [Get all retained messages](/graph/api/channel-getallretainedmessages) across all [channels](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+- [Get all retained messages](/graph/api/chat-getallretainedmessages) from all [chats](/graph/api/resources/chat) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+
+## September 2024: New in preview only
+
+### Applications | Service principal
+
+Use the **serviceManagementReference** optional property in the [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&preserve-view=true) method to set the service tree ID for a service.
+
+### Device and app management | Cloud PC
+
+- Enabled the `middleEast` and `mexico` members as supported regions in the [cloudPcRegionGroup](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) enumeration.
+- Removed the **getShiftWorkCloudPcAccessState** method from the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the [getFrontlineCloudPcAccessState](/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) API.
+- Use the **autopilotConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set the settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.
+- Use the **osVersionNumber** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources to get the operating system version of an image.
+- Introduced the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) method on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to enable you to return a list of all snapshots of a Cloud PC.
+
+Deprecated the following methods:
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true); use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [List snapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true); use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+
+### Files
+
+- [Update the recycle bin settings](/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-beta&preserve-view=true) for a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
+- Use the `$skip`, `$top`, `$orderBy`, `$filter`, and `includeAllContainerUsers` query parameters to customize the [List permissions](/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta&preserve-view=true) operation response.
+- Include all version history when you [copy a drive item](/graph/api/driveitem-copy?view=graph-rest-beta&preserve-view=true). The version history is included up to the target version setting limit.
+
+### Identity and access | Directory management
+
+Use the **passwordResetUri** property on [internalDomainFederation](/graph/api/resources/internaldomainfederation?view=graph-rest-beta&preserve-view=true) to get or set the URI that clients are redirected to for resetting their password.
+
+### Identity and access | Identity and sign in
+
+- Use the **identifierUris** property in the get and update operations of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource to get or set restrictions on vulnerable or easily compromised identifier URI formats for an application.
+- Updated the return type for the **applicationRestrictions** property of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [appManagementApplicationConfiguration](/graph/api/resources/appmanagementapplicationconfiguration?view=graph-rest-beta&preserve-view=true).
+- Updated the return type for the **servicePrincipalRestrictions** property of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [appManagementServicePrincipalConfiguration](/graph/api/resources/appmanagementserviceprincipalconfiguration?view=graph-rest-beta&preserve-view=true).
+- Updated the return type for the **restrictions** property of the [appManagementPolicy](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [customAppManagementConfiguration](/graph/api/resources/customappmanagementconfiguration?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Microsoft 365 usage reports
+
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusageuserdetail?view=graph-rest-beta&preserve-view=true) the most recent activity data for enabled users of Microsoft 365 Copilot apps.
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta&preserve-view=true) the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusercounttrend?view=graph-rest-beta&preserve-view=true) the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period.
+
+### Security | Alerts and incidents
+
+- Use the **dnsDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the DNS domain that a computer belongs to.
+- Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the hostname without the domain suffix.
+- Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get a logical grouping of computers within a Microsoft Windows network.
+
+### Security | Identities
+
+- [Generate](/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta&preserve-view=true) a new deployment access key.
+- [Get the deployment access key](/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta&preserve-view=true) associated with a Microsoft Defender for Identity.
+- [Get the sensor deployment package](/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta&preserve-view=true) URL and version.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
 
 ## Contribute to Microsoft Graph
 

@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsResourcePerformance resource type"
 description: "The user experience analytics resource performance entity."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

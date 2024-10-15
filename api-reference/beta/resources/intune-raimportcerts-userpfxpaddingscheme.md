@@ -2,7 +2,7 @@
 title: "userPfxPaddingScheme enum type"
 description: "Supported values for the padding scheme used by encryption provider."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

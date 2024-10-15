@@ -22,30 +22,15 @@ An access package catalog might also have linked resources that are used in thos
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalogs](../api/entitlementmanagement-list-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
-| [Create accessPackageCatalog](../api/entitlementmanagement-post-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
-| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
-| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
-| [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
-| **Access package resources**| | |
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
-| **Access package resource roles**| | |
-| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
-| **Access package custom package workflow extensions**| | |
-|[List accessPackageCustomWorkflowExtensions](../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) and [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) collection|Get a list of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) and [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) objects and their properties.|
-|[Create accessPackageCustomWorkflowExtensions](../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md)|Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.|
-|[Get accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-get.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Read the properties and relationships of a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Update accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-update.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accessPackageAssignmentRequestWorkflowExtension.md)|Update the properties of a [accessPackageAssignmentRequestWorkflowExtension](../resources/accessPackageAssignmentRequestWorkflowExtension.md) object.|
-|[Delete accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-delete.md)|None|Deletes a [accessPackageAssignmentRequestWorkflowExtension](../resources/accessPackageAssignmentRequestWorkflowExtension.md) object.|
-|[Get accessPackageAssignmentWorkflowExtension](../api/accesspackageassignmentworkflowextension-get.md)|[accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md)|Read the properties and relationships of a [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.|
-|[Update accessPackageAssignmentWorkflowExtension](../api/accesspackageassignmentworkflowextension-update.md)|[accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md)|Update the properties of a [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.|
-|[Delete accessPackageAssignmentWorkflowExtension](../api/accesspackageassignmentworkflowextension-delete.md)|None|Deletes a [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.|
-| **Custom access package package workflow extensions**| | |
-|[List customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get a list of the [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) objects and their properties.|
-|[Create customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
-|[Get customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-get.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Read the properties and relationships of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
-|[Update customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-update.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Update the properties of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
-|[Delete customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|None|Deletes a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+| [List](../api/entitlementmanagement-list-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
+| [Create](../api/entitlementmanagement-post-accesspackagecatalogs.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
+| [Get](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
+| [Update](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
+| [Delete](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
+| **Access package catalog resources**| | |
+| [List](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| **Access package catalog resource roles**| | |
+| [List](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
 
 ## Properties
 
@@ -76,7 +61,7 @@ An access package catalog might also have linked resources that are used in thos
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

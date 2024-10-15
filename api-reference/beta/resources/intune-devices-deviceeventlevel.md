@@ -2,7 +2,7 @@
 title: "deviceEventLevel enum type"
 description: "Indicates device event level. Possible values are: None, Verbose, Information, Warning, Error, Critical"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

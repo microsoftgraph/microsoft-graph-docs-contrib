@@ -3,7 +3,7 @@ title: "List bookingCurrencies"
 description: "Get a list of bookingCurrency objects available to a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

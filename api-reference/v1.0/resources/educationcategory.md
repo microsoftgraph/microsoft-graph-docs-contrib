@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Category
 ---
 
 # educationCategory resource type
@@ -30,9 +31,13 @@ A category that can be applied to assignments.
 |displayName|String|Unique identifier for the category.|
 |id|String|Unique identifier for the category.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

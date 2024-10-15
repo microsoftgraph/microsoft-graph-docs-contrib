@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Range font
 ---
 
 # workbookRangeFont resource type
@@ -20,18 +21,18 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookRangeFont](../api/rangefont-get.md) | [workbookRangeFont](workbookrangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont-update.md) | [workbookRangeFont](workbookrangefont.md)	|Update RangeFont object. |
+|[Get](../api/rangefont-get.md) | [workbookRangeFont](workbookrangefont.md) |Read the properties and relationships of a workbookRangeFont object.|
+|[Update](../api/rangefont-update.md) | [workbookRangeFont](workbookrangefont.md)	|Update a workbookRangeFont object|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
-|color|string|HTML color code representation of the text color. for example #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
-|name|string|Font name (for example "Calibri")|
-|size|double|Font size.|
-|underline| String |Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|bold|Boolean|Inidicates whether the font is bold.|
+|color|string|The HTML color code representation of the text color. For example, #FF0000 represents the color red.|
+|italic|Boolean|Inidicates whether the font is italic.|
+|name|string|The font name. For example, "Calibri".|
+|size|double|The font size.|
+|underline|string|The type of underlining applied to the font. The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## Relationships
 None

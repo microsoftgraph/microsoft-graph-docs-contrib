@@ -2,7 +2,7 @@
 title: "getTargetedUsersAndDevices action"
 description: "Intune Deviceconfig Deviceconfiguration Gettargetedusersanddevices Source_Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

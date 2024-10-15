@@ -1,6 +1,32 @@
 {
   "changelog": [
       {
+       "ChangeList": [
+          {
+          "Id": "cc62ad51-15d6-4cb9-a1fa-fe18df3abd31",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessInsiderRiskLevels",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessInsiderRiskLevels** enumeration type.",
+          "Target": "conditionalAccessInsiderRiskLevels"
+          },
+          {
+          "Id": "cc62ad51-15d6-4cb9-a1fa-fe18df3abd31",
+          "ApiChange": "Property",
+          "ChangedApiName": "insiderRiskLevels",
+          "ChangeType": "Addition",
+          "Description": "Added the **insiderRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessConditionSet"
+          }
+        ],
+        "Id": "cc62ad51-15d6-4cb9-a1fa-fe18df3abd31",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-06-20T22:19:32.3422617Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+      },
+      {
          "ChangeList": [
             {
             "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",

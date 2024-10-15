@@ -3,7 +3,7 @@ title: "case resource type"
 description: "In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "resourcePageType"
 ---
 
@@ -91,7 +91,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

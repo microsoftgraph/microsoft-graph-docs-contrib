@@ -2,7 +2,7 @@
 title: "defenderPotentiallyUnwantedAppAction enum type"
 description: "Defender’s action to take on detected Potentially Unwanted Application (PUA)."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

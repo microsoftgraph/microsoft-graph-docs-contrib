@@ -2,7 +2,7 @@
 title: "Get deviceManagementReusablePolicySetting"
 description: "Read properties and relationships of the deviceManagementReusablePolicySetting object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

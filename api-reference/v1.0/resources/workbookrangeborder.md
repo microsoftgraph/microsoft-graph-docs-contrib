@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
+toc.title: Range border
 ---
 
 # workbookRangeBorder resource type
@@ -18,19 +19,19 @@ Represents the border of an object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder-get.md) | [workbookRangeBorder](workbookrangeborder.md) |Read properties and relationships of rangeBorder object.|
-|[Update](../api/rangeborder-update.md) | [workbookRangeBorder](workbookrangeborder.md)	|Update RangeBorder object. |
 |[List](../api/rangeborder-list.md) | [workbookRangeBorder](workbookrangeborder.md) collection |Get rangeBorder object collection. |
-|[Itemat](../api/rangebordercollection-itemat.md)|[workbookRangeBorder](workbookrangeborder.md)|Gets a border object using its index|
+|[Get](../api/rangeborder-get.md) | [workbookRangeBorder](workbookrangeborder.md) |Read properties and relationships of rangeBorder object.|
+|[Update](../api/rangeborder-update.md) | [workbookRangeBorder](workbookrangeborder.md)	|Update RangeBorder object. |
+|[Get range border at](../api/rangebordercollection-itemat.md)|[workbookRangeBorder](workbookrangeborder.md)|Gets a border object using its index|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|color|string|HTML color code representing the color of the border line, of the form #RRGGBB (for example "FFA500") or as a named HTML color (for example "orange").|
-|id|string|Represents border identifier. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|sideIndex|string|Constant value that indicates the specific side of the border. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
-|style|string|One of the constants of line style specifying the line style for the border. The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Specifies the weight of the border around a range. The possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|color|string|The HTML color code that represents the color of the border line. Can either be of the form #RRGGBB, for example "FFA500", or a named HTML color, for example "orange".|
+|id|string|The border identifier. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
+|sideIndex|string|Indicates the specific side of the border. The possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.|
+|style|string|Indicates the line style for the border. The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|weight|string|The weight of the border around a range. The possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## Relationships
 None

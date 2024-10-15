@@ -2,7 +2,7 @@
 title: "windowsDeliveryOptimizationConfiguration resource type"
 description: "Windows Delivery Optimization configuration"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

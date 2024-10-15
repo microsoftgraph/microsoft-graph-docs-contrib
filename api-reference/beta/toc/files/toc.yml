@@ -8,6 +8,8 @@ items:
   items:
   - name: Drive
     href: ../../resources/drive.md
+  - name: List drive
+    href: ../../api/drive-list.md
   - name: Get drive
     href: ../../api/drive-get.md
   - name: Get drive root
@@ -30,8 +32,6 @@ items:
     href: ../../resources/driveitem.md
   - name: Get item
     href: ../../api/driveitem-get.md
-  - name: List activities
-    href: ../../api/activities-list.md
   - name: Get analytics
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
@@ -46,9 +46,7 @@ items:
     href: ../../api/driveitem-update.md
   - name: Upload
     href: ../../api/driveitem-put-content.md
-  - name: Download content
-    href: ../../api/driveitem-get-content.md
-  - name: Download file
+  - name: Download file content
     href: ../../api/driveitem-get-contentstream.md
   - name: Download specific file format
     href: ../../api/driveitem-get-content-format.md
@@ -56,8 +54,6 @@ items:
     href: ../../api/driveitem-delete.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
-  - name: Restore item
-    href: ../../api/driveitem-restore.md
   - name: Move item
     href: ../../api/driveitem-move.md
   - name: Copy item
@@ -78,8 +74,12 @@ items:
     href: ../../api/driveitem-invite.md
   - name: List permissions
     href: ../../api/driveitem-list-permissions.md
+  - name: Create permission
+    href: ../../api/driveitem-post-permissions.md
   - name: Delete permission
     href: ../../api/permission-delete.md
+  - name: Revoke grants on sharing link
+    href: ../../api/permission-revokegrants.md
   - name: Get WebSocket channel
     href: ../../api/subscriptions-socketio.md
   - name: Preview item
@@ -88,8 +88,8 @@ items:
     href: ../../api/driveitem-checkin.md
   - name: Check out files
     href: ../../api/driveitem-checkout.md
-  - name: Revoke grants on sharing link
-    href: ../../api/permission-revokegrants.md
+  - name: Discard checkout
+    href: ../../api/driveitem-discardcheckout.md
   - name: Extract sensitivity labels
     href: ../../api/driveitem-extractsensitivitylabels.md
   - name: Assign sensitivity label
@@ -102,6 +102,8 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Download file (deprecated)
+    href: ../../api/driveitem-get-content.md
 - name: Bundle
   items:
   - name: Bundle
@@ -190,9 +192,21 @@ items:
     href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
+  - name: Update recycle bin settings
+    href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebin-items.md
-  - name: Delete recyclebin items
+  - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebin-items.md
   - name: Get recycle bin items
     href: ../../api/filestoragecontainer-list-recyclebin-items.md
+  - name: Lock
+    href: ../../api/filestoragecontainer-lock.md
+  - name: Unlock
+    href: ../../api/filestoragecontainer-unlock.md
+- name: Shared drive item
+  items:
+  - name: Shared drive item
+    href: ../../resources/shareddriveitem.md
+  - name: Use sharing links
+    href: ../../api/shares-get.md

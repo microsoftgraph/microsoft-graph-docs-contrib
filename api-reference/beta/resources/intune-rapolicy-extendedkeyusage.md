@@ -2,7 +2,7 @@
 title: "extendedKeyUsage resource type"
 description: "Custom Extended Key Usage definition"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,7 @@ title: "Get itemPhone"
 description: "Retrieve the properties and relationships of an itemPhone object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

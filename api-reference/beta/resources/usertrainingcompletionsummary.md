@@ -3,7 +3,7 @@ title: "userTrainingCompletionSummary resource type"
 description: "Contains aggregate data about userss training progress."
 author: "akgraph"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

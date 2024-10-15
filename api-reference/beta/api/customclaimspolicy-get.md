@@ -3,7 +3,7 @@ title: "Get customClaimsPolicy"
 description: "Get the properties and relationships of a custom claims policy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.service: entra-id
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/cla
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-customclaimspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-customclaimspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -158,7 +158,7 @@ The following example shows how you can address this new item by using the resou
   "scopes": "files.readwrite"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 

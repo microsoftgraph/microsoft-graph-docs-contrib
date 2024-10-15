@@ -157,7 +157,6 @@ Content-Type: application/json
           "newValue": "new-adDomainUsername"
         }
       ],
-      "type": "CloudPcOnPremisesConnection",
       "resourceType": "CloudPcOnPremisesConnection",
       "resourceId": "a7508af8-d334-41ba-83a7-26cc88959724"
     }

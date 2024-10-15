@@ -50,6 +50,8 @@ The following table shows the properties that can be updated for the [cloudPcPro
 
 |Property|Type|Description|
 |:---|:---|:---|
+|autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|The specific settings for Windows Autopatch that enable its customers to experience it on Cloud PC. The settings take effect when the tenant enrolls in Windows Autopatch and the **managedType** of the **microsoftManagedDesktop** property is set as `starterManaged`.|
+|autopilotConfiguration|[cloudPcAutopilotConfiguration](../resources/cloudpcautopilotconfiguration.md)|The specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy. |
 |domainJoinConfigurations|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md) collection|Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID.|
@@ -57,6 +59,7 @@ The following table shows the properties that can be updated for the [cloudPcPro
 |imageDisplayName|String|The display name for the OS image you're provisioning.|
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
+|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it.|
 |windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
 |domainJoinConfiguration (deprecated)|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs join Microsoft Entra ID.  The **domainJoinConfiguration** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
 |onPremisesConnectionId (deprecated)|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.  The **onPremisesConnectionId** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
@@ -80,7 +83,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff
 Content-Type: application/json
 
 {
@@ -95,7 +98,19 @@ Content-Type: application/json
     "language": "en-US"
   },
   "windowsSetting": {
-      "locale": "en-US"
+    "locale": "en-US"
+  },
+  "microsoftManagedDesktop": {
+    "managedType": "starterManaged",
+    "profile": null
+  },
+  "autopatch": {
+    "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+  },
+  "autopilotConfiguration": {
+    "devicePreparationProfileId": "59e5d3d2-ec68-4bfe-9693-27975b318990",
+    "applicationTimeoutInMinutes": 30,
+    "onFailureDeviceAccessDenied": false
   }
 }
 ```
@@ -140,7 +155,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": true
 }
 -->
 ``` http

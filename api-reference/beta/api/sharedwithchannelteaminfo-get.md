@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a [team](../resources/sharedwithchannelteaminfo.md) that has been shared with a specified [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "sharedwithchannelteaminfo_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 

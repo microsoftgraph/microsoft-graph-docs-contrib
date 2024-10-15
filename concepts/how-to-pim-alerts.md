@@ -7,42 +7,33 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-id-governance
-ms.date: 09/27/2023
+ms.date: 09/24/2024
+#Customer intent: As a developer, I want to learn how to programmatically manage security alerts relating to Microsoft Entra roles via Privileged Identity Management (PIM).
 ---
 
-
-# Manage security alerts for Microsoft Entra roles using PIM APIs (preview)
+# Manage security alerts for Microsoft Entra roles using PIM APIs
 
 
 Privileged Identity Management (PIM) for Microsoft Entra roles generates alerts when it detects suspicious or unsafe settings for Microsoft Entra roles in your tenant. This article describes scenarios for managing PIM alerts using Microsoft Graph.
 
 For more information about API resources for managing PIM security alerts, see [Security alerts for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#security-alerts-for-azure-ad-roles).
 
+> [!NOTE]
+> PIM security alerts are currently on the `/beta` endpoint only and are available only for Microsoft Entra roles.
+
 ## Prerequisites
 
-+ Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
++ Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
-  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
+  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with administrative privileges to manage PIM rules. The *Privileged Role Administrator* role is the least privileged role sufficient to manage PIM rules.
   + Grant yourself the *RoleManagementAlert.ReadWrite.Directory* delegated permission.
-
-<!--
-Consider moving this to the API Overview (replace existing) and keeping this article to the how-to steps only.
-
-| Scenario | Resources and associated APIs |
-|--|--|
-| Identify the security alert types that Azure AD defines, their severity level, and mitigation steps. Seven types of security alerts for Azure AD roles are supported today. | unifiedRoleManagementAlertDefinition |
-| Identify the alerts as they apply to your tenant and the customized settings. For example, whether the alerts are disabled or enabled for scanning in the tenant, the threshold that when crossed triggers a known incident, frequency of scanning. | unifiedRoleManagementAlertConfiguration |
-| Identify the actual related incidents that led to a security alert being triggered. For example, when a role is assigned outside PIM, the target principal and the role in scope of the incident. | unifiedRoleManagementAlertIncident |
-| A comprehensive hierarchy of alerts information in the tenant, including the alert definition, alert incidents, and alert configuration | unifiedRoleManagementAlert |
-
--->
 
 ## List all PIM alerts
 
 ### Request
 <!-- clarify this statement in the draft: All built-in roles are granted access to this operation.-->
 
-Only alerts relating to Microsoft Entra built-in roles and scoped to the tenant are supported and can be retrieved using the following request. Not specifying the correct scope and scopeType returns a `400 Bad Request` error.
+Only alerts relating to Microsoft Entra built-in roles and scoped to the tenant (`/`) are supported and can be retrieved using the following request. Not specifying the correct **scope** and **scopeType** returns a `400 Bad Request` error.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -256,9 +247,7 @@ Content-Type: application/json
 
 ### Request
 
-You can read the security alert and its definition, configuration, and related incidents in the tenant by either expanding all relationships using the wildcard character (*), or by expanding the relationships individually using `$expand=alertDefinition,alertConfiguration,alertIncidents`.
-
-This request helps you avoid retrieving the alert definition, configuration, and incidents separately, and then correlating them to the alert.
+You can read a security alert and its definition, configuration, and related incidents in the tenant in a single query. Either expand all relationships using the wildcard character (*), or by expand the relationships individually using `$expand=alertDefinition,alertConfiguration,alertIncidents`. This request helps you avoid retrieving the alert definition, configuration, and incidents separately, and then correlating them to the alert.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -526,9 +515,9 @@ Content-Type: application/json
 
 ## Dismiss an alert
 
-You dismiss an alert by setting the **isActive** property to `true`. When you dismiss an alert, PIM no longer scans the alert in your tenant for incidents. Existing incidents can still be queried, but no new incidents are generated. You can re-enable the alert by setting the `isActive` property to `true` or by [refreshing the alert type](#refresh-an-alert-type).
+You dismiss an alert by setting the **isActive** property to `true`. When you dismiss an alert, PIM no longer scans the alert in your tenant for incidents. Existing incidents can still be queried, but no new incidents are generated. You can re-enable the alert by setting the `isActive` property to `true` or by [refreshing the alert type](#refresh-alerts).
 
-<!-- Riana to clarify the second sentence: Isn't scanning suspended for the day only - until PIM automatically rescans the tenant in the next run where it reactivates the alert?-->
+The request returns a `204 No Content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -579,13 +568,13 @@ Content-Type: application/json
 
 ---
 
-The request returns a `204 No Content` response.
+## Refresh alerts
 
-## Refresh an alert type
+In PIM, you can refresh a single alert type or all alerts in the tenant. When you refresh either type, PIM scans the tenant for incidents that match the alerts. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the refresh succeeded or failed. In a successful refresh, PIM includes alerts that you previously dismissed, reactivates dismissed alerts (updates **isActive** to `true`), and scans and generates new incidents for the alerts.
 
-When you refresh an alert type, PIM scans the tenant for incidents that match the alert type. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the alert was refreshed or failed. PIM includes alerts that you previously dismissed in the refresh operation, reactives dismissed alerts (updates **isActive** to `true`), and generates new incidents.
+### Refresh a single alert type
 
-### Request
+#### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -637,13 +626,11 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_3b0e753b-22fa-4c16-9bf2-470b80be80d6_RolesAssignedOutsidePimAlert
 ```
 
-## Refresh all alert types
+### Refresh all alert types in the tenant
 
-When you refresh all alerts, PIM scans the tenant for all incidents. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the alerts were refreshed or failed. PIM includes alerts that you previously dismissed in the refresh operation, reactives dismissed alerts (updates **isActive** to `true`), and generates new incidents.
+#### Request
 
-### Request
-
-Currently, only the tenant scope (`/`) and `DirectoryRole` scope type are supported.
+Only the tenant scope (`/`) and `DirectoryRole` scope type are supported.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -694,7 +681,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 202 Accepted
@@ -704,8 +691,6 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 ## Update an alert configuration
 
 Updating an alert configuration means to change the tenant-specific settings that control how PIM scans the tenant for incidents that match the alert type. For example, whether to scan the alert in the tenant or you can change the threshold that when crossed triggers a known incident.
-
-<!-- Q: Riana - isActive for alert vs isEnabled for alert configuration -  what's the difference? -->
 
 # [HTTP](#tab/http)
 <!-- {
@@ -763,7 +748,7 @@ The request returns a `204 No Content` response.
 
 ## Remediate an alert incident
 
-Remediating an alert incident means requesting Microsoft Entra ID to apply the mitigationSteps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, then remediating the incident means that Microsoft Entra ID removes the user from the role.
+Remediating an alert incident means requesting Microsoft Entra ID to apply the mitigation steps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, then remediating the incident means that Microsoft Entra ID removes the user from the role.
 
 ### Request
 # [HTTP](#tab/http)

@@ -2,7 +2,7 @@
 title: "List deviceManagementScriptAssignments"
 description: "List properties and relationships of the deviceManagementScriptAssignment objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 505
+Content-Length: 522
 
 {
   "value": [
@@ -72,10 +72,11 @@ Content-Length: 505
       "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
       "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

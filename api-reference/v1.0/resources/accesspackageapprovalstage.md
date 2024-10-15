@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# accessPackageApprovalStage complex type
+# accessPackageApprovalStage resource type
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Used for the **stages** property of [approval settings](accesspackageassignmenta
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageApprovalStage"

@@ -24,17 +24,21 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Method | Return Type | Description |
 | ------ | ----------- | ----------- |
 | **Organizational contacts** |
-| [List org contacts](../api/orgcontact-list.md) | [orgContact](orgcontact.md) collection | List properties of organizational contacts. |
-| [Get org contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Read properties and relationships of orgContact object. |
+| [List](../api/orgcontact-list.md) | [orgContact](orgcontact.md) collection | List properties of organizational contacts. |
+| [Get](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Read properties and relationships of orgContact object. |
+| [Get delta](../api/orgcontact-delta.md) | [orgContact](orgcontact.md) collection| Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. |
+| [Get delta for directory object](../api/directoryobject-delta.md) | [direcyoryObject](orgcontact.md) collection| Get newly created, updated, or deleted organizational contacts via the directory object collection without having to perform a full read of the entire collection. |
+| [List member of](../api/orgcontact-list-memberof.md) | String collection | Retrieve the list of groups and adminstrative units the contact is a member of. The check is transitive. |
+| [List transitive member of](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups an organizational contact is a member of, including groups that the organizational contact is nested under. |
+| [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership of an organizational contact in a list of groups. The check is transitive. |
+| [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the organizational contact is a member of. The check is transitive. |
+|[Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership of an organizational contact in a list of groups, directory role, or administrative unit objects. |
+|[Get member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the organizational contact is a member of. The check is transitive. |
+|[Retry service provisioning](../api/orgcontact-retryserviceprovisioning.md) | None | Retry the orgContact service provisioning. |
+| [Get transitive reports](../api/orgcontact-get-transitivereports.md) | Integer | Get the count of transitive reports for an organization contact from the transitiveReports navigation property. |
 | **Organizational hierarchy** |
 | [Get manager](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Get the contact's manager. |
-| [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | Integer | Get the count of transitive reports for an organization contact from the transitiveReports navigation property. |
 | [List direct reports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | List the contact's direct reports. |
-| [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get a memberOf object collection. |
-| [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for group membership. |
-| [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the specified contact is a member of. |
-| [Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in groups, administrative units, and directory roles. |
-| [Get member objects](../api/directoryobject-getmemberobjects.md) | String collection | Get the list of groups, administrative units, and directory roles the contact is a member of. |
 
 ## Properties
 

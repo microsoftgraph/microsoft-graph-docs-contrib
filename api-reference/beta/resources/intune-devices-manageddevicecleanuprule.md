@@ -2,7 +2,7 @@
 title: "managedDeviceCleanupRule resource type"
 description: "Define the rule when the admin wants the devices to be cleaned up."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

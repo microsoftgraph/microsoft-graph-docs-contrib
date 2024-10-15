@@ -42,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|visible|boolean|Boolean value representing if the axis gridlines are visible or not.|
+|visible|Boolean|Boolean value representing if the axis gridlines are visible or not.|
 
 ## Response
 

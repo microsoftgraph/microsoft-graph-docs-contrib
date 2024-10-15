@@ -2,7 +2,7 @@
 title: "windowsDriverUpdateProfile resource type"
 description: "Windows Driver Update Profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -35,7 +35,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

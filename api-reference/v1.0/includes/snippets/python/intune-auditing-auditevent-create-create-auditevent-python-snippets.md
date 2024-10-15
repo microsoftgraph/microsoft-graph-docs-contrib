@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.audit_event import AuditEvent
 from msgraph.generated.models.audit_actor import AuditActor
 from msgraph.generated.models.audit_resource import AuditResource
 from msgraph.generated.models.audit_property import AuditProperty
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AuditEvent(
 	odata_type = "#microsoft.graph.auditEvent",
 	display_name = "Display Name value",

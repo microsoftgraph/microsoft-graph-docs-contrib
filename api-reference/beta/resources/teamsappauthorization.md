@@ -18,13 +18,14 @@ The authorization details of a [teamsApp](teamsapp.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|clientAppId|String|The registration ID of the Microsoft Entra app ID associated with the [teamsApp](teamsapp.md). |
 |requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions required by the [teamsApp](teamsapp.md).|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppAuthorization"
@@ -33,9 +34,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppAuthorization",
+  "clientAppId": "String",
   "requiredPermissionSet": {
     "@odata.type": "microsoft.graph.teamsAppPermissionSet"
   }
 }
 ```
-

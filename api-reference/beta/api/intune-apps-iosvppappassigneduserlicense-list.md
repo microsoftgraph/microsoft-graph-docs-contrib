@@ -2,7 +2,7 @@
 title: "List iosVppAppAssignedUserLicenses"
 description: "List properties and relationships of the iosVppAppAssignedUserLicense objects."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

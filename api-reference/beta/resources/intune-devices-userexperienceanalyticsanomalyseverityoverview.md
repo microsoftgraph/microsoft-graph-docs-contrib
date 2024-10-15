@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAnomalySeverityOverview resource type"
 description: "The user experience analytics anomaly severity overview entity contains the count information for each severity of anomaly."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Get microsoftTunnelConfiguration"
 description: "Read properties and relationships of the microsoftTunnelConfiguration object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1036
+Content-Length: 1077
 
 {
   "value": {
@@ -75,6 +75,7 @@ Content-Length: 1036
     "displayName": "Display Name value",
     "description": "Description value",
     "network": "Network value",
+    "ipv6Network": "Ipv6Network value",
     "dnsServers": [
       "Dns Servers value"
     ],

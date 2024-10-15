@@ -33,7 +33,7 @@ Represents a proportion of the unified storage quota associated with a specific 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
