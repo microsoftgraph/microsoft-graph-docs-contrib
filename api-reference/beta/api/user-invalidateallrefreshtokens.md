@@ -18,7 +18,6 @@ Invalidates all of the user's refresh tokens issued to applications and session 
 
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application receives an error. If this happens, the application needs to acquire a new refresh token by making a request to the OAuth 2.0 `/authorize` endpoint, which forces the user to sign in.
 
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -29,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!IMPORTANT]
 > 
-> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/users/invalidateAllRefreshTokens` role permission. The following least privileged roles are supported for this operation:
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation:
 > - Directory Writers
 > - Helpdesk Administrator
 > - Authentication Administrator
