@@ -72,7 +72,7 @@ You can also select specific queries to add to your collection. When you're fini
 
 ### Documentation
 
-Select the **Documentation** button next to each query to learn more about the API endpoint. The relevant API Reference provides more information about the request parameters, response structure, and required permissions.
+Select **Documentation** on each query to learn more about the API endpoint. The relevant API Reference provides more information about the request parameters, response structure, and required permissions.
 
 ## Integrate Microsoft Graph into your application
 
@@ -112,7 +112,7 @@ You can customize the Graph Explorer interface by using the settings icon at the
 
 ### Share  
 
-To share your current query, select on the share icon (next to the Run query button), so that people can try out the specific query in Graph Explorer.
+To share your current query, select **Share** so people can try out the specific query in Graph Explorer.
 
 ## Next steps
 
