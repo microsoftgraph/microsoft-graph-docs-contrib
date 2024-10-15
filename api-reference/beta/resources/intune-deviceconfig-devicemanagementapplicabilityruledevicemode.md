@@ -2,7 +2,7 @@
 title: "deviceManagementApplicabilityRuleDeviceMode resource type"
 description: "Intune Deviceconfig Devicemanagementapplicabilityruledevicemode Resources ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

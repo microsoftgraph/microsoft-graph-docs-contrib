@@ -55,6 +55,8 @@ To remove a **driveProtectionUnit** from the policy, specify the `@removed` anno
 
 If successful, this method returns a `200 OK` response code and an updated [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -73,10 +75,10 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
   "displayName": "One Drive  Policy - Inadvertent data loss",
   "driveProtectionUnits@delta": [
     {
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
     {
       "@removed": {
@@ -114,6 +116,10 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
 [!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-update-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusinessprotectionpolicy-update-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -139,7 +145,7 @@ HTTP/1.1 200 OK
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -152,7 +158,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -164,11 +170,11 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       "id": "67014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "directoryObjectId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "protectRequested",
       "createdBy": {
@@ -182,7 +188,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -194,7 +200,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     },
     {
       //Error scenario
@@ -211,7 +217,7 @@ HTTP/1.1 200 OK
     },
     {
       "id": "3667e382-71a9-4c07-bef7-bda97e09c0d2",
-      "userId": "5767e382-71a9-4c07-bef7-bda97e09c0d2",
+      "directoryObjectId": "5767e382-71a9-4c07-bef7-bda97e09c0d2",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
       "status": "removeRequested",
       "createdBy": {
@@ -225,7 +231,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -237,7 +243,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
     }
   ]
 }

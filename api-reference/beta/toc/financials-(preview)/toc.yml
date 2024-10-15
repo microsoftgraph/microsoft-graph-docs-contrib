@@ -40,13 +40,13 @@ items:
   items:
   - name: Country region
     href: ../../resources/dynamics-countriesregions.md
-  - name: Get countries/regions
+  - name: Get
     href: ../../api/dynamics-countriesregions-get.md
-  - name: Create countries/regions
+  - name: Create
     href: ../../api/dynamics-create-countriesregions.md
-  - name: Patch countryRegion
+  - name: Patch
     href: ../../api/dynamics-countriesregions-update.md
-  - name: Delete countries/regions
+  - name: Delete
     href: ../../api/dynamics-countriesregions-delete.md
 - name: Currency
   items:

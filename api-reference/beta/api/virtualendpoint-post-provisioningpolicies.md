@@ -185,6 +185,14 @@ Content-Type: application/json
       "type": "hybridAzureADJoin"
     }
   ],
+  "microsoftManagedDesktop": {
+      "managedType": "notManaged",
+      "profile": null
+  },
+  "autopatch": {
+      "autopatchGroupId": null
+  },
+  "autopilotConfiguration": null,
   "enableSingleSignOn": true,
   "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
   "imageDisplayName": "Windows-10 19h1-evd",

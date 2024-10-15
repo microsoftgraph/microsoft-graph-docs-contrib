@@ -2,7 +2,7 @@
 title: "fileEncryptionInfo resource type"
 description: "Contains properties for file encryption information for the content version of a line of business app."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

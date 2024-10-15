@@ -40,9 +40,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property  | Type|Description|
 |:---------------|:--------|:----------|
-|overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
+|overlay|Boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
 |position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|A boolean value that represents the visibility of a ChartLegend object.|
+|visible|Boolean|A Boolean value that represents the visibility of a ChartLegend object.|
 
 ## Response
 

@@ -2,7 +2,7 @@
 title: "windowsQualityUpdateProfile resource type"
 description: "Windows Quality Update Profile"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

@@ -80,9 +80,9 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.contentFormat", 
-	"odataType" : "#microsoft.graph.contentState", 
-	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
+	"format@odata.type" : "#microsoft.graph.contentFormat", 
+	"state@odata.type" : "#microsoft.graph.contentState", 
+	"metadata@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -98,9 +98,9 @@ extendedProperties := []graphmodels.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"odataType" : "#microsoft.graph.assignmentMethod", 
-	"odataType" : "#Guid", 
-	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
+	"assignmentMethod@odata.type" : "#microsoft.graph.assignmentMethod", 
+	"labelId@odata.type" : "#Guid", 
+	"extendedProperties@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)

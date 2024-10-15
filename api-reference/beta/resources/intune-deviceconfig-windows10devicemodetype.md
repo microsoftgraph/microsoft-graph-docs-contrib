@@ -2,7 +2,7 @@
 title: "windows10DeviceModeType enum type"
 description: "Windows 10 Device Mode type."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "iosMobileAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for iOS mobile app configurations."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

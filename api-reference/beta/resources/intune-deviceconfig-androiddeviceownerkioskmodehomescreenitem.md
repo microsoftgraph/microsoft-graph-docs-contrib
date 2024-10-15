@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerKioskModeHomeScreenItem resource type"
 description: "Represents an item on the Android Device Owner Managed Home Screen (application, weblink or folder"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

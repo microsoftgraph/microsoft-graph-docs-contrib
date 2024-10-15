@@ -2,7 +2,7 @@
 title: "privilegeManagementEndUserType enum type"
 description: "The type of user account on Windows that was used to performed the elevation."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

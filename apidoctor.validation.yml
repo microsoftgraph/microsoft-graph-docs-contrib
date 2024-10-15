@@ -8,18 +8,12 @@ trigger:
     include:
       - live
       - main
-  paths:
-    include:
-      - api-reference/*
 
 pr:
   branches:
     include:
       - live
       - main
-  paths:
-    include:
-      - api-reference/*
 
 parameters:
   - name: useNuGetPackage
@@ -56,6 +50,10 @@ extends:
     sdl:
       credscan:
         suppressionsFile: $(Build.SourcesDirectory)\.azure-pipelines\.config\CredScanSuppressions.json
+      baseline:
+        baselineFile: $(Build.SourcesDirectory)\.gdn\.gdnbaselines
+      suppression:
+        suppressionFile: $(Build.SourcesDirectory)\.gdn\.gdnsuppress
     customBuildTags:
       - ES365AIMigrationTooling
 

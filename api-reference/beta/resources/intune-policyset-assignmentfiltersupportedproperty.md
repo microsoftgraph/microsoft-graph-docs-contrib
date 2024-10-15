@@ -2,7 +2,7 @@
 title: "assignmentFilterSupportedProperty resource type"
 description: "Represents the information about the property which is supported in crafting the rule of AssignmentFilter."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

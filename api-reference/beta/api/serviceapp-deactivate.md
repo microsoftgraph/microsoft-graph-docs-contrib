@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/716338
 [!INCLUDE [sample-code](../includes/snippets/php/serviceapp-deactivate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceapp-deactivate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/serviceapp-deactivate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -111,8 +115,8 @@ Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-e
   "@odata.type": "#microsoft.graph.serviceApp",
   "id":"71633878-8321-4950-bfaf-ed285bdd1461",
   "status" : "inactive",
-  "registrationDateTime":"2023-06-19T12-01-03.45Z",   
-  "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+  "registrationDateTime":"2023-06-19T12:01:03.45Z",   
+  "lastModifiedDateTime":"2023-06-19T12:01:03.45Z",
   "lastModifiedBy":{
       "application":{
           "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"

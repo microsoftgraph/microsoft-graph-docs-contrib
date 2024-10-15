@@ -2,7 +2,7 @@
 title: "elevationRequestState enum type"
 description: "Indicates state of elevation request"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -27,3 +27,4 @@ Indicates state of elevation request
 |expired|4|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
 |revoked|6|Set to expire when Approved for is elapsed or ExpireDate is elapsed, whichever is sooner.|
+|completed|7|Indicates an elevation request that was previously approved and expired has been completed.|

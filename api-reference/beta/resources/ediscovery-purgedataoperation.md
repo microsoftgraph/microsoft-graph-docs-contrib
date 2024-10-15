@@ -3,7 +3,7 @@ title: "purgeDataOperation resource type"
 description: "Represents an operation to permanently delete data in a sourceCollection. Currently the operation is scoped to Microsoft Teams messages only."
 author: "mahage-msft"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

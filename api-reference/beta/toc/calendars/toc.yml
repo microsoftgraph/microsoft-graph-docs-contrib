@@ -6,21 +6,23 @@ items:
   items:
   - name: Calendar
     href: ../../resources/calendar.md
-  - name: List calendars
+  - name: List
     href: ../../api/user-list-calendars.md
-  - name: Create calendar
+  - name: Create
     href: ../../api/user-post-calendars.md
-  - name: Get calendar
+  - name: Get
     href: ../../api/calendar-get.md
-  - name: Update calendar
+  - name: Update
     href: ../../api/calendar-update.md
-  - name: Delete calendar
+  - name: Delete
     href: ../../api/calendar-delete.md
+  - name: Permanently delete
+    href: ../../api/calendar-permanentdelete.md
   - name: List calendar view
     href: ../../api/calendar-list-calendarview.md
   - name: List events
     href: ../../api/calendar-list-events.md
-  - name: Create Event
+  - name: Create event
     href: ../../api/calendar-post-events.md
   - name: Get free/busy schedule
     href: ../../api/calendar-getschedule.md
@@ -38,16 +40,18 @@ items:
   items:
   - name: Event
     href: ../../resources/event.md
-  - name: List events
+  - name: List
     href: ../../api/user-list-events.md
-  - name: Create event
+  - name: Create
     href: ../../api/user-post-events.md
-  - name: Get event
+  - name: Get
     href: ../../api/event-get.md
-  - name: Update event
+  - name: Update
     href: ../../api/event-update.md
-  - name: Delete event
+  - name: Delete
     href: ../../api/event-delete.md
+  - name: Permanently delete
+    href: ../../api/event-permanentdelete.md
   - name: Get delta
     href: ../../api/event-delta.md
   - name: Forward event
@@ -78,10 +82,6 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Extended properties
     items:
     - name: Create single-value property
@@ -96,11 +96,11 @@ items:
   items:
   - name: Event message
     href: ../../resources/eventmessage.md
-  - name: Get event message
+  - name: Get
     href: ../../api/eventmessage-get.md
-  - name: Update event message
+  - name: Update
     href: ../../api/eventmessage-update.md
-  - name: Delete event message
+  - name: Delete
     href: ../../api/eventmessage-delete.md
   - name: Copy message
     href: ../../api/message-copy.md
@@ -120,8 +120,12 @@ items:
     href: ../../api/message-replyall.md
   - name: Send draft message
     href: ../../api/message-send.md
+  - name: Recall message
+    href: ../../api/message-recall.md
   - name: Unsubscribe
     href: ../../api/message-unsubscribe.md
+  - name: Permanently delete
+    href: ../../api/eventmessage-permanentdelete.md
   - name: Attachments
     items:
     - name: List attachments
@@ -170,6 +174,30 @@ items:
     href: ../../api/post-list-attachments.md
   - name: Delete
     href: ../../api/attachment-delete.md
+- name: File attachment
+  items:
+  - name: File attachment
+    href: ../../resources/fileattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
+- name: Item attachment
+  items:
+  - name: Item attachment
+    href: ../../resources/itemattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
+- name: Reference attachment
+  items:
+  - name: Reference attachment
+    href: ../../resources/referenceattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
 - name: Calendar group
   items:
   - name: Calendar group
@@ -202,19 +230,19 @@ items:
     href: ../../api/calendarpermission-update.md
   - name: Delete
     href: ../../api/calendarpermission-delete.md
-- name: Outlook category
+- name: Outlook category (deprecated)
   items:
-  - name: Outlook category
+  - name: Outlook category (deprecated)
     href: ../../resources/outlookcategory.md
-  - name: List categories
+  - name: List
     href: ../../api/outlookuser-list-mastercategories.md
-  - name: Get category
+  - name: Get
     href: ../../api/outlookcategory-get.md
-  - name: Create category
+  - name: Create
     href: ../../api/outlookuser-post-mastercategories.md
-  - name: Update category
+  - name: Update
     href: ../../api/outlookcategory-update.md
-  - name: Delete category
+  - name: Delete
     href: ../../api/outlookcategory-delete.md
 - name: Extended properties
   items:
@@ -266,3 +294,21 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
+  - name: Devices (preview)
+    items:
+    - name: Workplace sensor device
+      items:
+      - name: Workplace sensor device
+        href: ../../resources/workplacesensordevice.md
+      - name: List
+        href: ../../api/workplace-list-sensordevices.md
+      - name: Create
+        href: ../../api/workplace-post-sensordevices.md
+      - name: Get
+        href: ../../api/workplacesensordevice-get.md
+      - name: Update
+        href: ../../api/workplacesensordevice-update.md
+      - name: Delete
+        href: ../../api/workplacesensordevice-delete.md
+      - name: Ingest telemetry
+        href: ../../api/workplacesensordevice-ingesttelemetry.md

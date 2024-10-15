@@ -2,7 +2,7 @@
 title: "managedDeviceMobileAppConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for managed device mobile app configuration PolicySetItem."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

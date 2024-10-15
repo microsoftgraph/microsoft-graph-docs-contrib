@@ -49,6 +49,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -86,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/restoresessionbase-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restoresessionbase-delete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

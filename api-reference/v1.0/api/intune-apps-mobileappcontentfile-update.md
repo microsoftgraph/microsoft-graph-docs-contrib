@@ -2,7 +2,7 @@
 title: "Update mobileAppContentFile"
 description: "Update the properties of a mobileAppContentFile object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

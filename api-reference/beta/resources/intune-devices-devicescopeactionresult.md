@@ -2,7 +2,7 @@
 title: "deviceScopeActionResult resource type"
 description: "The result of the triggered device scope action."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

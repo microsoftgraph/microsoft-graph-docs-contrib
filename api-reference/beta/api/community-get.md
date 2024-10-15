@@ -3,7 +3,7 @@ title: "Get community"
 description: "Read the properties and relationships of a community object."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "goals resource type"
 description: "Represents a goals container in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "employee-goals"
+ms.subservice: "viva-goals"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ None.
 |exportJobs|[goalsExportJob](../resources/goalsexportjob.md) collection|Represents a collection of goals export jobs for Viva Goals.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

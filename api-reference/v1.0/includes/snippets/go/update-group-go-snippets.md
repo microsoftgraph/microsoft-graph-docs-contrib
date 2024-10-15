@@ -16,17 +16,11 @@ import (
 )
 
 requestBody := graphmodels.NewGroup()
-description := "Library Assist"
+description := "Library Assist - ADC"
 requestBody.SetDescription(&description) 
-displayName := "Library Assist"
+displayName := "Library Assist - ADC"
 requestBody.SetDisplayName(&displayName) 
-groupTypes := []string {
-	"Unified",
-}
-requestBody.SetGroupTypes(groupTypes)
-mailEnabled := true
-requestBody.SetMailEnabled(&mailEnabled) 
-mailNickname := "library-help"
+mailNickname := "library-help-adc"
 requestBody.SetMailNickname(&mailNickname) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

@@ -7,11 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AppManagementPolicy;
-use Microsoft\Graph\Beta\Generated\Models\AppManagementConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CustomAppManagementConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\CustomAppManagementApplicationConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriRestriction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -20,7 +23,7 @@ $requestBody = new AppManagementPolicy();
 $requestBody->setDisplayName('Credential management policy');
 $requestBody->setDescription('Cred policy sample');
 $requestBody->setIsEnabled(true);
-$restrictions = new AppManagementConfiguration();
+$restrictions = new CustomAppManagementConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1 = new PasswordCredentialConfiguration();
 $passwordCredentialsPasswordCredentialConfiguration1->setRestrictionType(new AppCredentialRestrictionType('passwordAddition'));
 $passwordCredentialsPasswordCredentialConfiguration1->setMaxLifetime(null);
@@ -56,6 +59,15 @@ $keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $restrictions->setKeyCredentials($keyCredentialsArray);
 
+$restrictionsApplicationRestrictions = new CustomAppManagementApplicationConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUris = new IdentifierUriConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition = new IdentifierUriRestriction();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2024-01-01T10:37:00Z'));
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeAppsReceivingV2Tokens(true);
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeSaml(true);
+$restrictionsApplicationRestrictionsIdentifierUris->setNonDefaultUriAddition($restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition);
+$restrictionsApplicationRestrictions->setIdentifierUris($restrictionsApplicationRestrictionsIdentifierUris);
+$restrictions->setApplicationRestrictions($restrictionsApplicationRestrictions);
 $requestBody->setRestrictions($restrictions);
 
 $result = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody)->wait();

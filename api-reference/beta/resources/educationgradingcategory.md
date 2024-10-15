@@ -5,6 +5,7 @@ author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+toc.title: Grading category
 ---
 
 # educationGradingCategory resource type
@@ -35,7 +36,7 @@ Represents the weighted contribution of an assignment to a class average grade.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

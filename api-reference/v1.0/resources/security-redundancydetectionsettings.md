@@ -3,7 +3,7 @@ title: "redundancyDetectionSettings resource type"
 description: "Represents redundancy settings for an eDiscovery case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Represents redundancy (email threading and near duplicate detection) settings fo
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"

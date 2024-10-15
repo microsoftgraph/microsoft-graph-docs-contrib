@@ -2,7 +2,7 @@
 title: "managedDeviceWindowsOperatingSystemEditionType enum type"
 description: "Windows Operating System is available in different editions, which have a specific set of features available. This enum type defines the corresponding edition."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

@@ -18,8 +18,14 @@ Represents tenant-wide settings for the Universal Print service.
 |:---|:---|:---|
 |documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.|
 
+## Relationships
+
+None.
+
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printSettings"

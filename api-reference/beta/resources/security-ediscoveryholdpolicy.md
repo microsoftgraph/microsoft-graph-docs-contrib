@@ -3,7 +3,7 @@ title: "ediscoveryHoldPolicy resource type"
 description: "*ediscoveryHoldPolicy resource type"
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -58,7 +58,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data sources that represent Exchange mailboxes.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

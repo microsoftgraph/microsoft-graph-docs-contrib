@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectiors, Copilot for Microsoft 365, scenario
+      displayName: Microsoft Graph connectiors, Microsoft 365 Copilot, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -304,6 +304,8 @@ items:
       displayName: users
     - name: Default user permissions
       href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
+    - name: Profile photo settings
+      href: profilephoto-configure-settings.md
   - name: Groups
     items:
     - name: Overview
@@ -359,21 +361,12 @@ items:
       href: data-connect-datasets.md
     - name: User selection and filtering
       href: data-connect-filtering.md
-    - name: Updated onboarding experience
-      items:
-      - name: Onboarding experience overview
-        href: onboarding-experience-overview.md
-      - name: App registration
-        href: app-registration.md
-      - name: App authorization
-        href: app-authorization.md
-      - name: Existing customer migration
-        href: existing-customer-migration.md
+    - name: App registration
+      href: app-registration.md
+    - name: App authorization
+      href: app-authorization.md
     - name: Templates
       href: data-connect-templates-overview.md
-    - name: Integrate with PAM
-      href: data-connect-pam.md
-      displayName: Privileged Access Management
     - name: Define dataset scopes
       href: data-connect-users-and-groups.md
     - name: Security, privacy, and compliance
@@ -390,6 +383,12 @@ items:
     - name: Data Connect troubleshooting
       href: data-connect-troubleshooting.md
       displayName: Microsoft Graph Data Connect troubleshooting
+  - name: Backup storage
+    items:
+    - name: Overview
+      href: backup-storage-concept-overview.md
+    - name: Error codes
+      href: backup-storage-error-codes.md
   - name: Calendar
     items:
     - name: Overview
@@ -639,7 +638,7 @@ items:
           href: tutorial-lifecycle-workflows-scheduled-leaver.md
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
-        - name: Automate employee mover tasks (preview)
+        - name: Automate employee mover tasks
           href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
         - name: Configure employeeLeaveDateTime
           href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
@@ -765,7 +764,7 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
-    - name: Customize item insights privacy (preview)
+    - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
     - name: Customize people insights privacy (preview)
       href: insights-customize-people-insights-privacy.md
@@ -1005,6 +1004,12 @@ items:
       - name: Microsoft Entra built-in roles
         displayName: Microsoft Graph permissions
         href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
+      - name: Best practices for Teams app permissions
+        displayName: Best practices for using Microsoft Graph permissions to build Teams apps
+        href: best-practices-graph-permission.md
+      - name: Selected permissions in OneDrive and SharePoint
+        displayName: Selected Permissions in OneDrive and SharePoint
+        href: permissions-selected-overview.md
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access
@@ -1050,6 +1055,8 @@ items:
       href: long-running-actions-overview.md
     - name: Enable metered APIs
       href: metered-api-setup.md
+    - name: Metered APIs FAQ
+      href: metered-api-faq.md
     - name: Work with Graph Explorer
       href: graph-explorer/graph-explorer-features.md
     - name: Use Postman
@@ -1096,6 +1103,8 @@ items:
         href: teams-changenotifications-teammembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
+      - name: Teams app installation
+        href: teams-changenotifications-appinstallation.md
     - name: Notifications for Outlook resources
       href: outlook-change-notifications-overview.md
   - name: Change tracking
@@ -1135,7 +1144,7 @@ items:
     displayName: Microsoft Graph error responses and error resource types
   - name: Microsoft Entra service limits
     displayName: Azure AD service limits and restrictions
-    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+    href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?context=graph/context
 - name: Migrate
   items:
   - name: Azure AD Graph

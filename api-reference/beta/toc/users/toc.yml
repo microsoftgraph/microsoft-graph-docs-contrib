@@ -30,13 +30,17 @@ items:
     href: ../../api/user-convertexternaltointernalmemberuser.md
   - name: Invalidate all refresh tokens
     href: ../../api/user-invalidateallrefreshtokens.md
+  - name: Revoke sign-in sessions
+    href: ../../api/user-revokesigninsessions.md
+  - name: Export personal data
+    href: ../../api/user-exportpersonaldata.md
   - name: App role assignments
     items:
-    - name: List app role assignments
+    - name: List
       href: ../../api/user-list-approleassignments.md
-    - name: Add app role assignment
+    - name: Add
       href: ../../api/user-post-approleassignments.md
-    - name: Remove app role assignment
+    - name: Remove
       href: ../../api/user-delete-approleassignments.md
     - name: List appRoleAssignedResources
       href: ../../api/user-list-approleassignedresources.md
@@ -72,6 +76,10 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Delegated permission grants
+    items:
+    - name: List delegated permission grants
+      href: ../../api/user-list-oauth2permissiongrants.md
   - name: Directory objects
     items:
     - name: Get by IDs
@@ -86,38 +94,30 @@ items:
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
       href: ../../api/directoryobject-getmemberobjects.md
-    - name: Export personal data
-      href: ../../api/user-exportpersonaldata.md
     - name: Get transitive reports
       href: ../../api/user-get-transitivereports.md
     - name: List created objects
       href: ../../api/user-list-createdobjects.md
-    - name: List license details
-      href: ../../api/user-list-licensedetails.md
-    - name: Assign license
-      href: ../../api/user-assignlicense.md
-    - name: Reprocess license assignment
-      href: ../../api/user-reprocesslicenseassignment.md
     - name: List owned devices
       href: ../../api/user-list-owneddevices.md
     - name: List owned objects
       href: ../../api/user-list-ownedobjects.md
+    - name: List deleted groups owned by user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
     - name: List registered devices
       href: ../../api/user-list-registereddevices.md
     - name: List scoped-role memberships
       href: ../../api/user-list-scopedrolememberof.md
     - name: List usage rights
       href: ../../api/user-list-usagerights.md
-    - name: revoke sign-in sessions
-      href: ../../api/user-revokesigninsessions.md
-    - name: List deleted users
+    - name: List deleted items
       href: ../../api/directory-deleteditems-list.md
-    - name: Get deleted user
+    - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted user
-      href: ../../api/directory-deleteditems-delete.md
-    - name: Permanently delete user
+    - name: Restore deleted item
       href: ../../api/directory-deleteditems-restore.md
+    - name: Permanently delete item
+      href: ../../api/directory-deleteditems-delete.md
   - name: Drive
     items:
     - name: Get drive
@@ -140,6 +140,14 @@ items:
       href: ../../api/insights-list-trending.md
     - name: List used
       href: ../../api/insights-list-used.md
+  - name: License management
+    items:
+    - name: Assign license
+      href: ../../api/user-assignlicense.md
+    - name: List license details
+      href: ../../api/user-list-licensedetails.md
+    - name: Reprocess license assignment
+      href: ../../api/user-reprocesslicenseassignment.md
   - name: Mail
     items:
     - name: List mail folders
@@ -168,12 +176,6 @@ items:
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
-  - name: Open extensions
-    items:
-    - name: Create open extension
-      href: ../../api/opentypeextension-post-opentypeextension.md
-    - name: Get open extension
-      href: ../../api/opentypeextension-get.md
   - name: Org hierarchy
     items:
     - name: Assign manager
@@ -202,13 +204,13 @@ items:
       href: ../../api/user-translateexchangeids.md
   - name: Password-based single sign-on credentials
     items:
-    - name: Get credentials
+    - name: Get
       href: ../../api/user-getpasswordsinglesignoncredentials.md
-    - name: Delete credentials
+    - name: Delete
       href: ../../api/user-deletepasswordsinglesignoncredentials.md
   - name: People
     items:
-    - name: List people
+    - name: List
       href: ../../api/user-list-people.md
   - name: Personal contacts
     items:
@@ -216,17 +218,17 @@ items:
       href: ../../api/user-list-contacts.md
     - name: Create contact
       href: ../../api/user-post-contacts.md
-    - name: List contactFolders
+    - name: List contact folders
       href: ../../api/user-list-contactfolders.md
-    - name: Create contactFolder
+    - name: Create contact folder
       href: ../../api/user-post-contactfolders.md
-  - name: Photo
+  - name: Profile photo
     items:
-    - name: Get profile photo
+    - name: Get
       href: ../../api/profilephoto-get.md
-    - name: Update profile photo
+    - name: Update
       href: ../../api/profilephoto-update.md
-    - name: Delete profile photo
+    - name: Delete
       href: ../../api/profilephoto-delete.md
   - name: Planner
     items:
@@ -240,21 +242,17 @@ items:
       href: ../../api/planneruser-update.md
   - name: Profile
     items:
-    - name: Get profile
+    - name: Get
       href: ../../api/profile-get.md
-    - name: Delete profile
+    - name: Delete
       href: ../../api/profile-delete.md
-  - name: Schema extensions
-    items:
-    - name: Add schema extension values
-      href: /graph/extensibility-schema-groups
   - name: Sponsors
     items:
-    - name: Assign sponsors
+    - name: Assign
       href: ../../api/user-post-sponsors.md
-    - name: List sponsors
+    - name: List
       href: ../../api/user-list-sponsors.md
-    - name: Remove sponsors
+    - name: Remove
       href: ../../api/user-delete-sponsors.md
     - name: List invited by
       href: ../../api/user-list-invitedby.md
@@ -286,7 +284,7 @@ items:
       href: ../../api/todo-post-lists.md
   - name: User settings
     items:
-    - name: Get settings
+    - name: Get
       href: ../../api/usersettings-get.md
-    - name: Update settings
+    - name: Update
       href: ../../api/usersettings-update.md

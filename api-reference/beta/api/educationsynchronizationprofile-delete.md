@@ -1,5 +1,5 @@
 ---
-title: "Delete a educationSynchronizationProfile"
+title: "Delete a educationSynchronizationProfile (deprecated)"
 description: "Delete a school data synchronization profile in the tenant based on the identifier."
 author: "mmast-msft"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.subservice: "education"
 doc_type: apiPageType
 ---
 
-# Delete a educationSynchronizationProfile
+# Delete a educationSynchronizationProfile (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [educationsynchronizationprofile-deprecate](../includes/education-deprecate-educationsynchronizationprofile.md)]
 
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
@@ -32,7 +34,7 @@ DELETE /education/synchronizationProfiles/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

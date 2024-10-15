@@ -3,7 +3,7 @@ title: "ediscoveryReviewSet resource type"
 description: "Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ Represents the static set of electronically stored information collected for use
 |queries|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Represents queries within the review set.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

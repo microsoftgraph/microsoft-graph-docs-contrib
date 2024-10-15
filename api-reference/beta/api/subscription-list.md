@@ -28,6 +28,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource  | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported.  | Not supported.  | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> Any recording becomes available in the tenant. | Not supported. | Not supported. | OnlineMeetingRecording.Read.All |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/{onlineMeetingId}/recordings`  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported. | OnlineMeetingRecording.Read.All |
@@ -58,7 +59,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/{id}/channels/getAllMembers` <br /> Members in all private channels of a particular team.| Not supported.  | Not supported.  | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) <br />`/teams/getAllChannels/getAllMembers` | Not supported. | Not supported. | ChannelMember.Read.All |
 |[driveItem](../resources/driveitem.md) <br />User's personal OneDrive. | Not supported.  | Files.ReadWrite, Subscription.Read.All | Not supported.  |
-|[driveItem](../resources/driveitem.md) <br />OneDrive for Business. | Files.ReadWrite.All, Subscription.Read.All | Not supported.  | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) <br />OneDrive for work or school. | Files.ReadWrite.All, Subscription.Read.All | Not supported.  | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Not supported.  | Not supported.  |
@@ -103,13 +104,13 @@ Most commonly, an application wants to retrieve subscriptions that it originally
 
 ### Advanced scenarios
 
-In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, an administrator who wants to see all subscriptions from all apps in their directory.
+In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, a Global Administrator who wants to see all subscriptions from all apps in their directory.
 For such scenarios, a delegated permission Subscription.Read.All is required.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
 | App is calling on behalf of the signed-in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This scenario applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **any app** for the signed-in user only. |
-| App is calling on behalf of the signed-in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This scenario only applies to work/school accounts. | Subscriptions created by **any app** for **any user** in the directory.|
+| App is calling on behalf of the signed-in user (delegated permission). *The user is a Global Administrator*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This scenario only applies to work/school accounts. | Subscriptions created by **any app** for **any user** in the directory.|
 
 ## HTTP request
 
@@ -127,7 +128,7 @@ This method doesn't support the [OData query parameters](/graph/query-parameters
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -190,7 +191,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 The following example shows the response.
 
->**Note:** The response shown here might be shortened for readability.
+> **Note:** The response shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

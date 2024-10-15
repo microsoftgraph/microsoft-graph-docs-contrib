@@ -2,7 +2,7 @@
 title: "hasPayloadLinkResultItem resource type"
 description: "A class containing the result of HasPayloadLinks action."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

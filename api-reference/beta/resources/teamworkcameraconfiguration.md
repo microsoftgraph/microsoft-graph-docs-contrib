@@ -27,7 +27,7 @@ Represents the details about the camera configuration for a Microsoft Teams Room
 |defaultContentCamera|[teamworkPeripheral](../resources/teamworkperipheral.md)|The configured content camera that is used to share analog whiteboard content in a meeting.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkCameraConfiguration"

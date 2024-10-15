@@ -3,7 +3,7 @@ title: "Add or remove custom attributes on a profile card using the profile card
 description: "Learn how to use the profile card API in Microsoft Graph to make more attributes visible and add or remove custom attributes on a profile card."
 author: "rwaithera"
 ms.localizationpriority: high
-ms.prod: "people"
+ms.subservice: "people"
 ms.custom: scenarios:getting-started
 ---
 
@@ -22,10 +22,12 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 
 [!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
 
+[!INCLUDE [profilecardproperty-win32-apps-note](../includes/profilecardproperty-win32-apps-note.md)]
+
 [!INCLUDE [profilecardproperty-all-clouds-note](../includes/profilecardproperty-all-clouds-note.md)]
 
 > [!NOTE]
-> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
+> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator role.
 
 ## Make other attributes visible on the profile card
 

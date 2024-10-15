@@ -2,7 +2,7 @@
 title: "managedEBookCategory resource type"
 description: "Contains properties for a single Intune eBook category."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

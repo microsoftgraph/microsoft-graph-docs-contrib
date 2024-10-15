@@ -2,7 +2,7 @@
 title: "messagingRedirectAppType enum type"
 description: "Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

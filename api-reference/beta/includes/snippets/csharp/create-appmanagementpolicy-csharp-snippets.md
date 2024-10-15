@@ -14,7 +14,7 @@ var requestBody = new AppManagementPolicy
 	DisplayName = "Credential management policy",
 	Description = "Cred policy sample",
 	IsEnabled = true,
-	Restrictions = new AppManagementConfiguration
+	Restrictions = new CustomAppManagementConfiguration
 	{
 		PasswordCredentials = new List<PasswordCredentialConfiguration>
 		{
@@ -61,6 +61,18 @@ var requestBody = new AppManagementPolicy
 					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
 				},
 				MaxLifetime = null,
+			},
+		},
+		ApplicationRestrictions = new CustomAppManagementApplicationConfiguration
+		{
+			IdentifierUris = new IdentifierUriConfiguration
+			{
+				NonDefaultUriAddition = new IdentifierUriRestriction
+				{
+					RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+					ExcludeAppsReceivingV2Tokens = true,
+					ExcludeSaml = true,
+				},
 			},
 		},
 	},

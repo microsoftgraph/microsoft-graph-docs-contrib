@@ -2,7 +2,7 @@
 title: "extendQualityUpdatesPause action"
 description: "Extend Quality Updates Pause for a Windows Update for Business ring."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

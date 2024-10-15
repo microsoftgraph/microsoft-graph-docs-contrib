@@ -2,7 +2,7 @@
 title: "groupPolicyDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

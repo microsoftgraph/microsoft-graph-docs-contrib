@@ -2,7 +2,7 @@
 title: "deviceManagementScriptUserState resource type"
 description: "Contains properties for user run state of the device management script."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

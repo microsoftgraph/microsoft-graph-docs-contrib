@@ -25,9 +25,13 @@ In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) a
 |expiration|[expirationPattern](expirationpattern.md)|In entitlement management, when the access should expire.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|For recurring access, or eligible or active assignment. This property is currently unsupported in both PIM and entitlement management.|
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSchedule"

@@ -2,7 +2,7 @@
 title: "Update macOSMicrosoftDefenderApp"
 description: "Update the properties of a macOSMicrosoftDefenderApp object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

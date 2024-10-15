@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsImpactingProcess resource type"
 description: "The user experience analytics top impacting process entity."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

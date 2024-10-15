@@ -50,6 +50,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -89,12 +91,15 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusiness
 [!INCLUDE [sample-code](../includes/snippets/php/list-driverestoreartifact-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-driverestoreartifact-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-driverestoreartifact-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

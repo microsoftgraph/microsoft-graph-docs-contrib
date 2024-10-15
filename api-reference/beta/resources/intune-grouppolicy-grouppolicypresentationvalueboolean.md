@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationValueBoolean resource type"
 description: "The entity represents a Boolean value of a checkbox presentation on a policy definition."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

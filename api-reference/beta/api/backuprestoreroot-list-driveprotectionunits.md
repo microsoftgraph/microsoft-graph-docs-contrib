@@ -1,6 +1,6 @@
 ---
 title: "List driveProtectionUnits"
-description: "Get a list of the drive protection units that are associated with a OneDrive for Business protection policy."
+description: "Get a list of the drive protection units that are associated with a OneDrive for work or school protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/driveProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveProtectionUnits
 ```
 
@@ -49,6 +49,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [driveProtectionUnit](../resources/driveprotectionunit.md) in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Example 1: List all the driveProtectionUnits in a tenant
@@ -58,45 +60,15 @@ The following example shows how to get a list of all the **driveProtectionUnits*
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_all_driveprotectionunit"
 }
 -->
 ``` http
-GET /solutions/backupRestore/driveProtectionUnits
+GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-all-driveprotectionunit-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-all-driveprotectionunit-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-all-driveprotectionunit-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-all-driveprotectionunit-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-driveprotectionunit-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-all-driveprotectionunit-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-all-driveprotectionunit-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -111,14 +83,14 @@ The following example shows the response.
 HTTP/1.1 200 OK
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/driveProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "value": [
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
-      "userDisplayName": "Emily Braun", // Newly Added
-      "userEmail": "emilyb@contoso.com", // Newly Added
+      "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
+      "displayName": "Jefferson Lee", // Newly Added
+      "email": "lee@contoso.com", // Newly Added
       "status": "unprotected",
       "createdBy": {
         "application": {
@@ -131,7 +103,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -143,16 +115,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "8f014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Alex Wilber", // Newly Added
-      "userEmail": "alexw@contoso.com", // Newly Added
+      "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Mastura Ibrahim", // Newly Added
+      "email": "ibrahim@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -165,7 +137,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -177,16 +149,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Shaun Wong", // Newly Added
-      "userEmail": "shaunw@contoso.com", // Newly Added
+      "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Esmira Musayeva", // Newly Added
+      "email": "esmira@contoso.com", // Newly Added
       "status": "unprotected",
       "createdBy": {
         "application": {
@@ -199,7 +171,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -211,16 +183,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "2e1d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Janet Green", // Newly Added
-      "userEmail": "janetg@contoso.com", // Newly Added
+      "directoryObjectId": "2e1d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Ahmad Hakiki", // Newly Added
+      "email": "ahmad@contoso.com", // Newly Added
       "status": "protected",
       "createdBy": {
         "application": {
@@ -233,7 +205,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -245,15 +217,15 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "2w1d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Eddie Brock ", // Newly Added
-      "userEmail": "eddyb@contoso.com", // Newly Added
+      "directoryObjectId": "2w1d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Rashmi Mishra ", // Newly Added
+      "email": "eddyb@contoso.com", // Newly Added
       "status": "unprotected",
       "createdBy": {
         "application": {
@@ -266,7 +238,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -278,14 +250,14 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     }
   ]
 }
 ```
 
-### Example 2: List the driveProtectionUnits associated with a OneDrive for Business protection policy
+### Example 2: List the driveProtectionUnits associated with a OneDrive for work or school protection policy
 
 The following example shows how to list all the **driveProtectionUnits** associated with a **oneDriveForBusinessProtectionPolicy**.
 
@@ -326,6 +298,10 @@ GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2
 [!INCLUDE [sample-code](../includes/snippets/php/list-driveprotectionunit-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-driveprotectionunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-driveprotectionunit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -351,9 +327,9 @@ HTTP/1.1 200 OK
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
-      "userDisplayName": "Emily Braun", // Newly Added
-      "userEmail": "emilyb@contoso.com", // Newly Added
+      "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
+      "displayName": "Jefferson Lee", // Newly Added
+      "email": "lee@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -366,7 +342,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -378,16 +354,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "57014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "184d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Alex Wilber", // Newly Added
-      "userEmail": "alexw@contoso.com", // Newly Added
+      "directoryObjectId": "184d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Mastura Ibrahim", // Newly Added
+      "email": "ibrahim@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -400,7 +376,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -412,16 +388,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "17014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Shaun Wong", // Newly Added
-      "userEmail": "shaunw@contoso.com", // Newly Added
+      "directoryObjectId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Esmira Musayeva", // Newly Added
+      "email": "esmira@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -434,7 +410,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -446,16 +422,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "8f014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Janet Green", // Newly Added
-      "userEmail": "janetg@contoso.com", // Newly Added
+      "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Ahmad Hakiki", // Newly Added
+      "email": "ahmad@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -468,7 +444,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -480,16 +456,16 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "userId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
-      "userDisplayName": "Eddie Brock ", // Newly Added
-      "userEmail": "eddyb@contoso.com", // Newly Added
+      "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
+      "displayName": "Jeffry Goh ", // Newly Added
+      "email": "jeffry@contoso.com", // Newly Added
       "status": "protectRequested",
       "createdBy": {
         "application": {
@@ -502,7 +478,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "createdDateTime": "2015-06-19T12:01:03.45Z",
       "lastModifiedBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -514,7 +490,7 @@ HTTP/1.1 200 OK
           "displayName": "User1"
         }
       },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
     }
   ]

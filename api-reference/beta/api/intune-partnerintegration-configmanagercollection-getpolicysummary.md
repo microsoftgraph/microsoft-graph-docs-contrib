@@ -2,7 +2,7 @@
 title: "getPolicySummary function"
 description: "Intune Partnerintegration Configmanagercollection Getpolicysummary Api ."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

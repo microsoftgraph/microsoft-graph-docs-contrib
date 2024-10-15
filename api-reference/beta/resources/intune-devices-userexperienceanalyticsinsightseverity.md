@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsInsightSeverity enum type"
 description: "Indicates severity of insights. Possible values are: None, Informational, Warning, Error."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

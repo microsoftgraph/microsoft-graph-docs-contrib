@@ -1,12 +1,12 @@
 ---
-title: "groupMembers complex type"
-description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
+title: "groupMembers resource type"
+description: "Identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# groupMembers complex type
+# groupMembers resource type
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupMembers",

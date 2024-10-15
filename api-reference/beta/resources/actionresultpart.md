@@ -25,7 +25,7 @@ An abstract type that serves as a base to model responses of bulk operations. Th
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionResultPart"
@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
 ```
 ## Related content
 
-- [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
+- [aadUserConversationMemberResult](aaduserconversationmemberresult.md)
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690

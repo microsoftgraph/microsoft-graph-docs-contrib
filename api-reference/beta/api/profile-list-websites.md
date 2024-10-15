@@ -3,7 +3,7 @@ title: "List websites"
 description: "Retrieve a list of personWebsite objects."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 

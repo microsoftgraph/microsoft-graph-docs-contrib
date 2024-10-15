@@ -2,7 +2,7 @@
 title: "Create mobileAppPolicySetItem"
 description: "Create a new mobileAppPolicySetItem object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

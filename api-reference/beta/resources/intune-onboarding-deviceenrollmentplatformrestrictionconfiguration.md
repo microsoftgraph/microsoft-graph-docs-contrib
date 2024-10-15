@@ -2,7 +2,7 @@
 title: "deviceEnrollmentPlatformRestrictionConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the types of devices a user can enroll for a single platform"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

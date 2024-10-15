@@ -24,7 +24,7 @@ requestBody.SetDescription(&description)
 createdDateTime , err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
 additionalData := map[string]interface{}{
-	"microsoftGraphChannelCreationMode" : "migration", 
+	"@microsoft.graph.channelCreationMode" : "migration", 
 }
 requestBody.SetAdditionalData(additionalData)
 

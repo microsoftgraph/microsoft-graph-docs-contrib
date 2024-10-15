@@ -2,7 +2,7 @@
 title: "Create deviceAndAppManagementAssignmentFilter"
 description: "Create a new deviceAndAppManagementAssignmentFilter object."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
 ---

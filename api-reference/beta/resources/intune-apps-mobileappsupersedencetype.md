@@ -2,7 +2,7 @@
 title: "mobileAppSupersedenceType enum type"
 description: "Indicates the supersedence type associated with a relationship between two mobile apps."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
@@ -22,3 +22,4 @@ Indicates the supersedence type associated with a relationship between two mobil
 |:---|:---|:---|
 |update|0|Indicates that the child app should be updated by the internal logic of the parent app.|
 |replace|1|Indicates that the child app should be uninstalled before installing the parent app.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|

@@ -3,7 +3,7 @@ title: "Delete personCertification"
 description: "Deletes an personCertification object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: apiPageType
 ---
 

@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/37d4ba51-cc54-4762-9ff
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response"

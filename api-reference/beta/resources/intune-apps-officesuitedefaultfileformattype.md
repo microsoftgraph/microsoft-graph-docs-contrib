@@ -2,7 +2,7 @@
 title: "officeSuiteDefaultFileFormatType enum type"
 description: "Describes the OfficeSuiteApp file format types that can be selected."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
 ---

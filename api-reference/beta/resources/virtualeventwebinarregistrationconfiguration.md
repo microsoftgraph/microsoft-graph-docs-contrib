@@ -29,6 +29,12 @@ Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherit
 |:---|:---|:---|
 | registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+| questions | [virtualEventRegistrationQuestionBase](../resources/virtualeventregistrationquestionbase.md) collection | Registration questions. |
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

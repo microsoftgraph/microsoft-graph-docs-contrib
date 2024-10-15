@@ -3,7 +3,7 @@ title: "eventPropagationResult resource type"
 description: "Represents the success status of a created event and additional information about the scoped locations."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.subservice: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents the status of a retention event creation request and additional infor
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.eventPropagationResult"

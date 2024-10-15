@@ -3,7 +3,7 @@ title: "ediscoveryReviewSetQuery resource type"
 description: "Represents a review set query, which is used to query and cull data stored in an eDiscovery reviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ Represents a review set query, which is used to query and cull data stored in an
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

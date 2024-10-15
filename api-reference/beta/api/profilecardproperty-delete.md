@@ -3,7 +3,7 @@ title: "Delete profileCardProperty"
 description: "Delete a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
 author: "rwaithera"
-ms.prod: "people"
+ms.subservice: "people"
 doc_type: "apiPageType"
 ---
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "profilecardproperty_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-delete-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator role.
 
 ## HTTP request
 

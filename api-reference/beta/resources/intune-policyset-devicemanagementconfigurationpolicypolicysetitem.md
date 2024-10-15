@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationPolicyPolicySetItem resource type"
 description: "A class containing the properties used for DeviceManagementConfiguration PolicySetItem."
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

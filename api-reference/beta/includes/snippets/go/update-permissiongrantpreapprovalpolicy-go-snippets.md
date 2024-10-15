@@ -66,7 +66,7 @@ conditions := []graphmodels.PreApprovalDetailable {
 }
 requestBody.SetConditions(conditions)
 additionalData := map[string]interface{}{
-	"odataContext" : "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity", 
+	"@odata.context" : "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity", 
 }
 requestBody.SetAdditionalData(additionalData)
 

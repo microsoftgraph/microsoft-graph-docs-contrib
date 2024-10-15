@@ -2,7 +2,7 @@
 title: "iosHomeScreenApp resource type"
 description: "Represents an icon for an app on the Home Screen"
 author: "jaiprakashmb"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ---

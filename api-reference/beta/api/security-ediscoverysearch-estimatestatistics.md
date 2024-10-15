@@ -3,7 +3,7 @@ title: "ediscoverySearch: estimateStatistics"
 description: "Runs an estimate of the eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "ediscovery"
+ms.subservice: "ediscovery"
 doc_type: "apiPageType"
 ---
 
