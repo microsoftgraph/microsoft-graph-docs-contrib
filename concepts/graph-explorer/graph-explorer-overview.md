@@ -43,7 +43,7 @@ Here’s a step-by-step tutorial for using Graph Explorer.
 1. Select a sample query or type your own query in the request field.
 1. Edit the request body, request headers as needed for the query.
 For example, to run a Post request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
-1. Select the **Run query** button.
+1. Select **Run query**.
 1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API.
 1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component, and Adaptive cards relevant to the query.  
 
