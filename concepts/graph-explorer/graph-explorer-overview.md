@@ -60,11 +60,11 @@ For example, to run a Post request, select POST in the drop-down list for the HT
 
 ## Finding the right API for your application
 
-Use the **Resources tab** and the documentation feature to find the right API for your application.
+Use the **Resources** tab and the documentation feature to find the right API for your application.
 
 ### Resources
 
-Use the **Resources tab** to explore Microsoft Graph resources in the beta and v1.0 endpoints by browsing the list of resources or use the search bar to search for a specific resource.
+Use the **Resources** tab to explore Microsoft Graph resources in the beta and v1.0 endpoints by browsing the list of resources or use the search bar to search for a specific resource.
 
 You can also select specific queries to add to your collection. When you're finished adding resources, choose **Preview collection**. From the collection view, you can review, remove, and download the resources you selected.
 
@@ -88,7 +88,7 @@ After running a query, select on the Code snippets tab to see how to perform the
 
 [The Microsoft Graph Toolkit](../toolkit/overview.md) provides reusable, framework-agnostic web components, and helpers that have built-in providers that authenticate with and fetch data from Microsoft Graph.  
 
-The Toolkit component in Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
+The toolkit component in Graph Explorer allows you to visualize Microsoft Graph Toolkit components that correspond to the API queries. A blue dot on the toolkit component tab indicates an available component for the currently specified REST API query. You can conveniently copy the code for the component to your app.
 
 :::image type="content" source="./images/toolkit-screenshot.png" alt-text="Screenshot of the Microsoft Graph Toolkit tab in Graph Explorer." border="false":::
 
