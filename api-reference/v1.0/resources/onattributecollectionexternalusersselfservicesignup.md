@@ -15,6 +15,11 @@ This is a managed handler for attribute collection step of a customized authenti
 
 Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionhandler.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventsFlow resource type](../resources/authenticationeventsflow.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
