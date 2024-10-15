@@ -73,7 +73,7 @@ Devices that are managed or pre-enrolled through Intune
 |:---|:---|:---|
 |id|String|Unique Identifier for the device. This property is read-only.|
 |userId|String|Unique Identifier for the user associated with the device. This property is read-only.|
-|deviceName|String|Name of the device. This property is read-only.|
+|deviceName|String|Name of the device. Supports $filter operator 'eq' and 'contains'. This property is read-only.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device. Includes information such as storage space, manufacturer, serial number, etc. By default most property of this type are set to null/0/false and enum defaults for associated types. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Possible values are, 'company' or 'personal'. Default is unknown. Supports $filter operator 'eq' and 'or'. Possible values are: `unknown`, `company`, `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
