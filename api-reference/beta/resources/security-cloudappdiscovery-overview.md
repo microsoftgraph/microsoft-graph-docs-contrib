@@ -27,7 +27,7 @@ Identify and list all users accessing a particular SaaS application that's deeme
 
 ### List all apps accessing a specific domain 
 
-Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping tabs on apps, users, and devices that access risky domains.   
+Discover the complete list of SaaS applications that are accessing a specific domain. Gain clarity and control over your digital ecosystem effortlessly by keeping tabs on apps, users, and devices that access risky domains.  For more information, see [Aggregate App details](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md).
 
 ### Access the cloud app catalog information for a specific discovered SaaS app  
 
