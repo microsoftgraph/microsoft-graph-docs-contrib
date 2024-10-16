@@ -1432,8 +1432,6 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
-                "onAttributeCollectionStartListener",
-                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
@@ -1507,15 +1505,6 @@
               "resources": [
                 "inboundSharedUserProfile",
                 "outboundSharedUserProfile"
-              ]
-            },
-            {
-              "name": "Custom authentication extensions",
-              "resources": [
-                "customAuthenticationExtension",
-                "onAttributeCollectionStartCustomExtension",
-                "onAttributeCollectionSubmitCustomExtension",
-                "onTokenIssuanceStartCustomExtension"
               ]
             },
             {
