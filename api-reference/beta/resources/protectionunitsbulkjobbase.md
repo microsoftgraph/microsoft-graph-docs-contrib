@@ -18,8 +18,8 @@ Represents a bulk job associated with one of the protection policies, as specifi
 
 This abstract type is the base type for [siteProtectionUnitsBulkAdditionJob](../resources/siteProtectionUnitsBulkAdditionJob.md), [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md), and [driveProtectionUnitsBulkAdditionJob](../resources/driveprotectionunitsbulkadditionjob.md).
 
->!Note
->The protection units bulk addition job APIs for bulk addition of protection units in the backup policy can accommodate a maximum of 50,000 protection resources in a single job.
+> [!NOTE]
+> The protection units bulk addition job APIs for bulk addition of protection units in the backup policy can accommodate a maximum of 50,000 protection resources in a single job.
 
 ## Properties
 
