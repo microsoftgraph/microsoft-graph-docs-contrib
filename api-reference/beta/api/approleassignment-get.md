@@ -30,7 +30,7 @@ The following table shows the least privileged permission or permissions require
 
 [!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
-### Other supported permissions:
+### Other supported permissions
 
 The following higher privileged permissions are supported by each resource:
 - Groups:
