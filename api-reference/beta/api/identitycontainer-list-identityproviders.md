@@ -19,7 +19,7 @@ For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../
 
 For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
-For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), custom OIDC identity provider or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [OidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#customoidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
