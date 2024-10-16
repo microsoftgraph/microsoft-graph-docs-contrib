@@ -1,6 +1,4 @@
-
-
-[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]---
+---
 title: "Get ipNamedLocation"
 description: "Retrieve the properties and relationships of an ipnamedlocation object."
 ms.localizationpriority: medium
