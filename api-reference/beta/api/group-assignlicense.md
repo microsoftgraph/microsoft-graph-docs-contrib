@@ -27,8 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_assignlicense" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/assignLicense` role permission. The following least privileged roles are supported for this operation:
 - Directory Writers
 - Groups Administrator
 - License Administrator
