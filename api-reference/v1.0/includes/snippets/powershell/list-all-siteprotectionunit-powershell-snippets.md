@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.BackupRestore
 
-Get-MgSolutionBackupRestoreSiteProtectionUnit
+Get-MgSolutionBackupRestoreProtectionUnit -ProtectionUnitBaseId $protectionUnitBaseId
 
 ```
