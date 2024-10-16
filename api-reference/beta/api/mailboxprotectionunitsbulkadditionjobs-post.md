@@ -15,8 +15,9 @@ Namespace: microsoft.graph
 
 Create a [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-The initial status upon creation of the job is `active`. Once all the `mailboxes`, and `directoryObjectIds` are added into the corresponding Exchange protection policy, the status of job becomes `completed`.
-If there's any failures while resource resolution, the status of the job eventually becomes `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the `mailboxes` and `directoryObjectIds` are added into the corresponding Exchange protection policy, the status of job is `completed`.
+
+If any failures occur, the status of the job is `completedWithErrors`.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
