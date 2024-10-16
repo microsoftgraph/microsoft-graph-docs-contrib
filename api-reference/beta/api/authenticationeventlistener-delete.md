@@ -1,6 +1,6 @@
 ---
 title: "Delete authenticationEventListener"
-description: "Deletes an authenticationEventListener object."
+description: "Delete an authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [authenticationEventListener](../resources/authenticationeventlistener.md) object.
+Delete an [authenticationEventListener](../resources/authenticationeventlistener.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md) resource type
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
