@@ -135,12 +135,6 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Reprovision remote action (deprecated)
-      href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action (deprecated)
-      href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action (deprecated)
-      href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
     - name: Bulk set review status (deprecated)
@@ -466,6 +460,8 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
@@ -804,12 +800,6 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-      - name: setEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
-      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
-      - name: clearEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app

@@ -944,14 +944,25 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "authenticationEventListener",
-            "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
           "childNodes": [
+            {
+              "name": "Authentication event listeners",
+              "resources": [
+                "authenticationEventListener",
+                "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
+                "onAuthenticationMethodLoadStartListener",
+                "onInteractiveAuthFlowStartListener",
+                "onTokenIssuanceStartListener",
+                "onUserCreateStartListener"
+              ]
+            },
             {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",

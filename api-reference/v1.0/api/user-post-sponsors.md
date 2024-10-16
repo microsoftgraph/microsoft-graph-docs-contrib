@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_post_sponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-post-sponsors-permissions.md)]
 
+[!INCLUDE [rbac-user-sponsors-apis-write](../includes/rbac-for-apis/rbac-user-sponsors-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
