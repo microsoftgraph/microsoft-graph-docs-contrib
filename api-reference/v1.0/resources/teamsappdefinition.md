@@ -17,7 +17,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| authorization       | [teamsAppAuthorization](../resources/teamsappauthorization.md)| Authorization requirements specified in the Teams app manifest.|
+| authorization       | [teamsAppAuthorization](../resources/teamsappauthorization.md)| Authorization requirements specified in the Teams app manifest. |
 | description         | String   | Verbose description of the application. |
 | displayName         | String   | The name of the app provided by the app developer. |
 | id                  | String   | A unique ID (not the Teams app ID). |
