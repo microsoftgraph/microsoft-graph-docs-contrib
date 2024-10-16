@@ -389,6 +389,7 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
+
 ### Example 4: Get a chat message with custom emojis and reactions
 
 The following example shows a request to get a chat message that contains custom emojis in the message body and includes custom reactions.
@@ -397,7 +398,6 @@ The following example shows a request to get a chat message that contains custom
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessage_4",
