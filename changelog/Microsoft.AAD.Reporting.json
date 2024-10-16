@@ -2919,7 +2919,7 @@
           "ApiChange": "EntitySet",
           "ChangedApiName": "directoryObjects",
           "ChangeType": "Addition",
-          "Description": "Added the [directoryObjects](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added the **directoryObjects** entity set.",
           "Target": "AADAuditActivities"
         },
         {
@@ -2927,8 +2927,8 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "healthMonitoring/alerts/enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling",
           "ChangeType": "Addition",
-          "Description": "Added the [healthMonitoring/alerts/enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "reports"
+          "Description": "Added the **healthMonitoring/alerts/enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling** navigation property binding path to the **resourceSampling** navigation property on the [directoryObjectImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthmonitoring-directoryobjectimpactsummary?view=graph-rest-beta) resource.",
+          "Target": "directoryObjectImpactSummary"
         },
         {
           "Id": "277da918-3e81-499f-8803-2986a2c73123",
