@@ -11,15 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 The authorization details of a [teamsApp](teamsapp.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions required by the [teamsApp](teamsapp.md).|
 |clientAppId|String|The registration ID of the Microsoft Entra app ID associated with the [teamsApp](teamsapp.md). |
+|requiredPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of permissions required by the [teamsApp](teamsapp.md).|
 
 ## Relationships
 
@@ -36,9 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppAuthorization",
-  "requiredPermissionSet": {
-    "clientAppId": "String",
-    "@odata.type": "microsoft.graph.teamsAppPermissionSet"
-  }
+  "clientAppId": "String",
+  "requiredPermissionSet": {"@odata.type": "microsoft.graph.teamsAppPermissionSet"}
 }
 ```
