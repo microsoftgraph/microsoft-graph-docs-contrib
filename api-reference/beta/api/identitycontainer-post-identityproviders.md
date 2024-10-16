@@ -83,6 +83,18 @@ All the properties listed in the following tables are required.
 |keyId|String|The Apple key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
+### customOidcIdentityProvider
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
+|issuer|String|The issuer url.|
+|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
+|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
+|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
+|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for a Microsoft Entra tenant.
@@ -290,7 +302,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
+### Example 3: Create Apple identity provider (only for Azure AD B2C)
 
 #### Request
 
@@ -376,5 +388,137 @@ Content-type: application/json
   "serviceId": "com.microsoft.rts.b2c.test.client",
   "keyId": "99P6D879C4",
   "certificateData": "******"
+}
+```
+
+### Example 4: Create oidc identity provider (only for Azure AD External)
+
+#### Request
+
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_oidcidentityprovider_from_identityproviderbase"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/identityProviders
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.OidcIdentityProvider",
+  "displayName": "B2C oidc Test",
+  "clientId": "client_id",
+  "issuer": "https://contos.b2clogin.com/b07624bf-a5cd-47be-97e4-42702c46c74e/v2.0/",
+  "wellKnownEndpoint": "https://contos.b2clogin.com/contos.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
+  "responseType": "code",
+  "scope": "openid profile email offline_access",
+  "clientAuthentication": {
+    "@odata.type": "#microsoft.graph.OIDCClientSecretAuthentication",
+    "clientSecret": "client_secret"
+  },
+  "inboundClaimMapping": {
+    "sub": "sub",
+    "name": "name",
+    "given_name": "given_name",
+    "family_name": "family_name",
+    "email": "email",
+    "email_verified": "email_verified",
+    "phone_number": "phone_number",
+    "phone_number_verified": "phone_number_verified",
+    "address": {
+      "street_address": "street_address",
+      "locality": "locality",
+      "region": "region",
+      "postal_code": "postal_code",
+      "country": "country"
+    }
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-oidcidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-applemanagedidentityprovider-from-identityproviderbase-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-applemanagedidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-applemanagedidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-applemanagedidentityprovider-from-identityproviderbase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-applemanagedidentityprovider-from-identityproviderbase-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-applemanagedidentityprovider-from-identityproviderbase-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.OidcIdentityProvider",
+  "displayName": "B2C oidc Test",
+  "clientId": "client_id",
+  "issuer": "https://contos.b2clogin.com/b07624bf-a5cd-47be-97e4-42702c46c74e/v2.0/",
+  "wellKnownEndpoint": "https://contos.b2clogin.com/contos.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
+  "responseType": "code",
+  "scope": "openid profile email offline_access",
+  "clientAuthentication": {
+    "@odata.type": "#microsoft.graph.OIDCClientSecretAuthentication",
+    "clientSecret": "*****"
+  },
+  "inboundClaimMapping": {
+    "sub": "sub",
+    "name": "name",
+    "given_name": "given_name",
+    "family_name": "family_name",
+    "email": "email",
+    "email_verified": "email_verified",
+    "phone_number": "phone_number",
+    "phone_number_verified": "phone_number_verified",
+    "address": {
+      "street_address": "street_address",
+      "locality": "locality",
+      "region": "region",
+      "postal_code": "postal_code",
+      "country": "country"
+    }
+  }
 }
 ```
