@@ -81,7 +81,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
+GET https://graph.microsoft.com/beta/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/assignments/db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a/submissions/4bca096a-7de3-8675-5e86-2fa149923860/outcomes
 ```
 
 # [C#](#tab/csharp)
@@ -136,34 +136,92 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('bf1f1963-05f6-4cba-903c-5892b4ce3bd7')/assignments('db8e6b0b-dba4-4c69-81b2-9ba7313c0b7a')/submissions('4bca096a-7de3-8675-5e86-2fa149923860')/outcomes",    
     "value": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+            "lastModifiedDateTime": null,
             "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
-            "feedback": {
-                "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-                "text": {
-                    "content": "This is feedback for the assignment as a whole.",
-                    "contentType": "text"
-                },
-                "feedbackBy": {
-                    "user": {
-                        "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-                    }
+            "lastModifiedBy": null,
+            "feedback": null,
+            "publishedFeedback": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationPointsOutcome",
+            "lastModifiedDateTime": null,
+            "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+            "lastModifiedBy": null,
+            "points": null,
+            "publishedPoints": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationRubricOutcome",
+            "lastModifiedDateTime": "2024-08-14T05:47:41.8399565Z",
+            "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
                 }
             },
-            "publishedFeedback": {
-                "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-                "text": {
-                    "content": "This is feedback for the assignment as a whole.",
-                    "contentType": "text"
+            "rubricQualityFeedback": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "feedback": null
                 },
-                "feedbackBy": {
-                    "user": {
-                        "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-                    }
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "feedback": null
                 }
-            }
+            ],
+            "rubricQualitySelectedLevels": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "columnId": null
+                }
+            ],
+            "publishedRubricQualityFeedback": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "feedback": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "feedback": null
+                }
+            ],
+            "publishedRubricQualitySelectedLevels": [
+                {
+                    "qualityId": "6b9eccdd-ae31-474d-9ab5-33ba885873f9",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "0fdf030a-2e52-4ea4-b321-74091cef90b0",
+                    "columnId": null
+                },
+                {
+                    "qualityId": "8fdacfb6-0e28-4bce-9153-3196fbcc0eaa",
+                    "columnId": null
+                }
+            ]
         }
     ]
 }
@@ -244,8 +302,8 @@ Content-type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
-            "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
-            "id": "8fb409c5-570b-4fe5-8473-d3666e61f3a0",
+            "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+            "id": "0710aeea-590d-46b4-9eb8-1c08b6549677",
             "resourceStatus": "notPublished",
             "lastModifiedBy": {
                 "application": null,
@@ -257,10 +315,10 @@ Content-type: application/json
             },
             "feedbackResource": {
                 "@odata.type": "#microsoft.graph.educationWordResource",
-                "displayName": "Document2.docx",
-                "createdDateTime": "2022-05-06T00:52:12.8318064Z",
-                "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
-                "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ26WF6K2W2IOFAKDITG4F5GWRH5",
+                "displayName": "Document3.docx",
+                "createdDateTime": "2022-05-06T00:52:17.3180176Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ563EMEMHRTBBH2SOZ4GDSNEUZK",
                 "createdBy": {
                     "application": null,
                     "device": null,

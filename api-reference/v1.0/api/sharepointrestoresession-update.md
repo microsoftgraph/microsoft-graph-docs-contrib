@@ -52,6 +52,8 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 
 If successful, this method returns a `200 OK` response code and an updated [sharePointRestoreSession](../resources/sharepointrestoresession.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request

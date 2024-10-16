@@ -12,7 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
+Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. 
+
+> **Note:** This API returns a maximum of five **restorePoint** objects. If you don't include the `orderBy` parameter, the five most recent restore points are returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,9 +39,10 @@ GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 
 ```
 
 ## Optional query parameters
-This method supports the `$expand` and `$filter` [OData puery parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request). 
 
-The two query parameters are required.
+This method supports the `$expand`, `$filter`, and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
+
+The `$expand` and `$filter` query parameters are required.
 
 ## Request headers
 
@@ -55,6 +58,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) object in the response body.
 
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
+
 ## Examples
 
 ### Request
@@ -69,6 +74,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-restorepoint-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-restorepoint-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-restorepoint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-restorepoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-restorepoint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-restorepoint-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-restorepoint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-restorepoint-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

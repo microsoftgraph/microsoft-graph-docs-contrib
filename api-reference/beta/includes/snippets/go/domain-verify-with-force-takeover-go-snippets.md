@@ -16,11 +16,8 @@ import (
 )
 
 requestBody := graphdomains.NewVerifyPostRequestBody()
-additionalData := map[string]interface{}{
-	forceTakeover := true
+forceTakeover := true
 requestBody.SetForceTakeover(&forceTakeover) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 verify, err := graphClient.Domains().ByDomainId("domain-id").Verify().Post(context.Background(), requestBody, nil)

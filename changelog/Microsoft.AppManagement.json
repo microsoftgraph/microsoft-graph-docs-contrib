@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",
+          "ApiChange": "Property",
+          "ChangedApiName": "instantiate",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceManagementReference** parameter to the application template [instantiate](https://learn.microsoft.com/en-us/graph/api/applicationTemplate-instantiate?view=graph-rest-beta) method.",
+          "Target": "applicationTemplate"
+        }
+      ],
+      "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-25T16:45:10.5988046Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d9c722d5-7d5d-4d5d-8941-4e79bace02c4",
           "ApiChange": "Enum type",
           "ChangedApiName": "uriUsageType",

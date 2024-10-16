@@ -34,6 +34,24 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "5869ee0c-c48f-4031-9381-29d2f6792789",
+          "ApiChange": "Member",
+          "ChangedApiName": "refreshToken",
+          "ChangeType": "Addition",
+          "Description": "Added the `refreshToken` member to the **incomingTokenType** enumeration.",
+          "Target": "incomingTokenType"
+        }
+      ],
+      "Id": "5869ee0c-c48f-4031-9381-29d2f6792789",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-08-29T21:29:24.8427621Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
       {
       "ChangeList": [
         {
@@ -2875,6 +2893,216 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-05-23T20:31:40.7734069Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "healthMonitoring",
+          "ChangeType": "Addition",
+          "Description": "Added the **healthMonitoring** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "healthMonitoringRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [healthMonitoringRoot](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-healthMonitoringRoot?view=graph-rest-beta) resource.",
+          "Target": "healthMonitoringRoot"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "directoryObjects",
+          "ChangeType": "Addition",
+          "Description": "Added the **directoryObjects** entity set.",
+          "Target": "AADAuditActivities"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "healthMonitoring/alerts/enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling",
+          "ChangeType": "Addition",
+          "Description": "Added the **healthMonitoring/alerts/enrichment/impacts/microsoft.graph.healthMonitoring.directoryObjectImpactSummary/resourceSampling** navigation property binding path to the **resourceSampling** navigation property on the [directoryObjectImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthmonitoring-directoryobjectimpactsummary?view=graph-rest-beta) resource.",
+          "Target": "directoryObjectImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "alertState",
+          "ChangeType": "Addition",
+          "Description": "Added the **alertState** enumeration type.",
+          "Target": "alertState"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "alertType",
+          "ChangeType": "Addition",
+          "Description": "Added the **alertType** enumeration type.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "category",
+          "ChangeType": "Addition",
+          "Description": "Added the **category** enumeration type.",
+          "Target": "category"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enrichmentState",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrichmentState** enumeration type.",
+          "Target": "enrichmentState"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scenario",
+          "ChangeType": "Addition",
+          "Description": "Added the **scenario** enumeration type.",
+          "Target": "scenario"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-applicationImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "applicationImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-deviceImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "deviceImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Dictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-Dictionary?view=graph-rest-beta) resource.",
+          "Target": "Dictionary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryObjectImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [directoryObjectImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-directoryObjectImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "directoryObjectImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentation",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentation](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-documentation?view=graph-rest-beta) resource.",
+          "Target": "documentation"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailNotificationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailNotificationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-emailNotificationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "emailNotificationConfiguration"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrichment",
+          "ChangeType": "Addition",
+          "Description": "Added the [enrichment](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-enrichment?view=graph-rest-beta) resource.",
+          "Target": "enrichment"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-groupImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "groupImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "healthMonitoringDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [healthMonitoringDictionary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-healthMonitoringDictionary?view=graph-rest-beta) resource.",
+          "Target": "healthMonitoringDictionary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-resourceImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "resourceImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-servicePrincipalImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signals",
+          "ChangeType": "Addition",
+          "Description": "Added the [signals](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-signals?view=graph-rest-beta) resource.",
+          "Target": "signals"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "supportingData",
+          "ChangeType": "Addition",
+          "Description": "Added the [supportingData](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-supportingData?view=graph-rest-beta) resource.",
+          "Target": "supportingData"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-userImpactSummary?view=graph-rest-beta) resource.",
+          "Target": "userImpactSummary"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alert",
+          "ChangeType": "Addition",
+          "Description": "Added the [alert](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alert?view=graph-rest-beta) resource. This resource type provides metrics and detailed data relating to the scenarios that Microsoft Entra Health monitoring tracks the health for in your tenant.",
+          "Target": "alert"
+        },
+        {
+          "Id": "277da918-3e81-499f-8803-2986a2c73123",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/healthMonitoring-alertConfiguration?view=graph-rest-beta) resource. Use this resource type to manage the configuration for the scenarios that Microsoft Entra Health monitoring tracks the health for in your tenant.",
+          "Target": "alertConfiguration"
+        }
+      ],
+      "Id": "277da918-3e81-499f-8803-2986a2c73123",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-09T17:27:30.6437075Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     }

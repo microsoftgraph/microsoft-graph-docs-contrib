@@ -8,6 +8,8 @@ items:
   items:
   - name: Drive
     href: ../../resources/drive.md
+  - name: List drive
+    href: ../../api/drive-list.md
   - name: Get drive
     href: ../../api/drive-get.md
   - name: Get drive root
@@ -162,3 +164,9 @@ items:
     href: ../../api/filestoragecontainer-update-customproperty.md
   - name: Delete custom property
     href: ../../api/filestoragecontainer-delete-customproperty.md
+- name: Shared drive item
+  items:
+  - name: Shared drive item
+    href: ../../resources/shareddriveitem.md
+  - name: Use sharing links
+    href: ../../api/shares-get.md

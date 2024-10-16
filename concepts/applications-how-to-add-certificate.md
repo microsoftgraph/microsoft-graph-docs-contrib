@@ -7,14 +7,14 @@ ms.reviewer: saurabh.madan
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications
-ms.date: 09/08/2023
+ms.date: 08/23/2024
 ---
 
 # Add a certificate to an app using Microsoft Graph
 
-Microsoft Entra ID supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
+The Microsoft identity platform supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
 
-You can [add or remove certificates using the Microsoft Entra admin center](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). However, in automation scenarios, you may need to automate the certificate rollover for your app or service principal.
+You can [add or remove certificates using the Microsoft Entra admin center](/entra/identity-platform/quickstart-register-app?tabs=certificate#add-credentials). However, you might need to automate the adding the certificate credentials for your app or service principal.
 
 This article provides guidance for using Microsoft Graph and PowerShell scripts to update certificate credentials programmatically for an app registration.
 
@@ -23,8 +23,8 @@ This article provides guidance for using Microsoft Graph and PowerShell scripts 
 To complete this tutorial, you need the following resources and privileges:
 
 - An active Microsoft Entra tenant.
-- An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user in an *Application Administrator* role or a user who is allowed to create and manage applications in the tenant.
-- A signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
+- An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user who is allowed to create and manage applications in the tenant. The *Application Developer* (of an app they own) and *Application Administrator* role are the least privileged roles that can perform this operation.
+- A signed certificate to use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To generate one, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
 > [!CAUTION]
 > The use of certificates is highly recommended over secrets; however, we don't recommend using self-signed certificates. They can reduce the security bar of your application due to various factors like use of an outdated hash and cipher suites or lack of validation. We recommend procuring certificates from a well known trusted certificate authority.
@@ -40,14 +40,14 @@ It's optional to add the certificate thumbprint to the request payload. If you w
 #### Request
 
 ```powershell-interactive
-## Replace the file path with the source of your certificate
+## Replace the file path with the source of your certificate and output path with the location where you want to save the thumprint details
 
 Get-PfxCertificate -Filepath "C:\Users\admin\Desktop\20230112.cer" | Out-File -FilePath "C:\Users\admin\Desktop\20230112.cer.thumbprint.txt"
 ```
 
 #### Response
 
-The output that's saved in the *.txt* file can be similar to the following.
+The output in the *.txt* file can be similar to the following.
 
 ```powershell
 Thumbprint                                Subject
@@ -57,7 +57,7 @@ Thumbprint                                Subject
 
 ### Get the certificate key
 
-To read the certificate's key using PowerShell, run the following request.
+To read the certificate's key and save it to a *.txt* file by using PowerShell, run the following request.
 
 #### Request
 
@@ -79,7 +79,7 @@ To read the certificate's key using PowerShell, run the following request.
 
 #### Response
 
-The output that's saved in the *.txt* file can be similar to the following.
+The output in the *.txt* file can be similar to the following.
 
 > **Note:** The key shown here has been shortened for readability.
 
@@ -97,7 +97,7 @@ The following request adds the certificate details to an app. The settings are a
 - The **endDateTime** can be a maximum of 1 year from the **startDateTime**. If unspecified, the system will automatically assign a date 1 year after the **startDateTime**.
 - The **type** and **usage** must be `AsymmetricX509Cert` and `Verify` respectively.
 - Assign the certificate subject name to the **displayName** property.
-- The **key** is the Base64 encoded value that you generated in the previous step.
+- The **key** is the Base64 encoded value that you generated in the previous step. The thumbprint is included in the encoded key and adding the key also adds the thumbprint.
 
 > [!NOTE]
 > If your app has an existing valid certificate that you want to continue using for authentication, include both the current and new certificate details in the app's **keyCredentials** object. Because this a PATCH call, which by protocol replaces the contents of the property with the new values, including only the new certificate will replace the existing certificates with the new one.
@@ -164,7 +164,7 @@ Content-type: application/json
 
 ---
 
-The following example adds a new certificate without replacing the existing certificate that's identified by thumbprint `52ED9B5038A47B9E2E2190715CC238359D4F8F73`.
+The following example adds a new certificate without replacing the existing certificate with thumbprint `52ED9B5038A47B9E2E2190715CC238359D4F8F73`.
 
 > **Note:** The key shown here has been shortened for readability.
 
@@ -259,7 +259,7 @@ Connect-MgGraph -ClientID 588028ea-22c2-490e-8c6b-80cd06985e8c -TenantId 38d4945
 Welcome To Microsoft Graph!
 ```
 
-To confirm that you're running the Microsoft Graph PowerShell session without a signed-in user, run the following request.
+To confirm that you're running the [Microsoft Graph PowerShell](/powershell/microsoftgraph/) session without a signed-in user, run the following request.
 
 ```powershell
 Get-MgContext
@@ -289,4 +289,4 @@ ClientTimeout         : 00:05:00
 
 ## Conclusion
 
-You've used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Microsoft Entra admin center. You can also update certificate credentials for a service principal by following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.
+You used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Microsoft Entra admin center. You can also update certificate credentials for a service principal by following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.

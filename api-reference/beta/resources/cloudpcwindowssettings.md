@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+toc.title: Cloud PC Windows settings
 ---
 
 # cloudPcWindowsSettings resource type

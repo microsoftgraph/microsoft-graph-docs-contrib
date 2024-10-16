@@ -33,9 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -50,11 +62,19 @@
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy",
-                "remoteDesktopSecurityConfiguration",
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPreApprovalPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security policy",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -195,6 +215,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -214,8 +237,16 @@
             "place",
             "room",
             "roomList"
-          ]
-        }
+          ],
+           "childNodes": [
+            {
+              "name": "Devices (preview)",
+              "resources":[
+                "workplaceSensorDevice"
+              ]
+            }
+           ]
+         }
       ]
     },
     {
@@ -424,8 +455,14 @@
             "cloudPcBulkRestore",
             "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
+            "cloudPcBulkCreateSnapshot",
+            "cloudPcBulkSetReviewStatus",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
+            "cloudPcCrossRegionDisasterRecoverySetting",
+            "cloudPcDisasterRecoveryAzureConnectionSetting",
+            "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+            "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcHealthCheckItem",
@@ -453,7 +490,8 @@
             "cloudPcWindowsSettings",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission"
+            "unifiedRolePermission",
+            "cloudPcNotificationSetting"
           ],
           "childNodes": [
             {
@@ -875,7 +913,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -1384,8 +1423,6 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
-                "onAttributeCollectionStartListener",
-                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
@@ -1459,15 +1496,6 @@
               "resources": [
                 "inboundSharedUserProfile",
                 "outboundSharedUserProfile"
-              ]
-            },
-            {
-              "name": "Custom authentication extensions",
-              "resources": [
-                "customAuthenticationExtension",
-                "onAttributeCollectionStartCustomExtension",
-                "onAttributeCollectionSubmitCustomExtension",
-                "onTokenIssuanceStartCustomExtension"
               ]
             },
             {
@@ -1554,13 +1582,9 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
-                "claimsMappingPolicy",
-                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
-                "tokenIssuancePolicy",
-                "tokenLifetimePolicy",
                 "authenticationEventsPolicy",
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
@@ -1571,14 +1595,6 @@
               ],
               "childNodes": [
                 {
-                  "name": "Application authentication method policy",
-                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
-                  "resources": [
-                    "tenantAppManagementPolicy",
-                    "appManagementPolicy"
-                  ]
-                },
-                {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
                   "shouldSort": true,
@@ -1587,19 +1603,13 @@
                     "emailAuthenticationMethodConfiguration",
                     "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
+                    "hardwareOathAuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
                     "temporaryAccessPassAuthenticationMethodConfiguration",
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
@@ -1895,6 +1905,28 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Partner Center security",
+          "childNodes": [
+            {
+              "name": "Partner security score",
+              "overview": "../../resources/partner-security-score-api-overview.md",
+              "resources":[
+                "microsoft.graph.partner.security.customerInsight",
+                "microsoft.graph.partner.security.partnerSecurityScore",
+                "microsoft.graph.partner.security.securityRequirement",
+                "microsoft.graph.partner.security.securityHistory"
+              ],
+              "complexTypes":[
+                "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customerMfaInsight",
+                "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
+                "microsoft.graph.partner.security.customersSpendingBudgetSecurityRequirement",
+                "microsoft.graph.partner.security.responseTimeSecurityRequirement"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2061,6 +2093,7 @@
         "insightsSettings",
         "pronounsSettings",
         "photoUpdateSettings",
+        "namePronunciationSettings",
         "profile",
         "userAnalytics"
       ],
@@ -2076,7 +2109,9 @@
           "resources": [
             "pronounsSettings",
             "profileCardProperty",
-            "photoUpdateSettings"
+            "photoUpdateSettings",
+            "namePronunciationSettings"
+
           ]
         },
         {
@@ -2171,7 +2206,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "azureADAuthentication",
                 "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
@@ -2201,6 +2235,25 @@
                     "userCountMetric",
                     "userRequestsMetric",
                     "userSignUpMetric"
+                  ]
+                },
+                {
+                  "name": "Microsoft Entra Health (preview)",
+                  "childNodes": [
+                    {
+                      "name": "SLA attainment",
+                      "resources": [
+                        "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Health monitoring",
+                      "overview": "../../resources/healthmonitoring-overview.md",
+                      "resources": [
+                        "microsoft.graph.healthMonitoring.alert",
+                        "microsoft.graph.healthMonitoring.alertConfiguration"
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2420,9 +2473,10 @@
           ]
         },
         {
-          "name": "Identities (preview)",
+          "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ]
         },
         {
@@ -2562,7 +2616,12 @@
           "resources": [
             "baseSitePage",
             "sitePage",
-            "webPart"
+            "webPart",
+            "pageTemplate"
+          ],
+          "complexTypes": [
+            "createFromTemplate",
+            "saveAsTemplate"
           ],
           "childNodes": [
             {

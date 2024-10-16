@@ -1,6 +1,6 @@
 ---
 title: "managedDeviceSummarizedAppState resource type"
-description: "Event representing a user's devices with failed or pending apps."
+description: "The summarized information associated with managed device app installation status."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -10,18 +10,18 @@ doc_type: resourcePageType
 # managedDeviceSummarizedAppState resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-
-Event representing a user's devices with failed or pending apps.
+The summarized information associated with managed device app installation status.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|summarizedAppState|[runState](../resources/intune-shared-runstate.md)|runState for the object. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|deviceId|String|DeviceId of device represented by this object|
+|summarizedAppState|[deviceManagementScriptRunState](../resources/intune-troubleshooting-devicemanagementscriptrunstate.md)|The device management script run state for the device, which summarizes the overall status of apps installation on the devices. If any app installation encounters an error, the state will be marked as fail; otherwise, if any app is pending installation, the state will be marked as pending. All possible values include: unknown, fail, pending, notApplicable. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`, `unknownFutureValue`.|
+|deviceId|String|The unique identifier (DeviceId) associated with the device.|
 
 ## Relationships
 None

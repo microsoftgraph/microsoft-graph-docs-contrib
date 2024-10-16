@@ -26,10 +26,16 @@ Becomes:
 https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
+> [!NOTE]
+> The following known issues are associated with this resource:
+> - [Webhook message processing exception: System.Security.Cryptography.CryptographicException](https://developer.microsoft.com/en-us/graph/known-issues/?search=24752)
+> - [Support for multi-endpoint use case in delta roster notification mode is missing](https://developer.microsoft.com/en-us/graph/known-issues/?search=24894)
+
 ## Methods
 
 | Method                                                                   | Return Type                                                         | Description                                                                     |
 |:-------------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Create](../api/application-post-calls.md)                                                | [call](call.md)                                                     | Create **call** enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.                                         |
 | [Get](../api/call-get.md)                                                | [call](call.md)                                                     | Read properties of the **call** object.                                         |
 | [Delete/hang up](../api/call-delete.md)                                          | None                                                                | Delete or Hang-up an active **call**.                                           |
 | [Keep alive](../api/call-keepalive.md)                                    | None                                                                | Ensure that the call remains active.                                            |
@@ -158,4 +164,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
