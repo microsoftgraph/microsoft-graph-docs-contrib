@@ -7,7 +7,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "subscription",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe either to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).",
+          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe to [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#example-2-subscribe-to-changes-in-a-particular-chat-using-the-notifyonuserspecificproperties-query-parameter).",
           "Target": "subscription"
         }
       ],
