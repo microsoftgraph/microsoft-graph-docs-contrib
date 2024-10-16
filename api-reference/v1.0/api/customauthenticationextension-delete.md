@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Delete customAuthenticationExtension
 Namespace: microsoft.graph
 
-Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

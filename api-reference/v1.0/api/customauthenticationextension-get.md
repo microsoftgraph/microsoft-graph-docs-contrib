@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Get customAuthenticationExtension
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

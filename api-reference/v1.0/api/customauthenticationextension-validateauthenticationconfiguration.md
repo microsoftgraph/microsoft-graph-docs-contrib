@@ -10,7 +10,9 @@ doc_type: apiPageType
 # customAuthenticationExtension: validateAuthenticationConfiguration
 Namespace: microsoft.graph
 
-An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object, which can represent one of the following derived types:
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

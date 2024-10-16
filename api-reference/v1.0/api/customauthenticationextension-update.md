@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Update customAuthenticationExtension
 Namespace: microsoft.graph
 
-Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

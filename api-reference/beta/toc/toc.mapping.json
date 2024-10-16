@@ -1499,6 +1499,15 @@
               ]
             },
             {
+              "name": "Custom authentication extensions",
+              "resources": [
+                "customAuthenticationExtension",
+                "onAttributeCollectionStartCustomExtension",
+                "onAttributeCollectionSubmitCustomExtension",
+                "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
