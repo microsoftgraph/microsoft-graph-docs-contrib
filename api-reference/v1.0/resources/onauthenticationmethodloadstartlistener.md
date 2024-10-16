@@ -11,9 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A listener for when authentication methods are ready to be presented to the user in an authentication flow.  If this listener isn't specified, the default option is email one time passcode (OTP). May be part of an [authenticationEventsFlow](../resources/authenticationeventsflow.md).
+A listener for when authentication methods are ready to be presented to the user in an authentication flow. If this listener isn't specified, the default option is email one time passcode (OTP). May be part of an [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
 
 ## Properties
 |Property|Type|Description|
@@ -21,7 +26,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |id|String|Required. Inherited from [entity](../resources/entity.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+|handler|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This property lets us define potential handler configurations per-event.|
 
 ## Relationships
 None.

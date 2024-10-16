@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let siteProtectionUnits = await client.api('/solutions/backupRestore/siteProtectionUnits')
+let siteProtectionUnit = await client.api('/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit')
 	.get();
 
 ```

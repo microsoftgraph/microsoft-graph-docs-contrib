@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-approleassignments-permissions.md)]
 
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
