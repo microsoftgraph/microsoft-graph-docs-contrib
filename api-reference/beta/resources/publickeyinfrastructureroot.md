@@ -30,7 +30,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|certificateBasedAuthConfigurations|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md) collection|The collection of public key infrastructure instances for the certificate based authentication feature for users.|
+|certificateBasedAuthConfigurations|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md) collection|The collection of public key infrastructure instances for the certificate-based authentication feature for users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
