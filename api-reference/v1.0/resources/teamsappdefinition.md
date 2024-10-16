@@ -47,13 +47,11 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "displayName": "String",
   "id": "String (identifier)",
   "publishingState": "String",
-  "shortDescription": "String,
+  "shortDescription": "String",
   "teamsAppId": "String",
   "version": "String"
 }
 ```
-
-{"@odata.type": "microsoft.graph.signInLocation"}
 
 ## Related content
 
