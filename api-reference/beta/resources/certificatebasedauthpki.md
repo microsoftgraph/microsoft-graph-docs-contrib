@@ -35,9 +35,9 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |displayName|String|The name of the certificateBasedAuthPki object.|
 |id|String|The id of the certificateBasedAuthPki object. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the related certificate authorities of the certificateBasedAuthPki object were added or deleted.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when certificateBasedAuthPki object was created or last modified.|
 |status|String|The status of any asynchronous jobs runs on the certificateBasedAuthPki object which can be upload or delete.|
-|statusDetails|String|Property that provides additional information of the upload/deleted operation of PKI(Public Key Infrastructure).|
+|statusDetails|String|The status details of the upload/deleted operation of PKI(Public Key Infrastructure).|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -54,12 +54,12 @@ You can specify the following properties when creating a **certificateAuthorityD
 |deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate autority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
 |certificate|Binary|The public key of the certificate authority. Required.|
-|displayName|String|The name of the certificateBasedAuthPki entity. Optional.|
-|issuer|String| The name of the certificate authority. Optional.|
+|displayName|String|The display name of the certificate authority. Optional.|
+|issuer|String| The issuer of the certificate authority. Optional.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
-|createdDateTime|DateTimeOffset|The creation DateTime of the certificate authority. Optional.|
-|expirationDateTime|DateTimeOffset|The expirationTime of the certificate authority. Required.|
-|thumbprint|String|The thumbprint of the certificate authority public certificate. Required.|
+|createdDateTime|DateTimeOffset|The date and time when the certificate authority was created. Optional.|
+|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Required.|
+|thumbprint|String|The thumbprint of certificate authority certificate. Required.|
 |certificateRevocationListUrl|String| The URL to check if the certificate is revoked. Optional.|
 |deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
 |isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it is presented to the user in the certificate picker to be used for authentication. `false` by default. Optional.|
