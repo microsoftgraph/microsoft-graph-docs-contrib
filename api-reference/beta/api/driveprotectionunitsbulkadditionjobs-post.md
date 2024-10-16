@@ -15,8 +15,9 @@ Namespace: microsoft.graph
 
 Create a [driveProtectionUnitsBulkAdditionJob](../resources/driveprotectionunitsbulkadditionjob.md) object associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-The initial status upon creation of the job is `active`. Once all the `drives`, and `directoryObjectIds` are added into the corresponding OneDrive protection policy, the status of job becomes `completed`.
-If there are any failures while resource resolution, the status of the job eventually becomes `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the `drives` and `directoryObjectIds` are added into the corresponding OneDrive protection policy, the status of job is `completed`.
+
+If any failures occur, the status of the job eventually is `completedWithErrors`.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
