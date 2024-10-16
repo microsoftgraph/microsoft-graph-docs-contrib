@@ -1413,9 +1413,7 @@
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
-            "invitation",
-            "trustFrameworkKeySet",
-            "trustFrameworkPolicy"
+            "invitation"
           ],
           "childNodes": [
             {
@@ -1612,6 +1610,14 @@
                     "x509CertificateAuthenticationMethodConfiguration"
                   ]
                 }
+              ]
+            },
+            {
+              "name": "Azure AD B2C IEF",
+              "resources": [
+                "trustFrameworkKeyset",
+                "trustFrameworkKey_v2",
+                "trustFrameworkPolicy"
               ]
             },
             {
