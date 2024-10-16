@@ -21,8 +21,8 @@ Inherits from [actionResultPart](actionresultpart.md).
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|userId|String|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
 |error|[publicError](publicerror.md) |The error that occurred, if any, during the course of the bulk operation.|
+|userId|String|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "userId": "String",
-    "error": "microsoft.graph.publicError"
+  "error": "microsoft.graph.publicError",
+  "userId": "String"
 }
 ```
 
