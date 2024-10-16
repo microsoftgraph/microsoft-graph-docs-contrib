@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authenticationeventlistener_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationeventlistener-get-permissions.md)]
 
+[!INCLUDE [rbac-custom-auth-ext-apis-read](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

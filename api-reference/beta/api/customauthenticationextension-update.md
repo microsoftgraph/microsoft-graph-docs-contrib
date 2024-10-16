@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "customauthenticationextension_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/customauthenticationextension-update-permissions.md)]
 
+[!INCLUDE [rbac-custom-auth-ext-apis-write](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
