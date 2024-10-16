@@ -15,8 +15,9 @@ Namespace: microsoft.graph
 
 Create a [siteProtectionUnitsBulkAdditionJob](../resources/siteprotectionunitsbulkadditionjob.md) object associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
-The initial status upon creation of the job is `active`. Once all the site-urls, and siteIds are added into the corresponding SharePoint protection policy, the status of job becomes `completed`.
-In case of any failures while resource resolution, the status of the job eventually becomes `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the `siteUrls` and `siteIds` are added into the corresponding SharePoint protection policy, the status of job is `completed`.
+
+If any failures occur, the status of the job is `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
