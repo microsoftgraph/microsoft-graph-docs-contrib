@@ -111,7 +111,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 ## JSON representation
 
-The JSON representation shows the resource type.
+The following JSON representation shows the resource type.
 
 >**Note:** If the team is of type class, a **classSettings** property is applied on the team.
 
