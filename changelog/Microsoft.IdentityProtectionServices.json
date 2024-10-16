@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskEventType",
           "ChangeType": "Change",
-          "Description": "Added the `suspiciousAPITraffic` as a supported value for the **riskEventType** property in the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta) resource.",
+          "Description": "Added `suspiciousAPITraffic` as a supported value for the **riskEventType** property in the [servicePrincipalRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta) resource.",
           "Target": "servicePrincipalRiskDetection"
           }
         ],
@@ -40,7 +40,7 @@
         "Id": "cc62ad51-15d6-4cb9-a1fa-fe18df3abd31",
         "Cloud": "Prod",
         "Version": "v1.0",
-        "CreatedDateTime": "2024-06-20T22:19:32.3422617Z",
+        "CreatedDateTime": "2024-10-16T22:19:32.3422617Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Identity and sign-in"
       },
