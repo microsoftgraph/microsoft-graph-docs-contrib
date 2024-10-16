@@ -43,17 +43,10 @@ POST   /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPo
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 
-```json
-{
-    "displayName" : "mailboxes-I",
-    "mailboxes" : ["amala@contoso.com", "conrad@contoso.com", "lothar@contoso.com"],
-    "directoryObjectIds" : ["1fec4e78-bce4-4aaf-ab1b-5451cc387264"]
-}
-```
+In the request body, include a JSON representation of the [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md) object.
 
 ## Response
 
@@ -73,6 +66,13 @@ The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxProtectionUnitsBulkAdditionJobs 
+Content-Type: application/json
+
+{
+    "displayName" : "mailboxes-I",
+    "mailboxes" : ["amala@contoso.com", "conrad@contoso.com", "lothar@contoso.com"],
+    "directoryObjectIds" : ["1fec4e78-bce4-4aaf-ab1b-5451cc387264"]
+}
 ```
 
 ---

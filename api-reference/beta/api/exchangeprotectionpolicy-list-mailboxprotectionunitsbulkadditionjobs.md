@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [mailboxProtectionUnitsBulkAdditionJobs](../resources/mailboxprotectionunitsbulkadditionjob.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
-The `mailboxes`, and `directoryObjectIds` field are deliberately omitted from the response body in order to limit the response size.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -40,8 +39,6 @@ GET /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolic
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 
@@ -50,6 +47,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [mailboxProtectionUnitsBulkAdditionJob](../resources/mailboxprotectionunitsbulkadditionjob.md) objects in the response body.
+The `mailboxes` and `directoryObjectIds` fields are omitted from the response body in order to limit the response size.
 
 ## Examples
 

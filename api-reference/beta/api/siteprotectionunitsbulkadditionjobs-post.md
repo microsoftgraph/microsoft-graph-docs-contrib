@@ -44,17 +44,10 @@ POST   /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtecti
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 
-```json
-{
-    "displayName" : "Sites-I",
-    "siteWebUrls" : [ "https://contoso.sharepoint.com/test1", "https://contoso.sharepoint.com/test2", "https://contoso.sharepoint.com/test4", "https://contoso.sharepoint.com/test5" ],
-    "siteIds" : [ "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee4532", "contoso.sharepoint.com,ab60e844-ba1d-49bc-b4d4-d5e36bae9019,832a596e-90a1-49e3-9b48-bfa80bee4532"]
-}
-```
+In the request body, include a JSON representation of the [siteProtectionUnitsBulkAdditionJob](../resources/siteprotectionunitsbulkadditionjob.md) object.
 
 ## Response
 
@@ -74,6 +67,13 @@ The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteProtectionUnitsBulkAdditionJobs 
+Content-Type: application/json
+
+{
+   "displayName" : "Sites-I",
+   "siteWebUrls" : [ "https://contoso.sharepoint.com/test1", "https://contoso.sharepoint.com/test2", "https://contoso.sharepoint.com/test4", "https://contoso.sharepoint.com/test5" ],
+   "siteIds" : [ "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee4532", "contoso.sharepoint.com,ab60e844-ba1d-49bc-b4d4-d5e36bae9019,832a596e-90a1-49e3-9b48-bfa80bee4532"]
+}
 ```
 
 ---

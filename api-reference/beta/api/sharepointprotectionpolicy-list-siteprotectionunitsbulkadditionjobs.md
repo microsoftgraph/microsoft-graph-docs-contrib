@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [siteProtectionUnitsBulkAdditionJobs](../resources/siteprotectionunitsbulkadditionjob.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
-The `siteWebUrls`, and `siteIds` values are deliberately omitted from the response body in order to limit the response size.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -48,6 +47,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [siteProtectionUnitsBulkAdditionJob](../resources/siteprotectionunitsbulkadditionjob.md) object in the response body.
+The `siteWebUrls` and `siteIds` values are omitted from the response body in order to limit the response size. 
 
 ## Examples
 

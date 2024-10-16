@@ -39,8 +39,6 @@ GET /solutions/backupRestore/exchangeProtectionPolicies/{mailboxProtectionPolicy
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 

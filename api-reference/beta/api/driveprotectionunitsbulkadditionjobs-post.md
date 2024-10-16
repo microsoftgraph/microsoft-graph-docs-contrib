@@ -43,17 +43,10 @@ POST   /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveF
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json|
-|Application|application/json|
 
 ## Request body
 
-```json
-{
-    "displayName" : "drives-I",
-    "drives" : ["amala@contoso.com", "conrad@contoso.com", "lothar@contoso.com"],
-    "directoryObjectIds" : ["1fec4e78-bce4-4aaf-ab1b-5451cc387264"]
-}
-```
+In the request body, include a JSON representation of the [driveProtectionUnitsBulkAdditionJob](../resources/driveprotectionunitsbulkadditionjob.md) object.
 
 ## Response
 
@@ -72,7 +65,15 @@ The following example shows a request.
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveProtectionUnitsBulkAdditionJobs 
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveProtectionUnitsBulkAdditionJobs
+Content-Type: application/json
+
+{
+    "displayName" : "drives-I",
+    "drives" : ["amala@contoso.com", "conrad@contoso.com", "lothar@contoso.com"],
+    "directoryObjectIds" : ["1fec4e78-bce4-4aaf-ab1b-5451cc387264"]
+}
+
 ```
 
 ---
