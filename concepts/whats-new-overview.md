@@ -51,6 +51,16 @@ Updated the endpoints of the following methods:
 
 The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous usage patterns in business-critical identity scenarios for your tenant and receive alert notifications. Use the operations of the [alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) and [alertConfiguration](/graph/api/resources/healthmonitoring-alertconfiguration?view=graph-rest-beta&preserve-view=true) resources to retrieve and update alerts and alert configurations. For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=277da918-3e81-499f-8803-2986a2c73123).
 
+### Security | Microsoft Defender for Cloud apps
+
+The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to analyze the risks associated with the discovered apps. Use the following resources and their methods to get data and insights across the discovered SaaS apps ecosystem:
+
+- [cloudAppDiscoveryReport](/graph/api/resources/security-cloudappdiscoveryreport?view=graph-rest-beta&preserve-view=true)
+- [discoveredCloudAppDetail](/graph/api/resources/security-discoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
+- [discoveredCloudAppUser](/graph/api/resources/security-discoveredcloudappuser?view=graph-rest-beta&preserve-view=true)
+- [discoveredCloudAppIPAddress](/graph/api/resources/security-discoveredcloudappipaddress?view=graph-rest-beta&preserve-view=true)
+- [discoveredCloudAppDevice](/graph/api/resources/security-discoveredcloudappdevice?view=graph-rest-beta&preserve-view=true)
+
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-betaa&preserve-view=true) to get or set the external information for a virtual event registration.
@@ -144,15 +154,11 @@ Use the **passwordResetUri** property on [internalDomainFederation](/graph/api/r
 - Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the hostname without the domain suffix.
 - Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get a logical grouping of computers within a Microsoft Windows network.
 
-### Security | Microsoft Defender for Cloud apps
+### Security | Identities
 
-The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to analyze the risks associated with the discovered apps. Use the following resources and their methods to get data and insights across the discovered SaaS apps ecosystem:
-
-- [cloudAppDiscoveryReport](/graph/api/resources/security-cloudappdiscoveryreport?view=graph-rest-beta&preserve-view=true)
-- [discoveredCloudAppDetail](/graph/api/resources/security-discoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
-- [discoveredCloudAppUser](/graph/api/resources/security-discoveredcloudappuser?view=graph-rest-beta&preserve-view=true)
-- [discoveredCloudAppIPAddress](/graph/api/resources/security-discoveredcloudappipaddress?view=graph-rest-beta&preserve-view=true)
-- [discoveredCloudAppDevice](/graph/api/resources/security-discoveredcloudappdevice?view=graph-rest-beta&preserve-view=true)
+- [Generate](/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta&preserve-view=true) a new deployment access key.
+- [Get the deployment access key](/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta&preserve-view=true) associated with a Microsoft Defender for Identity.
+- [Get the sensor deployment package](/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta&preserve-view=true) URL and version.
 
 ### Teamwork and communications | Calls and online meetings
 
