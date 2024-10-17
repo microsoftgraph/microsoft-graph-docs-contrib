@@ -18,10 +18,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2024: New and generally available
 
-### Teamwork and communications | Calls and online meetings
-
-Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-1.0&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-1.0&preserve-view=true) to indicate whether delta roster is enabled for a call.
-
 ### Backup storage
 
 Updated the endpoints of the following methods:
@@ -36,6 +32,10 @@ Updated the endpoints of the following methods:
 ### Teamwork and communications | Apps
 
 Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions) to indicate whether delta roster is enabled for a call.
 
 ### Teamwork and communications | Messaging
 
