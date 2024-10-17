@@ -29,6 +29,10 @@ Updated the endpoints of the following methods:
 
 [Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
 
+### Teamwork and communications | Apps
+
+Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
+
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
