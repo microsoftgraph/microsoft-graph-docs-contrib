@@ -1029,6 +1029,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
