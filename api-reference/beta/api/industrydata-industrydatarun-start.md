@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code.
+If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the longRunningOperation. To check the status of this long-running operation, make a GET request to the location URL.
 
 ## Examples
 
@@ -80,4 +80,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
+Headers
+Location: https://graph.microsoft.com/beta/external/industryData/operations/171bf0b4-14e9-408f-71dd-08dcd2a15d23
 ```
