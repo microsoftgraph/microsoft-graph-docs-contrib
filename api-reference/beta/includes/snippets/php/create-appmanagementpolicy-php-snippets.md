@@ -12,6 +12,9 @@ use Microsoft\Graph\Beta\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Beta\Generated\Models\KeyCredentialConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\AppKeyCredentialRestrictionType;
+use Microsoft\Graph\Beta\Generated\Models\CustomAppManagementApplicationConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\IdentifierUriRestriction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -56,18 +59,15 @@ $keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $restrictions->setKeyCredentials($keyCredentialsArray);
 
-$additionalData = [
-'applicationRestrictions' => [
-'identifierUris' => [
-	'nonDefaultUriAddition' => [
-		'restrictForAppsCreatedAfterDateTime' => '2024-01-01T10:37:00Z',
-		'excludeAppsReceivingV2Tokens' => true,
-		'excludeSaml' => true,
-	],
-],
-],
-];
-$restrictions->setAdditionalData($additionalData);
+$restrictionsApplicationRestrictions = new CustomAppManagementApplicationConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUris = new IdentifierUriConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition = new IdentifierUriRestriction();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2024-01-01T10:37:00Z'));
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeAppsReceivingV2Tokens(true);
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeSaml(true);
+$restrictionsApplicationRestrictionsIdentifierUris->setNonDefaultUriAddition($restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition);
+$restrictionsApplicationRestrictions->setIdentifierUris($restrictionsApplicationRestrictionsIdentifierUris);
+$restrictions->setApplicationRestrictions($restrictionsApplicationRestrictions);
 $requestBody->setRestrictions($restrictions);
 
 $result = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody)->wait();

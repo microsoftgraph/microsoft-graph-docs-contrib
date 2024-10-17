@@ -23,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_validatepassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-validatepassword-permissions.md)]
 
+>[!IMPORTANT]
+>This API operation doesn't require the calling user to be assigned any Microsoft Entra admin roles.
+
 ## HTTP request
 
 <!-- {

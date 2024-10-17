@@ -21,11 +21,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_assignlicense" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-
-- Directory Writers
-- License Administrator
-- User Administrator
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/users/assignLicense` role permission. The following least privileged roles are supported for this operation:
+> - Directory Writers
+> - License Administrator
+> - User Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,16 +45,17 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove. Required.|
+|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove. Required. Can be an empty collection.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.
 
-## Example
-Here is an example of how to call this API.
-##### Request
-The following example shows a request.
+## Examples
+
+### Example 1: Assign licenses to the signed-in user
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,13 +67,19 @@ POST https://graph.microsoft.com/v1.0/me/assignLicense
 Content-type: application/json
 
 {
-  "addLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "45715bb8-13f9-4bf6-927f-ef96c102d394"
-    }
-  ],
-  "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
+    "addLicenses": [
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+    "removeLicenses": []
 }
 ```
 
@@ -109,8 +117,8 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,35 +131,93 @@ Content-type: application/json
 {
   "accountEnabled": true,
   "assignedLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-02T12:13:14Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+  "city": "Nairobi",
+  "companyName": "Contoso"
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Example 2: Remove licenses from the signed-in user
+
+#### Request
+
+# [HTTP](#tab/http)
 <!-- {
-  "type": "#page.annotation",
-  "description": "user: assignLicense",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "blockType": "request",
+  "name": "user_assignlicense_removelicenses"
 }-->
+```http
+POST https://graph.microsoft.com/v1.0/me/assignLicense
+Content-type: application/json
+
+{
+    "addLicenses": [],
+    "removeLicenses": [
+        "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-assignlicense-removelicenses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-assignlicense-removelicenses-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-removelicenses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-removelicenses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-removelicenses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/user-assignlicense-removelicenses-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-removelicenses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-assignlicense-removelicenses-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [],
+  "city": "Nairobi",
+  "companyName": "Contoso"
+}
+```

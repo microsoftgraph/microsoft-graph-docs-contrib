@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/30/2024
+ms.date: 10/14/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1638,6 +1638,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CustomSecAttributeProvisioning.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9fd1f8bf-a443-4df6-bc2a-5d00c5ec7828 | 9ddd870d-077c-49e7-b3e3-6b3012a8a880 |
+| DisplayText | Read the provisioning configuration of all active custom security attributes | Read the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CustomSecAttributeProvisioning.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1db69e9c-8d0a-498d-a5df-11fd0b68ceab | 1140d9e4-6776-433e-a9e4-b9831adbb2e0 |
+| DisplayText | Read and edit the provisioning configuration of all active custom security attributes | Read and edit the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read and edit the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read and edit the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### CustomTags.Read.All
 
 | Category | Application | Delegated |
@@ -1801,6 +1823,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementApps.ReadWrite.All](../includes/permissions-notes/devicemanagementapps.readwrite.all.md)]
+
+---
+
+### DeviceManagementCloudCA.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 315b6e8c-d92a-4691-919d-00ce76d1344a | ac5c8443-d999-471f-9247-ce92cf5c5560 |
+| DisplayText | Read Microsoft Cloud PKI objects | Read Microsoft Cloud PKI objects |
+| Description | Allows the app to read certification authority information without a signed-in user. | Allows the app to read certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementCloudCA.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f15eb2ba-ef8a-4f70-991d-da5d045154e2 | 93028c58-65aa-48db-a706-1fe4ada325ec |
+| DisplayText | Read and write Microsoft Cloud PKI objects | Read and write Microsoft Cloud PKI objects |
+| Description | Allows the app to read and write certification authority information without a signed-in user. | Allows the app to read and write certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -3781,6 +3825,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | - | No |
 
 [!INCLUDE [offline_access](../includes/permissions-notes/offline_access.md)]
+
+---
+
+### OnlineMeetingAiInsight.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c0cf7895-985f-42d4-a693-b618f36674ad | 166741d6-eeb8-46fe-91f4-817d2af7bc88 |
+| DisplayText | Read all AI Insights for online meetings. | Read all AI Insights for online meetings. |
+| Description | Allows the app to read all AI Insights for all online meetings, without a signed-in user. | Allows the app to read all AI Insights for online meetings, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### OnlineMeetingAiInsight.Read.Chat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 01892c31-3b66-4bcf-b5f5-bf0a03d5ed9f | - |
+| DisplayText | Read all AI Insights for online meetings where the Teams application is installed. | - |
+| Description | Allows the teams-app to read all aiInsights for online meetings where the Teams-app is installed, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -7489,8 +7555,4 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
-
-
-
 

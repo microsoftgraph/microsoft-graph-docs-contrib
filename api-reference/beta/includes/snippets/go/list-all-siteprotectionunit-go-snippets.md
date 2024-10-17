@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-siteProtectionUnits, err := graphClient.Solutions().BackupRestore().SiteProtectionUnits().Get(context.Background(), nil)
+protectionUnits, err := graphClient.Solutions().BackupRestore().ProtectionUnits().ByProtectionUnitBaseId("protectionUnitBase-id").Get(context.Background(), nil)
 
 
 ```
