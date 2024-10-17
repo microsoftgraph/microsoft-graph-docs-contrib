@@ -1479,7 +1479,8 @@
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate"
+                "conditionalAccessTemplate",                
+                "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
                 {
@@ -1613,7 +1614,6 @@
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
-                "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
