@@ -36,8 +36,8 @@ None.
 |Name|Description|
 |:----|-----------|
 |recoverable|Purged data is recoverable.|
-|permanentlyDelete|Purged data is permanently deleted.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|permanentlyDelete|Purged data is permanently deleted.|
 
 ### purgeAreas values
 
