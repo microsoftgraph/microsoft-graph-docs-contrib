@@ -16,8 +16,6 @@ import (
 )
 
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
-id := "7a6ab703-0780-4b37-8445-81f679b2d75c"
-requestBody.SetId(&id) 
 requestType := graphmodels.ADMINUPDATE_ACCESSPACKAGEREQUESTTYPE 
 requestBody.SetRequestType(&requestType) 
 
