@@ -165,7 +165,7 @@ Content-Type: application/json
 
 ### Response
 
-If successful, this method returns a [pageTemplate](../resources/pageTemplate.md) in the response body for the created page template.
+The following example shows the response that contains a [pageTemplate](../resources/pagetemplate.md) object for the created page template.
 
 > **Note:** The response might be shortened for readability.
 
@@ -208,7 +208,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
+        "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,
