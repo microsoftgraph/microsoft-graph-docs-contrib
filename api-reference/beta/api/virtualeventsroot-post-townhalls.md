@@ -170,6 +170,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
-    "isInviteOnly": false
+    "isInviteOnly": false,
+    "externalEventInformation": []
 }
 ```
