@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a page template using select and expand
+### Example 2: Get a page template using $select and $expand
 
 The following example shows how to use the `$select` and `$expand` query parameters to retrieve site page metadata and page content in a single request.
 
@@ -157,7 +157,7 @@ The following example shows how to use the `$expand` query parameter to access t
 
 #### Request
 
-The following example shows the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -177,7 +177,10 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.pageTemplate", 
   "truncated": true 
 } -->
-```json
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "description": "Reiciendis placeat dolores.",
   "eTag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
@@ -187,7 +190,7 @@ The following example shows the response.
   "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/autotest Electronic Convertible.aspx",
   "title": "autotest Electronic Convertible",
   "pageLayout": "article",
-  "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/sitepagethumbnail.png",
+  "thumbnailWebUrl": "https://media.contoso.odsp.cdn.office.net/sitepagethumbnail.png",
   "promotionKind": "page",
   "showComments": false,
   "showRecommendedPages": true,
