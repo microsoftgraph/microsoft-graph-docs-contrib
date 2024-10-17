@@ -43,8 +43,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "createdDateTime": "String (timestamp)",
-  "reactionContentUrl": "String",
   "displayName": "String",
+  "reactionContentUrl": "String",
   "reactionType": "String",
   "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
