@@ -168,7 +168,9 @@
         "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-09-27T16:34:56.2892592Z"
+        "CreatedDateTime": "2024-09-27T16:34:56.2892592Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
       },
       {
         "ChangeList": [
