@@ -21,6 +21,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3e372307-8bb4-4d6b-ac54-1129d4167c98",
+          "ApiChange": "Property",
+          "ChangedApiName": "clientAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **clientAppId** property to the [teamsAppAuthorization](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppAuthorization?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppAuthorization"
+        }
+      ],
+      "Id": "3e372307-8bb4-4d6b-ac54-1129d4167c98",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-16T19:05:03.3806123Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "eb4edef4-7167-4666-b00f-ca64a994ce69",
           "ApiChange": "Property",
           "ChangedApiName": "callId",
