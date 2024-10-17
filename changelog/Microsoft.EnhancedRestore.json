@@ -46,9 +46,9 @@
         "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2024-09-24T16:34:31.8488321Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "CreatedDateTime": "2024-10-16T16:34:31.8488321Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
       },
       {
         "ChangeList": [
