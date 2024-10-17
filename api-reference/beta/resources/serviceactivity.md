@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity resource type"
-description: "A placeholder for the Microsoft Entra service activity URL."
+description: "Represents the service acitivty of various Microsoft 365 services."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A placeholder for the Microsoft Entra service activity URL.
+Represents the service acitivty of various Microsoft 365 services.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -297,7 +297,7 @@ items:
     - name: Get active users metrics for Outlook apps for Mac
       href: ../../api/serviceactivity-getActiveUserMetricsForOutlookMacByReadEmail.md
     - name: Get active users metrics for iOS or Android mail apps
-      href: ../../resources/serviceactivity-getActiveUserMetricsForiOSOrAndroidMailByReadEmail.md
+      href: ../../api/serviceactivity-getActiveUserMetricsForiOSOrAndroidMailByReadEmail.md
     - name: Get active users metrics for opening Outlook for the web
       href: ../../api/serviceactivity-getActiveUserMetricsForOutlookWebByAppOpening.md
     - name: Get active users metrics for modern authentication
@@ -317,7 +317,7 @@ items:
     - name: Get metrics for the percentage of audio streams that received Quality of Experience(QoE) telemetry
       href: ../../api/serviceactivity-getAudioStreamQoEMetricsForTeams.md
     - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
-      href: ../../resources/serviceactivity-getAudioStreamsOverUdpMetricsForTeams.md
+      href: ../../api/serviceactivity-getAudioStreamsOverUdpMetricsForTeams.md
   - name: OneDrive for Business monitoring (Preview)
     items:
     - name: Get device metrics for download online-only files
@@ -333,7 +333,7 @@ items:
     - name: Get active users metrics for Visio for the web
       href: ../../api/serviceactivity-getActiveUserMetricsForVisioWeb.md
     - name: Get active users metrics for Word for the web
-      href: ../../resources/serviceactivity-getActiveUserMetricsForWordWeb.md
+      href: ../../api/serviceactivity-getActiveUserMetricsForWordWeb.md
 - name: Microsoft 365 usage reports
   items:
   - name: Overview

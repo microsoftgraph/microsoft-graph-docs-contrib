@@ -48,5 +48,5 @@ The Microsoft 365 Monitoring API is available in the following Microsoft nationa
 
 The Microsoft 365 Monitoring API can open up new ways for you to engage with users:
 
-- See the [serviceActivity resource](../resources/m365monitoringserviceactivity.md) to learn more about the Microsoft 365 Monitoring APIs available.
+- See the [serviceActivity resource](../resources/serviceactivity.md) to learn more about the Microsoft 365 Monitoring APIs available.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
