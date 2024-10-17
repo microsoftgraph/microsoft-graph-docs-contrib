@@ -5617,7 +5617,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
+          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the reaction name in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
           "Target": "chatMessageReaction"
         }
       ],
@@ -5661,7 +5661,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-1.0) resource to represent the reaction name [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0).",
+          "Description": "Added the **displayName** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-1.0) resource to represent the reaction name in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0).",
           "Target": "chatMessageReaction"
         },
         {
