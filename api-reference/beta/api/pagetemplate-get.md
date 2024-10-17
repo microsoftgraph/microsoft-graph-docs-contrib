@@ -145,9 +145,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
-    "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
-    "name": "Electronic Convertible.aspx"
+  "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
+  "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
+  "name": "Electronic Convertible.aspx"
 }
 ```
 
