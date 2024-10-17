@@ -18,8 +18,8 @@ Represents settings relating to access to the Microsoft Entra admin center.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/uxsetting-get.md)|[uxSetting](../resources/uxsetting.md)|Read the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
-|[Update](../api/uxsetting-update.md)|[uxSetting](../resources/uxsetting.md)|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
+|[List](../api/entra-list-uxsetting.md)||[uxSetting](../resources/uxsetting.md)|Read the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
+|[Update](../api/entra-post-uxsetting.md)|[uxSetting](../resources/uxsetting.md)|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
 
 ## Properties
 |Property|Type|Description|
