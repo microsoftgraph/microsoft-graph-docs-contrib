@@ -44,12 +44,14 @@ In the request body, supply the [synchronizationSchema](../resources/synchroniza
 
 If successful, returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
-### Example 1: Update the directories and synchronizationRules of a synchronization schema
+### Example 1: Update schema
 
 #### Request
 The following example shows a request.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,14 +95,13 @@ Content-type: application/json
                         {
                             "source": {},
                             "targetAttributeName": "userName"
-                        },
+                        }
                     ]
-                },
+                }
             ]
-        },
+        }
     ]
 }
-
 ```
 
 # [JavaScript](#tab/javascript)
@@ -118,74 +119,110 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the directories and synchronizationRules of a synchronization schema and configure the containers
+### Example 2: Add attribute "CustomAttribute" to the target system schema
 
 #### Request
-The following example shows a request.
+The following example shows a request. It assumes that the attribute "CustomAttribute" doesn't exist in the target directory schema. If it does exist, the attribute is updated. 
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_synchronizationschema_containerFilter"
+  "name": "update_synchronizationschema_customattribute"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
 
 {
-    "directories": [
-        {
-            "name": "Azure Active Directory",
-            "objects": [
-                {
-                    "name": "User",
-                    "attributes": [
-                        {
-                            "name": "userPrincipalName",
-                            "type": "string"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Active Directory"
-        }
-    ],
-    "synchronizationRules": [
-        {
-            "containerFilter": {
-                "includedContainers": [
-                    "OU=In-Scope OU 1,DC=contoso,DC=com",
-                    "OU=In-Scope OU 2,DC=contoso,DC=com",
-                ]
-            },
-            "groupFilter": {
-                "includedGroups": []
-            },
-            "name": "AD2AADProvisioning",
-            "sourceDirectoryName": "Active Directory",
-            "targetDirectoryName": "Azure Active Directory",
-            "objectMappings": [
-                {
-                    "name": "Provision Active Directory users",
-                    "sourceObjectName": "user",
-                    "targetObjectName": "User",
-                    "attributeMappings": [
-                        {
-                            "source": {},
-                            "targetAttributeName": "DisplayName"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+   "directories":[
+      {
+         "id":"09760868-cafb-47ac-9031-0a3262300427",
+         "name":"customappsso",
+         "objects":[
+            {
+               "name":"User",
+               "attributes":[
+                  {
+                     "anchor":false,
+                     "caseExact":false,
+                     "defaultValue":null,
+                     "flowNullValues":false,
+                     "multivalued":false,
+                     "mutability":"ReadWrite",
+                     "name":"urn:ietf:params:scim:schemas:extension:CustomExtensionName:2.0:User:CustomAttribute",
+                     "required":false,
+                     "type":"String",
+                     "apiExpressions":[],
+                     "metadata":[],
+                     "referencedObjects":[]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-containerfilter-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-customattribute-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### Example 3: Add a new attribute mapping to the synchronization rules
+
+#### Request
+The following example shows a request. The synchornizationSchema has a one-to-many relationship between **targetAttributeName** and **source** attributes. If your schema doesn't have "timezone" as a target attribute, the service adds a new mapping for extensionAttribute11 --> timezone. If your application has timezone as a target attribute in the schema, the service throws an error because an attribute can only be mapped as a target once. In addition, the attribute must exist in the schema before it can be added to the mappings.
+
+>**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationschema_newattributemapping"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
+
+{
+   "@odata.type":"#microsoft.graph.synchronizationSchema",
+   "synchronizationRules":[
+      {
+         "defaultValue":"",
+         "exportMissingReferences":false,
+         "flowBehavior":"FlowWhenChanged",
+         "flowType":"Always",
+         "matchingPriority":0,
+         "source":{
+            "expression":"[extensionAttribute11]",
+            "name":"extensionAttribute11",
+            "parameters":[],
+            "type":"Attribute"
+         },
+         "targetAttributeName":"timezone"
+      }
+   ]
+}
+
+
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-newattributemapping-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -209,14 +246,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: microsoft.graph.microsoft.graph/servicePrincipals:
-      /servicePrincipals/{var}/synchronization/jobs/{var}/schema
-      Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:
-       1) Doc bug where 'jobs' isn't defined on the resource.
-       2) Doc bug where 'jobs' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-       3) Doc bug where 'synchronization' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->
-
-

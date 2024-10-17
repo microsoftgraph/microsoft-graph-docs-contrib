@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "team_put_teams" } -->
 [!INCLUDE [permissions-table](../includes/permissions/team-put-teams-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Microsoft Teams service admins can access groups that they are not a member of.
 
 ## HTTP request
 

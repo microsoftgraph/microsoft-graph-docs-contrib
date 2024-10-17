@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.app_management_policy import AppManagementPolicy
 from msgraph.generated.models.custom_app_management_configuration import CustomAppManagementConfiguration
@@ -11,9 +12,7 @@ from msgraph.generated.models.password_credential_configuration import PasswordC
 from msgraph.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
 from msgraph.generated.models.key_credential_configuration import KeyCredentialConfiguration
 from msgraph.generated.models.app_key_credential_restriction_type import AppKeyCredentialRestrictionType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppManagementPolicy(
 	display_name = "Credential management policy",
 	description = "Cred policy sample",
