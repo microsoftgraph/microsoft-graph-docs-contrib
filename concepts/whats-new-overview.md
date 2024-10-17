@@ -35,7 +35,8 @@ Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources
 
 ### Security | eDiscovery
 
-Enabled the deletion of mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata) method.
+- Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata) method.
+- Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
 
 ### Teamwork and communications | Messaging
 
@@ -74,7 +75,8 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
 
 ### Security | eDiscovery
 
-Enabled the deletion of mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
+- Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
 
 ### Teamwork and communications | Calls and online meetings
 
