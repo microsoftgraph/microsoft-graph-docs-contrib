@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "conditionalaccesstemplate_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccesstemplate-get-permissions.md)]
 
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

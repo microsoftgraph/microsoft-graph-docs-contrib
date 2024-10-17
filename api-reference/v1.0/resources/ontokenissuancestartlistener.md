@@ -18,7 +18,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 ## Methods
 None.
 
-For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.        
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.   
 
 ## Properties
 |Property|Type|Description|
