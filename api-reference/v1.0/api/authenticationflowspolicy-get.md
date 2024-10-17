@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authenticationflowspolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationflowspolicy-get-permissions.md)]
 
+[!INCLUDE [rbac-authentication-flow-policy-read](../includes/rbac-for-apis/rbac-authentication-flow-policy-read.md)]
+
 ## HTTP request
 
 <!-- {
