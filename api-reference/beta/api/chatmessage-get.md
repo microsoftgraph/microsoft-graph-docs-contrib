@@ -660,7 +660,7 @@ Content-type: application/json
 
 ### Example 6: Get a chat message with a forwarded message
 
-The following example shows a request to get a chat message that has a forwarded message as an attachment.
+The following example shows a request that gets a chat message with a forwarded message as an attachment.
 
 #### Request
 
