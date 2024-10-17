@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` and a [pageTemplate](../resources/
 ## Examples
 
 ### Example 1: Get a page template in the templates folder of a site
-
 #### Request
 
 The following example shows a request.
@@ -125,7 +124,6 @@ Content-type: application/json
 
 With `$select` and `$expand` statements, you can retrieve sitePage metadata and page content in a single request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_pageTemplate"
@@ -153,7 +151,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a page template with page content
+### Example 3: Get a page template with canvas content
 
 #### Request
 
@@ -164,6 +162,8 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pageTemplates/df69e386-6c58-4df2
 ```
 
 #### Response
+
+The following example shows the response.
 ```json
 {
   "description": "Reiciendis placeat dolores.",
