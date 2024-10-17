@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: purgeData"
-description: "Delete mailbox or Microsoft Teams messages contained in an eDiscovery search."
+description: "Delete Mailbox or Microsoft Teams messages contained in an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete mailbox items or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
+Delete Mailbox items or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 >**Note:** This request purges upto 100 items only per location.
 
