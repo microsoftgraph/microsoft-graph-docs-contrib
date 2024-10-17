@@ -27,14 +27,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pageTemplates/microsoft.graph.pageTemplate/{page-template-id}
+GET /sites/{site-id}/pageTemplates/{page-template-id}/microsoft.graph.pageTemplate
 ```
 
 ## Optional query parameters
 
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query parameter to include the content of an item when you retrieve the metadata of an item if the item has a **canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query parameter to include the content of an item when you retrieve its the metadata if the item has a **canvasLayout** relationship.
 
 
 ## Request headers
@@ -57,22 +57,18 @@ If successful, this method returns a `200 OK` and a [pageTemplate](../resources/
 ## Examples
 
 ### Example 1: Get a page template in the templates folder of a site
+
+The following example shows how to get a page template in the templates folder of a SharePoint site.
+
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-pageTemplate_1", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb/microsoft.graph.pageTemplate
+GET https://graph.microsoft.com/beta/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb/microsoft.graph.pageTemplate
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-pagetemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -120,26 +116,30 @@ Content-type: application/json
 
 ### Example 2: Get a page template using select and expand
 
+The following example shows how to use the `$select` and `$expand` query parameters to retrieve site page metadata and page content in a single request.
+
 #### Request
 
-With `$select` and `$expand` statements, you can retrieve sitePage metadata and page content in a single request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_pageTemplate"
+  "name": "get_pageTemplate_2"
 }
 -->
-
 ```msgraph-interactive
-GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pageTemplates/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.pageTemplate?$select=id,name
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pageTemplates/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.pageTemplate?$select=id,name
 ```
 
 #### Response
 
 The following example shows the response.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
-
+<!-- { 
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.pageTemplate", 
+  "truncated": true 
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -153,17 +153,30 @@ Content-type: application/json
 
 ### Example 3: Get a page template with canvas content
 
+The following example shows how to use the `$expand` query parameter to access the page template and its content with `?$expand=canvasLayout`.
+
 #### Request
 
-You can expand references in your URL with the _$expand_ query parameter. To access the page template with page content, append the `?$expand=canvasLayout` query string.
+The following example shows the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_pageTemplate_3"
+}
+-->
 ```http
-GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pageTemplates/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.pageTemplate?$expand=canvasLayout
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pageTemplates/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.pageTemplate?$expand=canvasLayout
 ```
 
 #### Response
 
 The following example shows the response.
+
+<!-- { 
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.pageTemplate", 
+  "truncated": true 
+} -->
 ```json
 {
   "description": "Reiciendis placeat dolores.",
