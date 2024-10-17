@@ -78,7 +78,8 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
 
 ### Teamwork and communications | Messaging
 
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- [Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
 
 ### Users
 
