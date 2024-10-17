@@ -691,6 +691,58 @@
       "CreatedDateTime": "2024-05-15T05:50:29.9021049Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b271517c-c368-475a-960c-43fe1f51b9ed",
+          "ApiChange": "Member",
+          "ChangedApiName": "permanentlyDeleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `permanentlyDeleted` member from the **purgeType** enumeration.",
+          "Target": "purgeType"
+        },
+        {
+          "Id": "b271517c-c368-475a-960c-43fe1f51b9ed",
+          "ApiChange": "Member",
+          "ChangedApiName": "permanentlyDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the `permanentlyDelete` member to the **purgeType** enumeration.",
+          "Target": "purgeType"
+        }
+      ],
+      "Id": "b271517c-c368-475a-960c-43fe1f51b9ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-16T21:22:16.0259529Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "17019b51-d55f-4dd4-a766-73443360ceeb",
+          "ApiChange": "Member",
+          "ChangedApiName": "permanentlyDeleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `permanentlyDeleted` member from the **purgeType** enumeration.",
+          "Target": "purgeType"
+        },
+        {
+          "Id": "17019b51-d55f-4dd4-a766-73443360ceeb",
+          "ApiChange": "Member",
+          "ChangedApiName": "permanentlyDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the `permanentlyDelete` member to the **purgeType** enumeration.",
+          "Target": "purgeType"
+        }
+      ],
+      "Id": "17019b51-d55f-4dd4-a766-73443360ceeb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-16T21:22:16.0262082Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
     }
   ]
 }
