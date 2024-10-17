@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 ## Examples
 
-### Example 1: Create peer-to-peer VoIP calls with service- media
+### Example 1: Create a peer-to-peer VoIP call with service-hosted media
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
