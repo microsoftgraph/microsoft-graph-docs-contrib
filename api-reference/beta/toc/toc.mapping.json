@@ -147,6 +147,7 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
+        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
@@ -175,6 +176,14 @@
             "driveProtectionUnit",
             "mailboxProtectionUnit",
             "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
           ]
         },
         {
@@ -1414,9 +1423,7 @@
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
-            "invitation",
-            "trustFrameworkKeySet",
-            "trustFrameworkPolicy"
+            "invitation"
           ],
           "childNodes": [
             {
@@ -1460,6 +1467,14 @@
               ]
             },
             {
+              "name": "Azure AD B2C IEF",
+              "resources": [
+                "trustFrameworkKeyset",
+                "trustFrameworkKey_v2",
+                "trustFrameworkPolicy"
+              ]
+            },
+            {
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
@@ -1497,6 +1512,15 @@
               "resources": [
                 "inboundSharedUserProfile",
                 "outboundSharedUserProfile"
+              ]
+            },
+            {
+              "name": "Custom authentication extensions",
+              "resources": [
+                "customAuthenticationExtension",
+                "onAttributeCollectionStartCustomExtension",
+                "onAttributeCollectionSubmitCustomExtension",
+                "onTokenIssuanceStartCustomExtension"
               ]
             },
             {
