@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: purgeData"
-description: "Delete Mailbox or Microsoft Teams messages contained in an eDiscovery search."
+description: "Delete Mailbox items or Microsoft Teams messages contained in an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 Delete Mailbox items or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
->**Note:** This request purges upto 100 items only per location.
+>**Note:** This request purges a maximum of 100 items per location only.
 
 You can collect and purge the following categories of Teams content:
 - **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people. Teams 1:1 chats are also called *conversations*.
