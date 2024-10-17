@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframeworkkey_v2_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkey_v2-get-permissions.md)]
 
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
+
 ## HTTP request
 
 <!-- {

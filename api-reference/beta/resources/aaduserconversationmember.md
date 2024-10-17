@@ -1,6 +1,6 @@
 ---
 title: "aadUserConversationMember resource type"
-description: "Represents a Microsoft Entra user in a chat or channel."
+description: "Represents a Microsoft Entra user in a team, a channel, or a chat. "
 ms.localizationpriority: high
 author: "akjo"
 ms.subservice: "teams"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md) or a [chat](chat.md). This type inherits from [conversationMember](conversationmember.md).
+Represents a Microsoft Entra user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md). 
+
+Inherits from [conversationMember](conversationmember.md).
 
 ## Methods
 
@@ -39,12 +41,12 @@ Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id| String | Read-only. Unique ID of the user.|
 |displayName| String | The display name of the user. |
-|roles| String collection | The roles of the user such as owner, member, or guest. |
-|userId| String | The GUID of the user. |
 |email| String  | The email address of the user. |
+|id| String | Read-only. Unique ID of the user.|
+|roles| String collection | The roles of the user such as owner, member, or guest. |
 |tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
+|userId| String | The GUID of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
@@ -61,16 +63,14 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "String (identifier)",
-  "roles": [
-    "String"
-  ],
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",  
   "displayName": "String",
-  "visibleHistoryStartDateTime": "String (timestamp)",
-  "userId": "String",
   "email": "String",
-  "tenantId": "String"
+  "id": "String (identifier)",
+  "roles": ["String"],
+  "tenantId": "String",
+  "userId": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
