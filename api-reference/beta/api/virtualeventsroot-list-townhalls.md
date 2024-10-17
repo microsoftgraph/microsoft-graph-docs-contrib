@@ -135,10 +135,6 @@ Content-Type: application/json
         {
           "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",
           "externalEventId": "myExternalEventId"
-        },
-        {
-          "applicationId" : "67a527ba-ef0e-4ba2-88b6-4fa5e9711757",
-          "externalEventId": "anotherExternalEventId"
         }
       ]
     }
