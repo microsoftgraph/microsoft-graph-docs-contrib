@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` and a [pageTemplate](../resources/
 ## Examples
 
 ### Example 1: Get a page template in the templates folder of a site
+
 #### Request
 
 The following example shows a request.
