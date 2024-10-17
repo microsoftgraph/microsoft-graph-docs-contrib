@@ -1,9 +1,9 @@
 ---
 title: "meetingNoteSubpoint resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a meeting note subpoint associated with a meeting note."
+author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a meeting note subpoint associated with a [meeting note](meetingnote.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|text|String|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|text|String|The text content of the meeting note subpoint.|
+|title|String|The title of the meeting note subpoint.|
 
 ## Relationships
 None.

@@ -139,6 +139,7 @@ The following table lists the prices for using Teams meeting APIs, applicable to
 | Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.003 per minute | The duration is rounded down to the nearest minute. |
 | Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.0022 per minute | The duration is rounded down to the nearest minute. |
 
+## License requirements for meeting AI Insights APIs
 
 ## Payment and billing
 

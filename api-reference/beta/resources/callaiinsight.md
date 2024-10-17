@@ -1,9 +1,9 @@
 ---
 title: "callAiInsight resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a set of AI Insights associated with an online meeting."
+author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a set of AI Insights associated with an [online meeting](onlinemeeting.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,23 +21,20 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection|Get a list of the [callAiInsight](../resources/callaiinsight.md) objects and their properties.|
-|[Create](../api/onlinemeeting-post-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md)|Create a new [callAiInsight](../resources/callaiinsight.md) object.|
-|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)|Read the properties and relationships of a [callAiInsight](../resources/callaiinsight.md) object.|
-|[Update](../api/callaiinsight-update.md)|[callAiInsight](../resources/callaiinsight.md)|Update the properties of a [callAiInsight](../resources/callaiinsight.md) object.|
-|[Delete](../api/onlinemeeting-delete-aiinsights.md)|None|Delete a [callAiInsight](../resources/callaiinsight.md) object.|
+|[List callAiInsights](../api/onlinemeeting-list-aiinsights.md)|[callAiInsight](../resources/callaiinsight.md) collection|Get a list of the [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)|Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionItems|[actionItem](../resources/actionitem.md) collection|**TODO: Add Description**|
-|callId|String|**TODO: Add Description**|
-|contentCorrelationId|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|meetingNotes|[meetingNote](../resources/meetingnote.md) collection|**TODO: Add Description**|
-|viewpoint|[callAiInsightViewPoint](../resources/callaiinsightviewpoint.md)|**TODO: Add Description**|
+|actionItems|[actionItem](../resources/actionitem.md) collection|The collection of AI-generated action items. Read-only.|
+|callId|String|The callId for the online meeting call for which the callAiInsight was generated. Read-only.|
+|contentCorrelationId|String|The uniqueId which correlates the transcript from which the insights were generated. Read-only.|
+|createdDateTime|DateTimeOffset|Date and time at which the corresponding transcript was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|endDateTime|DateTimeOffset|Date and time at which the corresponding transcription ends.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|id|String|The unique identifier for the callAiInsight entity. Read-only. Inherited from [entity](../resources/entity.md).|
+|meetingNotes|[meetingNote](../resources/meetingnote.md) collection|The collection of AI-generated meeting notes. Read-only.|
+|viewpoint|[callAiInsightViewPoint](../resources/callaiinsightviewpoint.md)|Represents the caller-specific properties of the callAiInsight entity. Read-only.|
 
 ## Relationships
 None.

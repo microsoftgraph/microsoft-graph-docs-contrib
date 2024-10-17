@@ -1,9 +1,9 @@
 ---
 title: "mentionEvent resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a mention event associated with a callAiInsightViewPoint."
+author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a mention event associated with a [callAiInsightViewPoint](callaiinsightviewpoint.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventDateTime|DateTimeOffset|**TODO: Add Description**|
-|speaker|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description**|
-|transcriptUtterance|String|**TODO: Add Description**|
+|eventDateTime|DateTimeOffset|The date and time of the mention event.|
+|speaker|[identitySet](../resources/intune-identityset.md)|The speaker who mentioned the user.|
+|transcriptUtterance|String|The utterance in the online meeting transcript which contains the mention event.|
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "callAiInsightViewPoint resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents user-specific properties of a callAiInsight."
+author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents user-specific properties of a [call AI Insight](../resources/callaiInsight.md). These properties might change based on who the caller of the API is.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mentionEvents|[mentionEvent](../resources/mentionevent.md) collection|**TODO: Add Description**|
+|mentionEvents|[mentionEvent](../resources/mentionevent.md) collection|The collection of AI-generated mention events.|
 
 ## Relationships
 None.

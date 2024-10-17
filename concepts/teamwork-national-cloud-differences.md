@@ -38,6 +38,9 @@ This section describes implementation differences in the Microsoft Graph for US 
 | **Meeting transcripts**            |                                                          |
 |[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
+| **Meeting AI Insights**            |                                                          |
+|[List AI Insights](/graph/api/onlinemeeting-list-aiinsights) | Not supported. |
+|[Get AI Insight](/graph/api/callaiinsight-get) | Not supported. |
 | **Messages**            |                                                          |
 |[Soft delete a message](/graph/api/chatmessage-softdelete) | Not supported in the GCC High and DOD Environments. |
 |[List messages in a chat](/graph/api/chat-list-messages) | The `OrderBy` OData query parameter is not supported in the GCC environment. |
@@ -71,6 +74,9 @@ Membership | Membership APIs to add and delete guests are not supported.
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
 |[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
+| **Meeting AI Insights**            |                                                          |
+|[List AI Insights](/graph/api/onlinemeeting-list-aiinsights) | Not supported. |
+|[Get AI Insight](/graph/api/callaiinsight-get) | Not supported. |
 | **HostedContent**            |                                                          |
 [Hosted Content](/graph/api/chatmessagehostedcontent-get) | APIs to manage hosted content are not supported in application context. 
 

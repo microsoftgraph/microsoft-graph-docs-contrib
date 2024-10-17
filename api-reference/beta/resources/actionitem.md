@@ -1,9 +1,9 @@
 ---
 title: "actionItem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an action item associated with a set of meeting AI Insights."
+author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an action item associated with  a [call AI Insight](callaiinsight.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerDisplayName|String|**TODO: Add Description**|
-|text|String|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|ownerDisplayName|String|The display name of the owner of the action item.|
+|text|String|The text content of the action item.|
+|title|String|The title of the action item.|
 
 ## Relationships
 None.
