@@ -34,7 +34,7 @@ GET /sites/{site-id}/pageTemplates/{page-template-id}/microsoft.graph.pageTempla
 
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query parameter to include the content of an item when you retrieve its the metadata if the item has a **canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query parameter to include the content of an item when you retrieve its metadata if the item has a **canvasLayout** relationship.
 
 
 ## Request headers
