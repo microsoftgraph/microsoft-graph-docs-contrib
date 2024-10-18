@@ -47,6 +47,7 @@ You can specify the following properties when you create an **ediscoveryHoldPoli
 |:---|:---|:---|
 |displayName|String|The display name of the legal hold policy. Required.|
 |description|String|The description of the legal hold policy. Optional.|
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. Optional. |
 
 ## Response
 
@@ -70,6 +71,7 @@ Content-Type: application/json
 {
     "displayName": "My legalHold with sources",
     "description": "Created from Graph API",
+    "contentQuery": "KQL content query",
     "userSources@odata.bind": [
         {
             "@odata.type": "microsoft.graph.security.userSource",
