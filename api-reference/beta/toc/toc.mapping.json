@@ -1649,13 +1649,13 @@
             {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
-                "identityUserFlow",
                 "b2cIdentityUserFlow",
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
