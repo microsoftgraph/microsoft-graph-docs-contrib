@@ -46,7 +46,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 To update an approval decision in PIM for groups:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/steps/{approvalStageId}
+PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}
 ```
 
 ## Request headers
