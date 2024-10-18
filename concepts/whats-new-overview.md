@@ -86,6 +86,14 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
   - [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
   - [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
 
+### Device and app management | Cloud licensing
+
+- Use the new cloud licensing [usageRight](/graph/api/resources/cloudlicensing-usageright?view=graph-rest-beta&preserve-view=true) entity that is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**. This new entity supports the following operations:
+  -  [List usage rights for a group](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
+  -  [List usage rights for a user](/graph/api/cloudlicensing-usercloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
+  -  [Get usage rights for a group or user](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true)
+- Use the **cloudLicensing** property on a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) or [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) to get their relationships with cloud licensing resources.
+
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
