@@ -428,6 +428,23 @@
           ]
         },
         {
+          "name": "Cloud licensing (preview)",
+          "overview": "../../resources/cloud-licensing-api-overview.md",
+          "keywords": [
+            "Cloud licensing",
+            "Microsoft Cloud Licensing"
+          ],
+          "resources": [
+            "microsoft.graph.cloudLicensing.usageRight"
+          ],
+          "complexTypes": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing",
+            "microsoft.graph.cloudLicensing.service"
+          ],
+          "childNodes": []
+        },
+        {
           "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
@@ -1479,7 +1496,8 @@
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate"
+                "conditionalAccessTemplate",                
+                "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
                 {
@@ -1528,6 +1546,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1613,7 +1632,6 @@
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
-                "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
@@ -1656,13 +1674,13 @@
             {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
-                "identityUserFlow",
                 "b2cIdentityUserFlow",
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]

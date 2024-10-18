@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyuserhistoryitem_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyuserhistoryitem-get-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
