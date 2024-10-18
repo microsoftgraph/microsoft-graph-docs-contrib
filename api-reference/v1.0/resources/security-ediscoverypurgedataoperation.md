@@ -35,15 +35,15 @@ None.
 |Name|Description|
 |:----|-----------|
 |recoverable|Purged data is recoverable.|
-|permanentlyDeleted|Purged data is permanently deleted.|
-|unknownFutureValue|Reserved for future options.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|permanentlyDelete|Purged data is permanently deleted.|
 
 ### purgeAreas values
 |Name|Description|
 |:----|-----------|
 |mailboxes|Purges data from Exchange mailboxes.|
 |teamsMessages|Purges Teams messages.|
-|unknownFutureValue|Reserved for future options.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
