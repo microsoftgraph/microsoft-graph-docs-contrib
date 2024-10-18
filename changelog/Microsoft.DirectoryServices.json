@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRole",
           "ChangeType": "Change",
-          "Description": "Add recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRole](https://learn.microsoft.com/graph/api/resources/directoryrole)",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRole](https://learn.microsoft.com/graph/api/resources/directoryrole)",
           "Target": "directoryRole"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRoleTemplate",
           "ChangeType": "Change",
-          "Description": "Add recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRoleTemplate](https://learn.microsoft.com/graph/api/resources/directoryroletemplate)",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRoleTemplate](https://learn.microsoft.com/graph/api/resources/directoryroletemplate)",
           "Target": "directoryRoleTemplate"
         }
       ],
