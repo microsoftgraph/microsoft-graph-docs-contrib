@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Delete customAuthenticationExtension
 Namespace: microsoft.graph
 
-Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -19,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "customauthenticationextension_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/customauthenticationextension-delete-permissions.md)]
+
+[!INCLUDE [rbac-custom-auth-ext-apis-write](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-write.md)]
 
 ## HTTP request
 

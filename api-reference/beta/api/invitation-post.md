@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. The invitation adds an external user to the organization.
+Create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. The invitation adds the external user to the organization as part of B2B collaboration. B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 
 The following options are available for creating an invitation:
 
