@@ -63,6 +63,29 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing (preview)
+  displayName: Cloud licensing, Microsoft Cloud Licensing
+  items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
+  - name: Usage right
+    items:
+    - name: Usage right
+      href: ../../resources/cloudlicensing-usageright.md
+    - name: List for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC
   items:
   - name: Overview
@@ -135,12 +158,6 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Reprovision remote action (deprecated)
-      href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action (deprecated)
-      href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action (deprecated)
-      href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
     - name: Bulk set review status (deprecated)
@@ -806,12 +823,6 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-      - name: setEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
-      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
-      - name: clearEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app

@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicy_list_partners" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicy-list-partners-permissions.md)]
 
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 
 
-[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 
 ## HTTP request
