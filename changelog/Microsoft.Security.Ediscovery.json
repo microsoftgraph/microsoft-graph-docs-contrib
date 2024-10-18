@@ -743,6 +743,32 @@
       "CreatedDateTime": "2024-10-16T21:22:16.0262082Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "legalHolds",
+          "ChangeType": "Addition",
+          "Description": "Added the **legalHolds** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-09-06T17:35:53.3172676Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
     }
   ]
 }
