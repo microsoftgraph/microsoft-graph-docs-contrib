@@ -32,7 +32,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |certificate|Binary|The public key of the certificate authority.|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate authority whether `root` or `intermediate`. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
 |createdDateTime|DateTimeOffset|The date and time when the certificate authority was created.|
 |deletedDateTime|DateTimeOffset|The date and time when the certificate authority was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
@@ -40,7 +40,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |displayName|String|The display name of the certificate authority.|
 |expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires.|
 |id|String|The id of the certificate authority. Inherited from [entity](../resources/entity.md).|
-|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it's presented to the user in the certificate picker to be used for authentication. `false` by default.|
+|isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
 |issuer|String|The issuer of the certificate authority.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority.|
 |thumbprint|String|The thumbprint of certificate authority certificate.|

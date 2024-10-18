@@ -62,7 +62,7 @@ You can specify the following properties when creating a **certificateAuthorityD
 |thumbprint|String|The thumbprint of certificate authority certificate. Required.|
 |certificateRevocationListUrl|String| The URL to check if the certificate is revoked. Optional.|
 |deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
-|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it is presented to the user in the certificate picker to be used for authentication. `false` by default. Optional.|
+|isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
 
 
 
