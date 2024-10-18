@@ -19,7 +19,7 @@ Represents the external information for a [virtual event](../resources/virtualev
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationId|String| TODO: PLACEHOLDER DESCRIPTION|
+|applicationId|String| TODO: PLACEHOLDER DESCRIPTION. READ ONLY.|
 |externalEventId|String| TODO: PLACEHOLDER DESCRIPTION i.e. The identifier for a **virtualEventExternalInformation** object. Optional. If set, the maximum supported length is 256 characters.|
 
 ## Relationships
