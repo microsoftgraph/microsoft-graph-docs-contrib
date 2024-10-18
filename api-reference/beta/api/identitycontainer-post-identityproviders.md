@@ -442,7 +442,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-oidcidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-applemanagedidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)

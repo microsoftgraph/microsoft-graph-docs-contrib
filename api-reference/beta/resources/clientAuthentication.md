@@ -1,7 +1,7 @@
 ---
 title: "clientAuthentication resource type"
 description: "Client authentication information."
-author: "amshenou"
+author: "amir-shenouda"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
