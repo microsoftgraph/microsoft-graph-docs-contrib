@@ -43,7 +43,27 @@ A subscription for `update` changes includes an initial notification when the re
 
 The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
-### Example 2: Subscription notification
+### Example 2: Subscription request filtered by participant Entra Object ID
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
+  "resource": "/communications/callRecords?$filter=participants/any(p:p/id eq '{Entra object id}')",
+  "expirationDateTime": "2023-02-28T00:00:00.0000000Z",
+  "clientState": "{Secret client state}"
+}
+```
+
+Change notifications for call records can be optionally filtered by participant Entra Object ID. By specifying this filter, change notifications will only be sent when a call participant's Entra Object ID is included in the filter parameter.
+
+This filter supports `eq`, `or`, and `in` operators on the `participants` collection of a callRecord resource. For more details on using $filter, see [Use the $filter query parameter](/graph/filter-query-parameter).
+
+### Example 3: Subscription notification
 ```json
 {
     "value":[{
