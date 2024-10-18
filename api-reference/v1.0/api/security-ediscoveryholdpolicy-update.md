@@ -10,8 +10,6 @@ doc_type: "apiPageType"
 # Update ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

@@ -10,8 +10,6 @@ doc_type: "apiPageType"
 # Get ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

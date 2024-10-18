@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List siteSources
 Namespace: microsoft.graph.security
 
-
-
 Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

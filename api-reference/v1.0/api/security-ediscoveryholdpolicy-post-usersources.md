@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create userSource
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [userSource](../resources/security-usersource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

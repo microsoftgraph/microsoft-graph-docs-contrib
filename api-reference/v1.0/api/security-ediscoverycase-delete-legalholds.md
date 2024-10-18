@@ -10,8 +10,6 @@ doc_type: "apiPageType"
 # Delete ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

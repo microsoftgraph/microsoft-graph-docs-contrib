@@ -10,8 +10,6 @@ doc_type: "apiPageType"
 # Create ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
