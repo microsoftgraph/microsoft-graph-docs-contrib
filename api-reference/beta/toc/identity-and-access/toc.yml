@@ -2022,10 +2022,6 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
-    - name: On attribute collection start listener
-      href: ../../resources/onattributecollectionstartlistener.md
-    - name: On attribute collection submit listener
-      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On interactive auth flow start listener
@@ -2223,6 +2219,52 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
+  - name: Azure AD B2C IEF
+    items:
+    - name: Trust framework key set
+      items:
+      - name: Trust framework key set
+        href: ../../resources/trustframeworkkeyset.md
+      - name: List
+        href: ../../api/trustframework-list-keysets.md
+      - name: Create
+        href: ../../api/trustframework-post-keysets.md
+      - name: Get
+        href: ../../api/trustframeworkkeyset-get.md
+      - name: Update
+        href: ../../api/trustframeworkkeyset-update.md
+      - name: Generate key
+        href: ../../api/trustframeworkkeyset-generatekey.md
+      - name: Upload secret
+        href: ../../api/trustframeworkkeyset-uploadsecret.md
+      - name: Get active key
+        href: ../../api/trustframeworkkeyset-getactivekey.md
+      - name: Upload X.509 certificate
+        href: ../../api/trustframeworkkeyset-uploadcertificate.md
+      - name: Upload PKCS12 certificate
+        href: ../../api/trustframeworkkeyset-uploadpkcs12.md
+    - name: Trust framework key v2
+      items:
+      - name: Trust framework key v2
+        href: ../../resources/trustFrameworkkey_v2.md
+      - name: Get
+        href: ../../api/trustframeworkkey_v2-get.md
+      - name: Update
+        href: ../../api/trustframeworkkey_v2-update.md
+    - name: Trust framework policy
+      items:
+      - name: Trust framework policy
+        href: ../../resources/trustframeworkpolicy.md
+      - name: Create
+        href: ../../api/trustframework-post-trustframeworkpolicy.md
+      - name: Get
+        href: ../../api/trustframeworkpolicy-get.md
+      - name: List
+        href: ../../api/trustframework-list-trustframeworkpolicies.md
+      - name: Update
+        href: ../../api/trustframework-put-trustframeworkpolicy.md
+      - name: Delete
+        href: ../../api/trustframeworkpolicy-delete.md
   - name: Certificate-based auth configuration
     displayName: CBA
     items:
@@ -2964,42 +3006,6 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Trust framework key set
-    items:
-    - name: Trust framework key set
-      href: ../../resources/trustframeworkkeyset.md
-    - name: List
-      href: ../../api/trustframework-list-keysets.md
-    - name: Create
-      href: ../../api/trustframework-post-keysets.md
-    - name: Get
-      href: ../../api/trustframeworkkeyset-get.md
-    - name: Update
-      href: ../../api/trustframeworkkeyset-update.md
-    - name: Generate key
-      href: ../../api/trustframeworkkeyset-generatekey.md
-    - name: Upload secret
-      href: ../../api/trustframeworkkeyset-uploadsecret.md
-    - name: Get active key
-      href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload X.509 certificate
-      href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: Upload PKCS12 certificate
-      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
-  - name: Trust framework policy
-    items:
-    - name: Trust framework policy
-      href: ../../resources/trustframeworkpolicy.md
-    - name: Create
-      href: ../../api/trustframework-post-trustframeworkpolicy.md
-    - name: Get
-      href: ../../api/trustframeworkpolicy-get.md
-    - name: List
-      href: ../../api/trustframework-list-trustframeworkpolicies.md
-    - name: Update
-      href: ../../api/trustframework-put-trustframeworkpolicy.md
-    - name: Delete
-      href: ../../api/trustframeworkpolicy-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow

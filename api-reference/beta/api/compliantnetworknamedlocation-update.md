@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

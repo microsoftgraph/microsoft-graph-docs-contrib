@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyuser_confirmcompromised" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyuser-confirmcompromised-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 
