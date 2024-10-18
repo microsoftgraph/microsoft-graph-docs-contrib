@@ -119,6 +119,7 @@ items:
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
 - name: Protection units bulk addition job
   href: ../../resources/protectionunitsbulkjobbase.md
+- name: Protection units bulk job
   items:
   - name: Drive protection units bulk addition job
     items:
