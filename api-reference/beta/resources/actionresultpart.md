@@ -1,6 +1,6 @@
 ---
 title: "actionResultPart resource type"
-description: "Abstract type to model responses of bulk operations."
+description: "An abstract type that serves as a base to model responses of bulk operations."
 author: "AkJo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -43,6 +43,7 @@ The following JSON representation shows the resource type.
 
 - [aadUserConversationMemberResult](aaduserconversationmemberresult.md)
 - [Add members in bulk to a team](../api/conversationmembers-add.md)
+- [Remove members in bulk from a team](../api/conversationmember-remove.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
