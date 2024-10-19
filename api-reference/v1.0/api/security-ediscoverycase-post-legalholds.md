@@ -56,7 +56,6 @@ If successful, this method returns a `201 Created` response code and an [microso
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryholdpolicy_from_"
@@ -86,8 +85,6 @@ Content-Type: application/json
     ]
 }
 ```
-
----
 
 ### Response
 The following example shows the response.

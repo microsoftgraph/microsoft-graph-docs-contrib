@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code and an updat
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryholdpolicy"
@@ -67,8 +66,6 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
     "description": "updated description",
 }
 ```
-
----
 
 ### Response
 The following example shows the response.

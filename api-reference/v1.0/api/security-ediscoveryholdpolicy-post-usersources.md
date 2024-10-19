@@ -56,7 +56,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_and_include_sources"
@@ -71,8 +70,6 @@ Content-Type: application/json
     "includedSources": "mailbox, site"
 }
 ```
-
----
 
 ### Response
 The following example shows the response.
