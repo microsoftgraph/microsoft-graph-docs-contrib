@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the entra resource related to access to Microsoft Entra settings.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 None.
