@@ -38,7 +38,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification to the rule.|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
-|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### mailboxExpression examples
 
@@ -53,7 +53,6 @@ The following table shows the possible formats for the mailbox expression.
 
 |Member | Description |
 |:------|:------------|
-|draft | The initial status of the protection rule upon creation.|
 |active | The status of the protection rule upon using the `/run` API.|
 |completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
