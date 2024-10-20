@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/uxsetting-get.md)||[uxSetting](../resources/uxsetting.md)|Get the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
+|[Get](../api/uxsetting-get.md)|[uxSetting](../resources/uxsetting.md)|Get the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
 |[Update](../api/uxsetting-update.md)|None|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
 
 ## Properties
