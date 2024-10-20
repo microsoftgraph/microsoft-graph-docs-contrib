@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "entra",
           "ChangeType": "Addition",
-          "Description": "Added the [entra](https://learn.microsoft.com/en-us/graph/api/resources/entra?view=graph-rest-beta) resource.",
+          "Description": "Added the [entra](https://learn.microsoft.com/en-us/graph/api/resources/entra?view=graph-rest-beta) resource type.",
           "Target": "entra"
         },
         {
@@ -23,14 +23,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "uxSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [uxSetting](https://learn.microsoft.com/en-us/graph/api/resources/uxSetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [uxSetting](https://learn.microsoft.com/en-us/graph/api/resources/uxSetting?view=graph-rest-beta) resource and supported methods.",
           "Target": "uxSetting"
         }
       ],
       "Id": "d52616ae-d7cc-4833-bf29-0150cf92f7d7",
       "Cloud": "Review",
       "Version": "beta",
-      "CreatedDateTime": "2024-07-12T18:40:06.1552249Z",
+      "CreatedDateTime": "2024-10-20T18:40:06.1552249Z",
       "WorkloadArea": "Microsoft.MAUXServices",
       "SubArea": ""
     }
