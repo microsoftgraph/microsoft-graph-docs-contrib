@@ -18,17 +18,20 @@ Represents settings related to access to the Microsoft Entra admin center.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/entra-list-uxsetting.md)||[uxSetting](../resources/uxsetting.md)|Read the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
-|[Update](../api/entra-post-uxsetting.md)|[uxSetting](../resources/uxsetting.md)|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
+|[Get](../api/uxsetting-get.md)||[uxSetting](../resources/uxsetting.md)|Get the properties and relationships of a [uxSetting](../resources/uxsetting.md) object.|
+|[Update](../api/uxsetting-update.md)|None|Update the properties of a [uxSetting](../resources/uxsetting.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `false`, `true`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
