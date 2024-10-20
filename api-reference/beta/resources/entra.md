@@ -1,6 +1,6 @@
 ---
 title: "entra resource type"
-description: "Entra resource type"
+description: "Represents the entra resource related to access to Microsoft Entra settings."
 author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -13,24 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entra resource relating to access to Microsoft Entra Settings.
-
-
-Inherits from [entity](../resources/entity.md).
+Represents the entra resource related to access to Microsoft Entra settings.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List uxSetting](../api/entra-list-uxsetting.md)|[uxSetting](../resources/uxsetting.md) collection|Get the uxSetting resources from the uxSetting navigation property.|
-|[Create uxSetting](../api/entra-post-uxsetting.md)|[uxSetting](../resources/uxsetting.md)|Create a new uxSetting object.|
+
+None.
 
 ## Properties
-None
+
+None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|uxSetting|[uxSetting](../resources/uxsetting.md)|Represents settings relating to access to the Microsoft Entra admin center.|
+|uxSetting|[uxSetting](../resources/uxsetting.md)|Represents settings related to access to the Microsoft Entra admin center.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -48,4 +45,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-
