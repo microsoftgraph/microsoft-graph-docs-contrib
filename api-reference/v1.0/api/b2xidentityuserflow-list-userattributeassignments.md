@@ -21,6 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "b2xidentityuserflow_list_userattributeassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-list-userattributeassignments-permissions.md)]
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
