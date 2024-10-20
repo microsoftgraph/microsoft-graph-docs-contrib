@@ -1,6 +1,6 @@
 ---
 title: "uxSetting resource type"
-description: "UXSetting resource Type"
+description: "Represents settings related to access to the Microsoft Entra admin center."
 author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings relating to access to the Microsoft Entra admin center. 
+Represents settings related to access to the Microsoft Entra admin center. 
 
 ## Methods
 |Method|Return type|Description|
@@ -24,13 +24,15 @@ Represents settings relating to access to the Microsoft Entra admin center.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators  who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `true`, `false`, `unknownFutureValue`.|
+|restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `false`, `true`, `unknownFutureValue`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource type.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -44,4 +46,3 @@ The following is a JSON representation of the resource type.
   "restrictNonAdminAccess": "String"
 }
 ```
-
