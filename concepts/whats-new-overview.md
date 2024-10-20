@@ -28,7 +28,6 @@ Updated the endpoints of the following methods:
 ### Identity and access | Directory management
 
 [Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
-Get or update the [uxsetting](/graph/api/resources/uxsetting) that restricts access to Microsoft Entra admin center to only administrators.
 
 ### Teamwork and communications | Apps
 
@@ -67,7 +66,7 @@ Updated the endpoints of the following methods:
 
 ### Identity and access | Directory management
 
-Get or update the [uxSetting](/graph/api/resources/uxsetting) that restricts access to Microsoft Entra admin center to only administrators.
+Get or update the [uxSetting](/graph/api/resources/uxsetting?view=graph-rest-beta&preserve-view=true) that restricts access to Microsoft Entra admin center to only administrators.
 
 ### Reports | Identity and access reports
 
