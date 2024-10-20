@@ -34,7 +34,6 @@ Get or update the [uxsetting](/graph/api/resources/uxsetting) that restricts acc
 
 Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
 
-
 ### Teamwork and communications | Messaging
 
 Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
@@ -65,6 +64,10 @@ Updated the endpoints of the following methods:
 
 - Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
 - Use the **notificationSetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcnotificationsetting?view=graph-rest-beta&preserve-view=true) to define the Cloud PC notification prompts for a Cloud PC user.
+
+### Identity and access | Directory management
+
+Get or update the [uxSetting](/graph/api/resources/uxsetting) that restricts access to Microsoft Entra admin center to only administrators.
 
 ### Reports | Identity and access reports
 
