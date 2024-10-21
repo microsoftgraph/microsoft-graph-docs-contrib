@@ -61,7 +61,7 @@ The following example shows how to archive a site.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/archive
+POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740/archive
 ```
 
 ### Response

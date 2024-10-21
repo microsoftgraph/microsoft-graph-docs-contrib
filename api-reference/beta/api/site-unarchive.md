@@ -62,7 +62,7 @@ The following example shows how to unarchive a site.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/unarchive
+POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740/unarchive
 ```
 
 ### Response
@@ -76,5 +76,5 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/sites/{site-id}
+Location: https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740
 ```
