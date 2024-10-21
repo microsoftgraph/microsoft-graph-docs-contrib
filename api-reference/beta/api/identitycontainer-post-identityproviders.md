@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create an identity provider object that is of the type specified in the request body.
 
-Among the types of providers derived from identityProviderBase, you can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,7 +44,7 @@ POST /identity/identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Microsoft Entra ID.
+In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in Microsoft Entra External ID.
 
 In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
 
@@ -57,7 +57,30 @@ All the properties listed in the following tables are required.
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
+|identityProviderType|String|For a Microsoft Entra External ID tenant, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
+
+### appleIdentityProvider object
+
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|developerId|String|The Apple developer identifier.|
+|serviceId|String|The Apple service identifier.|
+|keyId|String|The Apple key identifier.|
+|certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
+
+### oidcIdentityProvider
+
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
+|issuer|String|The issuer url.|
+|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
+|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
+|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
+|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
+|inboundClaimMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
 
 ### openIdConnectIdentityProvider object
 
@@ -72,28 +95,6 @@ All the properties listed in the following tables are required.
 |responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`.|
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
-
-### appleIdentityProvider object
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The display name of the identity provider.|
-|developerId|String|The Apple developer identifier.|
-|serviceId|String|The Apple service identifier.|
-|keyId|String|The Apple key identifier.|
-|certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
-
-### oidcIdentityProvider
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The display name of the identity provider.|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
-|issuer|String|The issuer url.|
-|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
-|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
-|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
-|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
 
 ## Response
 
