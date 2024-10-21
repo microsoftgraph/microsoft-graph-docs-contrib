@@ -23,7 +23,7 @@ The approval app APIs in Microsoft Graph enable the following use cases:
 
 **Track and report**: The API can be used to track the status of approval requests and generate reports on approval activities. Tracking and reporting can help organizations maintain awareness of pending approvals, monitor the efficiency of approval processes, and ensure compliance with internal policies.
 
-**Better user experience**: By using the API, you can create custom experiences within Teams that streamline the approval process for users. For example, you can create bots that assist with creating and managing approvals. You can also build custom interfaces that make it easier for users to review and respond to approval requests.
+**Improve user experience**: By using the API, you can create custom experiences within Teams that streamline the approval process for users. For example, you can create bots that assist with creating and managing approvals. You can also build custom interfaces that make it easier for users to review and respond to approval requests.
 
 The following table lists the APIs available across Microsoft Graph for the approvals app:
 
