@@ -933,6 +933,8 @@ items:
         href: changenotifications-for-onlinemeeting.md
       - name: Subscribe to virtual events
         href: changenotifications-for-virtualevent.md
+      - nam: Subscribe to emergency call events
+        href: changenotifications-for-emergencycallevents.md
       - name: Subscribe for call records
         href: changenotifications-for-callrecords.md
     - name: Groups and teams
