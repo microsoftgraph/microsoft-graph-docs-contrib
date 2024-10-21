@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getDeviceMetricsForOneDriveForBusinessBydownloadOnlineOnlyFiles"
