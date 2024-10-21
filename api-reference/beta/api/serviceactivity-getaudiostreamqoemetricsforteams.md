@@ -63,7 +63,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceactivitythis.getAudioStreamQoEMetricsForTeams"
+  "name": "serviceactivitythis.getaudiostreamqoemetricsforteams"
 }
 -->
 ``` http

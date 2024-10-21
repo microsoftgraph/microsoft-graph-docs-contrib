@@ -61,7 +61,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceactivitythis.getActiveUserMetricsForExcelWeb"
+  "name": "serviceactivitythis.getactiveusermetricsforexcelweb"
 }
 -->
 ``` http
