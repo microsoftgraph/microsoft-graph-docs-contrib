@@ -1,24 +1,6 @@
 {
   "changelog": [
     {
-      "ChangeList" : [
-        {
-          "Id": "ec8778bd-b624-43ae-92f9-f03362ca0331",
-          "ApiChange": "Resource",
-          "ChangedApiName": "challengingWord",
-          "ChangeType": "Addition",
-          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
-          "Target": "challengingWord"
-        }
-      ],
-      "Id": "ec8778bd-b624-43ae-92f9-f03362ca0331",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-10-21T18:32:24.5964486Z",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    },  
-    {
       "ChangeList": [
         {
           "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
@@ -59,6 +41,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-beta) resource and associated methods.",
           "Target": "reflectCheckInResponse"
+        },
+        {
+          "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "challengingWord",
+          "ChangeType": "Addition",
+          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
+          "Target": "challengingWord"
         },
         {
           "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
