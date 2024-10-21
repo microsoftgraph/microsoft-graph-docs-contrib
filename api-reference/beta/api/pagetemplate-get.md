@@ -87,7 +87,7 @@ Content-type: application/json
   "name": "Home.aspx",
   "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Home.aspx",
   "title": "Organization Home",
-  "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
+  "thumbnailWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
   "promotionKind": "page",
   "pageLayout": "home",
   "showComments": true,
@@ -114,9 +114,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a page template using $select and $expand
-
-The following example shows how to use the `$select` and `$expand` query parameters to retrieve site page metadata and page content in a single request.
+### Example 2: Get a page template using select
 
 #### Request
 
@@ -151,9 +149,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a page template with canvas content
-
-The following example shows how to use the `$expand` query parameter to access the page template and its content with `?$expand=canvasLayout`.
+### Example 3: Get a page template with canvas content by using expand
 
 #### Request
 
@@ -187,7 +183,7 @@ Content-type: application/json
   "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
   "lastModifiedDateTime": "2023-04-16T10:01:41Z",
   "name": "autotest Electronic Convertible.aspx",
-  "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/autotest Electronic Convertible.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/Home.aspx",
   "title": "autotest Electronic Convertible",
   "pageLayout": "article",
   "thumbnailWebUrl": "https://media.contoso.odsp.cdn.office.net/sitepagethumbnail.png",
