@@ -304,9 +304,9 @@ items:
       href: ../../api/security-ediscoverycustodian-list-sitesources.md
     - name: Create site source
       href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unitifed group sources
+    - name: List unified group sources
       href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unifed group source
+    - name: Create unified group source
       href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
     - name: List user sources
       href: ../../api/security-ediscoverycustodian-list-usersources.md
