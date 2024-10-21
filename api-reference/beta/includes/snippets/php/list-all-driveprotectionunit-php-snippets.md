@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->solutions()->backupRestore()->driveProtectionUnits()->get()->wait();
+$result = $graphServiceClient->solutions()->backupRestore()->protectionUnits()->byProtectionUnitBaseId('protectionUnitBase-id')->get()->wait();
 
 ```
