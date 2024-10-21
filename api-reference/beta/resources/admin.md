@@ -24,7 +24,7 @@ Represents an entity that acts as a container for administrator functionality.
 |Relationship|Type|Description|
 |:---|:---|:---|
 | edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
-| entra | [entra](entra.md) | TODO |
+| entra | [entra](entra.md) | A container for Microsoft Entra resources. Read-only. |
 | microsoft365Apps |[adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for the Microsoft 365 apps admin functionality.|
 | people | [peopleAdminSettings](../resources/peopleadminsettings.md) | Represents a setting to control people-related admin settings in the tenant. |
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
