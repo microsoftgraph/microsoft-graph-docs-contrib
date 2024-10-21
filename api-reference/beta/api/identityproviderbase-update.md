@@ -81,7 +81,7 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |keyId|String|The Apple key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
-### customOidcIdentityProvider
+### oidcIdentityProvider
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|

@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
 
-For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
+For a workforce tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+For an external tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [builtinIdentityProviders](../resources/builtinidentityprovider.md), [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#oidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
-For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#customoidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+For an Azure AD B2C tenants, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for a Microsoft Entra tenant.
+If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#oidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects in the response body for a Microsoft Entra External ID tenants.
 
 For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects in the response body.
 
@@ -226,14 +226,14 @@ Content-type: application/json
             "id": "LinkedIn-OAUTH",
             "displayName": "linkedin",
             "identityProviderType": "LinkedIn",
-            "clientId": "866xc0qtyy00ih",
+            "clientId": "contoso",
             "clientSecret": "******"
         },
         {
             "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
-            "id": "OIDC-V1-rtt_AD_Test-3e393390-ed2d-4794-97f6-5c1a1ccc61f7",
-            "displayName": "OIDC AD Test",
-            "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
+            "id": "OIDC-V1-rtt_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444",
+            "displayName": "Contoso",
+            "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "clientSecret": "******",
             "scope": "openid",
             "metadataUrl": "https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration",
@@ -252,9 +252,9 @@ Content-type: application/json
             "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
             "id": "Apple-Managed-OIDC",
             "displayName": "Sign in with Apple",
-            "developerId": "UBF8T346G9",
+            "developerId": "contoso-dev",
             "serviceId": "com.microsoft.aad.b2c.iuyt.client",
-            "keyId": "99P6DD87C4",
+            "keyId": "contoso-key",
             "certificateData": "******"
         }
     ]
@@ -358,10 +358,10 @@ Content-type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.OidcIdentityProvider",
-            "displayName": "B2C Test",
-            "clientId": "e2ea5db9-545a-491f-a881-37690ee12c79",
-            "issuer": "https://contos.b2clogin.com/b07624bf-a5cd-47be-97e4-42702c46c74e/v2.0/",
-            "wellKnownEndpoint": "https://contoso.b2clogin.com/contos.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
+            "displayName": "Contoso Test",
+            "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+            "issuer": "https://contoso.b2clogin.com/00001111-aaaa-2222-bbbb-3333cccc4444/v2.0/",
+            "wellKnownEndpoint": "https://contoso.b2clogin.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
             "responseType": "code",
             "scope": "openid profile email offline_access",
             "clientAuthentication": {
