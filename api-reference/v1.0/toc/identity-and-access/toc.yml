@@ -1439,20 +1439,32 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
-  - name: Authentication event listener
+  - name: Authentication event listeners
     items:
     - name: Authentication event listener
-      href: ../../resources/authenticationeventlistener.md
-    - name: List
-      href: ../../api/identitycontainer-list-authenticationeventlisteners.md
-    - name: Create
-      href: ../../api/identitycontainer-post-authenticationeventlisteners.md
-    - name: Get
-      href: ../../api/authenticationeventlistener-get.md
-    - name: Update
-      href: ../../api/authenticationeventlistener-update.md
-    - name: Delete
-      href: ../../api/authenticationeventlistener-delete.md
+      items:
+      - name: Authentication event listener
+        href: ../../resources/authenticationeventlistener.md
+      - name: List
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On attribute collection listener
+      href: ../../resources/onattributecollectionlistener.md
+    - name: On authentication method load start listener
+      href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On interactive auth flow start listener
+      href: ../../resources/oninteractiveauthflowstartlistener.md
+    - name: On token issuance start listener
+      href: ../../resources/ontokenissuancestartlistener.md
+    - name: On user create start listener
+      href: ../../resources/onusercreatestartlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1745,20 +1757,6 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
   - name: Custom authentication extension
     items:
-    - name: Custom authentication extension
-      href: ../../resources/customauthenticationextension.md
-    - name: List
-      href: ../../api/identitycontainer-list-customauthenticationextensions.md
-    - name: Create
-      href: ../../api/identitycontainer-post-customauthenticationextensions.md
-    - name: Get
-      href: ../../api/customauthenticationextension-get.md
-    - name: Update
-      href: ../../api/customauthenticationextension-update.md
-    - name: Delete
-      href: ../../api/customauthenticationextension-delete.md
-    - name: Validate authentication configuration
-      href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
@@ -1793,6 +1791,12 @@ items:
         href: ../../api/riskyuser-confirmcompromised.md
       - name: Dismiss
         href: ../../api/riskyuser-dismiss.md
+      - name: List history
+        href: ../../api/riskyuser-list-history.md
+    - name: Risky user history item
+      items:
+      - name: Risky user history item
+        href: ../../resources/riskyuserhistoryitem.md
       - name: List history
         href: ../../api/riskyuser-list-history.md
     - name: Service principal risk detection
@@ -2328,6 +2332,8 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
+    - name: User flows in Azure AD B2C (deprecated)
+      href: ../../resources/identityuserflow.md
 - name: Granular delegated admin privileges
   displayName: GDAP, Partner Center, CSP, VAR
   items:

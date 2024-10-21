@@ -55,7 +55,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/threatSubmission/fileThreatSubmissions
+POST https://graph.microsoft.com/beta/security/threatSubmission/fileThreats
 Content-type: application/json
 
 {
