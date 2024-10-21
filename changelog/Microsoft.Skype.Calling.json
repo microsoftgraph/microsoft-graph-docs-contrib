@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2b269909-e7ee-44ad-ab23-6404a88e305e",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "2b269909-e7ee-44ad-ab23-6404a88e305e",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-18T19:59:02.0963459Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fb938090-d30e-4a1c-9dc8-c0539c172233",
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventExternalRegistrationInformation",
