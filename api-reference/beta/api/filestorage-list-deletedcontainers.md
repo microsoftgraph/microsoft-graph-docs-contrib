@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /deletedStorageContainers?$filter=containerTypeId eq {containerTypeId}
+GET /storage/fileStorage/deletedContainers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ## Query parameters
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET  https://graph.microsoft.com/beta/deletedStorageContainers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
+GET  https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 
 
