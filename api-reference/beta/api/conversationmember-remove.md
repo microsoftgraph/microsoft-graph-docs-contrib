@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove multiple members from a [team](../resources/team.md) in a single request. The response provides details about which memberships could and couldn't be removed.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
