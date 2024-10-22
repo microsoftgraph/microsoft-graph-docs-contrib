@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectiors, Microsoft 365 Copilot, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
   - name: Metered APIs
     items:
     - name: Overview
