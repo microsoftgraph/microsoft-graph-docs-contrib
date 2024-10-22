@@ -1,19 +1,19 @@
 ---
-title: "CloudPcBulkAction: retry"
-description: "Retry on the Cloud PC bulk action object."
+title: "cloudPcBulkAction: retry"
+description: "Retry a cloudPcBulkAction object with selected Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# CloudPcBulkAction: retry
+# cloudPcBulkAction: retry
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retry on a give [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object with selected Cloud PCs. 
+Retry a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object with selected Cloud PCs. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,11 +46,11 @@ POST /deviceManagement/virtualEndpoint/bulkAction/{id}/retry
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|A list of the IDs for the Cloud PC devices that are to be retried for the give bulk action. This is optional, if not give, will retry all failed devices.|
+|cloudPcIds|String collection|A list of IDs for the Cloud PC devices to be retried for the given bulk action. This is optional; if not provided, all failed devices are retried.|
 
 ## Response
 
@@ -60,12 +60,13 @@ If successful, this method returns a `202 Accepted` response code.
 
 ### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpcbulkaction_retry"
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/{id}/retry
 Content-Type: application/json
@@ -81,12 +82,13 @@ Content-Type: application/json
 
 ### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-
 ``` http
 HTTP/1.1 202 Accepted
 ```
