@@ -9,9 +9,9 @@ ms.date: 07/10/2024
 
 # Approvals app APIs
 
-The Approvals app in Microsoft Teams is a native application that allows users to create, manage, and share approval requests directly from their Teams environment. It integrates with Power Automate to streamline workflows and bring auditing, compliance, and accountability into both structured and unstructured approval processes.
+The approvals app in Microsoft Teams is a native application that allows users to create, manage, and share approval requests directly from their Teams environment. It integrates with Power Automate to streamline workflows and bring auditing, compliance, and accountability into both structured and unstructured approval processes.
 
-The approvals app API allows you to integrate approval workflows into both Teams app and non-Microsoft apps. You can create new approvals, update existing ones, and list all approvals. The API enables you to: create, update, and list approvals; assign approvals to users; specify custom responses; and receive notifications in Teams. As these APIs support graph subscriptions, you can send notifications for approval responses. The Approvals app is available as a personal app for all Teams users.
+The approvals app API allows you to integrate approval workflows into both Teams app and non-Microsoft apps. You can create new approvals, update existing ones, and list all approvals. The API enables you to: create, update, and list approvals; assign approvals to users; specify custom responses; and receive notifications in Teams. As these APIs support graph subscriptions, you can send notifications for approval responses. The approvals app is available as a personal app for all Teams users.
 
 The approval app APIs in Microsoft Graph enable the following use cases:
 
@@ -36,9 +36,9 @@ The following table lists the APIs available across Microsoft Graph for the appr
 | [Approval item view point](/graph/api/resources/approvalitemviewpoint?view=graph-rest-beta&preserve-view=true) |Represents the user's roles for an `approvalItem`.|
 | [Approval operation](/graph/api/resources/approvaloperation?view=graph-rest-beta&preserve-view=true) | Represents the status and details for an operation performed on `approvalItem`.|
 
-## Key benefits of the Approvals app
+## Key benefits of the approvals app
 
-The Approvals app centralizes and simplifies the approval of expense requests, project requests, task requests, and more. The following list explains some of the benefits that result:
+The approvals app centralizes and simplifies the approval of expense requests, project requests, task requests, and more. The following list explains some of the benefits that result:
 
 * Reduces time and effort required to manage approvals by automating the workflow and notification process.
 * Centralizes tracking, management, and auditing, which offers greater transparency into the approval process.
