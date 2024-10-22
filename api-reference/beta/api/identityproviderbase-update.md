@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Update the properties of the specified identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource in Microsoft Entra External ID.
+
+In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -92,7 +94,7 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 |clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+|claimsMapping|[inboundclaimMapping](../resources/inboundclaimmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
 
 ## Response
 
@@ -190,12 +192,12 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider_forAzure_AD_B2C",
-  "sampleKeys": ["OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7"]
+  "sampleKeys": ["OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444"]
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444
 Content-type: application/json
 
 {
@@ -341,8 +343,8 @@ PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDCIdentityPr
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.socialIdentityProvider",
-  "displayName": "Apple"
+  "@odata.type": "#microsoft.graph.oidcIdentityProvider",
+  "displayName": "Contoso"
 }
 ```
 

@@ -34,7 +34,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.inboundClaimMapping"
+  "@odata.type": "microsoft.graph.address"
 }
 -->
 

@@ -17,6 +17,7 @@ In OpenID Connect protocol, claims are used to communicate information about the
 You can configure the standard OpenID Connect (OIDC) claims with the claims your identity provider provides in the ID Token.
 
 ## Properties
+
 |Property|User flow attribute|Type|Description|
 |:-------|-----|:---|:----------|
 |sub|N/A|String|Subject - Identifier for the end-user at the Issuer.|

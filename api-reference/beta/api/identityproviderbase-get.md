@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider),  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Microsoft Entra External ID.
+
+In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -48,9 +50,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for a Microsoft Entra tenant.
+If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider),  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for a Microsoft Entra tenant.
 
-For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) object in the response body.
 
 ## Examples
 
@@ -127,7 +129,7 @@ Content-type: application/json
     "id": "Amazon-OAUTH",
     "displayName": "Amazon",
     "identityProviderType": "Amazon",
-    "clientId": "09876545678908765978678",
+    "clientId": "clientid",
     "clientSecret": "******"
 }
 ```
@@ -276,9 +278,9 @@ Content-type: application/json
 
 {
   "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
-  "id": "OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000",
+  "id": "OIDC-V1-test-icm-00001111-aaaa-2222-bbbb-3333cccc4444",
   "displayName": "Login with the Contoso identity provider",
-  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "clientSecret": "12345",
   "claimsMapping": {
       "userId": "myUserId",
@@ -365,9 +367,9 @@ Content-type: application/json
 {
     "id": "Apple-Managed-OIDC",
     "displayName": "Sign in with Apple",
-    "developerId": "UBF8T346G9",
+    "developerId": "developerId12345",
     "serviceId": "com.microsoft.rts.b2c.test.client",
-    "keyId": "99P6D879C4",
+    "keyId": "12345",
     "certificateData": "******"
 }
 ```
@@ -442,14 +444,14 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.OidcIdentityProvider",
   "displayName": "B2C Test",
-  "clientId": "e2ea5db9-545a-491f-a881-37690ee12c79",
-  "issuer": "https://contos.b2clogin.com/b07624bf-a5cd-47be-97e4-42702c46c74e/v2.0/",
-  "wellKnownEndpoint": "https://contos.b2clogin.com/contos.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
+  "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "issuer": "https://contoso.b2clogin.com/00001111-aaaa-2222-bbbb-3333cccc4444/v2.0/",
+  "wellKnownEndpoint": "https://contoso.b2clogin.com/contoso.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1A_SIGNINEMAIL",
   "responseType": "code",
   "scope": "openid profile email offline_access",
   "clientAuthentication": {
     "@odata.type": "#microsoft.graph.OIDCClientSecretAuthentication",
-    "clientSecret": "123"
+    "clientSecret": "12345"
   },
   "inboundClaimMapping": {
     "sub": "sub",
