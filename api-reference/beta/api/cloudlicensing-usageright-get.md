@@ -83,6 +83,7 @@ The following example shows how to get a usage right for a user.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudlicensing-usageright-get-example",
@@ -92,6 +93,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudlicensing-usageright-get-example-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -130,6 +137,7 @@ The following example shows how to get a usage right for a group.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudlicensing-usageright-get-2-example",
@@ -139,6 +147,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/groups/1003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudlicensing-usageright-get-2-example-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
