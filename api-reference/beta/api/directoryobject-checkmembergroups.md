@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |
 
-### Group memberships for a user
+### Group memberships for other users
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type | Permissions (from least to most privileged) |
 |:-|:-|
