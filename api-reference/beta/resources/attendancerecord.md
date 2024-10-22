@@ -30,6 +30,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 | identity | [identity](identity.md) | Identity of the user associated with this attendance record. The specific type will be one of the following derived types of [identity](identity.md), depending on the type of the user: [communicationsUserIdentity](communicationsUserIdentity.md), [azureCommunicationServicesUserIdentity](azureCommunicationServicesUserIdentity.md). |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. (deprecated) |
+| registrationId | String | Unique identifier of a virtualEventRegistration. Presents for all participant who has registered for the virtualEventWebinar. |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
 > [!TIP]
@@ -54,6 +55,7 @@ The following JSON representation shows the resource type.
   "totalAttendanceInSeconds": "Int32",
   "role": "String(None|Attendee|Presenter|Organizer)",
   "registrantId": "String",
+  "registrationId": "String",
   "identity": {
     "@odata.type": "#microsoft.graph.identity"
   },
