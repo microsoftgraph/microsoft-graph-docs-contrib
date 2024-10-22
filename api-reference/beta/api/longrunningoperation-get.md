@@ -294,7 +294,9 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Retrieve the long running operation from Industry Data service.
+### Example 4: Retrieve a long-running operation from the industry data service
+
+The following example shows how to get a long-running operation for the industry data service.
 
 #### Request
 
@@ -311,6 +313,7 @@ GET https://graph.microsoft.com/beta/external/industryData/operations/d194fa3e-1
 #### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -332,6 +335,3 @@ Content-Type: application/json
   "statusDetail": null
 }
 ```
-
-
-
