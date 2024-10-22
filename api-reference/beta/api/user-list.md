@@ -317,7 +317,10 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
+The following example shows a request. 
+
+> [!Note]
+> Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -399,7 +402,10 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
+The following example shows a request. 
+
+> [!Note]
+> Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the `AuditLog.Read.All` permission.
 
 <!-- {
   "blockType": "ignored",
