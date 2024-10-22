@@ -437,6 +437,8 @@ items:
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
       href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
+    - name: Cloud PC bulk move
+      href: ../../resources/cloudpcbulkmove.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
