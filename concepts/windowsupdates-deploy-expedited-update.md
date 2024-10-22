@@ -35,6 +35,8 @@ Quality updates are represented by the [qualityUpdateCatalogEntry](/graph/api/re
 
 All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
 
+Hotpatch update
+
 The following example shows how to query for all Windows 10 quality updates that can be deployed as expedited updates by Windows Autopatch. We recommend to only show the three most current updates, so the following example includes `$top=3`.
 
 ### Request
