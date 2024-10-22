@@ -22,7 +22,7 @@ Configuring an identity provider in your Microsoft Entra directory enables new M
 
 In an Azure AD B2C directory, the identity provider type can be a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), all which inherit from the identityProviderBase resource type.
 
-For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), custom OIDC identoty provider or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#oidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
 Configuring an identity provider in your Entra External ID or Azure AD B2C directory enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Entra External ID or Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol (Open ID Connect is currently supported only with external tenants and Azure AD B2C).
 
