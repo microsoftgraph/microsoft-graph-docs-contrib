@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[List](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
 |[Create](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 |[Get](../api/cloudpcbulkaction-get.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Read the properties and relationships of a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
-|[Retry](../api/cloudpcbulkaction-retry.md)|None|Retry on the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
+|[Retry](../api/cloudpcbulkaction-retry.md)|None|Retry a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object with selected Cloud PCs.|
 
 ## Properties
 |Property|Type|Description|
