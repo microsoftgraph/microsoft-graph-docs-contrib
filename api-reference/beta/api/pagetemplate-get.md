@@ -114,7 +114,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a page template using select
+### Example 2: Get a page template using $select
+
+The following example shows how to use the `$select` query parameter to retrieve specific properties of a page template.
 
 #### Request
 
@@ -149,7 +151,9 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a page template with canvas content by using expand
+### Example 3: Get a page template with canvas content using $expand
+
+The following example shows how to use the `$expand` query parameter to access the page template and its content with `?$expand=canvasLayout`.
 
 #### Request
 
@@ -261,7 +265,6 @@ Content-type: application/json
   }
 }
 ```
-
 
 <!--
 {
