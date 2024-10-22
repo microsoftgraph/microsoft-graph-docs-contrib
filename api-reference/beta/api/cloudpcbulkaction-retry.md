@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/{id}/retry
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/0d76d02b-e0a0-4f58-baff-d1718cc2d144/retry
 Content-Type: application/json
 
 {
