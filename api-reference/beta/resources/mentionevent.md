@@ -3,7 +3,7 @@ title: "mentionEvent resource type"
 description: "Represents a mention event associated with a callAiInsightViewPoint."
 author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Represents a mention event associated with a [callAiInsightViewPoint](callaiinsi
 |Property|Type|Description|
 |:---|:---|:---|
 |eventDateTime|DateTimeOffset|The date and time of the mention event.|
-|speaker|[identitySet](../resources/intune-identityset.md)|The speaker who mentioned the user.|
+|speaker|[identitySet](identityset.md)|The speaker who mentioned the user.|
 |transcriptUtterance|String|The utterance in the online meeting transcript which contains the mention event.|
 
 ## Relationships

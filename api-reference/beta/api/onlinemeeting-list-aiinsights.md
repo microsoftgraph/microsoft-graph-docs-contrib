@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callAiInsights](../resources/callaiinsights.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call AI insights from channel meetings. 
+Get the list of [callAiInsights](../resources/callaiinsight.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call AI insights from channel meetings. 
 
 > [!NOTE]
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callAiInsights](../resources/callaiinsights.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callAiInsights](../resources/callaiinsight.md) objects in the response body.
 
 ## Examples
 

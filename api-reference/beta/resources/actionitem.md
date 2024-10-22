@@ -3,7 +3,7 @@ title: "actionItem resource type"
 description: "Represents an action item associated with a set of meeting AI Insights."
 author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "meetingNoteSubpoint resource type"
 description: "Represents a meeting note subpoint associated with a meeting note."
 author: "Anjali-Patle"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

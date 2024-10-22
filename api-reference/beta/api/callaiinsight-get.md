@@ -84,7 +84,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_callAiInsight",
-  "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy", "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc"]
+  "sampleKeys": ["b935e675-5e67-48b9-8d45-249d5f88e964", "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy", "VjEjI1NQT0BhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMsSVdGYmZhbG5ma0tKWk4tLWhOY3ZCcnVNZ2s2YmdUTk1yTTI0MVd1Rm1jZk5SUG90U0FPbFNKdEZjcVpRM1hvYkZOWW5UYXJySVUyS2NnOVpNOENqa2cjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMmRlMTE0NTdhZGU4ZGEwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMGQ0ZjRmMjNlMzFkZDFmNDlhZjc5YTM3YjRlYmFlZGQy"]
 }
 -->
 
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### Example 2: Get a callAiInsight from a corresponding transcript using contentCorrelationId
 
-The following example shows how to get a single set of AI insights of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
+The following example shows how to get a single set of AI insights of an online meeting corresponding to a [transcript](../resources/calltranscript.md) using the **contentCorrelationId** property.
 
 #### Request
 
@@ -225,65 +225,7 @@ Content-type: application/json
       "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
       "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
       "createdDateTime": "2024-05-27T08:17:10.7261294Z",
-      "endDateTime": "2024-05-27T08:32:10.7261294Z",
-      "meetingNotes": [
-        {
-          "title": "Introducing Project Objectives and Key Stakeholders",
-          "text": "The stakeholders present included representatives from each department involved in the project, ensuring alignment and clear communication channels from the start.",
-          "subpoints": [
-            {
-              "title": "Discussion on action items",
-              "text": "Action items were assigned to team members, and a follow-up meeting schedule was established."
-            }
-          ]
-        }
-      ],
-      "actionItems": [
-        {
-          "title": "Finalize Project Timeline",
-          "text": "Review and finalize the project timeline to ensure alignment with stakeholder expectations and resource availability.",
-          "ownerDisplayName": "Bella Smith",
-        },
-        {
-          "title": "Prepare Presentation Draft",
-          "text": "Draft a presentation outlining project goals, objectives, and progress updates for review by the project stakeholders.",
-          "ownerDisplayName": "Bella Smith",
-        },
-      ],
-      "viewpoint": {
-        "mentionEvents": [
-          {
-            "speaker": {
-                "application": null,
-                "device": null,
-                "user": {
-                  "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
-                  "id": "9a7608d3-53e4-4a92-804f-ef43f1e5f5b5",
-                  "displayName": "John Smith",
-                  "userIdentityType": "aadUser",
-                  "tenantId": "d1aeb56e-5a25-4d91-a4f6-0f5e6a50d887"
-                }
-            },
-            "eventDateTime": "2024-05-21T09:00:00",
-            "transcriptUtterance": "We need to get approval from Sarah Johnson before proceeding with the budget allocation."
-          },
-          {
-            "speaker": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
-                    "id": "6aeb9f22-c986-4835-9617-9e5932bc8250",
-                    "displayName": "Emily Davis",
-                    "userIdentityType": "aadUser",
-                    "tenantId": "d1aeb56e-5a25-4d91-a4f6-0f5e6a50d887"
-                }
-            },
-            "eventDateTime": "2024-05-21T09:15:00",
-            "transcriptUtterance": "Sarah Johnson suggested reaching out to potential vendors for the upcoming project."
-          }
-        ]
-      }
+      "endDateTime": "2024-05-27T08:32:10.7261294Z"
     }
   ]
 }
