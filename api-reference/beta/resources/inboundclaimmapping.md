@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-After the custom identity provider sends an ID token back to Microsoft Entra External ID, Microsoft Entra External ID maps the claims from a token to the claims that Microsoft Entra External ID recognizes and uses.
+After the custom identity provider sends the ID token back to Microsoft Entra External ID, Microsoft Entra External ID maps the claims from a token to the claims that Microsoft Entra External ID recognizes and uses.
 
 In OpenID Connect protocol, claims are used to communicate information about the end user and contains pieces of information about a user that an identity provider states inside the ID token they issue for that user. The ID Token is a security token that contains claims about the end-user. These ID token claims are used to uniquely identify and provide information about the user during sign-up. These information pieces are stored in the corresponding user attributes in the user's profile in your directory.
 You can configure the standard OpenID Connect (OIDC) claims with the claims your identity provider provides in the ID Token.
