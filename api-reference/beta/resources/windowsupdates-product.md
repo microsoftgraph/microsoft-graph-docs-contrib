@@ -3,7 +3,7 @@ title: "product resource type"
 description: "Represents a Windows product."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 

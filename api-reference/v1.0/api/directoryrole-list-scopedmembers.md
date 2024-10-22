@@ -12,6 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [List unifiedRoleAssignments](./rbacapplication-list-roleassignments.md).
+
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

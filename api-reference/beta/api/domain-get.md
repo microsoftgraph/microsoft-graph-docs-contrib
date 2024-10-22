@@ -98,10 +98,10 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 <!-- {
   "blockType": "request",
   "name": "get_domain",
-  "sampleKeys": ["contoso.com"]
+  "sampleKeys": ["woodgrovedemo.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/beta/domains/woodgrovedemo.com
 ```
 
 # [C#](#tab/csharp)
@@ -150,13 +150,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#domains/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET domains('<key>')?$select=authenticationType,availabilityStatus",
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "woodgrovedemo.com",
+    "isAdminManaged": true,
+    "isDefault": true,
+    "isInitial": true,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+        "Email",
+        "OfficeCommunicationsOnline",
+        "CustomUrlDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
 }
 ```
 

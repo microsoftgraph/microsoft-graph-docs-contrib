@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # mobileAppRelationship resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Describes a relationship between two mobile apps.
 
@@ -26,12 +26,12 @@ Describes a relationship between two mobile apps.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The relationship entity id.|
-|targetId|String|The target mobile app's app id.|
-|targetDisplayName|String|The target mobile app's display name. This property is read-only.|
-|targetDisplayVersion|String|The target mobile app's display version. This property is read-only.|
-|targetPublisher|String|The target mobile app's publisher. This property is read-only.|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. This property is read-only. Possible values are: `child`, `parent`.|
+|id|String|The unique identifier for the mobile app relationship entity. Read-Only.|
+|targetId|String|App ID of the app that is the target of the mobile app relationship entity. Read-Only|
+|targetDisplayName|String|The display name of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only.|
+|targetDisplayVersion|String|The display version of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only.|
+|targetPublisher|String|The publisher of the app that is the target of the mobile app relationship entity. Read-Only. This property is read-only.|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target application of a relationship is a parent or child in the relationship. Possible values are: parent, child. Read-Only. This property is read-only. Possible values are: `child`, `parent`, `unknownFutureValue`.|
 
 ## Relationships
 None

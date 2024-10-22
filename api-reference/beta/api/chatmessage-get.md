@@ -534,6 +534,130 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Get a chat message with an @mention for everyone
+
+The following example shows a request to get a chat message that @mentions everyone in a group chat.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_5",
+  "sampleKeys": ["19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2", "1725986575123"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2/messages/1725986575123
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessage-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-chatmessage-5-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessage-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessage-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-chatmessage-5-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessage-5-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-chatmessage-5-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The message body contains an @mention for everyone in a group chat that is represented by the `<at></at>` tag. The **conversationIdentityType** property is set to `chat` in the **conversation** identity of the **mentioned** object.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A80a7ff67c0ef43c19d88a7638be436b1%40thread.v2')/messages/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1725986575123",
+    "replyToId": null,
+    "etag": "1725986575123",
+    "messageType": "message",
+    "createdDateTime": "2024-09-10T16:42:55.123Z",
+    "lastModifiedDateTime": "2024-09-10T16:42:55.123Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<p>Hi&nbsp;<at id=\"0\">Everyone</at></p>"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Everyone",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "19:80a7ff67c0ef43c19d88a7638be436b1@thread.v2",
+                    "displayName": "Everyone",
+                    "conversationIdentityType": "chat"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
 ## Related content
 
 - [List messages in a channel](channel-list-messages.md)

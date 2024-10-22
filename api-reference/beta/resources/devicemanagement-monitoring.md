@@ -18,7 +18,7 @@ Represents the entry point to access all resources related to alerts in the [Mic
 
 The alert monitoring API provides a programmatic alert experience in the Microsoft Endpoint Manager admin center. A Microsoft Endpoint Manager admin can create an [alert rule](devicemanagement-alertrule.md) with preferred notification channels, and receive alerts when conditions set as thresholds in alert rules are met. Notification channels may include email and Microsoft Endpoint Manager admin center notifications. Each alert is recorded as an [alert record](devicemanagement-alertrecord.md). Admins can review alert records to learn about alert impact, severity, status, and more.
 
-The roles of global admin, Intune admin, and Windows 365 admin have full access to the alert monitoring API.
+Admin roles such as Intune admins and Windows 365 admins have full access to the alert monitoring API.
 
 [!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 

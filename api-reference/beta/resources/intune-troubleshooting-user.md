@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # user resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 
 
@@ -27,6 +27,7 @@ Namespace: microsoft.graph
 |[Update user](../api/intune-troubleshooting-user-update.md)|[user](../resources/intune-troubleshooting-user.md)|Update the properties of a [user](../resources/intune-troubleshooting-user.md) object.|
 |[getManagedDevicesWithAppFailures function](../api/intune-troubleshooting-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps|
 |[getManagedDevicesWithFailedOrPendingApps function](../api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps.md)|[managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) collection|Retrieves the list of devices with failed or pending apps|
+|[retrieveManagedDevicesWithAppInstallationIssues function](../api/intune-troubleshooting-user-retrievemanageddeviceswithappinstallationissues.md)|[managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) collection|Retrieves the list of devices with failed or pending apps|
 
 ## Properties
 |Property|Type|Description|

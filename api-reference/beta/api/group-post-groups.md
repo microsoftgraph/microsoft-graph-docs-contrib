@@ -73,6 +73,8 @@ The following table lists the properties that are required when you create the [
 > 
 > - Creating a Microsoft 365 or security group in a delegated context, signed in as a non-admin user, and without specifying owners automatically adds the calling user as the group owner. An admin user is automatically added as the group owner of a Microsoft 365 group they create but not of a security group.
 >
+> - A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).
+>
 > - To following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can add custom properties with your own data to the group while creating it.
@@ -214,6 +216,8 @@ Content-type: application/json
 ### Example 2: Create a security group with an owner and members
 
 The following example creates a security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+
+A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).
 
 #### Request
 

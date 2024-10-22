@@ -3,7 +3,7 @@ title: "List entries"
 description: "Get a list of catalogEntry resources from the catalog."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

@@ -71,7 +71,6 @@ The following table shows the properties that are required when you create the a
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|The package identifier. This property is read-only.|
-|appIdentifier|String|The Identity Name. This property is read-only.|
 |appStoreUrl|String|The Android app store URL.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
@@ -87,7 +86,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1327
+Content-length: 1343
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -115,7 +114,6 @@ Content-length: 1327
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
   "packageId": "Package Id value",
-  "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -134,7 +132,10 @@ Content-length: 1327
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
@@ -144,7 +145,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1499
+Content-Length: 1515
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -175,7 +176,6 @@ Content-Length: 1499
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
   "packageId": "Package Id value",
-  "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
@@ -194,7 +194,10 @@ Content-Length: 1499
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```

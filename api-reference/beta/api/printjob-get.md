@@ -20,14 +20,12 @@ Retrieve the properties and relationships of a print job.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "printjob_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/printjob-get-permissions.md)]
-
-For an app with delegated permissions to retrieve other users' jobs, the signed-in user must be a member of one of the following administrator roles:
-- Global Administrator
-- Printer Administrator
+> **Note:** For an app with delegated permissions to cancel other users' jobs, the signed-in user must be a member of the Printer Administrator role.
 
 For an app with application permissions to retrieve users' jobs, the app needs a permission that grants [Get printer](printer-get.md) access along with one of the application permissions described in the [Permissions](#permissions) table.
+
+<!-- { "blockType": "permissions", "name": "printjob_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printjob-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

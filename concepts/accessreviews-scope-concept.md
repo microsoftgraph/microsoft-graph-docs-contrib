@@ -141,7 +141,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all Teams-associated Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-associated Microsoft 365 groups to review. Groups that are of dynamic membership or role-assignable aren't included in this review.
 
-This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 ```http
 "instanceEnumerationScope": {
@@ -159,7 +159,7 @@ This review doesn't include B2B direct connect users in teams with shared channe
 
 Because this review is applied on all Teams-associated Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-associated Microsoft 365 groups to review. Groups that are of dynamic membership or role-assignable aren't included in this review.
 
-This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 ```http
 "instanceEnumerationScope": {
@@ -236,30 +236,7 @@ This review doesn't include B2B direct connect users in teams with shared channe
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition** object. The capabilities include reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 13: Review all inactive guest users with direct assignment to groups
-
-```http
-"scope": {
-    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
-    "principalScopes": [
-        {
-            "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-            "query": "/users?$filter=(userType eq 'Guest')",
-            "queryType": "MicrosoftGraph",
-            "inactiveDuration": "P30D"
-        }
-    ],
-    "resourceScopes": [
-        {
-            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups",
-            "queryType": "MicrosoftGraph"
-        }
-    ]
-}
-```
-
-### Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
+### Example 13: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
 
 In this example, the access review scope is all users who are members of a team, or assigned to a shared channel within the team. These members include internal users, direct and transitive users, B2B collaboration users, and B2B direct connect users.
 
@@ -296,7 +273,7 @@ To review B2B direct connect users and teams within shared channels, you must sp
 > [!NOTE]
 > Access review of B2B direct connect users and teams is only supported for single-stage access reviews and not for multi-stage access reviews.
 
-### Example 15: Review all guest users assigned to a directory role
+### Example 14: Review all guest users assigned to a directory role
 
 ```http
 "scope": {
@@ -319,7 +296,7 @@ To review B2B direct connect users and teams within shared channels, you must sp
 ```
 
 
-### Example 16: Review all users with direct or transitive assignment to an application
+### Example 15: Review all users with direct or transitive assignment to an application
 
 ```http
 "scope": {

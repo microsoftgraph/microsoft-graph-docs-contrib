@@ -3,7 +3,7 @@ title: "qualityUpdateCatalogEntry resource type"
 description: "Represents metadata for a Windows 10 quality update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |:---|:---|:---|
 |catalogName|String|The catalog name of the content. Read-only.|
 |cveSeverityInformation|[microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation](../resources/windowsupdates-qualityupdatecveseverityinformation.md)|Severity information of the Common Vulnerabilities and Exposures associated with the content.|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |displayName|String|The display name of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |isExpeditable|Boolean|Indicates whether the content can be deployed as an expedited quality update. Read-only.|

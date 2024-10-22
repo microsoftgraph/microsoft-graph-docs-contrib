@@ -352,7 +352,7 @@ The preceding limits apply to all [usage reports](/graph/api/resources/report) r
 Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      | Limit per app per tenant per resource(chat/channel)|
-|------------------------------------------------------|---------------------------------|------------|
+|------------------------------------------------------|---------------------------------|------------|---|
 | GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
 | GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |  1rps |
 | GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps | 1rps |
@@ -392,6 +392,8 @@ Limits are expressed as requests per second (rps).
 | GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps | 1rps |
 | Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
 | Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
+| GET /teams/```{team-id}```/channels/[getAllRetainedMessages](/graph/api/channel-getallretainedmessages) | 200rps | 1000rps |
+| GET /users/```{user-id}```/chats/[getAllRetainedMessages](/graph/api/chat-getallretainedmessages) | 200rps | 1000rps |
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps | 1rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps | 1rps |
 
@@ -444,7 +446,7 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 ### Limits per mailbox
 
-The Outlook service applies limits to each mailbox individually, regardless of the application used—that is, any app accessing a specific user or group mailbox. Exceeding the limit for one mailbox doesn't impact the application's ability to access another mailbox.
+The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox doesn't affect the ability of the application to access another mailbox.
 
 | Limit                                                             | Applies to              |
 |-------------------------------------------------------------------|-------------------------|

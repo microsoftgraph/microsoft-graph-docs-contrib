@@ -166,6 +166,9 @@ Represents the schema of the properties that represent a data entity in the data
 |IsContent |8 |Content property is to identify a property that can be full text indexed. Admins will choose among the available properties, which one should be the property to be treated as content for that specific connection. For details, see [Content property](/graph/connecting-external-content-manage-items#content). |
 |IsRefinable |16 |If a property is refinable, an admin can configure it as a custom filter on the Microsoft Search results page. A refinable property can't be searchable. |
 
+> [!NOTE]
+> If a connection has the **Title** and **Url** semantic labels, and any schema property in the connection is marked as **IsContent**, the content of the item is vectorized in the semantic index.
+
 ## SearchPropertyLabel
 
 Search property labels are well-known tags published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience. For details, see [Semantic labels](/graph/connecting-external-content-manage-schema#semantic-labels).

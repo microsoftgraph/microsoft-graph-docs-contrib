@@ -19,7 +19,7 @@ Represents a Microsoft Entra authentication context class reference. Authenticat
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
-| [Create or update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md)) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create or update an authenticationContextClassReference object. |
+| [Create or update](../api/authenticationcontextclassreference-update.md)) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create or update an authenticationContextClassReference object. |
 | [Get](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
 | [Delete](../api/authenticationcontextclassreference-delete.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Delete an authenticationContextClassReference object. |
 

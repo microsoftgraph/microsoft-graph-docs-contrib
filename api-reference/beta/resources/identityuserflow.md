@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.title: User flows in Azure AD B2C (deprecated)
 ---
 
 # identityUserFlow resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
-User Flows enable you to define predefined, configurable policies for sign in, sign up, combined sign up and sign in, password reset and profile update.
+User Flows enable you to define predefined, configurable policies for sign-in, sign-up, combined sign-up and sign-in, password reset, and profile update.
 
 ## Methods
 

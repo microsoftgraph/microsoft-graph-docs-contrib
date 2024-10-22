@@ -3,7 +3,7 @@ title: "monitoringRule resource type"
 description: "Rule defining a signal and threshold to monitor, and the action to perform when met."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 

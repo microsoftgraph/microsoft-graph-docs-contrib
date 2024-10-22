@@ -3,7 +3,7 @@ title: "Delete contentApproval"
 description: "Delete a contentApproval object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "azureADDeviceRegistrationError resource type"
-description: "An error in the registration process of a Microsoft Entra device that prevents the service from enrolling the device in update management or deploying content to the device."
+description: "An error in the registration process of a Microsoft Entra device that prevents Windows Autopatch from enrolling the device in update management or deploying content to the device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An error in the registration process of an [Microsoft Entra device](../resources/windowsupdates-azureaddevice.md) that prevents the service from enrolling the device in update management or deploying content to the device.
+An error in the registration process of an [Microsoft Entra device](../resources/windowsupdates-azureaddevice.md) that prevents Windows Autopatch from enrolling the device in update management or deploying content to the device.
 
 Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md).
 

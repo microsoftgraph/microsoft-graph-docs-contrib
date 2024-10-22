@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceAppManagement/mobileAppRelationships
 GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ```
 
@@ -54,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppRelationships
 ```
 
 ### Response

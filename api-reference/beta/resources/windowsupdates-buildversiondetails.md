@@ -3,7 +3,7 @@ title: "buildVersionDetails resource type"
 description: "Represents the build version details of a product revision that is associated with a quality update."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 

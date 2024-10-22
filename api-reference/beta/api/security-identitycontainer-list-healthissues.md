@@ -36,7 +36,7 @@ GET /security/identities/healthIssues
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$skip`, `$top`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following examples show how to use optional query parameters.
 
@@ -78,7 +78,10 @@ GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq '
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
 
-See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
+### Get open global health alerts where the domain name or sensor DNS name ends with a specific value
+
+The following example shows how to get global health alerts where the domain name or sensor DNS name ends with a specific value, for example, `contoso.com`.
+
 <!-- {
   "blockType": "ignored"
 }
@@ -100,7 +103,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [healthIssue](../resources/security-healthissue.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.healthIssue](../resources/security-healthissue.md) objects in the response body.
 
 ## Examples
 
@@ -170,37 +173,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.healthIssue",
-      "ID": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
-      "displayName": "Directory Services Object Auditing is not configured as required",
-      "healthIssueType": "Global",
-      "issueTypeId": "1031",
-      "severity": "medium",
-      "status": "open",
+      "additionalInformation": ["Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)"],
       "createdDateTime": "2022-07-15T12:19:27.7211305Z",
+      "description": "Directory Services Object Auditing isn't configured as required on domain1.contoso.com",
+      "displayName": "Directory Services Object Auditing isn't configured as required",
+      "domainNames": ["domain1.contoso.com", "domain2.contoso.com"],
+      "healthIssueType": "Global",
+      "id": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "issueTypeId": "1031",
       "lastModifiedDateTime": "2022-07-15T12:19:27.7211305Z",
-      "domainNames": [
-        "domain1.contoso.com",
-        "domain2.contoso.com"
-      ],
-      "sensorDNSNames": [
-        "DC1.domain1.contoso.com",
-        "DC2.domain2.contoso.com"
-      ],
-      "description": "Directory Services Object Auditing is not configured as required on domain1.contoso.com",
-      "recommendations": [
-        "Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"
-      ],
-      "recommendedActionCommands": [
-        "Import-Module DefenderForIdentity",
-        "Set-MDIConfiguration -Configuration DomainObjectAuditing -Mode Domain -Force"
-      ],
-      "additionalInformation": [
-        "Descendant User Objects (Schema-Id-Guid: bf967aba-0de6-11d0-a285-00aa003049e2)",
-        "Descendant Group Objects (Schema-Id-Guid: bf967a9c-0de6-11d0-a285-00aa003049e2)",
-        "Descendant Computer Objects (Schema-Id-Guid: bf967a86-0de6-11d0-a285-00aa003049e2)",
-        "Descendant msDS-GroupManagedServiceAccount Objects (Schema-Id-Guid: 7b8b558a-93a5-4af7-adca-c017e67f1057)",
-        "Descendant msDS-ManagedServiceAccount Objects (Schema-Id-Guid: ce206244-5827-4a86-ba1c-1c0c386c1b64)"
-      ]
+      "recommendations": ["Please configure the Directory Services Object Auditing events according to the guidance as described in https://aka.ms/mdi/objectauditing"],
+      "recommendedActionCommands": ["Import-Module DefenderForIdentity"],
+      "sensorDNSNames": ["DC1.domain1.contoso.com", "DC2.domain2.contoso.com"],
+      "severity": "medium",
+      "status": "open"
     }
   ]
 }

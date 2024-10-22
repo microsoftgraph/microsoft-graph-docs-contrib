@@ -15,6 +15,11 @@ A listener for when attributes are collected in an authentication flow.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

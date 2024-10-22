@@ -10,10 +10,10 @@ doc_type: enumPageType
 # devicePlatformType enum type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Supported platform types.
 
@@ -30,6 +30,6 @@ Supported platform types.
 |androidWorkProfile|7|Indicates device platform type is Android Work Profile.|
 |unknown|8|This is the default value when device platform type resolution fails|
 |androidAOSP|9|Indicates device platform type is Android AOSP.|
-|androidMobileApplicationManagement|10|Indicates Mobile Application Management (MAM) for android devices.|
-|iOSMobileApplicationManagement|11|Indicates Mobile Application Management (MAM) for iOS devices.|
+|androidMobileApplicationManagement|10|Indicates device platform type associated with Mobile Application Management (MAM) for android devices.|
+|iOSMobileApplicationManagement|11|Indicates device platform type associated with Mobile Application Management (MAM) for iOS devices.|
 |unknownFutureValue|12|Evolvable enumeration sentinel value. Do not use.|

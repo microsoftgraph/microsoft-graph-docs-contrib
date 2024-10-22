@@ -88,6 +88,18 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration1,
 }
 restrictions.SetKeyCredentials(keyCredentials)
+applicationRestrictions := graphmodels.NewCustomAppManagementApplicationConfiguration()
+identifierUris := graphmodels.NewIdentifierUriConfiguration()
+nonDefaultUriAddition := graphmodels.NewIdentifierUriRestriction()
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2024-01-01T10:37:00Z")
+nonDefaultUriAddition.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+excludeAppsReceivingV2Tokens := true
+nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
+excludeSaml := true
+nonDefaultUriAddition.SetExcludeSaml(&excludeSaml) 
+identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
+applicationRestrictions.SetIdentifierUris(identifierUris)
+restrictions.SetApplicationRestrictions(applicationRestrictions)
 requestBody.SetRestrictions(restrictions)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

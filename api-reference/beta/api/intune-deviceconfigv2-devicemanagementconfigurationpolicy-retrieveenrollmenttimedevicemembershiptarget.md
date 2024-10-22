@@ -48,7 +48,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [enrollmentTimeDeviceMembershipTargetResult](../resources/intune-deviceconfigv2-enrollmenttimedevicemembershiptargetresult.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md) in the response body.
 
 ## Example
 
