@@ -21,6 +21,7 @@ Inherits from [callOptions](calloptions.md).
 |:------------------------------------|:--------|:------------------------------------------------------------------------------------------------------------------------------|
 | hideBotAfterEscalation              | Boolean | Indicates whether to hide the app after the call is escalated. Inherited from [callOptions](calloptions.md).                  |
 | isContentSharingNotificationEnabled | Boolean | Indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md). |
+| isDeltaRosterEnabled                | Boolean | Indicates whether delta roster is enabled for the call. Inherited from [callOptions](calloptions.md).                         |
 
 ## JSON representation
 
@@ -34,6 +35,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.incomingCallOptions",
   "hideBotAfterEscalation": "Boolean",  
-  "isContentSharingNotificationEnabled": "Boolean"
+  "isContentSharingNotificationEnabled": "Boolean",
+  "isDeltaRosterEnabled": "Boolean"
 }
 ```
