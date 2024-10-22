@@ -30,7 +30,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | [Publish](../api/sitepage-publish.md)                                                   | None                                            | Publish a [sitePage](../resources/sitepage.md) object.                                                                              |
 | [Get by position](../api/sitepage-getwebpartsbyposition.md) | [webPart](../resources/webpart.md) collection   | Get a collection of [WebPart](../resources/webpart.md) by providing [webPartPosition](../resources/webpartposition.md) information. |
 | [Save as template](../api/sitepage-saveastemplate.md)                          | [pageTemplate](../resources/pagetemplate.md)            | save a page as [pageTemplate](../resources/pagetemplate.md) object.                                                                           |
-| [Create page from template](../api/sitepage-createfromtemplate.md)              | [sitePage](../resources/sitepage.md)            | Create a new [sitePage](../resources/sitepage.md) from a template object.                                                                           |
+| [Create from template](../api/sitepage-createfromtemplate.md)              | [sitePage](../resources/sitepage.md)            | Create a new [sitePage](../resources/sitepage.md) from a template object.                                                                           |
 
 ## Properties
 
