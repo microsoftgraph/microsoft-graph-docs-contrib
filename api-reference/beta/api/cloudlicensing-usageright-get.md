@@ -27,12 +27,8 @@ GET /me/cloudLicensing/usageRights/{usageRightId}
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
-<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}" } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User-UsageRight.Read|Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read, User-CloudLicensing.Read.All, User-UsageRight.Read.All, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|User-UsageRight.Read.All|Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read.All, User.Read.All, User.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudlicensing-usageright-get-permissions.md)]
 
 Permissions to get a **usageRight** for a group:
 
