@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retry",
           "ChangeType": "Addition",
-          "Description": "Added the retry method to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource.",
+          "Description": "Added the **retry** method to the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource.",
           "Target": "cloudPcBulkAction"
         }
       ],
