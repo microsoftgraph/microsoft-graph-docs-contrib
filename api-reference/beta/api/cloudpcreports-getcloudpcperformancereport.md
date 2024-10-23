@@ -128,11 +128,11 @@ Content-Type: application/octet-stream
       "PropertyType": "Int64"
     },
     {
-      "Column": "NoTimeConnectedCloudPcCount",
+      "Column": "NoActiveTimeConnectedCount",
       "PropertyType": "Int64"
     },
     {
-      "Column": "LowTimeConnectedCloudPcCount",
+      "Column": "LowActiveTimeConnectedCount",
       "PropertyType": "Int64"
     }
   ],
