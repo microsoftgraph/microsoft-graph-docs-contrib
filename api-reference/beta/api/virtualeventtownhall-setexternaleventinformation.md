@@ -1,6 +1,6 @@
 ---
 title: "virtualEventTownhall: set external event information"
-description: "TODO: PLACEHOLDER."
+description: Link external townhall event information to a townhall event
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
