@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the external information for a [virtual event](../resources/virtualevent.md).
 
+The applicationID and externalEventId allows external event information (i.e. (unsupported information in the [virtual event](../resources/virtualevent.md)) to be associated with a virtual event.
+
 ## Properties
 
 |Property|Type|Description|
