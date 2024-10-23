@@ -1658,7 +1658,7 @@
               ]
             },
             {
-              "name": "Public key infrastructure",
+              "name": "Public Key Infrastructure",
               "resources": [
                 "certificateBasedAuthPki",
                 "certificateAuthorityDetail"
