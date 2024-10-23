@@ -22,47 +22,6 @@ The [chatMessage](/graph/api/resources/chatMessage) resource type represents mes
 
 The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource type represents entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
 
-#### file attachment
-
-When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
-
-> **Note:** The SharePoint URL is the link that opens the file; it is not the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
-
-The following example shows the schema for a file attachment.
-
-```json
-    "attachments": [
-        {
-            "id": "924D1F74-E0D2-4927-8A67-15ECEF455527",
-            "contentType": "reference",
-            "contentUrl": "https://testing.sharepoint.com/sites/Samples/Shared Documents/General/color.png",
-            "content": null,
-            "name": "color.png",
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-```
-
-#### tab attachment
-
-When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
-
-The following example shows the schema for an tab attachment.
-
-``` json
-"attachments": [
-        {
-            "id": "tab::d64ea8d0-8b63-4f53-9bf6-806648176968",
-            "contentType": "tabReference",
-            "contentUrl": null,
-            "content": null,
-            "name": "Bing",
-            "thumbnailUrl": null,
-            "teamsAppId": null
-        }
-    ],
-```
 #### card attachment
 
 Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
@@ -108,7 +67,49 @@ The following example shows the schema for an adaptive card attachment when the 
     ]
 ```
 
-> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** are not supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+
+#### file attachment
+
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
+
+> **Note:** The SharePoint URL is the link that opens the file; it isn't the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
+
+The following example shows the schema for a file attachment.
+
+```json
+    "attachments": [
+        {
+            "id": "924D1F74-E0D2-4927-8A67-15ECEF455527",
+            "contentType": "reference",
+            "contentUrl": "https://testing.sharepoint.com/sites/Samples/Shared Documents/General/color.png",
+            "content": null,
+            "name": "color.png",
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
+
+#### forwarded message attachment
+
+An [attachment](/graph/api/resources/chatmessageattachment) object contains a forwarded message that was forwarded to a [chat](/graph/api/resources/chat). For message attachments, the **id** property contains the ID of the forwarded message. The **content** property contains more details about the message; for example, the original message context and original sender detail. For message attachments, the **contentType** property is set to `forwardedMessageReference`.
+
+The following example shows the schema for a forwarded message attachment.
+
+```json
+    "attachments": [
+        {
+            "id": "1727881360458",
+            "contentType": "forwardedMessageReference",
+            "contentUrl": null,
+            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+```
 
 #### meeting attachment
 
@@ -143,6 +144,26 @@ The following example shows the schema for a message attachment.
             "content": "{\"messageId\":\"1622853091207\",\"messagePreview\":\"Testing unread read status\",\"messageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"id\":\"8ea0e38b-efb3-4757-924a-5f94061cf8c2\",\"displayName\":\"Alex\"}}}",
             "name": null,
             "thumbnailUrl": null
+        }
+    ],
+```
+
+#### tab attachment
+
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
+
+The following example shows the schema for an tab attachment.
+
+``` json
+"attachments": [
+        {
+            "id": "tab::d64ea8d0-8b63-4f53-9bf6-806648176968",
+            "contentType": "tabReference",
+            "contentUrl": null,
+            "content": null,
+            "name": "Bing",
+            "thumbnailUrl": null,
+            "teamsAppId": null
         }
     ],
 ```

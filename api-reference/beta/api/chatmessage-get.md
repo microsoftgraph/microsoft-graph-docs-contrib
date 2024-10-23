@@ -658,6 +658,89 @@ Content-type: application/json
 }
 ```
 
+### Example 6: Get a chat message with a forwarded message
+
+The following example shows a request that gets a chat message with a forwarded message as an attachment.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_6",
+  "sampleKeys": ["19:e2ed97baac8e4bffbb91299a38996790@thread.v2", "1727903166936"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:e2ed97baac8e4bffbb91299a38996790@thread.v2/messages/1727903166936
+```
+
+#### Response
+
+The following example shows the response. The message body contains a forwarded message as an attachment. The **contentType** for the forwarded message is identified as `forwardedMessageReference`. The original message that was forwarded is also available in the attachment **content**.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ae2ed97baac8e4bffbb91299a38996790%40thread.v2')/messages/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+    "id": "1727903166936",
+    "replyToId": null,
+    "etag": "1727903166936",
+    "messageType": "message",
+    "createdDateTime": "2024-10-02T21:06:06.936Z",
+    "lastModifiedDateTime": "2024-10-02T21:06:06.936Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"1727881360458\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "1727881360458",
+            "contentType": "forwardedMessageReference",
+            "contentUrl": null,
+            "content": "{\"originalMessageId\":\"1727881360458\",\"originalMessageContent\":\"\\n<p>hello</p>\\n\",\"originalConversationId\":\"19:97641583cf154265a237da28ebbde27a@thread.v2\",\"originalSentDateTime\":\"2024-10-02T15:02:40.458+00:00\",\"originalMessageSender\":{\"application\":null,\"device\":null,\"user\":{\"userIdentityType\":\"aadUser\",\"tenantId\":\"2432b57b-0abd-43db-aa7b-16eadd115d34\",\"id\":\"28c10244-4bad-4fda-993c-f332faef94f0\",\"displayName\":null}}}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
 ## Related content
 
 - [List messages in a channel](channel-list-messages.md)
