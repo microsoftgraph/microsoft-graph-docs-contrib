@@ -1,5 +1,5 @@
 ---
-title: "Rules in PIM - mapping guide"
+title: "Rules in PIM - Mapping guide"
 description: "Learn how rules in PIM are structured in Microsoft Graph and how they map with the descriptions on the Microsoft Entra admin center."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -11,7 +11,7 @@ ms.date: 09/24/2024
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---
 
-# Rules in PIM - mapping guide
+# Rules in PIM - Mapping guide
 
 Privileged Identity Management (PIM) exposes role settings for the resources that can be managed. In Microsoft Graph, these resources are Microsoft Entra roles and groups and they're managed through [PIM for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview) and [PIM for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) respectively.
 
@@ -56,7 +56,7 @@ The following image shows the activation role settings on the Microsoft Entra ad
 | Number | Microsoft Entra admin center UX Description                                                                                                                                        | Microsoft Graph rule ID / Derived resource type                                                   | Enforced for caller |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------|
 | 1      | Activation maximum duration (hours)                                                                                                                                | `Expiration_EndUser_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)                       | End user            |
-| 2      | On activation, require: None, Azure MFA <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_Admin_Eligibility` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)                        | Admin               |
+| 2      | On activation, require: None, Azure MFA <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_EndUser_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyenablementrule)                        | End user               |
 | 3      | On activation, require: Microsoft Entra Conditional Access authentication context (Preview)                                                                               | `AuthenticationContext_EndUser_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyauthenticationcontextrule) | End user            |
 | 4      | Require approval to activate                                                                                                                                       | `Approval_EndUser_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyapprovalrule)                           | End user            |
 
@@ -70,8 +70,8 @@ The following image shows the assignment role settings on the Microsoft Entra ad
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | 5      | Allow permanent eligible assignment<br/><br/>Expire eligible assignments after                                                                                       | `Expiration_Admin_Eligibility` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)  | Admin               |
 | 6      | Allow permanent active assignment<br/><br/>Expire active assignments after                                                                                           | `Expiration_Admin_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)   | Admin               |
-| 7      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment<br/><br/>Require ticket information on activation | `Enablement_Admin_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)   | Admin               |
-| 8      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment<br/><br/>Require ticket information on activation | `Enablement_EndUser_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule) |End user            |
+| 7      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment | `Enablement_Admin_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)   | Admin               |
+| 8      | Does not exist in Microsoft Entra admin center UX | `Enablement_Admin_Eligibility` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule) | Admin            |
 
 ## Notification rules
 
