@@ -4,9 +4,7 @@ ms.topic: include
 ---
 
 <!-- Applies to:
-- accessPackage
-- accessPackageResourceRequest
-- accessPackageResourceRoleScope
+- accessPackageAssignmentRequest
 -->
 
 In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through one of the following options:
