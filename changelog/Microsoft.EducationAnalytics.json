@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "challengingWord",
           "ChangeType": "Addition",
-          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
+          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type",
           "Target": "challengingWord"
         },
         {

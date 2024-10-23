@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a response to [Microsoft Reflect](https://reflect.microsoft.com/) check-in.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
