@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setExternalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [setExternalEventInformation](../api/virtualeventtownhall-setexternaleventinformation.md) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-beta) resource.",
+          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-setexternaleventinformation?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-beta) resource.",
           "Target": "virtualEventTownhall"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setExternalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [setExternalEventInformation](../api/virtualeventwebinar-setexternaleventinformation.md) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-setexternaleventinformation?view=graph-rest-beta) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
         }
       ],
