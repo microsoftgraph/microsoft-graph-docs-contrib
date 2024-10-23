@@ -49,7 +49,7 @@ You can specify the following property when you create the [virtualEventExternal
 
 |Property|Type|Description|
 |:---|:---|:---|
-| externalEventId | String | TODO: PLACEHOLDER DESCRIPTION i.e. The identifier for a virtualEventExternalInformation object. Optional. If set, the maximum supported length is 256 characters. |
+| externalEventId | String | The identifier for a virtualEventExternalInformation object. Optional. If set, the maximum supported length is 256 characters. |
 
 ## Response
 
