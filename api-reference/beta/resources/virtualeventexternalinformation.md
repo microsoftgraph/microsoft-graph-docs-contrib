@@ -21,7 +21,7 @@ The applicationID and externalEventId allows external event information (i.e. (u
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationId|String| TODO: PLACEHOLDER DESCRIPTION. READ ONLY.|
+|applicationId|String| Identifier of the application that hosts the externalEventId. Read only.|
 |externalEventId|String| TODO: PLACEHOLDER DESCRIPTION i.e. The identifier for a **virtualEventExternalInformation** object. Optional. If set, the maximum supported length is 256 characters.|
 
 ## Relationships
