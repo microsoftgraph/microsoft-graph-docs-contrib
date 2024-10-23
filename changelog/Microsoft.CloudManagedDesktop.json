@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "93e74e76-b79a-44cf-8f1c-2a8973eeb5b5",
+          "ApiChange": "Member",
+          "ChangedApiName": "preparing",
+          "ChangeType": "Addition",
+          "Description": "Added the `preparing` member to the **cloudPcStatus** enumeration.",
+          "Target": "cloudPcStatus"
+        }
+      ],
+      "Id": "93e74e76-b79a-44cf-8f1c-2a8973eeb5b5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-16T16:14:33.4076740Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5e979ab3-1bda-4842-8392-6c94e388062b",
           "ApiChange": "Method",
           "ChangedApiName": "reprovisionCloudPc",
@@ -151,6 +169,24 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-09-30T10:03:56.9188489Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcBulkMove",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcBulkMove](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkmove?view=graph-rest-beta) resource type.",
+            "Target": "cloudPcBulkMove"
+          }            
+        ],
+        "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-18T16:34:56.2892592Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
