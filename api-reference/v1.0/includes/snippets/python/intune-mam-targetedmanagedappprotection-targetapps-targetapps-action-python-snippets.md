@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.deviceappmanagement.managedapppolicies.item.target_apps.target_apps_post_request_body import TargetAppsPostRequestBody
 from msgraph.generated.models.managed_mobile_app import ManagedMobileApp
 from msgraph.generated.models.android_mobile_app_identifier import AndroidMobileAppIdentifier
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = TargetAppsPostRequestBody(
 	apps = [
 		ManagedMobileApp(

@@ -21,7 +21,7 @@ Inherits from [policyBase](policybase.md).
 
 | Method                                                | Return type                                                             | Description                                                                         |
 | :---------------------------------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [Get](../api/tenantappmanagementpolicy-get.md)       | tenantAppManagementPolicy | Read the properties of the default app management policy set for applications and service principals. |
+| [Get](../api/tenantappmanagementpolicy-get.md)       | [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) | Read the properties of the default app management policy set for applications and service principals. |
 | [Update](../api/tenantappmanagementpolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
 
 ## Properties
@@ -32,8 +32,8 @@ Inherits from [policyBase](policybase.md).
 | displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Denotes whether the policy is enabled. Default value is `false`.                                    |
-| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
-| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
+| applicationRestrictions      | [appManagementApplicationConfiguration](../resources/appmanagementapplicationconfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
+| servicePrincipalRestrictions | [appManagementServicePrincipalConfiguration](../resources/appmanagementserviceprincipalconfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
 ## Relationships
 
@@ -60,10 +60,10 @@ The following JSON representation shows the resource type.
   "displayName": "string",
   "isEnabled": false,
   "applicationRestrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
+    "@odata.type":"microsoft.graph.appManagementApplicationConfiguration"
   },
   "servicePrincipalRestrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
+    "@odata.type":"microsoft.graph.appManagementServicePrincipalConfiguration"
   }
 }
 ```

@@ -24,12 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for the signed-in user's memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-permissions.md)]
 
 ### Permissions for another user's memberships
 
-<!-- { "blockType": "permissions", "name": "user_list_transitivememberof_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/user-list-transitivememberof-2-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

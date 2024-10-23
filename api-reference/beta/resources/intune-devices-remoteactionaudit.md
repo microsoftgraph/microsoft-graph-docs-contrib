@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # remoteActionAudit resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Report of remote actions initiated on the devices belonging to a certain tenant.
 
@@ -40,7 +40,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |managedDeviceId|String|Action target.|
 |deviceActionDetails|[keyValuePair_2OfString_String](../resources/intune-devices-keyvaluepair_2ofstring_string.md) collection|DeviceAction details|
-|deviceActionCategory|[actionCategory](../resources/intune-devices-actioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
+|deviceActionCategory|[deviceActionCategory](../resources/intune-devices-deviceactioncategory.md)|DeviceAction category. Possible values are: `single`, `bulk`.|
 |bulkDeviceActionId|String|BulkAction ID|
 
 ## Relationships

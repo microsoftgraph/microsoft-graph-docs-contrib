@@ -15,6 +15,10 @@ Complete the message migration process by removing `migration mode` from a [chan
 
 After a **completeMigration** request is made, you can't import additional messages into the team. You can add members to the team after the request returns a successful response.
 
+> [!NOTE]
+> Completing the migration of the channel `General` before completing the migration of other channels leads to a situation in
+> which the team is marked as migrated, prohibiting you from creating further channels to be migrated.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

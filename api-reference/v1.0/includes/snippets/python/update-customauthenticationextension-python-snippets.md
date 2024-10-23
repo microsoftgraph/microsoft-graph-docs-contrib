@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.on_token_issuance_start_custom_extension import OnTokenIssuanceStartCustomExtension
 from msgraph.generated.models.http_request_endpoint import HttpRequestEndpoint
 from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 from msgraph.generated.models.on_token_issuance_start_return_claim import OnTokenIssuanceStartReturnClaim
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OnTokenIssuanceStartCustomExtension(
 	odata_type = "#microsoft.graph.onTokenIssuanceStartCustomExtension",
 	display_name = "onTokenIssuanceStartCustomExtension",

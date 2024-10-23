@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
-Before you call this API, call [List protection policies](../api/backuprestoreroot-list-protectionpolicies.md) to initialize the data store in the tenant. Data store initialization takes about 5 minutes. If you call this API before the data store is initialized, the call results in an error.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -95,6 +93,10 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/enable
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/backuprestoreroot-enable-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/backuprestoreroot-enable-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

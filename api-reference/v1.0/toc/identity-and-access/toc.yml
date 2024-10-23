@@ -246,6 +246,8 @@ items:
       href: ../../api/domain-post-domains.md
     - name: Get
       href: ../../api/domain-get.md
+    - name: Get root domain
+      href: ../../api/domain-get-rootdomain.md
     - name: Update
       href: ../../api/domain-update.md
     - name: Delete
@@ -1437,20 +1439,32 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
-  - name: Authentication event listener
+  - name: Authentication event listeners
     items:
     - name: Authentication event listener
-      href: ../../resources/authenticationeventlistener.md
-    - name: List
-      href: ../../api/identitycontainer-list-authenticationeventlisteners.md
-    - name: Create
-      href: ../../api/identitycontainer-post-authenticationeventlisteners.md
-    - name: Get
-      href: ../../api/authenticationeventlistener-get.md
-    - name: Update
-      href: ../../api/authenticationeventlistener-update.md
-    - name: Delete
-      href: ../../api/authenticationeventlistener-delete.md
+      items:
+      - name: Authentication event listener
+        href: ../../resources/authenticationeventlistener.md
+      - name: List
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On attribute collection listener
+      href: ../../resources/onattributecollectionlistener.md
+    - name: On authentication method load start listener
+      href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On interactive auth flow start listener
+      href: ../../resources/oninteractiveauthflowstartlistener.md
+    - name: On token issuance start listener
+      href: ../../resources/ontokenissuancestartlistener.md
+    - name: On user create start listener
+      href: ../../resources/onusercreatestartlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1679,7 +1693,7 @@ items:
         href: ../../resources/authenticationcontextclassreference.md
       - name: List
         href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-      - name: Create or update authenticationContextClassReference
+      - name: Create or update
         href: ../../api/authenticationcontextclassreference-update.md
       - name: Get
         href: ../../api/authenticationcontextclassreference-get.md
@@ -1743,20 +1757,6 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
   - name: Custom authentication extension
     items:
-    - name: Custom authentication extension
-      href: ../../resources/customauthenticationextension.md
-    - name: List
-      href: ../../api/identitycontainer-list-customauthenticationextensions.md
-    - name: Create
-      href: ../../api/identitycontainer-post-customauthenticationextensions.md
-    - name: Get
-      href: ../../api/customauthenticationextension-get.md
-    - name: Update
-      href: ../../api/customauthenticationextension-update.md
-    - name: Delete
-      href: ../../api/customauthenticationextension-delete.md
-    - name: Validate authentication configuration
-      href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
@@ -1791,6 +1791,12 @@ items:
         href: ../../api/riskyuser-confirmcompromised.md
       - name: Dismiss
         href: ../../api/riskyuser-dismiss.md
+      - name: List history
+        href: ../../api/riskyuser-list-history.md
+    - name: Risky user history item
+      items:
+      - name: Risky user history item
+        href: ../../resources/riskyuserhistoryitem.md
       - name: List history
         href: ../../api/riskyuser-list-history.md
     - name: Service principal risk detection
@@ -2023,28 +2029,6 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
-    - name: Claims mapping policy
-      items:
-      - name: Claims mapping policy
-        href: ../../resources/claimsmappingpolicy.md
-      - name: List
-        href: ../../api/claimsmappingpolicy-list.md
-      - name: Create
-        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
-      - name: Get
-        href: ../../api/claimsmappingpolicy-get.md
-      - name: Update
-        href: ../../api/claimsmappingpolicy-update.md
-      - name: Delete
-        href: ../../api/claimsmappingpolicy-delete.md
-      - name: List applies to
-        href: ../../api/claimsmappingpolicy-list-appliesto.md
-      - name: Assign to service principal
-        href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
-      - name: List assigned to service principal
-        href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
-      - name: Unassign from service principal
-        href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
     - name: Home realm discovery policy
       items:
       - name: Home realm discovery policy
@@ -2067,38 +2051,6 @@ items:
         href: ../../api/serviceprincipal-list-homerealmdiscoverypolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-    - name: Token issuance policy
-      items:
-      - name: Token issuance policy
-        href: ../../resources/tokenissuancepolicy.md
-      - name: List
-        href: ../../api/tokenissuancepolicy-list.md
-      - name: Create
-        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
-      - name: Get
-        href: ../../api/tokenissuancepolicy-get.md
-      - name: Update
-        href: ../../api/tokenissuancepolicy-update.md
-      - name: Delete
-        href: ../../api/tokenissuancepolicy-delete.md
-      - name: List applied to applications
-        href: ../../api/tokenissuancepolicy-list-appliesto.md
-    - name: Token lifetime policy
-      items:
-      - name: Token lifetime policy
-        href: ../../resources/tokenlifetimepolicy.md
-      - name: List
-        href: ../../api/tokenlifetimepolicy-list.md
-      - name: Create
-        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-      - name: Get
-        href: ../../api/tokenlifetimepolicy-get.md
-      - name: Update
-        href: ../../api/tokenlifetimepolicy-update.md
-      - name: Delete
-        href: ../../api/tokenlifetimepolicy-delete.md
-      - name: List applied to applications
-        href: ../../api/tokenlifetimepolicy-list-appliesto.md
     - name: Authentication flows policy
       items:
       - name: Authentication flows policy
@@ -2149,36 +2101,6 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
-    - name: Application authentication method policy
-      items:
-      - name: Overview
-        href: ../../resources/applicationauthenticationmethodpolicy.md
-      - name: Tenant app management policy
-        items:
-        - name: Tenant app management policy
-          href: ../../resources/tenantappmanagementpolicy.md
-        - name: Get
-          href: ../../api/tenantappmanagementpolicy-get.md
-        - name: Update
-          href: ../../api/tenantappmanagementpolicy-update.md
-      - name: App management policy
-        items:
-        - name: App management policy
-          href: ../../resources/appmanagementpolicy.md
-        - name: List
-          href: ../../api/appmanagementpolicy-list.md
-        - name: Create
-          href: ../../api/appmanagementpolicy-post.md
-        - name: Get
-          href: ../../api/appmanagementpolicy-get.md
-        - name: Update
-          href: ../../api/appmanagementpolicy-update.md
-        - name: Delete
-          href: ../../api/appmanagementpolicy-delete.md
-        - name: List applies to
-          href: ../../api/appmanagementpolicy-list-appliesto.md
-        - name: Create applies to
-          href: ../../api/appmanagementpolicy-post-appliesto.md
     - name: Authentication methods policy
       items:
       - name: Overview
@@ -2272,34 +2194,6 @@ items:
           href: ../../api/x509certificateauthenticationmethodconfiguration-update.md
         - name: Delete
           href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
-    - name: Remote desktop security configuration
-      items:
-      - name: Remote desktop security configuration
-        items:
-        - name: Remote desktop security configuration
-          href: ../../resources/remotedesktopsecurityconfiguration.md
-        - name: Create
-          href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-        - name: Get
-          href: ../../api/remotedesktopsecurityconfiguration-get.md
-        - name: Update
-          href: ../../api/remotedesktopsecurityconfiguration-update.md
-        - name: Delete
-          href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-      - name: Target device group
-        items:
-        - name: Target device group
-          href: ../../resources/targetdevicegroup.md
-        - name: List
-          href: ../../api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-        - name: Create
-          href: ../../api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-        - name: Get
-          href: ../../api/targetdevicegroup-get.md
-        - name: Update
-          href: ../../api/targetdevicegroup-update.md
-        - name: Delete
-          href: ../../api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
@@ -2438,6 +2332,8 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
+    - name: User flows in Azure AD B2C (deprecated)
+      href: ../../resources/identityuserflow.md
 - name: Granular delegated admin privileges
   displayName: GDAP, Partner Center, CSP, VAR
   items:

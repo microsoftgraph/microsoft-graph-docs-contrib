@@ -30,6 +30,11 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md) or the perso
 |[Add app for user](../api/userteamwork-post-installedapps.md) | | Add (install) an app in the personal scope of a user.|
 |[Upgrade installed app for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in the personal scope of a user to the latest version.|
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Remove (uninstall) an app in the personal scope of a user.|
+|[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat.|
+|[Get app installed in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a chat.|
+|[Add app in chat](../api/chat-post-installedapps.md) | | Add (install) an app to a chat.|
+|[Upgrade app installed in chat](../api/chat-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a chat to the latest version.|
+|[Remove app from chat](../api/chat-delete-installedapps.md) | None | Remove (uninstall) an app from a chat.|
 
 ## Properties
 

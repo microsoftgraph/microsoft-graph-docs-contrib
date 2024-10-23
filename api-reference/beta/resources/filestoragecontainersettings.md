@@ -11,24 +11,24 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] 
 
-Represents settings associated with a [fileStorageContainer](../resources/filestoragecontainer.md). 
+Represents the settings of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
-|isOcrEnabled|Boolean|Indicates whether OCR is enabled for a given container. If OCR is enabled on a container, OCR extraction is performed for recently added or updated documents (of supported document types) and the extracted fields are added to the metadata of the document. This enables end-user search and search-driven solutions.|
+|isOcrEnabled|Boolean|Indicates whether Optical Character Recognition (OCR) is enabled for the container. The default value is `false`. When set to `true`, OCR extraction is performed for new and updated documents of supported document types, and the extracted fields in the metadata of the document enable end-user search and search-driven solutions. When set to `false`, existing OCR metadata is not impacted. Optional. Read-write.|
+|itemMajorVersionLimit|Int32|The maximum major versions allowed for items in the container. Optional. Read-write.|
+|isItemVersioningEnabled|Boolean|Indicates whether versioning is enabled for items in the container. Optional. Read-write.|
 
 ## Relationships
-
 None.
 
 ## JSON representation
 
-The following JSON representation shows the resource type. 
+The following JSON representation shows the resource type.
 
 
 <!-- {
@@ -39,7 +39,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerSettings",
-  "isOcrEnabled": "Boolean"
+  "isOcrEnabled": "Boolean",
+  "itemMajorVersionLimit": "int32",
+  "isItemVersioningEnabled": "Boolean"
 }
 ```
 

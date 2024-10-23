@@ -12,7 +12,7 @@ DetectedApp detectedApp = new DetectedApp();
 detectedApp.setOdataType("#microsoft.graph.detectedApp");
 detectedApp.setDisplayName("Display Name value");
 detectedApp.setVersion("Version value");
-detectedApp.setSizeInByte(10L);
+detectedApp.setSizeInByte(10);
 detectedApp.setDeviceCount(11);
 detectedApp.setPublisher("Publisher value");
 detectedApp.setPlatform(DetectedAppPlatformType.Windows);

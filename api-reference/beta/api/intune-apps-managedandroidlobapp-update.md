@@ -93,7 +93,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1550
+Content-length: 1610
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -143,7 +143,10 @@ Content-length: 1550
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
@@ -156,7 +159,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1722
+Content-Length: 1782
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -209,7 +212,10 @@ Content-Length: 1722
     "v8_1": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",

@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # deviceManagement resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Singleton entity that acts as a container for all device management functionality.
 
@@ -42,7 +42,6 @@ Singleton entity that acts as a container for all device management functionalit
 |complianceCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) collection|List of all compliance categories|
 |reusablePolicySettings|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) collection|List of all reusable settings that can be referred in a policy|
 |templateInsights|[deviceManagementTemplateInsightsDefinition](../resources/intune-deviceconfigv2-devicemanagementtemplateinsightsdefinition.md) collection|List of setting insights in a template|
-|inventoryPolicies|[deviceManagementInventoryPolicy](../resources/intune-deviceconfigv2-devicemanagementinventorypolicy.md) collection|List of all inventory policies|
 |inventorySettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of all inventory settings|
 |inventoryCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) collection|List of all inventory categories|
 

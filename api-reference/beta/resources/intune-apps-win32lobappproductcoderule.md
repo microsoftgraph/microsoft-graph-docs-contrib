@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # win32LobAppProductCodeRule resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 A complex type to store the product code and version rule data for a Win32 LOB app. This rule is not supported as a requirement rule.
 

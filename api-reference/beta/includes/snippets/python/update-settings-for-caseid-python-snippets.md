@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.ediscovery.case_settings import CaseSettings
 from msgraph_beta.generated.models.ediscovery.redundancy_detection_settings import RedundancyDetectionSettings
 from msgraph_beta.generated.models.ediscovery.topic_modeling_settings import TopicModelingSettings
 from msgraph_beta.generated.models.ediscovery.ocr_settings import OcrSettings
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CaseSettings(
 	redundancy_detection = RedundancyDetectionSettings(
 		is_enabled = False,

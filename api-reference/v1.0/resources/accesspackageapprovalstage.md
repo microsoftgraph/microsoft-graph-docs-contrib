@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
-# accessPackageApprovalStage complex type
+# accessPackageApprovalStage resource type
 
 Namespace: microsoft.graph
 

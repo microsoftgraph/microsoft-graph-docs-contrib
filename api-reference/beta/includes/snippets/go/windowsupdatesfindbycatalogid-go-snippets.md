@@ -23,8 +23,7 @@ configuration := &graphadmin.AdminWindowsUpdatesProductsfindByKbNumberWithReques
 }
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-kbNumber := int32(1)
-microsoftGraphWindowsUpdatesFindByKbNumber, err := graphClient.Admin().Windows().Updates().Products().MicrosoftGraphWindowsUpdatesFindByKbNumberWithKbNumber(&kbNumber).GetAsFindByKbNumberWithKbNumberGetResponse(context.Background(), configuration)
+microsoftGraphWindowsUpdatesFindByKbNumber, err := graphClient.Admin().Windows().Updates().Products().MicrosoftGraphWindowsUpdatesFindByKbNumberWithKbNumber(&kbNumber).GetAsFindByKbNumberGetResponse(context.Background(), configuration)
 
 
 ```

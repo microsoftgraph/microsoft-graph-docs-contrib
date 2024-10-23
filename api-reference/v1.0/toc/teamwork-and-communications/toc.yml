@@ -44,6 +44,16 @@ items:
       href: ../../api/userteamwork-teamsappinstallation-upgrade.md
     - name: Remove app for user
       href: ../../api/userteamwork-delete-installedapps.md
+    - name: List apps in chat
+      href: ../../api/chat-list-installedapps.md
+    - name: Get app installed in chat
+      href: ../../api/chat-get-installedapps.md
+    - name: Add app in chat
+      href: ../../api/chat-post-installedapps.md
+    - name: Upgrade app installed in chat
+      href: ../../api/chat-teamsappinstallation-upgrade.md
+    - name: Remove app from chat
+      href: ../../api/chat-delete-installedapps.md
   - name: Teams app settings
     items:
     - name: Teams app settings
@@ -76,6 +86,8 @@ items:
       href: ../../api/group-list-permissiongrants.md
     - name: List permission grants of a team
       href: ../../api/team-list-permissiongrants.md
+    - name: List permission grants of a user
+      href: ../../api/user-list-permissiongrants.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -126,6 +138,8 @@ items:
       items:
       - name: Call
         href: ../../resources/call.md
+      - name: Create
+        href: ../../api/application-post-calls.md
       - name: Get
         href: ../../api/call-get.md
       - name: Delete/hang up
@@ -384,6 +398,8 @@ items:
       items:
       - name: Virtual event webinar
         href: ../../resources/virtualeventwebinar.md
+      - name: List
+        href: ../../api/virtualeventsroot-list-webinars.md
       - name: Create
         href: ../../api/virtualeventsroot-post-webinars.md
       - name: Get
@@ -394,8 +410,6 @@ items:
         href: ../../api/virtualeventwebinar-publish.md
       - name: Cancel
         href: ../../api/virtualeventwebinar-cancel.md
-      - name: List in organization
-        href: ../../api/virtualeventsroot-list-webinars.md
       - name: List by user role
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
@@ -473,12 +487,12 @@ items:
       href: ../../api/channel-patch.md
     - name: Delete channel
       href: ../../api/channel-delete.md
-    - name: Get message delta
-      href: ../../api/chatmessage-delta.md
     - name: List channel messages
       href: ../../api/channel-list-messages.md
     - name: Get all channel messages
       href: ../../api/channel-getallmessages.md
+    - name: Get all retained channel messages
+      href: ../../api/channel-getallretainedmessages.md
     - name: Create channel message post
       href: ../../api/channel-post-messages.md
     - name: Create reply to channel message post
@@ -561,6 +575,10 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats
         href: ../../api/chats-getallmessages.md
+      - name: Get retained messages across all chats
+        href: ../../api/chat-getallretainedmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
     - name: Apps
       items:
       - name: List apps in chat
@@ -603,8 +621,6 @@ items:
       items:
       - name: List messages in channel
         href: ../../api/channel-list-messages.md
-      - name: Get delta of messages in channel
-        href: ../../api/chatmessage-delta.md
       - name: Create subscription for new channel messages
         href: ../../api/subscription-post-subscriptions.md
       - name: Get message in channel
@@ -647,6 +663,8 @@ items:
         href: ../../api/chatmessage-get.md
       - name: Get messages across all chats for user
         href: ../../api/chats-getallmessages.md
+      - name: Get delta chat messages for user
+        href: ../../api/chatmessage-delta.md
       - name: Get all channel messages
         href: ../../api/channel-getallmessages.md
       - name: Create subscription for new chat messages
@@ -973,6 +991,16 @@ items:
       href: ../../api/workforceintegration-update.md
     - name: Delete
       href: ../../api/workforceintegration-delete.md
+  - name: Working time schedule
+    items:
+    - name: Working time schedule
+      href: ../../resources/workingtimeschedule.md
+    - name: Get
+      href: ../../api/workingtimeschedule-get.md
+    - name: Start working time
+      href: ../../api/workingtimeschedule-startworkingtime.md
+    - name: End working time
+      href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
     - name: Change tracked entity
@@ -999,5 +1027,7 @@ items:
       href: ../../resources/timeoffitem.md
     - name: Time range
       href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
     - name: Workforce integration encryption
       href: ../../resources/workforceintegrationencryption.md

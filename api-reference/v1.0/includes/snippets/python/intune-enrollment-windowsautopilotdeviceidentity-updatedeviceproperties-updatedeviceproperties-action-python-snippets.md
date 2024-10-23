@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.devicemanagement.windowsautopilotdeviceidentities.item.update_device_properties.update_device_properties_post_request_body import UpdateDevicePropertiesPostRequestBody
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UpdateDevicePropertiesPostRequestBody(
 	user_principal_name = "User Principal Name value",
 	addressable_user_name = "Addressable User Name value",

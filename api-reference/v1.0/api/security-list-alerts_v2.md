@@ -119,8 +119,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.alert",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.security.alert)"
 }
 -->
 ``` http
@@ -171,7 +170,10 @@ Content-type: application/json
           "firstSeenDateTime": "2020-09-12T07:28:32.4321753Z",
           "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
           "azureAdDeviceId": null,
-          "deviceDnsName": "tempDns",
+          "deviceDnsName": "yonif-lap3.middleeast.corp.microsoft.com",
+          "hostName": "yonif-lap3",
+          "ntDomain": null,
+          "dnsDomain": "middleeast.corp.microsoft.com",
           "osPlatform": "Windows10",
           "osBuild": 22424,
           "version": "Other",

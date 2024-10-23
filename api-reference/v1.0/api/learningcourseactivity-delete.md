@@ -54,11 +54,11 @@ If unsuccessful, this method returns one of the responses below:
 |Scenario|HTTP code|Code|Message|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
+|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
-|Bad request|404|notFound|The requested assignment ID doesn’t exist.|
+|Bad request|404|notFound|The requested assignment ID doesn't exist.|
 |Internal server error|500|internalServerError|Internal server error.|
 |Request throttled|429|tooManyRequests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}.|
 |Service unavailable|503|serviceUnavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
@@ -123,17 +123,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-### Error conditions
-
-|Scenario|HTTP code|Code|Message|Details|
-|:---|:---|:---|:---|:---|
-|Method not supported for entity|405|MethodNotAllowed|This method isn't supported for this entity type.  See the Microsoft Graph documentation for the methods applicable to this entity|
-|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
-|Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
-|Bad request|400|Bad Request|This provider isn't enabled for the given tenant.|
-|Bad request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
-|Bad request|404|Not Found|The requested assignment {id} doesn’t exist.|
-|Internal server error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
-|Service unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}|

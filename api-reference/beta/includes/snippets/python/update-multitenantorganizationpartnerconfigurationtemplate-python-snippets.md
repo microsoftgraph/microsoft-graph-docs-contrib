@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.multi_tenant_organization_partner_configuration_template import MultiTenantOrganizationPartnerConfigurationTemplate
 from msgraph_beta.generated.models.cross_tenant_access_policy_inbound_trust import CrossTenantAccessPolicyInboundTrust
 from msgraph_beta.generated.models.inbound_outbound_policy_configuration import InboundOutboundPolicyConfiguration
 from msgraph_beta.generated.models.template_application_level import TemplateApplicationLevel
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = MultiTenantOrganizationPartnerConfigurationTemplate(
 	inbound_trust = CrossTenantAccessPolicyInboundTrust(
 		is_mfa_accepted = True,

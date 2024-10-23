@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.drives.item.items.item.thumbnails.thumbnails_request_builder import ThumbnailsRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ThumbnailsRequestBuilder.ThumbnailsRequestBuilderGetQueryParameters(
 		select = ["c300x400_crop"],
 )

@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "m365appsinstallationoptions_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/m365appsinstallationoptions-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-+ Global administrator
-+ Office apps administrator
+When calling on behalf of a user, the user needs to belong to the Office apps administrator role.
 
 ## HTTP request
 

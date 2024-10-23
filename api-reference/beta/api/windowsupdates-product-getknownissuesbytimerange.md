@@ -3,7 +3,7 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ The following table shows the parameters that must be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |daysInPast|Int32|The number of days to look up in the past. This filter is applied on all known issues that are in final status and have a resolved date time.|
-|includeAllActive|Boolean|If set to `true`, the response includes all active known issues. If set to `false`, the response doesn't include any active known issues.| 
+|includeAllActive|Boolean|If set to `true`, the response includes all active known issues. If set to `false`, the response doesn't include any active known issues.|
 
 ## Request headers
 
@@ -86,24 +86,12 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIs
 [!INCLUDE [sample-code](../includes/snippets/go/windowsupdatesgetknownissuesbytimerange-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/windowsupdatesgetknownissuesbytimerange-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/windowsupdatesgetknownissuesbytimerange-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/windowsupdatesgetknownissuesbytimerange-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/windowsupdatesgetknownissuesbytimerange-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/windowsupdatesgetknownissuesbytimerange-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

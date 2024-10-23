@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectio
 [!INCLUDE [sample-code](../includes/snippets/php/sharepointprotectionpolicy-get-siteinclusionrules-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointprotectionpolicy-get-siteinclusionrules-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/sharepointprotectionpolicy-get-siteinclusionrules-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -186,6 +190,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusiness
 [!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -274,6 +282,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionP
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-get-mailboxinclusionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-get-mailboxinclusionrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -3,7 +3,7 @@ title: "driverUpdateCatalogEntry resource type"
 description: "Represents the metadata for driver update content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |description|String|The description of the content.|
 |displayName|String|The display name of the content. Read-only. Inherited from [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |driverClass|String|The classification of the driver.|

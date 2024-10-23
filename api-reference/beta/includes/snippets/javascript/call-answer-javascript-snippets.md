@@ -21,7 +21,8 @@ const answer = {
   ],
   callOptions: {
     '@odata.type': '#microsoft.graph.incomingCallOptions',
-    isContentSharingNotificationEnabled: true
+    isContentSharingNotificationEnabled: true,
+    isDeltaRosterEnabled: true
   },
   participantCapacity: 200
 };

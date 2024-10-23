@@ -44,7 +44,7 @@ Represents a location where multiple users or a group of users can store files a
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
 |id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
-|status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive `,  `active `. Read-only.|
+|status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive `, `active `. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 
 ## Relationships
@@ -53,12 +53,13 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
 
 ### roles property values
 
 |Value|Description|
 |:---|:---|
-|reader|Readers can read **fileStorageContainer** metadata and the content inside.|
+|reader|Readers can read **fileStorageContainer** metadata and the contents inside.|
 |writer|Writers can read and modify **fileStorageContainer** metadata and contents inside.|
 |manager|Managers can read and modify **fileStorageContainer** metadata and contents inside and manage the permissions to the container.|
 |owner|Owners can read and modify **fileStorageContainer** metadata and contents inside, manage container permissions, and delete and restore containers.|
@@ -86,7 +87,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.fileStorageContainerViewpoint"
   },
   "status": "String",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
 }
 ```
 

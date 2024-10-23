@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "8cbf08da-6075-4861-9cb8-867a842c9222",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMicrosoft365CopilotUsageUserDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMicrosoft365CopilotUsageUserDetail](https://learn.microsoft.com/en-us/graph/api/reportRoot-getMicrosoft365CopilotUsageUserDetail?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8cbf08da-6075-4861-9cb8-867a842c9222",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMicrosoft365CopilotUserCountSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMicrosoft365CopilotUserCountSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot-getMicrosoft365CopilotUserCountSummary?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8cbf08da-6075-4861-9cb8-867a842c9222",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMicrosoft365CopilotUserCountTrend",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMicrosoft365CopilotUserCountTrend](https://learn.microsoft.com/en-us/graph/api/reportRoot-getMicrosoft365CopilotUserCountTrend?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "8cbf08da-6075-4861-9cb8-867a842c9222",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-09-10T07:13:26.0138198Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "99aa7c6b-f063-4278-917a-4438043904ea",
           "ApiChange": "Relationship",
           "ChangedApiName": "admin",

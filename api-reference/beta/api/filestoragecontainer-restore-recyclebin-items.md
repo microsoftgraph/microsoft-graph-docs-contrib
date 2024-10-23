@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /storageContainers/{containerId}/recycleBin/items/restore
+POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
 ```
 
 ## Request headers
@@ -58,6 +58,7 @@ If successful, this method returns a `207 Multi-Status` response code and the se
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_filestoragecontainer_recyclebin_items",
@@ -66,13 +67,19 @@ The following example shows a request.
 -->
 
 ``` http
-POST  https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
+POST  https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
 Content-Type: application/json
 
 {
   "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebin-items-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

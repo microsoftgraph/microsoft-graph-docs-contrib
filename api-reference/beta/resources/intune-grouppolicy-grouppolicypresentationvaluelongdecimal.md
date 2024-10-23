@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # groupPolicyPresentationValueLongDecimal resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 The entity represents an unsigned long value of a long decimal text box presentation on a policy definition.
 

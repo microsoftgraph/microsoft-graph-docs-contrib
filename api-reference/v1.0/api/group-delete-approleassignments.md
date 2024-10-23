@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_delete_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-approleassignments-permissions.md)]
 
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

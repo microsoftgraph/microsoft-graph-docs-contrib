@@ -53,35 +53,35 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-educationcategory-to-educationassignment-classid-assignid-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-educationcategory-from-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-educationcategory-to-educationassignment-classid-assignid-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/remove-educationcategory-from-educationassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-classid-assignid-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/remove-educationcategory-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-classid-assignid-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/remove-educationcategory-from-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-educationcategory-to-educationassignment-classid-assignid-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-educationcategory-from-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/add-educationcategory-to-educationassignment-classid-assignid-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/remove-educationcategory-from-educationassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-classid-assignid-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/remove-educationcategory-from-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/add-educationcategory-to-educationassignment-classid-assignid-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/remove-educationcategory-from-educationassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

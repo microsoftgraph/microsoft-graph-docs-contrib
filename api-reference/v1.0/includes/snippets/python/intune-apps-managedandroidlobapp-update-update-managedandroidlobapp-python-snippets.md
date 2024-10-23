@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.managed_android_lob_app import ManagedAndroidLobApp
 from msgraph.generated.models.mime_content import MimeContent
 from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublishingState
 from msgraph.generated.models.managed_app_availability import ManagedAppAvailability
 from msgraph.generated.models.android_minimum_operating_system import AndroidMinimumOperatingSystem
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ManagedAndroidLobApp(
 	odata_type = "#microsoft.graph.managedAndroidLobApp",
 	display_name = "Display Name value",

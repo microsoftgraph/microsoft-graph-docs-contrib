@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.workplace_sensor_device import WorkplaceSensorDevice
 from msgraph_beta.generated.models.workplace_sensor import WorkplaceSensor
 from msgraph_beta.generated.models.workplace_sensor_type import WorkplaceSensorType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkplaceSensorDevice(
 	device_id = "contoso_9D6816",
 	display_name = "Contoso 9D6816 Device",

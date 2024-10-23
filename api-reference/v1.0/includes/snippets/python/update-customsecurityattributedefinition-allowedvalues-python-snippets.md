@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.directory.custom_security_attribute_definitions.item.custom_security_attribute_definition_item_request_builder import CustomSecurityAttributeDefinitionItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.custom_security_attribute_definition import CustomSecurityAttributeDefinition
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CustomSecurityAttributeDefinition(
 	additional_data = {
 			"allowed_values@delta" : [

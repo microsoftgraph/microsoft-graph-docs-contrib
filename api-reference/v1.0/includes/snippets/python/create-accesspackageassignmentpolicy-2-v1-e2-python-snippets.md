@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
 from msgraph.generated.models.allowed_target_scope import AllowedTargetScope
@@ -26,9 +27,7 @@ from msgraph.generated.models.day_of_week import DayOfWeek
 from msgraph.generated.models.recurrence_range import RecurrenceRange
 from msgraph.generated.models.recurrence_range_type import RecurrenceRangeType
 from msgraph.generated.models.access_package import AccessPackage
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "policy for external access requests",
 	description = "policy for users from connected organizations to request access, with two stages of approval.",
