@@ -29,7 +29,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [List by user role](../api/virtualeventtownhall-getbyuserrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the signed-in user is either the organizer or a coorganizer. |
 | [List by user ID and role](../api/virtualeventtownhall-getbyuseridandrole.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) collection | Get a list of **virtualEventTownhall** objects where the specified user is either the organizer or a coorganizer. |
-| [Set external event information](../api/virtualeventtownhall-setexternaleventinformation.md) | None | PLACEHOLDER: Set the external information for a [virtualEventTownhall](../resources/virtualeventtownhall.md).]
+| [Set external event information](../api/virtualeventtownhall-setexternaleventinformation.md) | None | Set the external information for a [virtualEventTownhall](../resources/virtualeventtownhall.md).]
 
 ## Properties
 
