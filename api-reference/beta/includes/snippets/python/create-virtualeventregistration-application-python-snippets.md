@@ -41,6 +41,12 @@ request_body = VirtualEventRegistration(
 			],
 		),
 	],
+	additional_data = {
+			"external_registration_information" : {
+					"referrer" : "Facebook",
+					"registration_id" : "myExternalRegistrationId",
+			},
+	}
 )
 
 result = await graph_client.solutions.virtual_events.webinars.by_virtual_event_webinar_id('virtualEventWebinar-id').registrations.post(request_body)
