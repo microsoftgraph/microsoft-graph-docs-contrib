@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TODO: PLACEHOLDER.
+Link external webinar event information to a webinar event through setting an externalEventId.
 
 ## Permissions
 
