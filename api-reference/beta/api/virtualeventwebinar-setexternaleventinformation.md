@@ -1,6 +1,6 @@
 ---
 title: "virtualEventWebinar: set external event information"
-description: "TODO: PLACEHOLDER."
+description: Link external webinar event information to a webinar event
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
