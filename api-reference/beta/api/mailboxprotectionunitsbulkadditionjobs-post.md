@@ -58,6 +58,7 @@ If successful, this method returns a `201 Created` response code and a [mailboxP
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionunitsbulkadditionjobs_post"
@@ -74,6 +75,12 @@ Content-Type: application/json
     "directoryObjectIds" : ["1fec4e78-bce4-4aaf-ab1b-5451cc387264"]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailboxprotectionunitsbulkadditionjobs-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

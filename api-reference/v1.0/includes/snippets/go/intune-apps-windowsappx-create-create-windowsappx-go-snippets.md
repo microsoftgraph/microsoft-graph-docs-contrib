@@ -46,7 +46,7 @@ committedContentVersion := "Committed Content Version value"
 requestBody.SetCommittedContentVersion(&committedContentVersion) 
 fileName := "File Name value"
 requestBody.SetFileName(&fileName) 
-size := int64(4)
+size := int32(4)
 requestBody.SetSize(&size) 
 applicableArchitectures := graphmodels.X86_WINDOWSARCHITECTURE 
 requestBody.SetApplicableArchitectures(&applicableArchitectures) 

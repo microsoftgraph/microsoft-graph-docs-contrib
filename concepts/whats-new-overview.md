@@ -29,6 +29,8 @@ Updated the endpoints of the following methods:
 
 [Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
 
+Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) instead of [directoryRole](/graph/api/resources/directoryrole) and [directoryRoleTemplate](/graph/api/resources/directoryroletemplate).
+
 ### Security | eDiscovery
 
 - Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata) method.
@@ -37,6 +39,10 @@ Updated the endpoints of the following methods:
 ### Teamwork and communications | Apps
 
 Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp) in the Microsoft Teams app catalog.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions) to indicate whether delta roster is enabled for a call.
 
 ### Teamwork and communications | Messaging
 
@@ -64,6 +70,14 @@ Updated the endpoints of the following methods:
 - [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta&preserve-view=true)
 - [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta&preserve-view=true)
 
+### Device and app management | Cloud licensing
+
+- Use the new cloud licensing [usageRight](/graph/api/resources/cloudlicensing-usageright?view=graph-rest-beta&preserve-view=true) entity that is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**. This new entity supports the following operations:
+  -  [List usage rights for a group](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
+  -  [List usage rights for a user](/graph/api/cloudlicensing-usercloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
+  -  [Get usage rights for a group or user](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true)
+- Use the **cloudLicensing** property on a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) or [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) to get their relationships with cloud licensing resources.
+
 ### Device and app management | Cloud PC
 
 - Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
@@ -86,17 +100,11 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
   - [Get](/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
   - [Get](/graph/api/virtualeventtownhall-getbyuserrole?view=graph-rest-beta&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
 
-### Device and app management | Cloud licensing
-
-- Use the new cloud licensing [usageRight](/graph/api/resources/cloudlicensing-usageright?view=graph-rest-beta&preserve-view=true) entity that is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**. This new entity supports the following operations:
-  -  [List usage rights for a group](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
-  -  [List usage rights for a user](/graph/api/cloudlicensing-usercloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true)
-  -  [Get usage rights for a group or user](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true)
-- Use the **cloudLicensing** property on a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) or [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) to get their relationships with cloud licensing resources.
-
 ### Teamwork and communications | Messaging
 
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Updated the [chatMessage: delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- [Get](/graph/api/chatmessage-get?view=graph-rest-beta&preserve-view=true#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
+- [Remove multiple members](/graph/api/conversationmember-remove?view=graph-rest-beta&preserve-view=true) from a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) in a single request.
 
 ### Users
 
