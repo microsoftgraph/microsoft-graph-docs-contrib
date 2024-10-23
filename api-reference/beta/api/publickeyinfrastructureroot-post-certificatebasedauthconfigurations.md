@@ -51,7 +51,7 @@ You can specify the following properties when creating a **certificateBasedAuthP
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. This value is `null` for objects that are not deleted.Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |displayName|String|The name of the certificateBasedAuthPki object. Optional.|
 |status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki entity which can be upload or delete. Optional.|
 |statusDetails|String|The status details of the upload/deleted operation of PKI(Public Key Infrastructure). Optional.|

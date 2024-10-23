@@ -1,6 +1,6 @@
 ---
 title: "certificateBasedAuthPki: upload"
-description: "Get the PKI file and populate the certificateAuthorities."
+description: "Append additional certificate authority details to a certificateBasedAuthPki resource."
 author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the PKI file and populate the certificateAuthorities.
+Append additional certificate authority details to a certificateBasedAuthPki resource.
 
 ## Permissions
 

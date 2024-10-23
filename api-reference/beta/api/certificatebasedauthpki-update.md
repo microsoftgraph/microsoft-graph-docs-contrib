@@ -50,11 +50,11 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. Inherited from base class. `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|displayName|String|The name of the **certificateBasedAuthPki** object. Optional.|
-|status|String|The status of any asynchronous jobs run on the **certificateBasedAuthPki** object which can be uploaded or deleted. Optional.|
+|deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. This value is `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|displayName|String|The name of the certificateBasedAuthPki object. Optional.|
+|status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki object which can be uploaded or deleted. Optional.|
 |statusDetails|String|The status details of the upload/deleted operation of PKI(Public Key Infrastructure). Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the **certificateBasedAuthPki** object was created or last modified. Required.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the certificateBasedAuthPki object was created or last modified. Required.|
 
 
 
