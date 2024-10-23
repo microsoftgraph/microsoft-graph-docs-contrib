@@ -36,7 +36,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
 |createdDateTime|DateTimeOffset|The date and time when the certificate authority was created.|
 |deletedDateTime|DateTimeOffset|The date and time when the certificate authority was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
+|deltacertificateRevocationListUrl|String|The URL to check to find out whether the certificate is revoked.|
 |displayName|String|The display name of the certificate authority.|
 |expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires.|
 |id|String|The id of the certificate authority. Inherited from [entity](../resources/entity.md).|
