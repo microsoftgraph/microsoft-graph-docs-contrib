@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get reports related to the performance of Cloud PCs.
+Get report related to the performance of Cloud PCs.
 
 ## Permissions
 
@@ -60,7 +60,7 @@ The following table shows the parameters that you can use with this method.
 
 | Member                       | Description       |
 | :--------------------------- | :---------------- |
-| performanceTrendReport     | Indicates daily aggregated report that shows list of connection quality including `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, `LowTimeConnectedCloudPcCount` of Cloud PCs in last 7 days under a tenant, every single report item is an aggregation of last 28 days dating back from the trigger time.  | 
+| performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
 
 ## Response
