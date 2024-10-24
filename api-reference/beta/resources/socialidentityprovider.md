@@ -16,13 +16,10 @@ Represents social identity providers with [External Identities](/azure/active-di
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
-For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the identity provider type can be Google or Facebook.
-
-Configuring an identity provider in your Microsoft Entra tenant enables new Microsoft Entra B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+In a workforce tenant, the identity provider type can be Google or Facebook. In an external tenant, the identity provider type can be Apple, Google or Facebook.
 
 In an Azure AD B2C tenant, the identity provider type can be Microsoft, Google, Facebook, Amazon, LinkedIn or Twitter. The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
 
-Configuring an identity provider in your Azure AD B2C tenant enables users to sign up and sign in using a social account supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
 
 ## Methods
 
@@ -38,7 +35,7 @@ For the list of API operations for managing social identity providers, see the [
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`. Required.|
 |id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Required.|
+|identityProviderType|String|For external and workforce tenants, possible values: `Facebook`, `Google` <br> For Azure AD B2C tenants, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
 ### Where to get the client identifier and secret
 

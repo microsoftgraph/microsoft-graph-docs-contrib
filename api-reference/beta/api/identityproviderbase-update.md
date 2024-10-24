@@ -1,9 +1,9 @@
 ---
 title: "Update identityProvider"
-description: "Update properties of an identityProvider."
+description: "Update the properties of an identityProvider."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "namkedia"
+author: "brozbab"
 ms.subservice: "entra-sign-in"
 ---
 
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the specified identity provider configured in the tenant.
+Update the properties of the specified external identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource in Microsoft Entra External ID.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can update a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) resource.
 
-In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+In Azure AD B2C, this operation can update a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -47,31 +47,20 @@ PATCH /identity/identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Microsoft Entra tenant.
+In Microsoft Entra External ID, provide a JSON object the request body with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or [oidcIdentityProvider](#oidcidentityprovider) object.
 
-In Azure AD B2C, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
+In Azure AD B2C, provide a JSON object the request body with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
 ### socialIdentityProvider object
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider. |
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
+|identityProviderType|String|For external and workforce tenants, possible values: `Facebook`, `Google`.<br>For Azure AD B2C tenants, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
-### openIdConnectIdentityProvider object
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange. The id_token is returned directly from the authorization response.</li></ul>|
-|displayName|String|The display name of the identity provider.|
-|domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
-|metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
-|responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`.|
-|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
-|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
 ### appleManagedIdentityProvider object
 
@@ -83,18 +72,33 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |keyId|String|The Apple key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
-### oidcIdentityProvider
+### openIdConnectIdentityProvider object
+
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange in the authentication pipeline. In this mode, the id_token is returned directly from the authorization response.</li></ul>|
+|domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+|metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
+|responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`.|
+|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
+|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
+
+
+### oidcIdentityProvider object
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the identity provider.|
 |clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
-|issuer|String|The issuer url.|
-|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
+|issuer|String|The issuer URI. Issuer URI is a case-sensitive URL using https scheme contains scheme, host, and optionally, port number and path components and no query or fragment components.<br> **Note:** Configuring other Microsoft Entra tenants as an external identity provider is currently not supported. As a result, the `microsoftonline.com` domain in the issuer URI is not accepted.|
+|wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`.<br> **Note:** The metadata document should, at minimum, contain the following properties: `issuer`, `authorization_endpoint`, `token_endpoint`, `token_endpoint_auth_methods_supported`, and  `response_types_supported`. Visit [OpenID Connect Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html) specifications for more details.|
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
-|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings|
-|claimsMapping|[inboundclaimMapping](../resources/inboundclaimmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra ID, Microsoft Entra ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings.<li> use **oidcClientSecretAuthentication** type for setting up your identity provider with `client_secret_post` or `client_secret_jwt authentication` methods. <li> use **oidcPrivateJwtKeyClientAuthentication** type for setting up your identity provider with `private_key_jwt` authentication method. <li>Due to security reasons, `client_secret_basic` authentication method is not supported.|
+|inboundclaimMapping|[inboundclaimMapping](../resources/inboundclaimmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra External ID, Microsoft Entra External ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
 
 ## Response
 
@@ -104,7 +108,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 <a name='example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c'></a>
 
-### Example 1: Update a specific **social identity provider** (Microsoft Entra ID or Azure AD B2C)
+### Example 1: Update a **social identity provider**
 
 #### Request
 
@@ -124,7 +128,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.socialIdentityProvider",
-  "clientSecret": "1111111111111"
+  "clientSecret": "4294967296"
 }
 ```
 
@@ -182,78 +186,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a specific **OpenID Connect identity provider** (only for Azure AD B2C)
 
-#### Request
-
-The following example shows a request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_openidconnectprovider_forAzure_AD_B2C",
-  "sampleKeys": ["OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444"]
-}
--->
-
-``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444
-Content-type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.socialIdentityProvider",
-  "responseType": "id_token"
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-forazure-ad-b2c-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-openidconnectprovider-forazure-ad-b2c-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-forazure-ad-b2c-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-forazure-ad-b2c-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-forazure-ad-b2c-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-openidconnectprovider-forazure-ad-b2c-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-openidconnectprovider-forazure-ad-b2c-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-openidconnectprovider-forazure-ad-b2c-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-The following example shows the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 3: Update a specific **Apple identity provider** (only for Azure AD B2C)
+### Example 2: Update an **Apple identity provider**
 
 #### Request
 
@@ -324,7 +258,78 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Update a specific **OIDC identity provider** (only for Azure AD External)
+### Example 3: Update an **OpenID Connect identity provider** (Azure AD B2C tenant)
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_openidconnectprovider_forAzure_AD_B2C",
+  "sampleKeys": ["OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444"]
+}
+-->
+
+``` http
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/Contoso-OIDC-00001111-aaaa-2222-bbbb-3333cccc4444
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
+  "responseType": "id_token"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-forazure-ad-b2c-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-openidconnectprovider-forazure-ad-b2c-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-forazure-ad-b2c-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-forazure-ad-b2c-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-forazure-ad-b2c-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-openidconnectprovider-forazure-ad-b2c-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-openidconnectprovider-forazure-ad-b2c-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-openidconnectprovider-forazure-ad-b2c-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Update an **OpenID Connect identity provider** (external tenant)
 
 #### Request
 
@@ -339,7 +344,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDCIdentityProvider
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/ContosoOIDCIdentityProvider
 Content-type: application/json
 
 {
@@ -347,6 +352,7 @@ Content-type: application/json
   "displayName": "Contoso"
 }
 ```
+
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-appleidentityprovider-csharp-snippets.md)]
