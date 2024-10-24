@@ -50,7 +50,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
 |certificate|Binary|The type of certificate authority. Possible values are: `root`, `intermediate`. Required.|
 |displayName|String|The name of the certificate authority. Optional.|

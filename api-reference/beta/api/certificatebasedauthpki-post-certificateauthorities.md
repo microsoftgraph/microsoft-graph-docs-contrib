@@ -51,7 +51,7 @@ You can specify the following properties when creating a **certificateAuthorityD
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, and `unknownFutureValue`. Optional.|
 |certificate|Binary|The public key of the certificate authority. Required.|
 |displayName|String|The display name of the certificate authority. Optional.|
