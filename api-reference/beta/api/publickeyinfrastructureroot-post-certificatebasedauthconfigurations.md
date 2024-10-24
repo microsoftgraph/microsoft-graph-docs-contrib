@@ -28,10 +28,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
+{
+  "displayName": "Contoso PKI"
 }
--->
+
 ``` http
 POST /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
@@ -51,12 +51,7 @@ You can specify the following properties when creating a **certificateBasedAuthP
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. This value is `null` for objects that are not deleted.Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |displayName|String|The name of the certificateBasedAuthPki object. Optional.|
-|status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki entity which can be upload or delete. Optional.|
-|statusDetails|String|The status details of the upload/deleted operation of PKI(Public Key Infrastructure). Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when certificateBasedAuthPki object was created or last modified. Required.|
-
 
 
 ## Response
@@ -68,21 +63,13 @@ If successful, this method returns a `201 Created` response code and a [certific
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "create_certificatebasedauthpki_from_"
-}
--->
+
 ``` http
 POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-  "deletedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "status": "String",
-  "statusDetails": "String"
+  "displayName": "Contoso PKI"
 }
 ```
 
@@ -91,12 +78,7 @@ Content-Type: application/json
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.certificateBasedAuthPki"
-}
--->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,7 +89,7 @@ Content-Type: application/json
   "deletedDateTime": null,
   "displayName": "Contoso PKI",
   "status": "succeeded",
-  "statusDetails": "String",
+  "statusDetails": null,
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```

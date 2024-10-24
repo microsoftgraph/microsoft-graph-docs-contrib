@@ -51,8 +51,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|uploadUrl|String|The URL where the service can download the PKI file and populate the certificateAuthorities.|
-|sha256FileHash|String|A sequence of numbers and letters to check that your copy of a downloaded update file is identical to the original.|
+|uploadUrl|String|The URL where the service can download the PKI file and populate the certificateAuthorities. This can be any http or https publicly accessible internet facing URL.|
+|sha256FileHash|String|A sequence of numbers and letters to check that your copy of a downloaded update file is identical to the original. This can be computed using the [Get_FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.4#examples).|
 
 
 ## Response
@@ -64,11 +64,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "certificatebasedauthpkithis.upload"
-}
--->
+
 ``` http
 POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}/upload
 Content-Type: application/json
@@ -83,11 +79,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
