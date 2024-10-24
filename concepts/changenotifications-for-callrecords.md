@@ -39,11 +39,11 @@ Content-Type: application/json
 
 Change notifications for call records support both `create` and `update` notification types. A subscription for `create` changes only sends a single notification when a call record is first generated. A call record is created after a call or meeting ends and remains accessible for 30 days. 
 
-A subscription for `update` changes includes an initial notification when the record is first generated and any subsequent notifications as that record is modified. Because specific call record attributes depend on client-side signals, which can be subject to delays or interruptions due to network issues, a call record may undergo updates with new or revised information after its initial creation. These changes trigger an `update` notification, and the record's `version` field is incremented to indicate the modification.
+A subscription for `update` changes includes an initial notification when the record is first generated and any subsequent notifications as that record is modified. Because specific call record attributes depend on client-side signals, which can be subject to delays or interruptions due to network issues, a call record might undergo updates with new or revised information after its initial creation. These changes trigger an `update` notification, and the record's `version` field is incremented to indicate the modification.
 
 The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
-### Example 2: Subscription request filtered by participant Entra Object ID
+### Example 2: Subscription request filtered by participant Microsoft Entra Object ID
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -59,7 +59,7 @@ Content-Type: application/json
 }
 ```
 
-Change notifications for call records can be optionally filtered by participant Entra Object ID. By specifying this filter, change notifications will only be sent when a call participant's Entra Object ID is included in the filter parameter.
+You can optionally filter change notifications for call records using a participant's Microsoft Entra Object ID. Change notifications filtered by Object ID are sent when a call participant's Microsoft Entra Object ID is included in the filter parameter.
 
 This filter supports `eq`, `or`, and `in` operators for the `id` attribute of the `participants` collection in a callRecord resource. For more details on using $filter, see [Use the $filter query parameter](/graph/filter-query-parameter).
 
