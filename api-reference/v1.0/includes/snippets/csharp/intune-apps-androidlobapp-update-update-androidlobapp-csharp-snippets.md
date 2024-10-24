@@ -30,7 +30,7 @@ var requestBody = new AndroidLobApp
 	PublishingState = MobileAppPublishingState.Processing,
 	CommittedContentVersion = "Committed Content Version value",
 	FileName = "File Name value",
-	Size = 4L,
+	Size = 4,
 	PackageId = "Package Id value",
 	MinimumSupportedOperatingSystem = new AndroidMinimumOperatingSystem
 	{

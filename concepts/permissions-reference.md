@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 10/14/2024
+ms.date: 10/21/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -941,6 +941,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### ChangeManagement.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 418dae40-2b65-4819-900c-519a04e4d278 | 4628dff5-c33e-4fde-b17a-b64e7acb1bed |
+| DisplayText | Read Change Management items | Read Change Management items |
+| Description | Allows to read all Change Management items. | Allows to read all Change Management items. |
+| AdminConsentRequired | Yes | No |
 
 ---
 
