@@ -4902,6 +4902,26 @@ Possible values for user account types (group membership), per Windows definitio
 | logoutUrl |
 | unknownFutureValue |
 
+### signUpIdentifierType values 
+
+|Member|
+|:---|
+|emailAddress|
+|unknownFutureValue|
+
+### signUpStage values 
+
+|Member|
+|:---|
+|credentialCollection|
+|credentialValidation|
+|credentialFederation|
+|consent|
+|attributeCollectionAndValidation|
+|userCreation|
+|tenantConsent|
+|unknownFutureValue|
+
 ### nativeAuthenticationApisEnabled values
 
 | Member |
