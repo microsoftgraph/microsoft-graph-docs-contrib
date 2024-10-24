@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/auditlogroot-list-signups.md)|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Get a list of the [selfServiceSignUp](../resources/selfservicesignup.md) objects and their properties.|
+|[List](../api/selfservicesignup-list.md)|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Get a list of the [selfServiceSignUp](../resources/selfservicesignup.md) objects and their properties.|
 |[Get](../api/selfservicesignup-get.md)|[selfServiceSignUp](../resources/selfservicesignup.md)|Read the properties and relationships of a [selfServiceSignUp](../resources/selfservicesignup.md) object.|
 
 ## Properties

@@ -7,7 +7,7 @@ ms.subservice: "entra-monitoring-health"
 author: "nanguil"
 ---
 
-# signUpStatus resource type
+# signUpIdentity resource type
 
 Namespace: microsoft.graph
 
