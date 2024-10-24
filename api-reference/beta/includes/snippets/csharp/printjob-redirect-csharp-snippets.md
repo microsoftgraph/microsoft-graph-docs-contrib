@@ -20,8 +20,8 @@ var requestBody = new RedirectPostRequestBody
 		{
 			new IntegerRange
 			{
-				Start = 1L,
-				End = 1L,
+				Start = 1,
+				End = 1,
 			},
 		},
 		Quality = PrintQuality.Medium,

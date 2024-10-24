@@ -16,7 +16,7 @@ var requestBody = new CreateUploadSessionPostRequestBody
 	{
 		AttachmentType = AttachmentType.File,
 		Name = "flower",
-		Size = 3483322L,
+		Size = 3483322,
 	},
 };
 

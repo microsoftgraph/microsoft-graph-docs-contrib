@@ -20,7 +20,7 @@ displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 version := "Version value"
 requestBody.SetVersion(&version) 
-sizeInByte := int64(10)
+sizeInByte := int32(10)
 requestBody.SetSizeInByte(&sizeInByte) 
 deviceCount := int32(11)
 requestBody.SetDeviceCount(&deviceCount) 
