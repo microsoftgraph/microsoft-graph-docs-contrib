@@ -25,6 +25,8 @@ In the context of eDiscovery, contains custodians, searches, review sets. For de
 |[Delete ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|None|Delete an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
 |[List custodians](../api/security-ediscoverycase-list-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get the ediscoveryCustodian resources from the custodians navigation property.|
 |[Create ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new ediscoveryCustodian object.|
+|[List legalHolds](../api/security-ediscoverycase-list-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Get the ediscoveryHoldPolicy resources from the legalHolds navigation property.|
+|[Create ediscoveryHoldPolicy](../api/security-ediscoverycase-post-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Create a new ediscoveryHoldPolicy object.|
 |[List noncustodialDataSources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Get the ediscoveryNoncustodialDataSource resources from the noncustodialDataSources navigation property.|
 |[Create ediscoveryNoncustodialDataSource](../api/security-ediscoverycase-post-noncustodialdatasources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Create a new ediscoveryNoncustodialDataSource object.|
 |[List operations](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get the caseOperation resources from the operations navigation property.|
@@ -65,6 +67,7 @@ In the context of eDiscovery, contains custodians, searches, review sets. For de
 |Relationship|Type|Description|
 |:---|:---|:---|
 |custodians|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Returns a list of case **ediscoveryCustodian** objects for this **case**.|
+|legalHolds|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Returns a list of case **eDiscoveryHoldPolicy** objects for this **case**.|
 |noncustodialDataSources|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Returns a list of case **ediscoveryNoncustodialDataSource** objects for this **case**.|
 |operations|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Returns a list of case **caseOperation** objects for this **case**.|
 |reviewSets|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Returns a list of **eDiscoveryReviewSet** objects in the case.|
