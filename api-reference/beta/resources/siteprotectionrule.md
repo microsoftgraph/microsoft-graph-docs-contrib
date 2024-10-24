@@ -40,7 +40,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification to the rule.|
 |siteExpression|String|Contains a site expression. For examples, see [siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples).|
-|status|[protectionRuleStatus](../resources/siteprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/siteprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported.|
 
 ### siteExpression examples
 
