@@ -19,8 +19,9 @@ Represents the identity of the user who has initiated a sign-up
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|signUpIdentifier|String|Specifies the identifer the user is trying to utilize to sign up.|
-|SignUpIdentifierType|String|Specifies the type of sign-up the user has initiated.  Possible values include `federated` and `emailAddress`|
+|signUpIdentifier|String|The identification that the user is trying to utilize to sign up.|
+|SignUpIdentifierType|String|The type of sign-up the user has initiated.  Possible values include: `federated` and `emailAddress`|
+
 
 ### Filtering
 
