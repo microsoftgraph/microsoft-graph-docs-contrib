@@ -1,6 +1,6 @@
 ---
 title: "meetingNote resource type"
-description: "Represents an meeting note associated with a set of meeting AI Insights"
+description: "Represents a meeting note associated with a set of meeting AI Insights"
 author: "Anjali-Patle"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an meeting note associated with a [call AI Insight](callaiinsight.md).
+Represents a meeting note associated with a [call AI Insight](callaiinsight.md).
 
 
 ## Properties
