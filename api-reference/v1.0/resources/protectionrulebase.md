@@ -46,7 +46,7 @@ The following limitations apply to this resource:
 |active | The status of the protection rule when it's running.|
 |completed | The status of the protection rule when it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.    |
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
 
 ## Relationships
 
