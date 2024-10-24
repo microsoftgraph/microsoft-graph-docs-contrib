@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getAudioStreamQoEMetricsForTeams"
-description: "Get metrics based on the percentage of audio streams for which Quality of Experience(QoE) telemetry was received by the Teams service."
+description: "Get metrics based on the percentage of audio streams for which quality of experience (QoE) telemetry was received by the Teams service."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get metrics based on the percentage of audio streams for which Quality of Experience(QoE) telemetry was received by the Teams service.
+Get metrics based on the percentage of audio streams for which quality of experience (QoE) telemetry was received by the Teams service.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
