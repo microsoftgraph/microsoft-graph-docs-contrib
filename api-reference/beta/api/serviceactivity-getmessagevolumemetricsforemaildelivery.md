@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMessageVolumeMetricsForEmailDelivery"
-description: "Get the number of messages successfully delivered by Exchange. Success is based on message delivery within 15 minutes of its receipt by Exchange Online."
+description: "Get the number of messages successfully delivered by Exchange."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
