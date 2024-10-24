@@ -1,5 +1,55 @@
 ﻿{
   "changelog": [
+       {
+        "ChangeList": [
+          {
+            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "protectionUnitsBulkJobStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionUnitsBulkJobStatus** enumeration type.",
+            "Target": "protectionUnitsBulkJobStatus"
+          },
+          {
+            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [driveProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+            "Target": "driveProtectionUnitsBulkAdditionJob"
+          },
+          {
+            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "mailboxProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [mailboxProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+            "Target": "mailboxProtectionUnitsBulkAdditionJob"
+          },
+          {
+            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "protectionUnitsBulkJobBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [protectionUnitsBulkJobBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitsBulkJobBase?view=graph-rest-beta) resource.",
+            "Target": "protectionUnitsBulkJobBase"
+          },
+          {
+            "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "siteProtectionUnitsBulkAdditionJob",
+            "ChangeType": "Addition",
+            "Description": "Added the [siteProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+            "Target": "siteProtectionUnitsBulkAdditionJob"
+          }
+        ],
+        "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-16T16:34:31.8488321Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
+      },
       {
         "ChangeList": [
           {
