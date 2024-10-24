@@ -276,7 +276,7 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Retrieve bulk action status reports
+    - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
