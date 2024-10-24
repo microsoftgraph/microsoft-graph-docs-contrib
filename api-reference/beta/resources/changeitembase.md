@@ -1,6 +1,6 @@
 ---
 title: "changeItemBase resource type"
-description: "**TODO: Add Description**"
+description: "Represents either a planned change or planned new feature in Entra. This is an abstract type."
 author: "garretraziel"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
@@ -26,15 +26,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changeItemService|changeItemService|**TODO: Add Description**.The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|**TODO: Add Description**.The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description**|
-|documentationUrls|String collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|shortDescription|String|**TODO: Add Description**|
-|systemTags|String collection|**TODO: Add Description**|
-|tags|String collection|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
+|changeItemState|changeItemState|Indicates whether this feature or change has been released or if it is an upcoming release..The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
+|description|String|Description of the new feature or change announcement.|
+|documentationUrls|String collection|Link to the feature or change documentation.|
+|id|String|Unique identifier for the new feature or change announcement. Inherited from [entity](../resources/entity.md).|
+|shortDescription|String|A short description of the feature or change.|
+|systemTags|String collection|Microsoft Entra specific tags.|
+|tags|String collection|Identity and Access Management (IAM) related tags.|
+|title|String|Title of the feature or change.|
 
 ## Relationships
 None.

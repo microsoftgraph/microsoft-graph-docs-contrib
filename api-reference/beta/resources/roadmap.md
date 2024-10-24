@@ -1,6 +1,6 @@
 ---
 title: "roadmap resource type"
-description: "**TODO: Add Description**"
+description: "Represents the Microsoft Entra product roadmap, which comprises public previews and recent general availability releases."
 author: "garretraziel"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the Microsoft Entra product roadmap, which comprises public previews and recent general availability releases.
 
 Inherits from [changeItemBase](../resources/changeitembase.md).
 
@@ -26,19 +26,19 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|roadmapItemCategory|**TODO: Add Description**.The possible values are: `aadConnectCloudSync`, `aadConnectSync`, `accessControl`, `authZAccessDelegation`, `azureADDomainServices`, `b2BB2C`, `collaboration`, `developerExperience`, `deviceLifecycleManagement`, `directory`, `endUserExperiences`, `entitlementManagement`, `extensibility`, `gdpr`, `goLocal`, `identityGovernance`, `identityLifecycleManagement`, `identitySecurityProtection`, `inboundtoEntraID`, `monitoringReporting`, `outboundtoOnPremisesApplications`, `outboundtoSaaSApplications`, `permissionsManagement`, `platform`, `privilegedIdentityManagement`, `reinventCollaboration`, `sso`, `standards`, `thirdPartyIntegration`, `userAuthentication`, `userManagement`, `decentralizedIdentities`, `entraCloudSync`, `entraConnect`, `entraDomainServices`, `other`, `unknownFutureValue`.|
-|changeItemService|changeItemService|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
-|deliveryStage|roadmapItemDeliveryStage|**TODO: Add Description**.The possible values are: `privatePreview`, `publicPreview`, `ga`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|documentationUrls|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|gotoLink|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|publishedDateTime|DateTimeOffset|**TODO: Add Description**|
-|shortDescription|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|systemTags|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|title|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
+|category|roadmapItemCategory|Indicates the category with which this item is associated. The possible values are: `aadConnectCloudSync`, `aadConnectSync`, `accessControl`, `authZAccessDelegation`, `azureADDomainServices`, `b2BB2C`, `collaboration`, `developerExperience`, `deviceLifecycleManagement`, `directory`, `endUserExperiences`, `entitlementManagement`, `extensibility`, `gdpr`, `goLocal`, `identityGovernance`, `identityLifecycleManagement`, `identitySecurityProtection`, `inboundtoEntraID`, `monitoringReporting`, `outboundtoOnPremisesApplications`, `outboundtoSaaSApplications`, `permissionsManagement`, `platform`, `privilegedIdentityManagement`, `reinventCollaboration`, `sso`, `standards`, `thirdPartyIntegration`, `userAuthentication`, `userManagement`, `decentralizedIdentities`, `entraCloudSync`, `entraConnect`, `entraDomainServices`, `other`, `unknownFutureValue`.|
+|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
+|changeItemState|changeItemState|Indicates whether this feature has been released or if it is an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
+|deliveryStage|roadmapItemDeliveryStage|Denotes the current lifecycle state of the feature.The possible values are: `privatePreview`, `publicPreview`, `ga`, `unknownFutureValue`.|
+|description|String|Description of the feature. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|documentationUrls|String collection|Link to the feature documentation. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|gotoLink|String|Link to the feature page in the Entra admin center.|
+|id|String|Unique identifier for the new feature. Inherited from [entity](../resources/entity.md).|
+|publishedDateTime|DateTimeOffset|Feature release date.|
+|shortDescription|String|A short description of the feature.Inherited from [changeItemBase](../resources/changeitembase.md).|
+|systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|title|String|Title of the feature. Inherited from [changeItemBase](../resources/changeitembase.md).|
 
 ## Relationships
 None.

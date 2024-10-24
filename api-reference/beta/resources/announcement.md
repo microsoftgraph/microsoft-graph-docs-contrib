@@ -1,6 +1,6 @@
 ---
 title: "announcement resource type"
-description: "**TODO: Add Description**"
+description: "Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies."
 author: "garretraziel"
 ms.localizationpriority: medium
 ms.subservice: "service-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies.
 
 Inherits from [changeItemBase](../resources/changeitembase.md).
 
@@ -26,19 +26,19 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|announcementDateTime|DateTimeOffset|**TODO: Add Description**|
-|changeItemService|changeItemService|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|documentationUrls|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|impactLink|String|**TODO: Add Description**|
-|isCustomerActionRequired|Boolean|**TODO: Add Description**|
-|shortDescription|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|systemTags|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
-|targetDateTime|DateTimeOffset|**TODO: Add Description**|
-|title|String|**TODO: Add Description** Inherited from [changeItemBase](../resources/changeitembase.md).|
+|announcementDateTime|DateTimeOffset|Change announcement date.|
+|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
+|changeItemState|changeItemState|Indicates whether this change has been released or if it is an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
+|description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|documentationUrls|String collection|Link to the change documentation. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|id|String|Unique identifier for the change announcement. Inherited from [entity](../resources/entity.md).|
+|impactLink|String|Change impact URL.|
+|isCustomerActionRequired|Boolean|Indicates whether the customer needs to take any action for this change.|
+|shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|targetDateTime|DateTimeOffset|Date on which the change will be rolled out.|
+|title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
 
 ## Relationships
 None.
