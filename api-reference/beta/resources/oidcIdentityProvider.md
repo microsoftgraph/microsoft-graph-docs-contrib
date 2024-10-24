@@ -22,6 +22,7 @@ None.
 
 For the list of API operations for managing OpenID Connect identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
+
 ## Properties
 
 |Property|Type|Description|
