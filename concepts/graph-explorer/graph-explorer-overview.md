@@ -20,7 +20,7 @@ Here’s a step-by-step tutorial for using Graph Explorer.
 
 ### Step 1: Access Graph Explorer
 
-1. Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/).
+- Go to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/).
 
 ### Step 2: Explore a sample query
 
