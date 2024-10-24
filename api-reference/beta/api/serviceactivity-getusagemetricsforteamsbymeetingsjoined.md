@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getUsageMetricsForTeamsByMeetingsJoined"
-description: "Get usage metrics based on the number of times users joined Teams meeting without errors."
+description: "Get usage metrics based on the number of times users joined Teams meetings without errors."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get usage metrics based on the number of times users joined Teams meeting without errors.
+Get usage metrics based on the number of times users joined Teams meetings without errors.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
