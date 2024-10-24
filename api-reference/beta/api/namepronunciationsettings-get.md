@@ -22,6 +22,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "namepronunciationsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/namepronunciationsettings-get-permissions.md)]
 
+# [HTTP](#tab/http)
+<!-- {"blockType": "request", "name": "get_namepronunciationsettings" } -->
+
 ## HTTP request
 
 <!-- {
