@@ -60,7 +60,7 @@ The following table shows the possible formats for the site expression.
 |active | The status of the protection rule upon using the `/run` API.|
 |completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
