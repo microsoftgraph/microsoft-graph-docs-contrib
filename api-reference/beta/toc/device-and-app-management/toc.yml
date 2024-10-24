@@ -63,6 +63,29 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing (preview)
+  displayName: Cloud licensing, Microsoft Cloud Licensing
+  items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
+  - name: Usage right
+    items:
+    - name: Usage right
+      href: ../../resources/cloudlicensing-usageright.md
+    - name: List for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC
   items:
   - name: Overview
@@ -253,6 +276,8 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get frontline report
@@ -414,6 +439,8 @@ items:
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
       href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
+    - name: Cloud PC bulk move
+      href: ../../resources/cloudpcbulkmove.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on

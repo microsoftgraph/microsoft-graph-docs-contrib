@@ -18,6 +18,9 @@ Invalidates all of the user's refresh tokens issued to applications and session 
 
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application receives an error. If this happens, the application needs to acquire a new refresh token by making a request to the OAuth 2.0 `/authorize` endpoint, which forces the user to sign in.
 
+> [!IMPORTANT]
+> This API won't be promoted to general availability status. We recommend that you use the [user: revokeSignInSessions](../api/user-revokesigninsessions.md) API instead.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

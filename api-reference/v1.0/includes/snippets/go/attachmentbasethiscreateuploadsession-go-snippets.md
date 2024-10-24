@@ -22,7 +22,7 @@ attachmentType := graphmodels.FILE_ATTACHMENTTYPE
 attachmentInfo.SetAttachmentType(&attachmentType) 
 name := "flower"
 attachmentInfo.SetName(&name) 
-size := int64(3483322)
+size := int32(3483322)
 attachmentInfo.SetSize(&size) 
 requestBody.SetAttachmentInfo(attachmentInfo)
 
