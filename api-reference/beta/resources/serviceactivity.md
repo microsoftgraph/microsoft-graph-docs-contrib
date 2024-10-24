@@ -69,7 +69,7 @@ For details, see [Microsoft 365 Apps monitoring](/microsoft-365/enterprise/micro
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get active users metrics for Excel for the web](../api/serviceactivity-getactiveusermetricsforexcelweb.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get all the active usage based on the number of active users opening or saving Excel for the web.|
+|[Get active users metrics for Excel for the web](../api/serviceactivity-getactiveusermetricsforexcelweb.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get all the active usage based on the number of active users who open or save Excel for the web.|
 |[Get active users metrics for OneNote for the web](../api/serviceactivity-getactiveusermetricsforonenoteweb.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get all the active usage based on the number of active users opening or saving OneNote for the web.|
 |[Get active users metrics for PowerPoint for the web](../api/serviceactivity-getactiveusermetricsforpowerpointweb.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get all the active usage based on the number of active users opening or saving PowerPoint for the web.|
 |[Get active users metrics for Visio for the web](../api/serviceactivity-getactiveusermetricsforvisioweb.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get all the active usage based on the number of active users opening or saving Visio for the web.|
