@@ -31,6 +31,7 @@ None.
 |directoryAudits|[directoryAudit](../resources/directoryaudit.md) collection|Read-only. Nullable.|
 |provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Microsoft Entra provisioning service and its associated properties.|
 |signIns|[signIn](../resources/signin.md) collection|Read-only. Nullable.|
+|signUps|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Read-only. Nullable.|
 
 ## JSON representation
 

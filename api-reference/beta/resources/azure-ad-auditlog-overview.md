@@ -26,6 +26,7 @@ Microsoft Entra provides four types of activity reports:
 - Custom security attribute audit logs
 - Sign-ins
 - Provisioning
+- Self-Service Sign-ups (Entra External ID)
 
 ### Directory audit logs
 
@@ -55,6 +56,10 @@ The provisioning report helps you see all the actions performed by the Microsoft
 - What roles were imported from Amazon Web Services?
 - What users were unsuccessfully created from Workday?
 
+### Self-Service Sign-ups (Entra External ID)
+The sign-ups report helps you see all the sign-up attempts (failed and successful) in Microsoft Entra External ID.
+
+
 ## What can I do with activity reports in Microsoft Graph?
 
 Here are popular requests for working with report data:
@@ -65,6 +70,7 @@ GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directo
 GET custom security attribute audit logs | [https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/customSecurityAttributeAudits&version=beta)
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
+GET tenant user (self-service) sign-ups | [https://graph.microsoft.com/beta/auditLogs/signsUps](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signUps&version=beta)
 
 ## License requirements
 
@@ -77,3 +83,4 @@ Activity reports are available for features that you've licensed. If you have a 
   - [signIn](signin.md) resource type. 
   - [provisioningObjectSummary](provisioningobjectsummary.md) resource type.
   - [customSecurityAttributeAudit](customsecurityattributeaudit.md) resource type.
+  - [selfServiceSignUp](selfservicesignup.md) resource type.
