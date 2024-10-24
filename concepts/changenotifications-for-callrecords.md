@@ -61,7 +61,7 @@ Content-Type: application/json
 
 Change notifications for call records can be optionally filtered by participant Entra Object ID. By specifying this filter, change notifications will only be sent when a call participant's Entra Object ID is included in the filter parameter.
 
-This filter supports `eq`, `or`, and `in` operators on the `participants` collection of a callRecord resource. For more details on using $filter, see [Use the $filter query parameter](/graph/filter-query-parameter).
+This filter supports `eq`, `or`, and `in` operators for the `id` attribute of the `participants` collection in a callRecord resource. For more details on using $filter, see [Use the $filter query parameter](/graph/filter-query-parameter).
 
 ### Example 3: Subscription notification
 ```json
