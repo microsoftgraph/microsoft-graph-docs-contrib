@@ -1,6 +1,6 @@
 ---
 title: "selfServiceSignUp resource type"
-description: "Details self-service sign-up activity of Entra External ID users on a tenant."
+description: "Details self-service sign-up activity of Microsoft Entra External ID users on a tenant."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -35,8 +35,8 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
 |id|String|Unique ID representing the sign-in activity. <br/><br/> Supports `$filter` (`eq`). Inherited from [entity](../resources/entity.md).|
 |signUpIdentity|[signUpIdentity](../resources/signupidentity.md)|Unique identifier for self-service sign-up user|
-|signUpIdentityProvider|String|Describes the type of account for which the user registered. Values include "Email OTP", "Email Password", "Google".|
-|signUpStage|signUpStage|Describes the step in the sign-up flow.The possible values are: `credentialCollection`, `credentialValidation`, `credentialFederation`, `consent`, `attributeCollectionAndValidation`, `userCreation`, `tenantConsent`, `unknownFutureValue`.|
+|signUpIdentityProvider|String|Describes the type of account for which the user registered. Values include `Email OTP`, `Email Password`, `Google`.|
+|signUpStage|signUpStage|Describes the step in the sign-up flow. The possible values are: `credentialCollection`, `credentialValidation`, `credentialFederation`, `consent`, `attributeCollectionAndValidation`, `userCreation`, `tenantConsent`, `unknownFutureValue`.|
 |status|[signUpStatus](../resources/signupstatus.md)|Sign-up status. Includes the error code and description of the error (if a sign-up failure or interrupt occurs). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |userSnapshot|[ciamUserSnapshot](../resources/ciamusersnapshot.md)|User created as a result of self-service sign-up.|
 
