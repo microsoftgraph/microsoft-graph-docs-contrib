@@ -6,7 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroup -CountVariable CountVar -Filter "hasMembersWithLicenseErrors eq true" -Property "id,displayName"  -ConsistencyLevel eventual 
-
+Get-MgBetaGroup -Filter "hasMembersWithLicenseErrors eq true" -Property "id,displayName" 
 
 ```

@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|TeamMember.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|TeamMember.ReadWrite.All|Not available.|
+

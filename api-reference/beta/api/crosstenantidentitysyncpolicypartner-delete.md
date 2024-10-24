@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete the user synchronization policy for a partner-specific configuration.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
