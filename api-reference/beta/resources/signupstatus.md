@@ -24,7 +24,6 @@ Provides the status (Success or Failure) of the sign-up step
 |errorCode|Int32|Provides the 5-6 digit error code that's generated during a sign-in failure. Check out the [list of error codes and messages](). ARTICLE DOES NOT YET EXIST - should be /entra/identity/monitoring-health/howto-troubleshoot-sign-up-errors#sign-up-error-codes|
 |failureReason|String|Provides the error message or the reason for failure for the corresponding sign-up activity. Check out the [list of error codes and messages](). ARTICLE DOES NOT YET EXIST - should be /entra/identity/monitoring-health/howto-troubleshoot-sign-up-errors#sign-up-error-codes|
 
-
 ### Filtering
 
 When filtering on the **signUpIdentity** property for a **selfServiceSignUp**:
