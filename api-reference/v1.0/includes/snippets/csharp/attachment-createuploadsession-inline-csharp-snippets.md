@@ -16,7 +16,7 @@ var requestBody = new CreateUploadSessionPostRequestBody
 	{
 		AttachmentType = AttachmentType.File,
 		Name = "scenary",
-		Size = 7208534L,
+		Size = 7208534,
 		IsInline = true,
 		ContentId = "my_inline_picture",
 	},

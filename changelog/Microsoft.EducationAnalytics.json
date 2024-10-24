@@ -44,6 +44,14 @@
         },
         {
           "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "challengingWord",
+          "ChangeType": "Addition",
+          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingword?view=graph-rest-beta) resource type.",
+          "Target": "challengingWord"
+        },
+        {
+          "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
           "ApiChange": "Relationship",
           "ChangedApiName": "readingAssignmentSubmission",
           "ChangeType": "Addition",

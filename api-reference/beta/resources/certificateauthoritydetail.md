@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The properties of each certificate authority object contained in the public key infrastructure resource.
+The properties of each certificate authority object contained in the [certificateBasedAuthPki](../resources/certificateBasedAuthPki.md) resource.
 
 
 Inherits from [directoryObject](../resources/directoryobject.md).
@@ -39,7 +39,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |deltacertificateRevocationListUrl|String|The URL to check to find out whether the certificate is revoked.|
 |displayName|String|The display name of the certificate authority.|
 |expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires.|
-|id|String|The id of the certificate authority. Inherited from [entity](../resources/entity.md).|
+|id|String|The ID of the certificate authority. Inherited from [entity](../resources/entity.md).|
 |isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
 |issuer|String|The issuer of the certificate authority.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority.|

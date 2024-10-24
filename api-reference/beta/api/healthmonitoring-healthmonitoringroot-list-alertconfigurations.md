@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfiguration
 
 ---
 
-
 ### Response
 
 The following example shows the response.

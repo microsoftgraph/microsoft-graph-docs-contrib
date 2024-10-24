@@ -20,9 +20,9 @@ use := "sig"
 requestBody.SetUse(&use) 
 kty := "RSA"
 requestBody.SetKty(&kty) 
-nbf := int64(1508969811)
+nbf := int32(1508969811)
 requestBody.SetNbf(&nbf) 
-exp := int64(1508969811)
+exp := int32(1508969811)
 requestBody.SetExp(&exp) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

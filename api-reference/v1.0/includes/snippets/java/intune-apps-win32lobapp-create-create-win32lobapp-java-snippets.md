@@ -28,7 +28,7 @@ mobileApp.setNotes("Notes value");
 mobileApp.setPublishingState(MobileAppPublishingState.Processing);
 mobileApp.setCommittedContentVersion("Committed Content Version value");
 mobileApp.setFileName("File Name value");
-mobileApp.setSize(4L);
+mobileApp.setSize(4);
 mobileApp.setInstallCommandLine("Install Command Line value");
 mobileApp.setUninstallCommandLine("Uninstall Command Line value");
 mobileApp.setApplicableArchitectures(EnumSet.of(WindowsArchitecture.X86));
