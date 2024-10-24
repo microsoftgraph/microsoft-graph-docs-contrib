@@ -20,6 +20,6 @@ In delegated scenarios with work or school accounts, the signed-in user must als
     - Catalog owner
     - Identity Governance Administrator  
 
-In app-only scenarios, the calling app can be assigned one of the preceding supported roles instead of the `EntitlementManagement.ReadWrite.All` application permission. A user that is assigned access to the access package through the `specificAllowedTargets` property is less privileged than the `EntitlementManagement.ReadWrite.All` application permission. If it's a delegated call without the `URL` property in [logicAppTriggerEndpointConfiguration](../api/resources/logicapptriggerendpointconfiguration.md) the caller also needs to be authorized on the Logic App.
+In app-only scenarios, the calling app can be assigned one of the preceding supported roles instead of the `EntitlementManagement.ReadWrite.All` application permission. The *Catalog reader* role is less privileged than the `EntitlementManagement.Read.All` application permission.. If it's a delegated call without the `URL` property in [logicAppTriggerEndpointConfiguration](../api/resources/logicapptriggerendpointconfiguration.md) the caller also needs to be authorized on the Logic App.
 
 For more information, see [Delegation and roles in entitlement management](/entra/id-governance/entitlement-management-delegate) and [how to delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers).
