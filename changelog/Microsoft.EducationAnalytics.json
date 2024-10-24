@@ -55,16 +55,16 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "readingAssignmentSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the **readingAssignmentSubmission** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
-          "Target": "reportRoot"
+          "Description": "Added the **readingAssignmentSubmission** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Target": "reportsRoot"
         },
         {
           "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
           "ApiChange": "Relationship",
           "ChangedApiName": "reflectCheckInResponse",
           "ChangeType": "Addition",
-          "Description": "Added the **reflectCheckInResponse** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
-          "Target": "reportRoot"
+          "Description": "Added the **reflectCheckInResponse** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Target": "reportsRoot"
         }
       ],
       "Id": "77ef65e3-8390-4369-a212-b29b9b7bfaf4",
