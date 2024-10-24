@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.models.identitygovernance.WorkflowVersion result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").versions().byWorkflowVersionVersionNumber(2).get();
+com.microsoft.graph.models.identitygovernance.WorkflowVersion result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").versions().byWorkflowVersionVersionNumber("{workflowVersion-versionNumber}").get();
 
 
 ```
