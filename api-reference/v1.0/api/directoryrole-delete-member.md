@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directoryrole_delete_member" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-delete-member-permissions.md)]
 
+[!INCLUDE [rbac-directory-role-apis-write](../includes/rbac-for-apis/rbac-directory-role-apis-write.md)]
+
 ## HTTP request
 
 You can address the directory role using either its **id** or **roleTemplateId**.
