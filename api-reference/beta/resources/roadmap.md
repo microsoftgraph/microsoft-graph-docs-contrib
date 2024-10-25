@@ -3,7 +3,7 @@ title: "roadmap resource type"
 description: "Represents the Microsoft Entra product roadmap, which comprises public previews and recent general availability releases."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

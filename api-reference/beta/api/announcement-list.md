@@ -3,7 +3,7 @@ title: "List announcement objects"
 description: "Get a list of the announcement objects and their properties."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

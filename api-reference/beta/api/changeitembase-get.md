@@ -3,7 +3,7 @@ title: "Get changeItemBase"
 description: "Read the properties and relationships of a changeItemBase object."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

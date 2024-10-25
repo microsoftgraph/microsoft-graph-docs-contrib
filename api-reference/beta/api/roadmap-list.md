@@ -3,7 +3,7 @@ title: "List roadmap objects"
 description: "Get a list of the roadmap objects and their properties."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

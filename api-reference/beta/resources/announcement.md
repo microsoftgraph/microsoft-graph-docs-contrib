@@ -3,7 +3,7 @@ title: "announcement resource type"
 description: "Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

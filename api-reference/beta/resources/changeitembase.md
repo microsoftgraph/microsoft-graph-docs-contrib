@@ -3,7 +3,7 @@ title: "changeItemBase resource type"
 description: "Represents either a planned change or planned new feature in Entra. This is an abstract type."
 author: "garretraziel"
 ms.localizationpriority: medium
-ms.subservice: "service-communications"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
