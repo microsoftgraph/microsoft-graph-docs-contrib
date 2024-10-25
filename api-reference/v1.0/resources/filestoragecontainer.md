@@ -51,9 +51,10 @@ Represents a location where multiple users or a group of users can store files a
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
-|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.
+|recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 
 ### roles property values
 
