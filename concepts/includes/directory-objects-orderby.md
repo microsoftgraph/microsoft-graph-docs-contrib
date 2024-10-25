@@ -34,8 +34,8 @@ The following table summarizes support for `$orderby` by properties of directory
 | device             | createdDateTime               | ![Advanced][AQP]    |
 | device             | deletedDateTime               | ![Advanced][AQP]    |
 | device             | displayName                   | ![Advanced][AQP]    |
-| group              | deletedDateTime               | ![Advanced][AQP]    |
 | group              | createdDateTime               | ![Advanced][AQP]    |
+| group              | deletedDateTime               | ![Advanced][AQP]    |
 | group              | displayName                   | ![Default][RDS]     |
 | servicePrincipal   | createdDateTime               | ![Advanced][AQP]    |
 | servicePrincipal   | deletedDateTime               | ![Advanced][AQP]    |
