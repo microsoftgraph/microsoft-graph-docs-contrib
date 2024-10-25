@@ -37,7 +37,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|targetDateTime|DateTimeOffset|Date on which the change roll out.|
+|targetDateTime|DateTimeOffset|Date on which the change will roll out.|
 |title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
 
 ## Relationships

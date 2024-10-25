@@ -35,7 +35,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |gotoLink|String|Link to the feature page in the Entra admin center.|
 |id|String|Unique identifier for the new feature. Inherited from [entity](../resources/entity.md).|
 |publishedDateTime|DateTimeOffset|Feature release date.|
-|shortDescription|String|A short description of the feature.Inherited from [changeItemBase](../resources/changeitembase.md).|
+|shortDescription|String|A short description of the feature. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |title|String|Title of the feature. Inherited from [changeItemBase](../resources/changeitembase.md).|
