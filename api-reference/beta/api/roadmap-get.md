@@ -87,20 +87,20 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.roadmap",
     "id": "8370d119-d695-4dd9-bce2-00e893fadf7d",
     "changeItemState": "available",
-    "changeItemService": "enterpriseApps",
+    "changeItemService": "microsoftAuthenticatorApp",
     "tags": null,
     "systemTags": [
       "entra_roadmap_highlight_new_feature"
     ],
     "documentationUrls": [
-      "https://learn.microsoft.com/en-us/entra/identity-platform/claims-customization-custom-claims-policy"
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-enable-authenticator-passkey"
     ],
-    "shortDescription": "Custom Claims API allows admins to manage and update additional claims for their Enterprise Applications seamlessly through MS Graph.",
-    "title": "Custom Claims API for Claims Configuration of Enterprise Apps",
+    "shortDescription": "For enterprises that use passwords today, passkeys (FIDO2) provide a seamless way for workers to authenticate without entering a username or password. Passkeys (FIDO2) provide improved productivity for workers, and have better security.",
+    "title": "Enable passkeys (FIDO2) for your organization",
     "description": "*Ommited for brevity.*",
     "deliveryStage": "publicPreview",
-    "category": "sso",
-    "publishedDateTime": "2024-10-01T07:00:00Z",
+    "category": "userAuthentication",
+    "publishedDateTime": "2024-04-27T07:00:00Z",
     "gotoLink": "null"
   }
 }

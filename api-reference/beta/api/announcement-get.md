@@ -86,22 +86,22 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.announcement",
     "id": "ddde9e3b-7ee4-4066-a62e-fb1fc5fb87a1",
-    "changeItemState": "comingSoon",
+    "changeItemState": "available",
     "changeItemService": "mfA",
     "tags": [
-      "Identity Security"
+      "Identity Modernization"
     ],
     "systemTags": [
       "entra_change_announcements_90days"
     ],
     "documentationUrls": [
-      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mandatory-multifactor-authentication"
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-migrate-mfa-server-to-azure-mfa?WT.mc_id=Portal-Microsoft_AAD_IAM"
     ],
-    "shortDescription": "Learn how multifactor authentication (MFA) can protect your data and identity and get ready for upcoming MFA requirement.",
-    "title": "Upcoming MFA Enforcement on Microsoft Entra admin center",
+    "shortDescription": "Azure Multi-Factor Authentication Server (MFA Server) isn't available for new deployments and will be deprecated. Customers who are using MFA Server should move to using cloud-based Microsoft Entra multifactor authentication.",
+    "title": "Migrate from MFA Server to Microsoft Entra multifactor authentication",
     "description": "*Omitted for brevity*",
-    "announcementDateTime": "2024-08-16T00:00:00Z",
-    "targetDateTime": "2024-08-16T00:00:00Z",
+    "announcementDateTime": "2022-09-30T00:00:00Z",
+    "targetDateTime": "2024-09-30T00:00:00Z",
     "impactLink": null,
     "isCustomerActionRequired": true
   }
