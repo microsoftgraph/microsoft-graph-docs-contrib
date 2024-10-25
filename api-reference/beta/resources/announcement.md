@@ -1,5 +1,5 @@
 ---
-title: "announcement resource type"
+title: "Announcement resource type"
 description: "Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies."
 author: "garretraziel"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
-# announcement resource type
+# Announcement resource type
 
 Namespace: microsoft.graph
 
@@ -27,8 +27,8 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |announcementDateTime|DateTimeOffset|Change announcement date.|
-|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|Indicates whether this change has been released or if it is an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md).The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
+|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
+|changeItemState|changeItemState|Indicates whether this change is released or if it's an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
 |description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |documentationUrls|String collection|Link to the change documentation. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |id|String|Unique identifier for the change announcement. Inherited from [entity](../resources/entity.md).|
@@ -37,7 +37,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
 |tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|targetDateTime|DateTimeOffset|Date on which the change will be rolled out.|
+|targetDateTime|DateTimeOffset|Date on which the change roll out.|
 |title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
 
 ## Relationships
