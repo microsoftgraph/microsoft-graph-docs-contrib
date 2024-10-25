@@ -99,6 +99,13 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
 - Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
 - Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
 
+### Sites and lists
+
+Updated the endpoints of the following methods:
+- [Get](/graph/api/pagetemplate-get?view=graph-rest-beta&preserve-view=true)
+- [Update](/graph/api/pagetemplate-update?view=graph-rest-beta&preserve-view=true)
+- [Delete](/graph/api/pagetemplate-delete?view=graph-rest-beta&preserve-view=true)
+
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration?view=graph-rest-betaa&preserve-view=true) to get or set the external information for a virtual event registration.
