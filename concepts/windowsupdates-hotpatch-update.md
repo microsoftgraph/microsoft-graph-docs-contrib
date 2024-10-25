@@ -29,7 +29,7 @@ Quality updates are represented by the [qualityUpdateCatalogEntry](/graph/api/re
 
 All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
 
-Hotpatch update can be identified by ""isHotpatchUpdate": "true" when its available.
+Hotpatch update can be identified by ""isHotpatchUpdate": "true" when it's available.
 
 The following example shows how to query for all Windows quality updates truncated to show the hotpatch update
 
@@ -322,8 +322,8 @@ HTTP/1.1 202 Accepted
 ```
 
 ## Step 4: Create a deployment  
-A deployment specifies the content to deploy, how and when to deploy the content and the association to the targetted devices.
-The deployment audience id created in step 2 will be required in this step.
+A deployment specifies the content to deploy, how and when to deploy the content and the association to the targeted devices.
+The deployment audience id created in step 2 is required in this step.
   
 ### Request
 
