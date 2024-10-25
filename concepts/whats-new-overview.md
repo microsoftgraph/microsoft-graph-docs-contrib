@@ -25,6 +25,10 @@ Updated the endpoints of the following methods:
 - [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
 - [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits)
 
+### Change notifications
+
+Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the **resource** property in the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource. You can use the [notifyOnUserSpecificProperties](/graph/teams-changenotifications-chat#notification-payloads-for-user-specific-properties) parameter when you subscribe to [notifications in a particular chat](/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).
+
 ### Identity and access | Directory management
 
 [Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
