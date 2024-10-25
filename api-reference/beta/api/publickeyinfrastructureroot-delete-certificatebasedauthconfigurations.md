@@ -28,10 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 DELETE /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```
@@ -55,11 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_certificatebasedauthpki"
-}
--->
+
 ``` http
 DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```
@@ -69,11 +61,7 @@ DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certif
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```

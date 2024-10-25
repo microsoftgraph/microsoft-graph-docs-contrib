@@ -90,6 +90,6 @@ Content-Type: application/json
   "displayName": "Contoso PKI",
   "status": "succeeded",
   "statusDetails": null,
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "2024-10-16T18:09:56Z"
 }
 ```

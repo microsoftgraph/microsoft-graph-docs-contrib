@@ -28,10 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
@@ -59,11 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_certificatebasedauthpki"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
@@ -73,12 +65,7 @@ GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certifica
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.certificateBasedAuthPki)"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -91,8 +78,8 @@ Content-Type: application/json
       "deletedDateTime": null,
       "displayName": "Contoso PKI",
       "status": "succeeded",
-      "statusDetails": "String",
-      "lastModifiedDateTime": "String (timestamp)"
+      "statusDetails": null,
+      "lastModifiedDateTime": "2024-10-16T18:09:56Z"
     }
   ]
 }
