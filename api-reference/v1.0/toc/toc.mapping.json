@@ -1018,8 +1018,9 @@
               ]
             },
             {
-              "name": "Custom authentication extension",
+              "name": "Custom authentication extensions",
               "resources": [
+                "customAuthenticationExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
