@@ -247,42 +247,6 @@ Content-Type: application/json
 }
 ```
 
-### Response
-
-```http
-
-```
-
-A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
-
-### Request
-
-```http
-POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
-Content-type: application/json
- 
-{
-    "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-    "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry": {
-            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "catalog/entries/1"
-        }
-    },
-    "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
-        "expedite": {
-            "isExpedited": true,
-            "isReadinessTest": false
-        },
-        "userExperience": {
-            "daysUntilForcedReboot": 2
-        }
-    }
-}
-```
-
 ## Step 3: Assign devices to the deployment audience
 
 After deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update offers the update to the relevant devices according to the deployment settings.
@@ -322,6 +286,9 @@ HTTP/1.1 202 Accepted
 ```
 
 ## Step 4: Create a deployment  
+
+A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
+
 A deployment specifies the content to deploy, how and when to deploy the content and the association to the targeted devices.
 The deployment audience id created in step 2 is required in this step.
   
