@@ -30,10 +30,10 @@ Your endpoint must provide correct, consistent, and timely HTTP responses in ord
 Your endpoint must also continue to remain authenticated to Microsoft Graph, either by continually renewing your subscription or by responding to lifecycle notifications.
 
 ### HTTP codes and retry logic
-Once the Microsoft Graph change notifications service receives a 2xx class code from your endpoint, the notification is considered sent. As long as the change notifications service receives any other HTML response (even an error code) within 3 seconds, the service continues to try to deliver the notification for up to 4 hours.
+Once the Microsoft Graph change notifications service receives a 2xx class code from your endpoint, the notification is considered sent. As long as the change notifications service receives any other HTML response (even an error code) within 10 seconds, the service continues to try to deliver the notification for up to 4 hours.
 
  - If you're able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
- - If your service may take more than 3 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
+ - If your service may take more than 10 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
 Notifications that fail to deliver will be retried at exponential backoff intervals. Missed notifications may take up to 4 hours to resend once your endpoint comes online.
@@ -41,13 +41,13 @@ Notifications that fail to deliver will be retried at exponential backoff interv
 ### Throttling
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. This may include dropping notifications in a way that they can't be recovered.
 
-1. An endpoint is marked "slow" once more than 10% of responses take longer than 3 seconds in a 10-minute window.
+1. An endpoint is marked "slow" once more than 10% of responses take longer than 10 seconds in a 10-minute window.
       - Once an endpoint has been marked "slow", any new notifications will be sent on a 10-second delay.
-      - An endpoint exits the "slow" state once less than 10% of responses take longer than 3 seconds in a 10-minute window.
+      - An endpoint exits the "slow" state once less than 10% of responses take longer than 10 seconds in a 10-minute window.
 
-2. An endpoint is marked "drop" once more than 15% of responses take longer than 3 seconds in a 10-minute window.
+2. An endpoint is marked "drop" once more than 15% of responses take longer than 10 seconds in a 10-minute window.
       - Once an endpoint has been marked "drop", any new notifications will be dropped, for up to 10 minutes
-      - An endpoint exits the "drop" state once less than 15% of responses take longer than 3 seconds in a 10-minute window.
+      - An endpoint exits the "drop" state once less than 15% of responses take longer than 10 seconds in a 10-minute window.
 
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hubs](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
 
