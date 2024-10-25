@@ -46,7 +46,10 @@ Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/re
 
 ### Teamwork and communications | Messaging
 
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage).
+- Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage).
+- Use the **displayName** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction) to represent the reaction name in a [chatMessage](/graph/api/resources/chatmessage).
 
 ## October 2024: New in preview only
 
