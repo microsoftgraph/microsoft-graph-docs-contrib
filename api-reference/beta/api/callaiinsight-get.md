@@ -79,7 +79,6 @@ The following example shows how to get a single set of AI insights for an online
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callAiInsight",
@@ -185,7 +184,6 @@ The following example shows how to get a single set of AI insights of an online 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
