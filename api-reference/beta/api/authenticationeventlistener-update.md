@@ -140,3 +140,40 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+### Request
+The following example shows a request to add an application to an authentication event listener's trigger conditions:
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventlistener"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
+Content-Type: application/json
+{
+    "@odata.type": "#microsoft.graph.authenticationConditionApplication",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```
+
+---
+
+### Response
+The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.authenticationConditionApplication",
+  "truncated": true,
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('0313cc37-d421-421d-857b-87804d61e33e')/conditions/applications/includeApplications/$entity",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```
