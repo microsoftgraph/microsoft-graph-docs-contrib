@@ -1,6 +1,6 @@
 ---
 title: "changeItemBase resource type"
-description: "Represents either a planned change or planned new feature in Entra. This is an abstract type."
+description: "Represents either a planned change or planned new feature in Entra."
 author: "garretraziel"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents either a planned change or planned new feature in Entra. This is an abstract type.
+Represents either a planned change or planned new feature in Entra. This resource is an abstract type.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|Indicates whether this feature or change has been released or if it is an upcoming release..The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
+|changeItemState|changeItemState|Indicates whether this feature or change was released or if it's an upcoming release. The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
 |description|String|Description of the new feature or change announcement.|
 |documentationUrls|String collection|Link to the feature or change documentation.|
 |id|String|Unique identifier for the new feature or change announcement. Inherited from [entity](../resources/entity.md).|
