@@ -184,6 +184,10 @@ items:
       href: ../../api/security-ediscoverycase-list-custodians.md
     - name: Create ediscoveryCustodian
       href: ../../api/security-ediscoverycase-post-custodians.md
+    - name: List legalHolds
+      href: ../../api/security-ediscoverycase-list-legalholds.md
+    - name: Create ediscoveryHoldPolicy
+      href: ../../api/security-ediscoverycase-post-legalholds.md
     - name: List noncustodialDataSources
       href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
     - name: Create ediscoveryNoncustodialDataSource
