@@ -1,5 +1,5 @@
 ---
-title: "List columns"
+title: " List columns in fileStorageContainer"
 description: "List columns in a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List columns
+# List columns in fileStorageContainer
 
 Namespace: microsoft.graph
 
