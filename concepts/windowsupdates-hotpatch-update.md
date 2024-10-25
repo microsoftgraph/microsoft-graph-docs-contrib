@@ -36,7 +36,7 @@ The following example shows how to query for all Windows quality updates truncat
 ### Request
 
 ```http
-GET https://deploymentschedulerppe.microsoft.com/deployment/graph/beta/v2/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry')
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry')
 and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true
 and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchEnabled eq true)
 &$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://deploymentschedulerppe.microsoft.com/deployment/graph/beta/v2/$metadata#admin/windows/updates/catalog/entries(microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves(),microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions(knowledgeBaseArticle()))",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries(microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves(),microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions(knowledgeBaseArticle()))",
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
