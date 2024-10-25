@@ -24,12 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "allowedvalue_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/allowedvalue-get-permissions.md)]
 
-The signed-in user must also be assigned one of the following [directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-+ Attribute Definition Reader
-+ Attribute Definition Administrator
-
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following privileged roles are supported for this operation.
+> - Attribute Definition Reader
+> - Attribute Definition Administrator
+>
+> - By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
