@@ -9,6 +9,8 @@ doc_type: apiPageType
 # accessPackage: filterByCurrentUser
 Namespace: microsoft.graph
 
+> [!CAUTION]
+> The filterByCurrentUser function will be deprecated in the future, and you should no longer take an dependency on it. A future update will be provided for customers who have already taken a dependency on this function.
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
 
