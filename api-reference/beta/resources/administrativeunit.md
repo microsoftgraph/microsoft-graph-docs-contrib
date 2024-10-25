@@ -95,6 +95,7 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "isMemberManagementRestricted": "Boolean",
   "visibility": "String",
   "membershipType": "String",
   "membershipRule": "String",
