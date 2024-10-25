@@ -15,29 +15,28 @@ Hotpatch updates are Monthly B release security updates that can be installed wi
 
 There are no changes required to the existing update ring configurations. The existing ring configurations are honored alongside hotpatch policies.
 
-
 ## Prerequisites
 
 * Devices meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
 * Operating System: Devices must be running Windows 11 24H2 or later.
 * VBS (Virtualization-Based Security): VBS must be enabled to ensure secure installation of Hotpatch updates.
 
-
 ## Step 1: (Optional) Get a list of hotpatch updates
 
-You can query the Windows Autopatch catalog API to get a list of updates that can be expedited to devices as content in a deployment.
+You can query the Windows Autopatch catalog API to get a list of hotpatchable updates that can be deployed to devices as content in a deployment.
 
 Quality updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type.
 
 All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
 
-Hotpatch update can be identified by ""isHotpatchUpdate": "true" when its available. 
+Hotpatch update can be identified by ""isHotpatchUpdate": "true" when its available.
 
 The following example shows how to query for all Windows quality updates truncated to show the hotpatch update
 
 ### Request
 
-https://deploymentschedulerppe.microsoft.com/deployment/graph/beta/v2/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry')
+```http
+GET https://deploymentschedulerppe.microsoft.com/deployment/graph/beta/v2/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry')
 and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true
 and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchEnabled eq true)
 &$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
@@ -221,28 +220,43 @@ Content-Type: application/json
         }
     ]
 }
-
+```
 
 ## Step 2: Create a deployment audience
 Deployment audiences specify content to deploy, how and when to deploy the content, and the targeted devices. The following example shows how to create a deployment audience.
- 
+
 ### Request
- 
+
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 Content-Type: application/json
 {
 }
- 
+```
+
 ### Response
- 
+
 ```http
+HTTP/1.1 201 Created
+Content-Type: application/json
  
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
+    "id": "f660d844-30b7-46e4-a6cf-47e36164d3cb",
+    "applicableContent": []
+}
+```
+
+### Response
+
+```http
+
+```
+
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
- 
- 
+
 ### Request
- 
+
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-type: application/json
@@ -268,29 +282,17 @@ Content-type: application/json
     }
 }
 ```
- 
-### Response
- 
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
- 
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deploymentAudiences/$entity",
-    "id": "f660d844-30b7-46e4-a6cf-47e36164d3cb",
-    "applicableContent": []
-}
- 
+
 ## Step 3: Assign devices to the deployment audience
- 
+
 After deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update offers the update to the relevant devices according to the deployment settings.
- 
+
 Devices are automatically registered when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
- 
+
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
- 
+
 ### Request
- 
+
 ```http
  
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/ f660d844-30b7-46e4-a6cf-47e36164d3cb /updateAudience
@@ -311,22 +313,20 @@ Content-type: application/json
         }
     ]
 }
- 
- 
- 
+```
+
 ### Response
- 
+
 ```http
 HTTP/1.1 202 Accepted
 ```
- 
+
 ## Step 4: Create a deployment  
 A deployment specifies the content to deploy, how and when to deploy the content and the association to the targetted devices.
 The deployment audience id created in step 2 will be required in this step.
- 
- 
+  
 ### Request
- 
+
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-type: application/json
@@ -356,12 +356,13 @@ Content-type: application/json
         }
     }
 }
- 
+```
+
 ### Response
- 
+
 ```http
 HTTP/1.1 201 Created
- 
+``
 
 ## After a deployment
 
