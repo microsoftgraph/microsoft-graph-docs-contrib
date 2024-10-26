@@ -149,7 +149,7 @@ The following example shows a request to add an application to an authentication
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventlistener"
+  "name": "update_authenticationeventlistener_2"
 }
 -->
 ``` http
