@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directoryrole_list_scopedmembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-list-scopedmembers-permissions.md)]
 
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
+
 ## HTTP request
 
 You can address the directory role using either its **id** or **roleTemplateId**.

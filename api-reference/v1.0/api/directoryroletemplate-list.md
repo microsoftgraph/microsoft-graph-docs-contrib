@@ -26,6 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directoryroletemplate_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryroletemplate-list-permissions.md)]
 
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. *Global Reader* is the least privileged role supported for this operation.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
