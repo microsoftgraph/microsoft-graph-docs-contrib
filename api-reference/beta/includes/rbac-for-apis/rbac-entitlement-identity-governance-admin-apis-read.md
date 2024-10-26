@@ -8,7 +8,7 @@ ms.topic: include
 - connectedOrganization
 -->
 
-In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through one of the following options:
+In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through the following option:
 
 - [A role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged role is *Identity Governance Administrator*. **This is the least privileged option.**
 
