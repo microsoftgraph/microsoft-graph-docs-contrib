@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](windowsupdates-deployments.md) of Windows 10/11 feature updates, hotpatch and expedited quality updates, and driver updates. This topic focuses on the deployment of hotpatch quality updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md). For information about deploying driver updates, see [Manage driver update](./windowsupdates-manage-driver-update.md). 
 
-Hotpatch updates are Monthly B release security updates that can be installed without requiring you to restart the device. It’s designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help secure devices faster, making it easier for organizations to maintain security while keeping workflows uninterrupted.
+Hotpatch updates are Monthly B release security updates that can be installed without requiring you to restart the device. It is designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help secure devices faster, making it easier for organizations to maintain security while keeping workflows uninterrupted.
 
 There are no changes required to the existing update ring configurations. The existing ring configurations are honored alongside hotpatch policies.
 
@@ -25,11 +25,11 @@ There are no changes required to the existing update ring configurations. The ex
 
 You can query the Windows Autopatch catalog API to get a list of hotpatchable updates that can be deployed to devices as content in a deployment.
 
-Quality updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type.
+The [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type represents quality updates.
 
-All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
+All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify which operating system builds each quality update affects.
 
-Hotpatch update can be identified by ""isHotpatchUpdate": "true" when it's available.
+The "isHotpatchUpdate": "true" property identifies a hotpatch update when it's available.
 
 The following example shows how to query for all Windows quality updates truncated to show the hotpatch update
 
@@ -248,7 +248,7 @@ Content-Type: application/json
 
 After deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update offers the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
+When devices are added to the members or exclusions collections of a deployment audience, the system automatically registers them by creating an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object if it doesn't already exist.
 
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 
@@ -284,7 +284,7 @@ HTTP/1.1 202 Accepted
 
 ## Step 4: Create a deployment  
 
-A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes deploying the latest security update to the audience. If the latest security update is unavailable, the deployment will automatically offer the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The device client side policy for deferral will be honored.
+A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes deploying the latest security update to the audience. If the latest security update is unavailable, the deployment automatically offers the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The device client side policy for deferral is honored.
 
 The deployment audience id created in step 2 is required in this step.
   
@@ -325,7 +325,7 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 201 Created
-```
+``
 
 ## After a deployment
 
