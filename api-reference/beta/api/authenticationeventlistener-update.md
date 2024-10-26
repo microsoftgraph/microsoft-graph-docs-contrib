@@ -72,8 +72,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following example shows a request to update an authentication event listener's trigger conditions or priority:
+### Example 1: Update an authentication event listener's trigger conditions or priority
+
+#### Request
+The following example shows a request to update an authentication event listener's trigger conditions or priority.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -129,7 +131,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -139,9 +141,11 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+### Example 2: Add an application to an authentication event listener's trigger conditions
 
-### Request
-The following example shows a request to add an application to an authentication event listener's trigger conditions:
+#### Request
+
+The following example shows a request to add an application to an authentication event listener's trigger conditions.
 
 <!-- {
   "blockType": "request",
@@ -159,7 +163,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:
 
 <!-- {
