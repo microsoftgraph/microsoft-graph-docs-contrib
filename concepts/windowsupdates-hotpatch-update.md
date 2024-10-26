@@ -36,10 +36,7 @@ The following example shows how to query for all Windows quality updates truncat
 ### Request
 
 ```http
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry')
-and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true
-and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchEnabled eq true)
-&$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchEnabled eq true) &$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
 ```
 
 ### Response
