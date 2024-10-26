@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ### Permissions to create a new group
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -36,12 +36,12 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create and AdministrativeUnit.Read.All, Group.ReadWrite.All and AdministrativeUnit.Read.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) at the scope of the administrative unit:
-
-* Groups Administrator
-* User Administrator
-
-When these roles are assigned to a service principal, additional permissions are required to read the directory, such as assignment to the Directory Readers role, or having Microsoft Graph application permissions, such as Directory.Read.All.
+> [!IMPORTANT]
+> To create a new group in an administrative unit, the calling principal must be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) at the scope of the administrative unit:
+> - Groups Administrator
+> - User Administrator
+>
+> For app-only scenarios - apart from these roles, the service principal requires additional permissions to read the directory. These permissions can be granted via assignment of supported Microsoft Entra roles, such the Directory Readers role; or they can be granted via Microsoft Graph application permissions that allow reading the directory, such as *Directory.Read.All*.
 
 ## HTTP request
 

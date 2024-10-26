@@ -25,6 +25,10 @@ Updated the endpoints of the following methods:
 - [List mailboxProtectionUnits](/graph/api/backuprestoreroot-list-mailboxprotectionunits)
 - [List siteProtectionUnits](/graph/api/backuprestoreroot-list-siteprotectionunits)
 
+### Change notifications
+
+Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the **resource** property in the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource. You can use the [notifyOnUserSpecificProperties](/graph/teams-changenotifications-chat#notification-payloads-for-user-specific-properties) parameter when you subscribe to [notifications in a particular chat](/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).
+
 ### Identity and access | Directory management
 
 [Get](/graph/api/domain-get-rootdomain) the root domain of a subdomain.
@@ -46,7 +50,10 @@ Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/re
 
 ### Teamwork and communications | Messaging
 
-Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Updated the [chatMessage: delta](/graph/api/chatmessage-delta) method to use a new endpoint that gets the list of delta messages from all chats in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
+- Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage).
+- Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage).
+- Use the **displayName** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction) to represent the reaction name in a [chatMessage](/graph/api/resources/chatmessage).
 
 ## October 2024: New in preview only
 
@@ -95,6 +102,13 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
 
 - Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
 - Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
+
+### Sites and lists
+
+Updated the endpoints of the following methods:
+- [Get](/graph/api/pagetemplate-get?view=graph-rest-beta&preserve-view=true)
+- [Update](/graph/api/pagetemplate-update?view=graph-rest-beta&preserve-view=true)
+- [Delete](/graph/api/pagetemplate-delete?view=graph-rest-beta&preserve-view=true)
 
 ### Teamwork and communications | Calls and online meetings
 
