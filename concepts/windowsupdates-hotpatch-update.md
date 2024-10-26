@@ -287,9 +287,8 @@ HTTP/1.1 202 Accepted
 
 ## Step 4: Create a deployment  
 
-A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
+A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes deploying the latest security update to the audience. If the latest security update is unavailable, the deployment will automatically offer the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The device client side policy for deferral will be honored.
 
-A deployment specifies the content to deploy, how and when to deploy the content and the association to the targeted devices.
 The deployment audience id created in step 2 is required in this step.
   
 ### Request
