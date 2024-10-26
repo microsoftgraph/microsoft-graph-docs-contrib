@@ -325,7 +325,7 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 201 Created
-``
+```
 
 ## After a deployment
 
