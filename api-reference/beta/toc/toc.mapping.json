@@ -2249,7 +2249,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
               "childNodes": [
@@ -2278,6 +2277,13 @@
                     "userCountMetric",
                     "userRequestsMetric",
                     "userSignUpMetric"
+                  ]
+                },
+                {
+                  "name": "Microsoft 365 monitoring (preview)",
+                  "overview": "../../resources/m365-monitoring-api-overview.md",
+                  "resources": [
+                    "serviceActivity"
                   ]
                 },
                 {
