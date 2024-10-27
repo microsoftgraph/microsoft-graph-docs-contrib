@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the process of an [ediscoverySearch](../resources/security-ediscoverysearch.md) export.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
