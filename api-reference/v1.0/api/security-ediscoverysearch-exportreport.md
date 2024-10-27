@@ -1,7 +1,7 @@
 ---
 title: "ediscoverySearch: exportReport"
 description: "Export an item report from an estimated ediscoverySearch."
-author: "SeunginLyu"
+author: "pamehra"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "apiPageType"
