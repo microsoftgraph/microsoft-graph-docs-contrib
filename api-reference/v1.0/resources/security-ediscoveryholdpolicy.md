@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicy resource type"
-description: "*ediscoveryHoldPolicy resource type"
+description: "ediscoveryHoldPolicy resource type"
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
