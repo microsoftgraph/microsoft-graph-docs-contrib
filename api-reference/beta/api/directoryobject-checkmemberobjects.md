@@ -30,11 +30,19 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All |
 
-### Memberships for a user
+### Memberships for the signed-in user
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+### Memberships for other users
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -80,10 +88,16 @@ Memberships for a directory object.
 POST /directoryObjects/{id}/checkMemberObjects
 ```
 
-Memberships for a user.
+Memberships for the signed-in user.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberObjects
+POST /users/{id | userPrincipalName}/checkMemberObjects
+```
+
+Memberships for other users.
+<!-- { "blockType": "ignored" } -->
+```http
 POST /users/{id | userPrincipalName}/checkMemberObjects
 ```
 

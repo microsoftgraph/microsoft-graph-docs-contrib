@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire [user](../resources/user.md) collection. See [change tracking](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted users without having to perform a full read of the entire [user](../resources/user.md) collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.
