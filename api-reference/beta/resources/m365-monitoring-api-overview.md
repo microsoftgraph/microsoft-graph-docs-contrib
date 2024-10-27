@@ -13,7 +13,7 @@ The Microsoft 365 monitoring API provides the telemetry data to monitor the heal
 
 ## Authorization
 
-Microsoft Graph enables applications to get authorized access to telemetry data about a Microsoft service subscribed by a tenant. With the appropriate delegated or application [permissions](/graph/permissions-reference#serviceactivity-exchangereadall), your app can access the telemetry data on behalf of a signed-in user, or without any signed-in user in the tenant. Both delegated and application types of these permissions are granted by only an administrator.
+Microsoft Graph enables applications to get authorized access to telemetry data about a Microsoft service subscribed by a tenant. With the appropriate delegated or application [permissions](/graph/permissions-reference#serviceactivity-exchangereadall), your app can access the telemetry data on behalf of a signed-in user, or without any signed-in user in the tenant. Only an administrator can grant both delegated and application types of these permissions.
 
 For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
@@ -32,7 +32,7 @@ For more information about the Microsoft Entra administrator roles, see:
 
 ### Access Microsoft 365 monitoring API without a user
 
-Application permissions are needed to access the Microsoft 365 monitoring API without a signed-in user. Applications that run as backend services, such as monitoring or alert services, can call the Microsoft 365 monitoring API with their own identity and not on behalf of a user. By using the Microsoft 365 monitoring API, backend services can retrieve telemetry data, enabling them to build custom dashboards that analyze trends, monitor performance, and detect anomalies in real-time.
+Application permissions are needed to access the Microsoft 365 monitoring API without a signed-in user. Applications that run as backend services, such as monitoring or alert services, can call the Microsoft 365 monitoring API with their own identity and not on behalf of a user. Backend services can use the Microsoft 365 monitoring API to retrieve telemetry data, which enables them to build custom dashboards that analyze trends, monitor performance, and detect anomalies in real-time.
 
 ## Availability in national clouds
 
