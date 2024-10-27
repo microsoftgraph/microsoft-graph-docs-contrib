@@ -759,7 +759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryHoldPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource.",
+          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource and its methods.", 
           "Target": "ediscoveryHoldPolicy"
         }
       ],
