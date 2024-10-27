@@ -57,7 +57,7 @@ For details, see [Microsoft 365 Teams monitoring](/microsoft-365/enterprise/micr
 |[Get metrics for the percentage of audio streams that received quality of experience telemetry](../api/serviceactivity-getaudiostreamqoemetricsforteams.md)|[serviceActivityPerformanceMetric](../resources/serviceactivityperformancemetric.md) collection|Get metrics based on the percentage of audio streams for which quality of experience (QoE) telemetry was received by the Teams service.|
 |[Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)](../api/serviceactivity-getaudiostreamsoverudpmetricsforteams.md)|[serviceActivityPerformanceMetric](../resources/serviceactivityperformancemetric.md) collection|Get metrics based on the percentage of audio streams that were established over User Datagram Protocol.|
 
-### OneDrive for Business monitoring (preview)
+### OneDrive for work or school monitoring (preview)
 
 |Method|Return type|Description|
 |:---|:---|:---|
