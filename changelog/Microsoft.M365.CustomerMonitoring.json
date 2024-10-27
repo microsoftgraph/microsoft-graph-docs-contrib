@@ -175,8 +175,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-10-21T18:03:21.8509666Z",
-      "WorkloadArea": "Microsoft.M365.CustomerMonitoring",
-      "SubArea": ""
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
