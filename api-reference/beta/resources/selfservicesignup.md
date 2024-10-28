@@ -30,10 +30,10 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |appDisplayName|String|App name displayed in the Mirosoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`)|
 |appId|String|Unique GUID that represents the app ID in the Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
-|appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-in event triggered.|
-|correlationId|String|The request ID sent from the client when the sign-in is initiated. Used to troubleshoot sign-in activity. <br/><br/> Supports `$filter` (`eq`).|
-|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
-|id|String|Unique ID representing the sign-in activity. <br/><br/> Supports `$filter` (`eq`). Inherited from [entity](../resources/entity.md).|
+|appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-up event triggered.|
+|correlationId|String|The request ID sent from the client when the sign-up is initiated. Used to troubleshoot sign-up activity. <br/><br/> Supports `$filter` (`eq`).|
+|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-up was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
+|id|String|Unique ID representing the sign-up activity. <br/><br/> Supports `$filter` (`eq`). Inherited from [entity](../resources/entity.md).|
 |signUpIdentity|[signUpIdentity](../resources/signupidentity.md)|Unique identifier for self-service sign-up user|
 |signUpIdentityProvider|String|Describes the type of account for which the user registered. Values include `Email OTP`, `Email Password`, `Google`.|
 |signUpStage|signUpStage|Describes the step in the sign-up flow. The possible values are: `credentialCollection`, `credentialValidation`, `credentialFederation`, `consent`, `attributeCollectionAndValidation`, `userCreation`, `tenantConsent`, `unknownFutureValue`.|
