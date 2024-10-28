@@ -1,7 +1,7 @@
 ---
 author: "mcm223"
 description: "Represents the identity of a call or meeting organizer in a callRecord."
-title: "Organizer resource type"
+title: "organizer resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
