@@ -304,9 +304,9 @@ items:
       href: ../../api/security-ediscoverycustodian-list-sitesources.md
     - name: Create site source
       href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unitifed group sources
+    - name: List unified group sources
       href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unifed group source
+    - name: Create unified group source
       href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
     - name: List user sources
       href: ../../api/security-ediscoverycustodian-list-usersources.md
@@ -474,10 +474,24 @@ items:
       href: ../../api/security-healthissue-get.md
     - name: Update
       href: ../../api/security-healthissue-update.md
-  - name: Complex types
+  - name: Sensor
     items:
-    - name: Identity container
-      href: ../../resources/security-identitycontainer.md
+    - name: Sensor
+      href: ../../resources/security-sensor.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensors.md
+    - name: Get
+      href: ../../api/security-sensor-get.md
+    - name: Update
+      href: ../../api/security-sensor-update.md
+    - name: Delete
+      href: ../../api/security-identitycontainer-delete-sensors.md
+    - name: Get deployment package URI
+      href: ../../api/security-sensor-getdeploymentpackageuri.md
+    - name: Get deployment access key
+      href: ../../api/security-sensor-getdeploymentaccesskey.md
+    - name: Regenerate deployment access key
+      href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
 - name: Information protection
   items:
   - name: Information protection label

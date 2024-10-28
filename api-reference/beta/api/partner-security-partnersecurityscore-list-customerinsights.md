@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityScore/customerInsi
 
 ---
 
-
 ### Response
 
 The following example shows the response.

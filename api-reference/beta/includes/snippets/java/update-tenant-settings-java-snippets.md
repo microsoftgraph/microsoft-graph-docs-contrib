@@ -18,7 +18,7 @@ sharepointSettings.setIsLegacyAuthProtocolsEnabled(true);
 sharepointSettings.setIsSitesStorageLimitAutomatic(false);
 sharepointSettings.setIsSyncButtonHiddenOnPersonalSite(false);
 sharepointSettings.setIsUnmanagedSyncAppForTenantRestricted(false);
-sharepointSettings.setPersonalSiteDefaultStorageLimitInMB(120000L);
+sharepointSettings.setPersonalSiteDefaultStorageLimitInMB(120000);
 SharepointSettings result = graphClient.admin().sharepoint().settings().patch(sharepointSettings);
 
 

@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-PATCH /sites/{sitesId}/pageTemplates/microsoft.graph.pageTemplate/{page-template-id}
+PATCH /sites/{site-id}/pageTemplates/{page-template-id}/microsoft.graph.pageTemplate
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ The following example shows a request.
 -->
 
 ```http
-PATCH /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/8fbff3f5-0e5d-49e7-89c7-2b042b3bfaa6
+PATCH https://graph.microsoft.com/beta/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/8fbff3f5-0e5d-49e7-89c7-2b042b3bfaa6/microsoft.graph.pageTemplate
 Content-Type: application/json
 
 {
@@ -102,7 +102,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.pageTemplate",
   "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
   "name": "sample.aspx",
-  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/sample.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/sample.aspx",
   "title": "sample",
   "pageLayout": "article",
   "showComments": true,
@@ -131,7 +131,7 @@ Content-Type: application/json
   },
   "titleArea": {
     "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,

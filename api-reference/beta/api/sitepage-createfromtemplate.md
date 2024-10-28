@@ -50,6 +50,7 @@ The following example shows how to create a new page from the page template.
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "createFromTemplate", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -59,10 +60,16 @@ Content-Type: application/json
 {
     "title": "Sample",
     "name": "Sample.aspx",
-    "id": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
+    "templateId": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/createfromtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -109,7 +116,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,

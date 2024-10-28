@@ -35,7 +35,11 @@ This resource supports:
 |[List member of](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive member of](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
 |[List registered owners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
+|[Add registered owners](../api/device-post-registeredowners.md) |[directoryObject](directoryobject.md) collection| Add registered owners of the device.|
+|[Remove registered owners](../api/device-delete-registeredowners.md) |[directoryObject](directoryobject.md) collection| Delete registered owners from the device.|
 |[List registered users](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
+|[Add registered users](../api/device-post-registeredusers.md) |[directoryObject](directoryobject.md) collection| Add registered users of the device .|
+|[Remove registered users](../api/device-delete-registeredusers.md) |[directoryObject](directoryobject.md) collection| Remove registered users from the device .|
 |[List usage rights](../api/device-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the device.|
 | [Check member groups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The check is transitive. |
 | [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the device is a member of. The check is transitive. |

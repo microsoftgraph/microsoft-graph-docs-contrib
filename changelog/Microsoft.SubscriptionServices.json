@@ -1,5 +1,23 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
+        {          
+          "Id": "d626e42d-c075-44ae-82f3-cbf957370223",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe to [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-in-a-particular-chat).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d626e42d-c075-44ae-82f3-cbf957370223",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-24T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

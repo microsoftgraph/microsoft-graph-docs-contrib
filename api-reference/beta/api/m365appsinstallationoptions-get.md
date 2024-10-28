@@ -24,8 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Office apps administrator (recommended)
-+ Global reader
-+ Global administrator
++ Global Reader
 
 ## HTTP request
 

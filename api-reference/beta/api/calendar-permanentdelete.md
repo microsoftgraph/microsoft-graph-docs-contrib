@@ -100,7 +100,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/calendar/permanentDelete
 
 ---
 
-
 ### Response
 
 The following example shows the response.

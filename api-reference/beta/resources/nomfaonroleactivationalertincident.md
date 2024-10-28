@@ -18,6 +18,11 @@ Represents the details of an alert incident that is triggered if roles don't req
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

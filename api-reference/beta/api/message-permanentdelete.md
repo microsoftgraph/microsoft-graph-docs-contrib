@@ -101,7 +101,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/messages/{messageId}/perma
 
 ---
 
-
 ### Response
 
 The following example shows the response.

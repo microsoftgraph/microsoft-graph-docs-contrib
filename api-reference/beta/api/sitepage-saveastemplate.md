@@ -49,6 +49,7 @@ The following example shows how to save a site page as a template page.
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "saveAsTemplate", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -61,6 +62,12 @@ Content-Type: application/json
 }
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/saveastemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -105,7 +112,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,

@@ -54,5 +54,5 @@ You can use either API to manage Windows updates; however, these two APIs are no
 
 ## Next Steps
 
-- Learn [how to use Azure AD](/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
-- Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+- Learn [how to use Entra ID](/graph/auth/auth-concepts) to access the Microsoft Graph API for Intune.  
+- Explore the [PowerShell Intune samples](https://microsoft.github.io/webportal-intune-samples/), which show how to use the Microsoft Graph API for Intune in context of working examples.
