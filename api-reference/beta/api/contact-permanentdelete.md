@@ -100,7 +100,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/contacts/{contactId}/perma
 
 ---
 
-
 ### Response
 
 The following example shows the response.

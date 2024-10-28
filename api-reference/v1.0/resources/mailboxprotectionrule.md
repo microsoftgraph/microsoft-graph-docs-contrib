@@ -34,11 +34,11 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule expression fails.|
-|isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run one time and dynamic rules listen to all changes in the system and update the protection unit list.|
+|isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static. Static rules run one time while dynamic rules listen to all changes in the system and update the protection unit list. Currently, only static rules are supported.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification to the rule.|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
-|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported.|
 
 ### mailboxExpression examples
 
@@ -53,11 +53,11 @@ The following table shows the possible formats for the mailbox expression.
 
 |Member | Description |
 |:------|:------------|
-|draft | The initial status of the protection rule upon creation.|
+|draft | The initial status of the protection rule upon creation. The `draft` member is currently unsupported. |
 |active | The status of the protection rule upon using the `/run` API.|
-|completed |The status of the protection rule after it is successfully applied to the corresponding policy.|
-|completedWithErrors | The status of the protection rule after it is applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
+|completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

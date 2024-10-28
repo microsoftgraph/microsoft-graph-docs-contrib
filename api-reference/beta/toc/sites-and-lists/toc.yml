@@ -173,9 +173,9 @@ items:
   - name: List permissions
     href: ../../api/listitem-list-permissions.md
   - name: Create permission
-    href: ../../api/listitem-list-permissions.md
-  - name: Get permission
     href: ../../api/listitem-post-permissions.md
+  - name: Get permission
+    href: ../../api/listitem-get-permissions.md
   - name: Update permission
     href: ../../api/listitem-update-permissions.md
   - name: Delete permission
@@ -274,6 +274,10 @@ items:
       href: ../../api/sitepage-publish.md
     - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Save as template
+      href: ../../api/sitepage-saveastemplate.md
+    - name: Create from template
+      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section

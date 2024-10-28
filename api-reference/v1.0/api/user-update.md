@@ -32,6 +32,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >   - In app-only scenarios, the app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 > - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+> - To update the **employeeLeaveDateTime** property:
+>   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
+>   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
+> - To update the **customSecurityAttributes** property:
+>   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+>   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,14 +65,14 @@ PATCH /users/{id | userPrincipalName}
 | companyName | String | The name of the company that the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `Granted`, `Denied` and `NotRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |country|String|The country/region in which the user is located; for example, `US` or `UK`.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.<br/><br/>To update this property, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.<br/><li>To update this property in delegated scenarios, the calling principal must be assigned the Attribute Assignment Administrator role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.<li>To update this property in app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission. |
 |department|String|The name for the department in which the user works.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it can't be cleared during updates. |
 | employeeId | String | The employee identifier assigned to the user by the organization. The maximum length is 16 characters. |
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the Global Administrator role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the *Global Administrator* role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
 |employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. |
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
@@ -79,7 +85,7 @@ PATCH /users/{id | userPrincipalName}
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Microsoft Entra user object. This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters can't be used when specifying this property.                            |
 |otherMails|String collection |A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two can be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This can't be used for federated users. <br><br> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. In application-only access, the calling app must be assigned the *User.ReadWrite.All* application permission and at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user's password. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`. This can't be used for federated users. <br><li> In delegated access, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission on behalf of the signed-in user. <li> In application-only access, the calling app must be assigned the *User.ReadWrite.All* (least privilege) or *Directory.ReadWrite.All* (higher privilege) application permission *and* at least the *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, `en-US`.|
@@ -248,6 +254,8 @@ HTTP/1.1 204 No Content
 ### Example 3: Update the passwordProfile of a user and reset their password
 
 The following example shows a request to reset the password of another user. As a best practice, always set the **forceChangePasswordNextSignIn** to `true`.
+
+[!INCLUDE [users-passwordprofile-permissions](../includes/users-passwordprofile-permissions.md)]
 
 #### Request
 

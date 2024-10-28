@@ -23,6 +23,8 @@ to the destination time zone so that Outlook time values are displayed in local 
 When other people request work meetings with you in your usual place of work, they can still respect your working hours in the
 appropriate time zone.
 
+> **Note:** The [working hours experience](https://support.microsoft.com/office/set-your-work-hours-and-location-in-outlook-af2fddf9-249e-4710-9c95-5911edfd76f6#articleFooterSupportBridge=communityBridge) in new Outlook and Outlook on the web isn't currently supported.
+
 
 ## Properties
 | Property	   | Type	|Description|

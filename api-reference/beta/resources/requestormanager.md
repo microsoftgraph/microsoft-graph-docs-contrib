@@ -1,20 +1,20 @@
 ---
-title: "requestorManager complex type"
-description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "requestorManager resource type"
+description: "Identifies a relationship to another user in the tenant who can approve."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
-# requestorManager complex type
+# requestorManager resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 
-It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.requestorManager` indicates that a requesting user's manager is to be the approver.  When creating an access package assignment policy approval stage with requestorManager, also include another approver, such as a single user or group member, in case the requesting user does not have a manager.
+It's a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.requestorManager` indicates that a requesting user's manager is to be the approver. Include another approver When creating an access package assignment policy approval stage with requestorManager, in case the requesting user doesn't have a manager. Including another approver, such as a single user or group member, covers the case where the requesting user doesn't have a manager.
 
 
 ## Properties

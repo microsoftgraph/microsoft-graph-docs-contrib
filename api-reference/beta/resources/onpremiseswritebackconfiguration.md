@@ -1,7 +1,8 @@
 ---
 title: "onPremisesWritebackConfiguration resource type"
 description: "Configuration to control how cloud created or owned objects are synchronized back to the on-premises directory."
-author: "dkershaw10"
+author: dhanyahk
+ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration to control how cloud created or owned objects are synchronized back to the on-premises directory.
+Configuration in the [onPremisesDirectorySynchronization resource](../resources/onpremisesdirectorysynchronization.md) to control how cloud created or owned objects are synchronized back to the on-premises directory.
 
 ## Properties
 

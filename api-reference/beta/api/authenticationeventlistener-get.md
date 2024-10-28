@@ -12,7 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [authenticationEventListener](../resources/authenticationeventlistener.md) object. The **@odata.type** property in the response object indicates the type of the authenticationEventListener object.
+Read the properties and relationships of an [authenticationEventListener](../resources/authenticationeventlistener.md) object. The **@odata.type** property in the response object indicates the type of the authenticationEventListener object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md) resource type
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "authenticationeventlistener_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationeventlistener-get-permissions.md)]
+
+[!INCLUDE [rbac-custom-auth-ext-apis-read](../includes/rbac-for-apis/rbac-custom-auth-ext-apis-read.md)]
 
 ## HTTP request
 

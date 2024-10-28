@@ -33,9 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -50,11 +62,19 @@
               "resources": [
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy",
-                "remoteDesktopSecurityConfiguration",
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPreApprovalPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security policy",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -127,6 +147,7 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
+        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
@@ -155,6 +176,14 @@
             "driveProtectionUnit",
             "mailboxProtectionUnit",
             "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
           ]
         },
         {
@@ -195,6 +224,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -396,6 +428,23 @@
           ]
         },
         {
+          "name": "Cloud licensing (preview)",
+          "overview": "../../resources/cloud-licensing-api-overview.md",
+          "keywords": [
+            "Cloud licensing",
+            "Microsoft Cloud Licensing"
+          ],
+          "resources": [
+            "microsoft.graph.cloudLicensing.usageRight"
+          ],
+          "complexTypes": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing",
+            "microsoft.graph.cloudLicensing.service"
+          ],
+          "childNodes": []
+        },
+        {
           "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
@@ -424,6 +473,7 @@
             "cloudPcAuditResource",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
+            "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -432,6 +482,8 @@
             "cloudPcBulkRestore",
             "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
+            "cloudPcBulkCreateSnapshot",
+            "cloudPcBulkSetReviewStatus",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -465,7 +517,8 @@
             "cloudPcWindowsSettings",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission"
+            "unifiedRolePermission",
+            "cloudPcNotificationSetting"
           ],
           "childNodes": [
             {
@@ -1387,9 +1440,7 @@
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
-            "invitation",
-            "trustFrameworkKeySet",
-            "trustFrameworkPolicy"
+            "invitation"
           ],
           "childNodes": [
             {
@@ -1397,8 +1448,6 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
-                "onAttributeCollectionStartListener",
-                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
@@ -1435,12 +1484,21 @@
               ]
             },
             {
+              "name": "Azure AD B2C IEF",
+              "resources": [
+                "trustFrameworkKeyset",
+                "trustFrameworkKey_v2",
+                "trustFrameworkPolicy"
+              ]
+            },
+            {
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate"
+                "conditionalAccessTemplate",                
+                "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
                 {
@@ -1489,6 +1547,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1567,30 +1626,17 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
-                "claimsMappingPolicy",
-                "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
-                "tokenIssuancePolicy",
-                "tokenLifetimePolicy",
                 "authenticationEventsPolicy",
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
-                "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
               "childNodes": [
-                {
-                  "name": "Application management policy",
-                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
-                  "resources": [
-                    "tenantAppManagementPolicy",
-                    "appManagementPolicy"
-                  ]
-                },
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
@@ -1600,19 +1646,13 @@
                     "emailAuthenticationMethodConfiguration",
                     "externalAuthenticationMethodConfiguration",
                     "fido2AuthenticationMethodConfiguration",
+                    "hardwareOathAuthenticationMethodConfiguration",
                     "microsoftAuthenticatorAuthenticationMethodConfiguration",
                     "smsAuthenticationMethodConfiguration",
                     "temporaryAccessPassAuthenticationMethodConfiguration",
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
@@ -1628,13 +1668,13 @@
             {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
-                "identityUserFlow",
                 "b2cIdentityUserFlow",
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
@@ -2209,7 +2249,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "azureADAuthentication",
                 "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
@@ -2239,6 +2278,25 @@
                     "userCountMetric",
                     "userRequestsMetric",
                     "userSignUpMetric"
+                  ]
+                },
+                {
+                  "name": "Microsoft Entra Health (preview)",
+                  "childNodes": [
+                    {
+                      "name": "SLA attainment",
+                      "resources": [
+                        "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Health monitoring",
+                      "overview": "../../resources/healthmonitoring-overview.md",
+                      "resources": [
+                        "microsoft.graph.healthMonitoring.alert",
+                        "microsoft.graph.healthMonitoring.alertConfiguration"
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2460,10 +2518,8 @@
         {
           "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.identityContainer"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ]
         },
         {
