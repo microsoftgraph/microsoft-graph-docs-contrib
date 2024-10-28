@@ -65,6 +65,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-1.0) resource.",
           "Target": "ediscoverySearch"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "exportResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-1.0) resource.",
+          "Target": "ediscoverySearch"
         }
       ],
       "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
