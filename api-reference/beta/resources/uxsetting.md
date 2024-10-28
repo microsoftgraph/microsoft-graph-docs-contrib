@@ -28,8 +28,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id| String | The unique identifier for the tenant.|
 |restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `false`, `true`, `unknownFutureValue`.|
-|id| string | The unique identifier for the tenant|
 
 ## Relationships
 
@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.uxSetting",
-  "restrictNonAdminAccess": "String",
-  "id": "String"
+  "id": "String (identifier)",
+  "restrictNonAdminAccess": "String"
 }
 ```

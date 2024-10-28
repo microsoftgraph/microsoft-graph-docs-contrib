@@ -43,7 +43,6 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.entra",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.entra"
 }
 ```
