@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
@@ -43,14 +43,17 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:----|-----------|
-| addToReviewSet | The operation represents adding data to a review set from an eDiscovery collection. |
-| applyTags | The operation represents bulk tagging documents in a review set for the specified review set query. |
 | contentExport | The operation represents a content export from a review set. |
+| applyTags | The operation represents bulk tagging documents in a review set for the specified review set query. |
 | convertToPdf | The operation represents converting documents to PDFs with redactions. |
-| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for Business. |
-| holdUpdate | The operation represents updating legal hold (apply/remove) for custodians and noncustodial data sources.
 | index | The operation represents indexing data sources of custodians and noncustodial data sources to make them searchable. |
+| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for Business. |
+| addToReviewSet | The operation represents adding data to a review set from an eDiscovery collection. |
+| holdUpdate | The operation represents updating legal hold (apply/remove) for custodians and noncustodial data sources.
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 | purgeData | The operation represents purging content from the source workloads. |
+| exportReport |TODO |
+| exportResult | TODO |
 
 ### caseOperationStatus values
 
