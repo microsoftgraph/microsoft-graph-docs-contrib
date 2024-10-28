@@ -27,7 +27,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 | identity | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
-| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
+| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) objects for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## Methods
 

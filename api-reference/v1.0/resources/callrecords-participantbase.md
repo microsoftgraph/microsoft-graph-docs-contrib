@@ -22,7 +22,7 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 |:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
 | identity    | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. |
-| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) of the call participant. |
+| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | List of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) objects for the call participant. |
 
 ## Methods
 
