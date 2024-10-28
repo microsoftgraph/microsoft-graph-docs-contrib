@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-delta-permissions.md)]
 
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
+
 ## HTTP request
 
 To begin tracking changes, you make a request that includes the delta function on the **administrativeUnit** resource.
@@ -44,7 +46,7 @@ You only need to specify any query parameters once up front.
 In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already
 includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |

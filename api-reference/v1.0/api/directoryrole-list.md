@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directoryrole_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-list-permissions.md)]
 
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

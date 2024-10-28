@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+[!INCLUDE [rbac-devices-apis-write](../includes/rbac-for-apis/rbac-devices-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
