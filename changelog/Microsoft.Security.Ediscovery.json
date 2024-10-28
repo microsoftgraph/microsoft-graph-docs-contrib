@@ -756,6 +756,22 @@
         },
         {
           "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-list-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+         {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryHoldPolicy",
           "ChangeType": "Addition",
