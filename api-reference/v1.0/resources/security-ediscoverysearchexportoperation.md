@@ -24,8 +24,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |completedDateTime|DateTimeOffset|The date and time when the operation was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|description|String|The name of export provided by the user.|
-|displayName|String|The description of the export by the user.|
+|description|String|The description of the export by the user.|
+|displayName|String|The name of export provided by the user.|
 |exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values)|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |exportFileMetadata|[microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md) collection|Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
