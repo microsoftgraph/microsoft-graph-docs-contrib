@@ -102,7 +102,7 @@ Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06
 
 ### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
 
-The following examples shows how to export a report of items with search hits and partially indexed items in all targeted locations, with no additional options selected.
+The following example shows how to export a report of items with search hits and partially indexed items in all targeted locations, with no additional options selected.
 
 #### Request
 
