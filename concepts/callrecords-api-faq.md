@@ -81,7 +81,7 @@ You can use the following three methods to list all attending call participants:
 
     To see all participants, implement a custom solution to build the participants list from the call records data:
 
-    1. Call the [Get callRecord](/graph/api/callrecords-callrecord-get) API and expand the sessions property: `GET /communications/callRecords/{id}?$expand=sessions`.
+    1. Call the [Get callRecord](/graph/api/callrecords-callrecord-get) API and expand the `sessions` property: `GET /communications/callRecords/{id}?$expand=sessions`.
     2. For peer-to-peer (P2P) calls, read both the `caller` and `callee` properties from each `session` in the received `sessions` list. For meeting calls, read only the `caller` property.
     3. Build your custom participants list based on the `caller` endpoint [identity](/graph/api/resources/identity). For P2P calls, also include the `callee` endpoint [identity](/graph/api/resources/identity). Collect the `id`, `displayName`, and other properties you require for each participant.
 
