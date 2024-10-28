@@ -1,0 +1,22 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+          "ApiChange": "Resource",
+          "ChangedApiName": "copilotAdminLimitedMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [copilotAdminLimitedMode](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdminLimitedMode?view=graph-rest-beta) resource.",
+          "Target": "copilotAdminLimitedMode"
+        }
+      ],
+      "Id": "23e6f05c-f98d-49a4-8df2-b63a6491c249",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-22T19:12:08.7280528Z",
+      "WorkloadArea": "Microsoft.CopilotSettings",
+      "SubArea": ""
+    }
+  ]
+}
