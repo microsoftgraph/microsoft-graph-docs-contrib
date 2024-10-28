@@ -910,7 +910,7 @@ items:
       - name: Call records
         href: cloud-communications-callrecords.md
         items:
-        - name: Microsoft Graph Call Records API frequently asked questions
+        - name: Call Records API frequently asked questions
           href: callrecords-api-faq.md
       - name: Supported call types
         href: cloud-communications-calls.md
