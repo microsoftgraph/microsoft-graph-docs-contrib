@@ -770,6 +770,14 @@
           "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
           "Target": "ediscoveryCase"
         },
+          {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-delete-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
         {
           "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
           "ApiChange": "Resource",
