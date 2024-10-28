@@ -284,7 +284,7 @@ HTTP/1.1 202 Accepted
 
 ## Step 4: Create a deployment  
 
-A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes deploying the latest security update to the audience. If the latest security update is unavailable, the deployment automatically offers the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The device client side policy for deferral is honored.
+A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes deploying the latest security update to the audience. If the latest hotpatch security update is unavailable or the devices are ineligible, the deployment automatically offers the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The device client side policy for deferral is honored.
 
 The deployment audience id created in step 2 is required in this step.
   
