@@ -18,7 +18,7 @@ No changes are required to the existing update ring configurations. The existing
 ## Prerequisites
 
 * Devices meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
-* Operating System: Devices must be running Windows 11 24H2 or later.
+* Operating System: Devices must run Windows 11 24H2 or later.
 * VBS (Virtualization-Based Security): VBS must be enabled to ensure secure installation of hotpatch updates.
 
 ## Step 1: (Optional) Get a list of hotpatch updates
