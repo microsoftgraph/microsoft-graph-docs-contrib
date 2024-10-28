@@ -1,6 +1,6 @@
 ---
 title: "administrativeUnitInfo resource type"
-description: "Represents an object that exposes information about the administrative units associated with a call participant."
+description: "Represents the administrative units associated with a call participant."
 author: "mcm223"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,13 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.callRecords
 
-Represents an object that exposes information about the administrative units associated with a [participant](callrecords-participantbase.md).
+Represents the administrative units associated with a [participant object](callrecords-participantbase.md).
 
 ## Properties
 
 | Property | Type   | Description                                    |
 |:---------|:-------|------------------------------------------------|
 | id       | String | Unique identifier for the administrative unit. |
+
+## Methods
+
+None.
 
 ## JSON representation
 
@@ -39,4 +43,4 @@ The following JSON representation shows the resource type.
 
 ## See also
 
-For more information on administrative units, see [administrativeUnit](administrativeUnit.md).
+For more information on administrative units, see [administrativeUnit resource type](administrativeUnit.md).
