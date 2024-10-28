@@ -10,7 +10,7 @@ ms.subservice: "cloud-communications"
 
 ## What is the Microsoft Graph Call Records API?
 
-The Microsoft Graph Call Records API (Call Records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Organizations, also referred to as "tenants," can use the Call Records API to subscribe to, list, retrieve call records by call IDs, and to look up calls for a participant. For more information, see [Working with the Call Records API in Microsoft Graph](/graph/api/resources/callrecords-api-overview).
+The Microsoft Graph Call Records API (Call Records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Organizations, also referred to as "tenants," can use the Call Records API to subscribe to, list, retrieve call records by call IDs, and to look up calls for a participant. For more information, see [Working with the call records API in Microsoft Graph](/graph/api/resources/callrecords-api-overview).
 
 ## Which permission is required to use the Call Records API?
 
