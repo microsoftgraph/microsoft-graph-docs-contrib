@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Deploy a driver update using Windows Autopatch
 
-With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true) of Windows 10 and Windows 11 feature updates, expedited quality updates, and driver updates. This topic focuses on managing the deployment of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about how to deploy hotpatch quality updates, see [Deploy a hotpatch quality update](./windowsupdates-hotpatch-update.md). For information about how to deploy expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
+With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true) of Windows 10 and Windows 11 feature updates, hotpatch quality updates, expedited quality updates, and driver updates. This topic focuses on managing the deployment of driver updates. For information about deploying feature updates, see [Deploy a feature update](./windowsupdates-deploy-update.md). For information about how to deploy hotpatch quality updates, see [Deploy a hotpatch quality update](./windowsupdates-hotpatch-update.md). For information about how to deploy expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md).
 
 When devices enrolled in Windows Autopatch scan Windows Update, scan results of applicable drivers that are better than what is currently installed on the device are collected. Windows Autopatch then catalogs them to be browsed, approved, and scheduled for deployment. Only approved content is offered to devices as long as it remains enrolled in driver management.
 
@@ -301,7 +301,6 @@ Content-type: application/json
             }
         }
     }
-}
 ```
 
 ## During a driver deployment
@@ -327,7 +326,7 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
 
 
 ### Request

@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](windowsupdates-deployments.md) of Windows 10/11 feature updates, hotpatch quality updates, expedited quality updates, and driver updates. This topic focuses on the deployment of hotpatch quality updates. For information about how to deploy feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md). For information about how to deploy expedited quality updates, see [Deploy an expedited quality update](./windowsupdates-deploy-expedited-update.md). For information about how to deploy driver updates, see [Manage driver update](./windowsupdates-manage-driver-update.md).
 
-Hotpatch updates are Monthly B release security updates that can be installed without the need to restart the device. It's designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help secure devices faster, making it easier for organizations to maintain security while keeping workflows uninterrupted.
+Hotpatch updates are security updates released on a monthly basis that can be installed without the need to restart the device. It's designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help secure devices faster, making it easier for organizations to maintain security while keeping workflows uninterrupted.
 
 No changes are required to the existing update ring configurations. The existing ring configurations are honored alongside hotpatch policies.
 
