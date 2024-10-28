@@ -46,7 +46,7 @@ POST /security/cases/ediscoveryCases('{ediscoveryCaseId}')/searches('{ediscovery
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that you can be use with this action.
+The following table lists the parameters that you can use with this action.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
