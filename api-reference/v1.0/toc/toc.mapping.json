@@ -1473,7 +1473,8 @@
         {
           "name": "Identities",
           "resources": [
-            "microsoft.graph.security.healthIssue"
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
           ],
           "complexTypes": [
             "microsoft.graph.security.identityContainer"
