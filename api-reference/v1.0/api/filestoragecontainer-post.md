@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-The container type identified by **containerTypeId** must be enabled in the tenant. 
+The respective container type identified by **containerTypeId** must be enabled in the tenant. 
 
 For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
@@ -52,7 +52,7 @@ You can specify the following properties when you create a **fileStorageContaine
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the container. Required.|
-|description|String|A user-visible description of the item. Optional.|
+|description|String|Provides a user-visible description of the item. Optional.|
 |containerTypeId|GUID|The container type of the container instance. Required.|
 |settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with the container. Optional.|
 
