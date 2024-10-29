@@ -100,6 +100,12 @@ Examples:
 
 For the full list of permissions exposed by Microsoft Graph, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
+## Resource-specific consent (RSC) permissions
+
+RSC is an authorization framework that allows for granting scoped access to the data exposed by a resource. Through RSC, an authorized user can give an app access to the data of a specific instance of a resource type. They don't need to give app access to every instance of the resource type in the entire tenant.
+
+RSC permissions are also available for consent and are supported by only a subset of features available through Microsoft Graph such as Teams, chats, and messages. Learn more about [RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) or discover the [full list of RSC permissions available](./permissions-reference.md#resource-specific-consent-rsc-permissions).
+
 ## Limited information returned for inaccessible member objects
 
 Container objects such as groups support members of various types, for example users and devices. When an application with the right privileges queries the membership of a container object, it receives a `200 OK` response and a collection of objects. However, if the app doesn't have the permissions to read a certain object type in the container, objects of that type are returned but with limited information, for example, only the object type and ID may be returned and other properties are indicated as `null`. Complete information is returned for the object types that the app has permissions to read.
