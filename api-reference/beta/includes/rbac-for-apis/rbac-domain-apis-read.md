@@ -1,6 +1,5 @@
 ---
-author: DougKirschner
-ms.reviewer: msodsrbac
+author: tafra00
 ms.topic: include
 ---
 
@@ -10,10 +9,10 @@ ms.topic: include
 > - Helpdesk Administrator
 > - Service Support Administrator
 > - Billing Administrator
-> - User
 > - Mailbox Administrator
 > - Directory Readers
 > - Directory Writers
+> - AdHoc License Administrator
 > - Application Administrator
 > - Security Reader
 > - Security Administrator
@@ -26,10 +25,10 @@ ms.topic: include
 > - Desktop Analytics Administrator
 > - License Administrator
 > - Microsoft Managed Desktop Administrator
-> - Authentication Administrator
 > - Privileged Authentication Administrator
 > - Teams Communications Administrator
 > - Teams Communications Support Engineer
+> - Authentication Administrator
 > - Teams Communications Support Specialist
 > - Teams Administrator
 > - Insights Administrator
@@ -42,3 +41,7 @@ ms.topic: include
 > - Modern Commerce Administrator
 > - Microsoft Store for Business User
 > - Directory Reviewer
+> - Domain Name Administrator
+> - Users
+> - Guest User
+> - Restricted Guest User
