@@ -271,7 +271,7 @@ Content-type: application/json
     "isRevoked": false,
     "revokedDateTime": "0001-01-01T00:00:00Z",
     "content": {
-        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/updatePolicies('d7a89208-17c5-4daf-a164-ce176b00e4ef')/complianceChanges('dbf29574-ffd9-49cf-87f2-f03629e596ba')/microsoft.graph.windowsUpdates.contentApproval/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
         "id": "5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c",
         "displayName": "Microsoft - Test - 1.0.0.1",
@@ -284,14 +284,8 @@ Content-type: application/json
         "manufacturer": "Microsoft",
         "version": "1.0.0.1",
         "versionDateTime": "2021-01-11T02:43:14Z"
-        }        
     },
     "deploymentSettings": {
-        "schedule": null,
-        "monitoring": null,
-        "contentApplicability": null,
-        "userExperience": null,
-        "expedite": null
         "schedule": {
             "startDateTime": "2023-02-14T01:00:00Z",
             "gradualRollout": {
@@ -299,8 +293,13 @@ Content-type: application/json
                 "durationBetweenOffers": "P1D",
                 "devicesPerOffer": 0
             }
-        }
+        },
+        "monitoring": null,
+        "contentApplicability": null,
+        "userExperience": null,
+        "expedite": null
     }
+}
 ```
 
 ## During a driver deployment
