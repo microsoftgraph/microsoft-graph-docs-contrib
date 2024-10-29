@@ -28,10 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+
 ``` http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}/certificateAuthorities/{certificateAuthorityDetailId}
 ```
@@ -59,11 +56,7 @@ If successful, this method returns a `200 OK` response code and a [certificateAu
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_certificateauthoritydetail"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}/certificateAuthorities/{certificateAuthorityDetailId}
 ```
@@ -87,10 +80,10 @@ Content-Type: application/json
     "certificate": "Binary",
     "displayName": "Contoso2 CA1",
     "issuer": "Contoso2",
-    "issuerSubjectKeyIdentifier": "String",
-    "createdDateTime": null,
+    "issuerSubjectKeyIdentifier": "C0E96C3F3AD77C2265409F9E9048711A",
+    "createdDateTime": "2024-10-25T18:05:28Z",
     "expirationDateTime": "2027-08-29T02:05:57Z",
-    "thumbprint": "String",
+    "thumbprint": "C6FA3D4CDF28E118B9BC2790734E9CF2",
     "certificateRevocationListUrl": null,
     "deltacertificateRevocationListUrl": null,
     "isIssuerHintEnabled": true

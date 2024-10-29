@@ -26,6 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthoritydetail-update-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
+
 ## HTTP request
 
 <!-- {
