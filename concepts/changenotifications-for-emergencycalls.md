@@ -55,7 +55,7 @@ Rich notifications
 ### Notification payload example
 
 ```http
-POST "https://contonso.com/notificationUrl
+POST https://contonso.com/notificationUrl
 Content-Type: application/json
 
 {
