@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about a call event.
+Contains information about a call event. The call can be one-on-one or group adhoc, PSTN, or scheduled online meeting. 
 
 ## Methods
 
