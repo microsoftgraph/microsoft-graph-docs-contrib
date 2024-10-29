@@ -1,32 +1,34 @@
 ---
 title: "Microsoft Graph Call Records API FAQ"
-description: "Find answers to frequently asked questions about Microsoft Call Records API and Call Records notification feed."
+description: "Find answers to frequently asked questions about the call records API and call records notification feed in Microsoft Graph."
 author: "MirraRaine"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ---
 
-# Microsoft Graph Call Records API frequently asked questions
+# Microsoft Graph call records API FAQ
 
-## What is the Microsoft Graph Call Records API?
+This topic provides answers to frequently asked quesstions about the call records API in Microsoft Graph.
 
-The Microsoft Graph Call Records API (Call Records API) offers usage and diagnostic insights for calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Organizations, also referred to as "tenants," can use the Call Records API to subscribe to, list, retrieve call records by call IDs, and to look up calls for a participant. For more information, see [Working with the call records API in Microsoft Graph](/graph/api/resources/callrecords-api-overview).
+## What is the Microsoft Graph call records API?
 
-## Which permission is required to use the Call Records API?
+The Microsoft Graph call records API offers usage and diagnostic insights for calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Organizations, also referred to as "tenants", can use the call records API to subscribe to, list, retrieve call records by call IDs, and look up calls for a participant. For more information, see [Working with the call records API in Microsoft Graph](/graph/api/resources/callrecords-api-overview).
+
+## Which permission is required to use the call records API?
 
 Your application needs the **CallRecords.Read.All** permission to access call records in Microsoft Graph. An administrator must grant this permission to the application. For more information, see [Microsoft Graph permissions reference](permissions-reference.md).
 
-## Can I use delegated permissions with the Call Records API?
+## Can I use delegated permissions with the call records API?
 
-No, the Call Records API doesn't support delegated permissions.
+No, the call records API doesn't support delegated permissions.
 
-## Why can't I use delegated permissions with the Call Records API?
+## Why can't I use delegated permissions with the call records API?
 
-You can't use delegated permissions because there's no way to limit **CallRecords.Read.All** permission to specific calls or users because the application permission is granted at the organization level, not the individual user level.
+You can't use delegated permissions because there's no way to limit **CallRecords.Read.All** permission to specific calls or users. The application permission is granted at the organization level, not the individual user level.
 
-## How do I request a call record using the Microsoft Call Records API?
+## How do I request a call record using the call records API?
 
-To request a call record, you need to make a `GET` request to the `/communications/callRecords/{id}` endpoint, where `{id}` is the unique identifier of your call. Ensure you have the **CallRecords.Read.All** permission and include the Authorization header with a valid bearer token. For more information, see [Get callRecord documentation](/graph/api/callrecords-callrecord-get).
+To request a call record, you need to make a `GET` request to the `/communications/callRecords/{id}` endpoint, where `{id}` is the unique identifier of your call. Make sure that you have the **CallRecords.Read.All** permission and include the Authorization header with a valid bearer token. For more information, see [Get callRecord documentation](/graph/api/callrecords-callrecord-get).
 
 ## Where can I find the call IDs of the calls that occurred in my organization?
 
@@ -34,8 +36,8 @@ You can find and collect call IDs in the following ways:
 
 * **Subscribe to notifications**: Subscribe to [change notifications feed](changenotifications-for-callrecords.md) and receive notifications containing call IDs whenever a new call record is created.
 * **List call records**: Get a list of call IDs by requesting it from [List callRecords API](/graph/api/callrecords-cloudcommunications-list-callrecords).
-* **Manual search**: If you have access to [Call Analytics](/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) within the [Teams Admin Center](/microsoftteams/teams-overview) for Microsoft Teams, you can manually search for a call ID in a user’s history. However, there's no automated system available to retrieve all call IDs from Call Analytics.
-* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](/graph/api/resources/call) API after the call is completed. Use this approach when the call is programmatically created and you're working with the [call resource type](/graph/api/resources/call). Also, the `callChainId` can differ from the call record ID in certain scenarios, such as transfer calls, due to architecture specifics. Therefore, prefer the other methods in this list when possible.
+* **Manual search**: If you have access to [Call Analytics](/microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality) within the [Teams Admin Center](/microsoftteams/teams-overview) for Microsoft Teams, you can manually search for a call ID in a user’s history. However, no automated system is available to retrieve all call IDs from Call Analytics.
+* **Use callChainId:**: Look up the call ID using the `callChainId` from the [Get call](/graph/api/resources/call) API after the call is completed. Use this approach when the call is programmatically created and you're working with the [call resource type](/graph/api/resources/call). Also, the `callChainId` can differ from the call record ID in certain scenarios, such as transfer calls, due to architecture specifics. Therefore, use the other methods in this list when possible.
 
 ## When is a call record available?
 
@@ -47,11 +49,11 @@ Call records are retained for 30 days after the call ends.
 
 ## Can I retrieve call records older than 30 days?
 
-No, the Call Records API doesn't return call records older than 30 days. Requests for such records result in a `404 Not Found` error response.
+No, the call records API doesn't return call records older than 30 days. Requests for such records result in a `404 Not Found` error response.
 
 ## Why is my first call record notification delayed?
 
-Your call record notification can be delayed because it can take up to 60 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the Call Records API team in the "Health" tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Call Records API team.
+Your call record notification can be delayed because it can take up to 60 minutes for the service to make the **first** version of a call record available. If you experience a longer delay for delivery of the first call record version, check for outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
 
 ## Why are subsequent versions of my call record delayed?
 
@@ -63,11 +65,11 @@ A call record can have missing fields due to delayed telemetry from a client. Wh
 
 However, it's important to note that some fields can remain empty by design or because the client telemetry never arrived, such as media stream values.
 
-If critical or previously delivered fields are missing, open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Call Records API team.
+If critical or previously delivered fields are missing, open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team.
 
 ## How can I list all participants who attended a call?
 
-You can use the following three methods to list all attending call participants:
+You can use the following methods to list all attending call participants:
 
 1. **List participants_v2 API**
 
@@ -91,8 +93,8 @@ You might not see all participants because the [List participants_v2](/graph/api
 
 ## Why do I receive a 404 Not Found error?
 
-The following list shows some reasons why you might encounter a `404 Not Found` error:
+The following are some reasons why you might encounter a `404 Not Found` error:
 
-* **Recent Call**: If the call was made within the last 60 minutes, the call record might not be generated yet. Wait 60 minutes after the call ended and try again.
-* **Old Call**: If the call is older than 30 days, the Call Records API returns a 404 Not Found error by design.
-* **Other Issues**: If neither of the reasons apply, check for any outages reported by the Call Records API team in the "Health" tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [Support Ticket](https://developer.microsoft.com/graph/support) with the Call Records API team for assistance.
+* **Recent call**: If the call was made within the last 60 minutes, the call record might not be generated yet. Wait 60 minutes after the call ended and try again.
+* **Old call**: If the call is older than 30 days, the call records API returns a `404 Not Found` error by design.
+* **Other issues**: If neither of the reasons apply, check for any outages reported by the call records API team in the **Health** tab of the [Teams Admin Portal](https://admin.teams.microsoft.com/). Also, you can open a [support ticket](https://developer.microsoft.com/graph/support) with the call records API team for assistance.
