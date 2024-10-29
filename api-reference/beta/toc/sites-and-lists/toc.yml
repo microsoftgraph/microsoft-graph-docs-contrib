@@ -274,6 +274,10 @@ items:
       href: ../../api/sitepage-publish.md
     - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Save as template
+      href: ../../api/sitepage-saveastemplate.md
+    - name: Create from template
+      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section

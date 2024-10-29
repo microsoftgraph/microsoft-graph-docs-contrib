@@ -16,8 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-daysInPast := int32(1)
-microsoftGraphWindowsUpdatesGetKnownIssuesByTimeRange, err := graphClient.Admin().Windows().Updates().Products().ByProductId("product-id").MicrosoftGraphWindowsUpdatesGetKnownIssuesByTimeRangeWithDaysInPastWithIncludeAllActive(&daysInPast, &includeAllActive).GetAsGetKnownIssuesByTimeRangeWithDaysInPastGetResponse(context.Background(), nil)
+microsoftGraphWindowsUpdatesGetKnownIssuesByTimeRange, err := graphClient.Admin().Windows().Updates().Products().ByProductId("product-id").MicrosoftGraphWindowsUpdatesGetKnownIssuesByTimeRangeWithDaysInPastWithIncludeAllActive(&daysInPast, &includeAllActive).GetAsGetKnownIssuesByTimeRangeGetResponse(context.Background(), nil)
 
 
 ```

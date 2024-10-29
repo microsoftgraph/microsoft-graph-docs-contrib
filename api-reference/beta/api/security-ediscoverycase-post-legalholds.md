@@ -47,6 +47,7 @@ You can specify the following properties when you create an **ediscoveryHoldPoli
 |:---|:---|:---|
 |displayName|String|The display name of the legal hold policy. Required.|
 |description|String|The description of the legal hold policy. Optional.|
+|contentQuery|String|KQL query that specifies content to be held in the specified locations. Optional. |
 
 ## Response
 
@@ -57,7 +58,6 @@ If successful, this method returns a `201 Created` response code and an [microso
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryholdpolicy_from_"
@@ -70,52 +70,9 @@ Content-Type: application/json
 {
     "displayName": "My legalHold with sources",
     "description": "Created from Graph API",
-    "userSources@odata.bind": [
-        {
-            "@odata.type": "microsoft.graph.security.userSource",
-            "email": "SalesTeam@contoso.com"
-        }
-    ],
-    "siteSources@odata.bind": [
-        {
-            "@odata.type": "microsoft.graph.security.siteSource",
-            "site": {
-                "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
-            }
-        }
-    ]
+    "contentQuery": "KQL content query",
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryholdpolicy-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryholdpolicy-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryholdpolicy-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryholdpolicy-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryholdpolicy-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryholdpolicy-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-ediscoveryholdpolicy-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.

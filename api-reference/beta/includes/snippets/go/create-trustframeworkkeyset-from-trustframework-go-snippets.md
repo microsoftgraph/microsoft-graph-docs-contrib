@@ -33,9 +33,9 @@ kty := "kty-value"
 trustFrameworkKey.SetKty(&kty) 
 use := "use-value"
 trustFrameworkKey.SetUse(&use) 
-exp := int64(99)
+exp := int32(99)
 trustFrameworkKey.SetExp(&exp) 
-nbf := int64(99)
+nbf := int32(99)
 trustFrameworkKey.SetNbf(&nbf) 
 kid := "kid-value"
 trustFrameworkKey.SetKid(&kid) 

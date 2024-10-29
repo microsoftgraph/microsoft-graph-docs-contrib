@@ -21,7 +21,7 @@ var requestBody = new SharepointSettings
 	IsSitesStorageLimitAutomatic = false,
 	IsSyncButtonHiddenOnPersonalSite = false,
 	IsUnmanagedSyncAppForTenantRestricted = false,
-	PersonalSiteDefaultStorageLimitInMB = 120000L,
+	PersonalSiteDefaultStorageLimitInMB = 120000,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

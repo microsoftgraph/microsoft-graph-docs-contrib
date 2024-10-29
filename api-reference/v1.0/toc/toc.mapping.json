@@ -944,14 +944,25 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "authenticationEventListener",
-            "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
           "childNodes": [
+            {
+              "name": "Authentication event listeners",
+              "resources": [
+                "authenticationEventListener",
+                "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
+                "onAuthenticationMethodLoadStartListener",
+                "onInteractiveAuthFlowStartListener",
+                "onTokenIssuanceStartListener",
+                "onUserCreateStartListener"
+              ]
+            },
             {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",
@@ -1007,8 +1018,9 @@
               ]
             },
             {
-              "name": "Custom authentication extension",
+              "name": "Custom authentication extensions",
               "resources": [
+                "customAuthenticationExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1018,6 +1030,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1125,7 +1138,8 @@
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
@@ -1450,6 +1464,7 @@
             "microsoft.graph.security.caseOperation",
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
+            "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"

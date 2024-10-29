@@ -6,6 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 
 mgc-beta solutions virtual-events webinars registrations create --virtual-event-webinar-id {virtualEventWebinar-id} --body '{\
+  "externalRegistrationInformation": {\
+    "referrer": "Facebook",\
+    "registrationId": "myExternalRegistrationId"\
+  },\
   "preferredTimezone":"Pacific Standard Time",\
   "preferredLanguage":"en-us",\
   "registrationQuestionAnswers": [\
