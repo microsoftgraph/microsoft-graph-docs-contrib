@@ -147,6 +147,7 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
+        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
@@ -175,6 +176,14 @@
             "driveProtectionUnit",
             "mailboxProtectionUnit",
             "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
           ]
         },
         {
@@ -419,6 +428,23 @@
           ]
         },
         {
+          "name": "Cloud licensing (preview)",
+          "overview": "../../resources/cloud-licensing-api-overview.md",
+          "keywords": [
+            "Cloud licensing",
+            "Microsoft Cloud Licensing"
+          ],
+          "resources": [
+            "microsoft.graph.cloudLicensing.usageRight"
+          ],
+          "complexTypes": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing",
+            "microsoft.graph.cloudLicensing.service"
+          ],
+          "childNodes": []
+        },
+        {
           "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
@@ -447,6 +473,7 @@
             "cloudPcAuditResource",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
+            "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -1413,9 +1440,7 @@
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
-            "invitation",
-            "trustFrameworkKeySet",
-            "trustFrameworkPolicy"
+            "invitation"
           ],
           "childNodes": [
             {
@@ -1459,12 +1484,21 @@
               ]
             },
             {
+              "name": "Azure AD B2C IEF",
+              "resources": [
+                "trustFrameworkKeyset",
+                "trustFrameworkKey_v2",
+                "trustFrameworkPolicy"
+              ]
+            },
+            {
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate"
+                "conditionalAccessTemplate",                
+                "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
                 {
@@ -1499,11 +1533,21 @@
               ]
             },
             {
+              "name": "Custom authentication extensions",
+              "resources": [
+                "customAuthenticationExtension",
+                "onAttributeCollectionStartCustomExtension",
+                "onAttributeCollectionSubmitCustomExtension",
+                "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1589,7 +1633,6 @@
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
-                "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
@@ -1625,13 +1668,13 @@
             {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
-                "identityUserFlow",
                 "b2cIdentityUserFlow",
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]

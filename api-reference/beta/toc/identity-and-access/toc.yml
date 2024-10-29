@@ -172,8 +172,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: List usage rights
       href: ../../api/device-list-usagerights.md
     - name: Check member groups
@@ -2022,10 +2030,6 @@ items:
         href: ../../api/authenticationeventlistener-delete.md
     - name: On attribute collection listener
       href: ../../resources/onattributecollectionlistener.md
-    - name: On attribute collection start listener
-      href: ../../resources/onattributecollectionstartlistener.md
-    - name: On attribute collection submit listener
-      href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On interactive auth flow start listener
@@ -2223,6 +2227,52 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
+  - name: Azure AD B2C IEF
+    items:
+    - name: Trust framework key set
+      items:
+      - name: Trust framework key set
+        href: ../../resources/trustframeworkkeyset.md
+      - name: List
+        href: ../../api/trustframework-list-keysets.md
+      - name: Create
+        href: ../../api/trustframework-post-keysets.md
+      - name: Get
+        href: ../../api/trustframeworkkeyset-get.md
+      - name: Update
+        href: ../../api/trustframeworkkeyset-update.md
+      - name: Generate key
+        href: ../../api/trustframeworkkeyset-generatekey.md
+      - name: Upload secret
+        href: ../../api/trustframeworkkeyset-uploadsecret.md
+      - name: Get active key
+        href: ../../api/trustframeworkkeyset-getactivekey.md
+      - name: Upload X.509 certificate
+        href: ../../api/trustframeworkkeyset-uploadcertificate.md
+      - name: Upload PKCS12 certificate
+        href: ../../api/trustframeworkkeyset-uploadpkcs12.md
+    - name: Trust framework key v2
+      items:
+      - name: Trust framework key v2
+        href: ../../resources/trustFrameworkkey_v2.md
+      - name: Get
+        href: ../../api/trustframeworkkey_v2-get.md
+      - name: Update
+        href: ../../api/trustframeworkkey_v2-update.md
+    - name: Trust framework policy
+      items:
+      - name: Trust framework policy
+        href: ../../resources/trustframeworkpolicy.md
+      - name: Create
+        href: ../../api/trustframework-post-trustframeworkpolicy.md
+      - name: Get
+        href: ../../api/trustframeworkpolicy-get.md
+      - name: List
+        href: ../../api/trustframework-list-trustframeworkpolicies.md
+      - name: Update
+        href: ../../api/trustframework-put-trustframeworkpolicy.md
+      - name: Delete
+        href: ../../api/trustframeworkpolicy-delete.md
   - name: Certificate-based auth configuration
     displayName: CBA
     items:
@@ -2322,6 +2372,14 @@ items:
         href: ../../api/conditionalaccessroot-list-templates.md
       - name: Get
         href: ../../api/conditionalaccesstemplate-get.md
+    - name: Continuous access evaluation policy
+      items:
+      - name: Continuous access evaluation policy
+        href: ../../resources/continuousaccessevaluationpolicy.md
+      - name: Get
+        href: ../../api/continuousaccessevaluationpolicy-get.md
+      - name: Update
+        href: ../../api/continuousaccessevaluationpolicy-update.md
   - name: Cross-tenant access
     displayName: Cross-tenant access settings, XTAP
     items:
@@ -2471,6 +2529,12 @@ items:
         href: ../../api/riskyusers-confirmcompromised.md
       - name: Dismiss
         href: ../../api/riskyusers-dismiss.md
+      - name: List history
+        href: ../../api/riskyuser-list-history.md
+    - name: Risky user history item
+      items:
+      - name: Risky user history item
+        href: ../../resources/riskyuserhistoryitem.md
       - name: List history
         href: ../../api/riskyuser-list-history.md
     - name: Service principal risk detection
@@ -2852,14 +2916,6 @@ items:
         href: ../../api/b2cauthenticationmethodspolicy-get.md
       - name: Update
         href: ../../api/b2cauthenticationmethodspolicy-update.md
-    - name: Continuous access evaluation policy
-      items:
-      - name: Continuous access evaluation policy
-        href: ../../resources/continuousaccessevaluationpolicy.md
-      - name: Get
-        href: ../../api/continuousaccessevaluationpolicy-get.md
-      - name: Update
-        href: ../../api/continuousaccessevaluationpolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -2964,42 +3020,6 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Trust framework key set
-    items:
-    - name: Trust framework key set
-      href: ../../resources/trustframeworkkeyset.md
-    - name: List
-      href: ../../api/trustframework-list-keysets.md
-    - name: Create
-      href: ../../api/trustframework-post-keysets.md
-    - name: Get
-      href: ../../api/trustframeworkkeyset-get.md
-    - name: Update
-      href: ../../api/trustframeworkkeyset-update.md
-    - name: Generate key
-      href: ../../api/trustframeworkkeyset-generatekey.md
-    - name: Upload secret
-      href: ../../api/trustframeworkkeyset-uploadsecret.md
-    - name: Get active key
-      href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload X.509 certificate
-      href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: Upload PKCS12 certificate
-      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
-  - name: Trust framework policy
-    items:
-    - name: Trust framework policy
-      href: ../../resources/trustframeworkpolicy.md
-    - name: Create
-      href: ../../api/trustframework-post-trustframeworkpolicy.md
-    - name: Get
-      href: ../../api/trustframeworkpolicy-get.md
-    - name: List
-      href: ../../api/trustframework-list-trustframeworkpolicies.md
-    - name: Update
-      href: ../../api/trustframework-put-trustframeworkpolicy.md
-    - name: Delete
-      href: ../../api/trustframeworkpolicy-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
@@ -3056,18 +3076,6 @@ items:
         href: ../../api/authenticationconditionapplication-delete.md
   - name: User flows in workforce tenants and Azure AD B2C
     items:
-    - name: Identity user flow
-      items:
-      - name: Identity user flow
-        href: ../../resources/identityuserflow.md
-      - name: List
-        href: ../../api/identityuserflow-list.md
-      - name: Create
-        href: ../../api/identityuserflow-post-userflows.md
-      - name: Get
-        href: ../../api/identityuserflow-get.md
-      - name: Delete
-        href: ../../api/identityuserflow-delete.md
     - name: B2C identity user flow
       items:
       - name: B2C identity user flow
@@ -3196,6 +3204,18 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
+    - name: User flows in Azure AD B2C (deprecated)
+      items:
+      - name: User flows in Azure AD B2C (deprecated)
+        href: ../../resources/identityuserflow.md
+      - name: List
+        href: ../../api/identityuserflow-list.md
+      - name: Create
+        href: ../../api/identityuserflow-post-userflows.md
+      - name: Get
+        href: ../../api/identityuserflow-get.md
+      - name: Delete
+        href: ../../api/identityuserflow-delete.md
 - name: Multicloud permissions management (preview)
   items:
   - name: Overview
