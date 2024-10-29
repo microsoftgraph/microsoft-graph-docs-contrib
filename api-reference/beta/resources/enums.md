@@ -4909,3 +4909,14 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### restoreArtifactsBulkRequestStatus values 
+
+
+
+|Member|
+|:---|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
