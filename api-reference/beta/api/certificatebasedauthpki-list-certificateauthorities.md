@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-list-certificateauthorities-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -89,14 +91,14 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
       "id": "90777c92-2eb3-4a68-931d-4a3e1e1c741f",
       "deletedDateTime": null,
-      "certificateAuthorityType": "String",
+      "certificateAuthorityType": "root",
       "certificate": "Binary",
       "displayName": "Contoso2 CA1",
       "issuer": "Contoso2",
-      "issuerSubjectKeyIdentifier": "String",
-      "createdDateTime": null,
+      "issuerSubjectKeyIdentifier": "C0E9....711A",
+      "createdDateTime": "2024-10-25T18:05:28Z",
       "expirationDateTime": "2027-08-29T02:05:57Z",
-      "thumbprint": "String",
+      "thumbprint": "C6FA....4E9CF2",
       "certificateRevocationListUrl": null,
       "deltacertificateRevocationListUrl": null,
       "isIssuerHintEnabled": true

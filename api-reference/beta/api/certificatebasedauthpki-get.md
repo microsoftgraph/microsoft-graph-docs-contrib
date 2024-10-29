@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-get-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -90,8 +92,8 @@ Content-Type: application/json
     "deletedDateTime": null,
     "displayName": "Contoso PKI",
     "status": "succeeded",
-    "statusDetails": "String",
-    "lastModifiedDateTime": "String (timestamp)"
+    "statusDetails": null,
+    "lastModifiedDateTime": "2024-10-29T02:05:57Z"
     }
 }
 ```

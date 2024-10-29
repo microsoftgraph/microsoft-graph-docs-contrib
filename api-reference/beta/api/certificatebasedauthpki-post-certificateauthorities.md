@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-post-certificateauthorities-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -51,17 +53,15 @@ You can specify the following properties when creating a **certificateAuthorityD
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, and `unknownFutureValue`. Optional.|
 |certificate|Binary|The public key of the certificate authority. Required.|
 |displayName|String|The display name of the certificate authority. Optional.|
 |issuer|String| The issuer of the certificate authority. Optional.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
-|createdDateTime|DateTimeOffset|The date and time when the certificate authority was created. Optional.|
 |expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Required.|
 |thumbprint|String|The thumbprint of certificate authority certificate. Required.|
 |certificateRevocationListUrl|String| The URL to check if the certificate is revoked. Optional.|
-|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
+|deltacertificateRevocationListUrl|String|The list of certificates that have been revoked since the last Certificate Revocation List (CRL) or Delta CRL was published, depending on which is most recent. Optional.|
 |isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
 
 
@@ -85,18 +85,9 @@ POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certific
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
-  "deletedDateTime": "String (timestamp)",
-  "certificateAuthorityType": "String",
-  "certificate": "Binary",
-  "displayName": "String",
-  "issuer": "String",
-  "issuerSubjectKeyIdentifier": "String",
-  "expirationDateTime": "String (timestamp)",
-  "thumbprint": "String",
-  "certificateRevocationListUrl": "String",
-  "deltacertificateRevocationListUrl": "String",
-  "isIssuerHintEnabled": "Boolean"
+ 
+  "certificateAuthorityType": "intermediate",
+ 
 }
 ```
 
@@ -119,14 +110,14 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
   "id": "90777c92-2eb3-4a68-931d-4a3e1e1c741f",
   "deletedDateTime": null,
-  "certificateAuthorityType": "root",
+  "certificateAuthorityType": "intermediate",
   "certificate": "Binary",
   "displayName": "Contoso2 CA1",
   "issuer": "Contoso2",
-  "issuerSubjectKeyIdentifier": "String",
-  "createdDateTime": null,
+  "issuerSubjectKeyIdentifier": "C0E9....711A",
+  "createdDateTime": "2024-10-25T18:05:28Z",
   "expirationDateTime": "2027-08-29T02:05:57Z",
-  "thumbprint": "String",
+  "thumbprint": "C6FA....4E9CF2",
   "certificateRevocationListUrl": null,
   "deltacertificateRevocationListUrl": null,
   "isIssuerHintEnabled": true
