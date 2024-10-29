@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-upload-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -70,8 +72,8 @@ POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certific
 Content-Type: application/json
 
 {
-  "uploadUrl": "String",
-  "sha256FileHash": "String"
+  "uploadUrl": "https://microsoft.sharepoint.com/CBA/demo/CBARootPKI.p7b",
+  "sha256FileHash": "D7F9....61E6F"
 }
 ```
 

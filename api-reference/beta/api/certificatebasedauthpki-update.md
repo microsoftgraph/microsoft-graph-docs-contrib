@@ -26,6 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-update-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
+
 ## HTTP request
 
 <!-- {
@@ -50,12 +53,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. This value is `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |displayName|String|The name of the certificateBasedAuthPki object. Optional.|
-|status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki object which can be uploaded or deleted. Optional.|
-|statusDetails|String|The status details of the upload/deleted operation of PKI(Public Key Infrastructure). Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the certificateBasedAuthPki object was created or last modified. Required.|
-
 
 
 ## Response
@@ -77,11 +75,7 @@ PATCH https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certifi
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-  "deletedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "status": "String",
-  "statusDetails": "String"
+  "displayName": "Contoso PKI",
 }
 ```
 
@@ -103,11 +97,11 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
   "id": "c721dc42-b383-e883-bf80-2d539946cf8c",
-  "deletedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "status": "String",
-  "statusDetails": "String",
-  "lastModifiedDateTime": "String (timestamp)"
+  "deletedDateTime": null,
+  "displayName": "Contoso PKI",
+  "status": "succeeded",
+  "statusDetails": null,
+  "lastModifiedDateTime": "2024-10-29T02:05:57Z"
 }
 ```
 
