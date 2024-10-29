@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /storage/fileStorage/containers/{containerId}/permissions
 ```
+
 ## Optional query parameters
 This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
