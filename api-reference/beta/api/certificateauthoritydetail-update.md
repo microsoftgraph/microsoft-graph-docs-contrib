@@ -53,7 +53,6 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date and time when the object was soft deleted. `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
 |certificate|Binary|The type of certificate authority. Possible values are: `root`, `intermediate`. Required.|
 |displayName|String|The name of the certificate authority. Optional.|
@@ -87,18 +86,9 @@ PATCH https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certifi
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
-  "deletedDateTime": "String (timestamp)",
-  "certificateAuthorityType": "String",
-  "certificate": "Binary",
-  "displayName": "String",
-  "issuer": "String",
-  "issuerSubjectKeyIdentifier": "String",
-  "expirationDateTime": "String (timestamp)",
-  "thumbprint": "String",
-  "certificateRevocationListUrl": "String",
-  "deltacertificateRevocationListUrl": "String",
-  "isIssuerHintEnabled": "Boolean"
+
+   "isIssuerHintEnabled": true
+   
 }
 ```
 
@@ -125,10 +115,10 @@ Content-Type: application/json
   "certificate": "Binary",
   "displayName": "Contoso2 CA1",
   "issuer": "Contoso2",
-  "issuerSubjectKeyIdentifier": "String",
-  "createdDateTime": null,
+  "issuerSubjectKeyIdentifier": "C0E9....711A",
+  "createdDateTime": "2024-10-25T18:05:28Z",
   "expirationDateTime": "2027-08-29T02:05:57Z",
-  "thumbprint": "String",
+  "thumbprint": "C6FA....4E9CF2",
   "certificateRevocationListUrl": null,
   "deltacertificateRevocationListUrl": null,
   "isIssuerHintEnabled": true
