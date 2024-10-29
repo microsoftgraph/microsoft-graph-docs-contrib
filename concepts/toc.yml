@@ -911,6 +911,9 @@ items:
       items:
       - name: Call records
         href: cloud-communications-callrecords.md
+        items:
+        - name: FAQ
+          href: callrecords-api-faq.md
       - name: Supported call types
         href: cloud-communications-calls.md
       - name: Create or join online meetings

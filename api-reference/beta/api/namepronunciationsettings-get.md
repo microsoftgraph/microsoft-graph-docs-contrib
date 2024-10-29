@@ -22,12 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "namepronunciationsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/namepronunciationsettings-get-permissions.md)]
 
+<!-- {
+  "blockType": "request"
+}-->
+
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 GET /admin/people/namePronunciation
 ```
