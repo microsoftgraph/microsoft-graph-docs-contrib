@@ -59,6 +59,8 @@ If successful, this method returns a `201 Created` response code and a new [conn
 
 ## Examples
 
+### Example 1: Create a connected organization for a user to request access to
+
 ### Request
 
 # [HTTP](#tab/http)
@@ -145,3 +147,57 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Create a connected organization with an identitySource based on a tenant ID
+
+### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_connectedorganization_from_connectedorganizations_based_on_tenantID"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
+Content-Type: application/json
+
+{
+  "displayName":"Connected organization name",
+  "description":"Connected organization description",
+  "identitySources": [
+    {
+      "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
+      "displayName": "Meta",
+      "tenantId": "8ae927fe-1255-47a7-a2af-5f3a069daaa2"
+      }
+  ],
+  "state":"proposed"
+}
+
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectedOrganization"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/connectedOrganizations/$entity",
+  "id": "922c86cf-65b8-4d94-b6a6-477dde331c7b",
+  "displayName": "Connected organization name test",
+  "description": "Connected organization description test",
+  "createdDateTime": "2024-10-29T21:55:39.6051923Z",
+  "modifiedDateTime": "2024-10-29T21:55:39.6051923Z",
+  "state": "proposed",
+  "identitySources": []
+}
+
+```

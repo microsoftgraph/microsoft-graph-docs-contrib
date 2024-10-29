@@ -157,7 +157,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-
 ### Example 2: Create a connected organization with an identitySource based on a tenant ID
 
 ### Request
@@ -172,6 +171,18 @@ Content-type: application/json
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
 Content-Type: application/json
 
+{
+  "displayName":"Connected organization name",
+  "description":"Connected organization description",
+  "identitySources": [
+    {
+      "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
+      "displayName": "Meta",
+      "tenantId": "8ae927fe-1255-47a7-a2af-5f3a069daaa2"
+      }
+  ],
+  "state":"proposed"
+}
 
 ```
 
@@ -188,5 +199,15 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/connectedOrganizations/$entity",
+  "id": "922c86cf-65b8-4d94-b6a6-477dde331c7b",
+  "displayName": "Connected organization name test",
+  "description": "Connected organization description test",
+  "createdDateTime": "2024-10-29T21:55:39.6051923Z",
+  "modifiedDateTime": "2024-10-29T21:55:39.6051923Z",
+  "state": "proposed",
+  "identitySources": []
+}
 
 ```
