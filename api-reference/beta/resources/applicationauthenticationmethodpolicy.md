@@ -20,25 +20,25 @@ These policies allow organizations to take advantage of the new app security har
 There are two types of policy controls:
 
 - Tenant default policy that applies to all applications or service principals.
-- App (application or service principal) management policies that allow inclusion or exclusion of individual applications from the tenant default policy.
+- App (application or service principal) management policies that allow individual applications to be included or excluded from the tenant default policy.
 
 ## Tenant default app management policy
 
 A tenant default policy is a single object that always exists and is disabled by default. It's defined by the [tenantAppManagementPolicy](tenantappmanagementpolicy.md) resource and enforces restrictions on application vs service principal objects. It contains the following two properties:
 
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
-- **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
+- **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects).
 
-These properties enable an organization to lock down credential usage in apps that originate from their tenant and provide a mechanism to control credential addition in externally provisioned applications to protect them from credential abuse. The application owner of a multi-tenant app could still use any type of credentials in their application object, but the policy only protects the service principal from credential abuse. 
+These properties enable an organization to separately control the configuration of apps that originate from their tenant vs. their tenant's instance of an externally owned application.  
 
 ## App management policy for applications and service principals
 
-App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
+App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal to override the tenant default policy.
 
-When both the tenant default policy and an app management policy exist, the app management policy takes precedence and the assigned application or service principal doesn't inherit from the tenant default policy. Only one policy can be assigned to an application or service principal.
+When the tenant default policy and an app management policy both define the same restriction, the app management policy takes precedence.  If a restriction is set on an app management policy in a `disabled` state, that restriction won't apply to apps with that policy linked to them, regardless of what the tenant default policy would normally enforce.  Similarly, if a restriction is set on an app management policy in an `enabled` state, that restriction will apply to apps with that policy linked to them.  However, if the app management policy doesn't define any behavior for a certain restriction, it will fall back to the tenant default policy's behavior. Only one app management policy can be assigned to an application or service principal.
 
 > [!Note]
-> Neither the tenant default policies nor the app management policies block token issuance for existing applications. An application that does not meet the policy requirements will continue to work until it tries to update the resource to add a new secret.
+> Neither the tenant default policies nor the app management policies block token issuance for existing applications. An application that does not meet the policy requirements will continue to work; only the app creation/update operation that violates the policy will be blocked.
 
 ## What restrictions can be managed in Microsoft Graph?
 
@@ -53,7 +53,7 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
 | asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
 | trustedCertificateAuthority  | Enforce the list of trusted certificate authorities.      | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.   |
-| nonDefaultUriAddition  | Block new identifier URIs for apps except the "default" URI format. | Block new identifier URIs for apps unless they are of the format `api://{appId}`.   |
+| nonDefaultUriAddition  | Block new identifier URIs for apps except the "default" URI format. | Block new identifier URIs for apps unless they are of the format `api://{appId}` or `api://{tenantId}/{appId}`.   |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
@@ -73,15 +73,13 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Tenant default policy                                                              | App management policy                                                                                                                               |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                |
-| Restrictions are disabled by default for app/SP.                                   | Allows customization for single tenant or multi tenant(backing app in home tenant or provisioned apps).                                             |
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
-| Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined will inherit from default policy. |
 
 ## Requirements
 
 - The least privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) for management of application authentication method policies are Application Administrator and Cloud Application Administrator.
-- All app policy management operations require a [Microsoft Entra Workload ID Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 

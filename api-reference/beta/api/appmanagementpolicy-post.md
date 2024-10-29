@@ -68,8 +68,9 @@ The following example shows a request. This request created an app management po
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
-- Enforces lifetime on password secrets and key credentials for applications created on or after 2014-10-19 at 10:37 AM UTC time.
-- Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
+- Limits password secrets for apps and service principals created after 2014-10-19 at 10:37 AM UTC time to less than 90 days.
+- Disables the nonDefaultUriAddition restriction.  This means that apps with this policy applied to them will be able to add new non-default identifier URIs to their apps, even if the tenant default policy would typically block it.
+- Does not specify any other restrictions.  This means that the behavior for those restrictions on apps/service principals with this policy applied will fall back to however the tenant default policy is configured.
 
 
 # [HTTP](#tab/http)
@@ -89,45 +90,35 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
         "passwordCredentials": [
             {
                 "restrictionType": "passwordAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
             },
             {
                 "restrictionType": "passwordLifetime",
+                "state": "enabled",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
-                "maxLifetime": "P30D",
-                "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
-            }
-        ],
-        "keyCredentials": [
-            {
-                "restrictionType": "asymmetricKeyLifetime",
+                "state": "enabled",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
-            },
-            {
-                "restrictionType": "trustedCertificateAuthority",
-                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
-                "certificateBasedApplicationConfigurationIds": [
-                    "eec5ba11-2fc0-4113-83a2-ed986ed13743",
-                    "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
-                ],
-                "maxLifetime": null
             }
         ],
+        "keyCredentials": [],
         "applicationRestrictions": {
             "identifierUris": {
                 "nonDefaultUriAddition": {
-                    "restrictForAppsCreatedAfterDateTime": "2024-01-01T10:37:00Z",
+                    "state": "disabled",
+                    "restrictForAppsCreatedAfterDateTime": null,
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }
@@ -196,15 +187,40 @@ Content-type: application/json
         "passwordCredentials": [
             {
                 "restrictionType": "passwordAddition",
+                "state": "enabled",
                 "maxLifetime": null,
                 "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
             },
             {
                 "restrictionType": "passwordLifetime",
+                "state": "enabled",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "symmetricKeyAddition",
+                "state": "enabled",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "symmetricKeyLifetime",
+                "state": "enabled",
+                "maxLifetime": "P90D",
+                "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
             }
-        ]
+        ],
+        "keyCredentials": [],
+        "applicationRestrictions": {
+            "identifierUris": {
+                "nonDefaultUriAddition": {
+                    "state": "disabled",
+                    "restrictForAppsCreatedAfterDateTime": null,
+                    "excludeAppsReceivingV2Tokens": true,
+                    "excludeSaml": true
+                }
+            }
+        }
     }
 }
 ```
