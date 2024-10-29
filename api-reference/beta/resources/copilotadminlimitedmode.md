@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+LimitedMode copilot setting value controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. If this setting enabled, Copilot will not respond to sentiment-related prompts and questions asked by the user. If setting is disabled, Copilot will respond to sentiment-related prompts and questions asked by the user. In intial version this settings will be honored by Teams Copilot and eventually all M365 Copilots will be honoring this setting. Default value is disabled.
 
 
 Inherits from [entity](../resources/entity.md).
