@@ -1,12 +1,11 @@
 ---
 title: "emergencyCallerInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information about an emergency caller."
+author: "awang119"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
-
 # emergencyCallerInfo resource type
 
 Namespace: microsoft.graph
@@ -18,11 +17,11 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|location|[location](../resources/location.md)|**TODO: Add Description**|
-|phoneNumber|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|upn|String|**TODO: Add Description**|
+| displayName | String | Emergency caller display name. |
+| location | [location](../resources/location.md) | Emergency caller location. |
+| phoneNumber | String | Emergency caller's phone number. |
+| tenantId | String | Caller's tenant id. |
+| upn | String | Caller's user principal name. |
 
 ## Relationships
 None.
