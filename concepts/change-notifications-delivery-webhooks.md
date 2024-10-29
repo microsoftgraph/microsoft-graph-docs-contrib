@@ -42,11 +42,11 @@ Notifications that fail to deliver are retried at exponential backoff intervals.
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. It may include dropping notifications in a way that they can't be recovered.
 
 1. An endpoint is marked "slow" once more than 10% of responses take longer than 10 seconds in a 10-minute window.
-      - Once an endpoint has been marked "slow", any new notifications are sent on a 10-second delay.
+      - Once an endpoint is marked "slow", any new notifications are sent on a 10-second delay.
       - An endpoint exits the "slow" state once less than 10% of responses take longer than 10 seconds in a 10-minute window.
 
 2. An endpoint is marked "drop" once more than 15% of responses take longer than 10 seconds in a 10-minute window.
-      - Once an endpoint has been marked "drop", any new notifications are dropped, for up to 10 minutes
+      - Once an endpoint is marked "drop", any new notifications are dropped, for up to 10 minutes
       - An endpoint exits the "drop" state once less than 15% of responses take longer than 10 seconds in a 10-minute window.
 
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hubs](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
@@ -200,12 +200,12 @@ When you receive a change notification:
 
 1. Validate the **clientState** property. It must match the value originally submitted with the subscription creation request.
 
-    If there's a mismatch, don't consider the change notification as valid. It's possible that the change notification hasn't originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    If there's a mismatch, don't consider the change notification as valid. It's possible that the change notification isn't originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your client app based on your business logic.
 
 ## Subscription lifecycle
-When they're no longer needed, subscriptions may be deleted or expire. When you create your subscription, you set an expiration date using the **expirationDateTime** property. Once this time has passed, Microsoft Graph deletes the subscription and doesn't send notifications to your endpoint. You may also explicitly delete your subscription.
+When they're no longer needed, subscriptions may be deleted or expire. When you create your subscription, you set an expiration date using the **expirationDateTime** property. Once this time passes, Microsoft Graph deletes the subscription and doesn't send notifications to your endpoint. You may also explicitly delete your subscription.
 
 The simplest way to continue receiving notifications is to continue renewing your subscription request. Each notification includes a **subscriptionExpirationDateTime** property. You can use it to guide you when to renew your subscription.
 
@@ -318,7 +318,7 @@ For increased flexibility and reliability, when you create a subscription, you m
 When you subscribe to lifecycle notifications, Microsoft Graph alerts you:
 - When the access token is about to expire.
 - When a subscription is about to expire.
-- When a tenant administrator has revoked your app's permissions to read a resource.
+- When a tenant administrator revokes your app's permissions to read a resource.
 
 > [!NOTE]
 > If an access token expires, notifications are not delivered to the endpoint. But Microsoft Graph continues to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications are delivered.
