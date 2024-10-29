@@ -1,6 +1,6 @@
 ---
 title: "Add custom properties to a fileStorageContainer"
-description: "Add custom properties to a fileStorageContainer"
+description: "Add custom properties to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
