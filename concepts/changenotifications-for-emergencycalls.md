@@ -47,7 +47,89 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to emergency call started 
-[Ben TODO - include description] 
-[Ben TODO - include subscriptoion request & response]
-[Ben TODO - include notification request & response]
+## Emergency call event notifications
+
+Change notifications for emergency calls are triggered when a call with an applicable emergency call policy is initiated.
+Rich notifications
+
+### Notification payload example
+
+```http
+POST "https://contonso.com/notificationUrl
+Content-Type: application/json
+
+{
+  "value": [{
+    "subscriptionId": "{Subscription id}",
+    "clientState": "{secret client state}",
+    "changeType": "updated",
+    "tenantId": "00000000-0000-0000-0000-000000000000",
+    "resource": "communications/calls/getEmergencyEventsByPolicy(policyName='EmergencyPolicy')",
+    "subscriptionExpirationDateTime": "2021-02-01T11:00:00.0000000Z",
+    "resourceData": {
+        "@odata.id": "communications/calls/getEmergencyEventsByPolicy(policyName='EmergencyPolicy')",
+        "@odata.type": "#microsoft.graph.emergencyCallEvent",
+        "id": "11111111-0000-0000-0000-000000000000",
+    },
+    "organizationId": "00000000-0000-0000-0000-000000000000",
+    "encryptedContent": {
+      "data": "{Encrypted content}",
+      "dataSignature": "{Encrypted data signature}",
+      "dataKey": "{Encrypted data key for encrypting content}",
+      "encryptionCertificateId": "{User specified id of encryption certificate}",
+      "encryptionCertificateThumbprint": "{Encrpytion certification thumbprint}"
+    }
+  }],
+  "validationTokens": ["{Validation Tokens}"]
+}
+```
+
+
+### Decrypted notification resource data example
+
+```json
+{
+    "@odata.id": "communications/calls/getEmergencyEventsByPolicy(policyName='EmergencyPolicy')",
+    "@odata.type": "#microsoft.graph.emergencyCallEvent",
+    "id": "11111111-0000-0000-0000-000000000000",
+    "emergencyCallEvent": { 
+        "id": "11111111-0000-0000-0000-000000000000",  
+        "callEventType": "callStarted",
+        "policyName": "EmergencyPolicy",
+        "eventDateTime": "2024-01-01T10:00:00.0000000+00:00",
+        "emergencyNumberDialed": "{emergencyNumberDialed}",
+        "callerInfo": {
+            "displayName": "Emergency caller display name", 
+            "upn": "emergencyCaller@contonso.com", 
+            "phoneNumber": "00000000000",
+            "tenantId": "00000000-0000-0000-0000-000000000000",
+            "location": {
+                "uniqueId": "00000000-0000-0000-0000-000000000000",
+                "address": {
+                    "street": "Microsoft Way",
+                    "city": "Redmond",
+                    "state": "WA",
+                    "countryOrRegion": "United States",
+                    "postalCode": "00000",
+                    "additionalData": {
+                    "companyName": "Company name",
+                    "additionalInfo": "700",
+                    "houseNumber": "725",
+                    "county": "County",
+                    "description": "Location description",
+                    "streetSuffix": "Street suffix"
+                    }
+                },
+                "coordinates": {
+                    "latitude": "00.0000",
+                    "longitude": "00.0000"
+                }
+            }
+        }
+    }
+}
+```
+
+## Related content
+- [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
+- [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)
