@@ -5,7 +5,7 @@ author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 29/10/2024
+ms.date: 10/29/2024
 ---
 
 # sensorSettings resource type

@@ -1,11 +1,11 @@
 ---
 title: "Delete sensor"
 description: "Delete a sensor object."
-author: "naalmog"
+author: "amirfeldman"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 10/29/2024
+ms.date: 09/10/2024
 ---
 
 # Delete sensor

@@ -57,6 +57,112 @@
       "CreatedDateTime": "2024-09-12T15:32:17.5648191Z",
       "WorkloadArea": "Security",
       "SubArea": "Identities"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentStatus** enumeration type.",
+          "Target": "deploymentStatus"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensorHealthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorHealthStatus** enumeration type.",
+          "Target": "sensorHealthStatus"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorType** enumeration type.",
+          "Target": "sensorType"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentAccessKeyType",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentAccessKeyType](https://learn.microsoft.com/en-us/graph/api/resources/security-deploymentAccessKeyType?view=graph-rest-1.0) resource.",
+          "Target": "deploymentAccessKeyType"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensorDeploymentPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensorDeploymentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorDeploymentPackage?view=graph-rest-1.0) resource.",
+          "Target": "sensorDeploymentPackage"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensorSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorSettings?view=graph-rest-1.0) resource.",
+          "Target": "sensorSettings"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "networkAdapter",
+          "ChangeType": "Addition",
+          "Description": "Added the [networkAdapter](https://learn.microsoft.com/en-us/graph/api/resources/security-networkAdapter?view=graph-rest-1.0) resource.",
+          "Target": "networkAdapter"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensor",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Target": "sensor"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Method",
+          "ChangedApiName": "regenerateDeploymentAccessKey",
+          "ChangeType": "Addition",
+          "Description": "Added the [regenerateDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-regenerateDeploymentAccessKey?view=graph-rest-1.0) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Target": "sensor"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeploymentAccessKey",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentAccessKey?view=graph-rest-1.0) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Target": "sensor"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeploymentPackageUri",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeploymentPackageUri](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentPackageUri?view=graph-rest-1.0) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Target": "sensor"
+        }
+      ],
+      "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-29T05:10:40.1623416Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Identities"
     }
   ]
 }
