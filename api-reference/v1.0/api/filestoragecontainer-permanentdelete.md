@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storageContainers/{containerId}/permanentDelete
+POST /storage/fileStorage/containers/{containerId}/permanentDelete
 ```
 
 ## Request headers
@@ -57,6 +57,7 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.permanentdelete",
