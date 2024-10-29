@@ -64,8 +64,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### Group memberships for an organizational contact
-<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_5" } -->
-[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-5-permissions.md)]
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
 
 ## HTTP request
 
