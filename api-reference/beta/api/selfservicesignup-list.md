@@ -68,10 +68,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [selfServiceSignUp](../resources/selfservicesignup.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.  CONFIRM THAT THIS IS TRUE
 
-## Examples
+## Example
 
-### Example 1: List all sign-ups during a specific time period
-In this example, the response object shows the user signed up using Email OTP, and included an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
+This example lists all sign-up events during a specific time period.  In this example, 4 signup events related to one sign-up attempt are returned.  The response object shows the user signed up using Email OTP, and included an interrupt involving verification of user's identity (by entering the OTP sent to the user's email).
 
 #### Request
 
@@ -190,37 +189,3 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve the sign-up events related to the app with the appDisplayName 'TestApp3'. 
-In this example.....
-
-#### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_selfservicesignup"
-}
--->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signUps?&$filter=appDisplayName eq 'TestApp3'
-```
-
-
-#### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.selfServiceSignUp)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-}
-
-```

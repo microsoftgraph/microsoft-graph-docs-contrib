@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 Details self-service sign-up activity of Microsoft Entra External ID users on a tenant.
 
 
-Inherits from [entity](../resources/entity.md).
-
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
