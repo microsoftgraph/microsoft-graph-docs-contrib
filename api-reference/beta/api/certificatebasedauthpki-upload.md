@@ -57,7 +57,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code. If another upload is currently in progress, this API returns a 400 Bad Request error message. Attempting to upload a duplicate certificate results in a 400 Bad Request error code with a Duplicate Certificate exists" error message.
 
 ## Examples
 
