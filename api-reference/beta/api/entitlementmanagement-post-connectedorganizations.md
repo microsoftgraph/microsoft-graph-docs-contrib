@@ -61,6 +61,8 @@ If successful, this method returns a `201 Created` response code and a new [conn
 
 ## Examples
 
+### Example 1: Create a connected organization for a user to request access to
+
 ### Request
 
 # [HTTP](#tab/http)
@@ -154,3 +156,37 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 2: Create a connected organization with an identitySource based on a tenant ID
+
+### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_connectedorganization_from_connectedorganizations_based_on_tenantID"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
+Content-Type: application/json
+
+
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectedOrganization"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+
+```
