@@ -20,7 +20,7 @@ Represents a meeting note associated with a [call AI Insight](callaiinsight.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |subpoints|[meetingNoteSubpoint](../resources/meetingnotesubpoint.md) collection| A collection of subpoints of the meeting note.|
-|text|String|The text content of the meeting note.|
+|text|String|The text of the meeting note.|
 |title|String|The title of the meeting note.|
 
 ## Relationships

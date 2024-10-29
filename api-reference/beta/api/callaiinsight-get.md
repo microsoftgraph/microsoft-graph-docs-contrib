@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 | Application                            | Not supported.                  | Not supported.                |
 
 > [!NOTE]
-> This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API only works for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 

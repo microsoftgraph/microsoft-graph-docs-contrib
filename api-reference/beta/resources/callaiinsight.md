@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |actionItems|[actionItem](../resources/actionitem.md) collection|The collection of AI-generated action items. Read-only.|
 |callId|String|The callId for the online meeting call for which the callAiInsight was generated. Read-only.|
-|contentCorrelationId|String|The uniqueId which correlates the transcript from which the insights were generated. Read-only.|
+|contentCorrelationId|String|The uniqueId that correlates the transcript from which the insights were generated. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time at which the corresponding transcript was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |endDateTime|DateTimeOffset|Date and time at which the corresponding transcription ends. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier for the callAiInsight entity. Read-only. Inherited from [entity](../resources/entity.md).|

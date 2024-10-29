@@ -19,7 +19,7 @@ Represents a meeting note subpoint associated with a [meeting note](meetingnote.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|text|String|The text content of the meeting note subpoint.|
+|text|String|The text of the meeting note subpoint.|
 |title|String|The title of the meeting note subpoint.|
 
 ## Relationships
