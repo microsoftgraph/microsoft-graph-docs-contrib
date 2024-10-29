@@ -3012,7 +3012,7 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Public Key Infrastructure
+  - name: Public key infrastructure
     items:
     - name: Certificate-based auth pki
       items:
