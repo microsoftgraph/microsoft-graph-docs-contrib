@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [permission](../resources/permission.md) on a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the permission resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
+Update an existing [permission](../resources/permission.md) on a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the permission resource. Only the **roles** property can be updated. One role per user is supported. A new ID is generated for the updated permissions object.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
