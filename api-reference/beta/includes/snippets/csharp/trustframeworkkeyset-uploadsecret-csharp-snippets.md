@@ -13,8 +13,8 @@ var requestBody = new UploadSecretPostRequestBody
 {
 	Use = "use-value",
 	K = "application-secret-to-be-uploaded",
-	Nbf = 1508969811,
-	Exp = 1508973711,
+	Nbf = 1508969811L,
+	Exp = 1508973711L,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

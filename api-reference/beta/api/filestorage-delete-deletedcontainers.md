@@ -97,7 +97,6 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!
 
 ---
 
-
 ### Response
 
 The following example shows the response.
