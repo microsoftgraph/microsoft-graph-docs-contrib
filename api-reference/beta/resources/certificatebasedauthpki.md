@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](x509certificateauthenticationmethodconfiguration). The [certificate-based authentication method](x509certificateauthenticationmethodconfiguration) must be enabled in the tenant for you to manage these PKI instances.
+The collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). The [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration) must be enabled in the tenant for you to manage these PKI instances.
 
 
 Inherits from [directoryObject](../resources/directoryobject.md).
