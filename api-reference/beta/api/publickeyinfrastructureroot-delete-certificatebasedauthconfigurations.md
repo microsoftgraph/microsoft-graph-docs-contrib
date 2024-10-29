@@ -26,8 +26,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 DELETE /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```
@@ -51,7 +57,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-
+<!-- {
+  "blockType": "request",
+  "name": "delete_certificatebasedauthpki"
+}
+-->
 ``` http
 DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}
 ```

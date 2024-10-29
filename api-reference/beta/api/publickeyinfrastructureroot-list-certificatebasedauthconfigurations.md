@@ -26,7 +26,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-list-certificatebasedauthconfigurations-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ``` http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
@@ -55,6 +62,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_certificatebasedauthpki"
+}
+-->
 
 ``` http
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations

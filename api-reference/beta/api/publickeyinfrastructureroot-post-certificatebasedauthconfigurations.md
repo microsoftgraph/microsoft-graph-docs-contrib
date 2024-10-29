@@ -26,8 +26,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-post-certificatebasedauthconfigurations-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 {
   "displayName": "Contoso PKI"
 }
@@ -63,6 +69,12 @@ If successful, this method returns a `201 Created` response code and a [certific
 ### Request
 
 The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_certificatebasedauthpki_from_"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
