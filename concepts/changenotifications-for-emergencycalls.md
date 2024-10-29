@@ -25,7 +25,7 @@ To subscribe to when an applicable emergency call policy number is dialed, set t
 
 Subscriptions for emergency call events only support rich notifications. Please set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
-Subscriptions for emergency call events have a max expiration period of 1 day. To keep subscriptions for longer durations, a subscription patch must be made to update the `expirationDateTime` property. See [Update subscription API](/graph/api/subscription-update) for more details.
+Subscriptions for emergency call events have a **max expiration period of 1 day**. To keep subscriptions for longer durations, a subscription patch must be made to update the `expirationDateTime` property. See [Update subscription API](/graph/api/subscription-update) for more details.
 
 Subscriptions are limited one subscriptions per application, per tenant, and per unique policy name. A duplicated subscription using the same application, tenant, and to the same emergency policy will return conflict.
 
