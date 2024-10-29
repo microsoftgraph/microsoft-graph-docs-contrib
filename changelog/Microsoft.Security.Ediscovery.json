@@ -825,6 +825,56 @@
       "CreatedDateTime": "2024-10-16T21:22:16.0262082Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "legalHolds",
+          "ChangeType": "Addition",
+          "Description": "Added the **legalHolds** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-list-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+         {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+          {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-delete-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource and its methods.", 
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-28T17:35:53.3172676Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
     }
   ]
 }
