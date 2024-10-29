@@ -14,9 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Microsoft Entra External ID and Azure AD B2C tenants.
+Represents identity providers for both Microsoft Entra External ID and Azure AD B2C tenants.
 
 Configuring an identity provider in your workforce tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+For Microsoft Entra B2B scenarios in a Microsoft Entra directory, the identity provider can be a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md), both of which inherit from the identityProviderBase resource type.
+
+Configuring an identity provider in your Microsoft Entra directory enables new Microsoft Entra B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+
+In an Azure AD B2C directory, the identity provider type can be a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), all which inherit from the identityProviderBase resource type.
+
+For a Microsoft Entra External ID tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#oidcidentityprovider) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
 Configuring an identity provider in your Entra External ID or Azure AD B2C directory enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Entra External ID or Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol (Open ID Connect is currently supported only with external tenants and Azure AD B2C).
 
