@@ -3,7 +3,7 @@ title: "List identityProviders"
 description: "Get a collection of identity provider resources that are configured for a tenant, and that are derived from identityProviderBase."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "brozbab"
+author: "namkedia"
 ms.subservice: "entra-sign-in"
 ---
 
@@ -15,7 +15,6 @@ Get a collection of identity provider resources that are configured for a tenant
 For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
 For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
-
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
