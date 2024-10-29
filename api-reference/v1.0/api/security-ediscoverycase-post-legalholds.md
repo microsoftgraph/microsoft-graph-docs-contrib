@@ -10,8 +10,6 @@ doc_type: "apiPageType"
 # Create ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -70,9 +68,11 @@ Content-Type: application/json
 {
     "displayName": "My legalHold with sources",
     "description": "Created from Graph API",
-    "contentQuery": "KQL content query",
+    "contentQuery": "KQL content query"
 }
 ```
+
+---
 
 ### Response
 The following example shows the response.

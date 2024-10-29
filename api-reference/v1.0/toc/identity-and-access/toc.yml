@@ -170,8 +170,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
