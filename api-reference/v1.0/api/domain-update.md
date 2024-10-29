@@ -23,11 +23,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-update-permissions.md)]
 
-The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Domain Name Administrator
-* Security Administrator
-* External Identity Provider Administrator
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Domain Name Administrator
+> - Security Administrator
+> - External Identity Provider Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
