@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicy resource type"
-description: "*ediscoveryHoldPolicy resource type"
+description: "ediscoveryHoldPolicy resource type"
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # ediscoveryHoldPolicy resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a legal hold policy. Legal holds are holds that are tied to an eDiscovery case. Legal holds should not be confused with retention holds, which are used to control retention policies for Microsoft 365 content. eDiscovery legal holds are for holding content indefinitely for litigation, internal investigations, and other legal actions where content needs to be protected against deletion. For more information, see [Manage holds in eDiscovery (Premium)](/microsoft-365/compliance/managing-holds)
 
@@ -36,7 +34,6 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |createdDateTime|DateTimeOffset|The date and time the legal hold was created. |
 |description|String| The legal hold description. |
 |displayName|String| The display name of the legal hold. |
-|contentQuery|String| KQL query that specifies content to be held in the specified locations. |
 |errors|String collection|Lists any errors that happened while placing the hold. |
 |id|String|The ID for the eDiscovery case. Read-only. Inherited from [entity](../resources/entity.md). |
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
