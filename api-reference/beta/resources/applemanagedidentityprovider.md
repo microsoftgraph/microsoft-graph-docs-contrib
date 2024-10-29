@@ -4,7 +4,7 @@ description: "Represents apple identity provider in an Azure AD B2C tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "namkedia"
+author: "brozbab"
 ---
 
 # appleManagedIdentityProvider resource type

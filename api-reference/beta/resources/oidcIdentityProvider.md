@@ -22,7 +22,6 @@ None.
 
 For the list of API operations for managing OpenID Connect identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
-
 ## Properties
 
 |Property|Type|Description|
@@ -62,7 +61,7 @@ The following JSON representation shows the resource type.
     "clientSecret": "String",
   },
   "inboundClaimMapping": {
-    "@odata.type": "microsoft.graph.claimsMapping",
+    "@odata.type": "microsoft.graph.inboundClaimMapping",
     "sub": "String",
     "name": "String",
     "given_name": "String",
@@ -77,6 +76,7 @@ The following JSON representation shows the resource type.
       "region": "String",
       "postal_code": "String",
       "country": "String"
+    }
   }
 }
 ```

@@ -3,18 +3,19 @@ title: "List identityProviders"
 description: "Get a collection of identity provider resources that are configured for a tenant, and that are derived from identityProviderBase."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "namkedia"
+author: "brozbab"
 ms.subservice: "entra-sign-in"
 ---
 
 # List identityProviders
 Namespace: microsoft.graph
 
-Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
+Get a collection of identity provider resources that are configured for a tenant.
 
-For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) resource.
 
-For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
+
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
@@ -55,7 +56,7 @@ For an Azure AD B2C tenant this method returns a `200 OK` response code and a co
 
 <a name='example-1-list-all-identity-provider-resources-configured-in-an-azure-ad-tenant'></a>
 
-### Example 1: List all identity provider resources configured in a Microsoft Entra tenant
+### Example 1: List all identity provider resources configured in a workforce tenant
 
 #### Request
 The following example shows a request.
@@ -234,7 +235,7 @@ Content-type: application/json
 
 ```
 
-### Example 3: List all identity providers configured in a Microsoft Entra External ID in an external tenant
+### Example 3: List all identity providers configured in an external tenant
 
 #### Request
 The following example shows a request.
