@@ -47,7 +47,7 @@ Feature updates add new features and functionality to Windows 10 and Windows 11.
 
 Quality updates released by Microsoft deliver both security and non-security fixes, helping devices stay protected and up-to-date. Windows Autopatch facilitates security updates through the Expedite service, which prioritizes and accelerates the installation of critical updates. While regular security updates are typically released on the second Tuesday of each month, out-of-band security updates can be issued at any time.
 
-To further reduce downtime, Hotpatch updates are released on a monthly basis as specialized security updates. These updates allow organizations to install critical fixes without requiring a device restart. This approach enhances security by enabling faster protection without disrupting workflows.
+To further reduce downtime, hotpatch updates are released on a monthly basis as specialized security updates. These updates allow organizations to install critical fixes without the need to restart a device. This approach enhances security by enabling faster protection without disrupting workflows.
 
 ## Drivers and firmware
 
