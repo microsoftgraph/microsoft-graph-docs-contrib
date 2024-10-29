@@ -52,7 +52,7 @@ PATCH /copilot/admin/settings/limitedMode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForGroup|Boolean|Indicates the state of copilot limited mode. When true, copilotLimitedMode is enabled and Copilot will not respond to sentiment-related prompts and questions asked by the user. When false, copilotLimitedMode is disabled and Copilot will respond to sentiment-related prompts and questions asked by the user. Default value is false.|
+|isEnabledForGroup|Boolean|Use this to set whether user should be in limited mode for Copilot in Teams Meetings. When copilotLimitedMode=true, users in this mode can ask any questions, but Copilot will not respond to certain questions related to inferring emotions, behavior, judgements. When copilotLimitedMode=false, this is current mode for Copilot, and it will respond to any types of questions grounded to the meeting conversation. Default value is false.|
 |groupId|String|The ID of a Microsoft Entra group, of which the value of isEnabledForGroup is applied value for its members. The default value is null. This parameter is optional. If isEnabledForGroup is set to true, groupId value must be provided and copilot limited mode is enabled to the members of the group|
 
 
