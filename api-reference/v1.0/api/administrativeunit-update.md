@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-update-permissions.md)]
 
-In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/administrativeUnits/allProperties/allTasks` role permission. *Privileged Role Administrator* is the least privileged role for this operation.
+[!INCLUDE [rbac-admin-units-apis-write](../includes/rbac-for-apis/rbac-admin-units-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
