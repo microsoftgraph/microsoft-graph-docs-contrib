@@ -56,7 +56,10 @@ This resource supports:
 |description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
 |displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.|
 |id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
-|visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set (value is `null`), the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
+| membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership). |
+| membershipRuleProcessingState | String | Controls whether the dynamic membership rule is actively processed. Set to `On` to activate the dynamic membership rule, or `Paused` to stop updating membership dynamically. |
+| membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. If not set, the default value is `null` and the default behavior is assigned. |
+|visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set, the default value is `null` and the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 > [!TIP]
 > Directory extensions and associated data are returned by default while schema extensions and associated data returned only on `$select`.
@@ -86,9 +89,11 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String",
+  "membershipType": "String",
   "visibility": "String"
 }
-
 ```
 
 
