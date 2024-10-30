@@ -89,6 +89,6 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/entra/uxSetting/$entity",
   "restrictNonAdminAccess": "false",
-  "id": "84841066-274d-4ec0-a5c1-276be684bdd3"
+  "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
 }
 ```
