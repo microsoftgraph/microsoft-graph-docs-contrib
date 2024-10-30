@@ -1,6 +1,6 @@
 ---
 title: "sensor: getDeploymentAccessKey"
-description: "Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with a workspace."
+description: "Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with the workspace."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -12,7 +12,7 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with a workspace.
+Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with the workspace.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
