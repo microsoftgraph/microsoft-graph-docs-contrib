@@ -74,7 +74,7 @@ If you don't use a `$filter` when creating the subscription:
 The Outlook **contact**, **event**, and **message** resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](change-notifications-lifecycle-events.md).
 
 ### Keep track of subscription lifetime
-Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data can be found in the [subscription lifetime table](https://learn.microsoft.com/en-us/graph/change-notifications-overview#subscription-lifetime).
+Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data can be found in the [subscription lifetime table](change-notifications-overview.md#subscription-lifetime).
 
 If you lose the permission granted earlier for a subscription and the subscription expires meanwhile, request permission again to [create](/graph/api/subscription-post-subscriptions) a new subscription.
 
