@@ -1,9 +1,9 @@
 ---
 title: "Create hardwareOathAuthenticationMethod"
-description: "Create a new hardwareOathAuthenticationMethod object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "This assigns a hardware token to a user without activation."
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/authentication/hardwareOathMethods
+POST /users/{usersId}/authentication/hardwareOathMethods
 ```
 
 ## Request headers
@@ -52,7 +53,8 @@ You can specify the following properties when creating a **hardwareOathAuthentic
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md). Optional.|
+|deviceId|String|ID of the hardware token that is to be assigned to the user and activated.|
+|displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 
 
@@ -75,7 +77,10 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod"
+  "device": {
+        "id": "aad49556-####-####-####-############"
+    },
+  "displayName": Amy Masters Token"
 }
 ```
 

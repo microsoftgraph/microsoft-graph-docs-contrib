@@ -1,19 +1,19 @@
 ---
-title: "hardwareOathAuthenticationMethod: enableSmsSignIn"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Delete hardwareOathAuthenticationMethod"
+description: "Remove the user assignment. The token will remain in the directory."
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# hardwareOathAuthenticationMethod: enableSmsSignIn
+# Delete hardwareOathAuthenticationMethod
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Delete a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathauthenticationmethod-enablesmssignin-permissions"
+  "name": "authentication-delete-hardwareoathmethods-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-enablesmssignin-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/authentication-delete-hardwareoathmethods-permissions.md)]
 
 ## HTTP request
 
@@ -33,8 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/enableSmsSignIn
-POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/enableSmsSignIn
+DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
+DELETE /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -58,11 +58,11 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "hardwareoathauthenticationmethodthis.enablesmssignin"
+  "name": "delete_hardwareoathauthenticationmethod"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/enableSmsSignIn
+DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
 

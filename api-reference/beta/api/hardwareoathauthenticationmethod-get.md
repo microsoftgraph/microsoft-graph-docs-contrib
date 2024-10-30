@@ -1,9 +1,9 @@
 ---
 title: "Get hardwareOathAuthenticationMethod"
 description: "Read the properties and relationships of a hardwareOathAuthenticationMethod object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -87,8 +87,22 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
-    "id": "658d0bfe-3cb9-d4d3-5296-147bc3b1f130",
-    "createdDateTime": "String (timestamp)"
+    "id": "aad49556-####-####-####-############",
+    "device": {
+        "id": "aad49556-####-####-####-############",
+        "displayName": "Amy Masters Token",
+        "serialNumber": "TOTP123456",
+        "manufacturer": "Contoso",
+        "model": "Hardware Token 1000",
+        "secretKey": null,
+        "timeIntervalInSeconds": 30,
+        "status": "activated",
+        "hashFunction": "hmacsha1",
+        "assignedTo": {
+            "id": "0cadbf92-####-####-####-############",
+            "displayName": "Amy Masters"
+        }
+    }
   }
 }
 ```

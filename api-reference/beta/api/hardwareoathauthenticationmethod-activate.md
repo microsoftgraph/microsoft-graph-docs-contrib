@@ -1,9 +1,9 @@
 ---
 title: "hardwareOathAuthenticationMethod: activate"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Activate a Hardware OATH token that is already assigned to a user."
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -52,8 +52,8 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|verificationCode|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|verificationCode|String|The 6-digit TOTP code that refreshes every 30 or 60 seconds on the Hardware OATH token.|
+|displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 
 
@@ -76,8 +76,8 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{har
 Content-Type: application/json
 
 {
-  "verificationCode": "String",
-  "displayName": "String"
+  "verificationCode": "588651",
+  "displayName": "Amy Masters Token"
 }
 ```
 

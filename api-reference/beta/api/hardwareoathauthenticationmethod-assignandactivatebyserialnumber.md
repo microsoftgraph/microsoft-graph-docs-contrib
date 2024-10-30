@@ -1,9 +1,9 @@
 ---
 title: "hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "This allows assigning a hardware token and activating it at the same time by hardware token serial number."
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
+POST /users/{usersId}/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
 
 ## Request headers
@@ -51,9 +52,9 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|verificationCode|String|**TODO: Add Description**|
-|serialNumber|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|verificationCode|String|The 6-digit TOTP code that refreshes every 30 or 60 seconds on the Hardware OATH token.|
+|serialNumber|String|Serial number of the Hardware OATH token, often found on the back of the token.|
+|displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 
 
@@ -76,9 +77,9 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/assi
 Content-Type: application/json
 
 {
-  "verificationCode": "String",
-  "serialNumber": "String",
-  "displayName": "String"
+  "verificationCode": "588651",
+  "serialNumber": "TOTP123456",
+  "displayName": "Amy Masters Token"
 }
 ```
 

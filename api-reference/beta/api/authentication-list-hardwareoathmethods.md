@@ -1,9 +1,9 @@
 ---
 title: "List hardwareOathAuthenticationMethod objects"
-description: "Get a list of the hardwareOathAuthenticationMethod objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "List all hardware tokens assigned to a user"
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /me/authentication/hardwareOathMethods
+GET /users/{usersId}/authentication/hardwareOathMethods
 ```
 
 ## Optional query parameters
@@ -87,8 +88,41 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
-      "id": "658d0bfe-3cb9-d4d3-5296-147bc3b1f130",
-      "createdDateTime": "String (timestamp)"
+      "id": "aad49556-####-####-####-############",
+      "device": {
+        "id": "aad49556-####-####-####-############",
+        "displayName": "Amy Masters Token 1",
+        "serialNumber": "TOTP123456",
+        "manufacturer": "Contoso",
+        "model": "Hardware Token 1000",
+        "secretKey": null,
+        "timeIntervalInSeconds": 30,
+        "status": "activated",
+        "hashFunction": "hmacsha1",
+        "assignedTo": {
+            "id": "0cadbf92-####-####-####-############",
+            "displayName": "Amy Masters"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
+      "id": "3dee0e53-####-####-####-############",
+      "device": {
+        "id": "3dee0e53-####-####-####-############",
+        "displayName": "Amy Masters Token 2",
+        "serialNumber": "TOTP654321",
+        "manufacturer": "Contoso",
+        "model": "Hardware Token 1000",
+        "secretKey": null,
+        "timeIntervalInSeconds": 30,
+        "status": "activated",
+        "hashFunction": "hmacsha1",
+        "assignedTo": {
+            "id": "0cadbf92-####-####-####-############",
+            "displayName": "Amy Masters"
+        }
+      }
     }
   ]
 }

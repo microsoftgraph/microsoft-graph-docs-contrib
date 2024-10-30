@@ -1,13 +1,13 @@
 ---
-title: "hardwareOathAuthenticationMethod: resetPassword"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber"
+description: "This allows assigning a hardware token and activating it at the same time."
+author: "luc-msft"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# hardwareOathAuthenticationMethod: resetPassword
+# hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathauthenticationmethod-resetpassword-permissions"
+  "name": "hardwareoathauthenticationmethod-assignandactivatebyserialnumber-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-resetpassword-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-assignandactivatebyserialnumber-permissions.md)]
 
 ## HTTP request
 
@@ -33,8 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/resetPassword
-POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/resetPassword
+POST /me/authentication/hardwareOathMethods/assignAndActivate
+POST /users/{usersId}/authentication/hardwareOathMethods/assignAndActivate
 ```
 
 ## Request headers
@@ -52,13 +52,15 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|newPassword|String|**TODO: Add Description**|
+|verificationCode|String|The 6-digit TOTP code that refreshes every 30 or 60 seconds on the Hardware OATH token.|
+|deviceId|String|ID of the hardware token that is to be assigned to the user and activated.|
+|displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
@@ -67,15 +69,19 @@ If successful, this action returns a `200 OK` response code and a [passwordReset
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "hardwareoathauthenticationmethodthis.resetpassword"
+  "name": "hardwareoathauthenticationmethodthis.assignandactivatebyserialnumber"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/resetPassword
+POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/assignAndActivate
 Content-Type: application/json
 
 {
-  "newPassword": "String"
+  "device": {
+        "id": "aad49556-####-####-####-############"
+    },
+  "verificationCode": "588651",
+  "displayName": Amy Masters Token"
 }
 ```
 
@@ -86,18 +92,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordResetResponse"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "microsoft.graph.passwordResetResponse"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
