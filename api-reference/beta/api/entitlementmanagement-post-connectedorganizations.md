@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a new [conn
 
 ## Examples
 
-### Example 1: Create a connected organization for a user to request access to
+### Example 1: Create a connected organization
 
 ### Request
 
