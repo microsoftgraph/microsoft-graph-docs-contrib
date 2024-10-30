@@ -1,6 +1,6 @@
 ---
 title: "deploymentAccessKeyType resource type"
-description: "Sensor deployment access key"
+description: "Represents the deployment access key for a Microsoft Defender for Identity sensor."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
