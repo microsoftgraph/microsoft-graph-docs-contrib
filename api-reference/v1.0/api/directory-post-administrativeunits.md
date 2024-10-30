@@ -1,6 +1,6 @@
 ---
 title: "Create administrativeUnit"
-description: "Use this API to create a new administrativeUnit."
+description: "Create a new administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
+Create a new [administrativeUnit](../resources/administrativeunit.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -28,7 +28,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/administrativeUnits
-
 ```
 ## Request headers
 | Name      |Description|
@@ -39,7 +38,18 @@ POST /directory/administrativeUnits
 ## Request body
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
 
-Because the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
+You can specify the following properties when you create an **administrativeUnit**.
+
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+| description | String | Description for the administrative unit. Optional. |
+| displayName | String | Display name for the administrative unit. Required. |
+| membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership). Optional.|
+| membershipRuleProcessingState | String | Controls whether the dynamic membership rule is actively processed. Set to `On` to activate the dynamic membership rule, or `Paused` to stop updating membership dynamically. Optional. |
+| membershipType | String | Indicates the membership type for the administrative unit. The possible values are: `dynamic`, `assigned`. If not set, the default value is `null` and the default behavior is assigned. Optional. |
+| visibility | String | The visibility of the administrative unit. If not set, the default value is `null` and the default behavior is public. It can be set to `HiddenMembership` to hide the membership from nonmembers. Optional. |
+
+The **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), which allows you to use the `POST` operation to add custom properties with your own data when you create the administrative unit.
 
 ## Response
 
@@ -49,10 +59,8 @@ If successful, this method returns a `201 Created` response code and an [adminis
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request that creates a new administrative unit with a dynamic membership rule to include all users whose country is the United States.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_administrativeunit_from_administrativeunits"
@@ -64,49 +72,16 @@ Content-type: application/json
 {
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On",
     "visibility": "HiddenMembership"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-administrativeunit-from-administrativeunits-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-administrativeunit-from-administrativeunits-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-administrativeunit-from-administrativeunits-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-administrativeunit-from-administrativeunits-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-administrativeunit-from-administrativeunits-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-administrativeunit-from-administrativeunits-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
-
 ### Response
 
-Here's an example  of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -123,6 +98,9 @@ Content-type: application/json
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On",
     "visibility": "HiddenMembership"
 }
 ```
