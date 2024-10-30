@@ -404,8 +404,16 @@ items:
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
   - name: Complex types
     items:
+    - name: Deployment access key type
+      href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Network adapter
+      href: ../../resources/security-networkadapter.md
+    - name: Sensor deployment package
+      href: ../../resources/security-sensordeploymentpackage.md
+    - name: Sensor settings
+      href: ../../resources/security-sensorsettings.md
 - name: Information protection
   items:
   - name: Threat assessment
