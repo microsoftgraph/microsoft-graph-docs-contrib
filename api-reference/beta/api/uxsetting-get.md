@@ -21,12 +21,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "entity-get-permissions"
+  "name": "uxsetting-get-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/uxsetting-get-permissions.md)]
 
-<!-- { "blockType": "permissions", "name": "uxsetting_get" } -->
 [!INCLUDE [rbac-rbac-uxsetting-apis](../includes/rbac-for-apis/rbac-uxsetting-apis.md)]
 
 ## HTTP request
