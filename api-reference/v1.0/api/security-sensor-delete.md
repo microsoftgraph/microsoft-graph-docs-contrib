@@ -20,8 +20,8 @@ Delete a [sensor](../resources/security-sensor.md) object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "security_identitycontainer_delete_sensors" } -->
-[!INCLUDE [permissions-table](../includes/permissions/security-identitycontainer-delete-sensors-permissions.md)]
+<!-- { "blockType": "permissions", "name": "security_sensor_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-sensor-delete-permissions.md)]
 
 ## HTTP request
 
