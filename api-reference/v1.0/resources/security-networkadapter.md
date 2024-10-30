@@ -14,10 +14,12 @@ Namespace: microsoft.graph.security
 
 Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique identifier that represents the network adapter.|
+|id|String|A unique identifier that represents the network adapter. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|Indicates whether the network adapter is selected for capturing and analyzing network traffic.|
 |name|String|The name of the network adapter.|
 
