@@ -45,6 +45,18 @@ The Microsoft 365 monitoring API is available in the following Microsoft nationa
 |Microsoft Graph for US Government L5 (DoD)| Not supported.|
 |Microsoft Graph China operated by 21Vianet| Not supported.|
 
+## Common use cases
+
+The following table lists common use cases for the Microsoft 365 monitoring APIs.
+
+| Use case                                                                                                                           | Notes                                                                                                                         |
+|:-----------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
+| [Exchange Online monitoring](../resources/serviceactivity.md#exchange-online-monitoring)                                           | For details, see [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring). |
+| [Microsoft 365 Teams monitoring](../resources/serviceactivity.md#microsoft-365-teams-monitoring)                                   | For details, see [Microsoft 365 Teams monitoring](/microsoft-365/enterprise/microsoft-365-teams-monitoring).                  |
+| [OneDrive for Business monitoring](../resources/serviceactivity.md#onedrive-for-work-or-school-monitoring) |                                                                                                                               |
+| [Microsoft 365 Apps monitoring](../resources/serviceactivity.md#microsoft-365-apps-monitoring)                                     | For details, see [Microsoft 365 Apps monitoring](/microsoft-365/enterprise/microsoft-365-apps-monitoring).                    |
+| [Microsoft Entra](../resources/serviceactivity.md#microsoft-entra)  
+
 ## Next steps
 
 The Microsoft 365 monitoring API can open up new ways for you to engage with users:

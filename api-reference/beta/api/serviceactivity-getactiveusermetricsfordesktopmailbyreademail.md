@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getActiveUserMetricsForDesktopMailByReadEmail"
-description: "Get all the active usage based on the number of users that successfully read emails using desktop mail apps."
+description: "Get all the active usage based on the number of users who successfully read emails using desktop mail apps."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the active usage based on the number of users that successfully read emails using desktop mail apps.
+Get all the active usage based on the number of users who successfully read emails using desktop mail apps.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,8 +39,8 @@ In the request URL, provide the following query parameters with values.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is `15`, which sets the data to be aggregated into 15-minute sets. Allowed values are `5`, `10`, `15`, and `30`. Optional.|
-|exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC. Required|
-|inclusiveIntervalStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required.|
+|exclusiveIntervalEndDateTime|DateTimeOffset|The ending date and time in UTC. Required.|
+|inclusiveIntervalStartDateTime|DateTimeOffset|The starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required.|
 
 ## Request headers
 |Name|Description|

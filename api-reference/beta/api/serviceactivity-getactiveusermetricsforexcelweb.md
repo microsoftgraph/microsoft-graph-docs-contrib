@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getActiveUserMetricsForExcelWeb"
-description: "Get all the active usage based on the number of active users opening or saving Excel for the web."
+description: "Get all the active usage based on the number of active users who open or save Excel for the web."
 author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
@@ -39,8 +39,8 @@ In the request URL, provide the following query parameters with values.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is `15`, which sets the data to be aggregated into 15-minute sets. Allowed values are `5`, `10`, `15`, and `30`. Optional.|
-|exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC. Required|
-|inclusiveIntervalStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required.|
+|exclusiveIntervalEndDateTime|DateTimeOffset|The ending date and time in UTC. Required.|
+|inclusiveIntervalStartDateTime|DateTimeOffset|The starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required.|
 
 ## Request headers
 |Name|Description|
