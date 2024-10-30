@@ -272,7 +272,7 @@ The following are some of the most popular requests for working with the Microso
 |Remediate analyzed email|[analyzedEmail: remediate](../api/security-analyzedemail-remediate.md )|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/remediate](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/remediate&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Identities**|||
 | List health issues | [List health issues](../api/security-identityContainer-list-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| List sensors | [List sensors](../api/security-identityContainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
