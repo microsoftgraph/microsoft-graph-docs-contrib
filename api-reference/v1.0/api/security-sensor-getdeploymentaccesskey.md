@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -54,14 +52,13 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensorthis.getdeploymentaccesskey"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensors/getDeploymentAccessKey
+GET https://graph.microsoft.com/v1.0/security/identities/sensors/getDeploymentAccessKey
 ```
 
 # [C#](#tab/csharp)

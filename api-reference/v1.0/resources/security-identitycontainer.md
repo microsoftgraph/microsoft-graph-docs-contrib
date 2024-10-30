@@ -1,5 +1,5 @@
 ---
-title: "identityContainer resource type"
+title: "security identityContainer resource type"
 description: "Represents a container for security identities APIs that currently exposes the healthIssues relationship."
 author: "naalmog"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.subservice: "security"
 ---
 
-# identityContainer resource type
+# security identityContainer resource type
 
 Namespace: microsoft.graph.security
 

@@ -1,6 +1,6 @@
 ---
 title: "networkAdapter resource type"
-description: "Network adapters that are used for communication"
+description: "Network adapters that are used for communication."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic.
 
 
@@ -22,7 +20,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|A unique identifier that represents the network adapter.|
+|id|String|A unique identifier that represents the network adapter.|
 |isEnabled|Boolean|Indicates whether the network adapter is selected for capturing and analyzing network traffic.|
 |name|String|The name of the network adapter.|
 

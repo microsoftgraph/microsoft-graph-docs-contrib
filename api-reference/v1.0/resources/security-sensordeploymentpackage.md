@@ -1,6 +1,6 @@
 ---
 title: "sensorDeploymentPackage resource type"
-description: "Sensor deployment package"
+description: "Represents a sensor deployment package."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,8 +11,6 @@ ms.date: 10/29/2024
 # sensorDeploymentPackage resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a sensor deployment package.
 

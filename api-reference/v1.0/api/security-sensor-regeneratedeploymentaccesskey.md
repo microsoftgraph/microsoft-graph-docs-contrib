@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Generate a new deployment access key that can be used to install a [sensor](../resources/security-sensor.md) associated with the workspace.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -54,14 +52,13 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensorthis.regeneratedeploymentaccesskey"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/identities/sensors/regenerateDeploymentAccessKey
+POST https://graph.microsoft.com/v1.0/security/identities/sensors/regenerateDeploymentAccessKey
 ```
 
 # [C#](#tab/csharp)

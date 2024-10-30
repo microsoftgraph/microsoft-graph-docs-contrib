@@ -1,6 +1,6 @@
 ---
 title: "sensorSettings resource type"
-description: "Sensor settings information"
+description: "Provides settings information for a sensor."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,8 +11,6 @@ ms.date: 10/29/2024
 # sensorSettings resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides settings information for a sensor.
 

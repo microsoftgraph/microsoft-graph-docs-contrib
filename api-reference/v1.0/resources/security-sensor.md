@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a Microsoft Defender for Identity sensor.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

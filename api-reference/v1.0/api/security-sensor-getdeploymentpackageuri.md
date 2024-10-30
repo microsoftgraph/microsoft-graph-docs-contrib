@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the [sensor](../resources/security-sensor.md) deployment package URL and version. You can use this URL to download the installer to install the sensor on a server.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -53,14 +51,13 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sensorthis.getdeploymentpackageuri"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensors/getDeploymentPackageUri
+GET https://graph.microsoft.com/v1.0/security/identities/sensors/getDeploymentPackageUri
 ```
 
 # [C#](#tab/csharp)

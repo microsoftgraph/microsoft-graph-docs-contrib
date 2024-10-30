@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [sensor](../resources/security-sensor.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -54,7 +52,6 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["d31dd827-92cd-4cd6-b269-c151a0eec55d"],
@@ -62,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
+DELETE https://graph.microsoft.com/v1.0/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 ```
 
 # [C#](#tab/csharp)

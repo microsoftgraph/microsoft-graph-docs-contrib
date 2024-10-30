@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of [sensor](../resources/security-sensor.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -58,14 +56,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_sensor"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensors
+GET https://graph.microsoft.com/v1.0/security/identities/sensors
 ```
 
 # [C#](#tab/csharp)
