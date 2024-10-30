@@ -170,8 +170,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
@@ -1755,7 +1763,7 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
-  - name: Custom authentication extension
+  - name: Custom authentication extensions
     items:
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
@@ -1791,6 +1799,12 @@ items:
         href: ../../api/riskyuser-confirmcompromised.md
       - name: Dismiss
         href: ../../api/riskyuser-dismiss.md
+      - name: List history
+        href: ../../api/riskyuser-list-history.md
+    - name: Risky user history item
+      items:
+      - name: Risky user history item
+        href: ../../resources/riskyuserhistoryitem.md
       - name: List history
         href: ../../api/riskyuser-list-history.md
     - name: Service principal risk detection
@@ -2326,6 +2340,8 @@ items:
         href: ../../api/identityapiconnector-uploadclientcertificate.md
       - name: Delete
         href: ../../api/identityapiconnector-delete.md
+    - name: User flows in Azure AD B2C (deprecated)
+      href: ../../resources/identityuserflow.md
 - name: Granular delegated admin privileges
   displayName: GDAP, Partner Center, CSP, VAR
   items:

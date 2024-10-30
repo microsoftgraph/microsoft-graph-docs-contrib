@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. Invitation adds an external user to the organization.
+Use this API to create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. The invitation adds the external user to the organization as part of B2B collaboration. B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 
 When creating a new invitation, you have several options available:
 

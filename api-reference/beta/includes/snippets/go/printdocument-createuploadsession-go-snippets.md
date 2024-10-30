@@ -22,7 +22,7 @@ documentName := "TestFile.pdf"
 properties.SetDocumentName(&documentName) 
 contentType := "application/pdf"
 properties.SetContentType(&contentType) 
-size := int64(4533322)
+size := int32(4533322)
 properties.SetSize(&size) 
 requestBody.SetProperties(properties)
 
