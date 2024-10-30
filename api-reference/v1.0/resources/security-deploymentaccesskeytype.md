@@ -12,8 +12,6 @@ ms.date: 10/29/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the deployment access key for a Microsoft Defender for Identity sensor.
 
 ## Properties
