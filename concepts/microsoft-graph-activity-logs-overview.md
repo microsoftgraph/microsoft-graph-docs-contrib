@@ -7,12 +7,12 @@ ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: non-product-specific
-ms.date: 10/24/2023
+ms.date: 10/30/2024
 ---
 
 # Access Microsoft Graph activity logs
 
-**Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. Tenant administrators can enable the collection and configure downstream destinations for these logs using diagnostic settings in Azure Monitor. The logs are stored in Log Analytics for analysis, and you can export them to Azure Storage for long-term storage, or stream with Azure Event Hubs to external SIEM tools for alerting, analysis, or archival.
+**Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. Tenant administrators can enable the collection and configure downstream destinations for these logs using diagnostic settings in Azure Monitor. The logs are stored in Log Analytics for analysis; you can export them to Azure Storage for long-term storage or stream with Azure Event Hubs to external SIEM tools for alerting, analysis, or archival.
 
 All logs for API requests made from line of business applications, API clients, SDKs, and by Microsoft applications like Outlook, Microsoft Teams, or the Microsoft Entra admin center are available.
 
@@ -111,7 +111,7 @@ MicrosoftGraphActivityLogs
 | summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCode
 ```
 
-The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Activity logs from Microsoft applications may not all have matching sign in log entries. For more information, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
+The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Activity logs from Microsoft applications may not all have matching sign-in log entries. For more information, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
 
 ```kusto
 MicrosoftGraphActivityLogs
@@ -153,7 +153,7 @@ MicrosoftGraphActivityLogs
 
 - The Microsoft Graph activity logs feature allows the tenant administrators to collect logs for the resource tenant. This feature doesn't allow you to see the activities of a multitenant application in another tenant.
 - You can't filter Microsoft Graph activity logs through diagnostic settings in Azure Monitor. However, options are available to reduce costs in Azure Log Analytics Workspace. For more information, see [Workspace transformation](/azure/azure-monitor/logs/tutorial-workspace-transformations-portal).
-- In most regions, the events will be available delivered to the configuration destination within 30 minutes. In less common cases, some events might take up to 2 hours to be delivered to the destination.
+- In most regions, the events are available and delivered to the configuration destination within 30 minutes. In less common cases, some events might take up to 2 hours to be delivered to the destination.
 
 ## Related content
 
