@@ -1,6 +1,6 @@
 ---
 title: "copilotRoot resource type"
-description: "**TODO: Add Description**"
+description: "Navigation property for copilotRoot"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"

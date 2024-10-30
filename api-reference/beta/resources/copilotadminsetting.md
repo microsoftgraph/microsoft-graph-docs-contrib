@@ -1,9 +1,9 @@
 ---
 title: "copilotAdminSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Navigation property for copilotAdminSettings"
+author: "gautamjain14"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "meetings-copilot"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Navigation property for `settings`
+Navigation property for `copilotAdminSettings`
 
 
 Inherits from [entity](../resources/entity.md).

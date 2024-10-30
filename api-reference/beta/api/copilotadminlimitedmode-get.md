@@ -1,9 +1,9 @@
 ---
 title: "Get copilotAdminLimitedMode"
 description: "Read the properties and relationships of a copilotAdminLimitedMode object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "gautamjain14"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "meetings-copilot"
 doc_type: apiPageType
 ---
 
