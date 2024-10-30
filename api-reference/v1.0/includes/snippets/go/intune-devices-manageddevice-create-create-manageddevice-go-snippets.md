@@ -134,9 +134,9 @@ issuedDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:58:22.1231038-08
 deviceHealthAttestationState.SetIssuedDateTime(&issuedDateTime) 
 attestationIdentityKey := "Attestation Identity Key value"
 deviceHealthAttestationState.SetAttestationIdentityKey(&attestationIdentityKey) 
-resetCount := int64(10)
+resetCount := int32(10)
 deviceHealthAttestationState.SetResetCount(&resetCount) 
-restartCount := int64(12)
+restartCount := int32(12)
 deviceHealthAttestationState.SetRestartCount(&restartCount) 
 dataExcutionPolicy := "Data Excution Policy value"
 deviceHealthAttestationState.SetDataExcutionPolicy(&dataExcutionPolicy) 
@@ -191,9 +191,9 @@ subscriberCarrier := "Subscriber Carrier value"
 requestBody.SetSubscriberCarrier(&subscriberCarrier) 
 meid := "Meid value"
 requestBody.SetMeid(&meid) 
-totalStorageSpaceInBytes := int64(8)
+totalStorageSpaceInBytes := int32(8)
 requestBody.SetTotalStorageSpaceInBytes(&totalStorageSpaceInBytes) 
-freeStorageSpaceInBytes := int64(7)
+freeStorageSpaceInBytes := int32(7)
 requestBody.SetFreeStorageSpaceInBytes(&freeStorageSpaceInBytes) 
 managedDeviceName := "Managed Device Name value"
 requestBody.SetManagedDeviceName(&managedDeviceName) 
@@ -211,7 +211,7 @@ notes := "Notes value"
 requestBody.SetNotes(&notes) 
 ethernetMacAddress := "Ethernet Mac Address value"
 requestBody.SetEthernetMacAddress(&ethernetMacAddress) 
-physicalMemoryInBytes := int64(5)
+physicalMemoryInBytes := int32(5)
 requestBody.SetPhysicalMemoryInBytes(&physicalMemoryInBytes) 
 enrollmentProfileName := "Enrollment Profile Name value"
 requestBody.SetEnrollmentProfileName(&enrollmentProfileName) 
