@@ -14,9 +14,6 @@ Namespace: microsoft.graph.security
 
 Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic.
 
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
