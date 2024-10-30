@@ -10,7 +10,7 @@ ms.subservice: entra-applications
 ms.date: 10/30/2024
 ms.custom: graphiamtop20, scenarios:getting-started
 
-#Customer-intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
+#customer intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
 ---
 
 # Overview of Microsoft Graph permissions
