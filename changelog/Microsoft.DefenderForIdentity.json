@@ -110,14 +110,6 @@
         },
         {
           "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "sensors",
-          "ChangeType": "Addition",
-          "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
-          "Target": "identityContainer"
-        },
-        {
-          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
           "ApiChange": "Resource",
           "ChangedApiName": "networkAdapter",
           "ChangeType": "Addition",
@@ -129,8 +121,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensor",
           "ChangeType": "Addition",
-          "Description": "Added the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource and associated methods.",
           "Target": "sensor"
+        },
+        {
+          "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
         },
         {
           "Id": "f3c43327-2195-45d3-b55a-05dc151ed06d",
