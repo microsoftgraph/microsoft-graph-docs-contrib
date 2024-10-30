@@ -63,7 +63,7 @@ This resource is the base type for the following evidence types:
 |remediationStatusDetails|String|Details about the remediation status.|
 |roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**.|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
-|verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `clean`, `unknownFutureValue`.|
+|verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 
 ### detectionSource values 
@@ -123,7 +123,7 @@ This resource is the base type for the following evidence types:
 | unknown                    | No verdict was determined for the evidence.        |
 | suspicious                 | Recommended remediation actions awaiting approval.|
 | malicious                  | The evidence was determined to be malicious.      |
-| clean                      | No threat was detected - the evidence is benign.  |
+| noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
 
 
