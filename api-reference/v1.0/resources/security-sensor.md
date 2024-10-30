@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |displayName|String|The display name of the sensor.|
 |domainName|String|The fully qualified domain name of the sensor.|
 |healthStatus|[microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
-|ID|String|Unique identifier to represent the sensor.|
+|id|String|Unique identifier to represent the sensor.|
 |openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|
 |sensorType|[microsoft.graph.security.sensorType](#sensortype-values)|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
 |settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information.|
@@ -77,8 +77,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | domainControllerStandalone |Standalone sensor.|
 | unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
-
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -97,17 +95,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.sensor",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "sensorType": "String",
-  "version": "String",
-  "deploymentStatus": "String",
   "createdDateTime": "String (timestamp)",
+  "deploymentStatus": "String",
+  "displayName": "String",
   "domainName": "String",
   "healthStatus": "String",
-  "openHealthIssuesCount": "Integer",
-  "settings": {
-    "@odata.type": "microsoft.graph.security.sensorSettings"
-  }
+  "id": "String (identifier)",
+  "openHealthIssuesCount": "Int64",
+  "sensorType": "String",
+  "settings": {"@odata.type": "microsoft.graph.security.sensorSettings"},
+  "version": "String"
 }
 ```
