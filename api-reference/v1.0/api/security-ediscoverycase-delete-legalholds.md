@@ -1,28 +1,24 @@
 ---
-title: "Remove deleted fileStorageContainer"
-description: "Remove a deleted fileStorageContainer object."
-author: "harmoneddie"
+title: "Delete ediscoveryHoldPolicy"
+description: "Delete an ediscoveryHoldPolicy object."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.subservice: "onedrive"
-doc_type: apiPageType
+ms.subservice: "ediscovery"
+doc_type: "apiPageType"
 ---
 
-# Remove deleted fileStorageContainer
+# Delete ediscoveryHoldPolicy
+Namespace: microsoft.graph.security
 
-Namespace: microsoft.graph
+Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
-Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. Removing a file storage container with this API permanently removes it from the deleted container collection. Therefore, it can't be restored later. 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestorage-delete-deletedcontainers-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-deletedcontainers-permissions.md)]
+<!-- { "blockType": "permissions", "name": "security_ediscoverycase_delete_legalholds" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-delete-legalholds-permissions.md)]
 
 ## HTTP request
 
@@ -31,17 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/deletedContainers/{containerId}
+DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}
 ```
 
 ## Request headers
-
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-
 Don't supply a request body for this method.
 
 ## Response
@@ -51,29 +45,24 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "remove_deleted_filestoragecontainer"
+  "name": "delete_ediscoveryholdpolicy"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/a4d3421d-b756-47ac-ad43-5d587c5dfe75/
 ```
----
 
 ### Response
-
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
