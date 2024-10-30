@@ -1765,6 +1765,22 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
   - name: Custom authentication extensions
     items:
+    - name: Custom authentication extension
+      items:
+      - name: Custom authentication extension
+        href: ../../resources/customauthenticationextension.md
+      - name: List
+        href: ../../api/identitycontainer-list-customauthenticationextensions.md
+      - name: Create
+        href: ../../api/identitycontainer-post-customauthenticationextensions.md
+      - name: Get
+        href: ../../api/customauthenticationextension-get.md
+      - name: Update
+        href: ../../api/customauthenticationextension-update.md
+      - name: Delete
+        href: ../../api/customauthenticationextension-delete.md
+      - name: Validate authentication configuration
+        href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
