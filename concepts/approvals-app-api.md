@@ -7,17 +7,17 @@ ms.author: v-sdhakshina
 ms.date: 07/10/2024
 ---
 
-# Approvals app APIs
+# Approvals app API overview
 
 The Approvals app in Microsoft Teams is a native application that allows users to create, manage, and share approval requests directly from their Microsoft Teams environment. It integrates with Power Automate to streamline workflows and bring auditing, compliance, and accountability into both structured and unstructured approval processes.
 
-The Approvals app API allows you to integrate approval workflows into both Teams app and non-Microsoft apps. You can create new approvals, update existing ones, and list all approvals. The API enables you to: create, update, and list approvals; assign approvals to users; specify custom responses; and receive notifications in Teams. As these APIs support graph subscriptions, you can send notifications for approval responses. The Approvals app is available as a personal app for all Teams users.
+The Approvals app API allows you to integrate approval workflows into both Teams app and non-Microsoft apps. You can create new, update existing, and list all approvals. The API enables you to create, update, and list approvals; assign approvals to users; specify custom responses; and receive notifications in Teams. These APIs support Microsoft Graph subscriptions; you can send notifications for approval responses. The Approvals app is available as a personal app for all Teams users.
 
-The approval app APIs in Microsoft Graph enable the following use cases:
+The Approvals app APIs in Microsoft Graph enable the following use cases:
 
 **Automate approval workflows**: Create and manage approval requests to automate workflows that need approvals, such as document sign-offs or expense approvals.
 
-**Integrate with other services**: The API allows for integration with other services and applications. For example, you can set up a workflow where an approval request in Teams triggers an action in another system. Such an action could update a record in a CRM or send a notification through another communication platform.
+**Integrate with other services**: The API allows for integration with other services and applications. For example, you can set up a workflow where an approval request in Teams triggers an action in another system. Such an action can update a record in a CRM or send a notification through another communication platform.
 
 **Customize approval processes**: With this API, you can customize the approval process to fit your organization’s needs. For example, you can set up multi-stage approvals, conditional approvals based on certain criteria, or approvals that integrate with custom-built applications within your organization.
 
@@ -25,7 +25,7 @@ The approval app APIs in Microsoft Graph enable the following use cases:
 
 **Improve user experience**: By using the API, you can create custom experiences within Teams that streamline the approval process for users. For example, you can create bots that assist with creating and managing approvals, or custom interfaces that make it easier for users to review and respond to approval requests.
 
-The following table lists the APIs available across Microsoft Graph for the Approvals app:
+The following table lists the APIs that are available across Microsoft Graph for the Approvals app.
 
 | API | Description |
 | ---- | ---- |
@@ -45,6 +45,6 @@ The Approvals app centralizes and simplifies the approval of expense requests, p
 * Manages approvals consistently across various departments and teams.
 * Enforces compliance with policy by enabling organizations to ensure that all necessary approvals are obtained before action is taken.
 
-## See also
+## Related content
 
 [Manage the Approvals app in Microsoft Teams](/microsoftteams/approval-admin)
