@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | Identities
 
-Added the ability to get, list, update, and delete Microsoft Defender for Identity sensors settings. For more information about sensor APIs, see [sensor](/graph/api/resources/security-sensor).
+The Defender for Identity sensors management API enables you to create detailed reports on the sensors in your workspace, providing information such as server name, sensor version, type, state, and health status. It also allows you to manage sensor settings, including adding descriptions, enabling or disabling delayed updates, and specifying the domain controller the sensor connects to for querying Entra ID. For more information, see [sensor](/graph/api/resources/security-sensor).
 
 ## October 2024: New and generally available
 
