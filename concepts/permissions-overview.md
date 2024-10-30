@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
-ms.date: 10/29/2024
+ms.date: 10/30/2024
 ms.custom: graphiamtop20, scenarios:getting-started
 
 #Customer-intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
@@ -17,7 +17,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 Before the Microsoft identity platform can authorize your app to access data in the Microsoft cloud, the app must be granted the privileges that it needs. Similarly, before the Microsoft identity platform can authorize your app to access data through Microsoft Graph, the app must be granted the privileges that it needs.
 
-One way to grant an app the privileges it needs to access and work with your data through Microsoft Graph is by assigning it *Microsoft Graph permissions*. Another way is through role-based access control (RBAC) systems, like [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview). In some cases, access to data might require both Microsoft Graph permissions and RBAC permissions.
+One way to grant an app the privileges it needs to access and work with your data through Microsoft Graph is by assigning it *Microsoft Graph permissions*. Another way is through role-based access control (RBAC) systems, like [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview). In some cases, access to data through Microsoft Graph APIs might require both Microsoft Graph permissions and RBAC permissions.
 
 This article introduces Microsoft Graph permissions and provides guidance for using them. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
@@ -33,17 +33,17 @@ To support these access scenarios, Microsoft Graph exposes *delegated permission
 
 ### Delegated permissions
 
-*Delegated permissions*, also called *scopes*, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. However, the application will never be able to access anything the signed-in user couldn't access.
+*Delegated permissions*, also called *scopes*, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. However, the application can't access anything the signed-in user couldn't access.
 
 For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, a user. The application can only read all files in the organization that Tom can already access. Tom may be able to access the files because he has permissions through one of the following ways:
 
 - Tom created or owns the files.
-- The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
-- Tom has been granted permissions through a role-based access control (RBAC) system.
+- The files were shared directly with Tom, or indirectly shared through a team or group membership.
+- Tom has been granted permissions through a supported RBAC system.
 
-Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
+**Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.**
 
-In a delegated access scenario, an app may allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
+In a delegated access scenario, an app might allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
 
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
@@ -52,9 +52,9 @@ When a user signs in to an app they, or, in some cases, an administrator, are gi
 
 ### Application permissions
 
-*Application permissions*, also called *app roles*, are used in the app-only access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission can read any file in the organization.
+*Application permissions*, also called *app roles*, are used in the app-only access scenario, without a signed-in user present. The application is able to access *any* data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission can read any file in the organization.
 
-For apps that access resources and APIs without a signed-in user, the application permissions can be consented to by an administrator when the app is installed in the tenant or through the Microsoft Entra admin center. Only an administrator can consent to application permissions.
+For apps that access resources and APIs without a signed-in user, an administrator consents to the application permissions when the app is installed in the tenant or through the Microsoft Entra admin center. Only Privileged Role Administrator and Global Administrator can consent to application permissions.
 
 Apart from being assigned Microsoft Graph application permissions, an app may also be granted the privileges it needs through one of the following conditions:
 
@@ -88,8 +88,8 @@ Microsoft Graph exposes granular permissions that help you control the access th
 | Value          | Description                                                                                                                                                                                                                  | Examples                                                           |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | `{resource}`   | Refers to a Microsoft Graph resource to which the permission allows access. For example, the `user` resource.                                                                                                         | `User`, `Application`, or `Group`                                 |
-| `{operation}`  | Refers to the Microsoft Graph API operations that are allowed on the data that's exposed by the resource. For example, `Read` for read operations only,  or `ReadWrite` for read, create, update, and delete operations.          | `Read`, `ReadBasic`, `ReadWrite`, `Create`, `Manage`, or `Migrate` |
-| `{constraint}` | Determines the potential extent of access an app will have within the directory. This value may not be explicitly declared. When undeclared, the default constraint is limited to data that's owned by the signed-in user. | `All`, `AppFolder`, `OwnedBy`, `Selected`, `Shared`, `Hidden`      |
+| `{operation}`  | Refers to the Microsoft Graph API operations that are allowed on the data that's exposed by the resource. For example, `Read` for read operations only, or `ReadWrite` for read, create, update, and delete operations.          | `Read`, `ReadBasic`, `ReadWrite`, `Create`, `Manage`, or `Migrate` |
+| `{constraint}` | Determines the potential extent of access an app has within the directory. This value may not be explicitly declared. When undeclared, the default constraint is limited to data that's owned by the signed-in user. | `All`, `AppFolder`, `OwnedBy`, `Selected`, `Shared`, `Hidden`      |
 
 Examples:
 - *User.Read* - Allows the app to read information about the signed-in user.
@@ -110,7 +110,7 @@ RSC permissions are also available for consent and are supported by only a subse
 
 Container objects such as groups support members of various types, for example users and devices. When an application with the right privileges queries the membership of a container object, it receives a `200 OK` response and a collection of objects. However, if the app doesn't have the permissions to read a certain object type in the container, objects of that type are returned but with limited information, for example, only the object type and ID may be returned and other properties are indicated as `null`. Complete information is returned for the object types that the app has permissions to read.
 
-This principle is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
+This principle is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf`, and `me/ownedObjects`.
 
 For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`. For this API:
 - To read the basic properties of a group's members that are users, the app needs at least the *User.ReadBasic.All* permission.
