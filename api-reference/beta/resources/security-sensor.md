@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |[List](../api/security-identitycontainer-list-sensors.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md) collection|Get a list of [sensor](../resources/security-sensor.md) objects and their properties.|
 |[Get](../api/security-sensor-get.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.|
 |[Update](../api/security-sensor-update.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Update the properties of a [sensor](../resources/security-sensor.md) object.|
-|[Delete](../api/security-identitycontainer-delete-sensors.md)|None|Delete a [sensor](../resources/security-sensor.md) object.|
+|[Delete](../api/security-sensor-delete.md)|None|Delete a [sensor](../resources/security-sensor.md) object.|
 |[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version.|
 |[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the deployment access key associated with the Microsoft Defender for Identity workspace, needed to install sensors associated with the workspace.|
 |[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install sensors associated with the workspace.|
