@@ -8,6 +8,8 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: non-product-specific
 ms.date: 10/30/2024
+
+#customer intent: As an administrator, I want to learn how to track all API activities in my tenant so that I can have full visibility into tenant activities and monitor and investigate suspicious activities.
 ---
 
 # Access Microsoft Graph activity logs
