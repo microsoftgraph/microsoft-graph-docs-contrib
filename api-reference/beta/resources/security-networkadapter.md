@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|A unique identifier that represents the network adapter. Inherited from [entity](../resources/entity.md).|
+|id|String|A unique identifier that represents the network adapter. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|Indicates whether the network adapter is selected for capturing and analyzing network traffic.|
 |name|String|The name of the network adapter.|
 
