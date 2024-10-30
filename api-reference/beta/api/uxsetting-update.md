@@ -22,12 +22,11 @@ graph/permissions-overview#permission-types). To learn more about these permissi
 
 <!-- {
   "blockType": "permissions",
-  "name": "entity-get-permissions"
+  "name": "uxsetting-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/uxsetting-update-permissions.md)]
 
-<!-- { "blockType": "permissions", "name": "uxsetting_update" } -->
 [!INCLUDE [rbac-rbac-uxsetting-apis](../includes/rbac-for-apis/rbac-uxsetting-apis.md)]
 
 ## HTTP request
@@ -53,7 +52,6 @@ PATCH /admin/entra/uxSetting
 |Property|Type|Description|
 |:---|:---|:---|
 |restrictNonAdminAccess|nonAdminSetting|If set to `true`, nonadministrators can't browse the Microsoft Entra admin center. Nonadministrators who are owners of groups or applications are unable to use the Azure portal to manage their owned resources. If set to `false`, nonadministrators can browse the Microsoft Entra admin center. The possible values are: `false`, `true`, `unknownFutureValue`.|
-|id| string | The unique identifier for the tenant|
 
 ## Response
 
@@ -75,8 +73,7 @@ PATCH https://graph.microsoft.com/beta/admin/entra/uxSetting
 Content-Type: application/json
 
 {
-  "restrictNonAdminAccess": "true",
-  "id" : "00000000-0000-0000-0000-000000000000"
+  "restrictNonAdminAccess": "true"
 }
 ```
 
