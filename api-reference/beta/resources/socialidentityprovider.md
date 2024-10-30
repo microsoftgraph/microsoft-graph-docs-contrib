@@ -4,7 +4,7 @@ description: "Represents social identity providers in a Microsoft Entra tenant a
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "namkedia"
+author: "brozbab"
 ---
 
 # socialIdentityProvider resource type
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Microsoft Entra ID and Azure AD B2C tenants.
+Represents social identity providers for both Microsoft Entra ID and Azure AD B2C tenants.
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 

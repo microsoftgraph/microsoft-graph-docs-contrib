@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-After the custom identity provider sends an ID token back to Microsoft Entra External ID, Microsoft Entra External ID maps the claims from a token to the claims that Microsoft Entra External ID recognizes and uses.
+After the custom identity provider sends an ID token back to Microsoft Entra, Microsoft Entra maps the claims from a token to the claims that Microsoft Entra recognizes and uses.
 
 You can configure the following standard OpenID Connect (OIDC) address claims with the claims your identity provider provides in the ID Token.
 

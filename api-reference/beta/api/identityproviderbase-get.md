@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) (external tenant only) resource.
 
 In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 

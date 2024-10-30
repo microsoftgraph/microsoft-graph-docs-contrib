@@ -14,9 +14,10 @@ Namespace: microsoft.graph
 
 Create an identity provider object that is of the type specified in the request body.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can create a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can create a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), or an [oidcIdentityProvider](#oidcidentityprovider) (external tenant only) resource.
 
-In Azure AD B2C, this operation can create a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
+In Azure AD B2C, this operation can create a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
+
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

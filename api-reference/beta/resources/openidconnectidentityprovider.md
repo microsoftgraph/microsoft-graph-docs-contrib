@@ -4,7 +4,7 @@ description: "Represents OpenIDConnect identity providers in an Azure Active Dir
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "namkedia"
+author: "brozbab"
 ---
 
 # openIdConnectIdentityProvider resource type
@@ -22,7 +22,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 None.
 
-For the list of API operations for managing OpenID Connect identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
+For the list of API operations for managing OpenID Connect identity providers in Azure AD B2C, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 
 ## Properties
 

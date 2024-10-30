@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents OpenID Connect identity providers in an external tenant.
+Represents OpenID Connect identity providers in Microsoft Entra tenant.
 
-Configuring an OpenID Connect provider in an external tenant enables users to sign up and sign in to any application using their custom identity provider.
+Configuring an OpenID Connect provider in an external tenant enables users to sign up and sign in to any application using their custom OpenID Connect identity provider.
 
 ## Methods
 
