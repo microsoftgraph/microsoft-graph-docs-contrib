@@ -1,6 +1,6 @@
 ---
 title: "networkAdapter resource type"
-description: "Network adapters that are used for communication."
+description: "Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic."
 author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
