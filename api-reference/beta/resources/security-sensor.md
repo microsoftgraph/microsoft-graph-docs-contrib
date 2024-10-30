@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information.|
 |version|String|The version of the sensor.|
 
-#### deploymentStatus values
+### deploymentStatus values
 
 | Member                     | Description                       |
 | :--------------------------| :-------------------------------- |
@@ -58,7 +58,7 @@ Inherits from [entity](../resources/entity.md).
 | syncing |Sensor has configuration updates pending, but it didn't yet pull the new configuration.|
 | unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
-#### sensorHealthStatus values
+### sensorHealthStatus values
 
 | Member                     | Description                       |
 | :--------------------------| :-------------------------------- |
@@ -68,7 +68,7 @@ Inherits from [entity](../resources/entity.md).
 | notHealthyHigh |The highest severity opened health issue is high.|
 | unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
-#### sensorType values
+### sensorType values
 
 | Member                     | Description                       |
 | :--------------------------| :-------------------------------- |
