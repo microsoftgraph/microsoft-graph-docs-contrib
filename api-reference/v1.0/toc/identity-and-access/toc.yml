@@ -170,8 +170,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: Check member objects
       href: ../../api/directoryobject-checkmemberobjects.md
     - name: Get member objects
@@ -1755,8 +1763,24 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
-  - name: Custom authentication extension
+  - name: Custom authentication extensions
     items:
+    - name: Custom authentication extension
+      items:
+      - name: Custom authentication extension
+        href: ../../resources/customauthenticationextension.md
+      - name: List
+        href: ../../api/identitycontainer-list-customauthenticationextensions.md
+      - name: Create
+        href: ../../api/identitycontainer-post-customauthenticationextensions.md
+      - name: Get
+        href: ../../api/customauthenticationextension-get.md
+      - name: Update
+        href: ../../api/customauthenticationextension-update.md
+      - name: Delete
+        href: ../../api/customauthenticationextension-delete.md
+      - name: Validate authentication configuration
+        href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation

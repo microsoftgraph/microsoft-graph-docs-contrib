@@ -72,8 +72,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following example shows a request to update an authentication event listener's trigger conditions or priority:
+### Example 1: Update an authentication event listener's trigger conditions or priority
+
+#### Request
+The following example shows a request to update an authentication event listener's trigger conditions or priority.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -129,7 +131,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -139,4 +141,43 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+### Example 2: Add an application to an authentication event listener's trigger conditions
 
+#### Request
+
+The following example shows a request to add an application to an authentication event listener's trigger conditions.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventlistener_2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.authenticationConditionApplication",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```
+
+
+#### Response
+The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.authenticationConditionApplication",
+  "truncated": true,
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('0313cc37-d421-421d-857b-87804d61e33e')/conditions/applications/includeApplications/$entity",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+}
+```
