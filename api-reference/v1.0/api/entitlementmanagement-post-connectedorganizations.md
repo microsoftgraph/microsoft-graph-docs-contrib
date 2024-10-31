@@ -149,6 +149,8 @@ Content-type: application/json
 
 ### Example 2: Create a connected organization with an identitySource based on a tenant ID
 
+This example shows creating a connected organization with an identity source based on a tenant ID. The tenant ID can be found, by the domain name, using the [tenantRelationship: findTenantInformationByDomainName](../api/tenantrelationship-findtenantinformationbydomainname.md) call.
+
 ### Request
 
 
