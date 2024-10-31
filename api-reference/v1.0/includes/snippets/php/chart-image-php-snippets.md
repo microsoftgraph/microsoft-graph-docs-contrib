@@ -11,6 +11,6 @@ use Microsoft\Graph\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->worksheets()->byWorkbookWorksheetId('workbookWorksheet-id')->charts()->byWorkbookChartId('workbookChart-id')->imageWithFittingMode('{fittingMode}', )->get()->wait();
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->worksheets()->byWorkbookWorksheetId('workbookWorksheet-id')->charts()->byWorkbookChartId('workbookChart-id')->imageWithWidthWithHeightWithFittingMode('{fittingMode}', 1,1)->get()->wait();
 
 ```

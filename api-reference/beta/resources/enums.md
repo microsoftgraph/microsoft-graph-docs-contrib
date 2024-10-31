@@ -4917,3 +4917,11 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|false|
+|true|
+|unknownFutureValue|
