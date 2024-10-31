@@ -12,7 +12,7 @@ com.microsoft.graph.users.item.events.item.attachments.createuploadsession.Creat
 AttachmentItem attachmentItem = new AttachmentItem();
 attachmentItem.setAttachmentType(AttachmentType.File);
 attachmentItem.setName("flower");
-attachmentItem.setSize(3483322);
+attachmentItem.setSize(3483322L);
 createUploadSessionPostRequestBody.setAttachmentItem(attachmentItem);
 var result = graphClient.me().events().byEventId("{event-id}").attachments().createUploadSession().post(createUploadSessionPostRequestBody);
 
