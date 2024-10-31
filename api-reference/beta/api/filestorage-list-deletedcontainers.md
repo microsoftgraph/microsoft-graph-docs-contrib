@@ -100,7 +100,6 @@ GET  https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers?$fil
 
 ---
 
-
 ### Response
 
 The following example shows the response.

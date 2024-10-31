@@ -30,7 +30,7 @@ var requestBody = new MacOSLobApp
 	PublishingState = MobileAppPublishingState.Processing,
 	CommittedContentVersion = "Committed Content Version value",
 	FileName = "File Name value",
-	Size = 4,
+	Size = 4L,
 	BundleId = "Bundle Id value",
 	MinimumSupportedOperatingSystem = new MacOSMinimumOperatingSystem
 	{
