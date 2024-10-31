@@ -20,9 +20,9 @@ use := "use-value"
 requestBody.SetUse(&use) 
 k := "application-secret-to-be-uploaded"
 requestBody.SetK(&k) 
-nbf := int32(1508969811)
+nbf := int64(1508969811)
 requestBody.SetNbf(&nbf) 
-exp := int32(1508973711)
+exp := int64(1508973711)
 requestBody.SetExp(&exp) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
