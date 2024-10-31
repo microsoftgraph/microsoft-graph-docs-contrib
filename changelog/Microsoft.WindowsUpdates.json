@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isHotpatchEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isHotpatchEnabled** property to the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-productRevision?view=graph-rest-beta) resource.",
+          "Description": "Added the **isHotpatchEnabled** property to the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-productRevision?view=graph-rest-beta) resource.",
           "Target": "productRevision"
         }
       ],
