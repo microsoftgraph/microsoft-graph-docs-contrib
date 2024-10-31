@@ -194,8 +194,8 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/connectedOrganizations/$entity",
   "id": "922c86cf-65b8-4d94-b6a6-477dde331c7b",
-  "displayName": "Connected organization name test",
-  "description": "Connected organization description test",
+  "displayName": "Connected organization name",
+  "description": "Connected organization description",
   "createdDateTime": "2024-10-29T21:55:39.6051923Z",
   "modifiedDateTime": "2024-10-29T21:55:39.6051923Z",
   "state": "proposed",
