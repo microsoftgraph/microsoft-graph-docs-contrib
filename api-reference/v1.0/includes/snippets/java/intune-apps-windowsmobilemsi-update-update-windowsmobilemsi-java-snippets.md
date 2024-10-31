@@ -28,7 +28,7 @@ mobileApp.setNotes("Notes value");
 mobileApp.setPublishingState(MobileAppPublishingState.Processing);
 mobileApp.setCommittedContentVersion("Committed Content Version value");
 mobileApp.setFileName("File Name value");
-mobileApp.setSize(4);
+mobileApp.setSize(4L);
 mobileApp.setCommandLine("Command Line value");
 mobileApp.setProductCode("Product Code value");
 mobileApp.setProductVersion("Product Version value");
