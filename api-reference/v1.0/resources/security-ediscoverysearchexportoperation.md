@@ -1,7 +1,7 @@
 ---
 title: "ediscoverySearchExportOperation resource type"
 description: "Represents the process of an ediscoverySearch export."
-author: "SeunginLyu"
+author: "pamehra"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: "resourcePageType"
@@ -10,8 +10,6 @@ doc_type: "resourcePageType"
 # ediscoverySearchExportOperation resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the process of an [ediscoverySearch](../resources/security-ediscoverysearch.md) export.
 
@@ -22,7 +20,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`. |
+|additionalOptions|[microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values)| The additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
 |completedDateTime|DateTimeOffset|The date and time when the operation was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who created the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [caseOperation](../resources/security-caseoperation.md).|
