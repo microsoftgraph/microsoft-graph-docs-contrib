@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHotpatchEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHotpatchEnabled** property to the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-productRevision?view=graph-rest-beta) resource.",
+          "Target": "productRevision"
+        }
+      ],
+      "Id": "4101419b-664e-4423-99d9-e8dc5b637213",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-30T20:33:53.2380322Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Device updates"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
           "ApiChange": "Property",
           "ChangedApiName": "applicableContent",
