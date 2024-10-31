@@ -35,7 +35,7 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-type}| application/json. Required.|
+|Content-Type| application/json. Required.|
 
 ## Request body
 In the request body, supply the custom properties for deletion by setting them to null.
