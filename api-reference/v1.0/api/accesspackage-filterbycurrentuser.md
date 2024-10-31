@@ -10,7 +10,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> Don't use the **filterByCurrentUser** function as it will be deprecated in the future. A future update will be provided for customers who already use this function.
+> The **filterByCurrentUser** function is on a deprecation path and exists only to support current customers. We don't recommend using this function.
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
 
