@@ -18,6 +18,9 @@ Validates the ownership of the domain.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
+> [!NOTE]
+> Verifying a domain through Microsoft Graph doesn't configure the domain for use with Office 365 services like Exchange, and so on. To fully configure the domain to work with Microsoft 365 products, it might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
