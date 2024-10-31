@@ -32,7 +32,7 @@ isSyncButtonHiddenOnPersonalSite := false
 requestBody.SetIsSyncButtonHiddenOnPersonalSite(&isSyncButtonHiddenOnPersonalSite) 
 isUnmanagedSyncAppForTenantRestricted := false
 requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenantRestricted) 
-personalSiteDefaultStorageLimitInMB := int32(120000)
+personalSiteDefaultStorageLimitInMB := int64(120000)
 requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

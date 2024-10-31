@@ -16,6 +16,8 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+row := int32(1)
+column := int32(1)
 cell, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").CellWithRowWithColumn(&row, &column).Get(context.Background(), nil)
 
 
