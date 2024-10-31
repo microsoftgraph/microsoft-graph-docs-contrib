@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-get-permissions.md)]
 
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -113,9 +115,9 @@ Content-type: application/json
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "membershipRule": null,
-    "membershipType": null,
-    "membershipRuleProcessingState": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On",
     "visibility": "HiddenMembership"
 }
 ```

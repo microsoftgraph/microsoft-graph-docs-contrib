@@ -22,18 +22,18 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.security.caseAction| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
-|completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. |
-|createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. |
-|createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only.|
-|id|String| The ID for the operation. Read-only.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |indexedItemCount|Int64|The estimated count of items for the **search** that matched the content query.|
 |indexedItemsSize|Int64|The estimated size of items for the **search** that matched the content query.|
 |mailboxCount|Int32|The number of mailboxes that had search hits.|
-|percentProgress|Int32|The progress of the operation. Read-only. |
-|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. |
+|percentProgress|Int32|The progress of the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 

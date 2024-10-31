@@ -12,6 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [unifiedRoleDefinition resource type](./unifiedroledefinition.md).
+
 Represents a Microsoft Entra directory role. Microsoft Entra directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning Microsoft Entra administrator roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). With the Microsoft Graph, you can assign users to directory roles to grant them the permissions of the target role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request with the ID of the [directoryRoleTemplate](directoryroletemplate.md) on which the directory role is based. [List directory role templates](../api/directoryroletemplate-list.md) to get all the other available directory roles. Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:

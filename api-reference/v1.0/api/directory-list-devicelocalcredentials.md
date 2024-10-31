@@ -20,7 +20,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directory_list_devicelocalcredentials" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-devicelocalcredentials-permissions.md)]
 
-[!INCLUDE [rbac-device-local-credentials-basic-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-basic-apis-read.md)]
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Cloud Device Administrator
+> - Helpdesk Administrator
+> - Intune Service Administrator
+> - Security Administrator
+> - Security Reader
+> - Global Reader
 
 ## HTTP request
 To get a list of **deviceLocalCredentialInfo** objects within the tenant:
