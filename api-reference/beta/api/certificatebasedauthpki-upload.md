@@ -66,7 +66,11 @@ If successful, this action returns a `204 No Content` response code. If another 
 ### Request
 
 The following example shows a request.
-
+<!-- {
+  "blockType": "request",
+  "name": "certificatebasedauthpkithis.upload"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}/upload
 Content-Type: application/json
@@ -81,7 +85,11 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
 HTTP/1.1 204 No Content
 ```
