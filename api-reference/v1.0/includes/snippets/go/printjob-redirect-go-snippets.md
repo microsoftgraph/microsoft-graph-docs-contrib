@@ -25,9 +25,9 @@ configuration.SetFeedOrientation(&feedOrientation)
 
 
 integerRange := graphmodels.NewIntegerRange()
-start := int32(1)
+start := int64(1)
 integerRange.SetStart(&start) 
-end := int32(1)
+end := int64(1)
 integerRange.SetEnd(&end) 
 
 pageRanges := []graphmodels.IntegerRangeable {

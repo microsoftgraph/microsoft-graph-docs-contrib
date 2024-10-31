@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-subscriptions-permissions.md)]
 
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
