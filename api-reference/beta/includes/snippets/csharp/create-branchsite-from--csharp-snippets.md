@@ -14,7 +14,7 @@ var requestBody = new BranchSite
 	Name = "test branch - 11:50",
 	Country = "United States",
 	Region = Region.EastUS,
-	BandwidthCapacity = 500,
+	BandwidthCapacity = 500L,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

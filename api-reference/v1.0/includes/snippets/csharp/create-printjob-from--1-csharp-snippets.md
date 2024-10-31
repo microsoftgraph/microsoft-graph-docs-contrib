@@ -20,8 +20,8 @@ var requestBody = new PrintJob
 			new IntegerRange
 			{
 				OdataType = "microsoft.graph.integerRange",
-				Start = 1,
-				End = 1,
+				Start = 1L,
+				End = 1L,
 			},
 		},
 		Quality = PrintQuality.Medium,
