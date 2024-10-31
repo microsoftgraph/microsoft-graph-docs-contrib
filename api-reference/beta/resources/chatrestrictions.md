@@ -26,13 +26,13 @@ Specifies the configuration for meeting chat restrictions.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.chatrestrictions"
+  "@odata.type": "microsoft.graph.chatRestrictions"
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.chatrestrictions",
+  "@odata.type": "#microsoft.graph.chatRestrictions",
   "allowTextOnly": "Boolean",
 }
 ```
