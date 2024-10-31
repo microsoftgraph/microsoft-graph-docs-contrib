@@ -1,5 +1,5 @@
 ---
-title: "List permissions"
+title: "List fileStorageContainer permissions"
 description: "Get the set of permissions for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List permissions
+# List fileStorageContainer permissions
 
 Namespace: microsoft.graph
 
