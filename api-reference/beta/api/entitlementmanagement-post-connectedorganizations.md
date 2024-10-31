@@ -177,7 +177,7 @@ Content-Type: application/json
   "identitySources": [
     {
       "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
-      "displayName": "Meta",
+      "displayName": "Contoso",
       "tenantId": "8ae927fe-1255-47a7-a2af-5f3a069daaa2"
       }
   ],
