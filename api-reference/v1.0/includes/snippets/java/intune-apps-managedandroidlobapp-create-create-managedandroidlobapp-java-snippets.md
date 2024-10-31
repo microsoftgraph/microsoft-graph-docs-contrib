@@ -30,7 +30,7 @@ mobileApp.setAppAvailability(ManagedAppAvailability.LineOfBusiness);
 mobileApp.setVersion("Version value");
 mobileApp.setCommittedContentVersion("Committed Content Version value");
 mobileApp.setFileName("File Name value");
-mobileApp.setSize(4);
+mobileApp.setSize(4L);
 mobileApp.setPackageId("Package Id value");
 AndroidMinimumOperatingSystem minimumSupportedOperatingSystem = new AndroidMinimumOperatingSystem();
 minimumSupportedOperatingSystem.setOdataType("microsoft.graph.androidMinimumOperatingSystem");

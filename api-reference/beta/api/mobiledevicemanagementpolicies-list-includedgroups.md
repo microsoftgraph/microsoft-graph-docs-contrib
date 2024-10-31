@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "mobiledevicemanagementpolicies_list_includedgroups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/mobiledevicemanagementpolicies-list-includedgroups-permissions.md)]
 
+[!INCLUDE [rbac-mam-mdm-policies-apis-read](../includes/rbac-for-apis/rbac-mam-mdm-policies-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
