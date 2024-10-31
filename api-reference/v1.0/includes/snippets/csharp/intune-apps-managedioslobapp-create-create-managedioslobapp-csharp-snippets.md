@@ -32,7 +32,7 @@ var requestBody = new ManagedIOSLobApp
 	Version = "Version value",
 	CommittedContentVersion = "Committed Content Version value",
 	FileName = "File Name value",
-	Size = 4,
+	Size = 4L,
 	BundleId = "Bundle Id value",
 	ApplicableDeviceType = new IosDeviceType
 	{

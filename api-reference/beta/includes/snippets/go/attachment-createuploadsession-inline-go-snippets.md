@@ -22,7 +22,7 @@ attachmentType := graphmodels.FILE_ATTACHMENTTYPE
 attachmentItem.SetAttachmentType(&attachmentType) 
 name := "scenary"
 attachmentItem.SetName(&name) 
-size := int32(7208534)
+size := int64(7208534)
 attachmentItem.SetSize(&size) 
 isInline := true
 attachmentItem.SetIsInline(&isInline) 
