@@ -46,7 +46,7 @@ committedContentVersion := "Committed Content Version value"
 requestBody.SetCommittedContentVersion(&committedContentVersion) 
 fileName := "File Name value"
 requestBody.SetFileName(&fileName) 
-size := int32(4)
+size := int64(4)
 requestBody.SetSize(&size) 
 installCommandLine := "Install Command Line value"
 requestBody.SetInstallCommandLine(&installCommandLine) 
