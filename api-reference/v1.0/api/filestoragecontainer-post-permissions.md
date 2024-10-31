@@ -1,5 +1,5 @@
 ---
-title: "Create permission"
+title: "Create fileStorageContainer permission"
 description: "Add a permission to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Create permission
+# Create fileStorageContainer permission
 
 
 Namespace: microsoft.graph
