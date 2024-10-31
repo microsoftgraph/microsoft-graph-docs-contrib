@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppDevice",
-  "name": "String (identifier)"
+  "name": "John Smith's Macbook Pro"
 }
 ```
 

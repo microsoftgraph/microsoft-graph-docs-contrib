@@ -85,7 +85,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppIPAddress",
-      "ipAddress": "127.0.0.1"
+      "ipAddress": "207.45.98.1"
     }
   ]
 }

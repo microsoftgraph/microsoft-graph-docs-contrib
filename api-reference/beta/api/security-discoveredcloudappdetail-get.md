@@ -84,25 +84,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
-    "id": "842c55a8-278b-6fb1-bea6-426a0d4a1814",
-    "displayName": "String",
-    "tags": [
-      "String"
-    ],
-    "riskScore": "Integer",
-    "uploadNetworkTrafficInBytes": "Integer",
-    "downloadNetworkTrafficInBytes": "Integer",
-    "transactionCount": "Integer",
-    "ipAddressCount": "Integer",
-    "userCount": "Integer",
-    "lastSeenDateTime": "String (timestamp)",
-    "domains": [
-      "String"
-    ],
-    "category": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
+      "id": "12345",
+      "displayName": "Example App",
+      "tags": [
+        "Sanctioned"
+      ],
+      "riskScore": 8,
+      "uploadNetworkTrafficInBytes": 1024,
+      "downloadNetworkTrafficInBytes": 2048,
+      "transactionCount": 20,
+      "ipAddressCount": 5,
+      "userCount": 3,
+      "lastSeenDateTime": "2024-06-13T00:00:00Z",
+      "domains": [
+        "example.com"
+      ],
+      "category": "health"
+    }
+  ]
 }
 ```
 

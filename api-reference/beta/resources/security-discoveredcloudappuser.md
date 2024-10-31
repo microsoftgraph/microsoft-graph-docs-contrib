@@ -38,7 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppUser",
-  "userIdentifier": "String (identifier)"
+  "userIdentifier": "AnonymusUser"
 }
 ```
-

@@ -164,12 +164,12 @@ Content-Type: application/json
     "isUserAuditTrail": "unknown",
     "isUserCanUploadData": "unknown",
     "isUserRolesSupport": "unknown",
-    "latestBreachDateTime": "String (timestamp)",
-    "domainRegistrationDateTime": "String (timestamp)",
-    "gdprReadinessStatement": "String",
-    "hostingCompany": "String",
-    "logonUrls": "String",
-    "vendor": "String"
+    "latestBreachDateTime": "2023-09-15T13:45:30Z",
+    "domainRegistrationDateTime": "2020-01-01T00:00:00Z",
+    "gdprReadinessStatement": "Our app complies with GDPR regulations and ensures data protection.",
+    "hostingCompany": "Contoso Hosting Services",
+    "logonUrls": "https://login.contosoapp.com",
+    "vendor": "Contoso Ltd."
   }
 }
 ```

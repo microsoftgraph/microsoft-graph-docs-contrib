@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppDevice",
-      "name": "d454ded3-6cc7-65da-1ff7-33b010bc657e"
+      "name": "John Smith's Macbook Pro"
     }
   ]
 }

@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppIPAddress",
-  "ipAddress": "String (identifier)"
+  "ipAddress": "207.45.98.1"
 }
 ```
 

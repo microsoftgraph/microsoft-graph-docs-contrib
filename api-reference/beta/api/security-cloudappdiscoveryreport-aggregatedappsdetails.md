@@ -92,7 +92,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
-      "id": "String (identifier)",
+      "id": "12345",
       "displayName": "Example App",
       "tags": [
         "Sanctioned"
