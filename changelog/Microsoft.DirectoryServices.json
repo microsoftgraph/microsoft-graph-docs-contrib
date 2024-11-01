@@ -21,6 +21,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryRole",
+          "ChangeType": "Change",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRole](https://learn.microsoft.com/graph/api/resources/directoryrole)",
+          "Target": "directoryRole"
+        },
+        {
+          "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryRoleTemplate",
+          "ChangeType": "Change",
+          "Description": "Added recommendations to use unified RBAC APIs in [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition) instead of [directoryRoleTemplate](https://learn.microsoft.com/graph/api/resources/directoryroletemplate)",
+          "Target": "directoryRoleTemplate"
+        }
+      ],
+      "Id": "e535cb78-71cd-4e70-86e1-99b689bb30a4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-21T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "777011cf-6e8d-4736-92b6-08104586c162",
           "ApiChange": "Resource",
           "ChangedApiName": "appManagementApplicationConfiguration",
@@ -133,6 +159,40 @@
       "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRule** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipRuleProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [administrativeUnit](https://learn.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        }
+      ],
+      "Id": "3ea44add-bba5-48f7-9c74-1f1588d988d5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-29T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
