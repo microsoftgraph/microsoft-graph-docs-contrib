@@ -9,7 +9,7 @@ ms.subservice: "m365-monitoring-service"
 
 # Working with Microsoft 365 monitoring APIs in Microsoft Graph
 
-The Microsoft 365 monitoring API provides the telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. This capability began with Exchange Online and expanded to other Microsoft services such as Microsoft Teams and Microsoft 365 Apps, with more services to be added in the future. Microsoft 365 monitoring increases observability and minimizes downtime by delivering near real-time user telemetry data.
+The Microsoft 365 monitoring API provides the telemetry data to monitor the health of various Microsoft services within a Microsoft 365 subscription for your organization. This capability began with Exchange Online and expanded to other Microsoft services such as Microsoft Teams and Microsoft 365 Apps. Microsoft 365 monitoring increases observability and minimizes downtime by delivering near real-time user telemetry data.
 
 ## Authorization
 
