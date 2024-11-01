@@ -1464,6 +1464,7 @@
             "microsoft.graph.security.caseOperation",
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
+            "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"

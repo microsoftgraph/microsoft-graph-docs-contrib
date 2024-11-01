@@ -10,9 +10,7 @@ doc_type: apiPageType
 # List siteSources
 Namespace: microsoft.graph.security
 
-
-
-Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -30,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources
 ```
 
 ## Optional query parameters
@@ -93,6 +92,8 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-sitesource-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

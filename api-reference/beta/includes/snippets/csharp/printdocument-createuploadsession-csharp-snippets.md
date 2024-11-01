@@ -16,7 +16,7 @@ var requestBody = new CreateUploadSessionPostRequestBody
 	{
 		DocumentName = "TestFile.pdf",
 		ContentType = "application/pdf",
-		Size = 4533322,
+		Size = 4533322L,
 	},
 };
 
