@@ -1,10 +1,10 @@
 > [!IMPORTANT]
 > Required for API changes:
-> - API.md link: *ADD LINK HERE*
-> - Link to **PR** for public facing schema changes (schema-Prod-beta/v1.0.csdl):  *ADD LINK HERE*
+> - Link to API.md file: *ADD LINK HERE*
+> - Link to **PR** for public-facing schema changes (schema-Prod-beta/v1.0.csdl):  *ADD LINK HERE*
 
 ---
-_Other  supporting information, such as a description of the PR changes:_
+Add other supporting information, such as a description of the PR changes:
 
 *ADD INFORMATION HERE*
 
