@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "site_post_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/site-post-permissions-permissions.md)]
 
-In the delegated workflow, the user must be a Global Administrator or a SharePoint Administrator.
+In the delegated workflow, the user must have an administrator role, such as SharePoint Administrator or higher.
 
 ## HTTP request
 
