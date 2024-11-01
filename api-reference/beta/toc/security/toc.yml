@@ -486,12 +486,24 @@ items:
       href: ../../api/security-sensor-update.md
     - name: Delete
       href: ../../api/security-sensor-delete.md
-    - name: Get deployment package URI
-      href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Get deployment access key
       href: ../../api/security-sensor-getdeploymentaccesskey.md
+    - name: Get deployment package URI
+      href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Complex types
+    items:
+    - name: Deployment access key type
+      href: ../../resources/security-deploymentaccesskeytype.md
+    - name: Identity container
+      href: ../../resources/security-identitycontainer.md
+    - name: Network adapter
+      href: ../../resources/security-networkadapter.md
+    - name: Sensor deployment package
+      href: ../../resources/security-sensordeploymentpackage.md
+    - name: Sensor settings
+      href: ../../resources/security-sensorsettings.md
 - name: Information protection
   items:
   - name: Information protection label
