@@ -146,18 +146,6 @@ items:
         items:
         - name: Service activity
           href: ../../resources/serviceactivity.md
-        - name: Microsoft Entra
-          items:
-          - name: Get MFA sign-in success metrics
-            href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
-          - name: Get MFA sign-in failure metrics
-            href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
-          - name: Get managed devices Conditional Access sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-          - name: Get compliant devices Conditional Access sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-          - name: Get SAML sign-in metrics
-            href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
         - name: Exchange Online monitoring
           items:
           - name: Get active users metrics for desktop mail apps
@@ -190,7 +178,7 @@ items:
             href: ../../api/serviceactivity-getaudiostreamqoemetricsforteams.md
           - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
             href: ../../api/serviceactivity-getaudiostreamsoverudpmetricsforteams.md
-        - name: OneDrive for work or school monitoring (preview)
+        - name: OneDrive for Business monitoring (preview)
           items:
           - name: Get device metrics for download online-only files
             href: ../../api/serviceactivity-getdevicemetricsforonedriveforbusinessbydownloadonlineonlyfiles.md
@@ -206,6 +194,18 @@ items:
             href: ../../api/serviceactivity-getactiveusermetricsforvisioweb.md
           - name: Get active users metrics for Word for the web
             href: ../../api/serviceactivity-getactiveusermetricsforwordweb.md
+        - name: Microsoft Entra
+          items:
+          - name: Get MFA sign-in success metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
+          - name: Get MFA sign-in failure metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
+          - name: Get managed devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+          - name: Get compliant devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+          - name: Get SAML sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
     - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment
