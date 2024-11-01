@@ -23,8 +23,8 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/security-sensor-get.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.|
 |[Update](../api/security-sensor-update.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Update the properties of a [sensor](../resources/security-sensor.md) object.|
 |[Delete](../api/security-sensor-delete.md)|None|Delete a [sensor](../resources/security-sensor.md) object.|
-|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the [sensor](../resources/security-sensor.md) deployment package URL and version.|
 |[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with the workspace.|
+|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the [sensor](../resources/security-sensor.md) deployment package URL and version.|
 |[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install a [sensor](../resources/security-sensor.md) associated with the workspace.|
 
 ## Properties
