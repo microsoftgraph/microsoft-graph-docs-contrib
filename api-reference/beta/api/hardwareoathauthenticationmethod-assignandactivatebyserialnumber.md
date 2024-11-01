@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This allows assigning a hardware token and activating it at the same time by hardware token serial number.
 
 ## Permissions
 

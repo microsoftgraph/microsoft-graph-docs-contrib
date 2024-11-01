@@ -1,0 +1,185 @@
+---
+title: "Create hardwareOathTokenAuthenticationMethodDevice"
+description: "Create a new hardwareOathTokenAuthenticationMethodDevice object."
+author: "luc-msft"
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: apiPageType
+---
+
+# Create hardwareOathTokenAuthenticationMethodDevice
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new hardwareOathTokenAuthenticationMethodDevice object.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "authenticationmethoddevice-post-hardwareoathdevices-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-post-hardwareoathdevices-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /directory/authenticationMethodDevices/hardwareOathDevices
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object.
+
+You can specify the following properties when creating a **hardwareOathTokenAuthenticationMethodDevice**.
+
+**TODO: Remove properties that don't apply**
+|Property|Type|Description|
+|:---|:---|:---|
+|serialNumber|String|Serial number of the specific hardware token, often found on the back of the device. Required.|
+|manufacturer|String|Manufacturer name of the hardware token. Required.|
+|model|String|Model name of the hardware token. Required.|
+|secretKey|String|Secret key of the specific hardware token, provided by the vendor. Required.|
+|timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Required.|
+|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
+|assignTo|[identity](../resources/intune-identity.md)|User ID if you want to directly assign the token to a user. Optional.|
+|displayName|String|Name that can be provided to the Hardware OATH token. Optional.|
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object in the response body.
+
+## Examples
+
+### Example 1: Create a token without user assignment
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_hardwareoathtokenauthenticationmethoddevice_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardwareOathDevices
+Content-Type: application/json
+
+{
+  "displayName": "Token 1",
+  "serialNumber": "TOTP123456",
+  "manufacturer": "Contoso",
+  "model": "Hardware Token 1000",
+  "secretKey": "6PJ4UKIW33NNXYZAEHQNFUFTZF7WFTFB",
+  "timeIntervalInSeconds": 30,
+  "hashFunction": "hmacsha1"
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.hardwareOathTokenAuthenticationMethodDevice"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.hardwareOathTokenAuthenticationMethodDevice",
+  "id": "9b037532-f999-1ed9-13fd-849ffb995e11",
+  "displayName": "Token 1",
+  "serialNumber": "TOTP123456",
+  "manufacturer": "Contoso",
+  "model": "Hardware Token 1000",
+  "secretKey": null,
+  "timeIntervalInSeconds": 30,
+  "status": "available",
+  "lastUsedDateTime": null,
+  "assignedTo": null,
+  "hashFunction": "hmacsha1"
+}
+```
+
+### Example 2: Create a token and assign in to a user
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_hardwareoathtokenauthenticationmethoddevice_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardwareOathDevices
+Content-Type: application/json
+
+{
+  "displayName": "Token 1",
+  "serialNumber": "TOTP123456",
+  "manufacturer": "Contoso",
+  "model": "Hardware Token 1000",
+  "secretKey": "6PJ4UKIW33NNXYZAEHQNFUFTZF7WFTFB",
+  "timeIntervalInSeconds": 30,
+  "hashFunction": "hmacsha1",
+  "assignTo": {
+    "id": "0cadbf92-####-####-####-############"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.hardwareOathTokenAuthenticationMethodDevice"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.hardwareOathTokenAuthenticationMethodDevice",
+  "id": "9b037532-f999-1ed9-13fd-849ffb995e11",
+  "displayName": "Token 1",
+  "serialNumber": "TOTP123456",
+  "manufacturer": "Contoso",
+  "model": "Hardware Token 1000",
+  "secretKey": null,
+  "timeIntervalInSeconds": 30,
+  "status": "assigned",
+  "lastUsedDateTime": null,
+  "assignedTo": null,
+  "hashFunction": "hmacsha1",
+  "assignedTo": {
+    "id": "0cadbf92-####-####-####-############",
+    "displayName": "Amy Masters"
+    }
+}
+```

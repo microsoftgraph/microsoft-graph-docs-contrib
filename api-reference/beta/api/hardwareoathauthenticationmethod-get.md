@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
-
 ### Response
 
 The following example shows the response.

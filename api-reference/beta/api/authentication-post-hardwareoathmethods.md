@@ -50,7 +50,6 @@ In the request body, supply a JSON representation of the [hardwareOathAuthentica
 
 You can specify the following properties when creating a **hardwareOathAuthenticationMethod**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceId|String|ID of the hardware token that is to be assigned to the user and activated.|

@@ -1,5 +1,5 @@
 ---
-title: "hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber"
+title: "hardwareOathAuthenticationMethod: assignAndActivate"
 description: "This allows assigning a hardware token and activating it at the same time."
 author: "luc-msft"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber
+# hardwareOathAuthenticationMethod: assignAndActivate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This allows assigning a hardware token and activating it at the same time.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathauthenticationmethod-assignandactivatebyserialnumber-permissions"
+  "name": "hardwareoathauthenticationmethod-assignandactivate-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-assignandactivatebyserialnumber-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-assignandactivate-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |verificationCode|String|The 6-digit TOTP code that refreshes every 30 or 60 seconds on the Hardware OATH token.|
-|deviceId|String|ID of the hardware token that is to be assigned to the user and activated.|
+|device|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|ID of the hardware token that is to be assigned to the user and activated.|
 |displayName|String|An optional name that can be provided to the Hardware OATH token.|
 
 
