@@ -657,6 +657,14 @@ items:
         href: ../../api/certificateauthorityasentity-update.md
       - name: Delete
         href: ../../api/certificateauthorityasentity-delete.md
+  - name: Ux setting
+    items:
+    - name: Ux setting
+      href: ../../resources/uxsetting.md
+    - name: Get
+      href: ../../api/uxsetting-get.md
+    - name: Update
+      href: ../../api/uxsetting-update.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
