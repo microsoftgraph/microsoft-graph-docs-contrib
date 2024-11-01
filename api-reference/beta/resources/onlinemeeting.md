@@ -141,7 +141,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 > [!TIP]
 >
 >- The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
->- The **registration** property is deprecated and will stop returning data on December 31, 2024. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
+>- The **registration** property is deprecated and will stop returning data on December 12, 2024. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [Deprecation of the Microsoft Graph meeting registration beta APIs](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/).
 
 ## JSON representation
 

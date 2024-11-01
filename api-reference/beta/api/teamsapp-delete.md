@@ -28,7 +28,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > - The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using this permissions going forward.
 > - You can only use the AppCatalog.Submit permission to delete app definitions in review.
-> - Only global administrators can call this API.
+> - Only Teams Service admins or a higher privileged role can call this API.
 
 Permissions for the following HTTP request:
 

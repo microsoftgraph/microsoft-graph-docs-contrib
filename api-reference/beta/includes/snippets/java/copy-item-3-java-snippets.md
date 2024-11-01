@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.drives.item.items.item.copy.CopyPostRequestBody copyPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.copy.CopyPostRequestBody();
 ItemReference parentReference = new ItemReference();
-parentReference.setDriveId("6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B");
+parentReference.setDriveId("b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop");
 parentReference.setId("DCD0D3AD-8989-4F23-A5A2-2C086050513F");
 copyPostRequestBody.setParentReference(parentReference);
 var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").copy().post(copyPostRequestBody);

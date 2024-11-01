@@ -100,7 +100,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/contactFolders/{contactFol
 
 ---
 
-
 ### Response
 
 The following example shows the response.

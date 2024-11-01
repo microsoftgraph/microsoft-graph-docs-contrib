@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note:** To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* permission is also required.
 
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
+
 ## HTTP request
 
 ```http

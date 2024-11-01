@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "subscribedsku_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/subscribedsku-get-permissions.md)]
 
+[!INCLUDE [rbac-company-subscriptions-subscribedskus-apis](../includes/rbac-for-apis/rbac-company-subscriptions-subscribedskus-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

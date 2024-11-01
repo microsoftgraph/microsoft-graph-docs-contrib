@@ -24,6 +24,10 @@ $requestBody->setAcceptedModalities([new Modality('audio'),	]);
 $callOptions = new IncomingCallOptions();
 $callOptions->setOdataType('#microsoft.graph.incomingCallOptions');
 $callOptions->setIsContentSharingNotificationEnabled(true);
+$additionalData = [
+	'isDeltaRosterEnabled' => true,
+];
+$callOptions->setAdditionalData($additionalData);
 $requestBody->setCallOptions($callOptions);
 $requestBody->setParticipantCapacity(200);
 

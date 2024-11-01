@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/09/2024
+ms.date: 10/28/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -830,6 +830,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CallEvents-Emergency.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f0a35f91-2aa6-4a99-9d5a-5b6bcb66204e | - |
+| DisplayText | Read all emergency call events | - |
+| Description | Allows the app to read emergency call event information for all users in your organization without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### CallEvents.Read
 
 | Category | Application | Delegated |
@@ -930,6 +941,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### ChangeManagement.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 418dae40-2b65-4819-900c-519a04e4d278 | 4628dff5-c33e-4fde-b17a-b64e7acb1bed |
+| DisplayText | Read Change Management items | Read Change Management items |
+| Description | Allows to read all Change Management items. | Allows to read all Change Management items. |
+| AdminConsentRequired | Yes | No |
 
 ---
 
@@ -1627,6 +1649,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CustomSecAttributeProvisioning.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9fd1f8bf-a443-4df6-bc2a-5d00c5ec7828 | 9ddd870d-077c-49e7-b3e3-6b3012a8a880 |
+| DisplayText | Read the provisioning configuration of all active custom security attributes | Read the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CustomSecAttributeProvisioning.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1db69e9c-8d0a-498d-a5df-11fd0b68ceab | 1140d9e4-6776-433e-a9e4-b9831adbb2e0 |
+| DisplayText | Read and edit the provisioning configuration of all active custom security attributes | Read and edit the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read and edit the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read and edit the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### CustomTags.Read.All
 
 | Category | Application | Delegated |
@@ -1793,6 +1837,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### DeviceManagementCloudCA.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 315b6e8c-d92a-4691-919d-00ce76d1344a | ac5c8443-d999-471f-9247-ce92cf5c5560 |
+| DisplayText | Read Microsoft Cloud PKI objects | Read Microsoft Cloud PKI objects |
+| Description | Allows the app to read certification authority information without a signed-in user. | Allows the app to read certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementCloudCA.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f15eb2ba-ef8a-4f70-991d-da5d045154e2 | 93028c58-65aa-48db-a706-1fe4ada325ec |
+| DisplayText | Read and write Microsoft Cloud PKI objects | Read and write Microsoft Cloud PKI objects |
+| Description | Allows the app to read and write certification authority information without a signed-in user. | Allows the app to read and write certification authority information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### DeviceManagementConfiguration.Read.All
 
 | Category | Application | Delegated |
@@ -1946,19 +2012,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [Directory.ReadWrite.All](../includes/permissions-notes/directory.readwrite.all.md)]
-
----
-
-### Directory.Write.Restricted
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | f20584af-9290-4153-9280-ff8bb2c0ea7f | cba5390f-ed6a-4b7f-b657-0efc2210ed20 |
-| DisplayText | Manage restricted resources in the directory | Manage restricted resources in the directory |
-| Description | Allows the app to manage restricted resources based on the other permissions granted to the app, without a signed-in user. | Allows the app to manage restricted resources based on the other permissions granted to the app, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
-
-[!INCLUDE [Directory.Write.Restricted](../includes/permissions-notes/directory.write.restricted.md)]
 
 ---
 
@@ -3786,6 +3839,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### OnlineMeetingAiInsight.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c0cf7895-985f-42d4-a693-b618f36674ad | 166741d6-eeb8-46fe-91f4-817d2af7bc88 |
+| DisplayText | Read all AI Insights for online meetings. | Read all AI Insights for online meetings. |
+| Description | Allows the app to read all AI Insights for all online meetings, without a signed-in user. | Allows the app to read all AI Insights for online meetings, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### OnlineMeetingAiInsight.Read.Chat
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 01892c31-3b66-4bcf-b5f5-bf0a03d5ed9f | - |
+| DisplayText | Read all AI Insights for online meetings where the Teams application is installed. | - |
+| Description | Allows the teams-app to read all aiInsights for online meetings where the Teams-app is installed, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### OnlineMeetingArtifact.Read.All
 
 | Category | Application | Delegated |
@@ -4891,6 +4966,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PrivilegedAssignmentSchedule.Remove.AzureADGroup
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 55d1104b-3821-413d-b3ca-e2393d333cd3 | ca5fe595-68ff-4dfd-907d-4509501a0e49 |
+| DisplayText | Delete assignment schedules for access to Azure AD groups | Delete assignment schedules for access to Azure AD groups |
+| Description | Delete time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Allows the app to delete time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### PrivilegedEligibilitySchedule.Read.AzureADGroup
 
 | Category | Application | Delegated |
@@ -4909,6 +4995,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 618b6020-bca8-4de6-99f6-ef445fa4d857 | ba974594-d163-484e-ba39-c330d5897667 |
 | DisplayText | Read, create, and delete eligibility schedules for access to Azure AD groups | Read, create, and delete eligibility schedules for access to Azure AD groups |
 | Description | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### PrivilegedEligibilitySchedule.Remove.AzureADGroup
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 55745561-7572-4314-a737-a2c2a1b0dd2e | c5ea9ab4-9b41-4c09-a400-53e652fb5096 |
+| DisplayText | Delete eligibility schedules for access to Azure AD groups | Delete eligibility schedules for access to Azure AD groups |
+| Description | Delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Allows the app to delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5148,6 +5245,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### RoleAssignmentSchedule.Remove.Directory
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d3495511-98b7-4df3-b317-4e35c19f6129 | f71cd05c-3fdb-4568-aef2-e1cf62ee20d4 |
+| DisplayText | Delete all active role assignments of your company's directory | Delete all active role assignments for your company's directory |
+| Description | Delete all active privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Allows the app to delete the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### RoleEligibilitySchedule.Read.Directory
 
 | Category | Application | Delegated |
@@ -5166,6 +5274,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | fee28b28-e1f3-4841-818e-2704dc62245f | 62ade113-f8e0-4bf9-a6ba-5acb31db32fd |
 | DisplayText | Read, update, and delete all eligible role assignments and schedules for your company's directory | Read, update, and delete  all eligible role assignments for your company's directory |
 | Description | Allows the app to read and manage the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### RoleEligibilitySchedule.Remove.Directory
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 79c7e69c-0d9f-4eff-97a8-49170a5a08ba | 58ac4fa2-b484-4d6e-ba97-beee2a574220 |
+| DisplayText | Delete all eligible role assignments of your company's directory | Delete all eligible role assignments for your company's directory |
+| Description | Delete all eligible privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Allows the app to delete the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5509,6 +5628,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | d4dcee6d-0774-412a-b06c-aeabbd99e816 | 087c3ad9-c2ca-4b82-9885-d5e25ce9e183 |
 | DisplayText | Read and write all identity security sensors | Read and write identity security sensors |
 | Description | Allows the app to read and write identity security sensors without a signed-in user. | Allows the app to read and write identity security sensors on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesUserActions.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3e5d0bee-973f-4736-a123-4e1ab146f3a8 | c7d0a939-da1c-4aca-80fa-d0a6cd924801 |
+| DisplayText | Read all identity security available user actions | Read identity security available user actions |
+| Description | Allows the app to read all the identity security available user actions without a signed-in user. | Allows the app to read all the identity security available user actions of signed user |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesUserActions.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b4146a3a-dd4f-4af4-8d91-7cc0eef3d041 | bf230e97-1957-4df6-b3f6-57f9029eacdf |
+| DisplayText | Read and perform all identity security available user actions | Read and perform identity security available user actions |
+| Description | Allows the app to read and write identity security available user actions without a signed-in user. | Allows the app to read and write identity security available user actions on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7383,6 +7524,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
 | ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. |
 | Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user. |
+| Chat.ManageDeletion.Chat | b827a2af-24b2-4f61-9eb3-8788e66a0d86 | Delete and recover deleted chat | Allows the app to delete and recover deleted chat, without a signed-in user. |
 | ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. |
 | ChatMessage.Read.Chat | 9398c3de-3f6b-4958-90f3-5098714ff50c | Read this chat's messages | Allows the app to read this chat's messages, without a signed-in user. |
 | ChatMessage.Send.Chat | 19cbeeb2-02a0-49d7-95cd-ab0841beed7f | Send messages to this chat | Allows the app to send messages to this chat, without a signed-in user. |
@@ -7424,5 +7566,4 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
 

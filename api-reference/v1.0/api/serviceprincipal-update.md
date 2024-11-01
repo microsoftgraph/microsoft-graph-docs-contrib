@@ -19,13 +19,15 @@ Update the properties of [servicePrincipal](../resources/serviceprincipal.md) ob
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-update-permissions.md)]
+
+> [!NOTE]
+> - To update the **customSecurityAttributes** property:
+>   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.
+>   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission.
 
 ## HTTP request
 
@@ -52,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource IDs for [managed identities](/azure/active-directory/managed-identities-azure-resources/overview).|
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Microsoft Entra ID will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](../resources/approle.md) collection|The application roles exposed by the associated application. For more information, see the **appRoles** property definition on the [application](../resources/application.md) resource. Not nullable. |
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.<br/><br/>To update this property, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.<br/><li>To update this property in delegated scenarios, the calling principal must be assigned the Attribute Assignment Administrator role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.<li>To update this property in app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission. |
 |displayName|String|The display name for the service principal.|
 |homepage|String|Home page or landing page of the application.|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
@@ -60,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 |oauth2PermissionScopes|[permissionScope](../resources/permissionScope.md) collection|The OAuth 2.0 permission scopes exposed by the associated application. For more information, see the **oauth2PermissionScopes** property definition on the [application](../resources/application.md) resource. Not nullable.|
 |preferredSingleSignOnMode|string|Specifies the single sign-on mode configured for this application. Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the My Apps portal. The supported values are `password`, `saml`, `external`, and `oidc`.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
-|servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](../resources/application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Microsoft Entra ID. For example,<ul><li>Client apps requesting permissions to this resource can use these URIs to specify needed permissions in the **requiredResourceAccess** property of their application manifest, or in the "API permissions" blade on the App registrations experience.</li><li>Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the “aud” claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable.|
+|servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](../resources/application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Microsoft Entra ID. For example,<ul><li>Client apps requesting permissions to this resource can use these URIs to specify needed permissions in the **requiredResourceAccess** property of their application manifest, or in the "API permissions" blade on the App registrations experience.</li><li>Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the "aud" claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable.|
 |tags|String collection| Custom strings that can be used to categorize and identify the application. Not nullable. |
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Microsoft Entra ID issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 

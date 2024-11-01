@@ -3,7 +3,7 @@ title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: "windows-update-business"
+ms.subservice: autopatch
 doc_type: enumTypes
 ---
 

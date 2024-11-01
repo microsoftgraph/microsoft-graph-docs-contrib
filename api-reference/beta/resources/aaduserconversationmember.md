@@ -1,6 +1,6 @@
 ---
 title: "aadUserConversationMember resource type"
-description: "Represents a Microsoft Entra user in a chat or channel."
+description: "Represents a Microsoft Entra user in a team, a channel, or a chat. "
 ms.localizationpriority: high
 author: "akjo"
 ms.subservice: "teams"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md) or a [chat](chat.md). This type inherits from [conversationMember](conversationmember.md).
+Represents a Microsoft Entra user in a [team](team.md), a [channel](channel.md), or a [chat](chat.md). 
+
+Inherits from [conversationMember](conversationmember.md).
 
 ## Methods
 
@@ -25,6 +27,7 @@ Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md
 |[Get team member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Update team member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove team member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[Remove team members in bulk](../api/conversationmember-remove.md)|[actionResultPart](../resources/actionresultpart.md) collection|Remove multiple members from a team in a single request.|
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for `channel` with membershipType of `private`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
@@ -39,13 +42,13 @@ Represents a Microsoft Entra user in a [team](team.md) or a [channel](channel.md
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id| String | Read-only. Unique ID of the user.|
 |displayName| String | The display name of the user. |
-|roles| String collection | The roles of the user such as owner, member, or guest. |
-|userId| String | The GUID of the user. |
 |email| String  | The email address of the user. |
+|id| String | Read-only. Unique ID of the user.|
+|roles| String collection | The roles of the user such as owner, member, or guest. |
 |tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
-|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
+|userId| String | The GUID of the user. |
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp that denotes how far back the history of a conversation is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
 
@@ -61,16 +64,14 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "String (identifier)",
-  "roles": [
-    "String"
-  ],
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",  
   "displayName": "String",
-  "visibleHistoryStartDateTime": "String (timestamp)",
-  "userId": "String",
   "email": "String",
-  "tenantId": "String"
+  "id": "String (identifier)",
+  "roles": ["String"],
+  "tenantId": "String",
+  "userId": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 

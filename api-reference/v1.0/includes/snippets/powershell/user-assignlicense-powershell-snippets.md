@@ -10,13 +10,17 @@ $params = @{
 	addLicenses = @(
 		@{
 			disabledPlans = @(
-			"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"
+			"8a256a2b-b617-496d-b51b-e76466e88db0"
 		)
-		skuId = "45715bb8-13f9-4bf6-927f-ef96c102d394"
+		skuId = "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+	}
+	@{
+		disabledPlans = @(
+		)
+		skuId = "f30db892-07e9-47e9-837c-80727f46fd3d"
 	}
 )
 removeLicenses = @(
-"bea13e0c-3828-4daa-a392-28af7ff61a0f"
 )
 }
 

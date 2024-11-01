@@ -7,15 +7,9 @@ author: sebastienlevert
 
 # MSAL2 Provider
 
-The MSAL2 Provider uses [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) that implements the OAuth 2.0 [authorization code flow](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow) with PKCE. It's used to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](./providers.md).
-
-## Difference between MSAL2 Provider and MSAL Provider
-Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
-Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-
-All new applications should use MSAL2 Provider whenever possible.
 
 ## Get started
 
@@ -39,10 +33,10 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 | client-id                    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
 | scopes                       | Comma-separated strings for scopes that the user must consent to when they sign in. Optional.
-| custom-hosts                 | Comma-separated strings for additional domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
+| custom-hosts                 | Comma-separated strings for more domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
 | authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-contoso.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
-| prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
+| prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT```, and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
 | base-url                     | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.
 | incremental-consent-disabled | Specifies if incremental consent is disabled. Default `false`. Optional. |
 
@@ -138,7 +132,7 @@ To call the custom APIs, request that API scope.
   ...
 </mgt-get>
 ```
-or via Javascript/Typescript
+Or via JavaScript/Typescript.
 ```ts
 import { prepScopes } from "@microsoft/mgt-element";
 
@@ -193,7 +187,7 @@ To migrate an application that's using MSAL provider to the MSAL2 Provider:
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
 1. In your code, replace `MSALProvider` with `MSAL2Provider`.
 
-    If you are initializing your provider in the JS/TS code, follow these steps:
+    If you initialize your provider in the JS/TS code, follow these steps:
 
     Replace the import statement for ```mgt-MSAL-provider``` with
     ```ts
@@ -207,7 +201,7 @@ To migrate an application that's using MSAL provider to the MSAL2 Provider:
       ...
     })
     ```
-    If you are initializing the provider in HTML, replace
+    If you initialize the provider in HTML, replace
     ```html
     <mgt-msal-provider client-id="" ... ></mgt-msal-provider>
     ```

@@ -22,6 +22,8 @@ items:
     href: ../../api/itemactivity-getbyinterval.md
   - name: List pages
     href: ../../api/basesitepage-list.md
+  - name: List page templates
+    href: ../../api/pagetemplate-list.md
   - name: List root sites
     href: ../../api/site-list.md
   - name: List sites across geographies
@@ -171,9 +173,9 @@ items:
   - name: List permissions
     href: ../../api/listitem-list-permissions.md
   - name: Create permission
-    href: ../../api/listitem-list-permissions.md
-  - name: Get permission
     href: ../../api/listitem-post-permissions.md
+  - name: Get permission
+    href: ../../api/listitem-get-permissions.md
   - name: Update permission
     href: ../../api/listitem-update-permissions.md
   - name: Delete permission
@@ -288,6 +290,10 @@ items:
       href: ../../api/sitepage-publish.md
     - name: Get by position
       href: ../../api/sitepage-getwebpartsbyposition.md
+    - name: Save as template
+      href: ../../api/sitepage-saveastemplate.md
+    - name: Create from template
+      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section
@@ -348,6 +354,24 @@ items:
       href: ../../resources/textwebpart.md
     - name: Standard web part
       href: ../../resources/standardwebpart.md
+  - name: Page template
+    items:
+    - name: Page template
+      href: ../../resources/pagetemplate.md
+    - name: List
+      href: ../../api/pagetemplate-list.md
+    - name: Create
+      href: ../../api/pagetemplate-create.md
+    - name: Get
+      href: ../../api/pagetemplate-get.md
+    - name: Update
+      href: ../../api/pagetemplate-update.md
+    - name: Delete
+      href: ../../api/pagetemplate-delete.md
+  - name: Complex types
+    items:
+    - name: Save as template
+      href: ../../resources/saveastemplate.md
 - name: Taxonomy
   items:
   - name: Store

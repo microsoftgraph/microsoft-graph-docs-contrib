@@ -109,7 +109,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/events/{eventId}/permanent
 
 ---
 
-
 ### Response
 
 The following example shows the response.

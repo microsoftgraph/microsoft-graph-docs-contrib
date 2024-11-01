@@ -11,7 +11,7 @@ from msgraph_beta.generated.models.item_reference import ItemReference
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CopyPostRequestBody(
 	parent_reference = ItemReference(
-		drive_id = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+		drive_id = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop",
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F",
 	),
 	children_only = True,

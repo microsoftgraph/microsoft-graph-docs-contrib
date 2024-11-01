@@ -1,6 +1,6 @@
 ---
 title: "channel: getAllRetainedMessages"
-description: "Get retained messages across all channels in a team."
+description: "Get all retained messages across all channels in a team."
 author: "AgnesLiu"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get retained [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md).
+Get all retained [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md).
 
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 

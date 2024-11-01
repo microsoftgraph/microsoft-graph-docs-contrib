@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+[!INCLUDE [rbac-user-sponsors-apis-read](../includes/rbac-for-apis/rbac-user-sponsors-apis-read.md)]
+
 ## HTTP request
 
 Get sponsors.

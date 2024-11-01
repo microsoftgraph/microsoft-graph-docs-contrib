@@ -9,6 +9,177 @@ ms.localizationpriority: medium
 
 Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
 
+## September 2024: New and generally available
+
+### Change notifications
+
+Announced the deprecation of shared access signatures (SAS) for authenticating Event Hubs for [Microsoft Graph change notifications](/graph/change-notifications-delivery-event-hubs). We recommend using Microsoft Entra ID role-based access control (RBAC) instead. Follow the [guidance to migrate to RBAC](/graph/change-notifications-delivery-event-hubs#migrate-an-event-hub-authentication-to-microsoft-entra-id-rbac).
+
+### Identity and access | Directory management
+
+Removed the previously deprecated `Directory.Write.Restricted` permission from the [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources.
+
+### Security | Alerts and incidents
+
+- Use the **dnsDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get the DNS domain that a computer belongs to.
+- Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get the hostname without the domain suffix.
+- Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence) to get a logical grouping of computers within a Microsoft Windows network.
+
+### Security | Identities
+
+Added the ability to [get](/graph/api/security-healthissue-get), [list](/graph/api/security-identitycontainer-list-healthissues), and [update](/graph/api/security-healthissue-update) Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue) that represent potential issues identified within a customer's Defender for Identity configuration.
+
+### Teamwork and communications | Messaging
+
+- [Get all retained messages](/graph/api/channel-getallretainedmessages) across all [channels](/graph/api/resources/channel) in a [team](/graph/api/resources/team).
+- [Get all retained messages](/graph/api/chat-getallretainedmessages) from all [chats](/graph/api/resources/chat) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+
+## September 2024: New in preview only
+
+### Applications | Service principal
+
+Use the **serviceManagementReference** optional property in the [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&preserve-view=true) method to set the service tree ID for a service.
+
+### Device and app management | Cloud PC
+
+- Enabled the `middleEast` and `mexico` members as supported regions in the [cloudPcRegionGroup](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) enumeration.
+- Removed the **getShiftWorkCloudPcAccessState** method from the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource. Going forward, use the [getFrontlineCloudPcAccessState](/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) API.
+- Use the **autopilotConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to get or set the settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.
+- Use the **osVersionNumber** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources to get the operating system version of an image.
+- Introduced the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) method on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to enable you to return a list of all snapshots of a Cloud PC.
+
+Deprecated the following methods:
+- [bulkSetReviewStatus](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true); use the [cloudPcBulkSetReviewStatus](/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [List snapshots](/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta&preserve-view=true); use the [retrieveSnapshots](/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+
+### Files
+
+- [Update the recycle bin settings](/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-beta&preserve-view=true) for a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
+- Use the `$skip`, `$top`, `$orderBy`, `$filter`, and `includeAllContainerUsers` query parameters to customize the [List permissions](/graph/api/filestoragecontainer-list-permissions?view=graph-rest-beta&preserve-view=true) operation response.
+- Include all version history when you [copy a drive item](/graph/api/driveitem-copy?view=graph-rest-beta&preserve-view=true). The version history is included up to the target version setting limit.
+
+### Identity and access | Directory management
+
+Use the **passwordResetUri** property on [internalDomainFederation](/graph/api/resources/internaldomainfederation?view=graph-rest-beta&preserve-view=true) to get or set the URI that clients are redirected to for resetting their password.
+
+### Identity and access | Identity and sign in
+
+- Use the **identifierUris** property in the get and update operations of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource to get or set restrictions on vulnerable or easily compromised identifier URI formats for an application.
+- Updated the return type for the **applicationRestrictions** property of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [appManagementApplicationConfiguration](/graph/api/resources/appmanagementapplicationconfiguration?view=graph-rest-beta&preserve-view=true).
+- Updated the return type for the **servicePrincipalRestrictions** property of the [tenantAppManagementPolicy](/graph/api/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [appManagementServicePrincipalConfiguration](/graph/api/resources/appmanagementserviceprincipalconfiguration?view=graph-rest-beta&preserve-view=true).
+- Updated the return type for the **restrictions** property of the [appManagementPolicy](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource from [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to [customAppManagementConfiguration](/graph/api/resources/customappmanagementconfiguration?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Microsoft 365 usage reports
+
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusageuserdetail?view=graph-rest-beta&preserve-view=true) the most recent activity data for enabled users of Microsoft 365 Copilot apps.
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta&preserve-view=true) the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
+- [Get](/graph/api/reportroot-getmicrosoft365copilotusercounttrend?view=graph-rest-beta&preserve-view=true) the trend in the daily number of active and enabled users of Microsoft 365 Copilot for a specified time period.
+
+### Security | Alerts and incidents
+
+- Use the **dnsDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the DNS domain that a computer belongs to.
+- Use the **hostName** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get the hostname without the domain suffix.
+- Use the **ntDomain** property on [deviceEvidence](/graph/api/resources/security-deviceevidence?view=graph-rest-beta&preserve-view=true) to get a logical grouping of computers within a Microsoft Windows network.
+
+### Security | Identities
+
+- [Generate](/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-beta&preserve-view=true) a new deployment access key.
+- [Get the deployment access key](/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-beta&preserve-view=true) associated with a Microsoft Defender for Identity.
+- [Get the sensor deployment package](/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-beta&preserve-view=true) URL and version.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster is enabled for a call.
+
+## August 2024: New and generally available
+
+### Education
+
+- Enabled the `$orderby` query parameter for the following methods:
+  - [Get educationAssignment](/graph/api/educationassignment-get)
+  - [Get educationCategory](/graph/api/educationcategory-get)
+  - [Get educationSubmission](/graph/api/educationsubmission-get)
+- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment) resource.  
+
+### Employee experience | Employee engagement
+
+Introduced the general availability of the Viva Engage API in Microsoft Graph. A Viva Engage community is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
+
+- [Create a community](/graph/api/employeeexperience-post-communities)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
+- [Get a community](/graph/api/community-get)
+- [List communities](/graph/api/employeeexperience-list-communities)
+- [Update a community](/graph/api/community-update)
+- [Delete a community](/graph/api/community-delete)
+
+### People and workplace intelligence | Insights
+
+[Get](/graph/api/userinsightssettings-get) and [update](/graph/api/userinsightssettings-update) user privacy settings for [itemInsights](/graph/api/resources/iteminsights) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). Use the [userInsightsSettings](/graph/api/resources/userinsightssettings) resource to enable or disable the calculation and visibility of item insights and meeting hours insights for a user.
+
+### Reports | Microsoft 365 usage reports
+
+[Get](/graph/api/adminreportsettings-get) or [update](/graph/api/adminreportsettings-update) tenant-wide [settings](/graph/api/resources/adminreportsettings) to hide or show identifiable information for users, groups, or sites in Microsoft 365 usage reports.
+
+### Teamwork and communications | Online meeting
+
+- Enabled the `$select` query parameter for the [Get callRecording](/graph/api/callrecording-get) method.
+- Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get) method.
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings) method.
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts) method.
+- Get all [recordings](/graph/api/onlinemeeting-getallrecordings) and [transcripts](/graph/api/onlinemeeting-getalltranscripts) from scheduled online meeting instances for which the specified user is the organizer. 
+- Get a set of [recording](/graph/api/callrecording-delta) and [transcript](/graph/api/calltranscript-delta) resources that were added for online meeting instances organized by the specified user.
+
+### Teamwork and communications | Settings
+
+Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork) and [userTeamwork](/graph/api/resources/userteamwork) resources.
+
+## August 2024: New in preview only
+
+### Identity and access | Partner Center security
+
+Introduced the [partner security score API](/graph//api/resources/partner-security-score-api-overview). Use this API to generate security scores for partners to help them enhance their posture. The API provides a history of score changes, detailed customer insights, and requirement score information.
+
+### Device and app management | Cloud PC
+
+- Use the **crossRegionDisasterRecoverySetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to define cross-region disaster recovery settings.
+- Deprecated the `noLicensesAvailable` member on [frontlineCloudPcAccessState](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true#frontlinecloudpcaccessstate-values).
+
+### Education
+
+- Enabled the `$orderby` query parameter for the following methods:
+  - [Get educationAssignment](/graph/api/educationassignment-get?view=graph-rest-beta&preserve-view=true)
+  - [Get educationCategory](/graph/api/educationcategory-get?view=graph-rest-beta&preserve-view=true)
+  - [Get educationSubmission](/graph/api/educationsubmission-get?view=graph-rest-beta&preserve-view=true)
+- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments?view=graph-rest-beta&preserve-view=true) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) resource. 
+
+### Teamwork and communications | Apps
+
+Use the **clientAppId** property on [teamsAppAuthorization](/graph/api/resources/teamsappauthorization?view=graph-rest-beta&preserve-view=true) to get the registration ID of the Microsoft Entra app ID associated with an [app](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true) in the Microsoft Teams app catalog.
+
+### Teamwork and communications | Calls and online meetings
+
+- Use the **settings** property on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to get or set whether attendees receive email notifications for a town hall or webinar.
+- Removed the **meetingOrganizerId** property from the [callRecording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) and [callTranscript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) resources in favor of the **meetingOrganizer** property.
+
+### Teamwork and communications | Messaging
+
+Use the **displayName** property on the [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) resource to represent the reaction name [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Online meeting
+
+- Enabled the `$select` query parameter for the [Get callRecording](/graph/api/callrecording-get?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts?view=graph-rest-beta&preserve-view=true) method.
+
+### Teamwork and communications | Settings
+
+Enabled the `Spain` and `Mexico` values as supported regions for the **region** property of the [teamwork](/graph/api/resources/teamwork?view=graph-rest-beta&preserve-view=true) and [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resources.
+
+### Security | Identities
+
+Added the ability to get, list, and update Microsoft Defender for Identity [sensors](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) settings.
+
 ## July 2024: New and generally available
 
 ### Backup Storage
@@ -1606,7 +1777,7 @@ Manage [access package](/graph/api/resources/accesspackage) or [group](/graph/ap
 - [Get](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-get) or [update](/graph/api/microsoftauthenticatorauthenticationmethodconfiguration-update) specific [feature settings](/graph/api/resources/microsoftAuthenticatorFeatureSettings) for Microsoft Authenticator, for example, whether to show the app that the user is signing into, or the geographic location from which the authentication request originated.
 
 ### Reports | Microsoft 365 usage reports
-Get reports for [Microsoft 365 app usage](/graph/api/resources/microsoft-365-apps-usage-report), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
+Get reports for [Microsoft 365 app usage](/graph/api/resources/reportroot#microsoft-365-apps-usage), including the usage of Microsoft 365 apps by user, the number of daily unique active users by app, and the number of daily unique active users across all apps by platform (Windows, Mac, web, and mobile).
 
 ### Teamwork and communications | Calls and online meetings
 When [inviting](/graph/api/participant-invite) a [participant](/graph/api/resources/invitationparticipantinfo) to a [call](/graph/api/resources/call), you can specify whether to hide the participant from the roster or remove the participant from the main mixer.
