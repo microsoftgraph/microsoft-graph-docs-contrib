@@ -12,7 +12,7 @@ com.microsoft.graph.beta.users.item.messages.item.attachments.createuploadsessio
 AttachmentItem attachmentItem = new AttachmentItem();
 attachmentItem.setAttachmentType(AttachmentType.File);
 attachmentItem.setName("scenary");
-attachmentItem.setSize(7208534);
+attachmentItem.setSize(7208534L);
 attachmentItem.setIsInline(true);
 attachmentItem.setContentId("my_inline_picture");
 createUploadSessionPostRequestBody.setAttachmentItem(attachmentItem);
