@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminLimitedMode resource type"
-description: "Navigation property for using `copilotAdminLimitedMode` GET and PATCH methods"
+description: "Represents a setting that controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-LimitedMode copilot setting value controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. If this setting is enabled, Copilot doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Copilot responds to sentiment-related prompts and questions asked by the user. In the initial version, this setting is honored by Teams Copilot and eventually all M365 Copilots will be honoring this setting. The default value is disabled.
+The copilotAdminLimitedMode controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. If this setting is enabled, Microsoft 365 Copilot doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Microsoft 365 Copilot responds to sentiment-related prompts and questions asked by the user. In the initial version, this setting is honored by Microsoft Teams Copilot, and eventually all Microsoft 365 Copilots will be honoring this setting. The default value is disabled.
 
 Inherits from [entity](../resources/entity.md).
 

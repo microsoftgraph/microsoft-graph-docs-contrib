@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object in the response body.
 
-API can return more HTTP status codes: `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
+The API can return more HTTP status codes: `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
 
 ## Examples
 
