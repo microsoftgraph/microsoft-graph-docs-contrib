@@ -16,10 +16,10 @@ Validates the ownership of the domain.
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > [!NOTE]
 > Verifying a domain through Microsoft Graph doesn't configure the domain for use with Office 365 services like Exchange. Fully configuring the domain to work with Microsoft 365 products might require extra steps. For more information, see [Microsoft 365 admin setup](/microsoft-365/admin/setup/add-domain).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
