@@ -2835,6 +2835,14 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ],
+              "childNodes": [
+                {
+                  "name": "Copilot settings",
+                  "resources": [
+                    "copilotAdminLimitedMode"
+                  ]
+                }
               ]
             },
             {
@@ -2878,6 +2886,12 @@
                       "name": "Send virtual appointment SMS",
                       "href": "../../api/virtualappointment-sendvirtualappointmentsms.md"
                     }
+                  ]
+                },
+                {
+                  "name": "Copilot settings",
+                  "resources": [
+                    "copilotAdminLimitedMode"
                   ]
                 }
               ]

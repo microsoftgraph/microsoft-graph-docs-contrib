@@ -1,5 +1,5 @@
 ---
-title: "Update copilotAdminLimitedMode"
+title: "Update Copilot LimitedMode"
 description: "Update the properties of a copilotAdminLimitedMode object."
 author: "gautamjain14"
 ms.localizationpriority: medium
