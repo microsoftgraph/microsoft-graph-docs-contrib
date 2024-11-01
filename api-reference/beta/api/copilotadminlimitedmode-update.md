@@ -52,16 +52,14 @@ PATCH /copilot/admin/settings/limitedMode
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForGroup|Boolean|Use this to set whether user should be in limited mode for Copilot in Teams Meetings. When copilotLimitedMode=true, users in this mode can ask any questions, but Copilot will not respond to certain questions related to inferring emotions, behavior, judgments. When copilotLimitedMode=false, this is current mode for Copilot, and it will respond to any types of questions grounded to the meeting conversation. Default value is false.|
-|groupId|String|The ID of a Microsoft Entra group, of which the value of isEnabledForGroup is applied value for its members. The default value is null. This parameter is optional. If isEnabledForGroup is set to true, groupId value must be provided and copilot limited mode is enabled to the members of the group|
-
-
+|isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When copilotLimitedMode=true, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When copilotLimitedMode=false, the current mode for Copilot, it responds to any types of questions grounded to the meeting conversation. The default value is false.|
+|groupId|String|The ID of a Microsoft Entra group, of which the value of isEnabledForGroup is applied value for its members. The default value is null. This parameter is optional. If isEnabledForGroup is set to true, groupID value must be provided and copilot limited mode is enabled for the members of the group|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object in the response body.
 
-API can return additional HTTP status codes such as `403 Forbidden`, `500 Internal Server Error` or `429 Too Many Requests`.
+API can return additional HTTP status codes such as `403 Forbidden`, `500 Internal Server Error`, or `429 Too Many Requests`.
 
 ## Examples
 
