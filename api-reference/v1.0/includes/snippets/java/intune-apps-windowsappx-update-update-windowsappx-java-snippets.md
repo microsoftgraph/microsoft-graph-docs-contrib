@@ -28,7 +28,7 @@ mobileApp.setNotes("Notes value");
 mobileApp.setPublishingState(MobileAppPublishingState.Processing);
 mobileApp.setCommittedContentVersion("Committed Content Version value");
 mobileApp.setFileName("File Name value");
-mobileApp.setSize(4);
+mobileApp.setSize(4L);
 mobileApp.setApplicableArchitectures(EnumSet.of(WindowsArchitecture.X86));
 mobileApp.setIdentityName("Identity Name value");
 mobileApp.setIdentityPublisherHash("Identity Publisher Hash value");

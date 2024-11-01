@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: extensions
 ms.custom: graphiamtop20
-ms.date: 11/29/2023
+ms.date: 10/30/2024
 #Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Graph resources and avoid using an external database system, and use the data to customize authentication and other experiences.
 ---
 
@@ -21,7 +21,9 @@ This article describes how Microsoft Graph supports extending its resources, the
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 >
-> The extensions mentioned in this article are not similar to [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-extensions)
+> The extensions mentioned in this article are not similar to the following features:
+> - [Custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with extensions?](/entra/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-extensions)
+> - [Custom authentication extensions](/entra/external-id/customers/concept-custom-extensions) that are supported for token customization and extending authentication flows.
 
 ## Why add custom data to Microsoft Graph?
 
@@ -515,7 +517,7 @@ For the list of resource types that support schema extensions, see [Comparison o
 
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
-- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that's verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
+- If you already have a vanity `.com`,`.net`, `.gov`, `.edu`, or a `.org` domain that's verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
 - Alternatively, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph assigns a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
 
 The **id** is the name of the complex type that stores your data on the extended resource instance.

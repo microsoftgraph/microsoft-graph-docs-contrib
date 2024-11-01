@@ -14,7 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UserSource();
 $requestBody->setEmail('admin@contoso.com');
-$requestBody->setIncludedSources(new SourceType('mailbox, site'));
+$requestBody->setIncludedSources(new SourceType('mailbox'));
 
 $result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->custodians()->byEdiscoveryCustodianId('ediscoveryCustodian-id')->userSources()->post($requestBody)->wait();
 
