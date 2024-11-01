@@ -24,37 +24,36 @@ Here’s a step-by-step tutorial for using Graph Explorer.
 
 ### Step 2: Explore a sample query
 
-1. On the left sidebar, you see a list of sample queries. These are prebuilt queries that you can run to see how the API works.
-1. Select any sample query, such as "Get my profile," to see the request and response.
+You can run the prebuilt sample queries to see how the API works. Select any sample query, such as "Get my profile," to see the request and response.
 
 :::image type="content" source="./images/GE-tutorial-step2-explore-sample-query.png" alt-text="Screenshot of the Graph Explorer user interface, which displays the returned results of the GET my profile query." border="true":::
 
 ### Step 3: Sign In for more features
 
-1. You can use Graph Explorer without signing in, but signing in allows you to access your own tenant and perform more advanced operations.
-1. To try POST, PUT, PATCH, and DELETE requests, sign in with your Microsoft 365 account.
-1. We recommend signing into your [M365 Developer sandbox tenant](https://developer.microsoft.com/en-US/microsoft-365/dev-program) to avoid any operations that may potentially alter your production data.
+You can use Graph Explorer without signing in. Users who sign in can access their own tenants and perform more advanced operations. To try POST, PUT, PATCH, and DELETE requests, sign in with your Microsoft 365 account.
+
+We recommend signing into your [M365 Developer sandbox tenant](https://developer.microsoft.com/en-US/microsoft-365/dev-program) to avoid any operations that may potentially alter your production data.
 
 > [!IMPORTANT]
 > If you choose to sign in with your organizational account, running a non-GET request might affect the data in the tenant.
 
 ### Step 4: Run your first query
 
-1. Select a sample query or type your own query in the request field.
-1. Edit the request body, request headers as needed for the query.
+1. Select a sample query or type your query in the request field.
+1. Edit the request body, and request headers as needed for the query.
 For example, to run a Post request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
 1. Select **Run query**.
-1. The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API.
+The response is displayed in the Response preview section. It includes the HTTP status code and the data returned by the API.
 1. Next to the Response preview tab, you can also view the Response headers, Code snippets, Toolkit component, and Adaptive cards relevant to the query.  
 
 :::image type="content" source="./images/GE-tutorial-step4-run-query.png" alt-text="Screenshot of the Graph Explorer running the POST create a new application query." border="true":::
 
 ### Step 5: Modify permissions
 
-1. Some queries require specific permissions. If a query fails due to insufficient permissions, you see an error message.
-1. Select the **Modify permissions** tab to consent to the required permissions.
+Some queries require specific permissions. If a query fails due to insufficient permissions, you see an error message.
+1. Select the **Modify permissions** to consent to the required permissions.
 1. After consenting, run the query again.
-1. You can also select on the profile avatar and choose Consent to permissions. From the list of all available permissions, consent to the ones you want.
+1. You can also select the profile avatar and choose Consent to permissions. From the list of all available permissions, consent to the ones you want.
 
 :::image type="content" source="./images/GE-tutorial-step5-modify-permissions.png" alt-text="Screenshot of the Graph Explorer interface, specifically the Modify permissions tab." border="true":::
 
