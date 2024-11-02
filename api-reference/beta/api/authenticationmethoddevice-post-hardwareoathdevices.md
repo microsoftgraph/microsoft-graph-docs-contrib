@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a token and assign in to a user
+### Example 2: Create a token and assign it to a user
 
 #### Request
 

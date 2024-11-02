@@ -158,7 +158,6 @@ Content-Type: application/json
 
 {
   "value": [
-
     {
       "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
       "id": "3dee0e53-####-####-####-############",

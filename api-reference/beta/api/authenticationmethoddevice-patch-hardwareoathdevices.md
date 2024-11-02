@@ -59,18 +59,6 @@ You can specify the following properties when creating a **hardwareOathTokenAuth
 |timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Required.|
 |hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
 |assignTo|[identity](../resources/intune-identity.md)|User ID if you want to directly assign the token to a user. Optional.|
-|displayName|String|Name that can be provided to the Hardware OATH token. Optional.|
-
-|displayName|String|**TODO: Add Description** Inherited from [authenticationMethodDevice](../resources/authenticationmethoddevice.md). Optional.|
-|serialNumber|String|**TODO: Add Description** Required.|
-|manufacturer|String|**TODO: Add Description** Required.|
-|model|String|**TODO: Add Description** Required.|
-|secretKey|String|**TODO: Add Description** Optional.|
-|timeIntervalInSeconds|Int32|**TODO: Add Description** Required.|
-|assignedTo|[identity](../resources/intune-identity.md)|**TODO: Add Description** Optional.|
-|hashFunction|hardwareOathTokenHashFunction|**TODO: Add Description**. The possible values are: `hmacsha1`, `hmacsha256`, `unknownFutureValue`. Optional.|
-
-
 
 ## Response
 
@@ -91,18 +79,30 @@ POST https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hard
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.hardwareOathTokenAuthenticationMethodDevice",
-  "displayName": "String",
-  "serialNumber": "String",
-  "manufacturer": "String",
-  "model": "String",
-  "secretKey": "String",
-  "timeIntervalInSeconds": "Integer",
-  "status": "String",
-  "assignedTo": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "hashFunction": "String"
+  "@context": "#$delta",
+  "value": [
+    {
+      "@contentId": "1",
+      "serialNumber": "TOTP123456",
+      "manufacturer": "Contoso",
+      "model": "Hardware Token 1000",
+      "secretKey": "6PJ4UKIW33NNXYZAEHQNFUFTZF7WFTFB",
+      "timeIntervalInSeconds": "30",
+      "hashFunction": "hmacsha1"
+      },
+      {
+        "@contentId": "2",
+        "serialNumber": "TOTP654321",
+        "manufacturer": "Contoso",
+        "model": "Hardware Token 1000",
+        "secretKey": "TXYZAE6PJ4UZF3NNKIW3HQNFUF7WFTFB",
+        "timeIntervalInSeconds": "30",
+        "hashFunction": "hmacsha1",
+        "assignTo": {
+          "id": "0cadbf92-####-####-####-############"
+          }
+      }
+   ]
 }
 ```
 
@@ -128,18 +128,15 @@ Content-Type: application/json
       "id": "aad49556-####-####-####-############",
       "device": {
         "id": "aad49556-####-####-####-############",
-        "displayName": "Amy Masters Token 1",
+        "displayName": null,
         "serialNumber": "TOTP123456",
         "manufacturer": "Contoso",
         "model": "Hardware Token 1000",
         "secretKey": null,
         "timeIntervalInSeconds": 30,
-        "status": "activated",
+        "status": "available",
         "hashFunction": "hmacsha1",
-        "assignedTo": {
-            "id": "0cadbf92-####-####-####-############",
-            "displayName": "Amy Masters"
-        }
+        "assignedTo": null
       }
     },
     {
@@ -147,7 +144,7 @@ Content-Type: application/json
       "id": "3dee0e53-####-####-####-############",
       "device": {
         "id": "3dee0e53-####-####-####-############",
-        "displayName": "Amy Masters Token 2",
+        "displayName": null,
         "serialNumber": "TOTP654321",
         "manufacturer": "Contoso",
         "model": "Hardware Token 1000",

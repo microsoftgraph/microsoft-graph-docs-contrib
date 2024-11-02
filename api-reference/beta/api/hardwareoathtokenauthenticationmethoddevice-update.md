@@ -1,0 +1,95 @@
+---
+title: "Update hardwareOathTokenAuthenticationMethodDevice"
+description: "Update the properties of a hardwareOathTokenAuthenticationMethodDevice object."
+author: "luc-msft"
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: apiPageType
+---
+
+# Update hardwareOathTokenAuthenticationMethodDevice
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object. The token needs to unassigned.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "hardwareoathtokenauthenticationmethoddevice-update-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-update-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /directry/authenticationMethodDevices/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
+|serialNumber|String|Serial number of the specific hardware token, often found on the back of the device. Optional.|
+|manufacturer|String|Manufacturer name of the hardware token. Optional.|
+|model|String|Model name of the hardware token. Optional.|
+|secretKey|String|Secret key of the specific hardware token, provided by the vendor. Optional.|
+|timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Optional.|
+|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
+|assignTo|[identity](../resources/intune-identity.md)|User ID if you want to directly assign the token to a user. Optional.|
+|displayName|String|Name that can be provided to the Hardware OATH token. Optional.|
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_hardwareoathtokenauthenticationmethoddevice"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
+Content-Type: application/json
+
+{
+  "hashFunction": "hmacsha256"
+}
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
