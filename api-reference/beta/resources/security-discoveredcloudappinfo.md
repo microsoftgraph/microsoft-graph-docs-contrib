@@ -13,8 +13,6 @@ Namespace: microsoft.graph.security
 
 Contains information about the risk attributes of a discovered cloud app.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
