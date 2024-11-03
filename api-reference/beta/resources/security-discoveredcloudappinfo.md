@@ -121,7 +121,7 @@ The following JSON representation shows the resource type.
 }
 -->
 ``` json
-"value": {
+{
     "@odata.type": "#microsoft.graph.security.discoveredCloudAppInfo",
     "id": "93b60b3e-3a28-bf33-2d73-3cb0199c5f7a",
     "isGdprDataProtectionImpactAssessment": "unknown",
@@ -207,5 +207,5 @@ The following JSON representation shows the resource type.
     "hostingCompany": "Contoso Hosting Services",
     "logonUrls": "https://login.contosoapp.com",
     "vendor": "Contoso Ltd."
-  }
+}
 ```
