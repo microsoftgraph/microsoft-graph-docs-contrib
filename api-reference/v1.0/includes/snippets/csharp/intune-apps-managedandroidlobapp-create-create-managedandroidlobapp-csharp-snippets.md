@@ -32,7 +32,7 @@ var requestBody = new ManagedAndroidLobApp
 	Version = "Version value",
 	CommittedContentVersion = "Committed Content Version value",
 	FileName = "File Name value",
-	Size = 4,
+	Size = 4L,
 	PackageId = "Package Id value",
 	MinimumSupportedOperatingSystem = new AndroidMinimumOperatingSystem
 	{

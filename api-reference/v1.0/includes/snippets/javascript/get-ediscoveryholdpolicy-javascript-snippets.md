@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let pageTemplate = await client.api('/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.pageTemplate/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb')
+let ediscoveryHoldPolicy = await client.api('/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6')
 	.version('beta')
 	.get();
 

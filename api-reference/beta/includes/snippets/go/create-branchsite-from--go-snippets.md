@@ -22,7 +22,7 @@ country := "United States"
 requestBody.SetCountry(&country) 
 region := graphmodels.EAST US_REGION 
 requestBody.SetRegion(&region) 
-bandwidthCapacity := int32(500)
+bandwidthCapacity := int64(500)
 requestBody.SetBandwidthCapacity(&bandwidthCapacity) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
