@@ -84,7 +84,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.security.discoveredCloudAppInfo",
     "id": "93b60b3e-3a28-bf33-2d73-3cb0199c5f7a",
     "isGdprDataProtectionImpactAssessment": "unknown",
@@ -170,7 +169,6 @@ Content-Type: application/json
     "hostingCompany": "Contoso Hosting Services",
     "logonUrls": "https://login.contosoapp.com",
     "vendor": "Contoso Ltd."
-  }
 }
 ```
 
