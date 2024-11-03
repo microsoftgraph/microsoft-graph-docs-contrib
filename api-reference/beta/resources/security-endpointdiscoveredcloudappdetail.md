@@ -62,24 +62,24 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
+
   "@odata.type": "#microsoft.graph.security.endpointDiscoveredCloudAppDetail",
-  "id": "String (identifier)",
-  "displayName": "String",
+  "id": "12345",
+  "displayName": "Example App",
   "tags": [
-    "String"
+    "Sanctioned"
   ],
-  "riskScore": "Integer",
-  "uploadNetworkTrafficInBytes": "Integer",
-  "downloadNetworkTrafficInBytes": "Integer",
-  "transactionCount": "Integer",
-  "ipAddressCount": "Integer",
-  "userCount": "Integer",
-  "lastSeenDateTime": "String (timestamp)",
+  "riskScore": 8,
+  "uploadNetworkTrafficInBytes": 1024,
+  "downloadNetworkTrafficInBytes": 2048,
+  "transactionCount": 20,
+  "ipAddressCount": 5,
+  "userCount": 3,
+  "lastSeenDateTime": "2024-06-13T00:00:00Z",
   "domains": [
-    "String"
+    "example.com"
   ],
-  "category": "String",
-  "deviceCount": "Integer"
+  "category": "health",
+  "deviceCount": 234
 }
 ```
-

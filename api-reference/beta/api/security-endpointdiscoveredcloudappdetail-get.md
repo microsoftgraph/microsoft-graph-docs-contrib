@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of all [the discovered apps](../resources/security-endpointdiscoveredcloudappdetail.md) for a specific stream or endpoint. 
+Get the details of all [the discovered apps](../resources/security-endpointdiscoveredcloudappdetail.md) for a specific stream or endpoint.
 
 ## Permissions
 
@@ -83,26 +83,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.endpointDiscoveredCloudAppDetail",
-    "id": "bd2f8b64-d13c-d383-1c05-649d4a628a65",
-    "displayName": "String",
-    "tags": [
-      "String"
-    ],
-    "riskScore": "Integer",
-    "uploadNetworkTrafficInBytes": "Integer",
-    "downloadNetworkTrafficInBytes": "Integer",
-    "transactionCount": "Integer",
-    "ipAddressCount": "Integer",
-    "userCount": "Integer",
-    "lastSeenDateTime": "String (timestamp)",
-    "domains": [
-      "String"
-    ],
-    "category": "String",
-    "deviceCount": "Integer"
-  }
+
+  "@odata.type": "#microsoft.graph.security.endpointDiscoveredCloudAppDetail",
+  "id": "12345",
+  "displayName": "Example App",
+  "tags": [
+    "Sanctioned"
+  ],
+  "riskScore": 8,
+  "uploadNetworkTrafficInBytes": 1024,
+  "downloadNetworkTrafficInBytes": 2048,
+  "transactionCount": 20,
+  "ipAddressCount": 5,
+  "userCount": 3,
+  "lastSeenDateTime": "2024-06-13T00:00:00Z",
+  "domains": [
+    "example.com"
+  ],
+  "category": "health",
+  "deviceCount": 234
 }
 ```
-
