@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # discoveredCloudAppInfo resource type
 
+Namespace: microsoft.graph.security
+
 Contains information about the risk attributes of a discovered cloud app.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -208,5 +210,4 @@ The following JSON representation shows the resource type.
     "logonUrls": "https://login.contosoapp.com",
     "vendor": "Contoso Ltd."
   }
-
 ```
