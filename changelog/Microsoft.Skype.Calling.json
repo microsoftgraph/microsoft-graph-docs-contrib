@@ -17,6 +17,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
           "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
