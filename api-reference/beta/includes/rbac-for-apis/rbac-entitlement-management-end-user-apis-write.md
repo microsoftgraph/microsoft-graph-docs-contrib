@@ -15,8 +15,8 @@ ms.topic: include
 > - More privileged [roles in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged roles are supported for this operation:
 >     - Access package assignment manager
 >     - Access package manager
-> - More privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), where the following least privileged roles are supported for this operation:
 >     - Catalog owner
+> - More privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), where the following least privileged roles are supported for this operation:
 >     - Identity Governance Administrator
 > 
 > In app-only scenarios, the calling app can be assigned one of the preceding supported roles instead of the `EntitlementManagement.ReadWrite.All` application permission. A user that is assigned access to the access package through the `specificAllowedTargets` property is less privileged than the `EntitlementManagement.ReadWrite.All` application permission.
