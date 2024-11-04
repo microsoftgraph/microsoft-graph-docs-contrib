@@ -18,7 +18,7 @@ ms.topic: include
 > 
 > And one of the following:
 > 
-> - [A role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged roles are *Catalog owner*. **This is the least privileged option**.
+> - A [role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged role is *Catalog owner*. **This is the least privileged option**.
 > - More privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) supported for this operation:
 >     - Identity Governance Administrator
 > 
