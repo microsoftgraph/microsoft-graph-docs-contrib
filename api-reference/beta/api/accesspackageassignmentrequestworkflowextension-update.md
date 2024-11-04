@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequestworkflowextension_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequestworkflowextension-update-permissions.md)]
 
+[!INCLUDE [rbac for logic apps write](../includes/rbac-for-apis/rbac-entitlement-management-logic-apps-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
