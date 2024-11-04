@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
+PATCH https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages/637c601e-0d0e-43c0-b50f-b18513bb9de2/microsoft.graph.newsLinkPage
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -79,7 +79,7 @@ Content-Disposition:form-data; name="metadata"
 Content-Type: application/json
 
 {
-  "title": "Microsoft Blog | Microsoft Build brings AI tools to the forefront for developers",
+  "title": "External News | Scientists Discover Secret to Eternal Youth",
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
@@ -109,20 +109,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('976b3828-eade-49c7-a0a6-5baff3f710d9')/pages/$entity",
   "@odata.type": "#microsoft.graph.newsLinkPage",
-  "@odata.etag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
   "createdDateTime": "2024-06-11T17:31:20Z",
-  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
   "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
   "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
   "lastModifiedDateTime": "2024-06-11T17:31:21Z",
-  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
   "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "title": "External News | Scientists Discover Secret to Eternal Youth",
   "pageLayout": "newsLink",
-  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Blog-Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.jpeg",
-  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth(1)/BannerImage.png",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
   "createdBy": {
     "user": {
       "displayName": "John Doe",
@@ -134,9 +132,6 @@ Content-Type: application/json
       "displayName": "John Doe",
       "email": "jdoe@contoso.com"
     }
-  },
-  "parentReference": {
-    "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
   },
   "publishingState": {
     "level": "checkout",

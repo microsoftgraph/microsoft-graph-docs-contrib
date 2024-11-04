@@ -87,29 +87,29 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#sites('056d8292-ef8a-44fe-bd22-97abf08659b1')/pages/microsoft.graph.newsLinkPage",
   "value": [
     {
-      "@odata.etag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
-      "createdDateTime": "2024-06-05T20:39:36Z",
-      "eTag": "\"{3CBB2560-F640-453F-A37A-FA1377368EFD},4\"",
-      "id": "3cbb2560-f640-453f-a37a-fa1377368efd",
-      "lastModifiedDateTime": "2024-06-05T20:39:42Z",
-      "name": "Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
-      "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows.aspx",
-      "title": "Microsoft and Meta expand their AI partnership with Llama 2 on Azure and Windows",
+      "@odata.type": "#microsoft.graph.newsLinkPage",
+      "createdDateTime": "2024-06-11T17:31:20Z",
+      "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
+      "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+      "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+      "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+      "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+      "title": "Scientists Discover Secret to Eternal Youth",
       "pageLayout": "newsLink",
-      "bannerImageWebUrl": "https://contoso.sharepoint.com/SiteAssets/SitePages/Microsoft-and-Meta-expand-their-AI-partnership-with-Llama-2-on-Azure-and-Windows(5)/BannerImage.webp",
-      "newsWebUrl": "https://blogs.microsoft.com/blog/2023/07/18/microsoft-and-meta-expand-their-ai-partnership-with-llama-2-on-azure-and-windows/",
+      "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth/BannerImage.png",
+      "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
       "createdBy": {
         "user": {
-          "displayName": "SharePoint App"
+          "displayName": "John Doe",
+          "email": "jdoe@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
-          "displayName": "SharePoint App"
+          "displayName": "John Doe",
+          "email": "jdoe@contoso.com"
         }
-      },
-      "parentReference": {
-        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
       },
       "publishingState": {
         "level": "published",
@@ -117,30 +117,29 @@ Content-Type: application/json
       }
     },
     {
-      "@odata.etag": "\"{406766CD-52BD-4221-9310-2954FFCA7A73},2\"",
-      "createdDateTime": "2024-06-05T20:39:55Z",
-      "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
-      "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
-      "id": "57aff05d-6c80-4d36-b051-acc211400306",
-      "lastModifiedDateTime": "2024-06-05T20:39:57Z",
-      "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+      "@odata.type": "#microsoft.graph.newsLinkPage",
+      "createdDateTime": "2024-06-11T17:31:20Z",
+      "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
+      "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+      "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+      "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+      "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
       "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-      "title": "Microsoft Build brings AI tools to the forefront for developers",
+      "title": "Scientists Discover Secret to Eternal Youth",
       "pageLayout": "newsLink",
-      "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
-      "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
+      "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth/BannerImage.png",
+      "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
       "createdBy": {
         "user": {
-          "displayName": "SharePoint App"
+          "displayName": "John Doe",
+          "email": "jdoe@contoso.com"
         }
       },
       "lastModifiedBy": {
         "user": {
-          "displayName": "SharePoint App"
+          "displayName": "John Doe",
+          "email": "jdoe@contoso.com"
         }
-      },
-      "parentReference": {
-        "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
       },
       "publishingState": {
         "level": "checkout",

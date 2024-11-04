@@ -68,7 +68,7 @@ The following example shows a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.newsLinkPage
+GET https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages/637c601e-0d0e-43c0-b50f-b18513bb9de2/microsoft.graph.newsLinkPage
 ```
 
 ### Response
@@ -88,34 +88,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "microsoft.graph.newsLinkPage",
-  "createdDateTime": "2024-06-05T20:39:55Z",
-  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
-  "eTag": "\"{57AFF05D-6C80-4D36-B051-ACC211400306},4\"",
-  "id": "57aff05d-6c80-4d36-b051-acc211400306",
-  "lastModifiedDateTime": "2024-06-05T20:39:57Z",
-  "name": "Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
+  "@odata.type": "#microsoft.graph.newsLinkPage",
+  "createdDateTime": "2024-06-11T17:31:20Z",
+  "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
+  "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
+  "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
+  "lastModifiedDateTime": "2024-06-11T17:31:21Z",
+  "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
   "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "title": "Scientists Discover Secret to Eternal Youth",
   "pageLayout": "newsLink",
-  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers/BannerImage.png",
-  "newsWebUrl": "https://blogs.microsoft.com/blog/2023/05/23/microsoft-build-brings-ai-tools-to-the-forefront-for-developers/",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth/BannerImage.png",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
   "createdBy": {
-      "user": {
-          "displayName": "SharePoint App"
-      }
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
   },
   "lastModifiedBy": {
-      "user": {
-          "displayName": "SharePoint App"
-      }
-  },
-  "parentReference": {
-      "siteId": "056d8292-ef8a-44fe-bd22-97abf08659b1"
+    "user": {
+      "displayName": "John Doe",
+      "email": "jdoe@contoso.com"
+    }
   },
   "publishingState": {
-      "level": "published",
-      "versionId": "1.0"
+    "level": "published",
+    "versionId": "1.0"
   }
 }
 ```
