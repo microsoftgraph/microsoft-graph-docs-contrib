@@ -53,7 +53,6 @@ The following table lists common use cases for the Microsoft 365 monitoring APIs
 |:-----------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | [Exchange Online monitoring](../resources/serviceactivity.md#exchange-online-monitoring)                                           | For details, see [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring). |
 | [Microsoft 365 Teams monitoring](../resources/serviceactivity.md#microsoft-365-teams-monitoring)                                   | For details, see [Microsoft 365 Teams monitoring](/microsoft-365/enterprise/microsoft-365-teams-monitoring).                  |
-| [OneDrive for Business monitoring](../resources/serviceactivity.md#onedrive-for-business-monitoring-preview) |                                                                                                                               |
 | [Microsoft 365 Apps monitoring](../resources/serviceactivity.md#microsoft-365-apps-monitoring)                                     | For details, see [Microsoft 365 Apps monitoring](/microsoft-365/enterprise/microsoft-365-apps-monitoring).                    |
 | [Microsoft Entra](../resources/serviceactivity.md#microsoft-entra)  
 

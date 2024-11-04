@@ -178,10 +178,6 @@ items:
             href: ../../api/serviceactivity-getaudiostreamqoemetricsforteams.md
           - name: Get metrics for the percentage of audio streams established over User Datagram Protocol(UDP)
             href: ../../api/serviceactivity-getaudiostreamsoverudpmetricsforteams.md
-        - name: OneDrive for Business monitoring (preview)
-          items:
-          - name: Get device metrics for download online-only files
-            href: ../../api/serviceactivity-getdevicemetricsforonedriveforbusinessbydownloadonlineonlyfiles.md
         - name: Microsoft 365 Apps monitoring
           items:
           - name: Get active users metrics for Excel for the web
