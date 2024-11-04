@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingattendancereport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md) or a [virtualEvent](../resources/virtualevent.md). Each time an online meeting or a virtual event ends, an attendance report is generated for that session.
 
 > [!WARNING]
 >
 >- This method only returns up to 50 of the most recent reports.
->- When using this method to list attendance reports of a channel meeting, instead of returning all attendance reports of the given meeting (as defined behavior for scheduled meeting), the API will return attendance reports of every meeting in the channel. This behavior is the same regardless of where the channel meeting has been created.
+>- When you use this method to list attendance reports for a channel meeting, the API returns attendance reports for every meeting in the channel, rather than just the attendance reports for the specified meeting, which is the expected behavior for scheduled meetings. This behavior is the same regardless of where the channel meeting was created.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
