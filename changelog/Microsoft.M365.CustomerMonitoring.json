@@ -133,14 +133,6 @@
         {
           "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
           "ApiChange": "Method",
-          "ChangedApiName": "getDeviceMetricsForOneDriveForBusinessBydownloadOnlineOnlyFiles",
-          "ChangeType": "Addition",
-          "Description": "Added the [getDeviceMetricsForOneDriveForBusinessBydownloadOnlineOnlyFiles](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getDeviceMetricsForOneDriveForBusinessBydownloadOnlineOnlyFiles?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
-          "Target": "serviceActivity"
-        },
-        {
-          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
-          "ApiChange": "Method",
           "ChangedApiName": "getMessageVolumeMetricsForEmailDelivery",
           "ChangeType": "Addition",
           "Description": "Added the [getMessageVolumeMetricsForEmailDelivery](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMessageVolumeMetricsForEmailDelivery?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
