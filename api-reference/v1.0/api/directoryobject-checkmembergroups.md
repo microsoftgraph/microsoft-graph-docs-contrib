@@ -75,8 +75,8 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ### Group memberships for a device
 
-<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
-[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_7" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-7-permissions.md)]
 
 ## HTTP request
 
