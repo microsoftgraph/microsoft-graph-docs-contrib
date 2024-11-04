@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "filestoragecontainer-list-recyclebin-items-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-recyclebinitems-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-recyclebinitem-permissions.md)]
 
 ## HTTP request
 
