@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2024: New in preview only
+
+### Device and app management | Device updates
+
+- [Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
+- Use the **isHotpatchEnabled** property on [productRevision](/graph/api/resources/windowsupdates-productrevision??view=graph-rest-beta&preserve-view=true) to identify if the content is hotpatchable.
+
 ## October 2024: New and generally available
 
 ### Backup storage
@@ -92,10 +99,6 @@ Updated the endpoints of the following methods:
 
 - Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
 - Use the **notificationSetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcnotificationsetting?view=graph-rest-beta&preserve-view=true) to define the Cloud PC notification prompts for a Cloud PC user.
-
-### Device and app management | Device updates
-
-[Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
 
 ### Identity and access | Directory management
 

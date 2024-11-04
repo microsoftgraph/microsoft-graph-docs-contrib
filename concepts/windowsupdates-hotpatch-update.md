@@ -334,7 +334,7 @@ Content-type: application/json
   "deploymentSettings": {
     "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
     "userExperience": {
-      "IsHotpatchEnabled": true
+      "isHotpatchEnabled": true
     }
   }
 }
