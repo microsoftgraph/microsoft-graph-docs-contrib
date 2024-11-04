@@ -46,7 +46,7 @@ PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 ## Request body
 
 > **Notes:**
-> Currently, you can update the bannerImage, by uploading the image bytes of the new bannerImage you want to set directly, which gets auto saved in the site assets library, and the bannerImageWebUrl is then generated based on the persisted file. The way to do that would be to make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as illustrated in the example.
+> You can update the **bannerImage** property by uploading the image bytes of the new banner image you want to set. The banner image is autosaved in the site assets library, and the banner image URL is then generated based on the persisted file. Make a multipart request and set the @microsoft.graph.bannerImageWebUrlContent annotation to send the image content, as shown in the example.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
