@@ -13,8 +13,8 @@ var requestBody = new GenerateKeyPostRequestBody
 {
 	Use = "sig",
 	Kty = "RSA",
-	Nbf = 1508969811,
-	Exp = 1508969811,
+	Nbf = 1508969811L,
+	Exp = 1508969811L,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
