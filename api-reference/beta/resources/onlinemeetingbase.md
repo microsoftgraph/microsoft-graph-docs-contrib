@@ -27,10 +27,10 @@ Inherits from [entity](../resources/entity.md).
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. |
+| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. |
 | allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. |
-| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the meeting. |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
@@ -52,6 +52,14 @@ Inherits from [entity](../resources/entity.md).
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type.  |
 
+### allowedLobbyAdmitterRoles values
+
+| Value                                 | Description                                       |
+|---------------------------------------|---------------------------------------------------|
+| organizerAndCoOrganizersAndPresenters | Meeting organizer, co-organizers, and presenters. |
+| organizerAndCoOrganizers              | Meeting organizer and co-organizers.              |
+| unknownFutureValue                    | Evolvable enumeration sentinel value. Don't use.  |
+
 ### meetingChatHistoryDefaultMode values
 
 | Value              | Description                                                            |
@@ -67,14 +75,6 @@ Inherits from [entity](../resources/entity.md).
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only during the meeting call. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
-
-### allowedLobbyAdmitterRoles values
-
-| Value              | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------- |
-| organizerAndCoOrganizersAndPresenters            | Meeting organizer, co-organizers and presenters. |
-| organizerAndCoOrganizers           | Meeting organizer and co-organizers                    |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 
 ### meetingLiveShareOptions values
@@ -119,6 +119,7 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableMic": "Boolean",
   "allowBreakoutRooms": "Boolean",
   "allowedPresenters": "String",
+  "allowedLobbyAdmitters": "String",
   "allowLiveShare": "String",
   "allowMeetingChat": "String",
   "allowParticipantsToChangeName": "Boolean",
