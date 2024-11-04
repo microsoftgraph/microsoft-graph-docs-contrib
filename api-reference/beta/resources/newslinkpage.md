@@ -43,9 +43,9 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |name|String|The name of the newsLinkPage. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |newsSharepointIds|[sharepointIds](../resources/sharepointids.md)|The SharePoint IDs of the referenced news article, if it's recognized as a SharePoint resource. Read-only.|
 |newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link.|
-|pageLayout|[pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`, `videoNewsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `newsLink` , `videoNewsLink`. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|pageLayout|[pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `newsLink`. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |parentReference|[itemReference](../resources/itemreference.md)|Parent information, if the newsLinkPage has a parent. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the MM.mm version of the page. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the version of the page. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |webUrl|String|URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
