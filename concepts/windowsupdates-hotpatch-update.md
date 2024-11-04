@@ -38,7 +38,7 @@ The following example shows how to query for all Windows quality updates shorten
 The following example shows a request.
 
 ```http
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchEnabled eq true)&$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=1&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions/any(p:p/isHotpatchUpdate eq true)&$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc
 ```
 
 ### Response
@@ -95,7 +95,7 @@ Content-Type: application/json
           "id": "10.0.22000.3197",
           "displayName": "Windows 11, version 21H2, build 22000.3197",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "21H2",
           "product": "Windows 11",
           "osBuild": {
@@ -113,7 +113,7 @@ Content-Type: application/json
           "id": "10.0.19044.4894",
           "displayName": "Windows 10, version 21H2, build 19044.4894",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "21H2",
           "product": "Windows 10",
           "osBuild": {
@@ -131,7 +131,7 @@ Content-Type: application/json
           "id": "10.0.19045.4894",
           "displayName": "Windows 10, version 22H2, build 19045.4894",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "22H2",
           "product": "Windows 10",
           "osBuild": {
@@ -149,7 +149,7 @@ Content-Type: application/json
           "id": "10.0.22631.4169",
           "displayName": "Windows 11, version 23H2, build 22631.4169",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "23H2",
           "product": "Windows 11",
           "osBuild": {
@@ -167,7 +167,7 @@ Content-Type: application/json
           "id": "10.0.22621.4169",
           "displayName": "Windows 11, version 22H2, build 22621.4169",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "22H2",
           "product": "Windows 11",
           "osBuild": {
@@ -185,7 +185,7 @@ Content-Type: application/json
           "id": "10.0.26100.1656",
           "displayName": "Windows 11, version Win 11 24H2, build 26100.1656",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": true,
+          "isHotpatchUpdate": true,
           "version": "Win 11 24H2",
           "product": "Windows 11",
           "osBuild": {
@@ -203,7 +203,7 @@ Content-Type: application/json
           "id": "10.0.26100.1742",
           "displayName": "Windows 11, version Win 11 24H2, build 26100.1742",
           "releaseDateTime": "2024-09-10T00:00:00Z",
-          "isHotpatchEnabled": false,
+          "isHotpatchUpdate": false,
           "version": "Win 11 24H2",
           "product": "Windows 11",
           "osBuild": {
@@ -301,6 +301,8 @@ HTTP/1.1 202 Accepted
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For hotpatch quality updates, the process prioritizes the deployment of the latest security update to the audience. If the latest hotpatch security update is unavailable or the devices are ineligible, the deployment automatically offers the most recent cumulative update instead, ensuring devices receive up-to-date security or quality improvements. The client-side policy for deferral on the device is honored.
 
 The deployment audience ID created in step two is required in this step.
+
+The `"isHotpatchEnabled": "true"` property opts the audience into recieving hotpatch updates when applicable.
   
 ### Request
 
