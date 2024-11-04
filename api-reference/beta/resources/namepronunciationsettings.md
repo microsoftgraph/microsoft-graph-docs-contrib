@@ -18,8 +18,6 @@ Represents a setting to control people-related admin settings in the tenant.
 
 Inherits from [entity](../resources/entity.md).
 
-[!INCLUDE [namepronunciation-add-boundary-warning-note](../../../includes/namepronunciation-boundary-warning-note.md)]
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

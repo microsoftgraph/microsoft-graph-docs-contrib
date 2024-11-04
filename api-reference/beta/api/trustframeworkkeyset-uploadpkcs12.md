@@ -2,7 +2,7 @@
 title: "trustFrameworkKeySet: uploadPkcs12"
 description: "Upload a PKCS 12 format key (PFX) to a keyset."
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
+author: "gysingh"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "trustframeworkkeyset_uploadpkcs12" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkkeyset-uploadpkcs12-permissions.md)]
+
+[!INCLUDE [rbac-b2c-trustframework-keyset-apis](../includes/rbac-for-apis/rbac-b2c-trustframework-keyset-apis.md)]
 
 ## HTTP request
 
@@ -125,11 +127,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"kid": "kid-value",
-	"use": "sig",
-	"kty": "OCT",
-	"nbf": 1508969811,
-	"exp": 1508973711
+    "kid": "kid-value",
+    "use": "sig",
+    "kty": "OCT",
+    "nbf": 1508969811,
+    "exp": 1508973711
 }
 ```
 

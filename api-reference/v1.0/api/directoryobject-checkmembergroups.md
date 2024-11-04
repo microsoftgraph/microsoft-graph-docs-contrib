@@ -28,7 +28,16 @@ You can check up to a maximum of 20 groups per request. This function supports a
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
 
-### Group memberships for a user
+### Group memberships for the signed-in user
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+### Group memberships for other users
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
@@ -66,24 +75,8 @@ You can check up to a maximum of 20 groups per request. This function supports a
 
 ### Group memberships for a device
 
-<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_6" } -->
-[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-6-permissions.md)]
-
-<!--
-
-Use the follow scenario guidance to help determine which permission types to use:
-
-| Scenario | Permissions to use |
-|:-|:-|
-| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
-| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
-| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
-| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
-
-<!-- These tables will replace the data in lines 22-36 to help with the tooling that parses permissions tables.
-+ Current data is copy-pasted from incorrect files/file names
-+ To validate these permissions against lines 32-36
--->
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_7" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-7-permissions.md)]
 
 ## HTTP request
 
@@ -93,10 +86,15 @@ Group memberships for a directory object (user, group, service principal, or org
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 
-Group memberships for the signed-in user or other users.
+Group memberships for the signed-in user.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
+```
+
+Group memberships for other users.
+<!-- { "blockType": "ignored" } -->
+```http
 POST /users/{id | userPrincipalName}/checkMemberGroups
 ```
 
