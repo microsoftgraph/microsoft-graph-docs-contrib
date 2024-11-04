@@ -1,16 +1,50 @@
 {
   "changelog": [
     {
-        "ChangeList": [
-            {
-              "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
-              "ApiChange": "Resource",
-              "ChangedApiName": "user",
-              "ChangeType": "Change",
-              "Description": "Changed the following on-prem synced properties of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: **onPremisesDistinguishedName**, **onPremisesDomainName**, **onPremisesSamAccountName**, **onPremisesSecurityIdentifier**, **onPremisesUserPrincipalName**.",
-              "Target": "user"
-            }
-          ],
+      "ChangeList": [
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementRestrictionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementRestrictionState** enumeration type.",
+          "Target": "appManagementRestrictionState"
+        },
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-11-01T22:52:30.5735697Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
+            "ApiChange": "Resource",
+            "ChangedApiName": "user",
+            "ChangeType": "Change",
+            "Description": "Changed the following on-prem synced properties of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: **onPremisesDistinguishedName**, **onPremisesDomainName**, **onPremisesSamAccountName**, **onPremisesSecurityIdentifier**, **onPremisesUserPrincipalName**.",
+            "Target": "user"
+          }
+        ],
         "Id": "c6f4eb0f-746a-4a71-827e-da8585b89c64",
         "Cloud": "Prod",
         "Version": "beta",
