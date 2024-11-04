@@ -138,7 +138,7 @@ items:
           href: ../../api/dailyuserinsightmetricsroot-list-signups.md
         - name: List monthly
           href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
-    - name: Microsoft 365 monitoring (preview)
+    - name: Microsoft 365 monitoring
       items:
       - name: Overview
         href: ../../resources/m365-monitoring-api-overview.md
