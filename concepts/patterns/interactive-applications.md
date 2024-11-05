@@ -2,7 +2,7 @@
 title: "Build interactive apps by using Microsoft Graph APIs"
 description: "Learn about the integration pattern that uses Microsoft Graph APIs to build interactive apps."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ---
 
 # Build interactive apps by using Microsoft Graph APIs
