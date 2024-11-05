@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_list_incompatibleaccesspackages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
