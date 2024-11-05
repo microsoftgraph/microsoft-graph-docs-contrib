@@ -873,7 +873,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-10-28T17:35:53.3172676Z",
-      "WorkloadArea": "Compliance",
+      "WorkloadArea": "eDiscovery",
       "SubArea": "eDiscovery"
     }
   ]
