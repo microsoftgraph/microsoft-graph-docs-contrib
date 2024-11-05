@@ -844,7 +844,7 @@
           "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-list-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
           "Target": "ediscoveryCase"
         },
-         {
+        {
           "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
           "ApiChange": "Method",
           "ChangedApiName": "Create",
@@ -852,7 +852,7 @@
           "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
           "Target": "ediscoveryCase"
         },
-          {
+        {
           "Id": "d5e788a3-d3ef-44b2-8eef-2007b062efe1",
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
@@ -865,7 +865,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryHoldPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource and its methods.", 
+          "Description": "Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource and its methods.",
           "Target": "ediscoveryHoldPolicy"
         }
       ],
@@ -874,6 +874,160 @@
       "Version": "v1.0",
       "CreatedDateTime": "2024-10-28T17:35:53.3172676Z",
       "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-case](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-case?view=graph-rest-1.0) resource.",
+          "Target": "case"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-case](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-case?view=graph-rest-1.0) resource.",
+          "Target": "case"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-custodian](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-custodian?view=graph-rest-1.0) resource.",
+          "Target": "custodian"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-custodian](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-custodian?view=graph-rest-1.0) resource.",
+          "Target": "custodian"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-case](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-case?view=graph-rest-1.0) resource.",
+          "Target": "case"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-case](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-case?view=graph-rest-1.0) resource.",
+          "Target": "case"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read and write operations of the [ediscovery-custodian](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-custodian?view=graph-rest-1.0) resource.",
+          "Target": "custodian"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-custodian](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-custodian?view=graph-rest-1.0) resource.",
+          "Target": "custodian"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read operations of the [ediscovery-caseOperation](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-caseOperation?view=graph-rest-1.0) resource.",
+          "Target": "caseOperation"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read operations of the [ediscovery-caseOperation](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-caseOperation?view=graph-rest-1.0) resource.",
+          "Target": "caseOperation"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read operations of the [ediscovery-caseSettings](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-caseSettings?view=graph-rest-1.0) resource.",
+          "Target": "caseSettings"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read and write operations of the [ediscovery-caseSettings](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-caseSettings?view=graph-rest-1.0) resource.",
+          "Target": "caseSettings"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.Read.All` application permission to the read operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        },
+        {
+          "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "eDiscovery.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `eDiscovery.ReadWrite.All` application permission to the read operations of the [ediscovery-tag](https://learn.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource.",
+          "Target": "tag"
+        }
+      ],
+      "Id": "48f3f836-59ce-4323-b1bb-59a62948fb4c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-31T00:07:23.2889756Z",
+      "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     }
   ]
