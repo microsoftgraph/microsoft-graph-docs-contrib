@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "win32LobAutoUpdateSupersededAppsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **win32LobAutoUpdateSupersededAppsState** enumeration type.",
+          "Target": "win32LobAutoUpdateSupersededAppsState"
+        },
+        {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoUpdateSettings** property to the [win32LobAppAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-win32LobAppAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "win32LobAppAssignmentSettings"
+        },
+        {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "win32LobAppAutoUpdateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [win32LobAppAutoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-win32LobAppAutoUpdateSettings?view=graph-rest-1.0) resource.",
+          "Target": "win32LobAppAutoUpdateSettings"
+        },
+        {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagement](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "db58422c-0f05-466d-b203-49f9af267997",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveDeviceAppInstallationStatusReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveDeviceAppInstallationStatusReport](https://learn.microsoft.com/en-us/graph/api/intune-deviceManagementReports-retrieveDeviceAppInstallationStatusReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "db58422c-0f05-466d-b203-49f9af267997",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-22T05:42:13.3953743Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "161e494c-4c40-4ca7-bc27-60fb92d3c5e7",
           "ApiChange": "Property",
           "ChangedApiName": "v15_0",
