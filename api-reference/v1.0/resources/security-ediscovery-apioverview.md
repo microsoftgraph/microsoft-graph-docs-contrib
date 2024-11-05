@@ -18,8 +18,11 @@ The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate
 > Usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
 >
 > Currently, the eDiscovery APIs in Microsoft Graph only work with Advanced eDiscovery cases.
+
+<!-- 
 >
-> To set up application auth, refer to [Setting up App Authentication for Purview eDiscovery with Microsoft Graph API](../../../concepts/security-ediscovery-appauthsetup.md)
+> To set up application auth, see [Setting up App Authentication for Purview eDiscovery with Microsoft Graph API](../../concepts/security-ediscovery-appauthsetup.md)
+-->
 
 The eDiscovery APIs are defined in the OData subnamespace, microsoft.graph.security. The API includes the following key entities.
 
