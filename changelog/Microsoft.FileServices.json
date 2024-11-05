@@ -3981,7 +3981,7 @@
 	      {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
-          "ChangedApiName": "recyblebin",
+          "ChangedApiName": "recyclebin",
           "ChangeType": "Addition",
           "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyblebin"
@@ -3989,7 +3989,7 @@
 	        {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
-          "ChangedApiName": "recyblebin",
+          "ChangedApiName": "recyclebin",
           "ChangeType": "Addition",
           "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyblebin"
@@ -3997,15 +3997,15 @@
 	        {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
-          "ChangedApiName": "recyblebinitem",
+          "ChangedApiName": "recyclebinitem",
           "ChangeType": "Addition",
           "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinitem?view=graph-rest-1.0) resource.",
-          "Target": "recyblebinitem"
+          "Target": "recyclebinitem"
           },
 	        {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
-          "ChangedApiName": "recyblebinsettings",
+          "ChangedApiName": "recyclebinsettings",
           "ChangeType": "Addition",
           "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinsettings?view=graph-rest-1.0) resource.",
           "Target": "recyclebinsettings"
