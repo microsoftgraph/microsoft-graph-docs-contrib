@@ -27,7 +27,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|announcementDateTime|DateTimeOffset|Change announcement date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
+|announcementDateTime|DateTimeOffset|Change announcement date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()`, and `second()` built in functions) and `$orderby`.|
 |changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |changeItemState|changeItemState|Indicates whether this change is released or if it's an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `available`, `comingSoon`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
@@ -38,7 +38,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
 |tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
-|targetDateTime|DateTimeOffset|Date on which the change will roll out. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
+|targetDateTime|DateTimeOffset|Date on which the change rolls out. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()`, and `second()` built in functions) and `$orderby`.|
 |title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 
 ## Relationships
