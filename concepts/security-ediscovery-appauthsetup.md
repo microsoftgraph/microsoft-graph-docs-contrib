@@ -39,6 +39,8 @@ Listed below are step by step instructions to implement App Auth. The basic step
 
 1.5 You can now see the newly created app registration and the details.
 
+![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
+
 ### Step 2: Create Client Secrets or Certificates
 
 Once your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
@@ -47,39 +49,56 @@ For a client secret, click New client secret, add a description, and click Add t
 
 If using a certificate, you can upload one to use along with the App ID for automation purposes.
 
+![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
+
 ### Step 3: Assign API Permissions
 
 Next, you need to set the correct API permissions for your application. Under API permissions, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It's essential that the tenant admin consents to these Application permissions to enable them for use.
 
-### Step 4: Configure Postman for Testing
+![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
-For API testing, follow the guidance on using Microsoft Graph with Postman. This helps you ensure that your setup is correctly configured before deploying it into production.
+### Step 4: Set Up a Service Principal
 
-### Step 5: Set Up a Service Principal
+4.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
 
-5.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
+![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
-5.2 Now open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
+4.2 Now open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
 Install and import the ExchangeOnlineManagement module if not already installed.
+
     Install-Module ExchangeOnlineManagement (if not already installed)
+
     Import-Module ExchangeOnlineManagement
+
     Connect-IPPSSession
 
 Use New-ServicePrincipal to create a service principal with your app's details and add it to the eDiscoveryManager role using Add-RoleGroupMember.
+
     New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
+
     Get-ServicePrincipal
+
     Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
 
 Verify the setup using Get-RoleGroupMember.
+
     Get-RoleGroupMember -Identity "eDiscoveryManager"
+
     Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+
     Get-eDiscoveryCaseAdmin
 
-**NOTE:**
+![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
-> Follow [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) to connect to Graph using app auth.
->
-> Follow [Invoke-MgGraphRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest) to invoke Graph APIs.
->
-> Reference document [App-only authentication in Exchange Online PowerShell and Security & Compliance PowerShell](https://learn.microsoft.com/powershell/exchange/app-only-auth-powershell-v2)
+### Step 5: Connect to Graph API Using App Authentication
+
+Finally, use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Graph API using the app authentication method. This setup enables your app to interact with Microsoft Graph securely.
+
+### Step 6: Invoke Graph API Requests
+
+Once connected, you can start making calls to the Graph API using [Invoke-MgGraphRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
+
+## References
+
+For API testing on postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
