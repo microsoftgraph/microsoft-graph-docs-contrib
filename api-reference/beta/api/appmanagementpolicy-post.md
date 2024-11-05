@@ -43,6 +43,7 @@ POST /policies/appManagementPolicies
 
 > [!IMPORTANT]
 > Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
+
 ## Request body
 
 In the request body, supply a JSON representation of the [appManagementPolicy](../resources/appmanagementpolicy.md) object.
@@ -176,6 +177,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies/$entity",
