@@ -68,7 +68,7 @@ The following example shows a request. This request created an app management po
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after October 19th 2019 at 10:37 AM UTC time.
 - Limits password secrets for apps and service principals created after October 19th 2014 at 10:37 AM UTC time to less than 90 days.
-- Disables the nonDefaultUriAddition restriction. This means that apps with this policy applied to them will be able to add new nondefault identifier URIs to their apps, even if the tenant default policy would typically block it.
+- Disables the nonDefaultUriAddition restriction. This means that apps with this policy applied to them can add new nondefault identifier URIs to their apps, even if the tenant default policy would typically block it.
 - Doesn't specify any other restrictions. This means that the behavior for those restrictions on apps/service principals with this policy applied falls back to however the tenant default policy is configured.
 
 

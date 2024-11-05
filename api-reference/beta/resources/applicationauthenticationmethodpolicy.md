@@ -75,7 +75,7 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                |
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
-| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined will inherit from default policy. |
+| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined inherits from the default policy. |
 
 ## Requirements
 

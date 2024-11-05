@@ -33,10 +33,10 @@ These properties enable an organization to separately control the configuration 
 
 App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal to override the tenant default policy.
 
-When the tenant default policy and an app management policy both define the same restriction, the app management policy takes precedence.  If a restriction is set on an app management policy in a `disabled` state, that restriction won't apply to apps with that policy linked to them, regardless of what the tenant default policy would normally enforce.  Similarly, if a restriction is set on an app management policy in an `enabled` state, that restriction will apply to apps with that policy linked to them.  However, if the app management policy doesn't define any behavior for a certain restriction, it will fall back to the tenant default policy's behavior. Only one app management policy can be assigned to an application or service principal.
+When the tenant default policy and an app management policy define the same restriction, the app management policy takes precedence.  If a restriction is set on an app management policy in a `disabled` state, that restriction won't apply to apps with that policy linked to them, regardless of what the tenant default policy would normally enforce.  Similarly, if a restriction is set on an app management policy in an `enabled` state, that restriction applies to apps with that policy linked to them.  However, if the app management policy doesn't define any behavior for a certain restriction, it falls back to the tenant default policy's behavior. Only one app management policy can be assigned to an application or service principal.
 
 > [!Note]
-> Neither the tenant default policies nor the app management policies block token issuance for existing applications. An application that does not meet the policy requirements will continue to work; only the app creation/update operation that violates the policy will be blocked.
+> Neither the tenant default nor the app management policies block token issuance for existing applications. An application that does not meet the policy requirements continues to work; only the app creation/update operation that violates the policy is blocked.
 
 ## What restrictions can be managed in Microsoft Graph?
 
@@ -71,7 +71,7 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                |
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
-| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined will inherit from default policy. |
+| Applies all restrictions configured to all apps or service principals.             | Applies the restrictions configured in the resource policy to the specified app or service principal.  Anything not defined inherits from default policy. |
 
 ## Requirements
 
