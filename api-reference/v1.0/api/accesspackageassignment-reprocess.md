@@ -21,6 +21,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackageassignment_reprocess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignment-reprocess-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
+
   
 ## HTTP request
 

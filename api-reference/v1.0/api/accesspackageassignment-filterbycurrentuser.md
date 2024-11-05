@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignment_filterbycurrentuser" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignment-filterbycurrentuser-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-end-user-apis-read](../includes/rbac-for-apis/rbac-entitlement-end-user-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
