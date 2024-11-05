@@ -180,7 +180,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
       "displayName": "Contoso",
-      "tenantId": "8ae927fe-1255-47a7-a2af-5f3a069daaa2"
+      "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
       }
   ],
   "state":"proposed"
