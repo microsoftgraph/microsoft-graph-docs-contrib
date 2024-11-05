@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 In the world of data compliance and legal investigations, Purview eDiscovery plays a crucial role in managing and retrieving information across your organization�s digital landscape. In this age where data breaches are becoming more frequent and the regulatory requirements are more stringent, the security and integrity of eDiscovery processes have never been more critical.  Traditional authentication methods often fall short when it comes to providing the necessary security and compliance guarantees, especially in complex enterprise environments. This is where App Authentication steps in as a game-changer for Purview eDiscovery, leveraging Microsoft Graph API. 
 
-Implementing App Authentication using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide will walk you through setting up App Authentication for Purview eDiscovery, ensuring your applications are not only compliant but also secure.
+Implementing App Authentication using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up App Authentication for Purview eDiscovery, ensuring your applications are compliant and secure.
 
 ## Why App Authentication?
 
@@ -43,7 +43,7 @@ Listed below are step by step instructions to implement App Auth. The basic step
 
 Once your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-For a client secret, click New client secret, add a description, and click Add to save. Make sure to copy and securely store the secret value, as it is needed for authentication.
+For a client secret, click New client secret, add a description, and click Add to save. Make sure to copy and securely store the secret value, as required for authentication.
 
 If using a certificate, you can upload one to use along with the App ID for automation purposes.
 
@@ -53,13 +53,13 @@ Next, you need to set the correct API permissions for your application. Under AP
 
 ### Step 4: Configure Postman for Testing
 
-For API testing, follow the guidance on using Microsoft Graph with Postman. This will help you ensure that your setup is correctly configured before deploying it into production.
+For API testing, follow the guidance on using Microsoft Graph with Postman. This helps you ensure that your setup is correctly configured before deploying it into production.
 
 ### Step 5: Set Up a Service Principal
 
 5.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
 
-5.2 Now open a new PowerShell session to create a service principal that you will add to the eDiscoveryManager role group:
+5.2 Now open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
 Install and import the ExchangeOnlineManagement module if not already installed.
     Install-Module ExchangeOnlineManagement (if not already installed)
