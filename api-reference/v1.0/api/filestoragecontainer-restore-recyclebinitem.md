@@ -1,13 +1,13 @@
 ---
-title: "Restore recycleBin items"
-description: "Restore recycleBin items to a fileStorageContainer."
+title: "Restore recycleBin item"
+description: "Restore recycleBin item to a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Restore recycle bin items
+# Restore recycle bin item
 
 Namespace: microsoft.graph
 
@@ -19,10 +19,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-restore-recyclebin-items-permissions"
+  "name": "filestoragecontainer-restore-recyclebin-item-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-restore-recyclebin-items-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-restore-recyclebinitem-permissions.md)]
 
 ## HTTP request
 
