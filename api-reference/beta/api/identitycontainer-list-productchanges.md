@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-productchanges-permissions.md)]
 
+Any user can call these APIs, there are no admin role requirements.
+
 ## HTTP request
 
 <!-- {
@@ -38,7 +40,7 @@ GET /identity/productChanges
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$filter` (`eq`, `ne`, `in`, `startswith`), `$orderby`, `$search`, `$top` (default page size is 10 items, maximum is 250 items), `$select` and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -85,22 +87,24 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.changeItemBase",
-      "id": "ada02185-1f43-3fc0-f795-c747017c0f44",
-      "changeItemState": "String",
-      "changeItemService": "String",
+      "@odata.type": "#microsoft.graph.roadmap",
+      "id": "0146c01e-02c1-47a7-ad5b-8458a9351f95",
+      "changeItemState": "available",
+      "changeItemService": "reporting",
       "tags": [
-        "String"
+        ""
       ],
-      "systemTags": [
-        "String"
-      ],
+      "systemTags": [],
       "documentationUrls": [
-        "String"
+        "https://entra.microsoft.com/#view/Microsoft_AAD_DXP/ScenarioHealthSummary.ReactView"
       ],
-      "shortDescription": "String",
-      "title": "String",
-      "description": "String"
+      "shortDescription": "",
+      "title": "SLA Attainment Report at Tenant Level",
+      "description": "*Omitted for brevity*",
+      "deliveryStage": "ga",
+      "category": "monitoringReporting",
+      "publishedDateTime": "2024-06-24T07:00:00Z",
+      "gotoLink": null
     }
   ]
 }

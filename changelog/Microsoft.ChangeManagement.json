@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "announcement",
           "ChangeType": "Addition",
-          "Description": "Added the [announcement](https://learn.microsoft.com/en-us/graph/api/resources/announcement?view=graph-rest-beta) resource.",
+          "Description": "Added the [announcement](https://learn.microsoft.com/en-us/graph/api/resources/announcement?view=graph-rest-beta) resource. Use this resource to track Microsoft Entra change announcements including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies.",
           "Target": "announcement"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeItemBase",
           "ChangeType": "Addition",
-          "Description": "Added the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource.",
+          "Description": "Added the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource. Use this resource to track planned changes or new features in Microsoft Entra.",
           "Target": "changeItemBase"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roadmap",
           "ChangeType": "Addition",
-          "Description": "Added the [roadmap](https://learn.microsoft.com/en-us/graph/api/resources/roadmap?view=graph-rest-beta) resource.",
+          "Description": "Added the [roadmap](https://learn.microsoft.com/en-us/graph/api/resources/roadmap?view=graph-rest-beta) resource. Use this resource to view the Microsoft Entra product roadmap which comprises public previews and recent general availability releases.",
           "Target": "roadmap"
         }
       ],
@@ -71,8 +71,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-10-10T14:08:50.8783007Z",
-      "WorkloadArea": "Microsoft.ChangeManagement",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

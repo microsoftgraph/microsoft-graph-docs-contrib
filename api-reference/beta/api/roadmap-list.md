@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/roadmap-list-permissions.md)]
 
+Any user can call these APIs, there are no admin role requirements.
+
 ## HTTP request
 
 <!-- {
@@ -38,7 +40,7 @@ GET /identity/productChanges/microsoft.changeManagement.roadmap
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$filter` (`eq`, `ne`, `in`, `startswith`), `$orderby`, `$search`, `$top` (default page size is 100 items, maximum is 250 items), `$select` and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -102,8 +104,8 @@ Content-Type: application/json
       "deliveryStage": "publicPreview",
       "category": "userAuthentication",
       "publishedDateTime": "2024-04-27T07:00:00Z",
-      "gotoLink": "null"
-  }
+      "gotoLink": null
+    }
   ]
 }
 ```

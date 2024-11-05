@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/announcement-list-permissions.md)]
 
+Any user can call these APIs, there are no admin role requirements.
+
 ## HTTP request
 
 <!-- {
@@ -33,12 +35,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/productChanges/microsoft.changeManagement.announcement
+GET /identity/productChanges/microsoft.graph.announcement
 ```
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$search`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$filter` (`eq`, `ne`, `in`, `startswith`), `$orderby`, `$search`, `$top` (default page size is 100 items, maximum is 250 items), `$select` and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -65,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.announcement
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.announcement
 ```
 
 ### Response

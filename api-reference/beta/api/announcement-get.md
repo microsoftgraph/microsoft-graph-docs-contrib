@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/announcement-get-permissions.md)]
 
+Any user can call these APIs, there are no admin role requirements.
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/productChanges/microsoft.changeManagement.announcement/{id}
+GET /identity/productChanges/microsoft.graph.announcement/{id}
 ```
 
 ## Optional query parameters
@@ -65,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.announcement/ddde9e3b-7ee4-4066-a62e-fb1fc5fb87a1
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.announcement/ddde9e3b-7ee4-4066-a62e-fb1fc5fb87a1
 ```
 
 ### Response

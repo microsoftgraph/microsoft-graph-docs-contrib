@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/roadmap-get-permissions.md)]
 
+Any user can call these APIs, there are no admin role requirements.
+
 ## HTTP request
 
 <!-- {
@@ -33,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/productChanges/microsoft.changeManagement.roadmap/{id}
+GET /identity/productChanges/microsoft.graph.roadmap/{id}
 ```
 
 ## Optional query parameters
@@ -65,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.changeManagement.roadmap/8370d119-d695-4dd9-bce2-00e893fadf7d
+GET https://graph.microsoft.com/beta/identity/productChanges/microsoft.graph.roadmap/8370d119-d695-4dd9-bce2-00e893fadf7d
 ```
 
 ### Response

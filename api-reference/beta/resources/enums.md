@@ -4935,7 +4935,6 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
-<<<<<<< HEAD
 ### cloudPCPerformanceReportName values
 
 | Member                 |
@@ -4958,7 +4957,6 @@ Possible values for user account types (group membership), per Windows definitio
 |false|
 |true|
 |unknownFutureValue|
-=======
 ### changeItemService values
 
 |Member|
@@ -5065,4 +5063,3 @@ Possible values for user account types (group membership), per Windows definitio
 |publicPreview|
 |ga|
 |unknownFutureValue|
->>>>>>> 43d723d64c9 (Add initial stub files for Entra What's New)

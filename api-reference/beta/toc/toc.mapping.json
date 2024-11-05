@@ -1668,7 +1668,7 @@
               ]
             },
             {
-              "name": "Product Changes",
+              "name": "Microsoft Entra lifecycle announcements",
               "resources": [
                 "changeItemBase",
                 "announcement",

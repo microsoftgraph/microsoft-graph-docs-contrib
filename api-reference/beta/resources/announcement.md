@@ -1,13 +1,14 @@
 ---
-title: "Announcement resource type"
+title: "announcement resource type"
 description: "Represents the Microsoft Entra change announcements, including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies."
 author: "garretraziel"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Change announcements
 ---
 
-# Announcement resource type
+# announcement resource type
 
 Namespace: microsoft.graph
 
@@ -26,19 +27,19 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|announcementDateTime|DateTimeOffset|Change announcement date.|
-|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`.|
-|changeItemState|changeItemState|Indicates whether this change is released or if it's an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `available`, `comingSoon`, `unknownFutureValue`.|
-|description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|documentationUrls|String collection|Link to the change documentation. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|id|String|Unique identifier for the change announcement. Inherited from [entity](../resources/entity.md).|
-|impactLink|String|Change impact URL.|
-|isCustomerActionRequired|Boolean|Indicates whether the customer needs to take any action for this change.|
-|shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md).|
-|targetDateTime|DateTimeOffset|Date on which the change will roll out.|
-|title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md).|
+|announcementDateTime|DateTimeOffset|Change announcement date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
+|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
+|changeItemState|changeItemState|Indicates whether this change is released or if it's an upcoming release. Inherited from [changeItemBase](../resources/changeitembase.md). The possible values are: `available`, `comingSoon`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
+|description|String|Description of the change announcement. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
+|documentationUrls|String collection|Link to the change documentation. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
+|id|String|Unique identifier for the change announcement. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
+|impactLink|String|Change impact URL. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
+|isCustomerActionRequired|Boolean|Indicates whether the customer needs to take any action for this change. Supports `$filter` (`eq`, `ne`).|
+|shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
+|systemTags|String collection|Microsoft Entra specific tags. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
+|targetDateTime|DateTimeOffset|Date on which the change will roll out. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
+|title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 
 ## Relationships
 None.
