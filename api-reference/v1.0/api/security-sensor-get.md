@@ -1,18 +1,16 @@
 ---
 title: "Get sensor"
 description: "Read the properties and relationships of a sensor object."
-author: "amirfeldman"
+author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 10/29/2024
 ---
 
 # Get sensor
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.
 
@@ -58,7 +56,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["d31dd827-92cd-4cd6-b269-c151a0eec55d"],
@@ -66,42 +63,9 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
+GET https://graph.microsoft.com/v1.0/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-sensor-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-sensor-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-sensor-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-sensor-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-sensor-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-sensor-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-sensor-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-sensor-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

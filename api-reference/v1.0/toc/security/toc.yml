@@ -166,6 +166,8 @@ items:
         href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
 - name: eDiscovery
   items:
+  - name: Overview
+    href: ../../resources/security-ediscovery-apioverview.md
   - name: eDiscovery case
     items:
     - name: eDiscovery case
@@ -388,10 +390,36 @@ items:
       href: ../../api/security-healthissue-get.md
     - name: Update
       href: ../../api/security-healthissue-update.md
+  - name: Sensor
+    items:
+    - name: Sensor
+      href: ../../resources/security-sensor.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensors.md
+    - name: Get
+      href: ../../api/security-sensor-get.md
+    - name: Update
+      href: ../../api/security-sensor-update.md
+    - name: Delete
+      href: ../../api/security-sensor-delete.md
+    - name: Get deployment access key
+      href: ../../api/security-sensor-getdeploymentaccesskey.md
+    - name: Get deployment package URI
+      href: ../../api/security-sensor-getdeploymentpackageuri.md
+    - name: Regenerate deployment access key
+      href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
   - name: Complex types
     items:
+    - name: Deployment access key type
+      href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Network adapter
+      href: ../../resources/security-networkadapter.md
+    - name: Sensor deployment package
+      href: ../../resources/security-sensordeploymentpackage.md
+    - name: Sensor settings
+      href: ../../resources/security-sensorsettings.md
 - name: Information protection
   items:
   - name: Threat assessment
