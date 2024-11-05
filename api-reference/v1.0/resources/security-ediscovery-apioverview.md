@@ -15,7 +15,7 @@ The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate
 > The Microsoft Purview Graph APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
 
 > [!NOTE]
-> During the preview, usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
+> Usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
 >
 > Currently, the eDiscovery APIs in Microsoft Graph only work with Advanced eDiscovery cases.
 >
