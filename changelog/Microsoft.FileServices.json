@@ -3983,7 +3983,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyblebin",
           "ChangeType": "Addition",
-          "Description": "Added the [recyblebin](https://learn.microsoft.com/en-us/graph/api/resources/recyblebin?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyblebin"
           },
 	        {
@@ -3991,7 +3991,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyblebin",
           "ChangeType": "Addition",
-          "Description": "Added the [recyblebin](https://learn.microsoft.com/en-us/graph/api/resources/recyblebin?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyblebin"
           },
 	        {
@@ -3999,7 +3999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyblebinitem",
           "ChangeType": "Addition",
-          "Description": "Added the [recyblebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyblebinitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinitem?view=graph-rest-1.0) resource.",
           "Target": "recyblebinitem"
           },
 	        {
@@ -4007,8 +4007,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyblebinsettings",
           "ChangeType": "Addition",
-          "Description": "Added the [recyblebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyblebinsettings?view=graph-rest-1.0) resource.",
-          "Target": "recyblebinsettings"
+          "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinsettings?view=graph-rest-1.0) resource.",
+          "Target": "recyclebinsettings"
           }
 	      ],
         "Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
