@@ -1,5 +1,5 @@
 ---
-title: "Delete recycleBinItems"
+title: "Delete recycleBinItem"
 description: "Delete items from the fileStorageContainer recycleBin."
 author: "harmoneddie"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete recycleBinItems
+# Delete recycleBinItem
 
 Namespace: microsoft.graph
 
