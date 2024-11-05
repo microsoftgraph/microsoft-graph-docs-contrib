@@ -3911,7 +3911,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [list column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-column?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [list column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-columns?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {  
