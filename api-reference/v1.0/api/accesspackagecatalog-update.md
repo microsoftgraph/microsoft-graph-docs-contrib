@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-update-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-creator-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-creator-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
