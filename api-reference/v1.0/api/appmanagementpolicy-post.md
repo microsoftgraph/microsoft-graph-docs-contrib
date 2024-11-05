@@ -175,6 +175,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/appManagementPolicies/$entity",
     "id": "a4ab1ed9-46bb-4bef-88d4-86fd6398dd5d",
