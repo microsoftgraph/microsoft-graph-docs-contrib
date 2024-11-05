@@ -67,27 +67,33 @@ Next, you need to set the correct API permissions for your application. Under AP
 
 Install and import the ExchangeOnlineManagement module if not already installed.
 
-    Install-Module ExchangeOnlineManagement (if not already installed)
+```
+Install-Module ExchangeOnlineManagement (if not already installed)
 
-    Import-Module ExchangeOnlineManagement
+Import-Module ExchangeOnlineManagement
 
-    Connect-IPPSSession
+Connect-IPPSSession
+```
 
 Use New-ServicePrincipal to create a service principal with your app's details and add it to the eDiscoveryManager role using Add-RoleGroupMember.
 
-    New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
+```
+New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
 
-    Get-ServicePrincipal
+Get-ServicePrincipal
 
-    Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+```
 
 Verify the setup using Get-RoleGroupMember.
 
-    Get-RoleGroupMember -Identity "eDiscoveryManager"
+```
+Get-RoleGroupMember -Identity "eDiscoveryManager"
 
-    Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
 
-    Get-eDiscoveryCaseAdmin
+Get-eDiscoveryCaseAdmin
+```
 
 ![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
