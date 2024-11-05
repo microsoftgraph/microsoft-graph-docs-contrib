@@ -42,6 +42,7 @@ Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the 
 - Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata) method.
 - Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
 - Export [results](/graph/api/security-ediscoverysearch-exportresult) and a [report](/graph/api/security-ediscoverysearch-exportreport) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch).
+- Legal holds are holds that are tied to an eDiscovery case. To learn more about a legal hold policy and its supported methods, see [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy).
 
 ### Teamwork and communications | Apps
 
@@ -92,6 +93,8 @@ Updated the endpoints of the following methods:
 
 - Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) method.
 - Use the **notificationSetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcnotificationsetting?view=graph-rest-beta&preserve-view=true) to define the Cloud PC notification prompts for a Cloud PC user.
+- Enabled the `cloudPcFrontlineBufferUsageScenario` member in the **alertRuleTemplate** enumeration.
+- Enabled the `frontlineBufferUsageDuration` and `frontlineBufferUsageThreshold` members in the **ruleCondition** enumeration.
 
 ### Identity and access | Directory management
 
