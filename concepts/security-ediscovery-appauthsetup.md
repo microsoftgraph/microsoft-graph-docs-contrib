@@ -25,7 +25,7 @@ Furthermore, App Authentication streamlines the integration of eDiscovery servic
 
 ## Implementing App Authentication
 
-Listed below are step by step instructions to implement App Auth.  The basic steps involve registering the app in Azure, creating client secret/ certificates, assigning the right API permissions, setting up a service principal and then using App Auth for invocation. Each of these steps are listed in detail below.
+Listed below are step by step instructions to implement App Auth. The basic steps involve registering the app in Azure, creating client secret/ certificates, assigning the right API permissions, setting up a service principal and then using App Auth for invocation.
 
 ### Step 1: Register a New Application in Azure
 
