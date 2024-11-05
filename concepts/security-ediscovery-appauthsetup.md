@@ -29,23 +29,23 @@ Listed below are step by step instructions to implement App Auth.  The basic ste
 
 ### Step 1: Register a New Application in Azure
 
-    1.1 To begin, navigate to the Azure portal and sign in with your Microsoft account.
-    
-    1.2 Access the Microsoft Entra ID section on the left side.
-    
-    1.3 Go to App registrations, select New registration.
-    
-    1.4 Provide a meaningful name for your application and click register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
+1.1 To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
-    1.5 You can now see the newly created app registration and the details.
+1.2 Access the Microsoft Entra ID section on the left side.
+
+1.3 Go to App registrations, select New registration.
+
+1.4 Provide a meaningful name for your application and click register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
+
+1.5 You can now see the newly created app registration and the details.
 
 ### Step 2: Create Client Secrets or Certificates
 
 Once your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-    For a client secret, click New client secret, add a description, and click Add to save. Make sure to copy and securely store the secret value, as it is needed for authentication.
+For a client secret, click New client secret, add a description, and click Add to save. Make sure to copy and securely store the secret value, as it is needed for authentication.
 
-    If using a certificate, you can upload one to use along with the App ID for automation purposes.
+If using a certificate, you can upload one to use along with the App ID for automation purposes.
 
 ### Step 3: Assign API Permissions
 
@@ -57,24 +57,24 @@ For API testing, follow the guidance on using Microsoft Graph with Postman. This
 
 ### Step 5: Set Up a Service Principal
 
-    5.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
-    
-    5.2 Now open a new PowerShell session to create a service principal that you will add to the eDiscoveryManager role group:
-    
-        Install and import the ExchangeOnlineManagement module if not already installed.
-            Install-Module ExchangeOnlineManagement (if not already installed)
-            Import-Module ExchangeOnlineManagement
-            Connect-IPPSSession
-    
-        Use New-ServicePrincipal to create a service principal with your app's details and add it to the eDiscoveryManager role using Add-RoleGroupMember.
-            New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
-            Get-ServicePrincipal
-            Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
-    
-        Verify the setup using Get-RoleGroupMember.
-            Get-RoleGroupMember -Identity "eDiscoveryManager"
-            Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
-            Get-eDiscoveryCaseAdmin
+5.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
+
+5.2 Now open a new PowerShell session to create a service principal that you will add to the eDiscoveryManager role group:
+
+Install and import the ExchangeOnlineManagement module if not already installed.
+    Install-Module ExchangeOnlineManagement (if not already installed)
+    Import-Module ExchangeOnlineManagement
+    Connect-IPPSSession
+
+Use New-ServicePrincipal to create a service principal with your app's details and add it to the eDiscoveryManager role using Add-RoleGroupMember.
+    New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
+    Get-ServicePrincipal
+    Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+
+Verify the setup using Get-RoleGroupMember.
+    Get-RoleGroupMember -Identity "eDiscoveryManager"
+    Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+    Get-eDiscoveryCaseAdmin
 
 **NOTE:**
 
