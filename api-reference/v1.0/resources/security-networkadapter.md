@@ -1,18 +1,16 @@
 ---
 title: "networkAdapter resource type"
-description: "Network adapters that are used for communication"
-author: "amirfeldman"
+description: "Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic."
+author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 09/10/2024
+ms.date: 10/29/2024
 ---
 
 # networkAdapter resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the network adapter from which the Microsoft Defender for Identity sensor analyzes network traffic.
 

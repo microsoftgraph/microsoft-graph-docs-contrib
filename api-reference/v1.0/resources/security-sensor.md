@@ -1,18 +1,16 @@
 ---
 title: "sensor resource type"
 description: "Represents a Microsoft Defender for Identity sensor."
-author: "amirfeldman"
+author: "naalmog"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 09/10/2024
+ms.date: 10/29/2024
 ---
 
 # sensor resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Microsoft Defender for Identity sensor.
 
@@ -25,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/security-sensor-get.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.|
 |[Update](../api/security-sensor-update.md)|[microsoft.graph.security.sensor](../resources/security-sensor.md)|Update the properties of a [sensor](../resources/security-sensor.md) object.|
 |[Delete](../api/security-sensor-delete.md)|None|Delete a [sensor](../resources/security-sensor.md) object.|
-|[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the deployment access key associated with the Microsoft Defender for Identity workspace, needed to install sensors associated with the workspace.|
-|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the sensor deployment package URL and version.|
-|[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install sensors associated with the workspace.|
+|[Get deployment access key](../api/security-sensor-getdeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Get the deployment access key for Microsoft Defender for Identity that is required to install sensors associated with the workspace.|
+|[Get deployment package URI](../api/security-sensor-getdeploymentpackageuri.md)|[microsoft.graph.security.sensorDeploymentPackage](../resources/security-sensordeploymentpackage.md)|Get the [sensor](../resources/security-sensor.md) deployment package URL and version.|
+|[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install a [sensor](../resources/security-sensor.md) associated with the workspace.|
 
 ## Properties
 |Property|Type|Description|
@@ -45,8 +43,8 @@ Inherits from [entity](../resources/entity.md).
 
 ### deploymentStatus values
 
-| Member                     | Description                       |
-| :--------------------------| :-------------------------------- |
+| Member                     | Description                    |
+| :--------------------------| :----------------------------- |
 | upToDate |Sensor is running a current version of the sensor.|
 | outdated |Sensor is running a version of the software that is at least three versions behind the current version.|
 | updating |Sensor software is being updated.|
@@ -60,8 +58,8 @@ Inherits from [entity](../resources/entity.md).
 
 ### sensorHealthStatus values
 
-| Member                     | Description                       |
-| :--------------------------| :-------------------------------- |
+| Member                     | Description                    |
+| :--------------------------| :----------------------------- |
 | healthy |No opened health issues.|
 | notHealthyLow |The highest severity opened health issue is low.|
 | notHealthyMedium |The highest severity opened health issue is medium.|
@@ -70,8 +68,8 @@ Inherits from [entity](../resources/entity.md).
 
 ### sensorType values
 
-| Member                     | Description                       |
-| :--------------------------| :-------------------------------- |
+| Member                     | Description                    |
+| :--------------------------| :----------------------------- |
 | adConnectIntegrated |Entra Connect sensor.|
 | adcsIntegrated |Active Directory Certificate Services (ADCS) sensor.|
 | adfsIntegrated |Active Directory Federation Services (ADFS) sensor.|
