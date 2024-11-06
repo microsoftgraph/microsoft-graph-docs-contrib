@@ -20,7 +20,7 @@ Update the properties of a [groupSetting](../resources/groupsetting.md) object f
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For all settings except the Consent Policy Settings object
+### For all settings *except* the Consent Policy Settings object
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/groupsetting-update-permissions.md)]
