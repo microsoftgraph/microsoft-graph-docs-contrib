@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the setting on the recycleBin for a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the [recycleBinSettings](../resources/recyclebinsettings.md) resource. 
+Update the settings of one recycleBin for a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the [recycleBinSettings](../resources/recyclebinsettings.md) resource. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
