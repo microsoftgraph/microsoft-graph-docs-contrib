@@ -1,19 +1,19 @@
 ---
-title: "hardwareOathAuthenticationMethod: activate"
-description: "Activate a hardware OATH token that is already assigned to a user."
+title: "Add user"
+description: "Add assignTo by putting to the assignTo collection."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# hardwareOathAuthenticationMethod: activate
+# Add user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a hardware OATH token that is already assigned to a user.
+Add assignTo by posting to the assignTo collection.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "hardwareoathauthenticationmethod-activate-permissions"
+  "name": "hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/hardwareoathauthenticationmethod-activate-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/hardwareoathtokenauthenticationmethoddevice-post-assignto-permissions.md)]
 
 ## HTTP request
 
@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
-POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
+PUT /directory/authenticationMethodDevices/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}/assignTo/$ref
 ```
 
 ## Request headers
@@ -46,20 +45,17 @@ POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthentica
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply a JSON representation of the [user](../resources/user.md) object.
 
-The following table lists the parameters that are required when you call this action.
+You can specify the following properties when creating a **user**.
 
-|Parameter|Type|Description|
+|Property|Type|Description|
 |:---|:---|:---|
-|verificationCode|String|The 6-digit TOTP code that refreshes every 30 or 60 seconds on the Hardware OATH token.|
-|displayName|String|An optional name that can be provided to the Hardware OATH token.|
-
-
+|odata.id|String|A link to the user entity with using objectId as key. Example: "https://graph.microsoft-ppe.com/beta/users/{usersId}"|
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code and a [user](../resources/user.md) object in the response body.
 
 ## Examples
 
@@ -68,16 +64,15 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "hardwareoathauthenticationmethodthis.activate"
+  "name": "create_user_from_users"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/activate
+PUT https://graph.microsoft.com/beta/users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
 Content-Type: application/json
 
 {
-  "verificationCode": "588651",
-  "displayName": "Amy Masters Token"
+    "@odata.id": "https://graph.microsoft-ppe.com/beta/users/0cadbf92-####-####-####-############"
 }
 ```
 
@@ -93,4 +88,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

@@ -4909,3 +4909,21 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### hardwareOathTokenHashFunction values
+
+|Member|
+|:---|
+|hmacsha1|
+|hmacsha256|
+|unknownFutureValue|
+
+### hardwareOathTokenStatus values
+
+|Member|
+|:---|
+|available|
+|assigned|
+|activated|
+|failedActivation|
+|unknownFutureValue|

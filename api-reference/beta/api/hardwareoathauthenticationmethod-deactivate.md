@@ -1,6 +1,6 @@
 ---
 title: "hardwareOathAuthenticationMethod: deactivate"
-description: "Deactive a Hardware OATH token. It remains assigned to a user."
+description: "Deactive a hardware OATH token. It remains assigned to a user."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deactive a Hardware OATH token. It remains assigned to a user.
+Deactive a hardware OATH token. It remains assigned to a user.
 
 ## Permissions
 

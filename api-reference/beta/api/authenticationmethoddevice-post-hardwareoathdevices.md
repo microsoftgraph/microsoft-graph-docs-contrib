@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [hardwareOathTokenAuthe
 
 You can specify the following properties when creating a **hardwareOathTokenAuthenticationMethodDevice**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |serialNumber|String|Serial number of the specific hardware token, often found on the back of the device. Required.|

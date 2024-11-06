@@ -1,6 +1,6 @@
 ---
 title: "Create hardwareOathAuthenticationMethod"
-description: "This assigns a hardware token to a user without activation."
+description: "Assign a hardware token to a user without activation."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
