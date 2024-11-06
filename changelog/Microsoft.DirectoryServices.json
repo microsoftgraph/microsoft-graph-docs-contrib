@@ -31,8 +31,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-11-01T22:52:30.5735697Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Applications",
+      "SubArea": "Policies"
     },
     {
       "ChangeList": [
