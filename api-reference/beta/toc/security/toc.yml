@@ -304,9 +304,9 @@ items:
       href: ../../api/security-ediscoverycustodian-list-sitesources.md
     - name: Create site source
       href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unitifed group sources
+    - name: List unified group sources
       href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unifed group source
+    - name: Create unified group source
       href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
     - name: List user sources
       href: ../../api/security-ediscoverycustodian-list-usersources.md
@@ -485,13 +485,25 @@ items:
     - name: Update
       href: ../../api/security-sensor-update.md
     - name: Delete
-      href: ../../api/security-identitycontainer-delete-sensors.md
-    - name: Get deployment package URI
-      href: ../../api/security-sensor-getdeploymentpackageuri.md
+      href: ../../api/security-sensor-delete.md
     - name: Get deployment access key
       href: ../../api/security-sensor-getdeploymentaccesskey.md
+    - name: Get deployment package URI
+      href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Complex types
+    items:
+    - name: Deployment access key type
+      href: ../../resources/security-deploymentaccesskeytype.md
+    - name: Identity container
+      href: ../../resources/security-identitycontainer.md
+    - name: Network adapter
+      href: ../../resources/security-networkadapter.md
+    - name: Sensor deployment package
+      href: ../../resources/security-sensordeploymentpackage.md
+    - name: Sensor settings
+      href: ../../resources/security-sensorsettings.md
 - name: Information protection
   items:
   - name: Information protection label

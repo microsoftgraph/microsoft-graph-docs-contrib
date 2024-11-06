@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 10/07/2024
+ms.date: 11/04/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -944,6 +944,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### ChangeManagement.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 418dae40-2b65-4819-900c-519a04e4d278 | 4628dff5-c33e-4fde-b17a-b64e7acb1bed |
+| DisplayText | Read Change Management items | Read Change Management items |
+| Description | Allows to read all Change Management items. | Allows to read all Change Management items. |
+| AdminConsentRequired | Yes | No |
+
+---
+
 ### Channel.Create
 
 | Category | Application | Delegated |
@@ -1634,6 +1645,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 12338004-21f4-4896-bf5e-b75dfaf1016d | 8b0160d4-5743-482b-bb27-efc0a485ca4a |
 | DisplayText | Read and write custom security attribute definitions | Read and write custom security attribute definitions |
 | Description | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Allows the app to read and write custom security attribute definitions for the tenant on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CustomSecAttributeProvisioning.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9fd1f8bf-a443-4df6-bc2a-5d00c5ec7828 | 9ddd870d-077c-49e7-b3e3-6b3012a8a880 |
+| DisplayText | Read the provisioning configuration of all active custom security attributes | Read the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CustomSecAttributeProvisioning.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1db69e9c-8d0a-498d-a5df-11fd0b68ceab | 1140d9e4-6776-433e-a9e4-b9831adbb2e0 |
+| DisplayText | Read and edit the provisioning configuration of all active custom security attributes | Read and edit the provisioning configuration of all active custom security attributes |
+| Description | Allows the app to read and edit the provisioning configuration of all active custom security attributes without a signed-in user. | Allows the app to read and edit the provisioning configuration of all active custom security attributes on behalf of a signed in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7486,6 +7519,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelMeetingParticipant.Read.Group | bd118236-e8f5-4bec-a62d-89a623717e05 | Read the participants of this team's channel meetings | Allows the app to read participant information, including name, role, id, joined and left times, of channel meetings associated with this team, without a signed-in user. |
 | ChannelMeetingRecording.Read.Group | 30a40618-9b50-4764-b62e-b04023a8f5f3 | Read the recordings of all channel meetings associated with this team | Allows the app to read recordings of all the channel meetings associated with this team, without a signed-in user. |
 | ChannelMeetingTranscript.Read.Group | 37e59e88-1a46-482b-b623-0a4aa6abdf67 | Read the transcripts of all channel meetings associated with this team | Allows the app to read transcripts of all the channel meetings associated with this team, without a signed-in user. |
+| ChannelMember.Read.Group | 7e3614f5-3467-419c-9c63-dd0bbd2a88f9 | Read the members of channels of a team | Read the members of channels of a team, without a signed-in user |
 | ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. |
 | ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send messages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
 | ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
@@ -7533,9 +7567,4 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
-
-
-
-
 
