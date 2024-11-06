@@ -52,7 +52,7 @@ You can specify the following properties when you create a **fileStorageContaine
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the container. Required.|
-|description|String|Provides a user-visible description of the container. Optional.|
+|description|String|User-visible description of the container. Optional.|
 |containerTypeId|GUID|The container type of the container instance. Required.|
 |settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with the container. Optional.|
 
