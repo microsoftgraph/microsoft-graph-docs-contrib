@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of the following parameter.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|String|The ID of the owning tenant in which the billing profile is created|
+|appOwnerTenantId|String|The ID of the owning tenant in which the billing profile is created.|
 
 ## Response
 

@@ -30,7 +30,7 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
-|500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Please try again.|
+|500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Try again.|
 
 ## Get protection policy API errors
 
@@ -87,7 +87,7 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
-|403|PolicyActionNotAllowed|Thrown when the policy isn't in active state.|Policy isn't in correct state. Please wait till it comes in active state.|
+|403|PolicyActionNotAllowed|Thrown when the policy isn't in active state.|Policy isn't in correct state. Wait until it moves to the active state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
 ## Activate inactive protection policy API errors
@@ -101,7 +101,7 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|InvalidPolicyId|Thrown when the policy ID in request is invalid, null, or empty.|Policy ID is absent.|
-|403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't activate policy. The policy isn't in correct state. Please make sure the policy is in Inactive state.|
+|403|PolicyActionNotAllowed|Thrown when the policy isn't in Inactive state.|Can't activate policy. The policy isn't in correct state. Make sure the policy is in Inactive state.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
 
 ## List all the protection unit under a protection policy API errors
