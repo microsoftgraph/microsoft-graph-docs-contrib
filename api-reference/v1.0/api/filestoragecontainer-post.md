@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-The respective container type identified by **containerTypeId** must be registered in the tenant. 
+The container type identified by **containerTypeId** must be registered in the tenant. 
 
 For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
