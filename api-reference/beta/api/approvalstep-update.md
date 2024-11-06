@@ -26,6 +26,8 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
+
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
