@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow users to add, update, or delete content.
+Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) to allow modifications of its content.
 
 This action updates the value of the **lockState** property.
 
