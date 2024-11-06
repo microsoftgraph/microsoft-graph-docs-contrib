@@ -37,7 +37,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |isCustomerActionRequired|Boolean|Indicates whether the customer needs to take any action for this change. Supports `$filter` (`eq`, `ne`).|
 |shortDescription|String|A short description of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |systemTags|String collection|Microsoft Entra specific tags. Example value: *Top announcement* - `entra_roadmap_highlight_product_news`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
-|tags|String collection|Identity and Access Management (IAM) related tags. Example values: *External Identities*, *Reliability and Resilience*. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Example values: `External Identities`, `Reliability and Resilience`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
 |targetDateTime|DateTimeOffset|Date on which the change rolls out. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()`, and `second()` built in functions) and `$orderby`.|
 |title|String|Title of the change. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 

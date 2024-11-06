@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique identifier for the new feature or change announcement. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |shortDescription|String|A short description of the feature or change. Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |systemTags|String collection|Microsoft Entra-specific tags. Example values: *Top announcement* - `entra_roadmap_highlight_product_news`, *New release highlight* - `entra_roadmap_highlight_new_feature`. Supports `$filter` (`any` with `eq`).|
-|tags|String collection|Identity and Access Management (IAM) related tags. Example values: *External Identities*, *Reliability and Resilience*. Supports `$filter` (`any` with `eq`).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Example values: `External Identities`, `Reliability and Resilience`. Supports `$filter` (`any` with `eq`).|
 |title|String|Title of the feature or change. Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 
 ## Relationships

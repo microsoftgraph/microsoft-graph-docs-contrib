@@ -37,7 +37,7 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |publishedDateTime|DateTimeOffset|Feature planned release date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
 |shortDescription|String|A short description of the feature. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |systemTags|String collection|Microsoft Entra specific tags. Example value: *New release highlight* - `entra_roadmap_highlight_new_feature`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
-|tags|String collection|Identity and Access Management (IAM) related tags. Example values: *External Identities*, *Reliability and Resilience*. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
+|tags|String collection|Identity and Access Management (IAM) related tags. Example values: `External Identities`, `Reliability and Resilience`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
 |title|String|Title of the feature. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 
 ## Relationships
