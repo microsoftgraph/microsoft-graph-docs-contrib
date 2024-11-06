@@ -282,7 +282,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Activate serviceApp](/graph/api/serviceapp-activate)
+- [Enable BackupRestore](/graph/api/serviceapp-activate)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -290,3 +290,4 @@ The following table lists the possible error and response codes that can be retu
 |:------------------|:--------------|:--------------|:--------------|
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
+|400|InvalidAppOwnerTenantId|Owning tenant id not found|Invalid App owner tenant id received from the user.|
