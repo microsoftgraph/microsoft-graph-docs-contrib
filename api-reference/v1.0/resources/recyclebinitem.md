@@ -11,7 +11,7 @@ ms.subservice: "sharepoint"
 
 Namespace: microsoft.graph
 
-Represents information about a deleted item in a [recycleBin](recyclebin.md) of a SharePoint [site](site.md).
+Represents information about a deleted item in a [recycleBin](recyclebin.md) of a SharePoint [site](site.md) or a SharePoint Embedded fileStorageContainer.
 
 Inherits from [baseItem](baseitem.md).
 
