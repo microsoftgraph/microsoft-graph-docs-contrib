@@ -282,7 +282,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Enable BackupRestore](/graph/api/serviceapp-activate)
+- [Enable BackupRestore](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-enable)
 
 The following table lists the possible error and response codes that can be returned.
 
