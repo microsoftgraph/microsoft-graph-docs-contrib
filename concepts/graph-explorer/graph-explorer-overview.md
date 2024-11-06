@@ -94,9 +94,9 @@ The toolkit component in Graph Explorer allows you to visualize Microsoft Graph 
 
 :::image type="content" source="./images/adaptive-cards-screenshot.png" alt-text="Screenshot of the adaptive cards tab in Graph Explorer with the response details highlighted." border="false":::
 
-## Other Graph Explorer features
+## More Graph Explorer features
 
-Become familiar with additional features in Graph Explorer to help you make the most of the tool.
+To help you make the most of Graph Explorer, familiarize yourself with the following additional features of the tool.
 
 ### History
 
@@ -114,5 +114,5 @@ To share your current query, select **Share** so people can try out the specific
 
 ## Related content
 
-- Explore the different [Graph Explorer features](./graph-explorer-features.md).
-- Contribute or provide feedback on [GitHub](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).
+- [Work with Graph Explorer](./graph-explorer-features.md)
+- [Contribute or provide feedback on GitHub](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose)
