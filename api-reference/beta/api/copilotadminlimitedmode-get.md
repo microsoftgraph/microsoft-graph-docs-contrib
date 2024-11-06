@@ -24,7 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "copilotadminlimitedmode-get-permissions"
 }
 -->
-Global admin or Global reader permission is required to call this API
+> **Note:** Global admin or Global reader permission is required to call this API
+
 |Permission type |Least privileged permissions|Higher privileged permissions|
 | --------------- |-----------------------------| --------------------------- |
 |Delegated (work or school account)|CopilotSettings-LimitedMode.Read|CopilotSettings-LimitedMode.ReadWrite|

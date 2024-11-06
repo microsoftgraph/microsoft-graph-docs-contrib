@@ -2835,14 +2835,6 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
-              ],
-              "childNodes": [
-                {
-                  "name": "Copilot settings",
-                  "resources": [
-                    "copilotAdminLimitedMode"
-                  ]
-                }
               ]
             },
             {
@@ -2857,6 +2849,12 @@
                 "microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport",
                 "microsoft.graph.callRecords.session",
                 "microsoft.graph.callRecords.smsLogRow"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
               ]
             },
             {
@@ -2886,12 +2884,6 @@
                       "name": "Send virtual appointment SMS",
                       "href": "../../api/virtualappointment-sendvirtualappointmentsms.md"
                     }
-                  ]
-                },
-                {
-                  "name": "Copilot settings",
-                  "resources": [
-                    "copilotAdminLimitedMode"
                   ]
                 }
               ]
