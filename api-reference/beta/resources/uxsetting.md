@@ -5,6 +5,7 @@ author: "skashyap7"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Microsoft Entra admin center settings
 ---
 
 # uxSetting resource type
