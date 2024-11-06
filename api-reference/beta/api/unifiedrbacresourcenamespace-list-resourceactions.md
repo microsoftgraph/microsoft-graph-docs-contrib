@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedrbacresourcenamespace_list_resourceactions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedrbacresourcenamespace-list-resourceactions-permissions.md)]
 
+[!INCLUDE [rbac-role-assignment-apis-read](../includes/rbac-for-apis/rbac-role-assignment-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

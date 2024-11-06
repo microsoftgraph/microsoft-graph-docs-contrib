@@ -68,6 +68,7 @@ If successful, this method returns a `200 OK` response code and a stream object 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreports.retrieveBulkActionStatusReport"
@@ -96,6 +97,12 @@ Content-Type: application/octet-stream
   "top": 50
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsretrievebulkactionstatusreport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

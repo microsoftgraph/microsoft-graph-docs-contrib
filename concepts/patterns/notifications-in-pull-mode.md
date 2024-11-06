@@ -2,7 +2,7 @@
 title: "Retrieve events at your speed by using Microsoft Graph"
 description: "Learn about the Microsoft Graph integration pattern for event-based solutions that rely on change notifications in pull mode."
 author: "OlgaPodo"
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ---
 
 # Retrieve events at your speed by using Microsoft Graph
