@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_list_accesspackageresourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
