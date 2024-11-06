@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). 
+Create a columnDefinition for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
