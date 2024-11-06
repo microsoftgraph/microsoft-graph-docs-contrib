@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added GET /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/getCloudPcLaunchInfo to [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta).",
+          "Target": "getCloudPcLaunchInfo"
+        },
+        {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added POST /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/start to [cloudPC: start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta).",
+          "Target": "start"
+        },
+        {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added POST /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/stop to [cloudPC: stop](https://learn.microsoft.com/en-us/graph/api/cloudpc-stop?view=graph-rest-beta).",
+          "Target": "stop"
+        }
+      ],
+      "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-03T11:13:39.1270609Z",
+     "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "88f029ef-58a7-4c7c-8b43-b7dfd5ef13e0",
           "ApiChange": "Member",
           "ChangedApiName": "bulkActionStatusReport",
@@ -104,48 +138,6 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },  
-    {
-        "ChangeList": [
-          {
-            "Id": "4e187813-86e4-4387-a939-dee88cb39661",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.Read.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the `CloudPC.Read.All` application permission to the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method.",
-            "Target": "getCloudPcLaunchInfo"
-          },
-          {
-            "Id": "4e187813-86e4-4387-a939-dee88cb39661",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.ReadWrite.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method.",
-            "Target": "getCloudPcLaunchInfo"
-          },
-          {
-            "Id": "4e187813-86e4-4387-a939-dee88cb39661",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.ReadWrite.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta) method.",
-            "Target": "start"
-          },
-          {
-            "Id": "4e187813-86e4-4387-a939-dee88cb39661",
-            "ApiChange": "Permission",
-            "ChangedApiName": "CloudPC.ReadWrite.All",
-            "ChangeType": "Addition",
-            "Description": "Added support for the `CloudPC.ReadWrite.All` application permission to the [cloudPC: stop](https://learn.microsoft.com/en-us/graph/api/cloudpc-stop?view=graph-rest-beta) method.",
-            "Target": "stop"
-          }
-        ],
-        "Id": "4e187813-86e4-4387-a939-dee88cb39661",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2024-08-08T17:20:39.1270609Z",
-       "WorkloadArea": "Device and app management",
-        "SubArea": "Cloud PC"
-      },
       {
         "ChangeList": [
           {

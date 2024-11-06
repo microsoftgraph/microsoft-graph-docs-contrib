@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /me/cloudPCs/{cloudPCId}/stop
+POST /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/stop
 ```
 
 ## Request headers

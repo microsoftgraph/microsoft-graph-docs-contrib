@@ -30,6 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
+GET /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 
 ## Request headers
