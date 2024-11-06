@@ -24,14 +24,14 @@ The following tables show the least privileged permission or permissions require
 
 ### For all settings except the Consent Policy Settings object
 
-<!-- { "blockType": "permissions", "name": "directorysetting_update" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-permissions.md)]
 
 ### For the Consent Policy Settings object
 
 The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
 
-<!-- { "blockType": "permissions", "name": "directorysetting_update_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-2-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
