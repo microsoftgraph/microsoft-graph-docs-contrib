@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificatebasedapplicationconfiguration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
 
 ## HTTP request
 
