@@ -302,16 +302,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
-    - name: Copilot settings
-      items:
-      - name: Copilot admin limited mode
-        items:
-        - name: Copilot admin limited mode
-          href: ../../resources/copilotadminlimitedmode.md
-        - name: Get
-          href: ../../api/copilotadminlimitedmode-get.md
-        - name: Update
-          href: ../../api/copilotadminlimitedmode-update.md
   - name: Call records
     items:
     - name: Overview
@@ -376,6 +366,16 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
+  - name: Copilot settings
+    items:
+    - name: Copilot admin limited mode
+      items:
+      - name: Copilot admin limited mode
+        href: ../../resources/copilotadminlimitedmode.md
+      - name: Get
+        href: ../../api/copilotadminlimitedmode-get.md
+      - name: Update
+        href: ../../api/copilotadminlimitedmode-update.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -464,16 +464,6 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
-    - name: Copilot settings
-      items:
-      - name: Copilot admin limited mode
-        items:
-        - name: Copilot admin limited mode
-          href: ../../resources/copilotadminlimitedmode.md
-        - name: Get
-          href: ../../api/copilotadminlimitedmode-get.md
-        - name: Update
-          href: ../../api/copilotadminlimitedmode-update.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
