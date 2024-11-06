@@ -8,7 +8,12 @@ ms.custom: "scenarios:getting-started"
 ---
 # Get change notifications for Microsoft Teams emergency call event updates
 
-[high level diagram of how notification works] 
+Microsoft Teams supports emergency calling which can be routed to notify specific security personnels within Teams. Graph emergency call events notification extends that capability to allow emergency calling notifications to be received outside of Teams (i.e. third-party client applications) as shown in the diagram below. 
+
+1.	The Teams tenant admin configures [emergency calling](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
+2.	The client application creates a Graph emergency call event subscription. 
+3.	When a Teams user makes an emergency call (i.e. dial 911) on Teams, the emergency call event notification is fired to the client application. 
+4.	To continue to be subscribed to emergency call event notifications, the client application will either renew the existing subscription before the expiry period or create a new one after the expiry period.
 
 
 ## Permissions 
