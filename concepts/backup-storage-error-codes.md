@@ -289,4 +289,4 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
-|402|BillingProfileNotAvailable|Billing profile isn't available.|Configure the billing profile.|
+|402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
