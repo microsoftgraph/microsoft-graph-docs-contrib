@@ -23,6 +23,8 @@ In the context of eDiscovery, contains custodians, holds, searches, review sets,
 |[Get ediscoveryCase](../api/security-ediscoverycase-get.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Read the properties and relationships of an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
 |[Update ediscoveryCase](../api/security-ediscoverycase-update.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Update the properties of an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
 |[Delete ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|None|Delete an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
+|[Close ediscoveryCase](../api/security-ediscoverycase-close.md)|None|Close an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
+|[Reopen ediscoveryCase](../api/security-ediscoverycase-reopen.md)|None|Reopen an [ediscoveryCase](../resources/security-ediscoverycase.md) object.|
 |[List custodians](../api/security-ediscoverycase-list-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get the ediscoveryCustodian resources from the custodians navigation property.|
 |[Create ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new ediscoveryCustodian object.|
 |[List legalHolds](../api/security-ediscoverycase-list-legalholds.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Get the ediscoveryHoldPolicy resources from the legalHolds navigation property.|
