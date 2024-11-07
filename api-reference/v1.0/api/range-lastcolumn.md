@@ -1,5 +1,5 @@
 ---
-title: "Range: LastColumn"
+title: "range: lastColumn"
 description: "Get the last column within the range."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Range: LastColumn
+# range: lastColumn
 
 Namespace: microsoft.graph
 
