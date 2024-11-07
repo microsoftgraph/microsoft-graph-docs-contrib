@@ -22,6 +22,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The Defender for Identity sensors management API enables you to create detailed reports on the sensors in your workspace, providing information such as server name, sensor version, type, state, and health status. It also allows you to manage sensor settings, including adding descriptions, enabling or disabling delayed updates, and specifying the domain controller the sensor connects to for querying Entra ID. For more information, see [sensor](/graph/api/resources/security-sensor).
 
+## November 2024: New in preview only
+
+### Teamwork and communications | Calls and online meetings
+
+[Link](/graph/api/virtualeventtownhall-setexternaleventinformation?view=graph-rest-beta&preserve-view=true) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) by setting an **externalEventId**.
+
 ## October 2024: New and generally available
 
 ### Backup storage
