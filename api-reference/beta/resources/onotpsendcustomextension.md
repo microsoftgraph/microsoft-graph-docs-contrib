@@ -20,14 +20,8 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/onotpsendcustomextensionhandler-list-customextension.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) collection|Get a list of the [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) objects and their properties.|
-|[Create](../api/onotpsendcustomextensionhandler-post-customextension.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Create a new [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
-|[Get](../api/onotpsendcustomextension-get.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Read the properties and relationships of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
-|[Update](../api/onotpsendcustomextension-update.md)|[onOtpSendCustomExtension](../resources/onotpsendcustomextension.md)|Update the properties of an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
-|[Delete](../api/onotpsendcustomextensionhandler-delete-customextension.md)|None|Delete an [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) object.|
-|[validateAuthenticationConfiguration](../api/onotpsendcustomextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Validate incoming tokens with authentication events.|
+
+For the list of API operations for managing this resource type, see the [customAuthenticationExtension](../resources/customauthenticationextension.md) resource type.
 
 ## Properties
 |Property|Type|Description|
