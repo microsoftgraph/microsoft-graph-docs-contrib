@@ -12,7 +12,7 @@ com.microsoft.graph.beta.models.networkaccess.BranchSite branchSite = new com.mi
 branchSite.setName("test branch - 11:50");
 branchSite.setCountry("United States");
 branchSite.setRegion(com.microsoft.graph.beta.models.networkaccess.Region.EastUS);
-branchSite.setBandwidthCapacity(500);
+branchSite.setBandwidthCapacity(500L);
 com.microsoft.graph.models.networkaccess.BranchSite result = graphClient.networkAccess().connectivity().branches().post(branchSite);
 
 
