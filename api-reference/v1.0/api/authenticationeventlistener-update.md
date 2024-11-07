@@ -189,7 +189,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:
 
