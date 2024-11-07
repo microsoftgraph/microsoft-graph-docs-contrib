@@ -17,13 +17,13 @@ The Microsoft Graph CLI provides the following benefits:
 - **Access to all Microsoft Graph APIs**: The Microsoft Graph CLI is based on Microsoft Graph API. In addition to Microsoft Entra ID, the Microsoft Graph API includes APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Cross-platform support**: The Microsoft Graph CLI works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: The Microsoft Graph CLI supports the Microsoft Authentication Library (MSAL) which offers more security.
-- **Uses least privilege**: Microsoft Graph CLI permissions are not pre-authorized and users must perform one-time request for app permissions depending on their needs.
+- **Uses least privilege**: Microsoft Graph CLI permissions aren't preauthorized and users must perform one-time request for app permissions depending on their needs.
 - **Open source**: Feature teams and the community can create great command-line experiences and share them with everyone.
 - **Receives regular updates**: Microsoft Graph CLI commands are updated regularly to support the latest Graph API updates.
 
 ## Install the Microsoft Graph CLI
 
-The Microsoft Graph CLI is published on [GitHub](https://github.com/microsoftgraph/msgraph-cli). Follow the [Install the CLI](installation.md) instructions to install the the Microsoft Graph PowerShell SDK.
+The Microsoft Graph CLI is published on [GitHub](https://github.com/microsoftgraph/msgraph-cli). Follow the [Install the CLI](installation.md) instructions to install the Microsoft Graph PowerShell SDK.
 
 ## Get started
 

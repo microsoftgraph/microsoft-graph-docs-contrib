@@ -30,12 +30,12 @@ For this URL:
 - `{resource}` is resource segment or path, such as:
   - `users`, `groups`, `devices`, `organization`
   - The alias `me`, which resolves to the signed-in user
-  - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
+  - The resources belonging to a user, such as `me/events`, `me/drive`, or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
-- `[query_parameters]` represents additional query parameters such as `$filter` and `$select`.
+- `[query_parameters]` represents other query parameters such as `$filter` and `$select`.
 
 Optionally, you can also specify the tenant as part of your request.
-When using `me`, do not specify the tenant.
+When using `me`, don't specify the tenant.
 For a list of common requests, see [Overview of Microsoft Graph](overview.md).
 
 ## Microsoft Graph API metadata
@@ -230,7 +230,7 @@ The successful response returns a 200 OK status code and a payload containing th
 ```
 
 ## Query a subset of users with the filtering query option
-To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option.
+To find the employees of a specific job title within an organization, you can navigate from the user's collection and then specify a _filter_ query option.
 An example is shown as follows:
 
 
@@ -277,7 +277,7 @@ content-length: 986
 ```
 
 ## Call actions or functions
-Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods.
+Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that aren't a simple fit with standard HTTP methods.
 For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:
 ```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
