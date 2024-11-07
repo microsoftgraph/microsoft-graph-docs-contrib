@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Represents the external information for a [virtual event](../resources/virtualevent.md).
 
-The applicationID and externalEventId allows external event information (i.e. (unsupported information in the [virtual event](../resources/virtualevent.md)) to be associated with a virtual event.
+The **applicationId** and **externalEventId** properties allow external event information (i.e. (unsupported information in the [virtual event](../resources/virtualevent.md)) to be associated with a virtual event.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationId|String| Identifier of the application that hosts the externalEventId. Read only.|
+|applicationId|String| Identifier of the application that hosts the **externalEventId**. Read-only. |
 |externalEventId|String| TODO: PLACEHOLDER DESCRIPTION i.e. The identifier for a **virtualEventExternalInformation** object. Optional. If set, the maximum supported length is 256 characters.|
 
 ## Relationships
