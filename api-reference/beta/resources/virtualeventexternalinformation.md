@@ -22,7 +22,7 @@ The **applicationId** and **externalEventId** properties allow external event in
 |Property|Type|Description|
 |:---|:---|:---|
 |applicationId|String| Identifier of the application that hosts the **externalEventId**. Read-only. |
-|externalEventId|String| TODO: PLACEHOLDER DESCRIPTION i.e. The identifier for a **virtualEventExternalInformation** object. Optional. If set, the maximum supported length is 256 characters.|
+|externalEventId|String| The identifier for a **virtualEventExternalInformation** object associates the virtual event with an event ID in an external application. This bundles all the information (both supported and not supported in [virtualEvent](../resources/virtualevent.md)) into one virtual event object. Optional. If set, the maximum supported length is 256 characters.|
 
 ## Relationships
 
