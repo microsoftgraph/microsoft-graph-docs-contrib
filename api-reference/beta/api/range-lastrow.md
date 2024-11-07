@@ -1,19 +1,19 @@
 ---
-title: "Range: LastRow"
-description: "."
+title: "range: lastRow"
+description: "Get the last row within the range."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Range: LastRow
+# range: lastRow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
+Get the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
