@@ -9,7 +9,7 @@ author: "sureshja"
 
 # servicePrincipal: delta
 
-Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
+Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -172,8 +172,16 @@ items:
       href: ../../api/device-list-transitivememberof.md
     - name: List registered owners
       href: ../../api/device-list-registeredowners.md
+    - name: Add registered owners
+      href: ../../api/device-post-registeredowners.md
+    - name: Remove registered owners
+      href: ../../api/device-delete-registeredowners.md
     - name: List registered users
       href: ../../api/device-list-registeredusers.md
+    - name: Add registered users
+      href: ../../api/device-post-registeredusers.md
+    - name: Remove registered users
+      href: ../../api/device-delete-registeredusers.md
     - name: List usage rights
       href: ../../api/device-list-usagerights.md
     - name: Check member groups
@@ -372,6 +380,14 @@ items:
         href: ../../api/subscribedsku-get.md
       - name: List
         href: ../../api/subscribedsku-list.md
+  - name: Microsoft Entra admin center settings
+    items:
+    - name: Microsoft Entra admin center settings
+      href: ../../resources/uxsetting.md
+    - name: Get
+      href: ../../api/uxsetting-get.md
+    - name: Update
+      href: ../../api/uxsetting-update.md
   - name: Mobility management policy
     items:
     - name: Mobility management policy
@@ -621,34 +637,6 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
-  - name: Trusted certificate authorities for apps (preview)
-    items:
-    - name: Certificate-based application configuration
-      items:
-      - name: Certificate-based application configuration
-        href: ../../resources/certificatebasedapplicationconfiguration.md
-      - name: List
-        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
-      - name: Create
-        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
-      - name: Get
-        href: ../../api/certificatebasedapplicationconfiguration-get.md
-      - name: Update
-        href: ../../api/certificatebasedapplicationconfiguration-update.md
-    - name: Certificate authority as entity
-      items:
-      - name: Certificate authority as entity
-        href: ../../resources/certificateauthorityasentity.md
-      - name: List
-        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
-      - name: Create
-        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
-      - name: Get
-        href: ../../api/certificateauthorityasentity-get.md
-      - name: Update
-        href: ../../api/certificateauthorityasentity-update.md
-      - name: Delete
-        href: ../../api/certificateauthorityasentity-delete.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -3012,6 +3000,34 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+  - name: Trusted certificate authorities for apps (preview)
+    items:
+    - name: Certificate-based application configuration
+      items:
+      - name: Certificate-based application configuration
+        href: ../../resources/certificatebasedapplicationconfiguration.md
+      - name: List
+        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+      - name: Create
+        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedapplicationconfiguration-get.md
+      - name: Update
+        href: ../../api/certificatebasedapplicationconfiguration-update.md
+    - name: Certificate authority as entity
+      items:
+      - name: Certificate authority as entity
+        href: ../../resources/certificateauthorityasentity.md
+      - name: List
+        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthorityasentity-get.md
+      - name: Update
+        href: ../../api/certificateauthorityasentity-update.md
+      - name: Delete
+        href: ../../api/certificateauthorityasentity-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
