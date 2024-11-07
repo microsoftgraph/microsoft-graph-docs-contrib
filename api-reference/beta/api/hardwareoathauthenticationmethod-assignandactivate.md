@@ -81,7 +81,7 @@ Content-Type: application/json
         "id": "aad49556-####-####-####-############"
     },
   "verificationCode": "588651",
-  "displayName": Amy Masters Token"
+  "displayName": "Amy Masters Token"
 }
 ```
 
