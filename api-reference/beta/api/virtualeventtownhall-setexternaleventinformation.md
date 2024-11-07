@@ -1,18 +1,19 @@
 ---
-title: "virtualEventTownhall: set external event information"
-description: Link external townhall event information to a townhall event
+title: "virtualEventTownhall: setExternalEventInformation"
+description: "Link external town hall event information to a town hall event by setting an externalEventId."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventTownhall: set external event information
+# virtualEventTownhall: setExternalEventInformation
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Link external townhall event information to a townhall event through setting an externalEventId.
+Link external town hall event information to a town hall event by setting an **externalEventId**.
 
 ## Permissions
 
@@ -43,13 +44,13 @@ POST /solutions/virtualEvents/townhalls/{id}/setExternalEventInformation
 
 ## Request body
 
-In the request body, supply a JSON representation of the external event id property of the [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) object.
+In the request body, supply a JSON representation of the **externalEventId** property of the [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) object.
 
 You can specify the following property when you create the [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| externalEventId | String | The identifier for a virtualEventExternalInformation object. Optional. If set, the maximum supported length is 256 characters. |
+| externalEventId | String | The identifier for a **virtualEventExternalInformation** object. Optional. If set, the maximum supported length is 256 characters. |
 
 ## Response
 
@@ -61,7 +62,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventtownhall.setexternaleventinformation",
