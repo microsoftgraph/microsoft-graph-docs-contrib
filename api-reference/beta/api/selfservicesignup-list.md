@@ -30,13 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to read sign-in reports.
-
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
+[!INCLUDE [rbac-self-service-sign-up-apis-read](../includes/rbac-for-apis/rbac-self-service-sign-up-apis-read.md)]
 
 ## HTTP request
 
