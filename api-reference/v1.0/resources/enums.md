@@ -99,6 +99,14 @@ Namespace: microsoft.graph
 | additionalStepsRequired |
 | unknownFutureValue |
 
+### appManagementRestrictionState values
+
+| Member |
+| ---- |
+| enabled |
+| disabled |
+| unknownFutureValue |
+
 ### appCredentialRestrictionType values
 
 | Member |
