@@ -31,7 +31,7 @@ For the list of API operations for managing this resource type, see the [customA
 |description|String|The description for the onOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|The display name for the onOtpSendCustomExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String|The unique identifier for the onEmailOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the onOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
