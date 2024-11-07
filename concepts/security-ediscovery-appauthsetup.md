@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Setting up App Authentication for Purview eDiscovery with Microsoft Graph API
 
-In the world of data compliance and legal investigations, Purview eDiscovery plays a crucial role in managing and retrieving information across your organization�s digital landscape. In this age where data breaches are becoming more frequent and the regulatory requirements are more stringent, the security and integrity of eDiscovery processes have never been more critical.  Traditional authentication methods often fall short when it comes to providing the necessary security and compliance guarantees, especially in complex enterprise environments. This is where App Authentication steps in as a game-changer for Purview eDiscovery, leveraging Microsoft Graph API. 
+In the world of data compliance and legal investigations, Purview eDiscovery plays a crucial role in managing and retrieving information across your organization�s digital landscape. In this age where data breaches are becoming more frequent and the regulatory requirements are more stringent, the security and integrity of eDiscovery processes have never been more critical. Traditional authentication methods often fall short when it comes to providing the necessary security and compliance guarantees, especially in complex enterprise environments. This is where App Authentication steps in as a game-changer for Purview eDiscovery, leveraging Microsoft Graph API. 
 
 Implementing App Authentication using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up App Authentication for Purview eDiscovery, ensuring your applications are compliant and secure.
 
@@ -17,7 +17,7 @@ Implementing App Authentication using Microsoft Graph API ensures secure and eff
 
 ### Enhancing Security and Compliance
 
-App Authentication enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials cannot match. By using Application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
+App Authentication enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using Application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
 
 ### Streamlining Access and Integration
 
@@ -25,7 +25,7 @@ Furthermore, App Authentication streamlines the integration of eDiscovery servic
 
 ## Implementing App Authentication
 
-Listed below are step by step instructions to implement App Auth. The basic steps involve registering the app in Azure, creating client secret/ certificates, assigning the right API permissions, setting up a service principal and then using App Auth for invocation.
+Listed below are step by step instructions to implement App Auth. The basic steps involve registering the app in Azure, creating client secret/ certificates, assigning the right API permissions, setting up a service principal, and then using App Auth for invocation.
 
 ### Step 1: Register a New Application in Azure
 
@@ -35,7 +35,7 @@ Listed below are step by step instructions to implement App Auth. The basic step
 
 1.3 Go to App registrations, select New registration.
 
-1.4 Provide a meaningful name for your application and click register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
+1.4 Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
 1.5 You can now see the newly created app registration and the details.
 
@@ -45,7 +45,7 @@ Listed below are step by step instructions to implement App Auth. The basic step
 
 Once your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-For a client secret, click New client secret, add a description, and click Add to save. Make sure to copy and securely store the secret value, as required for authentication.
+For a client secret, select New client secret, add a description, and select Add to save. Make sure to copy and securely store the secret value, as required for authentication.
 
 If using a certificate, you can upload one to use along with the App ID for automation purposes.
 
@@ -107,4 +107,4 @@ Once connected, you can start making calls to the Graph API using [Invoke-MgGrap
 
 ## References
 
-For API testing on postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
+For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
