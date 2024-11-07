@@ -4,6 +4,7 @@ description: "Email clients can send messages through Exchange in a MIME message
 author: "isvargasmsft"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date : 11/07/2024
 ---
 
 # Send messages with MIME content

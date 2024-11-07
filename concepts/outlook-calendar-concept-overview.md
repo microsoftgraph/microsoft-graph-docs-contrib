@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Outlook calendar API overview

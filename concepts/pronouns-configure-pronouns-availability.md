@@ -5,6 +5,7 @@ author: "aymen-ms"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Manage pronouns settings for an organization using the Microsoft Graph API

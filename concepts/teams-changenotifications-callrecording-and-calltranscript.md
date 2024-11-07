@@ -5,6 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Get change notifications for meeting transcripts and recordings using Microsoft Graph

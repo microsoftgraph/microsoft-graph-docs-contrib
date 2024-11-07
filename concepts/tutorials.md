@@ -3,6 +3,7 @@ title: Microsoft Graph tutorials
 description: Create a basic application that accesses data via Microsoft Graph in 30 minutes by using a step-by-step Microsoft Graph tutorial.
 author: jasonjoh
 ms.localizationpriority: high
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph tutorials

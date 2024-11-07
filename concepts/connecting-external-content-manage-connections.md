@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date : 11/07/2024
 ---
 <!---<author of this doc: rsamai>--->
 

@@ -4,6 +4,7 @@ description: "Learn how global administrators can authorize Microsoft Graph Data
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph Data Connect app authorization

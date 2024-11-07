@@ -3,6 +3,7 @@ title: "Upgrade to the latest version of Microsoft Graph Toolkit"
 description: "Upgrade guide to help you move from a previous version of the Toolkit to the most recent."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Upgrade to the latest version of Microsoft Graph Toolkit

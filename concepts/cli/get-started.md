@@ -3,6 +3,7 @@ title: "Get started with the Microsoft Graph command-line interface (CLI)"
 description: "Get started with the Microsoft Graph command-line interface by using it perform some basic tasks."
 ms.localizationpriority: medium
 author: jasonjoh
+ms.date : 11/07/2024
 ---
 
 # Get started with the Microsoft Graph command-line interface (CLI)

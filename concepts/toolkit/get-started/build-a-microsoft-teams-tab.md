@@ -3,6 +3,7 @@ title: "Build a Microsoft Teams tab with the Microsoft Graph Toolkit"
 description: "Get started building a Microsoft Teams tab using the Microsoft Graph Toolkit."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit

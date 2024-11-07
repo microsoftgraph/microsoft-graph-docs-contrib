@@ -5,6 +5,7 @@ author: "monaray97"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
+ms.date : 11/07/2024
 ---
 
 # Enable the simplified admin experience for your Microsoft Graph connector

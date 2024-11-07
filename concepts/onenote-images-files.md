@@ -4,6 +4,7 @@ description: "Use img, object, and iframe elements to add images, videos, and fi
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
+ms.date : 11/07/2024
 ---
 
 

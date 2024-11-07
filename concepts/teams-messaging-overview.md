@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Working with Microsoft Teams messaging APIs in Microsoft Graph

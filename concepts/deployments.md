@@ -3,6 +3,7 @@ title: "Microsoft Graph national cloud deployments"
 description: "Learn about Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
 author: "adamedx"
 ms.localizationpriority: medium
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph national cloud deployments

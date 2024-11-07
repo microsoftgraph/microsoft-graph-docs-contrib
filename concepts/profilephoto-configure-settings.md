@@ -6,6 +6,7 @@ ms.author: "shivansingh"
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: people
+ms.date : 11/07/2024
 ---
 
 # Manage user profile photo settings in Microsoft 365 by using Microsoft Graph

@@ -4,6 +4,7 @@ description: "Learn about the payment models and license requirements that apply
 author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date : 11/07/2024
 ---
 
 # Payment models and licensing requirements for Microsoft Teams APIs

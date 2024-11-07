@@ -3,6 +3,7 @@ title: "Handle events exposed by Microsoft Graph Toolkit components"
 description: "Many Microsoft Graph Toolkit components emit custom events. Attaching event handlers to these events allows you to respond to them and control the behavior of your app."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Handle events exposed by Microsoft Graph Toolkit components

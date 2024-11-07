@@ -4,6 +4,7 @@ description: "Integrate with Windows 365 Cloud PC to create Azure network connec
 author: "cohanley"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
+ms.date : 11/07/2024
 ---
 
 # Overview for Windows 365 Cloud PC on Microsoft Graph

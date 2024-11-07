@@ -3,6 +3,7 @@ title: "People picker component in Microsoft Graph Toolkit"
 description: "You can use the mgt-people-picker web component to search for people and render the list of results from Microsoft Graph in a dropdown."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # People picker component in Microsoft Graph Toolkit

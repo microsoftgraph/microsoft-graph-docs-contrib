@@ -3,6 +3,7 @@ title: "Microsoft Graph what's new history"
 description: "Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources."
 author: "lauragra"
 ms.localizationpriority: medium
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph what's new history

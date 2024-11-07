@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date : 11/07/2024
 ---
 
 # Software updates with Windows Autopatch

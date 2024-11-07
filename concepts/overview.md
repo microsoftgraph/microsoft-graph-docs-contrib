@@ -4,6 +4,7 @@ description: "Use Microsoft Graph data and other datasets to derive insights and
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Overview of Microsoft Graph

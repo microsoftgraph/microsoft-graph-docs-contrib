@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork

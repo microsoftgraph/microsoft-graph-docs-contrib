@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: high
 ms.subservice: "education"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Education API overview

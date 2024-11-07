@@ -4,6 +4,7 @@ description: "This article describes the steps involved in sending email by usin
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date : 11/07/2024
 ---
 
 # Overview of the Microsoft Graph send mail process

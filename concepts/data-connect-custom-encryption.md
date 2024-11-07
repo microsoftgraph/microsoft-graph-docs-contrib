@@ -4,6 +4,7 @@ description: "Learn how to enable custom dataset encryption with Microsoft Graph
 author: "rimisra2"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
+ms.date : 11/07/2024
 ---
 
 # Use encryption with Microsoft Graph Data Connect

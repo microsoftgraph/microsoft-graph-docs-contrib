@@ -5,6 +5,7 @@ author: "DavidMoksha"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: conceptualPageType
+ms.date : 11/07/2024
 ---
 
 # Configuring task recurrence in Planner (preview)

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK."
+ms.date : 11/07/2024
 ---
 
 # Test your Microsoft Graph connector

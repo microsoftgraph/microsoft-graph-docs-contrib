@@ -3,6 +3,7 @@ title: "Chat component in Microsoft Graph Toolkit"
 description: "The Chat component enables the user to have 1:1 or group conversations."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Chat component in Microsoft Graph Toolkit

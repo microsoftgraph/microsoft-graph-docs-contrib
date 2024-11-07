@@ -3,6 +3,7 @@ title: "Microsoft Graph Toolkit providers"
 description: "The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph Toolkit providers

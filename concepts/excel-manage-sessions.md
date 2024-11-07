@@ -4,6 +4,7 @@ description: "Learn how to use the Excel API in Microsoft Graph in the most effi
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
+ms.date : 11/07/2024
 ---
 
 # Manage sessions and persistence in Excel

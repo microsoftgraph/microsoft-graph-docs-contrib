@@ -4,6 +4,7 @@ description: "Emails are represented by the message resource in the Outlook mail
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date : 11/07/2024
 ---
 
 # Automate creating, sending, and processing messages

@@ -4,6 +4,7 @@ description: "Rubrics are an effective and widely used way of grading assignment
 author: "mmast-msft"
 ms.localizationpriority: high
 ms.subservice: "education"
+ms.date : 11/07/2024
 ---
 
 # Education rubric overview

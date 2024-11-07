@@ -4,6 +4,7 @@ description: "Microsoft 365 usage reports are protected by both permissions and 
 author: "kszb"
 ms.localizationpriority: high
 ms.subservice: "reports"
+ms.date : 11/07/2024
 ---
 
 # Authorization for APIs to read Microsoft 365 usage reports

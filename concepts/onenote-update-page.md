@@ -4,6 +4,7 @@ description: "Update the content of a OneNote page by sending a PATCH request to
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
+ms.date : 11/07/2024
 ---
 
 # Update OneNote page content

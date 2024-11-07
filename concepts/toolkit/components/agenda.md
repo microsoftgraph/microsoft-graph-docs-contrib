@@ -3,6 +3,7 @@ title: "Agenda component in Microsoft Graph Toolkit"
 description: "The mgt-agenda web component is used to represent events in a user or group calendar."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Agenda component in Microsoft Graph Toolkit

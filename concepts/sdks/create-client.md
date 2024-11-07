@@ -3,6 +3,7 @@ title: "Create a Microsoft Graph client"
 description: "Describes how to create a client to use to make calls to Microsoft Graph. Includes how to set up authentication and select a sovereign cloud."
 ms.localizationpriority: medium
 author: MichaelMainer
+ms.date : 11/07/2024
 ---
 
 # Create a Microsoft Graph client

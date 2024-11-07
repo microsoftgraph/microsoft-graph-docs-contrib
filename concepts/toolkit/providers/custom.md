@@ -3,6 +3,7 @@ title: "Custom provider"
 description: "Create a custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Custom provider

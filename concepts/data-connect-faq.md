@@ -4,6 +4,7 @@ description: "Find answers to frequently asked questions about how Data Connect 
 author: "David1997sb"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph Data Connect frequently asked questions

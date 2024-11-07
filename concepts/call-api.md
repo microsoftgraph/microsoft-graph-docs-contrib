@@ -4,6 +4,7 @@ description: "To access and manipulate a Microsoft Graph resource, you call and 
 ms.localizationpriority: medium
 author: "ananmishr"
 ms.subservice: "cloud-communications"
+ms.date : 11/07/2024
 ---
 
 # Calling the Microsoft Graph API

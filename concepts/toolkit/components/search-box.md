@@ -3,6 +3,7 @@ title: "Search box component in the Microsoft Graph Toolkit"
 description: "The Search box component is used to render a search input that can be connected to a search results component for building complex search scenarios"
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # Search box component in the Microsoft Graph Toolkit

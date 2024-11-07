@@ -4,6 +4,7 @@ description: "Create a OneNote page by sending a POST request to a pages endpoin
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
+ms.date : 11/07/2024
 ---
 
 # Create OneNote pages

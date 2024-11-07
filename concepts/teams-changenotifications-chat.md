@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Get change notifications for chats using Microsoft Graph

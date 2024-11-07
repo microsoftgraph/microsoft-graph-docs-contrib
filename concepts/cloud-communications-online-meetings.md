@@ -4,6 +4,7 @@ description: "Use the cloud communications API in Microsoft Graph to create or j
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date : 11/07/2024
 ---
 
 # Create or join online meetings

@@ -3,6 +3,7 @@ title: "Microsoft Graph SDK overview"
 description: Learn about the Microsoft Graph SDKs.
 author: MichaelMainer
 ms.custom: scenarios:getting-started
+ms.date : 11/07/2024
 ---
 
 # Microsoft Graph SDK overview

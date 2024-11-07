@@ -3,6 +3,7 @@ title: "Theme toggle component in the Microsoft Graph Toolkit"
 description: "The theme toggle component allows the user to set or change the document theme from light to dark using a toggle."
 ms.localizationpriority: medium
 author: musale
+ms.date : 11/07/2024
 ---
 
 # Theme toggle component in the Microsoft Graph Toolkit

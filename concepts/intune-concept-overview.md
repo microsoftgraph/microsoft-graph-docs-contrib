@@ -4,6 +4,7 @@ description: "Use the Intune API in Microsoft Graph to manage devices and apps a
 author: "dougeby"
 ms.localizationpriority: high
 ms.subservice: "intune"
+ms.date : 11/07/2024
 ---
 
 # Intune devices and apps API overview

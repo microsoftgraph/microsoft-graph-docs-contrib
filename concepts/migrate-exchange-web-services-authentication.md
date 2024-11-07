@@ -5,6 +5,7 @@ author: "sumithra-maran"
 ms.localizationpriority: medium
 ms.subservice: "exchange"
 doc_type: conceptualPageType
+ms.date : 11/07/2024
 ---
 
 # Authentication differences between Exchange Web Services (EWS) and Microsoft Graph

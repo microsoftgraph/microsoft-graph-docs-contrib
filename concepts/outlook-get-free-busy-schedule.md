@@ -4,6 +4,7 @@ description: "Use the getSchedule action to get the availability information of 
 author: "tariq-sharif"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date : 11/07/2024
 ---
 
 # Get free/busy schedule of Outlook calendar users and resources

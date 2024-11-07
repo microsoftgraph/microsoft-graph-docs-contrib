@@ -3,6 +3,7 @@ title: "To Do component in Microsoft Graph Toolkit"
 description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To Do."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date : 11/07/2024
 ---
 
 # To Do component in Microsoft Graph Toolkit
