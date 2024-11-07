@@ -103,7 +103,7 @@ Content-Type: application/json
     "deliveryStage": "publicPreview",
     "category": "userAuthentication",
     "publishedDateTime": "2024-04-27T07:00:00Z",
-    "gotoLink": "null"
+    "gotoLink": null
   }
 }
 ```
