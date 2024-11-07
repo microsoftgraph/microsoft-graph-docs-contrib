@@ -38,9 +38,3 @@ When you send a request to create a subscription to get change notifications thr
     > The validation token must be returned in plain text. If the client returns an encoded validation token, the validation fails.
 
 1. If the endpoint validation fails, Microsoft Graph doesn't create the subscription.
-
-<!--
-Additionally, you can use the [Microsoft Graph Postman collection](/graph/use-postman) to confirm that your endpoint properly implements the validation request. The **notificationUrl** validation request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.
-
-![validation response test results](../images/change-notifications/validation-request-tests-results.png)
--->
