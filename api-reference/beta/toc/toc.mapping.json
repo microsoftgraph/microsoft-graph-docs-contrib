@@ -1073,13 +1073,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Trusted certificate authorities for apps (preview)",
-              "resources": [
-                "certificateBasedApplicationConfiguration",
-                "certificateAuthorityAsEntity"
-              ]
             }
           ]
         },
@@ -1656,6 +1649,13 @@
                     "x509CertificateAuthenticationMethodConfiguration"
                   ]
                 }
+              ]
+            },
+            {
+              "name": "Trusted certificate authorities for apps (preview)",
+              "resources": [
+                "certificateBasedApplicationConfiguration",
+                "certificateAuthorityAsEntity"
               ]
             },
             {
@@ -2527,6 +2527,13 @@
           "resources": [
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.deploymentAccessKeyType",
+            "microsoft.graph.security.identityContainer",
+            "microsoft.graph.security.networkAdapter",
+            "microsoft.graph.security.sensorDeploymentPackage",
+            "microsoft.graph.security.sensorSettings"
           ]
         },
         {

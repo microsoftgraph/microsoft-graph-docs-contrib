@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "orgcontact_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-list-permissions.md)]
 
+[!INCLUDE [rbac-org-contacts-apis-read-all](../includes/rbac-for-apis/rbac-org-contacts-apis-read-all.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
