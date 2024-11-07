@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The collection of public key infrastructure instances over different Entra features.
+The collection of public key infrastructure instances over different Microsoft Entra features.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -25,12 +25,12 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the PublicKeyInfrastructure entity. Inherited from [entity](../resources/entity.md).|
+|id|String|The identifier of the PublicKeyInfrastructure entity. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|certificateBasedAuthConfigurations|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md) collection|The collection of public key infrastructure instances for the certificate based authentication feature for users.|
+|certificateBasedAuthConfigurations|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md) collection|The collection of public key infrastructure instances for the certificate-based authentication feature for users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

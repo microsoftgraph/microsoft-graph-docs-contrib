@@ -26,12 +26,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-post-certificatebasedauthconfigurations-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
+{
+  "displayName": "Contoso PKI"
+}
+
 ``` http
 POST /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
@@ -51,12 +57,7 @@ You can specify the following properties when creating a **certificateBasedAuthP
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| The date time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|displayName|String|The name of the certificateBasedAuthPki entity. Optional.|
-|status|String|The status of any asynchronous jobs run on the certificateBasedAuthPki entity which can be upload or delete. Optional.|
-|statusDetails|String|Property that provides additional information of the upload/delete operation of PKI. Optional.|
-|lastModifiedDateTime|DateTimeOffset|Date time the certificateBasedAuthPki object of its related certificate authorities were modified. Required.|
-
+|displayName|String|The name of the certificateBasedAuthPki object. Optional.|
 
 
 ## Response
@@ -68,21 +69,19 @@ If successful, this method returns a `201 Created` response code and a [certific
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_certificatebasedauthpki_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-  "deletedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "status": "String",
-  "statusDetails": "String"
+  "displayName": "Contoso PKI"
 }
 ```
 
@@ -97,6 +96,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.certificateBasedAuthPki"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,8 +107,7 @@ Content-Type: application/json
   "deletedDateTime": null,
   "displayName": "Contoso PKI",
   "status": "succeeded",
-  "statusDetails": "String",
-  "lastModifiedDateTime": "String (timestamp)"
+  "statusDetails": null,
+  "lastModifiedDateTime": "2024-10-16T18:09:56Z"
 }
 ```
-

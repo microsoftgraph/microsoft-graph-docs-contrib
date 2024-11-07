@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The properties of each certificate authority object contained in the public key infrastructure resource.
+The properties of each certificate authority object contained in the [certificateBasedAuthPki](../resources/certificateBasedAuthPki.md) resource.
 
 
 Inherits from [directoryObject](../resources/directoryobject.md).
@@ -32,18 +32,18 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |certificate|Binary|The public key of the certificate authority.|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate authority whether `root` or `intermediate`. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
-|createdDateTime|DateTimeOffset|The creation DateTime of the certificate authority.|
-|deletedDateTime|DateTimeOffset|The date time when the object was soft deleted. Inherited from base class and `null` for objects that aren't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
-|displayName|String|The display name of the Public key infrastructure for the certificate authority.|
-|expirationDateTime|DateTimeOffset|The expirationTime of the certificate authority.|
-|id|String|The id of the certificateAuthority entity. Inherited from [entity](../resources/entity.md).|
-|isIssuerHintEnabled|Boolean|If `true` the certificate authority is enabled for the issuer hint feature where it's presented to the user in the certificate picker to be used for authentication. `false` by default.|
-|issuer|String|The name of the certificate authority.|
+|createdDateTime|DateTimeOffset|The date and time when the certificate authority was created.|
+|deletedDateTime|DateTimeOffset|The date and time when the certificate authority was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deltacertificateRevocationListUrl|String|The URL to check to find out whether the certificate is revoked.|
+|displayName|String|The display name of the certificate authority.|
+|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires.|
+|id|String|The ID of the certificate authority. Inherited from [entity](../resources/entity.md).|
+|isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
+|issuer|String|The issuer of the certificate authority.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority.|
-|thumbprint|String|The thumbprint of the certificate authority public certificate.|
+|thumbprint|String|The thumbprint of certificate authority certificate.|
 
 ## Relationships
 None.

@@ -26,19 +26,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/publickeyinfrastructureroot-list-certificatebasedauthconfigurations-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $filter, $top, and $count OData query parameters to help customize the response. For $top default page size is 100 and max is 999. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,11 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_certificatebasedauthpki"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
@@ -87,12 +92,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-      "id": "c721dc42-b383-e883-bf80-2d539946cf8c",
-      "deletedDateTime": "String (timestamp)",
-      "displayName": "String",
-      "status": "String",
-      "statusDetails": "String",
-      "lastModifiedDateTime": "String (timestamp)"
+      "id": "fdd9841c-90c6-4234-a116-d72a5cd2c583",
+      "deletedDateTime": null,
+      "displayName": "Contoso PKI",
+      "status": "succeeded",
+      "statusDetails": null,
+      "lastModifiedDateTime": "2024-10-16T18:09:56Z"
     }
   ]
 }

@@ -26,19 +26,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthoritydetail-get-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certificateBasedAuthPkiId}/certificateAuthorities/{certificateAuthorityDetailId}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports so$select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,20 +89,19 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.certificateAuthorityDetail",
-    "id": "2b422243-5eec-d46c-889d-5bce0d232072",
-    "deletedDateTime": "String (timestamp)",
-    "certificateAuthorityType": "String",
+    "id": "90777c92-2eb3-4a68-931d-4a3e1e1c741f",
+    "deletedDateTime": null,
+    "certificateAuthorityType": "root",
     "certificate": "Binary",
-    "displayName": "String",
-    "issuer": "String",
-    "issuerSubjectKeyIdentifier": "String",
-    "createdDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)",
-    "thumbprint": "String",
-    "certificateRevocationListUrl": "String",
-    "deltacertificateRevocationListUrl": "String",
-    "isIssuerHintEnabled": "Boolean"
+    "displayName": "Contoso2 CA1",
+    "issuer": "Contoso2",
+    "issuerSubjectKeyIdentifier": "C0E9....711A",
+    "createdDateTime": "2024-10-25T18:05:28Z",
+    "expirationDateTime": "2027-08-29T02:05:57Z",
+    "thumbprint": "C6FA....4E9CF2",
+    "certificateRevocationListUrl": null,
+    "deltacertificateRevocationListUrl": null,
+    "isIssuerHintEnabled": true
   }
 }
 ```
-

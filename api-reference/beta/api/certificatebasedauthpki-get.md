@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-get-permissions.md)]
 
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -38,7 +40,7 @@ GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{certi
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $select OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,13 +88,13 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.certificateBasedAuthPki",
-    "id": "c721dc42-b383-e883-bf80-2d539946cf8c",
-    "deletedDateTime": "String (timestamp)",
-    "displayName": "String",
-    "status": "String",
-    "statusDetails": "String",
-    "lastModifiedDateTime": "String (timestamp)"
-  }
+    "id": "fdd9841c-90c6-4234-a116-d72a5cd2c583",
+    "deletedDateTime": null,
+    "displayName": "Contoso PKI",
+    "status": "succeeded",
+    "statusDetails": null,
+    "lastModifiedDateTime": "2024-10-29T02:05:57Z"
+    }
 }
 ```
 

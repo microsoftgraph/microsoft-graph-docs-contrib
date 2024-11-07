@@ -1,6 +1,6 @@
 ---
 title: "certificateBasedAuthPki: upload"
-description: "Get the PKI file and populate the certificateAuthorities."
+description: "Append additional certificate authority details to a certificateBasedAuthPki resource."
 author: "suawat"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the PKI file and populate the certificateAuthorities.
+Append additional certificate authority details to a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) resource. Only one operation can run at a time and this operation can take up to 30 minutes to complete. To know whether another upload is in progress, call the [Get certificateBasedAuthPki](../api/certificatebasedauthpki-get.md). The **status** property will have the value `running`.
 
 ## Permissions
 
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/certificatebasedauthpki-upload-permissions.md)]
+
+[!INCLUDE [rbac-cert-based-authpkis-apis](../includes/rbac-for-apis/rbac-cert-based-authpkis-apis.md)]
 
 ## HTTP request
 
@@ -51,13 +53,13 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|uploadUrl|String|The URL where the service can download the PKI file and populate the certificateAuthorities.|
-|sha256FileHash|String|A sequence of numbers and letters to check that your copy of a downloaded update file is identical to the original.|
+|uploadUrl|String|The URL where the service can download the PKI file and populate the certificateAuthorities. This can be any http or https publicly accessible internet facing URL.|
+|sha256FileHash|String|A sequence of numbers and letters to check that your copy of a downloaded update file is identical to the original. This can be computed using the [Get_FileHash cmdlet](/powershell/module/microsoft.powershell.utility/get-filehash).|
 
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code. If another upload is currently in progress, this API returns a 400 Bad Request error message. Attempting to upload a duplicate certificate results in a 400 Bad Request error code with a Duplicate Certificate exists" error message.
 
 ## Examples
 
@@ -74,8 +76,8 @@ POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certific
 Content-Type: application/json
 
 {
-  "uploadUrl": "String",
-  "sha256FileHash": "String"
+  "uploadUrl": "https://microsoft.sharepoint.com/CBA/demo/CBARootPKI.p7b",
+  "sha256FileHash": "D7F9....61E6F"
 }
 ```
 
@@ -83,7 +85,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
