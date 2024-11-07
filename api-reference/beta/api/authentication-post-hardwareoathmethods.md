@@ -79,7 +79,7 @@ Content-Type: application/json
   "device": {
         "id": "aad49556-####-####-####-############"
     },
-  "displayName": Amy Masters Token"
+  "displayName": "Amy Masters Token"
 }
 ```
 
