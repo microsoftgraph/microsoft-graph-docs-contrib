@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
 
 This API supports the following PSTN scenarios:
 
@@ -62,13 +62,12 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 ## Examples
 
-### Example 1: Create peer-to-peer VoIP call with service hosted media
+### Example 1: Create a peer-to-peer VoIP call with service-hosted media
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 #### Request
-The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
-
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the service hosts the media. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +100,8 @@ Content-Type: application/json
   ],
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
-    "isContentSharingNotificationEnabled": true
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
@@ -221,6 +221,11 @@ Content-Type: application/json
   "chatInfo": null,
   "meetingInfo": null,
   "transcription": null,
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true,
+    "isDeltaRosterEnabled": true
+  },
   "toneInfo": null
 }
 ```
