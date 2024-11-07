@@ -90,6 +90,14 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 >- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbybypasssettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
 
+### allowedLobbyAdmitterRoles values
+
+| Value                                 | Description                                       |
+|---------------------------------------|---------------------------------------------------|
+| organizerAndCoOrganizersAndPresenters | Meeting organizer, co-organizers, and presenters. |
+| organizerAndCoOrganizers              | Meeting organizer and co-organizers.              |
+| unknownFutureValue                    | Evolvable enumeration sentinel value. Don't use.  |
+
 ### meetingChatHistoryDefaultMode values
 
 | Value              | Description                                                            |
@@ -124,14 +132,6 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
-
-### allowedLobbyAdmitterRoles values
-
-| Value                                 | Description                                       |
-|---------------------------------------|---------------------------------------------------|
-| organizerAndCoOrganizersAndPresenters | Meeting organizer, co-organizers, and presenters. |
-| organizerAndCoOrganizers              | Meeting organizer and co-organizers.              |
-| unknownFutureValue                    | Evolvable enumeration sentinel value. Don't use.  |
 
 > [!TIP]
 >
