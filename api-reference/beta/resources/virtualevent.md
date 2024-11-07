@@ -20,6 +20,12 @@ Inherits from [entity](../resources/entity.md).
 > [!TIP]
 > This is an abstract type and can't be used directly. Use the derived types [virtualEventTownhall](virtualeventtownhall.md) or [virtualEventWebinar](virtualeventwebinar.md) instead.
 
+## Methods
+
+| Method | Return Type |Description |
+| ------ | ----------- | ---------- |
+| [Set external event information](../api/virtualevent-setexternaleventinformation.md) | None | Link external event information to a [virtualEventTownhall](../resources/virtualeventtownhall.md) or [virtualEventWebinar](../resources/virtualeventwebinar.md) by setting an **externalEventId**. ]
+
 ## Properties
 
 |Property|Type|Description|
