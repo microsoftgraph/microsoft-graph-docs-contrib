@@ -15,11 +15,12 @@ Password credential configuration object that contains properties to configure r
 
 ## Properties
 
-| Property                            | Type                         | Description                                                                                                                                                                                                                                                                                                                                                   |
-| :---------------------------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| restrictionType                     | appCredentialRestrictionType | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`,`customPasswordAddition`, `unknownFutureValue`. Each value of restrictionType can be used only once per policy.                                                                                        |
-| maxLifetime                         | Duration                     | Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds. Defined in ISO 8601 format for Durations. For example, "P4DT12H30M5S" represents a duration of four days, twelve hours, thirty minutes, and five seconds. This property is required when restriction type is set to `passwordLifetime`. |
-| restrictForAppsCreatedAfterDateTime | DateTimeOffset               | Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be `null`.                                                                                                                                               |
+| Property                                    | Type                            | Description |
+| :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `passwordLifetime`.|
+| restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
+| restrictionType                             | appCredentialRestrictionType    | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`, `customPasswordAddition`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
+| state                                       | appManagementRestrictionState   | String value that indicates if the restriction is evaluated. The possible values are: `enabled`, `disabled`, and `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
 
 ## Relationships
 
@@ -41,7 +42,10 @@ The following JSON representation shows the resource type.
   "restrictionType": {
     "@odata.type": "microsoft.graph.appCredentialRestrictionType"
   },
-  "maxLifetime": "String (duration)",
-  "restrictForAppsCreatedAfterDateTime": "DateTimeOffset"
+  "state": {
+    "@odata.type": "microsoft.graph.appManagementRestrictionState"
+  },
+  "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
+  "maxLifetime": "String (duration)"
 }
 ```
