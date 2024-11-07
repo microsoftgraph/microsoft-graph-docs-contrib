@@ -1,5 +1,5 @@
 ---
-title: "Get hardwareOathTokenAuthenticationMethodDevice"
+title: "Delete hardwareOathTokenAuthenticationMethodDevice"
 description: "Delete a Hardware OATH token. Token needs to be unassigned."
 author: "luc-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get hardwareOathTokenAuthenticationMethodDevice
+# Delete hardwareOathTokenAuthenticationMethodDevice
 
 Namespace: microsoft.graph
 

@@ -1,6 +1,6 @@
 ---
 title: "hardwareOathTokenAuthenticationMethodDevice resource type"
-description: "Exposes the hardware OATH method in the directory."
+description: "Exposes hardware OATH devices in the directory."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes the hardware OATH method in the directory.
+Exposes hardware OATH devices in the directory.
 
 Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevice.md).
 

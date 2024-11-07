@@ -1,5 +1,5 @@
 ---
-title: "Create hardwareOathTokenAuthenticationMethodDevice"
+title: "Create one or multiple hardwareOathTokenAuthenticationMethodDevice"
 description: "Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk creation."
 author: "luc-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Create hardwareOathTokenAuthenticationMethodDevice
+# Create one or multiple hardwareOathTokenAuthenticationMethodDevice
 
 Namespace: microsoft.graph
 
@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [hardwareOathTokenAuthe
 
 You can specify the following properties when creating a **hardwareOathTokenAuthenticationMethodDevice**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |serialNumber|String|Serial number of the specific hardware token, often found on the back of the device. Required.|
