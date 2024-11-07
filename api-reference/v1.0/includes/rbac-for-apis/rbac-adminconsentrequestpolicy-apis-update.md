@@ -1,7 +1,6 @@
 ---
-author: madansr7
+author: msewaweru
 ms.topic: include
-ms.author: saumadan
 ---
 
 > [!IMPORTANT]
