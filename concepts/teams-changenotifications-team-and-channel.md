@@ -5,7 +5,7 @@ author: "anandab"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Get change notifications for teams and channels using Microsoft Graph

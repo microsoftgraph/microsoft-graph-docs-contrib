@@ -4,7 +4,7 @@ description: "Learn how to use the partner billing API in Microsoft Graph to fac
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.subservice: "reports"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use the partner billing API in Microsoft Graph to access billing data

@@ -4,7 +4,7 @@ description: "Use the cloud communications API in Microsoft Graph to choose a me
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Choose a media hosting option

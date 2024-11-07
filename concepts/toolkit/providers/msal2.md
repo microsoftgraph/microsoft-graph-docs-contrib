@@ -3,7 +3,7 @@ title: "MSAL2 provider"
 description: "The MSAL 2 provider uses MSAL-browser to sign in users and acquire tokens to use with the Microsoft Graph"
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # MSAL2 Provider

@@ -3,7 +3,7 @@ title: "Search results component in Microsoft Graph Toolkit"
 description: "A search results component allows you to make queries to the search endpoint of Microsoft Graph directly in your HTML."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Search results component in Microsoft Graph Toolkit

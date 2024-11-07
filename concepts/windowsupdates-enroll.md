@@ -5,7 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: conceptualPageType
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Enroll in update management by Windows Autopatch

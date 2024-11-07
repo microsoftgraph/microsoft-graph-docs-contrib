@@ -4,7 +4,7 @@ description: "Get a list of the supported language codes for the Microsoft Searc
 author: "cxiang"
 ms.localizationpriority: medium
 ms.subservice: "search"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Supported language codes

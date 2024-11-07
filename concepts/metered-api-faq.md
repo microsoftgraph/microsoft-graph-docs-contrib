@@ -4,7 +4,7 @@ description: "Find answers for frequent questions about using metered APIs and s
 author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Metered APIs and services in Microsoft Graph FAQ

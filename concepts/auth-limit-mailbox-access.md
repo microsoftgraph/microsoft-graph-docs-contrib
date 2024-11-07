@@ -4,7 +4,7 @@ description: "To scope an app's application permissions to specific Exchange Onl
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "exchange"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Limiting application permissions to specific Exchange Online mailboxes

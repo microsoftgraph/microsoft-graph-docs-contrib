@@ -4,7 +4,7 @@ description: "Use the Microsoft Teams API in Microsoft Graph to create teams in 
 author: "hachandr"
 ms.localizationpriority: high
 ms.subservice: "teams"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Create teams and manage members using the Microsoft Teams API

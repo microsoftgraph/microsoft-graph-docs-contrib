@@ -3,7 +3,7 @@ title: "Integrate your Android app with the client-side SDK (deprecated)"
 description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Android apps (deprecated)."
 ms.localizationpriority: high
 ms.subservice: "notifications"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Integrate your Android app with the client-side SDK for user notifications (deprecated)

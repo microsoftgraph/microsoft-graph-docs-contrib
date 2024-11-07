@@ -4,7 +4,7 @@ description: "Lists and describes the error codes that are returned by the workb
 author: "grangeryy"
 ms.localizationpriority: medium
 ms.subservice: "excel"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Error codes for workbooks and charts APIs

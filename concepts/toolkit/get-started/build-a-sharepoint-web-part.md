@@ -3,7 +3,7 @@ title: "Build a SharePoint web part with the Microsoft Graph Toolkit"
 description: "Get started using the Microsoft Graph Toolkit to build a SharePoint web part."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Build a SharePoint web part with the Microsoft Graph Toolkit

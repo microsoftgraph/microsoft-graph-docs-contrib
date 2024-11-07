@@ -3,7 +3,7 @@ title: "Display Microsoft Graph Toolkit components right-to-left (rtl)"
 description: "Describes right-to-left (rtl) support in the Microsoft Graph Toolkit components."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Display Microsoft Graph Toolkit components right-to-left (rtl)

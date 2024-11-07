@@ -3,7 +3,7 @@ title: "Analyze Microsoft Graph data in your data storage"
 description: "Learn about Microsoft Graph interaction patterns for non-interactive use cases that rely on a large amount of extracted Microsoft 365 data."
 author: "OlgaPodo"
 ms.localizationpriority: medium
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Analyze Microsoft Graph data in your data storage

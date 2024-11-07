@@ -4,7 +4,7 @@ description: "Learn how to use the Microsoft Search API in Microsoft Graph to se
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.subservice: "search"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Search SharePoint content with application permissions

@@ -1,6 +1,6 @@
 ---
 description: "fetchPermissions.ps1 script"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 ```powershell

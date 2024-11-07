@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Surface the data in Microsoft Search

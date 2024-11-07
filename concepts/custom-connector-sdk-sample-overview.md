@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use the Microsoft Graph connectors SDK to build your first custom connector."
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Build your first custom Microsoft Graph connector

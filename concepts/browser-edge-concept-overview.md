@@ -4,7 +4,7 @@ description: "Learn how to use the Edge API in Microsoft Graph to streamline the
 author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use the Edge API in Microsoft Graph to manage browsers

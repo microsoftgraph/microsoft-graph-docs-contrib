@@ -4,7 +4,7 @@ description: "You can use the workbook functions in Excel with Microsoft Graph t
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use workbook functions in Excel

@@ -4,7 +4,7 @@ description: "Learn how to register your Microsoft Graph Data Connect app."
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Data Connect app registration

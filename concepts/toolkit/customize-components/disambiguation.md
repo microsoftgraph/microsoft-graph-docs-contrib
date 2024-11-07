@@ -3,7 +3,7 @@ title: "Microsoft Graph Toolkit component disambiguation"
 description: "Learn about the disambiguation feature of Microsoft Graph Toolkit and how to use it."
 ms.localizationpriority: medium
 author: gavinbarron
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Toolkit component disambiguation

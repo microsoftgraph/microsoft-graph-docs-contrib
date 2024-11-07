@@ -4,7 +4,7 @@ description: "Find information about error codes that the OneNote API in Microso
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Error codes for the OneNote API in Microsoft Graph

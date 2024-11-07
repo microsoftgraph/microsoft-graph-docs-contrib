@@ -4,7 +4,7 @@ description: "Learn how to use the allowNewTimeProposals and proposedNewTime pro
 author: "iamgirishck"
 ms.localizationpriority: high
 ms.subservice: "outlook"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Propose new meeting times in Outlook calendar

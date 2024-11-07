@@ -5,7 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: conceptualPageType
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Set up administrative search answers for users in an organization

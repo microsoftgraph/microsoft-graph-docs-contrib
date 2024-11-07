@@ -1,6 +1,6 @@
 ---
 ms.localizationpriority: medium
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 <!-- markdownlint-disable MD041 -->

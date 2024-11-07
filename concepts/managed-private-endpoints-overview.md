@@ -5,7 +5,7 @@ author: "michaelvenables"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Managed private endpoints in Microsoft Graph Data Connect

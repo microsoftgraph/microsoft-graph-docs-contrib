@@ -5,7 +5,7 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use Postman to try the Microsoft Graph connectors API

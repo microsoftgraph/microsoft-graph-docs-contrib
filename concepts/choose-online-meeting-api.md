@@ -3,7 +3,7 @@ title: "Choose an API in Microsoft Graph to create and join online meetings"
 description: "Consider when to use the calendar API event resource or the cloud communications API onlineMeeting resource for Teams and Skype meetings in Outlook calendar."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Choose an API in Microsoft Graph to create and join online meetings

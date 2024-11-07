@@ -3,7 +3,7 @@ title: "Create a Microsoft Entra app"
 description: "Create a Microsoft Entra application registration for communicating with Microsoft 365"
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Create a Microsoft Entra app to use with the Microsoft Graph Toolkit

@@ -4,7 +4,7 @@ description: "Multipurpose Internet Mail Extensions (MIME) is an industry email 
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Get MIME content of a message

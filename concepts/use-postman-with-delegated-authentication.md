@@ -3,7 +3,7 @@ title: "Use delegated authentication with Postman for Microsoft Graph"
 description: "Learn how to use delegated authentication with Postman for Microsoft Graph to run requests on behalf of the signed-in user."
 author: "jasonjoh"
 ms.localizationpriority: high
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use delegated authentication with Postman for Microsoft Graph

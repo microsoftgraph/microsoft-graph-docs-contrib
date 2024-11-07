@@ -3,7 +3,7 @@ title: "Working with long-running actions"
 description: "Learn how to work with long-running actions when you use Microsoft Graph APIs."
 ms.localizationpriority: medium
 author: "daspek"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Working with long-running actions

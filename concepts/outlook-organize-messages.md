@@ -4,7 +4,7 @@ description: "Organize your Outlook messages the way you like them. Conveniently
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Organize Outlook messages

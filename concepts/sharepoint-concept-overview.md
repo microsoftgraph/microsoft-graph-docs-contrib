@@ -4,7 +4,7 @@ description: "Use the SharePoint REST API in Microsoft Graph to integrate soluti
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # SharePoint sites and content API overview

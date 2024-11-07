@@ -3,7 +3,7 @@ title: "Navigating the Microsoft Graph command-line interface (CLI)"
 description: "The Microsoft Graph command-line interface contains a large number of commands. Learn how to find the right command for what you want to achieve."
 ms.localizationpriority: medium
 author: jasonjoh
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Navigating the Microsoft Graph command-line interface (CLI)

@@ -4,7 +4,7 @@ description: "Discover recommendations for working with the OneNote API in Micro
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Best practices for working with the OneNote API in Microsoft Graph

@@ -4,7 +4,7 @@ description: "Microsoft Purview Information Protection labeling helps organizati
 author: "tommoser"
 ms.localizationpriority: medium
 ms.subservice: "security"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Information Protection overview

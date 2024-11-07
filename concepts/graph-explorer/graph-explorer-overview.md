@@ -3,7 +3,7 @@ title: Use Graph Explorer to try Microsoft Graph APIs
 description: Try Microsoft Graph APIs on the default sample tenant to explore capabilities, or sign in to your tenant and use it as a prototyping tool to fulfill your app scenarios.
 ms.localizationpriority: high
 author: wujessica
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use Graph Explorer to try Microsoft Graph APIs

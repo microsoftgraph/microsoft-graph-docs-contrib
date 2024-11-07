@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph Toolkit with Angular"
 description: "Get started using the Microsoft Graph Toolkit in an Angular application."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph Toolkit with Angular

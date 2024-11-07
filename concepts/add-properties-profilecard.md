@@ -5,7 +5,7 @@ author: "rwaithera"
 ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Add or remove custom attributes on a profile card using the profile card API

@@ -4,7 +4,7 @@ description: "Get troubleshooting information related to using Microsoft Graph D
 author: "David1997sb"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Troubleshoot Microsoft Graph Data Connect

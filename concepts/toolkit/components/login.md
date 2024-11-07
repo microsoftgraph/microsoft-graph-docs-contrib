@@ -3,7 +3,7 @@ title: "Login component in Microsoft Graph Toolkit"
 description: "A Login component is a button and flyout control to facilitate Microsoft identity platform authentication."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Login component in Microsoft Graph Toolkit

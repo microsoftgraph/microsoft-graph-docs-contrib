@@ -3,7 +3,7 @@ title: "Microsoft Graph command-line interface (CLI) overview"
 description: "Learn about the features of the Microsoft Graph command-line interface that can help you derive insights and analytics, and build unique, intelligent apps."
 ms.localizationpriority: medium
 author: jasonjoh
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph command-line interface (CLI) overview

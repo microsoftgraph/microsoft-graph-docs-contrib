@@ -3,7 +3,7 @@ title: "New Chat component in Microsoft Graph Toolkit"
 description: "The New Chat component allows user to create new 1:1 or group conversations in Microsoft Teams."
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # New chat component in Microsoft Graph Toolkit

@@ -5,7 +5,7 @@ author: "payiAzure"
 ms.localizationpriority: high
 ms.subservice: "service-communications"
 ms.custom: scenarios:getting-started
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Access service health and communications in Microsoft Graph

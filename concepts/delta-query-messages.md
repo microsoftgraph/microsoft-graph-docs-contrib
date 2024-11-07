@@ -5,7 +5,7 @@ author: "SuryaLashmiS"
 ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Get incremental changes to messages in a folder

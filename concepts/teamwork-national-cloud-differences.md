@@ -4,7 +4,7 @@ description: "Learn about Microsoft Teams API implementation differences in the 
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.date : 11/07/2024
+ms.date: 11/07/2024
 ---
 
 # Microsoft Teams API implementation differences in national clouds
