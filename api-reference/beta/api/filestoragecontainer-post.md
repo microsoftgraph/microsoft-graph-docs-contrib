@@ -43,7 +43,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| placerholder | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. Only supported for `callRecord` and `session` resources. |
+| dataLocation | Use the `$dataLocation` query parameter to select the desired data locatiion for container creation. Omitting the `$dataLocation` parameter in the Graph Storage Container creation request will default the creation of the container to a tenant’s default geography. |
 
 ## Request headers
 |Name|Description|
