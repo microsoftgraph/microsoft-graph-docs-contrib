@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
+Get the last row within the range. For example, the last row of *B2:D5* is *B5:D5*.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
