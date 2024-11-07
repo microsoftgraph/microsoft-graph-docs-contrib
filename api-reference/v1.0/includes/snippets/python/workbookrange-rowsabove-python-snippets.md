@@ -1,0 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.worksheets.by_workbook_worksheet_id('workbookWorksheet-id').range.rows_above_with_count(1).get()
+
+
+```

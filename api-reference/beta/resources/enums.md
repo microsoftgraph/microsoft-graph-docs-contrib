@@ -4927,3 +4927,11 @@ Possible values for user account types (group membership), per Windows definitio
 |activated|
 |failedActivation|
 |unknownFutureValue|
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|false|
+|true|
+|unknownFutureValue|
