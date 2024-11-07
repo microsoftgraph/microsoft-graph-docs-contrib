@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the last cell within the range. For example, the last cell of "B2:D5" is "D5".
+Get the last cell within the range. For example, the last cell of *B2:D5* is *D5*.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
