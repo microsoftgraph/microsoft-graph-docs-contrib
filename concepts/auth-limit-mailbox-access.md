@@ -1,6 +1,6 @@
 ---
 title: "Limiting application permissions to specific Exchange Online mailboxes"
-description: "To scope an app's application permissions to specific Exchange Online mailboxes, you must to create application access policies."
+description: "To scope an app's application permissions to specific Exchange Online mailboxes, you must create application access policies."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "exchange"
