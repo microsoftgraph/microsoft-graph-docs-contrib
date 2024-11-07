@@ -37,6 +37,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /storage/fileStorage/containers
 ```
+## Optional query parameters
+
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name      |Description|
+|:----------|:----------|
+| dataLocation | Use the `$dataLocation` query parameter to select the desired data locatiion for container creation. Omitting the `$dataLocation` parameter in the Graph Storage Container creation request will default the creation of the container to a tenant’s default geography. |
 
 ## Request headers
 |Name|Description|
