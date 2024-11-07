@@ -135,7 +135,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_hardwareoathtokenauthenticationmethoddevice"
+  "name": "list_hardwareoathtokenauthenticationmethoddevice_filter"
 }
 -->
 ``` http
