@@ -63,6 +63,29 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud licensing (preview)
+  displayName: Cloud licensing, Microsoft Cloud Licensing
+  items:
+  - name: Overview
+    href: ../../resources/cloud-licensing-api-overview.md
+  - name: Usage right
+    items:
+    - name: Usage right
+      href: ../../resources/cloudlicensing-usageright.md
+    - name: List for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: Get
+      href: ../../api/cloudlicensing-usageright-get.md
+  - name: Complex types
+    items:
+    - name: Group cloud licensing
+      href: ../../resources/cloudlicensing-groupcloudlicensing.md
+    - name: Service
+      href: ../../resources/cloudlicensing-service.md
+    - name: User cloud licensing
+      href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC
   items:
   - name: Overview
@@ -105,8 +128,6 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
-    - name: Bulk set review status
-      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info for user
@@ -123,6 +144,8 @@ items:
       href: ../../api/cloudpc-validatebulkresize.md
     - name: Create snapshot
       href: ../../api/cloudpc-createsnapshot.md
+    - name: Retrieve snapshots
+      href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Bulk reprovision remote action (deprecated)
@@ -135,14 +158,10 @@ items:
       href: ../../api/manageddevice-getcloudpcremoteactionresults.md
     - name: Get review status (deprecated)
       href: ../../api/manageddevice-getcloudpcreviewstatus.md
-    - name: Reprovision remote action (deprecated)
-      href: ../../api/manageddevice-reprovisioncloudpc.md
-    - name: Resize remote action (deprecated)
-      href: ../../api/manageddevice-resizecloudpc.md
-    - name: Restore remote action (deprecated)
-      href: ../../api/manageddevice-restorecloudpc.md
     - name: Set review status (deprecated)
       href: ../../api/manageddevice-setcloudpcreviewstatus.md
+    - name: Bulk set review status (deprecated)
+      href: ../../api/manageddevice-bulksetcloudpcreviewstatus.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -257,6 +276,8 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
     - name: Get frontline report
@@ -301,10 +322,10 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
-    - name: List
-      href: ../../api/virtualendpoint-list-snapshots.md
     - name: Get
       href: ../../api/cloudpcsnapshot-get.md
+    - name: List (deprecated)
+      href: ../../api/virtualendpoint-list-snapshots.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -412,10 +433,14 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC bulk create snapshot
+      href: ../../resources/cloudpcbulkcreatesnapshot.md
     - name: Cloud PC bulk disaster recovery failback
       href: ../../resources/cloudpcbulkdisasterrecoveryfailback.md
     - name: Cloud PC bulk disaster recovery failover
       href: ../../resources/cloudpcbulkdisasterrecoveryfailover.md
+    - name: Cloud PC bulk move
+      href: ../../resources/cloudpcbulkmove.md
     - name: Cloud PC bulk power off
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
@@ -430,6 +455,8 @@ items:
       href: ../../resources/cloudpcbulkrestart.md
     - name: Cloud PC bulk restore
       href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk set review status
+      href: ../../resources/cloudpcbulksetreviewstatus.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC connection setting
@@ -460,6 +487,8 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+    - name: Cloud PC notification setting
+      href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
@@ -798,12 +827,6 @@ items:
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
       - name: createToken action
         href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-      - name: setEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-setenrollmenttimedevicemembershiptarget.md
-      - name: retrieveEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-retrieveenrollmenttimedevicemembershiptarget.md
-      - name: clearEnrollmentTimeDeviceMembershipTarget action
-        href: ../../api/intune-androidforwork-androiddeviceownerenrollmentprofile-clearenrollmenttimedevicemembershiptarget.md
     - name: Android for Work app
       items:
       - name: Android for Work app

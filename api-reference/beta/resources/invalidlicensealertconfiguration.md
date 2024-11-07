@@ -18,6 +18,12 @@ Represents an alert configuration that's triggered if the tenant doesn't have a 
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
+
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

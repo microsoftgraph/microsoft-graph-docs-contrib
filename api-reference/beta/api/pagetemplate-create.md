@@ -56,6 +56,7 @@ The following example shows how to create a new page template.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-pageTemplate", "scopes": "sites.readwrite.all" } -->
 
 
@@ -72,7 +73,7 @@ Content-Type: application/json
   "showRecommendedPages": false,
   "titleArea": {
     "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "https://media.contoso.odsp.cdn.office.net/sitepagethumbnail.png",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,
@@ -156,9 +157,15 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
-The following example shows the response.
+The following example shows the response that contains a [pageTemplate](../resources/pagetemplate.md) object for the created page template.
 
 > **Note:** The response might be shortened for readability.
 
@@ -172,7 +179,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.pageTemplate",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e726371",
     "name": "test.aspx",
-    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/test.aspx",
+    "webUrl": "https://contoso.sharepoint.com/SitePages/Templates/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,
@@ -201,7 +208,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,

@@ -10,9 +10,7 @@ doc_type: apiPageType
 # List userSources
 Namespace: microsoft.graph.security
 
-
-
-Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) or [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -93,6 +91,8 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-418
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-usersource-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

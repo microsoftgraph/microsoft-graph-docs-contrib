@@ -129,6 +129,7 @@ Content-Type: application/json
     "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
     "status": "ready",
     "statusDetails": null,
-    "errorCode": null
+    "errorCode": null,
+    "osVersionNumber": "10.0.22631.3593"
 }
 ```

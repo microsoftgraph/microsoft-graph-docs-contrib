@@ -1,5 +1,5 @@
 ---
-title: printMargin resource type
+title: "printMargin resource type"
 description: Specifies the margin widths to use when printing.
 author: braedenp-msft
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
-# printMargin complex type
+# printMargin resource type
 
 Namespace: microsoft.graph
 

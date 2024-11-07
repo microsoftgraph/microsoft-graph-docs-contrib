@@ -174,6 +174,30 @@ items:
     href: ../../api/post-list-attachments.md
   - name: Delete
     href: ../../api/attachment-delete.md
+- name: File attachment
+  items:
+  - name: File attachment
+    href: ../../resources/fileattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
+- name: Item attachment
+  items:
+  - name: Item attachment
+    href: ../../resources/itemattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
+- name: Reference attachment
+  items:
+  - name: Reference attachment
+    href: ../../resources/referenceattachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
 - name: Calendar group
   items:
   - name: Calendar group

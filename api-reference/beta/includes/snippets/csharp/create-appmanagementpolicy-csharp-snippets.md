@@ -8,7 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AppManagementPolicy
 {
@@ -64,31 +63,16 @@ var requestBody = new AppManagementPolicy
 				MaxLifetime = null,
 			},
 		},
-		AdditionalData = new Dictionary<string, object>
+		ApplicationRestrictions = new CustomAppManagementApplicationConfiguration
 		{
+			IdentifierUris = new IdentifierUriConfiguration
 			{
-				"applicationRestrictions" , new UntypedObject(new Dictionary<string, UntypedNode>
+				NonDefaultUriAddition = new IdentifierUriRestriction
 				{
-					{
-						"identifierUris", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"nonDefaultUriAddition", new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"restrictForAppsCreatedAfterDateTime", new UntypedString("2024-01-01T10:37:00Z")
-									},
-									{
-										"excludeAppsReceivingV2Tokens", new UntypedBoolean(true)
-									},
-									{
-										"excludeSaml", new UntypedBoolean(true)
-									},
-								})
-							},
-						})
-					},
-				})
+					RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
+					ExcludeAppsReceivingV2Tokens = true,
+					ExcludeSaml = true,
+				},
 			},
 		},
 	},

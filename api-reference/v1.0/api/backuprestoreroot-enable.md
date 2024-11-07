@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
-Before you call this API, call [List protection policies](../api/backuprestoreroot-list-protectionpolicies.md) to initialize the data store in the tenant. Data store initialization takes about 5 minutes. If you call this API before the data store is initialized, the call results in an error.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -47,7 +45,7 @@ In the request body, supply a JSON representation of the following parameter.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|String|The ID of the tenant in which this application is registered. Required.|
+|appOwnerTenantId|String|The ID of the owning tenant in which the billing profile is created.|
 
 ## Response
 

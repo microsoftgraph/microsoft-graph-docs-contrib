@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "certificateauthoritypath_list_certificatebasedapplicationconfigurations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
 
-[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
+[!INCLUDE [rbac-trusted-app-cert-config-apis](../includes/rbac-for-apis/rbac-trusted-app-cert-config-apis.md)]
 
 ## HTTP request
 

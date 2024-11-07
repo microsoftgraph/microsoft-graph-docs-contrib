@@ -37,7 +37,7 @@ items:
       displayName: change notifications, data loss prevention, DLP, scenario
     - name: Augment Microsoft search
       href: patterns/augment-search-experience-with-custom-data.md
-      displayName: Microsoft Graph connectiors, Copilot for Microsoft 365, scenario
+      displayName: Microsoft Graph connectors, Microsoft 365 Copilot, scenario
   - name: Metered APIs
     items:
     - name: Overview
@@ -909,6 +909,9 @@ items:
       items:
       - name: Call records
         href: cloud-communications-callrecords.md
+        items:
+        - name: FAQ
+          href: callrecords-api-faq.md
       - name: Supported call types
         href: cloud-communications-calls.md
       - name: Create or join online meetings
@@ -945,6 +948,9 @@ items:
       href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
     - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
+    - name: Approvals app APIs
+      href: approvals-app-api.md
+      displayName: approvals, Approvals API, get approvals
     - name: Payment models and licensing requirements
       href: teams-licenses.md
     - name: Implementation differences in national clouds
@@ -1103,6 +1109,8 @@ items:
         href: teams-changenotifications-teammembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
+      - name: Teams app installation
+        href: teams-changenotifications-appinstallation.md
     - name: Notifications for Outlook resources
       href: outlook-change-notifications-overview.md
   - name: Change tracking

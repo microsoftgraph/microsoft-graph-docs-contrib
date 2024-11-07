@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the user synchronization policy of a partner-specific configuration.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -24,9 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "crosstenantidentitysyncpolicypartner_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantidentitysyncpolicypartner-get-permissions.md)]
 
-The signed-in user must also be assigned the following minimum [directory role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Security Administrator
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
 
 ## HTTP request
 

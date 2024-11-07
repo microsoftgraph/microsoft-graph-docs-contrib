@@ -21,6 +21,8 @@ The number of claims and transformations that can be added to a claims-mapping p
 
 For more scenario and configuration details, see [Claims mapping policy type](/azure/active-directory/develop/reference-claims-mapping-policy-type) and [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
+Additionally, visit [Claims customization using a policy](/entra/identity-platform/reference-claims-customization) to learn the difference between this policy and the [custom claims policy](/graph/api/resources/customclaimspolicy).
+
 Inherits from [stsPolicy](stsPolicy.md).
 
 ## Methods
