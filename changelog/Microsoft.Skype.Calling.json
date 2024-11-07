@@ -20,19 +20,27 @@
         },
         {
           "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
-          "ApiChange": "Method",
-          "ChangedApiName": "setExternalEventInformation",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualeventtownhall-setexternaleventinformation?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalEventInformation** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventtownhall?view=graph-rest-beta) resource.",
           "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalEventInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalEventInformation** property to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
         },
         {
           "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
           "ApiChange": "Method",
           "ChangedApiName": "setExternalEventInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-setexternaleventinformation?view=graph-rest-beta) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
-          "Target": "virtualEventWebinar"
+          "Description": "Added the [setExternalEventInformation](https://learn.microsoft.com/en-us/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
         }
       ],
       "Id": "cc96a0af-ec29-4b9d-9d42-8d3dd6532aff",
