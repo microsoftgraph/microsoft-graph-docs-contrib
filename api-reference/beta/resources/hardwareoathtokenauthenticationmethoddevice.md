@@ -28,7 +28,7 @@ Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[identity](../resources/intune-identity.md)|User the token is assigned to.|
+|assignedTo|[identity](../resources/identity.md)|User the token is assigned to.|
 |displayName|String|Name that can be provided to the hardware OATH token.  Inherited from [authenticationMethodDevice](../resources/authenticationmethoddevice.md).|
 |hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`.|
 |id|String|Unique identifier of the hardware OATH token. Inherited from [entity](../resources/entity.md).|

@@ -57,7 +57,7 @@ You can specify the following properties when creating a **hardwareOathTokenAuth
 |secretKey|String|Secret key of the specific hardware token, provided by the vendor. Required.|
 |timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Required.|
 |hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
-|assignTo|[identity](../resources/intune-identity.md)|User ID if you want to directly assign the token to a user. Optional.|
+|assignTo|[identity](../resources/identity.md)|User ID if you want to directly assign the token to a user. Optional.|
 |displayName|String|Name that can be provided to the Hardware OATH token. Optional.|
 
 ## Response
