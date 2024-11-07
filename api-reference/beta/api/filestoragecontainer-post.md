@@ -37,6 +37,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /storage/fileStorage/containers
 ```
+## Optional query parameters
+
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name      |Description|
+|:----------|:----------|
+| placerholder | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. Only supported for `callRecord` and `session` resources. |
 
 ## Request headers
 |Name|Description|
