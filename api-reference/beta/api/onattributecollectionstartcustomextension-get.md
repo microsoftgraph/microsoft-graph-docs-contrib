@@ -19,7 +19,11 @@ Read the properties and relationships of an [onAttributeCollectionStartCustomExt
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onattributecollectionstartcustomextension_get" } -->
+<!-- {
+  "blockType": "permissions",
+  "name": "onattributecollectionstartcustomextension-get-permissions"
+}
+-->
 [!INCLUDE [permissions-table](../includes/permissions/onattributecollectionstartcustomextension-get-permissions.md)]
 
 ## HTTP request
@@ -29,7 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension
+GET /onAttributeCollectionStartCustomExtension
+GET /onAttributeCollectionStartCustomExtensionHandler/customExtension
 ```
 
 ## Optional query parameters
@@ -55,21 +60,15 @@ If successful, this method returns a `200 OK` response code and an [onAttributeC
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onattributecollectionstartcustomextension"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionStartListener/handler/microsoft.graph.onAttributeCollectionStartCustomExtensionHandler/customExtension
+GET https://graph.microsoft.com/beta/onAttributeCollectionStartCustomExtension
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-onattributecollectionstartcustomextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -86,29 +85,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://microsoft.graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+  "value": {
     "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
-    "id":"a87af9f6-cfd1-4c42-99d0-d594a33845bb",
-    "displayName":"Demo Test Contoso Template Apps",
-    "description":"Returns values for app-based branding.",
-    "apiSchemaVersion": "10-01-2021-preview",
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://contoso.com/customextension",
+    "id": "83eb353e-c996-5bd1-aea9-68db1f8fde8f",
+    "authenticationConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
     },
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://contoso.azurewebsites.net/f9c5dc6b-d72b-4226-8ccd-801f7a290428"
-    },
-    "configuration": {
-        "clientConfiguration": {
-          "timeoutInMilliseconds": 1000,
-          "maximumRetries":1
-        },
-        "behaviorOnError": {
-          "@odata.type": "#microsoft.graph.continueOnError"
-        }
+    "clientConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+    },
+    "description": "String",
+    "displayName": "String",
+    "endpointConfiguration": {
+      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+    },
+    "behaviorOnError": {
+      "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
     }
+  }
 }
 ```
 
