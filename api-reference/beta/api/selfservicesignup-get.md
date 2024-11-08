@@ -105,6 +105,7 @@ Content-Type: application/json
     "status": {
       "@odata.type": "microsoft.graph.signUpStatus"
     },
+    "signUpStage": "String",
     "signUpIdentity": {
       "@odata.type": "microsoft.graph.signUpIdentity"
     },
