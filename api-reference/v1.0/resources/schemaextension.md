@@ -16,7 +16,6 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 + [user](/graph/api/resources/user)
 + [group](/graph/api/resources/group)
 + [administrativeUnit](/graph/api/resources/administrativeunit)
-+ [application](/graph/api/resources/application)
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
 + [event](/graph/api/resources/event) (for both user and group calendars)
