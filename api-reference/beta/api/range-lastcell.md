@@ -1,19 +1,19 @@
 ---
-title: "Range: LastCell"
-description: "."
+title: "range: lastCell"
+description: "Get the last cell within the range."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Range: LastCell
+# range: lastCell
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
+Get the last cell within the range. For example, the last cell of *B2:D5* is *D5*.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,7 +38,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
