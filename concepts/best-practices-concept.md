@@ -3,6 +3,7 @@ title: "Best practices for working with Microsoft Graph"
 description: "Apply these best practices to improve your Microsoft Graph application's performance and make your app more reliable for end users."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.date: 11/07/2024
 ---
 
 # Best practices for working with Microsoft Graph
