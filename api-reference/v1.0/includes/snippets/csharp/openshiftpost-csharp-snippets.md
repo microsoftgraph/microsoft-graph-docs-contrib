@@ -11,7 +11,6 @@ using Microsoft.Graph.Models;
 
 var requestBody = new OpenShift
 {
-	Id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 	SharedOpenShift = new OpenShiftItem
 	{
@@ -34,24 +33,7 @@ var requestBody = new OpenShift
 		},
 	},
 	DraftOpenShift = null,
-	CreatedDateTime = DateTimeOffset.Parse("2019-03-14T04: 32: 51.451Z"),
-	LastModifiedDateTime = DateTimeOffset.Parse("2019-03-14T05: 32: 51.451Z"),
-	LastModifiedBy = new IdentitySet
-	{
-		Application = null,
-		Device = null,
-		User = new Identity
-		{
-			Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-			DisplayName = "JohnDoe",
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"conversation" , null
-			},
-		},
-	},
+	"isStagedForDeletion": false
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

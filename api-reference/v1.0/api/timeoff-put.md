@@ -42,7 +42,15 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
+In the request body, supply a modified JSON representation of a [timeOff](../resources/timeoff.md) object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either draftTimeOff or sharedTimeOff should be null.|
+| isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either draftTimeOff or sharedTimeOff should be null.|
+| userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
+
 
 ## Response
 
@@ -66,19 +74,15 @@ Content-type: application/json
 Prefer: return=representation
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "@odata.type": "#microsoft.graph.timeOff",
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "@odata.type": "microsoft.graph.timeOffItem"
   },
   "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+    "@odata.type": "microsoft.graph.timeOffItem"
+  },
+  "userId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 
@@ -100,36 +104,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
-  "lastModifiedBy": {
-    "@odata.type":"microsoft.graph.identitySet",
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

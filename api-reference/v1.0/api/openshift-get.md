@@ -116,56 +116,24 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "sharedOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":2,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T09:50:45.332Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T01:58:45.340Z",
-  "code": "",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "draftOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":3,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.332Z",
-  "endDateTime": "2018-10-04T08:58:45.340Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T07:58:45.332Z",
-  "code": "Break",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-  "application": null,
-  "device": null,
-  "conversation": null,
-  "user": {
-  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-  "displayName": "John Doe"
-  }
-  }
+    "@odata.type": "#microsoft.graph.openShift",
+    "id": "String (identifier)",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+    },
+    "sharedOpenShift": {
+        "@odata.type": "microsoft.graph.openShiftItem"
+    },
+    "draftOpenShift": {
+        "@odata.type": "microsoft.graph.openShiftItem"
+    },
+    "schedulingGroupId": "String",
+    "isStagedForDeletion": "Boolean"
 }
 ```
 

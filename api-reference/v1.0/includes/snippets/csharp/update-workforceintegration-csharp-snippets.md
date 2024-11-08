@@ -21,6 +21,7 @@ var requestBody = new WorkforceIntegration
 	IsActive = true,
 	Url = "url-value",
 	SupportedEntities = WorkforceIntegrationSupportedEntities.None,
+	EligibilityFilteringEnabledEntities = WorkforceIntegrationEligibilityFilteringEnabledEntities.None,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

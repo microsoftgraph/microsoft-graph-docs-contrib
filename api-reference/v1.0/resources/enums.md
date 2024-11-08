@@ -1176,6 +1176,19 @@ Possible types of Windows settings.
 | openShiftRequest |
 | offerShiftRequest |
 | unknownFutureValue |
+| timeOffReason |
+| timeOff |
+| timeOffRequest |
+
+### eligibilityFilteringEnabledEntities values 
+
+|Member|
+|:---|
+|none|
+|swapRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeOffReason|
 
 ### timeZoneStandard values
 

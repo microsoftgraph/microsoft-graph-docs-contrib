@@ -31,6 +31,7 @@ requestBody.SetIsActive(&isActive)
 url := "url-value"
 requestBody.SetUrl(&url) 
 supportedEntities := graphmodels.SUPPORTEDENTITIES-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
+eligibilityFilteringEnabledEntities := graphmodels.ELIGIBILITYFILTERINGENABLEDENTITIES-VALUE_WORKFORCEINTEGRATIONELIGIBILITYFILTERINGENABLEDENTITIES
 requestBody.SetSupportedEntities(&supportedEntities) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

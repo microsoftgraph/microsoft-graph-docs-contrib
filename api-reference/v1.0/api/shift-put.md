@@ -42,7 +42,13 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.
+|Property|Type|Description|
+|:---|:---|:---|
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Eiher draShift or sharedShift should be null. |
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional. |
+| schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Eiher draShift or sharedShift should be null.|
+| userId               | String                      | ID of the user assigned to the **shift**. Required. |
 
 ## Response
 
@@ -62,55 +68,18 @@ The following example shows a request.
 ```http
 PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
-Prefer: return=representation
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
+  "@odata.type": "#microsoft.graph.shift",
   "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
+    "@odata.type": "microsoft.graph.shiftItem"
   },
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "@odata.type": "microsoft.graph.shiftItem"
+  },
+  "userId": "String",
+  "schedulingGroupId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 
@@ -132,62 +101,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "string",
-  "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
-  },
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "application": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "device": {
-      "id": "string",
-      "displayName": "string"
-    }
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

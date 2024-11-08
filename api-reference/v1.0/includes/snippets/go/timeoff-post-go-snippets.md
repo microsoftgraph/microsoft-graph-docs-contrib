@@ -18,6 +18,8 @@ import (
 requestBody := graphmodels.NewTimeOff()
 userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 requestBody.SetUserId(&userId) 
+isStagedForDeletion := false
+requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
 sharedTimeOff := graphmodels.NewTimeOffItem()
 timeOffReasonId := "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7"
 sharedTimeOff.SetTimeOffReasonId(&timeOffReasonId) 

@@ -25,8 +25,6 @@ configuration := &graphteams.TeamItemScheduleOpenShiftsRequestBuilderPostRequest
 	Headers: headers,
 }
 requestBody := graphmodels.NewOpenShift()
-id := "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
-requestBody.SetId(&id) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId) 
 sharedOpenShift := graphmodels.NewOpenShiftItem()
@@ -63,27 +61,8 @@ sharedOpenShift.SetActivities(activities)
 requestBody.SetSharedOpenShift(sharedOpenShift)
 draftOpenShift := null
 requestBody.SetDraftOpenShift(&draftOpenShift) 
-createdDateTime , err := time.Parse(time.RFC3339, "2019-03-14T04: 32: 51.451Z")
-requestBody.SetCreatedDateTime(&createdDateTime) 
-lastModifiedDateTime , err := time.Parse(time.RFC3339, "2019-03-14T05: 32: 51.451Z")
-requestBody.SetLastModifiedDateTime(&lastModifiedDateTime) 
-lastModifiedBy := graphmodels.NewIdentitySet()
-application := null
-lastModifiedBy.SetApplication(&application) 
-device := null
-lastModifiedBy.SetDevice(&device) 
-user := graphmodels.NewIdentity()
-id := "366c0b19-49b1-41b5-a03f-9f3887bd0ed8"
-user.SetId(&id) 
-displayName := "JohnDoe"
-user.SetDisplayName(&displayName) 
-lastModifiedBy.SetUser(user)
-additionalData := map[string]interface{}{
-	conversation := null
-lastModifiedBy.SetConversation(&conversation) 
-}
-lastModifiedBy.SetAdditionalData(additionalData)
-requestBody.SetLastModifiedBy(lastModifiedBy)
+isStagedForDeletion := false
+requestBody.SetIsStagedForDeletion(&isStagedForDeletion) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 openShifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)

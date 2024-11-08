@@ -26,6 +26,7 @@ OffsetDateTime endDateTime1 = OffsetDateTime.parse("2019-03-12T07:00:00Z");
 draftTimeOff.setEndDateTime(endDateTime1);
 draftTimeOff.setTheme(ScheduleEntityTheme.Pink);
 timeOff.setDraftTimeOff(draftTimeOff);
+timeOff.setIsStagedForDeletion(false);
 TimeOff result = graphClient.teams().byTeamId("{team-id}").schedule().timesOff().post(timeOff);
 
 

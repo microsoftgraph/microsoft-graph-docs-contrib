@@ -116,19 +116,27 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "displayName": "KronosWorkforceIntegration",
-  "apiVersion": 1,
-  "isActive": true,
-  "encryption": {
-    "protocol": "sharedSecret",
-    "secret": null
-  },
-  "url": "https://contosoWorkforceIntegration.com/Contoso/",
-  "supportedEntities": "shift"
+  "value": {
+    "@odata.type": "#microsoft.graph.workforceIntegration",
+    "id": "b1871d36-f682-351b-9754-79b5e55bd345",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "displayName": "String",
+    "apiVersion": "Integer",
+    "encryption": {
+      "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
+    },
+    "isActive": "Boolean",
+    "url": "String",
+    "supportedEntities": "String",
+    "eligibilityFilteringEnabledEntities": "String"
+  }
 }
 ```
 

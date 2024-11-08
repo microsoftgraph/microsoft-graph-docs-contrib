@@ -16,7 +16,6 @@ from msgraph.generated.models.identity_set import IdentitySet
 from msgraph.generated.models.identity import Identity
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = OpenShift(
-	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	scheduling_group_id = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 	shared_open_shift = OpenShiftItem(
 		notes = "InventoryManagement",
@@ -36,19 +35,7 @@ request_body = OpenShift(
 		],
 	),
 	draft_open_shift = None,
-	created_date_time = "2019-03-14T04: 32: 51.451Z",
-	last_modified_date_time = "2019-03-14T05: 32: 51.451Z",
-	last_modified_by = IdentitySet(
-		application = None,
-		device = None,
-		user = Identity(
-			id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-			display_name = "JohnDoe",
-		),
-		additional_data = {
-				"conversation" : None,
-		}
-	),
+	isStagedForDeletion = false,
 )
 
 request_configuration = RequestConfiguration()

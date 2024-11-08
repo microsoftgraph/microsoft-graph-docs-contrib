@@ -11,7 +11,6 @@ using Microsoft.Graph.Models;
 
 var requestBody = new Shift
 {
-	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
 	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 	SharedShift = new ShiftItem
@@ -52,6 +51,7 @@ var requestBody = new Shift
 			},
 		},
 	},
+	IsStagedForDeletion: false,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

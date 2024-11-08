@@ -26,6 +26,7 @@ var requestBody = new TimeOff
 		EndDateTime = DateTimeOffset.Parse("2019-03-12T07:00:00Z"),
 		Theme = ScheduleEntityTheme.Pink,
 	},
+	isStagedForDeletion = false,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

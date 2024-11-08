@@ -47,10 +47,11 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
-|encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
+|encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|url|String| Workforce integration URL for callbacks from the shift service. |
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason` , `timeOff` , `timeOffRequest`.|
+|url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Response
 
@@ -71,18 +72,19 @@ The following example shows a request.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationId}
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
+  "displayName": "String",
+  "apiVersion": "Integer",
   "encryption": {
     "protocol": "protocol-value",
     "secret": "secret-value"
   },
-  "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "isActive": "Boolean",
+  "url": "String",
+  "supportedEntities": "String",
+  "eligibilityFilteringEnabledEntities": "String"
 }
 ```
 
@@ -134,18 +136,25 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
+  "@odata.type": "#microsoft.graph.workforceIntegration",
+  "id": "b1871d36-f682-351b-9754-79b5e55bd345",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
   },
-  "isActive": true,
-  "url": "url-value",
-  "supportedEntities": "supportedEntities-value"
+  "displayName": "String",
+  "apiVersion": "Integer",
+  "encryption": {
+    "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
+  },
+  "isActive": "Boolean",
+  "url": "String",
+  "supportedEntities": "String",
+  "eligibilityFilteringEnabledEntities": "String"
 }
 ```
 
@@ -163,11 +172,11 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
   "apiVersion": 1,
   "isActive": true,
   "encryption": {
-    - "protocol": "sharedSecret",
+    "protocol": "sharedSecret",
     "secret": "My Secret"
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
@@ -187,7 +196,7 @@ Content-type: application/json
     "secret": null
   },
   "url": "https://abcWorkforceIntegration.com/Contoso/",
-  "supports": "Shift,SwapRequest",
+  "supportedEntities": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```

@@ -15,9 +15,9 @@ use Microsoft\Graph\Generated\Models\ShiftActivity;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Shift();
-$requestBody->setId('SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8');
 $requestBody->setUserId('c5d0c76b-80c4-481c-be50-923cd8d680a1');
 $requestBody->setSchedulingGroupId('TAG_228940ed-ff84-4e25-b129-1b395cf78be0');
+$requestBody->setIsStagedForDeletion(false);
 $sharedShift = new ShiftItem();
 $sharedShift->setDisplayName('Day shift');
 $sharedShift->setNotes('Please do inventory as part of your shift.');

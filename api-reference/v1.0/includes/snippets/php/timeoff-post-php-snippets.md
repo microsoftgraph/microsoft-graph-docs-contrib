@@ -27,6 +27,7 @@ $draftTimeOff->setStartDateTime(new \DateTime('2019-03-11T07:00:00Z'));
 $draftTimeOff->setEndDateTime(new \DateTime('2019-03-12T07:00:00Z'));
 $draftTimeOff->setTheme(new ScheduleEntityTheme('pink'));
 $requestBody->setDraftTimeOff($draftTimeOff);
+$requestBody->seIsStagedForDeletion(false);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->post($requestBody)->wait();
 

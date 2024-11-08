@@ -40,6 +40,17 @@ POST /teams/{teamId}/schedule/timesOff
 | Content-Type  | application/json. Required.  |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
+## Request body
+
+In the request body, supply a modified JSON representation of a [timeOff](../resources/timeoff.md) object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either draftTimeOff or sharedTimeOff should be null.|
+| isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either draftTimeOff or sharedTimeOff should be null.|
+| userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.
@@ -61,19 +72,15 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff
 Content-type: application/json
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "@odata.type": "#microsoft.graph.timeOff",
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "@odata.type": "microsoft.graph.timeOffItem"
   },
   "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+    "@odata.type": "microsoft.graph.timeOffItem"
+  },
+  "userId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 
@@ -127,30 +134,21 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+  "@odata.type": "#microsoft.graph.timeOff",
+  "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
+    "@odata.type": "microsoft.graph.timeOffItem"
   },
   "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+    "@odata.type": "microsoft.graph.timeOffItem"
+  },
+  "userId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 

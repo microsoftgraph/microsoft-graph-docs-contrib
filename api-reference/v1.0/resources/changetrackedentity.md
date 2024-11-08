@@ -13,6 +13,16 @@ Namespace: microsoft.graph
 
 Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.
 
+Base type of [openShift](../resources/openshift.md), [shift](../resources/shift.md), and [timeOff](../resources/timeoff.md).
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
+
 ## Properties
 
 | Property     | Type        | Description |
@@ -42,10 +52,13 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "createdDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.changeTrackedEntity",
   "id": "String (identifier)",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  }
 }
 ```
 

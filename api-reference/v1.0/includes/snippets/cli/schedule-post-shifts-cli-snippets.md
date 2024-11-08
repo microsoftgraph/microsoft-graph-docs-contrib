@@ -5,43 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 
-mgc teams schedule shifts create --team-id {team-id} --body '{\
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",\
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",\
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",\
-  "sharedShift": {\
-    "displayName": "Day shift",\
-    "notes": "Please do inventory as part of your shift.",\
-    "startDateTime": "2019-03-11T15:00:00Z",\
-    "endDateTime": "2019-03-12T00:00:00Z",\
-    "theme": "blue",\
-    "activities": [\
-      {\
-        "isPaid": true,\
-        "startDateTime": "2019-03-11T15:00:00Z",\
-        "endDateTime": "2019-03-11T15:15:00Z",\
-        "code": "",\
-        "displayName": "Lunch"\
-      }\
-    ]\
-  },\
-  "draftShift": {\
-    "displayName": "Day shift",\
-    "notes": "Please do inventory as part of your shift.",\
-    "startDateTime": "2019-03-11T15:00:00Z",\
-    "endDateTime": "2019-03-12T00:00:00Z",\
-    "theme": "blue",\
-    "activities": [\
-      {\
-        "isPaid": true,\
-        "startDateTime": "2019-03-11T15:00:00Z",\
-        "endDateTime": "2019-03-11T15:30:00Z",\
-        "code": "",\
-        "displayName": "Lunch"\
-      }\
-    ]\
-  }\
-}\
-'
+mgc teams schedule shifts create --team-id {team-id} --body '
+{
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+    "draftShift": {
+        "displayName": null,
+        "startDateTime": "2024-10-10T19:00:00Z",
+        "endDateTime": "2024-10-10T20:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "activities": []
+    },
+    "sharedShift": {
+        "displayName": null,
+        "startDateTime": "2024-10-10T19:00:00Z",
+        "endDateTime": "2024-10-10T20:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "activities": []
+    },
+    "isStagedForDeletion": false
+}'
 
 ```

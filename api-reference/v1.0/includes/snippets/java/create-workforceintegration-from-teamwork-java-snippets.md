@@ -18,6 +18,7 @@ workforceIntegration.setEncryption(encryption);
 workforceIntegration.setIsActive(true);
 workforceIntegration.setUrl("url-value");
 workforceIntegration.setSupportedEntities(EnumSet.of(WorkforceIntegrationSupportedEntities.None));
+workforceIntegration.setEligibilityFilteringEnabledEntities(EnumSet.of(WorkforceIntegrationEligibilityFilteringEnabledEntities.None));
 WorkforceIntegration result = graphClient.teamwork().workforceIntegrations().post(workforceIntegration);
 
 

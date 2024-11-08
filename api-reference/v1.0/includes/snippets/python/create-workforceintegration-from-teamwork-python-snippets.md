@@ -21,6 +21,7 @@ request_body = WorkforceIntegration(
 	is_active = True,
 	url = "url-value",
 	supported_entities = WorkforceIntegrationSupportedEntities.None,
+	eligibilityFilteringEnabledEntities_entities = WorkforceIntegrationEligibilityFilteringEnabledEntities.None,
 )
 
 result = await graph_client.teamwork.workforce_integrations.post(request_body)

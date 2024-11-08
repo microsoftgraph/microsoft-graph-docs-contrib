@@ -114,23 +114,40 @@ Content-type: application/json
 
 {
   "value": [
-    {
-      "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-      "createdDateTime": "2019-03-12T22:10:38.242Z",
-      "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-      "displayName": "Vacation",
-      "iconType": "plane",
-      "isActive": true,
-      "lastModifiedBy": {
-        "application": null,
-        "device": null,
-        "conversation": null,
-        "user": {
-          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-          "displayName": "John Doe"
+        {
+        "@odata.type": "#microsoft.graph.timeOff",
+        "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
+        "createdDateTime": "String (timestamp)",
+        "lastModifiedDateTime": "String (timestamp)",
+        "lastModifiedBy": {
+            "@odata.type": "microsoft.graph.identitySet"
+        },
+        "sharedTimeOff": {
+            "@odata.type": "microsoft.graph.timeOffItem"
+        },
+        "draftTimeOff": {
+            "@odata.type": "microsoft.graph.timeOffItem"
+        },
+        "userId": "String",
+        "isStagedForDeletion": "Boolean"
+        },
+        {
+        "@odata.type": "#microsoft.graph.timeOff",
+        "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
+        "createdDateTime": "String (timestamp)",
+        "lastModifiedDateTime": "String (timestamp)",
+        "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+        },
+        "sharedTimeOff": {
+        "@odata.type": "microsoft.graph.timeOffItem"
+        },
+        "draftTimeOff": {
+        "@odata.type": "microsoft.graph.timeOffItem"
+        },
+        "userId": "String",
+        "isStagedForDeletion": "Boolean"
         }
-      }
-    }
   ]
 }
 ```

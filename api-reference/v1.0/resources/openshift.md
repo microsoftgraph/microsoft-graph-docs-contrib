@@ -11,7 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 
@@ -24,14 +23,20 @@ Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 | [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read the properties and relationships of an **openShift** object. |
 | [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update an **openShift** object. |
 | [Delete](../api/openshift-delete.md) | None | Delete an **openShift** object. |
+| [stageForDeletion](../api/changetrackedentity-stagefordeletion.md) | None | Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.    | |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|draftOpenShift|[openShiftItem](openshiftitem.md)|An unpublished open shift.|
-|schedulingGroupId|String|ID for the scheduling group that the open shift belongs to.|
-|sharedOpenShift|[openShiftItem](openshiftitem.md)|A published open shift.|
+| createdDateTime       | DateTimeOffset                    | Date and time when the **openShift** was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).                               |
+| draftOpenShift        | [openShiftItem](openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md).              |
+| id                    | String                            | Unique identifier for the **openShift** object. Read-only. Inherited from [changeTrackedEntity](changetrackedentity.md).        |
+| isStagedForDeletion   | Boolean                           | The **openShift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
+| lastModifiedBy        | [identitySet](identityset.md)     | Identity of the user who last modified the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md). Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+| lastModifiedDateTime  | DateTimeOffset                    | Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md). Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
+| schedulingGroupId     | String                            | The ID of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.  |
+| sharedOpenShift       | [openShiftItem](openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers.                         |
 
 ## Relationships
 
@@ -51,9 +56,21 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "draftOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"},
+  "@odata.type": "#microsoft.graph.openShift",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "sharedOpenShift": {
+    "@odata.type": "microsoft.graph.openShiftItem"
+  },
+  "draftOpenShift": {
+    "@odata.type": "microsoft.graph.openShiftItem"
+  },
   "schedulingGroupId": "String",
-  "sharedOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"}
+  "isStagedForDeletion": "Boolean"
 }
 ```
 

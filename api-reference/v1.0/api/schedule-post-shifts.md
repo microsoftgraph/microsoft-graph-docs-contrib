@@ -40,6 +40,16 @@ POST /teams/{teamId}/schedule/shifts
 | Content-Type  | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
+## Request body
+
+|Property|Type|Description|
+|:---|:---|:---|
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Eiher draShift or sharedShift should be null.|
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional. |
+| schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Eiher draShift or sharedShift should be null.|
+| userId               | String                      | ID of the user assigned to the **shift**. Required. |
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.
@@ -61,41 +71,16 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts
 Content-type: application/json
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+  "@odata.type": "#microsoft.graph.shift",
   "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
+    "@odata.type": "microsoft.graph.shiftItem"
   },
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "@odata.type": "microsoft.graph.shiftItem"
+  },
+  "userId": "String",
+  "schedulingGroupId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 
@@ -149,52 +134,22 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+  "@odata.type": "#microsoft.graph.shift",
+  "id": "179a8570-a463-293f-15a2-0bba4cdca4d8",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
+    "@odata.type": "microsoft.graph.shiftItem"
   },
   "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+    "@odata.type": "microsoft.graph.shiftItem"
+  },
+  "userId": "String",
+  "schedulingGroupId": "String",
+  "isStagedForDeletion": "Boolean"
 }
 ```
 

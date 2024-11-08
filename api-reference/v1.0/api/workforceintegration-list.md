@@ -121,19 +121,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "apiVersion": 99,
-      "encryption": {
-        "protocol": "protocol-value",
-        "secret": "secret-value"
-      },
-      "isActive": true,
-      "url": "url-value",
-      "supportedEntities": "supportedEntities-value"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.workforceIntegration",
+    "id": "b1871d36-f682-351b-9754-79b5e55bd345",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "displayName": "String",
+    "apiVersion": "Integer",
+    "encryption": {
+      "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
+    },
+    "isActive": "Boolean",
+    "url": "String",
+    "supportedEntities": "String",
+    "eligibilityFilteringEnabledEntities": "String"
+  }
+} ]
 }
 ```
 

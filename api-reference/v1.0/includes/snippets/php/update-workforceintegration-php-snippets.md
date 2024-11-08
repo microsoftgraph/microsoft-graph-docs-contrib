@@ -24,6 +24,7 @@ $requestBody->setEncryption($encryption);
 $requestBody->setIsActive(true);
 $requestBody->setUrl('url-value');
 $requestBody->setSupportedEntities(new WorkforceIntegrationSupportedEntities('supportedEntities-value'));
+$requestBody->setEligibilityFilteringEnabledEntities(new WorkforceIntegrationEligibilityFilteringEnabledEntities('eligibilityFilteringEnabledEntities-value'));
 
 $result = $graphServiceClient->teamwork()->workforceIntegrations()->byWorkforceIntegrationId('workforceIntegration-id')->patch($requestBody)->wait();
 

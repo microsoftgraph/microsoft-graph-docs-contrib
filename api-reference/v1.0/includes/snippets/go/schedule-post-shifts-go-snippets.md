@@ -16,8 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewShift()
-id := "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
-requestBody.SetId(&id) 
+isStagedForDeletion := false
+shiftActivity.SetIsStagedForDeletion(&isStagedForDeletion) 
 userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 requestBody.SetUserId(&userId) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"

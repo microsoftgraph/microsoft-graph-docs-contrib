@@ -20,6 +20,7 @@ const workforceIntegration = {
   isActive: true,
   url: 'url-value',
   supportedEntities: 'supportedEntities-value'
+  eligibilityFilteringEnabledEntities: 'eligibilityFilteringEnabledEntities-value',
 };
 
 await client.api('/teamwork/workforceIntegrations')

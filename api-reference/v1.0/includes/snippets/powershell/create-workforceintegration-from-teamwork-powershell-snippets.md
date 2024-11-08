@@ -16,6 +16,7 @@ $params = @{
 	isActive = $true
 	url = "url-value"
 	supportedEntities = "supportedEntities-value"
+	eligibilityFilteringEnabledEntities = "eligibilityFilteringEnabledEntities-value"
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params

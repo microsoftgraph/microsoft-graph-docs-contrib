@@ -11,8 +11,6 @@ doc_type: resourcePageType_
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an activity in a [shift](shift.md).
 
 ## Properties
@@ -36,11 +34,13 @@ The following JSON representation shows the resource type.
 }-->
 ```json
 {
-  "isPaid": true,
-  "startDateTime": "2019-03-11T15:00:00Z",
-  "endDateTime": "2019-03-11T15:15:00Z",
-  "code": "",
-  "displayName": "Lunch"
+  "@odata.type": "#microsoft.graph.shiftActivity",
+  "isPaid": "Boolean",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "code": "String",
+  "displayName": "String",
+  "theme": "String"
 }
 ```
 

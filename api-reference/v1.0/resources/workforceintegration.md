@@ -28,10 +28,12 @@ An instance of a workforce integration with shifts.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
+|createdDateTime|DateTimeOffset|Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
 |displayName|String|Name of the workforce integration.|
+|eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openshift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`.|
+|supportedEntities|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openShift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason` , `timeOff` , `timeOffRequest`.|
 |url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Relationships
@@ -50,14 +52,24 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.workforceIntegration"
 }-->
 
-```json
+``` json
 {
-  "apiVersion": 1024,
+  "@odata.type": "#microsoft.graph.workforceIntegration",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "displayName": "String",
-  "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
-  "isActive": true,
-  "supportedEntities": "string",
-  "url": "String"
+  "apiVersion": "Integer",
+  "encryption": {
+    "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
+  },
+  "isActive": "Boolean",
+  "url": "String",
+  "supportedEntities": "String",
+  "eligibilityFilteringEnabledEntities": "String"
 }
 ```
 
