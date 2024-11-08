@@ -1,5 +1,5 @@
 ---
-title: "Get Copilot LimitedMode"
+title: "Get copilotLimitedMode"
 description: "Read the properties and relationships of a copilotAdminLimitedMode object."
 author: "gautamjain14"
 ms.localizationpriority: medium
