@@ -16,11 +16,12 @@ Namespace: microsoft.graph.windowsUpdates
 An abstract type that represents a rule for governing the automatic creation of compliance changes.
 
 ## Properties
-| Property              | Type           | Description                                         |
-|:----------------------|:---------------|:----------------------------------------------------|
-| createdDateTime       | DateTimeOffset | The date and time when the rule was created.        |
-| lastEvaluatedDateTime | DateTimeOffset | The date and time when the rule was last evaluated. |
-| lastModifiedDateTime  | DateTimeOffset | The date and time when the rule was last modified.  |
+| Property                 | Type           | Description                                         |
+|:-------------------------|:---------------|:----------------------------------------------------|
+| createdDateTime          | DateTimeOffset | The date and time when the rule was created.        |
+| complianceChangeRuleState| microsoft.graph.windowsUpdates.complianceChangeRuleState | The state of the compliance change rule. Possible values are: `active`, `paused`, `revoked`.|
+| lastEvaluatedDateTime    | DateTimeOffset | The date and time when the rule was last evaluated. |
+| lastModifiedDateTime     | DateTimeOffset | The date and time when the rule was last modified.  |
 
 ## Relationships
 None.
@@ -36,6 +37,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.complianceChangeRule",
   "createdDateTime": "String (timestamp)",
+  "complianceChangeRule": "String",
   "lastEvaluatedDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"
 }

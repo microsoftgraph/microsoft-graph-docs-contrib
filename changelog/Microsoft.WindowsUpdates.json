@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
+          "ApiChange": "Property",
+          "ChangedApiName": "complianceChangeRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceChangeRuleState** property to the [windowsupdates-complianceChangeRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-complianceChangeRule?view=graph-rest-beta) resource.",
+          "Target": "deploymentAudience"
+        }, 
+        {
+          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remediationUpdateFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the new complex type remediationUpdateFilter.",
+          "Target": "remediationUpdateFilter"
+        }, 
+        {
+          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "remediationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **remediationType** enumeration type.",
+          "Target": "remediationType"
+        }, 
+        {
+          "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "complianceChangeRuleState",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceChangeRuleState** enumeration type.",
+          "Target": "complianceChangeRuleState"
+        }
+      ],
+      "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-08T23:34:50.3183446Z",
+      "WorkloadArea": "Microsoft.WindowsUpdates",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
           "ApiChange": "Property",
           "ChangedApiName": "applicableContent",
