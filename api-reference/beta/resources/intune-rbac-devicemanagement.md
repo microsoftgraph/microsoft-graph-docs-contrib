@@ -28,7 +28,6 @@ Singleton entity that acts as a container for all device management functionalit
 |[getRoleScopeTagsByIds function](../api/intune-rbac-devicemanagement-getrolescopetagsbyids.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection||
 |[getAssignedRoleDetails function](../api/intune-rbac-devicemanagement-getassignedroledetails.md)|[deviceAndAppManagementAssignedRoleDetails](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md)|Retrieves the assigned role definitions and role assignments of the currently authenticated user.|
 |[scopedForResource function](../api/intune-rbac-devicemanagement-scopedforresource.md)|Boolean||
-|[retrieveUserRoleDetail function](../api/intune-rbac-devicemanagement-retrieveuserroledetail.md)|[deviceAndAppManagementAssignedRoleDetail](../resources/intune-rbac-deviceandappmanagementassignedroledetail.md)||
 
 ## Properties
 |Property|Type|Description|
