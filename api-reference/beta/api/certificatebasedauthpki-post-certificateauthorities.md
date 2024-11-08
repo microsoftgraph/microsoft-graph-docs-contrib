@@ -53,13 +53,13 @@ You can specify the following properties when creating a **certificateAuthorityD
 
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, and `unknownFutureValue`. Optional.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, and `unknownFutureValue`. Optional. Supports `$filter` (`eq`).|
 |certificate|Binary|The public key of the certificate authority. Required.|
 |displayName|String|The display name of the certificate authority. Optional.|
 |issuer|String| The issuer of the certificate authority. Optional.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
-|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Required.|
-|thumbprint|String|The thumbprint of certificate authority certificate. Required.|
+|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Required. Supports `$filter` (`eq`) and `$orderby`.|
+|thumbprint|String|The thumbprint of certificate authority certificate. Required. Supports `$filter` (`eq`, `startswith`).|
 |certificateRevocationListUrl|String| The URL to check if the certificate is revoked. Optional.|
 |deltacertificateRevocationListUrl|String|The list of certificates that have been revoked since the last Certificate Revocation List (CRL) or Delta CRL was published, depending on which is most recent. Optional.|
 |isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
