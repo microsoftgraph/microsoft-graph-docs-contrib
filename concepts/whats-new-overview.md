@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Device and app management | Device updates
 
 - [Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
-- Use the **isHotpatchUpdate** property on [productRevision](/graph/api/resources/windowsupdates-productrevision??view=graph-rest-beta&preserve-view=true) to identify if the content is hotpatchable.
+- Use the **isHotpatchUpdate** property on [productRevision](/graph/api/resources/windowsupdates-productrevision?view=graph-rest-beta&preserve-view=true) to identify if the content is hotpatchable.
 
 ## November 2024: New and generally available
 
