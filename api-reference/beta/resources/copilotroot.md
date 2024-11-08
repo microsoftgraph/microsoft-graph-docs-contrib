@@ -18,7 +18,7 @@ Represents a navigation property for Copilot controls.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|admin|[Admin](../resources/copilotadmin.md)|Copilot admin can add or modify Copilot settings. Navigation property. Read-only. Nullable.|
+|admin|[Admin](../resources/copilotadmin.md)|Copilot admin can add or modify Copilot settings. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

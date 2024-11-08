@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminSetting resource type"
-description: "Represents a navigation property for set of Copilot settings."
+description: "Represents a navigation property for Copilot settings."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"

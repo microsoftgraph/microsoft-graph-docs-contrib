@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[Settings](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified.. Navigation property. Read-only. Nullable.|
+|settings|[Settings](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
