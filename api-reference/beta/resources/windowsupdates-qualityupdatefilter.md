@@ -1,9 +1,9 @@
 ---
 title: "qualityUpdateFilter resource type"
 description: "Represents a filter to determine which quality update content matches the rule on an ongoing basis."
-author: "angiechen22"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
