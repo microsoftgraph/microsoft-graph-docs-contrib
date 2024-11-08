@@ -20,6 +20,7 @@ Settings controlling the user's update experience on a device.
 |:---|:---|:---|
 |daysUntilForcedReboot|Int32|Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.|
 |offerAsOptional|Boolean|Specifies whether the update is offered as **Optional** rather than **Required**.
+|isHotpatchEnabled|Boolean|Specifies whether the update is offered as a hotpatch. It can only be set to `true` on automatic policies targeting monthly security (B week) updates.|
 
 ## Relationships
 None.
@@ -35,7 +36,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.userExperienceSettings",
   "daysUntilForcedReboot": "Integer", 
-  "offerAsOptional": "Boolean"
+  "offerAsOptional": "Boolean",
+  "isHotpatchEnabled": "Boolean"
 }
 ```
 

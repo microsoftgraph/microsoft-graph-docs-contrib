@@ -20,6 +20,32 @@
     },
     {
       "ChangeList": [
+          {
+              "Id": "410c6612-72af-449e-959e-6d069bb9d26f",
+              "ApiChange": "Property",
+              "ChangedApiName": "userExperienceSettings",
+              "ChangeType": "Addition",
+              "Description": "Added the **isHotpatchEnabled** property to the [windowsupdates-userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.",
+              "Target": "userExperienceSettings"
+          }, 
+          {
+              "Id": "410c6612-72af-449e-959e-6d069bb9d26f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "qualityUpdateFilter",
+              "ChangeType": "Addition",
+              "Description": "Added the [qualityUpdateFilter](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityupdatefilter?view=graph-rest-beta) resource type.",
+              "Target": "qualityUpdateFilter"
+          }
+      ], 
+      "Id": "410c6612-72af-449e-959e-6d069bb9d26f",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T23:34:50.3183446Z",
+      "WorkloadArea": "Microsoft.WindowsUpdates",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "b4760f3b-f3c7-49ce-bd6a-e5d4fc4afc4c",
           "ApiChange": "Property",
