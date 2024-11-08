@@ -5,6 +5,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.localizationpriority: medium
+ms.date: 11/07/2024
 ---
 
 # Use external groups to manage permissions to Microsoft Graph connectors data sources
