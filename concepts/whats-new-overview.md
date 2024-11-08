@@ -3,6 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # What's new in Microsoft Graph
@@ -21,6 +22,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Security | Identities
 
 The Defender for Identity sensors management API enables you to create detailed reports on the sensors in your workspace, providing information such as server name, sensor version, type, state, and health status. It also allows you to manage sensor settings, including adding descriptions, enabling or disabling delayed updates, and specifying the domain controller the sensor connects to for querying Entra ID. For more information, see [sensor](/graph/api/resources/security-sensor).
+
+## November 2024: New in preview only
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to get or set the users who can admit from the lobby.
 
 ## October 2024: New and generally available
 
