@@ -274,14 +274,6 @@ items:
         href: ../../api/signin-confirmcompromised.md
       - name: Confirm safe
         href: ../../api/signin-confirmsafe.md
-    - name: Sign up
-      items:
-      - name: Sign up
-        href: ../../resources/selfservicesignup.md
-      - name: List
-        href: ../../api/selfservicesignup-list.md
-      - name: Get
-        href: ../../api/selfservicesignup-get.md
     - name: Provisioning object summary
       items:
       - name: Provisioning object summary
