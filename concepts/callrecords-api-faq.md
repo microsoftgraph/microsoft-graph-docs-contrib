@@ -4,6 +4,7 @@ description: "Find answers to frequently asked questions about the call records 
 author: "MirraRaine"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph call records API FAQ

@@ -3,6 +3,7 @@ title: "Build cross-device apps powered by Project Rome "
 description: "Build experiences that cross devices and platforms seamlessly by using the activity feed and device relay APIs to reduce friction for users and drive app usage."
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
+ms.date: 11/07/2024
 ---
 
 # Build cross-device apps powered by Project Rome
