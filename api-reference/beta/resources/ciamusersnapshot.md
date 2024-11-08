@@ -37,7 +37,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "userid": "String",
+  "userId": "String",
 }
 
 ```
