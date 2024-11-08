@@ -20,13 +20,13 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/copilotadminlimitedmode-get.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Read the properties and relationships of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.|
-|[Update](../api/copilotadminlimitedmode-update.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Update the properties of a [copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md) object.|
+|[Get](../api/copilotadminlimitedmode-get.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Read the properties and relationships of a copilotAdminLimitedMode object.|
+|[Update](../api/copilotadminlimitedmode-update.md)|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Update the properties of a copilotAdminLimitedMode object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When copilotLimitedMode=true, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When copilotLimitedMode=false, the current mode for Copilot, it responds to any types of questions grounded to the meeting conversation. The default value is false.|
+|isEnabledForGroup|Boolean|Enables the user to be in limited mode for Copilot in Teams meetings. When copilotAdminLimitedMode=true, users in this mode can ask any questions, but Copilot doesn't respond to certain questions related to inferring emotions, behavior, or judgments. When copilotAdminLimitedMode=false, the current mode for Copilot, it responds to any types of questions grounded to the meeting conversation. The default value is false.|
 |groupId|String|The ID of a Microsoft Entra group, of which the value of `isEnabledForGroup` is applied value for its members. The default value is `null`. This parameter is optional. If `isEnabledForGroup` is set to true, the `groupId` value must be provided for the copilotLimitedMode to be enabled for the members of the group
 
 ## Relationships

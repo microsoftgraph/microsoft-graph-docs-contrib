@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|limitedMode|[LimitedMode](../resources/copilotadminlimitedmode.md)|Add or modify copilot limited mode. Navigation property. Read-only. Nullable.|
+|limitedMode|[CopilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Add or modify copilot limited mode. Navigation property. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
