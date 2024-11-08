@@ -1,9 +1,9 @@
 ---
 title: "safeguardSettings resource type"
-description: "Manages the safeguards that the service applies to devices in a deployment."
+description: "Manages the safeguards that Windows Autopatch applies to devices in a deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Manages the safeguards that the service applies to devices in a deployment.
+Manages the safeguards that Windows Autopatch applies to devices in a deployment.
 
 ## Properties
 |Property|Type|Description|

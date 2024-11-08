@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.ios_vpp_app import IosVppApp
 from msgraph.generated.models.mime_content import MimeContent
@@ -11,9 +12,7 @@ from msgraph.generated.models.mobile_app_publishing_state import MobileAppPublis
 from msgraph.generated.models.vpp_licensing_type import VppLicensingType
 from msgraph.generated.models.ios_device_type import IosDeviceType
 from msgraph.generated.models.vpp_token_account_type import VppTokenAccountType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = IosVppApp(
 	odata_type = "#microsoft.graph.iosVppApp",
 	display_name = "Display Name value",

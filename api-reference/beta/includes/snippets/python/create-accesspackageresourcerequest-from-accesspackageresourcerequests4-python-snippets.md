@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.access_package_resource_request import AccessPackageResourceRequest
 from msgraph_beta.generated.models.access_package_resource import AccessPackageResource
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageResourceRequest(
 	catalog_id = "beedadfe-01d5-4025-910b-84abb9369997",
 	request_type = "AdminAdd",

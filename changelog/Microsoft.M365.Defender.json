@@ -2285,6 +2285,180 @@
         "CreatedDateTime": "2024-05-26T11:35:02.5280165Z",
         "WorkloadArea": "Security",
         "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "dnsDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **dnsDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "hostName",
+            "ChangeType": "Addition",
+            "Description": "Added the **hostName** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+            "ApiChange": "Property",
+            "ChangedApiName": "ntDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **ntDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource.",
+            "Target": "deviceEvidence"
+          }
+        ],
+        "Id": "55bed593-06e0-4486-a3f2-5cb28f04e3b8",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-12T11:01:36.741426Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "69c440dc-ebc6-4d69-9a52-97b6eb1863db",
+            "ApiChange": "Property",
+            "ChangedApiName": "dnsDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **dnsDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-1.0) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "69c440dc-ebc6-4d69-9a52-97b6eb1863db",
+            "ApiChange": "Property",
+            "ChangedApiName": "hostName",
+            "ChangeType": "Addition",
+            "Description": "Added the **hostName** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-1.0) resource.",
+            "Target": "deviceEvidence"
+          },
+          {
+            "Id": "69c440dc-ebc6-4d69-9a52-97b6eb1863db",
+            "ApiChange": "Property",
+            "ChangedApiName": "ntDomain",
+            "ChangeType": "Addition",
+            "Description": "Added the **ntDomain** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-1.0) resource.",
+            "Target": "deviceEvidence"
+          }
+        ],
+        "Id": "69c440dc-ebc6-4d69-9a52-97b6eb1863db",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-09-23T11:01:36.741426Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Alerts and incidents"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "deploymentStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **deploymentStatus** enumeration type.",
+            "Target": "deploymentStatus"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "sensorHealthStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **sensorHealthStatus** enumeration type.",
+            "Target": "sensorHealthStatus"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "sensorType",
+            "ChangeType": "Addition",
+            "Description": "Added the **sensorType** enumeration type.",
+            "Target": "sensorType"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "deploymentAccessKeyType",
+            "ChangeType": "Addition",
+            "Description": "Added the [deploymentAccessKeyType](https://learn.microsoft.com/en-us/graph/api/resources/security-deploymentAccessKeyType?view=graph-rest-beta) resource.",
+            "Target": "deploymentAccessKeyType"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "sensorDeploymentPackage",
+            "ChangeType": "Addition",
+            "Description": "Added the [sensorDeploymentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorDeploymentPackage?view=graph-rest-beta) resource.",
+            "Target": "sensorDeploymentPackage"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "sensorSettings",
+            "ChangeType": "Addition",
+            "Description": "Added the [sensorSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorSettings?view=graph-rest-beta) resource.",
+            "Target": "sensorSettings"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "sensors",
+            "ChangeType": "Addition",
+            "Description": "Added the **sensors** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+            "Target": "identityContainer"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "networkAdapter",
+            "ChangeType": "Addition",
+            "Description": "Added the [networkAdapter](https://learn.microsoft.com/en-us/graph/api/resources/security-networkAdapter?view=graph-rest-beta) resource.",
+            "Target": "networkAdapter"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "sensor",
+            "ChangeType": "Addition",
+            "Description": "Added the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Target": "sensor"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Method",
+            "ChangedApiName": "regenerateDeploymentAccessKey",
+            "ChangeType": "Addition",
+            "Description": "Added the [regenerateDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-regenerateDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Target": "sensor"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Method",
+            "ChangedApiName": "getDeploymentAccessKey",
+            "ChangeType": "Addition",
+            "Description": "Added the [getDeploymentAccessKey](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentAccessKey?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Target": "sensor"
+          },
+          {
+            "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+            "ApiChange": "Method",
+            "ChangedApiName": "getDeploymentPackageUri",
+            "ChangeType": "Addition",
+            "Description": "Added the [getDeploymentPackageUri](https://learn.microsoft.com/en-us/graph/api/security-sensor-getDeploymentPackageUri?view=graph-rest-beta) method to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+            "Target": "sensor"
+          }
+        ],
+        "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-09-18T12:42:04.531087Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Identities"
       }
   ]
 }

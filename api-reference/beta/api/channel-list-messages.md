@@ -31,8 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
 > [!NOTE]
-> - The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> - The Group.Read.All and Group.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> - The `ChannelMessage.Read.Group` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The `Group.Read.All` and `Group.ReadWrite.All` permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -52,8 +52,6 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
-> **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
-
 ## Request headers
 
 | Header       | Value |
@@ -66,7 +64,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The channel messages in the response are sorted by the last modified date of the entire reply chain, including both the root channel message and its replies.
 
 ## Examples
 
@@ -558,7 +556,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 #### Response
 The following response shows one channel message on the page, and includes a URL in `@odata.nextLink` for a subsequent operation to get the next message in that channel. 
 
-The response includes replies of that channel message. In practice, this operation can return up to 1,000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1000. This example assumes more than 1,000 replies in that channel message, but for readability, the following response shows only three replies.
+The response includes replies of that channel message. In practice, this operation can return up to 1,000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1,000. This example assumes more than 1,000 replies in that channel message, but for readability, the following response shows only three replies.
 
 <!-- {
   "blockType": "response",

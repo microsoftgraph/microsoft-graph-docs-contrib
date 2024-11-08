@@ -1,15 +1,16 @@
 ---
-title: "Deployments in the Windows Update for Business deployment service"
-description: "Use the Windows Update for Business deployment service to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
+title: "Deployments in Windows Autopatch"
+description: "Use Windows Autopatch to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
-# Deployments in the Windows Update for Business deployment service
+# Deployments in Windows Autopatch
 
-Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment, you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
+Deployments are the foundation of Windows Autopatch. Through a deployment, you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
 
 Deployments have the following key aspects:
 
@@ -21,7 +22,7 @@ Deployments have the following key aspects:
 
 ## Create a deployment with content and an audience
 
-Because content and audience are key to the definition of a deployment, you're required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
+Because content and audience are key to the definition of a deployment, you're required to assign both at the time of creation. While content and audience assignments can't be changed later, device membership within an audience can.
 
 To learn more about creating a deployment, see [Deploy a feature update](/graph/windowsupdates-deploy-update), [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update), and [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
@@ -56,7 +57,7 @@ Deployments move through lifecycle states as described in the following table.
 | `scheduled` | The deployment is waiting for offer conditions to be met to start offering the update to devices. |
 | `offering`  | The deployment is offering the update to devices.                                                 |
 | `paused`    | The deployment is paused and prevented from offering the update to devices until it's unpaused.  |
-| `faulted`   | The deployment is not offering the update to devices due to a reason the service cannot resolve.  |
+| `faulted`   | The deployment isn't offering the update to devices due to a reason Windows Autopatch can't resolve.  |
 
 
 ### Transitions
@@ -64,21 +65,21 @@ Deployments move through lifecycle states as described in the following table.
 | Transition                           | Condition                                |
 |--------------------------------------|------------------------------------------|
 | `scheduled` → `offering`             | Scheduling condition is met.             |
-| `offering` → `scheduled`             | Scheduling condition is not met.         |
-| `scheduled` or `offering` → `paused` | There is a request or automatic action to pause. |
-| `paused` → `scheduled` or `offering` | There is no longer a request or automatic action to pause. |
-| `offering`, `scheduled`, or `paused` → `faulted` | There is an error that the service cannot resolve. |
+| `offering` → `scheduled`             | Scheduling condition isn't met.         |
+| `scheduled` or `offering` → `paused` | There's a request or automatic action to pause. |
+| `paused` → `scheduled` or `offering` | There's no longer a request or automatic action to pause. |
+| `offering`, `scheduled`, or `paused` → `faulted` | There's an error that Windows Autopatch can't resolve. |
 
 ### Resource model
 
 The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a **state** property of type [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) which provides information about the current lifecycle state.
 
-The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include schedule settings and monitoring settings.
+The effective **value** of the deployment state is determined as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include schedule settings and monitoring settings.
 
 ## Assign a device to multiple deployments
 
 You can assign a device to multiple deployments at one time. These deployments can be for content of the same update category (for example all deployments are feature updates), or for content of different update categories.
 
-When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the deployment service offers content in a sequence according to Microsoft’s recommendation.
+When you assign a device to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the content is offered in a sequence based on the recommendation from Microsoft.
 
-When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published January 2023 and 1.0.0.1 published February 2023), the deployment service offers the content that is higher ranked by Microsoft. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment delivers content to the device.
+When you assign a device to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021, or driver version 1.0.0.0 published in January 2023 and 1.0.0.1 published in February 2023), the content ranked higher by Microsoft is offered. For feature updates and quality updates, more recent updates are higher ranked. For driver updates, applicable updates are typically ranked by version and publication date.  This behavior does not apply if one of the deployments is still scheduled for the device and isn't ready to offer content. In that case, the other deployment delivers content to the device.

@@ -3,7 +3,7 @@ title: "Update updatePolicy"
 description: "Update the properties of an updatePolicy object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

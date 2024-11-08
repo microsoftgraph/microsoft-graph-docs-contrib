@@ -46,42 +46,42 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ec98f158-341d-4fea-9f8c-14a250d489ac"],
-  "name": "add_educationcategory_to_educationassignment_classID_assignID"
+  "name": "remove_educationcategory_from_educationassignment"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-educationcategory-to-educationassignment-classid-assignid-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-educationcategory-from-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-educationcategory-to-educationassignment-classid-assignid-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/remove-educationcategory-from-educationassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-classid-assignid-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/remove-educationcategory-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-classid-assignid-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/remove-educationcategory-from-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-educationcategory-to-educationassignment-classid-assignid-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-educationcategory-from-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/add-educationcategory-to-educationassignment-classid-assignid-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/remove-educationcategory-from-educationassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-classid-assignid-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/remove-educationcategory-from-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/add-educationcategory-to-educationassignment-classid-assignid-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/remove-educationcategory-from-educationassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,14 +91,10 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignmentResource"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
-
-{
-}
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

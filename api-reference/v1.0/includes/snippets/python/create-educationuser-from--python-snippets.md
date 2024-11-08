@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.education_user import EducationUser
 from msgraph.generated.models.education_user_role import EducationUserRole
@@ -17,9 +18,7 @@ from msgraph.generated.models.assigned_plan import AssignedPlan
 from msgraph.generated.models.password_profile import PasswordProfile
 from msgraph.generated.models.provisioned_plan import ProvisionedPlan
 from msgraph.generated.models.education_on_premises_info import EducationOnPremisesInfo
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationUser(
 	odata_type = "#microsoft.graph.educationUser",
 	primary_role = EducationUserRole.Student,

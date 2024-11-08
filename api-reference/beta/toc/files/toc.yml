@@ -8,6 +8,8 @@ items:
   items:
   - name: Drive
     href: ../../resources/drive.md
+  - name: List drive
+    href: ../../api/drive-list.md
   - name: Get drive
     href: ../../api/drive-get.md
   - name: Get drive root
@@ -190,6 +192,8 @@ items:
     href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
+  - name: Update recycle bin settings
+    href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
     href: ../../api/filestoragecontainer-restore-recyclebin-items.md
   - name: Delete recycle bin items
@@ -200,3 +204,9 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+- name: Shared drive item
+  items:
+  - name: Shared drive item
+    href: ../../resources/shareddriveitem.md
+  - name: Use sharing links
+    href: ../../api/shares-get.md

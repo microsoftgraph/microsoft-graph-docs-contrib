@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.planner.tasks.item.planner_task_item_request_builder import PlannerTaskItemRequestBuilder
 from kiota_abstractions.base_request_configuration import RequestConfiguration
@@ -15,9 +16,7 @@ from msgraph_beta.generated.models.planner_task_recurrence import PlannerTaskRec
 from msgraph_beta.generated.models.planner_recurrence_schedule import PlannerRecurrenceSchedule
 from msgraph_beta.generated.models.recurrence_pattern import RecurrencePattern
 from msgraph_beta.generated.models.recurrence_pattern_type import RecurrencePatternType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PlannerTask(
 	assignments = PlannerAssignments(
 		additional_data = {

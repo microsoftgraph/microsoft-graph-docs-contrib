@@ -1,33 +1,34 @@
 ---
-title: "Deploy a feature update using the Windows Update for Business deployment service"
-description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
+title: "Deploy a feature update using Windows Autopatch"
+description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
-# Deploy a feature update using the Windows Update for Business deployment service
+# Deploy a feature update using Windows Autopatch
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This article focuses on deployments of feature updates. For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
+With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited quality updates, and driver updates. This article focuses on the deployment of feature updates. For information about deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md). For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 When you deploy a feature update to a device, Windows Update offers the specified update to the device if it hasn't yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or beyond version 20H2, it stays on its current version. If the device isn't enrolled in feature update management, the device isn't affected by this operation.
 
-As long as a device remains enrolled in feature update management, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
+As long as a device remains enrolled in feature update management, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using Windows Autopatch.
 
 > [!IMPORTANT]
-> By using the Windows Update for Business deployment service to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
+> By using Windows Autopatch to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
 
 ## Prerequisites
 
-* Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
-* Before you can use the deployment service to deploy feature updates, devices must be [enrolled in management](windowsupdates-enroll.md) by the deployment service for the feature update category.
+* Devices meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
+* Before you can deploy feature updates using Windows Autopatch, devices must be [enrolled in management](windowsupdates-enroll.md) for the feature update category.
 
 ## Step 1: (Optional) Get a list of deployable updates
 
-You can query the deployment service catalog to get a list of updates that can be deployed to devices as content in a deployment.
+You can query the Windows Autopatch catalog API to get a list of updates that can be deployed to devices as content in a deployment.
 
-The following example shows how to query for all Windows 10 feature updates that are deployable by the deployment service.
+The following example shows how to query for all Windows feature updates that are deployable by Windows Autopatch.
 
 ### Request
 
@@ -184,7 +185,7 @@ Content-Type: application/json
 
 After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). After the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
+Devices are automatically registered when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
 
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 

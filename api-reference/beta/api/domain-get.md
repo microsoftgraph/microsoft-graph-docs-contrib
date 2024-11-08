@@ -25,44 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-get-permissions.md)]
 
-The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
-
-* User Administrator
-* Helpdesk Administrator
-* Service Support Administrator
-* Billing Administrator
-* Mailbox Administrator
-* Directory Readers
-* Directory Writers
-* AdHoc License Administrator
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Authentication Administrator
-* Privileged Authentication Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Volume Licensing Business Center User
-* Volume Licensing Service Center User
-* Modern Commerce Administrator
-* Microsoft Store for Business User
-* Directory Reviewer
+[!INCLUDE [rbac-domain-apis-read](../includes/rbac-for-apis/rbac-domain-apis-read.md)]
 
 ## HTTP request
 
@@ -98,10 +61,10 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 <!-- {
   "blockType": "request",
   "name": "get_domain",
-  "sampleKeys": ["contoso.com"]
+  "sampleKeys": ["woodgrovedemo.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/beta/domains/woodgrovedemo.com
 ```
 
 # [C#](#tab/csharp)
@@ -150,13 +113,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#domains/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET domains('<key>')?$select=authenticationType,availabilityStatus",
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "woodgrovedemo.com",
+    "isAdminManaged": true,
+    "isDefault": true,
+    "isInitial": true,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+        "Email",
+        "OfficeCommunicationsOnline",
+        "CustomUrlDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
 }
 ```
 

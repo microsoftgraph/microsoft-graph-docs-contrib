@@ -1,6 +1,6 @@
 ---
 title: "workingTimeSchedule resource type"
-description: "Represents a user's scheduled working hours."
+description: "Contains methods that trigger policies for the start and end of working hours for a user."
 author: "galalalym"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's scheduled working hours.
+Contains methods that trigger policies for the start and end of working hours for a user.
 
 ## Methods
 
@@ -27,7 +27,7 @@ Represents a user's scheduled working hours.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A unique programmatic identifier for the entity. Read-only.|
+|id|String|A unique programmatic identifier for the resource. Read-only.|
 
 ## Relationships
 

@@ -20,9 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "sharepointsettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointsettings-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to one of the following admin roles. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles):
-* Global Administrator
-* SharePoint Administrator
+When calling on behalf of a user, the user needs to belong to the SharePoint Administrator role. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## HTTP request
 

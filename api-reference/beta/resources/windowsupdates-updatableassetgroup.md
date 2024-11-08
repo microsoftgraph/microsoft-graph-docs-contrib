@@ -3,7 +3,7 @@ title: "updatableAssetGroup resource type"
 description: "A group of azureADDevice resources that can receive updates."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 

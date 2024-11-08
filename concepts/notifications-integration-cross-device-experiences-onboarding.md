@@ -4,6 +4,7 @@ description: "Your app needs to register cross-device information to authorize M
 ms.localizationpriority: high
 ms.subservice: "notifications"
 author: "merzink"
+ms.date: 11/07/2024
 ---
 
 # Onboarding to cross-device experiences for Microsoft Graph notifications (deprecated)
@@ -27,8 +28,6 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
 
 2.  Select all supported platforms where your app will have a presence and be enabled to receive notifications. You can select from supported platforms that include Windows, Android, and iOS, as shown. 
 
-![Set up supported platform types](images/notifications-crossdevice-supported-platforms.png)
-
 3.  Provide app IDs for each of the platforms where your app has a presence, as shown.
 
  ![Provide platform-specific app ids](images/notifications-crossdevice-platform-appids.png)
@@ -42,13 +41,10 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
 
 5.  Microsoft Graph notifications use each of the native notification platforms on all major platforms to send notifications to the app client endpoints, namely, WNS (for Windows UWP), FCM (for Android), and APNS (for iOS). Provide your credentials for these notification platforms to enable Microsoft Graph notifications to deliver notifications for your app server when you publish user-targeted notifications, as shown.
 
- ![Provide cross-device push credentials](images/notifications-crossdevice-push-cred.png)
-
 > [!NOTE]
 > For Windows UWP apps, enabling WNS push notification is a prerequisite to using Microsoft Graph notifications. For details, see [WNS overview](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). After you onboard, you can provide push credentials via Partner Center to the Connected Device Platform.
 
 6.  Verify your cross-device app domain, which serves as a verification process to prove that your application has ownership of this domain. This acts like a cross-device app identity for the application or applications you registered, as shown.
-    
-    ![Verify domain](images/notifications-crossdevice-domain-verify.png)
+
 
 That's it! You've now registered your applications to receive notifications. Next, learn how to set up your [app service](notifications-integrating-app-server.md) and start sending notifications.

@@ -184,6 +184,12 @@ items:
       href: ../../api/security-ediscoverycase-list-custodians.md
     - name: Create ediscoveryCustodian
       href: ../../api/security-ediscoverycase-post-custodians.md
+    - name: List legalHolds
+      href: ../../api/security-ediscoverycase-list-legalholds.md
+    - name: Delete legalholds
+      href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: Create ediscoveryHoldPolicy
+      href: ../../api/security-ediscoverycase-post-legalholds.md
     - name: List noncustodialDataSources
       href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
     - name: Create ediscoveryNoncustodialDataSource
@@ -246,9 +252,9 @@ items:
       href: ../../api/security-ediscoverycustodian-list-sitesources.md
     - name: Create site source
       href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unitifed group sources
+    - name: List unified group sources
       href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unifed group source
+    - name: Create unified group source
       href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
     - name: List user sources
       href: ../../api/security-ediscoverycustodian-list-usersources.md
@@ -274,6 +280,28 @@ items:
       href: ../../api/security-ediscoverynoncustodialdatasource-removehold.md
     - name: Get last index operation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
+  - name: eDiscovery hold policy
+    items:
+    - name: eDiscovery hold policy
+      href: ../../resources/security-ediscoveryholdpolicy.md
+    - name: List
+      href: ../../api/security-ediscoverycase-list-legalholds.md
+    - name: Create
+      href: ../../api/security-ediscoverycase-post-legalholds.md
+    - name: Get
+      href: ../../api/security-ediscoveryholdpolicy-get.md
+    - name: Update
+      href: ../../api/security-ediscoveryholdpolicy-update.md
+    - name: Delete
+      href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: List site sources
+      href: ../../api/security-ediscoverycustodian-list-sitesources.md
+    - name: Create site source
+      href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
+    - name: List user sources
+      href: ../../api/security-ediscoverycustodian-list-usersources.md
+    - name: Create user source
+      href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -290,6 +318,12 @@ items:
       href: ../../api/security-ediscoverycase-delete-searches.md
     - name: Estimate statistics
       href: ../../api/security-ediscoverysearch-estimatestatistics.md
+    - name: Purge data
+      href: ../../api/security-ediscoverysearch-purgedata.md
+    - name: Export report
+      href: ../../api/security-ediscoverysearch-exportreport.md
+    - name: Export result
+      href: ../../api/security-ediscoverysearch-exportresult.md
     - name: List additional sources
       href: ../../api/security-ediscoverysearch-list-additionalsources.md
     - name: Add additional sources
@@ -342,6 +376,48 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+- name: Identities
+  items:
+  - name: Health issue
+    items:
+    - name: Health issue
+      href: ../../resources/security-healthissue.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-healthissues.md
+    - name: Get
+      href: ../../api/security-healthissue-get.md
+    - name: Update
+      href: ../../api/security-healthissue-update.md
+  - name: Sensor
+    items:
+    - name: Sensor
+      href: ../../resources/security-sensor.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensors.md
+    - name: Get
+      href: ../../api/security-sensor-get.md
+    - name: Update
+      href: ../../api/security-sensor-update.md
+    - name: Delete
+      href: ../../api/security-sensor-delete.md
+    - name: Get deployment access key
+      href: ../../api/security-sensor-getdeploymentaccesskey.md
+    - name: Get deployment package URI
+      href: ../../api/security-sensor-getdeploymentpackageuri.md
+    - name: Regenerate deployment access key
+      href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Complex types
+    items:
+    - name: Deployment access key type
+      href: ../../resources/security-deploymentaccesskeytype.md
+    - name: Identity container
+      href: ../../resources/security-identitycontainer.md
+    - name: Network adapter
+      href: ../../resources/security-networkadapter.md
+    - name: Sensor deployment package
+      href: ../../resources/security-sensordeploymentpackage.md
+    - name: Sensor settings
+      href: ../../resources/security-sensorsettings.md
 - name: Information protection
   items:
   - name: Threat assessment

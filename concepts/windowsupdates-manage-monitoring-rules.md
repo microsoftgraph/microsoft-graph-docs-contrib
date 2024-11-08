@@ -1,15 +1,16 @@
 ---
-title: "Manage monitoring rules using the Windows Update for Business deployment service"
-description: "Use the Windows Update for Business deployment service to create a monitoring rule or resume deployments paused by a monitoring rule."
+title: "Manage monitoring rules using Windows Autopatch"
+description: "Use Windows Autopatch to create a monitoring rule or resume deployments paused by a monitoring rule."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
-# Manage monitoring rules using the Windows Update for Business deployment service
+# Manage monitoring rules using Windows Autopatch
 
-For deployments initiated by the deployment service, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
+For deployments initiated by Windows Autopatch, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
 Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
@@ -18,7 +19,7 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployment) can have one active monitoring rule at a time.
 
 Monitoring rules consist of three components:
-* **signal**: The type of update issue to be monitored by the deployment service.
+* **signal**: The type of update issue to be monitored.
 * **threshold**: When this percentage of devices emit the specified signal, the monitoring rule is triggered.
 * **action**: The action to take when the monitoring rule is triggered.
 

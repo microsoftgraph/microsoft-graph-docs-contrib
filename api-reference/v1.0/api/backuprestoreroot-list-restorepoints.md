@@ -12,7 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
+Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. 
+
+> **Note:** This API returns a maximum of five **restorePoint** objects. If you don't include the `orderBy` parameter, the five most recent restore points are returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,9 +39,10 @@ GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 
 ```
 
 ## Optional query parameters
-This method supports the `$expand` and `$filter` [OData puery parameters](/graph/query-parameters), as shown in the following [example](../api/backuprestoreroot-list-restorepoints.md#request). 
 
-The two query parameters are required.
+This method supports the `$expand`, `$filter`, and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
+
+The `$expand` and `$filter` query parameters are required.
 
 ## Request headers
 
@@ -54,6 +57,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
@@ -92,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expa
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-restorepoint-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-restorepoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

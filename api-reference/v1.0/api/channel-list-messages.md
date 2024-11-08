@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
 > [!NOTE]
-> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The `ChannelMessage.Read.Group` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -45,11 +45,9 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Apply `$top` to specify the number of channel messages returned per page in the response. The default page size is 20 messages. You can extend up to 50 channel messages per page. |
-| [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1000 replies. For an operation that expands channel messages with more than 1000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
+| [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1,000 replies. For an operation that expands channel messages with more than 1,000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
 
-The other [OData query parameters](/graph/query-parameters) are not currently supported.
-
-> **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
+The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request headers
 
@@ -63,7 +61,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The channel messages in the response are sorted by the last modified date of the entire reply chain, including both the root channel message and its replies.
 
 ## Examples
 
@@ -71,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following example shows a request with the $top query option and without the optional prefer header.
+The following example shows a request with the `$top` query option and without the optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -544,7 +542,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 #### Response
 The following response shows one channel message on the page, and includes a URL in `@odata.nextLink` for a subsequent operation to get the next message in that channel. 
 
-The response includes replies of that channel message. In practice, this operation can return up to 1000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1000. This example assumes more than 1000 replies in that channel message, but for readability, the following response shows only 3 replies.
+The response includes replies of that channel message. In practice, this operation can return up to 1,000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1,000. This example assumes more than 1,000 replies in that channel message, but for readability, the following response shows only three replies.
 
 <!-- {
   "blockType": "response",

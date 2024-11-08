@@ -69,6 +69,9 @@ This resource supports:
 | [Update event](../api/group-update-event.md) | None | Update the properties of an event object. |
 | [Delete event](../api/group-delete-event.md) | None | Delete event object. |
 | [List calendar view](../api/group-list-calendarview.md) | [event](event.md) collection | Get a collection of events in a specified time window. |
+| **Cloud licensing** |  |  |
+|[List usage rights](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
+|[Get usage right](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a group.|
 | **Conversations** |  |  |
 | [List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection | Get a conversation object collection. |
 | [Create conversation](../api/group-post-conversations.md) | [conversation](conversation.md) | Create a new conversation by posting to the conversations collection. |
@@ -149,6 +152,7 @@ name. |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). Read-only. |
 | autoSubscribeNewMembers | Boolean | Indicates if new members added to the group are auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | classification | String | Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
+| cloudLicensing | [microsoft.graph.cloudLicensing.groupCloudLicensing](../resources/cloudlicensing-groupcloudlicensing.md) | The relationships of a group to cloud licensing resources. |
 | createdByAppId | String | App ID of the app used to create the group. Can be null for some groups. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`). |
 | createdDateTime | DateTimeOffset | Timestamp of when the group was created. The value can't be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
 | deletedDateTime | DateTimeOffset | For some Microsoft Entra objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to `null`. Inherited from [directoryObject](../resources/directoryobject.md). |
@@ -225,7 +229,7 @@ name. |
 | members | [directoryObject](directoryobject.md) collection | Direct group members, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`. |
 | membersWithLicenseErrors | [user](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [onenote](onenote.md) | Read-only. |
-| owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Nullable. If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. <br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
+| owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Limited to 100 owners. Nullable. <li>If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner. <li>A non-admin user can't explicitly add themselves to this collection when they're creating the group. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419). <li>For security groups, the admin user isn't automatically added to this collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).<br/><br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
 | permissionGrants | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | The permissions granted for a group to a specific application. Supports `$expand`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo. |
 | photos | [profilePhoto](profilephoto.md) collection | The profile photos owned by the group. Read-only. Nullable. |
@@ -290,6 +294,7 @@ The following JSON representation shows the resource type.
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "cloudLicensing": { "@odata.type": "microsoft.graph.cloudLicensing.groupCloudLicensing" },
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",

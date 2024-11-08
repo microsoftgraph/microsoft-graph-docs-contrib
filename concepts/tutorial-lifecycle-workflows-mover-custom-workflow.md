@@ -7,7 +7,7 @@ ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 04/13/2024
+ms.date: 08/29/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use lifecycle workflows APIs to automate employee mover tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
@@ -48,15 +48,13 @@ The following request creates a mover workflow with the following settings:
 + The workflow runs when an employee is added to the **Sales** department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in lifecycle workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_lifecycle_workflows_mover_create_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
 Content-type: application/json
 
 {
@@ -94,42 +92,42 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-lifecycle-workflows-mover-create-workflow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-lifecycle-workflows-mover-create-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-lifecycle-workflows-mover-create-workflow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-lifecycle-workflows-mover-create-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-lifecycle-workflows-mover-create-workflow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-lifecycle-workflows-mover-create-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-lifecycle-workflows-mover-create-workflow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-lifecycle-workflows-mover-create-workflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-lifecycle-workflows-mover-create-workflow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-lifecycle-workflows-mover-create-workflow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-lifecycle-workflows-mover-create-workflow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-lifecycle-workflows-mover-create-workflow-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-lifecycle-workflows-mover-create-workflow-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-lifecycle-workflows-mover-create-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-lifecycle-workflows-mover-create-workflow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-lifecycle-workflows-mover-create-workflow-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -141,7 +139,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "mover",
     "description": "Configure mover tasks for a user moved to the Sales department.",
     "displayName": "Added to Sales department workflow",
@@ -221,6 +219,8 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/work
 
 ### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -231,7 +231,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.identityGovernance.userProcessingResult)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.identityGovernance.userProcessingResult)",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflows('<guid>')/executionScope?$select=completedDateTime,failedTasksCount",
     "value": [
         {
@@ -263,6 +263,8 @@ At any time, you can monitor the status of the workflows and their associated ta
 ### Option 1: Monitor tasks for a workflow at the user level
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -307,9 +309,9 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
----
-
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -321,7 +323,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('2bb05c85-556a-429a-8c16-16f6be5ef880')/userProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('2bb05c85-556a-429a-8c16-16f6be5ef880')/userProcessingResults",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflows('<guid>')/userProcessingResults?$select=completedDateTime,failedTasksCount",
     "value": [
         {
@@ -346,6 +348,8 @@ Content-Type: application/json
 ### Option 2: Get the aggregate high-level summary of the user-level results for a workflow, within a specified period
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -390,9 +394,9 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
----
-
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

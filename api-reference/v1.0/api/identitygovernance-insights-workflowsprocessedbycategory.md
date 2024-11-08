@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of workflows processed, by category, in a tenant. This allows you to quickly get category information, by numerical value, bypassing other information found in the [WorkflowsProcessedSummary](identitygovernance-insights-workflowsprocessedsummary.md) call.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/insig
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/insightsthisworkflowsprocessedbycategory-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/insightsthisworkflowsprocessedbycategory-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

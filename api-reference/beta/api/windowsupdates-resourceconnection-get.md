@@ -3,7 +3,7 @@ title: "Get resourceConnection"
 description: "Read the properties and relationships of a resourceConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: apiPageType
 ---
 

@@ -6,13 +6,14 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
+ms.date: 11/07/2024
 ---
 
 # Surface the data in Microsoft Search
 
 To make it easier for users to find information that they have permission to see, you can create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 
-To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the global administrator role, and do the following:
+To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the Search Administrator role, and do the following:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
 2. Go to **Vertical**, and then select **Add**.

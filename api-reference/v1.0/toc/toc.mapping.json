@@ -33,10 +33,21 @@
           "childNodes": [
             {
               "name": "Policies",
+              "shouldSort": true,
               "resources": [
-                "remoteDesktopSecurityConfiguration",
                 "tokenIssuancePolicy",
                 "tokenLifetimePolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Application management policy",
+                  "shouldSort": true,
+                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
+                  "resources": [
+                    "tenantAppManagementPolicy",
+                    "appManagementPolicy"
+                  ]
+                }
               ]
             }
           ]
@@ -53,6 +64,15 @@
                 "claimsMappingPolicy",
                 "customClaimsPolicy",
                 "homeRealmDiscoveryPolicy"
+              ],
+              "childNodes": [
+                {
+                  "name": "Remote desktop security policy",
+                  "resources": [
+                    "remoteDesktopSecurityConfiguration",
+                    "targetDeviceGroup"
+                  ]
+                }
               ]
             }
           ]
@@ -165,6 +185,9 @@
         "event",
         "eventMessage",
         "attachment",
+        "fileAttachment",
+        "itemAttachment",
+        "referenceAttachment",
         "calendarGroup",
         "calendarPermission",
         "outlookCategory"
@@ -572,7 +595,8 @@
         "driveItem",
         "bundle",
         "permission",
-        "fileStorageContainer"
+        "fileStorageContainer",
+        "sharedDriveItem"
       ]
     },
     {
@@ -920,14 +944,25 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "authenticationEventListener",
-            "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "invitation"
           ],
           "childNodes": [
+            {
+              "name": "Authentication event listeners",
+              "resources": [
+                "authenticationEventListener",
+                "onAttributeCollectionListener",
+                "onAttributeCollectionStartListener",
+                "onAttributeCollectionSubmitListener",
+                "onAuthenticationMethodLoadStartListener",
+                "onInteractiveAuthFlowStartListener",
+                "onTokenIssuanceStartListener",
+                "onUserCreateStartListener"
+              ]
+            },
             {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",
@@ -983,8 +1018,9 @@
               ]
             },
             {
-              "name": "Custom authentication extension",
+              "name": "Custom authentication extensions",
               "resources": [
+                "customAuthenticationExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -994,6 +1030,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1062,24 +1099,13 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
-                "claimsMappingPolicy",
                 "homeRealmDiscoveryPolicy",
-                "tokenIssuancePolicy",
-                "tokenLifetimePolicy",
                 "authenticationFlowsPolicy",
                 "authenticationStrengthPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
               ],
               "childNodes": [
-                {
-                  "name": "Application authentication method policy",
-                  "overview": "../../resources/applicationauthenticationmethodpolicy.md",
-                  "resources": [
-                    "tenantAppManagementPolicy",
-                    "appManagementPolicy"
-                  ]
-                },
                 {
                   "name": "Authentication methods policy",
                   "overview": "../../resources/authenticationmethodspolicies-overview.md",
@@ -1093,13 +1119,6 @@
                     "softwareOathAuthenticationMethodConfiguration",
                     "voiceAuthenticationMethodConfiguration",
                     "x509CertificateAuthenticationMethodConfiguration"
-                  ]
-                },
-                {
-                  "name": "Remote desktop security configuration",
-                  "resources": [
-                    "remoteDesktopSecurityConfiguration",
-                    "targetDeviceGroup"
                   ]
                 }
               ]
@@ -1119,7 +1138,8 @@
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
@@ -1444,9 +1464,24 @@
             "microsoft.graph.security.caseOperation",
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
+            "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag"
+          ]
+        },
+        {
+          "name": "Identities",
+          "resources": [
+            "microsoft.graph.security.healthIssue",
+            "microsoft.graph.security.sensor"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.deploymentAccessKeyType",
+            "microsoft.graph.security.identityContainer",
+            "microsoft.graph.security.networkAdapter",
+            "microsoft.graph.security.sensorDeploymentPackage",
+            "microsoft.graph.security.sensorSettings"
           ]
         },
         {
@@ -1848,7 +1883,8 @@
             "timeOff",
             "timeOffReason",
             "timeOffRequest",
-            "workforceIntegration"
+            "workforceIntegration",
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "changeTrackedEntity",
@@ -1863,6 +1899,7 @@
             "shiftItem",
             "timeOffItem",
             "timeRange",
+            "userSolutionRoot",
             "workforceIntegrationEncryption"
           ]
         }

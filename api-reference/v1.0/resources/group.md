@@ -201,7 +201,7 @@ This resource supports:
 | members | [directoryObject](directoryobject.md) collection | The members of this group, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`. |
 | membersWithLicenseErrors | [User](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [Onenote](onenote.md) | Read-only. |
-| owners | [directoryObject](directoryobject.md) collection | The owners of the group. Limited to 100 owners. Nullable. If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. <br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
+| owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Limited to 100 owners. Nullable. <li>If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner. <li>A non-admin user can't explicitly add themselves to this collection when they're creating the group. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419). <li>For security groups, the admin user isn't automatically added to this collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).<br/><br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo |
 | photos | [profilePhoto](profilephoto.md) collection | The profile photos owned by the group. Read-only. Nullable. |
 | planner | [plannerGroup](plannergroup.md) | Entry-point to Planner resource that might exist for a Unified Group. |
@@ -363,6 +363,7 @@ The following JSON representation shows the resource type.
   "conversations": [{ "@odata.type": "microsoft.graph.conversation" }],
   "createdDateTime": "String (timestamp)",
   "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
+  "deletedDateTime":  "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "drive": { "@odata.type": "microsoft.graph.drive" },

@@ -1,21 +1,22 @@
 ---
-title: "Manage safeguards using the Windows Update for Business deployment service"
-description: "When you deploy updates with the Windows Update for Business deployment service, it automatically prevents devices with issues from being offered the update."
+title: "Manage safeguards using Windows Autopatch"
+description: "When you deploy updates with Windows Autopatch, it automatically prevents devices with issues from being offered the update."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
-# Manage safeguards using the Windows Update for Business deployment service
+# Manage safeguards using Windows Autopatch
 
-When you deploy updates with the deployment service, the service automatically safeguards deployments by preventing devices with known or likely issues from being offered the update by Windows Update.
+When you deploy updates with Windows Autopatch, deployments are automatically safeguarded by preventing devices with known or likely issues from being offered the update by Windows Update.
 
 Safeguards are compatible with [deployments](/graph/windowsupdates-deployments) of Windows 11 and Windows 10 feature updates. Safeguard holds against known issues are available for deployments of Windows 11 and Windows 10 feature updates, and safeguard holds against likely issues are available for deployments of Windows 11.
 
 ## Apply all safeguards
 
-By default, the deployment service applies all applicable safeguards to devices in a deployment. To benefit from safeguards, you don't need to specify anything additional when creating a deployment.
+By default, all applicable safeguards are applied to devices in a deployment. To benefit from safeguards, you don't need to specify anything additional when creating a deployment.
 
 The following example demonstrates how to create a deployment with all safeguards applied.
 

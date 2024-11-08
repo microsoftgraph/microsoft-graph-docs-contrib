@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.meeting_registrant import MeetingRegistrant
 from msgraph_beta.generated.models.custom_question_answer import CustomQuestionAnswer
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = MeetingRegistrant(
 	odata_type = "#microsoft.graph.meetingRegistrant",
 	first_name = "Frederick",

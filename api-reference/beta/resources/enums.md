@@ -647,6 +647,7 @@ Namespace: microsoft.graph
 | saml20 |
 | unknownFutureValue |
 | remoteDesktopToken |
+| refreshToken       |
 
 ### protocolType values
 
@@ -4908,3 +4909,11 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|false|
+|true|
+|unknownFutureValue|

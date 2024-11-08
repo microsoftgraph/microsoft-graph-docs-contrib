@@ -3,7 +3,7 @@ title: "adminWindows resource type"
 description: "Represents a container for all Windows administrator functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: resourcePageType
 ---
 

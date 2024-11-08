@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoft_graph_security_apply_tags.apply_tags_post_request_body import ApplyTagsPostRequestBody
 from msgraph_beta.generated.models.security.ediscovery_review_tag import EdiscoveryReviewTag
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ApplyTagsPostRequestBody(
 	tags_to_add = [
 		EdiscoveryReviewTag(

@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows10_custom_configuration import Windows10CustomConfiguration
 from msgraph.generated.models.oma_setting import OmaSetting
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Windows10CustomConfiguration(
 	odata_type = "#microsoft.graph.windows10CustomConfiguration",
 	description = "Description value",

@@ -38,7 +38,7 @@ To get a specific learning course activity based on its **externalCourseActivity
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId={externalCourseActivityId})
+GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId='{externalCourseActivityId}')
 ```
 
 To get the details of a learning course activity for a user:
@@ -82,7 +82,7 @@ If unsuccessful, this method returns one of the responses below:
 |Scenario|HTTP code|Code|Message|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
@@ -190,7 +190,7 @@ The following example shows a request to get the details of a learning course ac
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
+GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId='12a2228a-e020-11ec-9d64-0242ac120002')
 ```
 
 # [C#](#tab/csharp)

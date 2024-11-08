@@ -4,11 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.devicemanagement.virtualendpoint.reports.retrieve_cross_region_disaster_recovery_report.retrieve_cross_region_disaster_recovery_report_post_request_body import RetrieveCrossRegionDisasterRecoveryReportPostRequestBody
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RetrieveCrossRegionDisasterRecoveryReportPostRequestBody(
 	filter = "DisasterRecoveryStatus eq 'Active outage'",
 	select = [

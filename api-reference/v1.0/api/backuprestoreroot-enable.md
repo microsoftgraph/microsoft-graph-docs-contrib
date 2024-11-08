@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of the following parameter.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|String|The ID of the tenant in which this application is registered. Required.|
+|appOwnerTenantId|String|The ID of the owning tenant in which the billing profile is created.|
 
 ## Response
 
@@ -93,6 +93,10 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/enable
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/backuprestoreroot-enable-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/backuprestoreroot-enable-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -68,6 +68,8 @@ items:
     href: ../../api/educationclass-delete.md
   - name: Get delta
     href: ../../api/educationclass-delta.md
+  - name: Get recently modified submissions
+    href: ../../api/educationclass-getrecentlymodifiedsubmissions.md
 - name: User
   items:
   - name: User

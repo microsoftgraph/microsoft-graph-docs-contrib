@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,13 +65,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1669
+Content-Length: 1588
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
     "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
     "deviceId": "Device Id value",
+    "userId": "User Id value",
     "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
     "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
     "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -89,13 +90,10 @@ Content-Length: 1669
     "osVersion": "Os Version value",
     "deploymentDuration": "PT3M21.5549443S",
     "deploymentTotalDuration": "PT1M43.5284261S",
-    "devicePreparationDuration": "-PT1M32.1347897S",
     "deviceSetupDuration": "-PT2M57.2190107S",
     "accountSetupDuration": "-PT2M32.0507894S",
     "deploymentStartDateTime": "2016-12-31T23:59:37.257201-08:00",
     "deploymentEndDateTime": "2017-01-01T00:00:46.5128291-08:00",
-    "targetedAppCount": 0,
-    "targetedPolicyCount": 3,
     "enrollmentFailureDetails": "Enrollment Failure Details value"
   }
 }

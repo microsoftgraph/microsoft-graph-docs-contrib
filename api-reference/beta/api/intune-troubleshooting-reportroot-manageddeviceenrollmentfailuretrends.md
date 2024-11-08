@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -47,7 +47,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-troubleshooting-report.md) in the response body.
 
 ## Example
 

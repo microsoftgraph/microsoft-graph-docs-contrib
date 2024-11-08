@@ -1,6 +1,6 @@
 ---
 title: "List webinars"
-description: "Get the list of all virtual event webinars created in a tenant."
+description: "Get the list of all virtualEventWebinar objects created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
+Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

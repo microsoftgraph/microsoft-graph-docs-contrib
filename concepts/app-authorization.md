@@ -4,6 +4,7 @@ description: "Learn how global administrators can authorize Microsoft Graph Data
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph Data Connect app authorization
@@ -44,8 +45,6 @@ First, the wizard shows overview information about the application:
 - **Data destination** — The sink where the data is delivered. If approved, this app can move the requested data to any location within the listed sink.
 
 - **App publisher** — The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this value is the same Microsoft Entra tenant ID as your tenant.
-
-![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
 Next, the wizard includes multiple dataset steps, one step per dataset registered in the app. Each page shows you relevant information for each dataset. For example:
 

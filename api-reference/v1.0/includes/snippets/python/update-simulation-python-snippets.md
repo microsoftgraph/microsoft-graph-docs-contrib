@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.simulation import Simulation
 from msgraph.generated.models.simulation_attack_technique import SimulationAttackTechnique
@@ -11,9 +12,7 @@ from msgraph.generated.models.simulation_attack_type import SimulationAttackType
 from msgraph.generated.models.simulation_status import SimulationStatus
 from msgraph.generated.models.address_book_account_target_content import AddressBookAccountTargetContent
 from msgraph.generated.models.account_target_content_type import AccountTargetContentType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Simulation(
 	display_name = "Graph Simulation",
 	duration_in_days = 7,

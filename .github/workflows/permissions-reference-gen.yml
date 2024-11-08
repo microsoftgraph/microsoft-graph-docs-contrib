@@ -23,7 +23,7 @@ jobs:
       with:
         path: docs
 
-    - name: Run PowerShell script
+    - name: Run PowerShell script to update permissions
       shell: pwsh
       run: | 
         $ClientId = "${{ secrets.GRAPH_CLIENT_ID }}"
@@ -38,7 +38,29 @@ jobs:
         application-id: ${{ secrets.APPLICATION_ID }}
         application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
         
-    - name: Commit updates and open a pull request
+    - name: Commit updates from service principal
+      working-directory: ./docs
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ steps.get_token.outputs.app-token }}
+      run: |
+        $status = git status --porcelain
+        if ($status -eq $null) {
+          Write-Host "No changes to commit." -ForegroundColor Green
+        }
+        else {          
+          git config user.email "GraphTooling@service.microsoft.com"
+          git config user.name "Microsoft Graph DevX Tooling"
+          git add .
+          git commit -m "Update permissions reference"
+        } 
+    
+    - name: Run PowerShell script to correct errors in permissions descriptions
+      shell: pwsh
+      run: | 
+        ./docs/correct-permissions-reference-errors.ps1
+    
+    - name: Commit errors correction and open a pull request
       working-directory: ./docs
       shell: pwsh
       env:
@@ -47,13 +69,15 @@ jobs:
         $status = git status --porcelain
         if ($status -eq $null) {
           Write-Host "No changes to commit." -ForegroundColor Green
-        } else {
-          $timestamp = Get-Date -Format FileDateTimeUniversal
-          git config user.email "GraphTooling@service.microsoft.com"
-          git config user.name "Microsoft Graph DevX Tooling"
-          git checkout -b permissions-reference/$timestamp
+        } else { 
+          $dateToday = Get-Date -Format 'yyyy-MM-dd'
+          $branchName = "permissions-reference/$dateToday" 
+          $prTitle = "${dateToday}: Automated permissions reference update"
+          
           git add .
-          git commit -m "Update permissions reference"
-          git push --set-upstream origin permissions-reference/$timestamp
-          gh pr create --base main --title "Automated permissons reference update" --body "Scheduled permissions reference update" --reviewer "FaithOmbongi","msewaweru" --label "ready for content review"
+          git commit -m "Correct errors in permissions reference"
+          git checkout -b $branchName
+          git push --set-upstream origin $branchName -f
+          
+          gh pr create --base main --title $prTitle --body "Scheduled permissions reference update" --reviewer "FaithOmbongi,msewaweru" --label "ready for content review"
         }

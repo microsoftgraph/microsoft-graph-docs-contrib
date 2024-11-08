@@ -1,15 +1,16 @@
 ---
-title: "Deploy an expedited quality update using the Windows Update for Business deployment service"
-description: "Follow these steps to deploy expedited Windows quality updates to devices in a Microsoft Entra tenant in case of an emergency by using the Windows Update for Business deployment service."
+title: "Deploy an expedited quality update using Windows Autopatch"
+description: "Follow these steps to deploy expedited Windows quality updates to devices in a Microsoft Entra tenant in case of an emergency by using Windows Autopatch."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.subservice: windows-update-business
+ms.subservice: autopatch
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
-# Deploy an expedited quality update using the Windows Update for Business deployment service
+# Deploy an expedited quality update using Windows Autopatch
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited quality updates, and driver updates. This topic focuses on deployments of expedited quality updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying driver updates, see [Manage driver update](./windowsupdates-manage-driver-update.md).
+With Windows Autopatch, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, Windows Autopatch supports the [deployment](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited quality updates, and driver updates. This topic focuses on the deployment of expedited quality updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).  For information about deploying driver updates, see [Manage driver update](./windowsupdates-manage-driver-update.md).
 
 Expediting a quality update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical quality events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific quality update, it's not designed to be used every month. Instead, consider using [compliance deadlines for updates](/windows/deployment/update/wufb-compliancedeadlines).
 
@@ -23,19 +24,19 @@ Expedited quality updates also have the following characteristics:
 
 ## Prerequisites
 
-* Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).
+* Devices meet the [prerequisites for Windows Autopatch](windowsupdates-concept-overview.md#prerequisites).
 * Devices have installed the update described in [KB4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) (or newer).
-* To verify that your devices meet the prerequisites for receiving an expedited update, use the [Readiness test for expediting updates](/windows/deployment/update/deployment-service-expedited-updates#readiness-test-for-expediting-updates).
+* To verify that your devices meet the prerequisites for receiving an expedited update, use the [Readiness test for expediting updates](/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-programmatic-controls).
 
 ## Step 1: (Optional) Get a list of expeditable updates
 
-You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.
+You can query the Windows Autopatch catalog API to get a list of updates that can be expedited to devices as content in a deployment.
 
 Quality updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security` or `nonSecurity`. All Windows 10 quality updates that are classified as `security` and all Windows 11 quality updates that are classified as `security` or `non-security` can be expedited.
 
 All quality updates refer to a list of [product revisions](/graph/api/resources/windowsupdates-productrevision). Add `$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions` to the request URL to identify the operating system builds that are affected by each quality update.
 
-The following example shows how to query for all Windows 10 quality updates that can be deployed as expedited updates by the deployment service. We recommend to only show the three most current updates, so the following example includes `$top=3`.
+The following example shows how to query for all Windows 10 quality updates that can be deployed as expedited updates by Windows Autopatch. We recommend to only show the three most current updates, so the following example includes `$top=3`.
 
 ### Request
 
@@ -439,7 +440,7 @@ Content-Type: application/json
 
 After deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update offers the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
+Devices are automatically registered when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist).
 
 The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 

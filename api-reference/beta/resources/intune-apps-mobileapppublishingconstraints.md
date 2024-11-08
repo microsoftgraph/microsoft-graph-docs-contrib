@@ -10,10 +10,10 @@ doc_type: resourcePageType
 # mobileAppPublishingConstraints resource type
 
 Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
-
 
 Contains properties for constraints that the UX need to take into consideration to guide the user experience for app creation and publishing flow.
 

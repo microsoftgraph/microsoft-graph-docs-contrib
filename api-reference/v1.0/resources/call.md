@@ -35,6 +35,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 | Method                                                                   | Return Type                                                         | Description                                                                     |
 |:-------------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Create](../api/application-post-calls.md)                                                | [call](call.md)                                                     | Create **call** enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.                                         |
 | [Get](../api/call-get.md)                                                | [call](call.md)                                                     | Read properties of the **call** object.                                         |
 | [Delete/hang up](../api/call-delete.md)                                          | None                                                                | Delete or Hang-up an active **call**.                                           |
 | [Keep alive](../api/call-keepalive.md)                                    | None                                                                | Ensure that the call remains active.                                            |

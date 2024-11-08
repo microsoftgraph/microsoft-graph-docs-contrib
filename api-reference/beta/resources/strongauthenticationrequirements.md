@@ -18,7 +18,7 @@ Captures settings relating to per-user Microsoft Entra multifactor authenticatio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|perUserMfaState|perUserMfaState|Sets the per-user MFA state for the user. The possible values are: `disabled`, `enforced`, `enabled`, `unknownFutureValue`.|
+|perUserMfaState|perUserMfaState|Sets the per-user MFA state for the user. The possible values are: `disabled`, `enforced`, `enabled`, `unknownFutureValue`. When you update a user's MFA state to `enabled` and the user has already registered an MFA method, their state changes automatically to `enforced`.|
 
 ## Relationships
 None.

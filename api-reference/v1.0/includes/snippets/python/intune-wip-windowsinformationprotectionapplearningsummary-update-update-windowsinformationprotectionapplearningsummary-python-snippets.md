@@ -4,12 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
+# Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows_information_protection_app_learning_summary import WindowsInformationProtectionAppLearningSummary
 from msgraph.generated.models.application_type import ApplicationType
-
-graph_client = GraphServiceClient(credentials, scopes)
-
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WindowsInformationProtectionAppLearningSummary(
 	odata_type = "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
 	application_name = "Application Name value",
