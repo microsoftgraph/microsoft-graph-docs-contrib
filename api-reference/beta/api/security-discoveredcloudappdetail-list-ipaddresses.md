@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get the list of [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md)  associated with a discovered cloud app.
+Get the list of [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) associated with a discovered cloud app.
 
 ## Permissions
 
