@@ -38,12 +38,12 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |deletedDateTime|DateTimeOffset|The date and time when the certificate authority was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 |deltacertificateRevocationListUrl|String|The URL to check to find out whether the certificate is revoked.|
 |displayName|String|The display name of the certificate authority.|
-|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires.|
+|expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Supports `$filter` (`eq`) and `$orderby`.|
 |id|String|The ID of the certificate authority. Inherited from [entity](../resources/entity.md).|
 |isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
 |issuer|String|The issuer of the certificate authority.|
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority.|
-|thumbprint|String|The thumbprint of certificate authority certificate.|
+|thumbprint|String|The thumbprint of certificate authority certificate. Supports `$filter` (`eq`, `startswith`).|
 
 ## Relationships
 None.
