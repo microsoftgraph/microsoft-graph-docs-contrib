@@ -32,7 +32,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |certificate|Binary|The public key of the certificate authority.|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |certificateRevocationListUrl|String|The URL to check if the certificate is revoked.|
 |createdDateTime|DateTimeOffset|The date and time when the certificate authority was created.|
 |deletedDateTime|DateTimeOffset|The date and time when the certificate authority was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
