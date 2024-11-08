@@ -1,6 +1,6 @@
 ---
 title: "copilotRoot resource type"
-description: "Navigation property for copilotRoot"
+description: "Represents a navigation property for Copilot controls."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Navigation property for `copilotRoot`
+Represents a navigation property for Copilot controls.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|admin|[copilotAdmin](../resources/copilotadmin.md)|Navigation property for `copilotAdmin`|
+|admin|[Admin](../resources/copilotadmin.md)|Copilot admin can add or modify Copilot settings. Navigation property. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

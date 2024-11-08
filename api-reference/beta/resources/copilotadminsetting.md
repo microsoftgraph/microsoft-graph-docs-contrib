@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminSetting resource type"
-description: "Navigation property for copilotAdminSettings"
+description: "Represents a navigation property for set of Copilot settings."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Navigation property for `copilotAdminSettings`
+Represents a navigation property for Copilot settings.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Navigation property for `limitedMode`|
+|limitedMode|[LimitedMode](../resources/copilotadminlimitedmode.md)|Add or modify copilot limited mode. Navigation property. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
