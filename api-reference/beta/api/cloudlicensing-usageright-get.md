@@ -24,6 +24,17 @@ Permissions to get a **usageRight** for a user:
 <!-- { "blockType": "ignored"} -->
 ``` http
 GET /me/cloudLicensing/usageRights/{usageRightId}
+```
+
+<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /me/cloudLicensing/usageRights/{usageRightId}" } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User-UsageRight.Read|User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read.All, User-CloudLicensing.Read, User-UsageRight.Read.All, User-UsageRight.Read|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
+<!-- { "blockType": "ignored"} -->
+``` http
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
