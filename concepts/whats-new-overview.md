@@ -125,6 +125,7 @@ The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous
 
 - Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
 - Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
+- Application authentication availability for Microsoft Purview eDiscovery Graph APIs.
 
 ### Sites and lists
 
