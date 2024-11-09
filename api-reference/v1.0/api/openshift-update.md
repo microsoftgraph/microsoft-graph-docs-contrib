@@ -72,15 +72,18 @@ PATCH https://graph.microsoft.com/v1.0/team/schedule/openShifts/{openShiftId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.openShift",
-  "sharedOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
-  "draftOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
-  "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "sharedOpenShift": {
+                "displayName": null,
+                "startDateTime": "2024-11-04T20:00:00Z",
+                "endDateTime": "2024-11-04T21:00:00Z",
+                "theme": "blue",
+                "notes": null,
+                "openSlotCount": 1,
+                "activities": []
+            },
+    "draftTimeOff": null,
+    "isStagedForDeletion": false
 }
 ```
 

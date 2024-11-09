@@ -70,16 +70,17 @@ PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.shift",
-  "sharedShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "draftShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "userId": "String",
-  "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+    "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+    "draftShift": {
+                "displayName": null,
+                "startDateTime": "2024-10-08T15:00:00Z",
+                "endDateTime": "2024-10-09T00:00:00Z",
+                "theme": "blue",
+                "notes": null,
+                "activities": []
+            },
+    "sharedShift": null,
+    "isStagedForDeletion": false
 }
 ```
 

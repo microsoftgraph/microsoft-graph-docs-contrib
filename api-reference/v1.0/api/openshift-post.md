@@ -71,15 +71,18 @@ Authorization: Bearer {token}
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.openShift",
-  "sharedOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
-  "draftOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
-  "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "sharedOpenShift": {
+                "displayName": null,
+                "startDateTime": "2024-11-04T20:00:00Z",
+                "endDateTime": "2024-11-04T21:00:00Z",
+                "theme": "blue",
+                "notes": null,
+                "openSlotCount": 1,
+                "activities": []
+            },
+    "draftTimeOff": null,
+    "isStagedForDeletion": false
 }
 ```
 
@@ -134,21 +137,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.openShift",
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('48ba9e52-8d25-41c7-bbe7-5ee6346eec0d')/schedule/openShifts/$entity",
+    "@odata.etag": "\"4002def0-0000-0c00-0000-672ea2ff0000\"",
+    "id": "OPNSHFT_6f5e1d7c-3ebe-449f-abfc-d677d26f0b5c",
+    "createdDateTime": "2024-11-08T23:47:11.605Z",
+    "lastModifiedDateTime": "2024-11-08T23:47:11.605Z",
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "draftOpenShift": null,
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+            "displayName": "victorcheng",
+            "userIdentityType": "aadUser",
+            "tenantId": null
+        }
     },
     "sharedOpenShift": {
-        "@odata.type": "microsoft.graph.openShiftItem"
+        "displayName": null,
+        "startDateTime": "2024-11-04T20:00:00Z",
+        "endDateTime": "2024-11-04T21:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "openSlotCount": 1,
+        "activities": []
     },
-    "draftOpenShift": {
-        "@odata.type": "microsoft.graph.openShiftItem"
-    },
-    "schedulingGroupId": "String",
-    "isStagedForDeletion": "Boolean"
+    isStagedForDeletion: false
 }
 ```
 

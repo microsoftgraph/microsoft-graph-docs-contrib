@@ -71,16 +71,17 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.shift",
-  "sharedShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "draftShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "userId": "String",
-  "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+    "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+    "draftShift": {
+                "displayName": null,
+                "startDateTime": "2024-10-08T15:00:00Z",
+                "endDateTime": "2024-10-09T00:00:00Z",
+                "theme": "blue",
+                "notes": null,
+                "activities": []
+            },
+    "sharedShift": null,
+    "isStagedForDeletion": false
 }
 ```
 
@@ -134,22 +135,33 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.shift",
-  "id": "179a8570-a463-293f-15a2-0bba4cdca4d8",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "sharedShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "draftShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "userId": "String",
-  "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('48ba9e52-8d25-41c7-bbe7-5ee6346eec0d')/schedule/shifts/$entity",
+    "@odata.etag": "\"40022efe-0000-0c00-0000-672ea37a0000\"",
+    "id": "SHFT_0f004eda-32a6-4f0c-a076-18f76d997a55",
+    "createdDateTime": "2024-11-08T23:49:13.877Z",
+    "lastModifiedDateTime": "2024-11-08T23:49:13.877Z",
+    "schedulingGroupId": null,
+    "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+    "sharedShift": null,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+            "displayName": "victorcheng",
+            "userIdentityType": "aadUser",
+            "tenantId": null
+        }
+    },
+    "draftShift": {
+        "displayName": null,
+        "startDateTime": "2024-10-08T15:00:00Z",
+        "endDateTime": "2024-10-09T00:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "activities": []
+    },
+    isStagedForDeletion: false
 }
 ```
 

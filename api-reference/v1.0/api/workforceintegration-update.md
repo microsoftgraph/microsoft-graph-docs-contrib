@@ -75,16 +75,16 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 Content-Type: application/json
 
 {
-  "displayName": "String",
-  "apiVersion": "Integer",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
   "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
   },
-  "isActive": "Boolean",
-  "url": "String",
-  "supportedEntities": "String",
-  "eligibilityFilteringEnabledEntities": "String"
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
 
@@ -136,25 +136,18 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.workforceIntegration",
-  "id": "b1871d36-f682-351b-9754-79b5e55bd345",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "displayName": "String",
-  "apiVersion": "Integer",
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
   "encryption": {
-    "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
+    "protocol": "sharedSecret",
+    "secret": null
   },
-  "isActive": "Boolean",
-  "url": "String",
-  "supportedEntities": "String",
-  "eligibilityFilteringEnabledEntities": "String"
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supportedEntities": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
 

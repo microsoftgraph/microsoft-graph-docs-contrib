@@ -72,15 +72,15 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.timeOff",
-  "sharedTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "draftTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "userId": "String",
-  "isStagedForDeletion": "Boolean"
+    "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+    "sharedTimeOff": {
+        "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+        "startDateTime": "2024-10-10T19:00:00Z",
+        "endDateTime": "2024-10-10T20:00:00Z",
+        "theme": "blue"
+    },
+    "draftTimeOff": null,
+    isStagedForDeletion: false
 }
 ```
 
@@ -134,21 +134,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.timeOff",
-  "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "sharedTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "draftTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "userId": "String",
-  "isStagedForDeletion": "Boolean"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('48ba9e52-8d25-41c7-bbe7-5ee6346eec0d')/schedule/timesOff/$entity",
+    "@odata.etag": "\"40021ee2-0000-0c00-0000-672ea2790000\"",
+    "id": "SHFT_d0941bce-2229-43f5-b1cd-c9e2eaf592cf",
+    "createdDateTime": "2024-11-08T23:44:56.913Z",
+    "lastModifiedDateTime": "2024-11-08T23:44:56.913Z",
+    "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+    "draftTimeOff": null,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+            "displayName": "victorcheng",
+            "userIdentityType": "aadUser",
+            "tenantId": null
+        }
+    },
+    "sharedTimeOff": {
+        "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+        "startDateTime": "2024-10-10T19:00:00Z",
+        "endDateTime": "2024-10-10T20:00:00Z",
+        "theme": "blue"
+    },
+    isStagedForDeletion: false
 }
 ```
 
