@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppIPAddress resource type"
-description: "Get a list of the discovered apps and the IP addresses that are accessing the cloud app."
+description: "Represents the IP address associated with a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Get a list of the discovered apps and the IP addresses that are accessing the cloud app.
+Represents the IP address associated with a discovered cloud app.
 
 ## Methods
 |Method|Return type|Description|
@@ -21,7 +21,7 @@ Get a list of the discovered apps and the IP addresses that are accessing the cl
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ipAddress|String|The IpAddresses accessed by a discovered cloud app.|
+|ipAddress|String|The IP address associated with a discovered cloud app.|
 
 ## Relationships
 None.
@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppIPAddress",
-  "ipAddress": "207.45.98.1"
+  "ipAddress": "String"
 }
 ```
 
