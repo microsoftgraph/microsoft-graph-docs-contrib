@@ -21,6 +21,7 @@ Inherits from [discoveredCloudAppDetail](../resources/security-discoveredcloudap
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/security-endpointdiscoveredcloudappdetail-get.md)|[microsoft.graph.security.endpointDiscoveredCloudAppDetail](../resources/security-endpointdiscoveredcloudappdetail.md)|Get the details of all [the discovered apps](../resources/security-endpointdiscoveredcloudappdetail.md) for a specific stream or endpoint.|
+|[List devices](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of [devices](../resources/security-discoveredcloudappdevice.md) that access a discovered cloud app.|
 
 For more API operations about discovered cloud app details, see [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md).
 
