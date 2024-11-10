@@ -1,5 +1,5 @@
 ---
-title: "List uploadedstreams"
+title: "List uploadedStreams"
 description: "Get visibility into all the manually uploaded streams from your firewalls and proxies."
 author: "nechamam"
 ms.localizationpriority: medium
@@ -7,11 +7,11 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List uploadedstreams
+# List uploadedStreams
 
 Namespace: microsoft.graph.security
 
-Get visibility into all the manually uploaded streams [cloud apps discovery reports](../resources/security-cloudappdiscoveryreport.md). from your firewalls and proxies.
+Get visibility into all the manually uploaded streams from your firewalls and proxies.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of discovered cloud apps in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) objects in the response body.
 
 ## Examples
 
