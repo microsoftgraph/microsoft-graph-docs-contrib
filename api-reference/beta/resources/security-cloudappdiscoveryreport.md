@@ -67,7 +67,7 @@ The following JSON representation shows the resource type.
   "lastDataReceivedDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "logDataProvider": "String",
-  "logFileCount": "Integer",
+  "logFileCount": "Int32",
   "receiverProtocol": "String",
   "supportedEntityTypes": ["String"],
   "supportedTrafficTypes": ["String"]
