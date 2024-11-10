@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get visibility into all the manually uploaded streams from your firewalls and proxies.
 
 ## Permissions
