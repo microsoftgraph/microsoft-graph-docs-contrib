@@ -18,7 +18,7 @@ Represents the IP address associated with a discovered cloud app.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get a list of the discovered apps and the IP addresses that are accessing the cloud app.|
+|[List](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the list of [IP addresses](../resources/security-discoveredcloudappipaddress.md) associated with a discovered cloud app.|
 
 ## Properties
 |Property|Type|Description|
