@@ -40,6 +40,8 @@ Restoring to both a new location and the same URL in a single restore session is
 |lastModifiedBy|identitySet|Identity of the person who last modified the restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of the restore session.|
 |status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|restoreJobType|[restoreJobType](../resources/enums.md#restoreJobType-values)|Type of the restore session, whether it is created normally or via bulk job.|
+|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoreSessionBase.md#restoreSessionArtifactCount)|Count metadata of the artifacts belonging to this restore session.|
 
 ### restoreSessionStatus values
 
@@ -52,6 +54,15 @@ Restoring to both a new location and the same URL in a single restore session is
 |completed| All restore artifacts successfully restored.|
 |failed| All restore artifacts failed to restore.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
+
+### restoreSessionArtifactCount
+
+|Property |Type |Description |
+|:------|:-----|:------------|
+|total|Int32|Count of artifacts that are added in the restoreSession.|
+|completed|Int32|Count of artifacts whose restore is completed.|
+|inProgress|Int32|Count of artifacts whose restore is in progress.|
+|failed|Int32|Count of artifacts whose restore has failed.|
 
 ## Relationships
 
@@ -73,6 +84,10 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.restoreSessionBase",
   "id": "String (identifier)",
   "status": "String",
+  "restoreJobType": "String",
+  "restoreSessionArtifactCount": {
+    "@odata.type": "microsoft.graph.restoreSessionArtifactCount"
+  },
   "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
