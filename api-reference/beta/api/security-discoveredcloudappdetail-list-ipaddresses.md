@@ -1,6 +1,6 @@
 ---
 title: "List ipAddresses"
-description: "Get the list of discoveredCloudAppIPAddress objects associated with a discovered cloud app."
+description: "Get the list of IP addresses associated with a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) objects associated with a discovered cloud app.
+Get the list of [IP addresses](../resources/security-discoveredcloudappipaddress.md) associated with a discovered cloud app.
 
 ## Permissions
 
