@@ -20,12 +20,9 @@ Inherits from [discoveredCloudAppDetail](../resources/security-discoveredcloudap
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/security-endpointdiscoveredcloudappdetail-get.md)|[microsoft.graph.security.endpointDiscoveredCloudAppDetail](../resources/security-endpointdiscoveredcloudappdetail.md)|Get the properties and relationships of a endpoint accessing discovered apps.|
-|[Get app info](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Get the discoveredCloudAppInfo resource from the appInfo navigation property.|
-|[List devices](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get the discoveredCloudAppDevice resources from the devices navigation property.|
-|[List IP addresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property.|
-|[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get the discoveredCloudAppUser resources from the users navigation property.|
+|[Get](../api/security-endpointdiscoveredcloudappdetail-get.md)|[microsoft.graph.security.endpointDiscoveredCloudAppDetail](../resources/security-endpointdiscoveredcloudappdetail.md)|Get the details of all [the discovered apps](../resources/security-endpointdiscoveredcloudappdetail.md) for a specific stream or endpoint.|
 
+For more API operations about discovered cloud app details, see [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md).
 
 ## Properties
 |Property|Type|Description|
@@ -47,10 +44,10 @@ Inherits from [discoveredCloudAppDetail](../resources/security-discoveredcloudap
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Represents the discovered app details.|
+|appInfo|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Represents the discovered app details. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |devices|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Represents the devices that access the discovered apps.|
-|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Represents the IP addressses that access the discovered apps.|
-|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Represents the users who access the discovered apps.|
+|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Represents the IP addressses that access the discovered apps. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
+|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Represents the users who access the discovered apps. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
