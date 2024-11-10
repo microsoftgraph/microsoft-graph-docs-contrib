@@ -18,7 +18,7 @@ Represents a device associated with a discovered cloud app.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of the discovered cloud apps devices.|
+|[List](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of [devices](../resources/security-discoveredcloudappdevice.md) that access a discovered cloud app.|
 
 ## Properties
 |Property|Type|Description|
