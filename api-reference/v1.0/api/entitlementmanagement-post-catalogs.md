@@ -1,6 +1,6 @@
 ---
 title: "Create accessPackageCatalog"
-description: "Create a new accessPackageCatalog."
+description: "Create a new accessPackageCatalog object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

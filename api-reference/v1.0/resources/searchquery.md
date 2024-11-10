@@ -1,6 +1,6 @@
 ---
 title: "searchQuery resource type"
-description: "searchQuery"
+description: "Represents a search query that contains search terms and optional filters."
 ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
