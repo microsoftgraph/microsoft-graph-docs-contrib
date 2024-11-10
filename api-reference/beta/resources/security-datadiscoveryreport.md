@@ -11,9 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the resources available for generating cloud app discovery report.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +26,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The stream ID.|
+|id|String|The stream ID. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
