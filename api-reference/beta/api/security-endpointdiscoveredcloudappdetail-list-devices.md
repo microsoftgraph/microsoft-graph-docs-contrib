@@ -1,5 +1,5 @@
 ---
-title: "List discoveredCloudAppDevice"
+title: "List devices"
 description: "Get a list of devices that access a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List discoveredCloudAppDevice
+# List devices
 
 Namespace: microsoft.graph.security
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/devices
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/devices
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects in the response body.
 
 ## Examples
 
