@@ -133,7 +133,7 @@ Content-Type: application/json
     "encryptionProtocol": "tls1_0",
     "dataCenter": "String",
     "headquarters": "String",
-    "founded": "2001",
+    "founded": 2001,
     "isAdminAuditTrail": "unknown",
     "isCobitCompliant": "unknown",
     "isDataAuditTrail": "unknown",
