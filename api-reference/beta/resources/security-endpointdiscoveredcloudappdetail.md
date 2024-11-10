@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the resources available for endpoints accessing discovered apps.
 
 Inherits from [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md).
