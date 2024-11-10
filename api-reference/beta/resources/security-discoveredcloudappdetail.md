@@ -60,22 +60,18 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
-      "category": "String",
-      "displayName": "String",
-      "domains": ["String"],
-      "downloadNetworkTrafficInBytes": "Int64",
-      "id": "String (identifier)",
-      "ipAddressCount": "Int64",
-      "lastSeenDateTime": "String (timestamp)",
-      "riskScore": "Int64",
-      "tags": ["String"],
-      "transactionCount": "Int64",
-      "uploadNetworkTrafficInBytes": "Int64",
-      "userCount": "Int64"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
+  "category": "String",
+  "displayName": "String",
+  "domains": ["String"],
+  "downloadNetworkTrafficInBytes": "Int64",
+  "id": "String (identifier)",
+  "ipAddressCount": "Int64",
+  "lastSeenDateTime": "String (timestamp)",
+  "riskScore": "Int64",
+  "tags": ["String"],
+  "transactionCount": "Int64",
+  "uploadNetworkTrafficInBytes": "Int64",
+  "userCount": "Int64"
 }
 ```
