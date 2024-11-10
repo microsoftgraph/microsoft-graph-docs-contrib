@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a device associated with a discovered cloud app.
 
 ## Methods
@@ -38,7 +40,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppDevice",
-  "name": "John Smith's Macbook Pro"
+  "name": "String"
 }
 ```
 
