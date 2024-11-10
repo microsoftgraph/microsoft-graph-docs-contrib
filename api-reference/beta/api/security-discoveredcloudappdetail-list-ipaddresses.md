@@ -1,6 +1,6 @@
 ---
 title: "List ipAddresses"
-description: Get the list of IP addresses associated with a discovered cloud app.
+description: "Get the list of discoveredCloudAppIPAddress objects associated with a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-Get the list of [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) associated with a discovered cloud app.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the list of [discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) objects associated with a discovered cloud app.
 
 ## Permissions
 
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/ipAddresses
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/ipAddresses
 ```
 
 ## Optional query parameters
