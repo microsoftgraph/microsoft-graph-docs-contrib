@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a user who accessed a discovered cloud app.
 
 ## Methods
