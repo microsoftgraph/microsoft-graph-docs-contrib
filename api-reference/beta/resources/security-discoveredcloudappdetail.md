@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[Get](../api/security-discoveredcloudappdetail-get.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|Get an overview of the [usage of discovered cloud apps](../resources/security-discoveredcloudappdetail.md).|
 |[Get discovered cloud app info](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) |Get the [details](../resources/security-discoveredcloudappinfo.md) of the security, legal, and compliance risk attributes of the discovered cloud apps.|
-|[List IP addresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the list of discoveredCloudAppIPAddress objects associated with a discovered cloud app.|
+|[List IP addresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the list of [IP addresses](../resources/security-discoveredcloudappipaddress.md) associated with a discovered cloud app.|
 |[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of [users](../resources/security-discoveredcloudappuser.md) who accessed a discovered cloud app.|
 
 ## Properties
