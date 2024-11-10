@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}
 ```
 
 ## Optional query parameters
@@ -84,7 +84,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-
   "@odata.type": "#microsoft.graph.security.endpointDiscoveredCloudAppDetail",
   "id": "12345",
   "displayName": "Example App",
