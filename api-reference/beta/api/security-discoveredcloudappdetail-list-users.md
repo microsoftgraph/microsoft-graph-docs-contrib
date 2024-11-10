@@ -1,5 +1,5 @@
 ---
-title: "List discoveredCloudAppUsers"
+title: "List users"
 description: "Get a list of users who accessed a discovered cloud app."
 author: "nechamam"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List discoveredCloudAppUser
+# List users
 
 Namespace: microsoft.graph.security
 
