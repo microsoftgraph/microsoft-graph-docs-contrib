@@ -144,11 +144,11 @@ Namespace: microsoft.graph.security
 |tls1_1|
 |tls1_2|
 |tls1_3|
-|ssl3|
 |notApplicable|
 |notSupported|
 |unknown|
 |unknownFutureValue|
+|ssl3|
 
 ### appInfoUploadedDataTypes values 
 
