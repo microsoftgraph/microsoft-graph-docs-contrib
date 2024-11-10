@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) objects in the response body.
 
 ## Examples
 
@@ -72,7 +72,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/93b60b3e-3a28-bf33-2d73-3cb0199c5f7a/microsoft.graph.security.aggregatedAppsDetails(period=duration'P90D')
 ```
-
 
 ### Response
 
