@@ -18,7 +18,7 @@ Represents a user who accessed a discovered cloud app.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of users who access discovered apps.|
+|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of [users](../resources/security-discoveredcloudappuser.md) who accessed a discovered cloud app.|
 
 ## Properties
 |Property|Type|Description|
