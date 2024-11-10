@@ -199,8 +199,8 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2024-05-15T10:06:35.2929378Z",
-      "WorkloadArea": "Microsoft.DefenderForCloudApps",
-      "SubArea": ""
+      "WorkloadArea": "Security",
+      "SubArea": "Discovered cloud apps"
     }
   ]
 }
