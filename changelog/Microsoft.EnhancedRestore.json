@@ -3,6 +3,56 @@
        {
         "ChangeList": [
           {
+            "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "restoreJobType",
+            "ChangeType": "Addition",
+            "Description": "Added the **restoreJobType** enumeration type.",
+            "Target": "restoreJobType"
+          },
+          {
+            "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+            "ApiChange": "Resource",
+            "ChangedApiName": "restoreSessionArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **restoreSessionArtifactCount** resource.",
+            "Target": "restoreSessionArtifactCount"
+          },
+          {
+            "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+            "ApiChange": "Property",
+            "ChangedApiName": "restoredItemCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **restoredItemCount** property to the [mailboxRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/mailboxRestoreArtifact?view=graph-rest-beta) resource.",
+            "Target": "mailboxRestoreArtifact"
+          },
+          {
+            "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+            "ApiChange": "Property",
+            "ChangedApiName": "restoreJobType",
+            "ChangeType": "Addition",
+            "Description": "Added the **restoreJobType** property to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource.",
+            "Target": "restoreSessionBase"
+          },
+          {
+            "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+            "ApiChange": "Property",
+            "ChangedApiName": "restoreSessionArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **restoreSessionArtifactCount** property to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoreSessionBase?view=graph-rest-beta) resource.",
+            "Target": "restoreSessionBase"
+          }
+        ],
+        "Id": "3d1ebd63-cc2f-4596-b0f1-60bd22b96b46",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-10-25T07:34:17.3898972Z",
+        "WorkloadArea": "EnhancedRestore",
+        "SubArea": "Backup and Restore"
+       },
+       {
+        "ChangeList": [
+          {
             "Id": "1504e8cb-24d6-4917-8055-03043d45e0c3",
             "ApiChange": "Enumeration",
             "ChangedApiName": "protectionUnitsBulkJobStatus",
