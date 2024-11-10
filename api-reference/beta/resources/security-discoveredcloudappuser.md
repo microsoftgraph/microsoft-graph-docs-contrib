@@ -16,7 +16,7 @@ Represents a user who accessed a discovered cloud app.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of users accessing discovered apps.|
+|[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of users who access discovered apps.|
 
 ## Properties
 |Property|Type|Description|
@@ -38,6 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.discoveredCloudAppUser",
-  "userIdentifier": "AnonymusUser"
+  "userIdentifier": "String"
 }
 ```
