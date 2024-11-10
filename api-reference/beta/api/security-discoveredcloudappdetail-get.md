@@ -1,6 +1,6 @@
 ---
 title: "Get discoveredCloudAppDetail"
-description: "Get an overview of discovered cloud apps usage."
+description: "Get an overview of the usage of discovered cloud apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an overview of [discovered cloud app usage](../resources/security-discoveredcloudappdetail.md).
+Get an overview of the [usage of discovered cloud apps](../resources/security-discoveredcloudappdetail.md).
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}
+GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}
 ```
 
 ## Optional query parameters
