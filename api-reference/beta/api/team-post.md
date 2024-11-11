@@ -48,7 +48,7 @@ POST /teams
 
 ## Request body
 
-In the request body, supply a JSON representation of a [team](../resources/team.md) object.
+In the request body, supply a JSON representation of a [team](../resources/team.md) object. We can also specify optional parameter 'firstChannelName', if we want to name the first channel created as part of it. If no parameter is provided then its name will be default as 'General'.
 
 ## Response
 
@@ -74,7 +74,8 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team's Description"
+  "description": "My Sample Team's Description",
+  "firstChannelName": "My First Channel of the sample team"
 }
 ```
 
@@ -153,6 +154,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
+   "firstChannelName": "My First Channel of the sample team",
    "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
@@ -234,6 +236,7 @@ Content-Type: application/json
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
+    "firstChannelName": "My First Channel of the team"
     "channels": [
         {
             "displayName": "Announcements 📢",
@@ -367,6 +370,7 @@ A few things to note about this call:
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
+* It does not support to have custom first channel name by using **firstChannelName**.
 
 #### Request
 
@@ -788,6 +792,7 @@ The following example shows how to create a team for imported messages.
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only supports the `standard` template.
+>**Note:** This call does not support **firstChannelName** parameter.
 
 # [HTTP](#tab/http)
 <!-- {
