@@ -3954,7 +3954,7 @@
           "Description": "Added the [Restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
-	        {
+		{
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Method",
           "ChangedApiName": "Unlock",
@@ -3978,6 +3978,14 @@
           "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
         },
+		{
+	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [List items](https://learn.microsoft.com/en-us/graph/api/recyclebin-list-items?view=graph-rest-1.0) operation to the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
+          "Target": "recyclebin"
+          },
 	      {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
