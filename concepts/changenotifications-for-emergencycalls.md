@@ -141,4 +141,4 @@ Content-Type: application/json
 ## Related content
 - [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
 - [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)
-- [Manage emergency calling policies in Microsoft Teams] https://learn.microsoft.com/en-us/microsoftteams/manage-emergency-calling-policies 
+- [Manage emergency calling policies in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/manage-emergency-calling-policies)
