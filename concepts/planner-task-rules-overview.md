@@ -4,6 +4,7 @@ description: "Rules allow customization of what can and can't be done on tasks, 
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "business-scenarios"
+ms.date: 11/07/2024
 ---
 
 # Configuring task rules in Planner (preview)

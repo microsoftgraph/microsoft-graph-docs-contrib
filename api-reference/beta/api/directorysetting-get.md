@@ -24,12 +24,12 @@ The following tables show the least privileged permission or permissions require
 
 ### List tenant-wide settings
 
-<!-- { "blockType": "permissions", "name": "directorysetting_get" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-permissions.md)]
 
 ### List group-specific settings
 
-<!-- { "blockType": "permissions", "name": "directorysetting_get_2" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-get-2-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
