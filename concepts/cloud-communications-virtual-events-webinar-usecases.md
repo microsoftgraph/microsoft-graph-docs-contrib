@@ -54,8 +54,8 @@ The following table lists some solutions you can build by using the Teams client
 ### Data Sync 
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.
 - To get attendance report data for a webinar, use [list attendance records](../api-reference/v1.0/api/attendancerecord-list.md) or [get attendance record with a query option](../api-reference/v1.0/api/meetingattendancereport-get.md#example-2-get-the-attendance-report-for-a-webinar-session-by-id).
-- To get attendance information of a webinar attendee, map the `Id` property in [virtual event registration](../api-reference/v1.0/resources/virtualeventregistration.md) to the `registrationId` property in [attendance record](../api-reference/beta/resources/attendancerecord.md) (currently only available in Beta).
-- Get data for a specific webinar, list all the webinar in a tenant, list webinars where the user is an organizer or co-organizer, list webinars where the specified user is either the organizer or co-organizer.  
+  - To get attendance information of a webinar attendee, after doing the above, map the `Id` property in [virtual event registration](../api-reference/v1.0/resources/virtualeventregistration.md) to the `registrationId` property in [attendance record](../api-reference/beta/resources/attendancerecord.md) (currently only available in Beta).
+- Get data for [a specific webinar](../api-reference/v1.0/api/virtualeventwebinar-get.md), [list all the webinar in a tenant](../api-reference/v1.0/api/virtualeventsroot-list-webinars.md), list webinars where the [user is an organizer or co-organizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuserrole.md), list webinars where the [specified user is either the organizer or co-organizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuseridandrole.md).  
 - To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/api/virtualeventwebinarregistrationconfiguration-get.md). 
 
 ### Registration  
