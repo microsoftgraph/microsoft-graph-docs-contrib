@@ -42,21 +42,21 @@ The following table lists some solutions you can build by using the Teams client
 
 ### Create/update/cancel 
 
-- Use the [Create webinar API](../api-reference/v1.0/resources/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/resources/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
+- Use the [Create webinar API](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/api/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
   
    - The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client. 
 
    - Just like in Teams, only the organizer can create, publish and cancel webinar events. That is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
 
-- Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/resources/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
-- Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.  
+- Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/api/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
+- Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to get updates about any changes made to the webinar.  
 
 ### Data Sync 
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.
-- To get attendance report data for a webinar, use [list attendance records](../api-reference/v1.0/resources/attendancerecord-list.md) or [get attendance record with a query option](../api-reference/v1.0/resources/meetingattendancereport-get#example-2-get-the-attendance-report-for-a-webinar-session-by-id.md).
+- To get attendance report data for a webinar, use [list attendance records](../api-reference/v1.0/api/attendancerecord-list.md) or [get attendance record with a query option](../api-reference/v1.0/api/meetingattendancereport-get.md#example-2-get-the-attendance-report-for-a-webinar-session-by-id).
 - To get attendance information of a webinar attendee, map the `Id` property in [virtual event registration](../api-reference/v1.0/resources/virtualeventregistration.md) to the `registrationId` property in [attendance record](../api-reference/beta/resources/attendancerecord.md) (currently only available in Beta).
 - Get data for a specific webinar, list all the webinar in a tenant, list webinars where the user is an organizer or co-organizer, list webinars where the specified user is either the organizer or co-organizer.  
-- To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/resources/virtualeventwebinarregistrationconfiguration-get.md). 
+- To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/api/virtualeventwebinarregistrationconfiguration-get.md). 
 
 ### Registration  
 
