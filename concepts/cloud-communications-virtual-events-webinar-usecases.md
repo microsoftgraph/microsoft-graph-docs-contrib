@@ -44,21 +44,21 @@ The following table lists some solutions you can build by using the Teams client
 - Use the [Create webinar API](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/api/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
    - The webinar created via Microsoft Graph APIs is a Teams webinar that’s visible and editable in the Teams client. 
    - Just like in Teams, only the organizer can create, publish, and cancel webinar events which is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
-- Like in Teams, coorganizers can update webinars. So use the [Update webinar API](../api-reference/v1.0/api/virtualeventwebinar-update.md) with delegated permissions on behalf of the coorganizer.
+- Like in Teams, co-organizers can update webinars. So use the [Update webinar API](../api-reference/v1.0/api/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer.
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to get updates about any changes made to the webinar.  
 
 ### Data Sync 
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.
 - To get attendance report data for a webinar, use [list attendance records](../api-reference/v1.0/api/attendancerecord-list.md) or [get attendance record with a query option](../api-reference/v1.0/api/meetingattendancereport-get.md#example-2-get-the-attendance-report-for-a-webinar-session-by-id).
   - To get attendance information of a webinar attendee, after doing the above, map the `Id` property in [virtual event registration](../api-reference/v1.0/resources/virtualeventregistration.md) to the `registrationId` property in [attendance record](../api-reference/beta/resources/attendancerecord.md) (currently only available in Beta).
-- Get data for [a specific webinar](../api-reference/v1.0/api/virtualeventwebinar-get.md), [list all the webinar in a tenant](../api-reference/v1.0/api/virtualeventsroot-list-webinars.md), list webinars where the [user is an organizer or coorganizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuserrole.md), list webinars where the [specified user is either the organizer or coorganizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuseridandrole.md).  
+- Get data for [a specific webinar](../api-reference/v1.0/api/virtualeventwebinar-get.md), [list all the webinar in a tenant](../api-reference/v1.0/api/virtualeventsroot-list-webinars.md), list webinars where the [user is an organizer or co-organizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuserrole.md), list webinars where the [specified user is either the organizer or co-organizer](../api-reference/v1.0/api/virtualeventwebinar-getbyuseridandrole.md).  
 - To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/api/virtualeventwebinarregistrationconfiguration-get.md). 
 
 ### Registration  
-- Use [Create registration](../api-reference/v1.0/api/virtualeventwebinar-post-registrations.md) to programmatically register users to your webinar. Organizers, coorganizers, and presenters don’t need to register. Whether or not registrants have Microsoft Entra accounts affects the permissions you need to call the API. 
+- Use [Create registration](../api-reference/v1.0/api/virtualeventwebinar-post-registrations.md) to programmatically register users to your webinar. Organizers, co-organizers, and presenters don’t need to register. Whether or not registrants have Microsoft Entra accounts affects the permissions you need to call the API. 
 - [Create registration questions](../api-reference/v1.0/api/virtualeventregistrationconfiguration-post-questions.md) (predefined or custom) attendees have to answer during registration. 
 - After the registrant registers for the webinar, use [List sessions](../api-reference/v1.0/api/virtualeventregistration-list-sessions.md) to get the unique `joinWebURL` for the webinar. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the webinar](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still send to organizers, coorganizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the webinar](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still send to organizers, co-organizers, and presenters (internal and external).
 - Can subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to build your own customized email communication system. 
