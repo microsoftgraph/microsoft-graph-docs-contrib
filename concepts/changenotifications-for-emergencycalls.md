@@ -10,7 +10,7 @@ ms.custom: "scenarios:getting-started"
 
 Microsoft Teams supports notifications with emergency calls which can be routed to inform specific security personnels within Teams. Graph emergency call events notification extends that capability to allow emergency calling notifications to be received outside of Teams (i.e. your own client application) as shown in the diagram below. 
 
-![Emergency call events notification flow diagram](concepts/images/Change-notification-emergency-call-flow.png)
+![Emergency call events notification flow diagram](./images/Change-notification-emergency-call-flow.png)
 
 1.	The Teams tenant admin configures [emergency calling](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
 2.	The client application creates a Graph emergency call event subscription. 
@@ -45,7 +45,7 @@ Content-Type: application/json
 
 {
   "changeType": "updated",
-  "notificationUrl": "https://contonso.com/notificationUrl",
+  "notificationUrl": "https://contoso.com/notificationUrl",
   "resource": "communications/calls/getEmergencyEventsByPolicy(policyName='EmergencyPolicy')",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
@@ -57,13 +57,13 @@ Content-Type: application/json
 
 ## Emergency call event notifications
 
-Change notifications for emergency calls are triggered when a call with an applicable emergency call policy is initiated.
+Notifications for emergency calls are triggered when a call with an applicable emergency call policy is initiated.
 Rich notifications
 
 ### Notification payload example
 
 ```http
-POST https://contonso.com/notificationUrl
+POST https://contoso.com/notificationUrl
 Content-Type: application/json
 
 {
@@ -108,7 +108,7 @@ Content-Type: application/json
         "emergencyNumberDialed": "{emergencyNumberDialed}",
         "callerInfo": {
             "displayName": "Emergency caller display name", 
-            "upn": "emergencyCaller@contonso.com", 
+            "upn": "emergencyCaller@contoso.com", 
             "phoneNumber": "00000000000",
             "tenantId": "00000000-0000-0000-0000-000000000000",
             "location": {
