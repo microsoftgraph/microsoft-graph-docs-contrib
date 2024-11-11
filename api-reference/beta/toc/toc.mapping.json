@@ -2322,6 +2322,7 @@
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "signIn",
+                "selfServiceSignUp"
                 "provisioningObjectSummary"
               ]
             }
