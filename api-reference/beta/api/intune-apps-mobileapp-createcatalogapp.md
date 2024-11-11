@@ -67,7 +67,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/createCatalogApp
 
 Content-type: application/json
-Content-length: 2580
+Content-length: 2890
 
 {
   "mobileApp": {
@@ -107,6 +107,11 @@ Content-length: 2580
       "targetDisplayName": "Target Display Name value",
       "targetDisplayVersion": "Target Display Version value",
       "targetPublisher": "Target Publisher value",
+      "targetPublisherDisplayName": "Target Publisher Display Name value",
+      "sourceId": "Source Id value",
+      "sourceDisplayName": "Source Display Name value",
+      "sourceDisplayVersion": "Source Display Version value",
+      "sourcePublisherDisplayName": "Source Publisher Display Name value",
       "targetType": "parent"
     }
   ],

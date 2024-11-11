@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_list_applicationsignindetailedsummary" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
 
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
+
 ## HTTP request
 
 <!-- {
