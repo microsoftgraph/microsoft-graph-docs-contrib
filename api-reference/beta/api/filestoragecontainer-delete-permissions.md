@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-permissions-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 <!-- {
