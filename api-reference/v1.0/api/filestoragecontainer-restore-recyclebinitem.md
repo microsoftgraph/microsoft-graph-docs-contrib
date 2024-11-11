@@ -1,6 +1,6 @@
 ---
 title: "Restore recycleBin item"
-description: "Restore recycleBin item to a fileStorageContainer."
+description: "Restore recycleBinItem to a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
