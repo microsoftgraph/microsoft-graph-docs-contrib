@@ -20,7 +20,7 @@ The following resource types can be used to build your webinar solution
 - [virtualEventWebinar](../api-reference/v1.0/resources/virtualeventwebinar.md) – Used to create, get, update, publish, cancel, and list Teams webinars.  
 - [virtualEventRegistration](../api-reference/v1.0/resources/virtualeventregistration.md) – Used to create, get, cancel, and list registration records of registrants of a webinar. Provides the unique Teams webinar join URL for the registered registrant. 
 - [virtualEventRegistrationQuestion](../api-reference/v1.0/resources/virtualeventregistrationquestionbase.md) – Used to create, list, and delete either custom registration questions or predefined registration questions for registrants to answer when they register for a webinar.  
-- [virtualEventRegistrationConfiguration](../api-reference/v1.0/resources/virtualeventregistrationconfiguration.md) – Contains information about a webinar registration configuration that stores the registration portal URL of the webinar.  
+- [virtualEventRegistrationConfiguration](../api-reference/v1.0/resources/virtualeventwebinarregistrationconfiguration.md) – Contains information about a webinar registration configuration that stores the registration portal URL of the webinar.  
 - [virtualEventPresenter](../api-reference/v1.0/resources/virtualeventpresenter.md) – Used to create, get, list, update and delete a presenter for a Teams webinar. 
 - [virtualEventSession](../api-reference/v1.0/resources/virtualeventsession.md)  – A webinar created via Microsoft Graph APIs only has one session that inherits the properties of online meetings. 
 - [meetingAttendanceReport](../api-reference/v1.0/resources/meetingattendancereport.md) – Each time a webinar ends, an attendance report is generated for the session but doesn’t include attendee data.   
@@ -32,7 +32,7 @@ The following resource types can be used to build your webinar solution
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph webinar APIs and webhooks. 
 | **Solutions**      | **Description**    |
 | ------------- | ------------- |
-| [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and delete Teams webinars.|
+| [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and cancel Teams webinars.|
 | [Data Sync](#data-sync) | Pull Teams webinar data in a custom application (i.e. attendees, registration questions, attendance report, and more).  |
 | [Registration](#registration)  | Host your own registration portal experience for a Teams webinar and sync the registration data to the Teams client. |
 | [Email communication](#email-communication)| Use your own email infrastructure to send out webinar-related notification emails. |
@@ -42,18 +42,21 @@ The following table lists some solutions you can build by using the Teams client
 
 ### Create/update/cancel 
 
-1. Use the [Create webinar API](../api-reference/v1.0/resources/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/resources/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
+- Use the [Create webinar API](../api-reference/v1.0/resources/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/resources/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
   
    - The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client. 
 
    - Just like in Teams, only the organizer can create, publish and cancel webinar events. That is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
 
-2. Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/resources/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
-
-3. Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.  
+- Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/resources/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
+- Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.  
 
 ### Data Sync 
-
+- Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.
+- To get attendance report data for a webinar, use [list attendance records](../api-reference/v1.0/resources/attendancerecord-list.md) or [get attendance record with a query option](../api-reference/v1.0/resources/meetingattendancereport-get#example-2-get-the-attendance-report-for-a-webinar-session-by-id.md).
+- To get attendance information of a webinar attendee, map the `Id` property in [virtual event registration](../api-reference/v1.0/resources/virtualeventregistration.md) to the `registrationId` property in [attendance record](../api-reference/beta/resources/attendancerecord.md) (currently only available in Beta).
+- Get data for a specific webinar, list all the webinar in a tenant, list webinars where the user is an organizer or co-organizer, list webinars where the specified user is either the organizer or co-organizer.  
+- To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/resources/virtualeventwebinarregistrationconfiguration-get.md). 
 
 ### Registration  
 
