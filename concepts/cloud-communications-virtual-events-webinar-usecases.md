@@ -16,8 +16,6 @@ To make the best use of the Graph virtual events webinar APIs, it’s helpful to
 - **Attendees** are registrants who join the webinar. They need to have registered through a portal and answered registration questions. 
 - **Teams tenant administrator** must authorize custom applications with appropriate permissions.
 
-**[INSERT TABLE OF DIFF PERSONAS AND PERMISSIONS]**
-
 The following resource types can be used to build your webinar solution 
 - [virtualEventWebinar](../api-reference/v1.0/resources/virtualeventwebinar.md) – Used to create, get, update, publish, cancel, and list Teams webinars.  
 - [virtualEventRegistration](../api-reference/v1.0/resources/virtualeventregistration.md) – Used to create, get, cancel, and list registration records of registrants of a webinar. Provides the unique Teams webinar join URL for the registered registrant. 
@@ -34,7 +32,7 @@ The following resource types can be used to build your webinar solution
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph webinar APIs and webhooks. 
 | **Solutions**      | **Description**    |
 | ------------- | ------------- |
-| [Create/update/delete](#createupdatedelete) | Programmatically create, update, and delete Teams webinars.|
+| [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and delete Teams webinars.|
 | [Data Sync](#data-sync) | Pull Teams webinar data in a custom application (i.e. attendees, registration questions, attendance report, and more).  |
 | [Registration](#registration)  | Host your own registration portal experience for a Teams webinar and sync the registration data to the Teams client. |
 | [Email communication](#email-communication)| Use your own email infrastructure to send out webinar-related notification emails. |
@@ -42,17 +40,17 @@ The following table lists some solutions you can build by using the Teams client
 > [!NOTE]
 >To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/concepts/auth/auth-concepts.md). 
 
-### Create/update/delete 
+### Create/update/cancel 
 
-1. Use the Create webinar API to create a draft of the event, followed by the Publish webinar API to complete the creation and make it visible to its audience.
+1. Use the [Create webinar API](../api-reference/v1.0/resources/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/resources/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
   
-   The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client
+   - The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client. 
 
-   Just like in Teams, organizers can only create webinar events. The Create webinar API can only be called with delegated permissions on behalf of the organizer.  
+   - Just like in Teams, only the organizer can create, publish and cancel webinar events. That is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
 
-3. Only organizers and co-organizers can update and delete webinars. 
+2. Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/resources/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
 
-4. Subscribe to change notifications to get updates about any changes made to the webinar.  
+3. Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent#subscribable-virtual-events.md) to get updates about any changes made to the webinar.  
 
 ### Data Sync 
 
