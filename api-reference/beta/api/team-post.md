@@ -236,7 +236,7 @@ Content-Type: application/json
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
-    "firstChannelName": "My First Channel of the team"
+    "firstChannelName": "My First Channel of the team",
     "channels": [
         {
             "displayName": "Announcements 📢",
