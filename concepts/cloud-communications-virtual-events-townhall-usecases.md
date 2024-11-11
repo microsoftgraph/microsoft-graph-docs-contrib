@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ---
 # Virtual events town hall API overview
-Microsoft Graph virtual events town hall APIs allows you to get Teams town hall data and programmatically create, update and cancel a Teams town hall.
+Microsoft Graph virtual events town hall APIs allows you to get Teams town hall data and programmatically create, update, and cancel a Teams town hall.
 
 To make the best use of the Graph virtual events town hall APIs, it’s helpful to understand the personas for the users who access the Teams town hall experience: 
 
-- **Organizers** are employees (in your organization) who manage the town hall. They are the authority on when town halls take place and who participates. They configure town hall details such as title, theme, attendee experience, and email rules.
-- **Presenters** are employees (in your organization)or external participants who lead the town hall.  
+- **Organizers** are employees (in your organization) who manage the town hall. They're the authority on when town halls take place and who participates. They configure town hall details such as title, theme, attendee experience, and email rules.
+- **Presenters** are employees (in your organization) or external participants who lead the town hall.  
 - **Attendees** are either employees (in your organization) or external users who join the town hall and are either invited via email or the link to the town hall event is shared with them.  
 - **Teams tenant administrator** must authorize custom applications with appropriate permissions.
 
@@ -34,12 +34,12 @@ The following table lists some solutions you can build by using the Teams client
 ### Create/update/cancel 
 - Use the [Create townhall API](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md) to create a draft of the event, followed by the [Publish townhall API](../api-reference/v1.0/api/virtualeventtownhall-publish.md) to complete the creation and make it visible to its audience.
    - The town hall created via Microsoft Graph APIs is a Teams town hall event that’s visible and editable in the Teams client. 
-   - Just like in Teams, only the organizer can create, publish and cancel town hall events which is why the Create townhall API can only be called with delegated permissions on behalf of the organizer.  
-- Like in Teams, co-organizers can update town halls. Use the [Update townhall API](../api-reference/v1.0/api/virtualeventtownhall-update.md) with delegated permissions on behalf of the co-organizer.
+   - Just like in Teams, only the organizer can create, publish, and cancel town hall events which is why the Create townhall API can only be called with delegated permissions on behalf of the organizer.  
+- Like in Teams, coorganizers can update town halls. Use the [Update townhall API](../api-reference/v1.0/api/virtualeventtownhall-update.md) with delegated permissions on behalf of the coorganizer.
 
 ### Data Sync 
-- Use the [Get townhall API](../api-reference/v1.0/api/virtualeventtownhall-get.md) to pull data regarding a specific town hall. such as who is invited, who created the town hall, and who are the co-organizers.
-- [List all the town hall in a tenant](../api-reference/beta/api/virtualeventsroot-list-townhalls.md), where the [user is an organizer or co-organizer](../api-reference/beta/api/virtualeventtownhall-getbyuserrole.md), and where the [specified user is either the organizer or co-organizer](../api-reference/beta/api/virtualeventtownhall-getbyuseridandrole.md) are currently only available in Beta. 
+- Use the [Get townhall API](../api-reference/v1.0/api/virtualeventtownhall-get.md) to pull data regarding a specific town hall. such as who is invited, who created the town hall, and who are the coorganizers.
+- [List all the town hall in a tenant](../api-reference/beta/api/virtualeventsroot-list-townhalls.md), where the [user is an organizer or coorganizer](../api-reference/beta/api/virtualeventtownhall-getbyuserrole.md), and where the [specified user is either the organizer or coorganizer](../api-reference/beta/api/virtualeventtownhall-getbyuseridandrole.md) are currently only available in Beta. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the town hall](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails will still send to organizers, co-organizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the town hall](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails will still send to organizers, coorganizers, and presenters (internal and external).
