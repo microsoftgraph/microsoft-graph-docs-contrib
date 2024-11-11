@@ -41,13 +41,9 @@ The following table lists some solutions you can build by using the Teams client
 >To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/concepts/auth/auth-concepts.md). 
 
 ### Create/update/cancel 
-
 - Use the [Create webinar API](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/api/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
-  
    - The webinar created via Microsoft Graph APIs will be a Teams webinar that’s visible and editable in the Teams client. 
-
    - Just like in Teams, only the organizer can create, publish and cancel webinar events. That is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
-
 - Like in Teams, co-organizers can update webinars. Use the [Update webinar API](../api-reference/v1.0/api/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer to do so. 
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to get updates about any changes made to the webinar.  
 
@@ -59,5 +55,10 @@ The following table lists some solutions you can build by using the Teams client
 - To get the Teams webinar registration portal URL for your webinar, use [Get webinar registration configuration](../api-reference/v1.0/api/virtualeventwebinarregistrationconfiguration-get.md). 
 
 ### Registration  
+- Use [Create registration](../api-reference/v1.0/api/virtualeventwebinar-post-registrations.md) to programmatically register users to your webinar. Organizers, co-organizers, and presenters don’t need to register. Whether or not registrants have Microsoft Entra accounts affects the permissions you need to call the API. 
+- [Create registration questions](../api-reference/v1.0/api/virtualeventregistrationconfiguration-post-questions.md) (predefined or custom) attendees have to answer during registration. 
+- After the registrant registers for the webinar, use [List sessions](../api-reference/v1.0/api/virtualeventregistration-list-sessions.md) to get the unique `joinWebURL` for the webinar. 
 
 ### Email communication
+- To turn off email communications to attendees, it needs to be done when [creating the webinar]((../api-reference/v1.0/api/virtualeventsroot-post-webinars.md)). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still be sent to organizers, co-organizers, and presenters (internal and external).
+- Can subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to build your own customized email communication system. 
