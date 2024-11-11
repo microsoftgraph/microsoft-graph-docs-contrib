@@ -34,7 +34,7 @@ The following table lists some solutions you can build by using the Teams client
 ### Create/update/cancel 
 - Use the [CREATE townhall API](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md) to create a draft of the event, followed by the [PUBLISH townhall API](../api-reference/v1.0/api/virtualeventtownhall-publish.md) to complete the creation and make it visible to its audience.
    - The town hall created via Microsoft Graph APIs is a Teams town hall event that’s visible and editable in the Teams client. 
-   - Just like in Teams, only the organizer can create, publish, and cancel town halls which is why the Create townhall API only supports delegated permissions on behalf of the organizer.  
+   - Just like in Teams, only the organizer can create, publish, and cancel town halls which is why the CREATE townhall API only supports delegated permissions on behalf of the organizer.  
 - Like in Teams, co-organizers can update town halls. So use the [UPDATE townhall API](../api-reference/v1.0/api/virtualeventtownhall-update.md) with delegated permissions on behalf of the co-organizer.
 
 ### Data Sync 
