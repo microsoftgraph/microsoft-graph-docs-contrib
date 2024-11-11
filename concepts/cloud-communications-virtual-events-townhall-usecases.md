@@ -34,7 +34,7 @@ The following table lists some solutions you can build by using the Teams client
 ### Create/update/cancel 
 - Use the [Create townhall API](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md) to create a draft of the event, followed by the [Publish townhall API](../api-reference/v1.0/api/virtualeventtownhall-publish.md) to complete the creation and make it visible to its audience.
    - The town hall created via Microsoft Graph APIs is a Teams town hall event that’s visible and editable in the Teams client. 
-   - Just like in Teams, only the organizer can create, publish, and cancel town hall events which is why the Create townhall API can only be called with delegated permissions on behalf of the organizer.  
+   - Just like in Teams, only the organizer can create, publish, and cancel town halls which is why the Create townhall API only supports delegated permissions on behalf of the organizer.  
 - Like in Teams, co-organizers can update town halls. So use the [Update townhall API](../api-reference/v1.0/api/virtualeventtownhall-update.md) with delegated permissions on behalf of the co-organizer.
 
 ### Data Sync 
@@ -42,4 +42,4 @@ The following table lists some solutions you can build by using the Teams client
 - [List all the town hall in a tenant](../api-reference/beta/api/virtualeventsroot-list-townhalls.md), where the [user is an organizer or co-organizer](../api-reference/beta/api/virtualeventtownhall-getbyuserrole.md), and where the [specified user is either the organizer or co-organizer](../api-reference/beta/api/virtualeventtownhall-getbyuseridandrole.md) are currently only available in Beta. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the town hall](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails will still send to organizers, co-organizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the town hall](../api-reference/v1.0/api/virtualeventsroot-post-townhalls.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails still send to organizers, co-organizers, and presenters (internal and external).
