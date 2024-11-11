@@ -43,7 +43,7 @@ The following table lists some solutions you can build by using the Teams client
 ### Create/update/cancel 
 - Use the [Create webinar API](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md) to create a draft of the event, followed by the [Publish webinar API](../api-reference/v1.0/api/virtualeventwebinar-publish.md) to complete the creation and make it visible to its audience.
    - The webinar created via Microsoft Graph APIs is a Teams webinar that’s visible and editable in the Teams client. 
-   - Just like in Teams, only the organizer can create, publish, and cancel webinar events which is why Create webinar API can only be called with delegated permissions on behalf of the organizer.  
+   - Just like in Teams, only the organizer can create, publish, and cancel webinar events which is why Create webinar API only supports delegated permissions on behalf of the organizer.
 - Like in Teams, co-organizers can update webinars. So use the [Update webinar API](../api-reference/v1.0/api/virtualeventwebinar-update.md) with delegated permissions on behalf of the co-organizer.
 - Subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to get updates about any changes made to the webinar.  
 
@@ -60,5 +60,5 @@ The following table lists some solutions you can build by using the Teams client
 - After the registrant registers for the webinar, use [List sessions](../api-reference/v1.0/api/virtualeventregistration-list-sessions.md) to get the unique `joinWebURL` for the webinar. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the webinar](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still send to organizers, co-organizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the webinar](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails still send to organizers, co-organizers, and presenters (internal and external).
 - Can subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to build your own customized email communication system. 
