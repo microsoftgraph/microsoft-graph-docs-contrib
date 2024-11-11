@@ -21,8 +21,8 @@ Inherits from [windowsUpdateFilter](../resources/windowsupdates-windowsupdatefil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cadence|microsoft.graph.windowsUpdates.qualityUpdateCadence|Specifies the quality update publishing cadence of the filter. The possible values are: `monthly`, `outOfBand`, and `unknownFutureValue`.|
-|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Specifies the quality update classification of the filter. The possible values are: `all`, `nonSecurity` `security`, and `unknownFutureValue`.|
+|cadence|microsoft.graph.windowsUpdates.qualityUpdateCadence|Specifies the cadence for publishing quality updates of the filter. The possible values are: `monthly`, `outOfBand`, `unknownFutureValue`. |
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Specifies the quality update classification of the filter. The possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`. |
 
 ## Relationships
 None.
@@ -38,6 +38,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateFilter", 
   "cadence": "String",
-  "classification": "String",
+  "classification": "String"
 }
 ```
