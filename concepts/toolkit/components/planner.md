@@ -3,6 +3,7 @@ title: "Planner component in Microsoft Graph Toolkit"
 description: "The Planner component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Planner component in Microsoft Graph Toolkit

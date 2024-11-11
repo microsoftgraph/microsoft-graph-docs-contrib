@@ -4,6 +4,7 @@ description: "Get OneNote content and structure by sending a GET request to the 
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
 # Get OneNote content and structure

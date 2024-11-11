@@ -10,10 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
-
-When you're [creating a new connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md), if the caller provides in the identitySources collection a domainIdentitySource and the domain corresponds to a registered domain of a Microsoft Entra tenant, then the resulting connectedOrganization that is created has an identitySources collection containing a single member of the [azureActiveDirectoryTenant](azureactivedirectorytenant.md) type.
 
 ## Properties
 |Property|Type|Description|
