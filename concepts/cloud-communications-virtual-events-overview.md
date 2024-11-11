@@ -22,6 +22,7 @@ To learn more about the differences between each meeting type to help you choose
 
 
 ## Next Steps 
-- [Create or join online meetings](cloud-communications-online-meetings.md) - Learn about how to use online meetings APIs. 
-- [Webinar use cases](cloud-communications-virtual-events-webinar-usecases.md) - Learn how to create solutions with webinar APIs.
-- [Town hall use cases](cloud-communications-virtual-events-townhall-usecases.md) - Learn how to create solutions with town hall APIs.
+- [Create or join online meetings](cloud-communications-online-meetings.md) - Learn to use online meetings APIs. 
+- [Webinar use cases](cloud-communications-virtual-events-webinar-usecases.md) - Learn to create solutions with webinar APIs.
+- [Town hall use cases](cloud-communications-virtual-events-townhall-usecases.md) - Learn to create solutions with town hall APIs.
+- [Virtual event webhooks](/concepts/changenotifications-for-virtualevent.md)- Learn to use virtual event webhooks.
