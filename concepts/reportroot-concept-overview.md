@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph reports API overview
