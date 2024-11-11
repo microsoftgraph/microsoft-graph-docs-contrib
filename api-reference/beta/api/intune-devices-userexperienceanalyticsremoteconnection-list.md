@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> [!CAUTION]
-> This API will be deprecated and stopped returning data on December 31, 2024. Going forward, use the [getRawRemoteConnectionReports](./cloudpcreports-getrawremoteconnectionreports.md) resource and its supported APIs.
+> **Caution:** This API will be deprecated and stopped returning data on December 31, 2024. Going forward, use the [getRawRemoteConnectionReports](./cloudpcreports-getrawremoteconnectionreports.md) resource and its supported APIs.
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

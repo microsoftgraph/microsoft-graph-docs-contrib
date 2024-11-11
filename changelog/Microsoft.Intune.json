@@ -3449,6 +3449,32 @@
     {
       "ChangeList": [
         {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsRemoteConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the **Deprecation Caution Notes** for the userExperienceAnalyticsRemoteConnection resource.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "summarizeDeviceRemoteConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the **Deprecation Caution Notes** for the summarizeDeviceRemoteConnection resource.",
+          "Target": "summarizeDeviceRemoteConnection"
+        }
+      ],
+      "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-11T03:35:56.9639116Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c00bcac-d519-4e40-89d3-1f61d7e78f7d",
           "ApiChange": "Resource",
           "ChangedApiName": "windows10EnrollmentCompletionPageConfiguration",
