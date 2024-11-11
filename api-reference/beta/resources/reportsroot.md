@@ -1,9 +1,9 @@
 ---
 title: "reportsRoot resource type"
-description: "Represents a container for Microsoft Entra ID and Microsoft 365 reporting resources."
+description: "Represents a container for reading assignment submissions and reflection check-in responses."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.subservice: "entra-monitoring-health"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for Microsoft Entra ID and Microsoft 365 reporting resources.
+Represents a container for reading assignment submissions and reflection check-in responses.
 
 ## Methods
 
@@ -27,10 +27,8 @@ None.
 
 | Relationship                      | Type                                                                                  | Description                                                                                                                              |
 | :-------------------------------- | :------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| readingAssignmentSubmission       | [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection | Represents the submission details of the reading assignment associated with this data.                                                   |
-| reflectCheckInResponse            | [reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection           | Represents the response to the Microsoft Reflect check-in associated with this data.                                                     |
-
-## JSON representation
+| readingAssignmentSubmission       | [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection | The submission details of the reading assignment submitted by a student.       |
+| reflectCheckInResponse            | [reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection           | The response to the Microsoft Reflect check-in response.                                                     |
 
 The following JSON representation shows the resource type.
 
