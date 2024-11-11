@@ -60,5 +60,5 @@ The following table lists some solutions you can build by using the Teams client
 - After the registrant registers for the webinar, use [List sessions](../api-reference/v1.0/api/virtualeventregistration-list-sessions.md) to get the unique `joinWebURL` for the webinar. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the webinar]((../api-reference/v1.0/api/virtualeventsroot-post-webinars.md)). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still be sent to organizers, co-organizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the webinar](../api-reference/v1.0/api/virtualeventsroot-post-webinars.md). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, email will still be sent to organizers, co-organizers, and presenters (internal and external).
 - Can subscribe to [change notifications](/concepts/changenotifications-for-virtualevent.md#subscribable-virtual-events) to build your own customized email communication system. 
