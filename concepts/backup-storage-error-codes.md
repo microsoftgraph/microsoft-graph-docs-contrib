@@ -5,6 +5,7 @@ author: "tushar20"
 ms.localizationpriority: high
 ms.subservice: "m365-backup-storage"
 doc_type: conceptualPageType
+ms.date: 11/07/2024
 ---
 
 # Backup Storage API error responses
@@ -282,7 +283,7 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following API:
 
-- [Enable BackupRestore](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-enable)
+- [Enable BackupRestore](/graph/api/backuprestoreroot-enable)
 
 The following table lists the possible error and response codes that can be returned.
 
