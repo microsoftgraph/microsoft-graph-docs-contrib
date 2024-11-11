@@ -25,4 +25,4 @@ To learn more about the differences between each meeting type to help you choose
 - [Learn to use online meetings APIs](cloud-communications-online-meetings.md)
 - [Learn to create solutions with webinar APIs](cloud-communications-virtual-events-webinar-usecases.md) 
 - [Learn to create solutions with town hall APIs](cloud-communications-virtual-events-townhall-usecases.md) 
-- [Learn to use virtual event webhooks](/graph/changenotifications-for-virtualevent)
+- [Learn to use virtual event webhooks](/concept/changenotifications-for-virtualevent.md)
