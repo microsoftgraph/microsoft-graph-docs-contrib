@@ -124,6 +124,8 @@ items:
           href: ../../api/appmanagementpolicy-list-appliesto.md
         - name: Create applies to
           href: ../../api/appmanagementpolicy-post-appliesto.md
+        - name: Delete applies to
+          href: ../../api/appmanagementpolicy-delete-appliesto.md
       - name: Tenant app management policy
         items:
         - name: Tenant app management policy
