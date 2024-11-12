@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a navigation property for Copilot controls.
+A container for Microsoft 365 Copilot admin controls.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|admin|[Admin](../resources/copilotadmin.md)|Copilot admin can add or modify Copilot settings. Navigation property. Read-only. Nullable.|
+|admin|[copilotAdmin](../resources/copilotadmin.md)|The Microsoft 365 Copilot admin who can add or modify Copilot settings. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

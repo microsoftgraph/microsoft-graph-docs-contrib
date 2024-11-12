@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminSetting resource type"
-description: "Represents a navigation property for set of Copilot settings."
+description: "Represents a navigation property for set of Microsoft 365 Copilot settings."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a navigation property for Copilot settings.
+Represents an admin setting for Microsoft 365 Copilot.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|limitedMode|[LimitedMode](../resources/copilotadminlimitedmode.md)|Add or modify copilot limited mode. Navigation property. Read-only. Nullable.|
+|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Represents a setting that controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
