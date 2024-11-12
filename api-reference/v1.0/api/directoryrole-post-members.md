@@ -12,6 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> [!NOTE]
+> Microsoft recommends that you use the unified RBAC API instead of this API. The unified RBAC API provides more functionality and flexibility. For more information, see [Create unifiedRoleAssignment](./rbacapplication-post-roleassignments.md).
+
 Create a new directory role member.
 
 You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
@@ -23,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryrole_post_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrole-post-members-permissions.md)]
+
+[!INCLUDE [rbac-directory-role-apis-write](../includes/rbac-for-apis/rbac-directory-role-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

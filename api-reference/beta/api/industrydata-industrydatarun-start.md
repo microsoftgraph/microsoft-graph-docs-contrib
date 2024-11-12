@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the longRunningOperation. To check the status of this long-running operation, make a GET request to the location URL.
+If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the [longRunningOperation(../resources/longrunningoperation.md). To check the status of this long-running operation, make a GET request to the location URL.
 
 ## Examples
 
