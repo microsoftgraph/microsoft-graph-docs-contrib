@@ -38,7 +38,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 
 ## Query parameters
 
-This method required the `containerTypeId` parameter. It supports the `$expand` OData query parameter except for on the for **drive**, **permissions**, and **customProperties** properties. For general information, see [OData query parameters](/graph/query-parameters).
+This method required the `containerTypeId` parameter. It supports the `$expand` OData query parameter, except for the **drive**, **permissions**, and **customProperties** properties. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +68,7 @@ The following example enumerates all containers of a given container type.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 
 # [C#](#tab/csharp)
