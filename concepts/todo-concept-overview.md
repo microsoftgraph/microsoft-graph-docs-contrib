@@ -4,6 +4,7 @@ description: "Use the Microsoft To Do API in Microsoft Graph to manage tasks and
 author: "avijityadav"
 ms.localizationpriority: high
 ms.subservice: "outlook"
+ms.date: 11/07/2024
 ---
 
 # To Do API overview

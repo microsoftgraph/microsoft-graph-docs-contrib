@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Change notifications for Outlook resources in Microsoft Graph

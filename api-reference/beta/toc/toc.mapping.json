@@ -2252,7 +2252,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
               "childNodes": [
@@ -2290,6 +2289,12 @@
                       "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Service activity",
+                      "resources": [
+                        "serviceActivity"
                       ]
                     },
                     {
