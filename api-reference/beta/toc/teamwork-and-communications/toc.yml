@@ -570,6 +570,10 @@ items:
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
       - name: Set external event information
         href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Complex types
+      items:
+      - name: Virtual event external information
+        href: ../../resources/virtualeventexternalinformation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
