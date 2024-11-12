@@ -772,7 +772,7 @@ items:
       href: add-properties-profilecard.md
     - name: Enable or disable pronouns
       href: pronouns-configure-pronouns-availability.md
-    - name: Enable or disable namepronunciation
+    - name: Enable or disable name pronunciation (preview)
       href: namepronunciation-configure-namepronunciation-availability.md
     - name: Item insights overview
       href: item-insights-overview.md
