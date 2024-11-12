@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel-list_member",
