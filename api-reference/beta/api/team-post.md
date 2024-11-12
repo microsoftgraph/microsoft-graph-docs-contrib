@@ -792,7 +792,7 @@ The following example shows how to create a team for imported messages.
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only supports the `standard` template.
->**Note:** This call does not support **firstChannelName** parameter.
+>**Note:** This call does not support the **firstChannelName** parameter.
 
 # [HTTP](#tab/http)
 <!-- {
