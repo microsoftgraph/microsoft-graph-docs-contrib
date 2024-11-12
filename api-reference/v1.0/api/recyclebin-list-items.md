@@ -1,13 +1,13 @@
 ---
 author: "vanshisingh"
-title: "List item"
+title: "List items"
 description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List item
+# List items
 
 Namespace: microsoft.graph
 
