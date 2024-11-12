@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Restore recycle bin item
+# Restore recycleBinItem
 
 Namespace: microsoft.graph
 
