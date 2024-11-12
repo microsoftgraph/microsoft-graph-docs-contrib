@@ -14,6 +14,8 @@ items:
     href: ../../api/site-get.md
   - name: List sites across geographies
     href: ../../api/site-getallsites.md
+  - name: List sites in an organization
+    href: ../../api/site-list.md
   - name: List subsites for a site
     href: ../../api/site-list-subsites.md
   - name: Get site by path
