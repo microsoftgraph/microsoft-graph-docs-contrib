@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storageContainers/{containerId}/permanentDelete
+POST /storage/fileStorage/containers/{containerId}/permanentDelete
 ```
 
 ## Request headers
