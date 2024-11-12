@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+      {
+        "Id": "0df2881e-80c9-1caa-f36d-51656027c6c3",
+        "ApiChange": "Member",
+        "ChangedApiName": "cloudPcFrontlineConcurrencyScenario",
+        "ChangeType": "Rename",
+        "Description": "Rename the `cloudPcFrontlineBufferUsageScenario` member to `cloudPcFrontlineConcurrencyScenario`",
+        "Target": "alertRuleTemplate"
+      }]
+    },
+    {
         "ChangeList": [
             {
               "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
