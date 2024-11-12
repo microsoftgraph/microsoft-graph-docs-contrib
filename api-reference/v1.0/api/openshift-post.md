@@ -1,6 +1,7 @@
 ---
 title: "Create openShift"
 description: "Create an instance of openShift object."
+ms.date: 11/12/2024
 ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
