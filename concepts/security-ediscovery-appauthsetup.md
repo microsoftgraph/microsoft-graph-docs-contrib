@@ -90,7 +90,7 @@ Get-RoleGroupMember -Identity "eDiscoveryManager"
 Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 ```
-Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}""
+Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
 Get-eDiscoveryCaseAdmin
 ```
 
