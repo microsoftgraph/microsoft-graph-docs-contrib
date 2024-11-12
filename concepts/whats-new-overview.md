@@ -33,6 +33,10 @@ List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/n
 
 Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to get or set the users who can admit from the lobby.
 
+### Teamwork and communications | Messaging
+
+Use the **firstChannelName** property on [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) to get or set the name of the first channel created in a team.
+
 ## October 2024: New and generally available
 
 ### Backup storage
