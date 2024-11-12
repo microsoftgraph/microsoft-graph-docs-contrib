@@ -81,7 +81,7 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 
 - The least privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) for management of application authentication method policies are Application Administrator and Cloud Application Administrator.
 
-## Next steps
+## Related content
 
-- [tenantAppManagementPolicy](tenantappmanagementpolicy.md) resource type.
-- [appManagementPolicy](appmanagementpolicy.md) resource type.
+- [tenantAppManagementPolicy](tenantappmanagementpolicy.md)
+- [appManagementPolicy](appmanagementpolicy.md)
