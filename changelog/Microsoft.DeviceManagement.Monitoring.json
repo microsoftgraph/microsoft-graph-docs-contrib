@@ -9,7 +9,13 @@
         "ChangeType": "Rename",
         "Description": "Rename the `cloudPcFrontlineBufferUsageScenario` member to `cloudPcFrontlineConcurrencyScenario`",
         "Target": "alertRuleTemplate"
-      }]
+      }],
+      "Id": "0df2881e-80c9-1caa-f36d-51656027c6c3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-12T10:40:03.4590295Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     },
     {
         "ChangeList": [
