@@ -1,6 +1,6 @@
 ---
 title: "copilotAdmin resource type"
-description: "Represents a Microsoft 365 Copilot admin who can add or modify Microsoft 365 Copilot settings"
+description: "Represents a Microsoft 365 admin who can add or modify Microsoft 365 Copilot settings."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -13,15 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a navigation property for Copilot admin. Copilot admin can add or modify Copilot settings.
+Represents a Microsoft 365 admin who can add or modify Microsoft 365 Copilot settings.
 
 
 Inherits from [entity](../resources/entity.md).
 
+## Properties
+
+None.
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[copilotAdminSettings](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified.. Navigation property. Read-only. Nullable.|
+|settings|[copilotAdminSettings](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified. Navigation property. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
