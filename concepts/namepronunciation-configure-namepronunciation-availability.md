@@ -96,7 +96,7 @@ You can use the [namePronunciationSettings](/graph/api/resources/namepronunciati
 
 ### Confirm your current settings
 
-Use the [get](/graph/api/namepronunciationsettings-get?view=graph-rest-beta) operation to return the current settings for name pronunciation in your organization.
+Use the [get](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) operation to return the current settings for name pronunciation in your organization.
 
 The following example gets the current display settings that have name pronunciation disabled.
 
