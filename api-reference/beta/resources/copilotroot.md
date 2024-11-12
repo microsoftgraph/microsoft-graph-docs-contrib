@@ -1,6 +1,6 @@
 ---
 title: "copilotRoot resource type"
-description: "Represents a navigation property for Copilot controls."
+description: "A container for Microsoft 365 Copilot admin controls."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A container for Microsoft 365 Copilot admin controls.
+
+## Properties
+
+None.
 
 ## Relationships
 |Relationship|Type|Description|
