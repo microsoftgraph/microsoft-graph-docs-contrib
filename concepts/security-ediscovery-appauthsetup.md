@@ -7,27 +7,27 @@ ms.subservice: "security"
 ms.custom: scenarios:getting-started
 ---
 
-# Setting up App Authentication for Purview eDiscovery with Microsoft Graph API
+# Setting up app authentication for Purview eDiscovery with Microsoft Graph API
 
-The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
+The Microsoft Purview Micosoft Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
 
 Implementing App Authentication using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up App Authentication for Purview eDiscovery, ensuring your applications are compliant and secure.
 
-## Why App Authentication?
+## Why app authentication?
 
-### Enhancing Security and Compliance
+### Enhancing security and compliance
 
 App Authentication enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using Application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
 
-### Streamlining Access and Integration
+### Streamlining access and entegration
 
 App Authentication streamlines the integration of eDiscovery services with other applications and systems. It facilitates automated, script-based interactions that are crucial for large-scale legal investigations and compliance audits. By allowing secure, token-based access to eDiscovery resources, organizations can automate workflows, reduce manual errors, and ensure consistent enforcement of compliance policies across all digital environments.
 
-## Implementing App Authentication
+## Implementing app authentication
 
 Implementing App Auth involves registering the app in Azure, creating client secret/certificates, assigning API permissions, setting up a service principal, and then using App Auth to call Microsoft Graph APIs. The following steps explain how to implement App Auth.
 
-### Step 1: Register a New Application in Azure
+### Step 1: Register a new application in Azure
 
 1.1 To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
@@ -41,7 +41,7 @@ Implementing App Auth involves registering the app in Azure, creating client sec
 
 ![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
 
-### Step 2: Create Client Secrets or Certificates
+### Step 2: Create client secrets or certificates
 
 Now that your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
@@ -51,21 +51,21 @@ You can optionally upload a certificate to use along with the App ID for automat
 
 ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
-### Step 3: Assign API Permissions
+### Step 3: Assign API permissions
 
-You need to set the correct API permissions for your application. Under **API permissions**, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It is mandatory that the tenant admin consents to these application permissions to enable them for use, as per policy for any application permission.
+You need to set the correct API permissions for your application. Under **API permissions**, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It's mandatory that the tenant admin consents to these application permissions to enable them for use, as per policy for any application permission.
 
 ![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
-### Step 4: Set Up a Service Principal
+### Step 4: Set up a service principal
 
-4.1 In the **Microsoft Entra ID** blade in the Azure portal, select **Enterprise Applications** and search your application by name to get the Object ID for your application. 
+4.1 On the left, in **Microsoft Entra ID** in the Azure portal, select **Enterprise Applications** and search for your application by name to get the Object ID for your application. 
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
 4.2 Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
-Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following commands. The Install-Module command will recommend package upgrade in case the module is already installed.
+Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following commands. The Install-Module command recommends upgrading the package if the module is already installed.
 
 ```
 Install-Module ExchangeOnlineManagement
@@ -96,14 +96,14 @@ Get-eDiscoveryCaseAdmin
 
 ![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
-### Step 5: Connect to Graph API Using App Authentication
+### Step 5: Connect to the Micosoft Graph API using app authentication
 
-Finally, use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Graph API using the app authentication method. This setup enables your app to interact with Microsoft Graph securely.
+Finally, use the [Connect-MgMicosoft Graph](https://learn.microsoft.com/powershell/module/microsoft.Micosoft Graph.authentication/connect-mgMicosoft Graph) command to authenticate and connect to Micosoft Graph API using the app authentication method. This setup enables your app to interact with Microsoft Graph securely.
 
-### Step 6: Invoke Graph API Requests
+### Step 6: Invoke Micosoft Graph API requests
 
-Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgGraphRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
+Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgMicosoft GraphRequest](https://learn.microsoft.com/powershell/module/microsoft.Micosoft Graph.authentication/invoke-mgMicosoft Graphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
 
 ## References
 
-For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
+For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/Micosoft Graph/use-postman).
