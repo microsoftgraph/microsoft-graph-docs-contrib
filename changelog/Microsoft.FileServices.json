@@ -3874,12 +3874,12 @@
         },
         {
           "ChangeList": [
-	        {
-	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
+	{
+	  "Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/filestorage-delete-deletedcontainers?view=graph-rest-1.0) operation to the [filestorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Delete deletedContainers](https://learn.microsoft.com/en-us/graph/api/filestorage-delete-deletedcontainers?view=graph-rest-1.0) method to the [filestorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-1.0) resource.",
           "Target": "filestorage"
           },
 	        {
@@ -3887,7 +3887,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-column?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Delete column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-column?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3895,7 +3895,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebinitem?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Delete recycleBinItem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-recyclebinitem?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3903,7 +3903,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "get",
           "ChangeType": "Addition",
-          "Description": "Added the [get column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-get-column?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Get column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-get-column?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3911,7 +3911,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [list column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-columns?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [List columns](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-columns?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {  
@@ -3919,7 +3919,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [list recyclebinitem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebinitem?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [List recycleBinItem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-list-recyclebinitem?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3927,7 +3927,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "lock",
           "ChangeType": "Addition",
-          "Description": "Added the [lock](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-lock?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Lock](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-lock?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3935,7 +3935,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "post",
           "ChangeType": "Addition",
-          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-post-columns?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Create columns](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-post-columns?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3943,7 +3943,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Restore",
           "ChangeType": "Addition",
-          "Description": "Added the [Restore recyclebintem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Restore recyclebintem](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore-recyclebinitem?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3951,7 +3951,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Restore",
           "ChangeType": "Addition",
-          "Description": "Added the [Restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Restore](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-restore?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 		{
@@ -3959,7 +3959,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Unlock",
           "ChangeType": "Addition",
-          "Description": "Added the [Unlock](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-unlock?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Unlock](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-unlock?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3967,7 +3967,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Update",
           "ChangeType": "Addition",
-          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Update column](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
           },
 	        {
@@ -3975,7 +3975,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Update",
           "ChangeType": "Addition",
-          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-1.0) operation to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Update recycleBinSettings](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-recyclebinsettings?view=graph-rest-1.0) method to the [filestoragecontainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "filestoragecontainer"
         },
 		{
@@ -3983,23 +3983,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Addition",
-          "Description": "Added the [List items](https://learn.microsoft.com/en-us/graph/api/recyclebin-list-items?view=graph-rest-1.0) operation to the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
+          "Description": "Added the [List items](https://learn.microsoft.com/en-us/graph/api/recyclebin-list-items?view=graph-rest-1.0) method to the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyclebin"
-          },
-	      {
-	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
-          "ApiChange": "Resource",
-          "ChangedApiName": "recyclebin",
-          "ChangeType": "Addition",
-          "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
-          "Target": "recyblebin"
           },
 	        {
 	"Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
           "ApiChange": "Resource",
           "ChangedApiName": "recyclebin",
           "ChangeType": "Addition",
-          "Description": "Added the [recyclebin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recycleBin](https://learn.microsoft.com/en-us/graph/api/resources/recyclebin?view=graph-rest-1.0) resource.",
           "Target": "recyblebin"
           },
 	        {
@@ -4007,7 +3999,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyclebinitem",
           "ChangeType": "Addition",
-          "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recycleBinItem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinitem?view=graph-rest-1.0) resource.",
           "Target": "recyclebinitem"
           },
 	        {
@@ -4015,14 +4007,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recyclebinsettings",
           "ChangeType": "Addition",
-          "Description": "Added the [recyclebinitem](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinsettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [recycleBinSettings](https://learn.microsoft.com/en-us/graph/api/resources/recyclebinsettings?view=graph-rest-1.0) resource.",
           "Target": "recyclebinsettings"
           }
 	      ],
         "Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
         "Cloud": "Prod",
         "Version": "v1.0",
-        "CreatedDateTime": "2024-11-05T06:57:37.5509045Z",
+        "CreatedDateTime": "2024-11-115T06:57:37.5509045Z",
         "WorkloadArea": "Files",
         "SubArea": ""
 	      }
