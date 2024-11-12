@@ -65,7 +65,7 @@ To get pronoun settings configuration for an organization, use the following com
   Get-MgBetaAdminPeopleNamePronunciation 
 ```
 
-### Enable namepronunciation in your organization
+### Enable name pronunciation in your organization
 
 By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
 
