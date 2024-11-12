@@ -24,7 +24,7 @@ Inherits from [baseItem](baseitem.md).
 ## Properties
 
 | Property            | Type           | Description                                                                                                                                                                                                      |
-|:--------------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:--------------------|:---------------|:------------------|
 | deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item.                                                                                                                                           |
 | id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md).                                                                                                                             |

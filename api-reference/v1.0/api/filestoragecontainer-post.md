@@ -43,7 +43,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| dataLocation | Use the `$dataLocation` query parameter to specify the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request will create the container at the tenant's default location. Learn more about [available Multi-Geo regions and their location codes](https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
+| dataLocation | Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. Learn more about [available Multi-Geo regions and their location codes](https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
 
 ## Request headers
 |Name|Description|
