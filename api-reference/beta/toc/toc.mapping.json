@@ -2867,7 +2867,8 @@
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callRecording",
-                "callTranscript"
+                "callTranscript",
+                "callAiInsight"
               ],
               "childNodes": [
                 {
@@ -2887,6 +2888,14 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "actionItem",
+                "callAiInsightViewPoint",
+                "meetingNote",
+                "meetingNoteSubpoint",
+                "mentionEvent",
+                "identitySet"
               ]
             },
             {

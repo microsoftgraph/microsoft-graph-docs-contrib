@@ -400,6 +400,8 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: List AI insights
+        href: ../../api/onlinemeeting-list-aiinsights.md
     - name: External meeting registration (deprecated)
       items:
       - name: External meeting registration (deprecated)

@@ -2409,7 +2409,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callAiInsight",
           "ChangeType": "Addition",
-          "Description": "Added the [callAiInsight](https://learn.microsoft.com/en-us/graph/api/resources/callAiInsight?view=graph-rest-beta) resource.",
+          "Description": "Added the [callAiInsight](https://learn.microsoft.com/en-us/graph/api/resources/callAiInsight?view=graph-rest-beta) resource and its associated method.",
           "Target": "callAiInsight"
         }
       ],
