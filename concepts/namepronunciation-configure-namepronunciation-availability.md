@@ -67,7 +67,7 @@ To get pronoun settings configuration for an organization, use the following com
 
 ### Enable name pronunciation in your organization
 
-By default, name pronunciation are disabled. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
+By default, name pronunciations are disabled. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
 
 > [!NOTE]
 > The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
