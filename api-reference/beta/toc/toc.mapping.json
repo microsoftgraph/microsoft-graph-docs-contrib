@@ -1900,7 +1900,9 @@
                 "microsoft.graph.networkaccess.filteringProfile",
                 "microsoft.graph.networkaccess.filteringPolicy",
                 "microsoft.graph.networkaccess.filteringPolicyLink",
-                "microsoft.graph.networkaccess.filteringRule"
+                "microsoft.graph.networkaccess.filteringRule",
+                "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.webCategoryFilteringRule"
               ]
             },
             {
