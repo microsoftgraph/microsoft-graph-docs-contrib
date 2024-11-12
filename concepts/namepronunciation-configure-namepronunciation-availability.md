@@ -92,7 +92,7 @@ Alternatively, you can make name pronunciation unavailable for your organization
 
 ## Configure name pronunciation settings using the Microsoft Graph REST API
 
-You can use the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta) API to configure name pronunciation settings in your organization.
+You can use the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) API to configure name pronunciation settings in your organization.
 
 ### Confirm your current settings
 
@@ -104,7 +104,7 @@ The following example gets the current display settings that have name pronuncia
 GET https://graph.microsoft.com/v1.0/admin/people/namePronunciation
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ### Enable name pronunciation in your organization
 
-Use the [update](/graph/api/namepronunciationsettings-update?view=graph-rest-beta) operation to enable name pronunciation in your organization.
+Use the [update](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) operation to enable name pronunciation in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
@@ -128,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body.
 
 ``` http
 HTTP/1.1 200 OK
