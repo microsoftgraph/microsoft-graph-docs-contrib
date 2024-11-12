@@ -4,6 +4,7 @@ description: "Use the Microsoft Purview eDiscovery Graph APIs to automate repeti
 ms.localizationpriority: high
 author: "pamehra"
 ms.subservice: "ediscovery"
+ms.date: 11/11/2024
 doc_type: conceptualPageType
 ---
 
