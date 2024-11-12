@@ -1,6 +1,6 @@
 ---
 title: "copilotAdminSetting resource type"
-description: "Represents a navigation property for set of Microsoft 365 Copilot settings."
+description: "Represents an admin setting for Microsoft 365 Copilot."
 author: "gautamjain14"
 ms.localizationpriority: medium
 ms.subservice: "meetings-copilot"
@@ -17,6 +17,10 @@ Represents an admin setting for Microsoft 365 Copilot.
 
 
 Inherits from [entity](../resources/entity.md).
+
+## Properties
+
+None.
 
 ## Relationships
 |Relationship|Type|Description|
