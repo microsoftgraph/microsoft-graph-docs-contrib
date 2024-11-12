@@ -16,7 +16,7 @@ Correctly pronouncing someone's name shows inclusion and respect as it's a vital
 
 Global administrators can enable or disable name pronunciation for everyone in the organization using the Microsoft Graph API. By default, name pronunciation is disabled. 
 
-Enabling name pronunciation in an organization facilitates correct pronunciation of other's names within the organization. This includes the following end user experiences: 
+Enabling name pronunciation in an organization facilitates correct pronunciation of others' names within the organization. This includes the following end user experiences: 
 
 - When name pronunciation is enabled, a user can optionally add and manage pronunciation in the profile card in Teams and Outlook web and desktop. 
 - Name Pronunciation appears by the user's name on the profile card in Teams. 
