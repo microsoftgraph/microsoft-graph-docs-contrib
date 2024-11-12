@@ -38,7 +38,7 @@ GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/up
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter`, `$skip` and `$top`  the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

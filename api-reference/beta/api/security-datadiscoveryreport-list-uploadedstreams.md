@@ -36,6 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
 
+## Optional query parameters
+This method does not currently support [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
