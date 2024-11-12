@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Setting up App Authentication for Purview eDiscovery with Microsoft Graph API
 
-In the world of data compliance and legal investigations, Purview eDiscovery plays a crucial role in managing and retrieving information across your organization's digital landscape. In this age where data breaches are becoming more frequent and the regulatory requirements are more stringent, the security and integrity of eDiscovery processes are more critical than ever. Traditional authentication methods fall short when it comes to providing the necessary security and compliance guarantees, especially in complex enterprise environments. It is in such complex enterprise environments where App Authentication steps in as a game-changer for Purview eDiscovery and is enhanced with the Microsoft Graph API. 
+The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
 
 Implementing App Authentication using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up App Authentication for Purview eDiscovery, ensuring your applications are compliant and secure.
 
@@ -21,7 +21,7 @@ App Authentication enhances the security landscape of Purview eDiscovery by impl
 
 ### Streamlining Access and Integration
 
-Furthermore, App Authentication streamlines the integration of eDiscovery services with other applications and systems. It facilitates automated, script-based interactions that are crucial for large-scale legal investigations and compliance audits. By allowing secure, token-based access to eDiscovery resources, organizations can automate workflows, reduce manual errors, and ensure consistent enforcement of compliance policies across all digital environments.
+App Authentication streamlines the integration of eDiscovery services with other applications and systems. It facilitates automated, script-based interactions that are crucial for large-scale legal investigations and compliance audits. By allowing secure, token-based access to eDiscovery resources, organizations can automate workflows, reduce manual errors, and ensure consistent enforcement of compliance policies across all digital environments.
 
 ## Implementing App Authentication
 
@@ -31,9 +31,9 @@ Implementing App Auth involves registering the app in Azure, creating client sec
 
 1.1 To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
-1.2 Access the Microsoft Entra ID section on the left side.
+1.2 Access the **Microsoft Entra ID** section on the left side.
 
-1.3 Go to App registrations, select New registration.
+1.3 Go to **App registrations**, select **New registration**.
 
 1.4 Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
@@ -43,55 +43,54 @@ Implementing App Auth involves registering the app in Azure, creating client sec
 
 ### Step 2: Create Client Secrets or Certificates
 
-Once your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
+Now that your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-For a client secret, select New client secret, add a description, and select Add to save. Make sure to copy and securely store the secret value, as required for authentication.
+For a client secret, select **New client secret**, add a description, and select **Add** to save. Make sure to copy and securely store the secret value, as required for authentication.
 
-If using a certificate, you can upload one to use along with the App ID for automation purposes.
+You can optionally upload a certificate to use along with the App ID for automation purposes.
 
 ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
 ### Step 3: Assign API Permissions
 
-Next, you need to set the correct API permissions for your application. Under API permissions, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It's essential that the tenant admin consents to these Application permissions to enable them for use.
+You need to set the correct API permissions for your application. Under **API permissions**, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It is mandatory that the tenant admin consents to these application permissions to enable them for use, as per policy for any application permission.
 
 ![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
 ### Step 4: Set Up a Service Principal
 
-4.1 In the Azure portal > Microsoft Entra ID, navigate to **Enterprise Applications** to get the Object ID for your application. 
+4.1 In the **Microsoft Entra ID** blade in the Azure portal, select **Enterprise Applications** and search your application by name to get the Object ID for your application. 
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
-4.2 Now open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
+4.2 Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
-Install and import the ExchangeOnlineManagement module if not already installed.
+Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following commands. The Install-Module command will recommend package upgrade in case the module is already installed.
 
 ```
-Install-Module ExchangeOnlineManagement (if not already installed)
-
+Install-Module ExchangeOnlineManagement
 Import-Module ExchangeOnlineManagement
-
 Connect-IPPSSession
 ```
 
-Use New-ServicePrincipal to create a service principal with your app's details and add it to the eDiscoveryManager role using Add-RoleGroupMember.
+Use [New-ServicePrincipal](https://learn.microsoft.com/en-us/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](https://learn.microsoft.com/en-us/powershell/module/exchange/get-serviceprincipal) cmdlet.  
 
 ```
-New-ServicePrincipal -AppId "71a1f5b9-3c69-4bbd-8579-2b3a2d70f7a0" -ObjectId "72c0d639-8c8f-439b-bbbe-78c9ce51751f" -DisplayName "Graph Api Test"
-
+New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
 Get-ServicePrincipal
-
-Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
 ```
 
-Verify the setup using Get-RoleGroupMember.
+Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](https://learn.microsoft.com/en-us/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](https://learn.microsoft.com/en-us/powershell/module/exchange/get-rolegroupmember) cmdlet. 
 
 ```
+Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "{OBJECT_ID}"
 Get-RoleGroupMember -Identity "eDiscoveryManager"
+```
 
-Add-eDiscoveryCaseAdmin -User "72c0d639-8c8f-439b-bbbe-78c9ce51751f"
+Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
+```
+Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}""
 Get-eDiscoveryCaseAdmin
 ```
 
