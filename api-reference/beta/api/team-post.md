@@ -48,7 +48,7 @@ POST /teams
 
 ## Request body
 
-In the request body, supply a JSON representation of a [team](../resources/team.md) object. We can also specify optional parameter 'firstChannelName', if we want to name the first channel created as part of it. If no parameter is provided then its name will be default as 'General'.
+In the request body, supply a JSON representation of a [team](../resources/team.md) object. We can also specify optional parameter 'firstChannelName', if we want to name the first channel created as part of it. If no parameter is provided, then its name defaults to 'General'.
 
 ## Response
 
@@ -58,7 +58,7 @@ If successful, this API returns a `202 Accepted` response that contains a link t
 
 ### Example 1: Delegated permissions
 
-The following example shows a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following example shows a minimal request. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`.
 
 #### Request
 
@@ -133,7 +133,7 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-The following example shows a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+The following example shows a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 >**Note:** You can only specify a single member as the owner in this scenario.
 
@@ -217,7 +217,7 @@ Content-Length: 0
 
 ### Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions
 
-The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
+The following example shows a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
 
@@ -368,9 +368,9 @@ The following example shows how you can create a new [team](../resources/team.md
 A few things to note about this call:
 
 * In order to create a team, the group you're creating it from must have a least one owner.
-* The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
-* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
-* It does not support to have custom first channel name by using **firstChannelName**.
+* The created team will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
+* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10-second delay between calls.
+* It doesn't support to have custom first channel name by using **firstChannelName**.
 
 #### Request
 
@@ -440,7 +440,7 @@ Content-Length: 0
 
 ### Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs
 
-The following is a request that converts an existing group with extended properties that create the team with multiple channels, installed apps, and pinned tabs.
+The following example shows a request that converts an existing group with extended properties that create the team with multiple channels, installed apps, and pinned tabs.
 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -535,11 +535,11 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 6: Create a team with a non-standard base template type
+### Example 6: Create a team with a nonstandard base template type
 
 Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that aren't yet supported individually in Microsoft Teams templates.
 
-To create a team from a non-standard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
+To create a team from a nonstandard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -611,7 +611,7 @@ Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c2
 Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
-### Example 7: Create a team with a localized non-standard base template type 
+### Example 7: Create a team with a localized nonstandard base template type 
 Base template types can be localized to your preferred language choice, which enables you to create templates in your preferred language. 
 
 Choose your team template from the definition list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
@@ -686,9 +686,9 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 8: Create a team with a non-standard base template type with extended properties
+### Example 8: Create a team with a nonstandard base template type with extended properties
 
-Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
+Base template types can be extended with other properties, enabling you to build on an existing base template with more team settings, channels, apps, or tabs.
 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -875,7 +875,7 @@ The following are common reasons for this response:
 
 ### Example 10: Application permissions using user principal name
 
-Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+Here's an example of a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md)  in the `members` collection for requests with application permissions.
 
 #### Request
 
