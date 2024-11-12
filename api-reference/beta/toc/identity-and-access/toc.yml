@@ -4119,6 +4119,10 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+    - name: FQDN filtering rule
+      href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: Web category filtering rule
+      href: ../../resources/networkaccess-webcategoryfilteringrule.md
 - name: Partner customer administration
   items:
   - name: Partner security alert
