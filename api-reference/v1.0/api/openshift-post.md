@@ -46,10 +46,10 @@ Provide the modified [openShift](../resources/openshift.md) object in the reques
 
 |Property|Type|Description|
 |:---|:---|:---|
-| draftOpenShift        | [openShiftItem](openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md). Either sharedOpenShift or sharedOpenShift should be null|
+| draftOpenShift        | [openShiftItem](../resources/openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md). Either sharedOpenShift or sharedOpenShift should be null|
 | isStagedForDeletion   | Boolean                           | The **openShift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).  Optional.   |
-| schedulingGroupId     | String                            | The ID of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.  |
-| sharedOpenShift       | [openShiftItem](openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers. Either sharedOpenShift or sharedOpenShift should be null|
+| schedulingGroupId     | String                            | The ID of the [schedulingGroup](../resources/schedulinggroup.md) that contains the **openShift**.  |
+| sharedOpenShift       | [openShiftItem](../resources/openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers. Either sharedOpenShift or sharedOpenShift should be null|
 
 ## Response
 
