@@ -25,6 +25,10 @@ The Defender for Identity sensors management API enables you to create detailed 
 
 ## November 2024: New in preview only
 
+### Identity and access | Network access
+
+List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta&preserve-view=true) and [webCategoryFilteringRule](/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta&preserve-view=true) resources that are derived types of [filteringRule](/graph/api/resources/networkaccess-filteringrule?view=graph-rest-beta&preserve-view=true).
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to get or set the users who can admit from the lobby.
