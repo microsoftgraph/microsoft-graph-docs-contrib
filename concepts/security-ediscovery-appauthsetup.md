@@ -73,21 +73,21 @@ Import-Module ExchangeOnlineManagement
 Connect-IPPSSession
 ```
 
-Use [New-ServicePrincipal](https://learn.microsoft.com/en-us/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](https://learn.microsoft.com/en-us/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+Use [New-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/get-serviceprincipal) cmdlet.  
 
 ```
 New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
 Get-ServicePrincipal
 ```
 
-Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](https://learn.microsoft.com/en-us/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](https://learn.microsoft.com/en-us/powershell/module/exchange/get-rolegroupmember) cmdlet. 
+Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/get-rolegroupmember) cmdlet. 
 
 ```
 Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "{OBJECT_ID}"
 Get-RoleGroupMember -Identity "eDiscoveryManager"
 ```
 
-Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/en-us/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
+Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 ```
 Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
