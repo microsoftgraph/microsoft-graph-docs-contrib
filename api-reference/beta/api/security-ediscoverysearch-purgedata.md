@@ -62,6 +62,8 @@ The following table shows the parameters that you can use with this action.
 |purgeAreas|microsoft.graph.security.purgeAreas| Options to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
 |purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `unknownFutureValue`, `permanentlyDelete`. |
 
+>**Note:** `permanentlyDelete` is not supported for `teamsMessages`.
+
 ## Response
 
 If successful, this action returns a `202 Accepted` response code.
