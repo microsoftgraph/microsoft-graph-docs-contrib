@@ -2361,6 +2361,24 @@
       "CreatedDateTime": "2024-10-02T16:52:11.579880Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b2b503b2-47be-4369-9e3e-eca7b1918805",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "getAllMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **getAllMembers** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "b2b503b2-47be-4369-9e3e-eca7b1918805",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-12T13:04:38.8112517Z",
+      "WorkloadArea": "Teamwork and Communications",
+      "SubArea": ""
     }
   ]
 }
