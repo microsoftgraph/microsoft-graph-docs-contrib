@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -110,7 +112,9 @@ Content-Type: application/json
   "status": "active",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false
+    "isOcrEnabled": false,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true
   }
 }
 ```
