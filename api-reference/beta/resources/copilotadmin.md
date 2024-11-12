@@ -25,7 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[copilotAdminSettings](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified. Navigation property. Read-only. Nullable.|
+|settings|[copilotAdminSetting](../resources/copilotadminsetting.md)|Set of Copilot settings that can be added or modified. Navigation property. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
