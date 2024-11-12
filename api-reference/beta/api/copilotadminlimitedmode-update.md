@@ -1,5 +1,5 @@
 ---
-title: "Update copilotLimitedMode"
+title: "Update copilotAminLimitedMode"
 description: "Update the properties of a copilotAdminLimitedMode object."
 author: "gautamjain14"
 ms.localizationpriority: medium
@@ -28,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type |Least privileged permissions|Higher privileged permissions|
 | --------------- |-----------------------------| --------------------------- |
-|Delegated (work or school account)|CopilotSettings-LimitedMode.ReadWrite| |
-|Delegated (personal Microsoft account)|Not supported|Not supported|
-|Application|Not supported|Not supported|
+|Delegated (work or school account)|CopilotSettings-LimitedMode.ReadWrite| Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 ## HTTP request
 
