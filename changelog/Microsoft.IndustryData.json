@@ -13,9 +13,9 @@
         {
           "Id": "42766e66-be8f-4c20-89e6-1941ff8c710a",
           "ApiChange": "Permission",
-          "ChangedApiName": "IndustryData-Run.ReadWrite.All",
+          "ChangedApiName": "IndustryData-Run.Start",
           "ChangeType": "Addition",
-          "Description": "Added the `IndustryData-Run.ReadWrite.All` delegated and application permissions to the [start](https://learn.microsoft.com/en-us/graph/api/industryData-industryDataRun-start?view=graph-rest-beta) method of the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industryData-industryDataRun?view=graph-rest-beta) resource.",
+          "Description": "Added the `IndustryData-Run.Start` delegated and application permissions to the [start](https://learn.microsoft.com/en-us/graph/api/industryData-industryDataRun-start?view=graph-rest-beta) method of the [industryDataRun](https://learn.microsoft.com/en-us/graph/api/resources/industryData-industryDataRun?view=graph-rest-beta) resource.",
           "Target": "industryDataRun"
         }
       ],
