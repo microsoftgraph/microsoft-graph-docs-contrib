@@ -1,13 +1,13 @@
 ---
-title: "List recycleBin items"
-description: "Get a list of recycle bin items from a fileStorageContainer recycleBin."
+title: "List recycleBinItems"
+description: "Get a list of recycleBinItems from a fileStorageContainer recycleBin."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List recycleBin items
+# List recycleBinItems
 
 Namespace: microsoft.graph
 

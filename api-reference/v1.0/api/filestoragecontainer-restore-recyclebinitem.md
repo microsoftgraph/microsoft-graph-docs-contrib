@@ -1,5 +1,5 @@
 ---
-title: "Restore recycleBin item"
+title: "Restore recycleBinItem"
 description: "Restore recycleBinItem to a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
