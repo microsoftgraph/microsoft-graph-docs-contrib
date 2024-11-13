@@ -1,5 +1,6 @@
 ---
 title: "List deletedItems (directory objects)"
+ms.date: 11/13/2024
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium

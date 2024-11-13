@@ -1,5 +1,6 @@
 ---
 title: "Get deleted item (directory object)"
+ms.date: 11/13/2024
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
