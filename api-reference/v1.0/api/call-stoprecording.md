@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Stop the recording of a call. This requires the use of the [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) solution.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -55,10 +53,6 @@ The following example shows the request.
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/microsoft.graph.StopRecording
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-stoprecording-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
@@ -78,8 +72,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4b
 {
   "@odata.type": "#microsoft.graph.stopRecordingOperation",
   "clientContext": "clientContext-value",
-  "id": "2d7ab59c-f8bd-4911-8302-6d58ab60e338",
-  "resultInfo": null,
   "status": "completed"
 }
 ```

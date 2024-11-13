@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Start the transcription of a call. This requires the use of the [Teams policy-based transcription](/MicrosoftTeams/teams-transcription-policy) solution.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -38,7 +36,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Unique client context string. Max limit is 256 chars.                                 |
+| language        | String  | Language of the transcription. Currently supporting: `en-us`                          |
 
 ## Response
 This method returns a `202 Accepted` response code and a [startTranscriptionOperation](../resources/starttranscriptionoperation.md) object created for this request.
@@ -61,13 +59,9 @@ Content-Type: application/json
 Content-Length: 56
 
 {
-  "clientContext": "clientContext-value"
+  "language": "en-us"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-startTranscription-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -88,8 +82,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4b
 {
   "@odata.type": "#microsoft.graph.startTranscriptionOperation",
   "clientContext": "clientContext-value",
-  "id": "2d7ab59c-f8bd-4911-8302-6d58ab60e338",
-  "resultInfo": null,
   "status": "running"
 }
 ```

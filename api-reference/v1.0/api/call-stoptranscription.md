@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Stop the transcription of a call. This requires the use of the [Teams policy-based transcription](/MicrosoftTeams/teams-transcription-policy) solution.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -34,7 +32,11 @@ POST /communications/calls/{id}/microsoft.graph.StopTranscription
 | Content-type | application/json. Required. |
 
 ## Request body
-Don't supply a request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter       | Type    | Description                                                                           |
+|:----------------|:--------|:--------------------------------------------------------------------------------------|
+| language        | String  | Language of the transcription. Currently supporting: `en-us`                          |
 
 ## Response
 This method returns a `202 Accepted` response code and a [stopTranscriptionOperation](../resources/stoptranscriptionoperation.md) object created for this request.
@@ -53,11 +55,12 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/microsoft.graph.StopTranscription
+Content-Type: application/json
+Content-Length: 56
+{
+  "language": "en-us"
+}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-stoptranscription-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -78,8 +81,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4b
 {
   "@odata.type": "#microsoft.graph.stopTranscriptionOperation",
   "clientContext": "clientContext-value",
-  "id": "2d7ab59c-f8bd-4911-8302-6d58ab60e338",
-  "resultInfo": null,
   "status": "completed"
 }
 ```

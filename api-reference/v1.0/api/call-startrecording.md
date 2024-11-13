@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Start the recording of a call. This requires the use of the [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) solution.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -34,14 +32,7 @@ POST /communications/calls/{id}/microsoft.graph.StartRecording
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
-
-| Parameter       | Type    | Description                                                                           |
-|:----------------|:--------|:--------------------------------------------------------------------------------------|
-| contentType     | String  | Format of the content being recorded. Possible values are: `audio` or `audioVideo`    |
-| channelType     | String  | Type of recording channel. Possible values are: `mixed` or `unmixed`.                 |
-| formatType      | String  | Format the recording will be saved as. Possible values are: `mp3`, `mp4`, or `wav`    |
-| clientContext   | String  | Unique client context string. Max limit is 256 chars.                                 |
+Don't supply a request body for this method.
 
 ## Response
 This method returns a `202 Accepted` response code and a [startRecordingOperation](../resources/startrecordingoperation.md) object created for this request.
@@ -60,20 +51,7 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/microsoft.graph.StartRecording
-Content-Type: application/json
-Content-Length: 124
-
-{
-  "contentType": "audioVideo",
-  "channelType": "mixed",
-  "formatType": "mp3",
-  "clientContext": "clientContext-value"
-}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-startrecording-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -94,8 +72,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4b
 {
   "@odata.type": "#microsoft.graph.startRecordingOperation",
   "clientContext": "clientContext-value",
-  "id": "2d7ab59c-f8bd-4911-8302-6d58ab60e338",
-  "resultInfo": null,
   "status": "running"
 }
 ```

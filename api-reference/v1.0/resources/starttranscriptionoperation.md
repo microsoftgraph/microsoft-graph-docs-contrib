@@ -38,8 +38,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.startTranscriptionOperation",
   "clientContext": "String (identifier)",
-  "status": "NotStarted | Running | Completed | Failed",
-  "resultInfo": null
+  "status": "NotStarted | Running | Completed | Failed"
 }
 ```
 
