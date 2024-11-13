@@ -98,11 +98,11 @@ Get-eDiscoveryCaseAdmin
 
 ### Step 5: Connect to the Micosoft Graph API using app authentication
 
-Finally, use the [Connect-MgMicosoft Graph](https://learn.microsoft.com/powershell/module/microsoft.Micosoft Graph.authentication/connect-mgMicosoft Graph) command to authenticate and connect to Micosoft Graph API using the app authentication method. This setup enables your app to interact with Microsoft Graph securely.
+Finally, use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Micosoft Graph API using the app authentication method. This setup enables your app to interact with Microsoft Graph securely.
 
 ### Step 6: Invoke Micosoft Graph API requests
 
-Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgMicosoft GraphRequest](https://learn.microsoft.com/powershell/module/microsoft.Micosoft Graph.authentication/invoke-mgMicosoft Graphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
+Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
 
 ## References
 
