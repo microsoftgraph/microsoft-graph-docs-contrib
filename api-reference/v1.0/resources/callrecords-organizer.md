@@ -21,6 +21,11 @@ Inherits from [participantBase](callrecords-participantbase.md).
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
 | identity | [microsoft.graph.communicationsIdentitySet](communicationsidentityset.md) | The identity of the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
+| administrativeUnitInfos | [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection | The list of [administrativeUnitInfo](callrecords-administrativeunitinfo.md) objects for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
+
+## Methods
+
+None.
 
 ## JSON representation
 
@@ -31,17 +36,19 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.callRecords.organizer",
   "optionalProperties": [
     "id",
-    "identity"
+    "identity",
+    "administrativeUnitInfos"
   ],
   "openType": true
 } -->
 ```json
 {
   "id": "String (identity)",
-  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}]
 }
 ```
 
 ## See also
 
-For examples that show how to use the **organizer** resource, see [callRecord](callrecords-callrecord.md).
+For examples that show how to use the **organizer** resource, see [callRecord resource type](callrecords-callrecord.md).
