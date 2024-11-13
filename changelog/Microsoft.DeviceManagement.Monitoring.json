@@ -9,6 +9,14 @@
         "ChangeType": "Rename",
         "Description": "Rename the `cloudPcFrontlineBufferUsageScenario` member to `cloudPcFrontlineConcurrencyScenario`",
         "Target": "alertRuleTemplate"
+      },
+      {
+        "Id": "0df2881e-80c9-1caa-f36d-51656027c6c3",
+        "ApiChange": "Member",
+        "ChangedApiName": "durationInMinute",
+        "ChangeType": "Addition",
+        "Description": "Added the `durationInMinute` member to **aggregationType** enumeration",
+        "Target": "aggregationType"
       }],
       "Id": "0df2881e-80c9-1caa-f36d-51656027c6c3",
       "Cloud": "Prod",
