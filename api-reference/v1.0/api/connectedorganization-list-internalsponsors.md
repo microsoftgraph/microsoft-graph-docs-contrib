@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "connectedorganization_list_internalsponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
