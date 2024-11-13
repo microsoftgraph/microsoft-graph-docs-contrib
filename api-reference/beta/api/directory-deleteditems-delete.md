@@ -1,5 +1,6 @@
 ---
 title: "Permanently delete item (directory object)"
+ms.date: 11/13/2024
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
