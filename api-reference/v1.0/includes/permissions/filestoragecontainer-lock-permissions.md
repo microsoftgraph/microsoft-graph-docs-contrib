@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (work or school account)|FileStorageContainer.Selected|FileStorageContainer.Manage.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.FullControl.All|Not available.|
-
+|Application|FileStorageContainer.Selected|Not available.|

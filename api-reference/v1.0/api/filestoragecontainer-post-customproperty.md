@@ -53,7 +53,9 @@ If successful, this method returns a `200 Created` response code.
 
 ## Examples
 
-### Request
+### Example 1: Create a custom property
+
+#### Request
 The following example shows how to create a custom property called `clientUniqueId` for a container.
 # [HTTP](#tab/http)
 <!-- {
@@ -78,7 +80,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 The following example shows the response. By default, the property isn't searchable.
 <!-- {
   "blockType": "response",
@@ -88,8 +90,9 @@ The following example shows the response. By default, the property isn't searcha
 ``` http
 HTTP/1.1 200 Created
 ```
+### Example 2: Create a custom searchable property
 
-### Request
+#### Request
 The following example shows how to create a searchable custom property called `clientUniqueId` for a container.
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +118,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -125,7 +128,6 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 Created
 ```
-
 
 
 
