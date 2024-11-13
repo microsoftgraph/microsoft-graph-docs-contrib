@@ -106,4 +106,4 @@ Once connected, you can start making calls to the Microsoft Graph API using [Inv
 
 ## References
 
-For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/Micosoft Graph/use-postman).
+For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
