@@ -144,17 +144,13 @@ items:
     href: ../../api/filestorage-delete-containers.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
-  - name: Restore deleted container
-    href: ../../api/filestoragecontainer-restore.md
-  - name: Remove deleted containers
-    href: ../../api/filestorage-delete-deletedcontainers.md
   - name: Permanently delete
     href: ../../api/filestoragecontainer-permanentdelete.md
   - name: Get drive
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions
     href: ../../api/filestoragecontainer-list-permissions.md
-  - name: Add permissions
+  - name: Create permissions
     href: ../../api/filestoragecontainer-post-permissions.md
   - name: Update permissions
     href: ../../api/filestoragecontainer-update-permissions.md
@@ -162,34 +158,12 @@ items:
     href: ../../api/filestoragecontainer-delete-permissions.md
   - name: List custom property
     href: ../../api/filestoragecontainer-list-customproperty.md
-  - name: Add custom property
+  - name: Create custom property
     href: ../../api/filestoragecontainer-post-customproperty.md
   - name: Update custom property
     href: ../../api/filestoragecontainer-update-customproperty.md
   - name: Delete custom property
     href: ../../api/filestoragecontainer-delete-customproperty.md
-  - name: List columns
-    href: ../../api/filestoragecontainer-list-columns.md
-  - name: Add column
-    href: ../../api/filestoragecontainer-post-columns.md
-  - name: Update column
-    href: ../../api/filestoragecontainer-update-column.md
-  - name: Delete file storage container column
-    href: ../../api/filestoragecontainer-delete-column.md
-  - name: Get column
-    href: ../../api/filestoragecontainer-get-column.md
-  - name: Update recycle bin settings
-    href: ../../api/filestoragecontainer-update-recyclebinsettings.md
-  - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
-  - name: Delete recycle bin items
-    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Get recycle bin items
-    href: ../../api/filestoragecontainer-list-recyclebinitem.md
-  - name: Lock
-    href: ../../api/filestoragecontainer-lock.md
-  - name: Unlock
-    href: ../../api/filestoragecontainer-unlock.md
 - name: Shared drive item
   items:
   - name: Shared drive item

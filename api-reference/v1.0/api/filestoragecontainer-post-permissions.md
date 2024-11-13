@@ -1,5 +1,5 @@
 ---
-title: "Create fileStorageContainer permission"
+title: "Create permission"
 description: "Add a permission to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Create fileStorageContainer permission
+# Create permission
 
 
 Namespace: microsoft.graph
 
-Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
+Add a [permission](../resources/permission.md) to a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

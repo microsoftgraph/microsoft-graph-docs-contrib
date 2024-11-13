@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
+Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. Custom properties specified in the request body are created if they don't already exist on the container. 
 
 Updating a custom property to a `null` value deletes the property from the container.
 
-The application calling this API must have read and write permissions to the **fileStorageContainer** for the respective container type.
+The application calling this API must have read/write permissions to the **fileStorageContainer** for the respective container type.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following example updates the `value` property of the custom properties `clientUniqeId` and `color`. Note that `isSearchable` for `clientUniqueId` was set to `true` before calling this API.
+The following example updates the `value` property of the custom properties `clientUniqeId` and `color`. In this example, `isSearchable` for `clientUniqueId` was set to `true` before calling the API.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
