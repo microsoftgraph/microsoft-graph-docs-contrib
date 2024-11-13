@@ -1635,6 +1635,7 @@
         "contentType",
         "listItem",
         "documentSetVersion",
+        "recycleBinItem",
         "richLongRunningOperation",
         "sharepointSettings"
       ],

@@ -7,7 +7,7 @@
         "ApiChange": "Member",
         "ChangedApiName": "cloudPcFrontlineConcurrencyScenario",
         "ChangeType": "Rename",
-        "Description": "Rename the `cloudPcFrontlineBufferUsageScenario` member to `cloudPcFrontlineConcurrencyScenario`",
+        "Description": "Renamed the `cloudPcFrontlineBufferUsageScenario` member to `cloudPcFrontlineConcurrencyScenario`",
         "Target": "alertRuleTemplate"
       },
       {
