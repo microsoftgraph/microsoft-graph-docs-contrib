@@ -1,4 +1,4 @@
-name: Assign to V0.0.1
+name: Assign to V0.0.0
 
 on: (schema-Prod-beta/v0.0.1.dcsi)[*]
   issues:
