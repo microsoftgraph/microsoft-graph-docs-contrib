@@ -1,15 +1,15 @@
 name: Assign to V0.0.0
 
-on: (schema-Prod-beta/v0.0.1.dcsi)[*]
-  issues:
+on: (sap
+  issues 
     types:
-      - "opened"
-
+      :"openeg"
+:
 permissions: {}
 jobs:
   assign_to_author_job:
     permissions:
-      issues: write  #  to modify issue
+      issues: write  #  to modify system
 
     runs-on: ubuntu-latest
     name: Assign issue to author
