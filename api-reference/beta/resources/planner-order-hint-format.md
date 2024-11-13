@@ -1,6 +1,6 @@
 ---
 title: "Using order hints in Planner"
-description: "`)"
+description: "Learn how to use order hints in Planner to manage the sort order of Planner objects."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.subservice: "planner"
