@@ -23,7 +23,7 @@ Enabling name pronunciation in an organization facilitates correct pronunciation
 - Name Pronunciation is displayed only internally within the organization. In multi-tenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
 - Anyone who has an account in the organization, including guest accounts, can see name pronunciation on profile cards. 
 
-Name Pronunciation data is stored in the user's mailbox. For more information see [Data Residency for Exchange Online](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true) - Microsoft 365 Enterprise | Microsoft Learn 
+Name Pronunciation data is stored in the user's mailbox. For more information see [Data Residency for Exchange Online](https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location).
 
 The end user experience with this feature might evolve over time. For current information about the end user experience, see Record and display your name pronunciation on your profile card 
 
