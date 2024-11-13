@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user-specific properties of a [call AI Insight](../resources/callaiInsight.md). These properties might change based on who the caller of the API is.
+Represents user-specific properties of a [call AI insight](../resources/callaiInsight.md). These properties might differ based on who calls the API.
 
 
 ## Properties

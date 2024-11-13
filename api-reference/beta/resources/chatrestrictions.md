@@ -1,6 +1,6 @@
 ---
 title: "chatRestrictions resource type"
-description: "Specifies the configuration for meeting chat restrictions."
+description: "Represents the configuration for meeting chat restrictions."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the configuration for meeting chat restrictions.
+Represents the configuration for meeting chat restrictions.
 
 ## Properties
 

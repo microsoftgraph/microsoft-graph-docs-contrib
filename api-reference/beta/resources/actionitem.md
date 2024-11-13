@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action item associated with a [call AI Insight](callaiinsight.md).
+Represents an action item associated with a [call AI insight](callaiinsight.md).
 
 
 ## Properties

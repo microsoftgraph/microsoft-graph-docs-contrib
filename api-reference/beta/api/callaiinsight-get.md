@@ -20,7 +20,7 @@ This API returns the metadata and content of the single set of AI insights assoc
 > [!NOTE]
 >
 > - This API has license requirements. For more information, see [license requirements for meeting AI Insights APIs](/graph/teams-licenses#license-requirements-for-meeting-ai-insights-apis).
-> - This API doesn't support meetings created by using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
+> - This API doesn't support meetings created with [Create onlineMeeting](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > - This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -57,9 +57,9 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 ## Request headers
 
-| Header        | Value                                                                                                     |
-| :------------ | :-------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+|Header|Value|
+|:-----|:----|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

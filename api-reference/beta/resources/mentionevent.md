@@ -21,7 +21,7 @@ Represents a mention event associated with a [callAiInsightViewPoint](callaiinsi
 |:---|:---|:---|
 |eventDateTime|DateTimeOffset|The date and time of the mention event.|
 |speaker|[identitySet](identityset.md)|The speaker who mentioned the user.|
-|transcriptUtterance|String|The utterance in the online meeting transcript which contains the mention event.|
+|transcriptUtterance|String|The utterance in the online meeting transcript that contains the mention event.|
 
 ## Relationships
 None.
