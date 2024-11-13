@@ -22,8 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_assignmentpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
-[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
-
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
 
 ## HTTP request
 
