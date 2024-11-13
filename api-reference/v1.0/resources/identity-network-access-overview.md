@@ -131,3 +131,4 @@ For detailed information about licensing for different features, see [Microsoft 
 
 - [Implement identity standards with Microsoft Entra ID](/entra/standards/)
 - [Microsoft Entra ID Guide for independent software developers](/entra/architecture/guide-for-independent-software-developers)
+- Review the [Microsoft Entra deployment plans] to help you build your plan to deploy the Microsoft Entra suite of capabilities.
