@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer-update-recyclebinsettings-permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-update-recyclebinsettings-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 <!-- {

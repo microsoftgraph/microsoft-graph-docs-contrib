@@ -3,6 +3,7 @@ title: "Get started with Microsoft Graph Toolkit"
 description: "Learn how to set up your Microsoft 365 tenant and development environment to use Microsoft Graph Toolkit. Install npm packages for components and providers."
 ms.localizationpriority: medium
 author: sebastienlevert
+ms.date: 11/07/2024
 ---
 
 # Get started with Microsoft Graph Toolkit
