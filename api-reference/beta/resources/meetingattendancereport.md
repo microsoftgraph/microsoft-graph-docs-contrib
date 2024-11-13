@@ -28,11 +28,11 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
+| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a virtual event. Returned only for event organizers or coorganizers. Read-only. |
 | id                    | String   | Unique identifier for the attendance report. Read-only. |
 | meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
 | meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
 | totalParticipantCount | Int32 | Total number of participants. Read-only.  |
-| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a virtual event. Returned only for event organizers or coorganizers. |
 
 ## Relationships
 
