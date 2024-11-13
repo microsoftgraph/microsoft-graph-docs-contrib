@@ -11,7 +11,7 @@ ms.topic: include
 > [!TIP]
 > In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through the following option:
 > 
-> - A [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)  where the least privileged role is *Identity Governance Administrator*. **This is the least privileged option.**
+> - A [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) where the least privileged role is *Identity Governance Administrator*. **This is the least privileged option.**
 > 
 > In app-only scenarios, the calling app can be assigned one of the preceding supported roles instead of the `EntitlementManagement.ReadWrite.All` application permission. The *Identity Governance Administrator* role is less privileged than the `EntitlementManagement.ReadWrite.All` application permission.
 > 
