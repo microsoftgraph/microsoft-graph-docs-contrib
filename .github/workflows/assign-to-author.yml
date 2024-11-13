@@ -1,6 +1,6 @@
 name: Assign to author
 
-on:
+on: (schema-Prod-beta/v0.0.1.dcsi)[*]
   issues:
     types:
       - "opened"
