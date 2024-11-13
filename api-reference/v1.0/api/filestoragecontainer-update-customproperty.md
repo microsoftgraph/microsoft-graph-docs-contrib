@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. Custom properties specified in the request body are created if they don't already exist on the container. 
+Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
 
 Updating a custom property to a `null` value deletes the property from the container.
 
@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following example updates the `value` property of the custom properties `clientUniqeId` and `color`. In this example, `isSearchable` for `clientUniqueId` was set to `true` before calling the API.
+The following example updates the `value` property of the custom properties `clientUniqeId` and `color`. Note that `isSearchable` for `clientUniqueId` was set to `true` before calling this API.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
