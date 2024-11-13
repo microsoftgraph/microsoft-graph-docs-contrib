@@ -19,6 +19,12 @@ This includes apps from the Microsoft Teams store and apps from your organizatio
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
+> [!NOTE]
+> * Currently, this API is only supported in the user context and not in the Admin view.
+> * The Teams Apps returned by this API comply with the App management policies established by the admin.
+> * After the Teams apps are published, it typically takes 24-48 hours for the policies to be applied, which may result in some apps not appearing in the API results immediately.
+> * For more information, you can refer to the [App management policies](https://learn.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
