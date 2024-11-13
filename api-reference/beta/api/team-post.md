@@ -766,7 +766,7 @@ The following are common reasons for this response:
 
 ### Example 10: Application permissions using user principal name
 
-Here's an example of a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md)  in the `members` collection for requests with application permissions.
+Here's an example of a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md) in the `members` collection for requests with application permissions.
 
 #### Request
 
