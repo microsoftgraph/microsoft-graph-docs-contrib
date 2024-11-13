@@ -23,11 +23,11 @@ Enabling name pronunciation in an organization facilitates correct pronunciation
 - Name Pronunciation is displayed only internally within the organization. In multi-tenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
 - Anyone who has an account in the organization, including guest accounts, can see name pronunciation on profile cards. 
 
-Name Pronunciation data is stored in the user's mailbox. For more information see [Data Residency for Exchange Online](https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location) - Microsoft 365 Enterprise | Microsoft Learn 
+Name Pronunciation data is stored in the user's mailbox. For more information see [Data Residency for Exchange Online](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true) - Microsoft 365 Enterprise | Microsoft Learn 
 
 The end user experience with this feature might evolve over time. For current information about the end user experience, see Record and display your name pronunciation on your profile card 
 
-Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](https://learn.microsoft.com/en-us/graph/api/resources/namepronunciationsettings?view=graph-rest-beta) property to `true`. When this property is set to true, pronunciation is displayed for everyone within the organization. When this property is set to false, pronunciation not displayed for anyone within or outside the organization. The default setting is false.
+Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](https://learn.microsoft.com/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) property to `true`. When this property is set to true, pronunciation is displayed for everyone within the organization. When this property is set to false, pronunciation not displayed for anyone within or outside the organization. The default setting is false.
 
 > [!IMPORTANT]
 > When you turn name pronunciation on or off, it can take up to seven hours for users to see changes. For example, if you turn pronunciation on, users can't see the option to add recordings on their profile card for up to seven hours. If you turn pronunciation off, any previously set recording might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours. 
