@@ -32,6 +32,7 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 | meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
 | meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
 | totalParticipantCount | Int32 | Total number of participants. Read-only.  |
+| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a virtual event. Returned only for event organizers or coorganizers. |
 
 ## Relationships
 
@@ -59,6 +60,7 @@ The following JSON representation shows the resource type.
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
   "totalParticipantCount": "Int32",
+  "externalEventInformation": [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
 
   "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
 }
