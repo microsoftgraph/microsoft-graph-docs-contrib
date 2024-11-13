@@ -37,6 +37,8 @@ GET /storage/fileStorage/containers/{containerId}/permissions
 ## Optional query parameters
 This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+By default, this API lists only container-scoped permissions. You can use the `includeAllContainerUsers=true` query parameter to include entries for identities that may have at least one item-level permission in the container but don't have container-scoped permission.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
