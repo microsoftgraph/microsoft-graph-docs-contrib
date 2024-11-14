@@ -4,9 +4,10 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-|Permission type|Least privileged permission|Higher privileged permissions|
+|Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (work or school account)|CloudApp-Discovery.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|CloudApp-Discovery.Read.All|Not available.|
+
 
