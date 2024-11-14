@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.date: 11/14/2024
 ---
 
 # Enum values
@@ -43,6 +44,13 @@ Namespace: microsoft.graph
 | inactive |
 | active |
 | unknownfuturevalue |
+
+### siteLockState values
+
+| Member         |
+| --------------- |
+| unlocked      |
+| lockedReadOnly |
 
 ### binaryOperator values
 

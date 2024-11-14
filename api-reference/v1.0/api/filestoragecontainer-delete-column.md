@@ -1,28 +1,29 @@
 ---
-title: "Delete fileStorageContainer"
-description: "Delete a fileStorageContainer object."
+title: "Delete column"
+description: "Delete a columnDefinition from a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 11/14/2024
 ---
 
-# Delete fileStorageContainer
+# Delete column
 
 Namespace: microsoft.graph
 
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin, instead of permanently deleting it.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md).  
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "filestoragecontainer-delete-columns-permissions"
+}
+-->
 
-<!-- { "blockType": "permissions", "name": "filestorage-delete-containers-permissions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-columns-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -33,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}
+DELETE /storageContainers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -55,20 +56,24 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer"
+  "name": "delete_columndefinition_for_fileStorageContainer"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+DELETE https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+
 ```
 
----
 
 ### Response
 
 The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

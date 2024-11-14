@@ -596,7 +596,8 @@
         "bundle",
         "permission",
         "fileStorageContainer",
-        "sharedDriveItem"
+        "sharedDriveItem",
+        "recycleBinItem"
       ]
     },
     {
