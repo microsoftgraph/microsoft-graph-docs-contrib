@@ -36,17 +36,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/appInfo
 ```
 
-## Function parameters
-
-The following table lists the parameters that are required when you call this function.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|period|Duration|Provide the time frame in which you want to query the data. Supported time frames are the last 7, 30, or 90 days.|
+> **Note:** The **period** parameter is of type Duration and specifies the time frame for querying the data. The supported time frames are the last 7, 30, or 90 days.
 
 ## Optional query parameters
 
-This method supports `$select` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
