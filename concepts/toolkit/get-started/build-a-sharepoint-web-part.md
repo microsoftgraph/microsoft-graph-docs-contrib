@@ -370,11 +370,11 @@ build.configureWebpack.mergeConfig({
 });
 ```
 
-This ensures that the code from the `lit` library is correctly processed by the SharePoint Framework build chain. This is required for Sharepoint provider `<=v1.18`.
+This ensures that the code from the `lit` library is correctly processed by the SharePoint Framework build chain. This is required for SharePoint Framework versions `<=v1.18`.
 
 #### Webpack version 5+
 
-There is no additional configuration when you're using version 5+ of webpack. This is supported with the Sharepoint provider `v1.19+`.
+No additional configuration is required when you use version 5+ of webpack. This is supported with the SharePoint Framework version `v1.19+`.
 
 ## Build and deploy your web part
 
