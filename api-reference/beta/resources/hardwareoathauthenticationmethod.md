@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes the hardware OATH method on the user object.
+Exposes the hardware OATH method on the user object. The method must first be defined by the [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) policy for it to be managed on the user object.
 
 Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 
@@ -25,10 +25,10 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |[Create](../api/authentication-post-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Create a new [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
 |[Get](../api/hardwareoathauthenticationmethod-get.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Read the properties and relationships of a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
 |[Delete](../api/authentication-delete-hardwareoathmethods.md)|None|Delete a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.|
-|[activate](../api/hardwareoathauthenticationmethod-activate.md)|None|Activate a hardware OATH token that is already assigned to a user.|
-|[deactivate](../api/hardwareoathauthenticationmethod-deactivate.md)|None|Deactive a hardware OATH token. It remains assigned to a user.|
-|[assignAndActivate](../api/hardwareoathauthenticationmethod-assignandactivate.md)|None|This allows assigning a hardware token and activating it at the same time.|
-|[assignAndActivateBySerialNumber](../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md)|None|This allows assigning a hardware token and activating it at the same time by hardware token serial number.|
+|[Activate](../api/hardwareoathauthenticationmethod-activate.md)|None|Activate a hardware OATH token that is already assigned to a user.|
+|[Deactivate](../api/hardwareoathauthenticationmethod-deactivate.md)|None|Deactive a hardware OATH token. It remains assigned to the user.|
+|[Assign and activate](../api/hardwareoathauthenticationmethod-assignandactivate.md)|None|Assign and activate a hardware token at the same time.|
+|[Assign and activate by serial number](../api/hardwareoathauthenticationmethod-assignandactivatebyserialnumber.md)|None|Assign and activate a hardware token at the same time by hardware token serial number.|
 
 ## Properties
 |Property|Type|Description|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes hardware OATH devices in the directory.
+Exposes hardware OATH devices in the directory. For more information, see [Hardware OATH tokens](/entra/identity/authentication/concept-authentication-oath-tokens#oath-hardware-tokens-preview].
 
 Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevice.md).
 
@@ -28,7 +28,7 @@ Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[identity](../resources/identity.md)|User the token is assigned to.|
+|assignedTo|[identity](../resources/identity.md)|User the token is assigned to. Nullable.|
 |displayName|String|Name that can be provided to the hardware OATH token.  Inherited from [authenticationMethodDevice](../resources/authenticationmethoddevice.md).|
 |hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`.|
 |id|String|Unique identifier of the hardware OATH token. Inherited from [entity](../resources/entity.md).|
