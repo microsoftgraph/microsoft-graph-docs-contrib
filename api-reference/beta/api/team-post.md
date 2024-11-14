@@ -265,7 +265,7 @@ A few things to note about this call:
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
-* Specifying a first channel name with the **firstChannelName** parameter isn't supported when creating a team from a group.
+* Specifying a first channel name with the **firstChannelName** property isn't supported when you create a team from a group.
 
 #### Request
 
@@ -683,7 +683,7 @@ The following example shows how to create a team for imported messages.
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only supports the `standard` template.
->**Note:** This call doesn't support the **firstChannelName** parameter.
+>**Note:** This call doesn't support the **firstChannelName** property.
 
 # [HTTP](#tab/http)
 <!-- {
