@@ -15,6 +15,11 @@ A listener for what to invoke when an authentication flow is ready to be initiat
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
+## Methods
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

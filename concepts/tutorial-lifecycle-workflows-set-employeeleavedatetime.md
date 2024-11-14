@@ -30,14 +30,16 @@ For delegated scenarios, the admin must also have the Global Administrator [Micr
 > [!NOTE]
 > This information is best updated via automation by using either an HR provisioning, Microsoft Entra Connect, or custom sync solution. For more information about this process, see [How to synchronize attributes for lifecycle workflows](/entra/id-governance/how-to-lifecycle-workflow-sync-attributes).
 
-## Request
+## Set the employeeLeaveDateTime property
+
+### Request
 
 The following example configures September 30, 2022 at 23:59 as the date and time when the user will leave the organization.
 
 # [HTTP](#tab/http)
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e929
+PATCH https://graph.microsoft.com/v1.0/users/aaaaaaaa-bbbb-cccc-1111-222222222222
 
 {
     "employeeLeaveDateTime": "2022-09-30T23:59:59Z"
@@ -60,6 +62,18 @@ PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e92
 ```
 
 ---
+
+## Reset the employeeLeveDateTime property back to null
+
+The request returns a `204 No Content` response code.
+
+```http
+PATCH https://graph.microsoft.com/v1.0/users/aaaaaaaa-bbbb-cccc-1111-222222222222
+
+{
+    "employeeLeaveDateTime": null
+}
+```
 
 ## Related content
 

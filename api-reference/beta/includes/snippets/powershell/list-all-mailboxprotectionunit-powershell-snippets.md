@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.BackupRestore
 
-Get-MgBetaSolutionBackupRestoreMailboxProtectionUnit
+Get-MgBetaSolutionBackupRestoreProtectionUnit -ProtectionUnitBaseId $protectionUnitBaseId
 
 ```

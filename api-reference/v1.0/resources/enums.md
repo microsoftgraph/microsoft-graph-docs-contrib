@@ -44,6 +44,13 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
+### siteLockState values
+
+| Member         |
+| --------------- |
+| unlocked      |
+| lockedReadOnly |
+
 ### binaryOperator values
 
 | Member |
@@ -97,6 +104,14 @@ Namespace: microsoft.graph
 | ready |
 | needsReview |
 | additionalStepsRequired |
+| unknownFutureValue |
+
+### appManagementRestrictionState values
+
+| Member |
+| ---- |
+| enabled |
+| disabled |
 | unknownFutureValue |
 
 ### appCredentialRestrictionType values
