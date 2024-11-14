@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudAppDiscoveryReport",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudAppDiscoveryReport](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudAppDiscoveryReport?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudAppDiscoveryReport](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudAppDiscoveryReport?view=graph-rest-beta) resource and an associated method.",
           "Target": "cloudAppDiscoveryReport"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "discoveredCloudAppDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [discoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [discoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppDetail?view=graph-rest-beta) resource and associated methods.",
           "Target": "discoveredCloudAppDetail"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "discoveredCloudAppInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [discoveredCloudAppInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [discoveredCloudAppInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-discoveredCloudAppInfo?view=graph-rest-beta) resource and an associated method.",
           "Target": "discoveredCloudAppInfo"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "endpointDiscoveredCloudAppDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [endpointDiscoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-endpointDiscoveredCloudAppDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [endpointDiscoveredCloudAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-endpointDiscoveredCloudAppDetail?view=graph-rest-beta) resource and associated methods.",
           "Target": "endpointDiscoveredCloudAppDetail"
         },
         {
