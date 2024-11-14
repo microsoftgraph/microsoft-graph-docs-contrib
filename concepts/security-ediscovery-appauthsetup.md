@@ -74,21 +74,21 @@ Import-Module ExchangeOnlineManagement
 Connect-IPPSSession
 ```
 
-Use [New-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+Use [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
 
 ```powershell
 New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
 Get-ServicePrincipal
 ```
 
-Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/get-rolegroupmember) cmdlet.
+Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
 ```powershell
 Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "{OBJECT_ID}"
 Get-RoleGroupMember -Identity "eDiscoveryManager"
 ```
 
-Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
+Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 ```powershell
 Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
@@ -99,11 +99,11 @@ Get-eDiscoveryCaseAdmin
 
 ### Step 5: Connect to Microsoft Graph API using app-only access
 
-Use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
+Use the [Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
 
 ### Step 6: Invoke Microsoft Graph API Requests
 
-Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
+Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgGraphRequest](/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
 
 ## Related content
 
