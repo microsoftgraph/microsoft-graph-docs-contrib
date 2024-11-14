@@ -37,7 +37,7 @@ GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microso
 ```
 
 > [!NOTE]
-> **period** is a required parameter of type Duration that specifies the time frame for querying the data. Supported time frames include the last 7, 30, or 90 days.
+> `period` is a required parameter of type Duration that specifies the time frame for querying the data. Supported time frames include the last 7, 30, or 90 days.
 
 ## Optional query parameters
 
