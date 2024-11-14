@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) objects and their properties.
+Get a list of the [hardware tokens](../resources/hardwareoathauthenticationmethod.md) assigned to a [user](../resources/user.md).
 
 ## Permissions
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to retrieve the hardware tokens for the signed-in user.
 <!-- {
   "blockType": "request",
   "name": "list_hardwareoathauthenticationmethod"

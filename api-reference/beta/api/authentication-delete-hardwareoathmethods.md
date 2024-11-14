@@ -1,6 +1,6 @@
 ---
 title: "Delete hardwareOathAuthenticationMethod"
-description: "Remove the user assignment. The token will remain in the directory."
+description: "Unassign a hardware token from a user. The token remains in the directory."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.
+Unassign a [hardware token](../resources/hardwareoathauthenticationmethod.md) from a user. The token remains in the directory and its details can be retrieved by [List hardwareOathDevices](authenticationmethoddevice-list-hardwareoathdevices.md) API.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{h
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
