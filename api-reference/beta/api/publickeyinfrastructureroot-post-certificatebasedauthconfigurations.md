@@ -34,10 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-{
-  "displayName": "Contoso PKI"
-}
-
 ``` http
 POST /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```

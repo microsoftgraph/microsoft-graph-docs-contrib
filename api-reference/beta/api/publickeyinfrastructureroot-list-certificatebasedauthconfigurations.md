@@ -41,7 +41,7 @@ GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 
 ## Optional query parameters
 
-This method supports `$filter` (`eq`, `startswith`), `$top`, `$orderby`, and `$count` OData query parameters to help customize the response. For `$top`, the default page size is 100 and max is 999. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`, `startswith`), `$top`, `$orderby`, and `$count` OData query parameters to help customize the response. For `$top`, the default page size is 100 and max is 999. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

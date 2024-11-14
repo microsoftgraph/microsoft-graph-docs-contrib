@@ -27,6 +27,10 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[Get](../api/certificateauthoritydetail-get.md)|[certificateAuthorityDetail](../resources/certificateauthoritydetail.md)|Read the properties and relationships of a [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object.|
 |[Update](../api/certificateauthoritydetail-update.md)|[certificateAuthorityDetail](../resources/certificateauthoritydetail.md)|Update the properties of a [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object.|
 |[Delete](../api/certificatebasedauthpki-delete-certificateauthorities.md)|None|Delete a [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object.|
+| [List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) objects deleted in the tenant in the last 30 days. |
+| [Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object by ID. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object deleted in the tenant in the last 30 days. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object from the tenant. |
 
 ## Properties
 |Property|Type|Description|

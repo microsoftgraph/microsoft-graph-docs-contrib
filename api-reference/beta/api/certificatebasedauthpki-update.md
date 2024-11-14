@@ -53,7 +53,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the certificateBasedAuthPki object. Optional.|
+|displayName|String|The name of the certificateBasedAuthPki object. |
 
 
 ## Response

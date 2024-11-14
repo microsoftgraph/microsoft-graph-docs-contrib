@@ -1,6 +1,6 @@
 ---
 title: "List deletedItems (directory objects)"
-ms.date: 11/13/2024
+ms.date: 11/14/2024
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -14,7 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [user](../resources/user.md), [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) and [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) resources.
+Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
+- [administrativeUnit](../resources/administrativeunit.md)
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 

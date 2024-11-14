@@ -50,20 +50,19 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. Optional.|
-|certificate|Binary|The type of certificate authority. Possible values are: `root`, `intermediate`. Required.|
-|displayName|String|The name of the certificate authority. Optional.|
-|issuer|String|The issuer of the certificate authority. Optional.|
-|issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. Optional.|
-|createdDateTime|DateTimeOffset|The date and time when the certificate authority was created. Optional.|
+|certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. |
+|certificate|Binary|The type of certificate authority. Possible values are: `root`, `intermediate`.|
+|displayName|String|The name of the certificate authority. |
+|issuer|String|The issuer of the certificate authority. |
+|issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. |
+|createdDateTime|DateTimeOffset|The date and time when the certificate authority was created. |
 |expirationDateTime|DateTimeOffset|The date and time when the certificate authority expires. Required.|
 |thumbprint|String|The thumbprint of certificate authority certificate. Required.|
-|certificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
-|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. Optional.|
-|isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. Optional.|
+|certificateRevocationListUrl|String|The URL to check if the certificate is revoked. |
+|deltacertificateRevocationListUrl|String|The URL to check if the certificate is revoked. |
+|isIssuerHintEnabled|Boolean|Indicates whether the certificate picker presents the certificate authority to the user to use for authentication. Default value is `false`. |
 
 
 

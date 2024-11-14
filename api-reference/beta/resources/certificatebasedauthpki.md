@@ -28,6 +28,10 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[Update](../api/certificatebasedauthpki-update.md)|[certificateBasedAuthPki](../resources/certificatebasedauthpki.md)|Update the properties of a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.|
 |[Delete](../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md)|None|Delete a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object.|
 |[Upload](../api/certificatebasedauthpki-upload.md)|None|Download the PKI file and populate the certificateAuthorities.|
+| [List deleted items](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) objects deleted in the tenant in the last 30 days. |
+| [Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object by ID. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Restore a [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object deleted in the tenant in the last 30 days. |
+| [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) object from the tenant. |
 
 ## Properties
 |Property|Type|Description|
