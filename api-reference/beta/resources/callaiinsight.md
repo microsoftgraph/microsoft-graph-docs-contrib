@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |endDateTime|DateTimeOffset|Date and time at which the corresponding transcription ends. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier for the callAiInsight entity. Read-only. Inherited from [entity](../resources/entity.md).|
 |meetingNotes|[meetingNote](../resources/meetingnote.md) collection|The collection of AI-generated meeting notes. Read-only.|
-|viewpoint|[callAiInsightViewPoint](../resources/callaiinsightviewpoint.md)|Represents the caller-specific properties of the callAiInsight entity. Read-only.|
+|viewpoint|[callAiInsightViewPoint](../resources/callaiinsightviewpoint.md)|The caller-specific properties of the callAiInsight entity. Read-only.|
 
 ## Relationships
 None.

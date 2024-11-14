@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [callAiInsight
 
 ## Examples
 
-### Example 1: Get a callAiInsight
+### Example 1: Get a call AI insight
 
 The following example shows how to get a single set of AI insights for an online meeting.
 
@@ -176,7 +176,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a callAiInsight from a corresponding transcript using contentCorrelationId
+### Example 2: Get a call AI insight from a corresponding transcript using contentCorrelationId
 
 The following example shows how to get a single set of AI insights of an online meeting corresponding to a [transcript](../resources/calltranscript.md) using the **contentCorrelationId** property.
 
