@@ -1,6 +1,6 @@
 ---
 title: "List hardwareOathDevices"
-description: "List all hardware OATH tokens in the inventory."
+description: "List all hardware OATH tokens in the directory."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all hardware OATH tokens in the inventory.
+List all hardware OATH tokens in the directory.
 
 ## Permissions
 

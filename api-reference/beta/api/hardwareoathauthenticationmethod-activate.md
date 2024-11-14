@@ -1,6 +1,6 @@
 ---
 title: "hardwareOathAuthenticationMethod: activate"
-description: "Activate a hardware OATH token that is already assigned to a user."
+description: "Activate a hardware OATH token that is already assigned to a user. A user can self-activate their token or an admin can activate for a user."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a hardware OATH token that is already assigned to a user.
+Activate a [hardware OATH token](../resources/hardwareoathauthenticationmethod.md) that is already assigned to a user. A user can self-activate their token or an admin can activate for a user.
 
 ## Permissions
 
