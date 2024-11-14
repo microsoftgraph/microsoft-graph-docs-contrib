@@ -2,6 +2,7 @@
 title: "fileStorageContainer: archive"
 description: "Archive an active fileStorageContainer."
 author: "guptasandeep"
+ms.date: 11/15/2024
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
@@ -21,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ```http
-POST /storageContainers/{containerId}/archive
+POST /storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/archive
 ```
 
 ## Request headers
@@ -50,7 +51,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/storageContainers/{containerId}/archive
+POST https://graph.microsoft.com/beta/storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/archive
 ```
 
 ### Response
