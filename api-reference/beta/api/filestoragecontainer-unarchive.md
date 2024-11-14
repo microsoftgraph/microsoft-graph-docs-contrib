@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ```http
-POST /storageContainers/{containerId}/unarchive
+POST /storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/unarchive
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/storageContainers/{containerId}/unarchive
+POST https://graph.microsoft.com/beta/storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/unarchive
 ```
 
 ### Response
@@ -64,5 +64,5 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/storageContainers/{containerId}/unarchive
+Location: https://graph.microsoft.com/beta/storageContainers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0
 ```
