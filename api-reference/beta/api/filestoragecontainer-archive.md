@@ -2,6 +2,7 @@
 title: "fileStorageContainer: archive"
 description: "Archive an active fileStorageContainer."
 author: "guptasandeep"
+ms.date: 11/15/2024
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
