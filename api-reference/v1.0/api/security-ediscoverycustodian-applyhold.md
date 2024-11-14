@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # ediscoveryCustodian: applyHold
 Namespace: microsoft.graph.security
 
-Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can get the status by retrieving the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) using [Get ediscoveryCustodian](security-ediscoverycustodian-get.md).
+Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can use [Get ediscoveryCustodian](security-ediscoverycustodian-get.md) to retrieve the hold status of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
