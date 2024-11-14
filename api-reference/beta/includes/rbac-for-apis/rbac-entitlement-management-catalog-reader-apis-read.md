@@ -10,7 +10,10 @@ ms.topic: include
 > [!TIP]
 > In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through one of the following options:
 > 
-> - A [role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged role is *Catalog reader*. **This is the least privileged option**.
+> - A [role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged roles are:
+>     - *Catalog reader*. **This is the least privileged option**
+>     - *Catalog creator*
+>     - *Access package manager*
 > - More privileged [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) supported for this operation:
 >     - Security Reader
 >     - Global Reader
