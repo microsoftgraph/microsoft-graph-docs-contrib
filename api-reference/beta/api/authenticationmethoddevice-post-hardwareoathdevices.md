@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new hardwareOathTokenAuthenticationMethodDevice object.
+Create a new hardwareOathTokenAuthenticationMethodDevice object. You can optionally create and assign to a user in the same request. Optionally, you can assign to a user by using the [assign](authentication-post-hardwareoathmethods.md) API.
 
 ## Permissions
 

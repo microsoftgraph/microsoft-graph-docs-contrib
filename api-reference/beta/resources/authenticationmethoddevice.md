@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|hardwareOathDevices|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) collection|**TODO: Add Description**|
+|hardwareOathDevices|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) collection|Exposes the hardware OATH method in the directory.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

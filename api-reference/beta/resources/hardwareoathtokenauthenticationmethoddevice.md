@@ -24,6 +24,10 @@ Inherits from [authenticationMethodDevice](../resources/authenticationmethoddevi
 |[Get](../api/hardwareoathtokenauthenticationmethoddevice-get.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Read the properties and relationships of a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object.|
 |[Update](../api/hardwareoathtokenauthenticationmethoddevice-update.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Update the properties of a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object.|
 |[Add user](../api/hardwareoathtokenauthenticationmethoddevice-post-assignto.md)|[user](../resources/user.md)|Add assignTo by posting to the assignTo collection.|
+|[Update](../api/authenticationmethoddevice-update.md)|[authenticationMethodDevice](../resources/authenticationmethoddevice.md)|Update the properties of an [authenticationMethodDevice](../resources/authenticationmethoddevice.md) object.|
+|[Delete](../api/directory-delete-authenticationmethoddevices.md)|None|Delete an [authenticationMethodDevice](../resources/authenticationmethoddevice.md) object. Token needs to be unassigned first.|
+|[List hardwareOathDevices](../api/authenticationmethoddevice-list-hardwareoathdevices.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) collection|List all hardware OATH tokens in the inventory.|
+|[Create hardwareOathTokenAuthenticationMethodDevice](../api/authenticationmethoddevice-post-hardwareoathdevices.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Create a new hardwareOathTokenAuthenticationMethodDevice object.|
 
 ## Properties
 |Property|Type|Description|

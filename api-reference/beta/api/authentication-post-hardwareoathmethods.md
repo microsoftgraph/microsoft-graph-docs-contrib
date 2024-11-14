@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.
+Assign a [hardware token](../resources/hardwareoathauthenticationmethod.md) to a user without activation. To activate, use the [activation](hardwareoathauthenticationmethod-activate.md) API operation.
 
 ## Permissions
 

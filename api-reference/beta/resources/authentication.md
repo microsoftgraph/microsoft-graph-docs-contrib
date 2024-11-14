@@ -27,8 +27,6 @@ Inherits from [entity](entity.md).
 |:---|:---|:---|
 |[Get](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication states for a user, such as their sign-in preferences and their MFA state.|
 |[Update](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication states for a user, such as their sign-in preferences and their MFA state.|
-|[List hardwareOathMethods](../api/authentication-list-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|List all hardware tokens assigned to a user|
-|[Create hardwareOathAuthenticationMethod](../api/authentication-post-hardwareoathmethods.md)|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md)|Assign a hardware token to a user without activation.|
 
 ## Properties
 
