@@ -66,7 +66,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |description|string| An optional description for the team. Maximum length: 1,024 characters. |
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
 |displayName|string| The name of the team. |
-|firstChannelName|String|TODO|
+|firstChannelName|String| The name of the first channel. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure the use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |id| string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
