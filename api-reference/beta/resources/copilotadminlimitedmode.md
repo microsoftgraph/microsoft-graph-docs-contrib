@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting that controls whether Microsoft 365 Copilot in Teams Meetings users can receive responses to sentiment-related prompts. If this setting is enabled, Copilot doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Copilot responds to sentiment-related prompts and questions asked by the user. Copilot in Microsoft Teams currently honors this setting. By default, the setting is disabled.
+Represents a setting that controls whether Microsoft 365 Copilot in Teams Meetings users can receive responses to sentiment-related prompts. If this setting is enabled, Copilot in Teams Meetings doesn't respond to sentiment-related prompts and questions asked by the user. If the setting is disabled, Copilot in Teams Meetings responds to sentiment-related prompts and questions asked by the user. Copilot in Teams Meetings currently honors this setting. By default, the setting is disabled.
 
 Inherits from [entity](../resources/entity.md).
 
