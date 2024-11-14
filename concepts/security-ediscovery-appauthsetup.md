@@ -1,15 +1,16 @@
 ---
 title: "Setting up app-only access for eDiscovery Microsoft Graph APIs"
-description: "Steps to set up app-only access for eDiscovery Microsoft Graph APIs"
+description: "Steps to set up app-only access for eDiscovery Microsoft Graph APIs."
 author: "pamehra"
 ms.localizationpriority: high
 ms.subservice: "security"
 ms.custom: scenarios:getting-started
+ms.date: 11/14/2024
 ---
 
 # Setting up app-only access for Purview eDiscovery with Microsoft Graph API
 
-The Microsoft Purview Micosoft Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
+The Microsoft Purview Microsoft Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
 
 Implementing app-only access using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up app-only access for Purview eDiscovery, ensuring your applications are compliant and secure.
 
@@ -59,7 +60,7 @@ You need to set the correct API permissions for your application. Under **API pe
 
 ### Step 4: Set up a service principal
 
-4.1 In the **Microsoft Entra ID** blade in the Azure portal, select **Enterprise Applications** and search your application by name to get the Object ID for your application.
+4.1 In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the Object ID for your application.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
@@ -98,7 +99,7 @@ Get-eDiscoveryCaseAdmin
 
 ### Step 5: Connect to Microsoft Graph API using app-only access
 
-Use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Microsoft Graph using the app-only access method in powershell. This setup enables your app to interact with Microsoft Graph securely.
+Use the [Connect-MgGraph](https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
 
 ### Step 6: Invoke Microsoft Graph API Requests
 
