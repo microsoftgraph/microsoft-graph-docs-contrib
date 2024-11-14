@@ -1,7 +1,8 @@
 ---
-author: "vanshisingh"
+author: "guptasandeep"
 description: "Represents the archival details of a siteCollection."
 title: "siteArchivalDetails resource type"
+ms.date: 11/15/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
@@ -15,7 +16,7 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-|archivedBy|[identitySet](../resources/intune-identityset.md)| User/Application who archived the container. |
+|archivedBy|[identitySet](../resources/identityset.md)| User/Application who archived the container. |
 |archivedDateTime|DateTimeOffset| Time when the container was archived. |
 | archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
 
