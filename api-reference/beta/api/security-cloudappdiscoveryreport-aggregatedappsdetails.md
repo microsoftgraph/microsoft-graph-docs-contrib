@@ -42,7 +42,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|Duration|Provide the time frame in which you want to query the data. Supported time frames are the last 7, 30, or 90 days. Required.|
+|period|Duration|Provide the time frame in which you want to query the data. Supported time frames are the last 7, 30, or 90 days.|
 
 ## Optional query parameters
 
