@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies settings for an application that implements a web API.
+Specifies settings for an [application](application.md) that implements a web API.
 
 ## Properties
 
