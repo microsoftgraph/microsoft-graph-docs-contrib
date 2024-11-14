@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deactive a hardware OATH token. It remains assigned to a user.
+Deactive a [hardware OATH token](../resources/hardwareoathauthenticationmethod.md). It remains assigned to a user.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{har
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "hardwareOathAuthenticationMethod: assignAndActivate"
-description: "This allows assigning a hardware token and activating it at the same time."
+description: "Assign and activate a hardware token at the same time."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This allows assigning a hardware token and activating it at the same time.
+Assign and activate a [hardware token](../resources/hardwareoathtokenauthenticationmethoddevice.md) at the same time. This operation requires the device ID to activate it.
 
 ## Permissions
 

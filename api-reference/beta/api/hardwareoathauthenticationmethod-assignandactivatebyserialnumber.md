@@ -1,6 +1,6 @@
 ---
 title: "hardwareOathAuthenticationMethod: assignAndActivateBySerialNumber"
-description: "This allows assigning a hardware token and activating it at the same time by hardware token serial number."
+description: "Assign and activate a hardware token at the same time by hardware token serial number."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This allows assigning a hardware token and activating it at the same time by hardware token serial number.
+Assign and activate a [hardware token](../resources/hardwareoathauthenticationmethod.md) at the same time by hardware token serial number.
 
 ## Permissions
 
@@ -87,7 +87,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

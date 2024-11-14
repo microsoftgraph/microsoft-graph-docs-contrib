@@ -1,6 +1,6 @@
 ---
 title: "Get hardwareOathAuthenticationMethod"
-description: "Read the properties and relationships of a hardwareOathAuthenticationMethod object."
+description: "Get the details of the hardware token assigned to a user."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) object.
+Get the details of the [hardware token](../resources/hardwareoathauthenticationmethod.md) assigned to a user.
 
 ## Permissions
 
