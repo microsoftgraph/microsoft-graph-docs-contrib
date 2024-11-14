@@ -68,7 +68,6 @@ You need to set the correct API permissions for your application. Under **API pe
 Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following commands. The Install-Module command recommends upgrading the package if the module is already installed.
 
 ```powershell
-#!/bin/powershell
 Install-Module ExchangeOnlineManagement
 Import-Module ExchangeOnlineManagement
 Connect-IPPSSession
@@ -77,7 +76,6 @@ Connect-IPPSSession
 Use [New-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](https://learn.microsoft.com/powershell/module/exchange/get-serviceprincipal) cmdlet.  
 
 ```powershell
-#!/bin/powershell
 New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
 Get-ServicePrincipal
 ```
@@ -85,7 +83,6 @@ Get-ServicePrincipal
 Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](https://learn.microsoft.com/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
 ```powershell
-#!/bin/powershell
 Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "{OBJECT_ID}"
 Get-RoleGroupMember -Identity "eDiscoveryManager"
 ```
@@ -93,7 +90,6 @@ Get-RoleGroupMember -Identity "eDiscoveryManager"
 Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](https://learn.microsoft.com/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 ```powershell
-#!/bin/powershell
 Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
 Get-eDiscoveryCaseAdmin
 ```
@@ -111,4 +107,5 @@ Once connected, you can start making calls to the Microsoft Graph API using [Inv
 ## Related content
 
 Explore [Microsoft Graph tutorials](https://learn.microsoft.com/graph/tutorials) to create basic applications that [access data in app-only](https://learn.microsoft.com/graph/auth-v2-service) scenarios.
+
 For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
