@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-datadiscoveryreport-list-uploadedstreams-permissions"
+  "name": "security_datadiscoveryreport_list_uploadedstreams"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-datadiscoveryreport-list-uploadedstreams-permissions.md)]
