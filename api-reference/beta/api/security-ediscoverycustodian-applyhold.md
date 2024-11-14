@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can use [Get ediscoveryCustodian](security-ediscoverycustodian-get.md) to retrieve the hold status of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
+Start the process of applying hold on [eDiscovery custodians](../resources/security-ediscoverycustodian.md). After the operation is created, you can use [Get ediscoveryCustodian](security-ediscoverycustodian-get.md) to retrieve the status of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
