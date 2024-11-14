@@ -15,7 +15,12 @@ Represents the archival details of a [siteCollection](../resources/sitecollectio
 
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
+|archivedBy|[identitySet](../resources/intune-identityset.md)| User/Application who archived the container. |
+|archivedDateTime|DateTimeOffset| Time when the container was archived. |
 | archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
+
+## Relationships
+None.
 
 ## siteArchiveStatus values
 
@@ -36,12 +41,11 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "archiveStatus": "fullyArchived"
+  "@odata.type": "#microsoft.graph.siteArchivalDetails",
+  "archiveStatus": "String",
+  "archivedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "archivedDateTime": "String (timestamp)"
 }
 ```
-
-<!-- {
-"type": "#page.annotation",
-"createdBy": "API Clinic",
-"section": "documentation"
-}-->
