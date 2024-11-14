@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |downloadNetworkTrafficInBytes|Int64|The download traffic size.|
 |id|String|The SaaSDB ID of the app. Inherited from [entity](../resources/entity.md).|
 |ipAddressCount|Int64|The IP address.|
-|lastSeenDateTime|DateTimeOffset|The last seen date of the discovered app.|
+|lastSeenDateTime|DateTimeOffset|The last seen date of the discovered app. The Timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskScore|Int64|The risk score of the app.|
 |tags|String collection|The tags applied to an app. Possible values include `Unsanctioned`, `Sanctioned`, `Monitored`, or a custom value.|
 |transactionCount|Int64|The app transaction count.|
