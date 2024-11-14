@@ -107,6 +107,6 @@ Once connected, you can start making calls to the Microsoft Graph API using [Inv
 
 ## Related content
 
-Explore [Microsoft Graph tutorials](https://learn.microsoft.com/graph/tutorials) to create basic applications that [access data in app-only](https://learn.microsoft.com/graph/auth-v2-service) scenarios.
+Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that [access data in app-only](/graph/auth-v2-service) scenarios.
 
-For API testing on Postman, see [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/graph/use-postman).
+For API testing on Postman, see [Use Postman with the Microsoft Graph API](/graph/use-postman).
