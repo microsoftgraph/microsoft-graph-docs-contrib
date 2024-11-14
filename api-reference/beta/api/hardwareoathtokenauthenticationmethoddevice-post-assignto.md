@@ -1,19 +1,19 @@
 ---
-title: "Add user"
-description: "Add assignTo by putting to the assignTo collection."
+title: "Assign user a hardware OATH token"
+description: "Assign a hardware OATH token to a user"
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Add user
+# Assign user a hardware OATH token
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add assignTo by posting to the assignTo collection.
+Assign a hardware OATH token, represented by a [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)object, to a user.
 
 ## Permissions
 
