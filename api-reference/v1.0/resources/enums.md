@@ -44,13 +44,6 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
-### siteLockState values
-
-| Member         |
-| --------------- |
-| unlocked      |
-| lockedReadOnly |
-
 ### binaryOperator values
 
 | Member |
