@@ -280,41 +280,45 @@ items:
     items:
     - name: eDiscovery case
       href: ../../resources/security-ediscoverycase.md
-    - name: List ediscoveryCases
+    - name: List
       href: ../../api/security-casesroot-list-ediscoverycases.md
-    - name: Create ediscoveryCase
+    - name: Create
       href: ../../api/security-casesroot-post-ediscoverycases.md
-    - name: Get ediscoveryCase
+    - name: Get
       href: ../../api/security-ediscoverycase-get.md
-    - name: Update ediscoveryCase
+    - name: Update
       href: ../../api/security-ediscoverycase-update.md
-    - name: Delete ediscoveryCase
+    - name: Delete
       href: ../../api/security-casesroot-delete-ediscoverycases.md
+    - name: Close
+      href: ../../api/security-ediscoverycase-close.md
+    - name: Reopen
+      href: ../../api/security-ediscoverycase-reopen.md
     - name: List custodians
       href: ../../api/security-ediscoverycase-list-custodians.md
-    - name: Create ediscoveryCustodian
+    - name: Create custodian
       href: ../../api/security-ediscoverycase-post-custodians.md
-    - name: List legalHolds
+    - name: List legal holds
       href: ../../api/security-ediscoverycase-list-legalholds.md
-    - name: Create ediscoveryHoldPolicy
+    - name: Create hold policy
       href: ../../api/security-ediscoverycase-post-legalholds.md
-    - name: List noncustodialDataSources
+    - name: List noncustodial data sources
       href: ../../api/security-ediscoverysearch-list-noncustodialsources.md
-    - name: Create ediscoveryNoncustodialDataSource
+    - name: Create noncustodial data source
       href: ../../api/security-ediscoverycase-post-noncustodialdatasources.md
     - name: List operations
       href: ../../api/security-ediscoverycase-list-operations.md
-    - name: List reviewSets
+    - name: List review sets
       href: ../../api/security-ediscoverycase-list-reviewsets.md
-    - name: Create ediscoveryReviewSet
+    - name: Create review set
       href: ../../api/security-ediscoverycase-post-reviewsets.md
     - name: List searches
       href: ../../api/security-ediscoverycase-list-searches.md
-    - name: Create ediscoverySearch
+    - name: Create search
       href: ../../api/security-ediscoverycase-post-searches.md
     - name: List tags
       href: ../../api/security-ediscoverycase-list-tags.md
-    - name: Create ediscoveryReviewTag
+    - name: Create review tag
       href: ../../api/security-ediscoverycase-post-tags.md
   - name: eDiscovery case settings
     items:
