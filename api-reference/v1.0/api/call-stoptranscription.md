@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+Stop the transcription of a call.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -36,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| language        | String  | Language of the transcription. Currently supporting: `en-us`                          |
+| language        | String  | Language of the transcription. Currently supporting: `en-us`.                         |
 
 ## Response
 This method returns a `202 Accepted` response code and a [stopTranscriptionOperation](../resources/stoptranscriptionoperation.md) object created for this request.
@@ -47,8 +49,6 @@ The following example shows how to call this API.
 ### Request
 The following example shows the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-stopTranscription"
@@ -65,6 +65,7 @@ Content-Length: 56
 ---
 
 ### Response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

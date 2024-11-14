@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+Stop the recording of a call.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -43,8 +45,6 @@ The following example shows how to call this API.
 ### Request
 The following example shows the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-stopRecording"
@@ -56,6 +56,7 @@ POST https://graph.microsoft.com/v1.0/communications/calls/{id}/microsoft.graph.
 ---
 
 ### Response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

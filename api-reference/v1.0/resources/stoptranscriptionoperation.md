@@ -1,5 +1,5 @@
 --- 
-title: "StopTranscriptionOperation resource type"
+title: "stopTranscriptionOperation resource type"
 description: "Describes the response format of a stop transcription operation."
 author: "calvintang"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# StopTranscriptionOperation resource type
+# stopTranscriptionOperation resource type
 
 Namespace: microsoft.graph
 
@@ -17,7 +17,7 @@ Describes the response format of a call stop transcription operation.
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Unique client context string. Can have a maximum of 256 characters.                                                                               |
+| clientContext                  | String                      | Unique client context string. It can have a maximum of 256 characters.                                                                               |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
