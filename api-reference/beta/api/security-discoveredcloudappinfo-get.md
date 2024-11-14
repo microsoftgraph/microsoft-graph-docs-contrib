@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-discoveredcloudappinfo-get-permissions"
+  "name": "security_discoveredcloudappinfo_get"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-discoveredcloudappinfo-get-permissions.md)]
