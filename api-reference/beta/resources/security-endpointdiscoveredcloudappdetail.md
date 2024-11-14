@@ -35,7 +35,7 @@ For more API operations about discovered cloud app details, see [discoveredCloud
 |downloadNetworkTrafficInBytes|Int64|The amount of download traffic from the app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |id|String|The ID of the discovered app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |ipAddressCount|Int64|The count of IP addresses that accessed the discovered app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
-|lastSeenDateTime|DateTimeOffset|The date and time when the app was last seen. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
+|lastSeenDateTime|DateTimeOffset|The date and time when the app was last seen. The Timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |riskScore|Int64|The risk score of the discovered app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |tags|String collection|A list of tags applied to a discovered app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
 |transactionCount|Int64|The total transanctions on the discovered app. Inherited from [discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md). |
