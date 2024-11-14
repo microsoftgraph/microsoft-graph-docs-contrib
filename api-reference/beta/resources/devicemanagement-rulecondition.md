@@ -21,7 +21,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationshipType|[microsoft.graph.deviceManagement.relationshipType](#relationshiptype-values)| The relationship type. Possible values are: `and`, `or`.|
+|relationshipType|[microsoft.graph.deviceManagement.relationshipType](#relationshiptype-values)| The relationship type.  Possible values are: `and`, `or`.|
 |conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditioncategory-values)|The property that the rule condition monitors. Possible values are:  `provisionFailures`, `imageUploadFailures`, `azureNetworkConnectionCheckFailures`, `cloudPcInGracePeriod`, `frontlineInsufficientLicenses`, `cloudPcConnectionErrors`, `cloudPcHostHealthCheckFailures`, `cloudPcZoneOutage`, `unknownFutureValue`.|
 |aggregation|[microsoft.graph.deviceManagement.aggregationType](#aggregationtype-values)|The built-in aggregation method for the rule condition. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |operator|[microsoft.graph.deviceManagement.operatorType](#operatortype-values)|The built-in operator for the rule condition. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
@@ -46,9 +46,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |cloudPcConnectionErrors| The rule condition targets Cloud PC connection errors.|
 |cloudPcHostHealthCheckFailures| The rule condition targets Cloud PC host health check failures.|
 |cloudPcZoneOutage| The rule condition targets Cloud PC zone outage.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
-|frontlineBufferUsageDuration| The alert rule condition targets Frontline buffer usage exceeds time duration.|
-|frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting frequency.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ### aggregationType values
 
@@ -58,8 +56,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |percentage|The percentage of the items that match the rule conditions.|
 |affectedCloudPcCount|The total number of Cloud PCs that meet the rule conditions.|
 |affectedCloudPcPercentage|The percentage of Cloud PCs that meet the rule conditions.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|durationInMinute| The time range during which Cloud PCs that meet the alert rule conditions are affected.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### operatorType values
 
@@ -71,7 +68,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |less|The operator is less than the threshold target.|
 |lessOrEqual|The operator is less than or equal to the threshold target.|
 |notEqual|The operator isn't equal to the threshold target.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
