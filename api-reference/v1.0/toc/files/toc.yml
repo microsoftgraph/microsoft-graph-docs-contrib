@@ -144,10 +144,6 @@ items:
     href: ../../api/filestorage-delete-containers.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
-  - name: Restore deleted container
-    href: ../../api/filestoragecontainer-restore.md
-  - name: Remove deleted containers
-    href: ../../api/filestorage-delete-deletedcontainers.md
   - name: Permanently delete
     href: ../../api/filestoragecontainer-permanentdelete.md
   - name: Get drive
