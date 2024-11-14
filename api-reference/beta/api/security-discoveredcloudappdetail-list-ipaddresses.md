@@ -36,7 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/dataDiscovery/cloudAppDiscovery/uploadedStreams/{streamId}/microsoft.graph.security.aggregatedAppsDetails(period=duration'{duration}')/{appId}/ipAddresses
 ```
 
-> **Note:** The **period** parameter is of type Duration and specifies the time frame for querying the data. The supported time frames are the last 7, 30, or 90 days.
+> [!NOTE]
+> **period** is a required parameter of type Duration that specifies the time frame for querying the data. Supported time frames include the last 7, 30, or 90 days.
 
 ## Optional query parameters
 
