@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the user synchronization policy of a partner-specific configuration.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

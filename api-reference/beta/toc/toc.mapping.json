@@ -1008,7 +1008,8 @@
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
-            "organizationSettings"
+            "organizationSettings",
+            "uxSetting"
           ],
           "childNodes": [
             {
@@ -1072,13 +1073,6 @@
                     "unifiedRbacResourceAction"
                   ]
                 }
-              ]
-            },
-            {
-              "name": "Trusted certificate authorities for apps (preview)",
-              "resources": [
-                "certificateBasedApplicationConfiguration",
-                "certificateAuthorityAsEntity"
               ]
             }
           ]
@@ -1659,6 +1653,13 @@
               ]
             },
             {
+              "name": "Trusted certificate authorities for apps (preview)",
+              "resources": [
+                "certificateBasedApplicationConfiguration",
+                "certificateAuthorityAsEntity"
+              ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1900,7 +1901,9 @@
                 "microsoft.graph.networkaccess.filteringProfile",
                 "microsoft.graph.networkaccess.filteringPolicy",
                 "microsoft.graph.networkaccess.filteringPolicyLink",
-                "microsoft.graph.networkaccess.filteringRule"
+                "microsoft.graph.networkaccess.filteringRule",
+                "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.webCategoryFilteringRule"
               ]
             },
             {
@@ -2250,7 +2253,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
               "childNodes": [
@@ -2288,6 +2290,12 @@
                       "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Service activity",
+                      "resources": [
+                        "serviceActivity"
                       ]
                     },
                     {
@@ -2521,6 +2529,13 @@
           "resources": [
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.deploymentAccessKeyType",
+            "microsoft.graph.security.identityContainer",
+            "microsoft.graph.security.networkAdapter",
+            "microsoft.graph.security.sensorDeploymentPackage",
+            "microsoft.graph.security.sensorSettings"
           ]
         },
         {
@@ -2849,6 +2864,17 @@
                 "microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport",
                 "microsoft.graph.callRecords.session",
                 "microsoft.graph.callRecords.smsLogRow"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {
