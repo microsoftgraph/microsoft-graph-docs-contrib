@@ -48,7 +48,7 @@ POST /teams
 
 ## Request body
 
-In the request body, supply a JSON representation of a [team](../resources/team.md) object. Optionally, specify a value for the **firstChannelName** parameter to name the first channel that is created. The default value of the first channel is 'General'.
+In the request body, supply a JSON representation of a [team](../resources/team.md) object. Optionally, specify a value for the **firstChannelName** property to name the first channel that is created. The default value of the first channel is `General`.
 
 ## Response
 
