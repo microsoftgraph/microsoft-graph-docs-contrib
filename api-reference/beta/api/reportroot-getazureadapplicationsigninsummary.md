@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getazureadapplicationsigninsummary" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getazureadapplicationsigninsummary-permissions.md)]
 
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ``` http

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. Invitation adds an external user to the organization.
+Use this API to create a new [invitation](../resources/invitation.md) or reset the redemption status for a guest user who already redeemed their invitation. The invitation adds the external user to the organization as part of B2B collaboration. B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 
 When creating a new invitation, you have several options available:
 
@@ -28,11 +28,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/invitation-post-permissions.md)]
 
 > [!IMPORTANT]
-> Application permissions (app-only) do not work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
-
-When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
-
-For delegated scenarios, the signed-in user must have at least the *Guest Inviter*, *Directory Writers*, or *User Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). To reset the redemption status, the signed-in user must have at least the *Helpdesk Administrator* or *User Administrator* role.
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation:
+> - To invite guests: 
+>   - Both nonadmin member users and guest users can invite guests if the tenant admin hasn't restricted the [default user permissions](/entra/fundamentals/users-default-permissions?toc=%2Fgraph%2Ftoc.json).
+>   - Guest Inviter, Directory Writers, or User Administrator.
+> - To reset the redemption status: Helpdesk Administrator or User Administrator.
+> - Application permissions (app-only) don't work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
+> - When resetting the redemption status for a guest user, the *User.ReadWrite.All* permission is the least privileged permission for the operation.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

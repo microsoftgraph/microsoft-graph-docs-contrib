@@ -3,6 +3,126 @@
     {
       "ChangeList": [
         {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "allowedLobbyAdmitterRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitterRoles** enumeration type.",
+          "Target": "allowedLobbyAdmitterRoles"
+        },
+        {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedLobbyAdmitters",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedLobbyAdmitters** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "654e0ed2-0963-4de5-8ebb-27e51d873ee4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-04T17:20:59.7173114Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2b269909-e7ee-44ad-ab23-6404a88e305e",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationId** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "2b269909-e7ee-44ad-ab23-6404a88e305e",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-21T19:59:02.0963459Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1ffd465-a1bf-4a36-84c5-87gg66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-1.0) resource.",
+          "Target": "callOptions"
+        },
+        {
+          "Id": "a1ffd465-a1bf-4a36-84c5-87gg66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-1.0) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "a1ffd465-a1bf-4a36-84c5-87gg66c11118",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeltaRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeltaRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-1.0) resource.",
+          "Target": "outgoingCallOptions"
+        }
+      ],
+      "Id": "a1ffd465-a1bf-4a36-84c5-87gg66c11118",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-16T12:00:00.00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fb938090-d30e-4a1c-9dc8-c0539c172233",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventExternalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventExternalRegistrationInformation](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventexternalregistrationinformation?view=graph-rest-beta) resource type.",
+          "Target": "virtualEventExternalRegistrationInformation"
+        },
+        {
+          "Id": "fb938090-d30e-4a1c-9dc8-c0539c172233",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalRegistrationInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalRegistrationInformation** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "fb938090-d30e-4a1c-9dc8-c0539c172233",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-15T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "204c55de-2b52-4aa2-88d6-681af64f242a",
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventTownhall",

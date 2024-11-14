@@ -147,6 +147,7 @@
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
+        "protectionUnitsBulkJobBase",
         "restoreArtifactBase",
         "restorePoint",
         "restoreSessionBase",
@@ -175,6 +176,14 @@
             "driveProtectionUnit",
             "mailboxProtectionUnit",
             "siteProtectionUnit"
+          ]
+        },
+        {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
           ]
         },
         {
@@ -419,6 +428,23 @@
           ]
         },
         {
+          "name": "Cloud licensing (preview)",
+          "overview": "../../resources/cloud-licensing-api-overview.md",
+          "keywords": [
+            "Cloud licensing",
+            "Microsoft Cloud Licensing"
+          ],
+          "resources": [
+            "microsoft.graph.cloudLicensing.usageRight"
+          ],
+          "complexTypes": [
+            "microsoft.graph.cloudLicensing.groupCloudLicensing",
+            "microsoft.graph.cloudLicensing.userCloudLicensing",
+            "microsoft.graph.cloudLicensing.service"
+          ],
+          "childNodes": []
+        },
+        {
           "name": "Cloud PC",
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
@@ -447,6 +473,7 @@
             "cloudPcAuditResource",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
+            "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
             "cloudPcBulkReprovision",
@@ -980,7 +1007,8 @@
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
-            "organizationSettings"
+            "organizationSettings",
+            "uxSetting"
           ],
           "childNodes": [
             {
@@ -1044,13 +1072,6 @@
                     "unifiedRbacResourceAction"
                   ]
                 }
-              ]
-            },
-            {
-              "name": "Trusted certificate authorities for apps (preview)",
-              "resources": [
-                "certificateBasedApplicationConfiguration",
-                "certificateAuthorityAsEntity"
               ]
             }
           ]
@@ -1413,9 +1434,7 @@
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
-            "invitation",
-            "trustFrameworkKeySet",
-            "trustFrameworkPolicy"
+            "invitation"
           ],
           "childNodes": [
             {
@@ -1423,8 +1442,6 @@
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
-                "onAttributeCollectionStartListener",
-                "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
@@ -1461,12 +1478,21 @@
               ]
             },
             {
+              "name": "Azure AD B2C IEF",
+              "resources": [
+                "trustFrameworkKeyset",
+                "trustFrameworkKey_v2",
+                "trustFrameworkPolicy"
+              ]
+            },
+            {
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate"
+                "conditionalAccessTemplate",                
+                "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
                 {
@@ -1515,6 +1541,7 @@
               "resources": [
                 "riskDetection",
                 "riskyUser",
+                "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal"
               ]
@@ -1600,7 +1627,6 @@
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
-                "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
                 "deviceRegistrationPolicy"
               ],
@@ -1626,6 +1652,13 @@
               ]
             },
             {
+              "name": "Trusted certificate authorities for apps (preview)",
+              "resources": [
+                "certificateBasedApplicationConfiguration",
+                "certificateAuthorityAsEntity"
+              ]
+            },
+            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1636,13 +1669,13 @@
             {
               "name": "User flows in workforce tenants and Azure AD B2C",
               "resources": [
-                "identityUserFlow",
                 "b2cIdentityUserFlow",
                 "b2xIdentityUserFlow",
                 "identityUserFlowAttribute",
                 "identityUserFlowAttributeAssignment",
                 "userFlowLanguageConfiguration",
-                "identityApiConnector"
+                "identityApiConnector",
+                "identityUserFlow"
               ]
             }
           ]
@@ -1867,7 +1900,9 @@
                 "microsoft.graph.networkaccess.filteringProfile",
                 "microsoft.graph.networkaccess.filteringPolicy",
                 "microsoft.graph.networkaccess.filteringPolicyLink",
-                "microsoft.graph.networkaccess.filteringRule"
+                "microsoft.graph.networkaccess.filteringRule",
+                "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.webCategoryFilteringRule"
               ]
             },
             {
@@ -2217,7 +2252,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
               "childNodes": [
@@ -2255,6 +2289,12 @@
                       "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Service activity",
+                      "resources": [
+                        "serviceActivity"
                       ]
                     },
                     {
@@ -2488,6 +2528,13 @@
           "resources": [
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.deploymentAccessKeyType",
+            "microsoft.graph.security.identityContainer",
+            "microsoft.graph.security.networkAdapter",
+            "microsoft.graph.security.sensorDeploymentPackage",
+            "microsoft.graph.security.sensorSettings"
           ]
         },
         {
@@ -2816,6 +2863,17 @@
                 "microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport",
                 "microsoft.graph.callRecords.session",
                 "microsoft.graph.callRecords.smsLogRow"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {

@@ -1,6 +1,6 @@
 ---
 title: "Add custom properties to a fileStorageContainer"
-description: "Add custom properties to a fileStorageContainer"
+description: "Add custom properties to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_post_customproperty" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-customproperty-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
