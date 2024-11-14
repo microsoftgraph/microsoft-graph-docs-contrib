@@ -1,6 +1,6 @@
 ---
 title: "corsConfiguration_v2 resource type"
-description: "Represents the CORS settings for an on-premises web application segment published via Application Proxy."
+description: "Represents the CORS settings for an on-premises web application segment published via application proxy."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"

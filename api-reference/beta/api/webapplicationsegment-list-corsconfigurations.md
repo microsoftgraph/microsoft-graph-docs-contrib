@@ -86,14 +86,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value" : [{
-    "id": "<id>",
-    "resource" : "/",
-    "allowedOrigins" : "*",
-    "allowedHeaders" : "*",
-    "allowedMethods" : "*",
-    "maxAgeInSeconds" : "3000"
-  }]
+    "value": [
+        {
+            "id": "<id>",
+            "resource": "/",
+            "allowedOrigins": "*",
+            "allowedHeaders": "*",
+            "allowedMethods": "*",
+            "maxAgeInSeconds": "3000"
+        }
+    ]
 }
 ```
 

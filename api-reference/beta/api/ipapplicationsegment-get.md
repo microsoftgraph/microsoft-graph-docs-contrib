@@ -40,7 +40,7 @@ GET /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/mi
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,7 +58,9 @@ If successful, this method returns a `200 OK` response code and an [ipApplicatio
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the basic ipApplicationSegments object
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -67,11 +69,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/<segmentId>
+GET https://graph.microsoft.com/beta//applications('dcc40202-6223-488b-8e64-28aa1a803d6c')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments/df8cb1a6-4bbf-4da3-8f85-fe2fc439ab80
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,9 +88,88 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "<id>",
-  "destinationHost": "15.89.235.8",
-  "port": "90"
+    "destinationHost": "test-check-ch.contoso.com",
+    "destinationType": "fqdn",
+    "port": 0,
+    "ports": [
+        "20-20"
+    ],
+    "protocol": "tcp",
+    "id": "df8cb1a6-4bbf-****-8f85-fe2fc***ab80"
 }
 ```
+
+### Example 2: Retrieve ipApplicationSegments and expand the application object
+
+#### Request
+
+```http
+GET
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ipApplicationSegment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "destinationHost": "test.porto",
+    "destinationType": "fqdn",
+    "port": 0,
+    "ports": [
+        "20-20"
+    ],
+    "protocol": "udp",
+    "id": "ed19c1bb-a4db-4d05-b8b3-3d79f8dbb666",
+    "application": {
+        "id": "618d636e-4978-****-8c0b-459ac982c391",
+        "appId": "15961fc8-797f-****-ab6e-04ff1e2d03ad",
+        "identifierUris": [
+            "api://15961fc8-797f-4278-ab6e-04ff1e2d03ad"
+        ],
+        "signInAudience": "AzureADMyOrg",
+        "tags": [
+            "IsAccessibleViaZTNAClient",
+            "HideApp",
+            "PrivateAccessNonWebApplication"
+        ],
+        "onPremisesPublishing": {
+            "externalUrl": "api://15961fc8-797f-****-ab6e-04ff1e2d03ad/",
+            "internalUrl": "api://15961fc8-797f-****-ab6e-04ff1e2d03ad/",
+            "alternateUrl": null,
+            "externalAuthenticationType": "passthru",
+            "isTranslateHostHeaderEnabled": false,
+            "isTranslateLinksInBodyEnabled": false,
+            "isOnPremPublishingEnabled": true,
+            "isHttpOnlyCookieEnabled": false,
+            "isSecureCookieEnabled": false,
+            "isPersistentCookieEnabled": false,
+            "isBackendCertificateValidationEnabled": false,
+            "applicationServerTimeout": "Default",
+            "useAlternateUrlForTranslationAndRedirect": false,
+            "applicationType": "NonWebApp",
+            "isStateSessionEnabled": false,
+            "isAccessibleViaZTNAClient": true,
+            "isDnsResolutionEnabled": false,
+            "verifiedCustomDomainCertificatesMetadata": null,
+            "verifiedCustomDomainKeyCredential": null,
+            "verifiedCustomDomainPasswordCredential": null,
+            "singleSignOnSettings": null,
+            "segmentsConfiguration": null,
+            "onPremisesApplicationSegments": []
+        }
+    }
+}
+```
+
+
 

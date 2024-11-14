@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST, CREATE, GET, UPDATE, DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the CRUD operations to the [corsConfiguration_v2](https://learn.microsoft.com/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via http.",
+          "Description": "Added the CRUD operations to the [corsConfiguration_v2](https://learn.microsoft.com/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.",
           "Target": "corsConfiguration_v2"
         },
         {
@@ -15,8 +15,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ipApplicationSegment",
           "ChangeType": "Addition",
-          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource.",
+          "Description": "Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource and its associated API operations.The resource represents the CORS settings for an on-premises nonweb application published through Microsoft Entra application proxy and accessed via HTTP.",
           "Target": "ipApplicationSegment"
+        },
+        {
+          "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST, CREATE, GET, UPDATE, DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the CRUD operations to the [webApplicationSegment](https://learn.microsoft.com/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.",
+          "Target": "webApplicationSegment"
         },
         {
           "Id": "758e9ec4-45e4-4303-87a3-42cedd7cec45",

@@ -51,12 +51,10 @@ In the request body, supply a JSON representation of the [webApplicationSegment]
 
 You can specify the following properties when creating a **webApplicationSegment**.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|internalUrl|String|**TODO: Add Description** Required.|
-|externalUrl|String|**TODO: Add Description** Required.|
-|alternateUrl|String|**TODO: Add Description** Required.|
-
+|alternateUrl|String|Required. If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
+|externalUrl|String |Required. The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
+|internalUrl|String |Required. The internal URL of the application segment; for example, `https://intranet/`.|
+|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|Optional. A collection of CORS Rule definitions for a particular application segment.|
 
 
 ## Response
@@ -78,15 +76,17 @@ POST https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862
 Content-Type: application/json
 
 {
-  "externalUrl" : "https://fe.contoso.com",
-  "internalUrl" : "https://be.contoso.com",
-  "corsConfigurations" : [{
-    "resource" : "/",
-    "allowedOrigins" : "*",
-    "allowedHeaders" : "*",
-    "allowedMethods" : "*",
-    "maxAgeInSeconds" : "3000"
-  }]
+    "externalUrl": "https://fe.contoso.com",
+    "internalUrl": "https://be.contoso.com",
+    "corsConfigurations": [
+        {
+            "resource": "/",
+            "allowedOrigins": "*",
+            "allowedHeaders": "*",
+            "allowedMethods": "*",
+            "maxAgeInSeconds": "3000"
+        }
+    ]
 }
 ```
 

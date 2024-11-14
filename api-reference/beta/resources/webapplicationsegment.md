@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via http.
+Represents the segment configurations that are allowed for an **on-premises wildcard application** published through Microsoft Entra application proxy and accessed via HTTP.
 
 Inherits from [applicationSegment](applicationsegment.md).
 

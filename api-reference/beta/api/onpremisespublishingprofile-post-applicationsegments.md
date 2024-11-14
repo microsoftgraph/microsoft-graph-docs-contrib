@@ -53,13 +53,10 @@ You can specify the following properties when creating an **ipApplicationSegment
 
 |Property|Type|Description|
 |:---|:---|:---|
-|destinationHost|String|**TODO: Add Description** Optional.|
-|destinationType|privateNetworkDestinationType|**TODO: Add Description**. The possible values are: `ipAddress`, `ipRange`, `ipRangeCidr`, `fqdn`, `dnsSuffix`, `unknownFutureValue`. Optional.|
-|port|Int32|**TODO: Add Description** Optional.|
-|ports|String collection|**TODO: Add Description** Optional.|
-|protocol|privateNetworkProtocol|**TODO: Add Description**. The possible values are: `tcp`, `udp`, `unknownFutureValue`. Optional.|
-
-
+|destinationHost|String|Either the IP address, IP range, or FQDN of the **applicationSegment**, with or without wildcards.|
+|destinationType|privateNetworkDestinationType|The possible values are: `ipAddress`, `ipRange`, `ipRangeCidr`, `fqdn`, `dnsSuffix`.|
+|ports|String collection|List of ports supported for the application segment.|
+|protocol|privateNetworkProtocol|Indicates the protocol of the network traffic acquired for the application segment. The possible values are: `tcp`, `udp`.|
 
 ## Response
 
@@ -76,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
+POST https://graph.microsoft.com/beta/applications('dcc40202-6223-488b-8e64-28aa1a803d6c')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments
 Content-Type: application/json
 
 {

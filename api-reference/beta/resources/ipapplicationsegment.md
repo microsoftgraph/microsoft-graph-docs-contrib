@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the segment configurations that are allowed for an on-premises nonweb application published through Microsoft Entra application proxy and accessed via non-HTTP protocols.
+Represents the segment configurations that are allowed for an **on-premises nonweb application** published through Microsoft Entra application proxy and accessed via non-HTTP protocols.
 
 
 Inherits from [applicationSegment](../resources/applicationsegment.md).
@@ -26,9 +26,6 @@ Inherits from [applicationSegment](../resources/applicationsegment.md).
 |[Get](../api/ipapplicationsegment-get.md)|[ipApplicationSegment](../resources/ipapplicationsegment.md)|Read the properties and relationships of an [ipApplicationSegment](../resources/ipapplicationsegment.md) object.|
 |[Update](../api/ipapplicationsegment-update.md)|[ipApplicationSegment](../resources/ipapplicationsegment.md)|Update the properties of an [ipApplicationSegment](../resources/ipapplicationsegment.md) object.|
 |[Delete](../api/onpremisespublishingprofile-delete-applicationsegments.md)|None|Delete an [ipApplicationSegment](../resources/ipapplicationsegment.md) object.|
-|[List application](../api/ipapplicationsegment-list-application.md)|[application](../resources/application.md) collection|Get the application resources from the application navigation property.|
-|[Add application](../api/ipapplicationsegment-post-application.md)|[application](../resources/application.md)|Add application by posting to the application collection.|
-|[Remove application](../api/ipapplicationsegment-delete-application.md)|None|Remove an [application](../resources/application.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,7 +40,7 @@ Inherits from [applicationSegment](../resources/applicationsegment.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|application|[application](../resources/application.md)|The on-premises nonweb application that's published through Microsoft Entra application proxy.|
+|application|[application](../resources/application.md)|The on-premises nonweb application published through Microsoft Entra application proxy. Expanded by default and supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
