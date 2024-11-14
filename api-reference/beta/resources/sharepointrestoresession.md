@@ -1,6 +1,6 @@
 ---
 title: "sharePointRestoreSession resource type"
-description: "Represents restore-related tasks on artifacts that are protected by an SharePoint protection policy."
+description: "Represents restore-related tasks on artifacts that are protected by a SharePoint protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -38,9 +38,9 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restore session fails or is completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
-|restoreJobType|[restoreJobType](../resources/enums.md#restoreJobType-values)|Indicates whether the restore sesssion was created normally or by a bulk job.|
-|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionbase.md#restoreSessionArtifactCount)|The number of metadata artifacts that belong to this restore session.|
+|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore sesssion was created normally or by a bulk job.|
+|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionbase.md#restoresessionartifactcount)|The number of metadata artifacts that belong to this restore session.|
 
 ### restoreSessionStatus values
 
@@ -52,7 +52,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |completedWithError|Some artifacts failed to restore, and some succeeded.|
 |completed| All restore artifacts successfully restored.|
 |failed| All restore artifacts failed to restore.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
