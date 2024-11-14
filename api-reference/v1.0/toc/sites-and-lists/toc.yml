@@ -16,6 +16,8 @@ items:
     href: ../../api/site-getallsites.md
   - name: List subsites for a site
     href: ../../api/site-list-subsites.md
+  - name: List root sites
+    href: ../../api/site-list.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
   - name: Get site for a group

@@ -50,7 +50,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcProvisionScenario|The alert rule was triggered for an issue with the Cloud PC provisioning. For a system rule, the alert rule was triggered for a Cloud PC provisioning failure.|
 |cloudPcImageUploadScenario|The alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
 |cloudPcOnPremiseNetworkConnectionCheckScenario|The alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |cloudPcInGracePeriodScenario |The alert rule was triggered when the Cloud PC entered the grace period.|
 |cloudPcFrontlineInsufficientLicensesScenario| The alert rule was triggered for the Frontline Cloud PCs where more concurrent Cloud PC connections were active than the concurrency limit allows.|
 |cloudPcInaccessibleScenario| The alert rule was triggered when Cloud PCs couldn't connect due to host health failure, connection errors, or a zone outage. Alternatively, because they were under provisioning or restoring device status.|
@@ -64,7 +64,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |informational|The severity level is `informational`.|
 |warning|The severity level is `warning`.|
 |critical|The severity level is `critical`.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
