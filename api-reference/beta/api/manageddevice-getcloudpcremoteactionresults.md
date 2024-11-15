@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on September 30, 2024. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API.
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [retrieveCloudPcRemoteActionResults](../api/cloudpc-retrievecloudpcremoteactionresults.md) API.
 
 Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Cloud PC supports reprovision and resize remote actions.
 

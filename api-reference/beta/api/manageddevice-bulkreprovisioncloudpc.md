@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md) resource and its supported APIs.
+> This API is deprecated and stopped returning data on February 28, 2025. Going forward, use the [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md) resource and its supported APIs.
 
 Bulk reprovision a set of Cloud PC devices with Intune [managed device](../resources/cloudpc.md) IDs.
 
