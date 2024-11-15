@@ -18,7 +18,7 @@ Implement app-only access using Microsoft Graph API to ensure secure and efficie
 
 ### Enhancing security and compliance
 
-App-only access enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using Application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
+App-only access enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
 
 ### Streamlining access and integration
 
@@ -32,13 +32,13 @@ Implementing app-only access involves registering the app in Azure portal, creat
 
 1. To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
-2. Access the **Microsoft Entra ID** section on the left side.
+2. Select **Microsoft Entra ID** on the left side of the Azure portal.
 
 3. Expand **App registrations** on the left side of the Azure portal and select **New registration**.
 
 4. Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
-5. You can now see the newly created app registration and the details.
+You can now see the newly created app registration and the details.
 
 ![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
 
@@ -48,7 +48,7 @@ Now that your app is registered, expand **Manage** on the left of the Azure port
 
 For a client secret, select **New client secret**, add a description, and select **Add** to save it. Make sure to copy and securely store the secret value for authentication later. Otherwise, you may have to create a new secret.
 
-You can optionally upload a certificate to use along with the App ID for automation purposes.
+You can optionally upload a certificate to use along with the application ID for automation purposes.
 
 ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
