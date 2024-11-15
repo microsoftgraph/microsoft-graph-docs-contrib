@@ -38,7 +38,7 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 4. Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
-5. You can now see the newly created app registration and the details.
+You can now see the newly created app registration and the details.
 
 ![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
 
