@@ -32,7 +32,7 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 1. To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
-2. Access the **Microsoft Entra ID** section on the left side.
+2. Select **Microsoft Entra ID** on the left side of the Azure portal.
 
 3. Go to **App registrations**, select **New registration**.
 
