@@ -74,7 +74,7 @@ Import-Module ExchangeOnlineManagement
 Connect-IPPSSession
 ```
 
-Use [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
 
 ```powershell
 New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
