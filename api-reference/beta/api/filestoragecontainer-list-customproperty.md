@@ -1,6 +1,6 @@
 ---
 title: "List fileStorageContainer custom properties"
-description: "List the custom properties of a fileStorageContainer"
+description: "List the custom properties of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_list_customproperty" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-customproperty-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
