@@ -60,6 +60,7 @@ Enabled the `$notifyOnUserSpecificProperties` query parameter as a value of the 
 - Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
 - Export [results](/graph/api/security-ediscoverysearch-exportresult) and a [report](/graph/api/security-ediscoverysearch-exportreport) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch).
 - Legal holds are holds that are tied to an eDiscovery case. To learn more about a legal hold policy and its supported methods, see [ediscoveryHoldPolicy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added application authentication for Microsoft Purview eDiscovery Graph APIs.
 
 ### Teamwork and communications | Apps
 
@@ -124,12 +125,6 @@ Enabled `suspiciousAPITraffic` as a supported value for the **riskEventType** pr
 ### Reports | Identity and access reports
 
 The Microsoft Entra Health monitoring alerts APIs enable you to detect anomalous usage patterns in business-critical identity scenarios for your tenant and receive alert notifications. Use the operations of the [alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) and [alertConfiguration](/graph/api/resources/healthmonitoring-alertconfiguration?view=graph-rest-beta&preserve-view=true) resources to retrieve and update alerts and alert configurations. For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=277da918-3e81-499f-8803-2986a2c73123).
-
-### Security | eDiscovery
-
-- Enabled the deletion of Exchange mailbox items in the [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta&preserve-view=true) method.
-- Deleted the `permanentlyDeleted` member from the **purgeType** enumeration in favor of the `permanentlyDelete` member.
-- Added application authentication for Microsoft Purview eDiscovery Graph APIs.
 
 ### Sites and lists
 
