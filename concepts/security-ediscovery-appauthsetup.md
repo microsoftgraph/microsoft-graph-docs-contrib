@@ -60,7 +60,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ### Step 4: Set up a service principal
 
-1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the **Object ID** for your application.
+1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search for your application by name to get the **Object ID** for your application.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
