@@ -44,7 +44,7 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 ### Step 2: Create client secrets or certificates
 
-Now that your app is registered, proceed to **Manage > Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
+Now that your app is registered, expand **Manage** on the left of the Azure portal, then select **Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
 For a client secret, select **New client secret**, add a description, and select **Add** to save. Make sure to copy and securely store the secret value, as required for authentication.
 
