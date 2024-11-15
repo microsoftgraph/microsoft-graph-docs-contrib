@@ -40,7 +40,7 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 5. You can now see the newly created app registration and the details.
 
-    ![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
+![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
 
 ### Step 2: Create client secrets or certificates
 
@@ -50,19 +50,19 @@ For a client secret, select **New client secret**, add a description, and select
 
 You can optionally upload a certificate to use along with the App ID for automation purposes.
 
-    ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
+![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
 ### Step 3: Assign API permissions
 
 You need to set the correct API permissions for your application. Expand **Manage** and select **API permissions**, then add `eDiscovery.Read.All` and `eDiscovery.ReadWrite.All`. These permissions enable your app to read and write eDiscovery data, respectively. The tenant admin must consent to these application permissions to enable them for use.
 
-    ![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
+![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
 ### Step 4: Set up a service principal
 
 1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the **Object ID** for your application.
 
-    ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
+![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
 2. Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
@@ -101,7 +101,7 @@ Add service principal object id to the eDiscoveryAdministrator role using [Add-e
     Get-eDiscoveryCaseAdmin
     ```
 
-    ![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
+![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
 ### Step 5: Connect to Microsoft Graph API using app-only access
 
