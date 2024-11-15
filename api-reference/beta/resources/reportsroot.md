@@ -25,10 +25,10 @@ None.
 
 ## Relationships
 
-| Relationship                      | Type                                                                                  | Description                                                                                                                              |
-| :-------------------------------- | :------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| readingAssignmentSubmission       | [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection | The submission details of the reading assignment submitted by a student.       |
-| reflectCheckInResponse            | [reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection           | The response to the Microsoft Reflect check-in response.                                                     |
+|Relationship|Type|Description|
+|:-----------|:---|:----------|
+|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|The submission details of the reading assignment submitted by a student.|
+|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|The response to the Microsoft Reflect check-in.|
 
 The following JSON representation shows the resource type.
 
