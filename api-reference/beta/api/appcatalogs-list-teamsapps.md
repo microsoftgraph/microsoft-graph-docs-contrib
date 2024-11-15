@@ -22,7 +22,7 @@ This includes apps from the Microsoft Teams store and apps from your organizatio
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-> [!NOTE]
+> [!IMPORTANT]
 > * Currently, this API is only supported in the user context and not in the Admin view.
 > * The Teams Apps returned by this API comply with the App management policies established by the admin.
 > * After the Teams apps are published, it typically takes 24-48 hours for the policies to be applied, which may result in some apps not appearing in the API results immediately.
