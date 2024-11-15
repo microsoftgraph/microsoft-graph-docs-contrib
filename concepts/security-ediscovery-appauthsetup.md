@@ -18,7 +18,7 @@ Implement app-only access using Microsoft Graph API to ensure secure and efficie
 
 ### Enhancing security and compliance
 
-App-only access enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using Application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
+App-only access enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
 
 ### Streamlining access and integration
 
