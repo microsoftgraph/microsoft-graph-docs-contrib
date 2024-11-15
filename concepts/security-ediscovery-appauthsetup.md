@@ -30,43 +30,43 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 ### Step 1: Register a new application in Azure
 
-1.1 To begin, navigate to the Azure portal and sign in with your Microsoft account.
+1. To begin, navigate to the Azure portal and sign in with your Microsoft account.
 
-1.2 Access the **Microsoft Entra ID** section on the left side.
+2. Access the **Microsoft Entra ID** section on the left side.
 
-1.3 Go to **App registrations**, select **New registration**.
+3. Go to **App registrations**, select **New registration**.
 
-1.4 Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
+4. Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
-1.5 You can now see the newly created app registration and the details.
+5. You can now see the newly created app registration and the details.
 
-![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
+    ![Screenshot of the app registration page.](images/security-ediscovery-appauthsetup-step1.png)
 
 ### Step 2: Create client secrets or certificates
 
 Now that your app is registered, expand **Manage** on the left of the Azure portal, then select **Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-For a client secret, select **New client secret**, add a description, and select **Add** to save. Make sure to copy and securely store the secret value, as required for authentication.
+For a client secret, select **New client secret**, add a description, and select **Add** to save it. Make sure to copy and securely store the secret value for authentication later. Otherwise, you may have to create a new secret.
 
 You can optionally upload a certificate to use along with the App ID for automation purposes.
 
-![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
+    ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
 ### Step 3: Assign API permissions
 
 You need to set the correct API permissions for your application. Expand **Manage** and select **API permissions**, then add `eDiscovery.Read.All` and `eDiscovery.ReadWrite.All`. These permissions enable your app to read and write eDiscovery data, respectively. The tenant admin must consent to these application permissions to enable them for use.
 
-![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
+    ![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
 ### Step 4: Set up a service principal
 
-4.1 In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the Object ID for your application.
+1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the **Object ID** for your application.
 
-![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
+    ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
-4.2 Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
+2. Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
 
-Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following commands. The Install-Module command recommends upgrading the package if the module is already installed.
+Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The Install-Module cmdlet recommends upgrading the package if the module is already installed.
 
 ```powershell
 Install-Module ExchangeOnlineManagement
@@ -95,11 +95,11 @@ Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
 Get-eDiscoveryCaseAdmin
 ```
 
-![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
+    ![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
 ### Step 5: Connect to Microsoft Graph API using app-only access
 
-Use the [Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph) command to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
+Use the [Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph) cmdlet to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
 
 ### Step 6: Invoke Microsoft Graph API Requests
 
@@ -107,6 +107,6 @@ Once connected, you can start making calls to the Microsoft Graph API using the 
 
 ## Related content
 
-Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that [access data in app-only](/graph/auth-v2-service) scenarios.
+Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios. For more information about app-only authentication, see [Get access without a user](/graph/auth-v2-service)
 
 For API testing on Postman, see [Use Postman with the Microsoft Graph API](/graph/use-postman).
