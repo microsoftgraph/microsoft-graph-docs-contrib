@@ -55,7 +55,7 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md). The default value for this paramater is `false`.|
-|newUserPrincipalName|String|The userPrincipalName to be used for the user post restore user operation. This is an optional parameter|
+|newUserPrincipalName|String|The userPrincipalName to be used for the user post restore user operation. Used only for restoring soft-deleted [user](../resources/user.md). This is an optional parameter|
 
 ## Response
 
@@ -254,8 +254,6 @@ Content-type: application/json
     "businessPhones": [],
     "displayName": "SampleUser",
     "givenName": "Sample",
-    "jobTitle": "Product Marketing Manager",
-    "mail": "sampleuser@contoso.com",
     "mobilePhone": "+1 425 555 0109",
     "officeLocation": "18/2111",
     "preferredLanguage": "en-US",
