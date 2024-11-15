@@ -64,9 +64,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
-2. Open a new PowerShell session to create a service principal that you can add to the eDiscoveryManager role group:
-
-Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The Install-Module cmdlet recommends upgrading the package if the module is already installed.
+2. Open a new PowerShell session. Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The Install-Module cmdlet recommends upgrading the package if the module is already installed.
 
 ```powershell
 Install-Module ExchangeOnlineManagement
@@ -74,7 +72,7 @@ Import-Module ExchangeOnlineManagement
 Connect-IPPSSession
 ```
 
-Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+3. Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
   
 Run the following cmdlet, replacing the **AppId**, **ObjectId**, and **DisplayName** arguments.
 
@@ -83,7 +81,7 @@ New-ServicePrincipal -AppId "0969a7fc-3e17-424f-92a4-54e583b2142a" -ObjectId "a8
 Get-ServicePrincipal
 ```
 
-Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
+4. Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
 Run the following cmdlet, replacing the **Identity** and **Member** arguments.
 
@@ -92,7 +90,7 @@ Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "a8c1aaec-d18a-47fa-ae
 Get-RoleGroupMember -Identity "eDiscoveryManager"
 ```
 
-Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
+5. Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 Run the following cmdlet, replacing the **Identity** and **Member** arguments.
 
