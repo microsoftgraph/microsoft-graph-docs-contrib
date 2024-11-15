@@ -12,7 +12,7 @@ ms.date: 11/14/2024
 
 The Microsoft Purview Microsoft Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
 
-Implementing app-only access using Microsoft Graph API ensures secure and efficient access to needed resources. This step-by-step guide walks you through setting up app-only access for Purview eDiscovery, ensuring your applications are compliant and secure.
+Implement app-only access using Microsoft Graph API to ensure secure and efficient access to needed resources. This step-by-step guide walks you through setting up app-only access for Purview eDiscovery, ensuring your applications are compliant and secure.
 
 ## Why app-only access?
 
@@ -60,7 +60,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ### Step 4: Set up a service principal
 
-1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search your application by name to get the **Object ID** for your application.
+1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search for your application by name to get the **Object ID** for your application.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 

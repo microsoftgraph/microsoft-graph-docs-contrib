@@ -1,5 +1,6 @@
 ---
 title: "Restore deleted item (directory object)"
+ms.date: 11/14/2024
 description: "Restore a recently deleted application, group, service principal, or user from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -13,7 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a recently deleted [application](../resources/application.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. This isn't applicable to security groups, which are deleted permanently. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
+Restore a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
+- [administrativeUnit](../resources/administrativeunit.md)
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
+
+
+If an item was accidentally deleted, you can fully restore the item. This isn't applicable to security groups, which are deleted permanently. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -32,6 +45,8 @@ The following table shows the least privileged permission or permissions require
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [user](../resources/user.md) | User.ReadWrite.All | Not supported. |  User.ReadWrite.All |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [rbac-deleted-items-restore-apis](../includes/rbac-for-apis/rbac-deleted-items-restore-apis.md)]
 
