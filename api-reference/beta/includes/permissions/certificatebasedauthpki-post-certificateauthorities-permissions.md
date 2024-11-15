@@ -1,11 +1,13 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Automatically generated file. DO NOT MODIFY
 ms.topic: include
 ms.localizationpriority: medium
 ---
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|FileStorageContainer.Selected|FileStorageContainer.Manage.All|
+|Delegated (work or school account)|PublicKeyInfrastructure.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|FileStorageContainer.Selected|Not available.|
+|Application|PublicKeyInfrastructure.ReadWrite.All|Not available.|
+
+
