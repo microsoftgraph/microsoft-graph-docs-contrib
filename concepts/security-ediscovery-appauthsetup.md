@@ -103,7 +103,7 @@ Use the [Connect-MgGraph](/powershell/module/microsoft.graph.authentication/conn
 
 ### Step 6: Invoke Microsoft Graph API Requests
 
-Once connected, you can start making calls to the Microsoft Graph API using [Invoke-MgGraphRequest](/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest). This method allows you to perform various operations required by eDiscovery services in your organization.
+Once connected, you can start making calls to the Microsoft Graph API using the [Invoke-MgGraphRequest](/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest) cmdlet. This cmdlet allows you to perform various operations required by eDiscovery services in your organization.
 
 ## Related content
 
