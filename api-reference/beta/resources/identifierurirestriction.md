@@ -18,6 +18,7 @@ Configuration object to configure a restriction for identifier URIs on applicati
 ## Properties
 | Property                                    | Type                            | Description                 |
 | :------------------------------------------ | :------------------------------ | :-------------------------- |
+| excludeActors                | Collection([customSecurityAttributeExemption](customSecurityAttributeExemption.md))                         | If `true`, the restriction isn't enforced for applications that are configured to receive V2 tokens in Entra ID; else, the restriction isn't enforced for those applications.|
 | excludeAppsReceivingV2Tokens                | Boolean                         | If `true`, the restriction isn't enforced for applications that are configured to receive V2 tokens in Entra ID; else, the restriction isn't enforced for those applications.|
 | excludeSaml                                 | Boolean                         | If `true`, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.|
 | restrictForAppsCreatedAfterDateTime         | String                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
@@ -39,7 +40,12 @@ The following JSON representation shows the resource type.
   "state": "String",
   "restrictForAppsCreatedAfterDateTime": "String (timestamp)",
   "excludeAppsReceivingV2Tokens": "Boolean",
-  "excludeSaml": "Boolean"
+  "excludeSaml": "Boolean",
+  "excludeActors": [
+    {
+      "@odata.type": "microsoft.graph.customSecurityAttributeExemption"
+    }
+  ]
 }
 ```
 
