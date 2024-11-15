@@ -1,5 +1,6 @@
 ---
 title: "call: stopTranscription"
+ms.date: 11/15/2024
 description: "Stop the transcription of a call."
 author: "calvintang"
 ms.localizationpriority: medium

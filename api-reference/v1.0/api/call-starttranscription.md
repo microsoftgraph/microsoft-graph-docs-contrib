@@ -1,5 +1,6 @@
 ---
 title: "call: startTranscription"
+ms.date: 11/15/2024
 description: "Start the transcription of a call."
 author: "calvintang"
 ms.localizationpriority: medium

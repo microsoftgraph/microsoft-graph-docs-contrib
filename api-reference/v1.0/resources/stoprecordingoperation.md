@@ -1,5 +1,6 @@
 --- 
 title: "stopRecordingOperation resource type"
+ms.date: 11/15/2024
 description: "Describes the response format of a stop recording operation."
 author: "calvintang"
 ms.localizationpriority: medium

@@ -1,5 +1,6 @@
 ---
 title: "call: startRecording"
+ms.date: 11/15/2024
 description: "Start the recording of a call."
 author: "calvintang"
 ms.localizationpriority: medium

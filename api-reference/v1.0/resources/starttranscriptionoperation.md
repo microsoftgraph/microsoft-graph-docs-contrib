@@ -1,5 +1,6 @@
 --- 
 title: "startTranscriptionOperation resource type"
+ms.date: 11/15/2024
 description: "Describes the response format of a start transcription operation."
 author: "calvintang"
 ms.localizationpriority: medium

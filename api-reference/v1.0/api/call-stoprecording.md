@@ -1,5 +1,6 @@
 ---
 title: "call: stopRecording"
+ms.date: 11/15/2024
 description: "Stop the recording of a call."
 author: "calvintang"
 ms.localizationpriority: medium
