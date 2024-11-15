@@ -14,6 +14,8 @@ The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate
 
 > [!IMPORTANT]
 > The Microsoft Purview Graph APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
+>
+> For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
 
 > [!NOTE]
 > Usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
@@ -38,6 +40,3 @@ The eDiscovery APIs are defined in the OData subnamespace, microsoft.graph.secur
 | Operation | [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) | Operations which can be performed on a case like adding to review set, applying tags, and so on.|
 | Review set | [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) | The static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.|
 | Tags | [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) | Used in a review set during review or culling to cull responsive data from nonresponsive data, identify privileged content, or generally aid in the review process. To learn more, see [Tag documents in a review set in eDiscovery](/microsoft-365/compliance/tagging-documents).|
-
-## Related content
-[Set up application authentication](/graph/security-ediscovery-appauthsetup)
