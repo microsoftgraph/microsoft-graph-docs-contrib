@@ -48,7 +48,7 @@ Now that your app is registered, expand **Manage** on the left of the Azure port
 
 For a client secret, select **New client secret**, add a description, and select **Add** to save it. Make sure to copy and securely store the secret value for authentication later. Otherwise, you may have to create a new secret.
 
-You can optionally upload a certificate to use along with the App ID for automation purposes.
+You can optionally upload a certificate to use along with the application ID for automation purposes.
 
 ![Screenshot of the app registration client secret page.](images/security-ediscovery-appauthsetup-step2.png)
 
