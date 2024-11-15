@@ -20,11 +20,13 @@ Configuring an identity provider in your workforce tenant enables new B2B guest 
 
 Configuring an identity provider in your external or Azure AD B2C tenant enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Entra External ID or Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol (Open ID Connect is currently supported only with external tenants and Azure AD B2C).
 
-For an external tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), or [oidcIdentityProvider](../api/identitycontainer-post-identityproviders.md#oidcidentityprovider) objects.
-
-For a workforce tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md) or [builtInIdentityProvider](../resources/builtinidentityprovider.md) objects.
-
-In an Azure AD B2C directory, the identity provider type can be a [builtInIdentityProvider](../resources/builtinidentityprovider.md), [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), all which inherit from the identityProviderBase resource type.
+| Supported  IdPs (types derived from identityProviderBase)                      | External tenant     | Workforce tenant    | Azure AD B2C tenant |
+|--------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
+| [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)   | ![Supported][Yes]   | ![NotSupported][No] | ![Supported][Yes]   |
+| [builtInIdentityProvider](../resources/builtinidentityprovider.md)             | ![Supported][Yes]   | ![Supported][Yes]   | ![Supported][Yes]   |
+| [socialIdentityProvider](../resources/socialidentityprovider.md)               | ![Supported][Yes]   | ![Supported][Yes]   | ![Supported][Yes]   |
+| [oidcIdentityProvider](../resources/oidcidentityprovider.md)                   | ![Supported][Yes]   | ![NotSupported][No] | ![NotSupported][No] |
+| [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) | ![NotSupported][No] | ![NotSupported][No] | ![Supported][Yes]   |
 
 ## Methods
 
@@ -47,7 +49,6 @@ In an Azure AD B2C directory, the identity provider type can be a [builtInIdenti
 ## JSON representation
 
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -60,3 +61,7 @@ The following is a JSON representation of the resource.
     "displayName": "String",
 }
 ```
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg

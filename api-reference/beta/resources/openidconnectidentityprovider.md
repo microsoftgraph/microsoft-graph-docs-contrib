@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "brozbab"
+toc.title: OpenID Connect identity provider
 ---
 
 # openIdConnectIdentityProvider resource type

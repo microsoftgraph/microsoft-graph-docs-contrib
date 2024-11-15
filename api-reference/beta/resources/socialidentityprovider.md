@@ -16,10 +16,12 @@ Represents social identity providers for both Microsoft Entra ID and Azure AD B2
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
-In a workforce tenant, the identity provider type can be Google or Facebook. In an external tenant, the identity provider type can be Apple, Google or Facebook.
 
-In an Azure AD B2C tenant, the identity provider type can be Microsoft, Google, Facebook, Amazon, LinkedIn or Twitter. The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
-
+| Tenant configuration | Supported IdPs |
+|--|--|
+| Workforce tenant | `Google`, `Facebook` |
+| External tenant | `Apple`, `Google`, `Facebook` |
+| Azure AD B2C tenant | `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `Weibo` (preview), `QQ` (preview), `WeChat` (preview), `GitHub` (preview) |
 
 ## Methods
 
