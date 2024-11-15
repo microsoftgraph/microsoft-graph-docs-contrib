@@ -23,6 +23,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "orgcontact_list_memberof" } -->
 [!INCLUDE [permissions-table](../includes/permissions/orgcontact-list-memberof-permissions.md)]
 
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - Directory Readers
+> - Global Reader
+> - Directory Writers
+> - Intune Administrator
+> - User Administrator
+
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request

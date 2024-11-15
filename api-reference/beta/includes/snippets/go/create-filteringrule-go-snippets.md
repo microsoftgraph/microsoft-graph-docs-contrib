@@ -16,14 +16,14 @@ import (
 )
 
 requestBody := graphmodelsnetworkaccess.NewPolicyRule()
-name := "Block Alcohol"
+name := "Block Gambling Sites"
 requestBody.SetName(&name) 
 ruleType := graphmodels.WEBCATEGORY_NETWORKDESTINATIONTYPE 
 requestBody.SetRuleType(&ruleType) 
 
 
 ruleDestination := graphmodelsnetworkaccess.NewWebCategory()
-name := "AlcoholAndTobacco"
+name := "Gambling"
 ruleDestination.SetName(&name) 
 
 destinations := []graphmodelsnetworkaccess.RuleDestinationable {

@@ -3,6 +3,7 @@ title: "Use app-only authentication with Postman for Microsoft Graph"
 description: "Learn how to use app-only (application) authentication with Postman for Microsoft Graph to run requests without a signed-in user."
 author: "jasonjoh"
 ms.localizationpriority: high
+ms.date: 11/07/2024
 ---
 
 # Use app-only authentication with Postman for Microsoft Graph

@@ -18,25 +18,17 @@ Delete a tenant-level or group-specific [groupSetting](../resources/groupsetting
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For all settings except the Consent Policy Settings object
+### For tenant-wide settings
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+[!INCLUDE [permissions-table](../includes/permissions/groupsetting-delete-permissions.md)]
 
-### For the Consent Policy Settings object
+### For group-specific settings
 
-The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Policy.ReadWrite.Authorization |
+[!INCLUDE [permissions-table](../includes/permissions/groupsetting-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
