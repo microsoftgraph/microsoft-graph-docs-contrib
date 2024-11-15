@@ -21,10 +21,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Update](../api/authenticationmethoddevice-update.md)|[authenticationMethodDevice](../resources/authenticationmethoddevice.md)|Update the properties of an [authenticationMethodDevice](../resources/authenticationmethoddevice.md) object.|
-|[Delete](../api/directory-delete-authenticationmethoddevices.md)|None|Delete an [authenticationMethodDevice](../resources/authenticationmethoddevice.md) object. Token needs to be unassigned first.|
-|[List hardwareOathDevices](../api/authenticationmethoddevice-list-hardwareoathdevices.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) collection|List all hardware OATH tokens in the inventory.|
-|[Create hardwareOathTokenAuthenticationMethodDevice](../api/authenticationmethoddevice-post-hardwareoathdevices.md)|[hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md)|Create a new hardwareOathTokenAuthenticationMethodDevice object.|
 
 ## Properties
 |Property|Type|Description|

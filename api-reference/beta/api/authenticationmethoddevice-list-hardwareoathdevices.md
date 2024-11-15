@@ -38,7 +38,7 @@ GET /directory/authenticationMethodDevices/hardwareOathDevices
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter(eq)` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 Supports $select, $filter (eq), and $top
 
 ## Request headers

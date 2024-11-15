@@ -38,7 +38,7 @@ GET /directory/authenticationMethodDevices/hardwareOathDevices/{hardwareOathToke
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 
