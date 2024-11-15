@@ -54,7 +54,7 @@ You can optionally upload a certificate to use along with the App ID for automat
 
 ### Step 3: Assign API permissions
 
-You need to set the correct API permissions for your application. Under **API permissions**, add eDiscovery.Read.All and eDiscovery.ReadWrite.All. These permissions enable your app to read or write eDiscovery data, respectively. It's mandatory that the tenant admin consents to these application permissions to enable them for use, as per policy for any application permission.
+You need to set the correct API permissions for your application. Expand **Manage** and select **API permissions**, then add `eDiscovery.Read.All` and `eDiscovery.ReadWrite.All`. These permissions enable your app to read and write eDiscovery data, respectively. The tenant admin must consent to these application permissions to enable them for use.
 
 ![Screenshot of the app registration api permissions page.](images/security-ediscovery-appauthsetup-step3.png)
 
