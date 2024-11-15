@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f3d49392-d6ca-4985-92df-e6c3d62445cb",
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
           "ApiChange": "Resource",
           "ChangedApiName": "startRecordingOperation",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "startRecordingOperation"
         },
         {
-          "Id": "f3d49392-d6ca-4985-92df-e6c3d62445cb",
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
           "ApiChange": "Resource",
           "ChangedApiName": "startTranscriptionOperation",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "startTranscriptionOperation"
         },
         {
-          "Id": "f3d49392-d6ca-4985-92df-e6c3d62445cb",
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
           "ApiChange": "Resource",
           "ChangedApiName": "stopRecordingOperation",
           "ChangeType": "Addition",
@@ -27,12 +27,44 @@
           "Target": "stopRecordingOperation"
         },
         {
-          "Id": "f3d49392-d6ca-4985-92df-e6c3d62445cb",
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
           "ApiChange": "Resource",
           "ChangedApiName": "stopTranscriptionOperation",
           "ChangeType": "Addition",
           "Description": "Added the [stopTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopTranscriptionOperation?view=graph-rest-beta) resource.",
           "Target": "stopTranscriptionOperation"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "startRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [startRecording](https://learn.microsoft.com/en-us/graph/api/call-startRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "startTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [startTranscription](https://learn.microsoft.com/en-us/graph/api/call-startTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopRecording](https://learn.microsoft.com/en-us/graph/api/call-stopRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "5a759464-4d65-4f89-94c6-027be9c1a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopTranscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
         }
       ],
       "Id": "f3d49392-d6ca-4985-92df-e6c3d62445cb",
