@@ -83,7 +83,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 4. Add the Service Principal Object ID to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
-    Run the following cmdlet, replacing **Member** argument in the first cmdlet.
+    Run the following cmdlets, replacing **Member** argument in the first cmdlet.
 
     ```powershell
     Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "a8c1aaec-d18a-47fa-aec5-8651d755223c"
@@ -92,7 +92,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 5. Add the Service Principal Object ID to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
-    Run the following cmdlet, replacing the **User** argument in the first cmdlet.
+    Run the following cmdlets, replacing the **User** argument in the first cmdlet.
 
     ```powershell
     Add-eDiscoveryCaseAdmin -User "a8c1aaec-d18a-47fa-aec5-8651d755223c"
