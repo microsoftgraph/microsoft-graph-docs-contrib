@@ -55,6 +55,7 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether Microsoft Entra ID should remove any conflicting proxy addresses while restoring a soft-deleted user whose one or more proxy addresses are currently used for an active user. Used only for restoring soft-deleted [user](../resources/user.md). The default value for this paramater is `false`.|
+|newUserPrincipalName|String|The userPrincipalName to be used for the user post restore user operation. This is an optional parameter|
 
 ## Response
 
@@ -223,4 +224,43 @@ Content-type: application/json
 }
 ```
 
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "restore_directory_deleteditem_newUserPrincipalName"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
+Content-Type: application/json
+{
+  "newUserPrincipalName": "johndoe@contoso.com"
+}
+```
+
+### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "id": "78bf875b-9343-4edc-9130-0d3958113563",
+    "businessPhones": [],
+    "displayName": "SampleUser",
+    "givenName": "Sample",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "sampleuser@contoso.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "johndoe@contoso.com"
+}
+```
 
