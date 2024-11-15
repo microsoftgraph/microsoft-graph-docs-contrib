@@ -18,8 +18,8 @@ Configuration object to configure a custom security attribute exemption for a re
 ## Properties
 | Property                  | Type                                           | Description                 |
 | :-------------------------| :--------------------------------------------- | :-------------------------- |
-| id                        | string                                         | Unique identifier with combination of the custom security attrbiute set name and attribute name. e.g. `AttributeSetName_AttributeName` |
-| operator                  | customSecurityAttributeComparisonOperator      | If `equals`, the customSecurityAttributeExemption value will be compared to match custom security attribute value for the exemption to be applied.|
+| id                        | string                                         | Unique identifier with combination of the custom security attribute set name and attribute name. e.g., `AttributeSetName_AttributeName` |
+| operator                  | customSecurityAttributeComparisonOperator      | If `equals`, the customSecurityAttributeExemption value is compared to match the custom security attribute value for the exemption to be applied. The comparison is case sensitive. |
 
 ## Relationships
 Inherited by [customSecurityAttributeStringValueExemption](customSecurityAttributeStringValueExemption.md).
