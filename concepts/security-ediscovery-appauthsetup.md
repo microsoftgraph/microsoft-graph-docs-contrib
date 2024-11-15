@@ -26,7 +26,7 @@ App-only access streamlines the integration of eDiscovery services with other ap
 
 ## Implementing app-only access
 
-Implementing app-only access involves registering the app in Azure, creating client secret/certificates, assigning API permissions, setting up a service principal, and then using app-only access to call Microsoft Graph APIs. The following steps explain how to implement app-only access.
+Implementing app-only access involves registering the app in Azure portal, creating client secret/certificates, assigning API permissions, setting up a service principal, and then using app-only access to call Microsoft Graph APIs. The following steps explain how to implement app-only access.
 
 ### Step 1: Register a new application in Azure
 
@@ -34,7 +34,7 @@ Implementing app-only access involves registering the app in Azure, creating cli
 
 2. Access the **Microsoft Entra ID** section on the left side.
 
-3. Go to **App registrations**, select **New registration**.
+3. Expand **App registrations** on the left side of the Azure portal and select **New registration**.
 
 4. Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
 
@@ -81,7 +81,7 @@ New-ServicePrincipal -AppId "0969a7fc-3e17-424f-92a4-54e583b2142a" -ObjectId "a8
 Get-ServicePrincipal
 ```
 
-4. Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
+4. Add the Service Principal Object ID to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
 Run the following cmdlet, replacing **Member** argument.
 
@@ -90,7 +90,7 @@ Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "a8c1aaec-d18a-47fa-ae
 Get-RoleGroupMember -Identity "eDiscoveryManager"
 ```
 
-5. Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
+5. Add the Service Principal Object ID to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
 Run the following cmdlet, replacing the **User** argument.
 
