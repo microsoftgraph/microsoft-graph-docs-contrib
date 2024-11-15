@@ -68,32 +68,38 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The Install-Module cmdlet recommends upgrading the package if the module is already installed.
 
-```powershell
-Install-Module ExchangeOnlineManagement
-Import-Module ExchangeOnlineManagement
-Connect-IPPSSession
-```
+    ```powershell
+    Install-Module ExchangeOnlineManagement
+    Import-Module ExchangeOnlineManagement
+    Connect-IPPSSession
+    ```
 
 Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+  
+    Run the following cmdlet, replacing the **AppId**, **ObjectId**, and **DisplayName** arguments.
 
-```powershell
-New-ServicePrincipal -AppId "{APP_ID}" -ObjectId "{OBJECT_ID}" -DisplayName "{APP_NAME}"
-Get-ServicePrincipal
-```
+    ```powershell
+    New-ServicePrincipal -AppId "0969a7fc-3e17-424f-92a4-54e583b2142a" -ObjectId "a8c1aaec-d18a-47fa-aec5-8651d755223c" -DisplayName "Graph App Auth"
+    Get-ServicePrincipal
+    ```
 
 Add service principal object id to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
-```powershell
-Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "{OBJECT_ID}"
-Get-RoleGroupMember -Identity "eDiscoveryManager"
-```
+    Run the following cmdlet, replacing the **Identity** and **Member** arguments.
+    
+    ```powershell
+    Add-RoleGroupMember -Identity "eDiscoveryManager" -Member "a8c1aaec-d18a-47fa-aec5-8651d755223c"
+    Get-RoleGroupMember -Identity "eDiscoveryManager"
+    ```
 
 Add service principal object id to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
-```powershell
-Add-eDiscoveryCaseAdmin -User "{OBJECT_ID}"
-Get-eDiscoveryCaseAdmin
-```
+    Run the following cmdlet, replacing the **Identity** and **Member** arguments.
+
+    ```powershell
+    Add-eDiscoveryCaseAdmin -User "a8c1aaec-d18a-47fa-aec5-8651d755223c"
+    Get-eDiscoveryCaseAdmin
+    ```
 
     ![Screenshot of the exchange online shell.](images/security-ediscovery-appauthsetup-step4_2.png)
 
