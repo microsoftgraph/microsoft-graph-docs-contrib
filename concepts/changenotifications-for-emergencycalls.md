@@ -35,7 +35,7 @@ Subscriptions for emergency call events only support rich notifications. Please 
 Subscriptions for emergency call events have a **max expiration period of 1 day**. To keep subscriptions for longer durations, a subscription patch must be made to update the `expirationDateTime` property. See [Update subscription API](/graph/api/subscription-update) for more details.
 
 > [!NOTE]
-> Subscriptions are limited **one subscription per application, per tenant, and per unique policy name**. A duplicated subscription using the same application, tenant, and to the same emergency policy will return conflict.
+> Subscriptions are limited **one subscription per application, per tenant, and per unique policy name**. A duplicated subscription using the same application, tenant, and to the same emergency policy will fail with HTTP status code 409 designating that subscription request was duplicated and cannot be created.
 
 ### Subscription payload example
 
@@ -55,10 +55,12 @@ Content-Type: application/json
 }
 ```
 
+For the definition of properties on the subscription request, see [Subscription resource](/graph/api/subscription).
+
+
 ## Emergency call event notifications
 
 Notifications for emergency calls are triggered when a call with an applicable emergency call policy is initiated.
-Rich notifications
 
 ### Notification payload example
 
@@ -92,7 +94,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Decrypted notification resource data example
 
 ```json
@@ -112,7 +113,6 @@ Content-Type: application/json
             "phoneNumber": "00000000000",
             "tenantId": "00000000-0000-0000-0000-000000000000",
             "location": {
-                "uniqueId": "00000000-0000-0000-0000-000000000000",
                 "address": {
                     "street": "Microsoft Way",
                     "city": "Redmond",
@@ -124,7 +124,6 @@ Content-Type: application/json
                     "additionalInfo": "700",
                     "houseNumber": "725",
                     "county": "County",
-                    "description": "Location description",
                     "streetSuffix": "Street suffix"
                     }
                 },
