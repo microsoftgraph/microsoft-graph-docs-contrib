@@ -4,6 +4,7 @@ description: "Find answers to frequently asked questions about the call records 
 author: "MirraRaine"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
+ms.date: 11/07/2024
 ---
 
 # Microsoft Graph call records API FAQ
@@ -89,7 +90,7 @@ You can use the following methods to list all attending call participants:
 
 ## Why don't I see all participants who attended a call while calling list participants_v2 API?
 
-You might not see all participants because the [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2) API supports pagination, limiting the number of participants in the response to 60 per page. If there were more than 60 users on the call, the first call record response contains 60 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, which indicates that there are no more participants to retrieve.
+You might not see all participants because the [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2) API supports pagination, limiting the number of participants in the response to 130 per page. If there were more than 130 users on the call, the first call record response contains 130 participants along with a `@odata.nextLink` property. This property includes the URL to call the API and receive the next set of participants. Continue this process until the next link is empty, which indicates that there are no more participants to retrieve.
 
 ## Why do I receive a 404 Not Found error?
 

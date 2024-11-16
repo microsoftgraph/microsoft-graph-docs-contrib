@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a reading assignment that was submitted by a student.
-
+Represents a reading assignment that was submitted by a student. 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
