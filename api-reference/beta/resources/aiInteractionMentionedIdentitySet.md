@@ -38,5 +38,5 @@ The following JSON representation shows the resource type.
 {
   "conversation": {"@odata.type": "microsoft.graph.TeamworkConversationIdentity"},
   "tag": {"@odata.type": "microsoft.graph.TeamworkTagIdentity"},
-"}
+}
 ```
