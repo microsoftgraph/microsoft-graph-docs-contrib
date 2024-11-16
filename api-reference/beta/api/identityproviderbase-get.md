@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "brozbab"
 ms.subservice: "entra-sign-in"
+ms.date: 11/16/2024
 ---
 
 # Get identityProvider
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) (external tenant only) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](../resources/oidcidentityprovider.md) (external tenant only) resource.
 
 In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
@@ -50,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or [oidcIdentityProvider](#oidcidentityprovider) in the response body for a workforce or external tenant.
+If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or [oidcIdentityProvider](../resources/oidcidentityprovider.md) in the response body for a workforce or external tenant.
 
 For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) object in the response body.
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "brozbab"
 ms.subservice: "entra-sign-in"
+ms.date: 11/16/2024
 ---
 
 # Update identityProvider
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of the specified external identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can update a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), or an [oidcIdentityProvider](#oidcidentityprovider) (external tenant only) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can update a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), or an [oidcIdentityProvider](../resources/oidcidentityprovider.md) (external tenant only) resource.
 
 In Azure AD B2C, this operation can update a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
@@ -47,7 +48,7 @@ PATCH /identity/identityProviders/{id}
 
 ## Request body
 
-In Microsoft Entra External ID, provide a JSON object the request body with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or [oidcIdentityProvider](#oidcidentityprovider) object.
+In Microsoft Entra External ID, provide a JSON object the request body with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or [oidcIdentityProvider](../resources/oidcidentityprovider.md) object.
 
 In Azure AD B2C, provide a JSON object the request body with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
@@ -86,7 +87,6 @@ In Azure AD B2C, provide a JSON object the request body with one or more propert
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
-
 ### oidcIdentityProvider object
 
 |Property|Type|Description|
@@ -97,8 +97,8 @@ In Azure AD B2C, provide a JSON object the request body with one or more propert
 |wellKnownEndpoint|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`.<br> **Note:** The metadata document should, at minimum, contain the following properties: `issuer`, `authorization_endpoint`, `token_endpoint`, `token_endpoint_auth_methods_supported`, `response_types_supported`, `subject_types_supported` and `jwks_uri`. Visit [OpenID Connect Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html) specifications for more details.|
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
-|clientAuthentication|[clientAuthentication](../resources/clientAuthentication.md)|The client authentication settings.<li> use **oidcClientSecretAuthentication** type for setting up your identity provider with `client_secret_post` or `client_secret_jwt authentication` methods. <li> use **oidcPrivateJwtKeyClientAuthentication** type for setting up your identity provider with `private_key_jwt` authentication method. <li>Due to security reasons, `client_secret_basic` authentication method is not supported.|
-|inboundclaimMapping|[inboundclaimMapping](../resources/inboundclaimmapping.md)|After the OIDC provider sends an ID token back to Microsoft Entra External ID, Microsoft Entra External ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
+|clientAuthentication|[clientAuthentication](../resources/oidcclientauthentication.md)|The client authentication settings.<li> use **oidcClientSecretAuthentication** type for setting up your identity provider with `client_secret_post` or `client_secret_jwt authentication` methods. <li> use **oidcPrivateJwtKeyClientAuthentication** type for setting up your identity provider with `private_key_jwt` authentication method. <li>Due to security reasons, `client_secret_basic` authentication method is not supported.|
+|inboundclaimMapping|[inboundclaimMapping](../resources/oidcinboundclaimmappingoverride.md)|After the OIDC provider sends an ID token back to Microsoft Entra External ID, Microsoft Entra External ID needs to be able to map the claims from the received token to the claims that Microsoft Entra ID recognizes and uses. This complex type captures that mapping.|
 
 ## Response
 

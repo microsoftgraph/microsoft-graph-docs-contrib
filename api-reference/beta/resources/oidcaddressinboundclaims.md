@@ -3,8 +3,9 @@ title: "oidcAddressInboundClaims resource type"
 description: "End-user's preferred postal address. The value of the address member is a JSON [RFC8259] structure containing some or all of the members defined below"
 author: "brozbab"
 ms.localizationpriority: medium
-ms.subservice: "identityproviders"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/16/2024
 ---
 
 # oidcAddressInboundClaims resource type

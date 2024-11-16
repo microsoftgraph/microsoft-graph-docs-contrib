@@ -3,8 +3,9 @@ title: "oidcIdentityProvider resource type"
 description: "Represents OpenID Connect identity providers in an Entra external tenant."
 author: "brozbab"
 ms.localizationpriority: medium
-ms.subservice: "identityProviders"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/16/2024
 ---
 
 # oidcIdentityProvider resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "brozbab"
 ms.subservice: "entra-sign-in"
+ms.date: 11/16/2024
 ---
 
 # List identityProviders
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a collection of identity provider resources that are configured for a tenant.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](../resources/oidcidentityprovider) resource.
 
 In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 

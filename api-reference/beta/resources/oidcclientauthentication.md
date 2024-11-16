@@ -3,8 +3,9 @@ title: "oidcClientAuthentication resource type"
 description: "Represents configuration for fetching a clientCertificateAuthentication in an API call."
 author: "brozbab"
 ms.localizationpriority: medium
-ms.subservice: "identityproviders"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/16/2024
 ---
 
 # oidcClientAuthentication resource type
