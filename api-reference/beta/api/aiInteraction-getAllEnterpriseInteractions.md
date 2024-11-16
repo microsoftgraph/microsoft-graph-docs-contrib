@@ -35,7 +35,7 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 ## Optional query parameters
 
 You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples. //check with Srisudha
+as shown in the following examples.
 
 <!-- { "blockType": "ignored" } -->
 ```http
