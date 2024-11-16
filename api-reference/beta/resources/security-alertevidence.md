@@ -35,6 +35,7 @@ This resource is the base type for the following evidence types:
 * [deviceEvidence](security-deviceevidence.md)
 * [fileEvidence](security-fileevidence.md)
 * [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [iotDeviceEvidence](security-iotdeviceevidence.md)
 * [ipEvidence](security-ipevidence.md)
 * [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
 * [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
@@ -45,6 +46,7 @@ This resource is the base type for the following evidence types:
 * [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
 * [mailClusterEvidence](security-mailclusterevidence.md)
 * [mailboxEvidence](security-mailboxevidence.md)
+* [nicEvidence](security-nicevidence.md)
 * [oauthApplicationEvidence](security-oauthapplicationevidence.md)
 * [processEvidence](security-processevidence.md)
 * [registryKeyEvidence](security-registrykeyevidence.md)
@@ -81,7 +83,7 @@ This resource is the base type for the following evidence types:
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
 | none                       | No threats were found.                         |
-| remediated                 | Remediation action has completed successfully. |
+| remediated                 | Remediation action completed successfully. |
 | prevented                  | The threat was prevented from executing.       |
 | blocked                    | The threat was blocked while executing.        |
 | notFound                   | The evidence wasn't found.                    |
