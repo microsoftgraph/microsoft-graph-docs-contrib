@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "6ab24fbb-65e9-4134-b04b-f31f3321f7ea",
+          "ApiChange": "Method",
+          "ChangedApiName": "remove",
+          "ChangeType": "Addition",
+          "Description": "Added the [remove](https://learn.microsoft.com/en-us/graph/api/conversationmember-remove?view=graph-rest-beta) method to the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource.",
+          "Target": "conversationMember"
+        }
+      ],
+      "Id": "6ab24fbb-65e9-4134-b04b-f31f3321f7ea",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-10-16T05:40:25.9133685Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3c1cbe3b-c55a-4ab6-a055-53af1db155b0",
           "ApiChange": "Property",
           "ChangedApiName": "clientAppId",

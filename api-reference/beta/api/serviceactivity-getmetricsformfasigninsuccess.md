@@ -20,13 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceactivity_getmetricsformfasigninsuccess" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getmetricsformfasigninsuccess-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), which allow them to read sign-in reports:
-
-+ Global Reader
-+ Reports Reader
-+ Security Administrator
-+ Security Operator
-+ Security Reader
+[!INCLUDE [rbac-entra-health-service-activity-apis](../includes/rbac-for-apis/rbac-entra-health-service-activity-apis.md)]
 
 ## HTTP request
 

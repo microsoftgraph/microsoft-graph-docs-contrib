@@ -2461,11 +2461,60 @@
         "SubArea": "Identities"
       },
       {
-        "ChangeList": [],
-        "Id": "778bb4ca-fb87-4d37-9f6e-c3cf9555815a",
-        "Cloud": "Prod",
+        "ChangeList": [
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "active",
+            "ChangeType": "Addition",
+            "Description": "Added the `active` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          },
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "pendingApproval",
+            "ChangeType": "Addition",
+            "Description": "Added the `pendingApproval` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          },
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "declined",
+            "ChangeType": "Addition",
+            "Description": "Added the `declined` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          },
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "unremediated",
+            "ChangeType": "Addition",
+            "Description": "Added the `unremediated` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          },
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "running",
+            "ChangeType": "Addition",
+            "Description": "Added the `running` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          },
+          {
+            "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+            "ApiChange": "Member",
+            "ChangedApiName": "partiallyRemediated",
+            "ChangeType": "Addition",
+            "Description": "Added the `partiallyRemediated` member to the **evidenceRemediationStatus** enumeration.",
+            "Target": "evidenceRemediationStatus"
+          }
+        ],
+        "Id": "ce2876bf-ff92-4c24-b2dc-994db1296de1",
+        "Cloud": "Review",
         "Version": "v1.0",
-        "CreatedDateTime": "2024-09-23T11:02:34.0180165Z",
+        "CreatedDateTime": "2024-11-14T16:54:36.7087445Z",
         "WorkloadArea": "Security",
         "SubArea": "Alerts and incidents"
       }
