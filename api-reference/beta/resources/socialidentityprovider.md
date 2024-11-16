@@ -5,9 +5,11 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "brozbab"
+ms.date: 11/16/2024
 ---
 
 # socialIdentityProvider resource type
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
