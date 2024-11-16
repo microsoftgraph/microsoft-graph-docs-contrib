@@ -24,10 +24,10 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/oidcidentityprovider-list.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md) collection|Get a list of the oidcIdentityProvider objects and their properties.|
-|[Get](../api/oidcidentityprovider-get.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md)|Read the properties and relationships of an oidcIdentityProvider object.|
-|[Update](../api/oidcidentityprovider-update.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md)|Update the properties of an oidcIdentityProvider object.|
-|[Delete](../api/oidcidentityprovider-delete.md)|None|Delete an oidcIdentityProvider object.|
+|[List](../api/identitycontainer-list-identityproviders.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md) collection|Get a list of the oidcIdentityProvider objects and their properties.|
+|[Get](../api/identityproviderbase-get.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md)|Read the properties and relationships of an oidcIdentityProvider object.|
+|[Update](../api/identityproviderbase-update.md)|[oidcIdentityProvider](../resources/oidcidentityprovider.md)|Update the properties of an oidcIdentityProvider object.|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete an oidcIdentityProvider object.|
 
 ## Properties
 
