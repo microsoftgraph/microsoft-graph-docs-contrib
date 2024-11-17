@@ -133,7 +133,7 @@
         {
           "Id": "60a336c7-b9f7-4eff-b991-68127c3a2337",
           "ApiChange": "Resource",
-          "ChangedApiName": "dataDiscoveryRoot",
+          "ChangedApiName": "dataDiscovery",
           "ChangeType": "Addition",
           "Description": "Added the [dataDiscoveryRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-dataDiscoveryRoot?view=graph-rest-beta) resource.",
           "Target": "dataDiscoveryRoot"
