@@ -33,10 +33,6 @@ Use the **administrativeUnitInfos** property on [participant](/graph/api/resourc
 
 Use the **reservePercentage** property in the [cloudPcProvisioningPolicy: apply] method to specify the percentage of Cloud PCs to keep available for frontline shared scenarios.
 
-### Files
-
-Use a range of new methods and resources for enhanced file storage management, including methods for managing columns and recycle bin items. You can also run operations like restore, lock, unlock, and more across the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) and [recycleBin](/graph/api/resources/recyclebin?view=graph-rest-beta&preserve-view=true) resources. For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=d4cad5ca-ea99-4c26-bb63-35d74f43).
-
 ### Identity and access | Network access
 
 List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta&preserve-view=true) and [webCategoryFilteringRule](/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta&preserve-view=true) resources that are derived types of [filteringRule](/graph/api/resources/networkaccess-filteringrule?view=graph-rest-beta&preserve-view=true).
