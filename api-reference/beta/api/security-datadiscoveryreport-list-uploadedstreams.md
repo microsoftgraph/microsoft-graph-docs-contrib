@@ -105,7 +105,7 @@ Content-Type: application/json
       "anonymizeUserData": true,
       "logDataProvider": "checkpoint",
       "description": "Checkpoint cloud discovery report",
-      "logFileCount": "5",
+      "logFileCount": 5,
       "isSnapshotReport": false
     }
   ]
