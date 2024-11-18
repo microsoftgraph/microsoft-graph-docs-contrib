@@ -4,6 +4,7 @@ description: "List of use cases that can be enabled using virtual events town ha
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 11/18/2024
 ---
 # Virtual events town hall API overview
 Microsoft Graph virtual events town hall APIs allows you to get Teams town hall data and programmatically create, update, and cancel a Teams town hall.
@@ -22,6 +23,7 @@ The following resource types can be used to build your town hall solution
 
 ## Solutions you can build 
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph town hall APIs and webhooks. 
+
 | Solutions     | Description   |
 | ------------- | ------------- |
 | [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and cancel Teams town hall.|
@@ -29,7 +31,7 @@ The following table lists some solutions you can build by using the Teams client
 | [Email communication](#email-communication)| Use your own email infrastructure to send out town hall-related notification emails. |
 
 > [!NOTE]
->To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/graph/auth/auth-concepts.md).
+>To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/graph/auth/auth-concepts).
 
 ### Create/update/cancel 
 - Use the [CREATE townhall API](/graph/api/virtualeventsroot-post-townhalls) to create a draft of the event, followed by the [PUBLISH townhall API](/graph/api/virtualeventtownhall-publish) to complete the creation and make it visible to its audience.
