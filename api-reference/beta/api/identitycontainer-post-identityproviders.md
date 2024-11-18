@@ -88,7 +88,6 @@ All the properties listed in the following tables are required.
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
-
 ### oidcIdentityProvider object
 
 |Property|Type|Description|

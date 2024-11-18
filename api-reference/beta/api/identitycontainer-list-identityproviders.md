@@ -12,13 +12,15 @@ ms.date: 11/16/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a collection of identity provider resources that are configured for a tenant.
 
 Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](../resources/oidcidentityprovider.md) resource.
 
 In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

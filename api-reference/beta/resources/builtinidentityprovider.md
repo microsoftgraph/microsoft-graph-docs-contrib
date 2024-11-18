@@ -11,6 +11,8 @@ ms.date: 11/16/2024
 # builtInIdentityProvider resource type
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents built-in identity providers for a Microsoft Entra tenant.
 
 For Microsoft Entra scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account (MSA), or email one-time passcode (EmailOTP).
