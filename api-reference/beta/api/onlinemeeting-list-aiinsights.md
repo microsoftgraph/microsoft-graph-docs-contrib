@@ -25,6 +25,8 @@ Get the list of [callAiInsights](../resources/callaiinsight.md) objects associat
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored", "name": "onlinemeeting-list-aiinsights" } -->
+
 | Permission type                        | Least privileged permissions    | Higher privileged permissions |
 | :------------------------------------- | :------------------------------ | :---------------------------- |
 | Delegated (work or school account)     | OnlineMeetingAiInsight.Read.All | Not available.                |
@@ -35,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/onlineMeetings/{meetingId}/aiInsights
