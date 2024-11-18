@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "startRecordingOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [startRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/startrecordingoperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [startRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/startrecordingoperation?view=graph-rest-1.0) resource.",
           "Target": "startRecordingOperation"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "startTranscriptionOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [startTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/startTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [startTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/startTranscriptionOperation?view=graph-rest-1.0) resource.",
           "Target": "startTranscriptionOperation"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "stopRecordingOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [stopRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopRecordingOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [stopRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopRecordingOperation?view=graph-rest-1.0) resource.",
           "Target": "stopRecordingOperation"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "stopTranscriptionOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [stopTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopTranscriptionOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [stopTranscriptionOperation](https://learn.microsoft.com/en-us/graph/api/resources/stopTranscriptionOperation?view=graph-rest-1.0) resource.",
           "Target": "stopTranscriptionOperation"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startRecording",
           "ChangeType": "Addition",
-          "Description": "Added the [startRecording](https://learn.microsoft.com/en-us/graph/api/call-startRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [startRecording](https://learn.microsoft.com/en-us/graph/api/call-startRecording?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startTranscription",
           "ChangeType": "Addition",
-          "Description": "Added the [startTranscription](https://learn.microsoft.com/en-us/graph/api/call-startTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [startTranscription](https://learn.microsoft.com/en-us/graph/api/call-startTranscription?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopRecording",
           "ChangeType": "Addition",
-          "Description": "Added the [stopRecording](https://learn.microsoft.com/en-us/graph/api/call-stopRecording?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [stopRecording](https://learn.microsoft.com/en-us/graph/api/call-stopRecording?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopTranscription",
           "ChangeType": "Addition",
-          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
