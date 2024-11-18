@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API will capture the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook.
-This API returns [aiInteraction](../resources/aiInteraction.md) resource.
+This API returns [aiInteraction](../resources/aiinteraction.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -67,13 +67,12 @@ This method supports also supports `$filter`. The following table lists examples
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [aiInteraction](../resources/aiInteraction.md) in the response body.
+If successful, this method returns a `200 OK` response code and a list of [aiInteraction](../resources/aiinteraction.md) in the response body.
 
 ## Examples 1: Retrieve all the copilot interactions without any filters
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "aiInteraction_getAllEnterpriseInteractions_1"
@@ -152,7 +151,6 @@ Content-type: application/json
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "aiInteraction_getAllEnterpriseInteractions_1"
