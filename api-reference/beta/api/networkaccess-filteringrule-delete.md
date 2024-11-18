@@ -12,7 +12,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [filteringRule](../resources/networkaccess-filteringrule.md) object.
+Delete a [filteringRule](../resources/networkaccess-filteringrule.md) object. The following derived types are supported:
+
+- [fqdnFilteringRule](../resources/networkaccess-fqdnfilteringrule.md)
+- [webCategoryFilteringRule](../resources/networkaccess-webcategoryfilteringrule.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,7 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 DELETE /networkaccess/filteringPolicies/{filteringPolicyId}/policyRules/{filteringRuleId}
-
 ```
 
 ## Request headers
@@ -59,7 +61,6 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb1d249e-0691-477c-aae4-adfca179746a/policyRules/67f2edf8-1dc0-4a4f-87ea-9117541646de
-
 ```
 
 # [C#](#tab/csharp)
