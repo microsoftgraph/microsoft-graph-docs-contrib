@@ -32,14 +32,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
 ``` http
-POST /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
-POST /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
+GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
+GET /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
 ```
 
 To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
 ``` http
-POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
+GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 
 ## Request headers
