@@ -2369,7 +2369,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "getAllMembers",
           "ChangeType": "Addition",
-          "Description": "Added the **getAllMembers** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAllMembers](https://learn.microsoft.com/en-us/graph/api/channel-getallmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         }
       ],
