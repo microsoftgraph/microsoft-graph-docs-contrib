@@ -11,7 +11,6 @@ from msgraph.generated.models.custom_app_management_configuration import CustomA
 from msgraph.generated.models.password_credential_configuration import PasswordCredentialConfiguration
 from msgraph.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
 from msgraph.generated.models.key_credential_configuration import KeyCredentialConfiguration
-from msgraph.generated.models.app_key_credential_restriction_type import AppKeyCredentialRestrictionType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppManagementPolicy(
 	display_name = "Credential management policy",
@@ -23,30 +22,49 @@ request_body = AppManagementPolicy(
 				restriction_type = AppCredentialRestrictionType.PasswordAddition,
 				max_lifetime = None,
 				restrict_for_apps_created_after_date_time = "2019-10-19T10:37:00Z",
+				additional_data = {
+						"state" : "enabled",
+				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordLifetime,
-				max_lifetime = "P4DT12H30M5S",
+				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
+				additional_data = {
+						"state" : "enabled",
+				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyAddition,
 				max_lifetime = None,
 				restrict_for_apps_created_after_date_time = "2019-10-19T10:37:00Z",
+				additional_data = {
+						"state" : "enabled",
+				}
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				max_lifetime = "P4D",
+				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
+				additional_data = {
+						"state" : "enabled",
+				}
 			),
 		],
 		key_credentials = [
-			KeyCredentialConfiguration(
-				restriction_type = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
-				max_lifetime = "P90D",
-				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
-			),
 		],
+		additional_data = {
+				"application_restrictions" : {
+						"identifier_uris" : {
+								"non_default_uri_addition" : {
+										"state" : "disabled",
+										"restrict_for_apps_created_after_date_time" : None,
+										"exclude_apps_receiving_v2_tokens" : True,
+										"exclude_saml" : True,
+								},
+						},
+				},
+		}
 	),
 )
 

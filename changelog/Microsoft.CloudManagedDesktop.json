@@ -31,7 +31,99 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-11-03T11:13:39.1270609Z",
-     "WorkloadArea": "Device and app management",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkreprovisioncloudpc",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [bulkRestoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkresize",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [bulkresize](https://learn.microsoft.com/en-us/graph/api/cloudpc-bulkresize?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkrestorecloudpc",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [bulkrestorecloudpc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getcloudpcremoteactionresults",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [getcloudpcremoteactionresults](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getcloudpcreviewstatus",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [getcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta)  method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "setcloudpcreviewstatus",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [setcloudpcreviewstatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta) method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkSetCloudPcReviewStatus",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [bulkSetCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta) method method.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+          "ApiChange": "Method",
+          "ChangedApiName": "List snapshots",
+          "ChangeType": "Change",
+          "Description": "Change the deprecation date of [List snapshots](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta) method",
+          "Target": "cloudPcSnapshot"
+        }
+      ],
+      "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-15T15:27:53.6752914Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8efd6ed8-dce5-4fb2-b59d-06a05d851029",
+          "ApiChange": "Method",
+          "ChangedApiName": "apply",
+          "ChangeType": "Addition",
+          "Description": "Added the **reservePercentage** to the  [apply](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta) method.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "8efd6ed8-dce5-4fb2-b59d-06a05d851029",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-11T01:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {

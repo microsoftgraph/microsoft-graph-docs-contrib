@@ -31,10 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
 
-### Viewing applied conditional access (CA) policies in sign-ins
-
-[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

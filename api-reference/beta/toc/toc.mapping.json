@@ -1652,6 +1652,13 @@
               ]
             },
             {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
+            },
+            {
               "name": "Trusted certificate authorities for apps (preview)",
               "resources": [
                 "certificateBasedApplicationConfiguration",
@@ -1900,7 +1907,9 @@
                 "microsoft.graph.networkaccess.filteringProfile",
                 "microsoft.graph.networkaccess.filteringPolicy",
                 "microsoft.graph.networkaccess.filteringPolicyLink",
-                "microsoft.graph.networkaccess.filteringRule"
+                "microsoft.graph.networkaccess.filteringRule",
+                "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.webCategoryFilteringRule"
               ]
             },
             {
@@ -2250,7 +2259,6 @@
               "shouldSort": true,
               "resources": [
                 "appCredentialSignInActivity",
-                "serviceActivity",
                 "servicePrincipalSignInActivity"
               ],
               "childNodes": [
@@ -2288,6 +2296,12 @@
                       "name": "SLA attainment",
                       "resources": [
                         "azureADAuthentication"
+                      ]
+                    },
+                    {
+                      "name": "Service activity",
+                      "resources": [
+                        "serviceActivity"
                       ]
                     },
                     {
@@ -2856,6 +2870,17 @@
                 "microsoft.graph.callRecords.pstnOnlineMeetingDialoutReport",
                 "microsoft.graph.callRecords.session",
                 "microsoft.graph.callRecords.smsLogRow"
+              ]
+            },
+            {
+              "name": "Copilot settings",
+              "resources": [
+                "copilotAdminLimitedMode"
+              ],
+              "complexTypes": [
+                "copilotAdmin",
+                "copilotAdminSetting",
+                "copilotRoot"
               ]
             },
             {
