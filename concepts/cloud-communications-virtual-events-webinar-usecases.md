@@ -30,7 +30,8 @@ The following resource types can be used to build your webinar solution
 
 ## Solutions you can build 
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph webinar APIs and webhooks. 
-| **Solutions**      | **Description**    |
+
+| Solutions     | Description   |
 | ------------- | ------------- |
 | [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and cancel Teams webinars.|
 | [Data Sync](#data-sync) | Pull Teams webinar data in a custom application (like attendees, registration questions, attendance report, and more).  |
