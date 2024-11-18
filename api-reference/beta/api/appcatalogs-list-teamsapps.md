@@ -24,7 +24,7 @@ List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog, incl
 > * Currently, this API is only supported in the user context and not in the Admin view.
 > * The Teams apps that this API returns comply with the app management policies established by the admin.
 > * After the Teams apps are published, it typically takes 24-48 hours for the policies to be applied, so some apps might not appear in the API results immediately.
-> * For more information, see [App management policies](https://learn.microsoft.com/en-us/microsoftteams/manage-apps#manage-org-wide-app-settings).
+> * For more information, see [App management policies](/microsoftteams/manage-apps#manage-org-wide-app-settings).
 
 ## Permissions
 
