@@ -17,7 +17,7 @@ To make the best use of the Graph virtual events webinar APIs, it’s helpful to
 - **Attendees** are registrants who joined the webinar. They need to register through a portal and answered registration questions. 
 - **Teams tenant administrator** must authorize custom applications with appropriate permissions.
 
-The following resource types can be used to build your webinar solution 
+The following resource types can be used to build your webinar solution: 
 - [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) – Used to create, get, update, publish, cancel, and list Teams webinars.  
 - [virtualEventRegistration](/graph/api/resources/virtualeventregistration) – Used to create, get, cancel, and list registration records of registrants of a webinar. Provides the unique Teams webinar join URL for the registered registrant. 
 - [virtualEventRegistrationQuestion](/graph/api/resources/virtualeventregistrationquestionbase) – Used to create, list, and delete either custom registration questions or predefined registration questions for registrants to answer when they register for a webinar.  
