@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "reports"
 doc_type: "resourcePageType"
+toc.title: App credential sign-in activity
 ---
 
 # appCredentialSignInActivity resource type

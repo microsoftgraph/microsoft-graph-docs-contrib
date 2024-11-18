@@ -25,7 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Represents a setting that controls whether Microsoft 365 Copilot users can receive responses to sentiment-related prompts. Read-only. Nullable.|
+|limitedMode|[copilotAdminLimitedMode](../resources/copilotadminlimitedmode.md)|Represents a setting that controls whether Microsoft 365 Copilot in Teams Meetings users can receive responses to sentiment-related prompts. Read-only. Nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
