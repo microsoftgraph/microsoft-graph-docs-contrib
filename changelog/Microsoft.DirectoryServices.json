@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityExpression](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityExpression?view=graph-rest-beta) resource.",
+          "Target": "federatedIdentityExpression"
+        },
+        {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Property",
+          "ChangedApiName": "claimsMatchingExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMatchingExpression** property to the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) resource.",
+          "Target": "federatedIdentityCredential"
+        }
+      ],
+      "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-14T20:23:12.4964215Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementRestrictionState",
