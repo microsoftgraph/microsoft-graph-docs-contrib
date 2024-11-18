@@ -52,7 +52,7 @@ The following table lists some solutions you can build by using the Teams client
 ### Data Sync 
 - Subscribe to [change notifications](/graph/changenotifications-for-virtualevent#subscribable-virtual-events) to get updates about any changes made to the webinar.
 - To get attendance report data for a webinar, use [LIST attendance records](/graph/api/attendancerecord-list) or [GET attendance record with a query option](/graph/api/meetingattendancereport-get#example-2-get-the-attendance-report-for-a-webinar-session-by-id).
-  - To get attendance information of a webinar attendee, after doing the above, map the `Id` property in [virtual event registration](/graph/api/resources/virtualeventregistration) to the `registrationId` property in [attendance record](/graph/api/resources/beta/attendancerecord) (currently only available in Beta).
+  - To get attendance information of a webinar attendee, after doing the above, map the `Id` property in [virtual event registration](/graph/api/resources/virtualeventregistration) to the `registrationId` property in [attendance record](/graph/api/resources/attendancerecord) (currently only available in Beta).
 - Get data for [a specific webinar](/graph/api/virtualeventwebinar-get), [list all the webinar in a tenant](/graph/api/virtualeventsroot-list-webinars), list webinars where the [user is an organizer or co-organizer](/graph/api/virtualeventwebinar-getbyuserrole), list webinars where the [specified user is either the organizer or co-organizer](/graph/api/virtualeventwebinar-getbyuseridandrole).  
 - To get the Teams webinar registration portal URL for your webinar, use [GET webinar registration configuration](/graph/api/virtualeventwebinarregistrationconfiguration-get). 
 
