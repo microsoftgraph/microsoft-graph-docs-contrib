@@ -16,7 +16,7 @@ To make the best use of the Graph virtual events town hall APIs, it’s helpful 
 - **Attendees** are either employees (in your organization) or guests who join the town hall and are either invited via email or the link to the town hall event is shared with them.  
 - **Teams tenant administrator** must authorize custom applications with appropriate permissions.
 
-The following resource types can be used to build your town hall solution 
+The following resource types can be used to build your town hall solution: 
 - [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) – Used to create, get, update, publish, and cancel a Teams town hall.    
 - [virtualEventPresenter](/graph/api/resources/virtualeventpresenter) – Used to create, get, list, update, and delete a presenter for a Teams town hall.   
 - [virtualEventSession](/graph/api/resources/virtualeventsession) – A town hall created via Microsoft Graph APIs has one session that inherits the properties of online meetings.  
