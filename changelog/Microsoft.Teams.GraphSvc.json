@@ -2366,7 +2366,7 @@
       "ChangeList": [
         {
           "Id": "b2b503b2-47be-4369-9e3e-eca7b1918805",
-          "ApiChange": "Relationship",
+          "ApiChange": "Method",
           "ChangedApiName": "getAllMembers",
           "ChangeType": "Addition",
           "Description": "Added the [getAllMembers](https://learn.microsoft.com/en-us/graph/api/channel-getallmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
