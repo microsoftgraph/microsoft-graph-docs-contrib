@@ -90,6 +90,7 @@ The following example shows the response. By default, the property isn't searcha
 ``` http
 HTTP/1.1 200 Created
 ```
+
 ### Example 2: Create a custom searchable property
 
 #### Request
@@ -128,6 +129,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 Created
 ```
+
 
 
 

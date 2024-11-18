@@ -90,8 +90,6 @@ GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,9 +109,7 @@ Content-Type: application/json
   "status": "active",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false,
-    "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isOcrEnabled": false
   }
 }
 ```
