@@ -927,13 +927,13 @@ items:
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
       - name: Virtual events
-      items:
-      - name: Choose the right meeting type 
-        href: cloud-communications-virtual-events-overview.md
-      - name: Town hall use cases 
-        href: cloud-communications-virtual-events-townhall-usecases.md
-      - name: Webinar use cases 
-        href: cloud-communications-virtual-events-webinar-usecases.md
+        items:
+        - name: Choose the right meeting type 
+          href: cloud-communications-virtual-events-overview.md
+        - name: Town hall use cases 
+          href: cloud-communications-virtual-events-townhall-usecases.md
+        - name: Webinar use cases 
+          href: cloud-communications-virtual-events-webinar-usecases.md
     - name: Change notifications
       items:
       - name: Subscribe to teams, chats, channels
