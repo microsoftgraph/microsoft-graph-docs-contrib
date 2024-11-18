@@ -41,7 +41,7 @@ POST /users/{userId}/cloudPCs/{id}/stop
 To stop the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
 ``` http
-POST /deviceManagement/virtualEndpoint/cloudpcs/{cloudPCId}/stop
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/stop
 ```
 
 ## Request headers
