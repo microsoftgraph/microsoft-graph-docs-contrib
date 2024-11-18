@@ -41,7 +41,7 @@ POST /users/{userId}/cloudPCs/{id}/start
 To start the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
 ``` http
-POST /devicemanagement/virtualendpoint/cloudpcs/{cloudPCId}/start
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/start
 ```
 
 ## Request headers
