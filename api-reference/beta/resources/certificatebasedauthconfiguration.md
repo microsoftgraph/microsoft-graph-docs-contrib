@@ -25,6 +25,9 @@ Certificate-based authentication configuration is provided through a collection 
 
 Learn more about [certificate-based authentication in Microsoft Entra ID](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
+>[!NOTE]
+>Administrators are highly recommended to configure the new scalable platform for [PKI (Public Key Infrastructure) based store](certificatebasedauthpki.md). This new PKI based CA store has higher limits for the number of CAs that supports up to 250CAs as well as the size of up to 8KB for each CA file and also supports new functionality such as issuer hints.  
+
 ## Methods
 
 | Method       | Return Type | Description |
