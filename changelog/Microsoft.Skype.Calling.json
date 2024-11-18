@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "startRecordingOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [startRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/startRecordingOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [startRecordingOperation](https://learn.microsoft.com/en-us/graph/api/resources/startrecordingoperation?view=graph-rest-beta) resource.",
           "Target": "startRecordingOperation"
         },
         {
