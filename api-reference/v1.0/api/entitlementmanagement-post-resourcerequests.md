@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_resourcerequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-resourcerequests-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-catalog-owner-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-owner-apis-write.md)]
+
 - To add a Microsoft Entra group as a resource to a catalog:
   - If using delegated permissions, the user requesting to add a group should be an owner of the group or in a directory role that allows them to modify groups.
   - If using application permissions, the application requesting to add the group should also be assigned the `Group.ReadWrite.All` permission.
