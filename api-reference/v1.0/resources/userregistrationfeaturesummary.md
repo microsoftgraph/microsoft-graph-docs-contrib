@@ -5,6 +5,7 @@ author: "kvenkit"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # userRegistrationFeatureSummary resource type
