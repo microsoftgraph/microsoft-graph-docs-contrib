@@ -77,6 +77,7 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/15be77d1-1940-43fe-8aae-94a78e078da0
 Content-Type: application/json
+
 {
     "name": "testing02",
     "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
@@ -123,8 +124,6 @@ Content-Type: application/json
 ---
 
 ### Response
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
