@@ -23,7 +23,7 @@ Represents a device associated with a discovered cloud app.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of cloud app.|
+|name|String|The name of the cloud app.|
 
 ## Relationships
 None.
