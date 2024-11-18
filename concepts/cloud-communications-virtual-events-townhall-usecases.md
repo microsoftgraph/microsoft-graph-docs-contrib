@@ -22,7 +22,7 @@ The following resource types can be used to build your town hall solution
 
 ## Solutions you can build 
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph town hall APIs and webhooks. 
-| **Solutions**      | **Description**    |
+| Solutions     | Description   |
 | ------------- | ------------- |
 | [Create/update/cancel](#createupdatecancel) | Programmatically create, update, and cancel Teams town hall.|
 | [Data Sync](#data-sync) | Pull Teams town hall data in a custom application. |
