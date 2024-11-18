@@ -376,6 +376,14 @@ items:
         href: ../../api/copilotadminlimitedmode-get.md
       - name: Update
         href: ../../api/copilotadminlimitedmode-update.md
+    - name: Complex types
+      items:
+      - name: Copilot admin
+        href: ../../resources/copilotadmin.md
+      - name: Copilot admin setting
+        href: ../../resources/copilotadminsetting.md
+      - name: Copilot root
+        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report

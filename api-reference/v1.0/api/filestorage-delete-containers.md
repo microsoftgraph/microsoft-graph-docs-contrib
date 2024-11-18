@@ -1,7 +1,7 @@
 ---
 title: "Delete fileStorageContainer"
 description: "Delete a fileStorageContainer object."
-author: "harmoneddie"
+author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType

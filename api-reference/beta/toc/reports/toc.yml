@@ -54,9 +54,9 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: Get relying party detailed dummary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: App credential sign in activity
+    - name: App credential sign-in activity
       items:
-      - name: App credential sign in activity
+      - name: App credential sign-in activity
         href: ../../resources/appcredentialsigninactivity.md
       - name: List
         href: ../../api/reportroot-list-appcredentialsigninactivities.md
