@@ -1,6 +1,6 @@
 ---
 title: "Use the cloud app discovery API in Microsoft Graph (preview)"
-description: "Learn how to programmatically query information about your discovered SaaS applications using the Microsoft Graph API."
+description: "Learn how to programmatically query information about your discovered SaaS applications using the cloud app discovery API in Microsoft Graph."
 author: "mravela"
 ms.localizationpriority: medium
 ms.subservice: "security"
