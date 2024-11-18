@@ -25,6 +25,13 @@ The Defender for Identity sensors management API enables you to create detailed 
 
 ## November 2024: New in preview only
 
+### Device and app management | Cloud PC
+
+Added new endpoints to support application permissions in the following methods of the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+- [cloudPC: getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true)
+- [cloudPC: start](/graph/api/cloudpc-start?view=graph-rest-beta&preserve-view=true)
+- [cloudPC: stop](/graph/api/cloudpc-stop?view=graph-rest-beta&preserve-view=true)
+
 ### Identity and access | Network access
 
 List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta&preserve-view=true) and [webCategoryFilteringRule](/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta&preserve-view=true) resources that are derived types of [filteringRule](/graph/api/resources/networkaccess-filteringrule?view=graph-rest-beta&preserve-view=true).
