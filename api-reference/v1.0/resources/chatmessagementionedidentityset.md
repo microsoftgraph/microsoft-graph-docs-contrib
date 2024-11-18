@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # chatMessageMentionedIdentitySet resource type
