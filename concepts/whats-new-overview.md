@@ -27,7 +27,7 @@ The Defender for Identity sensors management API enables you to create detailed 
 
 ### Device and app management | Cloud PC
 
-Added new endpoints to support application permissions in the following methods of the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+Added new endpoints that support application permissions in the following methods of the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
 - [cloudPC: getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true)
 - [cloudPC: start](/graph/api/cloudpc-start?view=graph-rest-beta&preserve-view=true)
 - [cloudPC: stop](/graph/api/cloudpc-stop?view=graph-rest-beta&preserve-view=true)
