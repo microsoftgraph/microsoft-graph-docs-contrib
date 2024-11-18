@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Updated the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method to support a new endpoint that gets the launch info for the specified Cloud PC using application permissions.",
+          "Description": "Updated the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method to support a new endpoint that gets the launch information for the specified Cloud PC using application permissions.",
           "Target": "getCloudPcLaunchInfo"
         },
         {
