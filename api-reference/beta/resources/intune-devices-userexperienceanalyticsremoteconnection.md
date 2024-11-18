@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsRemoteConnection resource type"
-description: "The user experience analyte remote connection entity."
+description: "The user experience analytics remote connection entity. The report will be retired on December 31, 2024. You can start using the Cloud PC connection quality report now via https://learn.microsoft.com/windows-365/enterprise/report-cloud-pc-connection-quality."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analyte remote connection entity.
+The user experience analytics remote connection entity. The report will be retired on December 31, 2024. You can start using the Cloud PC connection quality report now via https://learn.microsoft.com/windows-365/enterprise/report-cloud-pc-connection-quality.
 
 ## Methods
 |Method|Return Type|Description|

@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2046
+Content-Length: 2123
 
 {
   "value": {
@@ -108,6 +108,10 @@ Content-Length: 2046
     "connectAutomatically": true,
     "connectWhenNetworkNameIsHidden": true,
     "wiFiSecurityType": "wpaEnterprise",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "proxySettings": "manual",
+    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
     "eapType": "eapTtls",
     "trustedServerCertificateNames": [
       "Trusted Server Certificate Names value"
@@ -115,9 +119,7 @@ Content-Length: 2046
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
-    "proxySettings": "manual",
-    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```
