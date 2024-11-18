@@ -71,7 +71,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders
+GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 # [C#](#tab/csharp)
@@ -126,7 +126,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/identityProviders",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
    "value":[
       {
          "@odata.type": "microsoft.graph.builtInIdentityProvider",
@@ -160,7 +160,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders
+GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 # [C#](#tab/csharp)
@@ -215,7 +215,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/identityProviders",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
     "value": [
         {
             "@odata.type": "#microsoft.graph.socialIdentityProvider",
@@ -253,7 +253,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders
+GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 # [C#](#tab/csharp)
@@ -308,7 +308,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/identityProviders",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/identityProviders?$select=displayName",
     "value": [
         {
