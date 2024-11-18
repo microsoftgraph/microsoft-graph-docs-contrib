@@ -5,6 +5,7 @@ author: "yogesh-randhawa"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/17/2024
 ---
 
 # customSecurityAttributeStringValueExemption resource type

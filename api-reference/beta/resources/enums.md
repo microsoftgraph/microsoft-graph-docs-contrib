@@ -747,7 +747,6 @@ Namespace: microsoft.graph
 | trustedCertificateAuthority |
 | unknownFutureValue |
 
-
 ### customSecurityAttributeComparisonOperator values 
 
 | Member |
