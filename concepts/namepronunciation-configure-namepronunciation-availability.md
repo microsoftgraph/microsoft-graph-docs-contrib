@@ -25,7 +25,7 @@ Enabling name pronunciation in an organization facilitates correct pronunciation
 
 Name Pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
 
-The end user experience with this feature might evolve over time. For current information about the end user experience, see Record and display your name pronunciation on your profile card 
+The end user experience with this feature might evolve over time. 
 
 Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable display user-created name pronunciations, set the **isEnabledInOrganization** property of the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object to `true`. When this property is set to `true`, pronunciation is displayed for everyone within the organization. When this property is set to `false`, pronunciation not displayed for anyone within or outside the organization. The default setting is `false`.
 
