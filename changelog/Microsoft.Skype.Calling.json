@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopTranscription",
           "ChangeType": "Addition",
-          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Description": "Added the [stopTranscription](https://learn.microsoft.com/en-us/graph/api/call-stopTranscription?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
