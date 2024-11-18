@@ -18,7 +18,7 @@ ms.topic: include
 >     - Compliance Administrator
 >     - Security Administrator
 >     - Identity Governance Administrator
->
+> 
 > In app-only scenarios, the calling app can be assigned one of the preceding supported roles instead of the `EntitlementManagement.Read.All` application permission.  A user who is specified in the `specificAllowedTargets` property of the access package's policies is less privileged than the `EntitlementManagement.Read.All` application permission.
 > 
 > For more information, see [Delegation and roles in entitlement management](/entra/id-governance/entitlement-management-delegate) and [how to delegate access governance to access package managers in entitlement management](/entra/id-governance/entitlement-management-delegate-managers).
