@@ -22,8 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_list_connectedorganizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-connectedorganizations-permissions.md)]
 
-> [!NOTE]
-> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported Microsoft Entra role or a custom role with a supported role permission. Identity Governance Administrator is the least privileged role supported for this operation.
+[!INCLUDE [rbac-entitlement-identity-governance-read](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-read.md)]
 
 ## HTTP request
 
