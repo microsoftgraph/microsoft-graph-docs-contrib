@@ -1,6 +1,6 @@
 ---
 title: "Get discoveredCloudAppInfo"
-description: "Get the details of risk attributes of the security, legal, and compliance risk attributes of the discovered cloud apps."
+description: "Get the details of the security, legal, and compliance risk attributes of the discovered cloud apps."
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
