@@ -41,7 +41,7 @@ The following table lists some solutions you can build by using the Teams client
 
 > [!NOTE]
 >To build any Graph solutions, follow this guide on [how to register and give the right permissions to your application](/graph/auth/auth-concepts).
-> 
+
 ### Create/update/cancel 
 - Use the [CREATE webinar API](/graph/api/virtualeventsroot-post-webinars) to create a draft of the event, followed by the [PUBLISH webinar API](/graph/api/virtualeventwebinar-publish) to complete the creation and make it visible to its audience.
    - The webinar created via Microsoft Graph APIs is a Teams webinar that’s visible and editable in the Teams client. 
