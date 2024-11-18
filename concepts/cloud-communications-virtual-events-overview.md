@@ -11,7 +11,6 @@ ms.subservice: "cloud-communications"
 Microsoft Teams and Microsoft Graph supports multiple types of scheduled real-time voice and video experiences ranging from ad hoc meetings suitable for a few participants to large structured virtual events like webinars and town halls with thousands of attendees.
 
 Use the following table to choose the right meeting type for your use case. 
-
 |Teams Meeting type  | Microsoft Graph       | Use cases                                                                                                                       |
 |--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | [Online meeting](https://support.microsoft.com/en-us/office/meetings-in-microsoft-teams-e0b0ae21-53ee-4462-a50d-ca9b9e217b67) | [onlineMeeting](/graph/api/resources/onlinemeeting) <br> [attendanceReport](/graph/api/resources/meetingattendancereport) <br> [attendanceRecord](/graph/api/resources/attendancerecord) <br> [online meeting webhooks](/graph/changenotifications-for-onlinemeeting) | - Hosting a meeting for up to 1,000 participants who can be inside or outside of your organization. Everyone can interact via audio, video, chat, and screen sharing. <br> - Meetings are either scheduled, ad hoc, or channel meetings. |
