@@ -53,6 +53,7 @@ This resource supports:
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Default is `true`. <br/><br/> Supports `$filter` (`eq`, `ne`, `not`, `in`). Only callers with at least the Cloud Device Administrator role can set this property.|
+|alternativeNames|String collection|List of alternative names for the device.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderby`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
@@ -120,6 +121,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "accountEnabled": "Boolean",
+  "alternativeNames": ["String"],
   "approximateLastSignInDateTime": "String (timestamp)",
   "complianceExpirationDateTime": "String (timestamp)",
   "deviceCategory": "String",

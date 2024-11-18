@@ -32,6 +32,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |certificateBasedApplicationConfigurations|[certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) collection|Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.|
+|mutualTlsOauthConfigurations|[mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) collection|Defines the trusted certificate authorities for certificates that can be added to Internet of Things (IoT) devices. |
 
 ## JSON representation
 
