@@ -20,19 +20,19 @@ Enabling name pronunciation in an organization facilitates correct pronunciation
 
 - When name pronunciation is enabled, a user can optionally add and manage pronunciation in the profile card in Teams and Outlook web and desktop. 
 - Name Pronunciation appears by the user's name on the profile card in Teams. 
-- Name Pronunciation is displayed only internally within the organization. In multi-tenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
+- Name Pronunciation is displayed only internally within the organization. In multitenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
 - Anyone who has an account in the organization, including guest accounts, can see name pronunciation on profile cards. 
 
-Name Pronunciation data is stored in the user's mailbox. For more information see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
+Name Pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
 
 The end user experience with this feature might evolve over time. For current information about the end user experience, see Record and display your name pronunciation on your profile card 
 
-Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) property to `true`. When this property is set to true, pronunciation is displayed for everyone within the organization. When this property is set to false, pronunciation not displayed for anyone within or outside the organization. The default setting is false.
+Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable display user-created name pronunciations, set the **isEnabledInOrganization** property of the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object to `true`. When this property is set to `true`, pronunciation is displayed for everyone within the organization. When this property is set to `false`, pronunciation not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
 > When you turn name pronunciation on or off, it can take up to seven hours for users to see changes. For example, if you turn pronunciation on, users can't see the option to add recordings on their profile card for up to seven hours. If you turn pronunciation off, any previously set recording might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours. 
 >
-> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts getting deleted. The data deletion process might take up to 30 days to complete. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
+> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts getting deleted. The data deletion process can take up to 30 days to complete. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
 
 ## Configure name pronunciation settings using PowerShell
 
@@ -76,7 +76,7 @@ By default, name pronunciations are disabled. You can use the Microsoft Graph Po
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command, specify `-IsEnabledInOrganization` as `true`.
+After you set the permissions, use the following command, specifying `true` for the value of `-IsEnabledInOrganization`.
 
 ```powershell
   Update-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$true
@@ -84,7 +84,7 @@ Use the following command, specify `-IsEnabledInOrganization` as `true`.
 
 ### Disable name pronunciation in your organization
 
-Alternatively, you can make name pronunciation unavailable for your organization using the following command, where you specify `-IsEnabledInOrganization` as `false`.
+Alternatively, you can make name pronunciation unavailable for your organization using the following command, where you specify `false` for the value of `-IsEnabledInOrganization`.
 
 ```powershell
   Get-MgBetaAdminPeopleNamePronunciation -IsEnabledInOrganization:$false
@@ -92,11 +92,11 @@ Alternatively, you can make name pronunciation unavailable for your organization
 
 ## Configure name pronunciation settings using the Microsoft Graph REST API
 
-You can use the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) API to configure name pronunciation settings in your organization.
+You can use the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) resource and its associated methods to configure name pronunciation settings in your organization.
 
 ### Confirm your current settings
 
-Use the [get](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) operation to return the current settings for name pronunciation in your organization.
+Use the [Get namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) API to return the current settings for name pronunciation in your organization.
 
 The following example gets the current display settings that have name pronunciation disabled.
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ### Enable name pronunciation in your organization
 
-Use the [update](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) operation to enable name pronunciation in your organization.
+Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) operation to enable name pronunciation in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
@@ -162,9 +162,3 @@ Content-Type: application/json
   "isEnabledInOrganization": false
 }
 ```
-
-## Related content
-
-- [Turn name pronunciation on or off for your organization in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off)
-- [Pronouns in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85)
-- [Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
