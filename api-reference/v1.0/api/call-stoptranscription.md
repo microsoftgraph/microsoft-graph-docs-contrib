@@ -56,7 +56,7 @@ The following example shows the request.
   "name": "call-stopTranscription"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/communications/calls/{id}/microsoft.graph.StopTranscription
+POST https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StopTranscription
 Content-Type: application/json
 Content-Length: 56
 {
