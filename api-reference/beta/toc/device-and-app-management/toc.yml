@@ -130,7 +130,7 @@ items:
       href: ../../api/cloudpc-retrievereviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info for user
+    - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
