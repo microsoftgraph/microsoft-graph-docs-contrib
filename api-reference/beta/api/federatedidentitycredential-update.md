@@ -57,7 +57,6 @@ The following table specifies the properties that can be updated.
 |description|String|A user-provided description of what the federatedIdentityCredential is used for. It has a limit of 600 characters. |
 |issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Microsoft Entra ID is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters.|
 |subject|String|<li>For Microsoft Entra issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app.It has a limit of 600 characters.|
-|claimsMatchingExpression|[federatedIdentityExpression](../resources/federatedidentityexpression.md)| Enables the use of claims matching expressions against specified claims. For the list of supported expression syntax and claims, please visit [Flexible FIC reference](https://aka.ms/flexiblefic). |
 
 
 
@@ -76,21 +75,16 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/15be77d1-1940-43fe-8aae-94a78e078da0
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ],
-  "claimsMatchingExpression": {
-    "@odata.type": "microsoft.graph.federatedIdentityExpression"
-  }
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "Updated description",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
 }
 ```
 
@@ -137,21 +131,5 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "id": "adab08eb-b523-3601-d455-7dffb7c44a9b",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ],
-  "claimsMatchingExpression": {
-    "@odata.type": "microsoft.graph.federatedIdentityExpression"
-  }
-}
+HTTP/1.1 204 No Content
 ```
