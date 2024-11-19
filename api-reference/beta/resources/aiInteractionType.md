@@ -20,9 +20,9 @@ Represents the interaction type. Can be UserPrompt, AiResponse or UnknownFutureV
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| userPrompt | Enum | User message/prompt |
-| aiResponse | Enum | Copilot Response |
-| unknownFutureValue | Enum | Unknown future value |
+| userPrompt | String | User message/prompt |
+| aiResponse | String | Copilot Response |
+| unknownFutureValue | String | Unknown future value |
 
 ## JSON representation
 
