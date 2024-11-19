@@ -1,6 +1,6 @@
 ---
 title: "oidcClientSecretAuthentication resource type"
-description: "Represents client authentication information."
+description: "Represents client authentication information in an oidcIdentityProvider provider object where the client secret is used to authenticate the client application."
 author: "brozbab"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Client authentication information.
+Represents client authentication information in an **oidcIdentityProvider** provider object where the client secret is used to authenticate the client application with the external OpenID Connect identity provider.
 
 Inherits from [oidcClientAuthentication](../resources/oidcclientauthentication.md).
 
@@ -22,7 +22,7 @@ Inherits from [oidcClientAuthentication](../resources/oidcclientauthentication.m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|clientSecret|String|The client secret obtained from configuring the client application on the external OpenID Connect identity provider. <br> The property includes the client secret. Used when the **oidcClientSecretAuthentication** object type is set. This enables the identity provider to use either the client_secret_post or client_secret_jwt authentication method. Conversely, when the **oidcPrivateJwtKeyClientAuthentication** object type is set, the setting allows configuration of the identity provider using private_key_jwt authentication method, which doesn't require client secret.|
+|clientSecret|String|The client secret obtained from configuring the client application on the external OpenID Connect identity provider. The property includes the client secret and enables the identity provider to use either the `client_secret_post` or `client_secret_jwt` authentication method. |
 
 ### Where to get the client identifier and secret
 

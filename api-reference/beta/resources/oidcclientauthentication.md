@@ -14,12 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for client authentication.
+This resource is an abstract type from which the following types are derived:
+- [oidcClientSecretAuthentication](../resources/oidcclientsecretauthentication.md)
+- [oidcPrivateJwtKeyClientAuthentication](../resources/oidcprivatejwtkeyclientauthentication.md)
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 

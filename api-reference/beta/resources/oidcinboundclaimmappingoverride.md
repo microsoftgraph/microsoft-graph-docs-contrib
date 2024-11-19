@@ -1,6 +1,6 @@
 ---
 title: "oidcInboundClaimMappingOverride resource type"
-description: "Map identity provider claims from a token to the claims that Microsoft Entra External ID recognizes and uses."
+description: "Maps identity provider claims from a token to the claims that Microsoft Entra External ID recognizes and uses."
 author: "brozbab"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
