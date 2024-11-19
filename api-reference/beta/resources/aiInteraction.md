@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents an interaction between a user and Copilot.
 
-## Properties
+## Properties 
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
