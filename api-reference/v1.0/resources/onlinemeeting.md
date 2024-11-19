@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
+ms.date: 11/01/2024
 ---
 
 # onlineMeeting resource type
@@ -28,6 +29,10 @@ Contains information about a meeting, including the URL used to join a meeting, 
 > [!NOTE]
 >
 > A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+
+> [!CAUTION]
+> 
+> Teams live events will no longer be going away on September 30, 2024, as previously announced. While we still recommend [switching to Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) for new features and experiences, you can continue to use the Teams Live Events APIs beyond September 2024.
 
 ## Properties
 
