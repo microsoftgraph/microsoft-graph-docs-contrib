@@ -1,6 +1,6 @@
 ---
 title: "List resourceRoleScopes"
-description: "Retrieve a list of accesspackageresourcerolescope objects."
+description: "Retrieve an access package with a list of accessPackageResourceRoleScope objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"

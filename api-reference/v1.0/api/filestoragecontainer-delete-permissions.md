@@ -52,7 +52,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -103,5 +102,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
