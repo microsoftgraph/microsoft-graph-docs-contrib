@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Copilot interactions data, including both the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response to the user for Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
+Get all Copilot interactions data, including both the user prompt to Copilot and the Copilot response. This API captures the user intent and Copilot-accessed resources and the response to the user for Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
 
 This API returns an [aiInteraction](../resources/aiinteraction.md) resource.
 
