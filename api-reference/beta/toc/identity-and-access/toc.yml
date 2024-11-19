@@ -380,6 +380,14 @@ items:
         href: ../../api/subscribedsku-get.md
       - name: List
         href: ../../api/subscribedsku-list.md
+  - name: Microsoft Entra admin center settings
+    items:
+    - name: Microsoft Entra admin center settings
+      href: ../../resources/uxsetting.md
+    - name: Get
+      href: ../../api/uxsetting-get.md
+    - name: Update
+      href: ../../api/uxsetting-update.md
   - name: Mobility management policy
     items:
     - name: Mobility management policy
@@ -629,42 +637,6 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
-  - name: Trusted certificate authorities for apps (preview)
-    items:
-    - name: Certificate-based application configuration
-      items:
-      - name: Certificate-based application configuration
-        href: ../../resources/certificatebasedapplicationconfiguration.md
-      - name: List
-        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
-      - name: Create
-        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
-      - name: Get
-        href: ../../api/certificatebasedapplicationconfiguration-get.md
-      - name: Update
-        href: ../../api/certificatebasedapplicationconfiguration-update.md
-    - name: Certificate authority as entity
-      items:
-      - name: Certificate authority as entity
-        href: ../../resources/certificateauthorityasentity.md
-      - name: List
-        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
-      - name: Create
-        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
-      - name: Get
-        href: ../../api/certificateauthorityasentity-get.md
-      - name: Update
-        href: ../../api/certificateauthorityasentity-update.md
-      - name: Delete
-        href: ../../api/certificateauthorityasentity-delete.md
-  - name: Ux setting
-    items:
-    - name: Ux setting
-      href: ../../resources/uxsetting.md
-    - name: Get
-      href: ../../api/uxsetting-get.md
-    - name: Update
-      href: ../../api/uxsetting-update.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -3028,6 +3000,82 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+  - name: Public key infrastructure
+    items:
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+  - name: Trusted certificate authorities for apps (preview)
+    items:
+    - name: Certificate-based application configuration
+      items:
+      - name: Certificate-based application configuration
+        href: ../../resources/certificatebasedapplicationconfiguration.md
+      - name: List
+        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+      - name: Create
+        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedapplicationconfiguration-get.md
+      - name: Update
+        href: ../../api/certificatebasedapplicationconfiguration-update.md
+    - name: Certificate authority as entity
+      items:
+      - name: Certificate authority as entity
+        href: ../../resources/certificateauthorityasentity.md
+      - name: List
+        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthorityasentity-get.md
+      - name: Update
+        href: ../../api/certificateauthorityasentity-update.md
+      - name: Delete
+        href: ../../api/certificateauthorityasentity-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow
@@ -4119,6 +4167,10 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+    - name: FQDN filtering rule
+      href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: Web category filtering rule
+      href: ../../resources/networkaccess-webcategoryfilteringrule.md
 - name: Partner customer administration
   items:
   - name: Partner security alert

@@ -4,6 +4,7 @@ description: "You can use the Microsoft Graph API to create a Microsoft Teams ta
 author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 11/07/2024
 ---
 
 # Configure the built-in tab types in Microsoft Teams
