@@ -10,6 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.devicemanagement.virtualendpoint.provisioningpolicies.item.apply.ApplyPostRequestBody applyPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.provisioningpolicies.item.apply.ApplyPostRequestBody();
 applyPostRequestBody.setPolicySettings(EnumSet.of(CloudPcPolicySettingType.Region));
+applyPostRequestBody.setReservePercentage(80);
 graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().byCloudPcProvisioningPolicyId("{cloudPcProvisioningPolicy-id}").apply().post(applyPostRequestBody);
 
 
