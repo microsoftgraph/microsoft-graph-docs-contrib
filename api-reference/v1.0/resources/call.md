@@ -1,6 +1,5 @@
 ---
 title: "call resource type"
-ms.date: 11/15/2024
 description: "The **call** resource is created when there's an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`."
 author: "ananmishr"
 ms.localizationpriority: high
