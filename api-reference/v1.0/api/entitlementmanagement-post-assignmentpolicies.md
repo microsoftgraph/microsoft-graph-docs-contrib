@@ -1,6 +1,6 @@
 ---
 title: "Create assignmentPolicies"
-description: "Create a new accessPackageAssignmentPolicy object."
+description: "Create a new accessPackageAssignmentPolicy object in Microsoft Entra entitlement management."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.  The request will include a reference to the [accessPackage](../resources/accesspackage.md) that will contain this policy, which must already exist.
+Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md). The request includes a reference to the [accessPackage](../resources/accesspackage.md) that contains this policy, which must already exist.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
