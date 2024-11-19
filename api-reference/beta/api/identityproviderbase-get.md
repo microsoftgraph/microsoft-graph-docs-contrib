@@ -297,7 +297,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_openidconnectidentityprovider_from_identityproviderbase",
-  "sampleKeys": ["OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000"]
+  "sampleKeys": ["Contoso-00001111-aaaa-2222-bbbb-3333cccc4444"]
 }
 -->
 

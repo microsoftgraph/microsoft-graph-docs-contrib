@@ -267,7 +267,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider_forAzure_AD_B2C",
-  "sampleKeys": ["OIDC-V1-Nam_AD_Test-00001111-aaaa-2222-bbbb-3333cccc4444"]
+  "sampleKeys": ["Contoso-OIDC-00001111-aaaa-2222-bbbb-3333cccc4444"]
 }
 -->
 

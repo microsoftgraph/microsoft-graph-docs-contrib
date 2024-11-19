@@ -21,8 +21,8 @@ You can configure the following standard OpenID Connect (OIDC) claims with the c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|address|[oidcAddressInboundClaims](../resources/oidcaddressinboundclaims.md)|End-user's preferred postal address. The value of the address member is a JSON [RFC8259] structure containing some or all of the members defined in the resource type|
-|email|String|End-user's preferred e-mail address. Its value MUST conform to the RFC 5322 [RFC5322] addr-spec syntax.|
+|address|[oidcAddressInboundClaims](../resources/oidcaddressinboundclaims.md)|End-user's preferred postal address. The value of the address member is a JSON RFC8259 structure containing some or all of the members defined in the resource type|
+|email|String|End-user's preferred e-mail address. Its value MUST conform to the RFC 5322 addr-spec syntax.|
 |email_verified|String|True if the end-user's e-mail address has been verified by the identity provider; otherwise, false. When this claim value is true, this means that your identity provider took affirmative steps to ensure that this e-mail address was controlled by the end-user at the time the verification was performed. If this claim value is false, or not mapped with any claim of the identity provider, the user is asked to verify email during sign-up if email is required in the user flow.|
 |family_name|String|Surname(s) or family name of the end-user.|
 |given_name|String|Given name(s) or first name(s) of the end-user.|

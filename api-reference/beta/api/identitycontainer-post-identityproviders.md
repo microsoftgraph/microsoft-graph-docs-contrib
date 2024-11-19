@@ -135,7 +135,7 @@ Content-type: application/json
   "displayName": "Login with Amazon",
   "identityProviderType": "Amazon",
   "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
-  "clientSecret": "4294967296"
+  "clientSecret": "42*****96"
 }
 ```
 
@@ -195,7 +195,7 @@ Content-type: application/json
     "displayName": "Login with Amazon",
     "identityProviderType": "Amazon",
     "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
-    "clientSecret": "4294967296"
+    "clientSecret": "42*****96"
 }
 ```
 
@@ -424,7 +424,7 @@ Content-type: application/json
   "responseType": "code",
   "scope": "openid profile email offline_access",
   "clientAuthentication": {
-    "@odata.type": "#microsoft.graph.OIDCClientSecretAuthentication",
+    "@odata.type": "#microsoft.graph.oidcClientSecretAuthentication",
     "clientSecret": "4294967296"
   },
   "inboundClaimMapping": {
