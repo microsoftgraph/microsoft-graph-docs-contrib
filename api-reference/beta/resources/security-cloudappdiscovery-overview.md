@@ -1,5 +1,5 @@
 ---
-title: "Use the cloud app discovery API in Microsoft Graph (preview)"
+title: "Use the Microsoft Defender for Cloud apps API in Microsoft Graph (preview)"
 description: "Learn how to programmatically query information about your discovered SaaS applications using the cloud app discovery API in Microsoft Graph."
 author: "mravela"
 ms.localizationpriority: medium
@@ -7,21 +7,21 @@ ms.subservice: "security"
 doc_type: conceptualPageType
 ---
 
-# Use the cloud app discovery API in Microsoft Graph (preview)
+# Use the Microsoft Defender for Cloud apps API in Microsoft Graph (preview)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the cloud app discovery API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The cloud app discovery API in Microsoft Graph provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to analyze the risks associated with those apps. 
+Use the Microsoft Defender for Cloud apps API in Microsoft Graph to get data and insights across the discovered SaaS apps ecosystem. The discovered cloud app API in Microsoft Graph provides an efficient and reliable way to query information about discovered apps. This makes it easier for you to analyze the risks associated with those apps. 
 
-The cloud app discovery API enables you to do the following:
+The discovered cloud app API enables you to do the following:
 
 - Programmatically analyze the risk profile of all discovered apps. 
 - Programmatically filter discovered apps by using multiple parameters and filter options. 
 - Search asynchronously with support for automation, which is accessible to both users and applications. 
 
-The cloud app discovery API is defined in the OData subnamespace `microsoft.graph.security`.
+The discovered cloud app API is defined in the OData subnamespace `microsoft.graph.security`.
 
-## Cloud app discovery API use cases
+## Discovered cloud app API use cases
 
 Customers can get all the data available on the discovered apps page via the Microsoft Graph API. The following are some key user scenarios the API supports.  
 
@@ -39,7 +39,7 @@ Access detailed information from the cloud app catalog for a specific discovered
 
 ## Next steps
 
-Use the Microsoft Graph cloud app discovery API to get data and insights from the discovered SaaS apps ecosystem. To learn more:
+Use the Microsoft Graph discovered cloud app API to get data and insights from the discovered SaaS apps ecosystem. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
