@@ -27,7 +27,7 @@ Represents the identity of the user who has initiated a sign-up
 
 When filtering on the **signUpIdentity** property for a **selfServiceSignUp**:
 
-- Filtering on **signUpIdentifierType** is supported for the following values: `federated`, `emailAddress`.
+- Filtering on **signUpIdentifierType** is supported for the following values: `emailAddress`.
 
 
 ## JSON representation
