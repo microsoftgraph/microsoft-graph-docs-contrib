@@ -54,8 +54,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 To get the name pronunciation configuration for an organization, use the following command:
 
-> [!NOTE]
-> The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
@@ -69,8 +68,7 @@ To get the name pronunciation configuration for an organization, use the followi
 
 Name pronunciations are turned off by default. You can use the Microsoft Graph PowerShell module to make name pronunciation available in your organization.
 
-> [!NOTE]
-> The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
