@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Represents artifact count metadata of a particular [Restore Session](../resources/restoreSessionBase.md). Restore session APIs are used by SharePoint, OneDrive and Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a protection policy.
+Represents artifact count metadata of a particular [Restore Session](../resources/restoreSessionBase.md). Restore session APIs are used by SharePoint, OneDrive, and Exchange Online Admins to perform restore-related tasks on artifacts that are protected as part of a protection policy.
 
 ## Methods
 
@@ -32,7 +32,7 @@ Represents Represents artifact count metadata of a particular [Restore Session](
 
 |Property|Type|Description|
 |:---|:---|:---|
-|total|Int32|Count of artifacts present in the restore session.|
+|total|Int32|Number of artifacts present in the restore session.|
 |inProgress|Int32|Count of artifacts whose restore is in progress.|
 |completed|Int32|Count of artifacts whose restore is completed.|
 |failed|Int32|Count of artifacts whose restore is failed.|
