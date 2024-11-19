@@ -22,7 +22,7 @@ Represents the links that appear in the interaction.
 |:---------------|:--------|:----------|
 | linkUrl | String | The URL of the link. |
 | displayName | String | The name of the link. |
-| linkType | String | Refers to citations in bot response messages. (Applies to appchat and bizchat). |
+| linkType | String | Information about a link in an AppChat or BizChat interaction. |
 
 ## JSON representation
 
