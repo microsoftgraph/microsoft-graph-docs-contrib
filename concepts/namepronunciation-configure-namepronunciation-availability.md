@@ -10,29 +10,29 @@ ms.date: 12/11/2024
 
 # Manage pronunciation settings for an organization using the Microsoft Graph API
 
-Name Pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph Name Pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of any pronunciation users might have set up for themselves. 
+Name Pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph Name Pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of any pronunciation that users create for themselves. 
 
 Correctly pronouncing someone's name shows inclusion and respect as it's a vital part of one's identity. By sharing how one's name is pronounced, we can avoid making assumptions about how to address them, especially during a first interaction. In a hybrid, multicultural work or school environment, the simple act of pronouncing names correctly can help build trust and improve communication. 
 
 Global administrators can enable or disable name pronunciation for everyone in the organization using the Microsoft Graph API. By default, name pronunciation is disabled. 
 
-Enabling name pronunciation in an organization facilitates correct pronunciation of others' names within the organization. This includes the following end user experiences: 
+Enabling name pronunciation in an organization facilitates correct pronunciation of others' names within the organization, including the following end user experiences: 
 
-- When name pronunciation is enabled, a user can optionally add and manage pronunciation in the profile card in Teams and Outlook web and desktop. 
-- Name Pronunciation appears by the user's name on the profile card in Teams. 
-- Name Pronunciation is displayed only internally within the organization. In multitenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
-- Anyone who has an account in the organization, including guest accounts, can see name pronunciation on profile cards. 
-
-Name Pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
+- Name pronunciation, when enabled, allows users to optionally add and manage pronunciation in the profile card in Teams and Outlook web and desktop. 
+- Name pronunciation appears by the user's name on the profile card in Teams. 
+- Pronunciations are displayed only internally within the organization. In multitenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
+- Pronunnciations are visible on profile cards to anyone who has an account in the organization, including guest accounts.
 
 The end user experience with this feature might evolve over time. 
+
+Name pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
 
 Global administrators can decide whether to display pronunciation that users set up in their profile cards. To enable display user-created name pronunciations, set the **isEnabledInOrganization** property of the [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object to `true`. When this property is set to `true`, pronunciation is displayed for everyone within the organization. When this property is set to `false`, pronunciation not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
 > When you turn name pronunciation on or off, it can take up to seven hours for users to see changes. For example, if you turn pronunciation on, users can't see the option to add recordings on their profile card for up to seven hours. If you turn pronunciation off, any previously set recording might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours. 
 >
-> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts getting deleted. The data deletion process can take up to 30 days to complete. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
+> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts getting deleted. Deleting name pronunciation data can take up to 30 days. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
 
 ## Configure name pronunciation settings using PowerShell
 
