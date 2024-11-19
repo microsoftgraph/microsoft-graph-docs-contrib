@@ -2,6 +2,7 @@
 title: "newsLinkPage resource type"
 description: "Represents a news link page in a site pages list."
 author: "shgangan"
+ms.date: 04/01/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "resourcePageType"
