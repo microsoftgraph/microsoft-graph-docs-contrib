@@ -1,6 +1,7 @@
 ---
 title: "aiInteractionType resource type"
 description: "Represents an AI interaction type."
+ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"

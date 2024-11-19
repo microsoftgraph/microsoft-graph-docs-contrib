@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API will capture the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook.
+Get all Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
 This API returns [aiInteraction](../resources/aiinteraction.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -43,7 +43,7 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?model=A
 GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?model=B
 ```
 
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
@@ -52,7 +52,7 @@ This method also supports [date range parameters](/graph/query-parameters) to 
 GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z
 ```
 
-This method supports also supports `$filter`. The following table lists examples.
+This method also supports `$filter`. The following table lists examples.
 
 |Scenario                                         | `$filter` parameter                                                                                                 |Possible values                                                                                             |
 |:------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-## Examples 2: Retrieve all the copilot interactions with appclass filters
+## Examples 2: Retrieve all the copilot interactions with app class filters
 
 ### Request
 

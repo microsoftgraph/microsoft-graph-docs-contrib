@@ -1,6 +1,7 @@
 ---
 title: "aiInteractionContext resource type"
 description: "Represents an AI Interaction context."
+ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"

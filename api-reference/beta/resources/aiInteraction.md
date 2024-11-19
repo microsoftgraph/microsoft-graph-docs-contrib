@@ -1,6 +1,7 @@
 ---
 title: "aiInteraction resource type"
 description: "Represents an individual AI Interaction."
+ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
@@ -19,17 +20,17 @@ Represents an aiInteraction between Copilot and User.
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| Id | String | Identifier of the message. |
-| sessionId | String | This is the thread id/conversation id. This maps to every copilot session user has. |
-| requestId | String | This is supposed to group user prompt and ai response. |
-| Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | This captures all contexts associated with interaction. |
+| ID | String | Identifier of the message. |
+| sessionId | String | This ID is the thread ID/conversation ID. It maps to every copilot session user have. |
+| requestId | String | This ID is supposed to group user prompt and ai response. |
+| Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | This ID captures all contexts associated with interaction. |
 | appClass | String | The data source for Copilot data. Examples: IPM.SkypeTeams.Message.Copilot.Excel, IPM.SkypeTeams.Message.Copilot.Loop |
-| interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Can be UserPrompt, AiResponse or UnknownFutureValue. UserPrompt - User message/prompt. AiResponse - Copilot Response. UnknownFutureValue � None of them. |
+| interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Can be UserPrompt, AiResponse, or UnknownFutureValue. UserPrompt - User message/prompt. AiResponse - Copilot Response. UnknownFutureValue � None of them. |
 | conversationType | String | Type of thread. Examples: appchat or bizchat. |
 | From | [identitySet](../resources/identityset.md)  | User/Application/Device associated with this interaction |
 | etag | String | Epoch timestamp representation of LastModifiedTime |
-| createdDateTime | DateTime | The time at which the message was created. |
-| body | [itemBody](../resources/itembody.md) | The body of the message. It specifies the body as well as declares the kind of body it is. |
+| createdDateTime | DateTime | Message creation time. |
+| body | [itemBody](../resources/itembody.md) | The body of the message. It specifies the body and declares the kind of body it is. |
 | attachments | Collection of [aiInteractionAttachment](../resources/aiinteractionattachment.md) | Describes a message attachment like cards, images etc. |
 | links | Collection of [aiInteractionLink](../resources/aiinteractionlink.md) | The links that are part of the interaction. |
 | mentions | Collection of [aiInteractionMention](../resources/aiinteractionmention.md) | This lists the entities (users, bots etc.) that were mentioned in the interaction. |
