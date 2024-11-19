@@ -1,6 +1,7 @@
 ---
 title: "aiInteraction-getAllEnterpriseInteractions"
 description: "Get all Copilot interactions data between the user and Copilot."
+ms.date: 11/18/2024
 author: "bkeerthivasa"
 ms.localizationpriority: high
 ms.subservice: "teams"
