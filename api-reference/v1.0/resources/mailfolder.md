@@ -81,6 +81,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
+|sizeInBytes|Int32|The size of the mailFolder in bytes.|
 
 **Access item counts efficiently**
 
@@ -160,6 +161,7 @@ The following JSON representation shows the resource type.
   "id": "string (identifier)",
   "parentFolderId": "string",
   "totalItemCount": 1024,
+  "sizeInBytes": 1024,
   "unreadItemCount": 1024,
   "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
