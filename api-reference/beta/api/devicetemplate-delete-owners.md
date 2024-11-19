@@ -1,6 +1,6 @@
 ---
-title: "Get deviceTemplate owners"
-description: "Get owners of a device template."
+title: "Delete deviceTemplate owners"
+description: "Delete owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"

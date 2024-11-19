@@ -1,6 +1,6 @@
 ---
-title: "Get deviceTemplate owners"
-description: "Get owners of a device template."
+title: "Add deviceTemplate owners"
+description: "Add owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
