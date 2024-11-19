@@ -26,7 +26,7 @@ Represents an interaction between a user and Copilot.
 | Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | The identifer that maps to all contexts associated with an interaction. |
 | appClass | String | The data source for Copilot data. For example, `IPM.SkypeTeams.Message.Copilot.Excel` or `IPM.SkypeTeams.Message.Copilot.Loop` |
 | interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Indicates whether the interaction is a prompt or a Copilot response. Possible values are `UserPrompt`, `AiResponse`, or `UnknownFutureValue`. |
-| conversationType | String | The type of the conversation. Examples: appchat or bizchat. |
+| conversationType | String | The type of the conversation. Examples: `appchat` or `bizchat`. |
 | From | [identitySet](../resources/identityset.md)  | The user, application, or device that is associated with this interaction. |
 | etag | String | The epoch timestamp of the **LastModifiedTime** property. |
 | createdDateTime | DateTime | The time that the interaction was created. |
