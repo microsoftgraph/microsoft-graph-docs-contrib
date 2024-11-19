@@ -218,6 +218,10 @@ items:
     href: ../../api/security-detectionrule-update.md
   - name: Delete
     href: ../../api/security-detectionrule-delete.md
+- name: Discovered cloud apps (preview)
+  items:
+  - name: Overview
+    href: ../../resources/security-cloudappdiscovery-overview.md
 - name: eDiscovery
   items:
   - name: eDiscovery case
