@@ -25,16 +25,24 @@ Represents an interaction between a user and Copilot.
 | requestId | String | The identifier that groups a user prompt with its Copilot response. |
 | Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | The identifer that maps to all contexts associated with an interaction. |
 | appClass | String | The data source for Copilot data. For example, `IPM.SkypeTeams.Message.Copilot.Excel` or `IPM.SkypeTeams.Message.Copilot.Loop` |
-| interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Indicates whether the interaction is a prompt or a Copilot response. Possible values are `UserPrompt`, `AiResponse`, or `UnknownFutureValue`. |
+| interactionType | [aiInteractionType](#aiInteractionType-values) | Indicates whether the interaction is a prompt or a Copilot response. Possible values are `UserPrompt`, `AiResponse`, or `UnknownFutureValue`. |
 | conversationType | String | The type of the conversation. Examples: appchat or bizchat. |
 | From | [identitySet](../resources/identityset.md)  | The user, application, or device that is associated with this interaction. |
-| etag | String | The epoch timestamp of the **LastModifiedTime** property. |
+| etag | String | The timestamp of when the interaction was last modified.. |
 | createdDateTime | DateTime | The time that the interaction was created. |
 | body | [itemBody](../resources/itembody.md) | The body of the message, including the text of the body and its body type. |
 | attachments | Collection of [aiInteractionAttachment](../resources/aiinteractionattachment.md) | The collection of documents attached to the interaction, such as cards, images, and so on. |
 | links | Collection of [aiInteractionLink](../resources/aiinteractionlink.md) | The collection of links that appear in the interaction. |
 | mentions | Collection of [aiInteractionMention](../resources/aiinteractionmention.md) | The collection of the entities that were mentioned in the interaction, including users, bots, and so on. |
 | locale | String | The locale of the sender. |
+
+### aiInteractionType values
+
+| Member |
+| ------------------ |
+| userPrompt |
+| aiResponse |
+| unknownFutureValue |
 
 ## JSON representation
 

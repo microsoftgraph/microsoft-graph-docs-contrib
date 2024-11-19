@@ -55,11 +55,9 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=
 
 This method also supports the `$filter` query parameter. The following table shows an example.
 
-|Scenario|`$filter` parameter|Possible values|
-|:-------|:------------------|:--------------|
-|Get the copilot messages for a particular source|$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Word' or appClass eq 'IPM.SkypeTeams.Message.Copilot.BizChat'| |
-
->**Note:** These filter clauses can be joined by using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
+|Scenario|`$filter` parameter|
+|:-------|:------------------|
+|Get the copilot messages for a particular source|$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Word' or appClass eq 'IPM.SkypeTeams.Message.Copilot.BizChat'|
 
 ## Request headers
 |Header|Value|
@@ -150,9 +148,9 @@ Content-type: application/json
 }
 ```
 
-## Examples 2: Retrieve all the copilot interactions with app class filters
+## Examples 2: The following example shows a request that gets all the copilot interactions for a user with app class filters
 
-### Request
+### Request that gets all the copilot interactions for a user.
 
 <!-- {
   "blockType": "request",
@@ -162,7 +160,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions
 ```
 
-### Response
+### Response of a copilot interactions for a user.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
