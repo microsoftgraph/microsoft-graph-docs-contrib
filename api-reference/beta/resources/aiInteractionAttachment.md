@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionAttachment resource type"
-description: "Represents message attachment like cards, images etc."
+description: "Represents message attachment, such as like cards, images, and so on."
 ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents message attachment like cards, images etc.
+Represents message attachment, such as like cards, images, and so on.
 
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| attachmentId | String | The identifier for the attachment. This is unique in scope of message only. |
-| contentType | String | The type of the content. This can be something like reference, file, image/imageType etc. |
+| attachmentId | String | The identifier for the attachment. This identifier is only unique within the message scope. |
+| contentType | String | The type of the content. For example, `reference`, `file`, `image/imageType`, and so on. |
 | contentUrl | String | The URL of the content. |
-| content | String | The content itself. |
+| content | String | The content of the attachment. |
 | name | String | The name of the attachment. |
 
 ## JSON representation

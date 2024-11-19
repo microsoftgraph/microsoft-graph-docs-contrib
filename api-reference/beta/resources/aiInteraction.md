@@ -14,27 +14,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an aiInteraction between Copilot and User.
+Represents an interaction between a user and Copilot.
 
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 | ID | String | Identifier of the message. |
-| sessionId | String | This ID is the thread ID/conversation ID. It maps to every copilot session user have. |
-| requestId | String | This ID is supposed to group user prompt and ai response. |
-| Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | This ID captures all contexts associated with interaction. |
-| appClass | String | The data source for Copilot data. Examples: IPM.SkypeTeams.Message.Copilot.Excel, IPM.SkypeTeams.Message.Copilot.Loop |
-| interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Can be UserPrompt, AiResponse, or UnknownFutureValue. UserPrompt - User message/prompt. AiResponse - Copilot Response. UnknownFutureValue � None of them. |
-| conversationType | String | Type of thread. Examples: appchat or bizchat. |
-| From | [identitySet](../resources/identityset.md)  | User/Application/Device associated with this interaction |
-| etag | String | Epoch timestamp representation of LastModifiedTime |
-| createdDateTime | DateTime | Message creation time. |
-| body | [itemBody](../resources/itembody.md) | The body of the message. It specifies the body and declares the kind of body it is. |
-| attachments | Collection of [aiInteractionAttachment](../resources/aiinteractionattachment.md) | Describes a message attachment like cards, images etc. |
-| links | Collection of [aiInteractionLink](../resources/aiinteractionlink.md) | The links that are part of the interaction. |
-| mentions | Collection of [aiInteractionMention](../resources/aiinteractionmention.md) | This lists the entities (users, bots etc.) that were mentioned in the interaction. |
-| locale | String | Sender�s locale |
+| sessionId | String | The thread ID/conversation identifier that maps to all copilot sessions for the user. |
+| requestId | String | The identifier that groups a user prompt with its Copilot response. |
+| Contexts | Collection of [aiInteractionContext](../resources/aiinteractioncontext.md) | The identifer that maps to all contexts associated with an interaction. |
+| appClass | String | The data source for Copilot data. For example, `IPM.SkypeTeams.Message.Copilot.Excel` or `IPM.SkypeTeams.Message.Copilot.Loop` |
+| interactionType | [aiInteractionType](../resources/aiinteractiontype.md) | Indicates whether the interaction is a prompt or a Copilot response. Possible values are `UserPrompt`, `AiResponse`, or `UnknownFutureValue`. |
+| conversationType | String | The type of the conversation. Examples: appchat or bizchat. |
+| From | [identitySet](../resources/identityset.md)  | The user, application, or device that is associated with this interaction. |
+| etag | String | The epoch timestamp of the **LastModifiedTime** property. |
+| createdDateTime | DateTime | The time that the interaction was created. |
+| body | [itemBody](../resources/itembody.md) | The body of the message, including the text of the body and its body type. |
+| attachments | Collection of [aiInteractionAttachment](../resources/aiinteractionattachment.md) | The collection of documents attached to the interaction, such as cards, images, and so on. |
+| links | Collection of [aiInteractionLink](../resources/aiinteractionlink.md) | The collection of links that appear in the interaction. |
+| mentions | Collection of [aiInteractionMention](../resources/aiinteractionmention.md) | The collection of the entities that were mentioned in the interaction, including users, bots, and so on. |
+| locale | String | The locale of the sender. |
+
 ## JSON representation
 
 The following JSON representation shows the resource type.

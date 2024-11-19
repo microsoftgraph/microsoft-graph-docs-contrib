@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the interaction type. Can be UserPrompt, AiResponse or UnknownFutureValue.
+Represents the interaction type.
 
 ## Properties
 

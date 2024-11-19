@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionMention resource type"
-description: "Represents mention of an entity in an interaction."
+description: "Represents a mention of an entity in an interaction."
 ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents mention of an entity in an interaction.
+Represents a mention of an entity in an interaction.
 
 ## Properties
 

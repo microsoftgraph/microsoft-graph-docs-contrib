@@ -1,6 +1,6 @@
 ---
 title: "aiInteraction-getAllEnterpriseInteractions"
-description: "Get all Copilot interactions data between the user and Copilot."
+description: "Get all Copilot interaction data between the user and Copilot."
 ms.date: 11/18/2024
 author: "bkeerthivasa"
 ms.localizationpriority: high
@@ -14,8 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
-This API returns [aiInteraction](../resources/aiinteraction.md) resource.
+Get all Copilot interactions data, including both the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response to the user for Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
+
+This API returns an [aiInteraction](../resources/aiinteraction.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,8 +36,7 @@ GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions
 
 ## Optional query parameters
 
-You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples.
+You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses), as shown in the following examples.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -53,17 +53,17 @@ This method also supports [date range parameters](/graph/query-parameters) to 
 GET /copilot/users/{id}/interactionHistory/getAllEnterpriseInteractions?$filter=createdDateTime gt 2024-09-09T16:48:35Z and createdDateTime lt 2024-11-15T21:48:35Z
 ```
 
-This method also supports `$filter`. The following table lists examples.
+This method also supports the `$filter` query parameter. The following table shows an example.
 
-|Scenario                                         | `$filter` parameter                                                                                                 |Possible values                                                                                             |
-|:------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|Get the copilot messages for a particular source |$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Word' or appClass eq 'IPM.SkypeTeams.Message.Copilot.BizChat'    |                                                                                                            |
+|Scenario|`$filter` parameter|Possible values|
+|:-------|:------------------|:--------------|
+|Get the copilot messages for a particular source|$filter=appClass eq 'IPM.SkypeTeams.Message.Copilot.Word' or appClass eq 'IPM.SkypeTeams.Message.Copilot.BizChat'| |
 
 >**Note:** These filter clauses can be joined by using the `or` operator. A filter clause can appear more than once in a query, and it can filter on a different value each time it appears within the query.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
+|Header|Value|
+|:-----|:----|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response

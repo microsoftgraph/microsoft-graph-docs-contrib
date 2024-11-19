@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionContext resource type"
-description: "Represents an AI Interaction context."
+description: "Represents all contexts associated with an interaction."
 ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents all contexts associated with interaction.
+Represents all contexts associated with an interaction.
 
 ## Properties
 
