@@ -102,7 +102,7 @@ The following example gets the current display settings that have name pronuncia
 GET https://graph.microsoft.com/v1.0/admin/people/namePronunciation
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
 ``` http
 HTTP/1.1 200 OK
@@ -126,7 +126,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
 ``` http
 HTTP/1.1 200 OK
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body.
+If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
 ``` http
 HTTP/1.1 200 OK
