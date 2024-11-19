@@ -20,7 +20,7 @@ Represents the identity of the user who has initiated a sign-up
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |signUpIdentifier|String|The identification that the user is trying to utilize to sign up.|
-|SignUpIdentifierType|signUpIdentifierType|The type of sign-up the user has initiated.  Possible values include:  `emailAddress`, `unknownFutureValue`|
+|signUpIdentifierType|signUpIdentifierType|The type of sign-up the user has initiated.  Possible values include:  `emailAddress`, `unknownFutureValue`|
 
 
 ### Filtering
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "signUpIdentifier": "String",
-  "SignUpIdentifierType": "String"
+  "signUpIdentifierType": "String"
 }
 
 ```
