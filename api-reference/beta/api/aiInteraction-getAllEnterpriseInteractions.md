@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a list of [aiInt
 
 ## Examples 1: Retrieve all the copilot interactions without any filters
 
-### Request
+### Request that gets all the copilot interactions for a user.
 
 The following example shows a request that gets all the copilot interactions for a user.
 
@@ -82,13 +82,13 @@ The following example shows a request that gets all the copilot interactions for
 GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions
 ```
 
-### Response
+### Response of all the copilot interactions for a user.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.aiInteraction"
 } -->
 
 ```http
@@ -166,7 +166,7 @@ GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.aiInteraction"
 } -->
 
 ```http
