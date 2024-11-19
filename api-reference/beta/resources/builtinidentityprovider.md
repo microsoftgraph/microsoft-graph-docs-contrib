@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Represents built-in identity providers for a Microsoft Entra tenant.
 
-For Microsoft Entra scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account (MSA), or email one-time passcode (EmailOTP).
+For scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account (MSA), or email one-time passcode (EmailOTP).
 
 This type inherits from [identityProviderBase](../resources/identityproviderbase.md).
 

@@ -48,7 +48,7 @@ POST /identity/identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in Microsoft Entra External ID.
+In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [oidcIdentityProvider](#oidcidentityprovider), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in Microsoft Entra External ID.
 
 In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
 
@@ -117,7 +117,7 @@ If unsuccessful, a `4xx` error will be returned with specific details.
 
 <a name='example-1-create-a-specific-social-identity-provider-azure-ad-and-azure-ad-b2c'></a>
 
-### Example 1: Create a **social identity provider**
+### Example 1: Create a social identity provider
 
 #### Request
 
@@ -203,7 +203,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create an **Apple** identity provider 
+### Example 2: Create an Apple identity provider 
 
 #### Request
 
@@ -292,7 +292,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create an **OpenID Connect identity provider** (AAD B2C tenant)
+### Example 3: Create an OpenID Connect identity provider (B2C tenant)
 
 #### Request
 
@@ -401,7 +401,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create an **OpenID Connect identity provider** (external tenant)
+### Example 4: Create an OpenID Connect identity provider (external tenant)
 
 #### Request
 
