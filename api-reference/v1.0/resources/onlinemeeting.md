@@ -29,10 +29,6 @@ Contains information about a meeting, including the URL used to join a meeting, 
 >
 > A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
 
-> [!CAUTION]
->
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/).
-
 ## Properties
 
 | Property   | Type  | Description  |
