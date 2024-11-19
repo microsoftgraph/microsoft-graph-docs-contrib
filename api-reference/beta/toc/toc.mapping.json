@@ -2650,6 +2650,19 @@
             "microsoft.graph.security.fileThreatSubmission",
             "microsoft.graph.security.urlThreatSubmission"
           ]
+        },
+        {
+          "name": "Discovered cloud apps (preview)",
+          "overview": "../../resources/security-cloudappdiscovery-overview.md",
+          "resources": [
+            "microsoft.graph.security.cloudAppDiscoveryReport",
+            "microsoft.graph.security.discoveredCloudAppDetail",
+            "microsoft.graph.security.discoveredCloudAppInfo",
+            "microsoft.graph.security.discoveredCloudAppUser",
+            "microsoft.graph.security.discoveredCloudAppIPAddress",
+            "microsoft.graph.security.discoveredCloudAppDevice",
+            "microsoft.graph.security.endpointDiscoveredCloudAppDetail"
+          ]
         }
       ]
     },
