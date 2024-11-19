@@ -141,7 +141,7 @@ Content-Type: application/json
 
 ### Disable name pronunciation in your organization
 
-Use the update operation to make name pronunciation unavailable in your organization.
+The following example shows how to use the update operation to make name pronunciation unavailable in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
