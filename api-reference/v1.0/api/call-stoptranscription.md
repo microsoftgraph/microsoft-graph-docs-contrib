@@ -77,6 +77,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.stopTranscriptionOperation"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/operations/2d7ab59c-f8bd-4911-8302-6d58ab60e338
@@ -86,6 +87,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4b
   "clientContext": "clientContext-value",
   "status": "completed"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
