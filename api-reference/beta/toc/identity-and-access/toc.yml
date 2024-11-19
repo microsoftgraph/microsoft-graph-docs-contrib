@@ -2565,9 +2565,9 @@ items:
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Oidc identity provider
-        href: ../../resources/oidcIdentityProvider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:
