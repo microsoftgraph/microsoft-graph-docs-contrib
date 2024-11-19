@@ -171,6 +171,64 @@
     {
       "ChangeList": [
         {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateAuthorityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityType** enumeration type.",
+          "Target": "certificateAuthorityType"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityDetail](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityDetail?view=graph-rest-beta) resource.",
+          "Target": "certificateAuthorityDetail"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateBasedAuthPki",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-beta) resource.",
+          "Target": "certificateBasedAuthPki"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "publicKeyInfrastructure",
+          "ChangeType": "Addition",
+          "Description": "Added the **publicKeyInfrastructure** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicKeyInfrastructureRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicKeyInfrastructureRoot](https://learn.microsoft.com/en-us/graph/api/resources/publicKeyInfrastructureRoot?view=graph-rest-beta) resource.",
+          "Target": "publicKeyInfrastructureRoot"
+        },
+        {
+          "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Method",
+          "ChangedApiName": "upload",
+          "ChangeType": "Addition",
+          "Description": "Added the [upload](https://learn.microsoft.com/en-us/graph/api/certificateBasedAuthPki-upload?view=graph-rest-beta) method to the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-beta) resource.",
+          "Target": "certificateBasedAuthPki"
+        }
+      ],
+      "Id": "09afe499-9b88-43d7-af4d-c36fa7c14aeb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-14T23:18:09.7666936Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7aeffb87-6cbe-4c6b-af80-4e1ebca466aa",
           "ApiChange": "Enumeration",
           "ChangedApiName": "nativeAuthenticationApisEnabled",

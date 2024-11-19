@@ -26,11 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 > **Note:** Global admin or Global reader permission is required to call this API.
 
-|Permission type |Least privileged permissions|Higher privileged permissions|
-| --------------- |-----------------------------| --------------------------- |
-|Delegated (work or school account)|CopilotSettings-LimitedMode.ReadWrite| Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { "blockType": "permissions", "name": "copilotadminlimitedmode_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/copilotadminlimitedmode-update-permissions.md)]
 
 ## HTTP request
 
