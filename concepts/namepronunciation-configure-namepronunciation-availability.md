@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ### Enable name pronunciation in your organization
 
-Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) operation to enable name pronunciation in your organization.
+The following example shows how to use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) operation to enable name pronunciation in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
