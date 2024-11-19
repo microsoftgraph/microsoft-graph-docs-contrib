@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "2b006306-1c52-4071-be37-fcbc88b288dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **id** property from the [appRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-beta) resource.",
+          "Target": "appRoleAssignment"
+        }
+      ],
+      "Id": "2b006306-1c52-4071-be37-fcbc88b288dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-19T17:36:56.4561359Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4221cd89-e61f-4a2a-a42a-cde4f8bf714a",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [appRoleAssignments](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "DirectoryDataService"
+        }
+      ],
+      "Id": "4221cd89-e61f-4a2a-a42a-cde4f8bf714a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-11-19T17:36:56.4563915Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "33b75f19-78a3-418c-9698-d2b60a6af88a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementRestrictionState",
