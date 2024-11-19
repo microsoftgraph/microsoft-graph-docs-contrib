@@ -23,8 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/call-stoptranscription-permissions.md)]
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /communications/calls/{id}/microsoft.graph.StopTranscription
 ```
@@ -57,8 +57,10 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StopTranscription
+
 Content-Type: application/json
 Content-Length: 56
+
 {
   "language": "en-us"
 }
