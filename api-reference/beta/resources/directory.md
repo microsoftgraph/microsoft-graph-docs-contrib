@@ -61,6 +61,7 @@ Inherits from [entity](entity.md).
 | pendingExternalUserProfiles | [pendingExternalUserProfile](pendingexternaluserprofile.md) collection | Collection of pending external user profiles representing collaborators in the directory that are unredeemed. |
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
+|templates|[template](../resources/template.md) collection |A collection of templates. |
 
 ## JSON representation
 
