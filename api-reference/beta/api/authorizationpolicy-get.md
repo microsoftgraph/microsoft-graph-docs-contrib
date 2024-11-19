@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-get-permissions.md)]
 
+[!INCLUDE [rbac-authorization-policy-apis-read](../includes/rbac-for-apis/rbac-authorization-policy-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
