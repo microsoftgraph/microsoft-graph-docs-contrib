@@ -154,7 +154,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "aiInteraction_getAllEnterpriseInteractions_1"
+  "name": "aiInteraction_getAllEnterpriseInteractions_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions
