@@ -6,9 +6,11 @@ doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "brozbab"
 toc.title: OpenID Connect identity provider
+ms.date: 11/16/2024
 ---
 
 # openIdConnectIdentityProvider resource type
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

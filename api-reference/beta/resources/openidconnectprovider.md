@@ -1,6 +1,6 @@
 ---
 title: "openIdConnectProvider resource type"
-description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
+description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant (deprecated)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"

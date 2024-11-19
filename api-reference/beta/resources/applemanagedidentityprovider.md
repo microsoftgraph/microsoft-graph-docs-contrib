@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "brozbab"
+ms.date: 11/16/2024
 ---
 
 # appleManagedIdentityProvider resource type

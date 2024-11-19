@@ -4,6 +4,7 @@ description: "Find information about how to onboard an application to call meter
 author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Enable metered APIs and services in Microsoft Graph

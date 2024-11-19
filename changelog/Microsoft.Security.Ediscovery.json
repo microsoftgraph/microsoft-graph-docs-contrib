@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Member",
+          "ChangedApiName": "exportReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `exportReport` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Member",
+          "ChangedApiName": "exportResult",
+          "ChangeType": "Addition",
+          "Description": "Added the `exportResult` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "additionalOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalOptions** enumeration type.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "exportCriteria",
+          "ChangeType": "Addition",
+          "Description": "Added the **exportCriteria** enumeration type.",
+          "Target": "exportCriteria"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "exportFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **exportFormat** enumeration type.",
+          "Target": "exportFormat"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "exportLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **exportLocation** enumeration type.",
+          "Target": "exportLocation"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoverySearchExportOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-1.0) resource type.",
+          "Target": "ediscoverySearchExportOperation"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "exportReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-1.0) resource.",
+          "Target": "ediscoverySearch"
+        },
+        {
+          "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "exportResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-1.0) resource.",
+          "Target": "ediscoverySearch"
+        }
+      ],
+      "Id": "2e67a366-dc7f-4994-97ae-f2a85b94f4b5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-30T05:50:29.9021049Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "939d3352-727a-4c3f-928e-2d3a9cca911f",
           "ApiChange": "Resource",
           "ChangedApiName": "caseOperation",
@@ -791,7 +873,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-10-28T17:35:53.3172676Z",
-      "WorkloadArea": "Compliance",
+      "WorkloadArea": "eDiscovery",
       "SubArea": "eDiscovery"
     }
   ]
