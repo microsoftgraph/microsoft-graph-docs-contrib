@@ -21,7 +21,7 @@ Enabling name pronunciation in an organization facilitates correct pronunciation
 - Name pronunciation, when enabled, allows users to optionally add and manage pronunciation in the profile card in Teams and Outlook web and desktop. 
 - Name pronunciation appears by the user's name on the profile card in Teams. 
 - Pronunciations are displayed only internally within the organization. In multitenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
-- Pronunnciations are visible on profile cards to anyone who has an account in the organization, including guest accounts.
+- Pronunciations are visible on profile cards to anyone who has an account in the organization, including guest accounts.
 
 The end user experience with this feature might evolve over time. 
 
