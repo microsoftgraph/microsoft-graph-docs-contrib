@@ -32,7 +32,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 > [!CAUTION]
 > 
-> Teams live events will no longer be going away on September 30, 2024, as previously announced. While we still recommend [switching to Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) for new features and experiences, you can continue to use the Teams Live Events APIs beyond September 2024.
+> Teams live events will no longer be going away on September 30, 2024, as previously announced. While we still recommend [switching to Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) and using [Graph virtual event townhall APIs](../resources/virtualeventtownhall.md) for new features and experiences, you can continue to use the Teams Live Events APIs beyond September 2024.
 
 ## Properties
 
