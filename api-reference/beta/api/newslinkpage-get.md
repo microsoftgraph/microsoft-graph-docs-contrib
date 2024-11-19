@@ -2,6 +2,7 @@
 title: "Get newsLinkPage"
 description: "Get the metadata of a newsLinkPage in the site pages list of a site."
 author: "shgangan"
+ms.date: 04/01/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "apiPageType"

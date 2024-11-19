@@ -2,6 +2,7 @@
 title: "newsLinkPage: publish"
 description: "Publish the latest version of a newsLinkPage resource that makes the version available to all users."
 author: shgangan
+ms.date: 04/01/2024
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType

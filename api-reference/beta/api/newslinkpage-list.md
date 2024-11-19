@@ -2,6 +2,7 @@
 title: List newsLinkPage
 description: Get a list of the newsLinkPage objects and their properties.
 author: shgangan
+ms.date: 04/01/2024
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "Update newsLinkPage"
 description: "Update the properties of a newsLinkPage object."
 author: "shgangan"
+ms.date: 04/01/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "apiPageType"

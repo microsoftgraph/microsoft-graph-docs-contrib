@@ -2,6 +2,7 @@
 title: "Create newsLinkPage"
 description: "Create a new news link page in the site pages list of a site."
 author: "shgangan"
+ms.date: 04/01/2024
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: "apiPageType"
@@ -61,9 +62,9 @@ You can specify the following properties when you create a [newsLinkPage](../res
 
 If successful, this method returns a `201 Created` response code and a [newsLinkPage](../resources/newslinkpage.md) object in the response body.
 
-## Example
-Scenario 1 - Create a [newsLinkPage](../resources/newslinkpage.md) with only required properties
-Create a newslink page in the list of pages in a site.
+## Example - Create a [newsLinkPage](../resources/newslinkpage.md) with only required properties
+
+The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page using only the required properties.
 
 ### Request
 The following example shows a request.
@@ -130,10 +131,9 @@ Content-type: application/json
 }
 ```
 
-## Example
+## Example - Create a newsLink page including uploading BannerImage File Content
 
-Scenario 2 - Create a newsLink page including uploading BannerImage File Content
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page.
+The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and uploading a banner image and setting the banner Image content for the newslink page. This requires a multipart request.
 
 ### Request
 
@@ -167,7 +167,7 @@ Content-Type: image/jpeg
 
 ### Response
 
-The following example shows the response.
+The following example shows the response. In the event of some failure uploading or persisting the banner image, the reponse will contain @microsoft.graph.bannerImageWebUrlContentError with an appropriately descriptive error message string.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
