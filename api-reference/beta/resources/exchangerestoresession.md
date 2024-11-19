@@ -37,7 +37,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
 |status|[restoreSessionStatus](../resources/exchangerestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore sesssion was created normally or by a bulk job.|
-|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionbase.md#restoresessionartifactcount)|The number of metadata artifacts that belong to this restore session.|
+|restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionartifactcount.md)|The number of metadata artifacts that belong to this restore session.|
 
 ### restoreSessionStatus values
 |Member | Description |
