@@ -59,7 +59,7 @@ The following example shows the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StopRecording
+POST https://graph.microsoft.com/beta/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/microsoft.graph.StopRecording
 ```
 
 ---
@@ -78,7 +78,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/operations/2d7ab59c-f8bd-4911-8302-6d58ab60e338
+Location: https://graph.microsoft.com/beta/communications/calls/02000980-58ea-4bf2-bb77-8ba548da56f7/operations/2d7ab59c-f8bd-4911-8302-6d58ab60e338
 
 {
   "@odata.type": "#microsoft.graph.stopRecordingOperation",
