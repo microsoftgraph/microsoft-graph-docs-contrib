@@ -30,7 +30,7 @@ Teams live event attendee report **(deprecated)** is an online meeting artifact.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -53,9 +53,7 @@ GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{join
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
-
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -80,9 +78,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetings.Read.All|OnlineMeetings.ReadWrite.All|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
-
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -104,9 +100,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetingArtifact.Read.All|Not available.|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-3-permissions.md)]
-
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -128,9 +122,7 @@ GET /me/onlineMeetings/{meetingId}/alternativeRecording
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetingArtifact.Read.All|Not available.|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-4-permissions.md)]
-
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -152,9 +144,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetingArtifact.Read.All|OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-5-permissions.md)]
-
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+> [!NOTE]
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!IMPORTANT]
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts and you cannot fetch meeting artifacts without it. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
