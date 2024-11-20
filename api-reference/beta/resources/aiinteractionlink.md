@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
 ms.subservice: "teams"
+toc.title: "AI interaction link"
 ---
 
 # aiInteractionLink resource type
@@ -20,9 +21,9 @@ Represents the links that appear in the interaction.
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| linkUrl | String | The URL of the link. |
 | displayName | String | The name of the link. |
-| linkType | String | Information about a link in an AppChat or BizChat interaction. |
+| linkType | String | Information about a link in an app chat or BizChat interaction. |
+| linkUrl | String | The URL of the link. |
 
 ## JSON representation
 
@@ -38,8 +39,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "linkUrl": "String",
   "displayName": "String",
-  "linkType": "String"
+  "linkType": "String",
+  "linkUrl": "String"
 }
 ```
