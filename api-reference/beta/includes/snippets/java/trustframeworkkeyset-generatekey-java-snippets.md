@@ -11,8 +11,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 com.microsoft.graph.beta.trustframework.keysets.item.generatekey.GenerateKeyPostRequestBody generateKeyPostRequestBody = new com.microsoft.graph.beta.trustframework.keysets.item.generatekey.GenerateKeyPostRequestBody();
 generateKeyPostRequestBody.setUse("sig");
 generateKeyPostRequestBody.setKty("RSA");
-generateKeyPostRequestBody.setNbf(1508969811);
-generateKeyPostRequestBody.setExp(1508969811);
+generateKeyPostRequestBody.setNbf(1508969811L);
+generateKeyPostRequestBody.setExp(1508969811L);
 var result = graphClient.trustFramework().keySets().byTrustFrameworkKeySetId("{trustFrameworkKeySet-id}").generateKey().post(generateKeyPostRequestBody);
 
 

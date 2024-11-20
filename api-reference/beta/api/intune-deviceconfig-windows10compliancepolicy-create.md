@@ -93,6 +93,7 @@ The following table shows the properties that are required when you create the w
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)||
+|wslDistributions|[wslDistributionConfiguration](../resources/intune-deviceconfig-wsldistributionconfiguration.md) collection||
 
 
 
@@ -106,7 +107,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 2070
+Content-length: 2337
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -162,7 +163,15 @@ Content-length: 2070
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "Device Compliance Script Id value",
     "rulesContent": "cnVsZXNDb250ZW50"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "Distribution value",
+      "minimumOSVersion": "Minimum OSVersion value",
+      "maximumOSVersion": "Maximum OSVersion value"
+    }
+  ]
 }
 ```
 
@@ -171,7 +180,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2242
+Content-Length: 2509
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -230,6 +239,14 @@ Content-Length: 2242
     "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
     "deviceComplianceScriptId": "Device Compliance Script Id value",
     "rulesContent": "cnVsZXNDb250ZW50"
-  }
+  },
+  "wslDistributions": [
+    {
+      "@odata.type": "microsoft.graph.wslDistributionConfiguration",
+      "distribution": "Distribution value",
+      "minimumOSVersion": "Minimum OSVersion value",
+      "maximumOSVersion": "Maximum OSVersion value"
+    }
+  ]
 }
 ```

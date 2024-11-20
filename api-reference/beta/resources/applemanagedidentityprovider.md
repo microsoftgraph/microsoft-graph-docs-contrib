@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "brozbab"
+ms.date: 11/16/2024
 ---
 
 # appleManagedIdentityProvider resource type
@@ -12,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can configure Apple as a social identity provider for an external or Azure AD B2C tenant. Based on the information Apple provides, the API generates a client secret. Apple requires the secret to be renewed every six months. You'll need to manually rotate the secret to maintain access.
+You can configure Apple as a social identity provider for an external or Azure AD B2C tenant. Based on the information Apple provides, the API generates a client secret. Apple requires the secret to be renewed every six months. You need to manually rotate the secret to maintain access.
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 

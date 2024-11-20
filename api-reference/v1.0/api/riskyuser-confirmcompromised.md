@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userIds|String collection|Specify the risky user IDs to dismiss in the request body.|
+|userIds|String collection|Specify the risky user IDs to mark as high risk.|
 
 
 

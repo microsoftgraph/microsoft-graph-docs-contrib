@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "brozbab"
 ms.subservice: "entra-sign-in"
+ms.date: 11/16/2024
 ---
 
 # Get identityProvider
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 
-Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](#oidcidentityprovider) (external tenant only) resource.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (external tenant only), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](../resources/oidcidentityprovider.md) (external tenant only) resource.
 
 In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
@@ -50,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or [oidcIdentityProvider](#oidcidentityprovider) in the response body for a workforce or external tenant.
+If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or [oidcIdentityProvider](../resources/oidcidentityprovider.md) in the response body for a workforce or external tenant.
 
 For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) object in the response body.
 
@@ -69,7 +70,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_socialidentityprovider_from_identityproviderbase",
   "sampleKeys": ["Amazon-OAUTH"]
-}
+}    
 -->
 
 ``` http
@@ -296,7 +297,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_openidconnectidentityprovider_from_identityproviderbase",
-  "sampleKeys": ["OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000"]
+  "sampleKeys": ["Contoso-00001111-aaaa-2222-bbbb-3333cccc4444"]
 }
 -->
 
@@ -379,7 +380,6 @@ Content-type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applemanagedidentityprovider_from_identityproviderbase",
@@ -389,40 +389,6 @@ The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/12345678-abcd-1234-cdef-aaaaaaaaaaaa
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applemanagedidentityprovider-from-identityproviderbase-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-applemanagedidentityprovider-from-identityproviderbase-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-applemanagedidentityprovider-from-identityproviderbase-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-applemanagedidentityprovider-from-identityproviderbase-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-applemanagedidentityprovider-from-identityproviderbase-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-applemanagedidentityprovider-from-identityproviderbase-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-applemanagedidentityprovider-from-identityproviderbase-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -433,7 +399,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+  "@odata.type": "microsoft.graph.oidcIdentityProvider"
 } -->
 
 ```http
