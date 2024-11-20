@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AiEnterpriseInteraction.Read.All|AiEnterpriseInteraction.Read.All|
+|Application|AiEnterpriseInteraction.Read.All|Not available.|
 
