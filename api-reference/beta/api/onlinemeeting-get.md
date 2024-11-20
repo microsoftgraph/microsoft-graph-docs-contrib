@@ -33,7 +33,7 @@ Teams live event attendee report **(deprecated)** and Teams live event recording
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -56,9 +56,7 @@ GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{join
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
 
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
-
-Permissions for the following HTTP request:
+Permissions for the following HTTP requests:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -82,8 +80,6 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 |Delegated (work or school account)|OnlineMeetings.Read|OnlineMeetings.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetings.Read.All|OnlineMeetings.ReadWrite.All|
-
-[!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
 
 Permissions for the following HTTP request:
 
