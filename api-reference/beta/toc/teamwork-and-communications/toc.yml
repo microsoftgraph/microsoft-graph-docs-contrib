@@ -721,8 +721,6 @@ items:
       href: ../../api/channel-getallmessages.md
     - name: Get all retained channel messages
       href: ../../api/channel-getallretainedmessages.md
-    - name: Get all copilot interactions
-      href: ../../api/aiInteractionHistory-getAllEnterpriseInteractions.md
     - name: Create channel message post
       href: ../../api/channel-post-messages.md
     - name: Create reply to channel message post
