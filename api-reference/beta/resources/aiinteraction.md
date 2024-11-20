@@ -41,9 +41,9 @@ Represents an interaction between a user and Copilot.
 
 | Member | Description |
 | ---------- | ---------- |
-| userPrompt | TODO |
-| aiResponse | TODO |
-| unknownFutureValue | TODO |
+| userPrompt | user prompt in the interaction. |
+| aiResponse | ai response to the prompt. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
