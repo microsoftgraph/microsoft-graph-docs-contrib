@@ -60,18 +60,18 @@ The following JSON representation shows the resource type.
 ```json
 {
   "appClass": "String",
-  "attachments": {"@odata.type": "microsoft.graph.aiInteractionAttachment"},
+  "attachments": [{"@odata.type": "microsoft.graph.aiInteractionAttachment"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "contexts": {"@odata.type": "microsoft.graph.aiInteractionContext"},
+  "contexts": [{"@odata.type": "microsoft.graph.aiInteractionContext"}],
   "conversationType": "String",
   "createdDateTime": "String (timestamp)",
   "etag": "String",
   "from": {"@odata.type": "microsoft.graph.identitySet"},
   "id": "String (identifier)",
-  "interactionType": {"@odata.type": "microsoft.graph.aiInteractionType"},
-  "links": {"@odata.type": "microsoft.graph.aiInteractionLink"},
+  "interactionType": "String",
+  "links": [{"@odata.type": "microsoft.graph.aiInteractionLink"}],
   "locale": "String",
-  "mentions": {"@odata.type": "microsoft.graph.aiInteractionMention"},
+  "mentions": [{"@odata.type": "microsoft.graph.aiInteractionMention"}],
   "requestId": "String",
   "sessionId": "String"
 }
