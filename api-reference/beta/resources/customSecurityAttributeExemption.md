@@ -16,6 +16,15 @@ Namespace: microsoft.graph
 
 Configuration object to configure a custom security attribute exemption for a restriction on application management policies.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/appmanagementpolicyactorexemptions-list-customsecurityattributes.md)|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) collection|Get a list of the [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) objects and their properties.|
+|[Create](../api/appmanagementpolicyactorexemptions-post-customsecurityattributes.md)|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md)|Create a new [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) object.|
+|[Get](../api/customsecurityattributeexemption-get.md)|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md)|Read the properties and relationships of a [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) object.|
+|[Update](../api/customsecurityattributeexemption-update.md)|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md)|Update the properties of a [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) object.|
+|[Delete](../api/appmanagementpolicyactorexemptions-delete-customsecurityattributes.md)|None|Delete a [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) object.|
+
 ## Properties
 | Property                  | Type                                           | Description                 |
 | :-------------------------| :--------------------------------------------- | :-------------------------- |
@@ -29,13 +38,16 @@ Inherited by [customSecurityAttributeStringValueExemption](customSecurityAttribu
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.customSecurityAttributeStringValueExemption"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.customSecurityAttributeExemption",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.customSecurityAttributeStringValueExemption",
-  "id": "String",
+  "@odata.type": "#microsoft.graph.customSecurityAttributeExemption",
+  "id": "String (identifier)",
   "operator": "String"
 }
 ```
