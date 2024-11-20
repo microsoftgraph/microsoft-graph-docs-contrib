@@ -2943,6 +2943,12 @@
           ]
         },
         {
+          "name": "AI Interaction",
+          "resources": [
+            "aiInteractionHistory"
+          ]
+        },
+        {
           "name": "Devices (preview)",
           "resources": [
             "teamworkDevice",
