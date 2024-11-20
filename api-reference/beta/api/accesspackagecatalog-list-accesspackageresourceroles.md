@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageResourceRoles"
-description: "Retrieve a list of accessPackageResourceRole objects."
+description: "Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -134,9 +134,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieve the roles of a resource for a SharePoint Online site
+### Example 2: Retrieve the roles of a resource for a SharePoint site
 
-This is an example of retrieving the roles of a resource, to obtain the **originId** of each role. This would be used after a SharePoint Online site is added as a resource to the catalog, as the **originId** of a SharePoint site role, the sequence number of the role in the site, is needed to add the role to an access package.
+The following example shows how to retrieve the roles of a resource, to obtain the **originId** of each role. This would be used after a SharePoint site has been added as a resource to the catalog, as the **originId** of a SharePoint site role, the sequence number of the role in the site, is needed to add the role to an access package.
+
 
 #### Request
 
@@ -190,7 +191,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 #### Response
 
-The following example shows the response. The **displayName** is the same as shown in the SharePoint Online view of a site, and the **originId** is the underlying identifier established by SharePoint Online for the role.
+The following example shows the response. The **displayName** is the same as shown in the SharePoint view of a site, and the **originId** is the underlying identifier established by SharePoint for the role.
+
 
 > **Note:** The response object shown here might be shortened for readability.
 

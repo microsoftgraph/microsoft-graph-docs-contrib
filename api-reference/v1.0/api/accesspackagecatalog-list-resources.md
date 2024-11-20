@@ -1,6 +1,6 @@
 ---
 title: "List resources"
-description: "Retrieve a list of accesspackageresource objects."
+description: "Retrieve a list of accessPackageResource objects in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"

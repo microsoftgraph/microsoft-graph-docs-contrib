@@ -1,6 +1,6 @@
 ---
 title: "List resourceRoles"
-description: "Retrieve a list of accessPackageResourceRole objects."
+description: "Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
