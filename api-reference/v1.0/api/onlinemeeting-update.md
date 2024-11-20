@@ -33,6 +33,13 @@ PATCH /me/onlineMeetings/{meetingId}
   "name": "onlinemeeting_update", 
   "requestUrls": ["PATCH /me/onlineMeetings/{meetingId}"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -48,6 +55,13 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
   "name": "onlinemeeting_update_2", 
   "requestUrls": ["PATCH /users/{userId}/onlineMeetings/{meetingId}"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetings.ReadWrite.All|Not available.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-update-2-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to update online meetings on behalf of that user (with user ID specified in the request path).

@@ -46,6 +46,13 @@ GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{join
   "requestUrls": ["GET /me/onlineMeetings/{meetingId}","GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'","GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'"],
   "mergePermissions": true
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.Read|OnlineMeetings.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -66,6 +73,13 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
   "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}","GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'","GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'","GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'","GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
   "mergePermissions": true
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.Read|OnlineMeetings.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetings.Read.All|OnlineMeetings.ReadWrite.All|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -83,6 +97,13 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
   "requestUrls": ["GET /me/onlineMeetings/{meetingId}/attendeeReport","GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport"],
   "mergePermissions": true
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingArtifact.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingArtifact.Read.All|Not available.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-3-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -100,6 +121,13 @@ GET /me/onlineMeetings/{meetingId}/alternativeRecording
   "requestUrls": ["GET /me/onlineMeetings/{meetingId}/recording","GET /me/onlineMeetings/{meetingId}/alternativeRecording"],
   "mergePermissions": true
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingArtifact.Read.All|OnlineMeetings.Read, OnlineMeetings.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingArtifact.Read.All|Not available.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-4-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -117,6 +145,13 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
   "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}/recording","GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording"],
   "mergePermissions": true
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetingArtifact.Read.All|OnlineMeetings.Read, OnlineMeetings.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetingArtifact.Read.All|OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-5-permissions.md)]
 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).

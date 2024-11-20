@@ -39,6 +39,14 @@ POST /me/onlineMeetings
   "name": "application_post_onlinemeetings", 
   "requestUrls": ["POST /me/onlineMeetings"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
+
 [!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -54,6 +62,13 @@ POST /users/{userId}/onlineMeetings
   "name": "application_post_onlinemeetings_2", 
   "requestUrls": ["POST /users/{userId}/onlineMeetings"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetings.ReadWrite.All|Not available.|
+
 [!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-2-permissions.md)]
 
 > [!NOTE]

@@ -33,6 +33,13 @@ DELETE /me/onlineMeetings/{meetingId}
   "name": "onlinemeeting_delete", 
   "requestUrls": ["DELETE /me/onlineMeetings/{meetingId}"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-delete-permissions.md)]
 
 Permissions for the following HTTP syntax:
@@ -48,6 +55,13 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
   "name": "onlinemeeting_delete_2", 
   "requestUrls": ["DELETE /users/{userId}/onlineMeetings/{meetingId}"]
  } -->
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|OnlineMeetings.ReadWrite.All|Not available.|
+
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-delete-2-permissions.md)]
 
 > [!IMPORTANT]
