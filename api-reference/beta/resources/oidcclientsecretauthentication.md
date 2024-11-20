@@ -22,7 +22,7 @@ Inherits from [oidcClientAuthentication](../resources/oidcclientauthentication.m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|clientSecret|String|The client secret obtained from configuring the client application on the external OpenID Connect identity provider. The property includes the client secret and enables the identity provider to use either the `client_secret_post` or `client_secret_jwt` authentication method. |
+|clientSecret|String|The client secret obtained from configuring the client application on the external OpenID Connect identity provider. The property includes the client secret and enables the identity provider to use either the `client_secret_post` authentication method. |
 
 ### Where to get the client identifier and secret
 
