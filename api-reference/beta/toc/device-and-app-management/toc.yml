@@ -8564,6 +8564,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
       href: ../../resources/windowsupdates-qualityupdatecveseverityinformation.md
+    - name: Quality update filter
+      href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
     - name: Safeguard profile
