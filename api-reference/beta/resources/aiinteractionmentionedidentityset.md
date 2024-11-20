@@ -17,12 +17,14 @@ Namespace: microsoft.graph
 
 Represents an entity mentioned in a message.
 
+Inherits from [identitySet](../resources/identityset.md).
+
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| conversation | teamworkConversationIdentity | The conversation details. |
-| tag | teamworkTagIdentity | The tag details. |
+| conversation | [teamworkConversationIdentity](../resources/teamworkconversationidentity.md) | The conversation details. |
+| tag | [teamworkTagIdentity](../resources/teamworktagidentity.md) | The tag details. |
 
 ## JSON representation
 
@@ -31,14 +33,13 @@ The following JSON representation shows the resource type.
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
+  "baseType": "microsoft.graph.identitySet",
   "@odata.type": "microsoft.graph.aiInteractionMentionedIdentitySet"
 }-->
 
 ```json
 {
-  "conversation": "String",
-  "tag": "String",
+  "conversation": {"@odata.type": "microsoft.graph.teamworkConversationIdentity"},
+  "tag": {"@odata.type": "microsoft.graph.teamworkTagIdentity"}
 }
 ```
