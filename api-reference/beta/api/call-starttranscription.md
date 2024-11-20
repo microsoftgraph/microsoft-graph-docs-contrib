@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/v1.0/communications/calls/02000980-58ea-4bf2-bb
 
 Content-Type: application/json
 Content-Length: 56
-
 {
   "language": "en-us"
 }
