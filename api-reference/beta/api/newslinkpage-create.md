@@ -38,8 +38,8 @@ POST /sites/{site-id}/pages
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|`application/json` for for the json content, including for the required "Title" property of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
-|Prefer | `include-unknown-enum-members`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
+|Content-Type|application/json for JSON content, including the required **title** property in multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type. |
+|Prefer | You must use the `Prefer: include-unknown-enum-members` request header to get the following value in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
 
 ## Request body
 
