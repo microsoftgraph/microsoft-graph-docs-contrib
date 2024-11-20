@@ -262,6 +262,14 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | peerRecommeded |
 
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
+
 ### courseStatus values
 
 | Member |
@@ -4918,3 +4926,11 @@ Possible values for user account types (group membership), per Windows definitio
 | callEnded |
 | unknownFutureValue |
 | rosterUpdated |
+
+### nonAdminSetting values
+
+|Member|
+|:---|
+|false|
+|true|
+|unknownFutureValue|
