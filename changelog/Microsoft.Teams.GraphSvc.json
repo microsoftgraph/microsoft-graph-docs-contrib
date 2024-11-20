@@ -2422,51 +2422,19 @@
         },
         {
           "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Property",
-          "ChangedApiName": "policyViolation",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **policyViolation** property from the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-beta) resource.",
-          "Target": "aiInteraction"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Property",
-          "ChangedApiName": "webUrl",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **webUrl** property from the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-beta) resource.",
-          "Target": "aiInteraction"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "hostedContents",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **hostedContents** relationship from the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-beta) resource.",
-          "Target": "aiInteraction"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
           "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method.",
           "Target": "aiInteractionHistory"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "copilot",
-          "ChangeType": "Addition",
-          "Description": "Added the [copilot](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "TeamsGraphSvc"
         }
       ],
       "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2024-11-19T22:39:38.6194554Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
