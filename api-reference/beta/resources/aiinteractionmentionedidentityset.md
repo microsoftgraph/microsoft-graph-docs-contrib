@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
 ms.subservice: "teams"
+toc.title: "AI interaction mentioned identity set"
 ---
 
 # aiInteractionMentionedIdentitySet resource type
@@ -20,8 +21,8 @@ Represents an entity mentioned in a message.
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-| conversation | TeamworkConversationIdentity | The conversation details. |
-| tag | TeamworkTagIdentity | The tag details. |
+| conversation | teamworkConversationIdentity | The conversation details. |
+| tag | teamworkTagIdentity | The tag details. |
 
 ## JSON representation
 
@@ -37,7 +38,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "conversation": {"@odata.type": "microsoft.graph.TeamworkConversationIdentity"},
-  "tag": {"@odata.type": "microsoft.graph.TeamworkTagIdentity"},
+  "conversation": "String",
+  "tag": "String",
 }
 ```
