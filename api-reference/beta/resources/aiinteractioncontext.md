@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "bkeerthivasa"
 ms.subservice: "teams"
+toc.title: "AI interaction context"
 ---
 
 # aiInteractionContext resource type
@@ -21,8 +22,8 @@ Represents all contexts associated with an interaction.
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 | contextReference | String | The full file URL where the interaction happened. |
-| displayName | String | The name of the file. |
 | contextType | String | The type of the file. |
+| displayName | String | The name of the file. |
 
 ## JSON representation
 
@@ -39,7 +40,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "contextReference": "String",
-  "displayName": "String",
-  "contextType": "String"
+  "contextType": "String",
+  "displayName": "String"
 }
 ```
