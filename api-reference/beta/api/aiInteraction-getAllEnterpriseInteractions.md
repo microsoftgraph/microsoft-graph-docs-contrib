@@ -82,7 +82,9 @@ The following example shows a request that gets all the copilot interactions for
 GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions
 ```
 
-### Response of all the copilot interactions for a user.
+### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -148,10 +150,11 @@ Content-type: application/json
 }
 ```
 
-## Examples 2: The following example shows a request that gets all the copilot interactions for a user with app class filters
+## Examples 2: Get all the copilot interactions for a user with app class filters
 
 ### Request that gets all the copilot interactions for a user.
 
+The following example shows a request that gets all the copilot interactions for a user with app class filters.
 <!-- {
   "blockType": "request",
   "name": "aiInteraction_getAllEnterpriseInteractions_2"
@@ -160,7 +163,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/copilot/users/9fcefe95-9677-483e-a3c1-22c5d501d737/interactionHistory/getAllEnterpriseInteractions
 ```
 
-### Response of a copilot interactions for a user.
+### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
