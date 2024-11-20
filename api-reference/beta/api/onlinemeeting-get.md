@@ -122,7 +122,6 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-5-permissions.md)]
 
-
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]

@@ -36,7 +36,7 @@ POST /me/onlineMeetings
 
 <!-- { 
   "blockType": "permissions", 
-  "name": "onlineMeetings_post", 
+  "name": "application_post_onlinemeetings", 
   "requestUrls": ["POST /me/onlineMeetings"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-permissions.md)]
@@ -51,7 +51,7 @@ POST /users/{userId}/onlineMeetings
 
 <!-- { 
   "blockType": "permissions", 
-  "name": "onlineMeetings_post_2", 
+  "name": "application_post_onlinemeetings_2", 
   "requestUrls": ["POST /users/{userId}/onlineMeetings"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-2-permissions.md)]
