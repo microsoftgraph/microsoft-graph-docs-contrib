@@ -2446,26 +2446,10 @@
         },
         {
           "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Resource",
-          "ChangedApiName": "aiInteractionHistory",
-          "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
-          "Target": "aiInteractionHistory"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
-          "ApiChange": "Resource",
-          "ChangedApiName": "aiUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [aiUser](https://learn.microsoft.com/en-us/graph/api/resources/aiUser?view=graph-rest-beta) resource.",
-          "Target": "aiUser"
-        },
-        {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method.",
           "Target": "aiInteractionHistory"
         },
         {
