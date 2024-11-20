@@ -1,9 +1,10 @@
 ---
 title: "mutualTlsOauthConfiguration resource type"
+ms.date: 11/20/2024
 description: "Represents a mutualTlsOauthConfig"
-author: ""
-ms.localizationpriority: medium
 author: "ploegert"
+ms.localizationpriority: medium
+ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
 
@@ -19,10 +20,10 @@ For customers that use first party Azure IoT registries, this object may also be
 ## Methods
 | Method       | Method | Success Code | Return Type  | Description | 
 |:---------------|:--------|:----------|:---|:---|
-|[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |`GET` |`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfigurations.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
-|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfigurations.md) | Create mutualTlsOauthConfiguration object. | 
-|[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfigurations.md) | Read properties and relationships of mutualTlsOauthConfiguration object.| 
-|[Update](../api/mutualtlsoauthconfiguration-update.md) | `PATCH`/`PUT` |`204` | [mutualTlsOauthConfiguration](mutualtlsoauthconfigurations.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
+|[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |`GET` |`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
+|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. | 
+|[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.| 
+|[Update](../api/mutualtlsoauthconfiguration-update.md) | `PATCH`/`PUT` |`204` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
 |[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | `DELETE`      |`204` | None |Delete the mutualTlsOauthConfiguration object.   |
 
 ## Permissions
@@ -36,7 +37,7 @@ For customers that use first party Azure IoT registries, this object may also be
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
 |`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](tlsClientRegistrationMetadata.md) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
+|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](enums.md#tlsClientRegistrationMetadata) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
 |`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](https://docs.microsoft.com/en-us/graph/api/resources/certificateauthority?view=graph-rest-1.0) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 

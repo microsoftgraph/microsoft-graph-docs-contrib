@@ -33,7 +33,7 @@ See [Authorization](/graph/security-authorization) for more information about ad
 | Content-Type  | string    | application/json. | Yes |
 
 ### Request Body
-In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfigurations.md) object.
+In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
 You can specify the following properties when creating a **mutualTlsOauthConfigurations**.
 

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 **Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates | Allows the app to create, read, update and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template.. _(Granted to admin on the customer's AAD tenant)_|**Delegated** & **app-only**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates | Allows the app to create, read, update, and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. _(Granted to admin on the customer's Entra tenant)_|**Delegated** & **app-only**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -36,20 +36,20 @@ DELETE /directory/templates/deviceTemplates/{id}
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-- If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+- If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 - Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
 
-> **Note:** DeviceTemplates cannot be deleted until all linked devices are deleted. Failure to do so will result in a `400` response.
+> **Note:** DeviceTemplates can't be deleted until all linked devices are deleted. Failure to do so results in a `400` response.
 
 
 |Response Code|Condition|Message|
 |-|-|-|
 |`204` | Request was successful ||
-|`400` | DeviceTemplates cannot be deleted until all linked devices are deleted. | Failure to do so will result in a `400` response. |
-|`403` | Caller is not owner of the `deviceTemplate`| Caller is not allowed to create devices based on this template|
+|`400` | DeviceTemplates can't be deleted until all linked devices are deleted. | Failure to do so results in a `400` response. |
+|`403` | Caller isn't owner of the `deviceTemplate`| Caller isn't allowed to create devices based on this template|
 
 
 ## Example
@@ -72,7 +72,7 @@ HTTP/1.1 204 No Content
 
 ## Example 2
 ### Request
-If the user does not have access to a given resource, the error emitted will show as below:
+If the user doesisn't have access to a given resource, the error emitted shows as:
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
 ```
