@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 | operator                  | customSecurityAttributeComparisonOperator      | The possible values are: `equals`, `unknownFutureValue`. If `equals`, the customSecurityAttributeExemption value is compared to match the custom security attribute value for the exemption to be applied. The comparison is case sensitive. |
 
 ## Relationships
-Inherited by [customSecurityAttributeStringValueExemption](customSecurityAttributeStringValueExemption.md).
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.

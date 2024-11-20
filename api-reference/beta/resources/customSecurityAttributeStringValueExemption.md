@@ -36,7 +36,7 @@ Inherits from [customSecurityAttributeExemption](../resources/customsecurityattr
 | value                     | string                                         | Value representing custom security attribute value to compare against while evaluating the exemption. |
 
 ## Relationships
-Inherits from [customSecurityAttributeExemption](customSecurityAttributeExemption.md).
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
