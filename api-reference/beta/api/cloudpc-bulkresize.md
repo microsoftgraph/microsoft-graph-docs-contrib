@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and stopped returning data on September 24, 2023. Going forward, use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs.
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs.
 
 Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that successfully pass [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
 
