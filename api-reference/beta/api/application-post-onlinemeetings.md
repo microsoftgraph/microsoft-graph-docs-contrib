@@ -47,8 +47,6 @@ POST /me/onlineMeetings
 |Application|Not supported.|Not supported.|
 
 
-[!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-permissions.md)]
-
 Permissions for the following HTTP request:
 
 <!-- { "blockType": "ignored" } -->
@@ -68,8 +66,6 @@ POST /users/{userId}/onlineMeetings
 |Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetings.ReadWrite.All|Not available.|
-
-[!INCLUDE [permissions-table](../includes/permissions/application-post-onlinemeetings-2-permissions.md)]
 
 > [!NOTE]
 > To use the OnlineMeetings.ReadWrite.All application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
