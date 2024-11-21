@@ -566,6 +566,16 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+- name: AI Interaction
+  items:
+  - name: AI interaction history
+    items:
+    - name: AI interaction history
+      href: ../../resources/aiinteractionhistory.md
+    - name: Interaction management
+      items:
+      - name: List all enterprise interactions
+        href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
