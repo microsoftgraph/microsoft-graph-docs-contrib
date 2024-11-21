@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Represents a mention of an entity in an interaction.
 
-## Methods
-
-None.
-
 ## Properties
 
 | Property   | Type | Description |

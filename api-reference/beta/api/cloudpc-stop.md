@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: stop"
-description: "Stop a specific Cloud PC for a user."
+description: "Stop a specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop a specific Cloud PC for a user. Currently, only [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PCs are supported.
+Stop a specific Cloud PC. Currently, only [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PCs are supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,8 +31,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-```http
+To stop the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
+
+``` http
 POST /me/cloudPCs/{cloudPCId}/stop
+POST /users/{userId}/cloudPCs/{id}/stop
+```
+
+To stop the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+
+``` http
+POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/stop
 ```
 
 ## Request headers

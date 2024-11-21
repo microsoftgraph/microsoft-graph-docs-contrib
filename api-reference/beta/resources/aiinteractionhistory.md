@@ -18,18 +18,19 @@ Namespace: microsoft.graph
 Represents a list of messages exchanged involving AI.
 
 ## Methods
-|  Method  | Return Type  | Description | 
-|:---------|:-------------|:------------|
-|[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiinteraction](aiinteraction.md) collection | Get the list of interactions between the user and the AI.|
-	
+
+|  Method       |  Return Type  | Description| 
+|:---------------|:--------|:----------|
+|[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiinteraction](aiinteraction.md) collection | Get the list of aiinteraction between the user and ai.|
+
 ## Properties
-| Property      | Type     | Description |
+None.
+
+## Relationships
+| Relationship | Type     | Description |
 |:--------------|:---------|:------------|
 | interactions  | [aiInteraction](../resources/aiinteraction.md) collection| The list of AI interactions. |
 
-## Relationships
-
-None.
 
 ## JSON representation
 

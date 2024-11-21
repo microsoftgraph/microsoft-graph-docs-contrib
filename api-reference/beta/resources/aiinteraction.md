@@ -33,7 +33,7 @@ None.
 | createdDateTime | DateTime | The time when the interaction was created. |
 | etag | String | The timestamp of when the interaction was last modified. |
 | from | [identitySet](../resources/identityset.md)  | The user, application, or device that is associated with this interaction. |
-| id | String | Identifier of the message. |
+| id | String | The identifier for the message. |
 | interactionType | [aiInteractionType](#aiinteractiontype-values) | Indicates whether the interaction is a prompt or a Copilot response. Possible values are `userPrompt`, `aiResponse`, `unknownFutureValue`. |
 | links | [aiInteractionLink](../resources/aiinteractionlink.md) collection | The collection of links that appear in the interaction. |
 | locale | String | The locale of the sender. |
@@ -45,8 +45,8 @@ None.
 
 | Member | Description |
 | ---------- | ---------- |
-| userPrompt | user prompt in the interaction. |
-| aiResponse | ai response to the prompt. |
+| userPrompt | A user prompt in the interaction. |
+| aiResponse | A Copilot response to the prompt. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships

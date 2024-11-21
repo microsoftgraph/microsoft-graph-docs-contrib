@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Represents a message attachment, such as cards and images.
 
-## Methods
-
-None.
-
 ## Properties
 
 | Property   | Type | Description |
