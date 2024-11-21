@@ -5,6 +5,7 @@ author: "doudoujinjin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # cloudPcBulkMove resource type

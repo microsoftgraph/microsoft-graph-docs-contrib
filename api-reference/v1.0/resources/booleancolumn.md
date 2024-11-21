@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "Indicates that the column in a columnDefinition holds a Boolean value."
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 08/01/2024
 ---
 # booleanColumn resource type
 

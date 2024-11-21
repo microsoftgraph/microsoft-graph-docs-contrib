@@ -6,6 +6,7 @@ author: "lujiangfeng666"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.title: "Activity-based timeout policy"
+ms.date: 07/22/2024
 ---
 
 # activityBasedTimeoutPolicy resource type
