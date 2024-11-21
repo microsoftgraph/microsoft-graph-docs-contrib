@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Represents all contexts associated with an interaction.
 
-## Methods
-
-None.
-
 ## Properties
 
 | Property   | Type | Description |
