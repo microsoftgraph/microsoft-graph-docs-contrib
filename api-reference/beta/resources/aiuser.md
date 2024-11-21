@@ -18,10 +18,13 @@ Namespace: microsoft.graph
 Represents a AI generated user or agent. 
 
 ## Properties
-
 | Property            | Type   | Description |
 |:--------------------|:-------|:------------|
 | id                  | String | The unique identifier for the AI user. |
+	
+## Relationships
+| Relationship | Type | Description |
+|:-------------|:-----|:------------|
 | interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) collection | The history of interactions between AI agents and users. |
 
 ## JSON representation
