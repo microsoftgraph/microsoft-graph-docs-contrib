@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 ms.date: 11/18/2024
 ---
 # Virtual events town hall API overview
-Microsoft Graph virtual events town hall APIs allows you to get Teams town hall data and programmatically create, update, and cancel a Teams town hall.
+Microsoft Graph virtual events town hall APIs allow you to get Teams town hall data and programmatically create, update, and cancel a Teams town hall.
 
 To make the best use of the Graph virtual events town hall APIs, it’s helpful to understand the personas for the users who access the Teams town hall experience: 
 
