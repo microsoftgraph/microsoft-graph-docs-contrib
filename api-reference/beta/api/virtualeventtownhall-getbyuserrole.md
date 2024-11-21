@@ -5,6 +5,7 @@ author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # virtualEventTownhall: getByUserRole

@@ -5,6 +5,7 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 05/20/2024
 ---
 
 # List group transitive members
