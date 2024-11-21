@@ -3871,6 +3871,32 @@
           "CreatedDateTime": "2024-09-10T05:34:22.37196Z",
           "WorkloadArea": "Files",
           "SubArea": ""
+        },
+    {
+      "ChangeList": [
+        {
+          "Id": "b9e4abfe-3c5c-414d-b1a0-5930f7cc5200",
+          "ApiChange": "Method",
+          "ChangedApiName": "lock",
+          "ChangeType": "Addition",
+          "Description": "Added the [lock](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-lock?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "b9e4abfe-3c5c-414d-b1a0-5930f7cc5200",
+          "ApiChange": "Method",
+          "ChangedApiName": "unlock",
+          "ChangeType": "Addition",
+          "Description": "Added the [unlock](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-unlock?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
         }
+      ],
+      "Id": "b9e4abfe-3c5c-414d-b1a0-5930f7cc5200",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-21T18:56:18.6798946Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    }
   ]
 }
