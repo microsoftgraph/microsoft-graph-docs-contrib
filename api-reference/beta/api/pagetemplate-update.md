@@ -5,6 +5,7 @@ author: Yadong1106
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Update pageTemplate
