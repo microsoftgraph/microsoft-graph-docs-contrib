@@ -105,6 +105,7 @@ Content-Type: application/json
             "model": "HeaterModel12",
             "operatingSystem": "BootOS"
         }
+    ]
 }
 ```
 
@@ -141,6 +142,7 @@ Content-type: application/json
             "id": "037a01c6-2605-4eda-b746-9e41ecca1623",
             "operatingSystem": "Linux"
         }
+    ]
 }
 ```
 
@@ -160,7 +162,7 @@ GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$expand
 
 This is an example response (*truncated for readability)*
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -69,7 +69,7 @@ Don't supply a request body for this method.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_mutualtlsoauthconfiguration"
+  "name": "certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions"
 }
 -->
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+  "@odata.type": "microsoft.graph.certificateAuthority"
 }
 -->
 
@@ -140,5 +140,7 @@ Content-Type: application/json
                     "issuerSki": "CFDACA3798646D23423523432CC056533A582C"
                 }
             ]
-        },
+        }
+    ]
+}
 ```

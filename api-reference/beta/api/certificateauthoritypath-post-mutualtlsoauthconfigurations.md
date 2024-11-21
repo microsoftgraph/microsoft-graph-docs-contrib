@@ -112,7 +112,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+  "@odata.type": "microsoft.graph.certificateAuthority"
 }
 -->
 

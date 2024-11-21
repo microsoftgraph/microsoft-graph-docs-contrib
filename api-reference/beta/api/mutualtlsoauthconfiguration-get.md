@@ -67,21 +67,21 @@ Don't supply a request body for this method.
   "name": "get_mutualtlsoauthconfiguration"
 }
 -->
-```json
+```http
 GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
-
 ```
 
 ### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+  "@odata.type": "microsoft.graph.certificateAuthority"
 }
 -->
-```json
+```http
 HTTP/1.1 201 Created
 Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
   "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
