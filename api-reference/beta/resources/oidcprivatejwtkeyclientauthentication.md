@@ -20,9 +20,7 @@ Inherits from [oidcClientAuthentication](../resources/oidcclientauthentication.m
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-
+None.
 
 ### Where to get the client identifier and secret
 
@@ -31,6 +29,7 @@ Each identity provider has a process for creating an app registration. For examp
 ## Relationships
 
 None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
