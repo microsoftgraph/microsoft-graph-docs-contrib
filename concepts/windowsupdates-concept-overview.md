@@ -20,7 +20,7 @@ IT professionals and management tool vendors alike can use Windows Autopatch to:
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, Windows Autopatch supports managing Windows feature updates, expediting Windows security updates, and managing driver updates. To learn more about the context of Windows Autopatch, see [What is Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). To track the progress and status of your deployments, see [Windows Update for Business reports overview](/windows/deployment/update/wufb-reports-overview). This solution is integrated with Windows Autopatch to enable per deployment reporting, monitoring, and troubleshooting.
+Today, Windows Autopatch supports managing Windows feature updates, hotpatch quality updates, expediting Windows security updates, and managing driver updates. To learn more about the context of Windows Autopatch, see [What is Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). To track the progress and status of your deployments, see [Windows Update for Business reports overview](/windows/deployment/update/wufb-reports-overview). This solution is integrated with Windows Autopatch to enable per deployment reporting, monitoring, and troubleshooting.
 
 ## Prerequisites
 
@@ -46,7 +46,9 @@ Feature updates add new features and functionality to Windows 10 and Windows 11.
 
 ## Quality updates
 
-Quality updates released by Microsoft deliver both security and non-security fixes. Windows Autopatch helps devices to take security updates through Expedite. Security updates are typically released on the second Tuesday of each month, although out-of-band security updates can be released at any time. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes released for your specific operating system version.
+Quality updates released by Microsoft deliver both security and non-security fixes, helping devices stay protected and up-to-date. Windows Autopatch facilitates security updates through the Expedite service, which prioritizes and accelerates the installation of critical updates. While regular security updates are typically released on the second Tuesday of each month, out-of-band security updates can be issued at any time.
+
+To further reduce downtime, hotpatch updates are released on a monthly basis as specialized security updates. These updates allow organizations to install critical fixes without the need to restart a device. This approach enhances security by enabling faster protection without disrupting workflows.
 
 ## Drivers and firmware
 
