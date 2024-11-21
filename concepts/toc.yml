@@ -476,6 +476,8 @@ items:
         href: windowsupdates-enroll.md
       - name: Deploy a feature update
         href: windowsupdates-deploy-update.md
+      - name: Deploy a hotpatch update
+        href: windowsupdates-hotpatch-update.md
       - name: Deploy an expedited update
         href: windowsupdates-deploy-expedited-update.md
       - name: Manage driver update

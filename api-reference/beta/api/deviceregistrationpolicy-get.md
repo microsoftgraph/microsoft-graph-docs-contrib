@@ -22,12 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "deviceregistrationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/deviceregistrationpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global Reader
-+ Cloud Device Administrator
-+ Intune Administrator
-+ Windows 365 Administrator
-+ Directory Reviewer
+[!INCLUDE [rbac-device-registration-policy-apis-read](../includes/rbac-for-apis/rbac-device-registration-policy-apis-read.md)]
 
 ## HTTP request
 

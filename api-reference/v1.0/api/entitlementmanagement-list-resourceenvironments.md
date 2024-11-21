@@ -1,10 +1,11 @@
 ---
 title: "List accessPackageResourceEnvironments"
-description: "Retrieve a list of accessPackageResourceEnvironment objects."
+description: "Retrieve a list of accessPackageResourceEnvironment objects and their properties."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 03/08/2024
 ---
 
 # List accessPackageResourceEnvironments

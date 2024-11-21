@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # Create User

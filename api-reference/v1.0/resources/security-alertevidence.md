@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/31/2024
 ---
 
 # alertEvidence resource type
@@ -33,16 +34,18 @@ This resource is the base type for the following evidence types:
 * [deviceEvidence](security-deviceevidence.md)
 * [fileEvidence](security-fileevidence.md)
 * [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [iotDeviceEvidence](security-iotdeviceevidence.md)
 * [ipEvidence](security-ipevidence.md)
 * [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
 * [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
 * [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md)
 * [kubernetesPodEvidence](security-kubernetespodevidence.md)
 * [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
-* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
 * [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
+* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
 * [mailClusterEvidence](security-mailclusterevidence.md)
 * [mailboxEvidence](security-mailboxevidence.md)
+* [nicEvidence](security-nicevidence.md)
 * [oauthApplicationEvidence](security-oauthapplicationevidence.md)
 * [processEvidence](security-processevidence.md)
 * [registryKeyEvidence](security-registrykeyevidence.md)
