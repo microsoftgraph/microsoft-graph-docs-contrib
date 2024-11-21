@@ -22,7 +22,7 @@ Represents a AI generated user or agent.
 | Property            | Type   | Description |
 |:--------------------|:-------|:------------|
 | id                  | String | The unique identifier for the AI user. |
-| interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) | The history of interactions between AI agents and users. |
+| interactionHistory  | [aiInteractionHistory](../resources/aiinteractionhistory.md) collection | The history of interactions between AI agents and users. |
 
 ## JSON representation
 
