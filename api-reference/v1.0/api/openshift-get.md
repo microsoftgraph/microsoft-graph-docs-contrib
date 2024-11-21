@@ -119,21 +119,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.openShift",
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
+    "id": "OPNSHFT_d8da84aa-0138-45f9-9ac7-5d06712211d3",
+    "createdDateTime": "2024-11-08T22:11:18.091Z",
+    "lastModifiedDateTime": "2024-11-08T22:11:18.091Z",
+    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+    "isStagedForDeletion": false,
+    "draftOpenShift": null,
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe",
+            "userIdentityType": "aadUser",
+            "tenantId": null
+        }
     },
     "sharedOpenShift": {
-        "@odata.type": "microsoft.graph.openShiftItem"
+        "displayName": null,
+        "startDateTime": "2024-11-04T20:00:00Z",
+        "endDateTime": "2024-11-04T21:00:00Z",
+        "theme": "blue",
+        "notes": null,
+        "openSlotCount": 1,
+        "activities": []
     },
-    "draftOpenShift": {
-        "@odata.type": "microsoft.graph.openShiftItem"
-    },
-    "schedulingGroupId": "String",
-    "isStagedForDeletion": "Boolean"
+    "schedulingGroupInfo": {
+        "displayName": "",
+        "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+        "code": null
+    }
 }
 ```
 

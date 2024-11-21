@@ -145,8 +145,8 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
-            "displayName": "victorcheng",
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe",
             "userIdentityType": "aadUser",
             "tenantId": null
         }

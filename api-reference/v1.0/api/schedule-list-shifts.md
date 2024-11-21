@@ -122,22 +122,36 @@ Content-type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.shift",
-      "id": "179a8570-a463-293f-15a2-0bba4cdca4d8",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "sharedShift": {
-        "@odata.type": "microsoft.graph.shiftItem"
-      },
-      "draftShift": {
-        "@odata.type": "microsoft.graph.shiftItem"
-      },
-      "userId": "String",
-      "schedulingGroupId": "String",
-      "isStagedForDeletion": "Boolean"
+        "id": "SHFT_b986be48-7396-4ea4-ad62-470e18d9d2f1",
+        "createdDateTime": "2024-10-10T19:40:59.924Z",
+        "lastModifiedDateTime": "2024-10-10T19:40:59.924Z",
+        "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+        "userId": "5ca83ce7-291d-43b7-bf53-af79eef4bc1d",
+        "isStagedForDeletion": false,
+        "sharedShift": null,
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+                "displayName": "John Doe",
+                "userIdentityType": "aadUser",
+                "tenantId": null
+            }
+        },
+        "draftShift": {
+            "displayName": null,
+            "startDateTime": "2024-10-08T15:00:00Z",
+            "endDateTime": "2024-10-09T00:00:00Z",
+            "theme": "blue",
+            "notes": null,
+            "activities": []
+        },
+        "schedulingGroupInfo": {
+            "displayName": "",
+            "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+            "code": null
+        },
     }
   ]
 }

@@ -116,21 +116,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.timeOff",
-    "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "sharedTimeOff": {
-        "@odata.type": "microsoft.graph.timeOffItem"
-    },
-    "draftTimeOff": {
-        "@odata.type": "microsoft.graph.timeOffItem"
-    },
-    "userId": "String",
-    "isStagedForDeletion": "Boolean"
+  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
+  "createdDateTime": "2019-03-14T05:35:57.755Z",
+  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
+    }
+  },
+  "sharedTimeOff": {
+    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+    "startDateTime": "2019-03-11T07:00:00Z",
+    "endDateTime": "2019-03-12T07:00:00Z",
+    "theme": "white"
+  },
+  "draftTimeOff": {
+    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+    "startDateTime": "2019-03-11T07:00:00Z",
+    "endDateTime": "2019-03-12T07:00:00Z",
+    "theme": "pink"
+  },
+  "isStagedForDeletion": false
 }
 ```
 
