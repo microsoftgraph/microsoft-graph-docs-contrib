@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 09/18/2024
 ---
 
 # internalDomainFederation resource type

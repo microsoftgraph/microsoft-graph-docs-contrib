@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # call resource type
