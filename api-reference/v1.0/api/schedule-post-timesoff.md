@@ -1,7 +1,8 @@
 ---
 title: "Create timeOff"
 description: "Create a new timeOff."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -46,9 +47,9 @@ In the request body, supply a modified JSON representation of a [timeOff](../res
 
 |Property|Type|Description|
 |:---|:---|:---|
-| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either draftTimeOff or sharedTimeOff should be null.|
+| draftTimeOff		| [timeOffItem](../resources/timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either draftTimeOff or sharedTimeOff should be null.|
 | isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
-| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either draftTimeOff or sharedTimeOff should be null.|
+| sharedTimeOff 	| [timeOffItem](../resources/timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either draftTimeOff or sharedTimeOff should be null.|
 | userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
 
 ## Response

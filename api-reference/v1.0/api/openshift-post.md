@@ -1,9 +1,9 @@
 ---
 title: "Create openShift"
 description: "Create an instance of openShift object."
-ms.date: 11/12/2024
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
-author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
@@ -164,7 +164,7 @@ Content-Type: application/json
         "openSlotCount": 1,
         "activities": []
     },
-    isStagedForDeletion: false
+    "isStagedForDeletion": false
 }
 ```
 

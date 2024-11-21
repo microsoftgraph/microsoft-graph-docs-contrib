@@ -1,7 +1,8 @@
 ---
 title: "shift resource type"
 description: "Represents a unit of scheduled work in the schedule."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType

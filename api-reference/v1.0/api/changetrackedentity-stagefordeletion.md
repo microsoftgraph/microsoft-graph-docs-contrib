@@ -1,7 +1,8 @@
 ---
 title: "changeTrackedEntity: stageForDeletion"
 description: "Stage the deletion of an openShift, shift, or timeOff instance in a [schedule](../resources/schedule.md) in draft mode."
-author: "raulfernandes"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

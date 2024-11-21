@@ -2,7 +2,8 @@
 title: "openShift resource type"
 description: "Represents an unassigned open shift in a schedule."
 ms.localizationpriority: medium
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
@@ -23,7 +24,7 @@ Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 | [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read the properties and relationships of an **openShift** object. |
 | [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update an **openShift** object. |
 | [Delete](../api/openshift-delete.md) | None | Delete an **openShift** object. |
-| [stageForDeletion](../api/changetrackedentity-stagefordeletion.md) | None | Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.    | |
+| [stageForDeletion](../api/changetrackedentity-stagefordeletion.md) | None | Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.    | 
 
 ## Properties
 

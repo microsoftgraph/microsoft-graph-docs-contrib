@@ -1,7 +1,8 @@
 ---
 title: "Get shift"
 description: "Get a shift by ID."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType

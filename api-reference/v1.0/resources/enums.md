@@ -3,6 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
+ms.date: 11/21/2024
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
