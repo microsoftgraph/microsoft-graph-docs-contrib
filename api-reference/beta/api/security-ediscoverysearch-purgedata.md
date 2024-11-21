@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
->**Note:** This request purges a maximum of 100 items per location only.
+>**Note:** This request purges a maximum of 100 items per location only. Both `recoverable` and `permanentlyDelete` for **purgeType**, when **purgeAreas** is set to `teamsMessages` will result in permanent deletion of messages.
 
 You can collect and purge the following categories of Teams content:
 - **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people. Teams 1:1 chats are also called *conversations*.
@@ -60,7 +60,7 @@ The following table shows the parameters that you can use with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |purgeAreas|microsoft.graph.security.purgeAreas| Options to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
-|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `unknownFutureValue`, `permanentlyDelete`. The `permanentlyDelete` value isn't supported when **purgeAreas** is set to `teamsMessages`.|
+|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are `recoverable`, `unknownFutureValue`, `permanentlyDelete`. |
 
 ## Response
 
