@@ -14,7 +14,7 @@ To make the best use of the Graph virtual events webinar APIs, it’s helpful to
 - **Organizers** are employees (in your organization) who manage the webinar. They're the authority on schedule and participants. They configure webinar attributes such as title, theme, attendee experience, and email rules.   
 - **Presenters** are employees (in your organization) or guests who lead the webinar.   
 - **Registrants** are users (in or outside of your organization) who registered for a webinar. They can be registered, waitlisted, or rejected. They can choose to cancel their webinar registration.   
-- **Attendees** are registrants who joined the webinar. They need to register through a portal and answered registration questions. 
+- **Attendees** are registrants who joined the webinar. They need to register through a portal and answer registration questions. 
 - **Teams tenant administrator** must authorize custom applications with appropriate permissions.
 
 The following resource types can be used to build your webinar solution: 
