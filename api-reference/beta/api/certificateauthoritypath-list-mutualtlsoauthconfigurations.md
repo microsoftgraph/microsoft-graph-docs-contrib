@@ -38,10 +38,10 @@ GET /directory/certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
 ## Optional query parameters
-This method supports the `$select` & `$filter` [OData query parameter](../../../concepts/query-parameters.md#filter-parameter) to help customize the response.
+This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ### Example Filters/Select
-Reference MSGraph [documentation](../../../concepts/query-parameters.md) for more details regarding the supported operations.
+Reference MSGraph [documentation](/graph/query-parameters) for more details regarding the supported operations.
 |Pattern|Supported|Description|Syntax|
 |-------|:---------:|---|------|
 | $count|✓|Retrieves the total count of matching resources.| `/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$count=true`|
@@ -63,7 +63,7 @@ Don't supply a request body for this method.
 ## Response
 
 - If successful, this method returns a `200 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
 ### Request

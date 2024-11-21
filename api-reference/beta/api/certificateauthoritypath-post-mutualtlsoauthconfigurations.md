@@ -4,6 +4,7 @@ description: "Create a mutual TLS OAuth Configuration."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
@@ -58,7 +59,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 ### Response
 
 - If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -76,8 +77,10 @@ The following example shows a request.
 }
 -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
+Content-Type: application/json
+
 {
   "displayName": "DoorCamera_Model_X_TrustedCAs",
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
@@ -113,9 +116,9 @@ The following example shows the response.
 }
 -->
 
-```json
+```http
 HTTP/1.1 201 Created
-Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",

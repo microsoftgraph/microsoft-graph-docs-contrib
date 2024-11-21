@@ -4,6 +4,7 @@ description: "Get a mutual TLS OAuth Configuration."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
@@ -37,7 +38,7 @@ GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ```
 
 ## Optional query parameters
-This method supports the `$select` & `$filter` [OData query parameter](../../../concepts/query-parameters.md#filter-parameter) to help customize the response.
+This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ### Example Filters/Selec
 |Pattern|Supported|Syntax|
@@ -57,7 +58,7 @@ Don't supply a request body for this method.
 
 
 ## Response
-- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
 ### Request

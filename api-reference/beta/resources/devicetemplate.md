@@ -27,7 +27,6 @@ The `devicetemplate` is immutable, except for `deviceAuthorityAppIds`. No other 
 |[Create](../api/template-post-devicetemplates.md)|[deviceTemplate](../resources/devicetemplate.md) | Create a new DeviceTemplate object in the directory.|
 |[Get deviceTemplate](../api/devicetemplate-get.md) | [deviceTemplate](devicetemplate.md) | Read properties and relationships of deviceTemplate object.|
 |[List deviceTemplate](../api/template-list-devicetemplates.md) | [deviceTemplate](devicetemplate.md) collection| Retrieve a list of devices registered in the directory. |
-|[Update deviceTemplate](../api/devicetemplate-update.md) | [deviceTemplate](devicetemplate.md)  | Update the properties of the deviceTemplate object. |
 |[Delete deviceTemplate](../api/device-delete-devicetemplate.md) | None |Delete the deviceTemplate object. |
 |[Get deviceTemplate owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners of the deviceTemplate object. |
 |[Add a deviceTemplate owner](../api/devicetemplate-post-owners.md)| None |Post a list of owners of the deviceTemplate object. |
@@ -42,24 +41,6 @@ The `devicetemplate` is immutable, except for `deviceAuthorityAppIds`. No other 
 |`manufacturer`|`String`|Manufacturer name|
 |`model`|`String`|Model name | 
 |`operatingSystem`|`String`|OS type | 
-
-## CSDL
-```xml
-<EntityType Name="deviceTemplate" ags:IsHidden="true">
-  <Key>
-    <PropertyRef Name="id" />
-  </Key>
-  <Property Name="id" Type="Edm.String" Nullable="false" />
-  <Property Name="mutualTlsOauthConfigurationId" Type="Edm.String" />
-  <Property Name="mutualTlsOauthConfigurationTenantId" Type="Edm.String" />
-  <Property Name="deviceAuthority" Type="Edm.String" />
-  <Property Name="manufacturer" Type="Edm.String" />
-  <Property Name="model" Type="Edm.String" />
-  <Property Name="operatingSystem" Type="Edm.String" />
-  <NavigationProperty Name="deviceInstances" Type="Collection(graph.device)"/>
-  <NavigationProperty Name="owners" Type="Collection(graph.directoryObject)"/>
-</EntityType>
-```
 
 ## Relationships
 |Relationship|Type|Description|

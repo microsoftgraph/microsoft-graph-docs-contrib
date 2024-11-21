@@ -4,6 +4,7 @@ description: "List device templates."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 # List DeviceTemplate
@@ -35,7 +36,7 @@ GET /directory/templates/deviceTemplates
 ```
 
 ## Optional query parameters
-This method supports the `$select` & `$filter` [OData query parameter](../../../concepts/query-parameters.md#filter-parameter) to help customize the response.
+This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ### Example Filters/Select
 |Pattern|Supported|Syntax|
@@ -54,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
 

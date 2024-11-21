@@ -4,6 +4,7 @@ description: "Update a mutual TLS OAuth Configuration."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
@@ -62,7 +63,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ### Response
 - If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -71,11 +72,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ## Example 1 - Update Display Name
 This example assumes the original object stored has the following value:
-<!-- {
-  "blockType": "request",
-  "name": "update_mutualtlsoauthconfiguration"
-}
--->
+
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
@@ -104,8 +101,14 @@ This example assumes the original object stored has the following value:
 ```
 ### Request
 
-```json
+<!-- {
+  "blockType": "request",
+  "name": "update_mutualtlsoauthconfiguration"
+}
+-->
+```http
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+
 {
   "displayName": "THIS_IS_A_NEW_NAME",
 }
@@ -117,9 +120,9 @@ PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTl
   "truncated": true
 }
 -->
-```json
+```http
 HTTP/1.1 200 
-Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
@@ -182,6 +185,8 @@ This example assumes the original object stored has the following value:
 
 ```json
 PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+Content-Type: application/json
+
 {
   "certificateAuthorities": [
     {

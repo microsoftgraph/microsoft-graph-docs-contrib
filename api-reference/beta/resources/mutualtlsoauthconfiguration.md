@@ -16,7 +16,6 @@ This object is typically created by a device authority on their own EntraId tena
 
 For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
 
-
 ## Methods
 | Method       | Method | Success Code | Return Type  | Description | 
 |:---------------|:--------|:----------|:---|:---|
@@ -37,8 +36,8 @@ For customers that use first party Azure IoT registries, this object may also be
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
 |`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](enums.md#tlsClientRegistrationMetadata) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](https://docs.microsoft.com/en-us/graph/api/resources/certificateauthority?view=graph-rest-1.0) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
+|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ## Example REST call - Create mutualTlsOauthConfiguration Object
 <!-- {
