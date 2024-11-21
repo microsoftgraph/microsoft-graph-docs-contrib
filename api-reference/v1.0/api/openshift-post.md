@@ -62,7 +62,9 @@ If successful, this method returns a `200 OK` response code and the created [ope
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request", "name": "openshiftpost"
+  "blockType": "request", 
+  "name": "openshift_post"
+  "sampleKeys": ["788b75d2-a911-48c0-a5e2-dc98480457e3"]
 }-->
 
 ```http
