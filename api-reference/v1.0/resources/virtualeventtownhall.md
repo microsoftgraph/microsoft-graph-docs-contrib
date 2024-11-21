@@ -25,6 +25,16 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Publish](../api/virtualeventtownhall-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 
+## Roles
+
+|Personas          | Create	    | Get	       | Update	    | Publish 	 | Cancel 	  |
+| ------           | ----------- | ---------- | ---------- | ---------- | ---------- |
+|Organizer         |	✅|	✅|	✅|	✅|	✅|
+|Co-organizer      |	❌|	✅|	✅|	❌|	❌|
+|Presenter         | 	❌|	✅|	❌|	❌|	❌|
+|Attendee          |	❌|	✅|	❌|	❌|	❌|
+|Custom Application|	❌|	✅|	❌|	❌|	❌|
+
 ## Properties
 
 |Property|Type|Description|
