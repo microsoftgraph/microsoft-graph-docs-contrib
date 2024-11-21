@@ -21,18 +21,16 @@ Represents a list of messages exchanged involving AI.
 
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-| **Interaction management** |||
 |[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiinteraction](aiinteraction.md) collection | Get the list of aiinteraction between the user and ai.|
 
 ## Properties
+None.
 
-| Property      | Type     | Description |
+## Relationships
+| Relationship | Type     | Description |
 |:--------------|:---------|:------------|
 | interactions  | [aiInteraction](../resources/aiinteraction.md) collection| The list of AI interactions. |
 
-## Relationships
-
-None.
 
 ## JSON representation
 

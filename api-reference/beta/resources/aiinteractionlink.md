@@ -17,10 +17,6 @@ Namespace: microsoft.graph
 
 Represents the links that appear in the interaction. 
 
-## Methods
-
-None.
-
 ## Properties
 
 | Property   | Type | Description |

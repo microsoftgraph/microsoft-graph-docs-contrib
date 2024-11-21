@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Represents a AI generated user or agent. 
 
+## Methods
+None.
+
 ## Properties
 
 | Property            | Type   | Description |
