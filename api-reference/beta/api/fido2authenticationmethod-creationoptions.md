@@ -6,6 +6,7 @@ author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # fido2AuthenticationMethod: creationOptions

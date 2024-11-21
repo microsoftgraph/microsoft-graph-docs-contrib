@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # List sections
