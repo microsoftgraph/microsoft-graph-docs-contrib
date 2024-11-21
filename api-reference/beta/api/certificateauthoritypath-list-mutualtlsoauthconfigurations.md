@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List mutualTlsOauthConfigurations
 Namespace: microsoft.graph
 
-Lists available mutualTlsOauthConfiguration resources.
+Lists available [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resources.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

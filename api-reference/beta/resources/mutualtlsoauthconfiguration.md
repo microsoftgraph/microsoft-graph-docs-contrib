@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for a particular set of objects that are used for mTLS.
 
-This object is typically created by a device authority on their own AAD tenant. In some cases, the user might choose to create this object in their AAD tenant.
+This object is typically created by a device authority on their own EntraId tenant. In some cases, the user might choose to create this object in their EntraId tenant.
 
 For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
 
@@ -29,8 +29,8 @@ For customers that use first party Azure IoT registries, this object may also be
 ## Permissions
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual-TLS client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes reading trusted certificate authorities. _(Granted to admin role on the device authority's AAD tenant)_|**Delegated**|**Yes**|List, Get|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's AAD tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual-TLS client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
+|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## Properties
 

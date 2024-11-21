@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create DeviceTemplate
 Namespace: microsoft.graph
 
-Add a new DeviceTemplate used to identify attributes & manage a group of devices with similar characteristics. 
+Add a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes & manage a group of devices with similar characteristics. 
 
 When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId` and `mutualTlsOauthConfigurationTenantId` in the body of the message isn't required if using self signed certificates instead of trust root certificates.
 

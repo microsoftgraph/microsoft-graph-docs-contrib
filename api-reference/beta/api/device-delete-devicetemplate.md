@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete DeviceTemplate
 Namespace: microsoft.graph
 
-Delete a registered Device Template. 
+Delete a registered [deviceTemplate](../resources/devicetemplate.md). 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

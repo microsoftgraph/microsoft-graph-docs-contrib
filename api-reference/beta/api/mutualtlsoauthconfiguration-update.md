@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update mutualTlsOauthConfigurations
 Namespace: microsoft.graph
 
-Updates the specified mutualTlsOauthConfiguration resource.
+Updates the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource.
 
 The only two properties that can be updated via patch are:
 - displayName

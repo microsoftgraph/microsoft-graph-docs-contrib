@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete mutualTlsOauthConfigurations
 Namespace: microsoft.graph
 
-Removes the specified mutualTlsOauthConfiguration resource.
+Removes the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,21 +49,31 @@ Do not supply a request body for this method.
 |`204` | Request was successful ||
 |`400` | DeviceTemplates cannot be deleted until all linked devices are deleted. | Failure to do so will result in a `400` response. |
 
-## Example
+## Examples
+
 ### Request
 
-# [HTTP](#tab/http)
-
-```http
-DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/2d62b12a-0163-457d-9796-9602e9807e1
-
-HTTP/1.1 204 NO CONTENT
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_mutualtlsoauthconfiguration"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
+
 
 ### Response
 
-```http
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
-
 

@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get mutualTlsOauthConfigurations
 Namespace: microsoft.graph
 
-Returns the specified mutualTlsOauthConfiguration resource.
+Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

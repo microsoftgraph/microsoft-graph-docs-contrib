@@ -50,7 +50,7 @@ Authorization	| string	| Bearer {token}. Required. |
 ``` http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/$ref
 {
-  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/users/4vfaf3ac-5122-4a25-98d8-b32c091f441f"
 }
 
 HTTP/1.1 204 NO CONTENT

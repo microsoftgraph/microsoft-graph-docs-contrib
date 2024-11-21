@@ -45,6 +45,12 @@ This resource supports:
 | [Get member groups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the device is a member of. The check is transitive. |
 |[Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
 |[Get member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the device is a member of. The check is transitive. |
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../concepts/extensibility-schema-groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+
 ## Properties
 
 > [!IMPORTANT]
@@ -67,6 +73,7 @@ This resource supports:
 |enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. Intune sets this property.|
 |enrollmentType|String|Enrollment type of the device. Intune sets this property. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extension attributes 1-15 for the device. The individual extension attributes aren't selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Microsoft Entra ID. <br><br>Supports `$filter` (`eq`, `not`, `startsWith`, and `eq` on `null` values).|
+|externalSourceName|String|Name of the external IoT registry or other database that the device is registered in. Required if `sourceType` is set to `External`. Read-only. |
 |hostnames|String collection| List of host names for the device.|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`).|
@@ -88,6 +95,7 @@ This resource supports:
 |platform |String|Platform of device. Only returned if the user signs in with a Microsoft account as part of Project Rome. |
 |profileType|String|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|sourceType|String|Device source - AAD/DPS/External. Read-only.|
 |status | String| Device is `online` or `offline`. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Microsoft Entra ID). For more information, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction). |
@@ -97,6 +105,8 @@ This resource supports:
 |:---------------|:--------|:----------|
 |commands | [command](command.md) collection | Set of commands sent to this device.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. |
+|deviceInstances|[device](device.md) collection|Collection of `device` objects created based on this template. Nullable. |
+|deviceTemplate|[deviceTemplate](devicetemplate.md)|Device template used to instantiate this object. Nullable. Read-only. |
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this device is a member of. Read-only. Nullable. Supports `$expand`. |
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports `$expand`. |
 |registeredUsers|[directoryObject](directoryobject.md) collection| Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports `$expand`. |
@@ -134,6 +144,7 @@ The following JSON representation shows the resource type.
   "enrollmentProfileName": "String",
   "enrollmentType": "String",
   "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
+  "externalSourceName": "String",
   "hostnames" : ["String"],
   "id": "String (identifier)",
   "isCompliant": "Boolean",
@@ -154,6 +165,7 @@ The following JSON representation shows the resource type.
   "platform": "String",
   "profileType": "String",
   "registrationDateTime": "String (timestamp)",
+  "sourceType": "String", 
   "status": "String",
   "systemLabels": ["String"],
   "trustType": "String"

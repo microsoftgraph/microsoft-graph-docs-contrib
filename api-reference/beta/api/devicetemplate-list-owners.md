@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get owners of a deviceTemplate object.
+Get owners of a [deviceTemplate](../resources/devicetemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
@@ -61,6 +61,73 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
-    "value": []
+    "value": [
+    {
+      "@odata.type": "#microsoft.graph.servicePrincipal",
+      "id": "4vfaf3ac-5122-4a25-98d8-b32c091f441f",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "alternativeNames": [],
+      "createdDateTime": "2024-09-11T21:21:25Z",
+      "deviceManagementAppType": null,
+      "appDescription": null,
+      "appDisplayName": "test",
+      "appId": "1a9da825-c78b-4531-afcf-c9443adaa442",
+      "applicationTemplateId": null,
+      "appOwnerOrganizationId": "5ea2e292-4586-4888-486a-a0661219fdab",
+      "appRoleAssignmentRequired": false,
+      "description": null,
+      "disabledByMicrosoftStatus": null,
+      "displayName": "test",
+      "errorUrl": null,
+      "homepage": null,
+      "isAuthorizationServiceEnabled": false,
+      "isManagementRestricted": null,
+      "loginUrl": null,
+      "logoutUrl": null,
+      "notes": null,
+      "notificationEmailAddresses": [],
+      "preferredSingleSignOnMode": null,
+      "preferredTokenSigningKeyEndDateTime": null,
+      "preferredTokenSigningKeyThumbprint": null,
+      "publisherName": "Workplace Join Android",
+      "replyUrls": [],
+      "samlMetadataUrl": null,
+      "samlSLOBindingType": "httpRedirect",
+      "servicePrincipalNames": [
+        "1a9da825-ch8b-4531-afcf-c9443adaa442"
+      ],
+      "servicePrincipalType": "Application",
+      "signInAudience": "AzureADMyOrg",
+      "tags": [
+        "HideApp",
+        "WindowsAzureActiveDirectoryIntegratedApp"
+      ],
+      "tokenEncryptionKeyId": null,
+      "certification": null,
+      "samlSingleSignOnSettings": null,
+      "addIns": [],
+      "api": {
+        "resourceSpecificApplicationPermissions": []
+      },
+      "appRoles": [],
+      "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+      },
+      "keyCredentials": [],
+      "publishedPermissionScopes": [],
+      "passwordCredentials": [],
+      "resourceSpecificApplicationPermissions": [],
+      "verifiedPublisher": {
+        "displayName": null,
+        "verifiedPublisherId": null,
+        "addedDateTime": null
+      }
+    }
+  ]
 }
 ```

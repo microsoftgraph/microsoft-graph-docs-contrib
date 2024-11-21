@@ -49,6 +49,7 @@ Inherits from [entity](entity.md).
 |:-|:-|:-|
 | administrativeUnits | [administrativeUnit](administrativeunit.md) collection | Conceptual container for user and group directory objects. |
 | attributeSets | [attributeSet](attributeset.md) collection | Group of related custom security attribute definitions. |
+|certificateAuthorities|[certificateAuthorityPath](../resources/certificateauthoritypath.md)|Container for certificate authorities-related configurations for applications in the tenant.|
 | customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection | Schema of a custom security attributes (key-value pairs). |
 | deletedItems | [directoryObject](directoryobject.md) collection | Recently deleted items. Read-only. Nullable. |
 | deviceLocalCredentials | [deviceLocalCredential](../resources/devicelocalcredential.md) collection | The credentials of the device's local administrator account backed up to Microsoft Entra ID. |

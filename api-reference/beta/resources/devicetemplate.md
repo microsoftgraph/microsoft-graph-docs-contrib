@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents property values that are common to a set of device objects.
+Represents property values that are common to a set of [device](../resources/device.md) objects.
 The properties on the template will be stamped on any `device` object that is created based on this template.
 
 An admin on the customer's tenant will call the `create` API for this entity. Values for `certificateBasedDeviceAuthConfigurationId`, `certificateBasedDeviceAuthConfigurationTenantId`, `deviceAuthorityAppIds` etc. will be provided to the customer by the device authority (manufacturer or reseller).
