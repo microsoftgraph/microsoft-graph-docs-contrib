@@ -5,6 +5,7 @@ description: The site resource provides metadata and relationships for a Sharepo
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 09/17/2024
 ---
 
 # site resource type
