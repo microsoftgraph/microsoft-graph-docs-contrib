@@ -63,7 +63,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "openshift_post"
+  "name": "openshift_post",
   "sampleKeys": ["788b75d2-a911-48c0-a5e2-dc98480457e3"]
 }-->
 
@@ -75,11 +75,11 @@ Content-type: application/json
 {
     "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
     "sharedOpenShift": {
-                "displayName": null,
+                "displayName": "Dayshift",
                 "startDateTime": "2024-11-04T20:00:00Z",
                 "endDateTime": "2024-11-04T21:00:00Z",
                 "theme": "blue",
-                "notes": null,
+                "notes": "InventoryManagement",
                 "openSlotCount": 1,
                 "activities": []
             },
@@ -150,8 +150,8 @@ Content-Type: application/json
         "application": null,
         "device": null,
         "user": {
-            "id": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
-            "displayName": "victorcheng",
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe",
             "userIdentityType": "aadUser",
             "tenantId": null
         }
