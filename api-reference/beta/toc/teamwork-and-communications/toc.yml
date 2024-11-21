@@ -566,7 +566,7 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
-- name: AI Interaction
+- name: AI Interactions (preview)
   items:
   - name: AI interaction history
     items:
