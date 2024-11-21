@@ -58,7 +58,7 @@ The following table lists some solutions you can build by using the Teams client
 
 ### Registration  
 - Use [CREATE registration](/graph/api/virtualeventwebinar-post-registrations) to programmatically register users to your webinar. Organizers, co-organizers, and presenters don’t need to register. Whether or not registrants have Microsoft Entra accounts affects the permissions you need to call the API. 
-- [CREATE registration questions](/graph/api/virtualeventregistrationconfiguration-post-questions) (predefined or custom) attendees have to answer during registration. 
+- [CREATE registration questions](/graph/api/virtualeventregistrationconfiguration-post-questions) (predefined or custom) attendees have to answer required questions during registration. 
 - After the registrant registers for the webinar, use [LIST sessions](/graph/api/virtualeventregistration-list-sessions) to get the unique `joinWebURL` for the webinar. 
 
 ### Email communication
