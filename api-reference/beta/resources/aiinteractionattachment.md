@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Represents a message attachment, such as cards and images.
 
+## Methods
+
+None.
+
 ## Properties
 
 | Property   | Type | Description |
@@ -26,6 +30,10 @@ Represents a message attachment, such as cards and images.
 | contentType | String | The type of the content. For example, `reference`, `file`, and `image/imageType`. |
 | contentUrl | String | The URL of the content. |
 | name | String | The name of the attachment. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Represents the links that appear in the interaction. 
 
+## Methods
+
+None.
+
 ## Properties
 
 | Property   | Type | Description |
@@ -24,6 +28,10 @@ Represents the links that appear in the interaction.
 | displayName | String | The name of the link. |
 | linkType | String | Information about a link in an app chat or BizChat interaction. |
 | linkUrl | String | The URL of the link. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

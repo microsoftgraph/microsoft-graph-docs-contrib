@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Represents all contexts associated with an interaction.
 
+## Methods
+
+None.
+
 ## Properties
 
 | Property   | Type | Description |
@@ -24,6 +28,10 @@ Represents all contexts associated with an interaction.
 | contextReference | String | The full file URL where the interaction happened. |
 | contextType | String | The type of the file. |
 | displayName | String | The name of the file. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

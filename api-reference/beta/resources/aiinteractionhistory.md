@@ -17,12 +17,6 @@ Namespace: microsoft.graph
 
 Represents a list of messages exchanged involving AI.
 
-## Properties
-
-| Property      | Type     | Description |
-|:--------------|:---------|:------------|
-| interactions  | [AiInteraction](../resources/aiinteraction)| The list of AI interactions. |
-
 ## Methods
 
 |  Method       |  Return Type  | Description| 
@@ -30,6 +24,15 @@ Represents a list of messages exchanged involving AI.
 | **Interaction management** |||
 |[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiinteraction](aiinteraction.md) collection | Get the list of aiinteraction between the user and ai.|
 
+## Properties
+
+| Property      | Type     | Description |
+|:--------------|:---------|:------------|
+| interactions  | [AiInteraction](../resources/aiinteraction)| The list of AI interactions. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

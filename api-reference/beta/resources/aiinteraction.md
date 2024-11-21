@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Represents an interaction between a user and Copilot.
 
+## Methods
+
+None.
+
 ## Properties 
 
 | Property   | Type | Description |
@@ -44,6 +48,10 @@ Represents an interaction between a user and Copilot.
 | userPrompt | user prompt in the interaction. |
 | aiResponse | ai response to the prompt. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

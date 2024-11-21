@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Represents a mention of an entity in an interaction.
 
+## Methods
+
+None.
+
 ## Properties
 
 | Property   | Type | Description |
@@ -24,6 +28,10 @@ Represents a mention of an entity in an interaction.
 | mentioned | [aiInteractionMentionedIdentitySet](../resources/aiinteractionmentionedidentityset.md) | The entity mentioned in the message. |
 | mentionId | Int32 | The identifier for the mention. |
 | mentionText | String | The text mentioned in the message. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
