@@ -274,6 +274,14 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | peerRecommeded |
 
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
+
 ### courseStatus values
 
 | Member |

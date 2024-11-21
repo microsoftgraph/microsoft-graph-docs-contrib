@@ -1,5 +1,6 @@
 ---
 title: "List deletedItems (directory objects)"
+ms.date: 11/14/2024
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -13,7 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [externalUserProfile](../resources/externaluserprofile.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md), and [user](../resources/user.md) resources.
+Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
+- [administrativeUnit](../resources/administrativeunit.md)
+- [application](../resources/application.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [externalUserProfile](../resources/externaluserprofile.md)
+- [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
@@ -32,6 +42,8 @@ The following table shows the least privileged permission or permissions require
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -45,6 +57,8 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.administrativeUnit
 GET /directory/deletedItems/microsoft.graph.externalUserProfile
 GET /directory/deletedItems/microsoft.graph.pendingExternalUserProfile
+GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
+GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 ```
 
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
