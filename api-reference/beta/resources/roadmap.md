@@ -33,9 +33,9 @@ Inherits from [changeItemBase](../resources/changeitembase.md).
 |deliveryStage|roadmapItemDeliveryStage|Denotes the current lifecycle state of the feature. The possible values are: `privatePreview`, `publicPreview`, `ga`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |description|String|Description of the feature. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |documentationUrls|String collection|Link to the feature documentation. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
-|gotoLink|String|Link to the feature page in the Entra admin center. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
+|gotoLink|String|Link to the feature page in the Microsoft Entra admin center. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |id|String|Unique identifier for the new feature. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
-|publishedDateTime|DateTimeOffset|Feature planned release date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()` and `second()` built in functions) and `$orderby`.|
+|publishedDateTime|DateTimeOffset|Feature planned release date. Supports `$filter` (`eq`, `ne`, `gt`, `lt`, `le` and `ge` on `year()`, `month()`, `day()`, `hour()`, `minute()`, and `second()` built in functions) and `$orderby`.|
 |shortDescription|String|A short description of the feature. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |systemTags|String collection|Microsoft Entra specific tags. Example value: *New release highlight* - `entra_roadmap_highlight_new_feature`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
 |tags|String collection|Identity and Access Management (IAM) related tags. Example values: `External Identities`, `Reliability and Resilience`. Inherited from [changeItemBase](../resources/changeitembase.md). Supports `$filter` (`any` with `eq`).|
