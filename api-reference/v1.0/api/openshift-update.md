@@ -99,25 +99,10 @@ Content-Type: application/json
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.openShift"
-} -->
-
+  "blockType": "ignored"
+}-->
 ```http
 HTTP/1.1 204 No Content
-{}
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update openshift",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
 
