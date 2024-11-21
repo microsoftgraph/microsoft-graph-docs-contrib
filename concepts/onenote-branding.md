@@ -4,6 +4,7 @@ description: "Integrate the OneNote brand within your product to satisfy brandin
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
+ms.date: 11/07/2024
 ---
 
 # Branding guidelines for OneNote API developers

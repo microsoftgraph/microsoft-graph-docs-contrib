@@ -11,6 +11,9 @@ from msgraph.generated.models.administrative_unit import AdministrativeUnit
 request_body = AdministrativeUnit(
 	display_name = "Seattle District Technical Schools",
 	description = "Seattle district technical schools administration",
+	membership_type = "Dynamic",
+	membership_rule = "(user.country -eq \"United States\")",
+	membership_rule_processing_state = "On",
 	visibility = "HiddenMembership",
 )
 

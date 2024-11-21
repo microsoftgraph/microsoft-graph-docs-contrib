@@ -5,6 +5,7 @@ title: "sitePage: createFromTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
  
 # sitePage: createFromTemplate
@@ -60,7 +61,7 @@ Content-Type: application/json
 {
     "title": "Sample",
     "name": "Sample.aspx",
-    "id": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
+    "templateId": "f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb"
 }
 
 ```
@@ -116,7 +117,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.contoso.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,

@@ -476,6 +476,8 @@ items:
         href: windowsupdates-enroll.md
       - name: Deploy a feature update
         href: windowsupdates-deploy-update.md
+      - name: Deploy a hotpatch update
+        href: windowsupdates-hotpatch-update.md
       - name: Deploy an expedited update
         href: windowsupdates-deploy-expedited-update.md
       - name: Manage driver update
@@ -909,6 +911,9 @@ items:
       items:
       - name: Call records
         href: cloud-communications-callrecords.md
+        items:
+        - name: FAQ
+          href: callrecords-api-faq.md
       - name: Supported call types
         href: cloud-communications-calls.md
       - name: Create or join online meetings
@@ -945,6 +950,9 @@ items:
       href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
     - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
+    - name: Approvals app APIs
+      href: approvals-app-api.md
+      displayName: approvals, Approvals API, get approvals
     - name: Payment models and licensing requirements
       href: teams-licenses.md
     - name: Implementation differences in national clouds

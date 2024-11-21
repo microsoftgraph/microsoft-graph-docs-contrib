@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sandeo-MSFT"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/25/2024
 ---
 
 # device resource type
@@ -34,7 +35,11 @@ This resource supports:
 |[List member of](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive member of](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
 |[List registered owners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
+|[Add registered owners](../api/device-post-registeredowners.md) |[directoryObject](directoryobject.md) collection| Add registered owners of the device.|
+|[Remove registered owners](../api/device-delete-registeredowners.md) |[directoryObject](directoryobject.md) collection| Delete registered owners from the device.|
 |[List registered users](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
+|[Add registered users](../api/device-post-registeredusers.md) |[directoryObject](directoryobject.md) collection| Add registered users of the device .|
+|[Remove registered users](../api/device-delete-registeredusers.md) |[directoryObject](directoryobject.md) collection| Remove registered users from the device .|
 |[Check member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
 |[Get member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the device is a member of. The check is transitive. |
 

@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Create connectedOrganization
 
@@ -58,6 +59,8 @@ You can specify the following properties when creating a **connectedOrganization
 If successful, this method returns a `201 Created` response code and a new [connectedOrganization](../resources/connectedorganization.md) object in the response body.
 
 ## Examples
+
+### Example 1: Create a connected organization
 
 ### Request
 
@@ -145,3 +148,94 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Create a connected organization with an identitySource based on a tenant ID
+
+This example shows creating a connected organization with an identity source based on a tenant ID. The tenant ID can be found, by the domain name, using the [tenantRelationship: findTenantInformationByDomainName](../api/tenantrelationship-findtenantinformationbydomainname.md) call.
+
+### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_connectedorganization_from_connectedorganizations_based_on_tenantID"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
+Content-Type: application/json
+
+{
+  "displayName":"Connected organization name",
+  "description":"Connected organization description",
+  "identitySources": [
+    {
+      "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
+      "displayName": "Contoso",
+      "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
+      }
+  ],
+  "state":"proposed"
+}
+
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-connectedorganization-from-connectedorganizations-based-on-tenantid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-connectedorganization-from-connectedorganizations-based-on-tenantid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connectedorganization-from-connectedorganizations-based-on-tenantid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-based-on-tenantid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-connectedorganization-from-connectedorganizations-based-on-tenantid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-connectedorganization-from-connectedorganizations-based-on-tenantid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-connectedorganization-from-connectedorganizations-based-on-tenantid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-connectedorganization-from-connectedorganizations-based-on-tenantid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectedOrganization"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/connectedOrganizations/$entity",
+  "id": "922c86cf-65b8-4d94-b6a6-477dde331c7b",
+  "displayName": "Connected organization name",
+  "description": "Connected organization description",
+  "createdDateTime": "2024-10-29T21:55:39.6051923Z",
+  "modifiedDateTime": "2024-10-29T21:55:39.6051923Z",
+  "state": "proposed",
+  "identitySources": []
+}
+
+```

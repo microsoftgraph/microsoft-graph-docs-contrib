@@ -130,7 +130,7 @@ items:
       href: ../../api/cloudpc-retrievereviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info for user
+    - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
@@ -276,7 +276,7 @@ items:
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Retrieve bulk action status reports
+    - name: Get bulk action status reports
       href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
     - name: Get Cloud PC recommendation reports
       href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
@@ -8564,6 +8564,8 @@ items:
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
       href: ../../resources/windowsupdates-qualityupdatecveseverityinformation.md
+    - name: Quality update filter
+      href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
     - name: Safeguard profile

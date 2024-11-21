@@ -20,6 +20,8 @@ You can't change a phone's type. To change a phone's type, add a new number of t
 
 If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system attempts to register the number for use in that system.
 
+Self-service operations aren't supported.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

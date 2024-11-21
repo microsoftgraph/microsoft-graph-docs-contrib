@@ -18,6 +18,8 @@ You can't change a phone's type. To change a phone's type, add a new number of t
 
 If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 
+Self-service operations aren't supported.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -28,8 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-update-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
-
-Users cannot update their own phone authentication method.
 
 ## HTTP request
 
