@@ -21,7 +21,7 @@ Represents a list of messages exchanged involving AI.
 
 | Property      | Type     | Description |
 |:--------------|:---------|:------------|
-| interactions  | [AiInteraction](../resources/aiinteraction)| The list of AI interactions. |
+| interactions  | [aiInteraction](../resources/aiinteraction.md)| The list of AI interactions. |
 
 ## Methods
 
