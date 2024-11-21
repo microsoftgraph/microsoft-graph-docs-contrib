@@ -4,6 +4,22 @@
       "ChangeList": [
         {
           "Id": "85f240bc-bd05-4725-bcd5-19bbe2a90b0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "trustedCertificateAuthorityBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [trustedCertificateAuthorityBase](https://learn.microsoft.com/en-us/graph/api/resources/trustedCertificateAuthorityBase?view=graph-rest-beta) resource.",
+          "Target": "trustedCertificateAuthorityBase"
+        },
+        {
+          "Id": "85f240bc-bd05-4725-bcd5-19bbe2a90b0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "createDeviceFromTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [createDeviceFromTemplate](https://learn.microsoft.com/en-us/graph/api/deviceTemplate-createDeviceFromTemplate?view=graph-rest-beta) method to the [deviceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/deviceTemplate?view=graph-rest-beta) resource.",
+          "Target": "deviceTemplate"
+        },
+        {
+          "Id": "85f240bc-bd05-4725-bcd5-19bbe2a90b0c",
           "ApiChange": "Enumeration",
           "ChangedApiName": "tlsClientRegistrationMetadata",
           "ChangeType": "Addition",
