@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's AAD tenant)_|**Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's AAD tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's EntraId tenant)_|**Application-only**|**Yes**|List, Get|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -32,11 +32,11 @@ GET /directory/templates/deviceTemplates/{id}/owners
 
 ## Request headers
 | Name | Type |	Description |
-| -- | -- | -- |
+|--|--|--|
 Authorization	| string	| Bearer {token}. Required. |
 
 ## Request Body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Examples
 
-### Example 1: Get a deviceTemplate owner by Id
+### Example 1: Get a deviceTemplate owner by ID
 
 #### Request
 

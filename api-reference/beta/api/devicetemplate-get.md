@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's AAD tenant)_|**Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's AAD tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's EntraId tenant)_|**Application-only**|**Yes**|List, Get|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -40,11 +40,11 @@ This method supports the `$select` & `$filter` [OData query parameter](https://d
 
 ## Request headers
 | Name | Type |	Description |
-| -- | -- | -- |
+|--|--|--|
 Authorization	| string	| Bearer {token}. Required. |
 
 ## Request Body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Examples
 
-### Example 1: Get a deviceTemplate by Id with CA issued mtls certificate
+### Example 1: Get a deviceTemplate by ID with CA issued mtls certificate
 
 #### Request
 ```http
@@ -79,7 +79,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a device and return only its id and operatingSystem properties
+### Example 2: Get a device and return only its ID and operatingSystem properties
 
 #### Request
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$select
 
 #### Response
 
-The following is an example of the response.
+This is an example response.
 
 ```http
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 ```
 
 ### Example 3: Get a device that uses a self-signed CA
-The following is an example of the response.
+This is an example response.
 
 #### Request
 

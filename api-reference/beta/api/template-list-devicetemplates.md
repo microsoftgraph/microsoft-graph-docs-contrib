@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's AAD tenant)_|**Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's AAD tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's EntraId tenant)_|**Application-only**|**Yes**|List, Get|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -40,7 +40,7 @@ This method supports the `$select` & `$filter` [OData query parameter](https://d
 
 ## Request headers
 | Name | Type |	Description |
-| -- | -- | -- |
+|--|--|--|
 Authorization	| string	| Bearer {token}. Required. |
 
 ## Request Body
@@ -96,7 +96,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a list of device and return only its id and operatingSystem properties
+### Example 2: Get a list of device and return only its ID and operatingSystem properties
 
 #### Request
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$select
 
 #### Response
 
-The following is an example of the response.
+This is an example response.
 
 ```http
 HTTP/1.1 200 OK
@@ -134,11 +134,11 @@ Content-type: application/json
 
 
 
-### Example 3: Get a list of device and expand devicetemplate owners & device Instances
+### Example 3: Get a list of device and expand device template owners & device instances
 
 #### Request
 
-The following request retrieves a list of device templates, and expands the devicetemplate owners & device isntances.
+The following request retrieves a list of device templates, and expands the device template owners & device instances.
 
 ```http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$expand=deviceInstances&owners
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates?$expand
 
 #### Response
 
-The following is an example of the respons (*truncated for readability)*
+This is an example response (*truncated for readability)*
 
 ```json
 HTTP/1.1 200 OK

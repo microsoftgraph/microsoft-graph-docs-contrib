@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add new owner(s) of a deviceTemplate object.
+Add new owner of a deviceTemplate object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's AAD tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ POST /directory/templates/deviceTemplates/{id}/owners/$ref
 
 ## Request headers
 | Name | Type |	Description |
-| -- | -- | -- |
+|--|--|--|
 Authorization	| string	| Bearer {token}. Required. |
 
 ## Request Body

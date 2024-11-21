@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Add a new DeviceTemplate used to identify attributes & manage a group of devices with similar characteristics. 
 
-When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId` and `mutualTlsOauthConfigurationTenantId` in the body of the message is not required if using self signed certificates instead of trust root certificates.
+When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId` and `mutualTlsOauthConfigurationTenantId` in the body of the message isn't required if using self signed certificates instead of trust root certificates.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's AAD tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP Request
 
@@ -35,7 +35,7 @@ POST /directory/templates/deviceTemplates
 
 ### Request headers
 | Name | Type |	Description | Required |
-| -- | -- | -- | -- |
+|--|--|--|--|
 | Authorization	| string	| Bearer {token}. | Yes |
 | Content-Type  | string  | application/json. | Yes |
 
@@ -46,9 +46,9 @@ You can specify the following properties when creating a **deviceTemplate**.
 
 |Property|Type|Description|Required|
 |-|-|-|-|
-|`mutualTlsOauthConfigurationId`|`String`|Object Id of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._|No|
-|`mutualTlsOauthConfigurationTenantId`|`String`|Id of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's AAD Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._|No|
-|`deviceAuthority` | `String` | `deviceAuthority` is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's AAD tenant. For example, Acme (`manufacturer`) makes security cameras that are installed in customer buildings and managed by ABC Company (`deviceAuthority`). | Yes 
+|`mutualTlsOauthConfigurationId`|`String`|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._|No|
+|`mutualTlsOauthConfigurationTenantId`|`String`|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._|No|
+|`deviceAuthority` | `String` | `deviceAuthority` is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (`manufacturer`) makes security cameras that are installed in customer buildings and managed by ABC Company (`deviceAuthority`). | Yes 
 |`manufacturer`|`String`|Manufacturer name|Yes|
 |`model`|`String`|Model name | Yes|
 |`operatingSystem`|`String`|OS type | No |
