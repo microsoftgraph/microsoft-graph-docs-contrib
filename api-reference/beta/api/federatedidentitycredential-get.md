@@ -117,18 +117,17 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-    "id": "adab08eb-b523-3601-d455-7dffb7c44a9b",
-    "name": "String",
-    "issuer": "String",
-    "subject": "String",
-    "description": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('cd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/directoryObjects/$/Microsoft.DirectoryServices.Application('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials('bdad0963-4a7a-43ae-b569-e67e1da3f2c0')/bdad0963-4a7a-43ae-b569-e67e1da3f2c0",
+    "id": "bdad0963-4a7a-43ae-b569-e67e1da3f2c0",
+    "name": "testing",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "This is my test  federated identity credential",
     "audiences": [
-      "String"
+        "api://AzureADTokenExchange"
     ],
-    "claimsMatchingExpression": {
-      "@odata.type": "microsoft.graph.federatedIdentityExpression"
-    }
+    "claimsMatchingExpression": null
   }
 }
 ```

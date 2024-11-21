@@ -1,6 +1,6 @@
 ---
 title: "federatedIdentityExpression resource type"
-description: "Explains claimsMatchingExpression resource type"
+description: "Explains claimsMatchingExpression resource type to enable Flexible FIC matching"
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Explains
+The `claimsMatchingExpression` resource type enables the use of a restricted expression language for more flexible matching of federated identity credentials to workload scenarios. Primarily, this resource type allows the specification of wildcard-based expressions within `claimsMatchingExpression`'s `value` property. For more information on support patterns and scenarios, please visit our flexible federated identity credentials (documentation)[https://aka.ms/flexiblefic].  
 
 
 ## Properties
