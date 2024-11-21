@@ -16,7 +16,7 @@ The only two properties that can be updated via patch are:
 - displayName
 - certificateAuthorities
 
-If you want to update a subset of items in the certificate list, you'll want to first get the whole list, make your modifications, and re-post the entire contents of the certficateAuthorities attribute list.
+If you want to update a subset of items in the certificate list, you want to first get the whole list, make your modifications, and repost the entire contents of the certficateAuthorities attribute list.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's AAD tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP Request
 ``` http
@@ -35,7 +35,7 @@ PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ### Request headers
 See [Authorization](/graph/security-authorization) for more information about adding the Authorization Header. The field {token} should be replaced with the associated "Access Token".
 | Name | Type |	Description | Required |
-| -- | -- | -- | -- |
+|--|--|--|--|
 | Authorization	| string	| Bearer {token}.   | Yes |
 | Content-Type  | string    | application/json. | Yes |
 

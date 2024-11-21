@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. This includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's AAD tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
+|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -30,24 +30,24 @@ DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ```
 
 ## Request headers
-See [Authorization](/graph/security-authorization) for more information about adding the Authorization Header. The field {token} should be replaced with the associated "Access Token".
+For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
 | Name       | Description|
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-- Mutualtlsauthconfigurations cannot be deleted until all linked DeviceTemplates and their linked devices are deleted. Failure to do so will result in a `400` response.
+- If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+- Mutualtlsauthconfigurations can't be deleted until all linked DeviceTemplates and their linked devices are deleted. Failure to do so results in a `400` response.
 - Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
 |`204` | Request was successful ||
-|`400` | DeviceTemplates cannot be deleted until all linked devices are deleted. | Failure to do so will result in a `400` response. |
+|`400` | DeviceTemplates can't be deleted until all linked devices are deleted. | Failure to do so results in a `400` response. |
 
 ## Examples
 
