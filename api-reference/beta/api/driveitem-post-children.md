@@ -149,6 +149,11 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
+> [!IMPORTANT]
+> Children requests that contain additional $filter parameters are not supported.  For example:
+>```http
+> GET https://graph.microsoft.com/v1.0/drives/{ContainerID}/items/{folderID}/children?$filter=listitem/fields/{columnName} eq '{ColumnValue}' AND listitem/fields/FileLeafRef eq '{DocumentName}' &$select=id,name,lastModifiedDateTime,size&$expand=listitem($expand=fields)
+> ```
 <!--
 {
   "type": "#page.annotation",
