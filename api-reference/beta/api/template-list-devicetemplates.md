@@ -16,6 +16,12 @@ Retrieve a list of devicesTemplates registered in the directory.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "template-list-devicetemplates-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's EntraId tenant)_|**Application-only**|**Yes**|List, Get|
@@ -55,7 +61,7 @@ Do not supply a request body for this method.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_deviceTemplates"
+  "name": "list_devicetemplate"
 }
 -->
 ``` http
@@ -65,7 +71,12 @@ Content-Type: application/json
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceTemplate"
+}
+-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

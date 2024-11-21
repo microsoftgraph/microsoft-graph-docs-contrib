@@ -23,11 +23,21 @@ If you want to update a subset of items in the certificate list, you want to fir
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "mutualtlsoauthconfiguration-update-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ```
@@ -61,7 +71,11 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ## Example 1 - Update Display Name
 This example assumes the original object stored has the following value:
-
+<!-- {
+  "blockType": "request",
+  "name": "update_mutualtlsoauthconfiguration"
+}
+-->
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
@@ -98,7 +112,11 @@ PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTl
 ```
 
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```json
 HTTP/1.1 200 
 Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"

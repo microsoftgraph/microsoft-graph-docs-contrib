@@ -40,18 +40,15 @@ For customers that use first party Azure IoT registries, this object may also be
 |`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](enums.md#tlsClientRegistrationMetadata) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
 |`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](https://docs.microsoft.com/en-us/graph/api/resources/certificateauthority?view=graph-rest-1.0) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
-
-## CSDL
-
-```xml
-<EntityType Name="mutualTlsOauthConfiguration" BaseType="graph.trustedCertificateAuthorityBase" ags:IsHidden="true">
-  <Property Name="displayName" Type="Edm.String" />
-  <Property Name="tlsClientAuthParameter" Type="graph.tlsClientRegistrationMetadata" />
-</EntityType>
-```
-
 ## Example REST call - Create mutualTlsOauthConfiguration Object
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration",
+  "baseType": "microsoft.graph.trustedCertificateAuthorityBase",
+  "openType": false
+}
+-->
 ```json
 POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
 {

@@ -19,6 +19,12 @@ When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "template-post-devicetemplates-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
@@ -66,7 +72,11 @@ You can specify the following properties when creating a **deviceTemplate**.
 ## Example
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_devicetemplate_from_"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 Content-Type: application/json
@@ -84,7 +94,12 @@ Content-length: 106
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceTemplate"
+}
+-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

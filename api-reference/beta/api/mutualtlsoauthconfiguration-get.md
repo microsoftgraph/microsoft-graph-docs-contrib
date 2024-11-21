@@ -17,6 +17,12 @@ Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "mutualtlsoauthconfiguration-get-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
@@ -55,14 +61,23 @@ Don't supply a request body for this method.
 
 ## Example
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "get_mutualtlsoauthconfiguration"
+}
+-->
 ```json
 GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
 
 ```
 
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+}
+-->
 ```json
 HTTP/1.1 201 Created
 Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
