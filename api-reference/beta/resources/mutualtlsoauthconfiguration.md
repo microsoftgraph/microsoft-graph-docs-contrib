@@ -10,11 +10,17 @@ doc_type: resourcePageType
 
 # mutualTlsOauthConfiguration resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a list of Certificate Authorities (CAs) that are permitted to issue certificates for a particular set of objects that are used for mTLS.
 
 This object is typically created by a device authority on their own EntraId tenant. In some cases, the user might choose to create this object in their EntraId tenant.
 
 For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
+
+Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
 
 ## Methods
 | Method       | Method | Success Code | Return Type  | Description | 
@@ -48,8 +54,9 @@ For customers that use first party Azure IoT registries, this object may also be
   "openType": false
 }
 -->
-```json
+```http
 POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
+
 {
   "displayName": "DoorCamera_Model_X_TrustedCAs",
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
@@ -75,6 +82,7 @@ POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTls
 
 HTTP/1.1 201 Created
 Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#mutualTlsOauthConfigurations",
   "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",

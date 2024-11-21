@@ -104,6 +104,7 @@ Content-length: 106
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates/$entity",
     "id": "c0ff9329-3596-4ece-8aa9-3dd23a925356",
