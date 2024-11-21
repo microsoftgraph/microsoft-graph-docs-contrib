@@ -2,7 +2,8 @@
 title: "Update workforceIntegration"
 description: "Update the properties of a workforceIntegration object."
 ms.localizationpriority: medium
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
@@ -136,6 +137,8 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
   "displayName": "ABCWorkforceIntegration",

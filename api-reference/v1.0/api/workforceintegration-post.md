@@ -2,7 +2,8 @@
 title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
 ms.localizationpriority: medium
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "apiPageType"
 ---

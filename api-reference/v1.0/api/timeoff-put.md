@@ -1,7 +1,8 @@
 ---
 title: "Replace timeOff"
 description: "Replace an existing timeOff object."
-author: "akumar39"
+ms.date: 11/21/2024
+author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -104,6 +105,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+{}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

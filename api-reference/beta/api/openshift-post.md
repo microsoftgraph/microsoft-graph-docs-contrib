@@ -57,6 +57,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "openshift_post"
+  "sampleKeys": ["788b75d2-a911-48c0-a5e2-dc98480457e3"]
 }-->
 
 ```http

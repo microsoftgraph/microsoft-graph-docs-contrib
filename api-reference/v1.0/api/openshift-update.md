@@ -69,7 +69,7 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/team/schedule/openShifts/{openShiftId}
+PUT https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-Type: application/json
 
 {
@@ -108,6 +108,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
