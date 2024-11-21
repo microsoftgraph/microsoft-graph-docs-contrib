@@ -17,11 +17,22 @@ Removes the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "certificateauthoritypath-delete-mutualtlsoauthconfigurations-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 The `{id}` in the request is the value of the **id** property of the device template.
 

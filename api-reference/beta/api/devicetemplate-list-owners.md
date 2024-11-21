@@ -17,6 +17,12 @@ Get owners of a [deviceTemplate](../resources/devicetemplate.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "devicetemplate-list-owners-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`DeviceTemplate.Read.All`|Read  device templates | Allows the app to read all device templates, on behalf of the signed in user. _(Granted to the device authority's app on the customer's EntraId tenant)_|**Application-only**|**Yes**|List, Get|
@@ -48,13 +54,24 @@ Don't supply a request body for this method.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_directoryobject"
+}
+-->
+
 ``` http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e/owners
 ```
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+}
+-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

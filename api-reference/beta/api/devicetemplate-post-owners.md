@@ -17,6 +17,12 @@ Add new owner of a deviceTemplate object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "devicetemplate-post-owners-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** & **Delegated**|**Yes**|List, Get, Create, Update, Delete|
@@ -45,14 +51,41 @@ Authorization	| string	| Bearer {token}. Required. |
 
 ## Examples
 
-#### Request
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryobjects"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/$ref
+Content-Type: application/json
+
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/4vfaf3ac-5122-4a25-98d8-b32c091f441f"
 }
+```
 
-HTTP/1.1 204 NO CONTENT
+### Response
 
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.directoryObject",
+  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
+  "deletedDateTime": "String (timestamp)"
+}
 ```

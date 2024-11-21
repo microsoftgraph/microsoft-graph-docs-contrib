@@ -17,6 +17,12 @@ Remove owner of a [deviceTemplate](../resources/devicetemplate.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "devicetemplate-delete-owners-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Delegated** & **Application**|**Yes**|List, Get, Create, Update, Delete|
@@ -45,9 +51,26 @@ Don't supply a request body for this method.
 
 #### Request
 
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_owners_from_devicetemplate"
+}
+-->
+
 ``` http
 DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/ec8493f6-748f-4f53-928d-1ca4b6fcacc6/$ref
+```
 
-HTTP/1.1 204 NO CONTENT
+### Response
 
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```

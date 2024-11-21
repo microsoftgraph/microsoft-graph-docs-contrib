@@ -17,6 +17,12 @@ Delete a registered [deviceTemplate](../resources/devicetemplate.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "device-delete-devicetemplate-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 **Application-only**|**Yes**|List, Get|
@@ -55,24 +61,33 @@ Don't supply a request body for this method.
 ## Example
 ### Request
 
-# [HTTP](#tab/http)
-
-```http
-DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
-
-HTTP/1.1 204 NO CONTENT
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_devicetemplate_from_device"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/devices/{devicesId}/deviceTemplate/{id}/$ref
 ```
+
 
 ### Response
 
-
-```http
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
 
 ## Example 2
 ### Request
-If the user doesisn't have access to a given resource, the error emitted shows as:
+If the user doesn't have access to a given resource, the error emitted shows as:
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
 ```

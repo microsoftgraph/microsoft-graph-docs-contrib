@@ -16,11 +16,22 @@ Add a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md)
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "certificateauthoritypath-post-mutualtlsoauthconfigurations-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ``` http
 POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
 ```
@@ -58,6 +69,12 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ## Example
 ### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_mutualtlsoauthconfiguration_from_"
+}
+-->
 
 ```json
 POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
@@ -87,6 +104,14 @@ POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTls
 
 
 ### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+}
+-->
 
 ```json
 HTTP/1.1 201 Created

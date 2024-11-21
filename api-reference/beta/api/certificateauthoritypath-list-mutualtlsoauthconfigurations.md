@@ -17,6 +17,12 @@ Lists available [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfigu
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions"
+}
+-->
+
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 |`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
@@ -60,16 +66,29 @@ Don't supply a request body for this method.
 
 ## Example
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_mutualtlsoauthconfiguration"
+}
+-->
 
-```json
+```http
 GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
 ### Response
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+}
+-->
+
+```http
 HTTP/1.1 200 OK
-Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/"
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations",
     "value": [
