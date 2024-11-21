@@ -5,6 +5,7 @@ title: "sitePage: createFromTemplate"
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
  
 # sitePage: createFromTemplate
