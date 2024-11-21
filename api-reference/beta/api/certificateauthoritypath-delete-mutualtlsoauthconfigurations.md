@@ -4,6 +4,7 @@ description: "Delete a mutual TLS OAuth Configuration."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
@@ -15,7 +16,7 @@ Removes the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",

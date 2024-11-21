@@ -4,6 +4,7 @@ description: "Get owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 Get owners of a [deviceTemplate](../resources/devicetemplate.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -56,7 +57,7 @@ Don't supply a request body for this method.
 
 <!-- {
   "blockType": "request",
-  "name": "list_directoryobject"
+  "name": "devicetemplate-list-owners-permissions"
 }
 -->
 
