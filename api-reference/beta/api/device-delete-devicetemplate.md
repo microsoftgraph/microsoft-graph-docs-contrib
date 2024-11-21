@@ -15,12 +15,12 @@ Delete a registered [deviceTemplate](../resources/devicetemplate.md).
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
 **Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates | Allows the app to create, read, update, and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. _(Granted to admin on the customer's Entra tenant)_|**Delegated** & **app-only**|**Yes**|List, Get, Create, Update, Delete|
+|`DeviceTemplate.ReadWrite.All`|Read and write device templates | Allows the app to create, read, update, and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. _(Granted to admin on the customer's EntraId tenant)_|**Delegated** & **app-only**|**Yes**|List, Get, Create, Update, Delete|
 
 ## HTTP request
 
@@ -40,7 +40,7 @@ Don't supply a request body for this method.
 
 ## Response
 - If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 > **Note:** DeviceTemplates can't be deleted until all linked devices are deleted. Failure to do so results in a `400` response.
 

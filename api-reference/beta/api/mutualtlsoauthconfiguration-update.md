@@ -21,7 +21,7 @@ If you want to update a subset of items in the certificate list, you want to fir
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
@@ -48,11 +48,11 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |-|-|-|-|-|-|
 |`displayName`|`String`|Friendly name|
 |`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](../resources/tlsClientRegistrationMetadata.md) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](https://docs.microsoft.com/en-us/graph/api/resources/certificateauthority?view=graph-rest-1.0) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ### Response
 - If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|

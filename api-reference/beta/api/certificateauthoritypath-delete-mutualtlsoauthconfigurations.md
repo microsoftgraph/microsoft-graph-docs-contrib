@@ -15,7 +15,7 @@ Removes the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
@@ -31,6 +31,7 @@ DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 
 ## Request headers
 For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
+
 | Name       | Description|
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required. |
@@ -42,7 +43,7 @@ Don't supply a request body for this method.
 
 - If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 - Mutualtlsauthconfigurations can't be deleted until all linked DeviceTemplates and their linked devices are deleted. Failure to do so results in a `400` response.
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|

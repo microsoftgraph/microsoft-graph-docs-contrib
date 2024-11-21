@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Retrieve a list of devicesTemplates registered in the directory.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
@@ -29,7 +29,7 @@ GET /directory/templates/deviceTemplates
 ```
 
 ## Optional query parameters
-This method supports the `$select` & `$filter` [OData query parameter](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) to help customize the response.
+This method supports the `$select` & `$filter` [OData query parameter](../../../concepts/query-parameters.md#filter-parameter) to help customize the response.
 
 ### Example Filters/Select
 |Pattern|Supported|Syntax|
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 ## Example
 

@@ -15,7 +15,7 @@ Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
@@ -31,7 +31,7 @@ GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ```
 
 ## Optional query parameters
-This method supports the `$select` & `$filter` [OData query parameter](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) to help customize the response.
+This method supports the `$select` & `$filter` [OData query parameter](../../../concepts/query-parameters.md#filter-parameter) to help customize the response.
 
 ### Example Filters/Selec
 |Pattern|Supported|Syntax|
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 
 ## Response
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 ## Example
 ### Request

@@ -14,7 +14,7 @@ Add a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md)
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
 |-|-|-|-|-|-|
@@ -27,6 +27,7 @@ POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
 
 ### Request headers
 For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
+
 | Name | Type |	Description | Required |
 |--|--|--|--|
 | Authorization	| string	| Bearer {token}.   | Yes |
@@ -40,13 +41,13 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
 |`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](../resources/tlsClientRegistrationMetadata.md) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](https://docs.microsoft.com/en-us/graph/api/resources/certificateauthority?view=graph-rest-1.0) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
+|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ### Response
 
 - If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](https://docs.microsoft.com/en-us/graph/errors) for more information regarding general error codes and error conditions.
+- Reference [MSGraph error responses and resource types](../../../concepts/errors.md) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
