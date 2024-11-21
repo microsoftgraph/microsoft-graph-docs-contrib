@@ -44,4 +44,4 @@ The following table lists some solutions you can build by using the Teams client
 - [List all the town hall in a tenant](/graph/api/virtualeventsroot-list-townhalls), where the [user is an organizer or co-organizer](/graph/api/virtualeventtownhall-getbyuserrole), and where the [specified user is either the organizer or co-organizer](/graph/api/virtualeventtownhall-getbyuseridandrole) are currently only available in Beta. 
 
 ### Email communication
-- To turn off email communications to attendees, it needs to be done when [creating the town hall](/graph/api/virtualeventsroot-post-townhalls). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails still send to organizers, co-organizers, and presenters (internal and external).
+- To turn off email communications to attendees, it needs to be done when [creating the town hall](/graph/api/virtualeventsroot-post-townhalls). In the `settings` property, set `isAttendeeEmailNotificationEnabled` to `false`. However, emails are still sent to organizers, co-organizers, and presenters (internal and external).
