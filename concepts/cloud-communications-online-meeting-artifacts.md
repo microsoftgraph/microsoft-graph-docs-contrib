@@ -9,8 +9,7 @@ ms.date: "09/20/2021"
 
 # Online meeting artifacts and permissions
 
-Online meeting artifacts are content produced during an online meeting. You can use the 
-[Get meetingAttendanceReport](../api-reference/v1.0/resources/meetingattendancereport.md) operation to get the meeting artifacts:
+Online meeting artifacts are content produced during an online meeting. You can use the [Get meetingAttendanceReport](../api-reference/v1.0/resources/meetingattendancereport.md) operation to get the meeting artifacts:
 
 - Attendance report of an online meeting, in the form of a JSON response. Attendance reports have the following characteristics:
   - Only available when the meeting ends
