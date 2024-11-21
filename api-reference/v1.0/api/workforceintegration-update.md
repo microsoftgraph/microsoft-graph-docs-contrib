@@ -2,7 +2,6 @@
 title: "Update workforceIntegration"
 description: "Update the properties of a workforceIntegration object."
 ms.localizationpriority: medium
-ms.date: 11/21/2024
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"

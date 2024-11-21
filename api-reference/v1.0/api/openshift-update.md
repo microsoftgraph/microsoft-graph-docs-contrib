@@ -1,7 +1,6 @@
 ---
 title: "Update openShift"
 description: "Update the properties of an openShift object."
-ms.date: 11/12/2024
 ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
@@ -100,9 +99,16 @@ The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+  ]
+}-->
 

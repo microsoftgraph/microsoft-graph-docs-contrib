@@ -1,8 +1,7 @@
 ---
 title: "Replace timeOff"
 description: "Replace an existing timeOff object."
-ms.date: 11/21/2024
-author: "victorcheng"
+author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -98,9 +97,16 @@ The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+  ]
+}-->
 
