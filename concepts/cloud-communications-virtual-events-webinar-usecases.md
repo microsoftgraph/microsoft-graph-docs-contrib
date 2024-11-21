@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 ms.date: 11/18/2024
 ---
 # Virtual events webinar API overview
-Microsoft Graph virtual events webinar APIs allows you to get Teams webinar data and programmatically create, update, and cancel a Teams webinar.
+Microsoft Graph virtual events webinar APIs allow you to get Teams webinar data and programmatically create, update, and cancel a Teams webinar.
 
 To make the best use of the Graph virtual events webinar APIs, it’s helpful to understand the personas for the users who access the Teams webinar experience: 
 
