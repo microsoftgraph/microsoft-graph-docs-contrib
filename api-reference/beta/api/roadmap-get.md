@@ -2,6 +2,7 @@
 title: "Get roadmap"
 description: "Read the properties and relationships of a roadmap object."
 author: "garretraziel"
+ms.date: 11/20/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "List changeItemBase objects"
 description: "Get a list of the changeItemBase objects and their properties."
 author: "garretraziel"
+ms.date: 11/20/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

@@ -5013,48 +5013,6 @@ Possible values for user account types (group membership), per Windows definitio
 |comingSoon|
 |unknownFutureValue|
 
-### roadmapItemCategory values
-
-|Member|
-|:---|
-|aadConnectCloudSync|
-|aadConnectSync|
-|accessControl|
-|authZAccessDelegation|
-|azureADDomainServices|
-|b2BB2C|
-|collaboration|
-|developerExperience|
-|deviceLifecycleManagement|
-|directory|
-|endUserExperiences|
-|entitlementManagement|
-|extensibility|
-|gdpr|
-|goLocal|
-|identityGovernance|
-|identityLifecycleManagement|
-|identitySecurityProtection|
-|inboundtoEntraID|
-|monitoringReporting|
-|outboundtoOnPremisesApplications|
-|outboundtoSaaSApplications|
-|permissionsManagement|
-|platform|
-|privilegedIdentityManagement|
-|reinventCollaboration|
-|sso|
-|standards|
-|thirdPartyIntegration|
-|userAuthentication|
-|userManagement|
-|decentralizedIdentities|
-|entraCloudSync|
-|entraConnect|
-|entraDomainServices|
-|other|
-|unknownFutureValue|
-
 ### roadmapItemDeliveryStage values
 
 |Member|

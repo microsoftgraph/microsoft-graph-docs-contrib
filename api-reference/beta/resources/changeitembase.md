@@ -2,6 +2,7 @@
 title: "changeItemBase resource type"
 description: "Represents either a planned change or planned new feature in Microsoft Entra."
 author: "garretraziel"
+ms.date: 11/20/2024
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -29,8 +30,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changeItemService|changeItemService|Specifies the Microsoft Entra service name to which this item belongs. The possible values are: `accessReviews`, `appProxy`, `audit`, `authenticationsLogins`, `azureADDomainServices`, `b2B`, `b2CConsumerIdentityManagement`, `conditionalAccess`, `deviceAccessManagement`, `deviceRegistrationandManagement`, `directoryManagement`, `enterpriseApps`, `entitlementManagement`, `groupManagement`, `identityProtection`, `internetAccess`, `lifecycleWorkflows`, `linkedIn`, `managedidentitiesforAzureresources`, `mfA`, `microsoftAuthenticatorApp`, `microsoftIdentityManager`, `msGraph`, `myApps`, `myProfileAccount`, `na`, `o365Groups`, `other`, `privateAccess`, `privilegedIdentityManagement`, `provisioning`, `rbac`, `reporting`, `roles`, `selfServicePasswordReset`, `sovereignClouds`, `termsofUse`, `userAccessManagement`, `userExperienceandManagement`, `userManagement`, `microsoftEntraDomainServices`, `verifiedId`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
-|changeItemState|changeItemState|Indicates whether this feature or change was released or if it's an upcoming release. The possible values are: `available`, `comingSoon`, `unknownFutureValue`. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
+|changeItemService|String|Specifies the Microsoft Entra service name to which this item belongs. Supports `$filter` (`eq`, `ne`, `in`) and `$orderby`.|
 |description|String|Description of the new feature or change announcement. Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
 |documentationUrls|String collection|Link to the feature or change documentation. Supports `$filter` (`any` with `eq`).|
 |id|String|Unique identifier for the new feature or change announcement. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`, `in`, `startswith`) and `$orderby`.|
@@ -56,7 +56,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.changeItemBase",
   "id": "String (identifier)",
-  "changeItemState": "String",
   "changeItemService": "String",
   "tags": [
     "String"

@@ -5,26 +5,10 @@
         {
           "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "changeItemService",
-          "ChangeType": "Addition",
-          "Description": "Added the **changeItemService** enumeration type.",
-          "Target": "changeItemService"
-        },
-        {
-          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "changeItemState",
           "ChangeType": "Addition",
           "Description": "Added the **changeItemState** enumeration type.",
           "Target": "changeItemState"
-        },
-        {
-          "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "roadmapItemCategory",
-          "ChangeType": "Addition",
-          "Description": "Added the **roadmapItemCategory** enumeration type.",
-          "Target": "roadmapItemCategory"
         },
         {
           "Id": "9afc7db2-99c5-4815-8958-41b0db8efb5a",
