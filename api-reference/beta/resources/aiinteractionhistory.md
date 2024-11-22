@@ -21,7 +21,7 @@ Represents a list of messages exchanged involving AI.
 
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-|[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiinteraction](aiinteraction.md) collection | Get all Microsoft 365 Copilot interactions data, including user prompts to Copilot and the Copilot responses. |
+|[List all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) | [aiInteraction](aiinteraction.md) collection | Get all Microsoft 365 Copilot interactions data, including user prompts to Copilot and the Copilot responses. |
 
 ## Properties
 None.
