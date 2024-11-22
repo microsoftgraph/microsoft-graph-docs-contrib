@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To link external town hall event information to a town hall event.
+To link external town hall event information to a town hall event:
 
 <!-- {
   "blockType": "ignored"
@@ -38,7 +38,7 @@ To link external town hall event information to a town hall event.
 POST /solutions/virtualEvents/townhalls/{id}/setExternalEventInformation
 ```
 
-To link external webinar event information to a webinar event.
+To link external webinar event information to a webinar event:
 
 <!-- {
   "blockType": "ignored"
