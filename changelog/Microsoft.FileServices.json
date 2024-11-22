@@ -3883,6 +3883,14 @@
                 "Target": "filestorage"
               },
               {
+                "Id": "7d884131-f875-49eb-8315-1557e5c8f2c6",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "deletedContainers",
+                "ChangeType": "Addition",
+                "Description": "Added the **deletedContainers** relationship to the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/fileStorage?view=graph-rest-1.0) resource.",
+                "Target": "fileStorage"
+              },
+              {
                 "Id": "d4cad5ca-ea99-4c26-bb63-35d74f43",
                 "ApiChange": "Method",
                 "ChangedApiName": "Delete",
