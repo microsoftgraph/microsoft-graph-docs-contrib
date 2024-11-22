@@ -128,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
+If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
 ``` http
 HTTP/1.1 200 OK
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
+If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
 ``` http
 HTTP/1.1 200 OK
