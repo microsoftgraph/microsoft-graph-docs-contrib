@@ -74,15 +74,15 @@ The following example shows a request.
 <!-- { 
   "blockType": "request", 
   "name": "create-newslinkpage", 
-  "scopes": "sites.readwrite.all" } 
--->
+  "scopes": "sites.readwrite.all" 
+} -->
 ``` http
 POST https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages/microsoft.graph.newsLinkPage
 Prefer: include-unknown-enum-members
 Content-Type: application/json
 
 {
-  "newsWebUrl":"https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
   "title": "Contoso Unveils First Self-Driving Car"
 }
 ```
@@ -148,8 +148,8 @@ The following example shows a request.
 <!-- { 
   "blockType": "request", 
   "name": "create-newslinkpage-multipart", 
-  "scopes": "sites.readwrite.all" } 
--->
+  "scopes": "sites.readwrite.all" 
+} -->
 ```http
 POST https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
 Prefer: include-unknown-enum-members
