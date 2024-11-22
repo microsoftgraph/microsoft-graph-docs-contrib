@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.certificateAuthority"
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
 }
 -->
 
@@ -100,12 +100,7 @@ Content-Type: application/json
             "tlsClientAuthParameter": "tls_client_auth_san_uri",
             "certificateAuthorities": [
                 {
-                    "isRootAuthority": true,
-                    "certificateRevocationListUrl": "http://contoso.ctp.net",
-                    "deltaCertificateRevocationListUrl": null,
-                    "certificate": "MIIGGz..3x5oVWiKvuskw==",
-                    "issuer": "E=test@contoso.ctp.net, CN=root-ca, OU=testme, O=MS, L=Redmond, S=WA, C=US",
-                    "issuerSki": "E383753242345234AC9EA4F0C01410"
+                "@odata.type": "microsoft.graph.certificateAuthority"
                 }
             ]
         },
@@ -116,12 +111,7 @@ Content-Type: application/json
             "tlsClientAuthParameter": "tls_client_auth_san_uri",
             "certificateAuthorities": [
                 {
-                    "isRootAuthority": true,
-                    "certificateRevocationListUrl": null,
-                    "deltaCertificateRevocationListUrl": null,
-                    "certificate": "MIIFOTCCAyGgAw..0Z+E/",
-                    "issuer": "CN=Azure_IoT_Config_Cli_Cert",
-                    "issuerSki": "46F807234634534B4A018C987E3D0EE7E9850198D0"
+                "@odata.type": "microsoft.graph.certificateAuthority"
                 }
             ]
         },
@@ -132,12 +122,7 @@ Content-Type: application/json
             "tlsClientAuthParameter": "tls_client_auth_san_email",
             "certificateAuthorities": [
                 {
-                    "isRootAuthority": true,
-                    "certificateRevocationListUrl": null,
-                    "deltaCertificateRevocationListUrl": null,
-                    "certificate": "MIIF..szY=",
-                    "issuer": "CN=TestRoot1, O=Test, L=Redmond, S=Washington, C=US",
-                    "issuerSki": "CFDACA3798646D23423523432CC056533A582C"
+                "@odata.type": "microsoft.graph.certificateAuthority"
                 }
             ]
         }

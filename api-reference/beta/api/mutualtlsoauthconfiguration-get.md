@@ -75,9 +75,10 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.certificateAuthority"
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
 }
 -->
+
 ```http
 HTTP/1.1 201 Created
 Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"

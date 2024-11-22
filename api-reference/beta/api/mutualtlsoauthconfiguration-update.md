@@ -58,7 +58,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
 |`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`|[`tlsClientRegistrationMetadata`](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID |No | Yes| Yes|
+|`tlsClientAuthParameter`|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
 |`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ### Response
@@ -133,20 +133,7 @@ Content-Type: application/json
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
-    },
-    {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }

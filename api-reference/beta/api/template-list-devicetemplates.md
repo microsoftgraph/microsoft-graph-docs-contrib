@@ -79,32 +79,22 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates",
     "value": [
         {
             "@odata.type": "#microsoft.graph.deviceTemplate",
-            "id": "00f1e7a4-de6d-4070-84df-8aab629c4d1e",
-            "deletedDateTime": null,
-            "mutualTlsOauthConfigurationId": "3cdc013f-7db9-4139-819f-3fd0a3c99346",
-            "mutualTlsOauthConfigurationTenantId": "f35bf5fa-7977-447c-a1af-4c457bad7d7e",
-            "deviceAuthority": "Acme",
-            "manufacturer": "Acme",
-            "model": "DeepFreezerModelAB",
-            "operatingSystem": "BootOS"
-        },
-        {
-            "@odata.type": "#microsoft.graph.deviceTemplate",
-            "id": "03118739-2050-44cd-98ed-ed28b147af70",
-            "deletedDateTime": null,
-            "mutualTlsOauthConfigurationId": "e25aef4f-78a7-4418-8658-cf38ef244c25",
-            "mutualTlsOauthConfigurationTenantId": "f35bf5fa-7977-447c-a1af-4c457bad7d7e",
-            "deviceAuthority": "Acme",
-            "manufacturer": "Acme",
-            "model": "HeaterModel12",
-            "operatingSystem": "BootOS"
+            "id": "a4d7a4eb-8ade-d364-56b2-bcb659b3c6f9",
+            "deletedDateTime": "String (timestamp)",
+            "mutualTlsOauthConfigurationId": "String",
+            "mutualTlsOauthConfigurationTenantId": "String",
+            "deviceAuthority": "String",
+            "manufacturer": "String",
+            "model": "String",
+            "operatingSystem": "String"
         }
     ]
 }
