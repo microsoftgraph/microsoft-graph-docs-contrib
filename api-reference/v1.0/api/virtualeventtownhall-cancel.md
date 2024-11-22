@@ -5,7 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventTownhall: cancel
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled town hall has its **status** set to `canceled` permanently. You can still get a canceled town hall by using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) API.
 
-Only the persona designated as the **Organizer** has the ability to cancel the event.
+Only the **Organizer** can cancel a town hall event.
 
 ## Permissions
 
@@ -73,7 +73,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/bce9a3ca
 
 ---
 
----
 
 ### Response
 
