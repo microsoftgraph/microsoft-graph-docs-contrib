@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
+Only the **Organizer** & **Co-organizer** can make changes of a townhall event.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

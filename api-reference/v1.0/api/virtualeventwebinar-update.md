@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
+Only the **Organizer** & **Co-organizer** can make changes of a webinar event.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

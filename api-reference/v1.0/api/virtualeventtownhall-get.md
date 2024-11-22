@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
+All the roles are capable to retrieve the details from the townhall event.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

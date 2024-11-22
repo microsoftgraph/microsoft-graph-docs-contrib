@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled town hall has its **status** set to `canceled` permanently. You can still get a canceled town hall by using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) API.
 
-Only the **Organizer** can cancel a town hall event.
+Only the **Organizer** can cancel a townhall event.
 
 ## Permissions
 

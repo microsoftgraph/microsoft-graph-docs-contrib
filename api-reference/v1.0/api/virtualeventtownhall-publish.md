@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md) to make it visible to its audience.
 
-Only the **Organizer** can publish a town hall event.
+Only the **Organizer** can publish a townhall event.
 
 ## Permissions
 
