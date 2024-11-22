@@ -2938,6 +2938,9 @@
                 "virtualEventSession",
                 "virtualEventTownhall",
                 "virtualEventWebinar"
+              ],
+              "complexTypes": [
+                "virtualEventExternalInformation"
               ]
             }
           ]

@@ -546,6 +546,8 @@ items:
         href: ../../api/virtualeventtownhall-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventtownhall-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
     - name: Virtual event webinar
       items:
       - name: Virtual event webinar
@@ -566,6 +568,12 @@ items:
         href: ../../api/virtualeventwebinar-getbyuserrole.md
       - name: List by user ID and role
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Set external event information
+        href: ../../api/virtualevent-setexternaleventinformation.md
+    - name: Complex types
+      items:
+      - name: Virtual event external information
+        href: ../../resources/virtualeventexternalinformation.md
 - name: AI interactions (preview)
   items:
   - name: AI interaction history
