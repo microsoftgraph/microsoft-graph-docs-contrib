@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionHistory: getAllEnterpriseInteractions" 
-description: "Get all Copilot interactions data, including both a user prompt to Copilot and the Copilot response."
+description: "Get all Microsoft 365 Copilot interactions data, including both a user prompt to Copilot and the Copilot response."
 ms.date: 11/18/2024
 author: "bkeerthivasa"
 ms.localizationpriority: high
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all Copilot interactions data, including both a user prompt to Copilot and the Copilot response. This API captures the user intent, the resources accessed by Copilot, and the response to the user for Microsoft 365 Copilot apps such as Teams, Word, and Outlook.
+Get all Microsoft 365 Copilot interactions data, including both a user prompt to Copilot and the Copilot response. This API captures the user intent, the resources accessed by Copilot, and the response to the user for Microsoft 365 apps such as Teams, Word, and Outlook.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
