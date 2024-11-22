@@ -50,7 +50,7 @@ Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificatea
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration",
-  "baseType": "microsoft.graph.trustedCertificateAuthorityBase",
+  "baseType": "microsoft.graph.certificateAuthorityPath",
   "openType": false
 }
 -->

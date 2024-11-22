@@ -117,7 +117,8 @@ PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTl
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
 }
 -->
 ```http
