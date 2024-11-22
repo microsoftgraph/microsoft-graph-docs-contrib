@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer: lock"
-description: "Lock a fileStorageContainer."
+description: "Lock a fileStorageContainer to prevent modifications to its content."
 author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its contents.
+Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.
 
 This action updates the [lockState](../resources/enums.md#sitelockstate-values).
 
