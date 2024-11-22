@@ -68,22 +68,6 @@
         },
         {
           "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
-          "ApiChange": "Resource",
-          "ChangedApiName": "trustedCertificateAuthorityBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [trustedCertificateAuthorityBase](https://learn.microsoft.com/en-us/graph/api/resources/trustedCertificateAuthorityBase?view=graph-rest-beta) resource.",
-          "Target": "trustedCertificateAuthorityBase"
-        },
-        {
-          "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
-          "ApiChange": "Method",
-          "ChangedApiName": "createDeviceFromTemplate",
-          "ChangeType": "Addition",
-          "Description": "Added the [createDeviceFromTemplate](https://learn.microsoft.com/en-us/graph/api/deviceTemplate-createDeviceFromTemplate?view=graph-rest-beta) method to the [deviceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/deviceTemplate?view=graph-rest-beta) resource.",
-          "Target": "deviceTemplate"
-        },
-        {
-          "Id": "370a2bc0-4ec9-4052-95ee-0990a1204483",
           "ApiChange": "Singleton",
           "ChangedApiName": "certificateAuthorities",
           "ChangeType": "Addition",
