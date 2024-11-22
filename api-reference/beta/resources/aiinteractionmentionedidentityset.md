@@ -1,6 +1,6 @@
 ---
 title: "aiInteractionMentionedIdentitySet resource type"
-description: "Represents an entity mentioned in a message."
+description: "Represents an entity mentioned in an AI interaction."
 ms.date: 11/18/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity mentioned in a message.
+Represents an entity mentioned in an AI interaction.
 
 Inherits from [identitySet](../resources/identityset.md).
 
