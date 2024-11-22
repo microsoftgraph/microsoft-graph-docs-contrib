@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about a call event. The call can be a one-on-one or group adhoc, PSTN, VOIP or scheduled active online meeting. 
+Contains information about a call event. The call can be a one-on-one or group ad-hoc call, a PSTN or VOIP call, or a scheduled active online meeting. 
 
 ## Methods
 
@@ -22,9 +22,9 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| callEventType | callEventType| Depicts call event type. The possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`.|
-| eventDateTime | DateTimeOffset | The time of when event occurred. |
-| id | String | Entity id. |
+| callEventType | callEventType| The event type of the call. Possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`.|
+| eventDateTime | DateTimeOffset | The time when event occurred. |
+| id | String | The unique identifier for the call event. |
 
 ## Relationships
 |Relationship|Type|Description|

@@ -34,7 +34,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| participants | [participant](../resources/participant.md) collection| Participants will not be defined for emergency call events. Inherited from [microsoft.graph.callEvent](../resources/callevent.md). |
+| participants | [participant](../resources/participant.md) collection| Participants aren't defined for emergency call events. Inherited from [microsoft.graph.callEvent](../resources/callevent.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.

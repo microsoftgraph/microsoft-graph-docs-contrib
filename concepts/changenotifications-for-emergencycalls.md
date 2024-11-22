@@ -8,14 +8,14 @@ ms.custom: "scenarios:getting-started"
 ---
 # Get change notifications for Microsoft Teams emergency call event updates
 
-Microsoft Teams supports notifications with emergency calls which can be routed to inform specific security personnels within Teams. Graph emergency call events notification extends that capability to allow emergency calling notifications to be received outside of Teams (i.e. your own client application) as shown in the diagram below. 
+Microsoft Teams supports notifications with emergency calls which can be routed to inform specific security personnel within Teams. Graph emergency call events notification extends that capability to allow emergency calling notifications to be received outside of Teams (for example, by your own client application) as shown in the following diagram. 
 
 ![Emergency call events notification flow diagram](./images/Change-notification-emergency-call-flow.png)
 
 1.	The Teams tenant admin configures [emergency calling](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
 2.	The client application creates a Graph emergency call event subscription. 
-3.	When a Teams user makes an emergency call (i.e. dial 911) on Teams, the emergency call event notification is fired to the client application. 
-4.	To continue to be subscribed to emergency call event notifications, the client application will either [renew](/graph/api/subscription-update) the existing subscription before the expiry period or [create](/graph/api/subscription-post-subscriptions) a new one after the expiry period.
+3.	The emergency call event notification is fired to the client application When a Teams user makes an emergency call (for example, 911) on Teams. 
+4.	The client application either [renews](/graph/api/subscription-update) the existing subscription before the expiry period or [creates](/graph/api/subscription-post-subscriptions) a new one after the expiry period to continue to subscribe to emergency call event notifications.
 
 
 ## Permissions 
@@ -30,9 +30,9 @@ Microsoft Teams supports notifications with emergency calls which can be routed 
 
 To subscribe to when an applicable emergency call policy number is dialed, set the `resource` property in the subscription payload to `communications/calls/getEmergencyEventsByPolicy(policyName='{policyName}')` where the `{policyName}` field must be replaced with the policy name configured for your organization.
 
-Subscriptions for emergency call events only support rich notifications. Please set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
-Subscriptions for emergency call events have a **max expiration period of 1 day**. To keep subscriptions for longer durations, a subscription patch must be made to update the `expirationDateTime` property. See [Update subscription API](/graph/api/subscription-update) for more details.
+Subscriptions for emergency call events have a **max expiration period of 1 day**. To keep subscriptions for longer durations, a subscription patch must be made to update the `expirationDateTime` property. For more information, see [Update subscription API](/graph/api/subscription-update).
 
 > [!NOTE]
 > Subscriptions are limited **one subscription per application, per tenant, and per unique policy name**. A duplicated subscription using the same application, tenant, and to the same emergency policy will fail with HTTP status code 409 designating that subscription request was duplicated and cannot be created.
