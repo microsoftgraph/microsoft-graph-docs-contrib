@@ -83,9 +83,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates",
     "value": [
         {
+            "@odata.type": "#microsoft.graph.deviceTemplate",
             "id": "00f1e7a4-de6d-4070-84df-8aab629c4d1e",
             "deletedDateTime": null,
             "mutualTlsOauthConfigurationId": "3cdc013f-7db9-4139-819f-3fd0a3c99346",
@@ -96,6 +96,7 @@ Content-Type: application/json
             "operatingSystem": "BootOS"
         },
         {
+            "@odata.type": "#microsoft.graph.deviceTemplate",
             "id": "03118739-2050-44cd-98ed-ed28b147af70",
             "deletedDateTime": null,
             "mutualTlsOauthConfigurationId": "e25aef4f-78a7-4418-8658-cf38ef244c25",
@@ -148,7 +149,7 @@ Content-type: application/json
 
 
 
-### Example 3: Get a list of device and expand device template owners & device instances
+### Example 3: Get a list of devices and expand device template owners & device instances
 
 #### Request
 
