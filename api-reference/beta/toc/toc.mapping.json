@@ -2943,7 +2943,7 @@
           ]
         },
         {
-          "name": "AI Interactions (preview)",
+          "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
           ]
