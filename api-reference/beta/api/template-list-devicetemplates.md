@@ -75,7 +75,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.deviceTemplate"
+  "@odata.type": "Collection(microsoft.graph.deviceTemplate)"
 }
 -->
 ``` http
