@@ -5,6 +5,7 @@ author: "aaku"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType_
+ms.date: 07/26/2024
 ---
 
 # shiftActivity resource type

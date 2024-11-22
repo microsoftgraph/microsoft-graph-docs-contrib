@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "connectedorganization_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-update-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-identity-governance-write](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

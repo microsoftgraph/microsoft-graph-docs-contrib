@@ -5,6 +5,7 @@ author: "AllisonAm"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 06/21/2024
 ---
 
 # group: getPasswordSingleSignOnCredentials

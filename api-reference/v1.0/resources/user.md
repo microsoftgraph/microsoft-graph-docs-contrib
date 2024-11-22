@@ -6,6 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
+ms.date: 10/17/2024
 ---
 
 # user resource type

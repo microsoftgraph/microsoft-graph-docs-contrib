@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: External Meeting Registrant (deprecated)
+ms.date: 10/15/2024
 ---
 
 # externalMeetingRegistrant resource type (deprecated)

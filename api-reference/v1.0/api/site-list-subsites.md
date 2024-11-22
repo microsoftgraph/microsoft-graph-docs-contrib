@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # List subsites for a site
 

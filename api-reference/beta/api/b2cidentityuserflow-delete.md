@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Delete b2cIdentityUserFlow
