@@ -90,20 +90,7 @@ Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mut
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
-    },
-    {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }
