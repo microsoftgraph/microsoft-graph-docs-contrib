@@ -28,6 +28,8 @@ restrictions := graphmodels.NewCustomAppManagementConfiguration()
 passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.PASSWORDADDITION_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration.SetRestrictionType(&restrictionType) 
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+passwordCredentialConfiguration.SetState(&state) 
 maxLifetime := null
 passwordCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2019-10-19T10:37:00Z")
@@ -35,6 +37,8 @@ passwordCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrict
 passwordCredentialConfiguration1 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.PASSWORDLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration1.SetRestrictionType(&restrictionType) 
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+passwordCredentialConfiguration1.SetState(&state) 
 maxLifetime , err := abstractions.ParseISODuration("P90D")
 passwordCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
@@ -42,6 +46,8 @@ passwordCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restric
 passwordCredentialConfiguration2 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.SYMMETRICKEYADDITION_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration2.SetRestrictionType(&restrictionType) 
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+passwordCredentialConfiguration2.SetState(&state) 
 maxLifetime := null
 passwordCredentialConfiguration2.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2019-10-19T10:37:00Z")
@@ -49,7 +55,9 @@ passwordCredentialConfiguration2.SetRestrictForAppsCreatedAfterDateTime(&restric
 passwordCredentialConfiguration3 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.SYMMETRICKEYLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration3.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P30D")
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+passwordCredentialConfiguration3.SetState(&state) 
+maxLifetime , err := abstractions.ParseISODuration("P90D")
 passwordCredentialConfiguration3.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
 passwordCredentialConfiguration3.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -61,37 +69,16 @@ passwordCredentials := []graphmodels.PasswordCredentialConfigurationable {
 	passwordCredentialConfiguration3,
 }
 restrictions.SetPasswordCredentials(passwordCredentials)
-
-
-keyCredentialConfiguration := graphmodels.NewKeyCredentialConfiguration()
-restrictionType := graphmodels.ASYMMETRICKEYLIFETIME_APPKEYCREDENTIALRESTRICTIONTYPE 
-keyCredentialConfiguration.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P90D")
-keyCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
-restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
-keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
-keyCredentialConfiguration1 := graphmodels.NewKeyCredentialConfiguration()
-restrictionType := graphmodels.TRUSTEDCERTIFICATEAUTHORITY_APPKEYCREDENTIALRESTRICTIONTYPE 
-keyCredentialConfiguration1.SetRestrictionType(&restrictionType) 
-restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2019-10-19T10:37:00Z")
-keyCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
-certificateBasedApplicationConfigurationIds := []string {
-	"eec5ba11-2fc0-4113-83a2-ed986ed13743",
-	"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
-}
-keyCredentialConfiguration1.SetCertificateBasedApplicationConfigurationIds(certificateBasedApplicationConfigurationIds)
-maxLifetime := null
-keyCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
-
 keyCredentials := []graphmodels.KeyCredentialConfigurationable {
-	keyCredentialConfiguration,
-	keyCredentialConfiguration1,
+
 }
 restrictions.SetKeyCredentials(keyCredentials)
 applicationRestrictions := graphmodels.NewCustomAppManagementApplicationConfiguration()
 identifierUris := graphmodels.NewIdentifierUriConfiguration()
 nonDefaultUriAddition := graphmodels.NewIdentifierUriRestriction()
-restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2024-01-01T10:37:00Z")
+state := graphmodels.DISABLED_APPMANAGEMENTRESTRICTIONSTATE 
+nonDefaultUriAddition.SetState(&state) 
+restrictForAppsCreatedAfterDateTime := null
 nonDefaultUriAddition.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
 excludeAppsReceivingV2Tokens := true
 nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 

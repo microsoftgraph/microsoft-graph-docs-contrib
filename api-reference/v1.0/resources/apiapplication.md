@@ -11,7 +11,7 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Specifies settings for an application that implements a web API.
+Specifies settings for an [application](application.md) that implements a web API.
 
 ## Properties
 

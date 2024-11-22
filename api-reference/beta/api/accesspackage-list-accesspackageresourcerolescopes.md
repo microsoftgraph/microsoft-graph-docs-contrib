@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageResourceRoleScopes"
-description: "Retrieve a list of accesspackageresourcerolescope objects."
+description: "Retrieve an access package with a list of accessPackageResourceRoleScope objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackage_list_accesspackageresourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 

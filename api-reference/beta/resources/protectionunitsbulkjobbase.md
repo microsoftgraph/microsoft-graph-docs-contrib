@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection units bulk addition job
+ms.date: 10/17/2024
 ---
 
 # protectionUnitsBulkJobBase resource type

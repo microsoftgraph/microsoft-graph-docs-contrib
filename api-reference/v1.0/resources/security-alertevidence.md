@@ -5,6 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 05/31/2024
 ---
 
 # alertEvidence resource type
@@ -33,16 +34,18 @@ This resource is the base type for the following evidence types:
 * [deviceEvidence](security-deviceevidence.md)
 * [fileEvidence](security-fileevidence.md)
 * [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
+* [iotDeviceEvidence](security-iotdeviceevidence.md)
 * [ipEvidence](security-ipevidence.md)
 * [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
 * [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
 * [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md)
 * [kubernetesPodEvidence](security-kubernetespodevidence.md)
 * [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
-* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
 * [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
+* [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
 * [mailClusterEvidence](security-mailclusterevidence.md)
 * [mailboxEvidence](security-mailboxevidence.md)
+* [nicEvidence](security-nicevidence.md)
 * [oauthApplicationEvidence](security-oauthapplicationevidence.md)
 * [processEvidence](security-processevidence.md)
 * [registryKeyEvidence](security-registrykeyevidence.md)
@@ -57,7 +60,7 @@ This resource is the base type for the following evidence types:
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |detailedRoles|String collection|Detailed description of the entity role/s in an alert. Values are free-form.|
-|remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`.|
+|remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`.|
 |remediationStatusDetails|String|Details about the remediation status.|
 |roles|[microsoft.graph.security.evidenceRole](#evidencerole-values) collection|The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**.|
 |tags|String collection|Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
@@ -84,6 +87,12 @@ This resource is the base type for the following evidence types:
 | blocked                    | The threat was blocked while executing.        |
 | notFound                   | The evidence wasn't found.                    |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
+| active                     | Investigation is running / pending and remediation is not complete yet. |
+| pendingApproval            | The remediation action is pending approval.                             |
+| declined                   | The remediation action was declined.                                    |
+| unremediated               | Investigation undo the remediation and the entity is recovered.         |
+| running                    | The remediation action is running.                                      |
+| partiallyRemediated        | The threat was partially remidiated.                                    |
 
 
 ### evidenceRole values 
@@ -108,24 +117,13 @@ This resource is the base type for the following evidence types:
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
 
 
-### evidenceRemediationStatus values 
+### evidenceVerdict values 
 
 | Member                     | Description                                       |
 | :--------------------------| :------------------------------------------------ |
 | unknown                    | No verdict was determined for the evidence.        |
 | suspicious                 | Recommended remediation actions awaiting approval.|
 | malicious                  | The evidence was determined to be malicious.      |
-| clean                      | No threat was detected - the evidence is benign.  |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
-
-
-### evidenceVerdict values 
-
-| Member                     | Description                                       |
-| :--------------------------| :------------------------------------------------ |
-| unknown                    | No verdict was determined for the evidence.|
-| suspicious                 | Recommended remediation actions awaiting approval.|
-| malicious                  | The evidence was determined to be malicious. |
 | noThreatsFound             | No threat was detected - the evidence is benign.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
 
