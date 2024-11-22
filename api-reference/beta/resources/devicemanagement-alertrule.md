@@ -5,6 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 10/24/2024
 ---
 
 # alertRule resource type

@@ -5,6 +5,7 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: resourcePageType
+ms.date: 05/23/2024
 ---
 
 # printTaskTrigger resource type

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sandeo-MSFT"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/25/2024
 ---
 
 # device resource type

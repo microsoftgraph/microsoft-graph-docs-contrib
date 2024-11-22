@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_connectedorganizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-identity-governance-write](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

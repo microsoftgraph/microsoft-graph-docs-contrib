@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # teamClassSettings resource type
