@@ -74,7 +74,7 @@ Don't supply a request body for this method.
 -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
+GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
 ### Response
@@ -82,7 +82,8 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration"
+  "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration",
+  "isCollection": true
 }
 -->
 
@@ -91,7 +92,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations",
     "value": [
         {
             "id": "0d23b3d1-fc7b-51f5-1b3c-a494b556ccb2",
