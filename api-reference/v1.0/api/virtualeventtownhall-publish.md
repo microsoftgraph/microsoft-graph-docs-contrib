@@ -5,7 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventTownhall: publish
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md) to make it visible to its audience.
 
-Only the persona designated as the **Organizer** has the ability to publish the event.
+Only the **Organizer** can publish a town hall event.
 
 ## Permissions
 
@@ -73,7 +73,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/bce9a3ca
 
 ---
 
----
 
 ### Response
 
