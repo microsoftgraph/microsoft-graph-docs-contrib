@@ -45,10 +45,10 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| draftShift           | [shiftItem](../resources/shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Eiher draShift or sharedShift should be null. |
+| draftShift           | [shiftItem](../resources/shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Either **draftOpenShift** or **sharedOpenShift** should be `null` |
 | isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional. |
 | schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
-| sharedShift          | [shiftItem](../resources/shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Eiher draShift or sharedShift should be null.|
+| sharedShift          | [shiftItem](../resources/shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Updates to the **sharedShift** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`|
 | userId               | String                      | ID of the user assigned to the **shift**. Required. |
 
 ## Response
