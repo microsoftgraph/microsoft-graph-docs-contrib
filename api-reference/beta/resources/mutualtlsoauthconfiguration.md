@@ -20,7 +20,7 @@ This object is typically created by a device authority on their own EntraId tena
 
 For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
 
-Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
+Inherits from [certificateAuthorityPath](../resources/certificateauthoritypath.md).
 
 ## Methods
 | Method       | Method | Success Code | Return Type  | Description | 
@@ -54,7 +54,7 @@ Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificatea
   "openType": false
 }
 -->
-```http
+```json
 POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
 
 {
