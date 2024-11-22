@@ -865,14 +865,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **reportName** parameter to the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getInaccessibleCloudPcReports?view=graph-rest-beta) method.",
           "Target": "getInaccessibleCloudPcReports"
-        },
-        {
-          "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "reportName",
-          "ChangeType": "Change",
-          "Description": "Enabled the `performanceTrendReport` and `inaccessibleCloudPcTrendReport` options for the **reportName** parameter in the [Create cloudPcExportJob](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta) method.",
-          "Target": "cloudPcExportJob"
         }
       ],
       "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
