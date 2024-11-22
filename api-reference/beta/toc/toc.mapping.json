@@ -2946,7 +2946,16 @@
           "name": "AI interactions (preview)",
           "resources": [
             "aiInteractionHistory"
-          ]
+          ],
+         "complexTypes": [
+           "aiInteraction",
+           "aiInteractionAttachment",
+           "aiInteractionContext",
+           "aiInteractionLink",
+           "aiInteractionMention",
+           "aiInteractionMentionedIdentitySet",
+           "aiUser"
+         ]
         },
         {
           "name": "Devices (preview)",
