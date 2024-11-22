@@ -20,7 +20,7 @@ Online meeting artifacts are content produced during online meetings and virtual
 The following permissions are available to manage meeting artifacts:
 
 - Delegated (work or school account) - OnlineMeetingArtifact.Read.All
-- Delegated (personal Microsoft account)	- Not supported
+- Delegated (personal Microsoft account) - Not supported
 - Application - OnlineMeetingArtifact.Read.All
 
 For more information about the permissions for this API, see [Get meetingAttendanceReport.](../api-reference/v1.0/api/meetingattendancereport-get.md#permissions).
