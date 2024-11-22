@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the links that appear in the interaction. 
+Represents the links that appear in AI interactions. 
 
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 | displayName | String | The name of the link. |
-| linkType | String | Information about a link in an app chat or BizChat interaction. |
+| linkType | String | Information about a link in an app chat or Business Chat (BizChat) interaction. |
 | linkUrl | String | The URL of the link. |
 
 ## Relationships
