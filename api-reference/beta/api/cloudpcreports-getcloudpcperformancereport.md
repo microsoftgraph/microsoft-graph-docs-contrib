@@ -50,7 +50,7 @@ The following table shows the parameters that you can use with this method.
 | filter     | String                       | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, and `eq`.                          |
 | groupBy    | String collection            | Specifies how to group the reports. If used, must have the same content as the **select** parameter. |
 | orderBy    | String collection            | Specifies how to sort the reports.                                                                   |
-| reportName | cloudPCPerformanceReportName | The report name. The possible value are: `performanceTrendReport`, `unknownFutureValue`.             |
+| reportName | cloudPCPerformanceReportName | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`.             |
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
