@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
-All the roles are able to get details from the webinar event.
+All roles can get the details of a webinar event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
