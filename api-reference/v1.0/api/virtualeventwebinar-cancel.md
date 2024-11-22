@@ -5,7 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventWebinar: cancel
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
 
-Only the persona designated as the **Organizer** has the ability to cancel the event.
+Only the **Organizer** can cancel a webinar.
 
 ## Permissions
 
@@ -70,8 +70,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/a57082a9
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventwebinarcancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
