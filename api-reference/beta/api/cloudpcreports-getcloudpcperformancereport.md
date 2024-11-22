@@ -50,11 +50,18 @@ The following table shows the parameters that you can use with this method.
 | filter     | String                       | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, and `eq`.                          |
 | groupBy    | String collection            | Specifies how to group the reports. If used, must have the same content as the **select** parameter. |
 | orderBy    | String collection            | Specifies how to sort the reports.                                                                   |
-| reportName | cloudPCPerformanceReportName | The report name. The possible value are: `performanceTrendReport`, `unknownFutureValue`. The `performanceTrendReport` member indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time. |
+| reportName | cloudPCPerformanceReportName | The report name. The possible value are: `performanceTrendReport`, `unknownFutureValue`.             |
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
 | top        | Int32                        | Specifies the page size. If not defined, the default is 25, with a maximum of 100.                   |
+
+### cloudPCPerformanceReportName values
+
+| Member                       | Description       |
+| :--------------------------- | :---------------- |
+| performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
 
 ## Response
 
