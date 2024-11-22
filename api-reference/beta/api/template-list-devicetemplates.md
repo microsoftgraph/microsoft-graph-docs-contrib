@@ -162,26 +162,25 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates(deviceInstances())",
     "value": [
         {
-            "id": "045729...aa0",
+            "id": "4vfaf3ac-5122-4a25-98d8-b32c091f441j",
             "deletedDateTime": null,
-            "mutualTlsOauthConfigurationId": "4cf16...65",
-            "mutualTlsOauthConfigurationTenantId": "59d18...ad5",
+            "mutualTlsOauthConfigurationId": "abcda825-c68b-4531-afcf-c9443adaa442",
+            "mutualTlsOauthConfigurationTenantId": "1234a825-c68b-4531-afcf-c9443adaa442",
             "deviceAuthority": "test",
             "manufacturer": "test.com",
             "model": "DeepFreezerModelAB",
             "operatingSystem": "Linux",
             "deviceInstances": [
                 {
-                    "id": "f574...ef",
+                    "id": "12345678-9abc-def0-1234-56789abcde",
                     "deletedDateTime": null,
                     "accountEnabled": true,
                     "approximateLastSignInDateTime": "2022-05-26T00:40:51Z",
                     "complianceExpirationDateTime": null,
                     "createdDateTime": "2022-05-26T00:40:51Z",
                     "deviceCategory": null,
-                    "deviceId": "1de51...f66",
+                    "deviceId": "1a9da825-c68b-4531-afcf-c9443adaa442",
                     "externalSourceName": "test2-alpha",
-                    ...
                     "manufacturer": "test2.com",
                     "mdmAppId": null,
                     "model": "DeepFreezerModelAB",
@@ -196,22 +195,21 @@ Content-type: application/json
                         {
                             "type": 2,
                             "identityProvider": null,
-                            "key": "WAA...BAA=="
+                            "key": "a9deaa79-1e5e-4c29-8ca3-453468e72bc3"
                         }
                     ],
                     "extensionAttributes": {
                         "extensionAttribute1": null,
-                        ...
                         "extensionAttribute15": null
                     }
                 }
             ]
         },
         {
-            "id": "bae...7e",
+            "id": "f1960500-c535-46e6-a191-408b0eceea91",
             "deletedDateTime": null,
-            "mutualTlsOauthConfigurationId": "68f..d35b",
-            "mutualTlsOauthConfigurationTenantId": "59...ad5",
+            "mutualTlsOauthConfigurationId": "6d8c77fc-464a-477a-a041-2e6ce9c4d49a",
+            "mutualTlsOauthConfigurationTenantId": "e9ecc66f-e311-4934-95d2-49641a424b79",
             "deviceAuthority": "test3",
             "manufacturer": "test3.com",
             "model": "DeepFreezerModelAB",
