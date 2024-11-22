@@ -4,17 +4,16 @@ description: "Learn about online meeting artifacts, such as attendance reports a
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
-ms.date: "09/20/2021"
+ms.date: "11/22/2024"
 ---
 
 # Online meeting artifacts and permissions
 
-Online meeting artifacts are content produced during an online meetings and virtual events like webinars. You can use the [Get meetingAttendanceReport](../api-reference/v1.0/resources/meetingattendancereport.md) operation to get the meeting artifacts:
+Online meeting artifacts are content produced during online meetings and virtual events like webinars. You can use the [Get meetingAttendanceReport](../api-reference/v1.0/resources/meetingattendancereport.md) method to get the attendance report of an online meeting, in the form of a JSON response. Attendance reports have the following characteristics:
 
-- Attendance report of an online meeting, in the form of a JSON response. Attendance reports have the following characteristics:
-  - Only available when the meeting ends
-  - Only the meeting organizer can access
-  - Includes guest and federated users that were part of the online meeting
+  - They're only available when the meeting ends.
+  - Only the meeting organizer can access them.
+  - They include guest and federated users that were part of the online meeting.
 
 ## Permissions
 
@@ -24,7 +23,7 @@ The following permissions are available to manage meeting artifacts:
 - Delegated (personal Microsoft account)	- Not supported
 - Application - OnlineMeetingArtifact.Read.All
 
-To read more about the permission, read the article [Get meetingAttendanceReport.](../api-reference/v1.0/api/meetingattendancereport-get.md#permissions)
+For more information about the permissions for this API, see [Get meetingAttendanceReport.](../api-reference/v1.0/api/meetingattendancereport-get.md#permissions).
 
 ## Related content
 
