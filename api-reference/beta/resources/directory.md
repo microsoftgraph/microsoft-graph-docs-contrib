@@ -59,6 +59,7 @@ Inherits from [entity](entity.md).
 | onPremisesSynchronization | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization. |
 | outboundSharedUserProfile | [outboundSharedUserProfile](outboundshareduserprofile.md) collection | A collection of Microsoft Entra users whose profile data is shared with an external Microsoft Entra tenant. Nullable. |
 | pendingExternalUserProfiles | [pendingExternalUserProfile](pendingexternaluserprofile.md) collection | Collection of pending external user profiles representing collaborators in the directory that are unredeemed. |
+|publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
 

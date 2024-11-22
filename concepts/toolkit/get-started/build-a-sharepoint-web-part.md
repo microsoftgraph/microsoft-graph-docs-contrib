@@ -24,7 +24,6 @@ This article covers how to use Microsoft Graph Toolkit components in a [SharePoi
 
 Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment).
 
-
 # [React based web parts](#tab/react)
 
 ## Create your web part project
@@ -49,7 +48,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
-import { Providers } from '@microsoft/mgt-element';
+import { Providers } from "@microsoft/mgt-element";
 import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
 ```
 
@@ -93,7 +92,9 @@ First, convert the import of the component to use [`React.lazy`](https://react.d
 ```ts
 const MgtComponent = React.lazy(
   () =>
-    import(/* webpackChunkName: 'mgt-react-component' */ "./components/<WebPartName>")
+    import(
+      /* webpackChunkName: 'mgt-react-component' */ "./components/<WebPartName>"
+    )
 );
 ```
 
@@ -174,13 +175,13 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
 Add the components to the React component. Locate and open the `src\webparts\<your-project>\components\<your-component>.tsx` file and add the import for the component you want to use - in this case, the `Person` component - and then update the `render()` method to use the Person component. Now your component should look like this:
 
 ```tsx
-import * as React from 'react';
-import type { IHelloWorldProps } from './IHelloWorldProps';
-import { Person } from '@microsoft/mgt-react';
+import * as React from "react";
+import type { IHelloWorldProps } from "./IHelloWorldProps";
+import { Person } from "@microsoft/mgt-react";
 
 export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
   public render(): React.ReactElement<IHelloWorldProps> {
-    return (<Person personQuery="me" view="twolines" />);
+    return <Person personQuery="me" view="twolines" />;
   }
 }
 ```
@@ -188,15 +189,16 @@ export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
 Or if you prefer to use React Functional Components:
 
 ```tsx
-import * as React from 'react';
-import type { IHelloWorldProps } from './IHelloWorldProps';
-import { Person, ViewType } from '@microsoft/mgt-react';
+import * as React from "react";
+import type { IHelloWorldProps } from "./IHelloWorldProps";
+import { Person, ViewType } from "@microsoft/mgt-react";
 
-const HelloWorld = (props: IHelloWorldProps): React.ReactElement => <Person personQuery="me" view={ViewType.twolines} />;
+const HelloWorld = (props: IHelloWorldProps): React.ReactElement => (
+  <Person personQuery="me" view={ViewType.twolines} />
+);
 
 export default HelloWorld;
 ```
-
 
 # [No framework web parts](#tab/html)
 
@@ -219,7 +221,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
-import { Providers } from '@microsoft/mgt-element';
+import { Providers } from "@microsoft/mgt-element";
 import { SharePointProvider } from "@microsoft/mgt-sharepoint-provider";
 ```
 
@@ -240,7 +242,7 @@ To ensure that your web part works if there are multiple web part solutions usin
 First, update your imports from `@microsoft/mgt-element`
 
 ```ts
-import { Providers, customElementHelper } from '@microsoft/mgt-element';
+import { Providers, customElementHelper } from "@microsoft/mgt-element";
 ```
 
 Next, update the `onInit()` method to set up disambiguation. The string used for disambiguation must be unique to your SharePoint Framework solution:
@@ -259,7 +261,7 @@ protected async onInit() {
 Now, you can start adding components to your web part. First import the relevant register functions:
 
 ```ts
-import { registerMgtPersonComponent } from '@microsoft/mgt-components';
+import { registerMgtPersonComponent } from "@microsoft/mgt-components";
 ```
 
 > [!NOTE]
@@ -334,6 +336,8 @@ npm i --save-dev babel-loader@8.3.0 @babel/plugin-transform-optional-chaining @b
 
 ### Modify the webpack configuration
 
+#### Webpack version <=4
+
 SharePoint Framework provides an extensibility model to [modify the webpack configuration](/sharepoint/dev/spfx/toolchain/extending-webpack-in-build-pipeline) used to bundle the web parts. Locate and open `gulpfile.js`. Add the following code above the line containing `build.initialize(require('gulp'));`
 
 ```JavaScript
@@ -348,7 +352,7 @@ build.configureWebpack.mergeConfig({
     generatedConfiguration.module.rules.push({
       test: /\.js$/,
       // only run on lit packages
-      include: resourcePath => 
+      include: resourcePath =>
         litFolders.some(litFolder => resourcePath.includes(litFolder)),
       use: {
         loader: 'babel-loader',
@@ -366,7 +370,11 @@ build.configureWebpack.mergeConfig({
 });
 ```
 
-This ensures that the code from the `lit` library is correctly processed by the SharePoint Framework build chain.
+This ensures that the code from the `lit` library is correctly processed by the SharePoint Framework build chain. This is required for SharePoint provider versions `<=v1.18`.
+
+#### Webpack version 5+
+
+No additional configuration is required when you use version 5+ of webpack. This is supported with the SharePoint provider version `v1.19+`.
 
 ## Build and deploy your web part
 

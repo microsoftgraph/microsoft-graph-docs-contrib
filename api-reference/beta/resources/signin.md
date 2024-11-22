@@ -91,6 +91,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you're signing in using an application. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |sessionLifetimePolicies|[sessionLifetimePolicy](sessionlifetimepolicy.md) collection|Any conditional access session management policies that were applied during the sign-in event.|
 |signInEventTypes|String collection|Indicates the category of sign in that the event represents. For user sign ins, the category can be `interactiveUser` or `nonInteractiveUser` and corresponds to the value for the **isInteractive** property on the signin resource. For managed identity sign ins, the category is `managedIdentity`. For service principal sign-ins, the category is **servicePrincipal**. Possible values are: `interactiveUser`, `nonInteractiveUser`, `servicePrincipal`, `managedIdentity`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
+|sessionId|String|Identifier of the session that was generated during the sign-in.|
 |signInIdentifier|String|The identification that the user provided to sign in. It can be the userPrincipalName, but is also populated when a user signs in using other identifiers.|
 |signInIdentifierType|signInIdentifierType|The type of sign in identifier. Possible values are: `userPrincipalName`, `phoneNumber`, `proxyAddress`, `qrCode`, `onPremisesUserPrincipalName`, `unknownFutureValue`.|
 |signInTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the signin token was bound to the device or not. The possible values are: `none`, `bound`, `unbound`, `unknownFutureValue`.|
@@ -216,6 +217,7 @@ The following JSON representation shows the resource type.
   "servicePrincipalCredentialThumbprint": "String",
   "servicePrincipalId": "String",
   "servicePrincipalName": "String",
+  "sessionId": "String",
   "sessionLifetimePolicies": [{"@odata.type": "microsoft.graph.sessionLifetimePolicy"}],
   "signInEventTypes": [
     "String"
