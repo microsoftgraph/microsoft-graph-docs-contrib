@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 08/06/2024
 ---
 
 # virtualEventWebinar: cancel

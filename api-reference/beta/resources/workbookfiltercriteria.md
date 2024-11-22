@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
+ms.date: 05/15/2024
 ---
 
 # workbookFilterCriteria resource type

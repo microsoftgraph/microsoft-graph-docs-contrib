@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.date: 08/14/2024
 ---
 
 # Get reflectCheckInResponse

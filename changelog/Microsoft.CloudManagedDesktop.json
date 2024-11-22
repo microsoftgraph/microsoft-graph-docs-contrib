@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Updated the [cloudPC: getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta) method to support a new endpoint that gets the launch information for the specified Cloud PC using application permissions.",
+          "Target": "getCloudPcLaunchInfo"
+        },
+        {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [cloudPC: start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta) method to support a new endpoint that starts the specified Cloud PC using application permissions.",
+          "Target": "start"
+        },
+        {
+          "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Updated the [cloudPC: stop](https://learn.microsoft.com/en-us/graph/api/cloudpc-stop?view=graph-rest-beta) method to support a new endpoint that stops the specified Cloud PC using application permissions.",
+          "Target": "stop"
+        }
+      ],
+      "Id": "4e187813-86e4-4387-a939-dee88cb39661",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-18T11:13:39.1270609Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
           "ApiChange": "Method",
           "ChangedApiName": "bulkreprovisioncloudpc",
@@ -196,7 +230,7 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },  
-    {
+      {
         "ChangeList": [
           {
             "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",

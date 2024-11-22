@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "MSFTRickyCastaneda"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 08/19/2024
 ---
 
 # teamDiscoverySettings resource type

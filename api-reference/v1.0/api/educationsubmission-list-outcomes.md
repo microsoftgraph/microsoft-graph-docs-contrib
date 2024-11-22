@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "AsBansal"
 ms.subservice: "education"
 doc_type: "apiPageType"
+ms.date: 08/20/2024
 ---
 
 # List outcomes

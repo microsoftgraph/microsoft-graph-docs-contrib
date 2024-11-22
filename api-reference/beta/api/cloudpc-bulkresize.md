@@ -5,6 +5,7 @@ author: "liguojing929"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 06/20/2024
 ---
 
 # cloudPC: bulkResize (deprecated)
