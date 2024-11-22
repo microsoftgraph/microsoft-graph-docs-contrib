@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "connectedorganization_delete_externalsponsors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/connectedorganization-delete-externalsponsors-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-identity-governance-write](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

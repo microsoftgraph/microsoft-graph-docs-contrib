@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_delete_incompatiblegroup" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
