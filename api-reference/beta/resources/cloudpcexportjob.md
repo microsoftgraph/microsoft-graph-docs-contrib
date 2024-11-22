@@ -65,7 +65,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | actionStatusReport                          | The actions status report for the Cloud PCs.                                  |
 | rawRemoteConnectionReports             | The raw real-time remote connection report.                         |
 | cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |
-| crossRegionDisasterRecoveryReport                 | The cross-region disaster recovery report.                                 |
+| crossRegionDisasterRecoveryReport                 | The cross-region disaster recovery status for Cloud PCs.                                 |
 | performanceTrendReport                 | The daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time. |
 | inaccessibleCloudPcTrendReport         | The daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state. |
 | regionalConnectionQualityTrendReport        | The regional connection quality trend reports of Cloud PCs.              |
