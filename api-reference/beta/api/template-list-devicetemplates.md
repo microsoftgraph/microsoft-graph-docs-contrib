@@ -1,5 +1,5 @@
 ---
-title: "List deviceTemplate"
+title: "List deviceTemplates"
 description: "List device templates."
 author: "ploegert"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
-# List DeviceTemplate
+# List DeviceTemplates
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -67,7 +67,6 @@ Do not supply a request body for this method.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates
-Content-Type: application/json
 ```
 
 ### Response
