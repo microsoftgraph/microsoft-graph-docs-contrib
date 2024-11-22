@@ -5,7 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/08/2024
+ms.date: 11/22/2024
 ---
 
 # Get virtualEventTownhall
