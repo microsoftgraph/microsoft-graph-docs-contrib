@@ -63,6 +63,10 @@ The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to 
 - [discoveredCloudAppDevice](/graph/api/resources/security-discoveredcloudappdevice?view=graph-rest-beta&preserve-view=true)
 - [endpointDiscoveredCloudAppDetail](/graph/api/resources/security-endpointdiscoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
 
+### Teamwork and communications | AI interactions
+
+Use the [getAllEnterpriseInteractions](/graph/api/aiInteractionHistory-getAllEnterpriseInteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
+
 ### Teamwork and communications | Calls and online meetings
 
 - [Link](/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-beta&preserve-view=true) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) by setting an **externalEventId**.
