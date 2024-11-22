@@ -1,6 +1,6 @@
 ---
 title: "aiUser resource type"
-description: "Represents AI generated user or agent."
+description: "Represents an AI user or agent."
 ms.date: 11/15/2024
 doc_type: resourcePageType
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a AI generated user or agent. 
+Represents an AI user or agent. 
 
 ## Methods
 None.
