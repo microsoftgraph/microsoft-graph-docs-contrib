@@ -50,12 +50,12 @@ The following table shows the parameters that you can use with this method.
 
 | Parameter | Type              | Description                                                                                |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------|
-| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. |
 | filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
-| select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
-| search    | String            | Specifies a String to search for.                                                          |
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
 | orderBy   | String collection | Specifies how to sort the reports.                                                           |
+| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. |
+| search    | String            | Specifies a String to search for.                                                          |
+| select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
 | skip      | Int32             | Number of records to skip.                                                                 |
 | top       | Int32             | The number of top records to return.                                                       |
 
