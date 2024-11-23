@@ -5,13 +5,15 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/08/2024
+ms.date:11/22/2024
 ---
 
 # Update virtualEventTownhall
 Namespace: microsoft.graph
 
 Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+
+Only the **Organizer** and **Co-organizer** can make changes to a townhall event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
