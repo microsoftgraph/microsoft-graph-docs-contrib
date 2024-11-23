@@ -32,7 +32,6 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 ### Roles required to act on virtualEventWebinar objects
 
 The following table shows the roles that can perform various actions on webinars.
-## Roles
 
 |Role          | Create	    | Get	       | Update	    | Publish 	 | Cancel 	  | List in org	| List by user role	| List by user ID & role |
 | ------           | ----------- | ---------- | ---------- | ---------- | ---------- | ----------  | ----------------- | ---------------------- |
