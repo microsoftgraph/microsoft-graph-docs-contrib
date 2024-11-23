@@ -5,6 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # List eligibilityScheduleInstances

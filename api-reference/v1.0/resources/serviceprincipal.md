@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.date: 10/01/2024
 ---
 
 # servicePrincipal resource type

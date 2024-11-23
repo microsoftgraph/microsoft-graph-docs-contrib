@@ -5,6 +5,7 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.date: 11/22/2024
 ---
 
 # Get virtualEventTownhall
@@ -12,6 +13,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+
+All roles can get the details of a townhall event.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

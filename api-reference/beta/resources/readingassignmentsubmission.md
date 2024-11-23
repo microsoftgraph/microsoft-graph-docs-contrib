@@ -5,6 +5,7 @@ author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 07/29/2024
 ---
 
 # readingAssignmentSubmission resource type

@@ -5,6 +5,7 @@ author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # indicator resource type

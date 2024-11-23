@@ -68,7 +68,7 @@ named **error**. This object includes all the details of the error. You can use 
 The error resource is returned whenever an error occurs in the processing of a request.
 
 Error responses follow the definition in the 
-[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses).
+[Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/graph/articles/errorResponses.md).
 
 ### JSON representation
 
