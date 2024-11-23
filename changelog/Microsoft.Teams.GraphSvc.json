@@ -2421,7 +2421,7 @@
           "Target": "aiInteraction"
         },
         {
-          "Id": "11f04c07-9c49-4140-82f2-84489b25c87d",
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionHistory",
           "ChangeType": "Addition",
