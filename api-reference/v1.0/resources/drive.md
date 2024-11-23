@@ -5,6 +5,7 @@ description: The drive resource is the top-level object representing a user's On
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/09/2024
 ---
 
 # drive resource type

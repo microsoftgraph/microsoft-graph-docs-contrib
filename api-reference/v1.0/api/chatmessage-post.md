@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 07/23/2024
 ---
 
 # Send chatMessage in a channel or a chat

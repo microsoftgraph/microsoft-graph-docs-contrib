@@ -1,10 +1,11 @@
 ---
 title: "openIdConnectProvider resource type"
-description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
+description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant (deprecated)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
+ms.date: 11/16/2024
 toc.title: OpenID Connect identity provider (deprecated)
 ---
 
@@ -12,6 +13,7 @@ toc.title: OpenID Connect identity provider (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
