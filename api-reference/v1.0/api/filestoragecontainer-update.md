@@ -71,6 +71,7 @@ Content-Type: application/json
   }
 }
 ```
+# [HTTP](#tab/http)
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-filestoragecontainer-csharp-snippets.md)]

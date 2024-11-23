@@ -58,6 +58,7 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 ```
+# [HTTP](#tab/http)
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-filestoragecontainer-csharp-snippets.md)]
