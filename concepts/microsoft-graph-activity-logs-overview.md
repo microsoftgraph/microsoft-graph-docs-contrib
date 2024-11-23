@@ -39,7 +39,7 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
-[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/tables/includes/microsoftgraphactivitylogs-include.md)]
+[!INCLUDE [microsoftgraphactivitylogs](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/tables/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
 
