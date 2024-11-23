@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-ms.date: 10/08/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventTownhall resource type
@@ -25,6 +25,18 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Publish](../api/virtualeventtownhall-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+
+### Roles required to act on virtualEventTownhall objects
+
+The following table shows the roles that can perform various actions on virtual event town halls.
+
+|Role          | Create	    | Get	       | Update	    | Publish 	 | Cancel 	  |
+| ------           | ----------- | ---------- | ---------- | ---------- | ---------- |
+|Organizer         |	✅|	✅|	✅|	✅|	✅|
+|Co-organizer      |	❌|	✅|	✅|	❌|	❌|
+|Presenter         | 	❌|	✅|	❌|	❌|	❌|
+|Attendee          |	❌|	✅|	❌|	❌|	❌|
+|Custom application|	❌|	✅|	❌|	❌|	❌|
 
 ## Properties
 

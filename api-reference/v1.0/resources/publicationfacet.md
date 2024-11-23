@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 03/11/2024
 ---
 
 # PublicationFacet resource type
