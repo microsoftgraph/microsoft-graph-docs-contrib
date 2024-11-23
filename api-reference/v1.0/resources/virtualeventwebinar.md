@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-ms.date: 10/08/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventWebinar resource type
@@ -28,6 +28,19 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | [Cancel](../api/virtualeventwebinar-cancel.md) | None | Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). |
 | [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
 | [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
+
+### Roles required to act on virtualEventWebinar objects
+
+The following table shows the roles that can perform various actions on webinars.
+
+|Role          | Create	    | Get	       | Update	    | Publish 	 | Cancel 	  | List in org	| List by user role	| List by user ID & role |
+| ------           | ----------- | ---------- | ---------- | ---------- | ---------- | ----------  | ----------------- | ---------------------- |
+|Organizer         |	✅|	✅|	✅|	✅|	✅|	❌|	✅|	❌|
+|Co-organizer      |	❌|	✅|	✅|	❌|	❌|	❌|	✅|	❌|
+|Presenter         | 	❌|	✅|	❌|	❌|	❌|	❌|	✅|	❌|
+|Attendee          |	❌|	✅|	❌|	❌|	❌|	❌|	✅|	❌|
+|Custom application|	❌|	✅|	❌|	❌|	❌|	✅|	❌|	✅|
+
 
 ## Properties
 

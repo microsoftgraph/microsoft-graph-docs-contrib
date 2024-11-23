@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "excel"
 author: "ruoyingl"
 toc.title: Icon
+ms.date: 07/30/2024
 ---
 
 # workbookIcon resource type

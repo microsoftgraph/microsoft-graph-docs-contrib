@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: SharePoint restore session
+ms.date: 08/06/2024
 ---
 
 # sharePointRestoreSession resource type

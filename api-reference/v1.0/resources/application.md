@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 08/16/2024
 ---
 
 # application resource type
