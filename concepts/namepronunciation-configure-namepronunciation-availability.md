@@ -10,20 +10,18 @@ ms.date: 12/11/2024
 
 # Manage pronunciation settings for an organization using the Microsoft Graph API
 
-Name Pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph Name Pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of pronunciations that users create for themselves. 
+Name pronunciation allows a user to record an audio file of how their name is pronounced. With the Microsoft Graph name pronunciation API, you can enable, disable, or get settings that manage name pronunciation in an organization. For example, you can control the display within the organization of pronunciations that users create for themselves. 
 
-Correctly pronouncing someone's name shows inclusion and respect as it's a vital part of one's identity. By sharing how one's name is pronounced, we can avoid making assumptions about how to address them, especially during a first interaction. In a hybrid, multicultural work or school environment, the simple act of pronouncing names correctly can help build trust and improve communication. 
+Correctly pronouncing someone's name shows inclusion and respect because names are a vital part of one's identity. Sharing how one's name is pronounced helps others avoid making assumptions about how to address people, especially during a first interaction. In a hybrid, multicultural work or school environment, the simple act of pronouncing names correctly can help build trust and improve communication. 
 
-Global administrators can enable or disable name pronunciation for everyone in the organization using the Microsoft Graph API. By default, name pronunciation is disabled. 
+Global administrators can enable or disable name pronunciation for everyone in the organization by using the Microsoft Graph API. By default, name pronunciation is disabled. 
 
-Enabling name pronunciation in an organization facilitates correct pronunciation of others' names within the organization, including the following end user experiences: 
+Enabling name pronunciation in an organization facilitates correct pronunciation of others' names within the organization. When enabled: 
 
-- Name pronunciation, when enabled, allows users to optionally add and manage pronunciation in the profile card in Teams and Outlook, both on the web and the desktop. 
+- Name pronunciation allows users to optionally add and manage pronunciation in the profile card in Teams and Outlook, both in desktop and on the web. 
 - Name pronunciation appears by the user's name on the profile card in Teams. 
 - Pronunciations are only displayed internally within the organization. In multitenant organizations, users in all tenants can access the pronunciations provided by users in any other tenant. 
 - Pronunciations are visible on profile cards to anyone who has an account in the organization, including guest accounts.
-
-The end user experience with this feature might evolve over time. 
 
 Name pronunciation data is stored in the user's mailbox. For more information, see [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#how-can-i-determine-customer-data-location&preserve-view=true).
 
@@ -32,7 +30,7 @@ Global administrators can decide whether to display pronunciation that users set
 > [!IMPORTANT]
 > When you turn name pronunciation on or off, it can take up to seven hours for users to see changes. For example, if you turn pronunciation on, users might not see the option to add recordings on their profile card for up to seven hours. If you turn pronunciation off, any previously set recording might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours. 
 >
-> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts getting deleted. Deleting name pronunciation data can take up to 30 days. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers will be resurfaced and become visible in Microsoft 365 experiences on the profile cards.
+> When an admin toggles name pronunciation off, the process of deletion is triggered, and all pronunciation data created by users starts to be deleted. Deleting name pronunciation data can take up to 30 days. If you turn pronunciation back on within that period, any recordings that existed prior to the delete signal that haven't yet been deleted from Microsoft servers are resurfaced and become visible in Microsoft 365 experiences on the profile cards.
 
 ## Configure name pronunciation settings using PowerShell
 
@@ -44,7 +42,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or higher.
 
 
-The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you install the PowerShell module with the following command.
+The PowerShell commands for name pronunciation settings are only available in beta. Switch to the beta experience before you install the PowerShell module by using the following command.
 
 ```powershell
 Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
@@ -99,7 +97,7 @@ Use the following HTTP request to retrieve all current settings, including setti
 GET https://graph.microsoft.com/v1.0/admin/people/namePronunciation
 ```
 
-If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
+If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following response example.
 
 ``` http
 HTTP/1.1 200 OK
@@ -114,7 +112,7 @@ Content-Type: application/json
 
 Setting the isEnabledInOrganization property of the namePronunciationSettings object to `true` enables name pronunciation in your organization.
 
-Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to enable name pronunciation, as shown in the following example:
+Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to enable name pronunciation, as shown in the following example.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
@@ -125,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
+If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following response example.
 
 ``` http
 HTTP/1.1 200 OK
@@ -140,7 +138,7 @@ Content-Type: application/json
 
 Setting the **isEnabledInOrganization** property of the **namePronunciationSettings** resource to `false` makes name pronunciation unavailable in your organization.
 
-Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to disable name pronunciation, as shown in the following example:
+Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to disable name pronunciation, as shown in the following example.
 
 ``` http
 PATCH https://graph.microsoft.com/v1.0/admin/people/namePronunciation
@@ -151,7 +149,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
+If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following response example.
 
 ``` http
 HTTP/1.1 200 OK
