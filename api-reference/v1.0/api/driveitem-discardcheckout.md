@@ -61,8 +61,6 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `204 No Content` response code.
 
-### Error responses
-
 The request returns `400 Bad Request` if the file isn't checked out. Requests made with delegated access return `423 Locked` if another user has the file checked out. Requests made with application access can discard any checkout. 
 
 For more information about how errors are returned, see [Error responses][error-response].
