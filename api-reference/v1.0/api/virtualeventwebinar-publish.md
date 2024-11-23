@@ -5,13 +5,15 @@ author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 11/22/2024
 ---
 
 # virtualEventWebinar: publish
 Namespace: microsoft.graph
 
 Publish a [virtualEventWebinar](../resources/virtualeventwebinar.md) to make it visible to its audience.
+
+Only the **Organizer** can publish a webinar.
 
 ## Permissions
 
@@ -68,8 +70,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/a57082a9-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventwebinarpublish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

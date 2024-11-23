@@ -5,6 +5,7 @@ author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # inboundOutboundPolicyConfiguration resource type
