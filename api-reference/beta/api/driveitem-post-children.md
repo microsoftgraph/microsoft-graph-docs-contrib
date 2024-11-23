@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
-description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
-ms.date: 09/10/2017
+description: "Create a new folder or driveItem in a drive with a specified parent item or path."
+ms.date: 11/22/2024
 title: Create a new folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
+Create a new folder or [driveItem](../resources/driveitem.md) in a drive](../resources/drive.md) with a specified parent item or path.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 
 ## Request body
 
-In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
+In the request body, supply a JSON representation of the [driveItem](../resources/driveitem.md) resource to create.
 
 ## Response
 
@@ -142,18 +142,19 @@ Content-Type: application/json
 
 ## Error response
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For information about how errors are returned, see [Error responses][error-response].
+
+> [!IMPORTANT]
+> Requests that contain additional `$filter` parameters are not supported. For example, the following request fails:
+>```http
+> GET https://graph.microsoft.com/beta/drives/{drive-id}/items/{parent-item-id}/children?$filter=listitem/fields/{columnName} eq '{ColumnValue}' AND listitem/fields/FileLeafRef eq '{DocumentName}' &$select=id,name,lastModifiedDateTime,size&$expand=listitem($expand=fields)
+> ```
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
-> [!IMPORTANT]
-> Children requests that contain additional $filter parameters are not supported.  For example:
->```http
-> GET https://graph.microsoft.com/v1.0/drives/{ContainerID}/items/{folderID}/children?$filter=listitem/fields/{columnName} eq '{ColumnValue}' AND listitem/fields/FileLeafRef eq '{DocumentName}' &$select=id,name,lastModifiedDateTime,size&$expand=listitem($expand=fields)
-> ```
+
 <!--
 {
   "type": "#page.annotation",
