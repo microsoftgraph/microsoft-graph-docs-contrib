@@ -2365,7 +2365,7 @@
     {
       "ChangeList": [
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Enumeration",
           "ChangedApiName": "aiInteractionType",
           "ChangeType": "Addition",
@@ -2373,7 +2373,7 @@
           "Target": "aiInteractionType"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionAttachment",
           "ChangeType": "Addition",
@@ -2381,7 +2381,7 @@
           "Target": "aiInteractionAttachment"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionContext",
           "ChangeType": "Addition",
@@ -2389,7 +2389,7 @@
           "Target": "aiInteractionContext"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionLink",
           "ChangeType": "Addition",
@@ -2397,7 +2397,7 @@
           "Target": "aiInteractionLink"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMention",
           "ChangeType": "Addition",
@@ -2405,7 +2405,7 @@
           "Target": "aiInteractionMention"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionMentionedIdentitySet",
           "ChangeType": "Addition",
@@ -2413,7 +2413,7 @@
           "Target": "aiInteractionMentionedIdentitySet"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteraction",
           "ChangeType": "Addition",
@@ -2421,7 +2421,7 @@
           "Target": "aiInteraction"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionHistory",
           "ChangeType": "Addition",
@@ -2429,7 +2429,7 @@
           "Target": "aiInteractionHistory"
         },
         {
-          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
@@ -2437,7 +2437,7 @@
           "Target": "aiInteractionHistory"
         }
       ],
-      "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+      "Id": "1f9b480b-0c25-4688-8a27-ba8635d6bccb",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-11-21T22:39:38.6194554Z",
