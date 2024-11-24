@@ -50,6 +50,17 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |webUrl|String|URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
+### Instance attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property name| Type   | Description
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.bannerImageWebUrlContent|String|This annotation is used to send the image content in a multipart request.|
+|@microsoft.graph.bannerImageWebUrlContentError|String|If a failure occurs when you upload or persist the banner image during a **newsLinkPage** creation, the response contains `@microsoft.graph.bannerImageWebUrlContentError`.|
+
+For a POST request example, see [Create newsLinkPage)](../api/newslinkpage-create.md).
+
 ## Relationships
 
 |Relationship|Type|Description|
