@@ -32,7 +32,7 @@ To get all usage rights for the signed-in user using delegated (`/me`) permissio
 GET /me/cloudLicensing/usageRights
 ```
 
-To get all usage rights for a specific user using delegated or application permissions: 
+To get all usage rights for a specific user using either delegated or application permissions:
 
 <!-- { "blockType": "ignored" }
 -->
