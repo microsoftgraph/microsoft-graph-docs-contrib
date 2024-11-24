@@ -40,11 +40,11 @@ Use the **reservePercentage** property in the [cloudPcProvisioningPolicy: apply]
 - Use the **isHotpatchEnabled** property on [userExperienceSettings](/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta&preserve-view=true) to identify whether the update is offered as a hotpatch.
 
 ### Identity and access
-Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
+Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
 
-Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta). 
+Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta&preserve-view=true) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta&preserve-view=true). 
 
-Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta).
+Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta&preserve-view=true) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Network access
 
