@@ -5,6 +5,7 @@ author: "mcm223"
 doc_type: conceptualPageType
 ms.subservice: cloud-communications
 ms.localizationpriority: high
+ms.date: 05/28/2024
 ---
 
 # Working with the call records API in Microsoft Graph

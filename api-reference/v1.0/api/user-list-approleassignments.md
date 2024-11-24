@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # List appRoleAssignments granted to a user

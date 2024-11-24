@@ -5,6 +5,7 @@ author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/04/2024
 ---
 
 # fileStorageContainer: unlock
@@ -25,6 +26,8 @@ When delegated permissions are used, only members in the `owner` role can call t
 
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_unlock" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-unlock-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 

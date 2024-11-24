@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_get_drive" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-drive-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
 ## HTTP request
 
 <!-- {

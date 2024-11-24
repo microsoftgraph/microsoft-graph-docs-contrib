@@ -6,6 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.date: 05/23/2024
 ---
 
 # Add owners
