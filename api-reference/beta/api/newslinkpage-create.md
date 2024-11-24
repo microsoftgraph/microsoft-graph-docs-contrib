@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [newsLink
 
 ## Examples
 
-## Example 1: Create a news link page with only the required properties
+### Example 1: Create a news link page with only the required properties
 
 The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page using only the required properties.
 
