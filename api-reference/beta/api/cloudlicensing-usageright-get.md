@@ -24,17 +24,6 @@ Permissions to get a **usageRight** for a user:
 <!-- { "blockType": "ignored"} -->
 ``` http
 GET /me/cloudLicensing/usageRights/{usageRightId}
-```
-
-<!-- { "blockType": "permissions", "name": "cloudlicensing_usageright_get", "requestUrls": "GET /me/cloudLicensing/usageRights/{usageRightId}" } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User-UsageRight.Read|User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User-CloudLicensing.Read.All, User-CloudLicensing.Read, User-UsageRight.Read.All, User-UsageRight.Read|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
-
-<!-- { "blockType": "ignored"} -->
-``` http
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
@@ -57,14 +46,21 @@ GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
+To get a usage right for the signed-in user using delegated (`/me`) permissions:
+
+<!-- { "blockType": "ignored" }
 -->
 ``` http
-GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 GET /me/cloudLicensing/usageRights/{usageRightId}
+```
+
+To get a usage right for a specific user or a group using either delegated or application permissions:
+
+<!-- { "blockType": "ignored" }
+-->
+``` http
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
+GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
 ## Optional query parameters
