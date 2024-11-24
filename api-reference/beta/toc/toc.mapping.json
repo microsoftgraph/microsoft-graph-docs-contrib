@@ -1011,7 +1011,8 @@
             "organizationSettings",
             "uxSetting", 
             "template", 
-            "deviceTemplate"
+            "deviceTemplate", 
+            "mutualTlsOauthConfiguration"
           ],
           "childNodes": [
             {
