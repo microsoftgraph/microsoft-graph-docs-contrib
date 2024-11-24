@@ -210,6 +210,24 @@ items:
       href: ../../api/directory-list-devicelocalcredentials.md
     - name: Get
       href: ../../api/devicelocalcredentialinfo-get.md
+  - name: Device template
+    items:
+    - name: Device template
+      href: ../../resources/devicetemplate.md
+    - name: Create
+      href: ../../api/template-post-devicetemplates.md
+    - name: Get deviceTemplate
+      href: ../../api/devicetemplate-get.md
+    - name: List deviceTemplate
+      href: ../../api/template-list-devicetemplates.md
+    - name: Delete deviceTemplate
+      href: ../../api/device-delete-devicetemplate.md
+    - name: Get deviceTemplate owners
+      href: ../../api/devicetemplate-list-owners.md
+    - name: Add a deviceTemplate owner
+      href: ../../api/devicetemplate-post-owners.md
+    - name: Remove a deviceTemplate owner
+      href: ../../api/devicetemplate-delete-owners.md
   - name: Directory object
     items:
     - name: Directory object
@@ -639,6 +657,8 @@ items:
         href: ../../api/customappscope-update.md
       - name: Delete
         href: ../../api/customappscope-delete.md
+  - name: Template
+    href: ../../resources/template.md
   - name: Tenant information
     items:
     - name: Tenant information
