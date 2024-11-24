@@ -1009,7 +1009,9 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting"
+            "uxSetting", 
+            "template", 
+            "deviceTemplate"
           ],
           "childNodes": [
             {
