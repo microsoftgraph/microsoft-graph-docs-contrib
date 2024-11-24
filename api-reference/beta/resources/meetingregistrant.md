@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 toc.title: Meeting Registrant (deprecated)
+ms.date: 10/15/2024
 ---
 
 # meetingRegistrant resource type (deprecated)

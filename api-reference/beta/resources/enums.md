@@ -33,6 +33,15 @@ Namespace: microsoft.graph
 | provisioningCompleted |
 | unknownFutureValue |
 
+### oidcResponseType values 
+
+|Member|
+|:---|
+|code|
+|id_token|
+|token|
+|unknownFutureValue|
+
 ### approvalOperationStatus values
 
 | Member |

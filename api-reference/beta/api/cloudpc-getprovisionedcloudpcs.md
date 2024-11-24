@@ -5,6 +5,7 @@ author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 
 # cloudPC: getProvisionedCloudPCs
