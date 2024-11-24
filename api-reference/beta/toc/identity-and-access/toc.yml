@@ -448,6 +448,20 @@ items:
         href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
       - name: Delete group from policy
         href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mutual tls oauth configuration
+    items:
+    - name: Mutual tls oauth configuration
+      href: ../../resources/mutualtlsoauthconfiguration.md
+    - name: List
+      href: ../../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md
+    - name: Create
+      href: ../../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md
+    - name: Get
+      href: ../../api/mutualtlsoauthconfiguration-get.md
+    - name: Update
+      href: ../../api/mutualtlsoauthconfiguration-update.md
+    - name: Delete
+      href: ../../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
