@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 11/18/2024
+ms.date: 11/24/2024
 ---
 
 # What's new in Microsoft Graph
@@ -38,6 +38,13 @@ Use the **reservePercentage** property in the [cloudPcProvisioningPolicy: apply]
 - [Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
 - Use the **isHotpatchUpdate** property on [productRevision](/graph/api/resources/windowsupdates-productrevision?view=graph-rest-beta&preserve-view=true) to identify whether the content is hotpatchable.
 - Use the **isHotpatchEnabled** property on [userExperienceSettings](/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta&preserve-view=true) to identify whether the update is offered as a hotpatch.
+
+### Identity and access
+Can now update alternativeNames, externalSourceId, and sourceType on a [device](graph/api/resources/device?view=graph-rest-beta) resource. Also introduced deviceInstances and deviceTemplate as new relationships on devices. 
+
+Create, get, list, delete, and update owners on [deviceTemplate](/graph/api/resources/deviceTemplate?view=graph-rest-beta) resources which are derived from the container resource, [template](/graph/api/resources/template?view=graph-rest-beta). 
+
+Create, get, list, update, and update [mutualTlsOauthConfiguration](/graph/api/resources/mutualTlsOauthConfiguration?view=graph-rest-beta) resources which is derived from [certificateAuthorityPath](/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta).
 
 ### Identity and access | Network access
 
