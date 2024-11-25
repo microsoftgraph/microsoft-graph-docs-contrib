@@ -5,6 +5,7 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # schema resource type

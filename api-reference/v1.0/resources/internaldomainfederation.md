@@ -45,7 +45,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ### federatedIdpMfaBehavior values
 
