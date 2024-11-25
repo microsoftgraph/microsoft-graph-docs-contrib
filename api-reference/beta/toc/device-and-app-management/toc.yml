@@ -130,7 +130,7 @@ items:
       href: ../../api/cloudpc-retrievereviewstatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info for user
+    - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
@@ -8631,9 +8631,9 @@ items:
     items:
     - name: Cloud PC connection
       href: ../../resources/managedtenants-cloudpcconnection.md
-    - name: List cloud PC connections
+    - name: List Cloud PC connections
       href: ../../api/managedtenants-managedtenant-list-cloudpcconnections.md
-    - name: Get cloud PC connection
+    - name: Get Cloud PC connection
       href: ../../api/managedtenants-cloudpcconnection-get.md
   - name: Cloud PC device
     items:

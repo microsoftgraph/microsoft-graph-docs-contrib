@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "DougKirschner"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 10/29/2024
 ---
 
 # administrativeUnit resource type

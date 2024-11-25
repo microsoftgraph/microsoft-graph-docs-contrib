@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: No MFA on activation
+ms.date: 09/19/2024
 ---
 
 # noMfaOnRoleActivationAlertIncident resource type

@@ -3,20 +3,22 @@ title: "List identityProviders"
 description: "Get a collection of identity provider resources that are configured for a tenant, and that are derived from identityProviderBase."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "namkedia"
+author: "brozbab"
 ms.subservice: "entra-sign-in"
+ms.date: 11/16/2024
 ---
 
 # List identityProviders
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
+Get a collection of identity provider resources that are configured for a tenant.
 
-For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
+Among the types of providers derived from identityProviderBase, in Microsoft Entra External ID, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [oidcIdentityProvider](../resources/oidcidentityprovider.md) resource.
 
-For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+In Azure AD B2C, this operation can get a [socialIdentityProvider](../resources/socialidentityprovider.md), [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), [builtinIdentityProvider](../resources/builtinidentityprovider.md), or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,23 +51,24 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for a Microsoft Entra tenant.
+If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for a Microsoft Entra tenant.
 
-For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects in the response body.
+For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects in the response body.
 
 ## Examples
 
 <a name='example-1-list-all-identity-provider-resources-configured-in-an-azure-ad-tenant'></a>
 
-### Example 1: List all identity provider resources configured in a Microsoft Entra tenant
+### Example 1: List all identity provider resources configured in a workforce tenant
 
 #### Request
+
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase_inAzureADtenant"
+  "name": "get_identityproviderbase_Azure_AD_tenant"
 }
 -->
 
@@ -108,6 +111,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 #### Response
+
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -144,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all identity providers configured in an Azure AD B2C tenant
+### Example 2: List all identity provider resources configured in an Azure AD B2C tenant
 
 #### Request
 The following example shows a request.
@@ -153,7 +157,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase_AzureB2C"
+  "name": "get_identityproviderbase_2"
 }
 -->
 
@@ -196,6 +200,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 #### Response
+
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -219,35 +224,16 @@ Content-type: application/json
             "id": "LinkedIn-OAUTH",
             "displayName": "linkedin",
             "identityProviderType": "LinkedIn",
-            "clientId": "866xc0qtyy00ih",
+            "clientId": "qazx1234aA",
             "clientSecret": "******"
         },
-        {
-            "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
-            "id": "OIDC-V1-rtt_AD_Test-3e393390-ed2d-4794-97f6-5c1a1ccc61f7",
-            "displayName": "OIDC AD Test",
-            "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
-            "clientSecret": "******",
-            "scope": "openid",
-            "metadataUrl": "https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration",
-            "domainHint": "",
-            "responseType": "code",
-            "responseMode": "form_post",
-            "claimsMapping": {
-                "userId": "oid",
-                "displayName": "name",
-                "givenName": "given_name",
-                "surname": "family_name",
-                "email": "unique_email"
-            }
-        },
-        {
+{
             "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
             "id": "Apple-Managed-OIDC",
             "displayName": "Sign in with Apple",
-            "developerId": "UBF8T346G9",
+            "developerId": "qazx1234",
             "serviceId": "com.microsoft.aad.b2c.iuyt.client",
-            "keyId": "99P6DD87C4",
+            "keyId": "4294967296",
             "certificateData": "******"
         }
     ]
@@ -255,9 +241,10 @@ Content-type: application/json
 
 ```
 
-### Example 3: List all identity providers configured in a Microsoft Entra External ID in an external tenant
+### Example 3: List all identity providers configured in an external tenant
 
 #### Request
+
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -306,6 +293,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 #### Response
+
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.

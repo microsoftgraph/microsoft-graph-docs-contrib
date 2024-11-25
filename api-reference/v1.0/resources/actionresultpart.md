@@ -5,6 +5,7 @@ author: "abshar-teams"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # actionResultPart resource type

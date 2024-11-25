@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 
 # securityReportsRoot: getAttackSimulationTrainingUserCoverage

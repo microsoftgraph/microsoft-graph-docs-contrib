@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
 ms.subservice: change-notifications
+ms.date: 08/01/2024
 ---
 
 # Delete subscription
