@@ -5,6 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: resourcePageType
+ms.date: 08/23/2024
 ---
 
 # contact resource type

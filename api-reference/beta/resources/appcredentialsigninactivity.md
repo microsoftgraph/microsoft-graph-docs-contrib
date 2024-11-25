@@ -6,6 +6,7 @@ author: "madansr7"
 ms.subservice: "reports"
 doc_type: "resourcePageType"
 toc.title: App credential sign-in activity
+ms.date: 07/30/2024
 ---
 
 # appCredentialSignInActivity resource type

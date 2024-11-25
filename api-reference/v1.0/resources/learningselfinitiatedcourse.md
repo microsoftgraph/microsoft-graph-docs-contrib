@@ -5,6 +5,7 @@ author: "malabikaroy"
 ms.localizationpriority: medium
 ms.subservice: "viva-learning"
 doc_type: resourcePageType
+ms.date: 03/12/2024
 ---
 
 # learningSelfInitiatedCourse resource type
