@@ -62,6 +62,7 @@ Don't supply a request body for this method.
 
 
 ## Example
+
 ### Request
 
 The following example shows a request.
@@ -71,9 +72,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/devices/{devicesId}/deviceTemplate/{id}/$ref
+DELETE https://graph.microsoft.com/beta/devices/{devicesId}/deviceTemplate/{id}/
 ```
-
 
 ### Response
 
