@@ -1,6 +1,6 @@
 ---
 title: "Teams meeting type and Microsoft Graph APIs"
-description: "Consider when to use online meetings API, webinar API, or town hall API for Teams meetings."
+description: "Consider when to use online meetings, webinar, or town hall Microsoft Graph APIs for Teams meetings."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
