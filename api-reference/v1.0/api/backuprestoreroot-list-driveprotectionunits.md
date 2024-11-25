@@ -50,6 +50,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
+> [!NOTE]
+> `displayName` and `email` properties are currently available **only** for `Delegated` permission type.
+>
+
 ## Examples
 
 ### Example 1: List all the driveProtectionUnits in a tenant
