@@ -48,4 +48,4 @@ The following table lists some solutions you can build by using the Teams client
 
 ### Email communication
 
-You can turn off email communications to attendees when you [create the town hall](/graph/api/virtualeventsroot-post-townhalls). In the **settings** property, set `isAttendeeEmailNotificationEnabled` to `false`.Note that emails are still sent to organizers, co-organizers, and presenters (internal and external).
+You can turn off email communications to attendees when you [create the town hall](/graph/api/virtualeventsroot-post-townhalls). In the **settings** property, set `isAttendeeEmailNotificationEnabled` to `false`. Note that emails are still sent to organizers, co-organizers, and presenters (internal and external).
