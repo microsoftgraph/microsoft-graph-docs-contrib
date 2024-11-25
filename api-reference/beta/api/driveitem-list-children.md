@@ -174,6 +174,11 @@ Content-type: application/json
   "@odata.nextLink": "https://..."
 }
 ```
+> [!IMPORTANT]
+> Children requests that contain additional $filter parameters are not supported.  For example:
+>```http
+> GET https://graph.microsoft.com/v1.0/drives/{ContainerID}/items/{folderID}/children?$filter=listitem/fields/{columnName} eq '{ColumnValue}' AND listitem/fields/FileLeafRef eq '{DocumentName}' &$select=id,name,lastModifiedDateTime,size&$expand=listitem($expand=fields)
+> ```
 
 **Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
