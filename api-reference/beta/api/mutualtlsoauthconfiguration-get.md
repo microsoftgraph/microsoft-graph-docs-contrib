@@ -1,14 +1,16 @@
 ---
 title: "Get a mutual TLS OAuth Configuration"
 description: "Get a mutual TLS OAuth Configuration."
-author: "ploegert"
+author: "atastrophic"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
+ms.date: 11/24/2024
 ---
 
 # Get mutualTlsOauthConfigurations
+
 Namespace: microsoft.graph
 
 Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource.
@@ -16,18 +18,15 @@ Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthC
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
   "name": "mutualtlsoauthconfiguration-get-permissions"
 }
 -->
-
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
+[!INCLUDE [permissions-table](../includes/permissions/mutualtlsoauthconfiguration-get-permissions.md)]
 
 ## HTTP request
 
@@ -38,9 +37,11 @@ GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
 ```
 
 ## Optional query parameters
+
 This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ### Example Filters/Selec
+
 |Pattern|Supported|Syntax|
 |-------|:---------:|------|
 |Filter|✓|`//directory/certificateAuthorities/mutualTlsOauthConfigurations/?$filter=id eq '{guid}'`|
@@ -48,20 +49,23 @@ This method supports the `$select` & `$filter` [OData query parameter](/graph/qu
 |Select|✓|`//directory/certificateAuthorities/mutualTlsOauthConfigurations/?$select=id,operatingSystem'`|
 
 ## Request headers
-For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
-| Name | Type |	Description |
-|--|--|--|
-Authorization	| string	| Bearer {token}. Required. |
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request Body
+
 Don't supply a request body for this method.
 
-
 ## Response
+
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
-## Example
+## Examples
+
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_mutualtlsoauthconfiguration"
@@ -72,6 +76,7 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 ```
 
 ### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,

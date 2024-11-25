@@ -1,31 +1,31 @@
 ---
 title: "Create Mutual TLS OAuth Configuration"
 description: "Create a mutual TLS OAuth Configuration."
-author: "ploegert"
+author: "sgeislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
+ms.date: 11/24/2024
 ---
 
 # Create mutualTlsOauthConfigurations
+
 Namespace: microsoft.graph
 
 Add a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource that contains a specified certificate authority object.
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
   "name": "certificateauthoritypath-post-mutualtlsoauthconfigurations-permissions"
 }
 -->
-
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
+[!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-post-mutualtlsoauthconfigurations-permissions.md)]
 
 ## HTTP Request
 <!-- {
@@ -34,18 +34,21 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
+POST /certificateAuthorities/mutualTlsOauthConfigurations/
 ```
 
 ### Request headers
+
 For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
 
-| Name | Type |	Description | Required |
-|--|--|--|--|
-| Authorization	| string	| Bearer {token}.   | Yes |
-| Content-Type  | string    | application/json. | Yes |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 
 ### Request Body
+
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
 You can specify the following properties when creating a **mutualTlsOauthConfigurations**.
@@ -66,11 +69,9 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |`201` | Request was successful ||
 |`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
 
-
-
 ## Example
+
 ### Request
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_mutualtlsoauthconfiguration_from_"
@@ -94,7 +95,7 @@ Content-Type: application/json
 
 
 ### Response
-The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

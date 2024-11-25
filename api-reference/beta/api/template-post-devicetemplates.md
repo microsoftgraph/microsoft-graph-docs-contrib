@@ -1,14 +1,16 @@
 ---
 title: "Create a Device Template"
 description: "Post a new device template."
-author: "ploegert"
+author: "sgeislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
+ms.date: 11/24/2024
 ---
 
 # Create DeviceTemplate
+
 Namespace: microsoft.graph
 
 Add a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes & manage a group of devices with similar characteristics. 
@@ -18,17 +20,15 @@ When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
   "name": "template-post-devicetemplates-permissions"
 }
 -->
-
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates |Allows the user to create and update DeviceTemplate objects. _(Granted to admin on the customer's EntraId tenant)_|**Application** and **Delegated**|**Yes**|List, Get, Create, Update, Delete|
+[!INCLUDE [permissions-table](../includes/permissions/template-post-devicetemplates-permissions.md)]
 
 ## HTTP Request
 
@@ -41,12 +41,14 @@ POST /directory/templates/deviceTemplates
 ```
 
 ### Request headers
-| Name | Type |	Description | Required |
-|--|--|--|--|
-| Authorization	| string	| Bearer {token}. | Yes |
-| Content-Type  | string  | application/json. | Yes |
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ### Request Body
+
 In the request body, supply a JSON representation of the [deviceTemplate](../resources/devicetemplate.md) object.
 
 You can specify the following properties when creating a **deviceTemplate**.
@@ -61,6 +63,7 @@ You can specify the following properties when creating a **deviceTemplate**.
 |`operatingSystem`|`String`|OS type | No |
 
 ### Response
+
 - If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 

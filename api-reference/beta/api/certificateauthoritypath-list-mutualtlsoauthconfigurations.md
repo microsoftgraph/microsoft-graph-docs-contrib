@@ -1,14 +1,16 @@
 ---
 title: "List mutual TLS OAuth Configurations"
 description: "List mutual TLS OAuth Configurations."
-author: "ploegert"
+author: "sgeislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
+ms.date: 11/24/2024
 ---
 
 # List mutualTlsOauthConfigurations
+
 Namespace: microsoft.graph
 
 Lists available [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resources.
@@ -16,31 +18,29 @@ Lists available [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfigu
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
   "name": "certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions"
 }
 -->
-
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-|`MutualTlsOauthConfiguration.Read.All`| Read all configurations used for mutual transport layer security (mTLS) client authentication. | Allows the app to read configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes reading trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get|
-|`MutualTlsOauthConfiguration.ReadWrite.All`| Read and write all configurations used for mutual-TLS client authentication. | Allows the app to read and update configuration used for OAuth 2.0 mutual-TLS client authentication, on behalf of the signed-in user. Permission includes adding and updating trusted certificate authorities. _(Granted to admin role on the device authority's EntraId tenant)_|**Delegated**|**Yes**|List, Get, Create, Update, Delete|
-
+[!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/certificateAuthorities/mutualTlsOauthConfigurations
+GET /certificateAuthorities/mutualTlsOauthConfigurations
 ```
 
 ## Optional query parameters
+
 This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ### Example Filters/Select
+
 Reference MSGraph [documentation](/graph/query-parameters) for more details regarding the supported operations.
 |Pattern|Supported|Description|Syntax|
 |-------|:---------:|---|------|
@@ -58,6 +58,7 @@ For more information about adding the Authorization Header, see [Authorization](
 Authorization	| string	| Bearer {token}. Required. |
 
 ## Request Body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -66,6 +67,7 @@ Don't supply a request body for this method.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
+
 ### Request
 <!-- {
   "blockType": "request",

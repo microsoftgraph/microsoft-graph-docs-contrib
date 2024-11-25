@@ -1,14 +1,16 @@
 ---
 title: "Delete a Device Template"
 description: "Delete a device template."
-author: "ploegert"
+author: "sgeislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
+ms.date: 11/24/2024
 ---
 
 # Delete DeviceTemplate
+
 Namespace: microsoft.graph
 
 Delete a registered [deviceTemplate](../resources/devicetemplate.md). 
@@ -16,36 +18,36 @@ Delete a registered [deviceTemplate](../resources/devicetemplate.md).
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
   "name": "device-delete-devicetemplate-permissions"
 }
 -->
-
-|ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
-|-|-|-|-|-|-|
-**Application-only**|**Yes**|List, Get|
-|`DeviceTemplate.ReadWrite.All`|Read and write device templates | Allows the app to create, read, update, and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. _(Granted to admin on the customer's EntraId tenant)_|**Delegated** & **app-only**|**Yes**|List, Get, Create, Update, Delete|
+[!INCLUDE [permissions-table](../includes/permissions/device-delete-devicetemplate-permissions.md)]
 
 ## HTTP request
 
 The `{id}` in the request is the value of the **id** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/templates/deviceTemplates/{id}
+DELETE /templates/deviceTemplates/{id}
 ```
 
 ## Request headers
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
+
 - If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
@@ -87,13 +89,17 @@ HTTP/1.1 204 No Content
 ```
 
 ## Example 2
+
 ### Request
+
 If the user doesn't have access to a given resource, the error emitted shows as:
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1
 ```
 
 ### Response
+
 ```json
 HTTP/1.1 403
 
