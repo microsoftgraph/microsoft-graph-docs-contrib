@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
+ms.date: 05/09/2024
 ---
 
 # mfaDetail resource type

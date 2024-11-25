@@ -5,6 +5,7 @@ author: "javieralvarezchiang"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.date: 10/09/2024
 ---
 
 # driveItem: discardCheckout

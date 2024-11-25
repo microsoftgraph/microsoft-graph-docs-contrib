@@ -1549,16 +1549,16 @@
             },
             {
               "name": "Identity provider",
-              "resources": [
-                "identityProviderBase"
-              ],
+              "resources": [],
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [
+                  "resources": [                    
+                    "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
                     "appleManagedIdentityProvider",
+                    "oidcidentityProvider",
                     "openIdConnectIdentityProvider"
                   ]
                 },

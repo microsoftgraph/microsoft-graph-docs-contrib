@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: SharePoint protection policy
+ms.date: 08/27/2024
 ---
 
 # sharePointProtectionPolicy resource type

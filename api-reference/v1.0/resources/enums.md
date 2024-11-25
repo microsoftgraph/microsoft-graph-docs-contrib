@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.date: 10/30/2024
 ---
 
 # Enum values
