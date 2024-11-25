@@ -1,7 +1,7 @@
 ---
 title: "Get deviceTemplate owners"
 description: "Get owners of a device template."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

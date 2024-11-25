@@ -1,7 +1,7 @@
 ---
 title: "List deviceTemplates"
 description: "List device templates."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceTemplate"
 description: "Get a device template."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

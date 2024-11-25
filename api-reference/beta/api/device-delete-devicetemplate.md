@@ -1,7 +1,7 @@
 ---
 title: "Delete a Device Template"
 description: "Delete a device template."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

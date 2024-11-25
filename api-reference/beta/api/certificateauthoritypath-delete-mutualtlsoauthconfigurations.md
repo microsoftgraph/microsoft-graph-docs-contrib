@@ -1,7 +1,7 @@
 ---
 title: "Delete a mutual TLS OAuth Configuration"
 description: "Delete a mutual TLS OAuth Configuration."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

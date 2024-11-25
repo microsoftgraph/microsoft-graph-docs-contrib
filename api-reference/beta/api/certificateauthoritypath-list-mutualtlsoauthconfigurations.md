@@ -1,7 +1,7 @@
 ---
 title: "List mutual TLS OAuth Configurations"
 description: "List mutual TLS OAuth Configurations."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"

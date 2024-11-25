@@ -1,7 +1,7 @@
 ---
 title: "Create a Device Template"
 description: "Post a new device template."
-author: "sgeislinger"
+author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
