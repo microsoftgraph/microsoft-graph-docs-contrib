@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mahage-msft"
 ms.subservice: "ediscovery"
 doc_type: "resourcePageType"
+ms.date: 07/22/2024
 ---
 
 # reviewSet resource type

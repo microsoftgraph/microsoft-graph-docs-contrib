@@ -5,6 +5,7 @@ author: "naalmog"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "security"
+ms.date: 09/18/2024
 ---
 
 # identityContainer resource type
@@ -26,6 +27,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |healthIssues|[microsoft.graph.security.healthIssue](security-healthissue.md) collection| Represents potential issues identified by Microsoft Defender for Identity within a customer's Microsoft Defender for Identity configuration. |
+|sensors|[microsoft.graph.security.sensor](security-sensor.md) collection| Represents a customer's Microsoft Defender for Identity sensors.|
 
 ## JSON representation
 

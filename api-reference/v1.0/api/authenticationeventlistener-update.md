@@ -5,6 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/30/2024
 ---
 
 # Update authenticationEventListener
@@ -188,7 +189,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response to a request to add an application to an authentication event listener's trigger conditions:

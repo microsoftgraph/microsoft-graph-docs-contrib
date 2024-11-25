@@ -5,6 +5,7 @@ author: "anandab-msft"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
+ms.date: 11/07/2024
 ---
 
 # Change notifications for Microsoft Teams resources
