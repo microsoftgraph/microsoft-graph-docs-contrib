@@ -42,11 +42,9 @@ The following JSON representation shows the resource type.
   "restrictForAppsCreatedAfterDateTime": "String (timestamp)",
   "excludeAppsReceivingV2Tokens": "Boolean",
   "excludeSaml": "Boolean",
-  "excludeActors": [
-    {
-      "@odata.type": "microsoft.graph.customSecurityAttributeExemption"
+  "excludeActors": {
+      "@odata.type": "microsoft.graph.appManagementPolicyActorExemptions"
     }
-  ]
 }
 ```
 
