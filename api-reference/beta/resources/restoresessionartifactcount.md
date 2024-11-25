@@ -1,6 +1,6 @@
 ---
 title: "restoreSessionArtifactCount resource type"
-description: "Represents artifact count metadata of a particular restoreSession"
+description: "Represents artifact count metadata of a particular restoreSession."
 author: "satpatel1"
 ms.reviewer: "satpatel1"
 ms.localizationpriority: medium
@@ -32,10 +32,10 @@ Represents artifact count metadata of a particular [Restore Session](../resource
 
 |Property|Type|Description|
 |:---|:---|:---|
-|total|Int32|Number of artifacts present in the restore session.|
-|inProgress|Int32|Count of artifacts whose restore is in progress.|
-|completed|Int32|Count of artifacts whose restore is completed.|
-|failed|Int32|Count of artifacts whose restore is failed.|
+|total|Int32|The number of artifacts present in the restore session.|
+|inProgress|Int32|The number of artifacts whose restoration is in progress.|
+|completed|Int32|The number of artifacts whose restoration completed.|
+|failed|Int32|The number of artifacts whose restoration failed.|
 
 ## JSON representation
 

@@ -1,6 +1,6 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
-description: "Create a new OneDrive for Business restore session."
+description: "Create a new OneDrive restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium

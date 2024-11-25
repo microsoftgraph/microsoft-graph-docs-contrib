@@ -1,6 +1,6 @@
 ---
 title: "oneDriveForBusinessRestoreSession resource type"
-description: "epresents restore-related tasks on artifacts that are protected by a OneDrive protection policy."
+description: "Represents restore-related tasks on artifacts that are protected by a OneDrive protection policy."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
