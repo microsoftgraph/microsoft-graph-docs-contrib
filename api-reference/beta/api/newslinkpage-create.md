@@ -71,18 +71,21 @@ The following example shows a request.
 
 <!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
 ``````
-POST /sites/c1370818-f5e0-4a40-a99b-be4520640642/pages/microsoft.graph.newsLinkPage
+POST /sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
 prefer: include-unknown-enum-members
 Content-Type: application/json
 ``````
 ```json
 {
+  "@odata.type" : "#microsoft.graph.newsLinkPage",
   "newsWebUrl":"https://someexternalnewssite.com/2023/09/08/tech-giant-unveils-first-self-driving-bicycle",
   "title": "Tech Giant Unveils First Self-Driving Bicycle"
 }
 ```
 
 ### Response
+
+The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and using only required fields.
 
 <!-- {
   "blockType": "response",
@@ -170,6 +173,7 @@ Content-Type: image/jpeg
 The following example shows the response. In the event of some failure uploading or persisting the banner image, the reponse will contain @microsoft.graph.bannerImageWebUrlContentError with an appropriately descriptive error message string.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -226,6 +230,10 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+  "Error: /api/newslinkpage-create.md/create-newslinkpage:
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
+  "Error: /api/newslinkpage-create.md/create-newslinkpage-multipart:
+      Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2.",
   "Error: /api/newslinkpage-create.md/create-newslinkpage:
       Error parsing resource definition: Unexpected character encountered while parsing number: M. Path '', line 1, position 2."
   ]
