@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
+ms.date: 05/20/2024
 ---
 
 # Microsoft Entra ID synchronization API overview

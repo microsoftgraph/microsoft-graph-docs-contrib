@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 description: "The quota resource provides details about space constraints on a drive resource."
 ms.subservice: onedrive
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # quota resource type
