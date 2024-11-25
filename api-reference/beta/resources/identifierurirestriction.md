@@ -19,7 +19,7 @@ Configuration object to configure a restriction for identifier URIs on applicati
 ## Properties
 | Property                                    | Type                            | Description                 |
 | :------------------------------------------ | :------------------------------ | :-------------------------- |
-| excludeActors                | Collection([customSecurityAttributeExemption](customSecurityAttributeExemption.md))                         | Collection of custom security attribute exemptions. If an actor user or service principal has the custom security attribute, they're exempted from the restriction. |
+| excludeActors                | [appManagementPolicyActorExemptions](appmanagementpolicyactorexemptions.md)                         | Collection of custom security attribute exemptions. If an actor user or service principal has the custom security attribute, they're exempted from the restriction. |
 | excludeAppsReceivingV2Tokens                | Boolean                         | If `true`, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.|
 | excludeSaml                                 | Boolean                         | If `true`, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.|
 | restrictForAppsCreatedAfterDateTime         | String                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
