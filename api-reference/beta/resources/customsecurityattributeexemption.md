@@ -20,8 +20,11 @@ This resource is an abstract type from which the [customSecurityAttributeStringV
 
 Inherits from [entity](../resources/entity.md).
 
-<!-- The direct access methods are not functional in the underlying Service. Excluding them until they are operational.
+
 ## Methods
+None.
+<!-- The direct access methods are not functional in the underlying Service. Excluding them until they are operational.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/appmanagementpolicyactorexemptions-list-customsecurityattributes.md)|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) collection|Get a list of the [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) objects and their properties.|
