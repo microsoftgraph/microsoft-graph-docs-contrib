@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcProvisioningPolicyAutopatch](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAutopatch?view=graph-rest-1.0) resource type.",
+          "Target": "cloudPcProvisioningPolicyAutopatch"
+        },
+        {
+          "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+          "ApiChange": "Property",
+          "ChangedApiName": "autopatch",
+          "ChangeType": "Addition",
+          "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "13faed3a-b186-4ed5-8e0b-409c27bebaa7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-12-14T10:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
           "ApiChange": "Method",
           "ChangedApiName": "bulkreprovisioncloudpc",
