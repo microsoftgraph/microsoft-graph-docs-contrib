@@ -38,8 +38,8 @@ POST /sites/{site-id}/pages
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|`application/json` for for the json content, including for the required "Title" property of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
-|Prefer | `include-unknown-enum-members`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
+|Content-Type|application/json for JSON content, including the required **title** property in multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type. |
+|Prefer | include-unknown-enum-members. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values), which is a [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
 
 ## Request body
 
@@ -62,11 +62,13 @@ You can specify the following properties when you create a [newsLinkPage](../res
 
 If successful, this method returns a `201 Created` response code and a [newsLinkPage](../resources/newslinkpage.md) object in the response body.
 
-## Example - Create a [newsLinkPage](../resources/newslinkpage.md) with only required properties
+## Examples
+
+### Example 1: Create a news link page with only the required properties
 
 The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page using only the required properties.
 
-### Request
+#### Request
 The following example shows a request.
 
 <!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
@@ -74,8 +76,7 @@ The following example shows a request.
 POST /sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
 prefer: include-unknown-enum-members
 Content-Type: application/json
-``````
-```json
+
 {
   "@odata.type" : "#microsoft.graph.newsLinkPage",
   "newsWebUrl":"https://someexternalnewssite.com/2023/09/08/tech-giant-unveils-first-self-driving-bicycle",
@@ -83,7 +84,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and using only required fields.
 
@@ -93,20 +94,19 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
   "@odata.type": "microsoft.graph.newsLinkPage"
 }
 -->
-```
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
-```
-```json
+
 {
   "eTag": "\"{6A34958A-6F84-4571-A26E-B2CEB20261EB},3\"",
   "id": "6a34958a-6f84-4571-a26e-b2ceb20261eb",
   "lastModifiedDateTime": "2023-09-10T18:46:23Z",
-  "name": "Tech-Giant-Unveils-First-Self-Driving-Bicycle.aspx",
-  "webUrl": "https://contoso.sharepoint.com/SitePages/Tech-Giant-Unveils-First-Self-Driving-Bicycle.aspx",
-  "title": "Tech Giant Unveils First Self-Driving Bicycle",
+  "name": "contoso-unveils-first-self-driving-car.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/contoso-unveils-first-self-driving-car.aspx",
+  "title": "Contoso Unveils First Self-Driving Car",
   "pageLayout": "newsLink",
-  "newsWebUrl": "https://someexternalnewssite.com/2023/09/08/tech-giant-unveils-first-self-driving-bicycle",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
   "createdBy": {
     "user": {
       "displayName": "Jane Doe"
@@ -134,15 +134,19 @@ Content-type: application/json
 }
 ```
 
-## Example - Create a newsLink page including uploading BannerImage File Content
+### Example 2: Create a news link page and upload the banner image file content
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and uploading a banner image and setting the banner Image content for the newslink page. This requires a multipart request.
+The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) with a banner image. This requires a multipart request.
 
-### Request
+#### Request
 
 The following example shows a request.
 
-<!-- { "blockType": "request", "name": "create-newslinkpage-multipart", "scopes": "sites.readwrite.all" } -->
+<!-- { 
+  "blockType": "request", 
+  "name": "create-newslinkpage-multipart", 
+  "scopes": "sites.readwrite.all" 
+} -->
 ```http
 POST https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
 Prefer: include-unknown-enum-members
@@ -151,10 +155,11 @@ Content-type: multipart/form-data; boundary=MyPartBoundary198374
 --MyPartBoundary198374
 Content-Disposition: form-data; name="request"
 Content-Type: application/json
+
 {
   "@odata.type" : "#microsoft.graph.newsLinkPage",
   "title" : "Microsoft Build brings AI tools to the forefront for developers",
-  "newsWebUrl" : "https://someexternalnewssite.com/2023/05/23/scientists-discover-secret-to-eternal-youth",
+  "newsWebUrl" : "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
   "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
@@ -168,9 +173,9 @@ Content-Type: image/jpeg
 --MyPartBoundary198374
 ```
 
-### Response
+#### Response
 
-The following example shows the response. In the event of some failure uploading or persisting the banner image, the reponse will contain @microsoft.graph.bannerImageWebUrlContentError with an appropriately descriptive error message string.
+The following example shows the response. If a failure occurs when you upload or persist the banner image, the response contains `@microsoft.graph.bannerImageWebUrlContentError` and a descriptive error message.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -187,16 +192,16 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.newsLinkPage",
   "createdDateTime": "2024-06-11T17:31:20Z",
-  "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
   "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
   "lastModifiedDateTime": "2024-06-11T17:31:21Z",
-  "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
+  "name": "microsoft-build-ai-tools-developers.aspx",
   "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-  "title": "Scientists Discover Secret to Eternal Youth",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
   "pageLayout": "newsLink",
-  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth/BannerImage.png",
-  "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/microsoft-build-ai-tools-developers/BannerImage.png",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
   "createdBy": {
     "user": {
       "displayName": "John Doe",

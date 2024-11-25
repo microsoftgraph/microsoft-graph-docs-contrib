@@ -38,7 +38,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | lastModifiedBy       | [identitySet](../resources/identityset.md)                           | The identity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | name                 | String                                                               | The name of the item. Inherited from [baseItem](../resources/baseitem.md).    |
-| pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values) | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
+| pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values) | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `newsLink`. |
 | parentReference      | [itemReference](../resources/itemreference.md)                       | Parent information, if the item has a parent. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                 | The publishing status and the MM.mm version of the page.                                                                        |
 | title                | String                                                               | Title of the sitePage.                                                                                                          |
@@ -52,7 +52,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | article            | The page is an article page.                                    |
 | home               | The page is a home page.                                        |
 | unknownFutureValue | Marker value for future compatibility.                          |
-| newsLinkPage       | The page is a news link page, where you can add a link to content from your site, or from another web site with the News link. The linked content will appear as a news post.|
+| newsLinkPage       | The page is a news link page that allows you to add a link to content from your site or another website. The linked content appears as a news post.|
 
 ## Relationships
 
