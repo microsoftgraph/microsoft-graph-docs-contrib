@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 ms.date: 11/18/2024
 ---
 
-# Choose the right Teams meeting type and Microsoft Graph APIs
+# Choose the right Teams meeting type
 
 Microsoft Teams and Microsoft Graph support multiple types of scheduled real-time voice and video experiences, ranging from ad hoc meetings that are suitable for a few participants to large, structured virtual events like webinars and town halls with thousands of attendees.
 
@@ -20,7 +20,7 @@ Use the following table to choose the right meeting type and Microsoft Graph API
 | [Town hall](https://support.microsoft.com/office/get-started-with-town-hall-in-microsoft-teams-33baf0c6-0283-4c15-9617-3013e8d4804f)|  [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) <br> [virtualEventSession](/graph/api/resources/virtualeventsession) <br> [virtualEventPresenter](/graph/api/resources/virtualeventpresenter) |<ul><li>Automatic streaming event for a limited number of presenters to a large group of attendees, capping at 10,000 or 20,000 participants (with Teams Premium).</li><li>Attendees cannot register for the event. They need to be invited. Attendees use the Q&A feature to engage with presenters and organizers instead of directly interacting via chat or audio.</li></ul> |
 
 
-To learn more about the differences between each meeting type to help you choose the one that is best suited for your use case, see the [feature comparison chart](/microsoftteams/meeting-webinar-town-hall-feature-comparison).  
+To learn more about the differences between each meeting type to choose the one that is best suited for your use case, see the [feature comparison chart](/microsoftteams/meeting-webinar-town-hall-feature-comparison).  
 
 
 ## Related content
