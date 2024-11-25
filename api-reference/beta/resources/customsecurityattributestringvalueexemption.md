@@ -18,8 +18,11 @@ Configuration object to configure a custom security attribute exemption for a re
 
 Inherits from [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md).
 
-<!-- The direct access methods are not functional in the underlying Service. Excluding them until they are operational.
 ## Methods
+None.
+
+<!-- The direct access methods are not functional in the underlying Service. Excluding them until they are operational.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/customsecurityattributestringvalueexemption-list.md)|[customSecurityAttributeStringValueExemption](../resources/customsecurityattributestringvalueexemption.md) collection|Get a list of the [customSecurityAttributeStringValueExemption](../resources/customsecurityattributestringvalueexemption.md) objects and their properties.|
