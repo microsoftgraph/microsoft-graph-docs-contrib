@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/{site-id}/pages
 ```
 
@@ -72,7 +72,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
 The following example shows a request.
 
 <!-- { "blockType": "request", "name": "create-newslinkpage", "scopes": "sites.readwrite.all" } -->
-``````
+```
 POST /sites/c1370818-f5e0-4a40-a99b-be4520640642/pages
 prefer: include-unknown-enum-members
 Content-Type: application/json
@@ -94,7 +94,7 @@ The following example shows how to create a [newsLinkPage](../resources/newslink
   "@odata.type": "microsoft.graph.newsLinkPage"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -185,7 +185,7 @@ The following example shows the response. If a failure occurs when you upload or
   "@odata.type": "microsoft.graph.newsLinkPage"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
