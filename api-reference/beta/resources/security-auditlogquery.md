@@ -5,6 +5,7 @@ author: "arishojaswi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 09/10/2024
 ---
 
 # auditLogQuery resource type

@@ -2541,31 +2541,33 @@ items:
         href: ../../api/riskyserviceprincipal-list-history.md
   - name: Identity provider
     items:
-    - name: External Identities identity provider
-      items:
-      - name: External Identities identity provider
-        href: ../../resources/identityproviderbase.md
-      - name: List configured identity providers
-        href: ../../api/identitycontainer-list-identityproviders.md
-      - name: Create identity provider
-        href: ../../api/identitycontainer-post-identityproviders.md
-      - name: 'Get '
-        href: ../../api/identityproviderbase-get.md
-      - name: Update
-        href: ../../api/identityproviderbase-update.md
-      - name: Delete
-        href: ../../api/identityproviderbase-delete.md
-      - name: List available identity providers
-        href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: External identities
       items:
+      - name: External Identities identity provider
+        items:
+        - name: External Identities identity provider
+          href: ../../resources/identityproviderbase.md
+        - name: List configured identity providers
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available identity providers
+          href: ../../api/identityproviderbase-availableprovidertypes.md
       - name: Built in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:

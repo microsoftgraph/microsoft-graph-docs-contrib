@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Platform Credential
+ms.date: 07/22/2024
 ---
 
 # platformCredentialAuthenticationMethod resource type

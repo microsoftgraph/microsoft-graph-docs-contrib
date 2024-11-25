@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageResourceRoles"
-description: "Retrieve a list of accessPackageResourceRole objects."
+description: "Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects of an [accessPackageResource](../resources/accesspackageresource.md) in an [accessPackageCatalog](../resources/accesspackagecatalog.md). The resource should have been added to the catalog by [creating an accessPackageResourceRequest](entitlementmanagement-post-accesspackageresourcerequests.md). This list of roles can then be used by the caller to select a role, which is needed when subsequently [creating an accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
+Retrieve a list of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects of an [accessPackageResource](../resources/accesspackageresource.md) in an [accessPackageCatalog](../resources/accesspackagecatalog.md). The resource should have been added to the catalog by [creating an accessPackageResourceRequest](entitlementmanagement-post-accesspackageresourcerequests.md). This list of roles can then be used by the caller to select a role, which is needed when later [creating an accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "accesspackagecatalog_list_accesspackageresourceroles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-list-accesspackageresourceroles-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## HTTP request
 
@@ -132,9 +134,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieve the roles of a resource for a SharePoint Online site
+### Example 2: Retrieve the roles of a resource for a SharePoint site
 
-This is an example of retrieving the roles of a resource, to obtain the **originId** of each role.  This would be used after a SharePoint Online site has been added as a resource to the catalog, as the **originId** of a SharePoint site role, the sequence number of the role in the site, is needed to add the role to an access package.
+The following example shows how to retrieve the roles of a resource, to obtain the **originId** of each role. This would be used after a SharePoint site has been added as a resource to the catalog, as the **originId** of a SharePoint site role, the sequence number of the role in the site, is needed to add the role to an access package.
+
 
 #### Request
 
@@ -188,7 +191,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 #### Response
 
-The following example shows the response.  The **displayName** is the same as shown in the SharePoint Online view of a site, and the **originId** is the underlying identifier established by SharePoint Online for the role.
+The following example shows the response. The **displayName** is the same as shown in the SharePoint view of a site, and the **originId** is the underlying identifier established by SharePoint for the role.
+
 
 > **Note:** The response object shown here might be shortened for readability.
 

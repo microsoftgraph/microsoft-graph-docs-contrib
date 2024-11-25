@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection rule
+ms.date: 10/24/2024
 ---
 
 # protectionRuleBase resource type
