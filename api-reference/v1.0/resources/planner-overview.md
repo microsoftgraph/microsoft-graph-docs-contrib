@@ -76,6 +76,9 @@ Planner allows changes to older versions of resources, if the intended change do
 Each resource has a unique etag. Etag values for different resources, including those with containment relationships, cannot be compared.
 The client apps are expected to handle versioning related [error codes](/graph/errors) `409` and `412` by reading the latest version of the item and resolving the conflicting changes.
 
+## Planner change notifications
+An app may subscribe to [change notifications](/graph/change-notifications-overview) for all Planner resources. When a resource has changed, the app will receive a notification which includes the id of the resource which has changed and can use this to pull down the most recent version of the resource. For app developers needing to synchronize a copy of a tenant's Planner data to local storage this is the most efficient and recommended approach to avoid running into throttling limits.   
+
 ## Common Planner error conditions
 
 In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
