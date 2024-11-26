@@ -43,12 +43,11 @@ POST /sites/{site-id}/pages
 
 ## Request body
 
-In the request body, supply a JSON representation of the [newsLinkPage](../resources/newslinkpage.md) object.
-The body must contain required properties placed directly in the request body, but to set a banner image by uploading an image it must contain multipart message format as shown in the example. For the banner image upload, since you're sending binary data, then you must send a multipart request.
+In the request body, supply a JSON representation of the [newsLinkPage](../resources/newslinkpage.md) object. The body must contain required properties placed directly in the request body; however, to set a banner image by uploading an image, it must be in a multipart message format as shown in the example. For the banner image upload, you must send a multipart request because it involves binary data.
 
 > **Notes:**
 > * To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
-> * Currently, to set the **bannerImageWebUrl**, we provide the capability to upload the image bytes directly, which gets auto saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. The way to do that would be to make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content, as illustrated in the example.
+> * Currently, to set the **bannerImageWebUrl**, the capability exists to upload the image bytes directly. These bytes get auto-saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. To achieve this, make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content. For more details, see [Example 2](../resources/newslinkpage.md#example-2-create-a-news-link-page-and-upload-the-banner-image-file-content).
 
 You can specify the following properties when you create a [newsLinkPage](../resources/newslinkpage.md).
 
@@ -79,8 +78,8 @@ Content-Type: application/json
 
 {
   "@odata.type" : "#microsoft.graph.newsLinkPage",
-  "newsWebUrl":"https://someexternalnewssite.com/2023/09/08/tech-giant-unveils-first-self-driving-bicycle",
-  "title": "Tech Giant Unveils First Self-Driving Bicycle"
+  "newsWebUrl":"https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
+  "title": "Contoso Unveils First Self-Driving Car"
 }
 ```
 
