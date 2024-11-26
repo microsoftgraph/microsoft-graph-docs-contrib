@@ -143,14 +143,8 @@ Content-Type: application/json
         }
       },
       "publishingState": {
-        "level": "checkout",
-        "versionId": "0.1",
-        "checkedOutBy": {
-          "user": {
-            "displayName": "John Doe",
-            "email": "jdoe@contoso.com"
-          }
-        }
+        "level": "published",
+        "versionId": "1.0"
       }
     }
   ]
