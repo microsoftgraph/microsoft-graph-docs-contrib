@@ -63,7 +63,7 @@ Don't supply a request body for this method.
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates/00f1e7a4-de6d-4070-84df-8aab629c4d1e/owners
 ```
 
-#### 
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -3,7 +3,6 @@ title: "Create deviceTemplate"
 description: "Create a new deviceTemplate object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024

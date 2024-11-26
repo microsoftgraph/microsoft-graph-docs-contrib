@@ -3,6 +3,7 @@ title: "template resource type"
 description: "template resource type"
 author: "ploegert"
 ms.localizationpriority: medium
+ms.date: 11/242024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---

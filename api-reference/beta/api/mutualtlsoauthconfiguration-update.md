@@ -3,7 +3,6 @@ title: "Update a mutual TLS OAuth Configuration"
 description: "Update a mutual TLS OAuth Configuration."
 author: "ploegert"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
@@ -54,13 +53,13 @@ PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsO
 
 In the request body, supply a JSON representation of the [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object.
 
-You can specify the following properties when creating a **mutualTlsOauthConfigurations**.
+You can specify the following properties when creating a **mutualTlsOauthConfiguration**.
 
-|Property|Type|Description|Key|Required|ReadOnly|
-|-|-|-|-|-|-|
-|displayName|Strin`|Friendly name|
-|tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
-|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|Friendly name|
+|tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |
+|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. |
 
 ### Response
 
@@ -69,7 +68,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 |Response Code|Condition|Message|
 |-|-|-|
 |`200` | Request was successful ||
-|`403` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
+|`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
 
 ## Example 1 - Update Display Name
 

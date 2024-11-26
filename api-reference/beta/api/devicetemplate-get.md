@@ -3,7 +3,6 @@ title: "Get deviceTemplate"
 description: "Get a device template."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024

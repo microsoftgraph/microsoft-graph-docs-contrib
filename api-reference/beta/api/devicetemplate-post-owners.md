@@ -3,8 +3,7 @@ title: "Add owners"
 description: "Add owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
-ms.subservice: "entra-id"
+\ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
@@ -84,3 +83,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
+```
