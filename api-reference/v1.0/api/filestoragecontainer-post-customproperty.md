@@ -58,7 +58,7 @@ If successful, this method returns a `200 Created` response code.
 
 #### Request
 The following example shows how to create a custom property called `clientUniqueId` for a container.
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_1"
