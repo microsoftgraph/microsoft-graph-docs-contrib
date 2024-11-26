@@ -89,6 +89,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+|productType|[microsoft.graph.cloudPcProductType](#cloudPcProductType-values)|The Cloud PC's product type. Possible values are: `enterprise`, `frontline`, `devBox`, `powerAutomate` and `business`. For available service plan for `enterprise`, `frontline` and `business`, you could learn more from "Plans and pricing" on site https://www.microsoft.com/en-us/windows-365. For `devBox` refer to https://azure.microsoft.com/en-us/pricing/details/dev-box/?msockid=150767d1287e61b40952744a297b6081#pricing. For `powerAutomate` refer to https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing?msockid=150767d1287e61b40952744a297b6081#compare-plans. The default value is `enterprise`. It's used to filter Cloud PC on product level. Supports: $filter, $select.  $Search is not supported.  Read-only. 
 
 ### cloudPcDiskEncryptionState values
 
@@ -140,6 +141,17 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
 |standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+### cloudPcProductType values
+
+|Member|Description|
+|:---|:---|
+|enterprise|Default. Indicates Cloud PC product type for larger businesses that want to deploy Cloud PCs across their organization for an unlimited number of users.|
+|frontline|Indicates Cloud PC product type for frontline and part-time workers to share devices, allowing them to use Cloud PCs during their shifts.|
+|devBox|Indicates Cloud PC product type preconfigured with tools, services, and resources for developers, dev teams, and IT professionals.| 
+|powerAutomate|Indicates Cloud PC product type for Power Automate customers to run attended and unattended RPAs on their Cloud PCs.|
+|business|Indicates Cloud PC product type for small business customers up to 300 users.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.| 
 
 ## Relationships
 
