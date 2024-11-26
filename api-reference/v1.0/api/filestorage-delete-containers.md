@@ -53,10 +53,10 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
-The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainer"
@@ -65,7 +65,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 ```
-# [HTTP](#tab/http)
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-filestoragecontainer-csharp-snippets.md)]
