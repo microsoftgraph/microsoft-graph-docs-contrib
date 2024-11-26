@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
 author: "nanguil"
+ms.date: 11/26/2024 
 ---
 
 # signUpStatus resource type
