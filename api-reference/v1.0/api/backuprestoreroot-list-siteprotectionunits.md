@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 > [!NOTE]
-> The `siteName` and `siteWebUrl` properties are currently available **only** for the `Delegated` permission type.
+> The `siteName` and `siteWebUrl` properties are only available for the `Delegated` permission type.
 >
 
 ## Examples
