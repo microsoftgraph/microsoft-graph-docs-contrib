@@ -54,6 +54,8 @@ If successful, this method returns a `200 OK` response code and an updated [file
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer"
@@ -71,7 +73,6 @@ Content-Type: application/json
   }
 }
 ```
-# [HTTP](#tab/http)
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-filestoragecontainer-csharp-snippets.md)]
