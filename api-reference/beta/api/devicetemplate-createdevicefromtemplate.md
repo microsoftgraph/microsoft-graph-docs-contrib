@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new device based on a `deviceTemplate`. This action will create a new `graph.device` entity.
+Create a new device based on a `deviceTemplate`. This action creates a new `graph.device` entity.
 
 Returns an object of type [device](../resources/device.md).
 
@@ -57,8 +57,8 @@ The following table lists the parameters that are required when you call this ac
 |externalDeviceId|String|UUID of the device by IoT registry. Must be unique within a tenant.|
 |operatingSystemVersion|String|Operating System of the device specified |
 |externalSourceName|String|String identifying the SourceName of the device |
-|keyCredential|[keyCredential](../resources/keycredential.md)| String representing the keycredential when using self-signed certs|
-|accountEnabled|Boolean|Whether device is enabled or not. A disabled device cannot authenticate with Entra Id|
+|keyCredential|[keyCredential](../resources/keycredential.md)| String representing the key credential when using self-signed certs|
+|accountEnabled|Boolean|`true` if the account is enabled; otherwise, `false`. Default is `true`. A disabled device cannot authenticate with Entra Id.|
 |alternativeNames|String collection|A colleciton of ARM Resource Ids associated with device if any.|
 
 ## Response
