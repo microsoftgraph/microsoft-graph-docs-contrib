@@ -1,5 +1,5 @@
 ---
-title: "Get change notifications for Microsoft Teams emergency call event updates"
+title: "Change notifications for Microsoft Teams emergency call event updates"
 description: "Use change notifications in Microsoft Graph to subscribe to various events for Microsoft Teams emergency calls."
 author: "awang119"
 ms.localizationpriority: high
