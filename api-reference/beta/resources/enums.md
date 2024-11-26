@@ -21,6 +21,15 @@ Namespace: microsoft.graph
 | provisioningCompleted |
 | unknownFutureValue |
 
+### oidcResponseType values 
+
+|Member|
+|:---|
+|code|
+|id_token|
+|token|
+|unknownFutureValue|
+
 ### approvalOperationStatus values
 
 | Member |
@@ -261,6 +270,14 @@ Namespace: microsoft.graph
 | recommeded |
 | unknownFutureValue |
 | peerRecommeded |
+
+### certificateAuthorityType values
+
+|Member|
+|:---|
+|root|
+|intermediate|
+|unknownFutureValue|
 
 ### courseStatus values
 
@@ -737,6 +754,13 @@ Namespace: microsoft.graph
 | --------------------- |
 | asymmetricKeyLifetime |
 | trustedCertificateAuthority |
+| unknownFutureValue |
+
+### customSecurityAttributeComparisonOperator values 
+
+| Member |
+| ---- |
+| equals |
 | unknownFutureValue |
 
 ### synchronizationSecret values

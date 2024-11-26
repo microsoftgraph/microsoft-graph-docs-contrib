@@ -150,7 +150,7 @@ items:
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions
     href: ../../api/filestoragecontainer-list-permissions.md
-  - name: Create permissions
+  - name: Add permissions
     href: ../../api/filestoragecontainer-post-permissions.md
   - name: Update permissions
     href: ../../api/filestoragecontainer-update-permissions.md
@@ -158,7 +158,7 @@ items:
     href: ../../api/filestoragecontainer-delete-permissions.md
   - name: List custom property
     href: ../../api/filestoragecontainer-list-customproperty.md
-  - name: Create custom property
+  - name: Add custom property
     href: ../../api/filestoragecontainer-post-customproperty.md
   - name: Update custom property
     href: ../../api/filestoragecontainer-update-customproperty.md

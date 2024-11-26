@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 10/14/2024
 ---
 
 # fileStorageContainer: permanentDelete
@@ -34,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storageContainers/{containerId}/permanentDelete
+POST /storage/fileStorage/containers/{containerId}/permanentDelete
 ```
 
 ## Request headers

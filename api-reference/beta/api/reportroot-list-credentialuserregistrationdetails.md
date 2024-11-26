@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
+ms.date: 04/04/2024
 ---
 
 # List credentialUserRegistrationDetails

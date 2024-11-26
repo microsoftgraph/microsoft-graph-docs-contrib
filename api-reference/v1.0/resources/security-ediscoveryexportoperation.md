@@ -5,6 +5,7 @@ author: "vbhatt0211"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 doc_type: resourcePageType
+ms.date: 10/30/2024
 ---
 
 # ediscoveryExportOperation resource type

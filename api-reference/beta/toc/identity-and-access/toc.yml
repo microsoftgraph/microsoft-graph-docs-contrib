@@ -2541,31 +2541,33 @@ items:
         href: ../../api/riskyserviceprincipal-list-history.md
   - name: Identity provider
     items:
-    - name: External Identities identity provider
-      items:
-      - name: External Identities identity provider
-        href: ../../resources/identityproviderbase.md
-      - name: List configured identity providers
-        href: ../../api/identitycontainer-list-identityproviders.md
-      - name: Create identity provider
-        href: ../../api/identitycontainer-post-identityproviders.md
-      - name: 'Get '
-        href: ../../api/identityproviderbase-get.md
-      - name: Update
-        href: ../../api/identityproviderbase-update.md
-      - name: Delete
-        href: ../../api/identityproviderbase-delete.md
-      - name: List available identity providers
-        href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: External identities
       items:
+      - name: External Identities identity provider
+        items:
+        - name: External Identities identity provider
+          href: ../../resources/identityproviderbase.md
+        - name: List configured identity providers
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available identity providers
+          href: ../../api/identityproviderbase-availableprovidertypes.md
       - name: Built in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
       - name: Apple managed identity provider
         href: ../../resources/applemanagedidentityprovider.md
-      - name: Open id connect identity provider
+      - name: OIDC identity provider
+        href: ../../resources/oidcidentityprovider.md
+      - name: OpenID Connect identity provider
         href: ../../resources/openidconnectidentityprovider.md
     - name: Domain-based external identities
       items:
@@ -3000,6 +3002,54 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+  - name: Public key infrastructure
+    items:
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: Trusted certificate authorities for apps (preview)
     items:
     - name: Certificate-based application configuration
@@ -4119,6 +4169,10 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+    - name: FQDN filtering rule
+      href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: Web category filtering rule
+      href: ../../resources/networkaccess-webcategoryfilteringrule.md
 - name: Partner customer administration
   items:
   - name: Partner security alert
