@@ -5,6 +5,7 @@ author: "abshar-teams"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.date: 08/19/2024
 ---
 
 # conversationMember: add

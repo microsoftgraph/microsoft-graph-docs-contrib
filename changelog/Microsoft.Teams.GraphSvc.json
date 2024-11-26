@@ -2361,6 +2361,88 @@
       "CreatedDateTime": "2024-10-02T16:52:11.579880Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "aiInteractionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiInteractionType** enumeration type.",
+          "Target": "aiInteractionType"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionAttachment"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionContext"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionLink](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionLink?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionLink"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMention",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMention](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMention?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionMention"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionMentionedIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionMentionedIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionMentionedIdentitySet?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionMentionedIdentitySet"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteraction",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteraction](https://learn.microsoft.com/en-us/graph/api/resources/aiInteraction?view=graph-rest-beta) resource.",
+          "Target": "aiInteraction"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionHistory"
+        },
+        {
+          "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllEnterpriseInteractions",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method.",
+          "Target": "aiInteractionHistory"
+        }
+      ],
+      "Id": "1eb03a5a-4c2d-425c-9be0-03c2c57928cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-21T22:39:38.6194554Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
