@@ -446,6 +446,14 @@
         },
         {
           "Id": "b4c3291a-d779-4cd5-a8e2-7310bfa50196",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/newsLinkPage-publish?view=graph-rest-beta) method to the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "newsLinkPage"
+        },
+        {
+          "Id": "b4c3291a-d779-4cd5-a8e2-7310bfa50196",
           "ApiChange": "Term",
           "ChangedApiName": "bannerImageWebUrlContent",
           "ChangeType": "Addition",

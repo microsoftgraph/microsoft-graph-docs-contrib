@@ -52,7 +52,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | article            | The page is an article page.                                    |
 | home               | The page is a home page.                                        |
 | unknownFutureValue | Marker value for future compatibility.                          |
-| newsLinkPage       | The page is a news link page that allows you to add a link to content from your site or another website. The linked content appears as a news post.|
+| newsLink           | The page is a news link page that allows you to add a link to content from your site or another website. The linked content appears as a news post.|
 
 ## Relationships
 

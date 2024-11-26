@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

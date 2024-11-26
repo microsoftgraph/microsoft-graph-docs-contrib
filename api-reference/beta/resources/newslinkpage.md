@@ -23,11 +23,11 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/newslinkpage-list.md)|[newsLinkPage](../resources/newslinkpage.md) collection|Get a list of the [newsLinkPage](../resources/newslinkpage.md) objects and their properties.|
-|[Create](../api/newslinkpage-create.md)|[newsLinkPage](../resources/newslinkpage.md) |Create a new [newsLinkPage](../resources/newslinkpage.md) object.|
-|[Get](../api/newslinkpage-get.md)|[newsLinkPage](../resources/newslinkpage.md)|Read the properties and relationships of a [newsLinkPage](../resources/newslinkpage.md) object.|
+|[Create](../api/newslinkpage-create.md)|[newsLinkPage](../resources/newslinkpage.md) |Create a new [newsLinkPage](../resources/newslinkpage.md) in the site pages [list](../resources/list.md) of a [site](../resources/site.md).|
+|[Get](../api/newslinkpage-get.md)|[newsLinkPage](../resources/newslinkpage.md)|Get the metadata of a [newsLinkPage](../resources/newslinkpage.md) in the site pages [list](../resources/list.md) of a [site](../resources/site.md).|
 |[Update](../api/newslinkpage-update.md)|[newsLinkPage](../resources/newslinkpage.md)|Update the properties of a [newsLinkPage](../resources/newslinkpage.md) object.|
 |[Delete](../api/basesitepage-delete.md)|None|Delete a [newsLinkPage](../resources/newslinkpage.md) object.|
-|[Publish](../api/newslinkpage-publish.md)|None|Publish a [newsLinkPage](../resources/newslinkpage.md) object. |
+|[Publish](../api/newslinkpage-publish.md)|None|Publish the latest version of a [newsLinkPage](../resources/newslinkpage.md) resource that makes the version available to all users. |
 
 ## Properties
 
@@ -59,7 +59,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |@microsoft.graph.bannerImageWebUrlContent|String|This annotation is used to send the image content in a multipart request.|
 |@microsoft.graph.bannerImageWebUrlContentError|String|If a failure occurs when you upload or persist the banner image during a **newsLinkPage** creation, the response contains `@microsoft.graph.bannerImageWebUrlContentError` that provides details about the error.|
 
-For a POST request example, see [Create newsLinkPage)](../api/newslinkpage-create.md).
+For a POST request example, see [Create newsLinkPage](../api/newslinkpage-create.md).
 
 ## Relationships
 
