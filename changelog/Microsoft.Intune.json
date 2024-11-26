@@ -3450,18 +3450,26 @@
       "ChangeList": [
         {
           "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "userExperienceAnalyticsRemoteConnection",
-          "ChangeType": "Addition",
-          "Description": "Added the **Deprecation Caution Notes** for the userExperienceAnalyticsRemoteConnection resource.",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [userExperienceAnalyticsRemoteConnection-get](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-get?view=graph-rest-beta) method.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [userExperienceAnalyticsRemoteConnection-list](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-list?view=graph-rest-beta) method.",
           "Target": "userExperienceAnalyticsRemoteConnection"
         },
         {
           "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
           "ApiChange": "Resource",
           "ChangedApiName": "summarizeDeviceRemoteConnection",
-          "ChangeType": "Addition",
-          "Description": "Added the **Deprecation Caution Notes** for the summarizeDeviceRemoteConnection resource.",
+          "ChangeType": "Deprecation",
+          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection-function](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) Function.",
           "Target": "summarizeDeviceRemoteConnection"
         }
       ],
