@@ -13,7 +13,7 @@ ms.date: 11/24/2024
 
 Namespace: microsoft.graph
 
-Returns the specified [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource.
+Returns the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

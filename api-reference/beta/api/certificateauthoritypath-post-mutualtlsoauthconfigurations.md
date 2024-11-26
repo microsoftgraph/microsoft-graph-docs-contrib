@@ -13,7 +13,7 @@ ms.date: 11/24/2024
 
 Namespace: microsoft.graph
 
-Add a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resource that contains a specified certificate authority object.
+Add a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource that contains a specified certificate authority object.
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions

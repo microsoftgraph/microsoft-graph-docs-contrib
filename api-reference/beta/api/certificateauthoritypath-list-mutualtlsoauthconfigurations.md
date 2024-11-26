@@ -13,7 +13,7 @@ ms.date: 11/24/2024
 
 Namespace: microsoft.graph
 
-Lists available [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) resources.
+Lists available [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resources.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +63,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
+- If successful, this method returns a `200 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
