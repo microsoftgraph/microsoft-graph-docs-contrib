@@ -389,7 +389,7 @@ The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/12345678-abcd-1234-cdef-aaaaaaaaaaaa
----
+```
 
 #### Response
 
