@@ -767,6 +767,13 @@ Namespace: microsoft.graph
 | trustedCertificateAuthority |
 | unknownFutureValue |
 
+### customSecurityAttributeComparisonOperator values 
+
+| Member |
+| ---- |
+| equals |
+| unknownFutureValue |
+
 ### synchronizationSecret values
 
 | Member |
