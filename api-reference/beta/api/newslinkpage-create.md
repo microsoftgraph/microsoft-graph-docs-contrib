@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of the [newsLinkPage](../resou
 
 > **Notes:**
 > * To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
-> * Currently, to set the **bannerImageWebUrl**, the capability exists to upload the image bytes directly. These bytes get auto-saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. To achieve this, make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content. For more details, see [Example 2](../resources/newslinkpage.md#example-2-create-a-news-link-page-and-upload-the-banner-image-file-content).
+> * Currently, to set the **bannerImageWebUrl**, the capability exists to upload the image bytes directly. These bytes get auto-saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. To achieve this, make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content. For more details, see [Example 2](../api/newslinkpage-create.md#example-2-create-a-news-link-page-and-upload-the-banner-image-file-content).
 
 You can specify the following properties when you create a [newsLinkPage](../resources/newslinkpage.md).
 
