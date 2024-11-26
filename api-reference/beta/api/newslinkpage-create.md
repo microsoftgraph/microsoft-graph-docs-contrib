@@ -55,8 +55,8 @@ You can specify the following properties when you create a [newsLinkPage](../res
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The descriptive text for the item. The maximum length limit is 250 characters. Optional. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. The maximum length limit is 110 characters. Required.|
-|title|String|Title of the **newsLinkPage**. Required. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. Required.|
+|title|String|Title of the **newsLinkPage**. The maximum length limit is 110 characters. Required. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ## Response
 
