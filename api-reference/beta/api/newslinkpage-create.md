@@ -77,7 +77,7 @@ prefer: include-unknown-enum-members
 Content-Type: application/json
 
 {
-  "@odata.type" : "#microsoft.graph.newsLinkPage",
+  "@odata.type": "#microsoft.graph.newsLinkPage",
   "newsWebUrl":"https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
   "title": "Contoso Unveils First Self-Driving Car"
 }
@@ -156,11 +156,11 @@ Content-Disposition: form-data; name="request"
 Content-Type: application/json
 
 {
-  "@odata.type" : "#microsoft.graph.newsLinkPage",
-  "title" : "Microsoft Build brings AI tools to the forefront for developers",
-  "newsWebUrl" : "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
-  "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
-  "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
+  "@odata.type": "#microsoft.graph.newsLinkPage",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "@microsoft.graph.bannerImageWebUrlContent": "name:content"
 }
 
 --MyPartBoundary198374
