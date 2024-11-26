@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 04/04/2024
 ---
 # Create accessPackageCatalog
 
@@ -21,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_catalogs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-catalogs-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-catalog-creator-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-creator-apis-write.md)]
 
 ## HTTP request
 

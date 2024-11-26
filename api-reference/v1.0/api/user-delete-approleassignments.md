@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: entra-users
 author: "psignoret"
+ms.date: 10/15/2024
 ---
 
 # Delete appRoleAssignment
