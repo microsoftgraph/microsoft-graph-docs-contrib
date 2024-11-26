@@ -1,15 +1,14 @@
 ---
 title: "List deviceTemplates"
-description: "List device templates."
+description: "List all device templates."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# List DeviceTemplates
+# List deviceTemplates
 
 Namespace: microsoft.graph
 
@@ -37,15 +36,7 @@ GET /directory/templates/deviceTemplates
 
 ## Optional query parameters
 
-This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
-
-### Example Filters/Select
-
-|Pattern|Supported|Syntax|
-|-------|:---------:|------|
-|Filter|✓|`/directory/templates/deviceTemplates/?$filter=id eq '{guid}'`|
-|Select|✓|`/directory/templates/deviceTemplates/?$select=id,operatingSystem'`|
-
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -60,7 +51,6 @@ Do not supply a request body for this method.
 ## Response
 
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Example
 
@@ -89,17 +79,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/templates/deviceTemplates",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceTemplate",
-      "id": "a4d7a4eb-8ade-d364-56b2-bcb659b3c6f9",
-      "deletedDateTime": "String (timestamp)",
-      "mutualTlsOauthConfigurationId": "String",
-      "mutualTlsOauthConfigurationTenantId": "String",
-      "deviceAuthority": "String",
-      "manufacturer": "String",
-      "model": "String",
-      "operatingSystem": "String"
+      "id": "16f1d02a-af59-4ca7-b2ea-494a262353b9",
+      "mutualTlsOauthConfigurationId": "471995a2-9504-4a2d-ba1e-017c48da1d19",
+      "mutualTlsOauthConfigurationTenantId": "5142e292-4586-4888-856a-a0661219fdab",
+      "deviceAuthority": "IoT Device Authority",
+      "manufacturer": "IoT Manufacturer",
+      "model": "IoT Device K1",
+      "operatingSystem": "WindowsIoT"
+    },
+    {
+      "id": "3a0698d9-fd85-4b9e-9655-e26d19013459",
+      "mutualTlsOauthConfigurationId": "471995a2-9504-4a2d-ba1e-017c48da1d19",
+      "mutualTlsOauthConfigurationTenantId": "5142e292-4586-4888-856a-a0661219fdab",
+      "deviceAuthority": "IoT Test for owner",
+      "manufacturer": "IoT manufacturer",
+      "model": "IoT Devices",
+      "operatingSystem": null
     }
   ]
 }

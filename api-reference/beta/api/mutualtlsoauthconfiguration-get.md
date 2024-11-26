@@ -1,21 +1,20 @@
 ---
-title: "Get a mutual TLS OAuth Configuration"
-description: "Get a mutual TLS OAuth Configuration."
+title: "Get mutualTlsOauthConfiguration"
+description: "Read the properties and relationships of a mutualTlsOauthConfiguration object."
 author: "atastrophic"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Get mutualTlsOauthConfigurations
+# Get mutualTlsOauthConfiguration
 
 Namespace: microsoft.graph
 
-Returns the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Returns the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
 ## Permissions
 
@@ -30,23 +29,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device template.
+The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
+GET /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
 
 ## Optional query parameters
 
-This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
-
-### Example Filters/Selec
-
-|Pattern|Supported|Syntax|
-|-------|:---------:|------|
-|Filter|✓|`//directory/certificateAuthorities/mutualTlsOauthConfigurations/?$filter=id eq '{guid}'`|
-|Filter|✓|`//directory/certificateAuthorities/mutualTlsOauthConfigurations/?$filter=manufacturer eq '{manufacturer name}'`|
-|Select|✓|`//directory/certificateAuthorities/mutualTlsOauthConfigurations/?$select=id,operatingSystem'`|
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -60,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `200 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
 
 ## Examples
 
@@ -72,7 +63,7 @@ Don't supply a request body for this method.
 }
 -->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb
+GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/a7199212-950f-4a2d-ba1e-017c48da1d19b
 ```
 
 ### Response
@@ -86,16 +77,21 @@ GET https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsO
 
 ```http
 HTTP/1.1 201 Created
-Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations/eec5ba11-2fc0-4113-83a2-ed986ed13cdb"
+Location: "https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations/a7199212-950f-4a2d-ba1e-017c48da1d19"
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
-  "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
-  "displayName": "DoorCamera_Model_X_TrustedCAs",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
+  "id": "a7199212-950f-4a2d-ba1e-017c48da1d19",
+  "deletedDateTime": null,
+  "displayName": "Standard TLS cert config",
+  "tlsClientAuthParameter": "tls_client_auth_san_uri",
   "certificateAuthorities": [
     {
-      "@odata.type": "microsoft.graph.certificateAuthority"
+      "isRootAuthority": true,
+      "certificateRevocationListUrl": null,
+      "deltaCertificateRevocationListUrl": null,
+      "certificate": "MIIF7TCCA9WgAwIBAgIUKhOsQRIaKyP4lppcfbl9vgE...",
+      "issuer": "CN=root.device.certs.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "23B99F09035C525B125A02E1B9ACA70218C65B71"
     }
   ]
 }

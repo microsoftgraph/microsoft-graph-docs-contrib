@@ -1,9 +1,9 @@
 ---
 title: "mutualTlsOauthConfiguration resource type"
-ms.date: 11/20/2024
-description: "Represents a mutualTlsOauthConfig"
-author: "ploegert"
+description: "mutualTlsOauthConfiguration object represents list of certificate authorities used for mTls Auth for device objects."
+author: "sgeislinger"
 ms.localizationpriority: medium
+ms.date: 11/20/2024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
@@ -20,16 +20,17 @@ This object is typically created by a device authority on their own EntraId tena
 
 For customers that use first party Azure IoT registries, this object may also be stored in the Microsoft Services tenant.
 
-Inherits from [certificateAuthorityPath](../resources/certificateauthoritypath.md).
+Inherits from [trustedCertificateAuthorityBase](../resources/trustedcertificateauthoritybase.md).
 
 ## Methods
+
 | Method       | Method | Success Code | Return Type  | Description | 
 |:---------------|:--------|:----------|:---|:---|
 |[List](../api/certificateauthoritypath-list-mutualtlsoauthconfigurations.md) |`GET` |`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) collection| Retrieve a list of mutualTlsOauthConfiguration registered in the directory. |
-|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. | 
-|[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.| 
+|[Create](../api/certificateauthoritypath-post-mutualtlsoauthconfigurations.md) | `POST` |`201` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Create mutualTlsOauthConfiguration object. |
+|[Get](../api/mutualtlsoauthconfiguration-get.md)| `GET`|`200` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md) | Read properties and relationships of mutualTlsOauthConfiguration object.|
 |[Update](../api/mutualtlsoauthconfiguration-update.md) | `PATCH`/`PUT` |`204` | [mutualTlsOauthConfiguration](mutualtlsoauthconfiguration.md)  | Update the properties of the mutualTlsOauthConfiguration object.  |
-|[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | `DELETE`      |`204` | None |Delete the mutualTlsOauthConfiguration object.   |
+|[Delete](../api/certificateauthoritypath-delete-mutualtlsoauthconfigurations.md) | `DELETE`      |`204` | None |Delete the mutualTlsOauthConfiguration object.|
 
 ## Permissions
 |ScopeName|DisplayName|Description|Type|Admin Consent?|Entities/APIs covered|
@@ -42,19 +43,22 @@ Inherits from [certificateAuthorityPath](../resources/certificateauthoritypath.m
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
 |`displayName`|String|Friendly name|
+|deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
 |`tlsClientAuthParameter`|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`.|No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|`certificateAuthorities`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mutualTlsOauthConfiguration",
-  "baseType": "microsoft.graph.certificateAuthorityPath",
+  "baseType": "microsoft.graph.trustedCertificateAuthorityBase",
   "openType": false
 }
 -->
@@ -62,7 +66,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.mutualTlsOauthConfiguration",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
+  "deletedDateTime": null,
   "certificateAuthorities": [
     {
       "@odata.type": "microsoft.graph.certificateAuthority"
@@ -87,16 +91,18 @@ POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTls
       "certificateRevocationListUrl": "http://contoso.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "contoso Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "issuer": "CN=certauthority.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "74B99F09035C525B1B4A0FE1C9ACA70218C65B71"
     },
     {
+      {
       "isRootAuthority": true,
       "certificateRevocationListUrl": "http://contoso.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "contoso Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "issuer": "CN=certauthority.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "74B99F09035C525B1B4A0FE1C9ACA70218C65B71"
+    }
     }
   ]
 }
@@ -115,16 +121,16 @@ Location: "https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mut
       "certificateRevocationListUrl": "http://contoso.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "contoso Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "issuer": "CN=certauthority.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "74B99F09035C525B1B4A0FE1C9ACA70218C65B71"
     },
     {
       "isRootAuthority": true,
       "certificateRevocationListUrl": "http://digicert.com/root.crl",
       "deltaCertificateRevocationListUrl": null,
       "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "issuer": "CN=certauthority.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "74B99F09035C525B1B4A0FE1C9ACA70218C65B71"
     }
   ]
 }

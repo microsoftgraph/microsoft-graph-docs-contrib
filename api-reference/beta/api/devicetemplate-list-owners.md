@@ -1,15 +1,14 @@
 ---
-title: "Get deviceTemplate owners"
-description: "Get owners of a device template."
+title: "List owners"
+description: "List owners of a device template."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Get DeviceTemplate Owners
+# List owners
 
 Namespace: microsoft.graph
 
@@ -38,22 +37,19 @@ GET /directory/templates/deviceTemplates/{id}/owners
 
 ## Request headers
 
-| Name | Type |	Description |
-|--|--|--|
-Authorization	| string	| Bearer {token}. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request 
+## Request
 
 Don't supply a request body for this method.
 
 ## Response
 
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Examples
-
-### Example 1: Get a deviceTemplate owner by ID
 
 #### Request
 
@@ -86,34 +82,17 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.servicePrincipal",
       "id": "4vfaf3ac-5122-4a25-98d8-b32c091f441f",
-      "deletedDateTime": null,
       "accountEnabled": true,
       "alternativeNames": [],
       "createdDateTime": "2024-09-11T21:21:25Z",
-      "deviceManagementAppType": null,
-      "appDescription": null,
       "appDisplayName": "test",
       "appId": "1a9da825-c78b-4531-afcf-c9443adaa442",
-      "applicationTemplateId": null,
       "appOwnerOrganizationId": "5ea2e292-4586-4888-486a-a0661219fdab",
       "appRoleAssignmentRequired": false,
-      "description": null,
-      "disabledByMicrosoftStatus": null,
       "displayName": "test",
-      "errorUrl": null,
-      "homepage": null,
       "isAuthorizationServiceEnabled": false,
-      "isManagementRestricted": null,
-      "loginUrl": null,
-      "logoutUrl": null,
-      "notes": null,
       "notificationEmailAddresses": [],
-      "preferredSingleSignOnMode": null,
-      "preferredTokenSigningKeyEndDateTime": null,
-      "preferredTokenSigningKeyThumbprint": null,
       "publisherName": "Workplace Join Android",
-      "replyUrls": [],
-      "samlMetadataUrl": null,
       "samlSLOBindingType": "httpRedirect",
       "servicePrincipalNames": [
         "1a9da825-ch8b-4531-afcf-c9443adaa442"
@@ -124,30 +103,6 @@ Content-Type: application/json
         "HideApp",
         "WindowsAzureActiveDirectoryIntegratedApp"
       ],
-      "tokenEncryptionKeyId": null,
-      "certification": null,
-      "samlSingleSignOnSettings": null,
-      "addIns": [],
-      "api": {
-        "resourceSpecificApplicationPermissions": []
-      },
-      "appRoles": [],
-      "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-      },
-      "keyCredentials": [],
-      "publishedPermissionScopes": [],
-      "passwordCredentials": [],
-      "resourceSpecificApplicationPermissions": [],
-      "verifiedPublisher": {
-        "displayName": null,
-        "verifiedPublisherId": null,
-        "addedDateTime": null
-      }
     }
   ]
 }

@@ -18,10 +18,10 @@ The properties on the template will be stamped on any `device` object that is cr
 
 An admin on the customer's tenant will call the `create` API for this entity. Values for `certificateBasedDeviceAuthConfigurationId`, `certificateBasedDeviceAuthConfigurationTenantId`, `deviceAuthorityAppIds` etc. will be provided to the customer by the device authority (manufacturer or reseller).
 
-The `devicetemplate` is immutable, except for `deviceAuthorityAppIds`. No other updates are supported.
-
+The `devicetemplate` is immutable.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/template-post-devicetemplates.md)|[deviceTemplate](../resources/devicetemplate.md) | Create a new DeviceTemplate object in the directory.|
@@ -31,24 +31,30 @@ The `devicetemplate` is immutable, except for `deviceAuthorityAppIds`. No other 
 |[Get deviceTemplate owners](../api/devicetemplate-list-owners.md) | [directoryObject](directoryobject.md) collection | Get a list of owners of the deviceTemplate object. |
 |[Add a deviceTemplate owner](../api/devicetemplate-post-owners.md)| None |Post a list of owners of the deviceTemplate object. |
 |[Remove a deviceTemplate owner](../api/devicetemplate-delete-owners.md) | None |Remove a list of owners of the deviceTemplate object. |
+|[createDeviceFromTemplate](../api/devicetemplate-createdevicefromtemplate.md)|[device](../resources/device.md)| Create new devices from given device template.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|`mutualTlsOauthConfigurationId`|`String`|Object Id of CertificateBasedDeviceAuthConfiguration - _Not set for SelfSigned_|
-|`mutualTlsOauthConfigurationTenantId`|`String`|Id of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's AAD Tenant ID) - _Not set for SelfSigned_|
-|`deviceAuthority` | `String` | `deviceAuthority` is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's AAD tenant. For example, Acme (`manufacturer`) makes security cameras that are installed in customer buildings and managed by ABC Company (`deviceAuthority`). |
-|`manufacturer`|`String`|Manufacturer name|
-|`model`|`String`|Model name | 
-|`operatingSystem`|`String`|OS type | 
+|id|String| Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|Inherited from [directoryObject](../resources/directoryobject.md).|
+|mutualTlsOauthConfigurationId|String|Object Id of CertificateBasedDeviceAuthConfiguration - _Not set for SelfSigned_|
+|mutualTlsOauthConfigurationTenantId|String|Id of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's AAD Tenant ID) - _Not set for SelfSigned_|
+|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's AAD tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). |
+|manufacturer|String|Manufacturer name|
+|model|String|Model name |
+|operatingSystem|String|OS type |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|`deviceInstances`|`Collection(microsoft.graph.device)`|Collection of `device` objects created based on this template|
-|`owners`|`Collection(microsoft.graph.directoryObject)`|Collection of objects that can manage the entity and the device objects created based on this template |
+|deviceInstances|[device](../resources/device.md) collection|Collection of device objects created based on this template|
+|owners|[directoryObject](../resources/directoryobject.md) collection|Collection of objects that can manage the entity and the device objects created based on this template |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -58,21 +64,16 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.deviceTemplate",
   "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
   "mutualTlsOauthConfigurationId": "String",
   "mutualTlsOauthConfigurationTenantId": "String",
   "deviceAuthority": "String",
-  "deviceAuthorityAppIds": "String",
   "manufacturer": "String",
   "model": "String",
   "operatingSystem": "String"
 }
 ```
-## See also
-
-- [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

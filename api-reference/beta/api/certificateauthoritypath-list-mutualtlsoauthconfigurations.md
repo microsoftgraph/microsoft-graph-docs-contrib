@@ -1,21 +1,20 @@
 ---
-title: "List mutual TLS OAuth Configurations"
-description: "List mutual TLS OAuth Configurations."
+title: "List mutualTlsOauthConfiguration objects"
+description: "Get a list of the mutualTlsOauthConfiguration objects and their properties."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# List mutualTlsOauthConfigurations
+# List mutualTlsOauthConfiguration objects
 
 Namespace: microsoft.graph
 
-Lists available [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resources.
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Lists available [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resources.
 
 ## Permissions
 
@@ -37,25 +36,13 @@ GET /certificateAuthorities/mutualTlsOauthConfigurations
 
 ## Optional query parameters
 
-This method supports the `$select` & `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
-
-### Example Filters/Select
-
-Reference MSGraph [documentation](/graph/query-parameters) for more details regarding the supported operations.
-|Pattern|Supported|Description|Syntax|
-|-------|:---------:|---|------|
-| $count|✓|Retrieves the total count of matching resources.| `/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$count=true`|
-| $filter|✓|Filters results (rows).| `/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$filter=id eq '{guid}'`|
-| $filter|✓|Filters results (rows). |`/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$filter=manufacturer eq '{manufacturer name}'`|
-| $select|✓|Filters properties (columns).|`/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$select=id,operatingSystem'`|
-| $orderBy|❌| Orders results. | `/directory/certificateAuthorities/mutualTlsOauthConfigurations?$orderby=displayName desc`
-| $top|✓|Sets the page size of results.|`/directory/certificateAuthorities/mutualTlsOauthConfigurations/?$top=2'`|
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
-| Name | Type |	Description |
-|--|--|--|
-Authorization	| string	| Bearer {token}. Required. |
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request Body
 
@@ -63,8 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+If successful, this method returns a `200 OK` response code and a collection of [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) objects in the response body.
 
 ## Example
 
@@ -94,41 +80,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations",
+  "value": [
+    {
+      "id": "a7199212-950f-4a2d-ba1e-017c48da1d19",
+      "deletedDateTime": null,
+      "displayName": "Standard TLS cert config",
+      "tlsClientAuthParameter": "tls_client_auth_san_uri",
+      "certificateAuthorities": [
         {
-            "id": "0d23b3d1-fc7b-51f5-1b3c-a494b556ccb2",
-            "deletedDateTime": null,
-            "displayName": "Contoso",
-            "tlsClientAuthParameter": "tls_client_auth_san_uri",
-            "certificateAuthorities": [
-                {
-                "@odata.type": "microsoft.graph.certificateAuthority"
-                }
-            ]
-        },
-        {
-            "id": "2809d65b-51f5-453e-1b3c-90ccc0a3ce22",
-            "deletedDateTime": null,
-            "displayName": "test1",
-            "tlsClientAuthParameter": "tls_client_auth_san_uri",
-            "certificateAuthorities": [
-                {
-                "@odata.type": "microsoft.graph.certificateAuthority"
-                }
-            ]
-        },
-        {
-            "id": "2809d65b-b2f6-51f5-1b3c-2809d65b",
-            "deletedDateTime": null,
-            "displayName": "test2",
-            "tlsClientAuthParameter": "tls_client_auth_san_email",
-            "certificateAuthorities": [
-                {
-                "@odata.type": "microsoft.graph.certificateAuthority"
-                }
-            ]
+          "isRootAuthority": true,
+          "certificateRevocationListUrl": null,
+          "deltaCertificateRevocationListUrl": null,
+          "certificate": "MIIF7TCCA9WgAwIBAgIUKhOsQRIaKyP4lppcfbl9vgE...",
+          "issuer": "CN=root.device.certs.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+          "issuerSki": "23B99F09035C525B125A02E1B9ACA70218C65B71"
         }
-    ]
+      ]
+    }
+  ]
 }
 ```

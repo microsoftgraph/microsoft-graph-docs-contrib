@@ -1,5 +1,5 @@
 ---
-title: "Add deviceTemplate owners"
+title: "Add owners"
 description: "Add owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Add DeviceTemplate Owners
+# Add owners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add new owner of a deviceTemplate object.
+Add new owner of a deviceTemplate object. Owners are granted certain permissions to the devices created from these device templates. These permissions allows owners to enable/disable devices and update properties like `AlternativeNames`.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 The `{id}` in the request is the value of the **id** property of the device template.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /templates/deviceTemplates/{id}/owners/$ref
+POST /directory/templates/deviceTemplates/{id}/owners/$ref
 ```
 
 ## Request headers
@@ -45,14 +45,13 @@ POST /templates/deviceTemplates/{id}/owners/$ref
 
 ## Request Body
 
-|Property|Type|Description|Required|
+|Property|Type|Description|
 |-|-|-|-|
-|`@odata.id`|`String`|A string associated with the userid of the target user in the form of: `https://graph.microsoft.com/beta/users/{id}`  |No|
+|@odata.id|String|A string associated with the oid of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`|
 
 ## Response
 
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Examples
 
@@ -77,20 +76,11 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject"
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-  "deletedDateTime": "String (timestamp)"
-}
-```

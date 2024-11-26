@@ -1,9 +1,8 @@
 ---
-title: "Delete deviceTemplate owners"
-description: "Delete owners of a device template."
+title: "Remove owners"
+description: "Remove a directoryObject object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
@@ -30,10 +29,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-The `{id}` in the request is the value of the **id** property of the device template.
+The `{deviceTemplateId}` in the request is the value of the **id** property of the device template while {id} represents the **oid** of the owner service principal.
 <!-- { "blockType": "ignored" } -->
 ```http
-Delete /directory/templates/deviceTemplates/{id}/owners/{user_id}/$ref
+Delete /directory/templates/deviceTemplates/{deviceTemplateId}/owners/{id}/$ref
 ```
 
 ## Request headers
@@ -49,7 +48,6 @@ Don't supply a request body for this method.
 ## Response
 
 - If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 ## Examples
 
@@ -63,7 +61,7 @@ The following example shows a request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/ec8493f6-748f-4f53-928d-1ca4b6fcacc6/$ref
+DELETE https://graph.microsoft.com/beta/directory/templates/deviceTemplates/2d62b12a-0163-457d-9796-9602e9807e1/owners/ec8493f6-748f-4f53-928d-1ca4b6fcacc6/$ref
 ```
 
 ### Response

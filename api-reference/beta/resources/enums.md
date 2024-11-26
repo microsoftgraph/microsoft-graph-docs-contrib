@@ -22,7 +22,6 @@ Namespace: microsoft.graph
 |tls_client_auth_san_email|
 |unknownFutureValue|
 
-
 ### provisionState values
 
 | Member |

@@ -1,20 +1,20 @@
 ---
-title: "Create Mutual TLS OAuth Configuration"
-description: "Create a mutual TLS OAuth Configuration."
+title: "Create mutualTlsOauthConfiguration"
+description: "Create a new mutualTlsOauthConfiguration object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Create mutualTlsOauthConfigurations
+# Create mutualTlsOauthConfiguration
 
 Namespace: microsoft.graph
 
-Add a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource that contains a specified certificate authority object.
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Add a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource that contains a specified certificate authority object.
 
 ## Permissions
 
@@ -34,12 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /certificateAuthorities/mutualTlsOauthConfigurations/
+POST /directory/certificateAuthorities/mutualTlsOauthConfigurations/
 ```
 
 ### Request headers
-
-For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
 
 |Name|Description|
 |:---|:---|
@@ -55,14 +53,13 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
-|`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|displayName|String|Friendly name|
+|tlsClientAuthParameter| [tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
+|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ### Response
 
 - If successful, this method returns a `201 Created` response code and a [mutualTlsOauthConfiguration](../resources/mutualTlsOauthConfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -79,15 +76,16 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/directory/certificateAuthorities/mutualTlsOauthConfigurations
+POST https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsOauthConfigurations
 Content-Type: application/json
 
 {
   "displayName": "DoorCamera_Model_X_TrustedCAs",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
+  "tlsClientAuthParameter": "tls_client_auth_san_uri",
   "certificateAuthorities": [
     {
-      "@odata.type": "microsoft.graph.certificateAuthority"
+      "isRootAuthority": true,
+      "certificate": "Base64EncodedCertGoesHere"
     }
   ]
 }
@@ -112,10 +110,15 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/mutualTlsOauthConfigurations/$entity",
   "id":"eec5ba11-2fc0-4113-83a2-ed986ed13cdb",
   "displayName": "DoorCamera_Model_X_TrustedCAs",
-  "tlsClientAuthParameter": "tls_client_auth_subject_dn",
+  "tlsClientAuthParameter": "tls_client_auth_san_uri",
   "certificateAuthorities": [
     {
-      "@odata.type": "microsoft.graph.certificateAuthority"
+      "isRootAuthority": true,
+      "certificateRevocationListUrl": null,
+      "deltaCertificateRevocationListUrl": null,
+      "certificate": "MIIF7TCCA9WgAwIBAgIUKhOsQRIa...",
+      "issuer": "CN=root.device.certs.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
+      "issuerSki": "34B99F09035C525B7B4R0FE1B9ACA70218C65B71"
     }
   ]
 }

@@ -1,9 +1,8 @@
 ---
-title: "Delete a mutual TLS OAuth Configuration"
-description: "Delete a mutual TLS OAuth Configuration."
+title: "Delete mutualTlsOauthConfiguration"
+description: "Delete a mutualTlsOauthConfiguration object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
 ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
@@ -11,11 +10,11 @@ ms.date: 11/24/2024
 
 # Delete mutualTlsOauthConfigurations
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Namespace: microsoft.graph
 
 Removes the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
 
@@ -35,15 +34,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-The `{id}` in the request is the value of the **id** property of the device template.
+The `{mutualTlsOauthConfigurationId}` in the request is the value of the **id** property of the mutualTlsOauthConfiguration object.
 
 ```http
-DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
+DELETE /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
 
 ## Request headers
-
-For more information about adding the Authorization Header, see [Authorization](/graph/security-authorization). The field {token} should be replaced with the associated "Access Token".
 
 |Name|Description|
 |:---|:---|
@@ -55,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-- If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+- If successful, this method returns a `204 No Content` response code.
 - Mutualtlsauthconfigurations can't be deleted until all linked DeviceTemplates and their linked devices are deleted. Failure to do so results in a `400` response.
 - Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
@@ -78,11 +75,9 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -9,9 +9,11 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Update mutualTlsOauthConfigurations
+# Update mutualTlsOauthConfiguration
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Updates the specified [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) resource.
 
@@ -21,8 +23,6 @@ The only two properties that can be updated via patch are:
 - certificateAuthorities
 
 If you want to update a subset of items in the certificate list, you want to first get the whole list, make your modifications, and repost the entire contents of the certficateAuthorities attribute list.
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{id}
+PATCH /directory/certificateAuthorities/mutualTlsOauthConfigurations/{mutualTlsOauthConfigurationId}
 ```
 
 ### Request headers
@@ -58,14 +58,13 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 |Property|Type|Description|Key|Required|ReadOnly|
 |-|-|-|-|-|-|
-|`displayName`|`String`|Friendly name|
-|`tlsClientAuthParameter`|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
-|`certificateAuthority`|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
+|displayName|Strin`|Friendly name|
+|tlsClientAuthParameter|[tlsClientRegistrationMetadata](../resources/enums.md#tlsclientregistrationmetadata-values) | Specifies which field in the certificate contains the subject ID. The possible values are: `tls_client_auth_subject_dn`, `tls_client_auth_san_dns`, `tls_client_auth_san_uri`, `tls_client_auth_san_ip`, `tls_client_auth_san_email`, `unknownFutureValue`. Required. |No | Yes| Yes|
+|certificateAuthority|[Collection(microsoft.graph.certificateAuthority)](../resources/certificateauthority.md) | Multi-value property representing a list of trusted certificate authorities. | No | No | No |
 
 ### Response
 
 - If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -136,7 +135,12 @@ Content-Type: application/json
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "@odata.type": "microsoft.graph.certificateAuthority"
+      "isRootAuthority": true,
+      "certificateRevocationListUrl": "http://digicert.com/root.crl",
+      "deltaCertificateRevocationListUrl": null,
+      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
+      "issuer": "Digicert Inc",
+      "issuerSubjectkeyIdentifier": "SKI"
     }
   ]
 }

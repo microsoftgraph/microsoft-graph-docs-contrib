@@ -1,6 +1,6 @@
 ---
-title: "Create a Device Template"
-description: "Post a new device template."
+title: "Create deviceTemplate"
+description: "Create a new deviceTemplate object."
 author: "sofia-geislinger"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
@@ -9,15 +9,15 @@ doc_type: apiPageType
 ms.date: 11/24/2024
 ---
 
-# Create DeviceTemplate
+# Create deviceTemplate
 
 Namespace: microsoft.graph
 
-Add a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes & manage a group of devices with similar characteristics. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Add a new [deviceTemplate](../resources/devicetemplate.md) used to identify attributes & manage a group of devices with similar characteristics.
 
 When creating the DeviceTemplate, the properties  `mutualTlsOauthConfigurationId` and `mutualTlsOauthConfigurationTenantId` in the body of the message isn't required if using self signed certificates instead of trust root certificates.
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
 
@@ -55,22 +55,22 @@ You can specify the following properties when creating a **deviceTemplate**.
 
 |Property|Type|Description|Required|
 |-|-|-|-|
-|`mutualTlsOauthConfigurationId`|`String`|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._|No|
-|`mutualTlsOauthConfigurationTenantId`|`String`|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._|No|
-|`deviceAuthority` | `String` | `deviceAuthority` is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (`manufacturer`) makes security cameras that are installed in customer buildings and managed by ABC Company (`deviceAuthority`). | Yes 
-|`manufacturer`|`String`|Manufacturer name|Yes|
-|`model`|`String`|Model name | Yes|
-|`operatingSystem`|`String`|OS type | No |
+|`mutualTlsOauthConfigurationId|String|Object ID of CertificateBasedDeviceAuthConfiguration - _Not set if using self signed certificates instead of trust root certificates._|No|
+|mutualTlsOauthConfigurationTenantId|String|ID of the tenant that contains the CertificateBasedDeviceAuthConfiguration (Device Authority's EntraId Tenant ID) - _Not set if using self signed certificates instead of trust root certificates._|No|
+|deviceAuthority | String | deviceAuthority is used as a generic term that could refer to the device manufacturer or some reseller or supplier who is responsible for provisioning and managing these devices on a customer's EntraId tenant. For example, Acme (manufacturer) makes security cameras that are installed in customer buildings and managed by ABC Company (deviceAuthority). | Yes 
+|manufacturer|String|Manufacturer name|Yes|
+|model|String|Model name | Yes|
+|operatingSystem|String|OS type | No |
+|"owners@odata.bind"|String| 
 
 ### Response
 
-- If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
-- Reference [MSGraph error responses and resource types](/graph/errors) for more information regarding general error codes and error conditions.
+- If successful, this method returns a `201 Created` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.\
 
 |Response Code|Condition|Message|
 |-|-|-|
 |`201` | Resource was created |Request was successful|
-|`403` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
+|`400` | Validation failure in any of the certificate validation steps mentioned | Unable to validate device certificate|
 
 
 ## Example
