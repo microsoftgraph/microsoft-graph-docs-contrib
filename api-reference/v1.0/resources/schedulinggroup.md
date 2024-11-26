@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: resourcePageType_
+ms.date: 07/22/2024
 ---
 
 # schedulingGroup resource type

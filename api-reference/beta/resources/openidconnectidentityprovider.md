@@ -4,7 +4,7 @@ description: "Represents OpenIDConnect identity providers in an Azure Active Dir
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "brozbab"
+author: "namkedia"
 ms.date: 11/16/2024
 toc.title: OpenID Connect identity provider
 ---
