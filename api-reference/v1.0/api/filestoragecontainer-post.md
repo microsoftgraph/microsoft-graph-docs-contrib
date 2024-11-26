@@ -73,6 +73,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ### Request
 The following example shows how to create a **fileStorageContainer**.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainer"
@@ -91,7 +92,6 @@ Content-Type: application/json
   }
 }
 ```
-# [HTTP](#tab/http)
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-filestoragecontainer-csharp-snippets.md)]
