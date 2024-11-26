@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
 ### Response
