@@ -298,6 +298,8 @@ items:
       href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
     - name: Retrieve connection quality reports
       href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
+    - name: Retrieve CloudPc Troubleshoot Reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
     - name: Get daily aggregated remote connection reports
       href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
     - name: Get connection quality reports (deprecated)
