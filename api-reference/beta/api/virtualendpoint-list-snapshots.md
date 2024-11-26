@@ -5,6 +5,7 @@ author: "doudoujinjin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/30/2024
 ---
 
 # List snapshots (deprecated)
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and stopped returning data on September 30, 2024. Going forward, use the [retrieveSnapshots](./cloudpc-retrievesnapshots.md) API.
+> This API is deprecated and will stop returning data on February 28, 2025. Going forward, use the [retrieveSnapshots](./cloudpc-retrievesnapshots.md) API.
 
 Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.
 

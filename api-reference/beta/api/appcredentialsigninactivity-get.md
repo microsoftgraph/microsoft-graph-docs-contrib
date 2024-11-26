@@ -5,6 +5,7 @@ description: "Get an appCredentialSignInActivity object that contains recent act
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Get appCredentialSignInActivity
@@ -23,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "appcredentialsigninactivity_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/appcredentialsigninactivity-get-permissions.md)]
+
+[!INCLUDE [rbac-usage-insights-apis](../includes/rbac-for-apis/rbac-usage-insights-apis.md)]
 
 ## HTTP request
 

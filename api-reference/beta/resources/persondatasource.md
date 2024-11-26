@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "simonhult"
 ms.subservice: "insights"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # personDataSource resource type

@@ -1,17 +1,18 @@
 ---
 title: "Remove resourceRoleScope from an access package"
-description: "Remove a resourceRoleScope from an access package."
+description: "Remove an accessPackageResourceRoleScope from an accessPackage list of resource role scopes."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
+ms.date: 03/08/2024
 ---
 
 # Remove resourceRoleScope from an accessPackage
 
 Namespace: microsoft.graph
 
-Remove a [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) from an [accessPackage](../resources/accesspackage.md) list of resource role scopes.
+Remove an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) from an [accessPackage](../resources/accesspackage.md) list of resource role scopes.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

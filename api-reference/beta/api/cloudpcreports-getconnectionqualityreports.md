@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 09/13/2024
 ---
 
 # cloudPcReports: getConnectionQualityReports (deprecated)
