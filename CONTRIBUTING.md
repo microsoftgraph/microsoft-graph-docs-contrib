@@ -59,7 +59,7 @@ Next, create a reference to the root repository by entering these commands:
 
 ```cmd
 cd microsoft-graph-docs
-git remote add upstream https://github.com/microsoftgraph/microsoft-graph-docs.git
+git remote add upstream https://github.com/microsoftgraph/microsoft-graph-docs-contrib.git
 git fetch upstream
 ```
 
