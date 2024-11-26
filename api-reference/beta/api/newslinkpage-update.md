@@ -51,8 +51,8 @@ PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The descriptive text for the item. The maximum length limit is 250 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. The maximum length limit is 110 characters.|
-|title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link.|
+|title|String|Title of the **newsLinkPage**. The maximum length limit is 110 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 > **Notes:**
 > You can update the **bannerImage** property by uploading the image bytes of the new banner image you want to set. The banner image is autosaved in the site assets library, and the banner image URL is then generated based on the persisted file. Make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content, as shown in the example.
