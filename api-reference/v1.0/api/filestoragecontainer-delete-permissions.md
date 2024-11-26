@@ -54,6 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainer_permissions"
@@ -62,7 +63,7 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ
 ```
-# [HTTP](#tab/http)
+
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-filestoragecontainer-permissions-csharp-snippets.md)]
