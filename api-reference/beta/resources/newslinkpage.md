@@ -59,7 +59,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |@microsoft.graph.bannerImageWebUrlContent|String|This annotation is used to send the image content in a multipart request.|
 |@microsoft.graph.bannerImageWebUrlContentError|String|If a failure occurs when you upload or persist the banner image during a **newsLinkPage** creation, the response contains `@microsoft.graph.bannerImageWebUrlContentError` that provides details about the error.|
 
-For a POST request example, see [Create newsLinkPage)](../api/newslinkpage-create.md).
+For a POST request example, see [Create newsLinkPage](../api/newslinkpage-create.md).
 
 ## Relationships
 
