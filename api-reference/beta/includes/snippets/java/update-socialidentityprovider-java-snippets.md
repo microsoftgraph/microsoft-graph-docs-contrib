@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
 identityProviderBase.setOdataType("#microsoft.graph.socialIdentityProvider");
-identityProviderBase.setClientSecret("1111111111111");
+identityProviderBase.setClientSecret("4294967296");
 IdentityProviderBase result = graphClient.identity().identityProviders().byIdentityProviderBaseId("{identityProviderBase-id}").patch(identityProviderBase);
 
 
