@@ -21,11 +21,11 @@ Represents the static set of electronically stored information collected for use
 |[List](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get a list of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects and their properties.|
 |[Create](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Create a new [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Get](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Read the properties and relationships of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from a [review set](../resources/security-ediscoveryreviewset.md).|
-|[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
+|[Export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from a [review set](../resources/security-ediscoveryreviewset.md).|
+|[AddToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
 |[List files](../api/security-ediscoveryreviewset-list-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Get the ediscoveryFile resources from the files navigation property.|
 |[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.|
-|[Create review set queries](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new ediscoveryReviewSetQuery object.|
+|[Create Reviewsetqueries](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new ediscoveryReviewSetQuery object.|
 
 ## Properties
 |Property|Type|Description|
