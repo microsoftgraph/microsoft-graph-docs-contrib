@@ -16,13 +16,13 @@ import (
 )
 
 requestBody := graphmodels.NewIdentityProviderBase()
-displayName := "Sign in with Apple"
+displayName := "Apple"
 requestBody.SetDisplayName(&displayName) 
-developerId := "UBF8T346G9"
+developerId := "qazx.1234"
 requestBody.SetDeveloperId(&developerId) 
-serviceId := "com.microsoft.rts.b2c.test.client"
+serviceId := "com.contoso.app"
 requestBody.SetServiceId(&serviceId) 
-keyId := "99P6D879C4"
+keyId := "4294967296"
 requestBody.SetKeyId(&keyId) 
 certificateData := "******"
 requestBody.SetCertificateData(&certificateData) 

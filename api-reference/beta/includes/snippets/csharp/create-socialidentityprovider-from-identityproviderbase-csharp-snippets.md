@@ -14,8 +14,8 @@ var requestBody = new SocialIdentityProvider
 	OdataType = "microsoft.graph.socialIdentityProvider",
 	DisplayName = "Login with Amazon",
 	IdentityProviderType = "Amazon",
-	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8",
-	ClientSecret = "000000000000",
+	ClientId = "00001111-aaaa-2222-bbbb-3333cccc4444",
+	ClientSecret = "42*****96",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

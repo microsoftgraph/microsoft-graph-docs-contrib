@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certifica
 
 ---
 
-
 ### Response
 
 The following example shows the response.

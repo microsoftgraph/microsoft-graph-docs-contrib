@@ -8,11 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
-identityProviderBase.setOdataType("#microsoft.graph.socialIdentityProvider");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("responseType", "id_token");
-identityProviderBase.setAdditionalData(additionalData);
+OpenIdConnectIdentityProvider identityProviderBase = new OpenIdConnectIdentityProvider();
+identityProviderBase.setOdataType("#microsoft.graph.openIdConnectIdentityProvider");
+identityProviderBase.setResponseType(EnumSet.of(OpenIdConnectResponseTypes.Id_token));
 IdentityProviderBase result = graphClient.identity().identityProviders().byIdentityProviderBaseId("{identityProviderBase-id}").patch(identityProviderBase);
 
 
