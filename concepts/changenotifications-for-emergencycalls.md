@@ -31,7 +31,7 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 
 To subscribe to when an applicable emergency call policy number is dialed, set the `resource` property in the subscription payload to `communications/calls/getEmergencyEventsByPolicy(policyName='{policyName}')` where the `{policyName}` field must be replaced with the policy name configured for your organization.
 
-Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#creating-a-subscription).
 
 Subscriptions for emergency call events expire after at most one day by default. To keep subscriptions for longer, update the **expirationDateTime** property of the subscription. For more information, see [Update subscription API](/graph/api/subscription-update).
 
