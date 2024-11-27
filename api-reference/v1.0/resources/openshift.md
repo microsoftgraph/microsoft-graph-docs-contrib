@@ -6,7 +6,6 @@ ms.date: 11/21/2024
 author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
 ---
 
 # openShift resource type
