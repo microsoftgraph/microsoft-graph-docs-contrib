@@ -36,7 +36,7 @@ Subscriptions for emergency call events only support rich notifications. Set `in
 Subscriptions for emergency call events have a max subscription life time of one day. To keep subscriptions for longer, update the **expirationDateTime** property of the subscription. For more information, see [Update subscription API](/graph/api/subscription-update).
 
 > [!NOTE]
-> Subscriptions are limited one subscription per application, per tenant, and per unique policy name combination. A second subscription that uses the same application, tenant, and emergency policy as another will fail with HTTP status code 409 designating that subscription request was duplicated and cannot be created.
+> Subscriptions are limited one subscription per combination of application, tenant, and policy name. A second subscription that uses the same application, tenant, and emergency policy as another will fail with the HTTP status code 409, meaning that the subscription request was duplicated and cannot be created.
 
 ### Subscription payload example
 
