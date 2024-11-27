@@ -5,6 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "cloud-pc"
+ms.date: 05/13/2024
 ---
 
 # Working with Windows 365 Cloud PCs using the Microsoft Graph API
