@@ -73,7 +73,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/bce9a3ca
 
 ---
 
-
 ### Response
 
 The following example shows the response.
