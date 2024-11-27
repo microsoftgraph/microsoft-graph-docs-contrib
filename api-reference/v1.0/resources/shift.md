@@ -6,7 +6,6 @@ author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 05/23/2024
 ---
 
 # shift resource type
@@ -26,7 +25,7 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 |[Get](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
 |[Replace](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
 |[Delete](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
-|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None                         | Stage the deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode.        |
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None | Stage the deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode. |
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
@@ -54,21 +53,15 @@ The following JSON representation shows the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.shift",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "draftShift": {"@odata.type": "microsoft.graph.shiftItem"},
+  "id": "String (identifier)",
+  "isStagedForDeletion": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "sharedShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "draftShift": {
-    "@odata.type": "microsoft.graph.shiftItem"
-  },
-  "userId": "String",
   "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+  "sharedShift": {"@odata.type": "microsoft.graph.shiftItem"},
+  "userId": "String"
 }
 ```
 
