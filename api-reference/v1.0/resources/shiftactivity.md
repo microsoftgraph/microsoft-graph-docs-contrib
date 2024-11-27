@@ -4,7 +4,7 @@ description: "Represents an activity in a shift."
 author: "aaku"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ms.date: 07/26/2024
 ---
 
@@ -36,11 +36,11 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.shiftActivity",
-  "isPaid": "Boolean",
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
   "code": "String",
   "displayName": "String",
+  "endDateTime": "String (timestamp)",
+  "isPaid": "Boolean",
+  "startDateTime": "String (timestamp)",
   "theme": "String"
 }
 ```
