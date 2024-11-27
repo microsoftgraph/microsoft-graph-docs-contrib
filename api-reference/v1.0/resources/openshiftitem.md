@@ -42,17 +42,13 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.openShiftItem",
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "theme": "String",
+  "activities": [{"@odata.type": "microsoft.graph.shiftActivity"}],
   "displayName": "String",
+  "endDateTime": "String (timestamp)",
   "notes": "String",
-  "activities": [
-    {
-      "@odata.type": "microsoft.graph.shiftActivity"
-    }
-  ],
-  "openSlotCount": "Integer"
+  "openSlotCount": "Int32",
+  "startDateTime": "String (timestamp)",
+  "theme": "String"
 }
 ```
 
