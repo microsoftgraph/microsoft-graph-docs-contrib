@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "arpitha-dhanapathi"
+ms.date: 04/03/2024
 ---
 
 # certification resource type

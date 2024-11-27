@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 09/12/2024
 ---
 
 # Create fileStorageContainer
@@ -143,9 +144,7 @@ Content-type: application/json
   "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false,
-    "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isOcrEnabled": true
   }
 }
 
