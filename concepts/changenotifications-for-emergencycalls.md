@@ -31,12 +31,12 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 
 To subscribe to when an emergency call policy number is dialed, set the `resource` property in the subscription payload to `communications/calls/getEmergencyEventsByPolicy(policyName='{policyName}')`, replacing the `{policyName}` field with the policy name configured for your organization.
 
-Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#creating-a-subscription).
+Subscriptions for emergency call events only support rich notifications. Set `includeResourceData` to `true` and provide base64 encoded certificate value for `encryptionCertificate` and a string identifier for `encryptionCertificateId`. For more information on creating subscriptions with rich notifications, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data).
 
-Subscriptions for emergency call events expire after at most one day by default. To keep subscriptions for longer, update the **expirationDateTime** property of the subscription. For more information, see [Update subscription API](/graph/api/subscription-update).
+Subscriptions for emergency call events have a max subscription life time of one day. To keep subscriptions for longer, update the **expirationDateTime** property of the subscription. For more information, see [Update subscription API](/graph/api/subscription-update).
 
 > [!NOTE]
-> Subscriptions are limited one subscription per application, per tenant, and per unique policy name. A duplicated subscription using the same application, tenant, and to the same emergency policy will fail with HTTP status code 409 designating that subscription request was duplicated and cannot be created.
+> Subscriptions are limited one subscription per application, per tenant, and per unique policy name combination. A second subscription that uses the same application, tenant, and emergency policy as another will fail with HTTP status code 409 designating that subscription request was duplicated and cannot be created.
 
 ### Subscription payload example
 
