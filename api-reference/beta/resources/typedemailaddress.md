@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: mail
 author: "kevinbellinger"
+ms.date: 04/03/2024
 ---
 
 # typedEmailAddress resource type

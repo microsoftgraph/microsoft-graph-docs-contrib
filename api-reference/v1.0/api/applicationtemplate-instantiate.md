@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: 'luleonpla'
 ms.subservice: 'entra-applications'
 doc_type: apiPageType
+ms.date: 10/24/2024
 ---
 
 # applicationTemplate: instantiate

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: resourcePageType
+ms.date: 10/18/2024
 ---
 
 # conversationMember resource type

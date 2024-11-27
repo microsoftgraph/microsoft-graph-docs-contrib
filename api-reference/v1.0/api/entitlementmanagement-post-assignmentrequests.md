@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.date: 10/15/2024
 ---
 # Create accessPackageAssignmentRequest
 
@@ -20,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "entitlementmanagement_post_assignmentrequests" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-assignmentrequests-permissions.md)]
+
+[!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
 
 ## HTTP request
 
@@ -927,5 +930,83 @@ Content-type: application/json
     "requestType": "userUpdate",
     "state": "submitted",
     "status": "Accepted"
+}
+```
+
+### Example 9: Request a package on behalf of a direct employee
+
+The following example shows how a manager can request an access package assignment on behalf of their direct employee.
+
+> [!NOTE]
+> The requestor (manager) is extracted from the token, and the target object is determined by the `id` of the direct employee who is receiving access.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_request_behalf"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+   "assignment": {
+       "accessPackageId": "5b98f958-0dea-4a5b-836e-109dccbd530c",
+       "schedule": {
+           "startDateTime": null,
+           "stopDateTime": null
+       },
+       "assignmentPolicyId": "c5f7847f-83a8-4315-a754-d94a6f39b875",
+       "target": {
+           "displayName": "Idris Ibrahim",
+           "email": "IdrisIbrahim@woodgrovebank.com",
+           "objectId": "21aceaba-fe13-4e3b-aa8c-4c588d5e7387",
+           "subjectType": "user"
+       }
+   },
+   "justification": "Access for direct employee",
+   "requestType": "UserAdd",
+   "answers": []
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "445a3118-6bf2-4a19-94ad-5660295963fd",
+    "requestType": "userAdd",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "answers": [],
+    "customExtensionCalloutInstances": []
 }
 ```
