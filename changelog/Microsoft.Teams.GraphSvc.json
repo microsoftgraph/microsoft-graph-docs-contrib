@@ -2443,22 +2443,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
           "Target": "aiInteractionHistory"
-        },
-        {
-          "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "copilot",
-          "ChangeType": "Addition",
-          "Description": "Added the [copilot](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "TeamsGraphSvc"
         }
       ],
       "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-11-24T07:19:22.6793915Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     }
   ]
 }
