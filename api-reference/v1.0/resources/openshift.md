@@ -58,20 +58,14 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.openShift",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "draftOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"},
+  "id": "String (identifier)",
+  "isStagedForDeletion": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "sharedOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
-  "draftOpenShift": {
-    "@odata.type": "microsoft.graph.openShiftItem"
-  },
   "schedulingGroupId": "String",
-  "isStagedForDeletion": "Boolean"
+  "sharedOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"}
 }
 ```
 
