@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/webSegmentConfiguration/applicationSegments
+GET https://graph.microsoft.com/beta//applications('129d6e80-484f-4d1f-bfca-a6a859d138ac')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/ApplicationSegments
 ```
 
 
@@ -86,15 +86,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.webApplicationSegment",
-      "id": "15cdc651-b0fc-e299-9820-5eba4187bba4",
-      "internalUrl": "String",
-      "externalUrl": "String",
-      "alternateUrl": "String"
-    }
-  ]
+    "value": [
+        {
+            "externalUrl": "https://channel1.contoso-proxy.contoso.com/",
+            "internalUrl": "https://contoso.com/",
+            "alternateUrl": "",
+            "id": "c8f0771c-3b7e-4bb0-a2b4-19e53366198c"
+        },
+        {
+            "externalUrl": "https://channel2.contoso-proxy.contoso.com/",
+            "internalUrl": "https://contoso.co/",
+            "alternateUrl": "",
+            "id": "209efffb-0777-42b0-a65c-4e3ddb1ab3c0"
+        }
+    ]
 }
 ```
 

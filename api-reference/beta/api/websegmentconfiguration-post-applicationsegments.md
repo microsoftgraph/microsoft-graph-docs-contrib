@@ -51,10 +51,12 @@ In the request body, supply a JSON representation of the [webApplicationSegment]
 
 You can specify the following properties when creating a **webApplicationSegment**.
 
-|alternateUrl|String|Required. If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
+|Property|Type|Description|
+|:---|:---|:---|
+|alternateUrl|String|Optional. If you're configuring a traffic manager in front of multiple app proxy application segments, this property contains the user-friendly URL that points to the traffic manager.|
 |externalUrl|String |Required. The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
 |internalUrl|String |Required. The internal URL of the application segment; for example, `https://intranet/`.|
-|corsConfigurations|[corsConfiguration_v2](corsconfiguration_v2.md) collection|Optional. A collection of CORS Rule definitions for a particular application segment.|
+|corsConfigurations|[corsConfiguration_v2](../resources/corsconfiguration_v2.md) collection|Optional. A collection of CORS Rule definitions for a particular application segment.|
 
 
 ## Response

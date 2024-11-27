@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/2709c601-fcff-4010-94ea-5f862f755568/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentId>
+GET https://graph.microsoft.com/beta/applications('129d6e80-484f-4d1f-bfca-a6a859d138ac')/OnPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/ApplicationSegments/209efffb-0777-42b0-a65c-4e3ddb1ab3c0
 ```
 
 
@@ -86,11 +86,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "<id>",
-  "externalUrl": "https://home.testinggs.com",
-  "internalUrl": "https://home.test.com",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('129d6e80-484f-4d1f-bfca-a6a859d138ac')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applications('')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments('')?$select=alternateUrl,externalUrl",
+  "externalUrl": "https://channel1.contoso-appproxy.contoso.com/",
+  "internalUrl": "https://contoso.com/",
   "alternateUrl": "",
-  "corsConfigurations": []
+  "id": "209efffb-0777-42b0-a65c-4e3ddb1ab3c0"
 }
 ```
 

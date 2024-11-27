@@ -86,14 +86,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('129d6e80-484f-4d1f-bfca-a6a859d138ac')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments('209efffb-0777-42b0-a65c-4e3ddb1ab3c0')/corsConfigurations",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applications('')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments('')/corsConfigurations?$select=allowedHeaders,allowedMethods",
     "value": [
         {
-            "id": "<id>",
+            "id": "779bdc5f-f621-4fcc-9177-81f45914b005",
             "resource": "/",
-            "allowedOrigins": "*",
-            "allowedHeaders": "*",
-            "allowedMethods": "*",
-            "maxAgeInSeconds": "3000"
+            "allowedOrigins": [
+                ""
+            ],
+            "allowedHeaders": [
+                ""
+            ],
+            "allowedMethods": [
+                ""
+            ],
+            "maxAgeInSeconds": 3000
+        },
+        {
+            "id": "5d06ebc0-4113-44c3-9089-05b0082e77f6",
+            "resource": "/here",
+            "allowedOrigins": [
+                ""
+            ],
+            "allowedHeaders": [
+                ""
+            ],
+            "allowedMethods": [
+                ""
+            ],
+            "maxAgeInSeconds": 4000
         }
     ]
 }

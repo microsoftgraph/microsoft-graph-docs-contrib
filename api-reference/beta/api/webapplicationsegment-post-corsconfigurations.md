@@ -53,11 +53,11 @@ You can specify the following properties when creating a **corsConfiguration_v2*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|resource|String|**TODO: Add Description** Required.|
-|allowedOrigins|String collection|**TODO: Add Description** Optional.|
-|allowedHeaders|String collection|**TODO: Add Description** Optional.|
-|allowedMethods|String collection|**TODO: Add Description** Optional.|
-|maxAgeInSeconds|Int32|**TODO: Add Description** Optional.|
+|resource|String|Resource within the application segment for which CORS permissions are granted. `/` grants permission for the whole app segment. Required.|
+|allowedOrigins|String collection|The origin domains that are permitted to make a request against the service via CORS. The origin domain is the domain from which the request originates. The origin must be an exact case-sensitive match with the origin that the user agent sends to the service. Optional.|
+|allowedHeaders|String collection|The request headers that the origin domain may specify on the CORS request. The wildcard character `*` indicates that any header beginning with the specified prefix is allowed. Optional.|
+|allowedMethods|String collection|The HTTP request methods that the origin domain may use for a CORS request. Optional.|
+|maxAgeInSeconds|Int32|The maximum amount of time that a browser should cache the response to the preflight **OPTIONS** request. Optional.|
 
 
 
@@ -76,22 +76,15 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{webApplicationSegment-id}/corsConfigurations
+POST https://graph.microsoft.com/beta/applications('129d6e80-484f-4d1f-bfca-a6a859d138ac')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/ApplicationSegments('209efffb-0777-42b0-a65c-4e3ddb1ab3c0')/corsConfigurations
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.corsConfiguration_v2",
-  "resource": "String",
-  "allowedOrigins": [
-    "String"
-  ],
-  "allowedHeaders": [
-    "String"
-  ],
-  "allowedMethods": [
-    "String"
-  ],
-  "maxAgeInSeconds": "Integer"
+  "allowedOrigins":[""],
+  "allowedHeaders":[""],
+  "allowedMethods":["*"],
+  "maxAgeInSeconds":"3000",
+  "resource":"/"
 }
 ```
 
@@ -111,19 +104,11 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.corsConfiguration_v2",
-  "id": "395c08a3-58b7-0b7a-f7b9-64af88bea09d",
-  "resource": "String",
-  "allowedOrigins": [
-    "String"
-  ],
-  "allowedHeaders": [
-    "String"
-  ],
-  "allowedMethods": [
-    "String"
-  ],
-  "maxAgeInSeconds": "Integer"
+  "allowedOrigins":[""],
+  "allowedHeaders":[""],
+  "allowedMethods":["*"],
+  "maxAgeInSeconds":"3000",
+  "resource":"/"
 }
 ```
 
