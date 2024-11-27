@@ -5,6 +5,7 @@ description: "Represents information about a deleted item in a recycleBin of a S
 ms.localizationpriority: "medium"
 doc_type: resourcePageType
 ms.subservice: "sharepoint"
+ms.date: 05/23/2024
 ---
 
 # recycleBinItem resource type

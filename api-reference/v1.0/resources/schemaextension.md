@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.subservice: extensions
 doc_type: resourcePageType
+ms.date: 04/17/2024
 ---
 
 # schemaExtension resource type (schema extensions)

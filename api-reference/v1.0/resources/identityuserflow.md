@@ -6,6 +6,7 @@ author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 toc.title: User flows in Azure AD B2C (deprecated)
+ms.date: 10/17/2024
 ---
 
 # identityUserFlow resource type
