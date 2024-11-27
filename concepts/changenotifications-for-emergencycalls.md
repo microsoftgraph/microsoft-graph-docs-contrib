@@ -16,7 +16,7 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 1.	The Teams tenant admin configures [emergency calling](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
 2.	The client application creates a Graph emergency call event subscription. 
 3.	The emergency call event notification is fired to the client application When a Teams user makes an emergency call (for example, 911) on Teams. 
-4.	The client application either [renews](/graph/api/subscription-update) the existing subscription before the expiry period or [creates](/graph/api/subscription-post-subscriptions) a new one after the expiry period to continue to subscribe to emergency call event notifications.
+4.	The client application either [renews](/graph/api/subscription-update) the existing subscription before it expires or [creates](/graph/api/subscription-post-subscriptions) a new one after it expires to continue to subscribe to emergency call event notifications.
 
 
 ## Permissions 
