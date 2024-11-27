@@ -54,12 +54,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.changeTrackedEntity",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
