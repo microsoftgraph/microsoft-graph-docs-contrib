@@ -5,8 +5,7 @@ ms.date: 11/21/2024
 author: "victorcheng"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-doc_type: resourcePageType_
-ms.date: 05/23/2024
+doc_type: resourcePageType
 ---
 
 # timeOff resource type
@@ -24,7 +23,7 @@ Represents a unit of non-work in a [schedule](../resources/schedule.md).
 |[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a **timeOff** object.|
 |[Delete](../api/timeoff-delete.md) | None | Delete a **timeOff** object from the schedule.|
-|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None    |Stage the deletion of a [timeOff](timeoff.md) in a [schedule](schedule.md) in draft mode.|
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None |Stage the deletion of a [timeOff](timeoff.md) in a [schedule](schedule.md) in draft mode.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
@@ -52,20 +51,14 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.timeOff",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "draftTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
+  "id": "String (identifier)",
+  "isStagedForDeletion": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "sharedTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "draftTimeOff": {
-    "@odata.type": "microsoft.graph.timeOffItem"
-  },
-  "userId": "String",
-  "isStagedForDeletion": "Boolean"
+  "sharedTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
+  "userId": "String"
 }
 ```
 
