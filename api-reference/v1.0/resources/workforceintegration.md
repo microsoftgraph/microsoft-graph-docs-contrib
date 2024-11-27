@@ -6,7 +6,6 @@ ms.date: 11/21/2024
 author: "victorcheng"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
 ---
 
 # workforceIntegration resource type
@@ -57,21 +56,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.workforceIntegration",
-  "id": "String (identifier)",
+  "apiVersion": "Int32",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "displayName": "String",
-  "apiVersion": "Integer",
-  "encryption": {
-    "@odata.type": "microsoft.graph.workforceIntegrationEncryption"
-  },
+  "eligibilityFilteringEnabledEntities": "String",
+  "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
+  "id": "String (identifier)",
   "isActive": "Boolean",
-  "url": "String",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
   "supportedEntities": "String",
-  "eligibilityFilteringEnabledEntities": "String"
+  "url": "String"
 }
 ```
 
