@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 10/22/2024
 ---
 
 # application: delta

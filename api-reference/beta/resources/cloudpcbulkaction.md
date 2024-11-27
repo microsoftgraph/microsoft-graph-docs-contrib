@@ -5,6 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcBulkAction resource type
