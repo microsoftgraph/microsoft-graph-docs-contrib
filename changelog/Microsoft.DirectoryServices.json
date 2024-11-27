@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **claimsMatchingExpression** property to the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) resource.",
           "Target": "federatedIdentityCredential"
+        },
+        {
+          "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
+          "ApiChange": "Property",
+          "ChangedApiName": "subject",
+          "ChangeType": "Change",
+          "Description": "Changed the **subject** property of the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-beta) resource from explicitly required. If the **claimsMatchingExpression** property for supporting flexible federated identity credentials is configured, this property must be empty.",
+          "Target": "federatedIdentityCredential"
         }
       ],
       "Id": "a7cfb7c0-e9b2-4bd9-a964-0c5cb902b29e",
