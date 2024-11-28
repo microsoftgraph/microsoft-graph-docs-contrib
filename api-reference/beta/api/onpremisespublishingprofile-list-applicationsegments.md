@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments
+GET https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments
 ```
 
 
@@ -87,19 +87,78 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.ipApplicationSegment",
-      "id": "9ceef8f4-7dff-803a-8046-a3fcb133dc1f",
-      "destinationHost": "String",
-      "destinationType": "String",
-      "port": "Integer",
-      "ports": [
-        "String"
-      ],
-      "protocol": "String"
-    }
-  ]
+"value": [
+        {
+            "destinationHost": "test-check-ch.contoso.com",
+            "destinationType": "fqdn",
+            "port": 0,
+            "ports": [
+                "20-20"
+            ],
+            "protocol": "tcp",
+            "id": "df8cb1a6-4bbf-4da3-8f85-fe2fc439ab80"
+        },
+        {
+            "destinationHost": "5.6.7.8/28",
+            "destinationType": "ipRangeCidr",
+            "port": 0,
+            "ports": [
+                "25-25"
+            ],
+            "protocol": "tcp,udp",
+            "id": "aab5b1be-40fd-43ef-92ae-1e86a696e686"
+        },
+        {
+            "destinationHost": "test.contoso",
+            "destinationType": "fqdn",
+            "port": 0,
+            "ports": [
+                "20-20"
+            ],
+            "protocol": "tcp",
+            "id": "55815c73-4c25-4b41-83c9-018dacf1edca"
+        },
+        {
+            "destinationHost": "2.2.2.2/20",
+            "destinationType": "ipRangeCidr",
+            "port": 0,
+            "ports": [
+                "443-443"
+            ],
+            "protocol": "tcp",
+            "id": "4f9ebb7f-545b-4b26-9c10-e47827e2421b"
+        },
+        {
+            "destinationHost": "10.10.10.10",
+            "destinationType": "ip",
+            "port": 0,
+            "ports": [
+                "9-9"
+            ],
+            "protocol": "tcp,udp",
+            "id": "95c92024-04e1-4569-bf9f-c2007afb04ba"
+        },
+        {
+            "destinationHost": "check.contoso.com",
+            "destinationType": "fqdn",
+            "port": 0,
+            "ports": [
+                "443-443"
+            ],
+            "protocol": "tcp",
+            "id": "f2b146fc-0a49-405b-9154-ad02b6b569fd"
+        },
+        {
+            "destinationHost": "test",
+            "destinationType": "fqdn",
+            "port": 0,
+            "ports": [
+                "20-20"
+            ],
+            "protocol": "tcp",
+            "id": "ce5ea5b9-c4f1-4734-9dae-8ee48c5b3de7"
+        }
+    ]
 }
 ```
 

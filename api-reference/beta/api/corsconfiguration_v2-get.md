@@ -92,7 +92,7 @@ Content-Type: application/json
     "allowedOrigins": ["*"],
     "allowedHeaders": ["*"],
     "allowedMethods": ["*"],
-    "maxAgeInSeconds": "3000"
+    "maxAgeInSeconds": 3000
 }
 ```
 

@@ -54,7 +54,7 @@ PATCH /applications/{applicationObjectId}/onPremisesPublishing/segmentsConfigura
 |:---|:---|:---|
 |destinationHost|String|Either the IP address, IP range, or FQDN of the **applicationSegment**, with or without wildcards. |
 |destinationType|privateNetworkDestinationType|The possible values are: `ipAddress`, `ipRange`, `ipRangeCidr`, `fqdn`, `dnsSuffix`. |
-|ports|Int32|List of ports supported for the application segment. |
+|ports|String collection|List of ports supported for the application segment. |
 |protocol|privateNetworkProtocol|Indicates the protocol of the network traffic acquired for the application segment. The possible values are: `tcp`, `udp`. |
 
 ## Response
