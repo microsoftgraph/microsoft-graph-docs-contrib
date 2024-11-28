@@ -20,13 +20,13 @@ Inherits from [segmentsConfiguration](segmentconfiguration.md).
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
+None.
 
 ## Relationships
 
-None.
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|applicationSegments|[webApplicationSegment](webapplicationsegment.md) collection|A collection of application segments for an on-premises wildcard application published through Microsoft Entra application proxy. It includes the internal URL, external URL, alternate URLs, and cors configurations. |
 
 ## JSON representation
 
