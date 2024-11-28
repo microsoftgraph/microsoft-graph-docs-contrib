@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/04/2024
+ms.date: 11/25/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -134,6 +134,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read all terms of use acceptance statuses | Read terms of use acceptance statuses that user can access |
 | Description | Allows the app to read terms of use acceptance statuses, without a signed in user. | Allows the app to read terms of use acceptance statuses on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### AiEnterpriseInteraction.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 859cceb9-2ec2-4e48-bcd7-b8490b5248a5 |
+| DisplayText | - | Read user AI enterprise interactions. |
+| Description | - | Allows the app to read user AI enterprise interactions, on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
 
 ---
 
@@ -1373,6 +1384,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### ConfigurationMonitoring.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | c645bb69-adc4-4242-b620-02e635f03bf6 |
+| DisplayText | - | Read all Configuration Monitoring entities |
+| Description | - | Allows the app to read all Configuration Monitoring entities on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### ConfigurationMonitoring.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 54505ce9-e719-41f7-a7cc-dbe114e1d811 |
+| DisplayText | - | Read and write all Configuration Monitoring entities |
+| Description | - | Allows the app to read and write all Configuration Monitoring entities on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
 ### ConsentRequest.Create
 
 | Category | Application | Delegated |
@@ -1477,6 +1510,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared contacts |
 | Description | - | Allows the app to create, read, update, and delete contacts a user has permissions to, including their own and shared contacts. |
 | AdminConsentRequired | - | No |
+
+---
+
+### CopilotSettings-LimitedMode.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | aeb2982d-632d-4155-b533-18756ab6fdd8 |
+| DisplayText | - | Read organization-wide copilot limited mode setting |
+| Description | - | Allows the app to read organization-wide copilot limited mode setting on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### CopilotSettings-LimitedMode.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 4704e5b2-0ada-4aa0-b18c-00ad7525bc06 |
+| DisplayText | - | Read and write organization-wide copilot limited mode setting |
+| Description | - | Allows the app to read and write organization-wide copilot limited mode setting on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -2556,6 +2611,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### FileIngestion.Ingest
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 65891b00-2fd9-4e33-be27-04a53132e3df | - |
+| DisplayText | Ingest SharePoint and OneDrive content to make it available in the search index | - |
+| Description | Allows the app to ingest SharePoint and OneDrive content to make it available in the search index, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### FileIngestionHybridOnboarding.Manage
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 766c601b-c009-4438-8290-c8b05fa00c4b | - |
+| DisplayText | Manage onboarding for a Hybrid Cloud tenant | - |
+| Description | Allows the app to manage onboarding for a Hybrid Cloud tenant, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### Files.Read
 
 | Category | Application | Delegated |
@@ -2659,6 +2736,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Access selected Files without a signed in user. | Access selected Files, on behalf of the signed-in user |
 | Description | Allow the application to access a subset of files without a signed in user.  The specific files and the permissions granted will be configured in SharePoint Online or OneDrive. | Allow the application to access files explicitly permissioned to the application on behalf of the signed in user.  The specific files and the permissions granted will be configured in SharePoint Online or OneDrive. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### FileStorageContainer.Manage.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 527b6d64-cdf5-4b8b-b336-4aa0b8ca2ce5 |
+| DisplayText | - | Manage all file storage containers |
+| Description | - | Allows the application to utilize the file storage container administration capabilities on behalf of an administrator user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -5311,6 +5399,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### RoleManagement.Read.Defender
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4d6e30d1-e64e-4ae7-bf9d-c706cc928cef | dd689728-6eb8-4deb-bd38-2924a935f3de |
+| DisplayText | Read M365 Defender RBAC configuration | Read M365 Defender RBAC configuration |
+| Description | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes reading M365 Defender role definitions and role assignments. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### RoleManagement.Read.Directory
 
 | Category | Application | Delegated |
@@ -5340,6 +5439,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 274d0592-d1b6-44bd-af1d-26d259bcb43a | 501d06f8-07b8-4f18-b5c6-c191a4af7a82 |
 | DisplayText | Read and write all Cloud PC RBAC settings | Read and write Cloud PC RBAC settings |
 | Description | Allows the app to read and manage the Cloud PC role-based access control (RBAC) settings, without a signed-in user. This includes reading and managing Cloud PC role definitions and memberships. | Allows the app to read and manage the Cloud PC role-based access control (RBAC) settings, on behalf of the signed-in user. This includes reading and managing Cloud PC role definitions and role assignments. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### RoleManagement.ReadWrite.Defender
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8b7e8c0a-7e9d-4049-97ec-04b5e1bcaf05 | d8914f8f-9f64-4bd1-b4d3-f5a701ed8457 |
+| DisplayText | Read M365 Defender RBAC configuration | Read M365 Defender RBAC configuration |
+| Description | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes reading M365 Defender role definitions and role assignments. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7304,6 +7414,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-Passkey.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 72e00c1d-3e3d-43bb-a0b9-c435611bb1d2 | 14195339-1fe4-48a7-a0d3-a39eb9fd8958 |
+| DisplayText | Read all users' passkey authentication methods | Read all users' passkey authentication methods |
+| Description | Allows the app to read passkey authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read passkey authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Passkey.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 0400e371-7db1-4338-a269-96069eb65227 | 64930478-d0ea-4671-ad72-fe0d9821df09 |
+| DisplayText | Read and write all users' passkey authentication methods | Read and write all users' passkey methods. |
+| Description | Allows the application to read and write passkey authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods | Allows the app to read and write passkey authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### UserNotification.ReadWrite.CreatedByApp
 
 | Category | Application | Delegated |
@@ -7510,6 +7642,7 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 
 | Name | ID | Display text | Description |
 |--|--|--|--|
+| AiEnterpriseInteraction.Read.User | 10d712aa-b4cd-4472-b0ba-6196e04c344f | Read user AI enterprise interactions. | Allows the app to read user AI enterprise interactions, without a signed-in user. |
 | Calls.AccessMedia.Chat | e716890c-c30a-4ac3-a0e3-551e7d9e8deb | Access media streams in calls associated with this chat or meeting | Allows the app to access media streams in calls associated with this chat or meeting, without a signed-in user. |
 | Calls.JoinGroupCalls.Chat | a01e73f1-94da-4f6d-9b73-02e4ea65560b | Join calls associated with this chat or meeting | Allows the app to join calls associated with this chat or meeting, without a signed-in user. |
 | Channel.Create.Group | 65af85d7-62bb-4339-a206-7160fd427454 | Create channels in this team | Allows the app to create channels in this team, without a signed-in user. |

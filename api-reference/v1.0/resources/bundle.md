@@ -5,6 +5,7 @@ description: Facet describing a driveItem that is a logical grouping of other dr
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 06/06/2024
 ---
 # bundle resource type
 

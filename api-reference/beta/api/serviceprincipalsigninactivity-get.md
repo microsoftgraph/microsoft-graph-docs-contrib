@@ -5,6 +5,7 @@ description: "Get a servicePrincipalSignInActivity object that contains sign-in 
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
+ms.date: 04/04/2024
 ---
 
 # Get servicePrincipalSignInActivity
