@@ -457,16 +457,16 @@
           "ApiChange": "Term",
           "ChangedApiName": "bannerImageWebUrlContent",
           "ChangeType": "Addition",
-          "Description": "Added the [bannerImageWebUrlContent](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "oneDrive"
+          "Description": "Added **bannerImageWebUrlContent** as an instance attribute that you can use with the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "bannerImageWebUrlContent"
         },
         {
           "Id": "b4c3291a-d779-4cd5-a8e2-7310bfa50196",
           "ApiChange": "Term",
           "ChangedApiName": "bannerImageWebUrlContentError",
           "ChangeType": "Addition",
-          "Description": "Added the [bannerImageWebUrlContentError](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "oneDrive"
+          "Description": "Added **bannerImageWebUrlContentError** as an instance attribute that you can use with the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "bannerImageWebUrlContentError"
         }
       ],
       "Id": "b4c3291a-d779-4cd5-a8e2-7310bfa50196",
