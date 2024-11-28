@@ -33,7 +33,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.onPremisesApplicationSegment",
+  "@odata.type": "microsoft.graph.webSegmentConfiguration",
   "baseType": "microsoft.graph.segmentConfiguration"
 }
 -->
