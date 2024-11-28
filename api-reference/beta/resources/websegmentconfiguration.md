@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy.
 
-Inherits from [segmentsConfiguration](segmentconfiguration.md).
+Inherits from [segmentConfiguration](segmentconfiguration.md).
 
 ## Properties
 

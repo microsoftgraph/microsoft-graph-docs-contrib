@@ -31,7 +31,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.segmentConfiguration"
+  "@odata.type": "microsoft.graph.segmentConfiguration",
+  "abstract": true
 }
 -->
 ``` json
