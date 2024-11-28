@@ -380,13 +380,6 @@ Content-type: application/json
 
 The following example shows a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_applemanagedidentityprovider_from_identityproviderbase",
-  "sampleKeys": ["Apple-Managed-OIDC"]
-}
--->
-
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/12345678-abcd-1234-cdef-aaaaaaaaaaaa
 ```
