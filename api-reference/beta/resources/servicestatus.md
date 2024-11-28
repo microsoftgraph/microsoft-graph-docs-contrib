@@ -67,6 +67,7 @@ The following scenarios describe when a service is locked with no change in prot
 #### restoreLocked
 
 When a tenant stays in the `protectionChangeLocked` status for 30 days, the status changes from `protectionChangeLocked` to `restoreLocked`. With this change, restore capabilities are blocked, and billing also stops. To resolve this issue, the tenant needs to follow the specific steps depending on the previous scenarios (1 or 2) it belongs to.
+
 ## Relationships
 
 None.
