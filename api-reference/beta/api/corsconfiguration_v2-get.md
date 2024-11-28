@@ -5,6 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 11/28/2024
 ---
 
 # Get corsConfiguration_v2
@@ -67,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/<ObjectId>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentid>/corsConfigurations/<id>
+GET https://graph.microsoft.com/beta/applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{segmentid}/corsConfigurations/{id}
 ```
 
 
@@ -88,9 +89,9 @@ Content-Type: application/json
 {
     "id": "<id>",
     "resource": "/",
-    "allowedOrigins": "*",
-    "allowedHeaders": "*",
-    "allowedMethods": "*",
+    "allowedOrigins": ["*"],
+    "allowedHeaders": ["*"],
+    "allowedMethods": ["*"],
     "maxAgeInSeconds": "3000"
 }
 ```

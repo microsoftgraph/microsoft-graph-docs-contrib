@@ -5,6 +5,7 @@ author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.date: 11/28/2024
 ---
 
 # Update corsConfiguration_v2
@@ -33,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /applications/{application-id}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}/corsConfigurations/{corsConfiguration_v2-Id}
+PATCH /applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{applicationSegment-id}/corsConfigurations/{corsConfiguration_v2-Id}
 ```
 
 ## Request headers
@@ -70,22 +71,22 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/applications/<ObjectId>/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/<segmentid>/corsConfigurations/<id>
+PATCH https://graph.microsoft.com/beta/applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{segmentid}/corsConfigurations/{id}
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.corsConfiguration_v2",
-  "resource": "String",
+  "resource": "/",
   "allowedOrigins": [
-    "String"
+    ""
   ],
   "allowedHeaders": [
-    "String"
+    ""
   ],
   "allowedMethods": [
-    "String"
+    ""
   ],
-  "maxAgeInSeconds": "Integer"
+  "maxAgeInSeconds": 3000
 }
 ```
 

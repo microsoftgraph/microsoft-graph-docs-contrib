@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "dhruvinrshah"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 07/26/2024
+ms.date: 11/28/2024
 ---
 
 # onPremisesPublishing resource type
@@ -32,7 +32,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |externalAuthenticationType|externalAuthenticationType| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Pass through doesn't require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
 |externalUrl|String| The published external URL for the application. For example, `https://intranet-contoso.msappproxy.net/`.  |
 |internalUrl|String| The internal url of the application. For example, `https://intranet/`. |
-|isAccessibleViaZTNAClient|Boolean|Indicates whether the application is accessible via a [Global Secure Access client](entra/global-secure-access/concept-clients) on a managed device.|
+|isAccessibleViaZTNAClient|Boolean|Indicates whether the application is accessible via a [Global Secure Access client](/entra/global-secure-access/concept-clients) on a managed device.|
 |isBackendCertificateValidationEnabled|Boolean| Indicates whether backend SSL certificate validation is enabled for the application. For all new Application Proxy apps, the property is set to `true` by default. For all existing apps, the property is set to `false`. |
 |isDnsResolutionEnabled|Boolean|Indicates Microsoft Entra Private Access should handle DNS resolution. `false` by default.|
 |isHttpOnlyCookieEnabled|Boolean| Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers. Set this value to `true` to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers. If using Remote Desktop Services, set this value to False. Default value is `false`. |
