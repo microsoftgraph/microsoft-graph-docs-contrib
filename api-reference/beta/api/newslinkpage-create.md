@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [newsLink
 
 ### Example 1: Create a news link page with only the required properties
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page using only the required properties.
+The following example shows how to create a [news link page](../resources/newslinkpage.md) using only the required properties.
 
 #### Request
 The following example shows a request.
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and using only required fields.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -135,7 +135,7 @@ Content-type: application/json
 
 ### Example 2: Create a news link page and upload the banner image file content
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) with a banner image. This requires a multipart request.
+The following example shows how to create a [news link page](../resources/newslinkpage.md) with a banner image. This process requires a multipart request.
 
 #### Request
 
