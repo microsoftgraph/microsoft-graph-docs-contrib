@@ -30,8 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported | Not supported |
 |Application | ChannelMember.Read.All | ChannelMember.ReadWrite.All |
 
+## Http request
 
-## Optional query parameters
+<!-- { "blockType" : "ignored" } -->
+
+### Optional query parameters
 
 This method supports the `$filter`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 objects respectively.
 
