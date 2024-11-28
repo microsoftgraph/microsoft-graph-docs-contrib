@@ -441,7 +441,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "newsLinkPage",
           "ChangeType": "Addition",
-          "Description": "Added the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource and associated methods.",
           "Target": "newsLinkPage"
         },
         {
@@ -472,7 +472,7 @@
       "Id": "b4c3291a-d779-4cd5-a8e2-7310bfa50196",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-08-08T20:39:16.9772979Z",
+      "CreatedDateTime": "2024-11-28T20:39:16.9772979Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },     
