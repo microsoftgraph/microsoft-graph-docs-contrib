@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "89864ae5-9d85-45d4-bd8e-600d1e604da2",
+          "ApiChange": "Method",
+          "ChangedApiName": "cloudPcProvisioningPolicySchedule",
+          "ChangeType": "Addition",
+          "Description": "Add the cloudPcProvisioningPolicySchedule method.",
+          "Target": "Cloud PC"
+        }
+      ],
+      "Id": "89864ae5-9d85-45d4-bd8e-600d1e604da2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-11-28T01:25:21.3434973Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
       "ChangeList": [
         {
           "Id": "ca7b3ead-9241-4b6c-a62b-dd911bcdd6fa",
