@@ -36,7 +36,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |bannerImageWebUrl|String|A link to the banner image for the **newsLinkPage**.|
 |createdBy|[identitySet](../resources/identityset.md)   | Identity of the creator of this **newsLinkPage**. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |createdDateTime|DateTimeOffset|The date and time when the **newsLinkPage** was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|description|String|The descriptive text for the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|description|String|The descriptive text for the **newsLinkPage**. The maximum length limit is 250 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |eTag|String|ETag for the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |id|String|The unique identifier of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the last modifier of this **newsLinkPage**. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
@@ -47,7 +47,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 |pageLayout|[pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)|The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`, `newsLink`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `newsLink`. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |parentReference|[itemReference](../resources/itemreference.md)|Parent information if the **newsLinkPage** has a parent. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |publishingState|[publicationFacet](../resources/publicationfacet.md)|The publishing status and the version of the page. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|title|String|Title of the **newsLinkPage**. The maximum length limit is 110 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
 |webUrl|String|URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 ### Instance attributes
