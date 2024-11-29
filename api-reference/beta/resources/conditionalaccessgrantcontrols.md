@@ -62,8 +62,7 @@ The following JSON representation shows the resource type.
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"],
-  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
+  "termsOfUse": ["String"]
 }
 ```
 
