@@ -20,6 +20,17 @@ Represents the storage account information that can be used to store a snapshot 
 |:---|:---|:---|
 |storageAccountId|String|The ID of the storage account.|
 |storageAccountName|String|The name of the storage account.|
+|accessTier|[cloudPcStorageAccountAccessTier](#cloudPcStorageAccountAccessTier-values)| Indicates the access tier of the storage account. Possible values are `hot`, `cool`, `premium` and `cold`, default value is `hot`.|
+
+### cloudPcStorageAccountAccessTier values
+
+|Member name|Description|
+|:---|:---|
+|hot|Indicates the storage account access tier is "hot", this tier is optimized for storing data that is accessed or modified frequently.|
+|cool|Indicates the storage account access tier is "cool", this tier is optimized for storing data that is infrequently accessed or modified.|
+|premium| Indicates the storage account access tier is "premium", this tier is optimized with low and consistent latency.|
+|cold|Indicates the storage account access tier is "cold", this tier is optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 None.
@@ -38,6 +49,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcForensicStorageAccount",
   "storageAccountId": "String",
-  "storageAccountName": "String"
+  "storageAccountName": "String",
+  "accessTier": "String"
 }
 ```
