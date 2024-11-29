@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Delete an [appRoleAssignment](../resources/approleassignment.md) that a [group](../resources/group.md) has been granted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
