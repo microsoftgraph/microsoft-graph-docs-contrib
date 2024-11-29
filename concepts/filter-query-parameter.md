@@ -240,9 +240,9 @@ The following article demonstrates the syntax for using the `$filter` OData quer
 
 | Operator               | Syntax                                                                                                                             |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `eq`                   | `~/users?$filter=userType eq 'Member'`                                                                                             |
+| `eq`                   | `~/users?$filter=userType eq 'Member'` <br><br> `~/groups?$filter=isAssignableToRole eq true`                                                                                            |
 | `not`                  | `~/users?$filter=not(userType eq 'Member')`<sup> [ ** ](#**) </sup>                                                                                       |
-| `ne`                   | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup>                                                                                             |
+| `ne`                   | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup> <br><br> `~/groups?$filter=isAssignableToRole ne true`<sup> [ ** ](#**) </sup>                                                                                            |
 | `startswith`           | `~/users?$filter=startswith(userPrincipalName, 'admin')`                                                                           |
 | `endswith`             | `~/users?$filter=endswith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                                                                                   |
 | `in`                   | `~/users?$filter=mail in ('mail1@domain.com', 'mail2@domain.com')`  <br/><br/> **Note:** For query strings using `in` operator, the request is limited to 15 expressions in the filter clause by default or a URL length of 2,048 characters when using [advanced query capabilities](./aad-advanced-queries.md).                                                                                          |
