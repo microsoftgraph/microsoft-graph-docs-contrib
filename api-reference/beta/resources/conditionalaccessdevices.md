@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "SanDeo-MSFT"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 11/29/2024
 ---
 
 # conditionalAccessDevices resource type
