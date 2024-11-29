@@ -374,12 +374,17 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Retrieve an **OpenID Connect identity provider** (external tenant)
+### Example 5: Retrieve an **OIDC identity provider** (External tenant)
 
 #### Request
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_oidcidentityprovider_from_identityproviderbase",
+}    
+-->
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/12345678-abcd-1234-cdef-aaaaaaaaaaaa
 ```
