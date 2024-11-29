@@ -1,6 +1,6 @@
 ---
 title: "Remove group owner"
-description: "Use this API to remove an owner from a Microsoft 365 group or a security group through the owners navigation property."
+description: "Remove an owner from a Microsoft 365 group or a security group through the owners navigation property."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+Remove an owner from a Microsoft 365 [group](../resources/group.md) or a security group through the **owners** navigation property. When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
