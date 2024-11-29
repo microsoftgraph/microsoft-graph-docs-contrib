@@ -30,7 +30,7 @@ Represents the storage account information that can be used to store a snapshot 
 |cool|Indicates the storage account access tier is "cool", this tier is optimized for storing data that is infrequently accessed or modified.|
 |premium| Indicates the storage account access tier is "premium", this tier is optimized with low and consistent latency.|
 |cold|Indicates the storage account access tier is "cold", this tier is optimized for storing data that is rarely accessed or modified, but still requires fast retrieval.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
