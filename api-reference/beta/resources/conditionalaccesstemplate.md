@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft recommended template of best practice configurations for Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md).
+Represents a Microsoft recommended template of best practice configurations for Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md). For more information, see [Conditional Access policy templates](/entra/identity/conditional-access/concept-conditional-access-policy-common).
 
 Inherits from [entity](../resources/entity.md).
 
