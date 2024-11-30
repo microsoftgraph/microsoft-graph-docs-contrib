@@ -5,6 +5,7 @@ author: "Ryan-K-Williams"
 ms.localizationpriority: medium
 ms.subservice: autopatch
 doc_type: resourcePageType
+ms.date: 09/16/2024
 ---
 
 # productRevision resource type
