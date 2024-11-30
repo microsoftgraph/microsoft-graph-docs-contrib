@@ -12,8 +12,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-
 Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
+
+Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 ## Methods
 
@@ -52,7 +53,8 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShift"
+  "@odata.type": "microsoft.graph.openShift",
+  "baseType": "microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
