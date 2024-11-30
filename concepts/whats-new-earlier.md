@@ -3629,10 +3629,10 @@ Add and manage the following additional properties in a user's [profile](/graph/
 
 
 ### Reports | Microsoft 365 usage reports
-Get [reports on Microsoft 365 apps usage](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta&preserve-view=true), specifically on user detail, user counts, and platform user counts.
+Get [reports on Microsoft 365 apps usage](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true#microsoft-365-apps-usage), specifically on user detail, user counts, and platform user counts.
 
 ### Teamwork
-Get [content hosted in a chat message](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true), such as images or code snippets. See an [example](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true#example-2-get-hosted-content-bytes-for-an-image) to get the content bytes of an image.
+Get [content hosted in a chat message](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-beta&preserve-view=true), such as images or code snippets. See an [example](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true#example-2-get-hosted-content-bytes-for-an-image) to get the content bytes of an image.
 
 ### To-do tasks
 - Debut of a new set of API for [Microsoft To Do](todo-concept-overview.md), allowing app users to organize and track personal tasks across Microsoft 365 client apps. See [Use the Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) for more information.
