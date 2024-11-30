@@ -44,7 +44,7 @@ POST /teamwork/workforceIntegrations
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of a [workforceIntegration](../resources/workforceintegration.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
