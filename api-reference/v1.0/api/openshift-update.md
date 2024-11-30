@@ -45,10 +45,10 @@ Provide the modified [openShift](../resources/openshift.md) object in the reques
 
 |Property|Type|Description|
 |:---|:---|:---|
-| draftOpenShift        | [openShiftItem](../resources/openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md). Either **draftOpenShift** or **sharedOpenShift** should be `null`|
-| isStagedForDeletion   | Boolean                           | The **openShift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).  Optional.   |
+| draftOpenShift        | [openShiftItem](../resources/openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they're [shared](../api/schedule-share.md). Either **draftOpenShift** or **sharedOpenShift** should be `null`.|
+| isStagedForDeletion   | Boolean                           | The **openShift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional.   |
 | schedulingGroupId     | String                            | The ID of the [schedulingGroup](../resources/schedulinggroup.md) that contains the **openShift**.  |
-| sharedOpenShift       | [openShiftItem](../resources/openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers. Either **draftOpenShift** or **sharedOpenShift** should be `null`|
+| sharedOpenShift       | [openShiftItem](../resources/openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers. Either **draftOpenShift** or **sharedOpenShift** should be `null`.|
 
 ## Response
 
@@ -60,8 +60,6 @@ If successful, this method returns a `200 OK` response code and an updated [open
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift",
@@ -69,36 +67,29 @@ The following example shows a request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
+PUT https://graph.microsoft.com/v1.0/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-Type: application/json
 
 {
-    "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
-    "sharedOpenShift": {
-                "displayName": null,
-                "startDateTime": "2024-11-04T20:00:00Z",
-                "endDateTime": "2024-11-04T21:00:00Z",
-                "theme": "blue",
-                "notes": null,
-                "openSlotCount": 1,
-                "activities": []
-            },
-    "draftTimeOff": null,
-    "isStagedForDeletion": false
+  "schedulingGroupId": "TAG_4ab7d329-1f7e-4eaf-ba93-63f1ff3f3c4a",
+  "sharedOpenShift": {
+    "displayName": null,
+    "startDateTime": "2024-11-04T20:00:00Z",
+    "endDateTime": "2024-11-04T21:00:00Z",
+    "theme": "blue",
+    "notes": null,
+    "openSlotCount": 1,
+    "activities": []
+  },
+  "draftTimeOff": null,
+  "isStagedForDeletion": false
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
