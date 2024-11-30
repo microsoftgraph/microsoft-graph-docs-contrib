@@ -861,7 +861,7 @@ items:
       href: ../../api/openshift-update.md
     - name: Delete
       href: ../../api/openshift-delete.md
-    - name: stageForDeletion
+    - name: Stage for deletion
       href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Open shift change request
     items:
@@ -1009,12 +1009,6 @@ items:
       href: ../../api/workingtimeschedule-endworkingtime.md
   - name: Complex types
     items:
-    - name: Change tracked entity
-      items:
-      - name: Change tracked entity
-        href: ../../resources/changetrackedentity.md
-      - name: Stage for deletion
-        href: ../../api/changetrackedentity-stagefordeletion.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
