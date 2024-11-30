@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents a single count of an [openShift](../resources/openshift.md).
 
+Inherits from [shiftItem](../resources/shiftitem.md).
+
 ## Properties
 
 | Property     | Type        | Description |
