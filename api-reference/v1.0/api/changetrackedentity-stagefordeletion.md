@@ -5,6 +5,7 @@ author: "raulfernandes"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # changeTrackedEntity: stageForDeletion
