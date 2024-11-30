@@ -861,6 +861,8 @@ items:
       href: ../../api/openshift-update.md
     - name: Delete
       href: ../../api/openshift-delete.md
+    - name: stageForDeletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Open shift change request
     items:
     - name: Open shift change request
@@ -913,6 +915,8 @@ items:
       href: ../../api/shift-put.md
     - name: Delete
       href: ../../api/shift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Shift preferences
     items:
     - name: Shift preferences
@@ -949,6 +953,8 @@ items:
       href: ../../api/timeoff-put.md
     - name: Delete
       href: ../../api/timeoff-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
   - name: Time off reason
     items:
     - name: Time off reason
@@ -1004,7 +1010,11 @@ items:
   - name: Complex types
     items:
     - name: Change tracked entity
-      href: ../../resources/changetrackedentity.md
+      items:
+      - name: Change tracked entity
+        href: ../../resources/changetrackedentity.md
+      - name: Stage for deletion
+        href: ../../api/changetrackedentity-stagefordeletion.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
