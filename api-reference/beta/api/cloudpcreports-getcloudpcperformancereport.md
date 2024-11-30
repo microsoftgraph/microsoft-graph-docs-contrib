@@ -5,6 +5,7 @@ author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.date: 11/30/2024
 ---
 
 # cloudPcReports: getCloudPCPerformanceReport
