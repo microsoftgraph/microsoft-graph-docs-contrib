@@ -41,7 +41,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Request body
 
-Provide the modified [openShift](../resources/openshift.md) object in the request body for this method.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
