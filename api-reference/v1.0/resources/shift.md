@@ -16,6 +16,8 @@ Represents a unit of scheduled work in a [schedule](schedule.md).
 
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
+Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -47,7 +49,8 @@ The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.shift",
+  "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
