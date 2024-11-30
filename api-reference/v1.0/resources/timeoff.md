@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents a unit of nonwork in a [schedule](../resources/schedule.md).
 
+Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
