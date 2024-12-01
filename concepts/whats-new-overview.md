@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## November 2024: New and generally available
 
+### Applications | Policies
+
+Use the **state** property on [keyCredentialConfiguration](/graph/api/resources/keycredentialconfiguration) and [passwordCredentialConfiguration](/graph/api/resources/passwordcredentialconfiguration) to indicate if a restriction is evaluated.
+
 ### Security | Alerts and incidents
 
 Enabled the `active`, `pendingApproval`, `declined`, `unremediated`, `running`, and `partiallyRemediated` statuses in the **evidenceRemediationStatus** enumeration. Use these new statuses via the **remediationStatus** property of the [alertEvidence](/graph/api/resources/security-alertevidence) and its inherited types.
@@ -74,7 +78,7 @@ The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to 
 
 ### Teamwork and communications | AI interactions
 
-Use the [getAllEnterpriseInteractions](/graph/api/aiInteractionHistory-getAllEnterpriseInteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
+Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
 
 ### Teamwork and communications | Calls and online meetings
 
