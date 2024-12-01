@@ -5,6 +5,7 @@ author: "mecampos"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
+ms.date: 05/31/2024
 ---
 
 # Create or update schema

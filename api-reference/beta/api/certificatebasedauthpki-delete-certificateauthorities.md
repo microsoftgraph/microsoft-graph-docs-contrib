@@ -93,7 +93,6 @@ DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certif
 
 ---
 
-
 ### Response
 
 The following example shows the response.
