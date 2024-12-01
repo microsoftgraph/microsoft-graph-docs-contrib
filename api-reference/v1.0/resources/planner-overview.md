@@ -77,7 +77,8 @@ Each resource has a unique etag. Etag values for different resources, including 
 The client apps are expected to handle versioning related [error codes](/graph/errors) `409` and `412` by reading the latest version of the item and resolving the conflicting changes.
 
 ## Planner change notifications
-An app may subscribe to [change notifications](/graph/change-notifications-overview) for all Planner resources. When a resource has changed, the app will receive a notification which includes the id of the resource which has changed and can use this to pull down the most recent version of the resource. For app developers needing to synchronize a copy of a tenant's Planner data to local storage this is the most efficient and recommended approach to avoid running into throttling limits.   
+
+An app may subscribe to [change notifications](/graph/change-notifications-overview) for all Planner resources. When a resource changes, the app receives a notification that includes the ID of the changed resource, which you can use to get the most recent version of the resource. For app developers who need to synchronize a copy of Planner data from a tenant to local storage, this is the most efficient and recommended approach to avoid running into throttling limits.  
 
 ## Common Planner error conditions
 
