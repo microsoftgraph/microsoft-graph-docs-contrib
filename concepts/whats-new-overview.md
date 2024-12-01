@@ -21,7 +21,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Applications | Policies
 
-Use the **state** property on [keyCredentialConfiguration](/graph/api/resources/keycredentialconfiguration) and [passwordCredentialConfiguration](/graph/api/resources/passwordcredentialconfiguration) to indicate if a restriction is evaluated.
+Use the **state** property on [keyCredentialConfiguration](/graph/api/resources/keycredentialconfiguration) and [passwordCredentialConfiguration](/graph/api/resources/passwordcredentialconfiguration) to indicate whether a restriction is evaluated.
 
 ### Security | Alerts and incidents
 
