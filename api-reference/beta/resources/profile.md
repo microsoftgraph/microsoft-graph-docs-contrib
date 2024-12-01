@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 Represents properties that are descriptive of a user in a tenant, for example, anniversaries and education activities. These properties are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph.
 
-Programmatically, these properties are expressed as [relationships](#relationships) of the **profile** resource. To get one of these navigation properties or create an instance of these properties for the user, use the corresponding GET or POST method on that property, where applicable. See the [methods](#methods) listed below.
+Programmatically, these properties are expressed as [relationships](#relationships) of the **profile** resource. To get one of these navigation properties or create an instance of these properties for the user, use the corresponding GET or POST method on that property, where applicable. For more details, see the [Methods](#methods) section.
 
-In addition to the properties and collections outlined in the Relationship section, there are additional collections and properties that are exclusively accessible to first-party applications, and they are not exposed on Microsoft Graph. These collections include, for example, the users pronouns.
+In addition to the navigation properties in the [Relationships](#relationships) section, other properties exclusive to first-party applications, such as user pronouns, aren't exposed on Microsoft Graph.
 
 ## Methods
 
