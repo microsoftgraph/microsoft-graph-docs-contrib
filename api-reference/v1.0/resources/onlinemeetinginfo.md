@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ananmishr"
 ms.subservice: "teams"
 doc_type: "resourcePageType"
+ms.date: 04/03/2024
 ---
 
 # onlineMeetingInfo resource type

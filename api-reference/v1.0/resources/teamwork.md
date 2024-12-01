@@ -5,6 +5,7 @@ author: "akumar39"
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.date: 08/14/2024
 ---
 
 # teamwork resource type

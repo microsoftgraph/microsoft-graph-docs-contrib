@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
 author: "DougKirschner"
+ms.date: 05/15/2024
 ---
 
 # scopedRoleMembership resource type
