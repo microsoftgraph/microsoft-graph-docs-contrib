@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 11/18/2024
+ms.date: 12/01/2024
 ---
 
 # What's new in Microsoft Graph
@@ -18,6 +18,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
 ## November 2024: New and generally available
+
+### Security | Alerts and incidents
+
+Enabled the `active`, `pendingApproval`, `declined`, `unremediated`, `running`, and `partiallyRemediated` statuses in the **evidenceRemediationStatus** enumeration. Use these new statuses via the **remediationStatus** property of the [alertEvidence](/graph/api/resources/security-alertevidence) and its inherited types.
 
 ### Security | Identities
 
