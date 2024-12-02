@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 12/02/2024
 ---
 
 # keyCredentialConfiguration resource type
