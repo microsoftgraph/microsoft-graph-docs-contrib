@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation isn't transitive.
+Get a list of the [group's](../resources/group.md) direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation isn't transitive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
