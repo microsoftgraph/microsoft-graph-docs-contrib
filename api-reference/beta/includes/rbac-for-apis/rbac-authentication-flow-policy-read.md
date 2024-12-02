@@ -13,4 +13,3 @@ In delegated scenarios with work or school accounts, the signed-in user must be 
 - Security Reader
 - Global Reader
 - Guest Inviter
-- Directory Reviewer
