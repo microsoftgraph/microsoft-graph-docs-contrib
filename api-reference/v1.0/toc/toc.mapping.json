@@ -1887,7 +1887,6 @@
             "workingTimeSchedule"
           ],
           "complexTypes": [
-            "changeTrackedEntity",
             "identity",
             "identitySet",
             "openShiftItem",

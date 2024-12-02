@@ -43,15 +43,14 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Request body
 
-In the request body, supply a modified JSON representation of a [timeOff](../resources/timeoff.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-| draftTimeOff		| [timeOffItem](../resources/timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either **draftOpenShift** or **sharedOpenShift** should be `null`|
+| draftTimeOff		| [timeOffItem](../resources/timeoffitem.md)        |The draft version of this **timeOff** item that is viewable by managers. It must be shared before it is visible to team members. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
 | isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). Optional|
-| sharedTimeOff 	| [timeOffItem](../resources/timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`|
+| sharedTimeOff 	| [timeOffItem](../resources/timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Either **draftOpenShift** or **sharedOpenShift** should be `null`. |
 | userId 			| String      |ID of the user assigned to the **timeOff**. Required.|
-
 
 ## Response
 
@@ -63,8 +62,6 @@ If successful, this method returns a `204 No Content` response code and empty co
 
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-put"
@@ -74,28 +71,21 @@ PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId
 Content-type: application/json
 
 {
-    "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
-    "sharedTimeOff": {
-        "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
-        "startDateTime": "2024-10-10T19:00:00Z",
-        "endDateTime": "2024-10-10T20:00:00Z",
-        "theme": "blue"
-    },
-    "draftTimeOff": null
+  "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",
+  "sharedTimeOff": {
+    "timeOffReasonId": "TOR_29a5ba96-c7ef-4e76-bec6-055323746314",
+    "startDateTime": "2024-10-10T19:00:00Z",
+    "endDateTime": "2024-10-10T20:00:00Z",
+    "theme": "blue"
+  },
+  "draftTimeOff": null
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

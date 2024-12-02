@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.date: 11/30/2024
 ---
 
 # Create openShift
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an instance of an [openshift](../resources/openshift.md) object.
+Create an instance of an [openShift](../resources/openshift.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
