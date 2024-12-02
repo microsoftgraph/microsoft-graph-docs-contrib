@@ -5,6 +5,7 @@ author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+ms.date: 03/06/2024
 ---
 
 # enumeratedDeviceRegistrationMembership resource type

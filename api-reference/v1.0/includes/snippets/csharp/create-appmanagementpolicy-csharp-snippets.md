@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AppManagementPolicy
 {
@@ -23,33 +24,81 @@ var requestBody = new AppManagementPolicy
 				RestrictionType = AppCredentialRestrictionType.PasswordAddition,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"state" , "enabled"
+					},
+				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
-				MaxLifetime = TimeSpan.Parse("P4DT12H30M5S"),
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"state" , "enabled"
+					},
+				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
 				MaxLifetime = null,
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"state" , "enabled"
+					},
+				},
 			},
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P4D"),
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"state" , "enabled"
+					},
+				},
 			},
 		},
 		KeyCredentials = new List<KeyCredentialConfiguration>
 		{
-			new KeyCredentialConfiguration
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
 			{
-				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P90D"),
-				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
+				"applicationRestrictions" , new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"identifierUris", new UntypedObject(new Dictionary<string, UntypedNode>
+						{
+							{
+								"nonDefaultUriAddition", new UntypedObject(new Dictionary<string, UntypedNode>
+								{
+									{
+										"state", new UntypedString("disabled")
+									},
+									{
+										"restrictForAppsCreatedAfterDateTime", new UntypedNull()
+									},
+									{
+										"excludeAppsReceivingV2Tokens", new UntypedBoolean(true)
+									},
+									{
+										"excludeSaml", new UntypedBoolean(true)
+									},
+								})
+							},
+						})
+					},
+				})
 			},
 		},
 	},

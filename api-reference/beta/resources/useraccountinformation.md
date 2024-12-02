@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
 doc_type: "resourcePageType"
+ms.date: 06/10/2024
 ---
 
 # userAccountInformation resource type

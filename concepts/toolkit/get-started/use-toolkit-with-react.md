@@ -4,6 +4,7 @@ description: "Get started using the Microsoft Graph Toolkit in a React applicati
 ms.localizationpriority: medium
 author: sebastienlevert
 zone_pivot_groups: mgt-version
+ms.date: 11/07/2024
 ---
 
 # Use the Microsoft Graph Toolkit with React

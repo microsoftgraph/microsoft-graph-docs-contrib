@@ -5,6 +5,7 @@ author: "yayang3"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+ms.date: 07/22/2024
 ---
 
 # cloudPcReviewStatus resource type

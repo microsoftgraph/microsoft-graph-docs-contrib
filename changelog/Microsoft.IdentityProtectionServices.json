@@ -3,6 +3,24 @@
       {
        "ChangeList": [
           {
+          "Id": "cd522691-2796-43e6-848d-6da72a8ccf4c",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalFilter** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessClientApplications?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessClientApplications"
+          }
+        ],
+        "Id": "cd522691-2796-43e6-848d-6da72a8ccf4c",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-11-29T22:19:32.3422617Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+      },
+    {
+       "ChangeList": [
+          {
           "Id": "972d6147-a658-4907-be86-4f346ad25e3b",
           "ApiChange": "Property",
           "ChangedApiName": "riskEventType",
