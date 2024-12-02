@@ -52,7 +52,7 @@ You can download or digitally sign the Contribution License Agreement (CLA) [her
 4. Copy your fork to your local machine. To do this, open GitBash. At the command prompt enter:
 
 ```cmd
-git clone https://github.com/{your user name}/microsoft-graph-docs.git
+git clone https://github.com/{your user name}/microsoft-graph-docs-contrib.git
 ```
 
 Next, create a reference to the root repository by entering these commands:
