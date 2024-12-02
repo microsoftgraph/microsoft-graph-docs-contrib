@@ -116,40 +116,41 @@ Content-type: application/json
 {
   "value": [
         {
-        "@odata.type": "#microsoft.graph.timeOff",
-        "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
-        "createdDateTime": "String (timestamp)",
-        "lastModifiedDateTime": "String (timestamp)",
-        "lastModifiedBy": {
-            "@odata.type": "microsoft.graph.identitySet"
-        },
-        "sharedTimeOff": {
-            "@odata.type": "microsoft.graph.timeOffItem"
-        },
-        "draftTimeOff": {
-            "@odata.type": "microsoft.graph.timeOffItem"
-        },
-        "userId": "String",
-        "isStagedForDeletion": "Boolean"
+            "id": "TOR_7e5935da-7031-4dc1-850b-7304dbb822af",
+            "createdDateTime": null,
+            "lastModifiedDateTime": "2024-11-29T07:46:02.635Z",
+            "displayName": "Parental Leave",
+            "iconType": "cake",
+            "isActive": false,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "24af8b1e-f894-491c-bde2-0c705ef3fbcd",
+                    "displayName": "John Doe",
+                    "userIdentityType": "aadUser",
+                    "tenantId": null
+                }
+            }
         },
         {
-        "@odata.type": "#microsoft.graph.timeOff",
-        "id": "d8aa6cc9-7a1a-fb34-ed9c-e1ac3dcd54c8",
-        "createdDateTime": "String (timestamp)",
-        "lastModifiedDateTime": "String (timestamp)",
-        "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-        },
-        "sharedTimeOff": {
-        "@odata.type": "microsoft.graph.timeOffItem"
-        },
-        "draftTimeOff": {
-        "@odata.type": "microsoft.graph.timeOffItem"
-        },
-        "userId": "String",
-        "isStagedForDeletion": "Boolean"
+            "id": "TOR_078523b9-8c8e-4a2b-8c20-3a3b52410975",
+            "createdDateTime": null,
+            "lastModifiedDateTime": "2024-11-29T07:34:58.879Z",
+            "displayName": "Sick Day",
+            "iconType": "doctor",
+            "isActive": false,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "24af8b1e-f894-491c-bde2-0c705ef3fbcd",
+                    "displayName": "John Doe",
+                    "userIdentityType": "aadUser",
+                    "tenantId": null
+                }
+            }
         }
-  ]
 }
 ```
 

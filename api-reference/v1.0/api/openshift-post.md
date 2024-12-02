@@ -43,7 +43,9 @@ POST /teams/{id}/schedule/openShifts
 
 ## Request body
 
-Provide the modified [openShift](../resources/openshift.md) object in the request body for this method.
+In the request body, supply a JSON representation of the modified [openShift](../resources/openshift.md) object.
+
+The following table lists the properties that you can use when you create an **openShift** object.
 
 |Property|Type|Description|
 |:---|:---|:---|

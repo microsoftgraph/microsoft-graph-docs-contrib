@@ -55,7 +55,7 @@ In the request body, supply a modified JSON representation of a [timeOff](../res
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
@@ -72,7 +72,6 @@ The following example shows a request.
 ```http
 PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId}
 Content-type: application/json
-Prefer: return=representation
 
 {
     "userId": "aa162a04-bec6-4b81-ba99-96caa7b2b24d",

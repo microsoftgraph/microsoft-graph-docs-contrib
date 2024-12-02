@@ -43,7 +43,10 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## Request body
 
-In the request body, supply a modified JSON representation of a [timeOff](../resources/timeoff.md) object.
+In the request body, supply a JSON representation of the modified [timeOff](../resources/timeoff.md) object.
+
+The following table lists the properties that you can use when you create an **TimeOff** object.
+
 
 |Property|Type|Description|
 |:---|:---|:---|

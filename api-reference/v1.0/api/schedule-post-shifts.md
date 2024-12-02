@@ -43,6 +43,10 @@ POST /teams/{teamId}/schedule/shifts
 
 ## Request body
 
+In the request body, supply a JSON representation of the modified [shift](../resources/shift.md) object.
+
+The following table lists the properties that you can use when you create an **Shift** object.
+
 |Property|Type|Description|
 |:---|:---|:---|
 | draftShift           | [shiftItem](../resources/shiftitem.md)     | Draft changes in the **shift**. Draft changes are only visible to managers. The changes are visible to employees when they're [shared](../api/schedule-share.md), which copies the changes from the **draftShift** to the **sharedShift** property. Eiher draShift or sharedShift should be null.|
