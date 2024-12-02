@@ -59,7 +59,7 @@ This resource supports:
 | Property.  | Type    |Description|
 |:---------------|:--------|:----------|
 |description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.|
+|displayName|String|Display name for the administrative unit. Maximum length is 256 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.|
 |id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
 |isMemberManagementRestricted|Boolean|`true` if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is `false`. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so can't be changed later. <br/><br/> For more information about working with restricted management administrative units, see [Restricted management administrative units in Microsoft Entra ID](/azure/active-directory/roles/admin-units-restricted-management).|
 | membershipRule | String | The dynamic membership rule for the administrative unit. For more information about the rules you can use for dynamic administrative units and dynamic groups, see [Manage rules for dynamic membership groups in Microsoft Entra ID](/entra/identity/users/groups-dynamic-membership). |
