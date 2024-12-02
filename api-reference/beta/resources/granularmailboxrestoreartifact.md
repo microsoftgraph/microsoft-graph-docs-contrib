@@ -33,7 +33,7 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |restoredFolderId|String|The new restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
-|restoredItemCount|Int32|Number of items that are being restored in the folder.|
+|restoredItemCount|Int32|The number of items that are being restored in the folder.|
 |searchResponseId|String|.|
 |startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
