@@ -1,18 +1,19 @@
 ---
 title: "group: assignLicense"
-description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
+description: "Add or remove licenses on a group. Licenses assigned to the group will be assigned to all users in the group."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: "apiPageType"
+ms.date: 10/15/2024
 ---
 
 # group: assignLicense
 
 Namespace: microsoft.graph
 
-Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. Group-based licensing is an alternative to [direct user licensing](../api/user-assignlicense.md). To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Add or remove licenses on a [group](../resources/group.md). Licenses assigned to the group will be assigned to all users in the group. Group-based licensing is an alternative to [direct user licensing](../api/user-assignlicense.md). To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](../resources/subscribedsku.md).
 

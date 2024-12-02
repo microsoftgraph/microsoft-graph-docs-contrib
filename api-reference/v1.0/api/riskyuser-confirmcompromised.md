@@ -5,6 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.date: 10/17/2024
 ---
 
 # riskyUser: confirmCompromised
@@ -47,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userIds|String collection|Specify the risky user IDs to dismiss in the request body.|
+|userIds|String collection|Specify the risky user IDs to mark as high risk.|
 
 
 

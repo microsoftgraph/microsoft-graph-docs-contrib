@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
+ms.date: 11/07/2024
 ---
 
 # Publish custom connectors to the Microsoft 365 admin center
