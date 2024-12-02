@@ -1,3 +1,4 @@
+---
 title: "Delete customAuthenticationExtension"
 description: "Delete a customAuthenticationExtension object."
 author: "AlexanderMars"
