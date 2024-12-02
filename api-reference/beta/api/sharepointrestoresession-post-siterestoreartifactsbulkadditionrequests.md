@@ -1,9 +1,9 @@
 ---
 title: "Create siteRestoreArtifactsBulkAdditionRequest"
-description: "Create a new siteRestoreArtifactsBulkAdditionRequest object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Create siteRestoreArtifactsBulkAdditionRequests for a SharePoint restore session."
+author: "vidula-verma"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
+Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+
+The inital status upon creation of restore session is 'active'. Once the restore session is created and activated, the status becomes 'completed'.
+In case of any failures encountered while resource resolution, the status of restore session becomes 'completedWithErrors'.
 
 ## Permissions
 
@@ -45,29 +48,23 @@ POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessio
 
 ## Request body
 
-In the request body, supply a JSON representation of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
-
-You can specify the following properties when creating a **siteRestoreArtifactsBulkAdditionRequest**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|status|restoreArtifactsBulkRequestStatus|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `unknown`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|restorePointPreference|restorePointPreference|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `latest`, `oldest`, `unknownFutureValue`. Optional.|
-|tags|restorePointTags|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `none`, `fastRestore`, `unknownFutureValue`. Optional.|
-|destinationType|destinationType|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`. Optional.|
-|protectionUnitIds|String collection|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|error|[publicError](../resources/publicerror.md)|**TODO: Add Description** Inherited from [restoreArtifactsBulkRequestBase](../resources/restoreartifactsbulkrequestbase.md). Optional.|
-|siteWebUrls|String collection|**TODO: Add Description** Optional.|
-|siteIds|String collection|**TODO: Add Description** Optional.|
-
-
+```json
+{
+    "displayName": "SPO-BulkRestoreArtifacts",
+    "siteWebUrls": [
+        "https: //contoso1.sharepoint.com",
+        "https: //contoso2.sharepoint.com",
+        "https: //contoso3.sharepoint.com"
+    ],
+    "protectionTimePeriod": {
+        "startDateTime": "2024-01-01T00:00:00Z",
+        "endDateTime": "2024-01-08T00:00:00Z"
+    },
+    "destinationType": "new",
+    "tags": "fastRestore",
+     "restorePointPreference": "latest"
+}
+```
 
 ## Response
 
@@ -78,48 +75,23 @@ If successful, this method returns a `201 Created` response code and a [siteRest
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_siterestoreartifactsbulkadditionrequest_from_"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.siteRestoreArtifactsBulkAdditionRequest",
-  "status": "String",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String",
-  "destinationType": "String",
-  "protectionUnitIds": [
-    "String"
-  ],
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "siteWebUrls": [
-    "String"
-  ],
-  "siteIds": [
-    "String"
-  ]
-}
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
 ```
+
+---
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,36 +103,26 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.siteRestoreArtifactsBulkAdditionRequest",
-  "id": "02a99482-7d96-2c8a-1193-d8e596d9de05",
-  "status": "String",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "protectionTimePeriod": {
-    "@odata.type": "microsoft.graph.timePeriod"
-  },
-  "restorePointPreference": "String",
-  "tags": "String",
-  "destinationType": "String",
-  "protectionUnitIds": [
-    "String"
-  ],
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "siteWebUrls": [
-    "String"
-  ],
-  "siteIds": [
-    "String"
-  ]
+    "@odata.context": "/solutions/backupRestore/$metadata#siteRestoreArtifactsBulkAdditionRequest/$entity",
+  	"id": "4437afcf-e520-463c-90a7-ca96401d8039",    
+    "destinationType": "new",
+    "tags": "fastRestore",
+    "restorePointPreference": "latest"
+    "displayName": "Site-BulkRestore-1",
+    "status": "Active",
+    "restoreSessionId": "d8078599-3b3c-468d-b6ff-adf161a42760",
+    "createdDateTime": "2023-09-29T10:36:44.4021389+00:00",      
+    "lastModifiedDateTime": "2023-09-29T10:36:44.4021389+00:00",
+    "siteWebUrls": []
+    "protectionTimePeriod": {
+         "startDateTime": "2024-01-01T00:00:00Z",
+         "endDateTime": "2024-01-08T00:00:00Z"
+    },
+    "createdBy": "",
+    "lastModifiedBy": "",
+    "error": {
+		  "isRequestError": false
+	  },
+	  "errors": []
 }
 ```
-
