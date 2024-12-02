@@ -5,6 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 09/26/2024
 ---
 
 # Update fileStoreContainer permission
@@ -12,7 +13,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update an existing [permission](../resources/permission.md) on a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the permission resource. Only the **roles** property can be updated. One role per user is supported. A new ID is generated for the updated permissions object.
+Update an existing [permission](../resources/permission.md) on a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the permission resource. Only the **roles** property can be updated. One role per user is supported.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

@@ -5,6 +5,7 @@ author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+ms.date: 08/15/2024
 ---
 
 # openIdConnectSetting resource type

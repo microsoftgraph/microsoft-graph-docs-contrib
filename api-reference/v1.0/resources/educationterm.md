@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
+ms.date: 04/03/2024
 ---
 
 # educationTerm resource type

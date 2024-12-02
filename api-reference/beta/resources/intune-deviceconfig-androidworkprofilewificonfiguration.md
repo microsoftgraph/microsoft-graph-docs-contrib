@@ -5,6 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
+ms.date: 09/13/2024
 ---
 
 # androidWorkProfileWiFiConfiguration resource type
@@ -43,11 +44,15 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|networkName|String|Network Name|
+|networkName|String|The name of the Wi-Fi network.|
 |ssid|String|This is the name of the Wi-Fi network that is broadcast to all devices.|
-|connectAutomatically|Boolean|Connect automatically when this network is in range. Setting this to true will skip the user prompt and automatically connect the device to Wi-Fi network.|
-|connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices.|
-|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
+|connectAutomatically|Boolean|When set to true, device will connect automatically to the Wi-Fi network when in range, skipping the user prompt. When false, user will need to connect manually through Settings on the Android device. Default value is false.|
+|connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices. When false, device will not automatically connect to hidden networks. Default value is false.|
+|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|The possible security types for Android Wi-Fi profiles. Default value Open, indicates no authentication required for the network. The security protocols supported are WEP, WPA and WPA2. WpaEnterprise and Wpa2Enterprise options are available for Enterprise Wi-Fi profiles. Wep and WpaPersonal (supports WPA and WPA2) options are available for Basic Wi-Fi profiles. Possible values are: `open`, `wpaEnterprise`, `wpa2Enterprise`, `wep`, `wpaPersonal`, `unknownFutureValue`.|
+|preSharedKey|String|Specify the pre-shared key for a WEP or WPA personal Wi-Fi network. Restrictions depend on the value set for wiFiSecurityType. If WEP type security is used, then preSharedKey must be a valid passphrase (5 or 13 characters) or a valid HEX key (10 or 26 hexidecimal characters). If WPA security type is used, then preSharedKey can be any string between 8 and 64 characters long.|
+|preSharedKeyIsSet|Boolean|When set to true, indicates that the pre-shared key is configured. When set to false, indicates that pre-shared key is not configured (any values set for preSharedKey will be ignored). Default value is false.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Proxy Type for this Wi-Fi connection. Possible values are: `none`, `manual`, `automatic`, `unknownFutureValue`.|
+|proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -106,6 +111,10 @@ Here is a JSON representation of the resource.
   "ssid": "String",
   "connectAutomatically": true,
   "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "String"
+  "wiFiSecurityType": "String",
+  "preSharedKey": "String",
+  "preSharedKeyIsSet": true,
+  "proxySettings": "String",
+  "proxyAutomaticConfigurationUrl": "String"
 }
 ```

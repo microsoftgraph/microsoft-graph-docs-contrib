@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 doc_type: conceptual
+ms.date: 11/07/2024
 ---
 
 # Major services and features in Microsoft Graph

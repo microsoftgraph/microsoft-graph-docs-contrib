@@ -54,9 +54,9 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: Get relying party detailed dummary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: App credential sign in activity
+    - name: App credential sign-in activity
       items:
-      - name: App credential sign in activity
+      - name: App credential sign-in activity
         href: ../../resources/appcredentialsigninactivity.md
       - name: List
         href: ../../api/reportroot-list-appcredentialsigninactivities.md
@@ -212,6 +212,22 @@ items:
             href: ../../resources/azureadauthentication.md
           - name: Get SLA attainment
             href: ../../api/azureadauthentication-get.md
+      - name: Service activity
+        items:
+        - name: Service activity
+          items:
+          - name: Service activity
+            href: ../../resources/serviceactivity.md
+          - name: Get MFA sign-in success metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
+          - name: Get MFA sign-in failure metrics
+            href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
+          - name: Get managed devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+          - name: Get compliant devices Conditional Access sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+          - name: Get SAML sign-in metrics
+            href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
       - name: Health monitoring
         items:
         - name: Overview
