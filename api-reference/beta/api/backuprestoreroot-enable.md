@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -47,7 +45,7 @@ In the request body, supply a JSON representation of the following parameter.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|appOwnerTenantId|String|The ID of the tenant in which this application is registered. Required.|
+|appOwnerTenantId|String|The ID of the owning tenant in which the billing profile is created.|
 
 ## Response
 
@@ -58,6 +56,7 @@ If successful, this action returns a `200 OK` response code and a [serviceStatus
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -65,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/enable
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/enable
 
 {
     "appOwnerTenantId": "23014d8c-71fe-4d00-a01a-31850bc5b42a"
@@ -135,4 +134,3 @@ HTTP/1.1 200 OK
     "lastModifiedDateTime":"2023-06-19T12:01:03.45Z"
 }
 ```
-
