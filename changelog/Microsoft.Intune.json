@@ -3849,7 +3849,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summarizeDeviceRemoteConnection",
           "ChangeType": "Deprecation",
-          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) function.",
+          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) method.",
           "Target": "summarizeDeviceRemoteConnection"
         }
       ],
