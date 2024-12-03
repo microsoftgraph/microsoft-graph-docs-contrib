@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateCRLValidationConfigurationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateCRLValidationConfigurationState** enumeration type.",
+          "Target": "x509CertificateCRLValidationConfigurationState"
+        },
+        {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateCRLValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateCRLValidationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCRLValidationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateCRLValidationConfiguration"
+        },
+        {
+          "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+          "ApiChange": "Property",
+          "ChangedApiName": "crlValidationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **crlValidationConfiguration** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "2cbecfbd-2d27-4fb9-bef3-294d2bb54e41",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-03T22:45:55.1918452Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",

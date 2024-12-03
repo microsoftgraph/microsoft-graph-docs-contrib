@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
+|crlValidationConfiguration|[x509CertificateCrlValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA does not have a valid certificate revocation list configured. |
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The identifier for the authentication method policy. The value is always `X509Certificate`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). |
 |issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
@@ -73,6 +74,9 @@ The following is a JSON representation of the resource.
   },
   "issuerHintsConfiguration": {
     "@odata.type": "microsoft.graph.x509CertificateIssuerHintsConfiguration"
+  },
+  "crlValidationConfiguration": {
+    "@odata.type": "microsoft.graph.x509CertificateCrlValidationConfiguration"
   }
 }
 ```
