@@ -60,14 +60,14 @@ Represents the tenant-level service status of the backup service.
 
 #### protectionChangeLocked
 
-The following scenarios describe when a service is locked with no change in protection allowed:
+A service is locked with no change in protection allowed in the following scenarios:
 
-- **Scenario 1**: Tenant has no active service apps. If no active service apps are found for the tenant, the feature status of the tenant changes from `enabled` to `protectionChangeLocked`. To resolve this issue, the tenant needs to activate a service app and call the [enable](../api/backuprestoreroot-enable.md) API.
-- **Scenario 2**: Tenant has an unhealthy billing profile. When an unhealthy billing profile is found for a tenant, the feature status is automatically moved from `enabled` to `protectionChangeLocked`, and the policies are deactivated right away. To resolve this issue, the tenant needs to update the billing profile with a healthy one and wait for 24-48 hours for the changes to take effect.
+- The tenant has no active service apps. If no active service apps are found for the tenant, the feature status of the tenant changes from `enabled` to `protectionChangeLocked`. To resolve this issue, the tenant needs to activate a service app and call the [enable](../api/backuprestoreroot-enable.md) API.
+- The tenant has an unhealthy billing profile. When an unhealthy billing profile is found for a tenant, the feature status is automatically moved from `enabled` to `protectionChangeLocked`, and the policies are deactivated right away. To resolve this issue, the tenant needs to update the billing profile with a healthy one and wait for 24-48 hours for the changes to take effect.
 
 #### restoreLocked
 
-When a tenant stays in the `protectionChangeLocked` status for 30 days, the status changes from `protectionChangeLocked` to `restoreLocked`. With this change, restore capabilities are blocked, and billing also stops. To resolve this issue, the tenant needs to follow the specific steps depending on the previous scenarios (1 or 2) it belongs to.
+When a tenant stays in the `protectionChangeLocked` status for 30 days, the status changes from `protectionChangeLocked` to `restoreLocked`. With this change, restore capabilities are blocked, and billing also stops. To resolve this issue, the tenant needs to follow the steps to resolve the issue based on the scenarios described in [protectionChangeLocked](#protectionchangelocked).
 
 ## Relationships
 
