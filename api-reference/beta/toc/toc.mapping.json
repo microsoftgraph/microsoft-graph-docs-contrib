@@ -2292,13 +2292,6 @@
                   ]
                 },
                 {
-                  "name": "Microsoft 365 monitoring (preview)",
-                  "overview": "../../resources/m365-monitoring-api-overview.md",
-                  "resources": [
-                    "serviceActivity"
-                  ]
-                },
-                {
                   "name": "Microsoft Entra Health (preview)",
                   "childNodes": [
                     {
@@ -2387,6 +2380,13 @@
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
             "microsoft.graph.partners.billing.unbilledUsage"
+          ]
+        },
+        {
+          "name": "Microsoft 365 monitoring reports",
+          "overview": "../../resources/m365-monitoring-api-overview.md",
+          "resources": [
+            "serviceActivity"
           ]
         }
       ]
