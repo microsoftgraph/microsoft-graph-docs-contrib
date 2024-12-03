@@ -196,4 +196,21 @@ Content-Type: application/json
     ]
 }
 ```
+### Request
+The following example shows a request.
+
+``` http
+GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b6f72954-c7d0-414c-ad50-00167216cb03/tags/318f79767abf4b8fab4d8e37b3174c5a/childTags
+
+### Response
+The following example shows the response.
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.ediscoveryReviewTag)",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/cases/ediscoveryCases('<guid>')/tags('<guid>')/childTags?$select=childSelectability",
+    "value": []
+}
+```
+
+
 

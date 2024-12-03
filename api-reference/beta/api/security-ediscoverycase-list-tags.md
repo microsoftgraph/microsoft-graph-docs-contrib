@@ -24,10 +24,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
@@ -48,12 +44,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_ediscoveryreviewtag_and_properties"
-}
--->
 ``` http
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 ```
@@ -94,13 +84,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
