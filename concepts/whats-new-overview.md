@@ -67,6 +67,9 @@ The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to 
 - [discoveredCloudAppDevice](/graph/api/resources/security-discoveredcloudappdevice?view=graph-rest-beta&preserve-view=true)
 - [endpointDiscoveredCloudAppDetail](/graph/api/resources/security-endpointdiscoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
 
+### Security | eDiscovery
+- Added application authentication for Microsoft Purview eDiscovery Graph APIs. For more information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
+
 ### Teamwork and communications | AI interactions
 
 Use the [getAllEnterpriseInteractions](/graph/api/aiInteractionHistory-getAllEnterpriseInteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
