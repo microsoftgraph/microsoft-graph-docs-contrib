@@ -1,6 +1,6 @@
 ---
-title: "Setting up app-only access for eDiscovery Microsoft Graph APIs"
-description: "Steps to set up app-only access for eDiscovery Microsoft Graph APIs."
+title: "Set up app-only access for Microsoft Purview eDiscovery by using Microsoft Graph APIs"
+description: "Follow the steps to set up app-only access for eDiscovery Microsoft Graph APIs."
 author: "pamehra"
 ms.localizationpriority: high
 ms.subservice: "security"
@@ -8,35 +8,35 @@ ms.custom: scenarios:getting-started
 ms.date: 11/14/2024
 ---
 
-# Setting up app-only access for Purview eDiscovery with Microsoft Graph API
+# Set up app-only access for Microsoft Purview eDiscovery 
 
-The Microsoft Purview Microsoft Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
+The Microsoft Purview APIs for eDiscovery in Microsoft Graph enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require.
 
-Implement app-only access using Microsoft Graph API to ensure secure and efficient access to needed resources. This step-by-step guide walks you through setting up app-only access for Purview eDiscovery, ensuring your applications are compliant and secure.
+To better ensure secure and efficient access to resources, you can implement app-only access by using the Microsoft Graph API. This article walks you through how to set up app-only access for Microsoft Purview eDiscovery to help ensure that your applications are compliant and secure.
 
 ## Why app-only access?
 
 ### Enhancing security and compliance
 
-App-only access enhances the security landscape of Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using application (client) IDs and certificates for authentication, we minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only secures the application against unauthorized access but also ensures that the data integrity is maintained during the eDiscovery process.
+App-only access enhances the security landscape of Microsoft Purview eDiscovery by implementing robust authentication protocols that standard user credentials can't match. By using application (client) IDs and certificates for authentication, you minimize the risk of credential theft, which is a common vulnerability in standard authentication methods. This approach not only helps to secure the application against unauthorized access, but also better ensures that the data integrity is maintained during the eDiscovery process.
 
 ### Streamlining access and integration
 
 App-only access streamlines the integration of eDiscovery services with other applications and systems. It facilitates automated, script-based interactions that are crucial for large-scale legal investigations and compliance audits. By allowing secure, token-based access to eDiscovery resources, organizations can automate workflows, reduce manual errors, and ensure consistent enforcement of compliance policies across all digital environments.
 
-## Implementing app-only access
+## Implement app-only access
 
 Implementing app-only access involves registering the app in Azure portal, creating client secret/certificates, assigning API permissions, setting up a service principal, and then using app-only access to call Microsoft Graph APIs. The following steps explain how to implement app-only access.
 
 ### Step 1: Register a new application in Azure
 
-1. To begin, navigate to the Azure portal and sign in with your Microsoft account.
+1. Go to the Azure portal and sign in with your Microsoft account.
 
-2. Select **Microsoft Entra ID** on the left side of the Azure portal.
+2. On the left pane of the Azure portal, select **Microsoft Entra ID**.
 
-3. Expand **App registrations** on the left side of the Azure portal and select **New registration**.
+3. On the left pane, expand **App registrations**, and select **New registration**.
 
-4. Provide a meaningful name for your application and select register to create your new app registration. This process will generate essential details such as the Application (client) ID and Directory (tenant) ID, which are crucial for future steps.
+4. Provide a meaningful name for your application and select **Register** to create your new app registration. This process generates essential details such as the Application (client) ID and Directory (tenant) ID, which are important for the next steps.
 
 You can now see the newly created app registration and the details.
 
@@ -44,9 +44,9 @@ You can now see the newly created app registration and the details.
 
 ### Step 2: Create client secrets or certificates
 
-Now that your app is registered, expand **Manage** on the left of the Azure portal, then select **Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
+Now that your app is registered, on the left pane in the Azure portal, expand **Manage**, and then select **Certificates & secrets**. Here, you can create a client secret or upload a certificate, depending on your authentication needs:
 
-For a client secret, select **New client secret**, add a description, and select **Add** to save it. Make sure to copy and securely store the secret value for authentication later. Otherwise, you may have to create a new secret.
+For a client secret, select **New client secret**, add a description, and select **Add** to save it. Make sure to copy and securely store the secret value for authentication later. Otherwise, you might have to create a new secret.
 
 You can optionally upload a certificate to use along with the application ID for automation purposes.
 
@@ -60,11 +60,11 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ### Step 4: Set up a service principal
 
-1. In **Microsoft Entra ID** on the left of the Azure portal, select **Enterprise Applications** and search for your application by name to get the **Object ID** for your application.
+1. On the left pane in the Azure portal, in **Microsoft Entra ID**, select **Enterprise Applications** and search for your application by name to get the **Object ID** for your application.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
-2. Open a new PowerShell session. Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The Install-Module cmdlet recommends upgrading the package if the module is already installed.
+2. Open a new PowerShell session. Install and import the [ExchangeOnlineManagement](https://www.powershellgallery.com/packages/ExchangeOnlineManagement) module using the following cmdlets. The `Install-Module` cmdlet recommends upgrading the package if the module is already installed.
 
     ```powershell
     Install-Module ExchangeOnlineManagement
@@ -72,7 +72,7 @@ You need to set the correct API permissions for your application. Expand **Manag
     Connect-IPPSSession
     ```
 
-3. Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
+3. Use the [New-ServicePrincipal](/powershell/module/exchange/new-serviceprincipal) cmdlet to create a service principal with your app's details and verify it by using [Get-ServicePrincipal](/powershell/module/exchange/get-serviceprincipal) cmdlet.  
   
     Run the following cmdlets, replacing the **AppId**, **ObjectId**, and **DisplayName** arguments in the first cmdlet.
 
@@ -81,7 +81,7 @@ You need to set the correct API permissions for your application. Expand **Manag
     Get-ServicePrincipal
     ```
 
-4. Add the Service Principal Object ID to the eDiscoveryManager role using [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify using [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
+4. Add the Service Principal Object ID to the eDiscoveryManager role by using the [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember) cmdlet and verify by using the [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet.
 
     Run the following cmdlets, replacing the **Member** argument in the first cmdlet.
 
@@ -90,7 +90,7 @@ You need to set the correct API permissions for your application. Expand **Manag
     Get-RoleGroupMember -Identity "eDiscoveryManager"
     ```
 
-5. Add the Service Principal Object ID to the eDiscoveryAdministrator role using [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify using [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
+5. Add the Service Principal Object ID to the eDiscoveryAdministrator role by using the [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) cmdlet and verify by using the [Get-eDiscoveryCaseAdmin](/powershell/module/exchange/get-ediscoverycaseadmin) cmdlet.
 
     Run the following cmdlets, replacing the **User** argument in the first cmdlet.
 
@@ -105,12 +105,12 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 Use the [Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph) cmdlet to authenticate and connect to Microsoft Graph using the app-only access method in PowerShell. This setup enables your app to interact with Microsoft Graph securely.
 
-### Step 6: Invoke Microsoft Graph API Requests
+### Step 6: Invoke Microsoft Graph API requests
 
-Once connected, you can start making calls to the Microsoft Graph API using the [Invoke-MgGraphRequest](/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest) cmdlet. This cmdlet allows you to perform various operations required by eDiscovery services in your organization.
+After you're connected, you can start making calls to the Microsoft Graph API by using the [Invoke-MgGraphRequest](/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest) cmdlet. This cmdlet allows you to perform various operations required by eDiscovery services in your organization.
 
 ## Related content
 
 Explore [Microsoft Graph tutorials](/graph/tutorials) to create basic applications that access data in app-only scenarios. For more information about app-only authentication, see [Get access without a user](/graph/auth-v2-service)
 
-For API testing on Postman, see [Use Postman with the Microsoft Graph API](/graph/use-postman).
+To test APIs on Postman, see [Use Postman with the Microsoft Graph API](/graph/use-postman).
