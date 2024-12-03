@@ -19,8 +19,8 @@ Enables the use of a restricted expression language for flexible matching of fed
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|languageVersion|Int32|Indicated the language version to be used. Should always be set to 1.|
-|value|String|Indicates the configured expression.|
+|languageVersion|Int32|Indicated the language version to be used. Should always be set to 1. Required.|
+|value|String|Indicates the configured expression. Required.|
 
 ## Relationships
 None.
