@@ -5,6 +5,7 @@ author: Sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: resourcePageType
+ms.date: 12/03/2024
 ---
 
 # sitePage resource type
