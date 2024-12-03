@@ -3846,10 +3846,10 @@
         },
         {
           "Id": "dd530d17-ecf3-4210-8265-8081f4ea659d",
-          "ApiChange": "Resource",
+          "ApiChange": "Method",
           "ChangedApiName": "summarizeDeviceRemoteConnection",
           "ChangeType": "Deprecation",
-          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection-function](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) function.",
+          "Description": "Added a deprecation notice to the [summarizedeviceremoteconnection](https://learn.microsoft.com/en-us/graph/api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection?view=graph-rest-beta) function.",
           "Target": "summarizeDeviceRemoteConnection"
         }
       ],
