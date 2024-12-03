@@ -5,6 +5,7 @@ author: "mkuninty"
 ms.localizationpriority: medium
 ms.subservice: "m365-monitoring-service"
 doc_type: apiPageType
+ms.date: 12/02/2024
 ---
 
 # serviceActivity: getMessageVolumeMetricsForEmailDelivery

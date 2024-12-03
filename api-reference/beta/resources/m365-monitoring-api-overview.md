@@ -5,6 +5,7 @@ author: "mkuninty"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "m365-monitoring-service"
+ms.date: 12/02/2024
 ---
 
 # Working with Microsoft 365 monitoring APIs in Microsoft Graph
