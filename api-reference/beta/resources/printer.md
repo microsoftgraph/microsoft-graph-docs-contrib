@@ -13,10 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata, and registration status.
+Represents a printer device that is registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata, and registration status. Inherits from [printerBase](./printerbase.md).
 
-This resource supports:
-* [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
+This resource supports [subscribing to change notifications](/graph/universal-print-webhook-notifications).
 
 ## Methods
 
@@ -38,17 +37,17 @@ This resource supports:
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The printer's identifier. Read-only.|
-|displayName|String|The name of the printer.|
-|manufacturer|String|The manufacturer reported by the printer.|
-|model|String|The model name reported by the printer.|
+|displayName|String|The name of the printer. Inherited from [printerBase](./printerbase.md).|
+|manufacturer|String|The manufacturer reported by the printer. Inherited from [printerBase](./printerbase.md).|
+|model|String|The model name reported by the printer. Inherited from [printerBase](./printerbase.md).|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
-|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
+|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Inherited from [printerBase](./printerbase.md).|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
 |hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
-|isAcceptingJobs|Boolean| If `true`, the printer is currently accepting new print jobs.|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
-|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer.|
+|isAcceptingJobs|Boolean| If `true`, the printer is currently accepting new print jobs. Inherited from [printerBase](./printerbase.md).|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](./printerbase.md).|
+|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](./printerbase.md).|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer. Inherited from [printerBase](./printerbase.md).|
 |lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 
 ## Relationships
