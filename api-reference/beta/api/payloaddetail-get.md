@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.date: 12/01/2024
 ---
 
 # Get payloadDetail
@@ -34,7 +35,7 @@ GET /security/attackSimulation/payloads/{payloadId}/detail
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -63,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
+GET https://graph.microsoft.com/beta/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
 ```
 
 ### Response
