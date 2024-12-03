@@ -276,6 +276,8 @@ items:
       href: ../../api/security-endpointdiscoveredcloudappdetail-list-devices.md
 - name: eDiscovery
   items:
+  - name: Overview
+    href: ../../resources/security-ediscovery-apioverview.md
   - name: eDiscovery case
     items:
     - name: eDiscovery case
