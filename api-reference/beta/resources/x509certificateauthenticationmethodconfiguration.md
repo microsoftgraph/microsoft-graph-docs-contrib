@@ -7,6 +7,7 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: X509 certificate
 toc.keywords: [ certificate-based authentication, CBA ]
+ms.date: 12/03/2024
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type
