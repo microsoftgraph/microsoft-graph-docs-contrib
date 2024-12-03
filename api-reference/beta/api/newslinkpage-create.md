@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of the [newsLinkPage](../resou
 
 > **Notes:**
 > * To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.newsLinkPage` must be included in the request body.
-> * Currently, to set the **bannerImageWebUrl**, the capability exists to upload the image bytes directly. These bytes get auto-saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. To achieve this, make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content. For more details, see [Example 2](../resources/newslinkpage.md#example-2-create-a-news-link-page-and-upload-the-banner-image-file-content).
+> * Currently, to set the **bannerImageWebUrl**, the capability exists to upload the image bytes directly. These bytes get auto-saved in the site assets library, and the **bannerImageWebUrl** is then generated based on the persisted file. To achieve this, make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content. For more details, see [Example 2](../api/newslinkpage-create.md#example-2-create-a-news-link-page-and-upload-the-banner-image-file-content).
 
 You can specify the following properties when you create a [newsLinkPage](../resources/newslinkpage.md).
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [newsLink
 
 ### Example 1: Create a news link page with only the required properties
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page using only the required properties.
+The following example shows how to create a [news link page](../resources/newslinkpage.md) using only the required properties.
 
 #### Request
 The following example shows a request.
@@ -77,7 +77,7 @@ prefer: include-unknown-enum-members
 Content-Type: application/json
 
 {
-  "@odata.type" : "#microsoft.graph.newsLinkPage",
+  "@odata.type": "#microsoft.graph.newsLinkPage",
   "newsWebUrl":"https://someexternalnewssite.com/2024/11/11/contoso-unveils-first-self-driving-car",
   "title": "Contoso Unveils First Self-Driving Car"
 }
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) page and using only required fields.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -135,7 +135,7 @@ Content-type: application/json
 
 ### Example 2: Create a news link page and upload the banner image file content
 
-The following example shows how to create a [newsLinkPage](../resources/newslinkpage.md) with a banner image. This requires a multipart request.
+The following example shows how to create a [news link page](../resources/newslinkpage.md) with a banner image. This process requires a multipart request.
 
 #### Request
 
@@ -156,11 +156,11 @@ Content-Disposition: form-data; name="request"
 Content-Type: application/json
 
 {
-  "@odata.type" : "#microsoft.graph.newsLinkPage",
-  "title" : "Microsoft Build brings AI tools to the forefront for developers",
-  "newsWebUrl" : "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
-  "description" : "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
-  "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
+  "@odata.type": "#microsoft.graph.newsLinkPage",
+  "title": "Microsoft Build brings AI tools to the forefront for developers",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
+  "description": "You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
+  "@microsoft.graph.bannerImageWebUrlContent": "name:content"
 }
 
 --MyPartBoundary198374

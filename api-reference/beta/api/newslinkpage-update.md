@@ -51,8 +51,8 @@ PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The descriptive text for the item. The maximum length limit is 250 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
-|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link. The maximum length limit is 110 characters.|
-|title|String|Title of the **newsLinkPage**. Inherited from [baseSitePage](../resources/basesitepage.md).|
+|newsWebUrl|String|The URL of the news article referenced by the **newsLinkPage**. It can be an external link.|
+|title|String|Title of the **newsLinkPage**. The maximum length limit is 110 characters. Inherited from [baseSitePage](../resources/basesitepage.md).|
 
 > **Notes:**
 > You can update the **bannerImage** property by uploading the image bytes of the new banner image you want to set. The banner image is autosaved in the site assets library, and the banner image URL is then generated based on the persisted file. Make a multipart request and set the `@microsoft.graph.bannerImageWebUrlContent` annotation to send the image content, as shown in the example.
@@ -80,7 +80,7 @@ Content-Disposition:form-data; name="metadata"
 Content-Type: application/json
 
 {
-  "title": "External News | Scientists Discover Secret to Eternal Youth",
+  "title": "External News | Microsoft Build brings AI tools to the forefront for developers",
   "@microsoft.graph.bannerImageWebUrlContent" : "name:content"
 }
 
@@ -112,16 +112,16 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.newsLinkPage",
   "createdDateTime": "2024-06-11T17:31:20Z",
-  "description": " In a groundbreaking study, a team of scientists has reportedly discovered the secret to eternal youth. The research, conducted in a top-secret laboratory, claims to have identified a unique combination of natural ingredients that can halt the aging process.",
+  "description": " You only need two simple letters to accurately convey the major shift in the technology space this year: A and I. Beyond those letters, however, is a complex, evolving and exciting way in which we work, communicate and collaborate.",
   "eTag": "\"{179210C2-637E-4C61-8491-331D0D4A0C05},2\"",
   "id": "179210c2-637e-4c61-8491-331d0d4a0c05",
   "lastModifiedDateTime": "2024-06-11T17:31:21Z",
-  "name": "Scientists-Discover-Secret-to-Eternal-Youth.aspx",
+  "name": "microsoft-build-ai-tools-developers.aspx",
   "webUrl": "https://contoso.sharepoint.com/SitePages/Microsoft-Build-brings-AI-tools-to-the-forefront-for-developers.aspx",
-  "title": "External News | Scientists Discover Secret to Eternal Youth",
+  "title": "External News | Microsoft Build brings AI tools to the forefront for developers",
   "pageLayout": "newsLink",
-  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/Scientists-Discover-Secret-to-Eternal-Youth(1)/BannerImage.png",
-  "newsWebUrl": "https://someexternalnewssite.com/2024/06/11/scientists-discover-secret-to-eternal-youth",
+  "bannerImageWebUrl": "https://contoso.sharepoint.com/_layouts/15/getpreview.ashx?path=/SiteAssets/SitePages/microsoft-build-ai-tools-developers/BannerImage.png",
+  "newsWebUrl": "https://someexternalnewssite.com/2024/05/23/microsoft-build-ai-tools-developers",
   "createdBy": {
     "user": {
       "displayName": "John Doe",
