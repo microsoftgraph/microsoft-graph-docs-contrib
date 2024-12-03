@@ -27,7 +27,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 
-None. 
+None.
 
 For the list of API operations for managing social identity providers, see the [identityProviderBase](../resources/identityproviderbase.md) resource type.
 

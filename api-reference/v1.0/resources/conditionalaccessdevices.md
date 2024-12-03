@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessDevices resource type"
-description: "Represents devices in the policy scope."
+description: "Represents devices in the scope of a conditionalAccessTemplate object."
 ms.localizationpriority: medium
 author: "SanDeo-MSFT"
 ms.subservice: "entra-sign-in"
@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents devices in the policy scope.
+Represents devices in the scope of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object. This resource is configured in the **conditionalAccessTemplate** resource > **details** property > **conditions** property > **devices** property.
 
 ## Properties
 

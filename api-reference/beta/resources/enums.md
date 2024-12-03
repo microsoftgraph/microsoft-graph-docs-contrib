@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/28/2024
+ms.date: 11/30/2024
 ---
 
 # Enum values
@@ -4954,6 +4954,21 @@ Possible values for user account types (group membership), per Windows definitio
 | none |
 | all |
 | unknownFutureValue |
+
+### cloudPCPerformanceReportName values
+
+| Member                 |
+| ---------------------- |
+| performanceTrendReport | 
+| unknownFutureValue     |
+
+### cloudPCInaccessibleReportName values
+
+| Member                         |
+| ------------------------------ |
+| inaccessibleCloudPcReports     |
+| inaccessibleCloudPcTrendReport |
+| unknownFutureValue             |
 
 ### nonAdminSetting values
 

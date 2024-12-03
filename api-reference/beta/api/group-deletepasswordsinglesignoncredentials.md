@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the password-based single sign-on credentials for a given group to a given service principal.
+Delete the password-based single sign-on credentials for a given [group](../resources/group.md) to a given service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
