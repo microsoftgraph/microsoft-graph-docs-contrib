@@ -862,6 +862,10 @@ items:
       href: security-information-protection-overview.md
     - name: Partner opportunities
       href: security-partner-overview.md
+    - name: eDiscovery
+      items:
+      - name: Set up application authentication
+        href: security-ediscovery-appauthsetup.md
   - name: Sites and lists
     href: sharepoint-concept-overview.md
     displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
