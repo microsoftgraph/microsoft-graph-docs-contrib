@@ -1,3 +1,4 @@
+---
 title: "x509CertificateCrlValidationConfiguration resource type"
 description: "Determines whether certificate based authentication should fail if the issuing CA does not have a valid certificate revocation list (CRL) configured. Includes the SKI of the Certificate Authorities that should be exempted from CRL validation."
 author: "vimrang"
