@@ -1,0 +1,174 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceActivityPerformanceMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceActivityPerformanceMetric](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivityPerformanceMetric?view=graph-rest-beta) resource.",
+          "Target": "serviceActivityPerformanceMetric"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForDesktopMailByReadEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForDesktopMailByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForDesktopMailByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForEmailByModernAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForEmailByModernAuthentication](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForEmailByModernAuthentication?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForExcelWeb",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForExcelWeb](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForExcelWeb?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForiOSOrAndroidMailByReadEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForiOSOrAndroidMailByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForiOSOrAndroidMailByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForOneNoteWeb",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForOneNoteWeb](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForOneNoteWeb?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForOutlookMacByReadEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForOutlookMacByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForOutlookMacByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForOutlookMobileByReadEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForOutlookMobileByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForOutlookMobileByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForOutlookWebByAppOpening",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForOutlookWebByAppOpening](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForOutlookWebByAppOpening?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForOutlookWebByReadEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForOutlookWebByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForOutlookWebByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForPowerPointWeb",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForPowerPointWeb](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForPowerPointWeb?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForVisioWeb",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForVisioWeb](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForVisioWeb?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getActiveUserMetricsForWordWeb",
+          "ChangeType": "Addition",
+          "Description": "Added the [getActiveUserMetricsForWordWeb](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForWordWeb?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAudioStreamQoEMetricsForTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAudioStreamQoEMetricsForTeams](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getAudioStreamQoEMetricsForTeams?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAudioStreamsOverUdpMetricsForTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAudioStreamsOverUdpMetricsForTeams](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getAudioStreamsOverUdpMetricsForTeams?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConnectivityMetricsForExchange",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConnectivityMetricsForExchange](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getConnectivityMetricsForExchange?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMessageVolumeMetricsForEmailDelivery",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMessageVolumeMetricsForEmailDelivery](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMessageVolumeMetricsForEmailDelivery?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMessageVolumeMetricsForTeamsChat",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMessageVolumeMetricsForTeamsChat](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMessageVolumeMetricsForTeamsChat?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUsageMetricsForTeamsByLaunch",
+          "ChangeType": "Addition",
+          "Description": "Added the [getUsageMetricsForTeamsByLaunch](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getUsageMetricsForTeamsByLaunch?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUsageMetricsForTeamsByMeetingsJoined",
+          "ChangeType": "Addition",
+          "Description": "Added the [getUsageMetricsForTeamsByMeetingsJoined](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getUsageMetricsForTeamsByMeetingsJoined?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        }
+      ],
+      "Id": "575c5722-c4df-49a0-9355-56414c452e1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-02T18:03:21.8509666Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    }
+  ]
+}
