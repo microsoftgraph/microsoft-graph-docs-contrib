@@ -365,7 +365,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
           "durationInSeconds": 322
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "myExternalRegistrationId"
+      },
     },
     {
       "emailAddress": "lisa.adkins@contoso.com",
@@ -383,7 +387,11 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
           "durationInSeconds": 314
         }
-      ]
+      ],
+      "externalRegistrationInformation": {
+        "referrer": "Facebook",
+        "registrationId": "anotherExternalRegistrationId"
+      },
     }
   ]
 }
