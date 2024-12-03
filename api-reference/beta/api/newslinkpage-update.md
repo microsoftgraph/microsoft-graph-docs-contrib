@@ -42,7 +42,7 @@ PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type| Required. application/json for JSON content, including the required **title** property in multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type.|
+|Content-Type|application/json for JSON content, including the required **title** property in multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type. Required.|
 
 ## Request body
 
