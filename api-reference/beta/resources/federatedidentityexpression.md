@@ -5,6 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+ms.date: 12/03/2024
 ---
 
 # federatedIdentityExpression resource type
