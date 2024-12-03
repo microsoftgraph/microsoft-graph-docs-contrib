@@ -1,11 +1,11 @@
 ---
 title: "profile resource type"
-description: "Represents properties that are descriptive of a user and that are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
+description: "Represents properties that are descriptive of a user and that are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: people
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
+ms.date: 12/02/2024
 ---
 
 # profile resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents properties that are descriptive of a user in a tenant, for example, anniversaries and education activities. These properties are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph.
+Represents properties that are descriptive of a user in a tenant; for example, anniversaries and education activities. These properties are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph.
 
 Programmatically, these properties are expressed as [relationships](#relationships) of the **profile** resource. To get one of these navigation properties or create an instance of these properties for the user, use the corresponding GET or POST method on that property, where applicable. For more details, see the [Methods](#methods) section.
 
