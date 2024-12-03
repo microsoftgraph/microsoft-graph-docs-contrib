@@ -15,7 +15,7 @@ The Microsoft 365 monitoring API provides the telemetry data to monitor the heal
 
 Microsoft Graph enables applications to get authorized access to telemetry data about a Microsoft service subscribed by a tenant. With the appropriate delegated or application [permissions](/graph/permissions-reference#serviceactivity-exchangereadall), your app can access the telemetry data on behalf of a signed-in user, or without any signed-in user in the tenant. Only an administrator can grant both delegated and application types of these permissions.
 
-For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
+For more information about access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
 ### Access Microsoft 365 monitoring APIs on behalf of a signed-in user
 
@@ -49,16 +49,16 @@ The Microsoft 365 monitoring API is available in the following Microsoft nationa
 
 The following table lists common use cases for the Microsoft 365 monitoring APIs.
 
-| Use case                                                                                                                           | Notes                                                                                                                         |
+| Use case                                                                                                                           | Related content                                                                                                                         |
 |:-----------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| [Exchange Online monitoring](../resources/serviceactivity.md#exchange-online-monitoring)                                           | For details, see [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring). |
-| [Microsoft 365 Teams monitoring](../resources/serviceactivity.md#microsoft-365-teams-monitoring)                                   | For details, see [Microsoft 365 Teams monitoring](/microsoft-365/enterprise/microsoft-365-teams-monitoring).                  |
-| [Microsoft 365 Apps monitoring](../resources/serviceactivity.md#microsoft-365-apps-monitoring)                                     | For details, see [Microsoft 365 Apps monitoring](/microsoft-365/enterprise/microsoft-365-apps-monitoring).                    |
+| [Exchange Online monitoring](../resources/serviceactivity.md#exchange-online-monitoring)                                           | [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring) |
+| [Microsoft 365 Teams monitoring](../resources/serviceactivity.md#microsoft-365-teams-monitoring)                                   | [Microsoft 365 Teams monitoring](/microsoft-365/enterprise/microsoft-365-teams-monitoring)                  |
+| [Microsoft 365 Apps monitoring](../resources/serviceactivity.md#microsoft-365-apps-monitoring)                                     | [Microsoft 365 Apps monitoring](/microsoft-365/enterprise/microsoft-365-apps-monitoring)                    |
 | [Microsoft Entra](../resources/serviceactivity.md#microsoft-entra)  
 
 ## Next steps
 
-The Microsoft 365 monitoring API can open up new ways for you to engage with users:
+The Microsoft 365 monitoring API can open up new ways for you to engage with users.
 
 - To learn more about the Microsoft 365 monitoring APIs available, see the [serviceActivity](../resources/serviceactivity.md) resource.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
