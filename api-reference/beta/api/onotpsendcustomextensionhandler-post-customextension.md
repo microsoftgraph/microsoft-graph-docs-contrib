@@ -1,4 +1,4 @@
- ---
+---
 title: "Create onOtpSendCustomExtension"
 description: "Create a new onOtpSendCustomExtension object."
 author: "AlexanderMars"
