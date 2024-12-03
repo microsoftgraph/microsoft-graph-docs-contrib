@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Purview eDiscovery Graph API"
-description: "Use the Microsoft Purview eDiscovery Graph APIs to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require."
+title: "Use the Microsoft Purview eDiscovery API in Microsoft Graph"
+description: "Use the Microsoft Purview eDiscovery API to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require."
 ms.localizationpriority: high
 author: "pamehra"
 ms.subservice: "ediscovery"
@@ -8,14 +8,14 @@ ms.date: 11/11/2024
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Purview eDiscovery Graph API
+# Use the Microsoft Purview eDiscovery API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Purview Graph APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require. You can use the eDiscovery APIs to help with your legal needs.
+The Microsoft Purview APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require. You can use the eDiscovery APIs to help with your legal needs.
 
 > [!IMPORTANT]
-> The Microsoft Purview Graph APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
+> The Microsoft Purview APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
 >
 > For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
 
