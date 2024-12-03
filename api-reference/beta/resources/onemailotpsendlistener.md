@@ -20,12 +20,9 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/onemailotpsendlistener-list.md)|[onEmailOtpSendListener](../resources/onemailotpsendlistener.md) collection|Get a list of the [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) objects and their properties.|
-|[Get](../api/onemailotpsendlistener-get.md)|[onEmailOtpSendListener](../resources/onemailotpsendlistener.md)|Read the properties and relationships of an [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) object.|
-|[Update](../api/onemailotpsendlistener-update.md)|[onEmailOtpSendListener](../resources/onemailotpsendlistener.md)|Update the properties of an [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) object.|
-|[Delete](../api/onemailotpsendlistener-delete.md)|None|Delete an [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) object.|
+None.
+
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
 
 ## Properties
 |Property|Type|Description|
