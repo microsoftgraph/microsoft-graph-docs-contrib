@@ -45,6 +45,14 @@
         {
           "Id": "156e4486-869a-419d-b8cb-2d32348859bc",
           "ApiChange": "Resource",
+          "ChangedApiName": "onEmailOtpSendListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onEmailOtpSendListener](https://learn.microsoft.com/en-us/graph/api/resources/onEmailOtpSendListener?view=graph-rest-beta) resource.",
+          "Target": "onEmailOtpSendListener"
+        },
+        {
+          "Id": "156e4486-869a-419d-b8cb-2d32348859bc",
+          "ApiChange": "Resource",
           "ChangedApiName": "onOtpSendCustomExtension",
           "ChangeType": "Addition",
           "Description": "Added the [onOtpSendCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onOtpSendCustomExtension?view=graph-rest-beta) resource.",
