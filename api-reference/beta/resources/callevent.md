@@ -4,6 +4,7 @@ description: "Contains information about a call event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 12/03/2024
 doc_type: resourcePageType
 ---
 

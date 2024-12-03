@@ -4,6 +4,7 @@ description: "Contains information about an emergency caller."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
+ms.date: 12/03/2024
 doc_type: resourcePageType
 ---
 # emergencyCallerInfo resource type

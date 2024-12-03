@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
+ms.date: 12/03/2024
 ms.doc_type: "conceptual"
 ---
 # Get change notifications for Microsoft Teams emergency call event updates
@@ -13,7 +14,7 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 
 ![Emergency call events notification flow diagram](./images/Change-notification-emergency-call-flow.png)
 
-1.	The Teams tenant admin configures [emergency calling](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
+1.	The Teams tenant admin configures [emergency calling](/microsoftteams/configure-dynamic-emergency-calling) for the tenant.
 2.	The client application creates a Graph emergency call event subscription. 
 3.	The emergency call event notification is fired to the client application When a Teams user makes an emergency call (for example, 911) on Teams. 
 4.	The client application either [renews](/graph/api/subscription-update) the existing subscription before it expires or [creates](/graph/api/subscription-post-subscriptions) a new one after it expires to continue to subscribe to emergency call event notifications.
@@ -56,7 +57,7 @@ Content-Type: application/json
 }
 ```
 
-For the definition of properties on the subscription request, see [Subscription resource](/graph/api/subscription).
+For the definition of properties on the subscription request, see [Subscription resource](/graph/api/resources/subscription).
 
 
 ## Emergency call event notifications
@@ -141,4 +142,4 @@ Content-Type: application/json
 ## Related content
 - [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
 - [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)
-- [Manage emergency calling policies in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/manage-emergency-calling-policies)
+- [Manage emergency calling policies in Microsoft Teams](/microsoftteams/manage-emergency-calling-policies)
