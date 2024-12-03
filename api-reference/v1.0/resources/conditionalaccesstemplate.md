@@ -13,7 +13,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft recommended template of best practice configurations for Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md).
+Represents a Microsoft recommended template of best practice configurations for Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md). For more information, see [Conditional Access policy templates](/entra/identity/conditional-access/concept-conditional-access-policy-common).
 
 Inherits from [entity](../resources/entity.md).
 

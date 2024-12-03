@@ -5,6 +5,7 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+ms.date: 12/01/2024
 ---
 
 # payload resource type
@@ -34,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the attack simulation and training campaign payload.|
-|detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
+|detail|[payloadDetail](../resources/payloaddetail.md)|More details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
 |id|String|Unique identifier for the attack simulation and training campaign payload. Inherited from [entity](../resources/entity.md).|
 |industry|[payloadIndustry](#payloadindustry-values)|Industry of a payload. Possible values are: `unknown`, `other`, `banking`, `businessServices`, `consumerServices`, `education`, `energy`, `construction`, `consulting`, `financialServices`, `government`, `hospitality`, `insurance`, `legal`, `courierServices`, `IT`, `healthcare`, `manufacturing`, `retail`, `telecom`, `realEstate`, `unknownFutureValue`.|
@@ -50,14 +51,14 @@ Inherits from [entity](../resources/entity.md).
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|[simulationContentStatus](../resources/simulation.md#simulationcontentstatus-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
-|technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
+|technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`, `phishTraining`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`, `phishTraining`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `fax`, `financeReport`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
 
 ### payloadTheme values
 
 |Member|Description |
 |:---|:---|
-|unknown| The payload theme is not defined. |
+|unknown| The payload theme isn't defined. |
 |other| The payload is other.|
 |accountActivation| Payload theme is of account activation.|
 |accountVerification| Payload theme is of account verification.|
@@ -88,7 +89,7 @@ Inherits from [entity](../resources/entity.md).
 |voicemail| Payload with voicemail details.|
 |advertisement| Payload with advertisement details.|
 |employeeEngagement| Payload with employee engagement details.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### payloadBrand values
 
@@ -114,7 +115,7 @@ Inherits from [entity](../resources/entity.md).
 |adobe| Payload brand as Adobe.|
 |teams| Payload brand as Teams.|
 |zoom| Payload brand as Zoom.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### payloadIndustry values
 
@@ -141,17 +142,17 @@ Inherits from [entity](../resources/entity.md).
 |retail| Payload industry as retail.|
 |telecom| Payload industry as telecom.|
 |realEstate| Payload industry as real estate.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### payloadComplexity values
 
 |Member|Description |
 |:---|:---|
-|unknown| The payload complexity is not defined. |
+|unknown| The payload complexity isn't defined. |
 |low| The payload complexity is low. |
 |medium| The payload complexity is medium. |
 |high| The payload complexity is high. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
