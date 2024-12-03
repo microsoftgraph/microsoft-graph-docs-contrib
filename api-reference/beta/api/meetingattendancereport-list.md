@@ -243,7 +243,13 @@ Content-Type: application/json
       "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
       "totalParticipantCount": 2,
       "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
-      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
+      "externalEventInformation": [
+        {
+          "applicationId" : "e3c6e27c-e2a1-4212-8d63-0729828ed4fa",
+          "externalEventId": "anotherExternalEventId"
+        }
+      ]
     }
   ]
 }
