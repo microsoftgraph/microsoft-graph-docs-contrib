@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note:** The following are required for the user:
 > - Viva Suite or Viva Learning license
-> - Global admin, knowledge admin role
+> - A supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), where Knowledge Administrator is the least privileged supported role.
 
 ## HTTP request
 
