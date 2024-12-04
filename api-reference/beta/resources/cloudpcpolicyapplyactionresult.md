@@ -25,7 +25,7 @@ For `Frontline shared` only. Specify the policy apply status, apply start time a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|[cloudpcpolicyapplyactionstatus](../resources/cloudpcpolicyapplyactionstatus.md)|Indicates if the applied operation status, including succeeded, pending, failed.|
+|status|[cloudPcPolicyApplyActionStatus](../resources/cloudpcpolicyapplyactionstatus.md)|Indicates if the applied operation status, including succeeded, pending, failed.|
 |startDateTime|DateTime|Indicates the creation time of the applied operation.|
 |finishDateTime|DateTime|Indicates the finish time of the applied operation.|
 
