@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/shifts
 
 In the request body, supply a JSON representation of the modified [shift](../resources/shift.md) object.
 
-The following table lists the properties that you can use when you create an **shift** object.
+The following table lists the properties that you can use when you create a **shift** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
