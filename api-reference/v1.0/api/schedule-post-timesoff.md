@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_post_timesoff" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-post-timesoff-permissions.md)]
 
-> **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
+> **Note**: This API supports admin permissions. Users with admin roles can access groups that they aren't a member of.
 
 ## HTTP request
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 In the request body, supply a JSON representation of the modified [timeOff](../resources/timeoff.md) object.
 
-The following table lists the properties that you can use when you create an **timeOff** object.
+The following table lists the properties that you can use when you create a **timeOff** object.
 
 
 |Property|Type|Description|
