@@ -1,7 +1,7 @@
 ---
 title: "cloudPcProvisioningPolicySchedule: get"
 description: "For `Frontline shared` only. Administrators can get the the scheduled apply rule set on the policy."
-author: "Guoan-Tang"
+author: "Chicheng Zheng"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
