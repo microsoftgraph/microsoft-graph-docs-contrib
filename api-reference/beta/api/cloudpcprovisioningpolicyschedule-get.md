@@ -64,7 +64,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "apply_cloudpcprovisioningpolicy"
+  "name": "cloudpcprovisioningpolicyschedule_get"
 }
 -->
 
@@ -86,6 +86,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
     "reservePercentage": 50,

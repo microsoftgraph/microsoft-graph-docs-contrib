@@ -24,8 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "cloudpcpolicyapplyactionresult_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
 
-## HTTP request
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored"
 }
@@ -87,6 +86,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyApplyActionResult",
     "status": "succeeded",

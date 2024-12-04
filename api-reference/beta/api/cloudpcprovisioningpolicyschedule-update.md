@@ -62,7 +62,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "apply_cloudpcprovisioningpolicy"
+  "name": "cloudpcprovisioningpolicyschedule_get"
 }
 -->
 
