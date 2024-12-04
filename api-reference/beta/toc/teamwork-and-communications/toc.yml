@@ -302,6 +302,12 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Call events
+    items:
+      - name: Call event
+        href: ../../resources/callevent.md
+      - name: Emergency call event
+        href: ../../resources/emergencycallevent.md
   - name: Call records
     items:
     - name: Overview
@@ -574,12 +580,6 @@ items:
       items:
       - name: Virtual event external information
         href: ../../resources/virtualeventexternalinformation.md
-  - name: Call events
-    items:
-      - name: Call event
-        href: ../../resources/callevent.md
-      - name: Emergency call event
-        href: ../../resources/emergencycallevent.md
 - name: AI interactions (preview)
   items:
   - name: AI interaction history
