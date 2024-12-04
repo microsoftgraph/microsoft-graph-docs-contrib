@@ -1,5 +1,5 @@
 ---
-title: "CloudPcPolicyApplyActionStatus  resource type"
+title: "CloudPcPolicyApplyActionStatus resource type"
 description: "A list of possible status for policy applies operation."
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
