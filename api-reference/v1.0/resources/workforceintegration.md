@@ -29,7 +29,7 @@ Represents an instance of a workforce integration with shifts.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
-|createdDateTime|DateTimeOffset|The timestamp on which this **WorkforceIntegration** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).| 
+|createdDateTime|DateTimeOffset|The timestamp on which this **workforceIntegration** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).| 
 |displayName|String|Name of the workforce integration.|
 |eligibilityFilteringEnabledEntities|eligibilityFilteringEnabledEntities| Support to view eligibility-filtered results. Possible values are: `none`, `swapRequest`, `offerShiftRequest`, `unknownFutureValue`, `timeOffReason`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeOffReason`.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
