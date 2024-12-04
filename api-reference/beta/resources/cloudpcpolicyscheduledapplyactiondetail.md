@@ -42,7 +42,7 @@ The following JSON representation shows the resource type.
 
 ``` json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
+  "@odata.type": "https://graph.microsoft.com/beta/$metadata#cloudPcPolicyScheduledApplyActionDetail",
   "reservePercentage": 50,
   "cronScheduleExpression": "0 0 0 20 * *"
 }
