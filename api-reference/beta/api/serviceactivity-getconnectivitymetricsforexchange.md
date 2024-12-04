@@ -18,11 +18,8 @@ Get estimated connectivity metrics based on the percentage of successful synthet
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|ServiceActivity-Exchange.Read.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|ServiceActivity-Exchange.Read.All|Not available.|
+<!-- { "blockType": "permissions", "name": "serviceactivity_getconnectivitymetricsforexchange" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getconnectivitymetricsforexchange-permissions.md)]
 
 ## HTTP request
 
