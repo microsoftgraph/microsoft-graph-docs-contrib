@@ -2338,6 +2338,13 @@
           ]
         },
         {
+          "name": "Microsoft 365 monitoring reports",
+          "overview": "../../resources/m365-monitoring-api-overview.md",
+          "resources": [
+            "serviceActivity"
+          ]
+        },
+        {
           "name": "Microsoft 365 usage reports",
           "overview": "../../resources/report.md",
           "resources": [
@@ -2374,13 +2381,6 @@
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
             "microsoft.graph.partners.billing.unbilledUsage"
-          ]
-        },
-        {
-          "name": "Microsoft 365 monitoring reports",
-          "overview": "../../resources/m365-monitoring-api-overview.md",
-          "resources": [
-            "serviceActivity"
           ]
         }
       ]
