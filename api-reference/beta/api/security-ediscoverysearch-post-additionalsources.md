@@ -58,9 +58,9 @@ If successful, this method returns a `201 Created` and a [microsoft.graph.securi
 ## Examples
 
 ### Request
-The following example shows a request.
+A request to create additional source by `microsoft.graph.security.siteSource`.
 
-# [HTTP](#tab/http)
+#### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_additional_source_associated_ediscovery_search"
@@ -77,42 +77,42 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 }
 ```
 
-# [C#](#tab/csharp)
+#### [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-additional-source-associated-ediscovery-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
+#### [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/create-additional-source-associated-ediscovery-search-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
+#### [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-additional-source-associated-ediscovery-search-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
+#### [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-additional-source-associated-ediscovery-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
+#### [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-additional-source-associated-ediscovery-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
+#### [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-additional-source-associated-ediscovery-search-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
+#### [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-additional-source-associated-ediscovery-search-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
+#### [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-additional-source-associated-ediscovery-search-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
-The following example shows the response.
+The following is the response for above request.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,3 +140,43 @@ HTTP/1.1 201 Created
     }
 }
 ```
+### Request
+A request to create additional source by `microsoft.graph.security.userSource`.
+
+The following example shows a request.
+
+```
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca63-4282-9cb3-0086f1042bfc/searches/2f5cc5a6-9728-4ba0-acfa-edce25e91244/additionalSources
+
+{
+    "@odata.type": "microsoft.graph.security.userSource",
+    "email": "admin@edbig.onmicrosoft.com"
+}
+```
+### Response
+
+The following is the response for above request.
+
+``` http
+HTTP/1.1 200 Created
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('17011798-ca63-4282-9cb3-0086f1042bfc')/searches('2f5cc5a6-9728-4ba0-acfa-edce25e91244')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.userSource",
+    "displayName": "eDisco Big",
+    "createdDateTime": "2024-11-19T20:11:11.5950513Z",
+    "holdStatus": "0",
+    "id": "5933247d-7011-494d-b9a6-65a3870d88fa",
+    "email": "admin@edbig.onmicrosoft.com",
+    "includedSources": "mailbox,site",
+    "siteWebUrl": "https://edbig-my.sharepoint.com/personal/admin_edbig_onmicrosoft_com",
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    }
+}
+```
+
