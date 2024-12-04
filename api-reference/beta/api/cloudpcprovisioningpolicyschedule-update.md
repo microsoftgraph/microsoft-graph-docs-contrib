@@ -1,7 +1,7 @@
 ---
 title: "cloudPcProvisioningPolicySchedule: update"
 description: "For `Frontline shared` only. Administrators can set a scheduled auto-reprovision task to do automatic regular apply."
-author: "Chicheng Zheng"
+author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType

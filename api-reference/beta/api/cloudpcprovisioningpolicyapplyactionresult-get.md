@@ -1,7 +1,7 @@
 ---
 title: "cloudPcPolicyApplyActionResult: get"
 description: "For `Frontline shared` only. Administrators can get the result of latest apply operation of a provision policy."
-author: "Chicheng Zheng"
+author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType

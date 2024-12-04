@@ -1,7 +1,7 @@
 ---
 title: "CloudPcPolicyApplyActionStatus  resource type"
 description: "A list of possible status for policy apply operation."
-author: "Chicheng Zheng"
+author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
