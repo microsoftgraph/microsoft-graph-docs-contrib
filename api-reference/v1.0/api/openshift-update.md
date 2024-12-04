@@ -52,7 +52,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [openShift](../resources/openshift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and an updated [openShift](../resources/openshift.md) object in the response body.
 
 ## Examples
 
