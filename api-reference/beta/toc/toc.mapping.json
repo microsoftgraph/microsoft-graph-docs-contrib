@@ -539,6 +539,7 @@
         },
         {
           "name": "Cloud printing",
+          "overview": "../../resources/print-overview.md",
           "keywords": [
             "Universal Print"
           ],
@@ -2294,6 +2295,13 @@
                   ]
                 },
                 {
+                  "name": "Microsoft 365 monitoring (preview)",
+                  "overview": "../../resources/m365-monitoring-api-overview.md",
+                  "resources": [
+                    "serviceActivity"
+                  ]
+                },
+                {
                   "name": "Microsoft Entra Health (preview)",
                   "childNodes": [
                     {
@@ -2505,6 +2513,7 @@
         },
         {
           "name": "eDiscovery",
+          "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
             "microsoft.graph.security.ediscoveryCase",
             "microsoft.graph.security.ediscoveryCaseSettings",
@@ -2697,9 +2706,10 @@
           "name": "Pages",
           "resources": [
             "baseSitePage",
+            "newsLinkPage",
+            "pageTemplate",
             "sitePage",
-            "webPart",
-            "pageTemplate"
+            "webPart"
           ],
           "complexTypes": [
             "createFromTemplate",
@@ -2837,6 +2847,21 @@
       ],
       "childNodes": [
         {
+          "name": "AI interactions (preview)",
+          "resources": [
+            "aiInteractionHistory"
+          ],
+         "complexTypes": [
+           "aiInteraction",
+           "aiInteractionAttachment",
+           "aiInteractionContext",
+           "aiInteractionLink",
+           "aiInteractionMention",
+           "aiInteractionMentionedIdentitySet",
+           "aiUser"
+         ]
+        },
+        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -2947,21 +2972,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "AI interactions (preview)",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-         "complexTypes": [
-           "aiInteraction",
-           "aiInteractionAttachment",
-           "aiInteractionContext",
-           "aiInteractionLink",
-           "aiInteractionMention",
-           "aiInteractionMentionedIdentitySet",
-           "aiUser"
-         ]
         },
         {
           "name": "Devices (preview)",
