@@ -3,7 +3,7 @@ title: "deviceTemplate resource type"
 description: "DeviceTemplate resource type"
 author: "ploegert"
 ms.localizationpriority: medium
-ms.date: 11/242024
+ms.date: 11/24/2024
 ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,7 @@ title: "Add owners"
 description: "Add owners of a device template."
 author: "ploegert"
 ms.localizationpriority: medium
-\ms.subservice: "entra-id"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ms.date: 11/24/2024
 ---
@@ -45,12 +45,12 @@ POST /directory/templates/deviceTemplates/{id}/owners/$ref
 ## Request Body
 
 |Property|Type|Description|
-|-|-|-|-|
+|:---|:---|:---|
 |@odata.id|String|A string associated with the oid of the target user/service principal in the form of: `https://graph.microsoft.com/beta/users/{id}` or `https://graph.microsoft.com/beta/serviceprincipals/{id}`|
 
 ## Response
 
-- If successful, this method returns a `200 OK` response code and a [deviceTemplate](../resources/devicetemplate.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 

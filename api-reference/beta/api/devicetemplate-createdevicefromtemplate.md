@@ -97,7 +97,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.device"
+  "@odata.type": "microsoft.graph.device"
 }
 -->
 ``` http

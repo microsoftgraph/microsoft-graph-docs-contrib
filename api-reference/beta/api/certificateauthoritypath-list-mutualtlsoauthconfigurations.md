@@ -89,12 +89,7 @@ Content-Type: application/json
       "tlsClientAuthParameter": "tls_client_auth_san_uri",
       "certificateAuthorities": [
         {
-          "isRootAuthority": true,
-          "certificateRevocationListUrl": null,
-          "deltaCertificateRevocationListUrl": null,
-          "certificate": "MIIF7TCCA9WgAwIBAgIUKhOsQRIaKyP4lppcfbl9vgE...",
-          "issuer": "CN=root.device.certs.com, OU=IoT Org, O=Microsoft Corporation, L=Redmond, S=WA, C=US",
-          "issuerSki": "23B99F09035C525B125A02E1B9ACA70218C65B71"
+          "@odata.type": "microsoft.graph.certificateAuthority"
         }
       ]
     }

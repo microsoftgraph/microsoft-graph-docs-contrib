@@ -63,7 +63,7 @@ You can specify the following properties when creating a **mutualTlsOauthConfigu
 
 ### Response
 
-- If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
+If successful, this method returns a `204 Ok` response code and a [mutualTlsOauthConfiguration](../resources/mutualtlsoauthconfiguration.md) object in the response body.
 
 |Response Code|Condition|Message|
 |-|-|-|
@@ -82,20 +82,7 @@ This example assumes the original object stored has the following value:
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
-    },
-    {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }
@@ -134,12 +121,7 @@ Content-Type: application/json
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }
@@ -157,20 +139,7 @@ This example assumes the original object stored has the following value:
   "tlsClientAuthParameter": "tls_client_auth_subject_dn",
   "certificateAuthorities": [
     {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://acme.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "joGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "acme Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
-    },
-    {
-      "isRootAuthority": true,
-      "certificateRevocationListUrl": "http://digicert.com/root.crl",
-      "deltaCertificateRevocationListUrl": null,
-      "certificate": "koGrWL+Yqkik/CABWG0d1w....",
-      "issuer": "Digicert Inc",
-      "issuerSubjectkeyIdentifier": "SKI"
+      "@odata.type": "microsoft.graph.certificateAuthority"
     }
   ]
 }
