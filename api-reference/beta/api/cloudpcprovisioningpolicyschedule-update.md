@@ -21,7 +21,7 @@ For `Frontline shared` only. Administrators can set a scheduled auto-reprovision
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcprovisioningpolicyschedule_get" } -->
+<!-- { "blockType": "permissions", "name": "cloudpcprovisioningpolicyschedule_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
 
 ## HTTP request
@@ -62,7 +62,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcprovisioningpolicyschedule_get"
+  "name": "cloudpcprovisioningpolicyschedule_update"
 }
 -->
 

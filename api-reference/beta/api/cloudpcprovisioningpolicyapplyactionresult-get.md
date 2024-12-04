@@ -24,7 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "cloudpcpolicyapplyactionresult_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
 
-# [HTTP](#tab/http)
+## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
