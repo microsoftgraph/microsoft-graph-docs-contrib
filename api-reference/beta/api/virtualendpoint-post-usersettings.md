@@ -81,6 +81,15 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "crossRegionDisasterRecoverySetting": {
+     "crossRegionDisasterRecoveryEnabled": true,
+     "maintainCrossRegionRestorePointEnabled": true,
+     "disasterRecoveryNetworkSetting": {
+        "regionName": "westus",
+        "regionGroup": "usEast"
+      },
+      "disasterRecoveryType": "premium"
+  },
   "restorePointSetting": {
     "frequencyInHours": 16,
     "frequencyType": "sixteenHours",

@@ -126,6 +126,15 @@ Content-Type: application/json
         "frequencyInHours": 16,
         "userRestoreEnabled": true
       },
+      "crossRegionDisasterRecoverySetting": {
+        "crossRegionDisasterRecoveryEnabled": true,
+        "maintainCrossRegionRestorePointEnabled": true,
+        "disasterRecoveryNetworkSetting": {
+            "regionName": "westus",
+            "regionGroup": "usEast"
+        },
+        "disasterRecoveryType": "premium"
+      },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }
