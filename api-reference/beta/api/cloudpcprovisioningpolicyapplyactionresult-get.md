@@ -4,7 +4,6 @@ description: "For `Frontline shared` only. Administrators can get the result of 
 author: "zhuangzhuang131419"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
-ms.date: "2024-12-04"
 doc_type: apiPageType
 ---
 
@@ -49,13 +48,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a status, startDateTime and finishDateTime in the response body.
+If successful, this method returns a `200 OK` response code and a status, startDateTime, and finishDateTime in the response body.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|status|string|Indicates if the apply operation status, including succeeded, pending, failed.|
-|startDateTime|DateTime|Indicates the creation time of the apply operation.|
-|finishDateTime|DateTime|Indicates the finish time of the apply operation.|
+|status|string|Indicates if the applied operation status, including succeeded, pending, failed.|
+|startDateTime|DateTime|Indicates the creation time of the applied operation.|
+|finishDateTime|DateTime|Indicates the finish time of the applied operation.|
 
 ## Examples
 
