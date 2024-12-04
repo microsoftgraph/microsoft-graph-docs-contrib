@@ -304,10 +304,10 @@ items:
         href: ../../api/addlargegalleryviewoperation-get.md
   - name: Call events
     items:
-      - name: Call event
-        href: ../../resources/callevent.md
-      - name: Emergency call event
-        href: ../../resources/emergencycallevent.md
+    - name: Call event
+      href: ../../resources/callevent.md
+    - name: Emergency call event
+      href: ../../resources/emergencycallevent.md
   - name: Call records
     items:
     - name: Overview
